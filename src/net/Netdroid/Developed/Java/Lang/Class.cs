@@ -27,10 +27,10 @@ namespace Java.Lang
         static readonly Java.Lang.ClassLoader _loader = storeLoader();
         static Java.Lang.ClassLoader storeLoader()
         {
-            return Java.Lang.ClassLoader.SystemClassLoader;
+            return Java.Lang.ClassLoader.GetSystemClassLoader();
         }
         /// <summary>
-        /// Returns the cached <see cref="Java.Lang.ClassLoader.SystemClassLoader"/>, it is used internally from <see cref="Of{T}"/>
+        /// Returns the cached <see cref="Java.Lang.ClassLoader.GetSystemClassLoader"/>, it is used internally from <see cref="Of{T}"/>
         /// </summary>
         public static Java.Lang.ClassLoader SystemClassLoader => _loader;
         /// <summary>

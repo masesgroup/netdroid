@@ -62,18 +62,20 @@ namespace Android.Graphics.Drawable
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/RippleDrawable.html#getEffectColor()"/> <see href="https://developer.android.com/reference/android/graphics/drawable/RippleDrawable.html#setEffectColor(android.content.res.ColorStateList)"/>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/RippleDrawable.html#getEffectColor()"/>
         /// </summary>
-        public Android.Content.Res.ColorStateList EffectColor
+        /// <returns><see cref="Android.Content.Res.ColorStateList"/></returns>
+        public Android.Content.Res.ColorStateList GetEffectColor()
         {
-            get { return IExecuteWithSignature<Android.Content.Res.ColorStateList>("getEffectColor", "()Landroid/content/res/ColorStateList;"); } set { IExecuteWithSignature("setEffectColor", "(Landroid/content/res/ColorStateList;)V", value); }
+            return IExecuteWithSignature<Android.Content.Res.ColorStateList>("getEffectColor", "()Landroid/content/res/ColorStateList;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/RippleDrawable.html#getRadius()"/> <see href="https://developer.android.com/reference/android/graphics/drawable/RippleDrawable.html#setRadius(int)"/>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/RippleDrawable.html#getRadius()"/>
         /// </summary>
-        public int Radius
+        /// <returns><see cref="int"/></returns>
+        public int GetRadius()
         {
-            get { return IExecuteWithSignature<int>("getRadius", "()I"); } set { IExecuteWithSignature("setRadius", "(I)V", value); }
+            return IExecuteWithSignature<int>("getRadius", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/RippleDrawable.html#setColor(android.content.res.ColorStateList)"/>
@@ -82,6 +84,22 @@ namespace Android.Graphics.Drawable
         public void SetColor(Android.Content.Res.ColorStateList arg0)
         {
             IExecuteWithSignature("setColor", "(Landroid/content/res/ColorStateList;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/RippleDrawable.html#setEffectColor(android.content.res.ColorStateList)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Res.ColorStateList"/></param>
+        public void SetEffectColor(Android.Content.Res.ColorStateList arg0)
+        {
+            IExecuteWithSignature("setEffectColor", "(Landroid/content/res/ColorStateList;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/RippleDrawable.html#setRadius(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetRadius(int arg0)
+        {
+            IExecuteWithSignature("setRadius", "(I)V", arg0);
         }
 
         #endregion

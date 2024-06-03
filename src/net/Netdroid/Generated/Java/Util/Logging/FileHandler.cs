@@ -30,7 +30,7 @@ namespace Java.Util.Logging
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/FileHandler.html#%3Cinit%3E(java.lang.String,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/logging/FileHandler.html#%3Cinit%3E(java.lang.String,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -41,7 +41,7 @@ namespace Java.Util.Logging
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/FileHandler.html#%3Cinit%3E(java.lang.String,int,int,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/logging/FileHandler.html#%3Cinit%3E(java.lang.String,int,int,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -54,7 +54,7 @@ namespace Java.Util.Logging
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/FileHandler.html#%3Cinit%3E(java.lang.String,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/logging/FileHandler.html#%3Cinit%3E(java.lang.String,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -66,7 +66,7 @@ namespace Java.Util.Logging
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/FileHandler.html#%3Cinit%3E(java.lang.String,long,int,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/logging/FileHandler.html#%3Cinit%3E(java.lang.String,long,int,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -78,7 +78,7 @@ namespace Java.Util.Logging
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/FileHandler.html#%3Cinit%3E(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/logging/FileHandler.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Io.IOException"/>

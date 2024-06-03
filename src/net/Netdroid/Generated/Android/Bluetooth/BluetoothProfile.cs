@@ -94,7 +94,7 @@ namespace Android.Bluetooth
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothProfile.html#HEALTH"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int HEALTH { get { if (!_HEALTHReady) { _HEALTHContent = SGetField<int>(LocalBridgeClazz, "HEALTH"); _HEALTHReady = true; } return _HEALTHContent; } }
         private static int _HEALTHContent = default;
         private static bool _HEALTHReady = false; // this is used because in case of generics 
@@ -167,13 +167,6 @@ namespace Android.Bluetooth
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothProfile.html#getConnectedDevices()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Bluetooth.BluetoothDevice> ConnectedDevices
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Bluetooth.BluetoothDevice>>("getConnectedDevices", "()Ljava/util/List;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothProfile.html#getConnectionState(android.bluetooth.BluetoothDevice)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Bluetooth.BluetoothDevice"/></param>
@@ -181,6 +174,14 @@ namespace Android.Bluetooth
         public int GetConnectionState(Android.Bluetooth.BluetoothDevice arg0)
         {
             return IExecuteWithSignature<int>("getConnectionState", "(Landroid/bluetooth/BluetoothDevice;)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothProfile.html#getConnectedDevices()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Bluetooth.BluetoothDevice> GetConnectedDevices()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Bluetooth.BluetoothDevice>>("getConnectedDevices", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothProfile.html#getDevicesMatchingConnectionStates(int[])"/>
@@ -220,8 +221,8 @@ namespace Android.Bluetooth
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onServiceConnected", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnServiceConnectedEventHandler));
-                AddEventHandler("onServiceDisconnected", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnServiceDisconnectedEventHandler));
+                AddEventHandler("onServiceConnected", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnServiceConnectedEventHandler));
+                AddEventHandler("onServiceDisconnected", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnServiceDisconnectedEventHandler));
 
             }
 
@@ -229,7 +230,7 @@ namespace Android.Bluetooth
             /// Handler for <see href="https://developer.android.com/reference/android/bluetooth/BluetoothProfile.ServiceListener.html#onServiceConnected(int,android.bluetooth.BluetoothProfile)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnServiceConnected"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<int, Android.Bluetooth.BluetoothProfile> OnOnServiceConnected { get; set; } = null;
+            public global::System.Action<int, Android.Bluetooth.BluetoothProfile> OnOnServiceConnected { get; set; } = null;
 
             void OnServiceConnectedEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
             {
@@ -251,7 +252,7 @@ namespace Android.Bluetooth
             /// Handler for <see href="https://developer.android.com/reference/android/bluetooth/BluetoothProfile.ServiceListener.html#onServiceDisconnected(int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnServiceDisconnected"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<int> OnOnServiceDisconnected { get; set; } = null;
+            public global::System.Action<int> OnOnServiceDisconnected { get; set; } = null;
 
             void OnServiceDisconnectedEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
             {

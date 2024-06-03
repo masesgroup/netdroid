@@ -97,26 +97,28 @@ namespace Android.Net.Wifi
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiAvailableChannel.html#getFrequencyMhz()"/> 
-        /// </summary>
-        public int FrequencyMhz
-        {
-            get { return IExecuteWithSignature<int>("getFrequencyMhz", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiAvailableChannel.html#getOperationalModes()"/> 
-        /// </summary>
-        public int OperationalModes
-        {
-            get { return IExecuteWithSignature<int>("getOperationalModes", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiAvailableChannel.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiAvailableChannel.html#getFrequencyMhz()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetFrequencyMhz()
+        {
+            return IExecuteWithSignature<int>("getFrequencyMhz", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiAvailableChannel.html#getOperationalModes()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetOperationalModes()
+        {
+            return IExecuteWithSignature<int>("getOperationalModes", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiAvailableChannel.html#writeToParcel(android.os.Parcel,int)"/>

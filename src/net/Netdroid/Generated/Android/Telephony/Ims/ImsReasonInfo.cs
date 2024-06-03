@@ -1112,33 +1112,36 @@ namespace Android.Telephony.Ims
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/ims/ImsReasonInfo.html#getCode()"/> 
-        /// </summary>
-        public int Code
-        {
-            get { return IExecuteWithSignature<int>("getCode", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/ims/ImsReasonInfo.html#getExtraCode()"/> 
-        /// </summary>
-        public int ExtraCode
-        {
-            get { return IExecuteWithSignature<int>("getExtraCode", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/ims/ImsReasonInfo.html#getExtraMessage()"/> 
-        /// </summary>
-        public Java.Lang.String ExtraMessage
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getExtraMessage", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/ims/ImsReasonInfo.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/ims/ImsReasonInfo.html#getCode()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCode()
+        {
+            return IExecuteWithSignature<int>("getCode", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/ims/ImsReasonInfo.html#getExtraCode()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetExtraCode()
+        {
+            return IExecuteWithSignature<int>("getExtraCode", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/ims/ImsReasonInfo.html#getExtraMessage()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetExtraMessage()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getExtraMessage", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/ims/ImsReasonInfo.html#writeToParcel(android.os.Parcel,int)"/>

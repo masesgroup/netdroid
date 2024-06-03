@@ -52,18 +52,12 @@ namespace Android.View.Inputmethod
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextAttribute.html#getExtras()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextAttribute.html#getExtras()"/>
         /// </summary>
-        public Android.Os.PersistableBundle Extras
+        /// <returns><see cref="Android.Os.PersistableBundle"/></returns>
+        public Android.Os.PersistableBundle GetExtras()
         {
-            get { return IExecuteWithSignature<Android.Os.PersistableBundle>("getExtras", "()Landroid/os/PersistableBundle;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextAttribute.html#getTextConversionSuggestions()"/> 
-        /// </summary>
-        public Java.Util.List<Java.Lang.String> TextConversionSuggestions
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getTextConversionSuggestions", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Android.Os.PersistableBundle>("getExtras", "()Landroid/os/PersistableBundle;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextAttribute.html#describeContents()"/>
@@ -72,6 +66,14 @@ namespace Android.View.Inputmethod
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextAttribute.html#getTextConversionSuggestions()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Lang.String> GetTextConversionSuggestions()
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getTextConversionSuggestions", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextAttribute.html#writeToParcel(android.os.Parcel,int)"/>

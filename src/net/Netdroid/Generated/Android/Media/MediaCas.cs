@@ -347,10 +347,10 @@ namespace Android.Media
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onEvent", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.MediaCas>>>(OnEventEventHandler));
-                AddEventHandler("onPluginStatusUpdate", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.MediaCas>>>(OnPluginStatusUpdateEventHandler));
-                AddEventHandler("onResourceLost", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.MediaCas>>>(OnResourceLostEventHandler));
-                AddEventHandler("onSessionEvent", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.MediaCas>>>(OnSessionEventEventHandler));
+                AddEventHandler("onEvent", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.MediaCas>>>(OnEventEventHandler));
+                AddEventHandler("onPluginStatusUpdate", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.MediaCas>>>(OnPluginStatusUpdateEventHandler));
+                AddEventHandler("onResourceLost", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.MediaCas>>>(OnResourceLostEventHandler));
+                AddEventHandler("onSessionEvent", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.MediaCas>>>(OnSessionEventEventHandler));
 
             }
 
@@ -358,7 +358,7 @@ namespace Android.Media
             /// Handler for <see href="https://developer.android.com/reference/android/media/MediaCas.EventListener.html#onEvent(android.media.MediaCas,int,int,byte[])"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnEvent"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Media.MediaCas, int, int, byte[]> OnOnEvent { get; set; } = null;
+            public global::System.Action<Android.Media.MediaCas, int, int, byte[]> OnOnEvent { get; set; } = null;
 
             void OnEventEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Media.MediaCas>> data)
             {
@@ -393,7 +393,7 @@ namespace Android.Media
             /// Handler for <see href="https://developer.android.com/reference/android/media/MediaCas.EventListener.html#onPluginStatusUpdate(android.media.MediaCas,int,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnPluginStatusUpdate"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Media.MediaCas, int, int> OnOnPluginStatusUpdate { get; set; } = null;
+            public global::System.Action<Android.Media.MediaCas, int, int> OnOnPluginStatusUpdate { get; set; } = null;
 
             void OnPluginStatusUpdateEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Media.MediaCas>> data)
             {
@@ -426,7 +426,7 @@ namespace Android.Media
             /// Handler for <see href="https://developer.android.com/reference/android/media/MediaCas.EventListener.html#onResourceLost(android.media.MediaCas)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnResourceLost"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Media.MediaCas> OnOnResourceLost { get; set; } = null;
+            public global::System.Action<Android.Media.MediaCas> OnOnResourceLost { get; set; } = null;
 
             void OnResourceLostEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Media.MediaCas>> data)
             {
@@ -461,7 +461,7 @@ namespace Android.Media
             /// Handler for <see href="https://developer.android.com/reference/android/media/MediaCas.EventListener.html#onSessionEvent(android.media.MediaCas,android.media.MediaCas.Session,int,int,byte[])"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnSessionEvent"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Media.MediaCas, Android.Media.MediaCas.Session, int, int, byte[]> OnOnSessionEvent { get; set; } = null;
+            public global::System.Action<Android.Media.MediaCas, Android.Media.MediaCas.Session, int, int, byte[]> OnOnSessionEvent { get; set; } = null;
 
             void OnSessionEventEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Media.MediaCas>> data)
             {
@@ -586,18 +586,20 @@ namespace Android.Media
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaCas.PluginDescriptor.html#getName()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/MediaCas.PluginDescriptor.html#getSystemId()"/>
             /// </summary>
-            public Java.Lang.String Name
+            /// <returns><see cref="int"/></returns>
+            public int GetSystemId()
             {
-                get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+                return IExecuteWithSignature<int>("getSystemId", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaCas.PluginDescriptor.html#getSystemId()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/MediaCas.PluginDescriptor.html#getName()"/>
             /// </summary>
-            public int SystemId
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetName()
             {
-                get { return IExecuteWithSignature<int>("getSystemId", "()I"); }
+                return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
             }
 
             #endregion
@@ -631,11 +633,12 @@ namespace Android.Media
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaCas.Session.html#getSessionId()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/MediaCas.Session.html#getSessionId()"/>
             /// </summary>
-            public byte[] SessionId
+            /// <returns><see cref="byte"/></returns>
+            public byte[] GetSessionId()
             {
-                get { return IExecuteWithSignatureArray<byte>("getSessionId", "()[B"); }
+                return IExecuteWithSignatureArray<byte>("getSessionId", "()[B");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCas.Session.html#close()"/>

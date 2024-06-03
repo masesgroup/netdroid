@@ -58,25 +58,28 @@ namespace Android.Media
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaSync.html#getPlaybackParams()"/> <see href="https://developer.android.com/reference/android/media/MediaSync.html#setPlaybackParams(android.media.PlaybackParams)"/>
+        /// <see href="https://developer.android.com/reference/android/media/MediaSync.html#getTimestamp()"/>
         /// </summary>
-        public Android.Media.PlaybackParams PlaybackParams
+        /// <returns><see cref="Android.Media.MediaTimestamp"/></returns>
+        public Android.Media.MediaTimestamp GetTimestamp()
         {
-            get { return IExecuteWithSignature<Android.Media.PlaybackParams>("getPlaybackParams", "()Landroid/media/PlaybackParams;"); } set { IExecuteWithSignature("setPlaybackParams", "(Landroid/media/PlaybackParams;)V", value); }
+            return IExecuteWithSignature<Android.Media.MediaTimestamp>("getTimestamp", "()Landroid/media/MediaTimestamp;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaSync.html#getSyncParams()"/> <see href="https://developer.android.com/reference/android/media/MediaSync.html#setSyncParams(android.media.SyncParams)"/>
+        /// <see href="https://developer.android.com/reference/android/media/MediaSync.html#getPlaybackParams()"/>
         /// </summary>
-        public Android.Media.SyncParams SyncParams
+        /// <returns><see cref="Android.Media.PlaybackParams"/></returns>
+        public Android.Media.PlaybackParams GetPlaybackParams()
         {
-            get { return IExecuteWithSignature<Android.Media.SyncParams>("getSyncParams", "()Landroid/media/SyncParams;"); } set { IExecuteWithSignature("setSyncParams", "(Landroid/media/SyncParams;)V", value); }
+            return IExecuteWithSignature<Android.Media.PlaybackParams>("getPlaybackParams", "()Landroid/media/PlaybackParams;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaSync.html#getTimestamp()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/MediaSync.html#getSyncParams()"/>
         /// </summary>
-        public Android.Media.MediaTimestamp Timestamp
+        /// <returns><see cref="Android.Media.SyncParams"/></returns>
+        public Android.Media.SyncParams GetSyncParams()
         {
-            get { return IExecuteWithSignature<Android.Media.MediaTimestamp>("getTimestamp", "()Landroid/media/MediaTimestamp;"); }
+            return IExecuteWithSignature<Android.Media.SyncParams>("getSyncParams", "()Landroid/media/SyncParams;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaSync.html#createInputSurface()"/>
@@ -137,12 +140,28 @@ namespace Android.Media
             IExecute("setOnErrorListener", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaSync.html#setPlaybackParams(android.media.PlaybackParams)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Media.PlaybackParams"/></param>
+        public void SetPlaybackParams(Android.Media.PlaybackParams arg0)
+        {
+            IExecuteWithSignature("setPlaybackParams", "(Landroid/media/PlaybackParams;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaSync.html#setSurface(android.view.Surface)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.Surface"/></param>
         public void SetSurface(Android.View.Surface arg0)
         {
             IExecuteWithSignature("setSurface", "(Landroid/view/Surface;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaSync.html#setSyncParams(android.media.SyncParams)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Media.SyncParams"/></param>
+        public void SetSyncParams(Android.Media.SyncParams arg0)
+        {
+            IExecuteWithSignature("setSyncParams", "(Landroid/media/SyncParams;)V", arg0);
         }
 
         #endregion
@@ -214,7 +233,7 @@ namespace Android.Media
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onError", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.MediaSync>>>(OnErrorEventHandler));
+                AddEventHandler("onError", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.MediaSync>>>(OnErrorEventHandler));
 
             }
 
@@ -222,7 +241,7 @@ namespace Android.Media
             /// Handler for <see href="https://developer.android.com/reference/android/media/MediaSync.OnErrorListener.html#onError(android.media.MediaSync,int,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnError"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Media.MediaSync, int, int> OnOnError { get; set; } = null;
+            public global::System.Action<Android.Media.MediaSync, int, int> OnOnError { get; set; } = null;
 
             void OnErrorEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Media.MediaSync>> data)
             {

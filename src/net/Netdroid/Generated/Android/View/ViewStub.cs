@@ -93,25 +93,12 @@ namespace Android.View
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ViewStub.html#getInflatedId()"/> <see href="https://developer.android.com/reference/android/view/ViewStub.html#setInflatedId(int)"/>
+        /// <see href="https://developer.android.com/reference/android/view/ViewStub.html#getLayoutInflater()"/>
         /// </summary>
-        public int InflatedId
+        /// <returns><see cref="Android.View.LayoutInflater"/></returns>
+        public Android.View.LayoutInflater GetLayoutInflater()
         {
-            get { return IExecuteWithSignature<int>("getInflatedId", "()I"); } set { IExecuteWithSignature("setInflatedId", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ViewStub.html#getLayoutInflater()"/> <see href="https://developer.android.com/reference/android/view/ViewStub.html#setLayoutInflater(android.view.LayoutInflater)"/>
-        /// </summary>
-        public Android.View.LayoutInflater LayoutInflater
-        {
-            get { return IExecuteWithSignature<Android.View.LayoutInflater>("getLayoutInflater", "()Landroid/view/LayoutInflater;"); } set { IExecuteWithSignature("setLayoutInflater", "(Landroid/view/LayoutInflater;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ViewStub.html#getLayoutResource()"/> <see href="https://developer.android.com/reference/android/view/ViewStub.html#setLayoutResource(int)"/>
-        /// </summary>
-        public int LayoutResource
-        {
-            get { return IExecuteWithSignature<int>("getLayoutResource", "()I"); } set { IExecuteWithSignature("setLayoutResource", "(I)V", value); }
+            return IExecuteWithSignature<Android.View.LayoutInflater>("getLayoutInflater", "()Landroid/view/LayoutInflater;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewStub.html#inflate()"/>
@@ -120,6 +107,46 @@ namespace Android.View
         public Android.View.View Inflate()
         {
             return IExecuteWithSignature<Android.View.View>("inflate", "()Landroid/view/View;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewStub.html#getInflatedId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetInflatedId()
+        {
+            return IExecuteWithSignature<int>("getInflatedId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewStub.html#getLayoutResource()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetLayoutResource()
+        {
+            return IExecuteWithSignature<int>("getLayoutResource", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewStub.html#setInflatedId(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetInflatedId(int arg0)
+        {
+            IExecuteWithSignature("setInflatedId", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewStub.html#setLayoutInflater(android.view.LayoutInflater)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.LayoutInflater"/></param>
+        public void SetLayoutInflater(Android.View.LayoutInflater arg0)
+        {
+            IExecuteWithSignature("setLayoutInflater", "(Landroid/view/LayoutInflater;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewStub.html#setLayoutResource(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetLayoutResource(int arg0)
+        {
+            IExecuteWithSignature("setLayoutResource", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewStub.html#setOnInflateListener(android.view.ViewStub.OnInflateListener)"/>
@@ -158,7 +185,7 @@ namespace Android.View
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onInflate", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.ViewStub>>>(OnInflateEventHandler));
+                AddEventHandler("onInflate", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.ViewStub>>>(OnInflateEventHandler));
 
             }
 
@@ -166,7 +193,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/ViewStub.OnInflateListener.html#onInflate(android.view.ViewStub,android.view.View)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnInflate"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.View.ViewStub, Android.View.View> OnOnInflate { get; set; } = null;
+            public global::System.Action<Android.View.ViewStub, Android.View.View> OnOnInflate { get; set; } = null;
 
             void OnInflateEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.ViewStub>> data)
             {

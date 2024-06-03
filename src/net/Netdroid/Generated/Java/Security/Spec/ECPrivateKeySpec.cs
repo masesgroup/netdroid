@@ -30,7 +30,7 @@ namespace Java.Security.Spec
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/ECPrivateKeySpec.html#%3Cinit%3E(java.math.BigInteger,java.security.spec.ECParameterSpec)"/>
+        /// <see href="https://developer.android.com/reference/java/security/spec/ECPrivateKeySpec.html#%3Cinit%3E(java.math.BigInteger,java.security.spec.ECParameterSpec)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Math.BigInteger"/></param>
         /// <param name="arg1"><see cref="Java.Security.Spec.ECParameterSpec"/></param>
@@ -55,18 +55,20 @@ namespace Java.Security.Spec
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/ECPrivateKeySpec.html#getParams()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/spec/ECPrivateKeySpec.html#getS()"/>
         /// </summary>
-        public Java.Security.Spec.ECParameterSpec Params
+        /// <returns><see cref="Java.Math.BigInteger"/></returns>
+        public Java.Math.BigInteger GetS()
         {
-            get { return IExecuteWithSignature<Java.Security.Spec.ECParameterSpec>("getParams", "()Ljava/security/spec/ECParameterSpec;"); }
+            return IExecuteWithSignature<Java.Math.BigInteger>("getS", "()Ljava/math/BigInteger;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/ECPrivateKeySpec.html#getS()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/spec/ECPrivateKeySpec.html#getParams()"/>
         /// </summary>
-        public Java.Math.BigInteger S
+        /// <returns><see cref="Java.Security.Spec.ECParameterSpec"/></returns>
+        public Java.Security.Spec.ECParameterSpec GetParams()
         {
-            get { return IExecuteWithSignature<Java.Math.BigInteger>("getS", "()Ljava/math/BigInteger;"); }
+            return IExecuteWithSignature<Java.Security.Spec.ECParameterSpec>("getParams", "()Ljava/security/spec/ECParameterSpec;");
         }
 
         #endregion

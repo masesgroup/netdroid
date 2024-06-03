@@ -46,11 +46,12 @@ namespace Android.Health.Connect.Datatypes
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/RespiratoryRateRecord.html#getRate()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/RespiratoryRateRecord.html#getRate()"/>
         /// </summary>
-        public double Rate
+        /// <returns><see cref="double"/></returns>
+        public double GetRate()
         {
-            get { return IExecuteWithSignature<double>("getRate", "()D"); }
+            return IExecuteWithSignature<double>("getRate", "()D");
         }
 
         #endregion

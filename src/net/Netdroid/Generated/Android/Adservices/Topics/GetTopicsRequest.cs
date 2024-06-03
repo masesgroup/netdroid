@@ -46,19 +46,20 @@ namespace Android.Adservices.Topics
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/topics/GetTopicsRequest.html#getAdsSdkName()"/> 
-        /// </summary>
-        public Java.Lang.String AdsSdkName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAdsSdkName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/topics/GetTopicsRequest.html#shouldRecordObservation()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool ShouldRecordObservation()
         {
             return IExecuteWithSignature<bool>("shouldRecordObservation", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/adservices/topics/GetTopicsRequest.html#getAdsSdkName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetAdsSdkName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getAdsSdkName", "()Ljava/lang/String;");
         }
 
         #endregion

@@ -90,32 +90,20 @@ namespace Android.View.Animation
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/animation/LayoutAnimationController.html#getAnimation()"/> <see href="https://developer.android.com/reference/android/view/animation/LayoutAnimationController.html#setAnimation(android.view.animation.Animation)"/>
+        /// <see href="https://developer.android.com/reference/android/view/animation/LayoutAnimationController.html#getAnimation()"/>
         /// </summary>
-        public Android.View.Animation.Animation Animation
+        /// <returns><see cref="Android.View.Animation.Animation"/></returns>
+        public Android.View.Animation.Animation GetAnimation()
         {
-            get { return IExecuteWithSignature<Android.View.Animation.Animation>("getAnimation", "()Landroid/view/animation/Animation;"); } set { IExecuteWithSignature("setAnimation", "(Landroid/view/animation/Animation;)V", value); }
+            return IExecuteWithSignature<Android.View.Animation.Animation>("getAnimation", "()Landroid/view/animation/Animation;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/animation/LayoutAnimationController.html#getDelay()"/> <see href="https://developer.android.com/reference/android/view/animation/LayoutAnimationController.html#setDelay(float)"/>
+        /// <see href="https://developer.android.com/reference/android/view/animation/LayoutAnimationController.html#getInterpolator()"/>
         /// </summary>
-        public float Delay
+        /// <returns><see cref="Android.View.Animation.Interpolator"/></returns>
+        public Android.View.Animation.Interpolator GetInterpolator()
         {
-            get { return IExecuteWithSignature<float>("getDelay", "()F"); } set { IExecuteWithSignature("setDelay", "(F)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/animation/LayoutAnimationController.html#getInterpolator()"/> <see href="https://developer.android.com/reference/android/view/animation/LayoutAnimationController.html#setInterpolator(android.view.animation.Interpolator)"/>
-        /// </summary>
-        public Android.View.Animation.Interpolator Interpolator
-        {
-            get { return IExecuteWithSignature<Android.View.Animation.Interpolator>("getInterpolator", "()Landroid/view/animation/Interpolator;"); } set { IExecuteWithSignature("setInterpolator", "(Landroid/view/animation/Interpolator;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/animation/LayoutAnimationController.html#getOrder()"/> <see href="https://developer.android.com/reference/android/view/animation/LayoutAnimationController.html#setOrder(int)"/>
-        /// </summary>
-        public int Order
-        {
-            get { return IExecuteWithSignature<int>("getOrder", "()I"); } set { IExecuteWithSignature("setOrder", "(I)V", value); }
+            return IExecuteWithSignature<Android.View.Animation.Interpolator>("getInterpolator", "()Landroid/view/animation/Interpolator;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/animation/LayoutAnimationController.html#isDone()"/>
@@ -143,6 +131,22 @@ namespace Android.View.Animation
             return IExecuteWithSignature<Android.View.Animation.Animation>("getAnimationForView", "(Landroid/view/View;)Landroid/view/animation/Animation;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/animation/LayoutAnimationController.html#getDelay()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetDelay()
+        {
+            return IExecuteWithSignature<float>("getDelay", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/animation/LayoutAnimationController.html#getOrder()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetOrder()
+        {
+            return IExecuteWithSignature<int>("getOrder", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/animation/LayoutAnimationController.html#setAnimation(android.content.Context,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
@@ -152,6 +156,22 @@ namespace Android.View.Animation
             IExecute("setAnimation", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/animation/LayoutAnimationController.html#setAnimation(android.view.animation.Animation)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.Animation.Animation"/></param>
+        public void SetAnimation(Android.View.Animation.Animation arg0)
+        {
+            IExecuteWithSignature("setAnimation", "(Landroid/view/animation/Animation;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/animation/LayoutAnimationController.html#setDelay(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetDelay(float arg0)
+        {
+            IExecuteWithSignature("setDelay", "(F)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/animation/LayoutAnimationController.html#setInterpolator(android.content.Context,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
@@ -159,6 +179,22 @@ namespace Android.View.Animation
         public void SetInterpolator(Android.Content.Context arg0, int arg1)
         {
             IExecute("setInterpolator", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/animation/LayoutAnimationController.html#setInterpolator(android.view.animation.Interpolator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.Animation.Interpolator"/></param>
+        public void SetInterpolator(Android.View.Animation.Interpolator arg0)
+        {
+            IExecuteWithSignature("setInterpolator", "(Landroid/view/animation/Interpolator;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/animation/LayoutAnimationController.html#setOrder(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetOrder(int arg0)
+        {
+            IExecuteWithSignature("setOrder", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/animation/LayoutAnimationController.html#start()"/>

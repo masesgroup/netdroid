@@ -58,11 +58,12 @@ namespace Android.Speech
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/speech/RecognitionService.html#getMaxConcurrentSessionsCount()"/> 
+        /// <see href="https://developer.android.com/reference/android/speech/RecognitionService.html#getMaxConcurrentSessionsCount()"/>
         /// </summary>
-        public int MaxConcurrentSessionsCount
+        /// <returns><see cref="int"/></returns>
+        public int GetMaxConcurrentSessionsCount()
         {
-            get { return IExecuteWithSignature<int>("getMaxConcurrentSessionsCount", "()I"); }
+            return IExecuteWithSignature<int>("getMaxConcurrentSessionsCount", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/speech/RecognitionService.html#onCheckRecognitionSupport(android.content.Intent,android.content.AttributionSource,android.speech.RecognitionService.SupportCallback)"/>
@@ -135,18 +136,20 @@ namespace Android.Speech
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/speech/RecognitionService.Callback.html#getCallingAttributionSource()"/> 
+            /// <see href="https://developer.android.com/reference/android/speech/RecognitionService.Callback.html#getCallingAttributionSource()"/>
             /// </summary>
-            public Android.Content.AttributionSource CallingAttributionSource
+            /// <returns><see cref="Android.Content.AttributionSource"/></returns>
+            public Android.Content.AttributionSource GetCallingAttributionSource()
             {
-                get { return IExecuteWithSignature<Android.Content.AttributionSource>("getCallingAttributionSource", "()Landroid/content/AttributionSource;"); }
+                return IExecuteWithSignature<Android.Content.AttributionSource>("getCallingAttributionSource", "()Landroid/content/AttributionSource;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/speech/RecognitionService.Callback.html#getCallingUid()"/> 
+            /// <see href="https://developer.android.com/reference/android/speech/RecognitionService.Callback.html#getCallingUid()"/>
             /// </summary>
-            public int CallingUid
+            /// <returns><see cref="int"/></returns>
+            public int GetCallingUid()
             {
-                get { return IExecuteWithSignature<int>("getCallingUid", "()I"); }
+                return IExecuteWithSignature<int>("getCallingUid", "()I");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/speech/RecognitionService.Callback.html#beginningOfSpeech()"/>

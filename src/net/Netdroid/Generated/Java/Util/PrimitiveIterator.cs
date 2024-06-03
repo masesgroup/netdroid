@@ -46,7 +46,7 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/PrimitiveIterator.html#forEachRemaining(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/PrimitiveIterator.html#forEachRemaining(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         public void ForEachRemaining(object arg0)
@@ -78,7 +78,7 @@ namespace Java.Util
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/PrimitiveIterator.OfDouble.html#nextDouble()"/>
+            /// <see href="https://developer.android.com/reference/java/util/PrimitiveIterator.OfDouble.html#nextDouble()"/>
             /// </summary>
             /// <returns><see cref="double"/></returns>
             public double NextDouble()
@@ -86,7 +86,7 @@ namespace Java.Util
                 return IExecuteWithSignature<double>("nextDouble", "()D");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/PrimitiveIterator.OfDouble.html#next()"/>
+            /// <see href="https://developer.android.com/reference/java/util/PrimitiveIterator.OfDouble.html#next()"/>
             /// </summary>
             /// <returns><see cref="object"/></returns>
             public object Next()
@@ -94,7 +94,7 @@ namespace Java.Util
                 return IExecuteWithSignature("next", "()Ljava/lang/Object;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/PrimitiveIterator.OfDouble.html#forEachRemaining(java.lang.Object)"/>
+            /// <see href="https://developer.android.com/reference/java/util/PrimitiveIterator.OfDouble.html#forEachRemaining(java.lang.Object)"/>
             /// </summary>
             /// <param name="arg0"><see cref="object"/></param>
             public void ForEachRemaining(object arg0)
@@ -102,16 +102,16 @@ namespace Java.Util
                 IExecuteWithSignature("forEachRemaining", "(Ljava/lang/Object;)V", arg0);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/PrimitiveIterator.OfDouble.html#forEachRemaining(java.util.function.Consumer)"/>
+            /// <see href="https://developer.android.com/reference/java/util/PrimitiveIterator.OfDouble.html#forEachRemaining(java.util.function.Consumer)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
             /// <typeparam name="Arg0objectSuperJava_Lang_Double"><see cref="Java.Lang.Double"/></typeparam>
-            public void ForEachRemaining<Arg0objectSuperJava_Lang_Double>(Java.Util.Function.Consumer<Arg0objectSuperJava_Lang_Double> arg0) where Arg0objectSuperJava_Lang_Double: Java.Lang.Double
+            public void ForEachRemaining<Arg0objectSuperJava_Lang_Double>(Java.Util.Function.Consumer<Arg0objectSuperJava_Lang_Double> arg0) where Arg0objectSuperJava_Lang_Double : Java.Lang.Double
             {
                 IExecuteWithSignature("forEachRemaining", "(Ljava/util/function/Consumer;)V", arg0);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/PrimitiveIterator.OfDouble.html#forEachRemaining(java.util.function.DoubleConsumer)"/>
+            /// <see href="https://developer.android.com/reference/java/util/PrimitiveIterator.OfDouble.html#forEachRemaining(java.util.function.DoubleConsumer)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Function.DoubleConsumer"/></param>
             public void ForEachRemaining(Java.Util.Function.DoubleConsumer arg0)
@@ -150,7 +150,7 @@ namespace Java.Util
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/PrimitiveIterator.OfInt.html#nextInt()"/>
+            /// <see href="https://developer.android.com/reference/java/util/PrimitiveIterator.OfInt.html#nextInt()"/>
             /// </summary>
             /// <returns><see cref="int"/></returns>
             public int NextInt()
@@ -158,7 +158,7 @@ namespace Java.Util
                 return IExecuteWithSignature<int>("nextInt", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/PrimitiveIterator.OfInt.html#next()"/>
+            /// <see href="https://developer.android.com/reference/java/util/PrimitiveIterator.OfInt.html#next()"/>
             /// </summary>
             /// <returns><see cref="object"/></returns>
             public object Next()
@@ -166,7 +166,7 @@ namespace Java.Util
                 return IExecuteWithSignature("next", "()Ljava/lang/Object;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/PrimitiveIterator.OfInt.html#forEachRemaining(java.lang.Object)"/>
+            /// <see href="https://developer.android.com/reference/java/util/PrimitiveIterator.OfInt.html#forEachRemaining(java.lang.Object)"/>
             /// </summary>
             /// <param name="arg0"><see cref="object"/></param>
             public void ForEachRemaining(object arg0)
@@ -174,16 +174,16 @@ namespace Java.Util
                 IExecuteWithSignature("forEachRemaining", "(Ljava/lang/Object;)V", arg0);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/PrimitiveIterator.OfInt.html#forEachRemaining(java.util.function.Consumer)"/>
+            /// <see href="https://developer.android.com/reference/java/util/PrimitiveIterator.OfInt.html#forEachRemaining(java.util.function.Consumer)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
             /// <typeparam name="Arg0objectSuperJava_Lang_Integer"><see cref="Java.Lang.Integer"/></typeparam>
-            public void ForEachRemaining<Arg0objectSuperJava_Lang_Integer>(Java.Util.Function.Consumer<Arg0objectSuperJava_Lang_Integer> arg0) where Arg0objectSuperJava_Lang_Integer: Java.Lang.Integer
+            public void ForEachRemaining<Arg0objectSuperJava_Lang_Integer>(Java.Util.Function.Consumer<Arg0objectSuperJava_Lang_Integer> arg0) where Arg0objectSuperJava_Lang_Integer : Java.Lang.Integer
             {
                 IExecuteWithSignature("forEachRemaining", "(Ljava/util/function/Consumer;)V", arg0);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/PrimitiveIterator.OfInt.html#forEachRemaining(java.util.function.IntConsumer)"/>
+            /// <see href="https://developer.android.com/reference/java/util/PrimitiveIterator.OfInt.html#forEachRemaining(java.util.function.IntConsumer)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Function.IntConsumer"/></param>
             public void ForEachRemaining(Java.Util.Function.IntConsumer arg0)
@@ -222,7 +222,7 @@ namespace Java.Util
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/PrimitiveIterator.OfLong.html#nextLong()"/>
+            /// <see href="https://developer.android.com/reference/java/util/PrimitiveIterator.OfLong.html#nextLong()"/>
             /// </summary>
             /// <returns><see cref="long"/></returns>
             public long NextLong()
@@ -230,7 +230,7 @@ namespace Java.Util
                 return IExecuteWithSignature<long>("nextLong", "()J");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/PrimitiveIterator.OfLong.html#next()"/>
+            /// <see href="https://developer.android.com/reference/java/util/PrimitiveIterator.OfLong.html#next()"/>
             /// </summary>
             /// <returns><see cref="object"/></returns>
             public object Next()
@@ -238,7 +238,7 @@ namespace Java.Util
                 return IExecuteWithSignature("next", "()Ljava/lang/Object;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/PrimitiveIterator.OfLong.html#forEachRemaining(java.lang.Object)"/>
+            /// <see href="https://developer.android.com/reference/java/util/PrimitiveIterator.OfLong.html#forEachRemaining(java.lang.Object)"/>
             /// </summary>
             /// <param name="arg0"><see cref="object"/></param>
             public void ForEachRemaining(object arg0)
@@ -246,16 +246,16 @@ namespace Java.Util
                 IExecuteWithSignature("forEachRemaining", "(Ljava/lang/Object;)V", arg0);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/PrimitiveIterator.OfLong.html#forEachRemaining(java.util.function.Consumer)"/>
+            /// <see href="https://developer.android.com/reference/java/util/PrimitiveIterator.OfLong.html#forEachRemaining(java.util.function.Consumer)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
             /// <typeparam name="Arg0objectSuperJava_Lang_Long"><see cref="Java.Lang.Long"/></typeparam>
-            public void ForEachRemaining<Arg0objectSuperJava_Lang_Long>(Java.Util.Function.Consumer<Arg0objectSuperJava_Lang_Long> arg0) where Arg0objectSuperJava_Lang_Long: Java.Lang.Long
+            public void ForEachRemaining<Arg0objectSuperJava_Lang_Long>(Java.Util.Function.Consumer<Arg0objectSuperJava_Lang_Long> arg0) where Arg0objectSuperJava_Lang_Long : Java.Lang.Long
             {
                 IExecuteWithSignature("forEachRemaining", "(Ljava/util/function/Consumer;)V", arg0);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/PrimitiveIterator.OfLong.html#forEachRemaining(java.util.function.LongConsumer)"/>
+            /// <see href="https://developer.android.com/reference/java/util/PrimitiveIterator.OfLong.html#forEachRemaining(java.util.function.LongConsumer)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Function.LongConsumer"/></param>
             public void ForEachRemaining(Java.Util.Function.LongConsumer arg0)
@@ -323,7 +323,7 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/PrimitiveIterator.html#forEachRemaining(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/PrimitiveIterator.html#forEachRemaining(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T_CONS"/></param>
         public void ForEachRemaining(T_CONS arg0)

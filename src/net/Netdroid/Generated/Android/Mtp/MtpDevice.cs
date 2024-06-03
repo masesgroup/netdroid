@@ -54,32 +54,12 @@ namespace Android.Mtp
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/mtp/MtpDevice.html#getDeviceId()"/> 
+        /// <see href="https://developer.android.com/reference/android/mtp/MtpDevice.html#getDeviceInfo()"/>
         /// </summary>
-        public int DeviceId
+        /// <returns><see cref="Android.Mtp.MtpDeviceInfo"/></returns>
+        public Android.Mtp.MtpDeviceInfo GetDeviceInfo()
         {
-            get { return IExecuteWithSignature<int>("getDeviceId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/mtp/MtpDevice.html#getDeviceInfo()"/> 
-        /// </summary>
-        public Android.Mtp.MtpDeviceInfo DeviceInfo
-        {
-            get { return IExecuteWithSignature<Android.Mtp.MtpDeviceInfo>("getDeviceInfo", "()Landroid/mtp/MtpDeviceInfo;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/mtp/MtpDevice.html#getDeviceName()"/> 
-        /// </summary>
-        public Java.Lang.String DeviceName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDeviceName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/mtp/MtpDevice.html#getStorageIds()"/> 
-        /// </summary>
-        public int[] StorageIds
-        {
-            get { return IExecuteWithSignatureArray<int>("getStorageIds", "()[I"); }
+            return IExecuteWithSignature<Android.Mtp.MtpDeviceInfo>("getDeviceInfo", "()Landroid/mtp/MtpDeviceInfo;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/mtp/MtpDevice.html#readEvent(android.os.CancellationSignal)"/>
@@ -187,6 +167,14 @@ namespace Android.Mtp
             return IExecuteWithSignatureArray<byte>("getThumbnail", "(I)[B", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/mtp/MtpDevice.html#getDeviceId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDeviceId()
+        {
+            return IExecuteWithSignature<int>("getDeviceId", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/mtp/MtpDevice.html#getObjectHandles(int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -196,6 +184,22 @@ namespace Android.Mtp
         public int[] GetObjectHandles(int arg0, int arg1, int arg2)
         {
             return IExecuteArray<int>("getObjectHandles", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/mtp/MtpDevice.html#getStorageIds()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int[] GetStorageIds()
+        {
+            return IExecuteWithSignatureArray<int>("getStorageIds", "()[I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/mtp/MtpDevice.html#getDeviceName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDeviceName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getDeviceName", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/mtp/MtpDevice.html#getParent(int)"/>

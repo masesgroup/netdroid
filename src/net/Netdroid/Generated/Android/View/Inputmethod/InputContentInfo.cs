@@ -71,25 +71,28 @@ namespace Android.View.Inputmethod
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputContentInfo.html#getContentUri()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputContentInfo.html#getDescription()"/>
         /// </summary>
-        public Android.Net.Uri ContentUri
+        /// <returns><see cref="Android.Content.ClipDescription"/></returns>
+        public Android.Content.ClipDescription GetDescription()
         {
-            get { return IExecuteWithSignature<Android.Net.Uri>("getContentUri", "()Landroid/net/Uri;"); }
+            return IExecuteWithSignature<Android.Content.ClipDescription>("getDescription", "()Landroid/content/ClipDescription;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputContentInfo.html#getDescription()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputContentInfo.html#getContentUri()"/>
         /// </summary>
-        public Android.Content.ClipDescription Description
+        /// <returns><see cref="Android.Net.Uri"/></returns>
+        public Android.Net.Uri GetContentUri()
         {
-            get { return IExecuteWithSignature<Android.Content.ClipDescription>("getDescription", "()Landroid/content/ClipDescription;"); }
+            return IExecuteWithSignature<Android.Net.Uri>("getContentUri", "()Landroid/net/Uri;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputContentInfo.html#getLinkUri()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputContentInfo.html#getLinkUri()"/>
         /// </summary>
-        public Android.Net.Uri LinkUri
+        /// <returns><see cref="Android.Net.Uri"/></returns>
+        public Android.Net.Uri GetLinkUri()
         {
-            get { return IExecuteWithSignature<Android.Net.Uri>("getLinkUri", "()Landroid/net/Uri;"); }
+            return IExecuteWithSignature<Android.Net.Uri>("getLinkUri", "()Landroid/net/Uri;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputContentInfo.html#describeContents()"/>

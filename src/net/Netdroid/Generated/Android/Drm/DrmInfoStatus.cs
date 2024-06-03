@@ -36,7 +36,7 @@ namespace Android.Drm
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Android.Drm.ProcessedData"/></param>
         /// <param name="arg3"><see cref="Java.Lang.String"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public DrmInfoStatus(int arg0, int arg1, Android.Drm.ProcessedData arg2, Java.Lang.String arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -52,42 +52,42 @@ namespace Android.Drm
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/drm/DrmInfoStatus.html#data"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Drm.ProcessedData data { get { if (!_dataReady) { _dataContent = IGetField<Android.Drm.ProcessedData>("data"); _dataReady = true; } return _dataContent; } }
         private Android.Drm.ProcessedData _dataContent = default;
         private bool _dataReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/drm/DrmInfoStatus.html#infoType"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int infoType { get { if (!_infoTypeReady) { _infoTypeContent = IGetField<int>("infoType"); _infoTypeReady = true; } return _infoTypeContent; } }
         private int _infoTypeContent = default;
         private bool _infoTypeReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/drm/DrmInfoStatus.html#statusCode"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int statusCode { get { if (!_statusCodeReady) { _statusCodeContent = IGetField<int>("statusCode"); _statusCodeReady = true; } return _statusCodeContent; } }
         private int _statusCodeContent = default;
         private bool _statusCodeReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/drm/DrmInfoStatus.html#mimeType"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Lang.String mimeType { get { if (!_mimeTypeReady) { _mimeTypeContent = IGetField<Java.Lang.String>("mimeType"); _mimeTypeReady = true; } return _mimeTypeContent; } }
         private Java.Lang.String _mimeTypeContent = default;
         private bool _mimeTypeReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/drm/DrmInfoStatus.html#STATUS_ERROR"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int STATUS_ERROR { get { if (!_STATUS_ERRORReady) { _STATUS_ERRORContent = SGetField<int>(LocalBridgeClazz, "STATUS_ERROR"); _STATUS_ERRORReady = true; } return _STATUS_ERRORContent; } }
         private static int _STATUS_ERRORContent = default;
         private static bool _STATUS_ERRORReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/drm/DrmInfoStatus.html#STATUS_OK"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int STATUS_OK { get { if (!_STATUS_OKReady) { _STATUS_OKContent = SGetField<int>(LocalBridgeClazz, "STATUS_OK"); _STATUS_OKReady = true; } return _STATUS_OKContent; } }
         private static int _STATUS_OKContent = default;
         private static bool _STATUS_OKReady = false; // this is used because in case of generics 

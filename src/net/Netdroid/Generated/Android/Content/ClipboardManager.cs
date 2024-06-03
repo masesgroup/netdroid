@@ -46,18 +46,20 @@ namespace Android.Content
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/ClipboardManager.html#getPrimaryClip()"/> <see href="https://developer.android.com/reference/android/content/ClipboardManager.html#setPrimaryClip(android.content.ClipData)"/>
+        /// <see href="https://developer.android.com/reference/android/content/ClipboardManager.html#getPrimaryClip()"/>
         /// </summary>
-        public Android.Content.ClipData PrimaryClip
+        /// <returns><see cref="Android.Content.ClipData"/></returns>
+        public Android.Content.ClipData GetPrimaryClip()
         {
-            get { return IExecuteWithSignature<Android.Content.ClipData>("getPrimaryClip", "()Landroid/content/ClipData;"); } set { IExecuteWithSignature("setPrimaryClip", "(Landroid/content/ClipData;)V", value); }
+            return IExecuteWithSignature<Android.Content.ClipData>("getPrimaryClip", "()Landroid/content/ClipData;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/ClipboardManager.html#getPrimaryClipDescription()"/> 
+        /// <see href="https://developer.android.com/reference/android/content/ClipboardManager.html#getPrimaryClipDescription()"/>
         /// </summary>
-        public Android.Content.ClipDescription PrimaryClipDescription
+        /// <returns><see cref="Android.Content.ClipDescription"/></returns>
+        public Android.Content.ClipDescription GetPrimaryClipDescription()
         {
-            get { return IExecuteWithSignature<Android.Content.ClipDescription>("getPrimaryClipDescription", "()Landroid/content/ClipDescription;"); }
+            return IExecuteWithSignature<Android.Content.ClipDescription>("getPrimaryClipDescription", "()Landroid/content/ClipDescription;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ClipboardManager.html#hasPrimaryClip()"/>
@@ -90,6 +92,14 @@ namespace Android.Content
         {
             IExecuteWithSignature("removePrimaryClipChangedListener", "(Landroid/content/ClipboardManager$OnPrimaryClipChangedListener;)V", arg0);
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/ClipboardManager.html#setPrimaryClip(android.content.ClipData)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.ClipData"/></param>
+        public void SetPrimaryClip(Android.Content.ClipData arg0)
+        {
+            IExecuteWithSignature("setPrimaryClip", "(Landroid/content/ClipData;)V", arg0);
+        }
 
         #endregion
 
@@ -119,7 +129,7 @@ namespace Android.Content
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onPrimaryClipChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnPrimaryClipChangedEventHandler));
+                AddEventHandler("onPrimaryClipChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnPrimaryClipChangedEventHandler));
 
             }
 
@@ -127,7 +137,7 @@ namespace Android.Content
             /// Handler for <see href="https://developer.android.com/reference/android/content/ClipboardManager.OnPrimaryClipChangedListener.html#onPrimaryClipChanged()"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnPrimaryClipChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action OnOnPrimaryClipChanged { get; set; } = null;
+            public global::System.Action OnOnPrimaryClipChanged { get; set; } = null;
 
             void OnPrimaryClipChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
             {

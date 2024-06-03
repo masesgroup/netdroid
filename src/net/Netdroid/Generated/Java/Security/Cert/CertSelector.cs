@@ -64,7 +64,7 @@ namespace Java.Security.Cert
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/CertSelector.html#match(java.security.cert.Certificate)"/>
+        /// <see href="https://developer.android.com/reference/java/security/cert/CertSelector.html#match(java.security.cert.Certificate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Cert.Certificate"/></param>
         /// <returns><see cref="bool"/></returns>

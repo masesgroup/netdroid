@@ -30,7 +30,7 @@ namespace Java.Io
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/PipedOutputStream.html#%3Cinit%3E(java.io.PipedInputStream)"/>
+        /// <see href="https://developer.android.com/reference/java/io/PipedOutputStream.html#%3Cinit%3E(java.io.PipedInputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.PipedInputStream"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -55,7 +55,7 @@ namespace Java.Io
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/PipedOutputStream.html#connect(java.io.PipedInputStream)"/>
+        /// <see href="https://developer.android.com/reference/java/io/PipedOutputStream.html#connect(java.io.PipedInputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.PipedInputStream"/></param>
         /// <exception cref="Java.Io.IOException"/>

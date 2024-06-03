@@ -28,7 +28,7 @@ namespace Java.Nio.File
 {
     #region AccessDeniedException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/AccessDeniedException.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/AccessDeniedException.html"/>
     /// </summary>
     public partial class AccessDeniedException : Java.Nio.File.FileSystemException
     {
@@ -45,7 +45,7 @@ namespace Java.Nio.File
 
     #region AccessMode
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/AccessMode.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/AccessMode.html"/>
     /// </summary>
     public partial class AccessMode : Java.Lang.Enum<Java.Nio.File.AccessMode>
     {
@@ -89,7 +89,7 @@ namespace Java.Nio.File
 
     #region AtomicMoveNotSupportedException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/AtomicMoveNotSupportedException.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/AtomicMoveNotSupportedException.html"/>
     /// </summary>
     public partial class AtomicMoveNotSupportedException : Java.Nio.File.FileSystemException
     {
@@ -106,7 +106,7 @@ namespace Java.Nio.File
 
     #region ClosedDirectoryStreamException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/ClosedDirectoryStreamException.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/ClosedDirectoryStreamException.html"/>
     /// </summary>
     public partial class ClosedDirectoryStreamException : Java.Lang.IllegalStateException
     {
@@ -123,7 +123,7 @@ namespace Java.Nio.File
 
     #region ClosedFileSystemException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/ClosedFileSystemException.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/ClosedFileSystemException.html"/>
     /// </summary>
     public partial class ClosedFileSystemException : Java.Lang.IllegalStateException
     {
@@ -140,7 +140,7 @@ namespace Java.Nio.File
 
     #region ClosedWatchServiceException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/ClosedWatchServiceException.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/ClosedWatchServiceException.html"/>
     /// </summary>
     public partial class ClosedWatchServiceException : Java.Lang.IllegalStateException
     {
@@ -157,7 +157,7 @@ namespace Java.Nio.File
 
     #region CopyOption
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/CopyOption.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/CopyOption.html"/>
     /// </summary>
     public partial class CopyOption : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CopyOption>
     {
@@ -165,12 +165,12 @@ namespace Java.Nio.File
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("CopyOption class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("CopyOption class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CopyOption() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("CopyOption class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("CopyOption class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CopyOption(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -203,7 +203,7 @@ namespace Java.Nio.File
 
     #region DirectoryIteratorException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/DirectoryIteratorException.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/DirectoryIteratorException.html"/>
     /// </summary>
     public partial class DirectoryIteratorException : Java.Util.ConcurrentModificationException
     {
@@ -220,7 +220,7 @@ namespace Java.Nio.File
 
     #region DirectoryNotEmptyException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/DirectoryNotEmptyException.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/DirectoryNotEmptyException.html"/>
     /// </summary>
     public partial class DirectoryNotEmptyException : Java.Nio.File.FileSystemException
     {
@@ -237,7 +237,7 @@ namespace Java.Nio.File
 
     #region DirectoryStream
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/DirectoryStream.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/DirectoryStream.html"/>
     /// </summary>
     public partial class DirectoryStream : Java.Lang.Iterable
     {
@@ -245,12 +245,12 @@ namespace Java.Nio.File
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("DirectoryStream class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DirectoryStream class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DirectoryStream() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("DirectoryStream class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DirectoryStream class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DirectoryStream(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -279,7 +279,7 @@ namespace Java.Nio.File
         // TODO: complete the class
         #region Filter
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/DirectoryStream.Filter.html"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/DirectoryStream.Filter.html"/>
         /// </summary>
         public partial class Filter : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Filter>
         {
@@ -287,12 +287,12 @@ namespace Java.Nio.File
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
-            [Obsolete("Filter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("Filter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Filter() { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
-            [Obsolete("Filter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("Filter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Filter(params object[] args) : base(args) { }
 
             private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -325,7 +325,7 @@ namespace Java.Nio.File
 
         #region Filter<T>
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/DirectoryStream.Filter.html"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/DirectoryStream.Filter.html"/>
         /// </summary>
         /// <typeparam name="T"></typeparam>
         public partial class Filter<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Filter<T>>
@@ -334,12 +334,12 @@ namespace Java.Nio.File
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
-            [Obsolete("Filter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("Filter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Filter() { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
-            [Obsolete("Filter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("Filter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Filter(params object[] args) : base(args) { }
 
             private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -376,7 +376,7 @@ namespace Java.Nio.File
 
     #region DirectoryStream<T>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/DirectoryStream.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/DirectoryStream.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
     public partial class DirectoryStream<T> : Java.Lang.Iterable<T>
@@ -385,12 +385,12 @@ namespace Java.Nio.File
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("DirectoryStream class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DirectoryStream class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DirectoryStream() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("DirectoryStream class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DirectoryStream class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DirectoryStream(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -423,7 +423,7 @@ namespace Java.Nio.File
 
     #region FileAlreadyExistsException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/FileAlreadyExistsException.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/FileAlreadyExistsException.html"/>
     /// </summary>
     public partial class FileAlreadyExistsException : Java.Nio.File.FileSystemException
     {
@@ -440,7 +440,7 @@ namespace Java.Nio.File
 
     #region Files
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Files.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/Files.html"/>
     /// </summary>
     public partial class Files : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Files>
     {
@@ -484,7 +484,7 @@ namespace Java.Nio.File
 
     #region FileStore
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/FileStore.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/FileStore.html"/>
     /// </summary>
     public partial class FileStore : MASES.JCOBridge.C2JBridge.JVMBridgeBase<FileStore>
     {
@@ -492,12 +492,12 @@ namespace Java.Nio.File
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("FileStore class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("FileStore class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public FileStore() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("FileStore class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("FileStore class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public FileStore(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -530,7 +530,7 @@ namespace Java.Nio.File
 
     #region FileSystem
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/FileSystem.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/FileSystem.html"/>
     /// </summary>
     public partial class FileSystem : Java.Io.Closeable
     {
@@ -538,12 +538,12 @@ namespace Java.Nio.File
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("FileSystem class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("FileSystem class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public FileSystem() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("FileSystem class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("FileSystem class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public FileSystem(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -576,7 +576,7 @@ namespace Java.Nio.File
 
     #region FileSystemAlreadyExistsException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/FileSystemAlreadyExistsException.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/FileSystemAlreadyExistsException.html"/>
     /// </summary>
     public partial class FileSystemAlreadyExistsException : Java.Lang.RuntimeException
     {
@@ -593,7 +593,7 @@ namespace Java.Nio.File
 
     #region FileSystemException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/FileSystemException.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/FileSystemException.html"/>
     /// </summary>
     public partial class FileSystemException : Java.Io.IOException
     {
@@ -610,7 +610,7 @@ namespace Java.Nio.File
 
     #region FileSystemLoopException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/FileSystemLoopException.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/FileSystemLoopException.html"/>
     /// </summary>
     public partial class FileSystemLoopException : Java.Nio.File.FileSystemException
     {
@@ -627,7 +627,7 @@ namespace Java.Nio.File
 
     #region FileSystemNotFoundException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/FileSystemNotFoundException.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/FileSystemNotFoundException.html"/>
     /// </summary>
     public partial class FileSystemNotFoundException : Java.Lang.RuntimeException
     {
@@ -644,7 +644,7 @@ namespace Java.Nio.File
 
     #region FileSystems
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/FileSystems.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/FileSystems.html"/>
     /// </summary>
     public partial class FileSystems : MASES.JCOBridge.C2JBridge.JVMBridgeBase<FileSystems>
     {
@@ -688,7 +688,7 @@ namespace Java.Nio.File
 
     #region FileVisitOption
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/FileVisitOption.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/FileVisitOption.html"/>
     /// </summary>
     public partial class FileVisitOption : Java.Lang.Enum<Java.Nio.File.FileVisitOption>
     {
@@ -732,7 +732,7 @@ namespace Java.Nio.File
 
     #region FileVisitor
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/FileVisitor.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/FileVisitor.html"/>
     /// </summary>
     public partial class FileVisitor : MASES.JCOBridge.C2JBridge.JVMBridgeBase<FileVisitor>
     {
@@ -740,12 +740,12 @@ namespace Java.Nio.File
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("FileVisitor class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("FileVisitor class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public FileVisitor() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("FileVisitor class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("FileVisitor class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public FileVisitor(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -778,7 +778,7 @@ namespace Java.Nio.File
 
     #region FileVisitor<T>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/FileVisitor.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/FileVisitor.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
     public partial class FileVisitor<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<FileVisitor<T>>
@@ -787,12 +787,12 @@ namespace Java.Nio.File
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("FileVisitor class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("FileVisitor class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public FileVisitor() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("FileVisitor class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("FileVisitor class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public FileVisitor(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -825,7 +825,7 @@ namespace Java.Nio.File
 
     #region FileVisitResult
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/FileVisitResult.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/FileVisitResult.html"/>
     /// </summary>
     public partial class FileVisitResult : Java.Lang.Enum<Java.Nio.File.FileVisitResult>
     {
@@ -869,7 +869,7 @@ namespace Java.Nio.File
 
     #region InvalidPathException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/InvalidPathException.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/InvalidPathException.html"/>
     /// </summary>
     public partial class InvalidPathException : Java.Lang.IllegalArgumentException
     {
@@ -886,7 +886,7 @@ namespace Java.Nio.File
 
     #region LinkOption
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/LinkOption.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/LinkOption.html"/>
     /// </summary>
     public partial class LinkOption : Java.Lang.Enum<Java.Nio.File.LinkOption>
     {
@@ -930,7 +930,7 @@ namespace Java.Nio.File
 
     #region LinkPermission
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/LinkPermission.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/LinkPermission.html"/>
     /// </summary>
     public partial class LinkPermission : Java.Security.BasicPermission
     {
@@ -974,7 +974,7 @@ namespace Java.Nio.File
 
     #region NoSuchFileException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/NoSuchFileException.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/NoSuchFileException.html"/>
     /// </summary>
     public partial class NoSuchFileException : Java.Nio.File.FileSystemException
     {
@@ -991,7 +991,7 @@ namespace Java.Nio.File
 
     #region NotDirectoryException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/NotDirectoryException.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/NotDirectoryException.html"/>
     /// </summary>
     public partial class NotDirectoryException : Java.Nio.File.FileSystemException
     {
@@ -1008,7 +1008,7 @@ namespace Java.Nio.File
 
     #region NotLinkException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/NotLinkException.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/NotLinkException.html"/>
     /// </summary>
     public partial class NotLinkException : Java.Nio.File.FileSystemException
     {
@@ -1025,7 +1025,7 @@ namespace Java.Nio.File
 
     #region OpenOption
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/OpenOption.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/OpenOption.html"/>
     /// </summary>
     public partial class OpenOption : MASES.JCOBridge.C2JBridge.JVMBridgeBase<OpenOption>
     {
@@ -1033,12 +1033,12 @@ namespace Java.Nio.File
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("OpenOption class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("OpenOption class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public OpenOption() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("OpenOption class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("OpenOption class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public OpenOption(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1071,7 +1071,7 @@ namespace Java.Nio.File
 
     #region Path
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Path.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/Path.html"/>
     /// </summary>
     public partial class Path : Java.Lang.Iterable<Java.Nio.File.Path>
     {
@@ -1079,12 +1079,12 @@ namespace Java.Nio.File
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Path class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Path class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Path() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Path class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Path class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Path(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1117,7 +1117,7 @@ namespace Java.Nio.File
 
     #region PathMatcher
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/PathMatcher.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/PathMatcher.html"/>
     /// </summary>
     public partial class PathMatcher : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PathMatcher>
     {
@@ -1125,12 +1125,12 @@ namespace Java.Nio.File
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("PathMatcher class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("PathMatcher class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public PathMatcher() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("PathMatcher class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("PathMatcher class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public PathMatcher(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1163,7 +1163,7 @@ namespace Java.Nio.File
 
     #region Paths
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Paths.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/Paths.html"/>
     /// </summary>
     public partial class Paths : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Paths>
     {
@@ -1207,7 +1207,7 @@ namespace Java.Nio.File
 
     #region ProviderMismatchException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/ProviderMismatchException.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/ProviderMismatchException.html"/>
     /// </summary>
     public partial class ProviderMismatchException : Java.Lang.IllegalArgumentException
     {
@@ -1224,7 +1224,7 @@ namespace Java.Nio.File
 
     #region ProviderNotFoundException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/ProviderNotFoundException.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/ProviderNotFoundException.html"/>
     /// </summary>
     public partial class ProviderNotFoundException : Java.Lang.RuntimeException
     {
@@ -1241,7 +1241,7 @@ namespace Java.Nio.File
 
     #region ReadOnlyFileSystemException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/ReadOnlyFileSystemException.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/ReadOnlyFileSystemException.html"/>
     /// </summary>
     public partial class ReadOnlyFileSystemException : Java.Lang.UnsupportedOperationException
     {
@@ -1258,7 +1258,7 @@ namespace Java.Nio.File
 
     #region SecureDirectoryStream
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/SecureDirectoryStream.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/SecureDirectoryStream.html"/>
     /// </summary>
     public partial class SecureDirectoryStream : Java.Nio.File.DirectoryStream
     {
@@ -1266,12 +1266,12 @@ namespace Java.Nio.File
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("SecureDirectoryStream class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("SecureDirectoryStream class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public SecureDirectoryStream() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("SecureDirectoryStream class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("SecureDirectoryStream class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public SecureDirectoryStream(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1304,7 +1304,7 @@ namespace Java.Nio.File
 
     #region SecureDirectoryStream<T>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/SecureDirectoryStream.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/SecureDirectoryStream.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
     public partial class SecureDirectoryStream<T> : Java.Nio.File.DirectoryStream<T>
@@ -1313,12 +1313,12 @@ namespace Java.Nio.File
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("SecureDirectoryStream class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("SecureDirectoryStream class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public SecureDirectoryStream() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("SecureDirectoryStream class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("SecureDirectoryStream class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public SecureDirectoryStream(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1351,7 +1351,7 @@ namespace Java.Nio.File
 
     #region SimpleFileVisitor
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/SimpleFileVisitor.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/SimpleFileVisitor.html"/>
     /// </summary>
     public partial class SimpleFileVisitor : Java.Nio.File.FileVisitor
     {
@@ -1395,7 +1395,7 @@ namespace Java.Nio.File
 
     #region SimpleFileVisitor<T>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/SimpleFileVisitor.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/SimpleFileVisitor.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
     public partial class SimpleFileVisitor<T> : Java.Nio.File.FileVisitor<T>
@@ -1440,7 +1440,7 @@ namespace Java.Nio.File
 
     #region StandardCopyOption
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/StandardCopyOption.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/StandardCopyOption.html"/>
     /// </summary>
     public partial class StandardCopyOption : Java.Lang.Enum<Java.Nio.File.StandardCopyOption>
     {
@@ -1484,7 +1484,7 @@ namespace Java.Nio.File
 
     #region StandardOpenOption
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/StandardOpenOption.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/StandardOpenOption.html"/>
     /// </summary>
     public partial class StandardOpenOption : Java.Lang.Enum<Java.Nio.File.StandardOpenOption>
     {
@@ -1528,7 +1528,7 @@ namespace Java.Nio.File
 
     #region StandardWatchEventKinds
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/StandardWatchEventKinds.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/StandardWatchEventKinds.html"/>
     /// </summary>
     public partial class StandardWatchEventKinds : MASES.JCOBridge.C2JBridge.JVMBridgeBase<StandardWatchEventKinds>
     {
@@ -1572,7 +1572,7 @@ namespace Java.Nio.File
 
     #region Watchable
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/Watchable.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/Watchable.html"/>
     /// </summary>
     public partial class Watchable : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Watchable>
     {
@@ -1580,12 +1580,12 @@ namespace Java.Nio.File
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Watchable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Watchable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Watchable() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Watchable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Watchable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Watchable(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1618,7 +1618,7 @@ namespace Java.Nio.File
 
     #region WatchEvent
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/WatchEvent.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/WatchEvent.html"/>
     /// </summary>
     public partial class WatchEvent : MASES.JCOBridge.C2JBridge.JVMBridgeBase<WatchEvent>
     {
@@ -1626,12 +1626,12 @@ namespace Java.Nio.File
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("WatchEvent class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("WatchEvent class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public WatchEvent() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("WatchEvent class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("WatchEvent class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public WatchEvent(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1660,7 +1660,7 @@ namespace Java.Nio.File
         // TODO: complete the class
         #region Kind
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/WatchEvent.Kind.html"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/WatchEvent.Kind.html"/>
         /// </summary>
         public partial class Kind : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Kind>
         {
@@ -1668,12 +1668,12 @@ namespace Java.Nio.File
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
-            [Obsolete("Kind class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("Kind class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Kind() { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
-            [Obsolete("Kind class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("Kind class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Kind(params object[] args) : base(args) { }
 
             private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1706,7 +1706,7 @@ namespace Java.Nio.File
 
         #region Kind<T>
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/WatchEvent.Kind.html"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/WatchEvent.Kind.html"/>
         /// </summary>
         /// <typeparam name="T"></typeparam>
         public partial class Kind<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Kind<T>>
@@ -1715,12 +1715,12 @@ namespace Java.Nio.File
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
-            [Obsolete("Kind class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("Kind class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Kind() { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
-            [Obsolete("Kind class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("Kind class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Kind(params object[] args) : base(args) { }
 
             private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1753,7 +1753,7 @@ namespace Java.Nio.File
 
         #region Modifier
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/WatchEvent.Modifier.html"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/WatchEvent.Modifier.html"/>
         /// </summary>
         public partial class Modifier : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Modifier>
         {
@@ -1761,12 +1761,12 @@ namespace Java.Nio.File
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
-            [Obsolete("Modifier class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("Modifier class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Modifier() { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
-            [Obsolete("Modifier class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("Modifier class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Modifier(params object[] args) : base(args) { }
 
             private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1803,7 +1803,7 @@ namespace Java.Nio.File
 
     #region WatchEvent<T>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/WatchEvent.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/WatchEvent.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
     public partial class WatchEvent<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<WatchEvent<T>>
@@ -1812,12 +1812,12 @@ namespace Java.Nio.File
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("WatchEvent class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("WatchEvent class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public WatchEvent() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("WatchEvent class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("WatchEvent class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public WatchEvent(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1850,7 +1850,7 @@ namespace Java.Nio.File
 
     #region WatchKey
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/WatchKey.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/WatchKey.html"/>
     /// </summary>
     public partial class WatchKey : MASES.JCOBridge.C2JBridge.JVMBridgeBase<WatchKey>
     {
@@ -1858,12 +1858,12 @@ namespace Java.Nio.File
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("WatchKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("WatchKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public WatchKey() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("WatchKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("WatchKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public WatchKey(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1896,7 +1896,7 @@ namespace Java.Nio.File
 
     #region WatchService
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/nio/file/WatchService.html"/>
+    /// <see href="https://developer.android.com/reference/java/nio/file/WatchService.html"/>
     /// </summary>
     public partial class WatchService : Java.Io.Closeable
     {
@@ -1904,12 +1904,12 @@ namespace Java.Nio.File
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("WatchService class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("WatchService class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public WatchService() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("WatchService class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("WatchService class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public WatchService(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);

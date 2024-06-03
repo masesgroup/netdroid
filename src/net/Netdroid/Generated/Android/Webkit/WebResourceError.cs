@@ -46,18 +46,20 @@ namespace Android.Webkit
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebResourceError.html#getDescription()"/> 
+        /// <see href="https://developer.android.com/reference/android/webkit/WebResourceError.html#getErrorCode()"/>
         /// </summary>
-        public Java.Lang.CharSequence Description
+        /// <returns><see cref="int"/></returns>
+        public int GetErrorCode()
         {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getDescription", "()Ljava/lang/CharSequence;"); }
+            return IExecuteWithSignature<int>("getErrorCode", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebResourceError.html#getErrorCode()"/> 
+        /// <see href="https://developer.android.com/reference/android/webkit/WebResourceError.html#getDescription()"/>
         /// </summary>
-        public int ErrorCode
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetDescription()
         {
-            get { return IExecuteWithSignature<int>("getErrorCode", "()I"); }
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getDescription", "()Ljava/lang/CharSequence;");
         }
 
         #endregion

@@ -52,11 +52,12 @@ namespace Android.Health.Connect.Datatypes
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/BasalMetabolicRateRecord.html#getBasalMetabolicRate()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/BasalMetabolicRateRecord.html#getBasalMetabolicRate()"/>
         /// </summary>
-        public Android.Health.Connect.Datatypes.Units.Power BasalMetabolicRate
+        /// <returns><see cref="Android.Health.Connect.Datatypes.Units.Power"/></returns>
+        public Android.Health.Connect.Datatypes.Units.Power GetBasalMetabolicRate()
         {
-            get { return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Power>("getBasalMetabolicRate", "()Landroid/health/connect/datatypes/units/Power;"); }
+            return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Power>("getBasalMetabolicRate", "()Landroid/health/connect/datatypes/units/Power;");
         }
 
         #endregion

@@ -58,7 +58,7 @@ namespace Java.Nio.Channels
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/DatagramChannel.html#open()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/DatagramChannel.html#open()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.Channels.DatagramChannel"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -67,7 +67,7 @@ namespace Java.Nio.Channels
             return SExecuteWithSignature<Java.Nio.Channels.DatagramChannel>(LocalBridgeClazz, "open", "()Ljava/nio/channels/DatagramChannel;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/DatagramChannel.html#open(java.net.ProtocolFamily)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/DatagramChannel.html#open(java.net.ProtocolFamily)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.ProtocolFamily"/></param>
         /// <returns><see cref="Java.Nio.Channels.DatagramChannel"/></returns>
@@ -81,21 +81,7 @@ namespace Java.Nio.Channels
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/DatagramChannel.html#getLocalAddress()"/> 
-        /// </summary>
-        public Java.Net.SocketAddress LocalAddress
-        {
-            get { return IExecuteWithSignature<Java.Net.SocketAddress>("getLocalAddress", "()Ljava/net/SocketAddress;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/DatagramChannel.html#getRemoteAddress()"/> 
-        /// </summary>
-        public Java.Net.SocketAddress RemoteAddress
-        {
-            get { return IExecuteWithSignature<Java.Net.SocketAddress>("getRemoteAddress", "()Ljava/net/SocketAddress;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/DatagramChannel.html#isConnected()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/DatagramChannel.html#isConnected()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsConnected()
@@ -103,7 +89,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<bool>("isConnected", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/DatagramChannel.html#read(java.nio.ByteBuffer)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/DatagramChannel.html#read(java.nio.ByteBuffer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         /// <returns><see cref="int"/></returns>
@@ -113,7 +99,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<int>("read", "(Ljava/nio/ByteBuffer;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/DatagramChannel.html#send(java.nio.ByteBuffer,java.net.SocketAddress)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/DatagramChannel.html#send(java.nio.ByteBuffer,java.net.SocketAddress)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         /// <param name="arg1"><see cref="Java.Net.SocketAddress"/></param>
@@ -124,7 +110,7 @@ namespace Java.Nio.Channels
             return IExecute<int>("send", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/DatagramChannel.html#write(java.nio.ByteBuffer)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/DatagramChannel.html#write(java.nio.ByteBuffer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         /// <returns><see cref="int"/></returns>
@@ -134,7 +120,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<int>("write", "(Ljava/nio/ByteBuffer;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/DatagramChannel.html#socket()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/DatagramChannel.html#socket()"/>
         /// </summary>
         /// <returns><see cref="Java.Net.DatagramSocket"/></returns>
         public Java.Net.DatagramSocket Socket()
@@ -142,7 +128,25 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<Java.Net.DatagramSocket>("socket", "()Ljava/net/DatagramSocket;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/DatagramChannel.html#receive(java.nio.ByteBuffer)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/DatagramChannel.html#getLocalAddress()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Net.SocketAddress"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Net.SocketAddress GetLocalAddress()
+        {
+            return IExecuteWithSignature<Java.Net.SocketAddress>("getLocalAddress", "()Ljava/net/SocketAddress;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/DatagramChannel.html#getRemoteAddress()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Net.SocketAddress"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Net.SocketAddress GetRemoteAddress()
+        {
+            return IExecuteWithSignature<Java.Net.SocketAddress>("getRemoteAddress", "()Ljava/net/SocketAddress;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/DatagramChannel.html#receive(java.nio.ByteBuffer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         /// <returns><see cref="Java.Net.SocketAddress"/></returns>
@@ -152,7 +156,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<Java.Net.SocketAddress>("receive", "(Ljava/nio/ByteBuffer;)Ljava/net/SocketAddress;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/DatagramChannel.html#connect(java.net.SocketAddress)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/DatagramChannel.html#connect(java.net.SocketAddress)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.SocketAddress"/></param>
         /// <returns><see cref="Java.Nio.Channels.DatagramChannel"/></returns>
@@ -162,7 +166,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<Java.Nio.Channels.DatagramChannel>("connect", "(Ljava/net/SocketAddress;)Ljava/nio/channels/DatagramChannel;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/DatagramChannel.html#disconnect()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/DatagramChannel.html#disconnect()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.Channels.DatagramChannel"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -171,7 +175,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<Java.Nio.Channels.DatagramChannel>("disconnect", "()Ljava/nio/channels/DatagramChannel;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/DatagramChannel.html#read(java.nio.ByteBuffer[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/DatagramChannel.html#read(java.nio.ByteBuffer[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -183,7 +187,7 @@ namespace Java.Nio.Channels
             return IExecute<long>("read", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/DatagramChannel.html#write(java.nio.ByteBuffer[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/DatagramChannel.html#write(java.nio.ByteBuffer[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -195,7 +199,7 @@ namespace Java.Nio.Channels
             return IExecute<long>("write", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/DatagramChannel.html#read(java.nio.ByteBuffer[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/DatagramChannel.html#read(java.nio.ByteBuffer[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         /// <returns><see cref="long"/></returns>
@@ -205,7 +209,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<long>("read", "([Ljava/nio/ByteBuffer;)J", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/DatagramChannel.html#write(java.nio.ByteBuffer[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/DatagramChannel.html#write(java.nio.ByteBuffer[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         /// <returns><see cref="long"/></returns>
@@ -215,7 +219,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<long>("write", "([Ljava/nio/ByteBuffer;)J", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/DatagramChannel.html#bind(java.net.SocketAddress)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/DatagramChannel.html#bind(java.net.SocketAddress)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.SocketAddress"/></param>
         /// <returns><see cref="Java.Nio.Channels.NetworkChannel"/></returns>
@@ -225,7 +229,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<Java.Nio.Channels.NetworkChannel>("bind", "(Ljava/net/SocketAddress;)Ljava/nio/channels/NetworkChannel;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/DatagramChannel.html#setOption(java.net.SocketOption,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/DatagramChannel.html#setOption(java.net.SocketOption,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.SocketOption"/></param>
         /// <param name="arg1"><see cref="object"/></param>

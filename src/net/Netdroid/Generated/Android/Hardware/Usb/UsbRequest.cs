@@ -46,18 +46,12 @@ namespace Android.Hardware.Usb
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbRequest.html#getClientData()"/> <see href="https://developer.android.com/reference/android/hardware/usb/UsbRequest.html#setClientData(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbRequest.html#getEndpoint()"/>
         /// </summary>
-        public object ClientData
+        /// <returns><see cref="Android.Hardware.Usb.UsbEndpoint"/></returns>
+        public Android.Hardware.Usb.UsbEndpoint GetEndpoint()
         {
-            get { return IExecuteWithSignature("getClientData", "()Ljava/lang/Object;"); } set { IExecuteWithSignature("setClientData", "(Ljava/lang/Object;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbRequest.html#getEndpoint()"/> 
-        /// </summary>
-        public Android.Hardware.Usb.UsbEndpoint Endpoint
-        {
-            get { return IExecuteWithSignature<Android.Hardware.Usb.UsbEndpoint>("getEndpoint", "()Landroid/hardware/usb/UsbEndpoint;"); }
+            return IExecuteWithSignature<Android.Hardware.Usb.UsbEndpoint>("getEndpoint", "()Landroid/hardware/usb/UsbEndpoint;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbRequest.html#cancel()"/>
@@ -83,7 +77,7 @@ namespace Android.Hardware.Usb
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool Queue(Java.Nio.ByteBuffer arg0, int arg1)
         {
             return IExecute<bool>("queue", arg0, arg1);
@@ -98,11 +92,27 @@ namespace Android.Hardware.Usb
             return IExecuteWithSignature<bool>("queue", "(Ljava/nio/ByteBuffer;)Z", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbRequest.html#getClientData()"/>
+        /// </summary>
+        /// <returns><see cref="object"/></returns>
+        public object GetClientData()
+        {
+            return IExecuteWithSignature("getClientData", "()Ljava/lang/Object;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbRequest.html#close()"/>
         /// </summary>
         public void Close()
         {
             IExecuteWithSignature("close", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbRequest.html#setClientData(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        public void SetClientData(object arg0)
+        {
+            IExecuteWithSignature("setClientData", "(Ljava/lang/Object;)V", arg0);
         }
 
         #endregion

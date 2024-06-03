@@ -107,18 +107,12 @@ namespace Android.App
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/LocaleConfig.html#getStatus()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/LocaleConfig.html#getSupportedLocales()"/>
         /// </summary>
-        public int Status
+        /// <returns><see cref="Android.Os.LocaleList"/></returns>
+        public Android.Os.LocaleList GetSupportedLocales()
         {
-            get { return IExecuteWithSignature<int>("getStatus", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/LocaleConfig.html#getSupportedLocales()"/> 
-        /// </summary>
-        public Android.Os.LocaleList SupportedLocales
-        {
-            get { return IExecuteWithSignature<Android.Os.LocaleList>("getSupportedLocales", "()Landroid/os/LocaleList;"); }
+            return IExecuteWithSignature<Android.Os.LocaleList>("getSupportedLocales", "()Landroid/os/LocaleList;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/LocaleConfig.html#describeContents()"/>
@@ -127,6 +121,14 @@ namespace Android.App
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/LocaleConfig.html#getStatus()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetStatus()
+        {
+            return IExecuteWithSignature<int>("getStatus", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/LocaleConfig.html#writeToParcel(android.os.Parcel,int)"/>

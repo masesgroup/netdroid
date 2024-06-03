@@ -79,18 +79,20 @@ namespace Android.Graphics
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Region.html#getBoundaryPath()"/> 
+        /// <see href="https://developer.android.com/reference/android/graphics/Region.html#getBoundaryPath()"/>
         /// </summary>
-        public Android.Graphics.Path BoundaryPath
+        /// <returns><see cref="Android.Graphics.Path"/></returns>
+        public Android.Graphics.Path GetBoundaryPath()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Path>("getBoundaryPath", "()Landroid/graphics/Path;"); }
+            return IExecuteWithSignature<Android.Graphics.Path>("getBoundaryPath", "()Landroid/graphics/Path;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Region.html#getBounds()"/> 
+        /// <see href="https://developer.android.com/reference/android/graphics/Region.html#getBounds()"/>
         /// </summary>
-        public Android.Graphics.Rect Bounds
+        /// <returns><see cref="Android.Graphics.Rect"/></returns>
+        public Android.Graphics.Rect GetBounds()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Rect>("getBounds", "()Landroid/graphics/Rect;"); }
+            return IExecuteWithSignature<Android.Graphics.Rect>("getBounds", "()Landroid/graphics/Rect;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Region.html#getBoundaryPath(android.graphics.Path)"/>

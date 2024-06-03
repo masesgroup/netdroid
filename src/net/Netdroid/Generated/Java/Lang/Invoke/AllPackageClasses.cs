@@ -28,7 +28,7 @@ namespace Java.Lang.Invoke
 {
     #region CallSite
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/CallSite.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/invoke/CallSite.html"/>
     /// </summary>
     public partial class CallSite : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CallSite>
     {
@@ -36,12 +36,12 @@ namespace Java.Lang.Invoke
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("CallSite class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("CallSite class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CallSite() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("CallSite class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("CallSite class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CallSite(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -74,7 +74,7 @@ namespace Java.Lang.Invoke
 
     #region ConstantCallSite
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/ConstantCallSite.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/invoke/ConstantCallSite.html"/>
     /// </summary>
     public partial class ConstantCallSite : Java.Lang.Invoke.CallSite
     {
@@ -118,7 +118,7 @@ namespace Java.Lang.Invoke
 
     #region LambdaConversionException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/LambdaConversionException.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/invoke/LambdaConversionException.html"/>
     /// </summary>
     public partial class LambdaConversionException : Java.Lang.Exception
     {
@@ -135,7 +135,7 @@ namespace Java.Lang.Invoke
 
     #region MethodHandle
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandle.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandle.html"/>
     /// </summary>
     public partial class MethodHandle : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MethodHandle>
     {
@@ -143,12 +143,12 @@ namespace Java.Lang.Invoke
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("MethodHandle class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("MethodHandle class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public MethodHandle() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("MethodHandle class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("MethodHandle class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public MethodHandle(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -181,7 +181,7 @@ namespace Java.Lang.Invoke
 
     #region MethodHandleInfo
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandleInfo.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandleInfo.html"/>
     /// </summary>
     public partial class MethodHandleInfo : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MethodHandleInfo>
     {
@@ -189,12 +189,12 @@ namespace Java.Lang.Invoke
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("MethodHandleInfo class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("MethodHandleInfo class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public MethodHandleInfo() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("MethodHandleInfo class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("MethodHandleInfo class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public MethodHandleInfo(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -227,7 +227,7 @@ namespace Java.Lang.Invoke
 
     #region MethodHandles
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.html"/>
     /// </summary>
     public partial class MethodHandles : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MethodHandles>
     {
@@ -267,7 +267,7 @@ namespace Java.Lang.Invoke
         // TODO: complete the class
         #region Lookup
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.Lookup.html"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.Lookup.html"/>
         /// </summary>
         public partial class Lookup : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Lookup>
         {
@@ -305,51 +305,7 @@ namespace Java.Lang.Invoke
             public override bool IsBridgeStatic => true;
 
             // TODO: complete the class
-            #region ClassOption
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.Lookup.ClassOption.html"/>
-            /// </summary>
-            public partial class ClassOption : Java.Lang.Enum<Java.Lang.Invoke.MethodHandles.Lookup.ClassOption>
-            {
-                const string _bridgeClassName = "java.lang.invoke.MethodHandles$Lookup$ClassOption";
-                /// <summary>
-                /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-                /// </summary>
-                public ClassOption() { }
-                /// <summary>
-                /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-                /// </summary>
-                public ClassOption(params object[] args) : base(args) { }
 
-                private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
-
-                /// <summary>
-                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
-                /// </summary>
-                public override string BridgeClassName => _bridgeClassName;
-                /// <summary>
-                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
-                /// </summary>
-                public override bool IsBridgeAbstract => false;
-                /// <summary>
-                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
-                /// </summary>
-                public override bool IsBridgeCloseable => false;
-                /// <summary>
-                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
-                /// </summary>
-                public override bool IsBridgeInterface => false;
-                /// <summary>
-                /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
-                /// </summary>
-                public override bool IsBridgeStatic => true;
-
-                // TODO: complete the class
-
-            }
-            #endregion
-
-        
         }
         #endregion
 
@@ -359,9 +315,9 @@ namespace Java.Lang.Invoke
 
     #region MethodType
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodType.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodType.html"/>
     /// </summary>
-    public partial class MethodType : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MethodType>
+    public partial class MethodType : Java.Io.Serializable
     {
         const string _bridgeClassName = "java.lang.invoke.MethodType";
         /// <summary>
@@ -403,7 +359,7 @@ namespace Java.Lang.Invoke
 
     #region MutableCallSite
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MutableCallSite.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/invoke/MutableCallSite.html"/>
     /// </summary>
     public partial class MutableCallSite : Java.Lang.Invoke.CallSite
     {
@@ -445,242 +401,9 @@ namespace Java.Lang.Invoke
     }
     #endregion
 
-    #region TypeDescriptor
-    /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/TypeDescriptor.html"/>
-    /// </summary>
-    public partial class TypeDescriptor : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TypeDescriptor>
-    {
-        const string _bridgeClassName = "java.lang.invoke.TypeDescriptor";
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        [Obsolete("TypeDescriptor class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-        public TypeDescriptor() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        [Obsolete("TypeDescriptor class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-        public TypeDescriptor(params object[] args) : base(args) { }
-
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
-
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
-        /// </summary>
-        public override string BridgeClassName => _bridgeClassName;
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
-        /// </summary>
-        public override bool IsBridgeAbstract => true;
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
-        /// </summary>
-        public override bool IsBridgeCloseable => false;
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
-        /// </summary>
-        public override bool IsBridgeInterface => true;
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
-        /// </summary>
-        public override bool IsBridgeStatic => false;
-
-        // TODO: complete the class
-        #region OfField
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/TypeDescriptor.OfField.html"/>
-        /// </summary>
-        public partial class OfField : Java.Lang.Invoke.TypeDescriptor
-        {
-            const string _bridgeClassName = "java.lang.invoke.TypeDescriptor$OfField";
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            [Obsolete("OfField class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-            public OfField() { }
-            /// <summary>
-            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-            /// </summary>
-            [Obsolete("OfField class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-            public OfField(params object[] args) : base(args) { }
-
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
-
-            /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
-            /// </summary>
-            public override string BridgeClassName => _bridgeClassName;
-            /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
-            /// </summary>
-            public override bool IsBridgeAbstract => true;
-            /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
-            /// </summary>
-            public override bool IsBridgeCloseable => false;
-            /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
-            /// </summary>
-            public override bool IsBridgeInterface => true;
-            /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
-            /// </summary>
-            public override bool IsBridgeStatic => true;
-
-            // TODO: complete the class
-
-        }
-        #endregion
-
-        #region OfField<F>
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/TypeDescriptor.OfField.html"/>
-        /// </summary>
-        /// <typeparam name="F"><see cref="Java.Lang.Invoke.TypeDescriptor.OfField{F}"/></typeparam>
-        public partial class OfField<F> : Java.Lang.Invoke.TypeDescriptor where F: Java.Lang.Invoke.TypeDescriptor.OfField<F>
-        {
-            const string _bridgeClassName = "java.lang.invoke.TypeDescriptor$OfField";
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            [Obsolete("OfField class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-            public OfField() { }
-            /// <summary>
-            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-            /// </summary>
-            [Obsolete("OfField class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-            public OfField(params object[] args) : base(args) { }
-
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
-
-            /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
-            /// </summary>
-            public override string BridgeClassName => _bridgeClassName;
-            /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
-            /// </summary>
-            public override bool IsBridgeAbstract => true;
-            /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
-            /// </summary>
-            public override bool IsBridgeCloseable => false;
-            /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
-            /// </summary>
-            public override bool IsBridgeInterface => true;
-            /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
-            /// </summary>
-            public override bool IsBridgeStatic => true;
-
-            // TODO: complete the class
-
-        }
-        #endregion
-
-        #region OfMethod
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/TypeDescriptor.OfMethod.html"/>
-        /// </summary>
-        public partial class OfMethod : Java.Lang.Invoke.TypeDescriptor
-        {
-            const string _bridgeClassName = "java.lang.invoke.TypeDescriptor$OfMethod";
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            [Obsolete("OfMethod class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-            public OfMethod() { }
-            /// <summary>
-            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-            /// </summary>
-            [Obsolete("OfMethod class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-            public OfMethod(params object[] args) : base(args) { }
-
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
-
-            /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
-            /// </summary>
-            public override string BridgeClassName => _bridgeClassName;
-            /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
-            /// </summary>
-            public override bool IsBridgeAbstract => true;
-            /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
-            /// </summary>
-            public override bool IsBridgeCloseable => false;
-            /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
-            /// </summary>
-            public override bool IsBridgeInterface => true;
-            /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
-            /// </summary>
-            public override bool IsBridgeStatic => true;
-
-            // TODO: complete the class
-
-        }
-        #endregion
-
-        #region OfMethod<F, M>
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/TypeDescriptor.OfMethod.html"/>
-        /// </summary>
-        /// <typeparam name="F"><see cref="Java.Lang.Invoke.TypeDescriptor.OfField{F}"/></typeparam>
-        /// <typeparam name="M"><see cref="Java.Lang.Invoke.TypeDescriptor.OfMethod{F, M}"/></typeparam>
-        public partial class OfMethod<F, M> : Java.Lang.Invoke.TypeDescriptor where F: Java.Lang.Invoke.TypeDescriptor.OfField<F> where M: Java.Lang.Invoke.TypeDescriptor.OfMethod<F, M>
-        {
-            const string _bridgeClassName = "java.lang.invoke.TypeDescriptor$OfMethod";
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            [Obsolete("OfMethod class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-            public OfMethod() { }
-            /// <summary>
-            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-            /// </summary>
-            [Obsolete("OfMethod class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-            public OfMethod(params object[] args) : base(args) { }
-
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
-
-            /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
-            /// </summary>
-            public override string BridgeClassName => _bridgeClassName;
-            /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
-            /// </summary>
-            public override bool IsBridgeAbstract => true;
-            /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
-            /// </summary>
-            public override bool IsBridgeCloseable => false;
-            /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
-            /// </summary>
-            public override bool IsBridgeInterface => true;
-            /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
-            /// </summary>
-            public override bool IsBridgeStatic => true;
-
-            // TODO: complete the class
-
-        }
-        #endregion
-
-    
-    }
-    #endregion
-
     #region VarHandle
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.html"/>
     /// </summary>
     public partial class VarHandle : MASES.JCOBridge.C2JBridge.JVMBridgeBase<VarHandle>
     {
@@ -688,12 +411,12 @@ namespace Java.Lang.Invoke
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("VarHandle class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("VarHandle class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public VarHandle() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("VarHandle class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("VarHandle class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public VarHandle(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -722,7 +445,7 @@ namespace Java.Lang.Invoke
         // TODO: complete the class
         #region AccessMode
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VarHandle.AccessMode.html"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.AccessMode.html"/>
         /// </summary>
         public partial class AccessMode : Java.Lang.Enum<Java.Lang.Invoke.VarHandle.AccessMode>
         {
@@ -770,7 +493,7 @@ namespace Java.Lang.Invoke
 
     #region VolatileCallSite
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/VolatileCallSite.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/invoke/VolatileCallSite.html"/>
     /// </summary>
     public partial class VolatileCallSite : Java.Lang.Invoke.CallSite
     {
@@ -814,7 +537,7 @@ namespace Java.Lang.Invoke
 
     #region WrongMethodTypeException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/WrongMethodTypeException.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/invoke/WrongMethodTypeException.html"/>
     /// </summary>
     public partial class WrongMethodTypeException : Java.Lang.RuntimeException
     {

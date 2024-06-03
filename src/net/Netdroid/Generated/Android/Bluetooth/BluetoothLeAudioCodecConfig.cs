@@ -184,82 +184,92 @@ namespace Android.Bluetooth
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothLeAudioCodecConfig.html#getBitsPerSample()"/> 
-        /// </summary>
-        public int BitsPerSample
-        {
-            get { return IExecuteWithSignature<int>("getBitsPerSample", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothLeAudioCodecConfig.html#getChannelCount()"/> 
-        /// </summary>
-        public int ChannelCount
-        {
-            get { return IExecuteWithSignature<int>("getChannelCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothLeAudioCodecConfig.html#getCodecName()"/> 
-        /// </summary>
-        public Java.Lang.String CodecName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCodecName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothLeAudioCodecConfig.html#getCodecPriority()"/> 
-        /// </summary>
-        public int CodecPriority
-        {
-            get { return IExecuteWithSignature<int>("getCodecPriority", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothLeAudioCodecConfig.html#getCodecType()"/> 
-        /// </summary>
-        public int CodecType
-        {
-            get { return IExecuteWithSignature<int>("getCodecType", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothLeAudioCodecConfig.html#getFrameDuration()"/> 
-        /// </summary>
-        public int FrameDuration
-        {
-            get { return IExecuteWithSignature<int>("getFrameDuration", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothLeAudioCodecConfig.html#getMaxOctetsPerFrame()"/> 
-        /// </summary>
-        public int MaxOctetsPerFrame
-        {
-            get { return IExecuteWithSignature<int>("getMaxOctetsPerFrame", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothLeAudioCodecConfig.html#getMinOctetsPerFrame()"/> 
-        /// </summary>
-        public int MinOctetsPerFrame
-        {
-            get { return IExecuteWithSignature<int>("getMinOctetsPerFrame", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothLeAudioCodecConfig.html#getOctetsPerFrame()"/> 
-        /// </summary>
-        public int OctetsPerFrame
-        {
-            get { return IExecuteWithSignature<int>("getOctetsPerFrame", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothLeAudioCodecConfig.html#getSampleRate()"/> 
-        /// </summary>
-        public int SampleRate
-        {
-            get { return IExecuteWithSignature<int>("getSampleRate", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothLeAudioCodecConfig.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothLeAudioCodecConfig.html#getBitsPerSample()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetBitsPerSample()
+        {
+            return IExecuteWithSignature<int>("getBitsPerSample", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothLeAudioCodecConfig.html#getChannelCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetChannelCount()
+        {
+            return IExecuteWithSignature<int>("getChannelCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothLeAudioCodecConfig.html#getCodecPriority()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCodecPriority()
+        {
+            return IExecuteWithSignature<int>("getCodecPriority", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothLeAudioCodecConfig.html#getCodecType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCodecType()
+        {
+            return IExecuteWithSignature<int>("getCodecType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothLeAudioCodecConfig.html#getFrameDuration()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetFrameDuration()
+        {
+            return IExecuteWithSignature<int>("getFrameDuration", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothLeAudioCodecConfig.html#getMaxOctetsPerFrame()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMaxOctetsPerFrame()
+        {
+            return IExecuteWithSignature<int>("getMaxOctetsPerFrame", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothLeAudioCodecConfig.html#getMinOctetsPerFrame()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMinOctetsPerFrame()
+        {
+            return IExecuteWithSignature<int>("getMinOctetsPerFrame", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothLeAudioCodecConfig.html#getOctetsPerFrame()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetOctetsPerFrame()
+        {
+            return IExecuteWithSignature<int>("getOctetsPerFrame", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothLeAudioCodecConfig.html#getSampleRate()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSampleRate()
+        {
+            return IExecuteWithSignature<int>("getSampleRate", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothLeAudioCodecConfig.html#getCodecName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetCodecName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getCodecName", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothLeAudioCodecConfig.html#writeToParcel(android.os.Parcel,int)"/>

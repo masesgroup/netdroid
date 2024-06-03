@@ -93,27 +93,6 @@ namespace Android.App
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/BroadcastOptions.html#getDeferralPolicy()"/> 
-        /// </summary>
-        public int DeferralPolicy
-        {
-            get { return IExecuteWithSignature<int>("getDeferralPolicy", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/BroadcastOptions.html#getDeliveryGroupMatchingKey()"/> 
-        /// </summary>
-        public Java.Lang.String DeliveryGroupMatchingKey
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDeliveryGroupMatchingKey", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/BroadcastOptions.html#getDeliveryGroupPolicy()"/> 
-        /// </summary>
-        public int DeliveryGroupPolicy
-        {
-            get { return IExecuteWithSignature<int>("getDeliveryGroupPolicy", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/BroadcastOptions.html#setDeferralPolicy(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -165,6 +144,30 @@ namespace Android.App
         public bool IsShareIdentityEnabled()
         {
             return IExecuteWithSignature<bool>("isShareIdentityEnabled", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/BroadcastOptions.html#getDeferralPolicy()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDeferralPolicy()
+        {
+            return IExecuteWithSignature<int>("getDeferralPolicy", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/BroadcastOptions.html#getDeliveryGroupPolicy()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDeliveryGroupPolicy()
+        {
+            return IExecuteWithSignature<int>("getDeliveryGroupPolicy", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/BroadcastOptions.html#getDeliveryGroupMatchingKey()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDeliveryGroupMatchingKey()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getDeliveryGroupMatchingKey", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/BroadcastOptions.html#clearDeferralPolicy()"/>

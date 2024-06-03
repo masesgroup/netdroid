@@ -37,214 +37,237 @@ namespace Android.Bluetooth
         #endregion
 
         #region Fields
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#ERROR"/>
+        /// </summary>
+        public static int ERROR { get { if (!_ERRORReady) { _ERRORContent = SGetField<int>(LocalBridgeClazz, "ERROR"); _ERRORReady = true; } return _ERRORContent; } }
+        private static int _ERRORContent = default;
+        private static bool _ERRORReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#SCAN_MODE_CONNECTABLE"/>
+        /// </summary>
+        public static int SCAN_MODE_CONNECTABLE { get { if (!_SCAN_MODE_CONNECTABLEReady) { _SCAN_MODE_CONNECTABLEContent = SGetField<int>(LocalBridgeClazz, "SCAN_MODE_CONNECTABLE"); _SCAN_MODE_CONNECTABLEReady = true; } return _SCAN_MODE_CONNECTABLEContent; } }
+        private static int _SCAN_MODE_CONNECTABLEContent = default;
+        private static bool _SCAN_MODE_CONNECTABLEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#SCAN_MODE_CONNECTABLE_DISCOVERABLE"/>
+        /// </summary>
+        public static int SCAN_MODE_CONNECTABLE_DISCOVERABLE { get { if (!_SCAN_MODE_CONNECTABLE_DISCOVERABLEReady) { _SCAN_MODE_CONNECTABLE_DISCOVERABLEContent = SGetField<int>(LocalBridgeClazz, "SCAN_MODE_CONNECTABLE_DISCOVERABLE"); _SCAN_MODE_CONNECTABLE_DISCOVERABLEReady = true; } return _SCAN_MODE_CONNECTABLE_DISCOVERABLEContent; } }
+        private static int _SCAN_MODE_CONNECTABLE_DISCOVERABLEContent = default;
+        private static bool _SCAN_MODE_CONNECTABLE_DISCOVERABLEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#SCAN_MODE_NONE"/>
+        /// </summary>
+        public static int SCAN_MODE_NONE { get { if (!_SCAN_MODE_NONEReady) { _SCAN_MODE_NONEContent = SGetField<int>(LocalBridgeClazz, "SCAN_MODE_NONE"); _SCAN_MODE_NONEReady = true; } return _SCAN_MODE_NONEContent; } }
+        private static int _SCAN_MODE_NONEContent = default;
+        private static bool _SCAN_MODE_NONEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#STATE_CONNECTED"/>
+        /// </summary>
+        public static int STATE_CONNECTED { get { if (!_STATE_CONNECTEDReady) { _STATE_CONNECTEDContent = SGetField<int>(LocalBridgeClazz, "STATE_CONNECTED"); _STATE_CONNECTEDReady = true; } return _STATE_CONNECTEDContent; } }
+        private static int _STATE_CONNECTEDContent = default;
+        private static bool _STATE_CONNECTEDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#STATE_CONNECTING"/>
+        /// </summary>
+        public static int STATE_CONNECTING { get { if (!_STATE_CONNECTINGReady) { _STATE_CONNECTINGContent = SGetField<int>(LocalBridgeClazz, "STATE_CONNECTING"); _STATE_CONNECTINGReady = true; } return _STATE_CONNECTINGContent; } }
+        private static int _STATE_CONNECTINGContent = default;
+        private static bool _STATE_CONNECTINGReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#STATE_DISCONNECTED"/>
+        /// </summary>
+        public static int STATE_DISCONNECTED { get { if (!_STATE_DISCONNECTEDReady) { _STATE_DISCONNECTEDContent = SGetField<int>(LocalBridgeClazz, "STATE_DISCONNECTED"); _STATE_DISCONNECTEDReady = true; } return _STATE_DISCONNECTEDContent; } }
+        private static int _STATE_DISCONNECTEDContent = default;
+        private static bool _STATE_DISCONNECTEDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#STATE_DISCONNECTING"/>
+        /// </summary>
+        public static int STATE_DISCONNECTING { get { if (!_STATE_DISCONNECTINGReady) { _STATE_DISCONNECTINGContent = SGetField<int>(LocalBridgeClazz, "STATE_DISCONNECTING"); _STATE_DISCONNECTINGReady = true; } return _STATE_DISCONNECTINGContent; } }
+        private static int _STATE_DISCONNECTINGContent = default;
+        private static bool _STATE_DISCONNECTINGReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#STATE_OFF"/>
+        /// </summary>
+        public static int STATE_OFF { get { if (!_STATE_OFFReady) { _STATE_OFFContent = SGetField<int>(LocalBridgeClazz, "STATE_OFF"); _STATE_OFFReady = true; } return _STATE_OFFContent; } }
+        private static int _STATE_OFFContent = default;
+        private static bool _STATE_OFFReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#STATE_ON"/>
+        /// </summary>
+        public static int STATE_ON { get { if (!_STATE_ONReady) { _STATE_ONContent = SGetField<int>(LocalBridgeClazz, "STATE_ON"); _STATE_ONReady = true; } return _STATE_ONContent; } }
+        private static int _STATE_ONContent = default;
+        private static bool _STATE_ONReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#STATE_TURNING_OFF"/>
+        /// </summary>
+        public static int STATE_TURNING_OFF { get { if (!_STATE_TURNING_OFFReady) { _STATE_TURNING_OFFContent = SGetField<int>(LocalBridgeClazz, "STATE_TURNING_OFF"); _STATE_TURNING_OFFReady = true; } return _STATE_TURNING_OFFContent; } }
+        private static int _STATE_TURNING_OFFContent = default;
+        private static bool _STATE_TURNING_OFFReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#STATE_TURNING_ON"/>
+        /// </summary>
+        public static int STATE_TURNING_ON { get { if (!_STATE_TURNING_ONReady) { _STATE_TURNING_ONContent = SGetField<int>(LocalBridgeClazz, "STATE_TURNING_ON"); _STATE_TURNING_ONReady = true; } return _STATE_TURNING_ONContent; } }
+        private static int _STATE_TURNING_ONContent = default;
+        private static bool _STATE_TURNING_ONReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#ACTION_CONNECTION_STATE_CHANGED"/>
+        /// </summary>
+        public static Java.Lang.String ACTION_CONNECTION_STATE_CHANGED { get { if (!_ACTION_CONNECTION_STATE_CHANGEDReady) { _ACTION_CONNECTION_STATE_CHANGEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_CONNECTION_STATE_CHANGED"); _ACTION_CONNECTION_STATE_CHANGEDReady = true; } return _ACTION_CONNECTION_STATE_CHANGEDContent; } }
+        private static Java.Lang.String _ACTION_CONNECTION_STATE_CHANGEDContent = default;
+        private static bool _ACTION_CONNECTION_STATE_CHANGEDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#ACTION_DISCOVERY_FINISHED"/>
+        /// </summary>
+        public static Java.Lang.String ACTION_DISCOVERY_FINISHED { get { if (!_ACTION_DISCOVERY_FINISHEDReady) { _ACTION_DISCOVERY_FINISHEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_DISCOVERY_FINISHED"); _ACTION_DISCOVERY_FINISHEDReady = true; } return _ACTION_DISCOVERY_FINISHEDContent; } }
+        private static Java.Lang.String _ACTION_DISCOVERY_FINISHEDContent = default;
+        private static bool _ACTION_DISCOVERY_FINISHEDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#ACTION_DISCOVERY_STARTED"/>
+        /// </summary>
+        public static Java.Lang.String ACTION_DISCOVERY_STARTED { get { if (!_ACTION_DISCOVERY_STARTEDReady) { _ACTION_DISCOVERY_STARTEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_DISCOVERY_STARTED"); _ACTION_DISCOVERY_STARTEDReady = true; } return _ACTION_DISCOVERY_STARTEDContent; } }
+        private static Java.Lang.String _ACTION_DISCOVERY_STARTEDContent = default;
+        private static bool _ACTION_DISCOVERY_STARTEDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#ACTION_LOCAL_NAME_CHANGED"/>
+        /// </summary>
+        public static Java.Lang.String ACTION_LOCAL_NAME_CHANGED { get { if (!_ACTION_LOCAL_NAME_CHANGEDReady) { _ACTION_LOCAL_NAME_CHANGEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_LOCAL_NAME_CHANGED"); _ACTION_LOCAL_NAME_CHANGEDReady = true; } return _ACTION_LOCAL_NAME_CHANGEDContent; } }
+        private static Java.Lang.String _ACTION_LOCAL_NAME_CHANGEDContent = default;
+        private static bool _ACTION_LOCAL_NAME_CHANGEDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#ACTION_REQUEST_DISCOVERABLE"/>
+        /// </summary>
+        public static Java.Lang.String ACTION_REQUEST_DISCOVERABLE { get { if (!_ACTION_REQUEST_DISCOVERABLEReady) { _ACTION_REQUEST_DISCOVERABLEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_REQUEST_DISCOVERABLE"); _ACTION_REQUEST_DISCOVERABLEReady = true; } return _ACTION_REQUEST_DISCOVERABLEContent; } }
+        private static Java.Lang.String _ACTION_REQUEST_DISCOVERABLEContent = default;
+        private static bool _ACTION_REQUEST_DISCOVERABLEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#ACTION_REQUEST_ENABLE"/>
+        /// </summary>
+        public static Java.Lang.String ACTION_REQUEST_ENABLE { get { if (!_ACTION_REQUEST_ENABLEReady) { _ACTION_REQUEST_ENABLEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_REQUEST_ENABLE"); _ACTION_REQUEST_ENABLEReady = true; } return _ACTION_REQUEST_ENABLEContent; } }
+        private static Java.Lang.String _ACTION_REQUEST_ENABLEContent = default;
+        private static bool _ACTION_REQUEST_ENABLEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#ACTION_SCAN_MODE_CHANGED"/>
+        /// </summary>
+        public static Java.Lang.String ACTION_SCAN_MODE_CHANGED { get { if (!_ACTION_SCAN_MODE_CHANGEDReady) { _ACTION_SCAN_MODE_CHANGEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_SCAN_MODE_CHANGED"); _ACTION_SCAN_MODE_CHANGEDReady = true; } return _ACTION_SCAN_MODE_CHANGEDContent; } }
+        private static Java.Lang.String _ACTION_SCAN_MODE_CHANGEDContent = default;
+        private static bool _ACTION_SCAN_MODE_CHANGEDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#ACTION_STATE_CHANGED"/>
+        /// </summary>
+        public static Java.Lang.String ACTION_STATE_CHANGED { get { if (!_ACTION_STATE_CHANGEDReady) { _ACTION_STATE_CHANGEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_STATE_CHANGED"); _ACTION_STATE_CHANGEDReady = true; } return _ACTION_STATE_CHANGEDContent; } }
+        private static Java.Lang.String _ACTION_STATE_CHANGEDContent = default;
+        private static bool _ACTION_STATE_CHANGEDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#EXTRA_CONNECTION_STATE"/>
+        /// </summary>
+        public static Java.Lang.String EXTRA_CONNECTION_STATE { get { if (!_EXTRA_CONNECTION_STATEReady) { _EXTRA_CONNECTION_STATEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_CONNECTION_STATE"); _EXTRA_CONNECTION_STATEReady = true; } return _EXTRA_CONNECTION_STATEContent; } }
+        private static Java.Lang.String _EXTRA_CONNECTION_STATEContent = default;
+        private static bool _EXTRA_CONNECTION_STATEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#EXTRA_DISCOVERABLE_DURATION"/>
+        /// </summary>
+        public static Java.Lang.String EXTRA_DISCOVERABLE_DURATION { get { if (!_EXTRA_DISCOVERABLE_DURATIONReady) { _EXTRA_DISCOVERABLE_DURATIONContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_DISCOVERABLE_DURATION"); _EXTRA_DISCOVERABLE_DURATIONReady = true; } return _EXTRA_DISCOVERABLE_DURATIONContent; } }
+        private static Java.Lang.String _EXTRA_DISCOVERABLE_DURATIONContent = default;
+        private static bool _EXTRA_DISCOVERABLE_DURATIONReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#EXTRA_LOCAL_NAME"/>
+        /// </summary>
+        public static Java.Lang.String EXTRA_LOCAL_NAME { get { if (!_EXTRA_LOCAL_NAMEReady) { _EXTRA_LOCAL_NAMEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_LOCAL_NAME"); _EXTRA_LOCAL_NAMEReady = true; } return _EXTRA_LOCAL_NAMEContent; } }
+        private static Java.Lang.String _EXTRA_LOCAL_NAMEContent = default;
+        private static bool _EXTRA_LOCAL_NAMEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#EXTRA_PREVIOUS_CONNECTION_STATE"/>
+        /// </summary>
+        public static Java.Lang.String EXTRA_PREVIOUS_CONNECTION_STATE { get { if (!_EXTRA_PREVIOUS_CONNECTION_STATEReady) { _EXTRA_PREVIOUS_CONNECTION_STATEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_PREVIOUS_CONNECTION_STATE"); _EXTRA_PREVIOUS_CONNECTION_STATEReady = true; } return _EXTRA_PREVIOUS_CONNECTION_STATEContent; } }
+        private static Java.Lang.String _EXTRA_PREVIOUS_CONNECTION_STATEContent = default;
+        private static bool _EXTRA_PREVIOUS_CONNECTION_STATEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#EXTRA_PREVIOUS_SCAN_MODE"/>
+        /// </summary>
+        public static Java.Lang.String EXTRA_PREVIOUS_SCAN_MODE { get { if (!_EXTRA_PREVIOUS_SCAN_MODEReady) { _EXTRA_PREVIOUS_SCAN_MODEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_PREVIOUS_SCAN_MODE"); _EXTRA_PREVIOUS_SCAN_MODEReady = true; } return _EXTRA_PREVIOUS_SCAN_MODEContent; } }
+        private static Java.Lang.String _EXTRA_PREVIOUS_SCAN_MODEContent = default;
+        private static bool _EXTRA_PREVIOUS_SCAN_MODEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#EXTRA_PREVIOUS_STATE"/>
+        /// </summary>
+        public static Java.Lang.String EXTRA_PREVIOUS_STATE { get { if (!_EXTRA_PREVIOUS_STATEReady) { _EXTRA_PREVIOUS_STATEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_PREVIOUS_STATE"); _EXTRA_PREVIOUS_STATEReady = true; } return _EXTRA_PREVIOUS_STATEContent; } }
+        private static Java.Lang.String _EXTRA_PREVIOUS_STATEContent = default;
+        private static bool _EXTRA_PREVIOUS_STATEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#EXTRA_SCAN_MODE"/>
+        /// </summary>
+        public static Java.Lang.String EXTRA_SCAN_MODE { get { if (!_EXTRA_SCAN_MODEReady) { _EXTRA_SCAN_MODEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_SCAN_MODE"); _EXTRA_SCAN_MODEReady = true; } return _EXTRA_SCAN_MODEContent; } }
+        private static Java.Lang.String _EXTRA_SCAN_MODEContent = default;
+        private static bool _EXTRA_SCAN_MODEReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#EXTRA_STATE"/>
+        /// </summary>
+        public static Java.Lang.String EXTRA_STATE { get { if (!_EXTRA_STATEReady) { _EXTRA_STATEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_STATE"); _EXTRA_STATEReady = true; } return _EXTRA_STATEContent; } }
+        private static Java.Lang.String _EXTRA_STATEContent = default;
+        private static bool _EXTRA_STATEReady = false; // this is used because in case of generics 
 
         #endregion
 
         #region Static methods
-        
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#checkBluetoothAddress(java.lang.String)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnCheckBluetoothAddress"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Lang.String, bool> OnCheckBluetoothAddress { get; set; } = null;
-
-        void CheckBluetoothAddressEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
-        {
-            var methodToExecute = (OnCheckBluetoothAddress != null) ? OnCheckBluetoothAddress : CheckBluetoothAddress;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
-            data.SetReturnValue(executionResult);
-        }
-
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#checkBluetoothAddress(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="bool"/></returns>
-        public virtual bool CheckBluetoothAddress(Java.Lang.String arg0)
+        public static bool CheckBluetoothAddress(Java.Lang.String arg0)
         {
-            return default;
+            return SExecuteWithSignature<bool>(LocalBridgeClazz, "checkBluetoothAddress", "(Ljava/lang/String;)Z", arg0);
         }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getDefaultAdapter()"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnGetDefaultAdapter"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Android.Bluetooth.BluetoothAdapter> OnGetDefaultAdapter { get; set; } = null;
-
-        void GetDefaultAdapterEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
-        {
-            var methodToExecute = (OnGetDefaultAdapter != null) ? OnGetDefaultAdapter : GetDefaultAdapter;
-            var executionResult = methodToExecute.Invoke();
-            data.SetReturnValue(executionResult);
-        }
-
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getDefaultAdapter()"/>
         /// </summary>
         /// <returns><see cref="Android.Bluetooth.BluetoothAdapter"/></returns>
-        [System.Obsolete()]
-        public virtual Android.Bluetooth.BluetoothAdapter GetDefaultAdapter()
+        [global::System.Obsolete()]
+        public static Android.Bluetooth.BluetoothAdapter GetDefaultAdapter()
         {
-            return default;
+            return SExecuteWithSignature<Android.Bluetooth.BluetoothAdapter>(LocalBridgeClazz, "getDefaultAdapter", "()Landroid/bluetooth/BluetoothAdapter;");
         }
 
         #endregion
 
         #region Instance methods
         /// <summary>
-        /// Handlers initializer for <see cref="BluetoothAdapter"/>
-        /// </summary>
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("getRemoteDevice", new System.EventHandler<CLRListenerEventArgs<CLREventData<byte[]>>>(GetRemoteDeviceEventHandler));
-            AddEventHandler("getRemoteDevice1", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(GetRemoteDevice1EventHandler));
-            AddEventHandler("getRemoteLeDevice", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(GetRemoteLeDeviceEventHandler));
-            AddEventHandler("listenUsingInsecureL2capChannel", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(ListenUsingInsecureL2capChannelEventHandler));
-            AddEventHandler("listenUsingInsecureRfcommWithServiceRecord", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(ListenUsingInsecureRfcommWithServiceRecordEventHandler));
-            AddEventHandler("listenUsingL2capChannel", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(ListenUsingL2capChannelEventHandler));
-            AddEventHandler("listenUsingRfcommWithServiceRecord", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(ListenUsingRfcommWithServiceRecordEventHandler));
-            AddEventHandler("getBluetoothLeAdvertiser", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetBluetoothLeAdvertiserEventHandler));
-            AddEventHandler("getBluetoothLeScanner", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetBluetoothLeScannerEventHandler));
-            AddEventHandler("cancelDiscovery", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(CancelDiscoveryEventHandler));
-            AddEventHandler("disable", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(DisableEventHandler));
-            AddEventHandler("enable", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(EnableEventHandler));
-            AddEventHandler("getProfileProxy", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Content.Context>>>(GetProfileProxyEventHandler));
-            AddEventHandler("isDiscovering", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(IsDiscoveringEventHandler));
-            AddEventHandler("isEnabled", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(IsEnabledEventHandler));
-            AddEventHandler("isLe2MPhySupported", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(IsLe2MPhySupportedEventHandler));
-            AddEventHandler("isLeCodedPhySupported", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(IsLeCodedPhySupportedEventHandler));
-            AddEventHandler("isLeExtendedAdvertisingSupported", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(IsLeExtendedAdvertisingSupportedEventHandler));
-            AddEventHandler("isLePeriodicAdvertisingSupported", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(IsLePeriodicAdvertisingSupportedEventHandler));
-            AddEventHandler("isMultipleAdvertisementSupported", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(IsMultipleAdvertisementSupportedEventHandler));
-            AddEventHandler("isOffloadedFilteringSupported", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(IsOffloadedFilteringSupportedEventHandler));
-            AddEventHandler("isOffloadedScanBatchingSupported", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(IsOffloadedScanBatchingSupportedEventHandler));
-            AddEventHandler("setName", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(SetNameEventHandler));
-            AddEventHandler("startDiscovery", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(StartDiscoveryEventHandler));
-            AddEventHandler("startLeScan", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Bluetooth.BluetoothAdapter.LeScanCallback>>>(StartLeScanEventHandler));
-            AddEventHandler("startLeScan2", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.UUID[]>>>(StartLeScan2EventHandler));
-            AddEventHandler("getLeMaximumAdvertisingDataLength", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetLeMaximumAdvertisingDataLengthEventHandler));
-            AddEventHandler("getMaxConnectedAudioDevices", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetMaxConnectedAudioDevicesEventHandler));
-            AddEventHandler("getProfileConnectionState", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(GetProfileConnectionStateEventHandler));
-            AddEventHandler("getScanMode", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetScanModeEventHandler));
-            AddEventHandler("getState", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetStateEventHandler));
-            AddEventHandler("isLeAudioBroadcastAssistantSupported", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(IsLeAudioBroadcastAssistantSupportedEventHandler));
-            AddEventHandler("isLeAudioBroadcastSourceSupported", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(IsLeAudioBroadcastSourceSupportedEventHandler));
-            AddEventHandler("isLeAudioSupported", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(IsLeAudioSupportedEventHandler));
-            AddEventHandler("getAddress", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetAddressEventHandler));
-            AddEventHandler("getName", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetNameEventHandler));
-            AddEventHandler("getDiscoverableTimeout", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetDiscoverableTimeoutEventHandler));
-            AddEventHandler("getBondedDevices", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetBondedDevicesEventHandler));
-            AddEventHandler("closeProfileProxy", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(CloseProfileProxyEventHandler));
-            AddEventHandler("stopLeScan", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Bluetooth.BluetoothAdapter.LeScanCallback>>>(StopLeScanEventHandler));
-
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getRemoteDevice(byte[])"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnGetRemoteDevice"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<byte[], Android.Bluetooth.BluetoothDevice> OnGetRemoteDevice { get; set; } = null;
-
-        void GetRemoteDeviceEventHandler(object sender, CLRListenerEventArgs<CLREventData<byte[]>> data)
-        {
-            var methodToExecute = (OnGetRemoteDevice != null) ? OnGetRemoteDevice : GetRemoteDevice;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
-            data.SetReturnValue(executionResult);
-        }
-
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getRemoteDevice(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <returns><see cref="Android.Bluetooth.BluetoothDevice"/></returns>
-        public virtual Android.Bluetooth.BluetoothDevice GetRemoteDevice(byte[] arg0)
+        public Android.Bluetooth.BluetoothDevice GetRemoteDevice(byte[] arg0)
         {
-            return default;
+            return IExecuteWithSignature<Android.Bluetooth.BluetoothDevice>("getRemoteDevice", "([B)Landroid/bluetooth/BluetoothDevice;", new object[] { arg0 });
         }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getRemoteDevice(java.lang.String)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnGetRemoteDevice1"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Lang.String, Android.Bluetooth.BluetoothDevice> OnGetRemoteDevice1 { get; set; } = null;
-
-        void GetRemoteDevice1EventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
-        {
-            var methodToExecute = (OnGetRemoteDevice1 != null) ? OnGetRemoteDevice1 : GetRemoteDevice;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
-            data.SetReturnValue(executionResult);
-        }
-
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getRemoteDevice(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Android.Bluetooth.BluetoothDevice"/></returns>
-        public virtual Android.Bluetooth.BluetoothDevice GetRemoteDevice(Java.Lang.String arg0)
+        public Android.Bluetooth.BluetoothDevice GetRemoteDevice(Java.Lang.String arg0)
         {
-            return default;
+            return IExecuteWithSignature<Android.Bluetooth.BluetoothDevice>("getRemoteDevice", "(Ljava/lang/String;)Landroid/bluetooth/BluetoothDevice;", arg0);
         }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getRemoteLeDevice(java.lang.String,int)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnGetRemoteLeDevice"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Lang.String, int, Android.Bluetooth.BluetoothDevice> OnGetRemoteLeDevice { get; set; } = null;
-
-        void GetRemoteLeDeviceEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
-        {
-            var methodToExecute = (OnGetRemoteLeDevice != null) ? OnGetRemoteLeDevice : GetRemoteLeDevice;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<int>(0));
-            data.SetReturnValue(executionResult);
-        }
-
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getRemoteLeDevice(java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Android.Bluetooth.BluetoothDevice"/></returns>
-        public virtual Android.Bluetooth.BluetoothDevice GetRemoteLeDevice(Java.Lang.String arg0, int arg1)
+        public Android.Bluetooth.BluetoothDevice GetRemoteLeDevice(Java.Lang.String arg0, int arg1)
         {
-            return default;
+            return IExecute<Android.Bluetooth.BluetoothDevice>("getRemoteLeDevice", arg0, arg1);
         }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#listenUsingInsecureL2capChannel()"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnListenUsingInsecureL2capChannel"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Android.Bluetooth.BluetoothServerSocket> OnListenUsingInsecureL2capChannel { get; set; } = null;
-
-        void ListenUsingInsecureL2capChannelEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
-        {
-            var methodToExecute = (OnListenUsingInsecureL2capChannel != null) ? OnListenUsingInsecureL2capChannel : ListenUsingInsecureL2capChannel;
-            var executionResult = methodToExecute.Invoke();
-            data.SetReturnValue(executionResult);
-        }
-
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#listenUsingInsecureL2capChannel()"/>
         /// </summary>
         /// <returns><see cref="Android.Bluetooth.BluetoothServerSocket"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public virtual Android.Bluetooth.BluetoothServerSocket ListenUsingInsecureL2capChannel()
+        public Android.Bluetooth.BluetoothServerSocket ListenUsingInsecureL2capChannel()
         {
-            return default;
+            return IExecuteWithSignature<Android.Bluetooth.BluetoothServerSocket>("listenUsingInsecureL2capChannel", "()Landroid/bluetooth/BluetoothServerSocket;");
         }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#listenUsingInsecureRfcommWithServiceRecord(java.lang.String,java.util.UUID)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnListenUsingInsecureRfcommWithServiceRecord"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Lang.String, Java.Util.UUID, Android.Bluetooth.BluetoothServerSocket> OnListenUsingInsecureRfcommWithServiceRecord { get; set; } = null;
-
-        void ListenUsingInsecureRfcommWithServiceRecordEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
-        {
-            var methodToExecute = (OnListenUsingInsecureRfcommWithServiceRecord != null) ? OnListenUsingInsecureRfcommWithServiceRecord : ListenUsingInsecureRfcommWithServiceRecord;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Java.Util.UUID>(0));
-            data.SetReturnValue(executionResult);
-        }
-
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#listenUsingInsecureRfcommWithServiceRecord(java.lang.String,java.util.UUID)"/>
         /// </summary>
@@ -252,47 +275,19 @@ namespace Android.Bluetooth
         /// <param name="arg1"><see cref="Java.Util.UUID"/></param>
         /// <returns><see cref="Android.Bluetooth.BluetoothServerSocket"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public virtual Android.Bluetooth.BluetoothServerSocket ListenUsingInsecureRfcommWithServiceRecord(Java.Lang.String arg0, Java.Util.UUID arg1)
+        public Android.Bluetooth.BluetoothServerSocket ListenUsingInsecureRfcommWithServiceRecord(Java.Lang.String arg0, Java.Util.UUID arg1)
         {
-            return default;
+            return IExecute<Android.Bluetooth.BluetoothServerSocket>("listenUsingInsecureRfcommWithServiceRecord", arg0, arg1);
         }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#listenUsingL2capChannel()"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnListenUsingL2capChannel"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Android.Bluetooth.BluetoothServerSocket> OnListenUsingL2capChannel { get; set; } = null;
-
-        void ListenUsingL2capChannelEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
-        {
-            var methodToExecute = (OnListenUsingL2capChannel != null) ? OnListenUsingL2capChannel : ListenUsingL2capChannel;
-            var executionResult = methodToExecute.Invoke();
-            data.SetReturnValue(executionResult);
-        }
-
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#listenUsingL2capChannel()"/>
         /// </summary>
         /// <returns><see cref="Android.Bluetooth.BluetoothServerSocket"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public virtual Android.Bluetooth.BluetoothServerSocket ListenUsingL2capChannel()
+        public Android.Bluetooth.BluetoothServerSocket ListenUsingL2capChannel()
         {
-            return default;
+            return IExecuteWithSignature<Android.Bluetooth.BluetoothServerSocket>("listenUsingL2capChannel", "()Landroid/bluetooth/BluetoothServerSocket;");
         }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#listenUsingRfcommWithServiceRecord(java.lang.String,java.util.UUID)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnListenUsingRfcommWithServiceRecord"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Lang.String, Java.Util.UUID, Android.Bluetooth.BluetoothServerSocket> OnListenUsingRfcommWithServiceRecord { get; set; } = null;
-
-        void ListenUsingRfcommWithServiceRecordEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
-        {
-            var methodToExecute = (OnListenUsingRfcommWithServiceRecord != null) ? OnListenUsingRfcommWithServiceRecord : ListenUsingRfcommWithServiceRecord;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Java.Util.UUID>(0));
-            data.SetReturnValue(executionResult);
-        }
-
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#listenUsingRfcommWithServiceRecord(java.lang.String,java.util.UUID)"/>
         /// </summary>
@@ -300,136 +295,52 @@ namespace Android.Bluetooth
         /// <param name="arg1"><see cref="Java.Util.UUID"/></param>
         /// <returns><see cref="Android.Bluetooth.BluetoothServerSocket"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public virtual Android.Bluetooth.BluetoothServerSocket ListenUsingRfcommWithServiceRecord(Java.Lang.String arg0, Java.Util.UUID arg1)
+        public Android.Bluetooth.BluetoothServerSocket ListenUsingRfcommWithServiceRecord(Java.Lang.String arg0, Java.Util.UUID arg1)
         {
-            return default;
+            return IExecute<Android.Bluetooth.BluetoothServerSocket>("listenUsingRfcommWithServiceRecord", arg0, arg1);
         }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getBluetoothLeAdvertiser()"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnGetBluetoothLeAdvertiser"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Android.Bluetooth.Le.BluetoothLeAdvertiser> OnGetBluetoothLeAdvertiser { get; set; } = null;
-
-        void GetBluetoothLeAdvertiserEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
-        {
-            var methodToExecute = (OnGetBluetoothLeAdvertiser != null) ? OnGetBluetoothLeAdvertiser : GetBluetoothLeAdvertiser;
-            var executionResult = methodToExecute.Invoke();
-            data.SetReturnValue(executionResult);
-        }
-
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getBluetoothLeAdvertiser()"/>
         /// </summary>
         /// <returns><see cref="Android.Bluetooth.Le.BluetoothLeAdvertiser"/></returns>
-        public virtual Android.Bluetooth.Le.BluetoothLeAdvertiser GetBluetoothLeAdvertiser()
+        public Android.Bluetooth.Le.BluetoothLeAdvertiser GetBluetoothLeAdvertiser()
         {
-            return default;
+            return IExecuteWithSignature<Android.Bluetooth.Le.BluetoothLeAdvertiser>("getBluetoothLeAdvertiser", "()Landroid/bluetooth/le/BluetoothLeAdvertiser;");
         }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getBluetoothLeScanner()"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnGetBluetoothLeScanner"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Android.Bluetooth.Le.BluetoothLeScanner> OnGetBluetoothLeScanner { get; set; } = null;
-
-        void GetBluetoothLeScannerEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
-        {
-            var methodToExecute = (OnGetBluetoothLeScanner != null) ? OnGetBluetoothLeScanner : GetBluetoothLeScanner;
-            var executionResult = methodToExecute.Invoke();
-            data.SetReturnValue(executionResult);
-        }
-
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getBluetoothLeScanner()"/>
         /// </summary>
         /// <returns><see cref="Android.Bluetooth.Le.BluetoothLeScanner"/></returns>
-        public virtual Android.Bluetooth.Le.BluetoothLeScanner GetBluetoothLeScanner()
+        public Android.Bluetooth.Le.BluetoothLeScanner GetBluetoothLeScanner()
         {
-            return default;
+            return IExecuteWithSignature<Android.Bluetooth.Le.BluetoothLeScanner>("getBluetoothLeScanner", "()Landroid/bluetooth/le/BluetoothLeScanner;");
         }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#cancelDiscovery()"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnCancelDiscovery"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<bool> OnCancelDiscovery { get; set; } = null;
-
-        void CancelDiscoveryEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
-        {
-            var methodToExecute = (OnCancelDiscovery != null) ? OnCancelDiscovery : CancelDiscovery;
-            var executionResult = methodToExecute.Invoke();
-            data.SetReturnValue(executionResult);
-        }
-
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#cancelDiscovery()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        public virtual bool CancelDiscovery()
+        public bool CancelDiscovery()
         {
-            return default;
+            return IExecuteWithSignature<bool>("cancelDiscovery", "()Z");
         }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#disable()"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnDisable"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<bool> OnDisable { get; set; } = null;
-
-        void DisableEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
-        {
-            var methodToExecute = (OnDisable != null) ? OnDisable : Disable;
-            var executionResult = methodToExecute.Invoke();
-            data.SetReturnValue(executionResult);
-        }
-
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#disable()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
-        public virtual bool Disable()
+        [global::System.Obsolete()]
+        public bool Disable()
         {
-            return default;
+            return IExecuteWithSignature<bool>("disable", "()Z");
         }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#enable()"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnEnable"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<bool> OnEnable { get; set; } = null;
-
-        void EnableEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
-        {
-            var methodToExecute = (OnEnable != null) ? OnEnable : Enable;
-            var executionResult = methodToExecute.Invoke();
-            data.SetReturnValue(executionResult);
-        }
-
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#enable()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
-        public virtual bool Enable()
+        [global::System.Obsolete()]
+        public bool Enable()
         {
-            return default;
+            return IExecuteWithSignature<bool>("enable", "()Z");
         }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getProfileProxy(android.content.Context,android.bluetooth.BluetoothProfile.ServiceListener,int)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnGetProfileProxy"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Android.Content.Context, Android.Bluetooth.BluetoothProfile.ServiceListener, int, bool> OnGetProfileProxy { get; set; } = null;
-
-        void GetProfileProxyEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Content.Context>> data)
-        {
-            var methodToExecute = (OnGetProfileProxy != null) ? OnGetProfileProxy : GetProfileProxy;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Android.Bluetooth.BluetoothProfile.ServiceListener>(0), data.EventData.GetAt<int>(1));
-            data.SetReturnValue(executionResult);
-        }
-
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getProfileProxy(android.content.Context,android.bluetooth.BluetoothProfile.ServiceListener,int)"/>
         /// </summary>
@@ -437,610 +348,234 @@ namespace Android.Bluetooth
         /// <param name="arg1"><see cref="Android.Bluetooth.BluetoothProfile.ServiceListener"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
-        public virtual bool GetProfileProxy(Android.Content.Context arg0, Android.Bluetooth.BluetoothProfile.ServiceListener arg1, int arg2)
+        public bool GetProfileProxy(Android.Content.Context arg0, Android.Bluetooth.BluetoothProfile.ServiceListener arg1, int arg2)
         {
-            return default;
+            return IExecute<bool>("getProfileProxy", arg0, arg1, arg2);
         }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#isDiscovering()"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnIsDiscovering"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<bool> OnIsDiscovering { get; set; } = null;
-
-        void IsDiscoveringEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
-        {
-            var methodToExecute = (OnIsDiscovering != null) ? OnIsDiscovering : IsDiscovering;
-            var executionResult = methodToExecute.Invoke();
-            data.SetReturnValue(executionResult);
-        }
-
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#isDiscovering()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        public virtual bool IsDiscovering()
+        public bool IsDiscovering()
         {
-            return default;
+            return IExecuteWithSignature<bool>("isDiscovering", "()Z");
         }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#isEnabled()"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnIsEnabled"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<bool> OnIsEnabled { get; set; } = null;
-
-        void IsEnabledEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
-        {
-            var methodToExecute = (OnIsEnabled != null) ? OnIsEnabled : IsEnabled;
-            var executionResult = methodToExecute.Invoke();
-            data.SetReturnValue(executionResult);
-        }
-
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#isEnabled()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        public virtual bool IsEnabled()
+        public bool IsEnabled()
         {
-            return default;
+            return IExecuteWithSignature<bool>("isEnabled", "()Z");
         }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#isLe2MPhySupported()"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnIsLe2MPhySupported"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<bool> OnIsLe2MPhySupported { get; set; } = null;
-
-        void IsLe2MPhySupportedEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
-        {
-            var methodToExecute = (OnIsLe2MPhySupported != null) ? OnIsLe2MPhySupported : IsLe2MPhySupported;
-            var executionResult = methodToExecute.Invoke();
-            data.SetReturnValue(executionResult);
-        }
-
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#isLe2MPhySupported()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        public virtual bool IsLe2MPhySupported()
+        public bool IsLe2MPhySupported()
         {
-            return default;
+            return IExecuteWithSignature<bool>("isLe2MPhySupported", "()Z");
         }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#isLeCodedPhySupported()"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnIsLeCodedPhySupported"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<bool> OnIsLeCodedPhySupported { get; set; } = null;
-
-        void IsLeCodedPhySupportedEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
-        {
-            var methodToExecute = (OnIsLeCodedPhySupported != null) ? OnIsLeCodedPhySupported : IsLeCodedPhySupported;
-            var executionResult = methodToExecute.Invoke();
-            data.SetReturnValue(executionResult);
-        }
-
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#isLeCodedPhySupported()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        public virtual bool IsLeCodedPhySupported()
+        public bool IsLeCodedPhySupported()
         {
-            return default;
+            return IExecuteWithSignature<bool>("isLeCodedPhySupported", "()Z");
         }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#isLeExtendedAdvertisingSupported()"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnIsLeExtendedAdvertisingSupported"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<bool> OnIsLeExtendedAdvertisingSupported { get; set; } = null;
-
-        void IsLeExtendedAdvertisingSupportedEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
-        {
-            var methodToExecute = (OnIsLeExtendedAdvertisingSupported != null) ? OnIsLeExtendedAdvertisingSupported : IsLeExtendedAdvertisingSupported;
-            var executionResult = methodToExecute.Invoke();
-            data.SetReturnValue(executionResult);
-        }
-
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#isLeExtendedAdvertisingSupported()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        public virtual bool IsLeExtendedAdvertisingSupported()
+        public bool IsLeExtendedAdvertisingSupported()
         {
-            return default;
+            return IExecuteWithSignature<bool>("isLeExtendedAdvertisingSupported", "()Z");
         }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#isLePeriodicAdvertisingSupported()"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnIsLePeriodicAdvertisingSupported"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<bool> OnIsLePeriodicAdvertisingSupported { get; set; } = null;
-
-        void IsLePeriodicAdvertisingSupportedEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
-        {
-            var methodToExecute = (OnIsLePeriodicAdvertisingSupported != null) ? OnIsLePeriodicAdvertisingSupported : IsLePeriodicAdvertisingSupported;
-            var executionResult = methodToExecute.Invoke();
-            data.SetReturnValue(executionResult);
-        }
-
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#isLePeriodicAdvertisingSupported()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        public virtual bool IsLePeriodicAdvertisingSupported()
+        public bool IsLePeriodicAdvertisingSupported()
         {
-            return default;
+            return IExecuteWithSignature<bool>("isLePeriodicAdvertisingSupported", "()Z");
         }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#isMultipleAdvertisementSupported()"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnIsMultipleAdvertisementSupported"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<bool> OnIsMultipleAdvertisementSupported { get; set; } = null;
-
-        void IsMultipleAdvertisementSupportedEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
-        {
-            var methodToExecute = (OnIsMultipleAdvertisementSupported != null) ? OnIsMultipleAdvertisementSupported : IsMultipleAdvertisementSupported;
-            var executionResult = methodToExecute.Invoke();
-            data.SetReturnValue(executionResult);
-        }
-
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#isMultipleAdvertisementSupported()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        public virtual bool IsMultipleAdvertisementSupported()
+        public bool IsMultipleAdvertisementSupported()
         {
-            return default;
+            return IExecuteWithSignature<bool>("isMultipleAdvertisementSupported", "()Z");
         }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#isOffloadedFilteringSupported()"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnIsOffloadedFilteringSupported"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<bool> OnIsOffloadedFilteringSupported { get; set; } = null;
-
-        void IsOffloadedFilteringSupportedEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
-        {
-            var methodToExecute = (OnIsOffloadedFilteringSupported != null) ? OnIsOffloadedFilteringSupported : IsOffloadedFilteringSupported;
-            var executionResult = methodToExecute.Invoke();
-            data.SetReturnValue(executionResult);
-        }
-
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#isOffloadedFilteringSupported()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        public virtual bool IsOffloadedFilteringSupported()
+        public bool IsOffloadedFilteringSupported()
         {
-            return default;
+            return IExecuteWithSignature<bool>("isOffloadedFilteringSupported", "()Z");
         }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#isOffloadedScanBatchingSupported()"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnIsOffloadedScanBatchingSupported"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<bool> OnIsOffloadedScanBatchingSupported { get; set; } = null;
-
-        void IsOffloadedScanBatchingSupportedEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
-        {
-            var methodToExecute = (OnIsOffloadedScanBatchingSupported != null) ? OnIsOffloadedScanBatchingSupported : IsOffloadedScanBatchingSupported;
-            var executionResult = methodToExecute.Invoke();
-            data.SetReturnValue(executionResult);
-        }
-
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#isOffloadedScanBatchingSupported()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        public virtual bool IsOffloadedScanBatchingSupported()
+        public bool IsOffloadedScanBatchingSupported()
         {
-            return default;
+            return IExecuteWithSignature<bool>("isOffloadedScanBatchingSupported", "()Z");
         }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#setName(java.lang.String)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnSetName"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Lang.String, bool> OnSetName { get; set; } = null;
-
-        void SetNameEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
-        {
-            var methodToExecute = (OnSetName != null) ? OnSetName : SetName;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
-            data.SetReturnValue(executionResult);
-        }
-
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#setName(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="bool"/></returns>
-        public virtual bool SetName(Java.Lang.String arg0)
+        public bool SetName(Java.Lang.String arg0)
         {
-            return default;
+            return IExecuteWithSignature<bool>("setName", "(Ljava/lang/String;)Z", arg0);
         }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#startDiscovery()"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnStartDiscovery"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<bool> OnStartDiscovery { get; set; } = null;
-
-        void StartDiscoveryEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
-        {
-            var methodToExecute = (OnStartDiscovery != null) ? OnStartDiscovery : StartDiscovery;
-            var executionResult = methodToExecute.Invoke();
-            data.SetReturnValue(executionResult);
-        }
-
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#startDiscovery()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        public virtual bool StartDiscovery()
+        public bool StartDiscovery()
         {
-            return default;
+            return IExecuteWithSignature<bool>("startDiscovery", "()Z");
         }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#startLeScan(android.bluetooth.BluetoothAdapter.LeScanCallback)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnStartLeScan"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Android.Bluetooth.BluetoothAdapter.LeScanCallback, bool> OnStartLeScan { get; set; } = null;
-
-        void StartLeScanEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Bluetooth.BluetoothAdapter.LeScanCallback>> data)
-        {
-            var methodToExecute = (OnStartLeScan != null) ? OnStartLeScan : StartLeScan;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
-            data.SetReturnValue(executionResult);
-        }
-
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#startLeScan(android.bluetooth.BluetoothAdapter.LeScanCallback)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Bluetooth.BluetoothAdapter.LeScanCallback"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
-        public virtual bool StartLeScan(Android.Bluetooth.BluetoothAdapter.LeScanCallback arg0)
+        [global::System.Obsolete()]
+        public bool StartLeScan(Android.Bluetooth.BluetoothAdapter.LeScanCallback arg0)
         {
-            return default;
+            return IExecuteWithSignature<bool>("startLeScan", "(Landroid/bluetooth/BluetoothAdapter$LeScanCallback;)Z", arg0);
         }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#startLeScan(java.util.UUID[],android.bluetooth.BluetoothAdapter.LeScanCallback)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnStartLeScan2"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.UUID[], Android.Bluetooth.BluetoothAdapter.LeScanCallback, bool> OnStartLeScan2 { get; set; } = null;
-
-        void StartLeScan2EventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.UUID[]>> data)
-        {
-            var methodToExecute = (OnStartLeScan2 != null) ? OnStartLeScan2 : StartLeScan;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Android.Bluetooth.BluetoothAdapter.LeScanCallback>(0));
-            data.SetReturnValue(executionResult);
-        }
-
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#startLeScan(java.util.UUID[],android.bluetooth.BluetoothAdapter.LeScanCallback)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.UUID"/></param>
         /// <param name="arg1"><see cref="Android.Bluetooth.BluetoothAdapter.LeScanCallback"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
-        public virtual bool StartLeScan(Java.Util.UUID[] arg0, Android.Bluetooth.BluetoothAdapter.LeScanCallback arg1)
+        [global::System.Obsolete()]
+        public bool StartLeScan(Java.Util.UUID[] arg0, Android.Bluetooth.BluetoothAdapter.LeScanCallback arg1)
         {
-            return default;
+            return IExecute<bool>("startLeScan", arg0, arg1);
         }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getLeMaximumAdvertisingDataLength()"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnGetLeMaximumAdvertisingDataLength"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<int> OnGetLeMaximumAdvertisingDataLength { get; set; } = null;
-
-        void GetLeMaximumAdvertisingDataLengthEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
-        {
-            var methodToExecute = (OnGetLeMaximumAdvertisingDataLength != null) ? OnGetLeMaximumAdvertisingDataLength : GetLeMaximumAdvertisingDataLength;
-            var executionResult = methodToExecute.Invoke();
-            data.SetReturnValue(executionResult);
-        }
-
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getLeMaximumAdvertisingDataLength()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
-        public virtual int GetLeMaximumAdvertisingDataLength()
+        public int GetLeMaximumAdvertisingDataLength()
         {
-            return default;
+            return IExecuteWithSignature<int>("getLeMaximumAdvertisingDataLength", "()I");
         }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getMaxConnectedAudioDevices()"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnGetMaxConnectedAudioDevices"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<int> OnGetMaxConnectedAudioDevices { get; set; } = null;
-
-        void GetMaxConnectedAudioDevicesEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
-        {
-            var methodToExecute = (OnGetMaxConnectedAudioDevices != null) ? OnGetMaxConnectedAudioDevices : GetMaxConnectedAudioDevices;
-            var executionResult = methodToExecute.Invoke();
-            data.SetReturnValue(executionResult);
-        }
-
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getMaxConnectedAudioDevices()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
-        public virtual int GetMaxConnectedAudioDevices()
+        public int GetMaxConnectedAudioDevices()
         {
-            return default;
+            return IExecuteWithSignature<int>("getMaxConnectedAudioDevices", "()I");
         }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getProfileConnectionState(int)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnGetProfileConnectionState"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<int, int> OnGetProfileConnectionState { get; set; } = null;
-
-        void GetProfileConnectionStateEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
-        {
-            var methodToExecute = (OnGetProfileConnectionState != null) ? OnGetProfileConnectionState : GetProfileConnectionState;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
-            data.SetReturnValue(executionResult);
-        }
-
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getProfileConnectionState(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
-        public virtual int GetProfileConnectionState(int arg0)
+        public int GetProfileConnectionState(int arg0)
         {
-            return default;
+            return IExecuteWithSignature<int>("getProfileConnectionState", "(I)I", arg0);
         }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getScanMode()"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnGetScanMode"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<int> OnGetScanMode { get; set; } = null;
-
-        void GetScanModeEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
-        {
-            var methodToExecute = (OnGetScanMode != null) ? OnGetScanMode : GetScanMode;
-            var executionResult = methodToExecute.Invoke();
-            data.SetReturnValue(executionResult);
-        }
-
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getScanMode()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
-        public virtual int GetScanMode()
+        public int GetScanMode()
         {
-            return default;
+            return IExecuteWithSignature<int>("getScanMode", "()I");
         }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getState()"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnGetState"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<int> OnGetState { get; set; } = null;
-
-        void GetStateEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
-        {
-            var methodToExecute = (OnGetState != null) ? OnGetState : GetState;
-            var executionResult = methodToExecute.Invoke();
-            data.SetReturnValue(executionResult);
-        }
-
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getState()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
-        public virtual int GetState()
+        public int GetState()
         {
-            return default;
+            return IExecuteWithSignature<int>("getState", "()I");
         }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#isLeAudioBroadcastAssistantSupported()"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnIsLeAudioBroadcastAssistantSupported"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<int> OnIsLeAudioBroadcastAssistantSupported { get; set; } = null;
-
-        void IsLeAudioBroadcastAssistantSupportedEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
-        {
-            var methodToExecute = (OnIsLeAudioBroadcastAssistantSupported != null) ? OnIsLeAudioBroadcastAssistantSupported : IsLeAudioBroadcastAssistantSupported;
-            var executionResult = methodToExecute.Invoke();
-            data.SetReturnValue(executionResult);
-        }
-
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#isLeAudioBroadcastAssistantSupported()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
-        public virtual int IsLeAudioBroadcastAssistantSupported()
+        public int IsLeAudioBroadcastAssistantSupported()
         {
-            return default;
+            return IExecuteWithSignature<int>("isLeAudioBroadcastAssistantSupported", "()I");
         }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#isLeAudioBroadcastSourceSupported()"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnIsLeAudioBroadcastSourceSupported"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<int> OnIsLeAudioBroadcastSourceSupported { get; set; } = null;
-
-        void IsLeAudioBroadcastSourceSupportedEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
-        {
-            var methodToExecute = (OnIsLeAudioBroadcastSourceSupported != null) ? OnIsLeAudioBroadcastSourceSupported : IsLeAudioBroadcastSourceSupported;
-            var executionResult = methodToExecute.Invoke();
-            data.SetReturnValue(executionResult);
-        }
-
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#isLeAudioBroadcastSourceSupported()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
-        public virtual int IsLeAudioBroadcastSourceSupported()
+        public int IsLeAudioBroadcastSourceSupported()
         {
-            return default;
+            return IExecuteWithSignature<int>("isLeAudioBroadcastSourceSupported", "()I");
         }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#isLeAudioSupported()"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnIsLeAudioSupported"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<int> OnIsLeAudioSupported { get; set; } = null;
-
-        void IsLeAudioSupportedEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
-        {
-            var methodToExecute = (OnIsLeAudioSupported != null) ? OnIsLeAudioSupported : IsLeAudioSupported;
-            var executionResult = methodToExecute.Invoke();
-            data.SetReturnValue(executionResult);
-        }
-
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#isLeAudioSupported()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
-        public virtual int IsLeAudioSupported()
+        public int IsLeAudioSupported()
         {
-            return default;
+            return IExecuteWithSignature<int>("isLeAudioSupported", "()I");
         }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getAddress()"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnGetAddress"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Lang.String> OnGetAddress { get; set; } = null;
-
-        void GetAddressEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
-        {
-            var methodToExecute = (OnGetAddress != null) ? OnGetAddress : GetAddress;
-            var executionResult = methodToExecute.Invoke();
-            data.SetReturnValue(executionResult);
-        }
-
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getAddress()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
-        public virtual Java.Lang.String GetAddress()
+        public Java.Lang.String GetAddress()
         {
-            return default;
+            return IExecuteWithSignature<Java.Lang.String>("getAddress", "()Ljava/lang/String;");
         }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getName()"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnGetName"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Lang.String> OnGetName { get; set; } = null;
-
-        void GetNameEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
-        {
-            var methodToExecute = (OnGetName != null) ? OnGetName : GetName;
-            var executionResult = methodToExecute.Invoke();
-            data.SetReturnValue(executionResult);
-        }
-
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getName()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
-        public virtual Java.Lang.String GetName()
+        public Java.Lang.String GetName()
         {
-            return default;
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
         }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getDiscoverableTimeout()"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnGetDiscoverableTimeout"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Time.Duration> OnGetDiscoverableTimeout { get; set; } = null;
-
-        void GetDiscoverableTimeoutEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
-        {
-            var methodToExecute = (OnGetDiscoverableTimeout != null) ? OnGetDiscoverableTimeout : GetDiscoverableTimeout;
-            var executionResult = methodToExecute.Invoke();
-            data.SetReturnValue(executionResult);
-        }
-
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getDiscoverableTimeout()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.Duration"/></returns>
-        public virtual Java.Time.Duration GetDiscoverableTimeout()
+        public Java.Time.Duration GetDiscoverableTimeout()
         {
-            return default;
+            return IExecuteWithSignature<Java.Time.Duration>("getDiscoverableTimeout", "()Ljava/time/Duration;");
         }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getBondedDevices()"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnGetBondedDevices"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Set<Android.Bluetooth.BluetoothDevice>> OnGetBondedDevices { get; set; } = null;
-
-        void GetBondedDevicesEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
-        {
-            var methodToExecute = (OnGetBondedDevices != null) ? OnGetBondedDevices : GetBondedDevices;
-            var executionResult = methodToExecute.Invoke();
-            data.SetReturnValue(executionResult);
-        }
-
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getBondedDevices()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Set"/></returns>
-        public virtual Java.Util.Set<Android.Bluetooth.BluetoothDevice> GetBondedDevices()
+        public Java.Util.Set<Android.Bluetooth.BluetoothDevice> GetBondedDevices()
         {
-            return default;
+            return IExecuteWithSignature<Java.Util.Set<Android.Bluetooth.BluetoothDevice>>("getBondedDevices", "()Ljava/util/Set;");
         }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#closeProfileProxy(int,android.bluetooth.BluetoothProfile)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnCloseProfileProxy"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<int, Android.Bluetooth.BluetoothProfile> OnCloseProfileProxy { get; set; } = null;
-
-        void CloseProfileProxyEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
-        {
-            var methodToExecute = (OnCloseProfileProxy != null) ? OnCloseProfileProxy : CloseProfileProxy;
-            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Android.Bluetooth.BluetoothProfile>(0));
-        }
-
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#closeProfileProxy(int,android.bluetooth.BluetoothProfile)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Android.Bluetooth.BluetoothProfile"/></param>
-        public virtual void CloseProfileProxy(int arg0, Android.Bluetooth.BluetoothProfile arg1)
+        public void CloseProfileProxy(int arg0, Android.Bluetooth.BluetoothProfile arg1)
         {
-            
+            IExecute("closeProfileProxy", arg0, arg1);
         }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#stopLeScan(android.bluetooth.BluetoothAdapter.LeScanCallback)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnStopLeScan"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Android.Bluetooth.BluetoothAdapter.LeScanCallback> OnStopLeScan { get; set; } = null;
-
-        void StopLeScanEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Bluetooth.BluetoothAdapter.LeScanCallback>> data)
-        {
-            var methodToExecute = (OnStopLeScan != null) ? OnStopLeScan : StopLeScan;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
-        }
-
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#stopLeScan(android.bluetooth.BluetoothAdapter.LeScanCallback)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Bluetooth.BluetoothAdapter.LeScanCallback"/></param>
-        [System.Obsolete()]
-        public virtual void StopLeScan(Android.Bluetooth.BluetoothAdapter.LeScanCallback arg0)
+        [global::System.Obsolete()]
+        public void StopLeScan(Android.Bluetooth.BluetoothAdapter.LeScanCallback arg0)
         {
-            
+            IExecuteWithSignature("stopLeScan", "(Landroid/bluetooth/BluetoothAdapter$LeScanCallback;)V", arg0);
         }
 
         #endregion
@@ -1088,373 +623,6 @@ namespace Android.Bluetooth
         #endregion
 
     
-        #endregion
-
-        // TODO: complete the class
-    }
-    #endregion
-
-    #region BluetoothAdapterDirect
-    public partial class BluetoothAdapterDirect
-    {
-        #region Constructors
-
-        #endregion
-
-        #region Class/Interface conversion operators
-
-        #endregion
-
-        #region Fields
-
-        #endregion
-
-        #region Static methods
-
-        #endregion
-
-        #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getAddress()"/> 
-        /// </summary>
-        public Java.Lang.String Address
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAddress", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getBluetoothLeAdvertiser()"/> 
-        /// </summary>
-        public Android.Bluetooth.Le.BluetoothLeAdvertiser BluetoothLeAdvertiser
-        {
-            get { return IExecuteWithSignature<Android.Bluetooth.Le.BluetoothLeAdvertiser>("getBluetoothLeAdvertiser", "()Landroid/bluetooth/le/BluetoothLeAdvertiser;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getBluetoothLeScanner()"/> 
-        /// </summary>
-        public Android.Bluetooth.Le.BluetoothLeScanner BluetoothLeScanner
-        {
-            get { return IExecuteWithSignature<Android.Bluetooth.Le.BluetoothLeScanner>("getBluetoothLeScanner", "()Landroid/bluetooth/le/BluetoothLeScanner;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getBondedDevices()"/> 
-        /// </summary>
-        public Java.Util.Set<Android.Bluetooth.BluetoothDevice> BondedDevices
-        {
-            get { return IExecuteWithSignature<Java.Util.Set<Android.Bluetooth.BluetoothDevice>>("getBondedDevices", "()Ljava/util/Set;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getDiscoverableTimeout()"/> 
-        /// </summary>
-        public Java.Time.Duration DiscoverableTimeout
-        {
-            get { return IExecuteWithSignature<Java.Time.Duration>("getDiscoverableTimeout", "()Ljava/time/Duration;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getLeMaximumAdvertisingDataLength()"/> 
-        /// </summary>
-        public int LeMaximumAdvertisingDataLength
-        {
-            get { return IExecuteWithSignature<int>("getLeMaximumAdvertisingDataLength", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getMaxConnectedAudioDevices()"/> 
-        /// </summary>
-        public int MaxConnectedAudioDevices
-        {
-            get { return IExecuteWithSignature<int>("getMaxConnectedAudioDevices", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getName()"/> 
-        /// </summary>
-        public Java.Lang.String Name
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getScanMode()"/> 
-        /// </summary>
-        public int ScanMode
-        {
-            get { return IExecuteWithSignature<int>("getScanMode", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getState()"/> 
-        /// </summary>
-        public int State
-        {
-            get { return IExecuteWithSignature<int>("getState", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getRemoteDevice(byte[])"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="byte"/></param>
-        /// <returns><see cref="Android.Bluetooth.BluetoothDevice"/></returns>
-        public override Android.Bluetooth.BluetoothDevice GetRemoteDevice(byte[] arg0)
-        {
-            return IExecuteWithSignature<Android.Bluetooth.BluetoothDevice>("getRemoteDevice", "([B)Landroid/bluetooth/BluetoothDevice;", new object[] { arg0 });
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getRemoteDevice(java.lang.String)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Android.Bluetooth.BluetoothDevice"/></returns>
-        public override Android.Bluetooth.BluetoothDevice GetRemoteDevice(Java.Lang.String arg0)
-        {
-            return IExecuteWithSignature<Android.Bluetooth.BluetoothDevice>("getRemoteDevice", "(Ljava/lang/String;)Landroid/bluetooth/BluetoothDevice;", arg0);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getRemoteLeDevice(java.lang.String,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Android.Bluetooth.BluetoothDevice"/></returns>
-        public override Android.Bluetooth.BluetoothDevice GetRemoteLeDevice(Java.Lang.String arg0, int arg1)
-        {
-            return IExecute<Android.Bluetooth.BluetoothDevice>("getRemoteLeDevice", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#listenUsingInsecureL2capChannel()"/>
-        /// </summary>
-        /// <returns><see cref="Android.Bluetooth.BluetoothServerSocket"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        public override Android.Bluetooth.BluetoothServerSocket ListenUsingInsecureL2capChannel()
-        {
-            return IExecuteWithSignature<Android.Bluetooth.BluetoothServerSocket>("listenUsingInsecureL2capChannel", "()Landroid/bluetooth/BluetoothServerSocket;");
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#listenUsingInsecureRfcommWithServiceRecord(java.lang.String,java.util.UUID)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Util.UUID"/></param>
-        /// <returns><see cref="Android.Bluetooth.BluetoothServerSocket"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        public override Android.Bluetooth.BluetoothServerSocket ListenUsingInsecureRfcommWithServiceRecord(Java.Lang.String arg0, Java.Util.UUID arg1)
-        {
-            return IExecute<Android.Bluetooth.BluetoothServerSocket>("listenUsingInsecureRfcommWithServiceRecord", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#listenUsingL2capChannel()"/>
-        /// </summary>
-        /// <returns><see cref="Android.Bluetooth.BluetoothServerSocket"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        public override Android.Bluetooth.BluetoothServerSocket ListenUsingL2capChannel()
-        {
-            return IExecuteWithSignature<Android.Bluetooth.BluetoothServerSocket>("listenUsingL2capChannel", "()Landroid/bluetooth/BluetoothServerSocket;");
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#listenUsingRfcommWithServiceRecord(java.lang.String,java.util.UUID)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Util.UUID"/></param>
-        /// <returns><see cref="Android.Bluetooth.BluetoothServerSocket"/></returns>
-        /// <exception cref="Java.Io.IOException"/>
-        public override Android.Bluetooth.BluetoothServerSocket ListenUsingRfcommWithServiceRecord(Java.Lang.String arg0, Java.Util.UUID arg1)
-        {
-            return IExecute<Android.Bluetooth.BluetoothServerSocket>("listenUsingRfcommWithServiceRecord", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#cancelDiscovery()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        public override bool CancelDiscovery()
-        {
-            return IExecuteWithSignature<bool>("cancelDiscovery", "()Z");
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#disable()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
-        public override bool Disable()
-        {
-            return IExecuteWithSignature<bool>("disable", "()Z");
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#enable()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
-        public override bool Enable()
-        {
-            return IExecuteWithSignature<bool>("enable", "()Z");
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getProfileProxy(android.content.Context,android.bluetooth.BluetoothProfile.ServiceListener,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Content.Context"/></param>
-        /// <param name="arg1"><see cref="Android.Bluetooth.BluetoothProfile.ServiceListener"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
-        public override bool GetProfileProxy(Android.Content.Context arg0, Android.Bluetooth.BluetoothProfile.ServiceListener arg1, int arg2)
-        {
-            return IExecute<bool>("getProfileProxy", arg0, arg1, arg2);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#isDiscovering()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        public override bool IsDiscovering()
-        {
-            return IExecuteWithSignature<bool>("isDiscovering", "()Z");
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#isEnabled()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        public override bool IsEnabled()
-        {
-            return IExecuteWithSignature<bool>("isEnabled", "()Z");
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#isLe2MPhySupported()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        public override bool IsLe2MPhySupported()
-        {
-            return IExecuteWithSignature<bool>("isLe2MPhySupported", "()Z");
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#isLeCodedPhySupported()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        public override bool IsLeCodedPhySupported()
-        {
-            return IExecuteWithSignature<bool>("isLeCodedPhySupported", "()Z");
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#isLeExtendedAdvertisingSupported()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        public override bool IsLeExtendedAdvertisingSupported()
-        {
-            return IExecuteWithSignature<bool>("isLeExtendedAdvertisingSupported", "()Z");
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#isLePeriodicAdvertisingSupported()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        public override bool IsLePeriodicAdvertisingSupported()
-        {
-            return IExecuteWithSignature<bool>("isLePeriodicAdvertisingSupported", "()Z");
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#isMultipleAdvertisementSupported()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        public override bool IsMultipleAdvertisementSupported()
-        {
-            return IExecuteWithSignature<bool>("isMultipleAdvertisementSupported", "()Z");
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#isOffloadedFilteringSupported()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        public override bool IsOffloadedFilteringSupported()
-        {
-            return IExecuteWithSignature<bool>("isOffloadedFilteringSupported", "()Z");
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#isOffloadedScanBatchingSupported()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        public override bool IsOffloadedScanBatchingSupported()
-        {
-            return IExecuteWithSignature<bool>("isOffloadedScanBatchingSupported", "()Z");
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#setName(java.lang.String)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="bool"/></returns>
-        public override bool SetName(Java.Lang.String arg0)
-        {
-            return IExecuteWithSignature<bool>("setName", "(Ljava/lang/String;)Z", arg0);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#startDiscovery()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        public override bool StartDiscovery()
-        {
-            return IExecuteWithSignature<bool>("startDiscovery", "()Z");
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#startLeScan(android.bluetooth.BluetoothAdapter.LeScanCallback)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Bluetooth.BluetoothAdapter.LeScanCallback"/></param>
-        /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
-        public override bool StartLeScan(Android.Bluetooth.BluetoothAdapter.LeScanCallback arg0)
-        {
-            return IExecuteWithSignature<bool>("startLeScan", "(Landroid/bluetooth/BluetoothAdapter$LeScanCallback;)Z", arg0);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#startLeScan(java.util.UUID[],android.bluetooth.BluetoothAdapter.LeScanCallback)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.UUID"/></param>
-        /// <param name="arg1"><see cref="Android.Bluetooth.BluetoothAdapter.LeScanCallback"/></param>
-        /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
-        public override bool StartLeScan(Java.Util.UUID[] arg0, Android.Bluetooth.BluetoothAdapter.LeScanCallback arg1)
-        {
-            return IExecute<bool>("startLeScan", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#getProfileConnectionState(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
-        public override int GetProfileConnectionState(int arg0)
-        {
-            return IExecuteWithSignature<int>("getProfileConnectionState", "(I)I", arg0);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#isLeAudioBroadcastAssistantSupported()"/>
-        /// </summary>
-        /// <returns><see cref="int"/></returns>
-        public override int IsLeAudioBroadcastAssistantSupported()
-        {
-            return IExecuteWithSignature<int>("isLeAudioBroadcastAssistantSupported", "()I");
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#isLeAudioBroadcastSourceSupported()"/>
-        /// </summary>
-        /// <returns><see cref="int"/></returns>
-        public override int IsLeAudioBroadcastSourceSupported()
-        {
-            return IExecuteWithSignature<int>("isLeAudioBroadcastSourceSupported", "()I");
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#isLeAudioSupported()"/>
-        /// </summary>
-        /// <returns><see cref="int"/></returns>
-        public override int IsLeAudioSupported()
-        {
-            return IExecuteWithSignature<int>("isLeAudioSupported", "()I");
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#closeProfileProxy(int,android.bluetooth.BluetoothProfile)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Android.Bluetooth.BluetoothProfile"/></param>
-        public override void CloseProfileProxy(int arg0, Android.Bluetooth.BluetoothProfile arg1)
-        {
-            IExecute("closeProfileProxy", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothAdapter.html#stopLeScan(android.bluetooth.BluetoothAdapter.LeScanCallback)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Bluetooth.BluetoothAdapter.LeScanCallback"/></param>
-        [System.Obsolete()]
-        public override void StopLeScan(Android.Bluetooth.BluetoothAdapter.LeScanCallback arg0)
-        {
-            IExecuteWithSignature("stopLeScan", "(Landroid/bluetooth/BluetoothAdapter$LeScanCallback;)V", arg0);
-        }
-
-        #endregion
-
-        #region Nested classes
-
         #endregion
 
         // TODO: complete the class

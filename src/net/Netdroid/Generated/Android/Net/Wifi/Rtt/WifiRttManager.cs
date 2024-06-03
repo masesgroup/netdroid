@@ -76,11 +76,12 @@ namespace Android.Net.Wifi.Rtt
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/WifiRttManager.html#getRttCharacteristics()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/WifiRttManager.html#getRttCharacteristics()"/>
         /// </summary>
-        public Android.Os.Bundle RttCharacteristics
+        /// <returns><see cref="Android.Os.Bundle"/></returns>
+        public Android.Os.Bundle GetRttCharacteristics()
         {
-            get { return IExecuteWithSignature<Android.Os.Bundle>("getRttCharacteristics", "()Landroid/os/Bundle;"); }
+            return IExecuteWithSignature<Android.Os.Bundle>("getRttCharacteristics", "()Landroid/os/Bundle;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/WifiRttManager.html#isAvailable()"/>

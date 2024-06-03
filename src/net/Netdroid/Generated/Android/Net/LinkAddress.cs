@@ -52,40 +52,44 @@ namespace Android.Net
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/LinkAddress.html#getAddress()"/> 
-        /// </summary>
-        public Java.Net.InetAddress Address
-        {
-            get { return IExecuteWithSignature<Java.Net.InetAddress>("getAddress", "()Ljava/net/InetAddress;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/LinkAddress.html#getFlags()"/> 
-        /// </summary>
-        public int Flags
-        {
-            get { return IExecuteWithSignature<int>("getFlags", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/LinkAddress.html#getPrefixLength()"/> 
-        /// </summary>
-        public int PrefixLength
-        {
-            get { return IExecuteWithSignature<int>("getPrefixLength", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/LinkAddress.html#getScope()"/> 
-        /// </summary>
-        public int Scope
-        {
-            get { return IExecuteWithSignature<int>("getScope", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/LinkAddress.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/LinkAddress.html#getFlags()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetFlags()
+        {
+            return IExecuteWithSignature<int>("getFlags", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/LinkAddress.html#getPrefixLength()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPrefixLength()
+        {
+            return IExecuteWithSignature<int>("getPrefixLength", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/LinkAddress.html#getScope()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetScope()
+        {
+            return IExecuteWithSignature<int>("getScope", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/LinkAddress.html#getAddress()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Net.InetAddress"/></returns>
+        public Java.Net.InetAddress GetAddress()
+        {
+            return IExecuteWithSignature<Java.Net.InetAddress>("getAddress", "()Ljava/net/InetAddress;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/LinkAddress.html#writeToParcel(android.os.Parcel,int)"/>

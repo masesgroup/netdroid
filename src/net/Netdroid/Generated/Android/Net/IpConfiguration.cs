@@ -52,18 +52,20 @@ namespace Android.Net
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/IpConfiguration.html#getHttpProxy()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/IpConfiguration.html#getHttpProxy()"/>
         /// </summary>
-        public Android.Net.ProxyInfo HttpProxy
+        /// <returns><see cref="Android.Net.ProxyInfo"/></returns>
+        public Android.Net.ProxyInfo GetHttpProxy()
         {
-            get { return IExecuteWithSignature<Android.Net.ProxyInfo>("getHttpProxy", "()Landroid/net/ProxyInfo;"); }
+            return IExecuteWithSignature<Android.Net.ProxyInfo>("getHttpProxy", "()Landroid/net/ProxyInfo;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/IpConfiguration.html#getStaticIpConfiguration()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/IpConfiguration.html#getStaticIpConfiguration()"/>
         /// </summary>
-        public Android.Net.StaticIpConfiguration StaticIpConfiguration
+        /// <returns><see cref="Android.Net.StaticIpConfiguration"/></returns>
+        public Android.Net.StaticIpConfiguration GetStaticIpConfiguration()
         {
-            get { return IExecuteWithSignature<Android.Net.StaticIpConfiguration>("getStaticIpConfiguration", "()Landroid/net/StaticIpConfiguration;"); }
+            return IExecuteWithSignature<Android.Net.StaticIpConfiguration>("getStaticIpConfiguration", "()Landroid/net/StaticIpConfiguration;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/IpConfiguration.html#describeContents()"/>

@@ -80,12 +80,12 @@ namespace Android.View.Accessibility
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("AccessibilityEventSource class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("AccessibilityEventSource class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AccessibilityEventSource() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("AccessibilityEventSource class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("AccessibilityEventSource class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AccessibilityEventSource(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -167,10 +167,13 @@ namespace Android.View.Accessibility
             /// </summary>
             public AccessibilityServicesStateChangeListener() { InitializeHandlers(); }
 
+            const string _bridgeClassName = "org.mases.netdroid.generated.android.view.accessibility.AccessibilityManager_AccessibilityServicesStateChangeListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "org.mases.netdroid.generated.android.view.accessibility.AccessibilityServicesStateChangeListener";
+            public override string BridgeClassName => _bridgeClassName;
 
         
             // TODO: complete the class
@@ -192,10 +195,13 @@ namespace Android.View.Accessibility
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
 
+            const string _bridgeClassName = "android.view.accessibility.AccessibilityManager$AccessibilityServicesStateChangeListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "android.view.accessibility.AccessibilityManager$AccessibilityServicesStateChangeListener";
+            public override string BridgeClassName => _bridgeClassName;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
@@ -226,10 +232,13 @@ namespace Android.View.Accessibility
             /// </summary>
             public AccessibilityStateChangeListener() { InitializeHandlers(); }
 
+            const string _bridgeClassName = "org.mases.netdroid.generated.android.view.accessibility.AccessibilityManager_AccessibilityStateChangeListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "org.mases.netdroid.generated.android.view.accessibility.AccessibilityStateChangeListener";
+            public override string BridgeClassName => _bridgeClassName;
 
         
             // TODO: complete the class
@@ -251,10 +260,13 @@ namespace Android.View.Accessibility
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
 
+            const string _bridgeClassName = "android.view.accessibility.AccessibilityManager$AccessibilityStateChangeListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "android.view.accessibility.AccessibilityManager$AccessibilityStateChangeListener";
+            public override string BridgeClassName => _bridgeClassName;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
@@ -285,10 +297,13 @@ namespace Android.View.Accessibility
             /// </summary>
             public AudioDescriptionRequestedChangeListener() { InitializeHandlers(); }
 
+            const string _bridgeClassName = "org.mases.netdroid.generated.android.view.accessibility.AccessibilityManager_AudioDescriptionRequestedChangeListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "org.mases.netdroid.generated.android.view.accessibility.AudioDescriptionRequestedChangeListener";
+            public override string BridgeClassName => _bridgeClassName;
 
         
             // TODO: complete the class
@@ -310,10 +325,13 @@ namespace Android.View.Accessibility
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
 
+            const string _bridgeClassName = "android.view.accessibility.AccessibilityManager$AudioDescriptionRequestedChangeListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "android.view.accessibility.AccessibilityManager$AudioDescriptionRequestedChangeListener";
+            public override string BridgeClassName => _bridgeClassName;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
@@ -344,10 +362,13 @@ namespace Android.View.Accessibility
             /// </summary>
             public TouchExplorationStateChangeListener() { InitializeHandlers(); }
 
+            const string _bridgeClassName = "org.mases.netdroid.generated.android.view.accessibility.AccessibilityManager_TouchExplorationStateChangeListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "org.mases.netdroid.generated.android.view.accessibility.TouchExplorationStateChangeListener";
+            public override string BridgeClassName => _bridgeClassName;
 
         
             // TODO: complete the class
@@ -369,10 +390,13 @@ namespace Android.View.Accessibility
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
 
+            const string _bridgeClassName = "android.view.accessibility.AccessibilityManager$TouchExplorationStateChangeListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "android.view.accessibility.AccessibilityManager$TouchExplorationStateChangeListener";
+            public override string BridgeClassName => _bridgeClassName;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
@@ -758,12 +782,12 @@ namespace Android.View.Accessibility
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("AccessibilityNodeProvider class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("AccessibilityNodeProvider class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AccessibilityNodeProvider() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("AccessibilityNodeProvider class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("AccessibilityNodeProvider class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AccessibilityNodeProvider(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -848,12 +872,12 @@ namespace Android.View.Accessibility
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("AccessibilityRequestPreparer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("AccessibilityRequestPreparer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AccessibilityRequestPreparer() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("AccessibilityRequestPreparer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("AccessibilityRequestPreparer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AccessibilityRequestPreparer(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -972,38 +996,26 @@ namespace Android.View.Accessibility
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/CaptioningManager.CaptioningChangeListener.html"/>
         /// </summary>
-        public partial class CaptioningChangeListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+        public partial class CaptioningChangeListener : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CaptioningChangeListener>
         {
+            const string _bridgeClassName = "android.view.accessibility.CaptioningManager$CaptioningChangeListener";
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
-            public CaptioningChangeListener() { InitializeHandlers(); }
-
-        #warning Remember to build the Java class for event listener
-
-            // TODO: complete the class
-
-        }
-        #endregion
-
-        #region CaptioningChangeListenerDirect
-        /// <summary>
-        /// Direct override of <see cref="CaptioningChangeListener"/> or its generic type if there is one
-        /// </summary>
-        public partial class CaptioningChangeListenerDirect : CaptioningChangeListener
-        {
+            [global::System.Obsolete("CaptioningChangeListener class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            public CaptioningChangeListener() { }
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
-            public override bool AutoInit => false;
+            [global::System.Obsolete("CaptioningChangeListener class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            public CaptioningChangeListener(params object[] args) : base(args) { }
 
-            /// <inheritdoc />
-            protected override void InitializeHandlers() { }
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
 
             /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "android.view.accessibility.CaptioningManager$CaptioningChangeListener";
+            public override string BridgeClassName => _bridgeClassName;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
@@ -1020,6 +1032,9 @@ namespace Android.View.Accessibility
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
             /// </summary>
             public override bool IsBridgeStatic => true;
+
+            // TODO: complete the class
+
         }
         #endregion
 

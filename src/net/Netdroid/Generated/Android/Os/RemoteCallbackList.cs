@@ -46,13 +46,6 @@ namespace Android.Os
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/RemoteCallbackList.html#getRegisteredCallbackCount()"/> 
-        /// </summary>
-        public int RegisteredCallbackCount
-        {
-            get { return IExecuteWithSignature<int>("getRegisteredCallbackCount", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/RemoteCallbackList.html#register(android.os.IInterface,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Os.IInterface"/></param>
@@ -105,6 +98,14 @@ namespace Android.Os
         public int BeginBroadcast()
         {
             return IExecuteWithSignature<int>("beginBroadcast", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/RemoteCallbackList.html#getRegisteredCallbackCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetRegisteredCallbackCount()
+        {
+            return IExecuteWithSignature<int>("getRegisteredCallbackCount", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/RemoteCallbackList.html#getBroadcastCookie(int)"/>
@@ -191,13 +192,6 @@ namespace Android.Os
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/RemoteCallbackList.html#getRegisteredCallbackCount()"/> 
-        /// </summary>
-        public int RegisteredCallbackCount
-        {
-            get { return IExecuteWithSignature<int>("getRegisteredCallbackCount", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/RemoteCallbackList.html#register(android.os.IInterface,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
@@ -250,6 +244,14 @@ namespace Android.Os
         public int BeginBroadcast()
         {
             return IExecuteWithSignature<int>("beginBroadcast", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/RemoteCallbackList.html#getRegisteredCallbackCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetRegisteredCallbackCount()
+        {
+            return IExecuteWithSignature<int>("getRegisteredCallbackCount", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/RemoteCallbackList.html#getBroadcastCookie(int)"/>

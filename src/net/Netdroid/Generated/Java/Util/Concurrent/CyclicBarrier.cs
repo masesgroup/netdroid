@@ -30,7 +30,7 @@ namespace Java.Util.Concurrent
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CyclicBarrier.html#%3Cinit%3E(int,java.lang.Runnable)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CyclicBarrier.html#%3Cinit%3E(int,java.lang.Runnable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
@@ -39,7 +39,7 @@ namespace Java.Util.Concurrent
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CyclicBarrier.html#%3Cinit%3E(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CyclicBarrier.html#%3Cinit%3E(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public CyclicBarrier(int arg0)
@@ -63,21 +63,7 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CyclicBarrier.html#getNumberWaiting()"/> 
-        /// </summary>
-        public int NumberWaiting
-        {
-            get { return IExecuteWithSignature<int>("getNumberWaiting", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CyclicBarrier.html#getParties()"/> 
-        /// </summary>
-        public int Parties
-        {
-            get { return IExecuteWithSignature<int>("getParties", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CyclicBarrier.html#isBroken()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CyclicBarrier.html#isBroken()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsBroken()
@@ -85,7 +71,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("isBroken", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CyclicBarrier.html#await()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CyclicBarrier.html#await()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
@@ -95,7 +81,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<int>("await", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CyclicBarrier.html#await(long,java.util.concurrent.TimeUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CyclicBarrier.html#await(long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
@@ -108,7 +94,23 @@ namespace Java.Util.Concurrent
             return IExecute<int>("await", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CyclicBarrier.html#reset()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CyclicBarrier.html#getNumberWaiting()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetNumberWaiting()
+        {
+            return IExecuteWithSignature<int>("getNumberWaiting", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CyclicBarrier.html#getParties()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetParties()
+        {
+            return IExecuteWithSignature<int>("getParties", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CyclicBarrier.html#reset()"/>
         /// </summary>
         public void Reset()
         {

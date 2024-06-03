@@ -55,18 +55,20 @@ namespace Android.App.Admin
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/admin/FreezePeriod.html#getEnd()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/admin/FreezePeriod.html#getEnd()"/>
         /// </summary>
-        public Java.Time.MonthDay End
+        /// <returns><see cref="Java.Time.MonthDay"/></returns>
+        public Java.Time.MonthDay GetEnd()
         {
-            get { return IExecuteWithSignature<Java.Time.MonthDay>("getEnd", "()Ljava/time/MonthDay;"); }
+            return IExecuteWithSignature<Java.Time.MonthDay>("getEnd", "()Ljava/time/MonthDay;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/admin/FreezePeriod.html#getStart()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/admin/FreezePeriod.html#getStart()"/>
         /// </summary>
-        public Java.Time.MonthDay Start
+        /// <returns><see cref="Java.Time.MonthDay"/></returns>
+        public Java.Time.MonthDay GetStart()
         {
-            get { return IExecuteWithSignature<Java.Time.MonthDay>("getStart", "()Ljava/time/MonthDay;"); }
+            return IExecuteWithSignature<Java.Time.MonthDay>("getStart", "()Ljava/time/MonthDay;");
         }
 
         #endregion

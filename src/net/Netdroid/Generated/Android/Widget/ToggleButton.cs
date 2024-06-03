@@ -84,25 +84,44 @@ namespace Android.Widget
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ToggleButton.html#getDisabledAlpha()"/> 
+        /// <see href="https://developer.android.com/reference/android/widget/ToggleButton.html#getDisabledAlpha()"/>
         /// </summary>
-        public float DisabledAlpha
+        /// <returns><see cref="float"/></returns>
+        public float GetDisabledAlpha()
         {
-            get { return IExecuteWithSignature<float>("getDisabledAlpha", "()F"); }
+            return IExecuteWithSignature<float>("getDisabledAlpha", "()F");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ToggleButton.html#getTextOff()"/> <see href="https://developer.android.com/reference/android/widget/ToggleButton.html#setTextOff(java.lang.CharSequence)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/ToggleButton.html#getTextOff()"/>
         /// </summary>
-        public Java.Lang.CharSequence TextOff
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetTextOff()
         {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getTextOff", "()Ljava/lang/CharSequence;"); } set { IExecuteWithSignature("setTextOff", "(Ljava/lang/CharSequence;)V", value); }
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getTextOff", "()Ljava/lang/CharSequence;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ToggleButton.html#getTextOn()"/> <see href="https://developer.android.com/reference/android/widget/ToggleButton.html#setTextOn(java.lang.CharSequence)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/ToggleButton.html#getTextOn()"/>
         /// </summary>
-        public Java.Lang.CharSequence TextOn
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetTextOn()
         {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getTextOn", "()Ljava/lang/CharSequence;"); } set { IExecuteWithSignature("setTextOn", "(Ljava/lang/CharSequence;)V", value); }
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getTextOn", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ToggleButton.html#setTextOff(java.lang.CharSequence)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        public void SetTextOff(Java.Lang.CharSequence arg0)
+        {
+            IExecuteWithSignature("setTextOff", "(Ljava/lang/CharSequence;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ToggleButton.html#setTextOn(java.lang.CharSequence)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        public void SetTextOn(Java.Lang.CharSequence arg0)
+        {
+            IExecuteWithSignature("setTextOn", "(Ljava/lang/CharSequence;)V", arg0);
         }
 
         #endregion

@@ -82,27 +82,6 @@ namespace Android.App.Admin
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/admin/PreferentialNetworkServiceConfig.html#getExcludedUids()"/> 
-        /// </summary>
-        public int[] ExcludedUids
-        {
-            get { return IExecuteWithSignatureArray<int>("getExcludedUids", "()[I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/admin/PreferentialNetworkServiceConfig.html#getIncludedUids()"/> 
-        /// </summary>
-        public int[] IncludedUids
-        {
-            get { return IExecuteWithSignatureArray<int>("getIncludedUids", "()[I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/admin/PreferentialNetworkServiceConfig.html#getNetworkId()"/> 
-        /// </summary>
-        public int NetworkId
-        {
-            get { return IExecuteWithSignature<int>("getNetworkId", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/PreferentialNetworkServiceConfig.html#isEnabled()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -133,6 +112,30 @@ namespace Android.App.Admin
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/PreferentialNetworkServiceConfig.html#getNetworkId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetNetworkId()
+        {
+            return IExecuteWithSignature<int>("getNetworkId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/PreferentialNetworkServiceConfig.html#getExcludedUids()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int[] GetExcludedUids()
+        {
+            return IExecuteWithSignatureArray<int>("getExcludedUids", "()[I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/admin/PreferentialNetworkServiceConfig.html#getIncludedUids()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int[] GetIncludedUids()
+        {
+            return IExecuteWithSignatureArray<int>("getIncludedUids", "()[I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/admin/PreferentialNetworkServiceConfig.html#writeToParcel(android.os.Parcel,int)"/>

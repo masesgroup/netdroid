@@ -240,116 +240,12 @@ namespace Android.View.Textclassifier
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#getDurationSincePreviousEvent()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#getSessionId()"/>
         /// </summary>
-        public long DurationSincePreviousEvent
+        /// <returns><see cref="Android.View.Textclassifier.TextClassificationSessionId"/></returns>
+        public Android.View.Textclassifier.TextClassificationSessionId GetSessionId()
         {
-            get { return IExecuteWithSignature<long>("getDurationSincePreviousEvent", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#getDurationSinceSessionStart()"/> 
-        /// </summary>
-        public long DurationSinceSessionStart
-        {
-            get { return IExecuteWithSignature<long>("getDurationSinceSessionStart", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#getEnd()"/> 
-        /// </summary>
-        public int End
-        {
-            get { return IExecuteWithSignature<int>("getEnd", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#getEntityType()"/> 
-        /// </summary>
-        public Java.Lang.String EntityType
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getEntityType", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#getEventIndex()"/> 
-        /// </summary>
-        public int EventIndex
-        {
-            get { return IExecuteWithSignature<int>("getEventIndex", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#getEventTime()"/> 
-        /// </summary>
-        public long EventTime
-        {
-            get { return IExecuteWithSignature<long>("getEventTime", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#getEventType()"/> 
-        /// </summary>
-        public int EventType
-        {
-            get { return IExecuteWithSignature<int>("getEventType", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#getInvocationMethod()"/> 
-        /// </summary>
-        public int InvocationMethod
-        {
-            get { return IExecuteWithSignature<int>("getInvocationMethod", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#getPackageName()"/> 
-        /// </summary>
-        public Java.Lang.String PackageName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPackageName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#getResultId()"/> 
-        /// </summary>
-        public Java.Lang.String ResultId
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getResultId", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#getSessionId()"/> 
-        /// </summary>
-        public Android.View.Textclassifier.TextClassificationSessionId SessionId
-        {
-            get { return IExecute<Android.View.Textclassifier.TextClassificationSessionId>("getSessionId"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#getSmartEnd()"/> 
-        /// </summary>
-        public int SmartEnd
-        {
-            get { return IExecuteWithSignature<int>("getSmartEnd", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#getSmartStart()"/> 
-        /// </summary>
-        public int SmartStart
-        {
-            get { return IExecuteWithSignature<int>("getSmartStart", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#getStart()"/> 
-        /// </summary>
-        public int Start
-        {
-            get { return IExecuteWithSignature<int>("getStart", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#getWidgetType()"/> 
-        /// </summary>
-        public Java.Lang.String WidgetType
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getWidgetType", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#getWidgetVersion()"/> 
-        /// </summary>
-        public Java.Lang.String WidgetVersion
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getWidgetVersion", "()Ljava/lang/String;"); }
+            return IExecute<Android.View.Textclassifier.TextClassificationSessionId>("getSessionId");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#describeContents()"/>
@@ -358,6 +254,126 @@ namespace Android.View.Textclassifier
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#getEnd()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetEnd()
+        {
+            return IExecuteWithSignature<int>("getEnd", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#getEventIndex()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetEventIndex()
+        {
+            return IExecuteWithSignature<int>("getEventIndex", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#getEventType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetEventType()
+        {
+            return IExecuteWithSignature<int>("getEventType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#getInvocationMethod()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetInvocationMethod()
+        {
+            return IExecuteWithSignature<int>("getInvocationMethod", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#getSmartEnd()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSmartEnd()
+        {
+            return IExecuteWithSignature<int>("getSmartEnd", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#getSmartStart()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSmartStart()
+        {
+            return IExecuteWithSignature<int>("getSmartStart", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#getStart()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetStart()
+        {
+            return IExecuteWithSignature<int>("getStart", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#getEntityType()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetEntityType()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getEntityType", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#getPackageName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPackageName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPackageName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#getResultId()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetResultId()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getResultId", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#getWidgetType()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetWidgetType()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getWidgetType", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#getWidgetVersion()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetWidgetVersion()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getWidgetVersion", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#getDurationSincePreviousEvent()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetDurationSincePreviousEvent()
+        {
+            return IExecuteWithSignature<long>("getDurationSincePreviousEvent", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#getDurationSinceSessionStart()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetDurationSinceSessionStart()
+        {
+            return IExecuteWithSignature<long>("getDurationSinceSessionStart", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#getEventTime()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetEventTime()
+        {
+            return IExecuteWithSignature<long>("getEventTime", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/textclassifier/SelectionEvent.html#writeToParcel(android.os.Parcel,int)"/>

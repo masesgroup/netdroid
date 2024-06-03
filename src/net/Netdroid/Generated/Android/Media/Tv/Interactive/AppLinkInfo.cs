@@ -62,18 +62,20 @@ namespace Android.Media.Tv.Interactive
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/interactive/AppLinkInfo.html#getComponentName()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/tv/interactive/AppLinkInfo.html#getComponentName()"/>
         /// </summary>
-        public Android.Content.ComponentName ComponentName
+        /// <returns><see cref="Android.Content.ComponentName"/></returns>
+        public Android.Content.ComponentName GetComponentName()
         {
-            get { return IExecuteWithSignature<Android.Content.ComponentName>("getComponentName", "()Landroid/content/ComponentName;"); }
+            return IExecuteWithSignature<Android.Content.ComponentName>("getComponentName", "()Landroid/content/ComponentName;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/interactive/AppLinkInfo.html#getUri()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/tv/interactive/AppLinkInfo.html#getUri()"/>
         /// </summary>
-        public Android.Net.Uri Uri
+        /// <returns><see cref="Android.Net.Uri"/></returns>
+        public Android.Net.Uri GetUri()
         {
-            get { return IExecuteWithSignature<Android.Net.Uri>("getUri", "()Landroid/net/Uri;"); }
+            return IExecuteWithSignature<Android.Net.Uri>("getUri", "()Landroid/net/Uri;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/interactive/AppLinkInfo.html#describeContents()"/>

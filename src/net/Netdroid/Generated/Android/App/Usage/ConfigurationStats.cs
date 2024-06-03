@@ -60,46 +60,12 @@ namespace Android.App.Usage
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/usage/ConfigurationStats.html#getActivationCount()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/usage/ConfigurationStats.html#getConfiguration()"/>
         /// </summary>
-        public int ActivationCount
+        /// <returns><see cref="Android.Content.Res.Configuration"/></returns>
+        public Android.Content.Res.Configuration GetConfiguration()
         {
-            get { return IExecuteWithSignature<int>("getActivationCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/usage/ConfigurationStats.html#getConfiguration()"/> 
-        /// </summary>
-        public Android.Content.Res.Configuration Configuration
-        {
-            get { return IExecuteWithSignature<Android.Content.Res.Configuration>("getConfiguration", "()Landroid/content/res/Configuration;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/usage/ConfigurationStats.html#getFirstTimeStamp()"/> 
-        /// </summary>
-        public long FirstTimeStamp
-        {
-            get { return IExecuteWithSignature<long>("getFirstTimeStamp", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/usage/ConfigurationStats.html#getLastTimeActive()"/> 
-        /// </summary>
-        public long LastTimeActive
-        {
-            get { return IExecuteWithSignature<long>("getLastTimeActive", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/usage/ConfigurationStats.html#getLastTimeStamp()"/> 
-        /// </summary>
-        public long LastTimeStamp
-        {
-            get { return IExecuteWithSignature<long>("getLastTimeStamp", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/usage/ConfigurationStats.html#getTotalTimeActive()"/> 
-        /// </summary>
-        public long TotalTimeActive
-        {
-            get { return IExecuteWithSignature<long>("getTotalTimeActive", "()J"); }
+            return IExecuteWithSignature<Android.Content.Res.Configuration>("getConfiguration", "()Landroid/content/res/Configuration;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/usage/ConfigurationStats.html#describeContents()"/>
@@ -108,6 +74,46 @@ namespace Android.App.Usage
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/usage/ConfigurationStats.html#getActivationCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetActivationCount()
+        {
+            return IExecuteWithSignature<int>("getActivationCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/usage/ConfigurationStats.html#getFirstTimeStamp()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetFirstTimeStamp()
+        {
+            return IExecuteWithSignature<long>("getFirstTimeStamp", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/usage/ConfigurationStats.html#getLastTimeActive()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetLastTimeActive()
+        {
+            return IExecuteWithSignature<long>("getLastTimeActive", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/usage/ConfigurationStats.html#getLastTimeStamp()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetLastTimeStamp()
+        {
+            return IExecuteWithSignature<long>("getLastTimeStamp", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/usage/ConfigurationStats.html#getTotalTimeActive()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetTotalTimeActive()
+        {
+            return IExecuteWithSignature<long>("getTotalTimeActive", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/usage/ConfigurationStats.html#writeToParcel(android.os.Parcel,int)"/>

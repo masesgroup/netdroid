@@ -28,7 +28,7 @@ namespace Java.Lang.Ref
 {
     #region Cleaner
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/ref/Cleaner.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/ref/Cleaner.html"/>
     /// </summary>
     public partial class Cleaner : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Cleaner>
     {
@@ -68,7 +68,7 @@ namespace Java.Lang.Ref
         // TODO: complete the class
         #region Cleanable
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ref/Cleaner.Cleanable.html"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ref/Cleaner.Cleanable.html"/>
         /// </summary>
         public partial class Cleanable : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Cleanable>
         {
@@ -76,12 +76,12 @@ namespace Java.Lang.Ref
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
-            [Obsolete("Cleanable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("Cleanable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Cleanable() { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
-            [Obsolete("Cleanable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("Cleanable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Cleanable(params object[] args) : base(args) { }
 
             private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -118,7 +118,7 @@ namespace Java.Lang.Ref
 
     #region PhantomReference
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/ref/PhantomReference.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/ref/PhantomReference.html"/>
     /// </summary>
     public partial class PhantomReference : Java.Lang.Ref.Reference
     {
@@ -162,7 +162,7 @@ namespace Java.Lang.Ref
 
     #region PhantomReference<T>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/ref/PhantomReference.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/ref/PhantomReference.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
     public partial class PhantomReference<T> : Java.Lang.Ref.Reference<T>
@@ -207,7 +207,7 @@ namespace Java.Lang.Ref
 
     #region Reference
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/ref/Reference.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/ref/Reference.html"/>
     /// </summary>
     public partial class Reference : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Reference>
     {
@@ -215,12 +215,12 @@ namespace Java.Lang.Ref
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Reference class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Reference class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Reference() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Reference class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Reference class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Reference(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -253,7 +253,7 @@ namespace Java.Lang.Ref
 
     #region Reference<T>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/ref/Reference.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/ref/Reference.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
     public partial class Reference<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Reference<T>>
@@ -262,12 +262,12 @@ namespace Java.Lang.Ref
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Reference class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Reference class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Reference() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Reference class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Reference class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Reference(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -300,7 +300,7 @@ namespace Java.Lang.Ref
 
     #region ReferenceQueue
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/ref/ReferenceQueue.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/ref/ReferenceQueue.html"/>
     /// </summary>
     public partial class ReferenceQueue : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ReferenceQueue>
     {
@@ -344,7 +344,7 @@ namespace Java.Lang.Ref
 
     #region ReferenceQueue<T>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/ref/ReferenceQueue.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/ref/ReferenceQueue.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
     public partial class ReferenceQueue<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ReferenceQueue<T>>
@@ -389,7 +389,7 @@ namespace Java.Lang.Ref
 
     #region SoftReference
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/ref/SoftReference.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/ref/SoftReference.html"/>
     /// </summary>
     public partial class SoftReference : Java.Lang.Ref.Reference
     {
@@ -433,7 +433,7 @@ namespace Java.Lang.Ref
 
     #region SoftReference<T>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/ref/SoftReference.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/ref/SoftReference.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
     public partial class SoftReference<T> : Java.Lang.Ref.Reference<T>
@@ -478,7 +478,7 @@ namespace Java.Lang.Ref
 
     #region WeakReference
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/ref/WeakReference.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/ref/WeakReference.html"/>
     /// </summary>
     public partial class WeakReference : Java.Lang.Ref.Reference
     {
@@ -522,7 +522,7 @@ namespace Java.Lang.Ref
 
     #region WeakReference<T>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/ref/WeakReference.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/ref/WeakReference.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
     public partial class WeakReference<T> : Java.Lang.Ref.Reference<T>

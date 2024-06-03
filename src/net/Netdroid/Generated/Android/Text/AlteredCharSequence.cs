@@ -57,7 +57,7 @@ namespace Android.Text
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <returns><see cref="Android.Text.AlteredCharSequence"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Text.AlteredCharSequence Make(Java.Lang.CharSequence arg0, char[] arg1, int arg2, int arg3)
         {
             return SExecute<Android.Text.AlteredCharSequence>(LocalBridgeClazz, "make", arg0, arg1, arg2, arg3);
@@ -71,7 +71,7 @@ namespace Android.Text
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="char"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public char CharAt(int arg0)
         {
             return IExecuteWithSignature<char>("charAt", "(I)C", arg0);
@@ -80,7 +80,7 @@ namespace Android.Text
         /// <see href="https://developer.android.com/reference/android/text/AlteredCharSequence.html#length()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int Length()
         {
             return IExecuteWithSignature<int>("length", "()I");
@@ -91,7 +91,7 @@ namespace Android.Text
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Java.Lang.CharSequence"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Lang.CharSequence SubSequence(int arg0, int arg1)
         {
             return IExecute<Java.Lang.CharSequence>("subSequence", arg0, arg1);
@@ -103,7 +103,7 @@ namespace Android.Text
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="char"/></param>
         /// <param name="arg3"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void GetChars(int arg0, int arg1, char[] arg2, int arg3)
         {
             IExecute("getChars", arg0, arg1, arg2, arg3);

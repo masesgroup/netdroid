@@ -38,19 +38,19 @@ namespace Java.Lang
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/System.html#in"/>
+        /// <see href="https://developer.android.com/reference/java/lang/System.html#in"/>
         /// </summary>
         public static Java.Io.InputStream inField { get { if (!_inFieldReady) { _inFieldContent = SGetField<Java.Io.InputStream>(LocalBridgeClazz, "in"); _inFieldReady = true; } return _inFieldContent; } }
         private static Java.Io.InputStream _inFieldContent = default;
         private static bool _inFieldReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/System.html#err"/>
+        /// <see href="https://developer.android.com/reference/java/lang/System.html#err"/>
         /// </summary>
         public static Java.Io.PrintStream err { get { if (!_errReady) { _errContent = SGetField<Java.Io.PrintStream>(LocalBridgeClazz, "err"); _errReady = true; } return _errContent; } }
         private static Java.Io.PrintStream _errContent = default;
         private static bool _errReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/System.html#out"/>
+        /// <see href="https://developer.android.com/reference/java/lang/System.html#out"/>
         /// </summary>
         public static Java.Io.PrintStream outField { get { if (!_outFieldReady) { _outFieldContent = SGetField<Java.Io.PrintStream>(LocalBridgeClazz, "out"); _outFieldReady = true; } return _outFieldContent; } }
         private static Java.Io.PrintStream _outFieldContent = default;
@@ -60,29 +60,7 @@ namespace Java.Lang
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/System.html#getenv()"/> 
-        /// </summary>
-        public static Java.Util.Map<Java.Lang.String, Java.Lang.String> Env
-        {
-            get { return SExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Lang.String>>(LocalBridgeClazz, "getenv", "()Ljava/util/Map;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/System.html#getProperties()"/> <see href="https://developer.android.com/reference/java.base/java/lang/System.html#setProperties(java.util.Properties)"/>
-        /// </summary>
-        public static Java.Util.Properties Properties
-        {
-            get { return SExecuteWithSignature<Java.Util.Properties>(LocalBridgeClazz, "getProperties", "()Ljava/util/Properties;"); } set { SExecuteWithSignature(LocalBridgeClazz, "setProperties", "(Ljava/util/Properties;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/System.html#getSecurityManager()"/> <see href="https://developer.android.com/reference/java.base/java/lang/System.html#setSecurityManager(java.lang.SecurityManager)"/>
-        /// </summary>
-        [System.Obsolete()]
-        public static Java.Lang.SecurityManager SecurityManager
-        {
-            get { return SExecuteWithSignature<Java.Lang.SecurityManager>(LocalBridgeClazz, "getSecurityManager", "()Ljava/lang/SecurityManager;"); } set { SExecuteWithSignature(LocalBridgeClazz, "setSecurityManager", "(Ljava/lang/SecurityManager;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/System.html#console()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/System.html#console()"/>
         /// </summary>
         /// <returns><see cref="Java.Io.Console"/></returns>
         public static Java.Io.Console Console()
@@ -90,7 +68,15 @@ namespace Java.Lang
             return SExecuteWithSignature<Java.Io.Console>(LocalBridgeClazz, "console", "()Ljava/io/Console;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/System.html#clearProperty(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/System.html#getSecurityManager()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.SecurityManager"/></returns>
+        public static Java.Lang.SecurityManager GetSecurityManager()
+        {
+            return SExecuteWithSignature<Java.Lang.SecurityManager>(LocalBridgeClazz, "getSecurityManager", "()Ljava/lang/SecurityManager;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/System.html#clearProperty(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -99,7 +85,7 @@ namespace Java.Lang
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "clearProperty", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/System.html#getenv(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/System.html#getenv(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -108,7 +94,7 @@ namespace Java.Lang
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getenv", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/System.html#getProperty(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/System.html#getProperty(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -118,7 +104,7 @@ namespace Java.Lang
             return SExecute<Java.Lang.String>(LocalBridgeClazz, "getProperty", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/System.html#getProperty(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/System.html#getProperty(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -127,7 +113,7 @@ namespace Java.Lang
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getProperty", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/System.html#lineSeparator()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/System.html#lineSeparator()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
         public static Java.Lang.String LineSeparator()
@@ -135,7 +121,7 @@ namespace Java.Lang
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "lineSeparator", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/System.html#setProperty(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/System.html#setProperty(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -145,26 +131,7 @@ namespace Java.Lang
             return SExecute<Java.Lang.String>(LocalBridgeClazz, "setProperty", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/System.html#getLogger(java.lang.String,java.util.ResourceBundle)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Util.ResourceBundle"/></param>
-        /// <returns><see cref="Java.Lang.System.Logger"/></returns>
-        public static Java.Lang.System.Logger GetLogger(Java.Lang.String arg0, Java.Util.ResourceBundle arg1)
-        {
-            return SExecute<Java.Lang.System.Logger>(LocalBridgeClazz, "getLogger", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/System.html#getLogger(java.lang.String)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Lang.System.Logger"/></returns>
-        public static Java.Lang.System.Logger GetLogger(Java.Lang.String arg0)
-        {
-            return SExecuteWithSignature<Java.Lang.System.Logger>(LocalBridgeClazz, "getLogger", "(Ljava/lang/String;)Ljava/lang/System$Logger;", arg0);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/System.html#inheritedChannel()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/System.html#inheritedChannel()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.Channels.Channel"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -173,7 +140,23 @@ namespace Java.Lang
             return SExecuteWithSignature<Java.Nio.Channels.Channel>(LocalBridgeClazz, "inheritedChannel", "()Ljava/nio/channels/Channel;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/System.html#identityHashCode(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/System.html#getenv()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        public static Java.Util.Map<Java.Lang.String, Java.Lang.String> Getenv()
+        {
+            return SExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Lang.String>>(LocalBridgeClazz, "getenv", "()Ljava/util/Map;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/System.html#getProperties()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Properties"/></returns>
+        public static Java.Util.Properties GetProperties()
+        {
+            return SExecuteWithSignature<Java.Util.Properties>(LocalBridgeClazz, "getProperties", "()Ljava/util/Properties;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/System.html#identityHashCode(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="int"/></returns>
@@ -182,7 +165,7 @@ namespace Java.Lang
             return SExecuteWithSignature<int>(LocalBridgeClazz, "identityHashCode", "(Ljava/lang/Object;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/System.html#mapLibraryName(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/System.html#mapLibraryName(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -191,7 +174,7 @@ namespace Java.Lang
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "mapLibraryName", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/System.html#currentTimeMillis()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/System.html#currentTimeMillis()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
         public static long CurrentTimeMillis()
@@ -199,7 +182,7 @@ namespace Java.Lang
             return SExecuteWithSignature<long>(LocalBridgeClazz, "currentTimeMillis", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/System.html#nanoTime()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/System.html#nanoTime()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
         public static long NanoTime()
@@ -207,7 +190,7 @@ namespace Java.Lang
             return SExecuteWithSignature<long>(LocalBridgeClazz, "nanoTime", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/System.html#arraycopy(java.lang.Object,int,java.lang.Object,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/System.html#arraycopy(java.lang.Object,int,java.lang.Object,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -219,7 +202,7 @@ namespace Java.Lang
             SExecute(LocalBridgeClazz, "arraycopy", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/System.html#exit(int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/System.html#exit(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public static void Exit(int arg0)
@@ -227,14 +210,14 @@ namespace Java.Lang
             SExecuteWithSignature(LocalBridgeClazz, "exit", "(I)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/System.html#gc()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/System.html#gc()"/>
         /// </summary>
         public static void Gc()
         {
             SExecuteWithSignature(LocalBridgeClazz, "gc", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/System.html#load(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/System.html#load(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public static void Load(Java.Lang.String arg0)
@@ -242,7 +225,7 @@ namespace Java.Lang
             SExecuteWithSignature(LocalBridgeClazz, "load", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/System.html#loadLibrary(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/System.html#loadLibrary(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public static void LoadLibrary(Java.Lang.String arg0)
@@ -250,14 +233,14 @@ namespace Java.Lang
             SExecuteWithSignature(LocalBridgeClazz, "loadLibrary", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/System.html#runFinalization()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/System.html#runFinalization()"/>
         /// </summary>
         public static void RunFinalization()
         {
             SExecuteWithSignature(LocalBridgeClazz, "runFinalization", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/System.html#setErr(java.io.PrintStream)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/System.html#setErr(java.io.PrintStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.PrintStream"/></param>
         public static void SetErr(Java.Io.PrintStream arg0)
@@ -265,7 +248,7 @@ namespace Java.Lang
             SExecuteWithSignature(LocalBridgeClazz, "setErr", "(Ljava/io/PrintStream;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/System.html#setIn(java.io.InputStream)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/System.html#setIn(java.io.InputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         public static void SetIn(Java.Io.InputStream arg0)
@@ -273,12 +256,28 @@ namespace Java.Lang
             SExecuteWithSignature(LocalBridgeClazz, "setIn", "(Ljava/io/InputStream;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/System.html#setOut(java.io.PrintStream)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/System.html#setOut(java.io.PrintStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.PrintStream"/></param>
         public static void SetOut(Java.Io.PrintStream arg0)
         {
             SExecuteWithSignature(LocalBridgeClazz, "setOut", "(Ljava/io/PrintStream;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/System.html#setProperties(java.util.Properties)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Properties"/></param>
+        public static void SetProperties(Java.Util.Properties arg0)
+        {
+            SExecuteWithSignature(LocalBridgeClazz, "setProperties", "(Ljava/util/Properties;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/System.html#setSecurityManager(java.lang.SecurityManager)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.SecurityManager"/></param>
+        public static void SetSecurityManager(Java.Lang.SecurityManager arg0)
+        {
+            SExecuteWithSignature(LocalBridgeClazz, "setSecurityManager", "(Ljava/lang/SecurityManager;)V", arg0);
         }
 
         #endregion

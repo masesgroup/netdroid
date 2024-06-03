@@ -70,48 +70,6 @@ namespace Android.Content.Pm
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/ShortcutManager.html#getDynamicShortcuts()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Content.Pm.ShortcutInfo> DynamicShortcuts
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Content.Pm.ShortcutInfo>>("getDynamicShortcuts", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/ShortcutManager.html#getIconMaxHeight()"/> 
-        /// </summary>
-        public int IconMaxHeight
-        {
-            get { return IExecuteWithSignature<int>("getIconMaxHeight", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/ShortcutManager.html#getIconMaxWidth()"/> 
-        /// </summary>
-        public int IconMaxWidth
-        {
-            get { return IExecuteWithSignature<int>("getIconMaxWidth", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/ShortcutManager.html#getManifestShortcuts()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Content.Pm.ShortcutInfo> ManifestShortcuts
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Content.Pm.ShortcutInfo>>("getManifestShortcuts", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/ShortcutManager.html#getMaxShortcutCountPerActivity()"/> 
-        /// </summary>
-        public int MaxShortcutCountPerActivity
-        {
-            get { return IExecuteWithSignature<int>("getMaxShortcutCountPerActivity", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/ShortcutManager.html#getPinnedShortcuts()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Content.Pm.ShortcutInfo> PinnedShortcuts
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Content.Pm.ShortcutInfo>>("getPinnedShortcuts", "()Ljava/util/List;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/ShortcutManager.html#createShortcutResultIntent(android.content.pm.ShortcutInfo)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Pm.ShortcutInfo"/></param>
@@ -172,6 +130,54 @@ namespace Android.Content.Pm
         public bool UpdateShortcuts(Java.Util.List<Android.Content.Pm.ShortcutInfo> arg0)
         {
             return IExecuteWithSignature<bool>("updateShortcuts", "(Ljava/util/List;)Z", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/ShortcutManager.html#getIconMaxHeight()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetIconMaxHeight()
+        {
+            return IExecuteWithSignature<int>("getIconMaxHeight", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/ShortcutManager.html#getIconMaxWidth()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetIconMaxWidth()
+        {
+            return IExecuteWithSignature<int>("getIconMaxWidth", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/ShortcutManager.html#getMaxShortcutCountPerActivity()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMaxShortcutCountPerActivity()
+        {
+            return IExecuteWithSignature<int>("getMaxShortcutCountPerActivity", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/ShortcutManager.html#getDynamicShortcuts()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Content.Pm.ShortcutInfo> GetDynamicShortcuts()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Content.Pm.ShortcutInfo>>("getDynamicShortcuts", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/ShortcutManager.html#getManifestShortcuts()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Content.Pm.ShortcutInfo> GetManifestShortcuts()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Content.Pm.ShortcutInfo>>("getManifestShortcuts", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/ShortcutManager.html#getPinnedShortcuts()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Content.Pm.ShortcutInfo> GetPinnedShortcuts()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Content.Pm.ShortcutInfo>>("getPinnedShortcuts", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/ShortcutManager.html#getShortcuts(int)"/>

@@ -62,7 +62,7 @@ namespace Org.Xml.Sax.Helpers
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/DefaultHandler.html#resolveEntity(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/DefaultHandler.html#resolveEntity(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -74,7 +74,7 @@ namespace Org.Xml.Sax.Helpers
             return IExecute<Org.Xml.Sax.InputSource>("resolveEntity", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/DefaultHandler.html#characters(char[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/DefaultHandler.html#characters(char[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -85,7 +85,7 @@ namespace Org.Xml.Sax.Helpers
             IExecute("characters", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/DefaultHandler.html#endDocument()"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/DefaultHandler.html#endDocument()"/>
         /// </summary>
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void EndDocument()
@@ -93,7 +93,7 @@ namespace Org.Xml.Sax.Helpers
             IExecuteWithSignature("endDocument", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/DefaultHandler.html#endElement(java.lang.String,java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/DefaultHandler.html#endElement(java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -104,7 +104,7 @@ namespace Org.Xml.Sax.Helpers
             IExecute("endElement", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/DefaultHandler.html#endPrefixMapping(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/DefaultHandler.html#endPrefixMapping(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Org.Xml.Sax.SAXException"/>
@@ -113,7 +113,7 @@ namespace Org.Xml.Sax.Helpers
             IExecuteWithSignature("endPrefixMapping", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/DefaultHandler.html#error(org.xml.sax.SAXParseException)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/DefaultHandler.html#error(org.xml.sax.SAXParseException)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.Xml.Sax.SAXParseException"/></param>
         /// <exception cref="Org.Xml.Sax.SAXException"/>
@@ -122,7 +122,7 @@ namespace Org.Xml.Sax.Helpers
             IExecuteWithSignature("error", "(Lorg/xml/sax/SAXParseException;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/DefaultHandler.html#fatalError(org.xml.sax.SAXParseException)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/DefaultHandler.html#fatalError(org.xml.sax.SAXParseException)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.Xml.Sax.SAXParseException"/></param>
         /// <exception cref="Org.Xml.Sax.SAXException"/>
@@ -131,7 +131,7 @@ namespace Org.Xml.Sax.Helpers
             IExecuteWithSignature("fatalError", "(Lorg/xml/sax/SAXParseException;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/DefaultHandler.html#ignorableWhitespace(char[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/DefaultHandler.html#ignorableWhitespace(char[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -142,7 +142,7 @@ namespace Org.Xml.Sax.Helpers
             IExecute("ignorableWhitespace", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/DefaultHandler.html#notationDecl(java.lang.String,java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/DefaultHandler.html#notationDecl(java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -153,7 +153,7 @@ namespace Org.Xml.Sax.Helpers
             IExecute("notationDecl", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/DefaultHandler.html#processingInstruction(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/DefaultHandler.html#processingInstruction(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -163,7 +163,7 @@ namespace Org.Xml.Sax.Helpers
             IExecute("processingInstruction", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/DefaultHandler.html#setDocumentLocator(org.xml.sax.Locator)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/DefaultHandler.html#setDocumentLocator(org.xml.sax.Locator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.Xml.Sax.Locator"/></param>
         public void SetDocumentLocator(Org.Xml.Sax.Locator arg0)
@@ -171,7 +171,7 @@ namespace Org.Xml.Sax.Helpers
             IExecuteWithSignature("setDocumentLocator", "(Lorg/xml/sax/Locator;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/DefaultHandler.html#skippedEntity(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/DefaultHandler.html#skippedEntity(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Org.Xml.Sax.SAXException"/>
@@ -180,7 +180,7 @@ namespace Org.Xml.Sax.Helpers
             IExecuteWithSignature("skippedEntity", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/DefaultHandler.html#startDocument()"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/DefaultHandler.html#startDocument()"/>
         /// </summary>
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public void StartDocument()
@@ -188,7 +188,7 @@ namespace Org.Xml.Sax.Helpers
             IExecuteWithSignature("startDocument", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/DefaultHandler.html#startElement(java.lang.String,java.lang.String,java.lang.String,org.xml.sax.Attributes)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/DefaultHandler.html#startElement(java.lang.String,java.lang.String,java.lang.String,org.xml.sax.Attributes)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -200,7 +200,7 @@ namespace Org.Xml.Sax.Helpers
             IExecute("startElement", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/DefaultHandler.html#startPrefixMapping(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/DefaultHandler.html#startPrefixMapping(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -210,7 +210,7 @@ namespace Org.Xml.Sax.Helpers
             IExecute("startPrefixMapping", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/DefaultHandler.html#unparsedEntityDecl(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/DefaultHandler.html#unparsedEntityDecl(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -222,7 +222,7 @@ namespace Org.Xml.Sax.Helpers
             IExecute("unparsedEntityDecl", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/DefaultHandler.html#warning(org.xml.sax.SAXParseException)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/DefaultHandler.html#warning(org.xml.sax.SAXParseException)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.Xml.Sax.SAXParseException"/></param>
         /// <exception cref="Org.Xml.Sax.SAXException"/>

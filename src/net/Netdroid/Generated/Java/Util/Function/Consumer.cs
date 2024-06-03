@@ -50,16 +50,16 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("accept", new System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(AcceptEventHandler));
-            AddEventHandler("andThen", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Consumer>>>(AndThenEventHandler));
+            AddEventHandler("accept", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(AcceptEventHandler));
+            AddEventHandler("andThen", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Consumer>>>(AndThenEventHandler));
 
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/Consumer.html#accept(java.lang.Object)"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/Consumer.html#accept(java.lang.Object)"/>
         /// </summary>
         /// <remarks>If <see cref="OnAccept"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<object> OnAccept { get; set; } = null;
+        public global::System.Action<object> OnAccept { get; set; } = null;
 
         void AcceptEventHandler(object sender, CLRListenerEventArgs<CLREventData<object>> data)
         {
@@ -68,7 +68,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/Consumer.html#accept(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/Consumer.html#accept(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         public virtual void Accept(object arg0)
@@ -76,7 +76,7 @@ namespace Java.Util.Function
             
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/Consumer.html#andThen(java.util.function.Consumer)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/Consumer.html#andThen(java.util.function.Consumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
         /// <returns><see cref="Java.Util.Function.Consumer"/></returns>
@@ -87,10 +87,10 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/Consumer.html#andThen(java.util.function.Consumer)"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/Consumer.html#andThen(java.util.function.Consumer)"/>
         /// </summary>
         /// <remarks>If <see cref="OnAndThen"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.Consumer, Java.Util.Function.Consumer> OnAndThen { get; set; } = null;
+        public global::System.Func<Java.Util.Function.Consumer, Java.Util.Function.Consumer> OnAndThen { get; set; } = null;
 
         void AndThenEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.Consumer>> data)
         {
@@ -100,7 +100,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/Consumer.html#andThen(java.util.function.Consumer)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/Consumer.html#andThen(java.util.function.Consumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
         /// <returns><see cref="Java.Util.Function.Consumer"/></returns>
@@ -141,7 +141,7 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/Consumer.html#accept(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/Consumer.html#accept(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         public override void Accept(object arg0)
@@ -149,7 +149,7 @@ namespace Java.Util.Function
             IExecuteWithSignature("accept", "(Ljava/lang/Object;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/Consumer.html#andThen(java.util.function.Consumer)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/Consumer.html#andThen(java.util.function.Consumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
         /// <returns><see cref="Java.Util.Function.Consumer"/></returns>
@@ -170,7 +170,7 @@ namespace Java.Util.Function
 
     #region IConsumer<T>
     /// <summary>
-    /// .NET interface for org.mases.netdroid.generated.java.util.function.Consumer implementing <see href="https://developer.android.com/reference/java.base/java/util/function/Consumer.html"/>
+    /// .NET interface for org.mases.netdroid.generated.java.util.function.Consumer implementing <see href="https://developer.android.com/reference/java/util/function/Consumer.html"/>
     /// </summary>
     public partial interface IConsumer<T>
     {
@@ -211,16 +211,16 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("accept", new System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(AcceptEventHandler));
-            AddEventHandler("andThen", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Consumer<Arg0objectSuperT>>>>(AndThen<Arg0objectSuperT>EventHandler));
+            AddEventHandler("accept", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(AcceptEventHandler));
+            AddEventHandler("andThen", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Consumer<Arg0objectSuperT>>>>(AndThen<Arg0objectSuperT>EventHandler));
 
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/Consumer.html#accept(java.lang.Object)"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/Consumer.html#accept(java.lang.Object)"/>
         /// </summary>
         /// <remarks>If <see cref="OnAccept"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<T> OnAccept { get; set; } = null;
+        public global::System.Action<T> OnAccept { get; set; } = null;
 
         void AcceptEventHandler(object sender, CLRListenerEventArgs<CLREventData<T>> data)
         {
@@ -229,7 +229,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/Consumer.html#accept(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/Consumer.html#accept(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         public virtual void Accept(T arg0)
@@ -237,22 +237,22 @@ namespace Java.Util.Function
             
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/Consumer.html#andThen(java.util.function.Consumer)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/Consumer.html#andThen(java.util.function.Consumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Function.Consumer"/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
-        public Java.Util.Function.Consumer<T> AndThen<Arg0objectSuperT>Default(Java.Util.Function.Consumer<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
+        public Java.Util.Function.Consumer<T> AndThen<Arg0objectSuperT>Default(Java.Util.Function.Consumer<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
             return IExecuteWithSignature<Java.Util.Function.Consumer<T>>("andThenDefault", "(Ljava/util/function/Consumer;)Ljava/util/function/Consumer;", arg0);
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/Consumer.html#andThen(java.util.function.Consumer)"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/Consumer.html#andThen(java.util.function.Consumer)"/>
         /// </summary>
         /// <remarks>If <see cref="OnAndThen<Arg0objectSuperT>"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.Consumer<Arg0objectSuperT>, Java.Util.Function.Consumer<T>> OnAndThen<Arg0objectSuperT> { get; set; } = null;
+        public global::System.Func<Java.Util.Function.Consumer<Arg0objectSuperT>, Java.Util.Function.Consumer<T>> OnAndThen<Arg0objectSuperT> { get; set; } = null;
 
         void AndThen<Arg0objectSuperT>EventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.Consumer<Arg0objectSuperT>>> data)
         {
@@ -262,13 +262,13 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/Consumer.html#andThen(java.util.function.Consumer)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/Consumer.html#andThen(java.util.function.Consumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Function.Consumer"/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="AndThen<Arg0objectSuperT>Default"/>; override the method to implement a different behavior</remarks>
-        public virtual Java.Util.Function.Consumer<T> AndThen<Arg0objectSuperT>(Java.Util.Function.Consumer<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
+        public virtual Java.Util.Function.Consumer<T> AndThen<Arg0objectSuperT>(Java.Util.Function.Consumer<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
             return AndThen<Arg0objectSuperT>Default(arg0);
         }
@@ -304,7 +304,7 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/Consumer.html#accept(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/Consumer.html#accept(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         public override void Accept(T arg0)
@@ -312,12 +312,12 @@ namespace Java.Util.Function
             IExecuteWithSignature("accept", "(Ljava/lang/Object;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/Consumer.html#andThen(java.util.function.Consumer)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/Consumer.html#andThen(java.util.function.Consumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Function.Consumer"/></returns>
-        public override Java.Util.Function.Consumer<T> AndThen<Arg0objectSuperT>(Java.Util.Function.Consumer<Arg0objectSuperT> arg0) where Arg0objectSuperT: T
+        public override Java.Util.Function.Consumer<T> AndThen<Arg0objectSuperT>(Java.Util.Function.Consumer<Arg0objectSuperT> arg0) where Arg0objectSuperT : T
         {
             return IExecuteWithSignature<Java.Util.Function.ConsumerDirect<T>, Java.Util.Function.Consumer<T>>("andThen", "(Ljava/util/function/Consumer;)Ljava/util/function/Consumer;", arg0);
         }

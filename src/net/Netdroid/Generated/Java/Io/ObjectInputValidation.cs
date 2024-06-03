@@ -64,7 +64,7 @@ namespace Java.Io
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectInputValidation.html#validateObject()"/>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectInputValidation.html#validateObject()"/>
         /// </summary>
         /// <exception cref="Java.Io.InvalidObjectException"/>
         public void ValidateObject()

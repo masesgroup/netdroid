@@ -160,48 +160,6 @@ namespace Android.Os
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/Environment.html#getDataDirectory()"/> 
-        /// </summary>
-        public static Java.Io.File DataDirectory
-        {
-            get { return SExecuteWithSignature<Java.Io.File>(LocalBridgeClazz, "getDataDirectory", "()Ljava/io/File;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/Environment.html#getDownloadCacheDirectory()"/> 
-        /// </summary>
-        public static Java.Io.File DownloadCacheDirectory
-        {
-            get { return SExecuteWithSignature<Java.Io.File>(LocalBridgeClazz, "getDownloadCacheDirectory", "()Ljava/io/File;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/Environment.html#getExternalStorageDirectory()"/> 
-        /// </summary>
-        public static Java.Io.File ExternalStorageDirectory
-        {
-            get { return SExecuteWithSignature<Java.Io.File>(LocalBridgeClazz, "getExternalStorageDirectory", "()Ljava/io/File;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/Environment.html#getExternalStorageState()"/> 
-        /// </summary>
-        public static Java.Lang.String ExternalStorageState
-        {
-            get { return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getExternalStorageState", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/Environment.html#getRootDirectory()"/> 
-        /// </summary>
-        public static Java.Io.File RootDirectory
-        {
-            get { return SExecuteWithSignature<Java.Io.File>(LocalBridgeClazz, "getRootDirectory", "()Ljava/io/File;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/Environment.html#getStorageDirectory()"/> 
-        /// </summary>
-        public static Java.Io.File StorageDirectory
-        {
-            get { return SExecuteWithSignature<Java.Io.File>(LocalBridgeClazz, "getStorageDirectory", "()Ljava/io/File;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Environment.html#isExternalStorageEmulated()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -270,6 +228,30 @@ namespace Android.Os
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isExternalStorageRemovable", "(Ljava/io/File;)Z", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Environment.html#getDataDirectory()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Io.File"/></returns>
+        public static Java.Io.File GetDataDirectory()
+        {
+            return SExecuteWithSignature<Java.Io.File>(LocalBridgeClazz, "getDataDirectory", "()Ljava/io/File;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Environment.html#getDownloadCacheDirectory()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Io.File"/></returns>
+        public static Java.Io.File GetDownloadCacheDirectory()
+        {
+            return SExecuteWithSignature<Java.Io.File>(LocalBridgeClazz, "getDownloadCacheDirectory", "()Ljava/io/File;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Environment.html#getExternalStorageDirectory()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Io.File"/></returns>
+        public static Java.Io.File GetExternalStorageDirectory()
+        {
+            return SExecuteWithSignature<Java.Io.File>(LocalBridgeClazz, "getExternalStorageDirectory", "()Ljava/io/File;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Environment.html#getExternalStoragePublicDirectory(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -277,6 +259,30 @@ namespace Android.Os
         public static Java.Io.File GetExternalStoragePublicDirectory(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<Java.Io.File>(LocalBridgeClazz, "getExternalStoragePublicDirectory", "(Ljava/lang/String;)Ljava/io/File;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Environment.html#getRootDirectory()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Io.File"/></returns>
+        public static Java.Io.File GetRootDirectory()
+        {
+            return SExecuteWithSignature<Java.Io.File>(LocalBridgeClazz, "getRootDirectory", "()Ljava/io/File;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Environment.html#getStorageDirectory()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Io.File"/></returns>
+        public static Java.Io.File GetStorageDirectory()
+        {
+            return SExecuteWithSignature<Java.Io.File>(LocalBridgeClazz, "getStorageDirectory", "()Ljava/io/File;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Environment.html#getExternalStorageState()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public static Java.Lang.String GetExternalStorageState()
+        {
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getExternalStorageState", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Environment.html#getExternalStorageState(java.io.File)"/>
@@ -292,7 +298,7 @@ namespace Android.Os
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String GetStorageState(Java.Io.File arg0)
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getStorageState", "(Ljava/io/File;)Ljava/lang/String;", arg0);

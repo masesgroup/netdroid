@@ -64,7 +64,7 @@ namespace Org.Xml.Sax
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/ErrorHandler.html#error(org.xml.sax.SAXParseException)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/ErrorHandler.html#error(org.xml.sax.SAXParseException)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.Xml.Sax.SAXParseException"/></param>
         /// <exception cref="Org.Xml.Sax.SAXException"/>
@@ -73,7 +73,7 @@ namespace Org.Xml.Sax
             IExecuteWithSignature("error", "(Lorg/xml/sax/SAXParseException;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/ErrorHandler.html#fatalError(org.xml.sax.SAXParseException)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/ErrorHandler.html#fatalError(org.xml.sax.SAXParseException)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.Xml.Sax.SAXParseException"/></param>
         /// <exception cref="Org.Xml.Sax.SAXException"/>
@@ -82,7 +82,7 @@ namespace Org.Xml.Sax
             IExecuteWithSignature("fatalError", "(Lorg/xml/sax/SAXParseException;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/ErrorHandler.html#warning(org.xml.sax.SAXParseException)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/ErrorHandler.html#warning(org.xml.sax.SAXParseException)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.Xml.Sax.SAXParseException"/></param>
         /// <exception cref="Org.Xml.Sax.SAXException"/>

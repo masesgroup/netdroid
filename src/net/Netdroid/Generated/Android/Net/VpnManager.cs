@@ -160,13 +160,6 @@ namespace Android.Net
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/VpnManager.html#getProvisionedVpnProfileState()"/> 
-        /// </summary>
-        public Android.Net.VpnProfileState ProvisionedVpnProfileState
-        {
-            get { return IExecuteWithSignature<Android.Net.VpnProfileState>("getProvisionedVpnProfileState", "()Landroid/net/VpnProfileState;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/VpnManager.html#provisionVpnProfile(android.net.PlatformVpnProfile)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Net.PlatformVpnProfile"/></param>
@@ -174,6 +167,14 @@ namespace Android.Net
         public Android.Content.Intent ProvisionVpnProfile(Android.Net.PlatformVpnProfile arg0)
         {
             return IExecuteWithSignature<Android.Content.Intent>("provisionVpnProfile", "(Landroid/net/PlatformVpnProfile;)Landroid/content/Intent;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/VpnManager.html#getProvisionedVpnProfileState()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Net.VpnProfileState"/></returns>
+        public Android.Net.VpnProfileState GetProvisionedVpnProfileState()
+        {
+            return IExecuteWithSignature<Android.Net.VpnProfileState>("getProvisionedVpnProfileState", "()Landroid/net/VpnProfileState;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/VpnManager.html#startProvisionedVpnProfileSession()"/>
@@ -193,7 +194,7 @@ namespace Android.Net
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/VpnManager.html#startProvisionedVpnProfile()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void StartProvisionedVpnProfile()
         {
             IExecuteWithSignature("startProvisionedVpnProfile", "()V");

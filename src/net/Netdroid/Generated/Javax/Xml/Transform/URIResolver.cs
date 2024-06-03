@@ -64,7 +64,7 @@ namespace Javax.Xml.Transform
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/URIResolver.html#resolve(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/URIResolver.html#resolve(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>

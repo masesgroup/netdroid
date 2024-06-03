@@ -46,7 +46,7 @@ namespace Java.Net
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/ContentHandler.html#getContent(java.net.URLConnection)"/>
+        /// <see href="https://developer.android.com/reference/java/net/ContentHandler.html#getContent(java.net.URLConnection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.URLConnection"/></param>
         /// <returns><see cref="object"/></returns>
@@ -56,7 +56,7 @@ namespace Java.Net
             return IExecuteWithSignature("getContent", "(Ljava/net/URLConnection;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/ContentHandler.html#getContent(java.net.URLConnection,java.lang.Class[])"/>
+        /// <see href="https://developer.android.com/reference/java/net/ContentHandler.html#getContent(java.net.URLConnection,java.lang.Class[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.URLConnection"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>

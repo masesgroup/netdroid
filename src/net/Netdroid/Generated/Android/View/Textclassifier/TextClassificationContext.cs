@@ -52,33 +52,36 @@ namespace Android.View.Textclassifier
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassificationContext.html#getPackageName()"/> 
-        /// </summary>
-        public Java.Lang.String PackageName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPackageName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassificationContext.html#getWidgetType()"/> 
-        /// </summary>
-        public Java.Lang.String WidgetType
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getWidgetType", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassificationContext.html#getWidgetVersion()"/> 
-        /// </summary>
-        public Java.Lang.String WidgetVersion
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getWidgetVersion", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassificationContext.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassificationContext.html#getPackageName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPackageName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPackageName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassificationContext.html#getWidgetType()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetWidgetType()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getWidgetType", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassificationContext.html#getWidgetVersion()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetWidgetVersion()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getWidgetVersion", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassificationContext.html#writeToParcel(android.os.Parcel,int)"/>

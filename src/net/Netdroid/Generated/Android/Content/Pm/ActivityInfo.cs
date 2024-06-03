@@ -540,18 +540,12 @@ namespace Android.Content.Pm
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/ActivityInfo.html#getKnownActivityEmbeddingCerts()"/> 
+        /// <see href="https://developer.android.com/reference/android/content/pm/ActivityInfo.html#getThemeResource()"/>
         /// </summary>
-        public Java.Util.Set<Java.Lang.String> KnownActivityEmbeddingCerts
+        /// <returns><see cref="int"/></returns>
+        public int GetThemeResource()
         {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getKnownActivityEmbeddingCerts", "()Ljava/util/Set;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/ActivityInfo.html#getThemeResource()"/> 
-        /// </summary>
-        public int ThemeResource
-        {
-            get { return IExecuteWithSignature<int>("getThemeResource", "()I"); }
+            return IExecuteWithSignature<int>("getThemeResource", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/ActivityInfo.html#describeContents()"/>
@@ -560,6 +554,14 @@ namespace Android.Content.Pm
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/ActivityInfo.html#getKnownActivityEmbeddingCerts()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Lang.String> GetKnownActivityEmbeddingCerts()
+        {
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getKnownActivityEmbeddingCerts", "()Ljava/util/Set;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/ActivityInfo.html#dump(android.util.Printer,java.lang.String)"/>

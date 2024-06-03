@@ -41,92 +41,39 @@ namespace Android.Text.Method
         #endregion
 
         #region Static methods
-        
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/text/method/MetaKeyKeyListener.html#isMetaTracker(java.lang.CharSequence,java.lang.Object)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnIsMetaTracker"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Lang.CharSequence, object, bool> OnIsMetaTracker { get; set; } = null;
-
-        void IsMetaTrackerEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.CharSequence>> data)
-        {
-            var methodToExecute = (OnIsMetaTracker != null) ? OnIsMetaTracker : IsMetaTracker;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<object>(0));
-            data.SetReturnValue(executionResult);
-        }
-
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/MetaKeyKeyListener.html#isMetaTracker(java.lang.CharSequence,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
-        public virtual bool IsMetaTracker(Java.Lang.CharSequence arg0, object arg1)
+        /// <remarks>The method invokes the static implementation in the JVM interface</remarks>
+        public static bool IsMetaTracker(Java.Lang.CharSequence arg0, object arg1)
         {
-            return default;
+            return SExecute<bool>(LocalBridgeClazz, "isMetaTracker", arg0, arg1);
         }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/text/method/MetaKeyKeyListener.html#isSelectingMetaTracker(java.lang.CharSequence,java.lang.Object)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnIsSelectingMetaTracker"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Lang.CharSequence, object, bool> OnIsSelectingMetaTracker { get; set; } = null;
-
-        void IsSelectingMetaTrackerEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.CharSequence>> data)
-        {
-            var methodToExecute = (OnIsSelectingMetaTracker != null) ? OnIsSelectingMetaTracker : IsSelectingMetaTracker;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<object>(0));
-            data.SetReturnValue(executionResult);
-        }
-
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/MetaKeyKeyListener.html#isSelectingMetaTracker(java.lang.CharSequence,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
-        public virtual bool IsSelectingMetaTracker(Java.Lang.CharSequence arg0, object arg1)
+        /// <remarks>The method invokes the static implementation in the JVM interface</remarks>
+        public static bool IsSelectingMetaTracker(Java.Lang.CharSequence arg0, object arg1)
         {
-            return default;
+            return SExecute<bool>(LocalBridgeClazz, "isSelectingMetaTracker", arg0, arg1);
         }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/text/method/MetaKeyKeyListener.html#getMetaState(java.lang.CharSequence,android.view.KeyEvent)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnGetMetaState"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Lang.CharSequence, Android.View.KeyEvent, int> OnGetMetaState { get; set; } = null;
-
-        void GetMetaStateEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.CharSequence>> data)
-        {
-            var methodToExecute = (OnGetMetaState != null) ? OnGetMetaState : GetMetaState;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Android.View.KeyEvent>(0));
-            data.SetReturnValue(executionResult);
-        }
-
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/MetaKeyKeyListener.html#getMetaState(java.lang.CharSequence,android.view.KeyEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <param name="arg1"><see cref="Android.View.KeyEvent"/></param>
         /// <returns><see cref="int"/></returns>
-        public virtual int GetMetaState(Java.Lang.CharSequence arg0, Android.View.KeyEvent arg1)
+        /// <remarks>The method invokes the static implementation in the JVM interface</remarks>
+        public static int GetMetaState(Java.Lang.CharSequence arg0, Android.View.KeyEvent arg1)
         {
-            return default;
+            return SExecute<int>(LocalBridgeClazz, "getMetaState", arg0, arg1);
         }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/text/method/MetaKeyKeyListener.html#getMetaState(java.lang.CharSequence,int,android.view.KeyEvent)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnGetMetaState3"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Lang.CharSequence, int, Android.View.KeyEvent, int> OnGetMetaState3 { get; set; } = null;
-
-        void GetMetaState3EventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.CharSequence>> data)
-        {
-            var methodToExecute = (OnGetMetaState3 != null) ? OnGetMetaState3 : GetMetaState;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<int>(0), data.EventData.GetAt<Android.View.KeyEvent>(1));
-            data.SetReturnValue(executionResult);
-        }
-
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/MetaKeyKeyListener.html#getMetaState(java.lang.CharSequence,int,android.view.KeyEvent)"/>
         /// </summary>
@@ -134,141 +81,63 @@ namespace Android.Text.Method
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Android.View.KeyEvent"/></param>
         /// <returns><see cref="int"/></returns>
-        public virtual int GetMetaState(Java.Lang.CharSequence arg0, int arg1, Android.View.KeyEvent arg2)
+        /// <remarks>The method invokes the static implementation in the JVM interface</remarks>
+        public static int GetMetaState(Java.Lang.CharSequence arg0, int arg1, Android.View.KeyEvent arg2)
         {
-            return default;
+            return SExecute<int>(LocalBridgeClazz, "getMetaState", arg0, arg1, arg2);
         }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/text/method/MetaKeyKeyListener.html#getMetaState(java.lang.CharSequence,int)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnGetMetaState2_2"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Lang.CharSequence, int, int> OnGetMetaState2_2 { get; set; } = null;
-
-        void GetMetaState2_2EventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.CharSequence>> data)
-        {
-            var methodToExecute = (OnGetMetaState2_2 != null) ? OnGetMetaState2_2 : GetMetaState;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<int>(0));
-            data.SetReturnValue(executionResult);
-        }
-
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/MetaKeyKeyListener.html#getMetaState(java.lang.CharSequence,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
-        public virtual int GetMetaState(Java.Lang.CharSequence arg0, int arg1)
+        /// <remarks>The method invokes the static implementation in the JVM interface</remarks>
+        public static int GetMetaState(Java.Lang.CharSequence arg0, int arg1)
         {
-            return default;
+            return SExecute<int>(LocalBridgeClazz, "getMetaState", arg0, arg1);
         }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/text/method/MetaKeyKeyListener.html#getMetaState(java.lang.CharSequence)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnGetMetaState1_3"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Lang.CharSequence, int> OnGetMetaState1_3 { get; set; } = null;
-
-        void GetMetaState1_3EventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.CharSequence>> data)
-        {
-            var methodToExecute = (OnGetMetaState1_3 != null) ? OnGetMetaState1_3 : GetMetaState;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
-            data.SetReturnValue(executionResult);
-        }
-
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/MetaKeyKeyListener.html#getMetaState(java.lang.CharSequence)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <returns><see cref="int"/></returns>
-        public virtual int GetMetaState(Java.Lang.CharSequence arg0)
+        /// <remarks>The method invokes the static implementation in the JVM interface</remarks>
+        public static int GetMetaState(Java.Lang.CharSequence arg0)
         {
-            return default;
+            return SExecute<int>(LocalBridgeClazz, "getMetaState", arg0);
         }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/text/method/MetaKeyKeyListener.html#getMetaState(long,int)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnGetMetaState2_4"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<long, int, int> OnGetMetaState2_4 { get; set; } = null;
-
-        void GetMetaState2_4EventHandler(object sender, CLRListenerEventArgs<CLREventData<long>> data)
-        {
-            var methodToExecute = (OnGetMetaState2_4 != null) ? OnGetMetaState2_4 : GetMetaState;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<int>(0));
-            data.SetReturnValue(executionResult);
-        }
-
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/MetaKeyKeyListener.html#getMetaState(long,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
-        public virtual int GetMetaState(long arg0, int arg1)
+        /// <remarks>The method invokes the static implementation in the JVM interface</remarks>
+        public static int GetMetaState(long arg0, int arg1)
         {
-            return default;
+            return SExecute<int>(LocalBridgeClazz, "getMetaState", arg0, arg1);
         }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/text/method/MetaKeyKeyListener.html#getMetaState(long)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnGetMetaState1_5"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<long, int> OnGetMetaState1_5 { get; set; } = null;
-
-        void GetMetaState1_5EventHandler(object sender, CLRListenerEventArgs<CLREventData<long>> data)
-        {
-            var methodToExecute = (OnGetMetaState1_5 != null) ? OnGetMetaState1_5 : GetMetaState;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
-            data.SetReturnValue(executionResult);
-        }
-
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/MetaKeyKeyListener.html#getMetaState(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="int"/></returns>
-        public virtual int GetMetaState(long arg0)
+        /// <remarks>The method invokes the static implementation in the JVM interface</remarks>
+        public static int GetMetaState(long arg0)
         {
-            return default;
+            return SExecute<int>(LocalBridgeClazz, "getMetaState", arg0);
         }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/text/method/MetaKeyKeyListener.html#adjustMetaAfterKeypress(long)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnAdjustMetaAfterKeypress"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<long, long> OnAdjustMetaAfterKeypress { get; set; } = null;
-
-        void AdjustMetaAfterKeypressEventHandler(object sender, CLRListenerEventArgs<CLREventData<long>> data)
-        {
-            var methodToExecute = (OnAdjustMetaAfterKeypress != null) ? OnAdjustMetaAfterKeypress : AdjustMetaAfterKeypress;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
-            data.SetReturnValue(executionResult);
-        }
-
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/MetaKeyKeyListener.html#adjustMetaAfterKeypress(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="long"/></returns>
-        public virtual long AdjustMetaAfterKeypress(long arg0)
+        /// <remarks>The method invokes the static implementation in the JVM interface</remarks>
+        public static long AdjustMetaAfterKeypress(long arg0)
         {
-            return default;
+            return SExecute<long>(LocalBridgeClazz, "adjustMetaAfterKeypress", arg0);
         }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/text/method/MetaKeyKeyListener.html#handleKeyDown(long,int,android.view.KeyEvent)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnHandleKeyDown"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<long, int, Android.View.KeyEvent, long> OnHandleKeyDown { get; set; } = null;
-
-        void HandleKeyDownEventHandler(object sender, CLRListenerEventArgs<CLREventData<long>> data)
-        {
-            var methodToExecute = (OnHandleKeyDown != null) ? OnHandleKeyDown : HandleKeyDown;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<int>(0), data.EventData.GetAt<Android.View.KeyEvent>(1));
-            data.SetReturnValue(executionResult);
-        }
-
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/MetaKeyKeyListener.html#handleKeyDown(long,int,android.view.KeyEvent)"/>
         /// </summary>
@@ -276,24 +145,11 @@ namespace Android.Text.Method
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Android.View.KeyEvent"/></param>
         /// <returns><see cref="long"/></returns>
-        public virtual long HandleKeyDown(long arg0, int arg1, Android.View.KeyEvent arg2)
+        /// <remarks>The method invokes the static implementation in the JVM interface</remarks>
+        public static long HandleKeyDown(long arg0, int arg1, Android.View.KeyEvent arg2)
         {
-            return default;
+            return SExecute<long>(LocalBridgeClazz, "handleKeyDown", arg0, arg1, arg2);
         }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/text/method/MetaKeyKeyListener.html#handleKeyUp(long,int,android.view.KeyEvent)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnHandleKeyUp"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<long, int, Android.View.KeyEvent, long> OnHandleKeyUp { get; set; } = null;
-
-        void HandleKeyUpEventHandler(object sender, CLRListenerEventArgs<CLREventData<long>> data)
-        {
-            var methodToExecute = (OnHandleKeyUp != null) ? OnHandleKeyUp : HandleKeyUp;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<int>(0), data.EventData.GetAt<Android.View.KeyEvent>(1));
-            data.SetReturnValue(executionResult);
-        }
-
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/MetaKeyKeyListener.html#handleKeyUp(long,int,android.view.KeyEvent)"/>
         /// </summary>
@@ -301,96 +157,48 @@ namespace Android.Text.Method
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Android.View.KeyEvent"/></param>
         /// <returns><see cref="long"/></returns>
-        public virtual long HandleKeyUp(long arg0, int arg1, Android.View.KeyEvent arg2)
+        /// <remarks>The method invokes the static implementation in the JVM interface</remarks>
+        public static long HandleKeyUp(long arg0, int arg1, Android.View.KeyEvent arg2)
         {
-            return default;
+            return SExecute<long>(LocalBridgeClazz, "handleKeyUp", arg0, arg1, arg2);
         }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/text/method/MetaKeyKeyListener.html#resetLockedMeta(long)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnResetLockedMeta"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<long, long> OnResetLockedMeta { get; set; } = null;
-
-        void ResetLockedMetaEventHandler(object sender, CLRListenerEventArgs<CLREventData<long>> data)
-        {
-            var methodToExecute = (OnResetLockedMeta != null) ? OnResetLockedMeta : ResetLockedMeta;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
-            data.SetReturnValue(executionResult);
-        }
-
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/MetaKeyKeyListener.html#resetLockedMeta(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="long"/></returns>
-        public virtual long ResetLockedMeta(long arg0)
+        /// <remarks>The method invokes the static implementation in the JVM interface</remarks>
+        public static long ResetLockedMeta(long arg0)
         {
-            return default;
+            return SExecute<long>(LocalBridgeClazz, "resetLockedMeta", arg0);
         }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/text/method/MetaKeyKeyListener.html#adjustMetaAfterKeypress(android.text.Spannable)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnAdjustMetaAfterKeypress1"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Android.Text.Spannable> OnAdjustMetaAfterKeypress1 { get; set; } = null;
-
-        void AdjustMetaAfterKeypress1EventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Text.Spannable>> data)
-        {
-            var methodToExecute = (OnAdjustMetaAfterKeypress1 != null) ? OnAdjustMetaAfterKeypress1 : AdjustMetaAfterKeypress;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
-        }
-
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/MetaKeyKeyListener.html#adjustMetaAfterKeypress(android.text.Spannable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Text.Spannable"/></param>
-        public virtual void AdjustMetaAfterKeypress(Android.Text.Spannable arg0)
+        /// <remarks>The method invokes the static implementation in the JVM interface</remarks>
+        public static void AdjustMetaAfterKeypress(Android.Text.Spannable arg0)
         {
-            
+            SExecute(LocalBridgeClazz, "adjustMetaAfterKeypress", arg0);
         }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/text/method/MetaKeyKeyListener.html#clearMetaKeyState(android.text.Editable,int)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnClearMetaKeyState"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Android.Text.Editable, int> OnClearMetaKeyState { get; set; } = null;
-
-        void ClearMetaKeyStateEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Text.Editable>> data)
-        {
-            var methodToExecute = (OnClearMetaKeyState != null) ? OnClearMetaKeyState : ClearMetaKeyState;
-            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<int>(0));
-        }
-
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/MetaKeyKeyListener.html#clearMetaKeyState(android.text.Editable,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Text.Editable"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        public virtual void ClearMetaKeyState(Android.Text.Editable arg0, int arg1)
+        /// <remarks>The method invokes the static implementation in the JVM interface</remarks>
+        public static void ClearMetaKeyState(Android.Text.Editable arg0, int arg1)
         {
-            
+            SExecute(LocalBridgeClazz, "clearMetaKeyState", arg0, arg1);
         }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/text/method/MetaKeyKeyListener.html#resetMetaState(android.text.Spannable)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnResetMetaState"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Android.Text.Spannable> OnResetMetaState { get; set; } = null;
-
-        void ResetMetaStateEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Text.Spannable>> data)
-        {
-            var methodToExecute = (OnResetMetaState != null) ? OnResetMetaState : ResetMetaState;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
-        }
-
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/MetaKeyKeyListener.html#resetMetaState(android.text.Spannable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Text.Spannable"/></param>
-        public virtual void ResetMetaState(Android.Text.Spannable arg0)
+        /// <remarks>The method invokes the static implementation in the JVM interface</remarks>
+        public static void ResetMetaState(Android.Text.Spannable arg0)
         {
-            
+            SExecute(LocalBridgeClazz, "resetMetaState", arg0);
         }
 
         #endregion
@@ -401,14 +209,14 @@ namespace Android.Text.Method
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("getInputType", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetInputTypeEventHandler));
-            AddEventHandler("backspace", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.View>>>(BackspaceEventHandler));
-            AddEventHandler("forwardDelete", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.View>>>(ForwardDeleteEventHandler));
-            AddEventHandler("onKeyOther", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.View>>>(OnKeyOtherEventHandler));
-            AddEventHandler("onKeyUp", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.View>>>(OnKeyUpEventHandler));
-            AddEventHandler("filter", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.CharSequence>>>(FilterEventHandler));
-            AddEventHandler("clearMetaKeyState", new System.EventHandler<CLRListenerEventArgs<CLREventData<long>>>(ClearMetaKeyStateEventHandler));
-            AddEventHandler("clearMetaKeyState3", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.View>>>(ClearMetaKeyState3EventHandler));
+            AddEventHandler("getInputType", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetInputTypeEventHandler));
+            AddEventHandler("backspace", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.View>>>(BackspaceEventHandler));
+            AddEventHandler("forwardDelete", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.View>>>(ForwardDeleteEventHandler));
+            AddEventHandler("onKeyOther", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.View>>>(OnKeyOtherEventHandler));
+            AddEventHandler("onKeyUp", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.View>>>(OnKeyUpEventHandler));
+            AddEventHandler("filter", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.CharSequence>>>(FilterEventHandler));
+            AddEventHandler("clearMetaKeyState", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<long>>>(ClearMetaKeyStateEventHandler));
+            AddEventHandler("clearMetaKeyState3", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.View>>>(ClearMetaKeyState3EventHandler));
 
         }
 
@@ -416,7 +224,7 @@ namespace Android.Text.Method
         /// Handler for <see href="https://developer.android.com/reference/android/text/method/KeyListener.html#getInputType()"/>
         /// </summary>
         /// <remarks>If <see cref="OnGetInputType"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<int> OnGetInputType { get; set; } = null;
+        public global::System.Func<int> OnGetInputType { get; set; } = null;
 
         void GetInputTypeEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
@@ -438,7 +246,7 @@ namespace Android.Text.Method
         /// Handler for <see href="https://developer.android.com/reference/android/text/method/BaseKeyListener.html#backspace(android.view.View,android.text.Editable,int,android.view.KeyEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnBackspace"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Android.View.View, Android.Text.Editable, int, Android.View.KeyEvent, bool> OnBackspace { get; set; } = null;
+        public global::System.Func<Android.View.View, Android.Text.Editable, int, Android.View.KeyEvent, bool> OnBackspace { get; set; } = null;
 
         void BackspaceEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.View>> data)
         {
@@ -464,7 +272,7 @@ namespace Android.Text.Method
         /// Handler for <see href="https://developer.android.com/reference/android/text/method/BaseKeyListener.html#forwardDelete(android.view.View,android.text.Editable,int,android.view.KeyEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnForwardDelete"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Android.View.View, Android.Text.Editable, int, Android.View.KeyEvent, bool> OnForwardDelete { get; set; } = null;
+        public global::System.Func<Android.View.View, Android.Text.Editable, int, Android.View.KeyEvent, bool> OnForwardDelete { get; set; } = null;
 
         void ForwardDeleteEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.View>> data)
         {
@@ -490,7 +298,7 @@ namespace Android.Text.Method
         /// Handler for <see href="https://developer.android.com/reference/android/text/method/BaseKeyListener.html#onKeyOther(android.view.View,android.text.Editable,android.view.KeyEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnKeyOther"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Android.View.View, Android.Text.Editable, Android.View.KeyEvent, bool> OnOnKeyOther { get; set; } = null;
+        public global::System.Func<Android.View.View, Android.Text.Editable, Android.View.KeyEvent, bool> OnOnKeyOther { get; set; } = null;
 
         void OnKeyOtherEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.View>> data)
         {
@@ -515,7 +323,7 @@ namespace Android.Text.Method
         /// Handler for <see href="https://developer.android.com/reference/android/text/method/MetaKeyKeyListener.html#onKeyUp(android.view.View,android.text.Editable,int,android.view.KeyEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnKeyUp"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Android.View.View, Android.Text.Editable, int, Android.View.KeyEvent, bool> OnOnKeyUp { get; set; } = null;
+        public global::System.Func<Android.View.View, Android.Text.Editable, int, Android.View.KeyEvent, bool> OnOnKeyUp { get; set; } = null;
 
         void OnKeyUpEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.View>> data)
         {
@@ -541,7 +349,7 @@ namespace Android.Text.Method
         /// Handler for <see href="https://developer.android.com/reference/android/text/method/NumberKeyListener.html#filter(java.lang.CharSequence,int,int,android.text.Spanned,int,int)"/>
         /// </summary>
         /// <remarks>If <see cref="OnFilter"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Lang.CharSequence, int, int, Android.Text.Spanned, int, int, Java.Lang.CharSequence> OnFilter { get; set; } = null;
+        public global::System.Func<Java.Lang.CharSequence, int, int, Android.Text.Spanned, int, int, Java.Lang.CharSequence> OnFilter { get; set; } = null;
 
         void FilterEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.CharSequence>> data)
         {
@@ -569,7 +377,7 @@ namespace Android.Text.Method
         /// Handler for <see href="https://developer.android.com/reference/android/text/method/MetaKeyKeyListener.html#clearMetaKeyState(long,int)"/>
         /// </summary>
         /// <remarks>If <see cref="OnClearMetaKeyState"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<long, int, long> OnClearMetaKeyState { get; set; } = null;
+        public global::System.Func<long, int, long> OnClearMetaKeyState { get; set; } = null;
 
         void ClearMetaKeyStateEventHandler(object sender, CLRListenerEventArgs<CLREventData<long>> data)
         {
@@ -593,7 +401,7 @@ namespace Android.Text.Method
         /// Handler for <see href="https://developer.android.com/reference/android/text/method/MetaKeyKeyListener.html#clearMetaKeyState(android.view.View,android.text.Editable,int)"/>
         /// </summary>
         /// <remarks>If <see cref="OnClearMetaKeyState3"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Android.View.View, Android.Text.Editable, int> OnClearMetaKeyState3 { get; set; } = null;
+        public global::System.Action<Android.View.View, Android.Text.Editable, int> OnClearMetaKeyState3 { get; set; } = null;
 
         void ClearMetaKeyState3EventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.View>> data)
         {
@@ -643,11 +451,12 @@ namespace Android.Text.Method
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/method/KeyListener.html#getInputType()"/> 
+        /// <see href="https://developer.android.com/reference/android/text/method/KeyListener.html#getInputType()"/>
         /// </summary>
-        public int InputType
+        /// <returns><see cref="int"/></returns>
+        public override int GetInputType()
         {
-            get { return IExecute<int>("getInputType"); }
+            return IExecute<int>("getInputType");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/method/BaseKeyListener.html#backspace(android.view.View,android.text.Editable,int,android.view.KeyEvent)"/>

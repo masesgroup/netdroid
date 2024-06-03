@@ -46,18 +46,20 @@ namespace Android.Hardware.Camera2.Params
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/Capability.html#getMaxStreamingSize()"/> 
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/Capability.html#getMaxStreamingSize()"/>
         /// </summary>
-        public Android.Util.Size MaxStreamingSize
+        /// <returns><see cref="Android.Util.Size"/></returns>
+        public Android.Util.Size GetMaxStreamingSize()
         {
-            get { return IExecuteWithSignature<Android.Util.Size>("getMaxStreamingSize", "()Landroid/util/Size;"); }
+            return IExecuteWithSignature<Android.Util.Size>("getMaxStreamingSize", "()Landroid/util/Size;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/Capability.html#getMode()"/> 
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/Capability.html#getMode()"/>
         /// </summary>
-        public int Mode
+        /// <returns><see cref="int"/></returns>
+        public int GetMode()
         {
-            get { return IExecuteWithSignature<int>("getMode", "()I"); }
+            return IExecuteWithSignature<int>("getMode", "()I");
         }
 
         #endregion

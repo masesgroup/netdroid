@@ -71,18 +71,20 @@ namespace Android.Content.Pm
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/PathPermission.html#getReadPermission()"/> 
+        /// <see href="https://developer.android.com/reference/android/content/pm/PathPermission.html#getReadPermission()"/>
         /// </summary>
-        public Java.Lang.String ReadPermission
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetReadPermission()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getReadPermission", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getReadPermission", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/PathPermission.html#getWritePermission()"/> 
+        /// <see href="https://developer.android.com/reference/android/content/pm/PathPermission.html#getWritePermission()"/>
         /// </summary>
-        public Java.Lang.String WritePermission
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetWritePermission()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getWritePermission", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getWritePermission", "()Ljava/lang/String;");
         }
 
         #endregion

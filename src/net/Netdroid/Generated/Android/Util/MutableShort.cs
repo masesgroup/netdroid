@@ -33,7 +33,7 @@ namespace Android.Util
         /// <see href="https://developer.android.com/reference/android/util/MutableShort.html#%3Cinit%3E(short)"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public MutableShort(short arg0)
             : base(arg0)
         {
@@ -49,7 +49,7 @@ namespace Android.Util
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/MutableShort.html#value"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public short value { get { return IGetField<short>("value"); } set { ISetField("value", value); } }
 
         #endregion

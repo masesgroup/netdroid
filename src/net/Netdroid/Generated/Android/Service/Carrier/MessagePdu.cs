@@ -60,19 +60,20 @@ namespace Android.Service.Carrier
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/carrier/MessagePdu.html#getPdus()"/> 
-        /// </summary>
-        public Java.Util.List<byte[]> Pdus
-        {
-            get { return IExecuteWithSignature<Java.Util.List<byte[]>>("getPdus", "()Ljava/util/List;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/carrier/MessagePdu.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/carrier/MessagePdu.html#getPdus()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<byte[]> GetPdus()
+        {
+            return IExecuteWithSignature<Java.Util.List<byte[]>>("getPdus", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/carrier/MessagePdu.html#writeToParcel(android.os.Parcel,int)"/>

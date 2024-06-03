@@ -55,19 +55,20 @@ namespace Android.Service.Controls.Templates
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/controls/templates/ToggleTemplate.html#getContentDescription()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence ContentDescription
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getContentDescription", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/controls/templates/ToggleTemplate.html#isChecked()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsChecked()
         {
             return IExecuteWithSignature<bool>("isChecked", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/controls/templates/ToggleTemplate.html#getContentDescription()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetContentDescription()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getContentDescription", "()Ljava/lang/CharSequence;");
         }
 
         #endregion

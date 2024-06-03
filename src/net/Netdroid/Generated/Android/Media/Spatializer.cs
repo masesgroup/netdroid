@@ -64,13 +64,6 @@ namespace Android.Media
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/Spatializer.html#getImmersiveAudioLevel()"/> 
-        /// </summary>
-        public int ImmersiveAudioLevel
-        {
-            get { return IExecuteWithSignature<int>("getImmersiveAudioLevel", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/Spatializer.html#canBeSpatialized(android.media.AudioAttributes,android.media.AudioFormat)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Media.AudioAttributes"/></param>
@@ -103,6 +96,14 @@ namespace Android.Media
         public bool IsHeadTrackerAvailable()
         {
             return IExecuteWithSignature<bool>("isHeadTrackerAvailable", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/Spatializer.html#getImmersiveAudioLevel()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetImmersiveAudioLevel()
+        {
+            return IExecuteWithSignature<int>("getImmersiveAudioLevel", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/Spatializer.html#addOnHeadTrackerAvailableListener(java.util.concurrent.Executor,android.media.Spatializer.OnHeadTrackerAvailableListener)"/>
@@ -167,7 +168,7 @@ namespace Android.Media
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onHeadTrackerAvailableChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.Spatializer>>>(OnHeadTrackerAvailableChangedEventHandler));
+                AddEventHandler("onHeadTrackerAvailableChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.Spatializer>>>(OnHeadTrackerAvailableChangedEventHandler));
 
             }
 
@@ -175,7 +176,7 @@ namespace Android.Media
             /// Handler for <see href="https://developer.android.com/reference/android/media/Spatializer.OnHeadTrackerAvailableListener.html#onHeadTrackerAvailableChanged(android.media.Spatializer,boolean)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnHeadTrackerAvailableChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Media.Spatializer, bool> OnOnHeadTrackerAvailableChanged { get; set; } = null;
+            public global::System.Action<Android.Media.Spatializer, bool> OnOnHeadTrackerAvailableChanged { get; set; } = null;
 
             void OnHeadTrackerAvailableChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Media.Spatializer>> data)
             {
@@ -268,8 +269,8 @@ namespace Android.Media
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onSpatializerAvailableChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.Spatializer>>>(OnSpatializerAvailableChangedEventHandler));
-                AddEventHandler("onSpatializerEnabledChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.Spatializer>>>(OnSpatializerEnabledChangedEventHandler));
+                AddEventHandler("onSpatializerAvailableChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.Spatializer>>>(OnSpatializerAvailableChangedEventHandler));
+                AddEventHandler("onSpatializerEnabledChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.Spatializer>>>(OnSpatializerEnabledChangedEventHandler));
 
             }
 
@@ -277,7 +278,7 @@ namespace Android.Media
             /// Handler for <see href="https://developer.android.com/reference/android/media/Spatializer.OnSpatializerStateChangedListener.html#onSpatializerAvailableChanged(android.media.Spatializer,boolean)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnSpatializerAvailableChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Media.Spatializer, bool> OnOnSpatializerAvailableChanged { get; set; } = null;
+            public global::System.Action<Android.Media.Spatializer, bool> OnOnSpatializerAvailableChanged { get; set; } = null;
 
             void OnSpatializerAvailableChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Media.Spatializer>> data)
             {
@@ -299,7 +300,7 @@ namespace Android.Media
             /// Handler for <see href="https://developer.android.com/reference/android/media/Spatializer.OnSpatializerStateChangedListener.html#onSpatializerEnabledChanged(android.media.Spatializer,boolean)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnSpatializerEnabledChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Media.Spatializer, bool> OnOnSpatializerEnabledChanged { get; set; } = null;
+            public global::System.Action<Android.Media.Spatializer, bool> OnOnSpatializerEnabledChanged { get; set; } = null;
 
             void OnSpatializerEnabledChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Media.Spatializer>> data)
             {

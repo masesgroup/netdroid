@@ -64,11 +64,12 @@ namespace Android.Health.Connect.Datatypes
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/RestingHeartRateRecord.html#getBeatsPerMinute()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/RestingHeartRateRecord.html#getBeatsPerMinute()"/>
         /// </summary>
-        public long BeatsPerMinute
+        /// <returns><see cref="long"/></returns>
+        public long GetBeatsPerMinute()
         {
-            get { return IExecuteWithSignature<long>("getBeatsPerMinute", "()J"); }
+            return IExecuteWithSignature<long>("getBeatsPerMinute", "()J");
         }
 
         #endregion

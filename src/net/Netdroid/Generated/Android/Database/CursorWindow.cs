@@ -33,7 +33,7 @@ namespace Android.Database
         /// <see href="https://developer.android.com/reference/android/database/CursorWindow.html#%3Cinit%3E(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public CursorWindow(bool arg0)
             : base(arg0)
         {
@@ -91,20 +91,6 @@ namespace Android.Database
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/database/CursorWindow.html#getNumRows()"/> 
-        /// </summary>
-        public int NumRows
-        {
-            get { return IExecuteWithSignature<int>("getNumRows", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/database/CursorWindow.html#getStartPosition()"/> <see href="https://developer.android.com/reference/android/database/CursorWindow.html#setStartPosition(int)"/>
-        /// </summary>
-        public int StartPosition
-        {
-            get { return IExecuteWithSignature<int>("getStartPosition", "()I"); } set { IExecuteWithSignature("setStartPosition", "(I)V", value); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/CursorWindow.html#allocRow()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -118,7 +104,7 @@ namespace Android.Database
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsBlob(int arg0, int arg1)
         {
             return IExecute<bool>("isBlob", arg0, arg1);
@@ -129,7 +115,7 @@ namespace Android.Database
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsFloat(int arg0, int arg1)
         {
             return IExecute<bool>("isFloat", arg0, arg1);
@@ -140,7 +126,7 @@ namespace Android.Database
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsLong(int arg0, int arg1)
         {
             return IExecute<bool>("isLong", arg0, arg1);
@@ -151,7 +137,7 @@ namespace Android.Database
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsNull(int arg0, int arg1)
         {
             return IExecute<bool>("isNull", arg0, arg1);
@@ -162,7 +148,7 @@ namespace Android.Database
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsString(int arg0, int arg1)
         {
             return IExecute<bool>("isString", arg0, arg1);
@@ -279,6 +265,22 @@ namespace Android.Database
             return IExecute<int>("getInt", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/database/CursorWindow.html#getNumRows()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetNumRows()
+        {
+            return IExecuteWithSignature<int>("getNumRows", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/database/CursorWindow.html#getStartPosition()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetStartPosition()
+        {
+            return IExecuteWithSignature<int>("getStartPosition", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/CursorWindow.html#getType(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -341,6 +343,14 @@ namespace Android.Database
         public void FreeLastRow()
         {
             IExecuteWithSignature("freeLastRow", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/database/CursorWindow.html#setStartPosition(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetStartPosition(int arg0)
+        {
+            IExecuteWithSignature("setStartPosition", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/CursorWindow.html#writeToParcel(android.os.Parcel,int)"/>

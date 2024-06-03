@@ -36,7 +36,7 @@ namespace Android.Preference
         /// <param name="arg1"><see cref="Android.Util.AttributeSet"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public PreferenceCategory(Android.Content.Context arg0, Android.Util.AttributeSet arg1, int arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -47,7 +47,7 @@ namespace Android.Preference
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
         /// <param name="arg1"><see cref="Android.Util.AttributeSet"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public PreferenceCategory(Android.Content.Context arg0, Android.Util.AttributeSet arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
@@ -57,7 +57,7 @@ namespace Android.Preference
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
         /// <param name="arg1"><see cref="Android.Util.AttributeSet"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public PreferenceCategory(Android.Content.Context arg0, Android.Util.AttributeSet arg1)
             : base(arg0, arg1)
         {
@@ -66,7 +66,7 @@ namespace Android.Preference
         /// <see href="https://developer.android.com/reference/android/preference/PreferenceCategory.html#%3Cinit%3E(android.content.Context)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public PreferenceCategory(Android.Content.Context arg0)
             : base(arg0)
         {

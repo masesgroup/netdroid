@@ -37,6 +37,12 @@ namespace Android.Print
         #endregion
 
         #region Fields
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/print/PrintDocumentAdapter.html#EXTRA_PRINT_PREVIEW"/>
+        /// </summary>
+        public static Java.Lang.String EXTRA_PRINT_PREVIEW { get { if (!_EXTRA_PRINT_PREVIEWReady) { _EXTRA_PRINT_PREVIEWContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_PRINT_PREVIEW"); _EXTRA_PRINT_PREVIEWReady = true; } return _EXTRA_PRINT_PREVIEWContent; } }
+        private static Java.Lang.String _EXTRA_PRINT_PREVIEWContent = default;
+        private static bool _EXTRA_PRINT_PREVIEWReady = false; // this is used because in case of generics 
 
         #endregion
 
@@ -46,30 +52,6 @@ namespace Android.Print
 
         #region Instance methods
         /// <summary>
-        /// Handlers initializer for <see cref="PrintDocumentAdapter"/>
-        /// </summary>
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("onLayout", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Print.PrintAttributes>>>(OnLayoutEventHandler));
-            AddEventHandler("onWrite", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Print.PageRange[]>>>(OnWriteEventHandler));
-            AddEventHandler("onFinish", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnFinishEventHandler));
-            AddEventHandler("onStart", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnStartEventHandler));
-
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/print/PrintDocumentAdapter.html#onLayout(android.print.PrintAttributes,android.print.PrintAttributes,android.os.CancellationSignal,android.print.PrintDocumentAdapter.LayoutResultCallback,android.os.Bundle)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnOnLayout"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Android.Print.PrintAttributes, Android.Print.PrintAttributes, Android.Os.CancellationSignal, Android.Print.PrintDocumentAdapter.LayoutResultCallback, Android.Os.Bundle> OnOnLayout { get; set; } = null;
-
-        void OnLayoutEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Print.PrintAttributes>> data)
-        {
-            var methodToExecute = (OnOnLayout != null) ? OnOnLayout : OnLayout;
-            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Android.Print.PrintAttributes>(0), data.EventData.GetAt<Android.Os.CancellationSignal>(1), data.EventData.GetAt<Android.Print.PrintDocumentAdapter.LayoutResultCallback>(2), data.EventData.GetAt<Android.Os.Bundle>(3));
-        }
-
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/print/PrintDocumentAdapter.html#onLayout(android.print.PrintAttributes,android.print.PrintAttributes,android.os.CancellationSignal,android.print.PrintDocumentAdapter.LayoutResultCallback,android.os.Bundle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Print.PrintAttributes"/></param>
@@ -77,23 +59,10 @@ namespace Android.Print
         /// <param name="arg2"><see cref="Android.Os.CancellationSignal"/></param>
         /// <param name="arg3"><see cref="Android.Print.PrintDocumentAdapter.LayoutResultCallback"/></param>
         /// <param name="arg4"><see cref="Android.Os.Bundle"/></param>
-        public virtual void OnLayout(Android.Print.PrintAttributes arg0, Android.Print.PrintAttributes arg1, Android.Os.CancellationSignal arg2, Android.Print.PrintDocumentAdapter.LayoutResultCallback arg3, Android.Os.Bundle arg4)
+        public void OnLayout(Android.Print.PrintAttributes arg0, Android.Print.PrintAttributes arg1, Android.Os.CancellationSignal arg2, Android.Print.PrintDocumentAdapter.LayoutResultCallback arg3, Android.Os.Bundle arg4)
         {
-            
+            IExecute("onLayout", arg0, arg1, arg2, arg3, arg4);
         }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/print/PrintDocumentAdapter.html#onWrite(android.print.PageRange[],android.os.ParcelFileDescriptor,android.os.CancellationSignal,android.print.PrintDocumentAdapter.WriteResultCallback)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnOnWrite"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Android.Print.PageRange[], Android.Os.ParcelFileDescriptor, Android.Os.CancellationSignal, Android.Print.PrintDocumentAdapter.WriteResultCallback> OnOnWrite { get; set; } = null;
-
-        void OnWriteEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Print.PageRange[]>> data)
-        {
-            var methodToExecute = (OnOnWrite != null) ? OnOnWrite : OnWrite;
-            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Android.Os.ParcelFileDescriptor>(0), data.EventData.GetAt<Android.Os.CancellationSignal>(1), data.EventData.GetAt<Android.Print.PrintDocumentAdapter.WriteResultCallback>(2));
-        }
-
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/print/PrintDocumentAdapter.html#onWrite(android.print.PageRange[],android.os.ParcelFileDescriptor,android.os.CancellationSignal,android.print.PrintDocumentAdapter.WriteResultCallback)"/>
         /// </summary>
@@ -101,49 +70,23 @@ namespace Android.Print
         /// <param name="arg1"><see cref="Android.Os.ParcelFileDescriptor"/></param>
         /// <param name="arg2"><see cref="Android.Os.CancellationSignal"/></param>
         /// <param name="arg3"><see cref="Android.Print.PrintDocumentAdapter.WriteResultCallback"/></param>
-        public virtual void OnWrite(Android.Print.PageRange[] arg0, Android.Os.ParcelFileDescriptor arg1, Android.Os.CancellationSignal arg2, Android.Print.PrintDocumentAdapter.WriteResultCallback arg3)
+        public void OnWrite(Android.Print.PageRange[] arg0, Android.Os.ParcelFileDescriptor arg1, Android.Os.CancellationSignal arg2, Android.Print.PrintDocumentAdapter.WriteResultCallback arg3)
         {
-            
+            IExecute("onWrite", arg0, arg1, arg2, arg3);
         }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/print/PrintDocumentAdapter.html#onFinish()"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnOnFinish"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action OnOnFinish { get; set; } = null;
-
-        void OnFinishEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
-        {
-            var methodToExecute = (OnOnFinish != null) ? OnOnFinish : OnFinish;
-            methodToExecute.Invoke();
-        }
-
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/print/PrintDocumentAdapter.html#onFinish()"/>
         /// </summary>
-        public virtual void OnFinish()
+        public void OnFinish()
         {
-            
+            IExecuteWithSignature("onFinish", "()V");
         }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/print/PrintDocumentAdapter.html#onStart()"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnOnStart"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action OnOnStart { get; set; } = null;
-
-        void OnStartEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
-        {
-            var methodToExecute = (OnOnStart != null) ? OnOnStart : OnStart;
-            methodToExecute.Invoke();
-        }
-
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/print/PrintDocumentAdapter.html#onStart()"/>
         /// </summary>
-        public virtual void OnStart()
+        public void OnStart()
         {
-            
+            IExecuteWithSignature("onStart", "()V");
         }
 
         #endregion
@@ -259,74 +202,6 @@ namespace Android.Print
         #endregion
 
     
-        #endregion
-
-        // TODO: complete the class
-    }
-    #endregion
-
-    #region PrintDocumentAdapterDirect
-    public partial class PrintDocumentAdapterDirect
-    {
-        #region Constructors
-
-        #endregion
-
-        #region Class/Interface conversion operators
-
-        #endregion
-
-        #region Fields
-
-        #endregion
-
-        #region Static methods
-
-        #endregion
-
-        #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/print/PrintDocumentAdapter.html#onLayout(android.print.PrintAttributes,android.print.PrintAttributes,android.os.CancellationSignal,android.print.PrintDocumentAdapter.LayoutResultCallback,android.os.Bundle)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Print.PrintAttributes"/></param>
-        /// <param name="arg1"><see cref="Android.Print.PrintAttributes"/></param>
-        /// <param name="arg2"><see cref="Android.Os.CancellationSignal"/></param>
-        /// <param name="arg3"><see cref="Android.Print.PrintDocumentAdapter.LayoutResultCallback"/></param>
-        /// <param name="arg4"><see cref="Android.Os.Bundle"/></param>
-        public override void OnLayout(Android.Print.PrintAttributes arg0, Android.Print.PrintAttributes arg1, Android.Os.CancellationSignal arg2, Android.Print.PrintDocumentAdapter.LayoutResultCallback arg3, Android.Os.Bundle arg4)
-        {
-            IExecute("onLayout", arg0, arg1, arg2, arg3, arg4);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/print/PrintDocumentAdapter.html#onWrite(android.print.PageRange[],android.os.ParcelFileDescriptor,android.os.CancellationSignal,android.print.PrintDocumentAdapter.WriteResultCallback)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Print.PageRange"/></param>
-        /// <param name="arg1"><see cref="Android.Os.ParcelFileDescriptor"/></param>
-        /// <param name="arg2"><see cref="Android.Os.CancellationSignal"/></param>
-        /// <param name="arg3"><see cref="Android.Print.PrintDocumentAdapter.WriteResultCallback"/></param>
-        public override void OnWrite(Android.Print.PageRange[] arg0, Android.Os.ParcelFileDescriptor arg1, Android.Os.CancellationSignal arg2, Android.Print.PrintDocumentAdapter.WriteResultCallback arg3)
-        {
-            IExecute("onWrite", arg0, arg1, arg2, arg3);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/print/PrintDocumentAdapter.html#onFinish()"/>
-        /// </summary>
-        public override void OnFinish()
-        {
-            IExecuteWithSignature("onFinish", "()V");
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/print/PrintDocumentAdapter.html#onStart()"/>
-        /// </summary>
-        public override void OnStart()
-        {
-            IExecuteWithSignature("onStart", "()V");
-        }
-
-        #endregion
-
-        #region Nested classes
-
         #endregion
 
         // TODO: complete the class

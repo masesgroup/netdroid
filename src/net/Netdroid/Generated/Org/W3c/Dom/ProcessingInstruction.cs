@@ -64,18 +64,29 @@ namespace Org.W3c.Dom
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ProcessingInstruction.html#getData()"/> <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ProcessingInstruction.html#setData(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/ProcessingInstruction.html#getData()"/>
         /// </summary>
-        public Java.Lang.String Data
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetData()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getData", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setData", "(Ljava/lang/String;)V", value); }
+            return IExecuteWithSignature<Java.Lang.String>("getData", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ProcessingInstruction.html#getTarget()"/> 
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/ProcessingInstruction.html#getTarget()"/>
         /// </summary>
-        public Java.Lang.String Target
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetTarget()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getTarget", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getTarget", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/ProcessingInstruction.html#setData(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <exception cref="Org.W3c.Dom.DOMException"/>
+        public void SetData(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setData", "(Ljava/lang/String;)V", arg0);
         }
 
         #endregion

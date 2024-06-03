@@ -36,7 +36,7 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="Android.Util.AttributeSet"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public TwoLineListItem(Android.Content.Context arg0, Android.Util.AttributeSet arg1, int arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -47,7 +47,7 @@ namespace Android.Widget
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
         /// <param name="arg1"><see cref="Android.Util.AttributeSet"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public TwoLineListItem(Android.Content.Context arg0, Android.Util.AttributeSet arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
@@ -57,7 +57,7 @@ namespace Android.Widget
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
         /// <param name="arg1"><see cref="Android.Util.AttributeSet"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public TwoLineListItem(Android.Content.Context arg0, Android.Util.AttributeSet arg1)
             : base(arg0, arg1)
         {
@@ -66,7 +66,7 @@ namespace Android.Widget
         /// <see href="https://developer.android.com/reference/android/widget/TwoLineListItem.html#%3Cinit%3E(android.content.Context)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public TwoLineListItem(Android.Content.Context arg0)
             : base(arg0)
         {
@@ -88,20 +88,22 @@ namespace Android.Widget
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TwoLineListItem.html#getText1()"/> 
+        /// <see href="https://developer.android.com/reference/android/widget/TwoLineListItem.html#getText1()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Widget.TextView Text1
+        /// <returns><see cref="Android.Widget.TextView"/></returns>
+        [global::System.Obsolete()]
+        public Android.Widget.TextView GetText1()
         {
-            get { return IExecuteWithSignature<Android.Widget.TextView>("getText1", "()Landroid/widget/TextView;"); }
+            return IExecuteWithSignature<Android.Widget.TextView>("getText1", "()Landroid/widget/TextView;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TwoLineListItem.html#getText2()"/> 
+        /// <see href="https://developer.android.com/reference/android/widget/TwoLineListItem.html#getText2()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Widget.TextView Text2
+        /// <returns><see cref="Android.Widget.TextView"/></returns>
+        [global::System.Obsolete()]
+        public Android.Widget.TextView GetText2()
         {
-            get { return IExecuteWithSignature<Android.Widget.TextView>("getText2", "()Landroid/widget/TextView;"); }
+            return IExecuteWithSignature<Android.Widget.TextView>("getText2", "()Landroid/widget/TextView;");
         }
 
         #endregion

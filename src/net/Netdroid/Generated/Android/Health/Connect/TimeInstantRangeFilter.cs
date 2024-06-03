@@ -46,26 +46,28 @@ namespace Android.Health.Connect
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/TimeInstantRangeFilter.html#getEndTime()"/> 
-        /// </summary>
-        public Java.Time.Instant EndTime
-        {
-            get { return IExecuteWithSignature<Java.Time.Instant>("getEndTime", "()Ljava/time/Instant;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/TimeInstantRangeFilter.html#getStartTime()"/> 
-        /// </summary>
-        public Java.Time.Instant StartTime
-        {
-            get { return IExecuteWithSignature<Java.Time.Instant>("getStartTime", "()Ljava/time/Instant;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/health/connect/TimeInstantRangeFilter.html#isBounded()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsBounded()
         {
             return IExecuteWithSignature<bool>("isBounded", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/TimeInstantRangeFilter.html#getEndTime()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Time.Instant"/></returns>
+        public Java.Time.Instant GetEndTime()
+        {
+            return IExecuteWithSignature<Java.Time.Instant>("getEndTime", "()Ljava/time/Instant;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/TimeInstantRangeFilter.html#getStartTime()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Time.Instant"/></returns>
+        public Java.Time.Instant GetStartTime()
+        {
+            return IExecuteWithSignature<Java.Time.Instant>("getStartTime", "()Ljava/time/Instant;");
         }
 
         #endregion

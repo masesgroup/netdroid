@@ -46,7 +46,7 @@ namespace Java.Net
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/SocketOption.html#type()"/>
+        /// <see href="https://developer.android.com/reference/java/net/SocketOption.html#type()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.Class"/></returns>
         public Java.Lang.Class Type()
@@ -54,7 +54,7 @@ namespace Java.Net
             return IExecuteWithSignature<Java.Lang.Class>("type", "()Ljava/lang/Class;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/SocketOption.html#name()"/>
+        /// <see href="https://developer.android.com/reference/java/net/SocketOption.html#name()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Name()
@@ -115,7 +115,7 @@ namespace Java.Net
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/SocketOption.html#type()"/>
+        /// <see href="https://developer.android.com/reference/java/net/SocketOption.html#type()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.Class"/></returns>
         public Java.Lang.Class Type()
@@ -123,7 +123,7 @@ namespace Java.Net
             return IExecuteWithSignature<Java.Lang.Class>("type", "()Ljava/lang/Class;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/SocketOption.html#name()"/>
+        /// <see href="https://developer.android.com/reference/java/net/SocketOption.html#name()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Name()

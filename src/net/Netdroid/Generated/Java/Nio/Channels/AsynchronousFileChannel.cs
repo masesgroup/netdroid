@@ -42,7 +42,7 @@ namespace Java.Nio.Channels
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/AsynchronousFileChannel.html#open(java.nio.file.Path,java.nio.file.OpenOption[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/AsynchronousFileChannel.html#open(java.nio.file.Path,java.nio.file.OpenOption[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Nio.File.OpenOption"/></param>
@@ -53,7 +53,7 @@ namespace Java.Nio.Channels
             if (arg1.Length == 0) return SExecute<Java.Nio.Channels.AsynchronousFileChannel>(LocalBridgeClazz, "open", arg0); else return SExecute<Java.Nio.Channels.AsynchronousFileChannel>(LocalBridgeClazz, "open", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/AsynchronousFileChannel.html#open(java.nio.file.Path,java.util.Set,java.util.concurrent.ExecutorService,java.nio.file.attribute.FileAttribute[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/AsynchronousFileChannel.html#open(java.nio.file.Path,java.util.Set,java.util.concurrent.ExecutorService,java.nio.file.attribute.FileAttribute[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Util.Set"/></param>
@@ -62,7 +62,7 @@ namespace Java.Nio.Channels
         /// <typeparam name="Arg1ExtendsJava_Nio_File_OpenOption"><see cref="Java.Nio.File.OpenOption"/></typeparam>
         /// <returns><see cref="Java.Nio.Channels.AsynchronousFileChannel"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public static Java.Nio.Channels.AsynchronousFileChannel Open<Arg1ExtendsJava_Nio_File_OpenOption>(Java.Nio.File.Path arg0, Java.Util.Set<Arg1ExtendsJava_Nio_File_OpenOption> arg1, Java.Util.Concurrent.ExecutorService arg2, params Java.Nio.File.Attribute.FileAttribute<object>[] arg3) where Arg1ExtendsJava_Nio_File_OpenOption: Java.Nio.File.OpenOption
+        public static Java.Nio.Channels.AsynchronousFileChannel Open<Arg1ExtendsJava_Nio_File_OpenOption>(Java.Nio.File.Path arg0, Java.Util.Set<Arg1ExtendsJava_Nio_File_OpenOption> arg1, Java.Util.Concurrent.ExecutorService arg2, params Java.Nio.File.Attribute.FileAttribute<object>[] arg3) where Arg1ExtendsJava_Nio_File_OpenOption : Java.Nio.File.OpenOption
         {
             if (arg3.Length == 0) return SExecute<Java.Nio.Channels.AsynchronousFileChannel>(LocalBridgeClazz, "open", arg0, arg1, arg2); else return SExecute<Java.Nio.Channels.AsynchronousFileChannel>(LocalBridgeClazz, "open", arg0, arg1, arg2, arg3);
         }
@@ -71,7 +71,7 @@ namespace Java.Nio.Channels
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/AsynchronousFileChannel.html#lock(long,long,boolean,java.lang.Object,java.nio.channels.CompletionHandler)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/AsynchronousFileChannel.html#lock(long,long,boolean,java.lang.Object,java.nio.channels.CompletionHandler)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -80,12 +80,12 @@ namespace Java.Nio.Channels
         /// <param name="arg4"><see cref="Java.Nio.Channels.CompletionHandler"/></param>
         /// <typeparam name="A"></typeparam>
         /// <typeparam name="Arg4objectSuperA"><typeparamref name="A"/></typeparam>
-        public void Lock<A, Arg4objectSuperA>(long arg0, long arg1, bool arg2, A arg3, Java.Nio.Channels.CompletionHandler<Java.Nio.Channels.FileLock, Arg4objectSuperA> arg4) where Arg4objectSuperA: A
+        public void Lock<A, Arg4objectSuperA>(long arg0, long arg1, bool arg2, A arg3, Java.Nio.Channels.CompletionHandler<Java.Nio.Channels.FileLock, Arg4objectSuperA> arg4) where Arg4objectSuperA : A
         {
             IExecute("lock", arg0, arg1, arg2, arg3, arg4);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/AsynchronousFileChannel.html#read(java.nio.ByteBuffer,long,java.lang.Object,java.nio.channels.CompletionHandler)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/AsynchronousFileChannel.html#read(java.nio.ByteBuffer,long,java.lang.Object,java.nio.channels.CompletionHandler)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -93,12 +93,12 @@ namespace Java.Nio.Channels
         /// <param name="arg3"><see cref="Java.Nio.Channels.CompletionHandler"/></param>
         /// <typeparam name="A"></typeparam>
         /// <typeparam name="Arg3objectSuperA"><typeparamref name="A"/></typeparam>
-        public void Read<A, Arg3objectSuperA>(Java.Nio.ByteBuffer arg0, long arg1, A arg2, Java.Nio.Channels.CompletionHandler<Java.Lang.Integer, Arg3objectSuperA> arg3) where Arg3objectSuperA: A
+        public void Read<A, Arg3objectSuperA>(Java.Nio.ByteBuffer arg0, long arg1, A arg2, Java.Nio.Channels.CompletionHandler<Java.Lang.Integer, Arg3objectSuperA> arg3) where Arg3objectSuperA : A
         {
             IExecute("read", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/AsynchronousFileChannel.html#write(java.nio.ByteBuffer,long,java.lang.Object,java.nio.channels.CompletionHandler)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/AsynchronousFileChannel.html#write(java.nio.ByteBuffer,long,java.lang.Object,java.nio.channels.CompletionHandler)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -106,12 +106,12 @@ namespace Java.Nio.Channels
         /// <param name="arg3"><see cref="Java.Nio.Channels.CompletionHandler"/></param>
         /// <typeparam name="A"></typeparam>
         /// <typeparam name="Arg3objectSuperA"><typeparamref name="A"/></typeparam>
-        public void Write<A, Arg3objectSuperA>(Java.Nio.ByteBuffer arg0, long arg1, A arg2, Java.Nio.Channels.CompletionHandler<Java.Lang.Integer, Arg3objectSuperA> arg3) where Arg3objectSuperA: A
+        public void Write<A, Arg3objectSuperA>(Java.Nio.ByteBuffer arg0, long arg1, A arg2, Java.Nio.Channels.CompletionHandler<Java.Lang.Integer, Arg3objectSuperA> arg3) where Arg3objectSuperA : A
         {
             IExecute("write", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/AsynchronousFileChannel.html#truncate(long)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/AsynchronousFileChannel.html#truncate(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Nio.Channels.AsynchronousFileChannel"/></returns>
@@ -121,7 +121,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<Java.Nio.Channels.AsynchronousFileChannel>("truncate", "(J)Ljava/nio/channels/AsynchronousFileChannel;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/AsynchronousFileChannel.html#tryLock(long,long,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/AsynchronousFileChannel.html#tryLock(long,long,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -133,7 +133,7 @@ namespace Java.Nio.Channels
             return IExecute<Java.Nio.Channels.FileLock>("tryLock", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/AsynchronousFileChannel.html#read(java.nio.ByteBuffer,long)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/AsynchronousFileChannel.html#read(java.nio.ByteBuffer,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -143,7 +143,7 @@ namespace Java.Nio.Channels
             return IExecute<Java.Util.Concurrent.Future<Java.Lang.Integer>>("read", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/AsynchronousFileChannel.html#write(java.nio.ByteBuffer,long)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/AsynchronousFileChannel.html#write(java.nio.ByteBuffer,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -153,7 +153,7 @@ namespace Java.Nio.Channels
             return IExecute<Java.Util.Concurrent.Future<Java.Lang.Integer>>("write", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/AsynchronousFileChannel.html#lock(long,long,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/AsynchronousFileChannel.html#lock(long,long,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -164,7 +164,7 @@ namespace Java.Nio.Channels
             return IExecute<Java.Util.Concurrent.Future<Java.Nio.Channels.FileLock>>("lock", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/AsynchronousFileChannel.html#size()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/AsynchronousFileChannel.html#size()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -173,7 +173,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<long>("size", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/AsynchronousFileChannel.html#force(boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/AsynchronousFileChannel.html#force(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -182,18 +182,18 @@ namespace Java.Nio.Channels
             IExecuteWithSignature("force", "(Z)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/AsynchronousFileChannel.html#lock(java.lang.Object,java.nio.channels.CompletionHandler)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/AsynchronousFileChannel.html#lock(java.lang.Object,java.nio.channels.CompletionHandler)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="A"/></param>
         /// <param name="arg1"><see cref="Java.Nio.Channels.CompletionHandler"/></param>
         /// <typeparam name="A"></typeparam>
         /// <typeparam name="Arg1objectSuperA"><typeparamref name="A"/></typeparam>
-        public void Lock<A, Arg1objectSuperA>(A arg0, Java.Nio.Channels.CompletionHandler<Java.Nio.Channels.FileLock, Arg1objectSuperA> arg1) where Arg1objectSuperA: A
+        public void Lock<A, Arg1objectSuperA>(A arg0, Java.Nio.Channels.CompletionHandler<Java.Nio.Channels.FileLock, Arg1objectSuperA> arg1) where Arg1objectSuperA : A
         {
             IExecute("lock", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/AsynchronousFileChannel.html#tryLock()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/AsynchronousFileChannel.html#tryLock()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.Channels.FileLock"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -202,7 +202,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<Java.Nio.Channels.FileLock>("tryLock", "()Ljava/nio/channels/FileLock;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/AsynchronousFileChannel.html#lock()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/AsynchronousFileChannel.html#lock()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
         public Java.Util.Concurrent.Future<Java.Nio.Channels.FileLock> Lock()

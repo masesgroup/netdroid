@@ -30,7 +30,7 @@ namespace Javax.Net.Ssl
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/KeyStoreBuilderParameters.html#%3Cinit%3E(java.security.KeyStore.Builder)"/>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/KeyStoreBuilderParameters.html#%3Cinit%3E(java.security.KeyStore.Builder)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.KeyStore.Builder"/></param>
         public KeyStoreBuilderParameters(Java.Security.KeyStore.Builder arg0)
@@ -38,7 +38,7 @@ namespace Javax.Net.Ssl
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/KeyStoreBuilderParameters.html#%3Cinit%3E(java.util.List)"/>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/KeyStoreBuilderParameters.html#%3Cinit%3E(java.util.List)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         public KeyStoreBuilderParameters(Java.Util.List<Java.Security.KeyStore.Builder> arg0)
@@ -62,11 +62,12 @@ namespace Javax.Net.Ssl
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/KeyStoreBuilderParameters.html#getParameters()"/> 
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/KeyStoreBuilderParameters.html#getParameters()"/>
         /// </summary>
-        public Java.Util.List<Java.Security.KeyStore.Builder> Parameters
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Security.KeyStore.Builder> GetParameters()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Security.KeyStore.Builder>>("getParameters", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Java.Util.List<Java.Security.KeyStore.Builder>>("getParameters", "()Ljava/util/List;");
         }
 
         #endregion

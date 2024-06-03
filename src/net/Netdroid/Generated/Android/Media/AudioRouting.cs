@@ -64,18 +64,20 @@ namespace Android.Media
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioRouting.html#getPreferredDevice()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/AudioRouting.html#getPreferredDevice()"/>
         /// </summary>
-        public Android.Media.AudioDeviceInfo PreferredDevice
+        /// <returns><see cref="Android.Media.AudioDeviceInfo"/></returns>
+        public Android.Media.AudioDeviceInfo GetPreferredDevice()
         {
-            get { return IExecuteWithSignature<Android.Media.AudioDeviceInfo>("getPreferredDevice", "()Landroid/media/AudioDeviceInfo;"); }
+            return IExecuteWithSignature<Android.Media.AudioDeviceInfo>("getPreferredDevice", "()Landroid/media/AudioDeviceInfo;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioRouting.html#getRoutedDevice()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/AudioRouting.html#getRoutedDevice()"/>
         /// </summary>
-        public Android.Media.AudioDeviceInfo RoutedDevice
+        /// <returns><see cref="Android.Media.AudioDeviceInfo"/></returns>
+        public Android.Media.AudioDeviceInfo GetRoutedDevice()
         {
-            get { return IExecuteWithSignature<Android.Media.AudioDeviceInfo>("getRoutedDevice", "()Landroid/media/AudioDeviceInfo;"); }
+            return IExecuteWithSignature<Android.Media.AudioDeviceInfo>("getRoutedDevice", "()Landroid/media/AudioDeviceInfo;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioRouting.html#setPreferredDevice(android.media.AudioDeviceInfo)"/>
@@ -132,7 +134,7 @@ namespace Android.Media
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onRoutingChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.AudioRouting>>>(OnRoutingChangedEventHandler));
+                AddEventHandler("onRoutingChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.AudioRouting>>>(OnRoutingChangedEventHandler));
 
             }
 
@@ -140,7 +142,7 @@ namespace Android.Media
             /// Handler for <see href="https://developer.android.com/reference/android/media/AudioRouting.OnRoutingChangedListener.html#onRoutingChanged(android.media.AudioRouting)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnRoutingChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Media.AudioRouting> OnOnRoutingChanged { get; set; } = null;
+            public global::System.Action<Android.Media.AudioRouting> OnOnRoutingChanged { get; set; } = null;
 
             void OnRoutingChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Media.AudioRouting>> data)
             {

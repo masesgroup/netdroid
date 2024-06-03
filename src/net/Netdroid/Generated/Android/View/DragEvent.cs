@@ -88,53 +88,44 @@ namespace Android.View
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/DragEvent.html#getAction()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/DragEvent.html#getClipData()"/>
         /// </summary>
-        public int Action
+        /// <returns><see cref="Android.Content.ClipData"/></returns>
+        public Android.Content.ClipData GetClipData()
         {
-            get { return IExecuteWithSignature<int>("getAction", "()I"); }
+            return IExecuteWithSignature<Android.Content.ClipData>("getClipData", "()Landroid/content/ClipData;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/DragEvent.html#getClipData()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/DragEvent.html#getClipDescription()"/>
         /// </summary>
-        public Android.Content.ClipData ClipData
+        /// <returns><see cref="Android.Content.ClipDescription"/></returns>
+        public Android.Content.ClipDescription GetClipDescription()
         {
-            get { return IExecuteWithSignature<Android.Content.ClipData>("getClipData", "()Landroid/content/ClipData;"); }
+            return IExecuteWithSignature<Android.Content.ClipDescription>("getClipDescription", "()Landroid/content/ClipDescription;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/DragEvent.html#getClipDescription()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/DragEvent.html#getResult()"/>
         /// </summary>
-        public Android.Content.ClipDescription ClipDescription
+        /// <returns><see cref="bool"/></returns>
+        public bool GetResult()
         {
-            get { return IExecuteWithSignature<Android.Content.ClipDescription>("getClipDescription", "()Landroid/content/ClipDescription;"); }
+            return IExecuteWithSignature<bool>("getResult", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/DragEvent.html#getLocalState()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/DragEvent.html#getX()"/>
         /// </summary>
-        public object LocalState
+        /// <returns><see cref="float"/></returns>
+        public float GetX()
         {
-            get { return IExecuteWithSignature("getLocalState", "()Ljava/lang/Object;"); }
+            return IExecuteWithSignature<float>("getX", "()F");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/DragEvent.html#getResult()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/DragEvent.html#getY()"/>
         /// </summary>
-        public bool Result
+        /// <returns><see cref="float"/></returns>
+        public float GetY()
         {
-            get { return IExecuteWithSignature<bool>("getResult", "()Z"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/DragEvent.html#getX()"/> 
-        /// </summary>
-        public float X
-        {
-            get { return IExecuteWithSignature<float>("getX", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/DragEvent.html#getY()"/> 
-        /// </summary>
-        public float Y
-        {
-            get { return IExecuteWithSignature<float>("getY", "()F"); }
+            return IExecuteWithSignature<float>("getY", "()F");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/DragEvent.html#describeContents()"/>
@@ -143,6 +134,22 @@ namespace Android.View
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/DragEvent.html#getAction()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetAction()
+        {
+            return IExecuteWithSignature<int>("getAction", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/DragEvent.html#getLocalState()"/>
+        /// </summary>
+        /// <returns><see cref="object"/></returns>
+        public object GetLocalState()
+        {
+            return IExecuteWithSignature("getLocalState", "()Ljava/lang/Object;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/DragEvent.html#writeToParcel(android.os.Parcel,int)"/>

@@ -52,13 +52,6 @@ namespace Android.Media
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/Session2CommandGroup.html#getCommands()"/> 
-        /// </summary>
-        public Java.Util.Set<Android.Media.Session2Command> Commands
-        {
-            get { return IExecuteWithSignature<Java.Util.Set<Android.Media.Session2Command>>("getCommands", "()Ljava/util/Set;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/Session2CommandGroup.html#hasCommand(android.media.Session2Command)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Media.Session2Command"/></param>
@@ -83,6 +76,14 @@ namespace Android.Media
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/Session2CommandGroup.html#getCommands()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Android.Media.Session2Command> GetCommands()
+        {
+            return IExecuteWithSignature<Java.Util.Set<Android.Media.Session2Command>>("getCommands", "()Ljava/util/Set;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/Session2CommandGroup.html#writeToParcel(android.os.Parcel,int)"/>

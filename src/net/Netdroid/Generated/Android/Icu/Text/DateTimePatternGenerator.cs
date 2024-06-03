@@ -164,18 +164,20 @@ namespace Android.Icu.Text
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/DateTimePatternGenerator.html#getEmptyInstance()"/> 
+        /// <see href="https://developer.android.com/reference/android/icu/text/DateTimePatternGenerator.html#getEmptyInstance()"/>
         /// </summary>
-        public static Android.Icu.Text.DateTimePatternGenerator EmptyInstance
+        /// <returns><see cref="Android.Icu.Text.DateTimePatternGenerator"/></returns>
+        public static Android.Icu.Text.DateTimePatternGenerator GetEmptyInstance()
         {
-            get { return SExecuteWithSignature<Android.Icu.Text.DateTimePatternGenerator>(LocalBridgeClazz, "getEmptyInstance", "()Landroid/icu/text/DateTimePatternGenerator;"); }
+            return SExecuteWithSignature<Android.Icu.Text.DateTimePatternGenerator>(LocalBridgeClazz, "getEmptyInstance", "()Landroid/icu/text/DateTimePatternGenerator;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/DateTimePatternGenerator.html#getInstance()"/> 
+        /// <see href="https://developer.android.com/reference/android/icu/text/DateTimePatternGenerator.html#getInstance()"/>
         /// </summary>
-        public static Android.Icu.Text.DateTimePatternGenerator Instance
+        /// <returns><see cref="Android.Icu.Text.DateTimePatternGenerator"/></returns>
+        public static Android.Icu.Text.DateTimePatternGenerator GetInstance()
         {
-            get { return SExecuteWithSignature<Android.Icu.Text.DateTimePatternGenerator>(LocalBridgeClazz, "getInstance", "()Landroid/icu/text/DateTimePatternGenerator;"); }
+            return SExecuteWithSignature<Android.Icu.Text.DateTimePatternGenerator>(LocalBridgeClazz, "getInstance", "()Landroid/icu/text/DateTimePatternGenerator;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DateTimePatternGenerator.html#getInstance(android.icu.util.ULocale)"/>
@@ -200,25 +202,12 @@ namespace Android.Icu.Text
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/DateTimePatternGenerator.html#getDateTimeFormat()"/> <see href="https://developer.android.com/reference/android/icu/text/DateTimePatternGenerator.html#setDateTimeFormat(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/android/icu/text/DateTimePatternGenerator.html#getDefaultHourCycle()"/>
         /// </summary>
-        public Java.Lang.String DateTimeFormat
+        /// <returns><see cref="Android.Icu.Text.DateFormat.HourCycle"/></returns>
+        public Android.Icu.Text.DateFormat.HourCycle GetDefaultHourCycle()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDateTimeFormat", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setDateTimeFormat", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/DateTimePatternGenerator.html#getDecimal()"/> <see href="https://developer.android.com/reference/android/icu/text/DateTimePatternGenerator.html#setDecimal(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String Decimal
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDecimal", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setDecimal", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/DateTimePatternGenerator.html#getDefaultHourCycle()"/> 
-        /// </summary>
-        public Android.Icu.Text.DateFormat.HourCycle DefaultHourCycle
-        {
-            get { return IExecuteWithSignature<Android.Icu.Text.DateFormat.HourCycle>("getDefaultHourCycle", "()Landroid/icu/text/DateFormat$HourCycle;"); }
+            return IExecuteWithSignature<Android.Icu.Text.DateFormat.HourCycle>("getDefaultHourCycle", "()Landroid/icu/text/DateFormat$HourCycle;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DateTimePatternGenerator.html#addPattern(java.lang.String,boolean,android.icu.text.DateTimePatternGenerator.PatternInfo)"/>
@@ -302,6 +291,22 @@ namespace Android.Icu.Text
             return IExecuteWithSignature<Java.Lang.String>("getBestPattern", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/DateTimePatternGenerator.html#getDateTimeFormat()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDateTimeFormat()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getDateTimeFormat", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/DateTimePatternGenerator.html#getDecimal()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDecimal()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getDecimal", "()Ljava/lang/String;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DateTimePatternGenerator.html#getFieldDisplayName(int,android.icu.text.DateTimePatternGenerator.DisplayWidth)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -376,6 +381,22 @@ namespace Android.Icu.Text
         public void SetAppendItemName(int arg0, Java.Lang.String arg1)
         {
             IExecute("setAppendItemName", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/DateTimePatternGenerator.html#setDateTimeFormat(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetDateTimeFormat(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setDateTimeFormat", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/DateTimePatternGenerator.html#setDecimal(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetDecimal(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setDecimal", "(Ljava/lang/String;)V", arg0);
         }
 
         #endregion

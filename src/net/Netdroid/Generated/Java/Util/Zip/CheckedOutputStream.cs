@@ -30,7 +30,7 @@ namespace Java.Util.Zip
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/CheckedOutputStream.html#%3Cinit%3E(java.io.OutputStream,java.util.zip.Checksum)"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/CheckedOutputStream.html#%3Cinit%3E(java.io.OutputStream,java.util.zip.Checksum)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
         /// <param name="arg1"><see cref="Java.Util.Zip.Checksum"/></param>
@@ -55,11 +55,12 @@ namespace Java.Util.Zip
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/CheckedOutputStream.html#getChecksum()"/> 
+        /// <see href="https://developer.android.com/reference/java/util/zip/CheckedOutputStream.html#getChecksum()"/>
         /// </summary>
-        public Java.Util.Zip.Checksum Checksum
+        /// <returns><see cref="Java.Util.Zip.Checksum"/></returns>
+        public Java.Util.Zip.Checksum GetChecksum()
         {
-            get { return IExecuteWithSignature<Java.Util.Zip.Checksum>("getChecksum", "()Ljava/util/zip/Checksum;"); }
+            return IExecuteWithSignature<Java.Util.Zip.Checksum>("getChecksum", "()Ljava/util/zip/Checksum;");
         }
 
         #endregion

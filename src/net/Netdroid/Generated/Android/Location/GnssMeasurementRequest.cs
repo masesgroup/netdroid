@@ -58,13 +58,6 @@ namespace Android.Location
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/GnssMeasurementRequest.html#getIntervalMillis()"/> 
-        /// </summary>
-        public int IntervalMillis
-        {
-            get { return IExecuteWithSignature<int>("getIntervalMillis", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/GnssMeasurementRequest.html#isFullTracking()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -79,6 +72,14 @@ namespace Android.Location
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/GnssMeasurementRequest.html#getIntervalMillis()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetIntervalMillis()
+        {
+            return IExecuteWithSignature<int>("getIntervalMillis", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/GnssMeasurementRequest.html#writeToParcel(android.os.Parcel,int)"/>

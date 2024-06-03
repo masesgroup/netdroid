@@ -56,55 +56,55 @@ namespace Java.Lang.Invoke
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandleInfo.html#REF_getField"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandleInfo.html#REF_getField"/>
         /// </summary>
         public static int REF_getField { get { if (!_REF_getFieldReady) { _REF_getFieldContent = SGetField<int>(LocalBridgeClazz, "REF_getField"); _REF_getFieldReady = true; } return _REF_getFieldContent; } }
         private static int _REF_getFieldContent = default;
         private static bool _REF_getFieldReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandleInfo.html#REF_getStatic"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandleInfo.html#REF_getStatic"/>
         /// </summary>
         public static int REF_getStatic { get { if (!_REF_getStaticReady) { _REF_getStaticContent = SGetField<int>(LocalBridgeClazz, "REF_getStatic"); _REF_getStaticReady = true; } return _REF_getStaticContent; } }
         private static int _REF_getStaticContent = default;
         private static bool _REF_getStaticReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandleInfo.html#REF_invokeInterface"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandleInfo.html#REF_invokeInterface"/>
         /// </summary>
         public static int REF_invokeInterface { get { if (!_REF_invokeInterfaceReady) { _REF_invokeInterfaceContent = SGetField<int>(LocalBridgeClazz, "REF_invokeInterface"); _REF_invokeInterfaceReady = true; } return _REF_invokeInterfaceContent; } }
         private static int _REF_invokeInterfaceContent = default;
         private static bool _REF_invokeInterfaceReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandleInfo.html#REF_invokeSpecial"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandleInfo.html#REF_invokeSpecial"/>
         /// </summary>
         public static int REF_invokeSpecial { get { if (!_REF_invokeSpecialReady) { _REF_invokeSpecialContent = SGetField<int>(LocalBridgeClazz, "REF_invokeSpecial"); _REF_invokeSpecialReady = true; } return _REF_invokeSpecialContent; } }
         private static int _REF_invokeSpecialContent = default;
         private static bool _REF_invokeSpecialReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandleInfo.html#REF_invokeStatic"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandleInfo.html#REF_invokeStatic"/>
         /// </summary>
         public static int REF_invokeStatic { get { if (!_REF_invokeStaticReady) { _REF_invokeStaticContent = SGetField<int>(LocalBridgeClazz, "REF_invokeStatic"); _REF_invokeStaticReady = true; } return _REF_invokeStaticContent; } }
         private static int _REF_invokeStaticContent = default;
         private static bool _REF_invokeStaticReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandleInfo.html#REF_invokeVirtual"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandleInfo.html#REF_invokeVirtual"/>
         /// </summary>
         public static int REF_invokeVirtual { get { if (!_REF_invokeVirtualReady) { _REF_invokeVirtualContent = SGetField<int>(LocalBridgeClazz, "REF_invokeVirtual"); _REF_invokeVirtualReady = true; } return _REF_invokeVirtualContent; } }
         private static int _REF_invokeVirtualContent = default;
         private static bool _REF_invokeVirtualReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandleInfo.html#REF_newInvokeSpecial"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandleInfo.html#REF_newInvokeSpecial"/>
         /// </summary>
         public static int REF_newInvokeSpecial { get { if (!_REF_newInvokeSpecialReady) { _REF_newInvokeSpecialContent = SGetField<int>(LocalBridgeClazz, "REF_newInvokeSpecial"); _REF_newInvokeSpecialReady = true; } return _REF_newInvokeSpecialContent; } }
         private static int _REF_newInvokeSpecialContent = default;
         private static bool _REF_newInvokeSpecialReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandleInfo.html#REF_putField"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandleInfo.html#REF_putField"/>
         /// </summary>
         public static int REF_putField { get { if (!_REF_putFieldReady) { _REF_putFieldContent = SGetField<int>(LocalBridgeClazz, "REF_putField"); _REF_putFieldReady = true; } return _REF_putFieldContent; } }
         private static int _REF_putFieldContent = default;
         private static bool _REF_putFieldReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandleInfo.html#REF_putStatic"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandleInfo.html#REF_putStatic"/>
         /// </summary>
         public static int REF_putStatic { get { if (!_REF_putStaticReady) { _REF_putStaticContent = SGetField<int>(LocalBridgeClazz, "REF_putStatic"); _REF_putStaticReady = true; } return _REF_putStaticContent; } }
         private static int _REF_putStaticContent = default;
@@ -114,7 +114,7 @@ namespace Java.Lang.Invoke
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandleInfo.html#referenceKindToString(int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandleInfo.html#referenceKindToString(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -123,7 +123,7 @@ namespace Java.Lang.Invoke
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "referenceKindToString", "(I)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandleInfo.html#toString(int,java.lang.Class,java.lang.String,java.lang.invoke.MethodType)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandleInfo.html#toString(int,java.lang.Class,java.lang.String,java.lang.invoke.MethodType)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
@@ -139,53 +139,58 @@ namespace Java.Lang.Invoke
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandleInfo.html#getDeclaringClass()"/> 
-        /// </summary>
-        public Java.Lang.Class DeclaringClass
-        {
-            get { return IExecuteWithSignature<Java.Lang.Class>("getDeclaringClass", "()Ljava/lang/Class;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandleInfo.html#getMethodType()"/> 
-        /// </summary>
-        public Java.Lang.Invoke.MethodType MethodType
-        {
-            get { return IExecuteWithSignature<Java.Lang.Invoke.MethodType>("getMethodType", "()Ljava/lang/invoke/MethodType;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandleInfo.html#getModifiers()"/> 
-        /// </summary>
-        public int Modifiers
-        {
-            get { return IExecuteWithSignature<int>("getModifiers", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandleInfo.html#getName()"/> 
-        /// </summary>
-        public Java.Lang.String Name
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandleInfo.html#getReferenceKind()"/> 
-        /// </summary>
-        public int ReferenceKind
-        {
-            get { return IExecuteWithSignature<int>("getReferenceKind", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandleInfo.html#reflectAs(java.lang.Class,java.lang.invoke.MethodHandles.Lookup)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandleInfo.html#reflectAs(java.lang.Class,java.lang.invoke.MethodHandles.Lookup)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Invoke.MethodHandles.Lookup"/></param>
         /// <typeparam name="T"><see cref="Java.Lang.Reflect.IMember"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
-        public T ReflectAs<T>(Java.Lang.Class arg0, Java.Lang.Invoke.MethodHandles.Lookup arg1) where T: Java.Lang.Reflect.IMember, new()
+        public T ReflectAs<T>(Java.Lang.Class arg0, Java.Lang.Invoke.MethodHandles.Lookup arg1) where T : Java.Lang.Reflect.IMember, new()
         {
             return IExecute<T>("reflectAs", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandleInfo.html#isVarArgs()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandleInfo.html#getModifiers()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetModifiers()
+        {
+            return IExecuteWithSignature<int>("getModifiers", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandleInfo.html#getReferenceKind()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetReferenceKind()
+        {
+            return IExecuteWithSignature<int>("getReferenceKind", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandleInfo.html#getDeclaringClass()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Class"/></returns>
+        public Java.Lang.Class GetDeclaringClass()
+        {
+            return IExecuteWithSignature<Java.Lang.Class>("getDeclaringClass", "()Ljava/lang/Class;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandleInfo.html#getMethodType()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Invoke.MethodType"/></returns>
+        public Java.Lang.Invoke.MethodType GetMethodType()
+        {
+            return IExecuteWithSignature<Java.Lang.Invoke.MethodType>("getMethodType", "()Ljava/lang/invoke/MethodType;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandleInfo.html#getName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandleInfo.html#isVarArgs()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsVarArgs()

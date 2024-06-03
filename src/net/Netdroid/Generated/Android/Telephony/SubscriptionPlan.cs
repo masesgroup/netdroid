@@ -94,61 +94,68 @@ namespace Android.Telephony
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionPlan.html#getDataLimitBehavior()"/> 
-        /// </summary>
-        public int DataLimitBehavior
-        {
-            get { return IExecuteWithSignature<int>("getDataLimitBehavior", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionPlan.html#getDataLimitBytes()"/> 
-        /// </summary>
-        public long DataLimitBytes
-        {
-            get { return IExecuteWithSignature<long>("getDataLimitBytes", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionPlan.html#getDataUsageBytes()"/> 
-        /// </summary>
-        public long DataUsageBytes
-        {
-            get { return IExecuteWithSignature<long>("getDataUsageBytes", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionPlan.html#getDataUsageTime()"/> 
-        /// </summary>
-        public long DataUsageTime
-        {
-            get { return IExecuteWithSignature<long>("getDataUsageTime", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionPlan.html#getNetworkTypes()"/> 
-        /// </summary>
-        public int[] NetworkTypes
-        {
-            get { return IExecuteWithSignatureArray<int>("getNetworkTypes", "()[I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionPlan.html#getSummary()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence Summary
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getSummary", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionPlan.html#getTitle()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence Title
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getTitle", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionPlan.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionPlan.html#getDataLimitBehavior()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDataLimitBehavior()
+        {
+            return IExecuteWithSignature<int>("getDataLimitBehavior", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionPlan.html#getNetworkTypes()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int[] GetNetworkTypes()
+        {
+            return IExecuteWithSignatureArray<int>("getNetworkTypes", "()[I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionPlan.html#getSummary()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetSummary()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getSummary", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionPlan.html#getTitle()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetTitle()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getTitle", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionPlan.html#getDataLimitBytes()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetDataLimitBytes()
+        {
+            return IExecuteWithSignature<long>("getDataLimitBytes", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionPlan.html#getDataUsageBytes()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetDataUsageBytes()
+        {
+            return IExecuteWithSignature<long>("getDataUsageBytes", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionPlan.html#getDataUsageTime()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetDataUsageTime()
+        {
+            return IExecuteWithSignature<long>("getDataUsageTime", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SubscriptionPlan.html#writeToParcel(android.os.Parcel,int)"/>

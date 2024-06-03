@@ -46,25 +46,12 @@ namespace Android.Media.Session
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/session/MediaSessionManager.html#getMediaKeyEventSession()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/session/MediaSessionManager.html#getMediaKeyEventSession()"/>
         /// </summary>
-        public Android.Media.Session.MediaSession.Token MediaKeyEventSession
+        /// <returns><see cref="Android.Media.Session.MediaSession.Token"/></returns>
+        public Android.Media.Session.MediaSession.Token GetMediaKeyEventSession()
         {
-            get { return IExecuteWithSignature<Android.Media.Session.MediaSession.Token>("getMediaKeyEventSession", "()Landroid/media/session/MediaSession$Token;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/session/MediaSessionManager.html#getMediaKeyEventSessionPackageName()"/> 
-        /// </summary>
-        public Java.Lang.String MediaKeyEventSessionPackageName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getMediaKeyEventSessionPackageName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/session/MediaSessionManager.html#getSession2Tokens()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Media.Session2Token> Session2Tokens
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Media.Session2Token>>("getSession2Tokens", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Android.Media.Session.MediaSession.Token>("getMediaKeyEventSession", "()Landroid/media/session/MediaSession$Token;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/session/MediaSessionManager.html#isTrustedForMediaControl(android.media.session.MediaSessionManager.RemoteUserInfo)"/>
@@ -76,6 +63,14 @@ namespace Android.Media.Session
             return IExecuteWithSignature<bool>("isTrustedForMediaControl", "(Landroid/media/session/MediaSessionManager$RemoteUserInfo;)Z", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/session/MediaSessionManager.html#getMediaKeyEventSessionPackageName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetMediaKeyEventSessionPackageName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getMediaKeyEventSessionPackageName", "()Ljava/lang/String;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/session/MediaSessionManager.html#getActiveSessions(android.content.ComponentName)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
@@ -83,6 +78,14 @@ namespace Android.Media.Session
         public Java.Util.List<Android.Media.Session.MediaController> GetActiveSessions(Android.Content.ComponentName arg0)
         {
             return IExecuteWithSignature<Java.Util.List<Android.Media.Session.MediaController>>("getActiveSessions", "(Landroid/content/ComponentName;)Ljava/util/List;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/session/MediaSessionManager.html#getSession2Tokens()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Media.Session2Token> GetSession2Tokens()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Media.Session2Token>>("getSession2Tokens", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/session/MediaSessionManager.html#addOnActiveSessionsChangedListener(android.media.session.MediaSessionManager.OnActiveSessionsChangedListener,android.content.ComponentName,android.os.Handler)"/>
@@ -133,7 +136,7 @@ namespace Android.Media.Session
         /// <see href="https://developer.android.com/reference/android/media/session/MediaSessionManager.html#notifySession2Created(android.media.Session2Token)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Media.Session2Token"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void NotifySession2Created(Android.Media.Session2Token arg0)
         {
             IExecuteWithSignature("notifySession2Created", "(Landroid/media/Session2Token;)V", arg0);
@@ -191,7 +194,7 @@ namespace Android.Media.Session
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onActiveSessionsChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.List<Android.Media.Session.MediaController>>>>(OnActiveSessionsChangedEventHandler));
+                AddEventHandler("onActiveSessionsChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.List<Android.Media.Session.MediaController>>>>(OnActiveSessionsChangedEventHandler));
 
             }
 
@@ -199,7 +202,7 @@ namespace Android.Media.Session
             /// Handler for <see href="https://developer.android.com/reference/android/media/session/MediaSessionManager.OnActiveSessionsChangedListener.html#onActiveSessionsChanged(java.util.List)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnActiveSessionsChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Java.Util.List<Android.Media.Session.MediaController>> OnOnActiveSessionsChanged { get; set; } = null;
+            public global::System.Action<Java.Util.List<Android.Media.Session.MediaController>> OnOnActiveSessionsChanged { get; set; } = null;
 
             void OnActiveSessionsChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.List<Android.Media.Session.MediaController>>> data)
             {
@@ -290,7 +293,7 @@ namespace Android.Media.Session
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onMediaKeyEventSessionChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(OnMediaKeyEventSessionChangedEventHandler));
+                AddEventHandler("onMediaKeyEventSessionChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(OnMediaKeyEventSessionChangedEventHandler));
 
             }
 
@@ -298,7 +301,7 @@ namespace Android.Media.Session
             /// Handler for <see href="https://developer.android.com/reference/android/media/session/MediaSessionManager.OnMediaKeyEventSessionChangedListener.html#onMediaKeyEventSessionChanged(java.lang.String,android.media.session.MediaSession.Token)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnMediaKeyEventSessionChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Java.Lang.String, Android.Media.Session.MediaSession.Token> OnOnMediaKeyEventSessionChanged { get; set; } = null;
+            public global::System.Action<Java.Lang.String, Android.Media.Session.MediaSession.Token> OnOnMediaKeyEventSessionChanged { get; set; } = null;
 
             void OnMediaKeyEventSessionChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
             {
@@ -391,7 +394,7 @@ namespace Android.Media.Session
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onSession2TokensChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.List<Android.Media.Session2Token>>>>(OnSession2TokensChangedEventHandler));
+                AddEventHandler("onSession2TokensChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.List<Android.Media.Session2Token>>>>(OnSession2TokensChangedEventHandler));
 
             }
 
@@ -399,7 +402,7 @@ namespace Android.Media.Session
             /// Handler for <see href="https://developer.android.com/reference/android/media/session/MediaSessionManager.OnSession2TokensChangedListener.html#onSession2TokensChanged(java.util.List)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnSession2TokensChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Java.Util.List<Android.Media.Session2Token>> OnOnSession2TokensChanged { get; set; } = null;
+            public global::System.Action<Java.Util.List<Android.Media.Session2Token>> OnOnSession2TokensChanged { get; set; } = null;
 
             void OnSession2TokensChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.List<Android.Media.Session2Token>>> data)
             {
@@ -496,25 +499,28 @@ namespace Android.Media.Session
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/session/MediaSessionManager.RemoteUserInfo.html#getPackageName()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/session/MediaSessionManager.RemoteUserInfo.html#getPid()"/>
             /// </summary>
-            public Java.Lang.String PackageName
+            /// <returns><see cref="int"/></returns>
+            public int GetPid()
             {
-                get { return IExecuteWithSignature<Java.Lang.String>("getPackageName", "()Ljava/lang/String;"); }
+                return IExecuteWithSignature<int>("getPid", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/session/MediaSessionManager.RemoteUserInfo.html#getPid()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/session/MediaSessionManager.RemoteUserInfo.html#getUid()"/>
             /// </summary>
-            public int Pid
+            /// <returns><see cref="int"/></returns>
+            public int GetUid()
             {
-                get { return IExecuteWithSignature<int>("getPid", "()I"); }
+                return IExecuteWithSignature<int>("getUid", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/session/MediaSessionManager.RemoteUserInfo.html#getUid()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/session/MediaSessionManager.RemoteUserInfo.html#getPackageName()"/>
             /// </summary>
-            public int Uid
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetPackageName()
             {
-                get { return IExecuteWithSignature<int>("getUid", "()I"); }
+                return IExecuteWithSignature<Java.Lang.String>("getPackageName", "()Ljava/lang/String;");
             }
 
             #endregion

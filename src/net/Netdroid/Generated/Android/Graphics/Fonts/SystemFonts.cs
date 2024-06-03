@@ -42,11 +42,12 @@ namespace Android.Graphics.Fonts
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/fonts/SystemFonts.html#getAvailableFonts()"/> 
+        /// <see href="https://developer.android.com/reference/android/graphics/fonts/SystemFonts.html#getAvailableFonts()"/>
         /// </summary>
-        public static Java.Util.Set<Android.Graphics.Fonts.Font> AvailableFonts
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public static Java.Util.Set<Android.Graphics.Fonts.Font> GetAvailableFonts()
         {
-            get { return SExecuteWithSignature<Java.Util.Set<Android.Graphics.Fonts.Font>>(LocalBridgeClazz, "getAvailableFonts", "()Ljava/util/Set;"); }
+            return SExecuteWithSignature<Java.Util.Set<Android.Graphics.Fonts.Font>>(LocalBridgeClazz, "getAvailableFonts", "()Ljava/util/Set;");
         }
 
         #endregion

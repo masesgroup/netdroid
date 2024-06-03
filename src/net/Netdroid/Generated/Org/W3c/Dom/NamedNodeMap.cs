@@ -64,14 +64,15 @@ namespace Org.W3c.Dom
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/NamedNodeMap.html#getLength()"/> 
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/NamedNodeMap.html#getLength()"/>
         /// </summary>
-        public int Length
+        /// <returns><see cref="int"/></returns>
+        public int GetLength()
         {
-            get { return IExecuteWithSignature<int>("getLength", "()I"); }
+            return IExecuteWithSignature<int>("getLength", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/NamedNodeMap.html#getNamedItem(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/NamedNodeMap.html#getNamedItem(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
@@ -80,7 +81,7 @@ namespace Org.W3c.Dom
             return IExecuteWithSignature<Org.W3c.Dom.Node>("getNamedItem", "(Ljava/lang/String;)Lorg/w3c/dom/Node;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/NamedNodeMap.html#getNamedItemNS(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/NamedNodeMap.html#getNamedItemNS(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -91,7 +92,7 @@ namespace Org.W3c.Dom
             return IExecute<Org.W3c.Dom.Node>("getNamedItemNS", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/NamedNodeMap.html#item(int)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/NamedNodeMap.html#item(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
@@ -100,7 +101,7 @@ namespace Org.W3c.Dom
             return IExecuteWithSignature<Org.W3c.Dom.Node>("item", "(I)Lorg/w3c/dom/Node;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/NamedNodeMap.html#removeNamedItem(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/NamedNodeMap.html#removeNamedItem(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
@@ -110,7 +111,7 @@ namespace Org.W3c.Dom
             return IExecuteWithSignature<Org.W3c.Dom.Node>("removeNamedItem", "(Ljava/lang/String;)Lorg/w3c/dom/Node;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/NamedNodeMap.html#removeNamedItemNS(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/NamedNodeMap.html#removeNamedItemNS(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -121,7 +122,7 @@ namespace Org.W3c.Dom
             return IExecute<Org.W3c.Dom.Node>("removeNamedItemNS", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/NamedNodeMap.html#setNamedItem(org.w3c.dom.Node)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/NamedNodeMap.html#setNamedItem(org.w3c.dom.Node)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
         /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
@@ -131,7 +132,7 @@ namespace Org.W3c.Dom
             return IExecuteWithSignature<Org.W3c.Dom.Node>("setNamedItem", "(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/NamedNodeMap.html#setNamedItemNS(org.w3c.dom.Node)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/NamedNodeMap.html#setNamedItemNS(org.w3c.dom.Node)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
         /// <returns><see cref="Org.W3c.Dom.Node"/></returns>

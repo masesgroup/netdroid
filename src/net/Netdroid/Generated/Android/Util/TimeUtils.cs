@@ -42,13 +42,6 @@ namespace Android.Util
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/util/TimeUtils.html#getTimeZoneDatabaseVersion()"/> 
-        /// </summary>
-        public static Java.Lang.String TimeZoneDatabaseVersion
-        {
-            get { return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getTimeZoneDatabaseVersion", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/TimeUtils.html#isTimeBetween(java.time.LocalTime,java.time.LocalTime,java.time.LocalTime)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.LocalTime"/></param>
@@ -58,6 +51,14 @@ namespace Android.Util
         public static bool IsTimeBetween(Java.Time.LocalTime arg0, Java.Time.LocalTime arg1, Java.Time.LocalTime arg2)
         {
             return SExecute<bool>(LocalBridgeClazz, "isTimeBetween", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/util/TimeUtils.html#getTimeZoneDatabaseVersion()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public static Java.Lang.String GetTimeZoneDatabaseVersion()
+        {
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getTimeZoneDatabaseVersion", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/TimeUtils.html#getTimeZoneIdsForCountryCode(java.lang.String)"/>

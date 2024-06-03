@@ -46,20 +46,6 @@ namespace Android.App.Backup
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/backup/BackupDataInput.html#getDataSize()"/> 
-        /// </summary>
-        public int DataSize
-        {
-            get { return IExecuteWithSignature<int>("getDataSize", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/backup/BackupDataInput.html#getKey()"/> 
-        /// </summary>
-        public Java.Lang.String Key
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getKey", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/backup/BackupDataInput.html#readNextHeader()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -67,6 +53,14 @@ namespace Android.App.Backup
         public bool ReadNextHeader()
         {
             return IExecuteWithSignature<bool>("readNextHeader", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/backup/BackupDataInput.html#getDataSize()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDataSize()
+        {
+            return IExecuteWithSignature<int>("getDataSize", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/backup/BackupDataInput.html#readEntityData(byte[],int,int)"/>
@@ -79,6 +73,14 @@ namespace Android.App.Backup
         public int ReadEntityData(byte[] arg0, int arg1, int arg2)
         {
             return IExecute<int>("readEntityData", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/backup/BackupDataInput.html#getKey()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetKey()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getKey", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/backup/BackupDataInput.html#skipEntityData()"/>

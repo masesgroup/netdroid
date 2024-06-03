@@ -52,26 +52,28 @@ namespace Android.Telephony.Data
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/data/NetworkSlicingConfig.html#getSliceInfo()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Telephony.Data.NetworkSliceInfo> SliceInfo
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Telephony.Data.NetworkSliceInfo>>("getSliceInfo", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/data/NetworkSlicingConfig.html#getUrspRules()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Telephony.Data.UrspRule> UrspRules
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Telephony.Data.UrspRule>>("getUrspRules", "()Ljava/util/List;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/data/NetworkSlicingConfig.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/data/NetworkSlicingConfig.html#getSliceInfo()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Telephony.Data.NetworkSliceInfo> GetSliceInfo()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Telephony.Data.NetworkSliceInfo>>("getSliceInfo", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/data/NetworkSlicingConfig.html#getUrspRules()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Telephony.Data.UrspRule> GetUrspRules()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Telephony.Data.UrspRule>>("getUrspRules", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/data/NetworkSlicingConfig.html#writeToParcel(android.os.Parcel,int)"/>

@@ -33,7 +33,7 @@ namespace Android.Util
         /// <see href="https://developer.android.com/reference/android/util/MutableBoolean.html#%3Cinit%3E(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public MutableBoolean(bool arg0)
             : base(arg0)
         {
@@ -49,7 +49,7 @@ namespace Android.Util
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/MutableBoolean.html#value"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool value { get { return IGetField<bool>("value"); } set { ISetField("value", value); } }
 
         #endregion

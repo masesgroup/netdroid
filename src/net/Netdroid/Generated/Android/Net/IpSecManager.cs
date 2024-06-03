@@ -216,11 +216,12 @@ namespace Android.Net
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/IpSecManager.SecurityParameterIndex.html#getSpi()"/> 
+            /// <see href="https://developer.android.com/reference/android/net/IpSecManager.SecurityParameterIndex.html#getSpi()"/>
             /// </summary>
-            public int Spi
+            /// <returns><see cref="int"/></returns>
+            public int GetSpi()
             {
-                get { return IExecuteWithSignature<int>("getSpi", "()I"); }
+                return IExecuteWithSignature<int>("getSpi", "()I");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/IpSecManager.SecurityParameterIndex.html#close()"/>
@@ -292,18 +293,20 @@ namespace Android.Net
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/IpSecManager.UdpEncapsulationSocket.html#getFileDescriptor()"/> 
+            /// <see href="https://developer.android.com/reference/android/net/IpSecManager.UdpEncapsulationSocket.html#getPort()"/>
             /// </summary>
-            public Java.Io.FileDescriptor FileDescriptor
+            /// <returns><see cref="int"/></returns>
+            public int GetPort()
             {
-                get { return IExecuteWithSignature<Java.Io.FileDescriptor>("getFileDescriptor", "()Ljava/io/FileDescriptor;"); }
+                return IExecuteWithSignature<int>("getPort", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/IpSecManager.UdpEncapsulationSocket.html#getPort()"/> 
+            /// <see href="https://developer.android.com/reference/android/net/IpSecManager.UdpEncapsulationSocket.html#getFileDescriptor()"/>
             /// </summary>
-            public int Port
+            /// <returns><see cref="Java.Io.FileDescriptor"/></returns>
+            public Java.Io.FileDescriptor GetFileDescriptor()
             {
-                get { return IExecuteWithSignature<int>("getPort", "()I"); }
+                return IExecuteWithSignature<Java.Io.FileDescriptor>("getFileDescriptor", "()Ljava/io/FileDescriptor;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/IpSecManager.UdpEncapsulationSocket.html#close()"/>

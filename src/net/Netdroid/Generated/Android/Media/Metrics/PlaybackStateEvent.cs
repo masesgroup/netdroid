@@ -146,19 +146,20 @@ namespace Android.Media.Metrics
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/metrics/PlaybackStateEvent.html#getState()"/> 
-        /// </summary>
-        public int State
-        {
-            get { return IExecuteWithSignature<int>("getState", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/metrics/PlaybackStateEvent.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/metrics/PlaybackStateEvent.html#getState()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetState()
+        {
+            return IExecuteWithSignature<int>("getState", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/metrics/PlaybackStateEvent.html#writeToParcel(android.os.Parcel,int)"/>

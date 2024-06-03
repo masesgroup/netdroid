@@ -68,7 +68,7 @@ namespace Android.View
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("onReceiveContent", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.View>>>(OnReceiveContentEventHandler));
+            AddEventHandler("onReceiveContent", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.View>>>(OnReceiveContentEventHandler));
 
         }
 
@@ -76,7 +76,7 @@ namespace Android.View
         /// Handler for <see href="https://developer.android.com/reference/android/view/OnReceiveContentListener.html#onReceiveContent(android.view.View,android.view.ContentInfo)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnReceiveContent"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Android.View.View, Android.View.ContentInfo, Android.View.ContentInfo> OnOnReceiveContent { get; set; } = null;
+        public global::System.Func<Android.View.View, Android.View.ContentInfo, Android.View.ContentInfo> OnOnReceiveContent { get; set; } = null;
 
         void OnReceiveContentEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.View>> data)
         {

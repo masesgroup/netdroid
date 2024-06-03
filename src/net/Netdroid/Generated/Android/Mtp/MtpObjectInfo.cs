@@ -46,200 +46,228 @@ namespace Android.Mtp
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/mtp/MtpObjectInfo.html#getAssociationDesc()"/> 
+        /// <see href="https://developer.android.com/reference/android/mtp/MtpObjectInfo.html#getAssociationDesc()"/>
         /// </summary>
-        public int AssociationDesc
+        /// <returns><see cref="int"/></returns>
+        public int GetAssociationDesc()
         {
-            get { return IExecuteWithSignature<int>("getAssociationDesc", "()I"); }
+            return IExecuteWithSignature<int>("getAssociationDesc", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/mtp/MtpObjectInfo.html#getAssociationType()"/> 
+        /// <see href="https://developer.android.com/reference/android/mtp/MtpObjectInfo.html#getAssociationType()"/>
         /// </summary>
-        public int AssociationType
+        /// <returns><see cref="int"/></returns>
+        public int GetAssociationType()
         {
-            get { return IExecuteWithSignature<int>("getAssociationType", "()I"); }
+            return IExecuteWithSignature<int>("getAssociationType", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/mtp/MtpObjectInfo.html#getCompressedSize()"/> 
+        /// <see href="https://developer.android.com/reference/android/mtp/MtpObjectInfo.html#getCompressedSize()"/>
         /// </summary>
-        public int CompressedSize
+        /// <returns><see cref="int"/></returns>
+        public int GetCompressedSize()
         {
-            get { return IExecuteWithSignature<int>("getCompressedSize", "()I"); }
+            return IExecuteWithSignature<int>("getCompressedSize", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/mtp/MtpObjectInfo.html#getCompressedSizeLong()"/> 
+        /// <see href="https://developer.android.com/reference/android/mtp/MtpObjectInfo.html#getFormat()"/>
         /// </summary>
-        public long CompressedSizeLong
+        /// <returns><see cref="int"/></returns>
+        public int GetFormat()
         {
-            get { return IExecuteWithSignature<long>("getCompressedSizeLong", "()J"); }
+            return IExecuteWithSignature<int>("getFormat", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/mtp/MtpObjectInfo.html#getDateCreated()"/> 
+        /// <see href="https://developer.android.com/reference/android/mtp/MtpObjectInfo.html#getImagePixDepth()"/>
         /// </summary>
-        public long DateCreated
+        /// <returns><see cref="int"/></returns>
+        public int GetImagePixDepth()
         {
-            get { return IExecuteWithSignature<long>("getDateCreated", "()J"); }
+            return IExecuteWithSignature<int>("getImagePixDepth", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/mtp/MtpObjectInfo.html#getDateModified()"/> 
+        /// <see href="https://developer.android.com/reference/android/mtp/MtpObjectInfo.html#getImagePixHeight()"/>
         /// </summary>
-        public long DateModified
+        /// <returns><see cref="int"/></returns>
+        public int GetImagePixHeight()
         {
-            get { return IExecuteWithSignature<long>("getDateModified", "()J"); }
+            return IExecuteWithSignature<int>("getImagePixHeight", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/mtp/MtpObjectInfo.html#getFormat()"/> 
+        /// <see href="https://developer.android.com/reference/android/mtp/MtpObjectInfo.html#getImagePixWidth()"/>
         /// </summary>
-        public int Format
+        /// <returns><see cref="int"/></returns>
+        public int GetImagePixWidth()
         {
-            get { return IExecuteWithSignature<int>("getFormat", "()I"); }
+            return IExecuteWithSignature<int>("getImagePixWidth", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/mtp/MtpObjectInfo.html#getImagePixDepth()"/> 
+        /// <see href="https://developer.android.com/reference/android/mtp/MtpObjectInfo.html#getObjectHandle()"/>
         /// </summary>
-        public int ImagePixDepth
+        /// <returns><see cref="int"/></returns>
+        public int GetObjectHandle()
         {
-            get { return IExecuteWithSignature<int>("getImagePixDepth", "()I"); }
+            return IExecuteWithSignature<int>("getObjectHandle", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/mtp/MtpObjectInfo.html#getImagePixDepthLong()"/> 
+        /// <see href="https://developer.android.com/reference/android/mtp/MtpObjectInfo.html#getParent()"/>
         /// </summary>
-        public long ImagePixDepthLong
+        /// <returns><see cref="int"/></returns>
+        public int GetParent()
         {
-            get { return IExecuteWithSignature<long>("getImagePixDepthLong", "()J"); }
+            return IExecuteWithSignature<int>("getParent", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/mtp/MtpObjectInfo.html#getImagePixHeight()"/> 
+        /// <see href="https://developer.android.com/reference/android/mtp/MtpObjectInfo.html#getProtectionStatus()"/>
         /// </summary>
-        public int ImagePixHeight
+        /// <returns><see cref="int"/></returns>
+        public int GetProtectionStatus()
         {
-            get { return IExecuteWithSignature<int>("getImagePixHeight", "()I"); }
+            return IExecuteWithSignature<int>("getProtectionStatus", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/mtp/MtpObjectInfo.html#getImagePixHeightLong()"/> 
+        /// <see href="https://developer.android.com/reference/android/mtp/MtpObjectInfo.html#getSequenceNumber()"/>
         /// </summary>
-        public long ImagePixHeightLong
+        /// <returns><see cref="int"/></returns>
+        public int GetSequenceNumber()
         {
-            get { return IExecuteWithSignature<long>("getImagePixHeightLong", "()J"); }
+            return IExecuteWithSignature<int>("getSequenceNumber", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/mtp/MtpObjectInfo.html#getImagePixWidth()"/> 
+        /// <see href="https://developer.android.com/reference/android/mtp/MtpObjectInfo.html#getStorageId()"/>
         /// </summary>
-        public int ImagePixWidth
+        /// <returns><see cref="int"/></returns>
+        public int GetStorageId()
         {
-            get { return IExecuteWithSignature<int>("getImagePixWidth", "()I"); }
+            return IExecuteWithSignature<int>("getStorageId", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/mtp/MtpObjectInfo.html#getImagePixWidthLong()"/> 
+        /// <see href="https://developer.android.com/reference/android/mtp/MtpObjectInfo.html#getThumbCompressedSize()"/>
         /// </summary>
-        public long ImagePixWidthLong
+        /// <returns><see cref="int"/></returns>
+        public int GetThumbCompressedSize()
         {
-            get { return IExecuteWithSignature<long>("getImagePixWidthLong", "()J"); }
+            return IExecuteWithSignature<int>("getThumbCompressedSize", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/mtp/MtpObjectInfo.html#getKeywords()"/> 
+        /// <see href="https://developer.android.com/reference/android/mtp/MtpObjectInfo.html#getThumbFormat()"/>
         /// </summary>
-        public Java.Lang.String Keywords
+        /// <returns><see cref="int"/></returns>
+        public int GetThumbFormat()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getKeywords", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<int>("getThumbFormat", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/mtp/MtpObjectInfo.html#getName()"/> 
+        /// <see href="https://developer.android.com/reference/android/mtp/MtpObjectInfo.html#getThumbPixHeight()"/>
         /// </summary>
-        public Java.Lang.String Name
+        /// <returns><see cref="int"/></returns>
+        public int GetThumbPixHeight()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<int>("getThumbPixHeight", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/mtp/MtpObjectInfo.html#getObjectHandle()"/> 
+        /// <see href="https://developer.android.com/reference/android/mtp/MtpObjectInfo.html#getThumbPixWidth()"/>
         /// </summary>
-        public int ObjectHandle
+        /// <returns><see cref="int"/></returns>
+        public int GetThumbPixWidth()
         {
-            get { return IExecuteWithSignature<int>("getObjectHandle", "()I"); }
+            return IExecuteWithSignature<int>("getThumbPixWidth", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/mtp/MtpObjectInfo.html#getParent()"/> 
+        /// <see href="https://developer.android.com/reference/android/mtp/MtpObjectInfo.html#getKeywords()"/>
         /// </summary>
-        public int Parent
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetKeywords()
         {
-            get { return IExecuteWithSignature<int>("getParent", "()I"); }
+            return IExecuteWithSignature<Java.Lang.String>("getKeywords", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/mtp/MtpObjectInfo.html#getProtectionStatus()"/> 
+        /// <see href="https://developer.android.com/reference/android/mtp/MtpObjectInfo.html#getName()"/>
         /// </summary>
-        public int ProtectionStatus
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetName()
         {
-            get { return IExecuteWithSignature<int>("getProtectionStatus", "()I"); }
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/mtp/MtpObjectInfo.html#getSequenceNumber()"/> 
+        /// <see href="https://developer.android.com/reference/android/mtp/MtpObjectInfo.html#getCompressedSizeLong()"/>
         /// </summary>
-        public int SequenceNumber
+        /// <returns><see cref="long"/></returns>
+        public long GetCompressedSizeLong()
         {
-            get { return IExecuteWithSignature<int>("getSequenceNumber", "()I"); }
+            return IExecuteWithSignature<long>("getCompressedSizeLong", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/mtp/MtpObjectInfo.html#getSequenceNumberLong()"/> 
+        /// <see href="https://developer.android.com/reference/android/mtp/MtpObjectInfo.html#getDateCreated()"/>
         /// </summary>
-        public long SequenceNumberLong
+        /// <returns><see cref="long"/></returns>
+        public long GetDateCreated()
         {
-            get { return IExecuteWithSignature<long>("getSequenceNumberLong", "()J"); }
+            return IExecuteWithSignature<long>("getDateCreated", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/mtp/MtpObjectInfo.html#getStorageId()"/> 
+        /// <see href="https://developer.android.com/reference/android/mtp/MtpObjectInfo.html#getDateModified()"/>
         /// </summary>
-        public int StorageId
+        /// <returns><see cref="long"/></returns>
+        public long GetDateModified()
         {
-            get { return IExecuteWithSignature<int>("getStorageId", "()I"); }
+            return IExecuteWithSignature<long>("getDateModified", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/mtp/MtpObjectInfo.html#getThumbCompressedSize()"/> 
+        /// <see href="https://developer.android.com/reference/android/mtp/MtpObjectInfo.html#getImagePixDepthLong()"/>
         /// </summary>
-        public int ThumbCompressedSize
+        /// <returns><see cref="long"/></returns>
+        public long GetImagePixDepthLong()
         {
-            get { return IExecuteWithSignature<int>("getThumbCompressedSize", "()I"); }
+            return IExecuteWithSignature<long>("getImagePixDepthLong", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/mtp/MtpObjectInfo.html#getThumbCompressedSizeLong()"/> 
+        /// <see href="https://developer.android.com/reference/android/mtp/MtpObjectInfo.html#getImagePixHeightLong()"/>
         /// </summary>
-        public long ThumbCompressedSizeLong
+        /// <returns><see cref="long"/></returns>
+        public long GetImagePixHeightLong()
         {
-            get { return IExecuteWithSignature<long>("getThumbCompressedSizeLong", "()J"); }
+            return IExecuteWithSignature<long>("getImagePixHeightLong", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/mtp/MtpObjectInfo.html#getThumbFormat()"/> 
+        /// <see href="https://developer.android.com/reference/android/mtp/MtpObjectInfo.html#getImagePixWidthLong()"/>
         /// </summary>
-        public int ThumbFormat
+        /// <returns><see cref="long"/></returns>
+        public long GetImagePixWidthLong()
         {
-            get { return IExecuteWithSignature<int>("getThumbFormat", "()I"); }
+            return IExecuteWithSignature<long>("getImagePixWidthLong", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/mtp/MtpObjectInfo.html#getThumbPixHeight()"/> 
+        /// <see href="https://developer.android.com/reference/android/mtp/MtpObjectInfo.html#getSequenceNumberLong()"/>
         /// </summary>
-        public int ThumbPixHeight
+        /// <returns><see cref="long"/></returns>
+        public long GetSequenceNumberLong()
         {
-            get { return IExecuteWithSignature<int>("getThumbPixHeight", "()I"); }
+            return IExecuteWithSignature<long>("getSequenceNumberLong", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/mtp/MtpObjectInfo.html#getThumbPixHeightLong()"/> 
+        /// <see href="https://developer.android.com/reference/android/mtp/MtpObjectInfo.html#getThumbCompressedSizeLong()"/>
         /// </summary>
-        public long ThumbPixHeightLong
+        /// <returns><see cref="long"/></returns>
+        public long GetThumbCompressedSizeLong()
         {
-            get { return IExecuteWithSignature<long>("getThumbPixHeightLong", "()J"); }
+            return IExecuteWithSignature<long>("getThumbCompressedSizeLong", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/mtp/MtpObjectInfo.html#getThumbPixWidth()"/> 
+        /// <see href="https://developer.android.com/reference/android/mtp/MtpObjectInfo.html#getThumbPixHeightLong()"/>
         /// </summary>
-        public int ThumbPixWidth
+        /// <returns><see cref="long"/></returns>
+        public long GetThumbPixHeightLong()
         {
-            get { return IExecuteWithSignature<int>("getThumbPixWidth", "()I"); }
+            return IExecuteWithSignature<long>("getThumbPixHeightLong", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/mtp/MtpObjectInfo.html#getThumbPixWidthLong()"/> 
+        /// <see href="https://developer.android.com/reference/android/mtp/MtpObjectInfo.html#getThumbPixWidthLong()"/>
         /// </summary>
-        public long ThumbPixWidthLong
+        /// <returns><see cref="long"/></returns>
+        public long GetThumbPixWidthLong()
         {
-            get { return IExecuteWithSignature<long>("getThumbPixWidthLong", "()J"); }
+            return IExecuteWithSignature<long>("getThumbPixWidthLong", "()J");
         }
 
         #endregion

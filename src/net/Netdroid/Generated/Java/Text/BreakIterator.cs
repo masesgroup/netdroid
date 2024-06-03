@@ -38,7 +38,7 @@ namespace Java.Text
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/BreakIterator.html#DONE"/>
+        /// <see href="https://developer.android.com/reference/java/text/BreakIterator.html#DONE"/>
         /// </summary>
         public static int DONE { get { if (!_DONEReady) { _DONEContent = SGetField<int>(LocalBridgeClazz, "DONE"); _DONEReady = true; } return _DONEContent; } }
         private static int _DONEContent = default;
@@ -48,42 +48,15 @@ namespace Java.Text
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/BreakIterator.html#getAvailableLocales()"/> 
+        /// <see href="https://developer.android.com/reference/java/text/BreakIterator.html#getCharacterInstance()"/>
         /// </summary>
-        public static Java.Util.Locale[] AvailableLocales
+        /// <returns><see cref="Java.Text.BreakIterator"/></returns>
+        public static Java.Text.BreakIterator GetCharacterInstance()
         {
-            get { return SExecuteWithSignatureArray<Java.Util.Locale>(LocalBridgeClazz, "getAvailableLocales", "()[Ljava/util/Locale;"); }
+            return SExecuteWithSignature<Java.Text.BreakIterator>(LocalBridgeClazz, "getCharacterInstance", "()Ljava/text/BreakIterator;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/BreakIterator.html#getCharacterInstance()"/> 
-        /// </summary>
-        public static Java.Text.BreakIterator CharacterInstance
-        {
-            get { return SExecuteWithSignature<Java.Text.BreakIterator>(LocalBridgeClazz, "getCharacterInstance", "()Ljava/text/BreakIterator;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/BreakIterator.html#getLineInstance()"/> 
-        /// </summary>
-        public static Java.Text.BreakIterator LineInstance
-        {
-            get { return SExecuteWithSignature<Java.Text.BreakIterator>(LocalBridgeClazz, "getLineInstance", "()Ljava/text/BreakIterator;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/BreakIterator.html#getSentenceInstance()"/> 
-        /// </summary>
-        public static Java.Text.BreakIterator SentenceInstance
-        {
-            get { return SExecuteWithSignature<Java.Text.BreakIterator>(LocalBridgeClazz, "getSentenceInstance", "()Ljava/text/BreakIterator;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/BreakIterator.html#getWordInstance()"/> 
-        /// </summary>
-        public static Java.Text.BreakIterator WordInstance
-        {
-            get { return SExecuteWithSignature<Java.Text.BreakIterator>(LocalBridgeClazz, "getWordInstance", "()Ljava/text/BreakIterator;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/BreakIterator.html#getCharacterInstance(java.util.Locale)"/>
+        /// <see href="https://developer.android.com/reference/java/text/BreakIterator.html#getCharacterInstance(java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
         /// <returns><see cref="Java.Text.BreakIterator"/></returns>
@@ -92,7 +65,15 @@ namespace Java.Text
             return SExecuteWithSignature<Java.Text.BreakIterator>(LocalBridgeClazz, "getCharacterInstance", "(Ljava/util/Locale;)Ljava/text/BreakIterator;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/BreakIterator.html#getLineInstance(java.util.Locale)"/>
+        /// <see href="https://developer.android.com/reference/java/text/BreakIterator.html#getLineInstance()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Text.BreakIterator"/></returns>
+        public static Java.Text.BreakIterator GetLineInstance()
+        {
+            return SExecuteWithSignature<Java.Text.BreakIterator>(LocalBridgeClazz, "getLineInstance", "()Ljava/text/BreakIterator;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/text/BreakIterator.html#getLineInstance(java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
         /// <returns><see cref="Java.Text.BreakIterator"/></returns>
@@ -101,7 +82,15 @@ namespace Java.Text
             return SExecuteWithSignature<Java.Text.BreakIterator>(LocalBridgeClazz, "getLineInstance", "(Ljava/util/Locale;)Ljava/text/BreakIterator;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/BreakIterator.html#getSentenceInstance(java.util.Locale)"/>
+        /// <see href="https://developer.android.com/reference/java/text/BreakIterator.html#getSentenceInstance()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Text.BreakIterator"/></returns>
+        public static Java.Text.BreakIterator GetSentenceInstance()
+        {
+            return SExecuteWithSignature<Java.Text.BreakIterator>(LocalBridgeClazz, "getSentenceInstance", "()Ljava/text/BreakIterator;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/text/BreakIterator.html#getSentenceInstance(java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
         /// <returns><see cref="Java.Text.BreakIterator"/></returns>
@@ -110,7 +99,15 @@ namespace Java.Text
             return SExecuteWithSignature<Java.Text.BreakIterator>(LocalBridgeClazz, "getSentenceInstance", "(Ljava/util/Locale;)Ljava/text/BreakIterator;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/BreakIterator.html#getWordInstance(java.util.Locale)"/>
+        /// <see href="https://developer.android.com/reference/java/text/BreakIterator.html#getWordInstance()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Text.BreakIterator"/></returns>
+        public static Java.Text.BreakIterator GetWordInstance()
+        {
+            return SExecuteWithSignature<Java.Text.BreakIterator>(LocalBridgeClazz, "getWordInstance", "()Ljava/text/BreakIterator;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/text/BreakIterator.html#getWordInstance(java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
         /// <returns><see cref="Java.Text.BreakIterator"/></returns>
@@ -118,19 +115,20 @@ namespace Java.Text
         {
             return SExecuteWithSignature<Java.Text.BreakIterator>(LocalBridgeClazz, "getWordInstance", "(Ljava/util/Locale;)Ljava/text/BreakIterator;", arg0);
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/text/BreakIterator.html#getAvailableLocales()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Locale"/></returns>
+        public static Java.Util.Locale[] GetAvailableLocales()
+        {
+            return SExecuteWithSignatureArray<Java.Util.Locale>(LocalBridgeClazz, "getAvailableLocales", "()[Ljava/util/Locale;");
+        }
 
         #endregion
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/BreakIterator.html#getText()"/> 
-        /// </summary>
-        public Java.Text.CharacterIterator Text
-        {
-            get { return IExecuteWithSignature<Java.Text.CharacterIterator>("getText", "()Ljava/text/CharacterIterator;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/BreakIterator.html#current()"/>
+        /// <see href="https://developer.android.com/reference/java/text/BreakIterator.html#current()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int Current()
@@ -138,7 +136,7 @@ namespace Java.Text
             return IExecuteWithSignature<int>("current", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/BreakIterator.html#first()"/>
+        /// <see href="https://developer.android.com/reference/java/text/BreakIterator.html#first()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int First()
@@ -146,7 +144,7 @@ namespace Java.Text
             return IExecuteWithSignature<int>("first", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/BreakIterator.html#following(int)"/>
+        /// <see href="https://developer.android.com/reference/java/text/BreakIterator.html#following(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
@@ -155,7 +153,7 @@ namespace Java.Text
             return IExecuteWithSignature<int>("following", "(I)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/BreakIterator.html#last()"/>
+        /// <see href="https://developer.android.com/reference/java/text/BreakIterator.html#last()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int Last()
@@ -163,7 +161,7 @@ namespace Java.Text
             return IExecuteWithSignature<int>("last", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/BreakIterator.html#next()"/>
+        /// <see href="https://developer.android.com/reference/java/text/BreakIterator.html#next()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int Next()
@@ -171,7 +169,7 @@ namespace Java.Text
             return IExecuteWithSignature<int>("next", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/BreakIterator.html#next(int)"/>
+        /// <see href="https://developer.android.com/reference/java/text/BreakIterator.html#next(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
@@ -180,7 +178,7 @@ namespace Java.Text
             return IExecuteWithSignature<int>("next", "(I)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/BreakIterator.html#previous()"/>
+        /// <see href="https://developer.android.com/reference/java/text/BreakIterator.html#previous()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int Previous()
@@ -188,7 +186,15 @@ namespace Java.Text
             return IExecuteWithSignature<int>("previous", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/BreakIterator.html#setText(java.text.CharacterIterator)"/>
+        /// <see href="https://developer.android.com/reference/java/text/BreakIterator.html#getText()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Text.CharacterIterator"/></returns>
+        public Java.Text.CharacterIterator GetText()
+        {
+            return IExecuteWithSignature<Java.Text.CharacterIterator>("getText", "()Ljava/text/CharacterIterator;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/text/BreakIterator.html#setText(java.text.CharacterIterator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Text.CharacterIterator"/></param>
         public void SetText(Java.Text.CharacterIterator arg0)
@@ -196,7 +202,7 @@ namespace Java.Text
             IExecuteWithSignature("setText", "(Ljava/text/CharacterIterator;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/BreakIterator.html#isBoundary(int)"/>
+        /// <see href="https://developer.android.com/reference/java/text/BreakIterator.html#isBoundary(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -205,7 +211,7 @@ namespace Java.Text
             return IExecuteWithSignature<bool>("isBoundary", "(I)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/BreakIterator.html#preceding(int)"/>
+        /// <see href="https://developer.android.com/reference/java/text/BreakIterator.html#preceding(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
@@ -214,7 +220,7 @@ namespace Java.Text
             return IExecuteWithSignature<int>("preceding", "(I)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/BreakIterator.html#setText(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/text/BreakIterator.html#setText(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void SetText(Java.Lang.String arg0)

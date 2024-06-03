@@ -78,7 +78,7 @@ namespace Android.Location
         /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see cref="Java.Util.List"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Util.List<Android.Location.Address> GetFromLocation(double arg0, double arg1, int arg2)
         {
             return IExecute<Java.Util.List<Android.Location.Address>>("getFromLocation", arg0, arg1, arg2);
@@ -94,7 +94,7 @@ namespace Android.Location
         /// <param name="arg5"><see cref="double"/></param>
         /// <returns><see cref="Java.Util.List"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Util.List<Android.Location.Address> GetFromLocationName(Java.Lang.String arg0, int arg1, double arg2, double arg3, double arg4, double arg5)
         {
             return IExecute<Java.Util.List<Android.Location.Address>>("getFromLocationName", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -106,7 +106,7 @@ namespace Android.Location
         /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="Java.Util.List"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Util.List<Android.Location.Address> GetFromLocationName(Java.Lang.String arg0, int arg1)
         {
             return IExecute<Java.Util.List<Android.Location.Address>>("getFromLocationName", arg0, arg1);
@@ -175,8 +175,8 @@ namespace Android.Location
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onGeocode", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.List<Android.Location.Address>>>>(OnGeocodeEventHandler));
-                AddEventHandler("onError", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(OnErrorEventHandler));
+                AddEventHandler("onGeocode", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.List<Android.Location.Address>>>>(OnGeocodeEventHandler));
+                AddEventHandler("onError", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(OnErrorEventHandler));
 
             }
 
@@ -184,7 +184,7 @@ namespace Android.Location
             /// Handler for <see href="https://developer.android.com/reference/android/location/Geocoder.GeocodeListener.html#onGeocode(java.util.List)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnGeocode"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Java.Util.List<Android.Location.Address>> OnOnGeocode { get; set; } = null;
+            public global::System.Action<Java.Util.List<Android.Location.Address>> OnOnGeocode { get; set; } = null;
 
             void OnGeocodeEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.List<Android.Location.Address>>> data)
             {
@@ -214,7 +214,7 @@ namespace Android.Location
             /// Handler for <see href="https://developer.android.com/reference/android/location/Geocoder.GeocodeListener.html#onError(java.lang.String)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnError"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Java.Lang.String> OnOnError { get; set; } = null;
+            public global::System.Action<Java.Lang.String> OnOnError { get; set; } = null;
 
             void OnErrorEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
             {

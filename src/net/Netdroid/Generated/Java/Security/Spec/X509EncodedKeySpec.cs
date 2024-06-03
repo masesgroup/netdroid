@@ -30,7 +30,7 @@ namespace Java.Security.Spec
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/X509EncodedKeySpec.html#%3Cinit%3E(byte[],java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/security/spec/X509EncodedKeySpec.html#%3Cinit%3E(byte[],java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -39,7 +39,7 @@ namespace Java.Security.Spec
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/X509EncodedKeySpec.html#%3Cinit%3E(byte[])"/>
+        /// <see href="https://developer.android.com/reference/java/security/spec/X509EncodedKeySpec.html#%3Cinit%3E(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         public X509EncodedKeySpec(byte[] arg0)

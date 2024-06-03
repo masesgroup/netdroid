@@ -69,26 +69,28 @@ namespace Android.View
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/KeyboardShortcutGroup.html#getItems()"/> 
-        /// </summary>
-        public Java.Util.List<Android.View.KeyboardShortcutInfo> Items
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.View.KeyboardShortcutInfo>>("getItems", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/KeyboardShortcutGroup.html#getLabel()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence Label
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getLabel", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/KeyboardShortcutGroup.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/KeyboardShortcutGroup.html#getLabel()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetLabel()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getLabel", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/KeyboardShortcutGroup.html#getItems()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.View.KeyboardShortcutInfo> GetItems()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.View.KeyboardShortcutInfo>>("getItems", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/KeyboardShortcutGroup.html#addItem(android.view.KeyboardShortcutInfo)"/>

@@ -30,7 +30,7 @@ namespace Java.Io
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/File.html#%3Cinit%3E(java.io.File,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/io/File.html#%3Cinit%3E(java.io.File,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -39,7 +39,7 @@ namespace Java.Io
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/File.html#%3Cinit%3E(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/io/File.html#%3Cinit%3E(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -48,7 +48,7 @@ namespace Java.Io
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/File.html#%3Cinit%3E(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/io/File.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public File(Java.Lang.String arg0)
@@ -56,7 +56,7 @@ namespace Java.Io
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/File.html#%3Cinit%3E(java.net.URI)"/>
+        /// <see href="https://developer.android.com/reference/java/io/File.html#%3Cinit%3E(java.net.URI)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.URI"/></param>
         public File(Java.Net.URI arg0)
@@ -80,25 +80,25 @@ namespace Java.Io
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/File.html#pathSeparatorChar"/>
+        /// <see href="https://developer.android.com/reference/java/io/File.html#pathSeparatorChar"/>
         /// </summary>
         public static char pathSeparatorChar { get { if (!_pathSeparatorCharReady) { _pathSeparatorCharContent = SGetField<char>(LocalBridgeClazz, "pathSeparatorChar"); _pathSeparatorCharReady = true; } return _pathSeparatorCharContent; } }
         private static char _pathSeparatorCharContent = default;
         private static bool _pathSeparatorCharReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/File.html#separatorChar"/>
+        /// <see href="https://developer.android.com/reference/java/io/File.html#separatorChar"/>
         /// </summary>
         public static char separatorChar { get { if (!_separatorCharReady) { _separatorCharContent = SGetField<char>(LocalBridgeClazz, "separatorChar"); _separatorCharReady = true; } return _separatorCharContent; } }
         private static char _separatorCharContent = default;
         private static bool _separatorCharReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/File.html#pathSeparator"/>
+        /// <see href="https://developer.android.com/reference/java/io/File.html#pathSeparator"/>
         /// </summary>
         public static Java.Lang.String pathSeparator { get { if (!_pathSeparatorReady) { _pathSeparatorContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "pathSeparator"); _pathSeparatorReady = true; } return _pathSeparatorContent; } }
         private static Java.Lang.String _pathSeparatorContent = default;
         private static bool _pathSeparatorReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/File.html#separator"/>
+        /// <see href="https://developer.android.com/reference/java/io/File.html#separator"/>
         /// </summary>
         public static Java.Lang.String separator { get { if (!_separatorReady) { _separatorContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "separator"); _separatorReady = true; } return _separatorContent; } }
         private static Java.Lang.String _separatorContent = default;
@@ -108,7 +108,7 @@ namespace Java.Io
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/File.html#createTempFile(java.lang.String,java.lang.String,java.io.File)"/>
+        /// <see href="https://developer.android.com/reference/java/io/File.html#createTempFile(java.lang.String,java.lang.String,java.io.File)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -120,7 +120,7 @@ namespace Java.Io
             return SExecute<Java.Io.File>(LocalBridgeClazz, "createTempFile", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/File.html#createTempFile(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/io/File.html#createTempFile(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -131,7 +131,7 @@ namespace Java.Io
             return SExecute<Java.Io.File>(LocalBridgeClazz, "createTempFile", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/File.html#listRoots()"/>
+        /// <see href="https://developer.android.com/reference/java/io/File.html#listRoots()"/>
         /// </summary>
         /// <returns><see cref="Java.Io.File"/></returns>
         public static Java.Io.File[] ListRoots()
@@ -143,84 +143,7 @@ namespace Java.Io
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/File.html#getAbsoluteFile()"/> 
-        /// </summary>
-        public Java.Io.File AbsoluteFile
-        {
-            get { return IExecuteWithSignature<Java.Io.File>("getAbsoluteFile", "()Ljava/io/File;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/File.html#getAbsolutePath()"/> 
-        /// </summary>
-        public Java.Lang.String AbsolutePath
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAbsolutePath", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/File.html#getCanonicalFile()"/> 
-        /// </summary>
-        public Java.Io.File CanonicalFile
-        {
-            get { return IExecuteWithSignature<Java.Io.File>("getCanonicalFile", "()Ljava/io/File;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/File.html#getCanonicalPath()"/> 
-        /// </summary>
-        public Java.Lang.String CanonicalPath
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCanonicalPath", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/File.html#getFreeSpace()"/> 
-        /// </summary>
-        public long FreeSpace
-        {
-            get { return IExecuteWithSignature<long>("getFreeSpace", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/File.html#getName()"/> 
-        /// </summary>
-        public Java.Lang.String Name
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/File.html#getParent()"/> 
-        /// </summary>
-        public Java.Lang.String Parent
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getParent", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/File.html#getParentFile()"/> 
-        /// </summary>
-        public Java.Io.File ParentFile
-        {
-            get { return IExecuteWithSignature<Java.Io.File>("getParentFile", "()Ljava/io/File;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/File.html#getPath()"/> 
-        /// </summary>
-        public Java.Lang.String Path
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPath", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/File.html#getTotalSpace()"/> 
-        /// </summary>
-        public long TotalSpace
-        {
-            get { return IExecuteWithSignature<long>("getTotalSpace", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/File.html#getUsableSpace()"/> 
-        /// </summary>
-        public long UsableSpace
-        {
-            get { return IExecuteWithSignature<long>("getUsableSpace", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/File.html#canExecute()"/>
+        /// <see href="https://developer.android.com/reference/java/io/File.html#canExecute()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool CanExecute()
@@ -228,7 +151,7 @@ namespace Java.Io
             return IExecuteWithSignature<bool>("canExecute", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/File.html#canRead()"/>
+        /// <see href="https://developer.android.com/reference/java/io/File.html#canRead()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool CanRead()
@@ -236,7 +159,7 @@ namespace Java.Io
             return IExecuteWithSignature<bool>("canRead", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/File.html#canWrite()"/>
+        /// <see href="https://developer.android.com/reference/java/io/File.html#canWrite()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool CanWrite()
@@ -244,7 +167,7 @@ namespace Java.Io
             return IExecuteWithSignature<bool>("canWrite", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/File.html#createNewFile()"/>
+        /// <see href="https://developer.android.com/reference/java/io/File.html#createNewFile()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -253,7 +176,7 @@ namespace Java.Io
             return IExecuteWithSignature<bool>("createNewFile", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/File.html#delete()"/>
+        /// <see href="https://developer.android.com/reference/java/io/File.html#delete()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool Delete()
@@ -261,7 +184,7 @@ namespace Java.Io
             return IExecuteWithSignature<bool>("delete", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/File.html#exists()"/>
+        /// <see href="https://developer.android.com/reference/java/io/File.html#exists()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool Exists()
@@ -269,7 +192,7 @@ namespace Java.Io
             return IExecuteWithSignature<bool>("exists", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/File.html#isAbsolute()"/>
+        /// <see href="https://developer.android.com/reference/java/io/File.html#isAbsolute()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsAbsolute()
@@ -277,7 +200,7 @@ namespace Java.Io
             return IExecuteWithSignature<bool>("isAbsolute", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/File.html#isDirectory()"/>
+        /// <see href="https://developer.android.com/reference/java/io/File.html#isDirectory()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsDirectory()
@@ -285,7 +208,7 @@ namespace Java.Io
             return IExecuteWithSignature<bool>("isDirectory", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/File.html#isFile()"/>
+        /// <see href="https://developer.android.com/reference/java/io/File.html#isFile()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsFile()
@@ -293,7 +216,7 @@ namespace Java.Io
             return IExecuteWithSignature<bool>("isFile", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/File.html#isHidden()"/>
+        /// <see href="https://developer.android.com/reference/java/io/File.html#isHidden()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsHidden()
@@ -301,7 +224,7 @@ namespace Java.Io
             return IExecuteWithSignature<bool>("isHidden", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/File.html#mkdir()"/>
+        /// <see href="https://developer.android.com/reference/java/io/File.html#mkdir()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool Mkdir()
@@ -309,7 +232,7 @@ namespace Java.Io
             return IExecuteWithSignature<bool>("mkdir", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/File.html#mkdirs()"/>
+        /// <see href="https://developer.android.com/reference/java/io/File.html#mkdirs()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool Mkdirs()
@@ -317,7 +240,7 @@ namespace Java.Io
             return IExecuteWithSignature<bool>("mkdirs", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/File.html#renameTo(java.io.File)"/>
+        /// <see href="https://developer.android.com/reference/java/io/File.html#renameTo(java.io.File)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -326,7 +249,7 @@ namespace Java.Io
             return IExecuteWithSignature<bool>("renameTo", "(Ljava/io/File;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/File.html#setExecutable(boolean,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/io/File.html#setExecutable(boolean,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -336,7 +259,7 @@ namespace Java.Io
             return IExecute<bool>("setExecutable", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/File.html#setExecutable(boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/io/File.html#setExecutable(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -345,7 +268,7 @@ namespace Java.Io
             return IExecuteWithSignature<bool>("setExecutable", "(Z)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/File.html#setLastModified(long)"/>
+        /// <see href="https://developer.android.com/reference/java/io/File.html#setLastModified(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -354,7 +277,7 @@ namespace Java.Io
             return IExecuteWithSignature<bool>("setLastModified", "(J)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/File.html#setReadable(boolean,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/io/File.html#setReadable(boolean,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -364,7 +287,7 @@ namespace Java.Io
             return IExecute<bool>("setReadable", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/File.html#setReadable(boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/io/File.html#setReadable(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -373,7 +296,7 @@ namespace Java.Io
             return IExecuteWithSignature<bool>("setReadable", "(Z)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/File.html#setReadOnly()"/>
+        /// <see href="https://developer.android.com/reference/java/io/File.html#setReadOnly()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool SetReadOnly()
@@ -381,7 +304,7 @@ namespace Java.Io
             return IExecuteWithSignature<bool>("setReadOnly", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/File.html#setWritable(boolean,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/io/File.html#setWritable(boolean,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -391,7 +314,7 @@ namespace Java.Io
             return IExecute<bool>("setWritable", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/File.html#setWritable(boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/io/File.html#setWritable(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -400,7 +323,7 @@ namespace Java.Io
             return IExecuteWithSignature<bool>("setWritable", "(Z)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/File.html#compareTo(java.io.File)"/>
+        /// <see href="https://developer.android.com/reference/java/io/File.html#compareTo(java.io.File)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
         /// <returns><see cref="int"/></returns>
@@ -409,7 +332,7 @@ namespace Java.Io
             return IExecuteWithSignature<int>("compareTo", "(Ljava/io/File;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/File.html#compareTo(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/io/File.html#compareTo(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="int"/></returns>
@@ -418,7 +341,32 @@ namespace Java.Io
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/File.html#listFiles()"/>
+        /// <see href="https://developer.android.com/reference/java/io/File.html#getAbsoluteFile()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Io.File"/></returns>
+        public Java.Io.File GetAbsoluteFile()
+        {
+            return IExecuteWithSignature<Java.Io.File>("getAbsoluteFile", "()Ljava/io/File;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/io/File.html#getCanonicalFile()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Io.File"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Io.File GetCanonicalFile()
+        {
+            return IExecuteWithSignature<Java.Io.File>("getCanonicalFile", "()Ljava/io/File;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/io/File.html#getParentFile()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Io.File"/></returns>
+        public Java.Io.File GetParentFile()
+        {
+            return IExecuteWithSignature<Java.Io.File>("getParentFile", "()Ljava/io/File;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/io/File.html#listFiles()"/>
         /// </summary>
         /// <returns><see cref="Java.Io.File"/></returns>
         public Java.Io.File[] ListFiles()
@@ -426,7 +374,7 @@ namespace Java.Io
             return IExecuteWithSignatureArray<Java.Io.File>("listFiles", "()[Ljava/io/File;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/File.html#listFiles(java.io.FileFilter)"/>
+        /// <see href="https://developer.android.com/reference/java/io/File.html#listFiles(java.io.FileFilter)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.FileFilter"/></param>
         /// <returns><see cref="Java.Io.File"/></returns>
@@ -435,7 +383,7 @@ namespace Java.Io
             return IExecuteWithSignatureArray<Java.Io.File>("listFiles", "(Ljava/io/FileFilter;)[Ljava/io/File;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/File.html#listFiles(java.io.FilenameFilter)"/>
+        /// <see href="https://developer.android.com/reference/java/io/File.html#listFiles(java.io.FilenameFilter)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.FilenameFilter"/></param>
         /// <returns><see cref="Java.Io.File"/></returns>
@@ -444,7 +392,48 @@ namespace Java.Io
             return IExecuteWithSignatureArray<Java.Io.File>("listFiles", "(Ljava/io/FilenameFilter;)[Ljava/io/File;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/File.html#list()"/>
+        /// <see href="https://developer.android.com/reference/java/io/File.html#getAbsolutePath()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetAbsolutePath()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getAbsolutePath", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/io/File.html#getCanonicalPath()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Lang.String GetCanonicalPath()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getCanonicalPath", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/io/File.html#getName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/io/File.html#getParent()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetParent()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getParent", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/io/File.html#getPath()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPath()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPath", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/io/File.html#list()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String[] List()
@@ -452,7 +441,7 @@ namespace Java.Io
             return IExecuteWithSignatureArray<Java.Lang.String>("list", "()[Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/File.html#list(java.io.FilenameFilter)"/>
+        /// <see href="https://developer.android.com/reference/java/io/File.html#list(java.io.FilenameFilter)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.FilenameFilter"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -461,7 +450,7 @@ namespace Java.Io
             return IExecuteWithSignatureArray<Java.Lang.String>("list", "(Ljava/io/FilenameFilter;)[Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/File.html#toURI()"/>
+        /// <see href="https://developer.android.com/reference/java/io/File.html#toURI()"/>
         /// </summary>
         /// <returns><see cref="Java.Net.URI"/></returns>
         public Java.Net.URI ToURI()
@@ -469,17 +458,17 @@ namespace Java.Io
             return IExecuteWithSignature<Java.Net.URI>("toURI", "()Ljava/net/URI;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/File.html#toURL()"/>
+        /// <see href="https://developer.android.com/reference/java/io/File.html#toURL()"/>
         /// </summary>
         /// <returns><see cref="Java.Net.URL"/></returns>
         /// <exception cref="Java.Net.MalformedURLException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Net.URL ToURL()
         {
             return IExecuteWithSignature<Java.Net.URL>("toURL", "()Ljava/net/URL;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/File.html#toPath()"/>
+        /// <see href="https://developer.android.com/reference/java/io/File.html#toPath()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.File.Path"/></returns>
         public Java.Nio.File.Path ToPath()
@@ -487,7 +476,31 @@ namespace Java.Io
             return IExecuteWithSignature<Java.Nio.File.Path>("toPath", "()Ljava/nio/file/Path;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/File.html#lastModified()"/>
+        /// <see href="https://developer.android.com/reference/java/io/File.html#getFreeSpace()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetFreeSpace()
+        {
+            return IExecuteWithSignature<long>("getFreeSpace", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/io/File.html#getTotalSpace()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetTotalSpace()
+        {
+            return IExecuteWithSignature<long>("getTotalSpace", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/io/File.html#getUsableSpace()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetUsableSpace()
+        {
+            return IExecuteWithSignature<long>("getUsableSpace", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/io/File.html#lastModified()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
         public long LastModified()
@@ -495,7 +508,7 @@ namespace Java.Io
             return IExecuteWithSignature<long>("lastModified", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/File.html#length()"/>
+        /// <see href="https://developer.android.com/reference/java/io/File.html#length()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
         public long Length()
@@ -503,7 +516,7 @@ namespace Java.Io
             return IExecuteWithSignature<long>("length", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/File.html#deleteOnExit()"/>
+        /// <see href="https://developer.android.com/reference/java/io/File.html#deleteOnExit()"/>
         /// </summary>
         public void DeleteOnExit()
         {

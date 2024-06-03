@@ -29,6 +29,32 @@ namespace Android.Widget
     public partial class SimpleCursorAdapter
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/SimpleCursorAdapter.html#%3Cinit%3E(android.content.Context,int,android.database.Cursor,java.lang.String[],int[],int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Context"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="Android.Database.Cursor"/></param>
+        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        /// <param name="arg5"><see cref="int"/></param>
+        public SimpleCursorAdapter(Android.Content.Context arg0, int arg1, Android.Database.Cursor arg2, Java.Lang.String[] arg3, int[] arg4, int arg5)
+            : base(arg0, arg1, arg2, arg3, arg4, arg5)
+        {
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/SimpleCursorAdapter.html#%3Cinit%3E(android.content.Context,int,android.database.Cursor,java.lang.String[],int[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Context"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <param name="arg2"><see cref="Android.Database.Cursor"/></param>
+        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg4"><see cref="int"/></param>
+        [global::System.Obsolete()]
+        public SimpleCursorAdapter(Android.Content.Context arg0, int arg1, Android.Database.Cursor arg2, Java.Lang.String[] arg3, int[] arg4)
+            : base(arg0, arg1, arg2, arg3, arg4)
+        {
+        }
 
         #endregion
 
@@ -46,668 +72,80 @@ namespace Android.Widget
 
         #region Instance methods
         /// <summary>
-        /// Handlers initializer for <see cref="SimpleCursorAdapter"/>
-        /// </summary>
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("getDropDownViewTheme", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetDropDownViewThemeEventHandler));
-            AddEventHandler("getCursor", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetCursorEventHandler));
-            AddEventHandler("runQueryOnBackgroundThread", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.CharSequence>>>(RunQueryOnBackgroundThreadEventHandler));
-            AddEventHandler("getFilter", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetFilterEventHandler));
-            AddEventHandler("getFilterQueryProvider", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetFilterQueryProviderEventHandler));
-            AddEventHandler("getCursorToStringConverter", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetCursorToStringConverterEventHandler));
-            AddEventHandler("getViewBinder", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetViewBinderEventHandler));
-            AddEventHandler("areAllItemsEnabled", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(AreAllItemsEnabledEventHandler));
-            AddEventHandler("isEmpty", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(IsEmptyEventHandler));
-            AddEventHandler("isEnabled", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(IsEnabledEventHandler));
-            AddEventHandler("getItemViewType", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(GetItemViewTypeEventHandler));
-            AddEventHandler("getViewTypeCount", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetViewTypeCountEventHandler));
-            AddEventHandler("getStringConversionColumn", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetStringConversionColumnEventHandler));
-            AddEventHandler("getAutofillOptions", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetAutofillOptionsEventHandler));
-            AddEventHandler("notifyDataSetChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(NotifyDataSetChangedEventHandler));
-            AddEventHandler("notifyDataSetInvalidated", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(NotifyDataSetInvalidatedEventHandler));
-            AddEventHandler("registerDataSetObserver", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Database.DataSetObserver>>>(RegisterDataSetObserverEventHandler));
-            AddEventHandler("setAutofillOptions", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.CharSequence[]>>>(SetAutofillOptionsEventHandler));
-            AddEventHandler("unregisterDataSetObserver", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Database.DataSetObserver>>>(UnregisterDataSetObserverEventHandler));
-            AddEventHandler("changeCursor", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Database.Cursor>>>(ChangeCursorEventHandler));
-            AddEventHandler("setFilterQueryProvider", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Widget.FilterQueryProvider>>>(SetFilterQueryProviderEventHandler));
-            AddEventHandler("setDropDownViewResource", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(SetDropDownViewResourceEventHandler));
-            AddEventHandler("setViewResource", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(SetViewResourceEventHandler));
-            AddEventHandler("changeCursorAndColumns", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Database.Cursor>>>(ChangeCursorAndColumnsEventHandler));
-            AddEventHandler("setCursorToStringConverter", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Widget.SimpleCursorAdapter.CursorToStringConverter>>>(SetCursorToStringConverterEventHandler));
-            AddEventHandler("setStringConversionColumn", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(SetStringConversionColumnEventHandler));
-            AddEventHandler("setViewBinder", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Widget.SimpleCursorAdapter.ViewBinder>>>(SetViewBinderEventHandler));
-            AddEventHandler("setViewImage", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Widget.ImageView>>>(SetViewImageEventHandler));
-            AddEventHandler("setViewText", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Widget.TextView>>>(SetViewTextEventHandler));
-
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/widget/CursorAdapter.html#getDropDownViewTheme()"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnGetDropDownViewTheme"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Android.Content.Res.Resources.Theme> OnGetDropDownViewTheme { get; set; } = null;
-
-        void GetDropDownViewThemeEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
-        {
-            var methodToExecute = (OnGetDropDownViewTheme != null) ? OnGetDropDownViewTheme : GetDropDownViewTheme;
-            var executionResult = methodToExecute.Invoke();
-            data.SetReturnValue(executionResult);
-        }
-
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/CursorAdapter.html#getDropDownViewTheme()"/>
-        /// </summary>
-        /// <returns><see cref="Android.Content.Res.Resources.Theme"/></returns>
-        public virtual Android.Content.Res.Resources.Theme GetDropDownViewTheme()
-        {
-            return default;
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/widget/CursorAdapter.html#getCursor()"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnGetCursor"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Android.Database.Cursor> OnGetCursor { get; set; } = null;
-
-        void GetCursorEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
-        {
-            var methodToExecute = (OnGetCursor != null) ? OnGetCursor : GetCursor;
-            var executionResult = methodToExecute.Invoke();
-            data.SetReturnValue(executionResult);
-        }
-
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/CursorAdapter.html#getCursor()"/>
-        /// </summary>
-        /// <returns><see cref="Android.Database.Cursor"/></returns>
-        public virtual Android.Database.Cursor GetCursor()
-        {
-            return default;
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/widget/CursorAdapter.html#runQueryOnBackgroundThread(java.lang.CharSequence)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnRunQueryOnBackgroundThread"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Lang.CharSequence, Android.Database.Cursor> OnRunQueryOnBackgroundThread { get; set; } = null;
-
-        void RunQueryOnBackgroundThreadEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.CharSequence>> data)
-        {
-            var methodToExecute = (OnRunQueryOnBackgroundThread != null) ? OnRunQueryOnBackgroundThread : RunQueryOnBackgroundThread;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
-            data.SetReturnValue(executionResult);
-        }
-
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/CursorAdapter.html#runQueryOnBackgroundThread(java.lang.CharSequence)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        /// <returns><see cref="Android.Database.Cursor"/></returns>
-        public virtual Android.Database.Cursor RunQueryOnBackgroundThread(Java.Lang.CharSequence arg0)
-        {
-            return default;
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/widget/CursorAdapter.html#getFilter()"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnGetFilter"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Android.Widget.Filter> OnGetFilter { get; set; } = null;
-
-        void GetFilterEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
-        {
-            var methodToExecute = (OnGetFilter != null) ? OnGetFilter : GetFilter;
-            var executionResult = methodToExecute.Invoke();
-            data.SetReturnValue(executionResult);
-        }
-
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/CursorAdapter.html#getFilter()"/>
-        /// </summary>
-        /// <returns><see cref="Android.Widget.Filter"/></returns>
-        public virtual Android.Widget.Filter GetFilter()
-        {
-            return default;
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/widget/CursorAdapter.html#getFilterQueryProvider()"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnGetFilterQueryProvider"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Android.Widget.FilterQueryProvider> OnGetFilterQueryProvider { get; set; } = null;
-
-        void GetFilterQueryProviderEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
-        {
-            var methodToExecute = (OnGetFilterQueryProvider != null) ? OnGetFilterQueryProvider : GetFilterQueryProvider;
-            var executionResult = methodToExecute.Invoke();
-            data.SetReturnValue(executionResult);
-        }
-
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/CursorAdapter.html#getFilterQueryProvider()"/>
-        /// </summary>
-        /// <returns><see cref="Android.Widget.FilterQueryProvider"/></returns>
-        public virtual Android.Widget.FilterQueryProvider GetFilterQueryProvider()
-        {
-            return default;
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/widget/SimpleCursorAdapter.html#getCursorToStringConverter()"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnGetCursorToStringConverter"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Android.Widget.SimpleCursorAdapter.CursorToStringConverter> OnGetCursorToStringConverter { get; set; } = null;
-
-        void GetCursorToStringConverterEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
-        {
-            var methodToExecute = (OnGetCursorToStringConverter != null) ? OnGetCursorToStringConverter : GetCursorToStringConverter;
-            var executionResult = methodToExecute.Invoke();
-            data.SetReturnValue(executionResult);
-        }
-
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/SimpleCursorAdapter.html#getCursorToStringConverter()"/>
         /// </summary>
         /// <returns><see cref="Android.Widget.SimpleCursorAdapter.CursorToStringConverter"/></returns>
-        public virtual Android.Widget.SimpleCursorAdapter.CursorToStringConverter GetCursorToStringConverter()
+        public Android.Widget.SimpleCursorAdapter.CursorToStringConverter GetCursorToStringConverter()
         {
-            return default;
+            return IExecuteWithSignature<Android.Widget.SimpleCursorAdapter.CursorToStringConverter>("getCursorToStringConverter", "()Landroid/widget/SimpleCursorAdapter$CursorToStringConverter;");
         }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/widget/SimpleCursorAdapter.html#getViewBinder()"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnGetViewBinder"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Android.Widget.SimpleCursorAdapter.ViewBinder> OnGetViewBinder { get; set; } = null;
-
-        void GetViewBinderEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
-        {
-            var methodToExecute = (OnGetViewBinder != null) ? OnGetViewBinder : GetViewBinder;
-            var executionResult = methodToExecute.Invoke();
-            data.SetReturnValue(executionResult);
-        }
-
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/SimpleCursorAdapter.html#getViewBinder()"/>
         /// </summary>
         /// <returns><see cref="Android.Widget.SimpleCursorAdapter.ViewBinder"/></returns>
-        public virtual Android.Widget.SimpleCursorAdapter.ViewBinder GetViewBinder()
+        public Android.Widget.SimpleCursorAdapter.ViewBinder GetViewBinder()
         {
-            return default;
+            return IExecuteWithSignature<Android.Widget.SimpleCursorAdapter.ViewBinder>("getViewBinder", "()Landroid/widget/SimpleCursorAdapter$ViewBinder;");
         }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/widget/BaseAdapter.html#areAllItemsEnabled()"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnAreAllItemsEnabled"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<bool> OnAreAllItemsEnabled { get; set; } = null;
-
-        void AreAllItemsEnabledEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
-        {
-            var methodToExecute = (OnAreAllItemsEnabled != null) ? OnAreAllItemsEnabled : AreAllItemsEnabled;
-            var executionResult = methodToExecute.Invoke();
-            data.SetReturnValue(executionResult);
-        }
-
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/BaseAdapter.html#areAllItemsEnabled()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        public virtual bool AreAllItemsEnabled()
-        {
-            return default;
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/widget/BaseAdapter.html#isEmpty()"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnIsEmpty"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<bool> OnIsEmpty { get; set; } = null;
-
-        void IsEmptyEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
-        {
-            var methodToExecute = (OnIsEmpty != null) ? OnIsEmpty : IsEmpty;
-            var executionResult = methodToExecute.Invoke();
-            data.SetReturnValue(executionResult);
-        }
-
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/BaseAdapter.html#isEmpty()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        public virtual bool IsEmpty()
-        {
-            return default;
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/widget/BaseAdapter.html#isEnabled(int)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnIsEnabled"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<int, bool> OnIsEnabled { get; set; } = null;
-
-        void IsEnabledEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
-        {
-            var methodToExecute = (OnIsEnabled != null) ? OnIsEnabled : IsEnabled;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
-            data.SetReturnValue(executionResult);
-        }
-
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/BaseAdapter.html#isEnabled(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
-        public virtual bool IsEnabled(int arg0)
-        {
-            return default;
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/widget/BaseAdapter.html#getItemViewType(int)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnGetItemViewType"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<int, int> OnGetItemViewType { get; set; } = null;
-
-        void GetItemViewTypeEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
-        {
-            var methodToExecute = (OnGetItemViewType != null) ? OnGetItemViewType : GetItemViewType;
-            var executionResult = methodToExecute.Invoke(data.EventData.TypedEventData);
-            data.SetReturnValue(executionResult);
-        }
-
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/BaseAdapter.html#getItemViewType(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
-        public virtual int GetItemViewType(int arg0)
-        {
-            return default;
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/widget/BaseAdapter.html#getViewTypeCount()"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnGetViewTypeCount"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<int> OnGetViewTypeCount { get; set; } = null;
-
-        void GetViewTypeCountEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
-        {
-            var methodToExecute = (OnGetViewTypeCount != null) ? OnGetViewTypeCount : GetViewTypeCount;
-            var executionResult = methodToExecute.Invoke();
-            data.SetReturnValue(executionResult);
-        }
-
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/BaseAdapter.html#getViewTypeCount()"/>
-        /// </summary>
-        /// <returns><see cref="int"/></returns>
-        public virtual int GetViewTypeCount()
-        {
-            return default;
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/widget/SimpleCursorAdapter.html#getStringConversionColumn()"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnGetStringConversionColumn"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<int> OnGetStringConversionColumn { get; set; } = null;
-
-        void GetStringConversionColumnEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
-        {
-            var methodToExecute = (OnGetStringConversionColumn != null) ? OnGetStringConversionColumn : GetStringConversionColumn;
-            var executionResult = methodToExecute.Invoke();
-            data.SetReturnValue(executionResult);
-        }
-
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/SimpleCursorAdapter.html#getStringConversionColumn()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
-        public virtual int GetStringConversionColumn()
+        public int GetStringConversionColumn()
         {
-            return default;
+            return IExecuteWithSignature<int>("getStringConversionColumn", "()I");
         }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/widget/BaseAdapter.html#getAutofillOptions()"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnGetAutofillOptions"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Lang.CharSequence[]> OnGetAutofillOptions { get; set; } = null;
-
-        void GetAutofillOptionsEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
-        {
-            var methodToExecute = (OnGetAutofillOptions != null) ? OnGetAutofillOptions : GetAutofillOptions;
-            var executionResult = methodToExecute.Invoke();
-            data.SetReturnValue(executionResult);
-        }
-
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/BaseAdapter.html#getAutofillOptions()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
-        public virtual Java.Lang.CharSequence[] GetAutofillOptions()
-        {
-            return default;
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/widget/BaseAdapter.html#notifyDataSetChanged()"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnNotifyDataSetChanged"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action OnNotifyDataSetChanged { get; set; } = null;
-
-        void NotifyDataSetChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
-        {
-            var methodToExecute = (OnNotifyDataSetChanged != null) ? OnNotifyDataSetChanged : NotifyDataSetChanged;
-            methodToExecute.Invoke();
-        }
-
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/BaseAdapter.html#notifyDataSetChanged()"/>
-        /// </summary>
-        public virtual void NotifyDataSetChanged()
-        {
-            
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/widget/BaseAdapter.html#notifyDataSetInvalidated()"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnNotifyDataSetInvalidated"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action OnNotifyDataSetInvalidated { get; set; } = null;
-
-        void NotifyDataSetInvalidatedEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
-        {
-            var methodToExecute = (OnNotifyDataSetInvalidated != null) ? OnNotifyDataSetInvalidated : NotifyDataSetInvalidated;
-            methodToExecute.Invoke();
-        }
-
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/BaseAdapter.html#notifyDataSetInvalidated()"/>
-        /// </summary>
-        public virtual void NotifyDataSetInvalidated()
-        {
-            
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/widget/BaseAdapter.html#registerDataSetObserver(android.database.DataSetObserver)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnRegisterDataSetObserver"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Android.Database.DataSetObserver> OnRegisterDataSetObserver { get; set; } = null;
-
-        void RegisterDataSetObserverEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Database.DataSetObserver>> data)
-        {
-            var methodToExecute = (OnRegisterDataSetObserver != null) ? OnRegisterDataSetObserver : RegisterDataSetObserver;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
-        }
-
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/BaseAdapter.html#registerDataSetObserver(android.database.DataSetObserver)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Database.DataSetObserver"/></param>
-        public virtual void RegisterDataSetObserver(Android.Database.DataSetObserver arg0)
-        {
-            
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/widget/BaseAdapter.html#setAutofillOptions(java.lang.CharSequence[])"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnSetAutofillOptions"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<> OnSetAutofillOptions { get; set; } = null;
-
-        void SetAutofillOptionsEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.CharSequence[]>> data)
-        {
-            var methodToExecute = (OnSetAutofillOptions != null) ? OnSetAutofillOptions : SetAutofillOptions;
-            methodToExecute.Invoke();
-        }
-
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/BaseAdapter.html#setAutofillOptions(java.lang.CharSequence[])"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        public virtual void SetAutofillOptions(params Java.Lang.CharSequence[] arg0)
-        {
-            
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/widget/BaseAdapter.html#unregisterDataSetObserver(android.database.DataSetObserver)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnUnregisterDataSetObserver"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Android.Database.DataSetObserver> OnUnregisterDataSetObserver { get; set; } = null;
-
-        void UnregisterDataSetObserverEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Database.DataSetObserver>> data)
-        {
-            var methodToExecute = (OnUnregisterDataSetObserver != null) ? OnUnregisterDataSetObserver : UnregisterDataSetObserver;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
-        }
-
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/BaseAdapter.html#unregisterDataSetObserver(android.database.DataSetObserver)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Database.DataSetObserver"/></param>
-        public virtual void UnregisterDataSetObserver(Android.Database.DataSetObserver arg0)
-        {
-            
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/widget/CursorAdapter.html#changeCursor(android.database.Cursor)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnChangeCursor"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Android.Database.Cursor> OnChangeCursor { get; set; } = null;
-
-        void ChangeCursorEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Database.Cursor>> data)
-        {
-            var methodToExecute = (OnChangeCursor != null) ? OnChangeCursor : ChangeCursor;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
-        }
-
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/CursorAdapter.html#changeCursor(android.database.Cursor)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Database.Cursor"/></param>
-        public virtual void ChangeCursor(Android.Database.Cursor arg0)
-        {
-            
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/widget/CursorAdapter.html#setFilterQueryProvider(android.widget.FilterQueryProvider)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnSetFilterQueryProvider"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Android.Widget.FilterQueryProvider> OnSetFilterQueryProvider { get; set; } = null;
-
-        void SetFilterQueryProviderEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Widget.FilterQueryProvider>> data)
-        {
-            var methodToExecute = (OnSetFilterQueryProvider != null) ? OnSetFilterQueryProvider : SetFilterQueryProvider;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
-        }
-
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/CursorAdapter.html#setFilterQueryProvider(android.widget.FilterQueryProvider)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Widget.FilterQueryProvider"/></param>
-        public virtual void SetFilterQueryProvider(Android.Widget.FilterQueryProvider arg0)
-        {
-            
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/widget/ResourceCursorAdapter.html#setDropDownViewResource(int)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnSetDropDownViewResource"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<int> OnSetDropDownViewResource { get; set; } = null;
-
-        void SetDropDownViewResourceEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
-        {
-            var methodToExecute = (OnSetDropDownViewResource != null) ? OnSetDropDownViewResource : SetDropDownViewResource;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
-        }
-
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ResourceCursorAdapter.html#setDropDownViewResource(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        public virtual void SetDropDownViewResource(int arg0)
-        {
-            
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/widget/ResourceCursorAdapter.html#setViewResource(int)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnSetViewResource"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<int> OnSetViewResource { get; set; } = null;
-
-        void SetViewResourceEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
-        {
-            var methodToExecute = (OnSetViewResource != null) ? OnSetViewResource : SetViewResource;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
-        }
-
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ResourceCursorAdapter.html#setViewResource(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        public virtual void SetViewResource(int arg0)
-        {
-            
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/widget/SimpleCursorAdapter.html#changeCursorAndColumns(android.database.Cursor,java.lang.String[],int[])"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnChangeCursorAndColumns"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Android.Database.Cursor, Java.Lang.String[], int[]> OnChangeCursorAndColumns { get; set; } = null;
-
-        void ChangeCursorAndColumnsEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Database.Cursor>> data)
-        {
-            var methodToExecute = (OnChangeCursorAndColumns != null) ? OnChangeCursorAndColumns : ChangeCursorAndColumns;
-            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Java.Lang.String[]>(0), data.EventData.GetAt<int[]>(1));
-        }
-
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/SimpleCursorAdapter.html#changeCursorAndColumns(android.database.Cursor,java.lang.String[],int[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Database.Cursor"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        public virtual void ChangeCursorAndColumns(Android.Database.Cursor arg0, Java.Lang.String[] arg1, int[] arg2)
+        public void ChangeCursorAndColumns(Android.Database.Cursor arg0, Java.Lang.String[] arg1, int[] arg2)
         {
-            
+            IExecute("changeCursorAndColumns", arg0, arg1, arg2);
         }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/widget/SimpleCursorAdapter.html#setCursorToStringConverter(android.widget.SimpleCursorAdapter.CursorToStringConverter)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnSetCursorToStringConverter"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Android.Widget.SimpleCursorAdapter.CursorToStringConverter> OnSetCursorToStringConverter { get; set; } = null;
-
-        void SetCursorToStringConverterEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Widget.SimpleCursorAdapter.CursorToStringConverter>> data)
-        {
-            var methodToExecute = (OnSetCursorToStringConverter != null) ? OnSetCursorToStringConverter : SetCursorToStringConverter;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
-        }
-
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/SimpleCursorAdapter.html#setCursorToStringConverter(android.widget.SimpleCursorAdapter.CursorToStringConverter)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Widget.SimpleCursorAdapter.CursorToStringConverter"/></param>
-        public virtual void SetCursorToStringConverter(Android.Widget.SimpleCursorAdapter.CursorToStringConverter arg0)
+        public void SetCursorToStringConverter(Android.Widget.SimpleCursorAdapter.CursorToStringConverter arg0)
         {
-            
+            IExecuteWithSignature("setCursorToStringConverter", "(Landroid/widget/SimpleCursorAdapter$CursorToStringConverter;)V", arg0);
         }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/widget/SimpleCursorAdapter.html#setStringConversionColumn(int)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnSetStringConversionColumn"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<int> OnSetStringConversionColumn { get; set; } = null;
-
-        void SetStringConversionColumnEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
-        {
-            var methodToExecute = (OnSetStringConversionColumn != null) ? OnSetStringConversionColumn : SetStringConversionColumn;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
-        }
-
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/SimpleCursorAdapter.html#setStringConversionColumn(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        public virtual void SetStringConversionColumn(int arg0)
+        public void SetStringConversionColumn(int arg0)
         {
-            
+            IExecuteWithSignature("setStringConversionColumn", "(I)V", arg0);
         }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/widget/SimpleCursorAdapter.html#setViewBinder(android.widget.SimpleCursorAdapter.ViewBinder)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnSetViewBinder"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Android.Widget.SimpleCursorAdapter.ViewBinder> OnSetViewBinder { get; set; } = null;
-
-        void SetViewBinderEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Widget.SimpleCursorAdapter.ViewBinder>> data)
-        {
-            var methodToExecute = (OnSetViewBinder != null) ? OnSetViewBinder : SetViewBinder;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
-        }
-
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/SimpleCursorAdapter.html#setViewBinder(android.widget.SimpleCursorAdapter.ViewBinder)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Widget.SimpleCursorAdapter.ViewBinder"/></param>
-        public virtual void SetViewBinder(Android.Widget.SimpleCursorAdapter.ViewBinder arg0)
+        public void SetViewBinder(Android.Widget.SimpleCursorAdapter.ViewBinder arg0)
         {
-            
+            IExecuteWithSignature("setViewBinder", "(Landroid/widget/SimpleCursorAdapter$ViewBinder;)V", arg0);
         }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/widget/SimpleCursorAdapter.html#setViewImage(android.widget.ImageView,java.lang.String)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnSetViewImage"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Android.Widget.ImageView, Java.Lang.String> OnSetViewImage { get; set; } = null;
-
-        void SetViewImageEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Widget.ImageView>> data)
-        {
-            var methodToExecute = (OnSetViewImage != null) ? OnSetViewImage : SetViewImage;
-            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Java.Lang.String>(0));
-        }
-
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/SimpleCursorAdapter.html#setViewImage(android.widget.ImageView,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Widget.ImageView"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        public virtual void SetViewImage(Android.Widget.ImageView arg0, Java.Lang.String arg1)
+        public void SetViewImage(Android.Widget.ImageView arg0, Java.Lang.String arg1)
         {
-            
+            IExecute("setViewImage", arg0, arg1);
         }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/widget/SimpleCursorAdapter.html#setViewText(android.widget.TextView,java.lang.String)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnSetViewText"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Android.Widget.TextView, Java.Lang.String> OnSetViewText { get; set; } = null;
-
-        void SetViewTextEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Widget.TextView>> data)
-        {
-            var methodToExecute = (OnSetViewText != null) ? OnSetViewText : SetViewText;
-            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Java.Lang.String>(0));
-        }
-
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/SimpleCursorAdapter.html#setViewText(android.widget.TextView,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Widget.TextView"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        public virtual void SetViewText(Android.Widget.TextView arg0, Java.Lang.String arg1)
+        public void SetViewText(Android.Widget.TextView arg0, Java.Lang.String arg1)
         {
-            
+            IExecute("setViewText", arg0, arg1);
         }
 
         #endregion
@@ -796,241 +234,6 @@ namespace Android.Widget
         #endregion
 
     
-        #endregion
-
-        // TODO: complete the class
-    }
-    #endregion
-
-    #region SimpleCursorAdapterDirect
-    public partial class SimpleCursorAdapterDirect
-    {
-        #region Constructors
-
-        #endregion
-
-        #region Class/Interface conversion operators
-
-        #endregion
-
-        #region Fields
-
-        #endregion
-
-        #region Static methods
-
-        #endregion
-
-        #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/BaseAdapter.html#getAutofillOptions()"/> <see href="https://developer.android.com/reference/android/widget/BaseAdapter.html#setAutofillOptions(java.lang.CharSequence[])"/>
-        /// </summary>
-        public Java.Lang.CharSequence[] AutofillOptions
-        {
-            get { return IExecuteArray<Java.Lang.CharSequence>("getAutofillOptions"); } set { IExecute("setAutofillOptions", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/CursorAdapter.html#getCursor()"/> 
-        /// </summary>
-        public Android.Database.Cursor Cursor
-        {
-            get { return IExecute<Android.Database.Cursor>("getCursor"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/CursorAdapter.html#getDropDownViewTheme()"/> 
-        /// </summary>
-        public Android.Content.Res.Resources.Theme DropDownViewTheme
-        {
-            get { return IExecute<Android.Content.Res.Resources.Theme>("getDropDownViewTheme"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/CursorAdapter.html#getFilter()"/> 
-        /// </summary>
-        public Android.Widget.Filter Filter
-        {
-            get { return IExecute<Android.Widget.Filter>("getFilter"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/CursorAdapter.html#getFilterQueryProvider()"/> <see href="https://developer.android.com/reference/android/widget/CursorAdapter.html#setFilterQueryProvider(android.widget.FilterQueryProvider)"/>
-        /// </summary>
-        public Android.Widget.FilterQueryProvider FilterQueryProvider
-        {
-            get { return IExecute<Android.Widget.FilterQueryProvider>("getFilterQueryProvider"); } set { IExecute("setFilterQueryProvider", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/SimpleCursorAdapter.html#getCursorToStringConverter()"/> 
-        /// </summary>
-        public Android.Widget.SimpleCursorAdapter.CursorToStringConverter GetCursorToStringConverter
-        {
-            get { return IExecuteWithSignature<Android.Widget.SimpleCursorAdapter.CursorToStringConverter>("getCursorToStringConverter", "()Landroid/widget/SimpleCursorAdapter$CursorToStringConverter;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/SimpleCursorAdapter.html#getViewBinder()"/> 
-        /// </summary>
-        public Android.Widget.SimpleCursorAdapter.ViewBinder GetViewBinder
-        {
-            get { return IExecuteWithSignature<Android.Widget.SimpleCursorAdapter.ViewBinder>("getViewBinder", "()Landroid/widget/SimpleCursorAdapter$ViewBinder;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/SimpleCursorAdapter.html#getStringConversionColumn()"/> <see href="https://developer.android.com/reference/android/widget/SimpleCursorAdapter.html#setStringConversionColumn(int)"/>
-        /// </summary>
-        public int StringConversionColumn
-        {
-            get { return IExecuteWithSignature<int>("getStringConversionColumn", "()I"); } set { IExecuteWithSignature("setStringConversionColumn", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/BaseAdapter.html#getViewTypeCount()"/> 
-        /// </summary>
-        public int ViewTypeCount
-        {
-            get { return IExecute<int>("getViewTypeCount"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/CursorAdapter.html#runQueryOnBackgroundThread(java.lang.CharSequence)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        /// <returns><see cref="Android.Database.Cursor"/></returns>
-        public override Android.Database.Cursor RunQueryOnBackgroundThread(Java.Lang.CharSequence arg0)
-        {
-            return IExecute<Android.Database.Cursor>("runQueryOnBackgroundThread", arg0);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/BaseAdapter.html#areAllItemsEnabled()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        public override bool AreAllItemsEnabled()
-        {
-            return IExecute<bool>("areAllItemsEnabled");
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/BaseAdapter.html#isEmpty()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        public override bool IsEmpty()
-        {
-            return IExecute<bool>("isEmpty");
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/BaseAdapter.html#isEnabled(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="bool"/></returns>
-        public override bool IsEnabled(int arg0)
-        {
-            return IExecute<bool>("isEnabled", arg0);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/BaseAdapter.html#getItemViewType(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="int"/></returns>
-        public override int GetItemViewType(int arg0)
-        {
-            return IExecute<int>("getItemViewType", arg0);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/BaseAdapter.html#notifyDataSetChanged()"/>
-        /// </summary>
-        public override void NotifyDataSetChanged()
-        {
-            IExecute("notifyDataSetChanged");
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/BaseAdapter.html#notifyDataSetInvalidated()"/>
-        /// </summary>
-        public override void NotifyDataSetInvalidated()
-        {
-            IExecute("notifyDataSetInvalidated");
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/BaseAdapter.html#registerDataSetObserver(android.database.DataSetObserver)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Database.DataSetObserver"/></param>
-        public override void RegisterDataSetObserver(Android.Database.DataSetObserver arg0)
-        {
-            IExecute("registerDataSetObserver", arg0);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/BaseAdapter.html#unregisterDataSetObserver(android.database.DataSetObserver)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Database.DataSetObserver"/></param>
-        public override void UnregisterDataSetObserver(Android.Database.DataSetObserver arg0)
-        {
-            IExecute("unregisterDataSetObserver", arg0);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/CursorAdapter.html#changeCursor(android.database.Cursor)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Database.Cursor"/></param>
-        public override void ChangeCursor(Android.Database.Cursor arg0)
-        {
-            IExecute("changeCursor", arg0);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ResourceCursorAdapter.html#setDropDownViewResource(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        public override void SetDropDownViewResource(int arg0)
-        {
-            IExecute("setDropDownViewResource", arg0);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ResourceCursorAdapter.html#setViewResource(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        public override void SetViewResource(int arg0)
-        {
-            IExecute("setViewResource", arg0);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/SimpleCursorAdapter.html#changeCursorAndColumns(android.database.Cursor,java.lang.String[],int[])"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Database.Cursor"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        public override void ChangeCursorAndColumns(Android.Database.Cursor arg0, Java.Lang.String[] arg1, int[] arg2)
-        {
-            IExecute("changeCursorAndColumns", arg0, arg1, arg2);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/SimpleCursorAdapter.html#setCursorToStringConverter(android.widget.SimpleCursorAdapter.CursorToStringConverter)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Widget.SimpleCursorAdapter.CursorToStringConverter"/></param>
-        public override void SetCursorToStringConverter(Android.Widget.SimpleCursorAdapter.CursorToStringConverter arg0)
-        {
-            IExecuteWithSignature("setCursorToStringConverter", "(Landroid/widget/SimpleCursorAdapter$CursorToStringConverter;)V", arg0);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/SimpleCursorAdapter.html#setViewBinder(android.widget.SimpleCursorAdapter.ViewBinder)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Widget.SimpleCursorAdapter.ViewBinder"/></param>
-        public override void SetViewBinder(Android.Widget.SimpleCursorAdapter.ViewBinder arg0)
-        {
-            IExecuteWithSignature("setViewBinder", "(Landroid/widget/SimpleCursorAdapter$ViewBinder;)V", arg0);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/SimpleCursorAdapter.html#setViewImage(android.widget.ImageView,java.lang.String)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Widget.ImageView"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        public override void SetViewImage(Android.Widget.ImageView arg0, Java.Lang.String arg1)
-        {
-            IExecute("setViewImage", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/SimpleCursorAdapter.html#setViewText(android.widget.TextView,java.lang.String)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Widget.TextView"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        public override void SetViewText(Android.Widget.TextView arg0, Java.Lang.String arg1)
-        {
-            IExecute("setViewText", arg0, arg1);
-        }
-
-        #endregion
-
-        #region Nested classes
-
         #endregion
 
         // TODO: complete the class

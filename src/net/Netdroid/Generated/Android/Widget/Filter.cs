@@ -100,7 +100,7 @@ namespace Android.Widget
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onFilterComplete", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnFilterCompleteEventHandler));
+                AddEventHandler("onFilterComplete", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnFilterCompleteEventHandler));
 
             }
 
@@ -108,7 +108,7 @@ namespace Android.Widget
             /// Handler for <see href="https://developer.android.com/reference/android/widget/Filter.FilterListener.html#onFilterComplete(int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnFilterComplete"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<int> OnOnFilterComplete { get; set; } = null;
+            public global::System.Action<int> OnOnFilterComplete { get; set; } = null;
 
             void OnFilterCompleteEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
             {

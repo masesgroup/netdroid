@@ -52,25 +52,12 @@ namespace Android.Telephony
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/ClosedSubscriberGroupInfo.html#getCsgIdentity()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/ClosedSubscriberGroupInfo.html#getCsgIndicator()"/>
         /// </summary>
-        public int CsgIdentity
+        /// <returns><see cref="bool"/></returns>
+        public bool GetCsgIndicator()
         {
-            get { return IExecuteWithSignature<int>("getCsgIdentity", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/ClosedSubscriberGroupInfo.html#getCsgIndicator()"/> 
-        /// </summary>
-        public bool CsgIndicator
-        {
-            get { return IExecuteWithSignature<bool>("getCsgIndicator", "()Z"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/ClosedSubscriberGroupInfo.html#getHomeNodebName()"/> 
-        /// </summary>
-        public Java.Lang.String HomeNodebName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getHomeNodebName", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<bool>("getCsgIndicator", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/ClosedSubscriberGroupInfo.html#describeContents()"/>
@@ -79,6 +66,22 @@ namespace Android.Telephony
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/ClosedSubscriberGroupInfo.html#getCsgIdentity()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCsgIdentity()
+        {
+            return IExecuteWithSignature<int>("getCsgIdentity", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/ClosedSubscriberGroupInfo.html#getHomeNodebName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetHomeNodebName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getHomeNodebName", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/ClosedSubscriberGroupInfo.html#writeToParcel(android.os.Parcel,int)"/>

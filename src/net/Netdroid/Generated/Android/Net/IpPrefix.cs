@@ -61,27 +61,6 @@ namespace Android.Net
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/IpPrefix.html#getAddress()"/> 
-        /// </summary>
-        public Java.Net.InetAddress Address
-        {
-            get { return IExecuteWithSignature<Java.Net.InetAddress>("getAddress", "()Ljava/net/InetAddress;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/IpPrefix.html#getPrefixLength()"/> 
-        /// </summary>
-        public int PrefixLength
-        {
-            get { return IExecuteWithSignature<int>("getPrefixLength", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/IpPrefix.html#getRawAddress()"/> 
-        /// </summary>
-        public byte[] RawAddress
-        {
-            get { return IExecuteWithSignatureArray<byte>("getRawAddress", "()[B"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/IpPrefix.html#contains(java.net.InetAddress)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.InetAddress"/></param>
@@ -91,12 +70,36 @@ namespace Android.Net
             return IExecuteWithSignature<bool>("contains", "(Ljava/net/InetAddress;)Z", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/IpPrefix.html#getRawAddress()"/>
+        /// </summary>
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetRawAddress()
+        {
+            return IExecuteWithSignatureArray<byte>("getRawAddress", "()[B");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/IpPrefix.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/IpPrefix.html#getPrefixLength()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPrefixLength()
+        {
+            return IExecuteWithSignature<int>("getPrefixLength", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/IpPrefix.html#getAddress()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Net.InetAddress"/></returns>
+        public Java.Net.InetAddress GetAddress()
+        {
+            return IExecuteWithSignature<Java.Net.InetAddress>("getAddress", "()Ljava/net/InetAddress;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/IpPrefix.html#writeToParcel(android.os.Parcel,int)"/>

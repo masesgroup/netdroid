@@ -106,25 +106,12 @@ namespace Android.Hardware.Display
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/display/DisplayManager.html#getDisplays()"/> 
+        /// <see href="https://developer.android.com/reference/android/hardware/display/DisplayManager.html#getHdrConversionMode()"/>
         /// </summary>
-        public Android.View.Display[] Displays
+        /// <returns><see cref="Android.Hardware.Display.HdrConversionMode"/></returns>
+        public Android.Hardware.Display.HdrConversionMode GetHdrConversionMode()
         {
-            get { return IExecuteWithSignatureArray<Android.View.Display>("getDisplays", "()[Landroid/view/Display;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/display/DisplayManager.html#getHdrConversionMode()"/> 
-        /// </summary>
-        public Android.Hardware.Display.HdrConversionMode HdrConversionMode
-        {
-            get { return IExecuteWithSignature<Android.Hardware.Display.HdrConversionMode>("getHdrConversionMode", "()Landroid/hardware/display/HdrConversionMode;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/display/DisplayManager.html#getMatchContentFrameRateUserPreference()"/> 
-        /// </summary>
-        public int MatchContentFrameRateUserPreference
-        {
-            get { return IExecuteWithSignature<int>("getMatchContentFrameRateUserPreference", "()I"); }
+            return IExecuteWithSignature<Android.Hardware.Display.HdrConversionMode>("getHdrConversionMode", "()Landroid/hardware/display/HdrConversionMode;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/display/DisplayManager.html#createVirtualDisplay(android.hardware.display.VirtualDisplayConfig,android.os.Handler,android.hardware.display.VirtualDisplay.Callback)"/>
@@ -186,6 +173,14 @@ namespace Android.Hardware.Display
             return IExecuteWithSignature<Android.View.Display>("getDisplay", "(I)Landroid/view/Display;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/display/DisplayManager.html#getDisplays()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.Display"/></returns>
+        public Android.View.Display[] GetDisplays()
+        {
+            return IExecuteWithSignatureArray<Android.View.Display>("getDisplays", "()[Landroid/view/Display;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/display/DisplayManager.html#getDisplays(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -193,6 +188,14 @@ namespace Android.Hardware.Display
         public Android.View.Display[] GetDisplays(Java.Lang.String arg0)
         {
             return IExecuteWithSignatureArray<Android.View.Display>("getDisplays", "(Ljava/lang/String;)[Landroid/view/Display;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/display/DisplayManager.html#getMatchContentFrameRateUserPreference()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMatchContentFrameRateUserPreference()
+        {
+            return IExecuteWithSignature<int>("getMatchContentFrameRateUserPreference", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/display/DisplayManager.html#registerDisplayListener(android.hardware.display.DisplayManager.DisplayListener,android.os.Handler)"/>
@@ -240,9 +243,9 @@ namespace Android.Hardware.Display
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onDisplayAdded", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnDisplayAddedEventHandler));
-                AddEventHandler("onDisplayChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnDisplayChangedEventHandler));
-                AddEventHandler("onDisplayRemoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnDisplayRemovedEventHandler));
+                AddEventHandler("onDisplayAdded", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnDisplayAddedEventHandler));
+                AddEventHandler("onDisplayChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnDisplayChangedEventHandler));
+                AddEventHandler("onDisplayRemoved", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnDisplayRemovedEventHandler));
 
             }
 
@@ -250,7 +253,7 @@ namespace Android.Hardware.Display
             /// Handler for <see href="https://developer.android.com/reference/android/hardware/display/DisplayManager.DisplayListener.html#onDisplayAdded(int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnDisplayAdded"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<int> OnOnDisplayAdded { get; set; } = null;
+            public global::System.Action<int> OnOnDisplayAdded { get; set; } = null;
 
             void OnDisplayAddedEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
             {
@@ -271,7 +274,7 @@ namespace Android.Hardware.Display
             /// Handler for <see href="https://developer.android.com/reference/android/hardware/display/DisplayManager.DisplayListener.html#onDisplayChanged(int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnDisplayChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<int> OnOnDisplayChanged { get; set; } = null;
+            public global::System.Action<int> OnOnDisplayChanged { get; set; } = null;
 
             void OnDisplayChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
             {
@@ -292,7 +295,7 @@ namespace Android.Hardware.Display
             /// Handler for <see href="https://developer.android.com/reference/android/hardware/display/DisplayManager.DisplayListener.html#onDisplayRemoved(int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnDisplayRemoved"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<int> OnOnDisplayRemoved { get; set; } = null;
+            public global::System.Action<int> OnOnDisplayRemoved { get; set; } = null;
 
             void OnDisplayRemovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
             {

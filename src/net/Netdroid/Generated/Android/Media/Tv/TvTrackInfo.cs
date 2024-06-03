@@ -70,95 +70,12 @@ namespace Android.Media.Tv
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/TvTrackInfo.html#getAudioChannelCount()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/tv/TvTrackInfo.html#getExtra()"/>
         /// </summary>
-        public int AudioChannelCount
+        /// <returns><see cref="Android.Os.Bundle"/></returns>
+        public Android.Os.Bundle GetExtra()
         {
-            get { return IExecuteWithSignature<int>("getAudioChannelCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/TvTrackInfo.html#getAudioSampleRate()"/> 
-        /// </summary>
-        public int AudioSampleRate
-        {
-            get { return IExecuteWithSignature<int>("getAudioSampleRate", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/TvTrackInfo.html#getDescription()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence Description
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getDescription", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/TvTrackInfo.html#getEncoding()"/> 
-        /// </summary>
-        public Java.Lang.String Encoding
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getEncoding", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/TvTrackInfo.html#getExtra()"/> 
-        /// </summary>
-        public Android.Os.Bundle Extra
-        {
-            get { return IExecuteWithSignature<Android.Os.Bundle>("getExtra", "()Landroid/os/Bundle;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/TvTrackInfo.html#getId()"/> 
-        /// </summary>
-        public Java.Lang.String Id
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/TvTrackInfo.html#getLanguage()"/> 
-        /// </summary>
-        public Java.Lang.String Language
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getLanguage", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/TvTrackInfo.html#getType()"/> 
-        /// </summary>
-        public int Type
-        {
-            get { return IExecuteWithSignature<int>("getType", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/TvTrackInfo.html#getVideoActiveFormatDescription()"/> 
-        /// </summary>
-        public byte VideoActiveFormatDescription
-        {
-            get { return IExecuteWithSignature<byte>("getVideoActiveFormatDescription", "()B"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/TvTrackInfo.html#getVideoFrameRate()"/> 
-        /// </summary>
-        public float VideoFrameRate
-        {
-            get { return IExecuteWithSignature<float>("getVideoFrameRate", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/TvTrackInfo.html#getVideoHeight()"/> 
-        /// </summary>
-        public int VideoHeight
-        {
-            get { return IExecuteWithSignature<int>("getVideoHeight", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/TvTrackInfo.html#getVideoPixelAspectRatio()"/> 
-        /// </summary>
-        public float VideoPixelAspectRatio
-        {
-            get { return IExecuteWithSignature<float>("getVideoPixelAspectRatio", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/TvTrackInfo.html#getVideoWidth()"/> 
-        /// </summary>
-        public int VideoWidth
-        {
-            get { return IExecuteWithSignature<int>("getVideoWidth", "()I"); }
+            return IExecuteWithSignature<Android.Os.Bundle>("getExtra", "()Landroid/os/Bundle;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/TvTrackInfo.html#isAudioDescription()"/>
@@ -193,12 +110,108 @@ namespace Android.Media.Tv
             return IExecuteWithSignature<bool>("isSpokenSubtitle", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/TvTrackInfo.html#getVideoActiveFormatDescription()"/>
+        /// </summary>
+        /// <returns><see cref="byte"/></returns>
+        public byte GetVideoActiveFormatDescription()
+        {
+            return IExecuteWithSignature<byte>("getVideoActiveFormatDescription", "()B");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/TvTrackInfo.html#getVideoFrameRate()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetVideoFrameRate()
+        {
+            return IExecuteWithSignature<float>("getVideoFrameRate", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/TvTrackInfo.html#getVideoPixelAspectRatio()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetVideoPixelAspectRatio()
+        {
+            return IExecuteWithSignature<float>("getVideoPixelAspectRatio", "()F");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/TvTrackInfo.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/TvTrackInfo.html#getAudioChannelCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetAudioChannelCount()
+        {
+            return IExecuteWithSignature<int>("getAudioChannelCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/TvTrackInfo.html#getAudioSampleRate()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetAudioSampleRate()
+        {
+            return IExecuteWithSignature<int>("getAudioSampleRate", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/TvTrackInfo.html#getType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetType()
+        {
+            return IExecuteWithSignature<int>("getType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/TvTrackInfo.html#getVideoHeight()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetVideoHeight()
+        {
+            return IExecuteWithSignature<int>("getVideoHeight", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/TvTrackInfo.html#getVideoWidth()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetVideoWidth()
+        {
+            return IExecuteWithSignature<int>("getVideoWidth", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/TvTrackInfo.html#getDescription()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetDescription()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getDescription", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/TvTrackInfo.html#getEncoding()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetEncoding()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getEncoding", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/TvTrackInfo.html#getId()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetId()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/TvTrackInfo.html#getLanguage()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetLanguage()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getLanguage", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/TvTrackInfo.html#writeToParcel(android.os.Parcel,int)"/>

@@ -56,9 +56,8 @@ namespace Java.Security
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/PublicKey.html#serialVersionUID"/>
+        /// <see href="https://developer.android.com/reference/java/security/PublicKey.html#serialVersionUID"/>
         /// </summary>
-        [System.Obsolete()]
         public static long serialVersionUID { get { if (!_serialVersionUIDReady) { _serialVersionUIDContent = SGetField<long>(LocalBridgeClazz, "serialVersionUID"); _serialVersionUIDReady = true; } return _serialVersionUIDContent; } }
         private static long _serialVersionUIDContent = default;
         private static bool _serialVersionUIDReady = false; // this is used because in case of generics 

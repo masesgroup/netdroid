@@ -46,70 +46,10 @@ namespace Android.Hardware
 
         #region Instance methods
         /// <summary>
-        /// Handlers initializer for <see cref="TriggerEventListener"/>
-        /// </summary>
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("onTrigger", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Hardware.TriggerEvent>>>(OnTriggerEventHandler));
-
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/hardware/TriggerEventListener.html#onTrigger(android.hardware.TriggerEvent)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnOnTrigger"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Android.Hardware.TriggerEvent> OnOnTrigger { get; set; } = null;
-
-        void OnTriggerEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Hardware.TriggerEvent>> data)
-        {
-            var methodToExecute = (OnOnTrigger != null) ? OnOnTrigger : OnTrigger;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
-        }
-
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/TriggerEventListener.html#onTrigger(android.hardware.TriggerEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Hardware.TriggerEvent"/></param>
-        public virtual void OnTrigger(Android.Hardware.TriggerEvent arg0)
-        {
-            
-        }
-
-        #endregion
-
-        #region Nested classes
-
-        #endregion
-
-        // TODO: complete the class
-    }
-    #endregion
-
-    #region TriggerEventListenerDirect
-    public partial class TriggerEventListenerDirect
-    {
-        #region Constructors
-
-        #endregion
-
-        #region Class/Interface conversion operators
-
-        #endregion
-
-        #region Fields
-
-        #endregion
-
-        #region Static methods
-
-        #endregion
-
-        #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/TriggerEventListener.html#onTrigger(android.hardware.TriggerEvent)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Hardware.TriggerEvent"/></param>
-        public override void OnTrigger(Android.Hardware.TriggerEvent arg0)
+        public void OnTrigger(Android.Hardware.TriggerEvent arg0)
         {
             IExecuteWithSignature("onTrigger", "(Landroid/hardware/TriggerEvent;)V", arg0);
         }

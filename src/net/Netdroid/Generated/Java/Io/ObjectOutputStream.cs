@@ -30,7 +30,7 @@ namespace Java.Io
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectOutputStream.html#%3Cinit%3E(java.io.OutputStream)"/>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectOutputStream.html#%3Cinit%3E(java.io.OutputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -63,7 +63,7 @@ namespace Java.Io
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectOutputStream.html#writeObject(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectOutputStream.html#writeObject(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -72,7 +72,7 @@ namespace Java.Io
             IExecuteWithSignature("writeObject", "(Ljava/lang/Object;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectOutputStream.html#putFields()"/>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectOutputStream.html#putFields()"/>
         /// </summary>
         /// <returns><see cref="Java.Io.ObjectOutputStream.PutField"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -81,7 +81,7 @@ namespace Java.Io
             return IExecuteWithSignature<Java.Io.ObjectOutputStream.PutField>("putFields", "()Ljava/io/ObjectOutputStream$PutField;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectOutputStream.html#defaultWriteObject()"/>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectOutputStream.html#defaultWriteObject()"/>
         /// </summary>
         /// <exception cref="Java.Io.IOException"/>
         public void DefaultWriteObject()
@@ -89,7 +89,7 @@ namespace Java.Io
             IExecuteWithSignature("defaultWriteObject", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectOutputStream.html#reset()"/>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectOutputStream.html#reset()"/>
         /// </summary>
         /// <exception cref="Java.Io.IOException"/>
         public void Reset()
@@ -97,7 +97,7 @@ namespace Java.Io
             IExecuteWithSignature("reset", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectOutputStream.html#useProtocolVersion(int)"/>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectOutputStream.html#useProtocolVersion(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -106,7 +106,7 @@ namespace Java.Io
             IExecuteWithSignature("useProtocolVersion", "(I)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectOutputStream.html#writeBoolean(boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectOutputStream.html#writeBoolean(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -115,7 +115,7 @@ namespace Java.Io
             IExecuteWithSignature("writeBoolean", "(Z)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectOutputStream.html#writeByte(int)"/>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectOutputStream.html#writeByte(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -124,7 +124,7 @@ namespace Java.Io
             IExecuteWithSignature("writeByte", "(I)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectOutputStream.html#writeBytes(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectOutputStream.html#writeBytes(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -133,7 +133,7 @@ namespace Java.Io
             IExecuteWithSignature("writeBytes", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectOutputStream.html#writeChar(int)"/>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectOutputStream.html#writeChar(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -142,7 +142,7 @@ namespace Java.Io
             IExecuteWithSignature("writeChar", "(I)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectOutputStream.html#writeChars(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectOutputStream.html#writeChars(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -151,7 +151,7 @@ namespace Java.Io
             IExecuteWithSignature("writeChars", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectOutputStream.html#writeDouble(double)"/>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectOutputStream.html#writeDouble(double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -160,7 +160,7 @@ namespace Java.Io
             IExecuteWithSignature("writeDouble", "(D)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectOutputStream.html#writeFields()"/>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectOutputStream.html#writeFields()"/>
         /// </summary>
         /// <exception cref="Java.Io.IOException"/>
         public void WriteFields()
@@ -168,7 +168,7 @@ namespace Java.Io
             IExecuteWithSignature("writeFields", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectOutputStream.html#writeFloat(float)"/>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectOutputStream.html#writeFloat(float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -177,7 +177,7 @@ namespace Java.Io
             IExecuteWithSignature("writeFloat", "(F)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectOutputStream.html#writeInt(int)"/>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectOutputStream.html#writeInt(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -186,7 +186,7 @@ namespace Java.Io
             IExecuteWithSignature("writeInt", "(I)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectOutputStream.html#writeLong(long)"/>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectOutputStream.html#writeLong(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -195,7 +195,7 @@ namespace Java.Io
             IExecuteWithSignature("writeLong", "(J)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectOutputStream.html#writeShort(int)"/>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectOutputStream.html#writeShort(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -204,7 +204,7 @@ namespace Java.Io
             IExecuteWithSignature("writeShort", "(I)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectOutputStream.html#writeUnshared(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectOutputStream.html#writeUnshared(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -213,7 +213,7 @@ namespace Java.Io
             IExecuteWithSignature("writeUnshared", "(Ljava/lang/Object;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectOutputStream.html#writeUTF(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectOutputStream.html#writeUTF(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -246,7 +246,7 @@ namespace Java.Io
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectOutputStream.PutField.html#put(java.lang.String,boolean)"/>
+            /// <see href="https://developer.android.com/reference/java/io/ObjectOutputStream.PutField.html#put(java.lang.String,boolean)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <param name="arg1"><see cref="bool"/></param>
@@ -255,7 +255,7 @@ namespace Java.Io
                 IExecute("put", arg0, arg1);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectOutputStream.PutField.html#put(java.lang.String,byte)"/>
+            /// <see href="https://developer.android.com/reference/java/io/ObjectOutputStream.PutField.html#put(java.lang.String,byte)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <param name="arg1"><see cref="byte"/></param>
@@ -264,7 +264,7 @@ namespace Java.Io
                 IExecute("put", arg0, arg1);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectOutputStream.PutField.html#put(java.lang.String,char)"/>
+            /// <see href="https://developer.android.com/reference/java/io/ObjectOutputStream.PutField.html#put(java.lang.String,char)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <param name="arg1"><see cref="char"/></param>
@@ -273,7 +273,7 @@ namespace Java.Io
                 IExecute("put", arg0, arg1);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectOutputStream.PutField.html#put(java.lang.String,double)"/>
+            /// <see href="https://developer.android.com/reference/java/io/ObjectOutputStream.PutField.html#put(java.lang.String,double)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <param name="arg1"><see cref="double"/></param>
@@ -282,7 +282,7 @@ namespace Java.Io
                 IExecute("put", arg0, arg1);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectOutputStream.PutField.html#put(java.lang.String,float)"/>
+            /// <see href="https://developer.android.com/reference/java/io/ObjectOutputStream.PutField.html#put(java.lang.String,float)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <param name="arg1"><see cref="float"/></param>
@@ -291,7 +291,7 @@ namespace Java.Io
                 IExecute("put", arg0, arg1);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectOutputStream.PutField.html#put(java.lang.String,int)"/>
+            /// <see href="https://developer.android.com/reference/java/io/ObjectOutputStream.PutField.html#put(java.lang.String,int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <param name="arg1"><see cref="int"/></param>
@@ -300,7 +300,7 @@ namespace Java.Io
                 IExecute("put", arg0, arg1);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectOutputStream.PutField.html#put(java.lang.String,java.lang.Object)"/>
+            /// <see href="https://developer.android.com/reference/java/io/ObjectOutputStream.PutField.html#put(java.lang.String,java.lang.Object)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <param name="arg1"><see cref="object"/></param>
@@ -309,7 +309,7 @@ namespace Java.Io
                 IExecute("put", arg0, arg1);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectOutputStream.PutField.html#put(java.lang.String,long)"/>
+            /// <see href="https://developer.android.com/reference/java/io/ObjectOutputStream.PutField.html#put(java.lang.String,long)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <param name="arg1"><see cref="long"/></param>
@@ -318,7 +318,7 @@ namespace Java.Io
                 IExecute("put", arg0, arg1);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectOutputStream.PutField.html#put(java.lang.String,short)"/>
+            /// <see href="https://developer.android.com/reference/java/io/ObjectOutputStream.PutField.html#put(java.lang.String,short)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <param name="arg1"><see cref="short"/></param>
@@ -327,11 +327,11 @@ namespace Java.Io
                 IExecute("put", arg0, arg1);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectOutputStream.PutField.html#write(java.io.ObjectOutput)"/>
+            /// <see href="https://developer.android.com/reference/java/io/ObjectOutputStream.PutField.html#write(java.io.ObjectOutput)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Io.ObjectOutput"/></param>
             /// <exception cref="Java.Io.IOException"/>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void Write(Java.Io.ObjectOutput arg0)
             {
                 IExecuteWithSignature("write", "(Ljava/io/ObjectOutput;)V", arg0);

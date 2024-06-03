@@ -87,20 +87,6 @@ namespace Android.Net
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/VpnProfileState.html#getSessionId()"/> 
-        /// </summary>
-        public Java.Lang.String SessionId
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSessionId", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/VpnProfileState.html#getState()"/> 
-        /// </summary>
-        public int State
-        {
-            get { return IExecuteWithSignature<int>("getState", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/VpnProfileState.html#isAlwaysOn()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -123,6 +109,22 @@ namespace Android.Net
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/VpnProfileState.html#getState()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetState()
+        {
+            return IExecuteWithSignature<int>("getState", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/VpnProfileState.html#getSessionId()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSessionId()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getSessionId", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/VpnProfileState.html#writeToParcel(android.os.Parcel,int)"/>

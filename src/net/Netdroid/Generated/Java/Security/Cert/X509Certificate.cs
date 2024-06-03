@@ -50,149 +50,128 @@ namespace Java.Security.Cert
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/X509Certificate.html#getBasicConstraints()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/cert/X509Certificate.html#getIssuerUniqueID()"/>
         /// </summary>
-        public int BasicConstraints
+        /// <returns><see cref="bool"/></returns>
+        public bool[] GetIssuerUniqueID()
         {
-            get { return IExecuteWithSignature<int>("getBasicConstraints", "()I"); }
+            return IExecuteWithSignatureArray<bool>("getIssuerUniqueID", "()[Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/X509Certificate.html#getExtendedKeyUsage()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/cert/X509Certificate.html#getKeyUsage()"/>
         /// </summary>
-        public Java.Util.List<Java.Lang.String> ExtendedKeyUsage
+        /// <returns><see cref="bool"/></returns>
+        public bool[] GetKeyUsage()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getExtendedKeyUsage", "()Ljava/util/List;"); }
+            return IExecuteWithSignatureArray<bool>("getKeyUsage", "()[Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/X509Certificate.html#getIssuerAlternativeNames()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/cert/X509Certificate.html#getSubjectUniqueID()"/>
         /// </summary>
-        public Java.Util.Collection<Java.Util.List<object>> IssuerAlternativeNames
+        /// <returns><see cref="bool"/></returns>
+        public bool[] GetSubjectUniqueID()
         {
-            get { return IExecuteWithSignature<Java.Util.Collection<Java.Util.List<object>>>("getIssuerAlternativeNames", "()Ljava/util/Collection;"); }
+            return IExecuteWithSignatureArray<bool>("getSubjectUniqueID", "()[Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/X509Certificate.html#getIssuerDN()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/cert/X509Certificate.html#getSigAlgParams()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Java.Security.Principal IssuerDN
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetSigAlgParams()
         {
-            get { return IExecuteWithSignature<Java.Security.Principal>("getIssuerDN", "()Ljava/security/Principal;"); }
+            return IExecuteWithSignatureArray<byte>("getSigAlgParams", "()[B");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/X509Certificate.html#getIssuerUniqueID()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/cert/X509Certificate.html#getSignature()"/>
         /// </summary>
-        public bool[] IssuerUniqueID
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetSignature()
         {
-            get { return IExecuteWithSignatureArray<bool>("getIssuerUniqueID", "()[Z"); }
+            return IExecuteWithSignatureArray<byte>("getSignature", "()[B");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/X509Certificate.html#getIssuerX500Principal()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/cert/X509Certificate.html#getTBSCertificate()"/>
         /// </summary>
-        public Javax.Security.Auth.X500.X500Principal IssuerX500Principal
+        /// <returns><see cref="byte"/></returns>
+        /// <exception cref="Java.Security.Cert.CertificateEncodingException"/>
+        public byte[] GetTBSCertificate()
         {
-            get { return IExecuteWithSignature<Javax.Security.Auth.X500.X500Principal>("getIssuerX500Principal", "()Ljavax/security/auth/x500/X500Principal;"); }
+            return IExecuteWithSignatureArray<byte>("getTBSCertificate", "()[B");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/X509Certificate.html#getKeyUsage()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/cert/X509Certificate.html#getBasicConstraints()"/>
         /// </summary>
-        public bool[] KeyUsage
+        /// <returns><see cref="int"/></returns>
+        public int GetBasicConstraints()
         {
-            get { return IExecuteWithSignatureArray<bool>("getKeyUsage", "()[Z"); }
+            return IExecuteWithSignature<int>("getBasicConstraints", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/X509Certificate.html#getNotAfter()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/cert/X509Certificate.html#getVersion()"/>
         /// </summary>
-        public Java.Util.Date NotAfter
+        /// <returns><see cref="int"/></returns>
+        public int GetVersion()
         {
-            get { return IExecuteWithSignature<Java.Util.Date>("getNotAfter", "()Ljava/util/Date;"); }
+            return IExecuteWithSignature<int>("getVersion", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/X509Certificate.html#getNotBefore()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/cert/X509Certificate.html#getSigAlgName()"/>
         /// </summary>
-        public Java.Util.Date NotBefore
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSigAlgName()
         {
-            get { return IExecuteWithSignature<Java.Util.Date>("getNotBefore", "()Ljava/util/Date;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getSigAlgName", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/X509Certificate.html#getSerialNumber()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/cert/X509Certificate.html#getSigAlgOID()"/>
         /// </summary>
-        public Java.Math.BigInteger SerialNumber
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSigAlgOID()
         {
-            get { return IExecuteWithSignature<Java.Math.BigInteger>("getSerialNumber", "()Ljava/math/BigInteger;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getSigAlgOID", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/X509Certificate.html#getSigAlgName()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/cert/X509Certificate.html#getSerialNumber()"/>
         /// </summary>
-        public Java.Lang.String SigAlgName
+        /// <returns><see cref="Java.Math.BigInteger"/></returns>
+        public Java.Math.BigInteger GetSerialNumber()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSigAlgName", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Math.BigInteger>("getSerialNumber", "()Ljava/math/BigInteger;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/X509Certificate.html#getSigAlgOID()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/cert/X509Certificate.html#getIssuerDN()"/>
         /// </summary>
-        public Java.Lang.String SigAlgOID
+        /// <returns><see cref="Java.Security.Principal"/></returns>
+        public Java.Security.Principal GetIssuerDN()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSigAlgOID", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Security.Principal>("getIssuerDN", "()Ljava/security/Principal;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/X509Certificate.html#getSigAlgParams()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/cert/X509Certificate.html#getSubjectDN()"/>
         /// </summary>
-        public byte[] SigAlgParams
+        /// <returns><see cref="Java.Security.Principal"/></returns>
+        public Java.Security.Principal GetSubjectDN()
         {
-            get { return IExecuteWithSignatureArray<byte>("getSigAlgParams", "()[B"); }
+            return IExecuteWithSignature<Java.Security.Principal>("getSubjectDN", "()Ljava/security/Principal;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/X509Certificate.html#getSignature()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/cert/X509Certificate.html#getNotAfter()"/>
         /// </summary>
-        public byte[] Signature
+        /// <returns><see cref="Java.Util.Date"/></returns>
+        public Java.Util.Date GetNotAfter()
         {
-            get { return IExecuteWithSignatureArray<byte>("getSignature", "()[B"); }
+            return IExecuteWithSignature<Java.Util.Date>("getNotAfter", "()Ljava/util/Date;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/X509Certificate.html#getSubjectAlternativeNames()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/cert/X509Certificate.html#getNotBefore()"/>
         /// </summary>
-        public Java.Util.Collection<Java.Util.List<object>> SubjectAlternativeNames
+        /// <returns><see cref="Java.Util.Date"/></returns>
+        public Java.Util.Date GetNotBefore()
         {
-            get { return IExecuteWithSignature<Java.Util.Collection<Java.Util.List<object>>>("getSubjectAlternativeNames", "()Ljava/util/Collection;"); }
+            return IExecuteWithSignature<Java.Util.Date>("getNotBefore", "()Ljava/util/Date;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/X509Certificate.html#getSubjectDN()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Java.Security.Principal SubjectDN
-        {
-            get { return IExecuteWithSignature<Java.Security.Principal>("getSubjectDN", "()Ljava/security/Principal;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/X509Certificate.html#getSubjectUniqueID()"/> 
-        /// </summary>
-        public bool[] SubjectUniqueID
-        {
-            get { return IExecuteWithSignatureArray<bool>("getSubjectUniqueID", "()[Z"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/X509Certificate.html#getSubjectX500Principal()"/> 
-        /// </summary>
-        public Javax.Security.Auth.X500.X500Principal SubjectX500Principal
-        {
-            get { return IExecuteWithSignature<Javax.Security.Auth.X500.X500Principal>("getSubjectX500Principal", "()Ljavax/security/auth/x500/X500Principal;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/X509Certificate.html#getTBSCertificate()"/> 
-        /// </summary>
-        public byte[] TBSCertificate
-        {
-            get { return IExecuteWithSignatureArray<byte>("getTBSCertificate", "()[B"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/X509Certificate.html#getVersion()"/> 
-        /// </summary>
-        public int Version
-        {
-            get { return IExecuteWithSignature<int>("getVersion", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/X509Certificate.html#checkValidity()"/>
+        /// <see href="https://developer.android.com/reference/java/security/cert/X509Certificate.html#checkValidity()"/>
         /// </summary>
         /// <exception cref="Java.Security.Cert.CertificateExpiredException"/>
         /// <exception cref="Java.Security.Cert.CertificateNotYetValidException"/>
@@ -201,7 +180,7 @@ namespace Java.Security.Cert
             IExecuteWithSignature("checkValidity", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/X509Certificate.html#checkValidity(java.util.Date)"/>
+        /// <see href="https://developer.android.com/reference/java/security/cert/X509Certificate.html#checkValidity(java.util.Date)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Date"/></param>
         /// <exception cref="Java.Security.Cert.CertificateExpiredException"/>
@@ -209,6 +188,49 @@ namespace Java.Security.Cert
         public void CheckValidity(Java.Util.Date arg0)
         {
             IExecuteWithSignature("checkValidity", "(Ljava/util/Date;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/cert/X509Certificate.html#getIssuerAlternativeNames()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Collection"/></returns>
+        /// <exception cref="Java.Security.Cert.CertificateParsingException"/>
+        public Java.Util.Collection<Java.Util.List<object>> GetIssuerAlternativeNames()
+        {
+            return IExecuteWithSignature<Java.Util.Collection<Java.Util.List<object>>>("getIssuerAlternativeNames", "()Ljava/util/Collection;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/cert/X509Certificate.html#getSubjectAlternativeNames()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Collection"/></returns>
+        /// <exception cref="Java.Security.Cert.CertificateParsingException"/>
+        public Java.Util.Collection<Java.Util.List<object>> GetSubjectAlternativeNames()
+        {
+            return IExecuteWithSignature<Java.Util.Collection<Java.Util.List<object>>>("getSubjectAlternativeNames", "()Ljava/util/Collection;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/cert/X509Certificate.html#getExtendedKeyUsage()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        /// <exception cref="Java.Security.Cert.CertificateParsingException"/>
+        public Java.Util.List<Java.Lang.String> GetExtendedKeyUsage()
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getExtendedKeyUsage", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/cert/X509Certificate.html#getIssuerX500Principal()"/>
+        /// </summary>
+        /// <returns><see cref="Javax.Security.Auth.X500.X500Principal"/></returns>
+        public Javax.Security.Auth.X500.X500Principal GetIssuerX500Principal()
+        {
+            return IExecuteWithSignature<Javax.Security.Auth.X500.X500Principal>("getIssuerX500Principal", "()Ljavax/security/auth/x500/X500Principal;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/cert/X509Certificate.html#getSubjectX500Principal()"/>
+        /// </summary>
+        /// <returns><see cref="Javax.Security.Auth.X500.X500Principal"/></returns>
+        public Javax.Security.Auth.X500.X500Principal GetSubjectX500Principal()
+        {
+            return IExecuteWithSignature<Javax.Security.Auth.X500.X500Principal>("getSubjectX500Principal", "()Ljavax/security/auth/x500/X500Principal;");
         }
 
         #endregion

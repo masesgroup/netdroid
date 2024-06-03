@@ -28,7 +28,7 @@ namespace Javax.Crypto.Interfaces
 {
     #region DHKey
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/crypto/interfaces/DHKey.html"/>
+    /// <see href="https://developer.android.com/reference/javax/crypto/interfaces/DHKey.html"/>
     /// </summary>
     public partial class DHKey : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DHKey>
     {
@@ -36,12 +36,12 @@ namespace Javax.Crypto.Interfaces
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("DHKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DHKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DHKey() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("DHKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DHKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DHKey(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -74,7 +74,7 @@ namespace Javax.Crypto.Interfaces
 
     #region DHPrivateKey
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/crypto/interfaces/DHPrivateKey.html"/>
+    /// <see href="https://developer.android.com/reference/javax/crypto/interfaces/DHPrivateKey.html"/>
     /// </summary>
     public partial class DHPrivateKey : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DHPrivateKey>
     {
@@ -82,12 +82,12 @@ namespace Javax.Crypto.Interfaces
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("DHPrivateKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DHPrivateKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DHPrivateKey() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("DHPrivateKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DHPrivateKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DHPrivateKey(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -120,7 +120,7 @@ namespace Javax.Crypto.Interfaces
 
     #region DHPublicKey
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/crypto/interfaces/DHPublicKey.html"/>
+    /// <see href="https://developer.android.com/reference/javax/crypto/interfaces/DHPublicKey.html"/>
     /// </summary>
     public partial class DHPublicKey : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DHPublicKey>
     {
@@ -128,12 +128,12 @@ namespace Javax.Crypto.Interfaces
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("DHPublicKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DHPublicKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DHPublicKey() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("DHPublicKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DHPublicKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DHPublicKey(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -166,7 +166,7 @@ namespace Javax.Crypto.Interfaces
 
     #region PBEKey
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/crypto/interfaces/PBEKey.html"/>
+    /// <see href="https://developer.android.com/reference/javax/crypto/interfaces/PBEKey.html"/>
     /// </summary>
     public partial class PBEKey : Javax.Crypto.SecretKey
     {
@@ -174,12 +174,12 @@ namespace Javax.Crypto.Interfaces
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("PBEKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("PBEKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public PBEKey() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("PBEKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("PBEKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public PBEKey(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);

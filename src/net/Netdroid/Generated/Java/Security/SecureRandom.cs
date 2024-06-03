@@ -30,7 +30,7 @@ namespace Java.Security
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/SecureRandom.html#%3Cinit%3E(byte[])"/>
+        /// <see href="https://developer.android.com/reference/java/security/SecureRandom.html#%3Cinit%3E(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         public SecureRandom(byte[] arg0)
@@ -50,14 +50,7 @@ namespace Java.Security
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/SecureRandom.html#getInstanceStrong()"/> 
-        /// </summary>
-        public static Java.Security.SecureRandom InstanceStrong
-        {
-            get { return SExecuteWithSignature<Java.Security.SecureRandom>(LocalBridgeClazz, "getInstanceStrong", "()Ljava/security/SecureRandom;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/SecureRandom.html#getSeed(int)"/>
+        /// <see href="https://developer.android.com/reference/java/security/SecureRandom.html#getSeed(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="byte"/></returns>
@@ -66,7 +59,7 @@ namespace Java.Security
             return SExecuteWithSignatureArray<byte>(LocalBridgeClazz, "getSeed", "(I)[B", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/SecureRandom.html#getInstance(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/security/SecureRandom.html#getInstance(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -78,7 +71,7 @@ namespace Java.Security
             return SExecute<Java.Security.SecureRandom>(LocalBridgeClazz, "getInstance", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/SecureRandom.html#getInstance(java.lang.String,java.security.Provider)"/>
+        /// <see href="https://developer.android.com/reference/java/security/SecureRandom.html#getInstance(java.lang.String,java.security.Provider)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Security.Provider"/></param>
@@ -89,7 +82,7 @@ namespace Java.Security
             return SExecute<Java.Security.SecureRandom>(LocalBridgeClazz, "getInstance", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/SecureRandom.html#getInstance(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/security/SecureRandom.html#getInstance(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Security.SecureRandom"/></returns>
@@ -98,26 +91,21 @@ namespace Java.Security
         {
             return SExecuteWithSignature<Java.Security.SecureRandom>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;)Ljava/security/SecureRandom;", arg0);
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/SecureRandom.html#getInstanceStrong()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Security.SecureRandom"/></returns>
+        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+        public static Java.Security.SecureRandom GetInstanceStrong()
+        {
+            return SExecuteWithSignature<Java.Security.SecureRandom>(LocalBridgeClazz, "getInstanceStrong", "()Ljava/security/SecureRandom;");
+        }
 
         #endregion
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/SecureRandom.html#getAlgorithm()"/> 
-        /// </summary>
-        public Java.Lang.String Algorithm
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAlgorithm", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/SecureRandom.html#getProvider()"/> 
-        /// </summary>
-        public Java.Security.Provider Provider
-        {
-            get { return IExecuteWithSignature<Java.Security.Provider>("getProvider", "()Ljava/security/Provider;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/SecureRandom.html#generateSeed(int)"/>
+        /// <see href="https://developer.android.com/reference/java/security/SecureRandom.html#generateSeed(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="byte"/></returns>
@@ -126,14 +114,30 @@ namespace Java.Security
             return IExecuteWithSignatureArray<byte>("generateSeed", "(I)[B", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/SecureRandom.html#reseed()"/>
+        /// <see href="https://developer.android.com/reference/java/security/SecureRandom.html#getProvider()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Security.Provider"/></returns>
+        public Java.Security.Provider GetProvider()
+        {
+            return IExecuteWithSignature<Java.Security.Provider>("getProvider", "()Ljava/security/Provider;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/SecureRandom.html#getAlgorithm()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetAlgorithm()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getAlgorithm", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/SecureRandom.html#reseed()"/>
         /// </summary>
         public void Reseed()
         {
             IExecuteWithSignature("reseed", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/SecureRandom.html#setSeed(byte[])"/>
+        /// <see href="https://developer.android.com/reference/java/security/SecureRandom.html#setSeed(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         public void SetSeed(byte[] arg0)

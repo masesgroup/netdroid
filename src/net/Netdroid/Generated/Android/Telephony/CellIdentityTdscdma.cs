@@ -52,67 +52,76 @@ namespace Android.Telephony
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityTdscdma.html#getAdditionalPlmns()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityTdscdma.html#getClosedSubscriberGroupInfo()"/>
         /// </summary>
-        public Java.Util.Set<Java.Lang.String> AdditionalPlmns
+        /// <returns><see cref="Android.Telephony.ClosedSubscriberGroupInfo"/></returns>
+        public Android.Telephony.ClosedSubscriberGroupInfo GetClosedSubscriberGroupInfo()
         {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getAdditionalPlmns", "()Ljava/util/Set;"); }
+            return IExecuteWithSignature<Android.Telephony.ClosedSubscriberGroupInfo>("getClosedSubscriberGroupInfo", "()Landroid/telephony/ClosedSubscriberGroupInfo;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityTdscdma.html#getCid()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityTdscdma.html#getCid()"/>
         /// </summary>
-        public int Cid
+        /// <returns><see cref="int"/></returns>
+        public int GetCid()
         {
-            get { return IExecuteWithSignature<int>("getCid", "()I"); }
+            return IExecuteWithSignature<int>("getCid", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityTdscdma.html#getClosedSubscriberGroupInfo()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityTdscdma.html#getCpid()"/>
         /// </summary>
-        public Android.Telephony.ClosedSubscriberGroupInfo ClosedSubscriberGroupInfo
+        /// <returns><see cref="int"/></returns>
+        public int GetCpid()
         {
-            get { return IExecuteWithSignature<Android.Telephony.ClosedSubscriberGroupInfo>("getClosedSubscriberGroupInfo", "()Landroid/telephony/ClosedSubscriberGroupInfo;"); }
+            return IExecuteWithSignature<int>("getCpid", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityTdscdma.html#getCpid()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityTdscdma.html#getLac()"/>
         /// </summary>
-        public int Cpid
+        /// <returns><see cref="int"/></returns>
+        public int GetLac()
         {
-            get { return IExecuteWithSignature<int>("getCpid", "()I"); }
+            return IExecuteWithSignature<int>("getLac", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityTdscdma.html#getLac()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityTdscdma.html#getUarfcn()"/>
         /// </summary>
-        public int Lac
+        /// <returns><see cref="int"/></returns>
+        public int GetUarfcn()
         {
-            get { return IExecuteWithSignature<int>("getLac", "()I"); }
+            return IExecuteWithSignature<int>("getUarfcn", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityTdscdma.html#getMccString()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityTdscdma.html#getMccString()"/>
         /// </summary>
-        public Java.Lang.String MccString
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetMccString()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getMccString", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getMccString", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityTdscdma.html#getMncString()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityTdscdma.html#getMncString()"/>
         /// </summary>
-        public Java.Lang.String MncString
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetMncString()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getMncString", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getMncString", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityTdscdma.html#getMobileNetworkOperator()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityTdscdma.html#getMobileNetworkOperator()"/>
         /// </summary>
-        public Java.Lang.String MobileNetworkOperator
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetMobileNetworkOperator()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getMobileNetworkOperator", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getMobileNetworkOperator", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityTdscdma.html#getUarfcn()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityTdscdma.html#getAdditionalPlmns()"/>
         /// </summary>
-        public int Uarfcn
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Lang.String> GetAdditionalPlmns()
         {
-            get { return IExecuteWithSignature<int>("getUarfcn", "()I"); }
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getAdditionalPlmns", "()Ljava/util/Set;");
         }
 
         #endregion

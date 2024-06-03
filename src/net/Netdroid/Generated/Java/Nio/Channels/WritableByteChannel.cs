@@ -64,7 +64,7 @@ namespace Java.Nio.Channels
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/WritableByteChannel.html#write(java.nio.ByteBuffer)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/WritableByteChannel.html#write(java.nio.ByteBuffer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         /// <returns><see cref="int"/></returns>

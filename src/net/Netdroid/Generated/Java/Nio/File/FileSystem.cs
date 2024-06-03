@@ -46,35 +46,7 @@ namespace Java.Nio.File
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/FileSystem.html#getFileStores()"/> 
-        /// </summary>
-        public Java.Lang.Iterable<Java.Nio.File.FileStore> FileStores
-        {
-            get { return IExecuteWithSignature<Java.Lang.Iterable<Java.Nio.File.FileStore>>("getFileStores", "()Ljava/lang/Iterable;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/FileSystem.html#getRootDirectories()"/> 
-        /// </summary>
-        public Java.Lang.Iterable<Java.Nio.File.Path> RootDirectories
-        {
-            get { return IExecuteWithSignature<Java.Lang.Iterable<Java.Nio.File.Path>>("getRootDirectories", "()Ljava/lang/Iterable;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/FileSystem.html#getSeparator()"/> 
-        /// </summary>
-        public Java.Lang.String Separator
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSeparator", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/FileSystem.html#getUserPrincipalLookupService()"/> 
-        /// </summary>
-        public Java.Nio.File.Attribute.UserPrincipalLookupService UserPrincipalLookupService
-        {
-            get { return IExecuteWithSignature<Java.Nio.File.Attribute.UserPrincipalLookupService>("getUserPrincipalLookupService", "()Ljava/nio/file/attribute/UserPrincipalLookupService;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/FileSystem.html#isOpen()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/FileSystem.html#isOpen()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsOpen()
@@ -82,7 +54,7 @@ namespace Java.Nio.File
             return IExecuteWithSignature<bool>("isOpen", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/FileSystem.html#isReadOnly()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/FileSystem.html#isReadOnly()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsReadOnly()
@@ -90,7 +62,39 @@ namespace Java.Nio.File
             return IExecuteWithSignature<bool>("isReadOnly", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/FileSystem.html#getPath(java.lang.String,java.lang.String[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/FileSystem.html#getFileStores()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Iterable"/></returns>
+        public Java.Lang.Iterable<Java.Nio.File.FileStore> GetFileStores()
+        {
+            return IExecuteWithSignature<Java.Lang.Iterable<Java.Nio.File.FileStore>>("getFileStores", "()Ljava/lang/Iterable;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/nio/file/FileSystem.html#getRootDirectories()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Iterable"/></returns>
+        public Java.Lang.Iterable<Java.Nio.File.Path> GetRootDirectories()
+        {
+            return IExecuteWithSignature<Java.Lang.Iterable<Java.Nio.File.Path>>("getRootDirectories", "()Ljava/lang/Iterable;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/nio/file/FileSystem.html#getSeparator()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSeparator()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getSeparator", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/nio/file/FileSystem.html#getUserPrincipalLookupService()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Nio.File.Attribute.UserPrincipalLookupService"/></returns>
+        public Java.Nio.File.Attribute.UserPrincipalLookupService GetUserPrincipalLookupService()
+        {
+            return IExecuteWithSignature<Java.Nio.File.Attribute.UserPrincipalLookupService>("getUserPrincipalLookupService", "()Ljava/nio/file/attribute/UserPrincipalLookupService;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/nio/file/FileSystem.html#getPath(java.lang.String,java.lang.String[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -100,7 +104,7 @@ namespace Java.Nio.File
             if (arg1.Length == 0) return IExecute<Java.Nio.File.Path>("getPath", arg0); else return IExecute<Java.Nio.File.Path>("getPath", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/FileSystem.html#getPathMatcher(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/FileSystem.html#getPathMatcher(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Nio.File.PathMatcher"/></returns>
@@ -109,7 +113,7 @@ namespace Java.Nio.File
             return IExecuteWithSignature<Java.Nio.File.PathMatcher>("getPathMatcher", "(Ljava/lang/String;)Ljava/nio/file/PathMatcher;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/FileSystem.html#provider()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/FileSystem.html#provider()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.File.Spi.FileSystemProvider"/></returns>
         public Java.Nio.File.Spi.FileSystemProvider Provider()
@@ -117,7 +121,7 @@ namespace Java.Nio.File
             return IExecuteWithSignature<Java.Nio.File.Spi.FileSystemProvider>("provider", "()Ljava/nio/file/spi/FileSystemProvider;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/FileSystem.html#newWatchService()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/FileSystem.html#newWatchService()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.File.WatchService"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -126,7 +130,7 @@ namespace Java.Nio.File
             return IExecuteWithSignature<Java.Nio.File.WatchService>("newWatchService", "()Ljava/nio/file/WatchService;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/FileSystem.html#supportedFileAttributeViews()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/FileSystem.html#supportedFileAttributeViews()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<Java.Lang.String> SupportedFileAttributeViews()
@@ -134,7 +138,7 @@ namespace Java.Nio.File
             return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("supportedFileAttributeViews", "()Ljava/util/Set;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/FileSystem.html#close()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/FileSystem.html#close()"/>
         /// </summary>
         /// <exception cref="Java.Io.IOException"/>
         public void Close()

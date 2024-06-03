@@ -36,7 +36,7 @@ namespace Android.Graphics
         /// <param name="arg1"><see cref="float"/></param>
         /// <param name="arg2"><see cref="float"/></param>
         /// <param name="arg3"><see cref="float"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public EmbossMaskFilter(float[] arg0, float arg1, float arg2, float arg3)
             : base(arg0, arg1, arg2, arg3)
         {

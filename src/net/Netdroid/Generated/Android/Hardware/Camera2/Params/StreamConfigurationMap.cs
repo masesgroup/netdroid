@@ -55,27 +55,6 @@ namespace Android.Hardware.Camera2.Params
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/StreamConfigurationMap.html#getHighSpeedVideoSizes()"/> 
-        /// </summary>
-        public Android.Util.Size[] HighSpeedVideoSizes
-        {
-            get { return IExecuteWithSignatureArray<Android.Util.Size>("getHighSpeedVideoSizes", "()[Landroid/util/Size;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/StreamConfigurationMap.html#getInputFormats()"/> 
-        /// </summary>
-        public int[] InputFormats
-        {
-            get { return IExecuteWithSignatureArray<int>("getInputFormats", "()[I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/StreamConfigurationMap.html#getOutputFormats()"/> 
-        /// </summary>
-        public int[] OutputFormats
-        {
-            get { return IExecuteWithSignatureArray<int>("getOutputFormats", "()[I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/StreamConfigurationMap.html#getOutputSizes(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
@@ -114,6 +93,14 @@ namespace Android.Hardware.Camera2.Params
             return IExecuteWithSignatureArray<Android.Util.Size>("getHighResolutionOutputSizes", "(I)[Landroid/util/Size;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/StreamConfigurationMap.html#getHighSpeedVideoSizes()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Util.Size"/></returns>
+        public Android.Util.Size[] GetHighSpeedVideoSizes()
+        {
+            return IExecuteWithSignatureArray<Android.Util.Size>("getHighSpeedVideoSizes", "()[Landroid/util/Size;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/StreamConfigurationMap.html#getInputSizes(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -148,6 +135,22 @@ namespace Android.Hardware.Camera2.Params
         public bool IsOutputSupportedFor(int arg0)
         {
             return IExecuteWithSignature<bool>("isOutputSupportedFor", "(I)Z", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/StreamConfigurationMap.html#getInputFormats()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int[] GetInputFormats()
+        {
+            return IExecuteWithSignatureArray<int>("getInputFormats", "()[I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/StreamConfigurationMap.html#getOutputFormats()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int[] GetOutputFormats()
+        {
+            return IExecuteWithSignatureArray<int>("getOutputFormats", "()[I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/StreamConfigurationMap.html#getValidOutputFormatsForInput(int)"/>

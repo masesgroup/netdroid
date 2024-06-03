@@ -55,13 +55,6 @@ namespace Android.Graphics.Pdf
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/pdf/PdfRenderer.html#getPageCount()"/> 
-        /// </summary>
-        public int PageCount
-        {
-            get { return IExecuteWithSignature<int>("getPageCount", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/pdf/PdfRenderer.html#openPage(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -77,6 +70,14 @@ namespace Android.Graphics.Pdf
         public bool ShouldScaleForPrinting()
         {
             return IExecuteWithSignature<bool>("shouldScaleForPrinting", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/pdf/PdfRenderer.html#getPageCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPageCount()
+        {
+            return IExecuteWithSignature<int>("getPageCount", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/pdf/PdfRenderer.html#close()"/>
@@ -122,25 +123,28 @@ namespace Android.Graphics.Pdf
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/graphics/pdf/PdfRenderer.Page.html#getHeight()"/> 
+            /// <see href="https://developer.android.com/reference/android/graphics/pdf/PdfRenderer.Page.html#getHeight()"/>
             /// </summary>
-            public int Height
+            /// <returns><see cref="int"/></returns>
+            public int GetHeight()
             {
-                get { return IExecuteWithSignature<int>("getHeight", "()I"); }
+                return IExecuteWithSignature<int>("getHeight", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/graphics/pdf/PdfRenderer.Page.html#getIndex()"/> 
+            /// <see href="https://developer.android.com/reference/android/graphics/pdf/PdfRenderer.Page.html#getIndex()"/>
             /// </summary>
-            public int Index
+            /// <returns><see cref="int"/></returns>
+            public int GetIndex()
             {
-                get { return IExecuteWithSignature<int>("getIndex", "()I"); }
+                return IExecuteWithSignature<int>("getIndex", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/graphics/pdf/PdfRenderer.Page.html#getWidth()"/> 
+            /// <see href="https://developer.android.com/reference/android/graphics/pdf/PdfRenderer.Page.html#getWidth()"/>
             /// </summary>
-            public int Width
+            /// <returns><see cref="int"/></returns>
+            public int GetWidth()
             {
-                get { return IExecuteWithSignature<int>("getWidth", "()I"); }
+                return IExecuteWithSignature<int>("getWidth", "()I");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/pdf/PdfRenderer.Page.html#close()"/>

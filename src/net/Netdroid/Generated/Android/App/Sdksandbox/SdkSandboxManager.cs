@@ -138,36 +138,40 @@ namespace Android.App.Sdksandbox
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/sdksandbox/SdkSandboxManager.html#getSdkSandboxState()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/sdksandbox/SdkSandboxManager.html#getSdkSandboxState()"/>
         /// </summary>
-        public static int SdkSandboxState
+        /// <returns><see cref="int"/></returns>
+        public static int GetSdkSandboxState()
         {
-            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getSdkSandboxState", "()I"); }
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getSdkSandboxState", "()I");
         }
 
         #endregion
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/sdksandbox/SdkSandboxManager.html#getAppOwnedSdkSandboxInterfaces()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/sdksandbox/SdkSandboxManager.html#getAppOwnedSdkSandboxInterfaces()"/>
         /// </summary>
-        public Java.Util.List<Android.App.Sdksandbox.AppOwnedSdkSandboxInterface> AppOwnedSdkSandboxInterfaces
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.App.Sdksandbox.AppOwnedSdkSandboxInterface> GetAppOwnedSdkSandboxInterfaces()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.App.Sdksandbox.AppOwnedSdkSandboxInterface>>("getAppOwnedSdkSandboxInterfaces", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Java.Util.List<Android.App.Sdksandbox.AppOwnedSdkSandboxInterface>>("getAppOwnedSdkSandboxInterfaces", "()Ljava/util/List;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/sdksandbox/SdkSandboxManager.html#getSandboxedSdks()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/sdksandbox/SdkSandboxManager.html#getSandboxedSdks()"/>
         /// </summary>
-        public Java.Util.List<Android.App.Sdksandbox.SandboxedSdk> SandboxedSdks
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.App.Sdksandbox.SandboxedSdk> GetSandboxedSdks()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.App.Sdksandbox.SandboxedSdk>>("getSandboxedSdks", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Java.Util.List<Android.App.Sdksandbox.SandboxedSdk>>("getSandboxedSdks", "()Ljava/util/List;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/sdksandbox/SdkSandboxManager.html#getSyncedSharedPreferencesKeys()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/sdksandbox/SdkSandboxManager.html#getSyncedSharedPreferencesKeys()"/>
         /// </summary>
-        public Java.Util.Set<Java.Lang.String> SyncedSharedPreferencesKeys
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Lang.String> GetSyncedSharedPreferencesKeys()
         {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getSyncedSharedPreferencesKeys", "()Ljava/util/Set;"); }
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getSyncedSharedPreferencesKeys", "()Ljava/util/Set;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/sdksandbox/SdkSandboxManager.html#addSdkSandboxProcessDeathCallback(java.util.concurrent.Executor,android.app.sdksandbox.SdkSandboxManager.SdkSandboxProcessDeathCallback)"/>

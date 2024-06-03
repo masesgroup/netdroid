@@ -42,11 +42,12 @@ namespace Android.Text.Method
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/method/HideReturnsTransformationMethod.html#getInstance()"/> 
+        /// <see href="https://developer.android.com/reference/android/text/method/HideReturnsTransformationMethod.html#getInstance()"/>
         /// </summary>
-        public static Android.Text.Method.HideReturnsTransformationMethod Instance
+        /// <returns><see cref="Android.Text.Method.HideReturnsTransformationMethod"/></returns>
+        public static Android.Text.Method.HideReturnsTransformationMethod GetInstance()
         {
-            get { return SExecuteWithSignature<Android.Text.Method.HideReturnsTransformationMethod>(LocalBridgeClazz, "getInstance", "()Landroid/text/method/HideReturnsTransformationMethod;"); }
+            return SExecuteWithSignature<Android.Text.Method.HideReturnsTransformationMethod>(LocalBridgeClazz, "getInstance", "()Landroid/text/method/HideReturnsTransformationMethod;");
         }
 
         #endregion

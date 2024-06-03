@@ -64,13 +64,6 @@ namespace Android.Net
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/EthernetNetworkSpecifier.html#getInterfaceName()"/> 
-        /// </summary>
-        public Java.Lang.String InterfaceName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getInterfaceName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/EthernetNetworkSpecifier.html#canBeSatisfiedBy(android.net.NetworkSpecifier)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Net.NetworkSpecifier"/></param>
@@ -86,6 +79,14 @@ namespace Android.Net
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/EthernetNetworkSpecifier.html#getInterfaceName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetInterfaceName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getInterfaceName", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/EthernetNetworkSpecifier.html#writeToParcel(android.os.Parcel,int)"/>

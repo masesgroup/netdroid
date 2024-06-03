@@ -58,32 +58,20 @@ namespace Android.Credentials
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/credentials/CredentialOption.html#getAllowedProviders()"/> 
+        /// <see href="https://developer.android.com/reference/android/credentials/CredentialOption.html#getCandidateQueryData()"/>
         /// </summary>
-        public Java.Util.Set<Android.Content.ComponentName> AllowedProviders
+        /// <returns><see cref="Android.Os.Bundle"/></returns>
+        public Android.Os.Bundle GetCandidateQueryData()
         {
-            get { return IExecuteWithSignature<Java.Util.Set<Android.Content.ComponentName>>("getAllowedProviders", "()Ljava/util/Set;"); }
+            return IExecuteWithSignature<Android.Os.Bundle>("getCandidateQueryData", "()Landroid/os/Bundle;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/credentials/CredentialOption.html#getCandidateQueryData()"/> 
+        /// <see href="https://developer.android.com/reference/android/credentials/CredentialOption.html#getCredentialRetrievalData()"/>
         /// </summary>
-        public Android.Os.Bundle CandidateQueryData
+        /// <returns><see cref="Android.Os.Bundle"/></returns>
+        public Android.Os.Bundle GetCredentialRetrievalData()
         {
-            get { return IExecuteWithSignature<Android.Os.Bundle>("getCandidateQueryData", "()Landroid/os/Bundle;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/credentials/CredentialOption.html#getCredentialRetrievalData()"/> 
-        /// </summary>
-        public Android.Os.Bundle CredentialRetrievalData
-        {
-            get { return IExecuteWithSignature<Android.Os.Bundle>("getCredentialRetrievalData", "()Landroid/os/Bundle;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/credentials/CredentialOption.html#getType()"/> 
-        /// </summary>
-        public Java.Lang.String Type
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getType", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Android.Os.Bundle>("getCredentialRetrievalData", "()Landroid/os/Bundle;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/credentials/CredentialOption.html#isSystemProviderRequired()"/>
@@ -100,6 +88,22 @@ namespace Android.Credentials
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/credentials/CredentialOption.html#getType()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetType()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getType", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/credentials/CredentialOption.html#getAllowedProviders()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Android.Content.ComponentName> GetAllowedProviders()
+        {
+            return IExecuteWithSignature<Java.Util.Set<Android.Content.ComponentName>>("getAllowedProviders", "()Ljava/util/Set;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/credentials/CredentialOption.html#writeToParcel(android.os.Parcel,int)"/>

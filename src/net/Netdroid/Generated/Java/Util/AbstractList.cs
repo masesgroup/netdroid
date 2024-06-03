@@ -50,7 +50,7 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/AbstractList.html#get(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/AbstractList.html#get(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="object"/></returns>
@@ -59,7 +59,7 @@ namespace Java.Util
             return IExecuteWithSignature("get", "(I)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/AbstractList.html#addAll(int,java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/AbstractList.html#addAll(int,java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Util.Collection"/></param>
@@ -69,7 +69,7 @@ namespace Java.Util
             return IExecute<bool>("addAll", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/AbstractList.html#remove(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/AbstractList.html#remove(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="object"/></returns>
@@ -78,7 +78,7 @@ namespace Java.Util
             return IExecuteWithSignature("remove", "(I)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/AbstractList.html#set(int,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/AbstractList.html#set(int,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -88,7 +88,7 @@ namespace Java.Util
             return IExecute("set", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/AbstractList.html#indexOf(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/AbstractList.html#indexOf(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="int"/></returns>
@@ -97,7 +97,7 @@ namespace Java.Util
             return IExecuteWithSignature<int>("indexOf", "(Ljava/lang/Object;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/AbstractList.html#lastIndexOf(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/AbstractList.html#lastIndexOf(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="int"/></returns>
@@ -106,7 +106,7 @@ namespace Java.Util
             return IExecuteWithSignature<int>("lastIndexOf", "(Ljava/lang/Object;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/AbstractList.html#subList(int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/AbstractList.html#subList(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -116,7 +116,7 @@ namespace Java.Util
             return IExecute<Java.Util.List>("subList", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/AbstractList.html#listIterator()"/>
+        /// <see href="https://developer.android.com/reference/java/util/AbstractList.html#listIterator()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.ListIterator"/></returns>
         public Java.Util.ListIterator ListIterator()
@@ -124,7 +124,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.ListIterator>("listIterator", "()Ljava/util/ListIterator;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/AbstractList.html#listIterator(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/AbstractList.html#listIterator(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Util.ListIterator"/></returns>
@@ -133,7 +133,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.ListIterator>("listIterator", "(I)Ljava/util/ListIterator;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/AbstractList.html#add(int,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/AbstractList.html#add(int,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -181,7 +181,7 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/AbstractList.html#get(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/AbstractList.html#get(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><typeparamref name="E"/></returns>
@@ -190,18 +190,18 @@ namespace Java.Util
             return IExecuteWithSignature<E>("get", "(I)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/AbstractList.html#addAll(int,java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/AbstractList.html#addAll(int,java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Util.Collection"/></param>
         /// <typeparam name="Arg1ExtendsE"><typeparamref name="E"/></typeparam>
         /// <returns><see cref="bool"/></returns>
-        public bool AddAll<Arg1ExtendsE>(int arg0, Java.Util.Collection<Arg1ExtendsE> arg1) where Arg1ExtendsE: E
+        public bool AddAll<Arg1ExtendsE>(int arg0, Java.Util.Collection<Arg1ExtendsE> arg1) where Arg1ExtendsE : E
         {
             return IExecute<bool>("addAll", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/AbstractList.html#remove(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/AbstractList.html#remove(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><typeparamref name="E"/></returns>
@@ -210,7 +210,7 @@ namespace Java.Util
             return IExecuteWithSignature<E>("remove", "(I)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/AbstractList.html#set(int,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/AbstractList.html#set(int,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><typeparamref name="E"/></param>
@@ -220,7 +220,7 @@ namespace Java.Util
             return IExecute<E>("set", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/AbstractList.html#indexOf(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/AbstractList.html#indexOf(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="int"/></returns>
@@ -229,7 +229,7 @@ namespace Java.Util
             return IExecuteWithSignature<int>("indexOf", "(Ljava/lang/Object;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/AbstractList.html#lastIndexOf(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/AbstractList.html#lastIndexOf(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="int"/></returns>
@@ -238,7 +238,7 @@ namespace Java.Util
             return IExecuteWithSignature<int>("lastIndexOf", "(Ljava/lang/Object;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/AbstractList.html#subList(int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/AbstractList.html#subList(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -248,7 +248,7 @@ namespace Java.Util
             return IExecute<Java.Util.List<E>>("subList", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/AbstractList.html#listIterator()"/>
+        /// <see href="https://developer.android.com/reference/java/util/AbstractList.html#listIterator()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.ListIterator"/></returns>
         public Java.Util.ListIterator<E> ListIterator()
@@ -256,7 +256,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.ListIterator<E>>("listIterator", "()Ljava/util/ListIterator;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/AbstractList.html#listIterator(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/AbstractList.html#listIterator(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Util.ListIterator"/></returns>
@@ -265,7 +265,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.ListIterator<E>>("listIterator", "(I)Ljava/util/ListIterator;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/AbstractList.html#add(int,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/AbstractList.html#add(int,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><typeparamref name="E"/></param>

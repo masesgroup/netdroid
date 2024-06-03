@@ -140,27 +140,6 @@ namespace Android.Media
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/Rating.html#getPercentRating()"/> 
-        /// </summary>
-        public float PercentRating
-        {
-            get { return IExecuteWithSignature<float>("getPercentRating", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/Rating.html#getRatingStyle()"/> 
-        /// </summary>
-        public int RatingStyle
-        {
-            get { return IExecuteWithSignature<int>("getRatingStyle", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/Rating.html#getStarRating()"/> 
-        /// </summary>
-        public float StarRating
-        {
-            get { return IExecuteWithSignature<float>("getStarRating", "()F"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/Rating.html#hasHeart()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -185,12 +164,36 @@ namespace Android.Media
             return IExecuteWithSignature<bool>("isThumbUp", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/Rating.html#getPercentRating()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetPercentRating()
+        {
+            return IExecuteWithSignature<float>("getPercentRating", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/Rating.html#getStarRating()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetStarRating()
+        {
+            return IExecuteWithSignature<float>("getStarRating", "()F");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/Rating.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/Rating.html#getRatingStyle()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetRatingStyle()
+        {
+            return IExecuteWithSignature<int>("getRatingStyle", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/Rating.html#writeToParcel(android.os.Parcel,int)"/>

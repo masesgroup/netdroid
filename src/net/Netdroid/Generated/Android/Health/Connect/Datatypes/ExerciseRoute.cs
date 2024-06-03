@@ -60,19 +60,20 @@ namespace Android.Health.Connect.Datatypes
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/ExerciseRoute.html#getRouteLocations()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Health.Connect.Datatypes.ExerciseRoute.Location> RouteLocations
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Health.Connect.Datatypes.ExerciseRoute.Location>>("getRouteLocations", "()Ljava/util/List;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/ExerciseRoute.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/ExerciseRoute.html#getRouteLocations()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Health.Connect.Datatypes.ExerciseRoute.Location> GetRouteLocations()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Health.Connect.Datatypes.ExerciseRoute.Location>>("getRouteLocations", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/ExerciseRoute.html#writeToParcel(android.os.Parcel,int)"/>
@@ -114,46 +115,44 @@ namespace Android.Health.Connect.Datatypes
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/ExerciseRoute.Location.html#getAltitude()"/> 
+            /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/ExerciseRoute.Location.html#getAltitude()"/>
             /// </summary>
-            public Android.Health.Connect.Datatypes.Units.Length Altitude
+            /// <returns><see cref="Android.Health.Connect.Datatypes.Units.Length"/></returns>
+            public Android.Health.Connect.Datatypes.Units.Length GetAltitude()
             {
-                get { return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Length>("getAltitude", "()Landroid/health/connect/datatypes/units/Length;"); }
+                return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Length>("getAltitude", "()Landroid/health/connect/datatypes/units/Length;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/ExerciseRoute.Location.html#getHorizontalAccuracy()"/> 
+            /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/ExerciseRoute.Location.html#getHorizontalAccuracy()"/>
             /// </summary>
-            public Android.Health.Connect.Datatypes.Units.Length HorizontalAccuracy
+            /// <returns><see cref="Android.Health.Connect.Datatypes.Units.Length"/></returns>
+            public Android.Health.Connect.Datatypes.Units.Length GetHorizontalAccuracy()
             {
-                get { return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Length>("getHorizontalAccuracy", "()Landroid/health/connect/datatypes/units/Length;"); }
+                return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Length>("getHorizontalAccuracy", "()Landroid/health/connect/datatypes/units/Length;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/ExerciseRoute.Location.html#getLatitude()"/> 
+            /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/ExerciseRoute.Location.html#getVerticalAccuracy()"/>
             /// </summary>
-            public double Latitude
+            /// <returns><see cref="Android.Health.Connect.Datatypes.Units.Length"/></returns>
+            public Android.Health.Connect.Datatypes.Units.Length GetVerticalAccuracy()
             {
-                get { return IExecuteWithSignature<double>("getLatitude", "()D"); }
+                return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Length>("getVerticalAccuracy", "()Landroid/health/connect/datatypes/units/Length;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/ExerciseRoute.Location.html#getLongitude()"/> 
+            /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/ExerciseRoute.Location.html#getLatitude()"/>
             /// </summary>
-            public double Longitude
+            /// <returns><see cref="double"/></returns>
+            public double GetLatitude()
             {
-                get { return IExecuteWithSignature<double>("getLongitude", "()D"); }
+                return IExecuteWithSignature<double>("getLatitude", "()D");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/ExerciseRoute.Location.html#getTime()"/> 
+            /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/ExerciseRoute.Location.html#getLongitude()"/>
             /// </summary>
-            public Java.Time.Instant Time
+            /// <returns><see cref="double"/></returns>
+            public double GetLongitude()
             {
-                get { return IExecuteWithSignature<Java.Time.Instant>("getTime", "()Ljava/time/Instant;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/ExerciseRoute.Location.html#getVerticalAccuracy()"/> 
-            /// </summary>
-            public Android.Health.Connect.Datatypes.Units.Length VerticalAccuracy
-            {
-                get { return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Length>("getVerticalAccuracy", "()Landroid/health/connect/datatypes/units/Length;"); }
+                return IExecuteWithSignature<double>("getLongitude", "()D");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/ExerciseRoute.Location.html#describeContents()"/>
@@ -162,6 +161,14 @@ namespace Android.Health.Connect.Datatypes
             public int DescribeContents()
             {
                 return IExecuteWithSignature<int>("describeContents", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/ExerciseRoute.Location.html#getTime()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Time.Instant"/></returns>
+            public Java.Time.Instant GetTime()
+            {
+                return IExecuteWithSignature<Java.Time.Instant>("getTime", "()Ljava/time/Instant;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/ExerciseRoute.Location.html#writeToParcel(android.os.Parcel,int)"/>

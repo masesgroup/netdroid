@@ -54,19 +54,19 @@ namespace Java.Time
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Instant.html#EPOCH"/>
+        /// <see href="https://developer.android.com/reference/java/time/Instant.html#EPOCH"/>
         /// </summary>
         public static Java.Time.Instant EPOCH { get { if (!_EPOCHReady) { _EPOCHContent = SGetField<Java.Time.Instant>(LocalBridgeClazz, "EPOCH"); _EPOCHReady = true; } return _EPOCHContent; } }
         private static Java.Time.Instant _EPOCHContent = default;
         private static bool _EPOCHReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Instant.html#MAX"/>
+        /// <see href="https://developer.android.com/reference/java/time/Instant.html#MAX"/>
         /// </summary>
         public static Java.Time.Instant MAX { get { if (!_MAXReady) { _MAXContent = SGetField<Java.Time.Instant>(LocalBridgeClazz, "MAX"); _MAXReady = true; } return _MAXContent; } }
         private static Java.Time.Instant _MAXContent = default;
         private static bool _MAXReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Instant.html#MIN"/>
+        /// <see href="https://developer.android.com/reference/java/time/Instant.html#MIN"/>
         /// </summary>
         public static Java.Time.Instant MIN { get { if (!_MINReady) { _MINContent = SGetField<Java.Time.Instant>(LocalBridgeClazz, "MIN"); _MINReady = true; } return _MINContent; } }
         private static Java.Time.Instant _MINContent = default;
@@ -76,7 +76,7 @@ namespace Java.Time
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Instant.html#from(java.time.temporal.TemporalAccessor)"/>
+        /// <see href="https://developer.android.com/reference/java/time/Instant.html#from(java.time.temporal.TemporalAccessor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAccessor"/></param>
         /// <returns><see cref="Java.Time.Instant"/></returns>
@@ -85,7 +85,7 @@ namespace Java.Time
             return SExecuteWithSignature<Java.Time.Instant>(LocalBridgeClazz, "from", "(Ljava/time/temporal/TemporalAccessor;)Ljava/time/Instant;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Instant.html#now()"/>
+        /// <see href="https://developer.android.com/reference/java/time/Instant.html#now()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.Instant"/></returns>
         public static Java.Time.Instant Now()
@@ -93,7 +93,7 @@ namespace Java.Time
             return SExecuteWithSignature<Java.Time.Instant>(LocalBridgeClazz, "now", "()Ljava/time/Instant;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Instant.html#now(java.time.Clock)"/>
+        /// <see href="https://developer.android.com/reference/java/time/Instant.html#now(java.time.Clock)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Clock"/></param>
         /// <returns><see cref="Java.Time.Instant"/></returns>
@@ -102,7 +102,7 @@ namespace Java.Time
             return SExecuteWithSignature<Java.Time.Instant>(LocalBridgeClazz, "now", "(Ljava/time/Clock;)Ljava/time/Instant;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Instant.html#ofEpochMilli(long)"/>
+        /// <see href="https://developer.android.com/reference/java/time/Instant.html#ofEpochMilli(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Time.Instant"/></returns>
@@ -111,7 +111,7 @@ namespace Java.Time
             return SExecuteWithSignature<Java.Time.Instant>(LocalBridgeClazz, "ofEpochMilli", "(J)Ljava/time/Instant;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Instant.html#ofEpochSecond(long,long)"/>
+        /// <see href="https://developer.android.com/reference/java/time/Instant.html#ofEpochSecond(long,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -121,7 +121,7 @@ namespace Java.Time
             return SExecute<Java.Time.Instant>(LocalBridgeClazz, "ofEpochSecond", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Instant.html#ofEpochSecond(long)"/>
+        /// <see href="https://developer.android.com/reference/java/time/Instant.html#ofEpochSecond(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Time.Instant"/></returns>
@@ -130,7 +130,7 @@ namespace Java.Time
             return SExecuteWithSignature<Java.Time.Instant>(LocalBridgeClazz, "ofEpochSecond", "(J)Ljava/time/Instant;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Instant.html#parse(java.lang.CharSequence)"/>
+        /// <see href="https://developer.android.com/reference/java/time/Instant.html#parse(java.lang.CharSequence)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <returns><see cref="Java.Time.Instant"/></returns>
@@ -143,21 +143,7 @@ namespace Java.Time
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Instant.html#getEpochSecond()"/> 
-        /// </summary>
-        public long EpochSecond
-        {
-            get { return IExecuteWithSignature<long>("getEpochSecond", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Instant.html#getNano()"/> 
-        /// </summary>
-        public int Nano
-        {
-            get { return IExecuteWithSignature<int>("getNano", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Instant.html#query(java.time.temporal.TemporalQuery)"/>
+        /// <see href="https://developer.android.com/reference/java/time/Instant.html#query(java.time.temporal.TemporalQuery)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalQuery"/></param>
         /// <typeparam name="R"></typeparam>
@@ -167,7 +153,7 @@ namespace Java.Time
             return IExecuteWithSignature<R>("query", "(Ljava/time/temporal/TemporalQuery;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Instant.html#isAfter(java.time.Instant)"/>
+        /// <see href="https://developer.android.com/reference/java/time/Instant.html#isAfter(java.time.Instant)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Instant"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -176,7 +162,7 @@ namespace Java.Time
             return IExecuteWithSignature<bool>("isAfter", "(Ljava/time/Instant;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Instant.html#isBefore(java.time.Instant)"/>
+        /// <see href="https://developer.android.com/reference/java/time/Instant.html#isBefore(java.time.Instant)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Instant"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -185,7 +171,7 @@ namespace Java.Time
             return IExecuteWithSignature<bool>("isBefore", "(Ljava/time/Instant;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Instant.html#isSupported(java.time.temporal.TemporalField)"/>
+        /// <see href="https://developer.android.com/reference/java/time/Instant.html#isSupported(java.time.temporal.TemporalField)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -194,7 +180,7 @@ namespace Java.Time
             return IExecuteWithSignature<bool>("isSupported", "(Ljava/time/temporal/TemporalField;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Instant.html#isSupported(java.time.temporal.TemporalUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/time/Instant.html#isSupported(java.time.temporal.TemporalUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalUnit"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -203,7 +189,7 @@ namespace Java.Time
             return IExecuteWithSignature<bool>("isSupported", "(Ljava/time/temporal/TemporalUnit;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Instant.html#compareTo(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/time/Instant.html#compareTo(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="int"/></returns>
@@ -212,7 +198,7 @@ namespace Java.Time
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Instant.html#compareTo(java.time.Instant)"/>
+        /// <see href="https://developer.android.com/reference/java/time/Instant.html#compareTo(java.time.Instant)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Instant"/></param>
         /// <returns><see cref="int"/></returns>
@@ -221,7 +207,7 @@ namespace Java.Time
             return IExecuteWithSignature<int>("compareTo", "(Ljava/time/Instant;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Instant.html#get(java.time.temporal.TemporalField)"/>
+        /// <see href="https://developer.android.com/reference/java/time/Instant.html#get(java.time.temporal.TemporalField)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
         /// <returns><see cref="int"/></returns>
@@ -230,7 +216,15 @@ namespace Java.Time
             return IExecuteWithSignature<int>("get", "(Ljava/time/temporal/TemporalField;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Instant.html#minusMillis(long)"/>
+        /// <see href="https://developer.android.com/reference/java/time/Instant.html#getNano()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetNano()
+        {
+            return IExecuteWithSignature<int>("getNano", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/Instant.html#minusMillis(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Time.Instant"/></returns>
@@ -239,7 +233,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.Instant>("minusMillis", "(J)Ljava/time/Instant;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Instant.html#minusNanos(long)"/>
+        /// <see href="https://developer.android.com/reference/java/time/Instant.html#minusNanos(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Time.Instant"/></returns>
@@ -248,7 +242,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.Instant>("minusNanos", "(J)Ljava/time/Instant;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Instant.html#minusSeconds(long)"/>
+        /// <see href="https://developer.android.com/reference/java/time/Instant.html#minusSeconds(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Time.Instant"/></returns>
@@ -257,7 +251,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.Instant>("minusSeconds", "(J)Ljava/time/Instant;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Instant.html#plusMillis(long)"/>
+        /// <see href="https://developer.android.com/reference/java/time/Instant.html#plusMillis(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Time.Instant"/></returns>
@@ -266,7 +260,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.Instant>("plusMillis", "(J)Ljava/time/Instant;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Instant.html#plusNanos(long)"/>
+        /// <see href="https://developer.android.com/reference/java/time/Instant.html#plusNanos(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Time.Instant"/></returns>
@@ -275,7 +269,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.Instant>("plusNanos", "(J)Ljava/time/Instant;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Instant.html#plusSeconds(long)"/>
+        /// <see href="https://developer.android.com/reference/java/time/Instant.html#plusSeconds(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Time.Instant"/></returns>
@@ -284,7 +278,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.Instant>("plusSeconds", "(J)Ljava/time/Instant;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Instant.html#truncatedTo(java.time.temporal.TemporalUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/time/Instant.html#truncatedTo(java.time.temporal.TemporalUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalUnit"/></param>
         /// <returns><see cref="Java.Time.Instant"/></returns>
@@ -293,7 +287,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.Instant>("truncatedTo", "(Ljava/time/temporal/TemporalUnit;)Ljava/time/Instant;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Instant.html#atOffset(java.time.ZoneOffset)"/>
+        /// <see href="https://developer.android.com/reference/java/time/Instant.html#atOffset(java.time.ZoneOffset)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.ZoneOffset"/></param>
         /// <returns><see cref="Java.Time.OffsetDateTime"/></returns>
@@ -302,7 +296,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.OffsetDateTime>("atOffset", "(Ljava/time/ZoneOffset;)Ljava/time/OffsetDateTime;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Instant.html#adjustInto(java.time.temporal.Temporal)"/>
+        /// <see href="https://developer.android.com/reference/java/time/Instant.html#adjustInto(java.time.temporal.Temporal)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.Temporal"/></param>
         /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
@@ -311,7 +305,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.Temporal.Temporal>("adjustInto", "(Ljava/time/temporal/Temporal;)Ljava/time/temporal/Temporal;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Instant.html#minus(java.time.temporal.TemporalAmount)"/>
+        /// <see href="https://developer.android.com/reference/java/time/Instant.html#minus(java.time.temporal.TemporalAmount)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAmount"/></param>
         /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
@@ -320,7 +314,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.Temporal.Temporal>("minus", "(Ljava/time/temporal/TemporalAmount;)Ljava/time/temporal/Temporal;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Instant.html#minus(long,java.time.temporal.TemporalUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/time/Instant.html#minus(long,java.time.temporal.TemporalUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Time.Temporal.TemporalUnit"/></param>
@@ -330,7 +324,7 @@ namespace Java.Time
             return IExecute<Java.Time.Temporal.Temporal>("minus", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Instant.html#plus(java.time.temporal.TemporalAmount)"/>
+        /// <see href="https://developer.android.com/reference/java/time/Instant.html#plus(java.time.temporal.TemporalAmount)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAmount"/></param>
         /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
@@ -339,7 +333,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.Temporal.Temporal>("plus", "(Ljava/time/temporal/TemporalAmount;)Ljava/time/temporal/Temporal;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Instant.html#plus(long,java.time.temporal.TemporalUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/time/Instant.html#plus(long,java.time.temporal.TemporalUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Time.Temporal.TemporalUnit"/></param>
@@ -349,7 +343,7 @@ namespace Java.Time
             return IExecute<Java.Time.Temporal.Temporal>("plus", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Instant.html#with(java.time.temporal.TemporalAdjuster)"/>
+        /// <see href="https://developer.android.com/reference/java/time/Instant.html#with(java.time.temporal.TemporalAdjuster)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAdjuster"/></param>
         /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
@@ -358,7 +352,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.Temporal.Temporal>("with", "(Ljava/time/temporal/TemporalAdjuster;)Ljava/time/temporal/Temporal;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Instant.html#with(java.time.temporal.TemporalField,long)"/>
+        /// <see href="https://developer.android.com/reference/java/time/Instant.html#with(java.time.temporal.TemporalField,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -368,7 +362,7 @@ namespace Java.Time
             return IExecute<Java.Time.Temporal.Temporal>("with", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Instant.html#range(java.time.temporal.TemporalField)"/>
+        /// <see href="https://developer.android.com/reference/java/time/Instant.html#range(java.time.temporal.TemporalField)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
         /// <returns><see cref="Java.Time.Temporal.ValueRange"/></returns>
@@ -377,7 +371,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.Temporal.ValueRange>("range", "(Ljava/time/temporal/TemporalField;)Ljava/time/temporal/ValueRange;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Instant.html#atZone(java.time.ZoneId)"/>
+        /// <see href="https://developer.android.com/reference/java/time/Instant.html#atZone(java.time.ZoneId)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.ZoneId"/></param>
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
@@ -386,7 +380,15 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.ZonedDateTime>("atZone", "(Ljava/time/ZoneId;)Ljava/time/ZonedDateTime;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Instant.html#getLong(java.time.temporal.TemporalField)"/>
+        /// <see href="https://developer.android.com/reference/java/time/Instant.html#getEpochSecond()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetEpochSecond()
+        {
+            return IExecuteWithSignature<long>("getEpochSecond", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/Instant.html#getLong(java.time.temporal.TemporalField)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
         /// <returns><see cref="long"/></returns>
@@ -395,7 +397,7 @@ namespace Java.Time
             return IExecuteWithSignature<long>("getLong", "(Ljava/time/temporal/TemporalField;)J", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Instant.html#toEpochMilli()"/>
+        /// <see href="https://developer.android.com/reference/java/time/Instant.html#toEpochMilli()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
         public long ToEpochMilli()
@@ -403,7 +405,7 @@ namespace Java.Time
             return IExecuteWithSignature<long>("toEpochMilli", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/Instant.html#until(java.time.temporal.Temporal,java.time.temporal.TemporalUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/time/Instant.html#until(java.time.temporal.Temporal,java.time.temporal.TemporalUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.Temporal"/></param>
         /// <param name="arg1"><see cref="Java.Time.Temporal.TemporalUnit"/></param>

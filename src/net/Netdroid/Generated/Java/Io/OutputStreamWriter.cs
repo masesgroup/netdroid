@@ -30,7 +30,7 @@ namespace Java.Io
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/OutputStreamWriter.html#%3Cinit%3E(java.io.OutputStream,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/io/OutputStreamWriter.html#%3Cinit%3E(java.io.OutputStream,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -40,7 +40,7 @@ namespace Java.Io
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/OutputStreamWriter.html#%3Cinit%3E(java.io.OutputStream,java.nio.charset.Charset)"/>
+        /// <see href="https://developer.android.com/reference/java/io/OutputStreamWriter.html#%3Cinit%3E(java.io.OutputStream,java.nio.charset.Charset)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
         /// <param name="arg1"><see cref="Java.Nio.Charset.Charset"/></param>
@@ -49,7 +49,7 @@ namespace Java.Io
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/OutputStreamWriter.html#%3Cinit%3E(java.io.OutputStream,java.nio.charset.CharsetEncoder)"/>
+        /// <see href="https://developer.android.com/reference/java/io/OutputStreamWriter.html#%3Cinit%3E(java.io.OutputStream,java.nio.charset.CharsetEncoder)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
         /// <param name="arg1"><see cref="Java.Nio.Charset.CharsetEncoder"/></param>
@@ -58,7 +58,7 @@ namespace Java.Io
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/OutputStreamWriter.html#%3Cinit%3E(java.io.OutputStream)"/>
+        /// <see href="https://developer.android.com/reference/java/io/OutputStreamWriter.html#%3Cinit%3E(java.io.OutputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
         public OutputStreamWriter(Java.Io.OutputStream arg0)
@@ -82,11 +82,12 @@ namespace Java.Io
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/OutputStreamWriter.html#getEncoding()"/> 
+        /// <see href="https://developer.android.com/reference/java/io/OutputStreamWriter.html#getEncoding()"/>
         /// </summary>
-        public Java.Lang.String Encoding
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetEncoding()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getEncoding", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getEncoding", "()Ljava/lang/String;");
         }
 
         #endregion

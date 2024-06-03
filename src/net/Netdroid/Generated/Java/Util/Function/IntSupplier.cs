@@ -27,7 +27,7 @@ namespace Java.Util.Function
 {
     #region IIntSupplier
     /// <summary>
-    /// .NET interface for org.mases.netdroid.generated.java.util.function.IntSupplier implementing <see href="https://developer.android.com/reference/java.base/java/util/function/IntSupplier.html"/>
+    /// .NET interface for org.mases.netdroid.generated.java.util.function.IntSupplier implementing <see href="https://developer.android.com/reference/java/util/function/IntSupplier.html"/>
     /// </summary>
     public partial interface IIntSupplier
     {
@@ -68,15 +68,15 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("getAsInt", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetAsIntEventHandler));
+            AddEventHandler("getAsInt", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetAsIntEventHandler));
 
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/IntSupplier.html#getAsInt()"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/IntSupplier.html#getAsInt()"/>
         /// </summary>
         /// <remarks>If <see cref="OnGetAsInt"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<int> OnGetAsInt { get; set; } = null;
+        public global::System.Func<int> OnGetAsInt { get; set; } = null;
 
         void GetAsIntEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
@@ -86,7 +86,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/IntSupplier.html#getAsInt()"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/IntSupplier.html#getAsInt()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public virtual int GetAsInt()
@@ -125,11 +125,12 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/IntSupplier.html#getAsInt()"/> 
+        /// <see href="https://developer.android.com/reference/java/util/function/IntSupplier.html#getAsInt()"/>
         /// </summary>
-        public int AsInt
+        /// <returns><see cref="int"/></returns>
+        public override int GetAsInt()
         {
-            get { return IExecuteWithSignature<int>("getAsInt", "()I"); }
+            return IExecuteWithSignature<int>("getAsInt", "()I");
         }
 
         #endregion

@@ -27,7 +27,7 @@ namespace Java.Util.Function
 {
     #region IDoublePredicate
     /// <summary>
-    /// .NET interface for org.mases.netdroid.generated.java.util.function.DoublePredicate implementing <see href="https://developer.android.com/reference/java.base/java/util/function/DoublePredicate.html"/>
+    /// .NET interface for org.mases.netdroid.generated.java.util.function.DoublePredicate implementing <see href="https://developer.android.com/reference/java/util/function/DoublePredicate.html"/>
     /// </summary>
     public partial interface IDoublePredicate
     {
@@ -68,18 +68,18 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("test", new System.EventHandler<CLRListenerEventArgs<CLREventData<double>>>(TestEventHandler));
-            AddEventHandler("and", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.DoublePredicate>>>(AndEventHandler));
-            AddEventHandler("negate", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(NegateEventHandler));
-            AddEventHandler("or", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.DoublePredicate>>>(OrEventHandler));
+            AddEventHandler("test", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<double>>>(TestEventHandler));
+            AddEventHandler("and", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.DoublePredicate>>>(AndEventHandler));
+            AddEventHandler("negate", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(NegateEventHandler));
+            AddEventHandler("or", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.DoublePredicate>>>(OrEventHandler));
 
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/DoublePredicate.html#test(double)"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/DoublePredicate.html#test(double)"/>
         /// </summary>
         /// <remarks>If <see cref="OnTest"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<double, bool> OnTest { get; set; } = null;
+        public global::System.Func<double, bool> OnTest { get; set; } = null;
 
         void TestEventHandler(object sender, CLRListenerEventArgs<CLREventData<double>> data)
         {
@@ -89,7 +89,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/DoublePredicate.html#test(double)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/DoublePredicate.html#test(double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -98,7 +98,7 @@ namespace Java.Util.Function
             return default;
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/DoublePredicate.html#and(java.util.function.DoublePredicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/DoublePredicate.html#and(java.util.function.DoublePredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.DoublePredicate"/></param>
         /// <returns><see cref="Java.Util.Function.DoublePredicate"/></returns>
@@ -109,10 +109,10 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/DoublePredicate.html#and(java.util.function.DoublePredicate)"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/DoublePredicate.html#and(java.util.function.DoublePredicate)"/>
         /// </summary>
         /// <remarks>If <see cref="OnAnd"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.DoublePredicate, Java.Util.Function.DoublePredicate> OnAnd { get; set; } = null;
+        public global::System.Func<Java.Util.Function.DoublePredicate, Java.Util.Function.DoublePredicate> OnAnd { get; set; } = null;
 
         void AndEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.DoublePredicate>> data)
         {
@@ -122,7 +122,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/DoublePredicate.html#and(java.util.function.DoublePredicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/DoublePredicate.html#and(java.util.function.DoublePredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.DoublePredicate"/></param>
         /// <returns><see cref="Java.Util.Function.DoublePredicate"/></returns>
@@ -132,7 +132,7 @@ namespace Java.Util.Function
             return AndDefault(arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/DoublePredicate.html#negate()"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/DoublePredicate.html#negate()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Function.DoublePredicate"/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
@@ -142,10 +142,10 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/DoublePredicate.html#negate()"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/DoublePredicate.html#negate()"/>
         /// </summary>
         /// <remarks>If <see cref="OnNegate"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.DoublePredicate> OnNegate { get; set; } = null;
+        public global::System.Func<Java.Util.Function.DoublePredicate> OnNegate { get; set; } = null;
 
         void NegateEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
@@ -155,7 +155,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/DoublePredicate.html#negate()"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/DoublePredicate.html#negate()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Function.DoublePredicate"/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="NegateDefault"/>; override the method to implement a different behavior</remarks>
@@ -164,7 +164,7 @@ namespace Java.Util.Function
             return NegateDefault();
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/DoublePredicate.html#or(java.util.function.DoublePredicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/DoublePredicate.html#or(java.util.function.DoublePredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.DoublePredicate"/></param>
         /// <returns><see cref="Java.Util.Function.DoublePredicate"/></returns>
@@ -175,10 +175,10 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/DoublePredicate.html#or(java.util.function.DoublePredicate)"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/DoublePredicate.html#or(java.util.function.DoublePredicate)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOr"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.DoublePredicate, Java.Util.Function.DoublePredicate> OnOr { get; set; } = null;
+        public global::System.Func<Java.Util.Function.DoublePredicate, Java.Util.Function.DoublePredicate> OnOr { get; set; } = null;
 
         void OrEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.DoublePredicate>> data)
         {
@@ -188,7 +188,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/DoublePredicate.html#or(java.util.function.DoublePredicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/DoublePredicate.html#or(java.util.function.DoublePredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.DoublePredicate"/></param>
         /// <returns><see cref="Java.Util.Function.DoublePredicate"/></returns>
@@ -229,7 +229,7 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/DoublePredicate.html#test(double)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/DoublePredicate.html#test(double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -238,7 +238,7 @@ namespace Java.Util.Function
             return IExecuteWithSignature<bool>("test", "(D)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/DoublePredicate.html#and(java.util.function.DoublePredicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/DoublePredicate.html#and(java.util.function.DoublePredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.DoublePredicate"/></param>
         /// <returns><see cref="Java.Util.Function.DoublePredicate"/></returns>
@@ -247,7 +247,7 @@ namespace Java.Util.Function
             return IExecuteWithSignature<Java.Util.Function.DoublePredicateDirect, Java.Util.Function.DoublePredicate>("and", "(Ljava/util/function/DoublePredicate;)Ljava/util/function/DoublePredicate;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/DoublePredicate.html#negate()"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/DoublePredicate.html#negate()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Function.DoublePredicate"/></returns>
         public override Java.Util.Function.DoublePredicate Negate()
@@ -255,7 +255,7 @@ namespace Java.Util.Function
             return IExecuteWithSignature<Java.Util.Function.DoublePredicateDirect, Java.Util.Function.DoublePredicate>("negate", "()Ljava/util/function/DoublePredicate;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/DoublePredicate.html#or(java.util.function.DoublePredicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/DoublePredicate.html#or(java.util.function.DoublePredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.DoublePredicate"/></param>
         /// <returns><see cref="Java.Util.Function.DoublePredicate"/></returns>

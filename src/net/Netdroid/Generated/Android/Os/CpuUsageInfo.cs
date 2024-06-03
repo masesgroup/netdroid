@@ -52,26 +52,28 @@ namespace Android.Os
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/CpuUsageInfo.html#getActive()"/> 
-        /// </summary>
-        public long Active
-        {
-            get { return IExecuteWithSignature<long>("getActive", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/CpuUsageInfo.html#getTotal()"/> 
-        /// </summary>
-        public long Total
-        {
-            get { return IExecuteWithSignature<long>("getTotal", "()J"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/CpuUsageInfo.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/CpuUsageInfo.html#getActive()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetActive()
+        {
+            return IExecuteWithSignature<long>("getActive", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/CpuUsageInfo.html#getTotal()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetTotal()
+        {
+            return IExecuteWithSignature<long>("getTotal", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/CpuUsageInfo.html#writeToParcel(android.os.Parcel,int)"/>

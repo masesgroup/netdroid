@@ -46,266 +46,10 @@ namespace Android.Animation
 
         #region Instance methods
         /// <summary>
-        /// Handlers initializer for <see cref="AnimatorListenerAdapter"/>
-        /// </summary>
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("onAnimationEnd", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Animation.Animator>>>(OnAnimationEndEventHandler));
-            AddEventHandler("onAnimationStart", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Animation.Animator>>>(OnAnimationStartEventHandler));
-            AddEventHandler("onAnimationCancel", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Animation.Animator>>>(OnAnimationCancelEventHandler));
-            AddEventHandler("onAnimationEnd1", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Animation.Animator>>>(OnAnimationEnd1EventHandler));
-            AddEventHandler("onAnimationPause", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Animation.Animator>>>(OnAnimationPauseEventHandler));
-            AddEventHandler("onAnimationRepeat", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Animation.Animator>>>(OnAnimationRepeatEventHandler));
-            AddEventHandler("onAnimationResume", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Animation.Animator>>>(OnAnimationResumeEventHandler));
-            AddEventHandler("onAnimationStart1", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Animation.Animator>>>(OnAnimationStart1EventHandler));
-
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/animation/Animator.AnimatorListener.html#onAnimationEnd(android.animation.Animator,boolean)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Animation.Animator"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
-        public void OnAnimationEndDefault(Android.Animation.Animator arg0, bool arg1)
-        {
-            IExecute("onAnimationEndDefault", arg0, arg1);
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/animation/Animator.AnimatorListener.html#onAnimationEnd(android.animation.Animator,boolean)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnOnAnimationEnd"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Android.Animation.Animator, bool> OnOnAnimationEnd { get; set; } = null;
-
-        void OnAnimationEndEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Animation.Animator>> data)
-        {
-            var methodToExecute = (OnOnAnimationEnd != null) ? OnOnAnimationEnd : OnAnimationEnd;
-            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<bool>(0));
-        }
-
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/animation/Animator.AnimatorListener.html#onAnimationEnd(android.animation.Animator,boolean)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Animation.Animator"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnAnimationEndDefault"/>; override the method to implement a different behavior</remarks>
-        public virtual void OnAnimationEnd(Android.Animation.Animator arg0, bool arg1)
-        {
-            OnAnimationEndDefault(arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/animation/Animator.AnimatorListener.html#onAnimationStart(android.animation.Animator,boolean)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Animation.Animator"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
-        public void OnAnimationStartDefault(Android.Animation.Animator arg0, bool arg1)
-        {
-            IExecute("onAnimationStartDefault", arg0, arg1);
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/animation/Animator.AnimatorListener.html#onAnimationStart(android.animation.Animator,boolean)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnOnAnimationStart"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Android.Animation.Animator, bool> OnOnAnimationStart { get; set; } = null;
-
-        void OnAnimationStartEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Animation.Animator>> data)
-        {
-            var methodToExecute = (OnOnAnimationStart != null) ? OnOnAnimationStart : OnAnimationStart;
-            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<bool>(0));
-        }
-
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/animation/Animator.AnimatorListener.html#onAnimationStart(android.animation.Animator,boolean)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Animation.Animator"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnAnimationStartDefault"/>; override the method to implement a different behavior</remarks>
-        public virtual void OnAnimationStart(Android.Animation.Animator arg0, bool arg1)
-        {
-            OnAnimationStartDefault(arg0, arg1);
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/animation/AnimatorListenerAdapter.html#onAnimationCancel(android.animation.Animator)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnOnAnimationCancel"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Android.Animation.Animator> OnOnAnimationCancel { get; set; } = null;
-
-        void OnAnimationCancelEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Animation.Animator>> data)
-        {
-            var methodToExecute = (OnOnAnimationCancel != null) ? OnOnAnimationCancel : OnAnimationCancel;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
-        }
-
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/animation/AnimatorListenerAdapter.html#onAnimationCancel(android.animation.Animator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Animation.Animator"/></param>
-        public virtual void OnAnimationCancel(Android.Animation.Animator arg0)
-        {
-            
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/animation/AnimatorListenerAdapter.html#onAnimationEnd(android.animation.Animator)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnOnAnimationEnd1"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Android.Animation.Animator> OnOnAnimationEnd1 { get; set; } = null;
-
-        void OnAnimationEnd1EventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Animation.Animator>> data)
-        {
-            var methodToExecute = (OnOnAnimationEnd1 != null) ? OnOnAnimationEnd1 : OnAnimationEnd;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
-        }
-
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/animation/AnimatorListenerAdapter.html#onAnimationEnd(android.animation.Animator)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Animation.Animator"/></param>
-        public virtual void OnAnimationEnd(Android.Animation.Animator arg0)
-        {
-            
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/animation/AnimatorListenerAdapter.html#onAnimationPause(android.animation.Animator)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnOnAnimationPause"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Android.Animation.Animator> OnOnAnimationPause { get; set; } = null;
-
-        void OnAnimationPauseEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Animation.Animator>> data)
-        {
-            var methodToExecute = (OnOnAnimationPause != null) ? OnOnAnimationPause : OnAnimationPause;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
-        }
-
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/animation/AnimatorListenerAdapter.html#onAnimationPause(android.animation.Animator)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Animation.Animator"/></param>
-        public virtual void OnAnimationPause(Android.Animation.Animator arg0)
-        {
-            
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/animation/AnimatorListenerAdapter.html#onAnimationRepeat(android.animation.Animator)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnOnAnimationRepeat"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Android.Animation.Animator> OnOnAnimationRepeat { get; set; } = null;
-
-        void OnAnimationRepeatEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Animation.Animator>> data)
-        {
-            var methodToExecute = (OnOnAnimationRepeat != null) ? OnOnAnimationRepeat : OnAnimationRepeat;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
-        }
-
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/animation/AnimatorListenerAdapter.html#onAnimationRepeat(android.animation.Animator)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Animation.Animator"/></param>
-        public virtual void OnAnimationRepeat(Android.Animation.Animator arg0)
-        {
-            
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/animation/AnimatorListenerAdapter.html#onAnimationResume(android.animation.Animator)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnOnAnimationResume"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Android.Animation.Animator> OnOnAnimationResume { get; set; } = null;
-
-        void OnAnimationResumeEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Animation.Animator>> data)
-        {
-            var methodToExecute = (OnOnAnimationResume != null) ? OnOnAnimationResume : OnAnimationResume;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
-        }
-
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/animation/AnimatorListenerAdapter.html#onAnimationResume(android.animation.Animator)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Animation.Animator"/></param>
-        public virtual void OnAnimationResume(Android.Animation.Animator arg0)
-        {
-            
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/animation/AnimatorListenerAdapter.html#onAnimationStart(android.animation.Animator)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnOnAnimationStart1"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Android.Animation.Animator> OnOnAnimationStart1 { get; set; } = null;
-
-        void OnAnimationStart1EventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Animation.Animator>> data)
-        {
-            var methodToExecute = (OnOnAnimationStart1 != null) ? OnOnAnimationStart1 : OnAnimationStart;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
-        }
-
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/animation/AnimatorListenerAdapter.html#onAnimationStart(android.animation.Animator)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Animation.Animator"/></param>
-        public virtual void OnAnimationStart(Android.Animation.Animator arg0)
-        {
-            
-        }
-
-        #endregion
-
-        #region Nested classes
-
-        #endregion
-
-        // TODO: complete the class
-    }
-    #endregion
-
-    #region AnimatorListenerAdapterDirect
-    public partial class AnimatorListenerAdapterDirect
-    {
-        #region Constructors
-
-        #endregion
-
-        #region Class/Interface conversion operators
-
-        #endregion
-
-        #region Fields
-
-        #endregion
-
-        #region Static methods
-
-        #endregion
-
-        #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/animation/Animator.AnimatorListener.html#onAnimationEnd(android.animation.Animator,boolean)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Animation.Animator"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        public override void OnAnimationEnd(Android.Animation.Animator arg0, bool arg1)
-        {
-            IExecute("onAnimationEnd", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/animation/Animator.AnimatorListener.html#onAnimationStart(android.animation.Animator,boolean)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Animation.Animator"/></param>
-        /// <param name="arg1"><see cref="bool"/></param>
-        public override void OnAnimationStart(Android.Animation.Animator arg0, bool arg1)
-        {
-            IExecute("onAnimationStart", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/animation/AnimatorListenerAdapter.html#onAnimationCancel(android.animation.Animator)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Animation.Animator"/></param>
-        public override void OnAnimationCancel(Android.Animation.Animator arg0)
+        public void OnAnimationCancel(Android.Animation.Animator arg0)
         {
             IExecuteWithSignature("onAnimationCancel", "(Landroid/animation/Animator;)V", arg0);
         }
@@ -313,7 +57,7 @@ namespace Android.Animation
         /// <see href="https://developer.android.com/reference/android/animation/AnimatorListenerAdapter.html#onAnimationEnd(android.animation.Animator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Animation.Animator"/></param>
-        public override void OnAnimationEnd(Android.Animation.Animator arg0)
+        public void OnAnimationEnd(Android.Animation.Animator arg0)
         {
             IExecuteWithSignature("onAnimationEnd", "(Landroid/animation/Animator;)V", arg0);
         }
@@ -321,7 +65,7 @@ namespace Android.Animation
         /// <see href="https://developer.android.com/reference/android/animation/AnimatorListenerAdapter.html#onAnimationPause(android.animation.Animator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Animation.Animator"/></param>
-        public override void OnAnimationPause(Android.Animation.Animator arg0)
+        public void OnAnimationPause(Android.Animation.Animator arg0)
         {
             IExecuteWithSignature("onAnimationPause", "(Landroid/animation/Animator;)V", arg0);
         }
@@ -329,7 +73,7 @@ namespace Android.Animation
         /// <see href="https://developer.android.com/reference/android/animation/AnimatorListenerAdapter.html#onAnimationRepeat(android.animation.Animator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Animation.Animator"/></param>
-        public override void OnAnimationRepeat(Android.Animation.Animator arg0)
+        public void OnAnimationRepeat(Android.Animation.Animator arg0)
         {
             IExecuteWithSignature("onAnimationRepeat", "(Landroid/animation/Animator;)V", arg0);
         }
@@ -337,7 +81,7 @@ namespace Android.Animation
         /// <see href="https://developer.android.com/reference/android/animation/AnimatorListenerAdapter.html#onAnimationResume(android.animation.Animator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Animation.Animator"/></param>
-        public override void OnAnimationResume(Android.Animation.Animator arg0)
+        public void OnAnimationResume(Android.Animation.Animator arg0)
         {
             IExecuteWithSignature("onAnimationResume", "(Landroid/animation/Animator;)V", arg0);
         }
@@ -345,7 +89,7 @@ namespace Android.Animation
         /// <see href="https://developer.android.com/reference/android/animation/AnimatorListenerAdapter.html#onAnimationStart(android.animation.Animator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Animation.Animator"/></param>
-        public override void OnAnimationStart(Android.Animation.Animator arg0)
+        public void OnAnimationStart(Android.Animation.Animator arg0)
         {
             IExecuteWithSignature("onAnimationStart", "(Landroid/animation/Animator;)V", arg0);
         }

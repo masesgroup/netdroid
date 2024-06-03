@@ -84,95 +84,84 @@ namespace Android.Widget
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ImageView.html#getAdjustViewBounds()"/> <see href="https://developer.android.com/reference/android/widget/ImageView.html#setAdjustViewBounds(boolean)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/ImageView.html#getImageTintList()"/>
         /// </summary>
-        public bool AdjustViewBounds
+        /// <returns><see cref="Android.Content.Res.ColorStateList"/></returns>
+        public Android.Content.Res.ColorStateList GetImageTintList()
         {
-            get { return IExecuteWithSignature<bool>("getAdjustViewBounds", "()Z"); } set { IExecuteWithSignature("setAdjustViewBounds", "(Z)V", value); }
+            return IExecuteWithSignature<Android.Content.Res.ColorStateList>("getImageTintList", "()Landroid/content/res/ColorStateList;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ImageView.html#getBaselineAlignBottom()"/> <see href="https://developer.android.com/reference/android/widget/ImageView.html#setBaselineAlignBottom(boolean)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/ImageView.html#getImageTintBlendMode()"/>
         /// </summary>
-        public bool BaselineAlignBottom
+        /// <returns><see cref="Android.Graphics.BlendMode"/></returns>
+        public Android.Graphics.BlendMode GetImageTintBlendMode()
         {
-            get { return IExecuteWithSignature<bool>("getBaselineAlignBottom", "()Z"); } set { IExecuteWithSignature("setBaselineAlignBottom", "(Z)V", value); }
+            return IExecuteWithSignature<Android.Graphics.BlendMode>("getImageTintBlendMode", "()Landroid/graphics/BlendMode;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ImageView.html#getColorFilter()"/> 
+        /// <see href="https://developer.android.com/reference/android/widget/ImageView.html#getColorFilter()"/>
         /// </summary>
-        public Android.Graphics.ColorFilter ColorFilter
+        /// <returns><see cref="Android.Graphics.ColorFilter"/></returns>
+        public Android.Graphics.ColorFilter GetColorFilter()
         {
-            get { return IExecuteWithSignature<Android.Graphics.ColorFilter>("getColorFilter", "()Landroid/graphics/ColorFilter;"); }
+            return IExecuteWithSignature<Android.Graphics.ColorFilter>("getColorFilter", "()Landroid/graphics/ColorFilter;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ImageView.html#getCropToPadding()"/> <see href="https://developer.android.com/reference/android/widget/ImageView.html#setCropToPadding(boolean)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/ImageView.html#getDrawable()"/>
         /// </summary>
-        public bool CropToPadding
+        /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
+        public Android.Graphics.Drawable.Drawable GetDrawable()
         {
-            get { return IExecuteWithSignature<bool>("getCropToPadding", "()Z"); } set { IExecuteWithSignature("setCropToPadding", "(Z)V", value); }
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getDrawable", "()Landroid/graphics/drawable/Drawable;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ImageView.html#getDrawable()"/> 
+        /// <see href="https://developer.android.com/reference/android/widget/ImageView.html#getImageMatrix()"/>
         /// </summary>
-        public Android.Graphics.Drawable.Drawable Drawable
+        /// <returns><see cref="Android.Graphics.Matrix"/></returns>
+        public Android.Graphics.Matrix GetImageMatrix()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getDrawable", "()Landroid/graphics/drawable/Drawable;"); }
+            return IExecuteWithSignature<Android.Graphics.Matrix>("getImageMatrix", "()Landroid/graphics/Matrix;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ImageView.html#getScaleType()"/> 
+        /// <see href="https://developer.android.com/reference/android/widget/ImageView.html#getImageTintMode()"/>
         /// </summary>
-        public Android.Widget.ImageView.ScaleType GetScaleType
+        /// <returns><see cref="Android.Graphics.PorterDuff.Mode"/></returns>
+        public Android.Graphics.PorterDuff.Mode GetImageTintMode()
         {
-            get { return IExecuteWithSignature<Android.Widget.ImageView.ScaleType>("getScaleType", "()Landroid/widget/ImageView$ScaleType;"); }
+            return IExecuteWithSignature<Android.Graphics.PorterDuff.Mode>("getImageTintMode", "()Landroid/graphics/PorterDuff$Mode;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ImageView.html#getImageAlpha()"/> <see href="https://developer.android.com/reference/android/widget/ImageView.html#setImageAlpha(int)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/ImageView.html#getScaleType()"/>
         /// </summary>
-        public int ImageAlpha
+        /// <returns><see cref="Android.Widget.ImageView.ScaleType"/></returns>
+        public Android.Widget.ImageView.ScaleType GetScaleType()
         {
-            get { return IExecuteWithSignature<int>("getImageAlpha", "()I"); } set { IExecuteWithSignature("setImageAlpha", "(I)V", value); }
+            return IExecuteWithSignature<Android.Widget.ImageView.ScaleType>("getScaleType", "()Landroid/widget/ImageView$ScaleType;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ImageView.html#getImageMatrix()"/> <see href="https://developer.android.com/reference/android/widget/ImageView.html#setImageMatrix(android.graphics.Matrix)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/ImageView.html#getAdjustViewBounds()"/>
         /// </summary>
-        public Android.Graphics.Matrix ImageMatrix
+        /// <returns><see cref="bool"/></returns>
+        public bool GetAdjustViewBounds()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Matrix>("getImageMatrix", "()Landroid/graphics/Matrix;"); } set { IExecuteWithSignature("setImageMatrix", "(Landroid/graphics/Matrix;)V", value); }
+            return IExecuteWithSignature<bool>("getAdjustViewBounds", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ImageView.html#getImageTintBlendMode()"/> <see href="https://developer.android.com/reference/android/widget/ImageView.html#setImageTintBlendMode(android.graphics.BlendMode)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/ImageView.html#getBaselineAlignBottom()"/>
         /// </summary>
-        public Android.Graphics.BlendMode ImageTintBlendMode
+        /// <returns><see cref="bool"/></returns>
+        public bool GetBaselineAlignBottom()
         {
-            get { return IExecuteWithSignature<Android.Graphics.BlendMode>("getImageTintBlendMode", "()Landroid/graphics/BlendMode;"); } set { IExecuteWithSignature("setImageTintBlendMode", "(Landroid/graphics/BlendMode;)V", value); }
+            return IExecuteWithSignature<bool>("getBaselineAlignBottom", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ImageView.html#getImageTintList()"/> <see href="https://developer.android.com/reference/android/widget/ImageView.html#setImageTintList(android.content.res.ColorStateList)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/ImageView.html#getCropToPadding()"/>
         /// </summary>
-        public Android.Content.Res.ColorStateList ImageTintList
+        /// <returns><see cref="bool"/></returns>
+        public bool GetCropToPadding()
         {
-            get { return IExecuteWithSignature<Android.Content.Res.ColorStateList>("getImageTintList", "()Landroid/content/res/ColorStateList;"); } set { IExecuteWithSignature("setImageTintList", "(Landroid/content/res/ColorStateList;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ImageView.html#getImageTintMode()"/> <see href="https://developer.android.com/reference/android/widget/ImageView.html#setImageTintMode(android.graphics.PorterDuff.Mode)"/>
-        /// </summary>
-        public Android.Graphics.PorterDuff.Mode ImageTintMode
-        {
-            get { return IExecuteWithSignature<Android.Graphics.PorterDuff.Mode>("getImageTintMode", "()Landroid/graphics/PorterDuff$Mode;"); } set { IExecuteWithSignature("setImageTintMode", "(Landroid/graphics/PorterDuff$Mode;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ImageView.html#getMaxHeight()"/> <see href="https://developer.android.com/reference/android/widget/ImageView.html#setMaxHeight(int)"/>
-        /// </summary>
-        public int MaxHeight
-        {
-            get { return IExecuteWithSignature<int>("getMaxHeight", "()I"); } set { IExecuteWithSignature("setMaxHeight", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ImageView.html#getMaxWidth()"/> <see href="https://developer.android.com/reference/android/widget/ImageView.html#setMaxWidth(int)"/>
-        /// </summary>
-        public int MaxWidth
-        {
-            get { return IExecuteWithSignature<int>("getMaxWidth", "()I"); } set { IExecuteWithSignature("setMaxWidth", "(I)V", value); }
+            return IExecuteWithSignature<bool>("getCropToPadding", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ImageView.html#clearColorFilter()"/>
@@ -199,6 +188,30 @@ namespace Android.Widget
             IExecuteWithSignature("setColorFilter", "(I)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ImageView.html#getImageAlpha()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetImageAlpha()
+        {
+            return IExecuteWithSignature<int>("getImageAlpha", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ImageView.html#getMaxHeight()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMaxHeight()
+        {
+            return IExecuteWithSignature<int>("getMaxHeight", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ImageView.html#getMaxWidth()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMaxWidth()
+        {
+            return IExecuteWithSignature<int>("getMaxWidth", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ImageView.html#onCreateDrawableState(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -216,10 +229,18 @@ namespace Android.Widget
             IExecuteWithSignature("animateTransform", "(Landroid/graphics/Matrix;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ImageView.html#setAdjustViewBounds(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetAdjustViewBounds(bool arg0)
+        {
+            IExecuteWithSignature("setAdjustViewBounds", "(Z)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ImageView.html#setAlpha(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetAlpha(int arg0)
         {
             IExecuteWithSignature("setAlpha", "(I)V", arg0);
@@ -233,12 +254,36 @@ namespace Android.Widget
             IExecuteWithSignature("setBaseline", "(I)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ImageView.html#setBaselineAlignBottom(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetBaselineAlignBottom(bool arg0)
+        {
+            IExecuteWithSignature("setBaselineAlignBottom", "(Z)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ImageView.html#setColorFilter(android.graphics.ColorFilter)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Graphics.ColorFilter"/></param>
         public void SetColorFilter(Android.Graphics.ColorFilter arg0)
         {
             IExecuteWithSignature("setColorFilter", "(Landroid/graphics/ColorFilter;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ImageView.html#setCropToPadding(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetCropToPadding(bool arg0)
+        {
+            IExecuteWithSignature("setCropToPadding", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ImageView.html#setImageAlpha(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetImageAlpha(int arg0)
+        {
+            IExecuteWithSignature("setImageAlpha", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ImageView.html#setImageBitmap(android.graphics.Bitmap)"/>
@@ -273,6 +318,14 @@ namespace Android.Widget
             IExecuteWithSignature("setImageLevel", "(I)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ImageView.html#setImageMatrix(android.graphics.Matrix)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Matrix"/></param>
+        public void SetImageMatrix(Android.Graphics.Matrix arg0)
+        {
+            IExecuteWithSignature("setImageMatrix", "(Landroid/graphics/Matrix;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ImageView.html#setImageResource(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -290,12 +343,52 @@ namespace Android.Widget
             IExecute("setImageState", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ImageView.html#setImageTintBlendMode(android.graphics.BlendMode)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.BlendMode"/></param>
+        public void SetImageTintBlendMode(Android.Graphics.BlendMode arg0)
+        {
+            IExecuteWithSignature("setImageTintBlendMode", "(Landroid/graphics/BlendMode;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ImageView.html#setImageTintList(android.content.res.ColorStateList)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Res.ColorStateList"/></param>
+        public void SetImageTintList(Android.Content.Res.ColorStateList arg0)
+        {
+            IExecuteWithSignature("setImageTintList", "(Landroid/content/res/ColorStateList;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ImageView.html#setImageTintMode(android.graphics.PorterDuff.Mode)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.PorterDuff.Mode"/></param>
+        public void SetImageTintMode(Android.Graphics.PorterDuff.Mode arg0)
+        {
+            IExecuteWithSignature("setImageTintMode", "(Landroid/graphics/PorterDuff$Mode;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ImageView.html#setImageURI(android.net.Uri)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Net.Uri"/></param>
         public void SetImageURI(Android.Net.Uri arg0)
         {
             IExecuteWithSignature("setImageURI", "(Landroid/net/Uri;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ImageView.html#setMaxHeight(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetMaxHeight(int arg0)
+        {
+            IExecuteWithSignature("setMaxHeight", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ImageView.html#setMaxWidth(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetMaxWidth(int arg0)
+        {
+            IExecuteWithSignature("setMaxWidth", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ImageView.html#setScaleType(android.widget.ImageView.ScaleType)"/>

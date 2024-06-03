@@ -42,18 +42,27 @@ namespace Java.Net
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/ResponseCache.html#getDefault()"/> <see href="https://developer.android.com/reference/java.base/java/net/ResponseCache.html#setDefault(java.net.ResponseCache)"/>
+        /// <see href="https://developer.android.com/reference/java/net/ResponseCache.html#getDefault()"/>
         /// </summary>
-        public static Java.Net.ResponseCache Default
+        /// <returns><see cref="Java.Net.ResponseCache"/></returns>
+        public static Java.Net.ResponseCache GetDefault()
         {
-            get { return SExecuteWithSignature<Java.Net.ResponseCache>(LocalBridgeClazz, "getDefault", "()Ljava/net/ResponseCache;"); } set { SExecuteWithSignature(LocalBridgeClazz, "setDefault", "(Ljava/net/ResponseCache;)V", value); }
+            return SExecuteWithSignature<Java.Net.ResponseCache>(LocalBridgeClazz, "getDefault", "()Ljava/net/ResponseCache;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/ResponseCache.html#setDefault(java.net.ResponseCache)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.ResponseCache"/></param>
+        public static void SetDefault(Java.Net.ResponseCache arg0)
+        {
+            SExecuteWithSignature(LocalBridgeClazz, "setDefault", "(Ljava/net/ResponseCache;)V", arg0);
         }
 
         #endregion
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/ResponseCache.html#put(java.net.URI,java.net.URLConnection)"/>
+        /// <see href="https://developer.android.com/reference/java/net/ResponseCache.html#put(java.net.URI,java.net.URLConnection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.URI"/></param>
         /// <param name="arg1"><see cref="Java.Net.URLConnection"/></param>
@@ -64,7 +73,7 @@ namespace Java.Net
             return IExecute<Java.Net.CacheRequest>("put", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/ResponseCache.html#get(java.net.URI,java.lang.String,java.util.Map)"/>
+        /// <see href="https://developer.android.com/reference/java/net/ResponseCache.html#get(java.net.URI,java.lang.String,java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.URI"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>

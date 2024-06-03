@@ -156,55 +156,6 @@ namespace Android.Telephony.Emergency
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/emergency/EmergencyNumber.html#getCountryIso()"/> 
-        /// </summary>
-        public Java.Lang.String CountryIso
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCountryIso", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/emergency/EmergencyNumber.html#getEmergencyCallRouting()"/> 
-        /// </summary>
-        public int EmergencyCallRouting
-        {
-            get { return IExecuteWithSignature<int>("getEmergencyCallRouting", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/emergency/EmergencyNumber.html#getEmergencyNumberSources()"/> 
-        /// </summary>
-        public Java.Util.List<Java.Lang.Integer> EmergencyNumberSources
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.Integer>>("getEmergencyNumberSources", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/emergency/EmergencyNumber.html#getEmergencyServiceCategories()"/> 
-        /// </summary>
-        public Java.Util.List<Java.Lang.Integer> EmergencyServiceCategories
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.Integer>>("getEmergencyServiceCategories", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/emergency/EmergencyNumber.html#getEmergencyUrns()"/> 
-        /// </summary>
-        public Java.Util.List<Java.Lang.String> EmergencyUrns
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getEmergencyUrns", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/emergency/EmergencyNumber.html#getMnc()"/> 
-        /// </summary>
-        public Java.Lang.String Mnc
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getMnc", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/emergency/EmergencyNumber.html#getNumber()"/> 
-        /// </summary>
-        public Java.Lang.String Number
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getNumber", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/emergency/EmergencyNumber.html#isFromSources(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -247,6 +198,62 @@ namespace Android.Telephony.Emergency
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/emergency/EmergencyNumber.html#getEmergencyCallRouting()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetEmergencyCallRouting()
+        {
+            return IExecuteWithSignature<int>("getEmergencyCallRouting", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/emergency/EmergencyNumber.html#getCountryIso()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetCountryIso()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getCountryIso", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/emergency/EmergencyNumber.html#getMnc()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetMnc()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getMnc", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/emergency/EmergencyNumber.html#getNumber()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetNumber()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getNumber", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/emergency/EmergencyNumber.html#getEmergencyNumberSources()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Lang.Integer> GetEmergencyNumberSources()
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.Integer>>("getEmergencyNumberSources", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/emergency/EmergencyNumber.html#getEmergencyServiceCategories()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Lang.Integer> GetEmergencyServiceCategories()
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.Integer>>("getEmergencyServiceCategories", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/emergency/EmergencyNumber.html#getEmergencyUrns()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Lang.String> GetEmergencyUrns()
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getEmergencyUrns", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/emergency/EmergencyNumber.html#writeToParcel(android.os.Parcel,int)"/>

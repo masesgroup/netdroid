@@ -170,83 +170,6 @@ namespace Android.Text
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/Layout.html#getBottomPadding()"/> 
-        /// </summary>
-        public int BottomPadding
-        {
-            get { return IExecuteWithSignature<int>("getBottomPadding", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/Layout.html#getEllipsizedWidth()"/> 
-        /// </summary>
-        public int EllipsizedWidth
-        {
-            get { return IExecuteWithSignature<int>("getEllipsizedWidth", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/Layout.html#getAlignment()"/> 
-        /// </summary>
-        public Android.Text.Layout.Alignment GetAlignment
-        {
-            get { return IExecuteWithSignature<Android.Text.Layout.Alignment>("getAlignment", "()Landroid/text/Layout$Alignment;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/Layout.html#getHeight()"/> 
-        /// </summary>
-        public int Height
-        {
-            get { return IExecuteWithSignature<int>("getHeight", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/Layout.html#getLineCount()"/> 
-        /// </summary>
-        public int LineCount
-        {
-            get { return IExecuteWithSignature<int>("getLineCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/Layout.html#getPaint()"/> 
-        /// </summary>
-        public Android.Text.TextPaint Paint
-        {
-            get { return IExecuteWithSignature<Android.Text.TextPaint>("getPaint", "()Landroid/text/TextPaint;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/Layout.html#getSpacingAdd()"/> 
-        /// </summary>
-        public float SpacingAdd
-        {
-            get { return IExecuteWithSignature<float>("getSpacingAdd", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/Layout.html#getSpacingMultiplier()"/> 
-        /// </summary>
-        public float SpacingMultiplier
-        {
-            get { return IExecuteWithSignature<float>("getSpacingMultiplier", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/Layout.html#getText()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence Text
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getText", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/Layout.html#getTopPadding()"/> 
-        /// </summary>
-        public int TopPadding
-        {
-            get { return IExecuteWithSignature<int>("getTopPadding", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/Layout.html#getWidth()"/> 
-        /// </summary>
-        public int Width
-        {
-            get { return IExecuteWithSignature<int>("getWidth", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/Layout.html#getLineDirections(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -265,6 +188,14 @@ namespace Android.Text
             return IExecuteWithSignature<bool>("getLineContainsTab", "(I)Z", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/Layout.html#getBottomPadding()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetBottomPadding()
+        {
+            return IExecuteWithSignature<int>("getBottomPadding", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/Layout.html#getEllipsisCount(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -281,6 +212,14 @@ namespace Android.Text
         public int GetEllipsisStart(int arg0)
         {
             return IExecuteWithSignature<int>("getEllipsisStart", "(I)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/Layout.html#getLineCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetLineCount()
+        {
+            return IExecuteWithSignature<int>("getLineCount", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/Layout.html#getLineDescent(int)"/>
@@ -319,6 +258,14 @@ namespace Android.Text
             return IExecuteWithSignature<int>("getParagraphDirection", "(I)I", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/Layout.html#getTopPadding()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTopPadding()
+        {
+            return IExecuteWithSignature<int>("getTopPadding", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/Layout.html#isFallbackLineSpacingEnabled()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -336,6 +283,14 @@ namespace Android.Text
             return IExecuteWithSignature<bool>("isRtlCharAt", "(I)Z", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/Layout.html#getAlignment()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Text.Layout.Alignment"/></returns>
+        public Android.Text.Layout.Alignment GetAlignment()
+        {
+            return IExecuteWithSignature<Android.Text.Layout.Alignment>("getAlignment", "()Landroid/text/Layout$Alignment;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/Layout.html#getParagraphAlignment(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -343,6 +298,30 @@ namespace Android.Text
         public Android.Text.Layout.Alignment GetParagraphAlignment(int arg0)
         {
             return IExecuteWithSignature<Android.Text.Layout.Alignment>("getParagraphAlignment", "(I)Landroid/text/Layout$Alignment;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/Layout.html#getPaint()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Text.TextPaint"/></returns>
+        public Android.Text.TextPaint GetPaint()
+        {
+            return IExecuteWithSignature<Android.Text.TextPaint>("getPaint", "()Landroid/text/TextPaint;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/Layout.html#getSpacingAdd()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetSpacingAdd()
+        {
+            return IExecuteWithSignature<float>("getSpacingAdd", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/Layout.html#getSpacingMultiplier()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetSpacingMultiplier()
+        {
+            return IExecuteWithSignature<float>("getSpacingMultiplier", "()F");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/Layout.html#getLineAscent(int)"/>
@@ -397,6 +376,22 @@ namespace Android.Text
         public int GetParagraphRight(int arg0)
         {
             return IExecuteWithSignature<int>("getParagraphRight", "(I)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/Layout.html#getWidth()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetWidth()
+        {
+            return IExecuteWithSignature<int>("getWidth", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/Layout.html#getText()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetText()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getText", "()Ljava/lang/CharSequence;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/Layout.html#increaseWidthTo(int)"/>
@@ -459,6 +454,22 @@ namespace Android.Text
         public float GetSecondaryHorizontal(int arg0)
         {
             return IExecuteWithSignature<float>("getSecondaryHorizontal", "(I)F", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/Layout.html#getEllipsizedWidth()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetEllipsizedWidth()
+        {
+            return IExecuteWithSignature<int>("getEllipsizedWidth", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/Layout.html#getHeight()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetHeight()
+        {
+            return IExecuteWithSignature<int>("getHeight", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/Layout.html#getLineBottom(int,boolean)"/>

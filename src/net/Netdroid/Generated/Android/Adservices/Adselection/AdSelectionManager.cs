@@ -55,11 +55,12 @@ namespace Android.Adservices.Adselection
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/adselection/AdSelectionManager.html#getTestAdSelectionManager()"/> 
+        /// <see href="https://developer.android.com/reference/android/adservices/adselection/AdSelectionManager.html#getTestAdSelectionManager()"/>
         /// </summary>
-        public Android.Adservices.Adselection.TestAdSelectionManager TestAdSelectionManager
+        /// <returns><see cref="Android.Adservices.Adselection.TestAdSelectionManager"/></returns>
+        public Android.Adservices.Adselection.TestAdSelectionManager GetTestAdSelectionManager()
         {
-            get { return IExecuteWithSignature<Android.Adservices.Adselection.TestAdSelectionManager>("getTestAdSelectionManager", "()Landroid/adservices/adselection/TestAdSelectionManager;"); }
+            return IExecuteWithSignature<Android.Adservices.Adselection.TestAdSelectionManager>("getTestAdSelectionManager", "()Landroid/adservices/adselection/TestAdSelectionManager;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/adselection/AdSelectionManager.html#reportEvent(android.adservices.adselection.ReportEventRequest,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>

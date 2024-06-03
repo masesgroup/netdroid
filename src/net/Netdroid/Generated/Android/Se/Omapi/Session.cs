@@ -46,20 +46,6 @@ namespace Android.Se.Omapi
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/se/omapi/Session.html#getATR()"/> 
-        /// </summary>
-        public byte[] ATR
-        {
-            get { return IExecuteWithSignatureArray<byte>("getATR", "()[B"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/se/omapi/Session.html#getReader()"/> 
-        /// </summary>
-        public Android.Se.Omapi.Reader Reader
-        {
-            get { return IExecuteWithSignature<Android.Se.Omapi.Reader>("getReader", "()Landroid/se/omapi/Reader;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/se/omapi/Session.html#openBasicChannel(byte[],byte)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
@@ -102,12 +88,28 @@ namespace Android.Se.Omapi
             return IExecuteWithSignature<Android.Se.Omapi.Channel>("openLogicalChannel", "([B)Landroid/se/omapi/Channel;", new object[] { arg0 });
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/se/omapi/Session.html#getReader()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Se.Omapi.Reader"/></returns>
+        public Android.Se.Omapi.Reader GetReader()
+        {
+            return IExecuteWithSignature<Android.Se.Omapi.Reader>("getReader", "()Landroid/se/omapi/Reader;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/se/omapi/Session.html#isClosed()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsClosed()
         {
             return IExecuteWithSignature<bool>("isClosed", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/se/omapi/Session.html#getATR()"/>
+        /// </summary>
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetATR()
+        {
+            return IExecuteWithSignatureArray<byte>("getATR", "()[B");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/se/omapi/Session.html#close()"/>

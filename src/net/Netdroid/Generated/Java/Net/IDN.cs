@@ -38,13 +38,13 @@ namespace Java.Net
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/IDN.html#ALLOW_UNASSIGNED"/>
+        /// <see href="https://developer.android.com/reference/java/net/IDN.html#ALLOW_UNASSIGNED"/>
         /// </summary>
         public static int ALLOW_UNASSIGNED { get { if (!_ALLOW_UNASSIGNEDReady) { _ALLOW_UNASSIGNEDContent = SGetField<int>(LocalBridgeClazz, "ALLOW_UNASSIGNED"); _ALLOW_UNASSIGNEDReady = true; } return _ALLOW_UNASSIGNEDContent; } }
         private static int _ALLOW_UNASSIGNEDContent = default;
         private static bool _ALLOW_UNASSIGNEDReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/IDN.html#USE_STD3_ASCII_RULES"/>
+        /// <see href="https://developer.android.com/reference/java/net/IDN.html#USE_STD3_ASCII_RULES"/>
         /// </summary>
         public static int USE_STD3_ASCII_RULES { get { if (!_USE_STD3_ASCII_RULESReady) { _USE_STD3_ASCII_RULESContent = SGetField<int>(LocalBridgeClazz, "USE_STD3_ASCII_RULES"); _USE_STD3_ASCII_RULESReady = true; } return _USE_STD3_ASCII_RULESContent; } }
         private static int _USE_STD3_ASCII_RULESContent = default;
@@ -54,7 +54,7 @@ namespace Java.Net
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/IDN.html#toASCII(java.lang.String,int)"/>
+        /// <see href="https://developer.android.com/reference/java/net/IDN.html#toASCII(java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -64,7 +64,7 @@ namespace Java.Net
             return SExecute<Java.Lang.String>(LocalBridgeClazz, "toASCII", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/IDN.html#toASCII(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/net/IDN.html#toASCII(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -73,7 +73,7 @@ namespace Java.Net
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toASCII", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/IDN.html#toUnicode(java.lang.String,int)"/>
+        /// <see href="https://developer.android.com/reference/java/net/IDN.html#toUnicode(java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -83,7 +83,7 @@ namespace Java.Net
             return SExecute<Java.Lang.String>(LocalBridgeClazz, "toUnicode", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/IDN.html#toUnicode(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/net/IDN.html#toUnicode(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>

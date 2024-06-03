@@ -46,11 +46,12 @@ namespace Android.Health.Connect.Datatypes
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/Record.html#getMetadata()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/Record.html#getMetadata()"/>
         /// </summary>
-        public Android.Health.Connect.Datatypes.Metadata Metadata
+        /// <returns><see cref="Android.Health.Connect.Datatypes.Metadata"/></returns>
+        public Android.Health.Connect.Datatypes.Metadata GetMetadata()
         {
-            get { return IExecuteWithSignature<Android.Health.Connect.Datatypes.Metadata>("getMetadata", "()Landroid/health/connect/datatypes/Metadata;"); }
+            return IExecuteWithSignature<Android.Health.Connect.Datatypes.Metadata>("getMetadata", "()Landroid/health/connect/datatypes/Metadata;");
         }
 
         #endregion

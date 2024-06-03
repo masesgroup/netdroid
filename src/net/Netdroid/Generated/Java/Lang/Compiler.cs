@@ -42,7 +42,7 @@ namespace Java.Lang
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Compiler.html#compileClass(java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Compiler.html#compileClass(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -51,7 +51,7 @@ namespace Java.Lang
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "compileClass", "(Ljava/lang/Class;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Compiler.html#compileClasses(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Compiler.html#compileClasses(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -60,7 +60,7 @@ namespace Java.Lang
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "compileClasses", "(Ljava/lang/String;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Compiler.html#command(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Compiler.html#command(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="object"/></returns>
@@ -69,14 +69,14 @@ namespace Java.Lang
             return SExecuteWithSignature(LocalBridgeClazz, "command", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Compiler.html#disable()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Compiler.html#disable()"/>
         /// </summary>
         public static void Disable()
         {
             SExecuteWithSignature(LocalBridgeClazz, "disable", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Compiler.html#enable()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Compiler.html#enable()"/>
         /// </summary>
         public static void Enable()
         {

@@ -52,46 +52,20 @@ namespace Android.Companion
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/companion/AssociationInfo.html#getAssociatedDevice()"/> 
+        /// <see href="https://developer.android.com/reference/android/companion/AssociationInfo.html#getAssociatedDevice()"/>
         /// </summary>
-        public Android.Companion.AssociatedDevice AssociatedDevice
+        /// <returns><see cref="Android.Companion.AssociatedDevice"/></returns>
+        public Android.Companion.AssociatedDevice GetAssociatedDevice()
         {
-            get { return IExecuteWithSignature<Android.Companion.AssociatedDevice>("getAssociatedDevice", "()Landroid/companion/AssociatedDevice;"); }
+            return IExecuteWithSignature<Android.Companion.AssociatedDevice>("getAssociatedDevice", "()Landroid/companion/AssociatedDevice;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/companion/AssociationInfo.html#getDeviceMacAddress()"/> 
+        /// <see href="https://developer.android.com/reference/android/companion/AssociationInfo.html#getDeviceMacAddress()"/>
         /// </summary>
-        public Android.Net.MacAddress DeviceMacAddress
+        /// <returns><see cref="Android.Net.MacAddress"/></returns>
+        public Android.Net.MacAddress GetDeviceMacAddress()
         {
-            get { return IExecuteWithSignature<Android.Net.MacAddress>("getDeviceMacAddress", "()Landroid/net/MacAddress;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/companion/AssociationInfo.html#getDeviceProfile()"/> 
-        /// </summary>
-        public Java.Lang.String DeviceProfile
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDeviceProfile", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/companion/AssociationInfo.html#getDisplayName()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence DisplayName
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getDisplayName", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/companion/AssociationInfo.html#getId()"/> 
-        /// </summary>
-        public int Id
-        {
-            get { return IExecuteWithSignature<int>("getId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/companion/AssociationInfo.html#getSystemDataSyncFlags()"/> 
-        /// </summary>
-        public int SystemDataSyncFlags
-        {
-            get { return IExecuteWithSignature<int>("getSystemDataSyncFlags", "()I"); }
+            return IExecuteWithSignature<Android.Net.MacAddress>("getDeviceMacAddress", "()Landroid/net/MacAddress;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/companion/AssociationInfo.html#describeContents()"/>
@@ -100,6 +74,38 @@ namespace Android.Companion
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/companion/AssociationInfo.html#getId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetId()
+        {
+            return IExecuteWithSignature<int>("getId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/companion/AssociationInfo.html#getSystemDataSyncFlags()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSystemDataSyncFlags()
+        {
+            return IExecuteWithSignature<int>("getSystemDataSyncFlags", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/companion/AssociationInfo.html#getDisplayName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetDisplayName()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getDisplayName", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/companion/AssociationInfo.html#getDeviceProfile()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDeviceProfile()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getDeviceProfile", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/companion/AssociationInfo.html#writeToParcel(android.os.Parcel,int)"/>

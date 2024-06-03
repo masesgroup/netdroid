@@ -62,11 +62,12 @@ namespace Android.Graphics
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/ColorMatrix.html#getArray()"/> 
+        /// <see href="https://developer.android.com/reference/android/graphics/ColorMatrix.html#getArray()"/>
         /// </summary>
-        public float[] Array
+        /// <returns><see cref="float"/></returns>
+        public float[] GetArray()
         {
-            get { return IExecuteWithSignatureArray<float>("getArray", "()[F"); }
+            return IExecuteWithSignatureArray<float>("getArray", "()[F");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/ColorMatrix.html#postConcat(android.graphics.ColorMatrix)"/>

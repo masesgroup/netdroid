@@ -30,16 +30,16 @@ namespace Java.Io
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/StreamTokenizer.html#%3Cinit%3E(java.io.InputStream)"/>
+        /// <see href="https://developer.android.com/reference/java/io/StreamTokenizer.html#%3Cinit%3E(java.io.InputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public StreamTokenizer(Java.Io.InputStream arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/StreamTokenizer.html#%3Cinit%3E(java.io.Reader)"/>
+        /// <see href="https://developer.android.com/reference/java/io/StreamTokenizer.html#%3Cinit%3E(java.io.Reader)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.Reader"/></param>
         public StreamTokenizer(Java.Io.Reader arg0)
@@ -55,37 +55,37 @@ namespace Java.Io
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/StreamTokenizer.html#nval"/>
+        /// <see href="https://developer.android.com/reference/java/io/StreamTokenizer.html#nval"/>
         /// </summary>
         public double nval { get { return IGetField<double>("nval"); } set { ISetField("nval", value); } }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/StreamTokenizer.html#ttype"/>
+        /// <see href="https://developer.android.com/reference/java/io/StreamTokenizer.html#ttype"/>
         /// </summary>
         public int ttype { get { return IGetField<int>("ttype"); } set { ISetField("ttype", value); } }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/StreamTokenizer.html#sval"/>
+        /// <see href="https://developer.android.com/reference/java/io/StreamTokenizer.html#sval"/>
         /// </summary>
         public Java.Lang.String sval { get { return IGetField<Java.Lang.String>("sval"); } set { ISetField("sval", value); } }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/StreamTokenizer.html#TT_EOF"/>
+        /// <see href="https://developer.android.com/reference/java/io/StreamTokenizer.html#TT_EOF"/>
         /// </summary>
         public static int TT_EOF { get { if (!_TT_EOFReady) { _TT_EOFContent = SGetField<int>(LocalBridgeClazz, "TT_EOF"); _TT_EOFReady = true; } return _TT_EOFContent; } }
         private static int _TT_EOFContent = default;
         private static bool _TT_EOFReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/StreamTokenizer.html#TT_EOL"/>
+        /// <see href="https://developer.android.com/reference/java/io/StreamTokenizer.html#TT_EOL"/>
         /// </summary>
         public static int TT_EOL { get { if (!_TT_EOLReady) { _TT_EOLContent = SGetField<int>(LocalBridgeClazz, "TT_EOL"); _TT_EOLReady = true; } return _TT_EOLContent; } }
         private static int _TT_EOLContent = default;
         private static bool _TT_EOLReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/StreamTokenizer.html#TT_NUMBER"/>
+        /// <see href="https://developer.android.com/reference/java/io/StreamTokenizer.html#TT_NUMBER"/>
         /// </summary>
         public static int TT_NUMBER { get { if (!_TT_NUMBERReady) { _TT_NUMBERContent = SGetField<int>(LocalBridgeClazz, "TT_NUMBER"); _TT_NUMBERReady = true; } return _TT_NUMBERContent; } }
         private static int _TT_NUMBERContent = default;
         private static bool _TT_NUMBERReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/StreamTokenizer.html#TT_WORD"/>
+        /// <see href="https://developer.android.com/reference/java/io/StreamTokenizer.html#TT_WORD"/>
         /// </summary>
         public static int TT_WORD { get { if (!_TT_WORDReady) { _TT_WORDContent = SGetField<int>(LocalBridgeClazz, "TT_WORD"); _TT_WORDReady = true; } return _TT_WORDContent; } }
         private static int _TT_WORDContent = default;
@@ -99,7 +99,7 @@ namespace Java.Io
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/StreamTokenizer.html#lineno()"/>
+        /// <see href="https://developer.android.com/reference/java/io/StreamTokenizer.html#lineno()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int Lineno()
@@ -107,7 +107,7 @@ namespace Java.Io
             return IExecuteWithSignature<int>("lineno", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/StreamTokenizer.html#nextToken()"/>
+        /// <see href="https://developer.android.com/reference/java/io/StreamTokenizer.html#nextToken()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -116,7 +116,7 @@ namespace Java.Io
             return IExecuteWithSignature<int>("nextToken", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/StreamTokenizer.html#commentChar(int)"/>
+        /// <see href="https://developer.android.com/reference/java/io/StreamTokenizer.html#commentChar(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public void CommentChar(int arg0)
@@ -124,7 +124,7 @@ namespace Java.Io
             IExecuteWithSignature("commentChar", "(I)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/StreamTokenizer.html#eolIsSignificant(boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/io/StreamTokenizer.html#eolIsSignificant(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         public void EolIsSignificant(bool arg0)
@@ -132,7 +132,7 @@ namespace Java.Io
             IExecuteWithSignature("eolIsSignificant", "(Z)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/StreamTokenizer.html#lowerCaseMode(boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/io/StreamTokenizer.html#lowerCaseMode(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         public void LowerCaseMode(bool arg0)
@@ -140,7 +140,7 @@ namespace Java.Io
             IExecuteWithSignature("lowerCaseMode", "(Z)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/StreamTokenizer.html#ordinaryChar(int)"/>
+        /// <see href="https://developer.android.com/reference/java/io/StreamTokenizer.html#ordinaryChar(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public void OrdinaryChar(int arg0)
@@ -148,7 +148,7 @@ namespace Java.Io
             IExecuteWithSignature("ordinaryChar", "(I)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/StreamTokenizer.html#ordinaryChars(int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/io/StreamTokenizer.html#ordinaryChars(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -157,21 +157,21 @@ namespace Java.Io
             IExecute("ordinaryChars", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/StreamTokenizer.html#parseNumbers()"/>
+        /// <see href="https://developer.android.com/reference/java/io/StreamTokenizer.html#parseNumbers()"/>
         /// </summary>
         public void ParseNumbers()
         {
             IExecuteWithSignature("parseNumbers", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/StreamTokenizer.html#pushBack()"/>
+        /// <see href="https://developer.android.com/reference/java/io/StreamTokenizer.html#pushBack()"/>
         /// </summary>
         public void PushBack()
         {
             IExecuteWithSignature("pushBack", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/StreamTokenizer.html#quoteChar(int)"/>
+        /// <see href="https://developer.android.com/reference/java/io/StreamTokenizer.html#quoteChar(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public void QuoteChar(int arg0)
@@ -179,14 +179,14 @@ namespace Java.Io
             IExecuteWithSignature("quoteChar", "(I)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/StreamTokenizer.html#resetSyntax()"/>
+        /// <see href="https://developer.android.com/reference/java/io/StreamTokenizer.html#resetSyntax()"/>
         /// </summary>
         public void ResetSyntax()
         {
             IExecuteWithSignature("resetSyntax", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/StreamTokenizer.html#slashSlashComments(boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/io/StreamTokenizer.html#slashSlashComments(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         public void SlashSlashComments(bool arg0)
@@ -194,7 +194,7 @@ namespace Java.Io
             IExecuteWithSignature("slashSlashComments", "(Z)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/StreamTokenizer.html#slashStarComments(boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/io/StreamTokenizer.html#slashStarComments(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         public void SlashStarComments(bool arg0)
@@ -202,7 +202,7 @@ namespace Java.Io
             IExecuteWithSignature("slashStarComments", "(Z)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/StreamTokenizer.html#whitespaceChars(int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/io/StreamTokenizer.html#whitespaceChars(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -211,7 +211,7 @@ namespace Java.Io
             IExecute("whitespaceChars", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/StreamTokenizer.html#wordChars(int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/io/StreamTokenizer.html#wordChars(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>

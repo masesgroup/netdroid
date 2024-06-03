@@ -57,46 +57,60 @@ namespace Android.View
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ScrollCaptureTarget.html#getCallback()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/ScrollCaptureTarget.html#getPositionInWindow()"/>
         /// </summary>
-        public Android.View.ScrollCaptureCallback Callback
+        /// <returns><see cref="Android.Graphics.Point"/></returns>
+        public Android.Graphics.Point GetPositionInWindow()
         {
-            get { return IExecuteWithSignature<Android.View.ScrollCaptureCallback>("getCallback", "()Landroid/view/ScrollCaptureCallback;"); }
+            return IExecuteWithSignature<Android.Graphics.Point>("getPositionInWindow", "()Landroid/graphics/Point;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ScrollCaptureTarget.html#getContainingView()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/ScrollCaptureTarget.html#getLocalVisibleRect()"/>
         /// </summary>
-        public Android.View.View ContainingView
+        /// <returns><see cref="Android.Graphics.Rect"/></returns>
+        public Android.Graphics.Rect GetLocalVisibleRect()
         {
-            get { return IExecuteWithSignature<Android.View.View>("getContainingView", "()Landroid/view/View;"); }
+            return IExecuteWithSignature<Android.Graphics.Rect>("getLocalVisibleRect", "()Landroid/graphics/Rect;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ScrollCaptureTarget.html#getHint()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/ScrollCaptureTarget.html#getScrollBounds()"/>
         /// </summary>
-        public int Hint
+        /// <returns><see cref="Android.Graphics.Rect"/></returns>
+        public Android.Graphics.Rect GetScrollBounds()
         {
-            get { return IExecuteWithSignature<int>("getHint", "()I"); }
+            return IExecuteWithSignature<Android.Graphics.Rect>("getScrollBounds", "()Landroid/graphics/Rect;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ScrollCaptureTarget.html#getLocalVisibleRect()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/ScrollCaptureTarget.html#getCallback()"/>
         /// </summary>
-        public Android.Graphics.Rect LocalVisibleRect
+        /// <returns><see cref="Android.View.ScrollCaptureCallback"/></returns>
+        public Android.View.ScrollCaptureCallback GetCallback()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Rect>("getLocalVisibleRect", "()Landroid/graphics/Rect;"); }
+            return IExecuteWithSignature<Android.View.ScrollCaptureCallback>("getCallback", "()Landroid/view/ScrollCaptureCallback;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ScrollCaptureTarget.html#getPositionInWindow()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/ScrollCaptureTarget.html#getContainingView()"/>
         /// </summary>
-        public Android.Graphics.Point PositionInWindow
+        /// <returns><see cref="Android.View.View"/></returns>
+        public Android.View.View GetContainingView()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Point>("getPositionInWindow", "()Landroid/graphics/Point;"); }
+            return IExecuteWithSignature<Android.View.View>("getContainingView", "()Landroid/view/View;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ScrollCaptureTarget.html#getScrollBounds()"/> <see href="https://developer.android.com/reference/android/view/ScrollCaptureTarget.html#setScrollBounds(android.graphics.Rect)"/>
+        /// <see href="https://developer.android.com/reference/android/view/ScrollCaptureTarget.html#getHint()"/>
         /// </summary>
-        public Android.Graphics.Rect ScrollBounds
+        /// <returns><see cref="int"/></returns>
+        public int GetHint()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Rect>("getScrollBounds", "()Landroid/graphics/Rect;"); } set { IExecuteWithSignature("setScrollBounds", "(Landroid/graphics/Rect;)V", value); }
+            return IExecuteWithSignature<int>("getHint", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ScrollCaptureTarget.html#setScrollBounds(android.graphics.Rect)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Rect"/></param>
+        public void SetScrollBounds(Android.Graphics.Rect arg0)
+        {
+            IExecuteWithSignature("setScrollBounds", "(Landroid/graphics/Rect;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ScrollCaptureTarget.html#updatePositionInWindow()"/>

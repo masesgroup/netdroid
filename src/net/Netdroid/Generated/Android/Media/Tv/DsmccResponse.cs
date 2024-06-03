@@ -111,39 +111,44 @@ namespace Android.Media.Tv
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/DsmccResponse.html#getBiopMessageType()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/tv/DsmccResponse.html#getFile()"/>
         /// </summary>
-        public Java.Lang.String BiopMessageType
+        /// <returns><see cref="Android.Os.ParcelFileDescriptor"/></returns>
+        public Android.Os.ParcelFileDescriptor GetFile()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getBiopMessageType", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Android.Os.ParcelFileDescriptor>("getFile", "()Landroid/os/ParcelFileDescriptor;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/DsmccResponse.html#getChildList()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/tv/DsmccResponse.html#getStreamEventIds()"/>
         /// </summary>
-        public Java.Util.List<Java.Lang.String> ChildList
+        /// <returns><see cref="int"/></returns>
+        public int[] GetStreamEventIds()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getChildList", "()Ljava/util/List;"); }
+            return IExecuteWithSignatureArray<int>("getStreamEventIds", "()[I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/DsmccResponse.html#getFile()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/tv/DsmccResponse.html#getBiopMessageType()"/>
         /// </summary>
-        public Android.Os.ParcelFileDescriptor File
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetBiopMessageType()
         {
-            get { return IExecuteWithSignature<Android.Os.ParcelFileDescriptor>("getFile", "()Landroid/os/ParcelFileDescriptor;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getBiopMessageType", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/DsmccResponse.html#getStreamEventIds()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/tv/DsmccResponse.html#getStreamEventNames()"/>
         /// </summary>
-        public int[] StreamEventIds
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String[] GetStreamEventNames()
         {
-            get { return IExecuteWithSignatureArray<int>("getStreamEventIds", "()[I"); }
+            return IExecuteWithSignatureArray<Java.Lang.String>("getStreamEventNames", "()[Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/DsmccResponse.html#getStreamEventNames()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/tv/DsmccResponse.html#getChildList()"/>
         /// </summary>
-        public Java.Lang.String[] StreamEventNames
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Lang.String> GetChildList()
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getStreamEventNames", "()[Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getChildList", "()Ljava/util/List;");
         }
 
         #endregion

@@ -948,61 +948,43 @@ namespace Android.Telephony
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SmsManager.html#getDefault()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/SmsManager.html#getDefault()"/>
         /// </summary>
-        [System.Obsolete()]
-        public static Android.Telephony.SmsManager Default
+        /// <returns><see cref="Android.Telephony.SmsManager"/></returns>
+        [global::System.Obsolete()]
+        public static Android.Telephony.SmsManager GetDefault()
         {
-            get { return SExecuteWithSignature<Android.Telephony.SmsManager>(LocalBridgeClazz, "getDefault", "()Landroid/telephony/SmsManager;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SmsManager.html#getDefaultSmsSubscriptionId()"/> 
-        /// </summary>
-        public static int DefaultSmsSubscriptionId
-        {
-            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getDefaultSmsSubscriptionId", "()I"); }
+            return SExecuteWithSignature<Android.Telephony.SmsManager>(LocalBridgeClazz, "getDefault", "()Landroid/telephony/SmsManager;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SmsManager.html#getSmsManagerForSubscriptionId(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Android.Telephony.SmsManager"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Telephony.SmsManager GetSmsManagerForSubscriptionId(int arg0)
         {
             return SExecuteWithSignature<Android.Telephony.SmsManager>(LocalBridgeClazz, "getSmsManagerForSubscriptionId", "(I)Landroid/telephony/SmsManager;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SmsManager.html#getDefaultSmsSubscriptionId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public static int GetDefaultSmsSubscriptionId()
+        {
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getDefaultSmsSubscriptionId", "()I");
         }
 
         #endregion
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SmsManager.html#getCarrierConfigValues()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/SmsManager.html#getCarrierConfigValues()"/>
         /// </summary>
-        public Android.Os.Bundle CarrierConfigValues
+        /// <returns><see cref="Android.Os.Bundle"/></returns>
+        public Android.Os.Bundle GetCarrierConfigValues()
         {
-            get { return IExecuteWithSignature<Android.Os.Bundle>("getCarrierConfigValues", "()Landroid/os/Bundle;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SmsManager.html#getSmscAddress()"/> 
-        /// </summary>
-        public Java.Lang.String SmscAddress
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSmscAddress", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SmsManager.html#getSmsCapacityOnIcc()"/> 
-        /// </summary>
-        public int SmsCapacityOnIcc
-        {
-            get { return IExecuteWithSignature<int>("getSmsCapacityOnIcc", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/SmsManager.html#getSubscriptionId()"/> 
-        /// </summary>
-        public int SubscriptionId
-        {
-            get { return IExecuteWithSignature<int>("getSubscriptionId", "()I"); }
+            return IExecuteWithSignature<Android.Os.Bundle>("getCarrierConfigValues", "()Landroid/os/Bundle;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SmsManager.html#createForSubscriptionId(int)"/>
@@ -1023,6 +1005,22 @@ namespace Android.Telephony
             return IExecuteWithSignature<bool>("setSmscAddress", "(Ljava/lang/String;)Z", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SmsManager.html#getSmsCapacityOnIcc()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSmsCapacityOnIcc()
+        {
+            return IExecuteWithSignature<int>("getSmsCapacityOnIcc", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SmsManager.html#getSubscriptionId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSubscriptionId()
+        {
+            return IExecuteWithSignature<int>("getSubscriptionId", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SmsManager.html#createAppSpecificSmsToken(android.app.PendingIntent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.App.PendingIntent"/></param>
@@ -1040,6 +1038,14 @@ namespace Android.Telephony
         public Java.Lang.String CreateAppSpecificSmsTokenWithPackageInfo(Java.Lang.String arg0, Android.App.PendingIntent arg1)
         {
             return IExecute<Java.Lang.String>("createAppSpecificSmsTokenWithPackageInfo", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/SmsManager.html#getSmscAddress()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSmscAddress()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getSmscAddress", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/SmsManager.html#divideMessage(java.lang.String)"/>

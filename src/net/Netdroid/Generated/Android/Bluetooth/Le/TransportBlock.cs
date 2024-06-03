@@ -63,32 +63,12 @@ namespace Android.Bluetooth.Le
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/le/TransportBlock.html#getOrgId()"/> 
+        /// <see href="https://developer.android.com/reference/android/bluetooth/le/TransportBlock.html#getTransportData()"/>
         /// </summary>
-        public int OrgId
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetTransportData()
         {
-            get { return IExecuteWithSignature<int>("getOrgId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/le/TransportBlock.html#getTdsFlags()"/> 
-        /// </summary>
-        public int TdsFlags
-        {
-            get { return IExecuteWithSignature<int>("getTdsFlags", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/le/TransportBlock.html#getTransportData()"/> 
-        /// </summary>
-        public byte[] TransportData
-        {
-            get { return IExecuteWithSignatureArray<byte>("getTransportData", "()[B"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/le/TransportBlock.html#getTransportDataLength()"/> 
-        /// </summary>
-        public int TransportDataLength
-        {
-            get { return IExecuteWithSignature<int>("getTransportDataLength", "()I"); }
+            return IExecuteWithSignatureArray<byte>("getTransportData", "()[B");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/le/TransportBlock.html#toByteArray()"/>
@@ -105,6 +85,30 @@ namespace Android.Bluetooth.Le
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/le/TransportBlock.html#getOrgId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetOrgId()
+        {
+            return IExecuteWithSignature<int>("getOrgId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/le/TransportBlock.html#getTdsFlags()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTdsFlags()
+        {
+            return IExecuteWithSignature<int>("getTdsFlags", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/le/TransportBlock.html#getTransportDataLength()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTransportDataLength()
+        {
+            return IExecuteWithSignature<int>("getTransportDataLength", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/le/TransportBlock.html#totalBytes()"/>

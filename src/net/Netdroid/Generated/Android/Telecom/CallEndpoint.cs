@@ -98,25 +98,12 @@ namespace Android.Telecom
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/CallEndpoint.html#getEndpointName()"/> 
+        /// <see href="https://developer.android.com/reference/android/telecom/CallEndpoint.html#getIdentifier()"/>
         /// </summary>
-        public Java.Lang.CharSequence EndpointName
+        /// <returns><see cref="Android.Os.ParcelUuid"/></returns>
+        public Android.Os.ParcelUuid GetIdentifier()
         {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getEndpointName", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/CallEndpoint.html#getEndpointType()"/> 
-        /// </summary>
-        public int EndpointType
-        {
-            get { return IExecuteWithSignature<int>("getEndpointType", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/CallEndpoint.html#getIdentifier()"/> 
-        /// </summary>
-        public Android.Os.ParcelUuid Identifier
-        {
-            get { return IExecuteWithSignature<Android.Os.ParcelUuid>("getIdentifier", "()Landroid/os/ParcelUuid;"); }
+            return IExecuteWithSignature<Android.Os.ParcelUuid>("getIdentifier", "()Landroid/os/ParcelUuid;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/CallEndpoint.html#describeContents()"/>
@@ -125,6 +112,22 @@ namespace Android.Telecom
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/CallEndpoint.html#getEndpointType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetEndpointType()
+        {
+            return IExecuteWithSignature<int>("getEndpointType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/CallEndpoint.html#getEndpointName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetEndpointName()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getEndpointName", "()Ljava/lang/CharSequence;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/CallEndpoint.html#writeToParcel(android.os.Parcel,int)"/>

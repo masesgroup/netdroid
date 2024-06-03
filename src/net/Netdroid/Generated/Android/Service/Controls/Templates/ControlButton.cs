@@ -61,13 +61,6 @@ namespace Android.Service.Controls.Templates
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/controls/templates/ControlButton.html#getActionDescription()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence ActionDescription
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getActionDescription", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/controls/templates/ControlButton.html#isChecked()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -82,6 +75,14 @@ namespace Android.Service.Controls.Templates
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/controls/templates/ControlButton.html#getActionDescription()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetActionDescription()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getActionDescription", "()Ljava/lang/CharSequence;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/controls/templates/ControlButton.html#writeToParcel(android.os.Parcel,int)"/>

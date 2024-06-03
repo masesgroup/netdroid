@@ -33,7 +33,7 @@ namespace Android.Util
         /// <see href="https://developer.android.com/reference/android/util/MutableByte.html#%3Cinit%3E(byte)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public MutableByte(byte arg0)
             : base(arg0)
         {
@@ -49,7 +49,7 @@ namespace Android.Util
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/MutableByte.html#value"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public byte value { get { return IGetField<byte>("value"); } set { ISetField("value", value); } }
 
         #endregion

@@ -52,71 +52,48 @@ namespace Android.View.Textclassifier
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassification.html#getActions()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassification.html#getIntent()"/>
         /// </summary>
-        public Java.Util.List<Android.App.RemoteAction> Actions
+        /// <returns><see cref="Android.Content.Intent"/></returns>
+        [global::System.Obsolete()]
+        public Android.Content.Intent GetIntent()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.App.RemoteAction>>("getActions", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Android.Content.Intent>("getIntent", "()Landroid/content/Intent;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassification.html#getEntityCount()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassification.html#getIcon()"/>
         /// </summary>
-        public int EntityCount
+        /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
+        [global::System.Obsolete()]
+        public Android.Graphics.Drawable.Drawable GetIcon()
         {
-            get { return IExecuteWithSignature<int>("getEntityCount", "()I"); }
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getIcon", "()Landroid/graphics/drawable/Drawable;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassification.html#getExtras()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassification.html#getExtras()"/>
         /// </summary>
-        public Android.Os.Bundle Extras
+        /// <returns><see cref="Android.Os.Bundle"/></returns>
+        public Android.Os.Bundle GetExtras()
         {
-            get { return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;"); }
+            return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassification.html#getIcon()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassification.html#getOnClickListener()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Graphics.Drawable.Drawable Icon
+        /// <returns><see cref="Android.View.View.OnClickListener"/></returns>
+        [global::System.Obsolete()]
+        public Android.View.View.OnClickListener GetOnClickListener()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getIcon", "()Landroid/graphics/drawable/Drawable;"); }
+            return IExecuteWithSignature<Android.View.View.OnClickListener>("getOnClickListener", "()Landroid/view/View$OnClickListener;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassification.html#getId()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassification.html#getOnClickListener()"/>
         /// </summary>
-        public Java.Lang.String Id
+        /// <returns><see cref="Android.View.View.OnClickListener"/></returns>
+        [global::System.Obsolete()]
+        public Android.View.View.OnClickListener GetOnClickListenerDirect()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassification.html#getIntent()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Android.Content.Intent Intent
-        {
-            get { return IExecuteWithSignature<Android.Content.Intent>("getIntent", "()Landroid/content/Intent;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassification.html#getLabel()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Java.Lang.CharSequence Label
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getLabel", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassification.html#getOnClickListener()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Android.View.View.OnClickListener OnClickListener
-        {
-            get { return IExecuteWithSignature<Android.View.View.OnClickListener>("getOnClickListener", "()Landroid/view/View$OnClickListener;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassification.html#getText()"/> 
-        /// </summary>
-        public Java.Lang.String Text
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getText", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Android.View.View.OnClickListenerDirect, Android.View.View.OnClickListener>("getOnClickListener", "()Landroid/view/View$OnClickListener;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassification.html#getConfidenceScore(java.lang.String)"/>
@@ -136,6 +113,23 @@ namespace Android.View.Textclassifier
             return IExecuteWithSignature<int>("describeContents", "()I");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassification.html#getEntityCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetEntityCount()
+        {
+            return IExecuteWithSignature<int>("getEntityCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassification.html#getLabel()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        [global::System.Obsolete()]
+        public Java.Lang.CharSequence GetLabel()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getLabel", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassification.html#getEntity(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -143,6 +137,30 @@ namespace Android.View.Textclassifier
         public Java.Lang.String GetEntity(int arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getEntity", "(I)Ljava/lang/String;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassification.html#getId()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetId()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassification.html#getText()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetText()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getText", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassification.html#getActions()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.App.RemoteAction> GetActions()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.App.RemoteAction>>("getActions", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassification.html#writeToParcel(android.os.Parcel,int)"/>
@@ -218,7 +236,7 @@ namespace Android.View.Textclassifier
             /// </summary>
             /// <param name="arg0"><see cref="Android.Graphics.Drawable.Drawable"/></param>
             /// <returns><see cref="Android.View.Textclassifier.TextClassification.Builder"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.View.Textclassifier.TextClassification.Builder SetIcon(Android.Graphics.Drawable.Drawable arg0)
             {
                 return IExecute<Android.View.Textclassifier.TextClassification.Builder>("setIcon", arg0);
@@ -237,7 +255,7 @@ namespace Android.View.Textclassifier
             /// </summary>
             /// <param name="arg0"><see cref="Android.Content.Intent"/></param>
             /// <returns><see cref="Android.View.Textclassifier.TextClassification.Builder"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.View.Textclassifier.TextClassification.Builder SetIntent(Android.Content.Intent arg0)
             {
                 return IExecute<Android.View.Textclassifier.TextClassification.Builder>("setIntent", arg0);
@@ -247,7 +265,7 @@ namespace Android.View.Textclassifier
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="Android.View.Textclassifier.TextClassification.Builder"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.View.Textclassifier.TextClassification.Builder SetLabel(Java.Lang.String arg0)
             {
                 return IExecute<Android.View.Textclassifier.TextClassification.Builder>("setLabel", arg0);
@@ -257,7 +275,7 @@ namespace Android.View.Textclassifier
             /// </summary>
             /// <param name="arg0"><see cref="Android.View.View.OnClickListener"/></param>
             /// <returns><see cref="Android.View.Textclassifier.TextClassification.Builder"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.View.Textclassifier.TextClassification.Builder SetOnClickListener(Android.View.View.OnClickListener arg0)
             {
                 return IExecute<Android.View.Textclassifier.TextClassification.Builder>("setOnClickListener", arg0);
@@ -309,53 +327,20 @@ namespace Android.View.Textclassifier
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassification.Request.html#getCallingPackageName()"/> 
+            /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassification.Request.html#getExtras()"/>
             /// </summary>
-            public Java.Lang.String CallingPackageName
+            /// <returns><see cref="Android.Os.Bundle"/></returns>
+            public Android.Os.Bundle GetExtras()
             {
-                get { return IExecuteWithSignature<Java.Lang.String>("getCallingPackageName", "()Ljava/lang/String;"); }
+                return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassification.Request.html#getDefaultLocales()"/> 
+            /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassification.Request.html#getDefaultLocales()"/>
             /// </summary>
-            public Android.Os.LocaleList DefaultLocales
+            /// <returns><see cref="Android.Os.LocaleList"/></returns>
+            public Android.Os.LocaleList GetDefaultLocales()
             {
-                get { return IExecuteWithSignature<Android.Os.LocaleList>("getDefaultLocales", "()Landroid/os/LocaleList;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassification.Request.html#getEndIndex()"/> 
-            /// </summary>
-            public int EndIndex
-            {
-                get { return IExecuteWithSignature<int>("getEndIndex", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassification.Request.html#getExtras()"/> 
-            /// </summary>
-            public Android.Os.Bundle Extras
-            {
-                get { return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassification.Request.html#getReferenceTime()"/> 
-            /// </summary>
-            public Java.Time.ZonedDateTime ReferenceTime
-            {
-                get { return IExecuteWithSignature<Java.Time.ZonedDateTime>("getReferenceTime", "()Ljava/time/ZonedDateTime;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassification.Request.html#getStartIndex()"/> 
-            /// </summary>
-            public int StartIndex
-            {
-                get { return IExecuteWithSignature<int>("getStartIndex", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassification.Request.html#getText()"/> 
-            /// </summary>
-            public Java.Lang.CharSequence Text
-            {
-                get { return IExecuteWithSignature<Java.Lang.CharSequence>("getText", "()Ljava/lang/CharSequence;"); }
+                return IExecuteWithSignature<Android.Os.LocaleList>("getDefaultLocales", "()Landroid/os/LocaleList;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassification.Request.html#describeContents()"/>
@@ -364,6 +349,46 @@ namespace Android.View.Textclassifier
             public int DescribeContents()
             {
                 return IExecuteWithSignature<int>("describeContents", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassification.Request.html#getEndIndex()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetEndIndex()
+            {
+                return IExecuteWithSignature<int>("getEndIndex", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassification.Request.html#getStartIndex()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetStartIndex()
+            {
+                return IExecuteWithSignature<int>("getStartIndex", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassification.Request.html#getText()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+            public Java.Lang.CharSequence GetText()
+            {
+                return IExecuteWithSignature<Java.Lang.CharSequence>("getText", "()Ljava/lang/CharSequence;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassification.Request.html#getCallingPackageName()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetCallingPackageName()
+            {
+                return IExecuteWithSignature<Java.Lang.String>("getCallingPackageName", "()Ljava/lang/String;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassification.Request.html#getReferenceTime()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
+            public Java.Time.ZonedDateTime GetReferenceTime()
+            {
+                return IExecuteWithSignature<Java.Time.ZonedDateTime>("getReferenceTime", "()Ljava/time/ZonedDateTime;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassification.Request.html#writeToParcel(android.os.Parcel,int)"/>

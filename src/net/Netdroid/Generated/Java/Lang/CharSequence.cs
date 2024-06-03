@@ -60,7 +60,7 @@ namespace Java.Lang
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/CharSequence.html#compare(java.lang.CharSequence,java.lang.CharSequence)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/CharSequence.html#compare(java.lang.CharSequence,java.lang.CharSequence)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <param name="arg1"><see cref="Java.Lang.CharSequence"/></param>
@@ -74,7 +74,7 @@ namespace Java.Lang
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/CharSequence.html#charAt(int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/CharSequence.html#charAt(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="char"/></returns>
@@ -83,7 +83,7 @@ namespace Java.Lang
             return IExecuteWithSignature<char>("charAt", "(I)C", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/CharSequence.html#length()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/CharSequence.html#length()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int Length()
@@ -91,7 +91,7 @@ namespace Java.Lang
             return IExecuteWithSignature<int>("length", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/CharSequence.html#subSequence(int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/CharSequence.html#subSequence(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -101,15 +101,7 @@ namespace Java.Lang
             return IExecute<Java.Lang.CharSequence>("subSequence", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/CharSequence.html#isEmpty()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        public bool IsEmpty()
-        {
-            return IExecuteWithSignature<bool>("isEmpty", "()Z");
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/CharSequence.html#chars()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/CharSequence.html#chars()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
         public Java.Util.Stream.IntStream Chars()
@@ -117,7 +109,7 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Util.Stream.IntStream>("chars", "()Ljava/util/stream/IntStream;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/CharSequence.html#codePoints()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/CharSequence.html#codePoints()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
         public Java.Util.Stream.IntStream CodePoints()

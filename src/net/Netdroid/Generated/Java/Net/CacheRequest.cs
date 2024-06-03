@@ -46,14 +46,16 @@ namespace Java.Net
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/CacheRequest.html#getBody()"/> 
+        /// <see href="https://developer.android.com/reference/java/net/CacheRequest.html#getBody()"/>
         /// </summary>
-        public Java.Io.OutputStream Body
+        /// <returns><see cref="Java.Io.OutputStream"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Io.OutputStream GetBody()
         {
-            get { return IExecuteWithSignature<Java.Io.OutputStream>("getBody", "()Ljava/io/OutputStream;"); }
+            return IExecuteWithSignature<Java.Io.OutputStream>("getBody", "()Ljava/io/OutputStream;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/CacheRequest.html#abort()"/>
+        /// <see href="https://developer.android.com/reference/java/net/CacheRequest.html#abort()"/>
         /// </summary>
         public void Abort()
         {

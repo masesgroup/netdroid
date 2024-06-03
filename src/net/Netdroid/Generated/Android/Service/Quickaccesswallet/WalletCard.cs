@@ -70,67 +70,36 @@ namespace Android.Service.Quickaccesswallet
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/quickaccesswallet/WalletCard.html#getCardIcon()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/quickaccesswallet/WalletCard.html#getPendingIntent()"/>
         /// </summary>
-        public Android.Graphics.Drawable.Icon CardIcon
+        /// <returns><see cref="Android.App.PendingIntent"/></returns>
+        public Android.App.PendingIntent GetPendingIntent()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Icon>("getCardIcon", "()Landroid/graphics/drawable/Icon;"); }
+            return IExecuteWithSignature<Android.App.PendingIntent>("getPendingIntent", "()Landroid/app/PendingIntent;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/quickaccesswallet/WalletCard.html#getCardId()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/quickaccesswallet/WalletCard.html#getCardIcon()"/>
         /// </summary>
-        public Java.Lang.String CardId
+        /// <returns><see cref="Android.Graphics.Drawable.Icon"/></returns>
+        public Android.Graphics.Drawable.Icon GetCardIcon()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCardId", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Android.Graphics.Drawable.Icon>("getCardIcon", "()Landroid/graphics/drawable/Icon;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/quickaccesswallet/WalletCard.html#getCardImage()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/quickaccesswallet/WalletCard.html#getCardImage()"/>
         /// </summary>
-        public Android.Graphics.Drawable.Icon CardImage
+        /// <returns><see cref="Android.Graphics.Drawable.Icon"/></returns>
+        public Android.Graphics.Drawable.Icon GetCardImage()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Icon>("getCardImage", "()Landroid/graphics/drawable/Icon;"); }
+            return IExecuteWithSignature<Android.Graphics.Drawable.Icon>("getCardImage", "()Landroid/graphics/drawable/Icon;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/quickaccesswallet/WalletCard.html#getCardLabel()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/quickaccesswallet/WalletCard.html#getNonPaymentCardSecondaryImage()"/>
         /// </summary>
-        public Java.Lang.CharSequence CardLabel
+        /// <returns><see cref="Android.Graphics.Drawable.Icon"/></returns>
+        public Android.Graphics.Drawable.Icon GetNonPaymentCardSecondaryImage()
         {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getCardLabel", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/quickaccesswallet/WalletCard.html#getCardLocations()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Location.Location> CardLocations
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Location.Location>>("getCardLocations", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/quickaccesswallet/WalletCard.html#getCardType()"/> 
-        /// </summary>
-        public int CardType
-        {
-            get { return IExecuteWithSignature<int>("getCardType", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/quickaccesswallet/WalletCard.html#getContentDescription()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence ContentDescription
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getContentDescription", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/quickaccesswallet/WalletCard.html#getNonPaymentCardSecondaryImage()"/> 
-        /// </summary>
-        public Android.Graphics.Drawable.Icon NonPaymentCardSecondaryImage
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Icon>("getNonPaymentCardSecondaryImage", "()Landroid/graphics/drawable/Icon;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/quickaccesswallet/WalletCard.html#getPendingIntent()"/> 
-        /// </summary>
-        public Android.App.PendingIntent PendingIntent
-        {
-            get { return IExecuteWithSignature<Android.App.PendingIntent>("getPendingIntent", "()Landroid/app/PendingIntent;"); }
+            return IExecuteWithSignature<Android.Graphics.Drawable.Icon>("getNonPaymentCardSecondaryImage", "()Landroid/graphics/drawable/Icon;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/quickaccesswallet/WalletCard.html#describeContents()"/>
@@ -139,6 +108,46 @@ namespace Android.Service.Quickaccesswallet
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/quickaccesswallet/WalletCard.html#getCardType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCardType()
+        {
+            return IExecuteWithSignature<int>("getCardType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/quickaccesswallet/WalletCard.html#getCardLabel()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetCardLabel()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getCardLabel", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/quickaccesswallet/WalletCard.html#getContentDescription()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetContentDescription()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getContentDescription", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/quickaccesswallet/WalletCard.html#getCardId()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetCardId()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getCardId", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/quickaccesswallet/WalletCard.html#getCardLocations()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Location.Location> GetCardLocations()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Location.Location>>("getCardLocations", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/quickaccesswallet/WalletCard.html#writeToParcel(android.os.Parcel,int)"/>

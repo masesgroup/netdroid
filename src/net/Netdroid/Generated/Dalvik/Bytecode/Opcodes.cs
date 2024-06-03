@@ -244,7 +244,7 @@ namespace Dalvik.Bytecode
         /// <summary>
         /// <see href="https://developer.android.com/reference/dalvik/bytecode/Opcodes.html#OP_BREAKPOINT"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int OP_BREAKPOINT { get { if (!_OP_BREAKPOINTReady) { _OP_BREAKPOINTContent = SGetField<int>(LocalBridgeClazz, "OP_BREAKPOINT"); _OP_BREAKPOINTReady = true; } return _OP_BREAKPOINTContent; } }
         private static int _OP_BREAKPOINTContent = default;
         private static bool _OP_BREAKPOINTReady = false; // this is used because in case of generics 
@@ -455,14 +455,14 @@ namespace Dalvik.Bytecode
         /// <summary>
         /// <see href="https://developer.android.com/reference/dalvik/bytecode/Opcodes.html#OP_EXECUTE_INLINE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int OP_EXECUTE_INLINE { get { if (!_OP_EXECUTE_INLINEReady) { _OP_EXECUTE_INLINEContent = SGetField<int>(LocalBridgeClazz, "OP_EXECUTE_INLINE"); _OP_EXECUTE_INLINEReady = true; } return _OP_EXECUTE_INLINEContent; } }
         private static int _OP_EXECUTE_INLINEContent = default;
         private static bool _OP_EXECUTE_INLINEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/dalvik/bytecode/Opcodes.html#OP_EXECUTE_INLINE_RANGE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int OP_EXECUTE_INLINE_RANGE { get { if (!_OP_EXECUTE_INLINE_RANGEReady) { _OP_EXECUTE_INLINE_RANGEContent = SGetField<int>(LocalBridgeClazz, "OP_EXECUTE_INLINE_RANGE"); _OP_EXECUTE_INLINE_RANGEReady = true; } return _OP_EXECUTE_INLINE_RANGEContent; } }
         private static int _OP_EXECUTE_INLINE_RANGEContent = default;
         private static bool _OP_EXECUTE_INLINE_RANGEReady = false; // this is used because in case of generics 
@@ -661,14 +661,14 @@ namespace Dalvik.Bytecode
         /// <summary>
         /// <see href="https://developer.android.com/reference/dalvik/bytecode/Opcodes.html#OP_IGET_OBJECT_QUICK"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int OP_IGET_OBJECT_QUICK { get { if (!_OP_IGET_OBJECT_QUICKReady) { _OP_IGET_OBJECT_QUICKContent = SGetField<int>(LocalBridgeClazz, "OP_IGET_OBJECT_QUICK"); _OP_IGET_OBJECT_QUICKReady = true; } return _OP_IGET_OBJECT_QUICKContent; } }
         private static int _OP_IGET_OBJECT_QUICKContent = default;
         private static bool _OP_IGET_OBJECT_QUICKReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/dalvik/bytecode/Opcodes.html#OP_IGET_QUICK"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int OP_IGET_QUICK { get { if (!_OP_IGET_QUICKReady) { _OP_IGET_QUICKContent = SGetField<int>(LocalBridgeClazz, "OP_IGET_QUICK"); _OP_IGET_QUICKReady = true; } return _OP_IGET_QUICKContent; } }
         private static int _OP_IGET_QUICKContent = default;
         private static bool _OP_IGET_QUICKReady = false; // this is used because in case of generics 
@@ -699,14 +699,14 @@ namespace Dalvik.Bytecode
         /// <summary>
         /// <see href="https://developer.android.com/reference/dalvik/bytecode/Opcodes.html#OP_IGET_WIDE_QUICK"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int OP_IGET_WIDE_QUICK { get { if (!_OP_IGET_WIDE_QUICKReady) { _OP_IGET_WIDE_QUICKContent = SGetField<int>(LocalBridgeClazz, "OP_IGET_WIDE_QUICK"); _OP_IGET_WIDE_QUICKReady = true; } return _OP_IGET_WIDE_QUICKContent; } }
         private static int _OP_IGET_WIDE_QUICKContent = default;
         private static bool _OP_IGET_WIDE_QUICKReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/dalvik/bytecode/Opcodes.html#OP_IGET_WIDE_VOLATILE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int OP_IGET_WIDE_VOLATILE { get { if (!_OP_IGET_WIDE_VOLATILEReady) { _OP_IGET_WIDE_VOLATILEContent = SGetField<int>(LocalBridgeClazz, "OP_IGET_WIDE_VOLATILE"); _OP_IGET_WIDE_VOLATILEReady = true; } return _OP_IGET_WIDE_VOLATILEContent; } }
         private static int _OP_IGET_WIDE_VOLATILEContent = default;
         private static bool _OP_IGET_WIDE_VOLATILEReady = false; // this is used because in case of generics 
@@ -779,7 +779,7 @@ namespace Dalvik.Bytecode
         /// <summary>
         /// <see href="https://developer.android.com/reference/dalvik/bytecode/Opcodes.html#OP_INVOKE_DIRECT_EMPTY"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int OP_INVOKE_DIRECT_EMPTY { get { if (!_OP_INVOKE_DIRECT_EMPTYReady) { _OP_INVOKE_DIRECT_EMPTYContent = SGetField<int>(LocalBridgeClazz, "OP_INVOKE_DIRECT_EMPTY"); _OP_INVOKE_DIRECT_EMPTYReady = true; } return _OP_INVOKE_DIRECT_EMPTYContent; } }
         private static int _OP_INVOKE_DIRECT_EMPTYContent = default;
         private static bool _OP_INVOKE_DIRECT_EMPTYReady = false; // this is used because in case of generics 
@@ -858,14 +858,14 @@ namespace Dalvik.Bytecode
         /// <summary>
         /// <see href="https://developer.android.com/reference/dalvik/bytecode/Opcodes.html#OP_INVOKE_SUPER_QUICK"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int OP_INVOKE_SUPER_QUICK { get { if (!_OP_INVOKE_SUPER_QUICKReady) { _OP_INVOKE_SUPER_QUICKContent = SGetField<int>(LocalBridgeClazz, "OP_INVOKE_SUPER_QUICK"); _OP_INVOKE_SUPER_QUICKReady = true; } return _OP_INVOKE_SUPER_QUICKContent; } }
         private static int _OP_INVOKE_SUPER_QUICKContent = default;
         private static bool _OP_INVOKE_SUPER_QUICKReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/dalvik/bytecode/Opcodes.html#OP_INVOKE_SUPER_QUICK_RANGE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int OP_INVOKE_SUPER_QUICK_RANGE { get { if (!_OP_INVOKE_SUPER_QUICK_RANGEReady) { _OP_INVOKE_SUPER_QUICK_RANGEContent = SGetField<int>(LocalBridgeClazz, "OP_INVOKE_SUPER_QUICK_RANGE"); _OP_INVOKE_SUPER_QUICK_RANGEReady = true; } return _OP_INVOKE_SUPER_QUICK_RANGEContent; } }
         private static int _OP_INVOKE_SUPER_QUICK_RANGEContent = default;
         private static bool _OP_INVOKE_SUPER_QUICK_RANGEReady = false; // this is used because in case of generics 
@@ -890,14 +890,14 @@ namespace Dalvik.Bytecode
         /// <summary>
         /// <see href="https://developer.android.com/reference/dalvik/bytecode/Opcodes.html#OP_INVOKE_VIRTUAL_QUICK"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int OP_INVOKE_VIRTUAL_QUICK { get { if (!_OP_INVOKE_VIRTUAL_QUICKReady) { _OP_INVOKE_VIRTUAL_QUICKContent = SGetField<int>(LocalBridgeClazz, "OP_INVOKE_VIRTUAL_QUICK"); _OP_INVOKE_VIRTUAL_QUICKReady = true; } return _OP_INVOKE_VIRTUAL_QUICKContent; } }
         private static int _OP_INVOKE_VIRTUAL_QUICKContent = default;
         private static bool _OP_INVOKE_VIRTUAL_QUICKReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/dalvik/bytecode/Opcodes.html#OP_INVOKE_VIRTUAL_QUICK_RANGE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int OP_INVOKE_VIRTUAL_QUICK_RANGE { get { if (!_OP_INVOKE_VIRTUAL_QUICK_RANGEReady) { _OP_INVOKE_VIRTUAL_QUICK_RANGEContent = SGetField<int>(LocalBridgeClazz, "OP_INVOKE_VIRTUAL_QUICK_RANGE"); _OP_INVOKE_VIRTUAL_QUICK_RANGEReady = true; } return _OP_INVOKE_VIRTUAL_QUICK_RANGEContent; } }
         private static int _OP_INVOKE_VIRTUAL_QUICK_RANGEContent = default;
         private static bool _OP_INVOKE_VIRTUAL_QUICK_RANGEReady = false; // this is used because in case of generics 
@@ -970,14 +970,14 @@ namespace Dalvik.Bytecode
         /// <summary>
         /// <see href="https://developer.android.com/reference/dalvik/bytecode/Opcodes.html#OP_IPUT_OBJECT_QUICK"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int OP_IPUT_OBJECT_QUICK { get { if (!_OP_IPUT_OBJECT_QUICKReady) { _OP_IPUT_OBJECT_QUICKContent = SGetField<int>(LocalBridgeClazz, "OP_IPUT_OBJECT_QUICK"); _OP_IPUT_OBJECT_QUICKReady = true; } return _OP_IPUT_OBJECT_QUICKContent; } }
         private static int _OP_IPUT_OBJECT_QUICKContent = default;
         private static bool _OP_IPUT_OBJECT_QUICKReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/dalvik/bytecode/Opcodes.html#OP_IPUT_QUICK"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int OP_IPUT_QUICK { get { if (!_OP_IPUT_QUICKReady) { _OP_IPUT_QUICKContent = SGetField<int>(LocalBridgeClazz, "OP_IPUT_QUICK"); _OP_IPUT_QUICKReady = true; } return _OP_IPUT_QUICKContent; } }
         private static int _OP_IPUT_QUICKContent = default;
         private static bool _OP_IPUT_QUICKReady = false; // this is used because in case of generics 
@@ -1008,14 +1008,14 @@ namespace Dalvik.Bytecode
         /// <summary>
         /// <see href="https://developer.android.com/reference/dalvik/bytecode/Opcodes.html#OP_IPUT_WIDE_QUICK"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int OP_IPUT_WIDE_QUICK { get { if (!_OP_IPUT_WIDE_QUICKReady) { _OP_IPUT_WIDE_QUICKContent = SGetField<int>(LocalBridgeClazz, "OP_IPUT_WIDE_QUICK"); _OP_IPUT_WIDE_QUICKReady = true; } return _OP_IPUT_WIDE_QUICKContent; } }
         private static int _OP_IPUT_WIDE_QUICKContent = default;
         private static bool _OP_IPUT_WIDE_QUICKReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/dalvik/bytecode/Opcodes.html#OP_IPUT_WIDE_VOLATILE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int OP_IPUT_WIDE_VOLATILE { get { if (!_OP_IPUT_WIDE_VOLATILEReady) { _OP_IPUT_WIDE_VOLATILEContent = SGetField<int>(LocalBridgeClazz, "OP_IPUT_WIDE_VOLATILE"); _OP_IPUT_WIDE_VOLATILEReady = true; } return _OP_IPUT_WIDE_VOLATILEContent; } }
         private static int _OP_IPUT_WIDE_VOLATILEContent = default;
         private static bool _OP_IPUT_WIDE_VOLATILEReady = false; // this is used because in case of generics 
@@ -1478,7 +1478,7 @@ namespace Dalvik.Bytecode
         /// <summary>
         /// <see href="https://developer.android.com/reference/dalvik/bytecode/Opcodes.html#OP_SGET_WIDE_VOLATILE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int OP_SGET_WIDE_VOLATILE { get { if (!_OP_SGET_WIDE_VOLATILEReady) { _OP_SGET_WIDE_VOLATILEContent = SGetField<int>(LocalBridgeClazz, "OP_SGET_WIDE_VOLATILE"); _OP_SGET_WIDE_VOLATILEReady = true; } return _OP_SGET_WIDE_VOLATILEContent; } }
         private static int _OP_SGET_WIDE_VOLATILEContent = default;
         private static bool _OP_SGET_WIDE_VOLATILEReady = false; // this is used because in case of generics 
@@ -1635,7 +1635,7 @@ namespace Dalvik.Bytecode
         /// <summary>
         /// <see href="https://developer.android.com/reference/dalvik/bytecode/Opcodes.html#OP_SPUT_WIDE_VOLATILE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int OP_SPUT_WIDE_VOLATILE { get { if (!_OP_SPUT_WIDE_VOLATILEReady) { _OP_SPUT_WIDE_VOLATILEContent = SGetField<int>(LocalBridgeClazz, "OP_SPUT_WIDE_VOLATILE"); _OP_SPUT_WIDE_VOLATILEReady = true; } return _OP_SPUT_WIDE_VOLATILEContent; } }
         private static int _OP_SPUT_WIDE_VOLATILEContent = default;
         private static bool _OP_SPUT_WIDE_VOLATILEReady = false; // this is used because in case of generics 
@@ -1696,7 +1696,7 @@ namespace Dalvik.Bytecode
         /// <summary>
         /// <see href="https://developer.android.com/reference/dalvik/bytecode/Opcodes.html#OP_THROW_VERIFICATION_ERROR"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int OP_THROW_VERIFICATION_ERROR { get { if (!_OP_THROW_VERIFICATION_ERRORReady) { _OP_THROW_VERIFICATION_ERRORContent = SGetField<int>(LocalBridgeClazz, "OP_THROW_VERIFICATION_ERROR"); _OP_THROW_VERIFICATION_ERRORReady = true; } return _OP_THROW_VERIFICATION_ERRORContent; } }
         private static int _OP_THROW_VERIFICATION_ERRORContent = default;
         private static bool _OP_THROW_VERIFICATION_ERRORReady = false; // this is used because in case of generics 

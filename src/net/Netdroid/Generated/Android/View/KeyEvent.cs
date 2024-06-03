@@ -35,7 +35,7 @@ namespace Android.View
         /// <param name="arg0"><see cref="Android.View.KeyEvent"/></param>
         /// <param name="arg1"><see cref="long"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public KeyEvent(Android.View.KeyEvent arg0, long arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
@@ -164,7 +164,7 @@ namespace Android.View
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#ACTION_MULTIPLE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int ACTION_MULTIPLE { get { if (!_ACTION_MULTIPLEReady) { _ACTION_MULTIPLEContent = SGetField<int>(LocalBridgeClazz, "ACTION_MULTIPLE"); _ACTION_MULTIPLEReady = true; } return _ACTION_MULTIPLEContent; } }
         private static int _ACTION_MULTIPLEContent = default;
         private static bool _ACTION_MULTIPLEReady = false; // this is used because in case of generics 
@@ -237,7 +237,7 @@ namespace Android.View
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#FLAG_WOKE_HERE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int FLAG_WOKE_HERE { get { if (!_FLAG_WOKE_HEREReady) { _FLAG_WOKE_HEREContent = SGetField<int>(LocalBridgeClazz, "FLAG_WOKE_HERE"); _FLAG_WOKE_HEREReady = true; } return _FLAG_WOKE_HEREContent; } }
         private static int _FLAG_WOKE_HEREContent = default;
         private static bool _FLAG_WOKE_HEREReady = false; // this is used because in case of generics 
@@ -2146,7 +2146,7 @@ namespace Android.View
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#MAX_KEYCODE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int MAX_KEYCODE { get { if (!_MAX_KEYCODEReady) { _MAX_KEYCODEContent = SGetField<int>(LocalBridgeClazz, "MAX_KEYCODE"); _MAX_KEYCODEReady = true; } return _MAX_KEYCODEContent; } }
         private static int _MAX_KEYCODEContent = default;
         private static bool _MAX_KEYCODEReady = false; // this is used because in case of generics 
@@ -2281,20 +2281,6 @@ namespace Android.View
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#getMaxKeyCode()"/> 
-        /// </summary>
-        public static int MaxKeyCode
-        {
-            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getMaxKeyCode", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#getModifierMetaStateMask()"/> 
-        /// </summary>
-        public static int ModifierMetaStateMask
-        {
-            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getModifierMetaStateMask", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#changeAction(android.view.KeyEvent,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.KeyEvent"/></param>
@@ -2394,6 +2380,22 @@ namespace Android.View
             return SExecute<int>(LocalBridgeClazz, "getDeadChar", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#getMaxKeyCode()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public static int GetMaxKeyCode()
+        {
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getMaxKeyCode", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#getModifierMetaStateMask()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public static int GetModifierMetaStateMask()
+        {
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getModifierMetaStateMask", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#keyCodeFromString(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -2425,103 +2427,11 @@ namespace Android.View
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#getAction()"/> 
-        /// </summary>
-        public int Action
-        {
-            get { return IExecuteWithSignature<int>("getAction", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#getCharacters()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Java.Lang.String Characters
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCharacters", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#getDisplayLabel()"/> 
-        /// </summary>
-        public char DisplayLabel
-        {
-            get { return IExecuteWithSignature<char>("getDisplayLabel", "()C"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#getDownTime()"/> 
-        /// </summary>
-        public long DownTime
-        {
-            get { return IExecuteWithSignature<long>("getDownTime", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#getFlags()"/> 
-        /// </summary>
-        public int Flags
-        {
-            get { return IExecuteWithSignature<int>("getFlags", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#getKeyCharacterMap()"/> 
-        /// </summary>
-        public Android.View.KeyCharacterMap KeyCharacterMap
-        {
-            get { return IExecuteWithSignature<Android.View.KeyCharacterMap>("getKeyCharacterMap", "()Landroid/view/KeyCharacterMap;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#getKeyCode()"/> 
-        /// </summary>
-        public int KeyCode
-        {
-            get { return IExecuteWithSignature<int>("getKeyCode", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#getMetaState()"/> 
-        /// </summary>
-        public int MetaState
-        {
-            get { return IExecuteWithSignature<int>("getMetaState", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#getModifiers()"/> 
-        /// </summary>
-        public int Modifiers
-        {
-            get { return IExecuteWithSignature<int>("getModifiers", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#getNumber()"/> 
-        /// </summary>
-        public char Number
-        {
-            get { return IExecuteWithSignature<char>("getNumber", "()C"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#getRepeatCount()"/> 
-        /// </summary>
-        public int RepeatCount
-        {
-            get { return IExecuteWithSignature<int>("getRepeatCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#getScanCode()"/> 
-        /// </summary>
-        public int ScanCode
-        {
-            get { return IExecuteWithSignature<int>("getScanCode", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#getUnicodeChar()"/> 
-        /// </summary>
-        public int UnicodeChar
-        {
-            get { return IExecuteWithSignature<int>("getUnicodeChar", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#getKeyData(android.view.KeyCharacterMap.KeyData)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.KeyCharacterMap.KeyData"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool GetKeyData(Android.View.KeyCharacterMap.KeyData arg0)
         {
             return IExecuteWithSignature<bool>("getKeyData", "(Landroid/view/KeyCharacterMap$KeyData;)Z", arg0);
@@ -2533,6 +2443,14 @@ namespace Android.View
         public bool IsPrintingKey()
         {
             return IExecuteWithSignature<bool>("isPrintingKey", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#getDisplayLabel()"/>
+        /// </summary>
+        /// <returns><see cref="char"/></returns>
+        public char GetDisplayLabel()
+        {
+            return IExecuteWithSignature<char>("getDisplayLabel", "()C");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#getMatch(char[],int)"/>
@@ -2554,6 +2472,22 @@ namespace Android.View
             return IExecuteWithSignature<char>("getMatch", "([C)C", new object[] { arg0 });
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#getNumber()"/>
+        /// </summary>
+        /// <returns><see cref="char"/></returns>
+        public char GetNumber()
+        {
+            return IExecuteWithSignature<char>("getNumber", "()C");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#getKeyCharacterMap()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.KeyCharacterMap"/></returns>
+        public Android.View.KeyCharacterMap GetKeyCharacterMap()
+        {
+            return IExecuteWithSignature<Android.View.KeyCharacterMap>("getKeyCharacterMap", "()Landroid/view/KeyCharacterMap;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#dispatch(android.view.KeyEvent.Callback,android.view.KeyEvent.DispatcherState,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.KeyEvent.Callback"/></param>
@@ -2569,7 +2503,7 @@ namespace Android.View
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.KeyEvent.Callback"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool Dispatch(Android.View.KeyEvent.Callback arg0)
         {
             return IExecuteWithSignature<bool>("dispatch", "(Landroid/view/KeyEvent$Callback;)Z", arg0);
@@ -2696,6 +2630,79 @@ namespace Android.View
             return IExecuteWithSignature<bool>("isTracking", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#getAction()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetAction()
+        {
+            return IExecuteWithSignature<int>("getAction", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#getFlags()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetFlags()
+        {
+            return IExecuteWithSignature<int>("getFlags", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#getKeyCode()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetKeyCode()
+        {
+            return IExecuteWithSignature<int>("getKeyCode", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#getMetaState()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMetaState()
+        {
+            return IExecuteWithSignature<int>("getMetaState", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#getModifiers()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetModifiers()
+        {
+            return IExecuteWithSignature<int>("getModifiers", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#getRepeatCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetRepeatCount()
+        {
+            return IExecuteWithSignature<int>("getRepeatCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#getScanCode()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetScanCode()
+        {
+            return IExecuteWithSignature<int>("getScanCode", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#getCharacters()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        [global::System.Obsolete()]
+        public Java.Lang.String GetCharacters()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getCharacters", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#getDownTime()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetDownTime()
+        {
+            return IExecuteWithSignature<long>("getDownTime", "()J");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#setSource(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -2709,6 +2716,14 @@ namespace Android.View
         public void StartTracking()
         {
             IExecuteWithSignature("startTracking", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#getUnicodeChar()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetUnicodeChar()
+        {
+            return IExecuteWithSignature<int>("getUnicodeChar", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/KeyEvent.html#getUnicodeChar(int)"/>

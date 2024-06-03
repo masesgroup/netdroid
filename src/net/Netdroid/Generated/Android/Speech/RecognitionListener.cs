@@ -68,18 +68,18 @@ namespace Android.Speech
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("onBeginningOfSpeech", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnBeginningOfSpeechEventHandler));
-            AddEventHandler("onBufferReceived", new System.EventHandler<CLRListenerEventArgs<CLREventData<byte[]>>>(OnBufferReceivedEventHandler));
-            AddEventHandler("onEndOfSpeech", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnEndOfSpeechEventHandler));
-            AddEventHandler("onError", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnErrorEventHandler));
-            AddEventHandler("onEvent", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnEventEventHandler));
-            AddEventHandler("onPartialResults", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Os.Bundle>>>(OnPartialResultsEventHandler));
-            AddEventHandler("onReadyForSpeech", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Os.Bundle>>>(OnReadyForSpeechEventHandler));
-            AddEventHandler("onResults", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Os.Bundle>>>(OnResultsEventHandler));
-            AddEventHandler("onRmsChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<float>>>(OnRmsChangedEventHandler));
-            AddEventHandler("onEndOfSegmentedSession", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnEndOfSegmentedSessionEventHandler));
-            AddEventHandler("onLanguageDetection", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Os.Bundle>>>(OnLanguageDetectionEventHandler));
-            AddEventHandler("onSegmentResults", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Os.Bundle>>>(OnSegmentResultsEventHandler));
+            AddEventHandler("onBeginningOfSpeech", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnBeginningOfSpeechEventHandler));
+            AddEventHandler("onBufferReceived", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<byte[]>>>(OnBufferReceivedEventHandler));
+            AddEventHandler("onEndOfSpeech", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnEndOfSpeechEventHandler));
+            AddEventHandler("onError", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnErrorEventHandler));
+            AddEventHandler("onEvent", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnEventEventHandler));
+            AddEventHandler("onPartialResults", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Os.Bundle>>>(OnPartialResultsEventHandler));
+            AddEventHandler("onReadyForSpeech", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Os.Bundle>>>(OnReadyForSpeechEventHandler));
+            AddEventHandler("onResults", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Os.Bundle>>>(OnResultsEventHandler));
+            AddEventHandler("onRmsChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<float>>>(OnRmsChangedEventHandler));
+            AddEventHandler("onEndOfSegmentedSession", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnEndOfSegmentedSessionEventHandler));
+            AddEventHandler("onLanguageDetection", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Os.Bundle>>>(OnLanguageDetectionEventHandler));
+            AddEventHandler("onSegmentResults", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Os.Bundle>>>(OnSegmentResultsEventHandler));
 
         }
 
@@ -87,7 +87,7 @@ namespace Android.Speech
         /// Handler for <see href="https://developer.android.com/reference/android/speech/RecognitionListener.html#onBeginningOfSpeech()"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnBeginningOfSpeech"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action OnOnBeginningOfSpeech { get; set; } = null;
+        public global::System.Action OnOnBeginningOfSpeech { get; set; } = null;
 
         void OnBeginningOfSpeechEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
@@ -107,7 +107,7 @@ namespace Android.Speech
         /// Handler for <see href="https://developer.android.com/reference/android/speech/RecognitionListener.html#onBufferReceived(byte[])"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnBufferReceived"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<byte[]> OnOnBufferReceived { get; set; } = null;
+        public global::System.Action<byte[]> OnOnBufferReceived { get; set; } = null;
 
         void OnBufferReceivedEventHandler(object sender, CLRListenerEventArgs<CLREventData<byte[]>> data)
         {
@@ -128,7 +128,7 @@ namespace Android.Speech
         /// Handler for <see href="https://developer.android.com/reference/android/speech/RecognitionListener.html#onEndOfSpeech()"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnEndOfSpeech"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action OnOnEndOfSpeech { get; set; } = null;
+        public global::System.Action OnOnEndOfSpeech { get; set; } = null;
 
         void OnEndOfSpeechEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
@@ -148,7 +148,7 @@ namespace Android.Speech
         /// Handler for <see href="https://developer.android.com/reference/android/speech/RecognitionListener.html#onError(int)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnError"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<int> OnOnError { get; set; } = null;
+        public global::System.Action<int> OnOnError { get; set; } = null;
 
         void OnErrorEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
         {
@@ -169,7 +169,7 @@ namespace Android.Speech
         /// Handler for <see href="https://developer.android.com/reference/android/speech/RecognitionListener.html#onEvent(int,android.os.Bundle)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnEvent"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<int, Android.Os.Bundle> OnOnEvent { get; set; } = null;
+        public global::System.Action<int, Android.Os.Bundle> OnOnEvent { get; set; } = null;
 
         void OnEventEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
         {
@@ -191,7 +191,7 @@ namespace Android.Speech
         /// Handler for <see href="https://developer.android.com/reference/android/speech/RecognitionListener.html#onPartialResults(android.os.Bundle)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnPartialResults"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Android.Os.Bundle> OnOnPartialResults { get; set; } = null;
+        public global::System.Action<Android.Os.Bundle> OnOnPartialResults { get; set; } = null;
 
         void OnPartialResultsEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Os.Bundle>> data)
         {
@@ -212,7 +212,7 @@ namespace Android.Speech
         /// Handler for <see href="https://developer.android.com/reference/android/speech/RecognitionListener.html#onReadyForSpeech(android.os.Bundle)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnReadyForSpeech"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Android.Os.Bundle> OnOnReadyForSpeech { get; set; } = null;
+        public global::System.Action<Android.Os.Bundle> OnOnReadyForSpeech { get; set; } = null;
 
         void OnReadyForSpeechEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Os.Bundle>> data)
         {
@@ -233,7 +233,7 @@ namespace Android.Speech
         /// Handler for <see href="https://developer.android.com/reference/android/speech/RecognitionListener.html#onResults(android.os.Bundle)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnResults"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Android.Os.Bundle> OnOnResults { get; set; } = null;
+        public global::System.Action<Android.Os.Bundle> OnOnResults { get; set; } = null;
 
         void OnResultsEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Os.Bundle>> data)
         {
@@ -254,7 +254,7 @@ namespace Android.Speech
         /// Handler for <see href="https://developer.android.com/reference/android/speech/RecognitionListener.html#onRmsChanged(float)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnRmsChanged"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<float> OnOnRmsChanged { get; set; } = null;
+        public global::System.Action<float> OnOnRmsChanged { get; set; } = null;
 
         void OnRmsChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<float>> data)
         {
@@ -283,7 +283,7 @@ namespace Android.Speech
         /// Handler for <see href="https://developer.android.com/reference/android/speech/RecognitionListener.html#onEndOfSegmentedSession()"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnEndOfSegmentedSession"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action OnOnEndOfSegmentedSession { get; set; } = null;
+        public global::System.Action OnOnEndOfSegmentedSession { get; set; } = null;
 
         void OnEndOfSegmentedSessionEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
@@ -313,7 +313,7 @@ namespace Android.Speech
         /// Handler for <see href="https://developer.android.com/reference/android/speech/RecognitionListener.html#onLanguageDetection(android.os.Bundle)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnLanguageDetection"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Android.Os.Bundle> OnOnLanguageDetection { get; set; } = null;
+        public global::System.Action<Android.Os.Bundle> OnOnLanguageDetection { get; set; } = null;
 
         void OnLanguageDetectionEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Os.Bundle>> data)
         {
@@ -344,7 +344,7 @@ namespace Android.Speech
         /// Handler for <see href="https://developer.android.com/reference/android/speech/RecognitionListener.html#onSegmentResults(android.os.Bundle)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnSegmentResults"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Android.Os.Bundle> OnOnSegmentResults { get; set; } = null;
+        public global::System.Action<Android.Os.Bundle> OnOnSegmentResults { get; set; } = null;
 
         void OnSegmentResultsEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Os.Bundle>> data)
         {

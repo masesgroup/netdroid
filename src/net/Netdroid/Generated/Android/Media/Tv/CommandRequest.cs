@@ -77,32 +77,36 @@ namespace Android.Media.Tv
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/CommandRequest.html#getArguments()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/tv/CommandRequest.html#getArguments()"/>
         /// </summary>
-        public Java.Lang.String Arguments
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetArguments()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getArguments", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getArguments", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/CommandRequest.html#getArgumentType()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/tv/CommandRequest.html#getArgumentType()"/>
         /// </summary>
-        public Java.Lang.String ArgumentType
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetArgumentType()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getArgumentType", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getArgumentType", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/CommandRequest.html#getName()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/tv/CommandRequest.html#getName()"/>
         /// </summary>
-        public Java.Lang.String Name
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetName()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/CommandRequest.html#getNamespace()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/tv/CommandRequest.html#getNamespace()"/>
         /// </summary>
-        public Java.Lang.String Namespace
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetNamespace()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getNamespace", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getNamespace", "()Ljava/lang/String;");
         }
 
         #endregion

@@ -27,7 +27,7 @@ namespace Java.Beans
 {
     #region IPropertyChangeListener
     /// <summary>
-    /// .NET interface for org.mases.netdroid.generated.java.beans.PropertyChangeListener implementing <see href="https://developer.android.com/reference/java.desktop/java/beans/PropertyChangeListener.html"/>
+    /// .NET interface for org.mases.netdroid.generated.java.beans.PropertyChangeListener implementing <see href="https://developer.android.com/reference/java/beans/PropertyChangeListener.html"/>
     /// </summary>
     public partial interface IPropertyChangeListener
     {
@@ -68,15 +68,15 @@ namespace Java.Beans
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("propertyChange", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Beans.PropertyChangeEvent>>>(PropertyChangeEventHandler));
+            AddEventHandler("propertyChange", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Beans.PropertyChangeEvent>>>(PropertyChangeEventHandler));
 
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.desktop/java/beans/PropertyChangeListener.html#propertyChange(java.beans.PropertyChangeEvent)"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/beans/PropertyChangeListener.html#propertyChange(java.beans.PropertyChangeEvent)"/>
         /// </summary>
         /// <remarks>If <see cref="OnPropertyChange"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Beans.PropertyChangeEvent> OnPropertyChange { get; set; } = null;
+        public global::System.Action<Java.Beans.PropertyChangeEvent> OnPropertyChange { get; set; } = null;
 
         void PropertyChangeEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Beans.PropertyChangeEvent>> data)
         {
@@ -85,7 +85,7 @@ namespace Java.Beans
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.desktop/java/beans/PropertyChangeListener.html#propertyChange(java.beans.PropertyChangeEvent)"/>
+        /// <see href="https://developer.android.com/reference/java/beans/PropertyChangeListener.html#propertyChange(java.beans.PropertyChangeEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Beans.PropertyChangeEvent"/></param>
         public virtual void PropertyChange(Java.Beans.PropertyChangeEvent arg0)
@@ -124,7 +124,7 @@ namespace Java.Beans
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.desktop/java/beans/PropertyChangeListener.html#propertyChange(java.beans.PropertyChangeEvent)"/>
+        /// <see href="https://developer.android.com/reference/java/beans/PropertyChangeListener.html#propertyChange(java.beans.PropertyChangeEvent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Beans.PropertyChangeEvent"/></param>
         public override void PropertyChange(Java.Beans.PropertyChangeEvent arg0)

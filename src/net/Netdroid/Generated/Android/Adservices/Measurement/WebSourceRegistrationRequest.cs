@@ -52,46 +52,44 @@ namespace Android.Adservices.Measurement
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/measurement/WebSourceRegistrationRequest.html#getAppDestination()"/> 
+        /// <see href="https://developer.android.com/reference/android/adservices/measurement/WebSourceRegistrationRequest.html#getAppDestination()"/>
         /// </summary>
-        public Android.Net.Uri AppDestination
+        /// <returns><see cref="Android.Net.Uri"/></returns>
+        public Android.Net.Uri GetAppDestination()
         {
-            get { return IExecuteWithSignature<Android.Net.Uri>("getAppDestination", "()Landroid/net/Uri;"); }
+            return IExecuteWithSignature<Android.Net.Uri>("getAppDestination", "()Landroid/net/Uri;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/measurement/WebSourceRegistrationRequest.html#getInputEvent()"/> 
+        /// <see href="https://developer.android.com/reference/android/adservices/measurement/WebSourceRegistrationRequest.html#getTopOriginUri()"/>
         /// </summary>
-        public Android.View.InputEvent InputEvent
+        /// <returns><see cref="Android.Net.Uri"/></returns>
+        public Android.Net.Uri GetTopOriginUri()
         {
-            get { return IExecuteWithSignature<Android.View.InputEvent>("getInputEvent", "()Landroid/view/InputEvent;"); }
+            return IExecuteWithSignature<Android.Net.Uri>("getTopOriginUri", "()Landroid/net/Uri;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/measurement/WebSourceRegistrationRequest.html#getSourceParams()"/> 
+        /// <see href="https://developer.android.com/reference/android/adservices/measurement/WebSourceRegistrationRequest.html#getVerifiedDestination()"/>
         /// </summary>
-        public Java.Util.List<Android.Adservices.Measurement.WebSourceParams> SourceParams
+        /// <returns><see cref="Android.Net.Uri"/></returns>
+        public Android.Net.Uri GetVerifiedDestination()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Adservices.Measurement.WebSourceParams>>("getSourceParams", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Android.Net.Uri>("getVerifiedDestination", "()Landroid/net/Uri;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/measurement/WebSourceRegistrationRequest.html#getTopOriginUri()"/> 
+        /// <see href="https://developer.android.com/reference/android/adservices/measurement/WebSourceRegistrationRequest.html#getWebDestination()"/>
         /// </summary>
-        public Android.Net.Uri TopOriginUri
+        /// <returns><see cref="Android.Net.Uri"/></returns>
+        public Android.Net.Uri GetWebDestination()
         {
-            get { return IExecuteWithSignature<Android.Net.Uri>("getTopOriginUri", "()Landroid/net/Uri;"); }
+            return IExecuteWithSignature<Android.Net.Uri>("getWebDestination", "()Landroid/net/Uri;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/measurement/WebSourceRegistrationRequest.html#getVerifiedDestination()"/> 
+        /// <see href="https://developer.android.com/reference/android/adservices/measurement/WebSourceRegistrationRequest.html#getInputEvent()"/>
         /// </summary>
-        public Android.Net.Uri VerifiedDestination
+        /// <returns><see cref="Android.View.InputEvent"/></returns>
+        public Android.View.InputEvent GetInputEvent()
         {
-            get { return IExecuteWithSignature<Android.Net.Uri>("getVerifiedDestination", "()Landroid/net/Uri;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/measurement/WebSourceRegistrationRequest.html#getWebDestination()"/> 
-        /// </summary>
-        public Android.Net.Uri WebDestination
-        {
-            get { return IExecuteWithSignature<Android.Net.Uri>("getWebDestination", "()Landroid/net/Uri;"); }
+            return IExecuteWithSignature<Android.View.InputEvent>("getInputEvent", "()Landroid/view/InputEvent;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/measurement/WebSourceRegistrationRequest.html#describeContents()"/>
@@ -100,6 +98,14 @@ namespace Android.Adservices.Measurement
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/adservices/measurement/WebSourceRegistrationRequest.html#getSourceParams()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Adservices.Measurement.WebSourceParams> GetSourceParams()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Adservices.Measurement.WebSourceParams>>("getSourceParams", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/measurement/WebSourceRegistrationRequest.html#writeToParcel(android.os.Parcel,int)"/>

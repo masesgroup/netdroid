@@ -61,18 +61,12 @@ namespace Android.Service.Assist.Classification
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/assist/classification/FieldClassification.html#getAutofillId()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/assist/classification/FieldClassification.html#getAutofillId()"/>
         /// </summary>
-        public Android.View.Autofill.AutofillId AutofillId
+        /// <returns><see cref="Android.View.Autofill.AutofillId"/></returns>
+        public Android.View.Autofill.AutofillId GetAutofillId()
         {
-            get { return IExecuteWithSignature<Android.View.Autofill.AutofillId>("getAutofillId", "()Landroid/view/autofill/AutofillId;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/assist/classification/FieldClassification.html#getHints()"/> 
-        /// </summary>
-        public Java.Util.Set<Java.Lang.String> Hints
-        {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getHints", "()Ljava/util/Set;"); }
+            return IExecuteWithSignature<Android.View.Autofill.AutofillId>("getAutofillId", "()Landroid/view/autofill/AutofillId;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/assist/classification/FieldClassification.html#describeContents()"/>
@@ -81,6 +75,14 @@ namespace Android.Service.Assist.Classification
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/assist/classification/FieldClassification.html#getHints()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Lang.String> GetHints()
+        {
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getHints", "()Ljava/util/Set;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/assist/classification/FieldClassification.html#writeToParcel(android.os.Parcel,int)"/>

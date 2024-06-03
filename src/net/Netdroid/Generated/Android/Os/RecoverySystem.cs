@@ -114,7 +114,7 @@ namespace Android.Os
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onProgress", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnProgressEventHandler));
+                AddEventHandler("onProgress", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnProgressEventHandler));
 
             }
 
@@ -122,7 +122,7 @@ namespace Android.Os
             /// Handler for <see href="https://developer.android.com/reference/android/os/RecoverySystem.ProgressListener.html#onProgress(int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnProgress"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<int> OnOnProgress { get; set; } = null;
+            public global::System.Action<int> OnOnProgress { get; set; } = null;
 
             void OnProgressEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
             {

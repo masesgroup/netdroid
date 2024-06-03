@@ -232,32 +232,20 @@ namespace Android.App.Slice
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/slice/Slice.html#getHints()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/slice/Slice.html#getSpec()"/>
         /// </summary>
-        public Java.Util.List<Java.Lang.String> Hints
+        /// <returns><see cref="Android.App.Slice.SliceSpec"/></returns>
+        public Android.App.Slice.SliceSpec GetSpec()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getHints", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Android.App.Slice.SliceSpec>("getSpec", "()Landroid/app/slice/SliceSpec;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/slice/Slice.html#getItems()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/slice/Slice.html#getUri()"/>
         /// </summary>
-        public Java.Util.List<Android.App.Slice.SliceItem> Items
+        /// <returns><see cref="Android.Net.Uri"/></returns>
+        public Android.Net.Uri GetUri()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.App.Slice.SliceItem>>("getItems", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/slice/Slice.html#getSpec()"/> 
-        /// </summary>
-        public Android.App.Slice.SliceSpec Spec
-        {
-            get { return IExecuteWithSignature<Android.App.Slice.SliceSpec>("getSpec", "()Landroid/app/slice/SliceSpec;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/slice/Slice.html#getUri()"/> 
-        /// </summary>
-        public Android.Net.Uri Uri
-        {
-            get { return IExecuteWithSignature<Android.Net.Uri>("getUri", "()Landroid/net/Uri;"); }
+            return IExecuteWithSignature<Android.Net.Uri>("getUri", "()Landroid/net/Uri;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/slice/Slice.html#isCallerNeeded()"/>
@@ -274,6 +262,22 @@ namespace Android.App.Slice
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/slice/Slice.html#getItems()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.App.Slice.SliceItem> GetItems()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.App.Slice.SliceItem>>("getItems", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/slice/Slice.html#getHints()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Lang.String> GetHints()
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getHints", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/slice/Slice.html#writeToParcel(android.os.Parcel,int)"/>

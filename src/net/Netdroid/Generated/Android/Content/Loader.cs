@@ -33,7 +33,7 @@ namespace Android.Content
         /// <see href="https://developer.android.com/reference/android/content/Loader.html#%3Cinit%3E(android.content.Context)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Loader(Android.Content.Context arg0)
             : base(arg0)
         {
@@ -55,26 +55,19 @@ namespace Android.Content
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/Loader.html#getContext()"/> 
+        /// <see href="https://developer.android.com/reference/android/content/Loader.html#getContext()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Content.Context Context
+        /// <returns><see cref="Android.Content.Context"/></returns>
+        [global::System.Obsolete()]
+        public Android.Content.Context GetContext()
         {
-            get { return IExecuteWithSignature<Android.Content.Context>("getContext", "()Landroid/content/Context;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/Loader.html#getId()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public int Id
-        {
-            get { return IExecuteWithSignature<int>("getId", "()I"); }
+            return IExecuteWithSignature<Android.Content.Context>("getContext", "()Landroid/content/Context;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Loader.html#cancelLoad()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool CancelLoad()
         {
             return IExecuteWithSignature<bool>("cancelLoad", "()Z");
@@ -83,7 +76,7 @@ namespace Android.Content
         /// <see href="https://developer.android.com/reference/android/content/Loader.html#isAbandoned()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsAbandoned()
         {
             return IExecuteWithSignature<bool>("isAbandoned", "()Z");
@@ -92,7 +85,7 @@ namespace Android.Content
         /// <see href="https://developer.android.com/reference/android/content/Loader.html#isReset()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsReset()
         {
             return IExecuteWithSignature<bool>("isReset", "()Z");
@@ -101,7 +94,7 @@ namespace Android.Content
         /// <see href="https://developer.android.com/reference/android/content/Loader.html#isStarted()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsStarted()
         {
             return IExecuteWithSignature<bool>("isStarted", "()Z");
@@ -110,7 +103,7 @@ namespace Android.Content
         /// <see href="https://developer.android.com/reference/android/content/Loader.html#takeContentChanged()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool TakeContentChanged()
         {
             return IExecuteWithSignature<bool>("takeContentChanged", "()Z");
@@ -118,17 +111,26 @@ namespace Android.Content
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Loader.html#startLoading()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void StartLoading()
         {
             IExecuteWithSignature("startLoading", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Loader.html#getId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetId()
+        {
+            return IExecuteWithSignature<int>("getId", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Loader.html#dataToString(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Lang.String DataToString(object arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("dataToString", "(Ljava/lang/Object;)Ljava/lang/String;", arg0);
@@ -136,7 +138,7 @@ namespace Android.Content
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Loader.html#abandon()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Abandon()
         {
             IExecuteWithSignature("abandon", "()V");
@@ -144,7 +146,7 @@ namespace Android.Content
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Loader.html#commitContentChanged()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void CommitContentChanged()
         {
             IExecuteWithSignature("commitContentChanged", "()V");
@@ -152,7 +154,7 @@ namespace Android.Content
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Loader.html#deliverCancellation()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void DeliverCancellation()
         {
             IExecuteWithSignature("deliverCancellation", "()V");
@@ -161,7 +163,7 @@ namespace Android.Content
         /// <see href="https://developer.android.com/reference/android/content/Loader.html#deliverResult(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void DeliverResult(object arg0)
         {
             IExecuteWithSignature("deliverResult", "(Ljava/lang/Object;)V", arg0);
@@ -173,7 +175,7 @@ namespace Android.Content
         /// <param name="arg1"><see cref="Java.Io.FileDescriptor"/></param>
         /// <param name="arg2"><see cref="Java.Io.PrintWriter"/></param>
         /// <param name="arg3"><see cref="Java.Lang.String"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Dump(Java.Lang.String arg0, Java.Io.FileDescriptor arg1, Java.Io.PrintWriter arg2, Java.Lang.String[] arg3)
         {
             IExecute("dump", arg0, arg1, arg2, arg3);
@@ -181,7 +183,7 @@ namespace Android.Content
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Loader.html#forceLoad()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ForceLoad()
         {
             IExecuteWithSignature("forceLoad", "()V");
@@ -189,7 +191,7 @@ namespace Android.Content
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Loader.html#onContentChanged()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnContentChanged()
         {
             IExecuteWithSignature("onContentChanged", "()V");
@@ -199,7 +201,7 @@ namespace Android.Content
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Android.Content.Loader.OnLoadCompleteListener"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void RegisterListener(int arg0, Android.Content.Loader.OnLoadCompleteListener arg1)
         {
             IExecute("registerListener", arg0, arg1);
@@ -208,7 +210,7 @@ namespace Android.Content
         /// <see href="https://developer.android.com/reference/android/content/Loader.html#registerOnLoadCanceledListener(android.content.Loader.OnLoadCanceledListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Loader.OnLoadCanceledListener"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void RegisterOnLoadCanceledListener(Android.Content.Loader.OnLoadCanceledListener arg0)
         {
             IExecuteWithSignature("registerOnLoadCanceledListener", "(Landroid/content/Loader$OnLoadCanceledListener;)V", arg0);
@@ -216,7 +218,7 @@ namespace Android.Content
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Loader.html#reset()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Reset()
         {
             IExecuteWithSignature("reset", "()V");
@@ -224,7 +226,7 @@ namespace Android.Content
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Loader.html#rollbackContentChanged()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void RollbackContentChanged()
         {
             IExecuteWithSignature("rollbackContentChanged", "()V");
@@ -232,7 +234,7 @@ namespace Android.Content
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Loader.html#stopLoading()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void StopLoading()
         {
             IExecuteWithSignature("stopLoading", "()V");
@@ -241,7 +243,7 @@ namespace Android.Content
         /// <see href="https://developer.android.com/reference/android/content/Loader.html#unregisterListener(android.content.Loader.OnLoadCompleteListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Loader.OnLoadCompleteListener"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void UnregisterListener(Android.Content.Loader.OnLoadCompleteListener arg0)
         {
             IExecuteWithSignature("unregisterListener", "(Landroid/content/Loader$OnLoadCompleteListener;)V", arg0);
@@ -250,7 +252,7 @@ namespace Android.Content
         /// <see href="https://developer.android.com/reference/android/content/Loader.html#unregisterOnLoadCanceledListener(android.content.Loader.OnLoadCanceledListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Loader.OnLoadCanceledListener"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void UnregisterOnLoadCanceledListener(Android.Content.Loader.OnLoadCanceledListener arg0)
         {
             IExecuteWithSignature("unregisterOnLoadCanceledListener", "(Landroid/content/Loader$OnLoadCanceledListener;)V", arg0);
@@ -267,7 +269,7 @@ namespace Android.Content
             /// <see href="https://developer.android.com/reference/android/content/Loader.ForceLoadContentObserver.html#%3Cinit%3E(android.content.Loader)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Content.Loader"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public ForceLoadContentObserver(Android.Content.Loader arg0)
                 : base(arg0)
             {
@@ -324,7 +326,7 @@ namespace Android.Content
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onLoadCanceled", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Content.Loader>>>(OnLoadCanceledEventHandler));
+                AddEventHandler("onLoadCanceled", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Content.Loader>>>(OnLoadCanceledEventHandler));
 
             }
 
@@ -332,7 +334,7 @@ namespace Android.Content
             /// Handler for <see href="https://developer.android.com/reference/android/content/Loader.OnLoadCanceledListener.html#onLoadCanceled(android.content.Loader)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnLoadCanceled"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Content.Loader> OnOnLoadCanceled { get; set; } = null;
+            public global::System.Action<Android.Content.Loader> OnOnLoadCanceled { get; set; } = null;
 
             void OnLoadCanceledEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Content.Loader>> data)
             {
@@ -344,7 +346,7 @@ namespace Android.Content
             /// <see href="https://developer.android.com/reference/android/content/Loader.OnLoadCanceledListener.html#onLoadCanceled(android.content.Loader)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Content.Loader"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public virtual void OnLoadCanceled(Android.Content.Loader arg0)
             {
                 
@@ -384,7 +386,7 @@ namespace Android.Content
             /// <see href="https://developer.android.com/reference/android/content/Loader.OnLoadCanceledListener.html#onLoadCanceled(android.content.Loader)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Content.Loader"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public override void OnLoadCanceled(Android.Content.Loader arg0)
             {
                 IExecuteWithSignature("onLoadCanceled", "(Landroid/content/Loader;)V", arg0);
@@ -425,7 +427,7 @@ namespace Android.Content
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onLoadCanceled", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Content.Loader<D>>>>(OnLoadCanceledEventHandler));
+                AddEventHandler("onLoadCanceled", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Content.Loader<D>>>>(OnLoadCanceledEventHandler));
 
             }
 
@@ -433,7 +435,7 @@ namespace Android.Content
             /// Handler for <see href="https://developer.android.com/reference/android/content/Loader.OnLoadCanceledListener.html#onLoadCanceled(android.content.Loader)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnLoadCanceled"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Content.Loader<D>> OnOnLoadCanceled { get; set; } = null;
+            public global::System.Action<Android.Content.Loader<D>> OnOnLoadCanceled { get; set; } = null;
 
             void OnLoadCanceledEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Content.Loader<D>>> data)
             {
@@ -445,7 +447,7 @@ namespace Android.Content
             /// <see href="https://developer.android.com/reference/android/content/Loader.OnLoadCanceledListener.html#onLoadCanceled(android.content.Loader)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Content.Loader"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public virtual void OnLoadCanceled(Android.Content.Loader<D> arg0)
             {
                 
@@ -485,7 +487,7 @@ namespace Android.Content
             /// <see href="https://developer.android.com/reference/android/content/Loader.OnLoadCanceledListener.html#onLoadCanceled(android.content.Loader)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Content.Loader"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public override void OnLoadCanceled(Android.Content.Loader<D> arg0)
             {
                 IExecuteWithSignature("onLoadCanceled", "(Landroid/content/Loader;)V", arg0);
@@ -526,7 +528,7 @@ namespace Android.Content
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onLoadComplete", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Content.Loader>>>(OnLoadCompleteEventHandler));
+                AddEventHandler("onLoadComplete", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Content.Loader>>>(OnLoadCompleteEventHandler));
 
             }
 
@@ -534,7 +536,7 @@ namespace Android.Content
             /// Handler for <see href="https://developer.android.com/reference/android/content/Loader.OnLoadCompleteListener.html#onLoadComplete(android.content.Loader,java.lang.Object)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnLoadComplete"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Content.Loader, object> OnOnLoadComplete { get; set; } = null;
+            public global::System.Action<Android.Content.Loader, object> OnOnLoadComplete { get; set; } = null;
 
             void OnLoadCompleteEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Content.Loader>> data)
             {
@@ -547,7 +549,7 @@ namespace Android.Content
             /// </summary>
             /// <param name="arg0"><see cref="Android.Content.Loader"/></param>
             /// <param name="arg1"><see cref="object"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public virtual void OnLoadComplete(Android.Content.Loader arg0, object arg1)
             {
                 
@@ -588,7 +590,7 @@ namespace Android.Content
             /// </summary>
             /// <param name="arg0"><see cref="Android.Content.Loader"/></param>
             /// <param name="arg1"><see cref="object"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public override void OnLoadComplete(Android.Content.Loader arg0, object arg1)
             {
                 IExecute("onLoadComplete", arg0, arg1);
@@ -629,7 +631,7 @@ namespace Android.Content
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onLoadComplete", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Content.Loader<D>>>>(OnLoadCompleteEventHandler));
+                AddEventHandler("onLoadComplete", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Content.Loader<D>>>>(OnLoadCompleteEventHandler));
 
             }
 
@@ -637,7 +639,7 @@ namespace Android.Content
             /// Handler for <see href="https://developer.android.com/reference/android/content/Loader.OnLoadCompleteListener.html#onLoadComplete(android.content.Loader,java.lang.Object)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnLoadComplete"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Content.Loader<D>, D> OnOnLoadComplete { get; set; } = null;
+            public global::System.Action<Android.Content.Loader<D>, D> OnOnLoadComplete { get; set; } = null;
 
             void OnLoadCompleteEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Content.Loader<D>>> data)
             {
@@ -650,7 +652,7 @@ namespace Android.Content
             /// </summary>
             /// <param name="arg0"><see cref="Android.Content.Loader"/></param>
             /// <param name="arg1"><typeparamref name="D"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public virtual void OnLoadComplete(Android.Content.Loader<D> arg0, D arg1)
             {
                 
@@ -691,7 +693,7 @@ namespace Android.Content
             /// </summary>
             /// <param name="arg0"><see cref="Android.Content.Loader"/></param>
             /// <param name="arg1"><typeparamref name="D"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public override void OnLoadComplete(Android.Content.Loader<D> arg0, D arg1)
             {
                 IExecute("onLoadComplete", arg0, arg1);
@@ -722,7 +724,7 @@ namespace Android.Content
         /// <see href="https://developer.android.com/reference/android/content/Loader.html#%3Cinit%3E(android.content.Context)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Loader(Android.Content.Context arg0)
             : base(arg0)
         {
@@ -748,26 +750,19 @@ namespace Android.Content
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/Loader.html#getContext()"/> 
+        /// <see href="https://developer.android.com/reference/android/content/Loader.html#getContext()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Content.Context Context
+        /// <returns><see cref="Android.Content.Context"/></returns>
+        [global::System.Obsolete()]
+        public Android.Content.Context GetContext()
         {
-            get { return IExecuteWithSignature<Android.Content.Context>("getContext", "()Landroid/content/Context;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/Loader.html#getId()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public int Id
-        {
-            get { return IExecuteWithSignature<int>("getId", "()I"); }
+            return IExecuteWithSignature<Android.Content.Context>("getContext", "()Landroid/content/Context;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Loader.html#cancelLoad()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool CancelLoad()
         {
             return IExecuteWithSignature<bool>("cancelLoad", "()Z");
@@ -776,7 +771,7 @@ namespace Android.Content
         /// <see href="https://developer.android.com/reference/android/content/Loader.html#isAbandoned()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsAbandoned()
         {
             return IExecuteWithSignature<bool>("isAbandoned", "()Z");
@@ -785,7 +780,7 @@ namespace Android.Content
         /// <see href="https://developer.android.com/reference/android/content/Loader.html#isReset()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsReset()
         {
             return IExecuteWithSignature<bool>("isReset", "()Z");
@@ -794,7 +789,7 @@ namespace Android.Content
         /// <see href="https://developer.android.com/reference/android/content/Loader.html#isStarted()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsStarted()
         {
             return IExecuteWithSignature<bool>("isStarted", "()Z");
@@ -803,7 +798,7 @@ namespace Android.Content
         /// <see href="https://developer.android.com/reference/android/content/Loader.html#takeContentChanged()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool TakeContentChanged()
         {
             return IExecuteWithSignature<bool>("takeContentChanged", "()Z");
@@ -811,17 +806,26 @@ namespace Android.Content
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Loader.html#startLoading()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void StartLoading()
         {
             IExecuteWithSignature("startLoading", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/Loader.html#getId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetId()
+        {
+            return IExecuteWithSignature<int>("getId", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Loader.html#dataToString(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="D"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Lang.String DataToString(D arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("dataToString", "(Ljava/lang/Object;)Ljava/lang/String;", arg0);
@@ -829,7 +833,7 @@ namespace Android.Content
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Loader.html#abandon()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Abandon()
         {
             IExecuteWithSignature("abandon", "()V");
@@ -837,7 +841,7 @@ namespace Android.Content
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Loader.html#commitContentChanged()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void CommitContentChanged()
         {
             IExecuteWithSignature("commitContentChanged", "()V");
@@ -845,7 +849,7 @@ namespace Android.Content
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Loader.html#deliverCancellation()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void DeliverCancellation()
         {
             IExecuteWithSignature("deliverCancellation", "()V");
@@ -854,7 +858,7 @@ namespace Android.Content
         /// <see href="https://developer.android.com/reference/android/content/Loader.html#deliverResult(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="D"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void DeliverResult(D arg0)
         {
             IExecuteWithSignature("deliverResult", "(Ljava/lang/Object;)V", arg0);
@@ -866,7 +870,7 @@ namespace Android.Content
         /// <param name="arg1"><see cref="Java.Io.FileDescriptor"/></param>
         /// <param name="arg2"><see cref="Java.Io.PrintWriter"/></param>
         /// <param name="arg3"><see cref="Java.Lang.String"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Dump(Java.Lang.String arg0, Java.Io.FileDescriptor arg1, Java.Io.PrintWriter arg2, Java.Lang.String[] arg3)
         {
             IExecute("dump", arg0, arg1, arg2, arg3);
@@ -874,7 +878,7 @@ namespace Android.Content
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Loader.html#forceLoad()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ForceLoad()
         {
             IExecuteWithSignature("forceLoad", "()V");
@@ -882,7 +886,7 @@ namespace Android.Content
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Loader.html#onContentChanged()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnContentChanged()
         {
             IExecuteWithSignature("onContentChanged", "()V");
@@ -892,7 +896,7 @@ namespace Android.Content
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Android.Content.Loader.OnLoadCompleteListener"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void RegisterListener(int arg0, Android.Content.Loader.OnLoadCompleteListener<D> arg1)
         {
             IExecute("registerListener", arg0, arg1);
@@ -901,7 +905,7 @@ namespace Android.Content
         /// <see href="https://developer.android.com/reference/android/content/Loader.html#registerOnLoadCanceledListener(android.content.Loader.OnLoadCanceledListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Loader.OnLoadCanceledListener"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void RegisterOnLoadCanceledListener(Android.Content.Loader.OnLoadCanceledListener<D> arg0)
         {
             IExecuteWithSignature("registerOnLoadCanceledListener", "(Landroid/content/Loader$OnLoadCanceledListener;)V", arg0);
@@ -909,7 +913,7 @@ namespace Android.Content
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Loader.html#reset()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Reset()
         {
             IExecuteWithSignature("reset", "()V");
@@ -917,7 +921,7 @@ namespace Android.Content
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Loader.html#rollbackContentChanged()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void RollbackContentChanged()
         {
             IExecuteWithSignature("rollbackContentChanged", "()V");
@@ -925,7 +929,7 @@ namespace Android.Content
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/Loader.html#stopLoading()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void StopLoading()
         {
             IExecuteWithSignature("stopLoading", "()V");
@@ -934,7 +938,7 @@ namespace Android.Content
         /// <see href="https://developer.android.com/reference/android/content/Loader.html#unregisterListener(android.content.Loader.OnLoadCompleteListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Loader.OnLoadCompleteListener"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void UnregisterListener(Android.Content.Loader.OnLoadCompleteListener<D> arg0)
         {
             IExecuteWithSignature("unregisterListener", "(Landroid/content/Loader$OnLoadCompleteListener;)V", arg0);
@@ -943,7 +947,7 @@ namespace Android.Content
         /// <see href="https://developer.android.com/reference/android/content/Loader.html#unregisterOnLoadCanceledListener(android.content.Loader.OnLoadCanceledListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Loader.OnLoadCanceledListener"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void UnregisterOnLoadCanceledListener(Android.Content.Loader.OnLoadCanceledListener<D> arg0)
         {
             IExecuteWithSignature("unregisterOnLoadCanceledListener", "(Landroid/content/Loader$OnLoadCanceledListener;)V", arg0);

@@ -38,19 +38,19 @@ namespace Java.Io
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/FileDescriptor.html#err"/>
+        /// <see href="https://developer.android.com/reference/java/io/FileDescriptor.html#err"/>
         /// </summary>
         public static Java.Io.FileDescriptor err { get { if (!_errReady) { _errContent = SGetField<Java.Io.FileDescriptor>(LocalBridgeClazz, "err"); _errReady = true; } return _errContent; } }
         private static Java.Io.FileDescriptor _errContent = default;
         private static bool _errReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/FileDescriptor.html#in"/>
+        /// <see href="https://developer.android.com/reference/java/io/FileDescriptor.html#in"/>
         /// </summary>
         public static Java.Io.FileDescriptor inField { get { if (!_inFieldReady) { _inFieldContent = SGetField<Java.Io.FileDescriptor>(LocalBridgeClazz, "in"); _inFieldReady = true; } return _inFieldContent; } }
         private static Java.Io.FileDescriptor _inFieldContent = default;
         private static bool _inFieldReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/FileDescriptor.html#out"/>
+        /// <see href="https://developer.android.com/reference/java/io/FileDescriptor.html#out"/>
         /// </summary>
         public static Java.Io.FileDescriptor outField { get { if (!_outFieldReady) { _outFieldContent = SGetField<Java.Io.FileDescriptor>(LocalBridgeClazz, "out"); _outFieldReady = true; } return _outFieldContent; } }
         private static Java.Io.FileDescriptor _outFieldContent = default;
@@ -64,7 +64,7 @@ namespace Java.Io
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/FileDescriptor.html#valid()"/>
+        /// <see href="https://developer.android.com/reference/java/io/FileDescriptor.html#valid()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool Valid()
@@ -72,12 +72,12 @@ namespace Java.Io
             return IExecuteWithSignature<bool>("valid", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/FileDescriptor.html#sync()"/>
+        /// <see href="https://developer.android.com/reference/java/io/FileDescriptor.html#sync()"/>
         /// </summary>
         /// <exception cref="Java.Io.SyncFailedException"/>
         public void Sync()
         {
-            IExecuteWithSignature("sync", "()V");
+            IExecute("sync");
         }
 
         #endregion

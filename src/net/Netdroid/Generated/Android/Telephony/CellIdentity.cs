@@ -52,26 +52,28 @@ namespace Android.Telephony
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentity.html#getOperatorAlphaLong()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence OperatorAlphaLong
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getOperatorAlphaLong", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentity.html#getOperatorAlphaShort()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence OperatorAlphaShort
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getOperatorAlphaShort", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/CellIdentity.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentity.html#getOperatorAlphaLong()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetOperatorAlphaLong()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getOperatorAlphaLong", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentity.html#getOperatorAlphaShort()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetOperatorAlphaShort()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getOperatorAlphaShort", "()Ljava/lang/CharSequence;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/CellIdentity.html#writeToParcel(android.os.Parcel,int)"/>

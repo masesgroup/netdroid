@@ -42,7 +42,7 @@ namespace Java.Time.Zone
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/zone/ZoneOffsetTransitionRule.html#of(java.time.Month,int,java.time.DayOfWeek,java.time.LocalTime,boolean,java.time.zone.ZoneOffsetTransitionRule.TimeDefinition,java.time.ZoneOffset,java.time.ZoneOffset,java.time.ZoneOffset)"/>
+        /// <see href="https://developer.android.com/reference/java/time/zone/ZoneOffsetTransitionRule.html#of(java.time.Month,int,java.time.DayOfWeek,java.time.LocalTime,boolean,java.time.zone.ZoneOffsetTransitionRule.TimeDefinition,java.time.ZoneOffset,java.time.ZoneOffset,java.time.ZoneOffset)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Month"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -63,63 +63,7 @@ namespace Java.Time.Zone
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/zone/ZoneOffsetTransitionRule.html#getDayOfMonthIndicator()"/> 
-        /// </summary>
-        public int DayOfMonthIndicator
-        {
-            get { return IExecuteWithSignature<int>("getDayOfMonthIndicator", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/zone/ZoneOffsetTransitionRule.html#getDayOfWeek()"/> 
-        /// </summary>
-        public Java.Time.DayOfWeek DayOfWeek
-        {
-            get { return IExecuteWithSignature<Java.Time.DayOfWeek>("getDayOfWeek", "()Ljava/time/DayOfWeek;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/zone/ZoneOffsetTransitionRule.html#getTimeDefinition()"/> 
-        /// </summary>
-        public Java.Time.Zone.ZoneOffsetTransitionRule.TimeDefinition GetTimeDefinition
-        {
-            get { return IExecuteWithSignature<Java.Time.Zone.ZoneOffsetTransitionRule.TimeDefinition>("getTimeDefinition", "()Ljava/time/zone/ZoneOffsetTransitionRule$TimeDefinition;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/zone/ZoneOffsetTransitionRule.html#getLocalTime()"/> 
-        /// </summary>
-        public Java.Time.LocalTime LocalTime
-        {
-            get { return IExecuteWithSignature<Java.Time.LocalTime>("getLocalTime", "()Ljava/time/LocalTime;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/zone/ZoneOffsetTransitionRule.html#getMonth()"/> 
-        /// </summary>
-        public Java.Time.Month Month
-        {
-            get { return IExecuteWithSignature<Java.Time.Month>("getMonth", "()Ljava/time/Month;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/zone/ZoneOffsetTransitionRule.html#getOffsetAfter()"/> 
-        /// </summary>
-        public Java.Time.ZoneOffset OffsetAfter
-        {
-            get { return IExecuteWithSignature<Java.Time.ZoneOffset>("getOffsetAfter", "()Ljava/time/ZoneOffset;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/zone/ZoneOffsetTransitionRule.html#getOffsetBefore()"/> 
-        /// </summary>
-        public Java.Time.ZoneOffset OffsetBefore
-        {
-            get { return IExecuteWithSignature<Java.Time.ZoneOffset>("getOffsetBefore", "()Ljava/time/ZoneOffset;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/zone/ZoneOffsetTransitionRule.html#getStandardOffset()"/> 
-        /// </summary>
-        public Java.Time.ZoneOffset StandardOffset
-        {
-            get { return IExecuteWithSignature<Java.Time.ZoneOffset>("getStandardOffset", "()Ljava/time/ZoneOffset;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/zone/ZoneOffsetTransitionRule.html#isMidnightEndOfDay()"/>
+        /// <see href="https://developer.android.com/reference/java/time/zone/ZoneOffsetTransitionRule.html#isMidnightEndOfDay()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsMidnightEndOfDay()
@@ -127,13 +71,77 @@ namespace Java.Time.Zone
             return IExecuteWithSignature<bool>("isMidnightEndOfDay", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/zone/ZoneOffsetTransitionRule.html#createTransition(int)"/>
+        /// <see href="https://developer.android.com/reference/java/time/zone/ZoneOffsetTransitionRule.html#getDayOfMonthIndicator()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDayOfMonthIndicator()
+        {
+            return IExecuteWithSignature<int>("getDayOfMonthIndicator", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/zone/ZoneOffsetTransitionRule.html#getDayOfWeek()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Time.DayOfWeek"/></returns>
+        public Java.Time.DayOfWeek GetDayOfWeek()
+        {
+            return IExecuteWithSignature<Java.Time.DayOfWeek>("getDayOfWeek", "()Ljava/time/DayOfWeek;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/zone/ZoneOffsetTransitionRule.html#getLocalTime()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Time.LocalTime"/></returns>
+        public Java.Time.LocalTime GetLocalTime()
+        {
+            return IExecuteWithSignature<Java.Time.LocalTime>("getLocalTime", "()Ljava/time/LocalTime;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/zone/ZoneOffsetTransitionRule.html#getMonth()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Time.Month"/></returns>
+        public Java.Time.Month GetMonth()
+        {
+            return IExecuteWithSignature<Java.Time.Month>("getMonth", "()Ljava/time/Month;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/zone/ZoneOffsetTransitionRule.html#createTransition(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Time.Zone.ZoneOffsetTransition"/></returns>
         public Java.Time.Zone.ZoneOffsetTransition CreateTransition(int arg0)
         {
             return IExecuteWithSignature<Java.Time.Zone.ZoneOffsetTransition>("createTransition", "(I)Ljava/time/zone/ZoneOffsetTransition;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/zone/ZoneOffsetTransitionRule.html#getTimeDefinition()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Time.Zone.ZoneOffsetTransitionRule.TimeDefinition"/></returns>
+        public Java.Time.Zone.ZoneOffsetTransitionRule.TimeDefinition GetTimeDefinition()
+        {
+            return IExecuteWithSignature<Java.Time.Zone.ZoneOffsetTransitionRule.TimeDefinition>("getTimeDefinition", "()Ljava/time/zone/ZoneOffsetTransitionRule$TimeDefinition;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/zone/ZoneOffsetTransitionRule.html#getOffsetAfter()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Time.ZoneOffset"/></returns>
+        public Java.Time.ZoneOffset GetOffsetAfter()
+        {
+            return IExecuteWithSignature<Java.Time.ZoneOffset>("getOffsetAfter", "()Ljava/time/ZoneOffset;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/zone/ZoneOffsetTransitionRule.html#getOffsetBefore()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Time.ZoneOffset"/></returns>
+        public Java.Time.ZoneOffset GetOffsetBefore()
+        {
+            return IExecuteWithSignature<Java.Time.ZoneOffset>("getOffsetBefore", "()Ljava/time/ZoneOffset;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/zone/ZoneOffsetTransitionRule.html#getStandardOffset()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Time.ZoneOffset"/></returns>
+        public Java.Time.ZoneOffset GetStandardOffset()
+        {
+            return IExecuteWithSignature<Java.Time.ZoneOffset>("getStandardOffset", "()Ljava/time/ZoneOffset;");
         }
 
         #endregion
@@ -152,19 +160,19 @@ namespace Java.Time.Zone
 
             #region Fields
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/time/zone/ZoneOffsetTransitionRule.TimeDefinition.html#STANDARD"/>
+            /// <see href="https://developer.android.com/reference/java/time/zone/ZoneOffsetTransitionRule.TimeDefinition.html#STANDARD"/>
             /// </summary>
             public static Java.Time.Zone.ZoneOffsetTransitionRule.TimeDefinition STANDARD { get { if (!_STANDARDReady) { _STANDARDContent = SGetField<Java.Time.Zone.ZoneOffsetTransitionRule.TimeDefinition>(LocalBridgeClazz, "STANDARD"); _STANDARDReady = true; } return _STANDARDContent; } }
             private static Java.Time.Zone.ZoneOffsetTransitionRule.TimeDefinition _STANDARDContent = default;
             private static bool _STANDARDReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/time/zone/ZoneOffsetTransitionRule.TimeDefinition.html#UTC"/>
+            /// <see href="https://developer.android.com/reference/java/time/zone/ZoneOffsetTransitionRule.TimeDefinition.html#UTC"/>
             /// </summary>
             public static Java.Time.Zone.ZoneOffsetTransitionRule.TimeDefinition UTC { get { if (!_UTCReady) { _UTCContent = SGetField<Java.Time.Zone.ZoneOffsetTransitionRule.TimeDefinition>(LocalBridgeClazz, "UTC"); _UTCReady = true; } return _UTCContent; } }
             private static Java.Time.Zone.ZoneOffsetTransitionRule.TimeDefinition _UTCContent = default;
             private static bool _UTCReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/time/zone/ZoneOffsetTransitionRule.TimeDefinition.html#WALL"/>
+            /// <see href="https://developer.android.com/reference/java/time/zone/ZoneOffsetTransitionRule.TimeDefinition.html#WALL"/>
             /// </summary>
             public static Java.Time.Zone.ZoneOffsetTransitionRule.TimeDefinition WALL { get { if (!_WALLReady) { _WALLContent = SGetField<Java.Time.Zone.ZoneOffsetTransitionRule.TimeDefinition>(LocalBridgeClazz, "WALL"); _WALLReady = true; } return _WALLContent; } }
             private static Java.Time.Zone.ZoneOffsetTransitionRule.TimeDefinition _WALLContent = default;
@@ -174,7 +182,7 @@ namespace Java.Time.Zone
 
             #region Static methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/time/zone/ZoneOffsetTransitionRule.TimeDefinition.html#valueOf(java.lang.String)"/>
+            /// <see href="https://developer.android.com/reference/java/time/zone/ZoneOffsetTransitionRule.TimeDefinition.html#valueOf(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="Java.Time.Zone.ZoneOffsetTransitionRule.TimeDefinition"/></returns>
@@ -183,7 +191,7 @@ namespace Java.Time.Zone
                 return SExecuteWithSignature<Java.Time.Zone.ZoneOffsetTransitionRule.TimeDefinition>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/time/zone/ZoneOffsetTransitionRule$TimeDefinition;", arg0);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/time/zone/ZoneOffsetTransitionRule.TimeDefinition.html#values()"/>
+            /// <see href="https://developer.android.com/reference/java/time/zone/ZoneOffsetTransitionRule.TimeDefinition.html#values()"/>
             /// </summary>
             /// <returns><see cref="Java.Time.Zone.ZoneOffsetTransitionRule.TimeDefinition"/></returns>
             public static Java.Time.Zone.ZoneOffsetTransitionRule.TimeDefinition[] Values()
@@ -195,7 +203,7 @@ namespace Java.Time.Zone
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/time/zone/ZoneOffsetTransitionRule.TimeDefinition.html#createDateTime(java.time.LocalDateTime,java.time.ZoneOffset,java.time.ZoneOffset)"/>
+            /// <see href="https://developer.android.com/reference/java/time/zone/ZoneOffsetTransitionRule.TimeDefinition.html#createDateTime(java.time.LocalDateTime,java.time.ZoneOffset,java.time.ZoneOffset)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Time.LocalDateTime"/></param>
             /// <param name="arg1"><see cref="Java.Time.ZoneOffset"/></param>

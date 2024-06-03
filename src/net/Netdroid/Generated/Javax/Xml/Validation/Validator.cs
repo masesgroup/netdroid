@@ -46,28 +46,46 @@ namespace Javax.Xml.Validation
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/validation/Validator.html#getErrorHandler()"/> <see href="https://developer.android.com/reference/java.xml/javax/xml/validation/Validator.html#setErrorHandler(org.xml.sax.ErrorHandler)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/validation/Validator.html#getResourceResolver()"/>
         /// </summary>
-        public Org.Xml.Sax.ErrorHandler ErrorHandler
+        /// <returns><see cref="Org.W3c.Dom.Ls.LSResourceResolver"/></returns>
+        public Org.W3c.Dom.Ls.LSResourceResolver GetResourceResolver()
         {
-            get { return IExecuteWithSignature<Org.Xml.Sax.ErrorHandler>("getErrorHandler", "()Lorg/xml/sax/ErrorHandler;"); } set { IExecuteWithSignature("setErrorHandler", "(Lorg/xml/sax/ErrorHandler;)V", value); }
+            return IExecuteWithSignature<Org.W3c.Dom.Ls.LSResourceResolver>("getResourceResolver", "()Lorg/w3c/dom/ls/LSResourceResolver;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/validation/Validator.html#getResourceResolver()"/> <see href="https://developer.android.com/reference/java.xml/javax/xml/validation/Validator.html#setResourceResolver(org.w3c.dom.ls.LSResourceResolver)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/validation/Validator.html#getErrorHandler()"/>
         /// </summary>
-        public Org.W3c.Dom.Ls.LSResourceResolver ResourceResolver
+        /// <returns><see cref="Org.Xml.Sax.ErrorHandler"/></returns>
+        public Org.Xml.Sax.ErrorHandler GetErrorHandler()
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.Ls.LSResourceResolver>("getResourceResolver", "()Lorg/w3c/dom/ls/LSResourceResolver;"); } set { IExecuteWithSignature("setResourceResolver", "(Lorg/w3c/dom/ls/LSResourceResolver;)V", value); }
+            return IExecuteWithSignature<Org.Xml.Sax.ErrorHandler>("getErrorHandler", "()Lorg/xml/sax/ErrorHandler;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/validation/Validator.html#reset()"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/validation/Validator.html#reset()"/>
         /// </summary>
         public void Reset()
         {
             IExecuteWithSignature("reset", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/validation/Validator.html#validate(javax.xml.transform.Source,javax.xml.transform.Result)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/validation/Validator.html#setErrorHandler(org.xml.sax.ErrorHandler)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Org.Xml.Sax.ErrorHandler"/></param>
+        public void SetErrorHandler(Org.Xml.Sax.ErrorHandler arg0)
+        {
+            IExecuteWithSignature("setErrorHandler", "(Lorg/xml/sax/ErrorHandler;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/xml/validation/Validator.html#setResourceResolver(org.w3c.dom.ls.LSResourceResolver)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Org.W3c.Dom.Ls.LSResourceResolver"/></param>
+        public void SetResourceResolver(Org.W3c.Dom.Ls.LSResourceResolver arg0)
+        {
+            IExecuteWithSignature("setResourceResolver", "(Lorg/w3c/dom/ls/LSResourceResolver;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/xml/validation/Validator.html#validate(javax.xml.transform.Source,javax.xml.transform.Result)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Xml.Transform.Source"/></param>
         /// <param name="arg1"><see cref="Javax.Xml.Transform.Result"/></param>
@@ -78,7 +96,7 @@ namespace Javax.Xml.Validation
             IExecute("validate", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/validation/Validator.html#getFeature(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/validation/Validator.html#getFeature(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -89,7 +107,7 @@ namespace Javax.Xml.Validation
             return IExecuteWithSignature<bool>("getFeature", "(Ljava/lang/String;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/validation/Validator.html#getProperty(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/validation/Validator.html#getProperty(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="object"/></returns>
@@ -100,7 +118,7 @@ namespace Javax.Xml.Validation
             return IExecuteWithSignature("getProperty", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/validation/Validator.html#setFeature(java.lang.String,boolean)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/validation/Validator.html#setFeature(java.lang.String,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -111,7 +129,7 @@ namespace Javax.Xml.Validation
             IExecute("setFeature", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/validation/Validator.html#setProperty(java.lang.String,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/validation/Validator.html#setProperty(java.lang.String,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -122,7 +140,7 @@ namespace Javax.Xml.Validation
             IExecute("setProperty", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/validation/Validator.html#validate(javax.xml.transform.Source)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/validation/Validator.html#validate(javax.xml.transform.Source)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Xml.Transform.Source"/></param>
         /// <exception cref="Org.Xml.Sax.SAXException"/>

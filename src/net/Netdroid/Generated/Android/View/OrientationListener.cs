@@ -50,11 +50,11 @@ namespace Android.View
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("onOrientationChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnOrientationChangedEventHandler));
-            AddEventHandler("disable", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(DisableEventHandler));
-            AddEventHandler("enable", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(EnableEventHandler));
-            AddEventHandler("onAccuracyChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnAccuracyChangedEventHandler));
-            AddEventHandler("onSensorChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnSensorChangedEventHandler));
+            AddEventHandler("onOrientationChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnOrientationChangedEventHandler));
+            AddEventHandler("disable", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(DisableEventHandler));
+            AddEventHandler("enable", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(EnableEventHandler));
+            AddEventHandler("onAccuracyChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnAccuracyChangedEventHandler));
+            AddEventHandler("onSensorChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnSensorChangedEventHandler));
 
         }
 
@@ -62,7 +62,7 @@ namespace Android.View
         /// Handler for <see href="https://developer.android.com/reference/android/view/OrientationListener.html#onOrientationChanged(int)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnOrientationChanged"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<int> OnOnOrientationChanged { get; set; } = null;
+        public global::System.Action<int> OnOnOrientationChanged { get; set; } = null;
 
         void OnOrientationChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
         {
@@ -74,7 +74,7 @@ namespace Android.View
         /// <see href="https://developer.android.com/reference/android/view/OrientationListener.html#onOrientationChanged(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public virtual void OnOrientationChanged(int arg0)
         {
             
@@ -84,7 +84,7 @@ namespace Android.View
         /// Handler for <see href="https://developer.android.com/reference/android/view/OrientationListener.html#disable()"/>
         /// </summary>
         /// <remarks>If <see cref="OnDisable"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action OnDisable { get; set; } = null;
+        public global::System.Action OnDisable { get; set; } = null;
 
         void DisableEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
@@ -95,7 +95,7 @@ namespace Android.View
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/OrientationListener.html#disable()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public virtual void Disable()
         {
             
@@ -105,7 +105,7 @@ namespace Android.View
         /// Handler for <see href="https://developer.android.com/reference/android/view/OrientationListener.html#enable()"/>
         /// </summary>
         /// <remarks>If <see cref="OnEnable"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action OnEnable { get; set; } = null;
+        public global::System.Action OnEnable { get; set; } = null;
 
         void EnableEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
@@ -116,7 +116,7 @@ namespace Android.View
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/OrientationListener.html#enable()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public virtual void Enable()
         {
             
@@ -126,7 +126,7 @@ namespace Android.View
         /// Handler for <see href="https://developer.android.com/reference/android/view/OrientationListener.html#onAccuracyChanged(int,int)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnAccuracyChanged"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<int, int> OnOnAccuracyChanged { get; set; } = null;
+        public global::System.Action<int, int> OnOnAccuracyChanged { get; set; } = null;
 
         void OnAccuracyChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
         {
@@ -139,7 +139,7 @@ namespace Android.View
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public virtual void OnAccuracyChanged(int arg0, int arg1)
         {
             
@@ -149,7 +149,7 @@ namespace Android.View
         /// Handler for <see href="https://developer.android.com/reference/android/view/OrientationListener.html#onSensorChanged(int,float[])"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnSensorChanged"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<int, float[]> OnOnSensorChanged { get; set; } = null;
+        public global::System.Action<int, float[]> OnOnSensorChanged { get; set; } = null;
 
         void OnSensorChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
         {
@@ -162,7 +162,7 @@ namespace Android.View
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="float"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public virtual void OnSensorChanged(int arg0, float[] arg1)
         {
             
@@ -202,7 +202,7 @@ namespace Android.View
         /// <see href="https://developer.android.com/reference/android/view/OrientationListener.html#onOrientationChanged(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public override void OnOrientationChanged(int arg0)
         {
             IExecuteWithSignature("onOrientationChanged", "(I)V", arg0);
@@ -210,7 +210,7 @@ namespace Android.View
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/OrientationListener.html#disable()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public override void Disable()
         {
             IExecuteWithSignature("disable", "()V");
@@ -218,7 +218,7 @@ namespace Android.View
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/OrientationListener.html#enable()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public override void Enable()
         {
             IExecuteWithSignature("enable", "()V");
@@ -228,7 +228,7 @@ namespace Android.View
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public override void OnAccuracyChanged(int arg0, int arg1)
         {
             IExecute("onAccuracyChanged", arg0, arg1);
@@ -238,7 +238,7 @@ namespace Android.View
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="float"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public override void OnSensorChanged(int arg0, float[] arg1)
         {
             IExecute("onSensorChanged", arg0, arg1);

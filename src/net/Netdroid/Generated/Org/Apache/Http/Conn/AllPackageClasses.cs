@@ -30,7 +30,7 @@ namespace Org.Apache.Http.Conn
     /// <summary>
     /// <see href="https://developer.android.com/reference/org/apache/http/conn/ConnectTimeoutException.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class ConnectTimeoutException : Java.Io.InterruptedIOException
     {
         const string _bridgeClassName = "org.apache.http.conn.ConnectTimeoutException";

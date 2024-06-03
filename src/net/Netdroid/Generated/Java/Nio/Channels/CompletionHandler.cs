@@ -46,7 +46,7 @@ namespace Java.Nio.Channels
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/CompletionHandler.html#completed(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/CompletionHandler.html#completed(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -55,7 +55,7 @@ namespace Java.Nio.Channels
             IExecute("completed", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/CompletionHandler.html#failed(java.lang.Throwable,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/CompletionHandler.html#failed(java.lang.Throwable,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Throwable"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -117,7 +117,7 @@ namespace Java.Nio.Channels
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/CompletionHandler.html#completed(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/CompletionHandler.html#completed(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="V"/></param>
         /// <param name="arg1"><typeparamref name="A"/></param>
@@ -126,7 +126,7 @@ namespace Java.Nio.Channels
             IExecute("completed", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/CompletionHandler.html#failed(java.lang.Throwable,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/CompletionHandler.html#failed(java.lang.Throwable,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Throwable"/></param>
         /// <param name="arg1"><typeparamref name="A"/></param>

@@ -71,25 +71,12 @@ namespace Android.Service.Credentials
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/credentials/CallingAppInfo.html#getOrigin()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/credentials/CallingAppInfo.html#getSigningInfo()"/>
         /// </summary>
-        public Java.Lang.String Origin
+        /// <returns><see cref="Android.Content.Pm.SigningInfo"/></returns>
+        public Android.Content.Pm.SigningInfo GetSigningInfo()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getOrigin", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/credentials/CallingAppInfo.html#getPackageName()"/> 
-        /// </summary>
-        public Java.Lang.String PackageName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPackageName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/credentials/CallingAppInfo.html#getSigningInfo()"/> 
-        /// </summary>
-        public Android.Content.Pm.SigningInfo SigningInfo
-        {
-            get { return IExecuteWithSignature<Android.Content.Pm.SigningInfo>("getSigningInfo", "()Landroid/content/pm/SigningInfo;"); }
+            return IExecuteWithSignature<Android.Content.Pm.SigningInfo>("getSigningInfo", "()Landroid/content/pm/SigningInfo;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/credentials/CallingAppInfo.html#describeContents()"/>
@@ -98,6 +85,22 @@ namespace Android.Service.Credentials
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/credentials/CallingAppInfo.html#getOrigin()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetOrigin()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getOrigin", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/credentials/CallingAppInfo.html#getPackageName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPackageName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPackageName", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/credentials/CallingAppInfo.html#writeToParcel(android.os.Parcel,int)"/>

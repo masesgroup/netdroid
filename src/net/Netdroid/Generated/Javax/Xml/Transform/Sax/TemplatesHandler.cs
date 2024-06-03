@@ -64,18 +64,28 @@ namespace Javax.Xml.Transform.Sax
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/sax/TemplatesHandler.html#getSystemId()"/> <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/sax/TemplatesHandler.html#setSystemId(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/sax/TemplatesHandler.html#getSystemId()"/>
         /// </summary>
-        public Java.Lang.String SystemId
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSystemId()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSystemId", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setSystemId", "(Ljava/lang/String;)V", value); }
+            return IExecuteWithSignature<Java.Lang.String>("getSystemId", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/sax/TemplatesHandler.html#getTemplates()"/> 
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/sax/TemplatesHandler.html#getTemplates()"/>
         /// </summary>
-        public Javax.Xml.Transform.Templates Templates
+        /// <returns><see cref="Javax.Xml.Transform.Templates"/></returns>
+        public Javax.Xml.Transform.Templates GetTemplates()
         {
-            get { return IExecuteWithSignature<Javax.Xml.Transform.Templates>("getTemplates", "()Ljavax/xml/transform/Templates;"); }
+            return IExecuteWithSignature<Javax.Xml.Transform.Templates>("getTemplates", "()Ljavax/xml/transform/Templates;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/sax/TemplatesHandler.html#setSystemId(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetSystemId(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setSystemId", "(Ljava/lang/String;)V", arg0);
         }
 
         #endregion

@@ -805,7 +805,7 @@ namespace Android.Opengl
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="int"/></param>
         /// <returns><see cref="Android.Opengl.EGLSurface"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Opengl.EGLSurface EglCreatePixmapSurface(Android.Opengl.EGLDisplay arg0, Android.Opengl.EGLConfig arg1, int arg2, int[] arg3, int arg4)
         {
             return SExecute<Android.Opengl.EGLSurface>(LocalBridgeClazz, "eglCreatePixmapSurface", arg0, arg1, arg2, arg3, arg4);

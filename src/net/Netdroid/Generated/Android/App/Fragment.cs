@@ -52,7 +52,7 @@ namespace Android.App
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="Android.Os.Bundle"/></param>
         /// <returns><see cref="Android.App.Fragment"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.App.Fragment Instantiate(Android.Content.Context arg0, Java.Lang.String arg1, Android.Os.Bundle arg2)
         {
             return SExecute<Android.App.Fragment>(LocalBridgeClazz, "instantiate", arg0, arg1, arg2);
@@ -63,7 +63,7 @@ namespace Android.App
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Android.App.Fragment"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.App.Fragment Instantiate(Android.Content.Context arg0, Java.Lang.String arg1)
         {
             return SExecute<Android.App.Fragment>(LocalBridgeClazz, "instantiate", arg0, arg1);
@@ -73,226 +73,107 @@ namespace Android.App
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Fragment.html#getActivity()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Android.App.Activity Activity
-        {
-            get { return IExecuteWithSignature<Android.App.Activity>("getActivity", "()Landroid/app/Activity;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Fragment.html#getAllowEnterTransitionOverlap()"/> <see href="https://developer.android.com/reference/android/app/Fragment.html#setAllowEnterTransitionOverlap(boolean)"/>
-        /// </summary>
-        [System.Obsolete()]
-        public bool AllowEnterTransitionOverlap
-        {
-            get { return IExecuteWithSignature<bool>("getAllowEnterTransitionOverlap", "()Z"); } set { IExecuteWithSignature("setAllowEnterTransitionOverlap", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Fragment.html#getAllowReturnTransitionOverlap()"/> <see href="https://developer.android.com/reference/android/app/Fragment.html#setAllowReturnTransitionOverlap(boolean)"/>
-        /// </summary>
-        [System.Obsolete()]
-        public bool AllowReturnTransitionOverlap
-        {
-            get { return IExecuteWithSignature<bool>("getAllowReturnTransitionOverlap", "()Z"); } set { IExecuteWithSignature("setAllowReturnTransitionOverlap", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Fragment.html#getArguments()"/> <see href="https://developer.android.com/reference/android/app/Fragment.html#setArguments(android.os.Bundle)"/>
-        /// </summary>
-        [System.Obsolete()]
-        public Android.Os.Bundle Arguments
-        {
-            get { return IExecuteWithSignature<Android.Os.Bundle>("getArguments", "()Landroid/os/Bundle;"); } set { IExecuteWithSignature("setArguments", "(Landroid/os/Bundle;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Fragment.html#getChildFragmentManager()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Android.App.FragmentManager ChildFragmentManager
-        {
-            get { return IExecuteWithSignature<Android.App.FragmentManager>("getChildFragmentManager", "()Landroid/app/FragmentManager;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Fragment.html#getContext()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Android.Content.Context Context
-        {
-            get { return IExecuteWithSignature<Android.Content.Context>("getContext", "()Landroid/content/Context;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Fragment.html#getEnterTransition()"/> <see href="https://developer.android.com/reference/android/app/Fragment.html#setEnterTransition(android.transition.Transition)"/>
-        /// </summary>
-        [System.Obsolete()]
-        public Android.Transition.Transition EnterTransition
-        {
-            get { return IExecuteWithSignature<Android.Transition.Transition>("getEnterTransition", "()Landroid/transition/Transition;"); } set { IExecuteWithSignature("setEnterTransition", "(Landroid/transition/Transition;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Fragment.html#getExitTransition()"/> <see href="https://developer.android.com/reference/android/app/Fragment.html#setExitTransition(android.transition.Transition)"/>
-        /// </summary>
-        [System.Obsolete()]
-        public Android.Transition.Transition ExitTransition
-        {
-            get { return IExecuteWithSignature<Android.Transition.Transition>("getExitTransition", "()Landroid/transition/Transition;"); } set { IExecuteWithSignature("setExitTransition", "(Landroid/transition/Transition;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Fragment.html#getFragmentManager()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Android.App.FragmentManager FragmentManager
-        {
-            get { return IExecuteWithSignature<Android.App.FragmentManager>("getFragmentManager", "()Landroid/app/FragmentManager;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Fragment.html#getHost()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public object Host
-        {
-            get { return IExecuteWithSignature("getHost", "()Ljava/lang/Object;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Fragment.html#getId()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public int Id
-        {
-            get { return IExecuteWithSignature<int>("getId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Fragment.html#getLayoutInflater()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Android.View.LayoutInflater LayoutInflater
-        {
-            get { return IExecuteWithSignature<Android.View.LayoutInflater>("getLayoutInflater", "()Landroid/view/LayoutInflater;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Fragment.html#getLoaderManager()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Android.App.LoaderManager LoaderManager
-        {
-            get { return IExecuteWithSignature<Android.App.LoaderManager>("getLoaderManager", "()Landroid/app/LoaderManager;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Fragment.html#getParentFragment()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Android.App.Fragment ParentFragment
-        {
-            get { return IExecuteWithSignature<Android.App.Fragment>("getParentFragment", "()Landroid/app/Fragment;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Fragment.html#getReenterTransition()"/> <see href="https://developer.android.com/reference/android/app/Fragment.html#setReenterTransition(android.transition.Transition)"/>
-        /// </summary>
-        [System.Obsolete()]
-        public Android.Transition.Transition ReenterTransition
-        {
-            get { return IExecuteWithSignature<Android.Transition.Transition>("getReenterTransition", "()Landroid/transition/Transition;"); } set { IExecuteWithSignature("setReenterTransition", "(Landroid/transition/Transition;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Fragment.html#getResources()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Android.Content.Res.Resources Resources
-        {
-            get { return IExecuteWithSignature<Android.Content.Res.Resources>("getResources", "()Landroid/content/res/Resources;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Fragment.html#getRetainInstance()"/> <see href="https://developer.android.com/reference/android/app/Fragment.html#setRetainInstance(boolean)"/>
-        /// </summary>
-        [System.Obsolete()]
-        public bool RetainInstance
-        {
-            get { return IExecuteWithSignature<bool>("getRetainInstance", "()Z"); } set { IExecuteWithSignature("setRetainInstance", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Fragment.html#getReturnTransition()"/> <see href="https://developer.android.com/reference/android/app/Fragment.html#setReturnTransition(android.transition.Transition)"/>
-        /// </summary>
-        [System.Obsolete()]
-        public Android.Transition.Transition ReturnTransition
-        {
-            get { return IExecuteWithSignature<Android.Transition.Transition>("getReturnTransition", "()Landroid/transition/Transition;"); } set { IExecuteWithSignature("setReturnTransition", "(Landroid/transition/Transition;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Fragment.html#getSharedElementEnterTransition()"/> <see href="https://developer.android.com/reference/android/app/Fragment.html#setSharedElementEnterTransition(android.transition.Transition)"/>
-        /// </summary>
-        [System.Obsolete()]
-        public Android.Transition.Transition SharedElementEnterTransition
-        {
-            get { return IExecuteWithSignature<Android.Transition.Transition>("getSharedElementEnterTransition", "()Landroid/transition/Transition;"); } set { IExecuteWithSignature("setSharedElementEnterTransition", "(Landroid/transition/Transition;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Fragment.html#getSharedElementReturnTransition()"/> <see href="https://developer.android.com/reference/android/app/Fragment.html#setSharedElementReturnTransition(android.transition.Transition)"/>
-        /// </summary>
-        [System.Obsolete()]
-        public Android.Transition.Transition SharedElementReturnTransition
-        {
-            get { return IExecuteWithSignature<Android.Transition.Transition>("getSharedElementReturnTransition", "()Landroid/transition/Transition;"); } set { IExecuteWithSignature("setSharedElementReturnTransition", "(Landroid/transition/Transition;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Fragment.html#getTag()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Java.Lang.String Tag
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getTag", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Fragment.html#getTargetFragment()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Android.App.Fragment TargetFragment
-        {
-            get { return IExecuteWithSignature<Android.App.Fragment>("getTargetFragment", "()Landroid/app/Fragment;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Fragment.html#getTargetRequestCode()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public int TargetRequestCode
-        {
-            get { return IExecuteWithSignature<int>("getTargetRequestCode", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Fragment.html#getUserVisibleHint()"/> <see href="https://developer.android.com/reference/android/app/Fragment.html#setUserVisibleHint(boolean)"/>
-        /// </summary>
-        [System.Obsolete()]
-        public bool UserVisibleHint
-        {
-            get { return IExecuteWithSignature<bool>("getUserVisibleHint", "()Z"); } set { IExecuteWithSignature("setUserVisibleHint", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Fragment.html#getView()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Android.View.View View
-        {
-            get { return IExecuteWithSignature<Android.View.View>("getView", "()Landroid/view/View;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#onCreateAnimator(int,boolean,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see cref="Android.Animation.Animator"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Animation.Animator OnCreateAnimator(int arg0, bool arg1, int arg2)
         {
             return IExecute<Android.Animation.Animator>("onCreateAnimator", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Fragment.html#getLoaderManager()"/>
+        /// </summary>
+        /// <returns><see cref="Android.App.LoaderManager"/></returns>
+        [global::System.Obsolete()]
+        public Android.App.LoaderManager GetLoaderManager()
+        {
+            return IExecuteWithSignature<Android.App.LoaderManager>("getLoaderManager", "()Landroid/app/LoaderManager;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Fragment.html#getContext()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Content.Context"/></returns>
+        [global::System.Obsolete()]
+        public Android.Content.Context GetContext()
+        {
+            return IExecuteWithSignature<Android.Content.Context>("getContext", "()Landroid/content/Context;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Fragment.html#getEnterTransition()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Transition.Transition"/></returns>
+        [global::System.Obsolete()]
+        public Android.Transition.Transition GetEnterTransition()
+        {
+            return IExecuteWithSignature<Android.Transition.Transition>("getEnterTransition", "()Landroid/transition/Transition;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Fragment.html#getExitTransition()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Transition.Transition"/></returns>
+        [global::System.Obsolete()]
+        public Android.Transition.Transition GetExitTransition()
+        {
+            return IExecuteWithSignature<Android.Transition.Transition>("getExitTransition", "()Landroid/transition/Transition;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Fragment.html#getReenterTransition()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Transition.Transition"/></returns>
+        [global::System.Obsolete()]
+        public Android.Transition.Transition GetReenterTransition()
+        {
+            return IExecuteWithSignature<Android.Transition.Transition>("getReenterTransition", "()Landroid/transition/Transition;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Fragment.html#getReturnTransition()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Transition.Transition"/></returns>
+        [global::System.Obsolete()]
+        public Android.Transition.Transition GetReturnTransition()
+        {
+            return IExecuteWithSignature<Android.Transition.Transition>("getReturnTransition", "()Landroid/transition/Transition;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Fragment.html#getSharedElementEnterTransition()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Transition.Transition"/></returns>
+        [global::System.Obsolete()]
+        public Android.Transition.Transition GetSharedElementEnterTransition()
+        {
+            return IExecuteWithSignature<Android.Transition.Transition>("getSharedElementEnterTransition", "()Landroid/transition/Transition;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Fragment.html#getSharedElementReturnTransition()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Transition.Transition"/></returns>
+        [global::System.Obsolete()]
+        public Android.Transition.Transition GetSharedElementReturnTransition()
+        {
+            return IExecuteWithSignature<Android.Transition.Transition>("getSharedElementReturnTransition", "()Landroid/transition/Transition;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#onGetLayoutInflater(android.os.Bundle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Os.Bundle"/></param>
         /// <returns><see cref="Android.View.LayoutInflater"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.View.LayoutInflater OnGetLayoutInflater(Android.Os.Bundle arg0)
         {
             return IExecuteWithSignature<Android.View.LayoutInflater>("onGetLayoutInflater", "(Landroid/os/Bundle;)Landroid/view/LayoutInflater;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Fragment.html#getView()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.View"/></returns>
+        [global::System.Obsolete()]
+        public Android.View.View GetView()
+        {
+            return IExecuteWithSignature<Android.View.View>("getView", "()Landroid/view/View;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle)"/>
@@ -301,17 +182,44 @@ namespace Android.App
         /// <param name="arg1"><see cref="Android.View.ViewGroup"/></param>
         /// <param name="arg2"><see cref="Android.Os.Bundle"/></param>
         /// <returns><see cref="Android.View.View"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.View.View OnCreateView(Android.View.LayoutInflater arg0, Android.View.ViewGroup arg1, Android.Os.Bundle arg2)
         {
             return IExecute<Android.View.View>("onCreateView", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Fragment.html#getAllowEnterTransitionOverlap()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        [global::System.Obsolete()]
+        public bool GetAllowEnterTransitionOverlap()
+        {
+            return IExecuteWithSignature<bool>("getAllowEnterTransitionOverlap", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Fragment.html#getAllowReturnTransitionOverlap()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        [global::System.Obsolete()]
+        public bool GetAllowReturnTransitionOverlap()
+        {
+            return IExecuteWithSignature<bool>("getAllowReturnTransitionOverlap", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Fragment.html#getUserVisibleHint()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        [global::System.Obsolete()]
+        public bool GetUserVisibleHint()
+        {
+            return IExecuteWithSignature<bool>("getUserVisibleHint", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#onContextItemSelected(android.view.MenuItem)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.MenuItem"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool OnContextItemSelected(Android.View.MenuItem arg0)
         {
             return IExecuteWithSignature<bool>("onContextItemSelected", "(Landroid/view/MenuItem;)Z", arg0);
@@ -321,7 +229,7 @@ namespace Android.App
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.MenuItem"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool OnOptionsItemSelected(Android.View.MenuItem arg0)
         {
             return IExecuteWithSignature<bool>("onOptionsItemSelected", "(Landroid/view/MenuItem;)Z", arg0);
@@ -331,16 +239,97 @@ namespace Android.App
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool ShouldShowRequestPermissionRationale(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<bool>("shouldShowRequestPermissionRationale", "(Ljava/lang/String;)Z", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Fragment.html#getActivity()"/>
+        /// </summary>
+        /// <returns><see cref="Android.App.Activity"/></returns>
+        [global::System.Obsolete()]
+        public Android.App.Activity GetActivity()
+        {
+            return IExecuteWithSignature<Android.App.Activity>("getActivity", "()Landroid/app/Activity;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Fragment.html#getParentFragment()"/>
+        /// </summary>
+        /// <returns><see cref="Android.App.Fragment"/></returns>
+        [global::System.Obsolete()]
+        public Android.App.Fragment GetParentFragment()
+        {
+            return IExecuteWithSignature<Android.App.Fragment>("getParentFragment", "()Landroid/app/Fragment;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Fragment.html#getTargetFragment()"/>
+        /// </summary>
+        /// <returns><see cref="Android.App.Fragment"/></returns>
+        [global::System.Obsolete()]
+        public Android.App.Fragment GetTargetFragment()
+        {
+            return IExecuteWithSignature<Android.App.Fragment>("getTargetFragment", "()Landroid/app/Fragment;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Fragment.html#getChildFragmentManager()"/>
+        /// </summary>
+        /// <returns><see cref="Android.App.FragmentManager"/></returns>
+        [global::System.Obsolete()]
+        public Android.App.FragmentManager GetChildFragmentManager()
+        {
+            return IExecuteWithSignature<Android.App.FragmentManager>("getChildFragmentManager", "()Landroid/app/FragmentManager;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Fragment.html#getFragmentManager()"/>
+        /// </summary>
+        /// <returns><see cref="Android.App.FragmentManager"/></returns>
+        [global::System.Obsolete()]
+        public Android.App.FragmentManager GetFragmentManager()
+        {
+            return IExecuteWithSignature<Android.App.FragmentManager>("getFragmentManager", "()Landroid/app/FragmentManager;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Fragment.html#getResources()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Content.Res.Resources"/></returns>
+        [global::System.Obsolete()]
+        public Android.Content.Res.Resources GetResources()
+        {
+            return IExecuteWithSignature<Android.Content.Res.Resources>("getResources", "()Landroid/content/res/Resources;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Fragment.html#getArguments()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Os.Bundle"/></returns>
+        [global::System.Obsolete()]
+        public Android.Os.Bundle GetArguments()
+        {
+            return IExecuteWithSignature<Android.Os.Bundle>("getArguments", "()Landroid/os/Bundle;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Fragment.html#getLayoutInflater()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.LayoutInflater"/></returns>
+        [global::System.Obsolete()]
+        public Android.View.LayoutInflater GetLayoutInflater()
+        {
+            return IExecuteWithSignature<Android.View.LayoutInflater>("getLayoutInflater", "()Landroid/view/LayoutInflater;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Fragment.html#getRetainInstance()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        [global::System.Obsolete()]
+        public bool GetRetainInstance()
+        {
+            return IExecuteWithSignature<bool>("getRetainInstance", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#isAdded()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsAdded()
         {
             return IExecuteWithSignature<bool>("isAdded", "()Z");
@@ -349,7 +338,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#isDetached()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsDetached()
         {
             return IExecuteWithSignature<bool>("isDetached", "()Z");
@@ -358,7 +347,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#isHidden()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsHidden()
         {
             return IExecuteWithSignature<bool>("isHidden", "()Z");
@@ -367,7 +356,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#isInLayout()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsInLayout()
         {
             return IExecuteWithSignature<bool>("isInLayout", "()Z");
@@ -376,7 +365,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#isRemoving()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsRemoving()
         {
             return IExecuteWithSignature<bool>("isRemoving", "()Z");
@@ -385,7 +374,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#isResumed()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsResumed()
         {
             return IExecuteWithSignature<bool>("isResumed", "()Z");
@@ -394,7 +383,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#isStateSaved()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsStateSaved()
         {
             return IExecuteWithSignature<bool>("isStateSaved", "()Z");
@@ -403,20 +392,47 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#isVisible()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsVisible()
         {
             return IExecuteWithSignature<bool>("isVisible", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Fragment.html#getId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetId()
+        {
+            return IExecuteWithSignature<int>("getId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Fragment.html#getTargetRequestCode()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetTargetRequestCode()
+        {
+            return IExecuteWithSignature<int>("getTargetRequestCode", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#getText(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Lang.CharSequence"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Lang.CharSequence GetText(int arg0)
         {
             return IExecuteWithSignature<Java.Lang.CharSequence>("getText", "(I)Ljava/lang/CharSequence;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Fragment.html#getHost()"/>
+        /// </summary>
+        /// <returns><see cref="object"/></returns>
+        [global::System.Obsolete()]
+        public object GetHost()
+        {
+            return IExecuteWithSignature("getHost", "()Ljava/lang/Object;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#getString(int,java.lang.Object[])"/>
@@ -424,7 +440,7 @@ namespace Android.App
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="object"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Lang.String GetString(int arg0, params object[] arg1)
         {
             if (arg1.Length == 0) return IExecute<Java.Lang.String>("getString", arg0); else return IExecute<Java.Lang.String>("getString", arg0, arg1);
@@ -434,17 +450,26 @@ namespace Android.App
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Lang.String GetString(int arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getString", "(I)Ljava/lang/String;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Fragment.html#getTag()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        [global::System.Obsolete()]
+        public Java.Lang.String GetTag()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getTag", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#requestPermissions(java.lang.String[],int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void RequestPermissions(Java.Lang.String[] arg0, int arg1)
         {
             IExecute("requestPermissions", arg0, arg1);
@@ -456,7 +481,7 @@ namespace Android.App
         /// <param name="arg1"><see cref="Java.Io.FileDescriptor"/></param>
         /// <param name="arg2"><see cref="Java.Io.PrintWriter"/></param>
         /// <param name="arg3"><see cref="Java.Lang.String"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Dump(Java.Lang.String arg0, Java.Io.FileDescriptor arg1, Java.Io.PrintWriter arg2, Java.Lang.String[] arg3)
         {
             IExecute("dump", arg0, arg1, arg2, arg3);
@@ -465,7 +490,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#onActivityCreated(android.os.Bundle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Os.Bundle"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnActivityCreated(Android.Os.Bundle arg0)
         {
             IExecuteWithSignature("onActivityCreated", "(Landroid/os/Bundle;)V", arg0);
@@ -476,7 +501,7 @@ namespace Android.App
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Android.Content.Intent"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnActivityResult(int arg0, int arg1, Android.Content.Intent arg2)
         {
             IExecute("onActivityResult", arg0, arg1, arg2);
@@ -485,7 +510,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#onAttach(android.app.Activity)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.App.Activity"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnAttach(Android.App.Activity arg0)
         {
             IExecuteWithSignature("onAttach", "(Landroid/app/Activity;)V", arg0);
@@ -494,7 +519,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#onAttach(android.content.Context)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnAttach(Android.Content.Context arg0)
         {
             IExecuteWithSignature("onAttach", "(Landroid/content/Context;)V", arg0);
@@ -503,7 +528,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#onAttachFragment(android.app.Fragment)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.App.Fragment"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnAttachFragment(Android.App.Fragment arg0)
         {
             IExecuteWithSignature("onAttachFragment", "(Landroid/app/Fragment;)V", arg0);
@@ -512,7 +537,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#onConfigurationChanged(android.content.res.Configuration)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Res.Configuration"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnConfigurationChanged(Android.Content.Res.Configuration arg0)
         {
             IExecuteWithSignature("onConfigurationChanged", "(Landroid/content/res/Configuration;)V", arg0);
@@ -521,7 +546,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#onCreate(android.os.Bundle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Os.Bundle"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnCreate(Android.Os.Bundle arg0)
         {
             IExecuteWithSignature("onCreate", "(Landroid/os/Bundle;)V", arg0);
@@ -532,7 +557,7 @@ namespace Android.App
         /// <param name="arg0"><see cref="Android.View.ContextMenu"/></param>
         /// <param name="arg1"><see cref="Android.View.View"/></param>
         /// <param name="arg2"><see cref="Android.View.ContextMenu.ContextMenuInfo"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnCreateContextMenu(Android.View.ContextMenu arg0, Android.View.View arg1, Android.View.ContextMenu.ContextMenuInfo arg2)
         {
             IExecute("onCreateContextMenu", arg0, arg1, arg2);
@@ -542,7 +567,7 @@ namespace Android.App
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.Menu"/></param>
         /// <param name="arg1"><see cref="Android.View.MenuInflater"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnCreateOptionsMenu(Android.View.Menu arg0, Android.View.MenuInflater arg1)
         {
             IExecute("onCreateOptionsMenu", arg0, arg1);
@@ -550,7 +575,7 @@ namespace Android.App
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#onDestroy()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnDestroy()
         {
             IExecuteWithSignature("onDestroy", "()V");
@@ -558,7 +583,7 @@ namespace Android.App
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#onDestroyOptionsMenu()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnDestroyOptionsMenu()
         {
             IExecuteWithSignature("onDestroyOptionsMenu", "()V");
@@ -566,7 +591,7 @@ namespace Android.App
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#onDestroyView()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnDestroyView()
         {
             IExecuteWithSignature("onDestroyView", "()V");
@@ -574,7 +599,7 @@ namespace Android.App
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#onDetach()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnDetach()
         {
             IExecuteWithSignature("onDetach", "()V");
@@ -583,7 +608,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#onHiddenChanged(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnHiddenChanged(bool arg0)
         {
             IExecuteWithSignature("onHiddenChanged", "(Z)V", arg0);
@@ -594,7 +619,7 @@ namespace Android.App
         /// <param name="arg0"><see cref="Android.App.Activity"/></param>
         /// <param name="arg1"><see cref="Android.Util.AttributeSet"/></param>
         /// <param name="arg2"><see cref="Android.Os.Bundle"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnInflate(Android.App.Activity arg0, Android.Util.AttributeSet arg1, Android.Os.Bundle arg2)
         {
             IExecute("onInflate", arg0, arg1, arg2);
@@ -605,7 +630,7 @@ namespace Android.App
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
         /// <param name="arg1"><see cref="Android.Util.AttributeSet"/></param>
         /// <param name="arg2"><see cref="Android.Os.Bundle"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnInflate(Android.Content.Context arg0, Android.Util.AttributeSet arg1, Android.Os.Bundle arg2)
         {
             IExecute("onInflate", arg0, arg1, arg2);
@@ -615,7 +640,7 @@ namespace Android.App
         /// </summary>
         /// <param name="arg0"><see cref="Android.Util.AttributeSet"/></param>
         /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnInflate(Android.Util.AttributeSet arg0, Android.Os.Bundle arg1)
         {
             IExecute("onInflate", arg0, arg1);
@@ -623,7 +648,7 @@ namespace Android.App
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#onLowMemory()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnLowMemory()
         {
             IExecuteWithSignature("onLowMemory", "()V");
@@ -633,7 +658,7 @@ namespace Android.App
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <param name="arg1"><see cref="Android.Content.Res.Configuration"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnMultiWindowModeChanged(bool arg0, Android.Content.Res.Configuration arg1)
         {
             IExecute("onMultiWindowModeChanged", arg0, arg1);
@@ -642,7 +667,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#onMultiWindowModeChanged(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnMultiWindowModeChanged(bool arg0)
         {
             IExecuteWithSignature("onMultiWindowModeChanged", "(Z)V", arg0);
@@ -651,7 +676,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#onOptionsMenuClosed(android.view.Menu)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.Menu"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnOptionsMenuClosed(Android.View.Menu arg0)
         {
             IExecuteWithSignature("onOptionsMenuClosed", "(Landroid/view/Menu;)V", arg0);
@@ -659,7 +684,7 @@ namespace Android.App
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#onPause()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnPause()
         {
             IExecuteWithSignature("onPause", "()V");
@@ -669,7 +694,7 @@ namespace Android.App
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <param name="arg1"><see cref="Android.Content.Res.Configuration"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnPictureInPictureModeChanged(bool arg0, Android.Content.Res.Configuration arg1)
         {
             IExecute("onPictureInPictureModeChanged", arg0, arg1);
@@ -678,7 +703,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#onPictureInPictureModeChanged(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnPictureInPictureModeChanged(bool arg0)
         {
             IExecuteWithSignature("onPictureInPictureModeChanged", "(Z)V", arg0);
@@ -687,7 +712,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#onPrepareOptionsMenu(android.view.Menu)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.Menu"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnPrepareOptionsMenu(Android.View.Menu arg0)
         {
             IExecuteWithSignature("onPrepareOptionsMenu", "(Landroid/view/Menu;)V", arg0);
@@ -698,7 +723,7 @@ namespace Android.App
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnRequestPermissionsResult(int arg0, Java.Lang.String[] arg1, int[] arg2)
         {
             IExecute("onRequestPermissionsResult", arg0, arg1, arg2);
@@ -706,7 +731,7 @@ namespace Android.App
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#onResume()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnResume()
         {
             IExecuteWithSignature("onResume", "()V");
@@ -715,7 +740,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#onSaveInstanceState(android.os.Bundle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Os.Bundle"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnSaveInstanceState(Android.Os.Bundle arg0)
         {
             IExecuteWithSignature("onSaveInstanceState", "(Landroid/os/Bundle;)V", arg0);
@@ -723,7 +748,7 @@ namespace Android.App
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#onStart()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnStart()
         {
             IExecuteWithSignature("onStart", "()V");
@@ -731,7 +756,7 @@ namespace Android.App
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#onStop()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnStop()
         {
             IExecuteWithSignature("onStop", "()V");
@@ -740,7 +765,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#onTrimMemory(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnTrimMemory(int arg0)
         {
             IExecuteWithSignature("onTrimMemory", "(I)V", arg0);
@@ -750,7 +775,7 @@ namespace Android.App
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.View"/></param>
         /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnViewCreated(Android.View.View arg0, Android.Os.Bundle arg1)
         {
             IExecute("onViewCreated", arg0, arg1);
@@ -759,7 +784,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#onViewStateRestored(android.os.Bundle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Os.Bundle"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnViewStateRestored(Android.Os.Bundle arg0)
         {
             IExecuteWithSignature("onViewStateRestored", "(Landroid/os/Bundle;)V", arg0);
@@ -767,7 +792,7 @@ namespace Android.App
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#postponeEnterTransition()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void PostponeEnterTransition()
         {
             IExecuteWithSignature("postponeEnterTransition", "()V");
@@ -776,34 +801,79 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#registerForContextMenu(android.view.View)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.View"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void RegisterForContextMenu(Android.View.View arg0)
         {
             IExecuteWithSignature("registerForContextMenu", "(Landroid/view/View;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Fragment.html#setAllowEnterTransitionOverlap(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        [global::System.Obsolete()]
+        public void SetAllowEnterTransitionOverlap(bool arg0)
+        {
+            IExecuteWithSignature("setAllowEnterTransitionOverlap", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Fragment.html#setAllowReturnTransitionOverlap(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        [global::System.Obsolete()]
+        public void SetAllowReturnTransitionOverlap(bool arg0)
+        {
+            IExecuteWithSignature("setAllowReturnTransitionOverlap", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Fragment.html#setArguments(android.os.Bundle)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Os.Bundle"/></param>
+        [global::System.Obsolete()]
+        public void SetArguments(Android.Os.Bundle arg0)
+        {
+            IExecuteWithSignature("setArguments", "(Landroid/os/Bundle;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#setEnterSharedElementCallback(android.app.SharedElementCallback)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.App.SharedElementCallback"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetEnterSharedElementCallback(Android.App.SharedElementCallback arg0)
         {
             IExecuteWithSignature("setEnterSharedElementCallback", "(Landroid/app/SharedElementCallback;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Fragment.html#setEnterTransition(android.transition.Transition)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Transition.Transition"/></param>
+        [global::System.Obsolete()]
+        public void SetEnterTransition(Android.Transition.Transition arg0)
+        {
+            IExecuteWithSignature("setEnterTransition", "(Landroid/transition/Transition;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#setExitSharedElementCallback(android.app.SharedElementCallback)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.App.SharedElementCallback"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetExitSharedElementCallback(Android.App.SharedElementCallback arg0)
         {
             IExecuteWithSignature("setExitSharedElementCallback", "(Landroid/app/SharedElementCallback;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Fragment.html#setExitTransition(android.transition.Transition)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Transition.Transition"/></param>
+        [global::System.Obsolete()]
+        public void SetExitTransition(Android.Transition.Transition arg0)
+        {
+            IExecuteWithSignature("setExitTransition", "(Landroid/transition/Transition;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#setHasOptionsMenu(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetHasOptionsMenu(bool arg0)
         {
             IExecuteWithSignature("setHasOptionsMenu", "(Z)V", arg0);
@@ -812,7 +882,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#setInitialSavedState(android.app.Fragment.SavedState)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.App.Fragment.SavedState"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetInitialSavedState(Android.App.Fragment.SavedState arg0)
         {
             IExecuteWithSignature("setInitialSavedState", "(Landroid/app/Fragment$SavedState;)V", arg0);
@@ -821,27 +891,81 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#setMenuVisibility(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetMenuVisibility(bool arg0)
         {
             IExecuteWithSignature("setMenuVisibility", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Fragment.html#setReenterTransition(android.transition.Transition)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Transition.Transition"/></param>
+        [global::System.Obsolete()]
+        public void SetReenterTransition(Android.Transition.Transition arg0)
+        {
+            IExecuteWithSignature("setReenterTransition", "(Landroid/transition/Transition;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Fragment.html#setRetainInstance(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        [global::System.Obsolete()]
+        public void SetRetainInstance(bool arg0)
+        {
+            IExecuteWithSignature("setRetainInstance", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Fragment.html#setReturnTransition(android.transition.Transition)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Transition.Transition"/></param>
+        [global::System.Obsolete()]
+        public void SetReturnTransition(Android.Transition.Transition arg0)
+        {
+            IExecuteWithSignature("setReturnTransition", "(Landroid/transition/Transition;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Fragment.html#setSharedElementEnterTransition(android.transition.Transition)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Transition.Transition"/></param>
+        [global::System.Obsolete()]
+        public void SetSharedElementEnterTransition(Android.Transition.Transition arg0)
+        {
+            IExecuteWithSignature("setSharedElementEnterTransition", "(Landroid/transition/Transition;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Fragment.html#setSharedElementReturnTransition(android.transition.Transition)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Transition.Transition"/></param>
+        [global::System.Obsolete()]
+        public void SetSharedElementReturnTransition(Android.Transition.Transition arg0)
+        {
+            IExecuteWithSignature("setSharedElementReturnTransition", "(Landroid/transition/Transition;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#setTargetFragment(android.app.Fragment,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.App.Fragment"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetTargetFragment(Android.App.Fragment arg0, int arg1)
         {
             IExecute("setTargetFragment", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/Fragment.html#setUserVisibleHint(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        [global::System.Obsolete()]
+        public void SetUserVisibleHint(bool arg0)
+        {
+            IExecuteWithSignature("setUserVisibleHint", "(Z)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#startActivity(android.content.Intent,android.os.Bundle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Intent"/></param>
         /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void StartActivity(Android.Content.Intent arg0, Android.Os.Bundle arg1)
         {
             IExecute("startActivity", arg0, arg1);
@@ -850,7 +974,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#startActivity(android.content.Intent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Intent"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void StartActivity(Android.Content.Intent arg0)
         {
             IExecuteWithSignature("startActivity", "(Landroid/content/Intent;)V", arg0);
@@ -861,7 +985,7 @@ namespace Android.App
         /// <param name="arg0"><see cref="Android.Content.Intent"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Android.Os.Bundle"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void StartActivityForResult(Android.Content.Intent arg0, int arg1, Android.Os.Bundle arg2)
         {
             IExecute("startActivityForResult", arg0, arg1, arg2);
@@ -871,7 +995,7 @@ namespace Android.App
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Intent"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void StartActivityForResult(Android.Content.Intent arg0, int arg1)
         {
             IExecute("startActivityForResult", arg0, arg1);
@@ -887,7 +1011,7 @@ namespace Android.App
         /// <param name="arg5"><see cref="int"/></param>
         /// <param name="arg6"><see cref="Android.Os.Bundle"/></param>
         /// <exception cref="Android.Content.IntentSender.SendIntentException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void StartIntentSenderForResult(Android.Content.IntentSender arg0, int arg1, Android.Content.Intent arg2, int arg3, int arg4, int arg5, Android.Os.Bundle arg6)
         {
             IExecute("startIntentSenderForResult", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -895,7 +1019,7 @@ namespace Android.App
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#startPostponedEnterTransition()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void StartPostponedEnterTransition()
         {
             IExecuteWithSignature("startPostponedEnterTransition", "()V");
@@ -904,7 +1028,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/Fragment.html#unregisterForContextMenu(android.view.View)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.View"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void UnregisterForContextMenu(Android.View.View arg0)
         {
             IExecuteWithSignature("unregisterForContextMenu", "(Landroid/view/View;)V", arg0);
@@ -959,7 +1083,7 @@ namespace Android.App
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/Fragment.SavedState.html#CREATOR"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Os.Parcelable.ClassLoaderCreator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.ClassLoaderCreator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
             private static Android.Os.Parcelable.ClassLoaderCreator _CREATORContent = default;
             private static bool _CREATORReady = false; // this is used because in case of generics 
@@ -975,7 +1099,7 @@ namespace Android.App
             /// <see href="https://developer.android.com/reference/android/app/Fragment.SavedState.html#describeContents()"/>
             /// </summary>
             /// <returns><see cref="int"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public int DescribeContents()
             {
                 return IExecuteWithSignature<int>("describeContents", "()I");
@@ -985,7 +1109,7 @@ namespace Android.App
             /// </summary>
             /// <param name="arg0"><see cref="Android.Os.Parcel"/></param>
             /// <param name="arg1"><see cref="int"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
             {
                 IExecute("writeToParcel", arg0, arg1);

@@ -166,27 +166,6 @@ namespace Android.App.Job
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/job/JobScheduler.html#getAllPendingJobs()"/> 
-        /// </summary>
-        public Java.Util.List<Android.App.Job.JobInfo> AllPendingJobs
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.App.Job.JobInfo>>("getAllPendingJobs", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/job/JobScheduler.html#getNamespace()"/> 
-        /// </summary>
-        public Java.Lang.String Namespace
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getNamespace", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/job/JobScheduler.html#getPendingJobsInAllNamespaces()"/> 
-        /// </summary>
-        public Java.Util.Map<Java.Lang.String, Java.Util.List<Android.App.Job.JobInfo>> PendingJobsInAllNamespaces
-        {
-            get { return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Util.List<Android.App.Job.JobInfo>>>("getPendingJobsInAllNamespaces", "()Ljava/util/Map;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/job/JobScheduler.html#getPendingJob(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -213,6 +192,14 @@ namespace Android.App.Job
         public int Schedule(Android.App.Job.JobInfo arg0)
         {
             return IExecuteWithSignature<int>("schedule", "(Landroid/app/job/JobInfo;)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/job/JobScheduler.html#getAllPendingJobs()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.App.Job.JobInfo> GetAllPendingJobs()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.App.Job.JobInfo>>("getAllPendingJobs", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/job/JobScheduler.html#cancel(int)"/>
@@ -254,6 +241,22 @@ namespace Android.App.Job
         public int GetPendingJobReason(int arg0)
         {
             return IExecuteWithSignature<int>("getPendingJobReason", "(I)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/job/JobScheduler.html#getNamespace()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetNamespace()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getNamespace", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/job/JobScheduler.html#getPendingJobsInAllNamespaces()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        public Java.Util.Map<Java.Lang.String, Java.Util.List<Android.App.Job.JobInfo>> GetPendingJobsInAllNamespaces()
+        {
+            return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Util.List<Android.App.Job.JobInfo>>>("getPendingJobsInAllNamespaces", "()Ljava/util/Map;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/job/JobScheduler.html#cancelInAllNamespaces()"/>

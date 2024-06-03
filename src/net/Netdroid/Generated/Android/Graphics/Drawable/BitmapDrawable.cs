@@ -60,7 +60,7 @@ namespace Android.Graphics.Drawable
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/BitmapDrawable.html#%3Cinit%3E(android.content.res.Resources)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Res.Resources"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public BitmapDrawable(Android.Content.Res.Resources arg0)
             : base(arg0)
         {
@@ -69,7 +69,7 @@ namespace Android.Graphics.Drawable
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/BitmapDrawable.html#%3Cinit%3E(android.graphics.Bitmap)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Graphics.Bitmap"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public BitmapDrawable(Android.Graphics.Bitmap arg0)
             : base(arg0)
         {
@@ -78,7 +78,7 @@ namespace Android.Graphics.Drawable
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/BitmapDrawable.html#%3Cinit%3E(java.io.InputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public BitmapDrawable(Java.Io.InputStream arg0)
             : base(arg0)
         {
@@ -87,7 +87,7 @@ namespace Android.Graphics.Drawable
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/BitmapDrawable.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public BitmapDrawable(Java.Lang.String arg0)
             : base(arg0)
         {
@@ -109,39 +109,20 @@ namespace Android.Graphics.Drawable
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/BitmapDrawable.html#getBitmap()"/> <see href="https://developer.android.com/reference/android/graphics/drawable/BitmapDrawable.html#setBitmap(android.graphics.Bitmap)"/>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/BitmapDrawable.html#getTileModeX()"/>
         /// </summary>
-        public Android.Graphics.Bitmap Bitmap
+        /// <returns><see cref="Android.Graphics.Shader.TileMode"/></returns>
+        public Android.Graphics.Shader.TileMode GetTileModeX()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Bitmap>("getBitmap", "()Landroid/graphics/Bitmap;"); } set { IExecuteWithSignature("setBitmap", "(Landroid/graphics/Bitmap;)V", value); }
+            return IExecuteWithSignature<Android.Graphics.Shader.TileMode>("getTileModeX", "()Landroid/graphics/Shader$TileMode;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/BitmapDrawable.html#getGravity()"/> <see href="https://developer.android.com/reference/android/graphics/drawable/BitmapDrawable.html#setGravity(int)"/>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/BitmapDrawable.html#getTileModeY()"/>
         /// </summary>
-        public int Gravity
+        /// <returns><see cref="Android.Graphics.Shader.TileMode"/></returns>
+        public Android.Graphics.Shader.TileMode GetTileModeY()
         {
-            get { return IExecuteWithSignature<int>("getGravity", "()I"); } set { IExecuteWithSignature("setGravity", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/BitmapDrawable.html#getPaint()"/> 
-        /// </summary>
-        public Android.Graphics.Paint Paint
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Paint>("getPaint", "()Landroid/graphics/Paint;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/BitmapDrawable.html#getTileModeX()"/> <see href="https://developer.android.com/reference/android/graphics/drawable/BitmapDrawable.html#setTileModeX(android.graphics.Shader.TileMode)"/>
-        /// </summary>
-        public Android.Graphics.Shader.TileMode TileModeX
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Shader.TileMode>("getTileModeX", "()Landroid/graphics/Shader$TileMode;"); } set { IExecuteWithSignature("setTileModeX", "(Landroid/graphics/Shader$TileMode;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/BitmapDrawable.html#getTileModeY()"/> <see href="https://developer.android.com/reference/android/graphics/drawable/BitmapDrawable.html#setTileModeY(android.graphics.Shader.TileMode)"/>
-        /// </summary>
-        public Android.Graphics.Shader.TileMode TileModeY
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Shader.TileMode>("getTileModeY", "()Landroid/graphics/Shader$TileMode;"); } set { IExecuteWithSignature("setTileModeY", "(Landroid/graphics/Shader$TileMode;)V", value); }
+            return IExecuteWithSignature<Android.Graphics.Shader.TileMode>("getTileModeY", "()Landroid/graphics/Shader$TileMode;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/BitmapDrawable.html#hasAntiAlias()"/>
@@ -160,12 +141,60 @@ namespace Android.Graphics.Drawable
             return IExecuteWithSignature<bool>("hasMipMap", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/BitmapDrawable.html#getBitmap()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
+        public Android.Graphics.Bitmap GetBitmap()
+        {
+            return IExecuteWithSignature<Android.Graphics.Bitmap>("getBitmap", "()Landroid/graphics/Bitmap;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/BitmapDrawable.html#getPaint()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Graphics.Paint"/></returns>
+        public Android.Graphics.Paint GetPaint()
+        {
+            return IExecuteWithSignature<Android.Graphics.Paint>("getPaint", "()Landroid/graphics/Paint;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/BitmapDrawable.html#setTileModeY(android.graphics.Shader.TileMode)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Shader.TileMode"/></param>
+        public void SetTileModeY(Android.Graphics.Shader.TileMode arg0)
+        {
+            IExecuteWithSignature("setTileModeY", "(Landroid/graphics/Shader$TileMode;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/BitmapDrawable.html#getGravity()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetGravity()
+        {
+            return IExecuteWithSignature<int>("getGravity", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/BitmapDrawable.html#setAntiAlias(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetAntiAlias(bool arg0)
         {
             IExecuteWithSignature("setAntiAlias", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/BitmapDrawable.html#setBitmap(android.graphics.Bitmap)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Bitmap"/></param>
+        public void SetBitmap(Android.Graphics.Bitmap arg0)
+        {
+            IExecuteWithSignature("setBitmap", "(Landroid/graphics/Bitmap;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/BitmapDrawable.html#setGravity(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetGravity(int arg0)
+        {
+            IExecuteWithSignature("setGravity", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/BitmapDrawable.html#setMipMap(boolean)"/>
@@ -198,6 +227,14 @@ namespace Android.Graphics.Drawable
         public void SetTargetDensity(int arg0)
         {
             IExecuteWithSignature("setTargetDensity", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/BitmapDrawable.html#setTileModeX(android.graphics.Shader.TileMode)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Shader.TileMode"/></param>
+        public void SetTileModeX(Android.Graphics.Shader.TileMode arg0)
+        {
+            IExecuteWithSignature("setTileModeX", "(Landroid/graphics/Shader$TileMode;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/BitmapDrawable.html#setTileModeXY(android.graphics.Shader.TileMode,android.graphics.Shader.TileMode)"/>

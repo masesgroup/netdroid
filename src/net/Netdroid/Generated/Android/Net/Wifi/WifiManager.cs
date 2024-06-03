@@ -52,7 +52,7 @@ namespace Android.Net.Wifi
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#ERROR_AUTHENTICATING"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int ERROR_AUTHENTICATING { get { if (!_ERROR_AUTHENTICATINGReady) { _ERROR_AUTHENTICATINGContent = SGetField<int>(LocalBridgeClazz, "ERROR_AUTHENTICATING"); _ERROR_AUTHENTICATINGReady = true; } return _ERROR_AUTHENTICATINGContent; } }
         private static int _ERROR_AUTHENTICATINGContent = default;
         private static bool _ERROR_AUTHENTICATINGReady = false; // this is used because in case of generics 
@@ -227,14 +227,14 @@ namespace Android.Net.Wifi
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#WIFI_MODE_FULL"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int WIFI_MODE_FULL { get { if (!_WIFI_MODE_FULLReady) { _WIFI_MODE_FULLContent = SGetField<int>(LocalBridgeClazz, "WIFI_MODE_FULL"); _WIFI_MODE_FULLReady = true; } return _WIFI_MODE_FULLContent; } }
         private static int _WIFI_MODE_FULLContent = default;
         private static bool _WIFI_MODE_FULLReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#WIFI_MODE_FULL_HIGH_PERF"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int WIFI_MODE_FULL_HIGH_PERF { get { if (!_WIFI_MODE_FULL_HIGH_PERFReady) { _WIFI_MODE_FULL_HIGH_PERFContent = SGetField<int>(LocalBridgeClazz, "WIFI_MODE_FULL_HIGH_PERF"); _WIFI_MODE_FULL_HIGH_PERFReady = true; } return _WIFI_MODE_FULL_HIGH_PERFContent; } }
         private static int _WIFI_MODE_FULL_HIGH_PERFContent = default;
         private static bool _WIFI_MODE_FULL_HIGH_PERFReady = false; // this is used because in case of generics 
@@ -247,7 +247,7 @@ namespace Android.Net.Wifi
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#WIFI_MODE_SCAN_ONLY"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int WIFI_MODE_SCAN_ONLY { get { if (!_WIFI_MODE_SCAN_ONLYReady) { _WIFI_MODE_SCAN_ONLYContent = SGetField<int>(LocalBridgeClazz, "WIFI_MODE_SCAN_ONLY"); _WIFI_MODE_SCAN_ONLYReady = true; } return _WIFI_MODE_SCAN_ONLYContent; } }
         private static int _WIFI_MODE_SCAN_ONLYContent = default;
         private static bool _WIFI_MODE_SCAN_ONLYReady = false; // this is used because in case of generics 
@@ -302,35 +302,35 @@ namespace Android.Net.Wifi
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#WPS_AUTH_FAILURE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int WPS_AUTH_FAILURE { get { if (!_WPS_AUTH_FAILUREReady) { _WPS_AUTH_FAILUREContent = SGetField<int>(LocalBridgeClazz, "WPS_AUTH_FAILURE"); _WPS_AUTH_FAILUREReady = true; } return _WPS_AUTH_FAILUREContent; } }
         private static int _WPS_AUTH_FAILUREContent = default;
         private static bool _WPS_AUTH_FAILUREReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#WPS_OVERLAP_ERROR"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int WPS_OVERLAP_ERROR { get { if (!_WPS_OVERLAP_ERRORReady) { _WPS_OVERLAP_ERRORContent = SGetField<int>(LocalBridgeClazz, "WPS_OVERLAP_ERROR"); _WPS_OVERLAP_ERRORReady = true; } return _WPS_OVERLAP_ERRORContent; } }
         private static int _WPS_OVERLAP_ERRORContent = default;
         private static bool _WPS_OVERLAP_ERRORReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#WPS_TIMED_OUT"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int WPS_TIMED_OUT { get { if (!_WPS_TIMED_OUTReady) { _WPS_TIMED_OUTContent = SGetField<int>(LocalBridgeClazz, "WPS_TIMED_OUT"); _WPS_TIMED_OUTReady = true; } return _WPS_TIMED_OUTContent; } }
         private static int _WPS_TIMED_OUTContent = default;
         private static bool _WPS_TIMED_OUTReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#WPS_TKIP_ONLY_PROHIBITED"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int WPS_TKIP_ONLY_PROHIBITED { get { if (!_WPS_TKIP_ONLY_PROHIBITEDReady) { _WPS_TKIP_ONLY_PROHIBITEDContent = SGetField<int>(LocalBridgeClazz, "WPS_TKIP_ONLY_PROHIBITED"); _WPS_TKIP_ONLY_PROHIBITEDReady = true; } return _WPS_TKIP_ONLY_PROHIBITEDContent; } }
         private static int _WPS_TKIP_ONLY_PROHIBITEDContent = default;
         private static bool _WPS_TKIP_ONLY_PROHIBITEDReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#WPS_WEP_PROHIBITED"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int WPS_WEP_PROHIBITED { get { if (!_WPS_WEP_PROHIBITEDReady) { _WPS_WEP_PROHIBITEDContent = SGetField<int>(LocalBridgeClazz, "WPS_WEP_PROHIBITED"); _WPS_WEP_PROHIBITEDReady = true; } return _WPS_WEP_PROHIBITEDContent; } }
         private static int _WPS_WEP_PROHIBITEDContent = default;
         private static bool _WPS_WEP_PROHIBITEDReady = false; // this is used because in case of generics 
@@ -373,7 +373,7 @@ namespace Android.Net.Wifi
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#EXTRA_BSSID"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String EXTRA_BSSID { get { if (!_EXTRA_BSSIDReady) { _EXTRA_BSSIDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_BSSID"); _EXTRA_BSSIDReady = true; } return _EXTRA_BSSIDContent; } }
         private static Java.Lang.String _EXTRA_BSSIDContent = default;
         private static bool _EXTRA_BSSIDReady = false; // this is used because in case of generics 
@@ -398,7 +398,7 @@ namespace Android.Net.Wifi
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#EXTRA_NEW_STATE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String EXTRA_NEW_STATE { get { if (!_EXTRA_NEW_STATEReady) { _EXTRA_NEW_STATEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_NEW_STATE"); _EXTRA_NEW_STATEReady = true; } return _EXTRA_NEW_STATEContent; } }
         private static Java.Lang.String _EXTRA_NEW_STATEContent = default;
         private static bool _EXTRA_NEW_STATEReady = false; // this is used because in case of generics 
@@ -423,21 +423,21 @@ namespace Android.Net.Wifi
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#EXTRA_SUPPLICANT_CONNECTED"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String EXTRA_SUPPLICANT_CONNECTED { get { if (!_EXTRA_SUPPLICANT_CONNECTEDReady) { _EXTRA_SUPPLICANT_CONNECTEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_SUPPLICANT_CONNECTED"); _EXTRA_SUPPLICANT_CONNECTEDReady = true; } return _EXTRA_SUPPLICANT_CONNECTEDContent; } }
         private static Java.Lang.String _EXTRA_SUPPLICANT_CONNECTEDContent = default;
         private static bool _EXTRA_SUPPLICANT_CONNECTEDReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#EXTRA_SUPPLICANT_ERROR"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String EXTRA_SUPPLICANT_ERROR { get { if (!_EXTRA_SUPPLICANT_ERRORReady) { _EXTRA_SUPPLICANT_ERRORContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_SUPPLICANT_ERROR"); _EXTRA_SUPPLICANT_ERRORReady = true; } return _EXTRA_SUPPLICANT_ERRORContent; } }
         private static Java.Lang.String _EXTRA_SUPPLICANT_ERRORContent = default;
         private static bool _EXTRA_SUPPLICANT_ERRORReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#EXTRA_WIFI_INFO"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String EXTRA_WIFI_INFO { get { if (!_EXTRA_WIFI_INFOReady) { _EXTRA_WIFI_INFOContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_WIFI_INFO"); _EXTRA_WIFI_INFOReady = true; } return _EXTRA_WIFI_INFOContent; } }
         private static Java.Lang.String _EXTRA_WIFI_INFOContent = default;
         private static bool _EXTRA_WIFI_INFOReady = false; // this is used because in case of generics 
@@ -474,14 +474,14 @@ namespace Android.Net.Wifi
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#SUPPLICANT_CONNECTION_CHANGE_ACTION"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String SUPPLICANT_CONNECTION_CHANGE_ACTION { get { if (!_SUPPLICANT_CONNECTION_CHANGE_ACTIONReady) { _SUPPLICANT_CONNECTION_CHANGE_ACTIONContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SUPPLICANT_CONNECTION_CHANGE_ACTION"); _SUPPLICANT_CONNECTION_CHANGE_ACTIONReady = true; } return _SUPPLICANT_CONNECTION_CHANGE_ACTIONContent; } }
         private static Java.Lang.String _SUPPLICANT_CONNECTION_CHANGE_ACTIONContent = default;
         private static bool _SUPPLICANT_CONNECTION_CHANGE_ACTIONReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#SUPPLICANT_STATE_CHANGED_ACTION"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String SUPPLICANT_STATE_CHANGED_ACTION { get { if (!_SUPPLICANT_STATE_CHANGED_ACTIONReady) { _SUPPLICANT_STATE_CHANGED_ACTIONContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SUPPLICANT_STATE_CHANGED_ACTION"); _SUPPLICANT_STATE_CHANGED_ACTIONReady = true; } return _SUPPLICANT_STATE_CHANGED_ACTIONContent; } }
         private static Java.Lang.String _SUPPLICANT_STATE_CHANGED_ACTIONContent = default;
         private static bool _SUPPLICANT_STATE_CHANGED_ACTIONReady = false; // this is used because in case of generics 
@@ -507,7 +507,7 @@ namespace Android.Net.Wifi
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int CalculateSignalLevel(int arg0, int arg1)
         {
             return SExecute<int>(LocalBridgeClazz, "calculateSignalLevel", arg0, arg1);
@@ -527,92 +527,22 @@ namespace Android.Net.Wifi
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#getCallerConfiguredNetworks()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#getDhcpInfo()"/>
         /// </summary>
-        public Java.Util.List<Android.Net.Wifi.WifiConfiguration> CallerConfiguredNetworks
+        /// <returns><see cref="Android.Net.DhcpInfo"/></returns>
+        [global::System.Obsolete()]
+        public Android.Net.DhcpInfo GetDhcpInfo()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Net.Wifi.WifiConfiguration>>("getCallerConfiguredNetworks", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Android.Net.DhcpInfo>("getDhcpInfo", "()Landroid/net/DhcpInfo;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#getConfiguredNetworks()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#getConnectionInfo()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Java.Util.List<Android.Net.Wifi.WifiConfiguration> ConfiguredNetworks
+        /// <returns><see cref="Android.Net.Wifi.WifiInfo"/></returns>
+        [global::System.Obsolete()]
+        public Android.Net.Wifi.WifiInfo GetConnectionInfo()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Net.Wifi.WifiConfiguration>>("getConfiguredNetworks", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#getConnectionInfo()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Android.Net.Wifi.WifiInfo ConnectionInfo
-        {
-            get { return IExecuteWithSignature<Android.Net.Wifi.WifiInfo>("getConnectionInfo", "()Landroid/net/wifi/WifiInfo;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#getDhcpInfo()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Android.Net.DhcpInfo DhcpInfo
-        {
-            get { return IExecuteWithSignature<Android.Net.DhcpInfo>("getDhcpInfo", "()Landroid/net/DhcpInfo;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#getMaxNumberOfChannelsPerNetworkSpecifierRequest()"/> 
-        /// </summary>
-        public int MaxNumberOfChannelsPerNetworkSpecifierRequest
-        {
-            get { return IExecuteWithSignature<int>("getMaxNumberOfChannelsPerNetworkSpecifierRequest", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#getMaxNumberOfNetworkSuggestionsPerApp()"/> 
-        /// </summary>
-        public int MaxNumberOfNetworkSuggestionsPerApp
-        {
-            get { return IExecuteWithSignature<int>("getMaxNumberOfNetworkSuggestionsPerApp", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#getMaxSignalLevel()"/> 
-        /// </summary>
-        public int MaxSignalLevel
-        {
-            get { return IExecuteWithSignature<int>("getMaxSignalLevel", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#getNetworkSuggestions()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Net.Wifi.WifiNetworkSuggestion> NetworkSuggestions
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Net.Wifi.WifiNetworkSuggestion>>("getNetworkSuggestions", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#getPasspointConfigurations()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Java.Util.List<Android.Net.Wifi.Hotspot2.PasspointConfiguration> PasspointConfigurations
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Net.Wifi.Hotspot2.PasspointConfiguration>>("getPasspointConfigurations", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#getScanResults()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Net.Wifi.ScanResult> ScanResults
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Net.Wifi.ScanResult>>("getScanResults", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#getStaConcurrencyForMultiInternetMode()"/> 
-        /// </summary>
-        public int StaConcurrencyForMultiInternetMode
-        {
-            get { return IExecuteWithSignature<int>("getStaConcurrencyForMultiInternetMode", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#getWifiState()"/> 
-        /// </summary>
-        public int WifiState
-        {
-            get { return IExecuteWithSignature<int>("getWifiState", "()I"); }
+            return IExecuteWithSignature<Android.Net.Wifi.WifiInfo>("getConnectionInfo", "()Landroid/net/wifi/WifiInfo;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#addNetworkPrivileged(android.net.wifi.WifiConfiguration)"/>
@@ -647,7 +577,7 @@ namespace Android.Net.Wifi
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Android.Net.Wifi.WifiManager.WifiLock"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Net.Wifi.WifiManager.WifiLock CreateWifiLock(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Android.Net.Wifi.WifiManager.WifiLock>("createWifiLock", "(Ljava/lang/String;)Landroid/net/wifi/WifiManager$WifiLock;", arg0);
@@ -657,7 +587,7 @@ namespace Android.Net.Wifi
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool DisableNetwork(int arg0)
         {
             return IExecuteWithSignature<bool>("disableNetwork", "(I)Z", arg0);
@@ -666,7 +596,7 @@ namespace Android.Net.Wifi
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#disconnect()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool Disconnect()
         {
             return IExecuteWithSignature<bool>("disconnect", "()Z");
@@ -677,7 +607,7 @@ namespace Android.Net.Wifi
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool EnableNetwork(int arg0, bool arg1)
         {
             return IExecute<bool>("enableNetwork", arg0, arg1);
@@ -752,7 +682,7 @@ namespace Android.Net.Wifi
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#isDeviceToApRttSupported()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsDeviceToApRttSupported()
         {
             return IExecuteWithSignature<bool>("isDeviceToApRttSupported", "()Z");
@@ -841,7 +771,7 @@ namespace Android.Net.Wifi
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#isScanAlwaysAvailable()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsScanAlwaysAvailable()
         {
             return IExecuteWithSignature<bool>("isScanAlwaysAvailable", "()Z");
@@ -1003,7 +933,7 @@ namespace Android.Net.Wifi
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#pingSupplicant()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool PingSupplicant()
         {
             return IExecuteWithSignature<bool>("pingSupplicant", "()Z");
@@ -1012,7 +942,7 @@ namespace Android.Net.Wifi
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#reassociate()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool Reassociate()
         {
             return IExecuteWithSignature<bool>("reassociate", "()Z");
@@ -1021,7 +951,7 @@ namespace Android.Net.Wifi
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#reconnect()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool Reconnect()
         {
             return IExecuteWithSignature<bool>("reconnect", "()Z");
@@ -1031,7 +961,7 @@ namespace Android.Net.Wifi
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool RemoveNetwork(int arg0)
         {
             return IExecuteWithSignature<bool>("removeNetwork", "(I)Z", arg0);
@@ -1048,7 +978,7 @@ namespace Android.Net.Wifi
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#saveConfiguration()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool SaveConfiguration()
         {
             return IExecuteWithSignature<bool>("saveConfiguration", "()Z");
@@ -1058,7 +988,7 @@ namespace Android.Net.Wifi
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool SetWifiEnabled(bool arg0)
         {
             return IExecuteWithSignature<bool>("setWifiEnabled", "(Z)Z", arg0);
@@ -1067,7 +997,7 @@ namespace Android.Net.Wifi
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#startScan()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool StartScan()
         {
             return IExecuteWithSignature<bool>("startScan", "()Z");
@@ -1086,7 +1016,7 @@ namespace Android.Net.Wifi
         /// </summary>
         /// <param name="arg0"><see cref="Android.Net.Wifi.WifiConfiguration"/></param>
         /// <returns><see cref="int"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int AddNetwork(Android.Net.Wifi.WifiConfiguration arg0)
         {
             return IExecuteWithSignature<int>("addNetwork", "(Landroid/net/wifi/WifiConfiguration;)I", arg0);
@@ -1108,6 +1038,46 @@ namespace Android.Net.Wifi
         public int CalculateSignalLevel(int arg0)
         {
             return IExecuteWithSignature<int>("calculateSignalLevel", "(I)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#getMaxNumberOfChannelsPerNetworkSpecifierRequest()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMaxNumberOfChannelsPerNetworkSpecifierRequest()
+        {
+            return IExecuteWithSignature<int>("getMaxNumberOfChannelsPerNetworkSpecifierRequest", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#getMaxNumberOfNetworkSuggestionsPerApp()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMaxNumberOfNetworkSuggestionsPerApp()
+        {
+            return IExecuteWithSignature<int>("getMaxNumberOfNetworkSuggestionsPerApp", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#getMaxSignalLevel()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMaxSignalLevel()
+        {
+            return IExecuteWithSignature<int>("getMaxSignalLevel", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#getStaConcurrencyForMultiInternetMode()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetStaConcurrencyForMultiInternetMode()
+        {
+            return IExecuteWithSignature<int>("getStaConcurrencyForMultiInternetMode", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#getWifiState()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetWifiState()
+        {
+            return IExecuteWithSignature<int>("getWifiState", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#removeNetworkSuggestions(java.util.List,int)"/>
@@ -1133,10 +1103,27 @@ namespace Android.Net.Wifi
         /// </summary>
         /// <param name="arg0"><see cref="Android.Net.Wifi.WifiConfiguration"/></param>
         /// <returns><see cref="int"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int UpdateNetwork(Android.Net.Wifi.WifiConfiguration arg0)
         {
             return IExecuteWithSignature<int>("updateNetwork", "(Landroid/net/wifi/WifiConfiguration;)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#getPasspointConfigurations()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        [global::System.Obsolete()]
+        public Java.Util.List<Android.Net.Wifi.Hotspot2.PasspointConfiguration> GetPasspointConfigurations()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Net.Wifi.Hotspot2.PasspointConfiguration>>("getPasspointConfigurations", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#getScanResults()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Net.Wifi.ScanResult> GetScanResults()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Net.Wifi.ScanResult>>("getScanResults", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#getAllowedChannels(int,int)"/>
@@ -1157,6 +1144,31 @@ namespace Android.Net.Wifi
         public Java.Util.List<Android.Net.Wifi.WifiAvailableChannel> GetUsableChannels(int arg0, int arg1)
         {
             return IExecute<Java.Util.List<Android.Net.Wifi.WifiAvailableChannel>>("getUsableChannels", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#getCallerConfiguredNetworks()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Net.Wifi.WifiConfiguration> GetCallerConfiguredNetworks()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Net.Wifi.WifiConfiguration>>("getCallerConfiguredNetworks", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#getConfiguredNetworks()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        [global::System.Obsolete()]
+        public Java.Util.List<Android.Net.Wifi.WifiConfiguration> GetConfiguredNetworks()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Net.Wifi.WifiConfiguration>>("getConfiguredNetworks", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#getNetworkSuggestions()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Net.Wifi.WifiNetworkSuggestion> GetNetworkSuggestions()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Net.Wifi.WifiNetworkSuggestion>>("getNetworkSuggestions", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#addLocalOnlyConnectionFailureListener(java.util.concurrent.Executor,android.net.wifi.WifiManager.LocalOnlyConnectionFailureListener)"/>
@@ -1205,7 +1217,7 @@ namespace Android.Net.Wifi
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#cancelWps(android.net.wifi.WifiManager.WpsCallback)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Net.Wifi.WifiManager.WpsCallback"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void CancelWps(Android.Net.Wifi.WifiManager.WpsCallback arg0)
         {
             IExecuteWithSignature("cancelWps", "(Landroid/net/wifi/WifiManager$WpsCallback;)V", arg0);
@@ -1292,7 +1304,7 @@ namespace Android.Net.Wifi
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.html#removePasspointConfiguration(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void RemovePasspointConfiguration(Java.Lang.String arg0)
         {
             IExecuteWithSignature("removePasspointConfiguration", "(Ljava/lang/String;)V", arg0);
@@ -1378,7 +1390,7 @@ namespace Android.Net.Wifi
         /// </summary>
         /// <param name="arg0"><see cref="Android.Net.Wifi.WpsInfo"/></param>
         /// <param name="arg1"><see cref="Android.Net.Wifi.WifiManager.WpsCallback"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void StartWps(Android.Net.Wifi.WpsInfo arg0, Android.Net.Wifi.WifiManager.WpsCallback arg1)
         {
             IExecute("startWps", arg0, arg1);
@@ -1574,18 +1586,20 @@ namespace Android.Net.Wifi
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.InterfaceCreationImpact.html#getInterfaceType()"/> 
+            /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.InterfaceCreationImpact.html#getInterfaceType()"/>
             /// </summary>
-            public int InterfaceType
+            /// <returns><see cref="int"/></returns>
+            public int GetInterfaceType()
             {
-                get { return IExecuteWithSignature<int>("getInterfaceType", "()I"); }
+                return IExecuteWithSignature<int>("getInterfaceType", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.InterfaceCreationImpact.html#getPackages()"/> 
+            /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.InterfaceCreationImpact.html#getPackages()"/>
             /// </summary>
-            public Java.Util.Set<Java.Lang.String> Packages
+            /// <returns><see cref="Java.Util.Set"/></returns>
+            public Java.Util.Set<Java.Lang.String> GetPackages()
             {
-                get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getPackages", "()Ljava/util/Set;"); }
+                return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getPackages", "()Ljava/util/Set;");
             }
 
             #endregion
@@ -1623,7 +1637,7 @@ namespace Android.Net.Wifi
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onConnectionFailed", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Net.Wifi.WifiNetworkSpecifier>>>(OnConnectionFailedEventHandler));
+                AddEventHandler("onConnectionFailed", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Net.Wifi.WifiNetworkSpecifier>>>(OnConnectionFailedEventHandler));
 
             }
 
@@ -1631,7 +1645,7 @@ namespace Android.Net.Wifi
             /// Handler for <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.LocalOnlyConnectionFailureListener.html#onConnectionFailed(android.net.wifi.WifiNetworkSpecifier,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnConnectionFailed"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Net.Wifi.WifiNetworkSpecifier, int> OnOnConnectionFailed { get; set; } = null;
+            public global::System.Action<Android.Net.Wifi.WifiNetworkSpecifier, int> OnOnConnectionFailed { get; set; } = null;
 
             void OnConnectionFailedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Net.Wifi.WifiNetworkSpecifier>> data)
             {
@@ -1798,19 +1812,21 @@ namespace Android.Net.Wifi
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.LocalOnlyHotspotReservation.html#getSoftApConfiguration()"/> 
+            /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.LocalOnlyHotspotReservation.html#getSoftApConfiguration()"/>
             /// </summary>
-            public Android.Net.Wifi.SoftApConfiguration SoftApConfiguration
+            /// <returns><see cref="Android.Net.Wifi.SoftApConfiguration"/></returns>
+            public Android.Net.Wifi.SoftApConfiguration GetSoftApConfiguration()
             {
-                get { return IExecuteWithSignature<Android.Net.Wifi.SoftApConfiguration>("getSoftApConfiguration", "()Landroid/net/wifi/SoftApConfiguration;"); }
+                return IExecuteWithSignature<Android.Net.Wifi.SoftApConfiguration>("getSoftApConfiguration", "()Landroid/net/wifi/SoftApConfiguration;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.LocalOnlyHotspotReservation.html#getWifiConfiguration()"/> 
+            /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.LocalOnlyHotspotReservation.html#getWifiConfiguration()"/>
             /// </summary>
-            [System.Obsolete()]
-            public Android.Net.Wifi.WifiConfiguration WifiConfiguration
+            /// <returns><see cref="Android.Net.Wifi.WifiConfiguration"/></returns>
+            [global::System.Obsolete()]
+            public Android.Net.Wifi.WifiConfiguration GetWifiConfiguration()
             {
-                get { return IExecuteWithSignature<Android.Net.Wifi.WifiConfiguration>("getWifiConfiguration", "()Landroid/net/wifi/WifiConfiguration;"); }
+                return IExecuteWithSignature<Android.Net.Wifi.WifiConfiguration>("getWifiConfiguration", "()Landroid/net/wifi/WifiConfiguration;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.LocalOnlyHotspotReservation.html#close()"/>
@@ -1999,7 +2015,7 @@ namespace Android.Net.Wifi
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onConnectionStatus", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Net.Wifi.WifiNetworkSuggestion>>>(OnConnectionStatusEventHandler));
+                AddEventHandler("onConnectionStatus", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Net.Wifi.WifiNetworkSuggestion>>>(OnConnectionStatusEventHandler));
 
             }
 
@@ -2007,7 +2023,7 @@ namespace Android.Net.Wifi
             /// Handler for <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.SuggestionConnectionStatusListener.html#onConnectionStatus(android.net.wifi.WifiNetworkSuggestion,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnConnectionStatus"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Net.Wifi.WifiNetworkSuggestion, int> OnOnConnectionStatus { get; set; } = null;
+            public global::System.Action<Android.Net.Wifi.WifiNetworkSuggestion, int> OnOnConnectionStatus { get; set; } = null;
 
             void OnConnectionStatusEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Net.Wifi.WifiNetworkSuggestion>> data)
             {
@@ -2100,7 +2116,7 @@ namespace Android.Net.Wifi
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onUserApprovalStatusChange", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnUserApprovalStatusChangeEventHandler));
+                AddEventHandler("onUserApprovalStatusChange", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnUserApprovalStatusChangeEventHandler));
 
             }
 
@@ -2108,7 +2124,7 @@ namespace Android.Net.Wifi
             /// Handler for <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.SuggestionUserApprovalStatusListener.html#onUserApprovalStatusChange(int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnUserApprovalStatusChange"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<int> OnOnUserApprovalStatusChange { get; set; } = null;
+            public global::System.Action<int> OnOnUserApprovalStatusChange { get; set; } = null;
 
             void OnUserApprovalStatusChangeEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
             {
@@ -2267,7 +2283,7 @@ namespace Android.Net.Wifi
             /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.WpsCallback.html#onFailed(int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void OnFailed(int arg0)
             {
                 IExecuteWithSignature("onFailed", "(I)V", arg0);
@@ -2276,7 +2292,7 @@ namespace Android.Net.Wifi
             /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.WpsCallback.html#onStarted(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void OnStarted(Java.Lang.String arg0)
             {
                 IExecuteWithSignature("onStarted", "(Ljava/lang/String;)V", arg0);
@@ -2284,7 +2300,7 @@ namespace Android.Net.Wifi
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.WpsCallback.html#onSucceeded()"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void OnSucceeded()
             {
                 IExecuteWithSignature("onSucceeded", "()V");

@@ -36,7 +36,7 @@ namespace Android.Preference
         /// <param name="arg1"><see cref="Android.Util.AttributeSet"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public DialogPreference(Android.Content.Context arg0, Android.Util.AttributeSet arg1, int arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -47,7 +47,7 @@ namespace Android.Preference
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
         /// <param name="arg1"><see cref="Android.Util.AttributeSet"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public DialogPreference(Android.Content.Context arg0, Android.Util.AttributeSet arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
@@ -57,7 +57,7 @@ namespace Android.Preference
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
         /// <param name="arg1"><see cref="Android.Util.AttributeSet"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public DialogPreference(Android.Content.Context arg0, Android.Util.AttributeSet arg1)
             : base(arg0, arg1)
         {
@@ -66,7 +66,7 @@ namespace Android.Preference
         /// <see href="https://developer.android.com/reference/android/preference/DialogPreference.html#%3Cinit%3E(android.content.Context)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public DialogPreference(Android.Content.Context arg0)
             : base(arg0)
         {
@@ -88,65 +88,72 @@ namespace Android.Preference
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/preference/DialogPreference.html#getDialog()"/> 
+        /// <see href="https://developer.android.com/reference/android/preference/DialogPreference.html#getDialog()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.App.Dialog Dialog
+        /// <returns><see cref="Android.App.Dialog"/></returns>
+        [global::System.Obsolete()]
+        public Android.App.Dialog GetDialog()
         {
-            get { return IExecuteWithSignature<Android.App.Dialog>("getDialog", "()Landroid/app/Dialog;"); }
+            return IExecuteWithSignature<Android.App.Dialog>("getDialog", "()Landroid/app/Dialog;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/preference/DialogPreference.html#getDialogIcon()"/> 
+        /// <see href="https://developer.android.com/reference/android/preference/DialogPreference.html#getDialogIcon()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Graphics.Drawable.Drawable DialogIcon
+        /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
+        [global::System.Obsolete()]
+        public Android.Graphics.Drawable.Drawable GetDialogIcon()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getDialogIcon", "()Landroid/graphics/drawable/Drawable;"); }
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getDialogIcon", "()Landroid/graphics/drawable/Drawable;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/preference/DialogPreference.html#getDialogLayoutResource()"/> <see href="https://developer.android.com/reference/android/preference/DialogPreference.html#setDialogLayoutResource(int)"/>
+        /// <see href="https://developer.android.com/reference/android/preference/DialogPreference.html#getDialogLayoutResource()"/>
         /// </summary>
-        [System.Obsolete()]
-        public int DialogLayoutResource
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetDialogLayoutResource()
         {
-            get { return IExecuteWithSignature<int>("getDialogLayoutResource", "()I"); } set { IExecuteWithSignature("setDialogLayoutResource", "(I)V", value); }
+            return IExecuteWithSignature<int>("getDialogLayoutResource", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/preference/DialogPreference.html#getDialogMessage()"/> 
+        /// <see href="https://developer.android.com/reference/android/preference/DialogPreference.html#getDialogMessage()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Java.Lang.CharSequence DialogMessage
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        [global::System.Obsolete()]
+        public Java.Lang.CharSequence GetDialogMessage()
         {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getDialogMessage", "()Ljava/lang/CharSequence;"); }
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getDialogMessage", "()Ljava/lang/CharSequence;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/preference/DialogPreference.html#getDialogTitle()"/> 
+        /// <see href="https://developer.android.com/reference/android/preference/DialogPreference.html#getDialogTitle()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Java.Lang.CharSequence DialogTitle
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        [global::System.Obsolete()]
+        public Java.Lang.CharSequence GetDialogTitle()
         {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getDialogTitle", "()Ljava/lang/CharSequence;"); }
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getDialogTitle", "()Ljava/lang/CharSequence;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/preference/DialogPreference.html#getNegativeButtonText()"/> 
+        /// <see href="https://developer.android.com/reference/android/preference/DialogPreference.html#getNegativeButtonText()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Java.Lang.CharSequence NegativeButtonText
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        [global::System.Obsolete()]
+        public Java.Lang.CharSequence GetNegativeButtonText()
         {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getNegativeButtonText", "()Ljava/lang/CharSequence;"); }
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getNegativeButtonText", "()Ljava/lang/CharSequence;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/preference/DialogPreference.html#getPositiveButtonText()"/> 
+        /// <see href="https://developer.android.com/reference/android/preference/DialogPreference.html#getPositiveButtonText()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Java.Lang.CharSequence PositiveButtonText
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        [global::System.Obsolete()]
+        public Java.Lang.CharSequence GetPositiveButtonText()
         {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getPositiveButtonText", "()Ljava/lang/CharSequence;"); }
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getPositiveButtonText", "()Ljava/lang/CharSequence;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/preference/DialogPreference.html#onActivityDestroy()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnActivityDestroy()
         {
             IExecuteWithSignature("onActivityDestroy", "()V");
@@ -156,7 +163,7 @@ namespace Android.Preference
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.DialogInterface"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnClick(Android.Content.DialogInterface arg0, int arg1)
         {
             IExecute("onClick", arg0, arg1);
@@ -165,7 +172,7 @@ namespace Android.Preference
         /// <see href="https://developer.android.com/reference/android/preference/DialogPreference.html#onDismiss(android.content.DialogInterface)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.DialogInterface"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnDismiss(Android.Content.DialogInterface arg0)
         {
             IExecuteWithSignature("onDismiss", "(Landroid/content/DialogInterface;)V", arg0);
@@ -174,7 +181,7 @@ namespace Android.Preference
         /// <see href="https://developer.android.com/reference/android/preference/DialogPreference.html#setDialogIcon(android.graphics.drawable.Drawable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Graphics.Drawable.Drawable"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetDialogIcon(Android.Graphics.Drawable.Drawable arg0)
         {
             IExecuteWithSignature("setDialogIcon", "(Landroid/graphics/drawable/Drawable;)V", arg0);
@@ -183,16 +190,25 @@ namespace Android.Preference
         /// <see href="https://developer.android.com/reference/android/preference/DialogPreference.html#setDialogIcon(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetDialogIcon(int arg0)
         {
             IExecuteWithSignature("setDialogIcon", "(I)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/preference/DialogPreference.html#setDialogLayoutResource(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        [global::System.Obsolete()]
+        public void SetDialogLayoutResource(int arg0)
+        {
+            IExecuteWithSignature("setDialogLayoutResource", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/preference/DialogPreference.html#setDialogMessage(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetDialogMessage(int arg0)
         {
             IExecuteWithSignature("setDialogMessage", "(I)V", arg0);
@@ -201,7 +217,7 @@ namespace Android.Preference
         /// <see href="https://developer.android.com/reference/android/preference/DialogPreference.html#setDialogMessage(java.lang.CharSequence)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetDialogMessage(Java.Lang.CharSequence arg0)
         {
             IExecuteWithSignature("setDialogMessage", "(Ljava/lang/CharSequence;)V", arg0);
@@ -210,7 +226,7 @@ namespace Android.Preference
         /// <see href="https://developer.android.com/reference/android/preference/DialogPreference.html#setDialogTitle(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetDialogTitle(int arg0)
         {
             IExecuteWithSignature("setDialogTitle", "(I)V", arg0);
@@ -219,7 +235,7 @@ namespace Android.Preference
         /// <see href="https://developer.android.com/reference/android/preference/DialogPreference.html#setDialogTitle(java.lang.CharSequence)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetDialogTitle(Java.Lang.CharSequence arg0)
         {
             IExecuteWithSignature("setDialogTitle", "(Ljava/lang/CharSequence;)V", arg0);
@@ -228,7 +244,7 @@ namespace Android.Preference
         /// <see href="https://developer.android.com/reference/android/preference/DialogPreference.html#setNegativeButtonText(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetNegativeButtonText(int arg0)
         {
             IExecuteWithSignature("setNegativeButtonText", "(I)V", arg0);
@@ -237,7 +253,7 @@ namespace Android.Preference
         /// <see href="https://developer.android.com/reference/android/preference/DialogPreference.html#setNegativeButtonText(java.lang.CharSequence)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetNegativeButtonText(Java.Lang.CharSequence arg0)
         {
             IExecuteWithSignature("setNegativeButtonText", "(Ljava/lang/CharSequence;)V", arg0);
@@ -246,7 +262,7 @@ namespace Android.Preference
         /// <see href="https://developer.android.com/reference/android/preference/DialogPreference.html#setPositiveButtonText(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetPositiveButtonText(int arg0)
         {
             IExecuteWithSignature("setPositiveButtonText", "(I)V", arg0);
@@ -255,7 +271,7 @@ namespace Android.Preference
         /// <see href="https://developer.android.com/reference/android/preference/DialogPreference.html#setPositiveButtonText(java.lang.CharSequence)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetPositiveButtonText(Java.Lang.CharSequence arg0)
         {
             IExecuteWithSignature("setPositiveButtonText", "(Ljava/lang/CharSequence;)V", arg0);

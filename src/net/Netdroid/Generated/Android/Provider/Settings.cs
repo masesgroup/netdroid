@@ -244,7 +244,7 @@ namespace Android.Provider
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/Settings.html#ACTION_FINGERPRINT_ENROLL"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String ACTION_FINGERPRINT_ENROLL { get { if (!_ACTION_FINGERPRINT_ENROLLReady) { _ACTION_FINGERPRINT_ENROLLContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_FINGERPRINT_ENROLL"); _ACTION_FINGERPRINT_ENROLLReady = true; } return _ACTION_FINGERPRINT_ENROLLContent; } }
         private static Java.Lang.String _ACTION_FINGERPRINT_ENROLLContent = default;
         private static bool _ACTION_FINGERPRINT_ENROLLReady = false; // this is used because in case of generics 
@@ -533,7 +533,7 @@ namespace Android.Provider
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/provider/Settings.html#ACTION_STORAGE_VOLUME_ACCESS_SETTINGS"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String ACTION_STORAGE_VOLUME_ACCESS_SETTINGS { get { if (!_ACTION_STORAGE_VOLUME_ACCESS_SETTINGSReady) { _ACTION_STORAGE_VOLUME_ACCESS_SETTINGSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACTION_STORAGE_VOLUME_ACCESS_SETTINGS"); _ACTION_STORAGE_VOLUME_ACCESS_SETTINGSReady = true; } return _ACTION_STORAGE_VOLUME_ACCESS_SETTINGSContent; } }
         private static Java.Lang.String _ACTION_STORAGE_VOLUME_ACCESS_SETTINGSContent = default;
         private static bool _ACTION_STORAGE_VOLUME_ACCESS_SETTINGSReady = false; // this is used because in case of generics 
@@ -825,21 +825,21 @@ namespace Android.Provider
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Global.html#WIFI_SLEEP_POLICY_DEFAULT"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int WIFI_SLEEP_POLICY_DEFAULT { get { if (!_WIFI_SLEEP_POLICY_DEFAULTReady) { _WIFI_SLEEP_POLICY_DEFAULTContent = SGetField<int>(LocalBridgeClazz, "WIFI_SLEEP_POLICY_DEFAULT"); _WIFI_SLEEP_POLICY_DEFAULTReady = true; } return _WIFI_SLEEP_POLICY_DEFAULTContent; } }
             private static int _WIFI_SLEEP_POLICY_DEFAULTContent = default;
             private static bool _WIFI_SLEEP_POLICY_DEFAULTReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Global.html#WIFI_SLEEP_POLICY_NEVER"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int WIFI_SLEEP_POLICY_NEVER { get { if (!_WIFI_SLEEP_POLICY_NEVERReady) { _WIFI_SLEEP_POLICY_NEVERContent = SGetField<int>(LocalBridgeClazz, "WIFI_SLEEP_POLICY_NEVER"); _WIFI_SLEEP_POLICY_NEVERReady = true; } return _WIFI_SLEEP_POLICY_NEVERContent; } }
             private static int _WIFI_SLEEP_POLICY_NEVERContent = default;
             private static bool _WIFI_SLEEP_POLICY_NEVERReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Global.html#WIFI_SLEEP_POLICY_NEVER_WHILE_PLUGGED"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int WIFI_SLEEP_POLICY_NEVER_WHILE_PLUGGED { get { if (!_WIFI_SLEEP_POLICY_NEVER_WHILE_PLUGGEDReady) { _WIFI_SLEEP_POLICY_NEVER_WHILE_PLUGGEDContent = SGetField<int>(LocalBridgeClazz, "WIFI_SLEEP_POLICY_NEVER_WHILE_PLUGGED"); _WIFI_SLEEP_POLICY_NEVER_WHILE_PLUGGEDReady = true; } return _WIFI_SLEEP_POLICY_NEVER_WHILE_PLUGGEDContent; } }
             private static int _WIFI_SLEEP_POLICY_NEVER_WHILE_PLUGGEDContent = default;
             private static bool _WIFI_SLEEP_POLICY_NEVER_WHILE_PLUGGEDReady = false; // this is used because in case of generics 
@@ -876,7 +876,7 @@ namespace Android.Provider
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Global.html#APPLY_RAMPING_RINGER"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String APPLY_RAMPING_RINGER { get { if (!_APPLY_RAMPING_RINGERReady) { _APPLY_RAMPING_RINGERContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "APPLY_RAMPING_RINGER"); _APPLY_RAMPING_RINGERReady = true; } return _APPLY_RAMPING_RINGERContent; } }
             private static Java.Lang.String _APPLY_RAMPING_RINGERContent = default;
             private static bool _APPLY_RAMPING_RINGERReady = false; // this is used because in case of generics 
@@ -949,7 +949,7 @@ namespace Android.Provider
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Global.html#INSTALL_NON_MARKET_APPS"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String INSTALL_NON_MARKET_APPS { get { if (!_INSTALL_NON_MARKET_APPSReady) { _INSTALL_NON_MARKET_APPSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "INSTALL_NON_MARKET_APPS"); _INSTALL_NON_MARKET_APPSReady = true; } return _INSTALL_NON_MARKET_APPSContent; } }
             private static Java.Lang.String _INSTALL_NON_MARKET_APPSContent = default;
             private static bool _INSTALL_NON_MARKET_APPSReady = false; // this is used because in case of generics 
@@ -998,7 +998,7 @@ namespace Android.Provider
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Global.html#SHOW_PROCESSES"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String SHOW_PROCESSES { get { if (!_SHOW_PROCESSESReady) { _SHOW_PROCESSESContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SHOW_PROCESSES"); _SHOW_PROCESSESReady = true; } return _SHOW_PROCESSESContent; } }
             private static Java.Lang.String _SHOW_PROCESSESContent = default;
             private static bool _SHOW_PROCESSESReady = false; // this is used because in case of generics 
@@ -1053,21 +1053,21 @@ namespace Android.Provider
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Global.html#WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ON"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ON { get { if (!_WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ONReady) { _WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ONContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ON"); _WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ONReady = true; } return _WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ONContent; } }
             private static Java.Lang.String _WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ONContent = default;
             private static bool _WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ONReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Global.html#WIFI_NETWORKS_AVAILABLE_REPEAT_DELAY"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String WIFI_NETWORKS_AVAILABLE_REPEAT_DELAY { get { if (!_WIFI_NETWORKS_AVAILABLE_REPEAT_DELAYReady) { _WIFI_NETWORKS_AVAILABLE_REPEAT_DELAYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WIFI_NETWORKS_AVAILABLE_REPEAT_DELAY"); _WIFI_NETWORKS_AVAILABLE_REPEAT_DELAYReady = true; } return _WIFI_NETWORKS_AVAILABLE_REPEAT_DELAYContent; } }
             private static Java.Lang.String _WIFI_NETWORKS_AVAILABLE_REPEAT_DELAYContent = default;
             private static bool _WIFI_NETWORKS_AVAILABLE_REPEAT_DELAYReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Global.html#WIFI_NUM_OPEN_NETWORKS_KEPT"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String WIFI_NUM_OPEN_NETWORKS_KEPT { get { if (!_WIFI_NUM_OPEN_NETWORKS_KEPTReady) { _WIFI_NUM_OPEN_NETWORKS_KEPTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WIFI_NUM_OPEN_NETWORKS_KEPT"); _WIFI_NUM_OPEN_NETWORKS_KEPTReady = true; } return _WIFI_NUM_OPEN_NETWORKS_KEPTContent; } }
             private static Java.Lang.String _WIFI_NUM_OPEN_NETWORKS_KEPTContent = default;
             private static bool _WIFI_NUM_OPEN_NETWORKS_KEPTReady = false; // this is used because in case of generics 
@@ -1080,7 +1080,7 @@ namespace Android.Provider
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Global.html#WIFI_SLEEP_POLICY"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String WIFI_SLEEP_POLICY { get { if (!_WIFI_SLEEP_POLICYReady) { _WIFI_SLEEP_POLICYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WIFI_SLEEP_POLICY"); _WIFI_SLEEP_POLICYReady = true; } return _WIFI_SLEEP_POLICYContent; } }
             private static Java.Lang.String _WIFI_SLEEP_POLICYContent = default;
             private static bool _WIFI_SLEEP_POLICYReady = false; // this is used because in case of generics 
@@ -1373,14 +1373,14 @@ namespace Android.Provider
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Secure.html#LOCATION_MODE_BATTERY_SAVING"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int LOCATION_MODE_BATTERY_SAVING { get { if (!_LOCATION_MODE_BATTERY_SAVINGReady) { _LOCATION_MODE_BATTERY_SAVINGContent = SGetField<int>(LocalBridgeClazz, "LOCATION_MODE_BATTERY_SAVING"); _LOCATION_MODE_BATTERY_SAVINGReady = true; } return _LOCATION_MODE_BATTERY_SAVINGContent; } }
             private static int _LOCATION_MODE_BATTERY_SAVINGContent = default;
             private static bool _LOCATION_MODE_BATTERY_SAVINGReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Secure.html#LOCATION_MODE_HIGH_ACCURACY"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int LOCATION_MODE_HIGH_ACCURACY { get { if (!_LOCATION_MODE_HIGH_ACCURACYReady) { _LOCATION_MODE_HIGH_ACCURACYContent = SGetField<int>(LocalBridgeClazz, "LOCATION_MODE_HIGH_ACCURACY"); _LOCATION_MODE_HIGH_ACCURACYReady = true; } return _LOCATION_MODE_HIGH_ACCURACYContent; } }
             private static int _LOCATION_MODE_HIGH_ACCURACYContent = default;
             private static bool _LOCATION_MODE_HIGH_ACCURACYReady = false; // this is used because in case of generics 
@@ -1393,7 +1393,7 @@ namespace Android.Provider
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Secure.html#LOCATION_MODE_SENSORS_ONLY"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int LOCATION_MODE_SENSORS_ONLY { get { if (!_LOCATION_MODE_SENSORS_ONLYReady) { _LOCATION_MODE_SENSORS_ONLYContent = SGetField<int>(LocalBridgeClazz, "LOCATION_MODE_SENSORS_ONLY"); _LOCATION_MODE_SENSORS_ONLYReady = true; } return _LOCATION_MODE_SENSORS_ONLYContent; } }
             private static int _LOCATION_MODE_SENSORS_ONLYContent = default;
             private static bool _LOCATION_MODE_SENSORS_ONLYReady = false; // this is used because in case of generics 
@@ -1412,21 +1412,21 @@ namespace Android.Provider
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Secure.html#ACCESSIBILITY_SPEAK_PASSWORD"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String ACCESSIBILITY_SPEAK_PASSWORD { get { if (!_ACCESSIBILITY_SPEAK_PASSWORDReady) { _ACCESSIBILITY_SPEAK_PASSWORDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ACCESSIBILITY_SPEAK_PASSWORD"); _ACCESSIBILITY_SPEAK_PASSWORDReady = true; } return _ACCESSIBILITY_SPEAK_PASSWORDContent; } }
             private static Java.Lang.String _ACCESSIBILITY_SPEAK_PASSWORDContent = default;
             private static bool _ACCESSIBILITY_SPEAK_PASSWORDReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Secure.html#ADB_ENABLED"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String ADB_ENABLED { get { if (!_ADB_ENABLEDReady) { _ADB_ENABLEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ADB_ENABLED"); _ADB_ENABLEDReady = true; } return _ADB_ENABLEDContent; } }
             private static Java.Lang.String _ADB_ENABLEDContent = default;
             private static bool _ADB_ENABLEDReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Secure.html#ALLOW_MOCK_LOCATION"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String ALLOW_MOCK_LOCATION { get { if (!_ALLOW_MOCK_LOCATIONReady) { _ALLOW_MOCK_LOCATIONContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ALLOW_MOCK_LOCATION"); _ALLOW_MOCK_LOCATIONReady = true; } return _ALLOW_MOCK_LOCATIONContent; } }
             private static Java.Lang.String _ALLOW_MOCK_LOCATIONContent = default;
             private static bool _ALLOW_MOCK_LOCATIONReady = false; // this is used because in case of generics 
@@ -1445,21 +1445,21 @@ namespace Android.Provider
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Secure.html#BACKGROUND_DATA"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String BACKGROUND_DATA { get { if (!_BACKGROUND_DATAReady) { _BACKGROUND_DATAContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "BACKGROUND_DATA"); _BACKGROUND_DATAReady = true; } return _BACKGROUND_DATAContent; } }
             private static Java.Lang.String _BACKGROUND_DATAContent = default;
             private static bool _BACKGROUND_DATAReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Secure.html#BLUETOOTH_ON"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String BLUETOOTH_ON { get { if (!_BLUETOOTH_ONReady) { _BLUETOOTH_ONContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "BLUETOOTH_ON"); _BLUETOOTH_ONReady = true; } return _BLUETOOTH_ONContent; } }
             private static Java.Lang.String _BLUETOOTH_ONContent = default;
             private static bool _BLUETOOTH_ONReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Secure.html#DATA_ROAMING"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String DATA_ROAMING { get { if (!_DATA_ROAMINGReady) { _DATA_ROAMINGContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "DATA_ROAMING"); _DATA_ROAMINGReady = true; } return _DATA_ROAMINGContent; } }
             private static Java.Lang.String _DATA_ROAMINGContent = default;
             private static bool _DATA_ROAMINGReady = false; // this is used because in case of generics 
@@ -1472,14 +1472,14 @@ namespace Android.Provider
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Secure.html#DEVELOPMENT_SETTINGS_ENABLED"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String DEVELOPMENT_SETTINGS_ENABLED { get { if (!_DEVELOPMENT_SETTINGS_ENABLEDReady) { _DEVELOPMENT_SETTINGS_ENABLEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "DEVELOPMENT_SETTINGS_ENABLED"); _DEVELOPMENT_SETTINGS_ENABLEDReady = true; } return _DEVELOPMENT_SETTINGS_ENABLEDContent; } }
             private static Java.Lang.String _DEVELOPMENT_SETTINGS_ENABLEDContent = default;
             private static bool _DEVELOPMENT_SETTINGS_ENABLEDReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Secure.html#DEVICE_PROVISIONED"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String DEVICE_PROVISIONED { get { if (!_DEVICE_PROVISIONEDReady) { _DEVICE_PROVISIONEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "DEVICE_PROVISIONED"); _DEVICE_PROVISIONEDReady = true; } return _DEVICE_PROVISIONEDContent; } }
             private static Java.Lang.String _DEVICE_PROVISIONEDContent = default;
             private static bool _DEVICE_PROVISIONEDReady = false; // this is used because in case of generics 
@@ -1498,7 +1498,7 @@ namespace Android.Provider
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Secure.html#HTTP_PROXY"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String HTTP_PROXY { get { if (!_HTTP_PROXYReady) { _HTTP_PROXYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "HTTP_PROXY"); _HTTP_PROXYReady = true; } return _HTTP_PROXYContent; } }
             private static Java.Lang.String _HTTP_PROXYContent = default;
             private static bool _HTTP_PROXYReady = false; // this is used because in case of generics 
@@ -1511,56 +1511,56 @@ namespace Android.Provider
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Secure.html#INSTALL_NON_MARKET_APPS"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String INSTALL_NON_MARKET_APPS { get { if (!_INSTALL_NON_MARKET_APPSReady) { _INSTALL_NON_MARKET_APPSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "INSTALL_NON_MARKET_APPS"); _INSTALL_NON_MARKET_APPSReady = true; } return _INSTALL_NON_MARKET_APPSContent; } }
             private static Java.Lang.String _INSTALL_NON_MARKET_APPSContent = default;
             private static bool _INSTALL_NON_MARKET_APPSReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Secure.html#LOCATION_MODE"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String LOCATION_MODE { get { if (!_LOCATION_MODEReady) { _LOCATION_MODEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "LOCATION_MODE"); _LOCATION_MODEReady = true; } return _LOCATION_MODEContent; } }
             private static Java.Lang.String _LOCATION_MODEContent = default;
             private static bool _LOCATION_MODEReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Secure.html#LOCATION_PROVIDERS_ALLOWED"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String LOCATION_PROVIDERS_ALLOWED { get { if (!_LOCATION_PROVIDERS_ALLOWEDReady) { _LOCATION_PROVIDERS_ALLOWEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "LOCATION_PROVIDERS_ALLOWED"); _LOCATION_PROVIDERS_ALLOWEDReady = true; } return _LOCATION_PROVIDERS_ALLOWEDContent; } }
             private static Java.Lang.String _LOCATION_PROVIDERS_ALLOWEDContent = default;
             private static bool _LOCATION_PROVIDERS_ALLOWEDReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Secure.html#LOCK_PATTERN_ENABLED"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String LOCK_PATTERN_ENABLED { get { if (!_LOCK_PATTERN_ENABLEDReady) { _LOCK_PATTERN_ENABLEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "LOCK_PATTERN_ENABLED"); _LOCK_PATTERN_ENABLEDReady = true; } return _LOCK_PATTERN_ENABLEDContent; } }
             private static Java.Lang.String _LOCK_PATTERN_ENABLEDContent = default;
             private static bool _LOCK_PATTERN_ENABLEDReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Secure.html#LOCK_PATTERN_TACTILE_FEEDBACK_ENABLED"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String LOCK_PATTERN_TACTILE_FEEDBACK_ENABLED { get { if (!_LOCK_PATTERN_TACTILE_FEEDBACK_ENABLEDReady) { _LOCK_PATTERN_TACTILE_FEEDBACK_ENABLEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "LOCK_PATTERN_TACTILE_FEEDBACK_ENABLED"); _LOCK_PATTERN_TACTILE_FEEDBACK_ENABLEDReady = true; } return _LOCK_PATTERN_TACTILE_FEEDBACK_ENABLEDContent; } }
             private static Java.Lang.String _LOCK_PATTERN_TACTILE_FEEDBACK_ENABLEDContent = default;
             private static bool _LOCK_PATTERN_TACTILE_FEEDBACK_ENABLEDReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Secure.html#LOCK_PATTERN_VISIBLE"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String LOCK_PATTERN_VISIBLE { get { if (!_LOCK_PATTERN_VISIBLEReady) { _LOCK_PATTERN_VISIBLEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "LOCK_PATTERN_VISIBLE"); _LOCK_PATTERN_VISIBLEReady = true; } return _LOCK_PATTERN_VISIBLEContent; } }
             private static Java.Lang.String _LOCK_PATTERN_VISIBLEContent = default;
             private static bool _LOCK_PATTERN_VISIBLEReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Secure.html#LOGGING_ID"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String LOGGING_ID { get { if (!_LOGGING_IDReady) { _LOGGING_IDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "LOGGING_ID"); _LOGGING_IDReady = true; } return _LOGGING_IDContent; } }
             private static Java.Lang.String _LOGGING_IDContent = default;
             private static bool _LOGGING_IDReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Secure.html#NETWORK_PREFERENCE"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String NETWORK_PREFERENCE { get { if (!_NETWORK_PREFERENCEReady) { _NETWORK_PREFERENCEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "NETWORK_PREFERENCE"); _NETWORK_PREFERENCEReady = true; } return _NETWORK_PREFERENCEContent; } }
             private static Java.Lang.String _NETWORK_PREFERENCEContent = default;
             private static bool _NETWORK_PREFERENCEReady = false; // this is used because in case of generics 
@@ -1591,7 +1591,7 @@ namespace Android.Provider
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Secure.html#SECURE_FRP_MODE"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String SECURE_FRP_MODE { get { if (!_SECURE_FRP_MODEReady) { _SECURE_FRP_MODEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SECURE_FRP_MODE"); _SECURE_FRP_MODEReady = true; } return _SECURE_FRP_MODEContent; } }
             private static Java.Lang.String _SECURE_FRP_MODEContent = default;
             private static bool _SECURE_FRP_MODEReady = false; // this is used because in case of generics 
@@ -1622,14 +1622,14 @@ namespace Android.Provider
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Secure.html#TTS_DEFAULT_COUNTRY"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String TTS_DEFAULT_COUNTRY { get { if (!_TTS_DEFAULT_COUNTRYReady) { _TTS_DEFAULT_COUNTRYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "TTS_DEFAULT_COUNTRY"); _TTS_DEFAULT_COUNTRYReady = true; } return _TTS_DEFAULT_COUNTRYContent; } }
             private static Java.Lang.String _TTS_DEFAULT_COUNTRYContent = default;
             private static bool _TTS_DEFAULT_COUNTRYReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Secure.html#TTS_DEFAULT_LANG"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String TTS_DEFAULT_LANG { get { if (!_TTS_DEFAULT_LANGReady) { _TTS_DEFAULT_LANGContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "TTS_DEFAULT_LANG"); _TTS_DEFAULT_LANGReady = true; } return _TTS_DEFAULT_LANGContent; } }
             private static Java.Lang.String _TTS_DEFAULT_LANGContent = default;
             private static bool _TTS_DEFAULT_LANGReady = false; // this is used because in case of generics 
@@ -1654,7 +1654,7 @@ namespace Android.Provider
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Secure.html#TTS_DEFAULT_VARIANT"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String TTS_DEFAULT_VARIANT { get { if (!_TTS_DEFAULT_VARIANTReady) { _TTS_DEFAULT_VARIANTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "TTS_DEFAULT_VARIANT"); _TTS_DEFAULT_VARIANTReady = true; } return _TTS_DEFAULT_VARIANTContent; } }
             private static Java.Lang.String _TTS_DEFAULT_VARIANTContent = default;
             private static bool _TTS_DEFAULT_VARIANTReady = false; // this is used because in case of generics 
@@ -1667,147 +1667,147 @@ namespace Android.Provider
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Secure.html#TTS_USE_DEFAULTS"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String TTS_USE_DEFAULTS { get { if (!_TTS_USE_DEFAULTSReady) { _TTS_USE_DEFAULTSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "TTS_USE_DEFAULTS"); _TTS_USE_DEFAULTSReady = true; } return _TTS_USE_DEFAULTSContent; } }
             private static Java.Lang.String _TTS_USE_DEFAULTSContent = default;
             private static bool _TTS_USE_DEFAULTSReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Secure.html#USB_MASS_STORAGE_ENABLED"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String USB_MASS_STORAGE_ENABLED { get { if (!_USB_MASS_STORAGE_ENABLEDReady) { _USB_MASS_STORAGE_ENABLEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "USB_MASS_STORAGE_ENABLED"); _USB_MASS_STORAGE_ENABLEDReady = true; } return _USB_MASS_STORAGE_ENABLEDContent; } }
             private static Java.Lang.String _USB_MASS_STORAGE_ENABLEDContent = default;
             private static bool _USB_MASS_STORAGE_ENABLEDReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Secure.html#USE_GOOGLE_MAIL"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String USE_GOOGLE_MAIL { get { if (!_USE_GOOGLE_MAILReady) { _USE_GOOGLE_MAILContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "USE_GOOGLE_MAIL"); _USE_GOOGLE_MAILReady = true; } return _USE_GOOGLE_MAILContent; } }
             private static Java.Lang.String _USE_GOOGLE_MAILContent = default;
             private static bool _USE_GOOGLE_MAILReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Secure.html#WIFI_MAX_DHCP_RETRY_COUNT"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String WIFI_MAX_DHCP_RETRY_COUNT { get { if (!_WIFI_MAX_DHCP_RETRY_COUNTReady) { _WIFI_MAX_DHCP_RETRY_COUNTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WIFI_MAX_DHCP_RETRY_COUNT"); _WIFI_MAX_DHCP_RETRY_COUNTReady = true; } return _WIFI_MAX_DHCP_RETRY_COUNTContent; } }
             private static Java.Lang.String _WIFI_MAX_DHCP_RETRY_COUNTContent = default;
             private static bool _WIFI_MAX_DHCP_RETRY_COUNTReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Secure.html#WIFI_MOBILE_DATA_TRANSITION_WAKELOCK_TIMEOUT_MS"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String WIFI_MOBILE_DATA_TRANSITION_WAKELOCK_TIMEOUT_MS { get { if (!_WIFI_MOBILE_DATA_TRANSITION_WAKELOCK_TIMEOUT_MSReady) { _WIFI_MOBILE_DATA_TRANSITION_WAKELOCK_TIMEOUT_MSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WIFI_MOBILE_DATA_TRANSITION_WAKELOCK_TIMEOUT_MS"); _WIFI_MOBILE_DATA_TRANSITION_WAKELOCK_TIMEOUT_MSReady = true; } return _WIFI_MOBILE_DATA_TRANSITION_WAKELOCK_TIMEOUT_MSContent; } }
             private static Java.Lang.String _WIFI_MOBILE_DATA_TRANSITION_WAKELOCK_TIMEOUT_MSContent = default;
             private static bool _WIFI_MOBILE_DATA_TRANSITION_WAKELOCK_TIMEOUT_MSReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Secure.html#WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ON"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ON { get { if (!_WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ONReady) { _WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ONContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ON"); _WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ONReady = true; } return _WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ONContent; } }
             private static Java.Lang.String _WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ONContent = default;
             private static bool _WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ONReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Secure.html#WIFI_NETWORKS_AVAILABLE_REPEAT_DELAY"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String WIFI_NETWORKS_AVAILABLE_REPEAT_DELAY { get { if (!_WIFI_NETWORKS_AVAILABLE_REPEAT_DELAYReady) { _WIFI_NETWORKS_AVAILABLE_REPEAT_DELAYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WIFI_NETWORKS_AVAILABLE_REPEAT_DELAY"); _WIFI_NETWORKS_AVAILABLE_REPEAT_DELAYReady = true; } return _WIFI_NETWORKS_AVAILABLE_REPEAT_DELAYContent; } }
             private static Java.Lang.String _WIFI_NETWORKS_AVAILABLE_REPEAT_DELAYContent = default;
             private static bool _WIFI_NETWORKS_AVAILABLE_REPEAT_DELAYReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Secure.html#WIFI_NUM_OPEN_NETWORKS_KEPT"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String WIFI_NUM_OPEN_NETWORKS_KEPT { get { if (!_WIFI_NUM_OPEN_NETWORKS_KEPTReady) { _WIFI_NUM_OPEN_NETWORKS_KEPTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WIFI_NUM_OPEN_NETWORKS_KEPT"); _WIFI_NUM_OPEN_NETWORKS_KEPTReady = true; } return _WIFI_NUM_OPEN_NETWORKS_KEPTContent; } }
             private static Java.Lang.String _WIFI_NUM_OPEN_NETWORKS_KEPTContent = default;
             private static bool _WIFI_NUM_OPEN_NETWORKS_KEPTReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Secure.html#WIFI_ON"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String WIFI_ON { get { if (!_WIFI_ONReady) { _WIFI_ONContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WIFI_ON"); _WIFI_ONReady = true; } return _WIFI_ONContent; } }
             private static Java.Lang.String _WIFI_ONContent = default;
             private static bool _WIFI_ONReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Secure.html#WIFI_WATCHDOG_ACCEPTABLE_PACKET_LOSS_PERCENTAGE"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String WIFI_WATCHDOG_ACCEPTABLE_PACKET_LOSS_PERCENTAGE { get { if (!_WIFI_WATCHDOG_ACCEPTABLE_PACKET_LOSS_PERCENTAGEReady) { _WIFI_WATCHDOG_ACCEPTABLE_PACKET_LOSS_PERCENTAGEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WIFI_WATCHDOG_ACCEPTABLE_PACKET_LOSS_PERCENTAGE"); _WIFI_WATCHDOG_ACCEPTABLE_PACKET_LOSS_PERCENTAGEReady = true; } return _WIFI_WATCHDOG_ACCEPTABLE_PACKET_LOSS_PERCENTAGEContent; } }
             private static Java.Lang.String _WIFI_WATCHDOG_ACCEPTABLE_PACKET_LOSS_PERCENTAGEContent = default;
             private static bool _WIFI_WATCHDOG_ACCEPTABLE_PACKET_LOSS_PERCENTAGEReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Secure.html#WIFI_WATCHDOG_AP_COUNT"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String WIFI_WATCHDOG_AP_COUNT { get { if (!_WIFI_WATCHDOG_AP_COUNTReady) { _WIFI_WATCHDOG_AP_COUNTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WIFI_WATCHDOG_AP_COUNT"); _WIFI_WATCHDOG_AP_COUNTReady = true; } return _WIFI_WATCHDOG_AP_COUNTContent; } }
             private static Java.Lang.String _WIFI_WATCHDOG_AP_COUNTContent = default;
             private static bool _WIFI_WATCHDOG_AP_COUNTReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Secure.html#WIFI_WATCHDOG_BACKGROUND_CHECK_DELAY_MS"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String WIFI_WATCHDOG_BACKGROUND_CHECK_DELAY_MS { get { if (!_WIFI_WATCHDOG_BACKGROUND_CHECK_DELAY_MSReady) { _WIFI_WATCHDOG_BACKGROUND_CHECK_DELAY_MSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WIFI_WATCHDOG_BACKGROUND_CHECK_DELAY_MS"); _WIFI_WATCHDOG_BACKGROUND_CHECK_DELAY_MSReady = true; } return _WIFI_WATCHDOG_BACKGROUND_CHECK_DELAY_MSContent; } }
             private static Java.Lang.String _WIFI_WATCHDOG_BACKGROUND_CHECK_DELAY_MSContent = default;
             private static bool _WIFI_WATCHDOG_BACKGROUND_CHECK_DELAY_MSReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Secure.html#WIFI_WATCHDOG_BACKGROUND_CHECK_ENABLED"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String WIFI_WATCHDOG_BACKGROUND_CHECK_ENABLED { get { if (!_WIFI_WATCHDOG_BACKGROUND_CHECK_ENABLEDReady) { _WIFI_WATCHDOG_BACKGROUND_CHECK_ENABLEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WIFI_WATCHDOG_BACKGROUND_CHECK_ENABLED"); _WIFI_WATCHDOG_BACKGROUND_CHECK_ENABLEDReady = true; } return _WIFI_WATCHDOG_BACKGROUND_CHECK_ENABLEDContent; } }
             private static Java.Lang.String _WIFI_WATCHDOG_BACKGROUND_CHECK_ENABLEDContent = default;
             private static bool _WIFI_WATCHDOG_BACKGROUND_CHECK_ENABLEDReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Secure.html#WIFI_WATCHDOG_BACKGROUND_CHECK_TIMEOUT_MS"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String WIFI_WATCHDOG_BACKGROUND_CHECK_TIMEOUT_MS { get { if (!_WIFI_WATCHDOG_BACKGROUND_CHECK_TIMEOUT_MSReady) { _WIFI_WATCHDOG_BACKGROUND_CHECK_TIMEOUT_MSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WIFI_WATCHDOG_BACKGROUND_CHECK_TIMEOUT_MS"); _WIFI_WATCHDOG_BACKGROUND_CHECK_TIMEOUT_MSReady = true; } return _WIFI_WATCHDOG_BACKGROUND_CHECK_TIMEOUT_MSContent; } }
             private static Java.Lang.String _WIFI_WATCHDOG_BACKGROUND_CHECK_TIMEOUT_MSContent = default;
             private static bool _WIFI_WATCHDOG_BACKGROUND_CHECK_TIMEOUT_MSReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Secure.html#WIFI_WATCHDOG_INITIAL_IGNORED_PING_COUNT"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String WIFI_WATCHDOG_INITIAL_IGNORED_PING_COUNT { get { if (!_WIFI_WATCHDOG_INITIAL_IGNORED_PING_COUNTReady) { _WIFI_WATCHDOG_INITIAL_IGNORED_PING_COUNTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WIFI_WATCHDOG_INITIAL_IGNORED_PING_COUNT"); _WIFI_WATCHDOG_INITIAL_IGNORED_PING_COUNTReady = true; } return _WIFI_WATCHDOG_INITIAL_IGNORED_PING_COUNTContent; } }
             private static Java.Lang.String _WIFI_WATCHDOG_INITIAL_IGNORED_PING_COUNTContent = default;
             private static bool _WIFI_WATCHDOG_INITIAL_IGNORED_PING_COUNTReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Secure.html#WIFI_WATCHDOG_MAX_AP_CHECKS"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String WIFI_WATCHDOG_MAX_AP_CHECKS { get { if (!_WIFI_WATCHDOG_MAX_AP_CHECKSReady) { _WIFI_WATCHDOG_MAX_AP_CHECKSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WIFI_WATCHDOG_MAX_AP_CHECKS"); _WIFI_WATCHDOG_MAX_AP_CHECKSReady = true; } return _WIFI_WATCHDOG_MAX_AP_CHECKSContent; } }
             private static Java.Lang.String _WIFI_WATCHDOG_MAX_AP_CHECKSContent = default;
             private static bool _WIFI_WATCHDOG_MAX_AP_CHECKSReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Secure.html#WIFI_WATCHDOG_ON"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String WIFI_WATCHDOG_ON { get { if (!_WIFI_WATCHDOG_ONReady) { _WIFI_WATCHDOG_ONContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WIFI_WATCHDOG_ON"); _WIFI_WATCHDOG_ONReady = true; } return _WIFI_WATCHDOG_ONContent; } }
             private static Java.Lang.String _WIFI_WATCHDOG_ONContent = default;
             private static bool _WIFI_WATCHDOG_ONReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Secure.html#WIFI_WATCHDOG_PING_COUNT"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String WIFI_WATCHDOG_PING_COUNT { get { if (!_WIFI_WATCHDOG_PING_COUNTReady) { _WIFI_WATCHDOG_PING_COUNTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WIFI_WATCHDOG_PING_COUNT"); _WIFI_WATCHDOG_PING_COUNTReady = true; } return _WIFI_WATCHDOG_PING_COUNTContent; } }
             private static Java.Lang.String _WIFI_WATCHDOG_PING_COUNTContent = default;
             private static bool _WIFI_WATCHDOG_PING_COUNTReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Secure.html#WIFI_WATCHDOG_PING_DELAY_MS"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String WIFI_WATCHDOG_PING_DELAY_MS { get { if (!_WIFI_WATCHDOG_PING_DELAY_MSReady) { _WIFI_WATCHDOG_PING_DELAY_MSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WIFI_WATCHDOG_PING_DELAY_MS"); _WIFI_WATCHDOG_PING_DELAY_MSReady = true; } return _WIFI_WATCHDOG_PING_DELAY_MSContent; } }
             private static Java.Lang.String _WIFI_WATCHDOG_PING_DELAY_MSContent = default;
             private static bool _WIFI_WATCHDOG_PING_DELAY_MSReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Secure.html#WIFI_WATCHDOG_PING_TIMEOUT_MS"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String WIFI_WATCHDOG_PING_TIMEOUT_MS { get { if (!_WIFI_WATCHDOG_PING_TIMEOUT_MSReady) { _WIFI_WATCHDOG_PING_TIMEOUT_MSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WIFI_WATCHDOG_PING_TIMEOUT_MS"); _WIFI_WATCHDOG_PING_TIMEOUT_MSReady = true; } return _WIFI_WATCHDOG_PING_TIMEOUT_MSContent; } }
             private static Java.Lang.String _WIFI_WATCHDOG_PING_TIMEOUT_MSContent = default;
             private static bool _WIFI_WATCHDOG_PING_TIMEOUT_MSReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.Secure.html#WIFI_WATCHDOG_WATCH_LIST"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String WIFI_WATCHDOG_WATCH_LIST { get { if (!_WIFI_WATCHDOG_WATCH_LISTReady) { _WIFI_WATCHDOG_WATCH_LISTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WIFI_WATCHDOG_WATCH_LIST"); _WIFI_WATCHDOG_WATCH_LISTReady = true; } return _WIFI_WATCHDOG_WATCH_LISTContent; } }
             private static Java.Lang.String _WIFI_WATCHDOG_WATCH_LISTContent = default;
             private static bool _WIFI_WATCHDOG_WATCH_LISTReady = false; // this is used because in case of generics 
@@ -1830,7 +1830,7 @@ namespace Android.Provider
             /// <param name="arg0"><see cref="Android.Content.ContentResolver"/></param>
             /// <param name="arg1"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="bool"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static bool IsLocationProviderEnabled(Android.Content.ContentResolver arg0, Java.Lang.String arg1)
             {
                 return SExecute<bool>(LocalBridgeClazz, "isLocationProviderEnabled", arg0, arg1);
@@ -1961,7 +1961,7 @@ namespace Android.Provider
             /// <param name="arg0"><see cref="Android.Content.ContentResolver"/></param>
             /// <param name="arg1"><see cref="Java.Lang.String"/></param>
             /// <param name="arg2"><see cref="bool"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static void SetLocationProviderEnabled(Android.Content.ContentResolver arg0, Java.Lang.String arg1, bool arg2)
             {
                 SExecute(LocalBridgeClazz, "setLocationProviderEnabled", arg0, arg1, arg2);
@@ -2063,21 +2063,21 @@ namespace Android.Provider
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#WIFI_SLEEP_POLICY_DEFAULT"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int WIFI_SLEEP_POLICY_DEFAULT { get { if (!_WIFI_SLEEP_POLICY_DEFAULTReady) { _WIFI_SLEEP_POLICY_DEFAULTContent = SGetField<int>(LocalBridgeClazz, "WIFI_SLEEP_POLICY_DEFAULT"); _WIFI_SLEEP_POLICY_DEFAULTReady = true; } return _WIFI_SLEEP_POLICY_DEFAULTContent; } }
             private static int _WIFI_SLEEP_POLICY_DEFAULTContent = default;
             private static bool _WIFI_SLEEP_POLICY_DEFAULTReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#WIFI_SLEEP_POLICY_NEVER"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int WIFI_SLEEP_POLICY_NEVER { get { if (!_WIFI_SLEEP_POLICY_NEVERReady) { _WIFI_SLEEP_POLICY_NEVERContent = SGetField<int>(LocalBridgeClazz, "WIFI_SLEEP_POLICY_NEVER"); _WIFI_SLEEP_POLICY_NEVERReady = true; } return _WIFI_SLEEP_POLICY_NEVERContent; } }
             private static int _WIFI_SLEEP_POLICY_NEVERContent = default;
             private static bool _WIFI_SLEEP_POLICY_NEVERReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#WIFI_SLEEP_POLICY_NEVER_WHILE_PLUGGED"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int WIFI_SLEEP_POLICY_NEVER_WHILE_PLUGGED { get { if (!_WIFI_SLEEP_POLICY_NEVER_WHILE_PLUGGEDReady) { _WIFI_SLEEP_POLICY_NEVER_WHILE_PLUGGEDContent = SGetField<int>(LocalBridgeClazz, "WIFI_SLEEP_POLICY_NEVER_WHILE_PLUGGED"); _WIFI_SLEEP_POLICY_NEVER_WHILE_PLUGGEDReady = true; } return _WIFI_SLEEP_POLICY_NEVER_WHILE_PLUGGEDContent; } }
             private static int _WIFI_SLEEP_POLICY_NEVER_WHILE_PLUGGEDContent = default;
             private static bool _WIFI_SLEEP_POLICY_NEVER_WHILE_PLUGGEDReady = false; // this is used because in case of generics 
@@ -2090,21 +2090,21 @@ namespace Android.Provider
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#ADB_ENABLED"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String ADB_ENABLED { get { if (!_ADB_ENABLEDReady) { _ADB_ENABLEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ADB_ENABLED"); _ADB_ENABLEDReady = true; } return _ADB_ENABLEDContent; } }
             private static Java.Lang.String _ADB_ENABLEDContent = default;
             private static bool _ADB_ENABLEDReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#AIRPLANE_MODE_ON"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String AIRPLANE_MODE_ON { get { if (!_AIRPLANE_MODE_ONReady) { _AIRPLANE_MODE_ONContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "AIRPLANE_MODE_ON"); _AIRPLANE_MODE_ONReady = true; } return _AIRPLANE_MODE_ONContent; } }
             private static Java.Lang.String _AIRPLANE_MODE_ONContent = default;
             private static bool _AIRPLANE_MODE_ONReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#AIRPLANE_MODE_RADIOS"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String AIRPLANE_MODE_RADIOS { get { if (!_AIRPLANE_MODE_RADIOSReady) { _AIRPLANE_MODE_RADIOSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "AIRPLANE_MODE_RADIOS"); _AIRPLANE_MODE_RADIOSReady = true; } return _AIRPLANE_MODE_RADIOSContent; } }
             private static Java.Lang.String _AIRPLANE_MODE_RADIOSContent = default;
             private static bool _AIRPLANE_MODE_RADIOSReady = false; // this is used because in case of generics 
@@ -2117,35 +2117,35 @@ namespace Android.Provider
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#ALWAYS_FINISH_ACTIVITIES"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String ALWAYS_FINISH_ACTIVITIES { get { if (!_ALWAYS_FINISH_ACTIVITIESReady) { _ALWAYS_FINISH_ACTIVITIESContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ALWAYS_FINISH_ACTIVITIES"); _ALWAYS_FINISH_ACTIVITIESReady = true; } return _ALWAYS_FINISH_ACTIVITIESContent; } }
             private static Java.Lang.String _ALWAYS_FINISH_ACTIVITIESContent = default;
             private static bool _ALWAYS_FINISH_ACTIVITIESReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#ANDROID_ID"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String ANDROID_ID { get { if (!_ANDROID_IDReady) { _ANDROID_IDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ANDROID_ID"); _ANDROID_IDReady = true; } return _ANDROID_IDContent; } }
             private static Java.Lang.String _ANDROID_IDContent = default;
             private static bool _ANDROID_IDReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#ANIMATOR_DURATION_SCALE"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String ANIMATOR_DURATION_SCALE { get { if (!_ANIMATOR_DURATION_SCALEReady) { _ANIMATOR_DURATION_SCALEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "ANIMATOR_DURATION_SCALE"); _ANIMATOR_DURATION_SCALEReady = true; } return _ANIMATOR_DURATION_SCALEContent; } }
             private static Java.Lang.String _ANIMATOR_DURATION_SCALEContent = default;
             private static bool _ANIMATOR_DURATION_SCALEReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#AUTO_TIME"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String AUTO_TIME { get { if (!_AUTO_TIMEReady) { _AUTO_TIMEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "AUTO_TIME"); _AUTO_TIMEReady = true; } return _AUTO_TIMEContent; } }
             private static Java.Lang.String _AUTO_TIMEContent = default;
             private static bool _AUTO_TIMEReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#AUTO_TIME_ZONE"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String AUTO_TIME_ZONE { get { if (!_AUTO_TIME_ZONEReady) { _AUTO_TIME_ZONEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "AUTO_TIME_ZONE"); _AUTO_TIME_ZONEReady = true; } return _AUTO_TIME_ZONEContent; } }
             private static Java.Lang.String _AUTO_TIME_ZONEContent = default;
             private static bool _AUTO_TIME_ZONEReady = false; // this is used because in case of generics 
@@ -2164,42 +2164,42 @@ namespace Android.Provider
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#BLUETOOTH_ON"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String BLUETOOTH_ON { get { if (!_BLUETOOTH_ONReady) { _BLUETOOTH_ONContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "BLUETOOTH_ON"); _BLUETOOTH_ONReady = true; } return _BLUETOOTH_ONContent; } }
             private static Java.Lang.String _BLUETOOTH_ONContent = default;
             private static bool _BLUETOOTH_ONReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#DATA_ROAMING"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String DATA_ROAMING { get { if (!_DATA_ROAMINGReady) { _DATA_ROAMINGContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "DATA_ROAMING"); _DATA_ROAMINGReady = true; } return _DATA_ROAMINGContent; } }
             private static Java.Lang.String _DATA_ROAMINGContent = default;
             private static bool _DATA_ROAMINGReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#DATE_FORMAT"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String DATE_FORMAT { get { if (!_DATE_FORMATReady) { _DATE_FORMATContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "DATE_FORMAT"); _DATE_FORMATReady = true; } return _DATE_FORMATContent; } }
             private static Java.Lang.String _DATE_FORMATContent = default;
             private static bool _DATE_FORMATReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#DEBUG_APP"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String DEBUG_APP { get { if (!_DEBUG_APPReady) { _DEBUG_APPContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "DEBUG_APP"); _DEBUG_APPReady = true; } return _DEBUG_APPContent; } }
             private static Java.Lang.String _DEBUG_APPContent = default;
             private static bool _DEBUG_APPReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#DEVICE_PROVISIONED"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String DEVICE_PROVISIONED { get { if (!_DEVICE_PROVISIONEDReady) { _DEVICE_PROVISIONEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "DEVICE_PROVISIONED"); _DEVICE_PROVISIONEDReady = true; } return _DEVICE_PROVISIONEDContent; } }
             private static Java.Lang.String _DEVICE_PROVISIONEDContent = default;
             private static bool _DEVICE_PROVISIONEDReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#DIM_SCREEN"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String DIM_SCREEN { get { if (!_DIM_SCREENReady) { _DIM_SCREENContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "DIM_SCREEN"); _DIM_SCREENReady = true; } return _DIM_SCREENContent; } }
             private static Java.Lang.String _DIM_SCREENContent = default;
             private static bool _DIM_SCREENReady = false; // this is used because in case of generics 
@@ -2230,63 +2230,63 @@ namespace Android.Provider
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#HAPTIC_FEEDBACK_ENABLED"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String HAPTIC_FEEDBACK_ENABLED { get { if (!_HAPTIC_FEEDBACK_ENABLEDReady) { _HAPTIC_FEEDBACK_ENABLEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "HAPTIC_FEEDBACK_ENABLED"); _HAPTIC_FEEDBACK_ENABLEDReady = true; } return _HAPTIC_FEEDBACK_ENABLEDContent; } }
             private static Java.Lang.String _HAPTIC_FEEDBACK_ENABLEDContent = default;
             private static bool _HAPTIC_FEEDBACK_ENABLEDReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#HTTP_PROXY"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String HTTP_PROXY { get { if (!_HTTP_PROXYReady) { _HTTP_PROXYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "HTTP_PROXY"); _HTTP_PROXYReady = true; } return _HTTP_PROXYContent; } }
             private static Java.Lang.String _HTTP_PROXYContent = default;
             private static bool _HTTP_PROXYReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#INSTALL_NON_MARKET_APPS"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String INSTALL_NON_MARKET_APPS { get { if (!_INSTALL_NON_MARKET_APPSReady) { _INSTALL_NON_MARKET_APPSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "INSTALL_NON_MARKET_APPS"); _INSTALL_NON_MARKET_APPSReady = true; } return _INSTALL_NON_MARKET_APPSContent; } }
             private static Java.Lang.String _INSTALL_NON_MARKET_APPSContent = default;
             private static bool _INSTALL_NON_MARKET_APPSReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#LOCATION_PROVIDERS_ALLOWED"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String LOCATION_PROVIDERS_ALLOWED { get { if (!_LOCATION_PROVIDERS_ALLOWEDReady) { _LOCATION_PROVIDERS_ALLOWEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "LOCATION_PROVIDERS_ALLOWED"); _LOCATION_PROVIDERS_ALLOWEDReady = true; } return _LOCATION_PROVIDERS_ALLOWEDContent; } }
             private static Java.Lang.String _LOCATION_PROVIDERS_ALLOWEDContent = default;
             private static bool _LOCATION_PROVIDERS_ALLOWEDReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#LOCK_PATTERN_ENABLED"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String LOCK_PATTERN_ENABLED { get { if (!_LOCK_PATTERN_ENABLEDReady) { _LOCK_PATTERN_ENABLEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "LOCK_PATTERN_ENABLED"); _LOCK_PATTERN_ENABLEDReady = true; } return _LOCK_PATTERN_ENABLEDContent; } }
             private static Java.Lang.String _LOCK_PATTERN_ENABLEDContent = default;
             private static bool _LOCK_PATTERN_ENABLEDReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#LOCK_PATTERN_TACTILE_FEEDBACK_ENABLED"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String LOCK_PATTERN_TACTILE_FEEDBACK_ENABLED { get { if (!_LOCK_PATTERN_TACTILE_FEEDBACK_ENABLEDReady) { _LOCK_PATTERN_TACTILE_FEEDBACK_ENABLEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "LOCK_PATTERN_TACTILE_FEEDBACK_ENABLED"); _LOCK_PATTERN_TACTILE_FEEDBACK_ENABLEDReady = true; } return _LOCK_PATTERN_TACTILE_FEEDBACK_ENABLEDContent; } }
             private static Java.Lang.String _LOCK_PATTERN_TACTILE_FEEDBACK_ENABLEDContent = default;
             private static bool _LOCK_PATTERN_TACTILE_FEEDBACK_ENABLEDReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#LOCK_PATTERN_VISIBLE"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String LOCK_PATTERN_VISIBLE { get { if (!_LOCK_PATTERN_VISIBLEReady) { _LOCK_PATTERN_VISIBLEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "LOCK_PATTERN_VISIBLE"); _LOCK_PATTERN_VISIBLEReady = true; } return _LOCK_PATTERN_VISIBLEContent; } }
             private static Java.Lang.String _LOCK_PATTERN_VISIBLEContent = default;
             private static bool _LOCK_PATTERN_VISIBLEReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#LOGGING_ID"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String LOGGING_ID { get { if (!_LOGGING_IDReady) { _LOGGING_IDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "LOGGING_ID"); _LOGGING_IDReady = true; } return _LOGGING_IDContent; } }
             private static Java.Lang.String _LOGGING_IDContent = default;
             private static bool _LOGGING_IDReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#MODE_RINGER"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String MODE_RINGER { get { if (!_MODE_RINGERReady) { _MODE_RINGERContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "MODE_RINGER"); _MODE_RINGERReady = true; } return _MODE_RINGERContent; } }
             private static Java.Lang.String _MODE_RINGERContent = default;
             private static bool _MODE_RINGERReady = false; // this is used because in case of generics 
@@ -2305,14 +2305,14 @@ namespace Android.Provider
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#NETWORK_PREFERENCE"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String NETWORK_PREFERENCE { get { if (!_NETWORK_PREFERENCEReady) { _NETWORK_PREFERENCEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "NETWORK_PREFERENCE"); _NETWORK_PREFERENCEReady = true; } return _NETWORK_PREFERENCEContent; } }
             private static Java.Lang.String _NETWORK_PREFERENCEContent = default;
             private static bool _NETWORK_PREFERENCEReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#NEXT_ALARM_FORMATTED"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String NEXT_ALARM_FORMATTED { get { if (!_NEXT_ALARM_FORMATTEDReady) { _NEXT_ALARM_FORMATTEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "NEXT_ALARM_FORMATTED"); _NEXT_ALARM_FORMATTEDReady = true; } return _NEXT_ALARM_FORMATTEDContent; } }
             private static Java.Lang.String _NEXT_ALARM_FORMATTEDContent = default;
             private static bool _NEXT_ALARM_FORMATTEDReady = false; // this is used because in case of generics 
@@ -2325,49 +2325,49 @@ namespace Android.Provider
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#PARENTAL_CONTROL_ENABLED"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String PARENTAL_CONTROL_ENABLED { get { if (!_PARENTAL_CONTROL_ENABLEDReady) { _PARENTAL_CONTROL_ENABLEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "PARENTAL_CONTROL_ENABLED"); _PARENTAL_CONTROL_ENABLEDReady = true; } return _PARENTAL_CONTROL_ENABLEDContent; } }
             private static Java.Lang.String _PARENTAL_CONTROL_ENABLEDContent = default;
             private static bool _PARENTAL_CONTROL_ENABLEDReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#PARENTAL_CONTROL_LAST_UPDATE"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String PARENTAL_CONTROL_LAST_UPDATE { get { if (!_PARENTAL_CONTROL_LAST_UPDATEReady) { _PARENTAL_CONTROL_LAST_UPDATEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "PARENTAL_CONTROL_LAST_UPDATE"); _PARENTAL_CONTROL_LAST_UPDATEReady = true; } return _PARENTAL_CONTROL_LAST_UPDATEContent; } }
             private static Java.Lang.String _PARENTAL_CONTROL_LAST_UPDATEContent = default;
             private static bool _PARENTAL_CONTROL_LAST_UPDATEReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#PARENTAL_CONTROL_REDIRECT_URL"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String PARENTAL_CONTROL_REDIRECT_URL { get { if (!_PARENTAL_CONTROL_REDIRECT_URLReady) { _PARENTAL_CONTROL_REDIRECT_URLContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "PARENTAL_CONTROL_REDIRECT_URL"); _PARENTAL_CONTROL_REDIRECT_URLReady = true; } return _PARENTAL_CONTROL_REDIRECT_URLContent; } }
             private static Java.Lang.String _PARENTAL_CONTROL_REDIRECT_URLContent = default;
             private static bool _PARENTAL_CONTROL_REDIRECT_URLReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#RADIO_BLUETOOTH"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String RADIO_BLUETOOTH { get { if (!_RADIO_BLUETOOTHReady) { _RADIO_BLUETOOTHContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "RADIO_BLUETOOTH"); _RADIO_BLUETOOTHReady = true; } return _RADIO_BLUETOOTHContent; } }
             private static Java.Lang.String _RADIO_BLUETOOTHContent = default;
             private static bool _RADIO_BLUETOOTHReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#RADIO_CELL"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String RADIO_CELL { get { if (!_RADIO_CELLReady) { _RADIO_CELLContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "RADIO_CELL"); _RADIO_CELLReady = true; } return _RADIO_CELLContent; } }
             private static Java.Lang.String _RADIO_CELLContent = default;
             private static bool _RADIO_CELLReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#RADIO_NFC"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String RADIO_NFC { get { if (!_RADIO_NFCReady) { _RADIO_NFCContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "RADIO_NFC"); _RADIO_NFCReady = true; } return _RADIO_NFCContent; } }
             private static Java.Lang.String _RADIO_NFCContent = default;
             private static bool _RADIO_NFCReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#RADIO_WIFI"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String RADIO_WIFI { get { if (!_RADIO_WIFIReady) { _RADIO_WIFIContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "RADIO_WIFI"); _RADIO_WIFIReady = true; } return _RADIO_WIFIContent; } }
             private static Java.Lang.String _RADIO_WIFIContent = default;
             private static bool _RADIO_WIFIReady = false; // this is used because in case of generics 
@@ -2398,7 +2398,7 @@ namespace Android.Provider
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#SETTINGS_CLASSNAME"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String SETTINGS_CLASSNAME { get { if (!_SETTINGS_CLASSNAMEReady) { _SETTINGS_CLASSNAMEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SETTINGS_CLASSNAME"); _SETTINGS_CLASSNAMEReady = true; } return _SETTINGS_CLASSNAMEContent; } }
             private static Java.Lang.String _SETTINGS_CLASSNAMEContent = default;
             private static bool _SETTINGS_CLASSNAMEReady = false; // this is used because in case of generics 
@@ -2417,14 +2417,14 @@ namespace Android.Provider
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#SHOW_PROCESSES"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String SHOW_PROCESSES { get { if (!_SHOW_PROCESSESReady) { _SHOW_PROCESSESContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SHOW_PROCESSES"); _SHOW_PROCESSESReady = true; } return _SHOW_PROCESSESContent; } }
             private static Java.Lang.String _SHOW_PROCESSESContent = default;
             private static bool _SHOW_PROCESSESReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#SHOW_WEB_SUGGESTIONS"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String SHOW_WEB_SUGGESTIONS { get { if (!_SHOW_WEB_SUGGESTIONSReady) { _SHOW_WEB_SUGGESTIONSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SHOW_WEB_SUGGESTIONS"); _SHOW_WEB_SUGGESTIONSReady = true; } return _SHOW_WEB_SUGGESTIONSContent; } }
             private static Java.Lang.String _SHOW_WEB_SUGGESTIONSContent = default;
             private static bool _SHOW_WEB_SUGGESTIONSReady = false; // this is used because in case of generics 
@@ -2437,7 +2437,7 @@ namespace Android.Provider
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#STAY_ON_WHILE_PLUGGED_IN"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String STAY_ON_WHILE_PLUGGED_IN { get { if (!_STAY_ON_WHILE_PLUGGED_INReady) { _STAY_ON_WHILE_PLUGGED_INContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "STAY_ON_WHILE_PLUGGED_IN"); _STAY_ON_WHILE_PLUGGED_INReady = true; } return _STAY_ON_WHILE_PLUGGED_INContent; } }
             private static Java.Lang.String _STAY_ON_WHILE_PLUGGED_INContent = default;
             private static bool _STAY_ON_WHILE_PLUGGED_INReady = false; // this is used because in case of generics 
@@ -2474,21 +2474,21 @@ namespace Android.Provider
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#TRANSITION_ANIMATION_SCALE"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String TRANSITION_ANIMATION_SCALE { get { if (!_TRANSITION_ANIMATION_SCALEReady) { _TRANSITION_ANIMATION_SCALEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "TRANSITION_ANIMATION_SCALE"); _TRANSITION_ANIMATION_SCALEReady = true; } return _TRANSITION_ANIMATION_SCALEContent; } }
             private static Java.Lang.String _TRANSITION_ANIMATION_SCALEContent = default;
             private static bool _TRANSITION_ANIMATION_SCALEReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#USB_MASS_STORAGE_ENABLED"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String USB_MASS_STORAGE_ENABLED { get { if (!_USB_MASS_STORAGE_ENABLEDReady) { _USB_MASS_STORAGE_ENABLEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "USB_MASS_STORAGE_ENABLED"); _USB_MASS_STORAGE_ENABLEDReady = true; } return _USB_MASS_STORAGE_ENABLEDContent; } }
             private static Java.Lang.String _USB_MASS_STORAGE_ENABLEDContent = default;
             private static bool _USB_MASS_STORAGE_ENABLEDReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#USE_GOOGLE_MAIL"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String USE_GOOGLE_MAIL { get { if (!_USE_GOOGLE_MAILReady) { _USE_GOOGLE_MAILContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "USE_GOOGLE_MAIL"); _USE_GOOGLE_MAILReady = true; } return _USE_GOOGLE_MAILContent; } }
             private static Java.Lang.String _USE_GOOGLE_MAILContent = default;
             private static bool _USE_GOOGLE_MAILReady = false; // this is used because in case of generics 
@@ -2507,196 +2507,196 @@ namespace Android.Provider
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#VIBRATE_WHEN_RINGING"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String VIBRATE_WHEN_RINGING { get { if (!_VIBRATE_WHEN_RINGINGReady) { _VIBRATE_WHEN_RINGINGContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "VIBRATE_WHEN_RINGING"); _VIBRATE_WHEN_RINGINGReady = true; } return _VIBRATE_WHEN_RINGINGContent; } }
             private static Java.Lang.String _VIBRATE_WHEN_RINGINGContent = default;
             private static bool _VIBRATE_WHEN_RINGINGReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#WAIT_FOR_DEBUGGER"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String WAIT_FOR_DEBUGGER { get { if (!_WAIT_FOR_DEBUGGERReady) { _WAIT_FOR_DEBUGGERContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WAIT_FOR_DEBUGGER"); _WAIT_FOR_DEBUGGERReady = true; } return _WAIT_FOR_DEBUGGERContent; } }
             private static Java.Lang.String _WAIT_FOR_DEBUGGERContent = default;
             private static bool _WAIT_FOR_DEBUGGERReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#WALLPAPER_ACTIVITY"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String WALLPAPER_ACTIVITY { get { if (!_WALLPAPER_ACTIVITYReady) { _WALLPAPER_ACTIVITYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WALLPAPER_ACTIVITY"); _WALLPAPER_ACTIVITYReady = true; } return _WALLPAPER_ACTIVITYContent; } }
             private static Java.Lang.String _WALLPAPER_ACTIVITYContent = default;
             private static bool _WALLPAPER_ACTIVITYReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#WIFI_MAX_DHCP_RETRY_COUNT"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String WIFI_MAX_DHCP_RETRY_COUNT { get { if (!_WIFI_MAX_DHCP_RETRY_COUNTReady) { _WIFI_MAX_DHCP_RETRY_COUNTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WIFI_MAX_DHCP_RETRY_COUNT"); _WIFI_MAX_DHCP_RETRY_COUNTReady = true; } return _WIFI_MAX_DHCP_RETRY_COUNTContent; } }
             private static Java.Lang.String _WIFI_MAX_DHCP_RETRY_COUNTContent = default;
             private static bool _WIFI_MAX_DHCP_RETRY_COUNTReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#WIFI_MOBILE_DATA_TRANSITION_WAKELOCK_TIMEOUT_MS"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String WIFI_MOBILE_DATA_TRANSITION_WAKELOCK_TIMEOUT_MS { get { if (!_WIFI_MOBILE_DATA_TRANSITION_WAKELOCK_TIMEOUT_MSReady) { _WIFI_MOBILE_DATA_TRANSITION_WAKELOCK_TIMEOUT_MSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WIFI_MOBILE_DATA_TRANSITION_WAKELOCK_TIMEOUT_MS"); _WIFI_MOBILE_DATA_TRANSITION_WAKELOCK_TIMEOUT_MSReady = true; } return _WIFI_MOBILE_DATA_TRANSITION_WAKELOCK_TIMEOUT_MSContent; } }
             private static Java.Lang.String _WIFI_MOBILE_DATA_TRANSITION_WAKELOCK_TIMEOUT_MSContent = default;
             private static bool _WIFI_MOBILE_DATA_TRANSITION_WAKELOCK_TIMEOUT_MSReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ON"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ON { get { if (!_WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ONReady) { _WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ONContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ON"); _WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ONReady = true; } return _WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ONContent; } }
             private static Java.Lang.String _WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ONContent = default;
             private static bool _WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ONReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#WIFI_NETWORKS_AVAILABLE_REPEAT_DELAY"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String WIFI_NETWORKS_AVAILABLE_REPEAT_DELAY { get { if (!_WIFI_NETWORKS_AVAILABLE_REPEAT_DELAYReady) { _WIFI_NETWORKS_AVAILABLE_REPEAT_DELAYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WIFI_NETWORKS_AVAILABLE_REPEAT_DELAY"); _WIFI_NETWORKS_AVAILABLE_REPEAT_DELAYReady = true; } return _WIFI_NETWORKS_AVAILABLE_REPEAT_DELAYContent; } }
             private static Java.Lang.String _WIFI_NETWORKS_AVAILABLE_REPEAT_DELAYContent = default;
             private static bool _WIFI_NETWORKS_AVAILABLE_REPEAT_DELAYReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#WIFI_NUM_OPEN_NETWORKS_KEPT"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String WIFI_NUM_OPEN_NETWORKS_KEPT { get { if (!_WIFI_NUM_OPEN_NETWORKS_KEPTReady) { _WIFI_NUM_OPEN_NETWORKS_KEPTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WIFI_NUM_OPEN_NETWORKS_KEPT"); _WIFI_NUM_OPEN_NETWORKS_KEPTReady = true; } return _WIFI_NUM_OPEN_NETWORKS_KEPTContent; } }
             private static Java.Lang.String _WIFI_NUM_OPEN_NETWORKS_KEPTContent = default;
             private static bool _WIFI_NUM_OPEN_NETWORKS_KEPTReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#WIFI_ON"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String WIFI_ON { get { if (!_WIFI_ONReady) { _WIFI_ONContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WIFI_ON"); _WIFI_ONReady = true; } return _WIFI_ONContent; } }
             private static Java.Lang.String _WIFI_ONContent = default;
             private static bool _WIFI_ONReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#WIFI_SLEEP_POLICY"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String WIFI_SLEEP_POLICY { get { if (!_WIFI_SLEEP_POLICYReady) { _WIFI_SLEEP_POLICYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WIFI_SLEEP_POLICY"); _WIFI_SLEEP_POLICYReady = true; } return _WIFI_SLEEP_POLICYContent; } }
             private static Java.Lang.String _WIFI_SLEEP_POLICYContent = default;
             private static bool _WIFI_SLEEP_POLICYReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#WIFI_STATIC_DNS1"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String WIFI_STATIC_DNS1 { get { if (!_WIFI_STATIC_DNS1Ready) { _WIFI_STATIC_DNS1Content = SGetField<Java.Lang.String>(LocalBridgeClazz, "WIFI_STATIC_DNS1"); _WIFI_STATIC_DNS1Ready = true; } return _WIFI_STATIC_DNS1Content; } }
             private static Java.Lang.String _WIFI_STATIC_DNS1Content = default;
             private static bool _WIFI_STATIC_DNS1Ready = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#WIFI_STATIC_DNS2"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String WIFI_STATIC_DNS2 { get { if (!_WIFI_STATIC_DNS2Ready) { _WIFI_STATIC_DNS2Content = SGetField<Java.Lang.String>(LocalBridgeClazz, "WIFI_STATIC_DNS2"); _WIFI_STATIC_DNS2Ready = true; } return _WIFI_STATIC_DNS2Content; } }
             private static Java.Lang.String _WIFI_STATIC_DNS2Content = default;
             private static bool _WIFI_STATIC_DNS2Ready = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#WIFI_STATIC_GATEWAY"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String WIFI_STATIC_GATEWAY { get { if (!_WIFI_STATIC_GATEWAYReady) { _WIFI_STATIC_GATEWAYContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WIFI_STATIC_GATEWAY"); _WIFI_STATIC_GATEWAYReady = true; } return _WIFI_STATIC_GATEWAYContent; } }
             private static Java.Lang.String _WIFI_STATIC_GATEWAYContent = default;
             private static bool _WIFI_STATIC_GATEWAYReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#WIFI_STATIC_IP"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String WIFI_STATIC_IP { get { if (!_WIFI_STATIC_IPReady) { _WIFI_STATIC_IPContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WIFI_STATIC_IP"); _WIFI_STATIC_IPReady = true; } return _WIFI_STATIC_IPContent; } }
             private static Java.Lang.String _WIFI_STATIC_IPContent = default;
             private static bool _WIFI_STATIC_IPReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#WIFI_STATIC_NETMASK"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String WIFI_STATIC_NETMASK { get { if (!_WIFI_STATIC_NETMASKReady) { _WIFI_STATIC_NETMASKContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WIFI_STATIC_NETMASK"); _WIFI_STATIC_NETMASKReady = true; } return _WIFI_STATIC_NETMASKContent; } }
             private static Java.Lang.String _WIFI_STATIC_NETMASKContent = default;
             private static bool _WIFI_STATIC_NETMASKReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#WIFI_USE_STATIC_IP"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String WIFI_USE_STATIC_IP { get { if (!_WIFI_USE_STATIC_IPReady) { _WIFI_USE_STATIC_IPContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WIFI_USE_STATIC_IP"); _WIFI_USE_STATIC_IPReady = true; } return _WIFI_USE_STATIC_IPContent; } }
             private static Java.Lang.String _WIFI_USE_STATIC_IPContent = default;
             private static bool _WIFI_USE_STATIC_IPReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#WIFI_WATCHDOG_ACCEPTABLE_PACKET_LOSS_PERCENTAGE"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String WIFI_WATCHDOG_ACCEPTABLE_PACKET_LOSS_PERCENTAGE { get { if (!_WIFI_WATCHDOG_ACCEPTABLE_PACKET_LOSS_PERCENTAGEReady) { _WIFI_WATCHDOG_ACCEPTABLE_PACKET_LOSS_PERCENTAGEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WIFI_WATCHDOG_ACCEPTABLE_PACKET_LOSS_PERCENTAGE"); _WIFI_WATCHDOG_ACCEPTABLE_PACKET_LOSS_PERCENTAGEReady = true; } return _WIFI_WATCHDOG_ACCEPTABLE_PACKET_LOSS_PERCENTAGEContent; } }
             private static Java.Lang.String _WIFI_WATCHDOG_ACCEPTABLE_PACKET_LOSS_PERCENTAGEContent = default;
             private static bool _WIFI_WATCHDOG_ACCEPTABLE_PACKET_LOSS_PERCENTAGEReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#WIFI_WATCHDOG_AP_COUNT"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String WIFI_WATCHDOG_AP_COUNT { get { if (!_WIFI_WATCHDOG_AP_COUNTReady) { _WIFI_WATCHDOG_AP_COUNTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WIFI_WATCHDOG_AP_COUNT"); _WIFI_WATCHDOG_AP_COUNTReady = true; } return _WIFI_WATCHDOG_AP_COUNTContent; } }
             private static Java.Lang.String _WIFI_WATCHDOG_AP_COUNTContent = default;
             private static bool _WIFI_WATCHDOG_AP_COUNTReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#WIFI_WATCHDOG_BACKGROUND_CHECK_DELAY_MS"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String WIFI_WATCHDOG_BACKGROUND_CHECK_DELAY_MS { get { if (!_WIFI_WATCHDOG_BACKGROUND_CHECK_DELAY_MSReady) { _WIFI_WATCHDOG_BACKGROUND_CHECK_DELAY_MSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WIFI_WATCHDOG_BACKGROUND_CHECK_DELAY_MS"); _WIFI_WATCHDOG_BACKGROUND_CHECK_DELAY_MSReady = true; } return _WIFI_WATCHDOG_BACKGROUND_CHECK_DELAY_MSContent; } }
             private static Java.Lang.String _WIFI_WATCHDOG_BACKGROUND_CHECK_DELAY_MSContent = default;
             private static bool _WIFI_WATCHDOG_BACKGROUND_CHECK_DELAY_MSReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#WIFI_WATCHDOG_BACKGROUND_CHECK_ENABLED"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String WIFI_WATCHDOG_BACKGROUND_CHECK_ENABLED { get { if (!_WIFI_WATCHDOG_BACKGROUND_CHECK_ENABLEDReady) { _WIFI_WATCHDOG_BACKGROUND_CHECK_ENABLEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WIFI_WATCHDOG_BACKGROUND_CHECK_ENABLED"); _WIFI_WATCHDOG_BACKGROUND_CHECK_ENABLEDReady = true; } return _WIFI_WATCHDOG_BACKGROUND_CHECK_ENABLEDContent; } }
             private static Java.Lang.String _WIFI_WATCHDOG_BACKGROUND_CHECK_ENABLEDContent = default;
             private static bool _WIFI_WATCHDOG_BACKGROUND_CHECK_ENABLEDReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#WIFI_WATCHDOG_BACKGROUND_CHECK_TIMEOUT_MS"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String WIFI_WATCHDOG_BACKGROUND_CHECK_TIMEOUT_MS { get { if (!_WIFI_WATCHDOG_BACKGROUND_CHECK_TIMEOUT_MSReady) { _WIFI_WATCHDOG_BACKGROUND_CHECK_TIMEOUT_MSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WIFI_WATCHDOG_BACKGROUND_CHECK_TIMEOUT_MS"); _WIFI_WATCHDOG_BACKGROUND_CHECK_TIMEOUT_MSReady = true; } return _WIFI_WATCHDOG_BACKGROUND_CHECK_TIMEOUT_MSContent; } }
             private static Java.Lang.String _WIFI_WATCHDOG_BACKGROUND_CHECK_TIMEOUT_MSContent = default;
             private static bool _WIFI_WATCHDOG_BACKGROUND_CHECK_TIMEOUT_MSReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#WIFI_WATCHDOG_INITIAL_IGNORED_PING_COUNT"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String WIFI_WATCHDOG_INITIAL_IGNORED_PING_COUNT { get { if (!_WIFI_WATCHDOG_INITIAL_IGNORED_PING_COUNTReady) { _WIFI_WATCHDOG_INITIAL_IGNORED_PING_COUNTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WIFI_WATCHDOG_INITIAL_IGNORED_PING_COUNT"); _WIFI_WATCHDOG_INITIAL_IGNORED_PING_COUNTReady = true; } return _WIFI_WATCHDOG_INITIAL_IGNORED_PING_COUNTContent; } }
             private static Java.Lang.String _WIFI_WATCHDOG_INITIAL_IGNORED_PING_COUNTContent = default;
             private static bool _WIFI_WATCHDOG_INITIAL_IGNORED_PING_COUNTReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#WIFI_WATCHDOG_MAX_AP_CHECKS"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String WIFI_WATCHDOG_MAX_AP_CHECKS { get { if (!_WIFI_WATCHDOG_MAX_AP_CHECKSReady) { _WIFI_WATCHDOG_MAX_AP_CHECKSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WIFI_WATCHDOG_MAX_AP_CHECKS"); _WIFI_WATCHDOG_MAX_AP_CHECKSReady = true; } return _WIFI_WATCHDOG_MAX_AP_CHECKSContent; } }
             private static Java.Lang.String _WIFI_WATCHDOG_MAX_AP_CHECKSContent = default;
             private static bool _WIFI_WATCHDOG_MAX_AP_CHECKSReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#WIFI_WATCHDOG_ON"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String WIFI_WATCHDOG_ON { get { if (!_WIFI_WATCHDOG_ONReady) { _WIFI_WATCHDOG_ONContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WIFI_WATCHDOG_ON"); _WIFI_WATCHDOG_ONReady = true; } return _WIFI_WATCHDOG_ONContent; } }
             private static Java.Lang.String _WIFI_WATCHDOG_ONContent = default;
             private static bool _WIFI_WATCHDOG_ONReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#WIFI_WATCHDOG_PING_COUNT"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String WIFI_WATCHDOG_PING_COUNT { get { if (!_WIFI_WATCHDOG_PING_COUNTReady) { _WIFI_WATCHDOG_PING_COUNTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WIFI_WATCHDOG_PING_COUNT"); _WIFI_WATCHDOG_PING_COUNTReady = true; } return _WIFI_WATCHDOG_PING_COUNTContent; } }
             private static Java.Lang.String _WIFI_WATCHDOG_PING_COUNTContent = default;
             private static bool _WIFI_WATCHDOG_PING_COUNTReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#WIFI_WATCHDOG_PING_DELAY_MS"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String WIFI_WATCHDOG_PING_DELAY_MS { get { if (!_WIFI_WATCHDOG_PING_DELAY_MSReady) { _WIFI_WATCHDOG_PING_DELAY_MSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WIFI_WATCHDOG_PING_DELAY_MS"); _WIFI_WATCHDOG_PING_DELAY_MSReady = true; } return _WIFI_WATCHDOG_PING_DELAY_MSContent; } }
             private static Java.Lang.String _WIFI_WATCHDOG_PING_DELAY_MSContent = default;
             private static bool _WIFI_WATCHDOG_PING_DELAY_MSReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#WIFI_WATCHDOG_PING_TIMEOUT_MS"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String WIFI_WATCHDOG_PING_TIMEOUT_MS { get { if (!_WIFI_WATCHDOG_PING_TIMEOUT_MSReady) { _WIFI_WATCHDOG_PING_TIMEOUT_MSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WIFI_WATCHDOG_PING_TIMEOUT_MS"); _WIFI_WATCHDOG_PING_TIMEOUT_MSReady = true; } return _WIFI_WATCHDOG_PING_TIMEOUT_MSContent; } }
             private static Java.Lang.String _WIFI_WATCHDOG_PING_TIMEOUT_MSContent = default;
             private static bool _WIFI_WATCHDOG_PING_TIMEOUT_MSReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Settings.System.html#WINDOW_ANIMATION_SCALE"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String WINDOW_ANIMATION_SCALE { get { if (!_WINDOW_ANIMATION_SCALEReady) { _WINDOW_ANIMATION_SCALEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "WINDOW_ANIMATION_SCALE"); _WINDOW_ANIMATION_SCALEReady = true; } return _WINDOW_ANIMATION_SCALEContent; } }
             private static Java.Lang.String _WINDOW_ANIMATION_SCALEContent = default;
             private static bool _WINDOW_ANIMATION_SCALEReady = false; // this is used because in case of generics 
@@ -2727,7 +2727,7 @@ namespace Android.Provider
             /// </summary>
             /// <param name="arg0"><see cref="Android.Content.ContentResolver"/></param>
             /// <returns><see cref="bool"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static bool GetShowGTalkServiceStatus(Android.Content.ContentResolver arg0)
             {
                 return SExecuteWithSignature<bool>(LocalBridgeClazz, "getShowGTalkServiceStatus", "(Landroid/content/ContentResolver;)Z", arg0);
@@ -2876,7 +2876,7 @@ namespace Android.Provider
             /// </summary>
             /// <param name="arg0"><see cref="Android.Content.ContentResolver"/></param>
             /// <param name="arg1"><see cref="bool"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static void SetShowGTalkServiceStatus(Android.Content.ContentResolver arg0, bool arg1)
             {
                 SExecute(LocalBridgeClazz, "setShowGTalkServiceStatus", arg0, arg1);

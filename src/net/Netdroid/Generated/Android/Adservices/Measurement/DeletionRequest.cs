@@ -70,46 +70,52 @@ namespace Android.Adservices.Measurement
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/measurement/DeletionRequest.html#getDeletionMode()"/> 
+        /// <see href="https://developer.android.com/reference/android/adservices/measurement/DeletionRequest.html#getDeletionMode()"/>
         /// </summary>
-        public int DeletionMode
+        /// <returns><see cref="int"/></returns>
+        public int GetDeletionMode()
         {
-            get { return IExecuteWithSignature<int>("getDeletionMode", "()I"); }
+            return IExecuteWithSignature<int>("getDeletionMode", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/measurement/DeletionRequest.html#getDomainUris()"/> 
+        /// <see href="https://developer.android.com/reference/android/adservices/measurement/DeletionRequest.html#getMatchBehavior()"/>
         /// </summary>
-        public Java.Util.List<Android.Net.Uri> DomainUris
+        /// <returns><see cref="int"/></returns>
+        public int GetMatchBehavior()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Net.Uri>>("getDomainUris", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<int>("getMatchBehavior", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/measurement/DeletionRequest.html#getEnd()"/> 
+        /// <see href="https://developer.android.com/reference/android/adservices/measurement/DeletionRequest.html#getEnd()"/>
         /// </summary>
-        public Java.Time.Instant End
+        /// <returns><see cref="Java.Time.Instant"/></returns>
+        public Java.Time.Instant GetEnd()
         {
-            get { return IExecuteWithSignature<Java.Time.Instant>("getEnd", "()Ljava/time/Instant;"); }
+            return IExecuteWithSignature<Java.Time.Instant>("getEnd", "()Ljava/time/Instant;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/measurement/DeletionRequest.html#getMatchBehavior()"/> 
+        /// <see href="https://developer.android.com/reference/android/adservices/measurement/DeletionRequest.html#getStart()"/>
         /// </summary>
-        public int MatchBehavior
+        /// <returns><see cref="Java.Time.Instant"/></returns>
+        public Java.Time.Instant GetStart()
         {
-            get { return IExecuteWithSignature<int>("getMatchBehavior", "()I"); }
+            return IExecuteWithSignature<Java.Time.Instant>("getStart", "()Ljava/time/Instant;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/measurement/DeletionRequest.html#getOriginUris()"/> 
+        /// <see href="https://developer.android.com/reference/android/adservices/measurement/DeletionRequest.html#getDomainUris()"/>
         /// </summary>
-        public Java.Util.List<Android.Net.Uri> OriginUris
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Net.Uri> GetDomainUris()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Net.Uri>>("getOriginUris", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Java.Util.List<Android.Net.Uri>>("getDomainUris", "()Ljava/util/List;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/measurement/DeletionRequest.html#getStart()"/> 
+        /// <see href="https://developer.android.com/reference/android/adservices/measurement/DeletionRequest.html#getOriginUris()"/>
         /// </summary>
-        public Java.Time.Instant Start
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Net.Uri> GetOriginUris()
         {
-            get { return IExecuteWithSignature<Java.Time.Instant>("getStart", "()Ljava/time/Instant;"); }
+            return IExecuteWithSignature<Java.Util.List<Android.Net.Uri>>("getOriginUris", "()Ljava/util/List;");
         }
 
         #endregion

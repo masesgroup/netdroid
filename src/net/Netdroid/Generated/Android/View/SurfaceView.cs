@@ -102,25 +102,28 @@ namespace Android.View
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/SurfaceView.html#getHolder()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/SurfaceView.html#getHostToken()"/>
         /// </summary>
-        public Android.View.SurfaceHolder Holder
+        /// <returns><see cref="Android.Os.IBinder"/></returns>
+        public Android.Os.IBinder GetHostToken()
         {
-            get { return IExecuteWithSignature<Android.View.SurfaceHolder>("getHolder", "()Landroid/view/SurfaceHolder;"); }
+            return IExecuteWithSignature<Android.Os.IBinder>("getHostToken", "()Landroid/os/IBinder;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/SurfaceView.html#getHostToken()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/SurfaceView.html#getSurfaceControl()"/>
         /// </summary>
-        public Android.Os.IBinder HostToken
+        /// <returns><see cref="Android.View.SurfaceControl"/></returns>
+        public Android.View.SurfaceControl GetSurfaceControl()
         {
-            get { return IExecuteWithSignature<Android.Os.IBinder>("getHostToken", "()Landroid/os/IBinder;"); }
+            return IExecuteWithSignature<Android.View.SurfaceControl>("getSurfaceControl", "()Landroid/view/SurfaceControl;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/SurfaceView.html#getSurfaceControl()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/SurfaceView.html#getHolder()"/>
         /// </summary>
-        public Android.View.SurfaceControl SurfaceControl
+        /// <returns><see cref="Android.View.SurfaceHolder"/></returns>
+        public Android.View.SurfaceHolder GetHolder()
         {
-            get { return IExecuteWithSignature<Android.View.SurfaceControl>("getSurfaceControl", "()Landroid/view/SurfaceControl;"); }
+            return IExecuteWithSignature<Android.View.SurfaceHolder>("getHolder", "()Landroid/view/SurfaceHolder;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/SurfaceView.html#applyTransactionToFrame(android.view.SurfaceControl.Transaction)"/>

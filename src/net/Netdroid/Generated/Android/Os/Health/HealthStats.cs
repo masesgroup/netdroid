@@ -46,48 +46,6 @@ namespace Android.Os.Health
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/health/HealthStats.html#getDataType()"/> 
-        /// </summary>
-        public Java.Lang.String DataType
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDataType", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/health/HealthStats.html#getMeasurementKeyCount()"/> 
-        /// </summary>
-        public int MeasurementKeyCount
-        {
-            get { return IExecuteWithSignature<int>("getMeasurementKeyCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/health/HealthStats.html#getMeasurementsKeyCount()"/> 
-        /// </summary>
-        public int MeasurementsKeyCount
-        {
-            get { return IExecuteWithSignature<int>("getMeasurementsKeyCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/health/HealthStats.html#getStatsKeyCount()"/> 
-        /// </summary>
-        public int StatsKeyCount
-        {
-            get { return IExecuteWithSignature<int>("getStatsKeyCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/health/HealthStats.html#getTimerKeyCount()"/> 
-        /// </summary>
-        public int TimerKeyCount
-        {
-            get { return IExecuteWithSignature<int>("getTimerKeyCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/health/HealthStats.html#getTimersKeyCount()"/> 
-        /// </summary>
-        public int TimersKeyCount
-        {
-            get { return IExecuteWithSignature<int>("getTimersKeyCount", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/health/HealthStats.html#getTimer(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -151,6 +109,14 @@ namespace Android.Os.Health
             return IExecuteWithSignature<int>("getMeasurementKeyAt", "(I)I", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/health/HealthStats.html#getMeasurementKeyCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMeasurementKeyCount()
+        {
+            return IExecuteWithSignature<int>("getMeasurementKeyCount", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/health/HealthStats.html#getMeasurementsKeyAt(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -160,6 +126,14 @@ namespace Android.Os.Health
             return IExecuteWithSignature<int>("getMeasurementsKeyAt", "(I)I", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/health/HealthStats.html#getMeasurementsKeyCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMeasurementsKeyCount()
+        {
+            return IExecuteWithSignature<int>("getMeasurementsKeyCount", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/health/HealthStats.html#getStatsKeyAt(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -167,6 +141,14 @@ namespace Android.Os.Health
         public int GetStatsKeyAt(int arg0)
         {
             return IExecuteWithSignature<int>("getStatsKeyAt", "(I)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/health/HealthStats.html#getStatsKeyCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetStatsKeyCount()
+        {
+            return IExecuteWithSignature<int>("getStatsKeyCount", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/health/HealthStats.html#getTimerCount(int)"/>
@@ -187,6 +169,14 @@ namespace Android.Os.Health
             return IExecuteWithSignature<int>("getTimerKeyAt", "(I)I", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/health/HealthStats.html#getTimerKeyCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTimerKeyCount()
+        {
+            return IExecuteWithSignature<int>("getTimerKeyCount", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/health/HealthStats.html#getTimersKeyAt(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -194,6 +184,22 @@ namespace Android.Os.Health
         public int GetTimersKeyAt(int arg0)
         {
             return IExecuteWithSignature<int>("getTimersKeyAt", "(I)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/health/HealthStats.html#getTimersKeyCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTimersKeyCount()
+        {
+            return IExecuteWithSignature<int>("getTimersKeyCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/health/HealthStats.html#getDataType()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDataType()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getDataType", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/health/HealthStats.html#getStats(int)"/>

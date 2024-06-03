@@ -42,7 +42,7 @@ namespace Javax.Crypto
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/SecretKeyFactory.html#getInstance(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/SecretKeyFactory.html#getInstance(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -54,7 +54,7 @@ namespace Javax.Crypto
             return SExecute<Javax.Crypto.SecretKeyFactory>(LocalBridgeClazz, "getInstance", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/SecretKeyFactory.html#getInstance(java.lang.String,java.security.Provider)"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/SecretKeyFactory.html#getInstance(java.lang.String,java.security.Provider)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Security.Provider"/></param>
@@ -65,7 +65,7 @@ namespace Javax.Crypto
             return SExecute<Javax.Crypto.SecretKeyFactory>(LocalBridgeClazz, "getInstance", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/SecretKeyFactory.html#getInstance(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/SecretKeyFactory.html#getInstance(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Crypto.SecretKeyFactory"/></returns>
@@ -79,21 +79,23 @@ namespace Javax.Crypto
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/SecretKeyFactory.html#getAlgorithm()"/> 
+        /// <see href="https://developer.android.com/reference/javax/crypto/SecretKeyFactory.html#getAlgorithm()"/>
         /// </summary>
-        public Java.Lang.String Algorithm
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetAlgorithm()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAlgorithm", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getAlgorithm", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/SecretKeyFactory.html#getProvider()"/> 
+        /// <see href="https://developer.android.com/reference/javax/crypto/SecretKeyFactory.html#getProvider()"/>
         /// </summary>
-        public Java.Security.Provider Provider
+        /// <returns><see cref="Java.Security.Provider"/></returns>
+        public Java.Security.Provider GetProvider()
         {
-            get { return IExecuteWithSignature<Java.Security.Provider>("getProvider", "()Ljava/security/Provider;"); }
+            return IExecuteWithSignature<Java.Security.Provider>("getProvider", "()Ljava/security/Provider;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/SecretKeyFactory.html#getKeySpec(javax.crypto.SecretKey,java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/SecretKeyFactory.html#getKeySpec(javax.crypto.SecretKey,java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Crypto.SecretKey"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
@@ -104,7 +106,7 @@ namespace Javax.Crypto
             return IExecute<Java.Security.Spec.KeySpec>("getKeySpec", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/SecretKeyFactory.html#generateSecret(java.security.spec.KeySpec)"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/SecretKeyFactory.html#generateSecret(java.security.spec.KeySpec)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Spec.KeySpec"/></param>
         /// <returns><see cref="Javax.Crypto.SecretKey"/></returns>
@@ -114,7 +116,7 @@ namespace Javax.Crypto
             return IExecuteWithSignature<Javax.Crypto.SecretKey>("generateSecret", "(Ljava/security/spec/KeySpec;)Ljavax/crypto/SecretKey;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/SecretKeyFactory.html#translateKey(javax.crypto.SecretKey)"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/SecretKeyFactory.html#translateKey(javax.crypto.SecretKey)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Crypto.SecretKey"/></param>
         /// <returns><see cref="Javax.Crypto.SecretKey"/></returns>

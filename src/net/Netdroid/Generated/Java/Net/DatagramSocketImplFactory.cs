@@ -64,7 +64,7 @@ namespace Java.Net
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/DatagramSocketImplFactory.html#createDatagramSocketImpl()"/>
+        /// <see href="https://developer.android.com/reference/java/net/DatagramSocketImplFactory.html#createDatagramSocketImpl()"/>
         /// </summary>
         /// <returns><see cref="Java.Net.DatagramSocketImpl"/></returns>
         public Java.Net.DatagramSocketImpl CreateDatagramSocketImpl()

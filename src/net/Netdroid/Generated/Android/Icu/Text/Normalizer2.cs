@@ -42,51 +42,56 @@ namespace Android.Icu.Text
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/Normalizer2.html#getNFCInstance()"/> 
-        /// </summary>
-        public static Android.Icu.Text.Normalizer2 NFCInstance
-        {
-            get { return SExecuteWithSignature<Android.Icu.Text.Normalizer2>(LocalBridgeClazz, "getNFCInstance", "()Landroid/icu/text/Normalizer2;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/Normalizer2.html#getNFDInstance()"/> 
-        /// </summary>
-        public static Android.Icu.Text.Normalizer2 NFDInstance
-        {
-            get { return SExecuteWithSignature<Android.Icu.Text.Normalizer2>(LocalBridgeClazz, "getNFDInstance", "()Landroid/icu/text/Normalizer2;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/Normalizer2.html#getNFKCCasefoldInstance()"/> 
-        /// </summary>
-        public static Android.Icu.Text.Normalizer2 NFKCCasefoldInstance
-        {
-            get { return SExecuteWithSignature<Android.Icu.Text.Normalizer2>(LocalBridgeClazz, "getNFKCCasefoldInstance", "()Landroid/icu/text/Normalizer2;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/Normalizer2.html#getNFKCInstance()"/> 
-        /// </summary>
-        public static Android.Icu.Text.Normalizer2 NFKCInstance
-        {
-            get { return SExecuteWithSignature<Android.Icu.Text.Normalizer2>(LocalBridgeClazz, "getNFKCInstance", "()Landroid/icu/text/Normalizer2;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/Normalizer2.html#getNFKDInstance()"/> 
-        /// </summary>
-        public static Android.Icu.Text.Normalizer2 NFKDInstance
-        {
-            get { return SExecuteWithSignature<Android.Icu.Text.Normalizer2>(LocalBridgeClazz, "getNFKDInstance", "()Landroid/icu/text/Normalizer2;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/Normalizer2.html#getInstance(java.io.InputStream,java.lang.String,android.icu.text.Normalizer2.Mode)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="Android.Icu.Text.Normalizer2.Mode"/></param>
         /// <returns><see cref="Android.Icu.Text.Normalizer2"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Icu.Text.Normalizer2 GetInstance(Java.Io.InputStream arg0, Java.Lang.String arg1, Android.Icu.Text.Normalizer2.Mode arg2)
         {
             return SExecute<Android.Icu.Text.Normalizer2>(LocalBridgeClazz, "getInstance", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/Normalizer2.html#getNFCInstance()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Icu.Text.Normalizer2"/></returns>
+        public static Android.Icu.Text.Normalizer2 GetNFCInstance()
+        {
+            return SExecuteWithSignature<Android.Icu.Text.Normalizer2>(LocalBridgeClazz, "getNFCInstance", "()Landroid/icu/text/Normalizer2;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/Normalizer2.html#getNFDInstance()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Icu.Text.Normalizer2"/></returns>
+        public static Android.Icu.Text.Normalizer2 GetNFDInstance()
+        {
+            return SExecuteWithSignature<Android.Icu.Text.Normalizer2>(LocalBridgeClazz, "getNFDInstance", "()Landroid/icu/text/Normalizer2;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/Normalizer2.html#getNFKCCasefoldInstance()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Icu.Text.Normalizer2"/></returns>
+        public static Android.Icu.Text.Normalizer2 GetNFKCCasefoldInstance()
+        {
+            return SExecuteWithSignature<Android.Icu.Text.Normalizer2>(LocalBridgeClazz, "getNFKCCasefoldInstance", "()Landroid/icu/text/Normalizer2;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/Normalizer2.html#getNFKCInstance()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Icu.Text.Normalizer2"/></returns>
+        public static Android.Icu.Text.Normalizer2 GetNFKCInstance()
+        {
+            return SExecuteWithSignature<Android.Icu.Text.Normalizer2>(LocalBridgeClazz, "getNFKCInstance", "()Landroid/icu/text/Normalizer2;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/Normalizer2.html#getNFKDInstance()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Icu.Text.Normalizer2"/></returns>
+        public static Android.Icu.Text.Normalizer2 GetNFKDInstance()
+        {
+            return SExecuteWithSignature<Android.Icu.Text.Normalizer2>(LocalBridgeClazz, "getNFKDInstance", "()Landroid/icu/text/Normalizer2;");
         }
 
         #endregion

@@ -55,11 +55,12 @@ namespace Android.Health.Connect.Datatypes.Units
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/units/Pressure.html#getInMillimetersOfMercury()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/units/Pressure.html#getInMillimetersOfMercury()"/>
         /// </summary>
-        public double InMillimetersOfMercury
+        /// <returns><see cref="double"/></returns>
+        public double GetInMillimetersOfMercury()
         {
-            get { return IExecuteWithSignature<double>("getInMillimetersOfMercury", "()D"); }
+            return IExecuteWithSignature<double>("getInMillimetersOfMercury", "()D");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/units/Pressure.html#compareTo(android.health.connect.datatypes.units.Pressure)"/>

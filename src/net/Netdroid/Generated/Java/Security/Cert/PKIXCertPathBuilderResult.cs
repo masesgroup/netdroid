@@ -30,7 +30,7 @@ namespace Java.Security.Cert
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/PKIXCertPathBuilderResult.html#%3Cinit%3E(java.security.cert.CertPath,java.security.cert.TrustAnchor,java.security.cert.PolicyNode,java.security.PublicKey)"/>
+        /// <see href="https://developer.android.com/reference/java/security/cert/PKIXCertPathBuilderResult.html#%3Cinit%3E(java.security.cert.CertPath,java.security.cert.TrustAnchor,java.security.cert.PolicyNode,java.security.PublicKey)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Cert.CertPath"/></param>
         /// <param name="arg1"><see cref="Java.Security.Cert.TrustAnchor"/></param>
@@ -61,11 +61,12 @@ namespace Java.Security.Cert
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/PKIXCertPathBuilderResult.html#getCertPath()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/cert/PKIXCertPathBuilderResult.html#getCertPath()"/>
         /// </summary>
-        public Java.Security.Cert.CertPath CertPath
+        /// <returns><see cref="Java.Security.Cert.CertPath"/></returns>
+        public Java.Security.Cert.CertPath GetCertPath()
         {
-            get { return IExecuteWithSignature<Java.Security.Cert.CertPath>("getCertPath", "()Ljava/security/cert/CertPath;"); }
+            return IExecuteWithSignature<Java.Security.Cert.CertPath>("getCertPath", "()Ljava/security/cert/CertPath;");
         }
 
         #endregion

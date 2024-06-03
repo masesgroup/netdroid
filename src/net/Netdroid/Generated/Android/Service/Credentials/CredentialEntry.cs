@@ -80,25 +80,12 @@ namespace Android.Service.Credentials
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/credentials/CredentialEntry.html#getBeginGetCredentialOptionId()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/credentials/CredentialEntry.html#getSlice()"/>
         /// </summary>
-        public Java.Lang.String BeginGetCredentialOptionId
+        /// <returns><see cref="Android.App.Slice.Slice"/></returns>
+        public Android.App.Slice.Slice GetSlice()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getBeginGetCredentialOptionId", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/credentials/CredentialEntry.html#getSlice()"/> 
-        /// </summary>
-        public Android.App.Slice.Slice Slice
-        {
-            get { return IExecuteWithSignature<Android.App.Slice.Slice>("getSlice", "()Landroid/app/slice/Slice;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/credentials/CredentialEntry.html#getType()"/> 
-        /// </summary>
-        public Java.Lang.String Type
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getType", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Android.App.Slice.Slice>("getSlice", "()Landroid/app/slice/Slice;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/credentials/CredentialEntry.html#describeContents()"/>
@@ -107,6 +94,22 @@ namespace Android.Service.Credentials
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/credentials/CredentialEntry.html#getBeginGetCredentialOptionId()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetBeginGetCredentialOptionId()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getBeginGetCredentialOptionId", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/credentials/CredentialEntry.html#getType()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetType()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getType", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/credentials/CredentialEntry.html#writeToParcel(android.os.Parcel,int)"/>

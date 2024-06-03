@@ -960,20 +960,6 @@ namespace Android.Icu.Util
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/MeasureUnit.html#getAvailable()"/> 
-        /// </summary>
-        public static Java.Util.Set<Android.Icu.Util.MeasureUnit> Available
-        {
-            get { return SExecuteWithSignature<Java.Util.Set<Android.Icu.Util.MeasureUnit>>(LocalBridgeClazz, "getAvailable", "()Ljava/util/Set;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/MeasureUnit.html#getAvailableTypes()"/> 
-        /// </summary>
-        public static Java.Util.Set<Java.Lang.String> AvailableTypes
-        {
-            get { return SExecuteWithSignature<Java.Util.Set<Java.Lang.String>>(LocalBridgeClazz, "getAvailableTypes", "()Ljava/util/Set;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/MeasureUnit.html#forIdentifier(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -991,52 +977,26 @@ namespace Android.Icu.Util
         {
             return SExecuteWithSignature<Java.Util.Set<Android.Icu.Util.MeasureUnit>>(LocalBridgeClazz, "getAvailable", "(Ljava/lang/String;)Ljava/util/Set;", arg0);
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/MeasureUnit.html#getAvailableTypes()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public static Java.Util.Set<Java.Lang.String> GetAvailableTypes()
+        {
+            return SExecuteWithSignature<Java.Util.Set<Java.Lang.String>>(LocalBridgeClazz, "getAvailableTypes", "()Ljava/util/Set;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/MeasureUnit.html#getAvailable()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public static Java.Util.Set<Android.Icu.Util.MeasureUnit> GetAvailable()
+        {
+            return SExecuteWithSignature<Java.Util.Set<Android.Icu.Util.MeasureUnit>>(LocalBridgeClazz, "getAvailable", "()Ljava/util/Set;");
+        }
 
         #endregion
 
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/MeasureUnit.html#getDimensionality()"/> 
-        /// </summary>
-        public int Dimensionality
-        {
-            get { return IExecuteWithSignature<int>("getDimensionality", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/MeasureUnit.html#getComplexity()"/> 
-        /// </summary>
-        public Android.Icu.Util.MeasureUnit.Complexity GetComplexity
-        {
-            get { return IExecuteWithSignature<Android.Icu.Util.MeasureUnit.Complexity>("getComplexity", "()Landroid/icu/util/MeasureUnit$Complexity;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/MeasureUnit.html#getIdentifier()"/> 
-        /// </summary>
-        public Java.Lang.String Identifier
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getIdentifier", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/MeasureUnit.html#getPrefix()"/> 
-        /// </summary>
-        public Android.Icu.Util.MeasureUnit.MeasurePrefix Prefix
-        {
-            get { return IExecuteWithSignature<Android.Icu.Util.MeasureUnit.MeasurePrefix>("getPrefix", "()Landroid/icu/util/MeasureUnit$MeasurePrefix;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/MeasureUnit.html#getSubtype()"/> 
-        /// </summary>
-        public Java.Lang.String Subtype
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSubtype", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/MeasureUnit.html#getType()"/> 
-        /// </summary>
-        public Java.Lang.String Type
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getType", "()Ljava/lang/String;"); }
-        }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/MeasureUnit.html#product(android.icu.util.MeasureUnit)"/>
         /// </summary>
@@ -1071,6 +1031,54 @@ namespace Android.Icu.Util
         public Android.Icu.Util.MeasureUnit WithPrefix(Android.Icu.Util.MeasureUnit.MeasurePrefix arg0)
         {
             return IExecuteWithSignature<Android.Icu.Util.MeasureUnit>("withPrefix", "(Landroid/icu/util/MeasureUnit$MeasurePrefix;)Landroid/icu/util/MeasureUnit;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/MeasureUnit.html#getComplexity()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Icu.Util.MeasureUnit.Complexity"/></returns>
+        public Android.Icu.Util.MeasureUnit.Complexity GetComplexity()
+        {
+            return IExecuteWithSignature<Android.Icu.Util.MeasureUnit.Complexity>("getComplexity", "()Landroid/icu/util/MeasureUnit$Complexity;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/MeasureUnit.html#getPrefix()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Icu.Util.MeasureUnit.MeasurePrefix"/></returns>
+        public Android.Icu.Util.MeasureUnit.MeasurePrefix GetPrefix()
+        {
+            return IExecuteWithSignature<Android.Icu.Util.MeasureUnit.MeasurePrefix>("getPrefix", "()Landroid/icu/util/MeasureUnit$MeasurePrefix;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/MeasureUnit.html#getDimensionality()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDimensionality()
+        {
+            return IExecuteWithSignature<int>("getDimensionality", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/MeasureUnit.html#getIdentifier()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetIdentifier()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getIdentifier", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/MeasureUnit.html#getSubtype()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSubtype()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getSubtype", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/util/MeasureUnit.html#getType()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetType()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getType", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/MeasureUnit.html#splitToSingleUnits()"/>
@@ -1362,18 +1370,20 @@ namespace Android.Icu.Util
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/icu/util/MeasureUnit.MeasurePrefix.html#getBase()"/> 
+            /// <see href="https://developer.android.com/reference/android/icu/util/MeasureUnit.MeasurePrefix.html#getBase()"/>
             /// </summary>
-            public int Base
+            /// <returns><see cref="int"/></returns>
+            public int GetBase()
             {
-                get { return IExecuteWithSignature<int>("getBase", "()I"); }
+                return IExecuteWithSignature<int>("getBase", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/icu/util/MeasureUnit.MeasurePrefix.html#getPower()"/> 
+            /// <see href="https://developer.android.com/reference/android/icu/util/MeasureUnit.MeasurePrefix.html#getPower()"/>
             /// </summary>
-            public int Power
+            /// <returns><see cref="int"/></returns>
+            public int GetPower()
             {
-                get { return IExecuteWithSignature<int>("getPower", "()I"); }
+                return IExecuteWithSignature<int>("getPower", "()I");
             }
 
             #endregion

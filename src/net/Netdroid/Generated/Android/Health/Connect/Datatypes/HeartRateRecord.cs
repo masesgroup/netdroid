@@ -70,11 +70,12 @@ namespace Android.Health.Connect.Datatypes
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/HeartRateRecord.html#getSamples()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/HeartRateRecord.html#getSamples()"/>
         /// </summary>
-        public Java.Util.List<Android.Health.Connect.Datatypes.HeartRateRecord.HeartRateSample> Samples
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Health.Connect.Datatypes.HeartRateRecord.HeartRateSample> GetSamples()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Health.Connect.Datatypes.HeartRateRecord.HeartRateSample>>("getSamples", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Java.Util.List<Android.Health.Connect.Datatypes.HeartRateRecord.HeartRateSample>>("getSamples", "()Ljava/util/List;");
         }
 
         #endregion
@@ -194,18 +195,20 @@ namespace Android.Health.Connect.Datatypes
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/HeartRateRecord.HeartRateSample.html#getBeatsPerMinute()"/> 
+            /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/HeartRateRecord.HeartRateSample.html#getTime()"/>
             /// </summary>
-            public long BeatsPerMinute
+            /// <returns><see cref="Java.Time.Instant"/></returns>
+            public Java.Time.Instant GetTime()
             {
-                get { return IExecuteWithSignature<long>("getBeatsPerMinute", "()J"); }
+                return IExecuteWithSignature<Java.Time.Instant>("getTime", "()Ljava/time/Instant;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/HeartRateRecord.HeartRateSample.html#getTime()"/> 
+            /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/HeartRateRecord.HeartRateSample.html#getBeatsPerMinute()"/>
             /// </summary>
-            public Java.Time.Instant Time
+            /// <returns><see cref="long"/></returns>
+            public long GetBeatsPerMinute()
             {
-                get { return IExecuteWithSignature<Java.Time.Instant>("getTime", "()Ljava/time/Instant;"); }
+                return IExecuteWithSignature<long>("getBeatsPerMinute", "()J");
             }
 
             #endregion

@@ -40,42 +40,42 @@ namespace Android.Preference
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/preference/PreferenceActivity.html#EXTRA_NO_HEADERS"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String EXTRA_NO_HEADERS { get { if (!_EXTRA_NO_HEADERSReady) { _EXTRA_NO_HEADERSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_NO_HEADERS"); _EXTRA_NO_HEADERSReady = true; } return _EXTRA_NO_HEADERSContent; } }
         private static Java.Lang.String _EXTRA_NO_HEADERSContent = default;
         private static bool _EXTRA_NO_HEADERSReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/preference/PreferenceActivity.html#EXTRA_SHOW_FRAGMENT"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String EXTRA_SHOW_FRAGMENT { get { if (!_EXTRA_SHOW_FRAGMENTReady) { _EXTRA_SHOW_FRAGMENTContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_SHOW_FRAGMENT"); _EXTRA_SHOW_FRAGMENTReady = true; } return _EXTRA_SHOW_FRAGMENTContent; } }
         private static Java.Lang.String _EXTRA_SHOW_FRAGMENTContent = default;
         private static bool _EXTRA_SHOW_FRAGMENTReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/preference/PreferenceActivity.html#EXTRA_SHOW_FRAGMENT_ARGUMENTS"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String EXTRA_SHOW_FRAGMENT_ARGUMENTS { get { if (!_EXTRA_SHOW_FRAGMENT_ARGUMENTSReady) { _EXTRA_SHOW_FRAGMENT_ARGUMENTSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_SHOW_FRAGMENT_ARGUMENTS"); _EXTRA_SHOW_FRAGMENT_ARGUMENTSReady = true; } return _EXTRA_SHOW_FRAGMENT_ARGUMENTSContent; } }
         private static Java.Lang.String _EXTRA_SHOW_FRAGMENT_ARGUMENTSContent = default;
         private static bool _EXTRA_SHOW_FRAGMENT_ARGUMENTSReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/preference/PreferenceActivity.html#EXTRA_SHOW_FRAGMENT_SHORT_TITLE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String EXTRA_SHOW_FRAGMENT_SHORT_TITLE { get { if (!_EXTRA_SHOW_FRAGMENT_SHORT_TITLEReady) { _EXTRA_SHOW_FRAGMENT_SHORT_TITLEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_SHOW_FRAGMENT_SHORT_TITLE"); _EXTRA_SHOW_FRAGMENT_SHORT_TITLEReady = true; } return _EXTRA_SHOW_FRAGMENT_SHORT_TITLEContent; } }
         private static Java.Lang.String _EXTRA_SHOW_FRAGMENT_SHORT_TITLEContent = default;
         private static bool _EXTRA_SHOW_FRAGMENT_SHORT_TITLEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/preference/PreferenceActivity.html#EXTRA_SHOW_FRAGMENT_TITLE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String EXTRA_SHOW_FRAGMENT_TITLE { get { if (!_EXTRA_SHOW_FRAGMENT_TITLEReady) { _EXTRA_SHOW_FRAGMENT_TITLEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_SHOW_FRAGMENT_TITLE"); _EXTRA_SHOW_FRAGMENT_TITLEReady = true; } return _EXTRA_SHOW_FRAGMENT_TITLEContent; } }
         private static Java.Lang.String _EXTRA_SHOW_FRAGMENT_TITLEContent = default;
         private static bool _EXTRA_SHOW_FRAGMENT_TITLEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/preference/PreferenceActivity.html#HEADER_ID_UNDEFINED"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static long HEADER_ID_UNDEFINED { get { if (!_HEADER_ID_UNDEFINEDReady) { _HEADER_ID_UNDEFINEDContent = SGetField<long>(LocalBridgeClazz, "HEADER_ID_UNDEFINED"); _HEADER_ID_UNDEFINEDReady = true; } return _HEADER_ID_UNDEFINEDContent; } }
         private static long _HEADER_ID_UNDEFINEDContent = default;
         private static bool _HEADER_ID_UNDEFINEDReady = false; // this is used because in case of generics 
@@ -88,22 +88,6 @@ namespace Android.Preference
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/preference/PreferenceActivity.html#getPreferenceManager()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Android.Preference.PreferenceManager PreferenceManager
-        {
-            get { return IExecuteWithSignature<Android.Preference.PreferenceManager>("getPreferenceManager", "()Landroid/preference/PreferenceManager;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/preference/PreferenceActivity.html#getPreferenceScreen()"/> <see href="https://developer.android.com/reference/android/preference/PreferenceActivity.html#setPreferenceScreen(android.preference.PreferenceScreen)"/>
-        /// </summary>
-        [System.Obsolete()]
-        public Android.Preference.PreferenceScreen PreferenceScreen
-        {
-            get { return IExecuteWithSignature<Android.Preference.PreferenceScreen>("getPreferenceScreen", "()Landroid/preference/PreferenceScreen;"); } set { IExecuteWithSignature("setPreferenceScreen", "(Landroid/preference/PreferenceScreen;)V", value); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/preference/PreferenceActivity.html#onBuildStartFragmentIntent(java.lang.String,android.os.Bundle,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -111,7 +95,7 @@ namespace Android.Preference
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <returns><see cref="Android.Content.Intent"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Content.Intent OnBuildStartFragmentIntent(Java.Lang.String arg0, Android.Os.Bundle arg1, int arg2, int arg3)
         {
             return IExecute<Android.Content.Intent>("onBuildStartFragmentIntent", arg0, arg1, arg2, arg3);
@@ -121,7 +105,7 @@ namespace Android.Preference
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <returns><see cref="Android.Preference.Preference"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Preference.Preference FindPreference(Java.Lang.CharSequence arg0)
         {
             return IExecuteWithSignature<Android.Preference.Preference>("findPreference", "(Ljava/lang/CharSequence;)Landroid/preference/Preference;", arg0);
@@ -130,7 +114,7 @@ namespace Android.Preference
         /// <see href="https://developer.android.com/reference/android/preference/PreferenceActivity.html#onGetInitialHeader()"/>
         /// </summary>
         /// <returns><see cref="Android.Preference.PreferenceActivity.Header"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Preference.PreferenceActivity.Header OnGetInitialHeader()
         {
             return IExecuteWithSignature<Android.Preference.PreferenceActivity.Header>("onGetInitialHeader", "()Landroid/preference/PreferenceActivity$Header;");
@@ -139,16 +123,34 @@ namespace Android.Preference
         /// <see href="https://developer.android.com/reference/android/preference/PreferenceActivity.html#onGetNewHeader()"/>
         /// </summary>
         /// <returns><see cref="Android.Preference.PreferenceActivity.Header"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Preference.PreferenceActivity.Header OnGetNewHeader()
         {
             return IExecuteWithSignature<Android.Preference.PreferenceActivity.Header>("onGetNewHeader", "()Landroid/preference/PreferenceActivity$Header;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/preference/PreferenceActivity.html#getPreferenceManager()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Preference.PreferenceManager"/></returns>
+        [global::System.Obsolete()]
+        public Android.Preference.PreferenceManager GetPreferenceManager()
+        {
+            return IExecuteWithSignature<Android.Preference.PreferenceManager>("getPreferenceManager", "()Landroid/preference/PreferenceManager;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/preference/PreferenceActivity.html#getPreferenceScreen()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Preference.PreferenceScreen"/></returns>
+        [global::System.Obsolete()]
+        public Android.Preference.PreferenceScreen GetPreferenceScreen()
+        {
+            return IExecuteWithSignature<Android.Preference.PreferenceScreen>("getPreferenceScreen", "()Landroid/preference/PreferenceScreen;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/preference/PreferenceActivity.html#hasHeaders()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool HasHeaders()
         {
             return IExecuteWithSignature<bool>("hasHeaders", "()Z");
@@ -157,7 +159,7 @@ namespace Android.Preference
         /// <see href="https://developer.android.com/reference/android/preference/PreferenceActivity.html#isMultiPane()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsMultiPane()
         {
             return IExecuteWithSignature<bool>("isMultiPane", "()Z");
@@ -166,7 +168,7 @@ namespace Android.Preference
         /// <see href="https://developer.android.com/reference/android/preference/PreferenceActivity.html#onIsHidingHeaders()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool OnIsHidingHeaders()
         {
             return IExecuteWithSignature<bool>("onIsHidingHeaders", "()Z");
@@ -175,7 +177,7 @@ namespace Android.Preference
         /// <see href="https://developer.android.com/reference/android/preference/PreferenceActivity.html#onIsMultiPane()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool OnIsMultiPane()
         {
             return IExecuteWithSignature<bool>("onIsMultiPane", "()Z");
@@ -186,7 +188,7 @@ namespace Android.Preference
         /// <param name="arg0"><see cref="Android.Preference.PreferenceFragment"/></param>
         /// <param name="arg1"><see cref="Android.Preference.Preference"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool OnPreferenceStartFragment(Android.Preference.PreferenceFragment arg0, Android.Preference.Preference arg1)
         {
             return IExecute<bool>("onPreferenceStartFragment", arg0, arg1);
@@ -197,7 +199,7 @@ namespace Android.Preference
         /// <param name="arg0"><see cref="Android.Preference.PreferenceScreen"/></param>
         /// <param name="arg1"><see cref="Android.Preference.Preference"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool OnPreferenceTreeClick(Android.Preference.PreferenceScreen arg0, Android.Preference.Preference arg1)
         {
             return IExecute<bool>("onPreferenceTreeClick", arg0, arg1);
@@ -206,7 +208,7 @@ namespace Android.Preference
         /// <see href="https://developer.android.com/reference/android/preference/PreferenceActivity.html#addPreferencesFromIntent(android.content.Intent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Intent"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void AddPreferencesFromIntent(Android.Content.Intent arg0)
         {
             IExecuteWithSignature("addPreferencesFromIntent", "(Landroid/content/Intent;)V", arg0);
@@ -215,7 +217,7 @@ namespace Android.Preference
         /// <see href="https://developer.android.com/reference/android/preference/PreferenceActivity.html#addPreferencesFromResource(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void AddPreferencesFromResource(int arg0)
         {
             IExecuteWithSignature("addPreferencesFromResource", "(I)V", arg0);
@@ -226,7 +228,7 @@ namespace Android.Preference
         /// <param name="arg0"><see cref="Android.App.Fragment"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Android.Content.Intent"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void FinishPreferencePanel(Android.App.Fragment arg0, int arg1, Android.Content.Intent arg2)
         {
             IExecute("finishPreferencePanel", arg0, arg1, arg2);
@@ -234,7 +236,7 @@ namespace Android.Preference
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/preference/PreferenceActivity.html#invalidateHeaders()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void InvalidateHeaders()
         {
             IExecuteWithSignature("invalidateHeaders", "()V");
@@ -244,7 +246,7 @@ namespace Android.Preference
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Util.List"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void LoadHeadersFromResource(int arg0, Java.Util.List<Android.Preference.PreferenceActivity.Header> arg1)
         {
             IExecute("loadHeadersFromResource", arg0, arg1);
@@ -253,7 +255,7 @@ namespace Android.Preference
         /// <see href="https://developer.android.com/reference/android/preference/PreferenceActivity.html#onBuildHeaders(java.util.List)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnBuildHeaders(Java.Util.List<Android.Preference.PreferenceActivity.Header> arg0)
         {
             IExecuteWithSignature("onBuildHeaders", "(Ljava/util/List;)V", arg0);
@@ -263,7 +265,7 @@ namespace Android.Preference
         /// </summary>
         /// <param name="arg0"><see cref="Android.Preference.PreferenceActivity.Header"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnHeaderClick(Android.Preference.PreferenceActivity.Header arg0, int arg1)
         {
             IExecute("onHeaderClick", arg0, arg1);
@@ -272,7 +274,7 @@ namespace Android.Preference
         /// <see href="https://developer.android.com/reference/android/preference/PreferenceActivity.html#setListFooter(android.view.View)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.View"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetListFooter(Android.View.View arg0)
         {
             IExecuteWithSignature("setListFooter", "(Landroid/view/View;)V", arg0);
@@ -283,17 +285,26 @@ namespace Android.Preference
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <param name="arg1"><see cref="Java.Lang.CharSequence"/></param>
         /// <param name="arg2"><see cref="Android.View.View.OnClickListener"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetParentTitle(Java.Lang.CharSequence arg0, Java.Lang.CharSequence arg1, Android.View.View.OnClickListener arg2)
         {
             IExecute("setParentTitle", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/preference/PreferenceActivity.html#setPreferenceScreen(android.preference.PreferenceScreen)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Preference.PreferenceScreen"/></param>
+        [global::System.Obsolete()]
+        public void SetPreferenceScreen(Android.Preference.PreferenceScreen arg0)
+        {
+            IExecuteWithSignature("setPreferenceScreen", "(Landroid/preference/PreferenceScreen;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/preference/PreferenceActivity.html#showBreadCrumbs(java.lang.CharSequence,java.lang.CharSequence)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <param name="arg1"><see cref="Java.Lang.CharSequence"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ShowBreadCrumbs(Java.Lang.CharSequence arg0, Java.Lang.CharSequence arg1)
         {
             IExecute("showBreadCrumbs", arg0, arg1);
@@ -303,7 +314,7 @@ namespace Android.Preference
         /// </summary>
         /// <param name="arg0"><see cref="Android.App.Fragment"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void StartPreferenceFragment(Android.App.Fragment arg0, bool arg1)
         {
             IExecute("startPreferenceFragment", arg0, arg1);
@@ -317,7 +328,7 @@ namespace Android.Preference
         /// <param name="arg3"><see cref="Java.Lang.CharSequence"/></param>
         /// <param name="arg4"><see cref="Android.App.Fragment"/></param>
         /// <param name="arg5"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void StartPreferencePanel(Java.Lang.String arg0, Android.Os.Bundle arg1, int arg2, Java.Lang.CharSequence arg3, Android.App.Fragment arg4, int arg5)
         {
             IExecute("startPreferencePanel", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -331,7 +342,7 @@ namespace Android.Preference
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void StartWithFragment(Java.Lang.String arg0, Android.Os.Bundle arg1, Android.App.Fragment arg2, int arg3, int arg4, int arg5)
         {
             IExecute("startWithFragment", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -343,7 +354,7 @@ namespace Android.Preference
         /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
         /// <param name="arg2"><see cref="Android.App.Fragment"/></param>
         /// <param name="arg3"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void StartWithFragment(Java.Lang.String arg0, Android.Os.Bundle arg1, Android.App.Fragment arg2, int arg3)
         {
             IExecute("startWithFragment", arg0, arg1, arg2, arg3);
@@ -352,7 +363,7 @@ namespace Android.Preference
         /// <see href="https://developer.android.com/reference/android/preference/PreferenceActivity.html#switchToHeader(android.preference.PreferenceActivity.Header)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Preference.PreferenceActivity.Header"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SwitchToHeader(Android.Preference.PreferenceActivity.Header arg0)
         {
             IExecuteWithSignature("switchToHeader", "(Landroid/preference/PreferenceActivity$Header;)V", arg0);
@@ -362,7 +373,7 @@ namespace Android.Preference
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Android.Os.Bundle"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SwitchToHeader(Java.Lang.String arg0, Android.Os.Bundle arg1)
         {
             IExecute("switchToHeader", arg0, arg1);
@@ -386,77 +397,77 @@ namespace Android.Preference
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/preference/PreferenceActivity.Header.html#intent"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Content.Intent intent { get { return IGetField<Android.Content.Intent>("intent"); } set { ISetField("intent", value); } }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/preference/PreferenceActivity.Header.html#extras"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Os.Bundle extras { get { return IGetField<Android.Os.Bundle>("extras"); } set { ISetField("extras", value); } }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/preference/PreferenceActivity.Header.html#fragmentArguments"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Os.Bundle fragmentArguments { get { return IGetField<Android.Os.Bundle>("fragmentArguments"); } set { ISetField("fragmentArguments", value); } }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/preference/PreferenceActivity.Header.html#breadCrumbShortTitleRes"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public int breadCrumbShortTitleRes { get { return IGetField<int>("breadCrumbShortTitleRes"); } set { ISetField("breadCrumbShortTitleRes", value); } }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/preference/PreferenceActivity.Header.html#breadCrumbTitleRes"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public int breadCrumbTitleRes { get { return IGetField<int>("breadCrumbTitleRes"); } set { ISetField("breadCrumbTitleRes", value); } }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/preference/PreferenceActivity.Header.html#iconRes"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public int iconRes { get { return IGetField<int>("iconRes"); } set { ISetField("iconRes", value); } }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/preference/PreferenceActivity.Header.html#summaryRes"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public int summaryRes { get { return IGetField<int>("summaryRes"); } set { ISetField("summaryRes", value); } }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/preference/PreferenceActivity.Header.html#titleRes"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public int titleRes { get { return IGetField<int>("titleRes"); } set { ISetField("titleRes", value); } }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/preference/PreferenceActivity.Header.html#breadCrumbShortTitle"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Java.Lang.CharSequence breadCrumbShortTitle { get { return IGetField<Java.Lang.CharSequence>("breadCrumbShortTitle"); } set { ISetField("breadCrumbShortTitle", value); } }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/preference/PreferenceActivity.Header.html#breadCrumbTitle"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Java.Lang.CharSequence breadCrumbTitle { get { return IGetField<Java.Lang.CharSequence>("breadCrumbTitle"); } set { ISetField("breadCrumbTitle", value); } }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/preference/PreferenceActivity.Header.html#summary"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Java.Lang.CharSequence summary { get { return IGetField<Java.Lang.CharSequence>("summary"); } set { ISetField("summary", value); } }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/preference/PreferenceActivity.Header.html#title"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Java.Lang.CharSequence title { get { return IGetField<Java.Lang.CharSequence>("title"); } set { ISetField("title", value); } }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/preference/PreferenceActivity.Header.html#fragment"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Java.Lang.String fragment { get { return IGetField<Java.Lang.String>("fragment"); } set { ISetField("fragment", value); } }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/preference/PreferenceActivity.Header.html#id"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public long id { get { return IGetField<long>("id"); } set { ISetField("id", value); } }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/preference/PreferenceActivity.Header.html#CREATOR"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
             private static Android.Os.Parcelable.Creator _CREATORContent = default;
             private static bool _CREATORReady = false; // this is used because in case of generics 
@@ -472,7 +483,7 @@ namespace Android.Preference
             /// <see href="https://developer.android.com/reference/android/preference/PreferenceActivity.Header.html#describeContents()"/>
             /// </summary>
             /// <returns><see cref="int"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public int DescribeContents()
             {
                 return IExecuteWithSignature<int>("describeContents", "()I");
@@ -482,7 +493,7 @@ namespace Android.Preference
             /// </summary>
             /// <param name="arg0"><see cref="Android.Content.Res.Resources"/></param>
             /// <returns><see cref="Java.Lang.CharSequence"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Java.Lang.CharSequence GetBreadCrumbShortTitle(Android.Content.Res.Resources arg0)
             {
                 return IExecuteWithSignature<Java.Lang.CharSequence>("getBreadCrumbShortTitle", "(Landroid/content/res/Resources;)Ljava/lang/CharSequence;", arg0);
@@ -492,7 +503,7 @@ namespace Android.Preference
             /// </summary>
             /// <param name="arg0"><see cref="Android.Content.Res.Resources"/></param>
             /// <returns><see cref="Java.Lang.CharSequence"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Java.Lang.CharSequence GetBreadCrumbTitle(Android.Content.Res.Resources arg0)
             {
                 return IExecuteWithSignature<Java.Lang.CharSequence>("getBreadCrumbTitle", "(Landroid/content/res/Resources;)Ljava/lang/CharSequence;", arg0);
@@ -502,7 +513,7 @@ namespace Android.Preference
             /// </summary>
             /// <param name="arg0"><see cref="Android.Content.Res.Resources"/></param>
             /// <returns><see cref="Java.Lang.CharSequence"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Java.Lang.CharSequence GetSummary(Android.Content.Res.Resources arg0)
             {
                 return IExecuteWithSignature<Java.Lang.CharSequence>("getSummary", "(Landroid/content/res/Resources;)Ljava/lang/CharSequence;", arg0);
@@ -512,7 +523,7 @@ namespace Android.Preference
             /// </summary>
             /// <param name="arg0"><see cref="Android.Content.Res.Resources"/></param>
             /// <returns><see cref="Java.Lang.CharSequence"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Java.Lang.CharSequence GetTitle(Android.Content.Res.Resources arg0)
             {
                 return IExecuteWithSignature<Java.Lang.CharSequence>("getTitle", "(Landroid/content/res/Resources;)Ljava/lang/CharSequence;", arg0);
@@ -521,7 +532,7 @@ namespace Android.Preference
             /// <see href="https://developer.android.com/reference/android/preference/PreferenceActivity.Header.html#readFromParcel(android.os.Parcel)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Os.Parcel"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void ReadFromParcel(Android.Os.Parcel arg0)
             {
                 IExecuteWithSignature("readFromParcel", "(Landroid/os/Parcel;)V", arg0);
@@ -531,7 +542,7 @@ namespace Android.Preference
             /// </summary>
             /// <param name="arg0"><see cref="Android.Os.Parcel"/></param>
             /// <param name="arg1"><see cref="int"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
             {
                 IExecute("writeToParcel", arg0, arg1);

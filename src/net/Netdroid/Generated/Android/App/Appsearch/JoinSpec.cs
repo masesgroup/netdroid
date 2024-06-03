@@ -82,39 +82,44 @@ namespace Android.App.Appsearch
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/JoinSpec.html#getAggregationScoringStrategy()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/JoinSpec.html#getNestedSearchSpec()"/>
         /// </summary>
-        public int AggregationScoringStrategy
+        /// <returns><see cref="Android.App.Appsearch.SearchSpec"/></returns>
+        public Android.App.Appsearch.SearchSpec GetNestedSearchSpec()
         {
-            get { return IExecuteWithSignature<int>("getAggregationScoringStrategy", "()I"); }
+            return IExecuteWithSignature<Android.App.Appsearch.SearchSpec>("getNestedSearchSpec", "()Landroid/app/appsearch/SearchSpec;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/JoinSpec.html#getChildPropertyExpression()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/JoinSpec.html#getAggregationScoringStrategy()"/>
         /// </summary>
-        public Java.Lang.String ChildPropertyExpression
+        /// <returns><see cref="int"/></returns>
+        public int GetAggregationScoringStrategy()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getChildPropertyExpression", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<int>("getAggregationScoringStrategy", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/JoinSpec.html#getMaxJoinedResultCount()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/JoinSpec.html#getMaxJoinedResultCount()"/>
         /// </summary>
-        public int MaxJoinedResultCount
+        /// <returns><see cref="int"/></returns>
+        public int GetMaxJoinedResultCount()
         {
-            get { return IExecuteWithSignature<int>("getMaxJoinedResultCount", "()I"); }
+            return IExecuteWithSignature<int>("getMaxJoinedResultCount", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/JoinSpec.html#getNestedQuery()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/JoinSpec.html#getChildPropertyExpression()"/>
         /// </summary>
-        public Java.Lang.String NestedQuery
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetChildPropertyExpression()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getNestedQuery", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getChildPropertyExpression", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/JoinSpec.html#getNestedSearchSpec()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/JoinSpec.html#getNestedQuery()"/>
         /// </summary>
-        public Android.App.Appsearch.SearchSpec NestedSearchSpec
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetNestedQuery()
         {
-            get { return IExecuteWithSignature<Android.App.Appsearch.SearchSpec>("getNestedSearchSpec", "()Landroid/app/appsearch/SearchSpec;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getNestedQuery", "()Ljava/lang/String;");
         }
 
         #endregion

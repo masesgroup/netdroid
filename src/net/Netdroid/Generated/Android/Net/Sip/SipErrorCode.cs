@@ -40,91 +40,91 @@ namespace Android.Net.Sip
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/sip/SipErrorCode.html#CLIENT_ERROR"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int CLIENT_ERROR { get { if (!_CLIENT_ERRORReady) { _CLIENT_ERRORContent = SGetField<int>(LocalBridgeClazz, "CLIENT_ERROR"); _CLIENT_ERRORReady = true; } return _CLIENT_ERRORContent; } }
         private static int _CLIENT_ERRORContent = default;
         private static bool _CLIENT_ERRORReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/sip/SipErrorCode.html#CROSS_DOMAIN_AUTHENTICATION"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int CROSS_DOMAIN_AUTHENTICATION { get { if (!_CROSS_DOMAIN_AUTHENTICATIONReady) { _CROSS_DOMAIN_AUTHENTICATIONContent = SGetField<int>(LocalBridgeClazz, "CROSS_DOMAIN_AUTHENTICATION"); _CROSS_DOMAIN_AUTHENTICATIONReady = true; } return _CROSS_DOMAIN_AUTHENTICATIONContent; } }
         private static int _CROSS_DOMAIN_AUTHENTICATIONContent = default;
         private static bool _CROSS_DOMAIN_AUTHENTICATIONReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/sip/SipErrorCode.html#DATA_CONNECTION_LOST"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int DATA_CONNECTION_LOST { get { if (!_DATA_CONNECTION_LOSTReady) { _DATA_CONNECTION_LOSTContent = SGetField<int>(LocalBridgeClazz, "DATA_CONNECTION_LOST"); _DATA_CONNECTION_LOSTReady = true; } return _DATA_CONNECTION_LOSTContent; } }
         private static int _DATA_CONNECTION_LOSTContent = default;
         private static bool _DATA_CONNECTION_LOSTReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/sip/SipErrorCode.html#IN_PROGRESS"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int IN_PROGRESS { get { if (!_IN_PROGRESSReady) { _IN_PROGRESSContent = SGetField<int>(LocalBridgeClazz, "IN_PROGRESS"); _IN_PROGRESSReady = true; } return _IN_PROGRESSContent; } }
         private static int _IN_PROGRESSContent = default;
         private static bool _IN_PROGRESSReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/sip/SipErrorCode.html#INVALID_CREDENTIALS"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int INVALID_CREDENTIALS { get { if (!_INVALID_CREDENTIALSReady) { _INVALID_CREDENTIALSContent = SGetField<int>(LocalBridgeClazz, "INVALID_CREDENTIALS"); _INVALID_CREDENTIALSReady = true; } return _INVALID_CREDENTIALSContent; } }
         private static int _INVALID_CREDENTIALSContent = default;
         private static bool _INVALID_CREDENTIALSReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/sip/SipErrorCode.html#INVALID_REMOTE_URI"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int INVALID_REMOTE_URI { get { if (!_INVALID_REMOTE_URIReady) { _INVALID_REMOTE_URIContent = SGetField<int>(LocalBridgeClazz, "INVALID_REMOTE_URI"); _INVALID_REMOTE_URIReady = true; } return _INVALID_REMOTE_URIContent; } }
         private static int _INVALID_REMOTE_URIContent = default;
         private static bool _INVALID_REMOTE_URIReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/sip/SipErrorCode.html#NO_ERROR"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int NO_ERROR { get { if (!_NO_ERRORReady) { _NO_ERRORContent = SGetField<int>(LocalBridgeClazz, "NO_ERROR"); _NO_ERRORReady = true; } return _NO_ERRORContent; } }
         private static int _NO_ERRORContent = default;
         private static bool _NO_ERRORReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/sip/SipErrorCode.html#PEER_NOT_REACHABLE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int PEER_NOT_REACHABLE { get { if (!_PEER_NOT_REACHABLEReady) { _PEER_NOT_REACHABLEContent = SGetField<int>(LocalBridgeClazz, "PEER_NOT_REACHABLE"); _PEER_NOT_REACHABLEReady = true; } return _PEER_NOT_REACHABLEContent; } }
         private static int _PEER_NOT_REACHABLEContent = default;
         private static bool _PEER_NOT_REACHABLEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/sip/SipErrorCode.html#SERVER_ERROR"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int SERVER_ERROR { get { if (!_SERVER_ERRORReady) { _SERVER_ERRORContent = SGetField<int>(LocalBridgeClazz, "SERVER_ERROR"); _SERVER_ERRORReady = true; } return _SERVER_ERRORContent; } }
         private static int _SERVER_ERRORContent = default;
         private static bool _SERVER_ERRORReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/sip/SipErrorCode.html#SERVER_UNREACHABLE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int SERVER_UNREACHABLE { get { if (!_SERVER_UNREACHABLEReady) { _SERVER_UNREACHABLEContent = SGetField<int>(LocalBridgeClazz, "SERVER_UNREACHABLE"); _SERVER_UNREACHABLEReady = true; } return _SERVER_UNREACHABLEContent; } }
         private static int _SERVER_UNREACHABLEContent = default;
         private static bool _SERVER_UNREACHABLEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/sip/SipErrorCode.html#SOCKET_ERROR"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int SOCKET_ERROR { get { if (!_SOCKET_ERRORReady) { _SOCKET_ERRORContent = SGetField<int>(LocalBridgeClazz, "SOCKET_ERROR"); _SOCKET_ERRORReady = true; } return _SOCKET_ERRORContent; } }
         private static int _SOCKET_ERRORContent = default;
         private static bool _SOCKET_ERRORReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/sip/SipErrorCode.html#TIME_OUT"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int TIME_OUT { get { if (!_TIME_OUTReady) { _TIME_OUTContent = SGetField<int>(LocalBridgeClazz, "TIME_OUT"); _TIME_OUTReady = true; } return _TIME_OUTContent; } }
         private static int _TIME_OUTContent = default;
         private static bool _TIME_OUTReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/sip/SipErrorCode.html#TRANSACTION_TERMINTED"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int TRANSACTION_TERMINTED { get { if (!_TRANSACTION_TERMINTEDReady) { _TRANSACTION_TERMINTEDContent = SGetField<int>(LocalBridgeClazz, "TRANSACTION_TERMINTED"); _TRANSACTION_TERMINTEDReady = true; } return _TRANSACTION_TERMINTEDContent; } }
         private static int _TRANSACTION_TERMINTEDContent = default;
         private static bool _TRANSACTION_TERMINTEDReady = false; // this is used because in case of generics 
@@ -137,7 +137,7 @@ namespace Android.Net.Sip
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String ToString(int arg0)
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toString", "(I)Ljava/lang/String;", arg0);

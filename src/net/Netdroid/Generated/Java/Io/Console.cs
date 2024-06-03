@@ -46,7 +46,7 @@ namespace Java.Io
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/Console.html#readPassword()"/>
+        /// <see href="https://developer.android.com/reference/java/io/Console.html#readPassword()"/>
         /// </summary>
         /// <returns><see cref="char"/></returns>
         public char[] ReadPassword()
@@ -54,7 +54,7 @@ namespace Java.Io
             return IExecuteWithSignatureArray<char>("readPassword", "()[C");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/Console.html#readPassword(java.lang.String,java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/io/Console.html#readPassword(java.lang.String,java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -64,7 +64,7 @@ namespace Java.Io
             if (arg1.Length == 0) return IExecuteArray<char>("readPassword", arg0); else return IExecuteArray<char>("readPassword", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/Console.html#format(java.lang.String,java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/io/Console.html#format(java.lang.String,java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -74,7 +74,7 @@ namespace Java.Io
             if (arg1.Length == 0) return IExecute<Java.Io.Console>("format", arg0); else return IExecute<Java.Io.Console>("format", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/Console.html#printf(java.lang.String,java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/io/Console.html#printf(java.lang.String,java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -84,7 +84,7 @@ namespace Java.Io
             if (arg1.Length == 0) return IExecute<Java.Io.Console>("printf", arg0); else return IExecute<Java.Io.Console>("printf", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/Console.html#writer()"/>
+        /// <see href="https://developer.android.com/reference/java/io/Console.html#writer()"/>
         /// </summary>
         /// <returns><see cref="Java.Io.PrintWriter"/></returns>
         public Java.Io.PrintWriter Writer()
@@ -92,7 +92,7 @@ namespace Java.Io
             return IExecuteWithSignature<Java.Io.PrintWriter>("writer", "()Ljava/io/PrintWriter;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/Console.html#reader()"/>
+        /// <see href="https://developer.android.com/reference/java/io/Console.html#reader()"/>
         /// </summary>
         /// <returns><see cref="Java.Io.Reader"/></returns>
         public Java.Io.Reader Reader()
@@ -100,7 +100,7 @@ namespace Java.Io
             return IExecuteWithSignature<Java.Io.Reader>("reader", "()Ljava/io/Reader;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/Console.html#readLine()"/>
+        /// <see href="https://developer.android.com/reference/java/io/Console.html#readLine()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String ReadLine()
@@ -108,7 +108,7 @@ namespace Java.Io
             return IExecuteWithSignature<Java.Lang.String>("readLine", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/Console.html#readLine(java.lang.String,java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/io/Console.html#readLine(java.lang.String,java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -118,15 +118,7 @@ namespace Java.Io
             if (arg1.Length == 0) return IExecute<Java.Lang.String>("readLine", arg0); else return IExecute<Java.Lang.String>("readLine", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/Console.html#charset()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Nio.Charset.Charset"/></returns>
-        public Java.Nio.Charset.Charset Charset()
-        {
-            return IExecuteWithSignature<Java.Nio.Charset.Charset>("charset", "()Ljava/nio/charset/Charset;");
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/Console.html#flush()"/>
+        /// <see href="https://developer.android.com/reference/java/io/Console.html#flush()"/>
         /// </summary>
         public void Flush()
         {

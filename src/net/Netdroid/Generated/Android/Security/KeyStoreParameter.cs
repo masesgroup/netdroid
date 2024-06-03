@@ -49,7 +49,7 @@ namespace Android.Security
         /// <see href="https://developer.android.com/reference/android/security/KeyStoreParameter.html#isEncryptionRequired()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsEncryptionRequired()
         {
             return IExecuteWithSignature<bool>("isEncryptionRequired", "()Z");
@@ -66,7 +66,7 @@ namespace Android.Security
             /// <see href="https://developer.android.com/reference/android/security/KeyStoreParameter.Builder.html#%3Cinit%3E(android.content.Context)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Content.Context"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Builder(Android.Content.Context arg0)
                 : base(arg0)
             {
@@ -91,7 +91,7 @@ namespace Android.Security
             /// <see href="https://developer.android.com/reference/android/security/KeyStoreParameter.Builder.html#build()"/>
             /// </summary>
             /// <returns><see cref="Android.Security.KeyStoreParameter"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Security.KeyStoreParameter Build()
             {
                 return IExecuteWithSignature<Android.Security.KeyStoreParameter>("build", "()Landroid/security/KeyStoreParameter;");
@@ -101,7 +101,7 @@ namespace Android.Security
             /// </summary>
             /// <param name="arg0"><see cref="bool"/></param>
             /// <returns><see cref="Android.Security.KeyStoreParameter.Builder"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Security.KeyStoreParameter.Builder SetEncryptionRequired(bool arg0)
             {
                 return IExecuteWithSignature<Android.Security.KeyStoreParameter.Builder>("setEncryptionRequired", "(Z)Landroid/security/KeyStoreParameter$Builder;", arg0);

@@ -38,19 +38,19 @@ namespace Java.Util
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/FormattableFlags.html#ALTERNATE"/>
+        /// <see href="https://developer.android.com/reference/java/util/FormattableFlags.html#ALTERNATE"/>
         /// </summary>
         public static int ALTERNATE { get { if (!_ALTERNATEReady) { _ALTERNATEContent = SGetField<int>(LocalBridgeClazz, "ALTERNATE"); _ALTERNATEReady = true; } return _ALTERNATEContent; } }
         private static int _ALTERNATEContent = default;
         private static bool _ALTERNATEReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/FormattableFlags.html#LEFT_JUSTIFY"/>
+        /// <see href="https://developer.android.com/reference/java/util/FormattableFlags.html#LEFT_JUSTIFY"/>
         /// </summary>
         public static int LEFT_JUSTIFY { get { if (!_LEFT_JUSTIFYReady) { _LEFT_JUSTIFYContent = SGetField<int>(LocalBridgeClazz, "LEFT_JUSTIFY"); _LEFT_JUSTIFYReady = true; } return _LEFT_JUSTIFYContent; } }
         private static int _LEFT_JUSTIFYContent = default;
         private static bool _LEFT_JUSTIFYReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/FormattableFlags.html#UPPERCASE"/>
+        /// <see href="https://developer.android.com/reference/java/util/FormattableFlags.html#UPPERCASE"/>
         /// </summary>
         public static int UPPERCASE { get { if (!_UPPERCASEReady) { _UPPERCASEContent = SGetField<int>(LocalBridgeClazz, "UPPERCASE"); _UPPERCASEReady = true; } return _UPPERCASEContent; } }
         private static int _UPPERCASEContent = default;

@@ -50,7 +50,7 @@ namespace Java.Time.Chrono
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/MinguoDate.html#now()"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/MinguoDate.html#now()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.Chrono.MinguoDate"/></returns>
         public static Java.Time.Chrono.MinguoDate Now()
@@ -58,7 +58,7 @@ namespace Java.Time.Chrono
             return SExecuteWithSignature<Java.Time.Chrono.MinguoDate>(LocalBridgeClazz, "now", "()Ljava/time/chrono/MinguoDate;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/MinguoDate.html#now(java.time.Clock)"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/MinguoDate.html#now(java.time.Clock)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Clock"/></param>
         /// <returns><see cref="Java.Time.Chrono.MinguoDate"/></returns>
@@ -67,7 +67,7 @@ namespace Java.Time.Chrono
             return SExecuteWithSignature<Java.Time.Chrono.MinguoDate>(LocalBridgeClazz, "now", "(Ljava/time/Clock;)Ljava/time/chrono/MinguoDate;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/MinguoDate.html#now(java.time.ZoneId)"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/MinguoDate.html#now(java.time.ZoneId)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.ZoneId"/></param>
         /// <returns><see cref="Java.Time.Chrono.MinguoDate"/></returns>
@@ -76,7 +76,7 @@ namespace Java.Time.Chrono
             return SExecuteWithSignature<Java.Time.Chrono.MinguoDate>(LocalBridgeClazz, "now", "(Ljava/time/ZoneId;)Ljava/time/chrono/MinguoDate;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/MinguoDate.html#of(int,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/MinguoDate.html#of(int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>

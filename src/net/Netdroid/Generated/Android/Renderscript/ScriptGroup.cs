@@ -50,7 +50,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="object"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public object[] Execute(params object[] arg0)
         {
             if (arg0.Length == 0) return IExecuteWithSignatureArray<object>("execute", "([Ljava/lang/Object;)[Ljava/lang/Object;"); else return IExecuteWithSignatureArray<object>("execute", "([Ljava/lang/Object;)[Ljava/lang/Object;", arg0);
@@ -58,7 +58,7 @@ namespace Android.Renderscript
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptGroup.html#execute()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Execute()
         {
             IExecuteWithSignature("execute", "()V");
@@ -68,7 +68,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.Script.KernelID"/></param>
         /// <param name="arg1"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetInput(Android.Renderscript.Script.KernelID arg0, Android.Renderscript.Allocation arg1)
         {
             IExecute("setInput", arg0, arg1);
@@ -78,7 +78,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.Script.KernelID"/></param>
         /// <param name="arg1"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetOutput(Android.Renderscript.Script.KernelID arg0, Android.Renderscript.Allocation arg1)
         {
             IExecute("setOutput", arg0, arg1);
@@ -96,7 +96,7 @@ namespace Android.Renderscript
             /// </summary>
             /// <param name="arg0"><see cref="Android.Renderscript.Script.FieldID"/></param>
             /// <param name="arg1"><see cref="object"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Binding(Android.Renderscript.Script.FieldID arg0, object arg1)
                 : base(arg0, arg1)
             {
@@ -136,7 +136,7 @@ namespace Android.Renderscript
             /// <see href="https://developer.android.com/reference/android/renderscript/ScriptGroup.Builder.html#%3Cinit%3E(android.renderscript.RenderScript)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Builder(Android.Renderscript.RenderScript arg0)
                 : base(arg0)
             {
@@ -161,7 +161,7 @@ namespace Android.Renderscript
             /// <see href="https://developer.android.com/reference/android/renderscript/ScriptGroup.Builder.html#create()"/>
             /// </summary>
             /// <returns><see cref="Android.Renderscript.ScriptGroup"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Renderscript.ScriptGroup Create()
             {
                 return IExecuteWithSignature<Android.Renderscript.ScriptGroup>("create", "()Landroid/renderscript/ScriptGroup;");
@@ -173,7 +173,7 @@ namespace Android.Renderscript
             /// <param name="arg1"><see cref="Android.Renderscript.Script.KernelID"/></param>
             /// <param name="arg2"><see cref="Android.Renderscript.Script.FieldID"/></param>
             /// <returns><see cref="Android.Renderscript.ScriptGroup.Builder"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Renderscript.ScriptGroup.Builder AddConnection(Android.Renderscript.Type arg0, Android.Renderscript.Script.KernelID arg1, Android.Renderscript.Script.FieldID arg2)
             {
                 return IExecute<Android.Renderscript.ScriptGroup.Builder>("addConnection", arg0, arg1, arg2);
@@ -185,7 +185,7 @@ namespace Android.Renderscript
             /// <param name="arg1"><see cref="Android.Renderscript.Script.KernelID"/></param>
             /// <param name="arg2"><see cref="Android.Renderscript.Script.KernelID"/></param>
             /// <returns><see cref="Android.Renderscript.ScriptGroup.Builder"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Renderscript.ScriptGroup.Builder AddConnection(Android.Renderscript.Type arg0, Android.Renderscript.Script.KernelID arg1, Android.Renderscript.Script.KernelID arg2)
             {
                 return IExecute<Android.Renderscript.ScriptGroup.Builder>("addConnection", arg0, arg1, arg2);
@@ -195,7 +195,7 @@ namespace Android.Renderscript
             /// </summary>
             /// <param name="arg0"><see cref="Android.Renderscript.Script.KernelID"/></param>
             /// <returns><see cref="Android.Renderscript.ScriptGroup.Builder"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Renderscript.ScriptGroup.Builder AddKernel(Android.Renderscript.Script.KernelID arg0)
             {
                 return IExecuteWithSignature<Android.Renderscript.ScriptGroup.Builder>("addKernel", "(Landroid/renderscript/Script$KernelID;)Landroid/renderscript/ScriptGroup$Builder;", arg0);
@@ -219,7 +219,7 @@ namespace Android.Renderscript
             /// <see href="https://developer.android.com/reference/android/renderscript/ScriptGroup.Builder2.html#%3Cinit%3E(android.renderscript.RenderScript)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Builder2(Android.Renderscript.RenderScript arg0)
                 : base(arg0)
             {
@@ -246,7 +246,7 @@ namespace Android.Renderscript
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <param name="arg1"><see cref="Android.Renderscript.ScriptGroup.Future"/></param>
             /// <returns><see cref="Android.Renderscript.ScriptGroup"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Renderscript.ScriptGroup Create(Java.Lang.String arg0, params Android.Renderscript.ScriptGroup.Future[] arg1)
             {
                 if (arg1.Length == 0) return IExecute<Android.Renderscript.ScriptGroup>("create", arg0); else return IExecute<Android.Renderscript.ScriptGroup>("create", arg0, arg1);
@@ -257,7 +257,7 @@ namespace Android.Renderscript
             /// <param name="arg0"><see cref="Android.Renderscript.Script.InvokeID"/></param>
             /// <param name="arg1"><see cref="object"/></param>
             /// <returns><see cref="Android.Renderscript.ScriptGroup.Closure"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Renderscript.ScriptGroup.Closure AddInvoke(Android.Renderscript.Script.InvokeID arg0, params object[] arg1)
             {
                 if (arg1.Length == 0) return IExecute<Android.Renderscript.ScriptGroup.Closure>("addInvoke", arg0); else return IExecute<Android.Renderscript.ScriptGroup.Closure>("addInvoke", arg0, arg1);
@@ -269,7 +269,7 @@ namespace Android.Renderscript
             /// <param name="arg1"><see cref="Android.Renderscript.Type"/></param>
             /// <param name="arg2"><see cref="object"/></param>
             /// <returns><see cref="Android.Renderscript.ScriptGroup.Closure"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Renderscript.ScriptGroup.Closure AddKernel(Android.Renderscript.Script.KernelID arg0, Android.Renderscript.Type arg1, params object[] arg2)
             {
                 if (arg2.Length == 0) return IExecute<Android.Renderscript.ScriptGroup.Closure>("addKernel", arg0, arg1); else return IExecute<Android.Renderscript.ScriptGroup.Closure>("addKernel", arg0, arg1, arg2);
@@ -278,7 +278,7 @@ namespace Android.Renderscript
             /// <see href="https://developer.android.com/reference/android/renderscript/ScriptGroup.Builder2.html#addInput()"/>
             /// </summary>
             /// <returns><see cref="Android.Renderscript.ScriptGroup.Input"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Renderscript.ScriptGroup.Input AddInput()
             {
                 return IExecuteWithSignature<Android.Renderscript.ScriptGroup.Input>("addInput", "()Landroid/renderscript/ScriptGroup$Input;");
@@ -315,22 +315,23 @@ namespace Android.Renderscript
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/renderscript/ScriptGroup.Closure.html#getReturn()"/> 
-            /// </summary>
-            [System.Obsolete()]
-            public Android.Renderscript.ScriptGroup.Future Return
-            {
-                get { return IExecuteWithSignature<Android.Renderscript.ScriptGroup.Future>("getReturn", "()Landroid/renderscript/ScriptGroup$Future;"); }
-            }
-            /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/ScriptGroup.Closure.html#getGlobal(android.renderscript.Script.FieldID)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Renderscript.Script.FieldID"/></param>
             /// <returns><see cref="Android.Renderscript.ScriptGroup.Future"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Renderscript.ScriptGroup.Future GetGlobal(Android.Renderscript.Script.FieldID arg0)
             {
                 return IExecuteWithSignature<Android.Renderscript.ScriptGroup.Future>("getGlobal", "(Landroid/renderscript/Script$FieldID;)Landroid/renderscript/ScriptGroup$Future;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/renderscript/ScriptGroup.Closure.html#getReturn()"/>
+            /// </summary>
+            /// <returns><see cref="Android.Renderscript.ScriptGroup.Future"/></returns>
+            [global::System.Obsolete()]
+            public Android.Renderscript.ScriptGroup.Future GetReturn()
+            {
+                return IExecuteWithSignature<Android.Renderscript.ScriptGroup.Future>("getReturn", "()Landroid/renderscript/ScriptGroup$Future;");
             }
 
             #endregion

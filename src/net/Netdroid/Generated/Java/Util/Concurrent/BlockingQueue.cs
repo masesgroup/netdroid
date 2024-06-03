@@ -46,7 +46,7 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingQueue.html#add(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingQueue.html#add(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -55,7 +55,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("add", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingQueue.html#contains(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingQueue.html#contains(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -64,7 +64,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("contains", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingQueue.html#offer(java.lang.Object,long,java.util.concurrent.TimeUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingQueue.html#offer(java.lang.Object,long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -76,7 +76,7 @@ namespace Java.Util.Concurrent
             return IExecute<bool>("offer", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingQueue.html#offer(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingQueue.html#offer(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -85,7 +85,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("offer", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingQueue.html#remove(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingQueue.html#remove(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -94,7 +94,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("remove", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingQueue.html#poll(long,java.util.concurrent.TimeUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingQueue.html#poll(long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
@@ -105,7 +105,7 @@ namespace Java.Util.Concurrent
             return IExecute("poll", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingQueue.html#take()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingQueue.html#take()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
@@ -114,7 +114,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature("take", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingQueue.html#drainTo(java.util.Collection,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingQueue.html#drainTo(java.util.Collection,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -124,7 +124,7 @@ namespace Java.Util.Concurrent
             return IExecute<int>("drainTo", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingQueue.html#drainTo(java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingQueue.html#drainTo(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <returns><see cref="int"/></returns>
@@ -133,7 +133,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<int>("drainTo", "(Ljava/util/Collection;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingQueue.html#remainingCapacity()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingQueue.html#remainingCapacity()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int RemainingCapacity()
@@ -141,7 +141,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<int>("remainingCapacity", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingQueue.html#put(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingQueue.html#put(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <exception cref="Java.Lang.InterruptedException"/>
@@ -203,7 +203,7 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingQueue.html#add(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingQueue.html#add(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -212,7 +212,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("add", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingQueue.html#contains(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingQueue.html#contains(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -221,7 +221,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("contains", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingQueue.html#offer(java.lang.Object,long,java.util.concurrent.TimeUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingQueue.html#offer(java.lang.Object,long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -233,7 +233,7 @@ namespace Java.Util.Concurrent
             return IExecute<bool>("offer", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingQueue.html#offer(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingQueue.html#offer(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -242,7 +242,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("offer", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingQueue.html#remove(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingQueue.html#remove(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -251,7 +251,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("remove", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingQueue.html#poll(long,java.util.concurrent.TimeUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingQueue.html#poll(long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
@@ -262,7 +262,7 @@ namespace Java.Util.Concurrent
             return IExecute<E>("poll", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingQueue.html#take()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingQueue.html#take()"/>
         /// </summary>
         /// <returns><typeparamref name="E"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
@@ -271,28 +271,28 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<E>("take", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingQueue.html#drainTo(java.util.Collection,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingQueue.html#drainTo(java.util.Collection,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <typeparam name="Arg0objectSuperE"><typeparamref name="E"/></typeparam>
         /// <returns><see cref="int"/></returns>
-        public int DrainTo<Arg0objectSuperE>(Java.Util.Collection<Arg0objectSuperE> arg0, int arg1) where Arg0objectSuperE: E
+        public int DrainTo<Arg0objectSuperE>(Java.Util.Collection<Arg0objectSuperE> arg0, int arg1) where Arg0objectSuperE : E
         {
             return IExecute<int>("drainTo", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingQueue.html#drainTo(java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingQueue.html#drainTo(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         /// <typeparam name="Arg0objectSuperE"><typeparamref name="E"/></typeparam>
         /// <returns><see cref="int"/></returns>
-        public int DrainTo<Arg0objectSuperE>(Java.Util.Collection<Arg0objectSuperE> arg0) where Arg0objectSuperE: E
+        public int DrainTo<Arg0objectSuperE>(Java.Util.Collection<Arg0objectSuperE> arg0) where Arg0objectSuperE : E
         {
             return IExecuteWithSignature<int>("drainTo", "(Ljava/util/Collection;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingQueue.html#remainingCapacity()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingQueue.html#remainingCapacity()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int RemainingCapacity()
@@ -300,7 +300,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<int>("remainingCapacity", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/BlockingQueue.html#put(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingQueue.html#put(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <exception cref="Java.Lang.InterruptedException"/>

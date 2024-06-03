@@ -165,10 +165,13 @@ namespace Android.Se.Omapi
             /// </summary>
             public OnConnectedListener() { InitializeHandlers(); }
 
+            const string _bridgeClassName = "org.mases.netdroid.generated.android.se.omapi.SEService_OnConnectedListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "org.mases.netdroid.generated.android.se.omapi.OnConnectedListener";
+            public override string BridgeClassName => _bridgeClassName;
 
         
             // TODO: complete the class
@@ -190,10 +193,13 @@ namespace Android.Se.Omapi
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
 
+            const string _bridgeClassName = "android.se.omapi.SEService$OnConnectedListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "android.se.omapi.SEService$OnConnectedListener";
+            public override string BridgeClassName => _bridgeClassName;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>

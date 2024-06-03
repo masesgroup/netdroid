@@ -30,7 +30,7 @@ namespace Java.Security.Cert
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/PKIXCertPathValidatorResult.html#%3Cinit%3E(java.security.cert.TrustAnchor,java.security.cert.PolicyNode,java.security.PublicKey)"/>
+        /// <see href="https://developer.android.com/reference/java/security/cert/PKIXCertPathValidatorResult.html#%3Cinit%3E(java.security.cert.TrustAnchor,java.security.cert.PolicyNode,java.security.PublicKey)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Cert.TrustAnchor"/></param>
         /// <param name="arg1"><see cref="Java.Security.Cert.PolicyNode"/></param>
@@ -56,25 +56,28 @@ namespace Java.Security.Cert
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/PKIXCertPathValidatorResult.html#getPolicyTree()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/cert/PKIXCertPathValidatorResult.html#getPolicyTree()"/>
         /// </summary>
-        public Java.Security.Cert.PolicyNode PolicyTree
+        /// <returns><see cref="Java.Security.Cert.PolicyNode"/></returns>
+        public Java.Security.Cert.PolicyNode GetPolicyTree()
         {
-            get { return IExecuteWithSignature<Java.Security.Cert.PolicyNode>("getPolicyTree", "()Ljava/security/cert/PolicyNode;"); }
+            return IExecuteWithSignature<Java.Security.Cert.PolicyNode>("getPolicyTree", "()Ljava/security/cert/PolicyNode;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/PKIXCertPathValidatorResult.html#getPublicKey()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/cert/PKIXCertPathValidatorResult.html#getTrustAnchor()"/>
         /// </summary>
-        public Java.Security.PublicKey PublicKey
+        /// <returns><see cref="Java.Security.Cert.TrustAnchor"/></returns>
+        public Java.Security.Cert.TrustAnchor GetTrustAnchor()
         {
-            get { return IExecuteWithSignature<Java.Security.PublicKey>("getPublicKey", "()Ljava/security/PublicKey;"); }
+            return IExecuteWithSignature<Java.Security.Cert.TrustAnchor>("getTrustAnchor", "()Ljava/security/cert/TrustAnchor;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/PKIXCertPathValidatorResult.html#getTrustAnchor()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/cert/PKIXCertPathValidatorResult.html#getPublicKey()"/>
         /// </summary>
-        public Java.Security.Cert.TrustAnchor TrustAnchor
+        /// <returns><see cref="Java.Security.PublicKey"/></returns>
+        public Java.Security.PublicKey GetPublicKey()
         {
-            get { return IExecuteWithSignature<Java.Security.Cert.TrustAnchor>("getTrustAnchor", "()Ljava/security/cert/TrustAnchor;"); }
+            return IExecuteWithSignature<Java.Security.PublicKey>("getPublicKey", "()Ljava/security/PublicKey;");
         }
 
         #endregion

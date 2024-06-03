@@ -46,18 +46,20 @@ namespace Android.App.Backup
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/backup/FullBackupDataOutput.html#getQuota()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/backup/FullBackupDataOutput.html#getTransportFlags()"/>
         /// </summary>
-        public long Quota
+        /// <returns><see cref="int"/></returns>
+        public int GetTransportFlags()
         {
-            get { return IExecuteWithSignature<long>("getQuota", "()J"); }
+            return IExecuteWithSignature<int>("getTransportFlags", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/backup/FullBackupDataOutput.html#getTransportFlags()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/backup/FullBackupDataOutput.html#getQuota()"/>
         /// </summary>
-        public int TransportFlags
+        /// <returns><see cref="long"/></returns>
+        public long GetQuota()
         {
-            get { return IExecuteWithSignature<int>("getTransportFlags", "()I"); }
+            return IExecuteWithSignature<long>("getQuota", "()J");
         }
 
         #endregion

@@ -64,7 +64,7 @@ namespace Java.Security
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Guard.html#checkGuard(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/security/Guard.html#checkGuard(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <exception cref="Java.Lang.SecurityException"/>

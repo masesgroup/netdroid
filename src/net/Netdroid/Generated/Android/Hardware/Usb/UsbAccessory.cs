@@ -52,54 +52,60 @@ namespace Android.Hardware.Usb
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbAccessory.html#getDescription()"/> 
-        /// </summary>
-        public Java.Lang.String Description
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDescription", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbAccessory.html#getManufacturer()"/> 
-        /// </summary>
-        public Java.Lang.String Manufacturer
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getManufacturer", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbAccessory.html#getModel()"/> 
-        /// </summary>
-        public Java.Lang.String Model
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getModel", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbAccessory.html#getSerial()"/> 
-        /// </summary>
-        public Java.Lang.String Serial
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSerial", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbAccessory.html#getUri()"/> 
-        /// </summary>
-        public Java.Lang.String Uri
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getUri", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbAccessory.html#getVersion()"/> 
-        /// </summary>
-        public Java.Lang.String Version
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getVersion", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbAccessory.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbAccessory.html#getDescription()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDescription()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getDescription", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbAccessory.html#getManufacturer()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetManufacturer()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getManufacturer", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbAccessory.html#getModel()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetModel()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getModel", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbAccessory.html#getSerial()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSerial()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getSerial", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbAccessory.html#getUri()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetUri()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getUri", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbAccessory.html#getVersion()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetVersion()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getVersion", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbAccessory.html#writeToParcel(android.os.Parcel,int)"/>

@@ -30,7 +30,7 @@ namespace Java.Net
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/HttpCookie.html#%3Cinit%3E(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/net/HttpCookie.html#%3Cinit%3E(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -51,7 +51,7 @@ namespace Java.Net
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/HttpCookie.html#domainMatches(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/net/HttpCookie.html#domainMatches(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -61,7 +61,7 @@ namespace Java.Net
             return SExecute<bool>(LocalBridgeClazz, "domainMatches", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/HttpCookie.html#parse(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/net/HttpCookie.html#parse(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Util.List"/></returns>
@@ -74,84 +74,23 @@ namespace Java.Net
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/HttpCookie.html#getComment()"/> <see href="https://developer.android.com/reference/java.base/java/net/HttpCookie.html#setComment(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/net/HttpCookie.html#getDiscard()"/>
         /// </summary>
-        public Java.Lang.String Comment
+        /// <returns><see cref="bool"/></returns>
+        public bool GetDiscard()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getComment", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setComment", "(Ljava/lang/String;)V", value); }
+            return IExecuteWithSignature<bool>("getDiscard", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/HttpCookie.html#getCommentURL()"/> <see href="https://developer.android.com/reference/java.base/java/net/HttpCookie.html#setCommentURL(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/net/HttpCookie.html#getSecure()"/>
         /// </summary>
-        public Java.Lang.String CommentURL
+        /// <returns><see cref="bool"/></returns>
+        public bool GetSecure()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCommentURL", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setCommentURL", "(Ljava/lang/String;)V", value); }
+            return IExecuteWithSignature<bool>("getSecure", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/HttpCookie.html#getDiscard()"/> <see href="https://developer.android.com/reference/java.base/java/net/HttpCookie.html#setDiscard(boolean)"/>
-        /// </summary>
-        public bool Discard
-        {
-            get { return IExecuteWithSignature<bool>("getDiscard", "()Z"); } set { IExecuteWithSignature("setDiscard", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/HttpCookie.html#getDomain()"/> <see href="https://developer.android.com/reference/java.base/java/net/HttpCookie.html#setDomain(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String Domain
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDomain", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setDomain", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/HttpCookie.html#getMaxAge()"/> <see href="https://developer.android.com/reference/java.base/java/net/HttpCookie.html#setMaxAge(long)"/>
-        /// </summary>
-        public long MaxAge
-        {
-            get { return IExecuteWithSignature<long>("getMaxAge", "()J"); } set { IExecuteWithSignature("setMaxAge", "(J)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/HttpCookie.html#getName()"/> 
-        /// </summary>
-        public Java.Lang.String Name
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/HttpCookie.html#getPath()"/> <see href="https://developer.android.com/reference/java.base/java/net/HttpCookie.html#setPath(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String Path
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPath", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setPath", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/HttpCookie.html#getPortlist()"/> <see href="https://developer.android.com/reference/java.base/java/net/HttpCookie.html#setPortlist(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String Portlist
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPortlist", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setPortlist", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/HttpCookie.html#getSecure()"/> <see href="https://developer.android.com/reference/java.base/java/net/HttpCookie.html#setSecure(boolean)"/>
-        /// </summary>
-        public bool Secure
-        {
-            get { return IExecuteWithSignature<bool>("getSecure", "()Z"); } set { IExecuteWithSignature("setSecure", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/HttpCookie.html#getValue()"/> <see href="https://developer.android.com/reference/java.base/java/net/HttpCookie.html#setValue(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String Value
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getValue", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setValue", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/HttpCookie.html#getVersion()"/> <see href="https://developer.android.com/reference/java.base/java/net/HttpCookie.html#setVersion(int)"/>
-        /// </summary>
-        public int Version
-        {
-            get { return IExecuteWithSignature<int>("getVersion", "()I"); } set { IExecuteWithSignature("setVersion", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/HttpCookie.html#hasExpired()"/>
+        /// <see href="https://developer.android.com/reference/java/net/HttpCookie.html#hasExpired()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool HasExpired()
@@ -159,7 +98,7 @@ namespace Java.Net
             return IExecuteWithSignature<bool>("hasExpired", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/HttpCookie.html#isHttpOnly()"/>
+        /// <see href="https://developer.android.com/reference/java/net/HttpCookie.html#isHttpOnly()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsHttpOnly()
@@ -167,12 +106,164 @@ namespace Java.Net
             return IExecuteWithSignature<bool>("isHttpOnly", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/HttpCookie.html#setHttpOnly(boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/net/HttpCookie.html#getVersion()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetVersion()
+        {
+            return IExecuteWithSignature<int>("getVersion", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/HttpCookie.html#getComment()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetComment()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getComment", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/HttpCookie.html#getCommentURL()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetCommentURL()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getCommentURL", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/HttpCookie.html#getDomain()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDomain()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getDomain", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/HttpCookie.html#getName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/HttpCookie.html#getPath()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPath()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPath", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/HttpCookie.html#getPortlist()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPortlist()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPortlist", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/HttpCookie.html#getValue()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetValue()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getValue", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/HttpCookie.html#getMaxAge()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetMaxAge()
+        {
+            return IExecuteWithSignature<long>("getMaxAge", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/HttpCookie.html#setComment(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetComment(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setComment", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/HttpCookie.html#setCommentURL(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetCommentURL(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setCommentURL", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/HttpCookie.html#setDiscard(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetDiscard(bool arg0)
+        {
+            IExecuteWithSignature("setDiscard", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/HttpCookie.html#setDomain(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetDomain(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setDomain", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/HttpCookie.html#setHttpOnly(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetHttpOnly(bool arg0)
         {
             IExecuteWithSignature("setHttpOnly", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/HttpCookie.html#setMaxAge(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        public void SetMaxAge(long arg0)
+        {
+            IExecuteWithSignature("setMaxAge", "(J)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/HttpCookie.html#setPath(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetPath(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setPath", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/HttpCookie.html#setPortlist(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetPortlist(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setPortlist", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/HttpCookie.html#setSecure(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetSecure(bool arg0)
+        {
+            IExecuteWithSignature("setSecure", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/HttpCookie.html#setValue(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetValue(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setValue", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/HttpCookie.html#setVersion(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetVersion(int arg0)
+        {
+            IExecuteWithSignature("setVersion", "(I)V", arg0);
         }
 
         #endregion

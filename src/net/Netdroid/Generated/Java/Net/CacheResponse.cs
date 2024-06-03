@@ -46,18 +46,22 @@ namespace Java.Net
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/CacheResponse.html#getBody()"/> 
+        /// <see href="https://developer.android.com/reference/java/net/CacheResponse.html#getBody()"/>
         /// </summary>
-        public Java.Io.InputStream Body
+        /// <returns><see cref="Java.Io.InputStream"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Io.InputStream GetBody()
         {
-            get { return IExecuteWithSignature<Java.Io.InputStream>("getBody", "()Ljava/io/InputStream;"); }
+            return IExecuteWithSignature<Java.Io.InputStream>("getBody", "()Ljava/io/InputStream;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/CacheResponse.html#getHeaders()"/> 
+        /// <see href="https://developer.android.com/reference/java/net/CacheResponse.html#getHeaders()"/>
         /// </summary>
-        public Java.Util.Map<Java.Lang.String, Java.Util.List<Java.Lang.String>> Headers
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Util.Map<Java.Lang.String, Java.Util.List<Java.Lang.String>> GetHeaders()
         {
-            get { return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Util.List<Java.Lang.String>>>("getHeaders", "()Ljava/util/Map;"); }
+            return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Util.List<Java.Lang.String>>>("getHeaders", "()Ljava/util/Map;");
         }
 
         #endregion

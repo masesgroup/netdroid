@@ -26,24 +26,24 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Lang
 {
     #region Double
-    public partial class Double : Java.Lang.IComparable<Java.Lang.Double>
+    public partial class Double
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Double.html#%3Cinit%3E(double)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Double.html#%3Cinit%3E(double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Double(double arg0)
             : base(arg0)
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Double.html#%3Cinit%3E(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Double.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Lang.NumberFormatException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Double(Java.Lang.String arg0)
             : base(arg0)
         {
@@ -61,67 +61,67 @@ namespace Java.Lang
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Double.html#MAX_VALUE"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Double.html#MAX_VALUE"/>
         /// </summary>
         public static double MAX_VALUE { get { if (!_MAX_VALUEReady) { _MAX_VALUEContent = SGetField<double>(LocalBridgeClazz, "MAX_VALUE"); _MAX_VALUEReady = true; } return _MAX_VALUEContent; } }
         private static double _MAX_VALUEContent = default;
         private static bool _MAX_VALUEReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Double.html#MIN_NORMAL"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Double.html#MIN_NORMAL"/>
         /// </summary>
         public static double MIN_NORMAL { get { if (!_MIN_NORMALReady) { _MIN_NORMALContent = SGetField<double>(LocalBridgeClazz, "MIN_NORMAL"); _MIN_NORMALReady = true; } return _MIN_NORMALContent; } }
         private static double _MIN_NORMALContent = default;
         private static bool _MIN_NORMALReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Double.html#MIN_VALUE"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Double.html#MIN_VALUE"/>
         /// </summary>
         public static double MIN_VALUE { get { if (!_MIN_VALUEReady) { _MIN_VALUEContent = SGetField<double>(LocalBridgeClazz, "MIN_VALUE"); _MIN_VALUEReady = true; } return _MIN_VALUEContent; } }
         private static double _MIN_VALUEContent = default;
         private static bool _MIN_VALUEReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Double.html#NaN"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Double.html#NaN"/>
         /// </summary>
         public static double NaN { get { if (!_NaNReady) { _NaNContent = SGetField<double>(LocalBridgeClazz, "NaN"); _NaNReady = true; } return _NaNContent; } }
         private static double _NaNContent = default;
         private static bool _NaNReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Double.html#NEGATIVE_INFINITY"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Double.html#NEGATIVE_INFINITY"/>
         /// </summary>
         public static double NEGATIVE_INFINITY { get { if (!_NEGATIVE_INFINITYReady) { _NEGATIVE_INFINITYContent = SGetField<double>(LocalBridgeClazz, "NEGATIVE_INFINITY"); _NEGATIVE_INFINITYReady = true; } return _NEGATIVE_INFINITYContent; } }
         private static double _NEGATIVE_INFINITYContent = default;
         private static bool _NEGATIVE_INFINITYReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Double.html#POSITIVE_INFINITY"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Double.html#POSITIVE_INFINITY"/>
         /// </summary>
         public static double POSITIVE_INFINITY { get { if (!_POSITIVE_INFINITYReady) { _POSITIVE_INFINITYContent = SGetField<double>(LocalBridgeClazz, "POSITIVE_INFINITY"); _POSITIVE_INFINITYReady = true; } return _POSITIVE_INFINITYContent; } }
         private static double _POSITIVE_INFINITYContent = default;
         private static bool _POSITIVE_INFINITYReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Double.html#BYTES"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Double.html#BYTES"/>
         /// </summary>
         public static int BYTES { get { if (!_BYTESReady) { _BYTESContent = SGetField<int>(LocalBridgeClazz, "BYTES"); _BYTESReady = true; } return _BYTESContent; } }
         private static int _BYTESContent = default;
         private static bool _BYTESReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Double.html#MAX_EXPONENT"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Double.html#MAX_EXPONENT"/>
         /// </summary>
         public static int MAX_EXPONENT { get { if (!_MAX_EXPONENTReady) { _MAX_EXPONENTContent = SGetField<int>(LocalBridgeClazz, "MAX_EXPONENT"); _MAX_EXPONENTReady = true; } return _MAX_EXPONENTContent; } }
         private static int _MAX_EXPONENTContent = default;
         private static bool _MAX_EXPONENTReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Double.html#MIN_EXPONENT"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Double.html#MIN_EXPONENT"/>
         /// </summary>
         public static int MIN_EXPONENT { get { if (!_MIN_EXPONENTReady) { _MIN_EXPONENTContent = SGetField<int>(LocalBridgeClazz, "MIN_EXPONENT"); _MIN_EXPONENTReady = true; } return _MIN_EXPONENTContent; } }
         private static int _MIN_EXPONENTContent = default;
         private static bool _MIN_EXPONENTReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Double.html#SIZE"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Double.html#SIZE"/>
         /// </summary>
         public static int SIZE { get { if (!_SIZEReady) { _SIZEContent = SGetField<int>(LocalBridgeClazz, "SIZE"); _SIZEReady = true; } return _SIZEContent; } }
         private static int _SIZEContent = default;
         private static bool _SIZEReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Double.html#TYPE"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Double.html#TYPE"/>
         /// </summary>
         public static Java.Lang.Class TYPE { get { if (!_TYPEReady) { _TYPEContent = SGetField<Java.Lang.Class>(LocalBridgeClazz, "TYPE"); _TYPEReady = true; } return _TYPEContent; } }
         private static Java.Lang.Class _TYPEContent = default;
@@ -131,7 +131,7 @@ namespace Java.Lang
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Double.html#isFinite(double)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Double.html#isFinite(double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -140,7 +140,7 @@ namespace Java.Lang
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isFinite", "(D)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Double.html#isInfinite(double)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Double.html#isInfinite(double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -149,7 +149,7 @@ namespace Java.Lang
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isInfinite", "(D)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Double.html#isNaN(double)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Double.html#isNaN(double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -158,7 +158,7 @@ namespace Java.Lang
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "isNaN", "(D)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Double.html#max(double,double)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Double.html#max(double,double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <param name="arg1"><see cref="double"/></param>
@@ -168,7 +168,7 @@ namespace Java.Lang
             return SExecute<double>(LocalBridgeClazz, "max", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Double.html#min(double,double)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Double.html#min(double,double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <param name="arg1"><see cref="double"/></param>
@@ -178,7 +178,7 @@ namespace Java.Lang
             return SExecute<double>(LocalBridgeClazz, "min", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Double.html#parseDouble(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Double.html#parseDouble(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="double"/></returns>
@@ -188,7 +188,7 @@ namespace Java.Lang
             return SExecuteWithSignature<double>(LocalBridgeClazz, "parseDouble", "(Ljava/lang/String;)D", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Double.html#sum(double,double)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Double.html#sum(double,double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <param name="arg1"><see cref="double"/></param>
@@ -198,7 +198,7 @@ namespace Java.Lang
             return SExecute<double>(LocalBridgeClazz, "sum", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Double.html#compare(double,double)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Double.html#compare(double,double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <param name="arg1"><see cref="double"/></param>
@@ -208,7 +208,7 @@ namespace Java.Lang
             return SExecute<int>(LocalBridgeClazz, "compare", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Double.html#hashCode(double)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Double.html#hashCode(double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <returns><see cref="int"/></returns>
@@ -217,7 +217,7 @@ namespace Java.Lang
             return SExecuteWithSignature<int>(LocalBridgeClazz, "hashCode", "(D)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Double.html#valueOf(double)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Double.html#valueOf(double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <returns><see cref="Java.Lang.Double"/></returns>
@@ -226,7 +226,7 @@ namespace Java.Lang
             return SExecuteWithSignature<Java.Lang.Double>(LocalBridgeClazz, "valueOf", "(D)Ljava/lang/Double;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Double.html#valueOf(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Double.html#valueOf(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.Double"/></returns>
@@ -236,7 +236,7 @@ namespace Java.Lang
             return SExecuteWithSignature<Java.Lang.Double>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/lang/Double;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Double.html#toHexString(double)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Double.html#toHexString(double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -245,7 +245,7 @@ namespace Java.Lang
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toHexString", "(D)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Double.html#toString(double)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Double.html#toString(double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -254,7 +254,7 @@ namespace Java.Lang
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "toString", "(D)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Double.html#doubleToLongBits(double)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Double.html#doubleToLongBits(double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <returns><see cref="long"/></returns>
@@ -263,7 +263,7 @@ namespace Java.Lang
             return SExecuteWithSignature<long>(LocalBridgeClazz, "doubleToLongBits", "(D)J", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Double.html#longBitsToDouble(long)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Double.html#longBitsToDouble(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="double"/></returns>
@@ -272,7 +272,7 @@ namespace Java.Lang
             return SExecuteWithSignature<double>(LocalBridgeClazz, "longBitsToDouble", "(J)D", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Double.html#doubleToRawLongBits(double)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Double.html#doubleToRawLongBits(double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <returns><see cref="long"/></returns>
@@ -285,7 +285,7 @@ namespace Java.Lang
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Double.html#isInfinite()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Double.html#isInfinite()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsInfinite()
@@ -293,7 +293,7 @@ namespace Java.Lang
             return IExecuteWithSignature<bool>("isInfinite", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Double.html#isNaN()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Double.html#isNaN()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsNaN()
@@ -301,7 +301,7 @@ namespace Java.Lang
             return IExecuteWithSignature<bool>("isNaN", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Double.html#compareTo(java.lang.Double)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Double.html#compareTo(java.lang.Double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Double"/></param>
         /// <returns><see cref="int"/></returns>
@@ -310,31 +310,13 @@ namespace Java.Lang
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Double;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Double.html#compareTo(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Double.html#compareTo(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="int"/></returns>
         public int CompareTo(object arg0)
         {
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Double.html#resolveConstantDesc(java.lang.invoke.MethodHandles.Lookup)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandles.Lookup"/></param>
-        /// <returns><see cref="object"/></returns>
-        /// <exception cref="Java.Lang.ReflectiveOperationException"/>
-        public object ResolveConstantDesc(Java.Lang.Invoke.MethodHandles.Lookup arg0)
-        {
-            return IExecuteWithSignature("resolveConstantDesc", "(Ljava/lang/invoke/MethodHandles$Lookup;)Ljava/lang/Object;", arg0);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Double.html#describeConstable()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Util.Optional"/></returns>
-        public Java.Util.Optional<Java.Lang.Double> DescribeConstable()
-        {
-            return IExecuteWithSignature<Java.Util.Optional<Java.Lang.Double>>("describeConstable", "()Ljava/util/Optional;");
         }
 
         #endregion

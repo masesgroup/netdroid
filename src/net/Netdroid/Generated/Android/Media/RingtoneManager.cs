@@ -116,7 +116,7 @@ namespace Android.Media
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/RingtoneManager.html#EXTRA_RINGTONE_INCLUDE_DRM"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String EXTRA_RINGTONE_INCLUDE_DRM { get { if (!_EXTRA_RINGTONE_INCLUDE_DRMReady) { _EXTRA_RINGTONE_INCLUDE_DRMContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "EXTRA_RINGTONE_INCLUDE_DRM"); _EXTRA_RINGTONE_INCLUDE_DRMReady = true; } return _EXTRA_RINGTONE_INCLUDE_DRMContent; } }
         private static Java.Lang.String _EXTRA_RINGTONE_INCLUDE_DRMContent = default;
         private static bool _EXTRA_RINGTONE_INCLUDE_DRMReady = false; // this is used because in case of generics 
@@ -255,19 +255,12 @@ namespace Android.Media
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/RingtoneManager.html#getCursor()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/RingtoneManager.html#getCursor()"/>
         /// </summary>
-        public Android.Database.Cursor Cursor
+        /// <returns><see cref="Android.Database.Cursor"/></returns>
+        public Android.Database.Cursor GetCursor()
         {
-            get { return IExecuteWithSignature<Android.Database.Cursor>("getCursor", "()Landroid/database/Cursor;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/RingtoneManager.html#getIncludeDrm()"/> <see href="https://developer.android.com/reference/android/media/RingtoneManager.html#setIncludeDrm(boolean)"/>
-        /// </summary>
-        [System.Obsolete()]
-        public bool IncludeDrm
-        {
-            get { return IExecuteWithSignature<bool>("getIncludeDrm", "()Z"); } set { IExecuteWithSignature("setIncludeDrm", "(Z)V", value); }
+            return IExecuteWithSignature<Android.Database.Cursor>("getCursor", "()Landroid/database/Cursor;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/RingtoneManager.html#getRingtone(int)"/>
@@ -286,6 +279,15 @@ namespace Android.Media
         public Android.Net.Uri GetRingtoneUri(int arg0)
         {
             return IExecuteWithSignature<Android.Net.Uri>("getRingtoneUri", "(I)Landroid/net/Uri;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/RingtoneManager.html#getIncludeDrm()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        [global::System.Obsolete()]
+        public bool GetIncludeDrm()
+        {
+            return IExecuteWithSignature<bool>("getIncludeDrm", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/RingtoneManager.html#getStopPreviousRingtone()"/>
@@ -320,6 +322,15 @@ namespace Android.Media
         public int InferStreamType()
         {
             return IExecuteWithSignature<int>("inferStreamType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/RingtoneManager.html#setIncludeDrm(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        [global::System.Obsolete()]
+        public void SetIncludeDrm(bool arg0)
+        {
+            IExecuteWithSignature("setIncludeDrm", "(Z)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/RingtoneManager.html#setStopPreviousRingtone(boolean)"/>

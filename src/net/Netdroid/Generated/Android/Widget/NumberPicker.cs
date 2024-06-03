@@ -84,60 +84,76 @@ namespace Android.Widget
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/NumberPicker.html#getDisplayedValues()"/> <see href="https://developer.android.com/reference/android/widget/NumberPicker.html#setDisplayedValues(java.lang.String[])"/>
+        /// <see href="https://developer.android.com/reference/android/widget/NumberPicker.html#getWrapSelectorWheel()"/>
         /// </summary>
-        public Java.Lang.String[] DisplayedValues
+        /// <returns><see cref="bool"/></returns>
+        public bool GetWrapSelectorWheel()
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getDisplayedValues", "()[Ljava/lang/String;"); } set { IExecuteWithSignature("setDisplayedValues", "([Ljava/lang/String;)V", value); }
+            return IExecuteWithSignature<bool>("getWrapSelectorWheel", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/NumberPicker.html#getMaxValue()"/> <see href="https://developer.android.com/reference/android/widget/NumberPicker.html#setMaxValue(int)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/NumberPicker.html#getTextSize()"/>
         /// </summary>
-        public int MaxValue
+        /// <returns><see cref="float"/></returns>
+        public float GetTextSize()
         {
-            get { return IExecuteWithSignature<int>("getMaxValue", "()I"); } set { IExecuteWithSignature("setMaxValue", "(I)V", value); }
+            return IExecuteWithSignature<float>("getTextSize", "()F");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/NumberPicker.html#getMinValue()"/> <see href="https://developer.android.com/reference/android/widget/NumberPicker.html#setMinValue(int)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/NumberPicker.html#getMaxValue()"/>
         /// </summary>
-        public int MinValue
+        /// <returns><see cref="int"/></returns>
+        public int GetMaxValue()
         {
-            get { return IExecuteWithSignature<int>("getMinValue", "()I"); } set { IExecuteWithSignature("setMinValue", "(I)V", value); }
+            return IExecuteWithSignature<int>("getMaxValue", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/NumberPicker.html#getSelectionDividerHeight()"/> <see href="https://developer.android.com/reference/android/widget/NumberPicker.html#setSelectionDividerHeight(int)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/NumberPicker.html#getMinValue()"/>
         /// </summary>
-        public int SelectionDividerHeight
+        /// <returns><see cref="int"/></returns>
+        public int GetMinValue()
         {
-            get { return IExecuteWithSignature<int>("getSelectionDividerHeight", "()I"); } set { IExecuteWithSignature("setSelectionDividerHeight", "(I)V", value); }
+            return IExecuteWithSignature<int>("getMinValue", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/NumberPicker.html#getTextColor()"/> <see href="https://developer.android.com/reference/android/widget/NumberPicker.html#setTextColor(int)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/NumberPicker.html#getSelectionDividerHeight()"/>
         /// </summary>
-        public int TextColor
+        /// <returns><see cref="int"/></returns>
+        public int GetSelectionDividerHeight()
         {
-            get { return IExecuteWithSignature<int>("getTextColor", "()I"); } set { IExecuteWithSignature("setTextColor", "(I)V", value); }
+            return IExecuteWithSignature<int>("getSelectionDividerHeight", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/NumberPicker.html#getTextSize()"/> <see href="https://developer.android.com/reference/android/widget/NumberPicker.html#setTextSize(float)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/NumberPicker.html#getTextColor()"/>
         /// </summary>
-        public float TextSize
+        /// <returns><see cref="int"/></returns>
+        public int GetTextColor()
         {
-            get { return IExecuteWithSignature<float>("getTextSize", "()F"); } set { IExecuteWithSignature("setTextSize", "(F)V", value); }
+            return IExecuteWithSignature<int>("getTextColor", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/NumberPicker.html#getValue()"/> <see href="https://developer.android.com/reference/android/widget/NumberPicker.html#setValue(int)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/NumberPicker.html#getValue()"/>
         /// </summary>
-        public int Value
+        /// <returns><see cref="int"/></returns>
+        public int GetValue()
         {
-            get { return IExecuteWithSignature<int>("getValue", "()I"); } set { IExecuteWithSignature("setValue", "(I)V", value); }
+            return IExecuteWithSignature<int>("getValue", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/NumberPicker.html#getWrapSelectorWheel()"/> <see href="https://developer.android.com/reference/android/widget/NumberPicker.html#setWrapSelectorWheel(boolean)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/NumberPicker.html#getDisplayedValues()"/>
         /// </summary>
-        public bool WrapSelectorWheel
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String[] GetDisplayedValues()
         {
-            get { return IExecuteWithSignature<bool>("getWrapSelectorWheel", "()Z"); } set { IExecuteWithSignature("setWrapSelectorWheel", "(Z)V", value); }
+            return IExecuteWithSignatureArray<Java.Lang.String>("getDisplayedValues", "()[Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/NumberPicker.html#setDisplayedValues(java.lang.String[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetDisplayedValues(Java.Lang.String[] arg0)
+        {
+            IExecuteWithSignature("setDisplayedValues", "([Ljava/lang/String;)V", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/NumberPicker.html#setFormatter(android.widget.NumberPicker.Formatter)"/>
@@ -146,6 +162,22 @@ namespace Android.Widget
         public void SetFormatter(Android.Widget.NumberPicker.Formatter arg0)
         {
             IExecuteWithSignature("setFormatter", "(Landroid/widget/NumberPicker$Formatter;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/NumberPicker.html#setMaxValue(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetMaxValue(int arg0)
+        {
+            IExecuteWithSignature("setMaxValue", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/NumberPicker.html#setMinValue(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetMinValue(int arg0)
+        {
+            IExecuteWithSignature("setMinValue", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/NumberPicker.html#setOnLongPressUpdateInterval(long)"/>
@@ -170,6 +202,46 @@ namespace Android.Widget
         public void SetOnValueChangedListener(Android.Widget.NumberPicker.OnValueChangeListener arg0)
         {
             IExecuteWithSignature("setOnValueChangedListener", "(Landroid/widget/NumberPicker$OnValueChangeListener;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/NumberPicker.html#setSelectionDividerHeight(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetSelectionDividerHeight(int arg0)
+        {
+            IExecuteWithSignature("setSelectionDividerHeight", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/NumberPicker.html#setTextColor(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetTextColor(int arg0)
+        {
+            IExecuteWithSignature("setTextColor", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/NumberPicker.html#setTextSize(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetTextSize(float arg0)
+        {
+            IExecuteWithSignature("setTextSize", "(F)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/NumberPicker.html#setValue(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetValue(int arg0)
+        {
+            IExecuteWithSignature("setValue", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/NumberPicker.html#setWrapSelectorWheel(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetWrapSelectorWheel(bool arg0)
+        {
+            IExecuteWithSignature("setWrapSelectorWheel", "(Z)V", arg0);
         }
 
         #endregion
@@ -240,7 +312,7 @@ namespace Android.Widget
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onScrollStateChange", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Widget.NumberPicker>>>(OnScrollStateChangeEventHandler));
+                AddEventHandler("onScrollStateChange", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Widget.NumberPicker>>>(OnScrollStateChangeEventHandler));
 
             }
 
@@ -248,7 +320,7 @@ namespace Android.Widget
             /// Handler for <see href="https://developer.android.com/reference/android/widget/NumberPicker.OnScrollListener.html#onScrollStateChange(android.widget.NumberPicker,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnScrollStateChange"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Widget.NumberPicker, int> OnOnScrollStateChange { get; set; } = null;
+            public global::System.Action<Android.Widget.NumberPicker, int> OnOnScrollStateChange { get; set; } = null;
 
             void OnScrollStateChangeEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Widget.NumberPicker>> data)
             {
@@ -341,7 +413,7 @@ namespace Android.Widget
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onValueChange", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Widget.NumberPicker>>>(OnValueChangeEventHandler));
+                AddEventHandler("onValueChange", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Widget.NumberPicker>>>(OnValueChangeEventHandler));
 
             }
 
@@ -349,7 +421,7 @@ namespace Android.Widget
             /// Handler for <see href="https://developer.android.com/reference/android/widget/NumberPicker.OnValueChangeListener.html#onValueChange(android.widget.NumberPicker,int,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnValueChange"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Widget.NumberPicker, int, int> OnOnValueChange { get; set; } = null;
+            public global::System.Action<Android.Widget.NumberPicker, int, int> OnOnValueChange { get; set; } = null;
 
             void OnValueChangeEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Widget.NumberPicker>> data)
             {

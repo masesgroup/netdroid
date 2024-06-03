@@ -71,34 +71,6 @@ namespace Android.Database.Sqlite
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteQueryBuilder.html#getCursorFactory()"/> <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteQueryBuilder.html#setCursorFactory(android.database.sqlite.SQLiteDatabase.CursorFactory)"/>
-        /// </summary>
-        public Android.Database.Sqlite.SQLiteDatabase.CursorFactory CursorFactory
-        {
-            get { return IExecuteWithSignature<Android.Database.Sqlite.SQLiteDatabase.CursorFactory>("getCursorFactory", "()Landroid/database/sqlite/SQLiteDatabase$CursorFactory;"); } set { IExecuteWithSignature("setCursorFactory", "(Landroid/database/sqlite/SQLiteDatabase$CursorFactory;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteQueryBuilder.html#getProjectionGreylist()"/> <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteQueryBuilder.html#setProjectionGreylist(java.util.Collection)"/>
-        /// </summary>
-        public Java.Util.Collection<Java.Util.Regex.Pattern> ProjectionGreylist
-        {
-            get { return IExecuteWithSignature<Java.Util.Collection<Java.Util.Regex.Pattern>>("getProjectionGreylist", "()Ljava/util/Collection;"); } set { IExecuteWithSignature("setProjectionGreylist", "(Ljava/util/Collection;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteQueryBuilder.html#getProjectionMap()"/> <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteQueryBuilder.html#setProjectionMap(java.util.Map)"/>
-        /// </summary>
-        public Java.Util.Map<Java.Lang.String, Java.Lang.String> ProjectionMap
-        {
-            get { return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Lang.String>>("getProjectionMap", "()Ljava/util/Map;"); } set { IExecuteWithSignature("setProjectionMap", "(Ljava/util/Map;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteQueryBuilder.html#getTables()"/> <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteQueryBuilder.html#setTables(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String Tables
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getTables", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setTables", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteQueryBuilder.html#query(android.database.sqlite.SQLiteDatabase,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,java.lang.String,java.lang.String,java.lang.String,android.os.CancellationSignal)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Database.Sqlite.SQLiteDatabase"/></param>
@@ -145,6 +117,14 @@ namespace Android.Database.Sqlite
         public Android.Database.Cursor Query(Android.Database.Sqlite.SQLiteDatabase arg0, Java.Lang.String[] arg1, Java.Lang.String arg2, Java.Lang.String[] arg3, Java.Lang.String arg4, Java.Lang.String arg5, Java.Lang.String arg6)
         {
             return IExecute<Android.Database.Cursor>("query", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteQueryBuilder.html#getCursorFactory()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Database.Sqlite.SQLiteDatabase.CursorFactory"/></returns>
+        public Android.Database.Sqlite.SQLiteDatabase.CursorFactory GetCursorFactory()
+        {
+            return IExecuteWithSignature<Android.Database.Sqlite.SQLiteDatabase.CursorFactory>("getCursorFactory", "()Landroid/database/sqlite/SQLiteDatabase$CursorFactory;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteQueryBuilder.html#isDistinct()"/>
@@ -226,7 +206,7 @@ namespace Android.Database.Sqlite
         /// <param name="arg5"><see cref="Java.Lang.String"/></param>
         /// <param name="arg6"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Lang.String BuildQuery(Java.Lang.String[] arg0, Java.Lang.String arg1, Java.Lang.String[] arg2, Java.Lang.String arg3, Java.Lang.String arg4, Java.Lang.String arg5, Java.Lang.String arg6)
         {
             return IExecute<Java.Lang.String>("buildQuery", arg0, arg1, arg2, arg3, arg4, arg5, arg6);
@@ -271,10 +251,34 @@ namespace Android.Database.Sqlite
         /// <param name="arg7"><see cref="Java.Lang.String"/></param>
         /// <param name="arg8"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Lang.String BuildUnionSubQuery(Java.Lang.String arg0, Java.Lang.String[] arg1, Java.Util.Set<Java.Lang.String> arg2, int arg3, Java.Lang.String arg4, Java.Lang.String arg5, Java.Lang.String[] arg6, Java.Lang.String arg7, Java.Lang.String arg8)
         {
             return IExecute<Java.Lang.String>("buildUnionSubQuery", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteQueryBuilder.html#getTables()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetTables()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getTables", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteQueryBuilder.html#getProjectionGreylist()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Collection"/></returns>
+        public Java.Util.Collection<Java.Util.Regex.Pattern> GetProjectionGreylist()
+        {
+            return IExecuteWithSignature<Java.Util.Collection<Java.Util.Regex.Pattern>>("getProjectionGreylist", "()Ljava/util/Collection;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteQueryBuilder.html#getProjectionMap()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        public Java.Util.Map<Java.Lang.String, Java.Lang.String> GetProjectionMap()
+        {
+            return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Lang.String>>("getProjectionMap", "()Ljava/util/Map;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteQueryBuilder.html#insert(android.database.sqlite.SQLiteDatabase,android.content.ContentValues)"/>
@@ -311,12 +315,36 @@ namespace Android.Database.Sqlite
             IExecuteWithSignature("appendWhereStandalone", "(Ljava/lang/CharSequence;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteQueryBuilder.html#setCursorFactory(android.database.sqlite.SQLiteDatabase.CursorFactory)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Database.Sqlite.SQLiteDatabase.CursorFactory"/></param>
+        public void SetCursorFactory(Android.Database.Sqlite.SQLiteDatabase.CursorFactory arg0)
+        {
+            IExecuteWithSignature("setCursorFactory", "(Landroid/database/sqlite/SQLiteDatabase$CursorFactory;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteQueryBuilder.html#setDistinct(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetDistinct(bool arg0)
         {
             IExecuteWithSignature("setDistinct", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteQueryBuilder.html#setProjectionGreylist(java.util.Collection)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        public void SetProjectionGreylist(Java.Util.Collection<Java.Util.Regex.Pattern> arg0)
+        {
+            IExecuteWithSignature("setProjectionGreylist", "(Ljava/util/Collection;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteQueryBuilder.html#setProjectionMap(java.util.Map)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+        public void SetProjectionMap(Java.Util.Map<Java.Lang.String, Java.Lang.String> arg0)
+        {
+            IExecuteWithSignature("setProjectionMap", "(Ljava/util/Map;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteQueryBuilder.html#setStrict(boolean)"/>
@@ -341,6 +369,14 @@ namespace Android.Database.Sqlite
         public void SetStrictGrammar(bool arg0)
         {
             IExecuteWithSignature("setStrictGrammar", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/database/sqlite/SQLiteQueryBuilder.html#setTables(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetTables(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setTables", "(Ljava/lang/String;)V", arg0);
         }
 
         #endregion

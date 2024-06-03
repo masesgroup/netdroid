@@ -64,46 +64,52 @@ namespace Org.W3c.Dom
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/DOMLocator.html#getByteOffset()"/> 
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/DOMLocator.html#getByteOffset()"/>
         /// </summary>
-        public int ByteOffset
+        /// <returns><see cref="int"/></returns>
+        public int GetByteOffset()
         {
-            get { return IExecuteWithSignature<int>("getByteOffset", "()I"); }
+            return IExecuteWithSignature<int>("getByteOffset", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/DOMLocator.html#getColumnNumber()"/> 
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/DOMLocator.html#getColumnNumber()"/>
         /// </summary>
-        public int ColumnNumber
+        /// <returns><see cref="int"/></returns>
+        public int GetColumnNumber()
         {
-            get { return IExecuteWithSignature<int>("getColumnNumber", "()I"); }
+            return IExecuteWithSignature<int>("getColumnNumber", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/DOMLocator.html#getLineNumber()"/> 
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/DOMLocator.html#getLineNumber()"/>
         /// </summary>
-        public int LineNumber
+        /// <returns><see cref="int"/></returns>
+        public int GetLineNumber()
         {
-            get { return IExecuteWithSignature<int>("getLineNumber", "()I"); }
+            return IExecuteWithSignature<int>("getLineNumber", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/DOMLocator.html#getRelatedNode()"/> 
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/DOMLocator.html#getUtf16Offset()"/>
         /// </summary>
-        public Org.W3c.Dom.Node RelatedNode
+        /// <returns><see cref="int"/></returns>
+        public int GetUtf16Offset()
         {
-            get { return IExecuteWithSignature<Org.W3c.Dom.Node>("getRelatedNode", "()Lorg/w3c/dom/Node;"); }
+            return IExecuteWithSignature<int>("getUtf16Offset", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/DOMLocator.html#getUri()"/> 
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/DOMLocator.html#getUri()"/>
         /// </summary>
-        public Java.Lang.String Uri
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetUri()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getUri", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getUri", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/DOMLocator.html#getUtf16Offset()"/> 
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/DOMLocator.html#getRelatedNode()"/>
         /// </summary>
-        public int Utf16Offset
+        /// <returns><see cref="Org.W3c.Dom.Node"/></returns>
+        public Org.W3c.Dom.Node GetRelatedNode()
         {
-            get { return IExecuteWithSignature<int>("getUtf16Offset", "()I"); }
+            return IExecuteWithSignature<Org.W3c.Dom.Node>("getRelatedNode", "()Lorg/w3c/dom/Node;");
         }
 
         #endregion

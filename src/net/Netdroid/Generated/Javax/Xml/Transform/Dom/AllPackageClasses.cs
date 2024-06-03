@@ -28,7 +28,7 @@ namespace Javax.Xml.Transform.Dom
 {
     #region DOMLocator
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/dom/DOMLocator.html"/>
+    /// <see href="https://developer.android.com/reference/javax/xml/transform/dom/DOMLocator.html"/>
     /// </summary>
     public partial class DOMLocator : Javax.Xml.Transform.SourceLocator
     {
@@ -36,12 +36,12 @@ namespace Javax.Xml.Transform.Dom
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("DOMLocator class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DOMLocator class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DOMLocator() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("DOMLocator class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DOMLocator class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DOMLocator(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -74,7 +74,7 @@ namespace Javax.Xml.Transform.Dom
 
     #region DOMResult
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/dom/DOMResult.html"/>
+    /// <see href="https://developer.android.com/reference/javax/xml/transform/dom/DOMResult.html"/>
     /// </summary>
     public partial class DOMResult : Javax.Xml.Transform.Result
     {
@@ -118,7 +118,7 @@ namespace Javax.Xml.Transform.Dom
 
     #region DOMSource
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/dom/DOMSource.html"/>
+    /// <see href="https://developer.android.com/reference/javax/xml/transform/dom/DOMSource.html"/>
     /// </summary>
     public partial class DOMSource : Javax.Xml.Transform.Source
     {

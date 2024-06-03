@@ -64,7 +64,7 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Formattable.html#formatTo(java.util.Formatter,int,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Formattable.html#formatTo(java.util.Formatter,int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Formatter"/></param>
         /// <param name="arg1"><see cref="int"/></param>

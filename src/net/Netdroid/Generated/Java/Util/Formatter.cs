@@ -30,7 +30,7 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Formatter.html#%3Cinit%3E(java.io.File,java.lang.String,java.util.Locale)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Formatter.html#%3Cinit%3E(java.io.File,java.lang.String,java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -42,7 +42,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Formatter.html#%3Cinit%3E(java.io.File,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Formatter.html#%3Cinit%3E(java.io.File,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -53,7 +53,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Formatter.html#%3Cinit%3E(java.io.File,java.nio.charset.Charset,java.util.Locale)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Formatter.html#%3Cinit%3E(java.io.File,java.nio.charset.Charset,java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
         /// <param name="arg1"><see cref="Java.Nio.Charset.Charset"/></param>
@@ -64,7 +64,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Formatter.html#%3Cinit%3E(java.io.File)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Formatter.html#%3Cinit%3E(java.io.File)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
         /// <exception cref="Java.Io.FileNotFoundException"/>
@@ -73,7 +73,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Formatter.html#%3Cinit%3E(java.io.OutputStream,java.lang.String,java.util.Locale)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Formatter.html#%3Cinit%3E(java.io.OutputStream,java.lang.String,java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -84,7 +84,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Formatter.html#%3Cinit%3E(java.io.OutputStream,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Formatter.html#%3Cinit%3E(java.io.OutputStream,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -94,7 +94,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Formatter.html#%3Cinit%3E(java.io.OutputStream,java.nio.charset.Charset,java.util.Locale)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Formatter.html#%3Cinit%3E(java.io.OutputStream,java.nio.charset.Charset,java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
         /// <param name="arg1"><see cref="Java.Nio.Charset.Charset"/></param>
@@ -104,7 +104,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Formatter.html#%3Cinit%3E(java.io.OutputStream)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Formatter.html#%3Cinit%3E(java.io.OutputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
         public Formatter(Java.Io.OutputStream arg0)
@@ -112,7 +112,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Formatter.html#%3Cinit%3E(java.io.PrintStream)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Formatter.html#%3Cinit%3E(java.io.PrintStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.PrintStream"/></param>
         public Formatter(Java.Io.PrintStream arg0)
@@ -120,7 +120,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Formatter.html#%3Cinit%3E(java.lang.Appendable,java.util.Locale)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Formatter.html#%3Cinit%3E(java.lang.Appendable,java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Appendable"/></param>
         /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
@@ -129,7 +129,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Formatter.html#%3Cinit%3E(java.lang.Appendable)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Formatter.html#%3Cinit%3E(java.lang.Appendable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Appendable"/></param>
         public Formatter(Java.Lang.Appendable arg0)
@@ -137,7 +137,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Formatter.html#%3Cinit%3E(java.lang.String,java.lang.String,java.util.Locale)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Formatter.html#%3Cinit%3E(java.lang.String,java.lang.String,java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -149,7 +149,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Formatter.html#%3Cinit%3E(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Formatter.html#%3Cinit%3E(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -160,7 +160,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Formatter.html#%3Cinit%3E(java.lang.String,java.nio.charset.Charset,java.util.Locale)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Formatter.html#%3Cinit%3E(java.lang.String,java.nio.charset.Charset,java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Nio.Charset.Charset"/></param>
@@ -171,7 +171,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Formatter.html#%3Cinit%3E(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Formatter.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Io.FileNotFoundException"/>
@@ -180,7 +180,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Formatter.html#%3Cinit%3E(java.util.Locale)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Formatter.html#%3Cinit%3E(java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
         public Formatter(Java.Util.Locale arg0)
@@ -212,7 +212,7 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Formatter.html#ioException()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Formatter.html#ioException()"/>
         /// </summary>
         /// <returns><see cref="Java.Io.IOException"/></returns>
         public Java.Io.IOException IoException()
@@ -220,7 +220,7 @@ namespace Java.Util
             var obj = IExecuteWithSignature<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>("ioException", "()Ljava/io/IOException;"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<Java.Io.IOException>(obj);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Formatter.html#out()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Formatter.html#out()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.Appendable"/></returns>
         public Java.Lang.Appendable Out()
@@ -228,7 +228,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Lang.Appendable>("out", "()Ljava/lang/Appendable;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Formatter.html#format(java.lang.String,java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Formatter.html#format(java.lang.String,java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -238,7 +238,7 @@ namespace Java.Util
             if (arg1.Length == 0) return IExecute<Java.Util.Formatter>("format", arg0); else return IExecute<Java.Util.Formatter>("format", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Formatter.html#format(java.util.Locale,java.lang.String,java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/Formatter.html#format(java.util.Locale,java.lang.String,java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -249,7 +249,7 @@ namespace Java.Util
             if (arg2.Length == 0) return IExecute<Java.Util.Formatter>("format", arg0, arg1); else return IExecute<Java.Util.Formatter>("format", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Formatter.html#locale()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Formatter.html#locale()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Locale"/></returns>
         public Java.Util.Locale Locale()
@@ -257,14 +257,14 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Locale>("locale", "()Ljava/util/Locale;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Formatter.html#close()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Formatter.html#close()"/>
         /// </summary>
         public void Close()
         {
             IExecuteWithSignature("close", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Formatter.html#flush()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Formatter.html#flush()"/>
         /// </summary>
         public void Flush()
         {
@@ -287,13 +287,13 @@ namespace Java.Util
 
             #region Fields
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/Formatter.BigDecimalLayoutForm.html#DECIMAL_FLOAT"/>
+            /// <see href="https://developer.android.com/reference/java/util/Formatter.BigDecimalLayoutForm.html#DECIMAL_FLOAT"/>
             /// </summary>
             public static Java.Util.Formatter.BigDecimalLayoutForm DECIMAL_FLOAT { get { if (!_DECIMAL_FLOATReady) { _DECIMAL_FLOATContent = SGetField<Java.Util.Formatter.BigDecimalLayoutForm>(LocalBridgeClazz, "DECIMAL_FLOAT"); _DECIMAL_FLOATReady = true; } return _DECIMAL_FLOATContent; } }
             private static Java.Util.Formatter.BigDecimalLayoutForm _DECIMAL_FLOATContent = default;
             private static bool _DECIMAL_FLOATReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/Formatter.BigDecimalLayoutForm.html#SCIENTIFIC"/>
+            /// <see href="https://developer.android.com/reference/java/util/Formatter.BigDecimalLayoutForm.html#SCIENTIFIC"/>
             /// </summary>
             public static Java.Util.Formatter.BigDecimalLayoutForm SCIENTIFIC { get { if (!_SCIENTIFICReady) { _SCIENTIFICContent = SGetField<Java.Util.Formatter.BigDecimalLayoutForm>(LocalBridgeClazz, "SCIENTIFIC"); _SCIENTIFICReady = true; } return _SCIENTIFICContent; } }
             private static Java.Util.Formatter.BigDecimalLayoutForm _SCIENTIFICContent = default;
@@ -303,7 +303,7 @@ namespace Java.Util
 
             #region Static methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/Formatter.BigDecimalLayoutForm.html#valueOf(java.lang.String)"/>
+            /// <see href="https://developer.android.com/reference/java/util/Formatter.BigDecimalLayoutForm.html#valueOf(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="Java.Util.Formatter.BigDecimalLayoutForm"/></returns>
@@ -312,7 +312,7 @@ namespace Java.Util
                 return SExecuteWithSignature<Java.Util.Formatter.BigDecimalLayoutForm>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/util/Formatter$BigDecimalLayoutForm;", arg0);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/Formatter.BigDecimalLayoutForm.html#values()"/>
+            /// <see href="https://developer.android.com/reference/java/util/Formatter.BigDecimalLayoutForm.html#values()"/>
             /// </summary>
             /// <returns><see cref="Java.Util.Formatter.BigDecimalLayoutForm"/></returns>
             public static Java.Util.Formatter.BigDecimalLayoutForm[] Values()

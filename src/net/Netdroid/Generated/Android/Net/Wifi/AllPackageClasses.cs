@@ -36,12 +36,12 @@ namespace Android.Net.Wifi
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("EasyConnectStatusCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("EasyConnectStatusCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public EasyConnectStatusCallback() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("EasyConnectStatusCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("EasyConnectStatusCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public EasyConnectStatusCallback(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -340,7 +340,7 @@ namespace Android.Net.Wifi
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class WifiConfiguration : Android.Os.Parcelable
     {
         const string _bridgeClassName = "android.net.wifi.WifiConfiguration";
@@ -381,7 +381,7 @@ namespace Android.Net.Wifi
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.AuthAlgorithm.html"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public partial class AuthAlgorithm : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AuthAlgorithm>
         {
             const string _bridgeClassName = "android.net.wifi.WifiConfiguration$AuthAlgorithm";
@@ -426,7 +426,7 @@ namespace Android.Net.Wifi
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.GroupCipher.html"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public partial class GroupCipher : MASES.JCOBridge.C2JBridge.JVMBridgeBase<GroupCipher>
         {
             const string _bridgeClassName = "android.net.wifi.WifiConfiguration$GroupCipher";
@@ -471,7 +471,7 @@ namespace Android.Net.Wifi
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.GroupMgmtCipher.html"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public partial class GroupMgmtCipher : MASES.JCOBridge.C2JBridge.JVMBridgeBase<GroupMgmtCipher>
         {
             const string _bridgeClassName = "android.net.wifi.WifiConfiguration$GroupMgmtCipher";
@@ -516,7 +516,7 @@ namespace Android.Net.Wifi
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.KeyMgmt.html"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public partial class KeyMgmt : MASES.JCOBridge.C2JBridge.JVMBridgeBase<KeyMgmt>
         {
             const string _bridgeClassName = "android.net.wifi.WifiConfiguration$KeyMgmt";
@@ -561,7 +561,7 @@ namespace Android.Net.Wifi
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.PairwiseCipher.html"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public partial class PairwiseCipher : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PairwiseCipher>
         {
             const string _bridgeClassName = "android.net.wifi.WifiConfiguration$PairwiseCipher";
@@ -606,7 +606,7 @@ namespace Android.Net.Wifi
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.Protocol.html"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public partial class Protocol : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Protocol>
         {
             const string _bridgeClassName = "android.net.wifi.WifiConfiguration$Protocol";
@@ -651,7 +651,7 @@ namespace Android.Net.Wifi
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.Status.html"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public partial class Status : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Status>
         {
             const string _bridgeClassName = "android.net.wifi.WifiConfiguration$Status";
@@ -1055,10 +1055,13 @@ namespace Android.Net.Wifi
             /// </summary>
             public LocalOnlyConnectionFailureListener() { InitializeHandlers(); }
 
+            const string _bridgeClassName = "org.mases.netdroid.generated.android.net.wifi.WifiManager_LocalOnlyConnectionFailureListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "org.mases.netdroid.generated.android.net.wifi.LocalOnlyConnectionFailureListener";
+            public override string BridgeClassName => _bridgeClassName;
 
         
             // TODO: complete the class
@@ -1080,10 +1083,13 @@ namespace Android.Net.Wifi
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
 
+            const string _bridgeClassName = "android.net.wifi.WifiManager$LocalOnlyConnectionFailureListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "android.net.wifi.WifiManager$LocalOnlyConnectionFailureListener";
+            public override string BridgeClassName => _bridgeClassName;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
@@ -1245,12 +1251,12 @@ namespace Android.Net.Wifi
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
-            [Obsolete("ScanResultsCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("ScanResultsCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public ScanResultsCallback() { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
-            [Obsolete("ScanResultsCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("ScanResultsCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public ScanResultsCallback(params object[] args) : base(args) { }
 
             private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1291,12 +1297,12 @@ namespace Android.Net.Wifi
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
-            [Obsolete("SubsystemRestartTrackingCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("SubsystemRestartTrackingCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public SubsystemRestartTrackingCallback() { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
-            [Obsolete("SubsystemRestartTrackingCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("SubsystemRestartTrackingCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public SubsystemRestartTrackingCallback(params object[] args) : base(args) { }
 
             private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1338,10 +1344,13 @@ namespace Android.Net.Wifi
             /// </summary>
             public SuggestionConnectionStatusListener() { InitializeHandlers(); }
 
+            const string _bridgeClassName = "org.mases.netdroid.generated.android.net.wifi.WifiManager_SuggestionConnectionStatusListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "org.mases.netdroid.generated.android.net.wifi.SuggestionConnectionStatusListener";
+            public override string BridgeClassName => _bridgeClassName;
 
         
             // TODO: complete the class
@@ -1363,10 +1372,13 @@ namespace Android.Net.Wifi
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
 
+            const string _bridgeClassName = "android.net.wifi.WifiManager$SuggestionConnectionStatusListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "android.net.wifi.WifiManager$SuggestionConnectionStatusListener";
+            public override string BridgeClassName => _bridgeClassName;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
@@ -1397,10 +1409,13 @@ namespace Android.Net.Wifi
             /// </summary>
             public SuggestionUserApprovalStatusListener() { InitializeHandlers(); }
 
+            const string _bridgeClassName = "org.mases.netdroid.generated.android.net.wifi.WifiManager_SuggestionUserApprovalStatusListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "org.mases.netdroid.generated.android.net.wifi.SuggestionUserApprovalStatusListener";
+            public override string BridgeClassName => _bridgeClassName;
 
         
             // TODO: complete the class
@@ -1422,10 +1437,13 @@ namespace Android.Net.Wifi
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
 
+            const string _bridgeClassName = "android.net.wifi.WifiManager$SuggestionUserApprovalStatusListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "android.net.wifi.WifiManager$SuggestionUserApprovalStatusListener";
+            public override string BridgeClassName => _bridgeClassName;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
@@ -1493,19 +1511,19 @@ namespace Android.Net.Wifi
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiManager.WpsCallback.html"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public partial class WpsCallback : MASES.JCOBridge.C2JBridge.JVMBridgeBase<WpsCallback>
         {
             const string _bridgeClassName = "android.net.wifi.WifiManager$WpsCallback";
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
-            [Obsolete("WpsCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("WpsCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public WpsCallback() { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
-            [Obsolete("WpsCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("WpsCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public WpsCallback(params object[] args) : base(args) { }
 
             private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);

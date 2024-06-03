@@ -46,11 +46,12 @@ namespace Android.App
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/GrammaticalInflectionManager.html#getApplicationGrammaticalGender()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/GrammaticalInflectionManager.html#getApplicationGrammaticalGender()"/>
         /// </summary>
-        public int ApplicationGrammaticalGender
+        /// <returns><see cref="int"/></returns>
+        public int GetApplicationGrammaticalGender()
         {
-            get { return IExecuteWithSignature<int>("getApplicationGrammaticalGender", "()I"); }
+            return IExecuteWithSignature<int>("getApplicationGrammaticalGender", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/GrammaticalInflectionManager.html#setRequestedApplicationGrammaticalGender(int)"/>

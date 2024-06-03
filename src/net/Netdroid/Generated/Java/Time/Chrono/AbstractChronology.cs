@@ -46,7 +46,7 @@ namespace Java.Time.Chrono
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/AbstractChronology.html#compareTo(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/AbstractChronology.html#compareTo(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="int"/></returns>
@@ -55,7 +55,7 @@ namespace Java.Time.Chrono
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/AbstractChronology.html#compareTo(java.time.chrono.Chronology)"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/AbstractChronology.html#compareTo(java.time.chrono.Chronology)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Chrono.Chronology"/></param>
         /// <returns><see cref="int"/></returns>
@@ -64,7 +64,7 @@ namespace Java.Time.Chrono
             return IExecuteWithSignature<int>("compareTo", "(Ljava/time/chrono/Chronology;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/AbstractChronology.html#resolveDate(java.util.Map,java.time.format.ResolverStyle)"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/AbstractChronology.html#resolveDate(java.util.Map,java.time.format.ResolverStyle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         /// <param name="arg1"><see cref="Java.Time.Format.ResolverStyle"/></param>

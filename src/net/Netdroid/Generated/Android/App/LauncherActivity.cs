@@ -49,7 +49,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/LauncherActivity.html#makeListItems()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.List"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Util.List<Android.App.LauncherActivity.ListItem> MakeListItems()
         {
             return IExecuteWithSignature<Java.Util.List<Android.App.LauncherActivity.ListItem>>("makeListItems", "()Ljava/util/List;");
@@ -66,7 +66,7 @@ namespace Android.App
             /// <see href="https://developer.android.com/reference/android/app/LauncherActivity.IconResizer.html#%3Cinit%3E(android.app.LauncherActivity)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.App.LauncherActivity"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public IconResizer(Android.App.LauncherActivity arg0)
                 : base(arg0)
             {
@@ -92,7 +92,7 @@ namespace Android.App
             /// </summary>
             /// <param name="arg0"><see cref="Android.Graphics.Drawable.Drawable"/></param>
             /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Graphics.Drawable.Drawable CreateIconThumbnail(Android.Graphics.Drawable.Drawable arg0)
             {
                 return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("createIconThumbnail", "(Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;", arg0);
@@ -123,32 +123,32 @@ namespace Android.App
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/LauncherActivity.ListItem.html#resolveInfo"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Content.Pm.ResolveInfo resolveInfo { get { return IGetField<Android.Content.Pm.ResolveInfo>("resolveInfo"); } set { ISetField("resolveInfo", value); } }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/LauncherActivity.ListItem.html#icon"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Graphics.Drawable.Drawable icon { get { return IGetField<Android.Graphics.Drawable.Drawable>("icon"); } set { ISetField("icon", value); } }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/LauncherActivity.ListItem.html#extras"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Os.Bundle extras { get { return IGetField<Android.Os.Bundle>("extras"); } set { ISetField("extras", value); } }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/LauncherActivity.ListItem.html#label"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Java.Lang.CharSequence label { get { return IGetField<Java.Lang.CharSequence>("label"); } set { ISetField("label", value); } }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/LauncherActivity.ListItem.html#className"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Java.Lang.String className { get { return IGetField<Java.Lang.String>("className"); } set { ISetField("className", value); } }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/LauncherActivity.ListItem.html#packageName"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Java.Lang.String packageName { get { return IGetField<Java.Lang.String>("packageName"); } set { ISetField("packageName", value); } }
 
             #endregion

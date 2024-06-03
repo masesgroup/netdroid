@@ -56,75 +56,84 @@ namespace Android.Telephony
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/CellSignalStrengthNr.html#getCsiCqiReport()"/> 
-        /// </summary>
-        public Java.Util.List<Java.Lang.Integer> CsiCqiReport
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.Integer>>("getCsiCqiReport", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/CellSignalStrengthNr.html#getCsiCqiTableIndex()"/> 
-        /// </summary>
-        public int CsiCqiTableIndex
-        {
-            get { return IExecuteWithSignature<int>("getCsiCqiTableIndex", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/CellSignalStrengthNr.html#getCsiRsrp()"/> 
-        /// </summary>
-        public int CsiRsrp
-        {
-            get { return IExecuteWithSignature<int>("getCsiRsrp", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/CellSignalStrengthNr.html#getCsiRsrq()"/> 
-        /// </summary>
-        public int CsiRsrq
-        {
-            get { return IExecuteWithSignature<int>("getCsiRsrq", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/CellSignalStrengthNr.html#getCsiSinr()"/> 
-        /// </summary>
-        public int CsiSinr
-        {
-            get { return IExecuteWithSignature<int>("getCsiSinr", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/CellSignalStrengthNr.html#getSsRsrp()"/> 
-        /// </summary>
-        public int SsRsrp
-        {
-            get { return IExecuteWithSignature<int>("getSsRsrp", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/CellSignalStrengthNr.html#getSsRsrq()"/> 
-        /// </summary>
-        public int SsRsrq
-        {
-            get { return IExecuteWithSignature<int>("getSsRsrq", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/CellSignalStrengthNr.html#getSsSinr()"/> 
-        /// </summary>
-        public int SsSinr
-        {
-            get { return IExecuteWithSignature<int>("getSsSinr", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/CellSignalStrengthNr.html#getTimingAdvanceMicros()"/> 
-        /// </summary>
-        public int TimingAdvanceMicros
-        {
-            get { return IExecuteWithSignature<int>("getTimingAdvanceMicros", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/CellSignalStrengthNr.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/CellSignalStrengthNr.html#getCsiCqiTableIndex()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCsiCqiTableIndex()
+        {
+            return IExecuteWithSignature<int>("getCsiCqiTableIndex", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/CellSignalStrengthNr.html#getCsiRsrp()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCsiRsrp()
+        {
+            return IExecuteWithSignature<int>("getCsiRsrp", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/CellSignalStrengthNr.html#getCsiRsrq()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCsiRsrq()
+        {
+            return IExecuteWithSignature<int>("getCsiRsrq", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/CellSignalStrengthNr.html#getCsiSinr()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCsiSinr()
+        {
+            return IExecuteWithSignature<int>("getCsiSinr", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/CellSignalStrengthNr.html#getSsRsrp()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSsRsrp()
+        {
+            return IExecuteWithSignature<int>("getSsRsrp", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/CellSignalStrengthNr.html#getSsRsrq()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSsRsrq()
+        {
+            return IExecuteWithSignature<int>("getSsRsrq", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/CellSignalStrengthNr.html#getSsSinr()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSsSinr()
+        {
+            return IExecuteWithSignature<int>("getSsSinr", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/CellSignalStrengthNr.html#getTimingAdvanceMicros()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTimingAdvanceMicros()
+        {
+            return IExecuteWithSignature<int>("getTimingAdvanceMicros", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/CellSignalStrengthNr.html#getCsiCqiReport()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Lang.Integer> GetCsiCqiReport()
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.Integer>>("getCsiCqiReport", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/CellSignalStrengthNr.html#writeToParcel(android.os.Parcel,int)"/>

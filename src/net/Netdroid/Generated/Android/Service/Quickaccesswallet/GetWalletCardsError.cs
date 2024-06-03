@@ -61,18 +61,12 @@ namespace Android.Service.Quickaccesswallet
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/quickaccesswallet/GetWalletCardsError.html#getIcon()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/quickaccesswallet/GetWalletCardsError.html#getIcon()"/>
         /// </summary>
-        public Android.Graphics.Drawable.Icon Icon
+        /// <returns><see cref="Android.Graphics.Drawable.Icon"/></returns>
+        public Android.Graphics.Drawable.Icon GetIcon()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Icon>("getIcon", "()Landroid/graphics/drawable/Icon;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/quickaccesswallet/GetWalletCardsError.html#getMessage()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence Message
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getMessage", "()Ljava/lang/CharSequence;"); }
+            return IExecuteWithSignature<Android.Graphics.Drawable.Icon>("getIcon", "()Landroid/graphics/drawable/Icon;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/quickaccesswallet/GetWalletCardsError.html#describeContents()"/>
@@ -81,6 +75,14 @@ namespace Android.Service.Quickaccesswallet
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/quickaccesswallet/GetWalletCardsError.html#getMessage()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetMessage()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getMessage", "()Ljava/lang/CharSequence;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/quickaccesswallet/GetWalletCardsError.html#writeToParcel(android.os.Parcel,int)"/>

@@ -95,40 +95,36 @@ namespace Android.Text.Style
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/style/BulletSpan.html#getBulletRadius()"/> 
-        /// </summary>
-        public int BulletRadius
-        {
-            get { return IExecuteWithSignature<int>("getBulletRadius", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/style/BulletSpan.html#getColor()"/> 
-        /// </summary>
-        public int Color
-        {
-            get { return IExecuteWithSignature<int>("getColor", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/style/BulletSpan.html#getGapWidth()"/> 
-        /// </summary>
-        public int GapWidth
-        {
-            get { return IExecuteWithSignature<int>("getGapWidth", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/style/BulletSpan.html#getSpanTypeId()"/> 
-        /// </summary>
-        public int SpanTypeId
-        {
-            get { return IExecuteWithSignature<int>("getSpanTypeId", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/BulletSpan.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/style/BulletSpan.html#getBulletRadius()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetBulletRadius()
+        {
+            return IExecuteWithSignature<int>("getBulletRadius", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/style/BulletSpan.html#getColor()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetColor()
+        {
+            return IExecuteWithSignature<int>("getColor", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/style/BulletSpan.html#getGapWidth()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetGapWidth()
+        {
+            return IExecuteWithSignature<int>("getGapWidth", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/BulletSpan.html#getLeadingMargin(boolean)"/>
@@ -138,6 +134,14 @@ namespace Android.Text.Style
         public int GetLeadingMargin(bool arg0)
         {
             return IExecuteWithSignature<int>("getLeadingMargin", "(Z)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/style/BulletSpan.html#getSpanTypeId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSpanTypeId()
+        {
+            return IExecuteWithSignature<int>("getSpanTypeId", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/BulletSpan.html#drawLeadingMargin(android.graphics.Canvas,android.graphics.Paint,int,int,int,int,int,java.lang.CharSequence,int,int,boolean,android.text.Layout)"/>

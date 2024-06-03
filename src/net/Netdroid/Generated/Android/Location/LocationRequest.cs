@@ -76,53 +76,12 @@ namespace Android.Location
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/LocationRequest.html#getDurationMillis()"/> 
+        /// <see href="https://developer.android.com/reference/android/location/LocationRequest.html#getMinUpdateDistanceMeters()"/>
         /// </summary>
-        public long DurationMillis
+        /// <returns><see cref="float"/></returns>
+        public float GetMinUpdateDistanceMeters()
         {
-            get { return IExecuteWithSignature<long>("getDurationMillis", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/LocationRequest.html#getIntervalMillis()"/> 
-        /// </summary>
-        public long IntervalMillis
-        {
-            get { return IExecuteWithSignature<long>("getIntervalMillis", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/LocationRequest.html#getMaxUpdateDelayMillis()"/> 
-        /// </summary>
-        public long MaxUpdateDelayMillis
-        {
-            get { return IExecuteWithSignature<long>("getMaxUpdateDelayMillis", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/LocationRequest.html#getMaxUpdates()"/> 
-        /// </summary>
-        public int MaxUpdates
-        {
-            get { return IExecuteWithSignature<int>("getMaxUpdates", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/LocationRequest.html#getMinUpdateDistanceMeters()"/> 
-        /// </summary>
-        public float MinUpdateDistanceMeters
-        {
-            get { return IExecuteWithSignature<float>("getMinUpdateDistanceMeters", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/LocationRequest.html#getMinUpdateIntervalMillis()"/> 
-        /// </summary>
-        public long MinUpdateIntervalMillis
-        {
-            get { return IExecuteWithSignature<long>("getMinUpdateIntervalMillis", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/LocationRequest.html#getQuality()"/> 
-        /// </summary>
-        public int Quality
-        {
-            get { return IExecuteWithSignature<int>("getQuality", "()I"); }
+            return IExecuteWithSignature<float>("getMinUpdateDistanceMeters", "()F");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/LocationRequest.html#describeContents()"/>
@@ -131,6 +90,54 @@ namespace Android.Location
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/LocationRequest.html#getMaxUpdates()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMaxUpdates()
+        {
+            return IExecuteWithSignature<int>("getMaxUpdates", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/LocationRequest.html#getQuality()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetQuality()
+        {
+            return IExecuteWithSignature<int>("getQuality", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/LocationRequest.html#getDurationMillis()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetDurationMillis()
+        {
+            return IExecuteWithSignature<long>("getDurationMillis", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/LocationRequest.html#getIntervalMillis()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetIntervalMillis()
+        {
+            return IExecuteWithSignature<long>("getIntervalMillis", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/LocationRequest.html#getMaxUpdateDelayMillis()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetMaxUpdateDelayMillis()
+        {
+            return IExecuteWithSignature<long>("getMaxUpdateDelayMillis", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/LocationRequest.html#getMinUpdateIntervalMillis()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetMinUpdateIntervalMillis()
+        {
+            return IExecuteWithSignature<long>("getMinUpdateIntervalMillis", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/LocationRequest.html#writeToParcel(android.os.Parcel,int)"/>

@@ -64,35 +64,43 @@ namespace Javax.Sql
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSetInternal.html#getConnection()"/> 
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSetInternal.html#getParams()"/>
         /// </summary>
-        public Java.Sql.Connection Connection
+        /// <returns><see cref="object"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public object[] GetParams()
         {
-            get { return IExecuteWithSignature<Java.Sql.Connection>("getConnection", "()Ljava/sql/Connection;"); }
+            return IExecuteWithSignatureArray<object>("getParams", "()[Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSetInternal.html#getOriginal()"/> 
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSetInternal.html#getConnection()"/>
         /// </summary>
-        public Java.Sql.ResultSet Original
+        /// <returns><see cref="Java.Sql.Connection"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public Java.Sql.Connection GetConnection()
         {
-            get { return IExecuteWithSignature<Java.Sql.ResultSet>("getOriginal", "()Ljava/sql/ResultSet;"); }
+            return IExecuteWithSignature<Java.Sql.Connection>("getConnection", "()Ljava/sql/Connection;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSetInternal.html#getOriginalRow()"/> 
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSetInternal.html#getOriginal()"/>
         /// </summary>
-        public Java.Sql.ResultSet OriginalRow
+        /// <returns><see cref="Java.Sql.ResultSet"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public Java.Sql.ResultSet GetOriginal()
         {
-            get { return IExecuteWithSignature<Java.Sql.ResultSet>("getOriginalRow", "()Ljava/sql/ResultSet;"); }
+            return IExecuteWithSignature<Java.Sql.ResultSet>("getOriginal", "()Ljava/sql/ResultSet;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSetInternal.html#getParams()"/> 
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSetInternal.html#getOriginalRow()"/>
         /// </summary>
-        public object[] Params
+        /// <returns><see cref="Java.Sql.ResultSet"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public Java.Sql.ResultSet GetOriginalRow()
         {
-            get { return IExecuteWithSignatureArray<object>("getParams", "()[Ljava/lang/Object;"); }
+            return IExecuteWithSignature<Java.Sql.ResultSet>("getOriginalRow", "()Ljava/sql/ResultSet;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/RowSetInternal.html#setMetaData(javax.sql.RowSetMetaData)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/RowSetInternal.html#setMetaData(javax.sql.RowSetMetaData)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Sql.RowSetMetaData"/></param>
         /// <exception cref="Java.Sql.SQLException"/>

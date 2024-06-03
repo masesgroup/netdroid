@@ -115,97 +115,45 @@ namespace Android.View.Animation
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/animation/Animation.html#getBackdropColor()"/> <see href="https://developer.android.com/reference/android/view/animation/Animation.html#setBackdropColor(int)"/>
+        /// <see href="https://developer.android.com/reference/android/view/animation/Animation.html#getInterpolator()"/>
         /// </summary>
-        public int BackdropColor
+        /// <returns><see cref="Android.View.Animation.Interpolator"/></returns>
+        public Android.View.Animation.Interpolator GetInterpolator()
         {
-            get { return IExecuteWithSignature<int>("getBackdropColor", "()I"); } set { IExecuteWithSignature("setBackdropColor", "(I)V", value); }
+            return IExecuteWithSignature<Android.View.Animation.Interpolator>("getInterpolator", "()Landroid/view/animation/Interpolator;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/animation/Animation.html#getBackgroundColor()"/> <see href="https://developer.android.com/reference/android/view/animation/Animation.html#setBackgroundColor(int)"/>
+        /// <see href="https://developer.android.com/reference/android/view/animation/Animation.html#getDetachWallpaper()"/>
         /// </summary>
-        [System.Obsolete()]
-        public int BackgroundColor
+        /// <returns><see cref="bool"/></returns>
+        [global::System.Obsolete()]
+        public bool GetDetachWallpaper()
         {
-            get { return IExecuteWithSignature<int>("getBackgroundColor", "()I"); } set { IExecuteWithSignature("setBackgroundColor", "(I)V", value); }
+            return IExecuteWithSignature<bool>("getDetachWallpaper", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/animation/Animation.html#getDetachWallpaper()"/> <see href="https://developer.android.com/reference/android/view/animation/Animation.html#setDetachWallpaper(boolean)"/>
+        /// <see href="https://developer.android.com/reference/android/view/animation/Animation.html#getFillAfter()"/>
         /// </summary>
-        [System.Obsolete()]
-        public bool DetachWallpaper
+        /// <returns><see cref="bool"/></returns>
+        public bool GetFillAfter()
         {
-            get { return IExecuteWithSignature<bool>("getDetachWallpaper", "()Z"); } set { IExecuteWithSignature("setDetachWallpaper", "(Z)V", value); }
+            return IExecuteWithSignature<bool>("getFillAfter", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/animation/Animation.html#getDuration()"/> <see href="https://developer.android.com/reference/android/view/animation/Animation.html#setDuration(long)"/>
+        /// <see href="https://developer.android.com/reference/android/view/animation/Animation.html#getFillBefore()"/>
         /// </summary>
-        public long Duration
+        /// <returns><see cref="bool"/></returns>
+        public bool GetFillBefore()
         {
-            get { return IExecuteWithSignature<long>("getDuration", "()J"); } set { IExecuteWithSignature("setDuration", "(J)V", value); }
+            return IExecuteWithSignature<bool>("getFillBefore", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/animation/Animation.html#getFillAfter()"/> <see href="https://developer.android.com/reference/android/view/animation/Animation.html#setFillAfter(boolean)"/>
+        /// <see href="https://developer.android.com/reference/android/view/animation/Animation.html#getShowBackdrop()"/>
         /// </summary>
-        public bool FillAfter
+        /// <returns><see cref="bool"/></returns>
+        public bool GetShowBackdrop()
         {
-            get { return IExecuteWithSignature<bool>("getFillAfter", "()Z"); } set { IExecuteWithSignature("setFillAfter", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/animation/Animation.html#getFillBefore()"/> <see href="https://developer.android.com/reference/android/view/animation/Animation.html#setFillBefore(boolean)"/>
-        /// </summary>
-        public bool FillBefore
-        {
-            get { return IExecuteWithSignature<bool>("getFillBefore", "()Z"); } set { IExecuteWithSignature("setFillBefore", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/animation/Animation.html#getInterpolator()"/> <see href="https://developer.android.com/reference/android/view/animation/Animation.html#setInterpolator(android.view.animation.Interpolator)"/>
-        /// </summary>
-        public Android.View.Animation.Interpolator Interpolator
-        {
-            get { return IExecuteWithSignature<Android.View.Animation.Interpolator>("getInterpolator", "()Landroid/view/animation/Interpolator;"); } set { IExecuteWithSignature("setInterpolator", "(Landroid/view/animation/Interpolator;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/animation/Animation.html#getRepeatCount()"/> <see href="https://developer.android.com/reference/android/view/animation/Animation.html#setRepeatCount(int)"/>
-        /// </summary>
-        public int RepeatCount
-        {
-            get { return IExecuteWithSignature<int>("getRepeatCount", "()I"); } set { IExecuteWithSignature("setRepeatCount", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/animation/Animation.html#getRepeatMode()"/> <see href="https://developer.android.com/reference/android/view/animation/Animation.html#setRepeatMode(int)"/>
-        /// </summary>
-        public int RepeatMode
-        {
-            get { return IExecuteWithSignature<int>("getRepeatMode", "()I"); } set { IExecuteWithSignature("setRepeatMode", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/animation/Animation.html#getShowBackdrop()"/> <see href="https://developer.android.com/reference/android/view/animation/Animation.html#setShowBackdrop(boolean)"/>
-        /// </summary>
-        public bool ShowBackdrop
-        {
-            get { return IExecuteWithSignature<bool>("getShowBackdrop", "()Z"); } set { IExecuteWithSignature("setShowBackdrop", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/animation/Animation.html#getStartOffset()"/> <see href="https://developer.android.com/reference/android/view/animation/Animation.html#setStartOffset(long)"/>
-        /// </summary>
-        public long StartOffset
-        {
-            get { return IExecuteWithSignature<long>("getStartOffset", "()J"); } set { IExecuteWithSignature("setStartOffset", "(J)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/animation/Animation.html#getStartTime()"/> <see href="https://developer.android.com/reference/android/view/animation/Animation.html#setStartTime(long)"/>
-        /// </summary>
-        public long StartTime
-        {
-            get { return IExecuteWithSignature<long>("getStartTime", "()J"); } set { IExecuteWithSignature("setStartTime", "(J)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/animation/Animation.html#getZAdjustment()"/> <see href="https://developer.android.com/reference/android/view/animation/Animation.html#setZAdjustment(int)"/>
-        /// </summary>
-        public int ZAdjustment
-        {
-            get { return IExecuteWithSignature<int>("getZAdjustment", "()I"); } set { IExecuteWithSignature("setZAdjustment", "(I)V", value); }
+            return IExecuteWithSignature<bool>("getShowBackdrop", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/animation/Animation.html#getTransformation(long,android.view.animation.Transformation,float)"/>
@@ -277,12 +225,77 @@ namespace Android.View.Animation
             return IExecuteWithSignature<bool>("willChangeTransformationMatrix", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/animation/Animation.html#getBackdropColor()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetBackdropColor()
+        {
+            return IExecuteWithSignature<int>("getBackdropColor", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/animation/Animation.html#getBackgroundColor()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetBackgroundColor()
+        {
+            return IExecuteWithSignature<int>("getBackgroundColor", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/animation/Animation.html#getRepeatCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetRepeatCount()
+        {
+            return IExecuteWithSignature<int>("getRepeatCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/animation/Animation.html#getRepeatMode()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetRepeatMode()
+        {
+            return IExecuteWithSignature<int>("getRepeatMode", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/animation/Animation.html#getZAdjustment()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetZAdjustment()
+        {
+            return IExecuteWithSignature<int>("getZAdjustment", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/animation/Animation.html#computeDurationHint()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
         public long ComputeDurationHint()
         {
             return IExecuteWithSignature<long>("computeDurationHint", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/animation/Animation.html#getDuration()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetDuration()
+        {
+            return IExecuteWithSignature<long>("getDuration", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/animation/Animation.html#getStartOffset()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetStartOffset()
+        {
+            return IExecuteWithSignature<long>("getStartOffset", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/animation/Animation.html#getStartTime()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetStartTime()
+        {
+            return IExecuteWithSignature<long>("getStartTime", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/animation/Animation.html#cancel()"/>
@@ -334,6 +347,56 @@ namespace Android.View.Animation
             IExecuteWithSignature("setAnimationListener", "(Landroid/view/animation/Animation$AnimationListener;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/animation/Animation.html#setBackdropColor(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetBackdropColor(int arg0)
+        {
+            IExecuteWithSignature("setBackdropColor", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/animation/Animation.html#setBackgroundColor(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        [global::System.Obsolete()]
+        public void SetBackgroundColor(int arg0)
+        {
+            IExecuteWithSignature("setBackgroundColor", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/animation/Animation.html#setDetachWallpaper(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        [global::System.Obsolete()]
+        public void SetDetachWallpaper(bool arg0)
+        {
+            IExecuteWithSignature("setDetachWallpaper", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/animation/Animation.html#setDuration(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        public void SetDuration(long arg0)
+        {
+            IExecuteWithSignature("setDuration", "(J)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/animation/Animation.html#setFillAfter(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetFillAfter(bool arg0)
+        {
+            IExecuteWithSignature("setFillAfter", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/animation/Animation.html#setFillBefore(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetFillBefore(bool arg0)
+        {
+            IExecuteWithSignature("setFillBefore", "(Z)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/animation/Animation.html#setFillEnabled(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
@@ -349,6 +412,62 @@ namespace Android.View.Animation
         public void SetInterpolator(Android.Content.Context arg0, int arg1)
         {
             IExecute("setInterpolator", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/animation/Animation.html#setInterpolator(android.view.animation.Interpolator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.Animation.Interpolator"/></param>
+        public void SetInterpolator(Android.View.Animation.Interpolator arg0)
+        {
+            IExecuteWithSignature("setInterpolator", "(Landroid/view/animation/Interpolator;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/animation/Animation.html#setRepeatCount(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetRepeatCount(int arg0)
+        {
+            IExecuteWithSignature("setRepeatCount", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/animation/Animation.html#setRepeatMode(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetRepeatMode(int arg0)
+        {
+            IExecuteWithSignature("setRepeatMode", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/animation/Animation.html#setShowBackdrop(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetShowBackdrop(bool arg0)
+        {
+            IExecuteWithSignature("setShowBackdrop", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/animation/Animation.html#setStartOffset(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        public void SetStartOffset(long arg0)
+        {
+            IExecuteWithSignature("setStartOffset", "(J)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/animation/Animation.html#setStartTime(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        public void SetStartTime(long arg0)
+        {
+            IExecuteWithSignature("setStartTime", "(J)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/animation/Animation.html#setZAdjustment(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetZAdjustment(int arg0)
+        {
+            IExecuteWithSignature("setZAdjustment", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/animation/Animation.html#start()"/>
@@ -393,9 +512,9 @@ namespace Android.View.Animation
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onAnimationEnd", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.Animation.Animation>>>(OnAnimationEndEventHandler));
-                AddEventHandler("onAnimationRepeat", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.Animation.Animation>>>(OnAnimationRepeatEventHandler));
-                AddEventHandler("onAnimationStart", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.Animation.Animation>>>(OnAnimationStartEventHandler));
+                AddEventHandler("onAnimationEnd", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.Animation.Animation>>>(OnAnimationEndEventHandler));
+                AddEventHandler("onAnimationRepeat", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.Animation.Animation>>>(OnAnimationRepeatEventHandler));
+                AddEventHandler("onAnimationStart", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.Animation.Animation>>>(OnAnimationStartEventHandler));
 
             }
 
@@ -403,7 +522,7 @@ namespace Android.View.Animation
             /// Handler for <see href="https://developer.android.com/reference/android/view/animation/Animation.AnimationListener.html#onAnimationEnd(android.view.animation.Animation)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnAnimationEnd"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.View.Animation.Animation> OnOnAnimationEnd { get; set; } = null;
+            public global::System.Action<Android.View.Animation.Animation> OnOnAnimationEnd { get; set; } = null;
 
             void OnAnimationEndEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.Animation.Animation>> data)
             {
@@ -424,7 +543,7 @@ namespace Android.View.Animation
             /// Handler for <see href="https://developer.android.com/reference/android/view/animation/Animation.AnimationListener.html#onAnimationRepeat(android.view.animation.Animation)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnAnimationRepeat"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.View.Animation.Animation> OnOnAnimationRepeat { get; set; } = null;
+            public global::System.Action<Android.View.Animation.Animation> OnOnAnimationRepeat { get; set; } = null;
 
             void OnAnimationRepeatEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.Animation.Animation>> data)
             {
@@ -445,7 +564,7 @@ namespace Android.View.Animation
             /// Handler for <see href="https://developer.android.com/reference/android/view/animation/Animation.AnimationListener.html#onAnimationStart(android.view.animation.Animation)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnAnimationStart"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.View.Animation.Animation> OnOnAnimationStart { get; set; } = null;
+            public global::System.Action<Android.View.Animation.Animation> OnOnAnimationStart { get; set; } = null;
 
             void OnAnimationStartEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.Animation.Animation>> data)
             {

@@ -30,7 +30,7 @@ namespace Java.Io
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ByteArrayOutputStream.html#%3Cinit%3E(int)"/>
+        /// <see href="https://developer.android.com/reference/java/io/ByteArrayOutputStream.html#%3Cinit%3E(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public ByteArrayOutputStream(int arg0)
@@ -54,7 +54,7 @@ namespace Java.Io
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ByteArrayOutputStream.html#toByteArray()"/>
+        /// <see href="https://developer.android.com/reference/java/io/ByteArrayOutputStream.html#toByteArray()"/>
         /// </summary>
         /// <returns><see cref="byte"/></returns>
         public byte[] ToByteArray()
@@ -62,7 +62,7 @@ namespace Java.Io
             return IExecuteWithSignatureArray<byte>("toByteArray", "()[B");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ByteArrayOutputStream.html#size()"/>
+        /// <see href="https://developer.android.com/reference/java/io/ByteArrayOutputStream.html#size()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int Size()
@@ -70,17 +70,17 @@ namespace Java.Io
             return IExecuteWithSignature<int>("size", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ByteArrayOutputStream.html#toString(int)"/>
+        /// <see href="https://developer.android.com/reference/java/io/ByteArrayOutputStream.html#toString(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Lang.String ToString(int arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("toString", "(I)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ByteArrayOutputStream.html#toString(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/io/ByteArrayOutputStream.html#toString(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -90,7 +90,7 @@ namespace Java.Io
             return IExecuteWithSignature<Java.Lang.String>("toString", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ByteArrayOutputStream.html#toString(java.nio.charset.Charset)"/>
+        /// <see href="https://developer.android.com/reference/java/io/ByteArrayOutputStream.html#toString(java.nio.charset.Charset)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.Charset.Charset"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -99,14 +99,14 @@ namespace Java.Io
             return IExecuteWithSignature<Java.Lang.String>("toString", "(Ljava/nio/charset/Charset;)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ByteArrayOutputStream.html#reset()"/>
+        /// <see href="https://developer.android.com/reference/java/io/ByteArrayOutputStream.html#reset()"/>
         /// </summary>
         public void Reset()
         {
             IExecuteWithSignature("reset", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ByteArrayOutputStream.html#writeTo(java.io.OutputStream)"/>
+        /// <see href="https://developer.android.com/reference/java/io/ByteArrayOutputStream.html#writeTo(java.io.OutputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -115,7 +115,7 @@ namespace Java.Io
             IExecuteWithSignature("writeTo", "(Ljava/io/OutputStream;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ByteArrayOutputStream.html#writeBytes(byte[])"/>
+        /// <see href="https://developer.android.com/reference/java/io/ByteArrayOutputStream.html#writeBytes(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         public void WriteBytes(byte[] arg0)

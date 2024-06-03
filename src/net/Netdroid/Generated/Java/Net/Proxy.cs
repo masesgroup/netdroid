@@ -30,7 +30,7 @@ namespace Java.Net
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/Proxy.html#%3Cinit%3E(java.net.Proxy.Type,java.net.SocketAddress)"/>
+        /// <see href="https://developer.android.com/reference/java/net/Proxy.html#%3Cinit%3E(java.net.Proxy.Type,java.net.SocketAddress)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.Proxy.Type"/></param>
         /// <param name="arg1"><see cref="Java.Net.SocketAddress"/></param>
@@ -47,7 +47,7 @@ namespace Java.Net
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/Proxy.html#NO_PROXY"/>
+        /// <see href="https://developer.android.com/reference/java/net/Proxy.html#NO_PROXY"/>
         /// </summary>
         public static Java.Net.Proxy NO_PROXY { get { if (!_NO_PROXYReady) { _NO_PROXYContent = SGetField<Java.Net.Proxy>(LocalBridgeClazz, "NO_PROXY"); _NO_PROXYReady = true; } return _NO_PROXYContent; } }
         private static Java.Net.Proxy _NO_PROXYContent = default;
@@ -61,7 +61,7 @@ namespace Java.Net
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/Proxy.html#type()"/>
+        /// <see href="https://developer.android.com/reference/java/net/Proxy.html#type()"/>
         /// </summary>
         /// <returns><see cref="Java.Net.Proxy.Type"/></returns>
         public Java.Net.Proxy.Type TypeMethod()
@@ -69,7 +69,7 @@ namespace Java.Net
             return IExecuteWithSignature<Java.Net.Proxy.Type>("type", "()Ljava/net/Proxy$Type;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/Proxy.html#address()"/>
+        /// <see href="https://developer.android.com/reference/java/net/Proxy.html#address()"/>
         /// </summary>
         /// <returns><see cref="Java.Net.SocketAddress"/></returns>
         public Java.Net.SocketAddress Address()
@@ -93,19 +93,19 @@ namespace Java.Net
 
             #region Fields
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/net/Proxy.Type.html#DIRECT"/>
+            /// <see href="https://developer.android.com/reference/java/net/Proxy.Type.html#DIRECT"/>
             /// </summary>
             public static Java.Net.Proxy.Type DIRECT { get { if (!_DIRECTReady) { _DIRECTContent = SGetField<Java.Net.Proxy.Type>(LocalBridgeClazz, "DIRECT"); _DIRECTReady = true; } return _DIRECTContent; } }
             private static Java.Net.Proxy.Type _DIRECTContent = default;
             private static bool _DIRECTReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/net/Proxy.Type.html#HTTP"/>
+            /// <see href="https://developer.android.com/reference/java/net/Proxy.Type.html#HTTP"/>
             /// </summary>
             public static Java.Net.Proxy.Type HTTP { get { if (!_HTTPReady) { _HTTPContent = SGetField<Java.Net.Proxy.Type>(LocalBridgeClazz, "HTTP"); _HTTPReady = true; } return _HTTPContent; } }
             private static Java.Net.Proxy.Type _HTTPContent = default;
             private static bool _HTTPReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/net/Proxy.Type.html#SOCKS"/>
+            /// <see href="https://developer.android.com/reference/java/net/Proxy.Type.html#SOCKS"/>
             /// </summary>
             public static Java.Net.Proxy.Type SOCKS { get { if (!_SOCKSReady) { _SOCKSContent = SGetField<Java.Net.Proxy.Type>(LocalBridgeClazz, "SOCKS"); _SOCKSReady = true; } return _SOCKSContent; } }
             private static Java.Net.Proxy.Type _SOCKSContent = default;
@@ -115,7 +115,7 @@ namespace Java.Net
 
             #region Static methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/net/Proxy.Type.html#valueOf(java.lang.String)"/>
+            /// <see href="https://developer.android.com/reference/java/net/Proxy.Type.html#valueOf(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="Java.Net.Proxy.Type"/></returns>
@@ -124,7 +124,7 @@ namespace Java.Net
                 return SExecuteWithSignature<Java.Net.Proxy.Type>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/net/Proxy$Type;", arg0);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/net/Proxy.Type.html#values()"/>
+            /// <see href="https://developer.android.com/reference/java/net/Proxy.Type.html#values()"/>
             /// </summary>
             /// <returns><see cref="Java.Net.Proxy.Type"/></returns>
             public static Java.Net.Proxy.Type[] Values()

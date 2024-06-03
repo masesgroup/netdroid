@@ -64,11 +64,12 @@ namespace Android.Health.Connect.Datatypes
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/HeightRecord.html#getHeight()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/HeightRecord.html#getHeight()"/>
         /// </summary>
-        public Android.Health.Connect.Datatypes.Units.Length Height
+        /// <returns><see cref="Android.Health.Connect.Datatypes.Units.Length"/></returns>
+        public Android.Health.Connect.Datatypes.Units.Length GetHeight()
         {
-            get { return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Length>("getHeight", "()Landroid/health/connect/datatypes/units/Length;"); }
+            return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Length>("getHeight", "()Landroid/health/connect/datatypes/units/Length;");
         }
 
         #endregion

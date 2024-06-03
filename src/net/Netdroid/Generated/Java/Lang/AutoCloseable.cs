@@ -64,7 +64,7 @@ namespace Java.Lang
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/AutoCloseable.html#close()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/AutoCloseable.html#close()"/>
         /// </summary>
         /// <exception cref="Java.Lang.Exception"/>
         public void Close()

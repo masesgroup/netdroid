@@ -70,40 +70,44 @@ namespace Android.Media.Tv
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/BroadcastInfoResponse.html#getRequestId()"/> 
-        /// </summary>
-        public int RequestId
-        {
-            get { return IExecuteWithSignature<int>("getRequestId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/BroadcastInfoResponse.html#getResponseResult()"/> 
-        /// </summary>
-        public int ResponseResult
-        {
-            get { return IExecuteWithSignature<int>("getResponseResult", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/BroadcastInfoResponse.html#getSequence()"/> 
-        /// </summary>
-        public int Sequence
-        {
-            get { return IExecuteWithSignature<int>("getSequence", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/BroadcastInfoResponse.html#getType()"/> 
-        /// </summary>
-        public int Type
-        {
-            get { return IExecuteWithSignature<int>("getType", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/BroadcastInfoResponse.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/BroadcastInfoResponse.html#getRequestId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetRequestId()
+        {
+            return IExecuteWithSignature<int>("getRequestId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/BroadcastInfoResponse.html#getResponseResult()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetResponseResult()
+        {
+            return IExecuteWithSignature<int>("getResponseResult", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/BroadcastInfoResponse.html#getSequence()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSequence()
+        {
+            return IExecuteWithSignature<int>("getSequence", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/BroadcastInfoResponse.html#getType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetType()
+        {
+            return IExecuteWithSignature<int>("getType", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/BroadcastInfoResponse.html#writeToParcel(android.os.Parcel,int)"/>

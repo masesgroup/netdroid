@@ -42,7 +42,7 @@ namespace Java.Lang
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ThreadLocal.html#withInitial(java.util.function.Supplier)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ThreadLocal.html#withInitial(java.util.function.Supplier)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
         /// <returns><see cref="Java.Lang.ThreadLocal"/></returns>
@@ -55,7 +55,7 @@ namespace Java.Lang
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ThreadLocal.html#get()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ThreadLocal.html#get()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object Get()
@@ -63,14 +63,14 @@ namespace Java.Lang
             return IExecuteWithSignature("get", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ThreadLocal.html#remove()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ThreadLocal.html#remove()"/>
         /// </summary>
         public void Remove()
         {
             IExecuteWithSignature("remove", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ThreadLocal.html#set(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ThreadLocal.html#set(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         public void Set(object arg0)
@@ -109,13 +109,13 @@ namespace Java.Lang
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ThreadLocal.html#withInitial(java.util.function.Supplier)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ThreadLocal.html#withInitial(java.util.function.Supplier)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
         /// <typeparam name="S"></typeparam>
         /// <typeparam name="Arg0ExtendsS"><typeparamref name="S"/></typeparam>
         /// <returns><see cref="Java.Lang.ThreadLocal"/></returns>
-        public static Java.Lang.ThreadLocal<S> WithInitial<S, Arg0ExtendsS>(Java.Util.Function.Supplier<Arg0ExtendsS> arg0) where Arg0ExtendsS: S
+        public static Java.Lang.ThreadLocal<S> WithInitial<S, Arg0ExtendsS>(Java.Util.Function.Supplier<Arg0ExtendsS> arg0) where Arg0ExtendsS : S
         {
             return SExecuteWithSignature<Java.Lang.ThreadLocal<S>>(LocalBridgeClazz, "withInitial", "(Ljava/util/function/Supplier;)Ljava/lang/ThreadLocal;", arg0);
         }
@@ -124,7 +124,7 @@ namespace Java.Lang
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ThreadLocal.html#get()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ThreadLocal.html#get()"/>
         /// </summary>
         /// <returns><typeparamref name="T"/></returns>
         public T Get()
@@ -132,14 +132,14 @@ namespace Java.Lang
             return IExecuteWithSignature<T>("get", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ThreadLocal.html#remove()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ThreadLocal.html#remove()"/>
         /// </summary>
         public void Remove()
         {
             IExecuteWithSignature("remove", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ThreadLocal.html#set(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ThreadLocal.html#set(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         public void Set(T arg0)

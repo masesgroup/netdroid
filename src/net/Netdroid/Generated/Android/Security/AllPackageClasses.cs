@@ -185,12 +185,12 @@ namespace Android.Security
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("ConfirmationCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ConfirmationCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ConfirmationCallback() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("ConfirmationCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ConfirmationCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ConfirmationCallback(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -424,12 +424,12 @@ namespace Android.Security
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("KeyChainAliasCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("KeyChainAliasCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public KeyChainAliasCallback() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("KeyChainAliasCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("KeyChainAliasCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public KeyChainAliasCallback(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -481,7 +481,7 @@ namespace Android.Security
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/security/KeyPairGeneratorSpec.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class KeyPairGeneratorSpec : Java.Security.Spec.AlgorithmParameterSpec
     {
         const string _bridgeClassName = "android.security.KeyPairGeneratorSpec";
@@ -522,7 +522,7 @@ namespace Android.Security
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/security/KeyPairGeneratorSpec.Builder.html"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public partial class Builder : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Builder>
         {
             const string _bridgeClassName = "android.security.KeyPairGeneratorSpec$Builder";
@@ -588,7 +588,7 @@ namespace Android.Security
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/security/KeyStoreParameter.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class KeyStoreParameter : Java.Security.KeyStore.ProtectionParameter
     {
         const string _bridgeClassName = "android.security.KeyStoreParameter";
@@ -629,7 +629,7 @@ namespace Android.Security
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/security/KeyStoreParameter.Builder.html"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public partial class Builder : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Builder>
         {
             const string _bridgeClassName = "android.security.KeyStoreParameter$Builder";

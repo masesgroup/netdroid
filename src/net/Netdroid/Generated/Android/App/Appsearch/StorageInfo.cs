@@ -46,25 +46,28 @@ namespace Android.App.Appsearch
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/StorageInfo.html#getAliveDocumentsCount()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/StorageInfo.html#getAliveDocumentsCount()"/>
         /// </summary>
-        public int AliveDocumentsCount
+        /// <returns><see cref="int"/></returns>
+        public int GetAliveDocumentsCount()
         {
-            get { return IExecuteWithSignature<int>("getAliveDocumentsCount", "()I"); }
+            return IExecuteWithSignature<int>("getAliveDocumentsCount", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/StorageInfo.html#getAliveNamespacesCount()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/StorageInfo.html#getAliveNamespacesCount()"/>
         /// </summary>
-        public int AliveNamespacesCount
+        /// <returns><see cref="int"/></returns>
+        public int GetAliveNamespacesCount()
         {
-            get { return IExecuteWithSignature<int>("getAliveNamespacesCount", "()I"); }
+            return IExecuteWithSignature<int>("getAliveNamespacesCount", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/StorageInfo.html#getSizeBytes()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/StorageInfo.html#getSizeBytes()"/>
         /// </summary>
-        public long SizeBytes
+        /// <returns><see cref="long"/></returns>
+        public long GetSizeBytes()
         {
-            get { return IExecuteWithSignature<long>("getSizeBytes", "()J"); }
+            return IExecuteWithSignature<long>("getSizeBytes", "()J");
         }
 
         #endregion

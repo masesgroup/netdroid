@@ -59,7 +59,7 @@ namespace Android.Os
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="byte"/></param>
         /// <returns><see cref="int"/></returns>
-        /// <exception cref="Android.SystemNs.ErrnoException"/>
+        /// <exception cref="Android.System.ErrnoException"/>
         public int OnRead(long arg0, int arg1, byte[] arg2)
         {
             return IExecute<int>("onRead", arg0, arg1, arg2);
@@ -71,7 +71,7 @@ namespace Android.Os
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="byte"/></param>
         /// <returns><see cref="int"/></returns>
-        /// <exception cref="Android.SystemNs.ErrnoException"/>
+        /// <exception cref="Android.System.ErrnoException"/>
         public int OnWrite(long arg0, int arg1, byte[] arg2)
         {
             return IExecute<int>("onWrite", arg0, arg1, arg2);
@@ -80,7 +80,7 @@ namespace Android.Os
         /// <see href="https://developer.android.com/reference/android/os/ProxyFileDescriptorCallback.html#onGetSize()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
-        /// <exception cref="Android.SystemNs.ErrnoException"/>
+        /// <exception cref="Android.System.ErrnoException"/>
         public long OnGetSize()
         {
             return IExecuteWithSignature<long>("onGetSize", "()J");
@@ -88,7 +88,7 @@ namespace Android.Os
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/ProxyFileDescriptorCallback.html#onFsync()"/>
         /// </summary>
-        /// <exception cref="Android.SystemNs.ErrnoException"/>
+        /// <exception cref="Android.System.ErrnoException"/>
         public void OnFsync()
         {
             IExecuteWithSignature("onFsync", "()V");

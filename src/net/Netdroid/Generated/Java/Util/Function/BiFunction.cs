@@ -50,16 +50,16 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("apply", new System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(ApplyEventHandler));
-            AddEventHandler("andThen", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Function>>>(AndThenEventHandler));
+            AddEventHandler("apply", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(ApplyEventHandler));
+            AddEventHandler("andThen", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Function>>>(AndThenEventHandler));
 
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/BiFunction.html#apply(java.lang.Object,java.lang.Object)"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/BiFunction.html#apply(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <remarks>If <see cref="OnApply"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<object, object, object> OnApply { get; set; } = null;
+        public global::System.Func<object, object, object> OnApply { get; set; } = null;
 
         void ApplyEventHandler(object sender, CLRListenerEventArgs<CLREventData<object>> data)
         {
@@ -69,7 +69,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/BiFunction.html#apply(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/BiFunction.html#apply(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -79,7 +79,7 @@ namespace Java.Util.Function
             return default;
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/BiFunction.html#andThen(java.util.function.Function)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/BiFunction.html#andThen(java.util.function.Function)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <returns><see cref="Java.Util.Function.BiFunction"/></returns>
@@ -90,10 +90,10 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/BiFunction.html#andThen(java.util.function.Function)"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/BiFunction.html#andThen(java.util.function.Function)"/>
         /// </summary>
         /// <remarks>If <see cref="OnAndThen"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.Function, Java.Util.Function.BiFunction> OnAndThen { get; set; } = null;
+        public global::System.Func<Java.Util.Function.Function, Java.Util.Function.BiFunction> OnAndThen { get; set; } = null;
 
         void AndThenEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.Function>> data)
         {
@@ -103,7 +103,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/BiFunction.html#andThen(java.util.function.Function)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/BiFunction.html#andThen(java.util.function.Function)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <returns><see cref="Java.Util.Function.BiFunction"/></returns>
@@ -144,7 +144,7 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/BiFunction.html#apply(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/BiFunction.html#apply(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -154,7 +154,7 @@ namespace Java.Util.Function
             return IExecute("apply", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/BiFunction.html#andThen(java.util.function.Function)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/BiFunction.html#andThen(java.util.function.Function)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <returns><see cref="Java.Util.Function.BiFunction"/></returns>
@@ -175,7 +175,7 @@ namespace Java.Util.Function
 
     #region IBiFunction<T, U, R>
     /// <summary>
-    /// .NET interface for org.mases.netdroid.generated.java.util.function.BiFunction implementing <see href="https://developer.android.com/reference/java.base/java/util/function/BiFunction.html"/>
+    /// .NET interface for org.mases.netdroid.generated.java.util.function.BiFunction implementing <see href="https://developer.android.com/reference/java/util/function/BiFunction.html"/>
     /// </summary>
     public partial interface IBiFunction<T, U, R>
     {
@@ -216,16 +216,16 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("apply", new System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(ApplyEventHandler));
-            AddEventHandler("andThen", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV>>>>(AndThen<V, Arg0objectSuperR, Arg0ExtendsV>EventHandler));
+            AddEventHandler("apply", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(ApplyEventHandler));
+            AddEventHandler("andThen", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV>>>>(AndThen<V, Arg0objectSuperR, Arg0ExtendsV>EventHandler));
 
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/BiFunction.html#apply(java.lang.Object,java.lang.Object)"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/BiFunction.html#apply(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <remarks>If <see cref="OnApply"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<T, U, R> OnApply { get; set; } = null;
+        public global::System.Func<T, U, R> OnApply { get; set; } = null;
 
         void ApplyEventHandler(object sender, CLRListenerEventArgs<CLREventData<T>> data)
         {
@@ -235,7 +235,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/BiFunction.html#apply(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/BiFunction.html#apply(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><typeparamref name="U"/></param>
@@ -245,7 +245,7 @@ namespace Java.Util.Function
             return default;
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/BiFunction.html#andThen(java.util.function.Function)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/BiFunction.html#andThen(java.util.function.Function)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <typeparam name="V"></typeparam>
@@ -253,16 +253,16 @@ namespace Java.Util.Function
         /// <typeparam name="Arg0ExtendsV"><typeparamref name="V"/></typeparam>
         /// <returns><see cref="Java.Util.Function.BiFunction"/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
-        public Java.Util.Function.BiFunction<T, U, V> AndThen<V, Arg0objectSuperR, Arg0ExtendsV>Default(Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV> arg0) where Arg0objectSuperR: R where Arg0ExtendsV: V
+        public Java.Util.Function.BiFunction<T, U, V> AndThen<V, Arg0objectSuperR, Arg0ExtendsV>Default(Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV> arg0) where Arg0objectSuperR : R where Arg0ExtendsV : V
         {
             return IExecuteWithSignature<Java.Util.Function.BiFunction<T, U, V>>("andThenDefault", "(Ljava/util/function/Function;)Ljava/util/function/BiFunction;", arg0);
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/BiFunction.html#andThen(java.util.function.Function)"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/BiFunction.html#andThen(java.util.function.Function)"/>
         /// </summary>
         /// <remarks>If <see cref="OnAndThen<V, Arg0objectSuperR, Arg0ExtendsV>"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV>, Java.Util.Function.BiFunction<T, U, V>> OnAndThen<V, Arg0objectSuperR, Arg0ExtendsV> { get; set; } = null;
+        public global::System.Func<Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV>, Java.Util.Function.BiFunction<T, U, V>> OnAndThen<V, Arg0objectSuperR, Arg0ExtendsV> { get; set; } = null;
 
         void AndThen<V, Arg0objectSuperR, Arg0ExtendsV>EventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV>>> data)
         {
@@ -272,7 +272,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/BiFunction.html#andThen(java.util.function.Function)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/BiFunction.html#andThen(java.util.function.Function)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <typeparam name="V"></typeparam>
@@ -280,7 +280,7 @@ namespace Java.Util.Function
         /// <typeparam name="Arg0ExtendsV"><typeparamref name="V"/></typeparam>
         /// <returns><see cref="Java.Util.Function.BiFunction"/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="AndThen<V, Arg0objectSuperR, Arg0ExtendsV>Default"/>; override the method to implement a different behavior</remarks>
-        public virtual Java.Util.Function.BiFunction<T, U, V> AndThen<V, Arg0objectSuperR, Arg0ExtendsV>(Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV> arg0) where Arg0objectSuperR: R where Arg0ExtendsV: V
+        public virtual Java.Util.Function.BiFunction<T, U, V> AndThen<V, Arg0objectSuperR, Arg0ExtendsV>(Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV> arg0) where Arg0objectSuperR : R where Arg0ExtendsV : V
         {
             return AndThen<V, Arg0objectSuperR, Arg0ExtendsV>Default(arg0);
         }
@@ -316,7 +316,7 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/BiFunction.html#apply(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/BiFunction.html#apply(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><typeparamref name="U"/></param>
@@ -326,14 +326,14 @@ namespace Java.Util.Function
             return IExecute<R>("apply", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/BiFunction.html#andThen(java.util.function.Function)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/BiFunction.html#andThen(java.util.function.Function)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <typeparam name="V"></typeparam>
         /// <typeparam name="Arg0objectSuperR"><typeparamref name="R"/></typeparam>
         /// <typeparam name="Arg0ExtendsV"><typeparamref name="V"/></typeparam>
         /// <returns><see cref="Java.Util.Function.BiFunction"/></returns>
-        public override Java.Util.Function.BiFunction<T, U, V> AndThen<V, Arg0objectSuperR, Arg0ExtendsV>(Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV> arg0) where Arg0objectSuperR: R where Arg0ExtendsV: V
+        public override Java.Util.Function.BiFunction<T, U, V> AndThen<V, Arg0objectSuperR, Arg0ExtendsV>(Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV> arg0) where Arg0objectSuperR : R where Arg0ExtendsV : V
         {
             return IExecuteWithSignature<Java.Util.Function.BiFunctionDirect<T, U, V>, Java.Util.Function.BiFunction<T, U, V>>("andThen", "(Ljava/util/function/Function;)Ljava/util/function/BiFunction;", arg0);
         }

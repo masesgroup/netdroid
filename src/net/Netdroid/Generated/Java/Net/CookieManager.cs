@@ -30,7 +30,7 @@ namespace Java.Net
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/CookieManager.html#%3Cinit%3E(java.net.CookieStore,java.net.CookiePolicy)"/>
+        /// <see href="https://developer.android.com/reference/java/net/CookieManager.html#%3Cinit%3E(java.net.CookieStore,java.net.CookiePolicy)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.CookieStore"/></param>
         /// <param name="arg1"><see cref="Java.Net.CookiePolicy"/></param>
@@ -55,14 +55,15 @@ namespace Java.Net
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/CookieManager.html#getCookieStore()"/> 
+        /// <see href="https://developer.android.com/reference/java/net/CookieManager.html#getCookieStore()"/>
         /// </summary>
-        public Java.Net.CookieStore CookieStore
+        /// <returns><see cref="Java.Net.CookieStore"/></returns>
+        public Java.Net.CookieStore GetCookieStore()
         {
-            get { return IExecuteWithSignature<Java.Net.CookieStore>("getCookieStore", "()Ljava/net/CookieStore;"); }
+            return IExecuteWithSignature<Java.Net.CookieStore>("getCookieStore", "()Ljava/net/CookieStore;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/CookieManager.html#setCookiePolicy(java.net.CookiePolicy)"/>
+        /// <see href="https://developer.android.com/reference/java/net/CookieManager.html#setCookiePolicy(java.net.CookiePolicy)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.CookiePolicy"/></param>
         public void SetCookiePolicy(Java.Net.CookiePolicy arg0)

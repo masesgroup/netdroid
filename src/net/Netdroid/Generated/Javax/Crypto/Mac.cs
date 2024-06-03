@@ -42,7 +42,7 @@ namespace Javax.Crypto
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/Mac.html#getInstance(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/Mac.html#getInstance(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -54,7 +54,7 @@ namespace Javax.Crypto
             return SExecute<Javax.Crypto.Mac>(LocalBridgeClazz, "getInstance", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/Mac.html#getInstance(java.lang.String,java.security.Provider)"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/Mac.html#getInstance(java.lang.String,java.security.Provider)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Security.Provider"/></param>
@@ -65,7 +65,7 @@ namespace Javax.Crypto
             return SExecute<Javax.Crypto.Mac>(LocalBridgeClazz, "getInstance", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/Mac.html#getInstance(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/Mac.html#getInstance(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Crypto.Mac"/></returns>
@@ -79,28 +79,7 @@ namespace Javax.Crypto
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/Mac.html#getAlgorithm()"/> 
-        /// </summary>
-        public Java.Lang.String Algorithm
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAlgorithm", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/Mac.html#getMacLength()"/> 
-        /// </summary>
-        public int MacLength
-        {
-            get { return IExecuteWithSignature<int>("getMacLength", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/Mac.html#getProvider()"/> 
-        /// </summary>
-        public Java.Security.Provider Provider
-        {
-            get { return IExecuteWithSignature<Java.Security.Provider>("getProvider", "()Ljava/security/Provider;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/Mac.html#doFinal()"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/Mac.html#doFinal()"/>
         /// </summary>
         /// <returns><see cref="byte"/></returns>
         /// <exception cref="Java.Lang.IllegalStateException"/>
@@ -109,7 +88,7 @@ namespace Javax.Crypto
             return IExecuteWithSignatureArray<byte>("doFinal", "()[B");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/Mac.html#doFinal(byte[])"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/Mac.html#doFinal(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <returns><see cref="byte"/></returns>
@@ -119,7 +98,31 @@ namespace Javax.Crypto
             return IExecuteWithSignatureArray<byte>("doFinal", "([B)[B", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/Mac.html#doFinal(byte[],int)"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/Mac.html#getMacLength()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMacLength()
+        {
+            return IExecuteWithSignature<int>("getMacLength", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/crypto/Mac.html#getAlgorithm()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetAlgorithm()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getAlgorithm", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/crypto/Mac.html#getProvider()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Security.Provider"/></returns>
+        public Java.Security.Provider GetProvider()
+        {
+            return IExecuteWithSignature<Java.Security.Provider>("getProvider", "()Ljava/security/Provider;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/crypto/Mac.html#doFinal(byte[],int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -130,7 +133,7 @@ namespace Javax.Crypto
             IExecute("doFinal", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/Mac.html#init(java.security.Key,java.security.spec.AlgorithmParameterSpec)"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/Mac.html#init(java.security.Key,java.security.spec.AlgorithmParameterSpec)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Key"/></param>
         /// <param name="arg1"><see cref="Java.Security.Spec.AlgorithmParameterSpec"/></param>
@@ -141,7 +144,7 @@ namespace Javax.Crypto
             IExecute("init", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/Mac.html#init(java.security.Key)"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/Mac.html#init(java.security.Key)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Key"/></param>
         /// <exception cref="Java.Security.InvalidKeyException"/>
@@ -150,14 +153,14 @@ namespace Javax.Crypto
             IExecuteWithSignature("init", "(Ljava/security/Key;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/Mac.html#reset()"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/Mac.html#reset()"/>
         /// </summary>
         public void Reset()
         {
             IExecuteWithSignature("reset", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/Mac.html#update(byte)"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/Mac.html#update(byte)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <exception cref="Java.Lang.IllegalStateException"/>
@@ -166,7 +169,7 @@ namespace Javax.Crypto
             IExecuteWithSignature("update", "(B)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/Mac.html#update(byte[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/Mac.html#update(byte[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -177,7 +180,7 @@ namespace Javax.Crypto
             IExecute("update", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/Mac.html#update(byte[])"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/Mac.html#update(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <exception cref="Java.Lang.IllegalStateException"/>
@@ -186,7 +189,7 @@ namespace Javax.Crypto
             IExecuteWithSignature("update", "([B)V", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/Mac.html#update(java.nio.ByteBuffer)"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/Mac.html#update(java.nio.ByteBuffer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         public void Update(Java.Nio.ByteBuffer arg0)

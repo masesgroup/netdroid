@@ -60,19 +60,20 @@ namespace Android.Speech
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/speech/AlternativeSpans.html#getSpans()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Speech.AlternativeSpan> Spans
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Speech.AlternativeSpan>>("getSpans", "()Ljava/util/List;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/speech/AlternativeSpans.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/speech/AlternativeSpans.html#getSpans()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Speech.AlternativeSpan> GetSpans()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Speech.AlternativeSpan>>("getSpans", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/speech/AlternativeSpans.html#writeToParcel(android.os.Parcel,int)"/>

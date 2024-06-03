@@ -84,27 +84,6 @@ namespace Android.Service.Textservice
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/service/textservice/SpellCheckerService.Session.html#getBundle()"/> 
-            /// </summary>
-            public Android.Os.Bundle Bundle
-            {
-                get { return IExecuteWithSignature<Android.Os.Bundle>("getBundle", "()Landroid/os/Bundle;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/service/textservice/SpellCheckerService.Session.html#getLocale()"/> 
-            /// </summary>
-            public Java.Lang.String Locale
-            {
-                get { return IExecuteWithSignature<Java.Lang.String>("getLocale", "()Ljava/lang/String;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/service/textservice/SpellCheckerService.Session.html#getSupportedAttributes()"/> 
-            /// </summary>
-            public int SupportedAttributes
-            {
-                get { return IExecuteWithSignature<int>("getSupportedAttributes", "()I"); }
-            }
-            /// <summary>
             /// <see href="https://developer.android.com/reference/android/service/textservice/SpellCheckerService.Session.html#onGetSuggestions(android.view.textservice.TextInfo,int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.View.Textservice.TextInfo"/></param>
@@ -120,6 +99,14 @@ namespace Android.Service.Textservice
             public void OnCreate()
             {
                 IExecuteWithSignature("onCreate", "()V");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/service/textservice/SpellCheckerService.Session.html#getBundle()"/>
+            /// </summary>
+            /// <returns><see cref="Android.Os.Bundle"/></returns>
+            public Android.Os.Bundle GetBundle()
+            {
+                return IExecuteWithSignature<Android.Os.Bundle>("getBundle", "()Landroid/os/Bundle;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/service/textservice/SpellCheckerService.Session.html#onGetSentenceSuggestionsMultiple(android.view.textservice.TextInfo[],int)"/>
@@ -141,6 +128,22 @@ namespace Android.Service.Textservice
             public Android.View.Textservice.SuggestionsInfo[] OnGetSuggestionsMultiple(Android.View.Textservice.TextInfo[] arg0, int arg1, bool arg2)
             {
                 return IExecuteArray<Android.View.Textservice.SuggestionsInfo>("onGetSuggestionsMultiple", arg0, arg1, arg2);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/service/textservice/SpellCheckerService.Session.html#getSupportedAttributes()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetSupportedAttributes()
+            {
+                return IExecuteWithSignature<int>("getSupportedAttributes", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/service/textservice/SpellCheckerService.Session.html#getLocale()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetLocale()
+            {
+                return IExecuteWithSignature<Java.Lang.String>("getLocale", "()Ljava/lang/String;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/service/textservice/SpellCheckerService.Session.html#onCancel()"/>

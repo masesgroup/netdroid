@@ -42,7 +42,7 @@ namespace Java.Nio.Channels
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/Selector.html#open()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/Selector.html#open()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.Channels.Selector"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -55,7 +55,7 @@ namespace Java.Nio.Channels
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/Selector.html#isOpen()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/Selector.html#isOpen()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsOpen()
@@ -63,7 +63,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<bool>("isOpen", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/Selector.html#select()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/Selector.html#select()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -72,7 +72,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<int>("select", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/Selector.html#select(long)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/Selector.html#select(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="int"/></returns>
@@ -82,7 +82,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<int>("select", "(J)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/Selector.html#selectNow()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/Selector.html#selectNow()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -91,7 +91,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<int>("selectNow", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/Selector.html#wakeup()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/Selector.html#wakeup()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.Channels.Selector"/></returns>
         public Java.Nio.Channels.Selector Wakeup()
@@ -99,7 +99,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<Java.Nio.Channels.Selector>("wakeup", "()Ljava/nio/channels/Selector;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/Selector.html#provider()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/Selector.html#provider()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.Channels.Spi.SelectorProvider"/></returns>
         public Java.Nio.Channels.Spi.SelectorProvider Provider()
@@ -107,7 +107,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<Java.Nio.Channels.Spi.SelectorProvider>("provider", "()Ljava/nio/channels/spi/SelectorProvider;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/Selector.html#keys()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/Selector.html#keys()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<Java.Nio.Channels.SelectionKey> Keys()
@@ -115,7 +115,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<Java.Util.Set<Java.Nio.Channels.SelectionKey>>("keys", "()Ljava/util/Set;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/Selector.html#selectedKeys()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/Selector.html#selectedKeys()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<Java.Nio.Channels.SelectionKey> SelectedKeys()
@@ -123,7 +123,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<Java.Util.Set<Java.Nio.Channels.SelectionKey>>("selectedKeys", "()Ljava/util/Set;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/Selector.html#close()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/Selector.html#close()"/>
         /// </summary>
         /// <exception cref="Java.Io.IOException"/>
         public void Close()
@@ -131,7 +131,7 @@ namespace Java.Nio.Channels
             IExecuteWithSignature("close", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/Selector.html#select(java.util.function.Consumer,long)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/Selector.html#select(java.util.function.Consumer,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -142,7 +142,7 @@ namespace Java.Nio.Channels
             return IExecute<int>("select", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/Selector.html#select(java.util.function.Consumer)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/Selector.html#select(java.util.function.Consumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
         /// <returns><see cref="int"/></returns>
@@ -152,7 +152,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<int>("select", "(Ljava/util/function/Consumer;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/Selector.html#selectNow(java.util.function.Consumer)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/Selector.html#selectNow(java.util.function.Consumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
         /// <returns><see cref="int"/></returns>

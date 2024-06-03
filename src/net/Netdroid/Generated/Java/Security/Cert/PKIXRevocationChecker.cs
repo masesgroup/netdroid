@@ -46,46 +46,92 @@ namespace Java.Security.Cert
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/PKIXRevocationChecker.html#getOcspExtensions()"/> <see href="https://developer.android.com/reference/java.base/java/security/cert/PKIXRevocationChecker.html#setOcspExtensions(java.util.List)"/>
+        /// <see href="https://developer.android.com/reference/java/security/cert/PKIXRevocationChecker.html#getSoftFailExceptions()"/>
         /// </summary>
-        public Java.Util.List<Java.Security.Cert.Extension> OcspExtensions
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Security.Cert.CertPathValidatorException> GetSoftFailExceptions()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Security.Cert.Extension>>("getOcspExtensions", "()Ljava/util/List;"); } set { IExecuteWithSignature("setOcspExtensions", "(Ljava/util/List;)V", value); }
+            return IExecuteWithSignature<Java.Util.List<Java.Security.Cert.CertPathValidatorException>>("getSoftFailExceptions", "()Ljava/util/List;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/PKIXRevocationChecker.html#getOcspResponder()"/> <see href="https://developer.android.com/reference/java.base/java/security/cert/PKIXRevocationChecker.html#setOcspResponder(java.net.URI)"/>
+        /// <see href="https://developer.android.com/reference/java/security/cert/PKIXRevocationChecker.html#getOcspResponder()"/>
         /// </summary>
-        public Java.Net.URI OcspResponder
+        /// <returns><see cref="Java.Net.URI"/></returns>
+        public Java.Net.URI GetOcspResponder()
         {
-            get { return IExecuteWithSignature<Java.Net.URI>("getOcspResponder", "()Ljava/net/URI;"); } set { IExecuteWithSignature("setOcspResponder", "(Ljava/net/URI;)V", value); }
+            return IExecuteWithSignature<Java.Net.URI>("getOcspResponder", "()Ljava/net/URI;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/PKIXRevocationChecker.html#getOcspResponderCert()"/> <see href="https://developer.android.com/reference/java.base/java/security/cert/PKIXRevocationChecker.html#setOcspResponderCert(java.security.cert.X509Certificate)"/>
+        /// <see href="https://developer.android.com/reference/java/security/cert/PKIXRevocationChecker.html#getOcspResponderCert()"/>
         /// </summary>
-        public Java.Security.Cert.X509Certificate OcspResponderCert
+        /// <returns><see cref="Java.Security.Cert.X509Certificate"/></returns>
+        public Java.Security.Cert.X509Certificate GetOcspResponderCert()
         {
-            get { return IExecuteWithSignature<Java.Security.Cert.X509Certificate>("getOcspResponderCert", "()Ljava/security/cert/X509Certificate;"); } set { IExecuteWithSignature("setOcspResponderCert", "(Ljava/security/cert/X509Certificate;)V", value); }
+            return IExecuteWithSignature<Java.Security.Cert.X509Certificate>("getOcspResponderCert", "()Ljava/security/cert/X509Certificate;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/PKIXRevocationChecker.html#getOcspResponses()"/> <see href="https://developer.android.com/reference/java.base/java/security/cert/PKIXRevocationChecker.html#setOcspResponses(java.util.Map)"/>
+        /// <see href="https://developer.android.com/reference/java/security/cert/PKIXRevocationChecker.html#getOcspExtensions()"/>
         /// </summary>
-        public Java.Util.Map<Java.Security.Cert.X509Certificate, byte[]> OcspResponses
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Security.Cert.Extension> GetOcspExtensions()
         {
-            get { return IExecuteWithSignature<Java.Util.Map<Java.Security.Cert.X509Certificate, byte[]>>("getOcspResponses", "()Ljava/util/Map;"); } set { IExecuteWithSignature("setOcspResponses", "(Ljava/util/Map;)V", value); }
+            return IExecuteWithSignature<Java.Util.List<Java.Security.Cert.Extension>>("getOcspExtensions", "()Ljava/util/List;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/PKIXRevocationChecker.html#getOptions()"/> <see href="https://developer.android.com/reference/java.base/java/security/cert/PKIXRevocationChecker.html#setOptions(java.util.Set)"/>
+        /// <see href="https://developer.android.com/reference/java/security/cert/PKIXRevocationChecker.html#getOcspResponses()"/>
         /// </summary>
-        public Java.Util.Set<Java.Security.Cert.PKIXRevocationChecker.Option> Options
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        public Java.Util.Map<Java.Security.Cert.X509Certificate, byte[]> GetOcspResponses()
         {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Security.Cert.PKIXRevocationChecker.Option>>("getOptions", "()Ljava/util/Set;"); } set { IExecuteWithSignature("setOptions", "(Ljava/util/Set;)V", value); }
+            return IExecuteWithSignature<Java.Util.Map<Java.Security.Cert.X509Certificate, byte[]>>("getOcspResponses", "()Ljava/util/Map;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/PKIXRevocationChecker.html#getSoftFailExceptions()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/cert/PKIXRevocationChecker.html#getOptions()"/>
         /// </summary>
-        public Java.Util.List<Java.Security.Cert.CertPathValidatorException> SoftFailExceptions
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Security.Cert.PKIXRevocationChecker.Option> GetOptions()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Security.Cert.CertPathValidatorException>>("getSoftFailExceptions", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Java.Util.Set<Java.Security.Cert.PKIXRevocationChecker.Option>>("getOptions", "()Ljava/util/Set;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/cert/PKIXRevocationChecker.html#setOcspExtensions(java.util.List)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        public void SetOcspExtensions(Java.Util.List<Java.Security.Cert.Extension> arg0)
+        {
+            IExecuteWithSignature("setOcspExtensions", "(Ljava/util/List;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/cert/PKIXRevocationChecker.html#setOcspResponder(java.net.URI)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.URI"/></param>
+        public void SetOcspResponder(Java.Net.URI arg0)
+        {
+            IExecuteWithSignature("setOcspResponder", "(Ljava/net/URI;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/cert/PKIXRevocationChecker.html#setOcspResponderCert(java.security.cert.X509Certificate)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.Cert.X509Certificate"/></param>
+        public void SetOcspResponderCert(Java.Security.Cert.X509Certificate arg0)
+        {
+            IExecuteWithSignature("setOcspResponderCert", "(Ljava/security/cert/X509Certificate;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/cert/PKIXRevocationChecker.html#setOcspResponses(java.util.Map)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+        public void SetOcspResponses(Java.Util.Map<Java.Security.Cert.X509Certificate, byte[]> arg0)
+        {
+            IExecuteWithSignature("setOcspResponses", "(Ljava/util/Map;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/cert/PKIXRevocationChecker.html#setOptions(java.util.Set)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Set"/></param>
+        public void SetOptions(Java.Util.Set<Java.Security.Cert.PKIXRevocationChecker.Option> arg0)
+        {
+            IExecuteWithSignature("setOptions", "(Ljava/util/Set;)V", arg0);
         }
 
         #endregion
@@ -104,25 +150,25 @@ namespace Java.Security.Cert
 
             #region Fields
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/security/cert/PKIXRevocationChecker.Option.html#NO_FALLBACK"/>
+            /// <see href="https://developer.android.com/reference/java/security/cert/PKIXRevocationChecker.Option.html#NO_FALLBACK"/>
             /// </summary>
             public static Java.Security.Cert.PKIXRevocationChecker.Option NO_FALLBACK { get { if (!_NO_FALLBACKReady) { _NO_FALLBACKContent = SGetField<Java.Security.Cert.PKIXRevocationChecker.Option>(LocalBridgeClazz, "NO_FALLBACK"); _NO_FALLBACKReady = true; } return _NO_FALLBACKContent; } }
             private static Java.Security.Cert.PKIXRevocationChecker.Option _NO_FALLBACKContent = default;
             private static bool _NO_FALLBACKReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/security/cert/PKIXRevocationChecker.Option.html#ONLY_END_ENTITY"/>
+            /// <see href="https://developer.android.com/reference/java/security/cert/PKIXRevocationChecker.Option.html#ONLY_END_ENTITY"/>
             /// </summary>
             public static Java.Security.Cert.PKIXRevocationChecker.Option ONLY_END_ENTITY { get { if (!_ONLY_END_ENTITYReady) { _ONLY_END_ENTITYContent = SGetField<Java.Security.Cert.PKIXRevocationChecker.Option>(LocalBridgeClazz, "ONLY_END_ENTITY"); _ONLY_END_ENTITYReady = true; } return _ONLY_END_ENTITYContent; } }
             private static Java.Security.Cert.PKIXRevocationChecker.Option _ONLY_END_ENTITYContent = default;
             private static bool _ONLY_END_ENTITYReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/security/cert/PKIXRevocationChecker.Option.html#PREFER_CRLS"/>
+            /// <see href="https://developer.android.com/reference/java/security/cert/PKIXRevocationChecker.Option.html#PREFER_CRLS"/>
             /// </summary>
             public static Java.Security.Cert.PKIXRevocationChecker.Option PREFER_CRLS { get { if (!_PREFER_CRLSReady) { _PREFER_CRLSContent = SGetField<Java.Security.Cert.PKIXRevocationChecker.Option>(LocalBridgeClazz, "PREFER_CRLS"); _PREFER_CRLSReady = true; } return _PREFER_CRLSContent; } }
             private static Java.Security.Cert.PKIXRevocationChecker.Option _PREFER_CRLSContent = default;
             private static bool _PREFER_CRLSReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/security/cert/PKIXRevocationChecker.Option.html#SOFT_FAIL"/>
+            /// <see href="https://developer.android.com/reference/java/security/cert/PKIXRevocationChecker.Option.html#SOFT_FAIL"/>
             /// </summary>
             public static Java.Security.Cert.PKIXRevocationChecker.Option SOFT_FAIL { get { if (!_SOFT_FAILReady) { _SOFT_FAILContent = SGetField<Java.Security.Cert.PKIXRevocationChecker.Option>(LocalBridgeClazz, "SOFT_FAIL"); _SOFT_FAILReady = true; } return _SOFT_FAILContent; } }
             private static Java.Security.Cert.PKIXRevocationChecker.Option _SOFT_FAILContent = default;
@@ -132,7 +178,7 @@ namespace Java.Security.Cert
 
             #region Static methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/security/cert/PKIXRevocationChecker.Option.html#valueOf(java.lang.String)"/>
+            /// <see href="https://developer.android.com/reference/java/security/cert/PKIXRevocationChecker.Option.html#valueOf(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="Java.Security.Cert.PKIXRevocationChecker.Option"/></returns>
@@ -141,7 +187,7 @@ namespace Java.Security.Cert
                 return SExecuteWithSignature<Java.Security.Cert.PKIXRevocationChecker.Option>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/security/cert/PKIXRevocationChecker$Option;", arg0);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/security/cert/PKIXRevocationChecker.Option.html#values()"/>
+            /// <see href="https://developer.android.com/reference/java/security/cert/PKIXRevocationChecker.Option.html#values()"/>
             /// </summary>
             /// <returns><see cref="Java.Security.Cert.PKIXRevocationChecker.Option"/></returns>
             public static Java.Security.Cert.PKIXRevocationChecker.Option[] Values()

@@ -183,48 +183,6 @@ namespace Android.App
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/ActivityOptions.html#getLaunchBounds()"/> 
-        /// </summary>
-        public Android.Graphics.Rect LaunchBounds
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Rect>("getLaunchBounds", "()Landroid/graphics/Rect;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/ActivityOptions.html#getLaunchDisplayId()"/> 
-        /// </summary>
-        public int LaunchDisplayId
-        {
-            get { return IExecuteWithSignature<int>("getLaunchDisplayId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/ActivityOptions.html#getLockTaskMode()"/> 
-        /// </summary>
-        public bool LockTaskMode
-        {
-            get { return IExecuteWithSignature<bool>("getLockTaskMode", "()Z"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/ActivityOptions.html#getPendingIntentBackgroundActivityStartMode()"/> 
-        /// </summary>
-        public int PendingIntentBackgroundActivityStartMode
-        {
-            get { return IExecuteWithSignature<int>("getPendingIntentBackgroundActivityStartMode", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/ActivityOptions.html#getPendingIntentCreatorBackgroundActivityStartMode()"/> 
-        /// </summary>
-        public int PendingIntentCreatorBackgroundActivityStartMode
-        {
-            get { return IExecuteWithSignature<int>("getPendingIntentCreatorBackgroundActivityStartMode", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/ActivityOptions.html#getSplashScreenStyle()"/> 
-        /// </summary>
-        public int SplashScreenStyle
-        {
-            get { return IExecuteWithSignature<int>("getSplashScreenStyle", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ActivityOptions.html#setAppVerificationBundle(android.os.Bundle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Os.Bundle"/></param>
@@ -297,6 +255,14 @@ namespace Android.App
             return IExecuteWithSignature<Android.App.ActivityOptions>("setSplashScreenStyle", "(I)Landroid/app/ActivityOptions;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ActivityOptions.html#getLaunchBounds()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Graphics.Rect"/></returns>
+        public Android.Graphics.Rect GetLaunchBounds()
+        {
+            return IExecuteWithSignature<Android.Graphics.Rect>("getLaunchBounds", "()Landroid/graphics/Rect;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ActivityOptions.html#toBundle()"/>
         /// </summary>
         /// <returns><see cref="Android.Os.Bundle"/></returns>
@@ -305,10 +271,18 @@ namespace Android.App
             return IExecuteWithSignature<Android.Os.Bundle>("toBundle", "()Landroid/os/Bundle;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ActivityOptions.html#getLockTaskMode()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetLockTaskMode()
+        {
+            return IExecuteWithSignature<bool>("getLockTaskMode", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ActivityOptions.html#isPendingIntentBackgroundActivityLaunchAllowed()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsPendingIntentBackgroundActivityLaunchAllowed()
         {
             return IExecuteWithSignature<bool>("isPendingIntentBackgroundActivityLaunchAllowed", "()Z");
@@ -322,6 +296,38 @@ namespace Android.App
             return IExecuteWithSignature<bool>("isShareIdentityEnabled", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ActivityOptions.html#getLaunchDisplayId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetLaunchDisplayId()
+        {
+            return IExecuteWithSignature<int>("getLaunchDisplayId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ActivityOptions.html#getPendingIntentBackgroundActivityStartMode()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPendingIntentBackgroundActivityStartMode()
+        {
+            return IExecuteWithSignature<int>("getPendingIntentBackgroundActivityStartMode", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ActivityOptions.html#getPendingIntentCreatorBackgroundActivityStartMode()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPendingIntentCreatorBackgroundActivityStartMode()
+        {
+            return IExecuteWithSignature<int>("getPendingIntentCreatorBackgroundActivityStartMode", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ActivityOptions.html#getSplashScreenStyle()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSplashScreenStyle()
+        {
+            return IExecuteWithSignature<int>("getSplashScreenStyle", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ActivityOptions.html#requestUsageTimeReport(android.app.PendingIntent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.App.PendingIntent"/></param>
@@ -333,7 +339,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/ActivityOptions.html#setPendingIntentBackgroundActivityLaunchAllowed(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetPendingIntentBackgroundActivityLaunchAllowed(bool arg0)
         {
             IExecuteWithSignature("setPendingIntentBackgroundActivityLaunchAllowed", "(Z)V", arg0);

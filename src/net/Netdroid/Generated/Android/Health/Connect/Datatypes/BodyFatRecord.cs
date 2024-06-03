@@ -46,11 +46,12 @@ namespace Android.Health.Connect.Datatypes
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/BodyFatRecord.html#getPercentage()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/BodyFatRecord.html#getPercentage()"/>
         /// </summary>
-        public Android.Health.Connect.Datatypes.Units.Percentage Percentage
+        /// <returns><see cref="Android.Health.Connect.Datatypes.Units.Percentage"/></returns>
+        public Android.Health.Connect.Datatypes.Units.Percentage GetPercentage()
         {
-            get { return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Percentage>("getPercentage", "()Landroid/health/connect/datatypes/units/Percentage;"); }
+            return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Percentage>("getPercentage", "()Landroid/health/connect/datatypes/units/Percentage;");
         }
 
         #endregion

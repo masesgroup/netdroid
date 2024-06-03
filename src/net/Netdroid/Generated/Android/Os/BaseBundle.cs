@@ -159,7 +159,7 @@ namespace Android.Os
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="object"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public object Get(Java.Lang.String arg0)
         {
             return IExecuteWithSignature("get", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);

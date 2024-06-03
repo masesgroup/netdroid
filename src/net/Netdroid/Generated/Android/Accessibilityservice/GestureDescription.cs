@@ -42,37 +42,25 @@ namespace Android.Accessibilityservice
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/accessibilityservice/GestureDescription.html#getMaxGestureDuration()"/> 
+        /// <see href="https://developer.android.com/reference/android/accessibilityservice/GestureDescription.html#getMaxStrokeCount()"/>
         /// </summary>
-        public static long MaxGestureDuration
+        /// <returns><see cref="int"/></returns>
+        public static int GetMaxStrokeCount()
         {
-            get { return SExecuteWithSignature<long>(LocalBridgeClazz, "getMaxGestureDuration", "()J"); }
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getMaxStrokeCount", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/accessibilityservice/GestureDescription.html#getMaxStrokeCount()"/> 
+        /// <see href="https://developer.android.com/reference/android/accessibilityservice/GestureDescription.html#getMaxGestureDuration()"/>
         /// </summary>
-        public static int MaxStrokeCount
+        /// <returns><see cref="long"/></returns>
+        public static long GetMaxGestureDuration()
         {
-            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getMaxStrokeCount", "()I"); }
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "getMaxGestureDuration", "()J");
         }
 
         #endregion
 
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/accessibilityservice/GestureDescription.html#getDisplayId()"/> 
-        /// </summary>
-        public int DisplayId
-        {
-            get { return IExecuteWithSignature<int>("getDisplayId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/accessibilityservice/GestureDescription.html#getStrokeCount()"/> 
-        /// </summary>
-        public int StrokeCount
-        {
-            get { return IExecuteWithSignature<int>("getStrokeCount", "()I"); }
-        }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/accessibilityservice/GestureDescription.html#getStroke(int)"/>
         /// </summary>
@@ -81,6 +69,22 @@ namespace Android.Accessibilityservice
         public Android.Accessibilityservice.GestureDescription.StrokeDescription GetStroke(int arg0)
         {
             return IExecuteWithSignature<Android.Accessibilityservice.GestureDescription.StrokeDescription>("getStroke", "(I)Landroid/accessibilityservice/GestureDescription$StrokeDescription;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/accessibilityservice/GestureDescription.html#getDisplayId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDisplayId()
+        {
+            return IExecuteWithSignature<int>("getDisplayId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/accessibilityservice/GestureDescription.html#getStrokeCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetStrokeCount()
+        {
+            return IExecuteWithSignature<int>("getStrokeCount", "()I");
         }
 
         #endregion
@@ -185,27 +189,6 @@ namespace Android.Accessibilityservice
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/accessibilityservice/GestureDescription.StrokeDescription.html#getDuration()"/> 
-            /// </summary>
-            public long Duration
-            {
-                get { return IExecuteWithSignature<long>("getDuration", "()J"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/accessibilityservice/GestureDescription.StrokeDescription.html#getPath()"/> 
-            /// </summary>
-            public Android.Graphics.Path Path
-            {
-                get { return IExecuteWithSignature<Android.Graphics.Path>("getPath", "()Landroid/graphics/Path;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/accessibilityservice/GestureDescription.StrokeDescription.html#getStartTime()"/> 
-            /// </summary>
-            public long StartTime
-            {
-                get { return IExecuteWithSignature<long>("getStartTime", "()J"); }
-            }
-            /// <summary>
             /// <see href="https://developer.android.com/reference/android/accessibilityservice/GestureDescription.StrokeDescription.html#continueStroke(android.graphics.Path,long,long,boolean)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Graphics.Path"/></param>
@@ -218,12 +201,36 @@ namespace Android.Accessibilityservice
                 return IExecute<Android.Accessibilityservice.GestureDescription.StrokeDescription>("continueStroke", arg0, arg1, arg2, arg3);
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/accessibilityservice/GestureDescription.StrokeDescription.html#getPath()"/>
+            /// </summary>
+            /// <returns><see cref="Android.Graphics.Path"/></returns>
+            public Android.Graphics.Path GetPath()
+            {
+                return IExecuteWithSignature<Android.Graphics.Path>("getPath", "()Landroid/graphics/Path;");
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/accessibilityservice/GestureDescription.StrokeDescription.html#willContinue()"/>
             /// </summary>
             /// <returns><see cref="bool"/></returns>
             public bool WillContinue()
             {
                 return IExecuteWithSignature<bool>("willContinue", "()Z");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/accessibilityservice/GestureDescription.StrokeDescription.html#getDuration()"/>
+            /// </summary>
+            /// <returns><see cref="long"/></returns>
+            public long GetDuration()
+            {
+                return IExecuteWithSignature<long>("getDuration", "()J");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/accessibilityservice/GestureDescription.StrokeDescription.html#getStartTime()"/>
+            /// </summary>
+            /// <returns><see cref="long"/></returns>
+            public long GetStartTime()
+            {
+                return IExecuteWithSignature<long>("getStartTime", "()J");
             }
 
             #endregion

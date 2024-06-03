@@ -148,25 +148,28 @@ namespace Android.Opengl
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/opengl/ETC1Util.ETC1Texture.html#getData()"/> 
+            /// <see href="https://developer.android.com/reference/android/opengl/ETC1Util.ETC1Texture.html#getHeight()"/>
             /// </summary>
-            public Java.Nio.ByteBuffer Data
+            /// <returns><see cref="int"/></returns>
+            public int GetHeight()
             {
-                get { return IExecuteWithSignature<Java.Nio.ByteBuffer>("getData", "()Ljava/nio/ByteBuffer;"); }
+                return IExecuteWithSignature<int>("getHeight", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/opengl/ETC1Util.ETC1Texture.html#getHeight()"/> 
+            /// <see href="https://developer.android.com/reference/android/opengl/ETC1Util.ETC1Texture.html#getWidth()"/>
             /// </summary>
-            public int Height
+            /// <returns><see cref="int"/></returns>
+            public int GetWidth()
             {
-                get { return IExecuteWithSignature<int>("getHeight", "()I"); }
+                return IExecuteWithSignature<int>("getWidth", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/opengl/ETC1Util.ETC1Texture.html#getWidth()"/> 
+            /// <see href="https://developer.android.com/reference/android/opengl/ETC1Util.ETC1Texture.html#getData()"/>
             /// </summary>
-            public int Width
+            /// <returns><see cref="Java.Nio.ByteBuffer"/></returns>
+            public Java.Nio.ByteBuffer GetData()
             {
-                get { return IExecuteWithSignature<int>("getWidth", "()I"); }
+                return IExecuteWithSignature<Java.Nio.ByteBuffer>("getData", "()Ljava/nio/ByteBuffer;");
             }
 
             #endregion

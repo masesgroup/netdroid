@@ -64,11 +64,12 @@ namespace Android.Widget
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Filterable.html#getFilter()"/> 
+        /// <see href="https://developer.android.com/reference/android/widget/Filterable.html#getFilter()"/>
         /// </summary>
-        public Android.Widget.Filter Filter
+        /// <returns><see cref="Android.Widget.Filter"/></returns>
+        public Android.Widget.Filter GetFilter()
         {
-            get { return IExecuteWithSignature<Android.Widget.Filter>("getFilter", "()Landroid/widget/Filter;"); }
+            return IExecuteWithSignature<Android.Widget.Filter>("getFilter", "()Landroid/widget/Filter;");
         }
 
         #endregion

@@ -73,7 +73,7 @@ namespace Org.Apache.Http.Conn.Scheme
         /// <returns><see cref="Java.Net.Socket"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         /// <exception cref="Java.Net.UnknownHostException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Net.Socket CreateSocket(Java.Net.Socket arg0, Java.Lang.String arg1, int arg2, bool arg3)
         {
             return IExecute<Java.Net.Socket>("createSocket", arg0, arg1, arg2, arg3);

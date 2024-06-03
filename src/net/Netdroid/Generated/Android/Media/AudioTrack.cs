@@ -53,7 +53,7 @@ namespace Android.Media
         /// <param name="arg5"><see cref="int"/></param>
         /// <param name="arg6"><see cref="int"/></param>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public AudioTrack(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6)
             : base(arg0, arg1, arg2, arg3, arg4, arg5, arg6)
         {
@@ -68,7 +68,7 @@ namespace Android.Media
         /// <param name="arg4"><see cref="int"/></param>
         /// <param name="arg5"><see cref="int"/></param>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public AudioTrack(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5)
             : base(arg0, arg1, arg2, arg3, arg4, arg5)
         {
@@ -274,29 +274,31 @@ namespace Android.Media
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#getMaxVolume()"/> 
-        /// </summary>
-        public static float MaxVolume
-        {
-            get { return SExecuteWithSignature<float>(LocalBridgeClazz, "getMaxVolume", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#getMinVolume()"/> 
-        /// </summary>
-        public static float MinVolume
-        {
-            get { return SExecuteWithSignature<float>(LocalBridgeClazz, "getMinVolume", "()F"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#isDirectPlaybackSupported(android.media.AudioFormat,android.media.AudioAttributes)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Media.AudioFormat"/></param>
         /// <param name="arg1"><see cref="Android.Media.AudioAttributes"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static bool IsDirectPlaybackSupported(Android.Media.AudioFormat arg0, Android.Media.AudioAttributes arg1)
         {
             return SExecute<bool>(LocalBridgeClazz, "isDirectPlaybackSupported", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#getMaxVolume()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public static float GetMaxVolume()
+        {
+            return SExecuteWithSignature<float>(LocalBridgeClazz, "getMaxVolume", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#getMinVolume()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public static float GetMinVolume()
+        {
+            return SExecuteWithSignature<float>(LocalBridgeClazz, "getMinVolume", "()F");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#getMinBufferSize(int,int,int)"/>
@@ -323,200 +325,52 @@ namespace Android.Media
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#getAudioAttributes()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#getAudioAttributes()"/>
         /// </summary>
-        public Android.Media.AudioAttributes AudioAttributes
+        /// <returns><see cref="Android.Media.AudioAttributes"/></returns>
+        public Android.Media.AudioAttributes GetAudioAttributes()
         {
-            get { return IExecuteWithSignature<Android.Media.AudioAttributes>("getAudioAttributes", "()Landroid/media/AudioAttributes;"); }
+            return IExecuteWithSignature<Android.Media.AudioAttributes>("getAudioAttributes", "()Landroid/media/AudioAttributes;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#getAudioDescriptionMixLeveldB()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#getPreferredDevice()"/>
         /// </summary>
-        public float AudioDescriptionMixLeveldB
+        /// <returns><see cref="Android.Media.AudioDeviceInfo"/></returns>
+        public Android.Media.AudioDeviceInfo GetPreferredDevice()
         {
-            get { return IExecuteWithSignature<float>("getAudioDescriptionMixLeveldB", "()F"); }
+            return IExecuteWithSignature<Android.Media.AudioDeviceInfo>("getPreferredDevice", "()Landroid/media/AudioDeviceInfo;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#getAudioFormat()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#getRoutedDevice()"/>
         /// </summary>
-        public int AudioFormat
+        /// <returns><see cref="Android.Media.AudioDeviceInfo"/></returns>
+        public Android.Media.AudioDeviceInfo GetRoutedDevice()
         {
-            get { return IExecuteWithSignature<int>("getAudioFormat", "()I"); }
+            return IExecuteWithSignature<Android.Media.AudioDeviceInfo>("getRoutedDevice", "()Landroid/media/AudioDeviceInfo;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#getAudioSessionId()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#getFormat()"/>
         /// </summary>
-        public int AudioSessionId
+        /// <returns><see cref="Android.Media.AudioFormat"/></returns>
+        public Android.Media.AudioFormat GetFormat()
         {
-            get { return IExecuteWithSignature<int>("getAudioSessionId", "()I"); }
+            return IExecuteWithSignature<Android.Media.AudioFormat>("getFormat", "()Landroid/media/AudioFormat;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#getBufferCapacityInFrames()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#getLogSessionId()"/>
         /// </summary>
-        public int BufferCapacityInFrames
+        /// <returns><see cref="Android.Media.Metrics.LogSessionId"/></returns>
+        public Android.Media.Metrics.LogSessionId GetLogSessionId()
         {
-            get { return IExecuteWithSignature<int>("getBufferCapacityInFrames", "()I"); }
+            return IExecuteWithSignature<Android.Media.Metrics.LogSessionId>("getLogSessionId", "()Landroid/media/metrics/LogSessionId;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#getBufferSizeInFrames()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#getPlaybackParams()"/>
         /// </summary>
-        public int BufferSizeInFrames
+        /// <returns><see cref="Android.Media.PlaybackParams"/></returns>
+        public Android.Media.PlaybackParams GetPlaybackParams()
         {
-            get { return IExecuteWithSignature<int>("getBufferSizeInFrames", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#getChannelConfiguration()"/> 
-        /// </summary>
-        public int ChannelConfiguration
-        {
-            get { return IExecuteWithSignature<int>("getChannelConfiguration", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#getChannelCount()"/> 
-        /// </summary>
-        public int ChannelCount
-        {
-            get { return IExecuteWithSignature<int>("getChannelCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#getDualMonoMode()"/> 
-        /// </summary>
-        public int DualMonoMode
-        {
-            get { return IExecuteWithSignature<int>("getDualMonoMode", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#getFormat()"/> 
-        /// </summary>
-        public Android.Media.AudioFormat Format
-        {
-            get { return IExecuteWithSignature<Android.Media.AudioFormat>("getFormat", "()Landroid/media/AudioFormat;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#getLogSessionId()"/> <see href="https://developer.android.com/reference/android/media/AudioTrack.html#setLogSessionId(android.media.metrics.LogSessionId)"/>
-        /// </summary>
-        public Android.Media.Metrics.LogSessionId LogSessionId
-        {
-            get { return IExecuteWithSignature<Android.Media.Metrics.LogSessionId>("getLogSessionId", "()Landroid/media/metrics/LogSessionId;"); } set { IExecuteWithSignature("setLogSessionId", "(Landroid/media/metrics/LogSessionId;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#getMetrics()"/> 
-        /// </summary>
-        public Android.Os.PersistableBundle Metrics
-        {
-            get { return IExecuteWithSignature<Android.Os.PersistableBundle>("getMetrics", "()Landroid/os/PersistableBundle;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#getNotificationMarkerPosition()"/> 
-        /// </summary>
-        public int NotificationMarkerPosition
-        {
-            get { return IExecuteWithSignature<int>("getNotificationMarkerPosition", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#getOffloadDelay()"/> 
-        /// </summary>
-        public int OffloadDelay
-        {
-            get { return IExecuteWithSignature<int>("getOffloadDelay", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#getOffloadPadding()"/> 
-        /// </summary>
-        public int OffloadPadding
-        {
-            get { return IExecuteWithSignature<int>("getOffloadPadding", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#getPerformanceMode()"/> 
-        /// </summary>
-        public int PerformanceMode
-        {
-            get { return IExecuteWithSignature<int>("getPerformanceMode", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#getPlaybackHeadPosition()"/> 
-        /// </summary>
-        public int PlaybackHeadPosition
-        {
-            get { return IExecuteWithSignature<int>("getPlaybackHeadPosition", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#getPlaybackParams()"/> <see href="https://developer.android.com/reference/android/media/AudioTrack.html#setPlaybackParams(android.media.PlaybackParams)"/>
-        /// </summary>
-        public Android.Media.PlaybackParams PlaybackParams
-        {
-            get { return IExecuteWithSignature<Android.Media.PlaybackParams>("getPlaybackParams", "()Landroid/media/PlaybackParams;"); } set { IExecuteWithSignature("setPlaybackParams", "(Landroid/media/PlaybackParams;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#getPlaybackRate()"/> 
-        /// </summary>
-        public int PlaybackRate
-        {
-            get { return IExecuteWithSignature<int>("getPlaybackRate", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#getPlayState()"/> 
-        /// </summary>
-        public int PlayState
-        {
-            get { return IExecuteWithSignature<int>("getPlayState", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#getPositionNotificationPeriod()"/> 
-        /// </summary>
-        public int PositionNotificationPeriod
-        {
-            get { return IExecuteWithSignature<int>("getPositionNotificationPeriod", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#getPreferredDevice()"/> 
-        /// </summary>
-        public Android.Media.AudioDeviceInfo PreferredDevice
-        {
-            get { return IExecuteWithSignature<Android.Media.AudioDeviceInfo>("getPreferredDevice", "()Landroid/media/AudioDeviceInfo;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#getRoutedDevice()"/> 
-        /// </summary>
-        public Android.Media.AudioDeviceInfo RoutedDevice
-        {
-            get { return IExecuteWithSignature<Android.Media.AudioDeviceInfo>("getRoutedDevice", "()Landroid/media/AudioDeviceInfo;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#getSampleRate()"/> 
-        /// </summary>
-        public int SampleRate
-        {
-            get { return IExecuteWithSignature<int>("getSampleRate", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#getStartThresholdInFrames()"/> 
-        /// </summary>
-        public int StartThresholdInFrames
-        {
-            get { return IExecuteWithSignature<int>("getStartThresholdInFrames", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#getState()"/> 
-        /// </summary>
-        public int State
-        {
-            get { return IExecuteWithSignature<int>("getState", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#getStreamType()"/> 
-        /// </summary>
-        public int StreamType
-        {
-            get { return IExecuteWithSignature<int>("getStreamType", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#getUnderrunCount()"/> 
-        /// </summary>
-        public int UnderrunCount
-        {
-            get { return IExecuteWithSignature<int>("getUnderrunCount", "()I"); }
+            return IExecuteWithSignature<Android.Media.PlaybackParams>("getPlaybackParams", "()Landroid/media/PlaybackParams;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#createVolumeShaper(android.media.VolumeShaper.Configuration)"/>
@@ -526,6 +380,14 @@ namespace Android.Media
         public Android.Media.VolumeShaper CreateVolumeShaper(Android.Media.VolumeShaper.Configuration arg0)
         {
             return IExecuteWithSignature<Android.Media.VolumeShaper>("createVolumeShaper", "(Landroid/media/VolumeShaper$Configuration;)Landroid/media/VolumeShaper;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#getMetrics()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Os.PersistableBundle"/></returns>
+        public Android.Os.PersistableBundle GetMetrics()
+        {
+            return IExecuteWithSignature<Android.Os.PersistableBundle>("getMetrics", "()Landroid/os/PersistableBundle;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#getTimestamp(android.media.AudioTimestamp)"/>
@@ -572,6 +434,14 @@ namespace Android.Media
             return IExecuteWithSignature<bool>("setPreferredDevice", "(Landroid/media/AudioDeviceInfo;)Z", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#getAudioDescriptionMixLeveldB()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetAudioDescriptionMixLeveldB()
+        {
+            return IExecuteWithSignature<float>("getAudioDescriptionMixLeveldB", "()F");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#attachAuxEffect(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -579,6 +449,166 @@ namespace Android.Media
         public int AttachAuxEffect(int arg0)
         {
             return IExecuteWithSignature<int>("attachAuxEffect", "(I)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#getAudioFormat()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetAudioFormat()
+        {
+            return IExecuteWithSignature<int>("getAudioFormat", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#getAudioSessionId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetAudioSessionId()
+        {
+            return IExecuteWithSignature<int>("getAudioSessionId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#getBufferCapacityInFrames()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetBufferCapacityInFrames()
+        {
+            return IExecuteWithSignature<int>("getBufferCapacityInFrames", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#getBufferSizeInFrames()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetBufferSizeInFrames()
+        {
+            return IExecuteWithSignature<int>("getBufferSizeInFrames", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#getChannelConfiguration()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetChannelConfiguration()
+        {
+            return IExecuteWithSignature<int>("getChannelConfiguration", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#getChannelCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetChannelCount()
+        {
+            return IExecuteWithSignature<int>("getChannelCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#getDualMonoMode()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDualMonoMode()
+        {
+            return IExecuteWithSignature<int>("getDualMonoMode", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#getNotificationMarkerPosition()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetNotificationMarkerPosition()
+        {
+            return IExecuteWithSignature<int>("getNotificationMarkerPosition", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#getOffloadDelay()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetOffloadDelay()
+        {
+            return IExecuteWithSignature<int>("getOffloadDelay", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#getOffloadPadding()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetOffloadPadding()
+        {
+            return IExecuteWithSignature<int>("getOffloadPadding", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#getPerformanceMode()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPerformanceMode()
+        {
+            return IExecuteWithSignature<int>("getPerformanceMode", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#getPlaybackHeadPosition()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPlaybackHeadPosition()
+        {
+            return IExecuteWithSignature<int>("getPlaybackHeadPosition", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#getPlaybackRate()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPlaybackRate()
+        {
+            return IExecuteWithSignature<int>("getPlaybackRate", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#getPlayState()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPlayState()
+        {
+            return IExecuteWithSignature<int>("getPlayState", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#getPositionNotificationPeriod()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPositionNotificationPeriod()
+        {
+            return IExecuteWithSignature<int>("getPositionNotificationPeriod", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#getSampleRate()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSampleRate()
+        {
+            return IExecuteWithSignature<int>("getSampleRate", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#getStartThresholdInFrames()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetStartThresholdInFrames()
+        {
+            return IExecuteWithSignature<int>("getStartThresholdInFrames", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#getState()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetState()
+        {
+            return IExecuteWithSignature<int>("getState", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#getStreamType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetStreamType()
+        {
+            return IExecuteWithSignature<int>("getStreamType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#getUnderrunCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetUnderrunCount()
+        {
+            return IExecuteWithSignature<int>("getUnderrunCount", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#reloadStaticData()"/>
@@ -677,7 +707,7 @@ namespace Android.Media
         /// <param name="arg0"><see cref="float"/></param>
         /// <param name="arg1"><see cref="float"/></param>
         /// <returns><see cref="int"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int SetStereoVolume(float arg0, float arg1)
         {
             return IExecute<int>("setStereoVolume", arg0, arg1);
@@ -795,7 +825,7 @@ namespace Android.Media
         /// </summary>
         /// <param name="arg0"><see cref="Android.Media.AudioTrack.OnRoutingChangedListener"/></param>
         /// <param name="arg1"><see cref="Android.Os.Handler"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void AddOnRoutingChangedListener(Android.Media.AudioTrack.OnRoutingChangedListener arg0, Android.Os.Handler arg1)
         {
             IExecute("addOnRoutingChangedListener", arg0, arg1);
@@ -859,10 +889,18 @@ namespace Android.Media
         /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#removeOnRoutingChangedListener(android.media.AudioTrack.OnRoutingChangedListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Media.AudioTrack.OnRoutingChangedListener"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void RemoveOnRoutingChangedListener(Android.Media.AudioTrack.OnRoutingChangedListener arg0)
         {
             IExecuteWithSignature("removeOnRoutingChangedListener", "(Landroid/media/AudioTrack$OnRoutingChangedListener;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#setLogSessionId(android.media.metrics.LogSessionId)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Media.Metrics.LogSessionId"/></param>
+        public void SetLogSessionId(Android.Media.Metrics.LogSessionId arg0)
+        {
+            IExecuteWithSignature("setLogSessionId", "(Landroid/media/metrics/LogSessionId;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#setOffloadDelayPadding(int,int)"/>
@@ -879,6 +917,14 @@ namespace Android.Media
         public void SetOffloadEndOfStream()
         {
             IExecuteWithSignature("setOffloadEndOfStream", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#setPlaybackParams(android.media.PlaybackParams)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Media.PlaybackParams"/></param>
+        public void SetPlaybackParams(Android.Media.PlaybackParams arg0)
+        {
+            IExecuteWithSignature("setPlaybackParams", "(Landroid/media/PlaybackParams;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioTrack.html#setPlaybackPositionUpdateListener(android.media.AudioTrack.OnPlaybackPositionUpdateListener,android.os.Handler)"/>
@@ -1058,7 +1104,7 @@ namespace Android.Media
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/AudioTrack.MetricsConstants.html#CHANNELMASK"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String CHANNELMASK { get { if (!_CHANNELMASKReady) { _CHANNELMASKContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "CHANNELMASK"); _CHANNELMASKReady = true; } return _CHANNELMASKContent; } }
             private static Java.Lang.String _CHANNELMASKContent = default;
             private static bool _CHANNELMASKReady = false; // this is used because in case of generics 
@@ -1071,7 +1117,7 @@ namespace Android.Media
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/AudioTrack.MetricsConstants.html#SAMPLERATE"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String SAMPLERATE { get { if (!_SAMPLERATEReady) { _SAMPLERATEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SAMPLERATE"); _SAMPLERATEReady = true; } return _SAMPLERATEContent; } }
             private static Java.Lang.String _SAMPLERATEContent = default;
             private static bool _SAMPLERATEReady = false; // this is used because in case of generics 
@@ -1131,7 +1177,7 @@ namespace Android.Media
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onCodecFormatChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.AudioTrack>>>(OnCodecFormatChangedEventHandler));
+                AddEventHandler("onCodecFormatChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.AudioTrack>>>(OnCodecFormatChangedEventHandler));
 
             }
 
@@ -1139,7 +1185,7 @@ namespace Android.Media
             /// Handler for <see href="https://developer.android.com/reference/android/media/AudioTrack.OnCodecFormatChangedListener.html#onCodecFormatChanged(android.media.AudioTrack,android.media.AudioMetadataReadMap)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnCodecFormatChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Media.AudioTrack, Android.Media.AudioMetadataReadMap> OnOnCodecFormatChanged { get; set; } = null;
+            public global::System.Action<Android.Media.AudioTrack, Android.Media.AudioMetadataReadMap> OnOnCodecFormatChanged { get; set; } = null;
 
             void OnCodecFormatChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Media.AudioTrack>> data)
             {
@@ -1232,8 +1278,8 @@ namespace Android.Media
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onMarkerReached", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.AudioTrack>>>(OnMarkerReachedEventHandler));
-                AddEventHandler("onPeriodicNotification", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.AudioTrack>>>(OnPeriodicNotificationEventHandler));
+                AddEventHandler("onMarkerReached", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.AudioTrack>>>(OnMarkerReachedEventHandler));
+                AddEventHandler("onPeriodicNotification", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.AudioTrack>>>(OnPeriodicNotificationEventHandler));
 
             }
 
@@ -1241,7 +1287,7 @@ namespace Android.Media
             /// Handler for <see href="https://developer.android.com/reference/android/media/AudioTrack.OnPlaybackPositionUpdateListener.html#onMarkerReached(android.media.AudioTrack)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnMarkerReached"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Media.AudioTrack> OnOnMarkerReached { get; set; } = null;
+            public global::System.Action<Android.Media.AudioTrack> OnOnMarkerReached { get; set; } = null;
 
             void OnMarkerReachedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Media.AudioTrack>> data)
             {
@@ -1262,7 +1308,7 @@ namespace Android.Media
             /// Handler for <see href="https://developer.android.com/reference/android/media/AudioTrack.OnPlaybackPositionUpdateListener.html#onPeriodicNotification(android.media.AudioTrack)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnPeriodicNotification"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Media.AudioTrack> OnOnPeriodicNotification { get; set; } = null;
+            public global::System.Action<Android.Media.AudioTrack> OnOnPeriodicNotification { get; set; } = null;
 
             void OnPeriodicNotificationEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Media.AudioTrack>> data)
             {
@@ -1361,8 +1407,8 @@ namespace Android.Media
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onRoutingChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.AudioTrack>>>(OnRoutingChangedEventHandler));
-                AddEventHandler("onRoutingChanged1", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.AudioRouting>>>(OnRoutingChanged1EventHandler));
+                AddEventHandler("onRoutingChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.AudioTrack>>>(OnRoutingChangedEventHandler));
+                AddEventHandler("onRoutingChanged1", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.AudioRouting>>>(OnRoutingChanged1EventHandler));
 
             }
 
@@ -1370,7 +1416,7 @@ namespace Android.Media
             /// Handler for <see href="https://developer.android.com/reference/android/media/AudioTrack.OnRoutingChangedListener.html#onRoutingChanged(android.media.AudioTrack)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnRoutingChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Media.AudioTrack> OnOnRoutingChanged { get; set; } = null;
+            public global::System.Action<Android.Media.AudioTrack> OnOnRoutingChanged { get; set; } = null;
 
             void OnRoutingChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Media.AudioTrack>> data)
             {
@@ -1382,7 +1428,7 @@ namespace Android.Media
             /// <see href="https://developer.android.com/reference/android/media/AudioTrack.OnRoutingChangedListener.html#onRoutingChanged(android.media.AudioTrack)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Media.AudioTrack"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public virtual void OnRoutingChanged(Android.Media.AudioTrack arg0)
             {
                 
@@ -1391,7 +1437,7 @@ namespace Android.Media
             /// <see href="https://developer.android.com/reference/android/media/AudioTrack.OnRoutingChangedListener.html#onRoutingChanged(android.media.AudioRouting)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Media.AudioRouting"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
             public void OnRoutingChangedDefault(Android.Media.AudioRouting arg0)
             {
@@ -1402,7 +1448,7 @@ namespace Android.Media
             /// Handler for <see href="https://developer.android.com/reference/android/media/AudioTrack.OnRoutingChangedListener.html#onRoutingChanged(android.media.AudioRouting)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnRoutingChanged1"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Media.AudioRouting> OnOnRoutingChanged1 { get; set; } = null;
+            public global::System.Action<Android.Media.AudioRouting> OnOnRoutingChanged1 { get; set; } = null;
 
             void OnRoutingChanged1EventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Media.AudioRouting>> data)
             {
@@ -1414,7 +1460,7 @@ namespace Android.Media
             /// <see href="https://developer.android.com/reference/android/media/AudioTrack.OnRoutingChangedListener.html#onRoutingChanged(android.media.AudioRouting)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Media.AudioRouting"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="OnRoutingChangedDefault"/>; override the method to implement a different behavior</remarks>
             public virtual void OnRoutingChanged(Android.Media.AudioRouting arg0)
             {
@@ -1455,7 +1501,7 @@ namespace Android.Media
             /// <see href="https://developer.android.com/reference/android/media/AudioTrack.OnRoutingChangedListener.html#onRoutingChanged(android.media.AudioTrack)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Media.AudioTrack"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public override void OnRoutingChanged(Android.Media.AudioTrack arg0)
             {
                 IExecuteWithSignature("onRoutingChanged", "(Landroid/media/AudioTrack;)V", arg0);
@@ -1464,7 +1510,7 @@ namespace Android.Media
             /// <see href="https://developer.android.com/reference/android/media/AudioTrack.OnRoutingChangedListener.html#onRoutingChanged(android.media.AudioRouting)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Media.AudioRouting"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public override void OnRoutingChanged(Android.Media.AudioRouting arg0)
             {
                 IExecuteWithSignature("onRoutingChanged", "(Landroid/media/AudioRouting;)V", arg0);

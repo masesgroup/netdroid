@@ -79,25 +79,12 @@ namespace Android.Widget
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/widget/RemoteViewsService.RemoteViewsFactory.html#getCount()"/> 
+            /// <see href="https://developer.android.com/reference/android/widget/RemoteViewsService.RemoteViewsFactory.html#getLoadingView()"/>
             /// </summary>
-            public int Count
+            /// <returns><see cref="Android.Widget.RemoteViews"/></returns>
+            public Android.Widget.RemoteViews GetLoadingView()
             {
-                get { return IExecuteWithSignature<int>("getCount", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/widget/RemoteViewsService.RemoteViewsFactory.html#getLoadingView()"/> 
-            /// </summary>
-            public Android.Widget.RemoteViews LoadingView
-            {
-                get { return IExecuteWithSignature<Android.Widget.RemoteViews>("getLoadingView", "()Landroid/widget/RemoteViews;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/widget/RemoteViewsService.RemoteViewsFactory.html#getViewTypeCount()"/> 
-            /// </summary>
-            public int ViewTypeCount
-            {
-                get { return IExecuteWithSignature<int>("getViewTypeCount", "()I"); }
+                return IExecuteWithSignature<Android.Widget.RemoteViews>("getLoadingView", "()Landroid/widget/RemoteViews;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/widget/RemoteViewsService.RemoteViewsFactory.html#getViewAt(int)"/>
@@ -115,6 +102,22 @@ namespace Android.Widget
             public bool HasStableIds()
             {
                 return IExecuteWithSignature<bool>("hasStableIds", "()Z");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/widget/RemoteViewsService.RemoteViewsFactory.html#getCount()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetCount()
+            {
+                return IExecuteWithSignature<int>("getCount", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/widget/RemoteViewsService.RemoteViewsFactory.html#getViewTypeCount()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetViewTypeCount()
+            {
+                return IExecuteWithSignature<int>("getViewTypeCount", "()I");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/widget/RemoteViewsService.RemoteViewsFactory.html#getItemId(int)"/>

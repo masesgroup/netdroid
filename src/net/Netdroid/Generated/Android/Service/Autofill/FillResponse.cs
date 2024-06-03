@@ -156,7 +156,7 @@ namespace Android.Service.Autofill
             /// <param name="arg3"><see cref="Android.Service.Autofill.InlinePresentation"/></param>
             /// <param name="arg4"><see cref="Android.Service.Autofill.InlinePresentation"/></param>
             /// <returns><see cref="Android.Service.Autofill.FillResponse.Builder"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Service.Autofill.FillResponse.Builder SetAuthentication(Android.View.Autofill.AutofillId[] arg0, Android.Content.IntentSender arg1, Android.Widget.RemoteViews arg2, Android.Service.Autofill.InlinePresentation arg3, Android.Service.Autofill.InlinePresentation arg4)
             {
                 return IExecute<Android.Service.Autofill.FillResponse.Builder>("setAuthentication", arg0, arg1, arg2, arg3, arg4);
@@ -169,7 +169,7 @@ namespace Android.Service.Autofill
             /// <param name="arg2"><see cref="Android.Widget.RemoteViews"/></param>
             /// <param name="arg3"><see cref="Android.Service.Autofill.InlinePresentation"/></param>
             /// <returns><see cref="Android.Service.Autofill.FillResponse.Builder"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Service.Autofill.FillResponse.Builder SetAuthentication(Android.View.Autofill.AutofillId[] arg0, Android.Content.IntentSender arg1, Android.Widget.RemoteViews arg2, Android.Service.Autofill.InlinePresentation arg3)
             {
                 return IExecute<Android.Service.Autofill.FillResponse.Builder>("setAuthentication", arg0, arg1, arg2, arg3);
@@ -181,7 +181,7 @@ namespace Android.Service.Autofill
             /// <param name="arg1"><see cref="Android.Content.IntentSender"/></param>
             /// <param name="arg2"><see cref="Android.Widget.RemoteViews"/></param>
             /// <returns><see cref="Android.Service.Autofill.FillResponse.Builder"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Service.Autofill.FillResponse.Builder SetAuthentication(Android.View.Autofill.AutofillId[] arg0, Android.Content.IntentSender arg1, Android.Widget.RemoteViews arg2)
             {
                 return IExecute<Android.Service.Autofill.FillResponse.Builder>("setAuthentication", arg0, arg1, arg2);

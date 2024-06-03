@@ -94,34 +94,6 @@ namespace Android.Hardware.Camera2.Params
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/RecommendedStreamConfigurationMap.html#getHighSpeedVideoSizes()"/> 
-        /// </summary>
-        public Java.Util.Set<Android.Util.Size> HighSpeedVideoSizes
-        {
-            get { return IExecuteWithSignature<Java.Util.Set<Android.Util.Size>>("getHighSpeedVideoSizes", "()Ljava/util/Set;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/RecommendedStreamConfigurationMap.html#getInputFormats()"/> 
-        /// </summary>
-        public Java.Util.Set<Java.Lang.Integer> InputFormats
-        {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.Integer>>("getInputFormats", "()Ljava/util/Set;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/RecommendedStreamConfigurationMap.html#getOutputFormats()"/> 
-        /// </summary>
-        public Java.Util.Set<Java.Lang.Integer> OutputFormats
-        {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.Integer>>("getOutputFormats", "()Ljava/util/Set;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/RecommendedStreamConfigurationMap.html#getRecommendedUseCase()"/> 
-        /// </summary>
-        public int RecommendedUseCase
-        {
-            get { return IExecuteWithSignature<int>("getRecommendedUseCase", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/RecommendedStreamConfigurationMap.html#getOutputSizes(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
@@ -169,6 +141,14 @@ namespace Android.Hardware.Camera2.Params
             return IExecuteWithSignature<bool>("isOutputSupportedFor", "(I)Z", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/RecommendedStreamConfigurationMap.html#getRecommendedUseCase()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetRecommendedUseCase()
+        {
+            return IExecuteWithSignature<int>("getRecommendedUseCase", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/RecommendedStreamConfigurationMap.html#getHighResolutionOutputSizes(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -176,6 +156,14 @@ namespace Android.Hardware.Camera2.Params
         public Java.Util.Set<Android.Util.Size> GetHighResolutionOutputSizes(int arg0)
         {
             return IExecuteWithSignature<Java.Util.Set<Android.Util.Size>>("getHighResolutionOutputSizes", "(I)Ljava/util/Set;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/RecommendedStreamConfigurationMap.html#getHighSpeedVideoSizes()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Android.Util.Size> GetHighSpeedVideoSizes()
+        {
+            return IExecuteWithSignature<Java.Util.Set<Android.Util.Size>>("getHighSpeedVideoSizes", "()Ljava/util/Set;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/RecommendedStreamConfigurationMap.html#getInputSizes(int)"/>
@@ -194,6 +182,22 @@ namespace Android.Hardware.Camera2.Params
         public Java.Util.Set<Android.Util.Size> GetOutputSizes(int arg0)
         {
             return IExecuteWithSignature<Java.Util.Set<Android.Util.Size>>("getOutputSizes", "(I)Ljava/util/Set;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/RecommendedStreamConfigurationMap.html#getInputFormats()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Lang.Integer> GetInputFormats()
+        {
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.Integer>>("getInputFormats", "()Ljava/util/Set;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/RecommendedStreamConfigurationMap.html#getOutputFormats()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Lang.Integer> GetOutputFormats()
+        {
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.Integer>>("getOutputFormats", "()Ljava/util/Set;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/RecommendedStreamConfigurationMap.html#getValidOutputFormatsForInput(int)"/>

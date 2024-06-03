@@ -30,7 +30,7 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Hashtable.html#%3Cinit%3E(int,float)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Hashtable.html#%3Cinit%3E(int,float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="float"/></param>
@@ -39,7 +39,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Hashtable.html#%3Cinit%3E(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Hashtable.html#%3Cinit%3E(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public Hashtable(int arg0)
@@ -47,7 +47,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Hashtable.html#%3Cinit%3E(java.util.Map)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Hashtable.html#%3Cinit%3E(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         public Hashtable(Java.Util.Map arg0)
@@ -83,7 +83,7 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Hashtable.html#containsValue(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Hashtable.html#containsValue(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -92,7 +92,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("containsValue", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Hashtable.html#values()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Hashtable.html#values()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Collection"/></returns>
         public Java.Util.Collection Values()
@@ -100,7 +100,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Collection>("values", "()Ljava/util/Collection;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Hashtable.html#entrySet()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Hashtable.html#entrySet()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set EntrySet()
@@ -108,7 +108,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Set>("entrySet", "()Ljava/util/Set;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Hashtable.html#keySet()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Hashtable.html#keySet()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set KeySet()
@@ -116,7 +116,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Set>("keySet", "()Ljava/util/Set;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Hashtable.html#contains(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Hashtable.html#contains(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -125,7 +125,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("contains", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Hashtable.html#containsKey(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Hashtable.html#containsKey(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -134,7 +134,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("containsKey", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Hashtable.html#remove(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Hashtable.html#remove(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -144,7 +144,7 @@ namespace Java.Util
             return IExecute<bool>("remove", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Hashtable.html#replace(java.lang.Object,java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Hashtable.html#replace(java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -155,7 +155,7 @@ namespace Java.Util
             return IExecute<bool>("replace", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Hashtable.html#compute(java.lang.Object,java.util.function.BiFunction)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Hashtable.html#compute(java.lang.Object,java.util.function.BiFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.BiFunction"/></param>
@@ -165,7 +165,7 @@ namespace Java.Util
             return IExecute("compute", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Hashtable.html#computeIfAbsent(java.lang.Object,java.util.function.Function)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Hashtable.html#computeIfAbsent(java.lang.Object,java.util.function.Function)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
@@ -175,7 +175,7 @@ namespace Java.Util
             return IExecute("computeIfAbsent", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Hashtable.html#computeIfPresent(java.lang.Object,java.util.function.BiFunction)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Hashtable.html#computeIfPresent(java.lang.Object,java.util.function.BiFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.BiFunction"/></param>
@@ -185,7 +185,7 @@ namespace Java.Util
             return IExecute("computeIfPresent", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Hashtable.html#getOrDefault(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Hashtable.html#getOrDefault(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -195,7 +195,7 @@ namespace Java.Util
             return IExecute("getOrDefault", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Hashtable.html#merge(java.lang.Object,java.lang.Object,java.util.function.BiFunction)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Hashtable.html#merge(java.lang.Object,java.lang.Object,java.util.function.BiFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -206,7 +206,7 @@ namespace Java.Util
             return IExecute("merge", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Hashtable.html#putIfAbsent(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Hashtable.html#putIfAbsent(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -216,7 +216,7 @@ namespace Java.Util
             return IExecute("putIfAbsent", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Hashtable.html#replace(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Hashtable.html#replace(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -226,14 +226,14 @@ namespace Java.Util
             return IExecute("replace", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Hashtable.html#clear()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Hashtable.html#clear()"/>
         /// </summary>
         public void Clear()
         {
             IExecuteWithSignature("clear", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Hashtable.html#forEach(java.util.function.BiConsumer)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Hashtable.html#forEach(java.util.function.BiConsumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.BiConsumer"/></param>
         public void ForEach(Java.Util.Function.BiConsumer arg0)
@@ -241,7 +241,7 @@ namespace Java.Util
             IExecuteWithSignature("forEach", "(Ljava/util/function/BiConsumer;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Hashtable.html#putAll(java.util.Map)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Hashtable.html#putAll(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         public void PutAll(Java.Util.Map arg0)
@@ -249,7 +249,7 @@ namespace Java.Util
             IExecuteWithSignature("putAll", "(Ljava/util/Map;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Hashtable.html#replaceAll(java.util.function.BiFunction)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Hashtable.html#replaceAll(java.util.function.BiFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.BiFunction"/></param>
         public void ReplaceAll(Java.Util.Function.BiFunction arg0)
@@ -272,7 +272,7 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Hashtable.html#%3Cinit%3E(int,float)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Hashtable.html#%3Cinit%3E(int,float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="float"/></param>
@@ -281,7 +281,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Hashtable.html#%3Cinit%3E(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Hashtable.html#%3Cinit%3E(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public Hashtable(int arg0)
@@ -289,7 +289,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Hashtable.html#%3Cinit%3E(java.util.Map)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Hashtable.html#%3Cinit%3E(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         public Hashtable(Java.Util.Map<K, V> arg0)
@@ -329,7 +329,7 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Hashtable.html#containsValue(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Hashtable.html#containsValue(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -338,7 +338,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("containsValue", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Hashtable.html#values()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Hashtable.html#values()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Collection"/></returns>
         public Java.Util.Collection<V> Values()
@@ -346,7 +346,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Collection<V>>("values", "()Ljava/util/Collection;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Hashtable.html#entrySet()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Hashtable.html#entrySet()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<Java.Util.Map.Entry<K, V>> EntrySet()
@@ -354,7 +354,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Set<Java.Util.Map.Entry<K, V>>>("entrySet", "()Ljava/util/Set;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Hashtable.html#keySet()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Hashtable.html#keySet()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<K> KeySet()
@@ -362,7 +362,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Set<K>>("keySet", "()Ljava/util/Set;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Hashtable.html#contains(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Hashtable.html#contains(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -371,7 +371,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("contains", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Hashtable.html#containsKey(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Hashtable.html#containsKey(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -380,7 +380,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("containsKey", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Hashtable.html#remove(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Hashtable.html#remove(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -390,7 +390,7 @@ namespace Java.Util
             return IExecute<bool>("remove", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Hashtable.html#replace(java.lang.Object,java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Hashtable.html#replace(java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="K"/></param>
         /// <param name="arg1"><typeparamref name="V"/></param>
@@ -401,7 +401,7 @@ namespace Java.Util
             return IExecute<bool>("replace", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Hashtable.html#compute(java.lang.Object,java.util.function.BiFunction)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Hashtable.html#compute(java.lang.Object,java.util.function.BiFunction)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="K"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.BiFunction"/></param>
@@ -409,24 +409,24 @@ namespace Java.Util
         /// <typeparam name="Arg1objectSuperV"><typeparamref name="V"/></typeparam>
         /// <typeparam name="Arg1ExtendsV"><typeparamref name="V"/></typeparam>
         /// <returns><typeparamref name="V"/></returns>
-        public V Compute<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV>(K arg0, Java.Util.Function.BiFunction<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV> arg1) where Arg1objectSuperK: K where Arg1objectSuperV: V where Arg1ExtendsV: V
+        public V Compute<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV>(K arg0, Java.Util.Function.BiFunction<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV> arg1) where Arg1objectSuperK : K where Arg1objectSuperV : V where Arg1ExtendsV : V
         {
             return IExecute<V>("compute", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Hashtable.html#computeIfAbsent(java.lang.Object,java.util.function.Function)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Hashtable.html#computeIfAbsent(java.lang.Object,java.util.function.Function)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="K"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
         /// <typeparam name="Arg1objectSuperK"><typeparamref name="K"/></typeparam>
         /// <typeparam name="Arg1ExtendsV"><typeparamref name="V"/></typeparam>
         /// <returns><typeparamref name="V"/></returns>
-        public V ComputeIfAbsent<Arg1objectSuperK, Arg1ExtendsV>(K arg0, Java.Util.Function.Function<Arg1objectSuperK, Arg1ExtendsV> arg1) where Arg1objectSuperK: K where Arg1ExtendsV: V
+        public V ComputeIfAbsent<Arg1objectSuperK, Arg1ExtendsV>(K arg0, Java.Util.Function.Function<Arg1objectSuperK, Arg1ExtendsV> arg1) where Arg1objectSuperK : K where Arg1ExtendsV : V
         {
             return IExecute<V>("computeIfAbsent", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Hashtable.html#computeIfPresent(java.lang.Object,java.util.function.BiFunction)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Hashtable.html#computeIfPresent(java.lang.Object,java.util.function.BiFunction)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="K"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.BiFunction"/></param>
@@ -434,12 +434,12 @@ namespace Java.Util
         /// <typeparam name="Arg1objectSuperV"><typeparamref name="V"/></typeparam>
         /// <typeparam name="Arg1ExtendsV"><typeparamref name="V"/></typeparam>
         /// <returns><typeparamref name="V"/></returns>
-        public V ComputeIfPresent<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV>(K arg0, Java.Util.Function.BiFunction<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV> arg1) where Arg1objectSuperK: K where Arg1objectSuperV: V where Arg1ExtendsV: V
+        public V ComputeIfPresent<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV>(K arg0, Java.Util.Function.BiFunction<Arg1objectSuperK, Arg1objectSuperV, Arg1ExtendsV> arg1) where Arg1objectSuperK : K where Arg1objectSuperV : V where Arg1ExtendsV : V
         {
             return IExecute<V>("computeIfPresent", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Hashtable.html#getOrDefault(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Hashtable.html#getOrDefault(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><typeparamref name="V"/></param>
@@ -449,7 +449,7 @@ namespace Java.Util
             return IExecute<V>("getOrDefault", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Hashtable.html#merge(java.lang.Object,java.lang.Object,java.util.function.BiFunction)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Hashtable.html#merge(java.lang.Object,java.lang.Object,java.util.function.BiFunction)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="K"/></param>
         /// <param name="arg1"><typeparamref name="V"/></param>
@@ -457,12 +457,12 @@ namespace Java.Util
         /// <typeparam name="Arg2objectSuperV"><typeparamref name="V"/></typeparam>
         /// <typeparam name="Arg2ExtendsV"><typeparamref name="V"/></typeparam>
         /// <returns><typeparamref name="V"/></returns>
-        public V Merge<Arg2objectSuperV, Arg2ExtendsV>(K arg0, V arg1, Java.Util.Function.BiFunction<Arg2objectSuperV, Arg2objectSuperV, Arg2ExtendsV> arg2) where Arg2objectSuperV: V where Arg2ExtendsV: V
+        public V Merge<Arg2objectSuperV, Arg2ExtendsV>(K arg0, V arg1, Java.Util.Function.BiFunction<Arg2objectSuperV, Arg2objectSuperV, Arg2ExtendsV> arg2) where Arg2objectSuperV : V where Arg2ExtendsV : V
         {
             return IExecute<V>("merge", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Hashtable.html#putIfAbsent(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Hashtable.html#putIfAbsent(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="K"/></param>
         /// <param name="arg1"><typeparamref name="V"/></param>
@@ -472,7 +472,7 @@ namespace Java.Util
             return IExecute<V>("putIfAbsent", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Hashtable.html#replace(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Hashtable.html#replace(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="K"/></param>
         /// <param name="arg1"><typeparamref name="V"/></param>
@@ -482,40 +482,40 @@ namespace Java.Util
             return IExecute<V>("replace", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Hashtable.html#clear()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Hashtable.html#clear()"/>
         /// </summary>
         public void Clear()
         {
             IExecuteWithSignature("clear", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Hashtable.html#forEach(java.util.function.BiConsumer)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Hashtable.html#forEach(java.util.function.BiConsumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.BiConsumer"/></param>
         /// <typeparam name="Arg0objectSuperK"><typeparamref name="K"/></typeparam>
         /// <typeparam name="Arg0objectSuperV"><typeparamref name="V"/></typeparam>
-        public void ForEach<Arg0objectSuperK, Arg0objectSuperV>(Java.Util.Function.BiConsumer<Arg0objectSuperK, Arg0objectSuperV> arg0) where Arg0objectSuperK: K where Arg0objectSuperV: V
+        public void ForEach<Arg0objectSuperK, Arg0objectSuperV>(Java.Util.Function.BiConsumer<Arg0objectSuperK, Arg0objectSuperV> arg0) where Arg0objectSuperK : K where Arg0objectSuperV : V
         {
             IExecuteWithSignature("forEach", "(Ljava/util/function/BiConsumer;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Hashtable.html#putAll(java.util.Map)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Hashtable.html#putAll(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         /// <typeparam name="Arg0ExtendsK"><typeparamref name="K"/></typeparam>
         /// <typeparam name="Arg0ExtendsV"><typeparamref name="V"/></typeparam>
-        public void PutAll<Arg0ExtendsK, Arg0ExtendsV>(Java.Util.Map<Arg0ExtendsK, Arg0ExtendsV> arg0) where Arg0ExtendsK: K where Arg0ExtendsV: V
+        public void PutAll<Arg0ExtendsK, Arg0ExtendsV>(Java.Util.Map<Arg0ExtendsK, Arg0ExtendsV> arg0) where Arg0ExtendsK : K where Arg0ExtendsV : V
         {
             IExecuteWithSignature("putAll", "(Ljava/util/Map;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Hashtable.html#replaceAll(java.util.function.BiFunction)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Hashtable.html#replaceAll(java.util.function.BiFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.BiFunction"/></param>
         /// <typeparam name="Arg0objectSuperK"><typeparamref name="K"/></typeparam>
         /// <typeparam name="Arg0objectSuperV"><typeparamref name="V"/></typeparam>
         /// <typeparam name="Arg0ExtendsV"><typeparamref name="V"/></typeparam>
-        public void ReplaceAll<Arg0objectSuperK, Arg0objectSuperV, Arg0ExtendsV>(Java.Util.Function.BiFunction<Arg0objectSuperK, Arg0objectSuperV, Arg0ExtendsV> arg0) where Arg0objectSuperK: K where Arg0objectSuperV: V where Arg0ExtendsV: V
+        public void ReplaceAll<Arg0objectSuperK, Arg0objectSuperV, Arg0ExtendsV>(Java.Util.Function.BiFunction<Arg0objectSuperK, Arg0objectSuperV, Arg0ExtendsV> arg0) where Arg0objectSuperK : K where Arg0objectSuperV : V where Arg0ExtendsV : V
         {
             IExecuteWithSignature("replaceAll", "(Ljava/util/function/BiFunction;)V", arg0);
         }

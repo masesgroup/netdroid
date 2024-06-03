@@ -46,11 +46,12 @@ namespace Android.Net.Ipsec.Ike
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/TunnelModeChildSessionParams.html#getConfigurationRequests()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/TunnelModeChildSessionParams.html#getConfigurationRequests()"/>
         /// </summary>
-        public Java.Util.List<Android.Net.Ipsec.Ike.TunnelModeChildSessionParams.TunnelModeChildConfigRequest> ConfigurationRequests
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Net.Ipsec.Ike.TunnelModeChildSessionParams.TunnelModeChildConfigRequest> GetConfigurationRequests()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Net.Ipsec.Ike.TunnelModeChildSessionParams.TunnelModeChildConfigRequest>>("getConfigurationRequests", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Java.Util.List<Android.Net.Ipsec.Ike.TunnelModeChildSessionParams.TunnelModeChildConfigRequest>>("getConfigurationRequests", "()Ljava/util/List;");
         }
 
         #endregion
@@ -207,11 +208,12 @@ namespace Android.Net.Ipsec.Ike
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/TunnelModeChildSessionParams.ConfigRequestIpv4Address.html#getAddress()"/> 
+            /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/TunnelModeChildSessionParams.ConfigRequestIpv4Address.html#getAddress()"/>
             /// </summary>
-            public Java.Net.Inet4Address Address
+            /// <returns><see cref="Java.Net.Inet4Address"/></returns>
+            public Java.Net.Inet4Address GetAddress()
             {
-                get { return IExecuteWithSignature<Java.Net.Inet4Address>("getAddress", "()Ljava/net/Inet4Address;"); }
+                return IExecuteWithSignature<Java.Net.Inet4Address>("getAddress", "()Ljava/net/Inet4Address;");
             }
 
             #endregion
@@ -338,18 +340,20 @@ namespace Android.Net.Ipsec.Ike
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/TunnelModeChildSessionParams.ConfigRequestIpv6Address.html#getAddress()"/> 
+            /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/TunnelModeChildSessionParams.ConfigRequestIpv6Address.html#getPrefixLength()"/>
             /// </summary>
-            public Java.Net.Inet6Address Address
+            /// <returns><see cref="int"/></returns>
+            public int GetPrefixLength()
             {
-                get { return IExecuteWithSignature<Java.Net.Inet6Address>("getAddress", "()Ljava/net/Inet6Address;"); }
+                return IExecuteWithSignature<int>("getPrefixLength", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/TunnelModeChildSessionParams.ConfigRequestIpv6Address.html#getPrefixLength()"/> 
+            /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/TunnelModeChildSessionParams.ConfigRequestIpv6Address.html#getAddress()"/>
             /// </summary>
-            public int PrefixLength
+            /// <returns><see cref="Java.Net.Inet6Address"/></returns>
+            public Java.Net.Inet6Address GetAddress()
             {
-                get { return IExecuteWithSignature<int>("getPrefixLength", "()I"); }
+                return IExecuteWithSignature<Java.Net.Inet6Address>("getAddress", "()Ljava/net/Inet6Address;");
             }
 
             #endregion

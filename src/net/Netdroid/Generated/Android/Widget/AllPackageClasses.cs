@@ -36,12 +36,12 @@ namespace Android.Widget
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("AbsListView class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("AbsListView class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AbsListView() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("AbsListView class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("AbsListView class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AbsListView(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -123,10 +123,13 @@ namespace Android.Widget
             /// </summary>
             public MultiChoiceModeListener() { InitializeHandlers(); }
 
+            const string _bridgeClassName = "org.mases.netdroid.generated.android.widget.AbsListView_MultiChoiceModeListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "org.mases.netdroid.generated.android.widget.MultiChoiceModeListener";
+            public override string BridgeClassName => _bridgeClassName;
 
         
             // TODO: complete the class
@@ -148,10 +151,13 @@ namespace Android.Widget
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
 
+            const string _bridgeClassName = "android.widget.AbsListView$MultiChoiceModeListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "android.widget.AbsListView$MultiChoiceModeListener";
+            public override string BridgeClassName => _bridgeClassName;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
@@ -182,10 +188,13 @@ namespace Android.Widget
             /// </summary>
             public OnScrollListener() { InitializeHandlers(); }
 
+            const string _bridgeClassName = "org.mases.netdroid.generated.android.widget.AbsListView_OnScrollListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "org.mases.netdroid.generated.android.widget.OnScrollListener";
+            public override string BridgeClassName => _bridgeClassName;
 
         
             // TODO: complete the class
@@ -207,10 +216,13 @@ namespace Android.Widget
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
 
+            const string _bridgeClassName = "android.widget.AbsListView$OnScrollListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "android.widget.AbsListView$OnScrollListener";
+            public override string BridgeClassName => _bridgeClassName;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
@@ -241,10 +253,13 @@ namespace Android.Widget
             /// </summary>
             public RecyclerListener() { InitializeHandlers(); }
 
+            const string _bridgeClassName = "org.mases.netdroid.generated.android.widget.AbsListView_RecyclerListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "org.mases.netdroid.generated.android.widget.RecyclerListener";
+            public override string BridgeClassName => _bridgeClassName;
 
         
             // TODO: complete the class
@@ -266,10 +281,13 @@ namespace Android.Widget
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
 
+            const string _bridgeClassName = "android.widget.AbsListView$RecyclerListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "android.widget.AbsListView$RecyclerListener";
+            public override string BridgeClassName => _bridgeClassName;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
@@ -299,12 +317,12 @@ namespace Android.Widget
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
-            [Obsolete("SelectionBoundsAdjuster class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("SelectionBoundsAdjuster class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public SelectionBoundsAdjuster() { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
-            [Obsolete("SelectionBoundsAdjuster class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("SelectionBoundsAdjuster class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public SelectionBoundsAdjuster(params object[] args) : base(args) { }
 
             private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -343,7 +361,7 @@ namespace Android.Widget
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/widget/AbsoluteLayout.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class AbsoluteLayout : Android.View.ViewGroup
     {
         const string _bridgeClassName = "android.widget.AbsoluteLayout";
@@ -384,7 +402,7 @@ namespace Android.Widget
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/AbsoluteLayout.LayoutParams.html"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public partial class LayoutParams : Android.View.ViewGroup.LayoutParams
         {
             const string _bridgeClassName = "android.widget.AbsoluteLayout$LayoutParams";
@@ -439,12 +457,12 @@ namespace Android.Widget
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("AbsSeekBar class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("AbsSeekBar class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AbsSeekBar() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("AbsSeekBar class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("AbsSeekBar class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AbsSeekBar(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -485,12 +503,12 @@ namespace Android.Widget
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("AbsSpinner class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("AbsSpinner class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AbsSpinner() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("AbsSpinner class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("AbsSpinner class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AbsSpinner(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -616,10 +634,13 @@ namespace Android.Widget
             /// </summary>
             public OnMenuItemClickListener() { InitializeHandlers(); }
 
+            const string _bridgeClassName = "org.mases.netdroid.generated.android.widget.ActionMenuView_OnMenuItemClickListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "org.mases.netdroid.generated.android.widget.OnMenuItemClickListener";
+            public override string BridgeClassName => _bridgeClassName;
 
         
             // TODO: complete the class
@@ -641,10 +662,13 @@ namespace Android.Widget
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
 
+            const string _bridgeClassName = "android.widget.ActionMenuView$OnMenuItemClickListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "android.widget.ActionMenuView$OnMenuItemClickListener";
+            public override string BridgeClassName => _bridgeClassName;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
@@ -679,10 +703,13 @@ namespace Android.Widget
         /// </summary>
         public Adapter() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.android.widget.Adapter";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.android.widget.Adapter";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -704,10 +731,13 @@ namespace Android.Widget
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "android.widget.Adapter";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "android.widget.Adapter";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -737,12 +767,12 @@ namespace Android.Widget
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("AdapterView class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("AdapterView class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AdapterView() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("AdapterView class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("AdapterView class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AdapterView(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -824,10 +854,13 @@ namespace Android.Widget
             /// </summary>
             public OnItemClickListener() { InitializeHandlers(); }
 
+            const string _bridgeClassName = "org.mases.netdroid.generated.android.widget.AdapterView_OnItemClickListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "org.mases.netdroid.generated.android.widget.OnItemClickListener";
+            public override string BridgeClassName => _bridgeClassName;
 
         
             // TODO: complete the class
@@ -849,10 +882,13 @@ namespace Android.Widget
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
 
+            const string _bridgeClassName = "android.widget.AdapterView$OnItemClickListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "android.widget.AdapterView$OnItemClickListener";
+            public override string BridgeClassName => _bridgeClassName;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
@@ -883,10 +919,13 @@ namespace Android.Widget
             /// </summary>
             public OnItemLongClickListener() { InitializeHandlers(); }
 
+            const string _bridgeClassName = "org.mases.netdroid.generated.android.widget.AdapterView_OnItemLongClickListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "org.mases.netdroid.generated.android.widget.OnItemLongClickListener";
+            public override string BridgeClassName => _bridgeClassName;
 
         
             // TODO: complete the class
@@ -908,10 +947,13 @@ namespace Android.Widget
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
 
+            const string _bridgeClassName = "android.widget.AdapterView$OnItemLongClickListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "android.widget.AdapterView$OnItemLongClickListener";
+            public override string BridgeClassName => _bridgeClassName;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
@@ -942,10 +984,13 @@ namespace Android.Widget
             /// </summary>
             public OnItemSelectedListener() { InitializeHandlers(); }
 
+            const string _bridgeClassName = "org.mases.netdroid.generated.android.widget.AdapterView_OnItemSelectedListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "org.mases.netdroid.generated.android.widget.OnItemSelectedListener";
+            public override string BridgeClassName => _bridgeClassName;
 
         
             // TODO: complete the class
@@ -967,10 +1012,13 @@ namespace Android.Widget
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
 
+            const string _bridgeClassName = "android.widget.AdapterView$OnItemSelectedListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "android.widget.AdapterView$OnItemSelectedListener";
+            public override string BridgeClassName => _bridgeClassName;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
@@ -999,18 +1047,18 @@ namespace Android.Widget
     /// <see href="https://developer.android.com/reference/android/widget/AdapterView.html"/>
     /// </summary>
     /// <typeparam name="T"><see cref="Android.Widget.IAdapter"/></typeparam>
-    public partial class AdapterView<T> : Android.View.ViewGroup where T: Android.Widget.IAdapter, new()
+    public partial class AdapterView<T> : Android.View.ViewGroup where T : Android.Widget.IAdapter, new()
     {
         const string _bridgeClassName = "android.widget.AdapterView";
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("AdapterView class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("AdapterView class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AdapterView() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("AdapterView class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("AdapterView class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AdapterView(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1051,12 +1099,12 @@ namespace Android.Widget
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("AdapterViewAnimator class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("AdapterViewAnimator class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AdapterViewAnimator() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("AdapterViewAnimator class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("AdapterViewAnimator class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AdapterViewAnimator(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1141,12 +1189,12 @@ namespace Android.Widget
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Advanceable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Advanceable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Advanceable() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Advanceable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Advanceable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Advanceable(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1225,7 +1273,7 @@ namespace Android.Widget
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/widget/AnalogClock.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class AnalogClock : Android.View.View
     {
         const string _bridgeClassName = "android.widget.AnalogClock";
@@ -1263,6 +1311,95 @@ namespace Android.Widget
 
         // TODO: complete the class
 
+    }
+    #endregion
+
+    #region ArrayAdapter
+    /// <summary>
+    /// <see href="https://developer.android.com/reference/android/widget/ArrayAdapter.html"/>
+    /// </summary>
+    public partial class ArrayAdapter : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ArrayAdapter>
+    {
+        const string _bridgeClassName = "android.widget.ArrayAdapter";
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public ArrayAdapter() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public ArrayAdapter(params object[] args) : base(args) { }
+
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+        /// </summary>
+        public override bool IsBridgeAbstract => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+        /// </summary>
+        public override bool IsBridgeCloseable => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+        /// </summary>
+        public override bool IsBridgeInterface => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+        /// </summary>
+        public override bool IsBridgeStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region ArrayAdapter<T>
+    /// <summary>
+    /// <see href="https://developer.android.com/reference/android/widget/ArrayAdapter.html"/>
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
+    public partial class ArrayAdapter<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ArrayAdapter<T>>
+    {
+        const string _bridgeClassName = "android.widget.ArrayAdapter";
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public ArrayAdapter() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public ArrayAdapter(params object[] args) : base(args) { }
+
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+        /// </summary>
+        public override bool IsBridgeAbstract => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+        /// </summary>
+        public override bool IsBridgeCloseable => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+        /// </summary>
+        public override bool IsBridgeInterface => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+        /// </summary>
+        public override bool IsBridgeStatic => false;
+
+        // TODO: complete the class
+    
     }
     #endregion
 
@@ -1317,10 +1454,13 @@ namespace Android.Widget
             /// </summary>
             public OnDismissListener() { InitializeHandlers(); }
 
+            const string _bridgeClassName = "org.mases.netdroid.generated.android.widget.AutoCompleteTextView_OnDismissListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "org.mases.netdroid.generated.android.widget.OnDismissListener";
+            public override string BridgeClassName => _bridgeClassName;
 
         
             // TODO: complete the class
@@ -1342,10 +1482,13 @@ namespace Android.Widget
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
 
+            const string _bridgeClassName = "android.widget.AutoCompleteTextView$OnDismissListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "android.widget.AutoCompleteTextView$OnDismissListener";
+            public override string BridgeClassName => _bridgeClassName;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
@@ -1375,12 +1518,12 @@ namespace Android.Widget
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
-            [Obsolete("Validator class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("Validator class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Validator() { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
-            [Obsolete("Validator class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("Validator class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Validator(params object[] args) : base(args) { }
 
             private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1426,10 +1569,13 @@ namespace Android.Widget
         /// </summary>
         public BaseAdapter() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.android.widget.BaseAdapter";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.android.widget.BaseAdapter";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -1451,10 +1597,13 @@ namespace Android.Widget
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "android.widget.BaseAdapter";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "android.widget.BaseAdapter";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -1485,10 +1634,13 @@ namespace Android.Widget
         /// </summary>
         public BaseExpandableListAdapter() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.android.widget.BaseExpandableListAdapter";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.android.widget.BaseExpandableListAdapter";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -1510,10 +1662,13 @@ namespace Android.Widget
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "android.widget.BaseExpandableListAdapter";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "android.widget.BaseExpandableListAdapter";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -1628,10 +1783,13 @@ namespace Android.Widget
             /// </summary>
             public OnDateChangeListener() { InitializeHandlers(); }
 
+            const string _bridgeClassName = "org.mases.netdroid.generated.android.widget.CalendarView_OnDateChangeListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "org.mases.netdroid.generated.android.widget.OnDateChangeListener";
+            public override string BridgeClassName => _bridgeClassName;
 
         
             // TODO: complete the class
@@ -1653,10 +1811,13 @@ namespace Android.Widget
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
 
+            const string _bridgeClassName = "android.widget.CalendarView$OnDateChangeListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "android.widget.CalendarView$OnDateChangeListener";
+            public override string BridgeClassName => _bridgeClassName;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
@@ -1690,12 +1851,12 @@ namespace Android.Widget
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Checkable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Checkable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Checkable() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Checkable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Checkable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Checkable(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1865,10 +2026,13 @@ namespace Android.Widget
             /// </summary>
             public OnChronometerTickListener() { InitializeHandlers(); }
 
+            const string _bridgeClassName = "org.mases.netdroid.generated.android.widget.Chronometer_OnChronometerTickListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "org.mases.netdroid.generated.android.widget.OnChronometerTickListener";
+            public override string BridgeClassName => _bridgeClassName;
 
         
             // TODO: complete the class
@@ -1890,10 +2054,13 @@ namespace Android.Widget
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
 
+            const string _bridgeClassName = "android.widget.Chronometer$OnChronometerTickListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "android.widget.Chronometer$OnChronometerTickListener";
+            public override string BridgeClassName => _bridgeClassName;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
@@ -1927,12 +2094,12 @@ namespace Android.Widget
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("CompoundButton class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("CompoundButton class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CompoundButton() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("CompoundButton class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("CompoundButton class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CompoundButton(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1970,10 +2137,13 @@ namespace Android.Widget
             /// </summary>
             public OnCheckedChangeListener() { InitializeHandlers(); }
 
+            const string _bridgeClassName = "org.mases.netdroid.generated.android.widget.CompoundButton_OnCheckedChangeListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "org.mases.netdroid.generated.android.widget.OnCheckedChangeListener";
+            public override string BridgeClassName => _bridgeClassName;
 
         
             // TODO: complete the class
@@ -1995,10 +2165,13 @@ namespace Android.Widget
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
 
+            const string _bridgeClassName = "android.widget.CompoundButton$OnCheckedChangeListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "android.widget.CompoundButton$OnCheckedChangeListener";
+            public override string BridgeClassName => _bridgeClassName;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
@@ -2033,10 +2206,13 @@ namespace Android.Widget
         /// </summary>
         public CursorAdapter() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.android.widget.CursorAdapter";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.android.widget.CursorAdapter";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -2058,10 +2234,13 @@ namespace Android.Widget
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "android.widget.CursorAdapter";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "android.widget.CursorAdapter";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -2085,38 +2264,26 @@ namespace Android.Widget
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/widget/CursorTreeAdapter.html"/>
     /// </summary>
-    public partial class CursorTreeAdapter : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class CursorTreeAdapter : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CursorTreeAdapter>
     {
+        const string _bridgeClassName = "android.widget.CursorTreeAdapter";
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public CursorTreeAdapter() { InitializeHandlers(); }
-
-    #warning Remember to build the Java class for event listener
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region CursorTreeAdapterDirect
-    /// <summary>
-    /// Direct override of <see cref="CursorTreeAdapter"/> or its generic type if there is one
-    /// </summary>
-    public partial class CursorTreeAdapterDirect : CursorTreeAdapter
-    {
+        [global::System.Obsolete("CursorTreeAdapter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        public CursorTreeAdapter() { }
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public override bool AutoInit => false;
+        [global::System.Obsolete("CursorTreeAdapter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        public CursorTreeAdapter(params object[] args) : base(args) { }
 
-        /// <inheritdoc />
-        protected override void InitializeHandlers() { }
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
 
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "android.widget.CursorTreeAdapter";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -2133,6 +2300,9 @@ namespace Android.Widget
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
+
+        // TODO: complete the class
+
     }
     #endregion
 
@@ -2187,10 +2357,13 @@ namespace Android.Widget
             /// </summary>
             public OnDateChangedListener() { InitializeHandlers(); }
 
+            const string _bridgeClassName = "org.mases.netdroid.generated.android.widget.DatePicker_OnDateChangedListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "org.mases.netdroid.generated.android.widget.OnDateChangedListener";
+            public override string BridgeClassName => _bridgeClassName;
 
         
             // TODO: complete the class
@@ -2212,10 +2385,13 @@ namespace Android.Widget
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
 
+            const string _bridgeClassName = "android.widget.DatePicker$OnDateChangedListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "android.widget.DatePicker$OnDateChangedListener";
+            public override string BridgeClassName => _bridgeClassName;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
@@ -2243,7 +2419,7 @@ namespace Android.Widget
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/widget/DialerFilter.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class DialerFilter : Android.Widget.RelativeLayout
     {
         const string _bridgeClassName = "android.widget.DialerFilter";
@@ -2288,7 +2464,7 @@ namespace Android.Widget
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/widget/DigitalClock.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class DigitalClock : Android.Widget.TextView
     {
         const string _bridgeClassName = "android.widget.DigitalClock";
@@ -2428,10 +2604,13 @@ namespace Android.Widget
         /// </summary>
         public ExpandableListAdapter() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.android.widget.ExpandableListAdapter";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.android.widget.ExpandableListAdapter";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -2453,10 +2632,13 @@ namespace Android.Widget
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "android.widget.ExpandableListAdapter";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "android.widget.ExpandableListAdapter";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -2571,10 +2753,13 @@ namespace Android.Widget
             /// </summary>
             public OnChildClickListener() { InitializeHandlers(); }
 
+            const string _bridgeClassName = "org.mases.netdroid.generated.android.widget.ExpandableListView_OnChildClickListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "org.mases.netdroid.generated.android.widget.OnChildClickListener";
+            public override string BridgeClassName => _bridgeClassName;
 
         
             // TODO: complete the class
@@ -2596,10 +2781,13 @@ namespace Android.Widget
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
 
+            const string _bridgeClassName = "android.widget.ExpandableListView$OnChildClickListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "android.widget.ExpandableListView$OnChildClickListener";
+            public override string BridgeClassName => _bridgeClassName;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
@@ -2630,10 +2818,13 @@ namespace Android.Widget
             /// </summary>
             public OnGroupClickListener() { InitializeHandlers(); }
 
+            const string _bridgeClassName = "org.mases.netdroid.generated.android.widget.ExpandableListView_OnGroupClickListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "org.mases.netdroid.generated.android.widget.OnGroupClickListener";
+            public override string BridgeClassName => _bridgeClassName;
 
         
             // TODO: complete the class
@@ -2655,10 +2846,13 @@ namespace Android.Widget
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
 
+            const string _bridgeClassName = "android.widget.ExpandableListView$OnGroupClickListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "android.widget.ExpandableListView$OnGroupClickListener";
+            public override string BridgeClassName => _bridgeClassName;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
@@ -2689,10 +2883,13 @@ namespace Android.Widget
             /// </summary>
             public OnGroupCollapseListener() { InitializeHandlers(); }
 
+            const string _bridgeClassName = "org.mases.netdroid.generated.android.widget.ExpandableListView_OnGroupCollapseListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "org.mases.netdroid.generated.android.widget.OnGroupCollapseListener";
+            public override string BridgeClassName => _bridgeClassName;
 
         
             // TODO: complete the class
@@ -2714,10 +2911,13 @@ namespace Android.Widget
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
 
+            const string _bridgeClassName = "android.widget.ExpandableListView$OnGroupCollapseListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "android.widget.ExpandableListView$OnGroupCollapseListener";
+            public override string BridgeClassName => _bridgeClassName;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
@@ -2748,10 +2948,13 @@ namespace Android.Widget
             /// </summary>
             public OnGroupExpandListener() { InitializeHandlers(); }
 
+            const string _bridgeClassName = "org.mases.netdroid.generated.android.widget.ExpandableListView_OnGroupExpandListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "org.mases.netdroid.generated.android.widget.OnGroupExpandListener";
+            public override string BridgeClassName => _bridgeClassName;
 
         
             // TODO: complete the class
@@ -2773,10 +2976,13 @@ namespace Android.Widget
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
 
+            const string _bridgeClassName = "android.widget.ExpandableListView$OnGroupExpandListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "android.widget.ExpandableListView$OnGroupExpandListener";
+            public override string BridgeClassName => _bridgeClassName;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
@@ -2810,12 +3016,12 @@ namespace Android.Widget
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Filter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Filter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Filter() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Filter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Filter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Filter(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -2853,10 +3059,13 @@ namespace Android.Widget
             /// </summary>
             public FilterListener() { InitializeHandlers(); }
 
+            const string _bridgeClassName = "org.mases.netdroid.generated.android.widget.Filter_FilterListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "org.mases.netdroid.generated.android.widget.FilterListener";
+            public override string BridgeClassName => _bridgeClassName;
 
         
             // TODO: complete the class
@@ -2878,10 +3087,13 @@ namespace Android.Widget
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
 
+            const string _bridgeClassName = "android.widget.Filter$FilterListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "android.widget.Filter$FilterListener";
+            public override string BridgeClassName => _bridgeClassName;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
@@ -2915,12 +3127,12 @@ namespace Android.Widget
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Filterable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Filterable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Filterable() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Filterable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Filterable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Filterable(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -2961,12 +3173,12 @@ namespace Android.Widget
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("FilterQueryProvider class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("FilterQueryProvider class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public FilterQueryProvider() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("FilterQueryProvider class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("FilterQueryProvider class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public FilterQueryProvider(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -3089,7 +3301,7 @@ namespace Android.Widget
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/widget/Gallery.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class Gallery : Android.Widget.AbsSpinner
     {
         const string _bridgeClassName = "android.widget.Gallery";
@@ -3130,7 +3342,7 @@ namespace Android.Widget
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/Gallery.LayoutParams.html"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public partial class LayoutParams : Android.View.ViewGroup.LayoutParams
         {
             const string _bridgeClassName = "android.widget.Gallery$LayoutParams";
@@ -3225,12 +3437,12 @@ namespace Android.Widget
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
-            [Obsolete("Alignment class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("Alignment class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Alignment() { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
-            [Obsolete("Alignment class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("Alignment class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Alignment(params object[] args) : base(args) { }
 
             private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -3401,38 +3613,24 @@ namespace Android.Widget
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/widget/HeaderViewListAdapter.html"/>
     /// </summary>
-    public partial class HeaderViewListAdapter : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class HeaderViewListAdapter : MASES.JCOBridge.C2JBridge.JVMBridgeBase<HeaderViewListAdapter>
     {
+        const string _bridgeClassName = "android.widget.HeaderViewListAdapter";
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public HeaderViewListAdapter() { InitializeHandlers(); }
-
-    #warning Remember to build the Java class for event listener
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region HeaderViewListAdapterDirect
-    /// <summary>
-    /// Direct override of <see cref="HeaderViewListAdapter"/> or its generic type if there is one
-    /// </summary>
-    public partial class HeaderViewListAdapterDirect : HeaderViewListAdapter
-    {
+        public HeaderViewListAdapter() { }
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public override bool AutoInit => false;
+        public HeaderViewListAdapter(params object[] args) : base(args) { }
 
-        /// <inheritdoc />
-        protected override void InitializeHandlers() { }
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
 
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "android.widget.HeaderViewListAdapter";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -3449,6 +3647,9 @@ namespace Android.Widget
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
+
+        // TODO: complete the class
+
     }
     #endregion
 
@@ -3462,12 +3663,12 @@ namespace Android.Widget
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("HeterogeneousExpandableList class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("HeterogeneousExpandableList class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public HeterogeneousExpandableList() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("HeterogeneousExpandableList class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("HeterogeneousExpandableList class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public HeterogeneousExpandableList(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -3817,10 +4018,13 @@ namespace Android.Widget
         /// </summary>
         public ListAdapter() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.android.widget.ListAdapter";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.android.widget.ListAdapter";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -3842,10 +4046,13 @@ namespace Android.Widget
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "android.widget.ListAdapter";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "android.widget.ListAdapter";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -4135,12 +4342,12 @@ namespace Android.Widget
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
-            [Obsolete("MediaPlayerControl class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("MediaPlayerControl class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public MediaPlayerControl() { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
-            [Obsolete("MediaPlayerControl class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("MediaPlayerControl class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public MediaPlayerControl(params object[] args) : base(args) { }
 
             private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -4269,12 +4476,12 @@ namespace Android.Widget
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
-            [Obsolete("Tokenizer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("Tokenizer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Tokenizer() { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
-            [Obsolete("Tokenizer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("Tokenizer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Tokenizer(params object[] args) : base(args) { }
 
             private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -4359,12 +4566,12 @@ namespace Android.Widget
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
-            [Obsolete("Formatter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("Formatter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Formatter() { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
-            [Obsolete("Formatter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("Formatter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Formatter(params object[] args) : base(args) { }
 
             private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -4406,10 +4613,13 @@ namespace Android.Widget
             /// </summary>
             public OnScrollListener() { InitializeHandlers(); }
 
+            const string _bridgeClassName = "org.mases.netdroid.generated.android.widget.NumberPicker_OnScrollListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "org.mases.netdroid.generated.android.widget.OnScrollListener";
+            public override string BridgeClassName => _bridgeClassName;
 
         
             // TODO: complete the class
@@ -4431,10 +4641,13 @@ namespace Android.Widget
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
 
+            const string _bridgeClassName = "android.widget.NumberPicker$OnScrollListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "android.widget.NumberPicker$OnScrollListener";
+            public override string BridgeClassName => _bridgeClassName;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
@@ -4465,10 +4678,13 @@ namespace Android.Widget
             /// </summary>
             public OnValueChangeListener() { InitializeHandlers(); }
 
+            const string _bridgeClassName = "org.mases.netdroid.generated.android.widget.NumberPicker_OnValueChangeListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "org.mases.netdroid.generated.android.widget.OnValueChangeListener";
+            public override string BridgeClassName => _bridgeClassName;
 
         
             // TODO: complete the class
@@ -4490,10 +4706,13 @@ namespace Android.Widget
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
 
+            const string _bridgeClassName = "android.widget.NumberPicker$OnValueChangeListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "android.widget.NumberPicker$OnValueChangeListener";
+            public override string BridgeClassName => _bridgeClassName;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
@@ -4612,10 +4831,13 @@ namespace Android.Widget
             /// </summary>
             public OnDismissListener() { InitializeHandlers(); }
 
+            const string _bridgeClassName = "org.mases.netdroid.generated.android.widget.PopupMenu_OnDismissListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "org.mases.netdroid.generated.android.widget.OnDismissListener";
+            public override string BridgeClassName => _bridgeClassName;
 
         
             // TODO: complete the class
@@ -4637,10 +4859,13 @@ namespace Android.Widget
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
 
+            const string _bridgeClassName = "android.widget.PopupMenu$OnDismissListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "android.widget.PopupMenu$OnDismissListener";
+            public override string BridgeClassName => _bridgeClassName;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
@@ -4671,10 +4896,13 @@ namespace Android.Widget
             /// </summary>
             public OnMenuItemClickListener() { InitializeHandlers(); }
 
+            const string _bridgeClassName = "org.mases.netdroid.generated.android.widget.PopupMenu_OnMenuItemClickListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "org.mases.netdroid.generated.android.widget.OnMenuItemClickListener";
+            public override string BridgeClassName => _bridgeClassName;
 
         
             // TODO: complete the class
@@ -4696,10 +4924,13 @@ namespace Android.Widget
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
 
+            const string _bridgeClassName = "android.widget.PopupMenu$OnMenuItemClickListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "android.widget.PopupMenu$OnMenuItemClickListener";
+            public override string BridgeClassName => _bridgeClassName;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
@@ -4774,10 +5005,13 @@ namespace Android.Widget
             /// </summary>
             public OnDismissListener() { InitializeHandlers(); }
 
+            const string _bridgeClassName = "org.mases.netdroid.generated.android.widget.PopupWindow_OnDismissListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "org.mases.netdroid.generated.android.widget.OnDismissListener";
+            public override string BridgeClassName => _bridgeClassName;
 
         
             // TODO: complete the class
@@ -4799,10 +5033,13 @@ namespace Android.Widget
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
 
+            const string _bridgeClassName = "android.widget.PopupWindow$OnDismissListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "android.widget.PopupWindow$OnDismissListener";
+            public override string BridgeClassName => _bridgeClassName;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
@@ -5053,10 +5290,13 @@ namespace Android.Widget
             /// </summary>
             public OnCheckedChangeListener() { InitializeHandlers(); }
 
+            const string _bridgeClassName = "org.mases.netdroid.generated.android.widget.RadioGroup_OnCheckedChangeListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "org.mases.netdroid.generated.android.widget.OnCheckedChangeListener";
+            public override string BridgeClassName => _bridgeClassName;
 
         
             // TODO: complete the class
@@ -5078,10 +5318,13 @@ namespace Android.Widget
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
 
+            const string _bridgeClassName = "android.widget.RadioGroup$OnCheckedChangeListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "android.widget.RadioGroup$OnCheckedChangeListener";
+            public override string BridgeClassName => _bridgeClassName;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
@@ -5156,10 +5399,13 @@ namespace Android.Widget
             /// </summary>
             public OnRatingBarChangeListener() { InitializeHandlers(); }
 
+            const string _bridgeClassName = "org.mases.netdroid.generated.android.widget.RatingBar_OnRatingBarChangeListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "org.mases.netdroid.generated.android.widget.OnRatingBarChangeListener";
+            public override string BridgeClassName => _bridgeClassName;
 
         
             // TODO: complete the class
@@ -5181,10 +5427,13 @@ namespace Android.Widget
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
 
+            const string _bridgeClassName = "android.widget.RatingBar$OnRatingBarChangeListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "android.widget.RatingBar$OnRatingBarChangeListener";
+            public override string BridgeClassName => _bridgeClassName;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
@@ -5495,12 +5744,12 @@ namespace Android.Widget
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
-            [Obsolete("RemoteView class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("RemoteView class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public RemoteView() { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
-            [Obsolete("RemoteView class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("RemoteView class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public RemoteView(params object[] args) : base(args) { }
 
             private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -5589,12 +5838,12 @@ namespace Android.Widget
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("RemoteViewsService class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("RemoteViewsService class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public RemoteViewsService() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("RemoteViewsService class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("RemoteViewsService class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public RemoteViewsService(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -5631,12 +5880,12 @@ namespace Android.Widget
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
-            [Obsolete("RemoteViewsFactory class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("RemoteViewsFactory class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public RemoteViewsFactory() { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
-            [Obsolete("RemoteViewsFactory class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("RemoteViewsFactory class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public RemoteViewsFactory(params object[] args) : base(args) { }
 
             private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -5675,38 +5924,26 @@ namespace Android.Widget
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/widget/ResourceCursorAdapter.html"/>
     /// </summary>
-    public partial class ResourceCursorAdapter : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class ResourceCursorAdapter : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ResourceCursorAdapter>
     {
+        const string _bridgeClassName = "android.widget.ResourceCursorAdapter";
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public ResourceCursorAdapter() { InitializeHandlers(); }
-
-    #warning Remember to build the Java class for event listener
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region ResourceCursorAdapterDirect
-    /// <summary>
-    /// Direct override of <see cref="ResourceCursorAdapter"/> or its generic type if there is one
-    /// </summary>
-    public partial class ResourceCursorAdapterDirect : ResourceCursorAdapter
-    {
+        [global::System.Obsolete("ResourceCursorAdapter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        public ResourceCursorAdapter() { }
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public override bool AutoInit => false;
+        [global::System.Obsolete("ResourceCursorAdapter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        public ResourceCursorAdapter(params object[] args) : base(args) { }
 
-        /// <inheritdoc />
-        protected override void InitializeHandlers() { }
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
 
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "android.widget.ResourceCursorAdapter";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -5723,6 +5960,9 @@ namespace Android.Widget
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
+
+        // TODO: complete the class
+
     }
     #endregion
 
@@ -5730,38 +5970,26 @@ namespace Android.Widget
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/widget/ResourceCursorTreeAdapter.html"/>
     /// </summary>
-    public partial class ResourceCursorTreeAdapter : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class ResourceCursorTreeAdapter : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ResourceCursorTreeAdapter>
     {
+        const string _bridgeClassName = "android.widget.ResourceCursorTreeAdapter";
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public ResourceCursorTreeAdapter() { InitializeHandlers(); }
-
-    #warning Remember to build the Java class for event listener
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region ResourceCursorTreeAdapterDirect
-    /// <summary>
-    /// Direct override of <see cref="ResourceCursorTreeAdapter"/> or its generic type if there is one
-    /// </summary>
-    public partial class ResourceCursorTreeAdapterDirect : ResourceCursorTreeAdapter
-    {
+        [global::System.Obsolete("ResourceCursorTreeAdapter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        public ResourceCursorTreeAdapter() { }
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public override bool AutoInit => false;
+        [global::System.Obsolete("ResourceCursorTreeAdapter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        public ResourceCursorTreeAdapter(params object[] args) : base(args) { }
 
-        /// <inheritdoc />
-        protected override void InitializeHandlers() { }
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
 
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "android.widget.ResourceCursorTreeAdapter";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -5778,6 +6006,9 @@ namespace Android.Widget
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
+
+        // TODO: complete the class
+
     }
     #endregion
 
@@ -5920,10 +6151,13 @@ namespace Android.Widget
             /// </summary>
             public OnCloseListener() { InitializeHandlers(); }
 
+            const string _bridgeClassName = "org.mases.netdroid.generated.android.widget.SearchView_OnCloseListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "org.mases.netdroid.generated.android.widget.OnCloseListener";
+            public override string BridgeClassName => _bridgeClassName;
 
         
             // TODO: complete the class
@@ -5945,10 +6179,13 @@ namespace Android.Widget
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
 
+            const string _bridgeClassName = "android.widget.SearchView$OnCloseListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "android.widget.SearchView$OnCloseListener";
+            public override string BridgeClassName => _bridgeClassName;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
@@ -5979,10 +6216,13 @@ namespace Android.Widget
             /// </summary>
             public OnQueryTextListener() { InitializeHandlers(); }
 
+            const string _bridgeClassName = "org.mases.netdroid.generated.android.widget.SearchView_OnQueryTextListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "org.mases.netdroid.generated.android.widget.OnQueryTextListener";
+            public override string BridgeClassName => _bridgeClassName;
 
         
             // TODO: complete the class
@@ -6004,10 +6244,13 @@ namespace Android.Widget
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
 
+            const string _bridgeClassName = "android.widget.SearchView$OnQueryTextListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "android.widget.SearchView$OnQueryTextListener";
+            public override string BridgeClassName => _bridgeClassName;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
@@ -6038,10 +6281,13 @@ namespace Android.Widget
             /// </summary>
             public OnSuggestionListener() { InitializeHandlers(); }
 
+            const string _bridgeClassName = "org.mases.netdroid.generated.android.widget.SearchView_OnSuggestionListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "org.mases.netdroid.generated.android.widget.OnSuggestionListener";
+            public override string BridgeClassName => _bridgeClassName;
 
         
             // TODO: complete the class
@@ -6063,10 +6309,13 @@ namespace Android.Widget
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
 
+            const string _bridgeClassName = "android.widget.SearchView$OnSuggestionListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "android.widget.SearchView$OnSuggestionListener";
+            public override string BridgeClassName => _bridgeClassName;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
@@ -6100,12 +6349,12 @@ namespace Android.Widget
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("SectionIndexer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("SectionIndexer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public SectionIndexer() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("SectionIndexer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("SectionIndexer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public SectionIndexer(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -6187,10 +6436,13 @@ namespace Android.Widget
             /// </summary>
             public OnSeekBarChangeListener() { InitializeHandlers(); }
 
+            const string _bridgeClassName = "org.mases.netdroid.generated.android.widget.SeekBar_OnSeekBarChangeListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "org.mases.netdroid.generated.android.widget.OnSeekBarChangeListener";
+            public override string BridgeClassName => _bridgeClassName;
 
         
             // TODO: complete the class
@@ -6212,10 +6464,13 @@ namespace Android.Widget
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
 
+            const string _bridgeClassName = "android.widget.SeekBar$OnSeekBarChangeListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "android.widget.SeekBar$OnSeekBarChangeListener";
+            public override string BridgeClassName => _bridgeClassName;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
@@ -6290,10 +6545,13 @@ namespace Android.Widget
             /// </summary>
             public OnShareTargetSelectedListener() { InitializeHandlers(); }
 
+            const string _bridgeClassName = "org.mases.netdroid.generated.android.widget.ShareActionProvider_OnShareTargetSelectedListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "org.mases.netdroid.generated.android.widget.OnShareTargetSelectedListener";
+            public override string BridgeClassName => _bridgeClassName;
 
         
             // TODO: complete the class
@@ -6315,10 +6573,13 @@ namespace Android.Widget
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
 
+            const string _bridgeClassName = "android.widget.ShareActionProvider$OnShareTargetSelectedListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "android.widget.ShareActionProvider$OnShareTargetSelectedListener";
+            public override string BridgeClassName => _bridgeClassName;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
@@ -6353,10 +6614,13 @@ namespace Android.Widget
         /// </summary>
         public SimpleAdapter() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.android.widget.SimpleAdapter";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.android.widget.SimpleAdapter";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -6370,12 +6634,12 @@ namespace Android.Widget
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
-            [Obsolete("ViewBinder class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("ViewBinder class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public ViewBinder() { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
-            [Obsolete("ViewBinder class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("ViewBinder class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public ViewBinder(params object[] args) : base(args) { }
 
             private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -6424,10 +6688,13 @@ namespace Android.Widget
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "android.widget.SimpleAdapter";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "android.widget.SimpleAdapter";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -6451,14 +6718,40 @@ namespace Android.Widget
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/widget/SimpleCursorAdapter.html"/>
     /// </summary>
-    public partial class SimpleCursorAdapter : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class SimpleCursorAdapter : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SimpleCursorAdapter>
     {
+        const string _bridgeClassName = "android.widget.SimpleCursorAdapter";
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public SimpleCursorAdapter() { InitializeHandlers(); }
+        public SimpleCursorAdapter() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public SimpleCursorAdapter(params object[] args) : base(args) { }
 
-    #warning Remember to build the Java class for event listener
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+        /// </summary>
+        public override bool IsBridgeAbstract => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+        /// </summary>
+        public override bool IsBridgeCloseable => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+        /// </summary>
+        public override bool IsBridgeInterface => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+        /// </summary>
+        public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
         #region CursorToStringConverter
@@ -6471,12 +6764,12 @@ namespace Android.Widget
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
-            [Obsolete("CursorToStringConverter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("CursorToStringConverter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public CursorToStringConverter() { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
-            [Obsolete("CursorToStringConverter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("CursorToStringConverter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public CursorToStringConverter(params object[] args) : base(args) { }
 
             private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -6517,12 +6810,12 @@ namespace Android.Widget
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
-            [Obsolete("ViewBinder class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("ViewBinder class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public ViewBinder() { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
-            [Obsolete("ViewBinder class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("ViewBinder class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public ViewBinder(params object[] args) : base(args) { }
 
             private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -6554,43 +6847,6 @@ namespace Android.Widget
         #endregion
 
     
-    }
-    #endregion
-
-    #region SimpleCursorAdapterDirect
-    /// <summary>
-    /// Direct override of <see cref="SimpleCursorAdapter"/> or its generic type if there is one
-    /// </summary>
-    public partial class SimpleCursorAdapterDirect : SimpleCursorAdapter
-    {
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
-        /// </summary>
-        public override bool AutoInit => false;
-
-        /// <inheritdoc />
-        protected override void InitializeHandlers() { }
-
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
-        /// </summary>
-        public override string BridgeClassName => "android.widget.SimpleCursorAdapter";
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
-        /// </summary>
-        public override bool IsBridgeAbstract => false;
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
-        /// </summary>
-        public override bool IsBridgeCloseable => false;
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
-        /// </summary>
-        public override bool IsBridgeInterface => false;
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
-        /// </summary>
-        public override bool IsBridgeStatic => false;
     }
     #endregion
 
@@ -6598,84 +6854,26 @@ namespace Android.Widget
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/widget/SimpleCursorTreeAdapter.html"/>
     /// </summary>
-    public partial class SimpleCursorTreeAdapter : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class SimpleCursorTreeAdapter : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SimpleCursorTreeAdapter>
     {
+        const string _bridgeClassName = "android.widget.SimpleCursorTreeAdapter";
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public SimpleCursorTreeAdapter() { InitializeHandlers(); }
-
-    #warning Remember to build the Java class for event listener
-
-        // TODO: complete the class
-        #region ViewBinder
+        [global::System.Obsolete("SimpleCursorTreeAdapter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        public SimpleCursorTreeAdapter() { }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/SimpleCursorTreeAdapter.ViewBinder.html"/>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public partial class ViewBinder : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ViewBinder>
-        {
-            const string _bridgeClassName = "android.widget.SimpleCursorTreeAdapter$ViewBinder";
-            /// <summary>
-            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-            /// </summary>
-            [Obsolete("ViewBinder class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-            public ViewBinder() { }
-            /// <summary>
-            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-            /// </summary>
-            [Obsolete("ViewBinder class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-            public ViewBinder(params object[] args) : base(args) { }
+        [global::System.Obsolete("SimpleCursorTreeAdapter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        public SimpleCursorTreeAdapter(params object[] args) : base(args) { }
 
-            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
-
-            /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
-            /// </summary>
-            public override string BridgeClassName => _bridgeClassName;
-            /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
-            /// </summary>
-            public override bool IsBridgeAbstract => true;
-            /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
-            /// </summary>
-            public override bool IsBridgeCloseable => false;
-            /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
-            /// </summary>
-            public override bool IsBridgeInterface => true;
-            /// <summary>
-            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
-            /// </summary>
-            public override bool IsBridgeStatic => true;
-
-            // TODO: complete the class
-
-        }
-        #endregion
-
-    
-    }
-    #endregion
-
-    #region SimpleCursorTreeAdapterDirect
-    /// <summary>
-    /// Direct override of <see cref="SimpleCursorTreeAdapter"/> or its generic type if there is one
-    /// </summary>
-    public partial class SimpleCursorTreeAdapterDirect : SimpleCursorTreeAdapter
-    {
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
-        /// </summary>
-        public override bool AutoInit => false;
-
-        /// <inheritdoc />
-        protected override void InitializeHandlers() { }
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
 
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "android.widget.SimpleCursorTreeAdapter";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -6692,6 +6890,55 @@ namespace Android.Widget
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
+
+        // TODO: complete the class
+        #region ViewBinder
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/SimpleCursorTreeAdapter.ViewBinder.html"/>
+        /// </summary>
+        public partial class ViewBinder : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ViewBinder>
+        {
+            const string _bridgeClassName = "android.widget.SimpleCursorTreeAdapter$ViewBinder";
+            /// <summary>
+            /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+            /// </summary>
+            [global::System.Obsolete("ViewBinder class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            public ViewBinder() { }
+            /// <summary>
+            /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+            /// </summary>
+            [global::System.Obsolete("ViewBinder class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            public ViewBinder(params object[] args) : base(args) { }
+
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+            /// </summary>
+            public override string BridgeClassName => _bridgeClassName;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+            /// </summary>
+            public override bool IsBridgeAbstract => true;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+            /// </summary>
+            public override bool IsBridgeCloseable => false;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+            /// </summary>
+            public override bool IsBridgeInterface => true;
+            /// <summary>
+            /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+            /// </summary>
+            public override bool IsBridgeStatic => true;
+
+            // TODO: complete the class
+
+        }
+        #endregion
+
+    
     }
     #endregion
 
@@ -6699,38 +6946,24 @@ namespace Android.Widget
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/widget/SimpleExpandableListAdapter.html"/>
     /// </summary>
-    public partial class SimpleExpandableListAdapter : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class SimpleExpandableListAdapter : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SimpleExpandableListAdapter>
     {
+        const string _bridgeClassName = "android.widget.SimpleExpandableListAdapter";
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public SimpleExpandableListAdapter() { InitializeHandlers(); }
-
-    #warning Remember to build the Java class for event listener
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region SimpleExpandableListAdapterDirect
-    /// <summary>
-    /// Direct override of <see cref="SimpleExpandableListAdapter"/> or its generic type if there is one
-    /// </summary>
-    public partial class SimpleExpandableListAdapterDirect : SimpleExpandableListAdapter
-    {
+        public SimpleExpandableListAdapter() { }
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public override bool AutoInit => false;
+        public SimpleExpandableListAdapter(params object[] args) : base(args) { }
 
-        /// <inheritdoc />
-        protected override void InitializeHandlers() { }
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
 
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "android.widget.SimpleExpandableListAdapter";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -6747,6 +6980,9 @@ namespace Android.Widget
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
+
+        // TODO: complete the class
+
     }
     #endregion
 
@@ -6754,7 +6990,7 @@ namespace Android.Widget
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/widget/SlidingDrawer.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class SlidingDrawer : Android.View.ViewGroup
     {
         const string _bridgeClassName = "android.widget.SlidingDrawer";
@@ -6795,7 +7031,7 @@ namespace Android.Widget
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/SlidingDrawer.OnDrawerCloseListener.html"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public partial class OnDrawerCloseListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
         {
             /// <summary>
@@ -6803,10 +7039,13 @@ namespace Android.Widget
             /// </summary>
             public OnDrawerCloseListener() { InitializeHandlers(); }
 
+            const string _bridgeClassName = "org.mases.netdroid.generated.android.widget.SlidingDrawer_OnDrawerCloseListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "org.mases.netdroid.generated.android.widget.OnDrawerCloseListener";
+            public override string BridgeClassName => _bridgeClassName;
 
         
             // TODO: complete the class
@@ -6828,10 +7067,13 @@ namespace Android.Widget
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
 
+            const string _bridgeClassName = "android.widget.SlidingDrawer$OnDrawerCloseListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "android.widget.SlidingDrawer$OnDrawerCloseListener";
+            public override string BridgeClassName => _bridgeClassName;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
@@ -6855,7 +7097,7 @@ namespace Android.Widget
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/SlidingDrawer.OnDrawerOpenListener.html"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public partial class OnDrawerOpenListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
         {
             /// <summary>
@@ -6863,10 +7105,13 @@ namespace Android.Widget
             /// </summary>
             public OnDrawerOpenListener() { InitializeHandlers(); }
 
+            const string _bridgeClassName = "org.mases.netdroid.generated.android.widget.SlidingDrawer_OnDrawerOpenListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "org.mases.netdroid.generated.android.widget.OnDrawerOpenListener";
+            public override string BridgeClassName => _bridgeClassName;
 
         
             // TODO: complete the class
@@ -6888,10 +7133,13 @@ namespace Android.Widget
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
 
+            const string _bridgeClassName = "android.widget.SlidingDrawer$OnDrawerOpenListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "android.widget.SlidingDrawer$OnDrawerOpenListener";
+            public override string BridgeClassName => _bridgeClassName;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
@@ -6915,7 +7163,7 @@ namespace Android.Widget
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/SlidingDrawer.OnDrawerScrollListener.html"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public partial class OnDrawerScrollListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
         {
             /// <summary>
@@ -6923,10 +7171,13 @@ namespace Android.Widget
             /// </summary>
             public OnDrawerScrollListener() { InitializeHandlers(); }
 
+            const string _bridgeClassName = "org.mases.netdroid.generated.android.widget.SlidingDrawer_OnDrawerScrollListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "org.mases.netdroid.generated.android.widget.OnDrawerScrollListener";
+            public override string BridgeClassName => _bridgeClassName;
 
         
             // TODO: complete the class
@@ -6948,10 +7199,13 @@ namespace Android.Widget
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
 
+            const string _bridgeClassName = "android.widget.SlidingDrawer$OnDrawerScrollListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "android.widget.SlidingDrawer$OnDrawerScrollListener";
+            public override string BridgeClassName => _bridgeClassName;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
@@ -7074,10 +7328,13 @@ namespace Android.Widget
         /// </summary>
         public SpinnerAdapter() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.android.widget.SpinnerAdapter";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.android.widget.SpinnerAdapter";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -7099,10 +7356,13 @@ namespace Android.Widget
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "android.widget.SpinnerAdapter";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "android.widget.SpinnerAdapter";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -7214,7 +7474,7 @@ namespace Android.Widget
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/widget/TabHost.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class TabHost : Android.Widget.FrameLayout
     {
         const string _bridgeClassName = "android.widget.TabHost";
@@ -7255,7 +7515,7 @@ namespace Android.Widget
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TabHost.OnTabChangeListener.html"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public partial class OnTabChangeListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
         {
             /// <summary>
@@ -7263,10 +7523,13 @@ namespace Android.Widget
             /// </summary>
             public OnTabChangeListener() { InitializeHandlers(); }
 
+            const string _bridgeClassName = "org.mases.netdroid.generated.android.widget.TabHost_OnTabChangeListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "org.mases.netdroid.generated.android.widget.OnTabChangeListener";
+            public override string BridgeClassName => _bridgeClassName;
 
         
             // TODO: complete the class
@@ -7288,10 +7551,13 @@ namespace Android.Widget
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
 
+            const string _bridgeClassName = "android.widget.TabHost$OnTabChangeListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "android.widget.TabHost$OnTabChangeListener";
+            public override string BridgeClassName => _bridgeClassName;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
@@ -7315,19 +7581,19 @@ namespace Android.Widget
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TabHost.TabContentFactory.html"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public partial class TabContentFactory : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TabContentFactory>
         {
             const string _bridgeClassName = "android.widget.TabHost$TabContentFactory";
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
-            [Obsolete("TabContentFactory class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("TabContentFactory class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public TabContentFactory() { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
-            [Obsolete("TabContentFactory class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("TabContentFactory class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public TabContentFactory(params object[] args) : base(args) { }
 
             private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -7362,7 +7628,7 @@ namespace Android.Widget
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TabHost.TabSpec.html"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public partial class TabSpec : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TabSpec>
         {
             const string _bridgeClassName = "android.widget.TabHost$TabSpec";
@@ -7587,7 +7853,7 @@ namespace Android.Widget
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/widget/TabWidget.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class TabWidget : Android.Widget.LinearLayout
     {
         const string _bridgeClassName = "android.widget.TabWidget";
@@ -7811,10 +8077,13 @@ namespace Android.Widget
             /// </summary>
             public OnEditorActionListener() { InitializeHandlers(); }
 
+            const string _bridgeClassName = "org.mases.netdroid.generated.android.widget.TextView_OnEditorActionListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "org.mases.netdroid.generated.android.widget.OnEditorActionListener";
+            public override string BridgeClassName => _bridgeClassName;
 
         
             // TODO: complete the class
@@ -7836,10 +8105,13 @@ namespace Android.Widget
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
 
+            const string _bridgeClassName = "android.widget.TextView$OnEditorActionListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "android.widget.TextView$OnEditorActionListener";
+            public override string BridgeClassName => _bridgeClassName;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
@@ -7918,10 +8190,13 @@ namespace Android.Widget
         /// </summary>
         public ThemedSpinnerAdapter() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.android.widget.ThemedSpinnerAdapter";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.android.widget.ThemedSpinnerAdapter";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -7943,10 +8218,13 @@ namespace Android.Widget
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "android.widget.ThemedSpinnerAdapter";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "android.widget.ThemedSpinnerAdapter";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -8017,10 +8295,13 @@ namespace Android.Widget
             /// </summary>
             public OnTimeChangedListener() { InitializeHandlers(); }
 
+            const string _bridgeClassName = "org.mases.netdroid.generated.android.widget.TimePicker_OnTimeChangedListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "org.mases.netdroid.generated.android.widget.OnTimeChangedListener";
+            public override string BridgeClassName => _bridgeClassName;
 
         
             // TODO: complete the class
@@ -8042,10 +8323,13 @@ namespace Android.Widget
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
 
+            const string _bridgeClassName = "android.widget.TimePicker$OnTimeChangedListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "android.widget.TimePicker$OnTimeChangedListener";
+            public override string BridgeClassName => _bridgeClassName;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
@@ -8119,12 +8403,12 @@ namespace Android.Widget
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
-            [Obsolete("Callback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("Callback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Callback() { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
-            [Obsolete("Callback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("Callback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Callback(params object[] args) : base(args) { }
 
             private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -8298,10 +8582,13 @@ namespace Android.Widget
             /// </summary>
             public OnMenuItemClickListener() { InitializeHandlers(); }
 
+            const string _bridgeClassName = "org.mases.netdroid.generated.android.widget.Toolbar_OnMenuItemClickListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "org.mases.netdroid.generated.android.widget.OnMenuItemClickListener";
+            public override string BridgeClassName => _bridgeClassName;
 
         
             // TODO: complete the class
@@ -8323,10 +8610,13 @@ namespace Android.Widget
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
 
+            const string _bridgeClassName = "android.widget.Toolbar$OnMenuItemClickListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "android.widget.Toolbar$OnMenuItemClickListener";
+            public override string BridgeClassName => _bridgeClassName;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
@@ -8354,7 +8644,7 @@ namespace Android.Widget
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/widget/TwoLineListItem.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class TwoLineListItem : Android.Widget.RelativeLayout
     {
         const string _bridgeClassName = "android.widget.TwoLineListItem";
@@ -8577,12 +8867,12 @@ namespace Android.Widget
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
-            [Obsolete("ViewFactory class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("ViewFactory class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public ViewFactory() { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
-            [Obsolete("ViewFactory class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("ViewFactory class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public ViewFactory(params object[] args) : base(args) { }
 
             private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -8628,10 +8918,13 @@ namespace Android.Widget
         /// </summary>
         public WrapperListAdapter() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.android.widget.WrapperListAdapter";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.android.widget.WrapperListAdapter";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -8653,10 +8946,13 @@ namespace Android.Widget
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "android.widget.WrapperListAdapter";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "android.widget.WrapperListAdapter";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -8680,7 +8976,7 @@ namespace Android.Widget
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/widget/ZoomButton.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class ZoomButton : Android.Widget.ImageButton
     {
         const string _bridgeClassName = "android.widget.ZoomButton";
@@ -8725,7 +9021,7 @@ namespace Android.Widget
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/widget/ZoomButtonsController.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class ZoomButtonsController : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ZoomButtonsController>
     {
         const string _bridgeClassName = "android.widget.ZoomButtonsController";
@@ -8766,7 +9062,7 @@ namespace Android.Widget
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ZoomButtonsController.OnZoomListener.html"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public partial class OnZoomListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
         {
             /// <summary>
@@ -8774,10 +9070,13 @@ namespace Android.Widget
             /// </summary>
             public OnZoomListener() { InitializeHandlers(); }
 
+            const string _bridgeClassName = "org.mases.netdroid.generated.android.widget.ZoomButtonsController_OnZoomListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+            
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "org.mases.netdroid.generated.android.widget.OnZoomListener";
+            public override string BridgeClassName => _bridgeClassName;
 
         
             // TODO: complete the class
@@ -8799,10 +9098,13 @@ namespace Android.Widget
             /// <inheritdoc />
             protected override void InitializeHandlers() { }
 
+            const string _bridgeClassName = "android.widget.ZoomButtonsController$OnZoomListener";
+            private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
             /// </summary>
-            public override string BridgeClassName => "android.widget.ZoomButtonsController$OnZoomListener";
+            public override string BridgeClassName => _bridgeClassName;
             /// <summary>
             /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
             /// </summary>
@@ -8830,7 +9132,7 @@ namespace Android.Widget
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/widget/ZoomControls.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class ZoomControls : Android.Widget.LinearLayout
     {
         const string _bridgeClassName = "android.widget.ZoomControls";

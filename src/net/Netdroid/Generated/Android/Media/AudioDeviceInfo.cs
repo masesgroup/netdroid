@@ -232,97 +232,6 @@ namespace Android.Media
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioDeviceInfo.html#getAddress()"/> 
-        /// </summary>
-        public Java.Lang.String Address
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAddress", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioDeviceInfo.html#getAudioDescriptors()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Media.AudioDescriptor> AudioDescriptors
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Media.AudioDescriptor>>("getAudioDescriptors", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioDeviceInfo.html#getAudioProfiles()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Media.AudioProfile> AudioProfiles
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Media.AudioProfile>>("getAudioProfiles", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioDeviceInfo.html#getChannelCounts()"/> 
-        /// </summary>
-        public int[] ChannelCounts
-        {
-            get { return IExecuteWithSignatureArray<int>("getChannelCounts", "()[I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioDeviceInfo.html#getChannelIndexMasks()"/> 
-        /// </summary>
-        public int[] ChannelIndexMasks
-        {
-            get { return IExecuteWithSignatureArray<int>("getChannelIndexMasks", "()[I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioDeviceInfo.html#getChannelMasks()"/> 
-        /// </summary>
-        public int[] ChannelMasks
-        {
-            get { return IExecuteWithSignatureArray<int>("getChannelMasks", "()[I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioDeviceInfo.html#getEncapsulationMetadataTypes()"/> 
-        /// </summary>
-        public int[] EncapsulationMetadataTypes
-        {
-            get { return IExecuteWithSignatureArray<int>("getEncapsulationMetadataTypes", "()[I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioDeviceInfo.html#getEncapsulationModes()"/> 
-        /// </summary>
-        public int[] EncapsulationModes
-        {
-            get { return IExecuteWithSignatureArray<int>("getEncapsulationModes", "()[I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioDeviceInfo.html#getEncodings()"/> 
-        /// </summary>
-        public int[] Encodings
-        {
-            get { return IExecuteWithSignatureArray<int>("getEncodings", "()[I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioDeviceInfo.html#getId()"/> 
-        /// </summary>
-        public int Id
-        {
-            get { return IExecuteWithSignature<int>("getId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioDeviceInfo.html#getProductName()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence ProductName
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getProductName", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioDeviceInfo.html#getSampleRates()"/> 
-        /// </summary>
-        public int[] SampleRates
-        {
-            get { return IExecuteWithSignatureArray<int>("getSampleRates", "()[I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioDeviceInfo.html#getType()"/> 
-        /// </summary>
-        public int Type
-        {
-            get { return IExecuteWithSignature<int>("getType", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioDeviceInfo.html#isSink()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -337,6 +246,110 @@ namespace Android.Media
         public bool IsSource()
         {
             return IExecuteWithSignature<bool>("isSource", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioDeviceInfo.html#getId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetId()
+        {
+            return IExecuteWithSignature<int>("getId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioDeviceInfo.html#getType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetType()
+        {
+            return IExecuteWithSignature<int>("getType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioDeviceInfo.html#getChannelCounts()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int[] GetChannelCounts()
+        {
+            return IExecuteWithSignatureArray<int>("getChannelCounts", "()[I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioDeviceInfo.html#getChannelIndexMasks()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int[] GetChannelIndexMasks()
+        {
+            return IExecuteWithSignatureArray<int>("getChannelIndexMasks", "()[I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioDeviceInfo.html#getChannelMasks()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int[] GetChannelMasks()
+        {
+            return IExecuteWithSignatureArray<int>("getChannelMasks", "()[I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioDeviceInfo.html#getEncapsulationMetadataTypes()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int[] GetEncapsulationMetadataTypes()
+        {
+            return IExecuteWithSignatureArray<int>("getEncapsulationMetadataTypes", "()[I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioDeviceInfo.html#getEncapsulationModes()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int[] GetEncapsulationModes()
+        {
+            return IExecuteWithSignatureArray<int>("getEncapsulationModes", "()[I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioDeviceInfo.html#getEncodings()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int[] GetEncodings()
+        {
+            return IExecuteWithSignatureArray<int>("getEncodings", "()[I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioDeviceInfo.html#getSampleRates()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int[] GetSampleRates()
+        {
+            return IExecuteWithSignatureArray<int>("getSampleRates", "()[I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioDeviceInfo.html#getProductName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetProductName()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getProductName", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioDeviceInfo.html#getAddress()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetAddress()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getAddress", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioDeviceInfo.html#getAudioDescriptors()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Media.AudioDescriptor> GetAudioDescriptors()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Media.AudioDescriptor>>("getAudioDescriptors", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioDeviceInfo.html#getAudioProfiles()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Media.AudioProfile> GetAudioProfiles()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Media.AudioProfile>>("getAudioProfiles", "()Ljava/util/List;");
         }
 
         #endregion

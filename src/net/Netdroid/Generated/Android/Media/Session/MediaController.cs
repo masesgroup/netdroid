@@ -55,102 +55,68 @@ namespace Android.Media.Session
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/session/MediaController.html#getExtras()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/session/MediaController.html#getSessionActivity()"/>
         /// </summary>
-        public Android.Os.Bundle Extras
+        /// <returns><see cref="Android.App.PendingIntent"/></returns>
+        public Android.App.PendingIntent GetSessionActivity()
         {
-            get { return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;"); }
+            return IExecuteWithSignature<Android.App.PendingIntent>("getSessionActivity", "()Landroid/app/PendingIntent;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/session/MediaController.html#getFlags()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/session/MediaController.html#getMetadata()"/>
         /// </summary>
-        public long Flags
+        /// <returns><see cref="Android.Media.MediaMetadata"/></returns>
+        public Android.Media.MediaMetadata GetMetadata()
         {
-            get { return IExecuteWithSignature<long>("getFlags", "()J"); }
+            return IExecuteWithSignature<Android.Media.MediaMetadata>("getMetadata", "()Landroid/media/MediaMetadata;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/session/MediaController.html#getPlaybackInfo()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/session/MediaController.html#getPlaybackInfo()"/>
         /// </summary>
-        public Android.Media.Session.MediaController.PlaybackInfo GetPlaybackInfo
+        /// <returns><see cref="Android.Media.Session.MediaController.PlaybackInfo"/></returns>
+        public Android.Media.Session.MediaController.PlaybackInfo GetPlaybackInfo()
         {
-            get { return IExecuteWithSignature<Android.Media.Session.MediaController.PlaybackInfo>("getPlaybackInfo", "()Landroid/media/session/MediaController$PlaybackInfo;"); }
+            return IExecuteWithSignature<Android.Media.Session.MediaController.PlaybackInfo>("getPlaybackInfo", "()Landroid/media/session/MediaController$PlaybackInfo;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/session/MediaController.html#getTransportControls()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/session/MediaController.html#getTransportControls()"/>
         /// </summary>
-        public Android.Media.Session.MediaController.TransportControls GetTransportControls
+        /// <returns><see cref="Android.Media.Session.MediaController.TransportControls"/></returns>
+        public Android.Media.Session.MediaController.TransportControls GetTransportControls()
         {
-            get { return IExecuteWithSignature<Android.Media.Session.MediaController.TransportControls>("getTransportControls", "()Landroid/media/session/MediaController$TransportControls;"); }
+            return IExecuteWithSignature<Android.Media.Session.MediaController.TransportControls>("getTransportControls", "()Landroid/media/session/MediaController$TransportControls;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/session/MediaController.html#getMetadata()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/session/MediaController.html#getSessionToken()"/>
         /// </summary>
-        public Android.Media.MediaMetadata Metadata
+        /// <returns><see cref="Android.Media.Session.MediaSession.Token"/></returns>
+        public Android.Media.Session.MediaSession.Token GetSessionToken()
         {
-            get { return IExecuteWithSignature<Android.Media.MediaMetadata>("getMetadata", "()Landroid/media/MediaMetadata;"); }
+            return IExecuteWithSignature<Android.Media.Session.MediaSession.Token>("getSessionToken", "()Landroid/media/session/MediaSession$Token;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/session/MediaController.html#getPackageName()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/session/MediaController.html#getPlaybackState()"/>
         /// </summary>
-        public Java.Lang.String PackageName
+        /// <returns><see cref="Android.Media.Session.PlaybackState"/></returns>
+        public Android.Media.Session.PlaybackState GetPlaybackState()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPackageName", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Android.Media.Session.PlaybackState>("getPlaybackState", "()Landroid/media/session/PlaybackState;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/session/MediaController.html#getPlaybackState()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/session/MediaController.html#getExtras()"/>
         /// </summary>
-        public Android.Media.Session.PlaybackState PlaybackState
+        /// <returns><see cref="Android.Os.Bundle"/></returns>
+        public Android.Os.Bundle GetExtras()
         {
-            get { return IExecuteWithSignature<Android.Media.Session.PlaybackState>("getPlaybackState", "()Landroid/media/session/PlaybackState;"); }
+            return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/session/MediaController.html#getQueue()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/session/MediaController.html#getSessionInfo()"/>
         /// </summary>
-        public Java.Util.List<Android.Media.Session.MediaSession.QueueItem> Queue
+        /// <returns><see cref="Android.Os.Bundle"/></returns>
+        public Android.Os.Bundle GetSessionInfo()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Media.Session.MediaSession.QueueItem>>("getQueue", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/session/MediaController.html#getQueueTitle()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence QueueTitle
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getQueueTitle", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/session/MediaController.html#getRatingType()"/> 
-        /// </summary>
-        public int RatingType
-        {
-            get { return IExecuteWithSignature<int>("getRatingType", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/session/MediaController.html#getSessionActivity()"/> 
-        /// </summary>
-        public Android.App.PendingIntent SessionActivity
-        {
-            get { return IExecuteWithSignature<Android.App.PendingIntent>("getSessionActivity", "()Landroid/app/PendingIntent;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/session/MediaController.html#getSessionInfo()"/> 
-        /// </summary>
-        public Android.Os.Bundle SessionInfo
-        {
-            get { return IExecuteWithSignature<Android.Os.Bundle>("getSessionInfo", "()Landroid/os/Bundle;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/session/MediaController.html#getSessionToken()"/> 
-        /// </summary>
-        public Android.Media.Session.MediaSession.Token SessionToken
-        {
-            get { return IExecuteWithSignature<Android.Media.Session.MediaSession.Token>("getSessionToken", "()Landroid/media/session/MediaSession$Token;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/session/MediaController.html#getTag()"/> 
-        /// </summary>
-        public Java.Lang.String Tag
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getTag", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Android.Os.Bundle>("getSessionInfo", "()Landroid/os/Bundle;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/session/MediaController.html#dispatchMediaButtonEvent(android.view.KeyEvent)"/>
@@ -160,6 +126,54 @@ namespace Android.Media.Session
         public bool DispatchMediaButtonEvent(Android.View.KeyEvent arg0)
         {
             return IExecuteWithSignature<bool>("dispatchMediaButtonEvent", "(Landroid/view/KeyEvent;)Z", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/session/MediaController.html#getRatingType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetRatingType()
+        {
+            return IExecuteWithSignature<int>("getRatingType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/session/MediaController.html#getQueueTitle()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetQueueTitle()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getQueueTitle", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/session/MediaController.html#getPackageName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPackageName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPackageName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/session/MediaController.html#getTag()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetTag()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getTag", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/session/MediaController.html#getQueue()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Media.Session.MediaSession.QueueItem> GetQueue()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Media.Session.MediaSession.QueueItem>>("getQueue", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/session/MediaController.html#getFlags()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetFlags()
+        {
+            return IExecuteWithSignature<long>("getFlags", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/session/MediaController.html#adjustVolume(int,int)"/>
@@ -352,46 +366,12 @@ namespace Android.Media.Session
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/session/MediaController.PlaybackInfo.html#getAudioAttributes()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/session/MediaController.PlaybackInfo.html#getAudioAttributes()"/>
             /// </summary>
-            public Android.Media.AudioAttributes AudioAttributes
+            /// <returns><see cref="Android.Media.AudioAttributes"/></returns>
+            public Android.Media.AudioAttributes GetAudioAttributes()
             {
-                get { return IExecuteWithSignature<Android.Media.AudioAttributes>("getAudioAttributes", "()Landroid/media/AudioAttributes;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/session/MediaController.PlaybackInfo.html#getCurrentVolume()"/> 
-            /// </summary>
-            public int CurrentVolume
-            {
-                get { return IExecuteWithSignature<int>("getCurrentVolume", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/session/MediaController.PlaybackInfo.html#getMaxVolume()"/> 
-            /// </summary>
-            public int MaxVolume
-            {
-                get { return IExecuteWithSignature<int>("getMaxVolume", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/session/MediaController.PlaybackInfo.html#getPlaybackType()"/> 
-            /// </summary>
-            public int PlaybackType
-            {
-                get { return IExecuteWithSignature<int>("getPlaybackType", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/session/MediaController.PlaybackInfo.html#getVolumeControl()"/> 
-            /// </summary>
-            public int VolumeControl
-            {
-                get { return IExecuteWithSignature<int>("getVolumeControl", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/session/MediaController.PlaybackInfo.html#getVolumeControlId()"/> 
-            /// </summary>
-            public Java.Lang.String VolumeControlId
-            {
-                get { return IExecuteWithSignature<Java.Lang.String>("getVolumeControlId", "()Ljava/lang/String;"); }
+                return IExecuteWithSignature<Android.Media.AudioAttributes>("getAudioAttributes", "()Landroid/media/AudioAttributes;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/session/MediaController.PlaybackInfo.html#describeContents()"/>
@@ -400,6 +380,46 @@ namespace Android.Media.Session
             public int DescribeContents()
             {
                 return IExecuteWithSignature<int>("describeContents", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/session/MediaController.PlaybackInfo.html#getCurrentVolume()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetCurrentVolume()
+            {
+                return IExecuteWithSignature<int>("getCurrentVolume", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/session/MediaController.PlaybackInfo.html#getMaxVolume()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetMaxVolume()
+            {
+                return IExecuteWithSignature<int>("getMaxVolume", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/session/MediaController.PlaybackInfo.html#getPlaybackType()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetPlaybackType()
+            {
+                return IExecuteWithSignature<int>("getPlaybackType", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/session/MediaController.PlaybackInfo.html#getVolumeControl()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetVolumeControl()
+            {
+                return IExecuteWithSignature<int>("getVolumeControl", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/session/MediaController.PlaybackInfo.html#getVolumeControlId()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetVolumeControlId()
+            {
+                return IExecuteWithSignature<Java.Lang.String>("getVolumeControlId", "()Ljava/lang/String;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/session/MediaController.PlaybackInfo.html#writeToParcel(android.os.Parcel,int)"/>

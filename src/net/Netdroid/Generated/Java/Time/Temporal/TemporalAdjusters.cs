@@ -42,7 +42,7 @@ namespace Java.Time.Temporal
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/TemporalAdjusters.html#dayOfWeekInMonth(int,java.time.DayOfWeek)"/>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/TemporalAdjusters.html#dayOfWeekInMonth(int,java.time.DayOfWeek)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Time.DayOfWeek"/></param>
@@ -52,7 +52,7 @@ namespace Java.Time.Temporal
             return SExecute<Java.Time.Temporal.TemporalAdjuster>(LocalBridgeClazz, "dayOfWeekInMonth", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/TemporalAdjusters.html#firstDayOfMonth()"/>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/TemporalAdjusters.html#firstDayOfMonth()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.Temporal.TemporalAdjuster"/></returns>
         public static Java.Time.Temporal.TemporalAdjuster FirstDayOfMonth()
@@ -60,7 +60,7 @@ namespace Java.Time.Temporal
             return SExecuteWithSignature<Java.Time.Temporal.TemporalAdjuster>(LocalBridgeClazz, "firstDayOfMonth", "()Ljava/time/temporal/TemporalAdjuster;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/TemporalAdjusters.html#firstDayOfNextMonth()"/>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/TemporalAdjusters.html#firstDayOfNextMonth()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.Temporal.TemporalAdjuster"/></returns>
         public static Java.Time.Temporal.TemporalAdjuster FirstDayOfNextMonth()
@@ -68,7 +68,7 @@ namespace Java.Time.Temporal
             return SExecuteWithSignature<Java.Time.Temporal.TemporalAdjuster>(LocalBridgeClazz, "firstDayOfNextMonth", "()Ljava/time/temporal/TemporalAdjuster;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/TemporalAdjusters.html#firstDayOfNextYear()"/>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/TemporalAdjusters.html#firstDayOfNextYear()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.Temporal.TemporalAdjuster"/></returns>
         public static Java.Time.Temporal.TemporalAdjuster FirstDayOfNextYear()
@@ -76,7 +76,7 @@ namespace Java.Time.Temporal
             return SExecuteWithSignature<Java.Time.Temporal.TemporalAdjuster>(LocalBridgeClazz, "firstDayOfNextYear", "()Ljava/time/temporal/TemporalAdjuster;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/TemporalAdjusters.html#firstDayOfYear()"/>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/TemporalAdjusters.html#firstDayOfYear()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.Temporal.TemporalAdjuster"/></returns>
         public static Java.Time.Temporal.TemporalAdjuster FirstDayOfYear()
@@ -84,7 +84,7 @@ namespace Java.Time.Temporal
             return SExecuteWithSignature<Java.Time.Temporal.TemporalAdjuster>(LocalBridgeClazz, "firstDayOfYear", "()Ljava/time/temporal/TemporalAdjuster;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/TemporalAdjusters.html#firstInMonth(java.time.DayOfWeek)"/>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/TemporalAdjusters.html#firstInMonth(java.time.DayOfWeek)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.DayOfWeek"/></param>
         /// <returns><see cref="Java.Time.Temporal.TemporalAdjuster"/></returns>
@@ -93,7 +93,7 @@ namespace Java.Time.Temporal
             return SExecuteWithSignature<Java.Time.Temporal.TemporalAdjuster>(LocalBridgeClazz, "firstInMonth", "(Ljava/time/DayOfWeek;)Ljava/time/temporal/TemporalAdjuster;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/TemporalAdjusters.html#lastDayOfMonth()"/>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/TemporalAdjusters.html#lastDayOfMonth()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.Temporal.TemporalAdjuster"/></returns>
         public static Java.Time.Temporal.TemporalAdjuster LastDayOfMonth()
@@ -101,7 +101,7 @@ namespace Java.Time.Temporal
             return SExecuteWithSignature<Java.Time.Temporal.TemporalAdjuster>(LocalBridgeClazz, "lastDayOfMonth", "()Ljava/time/temporal/TemporalAdjuster;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/TemporalAdjusters.html#lastDayOfYear()"/>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/TemporalAdjusters.html#lastDayOfYear()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.Temporal.TemporalAdjuster"/></returns>
         public static Java.Time.Temporal.TemporalAdjuster LastDayOfYear()
@@ -109,7 +109,7 @@ namespace Java.Time.Temporal
             return SExecuteWithSignature<Java.Time.Temporal.TemporalAdjuster>(LocalBridgeClazz, "lastDayOfYear", "()Ljava/time/temporal/TemporalAdjuster;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/TemporalAdjusters.html#lastInMonth(java.time.DayOfWeek)"/>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/TemporalAdjusters.html#lastInMonth(java.time.DayOfWeek)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.DayOfWeek"/></param>
         /// <returns><see cref="Java.Time.Temporal.TemporalAdjuster"/></returns>
@@ -118,7 +118,7 @@ namespace Java.Time.Temporal
             return SExecuteWithSignature<Java.Time.Temporal.TemporalAdjuster>(LocalBridgeClazz, "lastInMonth", "(Ljava/time/DayOfWeek;)Ljava/time/temporal/TemporalAdjuster;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/TemporalAdjusters.html#next(java.time.DayOfWeek)"/>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/TemporalAdjusters.html#next(java.time.DayOfWeek)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.DayOfWeek"/></param>
         /// <returns><see cref="Java.Time.Temporal.TemporalAdjuster"/></returns>
@@ -127,7 +127,7 @@ namespace Java.Time.Temporal
             return SExecuteWithSignature<Java.Time.Temporal.TemporalAdjuster>(LocalBridgeClazz, "next", "(Ljava/time/DayOfWeek;)Ljava/time/temporal/TemporalAdjuster;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/TemporalAdjusters.html#nextOrSame(java.time.DayOfWeek)"/>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/TemporalAdjusters.html#nextOrSame(java.time.DayOfWeek)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.DayOfWeek"/></param>
         /// <returns><see cref="Java.Time.Temporal.TemporalAdjuster"/></returns>
@@ -136,7 +136,7 @@ namespace Java.Time.Temporal
             return SExecuteWithSignature<Java.Time.Temporal.TemporalAdjuster>(LocalBridgeClazz, "nextOrSame", "(Ljava/time/DayOfWeek;)Ljava/time/temporal/TemporalAdjuster;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/TemporalAdjusters.html#ofDateAdjuster(java.util.function.UnaryOperator)"/>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/TemporalAdjusters.html#ofDateAdjuster(java.util.function.UnaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.UnaryOperator"/></param>
         /// <returns><see cref="Java.Time.Temporal.TemporalAdjuster"/></returns>
@@ -145,7 +145,7 @@ namespace Java.Time.Temporal
             return SExecuteWithSignature<Java.Time.Temporal.TemporalAdjuster>(LocalBridgeClazz, "ofDateAdjuster", "(Ljava/util/function/UnaryOperator;)Ljava/time/temporal/TemporalAdjuster;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/TemporalAdjusters.html#previous(java.time.DayOfWeek)"/>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/TemporalAdjusters.html#previous(java.time.DayOfWeek)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.DayOfWeek"/></param>
         /// <returns><see cref="Java.Time.Temporal.TemporalAdjuster"/></returns>
@@ -154,7 +154,7 @@ namespace Java.Time.Temporal
             return SExecuteWithSignature<Java.Time.Temporal.TemporalAdjuster>(LocalBridgeClazz, "previous", "(Ljava/time/DayOfWeek;)Ljava/time/temporal/TemporalAdjuster;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/TemporalAdjusters.html#previousOrSame(java.time.DayOfWeek)"/>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/TemporalAdjusters.html#previousOrSame(java.time.DayOfWeek)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.DayOfWeek"/></param>
         /// <returns><see cref="Java.Time.Temporal.TemporalAdjuster"/></returns>

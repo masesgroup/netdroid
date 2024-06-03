@@ -214,189 +214,10 @@ namespace Android.Location
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/GnssMeasurement.html#getAccumulatedDeltaRangeMeters()"/> 
-        /// </summary>
-        public double AccumulatedDeltaRangeMeters
-        {
-            get { return IExecuteWithSignature<double>("getAccumulatedDeltaRangeMeters", "()D"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/GnssMeasurement.html#getAccumulatedDeltaRangeState()"/> 
-        /// </summary>
-        public int AccumulatedDeltaRangeState
-        {
-            get { return IExecuteWithSignature<int>("getAccumulatedDeltaRangeState", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/GnssMeasurement.html#getAccumulatedDeltaRangeUncertaintyMeters()"/> 
-        /// </summary>
-        public double AccumulatedDeltaRangeUncertaintyMeters
-        {
-            get { return IExecuteWithSignature<double>("getAccumulatedDeltaRangeUncertaintyMeters", "()D"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/GnssMeasurement.html#getAutomaticGainControlLevelDb()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public double AutomaticGainControlLevelDb
-        {
-            get { return IExecuteWithSignature<double>("getAutomaticGainControlLevelDb", "()D"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/GnssMeasurement.html#getBasebandCn0DbHz()"/> 
-        /// </summary>
-        public double BasebandCn0DbHz
-        {
-            get { return IExecuteWithSignature<double>("getBasebandCn0DbHz", "()D"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/GnssMeasurement.html#getCarrierCycles()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public long CarrierCycles
-        {
-            get { return IExecuteWithSignature<long>("getCarrierCycles", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/GnssMeasurement.html#getCarrierFrequencyHz()"/> 
-        /// </summary>
-        public float CarrierFrequencyHz
-        {
-            get { return IExecuteWithSignature<float>("getCarrierFrequencyHz", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/GnssMeasurement.html#getCarrierPhase()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public double CarrierPhase
-        {
-            get { return IExecuteWithSignature<double>("getCarrierPhase", "()D"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/GnssMeasurement.html#getCarrierPhaseUncertainty()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public double CarrierPhaseUncertainty
-        {
-            get { return IExecuteWithSignature<double>("getCarrierPhaseUncertainty", "()D"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/GnssMeasurement.html#getCn0DbHz()"/> 
-        /// </summary>
-        public double Cn0DbHz
-        {
-            get { return IExecuteWithSignature<double>("getCn0DbHz", "()D"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/GnssMeasurement.html#getCodeType()"/> 
-        /// </summary>
-        public Java.Lang.String CodeType
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCodeType", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/GnssMeasurement.html#getConstellationType()"/> 
-        /// </summary>
-        public int ConstellationType
-        {
-            get { return IExecuteWithSignature<int>("getConstellationType", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/GnssMeasurement.html#getFullInterSignalBiasNanos()"/> 
-        /// </summary>
-        public double FullInterSignalBiasNanos
-        {
-            get { return IExecuteWithSignature<double>("getFullInterSignalBiasNanos", "()D"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/GnssMeasurement.html#getFullInterSignalBiasUncertaintyNanos()"/> 
-        /// </summary>
-        public double FullInterSignalBiasUncertaintyNanos
-        {
-            get { return IExecuteWithSignature<double>("getFullInterSignalBiasUncertaintyNanos", "()D"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/GnssMeasurement.html#getMultipathIndicator()"/> 
-        /// </summary>
-        public int MultipathIndicator
-        {
-            get { return IExecuteWithSignature<int>("getMultipathIndicator", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/GnssMeasurement.html#getPseudorangeRateMetersPerSecond()"/> 
-        /// </summary>
-        public double PseudorangeRateMetersPerSecond
-        {
-            get { return IExecuteWithSignature<double>("getPseudorangeRateMetersPerSecond", "()D"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/GnssMeasurement.html#getPseudorangeRateUncertaintyMetersPerSecond()"/> 
-        /// </summary>
-        public double PseudorangeRateUncertaintyMetersPerSecond
-        {
-            get { return IExecuteWithSignature<double>("getPseudorangeRateUncertaintyMetersPerSecond", "()D"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/GnssMeasurement.html#getReceivedSvTimeNanos()"/> 
-        /// </summary>
-        public long ReceivedSvTimeNanos
-        {
-            get { return IExecuteWithSignature<long>("getReceivedSvTimeNanos", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/GnssMeasurement.html#getReceivedSvTimeUncertaintyNanos()"/> 
-        /// </summary>
-        public long ReceivedSvTimeUncertaintyNanos
-        {
-            get { return IExecuteWithSignature<long>("getReceivedSvTimeUncertaintyNanos", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/GnssMeasurement.html#getSatelliteInterSignalBiasNanos()"/> 
-        /// </summary>
-        public double SatelliteInterSignalBiasNanos
-        {
-            get { return IExecuteWithSignature<double>("getSatelliteInterSignalBiasNanos", "()D"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/GnssMeasurement.html#getSatelliteInterSignalBiasUncertaintyNanos()"/> 
-        /// </summary>
-        public double SatelliteInterSignalBiasUncertaintyNanos
-        {
-            get { return IExecuteWithSignature<double>("getSatelliteInterSignalBiasUncertaintyNanos", "()D"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/GnssMeasurement.html#getSnrInDb()"/> 
-        /// </summary>
-        public double SnrInDb
-        {
-            get { return IExecuteWithSignature<double>("getSnrInDb", "()D"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/GnssMeasurement.html#getState()"/> 
-        /// </summary>
-        public int State
-        {
-            get { return IExecuteWithSignature<int>("getState", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/GnssMeasurement.html#getSvid()"/> 
-        /// </summary>
-        public int Svid
-        {
-            get { return IExecuteWithSignature<int>("getSvid", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/GnssMeasurement.html#getTimeOffsetNanos()"/> 
-        /// </summary>
-        public double TimeOffsetNanos
-        {
-            get { return IExecuteWithSignature<double>("getTimeOffsetNanos", "()D"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/GnssMeasurement.html#hasAutomaticGainControlLevelDb()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool HasAutomaticGainControlLevelDb()
         {
             return IExecuteWithSignature<bool>("hasAutomaticGainControlLevelDb", "()Z");
@@ -413,7 +234,7 @@ namespace Android.Location
         /// <see href="https://developer.android.com/reference/android/location/GnssMeasurement.html#hasCarrierCycles()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool HasCarrierCycles()
         {
             return IExecuteWithSignature<bool>("hasCarrierCycles", "()Z");
@@ -430,7 +251,7 @@ namespace Android.Location
         /// <see href="https://developer.android.com/reference/android/location/GnssMeasurement.html#hasCarrierPhase()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool HasCarrierPhase()
         {
             return IExecuteWithSignature<bool>("hasCarrierPhase", "()Z");
@@ -439,7 +260,7 @@ namespace Android.Location
         /// <see href="https://developer.android.com/reference/android/location/GnssMeasurement.html#hasCarrierPhaseUncertainty()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool HasCarrierPhaseUncertainty()
         {
             return IExecuteWithSignature<bool>("hasCarrierPhaseUncertainty", "()Z");
@@ -493,12 +314,216 @@ namespace Android.Location
             return IExecuteWithSignature<bool>("hasSnrInDb", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/GnssMeasurement.html#getAccumulatedDeltaRangeMeters()"/>
+        /// </summary>
+        /// <returns><see cref="double"/></returns>
+        public double GetAccumulatedDeltaRangeMeters()
+        {
+            return IExecuteWithSignature<double>("getAccumulatedDeltaRangeMeters", "()D");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/GnssMeasurement.html#getAccumulatedDeltaRangeUncertaintyMeters()"/>
+        /// </summary>
+        /// <returns><see cref="double"/></returns>
+        public double GetAccumulatedDeltaRangeUncertaintyMeters()
+        {
+            return IExecuteWithSignature<double>("getAccumulatedDeltaRangeUncertaintyMeters", "()D");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/GnssMeasurement.html#getAutomaticGainControlLevelDb()"/>
+        /// </summary>
+        /// <returns><see cref="double"/></returns>
+        [global::System.Obsolete()]
+        public double GetAutomaticGainControlLevelDb()
+        {
+            return IExecuteWithSignature<double>("getAutomaticGainControlLevelDb", "()D");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/GnssMeasurement.html#getBasebandCn0DbHz()"/>
+        /// </summary>
+        /// <returns><see cref="double"/></returns>
+        public double GetBasebandCn0DbHz()
+        {
+            return IExecuteWithSignature<double>("getBasebandCn0DbHz", "()D");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/GnssMeasurement.html#getCarrierPhase()"/>
+        /// </summary>
+        /// <returns><see cref="double"/></returns>
+        [global::System.Obsolete()]
+        public double GetCarrierPhase()
+        {
+            return IExecuteWithSignature<double>("getCarrierPhase", "()D");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/GnssMeasurement.html#getCarrierPhaseUncertainty()"/>
+        /// </summary>
+        /// <returns><see cref="double"/></returns>
+        [global::System.Obsolete()]
+        public double GetCarrierPhaseUncertainty()
+        {
+            return IExecuteWithSignature<double>("getCarrierPhaseUncertainty", "()D");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/GnssMeasurement.html#getCn0DbHz()"/>
+        /// </summary>
+        /// <returns><see cref="double"/></returns>
+        public double GetCn0DbHz()
+        {
+            return IExecuteWithSignature<double>("getCn0DbHz", "()D");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/GnssMeasurement.html#getFullInterSignalBiasNanos()"/>
+        /// </summary>
+        /// <returns><see cref="double"/></returns>
+        public double GetFullInterSignalBiasNanos()
+        {
+            return IExecuteWithSignature<double>("getFullInterSignalBiasNanos", "()D");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/GnssMeasurement.html#getFullInterSignalBiasUncertaintyNanos()"/>
+        /// </summary>
+        /// <returns><see cref="double"/></returns>
+        public double GetFullInterSignalBiasUncertaintyNanos()
+        {
+            return IExecuteWithSignature<double>("getFullInterSignalBiasUncertaintyNanos", "()D");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/GnssMeasurement.html#getPseudorangeRateMetersPerSecond()"/>
+        /// </summary>
+        /// <returns><see cref="double"/></returns>
+        public double GetPseudorangeRateMetersPerSecond()
+        {
+            return IExecuteWithSignature<double>("getPseudorangeRateMetersPerSecond", "()D");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/GnssMeasurement.html#getPseudorangeRateUncertaintyMetersPerSecond()"/>
+        /// </summary>
+        /// <returns><see cref="double"/></returns>
+        public double GetPseudorangeRateUncertaintyMetersPerSecond()
+        {
+            return IExecuteWithSignature<double>("getPseudorangeRateUncertaintyMetersPerSecond", "()D");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/GnssMeasurement.html#getSatelliteInterSignalBiasNanos()"/>
+        /// </summary>
+        /// <returns><see cref="double"/></returns>
+        public double GetSatelliteInterSignalBiasNanos()
+        {
+            return IExecuteWithSignature<double>("getSatelliteInterSignalBiasNanos", "()D");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/GnssMeasurement.html#getSatelliteInterSignalBiasUncertaintyNanos()"/>
+        /// </summary>
+        /// <returns><see cref="double"/></returns>
+        public double GetSatelliteInterSignalBiasUncertaintyNanos()
+        {
+            return IExecuteWithSignature<double>("getSatelliteInterSignalBiasUncertaintyNanos", "()D");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/GnssMeasurement.html#getSnrInDb()"/>
+        /// </summary>
+        /// <returns><see cref="double"/></returns>
+        public double GetSnrInDb()
+        {
+            return IExecuteWithSignature<double>("getSnrInDb", "()D");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/GnssMeasurement.html#getTimeOffsetNanos()"/>
+        /// </summary>
+        /// <returns><see cref="double"/></returns>
+        public double GetTimeOffsetNanos()
+        {
+            return IExecuteWithSignature<double>("getTimeOffsetNanos", "()D");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/GnssMeasurement.html#getCarrierFrequencyHz()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetCarrierFrequencyHz()
+        {
+            return IExecuteWithSignature<float>("getCarrierFrequencyHz", "()F");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/GnssMeasurement.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/GnssMeasurement.html#getAccumulatedDeltaRangeState()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetAccumulatedDeltaRangeState()
+        {
+            return IExecuteWithSignature<int>("getAccumulatedDeltaRangeState", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/GnssMeasurement.html#getConstellationType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetConstellationType()
+        {
+            return IExecuteWithSignature<int>("getConstellationType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/GnssMeasurement.html#getMultipathIndicator()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMultipathIndicator()
+        {
+            return IExecuteWithSignature<int>("getMultipathIndicator", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/GnssMeasurement.html#getState()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetState()
+        {
+            return IExecuteWithSignature<int>("getState", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/GnssMeasurement.html#getSvid()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSvid()
+        {
+            return IExecuteWithSignature<int>("getSvid", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/GnssMeasurement.html#getCodeType()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetCodeType()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getCodeType", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/GnssMeasurement.html#getCarrierCycles()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        [global::System.Obsolete()]
+        public long GetCarrierCycles()
+        {
+            return IExecuteWithSignature<long>("getCarrierCycles", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/GnssMeasurement.html#getReceivedSvTimeNanos()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetReceivedSvTimeNanos()
+        {
+            return IExecuteWithSignature<long>("getReceivedSvTimeNanos", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/GnssMeasurement.html#getReceivedSvTimeUncertaintyNanos()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetReceivedSvTimeUncertaintyNanos()
+        {
+            return IExecuteWithSignature<long>("getReceivedSvTimeUncertaintyNanos", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/GnssMeasurement.html#writeToParcel(android.os.Parcel,int)"/>

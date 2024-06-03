@@ -79,11 +79,12 @@ namespace Android.View
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/TouchDelegate.html#getTouchDelegateInfo()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/TouchDelegate.html#getTouchDelegateInfo()"/>
         /// </summary>
-        public Android.View.Accessibility.AccessibilityNodeInfo.TouchDelegateInfo TouchDelegateInfo
+        /// <returns><see cref="Android.View.Accessibility.AccessibilityNodeInfo.TouchDelegateInfo"/></returns>
+        public Android.View.Accessibility.AccessibilityNodeInfo.TouchDelegateInfo GetTouchDelegateInfo()
         {
-            get { return IExecuteWithSignature<Android.View.Accessibility.AccessibilityNodeInfo.TouchDelegateInfo>("getTouchDelegateInfo", "()Landroid/view/accessibility/AccessibilityNodeInfo$TouchDelegateInfo;"); }
+            return IExecuteWithSignature<Android.View.Accessibility.AccessibilityNodeInfo.TouchDelegateInfo>("getTouchDelegateInfo", "()Landroid/view/accessibility/AccessibilityNodeInfo$TouchDelegateInfo;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/TouchDelegate.html#onTouchEvent(android.view.MotionEvent)"/>

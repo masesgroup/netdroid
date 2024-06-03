@@ -69,32 +69,12 @@ namespace Android.Widget
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/EdgeEffect.html#getBlendMode()"/> <see href="https://developer.android.com/reference/android/widget/EdgeEffect.html#setBlendMode(android.graphics.BlendMode)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/EdgeEffect.html#getBlendMode()"/>
         /// </summary>
-        public Android.Graphics.BlendMode BlendMode
+        /// <returns><see cref="Android.Graphics.BlendMode"/></returns>
+        public Android.Graphics.BlendMode GetBlendMode()
         {
-            get { return IExecuteWithSignature<Android.Graphics.BlendMode>("getBlendMode", "()Landroid/graphics/BlendMode;"); } set { IExecuteWithSignature("setBlendMode", "(Landroid/graphics/BlendMode;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/EdgeEffect.html#getColor()"/> <see href="https://developer.android.com/reference/android/widget/EdgeEffect.html#setColor(int)"/>
-        /// </summary>
-        public int Color
-        {
-            get { return IExecuteWithSignature<int>("getColor", "()I"); } set { IExecuteWithSignature("setColor", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/EdgeEffect.html#getDistance()"/> 
-        /// </summary>
-        public float Distance
-        {
-            get { return IExecuteWithSignature<float>("getDistance", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/EdgeEffect.html#getMaxHeight()"/> 
-        /// </summary>
-        public int MaxHeight
-        {
-            get { return IExecuteWithSignature<int>("getMaxHeight", "()I"); }
+            return IExecuteWithSignature<Android.Graphics.BlendMode>("getBlendMode", "()Landroid/graphics/BlendMode;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/EdgeEffect.html#draw(android.graphics.Canvas)"/>
@@ -114,6 +94,14 @@ namespace Android.Widget
             return IExecuteWithSignature<bool>("isFinished", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/EdgeEffect.html#getDistance()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetDistance()
+        {
+            return IExecuteWithSignature<float>("getDistance", "()F");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/EdgeEffect.html#onPullDistance(float,float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="float"/></param>
@@ -122,6 +110,22 @@ namespace Android.Widget
         public float OnPullDistance(float arg0, float arg1)
         {
             return IExecute<float>("onPullDistance", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/EdgeEffect.html#getColor()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetColor()
+        {
+            return IExecuteWithSignature<int>("getColor", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/EdgeEffect.html#getMaxHeight()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMaxHeight()
+        {
+            return IExecuteWithSignature<int>("getMaxHeight", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/EdgeEffect.html#finish()"/>
@@ -161,6 +165,22 @@ namespace Android.Widget
         public void OnRelease()
         {
             IExecuteWithSignature("onRelease", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/EdgeEffect.html#setBlendMode(android.graphics.BlendMode)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.BlendMode"/></param>
+        public void SetBlendMode(Android.Graphics.BlendMode arg0)
+        {
+            IExecuteWithSignature("setBlendMode", "(Landroid/graphics/BlendMode;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/EdgeEffect.html#setColor(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetColor(int arg0)
+        {
+            IExecuteWithSignature("setColor", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/EdgeEffect.html#setSize(int,int)"/>

@@ -46,20 +46,6 @@ namespace Android.Hardware.Camera2
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraManager.html#getCameraIdList()"/> 
-        /// </summary>
-        public Java.Lang.String[] CameraIdList
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getCameraIdList", "()[Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraManager.html#getConcurrentCameraIds()"/> 
-        /// </summary>
-        public Java.Util.Set<Java.Util.Set<Java.Lang.String>> ConcurrentCameraIds
-        {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Util.Set<Java.Lang.String>>>("getConcurrentCameraIds", "()Ljava/util/Set;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraManager.html#getCameraCharacteristics(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -98,6 +84,24 @@ namespace Android.Hardware.Camera2
         public int GetTorchStrengthLevel(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<int>("getTorchStrengthLevel", "(Ljava/lang/String;)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraManager.html#getCameraIdList()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <exception cref="Android.Hardware.Camera2.CameraAccessException"/>
+        public Java.Lang.String[] GetCameraIdList()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.String>("getCameraIdList", "()[Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraManager.html#getConcurrentCameraIds()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        /// <exception cref="Android.Hardware.Camera2.CameraAccessException"/>
+        public Java.Util.Set<Java.Util.Set<Java.Lang.String>> GetConcurrentCameraIds()
+        {
+            return IExecuteWithSignature<Java.Util.Set<Java.Util.Set<Java.Lang.String>>>("getConcurrentCameraIds", "()Ljava/util/Set;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraManager.html#openCamera(java.lang.String,android.hardware.camera2.CameraDevice.StateCallback,android.os.Handler)"/>

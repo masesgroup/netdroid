@@ -55,18 +55,20 @@ namespace Android.Icu.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/DateInterval.html#getFromDate()"/> 
+        /// <see href="https://developer.android.com/reference/android/icu/util/DateInterval.html#getFromDate()"/>
         /// </summary>
-        public long FromDate
+        /// <returns><see cref="long"/></returns>
+        public long GetFromDate()
         {
-            get { return IExecuteWithSignature<long>("getFromDate", "()J"); }
+            return IExecuteWithSignature<long>("getFromDate", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/util/DateInterval.html#getToDate()"/> 
+        /// <see href="https://developer.android.com/reference/android/icu/util/DateInterval.html#getToDate()"/>
         /// </summary>
-        public long ToDate
+        /// <returns><see cref="long"/></returns>
+        public long GetToDate()
         {
-            get { return IExecuteWithSignature<long>("getToDate", "()J"); }
+            return IExecuteWithSignature<long>("getToDate", "()J");
         }
 
         #endregion

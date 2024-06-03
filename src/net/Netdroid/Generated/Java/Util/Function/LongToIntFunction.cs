@@ -27,7 +27,7 @@ namespace Java.Util.Function
 {
     #region ILongToIntFunction
     /// <summary>
-    /// .NET interface for org.mases.netdroid.generated.java.util.function.LongToIntFunction implementing <see href="https://developer.android.com/reference/java.base/java/util/function/LongToIntFunction.html"/>
+    /// .NET interface for org.mases.netdroid.generated.java.util.function.LongToIntFunction implementing <see href="https://developer.android.com/reference/java/util/function/LongToIntFunction.html"/>
     /// </summary>
     public partial interface ILongToIntFunction
     {
@@ -68,15 +68,15 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("applyAsInt", new System.EventHandler<CLRListenerEventArgs<CLREventData<long>>>(ApplyAsIntEventHandler));
+            AddEventHandler("applyAsInt", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<long>>>(ApplyAsIntEventHandler));
 
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/LongToIntFunction.html#applyAsInt(long)"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/LongToIntFunction.html#applyAsInt(long)"/>
         /// </summary>
         /// <remarks>If <see cref="OnApplyAsInt"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<long, int> OnApplyAsInt { get; set; } = null;
+        public global::System.Func<long, int> OnApplyAsInt { get; set; } = null;
 
         void ApplyAsIntEventHandler(object sender, CLRListenerEventArgs<CLREventData<long>> data)
         {
@@ -86,7 +86,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/LongToIntFunction.html#applyAsInt(long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/LongToIntFunction.html#applyAsInt(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="int"/></returns>
@@ -126,7 +126,7 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/LongToIntFunction.html#applyAsInt(long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/LongToIntFunction.html#applyAsInt(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="int"/></returns>

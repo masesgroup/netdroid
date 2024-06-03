@@ -46,27 +46,6 @@ namespace Android.Media
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.html#getCanonicalName()"/> 
-        /// </summary>
-        public Java.Lang.String CanonicalName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCanonicalName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.html#getName()"/> 
-        /// </summary>
-        public Java.Lang.String Name
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.html#getSupportedTypes()"/> 
-        /// </summary>
-        public Java.Lang.String[] SupportedTypes
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getSupportedTypes", "()[Ljava/lang/String;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.html#getCapabilitiesForType(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -115,6 +94,30 @@ namespace Android.Media
         {
             return IExecuteWithSignature<bool>("isVendor", "()Z");
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.html#getCanonicalName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetCanonicalName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getCanonicalName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.html#getName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.html#getSupportedTypes()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String[] GetSupportedTypes()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.String>("getSupportedTypes", "()[Ljava/lang/String;");
+        }
 
         #endregion
 
@@ -140,27 +143,6 @@ namespace Android.Media
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.AudioCapabilities.html#getMaxInputChannelCount()"/> 
-            /// </summary>
-            public int MaxInputChannelCount
-            {
-                get { return IExecuteWithSignature<int>("getMaxInputChannelCount", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.AudioCapabilities.html#getMinInputChannelCount()"/> 
-            /// </summary>
-            public int MinInputChannelCount
-            {
-                get { return IExecuteWithSignature<int>("getMinInputChannelCount", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.AudioCapabilities.html#getSupportedSampleRates()"/> 
-            /// </summary>
-            public int[] SupportedSampleRates
-            {
-                get { return IExecuteWithSignatureArray<int>("getSupportedSampleRates", "()[I"); }
-            }
-            /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.AudioCapabilities.html#isSampleRateSupported(int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
@@ -168,6 +150,30 @@ namespace Android.Media
             public bool IsSampleRateSupported(int arg0)
             {
                 return IExecuteWithSignature<bool>("isSampleRateSupported", "(I)Z", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.AudioCapabilities.html#getMaxInputChannelCount()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetMaxInputChannelCount()
+            {
+                return IExecuteWithSignature<int>("getMaxInputChannelCount", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.AudioCapabilities.html#getMinInputChannelCount()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetMinInputChannelCount()
+            {
+                return IExecuteWithSignature<int>("getMinInputChannelCount", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.AudioCapabilities.html#getSupportedSampleRates()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int[] GetSupportedSampleRates()
+            {
+                return IExecuteWithSignatureArray<int>("getSupportedSampleRates", "()[I");
             }
 
             #endregion
@@ -203,28 +209,28 @@ namespace Android.Media
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecCapabilities.html#COLOR_Format12bitRGB444"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int COLOR_Format12bitRGB444 { get { if (!_COLOR_Format12bitRGB444Ready) { _COLOR_Format12bitRGB444Content = SGetField<int>(LocalBridgeClazz, "COLOR_Format12bitRGB444"); _COLOR_Format12bitRGB444Ready = true; } return _COLOR_Format12bitRGB444Content; } }
             private static int _COLOR_Format12bitRGB444Content = default;
             private static bool _COLOR_Format12bitRGB444Ready = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecCapabilities.html#COLOR_Format16bitARGB1555"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int COLOR_Format16bitARGB1555 { get { if (!_COLOR_Format16bitARGB1555Ready) { _COLOR_Format16bitARGB1555Content = SGetField<int>(LocalBridgeClazz, "COLOR_Format16bitARGB1555"); _COLOR_Format16bitARGB1555Ready = true; } return _COLOR_Format16bitARGB1555Content; } }
             private static int _COLOR_Format16bitARGB1555Content = default;
             private static bool _COLOR_Format16bitARGB1555Ready = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecCapabilities.html#COLOR_Format16bitARGB4444"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int COLOR_Format16bitARGB4444 { get { if (!_COLOR_Format16bitARGB4444Ready) { _COLOR_Format16bitARGB4444Content = SGetField<int>(LocalBridgeClazz, "COLOR_Format16bitARGB4444"); _COLOR_Format16bitARGB4444Ready = true; } return _COLOR_Format16bitARGB4444Content; } }
             private static int _COLOR_Format16bitARGB4444Content = default;
             private static bool _COLOR_Format16bitARGB4444Ready = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecCapabilities.html#COLOR_Format16bitBGR565"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int COLOR_Format16bitBGR565 { get { if (!_COLOR_Format16bitBGR565Ready) { _COLOR_Format16bitBGR565Content = SGetField<int>(LocalBridgeClazz, "COLOR_Format16bitBGR565"); _COLOR_Format16bitBGR565Ready = true; } return _COLOR_Format16bitBGR565Content; } }
             private static int _COLOR_Format16bitBGR565Content = default;
             private static bool _COLOR_Format16bitBGR565Ready = false; // this is used because in case of generics 
@@ -237,49 +243,49 @@ namespace Android.Media
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecCapabilities.html#COLOR_Format18bitARGB1665"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int COLOR_Format18bitARGB1665 { get { if (!_COLOR_Format18bitARGB1665Ready) { _COLOR_Format18bitARGB1665Content = SGetField<int>(LocalBridgeClazz, "COLOR_Format18bitARGB1665"); _COLOR_Format18bitARGB1665Ready = true; } return _COLOR_Format18bitARGB1665Content; } }
             private static int _COLOR_Format18bitARGB1665Content = default;
             private static bool _COLOR_Format18bitARGB1665Ready = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecCapabilities.html#COLOR_Format18BitBGR666"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int COLOR_Format18BitBGR666 { get { if (!_COLOR_Format18BitBGR666Ready) { _COLOR_Format18BitBGR666Content = SGetField<int>(LocalBridgeClazz, "COLOR_Format18BitBGR666"); _COLOR_Format18BitBGR666Ready = true; } return _COLOR_Format18BitBGR666Content; } }
             private static int _COLOR_Format18BitBGR666Content = default;
             private static bool _COLOR_Format18BitBGR666Ready = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecCapabilities.html#COLOR_Format18bitRGB666"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int COLOR_Format18bitRGB666 { get { if (!_COLOR_Format18bitRGB666Ready) { _COLOR_Format18bitRGB666Content = SGetField<int>(LocalBridgeClazz, "COLOR_Format18bitRGB666"); _COLOR_Format18bitRGB666Ready = true; } return _COLOR_Format18bitRGB666Content; } }
             private static int _COLOR_Format18bitRGB666Content = default;
             private static bool _COLOR_Format18bitRGB666Ready = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecCapabilities.html#COLOR_Format19bitARGB1666"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int COLOR_Format19bitARGB1666 { get { if (!_COLOR_Format19bitARGB1666Ready) { _COLOR_Format19bitARGB1666Content = SGetField<int>(LocalBridgeClazz, "COLOR_Format19bitARGB1666"); _COLOR_Format19bitARGB1666Ready = true; } return _COLOR_Format19bitARGB1666Content; } }
             private static int _COLOR_Format19bitARGB1666Content = default;
             private static bool _COLOR_Format19bitARGB1666Ready = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecCapabilities.html#COLOR_Format24BitABGR6666"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int COLOR_Format24BitABGR6666 { get { if (!_COLOR_Format24BitABGR6666Ready) { _COLOR_Format24BitABGR6666Content = SGetField<int>(LocalBridgeClazz, "COLOR_Format24BitABGR6666"); _COLOR_Format24BitABGR6666Ready = true; } return _COLOR_Format24BitABGR6666Content; } }
             private static int _COLOR_Format24BitABGR6666Content = default;
             private static bool _COLOR_Format24BitABGR6666Ready = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecCapabilities.html#COLOR_Format24bitARGB1887"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int COLOR_Format24bitARGB1887 { get { if (!_COLOR_Format24bitARGB1887Ready) { _COLOR_Format24bitARGB1887Content = SGetField<int>(LocalBridgeClazz, "COLOR_Format24bitARGB1887"); _COLOR_Format24bitARGB1887Ready = true; } return _COLOR_Format24bitARGB1887Content; } }
             private static int _COLOR_Format24bitARGB1887Content = default;
             private static bool _COLOR_Format24bitARGB1887Ready = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecCapabilities.html#COLOR_Format24BitARGB6666"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int COLOR_Format24BitARGB6666 { get { if (!_COLOR_Format24BitARGB6666Ready) { _COLOR_Format24BitARGB6666Content = SGetField<int>(LocalBridgeClazz, "COLOR_Format24BitARGB6666"); _COLOR_Format24BitARGB6666Ready = true; } return _COLOR_Format24BitARGB6666Content; } }
             private static int _COLOR_Format24BitARGB6666Content = default;
             private static bool _COLOR_Format24BitARGB6666Ready = false; // this is used because in case of generics 
@@ -292,14 +298,14 @@ namespace Android.Media
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecCapabilities.html#COLOR_Format24bitRGB888"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int COLOR_Format24bitRGB888 { get { if (!_COLOR_Format24bitRGB888Ready) { _COLOR_Format24bitRGB888Content = SGetField<int>(LocalBridgeClazz, "COLOR_Format24bitRGB888"); _COLOR_Format24bitRGB888Ready = true; } return _COLOR_Format24bitRGB888Content; } }
             private static int _COLOR_Format24bitRGB888Content = default;
             private static bool _COLOR_Format24bitRGB888Ready = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecCapabilities.html#COLOR_Format25bitARGB1888"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int COLOR_Format25bitARGB1888 { get { if (!_COLOR_Format25bitARGB1888Ready) { _COLOR_Format25bitARGB1888Content = SGetField<int>(LocalBridgeClazz, "COLOR_Format25bitARGB1888"); _COLOR_Format25bitARGB1888Ready = true; } return _COLOR_Format25bitARGB1888Content; } }
             private static int _COLOR_Format25bitARGB1888Content = default;
             private static bool _COLOR_Format25bitARGB1888Ready = false; // this is used because in case of generics 
@@ -318,14 +324,14 @@ namespace Android.Media
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecCapabilities.html#COLOR_Format32bitARGB8888"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int COLOR_Format32bitARGB8888 { get { if (!_COLOR_Format32bitARGB8888Ready) { _COLOR_Format32bitARGB8888Content = SGetField<int>(LocalBridgeClazz, "COLOR_Format32bitARGB8888"); _COLOR_Format32bitARGB8888Ready = true; } return _COLOR_Format32bitARGB8888Content; } }
             private static int _COLOR_Format32bitARGB8888Content = default;
             private static bool _COLOR_Format32bitARGB8888Ready = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecCapabilities.html#COLOR_Format32bitBGRA8888"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int COLOR_Format32bitBGRA8888 { get { if (!_COLOR_Format32bitBGRA8888Ready) { _COLOR_Format32bitBGRA8888Content = SGetField<int>(LocalBridgeClazz, "COLOR_Format32bitBGRA8888"); _COLOR_Format32bitBGRA8888Ready = true; } return _COLOR_Format32bitBGRA8888Content; } }
             private static int _COLOR_Format32bitBGRA8888Content = default;
             private static bool _COLOR_Format32bitBGRA8888Ready = false; // this is used because in case of generics 
@@ -338,21 +344,21 @@ namespace Android.Media
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecCapabilities.html#COLOR_Format8bitRGB332"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int COLOR_Format8bitRGB332 { get { if (!_COLOR_Format8bitRGB332Ready) { _COLOR_Format8bitRGB332Content = SGetField<int>(LocalBridgeClazz, "COLOR_Format8bitRGB332"); _COLOR_Format8bitRGB332Ready = true; } return _COLOR_Format8bitRGB332Content; } }
             private static int _COLOR_Format8bitRGB332Content = default;
             private static bool _COLOR_Format8bitRGB332Ready = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecCapabilities.html#COLOR_FormatCbYCrY"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int COLOR_FormatCbYCrY { get { if (!_COLOR_FormatCbYCrYReady) { _COLOR_FormatCbYCrYContent = SGetField<int>(LocalBridgeClazz, "COLOR_FormatCbYCrY"); _COLOR_FormatCbYCrYReady = true; } return _COLOR_FormatCbYCrYContent; } }
             private static int _COLOR_FormatCbYCrYContent = default;
             private static bool _COLOR_FormatCbYCrYReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecCapabilities.html#COLOR_FormatCrYCbY"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int COLOR_FormatCrYCbY { get { if (!_COLOR_FormatCrYCbYReady) { _COLOR_FormatCrYCbYContent = SGetField<int>(LocalBridgeClazz, "COLOR_FormatCrYCbY"); _COLOR_FormatCrYCbYReady = true; } return _COLOR_FormatCrYCbYContent; } }
             private static int _COLOR_FormatCrYCbYContent = default;
             private static bool _COLOR_FormatCrYCbYReady = false; // this is used because in case of generics 
@@ -365,28 +371,28 @@ namespace Android.Media
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecCapabilities.html#COLOR_FormatL2"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int COLOR_FormatL2 { get { if (!_COLOR_FormatL2Ready) { _COLOR_FormatL2Content = SGetField<int>(LocalBridgeClazz, "COLOR_FormatL2"); _COLOR_FormatL2Ready = true; } return _COLOR_FormatL2Content; } }
             private static int _COLOR_FormatL2Content = default;
             private static bool _COLOR_FormatL2Ready = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecCapabilities.html#COLOR_FormatL24"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int COLOR_FormatL24 { get { if (!_COLOR_FormatL24Ready) { _COLOR_FormatL24Content = SGetField<int>(LocalBridgeClazz, "COLOR_FormatL24"); _COLOR_FormatL24Ready = true; } return _COLOR_FormatL24Content; } }
             private static int _COLOR_FormatL24Content = default;
             private static bool _COLOR_FormatL24Ready = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecCapabilities.html#COLOR_FormatL32"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int COLOR_FormatL32 { get { if (!_COLOR_FormatL32Ready) { _COLOR_FormatL32Content = SGetField<int>(LocalBridgeClazz, "COLOR_FormatL32"); _COLOR_FormatL32Ready = true; } return _COLOR_FormatL32Content; } }
             private static int _COLOR_FormatL32Content = default;
             private static bool _COLOR_FormatL32Ready = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecCapabilities.html#COLOR_FormatL4"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int COLOR_FormatL4 { get { if (!_COLOR_FormatL4Ready) { _COLOR_FormatL4Content = SGetField<int>(LocalBridgeClazz, "COLOR_FormatL4"); _COLOR_FormatL4Ready = true; } return _COLOR_FormatL4Content; } }
             private static int _COLOR_FormatL4Content = default;
             private static bool _COLOR_FormatL4Ready = false; // this is used because in case of generics 
@@ -399,7 +405,7 @@ namespace Android.Media
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecCapabilities.html#COLOR_FormatMonochrome"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int COLOR_FormatMonochrome { get { if (!_COLOR_FormatMonochromeReady) { _COLOR_FormatMonochromeContent = SGetField<int>(LocalBridgeClazz, "COLOR_FormatMonochrome"); _COLOR_FormatMonochromeReady = true; } return _COLOR_FormatMonochromeContent; } }
             private static int _COLOR_FormatMonochromeContent = default;
             private static bool _COLOR_FormatMonochromeReady = false; // this is used because in case of generics 
@@ -442,28 +448,28 @@ namespace Android.Media
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecCapabilities.html#COLOR_FormatYCbYCr"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int COLOR_FormatYCbYCr { get { if (!_COLOR_FormatYCbYCrReady) { _COLOR_FormatYCbYCrContent = SGetField<int>(LocalBridgeClazz, "COLOR_FormatYCbYCr"); _COLOR_FormatYCbYCrReady = true; } return _COLOR_FormatYCbYCrContent; } }
             private static int _COLOR_FormatYCbYCrContent = default;
             private static bool _COLOR_FormatYCbYCrReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecCapabilities.html#COLOR_FormatYCrYCb"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int COLOR_FormatYCrYCb { get { if (!_COLOR_FormatYCrYCbReady) { _COLOR_FormatYCrYCbContent = SGetField<int>(LocalBridgeClazz, "COLOR_FormatYCrYCb"); _COLOR_FormatYCrYCbReady = true; } return _COLOR_FormatYCrYCbContent; } }
             private static int _COLOR_FormatYCrYCbContent = default;
             private static bool _COLOR_FormatYCrYCbReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecCapabilities.html#COLOR_FormatYUV411PackedPlanar"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int COLOR_FormatYUV411PackedPlanar { get { if (!_COLOR_FormatYUV411PackedPlanarReady) { _COLOR_FormatYUV411PackedPlanarContent = SGetField<int>(LocalBridgeClazz, "COLOR_FormatYUV411PackedPlanar"); _COLOR_FormatYUV411PackedPlanarReady = true; } return _COLOR_FormatYUV411PackedPlanarContent; } }
             private static int _COLOR_FormatYUV411PackedPlanarContent = default;
             private static bool _COLOR_FormatYUV411PackedPlanarReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecCapabilities.html#COLOR_FormatYUV411Planar"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int COLOR_FormatYUV411Planar { get { if (!_COLOR_FormatYUV411PlanarReady) { _COLOR_FormatYUV411PlanarContent = SGetField<int>(LocalBridgeClazz, "COLOR_FormatYUV411Planar"); _COLOR_FormatYUV411PlanarReady = true; } return _COLOR_FormatYUV411PlanarContent; } }
             private static int _COLOR_FormatYUV411PlanarContent = default;
             private static bool _COLOR_FormatYUV411PlanarReady = false; // this is used because in case of generics 
@@ -476,28 +482,28 @@ namespace Android.Media
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecCapabilities.html#COLOR_FormatYUV420PackedPlanar"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int COLOR_FormatYUV420PackedPlanar { get { if (!_COLOR_FormatYUV420PackedPlanarReady) { _COLOR_FormatYUV420PackedPlanarContent = SGetField<int>(LocalBridgeClazz, "COLOR_FormatYUV420PackedPlanar"); _COLOR_FormatYUV420PackedPlanarReady = true; } return _COLOR_FormatYUV420PackedPlanarContent; } }
             private static int _COLOR_FormatYUV420PackedPlanarContent = default;
             private static bool _COLOR_FormatYUV420PackedPlanarReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecCapabilities.html#COLOR_FormatYUV420PackedSemiPlanar"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int COLOR_FormatYUV420PackedSemiPlanar { get { if (!_COLOR_FormatYUV420PackedSemiPlanarReady) { _COLOR_FormatYUV420PackedSemiPlanarContent = SGetField<int>(LocalBridgeClazz, "COLOR_FormatYUV420PackedSemiPlanar"); _COLOR_FormatYUV420PackedSemiPlanarReady = true; } return _COLOR_FormatYUV420PackedSemiPlanarContent; } }
             private static int _COLOR_FormatYUV420PackedSemiPlanarContent = default;
             private static bool _COLOR_FormatYUV420PackedSemiPlanarReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecCapabilities.html#COLOR_FormatYUV420Planar"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int COLOR_FormatYUV420Planar { get { if (!_COLOR_FormatYUV420PlanarReady) { _COLOR_FormatYUV420PlanarContent = SGetField<int>(LocalBridgeClazz, "COLOR_FormatYUV420Planar"); _COLOR_FormatYUV420PlanarReady = true; } return _COLOR_FormatYUV420PlanarContent; } }
             private static int _COLOR_FormatYUV420PlanarContent = default;
             private static bool _COLOR_FormatYUV420PlanarReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecCapabilities.html#COLOR_FormatYUV420SemiPlanar"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int COLOR_FormatYUV420SemiPlanar { get { if (!_COLOR_FormatYUV420SemiPlanarReady) { _COLOR_FormatYUV420SemiPlanarContent = SGetField<int>(LocalBridgeClazz, "COLOR_FormatYUV420SemiPlanar"); _COLOR_FormatYUV420SemiPlanarReady = true; } return _COLOR_FormatYUV420SemiPlanarContent; } }
             private static int _COLOR_FormatYUV420SemiPlanarContent = default;
             private static bool _COLOR_FormatYUV420SemiPlanarReady = false; // this is used because in case of generics 
@@ -510,28 +516,28 @@ namespace Android.Media
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecCapabilities.html#COLOR_FormatYUV422PackedPlanar"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int COLOR_FormatYUV422PackedPlanar { get { if (!_COLOR_FormatYUV422PackedPlanarReady) { _COLOR_FormatYUV422PackedPlanarContent = SGetField<int>(LocalBridgeClazz, "COLOR_FormatYUV422PackedPlanar"); _COLOR_FormatYUV422PackedPlanarReady = true; } return _COLOR_FormatYUV422PackedPlanarContent; } }
             private static int _COLOR_FormatYUV422PackedPlanarContent = default;
             private static bool _COLOR_FormatYUV422PackedPlanarReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecCapabilities.html#COLOR_FormatYUV422PackedSemiPlanar"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int COLOR_FormatYUV422PackedSemiPlanar { get { if (!_COLOR_FormatYUV422PackedSemiPlanarReady) { _COLOR_FormatYUV422PackedSemiPlanarContent = SGetField<int>(LocalBridgeClazz, "COLOR_FormatYUV422PackedSemiPlanar"); _COLOR_FormatYUV422PackedSemiPlanarReady = true; } return _COLOR_FormatYUV422PackedSemiPlanarContent; } }
             private static int _COLOR_FormatYUV422PackedSemiPlanarContent = default;
             private static bool _COLOR_FormatYUV422PackedSemiPlanarReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecCapabilities.html#COLOR_FormatYUV422Planar"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int COLOR_FormatYUV422Planar { get { if (!_COLOR_FormatYUV422PlanarReady) { _COLOR_FormatYUV422PlanarContent = SGetField<int>(LocalBridgeClazz, "COLOR_FormatYUV422Planar"); _COLOR_FormatYUV422PlanarReady = true; } return _COLOR_FormatYUV422PlanarContent; } }
             private static int _COLOR_FormatYUV422PlanarContent = default;
             private static bool _COLOR_FormatYUV422PlanarReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecCapabilities.html#COLOR_FormatYUV422SemiPlanar"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int COLOR_FormatYUV422SemiPlanar { get { if (!_COLOR_FormatYUV422SemiPlanarReady) { _COLOR_FormatYUV422SemiPlanarContent = SGetField<int>(LocalBridgeClazz, "COLOR_FormatYUV422SemiPlanar"); _COLOR_FormatYUV422SemiPlanarReady = true; } return _COLOR_FormatYUV422SemiPlanarContent; } }
             private static int _COLOR_FormatYUV422SemiPlanarContent = default;
             private static bool _COLOR_FormatYUV422SemiPlanarReady = false; // this is used because in case of generics 
@@ -544,7 +550,7 @@ namespace Android.Media
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecCapabilities.html#COLOR_FormatYUV444Interleaved"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int COLOR_FormatYUV444Interleaved { get { if (!_COLOR_FormatYUV444InterleavedReady) { _COLOR_FormatYUV444InterleavedContent = SGetField<int>(LocalBridgeClazz, "COLOR_FormatYUV444Interleaved"); _COLOR_FormatYUV444InterleavedReady = true; } return _COLOR_FormatYUV444InterleavedContent; } }
             private static int _COLOR_FormatYUV444InterleavedContent = default;
             private static bool _COLOR_FormatYUV444InterleavedReady = false; // this is used because in case of generics 
@@ -557,14 +563,14 @@ namespace Android.Media
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecCapabilities.html#COLOR_QCOM_FormatYUV420SemiPlanar"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int COLOR_QCOM_FormatYUV420SemiPlanar { get { if (!_COLOR_QCOM_FormatYUV420SemiPlanarReady) { _COLOR_QCOM_FormatYUV420SemiPlanarContent = SGetField<int>(LocalBridgeClazz, "COLOR_QCOM_FormatYUV420SemiPlanar"); _COLOR_QCOM_FormatYUV420SemiPlanarReady = true; } return _COLOR_QCOM_FormatYUV420SemiPlanarContent; } }
             private static int _COLOR_QCOM_FormatYUV420SemiPlanarContent = default;
             private static bool _COLOR_QCOM_FormatYUV420SemiPlanarReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecCapabilities.html#COLOR_TI_FormatYUV420PackedSemiPlanar"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int COLOR_TI_FormatYUV420PackedSemiPlanar { get { if (!_COLOR_TI_FormatYUV420PackedSemiPlanarReady) { _COLOR_TI_FormatYUV420PackedSemiPlanarContent = SGetField<int>(LocalBridgeClazz, "COLOR_TI_FormatYUV420PackedSemiPlanar"); _COLOR_TI_FormatYUV420PackedSemiPlanarReady = true; } return _COLOR_TI_FormatYUV420PackedSemiPlanarContent; } }
             private static int _COLOR_TI_FormatYUV420PackedSemiPlanarContent = default;
             private static bool _COLOR_TI_FormatYUV420PackedSemiPlanarReady = false; // this is used because in case of generics 
@@ -660,46 +666,36 @@ namespace Android.Media
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecCapabilities.html#getDefaultFormat()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecCapabilities.html#getAudioCapabilities()"/>
             /// </summary>
-            public Android.Media.MediaFormat DefaultFormat
+            /// <returns><see cref="Android.Media.MediaCodecInfo.AudioCapabilities"/></returns>
+            public Android.Media.MediaCodecInfo.AudioCapabilities GetAudioCapabilities()
             {
-                get { return IExecuteWithSignature<Android.Media.MediaFormat>("getDefaultFormat", "()Landroid/media/MediaFormat;"); }
+                return IExecuteWithSignature<Android.Media.MediaCodecInfo.AudioCapabilities>("getAudioCapabilities", "()Landroid/media/MediaCodecInfo$AudioCapabilities;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecCapabilities.html#getAudioCapabilities()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecCapabilities.html#getEncoderCapabilities()"/>
             /// </summary>
-            public Android.Media.MediaCodecInfo.AudioCapabilities GetAudioCapabilities
+            /// <returns><see cref="Android.Media.MediaCodecInfo.EncoderCapabilities"/></returns>
+            public Android.Media.MediaCodecInfo.EncoderCapabilities GetEncoderCapabilities()
             {
-                get { return IExecuteWithSignature<Android.Media.MediaCodecInfo.AudioCapabilities>("getAudioCapabilities", "()Landroid/media/MediaCodecInfo$AudioCapabilities;"); }
+                return IExecuteWithSignature<Android.Media.MediaCodecInfo.EncoderCapabilities>("getEncoderCapabilities", "()Landroid/media/MediaCodecInfo$EncoderCapabilities;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecCapabilities.html#getEncoderCapabilities()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecCapabilities.html#getVideoCapabilities()"/>
             /// </summary>
-            public Android.Media.MediaCodecInfo.EncoderCapabilities GetEncoderCapabilities
+            /// <returns><see cref="Android.Media.MediaCodecInfo.VideoCapabilities"/></returns>
+            public Android.Media.MediaCodecInfo.VideoCapabilities GetVideoCapabilities()
             {
-                get { return IExecuteWithSignature<Android.Media.MediaCodecInfo.EncoderCapabilities>("getEncoderCapabilities", "()Landroid/media/MediaCodecInfo$EncoderCapabilities;"); }
+                return IExecuteWithSignature<Android.Media.MediaCodecInfo.VideoCapabilities>("getVideoCapabilities", "()Landroid/media/MediaCodecInfo$VideoCapabilities;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecCapabilities.html#getVideoCapabilities()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecCapabilities.html#getDefaultFormat()"/>
             /// </summary>
-            public Android.Media.MediaCodecInfo.VideoCapabilities GetVideoCapabilities
+            /// <returns><see cref="Android.Media.MediaFormat"/></returns>
+            public Android.Media.MediaFormat GetDefaultFormat()
             {
-                get { return IExecuteWithSignature<Android.Media.MediaCodecInfo.VideoCapabilities>("getVideoCapabilities", "()Landroid/media/MediaCodecInfo$VideoCapabilities;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecCapabilities.html#getMaxSupportedInstances()"/> 
-            /// </summary>
-            public int MaxSupportedInstances
-            {
-                get { return IExecuteWithSignature<int>("getMaxSupportedInstances", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecCapabilities.html#getMimeType()"/> 
-            /// </summary>
-            public Java.Lang.String MimeType
-            {
-                get { return IExecuteWithSignature<Java.Lang.String>("getMimeType", "()Ljava/lang/String;"); }
+                return IExecuteWithSignature<Android.Media.MediaFormat>("getDefaultFormat", "()Landroid/media/MediaFormat;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecCapabilities.html#isFeatureRequired(java.lang.String)"/>
@@ -727,6 +723,22 @@ namespace Android.Media
             public bool IsFormatSupported(Android.Media.MediaFormat arg0)
             {
                 return IExecuteWithSignature<bool>("isFormatSupported", "(Landroid/media/MediaFormat;)Z", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecCapabilities.html#getMaxSupportedInstances()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetMaxSupportedInstances()
+            {
+                return IExecuteWithSignature<int>("getMaxSupportedInstances", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.CodecCapabilities.html#getMimeType()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetMimeType()
+            {
+                return IExecuteWithSignature<Java.Lang.String>("getMimeType", "()Ljava/lang/String;");
             }
 
             #endregion
@@ -2177,27 +2189,6 @@ namespace Android.Media
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.VideoCapabilities.html#getHeightAlignment()"/> 
-            /// </summary>
-            public int HeightAlignment
-            {
-                get { return IExecuteWithSignature<int>("getHeightAlignment", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.VideoCapabilities.html#getSupportedPerformancePoints()"/> 
-            /// </summary>
-            public Java.Util.List<Android.Media.MediaCodecInfo.VideoCapabilities.PerformancePoint> SupportedPerformancePoints
-            {
-                get { return IExecuteWithSignature<Java.Util.List<Android.Media.MediaCodecInfo.VideoCapabilities.PerformancePoint>>("getSupportedPerformancePoints", "()Ljava/util/List;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.VideoCapabilities.html#getWidthAlignment()"/> 
-            /// </summary>
-            public int WidthAlignment
-            {
-                get { return IExecuteWithSignature<int>("getWidthAlignment", "()I"); }
-            }
-            /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.VideoCapabilities.html#areSizeAndRateSupported(int,int,double)"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
@@ -2217,6 +2208,30 @@ namespace Android.Media
             public bool IsSizeSupported(int arg0, int arg1)
             {
                 return IExecute<bool>("isSizeSupported", arg0, arg1);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.VideoCapabilities.html#getHeightAlignment()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetHeightAlignment()
+            {
+                return IExecuteWithSignature<int>("getHeightAlignment", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.VideoCapabilities.html#getWidthAlignment()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetWidthAlignment()
+            {
+                return IExecuteWithSignature<int>("getWidthAlignment", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaCodecInfo.VideoCapabilities.html#getSupportedPerformancePoints()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Util.List"/></returns>
+            public Java.Util.List<Android.Media.MediaCodecInfo.VideoCapabilities.PerformancePoint> GetSupportedPerformancePoints()
+            {
+                return IExecuteWithSignature<Java.Util.List<Android.Media.MediaCodecInfo.VideoCapabilities.PerformancePoint>>("getSupportedPerformancePoints", "()Ljava/util/List;");
             }
 
             #endregion

@@ -52,14 +52,14 @@ namespace Android.Inputmethodservice
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#BACK_DISPOSITION_WILL_DISMISS"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int BACK_DISPOSITION_WILL_DISMISS { get { if (!_BACK_DISPOSITION_WILL_DISMISSReady) { _BACK_DISPOSITION_WILL_DISMISSContent = SGetField<int>(LocalBridgeClazz, "BACK_DISPOSITION_WILL_DISMISS"); _BACK_DISPOSITION_WILL_DISMISSReady = true; } return _BACK_DISPOSITION_WILL_DISMISSContent; } }
         private static int _BACK_DISPOSITION_WILL_DISMISSContent = default;
         private static bool _BACK_DISPOSITION_WILL_DISMISSReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#BACK_DISPOSITION_WILL_NOT_DISMISS"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int BACK_DISPOSITION_WILL_NOT_DISMISS { get { if (!_BACK_DISPOSITION_WILL_NOT_DISMISSReady) { _BACK_DISPOSITION_WILL_NOT_DISMISSContent = SGetField<int>(LocalBridgeClazz, "BACK_DISPOSITION_WILL_NOT_DISMISS"); _BACK_DISPOSITION_WILL_NOT_DISMISSReady = true; } return _BACK_DISPOSITION_WILL_NOT_DISMISSContent; } }
         private static int _BACK_DISPOSITION_WILL_NOT_DISMISSContent = default;
         private static bool _BACK_DISPOSITION_WILL_NOT_DISMISSReady = false; // this is used because in case of generics 
@@ -68,100 +68,32 @@ namespace Android.Inputmethodservice
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#getStylusHandwritingIdleTimeoutMax()"/> 
+        /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#getStylusHandwritingIdleTimeoutMax()"/>
         /// </summary>
-        public static Java.Time.Duration StylusHandwritingIdleTimeoutMax
+        /// <returns><see cref="Java.Time.Duration"/></returns>
+        public static Java.Time.Duration GetStylusHandwritingIdleTimeoutMax()
         {
-            get { return SExecuteWithSignature<Java.Time.Duration>(LocalBridgeClazz, "getStylusHandwritingIdleTimeoutMax", "()Ljava/time/Duration;"); }
+            return SExecuteWithSignature<Java.Time.Duration>(LocalBridgeClazz, "getStylusHandwritingIdleTimeoutMax", "()Ljava/time/Duration;");
         }
 
         #endregion
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#getBackDisposition()"/> <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#setBackDisposition(int)"/>
+        /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#getWindow()"/>
         /// </summary>
-        public int BackDisposition
+        /// <returns><see cref="Android.App.Dialog"/></returns>
+        public Android.App.Dialog GetWindow()
         {
-            get { return IExecuteWithSignature<int>("getBackDisposition", "()I"); } set { IExecuteWithSignature("setBackDisposition", "(I)V", value); }
+            return IExecuteWithSignature<Android.App.Dialog>("getWindow", "()Landroid/app/Dialog;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#getCandidatesHiddenVisibility()"/> 
+        /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#getCurrentInputEditorInfo()"/>
         /// </summary>
-        public int CandidatesHiddenVisibility
+        /// <returns><see cref="Android.View.Inputmethod.EditorInfo"/></returns>
+        public Android.View.Inputmethod.EditorInfo GetCurrentInputEditorInfo()
         {
-            get { return IExecuteWithSignature<int>("getCandidatesHiddenVisibility", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#getCurrentInputBinding()"/> 
-        /// </summary>
-        public Android.View.Inputmethod.InputBinding CurrentInputBinding
-        {
-            get { return IExecuteWithSignature<Android.View.Inputmethod.InputBinding>("getCurrentInputBinding", "()Landroid/view/inputmethod/InputBinding;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#getCurrentInputConnection()"/> 
-        /// </summary>
-        public Android.View.Inputmethod.InputConnection CurrentInputConnection
-        {
-            get { return IExecuteWithSignature<Android.View.Inputmethod.InputConnection>("getCurrentInputConnection", "()Landroid/view/inputmethod/InputConnection;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#getCurrentInputEditorInfo()"/> 
-        /// </summary>
-        public Android.View.Inputmethod.EditorInfo CurrentInputEditorInfo
-        {
-            get { return IExecuteWithSignature<Android.View.Inputmethod.EditorInfo>("getCurrentInputEditorInfo", "()Landroid/view/inputmethod/EditorInfo;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#getCurrentInputStarted()"/> 
-        /// </summary>
-        public bool CurrentInputStarted
-        {
-            get { return IExecuteWithSignature<bool>("getCurrentInputStarted", "()Z"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#getInputMethodWindowRecommendedHeight()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public int InputMethodWindowRecommendedHeight
-        {
-            get { return IExecuteWithSignature<int>("getInputMethodWindowRecommendedHeight", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#getLayoutInflater()"/> 
-        /// </summary>
-        public Android.View.LayoutInflater LayoutInflater
-        {
-            get { return IExecuteWithSignature<Android.View.LayoutInflater>("getLayoutInflater", "()Landroid/view/LayoutInflater;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#getMaxWidth()"/> 
-        /// </summary>
-        public int MaxWidth
-        {
-            get { return IExecuteWithSignature<int>("getMaxWidth", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#getStylusHandwritingSessionTimeout()"/> <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#setStylusHandwritingSessionTimeout(java.time.Duration)"/>
-        /// </summary>
-        public Java.Time.Duration StylusHandwritingSessionTimeout
-        {
-            get { return IExecuteWithSignature<Java.Time.Duration>("getStylusHandwritingSessionTimeout", "()Ljava/time/Duration;"); } set { IExecuteWithSignature("setStylusHandwritingSessionTimeout", "(Ljava/time/Duration;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#getStylusHandwritingWindow()"/> 
-        /// </summary>
-        public Android.View.Window StylusHandwritingWindow
-        {
-            get { return IExecuteWithSignature<Android.View.Window>("getStylusHandwritingWindow", "()Landroid/view/Window;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#getWindow()"/> 
-        /// </summary>
-        public Android.App.Dialog Window
-        {
-            get { return IExecuteWithSignature<Android.App.Dialog>("getWindow", "()Landroid/app/Dialog;"); }
+            return IExecuteWithSignature<Android.View.Inputmethod.EditorInfo>("getCurrentInputEditorInfo", "()Landroid/view/inputmethod/EditorInfo;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onCreateInlineSuggestionsRequest(android.os.Bundle)"/>
@@ -171,6 +103,30 @@ namespace Android.Inputmethodservice
         public Android.View.Inputmethod.InlineSuggestionsRequest OnCreateInlineSuggestionsRequest(Android.Os.Bundle arg0)
         {
             return IExecuteWithSignature<Android.View.Inputmethod.InlineSuggestionsRequest>("onCreateInlineSuggestionsRequest", "(Landroid/os/Bundle;)Landroid/view/inputmethod/InlineSuggestionsRequest;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#getCurrentInputBinding()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.Inputmethod.InputBinding"/></returns>
+        public Android.View.Inputmethod.InputBinding GetCurrentInputBinding()
+        {
+            return IExecuteWithSignature<Android.View.Inputmethod.InputBinding>("getCurrentInputBinding", "()Landroid/view/inputmethod/InputBinding;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#getCurrentInputConnection()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.Inputmethod.InputConnection"/></returns>
+        public Android.View.Inputmethod.InputConnection GetCurrentInputConnection()
+        {
+            return IExecuteWithSignature<Android.View.Inputmethod.InputConnection>("getCurrentInputConnection", "()Landroid/view/inputmethod/InputConnection;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#getLayoutInflater()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.LayoutInflater"/></returns>
+        public Android.View.LayoutInflater GetLayoutInflater()
+        {
+            return IExecuteWithSignature<Android.View.LayoutInflater>("getLayoutInflater", "()Landroid/view/LayoutInflater;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onCreateCandidatesView()"/>
@@ -200,10 +156,18 @@ namespace Android.Inputmethodservice
         /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#enableHardwareAcceleration()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool EnableHardwareAcceleration()
         {
             return IExecuteWithSignature<bool>("enableHardwareAcceleration", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#getCurrentInputStarted()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetCurrentInputStarted()
+        {
+            return IExecuteWithSignature<bool>("getCurrentInputStarted", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#isExtractViewShown()"/>
@@ -299,6 +263,14 @@ namespace Android.Inputmethodservice
             return IExecuteWithSignature<bool>("sendDefaultEditorAction", "(Z)Z", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#getStylusHandwritingWindow()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.Window"/></returns>
+        public Android.View.Window GetStylusHandwritingWindow()
+        {
+            return IExecuteWithSignature<Android.View.Window>("getStylusHandwritingWindow", "()Landroid/view/Window;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#shouldOfferSwitchingToNextInputMethod()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -324,6 +296,14 @@ namespace Android.Inputmethodservice
             return IExecuteWithSignature<bool>("switchToPreviousInputMethod", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#getStylusHandwritingSessionTimeout()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Time.Duration"/></returns>
+        public Java.Time.Duration GetStylusHandwritingSessionTimeout()
+        {
+            return IExecuteWithSignature<Java.Time.Duration>("getStylusHandwritingSessionTimeout", "()Ljava/time/Duration;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#finishStylusHandwriting()"/>
         /// </summary>
         public void FinishStylusHandwriting()
@@ -339,6 +319,14 @@ namespace Android.Inputmethodservice
             IExecuteWithSignature("requestShowSelf", "(I)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#setStylusHandwritingSessionTimeout(java.time.Duration)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Duration"/></param>
+        public void SetStylusHandwritingSessionTimeout(Java.Time.Duration arg0)
+        {
+            IExecuteWithSignature("setStylusHandwritingSessionTimeout", "(Ljava/time/Duration;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#switchInputMethod(java.lang.String,android.view.inputmethod.InputMethodSubtype)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -346,6 +334,39 @@ namespace Android.Inputmethodservice
         public void SwitchInputMethod(Java.Lang.String arg0, Android.View.Inputmethod.InputMethodSubtype arg1)
         {
             IExecute("switchInputMethod", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#getBackDisposition()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetBackDisposition()
+        {
+            return IExecuteWithSignature<int>("getBackDisposition", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#getCandidatesHiddenVisibility()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCandidatesHiddenVisibility()
+        {
+            return IExecuteWithSignature<int>("getCandidatesHiddenVisibility", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#getInputMethodWindowRecommendedHeight()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetInputMethodWindowRecommendedHeight()
+        {
+            return IExecuteWithSignature<int>("getInputMethodWindowRecommendedHeight", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#getMaxWidth()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMaxWidth()
+        {
+            return IExecuteWithSignature<int>("getMaxWidth", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#getTextForImeAction(int)"/>
@@ -535,7 +556,7 @@ namespace Android.Inputmethodservice
         /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onUpdateCursor(android.graphics.Rect)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Graphics.Rect"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnUpdateCursor(Android.Graphics.Rect arg0)
         {
             IExecuteWithSignature("onUpdateCursor", "(Landroid/graphics/Rect;)V", arg0);
@@ -598,7 +619,7 @@ namespace Android.Inputmethodservice
         /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#onViewClicked(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnViewClicked(bool arg0)
         {
             IExecuteWithSignature("onViewClicked", "(Z)V", arg0);
@@ -640,6 +661,14 @@ namespace Android.Inputmethodservice
         public void SendKeyChar(char arg0)
         {
             IExecuteWithSignature("sendKeyChar", "(C)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#setBackDisposition(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetBackDisposition(int arg0)
+        {
+            IExecuteWithSignature("setBackDisposition", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/inputmethodservice/InputMethodService.html#setCandidatesView(android.view.View)"/>

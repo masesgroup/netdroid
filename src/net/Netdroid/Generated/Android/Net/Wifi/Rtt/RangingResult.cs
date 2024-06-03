@@ -76,88 +76,28 @@ namespace Android.Net.Wifi.Rtt
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.html#getDistanceMm()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.html#getMacAddress()"/>
         /// </summary>
-        public int DistanceMm
+        /// <returns><see cref="Android.Net.MacAddress"/></returns>
+        public Android.Net.MacAddress GetMacAddress()
         {
-            get { return IExecuteWithSignature<int>("getDistanceMm", "()I"); }
+            return IExecuteWithSignature<Android.Net.MacAddress>("getMacAddress", "()Landroid/net/MacAddress;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.html#getDistanceStdDevMm()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.html#getPeerHandle()"/>
         /// </summary>
-        public int DistanceStdDevMm
+        /// <returns><see cref="Android.Net.Wifi.Aware.PeerHandle"/></returns>
+        public Android.Net.Wifi.Aware.PeerHandle GetPeerHandle()
         {
-            get { return IExecuteWithSignature<int>("getDistanceStdDevMm", "()I"); }
+            return IExecuteWithSignature<Android.Net.Wifi.Aware.PeerHandle>("getPeerHandle", "()Landroid/net/wifi/aware/PeerHandle;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.html#getMacAddress()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.html#getUnverifiedResponderLocation()"/>
         /// </summary>
-        public Android.Net.MacAddress MacAddress
+        /// <returns><see cref="Android.Net.Wifi.Rtt.ResponderLocation"/></returns>
+        public Android.Net.Wifi.Rtt.ResponderLocation GetUnverifiedResponderLocation()
         {
-            get { return IExecuteWithSignature<Android.Net.MacAddress>("getMacAddress", "()Landroid/net/MacAddress;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.html#getMeasurementBandwidth()"/> 
-        /// </summary>
-        public int MeasurementBandwidth
-        {
-            get { return IExecuteWithSignature<int>("getMeasurementBandwidth", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.html#getMeasurementChannelFrequencyMHz()"/> 
-        /// </summary>
-        public int MeasurementChannelFrequencyMHz
-        {
-            get { return IExecuteWithSignature<int>("getMeasurementChannelFrequencyMHz", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.html#getNumAttemptedMeasurements()"/> 
-        /// </summary>
-        public int NumAttemptedMeasurements
-        {
-            get { return IExecuteWithSignature<int>("getNumAttemptedMeasurements", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.html#getNumSuccessfulMeasurements()"/> 
-        /// </summary>
-        public int NumSuccessfulMeasurements
-        {
-            get { return IExecuteWithSignature<int>("getNumSuccessfulMeasurements", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.html#getPeerHandle()"/> 
-        /// </summary>
-        public Android.Net.Wifi.Aware.PeerHandle PeerHandle
-        {
-            get { return IExecuteWithSignature<Android.Net.Wifi.Aware.PeerHandle>("getPeerHandle", "()Landroid/net/wifi/aware/PeerHandle;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.html#getRangingTimestampMillis()"/> 
-        /// </summary>
-        public long RangingTimestampMillis
-        {
-            get { return IExecuteWithSignature<long>("getRangingTimestampMillis", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.html#getRssi()"/> 
-        /// </summary>
-        public int Rssi
-        {
-            get { return IExecuteWithSignature<int>("getRssi", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.html#getStatus()"/> 
-        /// </summary>
-        public int Status
-        {
-            get { return IExecuteWithSignature<int>("getStatus", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.html#getUnverifiedResponderLocation()"/> 
-        /// </summary>
-        public Android.Net.Wifi.Rtt.ResponderLocation UnverifiedResponderLocation
-        {
-            get { return IExecuteWithSignature<Android.Net.Wifi.Rtt.ResponderLocation>("getUnverifiedResponderLocation", "()Landroid/net/wifi/rtt/ResponderLocation;"); }
+            return IExecuteWithSignature<Android.Net.Wifi.Rtt.ResponderLocation>("getUnverifiedResponderLocation", "()Landroid/net/wifi/rtt/ResponderLocation;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.html#is80211mcMeasurement()"/>
@@ -174,6 +114,78 @@ namespace Android.Net.Wifi.Rtt
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.html#getDistanceMm()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDistanceMm()
+        {
+            return IExecuteWithSignature<int>("getDistanceMm", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.html#getDistanceStdDevMm()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDistanceStdDevMm()
+        {
+            return IExecuteWithSignature<int>("getDistanceStdDevMm", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.html#getMeasurementBandwidth()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMeasurementBandwidth()
+        {
+            return IExecuteWithSignature<int>("getMeasurementBandwidth", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.html#getMeasurementChannelFrequencyMHz()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMeasurementChannelFrequencyMHz()
+        {
+            return IExecuteWithSignature<int>("getMeasurementChannelFrequencyMHz", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.html#getNumAttemptedMeasurements()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetNumAttemptedMeasurements()
+        {
+            return IExecuteWithSignature<int>("getNumAttemptedMeasurements", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.html#getNumSuccessfulMeasurements()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetNumSuccessfulMeasurements()
+        {
+            return IExecuteWithSignature<int>("getNumSuccessfulMeasurements", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.html#getRssi()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetRssi()
+        {
+            return IExecuteWithSignature<int>("getRssi", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.html#getStatus()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetStatus()
+        {
+            return IExecuteWithSignature<int>("getStatus", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.html#getRangingTimestampMillis()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetRangingTimestampMillis()
+        {
+            return IExecuteWithSignature<long>("getRangingTimestampMillis", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/rtt/RangingResult.html#writeToParcel(android.os.Parcel,int)"/>

@@ -46,7 +46,7 @@ namespace Org.Apache.Http.Conn.Ssl
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static bool AcceptableCountryWildcard(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<bool>(LocalBridgeClazz, "acceptableCountryWildcard", "(Ljava/lang/String;)Z", arg0);
@@ -56,7 +56,7 @@ namespace Org.Apache.Http.Conn.Ssl
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="int"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int CountDots(Java.Lang.String arg0)
         {
             return SExecuteWithSignature<int>(LocalBridgeClazz, "countDots", "(Ljava/lang/String;)I", arg0);
@@ -66,7 +66,7 @@ namespace Org.Apache.Http.Conn.Ssl
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Cert.X509Certificate"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String[] GetCNs(Java.Security.Cert.X509Certificate arg0)
         {
             return SExecuteWithSignatureArray<Java.Lang.String>(LocalBridgeClazz, "getCNs", "(Ljava/security/cert/X509Certificate;)[Ljava/lang/String;", arg0);
@@ -76,7 +76,7 @@ namespace Org.Apache.Http.Conn.Ssl
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Cert.X509Certificate"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String[] GetDNSSubjectAlts(Java.Security.Cert.X509Certificate arg0)
         {
             return SExecuteWithSignatureArray<Java.Lang.String>(LocalBridgeClazz, "getDNSSubjectAlts", "(Ljava/security/cert/X509Certificate;)[Ljava/lang/String;", arg0);
@@ -91,7 +91,7 @@ namespace Org.Apache.Http.Conn.Ssl
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Javax.Net.Ssl.SSLSession"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool Verify(Java.Lang.String arg0, Javax.Net.Ssl.SSLSession arg1)
         {
             return IExecute<bool>("verify", arg0, arg1);
@@ -104,7 +104,7 @@ namespace Org.Apache.Http.Conn.Ssl
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <param name="arg3"><see cref="bool"/></param>
         /// <exception cref="Javax.Net.Ssl.SSLException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Verify(Java.Lang.String arg0, Java.Lang.String[] arg1, Java.Lang.String[] arg2, bool arg3)
         {
             IExecute("verify", arg0, arg1, arg2, arg3);
@@ -115,7 +115,7 @@ namespace Org.Apache.Http.Conn.Ssl
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Security.Cert.X509Certificate"/></param>
         /// <exception cref="Javax.Net.Ssl.SSLException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Verify(Java.Lang.String arg0, Java.Security.Cert.X509Certificate arg1)
         {
             IExecute("verify", arg0, arg1);
@@ -126,7 +126,7 @@ namespace Org.Apache.Http.Conn.Ssl
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Javax.Net.Ssl.SSLSocket"/></param>
         /// <exception cref="Java.Io.IOException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Verify(Java.Lang.String arg0, Javax.Net.Ssl.SSLSocket arg1)
         {
             IExecute("verify", arg0, arg1);

@@ -73,39 +73,12 @@ namespace Android.Media
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/Session2Token.html#getExtras()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/Session2Token.html#getExtras()"/>
         /// </summary>
-        public Android.Os.Bundle Extras
+        /// <returns><see cref="Android.Os.Bundle"/></returns>
+        public Android.Os.Bundle GetExtras()
         {
-            get { return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/Session2Token.html#getPackageName()"/> 
-        /// </summary>
-        public Java.Lang.String PackageName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPackageName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/Session2Token.html#getServiceName()"/> 
-        /// </summary>
-        public Java.Lang.String ServiceName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getServiceName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/Session2Token.html#getType()"/> 
-        /// </summary>
-        public int Type
-        {
-            get { return IExecuteWithSignature<int>("getType", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/Session2Token.html#getUid()"/> 
-        /// </summary>
-        public int Uid
-        {
-            get { return IExecuteWithSignature<int>("getUid", "()I"); }
+            return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/Session2Token.html#describeContents()"/>
@@ -114,6 +87,38 @@ namespace Android.Media
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/Session2Token.html#getType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetType()
+        {
+            return IExecuteWithSignature<int>("getType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/Session2Token.html#getUid()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetUid()
+        {
+            return IExecuteWithSignature<int>("getUid", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/Session2Token.html#getPackageName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPackageName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPackageName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/Session2Token.html#getServiceName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetServiceName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getServiceName", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/Session2Token.html#writeToParcel(android.os.Parcel,int)"/>

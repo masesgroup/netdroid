@@ -46,32 +46,36 @@ namespace Javax.Net.Ssl
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/ExtendedSSLSession.html#getLocalSupportedSignatureAlgorithms()"/> 
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/ExtendedSSLSession.html#getLocalSupportedSignatureAlgorithms()"/>
         /// </summary>
-        public Java.Lang.String[] LocalSupportedSignatureAlgorithms
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String[] GetLocalSupportedSignatureAlgorithms()
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getLocalSupportedSignatureAlgorithms", "()[Ljava/lang/String;"); }
+            return IExecuteWithSignatureArray<Java.Lang.String>("getLocalSupportedSignatureAlgorithms", "()[Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/ExtendedSSLSession.html#getPeerSupportedSignatureAlgorithms()"/> 
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/ExtendedSSLSession.html#getPeerSupportedSignatureAlgorithms()"/>
         /// </summary>
-        public Java.Lang.String[] PeerSupportedSignatureAlgorithms
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String[] GetPeerSupportedSignatureAlgorithms()
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getPeerSupportedSignatureAlgorithms", "()[Ljava/lang/String;"); }
+            return IExecuteWithSignatureArray<Java.Lang.String>("getPeerSupportedSignatureAlgorithms", "()[Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/ExtendedSSLSession.html#getRequestedServerNames()"/> 
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/ExtendedSSLSession.html#getStatusResponses()"/>
         /// </summary>
-        public Java.Util.List<Javax.Net.Ssl.SNIServerName> RequestedServerNames
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<byte[]> GetStatusResponses()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Javax.Net.Ssl.SNIServerName>>("getRequestedServerNames", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Java.Util.List<byte[]>>("getStatusResponses", "()Ljava/util/List;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/ExtendedSSLSession.html#getStatusResponses()"/> 
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/ExtendedSSLSession.html#getRequestedServerNames()"/>
         /// </summary>
-        public Java.Util.List<byte[]> StatusResponses
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Javax.Net.Ssl.SNIServerName> GetRequestedServerNames()
         {
-            get { return IExecuteWithSignature<Java.Util.List<byte[]>>("getStatusResponses", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Java.Util.List<Javax.Net.Ssl.SNIServerName>>("getRequestedServerNames", "()Ljava/util/List;");
         }
 
         #endregion

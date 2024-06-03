@@ -28,21 +28,21 @@ namespace Javax.Security.Cert
 {
     #region Certificate
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/security/cert/Certificate.html"/>
+    /// <see href="https://developer.android.com/reference/javax/security/cert/Certificate.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class Certificate : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Certificate>
     {
         const string _bridgeClassName = "javax.security.cert.Certificate";
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Certificate class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Certificate class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Certificate() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Certificate class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Certificate class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Certificate(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -75,9 +75,9 @@ namespace Javax.Security.Cert
 
     #region CertificateEncodingException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/security/cert/CertificateEncodingException.html"/>
+    /// <see href="https://developer.android.com/reference/javax/security/cert/CertificateEncodingException.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class CertificateEncodingException : Javax.Security.Cert.CertificateException
     {
         const string _bridgeClassName = "javax.security.cert.CertificateEncodingException";
@@ -93,9 +93,9 @@ namespace Javax.Security.Cert
 
     #region CertificateException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/security/cert/CertificateException.html"/>
+    /// <see href="https://developer.android.com/reference/javax/security/cert/CertificateException.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class CertificateException : Java.Lang.Exception
     {
         const string _bridgeClassName = "javax.security.cert.CertificateException";
@@ -111,9 +111,9 @@ namespace Javax.Security.Cert
 
     #region CertificateExpiredException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/security/cert/CertificateExpiredException.html"/>
+    /// <see href="https://developer.android.com/reference/javax/security/cert/CertificateExpiredException.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class CertificateExpiredException : Javax.Security.Cert.CertificateException
     {
         const string _bridgeClassName = "javax.security.cert.CertificateExpiredException";
@@ -129,9 +129,9 @@ namespace Javax.Security.Cert
 
     #region CertificateNotYetValidException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/security/cert/CertificateNotYetValidException.html"/>
+    /// <see href="https://developer.android.com/reference/javax/security/cert/CertificateNotYetValidException.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class CertificateNotYetValidException : Javax.Security.Cert.CertificateException
     {
         const string _bridgeClassName = "javax.security.cert.CertificateNotYetValidException";
@@ -147,9 +147,9 @@ namespace Javax.Security.Cert
 
     #region CertificateParsingException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/security/cert/CertificateParsingException.html"/>
+    /// <see href="https://developer.android.com/reference/javax/security/cert/CertificateParsingException.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class CertificateParsingException : Javax.Security.Cert.CertificateException
     {
         const string _bridgeClassName = "javax.security.cert.CertificateParsingException";
@@ -165,21 +165,21 @@ namespace Javax.Security.Cert
 
     #region X509Certificate
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/security/cert/X509Certificate.html"/>
+    /// <see href="https://developer.android.com/reference/javax/security/cert/X509Certificate.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class X509Certificate : Javax.Security.Cert.Certificate
     {
         const string _bridgeClassName = "javax.security.cert.X509Certificate";
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("X509Certificate class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("X509Certificate class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public X509Certificate() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("X509Certificate class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("X509Certificate class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public X509Certificate(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);

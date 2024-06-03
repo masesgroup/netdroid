@@ -232,27 +232,6 @@ namespace Android.View.Inputmethod
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#getInitialToolType()"/> <see href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#setInitialToolType(int)"/>
-        /// </summary>
-        public int InitialToolType
-        {
-            get { return IExecuteWithSignature<int>("getInitialToolType", "()I"); } set { IExecuteWithSignature("setInitialToolType", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#getSupportedHandwritingGesturePreviews()"/> <see href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#setSupportedHandwritingGesturePreviews(java.util.Set)"/>
-        /// </summary>
-        public Java.Util.Set SupportedHandwritingGesturePreviews
-        {
-            get { return IExecuteWithSignature<Java.Util.Set>("getSupportedHandwritingGesturePreviews", "()Ljava/util/Set;"); } set { IExecuteWithSignature("setSupportedHandwritingGesturePreviews", "(Ljava/util/Set;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#getSupportedHandwritingGestures()"/> <see href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#setSupportedHandwritingGestures(java.util.List)"/>
-        /// </summary>
-        public Java.Util.List SupportedHandwritingGestures
-        {
-            get { return IExecuteWithSignature<Java.Util.List>("getSupportedHandwritingGestures", "()Ljava/util/List;"); } set { IExecuteWithSignature("setSupportedHandwritingGestures", "(Ljava/util/List;)V", value); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#getInitialSurroundingText(int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -278,6 +257,14 @@ namespace Android.View.Inputmethod
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#getInitialToolType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetInitialToolType()
+        {
+            return IExecuteWithSignature<int>("getInitialToolType", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#getInitialSelectedText(int)"/>
@@ -309,6 +296,24 @@ namespace Android.View.Inputmethod
             return IExecute<Java.Lang.CharSequence>("getInitialTextBeforeCursor", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#getSupportedHandwritingGestures()"/>
+        /// </summary>
+        /// <typeparam name="ReturnExtendsAndroid_View_Inputmethod_HandwritingGesture"><see cref="Android.View.Inputmethod.HandwritingGesture"/></typeparam>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Lang.Class> GetSupportedHandwritingGestures<ReturnExtendsAndroid_View_Inputmethod_HandwritingGesture>() where ReturnExtendsAndroid_View_Inputmethod_HandwritingGesture : Android.View.Inputmethod.HandwritingGesture
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.Class>>("getSupportedHandwritingGestures", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#getSupportedHandwritingGesturePreviews()"/>
+        /// </summary>
+        /// <typeparam name="ReturnExtendsAndroid_View_Inputmethod_PreviewableHandwritingGesture"><see cref="Android.View.Inputmethod.PreviewableHandwritingGesture"/></typeparam>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Lang.Class> GetSupportedHandwritingGesturePreviews<ReturnExtendsAndroid_View_Inputmethod_PreviewableHandwritingGesture>() where ReturnExtendsAndroid_View_Inputmethod_PreviewableHandwritingGesture : Android.View.Inputmethod.PreviewableHandwritingGesture
+        {
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.Class>>("getSupportedHandwritingGesturePreviews", "()Ljava/util/Set;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#dump(android.util.Printer,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Util.Printer"/></param>
@@ -333,6 +338,32 @@ namespace Android.View.Inputmethod
         public void SetInitialSurroundingText(Java.Lang.CharSequence arg0)
         {
             IExecuteWithSignature("setInitialSurroundingText", "(Ljava/lang/CharSequence;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#setInitialToolType(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetInitialToolType(int arg0)
+        {
+            IExecuteWithSignature("setInitialToolType", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#setSupportedHandwritingGesturePreviews(java.util.Set)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Set"/></param>
+        /// <typeparam name="Arg0ExtendsAndroid_View_Inputmethod_PreviewableHandwritingGesture"><see cref="Android.View.Inputmethod.PreviewableHandwritingGesture"/></typeparam>
+        public void SetSupportedHandwritingGesturePreviews<Arg0ExtendsAndroid_View_Inputmethod_PreviewableHandwritingGesture>(Java.Util.Set<Java.Lang.Class> arg0) where Arg0ExtendsAndroid_View_Inputmethod_PreviewableHandwritingGesture : Android.View.Inputmethod.PreviewableHandwritingGesture
+        {
+            IExecuteWithSignature("setSupportedHandwritingGesturePreviews", "(Ljava/util/Set;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#setSupportedHandwritingGestures(java.util.List)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        /// <typeparam name="Arg0ExtendsAndroid_View_Inputmethod_HandwritingGesture"><see cref="Android.View.Inputmethod.HandwritingGesture"/></typeparam>
+        public void SetSupportedHandwritingGestures<Arg0ExtendsAndroid_View_Inputmethod_HandwritingGesture>(Java.Util.List<Java.Lang.Class> arg0) where Arg0ExtendsAndroid_View_Inputmethod_HandwritingGesture : Android.View.Inputmethod.HandwritingGesture
+        {
+            IExecuteWithSignature("setSupportedHandwritingGestures", "(Ljava/util/List;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/EditorInfo.html#writeToParcel(android.os.Parcel,int)"/>

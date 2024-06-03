@@ -52,34 +52,6 @@ namespace Android.Hardware.Usb
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbConfiguration.html#getId()"/> 
-        /// </summary>
-        public int Id
-        {
-            get { return IExecuteWithSignature<int>("getId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbConfiguration.html#getInterfaceCount()"/> 
-        /// </summary>
-        public int InterfaceCount
-        {
-            get { return IExecuteWithSignature<int>("getInterfaceCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbConfiguration.html#getMaxPower()"/> 
-        /// </summary>
-        public int MaxPower
-        {
-            get { return IExecuteWithSignature<int>("getMaxPower", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbConfiguration.html#getName()"/> 
-        /// </summary>
-        public Java.Lang.String Name
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbConfiguration.html#getInterface(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -111,6 +83,38 @@ namespace Android.Hardware.Usb
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbConfiguration.html#getId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetId()
+        {
+            return IExecuteWithSignature<int>("getId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbConfiguration.html#getInterfaceCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetInterfaceCount()
+        {
+            return IExecuteWithSignature<int>("getInterfaceCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbConfiguration.html#getMaxPower()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMaxPower()
+        {
+            return IExecuteWithSignature<int>("getMaxPower", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbConfiguration.html#getName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/usb/UsbConfiguration.html#writeToParcel(android.os.Parcel,int)"/>

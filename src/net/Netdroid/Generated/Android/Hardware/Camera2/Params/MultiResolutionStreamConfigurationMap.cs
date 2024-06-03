@@ -46,18 +46,20 @@ namespace Android.Hardware.Camera2.Params
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/MultiResolutionStreamConfigurationMap.html#getInputFormats()"/> 
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/MultiResolutionStreamConfigurationMap.html#getInputFormats()"/>
         /// </summary>
-        public int[] InputFormats
+        /// <returns><see cref="int"/></returns>
+        public int[] GetInputFormats()
         {
-            get { return IExecuteWithSignatureArray<int>("getInputFormats", "()[I"); }
+            return IExecuteWithSignatureArray<int>("getInputFormats", "()[I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/MultiResolutionStreamConfigurationMap.html#getOutputFormats()"/> 
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/MultiResolutionStreamConfigurationMap.html#getOutputFormats()"/>
         /// </summary>
-        public int[] OutputFormats
+        /// <returns><see cref="int"/></returns>
+        public int[] GetOutputFormats()
         {
-            get { return IExecuteWithSignatureArray<int>("getOutputFormats", "()[I"); }
+            return IExecuteWithSignatureArray<int>("getOutputFormats", "()[I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/MultiResolutionStreamConfigurationMap.html#getInputInfo(int)"/>

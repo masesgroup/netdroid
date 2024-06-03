@@ -76,25 +76,12 @@ namespace Android.Media
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioDescriptor.html#getDescriptor()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/AudioDescriptor.html#getDescriptor()"/>
         /// </summary>
-        public byte[] Descriptor
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetDescriptor()
         {
-            get { return IExecuteWithSignatureArray<byte>("getDescriptor", "()[B"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioDescriptor.html#getEncapsulationType()"/> 
-        /// </summary>
-        public int EncapsulationType
-        {
-            get { return IExecuteWithSignature<int>("getEncapsulationType", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioDescriptor.html#getStandard()"/> 
-        /// </summary>
-        public int Standard
-        {
-            get { return IExecuteWithSignature<int>("getStandard", "()I"); }
+            return IExecuteWithSignatureArray<byte>("getDescriptor", "()[B");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioDescriptor.html#describeContents()"/>
@@ -103,6 +90,22 @@ namespace Android.Media
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioDescriptor.html#getEncapsulationType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetEncapsulationType()
+        {
+            return IExecuteWithSignature<int>("getEncapsulationType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioDescriptor.html#getStandard()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetStandard()
+        {
+            return IExecuteWithSignature<int>("getStandard", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioDescriptor.html#writeToParcel(android.os.Parcel,int)"/>

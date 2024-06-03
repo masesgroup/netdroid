@@ -42,7 +42,7 @@ namespace Java.Text
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/Normalizer.html#isNormalized(java.lang.CharSequence,java.text.Normalizer.Form)"/>
+        /// <see href="https://developer.android.com/reference/java/text/Normalizer.html#isNormalized(java.lang.CharSequence,java.text.Normalizer.Form)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <param name="arg1"><see cref="Java.Text.Normalizer.Form"/></param>
@@ -52,7 +52,7 @@ namespace Java.Text
             return SExecute<bool>(LocalBridgeClazz, "isNormalized", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/Normalizer.html#normalize(java.lang.CharSequence,java.text.Normalizer.Form)"/>
+        /// <see href="https://developer.android.com/reference/java/text/Normalizer.html#normalize(java.lang.CharSequence,java.text.Normalizer.Form)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <param name="arg1"><see cref="Java.Text.Normalizer.Form"/></param>
@@ -82,25 +82,25 @@ namespace Java.Text
 
             #region Fields
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/text/Normalizer.Form.html#NFC"/>
+            /// <see href="https://developer.android.com/reference/java/text/Normalizer.Form.html#NFC"/>
             /// </summary>
             public static Java.Text.Normalizer.Form NFC { get { if (!_NFCReady) { _NFCContent = SGetField<Java.Text.Normalizer.Form>(LocalBridgeClazz, "NFC"); _NFCReady = true; } return _NFCContent; } }
             private static Java.Text.Normalizer.Form _NFCContent = default;
             private static bool _NFCReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/text/Normalizer.Form.html#NFD"/>
+            /// <see href="https://developer.android.com/reference/java/text/Normalizer.Form.html#NFD"/>
             /// </summary>
             public static Java.Text.Normalizer.Form NFD { get { if (!_NFDReady) { _NFDContent = SGetField<Java.Text.Normalizer.Form>(LocalBridgeClazz, "NFD"); _NFDReady = true; } return _NFDContent; } }
             private static Java.Text.Normalizer.Form _NFDContent = default;
             private static bool _NFDReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/text/Normalizer.Form.html#NFKC"/>
+            /// <see href="https://developer.android.com/reference/java/text/Normalizer.Form.html#NFKC"/>
             /// </summary>
             public static Java.Text.Normalizer.Form NFKC { get { if (!_NFKCReady) { _NFKCContent = SGetField<Java.Text.Normalizer.Form>(LocalBridgeClazz, "NFKC"); _NFKCReady = true; } return _NFKCContent; } }
             private static Java.Text.Normalizer.Form _NFKCContent = default;
             private static bool _NFKCReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/text/Normalizer.Form.html#NFKD"/>
+            /// <see href="https://developer.android.com/reference/java/text/Normalizer.Form.html#NFKD"/>
             /// </summary>
             public static Java.Text.Normalizer.Form NFKD { get { if (!_NFKDReady) { _NFKDContent = SGetField<Java.Text.Normalizer.Form>(LocalBridgeClazz, "NFKD"); _NFKDReady = true; } return _NFKDContent; } }
             private static Java.Text.Normalizer.Form _NFKDContent = default;
@@ -110,7 +110,7 @@ namespace Java.Text
 
             #region Static methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/text/Normalizer.Form.html#valueOf(java.lang.String)"/>
+            /// <see href="https://developer.android.com/reference/java/text/Normalizer.Form.html#valueOf(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="Java.Text.Normalizer.Form"/></returns>
@@ -119,7 +119,7 @@ namespace Java.Text
                 return SExecuteWithSignature<Java.Text.Normalizer.Form>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/text/Normalizer$Form;", arg0);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/text/Normalizer.Form.html#values()"/>
+            /// <see href="https://developer.android.com/reference/java/text/Normalizer.Form.html#values()"/>
             /// </summary>
             /// <returns><see cref="Java.Text.Normalizer.Form"/></returns>
             public static Java.Text.Normalizer.Form[] Values()

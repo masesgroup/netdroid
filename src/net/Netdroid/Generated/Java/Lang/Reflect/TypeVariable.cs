@@ -54,25 +54,28 @@ namespace Java.Lang.Reflect
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/TypeVariable.html#getBounds()"/> 
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/TypeVariable.html#getGenericDeclaration()"/>
         /// </summary>
-        public Java.Lang.Reflect.Type[] Bounds
+        /// <returns><see cref="Java.Lang.Reflect.GenericDeclaration"/></returns>
+        public Java.Lang.Reflect.GenericDeclaration GetGenericDeclaration()
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.Reflect.Type>("getBounds", "()[Ljava/lang/reflect/Type;"); }
+            return IExecuteWithSignature<Java.Lang.Reflect.GenericDeclaration>("getGenericDeclaration", "()Ljava/lang/reflect/GenericDeclaration;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/TypeVariable.html#getGenericDeclaration()"/> 
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/TypeVariable.html#getBounds()"/>
         /// </summary>
-        public Java.Lang.Reflect.GenericDeclaration GenericDeclaration
+        /// <returns><see cref="Java.Lang.Reflect.Type"/></returns>
+        public Java.Lang.Reflect.Type[] GetBounds()
         {
-            get { return IExecuteWithSignature<Java.Lang.Reflect.GenericDeclaration>("getGenericDeclaration", "()Ljava/lang/reflect/GenericDeclaration;"); }
+            return IExecuteWithSignatureArray<Java.Lang.Reflect.Type>("getBounds", "()[Ljava/lang/reflect/Type;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/TypeVariable.html#getName()"/> 
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/TypeVariable.html#getName()"/>
         /// </summary>
-        public Java.Lang.String Name
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetName()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
         }
 
         #endregion
@@ -136,25 +139,28 @@ namespace Java.Lang.Reflect
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/TypeVariable.html#getBounds()"/> 
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/TypeVariable.html#getGenericDeclaration()"/>
         /// </summary>
-        public Java.Lang.Reflect.Type[] Bounds
+        /// <returns><typeparamref name="D"/></returns>
+        public D GetGenericDeclaration()
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.Reflect.Type>("getBounds", "()[Ljava/lang/reflect/Type;"); }
+            return IExecuteWithSignature<D>("getGenericDeclaration", "()Ljava/lang/reflect/GenericDeclaration;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/TypeVariable.html#getGenericDeclaration()"/> 
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/TypeVariable.html#getBounds()"/>
         /// </summary>
-        public D GenericDeclaration
+        /// <returns><see cref="Java.Lang.Reflect.Type"/></returns>
+        public Java.Lang.Reflect.Type[] GetBounds()
         {
-            get { return IExecuteWithSignature<D>("getGenericDeclaration", "()Ljava/lang/reflect/GenericDeclaration;"); }
+            return IExecuteWithSignatureArray<Java.Lang.Reflect.Type>("getBounds", "()[Ljava/lang/reflect/Type;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/TypeVariable.html#getName()"/> 
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/TypeVariable.html#getName()"/>
         /// </summary>
-        public Java.Lang.String Name
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetName()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
         }
 
         #endregion

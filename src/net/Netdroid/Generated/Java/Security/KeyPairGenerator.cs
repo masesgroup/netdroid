@@ -42,7 +42,7 @@ namespace Java.Security
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyPairGenerator.html#getInstance(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/security/KeyPairGenerator.html#getInstance(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -54,7 +54,7 @@ namespace Java.Security
             return SExecute<Java.Security.KeyPairGenerator>(LocalBridgeClazz, "getInstance", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyPairGenerator.html#getInstance(java.lang.String,java.security.Provider)"/>
+        /// <see href="https://developer.android.com/reference/java/security/KeyPairGenerator.html#getInstance(java.lang.String,java.security.Provider)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Security.Provider"/></param>
@@ -65,7 +65,7 @@ namespace Java.Security
             return SExecute<Java.Security.KeyPairGenerator>(LocalBridgeClazz, "getInstance", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyPairGenerator.html#getInstance(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/security/KeyPairGenerator.html#getInstance(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Security.KeyPairGenerator"/></returns>
@@ -79,21 +79,7 @@ namespace Java.Security
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyPairGenerator.html#getAlgorithm()"/> 
-        /// </summary>
-        public Java.Lang.String Algorithm
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAlgorithm", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyPairGenerator.html#getProvider()"/> 
-        /// </summary>
-        public Java.Security.Provider Provider
-        {
-            get { return IExecuteWithSignature<Java.Security.Provider>("getProvider", "()Ljava/security/Provider;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyPairGenerator.html#genKeyPair()"/>
+        /// <see href="https://developer.android.com/reference/java/security/KeyPairGenerator.html#genKeyPair()"/>
         /// </summary>
         /// <returns><see cref="Java.Security.KeyPair"/></returns>
         public Java.Security.KeyPair GenKeyPair()
@@ -101,7 +87,23 @@ namespace Java.Security
             return IExecuteWithSignature<Java.Security.KeyPair>("genKeyPair", "()Ljava/security/KeyPair;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyPairGenerator.html#initialize(int)"/>
+        /// <see href="https://developer.android.com/reference/java/security/KeyPairGenerator.html#getProvider()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Security.Provider"/></returns>
+        public Java.Security.Provider GetProvider()
+        {
+            return IExecuteWithSignature<Java.Security.Provider>("getProvider", "()Ljava/security/Provider;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/KeyPairGenerator.html#getAlgorithm()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetAlgorithm()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getAlgorithm", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/KeyPairGenerator.html#initialize(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public void Initialize(int arg0)
@@ -109,7 +111,7 @@ namespace Java.Security
             IExecuteWithSignature("initialize", "(I)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyPairGenerator.html#initialize(java.security.spec.AlgorithmParameterSpec)"/>
+        /// <see href="https://developer.android.com/reference/java/security/KeyPairGenerator.html#initialize(java.security.spec.AlgorithmParameterSpec)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Spec.AlgorithmParameterSpec"/></param>
         /// <exception cref="Java.Security.InvalidAlgorithmParameterException"/>

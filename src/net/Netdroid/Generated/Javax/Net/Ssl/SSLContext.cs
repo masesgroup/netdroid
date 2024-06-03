@@ -42,14 +42,7 @@ namespace Javax.Net.Ssl
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLContext.html#getDefault()"/> <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLContext.html#setDefault(javax.net.ssl.SSLContext)"/>
-        /// </summary>
-        public static Javax.Net.Ssl.SSLContext Default
-        {
-            get { return SExecuteWithSignature<Javax.Net.Ssl.SSLContext>(LocalBridgeClazz, "getDefault", "()Ljavax/net/ssl/SSLContext;"); } set { SExecuteWithSignature(LocalBridgeClazz, "setDefault", "(Ljavax/net/ssl/SSLContext;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLContext.html#getInstance(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLContext.html#getInstance(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -61,7 +54,7 @@ namespace Javax.Net.Ssl
             return SExecute<Javax.Net.Ssl.SSLContext>(LocalBridgeClazz, "getInstance", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLContext.html#getInstance(java.lang.String,java.security.Provider)"/>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLContext.html#getInstance(java.lang.String,java.security.Provider)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Security.Provider"/></param>
@@ -72,7 +65,7 @@ namespace Javax.Net.Ssl
             return SExecute<Javax.Net.Ssl.SSLContext>(LocalBridgeClazz, "getInstance", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLContext.html#getInstance(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLContext.html#getInstance(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Net.Ssl.SSLContext"/></returns>
@@ -81,68 +74,45 @@ namespace Javax.Net.Ssl
         {
             return SExecuteWithSignature<Javax.Net.Ssl.SSLContext>(LocalBridgeClazz, "getInstance", "(Ljava/lang/String;)Ljavax/net/ssl/SSLContext;", arg0);
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLContext.html#getDefault()"/>
+        /// </summary>
+        /// <returns><see cref="Javax.Net.Ssl.SSLContext"/></returns>
+        /// <exception cref="Java.Security.NoSuchAlgorithmException"/>
+        public static Javax.Net.Ssl.SSLContext GetDefault()
+        {
+            return SExecute<Javax.Net.Ssl.SSLContext>(LocalBridgeClazz, "getDefault");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLContext.html#setDefault(javax.net.ssl.SSLContext)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Net.Ssl.SSLContext"/></param>
+        public static void SetDefault(Javax.Net.Ssl.SSLContext arg0)
+        {
+            SExecute(LocalBridgeClazz, "setDefault", arg0);
+        }
 
         #endregion
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLContext.html#getClientSessionContext()"/> 
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLContext.html#getProtocol()"/>
         /// </summary>
-        public Javax.Net.Ssl.SSLSessionContext ClientSessionContext
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetProtocol()
         {
-            get { return IExecuteWithSignature<Javax.Net.Ssl.SSLSessionContext>("getClientSessionContext", "()Ljavax/net/ssl/SSLSessionContext;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getProtocol", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLContext.html#getDefaultSSLParameters()"/> 
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLContext.html#getProvider()"/>
         /// </summary>
-        public Javax.Net.Ssl.SSLParameters DefaultSSLParameters
+        /// <returns><see cref="Java.Security.Provider"/></returns>
+        public Java.Security.Provider GetProvider()
         {
-            get { return IExecuteWithSignature<Javax.Net.Ssl.SSLParameters>("getDefaultSSLParameters", "()Ljavax/net/ssl/SSLParameters;"); }
+            return IExecuteWithSignature<Java.Security.Provider>("getProvider", "()Ljava/security/Provider;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLContext.html#getProtocol()"/> 
-        /// </summary>
-        public Java.Lang.String Protocol
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getProtocol", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLContext.html#getProvider()"/> 
-        /// </summary>
-        public Java.Security.Provider Provider
-        {
-            get { return IExecuteWithSignature<Java.Security.Provider>("getProvider", "()Ljava/security/Provider;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLContext.html#getServerSessionContext()"/> 
-        /// </summary>
-        public Javax.Net.Ssl.SSLSessionContext ServerSessionContext
-        {
-            get { return IExecuteWithSignature<Javax.Net.Ssl.SSLSessionContext>("getServerSessionContext", "()Ljavax/net/ssl/SSLSessionContext;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLContext.html#getServerSocketFactory()"/> 
-        /// </summary>
-        public Javax.Net.Ssl.SSLServerSocketFactory ServerSocketFactory
-        {
-            get { return IExecuteWithSignature<Javax.Net.Ssl.SSLServerSocketFactory>("getServerSocketFactory", "()Ljavax/net/ssl/SSLServerSocketFactory;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLContext.html#getSocketFactory()"/> 
-        /// </summary>
-        public Javax.Net.Ssl.SSLSocketFactory SocketFactory
-        {
-            get { return IExecuteWithSignature<Javax.Net.Ssl.SSLSocketFactory>("getSocketFactory", "()Ljavax/net/ssl/SSLSocketFactory;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLContext.html#getSupportedSSLParameters()"/> 
-        /// </summary>
-        public Javax.Net.Ssl.SSLParameters SupportedSSLParameters
-        {
-            get { return IExecuteWithSignature<Javax.Net.Ssl.SSLParameters>("getSupportedSSLParameters", "()Ljavax/net/ssl/SSLParameters;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLContext.html#createSSLEngine()"/>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLContext.html#createSSLEngine()"/>
         /// </summary>
         /// <returns><see cref="Javax.Net.Ssl.SSLEngine"/></returns>
         public Javax.Net.Ssl.SSLEngine CreateSSLEngine()
@@ -150,7 +120,7 @@ namespace Javax.Net.Ssl
             return IExecuteWithSignature<Javax.Net.Ssl.SSLEngine>("createSSLEngine", "()Ljavax/net/ssl/SSLEngine;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLContext.html#createSSLEngine(java.lang.String,int)"/>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLContext.html#createSSLEngine(java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -160,7 +130,55 @@ namespace Javax.Net.Ssl
             return IExecute<Javax.Net.Ssl.SSLEngine>("createSSLEngine", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLContext.html#init(javax.net.ssl.KeyManager[],javax.net.ssl.TrustManager[],java.security.SecureRandom)"/>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLContext.html#getDefaultSSLParameters()"/>
+        /// </summary>
+        /// <returns><see cref="Javax.Net.Ssl.SSLParameters"/></returns>
+        public Javax.Net.Ssl.SSLParameters GetDefaultSSLParameters()
+        {
+            return IExecuteWithSignature<Javax.Net.Ssl.SSLParameters>("getDefaultSSLParameters", "()Ljavax/net/ssl/SSLParameters;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLContext.html#getSupportedSSLParameters()"/>
+        /// </summary>
+        /// <returns><see cref="Javax.Net.Ssl.SSLParameters"/></returns>
+        public Javax.Net.Ssl.SSLParameters GetSupportedSSLParameters()
+        {
+            return IExecuteWithSignature<Javax.Net.Ssl.SSLParameters>("getSupportedSSLParameters", "()Ljavax/net/ssl/SSLParameters;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLContext.html#getServerSocketFactory()"/>
+        /// </summary>
+        /// <returns><see cref="Javax.Net.Ssl.SSLServerSocketFactory"/></returns>
+        public Javax.Net.Ssl.SSLServerSocketFactory GetServerSocketFactory()
+        {
+            return IExecuteWithSignature<Javax.Net.Ssl.SSLServerSocketFactory>("getServerSocketFactory", "()Ljavax/net/ssl/SSLServerSocketFactory;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLContext.html#getClientSessionContext()"/>
+        /// </summary>
+        /// <returns><see cref="Javax.Net.Ssl.SSLSessionContext"/></returns>
+        public Javax.Net.Ssl.SSLSessionContext GetClientSessionContext()
+        {
+            return IExecuteWithSignature<Javax.Net.Ssl.SSLSessionContext>("getClientSessionContext", "()Ljavax/net/ssl/SSLSessionContext;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLContext.html#getServerSessionContext()"/>
+        /// </summary>
+        /// <returns><see cref="Javax.Net.Ssl.SSLSessionContext"/></returns>
+        public Javax.Net.Ssl.SSLSessionContext GetServerSessionContext()
+        {
+            return IExecuteWithSignature<Javax.Net.Ssl.SSLSessionContext>("getServerSessionContext", "()Ljavax/net/ssl/SSLSessionContext;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLContext.html#getSocketFactory()"/>
+        /// </summary>
+        /// <returns><see cref="Javax.Net.Ssl.SSLSocketFactory"/></returns>
+        public Javax.Net.Ssl.SSLSocketFactory GetSocketFactory()
+        {
+            return IExecuteWithSignature<Javax.Net.Ssl.SSLSocketFactory>("getSocketFactory", "()Ljavax/net/ssl/SSLSocketFactory;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLContext.html#init(javax.net.ssl.KeyManager[],javax.net.ssl.TrustManager[],java.security.SecureRandom)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Net.Ssl.KeyManager"/></param>
         /// <param name="arg1"><see cref="Javax.Net.Ssl.TrustManager"/></param>

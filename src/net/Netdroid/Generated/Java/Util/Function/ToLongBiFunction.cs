@@ -50,15 +50,15 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("applyAsLong", new System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(ApplyAsLongEventHandler));
+            AddEventHandler("applyAsLong", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(ApplyAsLongEventHandler));
 
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/ToLongBiFunction.html#applyAsLong(java.lang.Object,java.lang.Object)"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/ToLongBiFunction.html#applyAsLong(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <remarks>If <see cref="OnApplyAsLong"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<object, object, long> OnApplyAsLong { get; set; } = null;
+        public global::System.Func<object, object, long> OnApplyAsLong { get; set; } = null;
 
         void ApplyAsLongEventHandler(object sender, CLRListenerEventArgs<CLREventData<object>> data)
         {
@@ -68,7 +68,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/ToLongBiFunction.html#applyAsLong(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/ToLongBiFunction.html#applyAsLong(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -109,7 +109,7 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/ToLongBiFunction.html#applyAsLong(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/ToLongBiFunction.html#applyAsLong(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -131,7 +131,7 @@ namespace Java.Util.Function
 
     #region IToLongBiFunction<T, U>
     /// <summary>
-    /// .NET interface for org.mases.netdroid.generated.java.util.function.ToLongBiFunction implementing <see href="https://developer.android.com/reference/java.base/java/util/function/ToLongBiFunction.html"/>
+    /// .NET interface for org.mases.netdroid.generated.java.util.function.ToLongBiFunction implementing <see href="https://developer.android.com/reference/java/util/function/ToLongBiFunction.html"/>
     /// </summary>
     public partial interface IToLongBiFunction<T, U>
     {
@@ -172,15 +172,15 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("applyAsLong", new System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(ApplyAsLongEventHandler));
+            AddEventHandler("applyAsLong", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(ApplyAsLongEventHandler));
 
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/ToLongBiFunction.html#applyAsLong(java.lang.Object,java.lang.Object)"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/ToLongBiFunction.html#applyAsLong(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <remarks>If <see cref="OnApplyAsLong"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<T, U, long> OnApplyAsLong { get; set; } = null;
+        public global::System.Func<T, U, long> OnApplyAsLong { get; set; } = null;
 
         void ApplyAsLongEventHandler(object sender, CLRListenerEventArgs<CLREventData<T>> data)
         {
@@ -190,7 +190,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/ToLongBiFunction.html#applyAsLong(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/ToLongBiFunction.html#applyAsLong(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><typeparamref name="U"/></param>
@@ -231,7 +231,7 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/ToLongBiFunction.html#applyAsLong(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/ToLongBiFunction.html#applyAsLong(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><typeparamref name="U"/></param>

@@ -40,28 +40,28 @@ namespace Android.App
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/DialogFragment.html#STYLE_NO_FRAME"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int STYLE_NO_FRAME { get { if (!_STYLE_NO_FRAMEReady) { _STYLE_NO_FRAMEContent = SGetField<int>(LocalBridgeClazz, "STYLE_NO_FRAME"); _STYLE_NO_FRAMEReady = true; } return _STYLE_NO_FRAMEContent; } }
         private static int _STYLE_NO_FRAMEContent = default;
         private static bool _STYLE_NO_FRAMEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/DialogFragment.html#STYLE_NO_INPUT"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int STYLE_NO_INPUT { get { if (!_STYLE_NO_INPUTReady) { _STYLE_NO_INPUTContent = SGetField<int>(LocalBridgeClazz, "STYLE_NO_INPUT"); _STYLE_NO_INPUTReady = true; } return _STYLE_NO_INPUTContent; } }
         private static int _STYLE_NO_INPUTContent = default;
         private static bool _STYLE_NO_INPUTReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/DialogFragment.html#STYLE_NO_TITLE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int STYLE_NO_TITLE { get { if (!_STYLE_NO_TITLEReady) { _STYLE_NO_TITLEContent = SGetField<int>(LocalBridgeClazz, "STYLE_NO_TITLE"); _STYLE_NO_TITLEReady = true; } return _STYLE_NO_TITLEContent; } }
         private static int _STYLE_NO_TITLEContent = default;
         private static bool _STYLE_NO_TITLEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/DialogFragment.html#STYLE_NORMAL"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int STYLE_NORMAL { get { if (!_STYLE_NORMALReady) { _STYLE_NORMALContent = SGetField<int>(LocalBridgeClazz, "STYLE_NORMAL"); _STYLE_NORMALReady = true; } return _STYLE_NORMALContent; } }
         private static int _STYLE_NORMALContent = default;
         private static bool _STYLE_NORMALReady = false; // this is used because in case of generics 
@@ -74,47 +74,50 @@ namespace Android.App
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/DialogFragment.html#getDialog()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/DialogFragment.html#getDialog()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.App.Dialog Dialog
+        /// <returns><see cref="Android.App.Dialog"/></returns>
+        [global::System.Obsolete()]
+        public Android.App.Dialog GetDialog()
         {
-            get { return IExecuteWithSignature<Android.App.Dialog>("getDialog", "()Landroid/app/Dialog;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/DialogFragment.html#getShowsDialog()"/> <see href="https://developer.android.com/reference/android/app/DialogFragment.html#setShowsDialog(boolean)"/>
-        /// </summary>
-        [System.Obsolete()]
-        public bool ShowsDialog
-        {
-            get { return IExecuteWithSignature<bool>("getShowsDialog", "()Z"); } set { IExecuteWithSignature("setShowsDialog", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/DialogFragment.html#getTheme()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public int Theme
-        {
-            get { return IExecuteWithSignature<int>("getTheme", "()I"); }
+            return IExecuteWithSignature<Android.App.Dialog>("getDialog", "()Landroid/app/Dialog;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/DialogFragment.html#onCreateDialog(android.os.Bundle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Os.Bundle"/></param>
         /// <returns><see cref="Android.App.Dialog"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.App.Dialog OnCreateDialog(Android.Os.Bundle arg0)
         {
             return IExecuteWithSignature<Android.App.Dialog>("onCreateDialog", "(Landroid/os/Bundle;)Landroid/app/Dialog;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/DialogFragment.html#getShowsDialog()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        [global::System.Obsolete()]
+        public bool GetShowsDialog()
+        {
+            return IExecuteWithSignature<bool>("getShowsDialog", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/DialogFragment.html#isCancelable()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsCancelable()
         {
             return IExecuteWithSignature<bool>("isCancelable", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/DialogFragment.html#getTheme()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetTheme()
+        {
+            return IExecuteWithSignature<int>("getTheme", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/DialogFragment.html#show(android.app.FragmentTransaction,java.lang.String)"/>
@@ -122,7 +125,7 @@ namespace Android.App
         /// <param name="arg0"><see cref="Android.App.FragmentTransaction"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="int"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int Show(Android.App.FragmentTransaction arg0, Java.Lang.String arg1)
         {
             return IExecute<int>("show", arg0, arg1);
@@ -130,7 +133,7 @@ namespace Android.App
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/DialogFragment.html#dismiss()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Dismiss()
         {
             IExecuteWithSignature("dismiss", "()V");
@@ -138,7 +141,7 @@ namespace Android.App
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/DialogFragment.html#dismissAllowingStateLoss()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void DismissAllowingStateLoss()
         {
             IExecuteWithSignature("dismissAllowingStateLoss", "()V");
@@ -147,7 +150,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/DialogFragment.html#onCancel(android.content.DialogInterface)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.DialogInterface"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnCancel(Android.Content.DialogInterface arg0)
         {
             IExecuteWithSignature("onCancel", "(Landroid/content/DialogInterface;)V", arg0);
@@ -156,7 +159,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/DialogFragment.html#onDismiss(android.content.DialogInterface)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.DialogInterface"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnDismiss(Android.Content.DialogInterface arg0)
         {
             IExecuteWithSignature("onDismiss", "(Landroid/content/DialogInterface;)V", arg0);
@@ -165,17 +168,26 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/DialogFragment.html#setCancelable(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetCancelable(bool arg0)
         {
             IExecuteWithSignature("setCancelable", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/DialogFragment.html#setShowsDialog(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        [global::System.Obsolete()]
+        public void SetShowsDialog(bool arg0)
+        {
+            IExecuteWithSignature("setShowsDialog", "(Z)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/DialogFragment.html#setStyle(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetStyle(int arg0, int arg1)
         {
             IExecute("setStyle", arg0, arg1);
@@ -185,7 +197,7 @@ namespace Android.App
         /// </summary>
         /// <param name="arg0"><see cref="Android.App.FragmentManager"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Show(Android.App.FragmentManager arg0, Java.Lang.String arg1)
         {
             IExecute("show", arg0, arg1);

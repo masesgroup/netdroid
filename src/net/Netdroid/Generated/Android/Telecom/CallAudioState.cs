@@ -107,32 +107,12 @@ namespace Android.Telecom
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/CallAudioState.html#getActiveBluetoothDevice()"/> 
+        /// <see href="https://developer.android.com/reference/android/telecom/CallAudioState.html#getActiveBluetoothDevice()"/>
         /// </summary>
-        public Android.Bluetooth.BluetoothDevice ActiveBluetoothDevice
+        /// <returns><see cref="Android.Bluetooth.BluetoothDevice"/></returns>
+        public Android.Bluetooth.BluetoothDevice GetActiveBluetoothDevice()
         {
-            get { return IExecuteWithSignature<Android.Bluetooth.BluetoothDevice>("getActiveBluetoothDevice", "()Landroid/bluetooth/BluetoothDevice;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/CallAudioState.html#getRoute()"/> 
-        /// </summary>
-        public int Route
-        {
-            get { return IExecuteWithSignature<int>("getRoute", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/CallAudioState.html#getSupportedBluetoothDevices()"/> 
-        /// </summary>
-        public Java.Util.Collection<Android.Bluetooth.BluetoothDevice> SupportedBluetoothDevices
-        {
-            get { return IExecuteWithSignature<Java.Util.Collection<Android.Bluetooth.BluetoothDevice>>("getSupportedBluetoothDevices", "()Ljava/util/Collection;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/CallAudioState.html#getSupportedRouteMask()"/> 
-        /// </summary>
-        public int SupportedRouteMask
-        {
-            get { return IExecuteWithSignature<int>("getSupportedRouteMask", "()I"); }
+            return IExecuteWithSignature<Android.Bluetooth.BluetoothDevice>("getActiveBluetoothDevice", "()Landroid/bluetooth/BluetoothDevice;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/CallAudioState.html#isMuted()"/>
@@ -149,6 +129,30 @@ namespace Android.Telecom
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/CallAudioState.html#getRoute()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetRoute()
+        {
+            return IExecuteWithSignature<int>("getRoute", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/CallAudioState.html#getSupportedRouteMask()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSupportedRouteMask()
+        {
+            return IExecuteWithSignature<int>("getSupportedRouteMask", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/CallAudioState.html#getSupportedBluetoothDevices()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Collection"/></returns>
+        public Java.Util.Collection<Android.Bluetooth.BluetoothDevice> GetSupportedBluetoothDevices()
+        {
+            return IExecuteWithSignature<Java.Util.Collection<Android.Bluetooth.BluetoothDevice>>("getSupportedBluetoothDevices", "()Ljava/util/Collection;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/CallAudioState.html#writeToParcel(android.os.Parcel,int)"/>

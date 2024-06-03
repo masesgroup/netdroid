@@ -83,25 +83,52 @@ namespace Android.Text.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/util/Rfc822Token.html#getAddress()"/> <see href="https://developer.android.com/reference/android/text/util/Rfc822Token.html#setAddress(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/android/text/util/Rfc822Token.html#getAddress()"/>
         /// </summary>
-        public Java.Lang.String Address
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetAddress()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAddress", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setAddress", "(Ljava/lang/String;)V", value); }
+            return IExecuteWithSignature<Java.Lang.String>("getAddress", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/util/Rfc822Token.html#getComment()"/> <see href="https://developer.android.com/reference/android/text/util/Rfc822Token.html#setComment(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/android/text/util/Rfc822Token.html#getComment()"/>
         /// </summary>
-        public Java.Lang.String Comment
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetComment()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getComment", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setComment", "(Ljava/lang/String;)V", value); }
+            return IExecuteWithSignature<Java.Lang.String>("getComment", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/util/Rfc822Token.html#getName()"/> <see href="https://developer.android.com/reference/android/text/util/Rfc822Token.html#setName(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/android/text/util/Rfc822Token.html#getName()"/>
         /// </summary>
-        public Java.Lang.String Name
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetName()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setName", "(Ljava/lang/String;)V", value); }
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/util/Rfc822Token.html#setAddress(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetAddress(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setAddress", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/util/Rfc822Token.html#setComment(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetComment(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setComment", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/util/Rfc822Token.html#setName(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetName(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setName", "(Ljava/lang/String;)V", arg0);
         }
 
         #endregion

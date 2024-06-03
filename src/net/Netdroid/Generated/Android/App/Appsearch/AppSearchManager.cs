@@ -89,11 +89,12 @@ namespace Android.App.Appsearch
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchManager.SearchContext.html#getDatabaseName()"/> 
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/AppSearchManager.SearchContext.html#getDatabaseName()"/>
             /// </summary>
-            public Java.Lang.String DatabaseName
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetDatabaseName()
             {
-                get { return IExecuteWithSignature<Java.Lang.String>("getDatabaseName", "()Ljava/lang/String;"); }
+                return IExecuteWithSignature<Java.Lang.String>("getDatabaseName", "()Ljava/lang/String;");
             }
 
             #endregion

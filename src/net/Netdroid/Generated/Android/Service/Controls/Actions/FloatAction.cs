@@ -65,11 +65,12 @@ namespace Android.Service.Controls.Actions
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/controls/actions/FloatAction.html#getNewValue()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/controls/actions/FloatAction.html#getNewValue()"/>
         /// </summary>
-        public float NewValue
+        /// <returns><see cref="float"/></returns>
+        public float GetNewValue()
         {
-            get { return IExecuteWithSignature<float>("getNewValue", "()F"); }
+            return IExecuteWithSignature<float>("getNewValue", "()F");
         }
 
         #endregion

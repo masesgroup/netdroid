@@ -73,46 +73,36 @@ namespace Android.Telecom
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/ConnectionRequest.html#getAccountHandle()"/> 
+        /// <see href="https://developer.android.com/reference/android/telecom/ConnectionRequest.html#getAddress()"/>
         /// </summary>
-        public Android.Telecom.PhoneAccountHandle AccountHandle
+        /// <returns><see cref="Android.Net.Uri"/></returns>
+        public Android.Net.Uri GetAddress()
         {
-            get { return IExecuteWithSignature<Android.Telecom.PhoneAccountHandle>("getAccountHandle", "()Landroid/telecom/PhoneAccountHandle;"); }
+            return IExecuteWithSignature<Android.Net.Uri>("getAddress", "()Landroid/net/Uri;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/ConnectionRequest.html#getAddress()"/> 
+        /// <see href="https://developer.android.com/reference/android/telecom/ConnectionRequest.html#getExtras()"/>
         /// </summary>
-        public Android.Net.Uri Address
+        /// <returns><see cref="Android.Os.Bundle"/></returns>
+        public Android.Os.Bundle GetExtras()
         {
-            get { return IExecuteWithSignature<Android.Net.Uri>("getAddress", "()Landroid/net/Uri;"); }
+            return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/ConnectionRequest.html#getExtras()"/> 
+        /// <see href="https://developer.android.com/reference/android/telecom/ConnectionRequest.html#getRttTextStream()"/>
         /// </summary>
-        public Android.Os.Bundle Extras
+        /// <returns><see cref="Android.Telecom.Connection.RttTextStream"/></returns>
+        public Android.Telecom.Connection.RttTextStream GetRttTextStream()
         {
-            get { return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;"); }
+            return IExecuteWithSignature<Android.Telecom.Connection.RttTextStream>("getRttTextStream", "()Landroid/telecom/Connection$RttTextStream;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/ConnectionRequest.html#getParticipants()"/> 
+        /// <see href="https://developer.android.com/reference/android/telecom/ConnectionRequest.html#getAccountHandle()"/>
         /// </summary>
-        public Java.Util.List<Android.Net.Uri> Participants
+        /// <returns><see cref="Android.Telecom.PhoneAccountHandle"/></returns>
+        public Android.Telecom.PhoneAccountHandle GetAccountHandle()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Net.Uri>>("getParticipants", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/ConnectionRequest.html#getRttTextStream()"/> 
-        /// </summary>
-        public Android.Telecom.Connection.RttTextStream RttTextStream
-        {
-            get { return IExecuteWithSignature<Android.Telecom.Connection.RttTextStream>("getRttTextStream", "()Landroid/telecom/Connection$RttTextStream;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/ConnectionRequest.html#getVideoState()"/> 
-        /// </summary>
-        public int VideoState
-        {
-            get { return IExecuteWithSignature<int>("getVideoState", "()I"); }
+            return IExecuteWithSignature<Android.Telecom.PhoneAccountHandle>("getAccountHandle", "()Landroid/telecom/PhoneAccountHandle;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/ConnectionRequest.html#isAdhocConferenceCall()"/>
@@ -137,6 +127,22 @@ namespace Android.Telecom
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/ConnectionRequest.html#getVideoState()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetVideoState()
+        {
+            return IExecuteWithSignature<int>("getVideoState", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/ConnectionRequest.html#getParticipants()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Net.Uri> GetParticipants()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Net.Uri>>("getParticipants", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/ConnectionRequest.html#writeToParcel(android.os.Parcel,int)"/>

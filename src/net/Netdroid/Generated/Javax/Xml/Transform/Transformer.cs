@@ -46,28 +46,7 @@ namespace Javax.Xml.Transform
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/Transformer.html#getErrorListener()"/> <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/Transformer.html#setErrorListener(javax.xml.transform.ErrorListener)"/>
-        /// </summary>
-        public Javax.Xml.Transform.ErrorListener ErrorListener
-        {
-            get { return IExecuteWithSignature<Javax.Xml.Transform.ErrorListener>("getErrorListener", "()Ljavax/xml/transform/ErrorListener;"); } set { IExecuteWithSignature("setErrorListener", "(Ljavax/xml/transform/ErrorListener;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/Transformer.html#getOutputProperties()"/> <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/Transformer.html#setOutputProperties(java.util.Properties)"/>
-        /// </summary>
-        public Java.Util.Properties OutputProperties
-        {
-            get { return IExecuteWithSignature<Java.Util.Properties>("getOutputProperties", "()Ljava/util/Properties;"); } set { IExecuteWithSignature("setOutputProperties", "(Ljava/util/Properties;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/Transformer.html#getURIResolver()"/> <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/Transformer.html#setURIResolver(javax.xml.transform.URIResolver)"/>
-        /// </summary>
-        public Javax.Xml.Transform.URIResolver URIResolver
-        {
-            get { return IExecuteWithSignature<Javax.Xml.Transform.URIResolver>("getURIResolver", "()Ljavax/xml/transform/URIResolver;"); } set { IExecuteWithSignature("setURIResolver", "(Ljavax/xml/transform/URIResolver;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/Transformer.html#getParameter(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/Transformer.html#getParameter(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="object"/></returns>
@@ -76,7 +55,7 @@ namespace Javax.Xml.Transform
             return IExecuteWithSignature("getParameter", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/Transformer.html#getOutputProperty(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/Transformer.html#getOutputProperty(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -86,14 +65,63 @@ namespace Javax.Xml.Transform
             return IExecuteWithSignature<Java.Lang.String>("getOutputProperty", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/Transformer.html#clearParameters()"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/Transformer.html#getOutputProperties()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Properties"/></returns>
+        public Java.Util.Properties GetOutputProperties()
+        {
+            return IExecuteWithSignature<Java.Util.Properties>("getOutputProperties", "()Ljava/util/Properties;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/Transformer.html#getErrorListener()"/>
+        /// </summary>
+        /// <returns><see cref="Javax.Xml.Transform.ErrorListener"/></returns>
+        public Javax.Xml.Transform.ErrorListener GetErrorListener()
+        {
+            return IExecuteWithSignature<Javax.Xml.Transform.ErrorListener>("getErrorListener", "()Ljavax/xml/transform/ErrorListener;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/Transformer.html#getErrorListener()"/>
+        /// </summary>
+        /// <returns><see cref="Javax.Xml.Transform.ErrorListener"/></returns>
+        public Javax.Xml.Transform.ErrorListener GetErrorListenerDirect()
+        {
+            return IExecuteWithSignature<Javax.Xml.Transform.ErrorListenerDirect, Javax.Xml.Transform.ErrorListener>("getErrorListener", "()Ljavax/xml/transform/ErrorListener;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/Transformer.html#getURIResolver()"/>
+        /// </summary>
+        /// <returns><see cref="Javax.Xml.Transform.URIResolver"/></returns>
+        public Javax.Xml.Transform.URIResolver GetURIResolver()
+        {
+            return IExecuteWithSignature<Javax.Xml.Transform.URIResolver>("getURIResolver", "()Ljavax/xml/transform/URIResolver;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/Transformer.html#clearParameters()"/>
         /// </summary>
         public void ClearParameters()
         {
             IExecuteWithSignature("clearParameters", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/Transformer.html#setOutputProperty(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/Transformer.html#setErrorListener(javax.xml.transform.ErrorListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Xml.Transform.ErrorListener"/></param>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        public void SetErrorListener(Javax.Xml.Transform.ErrorListener arg0)
+        {
+            IExecuteWithSignature("setErrorListener", "(Ljavax/xml/transform/ErrorListener;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/Transformer.html#setOutputProperties(java.util.Properties)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Properties"/></param>
+        public void SetOutputProperties(Java.Util.Properties arg0)
+        {
+            IExecuteWithSignature("setOutputProperties", "(Ljava/util/Properties;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/Transformer.html#setOutputProperty(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -103,7 +131,7 @@ namespace Javax.Xml.Transform
             IExecute("setOutputProperty", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/Transformer.html#setParameter(java.lang.String,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/Transformer.html#setParameter(java.lang.String,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -112,7 +140,15 @@ namespace Javax.Xml.Transform
             IExecute("setParameter", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/Transformer.html#transform(javax.xml.transform.Source,javax.xml.transform.Result)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/Transformer.html#setURIResolver(javax.xml.transform.URIResolver)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Xml.Transform.URIResolver"/></param>
+        public void SetURIResolver(Javax.Xml.Transform.URIResolver arg0)
+        {
+            IExecuteWithSignature("setURIResolver", "(Ljavax/xml/transform/URIResolver;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/Transformer.html#transform(javax.xml.transform.Source,javax.xml.transform.Result)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Xml.Transform.Source"/></param>
         /// <param name="arg1"><see cref="Javax.Xml.Transform.Result"/></param>
@@ -122,7 +158,7 @@ namespace Javax.Xml.Transform
             IExecute("transform", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/Transformer.html#reset()"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/Transformer.html#reset()"/>
         /// </summary>
         public void Reset()
         {

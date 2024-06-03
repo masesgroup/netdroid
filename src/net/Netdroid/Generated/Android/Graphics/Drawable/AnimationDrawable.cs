@@ -54,13 +54,6 @@ namespace Android.Graphics.Drawable
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/AnimationDrawable.html#getNumberOfFrames()"/> 
-        /// </summary>
-        public int NumberOfFrames
-        {
-            get { return IExecuteWithSignature<int>("getNumberOfFrames", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/AnimationDrawable.html#getFrame(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -93,6 +86,14 @@ namespace Android.Graphics.Drawable
         public int GetDuration(int arg0)
         {
             return IExecuteWithSignature<int>("getDuration", "(I)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/AnimationDrawable.html#getNumberOfFrames()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetNumberOfFrames()
+        {
+            return IExecuteWithSignature<int>("getNumberOfFrames", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/AnimationDrawable.html#addFrame(android.graphics.drawable.Drawable,int)"/>

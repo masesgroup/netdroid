@@ -30,7 +30,7 @@ namespace Javax.Security.Auth.X500
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/security/auth/x500/X500Principal.html#%3Cinit%3E(byte[])"/>
+        /// <see href="https://developer.android.com/reference/javax/security/auth/x500/X500Principal.html#%3Cinit%3E(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         public X500Principal(byte[] arg0)
@@ -38,7 +38,7 @@ namespace Javax.Security.Auth.X500
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/security/auth/x500/X500Principal.html#%3Cinit%3E(java.io.InputStream)"/>
+        /// <see href="https://developer.android.com/reference/javax/security/auth/x500/X500Principal.html#%3Cinit%3E(java.io.InputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         public X500Principal(Java.Io.InputStream arg0)
@@ -46,7 +46,7 @@ namespace Javax.Security.Auth.X500
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/security/auth/x500/X500Principal.html#%3Cinit%3E(java.lang.String,java.util.Map)"/>
+        /// <see href="https://developer.android.com/reference/javax/security/auth/x500/X500Principal.html#%3Cinit%3E(java.lang.String,java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Util.Map"/></param>
@@ -55,7 +55,7 @@ namespace Javax.Security.Auth.X500
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/security/auth/x500/X500Principal.html#%3Cinit%3E(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/security/auth/x500/X500Principal.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public X500Principal(Java.Lang.String arg0)
@@ -79,19 +79,19 @@ namespace Javax.Security.Auth.X500
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/security/auth/x500/X500Principal.html#CANONICAL"/>
+        /// <see href="https://developer.android.com/reference/javax/security/auth/x500/X500Principal.html#CANONICAL"/>
         /// </summary>
         public static Java.Lang.String CANONICAL { get { if (!_CANONICALReady) { _CANONICALContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "CANONICAL"); _CANONICALReady = true; } return _CANONICALContent; } }
         private static Java.Lang.String _CANONICALContent = default;
         private static bool _CANONICALReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/security/auth/x500/X500Principal.html#RFC1779"/>
+        /// <see href="https://developer.android.com/reference/javax/security/auth/x500/X500Principal.html#RFC1779"/>
         /// </summary>
         public static Java.Lang.String RFC1779 { get { if (!_RFC1779Ready) { _RFC1779Content = SGetField<Java.Lang.String>(LocalBridgeClazz, "RFC1779"); _RFC1779Ready = true; } return _RFC1779Content; } }
         private static Java.Lang.String _RFC1779Content = default;
         private static bool _RFC1779Ready = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/security/auth/x500/X500Principal.html#RFC2253"/>
+        /// <see href="https://developer.android.com/reference/javax/security/auth/x500/X500Principal.html#RFC2253"/>
         /// </summary>
         public static Java.Lang.String RFC2253 { get { if (!_RFC2253Ready) { _RFC2253Content = SGetField<Java.Lang.String>(LocalBridgeClazz, "RFC2253"); _RFC2253Ready = true; } return _RFC2253Content; } }
         private static Java.Lang.String _RFC2253Content = default;
@@ -105,21 +105,23 @@ namespace Javax.Security.Auth.X500
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/security/auth/x500/X500Principal.html#getEncoded()"/> 
+        /// <see href="https://developer.android.com/reference/javax/security/auth/x500/X500Principal.html#getEncoded()"/>
         /// </summary>
-        public byte[] Encoded
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetEncoded()
         {
-            get { return IExecuteWithSignatureArray<byte>("getEncoded", "()[B"); }
+            return IExecuteWithSignatureArray<byte>("getEncoded", "()[B");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/security/auth/x500/X500Principal.html#getName()"/> 
+        /// <see href="https://developer.android.com/reference/javax/security/auth/x500/X500Principal.html#getName()"/>
         /// </summary>
-        public Java.Lang.String Name
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetName()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/security/auth/x500/X500Principal.html#getName(java.lang.String,java.util.Map)"/>
+        /// <see href="https://developer.android.com/reference/javax/security/auth/x500/X500Principal.html#getName(java.lang.String,java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Util.Map"/></param>
@@ -129,7 +131,7 @@ namespace Javax.Security.Auth.X500
             return IExecute<Java.Lang.String>("getName", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/security/auth/x500/X500Principal.html#getName(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/security/auth/x500/X500Principal.html#getName(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>

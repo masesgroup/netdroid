@@ -36,7 +36,7 @@ namespace Android.Provider
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <param name="arg3"><see cref="Java.Util.List"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public FontRequest(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2, Java.Util.List<Java.Util.List<byte[]>> arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -47,7 +47,7 @@ namespace Android.Provider
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public FontRequest(Java.Lang.String arg0, Java.Lang.String arg1, Java.Lang.String arg2)
             : base(arg0, arg1, arg2)
         {
@@ -69,36 +69,40 @@ namespace Android.Provider
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/provider/FontRequest.html#getCertificates()"/> 
+        /// <see href="https://developer.android.com/reference/android/provider/FontRequest.html#getProviderAuthority()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Java.Util.List<Java.Util.List<byte[]>> Certificates
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        [global::System.Obsolete()]
+        public Java.Lang.String GetProviderAuthority()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Util.List<byte[]>>>("getCertificates", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getProviderAuthority", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/provider/FontRequest.html#getProviderAuthority()"/> 
+        /// <see href="https://developer.android.com/reference/android/provider/FontRequest.html#getProviderPackage()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Java.Lang.String ProviderAuthority
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        [global::System.Obsolete()]
+        public Java.Lang.String GetProviderPackage()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getProviderAuthority", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getProviderPackage", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/provider/FontRequest.html#getProviderPackage()"/> 
+        /// <see href="https://developer.android.com/reference/android/provider/FontRequest.html#getQuery()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Java.Lang.String ProviderPackage
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        [global::System.Obsolete()]
+        public Java.Lang.String GetQuery()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getProviderPackage", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getQuery", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/provider/FontRequest.html#getQuery()"/> 
+        /// <see href="https://developer.android.com/reference/android/provider/FontRequest.html#getCertificates()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Java.Lang.String Query
+        /// <returns><see cref="Java.Util.List"/></returns>
+        [global::System.Obsolete()]
+        public Java.Util.List<Java.Util.List<byte[]>> GetCertificates()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getQuery", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Util.List<Java.Util.List<byte[]>>>("getCertificates", "()Ljava/util/List;");
         }
 
         #endregion

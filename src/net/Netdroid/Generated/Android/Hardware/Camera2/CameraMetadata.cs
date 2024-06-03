@@ -760,7 +760,7 @@ namespace Android.Hardware.Camera2
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraMetadata.html#CONTROL_SCENE_MODE_HIGH_SPEED_VIDEO"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int CONTROL_SCENE_MODE_HIGH_SPEED_VIDEO { get { if (!_CONTROL_SCENE_MODE_HIGH_SPEED_VIDEOReady) { _CONTROL_SCENE_MODE_HIGH_SPEED_VIDEOContent = SGetField<int>(LocalBridgeClazz, "CONTROL_SCENE_MODE_HIGH_SPEED_VIDEO"); _CONTROL_SCENE_MODE_HIGH_SPEED_VIDEOReady = true; } return _CONTROL_SCENE_MODE_HIGH_SPEED_VIDEOContent; } }
         private static int _CONTROL_SCENE_MODE_HIGH_SPEED_VIDEOContent = default;
         private static bool _CONTROL_SCENE_MODE_HIGH_SPEED_VIDEOReady = false; // this is used because in case of generics 
@@ -1697,11 +1697,12 @@ namespace Android.Hardware.Camera2
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraMetadata.html#getKeys()"/> 
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraMetadata.html#getKeys()"/>
         /// </summary>
-        public Java.Util.List Keys
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List GetKeys()
         {
-            get { return IExecuteWithSignature<Java.Util.List>("getKeys", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Java.Util.List>("getKeys", "()Ljava/util/List;");
         }
 
         #endregion
@@ -2453,7 +2454,7 @@ namespace Android.Hardware.Camera2
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraMetadata.html#CONTROL_SCENE_MODE_HIGH_SPEED_VIDEO"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int CONTROL_SCENE_MODE_HIGH_SPEED_VIDEO { get { if (!_CONTROL_SCENE_MODE_HIGH_SPEED_VIDEOReady) { _CONTROL_SCENE_MODE_HIGH_SPEED_VIDEOContent = SGetField<int>(LocalBridgeClazz, "CONTROL_SCENE_MODE_HIGH_SPEED_VIDEO"); _CONTROL_SCENE_MODE_HIGH_SPEED_VIDEOReady = true; } return _CONTROL_SCENE_MODE_HIGH_SPEED_VIDEOContent; } }
         private static int _CONTROL_SCENE_MODE_HIGH_SPEED_VIDEOContent = default;
         private static bool _CONTROL_SCENE_MODE_HIGH_SPEED_VIDEOReady = false; // this is used because in case of generics 
@@ -3390,11 +3391,12 @@ namespace Android.Hardware.Camera2
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraMetadata.html#getKeys()"/> 
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraMetadata.html#getKeys()"/>
         /// </summary>
-        public Java.Util.List<TKey> Keys
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<TKey> GetKeys()
         {
-            get { return IExecuteWithSignature<Java.Util.List<TKey>>("getKeys", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Java.Util.List<TKey>>("getKeys", "()Ljava/util/List;");
         }
 
         #endregion

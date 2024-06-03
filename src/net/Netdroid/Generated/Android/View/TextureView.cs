@@ -84,25 +84,12 @@ namespace Android.View
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/TextureView.html#getBitmap()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/TextureView.html#getBitmap()"/>
         /// </summary>
-        public Android.Graphics.Bitmap Bitmap
+        /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
+        public Android.Graphics.Bitmap GetBitmap()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Bitmap>("getBitmap", "()Landroid/graphics/Bitmap;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/TextureView.html#getSurfaceTextureListener()"/> 
-        /// </summary>
-        public Android.View.TextureView.SurfaceTextureListener GetSurfaceTextureListener
-        {
-            get { return IExecuteWithSignature<Android.View.TextureView.SurfaceTextureListener>("getSurfaceTextureListener", "()Landroid/view/TextureView$SurfaceTextureListener;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/TextureView.html#getSurfaceTexture()"/> <see href="https://developer.android.com/reference/android/view/TextureView.html#setSurfaceTexture(android.graphics.SurfaceTexture)"/>
-        /// </summary>
-        public Android.Graphics.SurfaceTexture SurfaceTexture
-        {
-            get { return IExecuteWithSignature<Android.Graphics.SurfaceTexture>("getSurfaceTexture", "()Landroid/graphics/SurfaceTexture;"); } set { IExecuteWithSignature("setSurfaceTexture", "(Landroid/graphics/SurfaceTexture;)V", value); }
+            return IExecuteWithSignature<Android.Graphics.Bitmap>("getBitmap", "()Landroid/graphics/Bitmap;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/TextureView.html#getBitmap(android.graphics.Bitmap)"/>
@@ -150,6 +137,30 @@ namespace Android.View
             return IExecuteWithSignature<Android.Graphics.Matrix>("getTransform", "(Landroid/graphics/Matrix;)Landroid/graphics/Matrix;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/TextureView.html#getSurfaceTexture()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Graphics.SurfaceTexture"/></returns>
+        public Android.Graphics.SurfaceTexture GetSurfaceTexture()
+        {
+            return IExecuteWithSignature<Android.Graphics.SurfaceTexture>("getSurfaceTexture", "()Landroid/graphics/SurfaceTexture;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/TextureView.html#getSurfaceTextureListener()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.TextureView.SurfaceTextureListener"/></returns>
+        public Android.View.TextureView.SurfaceTextureListener GetSurfaceTextureListener()
+        {
+            return IExecuteWithSignature<Android.View.TextureView.SurfaceTextureListener>("getSurfaceTextureListener", "()Landroid/view/TextureView$SurfaceTextureListener;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/TextureView.html#getSurfaceTextureListener()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.TextureView.SurfaceTextureListener"/></returns>
+        public Android.View.TextureView.SurfaceTextureListener GetSurfaceTextureListenerDirect()
+        {
+            return IExecuteWithSignature<Android.View.TextureView.SurfaceTextureListenerDirect, Android.View.TextureView.SurfaceTextureListener>("getSurfaceTextureListener", "()Landroid/view/TextureView$SurfaceTextureListener;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/TextureView.html#isAvailable()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -164,6 +175,14 @@ namespace Android.View
         public void SetOpaque(bool arg0)
         {
             IExecuteWithSignature("setOpaque", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/TextureView.html#setSurfaceTexture(android.graphics.SurfaceTexture)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.SurfaceTexture"/></param>
+        public void SetSurfaceTexture(Android.Graphics.SurfaceTexture arg0)
+        {
+            IExecuteWithSignature("setSurfaceTexture", "(Landroid/graphics/SurfaceTexture;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/TextureView.html#setSurfaceTextureListener(android.view.TextureView.SurfaceTextureListener)"/>
@@ -218,10 +237,10 @@ namespace Android.View
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onSurfaceTextureDestroyed", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Graphics.SurfaceTexture>>>(OnSurfaceTextureDestroyedEventHandler));
-                AddEventHandler("onSurfaceTextureAvailable", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Graphics.SurfaceTexture>>>(OnSurfaceTextureAvailableEventHandler));
-                AddEventHandler("onSurfaceTextureSizeChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Graphics.SurfaceTexture>>>(OnSurfaceTextureSizeChangedEventHandler));
-                AddEventHandler("onSurfaceTextureUpdated", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Graphics.SurfaceTexture>>>(OnSurfaceTextureUpdatedEventHandler));
+                AddEventHandler("onSurfaceTextureDestroyed", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Graphics.SurfaceTexture>>>(OnSurfaceTextureDestroyedEventHandler));
+                AddEventHandler("onSurfaceTextureAvailable", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Graphics.SurfaceTexture>>>(OnSurfaceTextureAvailableEventHandler));
+                AddEventHandler("onSurfaceTextureSizeChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Graphics.SurfaceTexture>>>(OnSurfaceTextureSizeChangedEventHandler));
+                AddEventHandler("onSurfaceTextureUpdated", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Graphics.SurfaceTexture>>>(OnSurfaceTextureUpdatedEventHandler));
 
             }
 
@@ -229,7 +248,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/TextureView.SurfaceTextureListener.html#onSurfaceTextureDestroyed(android.graphics.SurfaceTexture)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnSurfaceTextureDestroyed"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Func<Android.Graphics.SurfaceTexture, bool> OnOnSurfaceTextureDestroyed { get; set; } = null;
+            public global::System.Func<Android.Graphics.SurfaceTexture, bool> OnOnSurfaceTextureDestroyed { get; set; } = null;
 
             void OnSurfaceTextureDestroyedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Graphics.SurfaceTexture>> data)
             {
@@ -252,7 +271,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/TextureView.SurfaceTextureListener.html#onSurfaceTextureAvailable(android.graphics.SurfaceTexture,int,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnSurfaceTextureAvailable"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Graphics.SurfaceTexture, int, int> OnOnSurfaceTextureAvailable { get; set; } = null;
+            public global::System.Action<Android.Graphics.SurfaceTexture, int, int> OnOnSurfaceTextureAvailable { get; set; } = null;
 
             void OnSurfaceTextureAvailableEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Graphics.SurfaceTexture>> data)
             {
@@ -275,7 +294,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/TextureView.SurfaceTextureListener.html#onSurfaceTextureSizeChanged(android.graphics.SurfaceTexture,int,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnSurfaceTextureSizeChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Graphics.SurfaceTexture, int, int> OnOnSurfaceTextureSizeChanged { get; set; } = null;
+            public global::System.Action<Android.Graphics.SurfaceTexture, int, int> OnOnSurfaceTextureSizeChanged { get; set; } = null;
 
             void OnSurfaceTextureSizeChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Graphics.SurfaceTexture>> data)
             {
@@ -298,7 +317,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/TextureView.SurfaceTextureListener.html#onSurfaceTextureUpdated(android.graphics.SurfaceTexture)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnSurfaceTextureUpdated"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Graphics.SurfaceTexture> OnOnSurfaceTextureUpdated { get; set; } = null;
+            public global::System.Action<Android.Graphics.SurfaceTexture> OnOnSurfaceTextureUpdated { get; set; } = null;
 
             void OnSurfaceTextureUpdatedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Graphics.SurfaceTexture>> data)
             {

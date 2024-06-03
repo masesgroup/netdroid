@@ -52,11 +52,12 @@ namespace Android.Media.Metrics
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/metrics/LogSessionId.html#getStringId()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/metrics/LogSessionId.html#getStringId()"/>
         /// </summary>
-        public Java.Lang.String StringId
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetStringId()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getStringId", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getStringId", "()Ljava/lang/String;");
         }
 
         #endregion

@@ -95,60 +95,68 @@ namespace Android.Hardware.Camera2.Params
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/MeteringRectangle.html#getHeight()"/> 
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/MeteringRectangle.html#getUpperLeftPoint()"/>
         /// </summary>
-        public int Height
+        /// <returns><see cref="Android.Graphics.Point"/></returns>
+        public Android.Graphics.Point GetUpperLeftPoint()
         {
-            get { return IExecuteWithSignature<int>("getHeight", "()I"); }
+            return IExecuteWithSignature<Android.Graphics.Point>("getUpperLeftPoint", "()Landroid/graphics/Point;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/MeteringRectangle.html#getMeteringWeight()"/> 
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/MeteringRectangle.html#getRect()"/>
         /// </summary>
-        public int MeteringWeight
+        /// <returns><see cref="Android.Graphics.Rect"/></returns>
+        public Android.Graphics.Rect GetRect()
         {
-            get { return IExecuteWithSignature<int>("getMeteringWeight", "()I"); }
+            return IExecuteWithSignature<Android.Graphics.Rect>("getRect", "()Landroid/graphics/Rect;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/MeteringRectangle.html#getRect()"/> 
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/MeteringRectangle.html#getSize()"/>
         /// </summary>
-        public Android.Graphics.Rect Rect
+        /// <returns><see cref="Android.Util.Size"/></returns>
+        public Android.Util.Size GetSize()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Rect>("getRect", "()Landroid/graphics/Rect;"); }
+            return IExecuteWithSignature<Android.Util.Size>("getSize", "()Landroid/util/Size;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/MeteringRectangle.html#getSize()"/> 
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/MeteringRectangle.html#getHeight()"/>
         /// </summary>
-        public Android.Util.Size Size
+        /// <returns><see cref="int"/></returns>
+        public int GetHeight()
         {
-            get { return IExecuteWithSignature<Android.Util.Size>("getSize", "()Landroid/util/Size;"); }
+            return IExecuteWithSignature<int>("getHeight", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/MeteringRectangle.html#getUpperLeftPoint()"/> 
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/MeteringRectangle.html#getMeteringWeight()"/>
         /// </summary>
-        public Android.Graphics.Point UpperLeftPoint
+        /// <returns><see cref="int"/></returns>
+        public int GetMeteringWeight()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Point>("getUpperLeftPoint", "()Landroid/graphics/Point;"); }
+            return IExecuteWithSignature<int>("getMeteringWeight", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/MeteringRectangle.html#getWidth()"/> 
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/MeteringRectangle.html#getWidth()"/>
         /// </summary>
-        public int Width
+        /// <returns><see cref="int"/></returns>
+        public int GetWidth()
         {
-            get { return IExecuteWithSignature<int>("getWidth", "()I"); }
+            return IExecuteWithSignature<int>("getWidth", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/MeteringRectangle.html#getX()"/> 
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/MeteringRectangle.html#getX()"/>
         /// </summary>
-        public int X
+        /// <returns><see cref="int"/></returns>
+        public int GetX()
         {
-            get { return IExecuteWithSignature<int>("getX", "()I"); }
+            return IExecuteWithSignature<int>("getX", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/MeteringRectangle.html#getY()"/> 
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/MeteringRectangle.html#getY()"/>
         /// </summary>
-        public int Y
+        /// <returns><see cref="int"/></returns>
+        public int GetY()
         {
-            get { return IExecuteWithSignature<int>("getY", "()I"); }
+            return IExecuteWithSignature<int>("getY", "()I");
         }
 
         #endregion

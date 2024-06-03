@@ -52,104 +52,6 @@ namespace Android.Location
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/GnssClock.html#getBiasNanos()"/> 
-        /// </summary>
-        public double BiasNanos
-        {
-            get { return IExecuteWithSignature<double>("getBiasNanos", "()D"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/GnssClock.html#getBiasUncertaintyNanos()"/> 
-        /// </summary>
-        public double BiasUncertaintyNanos
-        {
-            get { return IExecuteWithSignature<double>("getBiasUncertaintyNanos", "()D"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/GnssClock.html#getDriftNanosPerSecond()"/> 
-        /// </summary>
-        public double DriftNanosPerSecond
-        {
-            get { return IExecuteWithSignature<double>("getDriftNanosPerSecond", "()D"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/GnssClock.html#getDriftUncertaintyNanosPerSecond()"/> 
-        /// </summary>
-        public double DriftUncertaintyNanosPerSecond
-        {
-            get { return IExecuteWithSignature<double>("getDriftUncertaintyNanosPerSecond", "()D"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/GnssClock.html#getElapsedRealtimeNanos()"/> 
-        /// </summary>
-        public long ElapsedRealtimeNanos
-        {
-            get { return IExecuteWithSignature<long>("getElapsedRealtimeNanos", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/GnssClock.html#getElapsedRealtimeUncertaintyNanos()"/> 
-        /// </summary>
-        public double ElapsedRealtimeUncertaintyNanos
-        {
-            get { return IExecuteWithSignature<double>("getElapsedRealtimeUncertaintyNanos", "()D"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/GnssClock.html#getFullBiasNanos()"/> 
-        /// </summary>
-        public long FullBiasNanos
-        {
-            get { return IExecuteWithSignature<long>("getFullBiasNanos", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/GnssClock.html#getHardwareClockDiscontinuityCount()"/> 
-        /// </summary>
-        public int HardwareClockDiscontinuityCount
-        {
-            get { return IExecuteWithSignature<int>("getHardwareClockDiscontinuityCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/GnssClock.html#getLeapSecond()"/> 
-        /// </summary>
-        public int LeapSecond
-        {
-            get { return IExecuteWithSignature<int>("getLeapSecond", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/GnssClock.html#getReferenceCarrierFrequencyHzForIsb()"/> 
-        /// </summary>
-        public double ReferenceCarrierFrequencyHzForIsb
-        {
-            get { return IExecuteWithSignature<double>("getReferenceCarrierFrequencyHzForIsb", "()D"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/GnssClock.html#getReferenceCodeTypeForIsb()"/> 
-        /// </summary>
-        public Java.Lang.String ReferenceCodeTypeForIsb
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getReferenceCodeTypeForIsb", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/GnssClock.html#getReferenceConstellationTypeForIsb()"/> 
-        /// </summary>
-        public int ReferenceConstellationTypeForIsb
-        {
-            get { return IExecuteWithSignature<int>("getReferenceConstellationTypeForIsb", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/GnssClock.html#getTimeNanos()"/> 
-        /// </summary>
-        public long TimeNanos
-        {
-            get { return IExecuteWithSignature<long>("getTimeNanos", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/GnssClock.html#getTimeUncertaintyNanos()"/> 
-        /// </summary>
-        public double TimeUncertaintyNanos
-        {
-            get { return IExecuteWithSignature<double>("getTimeUncertaintyNanos", "()D"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/GnssClock.html#hasBiasNanos()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -246,12 +148,124 @@ namespace Android.Location
             return IExecuteWithSignature<bool>("hasTimeUncertaintyNanos", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/GnssClock.html#getBiasNanos()"/>
+        /// </summary>
+        /// <returns><see cref="double"/></returns>
+        public double GetBiasNanos()
+        {
+            return IExecuteWithSignature<double>("getBiasNanos", "()D");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/GnssClock.html#getBiasUncertaintyNanos()"/>
+        /// </summary>
+        /// <returns><see cref="double"/></returns>
+        public double GetBiasUncertaintyNanos()
+        {
+            return IExecuteWithSignature<double>("getBiasUncertaintyNanos", "()D");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/GnssClock.html#getDriftNanosPerSecond()"/>
+        /// </summary>
+        /// <returns><see cref="double"/></returns>
+        public double GetDriftNanosPerSecond()
+        {
+            return IExecuteWithSignature<double>("getDriftNanosPerSecond", "()D");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/GnssClock.html#getDriftUncertaintyNanosPerSecond()"/>
+        /// </summary>
+        /// <returns><see cref="double"/></returns>
+        public double GetDriftUncertaintyNanosPerSecond()
+        {
+            return IExecuteWithSignature<double>("getDriftUncertaintyNanosPerSecond", "()D");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/GnssClock.html#getElapsedRealtimeUncertaintyNanos()"/>
+        /// </summary>
+        /// <returns><see cref="double"/></returns>
+        public double GetElapsedRealtimeUncertaintyNanos()
+        {
+            return IExecuteWithSignature<double>("getElapsedRealtimeUncertaintyNanos", "()D");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/GnssClock.html#getReferenceCarrierFrequencyHzForIsb()"/>
+        /// </summary>
+        /// <returns><see cref="double"/></returns>
+        public double GetReferenceCarrierFrequencyHzForIsb()
+        {
+            return IExecuteWithSignature<double>("getReferenceCarrierFrequencyHzForIsb", "()D");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/GnssClock.html#getTimeUncertaintyNanos()"/>
+        /// </summary>
+        /// <returns><see cref="double"/></returns>
+        public double GetTimeUncertaintyNanos()
+        {
+            return IExecuteWithSignature<double>("getTimeUncertaintyNanos", "()D");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/GnssClock.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/GnssClock.html#getHardwareClockDiscontinuityCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetHardwareClockDiscontinuityCount()
+        {
+            return IExecuteWithSignature<int>("getHardwareClockDiscontinuityCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/GnssClock.html#getLeapSecond()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetLeapSecond()
+        {
+            return IExecuteWithSignature<int>("getLeapSecond", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/GnssClock.html#getReferenceConstellationTypeForIsb()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetReferenceConstellationTypeForIsb()
+        {
+            return IExecuteWithSignature<int>("getReferenceConstellationTypeForIsb", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/GnssClock.html#getReferenceCodeTypeForIsb()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetReferenceCodeTypeForIsb()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getReferenceCodeTypeForIsb", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/GnssClock.html#getElapsedRealtimeNanos()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetElapsedRealtimeNanos()
+        {
+            return IExecuteWithSignature<long>("getElapsedRealtimeNanos", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/GnssClock.html#getFullBiasNanos()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetFullBiasNanos()
+        {
+            return IExecuteWithSignature<long>("getFullBiasNanos", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/GnssClock.html#getTimeNanos()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetTimeNanos()
+        {
+            return IExecuteWithSignature<long>("getTimeNanos", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/GnssClock.html#writeToParcel(android.os.Parcel,int)"/>

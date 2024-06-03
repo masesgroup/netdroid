@@ -64,25 +64,28 @@ namespace Java.Security.Interfaces
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/interfaces/DSAParams.html#getG()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/interfaces/DSAParams.html#getG()"/>
         /// </summary>
-        public Java.Math.BigInteger G
+        /// <returns><see cref="Java.Math.BigInteger"/></returns>
+        public Java.Math.BigInteger GetG()
         {
-            get { return IExecuteWithSignature<Java.Math.BigInteger>("getG", "()Ljava/math/BigInteger;"); }
+            return IExecuteWithSignature<Java.Math.BigInteger>("getG", "()Ljava/math/BigInteger;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/interfaces/DSAParams.html#getP()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/interfaces/DSAParams.html#getP()"/>
         /// </summary>
-        public Java.Math.BigInteger P
+        /// <returns><see cref="Java.Math.BigInteger"/></returns>
+        public Java.Math.BigInteger GetP()
         {
-            get { return IExecuteWithSignature<Java.Math.BigInteger>("getP", "()Ljava/math/BigInteger;"); }
+            return IExecuteWithSignature<Java.Math.BigInteger>("getP", "()Ljava/math/BigInteger;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/interfaces/DSAParams.html#getQ()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/interfaces/DSAParams.html#getQ()"/>
         /// </summary>
-        public Java.Math.BigInteger Q
+        /// <returns><see cref="Java.Math.BigInteger"/></returns>
+        public Java.Math.BigInteger GetQ()
         {
-            get { return IExecuteWithSignature<Java.Math.BigInteger>("getQ", "()Ljava/math/BigInteger;"); }
+            return IExecuteWithSignature<Java.Math.BigInteger>("getQ", "()Ljava/math/BigInteger;");
         }
 
         #endregion

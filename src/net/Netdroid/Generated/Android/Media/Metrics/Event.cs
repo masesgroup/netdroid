@@ -46,18 +46,20 @@ namespace Android.Media.Metrics
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/metrics/Event.html#getMetricsBundle()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/metrics/Event.html#getMetricsBundle()"/>
         /// </summary>
-        public Android.Os.Bundle MetricsBundle
+        /// <returns><see cref="Android.Os.Bundle"/></returns>
+        public Android.Os.Bundle GetMetricsBundle()
         {
-            get { return IExecuteWithSignature<Android.Os.Bundle>("getMetricsBundle", "()Landroid/os/Bundle;"); }
+            return IExecuteWithSignature<Android.Os.Bundle>("getMetricsBundle", "()Landroid/os/Bundle;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/metrics/Event.html#getTimeSinceCreatedMillis()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/metrics/Event.html#getTimeSinceCreatedMillis()"/>
         /// </summary>
-        public long TimeSinceCreatedMillis
+        /// <returns><see cref="long"/></returns>
+        public long GetTimeSinceCreatedMillis()
         {
-            get { return IExecuteWithSignature<long>("getTimeSinceCreatedMillis", "()J"); }
+            return IExecuteWithSignature<long>("getTimeSinceCreatedMillis", "()J");
         }
 
         #endregion

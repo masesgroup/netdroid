@@ -68,7 +68,7 @@ namespace Android.Sax
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("end", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(EndEventHandler));
+            AddEventHandler("end", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(EndEventHandler));
 
         }
 
@@ -76,7 +76,7 @@ namespace Android.Sax
         /// Handler for <see href="https://developer.android.com/reference/android/sax/EndTextElementListener.html#end(java.lang.String)"/>
         /// </summary>
         /// <remarks>If <see cref="OnEnd"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Lang.String> OnEnd { get; set; } = null;
+        public global::System.Action<Java.Lang.String> OnEnd { get; set; } = null;
 
         void EndEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
         {

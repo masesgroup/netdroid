@@ -46,13 +46,6 @@ namespace Android.Media.Midi
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/midi/MidiDevice.html#getInfo()"/> 
-        /// </summary>
-        public Android.Media.Midi.MidiDeviceInfo Info
-        {
-            get { return IExecuteWithSignature<Android.Media.Midi.MidiDeviceInfo>("getInfo", "()Landroid/media/midi/MidiDeviceInfo;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/midi/MidiDevice.html#connectPorts(android.media.midi.MidiInputPort,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Media.Midi.MidiInputPort"/></param>
@@ -61,6 +54,14 @@ namespace Android.Media.Midi
         public Android.Media.Midi.MidiDevice.MidiConnection ConnectPorts(Android.Media.Midi.MidiInputPort arg0, int arg1)
         {
             return IExecute<Android.Media.Midi.MidiDevice.MidiConnection>("connectPorts", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/midi/MidiDevice.html#getInfo()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Media.Midi.MidiDeviceInfo"/></returns>
+        public Android.Media.Midi.MidiDeviceInfo GetInfo()
+        {
+            return IExecuteWithSignature<Android.Media.Midi.MidiDeviceInfo>("getInfo", "()Landroid/media/midi/MidiDeviceInfo;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/midi/MidiDevice.html#openInputPort(int)"/>

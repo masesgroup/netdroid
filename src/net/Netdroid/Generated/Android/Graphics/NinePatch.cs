@@ -74,46 +74,20 @@ namespace Android.Graphics
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/NinePatch.html#getBitmap()"/> 
+        /// <see href="https://developer.android.com/reference/android/graphics/NinePatch.html#getBitmap()"/>
         /// </summary>
-        public Android.Graphics.Bitmap Bitmap
+        /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
+        public Android.Graphics.Bitmap GetBitmap()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Bitmap>("getBitmap", "()Landroid/graphics/Bitmap;"); }
+            return IExecuteWithSignature<Android.Graphics.Bitmap>("getBitmap", "()Landroid/graphics/Bitmap;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/NinePatch.html#getDensity()"/> 
+        /// <see href="https://developer.android.com/reference/android/graphics/NinePatch.html#getPaint()"/>
         /// </summary>
-        public int Density
+        /// <returns><see cref="Android.Graphics.Paint"/></returns>
+        public Android.Graphics.Paint GetPaint()
         {
-            get { return IExecuteWithSignature<int>("getDensity", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/NinePatch.html#getHeight()"/> 
-        /// </summary>
-        public int Height
-        {
-            get { return IExecuteWithSignature<int>("getHeight", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/NinePatch.html#getName()"/> 
-        /// </summary>
-        public Java.Lang.String Name
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/NinePatch.html#getPaint()"/> <see href="https://developer.android.com/reference/android/graphics/NinePatch.html#setPaint(android.graphics.Paint)"/>
-        /// </summary>
-        public Android.Graphics.Paint Paint
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Paint>("getPaint", "()Landroid/graphics/Paint;"); } set { IExecuteWithSignature("setPaint", "(Landroid/graphics/Paint;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/NinePatch.html#getWidth()"/> 
-        /// </summary>
-        public int Width
-        {
-            get { return IExecuteWithSignature<int>("getWidth", "()I"); }
+            return IExecuteWithSignature<Android.Graphics.Paint>("getPaint", "()Landroid/graphics/Paint;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/NinePatch.html#getTransparentRegion(android.graphics.Rect)"/>
@@ -131,6 +105,38 @@ namespace Android.Graphics
         public bool HasAlpha()
         {
             return IExecuteWithSignature<bool>("hasAlpha", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/NinePatch.html#getDensity()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDensity()
+        {
+            return IExecuteWithSignature<int>("getDensity", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/NinePatch.html#getHeight()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetHeight()
+        {
+            return IExecuteWithSignature<int>("getHeight", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/NinePatch.html#getWidth()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetWidth()
+        {
+            return IExecuteWithSignature<int>("getWidth", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/NinePatch.html#getName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/NinePatch.html#draw(android.graphics.Canvas,android.graphics.Rect,android.graphics.Paint)"/>
@@ -159,6 +165,14 @@ namespace Android.Graphics
         public void Draw(Android.Graphics.Canvas arg0, Android.Graphics.RectF arg1)
         {
             IExecute("draw", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/NinePatch.html#setPaint(android.graphics.Paint)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Paint"/></param>
+        public void SetPaint(Android.Graphics.Paint arg0)
+        {
+            IExecuteWithSignature("setPaint", "(Landroid/graphics/Paint;)V", arg0);
         }
 
         #endregion

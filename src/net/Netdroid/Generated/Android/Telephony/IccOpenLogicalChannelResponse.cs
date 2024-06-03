@@ -82,25 +82,12 @@ namespace Android.Telephony
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/IccOpenLogicalChannelResponse.html#getChannel()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/IccOpenLogicalChannelResponse.html#getSelectResponse()"/>
         /// </summary>
-        public int Channel
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetSelectResponse()
         {
-            get { return IExecuteWithSignature<int>("getChannel", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/IccOpenLogicalChannelResponse.html#getSelectResponse()"/> 
-        /// </summary>
-        public byte[] SelectResponse
-        {
-            get { return IExecuteWithSignatureArray<byte>("getSelectResponse", "()[B"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/IccOpenLogicalChannelResponse.html#getStatus()"/> 
-        /// </summary>
-        public int Status
-        {
-            get { return IExecuteWithSignature<int>("getStatus", "()I"); }
+            return IExecuteWithSignatureArray<byte>("getSelectResponse", "()[B");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/IccOpenLogicalChannelResponse.html#describeContents()"/>
@@ -109,6 +96,22 @@ namespace Android.Telephony
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/IccOpenLogicalChannelResponse.html#getChannel()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetChannel()
+        {
+            return IExecuteWithSignature<int>("getChannel", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/IccOpenLogicalChannelResponse.html#getStatus()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetStatus()
+        {
+            return IExecuteWithSignature<int>("getStatus", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/IccOpenLogicalChannelResponse.html#writeToParcel(android.os.Parcel,int)"/>

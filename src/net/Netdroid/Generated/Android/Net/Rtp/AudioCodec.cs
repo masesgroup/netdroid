@@ -40,56 +40,56 @@ namespace Android.Net.Rtp
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/rtp/AudioCodec.html#type"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int type { get { if (!_typeReady) { _typeContent = IGetField<int>("type"); _typeReady = true; } return _typeContent; } }
         private int _typeContent = default;
         private bool _typeReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/rtp/AudioCodec.html#fmtp"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Lang.String fmtp { get { if (!_fmtpReady) { _fmtpContent = IGetField<Java.Lang.String>("fmtp"); _fmtpReady = true; } return _fmtpContent; } }
         private Java.Lang.String _fmtpContent = default;
         private bool _fmtpReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/rtp/AudioCodec.html#rtpmap"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Lang.String rtpmap { get { if (!_rtpmapReady) { _rtpmapContent = IGetField<Java.Lang.String>("rtpmap"); _rtpmapReady = true; } return _rtpmapContent; } }
         private Java.Lang.String _rtpmapContent = default;
         private bool _rtpmapReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/rtp/AudioCodec.html#AMR"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Net.Rtp.AudioCodec AMR { get { if (!_AMRReady) { _AMRContent = SGetField<Android.Net.Rtp.AudioCodec>(LocalBridgeClazz, "AMR"); _AMRReady = true; } return _AMRContent; } }
         private static Android.Net.Rtp.AudioCodec _AMRContent = default;
         private static bool _AMRReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/rtp/AudioCodec.html#GSM"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Net.Rtp.AudioCodec GSM { get { if (!_GSMReady) { _GSMContent = SGetField<Android.Net.Rtp.AudioCodec>(LocalBridgeClazz, "GSM"); _GSMReady = true; } return _GSMContent; } }
         private static Android.Net.Rtp.AudioCodec _GSMContent = default;
         private static bool _GSMReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/rtp/AudioCodec.html#GSM_EFR"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Net.Rtp.AudioCodec GSM_EFR { get { if (!_GSM_EFRReady) { _GSM_EFRContent = SGetField<Android.Net.Rtp.AudioCodec>(LocalBridgeClazz, "GSM_EFR"); _GSM_EFRReady = true; } return _GSM_EFRContent; } }
         private static Android.Net.Rtp.AudioCodec _GSM_EFRContent = default;
         private static bool _GSM_EFRReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/rtp/AudioCodec.html#PCMA"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Net.Rtp.AudioCodec PCMA { get { if (!_PCMAReady) { _PCMAContent = SGetField<Android.Net.Rtp.AudioCodec>(LocalBridgeClazz, "PCMA"); _PCMAReady = true; } return _PCMAContent; } }
         private static Android.Net.Rtp.AudioCodec _PCMAContent = default;
         private static bool _PCMAReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/rtp/AudioCodec.html#PCMU"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Net.Rtp.AudioCodec PCMU { get { if (!_PCMUReady) { _PCMUContent = SGetField<Android.Net.Rtp.AudioCodec>(LocalBridgeClazz, "PCMU"); _PCMUReady = true; } return _PCMUContent; } }
         private static Android.Net.Rtp.AudioCodec _PCMUContent = default;
         private static bool _PCMUReady = false; // this is used because in case of generics 
@@ -98,24 +98,25 @@ namespace Android.Net.Rtp
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/rtp/AudioCodec.html#getCodecs()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public static Android.Net.Rtp.AudioCodec[] Codecs
-        {
-            get { return SExecuteWithSignatureArray<Android.Net.Rtp.AudioCodec>(LocalBridgeClazz, "getCodecs", "()[Landroid/net/rtp/AudioCodec;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/rtp/AudioCodec.html#getCodec(int,java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Android.Net.Rtp.AudioCodec"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Net.Rtp.AudioCodec GetCodec(int arg0, Java.Lang.String arg1, Java.Lang.String arg2)
         {
             return SExecute<Android.Net.Rtp.AudioCodec>(LocalBridgeClazz, "getCodec", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/rtp/AudioCodec.html#getCodecs()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Net.Rtp.AudioCodec"/></returns>
+        [global::System.Obsolete()]
+        public static Android.Net.Rtp.AudioCodec[] GetCodecs()
+        {
+            return SExecuteWithSignatureArray<Android.Net.Rtp.AudioCodec>(LocalBridgeClazz, "getCodecs", "()[Landroid/net/rtp/AudioCodec;");
         }
 
         #endregion

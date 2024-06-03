@@ -46,26 +46,28 @@ namespace Android.Health.Connect
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/LocalTimeRangeFilter.html#getEndTime()"/> 
-        /// </summary>
-        public Java.Time.LocalDateTime EndTime
-        {
-            get { return IExecuteWithSignature<Java.Time.LocalDateTime>("getEndTime", "()Ljava/time/LocalDateTime;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/LocalTimeRangeFilter.html#getStartTime()"/> 
-        /// </summary>
-        public Java.Time.LocalDateTime StartTime
-        {
-            get { return IExecuteWithSignature<Java.Time.LocalDateTime>("getStartTime", "()Ljava/time/LocalDateTime;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/health/connect/LocalTimeRangeFilter.html#isBounded()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsBounded()
         {
             return IExecuteWithSignature<bool>("isBounded", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/LocalTimeRangeFilter.html#getEndTime()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Time.LocalDateTime"/></returns>
+        public Java.Time.LocalDateTime GetEndTime()
+        {
+            return IExecuteWithSignature<Java.Time.LocalDateTime>("getEndTime", "()Ljava/time/LocalDateTime;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/LocalTimeRangeFilter.html#getStartTime()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Time.LocalDateTime"/></returns>
+        public Java.Time.LocalDateTime GetStartTime()
+        {
+            return IExecuteWithSignature<Java.Time.LocalDateTime>("getStartTime", "()Ljava/time/LocalDateTime;");
         }
 
         #endregion

@@ -60,39 +60,20 @@ namespace Android.Net.Wifi.Hotspot2
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/PasspointConfiguration.html#getCredential()"/> <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/PasspointConfiguration.html#setCredential(android.net.wifi.hotspot2.pps.Credential)"/>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/PasspointConfiguration.html#getCredential()"/>
         /// </summary>
-        public Android.Net.Wifi.Hotspot2.Pps.Credential Credential
+        /// <returns><see cref="Android.Net.Wifi.Hotspot2.Pps.Credential"/></returns>
+        public Android.Net.Wifi.Hotspot2.Pps.Credential GetCredential()
         {
-            get { return IExecuteWithSignature<Android.Net.Wifi.Hotspot2.Pps.Credential>("getCredential", "()Landroid/net/wifi/hotspot2/pps/Credential;"); } set { IExecuteWithSignature("setCredential", "(Landroid/net/wifi/hotspot2/pps/Credential;)V", value); }
+            return IExecuteWithSignature<Android.Net.Wifi.Hotspot2.Pps.Credential>("getCredential", "()Landroid/net/wifi/hotspot2/pps/Credential;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/PasspointConfiguration.html#getDecoratedIdentityPrefix()"/> <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/PasspointConfiguration.html#setDecoratedIdentityPrefix(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/PasspointConfiguration.html#getHomeSp()"/>
         /// </summary>
-        public Java.Lang.String DecoratedIdentityPrefix
+        /// <returns><see cref="Android.Net.Wifi.Hotspot2.Pps.HomeSp"/></returns>
+        public Android.Net.Wifi.Hotspot2.Pps.HomeSp GetHomeSp()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDecoratedIdentityPrefix", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setDecoratedIdentityPrefix", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/PasspointConfiguration.html#getHomeSp()"/> <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/PasspointConfiguration.html#setHomeSp(android.net.wifi.hotspot2.pps.HomeSp)"/>
-        /// </summary>
-        public Android.Net.Wifi.Hotspot2.Pps.HomeSp HomeSp
-        {
-            get { return IExecuteWithSignature<Android.Net.Wifi.Hotspot2.Pps.HomeSp>("getHomeSp", "()Landroid/net/wifi/hotspot2/pps/HomeSp;"); } set { IExecuteWithSignature("setHomeSp", "(Landroid/net/wifi/hotspot2/pps/HomeSp;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/PasspointConfiguration.html#getSubscriptionExpirationTimeMillis()"/> 
-        /// </summary>
-        public long SubscriptionExpirationTimeMillis
-        {
-            get { return IExecuteWithSignature<long>("getSubscriptionExpirationTimeMillis", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/PasspointConfiguration.html#getUniqueId()"/> 
-        /// </summary>
-        public Java.Lang.String UniqueId
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getUniqueId", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Android.Net.Wifi.Hotspot2.Pps.HomeSp>("getHomeSp", "()Landroid/net/wifi/hotspot2/pps/HomeSp;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/PasspointConfiguration.html#isOsuProvisioned()"/>
@@ -109,6 +90,54 @@ namespace Android.Net.Wifi.Hotspot2
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/PasspointConfiguration.html#getDecoratedIdentityPrefix()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDecoratedIdentityPrefix()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getDecoratedIdentityPrefix", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/PasspointConfiguration.html#getUniqueId()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetUniqueId()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getUniqueId", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/PasspointConfiguration.html#getSubscriptionExpirationTimeMillis()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetSubscriptionExpirationTimeMillis()
+        {
+            return IExecuteWithSignature<long>("getSubscriptionExpirationTimeMillis", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/PasspointConfiguration.html#setCredential(android.net.wifi.hotspot2.pps.Credential)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Net.Wifi.Hotspot2.Pps.Credential"/></param>
+        public void SetCredential(Android.Net.Wifi.Hotspot2.Pps.Credential arg0)
+        {
+            IExecuteWithSignature("setCredential", "(Landroid/net/wifi/hotspot2/pps/Credential;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/PasspointConfiguration.html#setDecoratedIdentityPrefix(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetDecoratedIdentityPrefix(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setDecoratedIdentityPrefix", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/PasspointConfiguration.html#setHomeSp(android.net.wifi.hotspot2.pps.HomeSp)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Net.Wifi.Hotspot2.Pps.HomeSp"/></param>
+        public void SetHomeSp(Android.Net.Wifi.Hotspot2.Pps.HomeSp arg0)
+        {
+            IExecuteWithSignature("setHomeSp", "(Landroid/net/wifi/hotspot2/pps/HomeSp;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/PasspointConfiguration.html#setSubscriptionExpirationTimeInMillis(long)"/>

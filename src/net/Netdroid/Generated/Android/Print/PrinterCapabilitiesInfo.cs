@@ -52,46 +52,20 @@ namespace Android.Print
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/print/PrinterCapabilitiesInfo.html#getColorModes()"/> 
+        /// <see href="https://developer.android.com/reference/android/print/PrinterCapabilitiesInfo.html#getDefaults()"/>
         /// </summary>
-        public int ColorModes
+        /// <returns><see cref="Android.Print.PrintAttributes"/></returns>
+        public Android.Print.PrintAttributes GetDefaults()
         {
-            get { return IExecuteWithSignature<int>("getColorModes", "()I"); }
+            return IExecuteWithSignature<Android.Print.PrintAttributes>("getDefaults", "()Landroid/print/PrintAttributes;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/print/PrinterCapabilitiesInfo.html#getDefaults()"/> 
+        /// <see href="https://developer.android.com/reference/android/print/PrinterCapabilitiesInfo.html#getMinMargins()"/>
         /// </summary>
-        public Android.Print.PrintAttributes Defaults
+        /// <returns><see cref="Android.Print.PrintAttributes.Margins"/></returns>
+        public Android.Print.PrintAttributes.Margins GetMinMargins()
         {
-            get { return IExecuteWithSignature<Android.Print.PrintAttributes>("getDefaults", "()Landroid/print/PrintAttributes;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/print/PrinterCapabilitiesInfo.html#getDuplexModes()"/> 
-        /// </summary>
-        public int DuplexModes
-        {
-            get { return IExecuteWithSignature<int>("getDuplexModes", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/print/PrinterCapabilitiesInfo.html#getMediaSizes()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Print.PrintAttributes.MediaSize> MediaSizes
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Print.PrintAttributes.MediaSize>>("getMediaSizes", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/print/PrinterCapabilitiesInfo.html#getMinMargins()"/> 
-        /// </summary>
-        public Android.Print.PrintAttributes.Margins MinMargins
-        {
-            get { return IExecuteWithSignature<Android.Print.PrintAttributes.Margins>("getMinMargins", "()Landroid/print/PrintAttributes$Margins;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/print/PrinterCapabilitiesInfo.html#getResolutions()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Print.PrintAttributes.Resolution> Resolutions
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Print.PrintAttributes.Resolution>>("getResolutions", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Android.Print.PrintAttributes.Margins>("getMinMargins", "()Landroid/print/PrintAttributes$Margins;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/print/PrinterCapabilitiesInfo.html#describeContents()"/>
@@ -100,6 +74,38 @@ namespace Android.Print
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/print/PrinterCapabilitiesInfo.html#getColorModes()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetColorModes()
+        {
+            return IExecuteWithSignature<int>("getColorModes", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/print/PrinterCapabilitiesInfo.html#getDuplexModes()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDuplexModes()
+        {
+            return IExecuteWithSignature<int>("getDuplexModes", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/print/PrinterCapabilitiesInfo.html#getMediaSizes()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Print.PrintAttributes.MediaSize> GetMediaSizes()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Print.PrintAttributes.MediaSize>>("getMediaSizes", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/print/PrinterCapabilitiesInfo.html#getResolutions()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Print.PrintAttributes.Resolution> GetResolutions()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Print.PrintAttributes.Resolution>>("getResolutions", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/print/PrinterCapabilitiesInfo.html#writeToParcel(android.os.Parcel,int)"/>

@@ -64,11 +64,20 @@ namespace Org.Xml.Sax
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/XMLFilter.html#getParent()"/> <see href="https://developer.android.com/reference/java.xml/org/xml/sax/XMLFilter.html#setParent(org.xml.sax.XMLReader)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/XMLFilter.html#getParent()"/>
         /// </summary>
-        public Org.Xml.Sax.XMLReader Parent
+        /// <returns><see cref="Org.Xml.Sax.XMLReader"/></returns>
+        public Org.Xml.Sax.XMLReader GetParent()
         {
-            get { return IExecuteWithSignature<Org.Xml.Sax.XMLReader>("getParent", "()Lorg/xml/sax/XMLReader;"); } set { IExecuteWithSignature("setParent", "(Lorg/xml/sax/XMLReader;)V", value); }
+            return IExecuteWithSignature<Org.Xml.Sax.XMLReader>("getParent", "()Lorg/xml/sax/XMLReader;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/XMLFilter.html#setParent(org.xml.sax.XMLReader)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Org.Xml.Sax.XMLReader"/></param>
+        public void SetParent(Org.Xml.Sax.XMLReader arg0)
+        {
+            IExecuteWithSignature("setParent", "(Lorg/xml/sax/XMLReader;)V", arg0);
         }
 
         #endregion

@@ -33,7 +33,7 @@ namespace Android.Telephony.Cdma
         /// <see href="https://developer.android.com/reference/android/telephony/cdma/CdmaCellLocation.html#%3Cinit%3E(android.os.Bundle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Os.Bundle"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public CdmaCellLocation(Android.Os.Bundle arg0)
             : base(arg0)
         {
@@ -55,7 +55,7 @@ namespace Android.Telephony.Cdma
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="double"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static double ConvertQuartSecToDecDegrees(int arg0)
         {
             return SExecuteWithSignature<double>(LocalBridgeClazz, "convertQuartSecToDecDegrees", "(I)D", arg0);
@@ -65,50 +65,55 @@ namespace Android.Telephony.Cdma
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/cdma/CdmaCellLocation.html#getBaseStationId()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/cdma/CdmaCellLocation.html#getBaseStationId()"/>
         /// </summary>
-        [System.Obsolete()]
-        public int BaseStationId
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetBaseStationId()
         {
-            get { return IExecuteWithSignature<int>("getBaseStationId", "()I"); }
+            return IExecuteWithSignature<int>("getBaseStationId", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/cdma/CdmaCellLocation.html#getBaseStationLatitude()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/cdma/CdmaCellLocation.html#getBaseStationLatitude()"/>
         /// </summary>
-        [System.Obsolete()]
-        public int BaseStationLatitude
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetBaseStationLatitude()
         {
-            get { return IExecuteWithSignature<int>("getBaseStationLatitude", "()I"); }
+            return IExecuteWithSignature<int>("getBaseStationLatitude", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/cdma/CdmaCellLocation.html#getBaseStationLongitude()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/cdma/CdmaCellLocation.html#getBaseStationLongitude()"/>
         /// </summary>
-        [System.Obsolete()]
-        public int BaseStationLongitude
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetBaseStationLongitude()
         {
-            get { return IExecuteWithSignature<int>("getBaseStationLongitude", "()I"); }
+            return IExecuteWithSignature<int>("getBaseStationLongitude", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/cdma/CdmaCellLocation.html#getNetworkId()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/cdma/CdmaCellLocation.html#getNetworkId()"/>
         /// </summary>
-        [System.Obsolete()]
-        public int NetworkId
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetNetworkId()
         {
-            get { return IExecuteWithSignature<int>("getNetworkId", "()I"); }
+            return IExecuteWithSignature<int>("getNetworkId", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/cdma/CdmaCellLocation.html#getSystemId()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/cdma/CdmaCellLocation.html#getSystemId()"/>
         /// </summary>
-        [System.Obsolete()]
-        public int SystemId
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetSystemId()
         {
-            get { return IExecuteWithSignature<int>("getSystemId", "()I"); }
+            return IExecuteWithSignature<int>("getSystemId", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/cdma/CdmaCellLocation.html#fillInNotifierBundle(android.os.Bundle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Os.Bundle"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void FillInNotifierBundle(Android.Os.Bundle arg0)
         {
             IExecuteWithSignature("fillInNotifierBundle", "(Landroid/os/Bundle;)V", arg0);
@@ -121,7 +126,7 @@ namespace Android.Telephony.Cdma
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetCellLocationData(int arg0, int arg1, int arg2, int arg3, int arg4)
         {
             IExecute("setCellLocationData", arg0, arg1, arg2, arg3, arg4);
@@ -132,7 +137,7 @@ namespace Android.Telephony.Cdma
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetCellLocationData(int arg0, int arg1, int arg2)
         {
             IExecute("setCellLocationData", arg0, arg1, arg2);
@@ -140,7 +145,7 @@ namespace Android.Telephony.Cdma
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/cdma/CdmaCellLocation.html#setStateInvalid()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetStateInvalid()
         {
             IExecuteWithSignature("setStateInvalid", "()V");

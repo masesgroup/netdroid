@@ -30,7 +30,7 @@ namespace Java.Io
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/FileReader.html#%3Cinit%3E(java.io.File,java.nio.charset.Charset)"/>
+        /// <see href="https://developer.android.com/reference/java/io/FileReader.html#%3Cinit%3E(java.io.File,java.nio.charset.Charset)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
         /// <param name="arg1"><see cref="Java.Nio.Charset.Charset"/></param>
@@ -40,7 +40,7 @@ namespace Java.Io
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/FileReader.html#%3Cinit%3E(java.io.File)"/>
+        /// <see href="https://developer.android.com/reference/java/io/FileReader.html#%3Cinit%3E(java.io.File)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
         /// <exception cref="Java.Io.FileNotFoundException"/>
@@ -49,7 +49,7 @@ namespace Java.Io
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/FileReader.html#%3Cinit%3E(java.io.FileDescriptor)"/>
+        /// <see href="https://developer.android.com/reference/java/io/FileReader.html#%3Cinit%3E(java.io.FileDescriptor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.FileDescriptor"/></param>
         public FileReader(Java.Io.FileDescriptor arg0)
@@ -57,7 +57,7 @@ namespace Java.Io
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/FileReader.html#%3Cinit%3E(java.lang.String,java.nio.charset.Charset)"/>
+        /// <see href="https://developer.android.com/reference/java/io/FileReader.html#%3Cinit%3E(java.lang.String,java.nio.charset.Charset)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Nio.Charset.Charset"/></param>
@@ -67,7 +67,7 @@ namespace Java.Io
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/FileReader.html#%3Cinit%3E(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/io/FileReader.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Io.FileNotFoundException"/>

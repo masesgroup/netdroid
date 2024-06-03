@@ -106,7 +106,7 @@ namespace Android.Os
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_ADD_MANAGED_PROFILE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String DISALLOW_ADD_MANAGED_PROFILE { get { if (!_DISALLOW_ADD_MANAGED_PROFILEReady) { _DISALLOW_ADD_MANAGED_PROFILEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "DISALLOW_ADD_MANAGED_PROFILE"); _DISALLOW_ADD_MANAGED_PROFILEReady = true; } return _DISALLOW_ADD_MANAGED_PROFILEContent; } }
         private static Java.Lang.String _DISALLOW_ADD_MANAGED_PROFILEContent = default;
         private static bool _DISALLOW_ADD_MANAGED_PROFILEReady = false; // this is used because in case of generics 
@@ -383,7 +383,7 @@ namespace Android.Os
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_REMOVE_MANAGED_PROFILE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String DISALLOW_REMOVE_MANAGED_PROFILE { get { if (!_DISALLOW_REMOVE_MANAGED_PROFILEReady) { _DISALLOW_REMOVE_MANAGED_PROFILEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "DISALLOW_REMOVE_MANAGED_PROFILE"); _DISALLOW_REMOVE_MANAGED_PROFILEReady = true; } return _DISALLOW_REMOVE_MANAGED_PROFILEContent; } }
         private static Java.Lang.String _DISALLOW_REMOVE_MANAGED_PROFILEContent = default;
         private static bool _DISALLOW_REMOVE_MANAGED_PROFILEReady = false; // this is used because in case of generics 
@@ -538,35 +538,6 @@ namespace Android.Os
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/UserManager.html#getUserCount()"/> 
-        /// </summary>
-        public int UserCount
-        {
-            get { return IExecuteWithSignature<int>("getUserCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/UserManager.html#getUserName()"/> 
-        /// </summary>
-        public Java.Lang.String UserName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getUserName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/UserManager.html#getUserProfiles()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Os.UserHandle> UserProfiles
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Os.UserHandle>>("getUserProfiles", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/UserManager.html#getUserRestrictions()"/> <see href="https://developer.android.com/reference/android/os/UserManager.html#setUserRestrictions(android.os.Bundle)"/>
-        /// </summary>
-        [System.Obsolete()]
-        public Android.Os.Bundle UserRestrictions
-        {
-            get { return IExecuteWithSignature<Android.Os.Bundle>("getUserRestrictions", "()Landroid/os/Bundle;"); } set { IExecuteWithSignature("setUserRestrictions", "(Landroid/os/Bundle;)V", value); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/UserManager.html#getApplicationRestrictions(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -574,6 +545,14 @@ namespace Android.Os
         public Android.Os.Bundle GetApplicationRestrictions(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Android.Os.Bundle>("getApplicationRestrictions", "(Ljava/lang/String;)Landroid/os/Bundle;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/UserManager.html#getUserRestrictions()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Os.Bundle"/></returns>
+        public Android.Os.Bundle GetUserRestrictions()
+        {
+            return IExecuteWithSignature<Android.Os.Bundle>("getUserRestrictions", "()Landroid/os/Bundle;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/UserManager.html#getUserRestrictions(android.os.UserHandle)"/>
@@ -728,10 +707,34 @@ namespace Android.Os
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool SetRestrictionsChallenge(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<bool>("setRestrictionsChallenge", "(Ljava/lang/String;)Z", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/UserManager.html#getUserCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetUserCount()
+        {
+            return IExecuteWithSignature<int>("getUserCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/UserManager.html#getUserName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetUserName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getUserName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/UserManager.html#getUserProfiles()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Os.UserHandle> GetUserProfiles()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Os.UserHandle>>("getUserProfiles", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/UserManager.html#getSerialNumberForUser(android.os.UserHandle)"/>
@@ -756,7 +759,7 @@ namespace Android.Os
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetUserRestriction(Java.Lang.String arg0, bool arg1)
         {
             IExecute("setUserRestriction", arg0, arg1);
@@ -766,10 +769,19 @@ namespace Android.Os
         /// </summary>
         /// <param name="arg0"><see cref="Android.Os.Bundle"/></param>
         /// <param name="arg1"><see cref="Android.Os.UserHandle"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetUserRestrictions(Android.Os.Bundle arg0, Android.Os.UserHandle arg1)
         {
             IExecute("setUserRestrictions", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/UserManager.html#setUserRestrictions(android.os.Bundle)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Os.Bundle"/></param>
+        [global::System.Obsolete()]
+        public void SetUserRestrictions(Android.Os.Bundle arg0)
+        {
+            IExecuteWithSignature("setUserRestrictions", "(Landroid/os/Bundle;)V", arg0);
         }
 
         #endregion

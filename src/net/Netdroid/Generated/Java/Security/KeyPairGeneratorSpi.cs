@@ -46,7 +46,7 @@ namespace Java.Security
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyPairGeneratorSpi.html#generateKeyPair()"/>
+        /// <see href="https://developer.android.com/reference/java/security/KeyPairGeneratorSpi.html#generateKeyPair()"/>
         /// </summary>
         /// <returns><see cref="Java.Security.KeyPair"/></returns>
         public Java.Security.KeyPair GenerateKeyPair()
@@ -54,7 +54,7 @@ namespace Java.Security
             return IExecuteWithSignature<Java.Security.KeyPair>("generateKeyPair", "()Ljava/security/KeyPair;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyPairGeneratorSpi.html#initialize(int,java.security.SecureRandom)"/>
+        /// <see href="https://developer.android.com/reference/java/security/KeyPairGeneratorSpi.html#initialize(int,java.security.SecureRandom)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Security.SecureRandom"/></param>
@@ -63,7 +63,7 @@ namespace Java.Security
             IExecute("initialize", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyPairGeneratorSpi.html#initialize(java.security.spec.AlgorithmParameterSpec,java.security.SecureRandom)"/>
+        /// <see href="https://developer.android.com/reference/java/security/KeyPairGeneratorSpi.html#initialize(java.security.spec.AlgorithmParameterSpec,java.security.SecureRandom)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Spec.AlgorithmParameterSpec"/></param>
         /// <param name="arg1"><see cref="Java.Security.SecureRandom"/></param>

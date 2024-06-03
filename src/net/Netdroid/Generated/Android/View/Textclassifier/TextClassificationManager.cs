@@ -46,13 +46,6 @@ namespace Android.View.Textclassifier
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassificationManager.html#getTextClassifier()"/> <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassificationManager.html#setTextClassifier(android.view.textclassifier.TextClassifier)"/>
-        /// </summary>
-        public Android.View.Textclassifier.TextClassifier TextClassifier
-        {
-            get { return IExecute<Android.View.Textclassifier.TextClassifier>("getTextClassifier"); } set { IExecute("setTextClassifier", value); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassificationManager.html#createTextClassificationSession(android.view.textclassifier.TextClassificationContext)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.Textclassifier.TextClassificationContext"/></param>
@@ -62,12 +55,28 @@ namespace Android.View.Textclassifier
             return IExecute<Android.View.Textclassifier.TextClassifier>("createTextClassificationSession", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassificationManager.html#getTextClassifier()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.Textclassifier.TextClassifier"/></returns>
+        public Android.View.Textclassifier.TextClassifier GetTextClassifier()
+        {
+            return IExecute<Android.View.Textclassifier.TextClassifier>("getTextClassifier");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassificationManager.html#setTextClassificationSessionFactory(android.view.textclassifier.TextClassificationSessionFactory)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.Textclassifier.TextClassificationSessionFactory"/></param>
         public void SetTextClassificationSessionFactory(Android.View.Textclassifier.TextClassificationSessionFactory arg0)
         {
             IExecute("setTextClassificationSessionFactory", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/textclassifier/TextClassificationManager.html#setTextClassifier(android.view.textclassifier.TextClassifier)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.Textclassifier.TextClassifier"/></param>
+        public void SetTextClassifier(Android.View.Textclassifier.TextClassifier arg0)
+        {
+            IExecute("setTextClassifier", arg0);
         }
 
         #endregion

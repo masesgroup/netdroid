@@ -78,32 +78,12 @@ namespace Android.View.Translation
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/translation/TranslationResponseValue.html#getExtras()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/translation/TranslationResponseValue.html#getExtras()"/>
         /// </summary>
-        public Android.Os.Bundle Extras
+        /// <returns><see cref="Android.Os.Bundle"/></returns>
+        public Android.Os.Bundle GetExtras()
         {
-            get { return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/translation/TranslationResponseValue.html#getStatusCode()"/> 
-        /// </summary>
-        public int StatusCode
-        {
-            get { return IExecuteWithSignature<int>("getStatusCode", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/translation/TranslationResponseValue.html#getText()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence Text
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getText", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/translation/TranslationResponseValue.html#getTransliteration()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence Transliteration
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getTransliteration", "()Ljava/lang/CharSequence;"); }
+            return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/translation/TranslationResponseValue.html#describeContents()"/>
@@ -112,6 +92,30 @@ namespace Android.View.Translation
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/translation/TranslationResponseValue.html#getStatusCode()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetStatusCode()
+        {
+            return IExecuteWithSignature<int>("getStatusCode", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/translation/TranslationResponseValue.html#getText()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetText()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getText", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/translation/TranslationResponseValue.html#getTransliteration()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetTransliteration()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getTransliteration", "()Ljava/lang/CharSequence;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/translation/TranslationResponseValue.html#writeToParcel(android.os.Parcel,int)"/>

@@ -578,7 +578,7 @@ namespace Android.Database
             /// </summary>
             /// <param name="arg0"><see cref="Android.Database.Sqlite.SQLiteDatabase"/></param>
             /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public InsertHelper(Android.Database.Sqlite.SQLiteDatabase arg0, Java.Lang.String arg1)
                 : base(arg0, arg1)
             {
@@ -604,7 +604,7 @@ namespace Android.Database
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="int"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public int GetColumnIndex(Java.Lang.String arg0)
             {
                 return IExecuteWithSignature<int>("getColumnIndex", "(Ljava/lang/String;)I", arg0);
@@ -613,7 +613,7 @@ namespace Android.Database
             /// <see href="https://developer.android.com/reference/android/database/DatabaseUtils.InsertHelper.html#execute()"/>
             /// </summary>
             /// <returns><see cref="long"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public long Execute()
             {
                 return IExecuteWithSignature<long>("execute", "()J");
@@ -623,7 +623,7 @@ namespace Android.Database
             /// </summary>
             /// <param name="arg0"><see cref="Android.Content.ContentValues"/></param>
             /// <returns><see cref="long"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public long Insert(Android.Content.ContentValues arg0)
             {
                 return IExecuteWithSignature<long>("insert", "(Landroid/content/ContentValues;)J", arg0);
@@ -633,7 +633,7 @@ namespace Android.Database
             /// </summary>
             /// <param name="arg0"><see cref="Android.Content.ContentValues"/></param>
             /// <returns><see cref="long"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public long Replace(Android.Content.ContentValues arg0)
             {
                 return IExecuteWithSignature<long>("replace", "(Landroid/content/ContentValues;)J", arg0);
@@ -643,7 +643,7 @@ namespace Android.Database
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
             /// <param name="arg1"><see cref="bool"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void Bind(int arg0, bool arg1)
             {
                 IExecute("bind", arg0, arg1);
@@ -653,7 +653,7 @@ namespace Android.Database
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
             /// <param name="arg1"><see cref="byte"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void Bind(int arg0, byte[] arg1)
             {
                 IExecute("bind", arg0, arg1);
@@ -663,7 +663,7 @@ namespace Android.Database
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
             /// <param name="arg1"><see cref="double"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void Bind(int arg0, double arg1)
             {
                 IExecute("bind", arg0, arg1);
@@ -673,7 +673,7 @@ namespace Android.Database
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
             /// <param name="arg1"><see cref="float"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void Bind(int arg0, float arg1)
             {
                 IExecute("bind", arg0, arg1);
@@ -683,7 +683,7 @@ namespace Android.Database
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
             /// <param name="arg1"><see cref="int"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void Bind(int arg0, int arg1)
             {
                 IExecute("bind", arg0, arg1);
@@ -693,7 +693,7 @@ namespace Android.Database
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
             /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void Bind(int arg0, Java.Lang.String arg1)
             {
                 IExecute("bind", arg0, arg1);
@@ -703,7 +703,7 @@ namespace Android.Database
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
             /// <param name="arg1"><see cref="long"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void Bind(int arg0, long arg1)
             {
                 IExecute("bind", arg0, arg1);
@@ -712,7 +712,7 @@ namespace Android.Database
             /// <see href="https://developer.android.com/reference/android/database/DatabaseUtils.InsertHelper.html#bindNull(int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void BindNull(int arg0)
             {
                 IExecuteWithSignature("bindNull", "(I)V", arg0);
@@ -720,7 +720,7 @@ namespace Android.Database
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/database/DatabaseUtils.InsertHelper.html#close()"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void Close()
             {
                 IExecuteWithSignature("close", "()V");
@@ -728,7 +728,7 @@ namespace Android.Database
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/database/DatabaseUtils.InsertHelper.html#prepareForInsert()"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void PrepareForInsert()
             {
                 IExecuteWithSignature("prepareForInsert", "()V");
@@ -736,7 +736,7 @@ namespace Android.Database
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/database/DatabaseUtils.InsertHelper.html#prepareForReplace()"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void PrepareForReplace()
             {
                 IExecuteWithSignature("prepareForReplace", "()V");

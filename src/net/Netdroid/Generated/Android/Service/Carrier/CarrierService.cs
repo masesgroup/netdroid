@@ -56,7 +56,7 @@ namespace Android.Service.Carrier
         /// </summary>
         /// <param name="arg0"><see cref="Android.Service.Carrier.CarrierIdentifier"/></param>
         /// <returns><see cref="Android.Os.PersistableBundle"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Os.PersistableBundle OnLoadConfig(Android.Service.Carrier.CarrierIdentifier arg0)
         {
             return IExecuteWithSignature<Android.Os.PersistableBundle>("onLoadConfig", "(Landroid/service/carrier/CarrierIdentifier;)Landroid/os/PersistableBundle;", arg0);
@@ -75,7 +75,7 @@ namespace Android.Service.Carrier
         /// <see href="https://developer.android.com/reference/android/service/carrier/CarrierService.html#notifyCarrierNetworkChange(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void NotifyCarrierNetworkChange(bool arg0)
         {
             IExecuteWithSignature("notifyCarrierNetworkChange", "(Z)V", arg0);

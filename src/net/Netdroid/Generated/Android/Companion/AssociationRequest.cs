@@ -88,20 +88,6 @@ namespace Android.Companion
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/companion/AssociationRequest.html#getDeviceProfile()"/> 
-        /// </summary>
-        public Java.Lang.String DeviceProfile
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDeviceProfile", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/companion/AssociationRequest.html#getDisplayName()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence DisplayName
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getDisplayName", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/companion/AssociationRequest.html#isForceConfirmation()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -132,6 +118,22 @@ namespace Android.Companion
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/companion/AssociationRequest.html#getDisplayName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetDisplayName()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getDisplayName", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/companion/AssociationRequest.html#getDeviceProfile()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDeviceProfile()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getDeviceProfile", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/companion/AssociationRequest.html#writeToParcel(android.os.Parcel,int)"/>

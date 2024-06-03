@@ -28,7 +28,7 @@ namespace Java.Util.Zip
 {
     #region Adler32
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/zip/Adler32.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/zip/Adler32.html"/>
     /// </summary>
     public partial class Adler32 : Java.Util.Zip.Checksum
     {
@@ -72,7 +72,7 @@ namespace Java.Util.Zip
 
     #region CheckedInputStream
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/zip/CheckedInputStream.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/zip/CheckedInputStream.html"/>
     /// </summary>
     public partial class CheckedInputStream : Java.Io.FilterInputStream
     {
@@ -116,7 +116,7 @@ namespace Java.Util.Zip
 
     #region CheckedOutputStream
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/zip/CheckedOutputStream.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/zip/CheckedOutputStream.html"/>
     /// </summary>
     public partial class CheckedOutputStream : Java.Io.FilterOutputStream
     {
@@ -160,7 +160,7 @@ namespace Java.Util.Zip
 
     #region Checksum
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/zip/Checksum.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/zip/Checksum.html"/>
     /// </summary>
     public partial class Checksum : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Checksum>
     {
@@ -168,12 +168,12 @@ namespace Java.Util.Zip
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Checksum class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Checksum class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Checksum() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Checksum class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Checksum class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Checksum(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -206,7 +206,7 @@ namespace Java.Util.Zip
 
     #region CRC32
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/zip/CRC32.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/zip/CRC32.html"/>
     /// </summary>
     public partial class CRC32 : Java.Util.Zip.Checksum
     {
@@ -250,7 +250,7 @@ namespace Java.Util.Zip
 
     #region CRC32C
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/zip/CRC32C.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/zip/CRC32C.html"/>
     /// </summary>
     public partial class CRC32C : Java.Util.Zip.Checksum
     {
@@ -294,7 +294,7 @@ namespace Java.Util.Zip
 
     #region DataFormatException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/zip/DataFormatException.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/zip/DataFormatException.html"/>
     /// </summary>
     public partial class DataFormatException : Java.Lang.Exception
     {
@@ -311,7 +311,7 @@ namespace Java.Util.Zip
 
     #region Deflater
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/zip/Deflater.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/zip/Deflater.html"/>
     /// </summary>
     public partial class Deflater : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Deflater>
     {
@@ -355,7 +355,7 @@ namespace Java.Util.Zip
 
     #region DeflaterInputStream
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/zip/DeflaterInputStream.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/zip/DeflaterInputStream.html"/>
     /// </summary>
     public partial class DeflaterInputStream : Java.Io.FilterInputStream
     {
@@ -399,7 +399,7 @@ namespace Java.Util.Zip
 
     #region DeflaterOutputStream
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/zip/DeflaterOutputStream.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/zip/DeflaterOutputStream.html"/>
     /// </summary>
     public partial class DeflaterOutputStream : Java.Io.FilterOutputStream
     {
@@ -443,7 +443,7 @@ namespace Java.Util.Zip
 
     #region GZIPInputStream
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/zip/GZIPInputStream.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/zip/GZIPInputStream.html"/>
     /// </summary>
     public partial class GZIPInputStream : Java.Util.Zip.InflaterInputStream
     {
@@ -487,7 +487,7 @@ namespace Java.Util.Zip
 
     #region GZIPOutputStream
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/zip/GZIPOutputStream.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/zip/GZIPOutputStream.html"/>
     /// </summary>
     public partial class GZIPOutputStream : Java.Util.Zip.DeflaterOutputStream
     {
@@ -531,7 +531,7 @@ namespace Java.Util.Zip
 
     #region Inflater
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/zip/Inflater.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/zip/Inflater.html"/>
     /// </summary>
     public partial class Inflater : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Inflater>
     {
@@ -575,7 +575,7 @@ namespace Java.Util.Zip
 
     #region InflaterInputStream
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/zip/InflaterInputStream.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/zip/InflaterInputStream.html"/>
     /// </summary>
     public partial class InflaterInputStream : Java.Io.FilterInputStream
     {
@@ -619,7 +619,7 @@ namespace Java.Util.Zip
 
     #region InflaterOutputStream
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/zip/InflaterOutputStream.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/zip/InflaterOutputStream.html"/>
     /// </summary>
     public partial class InflaterOutputStream : Java.Io.FilterOutputStream
     {
@@ -663,7 +663,7 @@ namespace Java.Util.Zip
 
     #region ZipEntry
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/zip/ZipEntry.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/zip/ZipEntry.html"/>
     /// </summary>
     public partial class ZipEntry : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ZipEntry>
     {
@@ -707,7 +707,7 @@ namespace Java.Util.Zip
 
     #region ZipError
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/zip/ZipError.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/zip/ZipError.html"/>
     /// </summary>
     public partial class ZipError : Java.Lang.InternalError
     {
@@ -724,7 +724,7 @@ namespace Java.Util.Zip
 
     #region ZipException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/zip/ZipException.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/zip/ZipException.html"/>
     /// </summary>
     public partial class ZipException : Java.Io.IOException
     {
@@ -741,7 +741,7 @@ namespace Java.Util.Zip
 
     #region ZipFile
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/zip/ZipFile.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/zip/ZipFile.html"/>
     /// </summary>
     public partial class ZipFile : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ZipFile>
     {
@@ -785,7 +785,7 @@ namespace Java.Util.Zip
 
     #region ZipInputStream
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/zip/ZipInputStream.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/zip/ZipInputStream.html"/>
     /// </summary>
     public partial class ZipInputStream : Java.Util.Zip.InflaterInputStream
     {
@@ -829,7 +829,7 @@ namespace Java.Util.Zip
 
     #region ZipOutputStream
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/zip/ZipOutputStream.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/zip/ZipOutputStream.html"/>
     /// </summary>
     public partial class ZipOutputStream : Java.Util.Zip.DeflaterOutputStream
     {

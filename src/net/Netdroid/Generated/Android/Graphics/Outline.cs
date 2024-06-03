@@ -54,20 +54,6 @@ namespace Android.Graphics
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Outline.html#getAlpha()"/> <see href="https://developer.android.com/reference/android/graphics/Outline.html#setAlpha(float)"/>
-        /// </summary>
-        public float Alpha
-        {
-            get { return IExecuteWithSignature<float>("getAlpha", "()F"); } set { IExecuteWithSignature("setAlpha", "(F)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/Outline.html#getRadius()"/> 
-        /// </summary>
-        public float Radius
-        {
-            get { return IExecuteWithSignature<float>("getRadius", "()F"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Outline.html#canClip()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -93,6 +79,22 @@ namespace Android.Graphics
             return IExecuteWithSignature<bool>("isEmpty", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Outline.html#getAlpha()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetAlpha()
+        {
+            return IExecuteWithSignature<float>("getAlpha", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Outline.html#getRadius()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetRadius()
+        {
+            return IExecuteWithSignature<float>("getRadius", "()F");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Outline.html#offset(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -110,10 +112,18 @@ namespace Android.Graphics
             IExecuteWithSignature("set", "(Landroid/graphics/Outline;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/Outline.html#setAlpha(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetAlpha(float arg0)
+        {
+            IExecuteWithSignature("setAlpha", "(F)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/Outline.html#setConvexPath(android.graphics.Path)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Graphics.Path"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetConvexPath(Android.Graphics.Path arg0)
         {
             IExecuteWithSignature("setConvexPath", "(Landroid/graphics/Path;)V", arg0);

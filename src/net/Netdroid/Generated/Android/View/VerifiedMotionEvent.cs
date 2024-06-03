@@ -52,46 +52,44 @@ namespace Android.View
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/VerifiedMotionEvent.html#getActionMasked()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/VerifiedMotionEvent.html#getRawX()"/>
         /// </summary>
-        public int ActionMasked
+        /// <returns><see cref="float"/></returns>
+        public float GetRawX()
         {
-            get { return IExecuteWithSignature<int>("getActionMasked", "()I"); }
+            return IExecuteWithSignature<float>("getRawX", "()F");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/VerifiedMotionEvent.html#getButtonState()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/VerifiedMotionEvent.html#getRawY()"/>
         /// </summary>
-        public int ButtonState
+        /// <returns><see cref="float"/></returns>
+        public float GetRawY()
         {
-            get { return IExecuteWithSignature<int>("getButtonState", "()I"); }
+            return IExecuteWithSignature<float>("getRawY", "()F");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/VerifiedMotionEvent.html#getDownTimeNanos()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/VerifiedMotionEvent.html#getActionMasked()"/>
         /// </summary>
-        public long DownTimeNanos
+        /// <returns><see cref="int"/></returns>
+        public int GetActionMasked()
         {
-            get { return IExecuteWithSignature<long>("getDownTimeNanos", "()J"); }
+            return IExecuteWithSignature<int>("getActionMasked", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/VerifiedMotionEvent.html#getMetaState()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/VerifiedMotionEvent.html#getButtonState()"/>
         /// </summary>
-        public int MetaState
+        /// <returns><see cref="int"/></returns>
+        public int GetButtonState()
         {
-            get { return IExecuteWithSignature<int>("getMetaState", "()I"); }
+            return IExecuteWithSignature<int>("getButtonState", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/VerifiedMotionEvent.html#getRawX()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/VerifiedMotionEvent.html#getMetaState()"/>
         /// </summary>
-        public float RawX
+        /// <returns><see cref="int"/></returns>
+        public int GetMetaState()
         {
-            get { return IExecuteWithSignature<float>("getRawX", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/VerifiedMotionEvent.html#getRawY()"/> 
-        /// </summary>
-        public float RawY
-        {
-            get { return IExecuteWithSignature<float>("getRawY", "()F"); }
+            return IExecuteWithSignature<int>("getMetaState", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/VerifiedMotionEvent.html#getFlag(int)"/>
@@ -101,6 +99,14 @@ namespace Android.View
         public Java.Lang.Boolean GetFlag(int arg0)
         {
             return IExecuteWithSignature<Java.Lang.Boolean>("getFlag", "(I)Ljava/lang/Boolean;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/VerifiedMotionEvent.html#getDownTimeNanos()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetDownTimeNanos()
+        {
+            return IExecuteWithSignature<long>("getDownTimeNanos", "()J");
         }
 
         #endregion

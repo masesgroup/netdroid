@@ -46,18 +46,12 @@ namespace Android.Se.Omapi
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/se/omapi/Channel.html#getSelectResponse()"/> 
+        /// <see href="https://developer.android.com/reference/android/se/omapi/Channel.html#getSession()"/>
         /// </summary>
-        public byte[] SelectResponse
+        /// <returns><see cref="Android.Se.Omapi.Session"/></returns>
+        public Android.Se.Omapi.Session GetSession()
         {
-            get { return IExecuteWithSignatureArray<byte>("getSelectResponse", "()[B"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/se/omapi/Channel.html#getSession()"/> 
-        /// </summary>
-        public Android.Se.Omapi.Session Session
-        {
-            get { return IExecuteWithSignature<Android.Se.Omapi.Session>("getSession", "()Landroid/se/omapi/Session;"); }
+            return IExecuteWithSignature<Android.Se.Omapi.Session>("getSession", "()Landroid/se/omapi/Session;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/se/omapi/Channel.html#isBasicChannel()"/>
@@ -83,6 +77,14 @@ namespace Android.Se.Omapi
         public bool SelectNext()
         {
             return IExecuteWithSignature<bool>("selectNext", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/se/omapi/Channel.html#getSelectResponse()"/>
+        /// </summary>
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetSelectResponse()
+        {
+            return IExecuteWithSignatureArray<byte>("getSelectResponse", "()[B");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/se/omapi/Channel.html#transmit(byte[])"/>

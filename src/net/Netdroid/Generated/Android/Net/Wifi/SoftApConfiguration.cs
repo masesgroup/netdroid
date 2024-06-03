@@ -88,40 +88,20 @@ namespace Android.Net.Wifi
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/SoftApConfiguration.html#getBssid()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/wifi/SoftApConfiguration.html#getBssid()"/>
         /// </summary>
-        public Android.Net.MacAddress Bssid
+        /// <returns><see cref="Android.Net.MacAddress"/></returns>
+        public Android.Net.MacAddress GetBssid()
         {
-            get { return IExecuteWithSignature<Android.Net.MacAddress>("getBssid", "()Landroid/net/MacAddress;"); }
+            return IExecuteWithSignature<Android.Net.MacAddress>("getBssid", "()Landroid/net/MacAddress;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/SoftApConfiguration.html#getPassphrase()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/wifi/SoftApConfiguration.html#getWifiSsid()"/>
         /// </summary>
-        public Java.Lang.String Passphrase
+        /// <returns><see cref="Android.Net.Wifi.WifiSsid"/></returns>
+        public Android.Net.Wifi.WifiSsid GetWifiSsid()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPassphrase", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/SoftApConfiguration.html#getSecurityType()"/> 
-        /// </summary>
-        public int SecurityType
-        {
-            get { return IExecuteWithSignature<int>("getSecurityType", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/SoftApConfiguration.html#getSsid()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Java.Lang.String Ssid
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSsid", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/SoftApConfiguration.html#getWifiSsid()"/> 
-        /// </summary>
-        public Android.Net.Wifi.WifiSsid WifiSsid
-        {
-            get { return IExecuteWithSignature<Android.Net.Wifi.WifiSsid>("getWifiSsid", "()Landroid/net/wifi/WifiSsid;"); }
+            return IExecuteWithSignature<Android.Net.Wifi.WifiSsid>("getWifiSsid", "()Landroid/net/wifi/WifiSsid;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/SoftApConfiguration.html#isHiddenSsid()"/>
@@ -138,6 +118,31 @@ namespace Android.Net.Wifi
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/SoftApConfiguration.html#getSecurityType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSecurityType()
+        {
+            return IExecuteWithSignature<int>("getSecurityType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/SoftApConfiguration.html#getPassphrase()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPassphrase()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPassphrase", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/SoftApConfiguration.html#getSsid()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        [global::System.Obsolete()]
+        public Java.Lang.String GetSsid()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getSsid", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/SoftApConfiguration.html#writeToParcel(android.os.Parcel,int)"/>

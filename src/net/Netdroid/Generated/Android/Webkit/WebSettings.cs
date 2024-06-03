@@ -40,21 +40,21 @@ namespace Android.Webkit
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#FORCE_DARK_AUTO"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int FORCE_DARK_AUTO { get { if (!_FORCE_DARK_AUTOReady) { _FORCE_DARK_AUTOContent = SGetField<int>(LocalBridgeClazz, "FORCE_DARK_AUTO"); _FORCE_DARK_AUTOReady = true; } return _FORCE_DARK_AUTOContent; } }
         private static int _FORCE_DARK_AUTOContent = default;
         private static bool _FORCE_DARK_AUTOReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#FORCE_DARK_OFF"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int FORCE_DARK_OFF { get { if (!_FORCE_DARK_OFFReady) { _FORCE_DARK_OFFContent = SGetField<int>(LocalBridgeClazz, "FORCE_DARK_OFF"); _FORCE_DARK_OFFReady = true; } return _FORCE_DARK_OFFContent; } }
         private static int _FORCE_DARK_OFFContent = default;
         private static bool _FORCE_DARK_OFFReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#FORCE_DARK_ON"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int FORCE_DARK_ON { get { if (!_FORCE_DARK_ONReady) { _FORCE_DARK_ONContent = SGetField<int>(LocalBridgeClazz, "FORCE_DARK_ON"); _FORCE_DARK_ONReady = true; } return _FORCE_DARK_ONContent; } }
         private static int _FORCE_DARK_ONContent = default;
         private static bool _FORCE_DARK_ONReady = false; // this is used because in case of generics 
@@ -85,7 +85,7 @@ namespace Android.Webkit
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#LOAD_NORMAL"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int LOAD_NORMAL { get { if (!_LOAD_NORMALReady) { _LOAD_NORMALContent = SGetField<int>(LocalBridgeClazz, "LOAD_NORMAL"); _LOAD_NORMALReady = true; } return _LOAD_NORMALContent; } }
         private static int _LOAD_NORMALContent = default;
         private static bool _LOAD_NORMALReady = false; // this is used because in case of generics 
@@ -149,324 +149,210 @@ namespace Android.Webkit
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getAllowContentAccess()"/> <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setAllowContentAccess(boolean)"/>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getLayoutAlgorithm()"/>
         /// </summary>
-        public bool AllowContentAccess
+        /// <returns><see cref="Android.Webkit.WebSettings.LayoutAlgorithm"/></returns>
+        public Android.Webkit.WebSettings.LayoutAlgorithm GetLayoutAlgorithm()
         {
-            get { return IExecuteWithSignature<bool>("getAllowContentAccess", "()Z"); } set { IExecuteWithSignature("setAllowContentAccess", "(Z)V", value); }
+            return IExecuteWithSignature<Android.Webkit.WebSettings.LayoutAlgorithm>("getLayoutAlgorithm", "()Landroid/webkit/WebSettings$LayoutAlgorithm;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getAllowFileAccess()"/> <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setAllowFileAccess(boolean)"/>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getPluginState()"/>
         /// </summary>
-        public bool AllowFileAccess
+        /// <returns><see cref="Android.Webkit.WebSettings.PluginState"/></returns>
+        [global::System.Obsolete()]
+        public Android.Webkit.WebSettings.PluginState GetPluginState()
         {
-            get { return IExecuteWithSignature<bool>("getAllowFileAccess", "()Z"); } set { IExecuteWithSignature("setAllowFileAccess", "(Z)V", value); }
+            return IExecuteWithSignature<Android.Webkit.WebSettings.PluginState>("getPluginState", "()Landroid/webkit/WebSettings$PluginState;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getAllowFileAccessFromFileURLs()"/> <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setAllowFileAccessFromFileURLs(boolean)"/>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getDefaultZoom()"/>
         /// </summary>
-        [System.Obsolete()]
-        public bool AllowFileAccessFromFileURLs
+        /// <returns><see cref="Android.Webkit.WebSettings.ZoomDensity"/></returns>
+        [global::System.Obsolete()]
+        public Android.Webkit.WebSettings.ZoomDensity GetDefaultZoom()
         {
-            get { return IExecuteWithSignature<bool>("getAllowFileAccessFromFileURLs", "()Z"); } set { IExecuteWithSignature("setAllowFileAccessFromFileURLs", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getAllowUniversalAccessFromFileURLs()"/> <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setAllowUniversalAccessFromFileURLs(boolean)"/>
-        /// </summary>
-        [System.Obsolete()]
-        public bool AllowUniversalAccessFromFileURLs
-        {
-            get { return IExecuteWithSignature<bool>("getAllowUniversalAccessFromFileURLs", "()Z"); } set { IExecuteWithSignature("setAllowUniversalAccessFromFileURLs", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getBlockNetworkImage()"/> <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setBlockNetworkImage(boolean)"/>
-        /// </summary>
-        public bool BlockNetworkImage
-        {
-            get { return IExecuteWithSignature<bool>("getBlockNetworkImage", "()Z"); } set { IExecuteWithSignature("setBlockNetworkImage", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getBlockNetworkLoads()"/> <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setBlockNetworkLoads(boolean)"/>
-        /// </summary>
-        public bool BlockNetworkLoads
-        {
-            get { return IExecuteWithSignature<bool>("getBlockNetworkLoads", "()Z"); } set { IExecuteWithSignature("setBlockNetworkLoads", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getBuiltInZoomControls()"/> <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setBuiltInZoomControls(boolean)"/>
-        /// </summary>
-        public bool BuiltInZoomControls
-        {
-            get { return IExecuteWithSignature<bool>("getBuiltInZoomControls", "()Z"); } set { IExecuteWithSignature("setBuiltInZoomControls", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getCacheMode()"/> <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setCacheMode(int)"/>
-        /// </summary>
-        public int CacheMode
-        {
-            get { return IExecuteWithSignature<int>("getCacheMode", "()I"); } set { IExecuteWithSignature("setCacheMode", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getCursiveFontFamily()"/> <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setCursiveFontFamily(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String CursiveFontFamily
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCursiveFontFamily", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setCursiveFontFamily", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getDatabaseEnabled()"/> <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setDatabaseEnabled(boolean)"/>
-        /// </summary>
-        public bool DatabaseEnabled
-        {
-            get { return IExecuteWithSignature<bool>("getDatabaseEnabled", "()Z"); } set { IExecuteWithSignature("setDatabaseEnabled", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getDatabasePath()"/> <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setDatabasePath(java.lang.String)"/>
-        /// </summary>
-        [System.Obsolete()]
-        public Java.Lang.String DatabasePath
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDatabasePath", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setDatabasePath", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getDefaultFixedFontSize()"/> <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setDefaultFixedFontSize(int)"/>
-        /// </summary>
-        public int DefaultFixedFontSize
-        {
-            get { return IExecuteWithSignature<int>("getDefaultFixedFontSize", "()I"); } set { IExecuteWithSignature("setDefaultFixedFontSize", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getDefaultFontSize()"/> <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setDefaultFontSize(int)"/>
-        /// </summary>
-        public int DefaultFontSize
-        {
-            get { return IExecuteWithSignature<int>("getDefaultFontSize", "()I"); } set { IExecuteWithSignature("setDefaultFontSize", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getDefaultTextEncodingName()"/> <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setDefaultTextEncodingName(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String DefaultTextEncodingName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDefaultTextEncodingName", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setDefaultTextEncodingName", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getDefaultZoom()"/> <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setDefaultZoom(android.webkit.WebSettings.ZoomDensity)"/>
-        /// </summary>
-        [System.Obsolete()]
-        public Android.Webkit.WebSettings.ZoomDensity DefaultZoom
-        {
-            get { return IExecuteWithSignature<Android.Webkit.WebSettings.ZoomDensity>("getDefaultZoom", "()Landroid/webkit/WebSettings$ZoomDensity;"); } set { IExecuteWithSignature("setDefaultZoom", "(Landroid/webkit/WebSettings$ZoomDensity;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getDisabledActionModeMenuItems()"/> <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setDisabledActionModeMenuItems(int)"/>
-        /// </summary>
-        public int DisabledActionModeMenuItems
-        {
-            get { return IExecuteWithSignature<int>("getDisabledActionModeMenuItems", "()I"); } set { IExecuteWithSignature("setDisabledActionModeMenuItems", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getDisplayZoomControls()"/> <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setDisplayZoomControls(boolean)"/>
-        /// </summary>
-        public bool DisplayZoomControls
-        {
-            get { return IExecuteWithSignature<bool>("getDisplayZoomControls", "()Z"); } set { IExecuteWithSignature("setDisplayZoomControls", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getDomStorageEnabled()"/> <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setDomStorageEnabled(boolean)"/>
-        /// </summary>
-        public bool DomStorageEnabled
-        {
-            get { return IExecuteWithSignature<bool>("getDomStorageEnabled", "()Z"); } set { IExecuteWithSignature("setDomStorageEnabled", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getFantasyFontFamily()"/> <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setFantasyFontFamily(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String FantasyFontFamily
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getFantasyFontFamily", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setFantasyFontFamily", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getFixedFontFamily()"/> <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setFixedFontFamily(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String FixedFontFamily
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getFixedFontFamily", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setFixedFontFamily", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getForceDark()"/> <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setForceDark(int)"/>
-        /// </summary>
-        [System.Obsolete()]
-        public int ForceDark
-        {
-            get { return IExecuteWithSignature<int>("getForceDark", "()I"); } set { IExecuteWithSignature("setForceDark", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getLayoutAlgorithm()"/> 
-        /// </summary>
-        public Android.Webkit.WebSettings.LayoutAlgorithm GetLayoutAlgorithm
-        {
-            get { return IExecuteWithSignature<Android.Webkit.WebSettings.LayoutAlgorithm>("getLayoutAlgorithm", "()Landroid/webkit/WebSettings$LayoutAlgorithm;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getPluginState()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Android.Webkit.WebSettings.PluginState GetPluginState
-        {
-            get { return IExecuteWithSignature<Android.Webkit.WebSettings.PluginState>("getPluginState", "()Landroid/webkit/WebSettings$PluginState;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getTextSize()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Android.Webkit.WebSettings.TextSize GetTextSize
-        {
-            get { return IExecuteWithSignature<Android.Webkit.WebSettings.TextSize>("getTextSize", "()Landroid/webkit/WebSettings$TextSize;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getJavaScriptCanOpenWindowsAutomatically()"/> <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setJavaScriptCanOpenWindowsAutomatically(boolean)"/>
-        /// </summary>
-        public bool JavaScriptCanOpenWindowsAutomatically
-        {
-            get { return IExecuteWithSignature<bool>("getJavaScriptCanOpenWindowsAutomatically", "()Z"); } set { IExecuteWithSignature("setJavaScriptCanOpenWindowsAutomatically", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getJavaScriptEnabled()"/> <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setJavaScriptEnabled(boolean)"/>
-        /// </summary>
-        public bool JavaScriptEnabled
-        {
-            get { return IExecuteWithSignature<bool>("getJavaScriptEnabled", "()Z"); } set { IExecuteWithSignature("setJavaScriptEnabled", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getLightTouchEnabled()"/> <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setLightTouchEnabled(boolean)"/>
-        /// </summary>
-        [System.Obsolete()]
-        public bool LightTouchEnabled
-        {
-            get { return IExecuteWithSignature<bool>("getLightTouchEnabled", "()Z"); } set { IExecuteWithSignature("setLightTouchEnabled", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getLoadsImagesAutomatically()"/> <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setLoadsImagesAutomatically(boolean)"/>
-        /// </summary>
-        public bool LoadsImagesAutomatically
-        {
-            get { return IExecuteWithSignature<bool>("getLoadsImagesAutomatically", "()Z"); } set { IExecuteWithSignature("setLoadsImagesAutomatically", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getLoadWithOverviewMode()"/> <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setLoadWithOverviewMode(boolean)"/>
-        /// </summary>
-        public bool LoadWithOverviewMode
-        {
-            get { return IExecuteWithSignature<bool>("getLoadWithOverviewMode", "()Z"); } set { IExecuteWithSignature("setLoadWithOverviewMode", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getMediaPlaybackRequiresUserGesture()"/> <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setMediaPlaybackRequiresUserGesture(boolean)"/>
-        /// </summary>
-        public bool MediaPlaybackRequiresUserGesture
-        {
-            get { return IExecuteWithSignature<bool>("getMediaPlaybackRequiresUserGesture", "()Z"); } set { IExecuteWithSignature("setMediaPlaybackRequiresUserGesture", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getMinimumFontSize()"/> <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setMinimumFontSize(int)"/>
-        /// </summary>
-        public int MinimumFontSize
-        {
-            get { return IExecuteWithSignature<int>("getMinimumFontSize", "()I"); } set { IExecuteWithSignature("setMinimumFontSize", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getMinimumLogicalFontSize()"/> <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setMinimumLogicalFontSize(int)"/>
-        /// </summary>
-        public int MinimumLogicalFontSize
-        {
-            get { return IExecuteWithSignature<int>("getMinimumLogicalFontSize", "()I"); } set { IExecuteWithSignature("setMinimumLogicalFontSize", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getMixedContentMode()"/> <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setMixedContentMode(int)"/>
-        /// </summary>
-        public int MixedContentMode
-        {
-            get { return IExecuteWithSignature<int>("getMixedContentMode", "()I"); } set { IExecuteWithSignature("setMixedContentMode", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getOffscreenPreRaster()"/> <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setOffscreenPreRaster(boolean)"/>
-        /// </summary>
-        public bool OffscreenPreRaster
-        {
-            get { return IExecuteWithSignature<bool>("getOffscreenPreRaster", "()Z"); } set { IExecuteWithSignature("setOffscreenPreRaster", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getSafeBrowsingEnabled()"/> <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setSafeBrowsingEnabled(boolean)"/>
-        /// </summary>
-        public bool SafeBrowsingEnabled
-        {
-            get { return IExecuteWithSignature<bool>("getSafeBrowsingEnabled", "()Z"); } set { IExecuteWithSignature("setSafeBrowsingEnabled", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getSansSerifFontFamily()"/> <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setSansSerifFontFamily(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String SansSerifFontFamily
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSansSerifFontFamily", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setSansSerifFontFamily", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getSaveFormData()"/> <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setSaveFormData(boolean)"/>
-        /// </summary>
-        [System.Obsolete()]
-        public bool SaveFormData
-        {
-            get { return IExecuteWithSignature<bool>("getSaveFormData", "()Z"); } set { IExecuteWithSignature("setSaveFormData", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getSavePassword()"/> <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setSavePassword(boolean)"/>
-        /// </summary>
-        [System.Obsolete()]
-        public bool SavePassword
-        {
-            get { return IExecuteWithSignature<bool>("getSavePassword", "()Z"); } set { IExecuteWithSignature("setSavePassword", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getSerifFontFamily()"/> <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setSerifFontFamily(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String SerifFontFamily
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSerifFontFamily", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setSerifFontFamily", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getStandardFontFamily()"/> <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setStandardFontFamily(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String StandardFontFamily
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getStandardFontFamily", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setStandardFontFamily", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getTextZoom()"/> <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setTextZoom(int)"/>
-        /// </summary>
-        public int TextZoom
-        {
-            get { return IExecuteWithSignature<int>("getTextZoom", "()I"); } set { IExecuteWithSignature("setTextZoom", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getUserAgentString()"/> <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setUserAgentString(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String UserAgentString
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getUserAgentString", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setUserAgentString", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getUseWideViewPort()"/> <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setUseWideViewPort(boolean)"/>
-        /// </summary>
-        public bool UseWideViewPort
-        {
-            get { return IExecuteWithSignature<bool>("getUseWideViewPort", "()Z"); } set { IExecuteWithSignature("setUseWideViewPort", "(Z)V", value); }
+            return IExecuteWithSignature<Android.Webkit.WebSettings.ZoomDensity>("getDefaultZoom", "()Landroid/webkit/WebSettings$ZoomDensity;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#enableSmoothTransition()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool EnableSmoothTransition()
         {
             return IExecuteWithSignature<bool>("enableSmoothTransition", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getAllowContentAccess()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetAllowContentAccess()
+        {
+            return IExecuteWithSignature<bool>("getAllowContentAccess", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getAllowFileAccess()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetAllowFileAccess()
+        {
+            return IExecuteWithSignature<bool>("getAllowFileAccess", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getAllowFileAccessFromFileURLs()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetAllowFileAccessFromFileURLs()
+        {
+            return IExecuteWithSignature<bool>("getAllowFileAccessFromFileURLs", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getAllowUniversalAccessFromFileURLs()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetAllowUniversalAccessFromFileURLs()
+        {
+            return IExecuteWithSignature<bool>("getAllowUniversalAccessFromFileURLs", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getBlockNetworkImage()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetBlockNetworkImage()
+        {
+            return IExecuteWithSignature<bool>("getBlockNetworkImage", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getBlockNetworkLoads()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetBlockNetworkLoads()
+        {
+            return IExecuteWithSignature<bool>("getBlockNetworkLoads", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getBuiltInZoomControls()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetBuiltInZoomControls()
+        {
+            return IExecuteWithSignature<bool>("getBuiltInZoomControls", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getDatabaseEnabled()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetDatabaseEnabled()
+        {
+            return IExecuteWithSignature<bool>("getDatabaseEnabled", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getDisplayZoomControls()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetDisplayZoomControls()
+        {
+            return IExecuteWithSignature<bool>("getDisplayZoomControls", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getDomStorageEnabled()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetDomStorageEnabled()
+        {
+            return IExecuteWithSignature<bool>("getDomStorageEnabled", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getJavaScriptCanOpenWindowsAutomatically()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetJavaScriptCanOpenWindowsAutomatically()
+        {
+            return IExecuteWithSignature<bool>("getJavaScriptCanOpenWindowsAutomatically", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getJavaScriptEnabled()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetJavaScriptEnabled()
+        {
+            return IExecuteWithSignature<bool>("getJavaScriptEnabled", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getLightTouchEnabled()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        [global::System.Obsolete()]
+        public bool GetLightTouchEnabled()
+        {
+            return IExecuteWithSignature<bool>("getLightTouchEnabled", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getLoadsImagesAutomatically()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetLoadsImagesAutomatically()
+        {
+            return IExecuteWithSignature<bool>("getLoadsImagesAutomatically", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getLoadWithOverviewMode()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetLoadWithOverviewMode()
+        {
+            return IExecuteWithSignature<bool>("getLoadWithOverviewMode", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getMediaPlaybackRequiresUserGesture()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetMediaPlaybackRequiresUserGesture()
+        {
+            return IExecuteWithSignature<bool>("getMediaPlaybackRequiresUserGesture", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getOffscreenPreRaster()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetOffscreenPreRaster()
+        {
+            return IExecuteWithSignature<bool>("getOffscreenPreRaster", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getSafeBrowsingEnabled()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetSafeBrowsingEnabled()
+        {
+            return IExecuteWithSignature<bool>("getSafeBrowsingEnabled", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getSaveFormData()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        [global::System.Obsolete()]
+        public bool GetSaveFormData()
+        {
+            return IExecuteWithSignature<bool>("getSaveFormData", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getSavePassword()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        [global::System.Obsolete()]
+        public bool GetSavePassword()
+        {
+            return IExecuteWithSignature<bool>("getSavePassword", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getUseWideViewPort()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetUseWideViewPort()
+        {
+            return IExecuteWithSignature<bool>("getUseWideViewPort", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#supportMultipleWindows()"/>
@@ -485,19 +371,320 @@ namespace Android.Webkit
             return IExecuteWithSignature<bool>("supportZoom", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getCacheMode()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCacheMode()
+        {
+            return IExecuteWithSignature<int>("getCacheMode", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getDefaultFixedFontSize()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDefaultFixedFontSize()
+        {
+            return IExecuteWithSignature<int>("getDefaultFixedFontSize", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getDefaultFontSize()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDefaultFontSize()
+        {
+            return IExecuteWithSignature<int>("getDefaultFontSize", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getDisabledActionModeMenuItems()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDisabledActionModeMenuItems()
+        {
+            return IExecuteWithSignature<int>("getDisabledActionModeMenuItems", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getMinimumFontSize()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMinimumFontSize()
+        {
+            return IExecuteWithSignature<int>("getMinimumFontSize", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getMinimumLogicalFontSize()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMinimumLogicalFontSize()
+        {
+            return IExecuteWithSignature<int>("getMinimumLogicalFontSize", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getMixedContentMode()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMixedContentMode()
+        {
+            return IExecuteWithSignature<int>("getMixedContentMode", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getTextZoom()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTextZoom()
+        {
+            return IExecuteWithSignature<int>("getTextZoom", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getCursiveFontFamily()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetCursiveFontFamily()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getCursiveFontFamily", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getDatabasePath()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        [global::System.Obsolete()]
+        public Java.Lang.String GetDatabasePath()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getDatabasePath", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getDefaultTextEncodingName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDefaultTextEncodingName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getDefaultTextEncodingName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getFantasyFontFamily()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetFantasyFontFamily()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getFantasyFontFamily", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getFixedFontFamily()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetFixedFontFamily()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getFixedFontFamily", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getSansSerifFontFamily()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSansSerifFontFamily()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getSansSerifFontFamily", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getSerifFontFamily()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSerifFontFamily()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getSerifFontFamily", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getStandardFontFamily()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetStandardFontFamily()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getStandardFontFamily", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getUserAgentString()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetUserAgentString()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getUserAgentString", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setAllowContentAccess(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetAllowContentAccess(bool arg0)
+        {
+            IExecuteWithSignature("setAllowContentAccess", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setAllowFileAccess(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetAllowFileAccess(bool arg0)
+        {
+            IExecuteWithSignature("setAllowFileAccess", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setAllowFileAccessFromFileURLs(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        [global::System.Obsolete()]
+        public void SetAllowFileAccessFromFileURLs(bool arg0)
+        {
+            IExecuteWithSignature("setAllowFileAccessFromFileURLs", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setAllowUniversalAccessFromFileURLs(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        [global::System.Obsolete()]
+        public void SetAllowUniversalAccessFromFileURLs(bool arg0)
+        {
+            IExecuteWithSignature("setAllowUniversalAccessFromFileURLs", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setBlockNetworkImage(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetBlockNetworkImage(bool arg0)
+        {
+            IExecuteWithSignature("setBlockNetworkImage", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setBlockNetworkLoads(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetBlockNetworkLoads(bool arg0)
+        {
+            IExecuteWithSignature("setBlockNetworkLoads", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setBuiltInZoomControls(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetBuiltInZoomControls(bool arg0)
+        {
+            IExecuteWithSignature("setBuiltInZoomControls", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setCacheMode(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetCacheMode(int arg0)
+        {
+            IExecuteWithSignature("setCacheMode", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setCursiveFontFamily(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetCursiveFontFamily(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setCursiveFontFamily", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setDatabaseEnabled(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetDatabaseEnabled(bool arg0)
+        {
+            IExecuteWithSignature("setDatabaseEnabled", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setDatabasePath(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        [global::System.Obsolete()]
+        public void SetDatabasePath(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setDatabasePath", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setDefaultFixedFontSize(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetDefaultFixedFontSize(int arg0)
+        {
+            IExecuteWithSignature("setDefaultFixedFontSize", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setDefaultFontSize(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetDefaultFontSize(int arg0)
+        {
+            IExecuteWithSignature("setDefaultFontSize", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setDefaultTextEncodingName(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetDefaultTextEncodingName(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setDefaultTextEncodingName", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setDefaultZoom(android.webkit.WebSettings.ZoomDensity)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Webkit.WebSettings.ZoomDensity"/></param>
+        [global::System.Obsolete()]
+        public void SetDefaultZoom(Android.Webkit.WebSettings.ZoomDensity arg0)
+        {
+            IExecuteWithSignature("setDefaultZoom", "(Landroid/webkit/WebSettings$ZoomDensity;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setDisabledActionModeMenuItems(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetDisabledActionModeMenuItems(int arg0)
+        {
+            IExecuteWithSignature("setDisabledActionModeMenuItems", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setDisplayZoomControls(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetDisplayZoomControls(bool arg0)
+        {
+            IExecuteWithSignature("setDisplayZoomControls", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setDomStorageEnabled(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetDomStorageEnabled(bool arg0)
+        {
+            IExecuteWithSignature("setDomStorageEnabled", "(Z)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setEnableSmoothTransition(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetEnableSmoothTransition(bool arg0)
         {
             IExecuteWithSignature("setEnableSmoothTransition", "(Z)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setFantasyFontFamily(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetFantasyFontFamily(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setFantasyFontFamily", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setFixedFontFamily(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetFixedFontFamily(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setFixedFontFamily", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setGeolocationDatabasePath(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetGeolocationDatabasePath(Java.Lang.String arg0)
         {
             IExecuteWithSignature("setGeolocationDatabasePath", "(Ljava/lang/String;)V", arg0);
@@ -511,12 +698,85 @@ namespace Android.Webkit
             IExecuteWithSignature("setGeolocationEnabled", "(Z)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setJavaScriptCanOpenWindowsAutomatically(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetJavaScriptCanOpenWindowsAutomatically(bool arg0)
+        {
+            IExecuteWithSignature("setJavaScriptCanOpenWindowsAutomatically", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setJavaScriptEnabled(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetJavaScriptEnabled(bool arg0)
+        {
+            IExecuteWithSignature("setJavaScriptEnabled", "(Z)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setLayoutAlgorithm(android.webkit.WebSettings.LayoutAlgorithm)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Webkit.WebSettings.LayoutAlgorithm"/></param>
         public void SetLayoutAlgorithm(Android.Webkit.WebSettings.LayoutAlgorithm arg0)
         {
             IExecuteWithSignature("setLayoutAlgorithm", "(Landroid/webkit/WebSettings$LayoutAlgorithm;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setLightTouchEnabled(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        [global::System.Obsolete()]
+        public void SetLightTouchEnabled(bool arg0)
+        {
+            IExecuteWithSignature("setLightTouchEnabled", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setLoadsImagesAutomatically(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetLoadsImagesAutomatically(bool arg0)
+        {
+            IExecuteWithSignature("setLoadsImagesAutomatically", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setLoadWithOverviewMode(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetLoadWithOverviewMode(bool arg0)
+        {
+            IExecuteWithSignature("setLoadWithOverviewMode", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setMediaPlaybackRequiresUserGesture(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetMediaPlaybackRequiresUserGesture(bool arg0)
+        {
+            IExecuteWithSignature("setMediaPlaybackRequiresUserGesture", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setMinimumFontSize(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetMinimumFontSize(int arg0)
+        {
+            IExecuteWithSignature("setMinimumFontSize", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setMinimumLogicalFontSize(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetMinimumLogicalFontSize(int arg0)
+        {
+            IExecuteWithSignature("setMinimumLogicalFontSize", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setMixedContentMode(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetMixedContentMode(int arg0)
+        {
+            IExecuteWithSignature("setMixedContentMode", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setNeedInitialFocus(boolean)"/>
@@ -527,10 +787,18 @@ namespace Android.Webkit
             IExecuteWithSignature("setNeedInitialFocus", "(Z)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setOffscreenPreRaster(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetOffscreenPreRaster(bool arg0)
+        {
+            IExecuteWithSignature("setOffscreenPreRaster", "(Z)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setPluginState(android.webkit.WebSettings.PluginState)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Webkit.WebSettings.PluginState"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetPluginState(Android.Webkit.WebSettings.PluginState arg0)
         {
             IExecuteWithSignature("setPluginState", "(Landroid/webkit/WebSettings$PluginState;)V", arg0);
@@ -539,10 +807,60 @@ namespace Android.Webkit
         /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setRenderPriority(android.webkit.WebSettings.RenderPriority)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Webkit.WebSettings.RenderPriority"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetRenderPriority(Android.Webkit.WebSettings.RenderPriority arg0)
         {
             IExecuteWithSignature("setRenderPriority", "(Landroid/webkit/WebSettings$RenderPriority;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setSafeBrowsingEnabled(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetSafeBrowsingEnabled(bool arg0)
+        {
+            IExecuteWithSignature("setSafeBrowsingEnabled", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setSansSerifFontFamily(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetSansSerifFontFamily(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setSansSerifFontFamily", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setSaveFormData(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        [global::System.Obsolete()]
+        public void SetSaveFormData(bool arg0)
+        {
+            IExecuteWithSignature("setSaveFormData", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setSavePassword(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        [global::System.Obsolete()]
+        public void SetSavePassword(bool arg0)
+        {
+            IExecuteWithSignature("setSavePassword", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setSerifFontFamily(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetSerifFontFamily(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setSerifFontFamily", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setStandardFontFamily(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetStandardFontFamily(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setStandardFontFamily", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setSupportMultipleWindows(boolean)"/>
@@ -561,6 +879,30 @@ namespace Android.Webkit
             IExecuteWithSignature("setSupportZoom", "(Z)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setTextZoom(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetTextZoom(int arg0)
+        {
+            IExecuteWithSignature("setTextZoom", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setUserAgentString(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetUserAgentString(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setUserAgentString", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setUseWideViewPort(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetUseWideViewPort(bool arg0)
+        {
+            IExecuteWithSignature("setUseWideViewPort", "(Z)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#isAlgorithmicDarkeningAllowed()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -569,10 +911,28 @@ namespace Android.Webkit
             return IExecuteWithSignature<bool>("isAlgorithmicDarkeningAllowed", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getForceDark()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetForceDark()
+        {
+            return IExecuteWithSignature<int>("getForceDark", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#getTextSize()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Webkit.WebSettings.TextSize"/></returns>
+        [global::System.Obsolete()]
+        public Android.Webkit.WebSettings.TextSize GetTextSize()
+        {
+            return IExecuteWithSignature<Android.Webkit.WebSettings.TextSize>("getTextSize", "()Landroid/webkit/WebSettings$TextSize;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setTextSize(android.webkit.WebSettings.TextSize)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Webkit.WebSettings.TextSize"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetTextSize(Android.Webkit.WebSettings.TextSize arg0)
         {
             IExecuteWithSignature("setTextSize", "(Landroid/webkit/WebSettings$TextSize;)V", arg0);
@@ -584,6 +944,15 @@ namespace Android.Webkit
         public void SetAlgorithmicDarkeningAllowed(bool arg0)
         {
             IExecuteWithSignature("setAlgorithmicDarkeningAllowed", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.html#setForceDark(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        [global::System.Obsolete()]
+        public void SetForceDark(int arg0)
+        {
+            IExecuteWithSignature("setForceDark", "(I)V", arg0);
         }
 
         #endregion
@@ -604,7 +973,7 @@ namespace Android.Webkit
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.LayoutAlgorithm.html#NARROW_COLUMNS"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Webkit.WebSettings.LayoutAlgorithm NARROW_COLUMNS { get { if (!_NARROW_COLUMNSReady) { _NARROW_COLUMNSContent = SGetField<Android.Webkit.WebSettings.LayoutAlgorithm>(LocalBridgeClazz, "NARROW_COLUMNS"); _NARROW_COLUMNSReady = true; } return _NARROW_COLUMNSContent; } }
             private static Android.Webkit.WebSettings.LayoutAlgorithm _NARROW_COLUMNSContent = default;
             private static bool _NARROW_COLUMNSReady = false; // this is used because in case of generics 
@@ -617,7 +986,7 @@ namespace Android.Webkit
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.LayoutAlgorithm.html#SINGLE_COLUMN"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Webkit.WebSettings.LayoutAlgorithm SINGLE_COLUMN { get { if (!_SINGLE_COLUMNReady) { _SINGLE_COLUMNContent = SGetField<Android.Webkit.WebSettings.LayoutAlgorithm>(LocalBridgeClazz, "SINGLE_COLUMN"); _SINGLE_COLUMNReady = true; } return _SINGLE_COLUMNContent; } }
             private static Android.Webkit.WebSettings.LayoutAlgorithm _SINGLE_COLUMNContent = default;
             private static bool _SINGLE_COLUMNReady = false; // this is used because in case of generics 
@@ -810,35 +1179,35 @@ namespace Android.Webkit
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.TextSize.html#LARGER"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Webkit.WebSettings.TextSize LARGER { get { if (!_LARGERReady) { _LARGERContent = SGetField<Android.Webkit.WebSettings.TextSize>(LocalBridgeClazz, "LARGER"); _LARGERReady = true; } return _LARGERContent; } }
             private static Android.Webkit.WebSettings.TextSize _LARGERContent = default;
             private static bool _LARGERReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.TextSize.html#LARGEST"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Webkit.WebSettings.TextSize LARGEST { get { if (!_LARGESTReady) { _LARGESTContent = SGetField<Android.Webkit.WebSettings.TextSize>(LocalBridgeClazz, "LARGEST"); _LARGESTReady = true; } return _LARGESTContent; } }
             private static Android.Webkit.WebSettings.TextSize _LARGESTContent = default;
             private static bool _LARGESTReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.TextSize.html#NORMAL"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Webkit.WebSettings.TextSize NORMAL { get { if (!_NORMALReady) { _NORMALContent = SGetField<Android.Webkit.WebSettings.TextSize>(LocalBridgeClazz, "NORMAL"); _NORMALReady = true; } return _NORMALContent; } }
             private static Android.Webkit.WebSettings.TextSize _NORMALContent = default;
             private static bool _NORMALReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.TextSize.html#SMALLER"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Webkit.WebSettings.TextSize SMALLER { get { if (!_SMALLERReady) { _SMALLERContent = SGetField<Android.Webkit.WebSettings.TextSize>(LocalBridgeClazz, "SMALLER"); _SMALLERReady = true; } return _SMALLERContent; } }
             private static Android.Webkit.WebSettings.TextSize _SMALLERContent = default;
             private static bool _SMALLERReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/webkit/WebSettings.TextSize.html#SMALLEST"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Webkit.WebSettings.TextSize SMALLEST { get { if (!_SMALLESTReady) { _SMALLESTContent = SGetField<Android.Webkit.WebSettings.TextSize>(LocalBridgeClazz, "SMALLEST"); _SMALLESTReady = true; } return _SMALLESTContent; } }
             private static Android.Webkit.WebSettings.TextSize _SMALLESTContent = default;
             private static bool _SMALLESTReady = false; // this is used because in case of generics 

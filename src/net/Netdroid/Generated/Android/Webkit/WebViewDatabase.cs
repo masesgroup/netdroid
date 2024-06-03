@@ -58,7 +58,7 @@ namespace Android.Webkit
         /// <see href="https://developer.android.com/reference/android/webkit/WebViewDatabase.html#hasFormData()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool HasFormData()
         {
             return IExecuteWithSignature<bool>("hasFormData", "()Z");
@@ -75,7 +75,7 @@ namespace Android.Webkit
         /// <see href="https://developer.android.com/reference/android/webkit/WebViewDatabase.html#hasUsernamePassword()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool HasUsernamePassword()
         {
             return IExecuteWithSignature<bool>("hasUsernamePassword", "()Z");
@@ -93,7 +93,7 @@ namespace Android.Webkit
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebViewDatabase.html#clearFormData()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ClearFormData()
         {
             IExecuteWithSignature("clearFormData", "()V");
@@ -108,7 +108,7 @@ namespace Android.Webkit
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebViewDatabase.html#clearUsernamePassword()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ClearUsernamePassword()
         {
             IExecuteWithSignature("clearUsernamePassword", "()V");

@@ -46,28 +46,7 @@ namespace Java.Lang.Reflect
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Method.html#getDefaultValue()"/> 
-        /// </summary>
-        public object DefaultValue
-        {
-            get { return IExecuteWithSignature("getDefaultValue", "()Ljava/lang/Object;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Method.html#getGenericReturnType()"/> 
-        /// </summary>
-        public Java.Lang.Reflect.Type GenericReturnType
-        {
-            get { return IExecuteWithSignature<Java.Lang.Reflect.Type>("getGenericReturnType", "()Ljava/lang/reflect/Type;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Method.html#getReturnType()"/> 
-        /// </summary>
-        public Java.Lang.Class ReturnType
-        {
-            get { return IExecuteWithSignature<Java.Lang.Class>("getReturnType", "()Ljava/lang/Class;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Method.html#isBridge()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Method.html#isBridge()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsBridge()
@@ -75,7 +54,7 @@ namespace Java.Lang.Reflect
             return IExecuteWithSignature<bool>("isBridge", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Method.html#isDefault()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Method.html#isDefault()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsDefault()
@@ -83,7 +62,23 @@ namespace Java.Lang.Reflect
             return IExecuteWithSignature<bool>("isDefault", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Method.html#invoke(java.lang.Object,java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Method.html#getReturnType()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Class"/></returns>
+        public Java.Lang.Class GetReturnType()
+        {
+            return IExecuteWithSignature<Java.Lang.Class>("getReturnType", "()Ljava/lang/Class;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Method.html#getDefaultValue()"/>
+        /// </summary>
+        /// <returns><see cref="object"/></returns>
+        public object GetDefaultValue()
+        {
+            return IExecuteWithSignature("getDefaultValue", "()Ljava/lang/Object;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Method.html#invoke(java.lang.Object,java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -94,6 +89,14 @@ namespace Java.Lang.Reflect
         public object Invoke(object arg0, params object[] arg1)
         {
             if (arg1.Length == 0) return IExecute("invoke", arg0); else return IExecute("invoke", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Method.html#getGenericReturnType()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Reflect.Type"/></returns>
+        public Java.Lang.Reflect.Type GetGenericReturnType()
+        {
+            return IExecuteWithSignature<Java.Lang.Reflect.Type>("getGenericReturnType", "()Ljava/lang/reflect/Type;");
         }
 
         #endregion

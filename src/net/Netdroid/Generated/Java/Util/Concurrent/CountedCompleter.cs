@@ -46,35 +46,14 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CountedCompleter.html#getCompleter()"/> 
-        /// </summary>
-        public Java.Util.Concurrent.CountedCompleter Completer
-        {
-            get { return IExecuteWithSignature<Java.Util.Concurrent.CountedCompleter>("getCompleter", "()Ljava/util/concurrent/CountedCompleter;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CountedCompleter.html#getPendingCount()"/> <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CountedCompleter.html#setPendingCount(int)"/>
-        /// </summary>
-        public int PendingCount
-        {
-            get { return IExecuteWithSignature<int>("getPendingCount", "()I"); } set { IExecuteWithSignature("setPendingCount", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CountedCompleter.html#getRoot()"/> 
-        /// </summary>
-        public Java.Util.Concurrent.CountedCompleter Root
-        {
-            get { return IExecuteWithSignature<Java.Util.Concurrent.CountedCompleter>("getRoot", "()Ljava/util/concurrent/CountedCompleter;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CountedCompleter.html#compute()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CountedCompleter.html#compute()"/>
         /// </summary>
         public void Compute()
         {
             IExecuteWithSignature("compute", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CountedCompleter.html#onExceptionalCompletion(java.lang.Throwable,java.util.concurrent.CountedCompleter)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CountedCompleter.html#onExceptionalCompletion(java.lang.Throwable,java.util.concurrent.CountedCompleter)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Throwable"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.CountedCompleter"/></param>
@@ -84,7 +63,7 @@ namespace Java.Util.Concurrent
             return IExecute<bool>("onExceptionalCompletion", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CountedCompleter.html#compareAndSetPendingCount(int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CountedCompleter.html#compareAndSetPendingCount(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -94,7 +73,7 @@ namespace Java.Util.Concurrent
             return IExecute<bool>("compareAndSetPendingCount", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CountedCompleter.html#decrementPendingCountUnlessZero()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CountedCompleter.html#decrementPendingCountUnlessZero()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DecrementPendingCountUnlessZero()
@@ -102,7 +81,15 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<int>("decrementPendingCountUnlessZero", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CountedCompleter.html#firstComplete()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CountedCompleter.html#getPendingCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPendingCount()
+        {
+            return IExecuteWithSignature<int>("getPendingCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CountedCompleter.html#firstComplete()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Concurrent.CountedCompleter"/></returns>
         public Java.Util.Concurrent.CountedCompleter FirstComplete()
@@ -110,7 +97,23 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.Concurrent.CountedCompleter>("firstComplete", "()Ljava/util/concurrent/CountedCompleter;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CountedCompleter.html#nextComplete()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CountedCompleter.html#getCompleter()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Concurrent.CountedCompleter"/></returns>
+        public Java.Util.Concurrent.CountedCompleter GetCompleter()
+        {
+            return IExecuteWithSignature<Java.Util.Concurrent.CountedCompleter>("getCompleter", "()Ljava/util/concurrent/CountedCompleter;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CountedCompleter.html#getRoot()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Concurrent.CountedCompleter"/></returns>
+        public Java.Util.Concurrent.CountedCompleter GetRoot()
+        {
+            return IExecuteWithSignature<Java.Util.Concurrent.CountedCompleter>("getRoot", "()Ljava/util/concurrent/CountedCompleter;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CountedCompleter.html#nextComplete()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Concurrent.CountedCompleter"/></returns>
         public Java.Util.Concurrent.CountedCompleter NextComplete()
@@ -118,7 +121,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.Concurrent.CountedCompleter>("nextComplete", "()Ljava/util/concurrent/CountedCompleter;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CountedCompleter.html#addToPendingCount(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CountedCompleter.html#addToPendingCount(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public void AddToPendingCount(int arg0)
@@ -126,7 +129,7 @@ namespace Java.Util.Concurrent
             IExecuteWithSignature("addToPendingCount", "(I)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CountedCompleter.html#helpComplete(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CountedCompleter.html#helpComplete(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public void HelpComplete(int arg0)
@@ -134,28 +137,36 @@ namespace Java.Util.Concurrent
             IExecuteWithSignature("helpComplete", "(I)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CountedCompleter.html#propagateCompletion()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CountedCompleter.html#propagateCompletion()"/>
         /// </summary>
         public void PropagateCompletion()
         {
             IExecuteWithSignature("propagateCompletion", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CountedCompleter.html#quietlyCompleteRoot()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CountedCompleter.html#quietlyCompleteRoot()"/>
         /// </summary>
         public void QuietlyCompleteRoot()
         {
             IExecuteWithSignature("quietlyCompleteRoot", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CountedCompleter.html#tryComplete()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CountedCompleter.html#setPendingCount(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetPendingCount(int arg0)
+        {
+            IExecuteWithSignature("setPendingCount", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CountedCompleter.html#tryComplete()"/>
         /// </summary>
         public void TryComplete()
         {
             IExecuteWithSignature("tryComplete", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CountedCompleter.html#onCompletion(java.util.concurrent.CountedCompleter)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CountedCompleter.html#onCompletion(java.util.concurrent.CountedCompleter)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CountedCompleter"/></param>
         public void OnCompletion(Java.Util.Concurrent.CountedCompleter arg0)
@@ -198,35 +209,14 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CountedCompleter.html#getCompleter()"/> 
-        /// </summary>
-        public Java.Util.Concurrent.CountedCompleter<object> Completer
-        {
-            get { return IExecuteWithSignature<Java.Util.Concurrent.CountedCompleter<object>>("getCompleter", "()Ljava/util/concurrent/CountedCompleter;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CountedCompleter.html#getPendingCount()"/> <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CountedCompleter.html#setPendingCount(int)"/>
-        /// </summary>
-        public int PendingCount
-        {
-            get { return IExecuteWithSignature<int>("getPendingCount", "()I"); } set { IExecuteWithSignature("setPendingCount", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CountedCompleter.html#getRoot()"/> 
-        /// </summary>
-        public Java.Util.Concurrent.CountedCompleter<object> Root
-        {
-            get { return IExecuteWithSignature<Java.Util.Concurrent.CountedCompleter<object>>("getRoot", "()Ljava/util/concurrent/CountedCompleter;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CountedCompleter.html#compute()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CountedCompleter.html#compute()"/>
         /// </summary>
         public void Compute()
         {
             IExecuteWithSignature("compute", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CountedCompleter.html#onExceptionalCompletion(java.lang.Throwable,java.util.concurrent.CountedCompleter)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CountedCompleter.html#onExceptionalCompletion(java.lang.Throwable,java.util.concurrent.CountedCompleter)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Throwable"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.CountedCompleter"/></param>
@@ -236,7 +226,7 @@ namespace Java.Util.Concurrent
             return IExecute<bool>("onExceptionalCompletion", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CountedCompleter.html#compareAndSetPendingCount(int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CountedCompleter.html#compareAndSetPendingCount(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -246,7 +236,7 @@ namespace Java.Util.Concurrent
             return IExecute<bool>("compareAndSetPendingCount", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CountedCompleter.html#decrementPendingCountUnlessZero()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CountedCompleter.html#decrementPendingCountUnlessZero()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DecrementPendingCountUnlessZero()
@@ -254,7 +244,15 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<int>("decrementPendingCountUnlessZero", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CountedCompleter.html#firstComplete()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CountedCompleter.html#getPendingCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPendingCount()
+        {
+            return IExecuteWithSignature<int>("getPendingCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CountedCompleter.html#firstComplete()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Concurrent.CountedCompleter"/></returns>
         public Java.Util.Concurrent.CountedCompleter<object> FirstComplete()
@@ -262,7 +260,23 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.Concurrent.CountedCompleter<object>>("firstComplete", "()Ljava/util/concurrent/CountedCompleter;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CountedCompleter.html#nextComplete()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CountedCompleter.html#getCompleter()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Concurrent.CountedCompleter"/></returns>
+        public Java.Util.Concurrent.CountedCompleter<object> GetCompleter()
+        {
+            return IExecuteWithSignature<Java.Util.Concurrent.CountedCompleter<object>>("getCompleter", "()Ljava/util/concurrent/CountedCompleter;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CountedCompleter.html#getRoot()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Concurrent.CountedCompleter"/></returns>
+        public Java.Util.Concurrent.CountedCompleter<object> GetRoot()
+        {
+            return IExecuteWithSignature<Java.Util.Concurrent.CountedCompleter<object>>("getRoot", "()Ljava/util/concurrent/CountedCompleter;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CountedCompleter.html#nextComplete()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Concurrent.CountedCompleter"/></returns>
         public Java.Util.Concurrent.CountedCompleter<object> NextComplete()
@@ -270,7 +284,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.Concurrent.CountedCompleter<object>>("nextComplete", "()Ljava/util/concurrent/CountedCompleter;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CountedCompleter.html#addToPendingCount(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CountedCompleter.html#addToPendingCount(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public void AddToPendingCount(int arg0)
@@ -278,7 +292,7 @@ namespace Java.Util.Concurrent
             IExecuteWithSignature("addToPendingCount", "(I)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CountedCompleter.html#helpComplete(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CountedCompleter.html#helpComplete(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public void HelpComplete(int arg0)
@@ -286,28 +300,36 @@ namespace Java.Util.Concurrent
             IExecuteWithSignature("helpComplete", "(I)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CountedCompleter.html#propagateCompletion()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CountedCompleter.html#propagateCompletion()"/>
         /// </summary>
         public void PropagateCompletion()
         {
             IExecuteWithSignature("propagateCompletion", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CountedCompleter.html#quietlyCompleteRoot()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CountedCompleter.html#quietlyCompleteRoot()"/>
         /// </summary>
         public void QuietlyCompleteRoot()
         {
             IExecuteWithSignature("quietlyCompleteRoot", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CountedCompleter.html#tryComplete()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CountedCompleter.html#setPendingCount(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetPendingCount(int arg0)
+        {
+            IExecuteWithSignature("setPendingCount", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CountedCompleter.html#tryComplete()"/>
         /// </summary>
         public void TryComplete()
         {
             IExecuteWithSignature("tryComplete", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CountedCompleter.html#onCompletion(java.util.concurrent.CountedCompleter)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CountedCompleter.html#onCompletion(java.util.concurrent.CountedCompleter)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CountedCompleter"/></param>
         public void OnCompletion(Java.Util.Concurrent.CountedCompleter<object> arg0)

@@ -52,27 +52,6 @@ namespace Android.Health.Connect.Changelog
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/changelog/ChangeLogsResponse.html#getDeletedLogs()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Health.Connect.Changelog.ChangeLogsResponse.DeletedLog> DeletedLogs
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Health.Connect.Changelog.ChangeLogsResponse.DeletedLog>>("getDeletedLogs", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/changelog/ChangeLogsResponse.html#getNextChangesToken()"/> 
-        /// </summary>
-        public Java.Lang.String NextChangesToken
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getNextChangesToken", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/changelog/ChangeLogsResponse.html#getUpsertedRecords()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Health.Connect.Datatypes.Record> UpsertedRecords
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Health.Connect.Datatypes.Record>>("getUpsertedRecords", "()Ljava/util/List;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/health/connect/changelog/ChangeLogsResponse.html#hasMorePages()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -87,6 +66,30 @@ namespace Android.Health.Connect.Changelog
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/changelog/ChangeLogsResponse.html#getNextChangesToken()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetNextChangesToken()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getNextChangesToken", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/changelog/ChangeLogsResponse.html#getDeletedLogs()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Health.Connect.Changelog.ChangeLogsResponse.DeletedLog> GetDeletedLogs()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Health.Connect.Changelog.ChangeLogsResponse.DeletedLog>>("getDeletedLogs", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/changelog/ChangeLogsResponse.html#getUpsertedRecords()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Health.Connect.Datatypes.Record> GetUpsertedRecords()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Health.Connect.Datatypes.Record>>("getUpsertedRecords", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/health/connect/changelog/ChangeLogsResponse.html#writeToParcel(android.os.Parcel,int)"/>
@@ -131,18 +134,20 @@ namespace Android.Health.Connect.Changelog
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/health/connect/changelog/ChangeLogsResponse.DeletedLog.html#getDeletedRecordId()"/> 
+            /// <see href="https://developer.android.com/reference/android/health/connect/changelog/ChangeLogsResponse.DeletedLog.html#getDeletedRecordId()"/>
             /// </summary>
-            public Java.Lang.String DeletedRecordId
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetDeletedRecordId()
             {
-                get { return IExecuteWithSignature<Java.Lang.String>("getDeletedRecordId", "()Ljava/lang/String;"); }
+                return IExecuteWithSignature<Java.Lang.String>("getDeletedRecordId", "()Ljava/lang/String;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/health/connect/changelog/ChangeLogsResponse.DeletedLog.html#getDeletedTime()"/> 
+            /// <see href="https://developer.android.com/reference/android/health/connect/changelog/ChangeLogsResponse.DeletedLog.html#getDeletedTime()"/>
             /// </summary>
-            public Java.Time.Instant DeletedTime
+            /// <returns><see cref="Java.Time.Instant"/></returns>
+            public Java.Time.Instant GetDeletedTime()
             {
-                get { return IExecuteWithSignature<Java.Time.Instant>("getDeletedTime", "()Ljava/time/Instant;"); }
+                return IExecuteWithSignature<Java.Time.Instant>("getDeletedTime", "()Ljava/time/Instant;");
             }
 
             #endregion

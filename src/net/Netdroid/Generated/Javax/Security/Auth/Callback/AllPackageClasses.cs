@@ -28,7 +28,7 @@ namespace Javax.Security.Auth.Callback
 {
     #region Callback
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/security/auth/callback/Callback.html"/>
+    /// <see href="https://developer.android.com/reference/javax/security/auth/callback/Callback.html"/>
     /// </summary>
     public partial class Callback : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Callback>
     {
@@ -36,12 +36,12 @@ namespace Javax.Security.Auth.Callback
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Callback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Callback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Callback() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Callback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Callback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Callback(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -74,7 +74,7 @@ namespace Javax.Security.Auth.Callback
 
     #region CallbackHandler
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/security/auth/callback/CallbackHandler.html"/>
+    /// <see href="https://developer.android.com/reference/javax/security/auth/callback/CallbackHandler.html"/>
     /// </summary>
     public partial class CallbackHandler : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CallbackHandler>
     {
@@ -82,12 +82,12 @@ namespace Javax.Security.Auth.Callback
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("CallbackHandler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("CallbackHandler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CallbackHandler() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("CallbackHandler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("CallbackHandler class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CallbackHandler(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -120,7 +120,7 @@ namespace Javax.Security.Auth.Callback
 
     #region PasswordCallback
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/security/auth/callback/PasswordCallback.html"/>
+    /// <see href="https://developer.android.com/reference/javax/security/auth/callback/PasswordCallback.html"/>
     /// </summary>
     public partial class PasswordCallback : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PasswordCallback>
     {
@@ -164,7 +164,7 @@ namespace Javax.Security.Auth.Callback
 
     #region UnsupportedCallbackException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/security/auth/callback/UnsupportedCallbackException.html"/>
+    /// <see href="https://developer.android.com/reference/javax/security/auth/callback/UnsupportedCallbackException.html"/>
     /// </summary>
     public partial class UnsupportedCallbackException : Java.Lang.Exception
     {

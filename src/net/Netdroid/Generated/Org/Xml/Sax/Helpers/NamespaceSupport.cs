@@ -38,13 +38,13 @@ namespace Org.Xml.Sax.Helpers
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/NamespaceSupport.html#NSDECL"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/NamespaceSupport.html#NSDECL"/>
         /// </summary>
         public static Java.Lang.String NSDECL { get { if (!_NSDECLReady) { _NSDECLContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "NSDECL"); _NSDECLReady = true; } return _NSDECLContent; } }
         private static Java.Lang.String _NSDECLContent = default;
         private static bool _NSDECLReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/NamespaceSupport.html#XMLNS"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/NamespaceSupport.html#XMLNS"/>
         /// </summary>
         public static Java.Lang.String XMLNS { get { if (!_XMLNSReady) { _XMLNSContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "XMLNS"); _XMLNSReady = true; } return _XMLNSContent; } }
         private static Java.Lang.String _XMLNSContent = default;
@@ -58,21 +58,7 @@ namespace Org.Xml.Sax.Helpers
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/NamespaceSupport.html#getDeclaredPrefixes()"/> 
-        /// </summary>
-        public Java.Util.Enumeration<Java.Lang.String> DeclaredPrefixes
-        {
-            get { return IExecuteWithSignature<Java.Util.Enumeration<Java.Lang.String>>("getDeclaredPrefixes", "()Ljava/util/Enumeration;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/NamespaceSupport.html#getPrefixes()"/> 
-        /// </summary>
-        public Java.Util.Enumeration<Java.Lang.String> Prefixes
-        {
-            get { return IExecuteWithSignature<Java.Util.Enumeration<Java.Lang.String>>("getPrefixes", "()Ljava/util/Enumeration;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/NamespaceSupport.html#declarePrefix(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/NamespaceSupport.html#declarePrefix(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -82,7 +68,7 @@ namespace Org.Xml.Sax.Helpers
             return IExecute<bool>("declarePrefix", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/NamespaceSupport.html#isNamespaceDeclUris()"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/NamespaceSupport.html#isNamespaceDeclUris()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsNamespaceDeclUris()
@@ -90,7 +76,7 @@ namespace Org.Xml.Sax.Helpers
             return IExecuteWithSignature<bool>("isNamespaceDeclUris", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/NamespaceSupport.html#getPrefix(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/NamespaceSupport.html#getPrefix(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -99,7 +85,7 @@ namespace Org.Xml.Sax.Helpers
             return IExecuteWithSignature<Java.Lang.String>("getPrefix", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/NamespaceSupport.html#getURI(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/NamespaceSupport.html#getURI(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -108,7 +94,7 @@ namespace Org.Xml.Sax.Helpers
             return IExecuteWithSignature<Java.Lang.String>("getURI", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/NamespaceSupport.html#processName(java.lang.String,java.lang.String[],boolean)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/NamespaceSupport.html#processName(java.lang.String,java.lang.String[],boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -119,7 +105,23 @@ namespace Org.Xml.Sax.Helpers
             return IExecuteArray<Java.Lang.String>("processName", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/NamespaceSupport.html#getPrefixes(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/NamespaceSupport.html#getDeclaredPrefixes()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Enumeration"/></returns>
+        public Java.Util.Enumeration<Java.Lang.String> GetDeclaredPrefixes()
+        {
+            return IExecuteWithSignature<Java.Util.Enumeration<Java.Lang.String>>("getDeclaredPrefixes", "()Ljava/util/Enumeration;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/NamespaceSupport.html#getPrefixes()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Enumeration"/></returns>
+        public Java.Util.Enumeration<Java.Lang.String> GetPrefixes()
+        {
+            return IExecuteWithSignature<Java.Util.Enumeration<Java.Lang.String>>("getPrefixes", "()Ljava/util/Enumeration;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/NamespaceSupport.html#getPrefixes(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
@@ -128,28 +130,28 @@ namespace Org.Xml.Sax.Helpers
             return IExecuteWithSignature<Java.Util.Enumeration<Java.Lang.String>>("getPrefixes", "(Ljava/lang/String;)Ljava/util/Enumeration;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/NamespaceSupport.html#popContext()"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/NamespaceSupport.html#popContext()"/>
         /// </summary>
         public void PopContext()
         {
             IExecuteWithSignature("popContext", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/NamespaceSupport.html#pushContext()"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/NamespaceSupport.html#pushContext()"/>
         /// </summary>
         public void PushContext()
         {
             IExecuteWithSignature("pushContext", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/NamespaceSupport.html#reset()"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/NamespaceSupport.html#reset()"/>
         /// </summary>
         public void Reset()
         {
             IExecuteWithSignature("reset", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/NamespaceSupport.html#setNamespaceDeclUris(boolean)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/NamespaceSupport.html#setNamespaceDeclUris(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetNamespaceDeclUris(bool arg0)

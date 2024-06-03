@@ -124,26 +124,13 @@ namespace Android.View
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/WindowManager.html#getCurrentWindowMetrics()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/WindowManager.html#getDefaultDisplay()"/>
         /// </summary>
-        public Android.View.WindowMetrics CurrentWindowMetrics
+        /// <returns><see cref="Android.View.Display"/></returns>
+        [global::System.Obsolete()]
+        public Android.View.Display GetDefaultDisplay()
         {
-            get { return IExecuteWithSignature<Android.View.WindowMetrics>("getCurrentWindowMetrics", "()Landroid/view/WindowMetrics;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/WindowManager.html#getDefaultDisplay()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Android.View.Display DefaultDisplay
-        {
-            get { return IExecuteWithSignature<Android.View.Display>("getDefaultDisplay", "()Landroid/view/Display;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/WindowManager.html#getMaximumWindowMetrics()"/> 
-        /// </summary>
-        public Android.View.WindowMetrics MaximumWindowMetrics
-        {
-            get { return IExecuteWithSignature<Android.View.WindowMetrics>("getMaximumWindowMetrics", "()Landroid/view/WindowMetrics;"); }
+            return IExecuteWithSignature<Android.View.Display>("getDefaultDisplay", "()Landroid/view/Display;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/WindowManager.html#removeViewImmediate(android.view.View)"/>
@@ -152,6 +139,22 @@ namespace Android.View
         public void RemoveViewImmediate(Android.View.View arg0)
         {
             IExecuteWithSignature("removeViewImmediate", "(Landroid/view/View;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/WindowManager.html#getCurrentWindowMetrics()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.WindowMetrics"/></returns>
+        public Android.View.WindowMetrics GetCurrentWindowMetrics()
+        {
+            return IExecuteWithSignature<Android.View.WindowMetrics>("getCurrentWindowMetrics", "()Landroid/view/WindowMetrics;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/WindowManager.html#getMaximumWindowMetrics()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.WindowMetrics"/></returns>
+        public Android.View.WindowMetrics GetMaximumWindowMetrics()
+        {
+            return IExecuteWithSignature<Android.View.WindowMetrics>("getMaximumWindowMetrics", "()Landroid/view/WindowMetrics;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/WindowManager.html#isCrossWindowBlurEnabled()"/>
@@ -409,7 +412,7 @@ namespace Android.View
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#memoryType"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public int memoryType { get { return IGetField<int>("memoryType"); } set { ISetField("memoryType", value); } }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#preferredDisplayModeId"/>
@@ -430,7 +433,7 @@ namespace Android.View
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#systemUiVisibility"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public int systemUiVisibility { get { return IGetField<int>("systemUiVisibility"); } set { ISetField("systemUiVisibility", value); } }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#type"/>
@@ -545,14 +548,14 @@ namespace Android.View
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#FLAG_DISMISS_KEYGUARD"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int FLAG_DISMISS_KEYGUARD { get { if (!_FLAG_DISMISS_KEYGUARDReady) { _FLAG_DISMISS_KEYGUARDContent = SGetField<int>(LocalBridgeClazz, "FLAG_DISMISS_KEYGUARD"); _FLAG_DISMISS_KEYGUARDReady = true; } return _FLAG_DISMISS_KEYGUARDContent; } }
             private static int _FLAG_DISMISS_KEYGUARDContent = default;
             private static bool _FLAG_DISMISS_KEYGUARDReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#FLAG_DITHER"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int FLAG_DITHER { get { if (!_FLAG_DITHERReady) { _FLAG_DITHERContent = SGetField<int>(LocalBridgeClazz, "FLAG_DITHER"); _FLAG_DITHERReady = true; } return _FLAG_DITHERContent; } }
             private static int _FLAG_DITHERContent = default;
             private static bool _FLAG_DITHERReady = false; // this is used because in case of generics 
@@ -565,14 +568,14 @@ namespace Android.View
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#FLAG_FORCE_NOT_FULLSCREEN"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int FLAG_FORCE_NOT_FULLSCREEN { get { if (!_FLAG_FORCE_NOT_FULLSCREENReady) { _FLAG_FORCE_NOT_FULLSCREENContent = SGetField<int>(LocalBridgeClazz, "FLAG_FORCE_NOT_FULLSCREEN"); _FLAG_FORCE_NOT_FULLSCREENReady = true; } return _FLAG_FORCE_NOT_FULLSCREENContent; } }
             private static int _FLAG_FORCE_NOT_FULLSCREENContent = default;
             private static bool _FLAG_FORCE_NOT_FULLSCREENReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#FLAG_FULLSCREEN"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int FLAG_FULLSCREEN { get { if (!_FLAG_FULLSCREENReady) { _FLAG_FULLSCREENContent = SGetField<int>(LocalBridgeClazz, "FLAG_FULLSCREEN"); _FLAG_FULLSCREENReady = true; } return _FLAG_FULLSCREENContent; } }
             private static int _FLAG_FULLSCREENContent = default;
             private static bool _FLAG_FULLSCREENReady = false; // this is used because in case of generics 
@@ -597,14 +600,14 @@ namespace Android.View
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#FLAG_LAYOUT_ATTACHED_IN_DECOR"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int FLAG_LAYOUT_ATTACHED_IN_DECOR { get { if (!_FLAG_LAYOUT_ATTACHED_IN_DECORReady) { _FLAG_LAYOUT_ATTACHED_IN_DECORContent = SGetField<int>(LocalBridgeClazz, "FLAG_LAYOUT_ATTACHED_IN_DECOR"); _FLAG_LAYOUT_ATTACHED_IN_DECORReady = true; } return _FLAG_LAYOUT_ATTACHED_IN_DECORContent; } }
             private static int _FLAG_LAYOUT_ATTACHED_IN_DECORContent = default;
             private static bool _FLAG_LAYOUT_ATTACHED_IN_DECORReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#FLAG_LAYOUT_IN_OVERSCAN"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int FLAG_LAYOUT_IN_OVERSCAN { get { if (!_FLAG_LAYOUT_IN_OVERSCANReady) { _FLAG_LAYOUT_IN_OVERSCANContent = SGetField<int>(LocalBridgeClazz, "FLAG_LAYOUT_IN_OVERSCAN"); _FLAG_LAYOUT_IN_OVERSCANReady = true; } return _FLAG_LAYOUT_IN_OVERSCANContent; } }
             private static int _FLAG_LAYOUT_IN_OVERSCANContent = default;
             private static bool _FLAG_LAYOUT_IN_OVERSCANReady = false; // this is used because in case of generics 
@@ -617,7 +620,7 @@ namespace Android.View
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#FLAG_LAYOUT_INSET_DECOR"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int FLAG_LAYOUT_INSET_DECOR { get { if (!_FLAG_LAYOUT_INSET_DECORReady) { _FLAG_LAYOUT_INSET_DECORContent = SGetField<int>(LocalBridgeClazz, "FLAG_LAYOUT_INSET_DECOR"); _FLAG_LAYOUT_INSET_DECORReady = true; } return _FLAG_LAYOUT_INSET_DECORContent; } }
             private static int _FLAG_LAYOUT_INSET_DECORContent = default;
             private static bool _FLAG_LAYOUT_INSET_DECORReady = false; // this is used because in case of generics 
@@ -672,7 +675,7 @@ namespace Android.View
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#FLAG_SHOW_WHEN_LOCKED"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int FLAG_SHOW_WHEN_LOCKED { get { if (!_FLAG_SHOW_WHEN_LOCKEDReady) { _FLAG_SHOW_WHEN_LOCKEDContent = SGetField<int>(LocalBridgeClazz, "FLAG_SHOW_WHEN_LOCKED"); _FLAG_SHOW_WHEN_LOCKEDReady = true; } return _FLAG_SHOW_WHEN_LOCKEDContent; } }
             private static int _FLAG_SHOW_WHEN_LOCKEDContent = default;
             private static bool _FLAG_SHOW_WHEN_LOCKEDReady = false; // this is used because in case of generics 
@@ -685,28 +688,28 @@ namespace Android.View
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#FLAG_TOUCHABLE_WHEN_WAKING"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int FLAG_TOUCHABLE_WHEN_WAKING { get { if (!_FLAG_TOUCHABLE_WHEN_WAKINGReady) { _FLAG_TOUCHABLE_WHEN_WAKINGContent = SGetField<int>(LocalBridgeClazz, "FLAG_TOUCHABLE_WHEN_WAKING"); _FLAG_TOUCHABLE_WHEN_WAKINGReady = true; } return _FLAG_TOUCHABLE_WHEN_WAKINGContent; } }
             private static int _FLAG_TOUCHABLE_WHEN_WAKINGContent = default;
             private static bool _FLAG_TOUCHABLE_WHEN_WAKINGReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#FLAG_TRANSLUCENT_NAVIGATION"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int FLAG_TRANSLUCENT_NAVIGATION { get { if (!_FLAG_TRANSLUCENT_NAVIGATIONReady) { _FLAG_TRANSLUCENT_NAVIGATIONContent = SGetField<int>(LocalBridgeClazz, "FLAG_TRANSLUCENT_NAVIGATION"); _FLAG_TRANSLUCENT_NAVIGATIONReady = true; } return _FLAG_TRANSLUCENT_NAVIGATIONContent; } }
             private static int _FLAG_TRANSLUCENT_NAVIGATIONContent = default;
             private static bool _FLAG_TRANSLUCENT_NAVIGATIONReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#FLAG_TRANSLUCENT_STATUS"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int FLAG_TRANSLUCENT_STATUS { get { if (!_FLAG_TRANSLUCENT_STATUSReady) { _FLAG_TRANSLUCENT_STATUSContent = SGetField<int>(LocalBridgeClazz, "FLAG_TRANSLUCENT_STATUS"); _FLAG_TRANSLUCENT_STATUSReady = true; } return _FLAG_TRANSLUCENT_STATUSContent; } }
             private static int _FLAG_TRANSLUCENT_STATUSContent = default;
             private static bool _FLAG_TRANSLUCENT_STATUSReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#FLAG_TURN_SCREEN_ON"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int FLAG_TURN_SCREEN_ON { get { if (!_FLAG_TURN_SCREEN_ONReady) { _FLAG_TURN_SCREEN_ONContent = SGetField<int>(LocalBridgeClazz, "FLAG_TURN_SCREEN_ON"); _FLAG_TURN_SCREEN_ONReady = true; } return _FLAG_TURN_SCREEN_ONContent; } }
             private static int _FLAG_TURN_SCREEN_ONContent = default;
             private static bool _FLAG_TURN_SCREEN_ONReady = false; // this is used because in case of generics 
@@ -785,28 +788,28 @@ namespace Android.View
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#MEMORY_TYPE_GPU"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int MEMORY_TYPE_GPU { get { if (!_MEMORY_TYPE_GPUReady) { _MEMORY_TYPE_GPUContent = SGetField<int>(LocalBridgeClazz, "MEMORY_TYPE_GPU"); _MEMORY_TYPE_GPUReady = true; } return _MEMORY_TYPE_GPUContent; } }
             private static int _MEMORY_TYPE_GPUContent = default;
             private static bool _MEMORY_TYPE_GPUReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#MEMORY_TYPE_HARDWARE"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int MEMORY_TYPE_HARDWARE { get { if (!_MEMORY_TYPE_HARDWAREReady) { _MEMORY_TYPE_HARDWAREContent = SGetField<int>(LocalBridgeClazz, "MEMORY_TYPE_HARDWARE"); _MEMORY_TYPE_HARDWAREReady = true; } return _MEMORY_TYPE_HARDWAREContent; } }
             private static int _MEMORY_TYPE_HARDWAREContent = default;
             private static bool _MEMORY_TYPE_HARDWAREReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#MEMORY_TYPE_NORMAL"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int MEMORY_TYPE_NORMAL { get { if (!_MEMORY_TYPE_NORMALReady) { _MEMORY_TYPE_NORMALContent = SGetField<int>(LocalBridgeClazz, "MEMORY_TYPE_NORMAL"); _MEMORY_TYPE_NORMALReady = true; } return _MEMORY_TYPE_NORMALContent; } }
             private static int _MEMORY_TYPE_NORMALContent = default;
             private static bool _MEMORY_TYPE_NORMALReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#MEMORY_TYPE_PUSH_BUFFERS"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int MEMORY_TYPE_PUSH_BUFFERS { get { if (!_MEMORY_TYPE_PUSH_BUFFERSReady) { _MEMORY_TYPE_PUSH_BUFFERSContent = SGetField<int>(LocalBridgeClazz, "MEMORY_TYPE_PUSH_BUFFERS"); _MEMORY_TYPE_PUSH_BUFFERSReady = true; } return _MEMORY_TYPE_PUSH_BUFFERSContent; } }
             private static int _MEMORY_TYPE_PUSH_BUFFERSContent = default;
             private static bool _MEMORY_TYPE_PUSH_BUFFERSReady = false; // this is used because in case of generics 
@@ -867,7 +870,7 @@ namespace Android.View
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#SOFT_INPUT_ADJUST_RESIZE"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int SOFT_INPUT_ADJUST_RESIZE { get { if (!_SOFT_INPUT_ADJUST_RESIZEReady) { _SOFT_INPUT_ADJUST_RESIZEContent = SGetField<int>(LocalBridgeClazz, "SOFT_INPUT_ADJUST_RESIZE"); _SOFT_INPUT_ADJUST_RESIZEReady = true; } return _SOFT_INPUT_ADJUST_RESIZEContent; } }
             private static int _SOFT_INPUT_ADJUST_RESIZEContent = default;
             private static bool _SOFT_INPUT_ADJUST_RESIZEReady = false; // this is used because in case of generics 
@@ -1030,14 +1033,14 @@ namespace Android.View
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#TYPE_PHONE"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int TYPE_PHONE { get { if (!_TYPE_PHONEReady) { _TYPE_PHONEContent = SGetField<int>(LocalBridgeClazz, "TYPE_PHONE"); _TYPE_PHONEReady = true; } return _TYPE_PHONEContent; } }
             private static int _TYPE_PHONEContent = default;
             private static bool _TYPE_PHONEReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#TYPE_PRIORITY_PHONE"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int TYPE_PRIORITY_PHONE { get { if (!_TYPE_PRIORITY_PHONEReady) { _TYPE_PRIORITY_PHONEContent = SGetField<int>(LocalBridgeClazz, "TYPE_PRIORITY_PHONE"); _TYPE_PRIORITY_PHONEReady = true; } return _TYPE_PRIORITY_PHONEContent; } }
             private static int _TYPE_PRIORITY_PHONEContent = default;
             private static bool _TYPE_PRIORITY_PHONEReady = false; // this is used because in case of generics 
@@ -1062,7 +1065,7 @@ namespace Android.View
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#TYPE_SYSTEM_ALERT"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int TYPE_SYSTEM_ALERT { get { if (!_TYPE_SYSTEM_ALERTReady) { _TYPE_SYSTEM_ALERTContent = SGetField<int>(LocalBridgeClazz, "TYPE_SYSTEM_ALERT"); _TYPE_SYSTEM_ALERTReady = true; } return _TYPE_SYSTEM_ALERTContent; } }
             private static int _TYPE_SYSTEM_ALERTContent = default;
             private static bool _TYPE_SYSTEM_ALERTReady = false; // this is used because in case of generics 
@@ -1075,21 +1078,21 @@ namespace Android.View
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#TYPE_SYSTEM_ERROR"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int TYPE_SYSTEM_ERROR { get { if (!_TYPE_SYSTEM_ERRORReady) { _TYPE_SYSTEM_ERRORContent = SGetField<int>(LocalBridgeClazz, "TYPE_SYSTEM_ERROR"); _TYPE_SYSTEM_ERRORReady = true; } return _TYPE_SYSTEM_ERRORContent; } }
             private static int _TYPE_SYSTEM_ERRORContent = default;
             private static bool _TYPE_SYSTEM_ERRORReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#TYPE_SYSTEM_OVERLAY"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int TYPE_SYSTEM_OVERLAY { get { if (!_TYPE_SYSTEM_OVERLAYReady) { _TYPE_SYSTEM_OVERLAYContent = SGetField<int>(LocalBridgeClazz, "TYPE_SYSTEM_OVERLAY"); _TYPE_SYSTEM_OVERLAYReady = true; } return _TYPE_SYSTEM_OVERLAYContent; } }
             private static int _TYPE_SYSTEM_OVERLAYContent = default;
             private static bool _TYPE_SYSTEM_OVERLAYReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#TYPE_TOAST"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int TYPE_TOAST { get { if (!_TYPE_TOASTReady) { _TYPE_TOASTContent = SGetField<int>(LocalBridgeClazz, "TYPE_TOAST"); _TYPE_TOASTReady = true; } return _TYPE_TOASTContent; } }
             private static int _TYPE_TOASTContent = default;
             private static bool _TYPE_TOASTReady = false; // this is used because in case of generics 
@@ -1116,41 +1119,6 @@ namespace Android.View
             #endregion
 
             #region Instance methods
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#getBlurBehindRadius()"/> <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#setBlurBehindRadius(int)"/>
-            /// </summary>
-            public int BlurBehindRadius
-            {
-                get { return IExecuteWithSignature<int>("getBlurBehindRadius", "()I"); } set { IExecuteWithSignature("setBlurBehindRadius", "(I)V", value); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#getColorMode()"/> <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#setColorMode(int)"/>
-            /// </summary>
-            public int ColorMode
-            {
-                get { return IExecuteWithSignature<int>("getColorMode", "()I"); } set { IExecuteWithSignature("setColorMode", "(I)V", value); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#getFitInsetsSides()"/> <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#setFitInsetsSides(int)"/>
-            /// </summary>
-            public int FitInsetsSides
-            {
-                get { return IExecuteWithSignature<int>("getFitInsetsSides", "()I"); } set { IExecuteWithSignature("setFitInsetsSides", "(I)V", value); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#getFitInsetsTypes()"/> <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#setFitInsetsTypes(int)"/>
-            /// </summary>
-            public int FitInsetsTypes
-            {
-                get { return IExecuteWithSignature<int>("getFitInsetsTypes", "()I"); } set { IExecuteWithSignature("setFitInsetsTypes", "(I)V", value); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#getTitle()"/> <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#setTitle(java.lang.CharSequence)"/>
-            /// </summary>
-            public Java.Lang.CharSequence Title
-            {
-                get { return IExecuteWithSignature<Java.Lang.CharSequence>("getTitle", "()Ljava/lang/CharSequence;"); } set { IExecuteWithSignature("setTitle", "(Ljava/lang/CharSequence;)V", value); }
-            }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#areWallpaperTouchEventsEnabled()"/>
             /// </summary>
@@ -1193,12 +1161,60 @@ namespace Android.View
                 return IExecuteWithSignature<int>("copyFrom", "(Landroid/view/WindowManager$LayoutParams;)I", arg0);
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#getTitle()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+            public Java.Lang.CharSequence GetTitle()
+            {
+                return IExecuteWithSignature<Java.Lang.CharSequence>("getTitle", "()Ljava/lang/CharSequence;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#setTitle(java.lang.CharSequence)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+            public void SetTitle(Java.Lang.CharSequence arg0)
+            {
+                IExecuteWithSignature("setTitle", "(Ljava/lang/CharSequence;)V", arg0);
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#describeContents()"/>
             /// </summary>
             /// <returns><see cref="int"/></returns>
             public int DescribeContents()
             {
                 return IExecuteWithSignature<int>("describeContents", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#getBlurBehindRadius()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetBlurBehindRadius()
+            {
+                return IExecuteWithSignature<int>("getBlurBehindRadius", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#getColorMode()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetColorMode()
+            {
+                return IExecuteWithSignature<int>("getColorMode", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#getFitInsetsSides()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetFitInsetsSides()
+            {
+                return IExecuteWithSignature<int>("getFitInsetsSides", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#getFitInsetsTypes()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetFitInsetsTypes()
+            {
+                return IExecuteWithSignature<int>("getFitInsetsTypes", "()I");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#debug(java.lang.String)"/>
@@ -1210,6 +1226,14 @@ namespace Android.View
                 return IExecuteWithSignature<Java.Lang.String>("debug", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#setBlurBehindRadius(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            public void SetBlurBehindRadius(int arg0)
+            {
+                IExecuteWithSignature("setBlurBehindRadius", "(I)V", arg0);
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#setCanPlayMoveAnimation(boolean)"/>
             /// </summary>
             /// <param name="arg0"><see cref="bool"/></param>
@@ -1218,12 +1242,36 @@ namespace Android.View
                 IExecuteWithSignature("setCanPlayMoveAnimation", "(Z)V", arg0);
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#setColorMode(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            public void SetColorMode(int arg0)
+            {
+                IExecuteWithSignature("setColorMode", "(I)V", arg0);
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#setFitInsetsIgnoringVisibility(boolean)"/>
             /// </summary>
             /// <param name="arg0"><see cref="bool"/></param>
             public void SetFitInsetsIgnoringVisibility(bool arg0)
             {
                 IExecuteWithSignature("setFitInsetsIgnoringVisibility", "(Z)V", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#setFitInsetsSides(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            public void SetFitInsetsSides(int arg0)
+            {
+                IExecuteWithSignature("setFitInsetsSides", "(I)V", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#setFitInsetsTypes(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            public void SetFitInsetsTypes(int arg0)
+            {
+                IExecuteWithSignature("setFitInsetsTypes", "(I)V", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/WindowManager.LayoutParams.html#setHdrConversionEnabled(boolean)"/>

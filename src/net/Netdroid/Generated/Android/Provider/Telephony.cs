@@ -475,7 +475,7 @@ namespace Android.Provider
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Telephony.Carriers.html#BEARER"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String BEARER { get { if (!_BEARERReady) { _BEARERContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "BEARER"); _BEARERReady = true; } return _BEARERContent; } }
             private static Java.Lang.String _BEARERContent = default;
             private static bool _BEARERReady = false; // this is used because in case of generics 
@@ -506,7 +506,7 @@ namespace Android.Provider
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Telephony.Carriers.html#MCC"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String MCC { get { if (!_MCCReady) { _MCCContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "MCC"); _MCCReady = true; } return _MCCContent; } }
             private static Java.Lang.String _MCCContent = default;
             private static bool _MCCReady = false; // this is used because in case of generics 
@@ -531,21 +531,21 @@ namespace Android.Provider
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Telephony.Carriers.html#MNC"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String MNC { get { if (!_MNCReady) { _MNCContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "MNC"); _MNCReady = true; } return _MNCContent; } }
             private static Java.Lang.String _MNCContent = default;
             private static bool _MNCReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Telephony.Carriers.html#MVNO_MATCH_DATA"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String MVNO_MATCH_DATA { get { if (!_MVNO_MATCH_DATAReady) { _MVNO_MATCH_DATAContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "MVNO_MATCH_DATA"); _MVNO_MATCH_DATAReady = true; } return _MVNO_MATCH_DATAContent; } }
             private static Java.Lang.String _MVNO_MATCH_DATAContent = default;
             private static bool _MVNO_MATCH_DATAReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Telephony.Carriers.html#MVNO_TYPE"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String MVNO_TYPE { get { if (!_MVNO_TYPEReady) { _MVNO_TYPEContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "MVNO_TYPE"); _MVNO_TYPEReady = true; } return _MVNO_TYPEContent; } }
             private static Java.Lang.String _MVNO_TYPEContent = default;
             private static bool _MVNO_TYPEReady = false; // this is used because in case of generics 
@@ -564,7 +564,7 @@ namespace Android.Provider
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/Telephony.Carriers.html#NUMERIC"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String NUMERIC { get { if (!_NUMERICReady) { _NUMERICContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "NUMERIC"); _NUMERICReady = true; } return _NUMERICContent; } }
             private static Java.Lang.String _NUMERICContent = default;
             private static bool _NUMERICReady = false; // this is used because in case of generics 
@@ -1736,7 +1736,7 @@ namespace Android.Provider
                 /// <summary>
                 /// <see href="https://developer.android.com/reference/android/provider/Telephony.Sms.Intents.html#SECRET_CODE_ACTION"/>
                 /// </summary>
-                [System.Obsolete()]
+                [global::System.Obsolete()]
                 public static Java.Lang.String SECRET_CODE_ACTION { get { if (!_SECRET_CODE_ACTIONReady) { _SECRET_CODE_ACTIONContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "SECRET_CODE_ACTION"); _SECRET_CODE_ACTIONReady = true; } return _SECRET_CODE_ACTIONContent; } }
                 private static Java.Lang.String _SECRET_CODE_ACTIONContent = default;
                 private static bool _SECRET_CODE_ACTIONReady = false; // this is used because in case of generics 

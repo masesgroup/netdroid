@@ -46,53 +46,20 @@ namespace Android.View
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ViewStructure.html#getAutofillId()"/> <see href="https://developer.android.com/reference/android/view/ViewStructure.html#setAutofillId(android.view.autofill.AutofillId)"/>
+        /// <see href="https://developer.android.com/reference/android/view/ViewStructure.html#getExtras()"/>
         /// </summary>
-        public Android.View.Autofill.AutofillId AutofillId
+        /// <returns><see cref="Android.Os.Bundle"/></returns>
+        public Android.Os.Bundle GetExtras()
         {
-            get { return IExecuteWithSignature<Android.View.Autofill.AutofillId>("getAutofillId", "()Landroid/view/autofill/AutofillId;"); } set { IExecuteWithSignature("setAutofillId", "(Landroid/view/autofill/AutofillId;)V", value); }
+            return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ViewStructure.html#getChildCount()"/> <see href="https://developer.android.com/reference/android/view/ViewStructure.html#setChildCount(int)"/>
+        /// <see href="https://developer.android.com/reference/android/view/ViewStructure.html#getAutofillId()"/>
         /// </summary>
-        public int ChildCount
+        /// <returns><see cref="Android.View.Autofill.AutofillId"/></returns>
+        public Android.View.Autofill.AutofillId GetAutofillId()
         {
-            get { return IExecuteWithSignature<int>("getChildCount", "()I"); } set { IExecuteWithSignature("setChildCount", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ViewStructure.html#getExtras()"/> 
-        /// </summary>
-        public Android.Os.Bundle Extras
-        {
-            get { return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ViewStructure.html#getHint()"/> <see href="https://developer.android.com/reference/android/view/ViewStructure.html#setHint(java.lang.CharSequence)"/>
-        /// </summary>
-        public Java.Lang.CharSequence Hint
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getHint", "()Ljava/lang/CharSequence;"); } set { IExecuteWithSignature("setHint", "(Ljava/lang/CharSequence;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ViewStructure.html#getText()"/> <see href="https://developer.android.com/reference/android/view/ViewStructure.html#setText(java.lang.CharSequence)"/>
-        /// </summary>
-        public Java.Lang.CharSequence Text
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getText", "()Ljava/lang/CharSequence;"); } set { IExecuteWithSignature("setText", "(Ljava/lang/CharSequence;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ViewStructure.html#getTextSelectionEnd()"/> 
-        /// </summary>
-        public int TextSelectionEnd
-        {
-            get { return IExecuteWithSignature<int>("getTextSelectionEnd", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/ViewStructure.html#getTextSelectionStart()"/> 
-        /// </summary>
-        public int TextSelectionStart
-        {
-            get { return IExecuteWithSignature<int>("getTextSelectionStart", "()I"); }
+            return IExecuteWithSignature<Android.View.Autofill.AutofillId>("getAutofillId", "()Landroid/view/autofill/AutofillId;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewStructure.html#asyncNewChild(int)"/>
@@ -137,6 +104,46 @@ namespace Android.View
         public int AddChildCount(int arg0)
         {
             return IExecuteWithSignature<int>("addChildCount", "(I)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewStructure.html#getChildCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetChildCount()
+        {
+            return IExecuteWithSignature<int>("getChildCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewStructure.html#getTextSelectionEnd()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTextSelectionEnd()
+        {
+            return IExecuteWithSignature<int>("getTextSelectionEnd", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewStructure.html#getTextSelectionStart()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTextSelectionStart()
+        {
+            return IExecuteWithSignature<int>("getTextSelectionStart", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewStructure.html#getHint()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetHint()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getHint", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewStructure.html#getText()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetText()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getText", "()Ljava/lang/CharSequence;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewStructure.html#asyncCommit()"/>
@@ -187,6 +194,14 @@ namespace Android.View
             IExecute("setAutofillId", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewStructure.html#setAutofillId(android.view.autofill.AutofillId)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.Autofill.AutofillId"/></param>
+        public void SetAutofillId(Android.View.Autofill.AutofillId arg0)
+        {
+            IExecuteWithSignature("setAutofillId", "(Landroid/view/autofill/AutofillId;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewStructure.html#setAutofillOptions(java.lang.CharSequence[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
@@ -225,6 +240,14 @@ namespace Android.View
         public void SetChecked(bool arg0)
         {
             IExecuteWithSignature("setChecked", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewStructure.html#setChildCount(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetChildCount(int arg0)
+        {
+            IExecuteWithSignature("setChildCount", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewStructure.html#setClassName(java.lang.String)"/>
@@ -312,6 +335,14 @@ namespace Android.View
             IExecuteWithSignature("setFocused", "(Z)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewStructure.html#setHint(java.lang.CharSequence)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        public void SetHint(Java.Lang.CharSequence arg0)
+        {
+            IExecuteWithSignature("setHint", "(Ljava/lang/CharSequence;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewStructure.html#setHtmlInfo(android.view.ViewStructure.HtmlInfo)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.ViewStructure.HtmlInfo"/></param>
@@ -379,6 +410,14 @@ namespace Android.View
         public void SetText(Java.Lang.CharSequence arg0, int arg1, int arg2)
         {
             IExecute("setText", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/ViewStructure.html#setText(java.lang.CharSequence)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        public void SetText(Java.Lang.CharSequence arg0)
+        {
+            IExecuteWithSignature("setText", "(Ljava/lang/CharSequence;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/ViewStructure.html#setTextLines(int[],int[])"/>
@@ -505,18 +544,20 @@ namespace Android.View
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/ViewStructure.HtmlInfo.html#getAttributes()"/> 
+            /// <see href="https://developer.android.com/reference/android/view/ViewStructure.HtmlInfo.html#getTag()"/>
             /// </summary>
-            public Java.Util.List<Android.Util.Pair<Java.Lang.String, Java.Lang.String>> Attributes
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetTag()
             {
-                get { return IExecuteWithSignature<Java.Util.List<Android.Util.Pair<Java.Lang.String, Java.Lang.String>>>("getAttributes", "()Ljava/util/List;"); }
+                return IExecuteWithSignature<Java.Lang.String>("getTag", "()Ljava/lang/String;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/ViewStructure.HtmlInfo.html#getTag()"/> 
+            /// <see href="https://developer.android.com/reference/android/view/ViewStructure.HtmlInfo.html#getAttributes()"/>
             /// </summary>
-            public Java.Lang.String Tag
+            /// <returns><see cref="Java.Util.List"/></returns>
+            public Java.Util.List<Android.Util.Pair<Java.Lang.String, Java.Lang.String>> GetAttributes()
             {
-                get { return IExecuteWithSignature<Java.Lang.String>("getTag", "()Ljava/lang/String;"); }
+                return IExecuteWithSignature<Java.Util.List<Android.Util.Pair<Java.Lang.String, Java.Lang.String>>>("getAttributes", "()Ljava/util/List;");
             }
 
             #endregion

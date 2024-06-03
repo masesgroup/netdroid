@@ -20,10 +20,24 @@ using MASES.JCOBridge.C2JBridge;
 
 namespace Java.Lang
 {
+    #region IIterable<E>
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Iterable.html"/>
+    /// </summary>
+    public partial interface IIterable
+    {
+        /// <summary>
+        /// Returns an iterator over elements of type <see langref="object"/>
+        /// </summary>
+        /// <returns>An <see cref="Util.Iterator{T}"/></returns>
+        Java.Util.Iterator Iterator();
+    }
+    #endregion
+
     /// <summary>
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html"/>
     /// </summary>
-    public class Iterable : JVMBridgeBaseEnumerable<Iterable>
+    public class Iterable : JVMBridgeBaseEnumerable<Iterable>, IIterable
     {
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -45,14 +59,28 @@ namespace Java.Lang
         /// Returns an iterator over elements of type <see langref="object"/>
         /// </summary>
         /// <returns>An <see cref="Java.Util.Iterator{T}"/></returns>
-        public Java.Util.Iterator Iterator => IExecute<Util.Iterator>("iterator");
+        public Java.Util.Iterator Iterator() => IExecute<Util.Iterator>("iterator");
     }
+
+    #region IIterable<E>
+    /// <summary>
+    /// .NET interface for <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Iterable.html"/>
+    /// </summary>
+    public partial interface IIterable<T>
+    {
+        /// <summary>
+        /// Returns an iterator over elements of type <typeparamref name="T"/>.
+        /// </summary>
+        /// <returns>An <see cref="Util.Iterator{T}"/></returns>
+        Java.Util.Iterator<T> Iterator();
+    }
+    #endregion
 
     /// <summary>
     /// .NET implementations of <see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html"/>
     /// </summary>
     /// <typeparam name="T"><see href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html"/></typeparam>
-    public class Iterable<T> : MASES.Netdroid.Specific.NetdroidAsyncEnumerable<Iterable<T>, T>
+    public class Iterable<T> : MASES.Netdroid.Specific.NetdroidAsyncEnumerable<Iterable<T>, T>, IIterable<T>
     {
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
@@ -74,6 +102,6 @@ namespace Java.Lang
         /// Returns an iterator over elements of type <typeparamref name="T"/>.
         /// </summary>
         /// <returns>An <see cref="Util.Iterator{T}"/></returns>
-        public Util.Iterator<T> Iterator => IExecute<Util.Iterator<T>>("iterator");
+        public Util.Iterator<T> Iterator() => IExecute<Util.Iterator<T>>("iterator");
     }
 }

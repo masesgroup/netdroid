@@ -46,11 +46,12 @@ namespace Android.Bluetooth
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothManager.html#getAdapter()"/> 
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothManager.html#getAdapter()"/>
         /// </summary>
-        public Android.Bluetooth.BluetoothAdapter Adapter
+        /// <returns><see cref="Android.Bluetooth.BluetoothAdapter"/></returns>
+        public Android.Bluetooth.BluetoothAdapter GetAdapter()
         {
-            get { return IExecuteWithSignature<Android.Bluetooth.BluetoothAdapter>("getAdapter", "()Landroid/bluetooth/BluetoothAdapter;"); }
+            return IExecuteWithSignature<Android.Bluetooth.BluetoothAdapter>("getAdapter", "()Landroid/bluetooth/BluetoothAdapter;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothManager.html#openGattServer(android.content.Context,android.bluetooth.BluetoothGattServerCallback)"/>

@@ -46,11 +46,12 @@ namespace Android.Health.Connect.Datatypes
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/StepsCadenceRecord.html#getSamples()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/StepsCadenceRecord.html#getSamples()"/>
         /// </summary>
-        public Java.Util.List<Android.Health.Connect.Datatypes.StepsCadenceRecord.StepsCadenceRecordSample> Samples
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Health.Connect.Datatypes.StepsCadenceRecord.StepsCadenceRecordSample> GetSamples()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Health.Connect.Datatypes.StepsCadenceRecord.StepsCadenceRecordSample>>("getSamples", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Java.Util.List<Android.Health.Connect.Datatypes.StepsCadenceRecord.StepsCadenceRecordSample>>("getSamples", "()Ljava/util/List;");
         }
 
         #endregion
@@ -170,18 +171,20 @@ namespace Android.Health.Connect.Datatypes
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/StepsCadenceRecord.StepsCadenceRecordSample.html#getRate()"/> 
+            /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/StepsCadenceRecord.StepsCadenceRecordSample.html#getRate()"/>
             /// </summary>
-            public double Rate
+            /// <returns><see cref="double"/></returns>
+            public double GetRate()
             {
-                get { return IExecuteWithSignature<double>("getRate", "()D"); }
+                return IExecuteWithSignature<double>("getRate", "()D");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/StepsCadenceRecord.StepsCadenceRecordSample.html#getTime()"/> 
+            /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/StepsCadenceRecord.StepsCadenceRecordSample.html#getTime()"/>
             /// </summary>
-            public Java.Time.Instant Time
+            /// <returns><see cref="Java.Time.Instant"/></returns>
+            public Java.Time.Instant GetTime()
             {
-                get { return IExecuteWithSignature<Java.Time.Instant>("getTime", "()Ljava/time/Instant;"); }
+                return IExecuteWithSignature<Java.Time.Instant>("getTime", "()Ljava/time/Instant;");
             }
 
             #endregion

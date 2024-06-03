@@ -38,25 +38,25 @@ namespace Java.Nio.File
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/StandardWatchEventKinds.html#OVERFLOW"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/StandardWatchEventKinds.html#OVERFLOW"/>
         /// </summary>
         public static Java.Nio.File.WatchEvent.Kind OVERFLOW { get { if (!_OVERFLOWReady) { _OVERFLOWContent = SGetField<Java.Nio.File.WatchEvent.Kind>(LocalBridgeClazz, "OVERFLOW"); _OVERFLOWReady = true; } return _OVERFLOWContent; } }
         private static Java.Nio.File.WatchEvent.Kind _OVERFLOWContent = default;
         private static bool _OVERFLOWReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/StandardWatchEventKinds.html#ENTRY_CREATE"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/StandardWatchEventKinds.html#ENTRY_CREATE"/>
         /// </summary>
         public static Java.Nio.File.WatchEvent.Kind ENTRY_CREATE { get { if (!_ENTRY_CREATEReady) { _ENTRY_CREATEContent = SGetField<Java.Nio.File.WatchEvent.Kind>(LocalBridgeClazz, "ENTRY_CREATE"); _ENTRY_CREATEReady = true; } return _ENTRY_CREATEContent; } }
         private static Java.Nio.File.WatchEvent.Kind _ENTRY_CREATEContent = default;
         private static bool _ENTRY_CREATEReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/StandardWatchEventKinds.html#ENTRY_DELETE"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/StandardWatchEventKinds.html#ENTRY_DELETE"/>
         /// </summary>
         public static Java.Nio.File.WatchEvent.Kind ENTRY_DELETE { get { if (!_ENTRY_DELETEReady) { _ENTRY_DELETEContent = SGetField<Java.Nio.File.WatchEvent.Kind>(LocalBridgeClazz, "ENTRY_DELETE"); _ENTRY_DELETEReady = true; } return _ENTRY_DELETEContent; } }
         private static Java.Nio.File.WatchEvent.Kind _ENTRY_DELETEContent = default;
         private static bool _ENTRY_DELETEReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/StandardWatchEventKinds.html#ENTRY_MODIFY"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/StandardWatchEventKinds.html#ENTRY_MODIFY"/>
         /// </summary>
         public static Java.Nio.File.WatchEvent.Kind ENTRY_MODIFY { get { if (!_ENTRY_MODIFYReady) { _ENTRY_MODIFYContent = SGetField<Java.Nio.File.WatchEvent.Kind>(LocalBridgeClazz, "ENTRY_MODIFY"); _ENTRY_MODIFYReady = true; } return _ENTRY_MODIFYContent; } }
         private static Java.Nio.File.WatchEvent.Kind _ENTRY_MODIFYContent = default;

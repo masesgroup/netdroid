@@ -30,7 +30,7 @@ namespace Javax.Crypto
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/EncryptedPrivateKeyInfo.html#%3Cinit%3E(byte[])"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/EncryptedPrivateKeyInfo.html#%3Cinit%3E(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -39,7 +39,7 @@ namespace Javax.Crypto
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/EncryptedPrivateKeyInfo.html#%3Cinit%3E(java.lang.String,byte[])"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/EncryptedPrivateKeyInfo.html#%3Cinit%3E(java.lang.String,byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
@@ -49,7 +49,7 @@ namespace Javax.Crypto
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/EncryptedPrivateKeyInfo.html#%3Cinit%3E(java.security.AlgorithmParameters,byte[])"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/EncryptedPrivateKeyInfo.html#%3Cinit%3E(java.security.AlgorithmParameters,byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.AlgorithmParameters"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
@@ -75,35 +75,40 @@ namespace Javax.Crypto
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/EncryptedPrivateKeyInfo.html#getAlgName()"/> 
+        /// <see href="https://developer.android.com/reference/javax/crypto/EncryptedPrivateKeyInfo.html#getEncoded()"/>
         /// </summary>
-        public Java.Lang.String AlgName
+        /// <returns><see cref="byte"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public byte[] GetEncoded()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAlgName", "()Ljava/lang/String;"); }
+            return IExecuteWithSignatureArray<byte>("getEncoded", "()[B");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/EncryptedPrivateKeyInfo.html#getAlgParameters()"/> 
+        /// <see href="https://developer.android.com/reference/javax/crypto/EncryptedPrivateKeyInfo.html#getEncryptedData()"/>
         /// </summary>
-        public Java.Security.AlgorithmParameters AlgParameters
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetEncryptedData()
         {
-            get { return IExecuteWithSignature<Java.Security.AlgorithmParameters>("getAlgParameters", "()Ljava/security/AlgorithmParameters;"); }
+            return IExecuteWithSignatureArray<byte>("getEncryptedData", "()[B");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/EncryptedPrivateKeyInfo.html#getEncoded()"/> 
+        /// <see href="https://developer.android.com/reference/javax/crypto/EncryptedPrivateKeyInfo.html#getAlgName()"/>
         /// </summary>
-        public byte[] Encoded
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetAlgName()
         {
-            get { return IExecuteWithSignatureArray<byte>("getEncoded", "()[B"); }
+            return IExecuteWithSignature<Java.Lang.String>("getAlgName", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/EncryptedPrivateKeyInfo.html#getEncryptedData()"/> 
+        /// <see href="https://developer.android.com/reference/javax/crypto/EncryptedPrivateKeyInfo.html#getAlgParameters()"/>
         /// </summary>
-        public byte[] EncryptedData
+        /// <returns><see cref="Java.Security.AlgorithmParameters"/></returns>
+        public Java.Security.AlgorithmParameters GetAlgParameters()
         {
-            get { return IExecuteWithSignatureArray<byte>("getEncryptedData", "()[B"); }
+            return IExecuteWithSignature<Java.Security.AlgorithmParameters>("getAlgParameters", "()Ljava/security/AlgorithmParameters;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/EncryptedPrivateKeyInfo.html#getKeySpec(java.security.Key,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/EncryptedPrivateKeyInfo.html#getKeySpec(java.security.Key,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Key"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -116,7 +121,7 @@ namespace Javax.Crypto
             return IExecute<Java.Security.Spec.PKCS8EncodedKeySpec>("getKeySpec", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/EncryptedPrivateKeyInfo.html#getKeySpec(java.security.Key,java.security.Provider)"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/EncryptedPrivateKeyInfo.html#getKeySpec(java.security.Key,java.security.Provider)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Key"/></param>
         /// <param name="arg1"><see cref="Java.Security.Provider"/></param>
@@ -128,7 +133,7 @@ namespace Javax.Crypto
             return IExecute<Java.Security.Spec.PKCS8EncodedKeySpec>("getKeySpec", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/EncryptedPrivateKeyInfo.html#getKeySpec(java.security.Key)"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/EncryptedPrivateKeyInfo.html#getKeySpec(java.security.Key)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Key"/></param>
         /// <returns><see cref="Java.Security.Spec.PKCS8EncodedKeySpec"/></returns>
@@ -139,7 +144,7 @@ namespace Javax.Crypto
             return IExecuteWithSignature<Java.Security.Spec.PKCS8EncodedKeySpec>("getKeySpec", "(Ljava/security/Key;)Ljava/security/spec/PKCS8EncodedKeySpec;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/EncryptedPrivateKeyInfo.html#getKeySpec(javax.crypto.Cipher)"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/EncryptedPrivateKeyInfo.html#getKeySpec(javax.crypto.Cipher)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Crypto.Cipher"/></param>
         /// <returns><see cref="Java.Security.Spec.PKCS8EncodedKeySpec"/></returns>

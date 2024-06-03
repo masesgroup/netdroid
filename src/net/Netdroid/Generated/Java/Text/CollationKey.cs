@@ -46,14 +46,7 @@ namespace Java.Text
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/CollationKey.html#getSourceString()"/> 
-        /// </summary>
-        public Java.Lang.String SourceString
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSourceString", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/CollationKey.html#toByteArray()"/>
+        /// <see href="https://developer.android.com/reference/java/text/CollationKey.html#toByteArray()"/>
         /// </summary>
         /// <returns><see cref="byte"/></returns>
         public byte[] ToByteArray()
@@ -61,7 +54,7 @@ namespace Java.Text
             return IExecuteWithSignatureArray<byte>("toByteArray", "()[B");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/CollationKey.html#compareTo(java.text.CollationKey)"/>
+        /// <see href="https://developer.android.com/reference/java/text/CollationKey.html#compareTo(java.text.CollationKey)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Text.CollationKey"/></param>
         /// <returns><see cref="int"/></returns>
@@ -70,13 +63,21 @@ namespace Java.Text
             return IExecuteWithSignature<int>("compareTo", "(Ljava/text/CollationKey;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/CollationKey.html#compareTo(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/text/CollationKey.html#compareTo(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="int"/></returns>
         public int CompareTo(object arg0)
         {
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/text/CollationKey.html#getSourceString()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSourceString()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getSourceString", "()Ljava/lang/String;");
         }
 
         #endregion

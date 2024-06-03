@@ -56,19 +56,20 @@ namespace Android.Net
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/TelephonyNetworkSpecifier.html#getSubscriptionId()"/> 
-        /// </summary>
-        public int SubscriptionId
-        {
-            get { return IExecuteWithSignature<int>("getSubscriptionId", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/TelephonyNetworkSpecifier.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/TelephonyNetworkSpecifier.html#getSubscriptionId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSubscriptionId()
+        {
+            return IExecuteWithSignature<int>("getSubscriptionId", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/TelephonyNetworkSpecifier.html#writeToParcel(android.os.Parcel,int)"/>

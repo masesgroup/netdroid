@@ -30,7 +30,7 @@ namespace Java.Util.Concurrent.Atomic
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/DoubleAccumulator.html#%3Cinit%3E(java.util.function.DoubleBinaryOperator,double)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/DoubleAccumulator.html#%3Cinit%3E(java.util.function.DoubleBinaryOperator,double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.DoubleBinaryOperator"/></param>
         /// <param name="arg1"><see cref="double"/></param>
@@ -55,14 +55,7 @@ namespace Java.Util.Concurrent.Atomic
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/DoubleAccumulator.html#getThenReset()"/> 
-        /// </summary>
-        public double ThenReset
-        {
-            get { return IExecuteWithSignature<double>("getThenReset", "()D"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/DoubleAccumulator.html#get()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/DoubleAccumulator.html#get()"/>
         /// </summary>
         /// <returns><see cref="double"/></returns>
         public double Get()
@@ -70,7 +63,15 @@ namespace Java.Util.Concurrent.Atomic
             return IExecuteWithSignature<double>("get", "()D");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/DoubleAccumulator.html#accumulate(double)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/DoubleAccumulator.html#getThenReset()"/>
+        /// </summary>
+        /// <returns><see cref="double"/></returns>
+        public double GetThenReset()
+        {
+            return IExecuteWithSignature<double>("getThenReset", "()D");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/DoubleAccumulator.html#accumulate(double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         public void Accumulate(double arg0)
@@ -78,7 +79,7 @@ namespace Java.Util.Concurrent.Atomic
             IExecuteWithSignature("accumulate", "(D)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/DoubleAccumulator.html#reset()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/DoubleAccumulator.html#reset()"/>
         /// </summary>
         public void Reset()
         {

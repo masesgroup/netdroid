@@ -30,7 +30,7 @@ namespace Java.Io
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/PipedReader.html#%3Cinit%3E(int)"/>
+        /// <see href="https://developer.android.com/reference/java/io/PipedReader.html#%3Cinit%3E(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public PipedReader(int arg0)
@@ -38,7 +38,7 @@ namespace Java.Io
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/PipedReader.html#%3Cinit%3E(java.io.PipedWriter,int)"/>
+        /// <see href="https://developer.android.com/reference/java/io/PipedReader.html#%3Cinit%3E(java.io.PipedWriter,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.PipedWriter"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -48,7 +48,7 @@ namespace Java.Io
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/PipedReader.html#%3Cinit%3E(java.io.PipedWriter)"/>
+        /// <see href="https://developer.android.com/reference/java/io/PipedReader.html#%3Cinit%3E(java.io.PipedWriter)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.PipedWriter"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -73,7 +73,7 @@ namespace Java.Io
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/PipedReader.html#connect(java.io.PipedWriter)"/>
+        /// <see href="https://developer.android.com/reference/java/io/PipedReader.html#connect(java.io.PipedWriter)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.PipedWriter"/></param>
         /// <exception cref="Java.Io.IOException"/>

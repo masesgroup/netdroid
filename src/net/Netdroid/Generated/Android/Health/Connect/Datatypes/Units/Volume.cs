@@ -55,11 +55,12 @@ namespace Android.Health.Connect.Datatypes.Units
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/units/Volume.html#getInLiters()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/units/Volume.html#getInLiters()"/>
         /// </summary>
-        public double InLiters
+        /// <returns><see cref="double"/></returns>
+        public double GetInLiters()
         {
-            get { return IExecuteWithSignature<double>("getInLiters", "()D"); }
+            return IExecuteWithSignature<double>("getInLiters", "()D");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/units/Volume.html#compareTo(android.health.connect.datatypes.units.Volume)"/>

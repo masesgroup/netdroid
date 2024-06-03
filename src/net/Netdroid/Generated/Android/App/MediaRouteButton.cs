@@ -84,11 +84,12 @@ namespace Android.App
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/MediaRouteButton.html#getRouteTypes()"/> <see href="https://developer.android.com/reference/android/app/MediaRouteButton.html#setRouteTypes(int)"/>
+        /// <see href="https://developer.android.com/reference/android/app/MediaRouteButton.html#getRouteTypes()"/>
         /// </summary>
-        public int RouteTypes
+        /// <returns><see cref="int"/></returns>
+        public int GetRouteTypes()
         {
-            get { return IExecuteWithSignature<int>("getRouteTypes", "()I"); } set { IExecuteWithSignature("setRouteTypes", "(I)V", value); }
+            return IExecuteWithSignature<int>("getRouteTypes", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/MediaRouteButton.html#onAttachedToWindow()"/>
@@ -111,6 +112,14 @@ namespace Android.App
         public void SetExtendedSettingsClickListener(Android.View.View.OnClickListener arg0)
         {
             IExecuteWithSignature("setExtendedSettingsClickListener", "(Landroid/view/View$OnClickListener;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/MediaRouteButton.html#setRouteTypes(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetRouteTypes(int arg0)
+        {
+            IExecuteWithSignature("setRouteTypes", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/MediaRouteButton.html#showDialog()"/>

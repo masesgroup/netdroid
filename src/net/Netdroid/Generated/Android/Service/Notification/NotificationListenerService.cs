@@ -268,14 +268,14 @@ namespace Android.Service.Notification
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/notification/NotificationListenerService.html#SUPPRESSED_EFFECT_SCREEN_OFF"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int SUPPRESSED_EFFECT_SCREEN_OFF { get { if (!_SUPPRESSED_EFFECT_SCREEN_OFFReady) { _SUPPRESSED_EFFECT_SCREEN_OFFContent = SGetField<int>(LocalBridgeClazz, "SUPPRESSED_EFFECT_SCREEN_OFF"); _SUPPRESSED_EFFECT_SCREEN_OFFReady = true; } return _SUPPRESSED_EFFECT_SCREEN_OFFContent; } }
         private static int _SUPPRESSED_EFFECT_SCREEN_OFFContent = default;
         private static bool _SUPPRESSED_EFFECT_SCREEN_OFFReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/notification/NotificationListenerService.html#SUPPRESSED_EFFECT_SCREEN_ON"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int SUPPRESSED_EFFECT_SCREEN_ON { get { if (!_SUPPRESSED_EFFECT_SCREEN_ONReady) { _SUPPRESSED_EFFECT_SCREEN_ONContent = SGetField<int>(LocalBridgeClazz, "SUPPRESSED_EFFECT_SCREEN_ON"); _SUPPRESSED_EFFECT_SCREEN_ONReady = true; } return _SUPPRESSED_EFFECT_SCREEN_ONContent; } }
         private static int _SUPPRESSED_EFFECT_SCREEN_ONContent = default;
         private static bool _SUPPRESSED_EFFECT_SCREEN_ONReady = false; // this is used because in case of generics 
@@ -334,39 +334,20 @@ namespace Android.Service.Notification
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/notification/NotificationListenerService.html#getActiveNotifications()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/notification/NotificationListenerService.html#getCurrentRanking()"/>
         /// </summary>
-        public Android.Service.Notification.StatusBarNotification[] ActiveNotifications
+        /// <returns><see cref="Android.Service.Notification.NotificationListenerService.RankingMap"/></returns>
+        public Android.Service.Notification.NotificationListenerService.RankingMap GetCurrentRanking()
         {
-            get { return IExecuteWithSignatureArray<Android.Service.Notification.StatusBarNotification>("getActiveNotifications", "()[Landroid/service/notification/StatusBarNotification;"); }
+            return IExecuteWithSignature<Android.Service.Notification.NotificationListenerService.RankingMap>("getCurrentRanking", "()Landroid/service/notification/NotificationListenerService$RankingMap;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/notification/NotificationListenerService.html#getCurrentInterruptionFilter()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/notification/NotificationListenerService.html#getActiveNotifications()"/>
         /// </summary>
-        public int CurrentInterruptionFilter
+        /// <returns><see cref="Android.Service.Notification.StatusBarNotification"/></returns>
+        public Android.Service.Notification.StatusBarNotification[] GetActiveNotifications()
         {
-            get { return IExecuteWithSignature<int>("getCurrentInterruptionFilter", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/notification/NotificationListenerService.html#getCurrentListenerHints()"/> 
-        /// </summary>
-        public int CurrentListenerHints
-        {
-            get { return IExecuteWithSignature<int>("getCurrentListenerHints", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/notification/NotificationListenerService.html#getCurrentRanking()"/> 
-        /// </summary>
-        public Android.Service.Notification.NotificationListenerService.RankingMap CurrentRanking
-        {
-            get { return IExecuteWithSignature<Android.Service.Notification.NotificationListenerService.RankingMap>("getCurrentRanking", "()Landroid/service/notification/NotificationListenerService$RankingMap;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/notification/NotificationListenerService.html#getSnoozedNotifications()"/> 
-        /// </summary>
-        public Android.Service.Notification.StatusBarNotification[] SnoozedNotifications
-        {
-            get { return IExecuteWithSignatureArray<Android.Service.Notification.StatusBarNotification>("getSnoozedNotifications", "()[Landroid/service/notification/StatusBarNotification;"); }
+            return IExecuteWithSignatureArray<Android.Service.Notification.StatusBarNotification>("getActiveNotifications", "()[Landroid/service/notification/StatusBarNotification;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/notification/NotificationListenerService.html#getActiveNotifications(java.lang.String[])"/>
@@ -376,6 +357,30 @@ namespace Android.Service.Notification
         public Android.Service.Notification.StatusBarNotification[] GetActiveNotifications(Java.Lang.String[] arg0)
         {
             return IExecuteWithSignatureArray<Android.Service.Notification.StatusBarNotification>("getActiveNotifications", "([Ljava/lang/String;)[Landroid/service/notification/StatusBarNotification;", new object[] { arg0 });
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/notification/NotificationListenerService.html#getSnoozedNotifications()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Service.Notification.StatusBarNotification"/></returns>
+        public Android.Service.Notification.StatusBarNotification[] GetSnoozedNotifications()
+        {
+            return IExecuteWithSignatureArray<Android.Service.Notification.StatusBarNotification>("getSnoozedNotifications", "()[Landroid/service/notification/StatusBarNotification;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/notification/NotificationListenerService.html#getCurrentInterruptionFilter()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCurrentInterruptionFilter()
+        {
+            return IExecuteWithSignature<int>("getCurrentInterruptionFilter", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/notification/NotificationListenerService.html#getCurrentListenerHints()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCurrentListenerHints()
+        {
+            return IExecuteWithSignature<int>("getCurrentListenerHints", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/notification/NotificationListenerService.html#getNotificationChannels(java.lang.String,android.os.UserHandle)"/>
@@ -410,7 +415,7 @@ namespace Android.Service.Notification
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void CancelNotification(Java.Lang.String arg0, Java.Lang.String arg1, int arg2)
         {
             IExecute("cancelNotification", arg0, arg1, arg2);
@@ -658,95 +663,20 @@ namespace Android.Service.Notification
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/service/notification/NotificationListenerService.Ranking.html#getChannel()"/> 
+            /// <see href="https://developer.android.com/reference/android/service/notification/NotificationListenerService.Ranking.html#getChannel()"/>
             /// </summary>
-            public Android.App.NotificationChannel Channel
+            /// <returns><see cref="Android.App.NotificationChannel"/></returns>
+            public Android.App.NotificationChannel GetChannel()
             {
-                get { return IExecuteWithSignature<Android.App.NotificationChannel>("getChannel", "()Landroid/app/NotificationChannel;"); }
+                return IExecuteWithSignature<Android.App.NotificationChannel>("getChannel", "()Landroid/app/NotificationChannel;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/service/notification/NotificationListenerService.Ranking.html#getConversationShortcutInfo()"/> 
+            /// <see href="https://developer.android.com/reference/android/service/notification/NotificationListenerService.Ranking.html#getConversationShortcutInfo()"/>
             /// </summary>
-            public Android.Content.Pm.ShortcutInfo ConversationShortcutInfo
+            /// <returns><see cref="Android.Content.Pm.ShortcutInfo"/></returns>
+            public Android.Content.Pm.ShortcutInfo GetConversationShortcutInfo()
             {
-                get { return IExecuteWithSignature<Android.Content.Pm.ShortcutInfo>("getConversationShortcutInfo", "()Landroid/content/pm/ShortcutInfo;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/service/notification/NotificationListenerService.Ranking.html#getImportance()"/> 
-            /// </summary>
-            public int Importance
-            {
-                get { return IExecuteWithSignature<int>("getImportance", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/service/notification/NotificationListenerService.Ranking.html#getImportanceExplanation()"/> 
-            /// </summary>
-            public Java.Lang.CharSequence ImportanceExplanation
-            {
-                get { return IExecuteWithSignature<Java.Lang.CharSequence>("getImportanceExplanation", "()Ljava/lang/CharSequence;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/service/notification/NotificationListenerService.Ranking.html#getKey()"/> 
-            /// </summary>
-            public Java.Lang.String Key
-            {
-                get { return IExecuteWithSignature<Java.Lang.String>("getKey", "()Ljava/lang/String;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/service/notification/NotificationListenerService.Ranking.html#getLastAudiblyAlertedMillis()"/> 
-            /// </summary>
-            public long LastAudiblyAlertedMillis
-            {
-                get { return IExecuteWithSignature<long>("getLastAudiblyAlertedMillis", "()J"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/service/notification/NotificationListenerService.Ranking.html#getLockscreenVisibilityOverride()"/> 
-            /// </summary>
-            public int LockscreenVisibilityOverride
-            {
-                get { return IExecuteWithSignature<int>("getLockscreenVisibilityOverride", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/service/notification/NotificationListenerService.Ranking.html#getOverrideGroupKey()"/> 
-            /// </summary>
-            public Java.Lang.String OverrideGroupKey
-            {
-                get { return IExecuteWithSignature<Java.Lang.String>("getOverrideGroupKey", "()Ljava/lang/String;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/service/notification/NotificationListenerService.Ranking.html#getRank()"/> 
-            /// </summary>
-            public int Rank
-            {
-                get { return IExecuteWithSignature<int>("getRank", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/service/notification/NotificationListenerService.Ranking.html#getSmartActions()"/> 
-            /// </summary>
-            public Java.Util.List<Android.App.Notification.Action> SmartActions
-            {
-                get { return IExecuteWithSignature<Java.Util.List<Android.App.Notification.Action>>("getSmartActions", "()Ljava/util/List;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/service/notification/NotificationListenerService.Ranking.html#getSmartReplies()"/> 
-            /// </summary>
-            public Java.Util.List<Java.Lang.CharSequence> SmartReplies
-            {
-                get { return IExecuteWithSignature<Java.Util.List<Java.Lang.CharSequence>>("getSmartReplies", "()Ljava/util/List;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/service/notification/NotificationListenerService.Ranking.html#getSuppressedVisualEffects()"/> 
-            /// </summary>
-            public int SuppressedVisualEffects
-            {
-                get { return IExecuteWithSignature<int>("getSuppressedVisualEffects", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/service/notification/NotificationListenerService.Ranking.html#getUserSentiment()"/> 
-            /// </summary>
-            public int UserSentiment
-            {
-                get { return IExecuteWithSignature<int>("getUserSentiment", "()I"); }
+                return IExecuteWithSignature<Android.Content.Pm.ShortcutInfo>("getConversationShortcutInfo", "()Landroid/content/pm/ShortcutInfo;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/service/notification/NotificationListenerService.Ranking.html#canBubble()"/>
@@ -796,6 +726,94 @@ namespace Android.Service.Notification
             {
                 return IExecuteWithSignature<bool>("matchesInterruptionFilter", "()Z");
             }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/service/notification/NotificationListenerService.Ranking.html#getImportance()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetImportance()
+            {
+                return IExecuteWithSignature<int>("getImportance", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/service/notification/NotificationListenerService.Ranking.html#getLockscreenVisibilityOverride()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetLockscreenVisibilityOverride()
+            {
+                return IExecuteWithSignature<int>("getLockscreenVisibilityOverride", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/service/notification/NotificationListenerService.Ranking.html#getRank()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetRank()
+            {
+                return IExecuteWithSignature<int>("getRank", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/service/notification/NotificationListenerService.Ranking.html#getSuppressedVisualEffects()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetSuppressedVisualEffects()
+            {
+                return IExecuteWithSignature<int>("getSuppressedVisualEffects", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/service/notification/NotificationListenerService.Ranking.html#getUserSentiment()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetUserSentiment()
+            {
+                return IExecuteWithSignature<int>("getUserSentiment", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/service/notification/NotificationListenerService.Ranking.html#getImportanceExplanation()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+            public Java.Lang.CharSequence GetImportanceExplanation()
+            {
+                return IExecuteWithSignature<Java.Lang.CharSequence>("getImportanceExplanation", "()Ljava/lang/CharSequence;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/service/notification/NotificationListenerService.Ranking.html#getKey()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetKey()
+            {
+                return IExecuteWithSignature<Java.Lang.String>("getKey", "()Ljava/lang/String;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/service/notification/NotificationListenerService.Ranking.html#getOverrideGroupKey()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetOverrideGroupKey()
+            {
+                return IExecuteWithSignature<Java.Lang.String>("getOverrideGroupKey", "()Ljava/lang/String;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/service/notification/NotificationListenerService.Ranking.html#getSmartActions()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Util.List"/></returns>
+            public Java.Util.List<Android.App.Notification.Action> GetSmartActions()
+            {
+                return IExecuteWithSignature<Java.Util.List<Android.App.Notification.Action>>("getSmartActions", "()Ljava/util/List;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/service/notification/NotificationListenerService.Ranking.html#getSmartReplies()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Util.List"/></returns>
+            public Java.Util.List<Java.Lang.CharSequence> GetSmartReplies()
+            {
+                return IExecuteWithSignature<Java.Util.List<Java.Lang.CharSequence>>("getSmartReplies", "()Ljava/util/List;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/service/notification/NotificationListenerService.Ranking.html#getLastAudiblyAlertedMillis()"/>
+            /// </summary>
+            /// <returns><see cref="long"/></returns>
+            public long GetLastAudiblyAlertedMillis()
+            {
+                return IExecuteWithSignature<long>("getLastAudiblyAlertedMillis", "()J");
+            }
 
             #endregion
 
@@ -834,13 +852,6 @@ namespace Android.Service.Notification
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/service/notification/NotificationListenerService.RankingMap.html#getOrderedKeys()"/> 
-            /// </summary>
-            public Java.Lang.String[] OrderedKeys
-            {
-                get { return IExecuteWithSignatureArray<Java.Lang.String>("getOrderedKeys", "()[Ljava/lang/String;"); }
-            }
-            /// <summary>
             /// <see href="https://developer.android.com/reference/android/service/notification/NotificationListenerService.RankingMap.html#getRanking(java.lang.String,android.service.notification.NotificationListenerService.Ranking)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -857,6 +868,14 @@ namespace Android.Service.Notification
             public int DescribeContents()
             {
                 return IExecuteWithSignature<int>("describeContents", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/service/notification/NotificationListenerService.RankingMap.html#getOrderedKeys()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String[] GetOrderedKeys()
+            {
+                return IExecuteWithSignatureArray<Java.Lang.String>("getOrderedKeys", "()[Ljava/lang/String;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/service/notification/NotificationListenerService.RankingMap.html#writeToParcel(android.os.Parcel,int)"/>

@@ -62,33 +62,37 @@ namespace Android.Media
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaTimestamp.html#getAnchorMediaTimeUs()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/MediaTimestamp.html#getMediaClockRate()"/>
         /// </summary>
-        public long AnchorMediaTimeUs
+        /// <returns><see cref="float"/></returns>
+        public float GetMediaClockRate()
         {
-            get { return IExecuteWithSignature<long>("getAnchorMediaTimeUs", "()J"); }
+            return IExecuteWithSignature<float>("getMediaClockRate", "()F");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaTimestamp.html#getAnchorSystemNanoTime()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/MediaTimestamp.html#getAnchorMediaTimeUs()"/>
         /// </summary>
-        public long AnchorSystemNanoTime
+        /// <returns><see cref="long"/></returns>
+        public long GetAnchorMediaTimeUs()
         {
-            get { return IExecuteWithSignature<long>("getAnchorSystemNanoTime", "()J"); }
+            return IExecuteWithSignature<long>("getAnchorMediaTimeUs", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaTimestamp.html#getAnchorSytemNanoTime()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/MediaTimestamp.html#getAnchorSystemNanoTime()"/>
         /// </summary>
-        [System.Obsolete()]
-        public long AnchorSytemNanoTime
+        /// <returns><see cref="long"/></returns>
+        public long GetAnchorSystemNanoTime()
         {
-            get { return IExecuteWithSignature<long>("getAnchorSytemNanoTime", "()J"); }
+            return IExecuteWithSignature<long>("getAnchorSystemNanoTime", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaTimestamp.html#getMediaClockRate()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/MediaTimestamp.html#getAnchorSytemNanoTime()"/>
         /// </summary>
-        public float MediaClockRate
+        /// <returns><see cref="long"/></returns>
+        [global::System.Obsolete()]
+        public long GetAnchorSytemNanoTime()
         {
-            get { return IExecuteWithSignature<float>("getMediaClockRate", "()F"); }
+            return IExecuteWithSignature<long>("getAnchorSytemNanoTime", "()J");
         }
 
         #endregion

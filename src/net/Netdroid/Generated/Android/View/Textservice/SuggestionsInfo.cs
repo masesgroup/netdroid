@@ -110,40 +110,44 @@ namespace Android.View.Textservice
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textservice/SuggestionsInfo.html#getCookie()"/> 
-        /// </summary>
-        public int Cookie
-        {
-            get { return IExecuteWithSignature<int>("getCookie", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textservice/SuggestionsInfo.html#getSequence()"/> 
-        /// </summary>
-        public int Sequence
-        {
-            get { return IExecuteWithSignature<int>("getSequence", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textservice/SuggestionsInfo.html#getSuggestionsAttributes()"/> 
-        /// </summary>
-        public int SuggestionsAttributes
-        {
-            get { return IExecuteWithSignature<int>("getSuggestionsAttributes", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textservice/SuggestionsInfo.html#getSuggestionsCount()"/> 
-        /// </summary>
-        public int SuggestionsCount
-        {
-            get { return IExecuteWithSignature<int>("getSuggestionsCount", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/textservice/SuggestionsInfo.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/textservice/SuggestionsInfo.html#getCookie()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCookie()
+        {
+            return IExecuteWithSignature<int>("getCookie", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/textservice/SuggestionsInfo.html#getSequence()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSequence()
+        {
+            return IExecuteWithSignature<int>("getSequence", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/textservice/SuggestionsInfo.html#getSuggestionsAttributes()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSuggestionsAttributes()
+        {
+            return IExecuteWithSignature<int>("getSuggestionsAttributes", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/textservice/SuggestionsInfo.html#getSuggestionsCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSuggestionsCount()
+        {
+            return IExecuteWithSignature<int>("getSuggestionsCount", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/textservice/SuggestionsInfo.html#getSuggestionAt(int)"/>

@@ -42,7 +42,7 @@ namespace Java.Time.Chrono
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/HijrahEra.html#AH"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/HijrahEra.html#AH"/>
         /// </summary>
         public static Java.Time.Chrono.HijrahEra AH { get { if (!_AHReady) { _AHContent = SGetField<Java.Time.Chrono.HijrahEra>(LocalBridgeClazz, "AH"); _AHReady = true; } return _AHContent; } }
         private static Java.Time.Chrono.HijrahEra _AHContent = default;
@@ -52,7 +52,7 @@ namespace Java.Time.Chrono
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/HijrahEra.html#of(int)"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/HijrahEra.html#of(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Time.Chrono.HijrahEra"/></returns>
@@ -61,7 +61,7 @@ namespace Java.Time.Chrono
             return SExecuteWithSignature<Java.Time.Chrono.HijrahEra>(LocalBridgeClazz, "of", "(I)Ljava/time/chrono/HijrahEra;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/HijrahEra.html#valueOf(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/HijrahEra.html#valueOf(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Time.Chrono.HijrahEra"/></returns>
@@ -70,7 +70,7 @@ namespace Java.Time.Chrono
             return SExecuteWithSignature<Java.Time.Chrono.HijrahEra>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/time/chrono/HijrahEra;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/HijrahEra.html#values()"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/HijrahEra.html#values()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.Chrono.HijrahEra"/></returns>
         public static Java.Time.Chrono.HijrahEra[] Values()
@@ -82,14 +82,15 @@ namespace Java.Time.Chrono
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/HijrahEra.html#getValue()"/> 
+        /// <see href="https://developer.android.com/reference/java/time/chrono/HijrahEra.html#getValue()"/>
         /// </summary>
-        public int Value
+        /// <returns><see cref="int"/></returns>
+        public int GetValue()
         {
-            get { return IExecuteWithSignature<int>("getValue", "()I"); }
+            return IExecuteWithSignature<int>("getValue", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/HijrahEra.html#getDisplayName(java.time.format.TextStyle,java.util.Locale)"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/HijrahEra.html#getDisplayName(java.time.format.TextStyle,java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Format.TextStyle"/></param>
         /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
@@ -99,7 +100,7 @@ namespace Java.Time.Chrono
             return IExecute<Java.Lang.String>("getDisplayName", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/HijrahEra.html#range(java.time.temporal.TemporalField)"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/HijrahEra.html#range(java.time.temporal.TemporalField)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
         /// <returns><see cref="Java.Time.Temporal.ValueRange"/></returns>

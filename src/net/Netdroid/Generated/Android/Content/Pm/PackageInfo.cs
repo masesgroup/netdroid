@@ -84,7 +84,7 @@ namespace Android.Content.Pm
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageInfo.html#signatures"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Content.Pm.Signature[] signatures { get { return IGetFieldArray<Android.Content.Pm.Signature>("signatures"); } set { ISetField("signatures", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageInfo.html#signingInfo"/>
@@ -109,7 +109,7 @@ namespace Android.Content.Pm
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageInfo.html#versionCode"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int versionCode { get { return IGetField<int>("versionCode"); } set { ISetField("versionCode", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageInfo.html#gids"/>
@@ -202,19 +202,28 @@ namespace Android.Content.Pm
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/PackageInfo.html#getLongVersionCode()"/> <see href="https://developer.android.com/reference/android/content/pm/PackageInfo.html#setLongVersionCode(long)"/>
-        /// </summary>
-        public long LongVersionCode
-        {
-            get { return IExecuteWithSignature<long>("getLongVersionCode", "()J"); } set { IExecuteWithSignature("setLongVersionCode", "(J)V", value); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageInfo.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PackageInfo.html#getLongVersionCode()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetLongVersionCode()
+        {
+            return IExecuteWithSignature<long>("getLongVersionCode", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PackageInfo.html#setLongVersionCode(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        public void SetLongVersionCode(long arg0)
+        {
+            IExecuteWithSignature("setLongVersionCode", "(J)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageInfo.html#writeToParcel(android.os.Parcel,int)"/>

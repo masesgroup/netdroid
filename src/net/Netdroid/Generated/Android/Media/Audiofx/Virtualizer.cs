@@ -95,32 +95,15 @@ namespace Android.Media.Audiofx
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/audiofx/Virtualizer.html#getProperties()"/> <see href="https://developer.android.com/reference/android/media/audiofx/Virtualizer.html#setProperties(android.media.audiofx.Virtualizer.Settings)"/>
+        /// <see href="https://developer.android.com/reference/android/media/audiofx/Virtualizer.html#getProperties()"/>
         /// </summary>
-        public Android.Media.Audiofx.Virtualizer.Settings Properties
+        /// <returns><see cref="Android.Media.Audiofx.Virtualizer.Settings"/></returns>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Java.Lang.IllegalStateException"/>
+        /// <exception cref="Java.Lang.UnsupportedOperationException"/>
+        public Android.Media.Audiofx.Virtualizer.Settings GetProperties()
         {
-            get { return IExecuteWithSignature<Android.Media.Audiofx.Virtualizer.Settings>("getProperties", "()Landroid/media/audiofx/Virtualizer$Settings;"); } set { IExecuteWithSignature("setProperties", "(Landroid/media/audiofx/Virtualizer$Settings;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/audiofx/Virtualizer.html#getRoundedStrength()"/> 
-        /// </summary>
-        public short RoundedStrength
-        {
-            get { return IExecuteWithSignature<short>("getRoundedStrength", "()S"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/audiofx/Virtualizer.html#getStrengthSupported()"/> 
-        /// </summary>
-        public bool StrengthSupported
-        {
-            get { return IExecuteWithSignature<bool>("getStrengthSupported", "()Z"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/audiofx/Virtualizer.html#getVirtualizationMode()"/> 
-        /// </summary>
-        public int VirtualizationMode
-        {
-            get { return IExecuteWithSignature<int>("getVirtualizationMode", "()I"); }
+            return IExecuteWithSignature<Android.Media.Audiofx.Virtualizer.Settings>("getProperties", "()Landroid/media/audiofx/Virtualizer$Settings;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/audiofx/Virtualizer.html#canVirtualize(int,int)"/>
@@ -162,12 +145,52 @@ namespace Android.Media.Audiofx
             return IExecute<bool>("getSpeakerAngles", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/audiofx/Virtualizer.html#getStrengthSupported()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetStrengthSupported()
+        {
+            return IExecuteWithSignature<bool>("getStrengthSupported", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/audiofx/Virtualizer.html#getVirtualizationMode()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Java.Lang.IllegalStateException"/>
+        /// <exception cref="Java.Lang.UnsupportedOperationException"/>
+        public int GetVirtualizationMode()
+        {
+            return IExecuteWithSignature<int>("getVirtualizationMode", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/audiofx/Virtualizer.html#getRoundedStrength()"/>
+        /// </summary>
+        /// <returns><see cref="short"/></returns>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Java.Lang.IllegalStateException"/>
+        /// <exception cref="Java.Lang.UnsupportedOperationException"/>
+        public short GetRoundedStrength()
+        {
+            return IExecuteWithSignature<short>("getRoundedStrength", "()S");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/audiofx/Virtualizer.html#setParameterListener(android.media.audiofx.Virtualizer.OnParameterChangeListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Media.Audiofx.Virtualizer.OnParameterChangeListener"/></param>
         public void SetParameterListener(Android.Media.Audiofx.Virtualizer.OnParameterChangeListener arg0)
         {
             IExecuteWithSignature("setParameterListener", "(Landroid/media/audiofx/Virtualizer$OnParameterChangeListener;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/audiofx/Virtualizer.html#setProperties(android.media.audiofx.Virtualizer.Settings)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Media.Audiofx.Virtualizer.Settings"/></param>
+        /// <exception cref="Java.Lang.IllegalArgumentException"/>
+        /// <exception cref="Java.Lang.IllegalStateException"/>
+        /// <exception cref="Java.Lang.UnsupportedOperationException"/>
+        public void SetProperties(Android.Media.Audiofx.Virtualizer.Settings arg0)
+        {
+            IExecuteWithSignature("setProperties", "(Landroid/media/audiofx/Virtualizer$Settings;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/audiofx/Virtualizer.html#setStrength(short)"/>
@@ -209,7 +232,7 @@ namespace Android.Media.Audiofx
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onParameterChange", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.Audiofx.Virtualizer>>>(OnParameterChangeEventHandler));
+                AddEventHandler("onParameterChange", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.Audiofx.Virtualizer>>>(OnParameterChangeEventHandler));
 
             }
 
@@ -217,7 +240,7 @@ namespace Android.Media.Audiofx
             /// Handler for <see href="https://developer.android.com/reference/android/media/audiofx/Virtualizer.OnParameterChangeListener.html#onParameterChange(android.media.audiofx.Virtualizer,int,int,short)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnParameterChange"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Media.Audiofx.Virtualizer, int, int, short> OnOnParameterChange { get; set; } = null;
+            public global::System.Action<Android.Media.Audiofx.Virtualizer, int, int, short> OnOnParameterChange { get; set; } = null;
 
             void OnParameterChangeEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Media.Audiofx.Virtualizer>> data)
             {

@@ -46,7 +46,7 @@ namespace Java.Lang.Ref
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ref/ReferenceQueue.html#poll()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ref/ReferenceQueue.html#poll()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.Ref.Reference"/></returns>
         public Java.Lang.Ref.Reference Poll()
@@ -54,7 +54,7 @@ namespace Java.Lang.Ref
             return IExecuteWithSignature<Java.Lang.Ref.Reference>("poll", "()Ljava/lang/ref/Reference;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ref/ReferenceQueue.html#remove()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ref/ReferenceQueue.html#remove()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.Ref.Reference"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
@@ -63,7 +63,7 @@ namespace Java.Lang.Ref
             return IExecuteWithSignature<Java.Lang.Ref.Reference>("remove", "()Ljava/lang/ref/Reference;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ref/ReferenceQueue.html#remove(long)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ref/ReferenceQueue.html#remove(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Lang.Ref.Reference"/></returns>
@@ -109,33 +109,33 @@ namespace Java.Lang.Ref
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ref/ReferenceQueue.html#poll()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ref/ReferenceQueue.html#poll()"/>
         /// </summary>
         /// <typeparam name="ReturnExtendsT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Lang.Ref.Reference"/></returns>
-        public Java.Lang.Ref.Reference<ReturnExtendsT> Poll<ReturnExtendsT>() where ReturnExtendsT: T
+        public Java.Lang.Ref.Reference<ReturnExtendsT> Poll<ReturnExtendsT>() where ReturnExtendsT : T
         {
             return IExecuteWithSignature<Java.Lang.Ref.Reference<ReturnExtendsT>>("poll", "()Ljava/lang/ref/Reference;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ref/ReferenceQueue.html#remove()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ref/ReferenceQueue.html#remove()"/>
         /// </summary>
         /// <typeparam name="ReturnExtendsT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Lang.Ref.Reference"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
-        public Java.Lang.Ref.Reference<ReturnExtendsT> Remove<ReturnExtendsT>() where ReturnExtendsT: T
+        public Java.Lang.Ref.Reference<ReturnExtendsT> Remove<ReturnExtendsT>() where ReturnExtendsT : T
         {
             return IExecuteWithSignature<Java.Lang.Ref.Reference<ReturnExtendsT>>("remove", "()Ljava/lang/ref/Reference;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ref/ReferenceQueue.html#remove(long)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ref/ReferenceQueue.html#remove(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <typeparam name="ReturnExtendsT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Lang.Ref.Reference"/></returns>
         /// <exception cref="Java.Lang.IllegalArgumentException"/>
         /// <exception cref="Java.Lang.InterruptedException"/>
-        public Java.Lang.Ref.Reference<ReturnExtendsT> Remove<ReturnExtendsT>(long arg0) where ReturnExtendsT: T
+        public Java.Lang.Ref.Reference<ReturnExtendsT> Remove<ReturnExtendsT>(long arg0) where ReturnExtendsT : T
         {
             return IExecuteWithSignature<Java.Lang.Ref.Reference<ReturnExtendsT>>("remove", "(J)Ljava/lang/ref/Reference;", arg0);
         }

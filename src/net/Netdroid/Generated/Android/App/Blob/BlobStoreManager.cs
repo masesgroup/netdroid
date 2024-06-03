@@ -46,20 +46,6 @@ namespace Android.App.Blob
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/blob/BlobStoreManager.html#getLeasedBlobs()"/> 
-        /// </summary>
-        public Java.Util.List<Android.App.Blob.BlobHandle> LeasedBlobs
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.App.Blob.BlobHandle>>("getLeasedBlobs", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/blob/BlobStoreManager.html#getRemainingLeaseQuotaBytes()"/> 
-        /// </summary>
-        public long RemainingLeaseQuotaBytes
-        {
-            get { return IExecuteWithSignature<long>("getRemainingLeaseQuotaBytes", "()J"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/blob/BlobStoreManager.html#openSession(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
@@ -80,6 +66,15 @@ namespace Android.App.Blob
             return IExecuteWithSignature<Android.Os.ParcelFileDescriptor>("openBlob", "(Landroid/app/blob/BlobHandle;)Landroid/os/ParcelFileDescriptor;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/blob/BlobStoreManager.html#getLeasedBlobs()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Util.List<Android.App.Blob.BlobHandle> GetLeasedBlobs()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.App.Blob.BlobHandle>>("getLeasedBlobs", "()Ljava/util/List;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/blob/BlobStoreManager.html#createSession(android.app.blob.BlobHandle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.App.Blob.BlobHandle"/></param>
@@ -88,6 +83,14 @@ namespace Android.App.Blob
         public long CreateSession(Android.App.Blob.BlobHandle arg0)
         {
             return IExecuteWithSignature<long>("createSession", "(Landroid/app/blob/BlobHandle;)J", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/blob/BlobStoreManager.html#getRemainingLeaseQuotaBytes()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetRemainingLeaseQuotaBytes()
+        {
+            return IExecuteWithSignature<long>("getRemainingLeaseQuotaBytes", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/blob/BlobStoreManager.html#abandonSession(long)"/>
@@ -174,13 +177,6 @@ namespace Android.App.Blob
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/blob/BlobStoreManager.Session.html#getSize()"/> 
-            /// </summary>
-            public long Size
-            {
-                get { return IExecuteWithSignature<long>("getSize", "()J"); }
-            }
-            /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/blob/BlobStoreManager.Session.html#openRead()"/>
             /// </summary>
             /// <returns><see cref="Android.Os.ParcelFileDescriptor"/></returns>
@@ -228,6 +224,15 @@ namespace Android.App.Blob
             public bool IsSameSignatureAccessAllowed()
             {
                 return IExecuteWithSignature<bool>("isSameSignatureAccessAllowed", "()Z");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/app/blob/BlobStoreManager.Session.html#getSize()"/>
+            /// </summary>
+            /// <returns><see cref="long"/></returns>
+            /// <exception cref="Java.Io.IOException"/>
+            public long GetSize()
+            {
+                return IExecuteWithSignature<long>("getSize", "()J");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/app/blob/BlobStoreManager.Session.html#abandon()"/>

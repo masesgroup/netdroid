@@ -100,18 +100,12 @@ namespace Android.Os
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/HardwarePropertiesManager.html#getCpuUsages()"/> 
+        /// <see href="https://developer.android.com/reference/android/os/HardwarePropertiesManager.html#getCpuUsages()"/>
         /// </summary>
-        public Android.Os.CpuUsageInfo[] CpuUsages
+        /// <returns><see cref="Android.Os.CpuUsageInfo"/></returns>
+        public Android.Os.CpuUsageInfo[] GetCpuUsages()
         {
-            get { return IExecuteWithSignatureArray<Android.Os.CpuUsageInfo>("getCpuUsages", "()[Landroid/os/CpuUsageInfo;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/HardwarePropertiesManager.html#getFanSpeeds()"/> 
-        /// </summary>
-        public float[] FanSpeeds
-        {
-            get { return IExecuteWithSignatureArray<float>("getFanSpeeds", "()[F"); }
+            return IExecuteWithSignatureArray<Android.Os.CpuUsageInfo>("getCpuUsages", "()[Landroid/os/CpuUsageInfo;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/HardwarePropertiesManager.html#getDeviceTemperatures(int,int)"/>
@@ -122,6 +116,14 @@ namespace Android.Os
         public float[] GetDeviceTemperatures(int arg0, int arg1)
         {
             return IExecuteArray<float>("getDeviceTemperatures", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/HardwarePropertiesManager.html#getFanSpeeds()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float[] GetFanSpeeds()
+        {
+            return IExecuteWithSignatureArray<float>("getFanSpeeds", "()[F");
         }
 
         #endregion

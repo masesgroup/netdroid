@@ -64,14 +64,16 @@ namespace Javax.Sql
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/PooledConnection.html#getConnection()"/> 
+        /// <see href="https://developer.android.com/reference/javax/sql/PooledConnection.html#getConnection()"/>
         /// </summary>
-        public Java.Sql.Connection Connection
+        /// <returns><see cref="Java.Sql.Connection"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public Java.Sql.Connection GetConnection()
         {
-            get { return IExecuteWithSignature<Java.Sql.Connection>("getConnection", "()Ljava/sql/Connection;"); }
+            return IExecuteWithSignature<Java.Sql.Connection>("getConnection", "()Ljava/sql/Connection;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/PooledConnection.html#addConnectionEventListener(javax.sql.ConnectionEventListener)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/PooledConnection.html#addConnectionEventListener(javax.sql.ConnectionEventListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Sql.ConnectionEventListener"/></param>
         public void AddConnectionEventListener(Javax.Sql.ConnectionEventListener arg0)
@@ -79,7 +81,7 @@ namespace Javax.Sql
             IExecuteWithSignature("addConnectionEventListener", "(Ljavax/sql/ConnectionEventListener;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/PooledConnection.html#addStatementEventListener(javax.sql.StatementEventListener)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/PooledConnection.html#addStatementEventListener(javax.sql.StatementEventListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Sql.StatementEventListener"/></param>
         public void AddStatementEventListener(Javax.Sql.StatementEventListener arg0)
@@ -87,7 +89,7 @@ namespace Javax.Sql
             IExecuteWithSignature("addStatementEventListener", "(Ljavax/sql/StatementEventListener;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/PooledConnection.html#close()"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/PooledConnection.html#close()"/>
         /// </summary>
         /// <exception cref="Java.Sql.SQLException"/>
         public void Close()
@@ -95,7 +97,7 @@ namespace Javax.Sql
             IExecuteWithSignature("close", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/PooledConnection.html#removeConnectionEventListener(javax.sql.ConnectionEventListener)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/PooledConnection.html#removeConnectionEventListener(javax.sql.ConnectionEventListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Sql.ConnectionEventListener"/></param>
         public void RemoveConnectionEventListener(Javax.Sql.ConnectionEventListener arg0)
@@ -103,7 +105,7 @@ namespace Javax.Sql
             IExecuteWithSignature("removeConnectionEventListener", "(Ljavax/sql/ConnectionEventListener;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/PooledConnection.html#removeStatementEventListener(javax.sql.StatementEventListener)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/PooledConnection.html#removeStatementEventListener(javax.sql.StatementEventListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Sql.StatementEventListener"/></param>
         public void RemoveStatementEventListener(Javax.Sql.StatementEventListener arg0)

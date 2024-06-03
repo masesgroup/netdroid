@@ -312,7 +312,7 @@ namespace Android.App
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="int"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int CheckOp(Java.Lang.String arg0, int arg1, Java.Lang.String arg2)
         {
             return IExecute<int>("checkOp", arg0, arg1, arg2);
@@ -324,7 +324,7 @@ namespace Android.App
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="int"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int CheckOpNoThrow(Java.Lang.String arg0, int arg1, Java.Lang.String arg2)
         {
             return IExecute<int>("checkOpNoThrow", arg0, arg1, arg2);
@@ -349,7 +349,7 @@ namespace Android.App
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="int"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int NoteOp(Java.Lang.String arg0, int arg1, Java.Lang.String arg2)
         {
             return IExecute<int>("noteOp", arg0, arg1, arg2);
@@ -374,7 +374,7 @@ namespace Android.App
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="int"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int NoteOpNoThrow(Java.Lang.String arg0, int arg1, Java.Lang.String arg2)
         {
             return IExecute<int>("noteOpNoThrow", arg0, arg1, arg2);
@@ -398,7 +398,7 @@ namespace Android.App
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="int"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int NoteProxyOp(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return IExecute<int>("noteProxyOp", arg0, arg1);
@@ -423,7 +423,7 @@ namespace Android.App
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int NoteProxyOpNoThrow(Java.Lang.String arg0, Java.Lang.String arg1, int arg2)
         {
             return IExecute<int>("noteProxyOpNoThrow", arg0, arg1, arg2);
@@ -434,7 +434,7 @@ namespace Android.App
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="int"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int NoteProxyOpNoThrow(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return IExecute<int>("noteProxyOpNoThrow", arg0, arg1);
@@ -459,7 +459,7 @@ namespace Android.App
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="int"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int StartOp(Java.Lang.String arg0, int arg1, Java.Lang.String arg2)
         {
             return IExecute<int>("startOp", arg0, arg1, arg2);
@@ -484,7 +484,7 @@ namespace Android.App
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="int"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int StartOpNoThrow(Java.Lang.String arg0, int arg1, Java.Lang.String arg2)
         {
             return IExecute<int>("startOpNoThrow", arg0, arg1, arg2);
@@ -564,7 +564,7 @@ namespace Android.App
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void CheckPackage(int arg0, Java.Lang.String arg1)
         {
             IExecute("checkPackage", arg0, arg1);
@@ -586,7 +586,7 @@ namespace Android.App
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void FinishOp(Java.Lang.String arg0, int arg1, Java.Lang.String arg2)
         {
             IExecute("finishOp", arg0, arg1, arg2);
@@ -687,7 +687,7 @@ namespace Android.App
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onOpActiveChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(OnOpActiveChangedEventHandler));
+                AddEventHandler("onOpActiveChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(OnOpActiveChangedEventHandler));
 
             }
 
@@ -695,7 +695,7 @@ namespace Android.App
             /// Handler for <see href="https://developer.android.com/reference/android/app/AppOpsManager.OnOpActiveChangedListener.html#onOpActiveChanged(java.lang.String,int,java.lang.String,boolean)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnOpActiveChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Java.Lang.String, int, Java.Lang.String, bool> OnOnOpActiveChanged { get; set; } = null;
+            public global::System.Action<Java.Lang.String, int, Java.Lang.String, bool> OnOnOpActiveChanged { get; set; } = null;
 
             void OnOpActiveChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
             {
@@ -792,7 +792,7 @@ namespace Android.App
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onOpChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(OnOpChangedEventHandler));
+                AddEventHandler("onOpChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(OnOpChangedEventHandler));
 
             }
 
@@ -800,7 +800,7 @@ namespace Android.App
             /// Handler for <see href="https://developer.android.com/reference/android/app/AppOpsManager.OnOpChangedListener.html#onOpChanged(java.lang.String,java.lang.String)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnOpChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Java.Lang.String, Java.Lang.String> OnOnOpChanged { get; set; } = null;
+            public global::System.Action<Java.Lang.String, Java.Lang.String> OnOnOpChanged { get; set; } = null;
 
             void OnOpChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
             {

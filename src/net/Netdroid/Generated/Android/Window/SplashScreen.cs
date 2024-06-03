@@ -127,7 +127,7 @@ namespace Android.Window
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onSplashScreenExit", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Window.SplashScreenView>>>(OnSplashScreenExitEventHandler));
+                AddEventHandler("onSplashScreenExit", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Window.SplashScreenView>>>(OnSplashScreenExitEventHandler));
 
             }
 
@@ -135,7 +135,7 @@ namespace Android.Window
             /// Handler for <see href="https://developer.android.com/reference/android/window/SplashScreen.OnExitAnimationListener.html#onSplashScreenExit(android.window.SplashScreenView)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnSplashScreenExit"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Window.SplashScreenView> OnOnSplashScreenExit { get; set; } = null;
+            public global::System.Action<Android.Window.SplashScreenView> OnOnSplashScreenExit { get; set; } = null;
 
             void OnSplashScreenExitEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Window.SplashScreenView>> data)
             {

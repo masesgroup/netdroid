@@ -46,32 +46,36 @@ namespace Android.Health.Connect.Datatypes
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/ExerciseSegment.html#getEndTime()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/ExerciseSegment.html#getRepetitionsCount()"/>
         /// </summary>
-        public Java.Time.Instant EndTime
+        /// <returns><see cref="int"/></returns>
+        public int GetRepetitionsCount()
         {
-            get { return IExecuteWithSignature<Java.Time.Instant>("getEndTime", "()Ljava/time/Instant;"); }
+            return IExecuteWithSignature<int>("getRepetitionsCount", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/ExerciseSegment.html#getRepetitionsCount()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/ExerciseSegment.html#getSegmentType()"/>
         /// </summary>
-        public int RepetitionsCount
+        /// <returns><see cref="int"/></returns>
+        public int GetSegmentType()
         {
-            get { return IExecuteWithSignature<int>("getRepetitionsCount", "()I"); }
+            return IExecuteWithSignature<int>("getSegmentType", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/ExerciseSegment.html#getSegmentType()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/ExerciseSegment.html#getEndTime()"/>
         /// </summary>
-        public int SegmentType
+        /// <returns><see cref="Java.Time.Instant"/></returns>
+        public Java.Time.Instant GetEndTime()
         {
-            get { return IExecuteWithSignature<int>("getSegmentType", "()I"); }
+            return IExecuteWithSignature<Java.Time.Instant>("getEndTime", "()Ljava/time/Instant;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/ExerciseSegment.html#getStartTime()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/ExerciseSegment.html#getStartTime()"/>
         /// </summary>
-        public Java.Time.Instant StartTime
+        /// <returns><see cref="Java.Time.Instant"/></returns>
+        public Java.Time.Instant GetStartTime()
         {
-            get { return IExecuteWithSignature<Java.Time.Instant>("getStartTime", "()Ljava/time/Instant;"); }
+            return IExecuteWithSignature<Java.Time.Instant>("getStartTime", "()Ljava/time/Instant;");
         }
 
         #endregion

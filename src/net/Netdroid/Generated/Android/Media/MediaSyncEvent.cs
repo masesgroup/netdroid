@@ -74,20 +74,6 @@ namespace Android.Media
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaSyncEvent.html#getAudioSessionId()"/> 
-        /// </summary>
-        public int AudioSessionId
-        {
-            get { return IExecuteWithSignature<int>("getAudioSessionId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaSyncEvent.html#getType()"/> 
-        /// </summary>
-        public int Type
-        {
-            get { return IExecuteWithSignature<int>("getType", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaSyncEvent.html#setAudioSessionId(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -104,6 +90,22 @@ namespace Android.Media
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaSyncEvent.html#getAudioSessionId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetAudioSessionId()
+        {
+            return IExecuteWithSignature<int>("getAudioSessionId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaSyncEvent.html#getType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetType()
+        {
+            return IExecuteWithSignature<int>("getType", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaSyncEvent.html#writeToParcel(android.os.Parcel,int)"/>

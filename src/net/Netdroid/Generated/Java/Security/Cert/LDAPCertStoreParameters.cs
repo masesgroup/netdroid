@@ -30,7 +30,7 @@ namespace Java.Security.Cert
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/LDAPCertStoreParameters.html#%3Cinit%3E(java.lang.String,int)"/>
+        /// <see href="https://developer.android.com/reference/java/security/cert/LDAPCertStoreParameters.html#%3Cinit%3E(java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -39,7 +39,7 @@ namespace Java.Security.Cert
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/LDAPCertStoreParameters.html#%3Cinit%3E(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/security/cert/LDAPCertStoreParameters.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public LDAPCertStoreParameters(Java.Lang.String arg0)
@@ -63,18 +63,20 @@ namespace Java.Security.Cert
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/LDAPCertStoreParameters.html#getPort()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/cert/LDAPCertStoreParameters.html#getPort()"/>
         /// </summary>
-        public int Port
+        /// <returns><see cref="int"/></returns>
+        public int GetPort()
         {
-            get { return IExecuteWithSignature<int>("getPort", "()I"); }
+            return IExecuteWithSignature<int>("getPort", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/LDAPCertStoreParameters.html#getServerName()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/cert/LDAPCertStoreParameters.html#getServerName()"/>
         /// </summary>
-        public Java.Lang.String ServerName
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetServerName()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getServerName", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getServerName", "()Ljava/lang/String;");
         }
 
         #endregion

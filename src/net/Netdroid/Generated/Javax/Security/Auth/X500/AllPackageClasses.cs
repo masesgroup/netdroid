@@ -28,7 +28,7 @@ namespace Javax.Security.Auth.X500
 {
     #region X500Principal
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/javax/security/auth/x500/X500Principal.html"/>
+    /// <see href="https://developer.android.com/reference/javax/security/auth/x500/X500Principal.html"/>
     /// </summary>
     public partial class X500Principal : MASES.JCOBridge.C2JBridge.JVMBridgeBase<X500Principal>
     {

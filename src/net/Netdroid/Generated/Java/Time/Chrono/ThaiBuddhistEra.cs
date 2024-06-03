@@ -42,13 +42,13 @@ namespace Java.Time.Chrono
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/ThaiBuddhistEra.html#BE"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/ThaiBuddhistEra.html#BE"/>
         /// </summary>
         public static Java.Time.Chrono.ThaiBuddhistEra BE { get { if (!_BEReady) { _BEContent = SGetField<Java.Time.Chrono.ThaiBuddhistEra>(LocalBridgeClazz, "BE"); _BEReady = true; } return _BEContent; } }
         private static Java.Time.Chrono.ThaiBuddhistEra _BEContent = default;
         private static bool _BEReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/ThaiBuddhistEra.html#BEFORE_BE"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/ThaiBuddhistEra.html#BEFORE_BE"/>
         /// </summary>
         public static Java.Time.Chrono.ThaiBuddhistEra BEFORE_BE { get { if (!_BEFORE_BEReady) { _BEFORE_BEContent = SGetField<Java.Time.Chrono.ThaiBuddhistEra>(LocalBridgeClazz, "BEFORE_BE"); _BEFORE_BEReady = true; } return _BEFORE_BEContent; } }
         private static Java.Time.Chrono.ThaiBuddhistEra _BEFORE_BEContent = default;
@@ -58,7 +58,7 @@ namespace Java.Time.Chrono
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/ThaiBuddhistEra.html#of(int)"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/ThaiBuddhistEra.html#of(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Time.Chrono.ThaiBuddhistEra"/></returns>
@@ -67,7 +67,7 @@ namespace Java.Time.Chrono
             return SExecuteWithSignature<Java.Time.Chrono.ThaiBuddhistEra>(LocalBridgeClazz, "of", "(I)Ljava/time/chrono/ThaiBuddhistEra;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/ThaiBuddhistEra.html#valueOf(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/ThaiBuddhistEra.html#valueOf(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Time.Chrono.ThaiBuddhistEra"/></returns>
@@ -76,7 +76,7 @@ namespace Java.Time.Chrono
             return SExecuteWithSignature<Java.Time.Chrono.ThaiBuddhistEra>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/time/chrono/ThaiBuddhistEra;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/ThaiBuddhistEra.html#values()"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/ThaiBuddhistEra.html#values()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.Chrono.ThaiBuddhistEra"/></returns>
         public static Java.Time.Chrono.ThaiBuddhistEra[] Values()
@@ -88,14 +88,15 @@ namespace Java.Time.Chrono
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/ThaiBuddhistEra.html#getValue()"/> 
+        /// <see href="https://developer.android.com/reference/java/time/chrono/ThaiBuddhistEra.html#getValue()"/>
         /// </summary>
-        public int Value
+        /// <returns><see cref="int"/></returns>
+        public int GetValue()
         {
-            get { return IExecuteWithSignature<int>("getValue", "()I"); }
+            return IExecuteWithSignature<int>("getValue", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/ThaiBuddhistEra.html#getDisplayName(java.time.format.TextStyle,java.util.Locale)"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/ThaiBuddhistEra.html#getDisplayName(java.time.format.TextStyle,java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Format.TextStyle"/></param>
         /// <param name="arg1"><see cref="Java.Util.Locale"/></param>

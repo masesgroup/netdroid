@@ -56,13 +56,13 @@ namespace Java.Lang.Reflect
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Member.html#DECLARED"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Member.html#DECLARED"/>
         /// </summary>
         public static int DECLARED { get { if (!_DECLAREDReady) { _DECLAREDContent = SGetField<int>(LocalBridgeClazz, "DECLARED"); _DECLAREDReady = true; } return _DECLAREDContent; } }
         private static int _DECLAREDContent = default;
         private static bool _DECLAREDReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Member.html#PUBLIC"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Member.html#PUBLIC"/>
         /// </summary>
         public static int PUBLIC { get { if (!_PUBLICReady) { _PUBLICContent = SGetField<int>(LocalBridgeClazz, "PUBLIC"); _PUBLICReady = true; } return _PUBLICContent; } }
         private static int _PUBLICContent = default;
@@ -76,33 +76,36 @@ namespace Java.Lang.Reflect
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Member.html#getDeclaringClass()"/> 
-        /// </summary>
-        public Java.Lang.Class DeclaringClass
-        {
-            get { return IExecuteWithSignature<Java.Lang.Class>("getDeclaringClass", "()Ljava/lang/Class;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Member.html#getModifiers()"/> 
-        /// </summary>
-        public int Modifiers
-        {
-            get { return IExecuteWithSignature<int>("getModifiers", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Member.html#getName()"/> 
-        /// </summary>
-        public Java.Lang.String Name
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/reflect/Member.html#isSynthetic()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Member.html#isSynthetic()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsSynthetic()
         {
             return IExecuteWithSignature<bool>("isSynthetic", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Member.html#getModifiers()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetModifiers()
+        {
+            return IExecuteWithSignature<int>("getModifiers", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Member.html#getDeclaringClass()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Class"/></returns>
+        public Java.Lang.Class GetDeclaringClass()
+        {
+            return IExecuteWithSignature<Java.Lang.Class>("getDeclaringClass", "()Ljava/lang/Class;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/reflect/Member.html#getName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
         }
 
         #endregion

@@ -70,27 +70,6 @@ namespace Android.Media
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/PlaybackParams.html#getAudioFallbackMode()"/> 
-        /// </summary>
-        public int AudioFallbackMode
-        {
-            get { return IExecuteWithSignature<int>("getAudioFallbackMode", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/PlaybackParams.html#getPitch()"/> 
-        /// </summary>
-        public float Pitch
-        {
-            get { return IExecuteWithSignature<float>("getPitch", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/PlaybackParams.html#getSpeed()"/> 
-        /// </summary>
-        public float Speed
-        {
-            get { return IExecuteWithSignature<float>("getSpeed", "()F"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/PlaybackParams.html#allowDefaults()"/>
         /// </summary>
         /// <returns><see cref="Android.Media.PlaybackParams"/></returns>
@@ -126,12 +105,36 @@ namespace Android.Media
             return IExecuteWithSignature<Android.Media.PlaybackParams>("setSpeed", "(F)Landroid/media/PlaybackParams;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/PlaybackParams.html#getPitch()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetPitch()
+        {
+            return IExecuteWithSignature<float>("getPitch", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/PlaybackParams.html#getSpeed()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetSpeed()
+        {
+            return IExecuteWithSignature<float>("getSpeed", "()F");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/PlaybackParams.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/PlaybackParams.html#getAudioFallbackMode()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetAudioFallbackMode()
+        {
+            return IExecuteWithSignature<int>("getAudioFallbackMode", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/PlaybackParams.html#writeToParcel(android.os.Parcel,int)"/>

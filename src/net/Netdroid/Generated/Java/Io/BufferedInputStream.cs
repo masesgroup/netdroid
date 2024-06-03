@@ -30,7 +30,7 @@ namespace Java.Io
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/BufferedInputStream.html#%3Cinit%3E(java.io.InputStream,int)"/>
+        /// <see href="https://developer.android.com/reference/java/io/BufferedInputStream.html#%3Cinit%3E(java.io.InputStream,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -39,7 +39,7 @@ namespace Java.Io
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/BufferedInputStream.html#%3Cinit%3E(java.io.InputStream)"/>
+        /// <see href="https://developer.android.com/reference/java/io/BufferedInputStream.html#%3Cinit%3E(java.io.InputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         public BufferedInputStream(Java.Io.InputStream arg0)

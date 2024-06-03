@@ -106,13 +106,6 @@ namespace Android.Net.Wifi.Aware
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/AwarePairingConfig.html#getBootstrappingMethods()"/> 
-        /// </summary>
-        public int BootstrappingMethods
-        {
-            get { return IExecuteWithSignature<int>("getBootstrappingMethods", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/aware/AwarePairingConfig.html#isPairingCacheEnabled()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -143,6 +136,14 @@ namespace Android.Net.Wifi.Aware
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/AwarePairingConfig.html#getBootstrappingMethods()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetBootstrappingMethods()
+        {
+            return IExecuteWithSignature<int>("getBootstrappingMethods", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/aware/AwarePairingConfig.html#writeToParcel(android.os.Parcel,int)"/>

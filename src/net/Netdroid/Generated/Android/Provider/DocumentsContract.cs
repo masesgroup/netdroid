@@ -680,26 +680,28 @@ namespace Android.Provider
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/provider/DocumentsContract.Path.html#getPath()"/> 
-            /// </summary>
-            public Java.Util.List<Java.Lang.String> GetPath
-            {
-                get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getPath", "()Ljava/util/List;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/provider/DocumentsContract.Path.html#getRootId()"/> 
-            /// </summary>
-            public Java.Lang.String RootId
-            {
-                get { return IExecuteWithSignature<Java.Lang.String>("getRootId", "()Ljava/lang/String;"); }
-            }
-            /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/DocumentsContract.Path.html#describeContents()"/>
             /// </summary>
             /// <returns><see cref="int"/></returns>
             public int DescribeContents()
             {
                 return IExecuteWithSignature<int>("describeContents", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/provider/DocumentsContract.Path.html#getRootId()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetRootId()
+            {
+                return IExecuteWithSignature<Java.Lang.String>("getRootId", "()Ljava/lang/String;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/provider/DocumentsContract.Path.html#getPath()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Util.List"/></returns>
+            public Java.Util.List<Java.Lang.String> GetPath()
+            {
+                return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getPath", "()Ljava/util/List;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/provider/DocumentsContract.Path.html#writeToParcel(android.os.Parcel,int)"/>

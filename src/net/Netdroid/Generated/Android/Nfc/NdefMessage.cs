@@ -78,18 +78,12 @@ namespace Android.Nfc
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/nfc/NdefMessage.html#getByteArrayLength()"/> 
+        /// <see href="https://developer.android.com/reference/android/nfc/NdefMessage.html#getRecords()"/>
         /// </summary>
-        public int ByteArrayLength
+        /// <returns><see cref="Android.Nfc.NdefRecord"/></returns>
+        public Android.Nfc.NdefRecord[] GetRecords()
         {
-            get { return IExecuteWithSignature<int>("getByteArrayLength", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/nfc/NdefMessage.html#getRecords()"/> 
-        /// </summary>
-        public Android.Nfc.NdefRecord[] Records
-        {
-            get { return IExecuteWithSignatureArray<Android.Nfc.NdefRecord>("getRecords", "()[Landroid/nfc/NdefRecord;"); }
+            return IExecuteWithSignatureArray<Android.Nfc.NdefRecord>("getRecords", "()[Landroid/nfc/NdefRecord;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/nfc/NdefMessage.html#toByteArray()"/>
@@ -106,6 +100,14 @@ namespace Android.Nfc
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/NdefMessage.html#getByteArrayLength()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetByteArrayLength()
+        {
+            return IExecuteWithSignature<int>("getByteArrayLength", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/nfc/NdefMessage.html#writeToParcel(android.os.Parcel,int)"/>

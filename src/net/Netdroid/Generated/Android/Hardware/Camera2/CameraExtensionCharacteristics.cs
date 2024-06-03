@@ -46,7 +46,7 @@ namespace Android.Hardware.Camera2
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraExtensionCharacteristics.html#EXTENSION_BEAUTY"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int EXTENSION_BEAUTY { get { if (!_EXTENSION_BEAUTYReady) { _EXTENSION_BEAUTYContent = SGetField<int>(LocalBridgeClazz, "EXTENSION_BEAUTY"); _EXTENSION_BEAUTYReady = true; } return _EXTENSION_BEAUTYContent; } }
         private static int _EXTENSION_BEAUTYContent = default;
         private static bool _EXTENSION_BEAUTYReady = false; // this is used because in case of generics 
@@ -82,13 +82,6 @@ namespace Android.Hardware.Camera2
         #endregion
 
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraExtensionCharacteristics.html#getSupportedExtensions()"/> 
-        /// </summary>
-        public Java.Util.List<Java.Lang.Integer> SupportedExtensions
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.Integer>>("getSupportedExtensions", "()Ljava/util/List;"); }
-        }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraExtensionCharacteristics.html#getExtensionSupportedSizes(int,java.lang.Class)"/>
         /// </summary>
@@ -137,6 +130,14 @@ namespace Android.Hardware.Camera2
         public Java.Util.List<Android.Util.Size> GetPostviewSupportedSizes(int arg0, Android.Util.Size arg1, int arg2)
         {
             return IExecute<Java.Util.List<Android.Util.Size>>("getPostviewSupportedSizes", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraExtensionCharacteristics.html#getSupportedExtensions()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Lang.Integer> GetSupportedExtensions()
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.Integer>>("getSupportedExtensions", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraExtensionCharacteristics.html#getAvailableCaptureRequestKeys(int)"/>

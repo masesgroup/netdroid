@@ -132,13 +132,6 @@ namespace Android.Hardware.Camera2.Params
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/DynamicRangeProfiles.html#getSupportedProfiles()"/> 
-        /// </summary>
-        public Java.Util.Set<Java.Lang.Long> SupportedProfiles
-        {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.Long>>("getSupportedProfiles", "()Ljava/util/Set;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/DynamicRangeProfiles.html#isExtraLatencyPresent(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
@@ -155,6 +148,14 @@ namespace Android.Hardware.Camera2.Params
         public Java.Util.Set<Java.Lang.Long> GetProfileCaptureRequestConstraints(long arg0)
         {
             return IExecuteWithSignature<Java.Util.Set<Java.Lang.Long>>("getProfileCaptureRequestConstraints", "(J)Ljava/util/Set;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/DynamicRangeProfiles.html#getSupportedProfiles()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Lang.Long> GetSupportedProfiles()
+        {
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.Long>>("getSupportedProfiles", "()Ljava/util/Set;");
         }
 
         #endregion

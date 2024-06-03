@@ -64,7 +64,7 @@ namespace Org.W3c.Dom
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/DOMImplementation.html#hasFeature(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/DOMImplementation.html#hasFeature(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -74,7 +74,7 @@ namespace Org.W3c.Dom
             return IExecute<bool>("hasFeature", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/DOMImplementation.html#getFeature(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/DOMImplementation.html#getFeature(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -84,7 +84,7 @@ namespace Org.W3c.Dom
             return IExecute("getFeature", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/DOMImplementation.html#createDocument(java.lang.String,java.lang.String,org.w3c.dom.DocumentType)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/DOMImplementation.html#createDocument(java.lang.String,java.lang.String,org.w3c.dom.DocumentType)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -96,7 +96,7 @@ namespace Org.W3c.Dom
             return IExecute<Org.W3c.Dom.Document>("createDocument", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/DOMImplementation.html#createDocumentType(java.lang.String,java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/DOMImplementation.html#createDocumentType(java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>

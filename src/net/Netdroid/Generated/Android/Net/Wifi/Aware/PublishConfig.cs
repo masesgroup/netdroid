@@ -64,25 +64,20 @@ namespace Android.Net.Wifi.Aware
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/PublishConfig.html#getInstantCommunicationBand()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/PublishConfig.html#getPairingConfig()"/>
         /// </summary>
-        public int InstantCommunicationBand
+        /// <returns><see cref="Android.Net.Wifi.Aware.AwarePairingConfig"/></returns>
+        public Android.Net.Wifi.Aware.AwarePairingConfig GetPairingConfig()
         {
-            get { return IExecuteWithSignature<int>("getInstantCommunicationBand", "()I"); }
+            return IExecuteWithSignature<Android.Net.Wifi.Aware.AwarePairingConfig>("getPairingConfig", "()Landroid/net/wifi/aware/AwarePairingConfig;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/PublishConfig.html#getPairingConfig()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/PublishConfig.html#getSecurityConfig()"/>
         /// </summary>
-        public Android.Net.Wifi.Aware.AwarePairingConfig PairingConfig
+        /// <returns><see cref="Android.Net.Wifi.Aware.WifiAwareDataPathSecurityConfig"/></returns>
+        public Android.Net.Wifi.Aware.WifiAwareDataPathSecurityConfig GetSecurityConfig()
         {
-            get { return IExecuteWithSignature<Android.Net.Wifi.Aware.AwarePairingConfig>("getPairingConfig", "()Landroid/net/wifi/aware/AwarePairingConfig;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/PublishConfig.html#getSecurityConfig()"/> 
-        /// </summary>
-        public Android.Net.Wifi.Aware.WifiAwareDataPathSecurityConfig SecurityConfig
-        {
-            get { return IExecuteWithSignature<Android.Net.Wifi.Aware.WifiAwareDataPathSecurityConfig>("getSecurityConfig", "()Landroid/net/wifi/aware/WifiAwareDataPathSecurityConfig;"); }
+            return IExecuteWithSignature<Android.Net.Wifi.Aware.WifiAwareDataPathSecurityConfig>("getSecurityConfig", "()Landroid/net/wifi/aware/WifiAwareDataPathSecurityConfig;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/aware/PublishConfig.html#isInstantCommunicationModeEnabled()"/>
@@ -99,6 +94,14 @@ namespace Android.Net.Wifi.Aware
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/PublishConfig.html#getInstantCommunicationBand()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetInstantCommunicationBand()
+        {
+            return IExecuteWithSignature<int>("getInstantCommunicationBand", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/aware/PublishConfig.html#writeToParcel(android.os.Parcel,int)"/>

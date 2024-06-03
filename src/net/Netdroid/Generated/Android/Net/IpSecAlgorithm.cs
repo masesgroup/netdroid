@@ -133,36 +133,24 @@ namespace Android.Net
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/IpSecAlgorithm.html#getSupportedAlgorithms()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/IpSecAlgorithm.html#getSupportedAlgorithms()"/>
         /// </summary>
-        public static Java.Util.Set<Java.Lang.String> SupportedAlgorithms
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public static Java.Util.Set<Java.Lang.String> GetSupportedAlgorithms()
         {
-            get { return SExecuteWithSignature<Java.Util.Set<Java.Lang.String>>(LocalBridgeClazz, "getSupportedAlgorithms", "()Ljava/util/Set;"); }
+            return SExecuteWithSignature<Java.Util.Set<Java.Lang.String>>(LocalBridgeClazz, "getSupportedAlgorithms", "()Ljava/util/Set;");
         }
 
         #endregion
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/IpSecAlgorithm.html#getKey()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/IpSecAlgorithm.html#getKey()"/>
         /// </summary>
-        public byte[] Key
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetKey()
         {
-            get { return IExecuteWithSignatureArray<byte>("getKey", "()[B"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/IpSecAlgorithm.html#getName()"/> 
-        /// </summary>
-        public Java.Lang.String Name
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/IpSecAlgorithm.html#getTruncationLengthBits()"/> 
-        /// </summary>
-        public int TruncationLengthBits
-        {
-            get { return IExecuteWithSignature<int>("getTruncationLengthBits", "()I"); }
+            return IExecuteWithSignatureArray<byte>("getKey", "()[B");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/IpSecAlgorithm.html#describeContents()"/>
@@ -171,6 +159,22 @@ namespace Android.Net
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/IpSecAlgorithm.html#getTruncationLengthBits()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTruncationLengthBits()
+        {
+            return IExecuteWithSignature<int>("getTruncationLengthBits", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/IpSecAlgorithm.html#getName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/IpSecAlgorithm.html#writeToParcel(android.os.Parcel,int)"/>

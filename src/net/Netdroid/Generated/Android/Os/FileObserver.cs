@@ -51,7 +51,7 @@ namespace Android.Os
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public FileObserver(Java.Lang.String arg0, int arg1)
             : base(arg0, arg1)
         {
@@ -60,7 +60,7 @@ namespace Android.Os
         /// <see href="https://developer.android.com/reference/android/os/FileObserver.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public FileObserver(Java.Lang.String arg0)
             : base(arg0)
         {

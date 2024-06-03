@@ -38,7 +38,7 @@ namespace Java.Lang
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Void.html#TYPE"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Void.html#TYPE"/>
         /// </summary>
         public static Java.Lang.Class TYPE { get { if (!_TYPEReady) { _TYPEContent = SGetField<Java.Lang.Class>(LocalBridgeClazz, "TYPE"); _TYPEReady = true; } return _TYPEContent; } }
         private static Java.Lang.Class _TYPEContent = default;

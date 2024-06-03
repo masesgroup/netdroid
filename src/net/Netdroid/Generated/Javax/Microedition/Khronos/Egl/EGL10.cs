@@ -714,7 +714,7 @@ namespace Javax.Microedition.Khronos.Egl
         /// <param name="arg2"><see cref="object"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <returns><see cref="Javax.Microedition.Khronos.Egl.EGLSurface"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Javax.Microedition.Khronos.Egl.EGLSurface EglCreatePixmapSurface(Javax.Microedition.Khronos.Egl.EGLDisplay arg0, Javax.Microedition.Khronos.Egl.EGLConfig arg1, object arg2, int[] arg3)
         {
             return IExecute<Javax.Microedition.Khronos.Egl.EGLSurface>("eglCreatePixmapSurface", arg0, arg1, arg2, arg3);

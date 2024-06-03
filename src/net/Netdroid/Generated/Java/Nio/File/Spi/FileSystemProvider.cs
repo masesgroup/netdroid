@@ -42,7 +42,7 @@ namespace Java.Nio.File.Spi
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/spi/FileSystemProvider.html#installedProviders()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/spi/FileSystemProvider.html#installedProviders()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.List"/></returns>
         public static Java.Util.List<Java.Nio.File.Spi.FileSystemProvider> InstalledProviders()
@@ -54,14 +54,7 @@ namespace Java.Nio.File.Spi
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/spi/FileSystemProvider.html#getScheme()"/> 
-        /// </summary>
-        public Java.Lang.String Scheme
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getScheme", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/spi/FileSystemProvider.html#readAttributes(java.nio.file.Path,java.lang.Class,java.nio.file.LinkOption[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/spi/FileSystemProvider.html#readAttributes(java.nio.file.Path,java.lang.Class,java.nio.file.LinkOption[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
@@ -69,24 +62,24 @@ namespace Java.Nio.File.Spi
         /// <typeparam name="A"><see cref="Java.Nio.File.Attribute.IBasicFileAttributes"/></typeparam>
         /// <returns><typeparamref name="A"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public A ReadAttributes<A>(Java.Nio.File.Path arg0, Java.Lang.Class arg1, params Java.Nio.File.LinkOption[] arg2) where A: Java.Nio.File.Attribute.IBasicFileAttributes, new()
+        public A ReadAttributes<A>(Java.Nio.File.Path arg0, Java.Lang.Class arg1, params Java.Nio.File.LinkOption[] arg2) where A : Java.Nio.File.Attribute.IBasicFileAttributes, new()
         {
             if (arg2.Length == 0) return IExecute<A>("readAttributes", arg0, arg1); else return IExecute<A>("readAttributes", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/spi/FileSystemProvider.html#getFileAttributeView(java.nio.file.Path,java.lang.Class,java.nio.file.LinkOption[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/spi/FileSystemProvider.html#getFileAttributeView(java.nio.file.Path,java.lang.Class,java.nio.file.LinkOption[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg2"><see cref="Java.Nio.File.LinkOption"/></param>
         /// <typeparam name="V"><see cref="Java.Nio.File.Attribute.IFileAttributeView"/></typeparam>
         /// <returns><typeparamref name="V"/></returns>
-        public V GetFileAttributeView<V>(Java.Nio.File.Path arg0, Java.Lang.Class arg1, params Java.Nio.File.LinkOption[] arg2) where V: Java.Nio.File.Attribute.IFileAttributeView, new()
+        public V GetFileAttributeView<V>(Java.Nio.File.Path arg0, Java.Lang.Class arg1, params Java.Nio.File.LinkOption[] arg2) where V : Java.Nio.File.Attribute.IFileAttributeView, new()
         {
             if (arg2.Length == 0) return IExecute<V>("getFileAttributeView", arg0, arg1); else return IExecute<V>("getFileAttributeView", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/spi/FileSystemProvider.html#isHidden(java.nio.file.Path)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/spi/FileSystemProvider.html#isHidden(java.nio.file.Path)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -96,7 +89,7 @@ namespace Java.Nio.File.Spi
             return IExecuteWithSignature<bool>("isHidden", "(Ljava/nio/file/Path;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/spi/FileSystemProvider.html#isSameFile(java.nio.file.Path,java.nio.file.Path)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/spi/FileSystemProvider.html#isSameFile(java.nio.file.Path,java.nio.file.Path)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Nio.File.Path"/></param>
@@ -107,7 +100,15 @@ namespace Java.Nio.File.Spi
             return IExecute<bool>("isSameFile", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/spi/FileSystemProvider.html#newByteChannel(java.nio.file.Path,java.util.Set,java.nio.file.attribute.FileAttribute[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/spi/FileSystemProvider.html#getScheme()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetScheme()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getScheme", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/nio/file/spi/FileSystemProvider.html#newByteChannel(java.nio.file.Path,java.util.Set,java.nio.file.attribute.FileAttribute[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Util.Set"/></param>
@@ -115,24 +116,24 @@ namespace Java.Nio.File.Spi
         /// <typeparam name="Arg1ExtendsJava_Nio_File_OpenOption"><see cref="Java.Nio.File.OpenOption"/></typeparam>
         /// <returns><see cref="Java.Nio.Channels.SeekableByteChannel"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public Java.Nio.Channels.SeekableByteChannel NewByteChannel<Arg1ExtendsJava_Nio_File_OpenOption>(Java.Nio.File.Path arg0, Java.Util.Set<Arg1ExtendsJava_Nio_File_OpenOption> arg1, params Java.Nio.File.Attribute.FileAttribute<object>[] arg2) where Arg1ExtendsJava_Nio_File_OpenOption: Java.Nio.File.OpenOption
+        public Java.Nio.Channels.SeekableByteChannel NewByteChannel<Arg1ExtendsJava_Nio_File_OpenOption>(Java.Nio.File.Path arg0, Java.Util.Set<Arg1ExtendsJava_Nio_File_OpenOption> arg1, params Java.Nio.File.Attribute.FileAttribute<object>[] arg2) where Arg1ExtendsJava_Nio_File_OpenOption : Java.Nio.File.OpenOption
         {
             if (arg2.Length == 0) return IExecute<Java.Nio.Channels.SeekableByteChannel>("newByteChannel", arg0, arg1); else return IExecute<Java.Nio.Channels.SeekableByteChannel>("newByteChannel", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/spi/FileSystemProvider.html#newDirectoryStream(java.nio.file.Path,java.nio.file.DirectoryStream.Filter)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/spi/FileSystemProvider.html#newDirectoryStream(java.nio.file.Path,java.nio.file.DirectoryStream.Filter)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Nio.File.DirectoryStream.Filter"/></param>
         /// <typeparam name="Arg1objectSuperJava_Nio_File_Path"><see cref="Java.Nio.File.Path"/></typeparam>
         /// <returns><see cref="Java.Nio.File.DirectoryStream"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public Java.Nio.File.DirectoryStream<Java.Nio.File.Path> NewDirectoryStream<Arg1objectSuperJava_Nio_File_Path>(Java.Nio.File.Path arg0, Java.Nio.File.DirectoryStream.Filter<Arg1objectSuperJava_Nio_File_Path> arg1) where Arg1objectSuperJava_Nio_File_Path: Java.Nio.File.Path
+        public Java.Nio.File.DirectoryStream<Java.Nio.File.Path> NewDirectoryStream<Arg1objectSuperJava_Nio_File_Path>(Java.Nio.File.Path arg0, Java.Nio.File.DirectoryStream.Filter<Arg1objectSuperJava_Nio_File_Path> arg1) where Arg1objectSuperJava_Nio_File_Path : Java.Nio.File.Path
         {
             return IExecute<Java.Nio.File.DirectoryStream<Java.Nio.File.Path>>("newDirectoryStream", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/spi/FileSystemProvider.html#getFileStore(java.nio.file.Path)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/spi/FileSystemProvider.html#getFileStore(java.nio.file.Path)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <returns><see cref="Java.Nio.File.FileStore"/></returns>
@@ -142,7 +143,7 @@ namespace Java.Nio.File.Spi
             return IExecuteWithSignature<Java.Nio.File.FileStore>("getFileStore", "(Ljava/nio/file/Path;)Ljava/nio/file/FileStore;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/spi/FileSystemProvider.html#getFileSystem(java.net.URI)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/spi/FileSystemProvider.html#getFileSystem(java.net.URI)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.URI"/></param>
         /// <returns><see cref="Java.Nio.File.FileSystem"/></returns>
@@ -151,7 +152,7 @@ namespace Java.Nio.File.Spi
             return IExecuteWithSignature<Java.Nio.File.FileSystem>("getFileSystem", "(Ljava/net/URI;)Ljava/nio/file/FileSystem;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/spi/FileSystemProvider.html#newFileSystem(java.net.URI,java.util.Map)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/spi/FileSystemProvider.html#newFileSystem(java.net.URI,java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.URI"/></param>
         /// <param name="arg1"><see cref="Java.Util.Map"/></param>
@@ -162,7 +163,7 @@ namespace Java.Nio.File.Spi
             return IExecute<Java.Nio.File.FileSystem>("newFileSystem", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/spi/FileSystemProvider.html#getPath(java.net.URI)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/spi/FileSystemProvider.html#getPath(java.net.URI)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.URI"/></param>
         /// <returns><see cref="Java.Nio.File.Path"/></returns>
@@ -171,7 +172,7 @@ namespace Java.Nio.File.Spi
             return IExecuteWithSignature<Java.Nio.File.Path>("getPath", "(Ljava/net/URI;)Ljava/nio/file/Path;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/spi/FileSystemProvider.html#readAttributes(java.nio.file.Path,java.lang.String,java.nio.file.LinkOption[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/spi/FileSystemProvider.html#readAttributes(java.nio.file.Path,java.lang.String,java.nio.file.LinkOption[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -183,7 +184,7 @@ namespace Java.Nio.File.Spi
             if (arg2.Length == 0) return IExecute<Java.Util.Map<Java.Lang.String, object>>("readAttributes", arg0, arg1); else return IExecute<Java.Util.Map<Java.Lang.String, object>>("readAttributes", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/spi/FileSystemProvider.html#checkAccess(java.nio.file.Path,java.nio.file.AccessMode[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/spi/FileSystemProvider.html#checkAccess(java.nio.file.Path,java.nio.file.AccessMode[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Nio.File.AccessMode"/></param>
@@ -193,7 +194,7 @@ namespace Java.Nio.File.Spi
             if (arg1.Length == 0) IExecute("checkAccess", arg0); else IExecute("checkAccess", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/spi/FileSystemProvider.html#copy(java.nio.file.Path,java.nio.file.Path,java.nio.file.CopyOption[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/spi/FileSystemProvider.html#copy(java.nio.file.Path,java.nio.file.Path,java.nio.file.CopyOption[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Nio.File.Path"/></param>
@@ -204,7 +205,7 @@ namespace Java.Nio.File.Spi
             if (arg2.Length == 0) IExecute("copy", arg0, arg1); else IExecute("copy", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/spi/FileSystemProvider.html#createDirectory(java.nio.file.Path,java.nio.file.attribute.FileAttribute[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/spi/FileSystemProvider.html#createDirectory(java.nio.file.Path,java.nio.file.attribute.FileAttribute[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Nio.File.Attribute.FileAttribute"/></param>
@@ -214,7 +215,7 @@ namespace Java.Nio.File.Spi
             if (arg1.Length == 0) IExecute("createDirectory", arg0); else IExecute("createDirectory", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/spi/FileSystemProvider.html#delete(java.nio.file.Path)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/spi/FileSystemProvider.html#delete(java.nio.file.Path)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -223,7 +224,7 @@ namespace Java.Nio.File.Spi
             IExecuteWithSignature("delete", "(Ljava/nio/file/Path;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/spi/FileSystemProvider.html#move(java.nio.file.Path,java.nio.file.Path,java.nio.file.CopyOption[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/spi/FileSystemProvider.html#move(java.nio.file.Path,java.nio.file.Path,java.nio.file.CopyOption[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Nio.File.Path"/></param>
@@ -234,7 +235,7 @@ namespace Java.Nio.File.Spi
             if (arg2.Length == 0) IExecute("move", arg0, arg1); else IExecute("move", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/spi/FileSystemProvider.html#setAttribute(java.nio.file.Path,java.lang.String,java.lang.Object,java.nio.file.LinkOption[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/spi/FileSystemProvider.html#setAttribute(java.nio.file.Path,java.lang.String,java.lang.Object,java.nio.file.LinkOption[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -246,7 +247,7 @@ namespace Java.Nio.File.Spi
             if (arg3.Length == 0) IExecute("setAttribute", arg0, arg1, arg2); else IExecute("setAttribute", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/spi/FileSystemProvider.html#deleteIfExists(java.nio.file.Path)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/spi/FileSystemProvider.html#deleteIfExists(java.nio.file.Path)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -256,7 +257,7 @@ namespace Java.Nio.File.Spi
             return IExecuteWithSignature<bool>("deleteIfExists", "(Ljava/nio/file/Path;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/spi/FileSystemProvider.html#newInputStream(java.nio.file.Path,java.nio.file.OpenOption[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/spi/FileSystemProvider.html#newInputStream(java.nio.file.Path,java.nio.file.OpenOption[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Nio.File.OpenOption"/></param>
@@ -267,7 +268,7 @@ namespace Java.Nio.File.Spi
             if (arg1.Length == 0) return IExecute<Java.Io.InputStream>("newInputStream", arg0); else return IExecute<Java.Io.InputStream>("newInputStream", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/spi/FileSystemProvider.html#newOutputStream(java.nio.file.Path,java.nio.file.OpenOption[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/spi/FileSystemProvider.html#newOutputStream(java.nio.file.Path,java.nio.file.OpenOption[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Nio.File.OpenOption"/></param>
@@ -278,7 +279,7 @@ namespace Java.Nio.File.Spi
             if (arg1.Length == 0) return IExecute<Java.Io.OutputStream>("newOutputStream", arg0); else return IExecute<Java.Io.OutputStream>("newOutputStream", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/spi/FileSystemProvider.html#newAsynchronousFileChannel(java.nio.file.Path,java.util.Set,java.util.concurrent.ExecutorService,java.nio.file.attribute.FileAttribute[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/spi/FileSystemProvider.html#newAsynchronousFileChannel(java.nio.file.Path,java.util.Set,java.util.concurrent.ExecutorService,java.nio.file.attribute.FileAttribute[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Util.Set"/></param>
@@ -287,12 +288,12 @@ namespace Java.Nio.File.Spi
         /// <typeparam name="Arg1ExtendsJava_Nio_File_OpenOption"><see cref="Java.Nio.File.OpenOption"/></typeparam>
         /// <returns><see cref="Java.Nio.Channels.AsynchronousFileChannel"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public Java.Nio.Channels.AsynchronousFileChannel NewAsynchronousFileChannel<Arg1ExtendsJava_Nio_File_OpenOption>(Java.Nio.File.Path arg0, Java.Util.Set<Arg1ExtendsJava_Nio_File_OpenOption> arg1, Java.Util.Concurrent.ExecutorService arg2, params Java.Nio.File.Attribute.FileAttribute<object>[] arg3) where Arg1ExtendsJava_Nio_File_OpenOption: Java.Nio.File.OpenOption
+        public Java.Nio.Channels.AsynchronousFileChannel NewAsynchronousFileChannel<Arg1ExtendsJava_Nio_File_OpenOption>(Java.Nio.File.Path arg0, Java.Util.Set<Arg1ExtendsJava_Nio_File_OpenOption> arg1, Java.Util.Concurrent.ExecutorService arg2, params Java.Nio.File.Attribute.FileAttribute<object>[] arg3) where Arg1ExtendsJava_Nio_File_OpenOption : Java.Nio.File.OpenOption
         {
             if (arg3.Length == 0) return IExecute<Java.Nio.Channels.AsynchronousFileChannel>("newAsynchronousFileChannel", arg0, arg1, arg2); else return IExecute<Java.Nio.Channels.AsynchronousFileChannel>("newAsynchronousFileChannel", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/spi/FileSystemProvider.html#newFileChannel(java.nio.file.Path,java.util.Set,java.nio.file.attribute.FileAttribute[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/spi/FileSystemProvider.html#newFileChannel(java.nio.file.Path,java.util.Set,java.nio.file.attribute.FileAttribute[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Util.Set"/></param>
@@ -300,12 +301,12 @@ namespace Java.Nio.File.Spi
         /// <typeparam name="Arg1ExtendsJava_Nio_File_OpenOption"><see cref="Java.Nio.File.OpenOption"/></typeparam>
         /// <returns><see cref="Java.Nio.Channels.FileChannel"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public Java.Nio.Channels.FileChannel NewFileChannel<Arg1ExtendsJava_Nio_File_OpenOption>(Java.Nio.File.Path arg0, Java.Util.Set<Arg1ExtendsJava_Nio_File_OpenOption> arg1, params Java.Nio.File.Attribute.FileAttribute<object>[] arg2) where Arg1ExtendsJava_Nio_File_OpenOption: Java.Nio.File.OpenOption
+        public Java.Nio.Channels.FileChannel NewFileChannel<Arg1ExtendsJava_Nio_File_OpenOption>(Java.Nio.File.Path arg0, Java.Util.Set<Arg1ExtendsJava_Nio_File_OpenOption> arg1, params Java.Nio.File.Attribute.FileAttribute<object>[] arg2) where Arg1ExtendsJava_Nio_File_OpenOption : Java.Nio.File.OpenOption
         {
             if (arg2.Length == 0) return IExecute<Java.Nio.Channels.FileChannel>("newFileChannel", arg0, arg1); else return IExecute<Java.Nio.Channels.FileChannel>("newFileChannel", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/spi/FileSystemProvider.html#newFileSystem(java.nio.file.Path,java.util.Map)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/spi/FileSystemProvider.html#newFileSystem(java.nio.file.Path,java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Util.Map"/></param>
@@ -316,7 +317,7 @@ namespace Java.Nio.File.Spi
             return IExecute<Java.Nio.File.FileSystem>("newFileSystem", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/spi/FileSystemProvider.html#readSymbolicLink(java.nio.file.Path)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/spi/FileSystemProvider.html#readSymbolicLink(java.nio.file.Path)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <returns><see cref="Java.Nio.File.Path"/></returns>
@@ -326,7 +327,7 @@ namespace Java.Nio.File.Spi
             return IExecuteWithSignature<Java.Nio.File.Path>("readSymbolicLink", "(Ljava/nio/file/Path;)Ljava/nio/file/Path;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/spi/FileSystemProvider.html#createLink(java.nio.file.Path,java.nio.file.Path)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/spi/FileSystemProvider.html#createLink(java.nio.file.Path,java.nio.file.Path)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Nio.File.Path"/></param>
@@ -336,7 +337,7 @@ namespace Java.Nio.File.Spi
             IExecute("createLink", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/spi/FileSystemProvider.html#createSymbolicLink(java.nio.file.Path,java.nio.file.Path,java.nio.file.attribute.FileAttribute[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/spi/FileSystemProvider.html#createSymbolicLink(java.nio.file.Path,java.nio.file.Path,java.nio.file.attribute.FileAttribute[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Nio.File.Path"/></param>

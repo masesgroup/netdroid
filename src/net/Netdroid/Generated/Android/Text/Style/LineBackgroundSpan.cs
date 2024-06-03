@@ -130,18 +130,12 @@ namespace Android.Text.Style
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/text/style/LineBackgroundSpan.Standard.html#getColor()"/> 
+            /// <see href="https://developer.android.com/reference/android/text/style/LineBackgroundSpan.Standard.html#getColor()"/>
             /// </summary>
-            public int Color
+            /// <returns><see cref="int"/></returns>
+            public int GetColor()
             {
-                get { return IExecuteWithSignature<int>("getColor", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/text/style/LineBackgroundSpan.Standard.html#getSpanTypeId()"/> 
-            /// </summary>
-            public int SpanTypeId
-            {
-                get { return IExecuteWithSignature<int>("getSpanTypeId", "()I"); }
+                return IExecuteWithSignature<int>("getColor", "()I");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/LineBackgroundSpan.Standard.html#describeContents()"/>
@@ -150,6 +144,14 @@ namespace Android.Text.Style
             public int DescribeContents()
             {
                 return IExecuteWithSignature<int>("describeContents", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/text/style/LineBackgroundSpan.Standard.html#getSpanTypeId()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetSpanTypeId()
+            {
+                return IExecuteWithSignature<int>("getSpanTypeId", "()I");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/style/LineBackgroundSpan.Standard.html#drawBackground(android.graphics.Canvas,android.graphics.Paint,int,int,int,int,int,java.lang.CharSequence,int,int,int)"/>

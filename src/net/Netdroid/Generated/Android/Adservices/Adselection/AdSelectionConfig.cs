@@ -52,53 +52,44 @@ namespace Android.Adservices.Adselection
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/adselection/AdSelectionConfig.html#getAdSelectionSignals()"/> 
+        /// <see href="https://developer.android.com/reference/android/adservices/adselection/AdSelectionConfig.html#getAdSelectionSignals()"/>
         /// </summary>
-        public Android.Adservices.Common.AdSelectionSignals AdSelectionSignals
+        /// <returns><see cref="Android.Adservices.Common.AdSelectionSignals"/></returns>
+        public Android.Adservices.Common.AdSelectionSignals GetAdSelectionSignals()
         {
-            get { return IExecuteWithSignature<Android.Adservices.Common.AdSelectionSignals>("getAdSelectionSignals", "()Landroid/adservices/common/AdSelectionSignals;"); }
+            return IExecuteWithSignature<Android.Adservices.Common.AdSelectionSignals>("getAdSelectionSignals", "()Landroid/adservices/common/AdSelectionSignals;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/adselection/AdSelectionConfig.html#getCustomAudienceBuyers()"/> 
+        /// <see href="https://developer.android.com/reference/android/adservices/adselection/AdSelectionConfig.html#getSellerSignals()"/>
         /// </summary>
-        public Java.Util.List<Android.Adservices.Common.AdTechIdentifier> CustomAudienceBuyers
+        /// <returns><see cref="Android.Adservices.Common.AdSelectionSignals"/></returns>
+        public Android.Adservices.Common.AdSelectionSignals GetSellerSignals()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Adservices.Common.AdTechIdentifier>>("getCustomAudienceBuyers", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Android.Adservices.Common.AdSelectionSignals>("getSellerSignals", "()Landroid/adservices/common/AdSelectionSignals;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/adselection/AdSelectionConfig.html#getDecisionLogicUri()"/> 
+        /// <see href="https://developer.android.com/reference/android/adservices/adselection/AdSelectionConfig.html#getSeller()"/>
         /// </summary>
-        public Android.Net.Uri DecisionLogicUri
+        /// <returns><see cref="Android.Adservices.Common.AdTechIdentifier"/></returns>
+        public Android.Adservices.Common.AdTechIdentifier GetSeller()
         {
-            get { return IExecuteWithSignature<Android.Net.Uri>("getDecisionLogicUri", "()Landroid/net/Uri;"); }
+            return IExecuteWithSignature<Android.Adservices.Common.AdTechIdentifier>("getSeller", "()Landroid/adservices/common/AdTechIdentifier;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/adselection/AdSelectionConfig.html#getPerBuyerSignals()"/> 
+        /// <see href="https://developer.android.com/reference/android/adservices/adselection/AdSelectionConfig.html#getDecisionLogicUri()"/>
         /// </summary>
-        public Java.Util.Map<Android.Adservices.Common.AdTechIdentifier, Android.Adservices.Common.AdSelectionSignals> PerBuyerSignals
+        /// <returns><see cref="Android.Net.Uri"/></returns>
+        public Android.Net.Uri GetDecisionLogicUri()
         {
-            get { return IExecuteWithSignature<Java.Util.Map<Android.Adservices.Common.AdTechIdentifier, Android.Adservices.Common.AdSelectionSignals>>("getPerBuyerSignals", "()Ljava/util/Map;"); }
+            return IExecuteWithSignature<Android.Net.Uri>("getDecisionLogicUri", "()Landroid/net/Uri;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/adselection/AdSelectionConfig.html#getSeller()"/> 
+        /// <see href="https://developer.android.com/reference/android/adservices/adselection/AdSelectionConfig.html#getTrustedScoringSignalsUri()"/>
         /// </summary>
-        public Android.Adservices.Common.AdTechIdentifier Seller
+        /// <returns><see cref="Android.Net.Uri"/></returns>
+        public Android.Net.Uri GetTrustedScoringSignalsUri()
         {
-            get { return IExecuteWithSignature<Android.Adservices.Common.AdTechIdentifier>("getSeller", "()Landroid/adservices/common/AdTechIdentifier;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/adselection/AdSelectionConfig.html#getSellerSignals()"/> 
-        /// </summary>
-        public Android.Adservices.Common.AdSelectionSignals SellerSignals
-        {
-            get { return IExecuteWithSignature<Android.Adservices.Common.AdSelectionSignals>("getSellerSignals", "()Landroid/adservices/common/AdSelectionSignals;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/adselection/AdSelectionConfig.html#getTrustedScoringSignalsUri()"/> 
-        /// </summary>
-        public Android.Net.Uri TrustedScoringSignalsUri
-        {
-            get { return IExecuteWithSignature<Android.Net.Uri>("getTrustedScoringSignalsUri", "()Landroid/net/Uri;"); }
+            return IExecuteWithSignature<Android.Net.Uri>("getTrustedScoringSignalsUri", "()Landroid/net/Uri;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/adselection/AdSelectionConfig.html#describeContents()"/>
@@ -107,6 +98,22 @@ namespace Android.Adservices.Adselection
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/adservices/adselection/AdSelectionConfig.html#getCustomAudienceBuyers()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Adservices.Common.AdTechIdentifier> GetCustomAudienceBuyers()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Adservices.Common.AdTechIdentifier>>("getCustomAudienceBuyers", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/adservices/adselection/AdSelectionConfig.html#getPerBuyerSignals()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        public Java.Util.Map<Android.Adservices.Common.AdTechIdentifier, Android.Adservices.Common.AdSelectionSignals> GetPerBuyerSignals()
+        {
+            return IExecuteWithSignature<Java.Util.Map<Android.Adservices.Common.AdTechIdentifier, Android.Adservices.Common.AdSelectionSignals>>("getPerBuyerSignals", "()Ljava/util/Map;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/adselection/AdSelectionConfig.html#writeToParcel(android.os.Parcel,int)"/>

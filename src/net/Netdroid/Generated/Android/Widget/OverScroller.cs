@@ -37,7 +37,7 @@ namespace Android.Widget
         /// <param name="arg2"><see cref="float"/></param>
         /// <param name="arg3"><see cref="float"/></param>
         /// <param name="arg4"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public OverScroller(Android.Content.Context arg0, Android.View.Animation.Interpolator arg1, float arg2, float arg3, bool arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
@@ -49,7 +49,7 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="Android.View.Animation.Interpolator"/></param>
         /// <param name="arg2"><see cref="float"/></param>
         /// <param name="arg3"><see cref="float"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public OverScroller(Android.Content.Context arg0, Android.View.Animation.Interpolator arg1, float arg2, float arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -87,55 +87,6 @@ namespace Android.Widget
         #endregion
 
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/OverScroller.html#getCurrVelocity()"/> 
-        /// </summary>
-        public float CurrVelocity
-        {
-            get { return IExecuteWithSignature<float>("getCurrVelocity", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/OverScroller.html#getCurrX()"/> 
-        /// </summary>
-        public int CurrX
-        {
-            get { return IExecuteWithSignature<int>("getCurrX", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/OverScroller.html#getCurrY()"/> 
-        /// </summary>
-        public int CurrY
-        {
-            get { return IExecuteWithSignature<int>("getCurrY", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/OverScroller.html#getFinalX()"/> 
-        /// </summary>
-        public int FinalX
-        {
-            get { return IExecuteWithSignature<int>("getFinalX", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/OverScroller.html#getFinalY()"/> 
-        /// </summary>
-        public int FinalY
-        {
-            get { return IExecuteWithSignature<int>("getFinalY", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/OverScroller.html#getStartX()"/> 
-        /// </summary>
-        public int StartX
-        {
-            get { return IExecuteWithSignature<int>("getStartX", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/OverScroller.html#getStartY()"/> 
-        /// </summary>
-        public int StartY
-        {
-            get { return IExecuteWithSignature<int>("getStartY", "()I"); }
-        }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/OverScroller.html#computeScrollOffset()"/>
         /// </summary>
@@ -175,6 +126,54 @@ namespace Android.Widget
             return IExecuteWithSignature<bool>("isFinished", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/OverScroller.html#getCurrX()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCurrX()
+        {
+            return IExecuteWithSignature<int>("getCurrX", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/OverScroller.html#getCurrY()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCurrY()
+        {
+            return IExecuteWithSignature<int>("getCurrY", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/OverScroller.html#getFinalX()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetFinalX()
+        {
+            return IExecuteWithSignature<int>("getFinalX", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/OverScroller.html#getFinalY()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetFinalY()
+        {
+            return IExecuteWithSignature<int>("getFinalY", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/OverScroller.html#getStartX()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetStartX()
+        {
+            return IExecuteWithSignature<int>("getStartX", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/OverScroller.html#getStartY()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetStartY()
+        {
+            return IExecuteWithSignature<int>("getStartY", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/OverScroller.html#forceFinished(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
@@ -189,6 +188,14 @@ namespace Android.Widget
         public void SetFriction(float arg0)
         {
             IExecuteWithSignature("setFriction", "(F)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/OverScroller.html#getCurrVelocity()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetCurrVelocity()
+        {
+            return IExecuteWithSignature<float>("getCurrVelocity", "()F");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/OverScroller.html#abortAnimation()"/>

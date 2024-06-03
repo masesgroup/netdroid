@@ -182,34 +182,6 @@ namespace Android.Graphics.Drawable
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/Icon.html#getResId()"/> 
-        /// </summary>
-        public int ResId
-        {
-            get { return IExecuteWithSignature<int>("getResId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/Icon.html#getResPackage()"/> 
-        /// </summary>
-        public Java.Lang.String ResPackage
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getResPackage", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/Icon.html#getType()"/> 
-        /// </summary>
-        public int Type
-        {
-            get { return IExecuteWithSignature<int>("getType", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/Icon.html#getUri()"/> 
-        /// </summary>
-        public Android.Net.Uri Uri
-        {
-            get { return IExecuteWithSignature<Android.Net.Uri>("getUri", "()Landroid/net/Uri;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/Icon.html#loadDrawable(android.content.Context)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
@@ -255,12 +227,44 @@ namespace Android.Graphics.Drawable
             return IExecuteWithSignature<Android.Graphics.Drawable.Icon>("setTintMode", "(Landroid/graphics/PorterDuff$Mode;)Landroid/graphics/drawable/Icon;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/Icon.html#getUri()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Net.Uri"/></returns>
+        public Android.Net.Uri GetUri()
+        {
+            return IExecuteWithSignature<Android.Net.Uri>("getUri", "()Landroid/net/Uri;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/Icon.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/Icon.html#getResId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetResId()
+        {
+            return IExecuteWithSignature<int>("getResId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/Icon.html#getType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetType()
+        {
+            return IExecuteWithSignature<int>("getType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/Icon.html#getResPackage()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetResPackage()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getResPackage", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/Icon.html#loadDrawableAsync(android.content.Context,android.graphics.drawable.Icon.OnDrawableLoadedListener,android.os.Handler)"/>
@@ -319,7 +323,7 @@ namespace Android.Graphics.Drawable
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onDrawableLoaded", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Graphics.Drawable.Drawable>>>(OnDrawableLoadedEventHandler));
+                AddEventHandler("onDrawableLoaded", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Graphics.Drawable.Drawable>>>(OnDrawableLoadedEventHandler));
 
             }
 
@@ -327,7 +331,7 @@ namespace Android.Graphics.Drawable
             /// Handler for <see href="https://developer.android.com/reference/android/graphics/drawable/Icon.OnDrawableLoadedListener.html#onDrawableLoaded(android.graphics.drawable.Drawable)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnDrawableLoaded"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Graphics.Drawable.Drawable> OnOnDrawableLoaded { get; set; } = null;
+            public global::System.Action<Android.Graphics.Drawable.Drawable> OnOnDrawableLoaded { get; set; } = null;
 
             void OnDrawableLoadedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Graphics.Drawable.Drawable>> data)
             {

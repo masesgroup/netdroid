@@ -112,7 +112,7 @@ namespace Android.Location
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/LocationManager.html#KEY_STATUS_CHANGED"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String KEY_STATUS_CHANGED { get { if (!_KEY_STATUS_CHANGEDReady) { _KEY_STATUS_CHANGEDContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_STATUS_CHANGED"); _KEY_STATUS_CHANGEDReady = true; } return _KEY_STATUS_CHANGEDContent; } }
         private static Java.Lang.String _KEY_STATUS_CHANGEDContent = default;
         private static bool _KEY_STATUS_CHANGEDReady = false; // this is used because in case of generics 
@@ -149,46 +149,19 @@ namespace Android.Location
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/LocationManager.html#getAllProviders()"/> 
+        /// <see href="https://developer.android.com/reference/android/location/LocationManager.html#getGnssCapabilities()"/>
         /// </summary>
-        public Java.Util.List<Java.Lang.String> AllProviders
+        /// <returns><see cref="Android.Location.GnssCapabilities"/></returns>
+        public Android.Location.GnssCapabilities GetGnssCapabilities()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getAllProviders", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/LocationManager.html#getGnssAntennaInfos()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Location.GnssAntennaInfo> GnssAntennaInfos
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Location.GnssAntennaInfo>>("getGnssAntennaInfos", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/LocationManager.html#getGnssCapabilities()"/> 
-        /// </summary>
-        public Android.Location.GnssCapabilities GnssCapabilities
-        {
-            get { return IExecuteWithSignature<Android.Location.GnssCapabilities>("getGnssCapabilities", "()Landroid/location/GnssCapabilities;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/LocationManager.html#getGnssHardwareModelName()"/> 
-        /// </summary>
-        public Java.Lang.String GnssHardwareModelName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getGnssHardwareModelName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/LocationManager.html#getGnssYearOfHardware()"/> 
-        /// </summary>
-        public int GnssYearOfHardware
-        {
-            get { return IExecuteWithSignature<int>("getGnssYearOfHardware", "()I"); }
+            return IExecuteWithSignature<Android.Location.GnssCapabilities>("getGnssCapabilities", "()Landroid/location/GnssCapabilities;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/LocationManager.html#getGpsStatus(android.location.GpsStatus)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Location.GpsStatus"/></param>
         /// <returns><see cref="Android.Location.GpsStatus"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Location.GpsStatus GetGpsStatus(Android.Location.GpsStatus arg0)
         {
             return IExecuteWithSignature<Android.Location.GpsStatus>("getGpsStatus", "(Landroid/location/GpsStatus;)Landroid/location/GpsStatus;", arg0);
@@ -207,7 +180,7 @@ namespace Android.Location
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Android.Location.LocationProvider"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Location.LocationProvider GetProvider(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Android.Location.LocationProvider>("getProvider", "(Ljava/lang/String;)Landroid/location/LocationProvider;", arg0);
@@ -226,7 +199,7 @@ namespace Android.Location
         /// </summary>
         /// <param name="arg0"><see cref="Android.Location.GpsStatus.Listener"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool AddGpsStatusListener(Android.Location.GpsStatus.Listener arg0)
         {
             return IExecuteWithSignature<bool>("addGpsStatusListener", "(Landroid/location/GpsStatus$Listener;)Z", arg0);
@@ -236,7 +209,7 @@ namespace Android.Location
         /// </summary>
         /// <param name="arg0"><see cref="Android.Location.GpsStatus.NmeaListener"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool AddNmeaListener(Android.Location.GpsStatus.NmeaListener arg0)
         {
             return IExecuteWithSignature<bool>("addNmeaListener", "(Landroid/location/GpsStatus$NmeaListener;)Z", arg0);
@@ -256,7 +229,7 @@ namespace Android.Location
         /// </summary>
         /// <param name="arg0"><see cref="Android.Location.OnNmeaMessageListener"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool AddNmeaListener(Android.Location.OnNmeaMessageListener arg0)
         {
             return IExecuteWithSignature<bool>("addNmeaListener", "(Landroid/location/OnNmeaMessageListener;)Z", arg0);
@@ -333,7 +306,7 @@ namespace Android.Location
         /// </summary>
         /// <param name="arg0"><see cref="Android.Location.GnssMeasurementsEvent.Callback"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool RegisterGnssMeasurementsCallback(Android.Location.GnssMeasurementsEvent.Callback arg0)
         {
             return IExecuteWithSignature<bool>("registerGnssMeasurementsCallback", "(Landroid/location/GnssMeasurementsEvent$Callback;)Z", arg0);
@@ -363,7 +336,7 @@ namespace Android.Location
         /// </summary>
         /// <param name="arg0"><see cref="Android.Location.GnssNavigationMessage.Callback"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool RegisterGnssNavigationMessageCallback(Android.Location.GnssNavigationMessage.Callback arg0)
         {
             return IExecuteWithSignature<bool>("registerGnssNavigationMessageCallback", "(Landroid/location/GnssNavigationMessage$Callback;)Z", arg0);
@@ -393,7 +366,7 @@ namespace Android.Location
         /// </summary>
         /// <param name="arg0"><see cref="Android.Location.GnssStatus.Callback"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool RegisterGnssStatusCallback(Android.Location.GnssStatus.Callback arg0)
         {
             return IExecuteWithSignature<bool>("registerGnssStatusCallback", "(Landroid/location/GnssStatus$Callback;)Z", arg0);
@@ -420,15 +393,47 @@ namespace Android.Location
             return IExecute<bool>("sendExtraCommand", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/LocationManager.html#getGnssYearOfHardware()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetGnssYearOfHardware()
+        {
+            return IExecuteWithSignature<int>("getGnssYearOfHardware", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/LocationManager.html#getBestProvider(android.location.Criteria,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Location.Criteria"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Lang.String GetBestProvider(Android.Location.Criteria arg0, bool arg1)
         {
             return IExecute<Java.Lang.String>("getBestProvider", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/LocationManager.html#getGnssHardwareModelName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetGnssHardwareModelName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getGnssHardwareModelName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/LocationManager.html#getGnssAntennaInfos()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Location.GnssAntennaInfo> GetGnssAntennaInfos()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Location.GnssAntennaInfo>>("getGnssAntennaInfos", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/LocationManager.html#getAllProviders()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Lang.String> GetAllProviders()
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getAllProviders", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/LocationManager.html#getProviders(android.location.Criteria,boolean)"/>
@@ -436,7 +441,7 @@ namespace Android.Location
         /// <param name="arg0"><see cref="Android.Location.Criteria"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
         /// <returns><see cref="Java.Util.List"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Util.List<Java.Lang.String> GetProviders(Android.Location.Criteria arg0, bool arg1)
         {
             return IExecute<Java.Util.List<Java.Lang.String>>("getProviders", arg0, arg1);
@@ -502,7 +507,7 @@ namespace Android.Location
         /// <see href="https://developer.android.com/reference/android/location/LocationManager.html#clearTestProviderEnabled(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ClearTestProviderEnabled(Java.Lang.String arg0)
         {
             IExecuteWithSignature("clearTestProviderEnabled", "(Ljava/lang/String;)V", arg0);
@@ -511,7 +516,7 @@ namespace Android.Location
         /// <see href="https://developer.android.com/reference/android/location/LocationManager.html#clearTestProviderLocation(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ClearTestProviderLocation(Java.Lang.String arg0)
         {
             IExecuteWithSignature("clearTestProviderLocation", "(Ljava/lang/String;)V", arg0);
@@ -520,7 +525,7 @@ namespace Android.Location
         /// <see href="https://developer.android.com/reference/android/location/LocationManager.html#clearTestProviderStatus(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ClearTestProviderStatus(Java.Lang.String arg0)
         {
             IExecuteWithSignature("clearTestProviderStatus", "(Ljava/lang/String;)V", arg0);
@@ -552,7 +557,7 @@ namespace Android.Location
         /// <see href="https://developer.android.com/reference/android/location/LocationManager.html#removeGpsStatusListener(android.location.GpsStatus.Listener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Location.GpsStatus.Listener"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void RemoveGpsStatusListener(Android.Location.GpsStatus.Listener arg0)
         {
             IExecuteWithSignature("removeGpsStatusListener", "(Landroid/location/GpsStatus$Listener;)V", arg0);
@@ -561,7 +566,7 @@ namespace Android.Location
         /// <see href="https://developer.android.com/reference/android/location/LocationManager.html#removeNmeaListener(android.location.GpsStatus.NmeaListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Location.GpsStatus.NmeaListener"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void RemoveNmeaListener(Android.Location.GpsStatus.NmeaListener arg0)
         {
             IExecuteWithSignature("removeNmeaListener", "(Landroid/location/GpsStatus$NmeaListener;)V", arg0);
@@ -700,7 +705,7 @@ namespace Android.Location
         /// <param name="arg1"><see cref="float"/></param>
         /// <param name="arg2"><see cref="Android.Location.Criteria"/></param>
         /// <param name="arg3"><see cref="Android.App.PendingIntent"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void RequestLocationUpdates(long arg0, float arg1, Android.Location.Criteria arg2, Android.App.PendingIntent arg3)
         {
             IExecute("requestLocationUpdates", arg0, arg1, arg2, arg3);
@@ -713,7 +718,7 @@ namespace Android.Location
         /// <param name="arg2"><see cref="Android.Location.Criteria"/></param>
         /// <param name="arg3"><see cref="Android.Location.LocationListener"/></param>
         /// <param name="arg4"><see cref="Android.Os.Looper"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void RequestLocationUpdates(long arg0, float arg1, Android.Location.Criteria arg2, Android.Location.LocationListener arg3, Android.Os.Looper arg4)
         {
             IExecute("requestLocationUpdates", arg0, arg1, arg2, arg3, arg4);
@@ -726,7 +731,7 @@ namespace Android.Location
         /// <param name="arg2"><see cref="Android.Location.Criteria"/></param>
         /// <param name="arg3"><see cref="Java.Util.Concurrent.Executor"/></param>
         /// <param name="arg4"><see cref="Android.Location.LocationListener"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void RequestLocationUpdates(long arg0, float arg1, Android.Location.Criteria arg2, Java.Util.Concurrent.Executor arg3, Android.Location.LocationListener arg4)
         {
             IExecute("requestLocationUpdates", arg0, arg1, arg2, arg3, arg4);
@@ -736,7 +741,7 @@ namespace Android.Location
         /// </summary>
         /// <param name="arg0"><see cref="Android.Location.Criteria"/></param>
         /// <param name="arg1"><see cref="Android.App.PendingIntent"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void RequestSingleUpdate(Android.Location.Criteria arg0, Android.App.PendingIntent arg1)
         {
             IExecute("requestSingleUpdate", arg0, arg1);
@@ -747,7 +752,7 @@ namespace Android.Location
         /// <param name="arg0"><see cref="Android.Location.Criteria"/></param>
         /// <param name="arg1"><see cref="Android.Location.LocationListener"/></param>
         /// <param name="arg2"><see cref="Android.Os.Looper"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void RequestSingleUpdate(Android.Location.Criteria arg0, Android.Location.LocationListener arg1, Android.Os.Looper arg2)
         {
             IExecute("requestSingleUpdate", arg0, arg1, arg2);
@@ -757,7 +762,7 @@ namespace Android.Location
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Android.App.PendingIntent"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void RequestSingleUpdate(Java.Lang.String arg0, Android.App.PendingIntent arg1)
         {
             IExecute("requestSingleUpdate", arg0, arg1);
@@ -768,7 +773,7 @@ namespace Android.Location
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Android.Location.LocationListener"/></param>
         /// <param name="arg2"><see cref="Android.Os.Looper"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void RequestSingleUpdate(Java.Lang.String arg0, Android.Location.LocationListener arg1, Android.Os.Looper arg2)
         {
             IExecute("requestSingleUpdate", arg0, arg1, arg2);
@@ -798,7 +803,7 @@ namespace Android.Location
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Android.Os.Bundle"/></param>
         /// <param name="arg3"><see cref="long"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetTestProviderStatus(Java.Lang.String arg0, int arg1, Android.Os.Bundle arg2, long arg3)
         {
             IExecute("setTestProviderStatus", arg0, arg1, arg2, arg3);

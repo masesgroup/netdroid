@@ -36,7 +36,7 @@ namespace Android.Preference
         /// <param name="arg1"><see cref="Android.Util.AttributeSet"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Preference(Android.Content.Context arg0, Android.Util.AttributeSet arg1, int arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -47,7 +47,7 @@ namespace Android.Preference
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
         /// <param name="arg1"><see cref="Android.Util.AttributeSet"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Preference(Android.Content.Context arg0, Android.Util.AttributeSet arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
@@ -57,7 +57,7 @@ namespace Android.Preference
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
         /// <param name="arg1"><see cref="Android.Util.AttributeSet"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Preference(Android.Content.Context arg0, Android.Util.AttributeSet arg1)
             : base(arg0, arg1)
         {
@@ -66,7 +66,7 @@ namespace Android.Preference
         /// <see href="https://developer.android.com/reference/android/preference/Preference.html#%3Cinit%3E(android.content.Context)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Preference(Android.Content.Context arg0)
             : base(arg0)
         {
@@ -82,7 +82,7 @@ namespace Android.Preference
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/preference/Preference.html#DEFAULT_ORDER"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int DEFAULT_ORDER { get { if (!_DEFAULT_ORDERReady) { _DEFAULT_ORDERContent = SGetField<int>(LocalBridgeClazz, "DEFAULT_ORDER"); _DEFAULT_ORDERReady = true; } return _DEFAULT_ORDERContent; } }
         private static int _DEFAULT_ORDERContent = default;
         private static bool _DEFAULT_ORDERReady = false; // this is used because in case of generics 
@@ -95,181 +95,130 @@ namespace Android.Preference
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/preference/Preference.html#getContext()"/> 
+        /// <see href="https://developer.android.com/reference/android/preference/Preference.html#getContext()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Content.Context Context
+        /// <returns><see cref="Android.Content.Context"/></returns>
+        [global::System.Obsolete()]
+        public Android.Content.Context GetContext()
         {
-            get { return IExecuteWithSignature<Android.Content.Context>("getContext", "()Landroid/content/Context;"); }
+            return IExecuteWithSignature<Android.Content.Context>("getContext", "()Landroid/content/Context;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/preference/Preference.html#getDependency()"/> <see href="https://developer.android.com/reference/android/preference/Preference.html#setDependency(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/android/preference/Preference.html#getIntent()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Java.Lang.String Dependency
+        /// <returns><see cref="Android.Content.Intent"/></returns>
+        [global::System.Obsolete()]
+        public Android.Content.Intent GetIntent()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDependency", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setDependency", "(Ljava/lang/String;)V", value); }
+            return IExecuteWithSignature<Android.Content.Intent>("getIntent", "()Landroid/content/Intent;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/preference/Preference.html#getEditor()"/> 
+        /// <see href="https://developer.android.com/reference/android/preference/Preference.html#getSharedPreferences()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Content.SharedPreferences.Editor Editor
+        /// <returns><see cref="Android.Content.SharedPreferences"/></returns>
+        [global::System.Obsolete()]
+        public Android.Content.SharedPreferences GetSharedPreferences()
         {
-            get { return IExecuteWithSignature<Android.Content.SharedPreferences.Editor>("getEditor", "()Landroid/content/SharedPreferences$Editor;"); }
+            return IExecuteWithSignature<Android.Content.SharedPreferences>("getSharedPreferences", "()Landroid/content/SharedPreferences;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/preference/Preference.html#getExtras()"/> 
+        /// <see href="https://developer.android.com/reference/android/preference/Preference.html#getEditor()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Os.Bundle Extras
+        /// <returns><see cref="Android.Content.SharedPreferences.Editor"/></returns>
+        [global::System.Obsolete()]
+        public Android.Content.SharedPreferences.Editor GetEditor()
         {
-            get { return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;"); }
+            return IExecuteWithSignature<Android.Content.SharedPreferences.Editor>("getEditor", "()Landroid/content/SharedPreferences$Editor;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/preference/Preference.html#getFragment()"/> <see href="https://developer.android.com/reference/android/preference/Preference.html#setFragment(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/android/preference/Preference.html#getIcon()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Java.Lang.String Fragment
+        /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
+        [global::System.Obsolete()]
+        public Android.Graphics.Drawable.Drawable GetIcon()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getFragment", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setFragment", "(Ljava/lang/String;)V", value); }
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getIcon", "()Landroid/graphics/drawable/Drawable;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/preference/Preference.html#getOnPreferenceChangeListener()"/> 
+        /// <see href="https://developer.android.com/reference/android/preference/Preference.html#getExtras()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Preference.Preference.OnPreferenceChangeListener GetOnPreferenceChangeListener
+        /// <returns><see cref="Android.Os.Bundle"/></returns>
+        [global::System.Obsolete()]
+        public Android.Os.Bundle GetExtras()
         {
-            get { return IExecuteWithSignature<Android.Preference.Preference.OnPreferenceChangeListener>("getOnPreferenceChangeListener", "()Landroid/preference/Preference$OnPreferenceChangeListener;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/preference/Preference.html#getOnPreferenceClickListener()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Android.Preference.Preference.OnPreferenceClickListener GetOnPreferenceClickListener
-        {
-            get { return IExecuteWithSignature<Android.Preference.Preference.OnPreferenceClickListener>("getOnPreferenceClickListener", "()Landroid/preference/Preference$OnPreferenceClickListener;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/preference/Preference.html#getIcon()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Android.Graphics.Drawable.Drawable Icon
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getIcon", "()Landroid/graphics/drawable/Drawable;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/preference/Preference.html#getIntent()"/> <see href="https://developer.android.com/reference/android/preference/Preference.html#setIntent(android.content.Intent)"/>
-        /// </summary>
-        [System.Obsolete()]
-        public Android.Content.Intent Intent
-        {
-            get { return IExecuteWithSignature<Android.Content.Intent>("getIntent", "()Landroid/content/Intent;"); } set { IExecuteWithSignature("setIntent", "(Landroid/content/Intent;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/preference/Preference.html#getKey()"/> <see href="https://developer.android.com/reference/android/preference/Preference.html#setKey(java.lang.String)"/>
-        /// </summary>
-        [System.Obsolete()]
-        public Java.Lang.String Key
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getKey", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setKey", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/preference/Preference.html#getLayoutResource()"/> <see href="https://developer.android.com/reference/android/preference/Preference.html#setLayoutResource(int)"/>
-        /// </summary>
-        [System.Obsolete()]
-        public int LayoutResource
-        {
-            get { return IExecuteWithSignature<int>("getLayoutResource", "()I"); } set { IExecuteWithSignature("setLayoutResource", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/preference/Preference.html#getOrder()"/> <see href="https://developer.android.com/reference/android/preference/Preference.html#setOrder(int)"/>
-        /// </summary>
-        [System.Obsolete()]
-        public int Order
-        {
-            get { return IExecuteWithSignature<int>("getOrder", "()I"); } set { IExecuteWithSignature("setOrder", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/preference/Preference.html#getParent()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Android.Preference.PreferenceGroup Parent
-        {
-            get { return IExecuteWithSignature<Android.Preference.PreferenceGroup>("getParent", "()Landroid/preference/PreferenceGroup;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/preference/Preference.html#getPreferenceDataStore()"/> <see href="https://developer.android.com/reference/android/preference/Preference.html#setPreferenceDataStore(android.preference.PreferenceDataStore)"/>
-        /// </summary>
-        [System.Obsolete()]
-        public Android.Preference.PreferenceDataStore PreferenceDataStore
-        {
-            get { return IExecuteWithSignature<Android.Preference.PreferenceDataStore>("getPreferenceDataStore", "()Landroid/preference/PreferenceDataStore;"); } set { IExecuteWithSignature("setPreferenceDataStore", "(Landroid/preference/PreferenceDataStore;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/preference/Preference.html#getPreferenceManager()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Android.Preference.PreferenceManager PreferenceManager
-        {
-            get { return IExecuteWithSignature<Android.Preference.PreferenceManager>("getPreferenceManager", "()Landroid/preference/PreferenceManager;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/preference/Preference.html#getSharedPreferences()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Android.Content.SharedPreferences SharedPreferences
-        {
-            get { return IExecuteWithSignature<Android.Content.SharedPreferences>("getSharedPreferences", "()Landroid/content/SharedPreferences;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/preference/Preference.html#getShouldDisableView()"/> <see href="https://developer.android.com/reference/android/preference/Preference.html#setShouldDisableView(boolean)"/>
-        /// </summary>
-        [System.Obsolete()]
-        public bool ShouldDisableView
-        {
-            get { return IExecuteWithSignature<bool>("getShouldDisableView", "()Z"); } set { IExecuteWithSignature("setShouldDisableView", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/preference/Preference.html#getSummary()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Java.Lang.CharSequence Summary
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getSummary", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/preference/Preference.html#getTitle()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Java.Lang.CharSequence Title
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getTitle", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/preference/Preference.html#getTitleRes()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public int TitleRes
-        {
-            get { return IExecuteWithSignature<int>("getTitleRes", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/preference/Preference.html#getWidgetLayoutResource()"/> <see href="https://developer.android.com/reference/android/preference/Preference.html#setWidgetLayoutResource(int)"/>
-        /// </summary>
-        [System.Obsolete()]
-        public int WidgetLayoutResource
-        {
-            get { return IExecuteWithSignature<int>("getWidgetLayoutResource", "()I"); } set { IExecuteWithSignature("setWidgetLayoutResource", "(I)V", value); }
+            return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/preference/Preference.html#peekExtras()"/>
         /// </summary>
         /// <returns><see cref="Android.Os.Bundle"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Os.Bundle PeekExtras()
         {
             return IExecuteWithSignature<Android.Os.Bundle>("peekExtras", "()Landroid/os/Bundle;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/preference/Preference.html#getOnPreferenceChangeListener()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Preference.Preference.OnPreferenceChangeListener"/></returns>
+        [global::System.Obsolete()]
+        public Android.Preference.Preference.OnPreferenceChangeListener GetOnPreferenceChangeListener()
+        {
+            return IExecuteWithSignature<Android.Preference.Preference.OnPreferenceChangeListener>("getOnPreferenceChangeListener", "()Landroid/preference/Preference$OnPreferenceChangeListener;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/preference/Preference.html#getOnPreferenceChangeListener()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Preference.Preference.OnPreferenceChangeListener"/></returns>
+        [global::System.Obsolete()]
+        public Android.Preference.Preference.OnPreferenceChangeListener GetOnPreferenceChangeListenerDirect()
+        {
+            return IExecuteWithSignature<Android.Preference.Preference.OnPreferenceChangeListenerDirect, Android.Preference.Preference.OnPreferenceChangeListener>("getOnPreferenceChangeListener", "()Landroid/preference/Preference$OnPreferenceChangeListener;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/preference/Preference.html#getOnPreferenceClickListener()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Preference.Preference.OnPreferenceClickListener"/></returns>
+        [global::System.Obsolete()]
+        public Android.Preference.Preference.OnPreferenceClickListener GetOnPreferenceClickListener()
+        {
+            return IExecuteWithSignature<Android.Preference.Preference.OnPreferenceClickListener>("getOnPreferenceClickListener", "()Landroid/preference/Preference$OnPreferenceClickListener;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/preference/Preference.html#getOnPreferenceClickListener()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Preference.Preference.OnPreferenceClickListener"/></returns>
+        [global::System.Obsolete()]
+        public Android.Preference.Preference.OnPreferenceClickListener GetOnPreferenceClickListenerDirect()
+        {
+            return IExecuteWithSignature<Android.Preference.Preference.OnPreferenceClickListenerDirect, Android.Preference.Preference.OnPreferenceClickListener>("getOnPreferenceClickListener", "()Landroid/preference/Preference$OnPreferenceClickListener;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/preference/Preference.html#getPreferenceDataStore()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Preference.PreferenceDataStore"/></returns>
+        [global::System.Obsolete()]
+        public Android.Preference.PreferenceDataStore GetPreferenceDataStore()
+        {
+            return IExecuteWithSignature<Android.Preference.PreferenceDataStore>("getPreferenceDataStore", "()Landroid/preference/PreferenceDataStore;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/preference/Preference.html#getParent()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Preference.PreferenceGroup"/></returns>
+        [global::System.Obsolete()]
+        public Android.Preference.PreferenceGroup GetParent()
+        {
+            return IExecuteWithSignature<Android.Preference.PreferenceGroup>("getParent", "()Landroid/preference/PreferenceGroup;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/preference/Preference.html#getPreferenceManager()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Preference.PreferenceManager"/></returns>
+        [global::System.Obsolete()]
+        public Android.Preference.PreferenceManager GetPreferenceManager()
+        {
+            return IExecuteWithSignature<Android.Preference.PreferenceManager>("getPreferenceManager", "()Landroid/preference/PreferenceManager;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/preference/Preference.html#getView(android.view.View,android.view.ViewGroup)"/>
@@ -277,16 +226,25 @@ namespace Android.Preference
         /// <param name="arg0"><see cref="Android.View.View"/></param>
         /// <param name="arg1"><see cref="Android.View.ViewGroup"/></param>
         /// <returns><see cref="Android.View.View"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.View.View GetView(Android.View.View arg0, Android.View.ViewGroup arg1)
         {
             return IExecute<Android.View.View>("getView", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/preference/Preference.html#getShouldDisableView()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        [global::System.Obsolete()]
+        public bool GetShouldDisableView()
+        {
+            return IExecuteWithSignature<bool>("getShouldDisableView", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/preference/Preference.html#hasKey()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool HasKey()
         {
             return IExecuteWithSignature<bool>("hasKey", "()Z");
@@ -295,7 +253,7 @@ namespace Android.Preference
         /// <see href="https://developer.android.com/reference/android/preference/Preference.html#isEnabled()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsEnabled()
         {
             return IExecuteWithSignature<bool>("isEnabled", "()Z");
@@ -304,7 +262,7 @@ namespace Android.Preference
         /// <see href="https://developer.android.com/reference/android/preference/Preference.html#isIconSpaceReserved()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsIconSpaceReserved()
         {
             return IExecuteWithSignature<bool>("isIconSpaceReserved", "()Z");
@@ -313,7 +271,7 @@ namespace Android.Preference
         /// <see href="https://developer.android.com/reference/android/preference/Preference.html#isPersistent()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsPersistent()
         {
             return IExecuteWithSignature<bool>("isPersistent", "()Z");
@@ -322,7 +280,7 @@ namespace Android.Preference
         /// <see href="https://developer.android.com/reference/android/preference/Preference.html#isRecycleEnabled()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsRecycleEnabled()
         {
             return IExecuteWithSignature<bool>("isRecycleEnabled", "()Z");
@@ -331,7 +289,7 @@ namespace Android.Preference
         /// <see href="https://developer.android.com/reference/android/preference/Preference.html#isSelectable()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsSelectable()
         {
             return IExecuteWithSignature<bool>("isSelectable", "()Z");
@@ -340,7 +298,7 @@ namespace Android.Preference
         /// <see href="https://developer.android.com/reference/android/preference/Preference.html#isSingleLineTitle()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsSingleLineTitle()
         {
             return IExecuteWithSignature<bool>("isSingleLineTitle", "()Z");
@@ -350,7 +308,7 @@ namespace Android.Preference
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Set"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool PersistStringSet(Java.Util.Set<Java.Lang.String> arg0)
         {
             return IExecuteWithSignature<bool>("persistStringSet", "(Ljava/util/Set;)Z", arg0);
@@ -359,7 +317,7 @@ namespace Android.Preference
         /// <see href="https://developer.android.com/reference/android/preference/Preference.html#shouldCommit()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool ShouldCommit()
         {
             return IExecuteWithSignature<bool>("shouldCommit", "()Z");
@@ -368,7 +326,7 @@ namespace Android.Preference
         /// <see href="https://developer.android.com/reference/android/preference/Preference.html#shouldDisableDependents()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool ShouldDisableDependents()
         {
             return IExecuteWithSignature<bool>("shouldDisableDependents", "()Z");
@@ -378,7 +336,7 @@ namespace Android.Preference
         /// </summary>
         /// <param name="arg0"><see cref="Android.Preference.Preference"/></param>
         /// <returns><see cref="int"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int CompareTo(Android.Preference.Preference arg0)
         {
             return IExecuteWithSignature<int>("compareTo", "(Landroid/preference/Preference;)I", arg0);
@@ -388,17 +346,98 @@ namespace Android.Preference
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="int"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int CompareTo(object arg0)
         {
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/preference/Preference.html#getLayoutResource()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetLayoutResource()
+        {
+            return IExecuteWithSignature<int>("getLayoutResource", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/preference/Preference.html#getOrder()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetOrder()
+        {
+            return IExecuteWithSignature<int>("getOrder", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/preference/Preference.html#getTitleRes()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetTitleRes()
+        {
+            return IExecuteWithSignature<int>("getTitleRes", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/preference/Preference.html#getWidgetLayoutResource()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetWidgetLayoutResource()
+        {
+            return IExecuteWithSignature<int>("getWidgetLayoutResource", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/preference/Preference.html#getSummary()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        [global::System.Obsolete()]
+        public Java.Lang.CharSequence GetSummary()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getSummary", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/preference/Preference.html#getTitle()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        [global::System.Obsolete()]
+        public Java.Lang.CharSequence GetTitle()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getTitle", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/preference/Preference.html#getDependency()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        [global::System.Obsolete()]
+        public Java.Lang.String GetDependency()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getDependency", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/preference/Preference.html#getFragment()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        [global::System.Obsolete()]
+        public Java.Lang.String GetFragment()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getFragment", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/preference/Preference.html#getKey()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        [global::System.Obsolete()]
+        public Java.Lang.String GetKey()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getKey", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/preference/Preference.html#getPersistedStringSet(java.util.Set)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Set"/></param>
         /// <returns><see cref="Java.Util.Set"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Util.Set<Java.Lang.String> GetPersistedStringSet(Java.Util.Set<Java.Lang.String> arg0)
         {
             return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getPersistedStringSet", "(Ljava/util/Set;)Ljava/util/Set;", arg0);
@@ -407,7 +446,7 @@ namespace Android.Preference
         /// <see href="https://developer.android.com/reference/android/preference/Preference.html#notifyDependencyChange(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void NotifyDependencyChange(bool arg0)
         {
             IExecuteWithSignature("notifyDependencyChange", "(Z)V", arg0);
@@ -417,7 +456,7 @@ namespace Android.Preference
         /// </summary>
         /// <param name="arg0"><see cref="Android.Preference.Preference"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnDependencyChanged(Android.Preference.Preference arg0, bool arg1)
         {
             IExecute("onDependencyChanged", arg0, arg1);
@@ -427,7 +466,7 @@ namespace Android.Preference
         /// </summary>
         /// <param name="arg0"><see cref="Android.Preference.Preference"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnParentChanged(Android.Preference.Preference arg0, bool arg1)
         {
             IExecute("onParentChanged", arg0, arg1);
@@ -436,7 +475,7 @@ namespace Android.Preference
         /// <see href="https://developer.android.com/reference/android/preference/Preference.html#restoreHierarchyState(android.os.Bundle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Os.Bundle"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void RestoreHierarchyState(Android.Os.Bundle arg0)
         {
             IExecuteWithSignature("restoreHierarchyState", "(Landroid/os/Bundle;)V", arg0);
@@ -445,7 +484,7 @@ namespace Android.Preference
         /// <see href="https://developer.android.com/reference/android/preference/Preference.html#saveHierarchyState(android.os.Bundle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Os.Bundle"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SaveHierarchyState(Android.Os.Bundle arg0)
         {
             IExecuteWithSignature("saveHierarchyState", "(Landroid/os/Bundle;)V", arg0);
@@ -454,25 +493,43 @@ namespace Android.Preference
         /// <see href="https://developer.android.com/reference/android/preference/Preference.html#setDefaultValue(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetDefaultValue(object arg0)
         {
             IExecuteWithSignature("setDefaultValue", "(Ljava/lang/Object;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/preference/Preference.html#setDependency(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        [global::System.Obsolete()]
+        public void SetDependency(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setDependency", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/preference/Preference.html#setEnabled(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetEnabled(bool arg0)
         {
             IExecuteWithSignature("setEnabled", "(Z)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/preference/Preference.html#setFragment(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        [global::System.Obsolete()]
+        public void SetFragment(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setFragment", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/preference/Preference.html#setIcon(android.graphics.drawable.Drawable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Graphics.Drawable.Drawable"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetIcon(Android.Graphics.Drawable.Drawable arg0)
         {
             IExecuteWithSignature("setIcon", "(Landroid/graphics/drawable/Drawable;)V", arg0);
@@ -481,7 +538,7 @@ namespace Android.Preference
         /// <see href="https://developer.android.com/reference/android/preference/Preference.html#setIcon(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetIcon(int arg0)
         {
             IExecuteWithSignature("setIcon", "(I)V", arg0);
@@ -490,16 +547,43 @@ namespace Android.Preference
         /// <see href="https://developer.android.com/reference/android/preference/Preference.html#setIconSpaceReserved(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetIconSpaceReserved(bool arg0)
         {
             IExecuteWithSignature("setIconSpaceReserved", "(Z)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/preference/Preference.html#setIntent(android.content.Intent)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Intent"/></param>
+        [global::System.Obsolete()]
+        public void SetIntent(Android.Content.Intent arg0)
+        {
+            IExecuteWithSignature("setIntent", "(Landroid/content/Intent;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/preference/Preference.html#setKey(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        [global::System.Obsolete()]
+        public void SetKey(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setKey", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/preference/Preference.html#setLayoutResource(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        [global::System.Obsolete()]
+        public void SetLayoutResource(int arg0)
+        {
+            IExecuteWithSignature("setLayoutResource", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/preference/Preference.html#setOnPreferenceChangeListener(android.preference.Preference.OnPreferenceChangeListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Preference.Preference.OnPreferenceChangeListener"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetOnPreferenceChangeListener(Android.Preference.Preference.OnPreferenceChangeListener arg0)
         {
             IExecuteWithSignature("setOnPreferenceChangeListener", "(Landroid/preference/Preference$OnPreferenceChangeListener;)V", arg0);
@@ -508,25 +592,43 @@ namespace Android.Preference
         /// <see href="https://developer.android.com/reference/android/preference/Preference.html#setOnPreferenceClickListener(android.preference.Preference.OnPreferenceClickListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Preference.Preference.OnPreferenceClickListener"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetOnPreferenceClickListener(Android.Preference.Preference.OnPreferenceClickListener arg0)
         {
             IExecuteWithSignature("setOnPreferenceClickListener", "(Landroid/preference/Preference$OnPreferenceClickListener;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/preference/Preference.html#setOrder(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        [global::System.Obsolete()]
+        public void SetOrder(int arg0)
+        {
+            IExecuteWithSignature("setOrder", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/preference/Preference.html#setPersistent(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetPersistent(bool arg0)
         {
             IExecuteWithSignature("setPersistent", "(Z)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/preference/Preference.html#setPreferenceDataStore(android.preference.PreferenceDataStore)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Preference.PreferenceDataStore"/></param>
+        [global::System.Obsolete()]
+        public void SetPreferenceDataStore(Android.Preference.PreferenceDataStore arg0)
+        {
+            IExecuteWithSignature("setPreferenceDataStore", "(Landroid/preference/PreferenceDataStore;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/preference/Preference.html#setRecycleEnabled(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetRecycleEnabled(bool arg0)
         {
             IExecuteWithSignature("setRecycleEnabled", "(Z)V", arg0);
@@ -535,16 +637,25 @@ namespace Android.Preference
         /// <see href="https://developer.android.com/reference/android/preference/Preference.html#setSelectable(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetSelectable(bool arg0)
         {
             IExecuteWithSignature("setSelectable", "(Z)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/preference/Preference.html#setShouldDisableView(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        [global::System.Obsolete()]
+        public void SetShouldDisableView(bool arg0)
+        {
+            IExecuteWithSignature("setShouldDisableView", "(Z)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/preference/Preference.html#setSingleLineTitle(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetSingleLineTitle(bool arg0)
         {
             IExecuteWithSignature("setSingleLineTitle", "(Z)V", arg0);
@@ -553,7 +664,7 @@ namespace Android.Preference
         /// <see href="https://developer.android.com/reference/android/preference/Preference.html#setSummary(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetSummary(int arg0)
         {
             IExecuteWithSignature("setSummary", "(I)V", arg0);
@@ -562,7 +673,7 @@ namespace Android.Preference
         /// <see href="https://developer.android.com/reference/android/preference/Preference.html#setSummary(java.lang.CharSequence)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetSummary(Java.Lang.CharSequence arg0)
         {
             IExecuteWithSignature("setSummary", "(Ljava/lang/CharSequence;)V", arg0);
@@ -571,7 +682,7 @@ namespace Android.Preference
         /// <see href="https://developer.android.com/reference/android/preference/Preference.html#setTitle(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetTitle(int arg0)
         {
             IExecuteWithSignature("setTitle", "(I)V", arg0);
@@ -580,10 +691,19 @@ namespace Android.Preference
         /// <see href="https://developer.android.com/reference/android/preference/Preference.html#setTitle(java.lang.CharSequence)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetTitle(Java.Lang.CharSequence arg0)
         {
             IExecuteWithSignature("setTitle", "(Ljava/lang/CharSequence;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/preference/Preference.html#setWidgetLayoutResource(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        [global::System.Obsolete()]
+        public void SetWidgetLayoutResource(int arg0)
+        {
+            IExecuteWithSignature("setWidgetLayoutResource", "(I)V", arg0);
         }
 
         #endregion
@@ -597,7 +717,7 @@ namespace Android.Preference
             /// <see href="https://developer.android.com/reference/android/preference/Preference.BaseSavedState.html#%3Cinit%3E(android.os.Parcel)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Os.Parcel"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public BaseSavedState(Android.Os.Parcel arg0)
                 : base(arg0)
             {
@@ -606,7 +726,7 @@ namespace Android.Preference
             /// <see href="https://developer.android.com/reference/android/preference/Preference.BaseSavedState.html#%3Cinit%3E(android.os.Parcelable)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Os.Parcelable"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public BaseSavedState(Android.Os.Parcelable arg0)
                 : base(arg0)
             {
@@ -622,7 +742,7 @@ namespace Android.Preference
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/preference/Preference.BaseSavedState.html#CREATOR"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
             private static Android.Os.Parcelable.Creator _CREATORContent = default;
             private static bool _CREATORReady = false; // this is used because in case of generics 
@@ -670,7 +790,7 @@ namespace Android.Preference
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onPreferenceChange", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Preference.Preference>>>(OnPreferenceChangeEventHandler));
+                AddEventHandler("onPreferenceChange", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Preference.Preference>>>(OnPreferenceChangeEventHandler));
 
             }
 
@@ -678,7 +798,7 @@ namespace Android.Preference
             /// Handler for <see href="https://developer.android.com/reference/android/preference/Preference.OnPreferenceChangeListener.html#onPreferenceChange(android.preference.Preference,java.lang.Object)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnPreferenceChange"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Func<Android.Preference.Preference, object, bool> OnOnPreferenceChange { get; set; } = null;
+            public global::System.Func<Android.Preference.Preference, object, bool> OnOnPreferenceChange { get; set; } = null;
 
             void OnPreferenceChangeEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Preference.Preference>> data)
             {
@@ -693,7 +813,7 @@ namespace Android.Preference
             /// <param name="arg0"><see cref="Android.Preference.Preference"/></param>
             /// <param name="arg1"><see cref="object"/></param>
             /// <returns><see cref="bool"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public virtual bool OnPreferenceChange(Android.Preference.Preference arg0, object arg1)
             {
                 return default;
@@ -735,7 +855,7 @@ namespace Android.Preference
             /// <param name="arg0"><see cref="Android.Preference.Preference"/></param>
             /// <param name="arg1"><see cref="object"/></param>
             /// <returns><see cref="bool"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public override bool OnPreferenceChange(Android.Preference.Preference arg0, object arg1)
             {
                 return IExecute<bool>("onPreferenceChange", arg0, arg1);
@@ -776,7 +896,7 @@ namespace Android.Preference
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onPreferenceClick", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Preference.Preference>>>(OnPreferenceClickEventHandler));
+                AddEventHandler("onPreferenceClick", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Preference.Preference>>>(OnPreferenceClickEventHandler));
 
             }
 
@@ -784,7 +904,7 @@ namespace Android.Preference
             /// Handler for <see href="https://developer.android.com/reference/android/preference/Preference.OnPreferenceClickListener.html#onPreferenceClick(android.preference.Preference)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnPreferenceClick"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Func<Android.Preference.Preference, bool> OnOnPreferenceClick { get; set; } = null;
+            public global::System.Func<Android.Preference.Preference, bool> OnOnPreferenceClick { get; set; } = null;
 
             void OnPreferenceClickEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Preference.Preference>> data)
             {
@@ -798,7 +918,7 @@ namespace Android.Preference
             /// </summary>
             /// <param name="arg0"><see cref="Android.Preference.Preference"/></param>
             /// <returns><see cref="bool"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public virtual bool OnPreferenceClick(Android.Preference.Preference arg0)
             {
                 return default;
@@ -839,7 +959,7 @@ namespace Android.Preference
             /// </summary>
             /// <param name="arg0"><see cref="Android.Preference.Preference"/></param>
             /// <returns><see cref="bool"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public override bool OnPreferenceClick(Android.Preference.Preference arg0)
             {
                 return IExecuteWithSignature<bool>("onPreferenceClick", "(Landroid/preference/Preference;)Z", arg0);

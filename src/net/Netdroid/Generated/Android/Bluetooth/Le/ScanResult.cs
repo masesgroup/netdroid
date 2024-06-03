@@ -36,7 +36,7 @@ namespace Android.Bluetooth.Le
         /// <param name="arg1"><see cref="Android.Bluetooth.Le.ScanRecord"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="long"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public ScanResult(Android.Bluetooth.BluetoothDevice arg0, Android.Bluetooth.Le.ScanRecord arg1, int arg2, long arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -117,74 +117,20 @@ namespace Android.Bluetooth.Le
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/le/ScanResult.html#getAdvertisingSid()"/> 
+        /// <see href="https://developer.android.com/reference/android/bluetooth/le/ScanResult.html#getDevice()"/>
         /// </summary>
-        public int AdvertisingSid
+        /// <returns><see cref="Android.Bluetooth.BluetoothDevice"/></returns>
+        public Android.Bluetooth.BluetoothDevice GetDevice()
         {
-            get { return IExecuteWithSignature<int>("getAdvertisingSid", "()I"); }
+            return IExecuteWithSignature<Android.Bluetooth.BluetoothDevice>("getDevice", "()Landroid/bluetooth/BluetoothDevice;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/le/ScanResult.html#getDataStatus()"/> 
+        /// <see href="https://developer.android.com/reference/android/bluetooth/le/ScanResult.html#getScanRecord()"/>
         /// </summary>
-        public int DataStatus
+        /// <returns><see cref="Android.Bluetooth.Le.ScanRecord"/></returns>
+        public Android.Bluetooth.Le.ScanRecord GetScanRecord()
         {
-            get { return IExecuteWithSignature<int>("getDataStatus", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/le/ScanResult.html#getDevice()"/> 
-        /// </summary>
-        public Android.Bluetooth.BluetoothDevice Device
-        {
-            get { return IExecuteWithSignature<Android.Bluetooth.BluetoothDevice>("getDevice", "()Landroid/bluetooth/BluetoothDevice;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/le/ScanResult.html#getPeriodicAdvertisingInterval()"/> 
-        /// </summary>
-        public int PeriodicAdvertisingInterval
-        {
-            get { return IExecuteWithSignature<int>("getPeriodicAdvertisingInterval", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/le/ScanResult.html#getPrimaryPhy()"/> 
-        /// </summary>
-        public int PrimaryPhy
-        {
-            get { return IExecuteWithSignature<int>("getPrimaryPhy", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/le/ScanResult.html#getRssi()"/> 
-        /// </summary>
-        public int Rssi
-        {
-            get { return IExecuteWithSignature<int>("getRssi", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/le/ScanResult.html#getScanRecord()"/> 
-        /// </summary>
-        public Android.Bluetooth.Le.ScanRecord ScanRecord
-        {
-            get { return IExecuteWithSignature<Android.Bluetooth.Le.ScanRecord>("getScanRecord", "()Landroid/bluetooth/le/ScanRecord;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/le/ScanResult.html#getSecondaryPhy()"/> 
-        /// </summary>
-        public int SecondaryPhy
-        {
-            get { return IExecuteWithSignature<int>("getSecondaryPhy", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/le/ScanResult.html#getTimestampNanos()"/> 
-        /// </summary>
-        public long TimestampNanos
-        {
-            get { return IExecuteWithSignature<long>("getTimestampNanos", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/le/ScanResult.html#getTxPower()"/> 
-        /// </summary>
-        public int TxPower
-        {
-            get { return IExecuteWithSignature<int>("getTxPower", "()I"); }
+            return IExecuteWithSignature<Android.Bluetooth.Le.ScanRecord>("getScanRecord", "()Landroid/bluetooth/le/ScanRecord;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/le/ScanResult.html#isConnectable()"/>
@@ -209,6 +155,70 @@ namespace Android.Bluetooth.Le
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/le/ScanResult.html#getAdvertisingSid()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetAdvertisingSid()
+        {
+            return IExecuteWithSignature<int>("getAdvertisingSid", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/le/ScanResult.html#getDataStatus()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDataStatus()
+        {
+            return IExecuteWithSignature<int>("getDataStatus", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/le/ScanResult.html#getPeriodicAdvertisingInterval()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPeriodicAdvertisingInterval()
+        {
+            return IExecuteWithSignature<int>("getPeriodicAdvertisingInterval", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/le/ScanResult.html#getPrimaryPhy()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPrimaryPhy()
+        {
+            return IExecuteWithSignature<int>("getPrimaryPhy", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/le/ScanResult.html#getRssi()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetRssi()
+        {
+            return IExecuteWithSignature<int>("getRssi", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/le/ScanResult.html#getSecondaryPhy()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSecondaryPhy()
+        {
+            return IExecuteWithSignature<int>("getSecondaryPhy", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/le/ScanResult.html#getTxPower()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTxPower()
+        {
+            return IExecuteWithSignature<int>("getTxPower", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/le/ScanResult.html#getTimestampNanos()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetTimestampNanos()
+        {
+            return IExecuteWithSignature<long>("getTimestampNanos", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/le/ScanResult.html#writeToParcel(android.os.Parcel,int)"/>

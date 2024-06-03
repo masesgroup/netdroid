@@ -46,7 +46,7 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletionService.html#poll()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletionService.html#poll()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
         public Java.Util.Concurrent.Future Poll()
@@ -54,7 +54,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.Concurrent.Future>("poll", "()Ljava/util/concurrent/Future;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletionService.html#poll(long,java.util.concurrent.TimeUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletionService.html#poll(long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
@@ -65,7 +65,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.Concurrent.Future>("poll", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletionService.html#submit(java.lang.Runnable,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletionService.html#submit(java.lang.Runnable,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -75,7 +75,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.Concurrent.Future>("submit", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletionService.html#submit(java.util.concurrent.Callable)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletionService.html#submit(java.util.concurrent.Callable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Callable"/></param>
         /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
@@ -84,7 +84,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.Concurrent.Future>("submit", "(Ljava/util/concurrent/Callable;)Ljava/util/concurrent/Future;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletionService.html#take()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletionService.html#take()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
@@ -146,7 +146,7 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletionService.html#poll()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletionService.html#poll()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
         public Java.Util.Concurrent.Future<V> Poll()
@@ -154,7 +154,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.Concurrent.Future<V>>("poll", "()Ljava/util/concurrent/Future;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletionService.html#poll(long,java.util.concurrent.TimeUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletionService.html#poll(long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
@@ -165,7 +165,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.Concurrent.Future<V>>("poll", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletionService.html#submit(java.lang.Runnable,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletionService.html#submit(java.lang.Runnable,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
         /// <param name="arg1"><typeparamref name="V"/></param>
@@ -175,7 +175,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.Concurrent.Future<V>>("submit", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletionService.html#submit(java.util.concurrent.Callable)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletionService.html#submit(java.util.concurrent.Callable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Callable"/></param>
         /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
@@ -184,7 +184,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.Concurrent.Future<V>>("submit", "(Ljava/util/concurrent/Callable;)Ljava/util/concurrent/Future;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletionService.html#take()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletionService.html#take()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Concurrent.Future"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>

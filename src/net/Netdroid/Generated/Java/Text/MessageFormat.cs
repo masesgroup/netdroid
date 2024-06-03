@@ -30,7 +30,7 @@ namespace Java.Text
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/MessageFormat.html#%3Cinit%3E(java.lang.String,java.util.Locale)"/>
+        /// <see href="https://developer.android.com/reference/java/text/MessageFormat.html#%3Cinit%3E(java.lang.String,java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
@@ -39,7 +39,7 @@ namespace Java.Text
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/MessageFormat.html#%3Cinit%3E(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/text/MessageFormat.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public MessageFormat(Java.Lang.String arg0)
@@ -59,7 +59,7 @@ namespace Java.Text
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/MessageFormat.html#format(java.lang.String,java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/text/MessageFormat.html#format(java.lang.String,java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -73,28 +73,7 @@ namespace Java.Text
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/MessageFormat.html#getFormats()"/> <see href="https://developer.android.com/reference/java.base/java/text/MessageFormat.html#setFormats(java.text.Format[])"/>
-        /// </summary>
-        public Java.Text.Format[] Formats
-        {
-            get { return IExecuteWithSignatureArray<Java.Text.Format>("getFormats", "()[Ljava/text/Format;"); } set { IExecuteWithSignature("setFormats", "([Ljava/text/Format;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/MessageFormat.html#getFormatsByArgumentIndex()"/> <see href="https://developer.android.com/reference/java.base/java/text/MessageFormat.html#setFormatsByArgumentIndex(java.text.Format[])"/>
-        /// </summary>
-        public Java.Text.Format[] FormatsByArgumentIndex
-        {
-            get { return IExecuteWithSignatureArray<Java.Text.Format>("getFormatsByArgumentIndex", "()[Ljava/text/Format;"); } set { IExecuteWithSignature("setFormatsByArgumentIndex", "([Ljava/text/Format;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/MessageFormat.html#getLocale()"/> <see href="https://developer.android.com/reference/java.base/java/text/MessageFormat.html#setLocale(java.util.Locale)"/>
-        /// </summary>
-        public Java.Util.Locale Locale
-        {
-            get { return IExecuteWithSignature<Java.Util.Locale>("getLocale", "()Ljava/util/Locale;"); } set { IExecuteWithSignature("setLocale", "(Ljava/util/Locale;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/MessageFormat.html#format(java.lang.Object[],java.lang.StringBuffer,java.text.FieldPosition)"/>
+        /// <see href="https://developer.android.com/reference/java/text/MessageFormat.html#format(java.lang.Object[],java.lang.StringBuffer,java.text.FieldPosition)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Lang.StringBuffer"/></param>
@@ -105,7 +84,7 @@ namespace Java.Text
             return IExecute<Java.Lang.StringBuffer>("format", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/MessageFormat.html#parse(java.lang.String,java.text.ParsePosition)"/>
+        /// <see href="https://developer.android.com/reference/java/text/MessageFormat.html#parse(java.lang.String,java.text.ParsePosition)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Text.ParsePosition"/></param>
@@ -115,7 +94,7 @@ namespace Java.Text
             return IExecuteArray<object>("parse", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/MessageFormat.html#parse(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/text/MessageFormat.html#parse(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="object"/></returns>
@@ -125,7 +104,7 @@ namespace Java.Text
             return IExecuteWithSignatureArray<object>("parse", "(Ljava/lang/String;)[Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/MessageFormat.html#toPattern()"/>
+        /// <see href="https://developer.android.com/reference/java/text/MessageFormat.html#toPattern()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String ToPattern()
@@ -133,7 +112,31 @@ namespace Java.Text
             return IExecuteWithSignature<Java.Lang.String>("toPattern", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/MessageFormat.html#applyPattern(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/text/MessageFormat.html#getFormats()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Text.Format"/></returns>
+        public Java.Text.Format[] GetFormats()
+        {
+            return IExecuteWithSignatureArray<Java.Text.Format>("getFormats", "()[Ljava/text/Format;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/text/MessageFormat.html#getFormatsByArgumentIndex()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Text.Format"/></returns>
+        public Java.Text.Format[] GetFormatsByArgumentIndex()
+        {
+            return IExecuteWithSignatureArray<Java.Text.Format>("getFormatsByArgumentIndex", "()[Ljava/text/Format;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/text/MessageFormat.html#getLocale()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Locale"/></returns>
+        public Java.Util.Locale GetLocale()
+        {
+            return IExecuteWithSignature<Java.Util.Locale>("getLocale", "()Ljava/util/Locale;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/text/MessageFormat.html#applyPattern(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void ApplyPattern(Java.Lang.String arg0)
@@ -141,7 +144,7 @@ namespace Java.Text
             IExecuteWithSignature("applyPattern", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/MessageFormat.html#setFormat(int,java.text.Format)"/>
+        /// <see href="https://developer.android.com/reference/java/text/MessageFormat.html#setFormat(int,java.text.Format)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Text.Format"/></param>
@@ -150,13 +153,37 @@ namespace Java.Text
             IExecute("setFormat", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/MessageFormat.html#setFormatByArgumentIndex(int,java.text.Format)"/>
+        /// <see href="https://developer.android.com/reference/java/text/MessageFormat.html#setFormatByArgumentIndex(int,java.text.Format)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Text.Format"/></param>
         public void SetFormatByArgumentIndex(int arg0, Java.Text.Format arg1)
         {
             IExecute("setFormatByArgumentIndex", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/text/MessageFormat.html#setFormats(java.text.Format[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Text.Format"/></param>
+        public void SetFormats(Java.Text.Format[] arg0)
+        {
+            IExecuteWithSignature("setFormats", "([Ljava/text/Format;)V", new object[] { arg0 });
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/text/MessageFormat.html#setFormatsByArgumentIndex(java.text.Format[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Text.Format"/></param>
+        public void SetFormatsByArgumentIndex(Java.Text.Format[] arg0)
+        {
+            IExecuteWithSignature("setFormatsByArgumentIndex", "([Ljava/text/Format;)V", new object[] { arg0 });
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/text/MessageFormat.html#setLocale(java.util.Locale)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
+        public void SetLocale(Java.Util.Locale arg0)
+        {
+            IExecuteWithSignature("setLocale", "(Ljava/util/Locale;)V", arg0);
         }
 
         #endregion
@@ -175,7 +202,7 @@ namespace Java.Text
 
             #region Fields
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/text/MessageFormat.Field.html#ARGUMENT"/>
+            /// <see href="https://developer.android.com/reference/java/text/MessageFormat.Field.html#ARGUMENT"/>
             /// </summary>
             public static Java.Text.MessageFormat.Field ARGUMENT { get { if (!_ARGUMENTReady) { _ARGUMENTContent = SGetField<Java.Text.MessageFormat.Field>(LocalBridgeClazz, "ARGUMENT"); _ARGUMENTReady = true; } return _ARGUMENTContent; } }
             private static Java.Text.MessageFormat.Field _ARGUMENTContent = default;

@@ -42,7 +42,7 @@ namespace Java.Util
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ResourceBundle.html#getBundle(java.lang.String,java.util.Locale,java.util.ResourceBundle.Control)"/>
+        /// <see href="https://developer.android.com/reference/java/util/ResourceBundle.html#getBundle(java.lang.String,java.util.Locale,java.util.ResourceBundle.Control)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
@@ -53,7 +53,7 @@ namespace Java.Util
             return SExecute<Java.Util.ResourceBundle>(LocalBridgeClazz, "getBundle", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ResourceBundle.html#getBundle(java.lang.String,java.util.Locale)"/>
+        /// <see href="https://developer.android.com/reference/java/util/ResourceBundle.html#getBundle(java.lang.String,java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
@@ -63,7 +63,7 @@ namespace Java.Util
             return SExecute<Java.Util.ResourceBundle>(LocalBridgeClazz, "getBundle", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ResourceBundle.html#getBundle(java.lang.String,java.util.ResourceBundle.Control)"/>
+        /// <see href="https://developer.android.com/reference/java/util/ResourceBundle.html#getBundle(java.lang.String,java.util.ResourceBundle.Control)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Util.ResourceBundle.Control"/></param>
@@ -73,7 +73,7 @@ namespace Java.Util
             return SExecute<Java.Util.ResourceBundle>(LocalBridgeClazz, "getBundle", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ResourceBundle.html#getBundle(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/ResourceBundle.html#getBundle(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Util.ResourceBundle"/></returns>
@@ -82,14 +82,14 @@ namespace Java.Util
             return SExecuteWithSignature<Java.Util.ResourceBundle>(LocalBridgeClazz, "getBundle", "(Ljava/lang/String;)Ljava/util/ResourceBundle;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ResourceBundle.html#clearCache()"/>
+        /// <see href="https://developer.android.com/reference/java/util/ResourceBundle.html#clearCache()"/>
         /// </summary>
         public static void ClearCache()
         {
             SExecuteWithSignature(LocalBridgeClazz, "clearCache", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ResourceBundle.html#clearCache(java.lang.ClassLoader)"/>
+        /// <see href="https://developer.android.com/reference/java/util/ResourceBundle.html#clearCache(java.lang.ClassLoader)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.ClassLoader"/></param>
         public static void ClearCache(Java.Lang.ClassLoader arg0)
@@ -97,7 +97,7 @@ namespace Java.Util
             SExecuteWithSignature(LocalBridgeClazz, "clearCache", "(Ljava/lang/ClassLoader;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ResourceBundle.html#getBundle(java.lang.String,java.util.Locale,java.lang.ClassLoader,java.util.ResourceBundle.Control)"/>
+        /// <see href="https://developer.android.com/reference/java/util/ResourceBundle.html#getBundle(java.lang.String,java.util.Locale,java.lang.ClassLoader,java.util.ResourceBundle.Control)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
@@ -109,7 +109,7 @@ namespace Java.Util
             return SExecute<Java.Util.ResourceBundle>(LocalBridgeClazz, "getBundle", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ResourceBundle.html#getBundle(java.lang.String,java.util.Locale,java.lang.ClassLoader)"/>
+        /// <see href="https://developer.android.com/reference/java/util/ResourceBundle.html#getBundle(java.lang.String,java.util.Locale,java.lang.ClassLoader)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
@@ -124,28 +124,15 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ResourceBundle.html#getBaseBundleName()"/> 
+        /// <see href="https://developer.android.com/reference/java/util/ResourceBundle.html#getKeys()"/>
         /// </summary>
-        public Java.Lang.String BaseBundleName
+        /// <returns><see cref="Java.Util.Enumeration"/></returns>
+        public Java.Util.Enumeration<Java.Lang.String> GetKeys()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getBaseBundleName", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Util.Enumeration<Java.Lang.String>>("getKeys", "()Ljava/util/Enumeration;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ResourceBundle.html#getKeys()"/> 
-        /// </summary>
-        public Java.Util.Enumeration<Java.Lang.String> Keys
-        {
-            get { return IExecuteWithSignature<Java.Util.Enumeration<Java.Lang.String>>("getKeys", "()Ljava/util/Enumeration;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ResourceBundle.html#getLocale()"/> 
-        /// </summary>
-        public Java.Util.Locale Locale
-        {
-            get { return IExecuteWithSignature<Java.Util.Locale>("getLocale", "()Ljava/util/Locale;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ResourceBundle.html#containsKey(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/ResourceBundle.html#containsKey(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -154,7 +141,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("containsKey", "(Ljava/lang/String;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ResourceBundle.html#getObject(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/ResourceBundle.html#getObject(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="object"/></returns>
@@ -163,7 +150,7 @@ namespace Java.Util
             return IExecuteWithSignature("getObject", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ResourceBundle.html#getString(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/ResourceBundle.html#getString(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -172,7 +159,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Lang.String>("getString", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ResourceBundle.html#getStringArray(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/ResourceBundle.html#getStringArray(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -181,7 +168,23 @@ namespace Java.Util
             return IExecuteWithSignatureArray<Java.Lang.String>("getStringArray", "(Ljava/lang/String;)[Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/ResourceBundle.html#keySet()"/>
+        /// <see href="https://developer.android.com/reference/java/util/ResourceBundle.html#getBaseBundleName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetBaseBundleName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getBaseBundleName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/ResourceBundle.html#getLocale()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Locale"/></returns>
+        public Java.Util.Locale GetLocale()
+        {
+            return IExecuteWithSignature<Java.Util.Locale>("getLocale", "()Ljava/util/Locale;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/ResourceBundle.html#keySet()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<Java.Lang.String> KeySet()
@@ -205,31 +208,31 @@ namespace Java.Util
 
             #region Fields
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/ResourceBundle.Control.html#FORMAT_CLASS"/>
+            /// <see href="https://developer.android.com/reference/java/util/ResourceBundle.Control.html#FORMAT_CLASS"/>
             /// </summary>
             public static Java.Util.List FORMAT_CLASS { get { if (!_FORMAT_CLASSReady) { _FORMAT_CLASSContent = SGetField<Java.Util.List>(LocalBridgeClazz, "FORMAT_CLASS"); _FORMAT_CLASSReady = true; } return _FORMAT_CLASSContent; } }
             private static Java.Util.List _FORMAT_CLASSContent = default;
             private static bool _FORMAT_CLASSReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/ResourceBundle.Control.html#FORMAT_DEFAULT"/>
+            /// <see href="https://developer.android.com/reference/java/util/ResourceBundle.Control.html#FORMAT_DEFAULT"/>
             /// </summary>
             public static Java.Util.List FORMAT_DEFAULT { get { if (!_FORMAT_DEFAULTReady) { _FORMAT_DEFAULTContent = SGetField<Java.Util.List>(LocalBridgeClazz, "FORMAT_DEFAULT"); _FORMAT_DEFAULTReady = true; } return _FORMAT_DEFAULTContent; } }
             private static Java.Util.List _FORMAT_DEFAULTContent = default;
             private static bool _FORMAT_DEFAULTReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/ResourceBundle.Control.html#FORMAT_PROPERTIES"/>
+            /// <see href="https://developer.android.com/reference/java/util/ResourceBundle.Control.html#FORMAT_PROPERTIES"/>
             /// </summary>
             public static Java.Util.List FORMAT_PROPERTIES { get { if (!_FORMAT_PROPERTIESReady) { _FORMAT_PROPERTIESContent = SGetField<Java.Util.List>(LocalBridgeClazz, "FORMAT_PROPERTIES"); _FORMAT_PROPERTIESReady = true; } return _FORMAT_PROPERTIESContent; } }
             private static Java.Util.List _FORMAT_PROPERTIESContent = default;
             private static bool _FORMAT_PROPERTIESReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/ResourceBundle.Control.html#TTL_DONT_CACHE"/>
+            /// <see href="https://developer.android.com/reference/java/util/ResourceBundle.Control.html#TTL_DONT_CACHE"/>
             /// </summary>
             public static long TTL_DONT_CACHE { get { if (!_TTL_DONT_CACHEReady) { _TTL_DONT_CACHEContent = SGetField<long>(LocalBridgeClazz, "TTL_DONT_CACHE"); _TTL_DONT_CACHEReady = true; } return _TTL_DONT_CACHEContent; } }
             private static long _TTL_DONT_CACHEContent = default;
             private static bool _TTL_DONT_CACHEReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/ResourceBundle.Control.html#TTL_NO_EXPIRATION_CONTROL"/>
+            /// <see href="https://developer.android.com/reference/java/util/ResourceBundle.Control.html#TTL_NO_EXPIRATION_CONTROL"/>
             /// </summary>
             public static long TTL_NO_EXPIRATION_CONTROL { get { if (!_TTL_NO_EXPIRATION_CONTROLReady) { _TTL_NO_EXPIRATION_CONTROLContent = SGetField<long>(LocalBridgeClazz, "TTL_NO_EXPIRATION_CONTROL"); _TTL_NO_EXPIRATION_CONTROLReady = true; } return _TTL_NO_EXPIRATION_CONTROLContent; } }
             private static long _TTL_NO_EXPIRATION_CONTROLContent = default;
@@ -239,7 +242,7 @@ namespace Java.Util
 
             #region Static methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/ResourceBundle.Control.html#getControl(java.util.List)"/>
+            /// <see href="https://developer.android.com/reference/java/util/ResourceBundle.Control.html#getControl(java.util.List)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.List"/></param>
             /// <returns><see cref="Java.Util.ResourceBundle.Control"/></returns>
@@ -248,7 +251,7 @@ namespace Java.Util
                 return SExecuteWithSignature<Java.Util.ResourceBundle.Control>(LocalBridgeClazz, "getControl", "(Ljava/util/List;)Ljava/util/ResourceBundle$Control;", arg0);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/ResourceBundle.Control.html#getNoFallbackControl(java.util.List)"/>
+            /// <see href="https://developer.android.com/reference/java/util/ResourceBundle.Control.html#getNoFallbackControl(java.util.List)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.List"/></param>
             /// <returns><see cref="Java.Util.ResourceBundle.Control"/></returns>
@@ -261,7 +264,7 @@ namespace Java.Util
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/ResourceBundle.Control.html#needsReload(java.lang.String,java.util.Locale,java.lang.String,java.lang.ClassLoader,java.util.ResourceBundle,long)"/>
+            /// <see href="https://developer.android.com/reference/java/util/ResourceBundle.Control.html#needsReload(java.lang.String,java.util.Locale,java.lang.String,java.lang.ClassLoader,java.util.ResourceBundle,long)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
@@ -275,7 +278,7 @@ namespace Java.Util
                 return IExecute<bool>("needsReload", arg0, arg1, arg2, arg3, arg4, arg5);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/ResourceBundle.Control.html#toResourceName(java.lang.String,java.lang.String)"/>
+            /// <see href="https://developer.android.com/reference/java/util/ResourceBundle.Control.html#toResourceName(java.lang.String,java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -285,7 +288,7 @@ namespace Java.Util
                 return IExecute<Java.Lang.String>("toResourceName", arg0, arg1);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/ResourceBundle.Control.html#toBundleName(java.lang.String,java.util.Locale)"/>
+            /// <see href="https://developer.android.com/reference/java/util/ResourceBundle.Control.html#toBundleName(java.lang.String,java.util.Locale)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
@@ -295,7 +298,7 @@ namespace Java.Util
                 return IExecute<Java.Lang.String>("toBundleName", arg0, arg1);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/ResourceBundle.Control.html#getFormats(java.lang.String)"/>
+            /// <see href="https://developer.android.com/reference/java/util/ResourceBundle.Control.html#getFormats(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="Java.Util.List"/></returns>
@@ -304,7 +307,7 @@ namespace Java.Util
                 return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getFormats", "(Ljava/lang/String;)Ljava/util/List;", arg0);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/ResourceBundle.Control.html#getCandidateLocales(java.lang.String,java.util.Locale)"/>
+            /// <see href="https://developer.android.com/reference/java/util/ResourceBundle.Control.html#getCandidateLocales(java.lang.String,java.util.Locale)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
@@ -314,7 +317,7 @@ namespace Java.Util
                 return IExecute<Java.Util.List<Java.Util.Locale>>("getCandidateLocales", arg0, arg1);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/ResourceBundle.Control.html#getFallbackLocale(java.lang.String,java.util.Locale)"/>
+            /// <see href="https://developer.android.com/reference/java/util/ResourceBundle.Control.html#getFallbackLocale(java.lang.String,java.util.Locale)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
@@ -324,7 +327,7 @@ namespace Java.Util
                 return IExecute<Java.Util.Locale>("getFallbackLocale", arg0, arg1);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/ResourceBundle.Control.html#newBundle(java.lang.String,java.util.Locale,java.lang.String,java.lang.ClassLoader,boolean)"/>
+            /// <see href="https://developer.android.com/reference/java/util/ResourceBundle.Control.html#newBundle(java.lang.String,java.util.Locale,java.lang.String,java.lang.ClassLoader,boolean)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
@@ -340,7 +343,7 @@ namespace Java.Util
                 return IExecute<Java.Util.ResourceBundle>("newBundle", arg0, arg1, arg2, arg3, arg4);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/util/ResourceBundle.Control.html#getTimeToLive(java.lang.String,java.util.Locale)"/>
+            /// <see href="https://developer.android.com/reference/java/util/ResourceBundle.Control.html#getTimeToLive(java.lang.String,java.util.Locale)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <param name="arg1"><see cref="Java.Util.Locale"/></param>

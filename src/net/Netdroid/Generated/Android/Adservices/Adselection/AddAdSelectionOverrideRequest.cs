@@ -56,25 +56,28 @@ namespace Android.Adservices.Adselection
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/adselection/AddAdSelectionOverrideRequest.html#getAdSelectionConfig()"/> 
+        /// <see href="https://developer.android.com/reference/android/adservices/adselection/AddAdSelectionOverrideRequest.html#getAdSelectionConfig()"/>
         /// </summary>
-        public Android.Adservices.Adselection.AdSelectionConfig AdSelectionConfig
+        /// <returns><see cref="Android.Adservices.Adselection.AdSelectionConfig"/></returns>
+        public Android.Adservices.Adselection.AdSelectionConfig GetAdSelectionConfig()
         {
-            get { return IExecuteWithSignature<Android.Adservices.Adselection.AdSelectionConfig>("getAdSelectionConfig", "()Landroid/adservices/adselection/AdSelectionConfig;"); }
+            return IExecuteWithSignature<Android.Adservices.Adselection.AdSelectionConfig>("getAdSelectionConfig", "()Landroid/adservices/adselection/AdSelectionConfig;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/adselection/AddAdSelectionOverrideRequest.html#getDecisionLogicJs()"/> 
+        /// <see href="https://developer.android.com/reference/android/adservices/adselection/AddAdSelectionOverrideRequest.html#getTrustedScoringSignals()"/>
         /// </summary>
-        public Java.Lang.String DecisionLogicJs
+        /// <returns><see cref="Android.Adservices.Common.AdSelectionSignals"/></returns>
+        public Android.Adservices.Common.AdSelectionSignals GetTrustedScoringSignals()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDecisionLogicJs", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Android.Adservices.Common.AdSelectionSignals>("getTrustedScoringSignals", "()Landroid/adservices/common/AdSelectionSignals;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/adselection/AddAdSelectionOverrideRequest.html#getTrustedScoringSignals()"/> 
+        /// <see href="https://developer.android.com/reference/android/adservices/adselection/AddAdSelectionOverrideRequest.html#getDecisionLogicJs()"/>
         /// </summary>
-        public Android.Adservices.Common.AdSelectionSignals TrustedScoringSignals
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDecisionLogicJs()
         {
-            get { return IExecuteWithSignature<Android.Adservices.Common.AdSelectionSignals>("getTrustedScoringSignals", "()Landroid/adservices/common/AdSelectionSignals;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getDecisionLogicJs", "()Ljava/lang/String;");
         }
 
         #endregion

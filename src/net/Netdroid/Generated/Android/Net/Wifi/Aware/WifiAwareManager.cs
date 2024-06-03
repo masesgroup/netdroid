@@ -88,18 +88,20 @@ namespace Android.Net.Wifi.Aware
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/WifiAwareManager.html#getAvailableAwareResources()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/WifiAwareManager.html#getAvailableAwareResources()"/>
         /// </summary>
-        public Android.Net.Wifi.Aware.AwareResources AvailableAwareResources
+        /// <returns><see cref="Android.Net.Wifi.Aware.AwareResources"/></returns>
+        public Android.Net.Wifi.Aware.AwareResources GetAvailableAwareResources()
         {
-            get { return IExecuteWithSignature<Android.Net.Wifi.Aware.AwareResources>("getAvailableAwareResources", "()Landroid/net/wifi/aware/AwareResources;"); }
+            return IExecuteWithSignature<Android.Net.Wifi.Aware.AwareResources>("getAvailableAwareResources", "()Landroid/net/wifi/aware/AwareResources;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/WifiAwareManager.html#getCharacteristics()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/wifi/aware/WifiAwareManager.html#getCharacteristics()"/>
         /// </summary>
-        public Android.Net.Wifi.Aware.Characteristics Characteristics
+        /// <returns><see cref="Android.Net.Wifi.Aware.Characteristics"/></returns>
+        public Android.Net.Wifi.Aware.Characteristics GetCharacteristics()
         {
-            get { return IExecuteWithSignature<Android.Net.Wifi.Aware.Characteristics>("getCharacteristics", "()Landroid/net/wifi/aware/Characteristics;"); }
+            return IExecuteWithSignature<Android.Net.Wifi.Aware.Characteristics>("getCharacteristics", "()Landroid/net/wifi/aware/Characteristics;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/aware/WifiAwareManager.html#isAvailable()"/>

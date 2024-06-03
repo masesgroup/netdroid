@@ -117,7 +117,7 @@ namespace Android.Icu.Text
             /// <param name="arg2"><see cref="Android.Icu.Text.Edits"/></param>
             /// <typeparam name="A"><see cref="Java.Lang.IAppendable"/></typeparam>
             /// <returns><typeparamref name="A"/></returns>
-            public A Apply<A>(Java.Lang.CharSequence arg0, A arg1, Android.Icu.Text.Edits arg2) where A: Java.Lang.IAppendable, new()
+            public A Apply<A>(Java.Lang.CharSequence arg0, A arg1, Android.Icu.Text.Edits arg2) where A : Java.Lang.IAppendable, new()
             {
                 return IExecute<A>("apply", arg0, arg1, arg2);
             }
@@ -178,7 +178,7 @@ namespace Android.Icu.Text
             /// <param name="arg3"><see cref="Android.Icu.Text.Edits"/></param>
             /// <typeparam name="A"><see cref="Java.Lang.IAppendable"/></typeparam>
             /// <returns><typeparamref name="A"/></returns>
-            public A Apply<A>(Java.Util.Locale arg0, Java.Lang.CharSequence arg1, A arg2, Android.Icu.Text.Edits arg3) where A: Java.Lang.IAppendable, new()
+            public A Apply<A>(Java.Util.Locale arg0, Java.Lang.CharSequence arg1, A arg2, Android.Icu.Text.Edits arg3) where A : Java.Lang.IAppendable, new()
             {
                 return IExecute<A>("apply", arg0, arg1, arg2, arg3);
             }
@@ -233,7 +233,7 @@ namespace Android.Icu.Text
             /// <param name="arg4"><see cref="Android.Icu.Text.Edits"/></param>
             /// <typeparam name="A"><see cref="Java.Lang.IAppendable"/></typeparam>
             /// <returns><typeparamref name="A"/></returns>
-            public A Apply<A>(Java.Util.Locale arg0, Android.Icu.Text.BreakIterator arg1, Java.Lang.CharSequence arg2, A arg3, Android.Icu.Text.Edits arg4) where A: Java.Lang.IAppendable, new()
+            public A Apply<A>(Java.Util.Locale arg0, Android.Icu.Text.BreakIterator arg1, Java.Lang.CharSequence arg2, A arg3, Android.Icu.Text.Edits arg4) where A : Java.Lang.IAppendable, new()
             {
                 return IExecute<A>("apply", arg0, arg1, arg2, arg3, arg4);
             }
@@ -328,7 +328,7 @@ namespace Android.Icu.Text
             /// <param name="arg3"><see cref="Android.Icu.Text.Edits"/></param>
             /// <typeparam name="A"><see cref="Java.Lang.IAppendable"/></typeparam>
             /// <returns><typeparamref name="A"/></returns>
-            public A Apply<A>(Java.Util.Locale arg0, Java.Lang.CharSequence arg1, A arg2, Android.Icu.Text.Edits arg3) where A: Java.Lang.IAppendable, new()
+            public A Apply<A>(Java.Util.Locale arg0, Java.Lang.CharSequence arg1, A arg2, Android.Icu.Text.Edits arg3) where A : Java.Lang.IAppendable, new()
             {
                 return IExecute<A>("apply", arg0, arg1, arg2, arg3);
             }

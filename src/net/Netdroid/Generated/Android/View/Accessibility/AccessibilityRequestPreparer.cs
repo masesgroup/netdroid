@@ -61,13 +61,6 @@ namespace Android.View.Accessibility
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRequestPreparer.html#getView()"/> 
-        /// </summary>
-        public Android.View.View View
-        {
-            get { return IExecuteWithSignature<Android.View.View>("getView", "()Landroid/view/View;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRequestPreparer.html#onPrepareExtraData(int,java.lang.String,android.os.Bundle,android.os.Message)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -77,6 +70,14 @@ namespace Android.View.Accessibility
         public void OnPrepareExtraData(int arg0, Java.Lang.String arg1, Android.Os.Bundle arg2, Android.Os.Message arg3)
         {
             IExecute("onPrepareExtraData", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/AccessibilityRequestPreparer.html#getView()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.View"/></returns>
+        public Android.View.View GetView()
+        {
+            return IExecuteWithSignature<Android.View.View>("getView", "()Landroid/view/View;");
         }
 
         #endregion

@@ -27,7 +27,7 @@ namespace Java.Util.Function
 {
     #region IIntUnaryOperator
     /// <summary>
-    /// .NET interface for org.mases.netdroid.generated.java.util.function.IntUnaryOperator implementing <see href="https://developer.android.com/reference/java.base/java/util/function/IntUnaryOperator.html"/>
+    /// .NET interface for org.mases.netdroid.generated.java.util.function.IntUnaryOperator implementing <see href="https://developer.android.com/reference/java/util/function/IntUnaryOperator.html"/>
     /// </summary>
     public partial interface IIntUnaryOperator
     {
@@ -59,27 +59,14 @@ namespace Java.Util.Function
         #endregion
 
         #region Static methods
-        
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/IntUnaryOperator.html#identity()"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnIdentity"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.IntUnaryOperator> OnIdentity { get; set; } = null;
-
-        void IdentityEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
-        {
-            var methodToExecute = (OnIdentity != null) ? OnIdentity : Identity;
-            var executionResult = methodToExecute.Invoke();
-            data.SetReturnValue(executionResult);
-        }
-
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/IntUnaryOperator.html#identity()"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/IntUnaryOperator.html#identity()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Function.IntUnaryOperator"/></returns>
-        public virtual Java.Util.Function.IntUnaryOperator Identity()
+        /// <remarks>The method invokes the static implementation in the JVM interface</remarks>
+        public static Java.Util.Function.IntUnaryOperator Identity()
         {
-            return default;
+            return SExecuteWithSignature<Java.Util.Function.IntUnaryOperator>(LocalBridgeClazz, "identity", "()Ljava/util/function/IntUnaryOperator;");
         }
 
         #endregion
@@ -90,17 +77,17 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("applyAsInt", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(ApplyAsIntEventHandler));
-            AddEventHandler("andThen", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.IntUnaryOperator>>>(AndThenEventHandler));
-            AddEventHandler("compose", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.IntUnaryOperator>>>(ComposeEventHandler));
+            AddEventHandler("applyAsInt", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(ApplyAsIntEventHandler));
+            AddEventHandler("andThen", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.IntUnaryOperator>>>(AndThenEventHandler));
+            AddEventHandler("compose", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.IntUnaryOperator>>>(ComposeEventHandler));
 
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/IntUnaryOperator.html#applyAsInt(int)"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/IntUnaryOperator.html#applyAsInt(int)"/>
         /// </summary>
         /// <remarks>If <see cref="OnApplyAsInt"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<int, int> OnApplyAsInt { get; set; } = null;
+        public global::System.Func<int, int> OnApplyAsInt { get; set; } = null;
 
         void ApplyAsIntEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
         {
@@ -110,7 +97,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/IntUnaryOperator.html#applyAsInt(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/IntUnaryOperator.html#applyAsInt(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
@@ -119,7 +106,7 @@ namespace Java.Util.Function
             return default;
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/IntUnaryOperator.html#andThen(java.util.function.IntUnaryOperator)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/IntUnaryOperator.html#andThen(java.util.function.IntUnaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.IntUnaryOperator"/></param>
         /// <returns><see cref="Java.Util.Function.IntUnaryOperator"/></returns>
@@ -130,10 +117,10 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/IntUnaryOperator.html#andThen(java.util.function.IntUnaryOperator)"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/IntUnaryOperator.html#andThen(java.util.function.IntUnaryOperator)"/>
         /// </summary>
         /// <remarks>If <see cref="OnAndThen"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.IntUnaryOperator, Java.Util.Function.IntUnaryOperator> OnAndThen { get; set; } = null;
+        public global::System.Func<Java.Util.Function.IntUnaryOperator, Java.Util.Function.IntUnaryOperator> OnAndThen { get; set; } = null;
 
         void AndThenEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.IntUnaryOperator>> data)
         {
@@ -143,7 +130,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/IntUnaryOperator.html#andThen(java.util.function.IntUnaryOperator)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/IntUnaryOperator.html#andThen(java.util.function.IntUnaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.IntUnaryOperator"/></param>
         /// <returns><see cref="Java.Util.Function.IntUnaryOperator"/></returns>
@@ -153,7 +140,7 @@ namespace Java.Util.Function
             return AndThenDefault(arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/IntUnaryOperator.html#compose(java.util.function.IntUnaryOperator)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/IntUnaryOperator.html#compose(java.util.function.IntUnaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.IntUnaryOperator"/></param>
         /// <returns><see cref="Java.Util.Function.IntUnaryOperator"/></returns>
@@ -164,10 +151,10 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/IntUnaryOperator.html#compose(java.util.function.IntUnaryOperator)"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/IntUnaryOperator.html#compose(java.util.function.IntUnaryOperator)"/>
         /// </summary>
         /// <remarks>If <see cref="OnCompose"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.IntUnaryOperator, Java.Util.Function.IntUnaryOperator> OnCompose { get; set; } = null;
+        public global::System.Func<Java.Util.Function.IntUnaryOperator, Java.Util.Function.IntUnaryOperator> OnCompose { get; set; } = null;
 
         void ComposeEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.IntUnaryOperator>> data)
         {
@@ -177,7 +164,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/IntUnaryOperator.html#compose(java.util.function.IntUnaryOperator)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/IntUnaryOperator.html#compose(java.util.function.IntUnaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.IntUnaryOperator"/></param>
         /// <returns><see cref="Java.Util.Function.IntUnaryOperator"/></returns>
@@ -218,7 +205,7 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/IntUnaryOperator.html#applyAsInt(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/IntUnaryOperator.html#applyAsInt(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
@@ -227,7 +214,7 @@ namespace Java.Util.Function
             return IExecuteWithSignature<int>("applyAsInt", "(I)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/IntUnaryOperator.html#andThen(java.util.function.IntUnaryOperator)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/IntUnaryOperator.html#andThen(java.util.function.IntUnaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.IntUnaryOperator"/></param>
         /// <returns><see cref="Java.Util.Function.IntUnaryOperator"/></returns>
@@ -236,7 +223,7 @@ namespace Java.Util.Function
             return IExecuteWithSignature<Java.Util.Function.IntUnaryOperatorDirect, Java.Util.Function.IntUnaryOperator>("andThen", "(Ljava/util/function/IntUnaryOperator;)Ljava/util/function/IntUnaryOperator;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/IntUnaryOperator.html#compose(java.util.function.IntUnaryOperator)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/IntUnaryOperator.html#compose(java.util.function.IntUnaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.IntUnaryOperator"/></param>
         /// <returns><see cref="Java.Util.Function.IntUnaryOperator"/></returns>

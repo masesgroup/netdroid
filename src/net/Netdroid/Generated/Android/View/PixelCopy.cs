@@ -189,7 +189,7 @@ namespace Android.View
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onPixelCopyFinished", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnPixelCopyFinishedEventHandler));
+                AddEventHandler("onPixelCopyFinished", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnPixelCopyFinishedEventHandler));
 
             }
 
@@ -197,7 +197,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/PixelCopy.OnPixelCopyFinishedListener.html#onPixelCopyFinished(int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnPixelCopyFinished"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<int> OnOnPixelCopyFinished { get; set; } = null;
+            public global::System.Action<int> OnOnPixelCopyFinished { get; set; } = null;
 
             void OnPixelCopyFinishedEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
             {
@@ -284,18 +284,20 @@ namespace Android.View
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/PixelCopy.Request.html#getDestinationBitmap()"/> 
+            /// <see href="https://developer.android.com/reference/android/view/PixelCopy.Request.html#getDestinationBitmap()"/>
             /// </summary>
-            public Android.Graphics.Bitmap DestinationBitmap
+            /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
+            public Android.Graphics.Bitmap GetDestinationBitmap()
             {
-                get { return IExecuteWithSignature<Android.Graphics.Bitmap>("getDestinationBitmap", "()Landroid/graphics/Bitmap;"); }
+                return IExecuteWithSignature<Android.Graphics.Bitmap>("getDestinationBitmap", "()Landroid/graphics/Bitmap;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/PixelCopy.Request.html#getSourceRect()"/> 
+            /// <see href="https://developer.android.com/reference/android/view/PixelCopy.Request.html#getSourceRect()"/>
             /// </summary>
-            public Android.Graphics.Rect SourceRect
+            /// <returns><see cref="Android.Graphics.Rect"/></returns>
+            public Android.Graphics.Rect GetSourceRect()
             {
-                get { return IExecuteWithSignature<Android.Graphics.Rect>("getSourceRect", "()Landroid/graphics/Rect;"); }
+                return IExecuteWithSignature<Android.Graphics.Rect>("getSourceRect", "()Landroid/graphics/Rect;");
             }
 
             #endregion
@@ -422,18 +424,20 @@ namespace Android.View
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/PixelCopy.Result.html#getBitmap()"/> 
+            /// <see href="https://developer.android.com/reference/android/view/PixelCopy.Result.html#getBitmap()"/>
             /// </summary>
-            public Android.Graphics.Bitmap Bitmap
+            /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
+            public Android.Graphics.Bitmap GetBitmap()
             {
-                get { return IExecuteWithSignature<Android.Graphics.Bitmap>("getBitmap", "()Landroid/graphics/Bitmap;"); }
+                return IExecuteWithSignature<Android.Graphics.Bitmap>("getBitmap", "()Landroid/graphics/Bitmap;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/PixelCopy.Result.html#getStatus()"/> 
+            /// <see href="https://developer.android.com/reference/android/view/PixelCopy.Result.html#getStatus()"/>
             /// </summary>
-            public int Status
+            /// <returns><see cref="int"/></returns>
+            public int GetStatus()
             {
-                get { return IExecuteWithSignature<int>("getStatus", "()I"); }
+                return IExecuteWithSignature<int>("getStatus", "()I");
             }
 
             #endregion

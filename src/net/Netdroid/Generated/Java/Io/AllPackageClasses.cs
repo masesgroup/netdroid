@@ -28,7 +28,7 @@ namespace Java.Io
 {
     #region BufferedInputStream
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/BufferedInputStream.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/BufferedInputStream.html"/>
     /// </summary>
     public partial class BufferedInputStream : Java.Io.FilterInputStream
     {
@@ -72,7 +72,7 @@ namespace Java.Io
 
     #region BufferedOutputStream
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/BufferedOutputStream.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/BufferedOutputStream.html"/>
     /// </summary>
     public partial class BufferedOutputStream : Java.Io.FilterOutputStream
     {
@@ -116,7 +116,7 @@ namespace Java.Io
 
     #region BufferedReader
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/BufferedReader.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/BufferedReader.html"/>
     /// </summary>
     public partial class BufferedReader : Java.Io.Reader
     {
@@ -160,7 +160,7 @@ namespace Java.Io
 
     #region BufferedWriter
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/BufferedWriter.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/BufferedWriter.html"/>
     /// </summary>
     public partial class BufferedWriter : Java.Io.Writer
     {
@@ -204,7 +204,7 @@ namespace Java.Io
 
     #region ByteArrayInputStream
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/ByteArrayInputStream.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/ByteArrayInputStream.html"/>
     /// </summary>
     public partial class ByteArrayInputStream : Java.Io.InputStream
     {
@@ -248,7 +248,7 @@ namespace Java.Io
 
     #region ByteArrayOutputStream
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/ByteArrayOutputStream.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/ByteArrayOutputStream.html"/>
     /// </summary>
     public partial class ByteArrayOutputStream : Java.Io.OutputStream
     {
@@ -292,7 +292,7 @@ namespace Java.Io
 
     #region CharArrayReader
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/CharArrayReader.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/CharArrayReader.html"/>
     /// </summary>
     public partial class CharArrayReader : Java.Io.Reader
     {
@@ -336,7 +336,7 @@ namespace Java.Io
 
     #region CharArrayWriter
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/CharArrayWriter.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/CharArrayWriter.html"/>
     /// </summary>
     public partial class CharArrayWriter : Java.Io.Writer
     {
@@ -380,7 +380,7 @@ namespace Java.Io
 
     #region CharConversionException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/CharConversionException.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/CharConversionException.html"/>
     /// </summary>
     public partial class CharConversionException : Java.Io.IOException
     {
@@ -397,7 +397,7 @@ namespace Java.Io
 
     #region Closeable
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/Closeable.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/Closeable.html"/>
     /// </summary>
     public partial class Closeable : Java.Lang.AutoCloseable
     {
@@ -405,12 +405,12 @@ namespace Java.Io
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Closeable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Closeable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Closeable() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Closeable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Closeable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Closeable(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -443,7 +443,7 @@ namespace Java.Io
 
     #region Console
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/Console.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/Console.html"/>
     /// </summary>
     public partial class Console : Java.Io.Flushable
     {
@@ -487,7 +487,7 @@ namespace Java.Io
 
     #region DataInput
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/DataInput.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/DataInput.html"/>
     /// </summary>
     public partial class DataInput : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DataInput>
     {
@@ -495,12 +495,12 @@ namespace Java.Io
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("DataInput class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DataInput class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DataInput() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("DataInput class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DataInput class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DataInput(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -533,7 +533,7 @@ namespace Java.Io
 
     #region DataInputStream
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/DataInputStream.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/DataInputStream.html"/>
     /// </summary>
     public partial class DataInputStream : Java.Io.FilterInputStream
     {
@@ -577,7 +577,7 @@ namespace Java.Io
 
     #region DataOutput
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/DataOutput.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/DataOutput.html"/>
     /// </summary>
     public partial class DataOutput : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DataOutput>
     {
@@ -585,12 +585,12 @@ namespace Java.Io
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("DataOutput class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DataOutput class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DataOutput() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("DataOutput class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DataOutput class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DataOutput(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -623,7 +623,7 @@ namespace Java.Io
 
     #region DataOutputStream
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/DataOutputStream.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/DataOutputStream.html"/>
     /// </summary>
     public partial class DataOutputStream : Java.Io.FilterOutputStream
     {
@@ -667,7 +667,7 @@ namespace Java.Io
 
     #region EOFException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/EOFException.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/EOFException.html"/>
     /// </summary>
     public partial class EOFException : Java.Io.IOException
     {
@@ -684,7 +684,7 @@ namespace Java.Io
 
     #region Externalizable
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/Externalizable.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/Externalizable.html"/>
     /// </summary>
     public partial class Externalizable : Java.Io.Serializable
     {
@@ -692,12 +692,12 @@ namespace Java.Io
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Externalizable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Externalizable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Externalizable() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Externalizable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Externalizable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Externalizable(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -730,7 +730,7 @@ namespace Java.Io
 
     #region File
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/File.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/File.html"/>
     /// </summary>
     public partial class File : MASES.JCOBridge.C2JBridge.JVMBridgeBase<File>
     {
@@ -774,7 +774,7 @@ namespace Java.Io
 
     #region FileDescriptor
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/FileDescriptor.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/FileDescriptor.html"/>
     /// </summary>
     public partial class FileDescriptor : MASES.JCOBridge.C2JBridge.JVMBridgeBase<FileDescriptor>
     {
@@ -818,7 +818,7 @@ namespace Java.Io
 
     #region FileFilter
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/FileFilter.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/FileFilter.html"/>
     /// </summary>
     public partial class FileFilter : MASES.JCOBridge.C2JBridge.JVMBridgeBase<FileFilter>
     {
@@ -826,12 +826,12 @@ namespace Java.Io
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("FileFilter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("FileFilter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public FileFilter() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("FileFilter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("FileFilter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public FileFilter(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -864,7 +864,7 @@ namespace Java.Io
 
     #region FileInputStream
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/FileInputStream.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/FileInputStream.html"/>
     /// </summary>
     public partial class FileInputStream : Java.Io.InputStream
     {
@@ -908,7 +908,7 @@ namespace Java.Io
 
     #region FilenameFilter
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/FilenameFilter.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/FilenameFilter.html"/>
     /// </summary>
     public partial class FilenameFilter : MASES.JCOBridge.C2JBridge.JVMBridgeBase<FilenameFilter>
     {
@@ -916,12 +916,12 @@ namespace Java.Io
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("FilenameFilter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("FilenameFilter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public FilenameFilter() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("FilenameFilter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("FilenameFilter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public FilenameFilter(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -954,7 +954,7 @@ namespace Java.Io
 
     #region FileNotFoundException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/FileNotFoundException.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/FileNotFoundException.html"/>
     /// </summary>
     public partial class FileNotFoundException : Java.Io.IOException
     {
@@ -971,7 +971,7 @@ namespace Java.Io
 
     #region FileOutputStream
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/FileOutputStream.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/FileOutputStream.html"/>
     /// </summary>
     public partial class FileOutputStream : Java.Io.OutputStream
     {
@@ -1015,7 +1015,7 @@ namespace Java.Io
 
     #region FilePermission
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/FilePermission.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/FilePermission.html"/>
     /// </summary>
     public partial class FilePermission : Java.Security.Permission
     {
@@ -1059,7 +1059,7 @@ namespace Java.Io
 
     #region FileReader
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/FileReader.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/FileReader.html"/>
     /// </summary>
     public partial class FileReader : Java.Io.InputStreamReader
     {
@@ -1103,7 +1103,7 @@ namespace Java.Io
 
     #region FileWriter
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/FileWriter.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/FileWriter.html"/>
     /// </summary>
     public partial class FileWriter : Java.Io.OutputStreamWriter
     {
@@ -1147,7 +1147,7 @@ namespace Java.Io
 
     #region FilterInputStream
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/FilterInputStream.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/FilterInputStream.html"/>
     /// </summary>
     public partial class FilterInputStream : Java.Io.InputStream
     {
@@ -1191,7 +1191,7 @@ namespace Java.Io
 
     #region FilterOutputStream
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/FilterOutputStream.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/FilterOutputStream.html"/>
     /// </summary>
     public partial class FilterOutputStream : Java.Io.OutputStream
     {
@@ -1235,7 +1235,7 @@ namespace Java.Io
 
     #region FilterReader
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/FilterReader.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/FilterReader.html"/>
     /// </summary>
     public partial class FilterReader : Java.Io.Reader
     {
@@ -1243,12 +1243,12 @@ namespace Java.Io
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("FilterReader class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("FilterReader class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public FilterReader() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("FilterReader class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("FilterReader class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public FilterReader(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1281,7 +1281,7 @@ namespace Java.Io
 
     #region FilterWriter
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/FilterWriter.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/FilterWriter.html"/>
     /// </summary>
     public partial class FilterWriter : Java.Io.Writer
     {
@@ -1289,12 +1289,12 @@ namespace Java.Io
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("FilterWriter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("FilterWriter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public FilterWriter() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("FilterWriter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("FilterWriter class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public FilterWriter(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1327,7 +1327,7 @@ namespace Java.Io
 
     #region Flushable
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/Flushable.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/Flushable.html"/>
     /// </summary>
     public partial class Flushable : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Flushable>
     {
@@ -1335,12 +1335,12 @@ namespace Java.Io
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Flushable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Flushable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Flushable() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Flushable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Flushable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Flushable(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1373,7 +1373,7 @@ namespace Java.Io
 
     #region InputStream
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/InputStream.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/InputStream.html"/>
     /// </summary>
     public partial class InputStream : Java.Io.Closeable
     {
@@ -1381,12 +1381,12 @@ namespace Java.Io
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("InputStream class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("InputStream class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public InputStream() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("InputStream class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("InputStream class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public InputStream(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1419,7 +1419,7 @@ namespace Java.Io
 
     #region InputStreamReader
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/InputStreamReader.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/InputStreamReader.html"/>
     /// </summary>
     public partial class InputStreamReader : Java.Io.Reader
     {
@@ -1463,7 +1463,7 @@ namespace Java.Io
 
     #region InterruptedIOException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/InterruptedIOException.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/InterruptedIOException.html"/>
     /// </summary>
     public partial class InterruptedIOException : Java.Io.IOException
     {
@@ -1480,7 +1480,7 @@ namespace Java.Io
 
     #region InvalidClassException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/InvalidClassException.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/InvalidClassException.html"/>
     /// </summary>
     public partial class InvalidClassException : Java.Io.ObjectStreamException
     {
@@ -1497,7 +1497,7 @@ namespace Java.Io
 
     #region InvalidObjectException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/InvalidObjectException.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/InvalidObjectException.html"/>
     /// </summary>
     public partial class InvalidObjectException : Java.Io.ObjectStreamException
     {
@@ -1514,7 +1514,7 @@ namespace Java.Io
 
     #region IOError
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/IOError.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/IOError.html"/>
     /// </summary>
     public partial class IOError : Java.Lang.Error
     {
@@ -1531,7 +1531,7 @@ namespace Java.Io
 
     #region IOException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/IOException.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/IOException.html"/>
     /// </summary>
     public partial class IOException : Java.Lang.Exception
     {
@@ -1548,9 +1548,9 @@ namespace Java.Io
 
     #region LineNumberInputStream
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/LineNumberInputStream.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/LineNumberInputStream.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class LineNumberInputStream : Java.Io.FilterInputStream
     {
         const string _bridgeClassName = "java.io.LineNumberInputStream";
@@ -1593,7 +1593,7 @@ namespace Java.Io
 
     #region LineNumberReader
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/LineNumberReader.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/LineNumberReader.html"/>
     /// </summary>
     public partial class LineNumberReader : Java.Io.BufferedReader
     {
@@ -1637,7 +1637,7 @@ namespace Java.Io
 
     #region NotActiveException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/NotActiveException.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/NotActiveException.html"/>
     /// </summary>
     public partial class NotActiveException : Java.Io.ObjectStreamException
     {
@@ -1654,7 +1654,7 @@ namespace Java.Io
 
     #region NotSerializableException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/NotSerializableException.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/NotSerializableException.html"/>
     /// </summary>
     public partial class NotSerializableException : Java.Io.ObjectStreamException
     {
@@ -1671,7 +1671,7 @@ namespace Java.Io
 
     #region ObjectInput
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectInput.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/ObjectInput.html"/>
     /// </summary>
     public partial class ObjectInput : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ObjectInput>
     {
@@ -1679,12 +1679,12 @@ namespace Java.Io
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("ObjectInput class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ObjectInput class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ObjectInput() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("ObjectInput class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ObjectInput class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ObjectInput(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1717,7 +1717,7 @@ namespace Java.Io
 
     #region ObjectInputStream
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectInputStream.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/ObjectInputStream.html"/>
     /// </summary>
     public partial class ObjectInputStream : Java.Io.InputStream
     {
@@ -1757,7 +1757,7 @@ namespace Java.Io
         // TODO: complete the class
         #region GetField
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectInputStream.GetField.html"/>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectInputStream.GetField.html"/>
         /// </summary>
         public partial class GetField : MASES.JCOBridge.C2JBridge.JVMBridgeBase<GetField>
         {
@@ -1765,12 +1765,12 @@ namespace Java.Io
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
-            [Obsolete("GetField class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("GetField class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public GetField() { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
-            [Obsolete("GetField class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("GetField class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public GetField(params object[] args) : base(args) { }
 
             private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1807,7 +1807,7 @@ namespace Java.Io
 
     #region ObjectInputValidation
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectInputValidation.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/ObjectInputValidation.html"/>
     /// </summary>
     public partial class ObjectInputValidation : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ObjectInputValidation>
     {
@@ -1815,12 +1815,12 @@ namespace Java.Io
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("ObjectInputValidation class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ObjectInputValidation class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ObjectInputValidation() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("ObjectInputValidation class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ObjectInputValidation class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ObjectInputValidation(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1853,7 +1853,7 @@ namespace Java.Io
 
     #region ObjectOutput
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectOutput.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/ObjectOutput.html"/>
     /// </summary>
     public partial class ObjectOutput : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ObjectOutput>
     {
@@ -1861,12 +1861,12 @@ namespace Java.Io
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("ObjectOutput class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ObjectOutput class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ObjectOutput() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("ObjectOutput class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ObjectOutput class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ObjectOutput(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1899,7 +1899,7 @@ namespace Java.Io
 
     #region ObjectOutputStream
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectOutputStream.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/ObjectOutputStream.html"/>
     /// </summary>
     public partial class ObjectOutputStream : Java.Io.OutputStream
     {
@@ -1939,7 +1939,7 @@ namespace Java.Io
         // TODO: complete the class
         #region PutField
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectOutputStream.PutField.html"/>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectOutputStream.PutField.html"/>
         /// </summary>
         public partial class PutField : MASES.JCOBridge.C2JBridge.JVMBridgeBase<PutField>
         {
@@ -1947,12 +1947,12 @@ namespace Java.Io
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
-            [Obsolete("PutField class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("PutField class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public PutField() { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
-            [Obsolete("PutField class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("PutField class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public PutField(params object[] args) : base(args) { }
 
             private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1989,7 +1989,7 @@ namespace Java.Io
 
     #region ObjectStreamClass
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectStreamClass.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/ObjectStreamClass.html"/>
     /// </summary>
     public partial class ObjectStreamClass : Java.Io.Serializable
     {
@@ -2033,7 +2033,7 @@ namespace Java.Io
 
     #region ObjectStreamConstants
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectStreamConstants.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/ObjectStreamConstants.html"/>
     /// </summary>
     public partial class ObjectStreamConstants : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ObjectStreamConstants>
     {
@@ -2041,12 +2041,12 @@ namespace Java.Io
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("ObjectStreamConstants class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ObjectStreamConstants class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ObjectStreamConstants() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("ObjectStreamConstants class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ObjectStreamConstants class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ObjectStreamConstants(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -2079,7 +2079,7 @@ namespace Java.Io
 
     #region ObjectStreamException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectStreamException.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/ObjectStreamException.html"/>
     /// </summary>
     public partial class ObjectStreamException : Java.Io.IOException
     {
@@ -2096,7 +2096,7 @@ namespace Java.Io
 
     #region ObjectStreamField
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectStreamField.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/ObjectStreamField.html"/>
     /// </summary>
     public partial class ObjectStreamField : Java.Lang.Comparable<object>
     {
@@ -2140,7 +2140,7 @@ namespace Java.Io
 
     #region OptionalDataException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/OptionalDataException.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/OptionalDataException.html"/>
     /// </summary>
     public partial class OptionalDataException : Java.Io.ObjectStreamException
     {
@@ -2157,7 +2157,7 @@ namespace Java.Io
 
     #region OutputStream
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/OutputStream.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/OutputStream.html"/>
     /// </summary>
     public partial class OutputStream : MASES.JCOBridge.C2JBridge.JVMBridgeBase<OutputStream>
     {
@@ -2165,12 +2165,12 @@ namespace Java.Io
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("OutputStream class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("OutputStream class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public OutputStream() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("OutputStream class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("OutputStream class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public OutputStream(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -2203,7 +2203,7 @@ namespace Java.Io
 
     #region OutputStreamWriter
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/OutputStreamWriter.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/OutputStreamWriter.html"/>
     /// </summary>
     public partial class OutputStreamWriter : Java.Io.Writer
     {
@@ -2247,7 +2247,7 @@ namespace Java.Io
 
     #region PipedInputStream
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/PipedInputStream.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/PipedInputStream.html"/>
     /// </summary>
     public partial class PipedInputStream : Java.Io.InputStream
     {
@@ -2291,7 +2291,7 @@ namespace Java.Io
 
     #region PipedOutputStream
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/PipedOutputStream.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/PipedOutputStream.html"/>
     /// </summary>
     public partial class PipedOutputStream : Java.Io.OutputStream
     {
@@ -2335,7 +2335,7 @@ namespace Java.Io
 
     #region PipedReader
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/PipedReader.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/PipedReader.html"/>
     /// </summary>
     public partial class PipedReader : Java.Io.Reader
     {
@@ -2379,7 +2379,7 @@ namespace Java.Io
 
     #region PipedWriter
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/PipedWriter.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/PipedWriter.html"/>
     /// </summary>
     public partial class PipedWriter : Java.Io.Writer
     {
@@ -2423,7 +2423,7 @@ namespace Java.Io
 
     #region PrintStream
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/PrintStream.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/PrintStream.html"/>
     /// </summary>
     public partial class PrintStream : Java.Io.FilterOutputStream
     {
@@ -2467,7 +2467,7 @@ namespace Java.Io
 
     #region PrintWriter
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/PrintWriter.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/PrintWriter.html"/>
     /// </summary>
     public partial class PrintWriter : Java.Io.Writer
     {
@@ -2511,7 +2511,7 @@ namespace Java.Io
 
     #region PushbackInputStream
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/PushbackInputStream.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/PushbackInputStream.html"/>
     /// </summary>
     public partial class PushbackInputStream : Java.Io.FilterInputStream
     {
@@ -2555,7 +2555,7 @@ namespace Java.Io
 
     #region PushbackReader
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/PushbackReader.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/PushbackReader.html"/>
     /// </summary>
     public partial class PushbackReader : Java.Io.FilterReader
     {
@@ -2599,7 +2599,7 @@ namespace Java.Io
 
     #region RandomAccessFile
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/RandomAccessFile.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/RandomAccessFile.html"/>
     /// </summary>
     public partial class RandomAccessFile : MASES.JCOBridge.C2JBridge.JVMBridgeBase<RandomAccessFile>
     {
@@ -2643,7 +2643,7 @@ namespace Java.Io
 
     #region Reader
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/Reader.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/Reader.html"/>
     /// </summary>
     public partial class Reader : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Reader>
     {
@@ -2651,12 +2651,12 @@ namespace Java.Io
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Reader class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Reader class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Reader() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Reader class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Reader class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Reader(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -2689,7 +2689,7 @@ namespace Java.Io
 
     #region SequenceInputStream
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/SequenceInputStream.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/SequenceInputStream.html"/>
     /// </summary>
     public partial class SequenceInputStream : Java.Io.InputStream
     {
@@ -2731,55 +2731,9 @@ namespace Java.Io
     }
     #endregion
 
-    #region Serial
-    /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/Serial.html"/>
-    /// </summary>
-    public partial class Serial : Java.Lang.Annotation.Annotation
-    {
-        const string _bridgeClassName = "java.io.Serial";
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        [Obsolete("Serial class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-        public Serial() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        [Obsolete("Serial class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-        public Serial(params object[] args) : base(args) { }
-
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
-
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
-        /// </summary>
-        public override string BridgeClassName => _bridgeClassName;
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
-        /// </summary>
-        public override bool IsBridgeAbstract => true;
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
-        /// </summary>
-        public override bool IsBridgeCloseable => false;
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
-        /// </summary>
-        public override bool IsBridgeInterface => true;
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
-        /// </summary>
-        public override bool IsBridgeStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
     #region Serializable
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/Serializable.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/Serializable.html"/>
     /// </summary>
     public partial class Serializable : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Serializable>
     {
@@ -2787,12 +2741,12 @@ namespace Java.Io
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Serializable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Serializable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Serializable() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Serializable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Serializable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Serializable(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -2825,7 +2779,7 @@ namespace Java.Io
 
     #region SerializablePermission
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/SerializablePermission.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/SerializablePermission.html"/>
     /// </summary>
     public partial class SerializablePermission : Java.Security.BasicPermission
     {
@@ -2869,7 +2823,7 @@ namespace Java.Io
 
     #region StreamCorruptedException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/StreamCorruptedException.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/StreamCorruptedException.html"/>
     /// </summary>
     public partial class StreamCorruptedException : Java.Io.ObjectStreamException
     {
@@ -2886,7 +2840,7 @@ namespace Java.Io
 
     #region StreamTokenizer
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/StreamTokenizer.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/StreamTokenizer.html"/>
     /// </summary>
     public partial class StreamTokenizer : MASES.JCOBridge.C2JBridge.JVMBridgeBase<StreamTokenizer>
     {
@@ -2930,9 +2884,9 @@ namespace Java.Io
 
     #region StringBufferInputStream
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/StringBufferInputStream.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/StringBufferInputStream.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class StringBufferInputStream : Java.Io.InputStream
     {
         const string _bridgeClassName = "java.io.StringBufferInputStream";
@@ -2975,7 +2929,7 @@ namespace Java.Io
 
     #region StringReader
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/StringReader.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/StringReader.html"/>
     /// </summary>
     public partial class StringReader : Java.Io.Reader
     {
@@ -3019,7 +2973,7 @@ namespace Java.Io
 
     #region StringWriter
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/StringWriter.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/StringWriter.html"/>
     /// </summary>
     public partial class StringWriter : Java.Io.Writer
     {
@@ -3063,7 +3017,7 @@ namespace Java.Io
 
     #region SyncFailedException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/SyncFailedException.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/SyncFailedException.html"/>
     /// </summary>
     public partial class SyncFailedException : Java.Io.IOException
     {
@@ -3080,7 +3034,7 @@ namespace Java.Io
 
     #region UncheckedIOException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/UncheckedIOException.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/UncheckedIOException.html"/>
     /// </summary>
     public partial class UncheckedIOException : Java.Lang.RuntimeException
     {
@@ -3097,7 +3051,7 @@ namespace Java.Io
 
     #region UnsupportedEncodingException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/UnsupportedEncodingException.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/UnsupportedEncodingException.html"/>
     /// </summary>
     public partial class UnsupportedEncodingException : Java.Io.IOException
     {
@@ -3114,7 +3068,7 @@ namespace Java.Io
 
     #region UTFDataFormatException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/UTFDataFormatException.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/UTFDataFormatException.html"/>
     /// </summary>
     public partial class UTFDataFormatException : Java.Io.IOException
     {
@@ -3131,7 +3085,7 @@ namespace Java.Io
 
     #region WriteAbortedException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/WriteAbortedException.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/WriteAbortedException.html"/>
     /// </summary>
     public partial class WriteAbortedException : Java.Io.ObjectStreamException
     {
@@ -3148,7 +3102,7 @@ namespace Java.Io
 
     #region Writer
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/io/Writer.html"/>
+    /// <see href="https://developer.android.com/reference/java/io/Writer.html"/>
     /// </summary>
     public partial class Writer : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Writer>
     {
@@ -3156,12 +3110,12 @@ namespace Java.Io
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Writer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Writer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Writer() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Writer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Writer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Writer(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);

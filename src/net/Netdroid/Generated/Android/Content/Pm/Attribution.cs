@@ -52,26 +52,28 @@ namespace Android.Content.Pm
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/Attribution.html#getLabel()"/> 
-        /// </summary>
-        public int Label
-        {
-            get { return IExecuteWithSignature<int>("getLabel", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/Attribution.html#getTag()"/> 
-        /// </summary>
-        public Java.Lang.String Tag
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getTag", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/Attribution.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/Attribution.html#getLabel()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetLabel()
+        {
+            return IExecuteWithSignature<int>("getLabel", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/Attribution.html#getTag()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetTag()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getTag", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/Attribution.html#writeToParcel(android.os.Parcel,int)"/>

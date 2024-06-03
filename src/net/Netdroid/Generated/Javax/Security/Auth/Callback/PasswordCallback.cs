@@ -30,7 +30,7 @@ namespace Javax.Security.Auth.Callback
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/security/auth/callback/PasswordCallback.html#%3Cinit%3E(java.lang.String,boolean)"/>
+        /// <see href="https://developer.android.com/reference/javax/security/auth/callback/PasswordCallback.html#%3Cinit%3E(java.lang.String,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -63,21 +63,7 @@ namespace Javax.Security.Auth.Callback
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/security/auth/callback/PasswordCallback.html#getPassword()"/> <see href="https://developer.android.com/reference/java.base/javax/security/auth/callback/PasswordCallback.html#setPassword(char[])"/>
-        /// </summary>
-        public char[] Password
-        {
-            get { return IExecuteWithSignatureArray<char>("getPassword", "()[C"); } set { IExecuteWithSignature("setPassword", "([C)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/security/auth/callback/PasswordCallback.html#getPrompt()"/> 
-        /// </summary>
-        public Java.Lang.String Prompt
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPrompt", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/security/auth/callback/PasswordCallback.html#isEchoOn()"/>
+        /// <see href="https://developer.android.com/reference/javax/security/auth/callback/PasswordCallback.html#isEchoOn()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsEchoOn()
@@ -85,11 +71,35 @@ namespace Javax.Security.Auth.Callback
             return IExecuteWithSignature<bool>("isEchoOn", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/security/auth/callback/PasswordCallback.html#clearPassword()"/>
+        /// <see href="https://developer.android.com/reference/javax/security/auth/callback/PasswordCallback.html#getPassword()"/>
+        /// </summary>
+        /// <returns><see cref="char"/></returns>
+        public char[] GetPassword()
+        {
+            return IExecuteWithSignatureArray<char>("getPassword", "()[C");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/security/auth/callback/PasswordCallback.html#getPrompt()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPrompt()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPrompt", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/security/auth/callback/PasswordCallback.html#clearPassword()"/>
         /// </summary>
         public void ClearPassword()
         {
             IExecuteWithSignature("clearPassword", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/security/auth/callback/PasswordCallback.html#setPassword(char[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="char"/></param>
+        public void SetPassword(char[] arg0)
+        {
+            IExecuteWithSignature("setPassword", "([C)V", new object[] { arg0 });
         }
 
         #endregion

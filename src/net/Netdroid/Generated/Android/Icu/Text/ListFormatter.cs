@@ -42,11 +42,12 @@ namespace Android.Icu.Text
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/ListFormatter.html#getInstance()"/> 
+        /// <see href="https://developer.android.com/reference/android/icu/text/ListFormatter.html#getInstance()"/>
         /// </summary>
-        public static Android.Icu.Text.ListFormatter Instance
+        /// <returns><see cref="Android.Icu.Text.ListFormatter"/></returns>
+        public static Android.Icu.Text.ListFormatter GetInstance()
         {
-            get { return SExecuteWithSignature<Android.Icu.Text.ListFormatter>(LocalBridgeClazz, "getInstance", "()Landroid/icu/text/ListFormatter;"); }
+            return SExecuteWithSignature<Android.Icu.Text.ListFormatter>(LocalBridgeClazz, "getInstance", "()Landroid/icu/text/ListFormatter;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/ListFormatter.html#getInstance(android.icu.util.ULocale,android.icu.text.ListFormatter.Type,android.icu.text.ListFormatter.Width)"/>
@@ -167,9 +168,9 @@ namespace Android.Icu.Text
             /// <param name="arg0"><typeparamref name="A"/></param>
             /// <typeparam name="A"><see cref="Java.Lang.IAppendable"/></typeparam>
             /// <returns><typeparamref name="A"/></returns>
-            public A AppendTo<A>(A arg0) where A: Java.Lang.IAppendable, new()
+            public A AppendTo<A>(A arg0) where A : Java.Lang.IAppendable, new()
             {
-                return IExecuteWithSignature<A>("appendTo", "(Ljava/lang/Appendable;)Ljava/lang/Appendable;", arg0);
+                return IExecute<A>("appendTo", arg0);
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/ListFormatter.FormattedList.html#nextPosition(android.icu.text.ConstrainedFieldPosition)"/>

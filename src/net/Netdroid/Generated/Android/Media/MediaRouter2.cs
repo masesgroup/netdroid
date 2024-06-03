@@ -55,27 +55,6 @@ namespace Android.Media
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.html#getControllers()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Media.MediaRouter2.RoutingController> Controllers
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Media.MediaRouter2.RoutingController>>("getControllers", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.html#getRoutes()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Media.MediaRoute2Info> Routes
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Media.MediaRoute2Info>>("getRoutes", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.html#getSystemController()"/> 
-        /// </summary>
-        public Android.Media.MediaRouter2.RoutingController SystemController
-        {
-            get { return IExecuteWithSignature<Android.Media.MediaRouter2.RoutingController>("getSystemController", "()Landroid/media/MediaRouter2$RoutingController;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.html#getController(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -85,12 +64,36 @@ namespace Android.Media
             return IExecuteWithSignature<Android.Media.MediaRouter2.RoutingController>("getController", "(Ljava/lang/String;)Landroid/media/MediaRouter2$RoutingController;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.html#getSystemController()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Media.MediaRouter2.RoutingController"/></returns>
+        public Android.Media.MediaRouter2.RoutingController GetSystemController()
+        {
+            return IExecuteWithSignature<Android.Media.MediaRouter2.RoutingController>("getSystemController", "()Landroid/media/MediaRouter2$RoutingController;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.html#showSystemOutputSwitcher()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool ShowSystemOutputSwitcher()
         {
             return IExecuteWithSignature<bool>("showSystemOutputSwitcher", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.html#getRoutes()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Media.MediaRoute2Info> GetRoutes()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Media.MediaRoute2Info>>("getRoutes", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.html#getControllers()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Media.MediaRouter2.RoutingController> GetControllers()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Media.MediaRouter2.RoutingController>>("getControllers", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.html#registerControllerCallback(java.util.concurrent.Executor,android.media.MediaRouter2.ControllerCallback)"/>
@@ -243,7 +246,7 @@ namespace Android.Media
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onGetControllerHints", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.MediaRoute2Info>>>(OnGetControllerHintsEventHandler));
+                AddEventHandler("onGetControllerHints", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.MediaRoute2Info>>>(OnGetControllerHintsEventHandler));
 
             }
 
@@ -251,7 +254,7 @@ namespace Android.Media
             /// Handler for <see href="https://developer.android.com/reference/android/media/MediaRouter2.OnGetControllerHintsListener.html#onGetControllerHints(android.media.MediaRoute2Info)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnGetControllerHints"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Func<Android.Media.MediaRoute2Info, Android.Os.Bundle> OnOnGetControllerHints { get; set; } = null;
+            public global::System.Func<Android.Media.MediaRoute2Info, Android.Os.Bundle> OnOnGetControllerHints { get; set; } = null;
 
             void OnGetControllerHintsEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Media.MediaRoute2Info>> data)
             {
@@ -344,7 +347,7 @@ namespace Android.Media
             /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.RouteCallback.html#onRoutesAdded(java.util.List)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.List"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void OnRoutesAdded(Java.Util.List<Android.Media.MediaRoute2Info> arg0)
             {
                 IExecuteWithSignature("onRoutesAdded", "(Ljava/util/List;)V", arg0);
@@ -353,7 +356,7 @@ namespace Android.Media
             /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.RouteCallback.html#onRoutesChanged(java.util.List)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.List"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void OnRoutesChanged(Java.Util.List<Android.Media.MediaRoute2Info> arg0)
             {
                 IExecuteWithSignature("onRoutesChanged", "(Ljava/util/List;)V", arg0);
@@ -362,7 +365,7 @@ namespace Android.Media
             /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.RouteCallback.html#onRoutesRemoved(java.util.List)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.List"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void OnRoutesRemoved(Java.Util.List<Android.Media.MediaRoute2Info> arg0)
             {
                 IExecuteWithSignature("onRoutesRemoved", "(Ljava/util/List;)V", arg0);
@@ -407,67 +410,20 @@ namespace Android.Media
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.RoutingController.html#getControlHints()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.RoutingController.html#getRoutingSessionInfo()"/>
             /// </summary>
-            public Android.Os.Bundle ControlHints
+            /// <returns><see cref="Android.Media.RoutingSessionInfo"/></returns>
+            public Android.Media.RoutingSessionInfo GetRoutingSessionInfo()
             {
-                get { return IExecuteWithSignature<Android.Os.Bundle>("getControlHints", "()Landroid/os/Bundle;"); }
+                return IExecuteWithSignature<Android.Media.RoutingSessionInfo>("getRoutingSessionInfo", "()Landroid/media/RoutingSessionInfo;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.RoutingController.html#getDeselectableRoutes()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.RoutingController.html#getControlHints()"/>
             /// </summary>
-            public Java.Util.List<Android.Media.MediaRoute2Info> DeselectableRoutes
+            /// <returns><see cref="Android.Os.Bundle"/></returns>
+            public Android.Os.Bundle GetControlHints()
             {
-                get { return IExecuteWithSignature<Java.Util.List<Android.Media.MediaRoute2Info>>("getDeselectableRoutes", "()Ljava/util/List;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.RoutingController.html#getId()"/> 
-            /// </summary>
-            public Java.Lang.String Id
-            {
-                get { return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.RoutingController.html#getRoutingSessionInfo()"/> 
-            /// </summary>
-            public Android.Media.RoutingSessionInfo RoutingSessionInfo
-            {
-                get { return IExecuteWithSignature<Android.Media.RoutingSessionInfo>("getRoutingSessionInfo", "()Landroid/media/RoutingSessionInfo;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.RoutingController.html#getSelectableRoutes()"/> 
-            /// </summary>
-            public Java.Util.List<Android.Media.MediaRoute2Info> SelectableRoutes
-            {
-                get { return IExecuteWithSignature<Java.Util.List<Android.Media.MediaRoute2Info>>("getSelectableRoutes", "()Ljava/util/List;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.RoutingController.html#getSelectedRoutes()"/> 
-            /// </summary>
-            public Java.Util.List<Android.Media.MediaRoute2Info> SelectedRoutes
-            {
-                get { return IExecuteWithSignature<Java.Util.List<Android.Media.MediaRoute2Info>>("getSelectedRoutes", "()Ljava/util/List;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.RoutingController.html#getVolume()"/> <see href="https://developer.android.com/reference/android/media/MediaRouter2.RoutingController.html#setVolume(int)"/>
-            /// </summary>
-            public int Volume
-            {
-                get { return IExecuteWithSignature<int>("getVolume", "()I"); } set { IExecuteWithSignature("setVolume", "(I)V", value); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.RoutingController.html#getVolumeHandling()"/> 
-            /// </summary>
-            public int VolumeHandling
-            {
-                get { return IExecuteWithSignature<int>("getVolumeHandling", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.RoutingController.html#getVolumeMax()"/> 
-            /// </summary>
-            public int VolumeMax
-            {
-                get { return IExecuteWithSignature<int>("getVolumeMax", "()I"); }
+                return IExecuteWithSignature<Android.Os.Bundle>("getControlHints", "()Landroid/os/Bundle;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.RoutingController.html#isReleased()"/>
@@ -476,6 +432,62 @@ namespace Android.Media
             public bool IsReleased()
             {
                 return IExecuteWithSignature<bool>("isReleased", "()Z");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.RoutingController.html#getVolume()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetVolume()
+            {
+                return IExecuteWithSignature<int>("getVolume", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.RoutingController.html#getVolumeHandling()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetVolumeHandling()
+            {
+                return IExecuteWithSignature<int>("getVolumeHandling", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.RoutingController.html#getVolumeMax()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetVolumeMax()
+            {
+                return IExecuteWithSignature<int>("getVolumeMax", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.RoutingController.html#getId()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetId()
+            {
+                return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.RoutingController.html#getDeselectableRoutes()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Util.List"/></returns>
+            public Java.Util.List<Android.Media.MediaRoute2Info> GetDeselectableRoutes()
+            {
+                return IExecuteWithSignature<Java.Util.List<Android.Media.MediaRoute2Info>>("getDeselectableRoutes", "()Ljava/util/List;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.RoutingController.html#getSelectableRoutes()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Util.List"/></returns>
+            public Java.Util.List<Android.Media.MediaRoute2Info> GetSelectableRoutes()
+            {
+                return IExecuteWithSignature<Java.Util.List<Android.Media.MediaRoute2Info>>("getSelectableRoutes", "()Ljava/util/List;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.RoutingController.html#getSelectedRoutes()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Util.List"/></returns>
+            public Java.Util.List<Android.Media.MediaRoute2Info> GetSelectedRoutes()
+            {
+                return IExecuteWithSignature<Java.Util.List<Android.Media.MediaRoute2Info>>("getSelectedRoutes", "()Ljava/util/List;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.RoutingController.html#deselectRoute(android.media.MediaRoute2Info)"/>
@@ -499,6 +511,14 @@ namespace Android.Media
             public void SelectRoute(Android.Media.MediaRoute2Info arg0)
             {
                 IExecuteWithSignature("selectRoute", "(Landroid/media/MediaRoute2Info;)V", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/MediaRouter2.RoutingController.html#setVolume(int)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="int"/></param>
+            public void SetVolume(int arg0)
+            {
+                IExecuteWithSignature("setVolume", "(I)V", arg0);
             }
 
             #endregion

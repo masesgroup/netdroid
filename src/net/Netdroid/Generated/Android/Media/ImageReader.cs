@@ -71,62 +71,6 @@ namespace Android.Media
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/ImageReader.html#getDataSpace()"/> 
-        /// </summary>
-        public int DataSpace
-        {
-            get { return IExecuteWithSignature<int>("getDataSpace", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/ImageReader.html#getHardwareBufferFormat()"/> 
-        /// </summary>
-        public int HardwareBufferFormat
-        {
-            get { return IExecuteWithSignature<int>("getHardwareBufferFormat", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/ImageReader.html#getHeight()"/> 
-        /// </summary>
-        public int Height
-        {
-            get { return IExecuteWithSignature<int>("getHeight", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/ImageReader.html#getImageFormat()"/> 
-        /// </summary>
-        public int ImageFormat
-        {
-            get { return IExecuteWithSignature<int>("getImageFormat", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/ImageReader.html#getMaxImages()"/> 
-        /// </summary>
-        public int MaxImages
-        {
-            get { return IExecuteWithSignature<int>("getMaxImages", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/ImageReader.html#getSurface()"/> 
-        /// </summary>
-        public Android.View.Surface Surface
-        {
-            get { return IExecuteWithSignature<Android.View.Surface>("getSurface", "()Landroid/view/Surface;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/ImageReader.html#getUsage()"/> 
-        /// </summary>
-        public long Usage
-        {
-            get { return IExecuteWithSignature<long>("getUsage", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/ImageReader.html#getWidth()"/> 
-        /// </summary>
-        public int Width
-        {
-            get { return IExecuteWithSignature<int>("getWidth", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/ImageReader.html#acquireLatestImage()"/>
         /// </summary>
         /// <returns><see cref="Android.Media.Image"/></returns>
@@ -141,6 +85,70 @@ namespace Android.Media
         public Android.Media.Image AcquireNextImage()
         {
             return IExecuteWithSignature<Android.Media.Image>("acquireNextImage", "()Landroid/media/Image;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/ImageReader.html#getSurface()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.Surface"/></returns>
+        public Android.View.Surface GetSurface()
+        {
+            return IExecuteWithSignature<Android.View.Surface>("getSurface", "()Landroid/view/Surface;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/ImageReader.html#getDataSpace()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDataSpace()
+        {
+            return IExecuteWithSignature<int>("getDataSpace", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/ImageReader.html#getHardwareBufferFormat()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetHardwareBufferFormat()
+        {
+            return IExecuteWithSignature<int>("getHardwareBufferFormat", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/ImageReader.html#getHeight()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetHeight()
+        {
+            return IExecuteWithSignature<int>("getHeight", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/ImageReader.html#getImageFormat()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetImageFormat()
+        {
+            return IExecuteWithSignature<int>("getImageFormat", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/ImageReader.html#getMaxImages()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMaxImages()
+        {
+            return IExecuteWithSignature<int>("getMaxImages", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/ImageReader.html#getWidth()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetWidth()
+        {
+            return IExecuteWithSignature<int>("getWidth", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/ImageReader.html#getUsage()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetUsage()
+        {
+            return IExecuteWithSignature<long>("getUsage", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/ImageReader.html#close()"/>
@@ -287,7 +295,7 @@ namespace Android.Media
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onImageAvailable", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.ImageReader>>>(OnImageAvailableEventHandler));
+                AddEventHandler("onImageAvailable", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Media.ImageReader>>>(OnImageAvailableEventHandler));
 
             }
 
@@ -295,7 +303,7 @@ namespace Android.Media
             /// Handler for <see href="https://developer.android.com/reference/android/media/ImageReader.OnImageAvailableListener.html#onImageAvailable(android.media.ImageReader)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnImageAvailable"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Media.ImageReader> OnOnImageAvailable { get; set; } = null;
+            public global::System.Action<Android.Media.ImageReader> OnOnImageAvailable { get; set; } = null;
 
             void OnImageAvailableEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Media.ImageReader>> data)
             {

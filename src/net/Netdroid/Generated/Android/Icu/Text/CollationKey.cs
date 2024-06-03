@@ -55,13 +55,6 @@ namespace Android.Icu.Text
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/CollationKey.html#getSourceString()"/> 
-        /// </summary>
-        public Java.Lang.String SourceString
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSourceString", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/CollationKey.html#getBound(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -105,6 +98,14 @@ namespace Android.Icu.Text
         public int CompareTo(object arg0)
         {
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/CollationKey.html#getSourceString()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSourceString()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getSourceString", "()Ljava/lang/String;");
         }
 
         #endregion

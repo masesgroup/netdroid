@@ -40,42 +40,42 @@ namespace Android.Text
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/AndroidCharacter.html#EAST_ASIAN_WIDTH_AMBIGUOUS"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int EAST_ASIAN_WIDTH_AMBIGUOUS { get { if (!_EAST_ASIAN_WIDTH_AMBIGUOUSReady) { _EAST_ASIAN_WIDTH_AMBIGUOUSContent = SGetField<int>(LocalBridgeClazz, "EAST_ASIAN_WIDTH_AMBIGUOUS"); _EAST_ASIAN_WIDTH_AMBIGUOUSReady = true; } return _EAST_ASIAN_WIDTH_AMBIGUOUSContent; } }
         private static int _EAST_ASIAN_WIDTH_AMBIGUOUSContent = default;
         private static bool _EAST_ASIAN_WIDTH_AMBIGUOUSReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/AndroidCharacter.html#EAST_ASIAN_WIDTH_FULL_WIDTH"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int EAST_ASIAN_WIDTH_FULL_WIDTH { get { if (!_EAST_ASIAN_WIDTH_FULL_WIDTHReady) { _EAST_ASIAN_WIDTH_FULL_WIDTHContent = SGetField<int>(LocalBridgeClazz, "EAST_ASIAN_WIDTH_FULL_WIDTH"); _EAST_ASIAN_WIDTH_FULL_WIDTHReady = true; } return _EAST_ASIAN_WIDTH_FULL_WIDTHContent; } }
         private static int _EAST_ASIAN_WIDTH_FULL_WIDTHContent = default;
         private static bool _EAST_ASIAN_WIDTH_FULL_WIDTHReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/AndroidCharacter.html#EAST_ASIAN_WIDTH_HALF_WIDTH"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int EAST_ASIAN_WIDTH_HALF_WIDTH { get { if (!_EAST_ASIAN_WIDTH_HALF_WIDTHReady) { _EAST_ASIAN_WIDTH_HALF_WIDTHContent = SGetField<int>(LocalBridgeClazz, "EAST_ASIAN_WIDTH_HALF_WIDTH"); _EAST_ASIAN_WIDTH_HALF_WIDTHReady = true; } return _EAST_ASIAN_WIDTH_HALF_WIDTHContent; } }
         private static int _EAST_ASIAN_WIDTH_HALF_WIDTHContent = default;
         private static bool _EAST_ASIAN_WIDTH_HALF_WIDTHReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/AndroidCharacter.html#EAST_ASIAN_WIDTH_NARROW"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int EAST_ASIAN_WIDTH_NARROW { get { if (!_EAST_ASIAN_WIDTH_NARROWReady) { _EAST_ASIAN_WIDTH_NARROWContent = SGetField<int>(LocalBridgeClazz, "EAST_ASIAN_WIDTH_NARROW"); _EAST_ASIAN_WIDTH_NARROWReady = true; } return _EAST_ASIAN_WIDTH_NARROWContent; } }
         private static int _EAST_ASIAN_WIDTH_NARROWContent = default;
         private static bool _EAST_ASIAN_WIDTH_NARROWReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/AndroidCharacter.html#EAST_ASIAN_WIDTH_NEUTRAL"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int EAST_ASIAN_WIDTH_NEUTRAL { get { if (!_EAST_ASIAN_WIDTH_NEUTRALReady) { _EAST_ASIAN_WIDTH_NEUTRALContent = SGetField<int>(LocalBridgeClazz, "EAST_ASIAN_WIDTH_NEUTRAL"); _EAST_ASIAN_WIDTH_NEUTRALReady = true; } return _EAST_ASIAN_WIDTH_NEUTRALContent; } }
         private static int _EAST_ASIAN_WIDTH_NEUTRALContent = default;
         private static bool _EAST_ASIAN_WIDTH_NEUTRALReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/AndroidCharacter.html#EAST_ASIAN_WIDTH_WIDE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int EAST_ASIAN_WIDTH_WIDE { get { if (!_EAST_ASIAN_WIDTH_WIDEReady) { _EAST_ASIAN_WIDTH_WIDEContent = SGetField<int>(LocalBridgeClazz, "EAST_ASIAN_WIDTH_WIDE"); _EAST_ASIAN_WIDTH_WIDEReady = true; } return _EAST_ASIAN_WIDTH_WIDEContent; } }
         private static int _EAST_ASIAN_WIDTH_WIDEContent = default;
         private static bool _EAST_ASIAN_WIDTH_WIDEReady = false; // this is used because in case of generics 
@@ -90,7 +90,7 @@ namespace Android.Text
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static bool Mirror(char[] arg0, int arg1, int arg2)
         {
             return SExecute<bool>(LocalBridgeClazz, "mirror", arg0, arg1, arg2);
@@ -100,7 +100,7 @@ namespace Android.Text
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <returns><see cref="char"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static char GetMirror(char arg0)
         {
             return SExecuteWithSignature<char>(LocalBridgeClazz, "getMirror", "(C)C", arg0);
@@ -110,7 +110,7 @@ namespace Android.Text
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <returns><see cref="int"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int GetEastAsianWidth(char arg0)
         {
             return SExecuteWithSignature<int>(LocalBridgeClazz, "getEastAsianWidth", "(C)I", arg0);
@@ -121,7 +121,7 @@ namespace Android.Text
         /// <param name="arg0"><see cref="char"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static void GetDirectionalities(char[] arg0, byte[] arg1, int arg2)
         {
             SExecute(LocalBridgeClazz, "getDirectionalities", arg0, arg1, arg2);
@@ -133,7 +133,7 @@ namespace Android.Text
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="byte"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static void GetEastAsianWidths(char[] arg0, int arg1, int arg2, byte[] arg3)
         {
             SExecute(LocalBridgeClazz, "getEastAsianWidths", arg0, arg1, arg2, arg3);

@@ -42,11 +42,12 @@ namespace Android.Webkit
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/GeolocationPermissions.html#getInstance()"/> 
+        /// <see href="https://developer.android.com/reference/android/webkit/GeolocationPermissions.html#getInstance()"/>
         /// </summary>
-        public static Android.Webkit.GeolocationPermissions Instance
+        /// <returns><see cref="Android.Webkit.GeolocationPermissions"/></returns>
+        public static Android.Webkit.GeolocationPermissions GetInstance()
         {
-            get { return SExecuteWithSignature<Android.Webkit.GeolocationPermissions>(LocalBridgeClazz, "getInstance", "()Landroid/webkit/GeolocationPermissions;"); }
+            return SExecuteWithSignature<Android.Webkit.GeolocationPermissions>(LocalBridgeClazz, "getInstance", "()Landroid/webkit/GeolocationPermissions;");
         }
 
         #endregion

@@ -64,7 +64,7 @@ namespace Java.Nio.Channels
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/ScatteringByteChannel.html#read(java.nio.ByteBuffer[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/ScatteringByteChannel.html#read(java.nio.ByteBuffer[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -76,7 +76,7 @@ namespace Java.Nio.Channels
             return IExecute<long>("read", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/ScatteringByteChannel.html#read(java.nio.ByteBuffer[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/ScatteringByteChannel.html#read(java.nio.ByteBuffer[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         /// <returns><see cref="long"/></returns>

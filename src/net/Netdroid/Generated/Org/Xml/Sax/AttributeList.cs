@@ -64,14 +64,15 @@ namespace Org.Xml.Sax
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/AttributeList.html#getLength()"/> 
+        /// <see href="https://developer.android.com/reference/org/xml/sax/AttributeList.html#getLength()"/>
         /// </summary>
-        public int Length
+        /// <returns><see cref="int"/></returns>
+        public int GetLength()
         {
-            get { return IExecuteWithSignature<int>("getLength", "()I"); }
+            return IExecuteWithSignature<int>("getLength", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/AttributeList.html#getName(int)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/AttributeList.html#getName(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -80,7 +81,7 @@ namespace Org.Xml.Sax
             return IExecuteWithSignature<Java.Lang.String>("getName", "(I)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/AttributeList.html#getType(int)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/AttributeList.html#getType(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -89,7 +90,7 @@ namespace Org.Xml.Sax
             return IExecuteWithSignature<Java.Lang.String>("getType", "(I)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/AttributeList.html#getType(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/AttributeList.html#getType(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -98,7 +99,7 @@ namespace Org.Xml.Sax
             return IExecuteWithSignature<Java.Lang.String>("getType", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/AttributeList.html#getValue(int)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/AttributeList.html#getValue(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -107,7 +108,7 @@ namespace Org.Xml.Sax
             return IExecuteWithSignature<Java.Lang.String>("getValue", "(I)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/AttributeList.html#getValue(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/AttributeList.html#getValue(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>

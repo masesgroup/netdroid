@@ -30,7 +30,7 @@ namespace Java.Util.Prefs
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/PreferenceChangeEvent.html#%3Cinit%3E(java.util.prefs.Preferences,java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/prefs/PreferenceChangeEvent.html#%3Cinit%3E(java.util.prefs.Preferences,java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Prefs.Preferences"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -56,25 +56,28 @@ namespace Java.Util.Prefs
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/PreferenceChangeEvent.html#getKey()"/> 
+        /// <see href="https://developer.android.com/reference/java/util/prefs/PreferenceChangeEvent.html#getKey()"/>
         /// </summary>
-        public Java.Lang.String Key
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetKey()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getKey", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getKey", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/PreferenceChangeEvent.html#getNewValue()"/> 
+        /// <see href="https://developer.android.com/reference/java/util/prefs/PreferenceChangeEvent.html#getNewValue()"/>
         /// </summary>
-        public Java.Lang.String NewValue
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetNewValue()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getNewValue", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getNewValue", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.prefs/java/util/prefs/PreferenceChangeEvent.html#getNode()"/> 
+        /// <see href="https://developer.android.com/reference/java/util/prefs/PreferenceChangeEvent.html#getNode()"/>
         /// </summary>
-        public Java.Util.Prefs.Preferences Node
+        /// <returns><see cref="Java.Util.Prefs.Preferences"/></returns>
+        public Java.Util.Prefs.Preferences GetNode()
         {
-            get { return IExecuteWithSignature<Java.Util.Prefs.Preferences>("getNode", "()Ljava/util/prefs/Preferences;"); }
+            return IExecuteWithSignature<Java.Util.Prefs.Preferences>("getNode", "()Ljava/util/prefs/Preferences;");
         }
 
         #endregion

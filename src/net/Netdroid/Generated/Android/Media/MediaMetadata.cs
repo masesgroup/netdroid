@@ -226,20 +226,6 @@ namespace Android.Media
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaMetadata.html#getBitmapDimensionLimit()"/> 
-        /// </summary>
-        public int BitmapDimensionLimit
-        {
-            get { return IExecuteWithSignature<int>("getBitmapDimensionLimit", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaMetadata.html#getDescription()"/> 
-        /// </summary>
-        public Android.Media.MediaDescription Description
-        {
-            get { return IExecuteWithSignature<Android.Media.MediaDescription>("getDescription", "()Landroid/media/MediaDescription;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaMetadata.html#getBitmap(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -247,6 +233,14 @@ namespace Android.Media
         public Android.Graphics.Bitmap GetBitmap(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Android.Graphics.Bitmap>("getBitmap", "(Ljava/lang/String;)Landroid/graphics/Bitmap;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaMetadata.html#getDescription()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Media.MediaDescription"/></returns>
+        public Android.Media.MediaDescription GetDescription()
+        {
+            return IExecuteWithSignature<Android.Media.MediaDescription>("getDescription", "()Landroid/media/MediaDescription;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaMetadata.html#getRating(java.lang.String)"/>
@@ -273,6 +267,14 @@ namespace Android.Media
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaMetadata.html#getBitmapDimensionLimit()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetBitmapDimensionLimit()
+        {
+            return IExecuteWithSignature<int>("getBitmapDimensionLimit", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaMetadata.html#size()"/>

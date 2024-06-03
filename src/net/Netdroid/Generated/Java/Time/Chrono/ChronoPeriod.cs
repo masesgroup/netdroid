@@ -60,7 +60,7 @@ namespace Java.Time.Chrono
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/ChronoPeriod.html#between(java.time.chrono.ChronoLocalDate,java.time.chrono.ChronoLocalDate)"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/ChronoPeriod.html#between(java.time.chrono.ChronoLocalDate,java.time.chrono.ChronoLocalDate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Chrono.ChronoLocalDate"/></param>
         /// <param name="arg1"><see cref="Java.Time.Chrono.ChronoLocalDate"/></param>
@@ -74,21 +74,15 @@ namespace Java.Time.Chrono
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/ChronoPeriod.html#getChronology()"/> 
+        /// <see href="https://developer.android.com/reference/java/time/chrono/ChronoPeriod.html#getChronology()"/>
         /// </summary>
-        public Java.Time.Chrono.Chronology Chronology
+        /// <returns><see cref="Java.Time.Chrono.Chronology"/></returns>
+        public Java.Time.Chrono.Chronology GetChronology()
         {
-            get { return IExecuteWithSignature<Java.Time.Chrono.Chronology>("getChronology", "()Ljava/time/chrono/Chronology;"); }
+            return IExecuteWithSignature<Java.Time.Chrono.Chronology>("getChronology", "()Ljava/time/chrono/Chronology;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/ChronoPeriod.html#getUnits()"/> 
-        /// </summary>
-        public Java.Util.List<Java.Time.Temporal.TemporalUnit> Units
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Time.Temporal.TemporalUnit>>("getUnits", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/ChronoPeriod.html#minus(java.time.temporal.TemporalAmount)"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/ChronoPeriod.html#minus(java.time.temporal.TemporalAmount)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAmount"/></param>
         /// <returns><see cref="Java.Time.Chrono.ChronoPeriod"/></returns>
@@ -97,7 +91,7 @@ namespace Java.Time.Chrono
             return IExecuteWithSignature<Java.Time.Chrono.ChronoPeriod>("minus", "(Ljava/time/temporal/TemporalAmount;)Ljava/time/chrono/ChronoPeriod;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/ChronoPeriod.html#multipliedBy(int)"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/ChronoPeriod.html#multipliedBy(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Time.Chrono.ChronoPeriod"/></returns>
@@ -106,7 +100,7 @@ namespace Java.Time.Chrono
             return IExecuteWithSignature<Java.Time.Chrono.ChronoPeriod>("multipliedBy", "(I)Ljava/time/chrono/ChronoPeriod;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/ChronoPeriod.html#normalized()"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/ChronoPeriod.html#normalized()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.Chrono.ChronoPeriod"/></returns>
         public Java.Time.Chrono.ChronoPeriod Normalized()
@@ -114,7 +108,7 @@ namespace Java.Time.Chrono
             return IExecuteWithSignature<Java.Time.Chrono.ChronoPeriod>("normalized", "()Ljava/time/chrono/ChronoPeriod;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/ChronoPeriod.html#plus(java.time.temporal.TemporalAmount)"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/ChronoPeriod.html#plus(java.time.temporal.TemporalAmount)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAmount"/></param>
         /// <returns><see cref="Java.Time.Chrono.ChronoPeriod"/></returns>
@@ -123,7 +117,7 @@ namespace Java.Time.Chrono
             return IExecuteWithSignature<Java.Time.Chrono.ChronoPeriod>("plus", "(Ljava/time/temporal/TemporalAmount;)Ljava/time/chrono/ChronoPeriod;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/ChronoPeriod.html#addTo(java.time.temporal.Temporal)"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/ChronoPeriod.html#addTo(java.time.temporal.Temporal)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.Temporal"/></param>
         /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
@@ -132,7 +126,7 @@ namespace Java.Time.Chrono
             return IExecuteWithSignature<Java.Time.Temporal.Temporal>("addTo", "(Ljava/time/temporal/Temporal;)Ljava/time/temporal/Temporal;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/ChronoPeriod.html#subtractFrom(java.time.temporal.Temporal)"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/ChronoPeriod.html#subtractFrom(java.time.temporal.Temporal)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.Temporal"/></param>
         /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
@@ -141,7 +135,15 @@ namespace Java.Time.Chrono
             return IExecuteWithSignature<Java.Time.Temporal.Temporal>("subtractFrom", "(Ljava/time/temporal/Temporal;)Ljava/time/temporal/Temporal;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/ChronoPeriod.html#get(java.time.temporal.TemporalUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/ChronoPeriod.html#getUnits()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Time.Temporal.TemporalUnit> GetUnits()
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Time.Temporal.TemporalUnit>>("getUnits", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/ChronoPeriod.html#get(java.time.temporal.TemporalUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalUnit"/></param>
         /// <returns><see cref="long"/></returns>
@@ -150,7 +152,7 @@ namespace Java.Time.Chrono
             return IExecuteWithSignature<long>("get", "(Ljava/time/temporal/TemporalUnit;)J", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/ChronoPeriod.html#isNegative()"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/ChronoPeriod.html#isNegative()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsNegative()
@@ -158,7 +160,7 @@ namespace Java.Time.Chrono
             return IExecuteWithSignature<bool>("isNegative", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/ChronoPeriod.html#isZero()"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/ChronoPeriod.html#isZero()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsZero()
@@ -166,7 +168,7 @@ namespace Java.Time.Chrono
             return IExecuteWithSignature<bool>("isZero", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/ChronoPeriod.html#negated()"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/ChronoPeriod.html#negated()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.Chrono.ChronoPeriod"/></returns>
         public Java.Time.Chrono.ChronoPeriod Negated()

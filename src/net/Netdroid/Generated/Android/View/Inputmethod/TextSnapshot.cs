@@ -57,46 +57,52 @@ namespace Android.View.Inputmethod
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextSnapshot.html#getCompositionEnd()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextSnapshot.html#getSurroundingText()"/>
         /// </summary>
-        public int CompositionEnd
+        /// <returns><see cref="Android.View.Inputmethod.SurroundingText"/></returns>
+        public Android.View.Inputmethod.SurroundingText GetSurroundingText()
         {
-            get { return IExecuteWithSignature<int>("getCompositionEnd", "()I"); }
+            return IExecuteWithSignature<Android.View.Inputmethod.SurroundingText>("getSurroundingText", "()Landroid/view/inputmethod/SurroundingText;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextSnapshot.html#getCompositionStart()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextSnapshot.html#getCompositionEnd()"/>
         /// </summary>
-        public int CompositionStart
+        /// <returns><see cref="int"/></returns>
+        public int GetCompositionEnd()
         {
-            get { return IExecuteWithSignature<int>("getCompositionStart", "()I"); }
+            return IExecuteWithSignature<int>("getCompositionEnd", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextSnapshot.html#getCursorCapsMode()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextSnapshot.html#getCompositionStart()"/>
         /// </summary>
-        public int CursorCapsMode
+        /// <returns><see cref="int"/></returns>
+        public int GetCompositionStart()
         {
-            get { return IExecuteWithSignature<int>("getCursorCapsMode", "()I"); }
+            return IExecuteWithSignature<int>("getCompositionStart", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextSnapshot.html#getSelectionEnd()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextSnapshot.html#getCursorCapsMode()"/>
         /// </summary>
-        public int SelectionEnd
+        /// <returns><see cref="int"/></returns>
+        public int GetCursorCapsMode()
         {
-            get { return IExecuteWithSignature<int>("getSelectionEnd", "()I"); }
+            return IExecuteWithSignature<int>("getCursorCapsMode", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextSnapshot.html#getSelectionStart()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextSnapshot.html#getSelectionEnd()"/>
         /// </summary>
-        public int SelectionStart
+        /// <returns><see cref="int"/></returns>
+        public int GetSelectionEnd()
         {
-            get { return IExecuteWithSignature<int>("getSelectionStart", "()I"); }
+            return IExecuteWithSignature<int>("getSelectionEnd", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextSnapshot.html#getSurroundingText()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextSnapshot.html#getSelectionStart()"/>
         /// </summary>
-        public Android.View.Inputmethod.SurroundingText SurroundingText
+        /// <returns><see cref="int"/></returns>
+        public int GetSelectionStart()
         {
-            get { return IExecuteWithSignature<Android.View.Inputmethod.SurroundingText>("getSurroundingText", "()Landroid/view/inputmethod/SurroundingText;"); }
+            return IExecuteWithSignature<int>("getSelectionStart", "()I");
         }
 
         #endregion

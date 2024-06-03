@@ -52,19 +52,20 @@ namespace Android.View.Inputmethod
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InlineSuggestionsResponse.html#getInlineSuggestions()"/> 
-        /// </summary>
-        public Java.Util.List<Android.View.Inputmethod.InlineSuggestion> InlineSuggestions
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.View.Inputmethod.InlineSuggestion>>("getInlineSuggestions", "()Ljava/util/List;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InlineSuggestionsResponse.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InlineSuggestionsResponse.html#getInlineSuggestions()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.View.Inputmethod.InlineSuggestion> GetInlineSuggestions()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.View.Inputmethod.InlineSuggestion>>("getInlineSuggestions", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InlineSuggestionsResponse.html#writeToParcel(android.os.Parcel,int)"/>

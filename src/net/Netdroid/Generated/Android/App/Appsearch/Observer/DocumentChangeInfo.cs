@@ -58,39 +58,44 @@ namespace Android.App.Appsearch.Observer
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/observer/DocumentChangeInfo.html#getChangedDocumentIds()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/observer/DocumentChangeInfo.html#getDatabaseName()"/>
         /// </summary>
-        public Java.Util.Set<Java.Lang.String> ChangedDocumentIds
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDatabaseName()
         {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getChangedDocumentIds", "()Ljava/util/Set;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getDatabaseName", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/observer/DocumentChangeInfo.html#getDatabaseName()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/observer/DocumentChangeInfo.html#getNamespace()"/>
         /// </summary>
-        public Java.Lang.String DatabaseName
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetNamespace()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDatabaseName", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getNamespace", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/observer/DocumentChangeInfo.html#getNamespace()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/observer/DocumentChangeInfo.html#getPackageName()"/>
         /// </summary>
-        public Java.Lang.String Namespace
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPackageName()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getNamespace", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getPackageName", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/observer/DocumentChangeInfo.html#getPackageName()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/observer/DocumentChangeInfo.html#getSchemaName()"/>
         /// </summary>
-        public Java.Lang.String PackageName
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSchemaName()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPackageName", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getSchemaName", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/observer/DocumentChangeInfo.html#getSchemaName()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/observer/DocumentChangeInfo.html#getChangedDocumentIds()"/>
         /// </summary>
-        public Java.Lang.String SchemaName
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Lang.String> GetChangedDocumentIds()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSchemaName", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getChangedDocumentIds", "()Ljava/util/Set;");
         }
 
         #endregion

@@ -64,21 +64,16 @@ namespace Java.Sql
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Struct.html#getAttributes()"/> 
+        /// <see href="https://developer.android.com/reference/java/sql/Struct.html#getAttributes()"/>
         /// </summary>
-        public object[] Attributes
+        /// <returns><see cref="object"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public object[] GetAttributes()
         {
-            get { return IExecuteWithSignatureArray<object>("getAttributes", "()[Ljava/lang/Object;"); }
+            return IExecuteWithSignatureArray<object>("getAttributes", "()[Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Struct.html#getSQLTypeName()"/> 
-        /// </summary>
-        public Java.Lang.String SQLTypeName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSQLTypeName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Struct.html#getAttributes(java.util.Map)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Struct.html#getAttributes(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         /// <returns><see cref="object"/></returns>
@@ -86,6 +81,15 @@ namespace Java.Sql
         public object[] GetAttributes(Java.Util.Map<Java.Lang.String, Java.Lang.Class> arg0)
         {
             return IExecuteWithSignatureArray<object>("getAttributes", "(Ljava/util/Map;)[Ljava/lang/Object;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/sql/Struct.html#getSQLTypeName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public Java.Lang.String GetSQLTypeName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getSQLTypeName", "()Ljava/lang/String;");
         }
 
         #endregion

@@ -51,6 +51,32 @@ namespace Android.Graphics.Drawable
             return SExecuteWithSignature<Android.Graphics.Drawable.Drawable>(LocalBridgeClazz, "createFromPath", "(Ljava/lang/String;)Landroid/graphics/drawable/Drawable;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#createFromResourceStream(android.content.res.Resources,android.util.TypedValue,java.io.InputStream,java.lang.String,android.graphics.BitmapFactory.Options)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Res.Resources"/></param>
+        /// <param name="arg1"><see cref="Android.Util.TypedValue"/></param>
+        /// <param name="arg2"><see cref="Java.Io.InputStream"/></param>
+        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg4"><see cref="Android.Graphics.BitmapFactory.Options"/></param>
+        /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
+        [global::System.Obsolete()]
+        public static Android.Graphics.Drawable.Drawable CreateFromResourceStream(Android.Content.Res.Resources arg0, Android.Util.TypedValue arg1, Java.Io.InputStream arg2, Java.Lang.String arg3, Android.Graphics.BitmapFactory.Options arg4)
+        {
+            return SExecute<Android.Graphics.Drawable.Drawable>(LocalBridgeClazz, "createFromResourceStream", arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#createFromResourceStream(android.content.res.Resources,android.util.TypedValue,java.io.InputStream,java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Res.Resources"/></param>
+        /// <param name="arg1"><see cref="Android.Util.TypedValue"/></param>
+        /// <param name="arg2"><see cref="Java.Io.InputStream"/></param>
+        /// <param name="arg3"><see cref="Java.Lang.String"/></param>
+        /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
+        public static Android.Graphics.Drawable.Drawable CreateFromResourceStream(Android.Content.Res.Resources arg0, Android.Util.TypedValue arg1, Java.Io.InputStream arg2, Java.Lang.String arg3)
+        {
+            return SExecute<Android.Graphics.Drawable.Drawable>(LocalBridgeClazz, "createFromResourceStream", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#createFromStream(java.io.InputStream,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
@@ -127,131 +153,13 @@ namespace Android.Graphics.Drawable
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#getAlpha()"/> <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#setAlpha(int)"/>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#getOpacity()"/>
         /// </summary>
-        public int Alpha
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetOpacity()
         {
-            get { return IExecuteWithSignature<int>("getAlpha", "()I"); } set { IExecuteWithSignature("setAlpha", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#getBounds()"/> <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#setBounds(android.graphics.Rect)"/>
-        /// </summary>
-        public Android.Graphics.Rect Bounds
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Rect>("getBounds", "()Landroid/graphics/Rect;"); } set { IExecuteWithSignature("setBounds", "(Landroid/graphics/Rect;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#getChangingConfigurations()"/> <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#setChangingConfigurations(int)"/>
-        /// </summary>
-        public int ChangingConfigurations
-        {
-            get { return IExecuteWithSignature<int>("getChangingConfigurations", "()I"); } set { IExecuteWithSignature("setChangingConfigurations", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#getColorFilter()"/> <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#setColorFilter(android.graphics.ColorFilter)"/>
-        /// </summary>
-        public Android.Graphics.ColorFilter ColorFilter
-        {
-            get { return IExecuteWithSignature<Android.Graphics.ColorFilter>("getColorFilter", "()Landroid/graphics/ColorFilter;"); } set { IExecuteWithSignature("setColorFilter", "(Landroid/graphics/ColorFilter;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#getCurrent()"/> 
-        /// </summary>
-        public Android.Graphics.Drawable.Drawable Current
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getCurrent", "()Landroid/graphics/drawable/Drawable;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#getDirtyBounds()"/> 
-        /// </summary>
-        public Android.Graphics.Rect DirtyBounds
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Rect>("getDirtyBounds", "()Landroid/graphics/Rect;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#getCallback()"/> 
-        /// </summary>
-        public Android.Graphics.Drawable.Drawable.Callback GetCallback
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Drawable.Callback>("getCallback", "()Landroid/graphics/drawable/Drawable$Callback;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#getConstantState()"/> 
-        /// </summary>
-        public Android.Graphics.Drawable.Drawable.ConstantState GetConstantState
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Drawable.ConstantState>("getConstantState", "()Landroid/graphics/drawable/Drawable$ConstantState;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#getIntrinsicHeight()"/> 
-        /// </summary>
-        public int IntrinsicHeight
-        {
-            get { return IExecuteWithSignature<int>("getIntrinsicHeight", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#getIntrinsicWidth()"/> 
-        /// </summary>
-        public int IntrinsicWidth
-        {
-            get { return IExecuteWithSignature<int>("getIntrinsicWidth", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#getLayoutDirection()"/> 
-        /// </summary>
-        public int LayoutDirection
-        {
-            get { return IExecuteWithSignature<int>("getLayoutDirection", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#getLevel()"/> 
-        /// </summary>
-        public int Level
-        {
-            get { return IExecuteWithSignature<int>("getLevel", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#getMinimumHeight()"/> 
-        /// </summary>
-        public int MinimumHeight
-        {
-            get { return IExecuteWithSignature<int>("getMinimumHeight", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#getMinimumWidth()"/> 
-        /// </summary>
-        public int MinimumWidth
-        {
-            get { return IExecuteWithSignature<int>("getMinimumWidth", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#getOpacity()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public int Opacity
-        {
-            get { return IExecuteWithSignature<int>("getOpacity", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#getOpticalInsets()"/> 
-        /// </summary>
-        public Android.Graphics.Insets OpticalInsets
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Insets>("getOpticalInsets", "()Landroid/graphics/Insets;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#getState()"/> 
-        /// </summary>
-        public int[] State
-        {
-            get { return IExecuteWithSignatureArray<int>("getState", "()[I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#getTransparentRegion()"/> 
-        /// </summary>
-        public Android.Graphics.Region TransparentRegion
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Region>("getTransparentRegion", "()Landroid/graphics/Region;"); }
+            return IExecuteWithSignature<int>("getOpacity", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#draw(android.graphics.Canvas)"/>
@@ -262,12 +170,84 @@ namespace Android.Graphics.Drawable
             IExecuteWithSignature("draw", "(Landroid/graphics/Canvas;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#setAlpha(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetAlpha(int arg0)
+        {
+            IExecuteWithSignature("setAlpha", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#setColorFilter(android.graphics.ColorFilter)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.ColorFilter"/></param>
+        public void SetColorFilter(Android.Graphics.ColorFilter arg0)
+        {
+            IExecuteWithSignature("setColorFilter", "(Landroid/graphics/ColorFilter;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#getColorFilter()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Graphics.ColorFilter"/></returns>
+        public Android.Graphics.ColorFilter GetColorFilter()
+        {
+            return IExecuteWithSignature<Android.Graphics.ColorFilter>("getColorFilter", "()Landroid/graphics/ColorFilter;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#getCurrent()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
+        public Android.Graphics.Drawable.Drawable GetCurrent()
+        {
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getCurrent", "()Landroid/graphics/drawable/Drawable;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#mutate()"/>
         /// </summary>
         /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
         public Android.Graphics.Drawable.Drawable Mutate()
         {
             return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("mutate", "()Landroid/graphics/drawable/Drawable;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#getCallback()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Graphics.Drawable.Drawable.Callback"/></returns>
+        public Android.Graphics.Drawable.Drawable.Callback GetCallback()
+        {
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable.Callback>("getCallback", "()Landroid/graphics/drawable/Drawable$Callback;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#getConstantState()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Graphics.Drawable.Drawable.ConstantState"/></returns>
+        public Android.Graphics.Drawable.Drawable.ConstantState GetConstantState()
+        {
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable.ConstantState>("getConstantState", "()Landroid/graphics/drawable/Drawable$ConstantState;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#getOpticalInsets()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Graphics.Insets"/></returns>
+        public Android.Graphics.Insets GetOpticalInsets()
+        {
+            return IExecuteWithSignature<Android.Graphics.Insets>("getOpticalInsets", "()Landroid/graphics/Insets;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#getDirtyBounds()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Graphics.Rect"/></returns>
+        public Android.Graphics.Rect GetDirtyBounds()
+        {
+            return IExecuteWithSignature<Android.Graphics.Rect>("getDirtyBounds", "()Landroid/graphics/Rect;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#getTransparentRegion()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Graphics.Region"/></returns>
+        public Android.Graphics.Region GetTransparentRegion()
+        {
+            return IExecuteWithSignature<Android.Graphics.Region>("getTransparentRegion", "()Landroid/graphics/Region;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#canApplyTheme()"/>
@@ -363,6 +343,14 @@ namespace Android.Graphics.Drawable
             return IExecuteWithSignature<Android.Graphics.Rect>("copyBounds", "()Landroid/graphics/Rect;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#getBounds()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Graphics.Rect"/></returns>
+        public Android.Graphics.Rect GetBounds()
+        {
+            return IExecuteWithSignature<Android.Graphics.Rect>("getBounds", "()Landroid/graphics/Rect;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#isVisible()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -389,6 +377,14 @@ namespace Android.Graphics.Drawable
             return IExecuteWithSignature<bool>("setLevel", "(I)Z", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#getLevel()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetLevel()
+        {
+            return IExecuteWithSignature<int>("getLevel", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#copyBounds(android.graphics.Rect)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Graphics.Rect"/></param>
@@ -403,6 +399,70 @@ namespace Android.Graphics.Drawable
         public void SetCallback(Android.Graphics.Drawable.Drawable.Callback arg0)
         {
             IExecuteWithSignature("setCallback", "(Landroid/graphics/drawable/Drawable$Callback;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#getAlpha()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetAlpha()
+        {
+            return IExecuteWithSignature<int>("getAlpha", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#getChangingConfigurations()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetChangingConfigurations()
+        {
+            return IExecuteWithSignature<int>("getChangingConfigurations", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#getIntrinsicHeight()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetIntrinsicHeight()
+        {
+            return IExecuteWithSignature<int>("getIntrinsicHeight", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#getIntrinsicWidth()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetIntrinsicWidth()
+        {
+            return IExecuteWithSignature<int>("getIntrinsicWidth", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#getLayoutDirection()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetLayoutDirection()
+        {
+            return IExecuteWithSignature<int>("getLayoutDirection", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#getMinimumHeight()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMinimumHeight()
+        {
+            return IExecuteWithSignature<int>("getMinimumHeight", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#getMinimumWidth()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMinimumWidth()
+        {
+            return IExecuteWithSignature<int>("getMinimumWidth", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#getState()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int[] GetState()
+        {
+            return IExecuteWithSignatureArray<int>("getState", "()[I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#applyTheme(android.content.res.Resources.Theme)"/>
@@ -492,6 +552,14 @@ namespace Android.Graphics.Drawable
             IExecuteWithSignature("setAutoMirrored", "(Z)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#setBounds(android.graphics.Rect)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Rect"/></param>
+        public void SetBounds(Android.Graphics.Rect arg0)
+        {
+            IExecuteWithSignature("setBounds", "(Landroid/graphics/Rect;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#setBounds(int,int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -503,11 +571,19 @@ namespace Android.Graphics.Drawable
             IExecute("setBounds", arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#setChangingConfigurations(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetChangingConfigurations(int arg0)
+        {
+            IExecuteWithSignature("setChangingConfigurations", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#setColorFilter(int,android.graphics.PorterDuff.Mode)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Android.Graphics.PorterDuff.Mode"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetColorFilter(int arg0, Android.Graphics.PorterDuff.Mode arg1)
         {
             IExecute("setColorFilter", arg0, arg1);
@@ -516,7 +592,7 @@ namespace Android.Graphics.Drawable
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.html#setDither(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetDither(bool arg0)
         {
             IExecuteWithSignature("setDither", "(Z)V", arg0);
@@ -672,19 +748,20 @@ namespace Android.Graphics.Drawable
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.ConstantState.html#getChangingConfigurations()"/> 
-            /// </summary>
-            public int ChangingConfigurations
-            {
-                get { return IExecuteWithSignature<int>("getChangingConfigurations", "()I"); }
-            }
-            /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.ConstantState.html#newDrawable()"/>
             /// </summary>
             /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
             public Android.Graphics.Drawable.Drawable NewDrawable()
             {
                 return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("newDrawable", "()Landroid/graphics/drawable/Drawable;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.ConstantState.html#getChangingConfigurations()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetChangingConfigurations()
+            {
+                return IExecuteWithSignature<int>("getChangingConfigurations", "()I");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/drawable/Drawable.ConstantState.html#newDrawable(android.content.res.Resources,android.content.res.Resources.Theme)"/>

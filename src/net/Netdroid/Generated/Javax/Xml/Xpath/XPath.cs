@@ -64,28 +64,7 @@ namespace Javax.Xml.Xpath
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/xpath/XPath.html#getNamespaceContext()"/> <see href="https://developer.android.com/reference/java.xml/javax/xml/xpath/XPath.html#setNamespaceContext(javax.xml.namespace.NamespaceContext)"/>
-        /// </summary>
-        public Javax.Xml.Namespace.NamespaceContext NamespaceContext
-        {
-            get { return IExecuteWithSignature<Javax.Xml.Namespace.NamespaceContext>("getNamespaceContext", "()Ljavax/xml/namespace/NamespaceContext;"); } set { IExecuteWithSignature("setNamespaceContext", "(Ljavax/xml/namespace/NamespaceContext;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/xpath/XPath.html#getXPathFunctionResolver()"/> <see href="https://developer.android.com/reference/java.xml/javax/xml/xpath/XPath.html#setXPathFunctionResolver(javax.xml.xpath.XPathFunctionResolver)"/>
-        /// </summary>
-        public Javax.Xml.Xpath.XPathFunctionResolver XPathFunctionResolver
-        {
-            get { return IExecuteWithSignature<Javax.Xml.Xpath.XPathFunctionResolver>("getXPathFunctionResolver", "()Ljavax/xml/xpath/XPathFunctionResolver;"); } set { IExecuteWithSignature("setXPathFunctionResolver", "(Ljavax/xml/xpath/XPathFunctionResolver;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/xpath/XPath.html#getXPathVariableResolver()"/> <see href="https://developer.android.com/reference/java.xml/javax/xml/xpath/XPath.html#setXPathVariableResolver(javax.xml.xpath.XPathVariableResolver)"/>
-        /// </summary>
-        public Javax.Xml.Xpath.XPathVariableResolver XPathVariableResolver
-        {
-            get { return IExecuteWithSignature<Javax.Xml.Xpath.XPathVariableResolver>("getXPathVariableResolver", "()Ljavax/xml/xpath/XPathVariableResolver;"); } set { IExecuteWithSignature("setXPathVariableResolver", "(Ljavax/xml/xpath/XPathVariableResolver;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/xpath/XPath.html#evaluate(java.lang.String,java.lang.Object,javax.xml.namespace.QName)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/xpath/XPath.html#evaluate(java.lang.String,java.lang.Object,javax.xml.namespace.QName)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -97,7 +76,7 @@ namespace Javax.Xml.Xpath
             return IExecute("evaluate", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/xpath/XPath.html#evaluate(java.lang.String,org.xml.sax.InputSource,javax.xml.namespace.QName)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/xpath/XPath.html#evaluate(java.lang.String,org.xml.sax.InputSource,javax.xml.namespace.QName)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Org.Xml.Sax.InputSource"/></param>
@@ -109,7 +88,7 @@ namespace Javax.Xml.Xpath
             return IExecute("evaluate", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/xpath/XPath.html#evaluate(java.lang.String,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/xpath/XPath.html#evaluate(java.lang.String,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -120,7 +99,7 @@ namespace Javax.Xml.Xpath
             return IExecute<Java.Lang.String>("evaluate", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/xpath/XPath.html#evaluate(java.lang.String,org.xml.sax.InputSource)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/xpath/XPath.html#evaluate(java.lang.String,org.xml.sax.InputSource)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Org.Xml.Sax.InputSource"/></param>
@@ -131,7 +110,15 @@ namespace Javax.Xml.Xpath
             return IExecute<Java.Lang.String>("evaluate", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/xpath/XPath.html#compile(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/xpath/XPath.html#getNamespaceContext()"/>
+        /// </summary>
+        /// <returns><see cref="Javax.Xml.Namespace.NamespaceContext"/></returns>
+        public Javax.Xml.Namespace.NamespaceContext GetNamespaceContext()
+        {
+            return IExecuteWithSignature<Javax.Xml.Namespace.NamespaceContext>("getNamespaceContext", "()Ljavax/xml/namespace/NamespaceContext;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/xml/xpath/XPath.html#compile(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Javax.Xml.Xpath.XPathExpression"/></returns>
@@ -141,14 +128,54 @@ namespace Javax.Xml.Xpath
             return IExecuteWithSignature<Javax.Xml.Xpath.XPathExpression>("compile", "(Ljava/lang/String;)Ljavax/xml/xpath/XPathExpression;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/xpath/XPath.html#reset()"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/xpath/XPath.html#getXPathFunctionResolver()"/>
+        /// </summary>
+        /// <returns><see cref="Javax.Xml.Xpath.XPathFunctionResolver"/></returns>
+        public Javax.Xml.Xpath.XPathFunctionResolver GetXPathFunctionResolver()
+        {
+            return IExecuteWithSignature<Javax.Xml.Xpath.XPathFunctionResolver>("getXPathFunctionResolver", "()Ljavax/xml/xpath/XPathFunctionResolver;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/xml/xpath/XPath.html#getXPathVariableResolver()"/>
+        /// </summary>
+        /// <returns><see cref="Javax.Xml.Xpath.XPathVariableResolver"/></returns>
+        public Javax.Xml.Xpath.XPathVariableResolver GetXPathVariableResolver()
+        {
+            return IExecuteWithSignature<Javax.Xml.Xpath.XPathVariableResolver>("getXPathVariableResolver", "()Ljavax/xml/xpath/XPathVariableResolver;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/xml/xpath/XPath.html#reset()"/>
         /// </summary>
         public void Reset()
         {
             IExecuteWithSignature("reset", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/xpath/XPath.html#evaluateExpression(java.lang.String,java.lang.Object,java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/xpath/XPath.html#setNamespaceContext(javax.xml.namespace.NamespaceContext)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Xml.Namespace.NamespaceContext"/></param>
+        public void SetNamespaceContext(Javax.Xml.Namespace.NamespaceContext arg0)
+        {
+            IExecuteWithSignature("setNamespaceContext", "(Ljavax/xml/namespace/NamespaceContext;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/xml/xpath/XPath.html#setXPathFunctionResolver(javax.xml.xpath.XPathFunctionResolver)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Xml.Xpath.XPathFunctionResolver"/></param>
+        public void SetXPathFunctionResolver(Javax.Xml.Xpath.XPathFunctionResolver arg0)
+        {
+            IExecuteWithSignature("setXPathFunctionResolver", "(Ljavax/xml/xpath/XPathFunctionResolver;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/xml/xpath/XPath.html#setXPathVariableResolver(javax.xml.xpath.XPathVariableResolver)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Xml.Xpath.XPathVariableResolver"/></param>
+        public void SetXPathVariableResolver(Javax.Xml.Xpath.XPathVariableResolver arg0)
+        {
+            IExecuteWithSignature("setXPathVariableResolver", "(Ljavax/xml/xpath/XPathVariableResolver;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/xml/xpath/XPath.html#evaluateExpression(java.lang.String,java.lang.Object,java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -161,7 +188,7 @@ namespace Javax.Xml.Xpath
             return IExecute<T>("evaluateExpression", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/xpath/XPath.html#evaluateExpression(java.lang.String,org.xml.sax.InputSource,java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/xpath/XPath.html#evaluateExpression(java.lang.String,org.xml.sax.InputSource,java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Org.Xml.Sax.InputSource"/></param>

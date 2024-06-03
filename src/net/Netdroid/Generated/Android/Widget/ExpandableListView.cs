@@ -160,25 +160,20 @@ namespace Android.Widget
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ExpandableListView.html#getExpandableListAdapter()"/> 
+        /// <see href="https://developer.android.com/reference/android/widget/ExpandableListView.html#getExpandableListAdapter()"/>
         /// </summary>
-        public Android.Widget.ExpandableListAdapter ExpandableListAdapter
+        /// <returns><see cref="Android.Widget.ExpandableListAdapter"/></returns>
+        public Android.Widget.ExpandableListAdapter GetExpandableListAdapter()
         {
-            get { return IExecuteWithSignature<Android.Widget.ExpandableListAdapter>("getExpandableListAdapter", "()Landroid/widget/ExpandableListAdapter;"); }
+            return IExecuteWithSignature<Android.Widget.ExpandableListAdapter>("getExpandableListAdapter", "()Landroid/widget/ExpandableListAdapter;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ExpandableListView.html#getSelectedId()"/> 
+        /// <see href="https://developer.android.com/reference/android/widget/ExpandableListView.html#getExpandableListAdapter()"/>
         /// </summary>
-        public long SelectedId
+        /// <returns><see cref="Android.Widget.ExpandableListAdapter"/></returns>
+        public Android.Widget.ExpandableListAdapter GetExpandableListAdapterDirect()
         {
-            get { return IExecuteWithSignature<long>("getSelectedId", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ExpandableListView.html#getSelectedPosition()"/> 
-        /// </summary>
-        public long SelectedPosition
-        {
-            get { return IExecuteWithSignature<long>("getSelectedPosition", "()J"); }
+            return IExecuteWithSignature<Android.Widget.ExpandableListAdapterDirect, Android.Widget.ExpandableListAdapter>("getExpandableListAdapter", "()Landroid/widget/ExpandableListAdapter;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ExpandableListView.html#collapseGroup(int)"/>
@@ -245,6 +240,22 @@ namespace Android.Widget
         public long GetExpandableListPosition(int arg0)
         {
             return IExecuteWithSignature<long>("getExpandableListPosition", "(I)J", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ExpandableListView.html#getSelectedId()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetSelectedId()
+        {
+            return IExecuteWithSignature<long>("getSelectedId", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ExpandableListView.html#getSelectedPosition()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetSelectedPosition()
+        {
+            return IExecuteWithSignature<long>("getSelectedPosition", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ExpandableListView.html#setAdapter(android.widget.ExpandableListAdapter)"/>
@@ -436,7 +447,7 @@ namespace Android.Widget
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onChildClick", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Widget.ExpandableListView>>>(OnChildClickEventHandler));
+                AddEventHandler("onChildClick", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Widget.ExpandableListView>>>(OnChildClickEventHandler));
 
             }
 
@@ -444,7 +455,7 @@ namespace Android.Widget
             /// Handler for <see href="https://developer.android.com/reference/android/widget/ExpandableListView.OnChildClickListener.html#onChildClick(android.widget.ExpandableListView,android.view.View,int,int,long)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnChildClick"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Func<Android.Widget.ExpandableListView, Android.View.View, int, int, long, bool> OnOnChildClick { get; set; } = null;
+            public global::System.Func<Android.Widget.ExpandableListView, Android.View.View, int, int, long, bool> OnOnChildClick { get; set; } = null;
 
             void OnChildClickEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Widget.ExpandableListView>> data)
             {
@@ -546,7 +557,7 @@ namespace Android.Widget
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onGroupClick", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Widget.ExpandableListView>>>(OnGroupClickEventHandler));
+                AddEventHandler("onGroupClick", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Widget.ExpandableListView>>>(OnGroupClickEventHandler));
 
             }
 
@@ -554,7 +565,7 @@ namespace Android.Widget
             /// Handler for <see href="https://developer.android.com/reference/android/widget/ExpandableListView.OnGroupClickListener.html#onGroupClick(android.widget.ExpandableListView,android.view.View,int,long)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnGroupClick"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Func<Android.Widget.ExpandableListView, Android.View.View, int, long, bool> OnOnGroupClick { get; set; } = null;
+            public global::System.Func<Android.Widget.ExpandableListView, Android.View.View, int, long, bool> OnOnGroupClick { get; set; } = null;
 
             void OnGroupClickEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Widget.ExpandableListView>> data)
             {
@@ -654,7 +665,7 @@ namespace Android.Widget
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onGroupCollapse", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnGroupCollapseEventHandler));
+                AddEventHandler("onGroupCollapse", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnGroupCollapseEventHandler));
 
             }
 
@@ -662,7 +673,7 @@ namespace Android.Widget
             /// Handler for <see href="https://developer.android.com/reference/android/widget/ExpandableListView.OnGroupCollapseListener.html#onGroupCollapse(int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnGroupCollapse"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<int> OnOnGroupCollapse { get; set; } = null;
+            public global::System.Action<int> OnOnGroupCollapse { get; set; } = null;
 
             void OnGroupCollapseEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
             {
@@ -753,7 +764,7 @@ namespace Android.Widget
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onGroupExpand", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnGroupExpandEventHandler));
+                AddEventHandler("onGroupExpand", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnGroupExpandEventHandler));
 
             }
 
@@ -761,7 +772,7 @@ namespace Android.Widget
             /// Handler for <see href="https://developer.android.com/reference/android/widget/ExpandableListView.OnGroupExpandListener.html#onGroupExpand(int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnGroupExpand"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<int> OnOnGroupExpand { get; set; } = null;
+            public global::System.Action<int> OnOnGroupExpand { get; set; } = null;
 
             void OnGroupExpandEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
             {

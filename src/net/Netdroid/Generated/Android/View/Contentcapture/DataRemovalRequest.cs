@@ -58,20 +58,6 @@ namespace Android.View.Contentcapture
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/contentcapture/DataRemovalRequest.html#getLocusIdRequests()"/> 
-        /// </summary>
-        public Java.Util.List<Android.View.Contentcapture.DataRemovalRequest.LocusIdRequest> LocusIdRequests
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.View.Contentcapture.DataRemovalRequest.LocusIdRequest>>("getLocusIdRequests", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/contentcapture/DataRemovalRequest.html#getPackageName()"/> 
-        /// </summary>
-        public Java.Lang.String PackageName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPackageName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/contentcapture/DataRemovalRequest.html#isForEverything()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -86,6 +72,22 @@ namespace Android.View.Contentcapture
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/contentcapture/DataRemovalRequest.html#getPackageName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPackageName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPackageName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/contentcapture/DataRemovalRequest.html#getLocusIdRequests()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.View.Contentcapture.DataRemovalRequest.LocusIdRequest> GetLocusIdRequests()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.View.Contentcapture.DataRemovalRequest.LocusIdRequest>>("getLocusIdRequests", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/contentcapture/DataRemovalRequest.html#writeToParcel(android.os.Parcel,int)"/>
@@ -178,18 +180,20 @@ namespace Android.View.Contentcapture
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/contentcapture/DataRemovalRequest.LocusIdRequest.html#getFlags()"/> 
+            /// <see href="https://developer.android.com/reference/android/view/contentcapture/DataRemovalRequest.LocusIdRequest.html#getLocusId()"/>
             /// </summary>
-            public int Flags
+            /// <returns><see cref="Android.Content.LocusId"/></returns>
+            public Android.Content.LocusId GetLocusId()
             {
-                get { return IExecuteWithSignature<int>("getFlags", "()I"); }
+                return IExecuteWithSignature<Android.Content.LocusId>("getLocusId", "()Landroid/content/LocusId;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/contentcapture/DataRemovalRequest.LocusIdRequest.html#getLocusId()"/> 
+            /// <see href="https://developer.android.com/reference/android/view/contentcapture/DataRemovalRequest.LocusIdRequest.html#getFlags()"/>
             /// </summary>
-            public Android.Content.LocusId LocusId
+            /// <returns><see cref="int"/></returns>
+            public int GetFlags()
             {
-                get { return IExecuteWithSignature<Android.Content.LocusId>("getLocusId", "()Landroid/content/LocusId;"); }
+                return IExecuteWithSignature<int>("getFlags", "()I");
             }
 
             #endregion

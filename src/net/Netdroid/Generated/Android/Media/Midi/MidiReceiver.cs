@@ -54,13 +54,6 @@ namespace Android.Media.Midi
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/midi/MidiReceiver.html#getMaxMessageSize()"/> 
-        /// </summary>
-        public int MaxMessageSize
-        {
-            get { return IExecuteWithSignature<int>("getMaxMessageSize", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/midi/MidiReceiver.html#onSend(byte[],int,int,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
@@ -71,6 +64,14 @@ namespace Android.Media.Midi
         public void OnSend(byte[] arg0, int arg1, int arg2, long arg3)
         {
             IExecute("onSend", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/midi/MidiReceiver.html#getMaxMessageSize()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMaxMessageSize()
+        {
+            return IExecuteWithSignature<int>("getMaxMessageSize", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/midi/MidiReceiver.html#flush()"/>

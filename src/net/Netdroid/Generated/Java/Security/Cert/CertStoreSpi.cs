@@ -30,7 +30,7 @@ namespace Java.Security.Cert
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/CertStoreSpi.html#%3Cinit%3E(java.security.cert.CertStoreParameters)"/>
+        /// <see href="https://developer.android.com/reference/java/security/cert/CertStoreSpi.html#%3Cinit%3E(java.security.cert.CertStoreParameters)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Cert.CertStoreParameters"/></param>
         /// <exception cref="Java.Security.InvalidAlgorithmParameterException"/>
@@ -55,24 +55,24 @@ namespace Java.Security.Cert
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/CertStoreSpi.html#engineGetCertificates(java.security.cert.CertSelector)"/>
+        /// <see href="https://developer.android.com/reference/java/security/cert/CertStoreSpi.html#engineGetCertificates(java.security.cert.CertSelector)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Cert.CertSelector"/></param>
         /// <typeparam name="ReturnExtendsJava_Security_Cert_Certificate"><see cref="Java.Security.Cert.Certificate"/></typeparam>
         /// <returns><see cref="Java.Util.Collection"/></returns>
         /// <exception cref="Java.Security.Cert.CertStoreException"/>
-        public Java.Util.Collection<ReturnExtendsJava_Security_Cert_Certificate> EngineGetCertificates<ReturnExtendsJava_Security_Cert_Certificate>(Java.Security.Cert.CertSelector arg0) where ReturnExtendsJava_Security_Cert_Certificate: Java.Security.Cert.Certificate
+        public Java.Util.Collection<ReturnExtendsJava_Security_Cert_Certificate> EngineGetCertificates<ReturnExtendsJava_Security_Cert_Certificate>(Java.Security.Cert.CertSelector arg0) where ReturnExtendsJava_Security_Cert_Certificate : Java.Security.Cert.Certificate
         {
             return IExecuteWithSignature<Java.Util.Collection<ReturnExtendsJava_Security_Cert_Certificate>>("engineGetCertificates", "(Ljava/security/cert/CertSelector;)Ljava/util/Collection;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/CertStoreSpi.html#engineGetCRLs(java.security.cert.CRLSelector)"/>
+        /// <see href="https://developer.android.com/reference/java/security/cert/CertStoreSpi.html#engineGetCRLs(java.security.cert.CRLSelector)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Cert.CRLSelector"/></param>
         /// <typeparam name="ReturnExtendsJava_Security_Cert_CRL"><see cref="Java.Security.Cert.CRL"/></typeparam>
         /// <returns><see cref="Java.Util.Collection"/></returns>
         /// <exception cref="Java.Security.Cert.CertStoreException"/>
-        public Java.Util.Collection<ReturnExtendsJava_Security_Cert_CRL> EngineGetCRLs<ReturnExtendsJava_Security_Cert_CRL>(Java.Security.Cert.CRLSelector arg0) where ReturnExtendsJava_Security_Cert_CRL: Java.Security.Cert.CRL
+        public Java.Util.Collection<ReturnExtendsJava_Security_Cert_CRL> EngineGetCRLs<ReturnExtendsJava_Security_Cert_CRL>(Java.Security.Cert.CRLSelector arg0) where ReturnExtendsJava_Security_Cert_CRL : Java.Security.Cert.CRL
         {
             return IExecuteWithSignature<Java.Util.Collection<ReturnExtendsJava_Security_Cert_CRL>>("engineGetCRLs", "(Ljava/security/cert/CRLSelector;)Ljava/util/Collection;", arg0);
         }

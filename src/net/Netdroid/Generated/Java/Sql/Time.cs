@@ -30,18 +30,18 @@ namespace Java.Sql
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Time.html#%3Cinit%3E(int,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Time.html#%3Cinit%3E(int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Time(int arg0, int arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Time.html#%3Cinit%3E(long)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Time.html#%3Cinit%3E(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         public Time(long arg0)
@@ -61,7 +61,7 @@ namespace Java.Sql
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Time.html#valueOf(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Time.html#valueOf(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Sql.Time"/></returns>
@@ -70,7 +70,7 @@ namespace Java.Sql
             return SExecuteWithSignature<Java.Sql.Time>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/sql/Time;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Time.html#valueOf(java.time.LocalTime)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Time.html#valueOf(java.time.LocalTime)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.LocalTime"/></param>
         /// <returns><see cref="Java.Sql.Time"/></returns>
@@ -83,7 +83,7 @@ namespace Java.Sql
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Time.html#toLocalTime()"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Time.html#toLocalTime()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.LocalTime"/></returns>
         public Java.Time.LocalTime ToLocalTime()

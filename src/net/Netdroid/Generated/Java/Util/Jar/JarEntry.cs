@@ -30,7 +30,7 @@ namespace Java.Util.Jar
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/jar/JarEntry.html#%3Cinit%3E(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/jar/JarEntry.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public JarEntry(Java.Lang.String arg0)
@@ -38,7 +38,7 @@ namespace Java.Util.Jar
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/jar/JarEntry.html#%3Cinit%3E(java.util.jar.JarEntry)"/>
+        /// <see href="https://developer.android.com/reference/java/util/jar/JarEntry.html#%3Cinit%3E(java.util.jar.JarEntry)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Jar.JarEntry"/></param>
         public JarEntry(Java.Util.Jar.JarEntry arg0)
@@ -46,7 +46,7 @@ namespace Java.Util.Jar
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/jar/JarEntry.html#%3Cinit%3E(java.util.zip.ZipEntry)"/>
+        /// <see href="https://developer.android.com/reference/java/util/jar/JarEntry.html#%3Cinit%3E(java.util.zip.ZipEntry)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Zip.ZipEntry"/></param>
         public JarEntry(Java.Util.Zip.ZipEntry arg0)
@@ -70,32 +70,37 @@ namespace Java.Util.Jar
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/jar/JarEntry.html#getAttributes()"/> 
+        /// <see href="https://developer.android.com/reference/java/util/jar/JarEntry.html#getRealName()"/>
         /// </summary>
-        public Java.Util.Jar.Attributes Attributes
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetRealName()
         {
-            get { return IExecuteWithSignature<Java.Util.Jar.Attributes>("getAttributes", "()Ljava/util/jar/Attributes;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getRealName", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/jar/JarEntry.html#getCertificates()"/> 
+        /// <see href="https://developer.android.com/reference/java/util/jar/JarEntry.html#getCertificates()"/>
         /// </summary>
-        public Java.Security.Cert.Certificate[] Certificates
+        /// <returns><see cref="Java.Security.Cert.Certificate"/></returns>
+        public Java.Security.Cert.Certificate[] GetCertificates()
         {
-            get { return IExecuteWithSignatureArray<Java.Security.Cert.Certificate>("getCertificates", "()[Ljava/security/cert/Certificate;"); }
+            return IExecuteWithSignatureArray<Java.Security.Cert.Certificate>("getCertificates", "()[Ljava/security/cert/Certificate;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/jar/JarEntry.html#getCodeSigners()"/> 
+        /// <see href="https://developer.android.com/reference/java/util/jar/JarEntry.html#getCodeSigners()"/>
         /// </summary>
-        public Java.Security.CodeSigner[] CodeSigners
+        /// <returns><see cref="Java.Security.CodeSigner"/></returns>
+        public Java.Security.CodeSigner[] GetCodeSigners()
         {
-            get { return IExecuteWithSignatureArray<Java.Security.CodeSigner>("getCodeSigners", "()[Ljava/security/CodeSigner;"); }
+            return IExecuteWithSignatureArray<Java.Security.CodeSigner>("getCodeSigners", "()[Ljava/security/CodeSigner;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/jar/JarEntry.html#getRealName()"/> 
+        /// <see href="https://developer.android.com/reference/java/util/jar/JarEntry.html#getAttributes()"/>
         /// </summary>
-        public Java.Lang.String RealName
+        /// <returns><see cref="Java.Util.Jar.Attributes"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Util.Jar.Attributes GetAttributes()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getRealName", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Util.Jar.Attributes>("getAttributes", "()Ljava/util/jar/Attributes;");
         }
 
         #endregion

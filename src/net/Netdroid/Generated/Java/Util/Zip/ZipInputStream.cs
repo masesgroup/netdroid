@@ -30,7 +30,7 @@ namespace Java.Util.Zip
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/ZipInputStream.html#%3Cinit%3E(java.io.InputStream,java.nio.charset.Charset)"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/ZipInputStream.html#%3Cinit%3E(java.io.InputStream,java.nio.charset.Charset)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         /// <param name="arg1"><see cref="Java.Nio.Charset.Charset"/></param>
@@ -39,7 +39,7 @@ namespace Java.Util.Zip
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/ZipInputStream.html#%3Cinit%3E(java.io.InputStream)"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/ZipInputStream.html#%3Cinit%3E(java.io.InputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         public ZipInputStream(Java.Io.InputStream arg0)
@@ -63,14 +63,16 @@ namespace Java.Util.Zip
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/ZipInputStream.html#getNextEntry()"/> 
+        /// <see href="https://developer.android.com/reference/java/util/zip/ZipInputStream.html#getNextEntry()"/>
         /// </summary>
-        public Java.Util.Zip.ZipEntry NextEntry
+        /// <returns><see cref="Java.Util.Zip.ZipEntry"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Util.Zip.ZipEntry GetNextEntry()
         {
-            get { return IExecuteWithSignature<Java.Util.Zip.ZipEntry>("getNextEntry", "()Ljava/util/zip/ZipEntry;"); }
+            return IExecuteWithSignature<Java.Util.Zip.ZipEntry>("getNextEntry", "()Ljava/util/zip/ZipEntry;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/ZipInputStream.html#closeEntry()"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/ZipInputStream.html#closeEntry()"/>
         /// </summary>
         /// <exception cref="Java.Io.IOException"/>
         public void CloseEntry()

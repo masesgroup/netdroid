@@ -47,7 +47,7 @@ namespace Android.Renderscript
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <param name="arg1"><see cref="Android.Renderscript.Element"/></param>
         /// <returns><see cref="Android.Renderscript.ScriptIntrinsicColorMatrix"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.ScriptIntrinsicColorMatrix Create(Android.Renderscript.RenderScript arg0, Android.Renderscript.Element arg1)
         {
             return SExecute<Android.Renderscript.ScriptIntrinsicColorMatrix>(LocalBridgeClazz, "create", arg0, arg1);
@@ -57,7 +57,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.ScriptIntrinsicColorMatrix"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.ScriptIntrinsicColorMatrix Create(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.ScriptIntrinsicColorMatrix>(LocalBridgeClazz, "create", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/ScriptIntrinsicColorMatrix;", arg0);
@@ -67,12 +67,13 @@ namespace Android.Renderscript
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicColorMatrix.html#getKernelID()"/> 
+        /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicColorMatrix.html#getKernelID()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Renderscript.Script.KernelID KernelID
+        /// <returns><see cref="Android.Renderscript.Script.KernelID"/></returns>
+        [global::System.Obsolete()]
+        public Android.Renderscript.Script.KernelID GetKernelID()
         {
-            get { return IExecuteWithSignature<Android.Renderscript.Script.KernelID>("getKernelID", "()Landroid/renderscript/Script$KernelID;"); }
+            return IExecuteWithSignature<Android.Renderscript.Script.KernelID>("getKernelID", "()Landroid/renderscript/Script$KernelID;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicColorMatrix.html#forEach(android.renderscript.Allocation,android.renderscript.Allocation,android.renderscript.Script.LaunchOptions)"/>
@@ -80,7 +81,7 @@ namespace Android.Renderscript
         /// <param name="arg0"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg1"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg2"><see cref="Android.Renderscript.Script.LaunchOptions"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ForEach(Android.Renderscript.Allocation arg0, Android.Renderscript.Allocation arg1, Android.Renderscript.Script.LaunchOptions arg2)
         {
             IExecute("forEach", arg0, arg1, arg2);
@@ -90,7 +91,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg1"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ForEach(Android.Renderscript.Allocation arg0, Android.Renderscript.Allocation arg1)
         {
             IExecute("forEach", arg0, arg1);
@@ -99,7 +100,7 @@ namespace Android.Renderscript
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicColorMatrix.html#setAdd(android.renderscript.Float4)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.Float4"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetAdd(Android.Renderscript.Float4 arg0)
         {
             IExecuteWithSignature("setAdd", "(Landroid/renderscript/Float4;)V", arg0);
@@ -111,7 +112,7 @@ namespace Android.Renderscript
         /// <param name="arg1"><see cref="float"/></param>
         /// <param name="arg2"><see cref="float"/></param>
         /// <param name="arg3"><see cref="float"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetAdd(float arg0, float arg1, float arg2, float arg3)
         {
             IExecute("setAdd", arg0, arg1, arg2, arg3);
@@ -120,7 +121,7 @@ namespace Android.Renderscript
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicColorMatrix.html#setColorMatrix(android.renderscript.Matrix3f)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.Matrix3f"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetColorMatrix(Android.Renderscript.Matrix3f arg0)
         {
             IExecuteWithSignature("setColorMatrix", "(Landroid/renderscript/Matrix3f;)V", arg0);
@@ -129,7 +130,7 @@ namespace Android.Renderscript
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicColorMatrix.html#setColorMatrix(android.renderscript.Matrix4f)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.Matrix4f"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetColorMatrix(Android.Renderscript.Matrix4f arg0)
         {
             IExecuteWithSignature("setColorMatrix", "(Landroid/renderscript/Matrix4f;)V", arg0);
@@ -137,7 +138,7 @@ namespace Android.Renderscript
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicColorMatrix.html#setGreyscale()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetGreyscale()
         {
             IExecuteWithSignature("setGreyscale", "()V");
@@ -145,7 +146,7 @@ namespace Android.Renderscript
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicColorMatrix.html#setRGBtoYUV()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetRGBtoYUV()
         {
             IExecuteWithSignature("setRGBtoYUV", "()V");
@@ -153,7 +154,7 @@ namespace Android.Renderscript
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicColorMatrix.html#setYUVtoRGB()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetYUVtoRGB()
         {
             IExecuteWithSignature("setYUVtoRGB", "()V");

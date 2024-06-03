@@ -64,46 +64,12 @@ namespace Android.Bluetooth
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothSocket.html#getConnectionType()"/> 
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothSocket.html#getRemoteDevice()"/>
         /// </summary>
-        public int ConnectionType
+        /// <returns><see cref="Android.Bluetooth.BluetoothDevice"/></returns>
+        public Android.Bluetooth.BluetoothDevice GetRemoteDevice()
         {
-            get { return IExecuteWithSignature<int>("getConnectionType", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothSocket.html#getInputStream()"/> 
-        /// </summary>
-        public Java.Io.InputStream InputStream
-        {
-            get { return IExecuteWithSignature<Java.Io.InputStream>("getInputStream", "()Ljava/io/InputStream;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothSocket.html#getMaxReceivePacketSize()"/> 
-        /// </summary>
-        public int MaxReceivePacketSize
-        {
-            get { return IExecuteWithSignature<int>("getMaxReceivePacketSize", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothSocket.html#getMaxTransmitPacketSize()"/> 
-        /// </summary>
-        public int MaxTransmitPacketSize
-        {
-            get { return IExecuteWithSignature<int>("getMaxTransmitPacketSize", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothSocket.html#getOutputStream()"/> 
-        /// </summary>
-        public Java.Io.OutputStream OutputStream
-        {
-            get { return IExecuteWithSignature<Java.Io.OutputStream>("getOutputStream", "()Ljava/io/OutputStream;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothSocket.html#getRemoteDevice()"/> 
-        /// </summary>
-        public Android.Bluetooth.BluetoothDevice RemoteDevice
-        {
-            get { return IExecuteWithSignature<Android.Bluetooth.BluetoothDevice>("getRemoteDevice", "()Landroid/bluetooth/BluetoothDevice;"); }
+            return IExecuteWithSignature<Android.Bluetooth.BluetoothDevice>("getRemoteDevice", "()Landroid/bluetooth/BluetoothDevice;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothSocket.html#isConnected()"/>
@@ -112,6 +78,48 @@ namespace Android.Bluetooth
         public bool IsConnected()
         {
             return IExecuteWithSignature<bool>("isConnected", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothSocket.html#getConnectionType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetConnectionType()
+        {
+            return IExecuteWithSignature<int>("getConnectionType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothSocket.html#getMaxReceivePacketSize()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMaxReceivePacketSize()
+        {
+            return IExecuteWithSignature<int>("getMaxReceivePacketSize", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothSocket.html#getMaxTransmitPacketSize()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMaxTransmitPacketSize()
+        {
+            return IExecuteWithSignature<int>("getMaxTransmitPacketSize", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothSocket.html#getInputStream()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Io.InputStream"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Io.InputStream GetInputStream()
+        {
+            return IExecuteWithSignature<Java.Io.InputStream>("getInputStream", "()Ljava/io/InputStream;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothSocket.html#getOutputStream()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Io.OutputStream"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Io.OutputStream GetOutputStream()
+        {
+            return IExecuteWithSignature<Java.Io.OutputStream>("getOutputStream", "()Ljava/io/OutputStream;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothSocket.html#close()"/>

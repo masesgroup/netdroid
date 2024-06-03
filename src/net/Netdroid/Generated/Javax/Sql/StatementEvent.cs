@@ -30,7 +30,7 @@ namespace Javax.Sql
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/StatementEvent.html#%3Cinit%3E(javax.sql.PooledConnection,java.sql.PreparedStatement,java.sql.SQLException)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/StatementEvent.html#%3Cinit%3E(javax.sql.PooledConnection,java.sql.PreparedStatement,java.sql.SQLException)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Sql.PooledConnection"/></param>
         /// <param name="arg1"><see cref="Java.Sql.PreparedStatement"/></param>
@@ -40,7 +40,7 @@ namespace Javax.Sql
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/StatementEvent.html#%3Cinit%3E(javax.sql.PooledConnection,java.sql.PreparedStatement)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/StatementEvent.html#%3Cinit%3E(javax.sql.PooledConnection,java.sql.PreparedStatement)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Sql.PooledConnection"/></param>
         /// <param name="arg1"><see cref="Java.Sql.PreparedStatement"/></param>
@@ -65,18 +65,20 @@ namespace Javax.Sql
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/StatementEvent.html#getSQLException()"/> 
+        /// <see href="https://developer.android.com/reference/javax/sql/StatementEvent.html#getStatement()"/>
         /// </summary>
-        public Java.Sql.SQLException SQLException
+        /// <returns><see cref="Java.Sql.PreparedStatement"/></returns>
+        public Java.Sql.PreparedStatement GetStatement()
         {
-            get { var obj = IExecuteWithSignature<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>("getSQLException", "()Ljava/sql/SQLException;"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<Java.Sql.SQLException>(obj); }
+            return IExecuteWithSignature<Java.Sql.PreparedStatement>("getStatement", "()Ljava/sql/PreparedStatement;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/StatementEvent.html#getStatement()"/> 
+        /// <see href="https://developer.android.com/reference/javax/sql/StatementEvent.html#getSQLException()"/>
         /// </summary>
-        public Java.Sql.PreparedStatement Statement
+        /// <returns><see cref="Java.Sql.SQLException"/></returns>
+        public Java.Sql.SQLException GetSQLException()
         {
-            get { return IExecuteWithSignature<Java.Sql.PreparedStatement>("getStatement", "()Ljava/sql/PreparedStatement;"); }
+            var obj = IExecuteWithSignature<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>("getSQLException", "()Ljava/sql/SQLException;"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<Java.Sql.SQLException>(obj);
         }
 
         #endregion

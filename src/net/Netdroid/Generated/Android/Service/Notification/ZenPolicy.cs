@@ -124,145 +124,164 @@ namespace Android.Service.Notification
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/notification/ZenPolicy.html#getPriorityCallSenders()"/> 
-        /// </summary>
-        public int PriorityCallSenders
-        {
-            get { return IExecuteWithSignature<int>("getPriorityCallSenders", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/notification/ZenPolicy.html#getPriorityCategoryAlarms()"/> 
-        /// </summary>
-        public int PriorityCategoryAlarms
-        {
-            get { return IExecuteWithSignature<int>("getPriorityCategoryAlarms", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/notification/ZenPolicy.html#getPriorityCategoryCalls()"/> 
-        /// </summary>
-        public int PriorityCategoryCalls
-        {
-            get { return IExecuteWithSignature<int>("getPriorityCategoryCalls", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/notification/ZenPolicy.html#getPriorityCategoryConversations()"/> 
-        /// </summary>
-        public int PriorityCategoryConversations
-        {
-            get { return IExecuteWithSignature<int>("getPriorityCategoryConversations", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/notification/ZenPolicy.html#getPriorityCategoryEvents()"/> 
-        /// </summary>
-        public int PriorityCategoryEvents
-        {
-            get { return IExecuteWithSignature<int>("getPriorityCategoryEvents", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/notification/ZenPolicy.html#getPriorityCategoryMedia()"/> 
-        /// </summary>
-        public int PriorityCategoryMedia
-        {
-            get { return IExecuteWithSignature<int>("getPriorityCategoryMedia", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/notification/ZenPolicy.html#getPriorityCategoryMessages()"/> 
-        /// </summary>
-        public int PriorityCategoryMessages
-        {
-            get { return IExecuteWithSignature<int>("getPriorityCategoryMessages", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/notification/ZenPolicy.html#getPriorityCategoryReminders()"/> 
-        /// </summary>
-        public int PriorityCategoryReminders
-        {
-            get { return IExecuteWithSignature<int>("getPriorityCategoryReminders", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/notification/ZenPolicy.html#getPriorityCategoryRepeatCallers()"/> 
-        /// </summary>
-        public int PriorityCategoryRepeatCallers
-        {
-            get { return IExecuteWithSignature<int>("getPriorityCategoryRepeatCallers", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/notification/ZenPolicy.html#getPriorityCategorySystem()"/> 
-        /// </summary>
-        public int PriorityCategorySystem
-        {
-            get { return IExecuteWithSignature<int>("getPriorityCategorySystem", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/notification/ZenPolicy.html#getPriorityConversationSenders()"/> 
-        /// </summary>
-        public int PriorityConversationSenders
-        {
-            get { return IExecuteWithSignature<int>("getPriorityConversationSenders", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/notification/ZenPolicy.html#getPriorityMessageSenders()"/> 
-        /// </summary>
-        public int PriorityMessageSenders
-        {
-            get { return IExecuteWithSignature<int>("getPriorityMessageSenders", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/notification/ZenPolicy.html#getVisualEffectAmbient()"/> 
-        /// </summary>
-        public int VisualEffectAmbient
-        {
-            get { return IExecuteWithSignature<int>("getVisualEffectAmbient", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/notification/ZenPolicy.html#getVisualEffectBadge()"/> 
-        /// </summary>
-        public int VisualEffectBadge
-        {
-            get { return IExecuteWithSignature<int>("getVisualEffectBadge", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/notification/ZenPolicy.html#getVisualEffectFullScreenIntent()"/> 
-        /// </summary>
-        public int VisualEffectFullScreenIntent
-        {
-            get { return IExecuteWithSignature<int>("getVisualEffectFullScreenIntent", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/notification/ZenPolicy.html#getVisualEffectLights()"/> 
-        /// </summary>
-        public int VisualEffectLights
-        {
-            get { return IExecuteWithSignature<int>("getVisualEffectLights", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/notification/ZenPolicy.html#getVisualEffectNotificationList()"/> 
-        /// </summary>
-        public int VisualEffectNotificationList
-        {
-            get { return IExecuteWithSignature<int>("getVisualEffectNotificationList", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/notification/ZenPolicy.html#getVisualEffectPeek()"/> 
-        /// </summary>
-        public int VisualEffectPeek
-        {
-            get { return IExecuteWithSignature<int>("getVisualEffectPeek", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/notification/ZenPolicy.html#getVisualEffectStatusBar()"/> 
-        /// </summary>
-        public int VisualEffectStatusBar
-        {
-            get { return IExecuteWithSignature<int>("getVisualEffectStatusBar", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/notification/ZenPolicy.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/notification/ZenPolicy.html#getPriorityCallSenders()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPriorityCallSenders()
+        {
+            return IExecuteWithSignature<int>("getPriorityCallSenders", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/notification/ZenPolicy.html#getPriorityCategoryAlarms()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPriorityCategoryAlarms()
+        {
+            return IExecuteWithSignature<int>("getPriorityCategoryAlarms", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/notification/ZenPolicy.html#getPriorityCategoryCalls()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPriorityCategoryCalls()
+        {
+            return IExecuteWithSignature<int>("getPriorityCategoryCalls", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/notification/ZenPolicy.html#getPriorityCategoryConversations()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPriorityCategoryConversations()
+        {
+            return IExecuteWithSignature<int>("getPriorityCategoryConversations", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/notification/ZenPolicy.html#getPriorityCategoryEvents()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPriorityCategoryEvents()
+        {
+            return IExecuteWithSignature<int>("getPriorityCategoryEvents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/notification/ZenPolicy.html#getPriorityCategoryMedia()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPriorityCategoryMedia()
+        {
+            return IExecuteWithSignature<int>("getPriorityCategoryMedia", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/notification/ZenPolicy.html#getPriorityCategoryMessages()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPriorityCategoryMessages()
+        {
+            return IExecuteWithSignature<int>("getPriorityCategoryMessages", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/notification/ZenPolicy.html#getPriorityCategoryReminders()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPriorityCategoryReminders()
+        {
+            return IExecuteWithSignature<int>("getPriorityCategoryReminders", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/notification/ZenPolicy.html#getPriorityCategoryRepeatCallers()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPriorityCategoryRepeatCallers()
+        {
+            return IExecuteWithSignature<int>("getPriorityCategoryRepeatCallers", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/notification/ZenPolicy.html#getPriorityCategorySystem()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPriorityCategorySystem()
+        {
+            return IExecuteWithSignature<int>("getPriorityCategorySystem", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/notification/ZenPolicy.html#getPriorityConversationSenders()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPriorityConversationSenders()
+        {
+            return IExecuteWithSignature<int>("getPriorityConversationSenders", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/notification/ZenPolicy.html#getPriorityMessageSenders()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPriorityMessageSenders()
+        {
+            return IExecuteWithSignature<int>("getPriorityMessageSenders", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/notification/ZenPolicy.html#getVisualEffectAmbient()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetVisualEffectAmbient()
+        {
+            return IExecuteWithSignature<int>("getVisualEffectAmbient", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/notification/ZenPolicy.html#getVisualEffectBadge()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetVisualEffectBadge()
+        {
+            return IExecuteWithSignature<int>("getVisualEffectBadge", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/notification/ZenPolicy.html#getVisualEffectFullScreenIntent()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetVisualEffectFullScreenIntent()
+        {
+            return IExecuteWithSignature<int>("getVisualEffectFullScreenIntent", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/notification/ZenPolicy.html#getVisualEffectLights()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetVisualEffectLights()
+        {
+            return IExecuteWithSignature<int>("getVisualEffectLights", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/notification/ZenPolicy.html#getVisualEffectNotificationList()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetVisualEffectNotificationList()
+        {
+            return IExecuteWithSignature<int>("getVisualEffectNotificationList", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/notification/ZenPolicy.html#getVisualEffectPeek()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetVisualEffectPeek()
+        {
+            return IExecuteWithSignature<int>("getVisualEffectPeek", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/service/notification/ZenPolicy.html#getVisualEffectStatusBar()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetVisualEffectStatusBar()
+        {
+            return IExecuteWithSignature<int>("getVisualEffectStatusBar", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/notification/ZenPolicy.html#writeToParcel(android.os.Parcel,int)"/>

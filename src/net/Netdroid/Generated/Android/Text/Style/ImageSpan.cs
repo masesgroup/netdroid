@@ -91,7 +91,7 @@ namespace Android.Text.Style
         /// </summary>
         /// <param name="arg0"><see cref="Android.Graphics.Bitmap"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public ImageSpan(Android.Graphics.Bitmap arg0, int arg1)
             : base(arg0, arg1)
         {
@@ -100,7 +100,7 @@ namespace Android.Text.Style
         /// <see href="https://developer.android.com/reference/android/text/style/ImageSpan.html#%3Cinit%3E(android.graphics.Bitmap)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Graphics.Bitmap"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public ImageSpan(Android.Graphics.Bitmap arg0)
             : base(arg0)
         {
@@ -158,11 +158,12 @@ namespace Android.Text.Style
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/style/ImageSpan.html#getSource()"/> 
+        /// <see href="https://developer.android.com/reference/android/text/style/ImageSpan.html#getSource()"/>
         /// </summary>
-        public Java.Lang.String Source
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSource()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSource", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getSource", "()Ljava/lang/String;");
         }
 
         #endregion

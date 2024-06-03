@@ -46,41 +46,6 @@ namespace Android.Graphics.Text
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/text/PositionedGlyphs.html#getAdvance()"/> 
-        /// </summary>
-        public float Advance
-        {
-            get { return IExecuteWithSignature<float>("getAdvance", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/text/PositionedGlyphs.html#getAscent()"/> 
-        /// </summary>
-        public float Ascent
-        {
-            get { return IExecuteWithSignature<float>("getAscent", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/text/PositionedGlyphs.html#getDescent()"/> 
-        /// </summary>
-        public float Descent
-        {
-            get { return IExecuteWithSignature<float>("getDescent", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/text/PositionedGlyphs.html#getOffsetX()"/> 
-        /// </summary>
-        public float OffsetX
-        {
-            get { return IExecuteWithSignature<float>("getOffsetX", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/text/PositionedGlyphs.html#getOffsetY()"/> 
-        /// </summary>
-        public float OffsetY
-        {
-            get { return IExecuteWithSignature<float>("getOffsetY", "()F"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/text/PositionedGlyphs.html#getFont(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -88,6 +53,30 @@ namespace Android.Graphics.Text
         public Android.Graphics.Fonts.Font GetFont(int arg0)
         {
             return IExecuteWithSignature<Android.Graphics.Fonts.Font>("getFont", "(I)Landroid/graphics/fonts/Font;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/text/PositionedGlyphs.html#getAdvance()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetAdvance()
+        {
+            return IExecuteWithSignature<float>("getAdvance", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/text/PositionedGlyphs.html#getAscent()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetAscent()
+        {
+            return IExecuteWithSignature<float>("getAscent", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/text/PositionedGlyphs.html#getDescent()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetDescent()
+        {
+            return IExecuteWithSignature<float>("getDescent", "()F");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/text/PositionedGlyphs.html#getGlyphX(int)"/>
@@ -106,6 +95,22 @@ namespace Android.Graphics.Text
         public float GetGlyphY(int arg0)
         {
             return IExecuteWithSignature<float>("getGlyphY", "(I)F", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/text/PositionedGlyphs.html#getOffsetX()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetOffsetX()
+        {
+            return IExecuteWithSignature<float>("getOffsetX", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/text/PositionedGlyphs.html#getOffsetY()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetOffsetY()
+        {
+            return IExecuteWithSignature<float>("getOffsetY", "()F");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/text/PositionedGlyphs.html#getGlyphId(int)"/>

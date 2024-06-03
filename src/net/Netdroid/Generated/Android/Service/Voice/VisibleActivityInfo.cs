@@ -52,11 +52,12 @@ namespace Android.Service.Voice
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/voice/VisibleActivityInfo.html#getActivityId()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/voice/VisibleActivityInfo.html#getActivityId()"/>
         /// </summary>
-        public Android.Service.Voice.VoiceInteractionSession.ActivityId ActivityId
+        /// <returns><see cref="Android.Service.Voice.VoiceInteractionSession.ActivityId"/></returns>
+        public Android.Service.Voice.VoiceInteractionSession.ActivityId GetActivityId()
         {
-            get { return IExecuteWithSignature<Android.Service.Voice.VoiceInteractionSession.ActivityId>("getActivityId", "()Landroid/service/voice/VoiceInteractionSession$ActivityId;"); }
+            return IExecuteWithSignature<Android.Service.Voice.VoiceInteractionSession.ActivityId>("getActivityId", "()Landroid/service/voice/VoiceInteractionSession$ActivityId;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/voice/VisibleActivityInfo.html#describeContents()"/>

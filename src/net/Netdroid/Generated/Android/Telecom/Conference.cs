@@ -70,110 +70,61 @@ namespace Android.Telecom
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/Conference.html#getCallAudioState()"/> 
+        /// <see href="https://developer.android.com/reference/android/telecom/Conference.html#getVideoProvider()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Telecom.CallAudioState CallAudioState
+        /// <returns><see cref="Android.Telecom.Connection.VideoProvider"/></returns>
+        public Android.Telecom.Connection.VideoProvider GetVideoProvider()
         {
-            get { return IExecuteWithSignature<Android.Telecom.CallAudioState>("getCallAudioState", "()Landroid/telecom/CallAudioState;"); }
+            return IExecuteWithSignature<Android.Telecom.Connection.VideoProvider>("getVideoProvider", "()Landroid/telecom/Connection$VideoProvider;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/Conference.html#getConferenceableConnections()"/> <see href="https://developer.android.com/reference/android/telecom/Conference.html#setConferenceableConnections(java.util.List)"/>
+        /// <see href="https://developer.android.com/reference/android/telecom/Conference.html#getExtras()"/>
         /// </summary>
-        public Java.Util.List<Android.Telecom.Connection> ConferenceableConnections
+        /// <returns><see cref="Android.Os.Bundle"/></returns>
+        public Android.Os.Bundle GetExtras()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Telecom.Connection>>("getConferenceableConnections", "()Ljava/util/List;"); } set { IExecuteWithSignature("setConferenceableConnections", "(Ljava/util/List;)V", value); }
+            return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/Conference.html#getConnectionCapabilities()"/> <see href="https://developer.android.com/reference/android/telecom/Conference.html#setConnectionCapabilities(int)"/>
+        /// <see href="https://developer.android.com/reference/android/telecom/Conference.html#getCallAudioState()"/>
         /// </summary>
-        public int ConnectionCapabilities
+        /// <returns><see cref="Android.Telecom.CallAudioState"/></returns>
+        [global::System.Obsolete()]
+        public Android.Telecom.CallAudioState GetCallAudioState()
         {
-            get { return IExecuteWithSignature<int>("getConnectionCapabilities", "()I"); } set { IExecuteWithSignature("setConnectionCapabilities", "(I)V", value); }
+            return IExecuteWithSignature<Android.Telecom.CallAudioState>("getCallAudioState", "()Landroid/telecom/CallAudioState;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/Conference.html#getConnectionProperties()"/> <see href="https://developer.android.com/reference/android/telecom/Conference.html#setConnectionProperties(int)"/>
+        /// <see href="https://developer.android.com/reference/android/telecom/Conference.html#getCurrentCallEndpoint()"/>
         /// </summary>
-        public int ConnectionProperties
+        /// <returns><see cref="Android.Telecom.CallEndpoint"/></returns>
+        public Android.Telecom.CallEndpoint GetCurrentCallEndpoint()
         {
-            get { return IExecuteWithSignature<int>("getConnectionProperties", "()I"); } set { IExecuteWithSignature("setConnectionProperties", "(I)V", value); }
+            return IExecuteWithSignature<Android.Telecom.CallEndpoint>("getCurrentCallEndpoint", "()Landroid/telecom/CallEndpoint;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/Conference.html#getConnections()"/> 
+        /// <see href="https://developer.android.com/reference/android/telecom/Conference.html#getDisconnectCause()"/>
         /// </summary>
-        public Java.Util.List<Android.Telecom.Connection> Connections
+        /// <returns><see cref="Android.Telecom.DisconnectCause"/></returns>
+        public Android.Telecom.DisconnectCause GetDisconnectCause()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Telecom.Connection>>("getConnections", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Android.Telecom.DisconnectCause>("getDisconnectCause", "()Landroid/telecom/DisconnectCause;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/Conference.html#getConnectionStartElapsedRealtimeMillis()"/> <see href="https://developer.android.com/reference/android/telecom/Conference.html#setConnectionStartElapsedRealtimeMillis(long)"/>
+        /// <see href="https://developer.android.com/reference/android/telecom/Conference.html#getPhoneAccountHandle()"/>
         /// </summary>
-        public long ConnectionStartElapsedRealtimeMillis
+        /// <returns><see cref="Android.Telecom.PhoneAccountHandle"/></returns>
+        public Android.Telecom.PhoneAccountHandle GetPhoneAccountHandle()
         {
-            get { return IExecuteWithSignature<long>("getConnectionStartElapsedRealtimeMillis", "()J"); } set { IExecuteWithSignature("setConnectionStartElapsedRealtimeMillis", "(J)V", value); }
+            return IExecuteWithSignature<Android.Telecom.PhoneAccountHandle>("getPhoneAccountHandle", "()Landroid/telecom/PhoneAccountHandle;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/Conference.html#getConnectionTime()"/> <see href="https://developer.android.com/reference/android/telecom/Conference.html#setConnectionTime(long)"/>
+        /// <see href="https://developer.android.com/reference/android/telecom/Conference.html#getStatusHints()"/>
         /// </summary>
-        public long ConnectionTime
+        /// <returns><see cref="Android.Telecom.StatusHints"/></returns>
+        public Android.Telecom.StatusHints GetStatusHints()
         {
-            get { return IExecuteWithSignature<long>("getConnectionTime", "()J"); } set { IExecuteWithSignature("setConnectionTime", "(J)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/Conference.html#getCurrentCallEndpoint()"/> 
-        /// </summary>
-        public Android.Telecom.CallEndpoint CurrentCallEndpoint
-        {
-            get { return IExecuteWithSignature<Android.Telecom.CallEndpoint>("getCurrentCallEndpoint", "()Landroid/telecom/CallEndpoint;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/Conference.html#getDisconnectCause()"/> 
-        /// </summary>
-        public Android.Telecom.DisconnectCause DisconnectCause
-        {
-            get { return IExecuteWithSignature<Android.Telecom.DisconnectCause>("getDisconnectCause", "()Landroid/telecom/DisconnectCause;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/Conference.html#getExtras()"/> <see href="https://developer.android.com/reference/android/telecom/Conference.html#setExtras(android.os.Bundle)"/>
-        /// </summary>
-        public Android.Os.Bundle Extras
-        {
-            get { return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;"); } set { IExecuteWithSignature("setExtras", "(Landroid/os/Bundle;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/Conference.html#getPhoneAccountHandle()"/> 
-        /// </summary>
-        public Android.Telecom.PhoneAccountHandle PhoneAccountHandle
-        {
-            get { return IExecuteWithSignature<Android.Telecom.PhoneAccountHandle>("getPhoneAccountHandle", "()Landroid/telecom/PhoneAccountHandle;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/Conference.html#getState()"/> 
-        /// </summary>
-        public int State
-        {
-            get { return IExecuteWithSignature<int>("getState", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/Conference.html#getStatusHints()"/> <see href="https://developer.android.com/reference/android/telecom/Conference.html#setStatusHints(android.telecom.StatusHints)"/>
-        /// </summary>
-        public Android.Telecom.StatusHints StatusHints
-        {
-            get { return IExecuteWithSignature<Android.Telecom.StatusHints>("getStatusHints", "()Landroid/telecom/StatusHints;"); } set { IExecuteWithSignature("setStatusHints", "(Landroid/telecom/StatusHints;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/Conference.html#getVideoProvider()"/> 
-        /// </summary>
-        public Android.Telecom.Connection.VideoProvider VideoProvider
-        {
-            get { return IExecuteWithSignature<Android.Telecom.Connection.VideoProvider>("getVideoProvider", "()Landroid/telecom/Connection$VideoProvider;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/Conference.html#getVideoState()"/> 
-        /// </summary>
-        public int VideoState
-        {
-            get { return IExecuteWithSignature<int>("getVideoState", "()I"); }
+            return IExecuteWithSignature<Android.Telecom.StatusHints>("getStatusHints", "()Landroid/telecom/StatusHints;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/Conference.html#addConnection(android.telecom.Connection)"/>
@@ -191,6 +142,62 @@ namespace Android.Telecom
         public bool IsRingbackRequested()
         {
             return IExecuteWithSignature<bool>("isRingbackRequested", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/Conference.html#getConnectionCapabilities()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetConnectionCapabilities()
+        {
+            return IExecuteWithSignature<int>("getConnectionCapabilities", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/Conference.html#getConnectionProperties()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetConnectionProperties()
+        {
+            return IExecuteWithSignature<int>("getConnectionProperties", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/Conference.html#getState()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetState()
+        {
+            return IExecuteWithSignature<int>("getState", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/Conference.html#getConferenceableConnections()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Telecom.Connection> GetConferenceableConnections()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Telecom.Connection>>("getConferenceableConnections", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/Conference.html#getConnections()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Telecom.Connection> GetConnections()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Telecom.Connection>>("getConnections", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/Conference.html#getConnectionStartElapsedRealtimeMillis()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetConnectionStartElapsedRealtimeMillis()
+        {
+            return IExecuteWithSignature<long>("getConnectionStartElapsedRealtimeMillis", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/Conference.html#getConnectionTime()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetConnectionTime()
+        {
+            return IExecuteWithSignature<long>("getConnectionTime", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/Conference.html#destroy()"/>
@@ -239,13 +246,53 @@ namespace Android.Telecom
             IExecuteWithSignature("setActive", "()V");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/Conference.html#setConferenceableConnections(java.util.List)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.List"/></param>
+        public void SetConferenceableConnections(Java.Util.List<Android.Telecom.Connection> arg0)
+        {
+            IExecuteWithSignature("setConferenceableConnections", "(Ljava/util/List;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/Conference.html#setConnectionCapabilities(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetConnectionCapabilities(int arg0)
+        {
+            IExecuteWithSignature("setConnectionCapabilities", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/Conference.html#setConnectionProperties(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetConnectionProperties(int arg0)
+        {
+            IExecuteWithSignature("setConnectionProperties", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/Conference.html#setConnectionStartElapsedRealTime(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetConnectionStartElapsedRealTime(long arg0)
         {
             IExecuteWithSignature("setConnectionStartElapsedRealTime", "(J)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/Conference.html#setConnectionStartElapsedRealtimeMillis(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        public void SetConnectionStartElapsedRealtimeMillis(long arg0)
+        {
+            IExecuteWithSignature("setConnectionStartElapsedRealtimeMillis", "(J)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/Conference.html#setConnectionTime(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        public void SetConnectionTime(long arg0)
+        {
+            IExecuteWithSignature("setConnectionTime", "(J)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/Conference.html#setDialing()"/>
@@ -261,6 +308,14 @@ namespace Android.Telecom
         public void SetDisconnected(Android.Telecom.DisconnectCause arg0)
         {
             IExecuteWithSignature("setDisconnected", "(Landroid/telecom/DisconnectCause;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/Conference.html#setExtras(android.os.Bundle)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Os.Bundle"/></param>
+        public void SetExtras(Android.Os.Bundle arg0)
+        {
+            IExecuteWithSignature("setExtras", "(Landroid/os/Bundle;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/Conference.html#setOnHold()"/>
@@ -285,6 +340,14 @@ namespace Android.Telecom
             IExecuteWithSignature("setRinging", "()V");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/Conference.html#setStatusHints(android.telecom.StatusHints)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Telecom.StatusHints"/></param>
+        public void SetStatusHints(Android.Telecom.StatusHints arg0)
+        {
+            IExecuteWithSignature("setStatusHints", "(Landroid/telecom/StatusHints;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/Conference.html#setVideoProvider(android.telecom.Connection,android.telecom.Connection.VideoProvider)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Telecom.Connection"/></param>
@@ -301,6 +364,14 @@ namespace Android.Telecom
         public void SetVideoState(Android.Telecom.Connection arg0, int arg1)
         {
             IExecute("setVideoState", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/Conference.html#getVideoState()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetVideoState()
+        {
+            return IExecuteWithSignature<int>("getVideoState", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/Conference.html#onAddConferenceParticipants(java.util.List)"/>
@@ -330,7 +401,7 @@ namespace Android.Telecom
         /// <see href="https://developer.android.com/reference/android/telecom/Conference.html#onCallAudioStateChanged(android.telecom.CallAudioState)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Telecom.CallAudioState"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnCallAudioStateChanged(Android.Telecom.CallAudioState arg0)
         {
             IExecuteWithSignature("onCallAudioStateChanged", "(Landroid/telecom/CallAudioState;)V", arg0);

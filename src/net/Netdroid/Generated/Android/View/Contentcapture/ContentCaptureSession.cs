@@ -46,20 +46,6 @@ namespace Android.View.Contentcapture
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/contentcapture/ContentCaptureSession.html#getContentCaptureContext()"/> <see href="https://developer.android.com/reference/android/view/contentcapture/ContentCaptureSession.html#setContentCaptureContext(android.view.contentcapture.ContentCaptureContext)"/>
-        /// </summary>
-        public Android.View.Contentcapture.ContentCaptureContext ContentCaptureContext
-        {
-            get { return IExecuteWithSignature<Android.View.Contentcapture.ContentCaptureContext>("getContentCaptureContext", "()Landroid/view/contentcapture/ContentCaptureContext;"); } set { IExecuteWithSignature("setContentCaptureContext", "(Landroid/view/contentcapture/ContentCaptureContext;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/contentcapture/ContentCaptureSession.html#getContentCaptureSessionId()"/> 
-        /// </summary>
-        public Android.View.Contentcapture.ContentCaptureSessionId ContentCaptureSessionId
-        {
-            get { return IExecuteWithSignature<Android.View.Contentcapture.ContentCaptureSessionId>("getContentCaptureSessionId", "()Landroid/view/contentcapture/ContentCaptureSessionId;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/contentcapture/ContentCaptureSession.html#newAutofillId(android.view.autofill.AutofillId,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.Autofill.AutofillId"/></param>
@@ -70,6 +56,14 @@ namespace Android.View.Contentcapture
             return IExecute<Android.View.Autofill.AutofillId>("newAutofillId", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/contentcapture/ContentCaptureSession.html#getContentCaptureContext()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.Contentcapture.ContentCaptureContext"/></returns>
+        public Android.View.Contentcapture.ContentCaptureContext GetContentCaptureContext()
+        {
+            return IExecuteWithSignature<Android.View.Contentcapture.ContentCaptureContext>("getContentCaptureContext", "()Landroid/view/contentcapture/ContentCaptureContext;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/contentcapture/ContentCaptureSession.html#createContentCaptureSession(android.view.contentcapture.ContentCaptureContext)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.Contentcapture.ContentCaptureContext"/></param>
@@ -77,6 +71,14 @@ namespace Android.View.Contentcapture
         public Android.View.Contentcapture.ContentCaptureSession CreateContentCaptureSession(Android.View.Contentcapture.ContentCaptureContext arg0)
         {
             return IExecuteWithSignature<Android.View.Contentcapture.ContentCaptureSession>("createContentCaptureSession", "(Landroid/view/contentcapture/ContentCaptureContext;)Landroid/view/contentcapture/ContentCaptureSession;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/contentcapture/ContentCaptureSession.html#getContentCaptureSessionId()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.Contentcapture.ContentCaptureSessionId"/></returns>
+        public Android.View.Contentcapture.ContentCaptureSessionId GetContentCaptureSessionId()
+        {
+            return IExecuteWithSignature<Android.View.Contentcapture.ContentCaptureSessionId>("getContentCaptureSessionId", "()Landroid/view/contentcapture/ContentCaptureSessionId;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/contentcapture/ContentCaptureSession.html#newViewStructure(android.view.View)"/>
@@ -167,6 +169,14 @@ namespace Android.View.Contentcapture
         public void NotifyViewTextChanged(Android.View.Autofill.AutofillId arg0, Java.Lang.CharSequence arg1)
         {
             IExecute("notifyViewTextChanged", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/contentcapture/ContentCaptureSession.html#setContentCaptureContext(android.view.contentcapture.ContentCaptureContext)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.Contentcapture.ContentCaptureContext"/></param>
+        public void SetContentCaptureContext(Android.View.Contentcapture.ContentCaptureContext arg0)
+        {
+            IExecuteWithSignature("setContentCaptureContext", "(Landroid/view/contentcapture/ContentCaptureContext;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/contentcapture/ContentCaptureSession.html#close()"/>

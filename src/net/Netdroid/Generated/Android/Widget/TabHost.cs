@@ -36,7 +36,7 @@ namespace Android.Widget
         /// <param name="arg1"><see cref="Android.Util.AttributeSet"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public TabHost(Android.Content.Context arg0, Android.Util.AttributeSet arg1, int arg2, int arg3)
             : base(arg0, arg1, arg2, arg3)
         {
@@ -47,7 +47,7 @@ namespace Android.Widget
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
         /// <param name="arg1"><see cref="Android.Util.AttributeSet"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public TabHost(Android.Content.Context arg0, Android.Util.AttributeSet arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
@@ -57,7 +57,7 @@ namespace Android.Widget
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
         /// <param name="arg1"><see cref="Android.Util.AttributeSet"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public TabHost(Android.Content.Context arg0, Android.Util.AttributeSet arg1)
             : base(arg0, arg1)
         {
@@ -66,7 +66,7 @@ namespace Android.Widget
         /// <see href="https://developer.android.com/reference/android/widget/TabHost.html#%3Cinit%3E(android.content.Context)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public TabHost(Android.Content.Context arg0)
             : base(arg0)
         {
@@ -88,68 +88,74 @@ namespace Android.Widget
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TabHost.html#getCurrentTab()"/> <see href="https://developer.android.com/reference/android/widget/TabHost.html#setCurrentTab(int)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/TabHost.html#getCurrentTabView()"/>
         /// </summary>
-        [System.Obsolete()]
-        public int CurrentTab
+        /// <returns><see cref="Android.View.View"/></returns>
+        [global::System.Obsolete()]
+        public Android.View.View GetCurrentTabView()
         {
-            get { return IExecuteWithSignature<int>("getCurrentTab", "()I"); } set { IExecuteWithSignature("setCurrentTab", "(I)V", value); }
+            return IExecuteWithSignature<Android.View.View>("getCurrentTabView", "()Landroid/view/View;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TabHost.html#getCurrentTabTag()"/> 
+        /// <see href="https://developer.android.com/reference/android/widget/TabHost.html#getCurrentView()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Java.Lang.String CurrentTabTag
+        /// <returns><see cref="Android.View.View"/></returns>
+        [global::System.Obsolete()]
+        public Android.View.View GetCurrentView()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCurrentTabTag", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Android.View.View>("getCurrentView", "()Landroid/view/View;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TabHost.html#getCurrentTabView()"/> 
+        /// <see href="https://developer.android.com/reference/android/widget/TabHost.html#getTabContentView()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.View.View CurrentTabView
+        /// <returns><see cref="Android.Widget.FrameLayout"/></returns>
+        [global::System.Obsolete()]
+        public Android.Widget.FrameLayout GetTabContentView()
         {
-            get { return IExecuteWithSignature<Android.View.View>("getCurrentTabView", "()Landroid/view/View;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TabHost.html#getCurrentView()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Android.View.View CurrentView
-        {
-            get { return IExecuteWithSignature<Android.View.View>("getCurrentView", "()Landroid/view/View;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TabHost.html#getTabContentView()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Android.Widget.FrameLayout TabContentView
-        {
-            get { return IExecuteWithSignature<Android.Widget.FrameLayout>("getTabContentView", "()Landroid/widget/FrameLayout;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TabHost.html#getTabWidget()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Android.Widget.TabWidget TabWidget
-        {
-            get { return IExecuteWithSignature<Android.Widget.TabWidget>("getTabWidget", "()Landroid/widget/TabWidget;"); }
+            return IExecuteWithSignature<Android.Widget.FrameLayout>("getTabContentView", "()Landroid/widget/FrameLayout;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TabHost.html#newTabSpec(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Android.Widget.TabHost.TabSpec"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Widget.TabHost.TabSpec NewTabSpec(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Android.Widget.TabHost.TabSpec>("newTabSpec", "(Ljava/lang/String;)Landroid/widget/TabHost$TabSpec;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TabHost.html#getTabWidget()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Widget.TabWidget"/></returns>
+        [global::System.Obsolete()]
+        public Android.Widget.TabWidget GetTabWidget()
+        {
+            return IExecuteWithSignature<Android.Widget.TabWidget>("getTabWidget", "()Landroid/widget/TabWidget;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TabHost.html#getCurrentTab()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetCurrentTab()
+        {
+            return IExecuteWithSignature<int>("getCurrentTab", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TabHost.html#getCurrentTabTag()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        [global::System.Obsolete()]
+        public Java.Lang.String GetCurrentTabTag()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getCurrentTabTag", "()Ljava/lang/String;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TabHost.html#addTab(android.widget.TabHost.TabSpec)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Widget.TabHost.TabSpec"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void AddTab(Android.Widget.TabHost.TabSpec arg0)
         {
             IExecuteWithSignature("addTab", "(Landroid/widget/TabHost$TabSpec;)V", arg0);
@@ -157,7 +163,7 @@ namespace Android.Widget
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TabHost.html#clearAllTabs()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ClearAllTabs()
         {
             IExecuteWithSignature("clearAllTabs", "()V");
@@ -166,16 +172,25 @@ namespace Android.Widget
         /// <see href="https://developer.android.com/reference/android/widget/TabHost.html#onTouchModeChanged(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnTouchModeChanged(bool arg0)
         {
             IExecuteWithSignature("onTouchModeChanged", "(Z)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TabHost.html#setCurrentTab(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        [global::System.Obsolete()]
+        public void SetCurrentTab(int arg0)
+        {
+            IExecuteWithSignature("setCurrentTab", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TabHost.html#setCurrentTabByTag(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetCurrentTabByTag(Java.Lang.String arg0)
         {
             IExecuteWithSignature("setCurrentTabByTag", "(Ljava/lang/String;)V", arg0);
@@ -184,7 +199,7 @@ namespace Android.Widget
         /// <see href="https://developer.android.com/reference/android/widget/TabHost.html#setOnTabChangedListener(android.widget.TabHost.OnTabChangeListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Widget.TabHost.OnTabChangeListener"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetOnTabChangedListener(Android.Widget.TabHost.OnTabChangeListener arg0)
         {
             IExecuteWithSignature("setOnTabChangedListener", "(Landroid/widget/TabHost$OnTabChangeListener;)V", arg0);
@@ -192,7 +207,7 @@ namespace Android.Widget
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TabHost.html#setup()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Setup()
         {
             IExecuteWithSignature("setup", "()V");
@@ -201,7 +216,7 @@ namespace Android.Widget
         /// <see href="https://developer.android.com/reference/android/widget/TabHost.html#setup(android.app.LocalActivityManager)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.App.LocalActivityManager"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Setup(Android.App.LocalActivityManager arg0)
         {
             IExecuteWithSignature("setup", "(Landroid/app/LocalActivityManager;)V", arg0);
@@ -235,7 +250,7 @@ namespace Android.Widget
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onTabChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(OnTabChangedEventHandler));
+                AddEventHandler("onTabChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(OnTabChangedEventHandler));
 
             }
 
@@ -243,7 +258,7 @@ namespace Android.Widget
             /// Handler for <see href="https://developer.android.com/reference/android/widget/TabHost.OnTabChangeListener.html#onTabChanged(java.lang.String)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnTabChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Java.Lang.String> OnOnTabChanged { get; set; } = null;
+            public global::System.Action<Java.Lang.String> OnOnTabChanged { get; set; } = null;
 
             void OnTabChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
             {
@@ -255,7 +270,7 @@ namespace Android.Widget
             /// <see href="https://developer.android.com/reference/android/widget/TabHost.OnTabChangeListener.html#onTabChanged(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public virtual void OnTabChanged(Java.Lang.String arg0)
             {
                 
@@ -295,7 +310,7 @@ namespace Android.Widget
             /// <see href="https://developer.android.com/reference/android/widget/TabHost.OnTabChangeListener.html#onTabChanged(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public override void OnTabChanged(Java.Lang.String arg0)
             {
                 IExecuteWithSignature("onTabChanged", "(Ljava/lang/String;)V", arg0);
@@ -336,7 +351,7 @@ namespace Android.Widget
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="Android.View.View"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.View.View CreateTabContent(Java.Lang.String arg0)
             {
                 return IExecuteWithSignature<Android.View.View>("createTabContent", "(Ljava/lang/String;)Landroid/view/View;", arg0);
@@ -373,19 +388,11 @@ namespace Android.Widget
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/widget/TabHost.TabSpec.html#getTag()"/> 
-            /// </summary>
-            [System.Obsolete()]
-            public Java.Lang.String Tag
-            {
-                get { return IExecuteWithSignature<Java.Lang.String>("getTag", "()Ljava/lang/String;"); }
-            }
-            /// <summary>
             /// <see href="https://developer.android.com/reference/android/widget/TabHost.TabSpec.html#setContent(android.content.Intent)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.Content.Intent"/></param>
             /// <returns><see cref="Android.Widget.TabHost.TabSpec"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Widget.TabHost.TabSpec SetContent(Android.Content.Intent arg0)
             {
                 return IExecuteWithSignature<Android.Widget.TabHost.TabSpec>("setContent", "(Landroid/content/Intent;)Landroid/widget/TabHost$TabSpec;", arg0);
@@ -395,7 +402,7 @@ namespace Android.Widget
             /// </summary>
             /// <param name="arg0"><see cref="Android.Widget.TabHost.TabContentFactory"/></param>
             /// <returns><see cref="Android.Widget.TabHost.TabSpec"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Widget.TabHost.TabSpec SetContent(Android.Widget.TabHost.TabContentFactory arg0)
             {
                 return IExecuteWithSignature<Android.Widget.TabHost.TabSpec>("setContent", "(Landroid/widget/TabHost$TabContentFactory;)Landroid/widget/TabHost$TabSpec;", arg0);
@@ -405,7 +412,7 @@ namespace Android.Widget
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
             /// <returns><see cref="Android.Widget.TabHost.TabSpec"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Widget.TabHost.TabSpec SetContent(int arg0)
             {
                 return IExecuteWithSignature<Android.Widget.TabHost.TabSpec>("setContent", "(I)Landroid/widget/TabHost$TabSpec;", arg0);
@@ -415,7 +422,7 @@ namespace Android.Widget
             /// </summary>
             /// <param name="arg0"><see cref="Android.View.View"/></param>
             /// <returns><see cref="Android.Widget.TabHost.TabSpec"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Widget.TabHost.TabSpec SetIndicator(Android.View.View arg0)
             {
                 return IExecuteWithSignature<Android.Widget.TabHost.TabSpec>("setIndicator", "(Landroid/view/View;)Landroid/widget/TabHost$TabSpec;", arg0);
@@ -426,7 +433,7 @@ namespace Android.Widget
             /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
             /// <param name="arg1"><see cref="Android.Graphics.Drawable.Drawable"/></param>
             /// <returns><see cref="Android.Widget.TabHost.TabSpec"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Widget.TabHost.TabSpec SetIndicator(Java.Lang.CharSequence arg0, Android.Graphics.Drawable.Drawable arg1)
             {
                 return IExecute<Android.Widget.TabHost.TabSpec>("setIndicator", arg0, arg1);
@@ -436,10 +443,19 @@ namespace Android.Widget
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
             /// <returns><see cref="Android.Widget.TabHost.TabSpec"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Widget.TabHost.TabSpec SetIndicator(Java.Lang.CharSequence arg0)
             {
                 return IExecuteWithSignature<Android.Widget.TabHost.TabSpec>("setIndicator", "(Ljava/lang/CharSequence;)Landroid/widget/TabHost$TabSpec;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/widget/TabHost.TabSpec.html#getTag()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            [global::System.Obsolete()]
+            public Java.Lang.String GetTag()
+            {
+                return IExecuteWithSignature<Java.Lang.String>("getTag", "()Ljava/lang/String;");
             }
 
             #endregion

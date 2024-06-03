@@ -35,7 +35,7 @@ namespace Android.Renderscript
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="long"/></param>
         /// <param name="arg2"><see cref="long"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Long3(long arg0, long arg1, long arg2)
             : base(arg0, arg1, arg2)
         {
@@ -51,17 +51,17 @@ namespace Android.Renderscript
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Long3.html#x"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public long x { get { return IGetField<long>("x"); } set { ISetField("x", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Long3.html#y"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public long y { get { return IGetField<long>("y"); } set { ISetField("y", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/Long3.html#z"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public long z { get { return IGetField<long>("z"); } set { ISetField("z", value); } }
 
         #endregion

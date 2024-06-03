@@ -68,8 +68,8 @@ namespace Android.Sax
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("end", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(EndEventHandler));
-            AddEventHandler("start", new System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.Attributes>>>(StartEventHandler));
+            AddEventHandler("end", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(EndEventHandler));
+            AddEventHandler("start", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.Attributes>>>(StartEventHandler));
 
         }
 
@@ -77,7 +77,7 @@ namespace Android.Sax
         /// Handler for <see href="https://developer.android.com/reference/android/sax/EndTextElementListener.html#end(java.lang.String)"/>
         /// </summary>
         /// <remarks>If <see cref="OnEnd"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Lang.String> OnEnd { get; set; } = null;
+        public global::System.Action<Java.Lang.String> OnEnd { get; set; } = null;
 
         void EndEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
         {
@@ -98,7 +98,7 @@ namespace Android.Sax
         /// Handler for <see href="https://developer.android.com/reference/android/sax/StartElementListener.html#start(org.xml.sax.Attributes)"/>
         /// </summary>
         /// <remarks>If <see cref="OnStart"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Org.Xml.Sax.Attributes> OnStart { get; set; } = null;
+        public global::System.Action<Org.Xml.Sax.Attributes> OnStart { get; set; } = null;
 
         void StartEventHandler(object sender, CLRListenerEventArgs<CLREventData<Org.Xml.Sax.Attributes>> data)
         {

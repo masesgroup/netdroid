@@ -66,53 +66,12 @@ namespace Android.Media.Tv
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/AdBuffer.html#getFlags()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/tv/AdBuffer.html#getSharedMemory()"/>
         /// </summary>
-        public int Flags
+        /// <returns><see cref="Android.Os.SharedMemory"/></returns>
+        public Android.Os.SharedMemory GetSharedMemory()
         {
-            get { return IExecuteWithSignature<int>("getFlags", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/AdBuffer.html#getId()"/> 
-        /// </summary>
-        public int Id
-        {
-            get { return IExecuteWithSignature<int>("getId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/AdBuffer.html#getLength()"/> 
-        /// </summary>
-        public int Length
-        {
-            get { return IExecuteWithSignature<int>("getLength", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/AdBuffer.html#getMimeType()"/> 
-        /// </summary>
-        public Java.Lang.String MimeType
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getMimeType", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/AdBuffer.html#getOffset()"/> 
-        /// </summary>
-        public int Offset
-        {
-            get { return IExecuteWithSignature<int>("getOffset", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/AdBuffer.html#getPresentationTimeUs()"/> 
-        /// </summary>
-        public long PresentationTimeUs
-        {
-            get { return IExecuteWithSignature<long>("getPresentationTimeUs", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/AdBuffer.html#getSharedMemory()"/> 
-        /// </summary>
-        public Android.Os.SharedMemory SharedMemory
-        {
-            get { return IExecuteWithSignature<Android.Os.SharedMemory>("getSharedMemory", "()Landroid/os/SharedMemory;"); }
+            return IExecuteWithSignature<Android.Os.SharedMemory>("getSharedMemory", "()Landroid/os/SharedMemory;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/AdBuffer.html#describeContents()"/>
@@ -121,6 +80,54 @@ namespace Android.Media.Tv
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/AdBuffer.html#getFlags()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetFlags()
+        {
+            return IExecuteWithSignature<int>("getFlags", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/AdBuffer.html#getId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetId()
+        {
+            return IExecuteWithSignature<int>("getId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/AdBuffer.html#getLength()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetLength()
+        {
+            return IExecuteWithSignature<int>("getLength", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/AdBuffer.html#getOffset()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetOffset()
+        {
+            return IExecuteWithSignature<int>("getOffset", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/AdBuffer.html#getMimeType()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetMimeType()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getMimeType", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/tv/AdBuffer.html#getPresentationTimeUs()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetPresentationTimeUs()
+        {
+            return IExecuteWithSignature<long>("getPresentationTimeUs", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/tv/AdBuffer.html#writeToParcel(android.os.Parcel,int)"/>

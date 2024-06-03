@@ -125,6 +125,19 @@ namespace Android.Graphics
             return SExecute<Android.Graphics.Bitmap>(LocalBridgeClazz, "decodeResource", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/BitmapFactory.html#decodeResourceStream(android.content.res.Resources,android.util.TypedValue,java.io.InputStream,android.graphics.Rect,android.graphics.BitmapFactory.Options)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Res.Resources"/></param>
+        /// <param name="arg1"><see cref="Android.Util.TypedValue"/></param>
+        /// <param name="arg2"><see cref="Java.Io.InputStream"/></param>
+        /// <param name="arg3"><see cref="Android.Graphics.Rect"/></param>
+        /// <param name="arg4"><see cref="Android.Graphics.BitmapFactory.Options"/></param>
+        /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
+        public static Android.Graphics.Bitmap DecodeResourceStream(Android.Content.Res.Resources arg0, Android.Util.TypedValue arg1, Java.Io.InputStream arg2, Android.Graphics.Rect arg3, Android.Graphics.BitmapFactory.Options arg4)
+        {
+            return SExecute<Android.Graphics.Bitmap>(LocalBridgeClazz, "decodeResourceStream", arg0, arg1, arg2, arg3, arg4);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/BitmapFactory.html#decodeStream(java.io.InputStream,android.graphics.Rect,android.graphics.BitmapFactory.Options)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
@@ -187,12 +200,12 @@ namespace Android.Graphics
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/BitmapFactory.Options.html#inDither"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public bool inDither { get { return IGetField<bool>("inDither"); } set { ISetField("inDither", value); } }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/BitmapFactory.Options.html#inInputShareable"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public bool inInputShareable { get { return IGetField<bool>("inInputShareable"); } set { ISetField("inInputShareable", value); } }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/BitmapFactory.Options.html#inJustDecodeBounds"/>
@@ -205,7 +218,7 @@ namespace Android.Graphics
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/BitmapFactory.Options.html#inPreferQualityOverSpeed"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public bool inPreferQualityOverSpeed { get { return IGetField<bool>("inPreferQualityOverSpeed"); } set { ISetField("inPreferQualityOverSpeed", value); } }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/BitmapFactory.Options.html#inPremultiplied"/>
@@ -214,7 +227,7 @@ namespace Android.Graphics
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/BitmapFactory.Options.html#inPurgeable"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public bool inPurgeable { get { return IGetField<bool>("inPurgeable"); } set { ISetField("inPurgeable", value); } }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/BitmapFactory.Options.html#inScaled"/>
@@ -223,7 +236,7 @@ namespace Android.Graphics
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/BitmapFactory.Options.html#mCancel"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public bool mCancel { get { return IGetField<bool>("mCancel"); } set { ISetField("mCancel", value); } }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/BitmapFactory.Options.html#inTempStorage"/>
@@ -268,7 +281,7 @@ namespace Android.Graphics
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/BitmapFactory.Options.html#requestCancelDecode()"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void RequestCancelDecode()
             {
                 IExecuteWithSignature("requestCancelDecode", "()V");

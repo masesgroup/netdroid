@@ -68,12 +68,12 @@ namespace Android.Net.Wifi
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/ScanResult.html#operatorFriendlyName"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Lang.CharSequence operatorFriendlyName { get { return IGetField<Java.Lang.CharSequence>("operatorFriendlyName"); } set { ISetField("operatorFriendlyName", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/ScanResult.html#venueName"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Lang.CharSequence venueName { get { return IGetField<Java.Lang.CharSequence>("venueName"); } set { ISetField("venueName", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/ScanResult.html#BSSID"/>
@@ -86,7 +86,7 @@ namespace Android.Net.Wifi
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/ScanResult.html#SSID"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Lang.String SSID { get { return IGetField<Java.Lang.String>("SSID"); } set { ISetField("SSID", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/ScanResult.html#timestamp"/>
@@ -264,53 +264,20 @@ namespace Android.Net.Wifi
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/ScanResult.html#getAffiliatedMloLinks()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/wifi/ScanResult.html#getApMldMacAddress()"/>
         /// </summary>
-        public Java.Util.List<Android.Net.Wifi.MloLink> AffiliatedMloLinks
+        /// <returns><see cref="Android.Net.MacAddress"/></returns>
+        public Android.Net.MacAddress GetApMldMacAddress()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Net.Wifi.MloLink>>("getAffiliatedMloLinks", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Android.Net.MacAddress>("getApMldMacAddress", "()Landroid/net/MacAddress;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/ScanResult.html#getApMldMacAddress()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/wifi/ScanResult.html#getWifiSsid()"/>
         /// </summary>
-        public Android.Net.MacAddress ApMldMacAddress
+        /// <returns><see cref="Android.Net.Wifi.WifiSsid"/></returns>
+        public Android.Net.Wifi.WifiSsid GetWifiSsid()
         {
-            get { return IExecuteWithSignature<Android.Net.MacAddress>("getApMldMacAddress", "()Landroid/net/MacAddress;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/ScanResult.html#getApMloLinkId()"/> 
-        /// </summary>
-        public int ApMloLinkId
-        {
-            get { return IExecuteWithSignature<int>("getApMloLinkId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/ScanResult.html#getInformationElements()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Net.Wifi.ScanResult.InformationElement> InformationElements
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Net.Wifi.ScanResult.InformationElement>>("getInformationElements", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/ScanResult.html#getSecurityTypes()"/> 
-        /// </summary>
-        public int[] SecurityTypes
-        {
-            get { return IExecuteWithSignatureArray<int>("getSecurityTypes", "()[I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/ScanResult.html#getWifiSsid()"/> 
-        /// </summary>
-        public Android.Net.Wifi.WifiSsid WifiSsid
-        {
-            get { return IExecuteWithSignature<Android.Net.Wifi.WifiSsid>("getWifiSsid", "()Landroid/net/wifi/WifiSsid;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/ScanResult.html#getWifiStandard()"/> 
-        /// </summary>
-        public int WifiStandard
-        {
-            get { return IExecuteWithSignature<int>("getWifiStandard", "()I"); }
+            return IExecuteWithSignature<Android.Net.Wifi.WifiSsid>("getWifiSsid", "()Landroid/net/wifi/WifiSsid;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/ScanResult.html#is80211mcResponder()"/>
@@ -335,6 +302,46 @@ namespace Android.Net.Wifi
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/ScanResult.html#getApMloLinkId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetApMloLinkId()
+        {
+            return IExecuteWithSignature<int>("getApMloLinkId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/ScanResult.html#getWifiStandard()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetWifiStandard()
+        {
+            return IExecuteWithSignature<int>("getWifiStandard", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/ScanResult.html#getSecurityTypes()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int[] GetSecurityTypes()
+        {
+            return IExecuteWithSignatureArray<int>("getSecurityTypes", "()[I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/ScanResult.html#getAffiliatedMloLinks()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Net.Wifi.MloLink> GetAffiliatedMloLinks()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Net.Wifi.MloLink>>("getAffiliatedMloLinks", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/ScanResult.html#getInformationElements()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Net.Wifi.ScanResult.InformationElement> GetInformationElements()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Net.Wifi.ScanResult.InformationElement>>("getInformationElements", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/ScanResult.html#writeToParcel(android.os.Parcel,int)"/>
@@ -394,33 +401,36 @@ namespace Android.Net.Wifi
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/wifi/ScanResult.InformationElement.html#getBytes()"/> 
-            /// </summary>
-            public Java.Nio.ByteBuffer Bytes
-            {
-                get { return IExecuteWithSignature<Java.Nio.ByteBuffer>("getBytes", "()Ljava/nio/ByteBuffer;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/wifi/ScanResult.InformationElement.html#getId()"/> 
-            /// </summary>
-            public int Id
-            {
-                get { return IExecuteWithSignature<int>("getId", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/net/wifi/ScanResult.InformationElement.html#getIdExt()"/> 
-            /// </summary>
-            public int IdExt
-            {
-                get { return IExecuteWithSignature<int>("getIdExt", "()I"); }
-            }
-            /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/ScanResult.InformationElement.html#describeContents()"/>
             /// </summary>
             /// <returns><see cref="int"/></returns>
             public int DescribeContents()
             {
                 return IExecuteWithSignature<int>("describeContents", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/ScanResult.InformationElement.html#getId()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetId()
+            {
+                return IExecuteWithSignature<int>("getId", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/ScanResult.InformationElement.html#getIdExt()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetIdExt()
+            {
+                return IExecuteWithSignature<int>("getIdExt", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/net/wifi/ScanResult.InformationElement.html#getBytes()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Nio.ByteBuffer"/></returns>
+            public Java.Nio.ByteBuffer GetBytes()
+            {
+                return IExecuteWithSignature<Java.Nio.ByteBuffer>("getBytes", "()Ljava/nio/ByteBuffer;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/ScanResult.InformationElement.html#writeToParcel(android.os.Parcel,int)"/>

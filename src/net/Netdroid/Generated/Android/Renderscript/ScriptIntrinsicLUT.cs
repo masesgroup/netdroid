@@ -47,7 +47,7 @@ namespace Android.Renderscript
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <param name="arg1"><see cref="Android.Renderscript.Element"/></param>
         /// <returns><see cref="Android.Renderscript.ScriptIntrinsicLUT"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.ScriptIntrinsicLUT Create(Android.Renderscript.RenderScript arg0, Android.Renderscript.Element arg1)
         {
             return SExecute<Android.Renderscript.ScriptIntrinsicLUT>(LocalBridgeClazz, "create", arg0, arg1);
@@ -57,12 +57,13 @@ namespace Android.Renderscript
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicLUT.html#getKernelID()"/> 
+        /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicLUT.html#getKernelID()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Renderscript.Script.KernelID KernelID
+        /// <returns><see cref="Android.Renderscript.Script.KernelID"/></returns>
+        [global::System.Obsolete()]
+        public Android.Renderscript.Script.KernelID GetKernelID()
         {
-            get { return IExecuteWithSignature<Android.Renderscript.Script.KernelID>("getKernelID", "()Landroid/renderscript/Script$KernelID;"); }
+            return IExecuteWithSignature<Android.Renderscript.Script.KernelID>("getKernelID", "()Landroid/renderscript/Script$KernelID;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicLUT.html#forEach(android.renderscript.Allocation,android.renderscript.Allocation,android.renderscript.Script.LaunchOptions)"/>
@@ -70,7 +71,7 @@ namespace Android.Renderscript
         /// <param name="arg0"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg1"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg2"><see cref="Android.Renderscript.Script.LaunchOptions"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ForEach(Android.Renderscript.Allocation arg0, Android.Renderscript.Allocation arg1, Android.Renderscript.Script.LaunchOptions arg2)
         {
             IExecute("forEach", arg0, arg1, arg2);
@@ -80,7 +81,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg1"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ForEach(Android.Renderscript.Allocation arg0, Android.Renderscript.Allocation arg1)
         {
             IExecute("forEach", arg0, arg1);
@@ -90,7 +91,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetAlpha(int arg0, int arg1)
         {
             IExecute("setAlpha", arg0, arg1);
@@ -100,7 +101,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetBlue(int arg0, int arg1)
         {
             IExecute("setBlue", arg0, arg1);
@@ -110,7 +111,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetGreen(int arg0, int arg1)
         {
             IExecute("setGreen", arg0, arg1);
@@ -120,7 +121,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetRed(int arg0, int arg1)
         {
             IExecute("setRed", arg0, arg1);

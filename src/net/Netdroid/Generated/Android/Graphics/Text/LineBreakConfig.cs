@@ -82,18 +82,20 @@ namespace Android.Graphics.Text
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/text/LineBreakConfig.html#getLineBreakStyle()"/> 
+        /// <see href="https://developer.android.com/reference/android/graphics/text/LineBreakConfig.html#getLineBreakStyle()"/>
         /// </summary>
-        public int LineBreakStyle
+        /// <returns><see cref="int"/></returns>
+        public int GetLineBreakStyle()
         {
-            get { return IExecuteWithSignature<int>("getLineBreakStyle", "()I"); }
+            return IExecuteWithSignature<int>("getLineBreakStyle", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/text/LineBreakConfig.html#getLineBreakWordStyle()"/> 
+        /// <see href="https://developer.android.com/reference/android/graphics/text/LineBreakConfig.html#getLineBreakWordStyle()"/>
         /// </summary>
-        public int LineBreakWordStyle
+        /// <returns><see cref="int"/></returns>
+        public int GetLineBreakWordStyle()
         {
-            get { return IExecuteWithSignature<int>("getLineBreakWordStyle", "()I"); }
+            return IExecuteWithSignature<int>("getLineBreakWordStyle", "()I");
         }
 
         #endregion

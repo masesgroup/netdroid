@@ -73,18 +73,20 @@ namespace Android.Media.Tv
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/TimelineRequest.html#getIntervalMillis()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/tv/TimelineRequest.html#getIntervalMillis()"/>
         /// </summary>
-        public int IntervalMillis
+        /// <returns><see cref="int"/></returns>
+        public int GetIntervalMillis()
         {
-            get { return IExecuteWithSignature<int>("getIntervalMillis", "()I"); }
+            return IExecuteWithSignature<int>("getIntervalMillis", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/tv/TimelineRequest.html#getSelector()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/tv/TimelineRequest.html#getSelector()"/>
         /// </summary>
-        public Java.Lang.String Selector
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSelector()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSelector", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getSelector", "()Ljava/lang/String;");
         }
 
         #endregion

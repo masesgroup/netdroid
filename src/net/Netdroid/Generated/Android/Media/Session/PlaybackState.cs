@@ -244,74 +244,12 @@ namespace Android.Media.Session
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/session/PlaybackState.html#getActions()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/session/PlaybackState.html#getExtras()"/>
         /// </summary>
-        public long Actions
+        /// <returns><see cref="Android.Os.Bundle"/></returns>
+        public Android.Os.Bundle GetExtras()
         {
-            get { return IExecuteWithSignature<long>("getActions", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/session/PlaybackState.html#getActiveQueueItemId()"/> 
-        /// </summary>
-        public long ActiveQueueItemId
-        {
-            get { return IExecuteWithSignature<long>("getActiveQueueItemId", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/session/PlaybackState.html#getBufferedPosition()"/> 
-        /// </summary>
-        public long BufferedPosition
-        {
-            get { return IExecuteWithSignature<long>("getBufferedPosition", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/session/PlaybackState.html#getCustomActions()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Media.Session.PlaybackState.CustomAction> CustomActions
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Media.Session.PlaybackState.CustomAction>>("getCustomActions", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/session/PlaybackState.html#getErrorMessage()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence ErrorMessage
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getErrorMessage", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/session/PlaybackState.html#getExtras()"/> 
-        /// </summary>
-        public Android.Os.Bundle Extras
-        {
-            get { return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/session/PlaybackState.html#getLastPositionUpdateTime()"/> 
-        /// </summary>
-        public long LastPositionUpdateTime
-        {
-            get { return IExecuteWithSignature<long>("getLastPositionUpdateTime", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/session/PlaybackState.html#getPlaybackSpeed()"/> 
-        /// </summary>
-        public float PlaybackSpeed
-        {
-            get { return IExecuteWithSignature<float>("getPlaybackSpeed", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/session/PlaybackState.html#getPosition()"/> 
-        /// </summary>
-        public long Position
-        {
-            get { return IExecuteWithSignature<long>("getPosition", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/session/PlaybackState.html#getState()"/> 
-        /// </summary>
-        public int State
-        {
-            get { return IExecuteWithSignature<int>("getState", "()I"); }
+            return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/session/PlaybackState.html#isActive()"/>
@@ -322,12 +260,84 @@ namespace Android.Media.Session
             return IExecuteWithSignature<bool>("isActive", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/session/PlaybackState.html#getPlaybackSpeed()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetPlaybackSpeed()
+        {
+            return IExecuteWithSignature<float>("getPlaybackSpeed", "()F");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/session/PlaybackState.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/session/PlaybackState.html#getState()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetState()
+        {
+            return IExecuteWithSignature<int>("getState", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/session/PlaybackState.html#getErrorMessage()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetErrorMessage()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getErrorMessage", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/session/PlaybackState.html#getCustomActions()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Media.Session.PlaybackState.CustomAction> GetCustomActions()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Media.Session.PlaybackState.CustomAction>>("getCustomActions", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/session/PlaybackState.html#getActions()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetActions()
+        {
+            return IExecuteWithSignature<long>("getActions", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/session/PlaybackState.html#getActiveQueueItemId()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetActiveQueueItemId()
+        {
+            return IExecuteWithSignature<long>("getActiveQueueItemId", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/session/PlaybackState.html#getBufferedPosition()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetBufferedPosition()
+        {
+            return IExecuteWithSignature<long>("getBufferedPosition", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/session/PlaybackState.html#getLastPositionUpdateTime()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetLastPositionUpdateTime()
+        {
+            return IExecuteWithSignature<long>("getLastPositionUpdateTime", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/session/PlaybackState.html#getPosition()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetPosition()
+        {
+            return IExecuteWithSignature<long>("getPosition", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/session/PlaybackState.html#writeToParcel(android.os.Parcel,int)"/>
@@ -504,32 +514,12 @@ namespace Android.Media.Session
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/session/PlaybackState.CustomAction.html#getAction()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/session/PlaybackState.CustomAction.html#getExtras()"/>
             /// </summary>
-            public Java.Lang.String Action
+            /// <returns><see cref="Android.Os.Bundle"/></returns>
+            public Android.Os.Bundle GetExtras()
             {
-                get { return IExecuteWithSignature<Java.Lang.String>("getAction", "()Ljava/lang/String;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/session/PlaybackState.CustomAction.html#getExtras()"/> 
-            /// </summary>
-            public Android.Os.Bundle Extras
-            {
-                get { return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/session/PlaybackState.CustomAction.html#getIcon()"/> 
-            /// </summary>
-            public int Icon
-            {
-                get { return IExecuteWithSignature<int>("getIcon", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/session/PlaybackState.CustomAction.html#getName()"/> 
-            /// </summary>
-            public Java.Lang.CharSequence Name
-            {
-                get { return IExecuteWithSignature<Java.Lang.CharSequence>("getName", "()Ljava/lang/CharSequence;"); }
+                return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/session/PlaybackState.CustomAction.html#describeContents()"/>
@@ -538,6 +528,30 @@ namespace Android.Media.Session
             public int DescribeContents()
             {
                 return IExecuteWithSignature<int>("describeContents", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/session/PlaybackState.CustomAction.html#getIcon()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetIcon()
+            {
+                return IExecuteWithSignature<int>("getIcon", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/session/PlaybackState.CustomAction.html#getName()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+            public Java.Lang.CharSequence GetName()
+            {
+                return IExecuteWithSignature<Java.Lang.CharSequence>("getName", "()Ljava/lang/CharSequence;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/media/session/PlaybackState.CustomAction.html#getAction()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetAction()
+            {
+                return IExecuteWithSignature<Java.Lang.String>("getAction", "()Ljava/lang/String;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/media/session/PlaybackState.CustomAction.html#writeToParcel(android.os.Parcel,int)"/>

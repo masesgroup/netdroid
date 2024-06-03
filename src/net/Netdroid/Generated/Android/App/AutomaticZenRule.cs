@@ -59,7 +59,7 @@ namespace Android.App
         /// <param name="arg2"><see cref="Android.Net.Uri"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public AutomaticZenRule(Java.Lang.String arg0, Android.Content.ComponentName arg1, Android.Net.Uri arg2, int arg3, bool arg4)
             : base(arg0, arg1, arg2, arg3, arg4)
         {
@@ -87,53 +87,36 @@ namespace Android.App
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#getConditionId()"/> <see href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#setConditionId(android.net.Uri)"/>
+        /// <see href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#getConfigurationActivity()"/>
         /// </summary>
-        public Android.Net.Uri ConditionId
+        /// <returns><see cref="Android.Content.ComponentName"/></returns>
+        public Android.Content.ComponentName GetConfigurationActivity()
         {
-            get { return IExecuteWithSignature<Android.Net.Uri>("getConditionId", "()Landroid/net/Uri;"); } set { IExecuteWithSignature("setConditionId", "(Landroid/net/Uri;)V", value); }
+            return IExecuteWithSignature<Android.Content.ComponentName>("getConfigurationActivity", "()Landroid/content/ComponentName;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#getConfigurationActivity()"/> <see href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#setConfigurationActivity(android.content.ComponentName)"/>
+        /// <see href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#getOwner()"/>
         /// </summary>
-        public Android.Content.ComponentName ConfigurationActivity
+        /// <returns><see cref="Android.Content.ComponentName"/></returns>
+        public Android.Content.ComponentName GetOwner()
         {
-            get { return IExecuteWithSignature<Android.Content.ComponentName>("getConfigurationActivity", "()Landroid/content/ComponentName;"); } set { IExecuteWithSignature("setConfigurationActivity", "(Landroid/content/ComponentName;)V", value); }
+            return IExecuteWithSignature<Android.Content.ComponentName>("getOwner", "()Landroid/content/ComponentName;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#getCreationTime()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#getConditionId()"/>
         /// </summary>
-        public long CreationTime
+        /// <returns><see cref="Android.Net.Uri"/></returns>
+        public Android.Net.Uri GetConditionId()
         {
-            get { return IExecuteWithSignature<long>("getCreationTime", "()J"); }
+            return IExecuteWithSignature<Android.Net.Uri>("getConditionId", "()Landroid/net/Uri;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#getInterruptionFilter()"/> <see href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#setInterruptionFilter(int)"/>
+        /// <see href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#getZenPolicy()"/>
         /// </summary>
-        public int InterruptionFilter
+        /// <returns><see cref="Android.Service.Notification.ZenPolicy"/></returns>
+        public Android.Service.Notification.ZenPolicy GetZenPolicy()
         {
-            get { return IExecuteWithSignature<int>("getInterruptionFilter", "()I"); } set { IExecuteWithSignature("setInterruptionFilter", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#getName()"/> <see href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#setName(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String Name
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setName", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#getOwner()"/> 
-        /// </summary>
-        public Android.Content.ComponentName Owner
-        {
-            get { return IExecuteWithSignature<Android.Content.ComponentName>("getOwner", "()Landroid/content/ComponentName;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#getZenPolicy()"/> <see href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#setZenPolicy(android.service.notification.ZenPolicy)"/>
-        /// </summary>
-        public Android.Service.Notification.ZenPolicy ZenPolicy
-        {
-            get { return IExecuteWithSignature<Android.Service.Notification.ZenPolicy>("getZenPolicy", "()Landroid/service/notification/ZenPolicy;"); } set { IExecuteWithSignature("setZenPolicy", "(Landroid/service/notification/ZenPolicy;)V", value); }
+            return IExecuteWithSignature<Android.Service.Notification.ZenPolicy>("getZenPolicy", "()Landroid/service/notification/ZenPolicy;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#isEnabled()"/>
@@ -152,12 +135,76 @@ namespace Android.App
             return IExecuteWithSignature<int>("describeContents", "()I");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#getInterruptionFilter()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetInterruptionFilter()
+        {
+            return IExecuteWithSignature<int>("getInterruptionFilter", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#getName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#getCreationTime()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetCreationTime()
+        {
+            return IExecuteWithSignature<long>("getCreationTime", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#setConditionId(android.net.Uri)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Net.Uri"/></param>
+        public void SetConditionId(Android.Net.Uri arg0)
+        {
+            IExecuteWithSignature("setConditionId", "(Landroid/net/Uri;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#setConfigurationActivity(android.content.ComponentName)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.ComponentName"/></param>
+        public void SetConfigurationActivity(Android.Content.ComponentName arg0)
+        {
+            IExecuteWithSignature("setConfigurationActivity", "(Landroid/content/ComponentName;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#setEnabled(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetEnabled(bool arg0)
         {
             IExecuteWithSignature("setEnabled", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#setInterruptionFilter(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetInterruptionFilter(int arg0)
+        {
+            IExecuteWithSignature("setInterruptionFilter", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#setName(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetName(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setName", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#setZenPolicy(android.service.notification.ZenPolicy)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Service.Notification.ZenPolicy"/></param>
+        public void SetZenPolicy(Android.Service.Notification.ZenPolicy arg0)
+        {
+            IExecuteWithSignature("setZenPolicy", "(Landroid/service/notification/ZenPolicy;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/AutomaticZenRule.html#writeToParcel(android.os.Parcel,int)"/>

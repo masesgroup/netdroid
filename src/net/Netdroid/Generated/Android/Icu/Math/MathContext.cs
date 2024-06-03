@@ -156,32 +156,36 @@ namespace Android.Icu.Math
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/math/MathContext.html#getDigits()"/> 
+        /// <see href="https://developer.android.com/reference/android/icu/math/MathContext.html#getLostDigits()"/>
         /// </summary>
-        public int Digits
+        /// <returns><see cref="bool"/></returns>
+        public bool GetLostDigits()
         {
-            get { return IExecuteWithSignature<int>("getDigits", "()I"); }
+            return IExecuteWithSignature<bool>("getLostDigits", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/math/MathContext.html#getForm()"/> 
+        /// <see href="https://developer.android.com/reference/android/icu/math/MathContext.html#getDigits()"/>
         /// </summary>
-        public int Form
+        /// <returns><see cref="int"/></returns>
+        public int GetDigits()
         {
-            get { return IExecuteWithSignature<int>("getForm", "()I"); }
+            return IExecuteWithSignature<int>("getDigits", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/math/MathContext.html#getLostDigits()"/> 
+        /// <see href="https://developer.android.com/reference/android/icu/math/MathContext.html#getForm()"/>
         /// </summary>
-        public bool LostDigits
+        /// <returns><see cref="int"/></returns>
+        public int GetForm()
         {
-            get { return IExecuteWithSignature<bool>("getLostDigits", "()Z"); }
+            return IExecuteWithSignature<int>("getForm", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/math/MathContext.html#getRoundingMode()"/> 
+        /// <see href="https://developer.android.com/reference/android/icu/math/MathContext.html#getRoundingMode()"/>
         /// </summary>
-        public int RoundingMode
+        /// <returns><see cref="int"/></returns>
+        public int GetRoundingMode()
         {
-            get { return IExecuteWithSignature<int>("getRoundingMode", "()I"); }
+            return IExecuteWithSignature<int>("getRoundingMode", "()I");
         }
 
         #endregion

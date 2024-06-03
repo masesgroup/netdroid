@@ -64,18 +64,20 @@ namespace Org.Xml.Sax.Ext
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/ext/Locator2.html#getEncoding()"/> 
+        /// <see href="https://developer.android.com/reference/org/xml/sax/ext/Locator2.html#getEncoding()"/>
         /// </summary>
-        public Java.Lang.String Encoding
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetEncoding()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getEncoding", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getEncoding", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/ext/Locator2.html#getXMLVersion()"/> 
+        /// <see href="https://developer.android.com/reference/org/xml/sax/ext/Locator2.html#getXMLVersion()"/>
         /// </summary>
-        public Java.Lang.String XMLVersion
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetXMLVersion()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getXMLVersion", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getXMLVersion", "()Ljava/lang/String;");
         }
 
         #endregion

@@ -70,25 +70,20 @@ namespace Android.View.Translation
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/translation/TranslationResponse.html#getTranslationResponseValues()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/translation/TranslationResponse.html#getTranslationResponseValues()"/>
         /// </summary>
-        public Android.Util.SparseArray<Android.View.Translation.TranslationResponseValue> TranslationResponseValues
+        /// <returns><see cref="Android.Util.SparseArray"/></returns>
+        public Android.Util.SparseArray<Android.View.Translation.TranslationResponseValue> GetTranslationResponseValues()
         {
-            get { return IExecuteWithSignature<Android.Util.SparseArray<Android.View.Translation.TranslationResponseValue>>("getTranslationResponseValues", "()Landroid/util/SparseArray;"); }
+            return IExecuteWithSignature<Android.Util.SparseArray<Android.View.Translation.TranslationResponseValue>>("getTranslationResponseValues", "()Landroid/util/SparseArray;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/translation/TranslationResponse.html#getTranslationStatus()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/translation/TranslationResponse.html#getViewTranslationResponses()"/>
         /// </summary>
-        public int TranslationStatus
+        /// <returns><see cref="Android.Util.SparseArray"/></returns>
+        public Android.Util.SparseArray<Android.View.Translation.ViewTranslationResponse> GetViewTranslationResponses()
         {
-            get { return IExecuteWithSignature<int>("getTranslationStatus", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/translation/TranslationResponse.html#getViewTranslationResponses()"/> 
-        /// </summary>
-        public Android.Util.SparseArray<Android.View.Translation.ViewTranslationResponse> ViewTranslationResponses
-        {
-            get { return IExecuteWithSignature<Android.Util.SparseArray<Android.View.Translation.ViewTranslationResponse>>("getViewTranslationResponses", "()Landroid/util/SparseArray;"); }
+            return IExecuteWithSignature<Android.Util.SparseArray<Android.View.Translation.ViewTranslationResponse>>("getViewTranslationResponses", "()Landroid/util/SparseArray;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/translation/TranslationResponse.html#isFinalResponse()"/>
@@ -105,6 +100,14 @@ namespace Android.View.Translation
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/translation/TranslationResponse.html#getTranslationStatus()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTranslationStatus()
+        {
+            return IExecuteWithSignature<int>("getTranslationStatus", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/translation/TranslationResponse.html#writeToParcel(android.os.Parcel,int)"/>

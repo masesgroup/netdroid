@@ -63,11 +63,20 @@ namespace Android.Transition
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/transition/PatternPathMotion.html#getPatternPath()"/> <see href="https://developer.android.com/reference/android/transition/PatternPathMotion.html#setPatternPath(android.graphics.Path)"/>
+        /// <see href="https://developer.android.com/reference/android/transition/PatternPathMotion.html#getPatternPath()"/>
         /// </summary>
-        public Android.Graphics.Path PatternPath
+        /// <returns><see cref="Android.Graphics.Path"/></returns>
+        public Android.Graphics.Path GetPatternPath()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Path>("getPatternPath", "()Landroid/graphics/Path;"); } set { IExecuteWithSignature("setPatternPath", "(Landroid/graphics/Path;)V", value); }
+            return IExecuteWithSignature<Android.Graphics.Path>("getPatternPath", "()Landroid/graphics/Path;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/transition/PatternPathMotion.html#setPatternPath(android.graphics.Path)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Path"/></param>
+        public void SetPatternPath(Android.Graphics.Path arg0)
+        {
+            IExecuteWithSignature("setPatternPath", "(Landroid/graphics/Path;)V", arg0);
         }
 
         #endregion

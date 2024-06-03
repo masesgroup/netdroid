@@ -52,53 +52,20 @@ namespace Android.Telephony
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/PreciseDataConnectionState.html#getApnSetting()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/PreciseDataConnectionState.html#getLinkProperties()"/>
         /// </summary>
-        public Android.Telephony.Data.ApnSetting ApnSetting
+        /// <returns><see cref="Android.Net.LinkProperties"/></returns>
+        public Android.Net.LinkProperties GetLinkProperties()
         {
-            get { return IExecuteWithSignature<Android.Telephony.Data.ApnSetting>("getApnSetting", "()Landroid/telephony/data/ApnSetting;"); }
+            return IExecuteWithSignature<Android.Net.LinkProperties>("getLinkProperties", "()Landroid/net/LinkProperties;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/PreciseDataConnectionState.html#getId()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/PreciseDataConnectionState.html#getApnSetting()"/>
         /// </summary>
-        public int Id
+        /// <returns><see cref="Android.Telephony.Data.ApnSetting"/></returns>
+        public Android.Telephony.Data.ApnSetting GetApnSetting()
         {
-            get { return IExecuteWithSignature<int>("getId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/PreciseDataConnectionState.html#getLastCauseCode()"/> 
-        /// </summary>
-        public int LastCauseCode
-        {
-            get { return IExecuteWithSignature<int>("getLastCauseCode", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/PreciseDataConnectionState.html#getLinkProperties()"/> 
-        /// </summary>
-        public Android.Net.LinkProperties LinkProperties
-        {
-            get { return IExecuteWithSignature<Android.Net.LinkProperties>("getLinkProperties", "()Landroid/net/LinkProperties;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/PreciseDataConnectionState.html#getNetworkType()"/> 
-        /// </summary>
-        public int NetworkType
-        {
-            get { return IExecuteWithSignature<int>("getNetworkType", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/PreciseDataConnectionState.html#getState()"/> 
-        /// </summary>
-        public int State
-        {
-            get { return IExecuteWithSignature<int>("getState", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/PreciseDataConnectionState.html#getTransportType()"/> 
-        /// </summary>
-        public int TransportType
-        {
-            get { return IExecuteWithSignature<int>("getTransportType", "()I"); }
+            return IExecuteWithSignature<Android.Telephony.Data.ApnSetting>("getApnSetting", "()Landroid/telephony/data/ApnSetting;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/PreciseDataConnectionState.html#describeContents()"/>
@@ -107,6 +74,46 @@ namespace Android.Telephony
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/PreciseDataConnectionState.html#getId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetId()
+        {
+            return IExecuteWithSignature<int>("getId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/PreciseDataConnectionState.html#getLastCauseCode()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetLastCauseCode()
+        {
+            return IExecuteWithSignature<int>("getLastCauseCode", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/PreciseDataConnectionState.html#getNetworkType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetNetworkType()
+        {
+            return IExecuteWithSignature<int>("getNetworkType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/PreciseDataConnectionState.html#getState()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetState()
+        {
+            return IExecuteWithSignature<int>("getState", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/PreciseDataConnectionState.html#getTransportType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTransportType()
+        {
+            return IExecuteWithSignature<int>("getTransportType", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/PreciseDataConnectionState.html#writeToParcel(android.os.Parcel,int)"/>

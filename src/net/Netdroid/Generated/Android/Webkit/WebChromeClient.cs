@@ -46,18 +46,20 @@ namespace Android.Webkit
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebChromeClient.html#getDefaultVideoPoster()"/> 
+        /// <see href="https://developer.android.com/reference/android/webkit/WebChromeClient.html#getDefaultVideoPoster()"/>
         /// </summary>
-        public Android.Graphics.Bitmap DefaultVideoPoster
+        /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
+        public Android.Graphics.Bitmap GetDefaultVideoPoster()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Bitmap>("getDefaultVideoPoster", "()Landroid/graphics/Bitmap;"); }
+            return IExecuteWithSignature<Android.Graphics.Bitmap>("getDefaultVideoPoster", "()Landroid/graphics/Bitmap;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebChromeClient.html#getVideoLoadingProgressView()"/> 
+        /// <see href="https://developer.android.com/reference/android/webkit/WebChromeClient.html#getVideoLoadingProgressView()"/>
         /// </summary>
-        public Android.View.View VideoLoadingProgressView
+        /// <returns><see cref="Android.View.View"/></returns>
+        public Android.View.View GetVideoLoadingProgressView()
         {
-            get { return IExecuteWithSignature<Android.View.View>("getVideoLoadingProgressView", "()Landroid/view/View;"); }
+            return IExecuteWithSignature<Android.View.View>("getVideoLoadingProgressView", "()Landroid/view/View;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebChromeClient.html#onConsoleMessage(android.webkit.ConsoleMessage)"/>
@@ -133,7 +135,7 @@ namespace Android.Webkit
         /// <see href="https://developer.android.com/reference/android/webkit/WebChromeClient.html#onJsTimeout()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool OnJsTimeout()
         {
             return IExecuteWithSignature<bool>("onJsTimeout", "()Z");
@@ -171,7 +173,7 @@ namespace Android.Webkit
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Java.Lang.String"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnConsoleMessage(Java.Lang.String arg0, int arg1, Java.Lang.String arg2)
         {
             IExecute("onConsoleMessage", arg0, arg1, arg2);
@@ -185,7 +187,7 @@ namespace Android.Webkit
         /// <param name="arg3"><see cref="long"/></param>
         /// <param name="arg4"><see cref="long"/></param>
         /// <param name="arg5"><see cref="Android.Webkit.WebStorage.QuotaUpdater"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnExceededDatabaseQuota(Java.Lang.String arg0, Java.Lang.String arg1, long arg2, long arg3, long arg4, Android.Webkit.WebStorage.QuotaUpdater arg5)
         {
             IExecute("onExceededDatabaseQuota", arg0, arg1, arg2, arg3, arg4, arg5);
@@ -289,7 +291,7 @@ namespace Android.Webkit
         /// <param name="arg0"><see cref="Android.View.View"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="Android.Webkit.WebChromeClient.CustomViewCallback"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnShowCustomView(Android.View.View arg0, int arg1, Android.Webkit.WebChromeClient.CustomViewCallback arg2)
         {
             IExecute("onShowCustomView", arg0, arg1, arg2);
@@ -385,34 +387,6 @@ namespace Android.Webkit
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/webkit/WebChromeClient.FileChooserParams.html#getAcceptTypes()"/> 
-            /// </summary>
-            public Java.Lang.String[] AcceptTypes
-            {
-                get { return IExecuteWithSignatureArray<Java.Lang.String>("getAcceptTypes", "()[Ljava/lang/String;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/webkit/WebChromeClient.FileChooserParams.html#getFilenameHint()"/> 
-            /// </summary>
-            public Java.Lang.String FilenameHint
-            {
-                get { return IExecuteWithSignature<Java.Lang.String>("getFilenameHint", "()Ljava/lang/String;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/webkit/WebChromeClient.FileChooserParams.html#getMode()"/> 
-            /// </summary>
-            public int Mode
-            {
-                get { return IExecuteWithSignature<int>("getMode", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/webkit/WebChromeClient.FileChooserParams.html#getTitle()"/> 
-            /// </summary>
-            public Java.Lang.CharSequence Title
-            {
-                get { return IExecuteWithSignature<Java.Lang.CharSequence>("getTitle", "()Ljava/lang/CharSequence;"); }
-            }
-            /// <summary>
             /// <see href="https://developer.android.com/reference/android/webkit/WebChromeClient.FileChooserParams.html#createIntent()"/>
             /// </summary>
             /// <returns><see cref="Android.Content.Intent"/></returns>
@@ -427,6 +401,38 @@ namespace Android.Webkit
             public bool IsCaptureEnabled()
             {
                 return IExecuteWithSignature<bool>("isCaptureEnabled", "()Z");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/webkit/WebChromeClient.FileChooserParams.html#getMode()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetMode()
+            {
+                return IExecuteWithSignature<int>("getMode", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/webkit/WebChromeClient.FileChooserParams.html#getTitle()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+            public Java.Lang.CharSequence GetTitle()
+            {
+                return IExecuteWithSignature<Java.Lang.CharSequence>("getTitle", "()Ljava/lang/CharSequence;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/webkit/WebChromeClient.FileChooserParams.html#getFilenameHint()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetFilenameHint()
+            {
+                return IExecuteWithSignature<Java.Lang.String>("getFilenameHint", "()Ljava/lang/String;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/webkit/WebChromeClient.FileChooserParams.html#getAcceptTypes()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String[] GetAcceptTypes()
+            {
+                return IExecuteWithSignatureArray<Java.Lang.String>("getAcceptTypes", "()[Ljava/lang/String;");
             }
 
             #endregion

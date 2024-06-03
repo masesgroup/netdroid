@@ -50,107 +50,81 @@ namespace Android.Net
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/UrlQuerySanitizer.html#getAllButNulAndAngleBracketsLegal()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/UrlQuerySanitizer.html#getAllButNulAndAngleBracketsLegal()"/>
         /// </summary>
-        public static Android.Net.UrlQuerySanitizer.ValueSanitizer AllButNulAndAngleBracketsLegal
+        /// <returns><see cref="Android.Net.UrlQuerySanitizer.ValueSanitizer"/></returns>
+        public static Android.Net.UrlQuerySanitizer.ValueSanitizer GetAllButNulAndAngleBracketsLegal()
         {
-            get { return SExecuteWithSignature<Android.Net.UrlQuerySanitizer.ValueSanitizer>(LocalBridgeClazz, "getAllButNulAndAngleBracketsLegal", "()Landroid/net/UrlQuerySanitizer$ValueSanitizer;"); }
+            return SExecuteWithSignature<Android.Net.UrlQuerySanitizer.ValueSanitizer>(LocalBridgeClazz, "getAllButNulAndAngleBracketsLegal", "()Landroid/net/UrlQuerySanitizer$ValueSanitizer;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/UrlQuerySanitizer.html#getAllButNulLegal()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/UrlQuerySanitizer.html#getAllButNulLegal()"/>
         /// </summary>
-        public static Android.Net.UrlQuerySanitizer.ValueSanitizer AllButNulLegal
+        /// <returns><see cref="Android.Net.UrlQuerySanitizer.ValueSanitizer"/></returns>
+        public static Android.Net.UrlQuerySanitizer.ValueSanitizer GetAllButNulLegal()
         {
-            get { return SExecuteWithSignature<Android.Net.UrlQuerySanitizer.ValueSanitizer>(LocalBridgeClazz, "getAllButNulLegal", "()Landroid/net/UrlQuerySanitizer$ValueSanitizer;"); }
+            return SExecuteWithSignature<Android.Net.UrlQuerySanitizer.ValueSanitizer>(LocalBridgeClazz, "getAllButNulLegal", "()Landroid/net/UrlQuerySanitizer$ValueSanitizer;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/UrlQuerySanitizer.html#getAllButWhitespaceLegal()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/UrlQuerySanitizer.html#getAllButWhitespaceLegal()"/>
         /// </summary>
-        public static Android.Net.UrlQuerySanitizer.ValueSanitizer AllButWhitespaceLegal
+        /// <returns><see cref="Android.Net.UrlQuerySanitizer.ValueSanitizer"/></returns>
+        public static Android.Net.UrlQuerySanitizer.ValueSanitizer GetAllButWhitespaceLegal()
         {
-            get { return SExecuteWithSignature<Android.Net.UrlQuerySanitizer.ValueSanitizer>(LocalBridgeClazz, "getAllButWhitespaceLegal", "()Landroid/net/UrlQuerySanitizer$ValueSanitizer;"); }
+            return SExecuteWithSignature<Android.Net.UrlQuerySanitizer.ValueSanitizer>(LocalBridgeClazz, "getAllButWhitespaceLegal", "()Landroid/net/UrlQuerySanitizer$ValueSanitizer;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/UrlQuerySanitizer.html#getAllIllegal()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/UrlQuerySanitizer.html#getAllIllegal()"/>
         /// </summary>
-        public static Android.Net.UrlQuerySanitizer.ValueSanitizer AllIllegal
+        /// <returns><see cref="Android.Net.UrlQuerySanitizer.ValueSanitizer"/></returns>
+        public static Android.Net.UrlQuerySanitizer.ValueSanitizer GetAllIllegal()
         {
-            get { return SExecuteWithSignature<Android.Net.UrlQuerySanitizer.ValueSanitizer>(LocalBridgeClazz, "getAllIllegal", "()Landroid/net/UrlQuerySanitizer$ValueSanitizer;"); }
+            return SExecuteWithSignature<Android.Net.UrlQuerySanitizer.ValueSanitizer>(LocalBridgeClazz, "getAllIllegal", "()Landroid/net/UrlQuerySanitizer$ValueSanitizer;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/UrlQuerySanitizer.html#getAmpAndSpaceLegal()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/UrlQuerySanitizer.html#getAmpAndSpaceLegal()"/>
         /// </summary>
-        public static Android.Net.UrlQuerySanitizer.ValueSanitizer AmpAndSpaceLegal
+        /// <returns><see cref="Android.Net.UrlQuerySanitizer.ValueSanitizer"/></returns>
+        public static Android.Net.UrlQuerySanitizer.ValueSanitizer GetAmpAndSpaceLegal()
         {
-            get { return SExecuteWithSignature<Android.Net.UrlQuerySanitizer.ValueSanitizer>(LocalBridgeClazz, "getAmpAndSpaceLegal", "()Landroid/net/UrlQuerySanitizer$ValueSanitizer;"); }
+            return SExecuteWithSignature<Android.Net.UrlQuerySanitizer.ValueSanitizer>(LocalBridgeClazz, "getAmpAndSpaceLegal", "()Landroid/net/UrlQuerySanitizer$ValueSanitizer;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/UrlQuerySanitizer.html#getAmpLegal()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/UrlQuerySanitizer.html#getAmpLegal()"/>
         /// </summary>
-        public static Android.Net.UrlQuerySanitizer.ValueSanitizer AmpLegal
+        /// <returns><see cref="Android.Net.UrlQuerySanitizer.ValueSanitizer"/></returns>
+        public static Android.Net.UrlQuerySanitizer.ValueSanitizer GetAmpLegal()
         {
-            get { return SExecuteWithSignature<Android.Net.UrlQuerySanitizer.ValueSanitizer>(LocalBridgeClazz, "getAmpLegal", "()Landroid/net/UrlQuerySanitizer$ValueSanitizer;"); }
+            return SExecuteWithSignature<Android.Net.UrlQuerySanitizer.ValueSanitizer>(LocalBridgeClazz, "getAmpLegal", "()Landroid/net/UrlQuerySanitizer$ValueSanitizer;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/UrlQuerySanitizer.html#getSpaceLegal()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/UrlQuerySanitizer.html#getSpaceLegal()"/>
         /// </summary>
-        public static Android.Net.UrlQuerySanitizer.ValueSanitizer SpaceLegal
+        /// <returns><see cref="Android.Net.UrlQuerySanitizer.ValueSanitizer"/></returns>
+        public static Android.Net.UrlQuerySanitizer.ValueSanitizer GetSpaceLegal()
         {
-            get { return SExecuteWithSignature<Android.Net.UrlQuerySanitizer.ValueSanitizer>(LocalBridgeClazz, "getSpaceLegal", "()Landroid/net/UrlQuerySanitizer$ValueSanitizer;"); }
+            return SExecuteWithSignature<Android.Net.UrlQuerySanitizer.ValueSanitizer>(LocalBridgeClazz, "getSpaceLegal", "()Landroid/net/UrlQuerySanitizer$ValueSanitizer;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/UrlQuerySanitizer.html#getUrlAndSpaceLegal()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/UrlQuerySanitizer.html#getUrlAndSpaceLegal()"/>
         /// </summary>
-        public static Android.Net.UrlQuerySanitizer.ValueSanitizer UrlAndSpaceLegal
+        /// <returns><see cref="Android.Net.UrlQuerySanitizer.ValueSanitizer"/></returns>
+        public static Android.Net.UrlQuerySanitizer.ValueSanitizer GetUrlAndSpaceLegal()
         {
-            get { return SExecuteWithSignature<Android.Net.UrlQuerySanitizer.ValueSanitizer>(LocalBridgeClazz, "getUrlAndSpaceLegal", "()Landroid/net/UrlQuerySanitizer$ValueSanitizer;"); }
+            return SExecuteWithSignature<Android.Net.UrlQuerySanitizer.ValueSanitizer>(LocalBridgeClazz, "getUrlAndSpaceLegal", "()Landroid/net/UrlQuerySanitizer$ValueSanitizer;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/UrlQuerySanitizer.html#getUrlLegal()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/UrlQuerySanitizer.html#getUrlLegal()"/>
         /// </summary>
-        public static Android.Net.UrlQuerySanitizer.ValueSanitizer UrlLegal
+        /// <returns><see cref="Android.Net.UrlQuerySanitizer.ValueSanitizer"/></returns>
+        public static Android.Net.UrlQuerySanitizer.ValueSanitizer GetUrlLegal()
         {
-            get { return SExecuteWithSignature<Android.Net.UrlQuerySanitizer.ValueSanitizer>(LocalBridgeClazz, "getUrlLegal", "()Landroid/net/UrlQuerySanitizer$ValueSanitizer;"); }
+            return SExecuteWithSignature<Android.Net.UrlQuerySanitizer.ValueSanitizer>(LocalBridgeClazz, "getUrlLegal", "()Landroid/net/UrlQuerySanitizer$ValueSanitizer;");
         }
 
         #endregion
 
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/UrlQuerySanitizer.html#getAllowUnregisteredParamaters()"/> <see href="https://developer.android.com/reference/android/net/UrlQuerySanitizer.html#setAllowUnregisteredParamaters(boolean)"/>
-        /// </summary>
-        public bool AllowUnregisteredParamaters
-        {
-            get { return IExecuteWithSignature<bool>("getAllowUnregisteredParamaters", "()Z"); } set { IExecuteWithSignature("setAllowUnregisteredParamaters", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/UrlQuerySanitizer.html#getParameterList()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Net.UrlQuerySanitizer.ParameterValuePair> ParameterList
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Net.UrlQuerySanitizer.ParameterValuePair>>("getParameterList", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/UrlQuerySanitizer.html#getParameterSet()"/> 
-        /// </summary>
-        public Java.Util.Set<Java.Lang.String> ParameterSet
-        {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getParameterSet", "()Ljava/util/Set;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/UrlQuerySanitizer.html#getPreferFirstRepeatedParameter()"/> <see href="https://developer.android.com/reference/android/net/UrlQuerySanitizer.html#setPreferFirstRepeatedParameter(boolean)"/>
-        /// </summary>
-        public bool PreferFirstRepeatedParameter
-        {
-            get { return IExecuteWithSignature<bool>("getPreferFirstRepeatedParameter", "()Z"); } set { IExecuteWithSignature("setPreferFirstRepeatedParameter", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/UrlQuerySanitizer.html#getUnregisteredParameterValueSanitizer()"/> <see href="https://developer.android.com/reference/android/net/UrlQuerySanitizer.html#setUnregisteredParameterValueSanitizer(android.net.UrlQuerySanitizer.ValueSanitizer)"/>
-        /// </summary>
-        public Android.Net.UrlQuerySanitizer.ValueSanitizer UnregisteredParameterValueSanitizer
-        {
-            get { return IExecuteWithSignature<Android.Net.UrlQuerySanitizer.ValueSanitizer>("getUnregisteredParameterValueSanitizer", "()Landroid/net/UrlQuerySanitizer$ValueSanitizer;"); } set { IExecuteWithSignature("setUnregisteredParameterValueSanitizer", "(Landroid/net/UrlQuerySanitizer$ValueSanitizer;)V", value); }
-        }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/UrlQuerySanitizer.html#getEffectiveValueSanitizer(java.lang.String)"/>
         /// </summary>
@@ -161,6 +135,14 @@ namespace Android.Net
             return IExecuteWithSignature<Android.Net.UrlQuerySanitizer.ValueSanitizer>("getEffectiveValueSanitizer", "(Ljava/lang/String;)Landroid/net/UrlQuerySanitizer$ValueSanitizer;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/UrlQuerySanitizer.html#getUnregisteredParameterValueSanitizer()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Net.UrlQuerySanitizer.ValueSanitizer"/></returns>
+        public Android.Net.UrlQuerySanitizer.ValueSanitizer GetUnregisteredParameterValueSanitizer()
+        {
+            return IExecuteWithSignature<Android.Net.UrlQuerySanitizer.ValueSanitizer>("getUnregisteredParameterValueSanitizer", "()Landroid/net/UrlQuerySanitizer$ValueSanitizer;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/UrlQuerySanitizer.html#getValueSanitizer(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -168,6 +150,22 @@ namespace Android.Net
         public Android.Net.UrlQuerySanitizer.ValueSanitizer GetValueSanitizer(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Android.Net.UrlQuerySanitizer.ValueSanitizer>("getValueSanitizer", "(Ljava/lang/String;)Landroid/net/UrlQuerySanitizer$ValueSanitizer;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/UrlQuerySanitizer.html#getAllowUnregisteredParamaters()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetAllowUnregisteredParamaters()
+        {
+            return IExecuteWithSignature<bool>("getAllowUnregisteredParamaters", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/UrlQuerySanitizer.html#getPreferFirstRepeatedParameter()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetPreferFirstRepeatedParameter()
+        {
+            return IExecuteWithSignature<bool>("getPreferFirstRepeatedParameter", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/UrlQuerySanitizer.html#hasParameter(java.lang.String)"/>
@@ -195,6 +193,22 @@ namespace Android.Net
         public Java.Lang.String Unescape(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("unescape", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/UrlQuerySanitizer.html#getParameterList()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Net.UrlQuerySanitizer.ParameterValuePair> GetParameterList()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Net.UrlQuerySanitizer.ParameterValuePair>>("getParameterList", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/UrlQuerySanitizer.html#getParameterSet()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Lang.String> GetParameterSet()
+        {
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getParameterSet", "()Ljava/util/Set;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/UrlQuerySanitizer.html#parseQuery(java.lang.String)"/>
@@ -229,6 +243,30 @@ namespace Android.Net
         public void RegisterParameters(Java.Lang.String[] arg0, Android.Net.UrlQuerySanitizer.ValueSanitizer arg1)
         {
             IExecute("registerParameters", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/UrlQuerySanitizer.html#setAllowUnregisteredParamaters(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetAllowUnregisteredParamaters(bool arg0)
+        {
+            IExecuteWithSignature("setAllowUnregisteredParamaters", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/UrlQuerySanitizer.html#setPreferFirstRepeatedParameter(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetPreferFirstRepeatedParameter(bool arg0)
+        {
+            IExecuteWithSignature("setPreferFirstRepeatedParameter", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/UrlQuerySanitizer.html#setUnregisteredParameterValueSanitizer(android.net.UrlQuerySanitizer.ValueSanitizer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Net.UrlQuerySanitizer.ValueSanitizer"/></param>
+        public void SetUnregisteredParameterValueSanitizer(Android.Net.UrlQuerySanitizer.ValueSanitizer arg0)
+        {
+            IExecuteWithSignature("setUnregisteredParameterValueSanitizer", "(Landroid/net/UrlQuerySanitizer$ValueSanitizer;)V", arg0);
         }
 
         #endregion

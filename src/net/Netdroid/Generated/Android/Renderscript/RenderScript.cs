@@ -40,21 +40,21 @@ namespace Android.Renderscript
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/RenderScript.html#CREATE_FLAG_LOW_LATENCY"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int CREATE_FLAG_LOW_LATENCY { get { if (!_CREATE_FLAG_LOW_LATENCYReady) { _CREATE_FLAG_LOW_LATENCYContent = SGetField<int>(LocalBridgeClazz, "CREATE_FLAG_LOW_LATENCY"); _CREATE_FLAG_LOW_LATENCYReady = true; } return _CREATE_FLAG_LOW_LATENCYContent; } }
         private static int _CREATE_FLAG_LOW_LATENCYContent = default;
         private static bool _CREATE_FLAG_LOW_LATENCYReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/RenderScript.html#CREATE_FLAG_LOW_POWER"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int CREATE_FLAG_LOW_POWER { get { if (!_CREATE_FLAG_LOW_POWERReady) { _CREATE_FLAG_LOW_POWERContent = SGetField<int>(LocalBridgeClazz, "CREATE_FLAG_LOW_POWER"); _CREATE_FLAG_LOW_POWERReady = true; } return _CREATE_FLAG_LOW_POWERContent; } }
         private static int _CREATE_FLAG_LOW_POWERContent = default;
         private static bool _CREATE_FLAG_LOW_POWERReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/RenderScript.html#CREATE_FLAG_NONE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int CREATE_FLAG_NONE { get { if (!_CREATE_FLAG_NONEReady) { _CREATE_FLAG_NONEContent = SGetField<int>(LocalBridgeClazz, "CREATE_FLAG_NONE"); _CREATE_FLAG_NONEReady = true; } return _CREATE_FLAG_NONEContent; } }
         private static int _CREATE_FLAG_NONEContent = default;
         private static bool _CREATE_FLAG_NONEReady = false; // this is used because in case of generics 
@@ -63,21 +63,13 @@ namespace Android.Renderscript
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/renderscript/RenderScript.html#getMinorVersion()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public static long MinorVersion
-        {
-            get { return SExecuteWithSignature<long>(LocalBridgeClazz, "getMinorVersion", "()J"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/RenderScript.html#create(android.content.Context,android.renderscript.RenderScript.ContextType,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
         /// <param name="arg1"><see cref="Android.Renderscript.RenderScript.ContextType"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see cref="Android.Renderscript.RenderScript"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.RenderScript Create(Android.Content.Context arg0, Android.Renderscript.RenderScript.ContextType arg1, int arg2)
         {
             return SExecute<Android.Renderscript.RenderScript>(LocalBridgeClazz, "create", arg0, arg1, arg2);
@@ -88,7 +80,7 @@ namespace Android.Renderscript
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
         /// <param name="arg1"><see cref="Android.Renderscript.RenderScript.ContextType"/></param>
         /// <returns><see cref="Android.Renderscript.RenderScript"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.RenderScript Create(Android.Content.Context arg0, Android.Renderscript.RenderScript.ContextType arg1)
         {
             return SExecute<Android.Renderscript.RenderScript>(LocalBridgeClazz, "create", arg0, arg1);
@@ -98,7 +90,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
         /// <returns><see cref="Android.Renderscript.RenderScript"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.RenderScript Create(Android.Content.Context arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.RenderScript>(LocalBridgeClazz, "create", "(Landroid/content/Context;)Landroid/renderscript/RenderScript;", arg0);
@@ -111,15 +103,24 @@ namespace Android.Renderscript
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <returns><see cref="Android.Renderscript.RenderScript"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.RenderScript CreateMultiContext(Android.Content.Context arg0, Android.Renderscript.RenderScript.ContextType arg1, int arg2, int arg3)
         {
             return SExecute<Android.Renderscript.RenderScript>(LocalBridgeClazz, "createMultiContext", arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/renderscript/RenderScript.html#getMinorVersion()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        [global::System.Obsolete()]
+        public static long GetMinorVersion()
+        {
+            return SExecuteWithSignature<long>(LocalBridgeClazz, "getMinorVersion", "()J");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/RenderScript.html#releaseAllContexts()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static void ReleaseAllContexts()
         {
             SExecuteWithSignature(LocalBridgeClazz, "releaseAllContexts", "()V");
@@ -129,33 +130,36 @@ namespace Android.Renderscript
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/renderscript/RenderScript.html#getApplicationContext()"/> 
+        /// <see href="https://developer.android.com/reference/android/renderscript/RenderScript.html#getErrorHandler()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Content.Context ApplicationContext
+        /// <returns><see cref="Android.Renderscript.RenderScript.RSErrorHandler"/></returns>
+        [global::System.Obsolete()]
+        public Android.Renderscript.RenderScript.RSErrorHandler GetErrorHandler()
         {
-            get { return IExecuteWithSignature<Android.Content.Context>("getApplicationContext", "()Landroid/content/Context;"); }
+            return IExecuteWithSignature<Android.Renderscript.RenderScript.RSErrorHandler>("getErrorHandler", "()Landroid/renderscript/RenderScript$RSErrorHandler;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/renderscript/RenderScript.html#getErrorHandler()"/> <see href="https://developer.android.com/reference/android/renderscript/RenderScript.html#setErrorHandler(android.renderscript.RenderScript.RSErrorHandler)"/>
+        /// <see href="https://developer.android.com/reference/android/renderscript/RenderScript.html#getMessageHandler()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Renderscript.RenderScript.RSErrorHandler ErrorHandler
+        /// <returns><see cref="Android.Renderscript.RenderScript.RSMessageHandler"/></returns>
+        [global::System.Obsolete()]
+        public Android.Renderscript.RenderScript.RSMessageHandler GetMessageHandler()
         {
-            get { return IExecuteWithSignature<Android.Renderscript.RenderScript.RSErrorHandler>("getErrorHandler", "()Landroid/renderscript/RenderScript$RSErrorHandler;"); } set { IExecuteWithSignature("setErrorHandler", "(Landroid/renderscript/RenderScript$RSErrorHandler;)V", value); }
+            return IExecuteWithSignature<Android.Renderscript.RenderScript.RSMessageHandler>("getMessageHandler", "()Landroid/renderscript/RenderScript$RSMessageHandler;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/renderscript/RenderScript.html#getMessageHandler()"/> <see href="https://developer.android.com/reference/android/renderscript/RenderScript.html#setMessageHandler(android.renderscript.RenderScript.RSMessageHandler)"/>
+        /// <see href="https://developer.android.com/reference/android/renderscript/RenderScript.html#getApplicationContext()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Renderscript.RenderScript.RSMessageHandler MessageHandler
+        /// <returns><see cref="Android.Content.Context"/></returns>
+        [global::System.Obsolete()]
+        public Android.Content.Context GetApplicationContext()
         {
-            get { return IExecuteWithSignature<Android.Renderscript.RenderScript.RSMessageHandler>("getMessageHandler", "()Landroid/renderscript/RenderScript$RSMessageHandler;"); } set { IExecuteWithSignature("setMessageHandler", "(Landroid/renderscript/RenderScript$RSMessageHandler;)V", value); }
+            return IExecuteWithSignature<Android.Content.Context>("getApplicationContext", "()Landroid/content/Context;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/RenderScript.html#contextDump()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ContextDump()
         {
             IExecuteWithSignature("contextDump", "()V");
@@ -163,7 +167,7 @@ namespace Android.Renderscript
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/RenderScript.html#destroy()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Destroy()
         {
             IExecuteWithSignature("destroy", "()V");
@@ -171,7 +175,7 @@ namespace Android.Renderscript
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/RenderScript.html#finish()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Finish()
         {
             IExecuteWithSignature("finish", "()V");
@@ -181,16 +185,34 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SendMessage(int arg0, int[] arg1)
         {
             IExecute("sendMessage", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/renderscript/RenderScript.html#setErrorHandler(android.renderscript.RenderScript.RSErrorHandler)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Renderscript.RenderScript.RSErrorHandler"/></param>
+        [global::System.Obsolete()]
+        public void SetErrorHandler(Android.Renderscript.RenderScript.RSErrorHandler arg0)
+        {
+            IExecuteWithSignature("setErrorHandler", "(Landroid/renderscript/RenderScript$RSErrorHandler;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/renderscript/RenderScript.html#setMessageHandler(android.renderscript.RenderScript.RSMessageHandler)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Renderscript.RenderScript.RSMessageHandler"/></param>
+        [global::System.Obsolete()]
+        public void SetMessageHandler(Android.Renderscript.RenderScript.RSMessageHandler arg0)
+        {
+            IExecuteWithSignature("setMessageHandler", "(Landroid/renderscript/RenderScript$RSMessageHandler;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/RenderScript.html#setPriority(android.renderscript.RenderScript.Priority)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript.Priority"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetPriority(Android.Renderscript.RenderScript.Priority arg0)
         {
             IExecuteWithSignature("setPriority", "(Landroid/renderscript/RenderScript$Priority;)V", arg0);
@@ -214,21 +236,21 @@ namespace Android.Renderscript
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/RenderScript.ContextType.html#DEBUG"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Renderscript.RenderScript.ContextType DEBUG { get { if (!_DEBUGReady) { _DEBUGContent = SGetField<Android.Renderscript.RenderScript.ContextType>(LocalBridgeClazz, "DEBUG"); _DEBUGReady = true; } return _DEBUGContent; } }
             private static Android.Renderscript.RenderScript.ContextType _DEBUGContent = default;
             private static bool _DEBUGReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/RenderScript.ContextType.html#NORMAL"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Renderscript.RenderScript.ContextType NORMAL { get { if (!_NORMALReady) { _NORMALContent = SGetField<Android.Renderscript.RenderScript.ContextType>(LocalBridgeClazz, "NORMAL"); _NORMALReady = true; } return _NORMALContent; } }
             private static Android.Renderscript.RenderScript.ContextType _NORMALContent = default;
             private static bool _NORMALReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/RenderScript.ContextType.html#PROFILE"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Renderscript.RenderScript.ContextType PROFILE { get { if (!_PROFILEReady) { _PROFILEContent = SGetField<Android.Renderscript.RenderScript.ContextType>(LocalBridgeClazz, "PROFILE"); _PROFILEReady = true; } return _PROFILEContent; } }
             private static Android.Renderscript.RenderScript.ContextType _PROFILEContent = default;
             private static bool _PROFILEReady = false; // this is used because in case of generics 
@@ -283,14 +305,14 @@ namespace Android.Renderscript
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/RenderScript.Priority.html#LOW"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Renderscript.RenderScript.Priority LOW { get { if (!_LOWReady) { _LOWContent = SGetField<Android.Renderscript.RenderScript.Priority>(LocalBridgeClazz, "LOW"); _LOWReady = true; } return _LOWContent; } }
             private static Android.Renderscript.RenderScript.Priority _LOWContent = default;
             private static bool _LOWReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/RenderScript.Priority.html#NORMAL"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Android.Renderscript.RenderScript.Priority NORMAL { get { if (!_NORMALReady) { _NORMALContent = SGetField<Android.Renderscript.RenderScript.Priority>(LocalBridgeClazz, "NORMAL"); _NORMALReady = true; } return _NORMALContent; } }
             private static Android.Renderscript.RenderScript.Priority _NORMALContent = default;
             private static bool _NORMALReady = false; // this is used because in case of generics 
@@ -353,7 +375,7 @@ namespace Android.Renderscript
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/RenderScript.RSErrorHandler.html#run()"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void Run()
             {
                 IExecuteWithSignature("run", "()V");
@@ -392,7 +414,7 @@ namespace Android.Renderscript
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/renderscript/RenderScript.RSMessageHandler.html#run()"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void Run()
             {
                 IExecuteWithSignature("run", "()V");

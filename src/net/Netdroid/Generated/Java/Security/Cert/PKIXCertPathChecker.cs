@@ -54,14 +54,7 @@ namespace Java.Security.Cert
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/PKIXCertPathChecker.html#getSupportedExtensions()"/> 
-        /// </summary>
-        public Java.Util.Set<Java.Lang.String> SupportedExtensions
-        {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getSupportedExtensions", "()Ljava/util/Set;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/PKIXCertPathChecker.html#isForwardCheckingSupported()"/>
+        /// <see href="https://developer.android.com/reference/java/security/cert/PKIXCertPathChecker.html#isForwardCheckingSupported()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsForwardCheckingSupported()
@@ -69,7 +62,15 @@ namespace Java.Security.Cert
             return IExecuteWithSignature<bool>("isForwardCheckingSupported", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/PKIXCertPathChecker.html#check(java.security.cert.Certificate,java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/security/cert/PKIXCertPathChecker.html#getSupportedExtensions()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Lang.String> GetSupportedExtensions()
+        {
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getSupportedExtensions", "()Ljava/util/Set;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/cert/PKIXCertPathChecker.html#check(java.security.cert.Certificate,java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Cert.Certificate"/></param>
         /// <param name="arg1"><see cref="Java.Util.Collection"/></param>
@@ -79,7 +80,7 @@ namespace Java.Security.Cert
             IExecute("check", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/PKIXCertPathChecker.html#init(boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/security/cert/PKIXCertPathChecker.html#init(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <exception cref="Java.Security.Cert.CertPathValidatorException"/>
@@ -88,7 +89,7 @@ namespace Java.Security.Cert
             IExecuteWithSignature("init", "(Z)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/PKIXCertPathChecker.html#check(java.security.cert.Certificate)"/>
+        /// <see href="https://developer.android.com/reference/java/security/cert/PKIXCertPathChecker.html#check(java.security.cert.Certificate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Cert.Certificate"/></param>
         /// <exception cref="Java.Security.Cert.CertPathValidatorException"/>

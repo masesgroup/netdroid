@@ -93,26 +93,28 @@ namespace Android.Hardware.Display
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/display/HdrConversionMode.html#getConversionMode()"/> 
-        /// </summary>
-        public int ConversionMode
-        {
-            get { return IExecuteWithSignature<int>("getConversionMode", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/display/HdrConversionMode.html#getPreferredHdrOutputType()"/> 
-        /// </summary>
-        public int PreferredHdrOutputType
-        {
-            get { return IExecuteWithSignature<int>("getPreferredHdrOutputType", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/display/HdrConversionMode.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/display/HdrConversionMode.html#getConversionMode()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetConversionMode()
+        {
+            return IExecuteWithSignature<int>("getConversionMode", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/display/HdrConversionMode.html#getPreferredHdrOutputType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPreferredHdrOutputType()
+        {
+            return IExecuteWithSignature<int>("getPreferredHdrOutputType", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/display/HdrConversionMode.html#writeToParcel(android.os.Parcel,int)"/>

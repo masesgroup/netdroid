@@ -46,25 +46,28 @@ namespace Android.Health.Connect
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/AggregateRecordsRequest.html#getAggregationTypes()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/AggregateRecordsRequest.html#getTimeRangeFilter()"/>
         /// </summary>
-        public Java.Util.Set AggregationTypes
+        /// <returns><see cref="Android.Health.Connect.TimeRangeFilter"/></returns>
+        public Android.Health.Connect.TimeRangeFilter GetTimeRangeFilter()
         {
-            get { return IExecuteWithSignature<Java.Util.Set>("getAggregationTypes", "()Ljava/util/Set;"); }
+            return IExecuteWithSignature<Android.Health.Connect.TimeRangeFilter>("getTimeRangeFilter", "()Landroid/health/connect/TimeRangeFilter;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/AggregateRecordsRequest.html#getDataOriginsFilters()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/AggregateRecordsRequest.html#getAggregationTypes()"/>
         /// </summary>
-        public Java.Util.Set DataOriginsFilters
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set GetAggregationTypes()
         {
-            get { return IExecuteWithSignature<Java.Util.Set>("getDataOriginsFilters", "()Ljava/util/Set;"); }
+            return IExecuteWithSignature<Java.Util.Set>("getAggregationTypes", "()Ljava/util/Set;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/AggregateRecordsRequest.html#getTimeRangeFilter()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/AggregateRecordsRequest.html#getDataOriginsFilters()"/>
         /// </summary>
-        public Android.Health.Connect.TimeRangeFilter TimeRangeFilter
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set GetDataOriginsFilters()
         {
-            get { return IExecuteWithSignature<Android.Health.Connect.TimeRangeFilter>("getTimeRangeFilter", "()Landroid/health/connect/TimeRangeFilter;"); }
+            return IExecuteWithSignature<Java.Util.Set>("getDataOriginsFilters", "()Ljava/util/Set;");
         }
 
         #endregion
@@ -236,25 +239,28 @@ namespace Android.Health.Connect
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/AggregateRecordsRequest.html#getAggregationTypes()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/AggregateRecordsRequest.html#getTimeRangeFilter()"/>
         /// </summary>
-        public Java.Util.Set<Android.Health.Connect.Datatypes.AggregationType<T>> AggregationTypes
+        /// <returns><see cref="Android.Health.Connect.TimeRangeFilter"/></returns>
+        public Android.Health.Connect.TimeRangeFilter GetTimeRangeFilter()
         {
-            get { return IExecuteWithSignature<Java.Util.Set<Android.Health.Connect.Datatypes.AggregationType<T>>>("getAggregationTypes", "()Ljava/util/Set;"); }
+            return IExecuteWithSignature<Android.Health.Connect.TimeRangeFilter>("getTimeRangeFilter", "()Landroid/health/connect/TimeRangeFilter;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/AggregateRecordsRequest.html#getDataOriginsFilters()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/AggregateRecordsRequest.html#getAggregationTypes()"/>
         /// </summary>
-        public Java.Util.Set<Android.Health.Connect.Datatypes.DataOrigin> DataOriginsFilters
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Android.Health.Connect.Datatypes.AggregationType<T>> GetAggregationTypes()
         {
-            get { return IExecuteWithSignature<Java.Util.Set<Android.Health.Connect.Datatypes.DataOrigin>>("getDataOriginsFilters", "()Ljava/util/Set;"); }
+            return IExecuteWithSignature<Java.Util.Set<Android.Health.Connect.Datatypes.AggregationType<T>>>("getAggregationTypes", "()Ljava/util/Set;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/AggregateRecordsRequest.html#getTimeRangeFilter()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/AggregateRecordsRequest.html#getDataOriginsFilters()"/>
         /// </summary>
-        public Android.Health.Connect.TimeRangeFilter TimeRangeFilter
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Android.Health.Connect.Datatypes.DataOrigin> GetDataOriginsFilters()
         {
-            get { return IExecuteWithSignature<Android.Health.Connect.TimeRangeFilter>("getTimeRangeFilter", "()Landroid/health/connect/TimeRangeFilter;"); }
+            return IExecuteWithSignature<Java.Util.Set<Android.Health.Connect.Datatypes.DataOrigin>>("getDataOriginsFilters", "()Ljava/util/Set;");
         }
 
         #endregion

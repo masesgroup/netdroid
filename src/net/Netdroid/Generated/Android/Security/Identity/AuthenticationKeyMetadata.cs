@@ -46,18 +46,20 @@ namespace Android.Security.Identity
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/security/identity/AuthenticationKeyMetadata.html#getExpirationDate()"/> 
+        /// <see href="https://developer.android.com/reference/android/security/identity/AuthenticationKeyMetadata.html#getUsageCount()"/>
         /// </summary>
-        public Java.Time.Instant ExpirationDate
+        /// <returns><see cref="int"/></returns>
+        public int GetUsageCount()
         {
-            get { return IExecuteWithSignature<Java.Time.Instant>("getExpirationDate", "()Ljava/time/Instant;"); }
+            return IExecuteWithSignature<int>("getUsageCount", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/security/identity/AuthenticationKeyMetadata.html#getUsageCount()"/> 
+        /// <see href="https://developer.android.com/reference/android/security/identity/AuthenticationKeyMetadata.html#getExpirationDate()"/>
         /// </summary>
-        public int UsageCount
+        /// <returns><see cref="Java.Time.Instant"/></returns>
+        public Java.Time.Instant GetExpirationDate()
         {
-            get { return IExecuteWithSignature<int>("getUsageCount", "()I"); }
+            return IExecuteWithSignature<Java.Time.Instant>("getExpirationDate", "()Ljava/time/Instant;");
         }
 
         #endregion

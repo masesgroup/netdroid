@@ -61,25 +61,12 @@ namespace Android.View.Contentcapture
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/contentcapture/DataShareRequest.html#getLocusId()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/contentcapture/DataShareRequest.html#getLocusId()"/>
         /// </summary>
-        public Android.Content.LocusId LocusId
+        /// <returns><see cref="Android.Content.LocusId"/></returns>
+        public Android.Content.LocusId GetLocusId()
         {
-            get { return IExecuteWithSignature<Android.Content.LocusId>("getLocusId", "()Landroid/content/LocusId;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/contentcapture/DataShareRequest.html#getMimeType()"/> 
-        /// </summary>
-        public Java.Lang.String MimeType
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getMimeType", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/contentcapture/DataShareRequest.html#getPackageName()"/> 
-        /// </summary>
-        public Java.Lang.String PackageName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPackageName", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Android.Content.LocusId>("getLocusId", "()Landroid/content/LocusId;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/contentcapture/DataShareRequest.html#describeContents()"/>
@@ -88,6 +75,22 @@ namespace Android.View.Contentcapture
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/contentcapture/DataShareRequest.html#getMimeType()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetMimeType()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getMimeType", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/contentcapture/DataShareRequest.html#getPackageName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPackageName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPackageName", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/contentcapture/DataShareRequest.html#writeToParcel(android.os.Parcel,int)"/>

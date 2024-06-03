@@ -64,7 +64,7 @@ namespace Org.W3c.Dom
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/DOMErrorHandler.html#handleError(org.w3c.dom.DOMError)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/DOMErrorHandler.html#handleError(org.w3c.dom.DOMError)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.W3c.Dom.DOMError"/></param>
         /// <returns><see cref="bool"/></returns>

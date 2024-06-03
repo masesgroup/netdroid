@@ -60,7 +60,7 @@ namespace Android.Graphics
         /// <param name="arg3"><see cref="bool"/></param>
         /// <returns><see cref="Android.Graphics.BitmapRegionDecoder"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Graphics.BitmapRegionDecoder NewInstance(byte[] arg0, int arg1, int arg2, bool arg3)
         {
             return SExecute<Android.Graphics.BitmapRegionDecoder>(LocalBridgeClazz, "newInstance", arg0, arg1, arg2, arg3);
@@ -84,7 +84,7 @@ namespace Android.Graphics
         /// <param name="arg1"><see cref="bool"/></param>
         /// <returns><see cref="Android.Graphics.BitmapRegionDecoder"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Graphics.BitmapRegionDecoder NewInstance(Java.Io.FileDescriptor arg0, bool arg1)
         {
             return SExecute<Android.Graphics.BitmapRegionDecoder>(LocalBridgeClazz, "newInstance", arg0, arg1);
@@ -96,7 +96,7 @@ namespace Android.Graphics
         /// <param name="arg1"><see cref="bool"/></param>
         /// <returns><see cref="Android.Graphics.BitmapRegionDecoder"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Graphics.BitmapRegionDecoder NewInstance(Java.Io.InputStream arg0, bool arg1)
         {
             return SExecute<Android.Graphics.BitmapRegionDecoder>(LocalBridgeClazz, "newInstance", arg0, arg1);
@@ -118,7 +118,7 @@ namespace Android.Graphics
         /// <param name="arg1"><see cref="bool"/></param>
         /// <returns><see cref="Android.Graphics.BitmapRegionDecoder"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Graphics.BitmapRegionDecoder NewInstance(Java.Lang.String arg0, bool arg1)
         {
             return SExecute<Android.Graphics.BitmapRegionDecoder>(LocalBridgeClazz, "newInstance", arg0, arg1);
@@ -138,20 +138,6 @@ namespace Android.Graphics
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/BitmapRegionDecoder.html#getHeight()"/> 
-        /// </summary>
-        public int Height
-        {
-            get { return IExecuteWithSignature<int>("getHeight", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/BitmapRegionDecoder.html#getWidth()"/> 
-        /// </summary>
-        public int Width
-        {
-            get { return IExecuteWithSignature<int>("getWidth", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/BitmapRegionDecoder.html#decodeRegion(android.graphics.Rect,android.graphics.BitmapFactory.Options)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Graphics.Rect"/></param>
@@ -168,6 +154,22 @@ namespace Android.Graphics
         public bool IsRecycled()
         {
             return IExecuteWithSignature<bool>("isRecycled", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/BitmapRegionDecoder.html#getHeight()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetHeight()
+        {
+            return IExecuteWithSignature<int>("getHeight", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/BitmapRegionDecoder.html#getWidth()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetWidth()
+        {
+            return IExecuteWithSignature<int>("getWidth", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/BitmapRegionDecoder.html#recycle()"/>

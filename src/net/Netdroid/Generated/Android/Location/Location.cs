@@ -117,130 +117,12 @@ namespace Android.Location
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/Location.html#getAccuracy()"/> <see href="https://developer.android.com/reference/android/location/Location.html#setAccuracy(float)"/>
+        /// <see href="https://developer.android.com/reference/android/location/Location.html#getExtras()"/>
         /// </summary>
-        public float Accuracy
+        /// <returns><see cref="Android.Os.Bundle"/></returns>
+        public Android.Os.Bundle GetExtras()
         {
-            get { return IExecuteWithSignature<float>("getAccuracy", "()F"); } set { IExecuteWithSignature("setAccuracy", "(F)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/Location.html#getAltitude()"/> <see href="https://developer.android.com/reference/android/location/Location.html#setAltitude(double)"/>
-        /// </summary>
-        public double Altitude
-        {
-            get { return IExecuteWithSignature<double>("getAltitude", "()D"); } set { IExecuteWithSignature("setAltitude", "(D)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/Location.html#getBearing()"/> <see href="https://developer.android.com/reference/android/location/Location.html#setBearing(float)"/>
-        /// </summary>
-        public float Bearing
-        {
-            get { return IExecuteWithSignature<float>("getBearing", "()F"); } set { IExecuteWithSignature("setBearing", "(F)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/Location.html#getBearingAccuracyDegrees()"/> <see href="https://developer.android.com/reference/android/location/Location.html#setBearingAccuracyDegrees(float)"/>
-        /// </summary>
-        public float BearingAccuracyDegrees
-        {
-            get { return IExecuteWithSignature<float>("getBearingAccuracyDegrees", "()F"); } set { IExecuteWithSignature("setBearingAccuracyDegrees", "(F)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/Location.html#getElapsedRealtimeAgeMillis()"/> 
-        /// </summary>
-        public long ElapsedRealtimeAgeMillis
-        {
-            get { return IExecuteWithSignature<long>("getElapsedRealtimeAgeMillis", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/Location.html#getElapsedRealtimeMillis()"/> 
-        /// </summary>
-        public long ElapsedRealtimeMillis
-        {
-            get { return IExecuteWithSignature<long>("getElapsedRealtimeMillis", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/Location.html#getElapsedRealtimeNanos()"/> <see href="https://developer.android.com/reference/android/location/Location.html#setElapsedRealtimeNanos(long)"/>
-        /// </summary>
-        public long ElapsedRealtimeNanos
-        {
-            get { return IExecuteWithSignature<long>("getElapsedRealtimeNanos", "()J"); } set { IExecuteWithSignature("setElapsedRealtimeNanos", "(J)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/Location.html#getElapsedRealtimeUncertaintyNanos()"/> <see href="https://developer.android.com/reference/android/location/Location.html#setElapsedRealtimeUncertaintyNanos(double)"/>
-        /// </summary>
-        public double ElapsedRealtimeUncertaintyNanos
-        {
-            get { return IExecuteWithSignature<double>("getElapsedRealtimeUncertaintyNanos", "()D"); } set { IExecuteWithSignature("setElapsedRealtimeUncertaintyNanos", "(D)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/Location.html#getExtras()"/> <see href="https://developer.android.com/reference/android/location/Location.html#setExtras(android.os.Bundle)"/>
-        /// </summary>
-        public Android.Os.Bundle Extras
-        {
-            get { return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;"); } set { IExecuteWithSignature("setExtras", "(Landroid/os/Bundle;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/Location.html#getLatitude()"/> <see href="https://developer.android.com/reference/android/location/Location.html#setLatitude(double)"/>
-        /// </summary>
-        public double Latitude
-        {
-            get { return IExecuteWithSignature<double>("getLatitude", "()D"); } set { IExecuteWithSignature("setLatitude", "(D)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/Location.html#getLongitude()"/> <see href="https://developer.android.com/reference/android/location/Location.html#setLongitude(double)"/>
-        /// </summary>
-        public double Longitude
-        {
-            get { return IExecuteWithSignature<double>("getLongitude", "()D"); } set { IExecuteWithSignature("setLongitude", "(D)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/Location.html#getMslAltitudeAccuracyMeters()"/> <see href="https://developer.android.com/reference/android/location/Location.html#setMslAltitudeAccuracyMeters(float)"/>
-        /// </summary>
-        public float MslAltitudeAccuracyMeters
-        {
-            get { return IExecuteWithSignature<float>("getMslAltitudeAccuracyMeters", "()F"); } set { IExecuteWithSignature("setMslAltitudeAccuracyMeters", "(F)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/Location.html#getMslAltitudeMeters()"/> <see href="https://developer.android.com/reference/android/location/Location.html#setMslAltitudeMeters(double)"/>
-        /// </summary>
-        public double MslAltitudeMeters
-        {
-            get { return IExecuteWithSignature<double>("getMslAltitudeMeters", "()D"); } set { IExecuteWithSignature("setMslAltitudeMeters", "(D)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/Location.html#getProvider()"/> <see href="https://developer.android.com/reference/android/location/Location.html#setProvider(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String Provider
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getProvider", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setProvider", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/Location.html#getSpeed()"/> <see href="https://developer.android.com/reference/android/location/Location.html#setSpeed(float)"/>
-        /// </summary>
-        public float Speed
-        {
-            get { return IExecuteWithSignature<float>("getSpeed", "()F"); } set { IExecuteWithSignature("setSpeed", "(F)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/Location.html#getSpeedAccuracyMetersPerSecond()"/> <see href="https://developer.android.com/reference/android/location/Location.html#setSpeedAccuracyMetersPerSecond(float)"/>
-        /// </summary>
-        public float SpeedAccuracyMetersPerSecond
-        {
-            get { return IExecuteWithSignature<float>("getSpeedAccuracyMetersPerSecond", "()F"); } set { IExecuteWithSignature("setSpeedAccuracyMetersPerSecond", "(F)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/Location.html#getTime()"/> <see href="https://developer.android.com/reference/android/location/Location.html#setTime(long)"/>
-        /// </summary>
-        public long Time
-        {
-            get { return IExecuteWithSignature<long>("getTime", "()J"); } set { IExecuteWithSignature("setTime", "(J)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/Location.html#getVerticalAccuracyMeters()"/> <see href="https://developer.android.com/reference/android/location/Location.html#setVerticalAccuracyMeters(float)"/>
-        /// </summary>
-        public float VerticalAccuracyMeters
-        {
-            get { return IExecuteWithSignature<float>("getVerticalAccuracyMeters", "()F"); } set { IExecuteWithSignature("setVerticalAccuracyMeters", "(F)V", value); }
+            return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/Location.html#hasAccuracy()"/>
@@ -334,7 +216,7 @@ namespace Android.Location
         /// <see href="https://developer.android.com/reference/android/location/Location.html#isFromMockProvider()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsFromMockProvider()
         {
             return IExecuteWithSignature<bool>("isFromMockProvider", "()Z");
@@ -346,6 +228,46 @@ namespace Android.Location
         public bool IsMock()
         {
             return IExecuteWithSignature<bool>("isMock", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Location.html#getAltitude()"/>
+        /// </summary>
+        /// <returns><see cref="double"/></returns>
+        public double GetAltitude()
+        {
+            return IExecuteWithSignature<double>("getAltitude", "()D");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Location.html#getElapsedRealtimeUncertaintyNanos()"/>
+        /// </summary>
+        /// <returns><see cref="double"/></returns>
+        public double GetElapsedRealtimeUncertaintyNanos()
+        {
+            return IExecuteWithSignature<double>("getElapsedRealtimeUncertaintyNanos", "()D");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Location.html#getLatitude()"/>
+        /// </summary>
+        /// <returns><see cref="double"/></returns>
+        public double GetLatitude()
+        {
+            return IExecuteWithSignature<double>("getLatitude", "()D");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Location.html#getLongitude()"/>
+        /// </summary>
+        /// <returns><see cref="double"/></returns>
+        public double GetLongitude()
+        {
+            return IExecuteWithSignature<double>("getLongitude", "()D");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Location.html#getMslAltitudeMeters()"/>
+        /// </summary>
+        /// <returns><see cref="double"/></returns>
+        public double GetMslAltitudeMeters()
+        {
+            return IExecuteWithSignature<double>("getMslAltitudeMeters", "()D");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/Location.html#bearingTo(android.location.Location)"/>
@@ -366,12 +288,84 @@ namespace Android.Location
             return IExecuteWithSignature<float>("distanceTo", "(Landroid/location/Location;)F", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Location.html#getAccuracy()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetAccuracy()
+        {
+            return IExecuteWithSignature<float>("getAccuracy", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Location.html#getBearing()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetBearing()
+        {
+            return IExecuteWithSignature<float>("getBearing", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Location.html#getBearingAccuracyDegrees()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetBearingAccuracyDegrees()
+        {
+            return IExecuteWithSignature<float>("getBearingAccuracyDegrees", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Location.html#getMslAltitudeAccuracyMeters()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetMslAltitudeAccuracyMeters()
+        {
+            return IExecuteWithSignature<float>("getMslAltitudeAccuracyMeters", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Location.html#getSpeed()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetSpeed()
+        {
+            return IExecuteWithSignature<float>("getSpeed", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Location.html#getSpeedAccuracyMetersPerSecond()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetSpeedAccuracyMetersPerSecond()
+        {
+            return IExecuteWithSignature<float>("getSpeedAccuracyMetersPerSecond", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Location.html#getVerticalAccuracyMeters()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetVerticalAccuracyMeters()
+        {
+            return IExecuteWithSignature<float>("getVerticalAccuracyMeters", "()F");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/Location.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Location.html#getProvider()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetProvider()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getProvider", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Location.html#getElapsedRealtimeAgeMillis()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetElapsedRealtimeAgeMillis()
+        {
+            return IExecuteWithSignature<long>("getElapsedRealtimeAgeMillis", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/Location.html#getElapsedRealtimeAgeMillis(long)"/>
@@ -383,11 +377,35 @@ namespace Android.Location
             return IExecuteWithSignature<long>("getElapsedRealtimeAgeMillis", "(J)J", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Location.html#getElapsedRealtimeMillis()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetElapsedRealtimeMillis()
+        {
+            return IExecuteWithSignature<long>("getElapsedRealtimeMillis", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Location.html#getElapsedRealtimeNanos()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetElapsedRealtimeNanos()
+        {
+            return IExecuteWithSignature<long>("getElapsedRealtimeNanos", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Location.html#getTime()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetTime()
+        {
+            return IExecuteWithSignature<long>("getTime", "()J");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/Location.html#dump(android.util.Printer,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Util.Printer"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Dump(Android.Util.Printer arg0, Java.Lang.String arg1)
         {
             IExecute("dump", arg0, arg1);
@@ -478,12 +496,140 @@ namespace Android.Location
             IExecuteWithSignature("set", "(Landroid/location/Location;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Location.html#setAccuracy(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetAccuracy(float arg0)
+        {
+            IExecuteWithSignature("setAccuracy", "(F)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Location.html#setAltitude(double)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="double"/></param>
+        public void SetAltitude(double arg0)
+        {
+            IExecuteWithSignature("setAltitude", "(D)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Location.html#setBearing(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetBearing(float arg0)
+        {
+            IExecuteWithSignature("setBearing", "(F)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Location.html#setBearingAccuracyDegrees(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetBearingAccuracyDegrees(float arg0)
+        {
+            IExecuteWithSignature("setBearingAccuracyDegrees", "(F)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Location.html#setElapsedRealtimeNanos(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        public void SetElapsedRealtimeNanos(long arg0)
+        {
+            IExecuteWithSignature("setElapsedRealtimeNanos", "(J)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Location.html#setElapsedRealtimeUncertaintyNanos(double)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="double"/></param>
+        public void SetElapsedRealtimeUncertaintyNanos(double arg0)
+        {
+            IExecuteWithSignature("setElapsedRealtimeUncertaintyNanos", "(D)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Location.html#setExtras(android.os.Bundle)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Os.Bundle"/></param>
+        public void SetExtras(Android.Os.Bundle arg0)
+        {
+            IExecuteWithSignature("setExtras", "(Landroid/os/Bundle;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Location.html#setLatitude(double)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="double"/></param>
+        public void SetLatitude(double arg0)
+        {
+            IExecuteWithSignature("setLatitude", "(D)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Location.html#setLongitude(double)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="double"/></param>
+        public void SetLongitude(double arg0)
+        {
+            IExecuteWithSignature("setLongitude", "(D)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/Location.html#setMock(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetMock(bool arg0)
         {
             IExecuteWithSignature("setMock", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Location.html#setMslAltitudeAccuracyMeters(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetMslAltitudeAccuracyMeters(float arg0)
+        {
+            IExecuteWithSignature("setMslAltitudeAccuracyMeters", "(F)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Location.html#setMslAltitudeMeters(double)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="double"/></param>
+        public void SetMslAltitudeMeters(double arg0)
+        {
+            IExecuteWithSignature("setMslAltitudeMeters", "(D)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Location.html#setProvider(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetProvider(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setProvider", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Location.html#setSpeed(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetSpeed(float arg0)
+        {
+            IExecuteWithSignature("setSpeed", "(F)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Location.html#setSpeedAccuracyMetersPerSecond(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetSpeedAccuracyMetersPerSecond(float arg0)
+        {
+            IExecuteWithSignature("setSpeedAccuracyMetersPerSecond", "(F)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Location.html#setTime(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        public void SetTime(long arg0)
+        {
+            IExecuteWithSignature("setTime", "(J)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/Location.html#setVerticalAccuracyMeters(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetVerticalAccuracyMeters(float arg0)
+        {
+            IExecuteWithSignature("setVerticalAccuracyMeters", "(F)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/Location.html#writeToParcel(android.os.Parcel,int)"/>

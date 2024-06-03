@@ -46,7 +46,7 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableSet.html#ceiling(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableSet.html#ceiling(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="object"/></returns>
@@ -55,7 +55,7 @@ namespace Java.Util
             return IExecuteWithSignature("ceiling", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableSet.html#floor(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableSet.html#floor(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="object"/></returns>
@@ -64,7 +64,7 @@ namespace Java.Util
             return IExecuteWithSignature("floor", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableSet.html#higher(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableSet.html#higher(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="object"/></returns>
@@ -73,7 +73,7 @@ namespace Java.Util
             return IExecuteWithSignature("higher", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableSet.html#lower(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableSet.html#lower(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="object"/></returns>
@@ -82,7 +82,7 @@ namespace Java.Util
             return IExecuteWithSignature("lower", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableSet.html#pollFirst()"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableSet.html#pollFirst()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object PollFirst()
@@ -90,7 +90,7 @@ namespace Java.Util
             return IExecuteWithSignature("pollFirst", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableSet.html#pollLast()"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableSet.html#pollLast()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object PollLast()
@@ -98,7 +98,7 @@ namespace Java.Util
             return IExecuteWithSignature("pollLast", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableSet.html#descendingIterator()"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableSet.html#descendingIterator()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator DescendingIterator()
@@ -106,7 +106,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Iterator>("descendingIterator", "()Ljava/util/Iterator;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableSet.html#iterator()"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableSet.html#iterator()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator Iterator()
@@ -114,7 +114,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Iterator>("iterator", "()Ljava/util/Iterator;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableSet.html#descendingSet()"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableSet.html#descendingSet()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.NavigableSet"/></returns>
         public Java.Util.NavigableSet DescendingSet()
@@ -122,7 +122,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.NavigableSet>("descendingSet", "()Ljava/util/NavigableSet;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableSet.html#headSet(java.lang.Object,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableSet.html#headSet(java.lang.Object,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -132,7 +132,7 @@ namespace Java.Util
             return IExecute<Java.Util.NavigableSet>("headSet", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableSet.html#subSet(java.lang.Object,boolean,java.lang.Object,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableSet.html#subSet(java.lang.Object,boolean,java.lang.Object,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -144,7 +144,7 @@ namespace Java.Util
             return IExecute<Java.Util.NavigableSet>("subSet", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableSet.html#tailSet(java.lang.Object,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableSet.html#tailSet(java.lang.Object,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -154,7 +154,7 @@ namespace Java.Util
             return IExecute<Java.Util.NavigableSet>("tailSet", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableSet.html#headSet(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableSet.html#headSet(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="Java.Util.SortedSet"/></returns>
@@ -163,7 +163,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.SortedSet>("headSet", "(Ljava/lang/Object;)Ljava/util/SortedSet;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableSet.html#subSet(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableSet.html#subSet(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -173,7 +173,7 @@ namespace Java.Util
             return IExecute<Java.Util.SortedSet>("subSet", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableSet.html#tailSet(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableSet.html#tailSet(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="Java.Util.SortedSet"/></returns>
@@ -235,7 +235,7 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableSet.html#ceiling(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableSet.html#ceiling(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <returns><typeparamref name="E"/></returns>
@@ -244,7 +244,7 @@ namespace Java.Util
             return IExecuteWithSignature<E>("ceiling", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableSet.html#floor(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableSet.html#floor(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <returns><typeparamref name="E"/></returns>
@@ -253,7 +253,7 @@ namespace Java.Util
             return IExecuteWithSignature<E>("floor", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableSet.html#higher(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableSet.html#higher(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <returns><typeparamref name="E"/></returns>
@@ -262,7 +262,7 @@ namespace Java.Util
             return IExecuteWithSignature<E>("higher", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableSet.html#lower(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableSet.html#lower(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <returns><typeparamref name="E"/></returns>
@@ -271,7 +271,7 @@ namespace Java.Util
             return IExecuteWithSignature<E>("lower", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableSet.html#pollFirst()"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableSet.html#pollFirst()"/>
         /// </summary>
         /// <returns><typeparamref name="E"/></returns>
         public E PollFirst()
@@ -279,7 +279,7 @@ namespace Java.Util
             return IExecuteWithSignature<E>("pollFirst", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableSet.html#pollLast()"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableSet.html#pollLast()"/>
         /// </summary>
         /// <returns><typeparamref name="E"/></returns>
         public E PollLast()
@@ -287,7 +287,7 @@ namespace Java.Util
             return IExecuteWithSignature<E>("pollLast", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableSet.html#descendingIterator()"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableSet.html#descendingIterator()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator<E> DescendingIterator()
@@ -295,7 +295,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Iterator<E>>("descendingIterator", "()Ljava/util/Iterator;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableSet.html#iterator()"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableSet.html#iterator()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator<E> Iterator()
@@ -303,7 +303,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Iterator<E>>("iterator", "()Ljava/util/Iterator;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableSet.html#descendingSet()"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableSet.html#descendingSet()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.NavigableSet"/></returns>
         public Java.Util.NavigableSet<E> DescendingSet()
@@ -311,7 +311,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.NavigableSet<E>>("descendingSet", "()Ljava/util/NavigableSet;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableSet.html#headSet(java.lang.Object,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableSet.html#headSet(java.lang.Object,boolean)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -321,7 +321,7 @@ namespace Java.Util
             return IExecute<Java.Util.NavigableSet<E>>("headSet", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableSet.html#subSet(java.lang.Object,boolean,java.lang.Object,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableSet.html#subSet(java.lang.Object,boolean,java.lang.Object,boolean)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -333,7 +333,7 @@ namespace Java.Util
             return IExecute<Java.Util.NavigableSet<E>>("subSet", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableSet.html#tailSet(java.lang.Object,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableSet.html#tailSet(java.lang.Object,boolean)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -343,7 +343,7 @@ namespace Java.Util
             return IExecute<Java.Util.NavigableSet<E>>("tailSet", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableSet.html#headSet(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableSet.html#headSet(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <returns><see cref="Java.Util.SortedSet"/></returns>
@@ -352,7 +352,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.SortedSet<E>>("headSet", "(Ljava/lang/Object;)Ljava/util/SortedSet;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableSet.html#subSet(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableSet.html#subSet(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <param name="arg1"><typeparamref name="E"/></param>
@@ -362,7 +362,7 @@ namespace Java.Util
             return IExecute<Java.Util.SortedSet<E>>("subSet", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/NavigableSet.html#tailSet(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/NavigableSet.html#tailSet(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="E"/></param>
         /// <returns><see cref="Java.Util.SortedSet"/></returns>

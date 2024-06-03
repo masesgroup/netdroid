@@ -50,7 +50,7 @@ namespace Java.Time.Chrono
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/HijrahDate.html#now()"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/HijrahDate.html#now()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.Chrono.HijrahDate"/></returns>
         public static Java.Time.Chrono.HijrahDate Now()
@@ -58,7 +58,7 @@ namespace Java.Time.Chrono
             return SExecuteWithSignature<Java.Time.Chrono.HijrahDate>(LocalBridgeClazz, "now", "()Ljava/time/chrono/HijrahDate;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/HijrahDate.html#now(java.time.Clock)"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/HijrahDate.html#now(java.time.Clock)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Clock"/></param>
         /// <returns><see cref="Java.Time.Chrono.HijrahDate"/></returns>
@@ -67,7 +67,7 @@ namespace Java.Time.Chrono
             return SExecuteWithSignature<Java.Time.Chrono.HijrahDate>(LocalBridgeClazz, "now", "(Ljava/time/Clock;)Ljava/time/chrono/HijrahDate;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/HijrahDate.html#now(java.time.ZoneId)"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/HijrahDate.html#now(java.time.ZoneId)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.ZoneId"/></param>
         /// <returns><see cref="Java.Time.Chrono.HijrahDate"/></returns>
@@ -76,7 +76,7 @@ namespace Java.Time.Chrono
             return SExecuteWithSignature<Java.Time.Chrono.HijrahDate>(LocalBridgeClazz, "now", "(Ljava/time/ZoneId;)Ljava/time/chrono/HijrahDate;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/HijrahDate.html#of(int,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/HijrahDate.html#of(int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -91,7 +91,7 @@ namespace Java.Time.Chrono
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/HijrahDate.html#withVariant(java.time.chrono.HijrahChronology)"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/HijrahDate.html#withVariant(java.time.chrono.HijrahChronology)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Chrono.HijrahChronology"/></param>
         /// <returns><see cref="Java.Time.Chrono.HijrahDate"/></returns>

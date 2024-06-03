@@ -42,7 +42,7 @@ namespace Java.Net
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/Inet6Address.html#getByAddress(java.lang.String,byte[],int)"/>
+        /// <see href="https://developer.android.com/reference/java/net/Inet6Address.html#getByAddress(java.lang.String,byte[],int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
@@ -54,7 +54,7 @@ namespace Java.Net
             return SExecute<Java.Net.Inet6Address>(LocalBridgeClazz, "getByAddress", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/Inet6Address.html#getByAddress(java.lang.String,byte[],java.net.NetworkInterface)"/>
+        /// <see href="https://developer.android.com/reference/java/net/Inet6Address.html#getByAddress(java.lang.String,byte[],java.net.NetworkInterface)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
@@ -70,26 +70,28 @@ namespace Java.Net
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/Inet6Address.html#getScopedInterface()"/> 
-        /// </summary>
-        public Java.Net.NetworkInterface ScopedInterface
-        {
-            get { return IExecuteWithSignature<Java.Net.NetworkInterface>("getScopedInterface", "()Ljava/net/NetworkInterface;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/Inet6Address.html#getScopeId()"/> 
-        /// </summary>
-        public int ScopeId
-        {
-            get { return IExecuteWithSignature<int>("getScopeId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/net/Inet6Address.html#isIPv4CompatibleAddress()"/>
+        /// <see href="https://developer.android.com/reference/java/net/Inet6Address.html#isIPv4CompatibleAddress()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsIPv4CompatibleAddress()
         {
             return IExecuteWithSignature<bool>("isIPv4CompatibleAddress", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/Inet6Address.html#getScopeId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetScopeId()
+        {
+            return IExecuteWithSignature<int>("getScopeId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/Inet6Address.html#getScopedInterface()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Net.NetworkInterface"/></returns>
+        public Java.Net.NetworkInterface GetScopedInterface()
+        {
+            return IExecuteWithSignature<Java.Net.NetworkInterface>("getScopedInterface", "()Ljava/net/NetworkInterface;");
         }
 
         #endregion

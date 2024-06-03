@@ -76,33 +76,36 @@ namespace Android.View.Translation
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/translation/TranslationRequest.html#getFlags()"/> 
-        /// </summary>
-        public int Flags
-        {
-            get { return IExecuteWithSignature<int>("getFlags", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/translation/TranslationRequest.html#getTranslationRequestValues()"/> 
-        /// </summary>
-        public Java.Util.List<Android.View.Translation.TranslationRequestValue> TranslationRequestValues
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.View.Translation.TranslationRequestValue>>("getTranslationRequestValues", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/translation/TranslationRequest.html#getViewTranslationRequests()"/> 
-        /// </summary>
-        public Java.Util.List<Android.View.Translation.ViewTranslationRequest> ViewTranslationRequests
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.View.Translation.ViewTranslationRequest>>("getViewTranslationRequests", "()Ljava/util/List;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/translation/TranslationRequest.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/translation/TranslationRequest.html#getFlags()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetFlags()
+        {
+            return IExecuteWithSignature<int>("getFlags", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/translation/TranslationRequest.html#getTranslationRequestValues()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.View.Translation.TranslationRequestValue> GetTranslationRequestValues()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.View.Translation.TranslationRequestValue>>("getTranslationRequestValues", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/translation/TranslationRequest.html#getViewTranslationRequests()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.View.Translation.ViewTranslationRequest> GetViewTranslationRequests()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.View.Translation.ViewTranslationRequest>>("getViewTranslationRequests", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/translation/TranslationRequest.html#writeToParcel(android.os.Parcel,int)"/>

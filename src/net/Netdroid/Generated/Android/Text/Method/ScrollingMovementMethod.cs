@@ -42,11 +42,12 @@ namespace Android.Text.Method
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/method/ScrollingMovementMethod.html#getInstance()"/> 
+        /// <see href="https://developer.android.com/reference/android/text/method/ScrollingMovementMethod.html#getInstance()"/>
         /// </summary>
-        public static Android.Text.Method.MovementMethod Instance
+        /// <returns><see cref="Android.Text.Method.MovementMethod"/></returns>
+        public static Android.Text.Method.MovementMethod GetInstance()
         {
-            get { return SExecuteWithSignature<Android.Text.Method.MovementMethod>(LocalBridgeClazz, "getInstance", "()Landroid/text/method/MovementMethod;"); }
+            return SExecuteWithSignature<Android.Text.Method.MovementMethod>(LocalBridgeClazz, "getInstance", "()Landroid/text/method/MovementMethod;");
         }
 
         #endregion

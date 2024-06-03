@@ -59,7 +59,7 @@ namespace Android.View
         /// </summary>
         /// <param name="arg0"><see cref="Android.Graphics.Rect"/></param>
         /// <param name="arg1"><see cref="Java.Util.List"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public DisplayCutout(Android.Graphics.Rect arg0, Java.Util.List<Android.Graphics.Rect> arg1)
             : base(arg0, arg1)
         {
@@ -81,81 +81,92 @@ namespace Android.View
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/DisplayCutout.html#getBoundingRectBottom()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/DisplayCutout.html#getWaterfallInsets()"/>
         /// </summary>
-        public Android.Graphics.Rect BoundingRectBottom
+        /// <returns><see cref="Android.Graphics.Insets"/></returns>
+        public Android.Graphics.Insets GetWaterfallInsets()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Rect>("getBoundingRectBottom", "()Landroid/graphics/Rect;"); }
+            return IExecuteWithSignature<Android.Graphics.Insets>("getWaterfallInsets", "()Landroid/graphics/Insets;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/DisplayCutout.html#getBoundingRectLeft()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/DisplayCutout.html#getCutoutPath()"/>
         /// </summary>
-        public Android.Graphics.Rect BoundingRectLeft
+        /// <returns><see cref="Android.Graphics.Path"/></returns>
+        public Android.Graphics.Path GetCutoutPath()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Rect>("getBoundingRectLeft", "()Landroid/graphics/Rect;"); }
+            return IExecuteWithSignature<Android.Graphics.Path>("getCutoutPath", "()Landroid/graphics/Path;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/DisplayCutout.html#getBoundingRectRight()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/DisplayCutout.html#getBoundingRectBottom()"/>
         /// </summary>
-        public Android.Graphics.Rect BoundingRectRight
+        /// <returns><see cref="Android.Graphics.Rect"/></returns>
+        public Android.Graphics.Rect GetBoundingRectBottom()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Rect>("getBoundingRectRight", "()Landroid/graphics/Rect;"); }
+            return IExecuteWithSignature<Android.Graphics.Rect>("getBoundingRectBottom", "()Landroid/graphics/Rect;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/DisplayCutout.html#getBoundingRects()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/DisplayCutout.html#getBoundingRectLeft()"/>
         /// </summary>
-        public Java.Util.List<Android.Graphics.Rect> BoundingRects
+        /// <returns><see cref="Android.Graphics.Rect"/></returns>
+        public Android.Graphics.Rect GetBoundingRectLeft()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Graphics.Rect>>("getBoundingRects", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Android.Graphics.Rect>("getBoundingRectLeft", "()Landroid/graphics/Rect;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/DisplayCutout.html#getBoundingRectTop()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/DisplayCutout.html#getBoundingRectRight()"/>
         /// </summary>
-        public Android.Graphics.Rect BoundingRectTop
+        /// <returns><see cref="Android.Graphics.Rect"/></returns>
+        public Android.Graphics.Rect GetBoundingRectRight()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Rect>("getBoundingRectTop", "()Landroid/graphics/Rect;"); }
+            return IExecuteWithSignature<Android.Graphics.Rect>("getBoundingRectRight", "()Landroid/graphics/Rect;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/DisplayCutout.html#getCutoutPath()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/DisplayCutout.html#getBoundingRectTop()"/>
         /// </summary>
-        public Android.Graphics.Path CutoutPath
+        /// <returns><see cref="Android.Graphics.Rect"/></returns>
+        public Android.Graphics.Rect GetBoundingRectTop()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Path>("getCutoutPath", "()Landroid/graphics/Path;"); }
+            return IExecuteWithSignature<Android.Graphics.Rect>("getBoundingRectTop", "()Landroid/graphics/Rect;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/DisplayCutout.html#getSafeInsetBottom()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/DisplayCutout.html#getSafeInsetBottom()"/>
         /// </summary>
-        public int SafeInsetBottom
+        /// <returns><see cref="int"/></returns>
+        public int GetSafeInsetBottom()
         {
-            get { return IExecuteWithSignature<int>("getSafeInsetBottom", "()I"); }
+            return IExecuteWithSignature<int>("getSafeInsetBottom", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/DisplayCutout.html#getSafeInsetLeft()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/DisplayCutout.html#getSafeInsetLeft()"/>
         /// </summary>
-        public int SafeInsetLeft
+        /// <returns><see cref="int"/></returns>
+        public int GetSafeInsetLeft()
         {
-            get { return IExecuteWithSignature<int>("getSafeInsetLeft", "()I"); }
+            return IExecuteWithSignature<int>("getSafeInsetLeft", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/DisplayCutout.html#getSafeInsetRight()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/DisplayCutout.html#getSafeInsetRight()"/>
         /// </summary>
-        public int SafeInsetRight
+        /// <returns><see cref="int"/></returns>
+        public int GetSafeInsetRight()
         {
-            get { return IExecuteWithSignature<int>("getSafeInsetRight", "()I"); }
+            return IExecuteWithSignature<int>("getSafeInsetRight", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/DisplayCutout.html#getSafeInsetTop()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/DisplayCutout.html#getSafeInsetTop()"/>
         /// </summary>
-        public int SafeInsetTop
+        /// <returns><see cref="int"/></returns>
+        public int GetSafeInsetTop()
         {
-            get { return IExecuteWithSignature<int>("getSafeInsetTop", "()I"); }
+            return IExecuteWithSignature<int>("getSafeInsetTop", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/DisplayCutout.html#getWaterfallInsets()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/DisplayCutout.html#getBoundingRects()"/>
         /// </summary>
-        public Android.Graphics.Insets WaterfallInsets
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Graphics.Rect> GetBoundingRects()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Insets>("getWaterfallInsets", "()Landroid/graphics/Insets;"); }
+            return IExecuteWithSignature<Java.Util.List<Android.Graphics.Rect>>("getBoundingRects", "()Ljava/util/List;");
         }
 
         #endregion

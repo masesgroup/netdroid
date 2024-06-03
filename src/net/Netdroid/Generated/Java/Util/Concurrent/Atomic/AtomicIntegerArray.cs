@@ -30,7 +30,7 @@ namespace Java.Util.Concurrent.Atomic
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicIntegerArray.html#%3Cinit%3E(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicIntegerArray.html#%3Cinit%3E(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public AtomicIntegerArray(int arg0)
@@ -38,7 +38,7 @@ namespace Java.Util.Concurrent.Atomic
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicIntegerArray.html#%3Cinit%3E(int[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicIntegerArray.html#%3Cinit%3E(int[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public AtomicIntegerArray(int[] arg0)
@@ -62,7 +62,7 @@ namespace Java.Util.Concurrent.Atomic
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicIntegerArray.html#compareAndSet(int,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicIntegerArray.html#compareAndSet(int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -73,19 +73,19 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<bool>("compareAndSet", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicIntegerArray.html#weakCompareAndSet(int,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicIntegerArray.html#weakCompareAndSet(int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool WeakCompareAndSet(int arg0, int arg1, int arg2)
         {
             return IExecute<bool>("weakCompareAndSet", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicIntegerArray.html#weakCompareAndSetAcquire(int,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicIntegerArray.html#weakCompareAndSetAcquire(int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -96,7 +96,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<bool>("weakCompareAndSetAcquire", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicIntegerArray.html#weakCompareAndSetPlain(int,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicIntegerArray.html#weakCompareAndSetPlain(int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -107,7 +107,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<bool>("weakCompareAndSetPlain", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicIntegerArray.html#weakCompareAndSetRelease(int,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicIntegerArray.html#weakCompareAndSetRelease(int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -118,7 +118,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<bool>("weakCompareAndSetRelease", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicIntegerArray.html#weakCompareAndSetVolatile(int,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicIntegerArray.html#weakCompareAndSetVolatile(int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -129,7 +129,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<bool>("weakCompareAndSetVolatile", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicIntegerArray.html#accumulateAndGet(int,int,java.util.function.IntBinaryOperator)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicIntegerArray.html#accumulateAndGet(int,int,java.util.function.IntBinaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -140,7 +140,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<int>("accumulateAndGet", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicIntegerArray.html#addAndGet(int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicIntegerArray.html#addAndGet(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -150,7 +150,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<int>("addAndGet", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicIntegerArray.html#compareAndExchange(int,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicIntegerArray.html#compareAndExchange(int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -161,7 +161,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<int>("compareAndExchange", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicIntegerArray.html#compareAndExchangeAcquire(int,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicIntegerArray.html#compareAndExchangeAcquire(int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -172,7 +172,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<int>("compareAndExchangeAcquire", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicIntegerArray.html#compareAndExchangeRelease(int,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicIntegerArray.html#compareAndExchangeRelease(int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -183,7 +183,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<int>("compareAndExchangeRelease", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicIntegerArray.html#decrementAndGet(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicIntegerArray.html#decrementAndGet(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
@@ -192,7 +192,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecuteWithSignature<int>("decrementAndGet", "(I)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicIntegerArray.html#get(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicIntegerArray.html#get(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
@@ -201,7 +201,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecuteWithSignature<int>("get", "(I)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicIntegerArray.html#getAcquire(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicIntegerArray.html#getAcquire(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
@@ -210,7 +210,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecuteWithSignature<int>("getAcquire", "(I)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicIntegerArray.html#getAndAccumulate(int,int,java.util.function.IntBinaryOperator)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicIntegerArray.html#getAndAccumulate(int,int,java.util.function.IntBinaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -221,7 +221,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<int>("getAndAccumulate", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicIntegerArray.html#getAndAdd(int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicIntegerArray.html#getAndAdd(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -231,7 +231,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<int>("getAndAdd", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicIntegerArray.html#getAndDecrement(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicIntegerArray.html#getAndDecrement(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
@@ -240,7 +240,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecuteWithSignature<int>("getAndDecrement", "(I)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicIntegerArray.html#getAndIncrement(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicIntegerArray.html#getAndIncrement(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
@@ -249,7 +249,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecuteWithSignature<int>("getAndIncrement", "(I)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicIntegerArray.html#getAndSet(int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicIntegerArray.html#getAndSet(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -259,7 +259,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<int>("getAndSet", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicIntegerArray.html#getAndUpdate(int,java.util.function.IntUnaryOperator)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicIntegerArray.html#getAndUpdate(int,java.util.function.IntUnaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.IntUnaryOperator"/></param>
@@ -269,7 +269,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<int>("getAndUpdate", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicIntegerArray.html#getOpaque(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicIntegerArray.html#getOpaque(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
@@ -278,7 +278,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecuteWithSignature<int>("getOpaque", "(I)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicIntegerArray.html#getPlain(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicIntegerArray.html#getPlain(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
@@ -287,7 +287,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecuteWithSignature<int>("getPlain", "(I)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicIntegerArray.html#incrementAndGet(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicIntegerArray.html#incrementAndGet(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
@@ -296,7 +296,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecuteWithSignature<int>("incrementAndGet", "(I)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicIntegerArray.html#length()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicIntegerArray.html#length()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int Length()
@@ -304,7 +304,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecuteWithSignature<int>("length", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicIntegerArray.html#updateAndGet(int,java.util.function.IntUnaryOperator)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicIntegerArray.html#updateAndGet(int,java.util.function.IntUnaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.IntUnaryOperator"/></param>
@@ -314,7 +314,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<int>("updateAndGet", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicIntegerArray.html#lazySet(int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicIntegerArray.html#lazySet(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -323,7 +323,7 @@ namespace Java.Util.Concurrent.Atomic
             IExecute("lazySet", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicIntegerArray.html#set(int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicIntegerArray.html#set(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -332,7 +332,7 @@ namespace Java.Util.Concurrent.Atomic
             IExecute("set", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicIntegerArray.html#setOpaque(int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicIntegerArray.html#setOpaque(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -341,7 +341,7 @@ namespace Java.Util.Concurrent.Atomic
             IExecute("setOpaque", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicIntegerArray.html#setPlain(int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicIntegerArray.html#setPlain(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -350,7 +350,7 @@ namespace Java.Util.Concurrent.Atomic
             IExecute("setPlain", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicIntegerArray.html#setRelease(int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicIntegerArray.html#setRelease(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>

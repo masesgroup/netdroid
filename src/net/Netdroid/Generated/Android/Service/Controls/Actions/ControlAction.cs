@@ -108,11 +108,12 @@ namespace Android.Service.Controls.Actions
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/controls/actions/ControlAction.html#getErrorAction()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/controls/actions/ControlAction.html#getErrorAction()"/>
         /// </summary>
-        public static Android.Service.Controls.Actions.ControlAction ErrorAction
+        /// <returns><see cref="Android.Service.Controls.Actions.ControlAction"/></returns>
+        public static Android.Service.Controls.Actions.ControlAction GetErrorAction()
         {
-            get { return SExecuteWithSignature<Android.Service.Controls.Actions.ControlAction>(LocalBridgeClazz, "getErrorAction", "()Landroid/service/controls/actions/ControlAction;"); }
+            return SExecuteWithSignature<Android.Service.Controls.Actions.ControlAction>(LocalBridgeClazz, "getErrorAction", "()Landroid/service/controls/actions/ControlAction;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/service/controls/actions/ControlAction.html#isValidResponse(int)"/>
@@ -128,25 +129,28 @@ namespace Android.Service.Controls.Actions
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/controls/actions/ControlAction.html#getActionType()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/controls/actions/ControlAction.html#getActionType()"/>
         /// </summary>
-        public int ActionType
+        /// <returns><see cref="int"/></returns>
+        public int GetActionType()
         {
-            get { return IExecuteWithSignature<int>("getActionType", "()I"); }
+            return IExecuteWithSignature<int>("getActionType", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/controls/actions/ControlAction.html#getChallengeValue()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/controls/actions/ControlAction.html#getChallengeValue()"/>
         /// </summary>
-        public Java.Lang.String ChallengeValue
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetChallengeValue()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getChallengeValue", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getChallengeValue", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/service/controls/actions/ControlAction.html#getTemplateId()"/> 
+        /// <see href="https://developer.android.com/reference/android/service/controls/actions/ControlAction.html#getTemplateId()"/>
         /// </summary>
-        public Java.Lang.String TemplateId
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetTemplateId()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getTemplateId", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getTemplateId", "()Ljava/lang/String;");
         }
 
         #endregion

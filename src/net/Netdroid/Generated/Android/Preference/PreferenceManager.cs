@@ -40,14 +40,14 @@ namespace Android.Preference
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/preference/PreferenceManager.html#KEY_HAS_SET_DEFAULT_VALUES"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String KEY_HAS_SET_DEFAULT_VALUES { get { if (!_KEY_HAS_SET_DEFAULT_VALUESReady) { _KEY_HAS_SET_DEFAULT_VALUESContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "KEY_HAS_SET_DEFAULT_VALUES"); _KEY_HAS_SET_DEFAULT_VALUESReady = true; } return _KEY_HAS_SET_DEFAULT_VALUESContent; } }
         private static Java.Lang.String _KEY_HAS_SET_DEFAULT_VALUESContent = default;
         private static bool _KEY_HAS_SET_DEFAULT_VALUESReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/preference/PreferenceManager.html#METADATA_KEY_PREFERENCES"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String METADATA_KEY_PREFERENCES { get { if (!_METADATA_KEY_PREFERENCESReady) { _METADATA_KEY_PREFERENCESContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "METADATA_KEY_PREFERENCES"); _METADATA_KEY_PREFERENCESReady = true; } return _METADATA_KEY_PREFERENCESContent; } }
         private static Java.Lang.String _METADATA_KEY_PREFERENCESContent = default;
         private static bool _METADATA_KEY_PREFERENCESReady = false; // this is used because in case of generics 
@@ -60,7 +60,7 @@ namespace Android.Preference
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
         /// <returns><see cref="Android.Content.SharedPreferences"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Content.SharedPreferences GetDefaultSharedPreferences(Android.Content.Context arg0)
         {
             return SExecuteWithSignature<Android.Content.SharedPreferences>(LocalBridgeClazz, "getDefaultSharedPreferences", "(Landroid/content/Context;)Landroid/content/SharedPreferences;", arg0);
@@ -70,7 +70,7 @@ namespace Android.Preference
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String GetDefaultSharedPreferencesName(Android.Content.Context arg0)
         {
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getDefaultSharedPreferencesName", "(Landroid/content/Context;)Ljava/lang/String;", arg0);
@@ -81,7 +81,7 @@ namespace Android.Preference
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static void SetDefaultValues(Android.Content.Context arg0, int arg1, bool arg2)
         {
             SExecute(LocalBridgeClazz, "setDefaultValues", arg0, arg1, arg2);
@@ -94,7 +94,7 @@ namespace Android.Preference
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static void SetDefaultValues(Android.Content.Context arg0, Java.Lang.String arg1, int arg2, int arg3, bool arg4)
         {
             SExecute(LocalBridgeClazz, "setDefaultValues", arg0, arg1, arg2, arg3, arg4);
@@ -104,53 +104,39 @@ namespace Android.Preference
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/preference/PreferenceManager.html#getPreferenceDataStore()"/> <see href="https://developer.android.com/reference/android/preference/PreferenceManager.html#setPreferenceDataStore(android.preference.PreferenceDataStore)"/>
+        /// <see href="https://developer.android.com/reference/android/preference/PreferenceManager.html#getSharedPreferences()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Preference.PreferenceDataStore PreferenceDataStore
+        /// <returns><see cref="Android.Content.SharedPreferences"/></returns>
+        [global::System.Obsolete()]
+        public Android.Content.SharedPreferences GetSharedPreferences()
         {
-            get { return IExecuteWithSignature<Android.Preference.PreferenceDataStore>("getPreferenceDataStore", "()Landroid/preference/PreferenceDataStore;"); } set { IExecuteWithSignature("setPreferenceDataStore", "(Landroid/preference/PreferenceDataStore;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/preference/PreferenceManager.html#getSharedPreferences()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Android.Content.SharedPreferences SharedPreferences
-        {
-            get { return IExecuteWithSignature<Android.Content.SharedPreferences>("getSharedPreferences", "()Landroid/content/SharedPreferences;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/preference/PreferenceManager.html#getSharedPreferencesMode()"/> <see href="https://developer.android.com/reference/android/preference/PreferenceManager.html#setSharedPreferencesMode(int)"/>
-        /// </summary>
-        [System.Obsolete()]
-        public int SharedPreferencesMode
-        {
-            get { return IExecuteWithSignature<int>("getSharedPreferencesMode", "()I"); } set { IExecuteWithSignature("setSharedPreferencesMode", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/preference/PreferenceManager.html#getSharedPreferencesName()"/> <see href="https://developer.android.com/reference/android/preference/PreferenceManager.html#setSharedPreferencesName(java.lang.String)"/>
-        /// </summary>
-        [System.Obsolete()]
-        public Java.Lang.String SharedPreferencesName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSharedPreferencesName", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setSharedPreferencesName", "(Ljava/lang/String;)V", value); }
+            return IExecuteWithSignature<Android.Content.SharedPreferences>("getSharedPreferences", "()Landroid/content/SharedPreferences;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/preference/PreferenceManager.html#findPreference(java.lang.CharSequence)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <returns><see cref="Android.Preference.Preference"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Preference.Preference FindPreference(Java.Lang.CharSequence arg0)
         {
             return IExecuteWithSignature<Android.Preference.Preference>("findPreference", "(Ljava/lang/CharSequence;)Landroid/preference/Preference;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/preference/PreferenceManager.html#getPreferenceDataStore()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Preference.PreferenceDataStore"/></returns>
+        [global::System.Obsolete()]
+        public Android.Preference.PreferenceDataStore GetPreferenceDataStore()
+        {
+            return IExecuteWithSignature<Android.Preference.PreferenceDataStore>("getPreferenceDataStore", "()Landroid/preference/PreferenceDataStore;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/preference/PreferenceManager.html#createPreferenceScreen(android.content.Context)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
         /// <returns><see cref="Android.Preference.PreferenceScreen"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Preference.PreferenceScreen CreatePreferenceScreen(Android.Content.Context arg0)
         {
             return IExecuteWithSignature<Android.Preference.PreferenceScreen>("createPreferenceScreen", "(Landroid/content/Context;)Landroid/preference/PreferenceScreen;", arg0);
@@ -159,7 +145,7 @@ namespace Android.Preference
         /// <see href="https://developer.android.com/reference/android/preference/PreferenceManager.html#isStorageDefault()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsStorageDefault()
         {
             return IExecuteWithSignature<bool>("isStorageDefault", "()Z");
@@ -168,15 +154,60 @@ namespace Android.Preference
         /// <see href="https://developer.android.com/reference/android/preference/PreferenceManager.html#isStorageDeviceProtected()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsStorageDeviceProtected()
         {
             return IExecuteWithSignature<bool>("isStorageDeviceProtected", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/preference/PreferenceManager.html#getSharedPreferencesMode()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetSharedPreferencesMode()
+        {
+            return IExecuteWithSignature<int>("getSharedPreferencesMode", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/preference/PreferenceManager.html#getSharedPreferencesName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        [global::System.Obsolete()]
+        public Java.Lang.String GetSharedPreferencesName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getSharedPreferencesName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/preference/PreferenceManager.html#setPreferenceDataStore(android.preference.PreferenceDataStore)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Preference.PreferenceDataStore"/></param>
+        [global::System.Obsolete()]
+        public void SetPreferenceDataStore(Android.Preference.PreferenceDataStore arg0)
+        {
+            IExecuteWithSignature("setPreferenceDataStore", "(Landroid/preference/PreferenceDataStore;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/preference/PreferenceManager.html#setSharedPreferencesMode(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        [global::System.Obsolete()]
+        public void SetSharedPreferencesMode(int arg0)
+        {
+            IExecuteWithSignature("setSharedPreferencesMode", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/preference/PreferenceManager.html#setSharedPreferencesName(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        [global::System.Obsolete()]
+        public void SetSharedPreferencesName(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setSharedPreferencesName", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/preference/PreferenceManager.html#setStorageDefault()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetStorageDefault()
         {
             IExecuteWithSignature("setStorageDefault", "()V");
@@ -184,7 +215,7 @@ namespace Android.Preference
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/preference/PreferenceManager.html#setStorageDeviceProtected()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetStorageDeviceProtected()
         {
             IExecuteWithSignature("setStorageDeviceProtected", "()V");
@@ -218,7 +249,7 @@ namespace Android.Preference
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onActivityDestroy", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnActivityDestroyEventHandler));
+                AddEventHandler("onActivityDestroy", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnActivityDestroyEventHandler));
 
             }
 
@@ -226,7 +257,7 @@ namespace Android.Preference
             /// Handler for <see href="https://developer.android.com/reference/android/preference/PreferenceManager.OnActivityDestroyListener.html#onActivityDestroy()"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnActivityDestroy"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action OnOnActivityDestroy { get; set; } = null;
+            public global::System.Action OnOnActivityDestroy { get; set; } = null;
 
             void OnActivityDestroyEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
             {
@@ -237,7 +268,7 @@ namespace Android.Preference
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/preference/PreferenceManager.OnActivityDestroyListener.html#onActivityDestroy()"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public virtual void OnActivityDestroy()
             {
                 
@@ -276,7 +307,7 @@ namespace Android.Preference
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/preference/PreferenceManager.OnActivityDestroyListener.html#onActivityDestroy()"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public override void OnActivityDestroy()
             {
                 IExecuteWithSignature("onActivityDestroy", "()V");
@@ -317,7 +348,7 @@ namespace Android.Preference
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onActivityResult", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnActivityResultEventHandler));
+                AddEventHandler("onActivityResult", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnActivityResultEventHandler));
 
             }
 
@@ -325,7 +356,7 @@ namespace Android.Preference
             /// Handler for <see href="https://developer.android.com/reference/android/preference/PreferenceManager.OnActivityResultListener.html#onActivityResult(int,int,android.content.Intent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnActivityResult"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Func<int, int, Android.Content.Intent, bool> OnOnActivityResult { get; set; } = null;
+            public global::System.Func<int, int, Android.Content.Intent, bool> OnOnActivityResult { get; set; } = null;
 
             void OnActivityResultEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
             {
@@ -341,7 +372,7 @@ namespace Android.Preference
             /// <param name="arg1"><see cref="int"/></param>
             /// <param name="arg2"><see cref="Android.Content.Intent"/></param>
             /// <returns><see cref="bool"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public virtual bool OnActivityResult(int arg0, int arg1, Android.Content.Intent arg2)
             {
                 return default;
@@ -384,7 +415,7 @@ namespace Android.Preference
             /// <param name="arg1"><see cref="int"/></param>
             /// <param name="arg2"><see cref="Android.Content.Intent"/></param>
             /// <returns><see cref="bool"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public override bool OnActivityResult(int arg0, int arg1, Android.Content.Intent arg2)
             {
                 return IExecute<bool>("onActivityResult", arg0, arg1, arg2);
@@ -425,7 +456,7 @@ namespace Android.Preference
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onActivityStop", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnActivityStopEventHandler));
+                AddEventHandler("onActivityStop", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnActivityStopEventHandler));
 
             }
 
@@ -433,7 +464,7 @@ namespace Android.Preference
             /// Handler for <see href="https://developer.android.com/reference/android/preference/PreferenceManager.OnActivityStopListener.html#onActivityStop()"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnActivityStop"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action OnOnActivityStop { get; set; } = null;
+            public global::System.Action OnOnActivityStop { get; set; } = null;
 
             void OnActivityStopEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
             {
@@ -444,7 +475,7 @@ namespace Android.Preference
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/preference/PreferenceManager.OnActivityStopListener.html#onActivityStop()"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public virtual void OnActivityStop()
             {
                 
@@ -483,7 +514,7 @@ namespace Android.Preference
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/preference/PreferenceManager.OnActivityStopListener.html#onActivityStop()"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public override void OnActivityStop()
             {
                 IExecuteWithSignature("onActivityStop", "()V");

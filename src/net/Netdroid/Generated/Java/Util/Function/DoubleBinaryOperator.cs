@@ -27,7 +27,7 @@ namespace Java.Util.Function
 {
     #region IDoubleBinaryOperator
     /// <summary>
-    /// .NET interface for org.mases.netdroid.generated.java.util.function.DoubleBinaryOperator implementing <see href="https://developer.android.com/reference/java.base/java/util/function/DoubleBinaryOperator.html"/>
+    /// .NET interface for org.mases.netdroid.generated.java.util.function.DoubleBinaryOperator implementing <see href="https://developer.android.com/reference/java/util/function/DoubleBinaryOperator.html"/>
     /// </summary>
     public partial interface IDoubleBinaryOperator
     {
@@ -68,15 +68,15 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("applyAsDouble", new System.EventHandler<CLRListenerEventArgs<CLREventData<double>>>(ApplyAsDoubleEventHandler));
+            AddEventHandler("applyAsDouble", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<double>>>(ApplyAsDoubleEventHandler));
 
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/DoubleBinaryOperator.html#applyAsDouble(double,double)"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/DoubleBinaryOperator.html#applyAsDouble(double,double)"/>
         /// </summary>
         /// <remarks>If <see cref="OnApplyAsDouble"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<double, double, double> OnApplyAsDouble { get; set; } = null;
+        public global::System.Func<double, double, double> OnApplyAsDouble { get; set; } = null;
 
         void ApplyAsDoubleEventHandler(object sender, CLRListenerEventArgs<CLREventData<double>> data)
         {
@@ -86,7 +86,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/DoubleBinaryOperator.html#applyAsDouble(double,double)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/DoubleBinaryOperator.html#applyAsDouble(double,double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <param name="arg1"><see cref="double"/></param>
@@ -127,7 +127,7 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/DoubleBinaryOperator.html#applyAsDouble(double,double)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/DoubleBinaryOperator.html#applyAsDouble(double,double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         /// <param name="arg1"><see cref="double"/></param>

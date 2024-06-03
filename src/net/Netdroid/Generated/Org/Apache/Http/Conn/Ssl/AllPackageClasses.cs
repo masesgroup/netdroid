@@ -30,19 +30,19 @@ namespace Org.Apache.Http.Conn.Ssl
     /// <summary>
     /// <see href="https://developer.android.com/reference/org/apache/http/conn/ssl/AbstractVerifier.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class AbstractVerifier : Org.Apache.Http.Conn.Ssl.X509HostnameVerifier
     {
         const string _bridgeClassName = "org.apache.http.conn.ssl.AbstractVerifier";
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("AbstractVerifier class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("AbstractVerifier class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AbstractVerifier() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("AbstractVerifier class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("AbstractVerifier class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AbstractVerifier(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -77,7 +77,7 @@ namespace Org.Apache.Http.Conn.Ssl
     /// <summary>
     /// <see href="https://developer.android.com/reference/org/apache/http/conn/ssl/AllowAllHostnameVerifier.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class AllowAllHostnameVerifier : Org.Apache.Http.Conn.Ssl.AbstractVerifier
     {
         const string _bridgeClassName = "org.apache.http.conn.ssl.AllowAllHostnameVerifier";
@@ -122,7 +122,7 @@ namespace Org.Apache.Http.Conn.Ssl
     /// <summary>
     /// <see href="https://developer.android.com/reference/org/apache/http/conn/ssl/BrowserCompatHostnameVerifier.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class BrowserCompatHostnameVerifier : Org.Apache.Http.Conn.Ssl.AbstractVerifier
     {
         const string _bridgeClassName = "org.apache.http.conn.ssl.BrowserCompatHostnameVerifier";
@@ -167,7 +167,7 @@ namespace Org.Apache.Http.Conn.Ssl
     /// <summary>
     /// <see href="https://developer.android.com/reference/org/apache/http/conn/ssl/SSLSocketFactory.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class SSLSocketFactory : Org.Apache.Http.Conn.Scheme.LayeredSocketFactory
     {
         const string _bridgeClassName = "org.apache.http.conn.ssl.SSLSocketFactory";
@@ -212,7 +212,7 @@ namespace Org.Apache.Http.Conn.Ssl
     /// <summary>
     /// <see href="https://developer.android.com/reference/org/apache/http/conn/ssl/StrictHostnameVerifier.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class StrictHostnameVerifier : Org.Apache.Http.Conn.Ssl.AbstractVerifier
     {
         const string _bridgeClassName = "org.apache.http.conn.ssl.StrictHostnameVerifier";
@@ -257,19 +257,19 @@ namespace Org.Apache.Http.Conn.Ssl
     /// <summary>
     /// <see href="https://developer.android.com/reference/org/apache/http/conn/ssl/X509HostnameVerifier.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class X509HostnameVerifier : Javax.Net.Ssl.HostnameVerifier
     {
         const string _bridgeClassName = "org.apache.http.conn.ssl.X509HostnameVerifier";
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("X509HostnameVerifier class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("X509HostnameVerifier class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public X509HostnameVerifier() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("X509HostnameVerifier class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("X509HostnameVerifier class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public X509HostnameVerifier(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);

@@ -28,7 +28,7 @@ namespace Javax.Annotation.Processing
 {
     #region Generated
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.compiler/javax/annotation/processing/Generated.html"/>
+    /// <see href="https://developer.android.com/reference/javax/annotation/processing/Generated.html"/>
     /// </summary>
     public partial class Generated : Java.Lang.Annotation.Annotation
     {
@@ -36,12 +36,12 @@ namespace Javax.Annotation.Processing
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Generated class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Generated class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Generated() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Generated class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Generated class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Generated(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);

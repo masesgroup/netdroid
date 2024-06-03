@@ -63,40 +63,44 @@ namespace Android.View.Inputmethod
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/SurroundingText.html#getOffset()"/> 
-        /// </summary>
-        public int Offset
-        {
-            get { return IExecuteWithSignature<int>("getOffset", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/SurroundingText.html#getSelectionEnd()"/> 
-        /// </summary>
-        public int SelectionEnd
-        {
-            get { return IExecuteWithSignature<int>("getSelectionEnd", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/SurroundingText.html#getSelectionStart()"/> 
-        /// </summary>
-        public int SelectionStart
-        {
-            get { return IExecuteWithSignature<int>("getSelectionStart", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/SurroundingText.html#getText()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence Text
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getText", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/SurroundingText.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/SurroundingText.html#getOffset()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetOffset()
+        {
+            return IExecuteWithSignature<int>("getOffset", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/SurroundingText.html#getSelectionEnd()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSelectionEnd()
+        {
+            return IExecuteWithSignature<int>("getSelectionEnd", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/SurroundingText.html#getSelectionStart()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSelectionStart()
+        {
+            return IExecuteWithSignature<int>("getSelectionStart", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/SurroundingText.html#getText()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetText()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getText", "()Ljava/lang/CharSequence;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/SurroundingText.html#writeToParcel(android.os.Parcel,int)"/>

@@ -98,47 +98,20 @@ namespace Android.Service.Wallpaper
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/service/wallpaper/WallpaperService.Engine.html#getDesiredMinimumHeight()"/> 
-            /// </summary>
-            public int DesiredMinimumHeight
-            {
-                get { return IExecuteWithSignature<int>("getDesiredMinimumHeight", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/service/wallpaper/WallpaperService.Engine.html#getDesiredMinimumWidth()"/> 
-            /// </summary>
-            public int DesiredMinimumWidth
-            {
-                get { return IExecuteWithSignature<int>("getDesiredMinimumWidth", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/service/wallpaper/WallpaperService.Engine.html#getDisplayContext()"/> 
-            /// </summary>
-            public Android.Content.Context DisplayContext
-            {
-                get { return IExecuteWithSignature<Android.Content.Context>("getDisplayContext", "()Landroid/content/Context;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/service/wallpaper/WallpaperService.Engine.html#getSurfaceHolder()"/> 
-            /// </summary>
-            public Android.View.SurfaceHolder SurfaceHolder
-            {
-                get { return IExecuteWithSignature<Android.View.SurfaceHolder>("getSurfaceHolder", "()Landroid/view/SurfaceHolder;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/service/wallpaper/WallpaperService.Engine.html#getWallpaperFlags()"/> 
-            /// </summary>
-            public int WallpaperFlags
-            {
-                get { return IExecuteWithSignature<int>("getWallpaperFlags", "()I"); }
-            }
-            /// <summary>
             /// <see href="https://developer.android.com/reference/android/service/wallpaper/WallpaperService.Engine.html#onComputeColors()"/>
             /// </summary>
             /// <returns><see cref="Android.App.WallpaperColors"/></returns>
             public Android.App.WallpaperColors OnComputeColors()
             {
                 return IExecuteWithSignature<Android.App.WallpaperColors>("onComputeColors", "()Landroid/app/WallpaperColors;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/service/wallpaper/WallpaperService.Engine.html#getDisplayContext()"/>
+            /// </summary>
+            /// <returns><see cref="Android.Content.Context"/></returns>
+            public Android.Content.Context GetDisplayContext()
+            {
+                return IExecuteWithSignature<Android.Content.Context>("getDisplayContext", "()Landroid/content/Context;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/service/wallpaper/WallpaperService.Engine.html#onCommand(java.lang.String,int,int,int,android.os.Bundle,boolean)"/>
@@ -155,6 +128,14 @@ namespace Android.Service.Wallpaper
                 return IExecute<Android.Os.Bundle>("onCommand", arg0, arg1, arg2, arg3, arg4, arg5);
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/service/wallpaper/WallpaperService.Engine.html#getSurfaceHolder()"/>
+            /// </summary>
+            /// <returns><see cref="Android.View.SurfaceHolder"/></returns>
+            public Android.View.SurfaceHolder GetSurfaceHolder()
+            {
+                return IExecuteWithSignature<Android.View.SurfaceHolder>("getSurfaceHolder", "()Landroid/view/SurfaceHolder;");
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/service/wallpaper/WallpaperService.Engine.html#isPreview()"/>
             /// </summary>
             /// <returns><see cref="bool"/></returns>
@@ -169,6 +150,30 @@ namespace Android.Service.Wallpaper
             public bool IsVisible()
             {
                 return IExecuteWithSignature<bool>("isVisible", "()Z");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/service/wallpaper/WallpaperService.Engine.html#getDesiredMinimumHeight()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetDesiredMinimumHeight()
+            {
+                return IExecuteWithSignature<int>("getDesiredMinimumHeight", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/service/wallpaper/WallpaperService.Engine.html#getDesiredMinimumWidth()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetDesiredMinimumWidth()
+            {
+                return IExecuteWithSignature<int>("getDesiredMinimumWidth", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/service/wallpaper/WallpaperService.Engine.html#getWallpaperFlags()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetWallpaperFlags()
+            {
+                return IExecuteWithSignature<int>("getWallpaperFlags", "()I");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/service/wallpaper/WallpaperService.Engine.html#notifyColorsChanged()"/>

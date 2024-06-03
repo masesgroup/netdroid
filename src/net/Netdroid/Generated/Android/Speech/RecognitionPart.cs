@@ -88,40 +88,44 @@ namespace Android.Speech
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/speech/RecognitionPart.html#getConfidenceLevel()"/> 
-        /// </summary>
-        public int ConfidenceLevel
-        {
-            get { return IExecuteWithSignature<int>("getConfidenceLevel", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/speech/RecognitionPart.html#getFormattedText()"/> 
-        /// </summary>
-        public Java.Lang.String FormattedText
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getFormattedText", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/speech/RecognitionPart.html#getRawText()"/> 
-        /// </summary>
-        public Java.Lang.String RawText
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getRawText", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/speech/RecognitionPart.html#getTimestampMillis()"/> 
-        /// </summary>
-        public long TimestampMillis
-        {
-            get { return IExecuteWithSignature<long>("getTimestampMillis", "()J"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/speech/RecognitionPart.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/speech/RecognitionPart.html#getConfidenceLevel()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetConfidenceLevel()
+        {
+            return IExecuteWithSignature<int>("getConfidenceLevel", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/speech/RecognitionPart.html#getFormattedText()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetFormattedText()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getFormattedText", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/speech/RecognitionPart.html#getRawText()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetRawText()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getRawText", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/speech/RecognitionPart.html#getTimestampMillis()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetTimestampMillis()
+        {
+            return IExecuteWithSignature<long>("getTimestampMillis", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/speech/RecognitionPart.html#writeToParcel(android.os.Parcel,int)"/>

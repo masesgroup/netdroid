@@ -88,34 +88,6 @@ namespace Android.Media
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/SyncParams.html#getAudioAdjustMode()"/> 
-        /// </summary>
-        public int AudioAdjustMode
-        {
-            get { return IExecuteWithSignature<int>("getAudioAdjustMode", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/SyncParams.html#getFrameRate()"/> 
-        /// </summary>
-        public float FrameRate
-        {
-            get { return IExecuteWithSignature<float>("getFrameRate", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/SyncParams.html#getSyncSource()"/> 
-        /// </summary>
-        public int SyncSource
-        {
-            get { return IExecuteWithSignature<int>("getSyncSource", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/SyncParams.html#getTolerance()"/> 
-        /// </summary>
-        public float Tolerance
-        {
-            get { return IExecuteWithSignature<float>("getTolerance", "()F"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/SyncParams.html#allowDefaults()"/>
         /// </summary>
         /// <returns><see cref="Android.Media.SyncParams"/></returns>
@@ -158,6 +130,38 @@ namespace Android.Media
         public Android.Media.SyncParams SetTolerance(float arg0)
         {
             return IExecuteWithSignature<Android.Media.SyncParams>("setTolerance", "(F)Landroid/media/SyncParams;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/SyncParams.html#getFrameRate()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetFrameRate()
+        {
+            return IExecuteWithSignature<float>("getFrameRate", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/SyncParams.html#getTolerance()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetTolerance()
+        {
+            return IExecuteWithSignature<float>("getTolerance", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/SyncParams.html#getAudioAdjustMode()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetAudioAdjustMode()
+        {
+            return IExecuteWithSignature<int>("getAudioAdjustMode", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/SyncParams.html#getSyncSource()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSyncSource()
+        {
+            return IExecuteWithSignature<int>("getSyncSource", "()I");
         }
 
         #endregion

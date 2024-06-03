@@ -64,32 +64,36 @@ namespace Javax.Xml.Transform
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/SourceLocator.html#getColumnNumber()"/> 
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/SourceLocator.html#getColumnNumber()"/>
         /// </summary>
-        public int ColumnNumber
+        /// <returns><see cref="int"/></returns>
+        public int GetColumnNumber()
         {
-            get { return IExecuteWithSignature<int>("getColumnNumber", "()I"); }
+            return IExecuteWithSignature<int>("getColumnNumber", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/SourceLocator.html#getLineNumber()"/> 
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/SourceLocator.html#getLineNumber()"/>
         /// </summary>
-        public int LineNumber
+        /// <returns><see cref="int"/></returns>
+        public int GetLineNumber()
         {
-            get { return IExecuteWithSignature<int>("getLineNumber", "()I"); }
+            return IExecuteWithSignature<int>("getLineNumber", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/SourceLocator.html#getPublicId()"/> 
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/SourceLocator.html#getPublicId()"/>
         /// </summary>
-        public Java.Lang.String PublicId
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPublicId()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPublicId", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getPublicId", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/SourceLocator.html#getSystemId()"/> 
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/SourceLocator.html#getSystemId()"/>
         /// </summary>
-        public Java.Lang.String SystemId
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSystemId()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSystemId", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getSystemId", "()Ljava/lang/String;");
         }
 
         #endregion

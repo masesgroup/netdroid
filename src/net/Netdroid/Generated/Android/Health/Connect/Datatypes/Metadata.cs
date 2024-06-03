@@ -70,53 +70,60 @@ namespace Android.Health.Connect.Datatypes
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/Metadata.html#getClientRecordId()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/Metadata.html#getDataOrigin()"/>
         /// </summary>
-        public Java.Lang.String ClientRecordId
+        /// <returns><see cref="Android.Health.Connect.Datatypes.DataOrigin"/></returns>
+        public Android.Health.Connect.Datatypes.DataOrigin GetDataOrigin()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getClientRecordId", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Android.Health.Connect.Datatypes.DataOrigin>("getDataOrigin", "()Landroid/health/connect/datatypes/DataOrigin;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/Metadata.html#getClientRecordVersion()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/Metadata.html#getDevice()"/>
         /// </summary>
-        public long ClientRecordVersion
+        /// <returns><see cref="Android.Health.Connect.Datatypes.Device"/></returns>
+        public Android.Health.Connect.Datatypes.Device GetDevice()
         {
-            get { return IExecuteWithSignature<long>("getClientRecordVersion", "()J"); }
+            return IExecuteWithSignature<Android.Health.Connect.Datatypes.Device>("getDevice", "()Landroid/health/connect/datatypes/Device;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/Metadata.html#getDataOrigin()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/Metadata.html#getRecordingMethod()"/>
         /// </summary>
-        public Android.Health.Connect.Datatypes.DataOrigin DataOrigin
+        /// <returns><see cref="int"/></returns>
+        public int GetRecordingMethod()
         {
-            get { return IExecuteWithSignature<Android.Health.Connect.Datatypes.DataOrigin>("getDataOrigin", "()Landroid/health/connect/datatypes/DataOrigin;"); }
+            return IExecuteWithSignature<int>("getRecordingMethod", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/Metadata.html#getDevice()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/Metadata.html#getClientRecordId()"/>
         /// </summary>
-        public Android.Health.Connect.Datatypes.Device Device
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetClientRecordId()
         {
-            get { return IExecuteWithSignature<Android.Health.Connect.Datatypes.Device>("getDevice", "()Landroid/health/connect/datatypes/Device;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getClientRecordId", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/Metadata.html#getId()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/Metadata.html#getId()"/>
         /// </summary>
-        public Java.Lang.String Id
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetId()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/Metadata.html#getLastModifiedTime()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/Metadata.html#getLastModifiedTime()"/>
         /// </summary>
-        public Java.Time.Instant LastModifiedTime
+        /// <returns><see cref="Java.Time.Instant"/></returns>
+        public Java.Time.Instant GetLastModifiedTime()
         {
-            get { return IExecuteWithSignature<Java.Time.Instant>("getLastModifiedTime", "()Ljava/time/Instant;"); }
+            return IExecuteWithSignature<Java.Time.Instant>("getLastModifiedTime", "()Ljava/time/Instant;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/Metadata.html#getRecordingMethod()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/Metadata.html#getClientRecordVersion()"/>
         /// </summary>
-        public int RecordingMethod
+        /// <returns><see cref="long"/></returns>
+        public long GetClientRecordVersion()
         {
-            get { return IExecuteWithSignature<int>("getRecordingMethod", "()I"); }
+            return IExecuteWithSignature<long>("getClientRecordVersion", "()J");
         }
 
         #endregion

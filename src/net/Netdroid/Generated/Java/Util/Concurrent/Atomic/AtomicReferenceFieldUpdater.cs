@@ -42,7 +42,7 @@ namespace Java.Util.Concurrent.Atomic
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#newUpdater(java.lang.Class,java.lang.Class,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#newUpdater(java.lang.Class,java.lang.Class,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
@@ -57,7 +57,7 @@ namespace Java.Util.Concurrent.Atomic
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#compareAndSet(java.lang.Object,java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#compareAndSet(java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -68,7 +68,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<bool>("compareAndSet", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#weakCompareAndSet(java.lang.Object,java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#weakCompareAndSet(java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -79,7 +79,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<bool>("weakCompareAndSet", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#get(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#get(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="object"/></returns>
@@ -88,7 +88,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecuteWithSignature("get", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#lazySet(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#lazySet(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -97,7 +97,7 @@ namespace Java.Util.Concurrent.Atomic
             IExecute("lazySet", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#set(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#set(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -106,7 +106,7 @@ namespace Java.Util.Concurrent.Atomic
             IExecute("set", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#accumulateAndGet(java.lang.Object,java.lang.Object,java.util.function.BinaryOperator)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#accumulateAndGet(java.lang.Object,java.lang.Object,java.util.function.BinaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -117,7 +117,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute("accumulateAndGet", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#getAndAccumulate(java.lang.Object,java.lang.Object,java.util.function.BinaryOperator)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#getAndAccumulate(java.lang.Object,java.lang.Object,java.util.function.BinaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -128,7 +128,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute("getAndAccumulate", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#getAndUpdate(java.lang.Object,java.util.function.UnaryOperator)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#getAndUpdate(java.lang.Object,java.util.function.UnaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.UnaryOperator"/></param>
@@ -138,7 +138,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute("getAndUpdate", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#updateAndGet(java.lang.Object,java.util.function.UnaryOperator)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#updateAndGet(java.lang.Object,java.util.function.UnaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.UnaryOperator"/></param>
@@ -148,7 +148,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute("updateAndGet", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#getAndSet(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#getAndSet(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -189,7 +189,7 @@ namespace Java.Util.Concurrent.Atomic
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#newUpdater(java.lang.Class,java.lang.Class,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#newUpdater(java.lang.Class,java.lang.Class,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
@@ -206,7 +206,7 @@ namespace Java.Util.Concurrent.Atomic
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#compareAndSet(java.lang.Object,java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#compareAndSet(java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><typeparamref name="V"/></param>
@@ -217,7 +217,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<bool>("compareAndSet", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#weakCompareAndSet(java.lang.Object,java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#weakCompareAndSet(java.lang.Object,java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><typeparamref name="V"/></param>
@@ -228,7 +228,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<bool>("weakCompareAndSet", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#get(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#get(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <returns><typeparamref name="V"/></returns>
@@ -237,7 +237,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecuteWithSignature<V>("get", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#lazySet(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#lazySet(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><typeparamref name="V"/></param>
@@ -246,7 +246,7 @@ namespace Java.Util.Concurrent.Atomic
             IExecute("lazySet", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#set(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#set(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><typeparamref name="V"/></param>
@@ -255,7 +255,7 @@ namespace Java.Util.Concurrent.Atomic
             IExecute("set", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#accumulateAndGet(java.lang.Object,java.lang.Object,java.util.function.BinaryOperator)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#accumulateAndGet(java.lang.Object,java.lang.Object,java.util.function.BinaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><typeparamref name="V"/></param>
@@ -266,7 +266,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<V>("accumulateAndGet", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#getAndAccumulate(java.lang.Object,java.lang.Object,java.util.function.BinaryOperator)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#getAndAccumulate(java.lang.Object,java.lang.Object,java.util.function.BinaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><typeparamref name="V"/></param>
@@ -277,7 +277,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<V>("getAndAccumulate", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#getAndUpdate(java.lang.Object,java.util.function.UnaryOperator)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#getAndUpdate(java.lang.Object,java.util.function.UnaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.UnaryOperator"/></param>
@@ -287,7 +287,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<V>("getAndUpdate", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#updateAndGet(java.lang.Object,java.util.function.UnaryOperator)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#updateAndGet(java.lang.Object,java.util.function.UnaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.UnaryOperator"/></param>
@@ -297,7 +297,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<V>("updateAndGet", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#getAndSet(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html#getAndSet(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><typeparamref name="V"/></param>

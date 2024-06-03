@@ -106,7 +106,7 @@ namespace Android.Media
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioAttributes.html#FLAG_LOW_LATENCY"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int FLAG_LOW_LATENCY { get { if (!_FLAG_LOW_LATENCYReady) { _FLAG_LOW_LATENCYContent = SGetField<int>(LocalBridgeClazz, "FLAG_LOW_LATENCY"); _FLAG_LOW_LATENCYReady = true; } return _FLAG_LOW_LATENCYContent; } }
         private static int _FLAG_LOW_LATENCYContent = default;
         private static bool _FLAG_LOW_LATENCYReady = false; // this is used because in case of generics 
@@ -173,21 +173,21 @@ namespace Android.Media
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioAttributes.html#USAGE_NOTIFICATION_COMMUNICATION_DELAYED"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int USAGE_NOTIFICATION_COMMUNICATION_DELAYED { get { if (!_USAGE_NOTIFICATION_COMMUNICATION_DELAYEDReady) { _USAGE_NOTIFICATION_COMMUNICATION_DELAYEDContent = SGetField<int>(LocalBridgeClazz, "USAGE_NOTIFICATION_COMMUNICATION_DELAYED"); _USAGE_NOTIFICATION_COMMUNICATION_DELAYEDReady = true; } return _USAGE_NOTIFICATION_COMMUNICATION_DELAYEDContent; } }
         private static int _USAGE_NOTIFICATION_COMMUNICATION_DELAYEDContent = default;
         private static bool _USAGE_NOTIFICATION_COMMUNICATION_DELAYEDReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioAttributes.html#USAGE_NOTIFICATION_COMMUNICATION_INSTANT"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int USAGE_NOTIFICATION_COMMUNICATION_INSTANT { get { if (!_USAGE_NOTIFICATION_COMMUNICATION_INSTANTReady) { _USAGE_NOTIFICATION_COMMUNICATION_INSTANTContent = SGetField<int>(LocalBridgeClazz, "USAGE_NOTIFICATION_COMMUNICATION_INSTANT"); _USAGE_NOTIFICATION_COMMUNICATION_INSTANTReady = true; } return _USAGE_NOTIFICATION_COMMUNICATION_INSTANTContent; } }
         private static int _USAGE_NOTIFICATION_COMMUNICATION_INSTANTContent = default;
         private static bool _USAGE_NOTIFICATION_COMMUNICATION_INSTANTReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioAttributes.html#USAGE_NOTIFICATION_COMMUNICATION_REQUEST"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int USAGE_NOTIFICATION_COMMUNICATION_REQUEST { get { if (!_USAGE_NOTIFICATION_COMMUNICATION_REQUESTReady) { _USAGE_NOTIFICATION_COMMUNICATION_REQUESTContent = SGetField<int>(LocalBridgeClazz, "USAGE_NOTIFICATION_COMMUNICATION_REQUEST"); _USAGE_NOTIFICATION_COMMUNICATION_REQUESTReady = true; } return _USAGE_NOTIFICATION_COMMUNICATION_REQUESTContent; } }
         private static int _USAGE_NOTIFICATION_COMMUNICATION_REQUESTContent = default;
         private static bool _USAGE_NOTIFICATION_COMMUNICATION_REQUESTReady = false; // this is used because in case of generics 
@@ -230,48 +230,6 @@ namespace Android.Media
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioAttributes.html#getAllowedCapturePolicy()"/> 
-        /// </summary>
-        public int AllowedCapturePolicy
-        {
-            get { return IExecuteWithSignature<int>("getAllowedCapturePolicy", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioAttributes.html#getContentType()"/> 
-        /// </summary>
-        public int ContentType
-        {
-            get { return IExecuteWithSignature<int>("getContentType", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioAttributes.html#getFlags()"/> 
-        /// </summary>
-        public int Flags
-        {
-            get { return IExecuteWithSignature<int>("getFlags", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioAttributes.html#getSpatializationBehavior()"/> 
-        /// </summary>
-        public int SpatializationBehavior
-        {
-            get { return IExecuteWithSignature<int>("getSpatializationBehavior", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioAttributes.html#getUsage()"/> 
-        /// </summary>
-        public int Usage
-        {
-            get { return IExecuteWithSignature<int>("getUsage", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioAttributes.html#getVolumeControlStream()"/> 
-        /// </summary>
-        public int VolumeControlStream
-        {
-            get { return IExecuteWithSignature<int>("getVolumeControlStream", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioAttributes.html#areHapticChannelsMuted()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -294,6 +252,54 @@ namespace Android.Media
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioAttributes.html#getAllowedCapturePolicy()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetAllowedCapturePolicy()
+        {
+            return IExecuteWithSignature<int>("getAllowedCapturePolicy", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioAttributes.html#getContentType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetContentType()
+        {
+            return IExecuteWithSignature<int>("getContentType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioAttributes.html#getFlags()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetFlags()
+        {
+            return IExecuteWithSignature<int>("getFlags", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioAttributes.html#getSpatializationBehavior()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSpatializationBehavior()
+        {
+            return IExecuteWithSignature<int>("getSpatializationBehavior", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioAttributes.html#getUsage()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetUsage()
+        {
+            return IExecuteWithSignature<int>("getUsage", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioAttributes.html#getVolumeControlStream()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetVolumeControlStream()
+        {
+            return IExecuteWithSignature<int>("getVolumeControlStream", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioAttributes.html#writeToParcel(android.os.Parcel,int)"/>

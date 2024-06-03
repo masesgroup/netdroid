@@ -42,11 +42,12 @@ namespace Android.Webkit
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/MimeTypeMap.html#getSingleton()"/> 
+        /// <see href="https://developer.android.com/reference/android/webkit/MimeTypeMap.html#getSingleton()"/>
         /// </summary>
-        public static Android.Webkit.MimeTypeMap Singleton
+        /// <returns><see cref="Android.Webkit.MimeTypeMap"/></returns>
+        public static Android.Webkit.MimeTypeMap GetSingleton()
         {
-            get { return SExecuteWithSignature<Android.Webkit.MimeTypeMap>(LocalBridgeClazz, "getSingleton", "()Landroid/webkit/MimeTypeMap;"); }
+            return SExecuteWithSignature<Android.Webkit.MimeTypeMap>(LocalBridgeClazz, "getSingleton", "()Landroid/webkit/MimeTypeMap;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/MimeTypeMap.html#getFileExtensionFromUrl(java.lang.String)"/>

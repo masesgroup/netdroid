@@ -42,11 +42,12 @@ namespace Android.View
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/FocusFinder.html#getInstance()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/FocusFinder.html#getInstance()"/>
         /// </summary>
-        public static Android.View.FocusFinder Instance
+        /// <returns><see cref="Android.View.FocusFinder"/></returns>
+        public static Android.View.FocusFinder GetInstance()
         {
-            get { return SExecuteWithSignature<Android.View.FocusFinder>(LocalBridgeClazz, "getInstance", "()Landroid/view/FocusFinder;"); }
+            return SExecuteWithSignature<Android.View.FocusFinder>(LocalBridgeClazz, "getInstance", "()Landroid/view/FocusFinder;");
         }
 
         #endregion

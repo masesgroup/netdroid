@@ -52,60 +52,68 @@ namespace Android.Telephony
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityNr.html#getAdditionalPlmns()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityNr.html#getNrarfcn()"/>
         /// </summary>
-        public Java.Util.Set<Java.Lang.String> AdditionalPlmns
+        /// <returns><see cref="int"/></returns>
+        public int GetNrarfcn()
         {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getAdditionalPlmns", "()Ljava/util/Set;"); }
+            return IExecuteWithSignature<int>("getNrarfcn", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityNr.html#getBands()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityNr.html#getPci()"/>
         /// </summary>
-        public int[] Bands
+        /// <returns><see cref="int"/></returns>
+        public int GetPci()
         {
-            get { return IExecuteWithSignatureArray<int>("getBands", "()[I"); }
+            return IExecuteWithSignature<int>("getPci", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityNr.html#getMccString()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityNr.html#getTac()"/>
         /// </summary>
-        public Java.Lang.String MccString
+        /// <returns><see cref="int"/></returns>
+        public int GetTac()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getMccString", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<int>("getTac", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityNr.html#getMncString()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityNr.html#getBands()"/>
         /// </summary>
-        public Java.Lang.String MncString
+        /// <returns><see cref="int"/></returns>
+        public int[] GetBands()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getMncString", "()Ljava/lang/String;"); }
+            return IExecuteWithSignatureArray<int>("getBands", "()[I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityNr.html#getNci()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityNr.html#getMccString()"/>
         /// </summary>
-        public long Nci
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetMccString()
         {
-            get { return IExecuteWithSignature<long>("getNci", "()J"); }
+            return IExecuteWithSignature<Java.Lang.String>("getMccString", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityNr.html#getNrarfcn()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityNr.html#getMncString()"/>
         /// </summary>
-        public int Nrarfcn
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetMncString()
         {
-            get { return IExecuteWithSignature<int>("getNrarfcn", "()I"); }
+            return IExecuteWithSignature<Java.Lang.String>("getMncString", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityNr.html#getPci()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityNr.html#getAdditionalPlmns()"/>
         /// </summary>
-        public int Pci
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Lang.String> GetAdditionalPlmns()
         {
-            get { return IExecuteWithSignature<int>("getPci", "()I"); }
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getAdditionalPlmns", "()Ljava/util/Set;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityNr.html#getTac()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/CellIdentityNr.html#getNci()"/>
         /// </summary>
-        public int Tac
+        /// <returns><see cref="long"/></returns>
+        public long GetNci()
         {
-            get { return IExecuteWithSignature<int>("getTac", "()I"); }
+            return IExecuteWithSignature<long>("getNci", "()J");
         }
 
         #endregion

@@ -228,11 +228,12 @@ namespace Android.Net.Wifi.P2p
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#getP2pMaxAllowedVendorElementsLengthBytes()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#getP2pMaxAllowedVendorElementsLengthBytes()"/>
         /// </summary>
-        public static int P2pMaxAllowedVendorElementsLengthBytes
+        /// <returns><see cref="int"/></returns>
+        public static int GetP2pMaxAllowedVendorElementsLengthBytes()
         {
-            get { return SExecuteWithSignature<int>(LocalBridgeClazz, "getP2pMaxAllowedVendorElementsLengthBytes", "()I"); }
+            return SExecuteWithSignature<int>(LocalBridgeClazz, "getP2pMaxAllowedVendorElementsLengthBytes", "()I");
         }
 
         #endregion
@@ -653,8 +654,8 @@ namespace Android.Net.Wifi.P2p
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onFailure", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnFailureEventHandler));
-                AddEventHandler("onSuccess", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnSuccessEventHandler));
+                AddEventHandler("onFailure", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnFailureEventHandler));
+                AddEventHandler("onSuccess", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnSuccessEventHandler));
 
             }
 
@@ -662,7 +663,7 @@ namespace Android.Net.Wifi.P2p
             /// Handler for <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.ActionListener.html#onFailure(int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnFailure"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<int> OnOnFailure { get; set; } = null;
+            public global::System.Action<int> OnOnFailure { get; set; } = null;
 
             void OnFailureEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
             {
@@ -683,7 +684,7 @@ namespace Android.Net.Wifi.P2p
             /// Handler for <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.ActionListener.html#onSuccess()"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnSuccess"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action OnOnSuccess { get; set; } = null;
+            public global::System.Action OnOnSuccess { get; set; } = null;
 
             void OnSuccessEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
             {
@@ -818,7 +819,7 @@ namespace Android.Net.Wifi.P2p
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onChannelDisconnected", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnChannelDisconnectedEventHandler));
+                AddEventHandler("onChannelDisconnected", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnChannelDisconnectedEventHandler));
 
             }
 
@@ -826,7 +827,7 @@ namespace Android.Net.Wifi.P2p
             /// Handler for <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.ChannelListener.html#onChannelDisconnected()"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnChannelDisconnected"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action OnOnChannelDisconnected { get; set; } = null;
+            public global::System.Action OnOnChannelDisconnected { get; set; } = null;
 
             void OnChannelDisconnectedEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
             {
@@ -915,7 +916,7 @@ namespace Android.Net.Wifi.P2p
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onConnectionInfoAvailable", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Net.Wifi.P2p.WifiP2pInfo>>>(OnConnectionInfoAvailableEventHandler));
+                AddEventHandler("onConnectionInfoAvailable", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Net.Wifi.P2p.WifiP2pInfo>>>(OnConnectionInfoAvailableEventHandler));
 
             }
 
@@ -923,7 +924,7 @@ namespace Android.Net.Wifi.P2p
             /// Handler for <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.ConnectionInfoListener.html#onConnectionInfoAvailable(android.net.wifi.p2p.WifiP2pInfo)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnConnectionInfoAvailable"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Net.Wifi.P2p.WifiP2pInfo> OnOnConnectionInfoAvailable { get; set; } = null;
+            public global::System.Action<Android.Net.Wifi.P2p.WifiP2pInfo> OnOnConnectionInfoAvailable { get; set; } = null;
 
             void OnConnectionInfoAvailableEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Net.Wifi.P2p.WifiP2pInfo>> data)
             {
@@ -1014,7 +1015,7 @@ namespace Android.Net.Wifi.P2p
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onDeviceInfoAvailable", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Net.Wifi.P2p.WifiP2pDevice>>>(OnDeviceInfoAvailableEventHandler));
+                AddEventHandler("onDeviceInfoAvailable", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Net.Wifi.P2p.WifiP2pDevice>>>(OnDeviceInfoAvailableEventHandler));
 
             }
 
@@ -1022,7 +1023,7 @@ namespace Android.Net.Wifi.P2p
             /// Handler for <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.DeviceInfoListener.html#onDeviceInfoAvailable(android.net.wifi.p2p.WifiP2pDevice)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnDeviceInfoAvailable"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Net.Wifi.P2p.WifiP2pDevice> OnOnDeviceInfoAvailable { get; set; } = null;
+            public global::System.Action<Android.Net.Wifi.P2p.WifiP2pDevice> OnOnDeviceInfoAvailable { get; set; } = null;
 
             void OnDeviceInfoAvailableEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Net.Wifi.P2p.WifiP2pDevice>> data)
             {
@@ -1113,7 +1114,7 @@ namespace Android.Net.Wifi.P2p
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onDiscoveryStateAvailable", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnDiscoveryStateAvailableEventHandler));
+                AddEventHandler("onDiscoveryStateAvailable", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnDiscoveryStateAvailableEventHandler));
 
             }
 
@@ -1121,7 +1122,7 @@ namespace Android.Net.Wifi.P2p
             /// Handler for <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.DiscoveryStateListener.html#onDiscoveryStateAvailable(int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnDiscoveryStateAvailable"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<int> OnOnDiscoveryStateAvailable { get; set; } = null;
+            public global::System.Action<int> OnOnDiscoveryStateAvailable { get; set; } = null;
 
             void OnDiscoveryStateAvailableEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
             {
@@ -1212,7 +1213,7 @@ namespace Android.Net.Wifi.P2p
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onDnsSdServiceAvailable", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(OnDnsSdServiceAvailableEventHandler));
+                AddEventHandler("onDnsSdServiceAvailable", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(OnDnsSdServiceAvailableEventHandler));
 
             }
 
@@ -1220,7 +1221,7 @@ namespace Android.Net.Wifi.P2p
             /// Handler for <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.DnsSdServiceResponseListener.html#onDnsSdServiceAvailable(java.lang.String,java.lang.String,android.net.wifi.p2p.WifiP2pDevice)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnDnsSdServiceAvailable"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Java.Lang.String, Java.Lang.String, Android.Net.Wifi.P2p.WifiP2pDevice> OnOnDnsSdServiceAvailable { get; set; } = null;
+            public global::System.Action<Java.Lang.String, Java.Lang.String, Android.Net.Wifi.P2p.WifiP2pDevice> OnOnDnsSdServiceAvailable { get; set; } = null;
 
             void OnDnsSdServiceAvailableEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
             {
@@ -1315,7 +1316,7 @@ namespace Android.Net.Wifi.P2p
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onDnsSdTxtRecordAvailable", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(OnDnsSdTxtRecordAvailableEventHandler));
+                AddEventHandler("onDnsSdTxtRecordAvailable", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(OnDnsSdTxtRecordAvailableEventHandler));
 
             }
 
@@ -1323,7 +1324,7 @@ namespace Android.Net.Wifi.P2p
             /// Handler for <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.DnsSdTxtRecordListener.html#onDnsSdTxtRecordAvailable(java.lang.String,java.util.Map,android.net.wifi.p2p.WifiP2pDevice)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnDnsSdTxtRecordAvailable"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Java.Lang.String, Java.Util.Map<Java.Lang.String, Java.Lang.String>, Android.Net.Wifi.P2p.WifiP2pDevice> OnOnDnsSdTxtRecordAvailable { get; set; } = null;
+            public global::System.Action<Java.Lang.String, Java.Util.Map<Java.Lang.String, Java.Lang.String>, Android.Net.Wifi.P2p.WifiP2pDevice> OnOnDnsSdTxtRecordAvailable { get; set; } = null;
 
             void OnDnsSdTxtRecordAvailableEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
             {
@@ -1418,10 +1419,10 @@ namespace Android.Net.Wifi.P2p
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onAttached", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Net.MacAddress>>>(OnAttachedEventHandler));
-                AddEventHandler("onConnectionRequested", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnConnectionRequestedEventHandler));
-                AddEventHandler("onDetached", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Net.MacAddress>>>(OnDetachedEventHandler));
-                AddEventHandler("onPinGenerated", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Net.MacAddress>>>(OnPinGeneratedEventHandler));
+                AddEventHandler("onAttached", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Net.MacAddress>>>(OnAttachedEventHandler));
+                AddEventHandler("onConnectionRequested", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnConnectionRequestedEventHandler));
+                AddEventHandler("onDetached", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Net.MacAddress>>>(OnDetachedEventHandler));
+                AddEventHandler("onPinGenerated", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Net.MacAddress>>>(OnPinGeneratedEventHandler));
 
             }
 
@@ -1429,7 +1430,7 @@ namespace Android.Net.Wifi.P2p
             /// Handler for <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.ExternalApproverRequestListener.html#onAttached(android.net.MacAddress)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnAttached"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Net.MacAddress> OnOnAttached { get; set; } = null;
+            public global::System.Action<Android.Net.MacAddress> OnOnAttached { get; set; } = null;
 
             void OnAttachedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Net.MacAddress>> data)
             {
@@ -1450,7 +1451,7 @@ namespace Android.Net.Wifi.P2p
             /// Handler for <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.ExternalApproverRequestListener.html#onConnectionRequested(int,android.net.wifi.p2p.WifiP2pConfig,android.net.wifi.p2p.WifiP2pDevice)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnConnectionRequested"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<int, Android.Net.Wifi.P2p.WifiP2pConfig, Android.Net.Wifi.P2p.WifiP2pDevice> OnOnConnectionRequested { get; set; } = null;
+            public global::System.Action<int, Android.Net.Wifi.P2p.WifiP2pConfig, Android.Net.Wifi.P2p.WifiP2pDevice> OnOnConnectionRequested { get; set; } = null;
 
             void OnConnectionRequestedEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
             {
@@ -1473,7 +1474,7 @@ namespace Android.Net.Wifi.P2p
             /// Handler for <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.ExternalApproverRequestListener.html#onDetached(android.net.MacAddress,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnDetached"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Net.MacAddress, int> OnOnDetached { get; set; } = null;
+            public global::System.Action<Android.Net.MacAddress, int> OnOnDetached { get; set; } = null;
 
             void OnDetachedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Net.MacAddress>> data)
             {
@@ -1495,7 +1496,7 @@ namespace Android.Net.Wifi.P2p
             /// Handler for <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.ExternalApproverRequestListener.html#onPinGenerated(android.net.MacAddress,java.lang.String)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnPinGenerated"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Net.MacAddress, Java.Lang.String> OnOnPinGenerated { get; set; } = null;
+            public global::System.Action<Android.Net.MacAddress, Java.Lang.String> OnOnPinGenerated { get; set; } = null;
 
             void OnPinGeneratedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Net.MacAddress>> data)
             {
@@ -1615,7 +1616,7 @@ namespace Android.Net.Wifi.P2p
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onGroupInfoAvailable", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Net.Wifi.P2p.WifiP2pGroup>>>(OnGroupInfoAvailableEventHandler));
+                AddEventHandler("onGroupInfoAvailable", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Net.Wifi.P2p.WifiP2pGroup>>>(OnGroupInfoAvailableEventHandler));
 
             }
 
@@ -1623,7 +1624,7 @@ namespace Android.Net.Wifi.P2p
             /// Handler for <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.GroupInfoListener.html#onGroupInfoAvailable(android.net.wifi.p2p.WifiP2pGroup)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnGroupInfoAvailable"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Net.Wifi.P2p.WifiP2pGroup> OnOnGroupInfoAvailable { get; set; } = null;
+            public global::System.Action<Android.Net.Wifi.P2p.WifiP2pGroup> OnOnGroupInfoAvailable { get; set; } = null;
 
             void OnGroupInfoAvailableEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Net.Wifi.P2p.WifiP2pGroup>> data)
             {
@@ -1714,7 +1715,7 @@ namespace Android.Net.Wifi.P2p
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onNetworkInfoAvailable", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Net.NetworkInfo>>>(OnNetworkInfoAvailableEventHandler));
+                AddEventHandler("onNetworkInfoAvailable", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Net.NetworkInfo>>>(OnNetworkInfoAvailableEventHandler));
 
             }
 
@@ -1722,7 +1723,7 @@ namespace Android.Net.Wifi.P2p
             /// Handler for <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.NetworkInfoListener.html#onNetworkInfoAvailable(android.net.NetworkInfo)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnNetworkInfoAvailable"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Net.NetworkInfo> OnOnNetworkInfoAvailable { get; set; } = null;
+            public global::System.Action<Android.Net.NetworkInfo> OnOnNetworkInfoAvailable { get; set; } = null;
 
             void OnNetworkInfoAvailableEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Net.NetworkInfo>> data)
             {
@@ -1813,7 +1814,7 @@ namespace Android.Net.Wifi.P2p
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onP2pStateAvailable", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnP2pStateAvailableEventHandler));
+                AddEventHandler("onP2pStateAvailable", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnP2pStateAvailableEventHandler));
 
             }
 
@@ -1821,7 +1822,7 @@ namespace Android.Net.Wifi.P2p
             /// Handler for <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.P2pStateListener.html#onP2pStateAvailable(int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnP2pStateAvailable"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<int> OnOnP2pStateAvailable { get; set; } = null;
+            public global::System.Action<int> OnOnP2pStateAvailable { get; set; } = null;
 
             void OnP2pStateAvailableEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
             {
@@ -1912,7 +1913,7 @@ namespace Android.Net.Wifi.P2p
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onPeersAvailable", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Net.Wifi.P2p.WifiP2pDeviceList>>>(OnPeersAvailableEventHandler));
+                AddEventHandler("onPeersAvailable", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Net.Wifi.P2p.WifiP2pDeviceList>>>(OnPeersAvailableEventHandler));
 
             }
 
@@ -1920,7 +1921,7 @@ namespace Android.Net.Wifi.P2p
             /// Handler for <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.PeerListListener.html#onPeersAvailable(android.net.wifi.p2p.WifiP2pDeviceList)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnPeersAvailable"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Net.Wifi.P2p.WifiP2pDeviceList> OnOnPeersAvailable { get; set; } = null;
+            public global::System.Action<Android.Net.Wifi.P2p.WifiP2pDeviceList> OnOnPeersAvailable { get; set; } = null;
 
             void OnPeersAvailableEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Net.Wifi.P2p.WifiP2pDeviceList>> data)
             {
@@ -2011,7 +2012,7 @@ namespace Android.Net.Wifi.P2p
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onServiceAvailable", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnServiceAvailableEventHandler));
+                AddEventHandler("onServiceAvailable", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnServiceAvailableEventHandler));
 
             }
 
@@ -2019,7 +2020,7 @@ namespace Android.Net.Wifi.P2p
             /// Handler for <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.ServiceResponseListener.html#onServiceAvailable(int,byte[],android.net.wifi.p2p.WifiP2pDevice)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnServiceAvailable"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<int, byte[], Android.Net.Wifi.P2p.WifiP2pDevice> OnOnServiceAvailable { get; set; } = null;
+            public global::System.Action<int, byte[], Android.Net.Wifi.P2p.WifiP2pDevice> OnOnServiceAvailable { get; set; } = null;
 
             void OnServiceAvailableEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
             {
@@ -2114,7 +2115,7 @@ namespace Android.Net.Wifi.P2p
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onUpnpServiceAvailable", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.List<Java.Lang.String>>>>(OnUpnpServiceAvailableEventHandler));
+                AddEventHandler("onUpnpServiceAvailable", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.List<Java.Lang.String>>>>(OnUpnpServiceAvailableEventHandler));
 
             }
 
@@ -2122,7 +2123,7 @@ namespace Android.Net.Wifi.P2p
             /// Handler for <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.UpnpServiceResponseListener.html#onUpnpServiceAvailable(java.util.List,android.net.wifi.p2p.WifiP2pDevice)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnUpnpServiceAvailable"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Java.Util.List<Java.Lang.String>, Android.Net.Wifi.P2p.WifiP2pDevice> OnOnUpnpServiceAvailable { get; set; } = null;
+            public global::System.Action<Java.Util.List<Java.Lang.String>, Android.Net.Wifi.P2p.WifiP2pDevice> OnOnUpnpServiceAvailable { get; set; } = null;
 
             void OnUpnpServiceAvailableEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.List<Java.Lang.String>>> data)
             {

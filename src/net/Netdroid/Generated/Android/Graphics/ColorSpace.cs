@@ -221,41 +221,6 @@ namespace Android.Graphics
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/ColorSpace.html#getComponentCount()"/> 
-        /// </summary>
-        public int ComponentCount
-        {
-            get { return IExecuteWithSignature<int>("getComponentCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/ColorSpace.html#getDataSpace()"/> 
-        /// </summary>
-        public int DataSpace
-        {
-            get { return IExecuteWithSignature<int>("getDataSpace", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/ColorSpace.html#getModel()"/> 
-        /// </summary>
-        public Android.Graphics.ColorSpace.Model GetModel
-        {
-            get { return IExecuteWithSignature<Android.Graphics.ColorSpace.Model>("getModel", "()Landroid/graphics/ColorSpace$Model;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/ColorSpace.html#getId()"/> 
-        /// </summary>
-        public int Id
-        {
-            get { return IExecuteWithSignature<int>("getId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/ColorSpace.html#getName()"/> 
-        /// </summary>
-        public Java.Lang.String Name
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/ColorSpace.html#isWideGamut()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -300,6 +265,14 @@ namespace Android.Graphics
             return IExecuteWithSignatureArray<float>("toXyz", "([F)[F", new object[] { arg0 });
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/ColorSpace.html#getModel()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Graphics.ColorSpace.Model"/></returns>
+        public Android.Graphics.ColorSpace.Model GetModel()
+        {
+            return IExecuteWithSignature<Android.Graphics.ColorSpace.Model>("getModel", "()Landroid/graphics/ColorSpace$Model;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/ColorSpace.html#isSrgb()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -328,6 +301,38 @@ namespace Android.Graphics
         public float[] ToXyz(float arg0, float arg1, float arg2)
         {
             return IExecuteArray<float>("toXyz", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/ColorSpace.html#getComponentCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetComponentCount()
+        {
+            return IExecuteWithSignature<int>("getComponentCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/ColorSpace.html#getDataSpace()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDataSpace()
+        {
+            return IExecuteWithSignature<int>("getDataSpace", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/ColorSpace.html#getId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetId()
+        {
+            return IExecuteWithSignature<int>("getId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/ColorSpace.html#getName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
         }
 
         #endregion
@@ -420,25 +425,28 @@ namespace Android.Graphics
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/graphics/ColorSpace.Connector.html#getDestination()"/> 
+            /// <see href="https://developer.android.com/reference/android/graphics/ColorSpace.Connector.html#getDestination()"/>
             /// </summary>
-            public Android.Graphics.ColorSpace Destination
+            /// <returns><see cref="Android.Graphics.ColorSpace"/></returns>
+            public Android.Graphics.ColorSpace GetDestination()
             {
-                get { return IExecuteWithSignature<Android.Graphics.ColorSpace>("getDestination", "()Landroid/graphics/ColorSpace;"); }
+                return IExecuteWithSignature<Android.Graphics.ColorSpace>("getDestination", "()Landroid/graphics/ColorSpace;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/graphics/ColorSpace.Connector.html#getRenderIntent()"/> 
+            /// <see href="https://developer.android.com/reference/android/graphics/ColorSpace.Connector.html#getSource()"/>
             /// </summary>
-            public Android.Graphics.ColorSpace.RenderIntent GetRenderIntent
+            /// <returns><see cref="Android.Graphics.ColorSpace"/></returns>
+            public Android.Graphics.ColorSpace GetSource()
             {
-                get { return IExecuteWithSignature<Android.Graphics.ColorSpace.RenderIntent>("getRenderIntent", "()Landroid/graphics/ColorSpace$RenderIntent;"); }
+                return IExecuteWithSignature<Android.Graphics.ColorSpace>("getSource", "()Landroid/graphics/ColorSpace;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/graphics/ColorSpace.Connector.html#getSource()"/> 
+            /// <see href="https://developer.android.com/reference/android/graphics/ColorSpace.Connector.html#getRenderIntent()"/>
             /// </summary>
-            public Android.Graphics.ColorSpace Source
+            /// <returns><see cref="Android.Graphics.ColorSpace.RenderIntent"/></returns>
+            public Android.Graphics.ColorSpace.RenderIntent GetRenderIntent()
             {
-                get { return IExecuteWithSignature<Android.Graphics.ColorSpace>("getSource", "()Landroid/graphics/ColorSpace;"); }
+                return IExecuteWithSignature<Android.Graphics.ColorSpace.RenderIntent>("getRenderIntent", "()Landroid/graphics/ColorSpace$RenderIntent;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/ColorSpace.Connector.html#transform(float,float,float)"/>
@@ -533,11 +541,12 @@ namespace Android.Graphics
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/graphics/ColorSpace.Model.html#getComponentCount()"/> 
+            /// <see href="https://developer.android.com/reference/android/graphics/ColorSpace.Model.html#getComponentCount()"/>
             /// </summary>
-            public int ComponentCount
+            /// <returns><see cref="int"/></returns>
+            public int GetComponentCount()
             {
-                get { return IExecuteWithSignature<int>("getComponentCount", "()I"); }
+                return IExecuteWithSignature<int>("getComponentCount", "()I");
             }
 
             #endregion
@@ -866,53 +875,12 @@ namespace Android.Graphics
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html#getEotf()"/> 
+            /// <see href="https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html#getTransferParameters()"/>
             /// </summary>
-            public Java.Util.Function.DoubleUnaryOperator Eotf
+            /// <returns><see cref="Android.Graphics.ColorSpace.Rgb.TransferParameters"/></returns>
+            public Android.Graphics.ColorSpace.Rgb.TransferParameters GetTransferParameters()
             {
-                get { return IExecuteWithSignature<Java.Util.Function.DoubleUnaryOperator>("getEotf", "()Ljava/util/function/DoubleUnaryOperator;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html#getInverseTransform()"/> 
-            /// </summary>
-            public float[] InverseTransform
-            {
-                get { return IExecuteWithSignatureArray<float>("getInverseTransform", "()[F"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html#getOetf()"/> 
-            /// </summary>
-            public Java.Util.Function.DoubleUnaryOperator Oetf
-            {
-                get { return IExecuteWithSignature<Java.Util.Function.DoubleUnaryOperator>("getOetf", "()Ljava/util/function/DoubleUnaryOperator;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html#getPrimaries()"/> 
-            /// </summary>
-            public float[] Primaries
-            {
-                get { return IExecuteWithSignatureArray<float>("getPrimaries", "()[F"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html#getTransferParameters()"/> 
-            /// </summary>
-            public Android.Graphics.ColorSpace.Rgb.TransferParameters TransferParameters
-            {
-                get { return IExecuteWithSignature<Android.Graphics.ColorSpace.Rgb.TransferParameters>("getTransferParameters", "()Landroid/graphics/ColorSpace$Rgb$TransferParameters;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html#getTransform()"/> 
-            /// </summary>
-            public float[] Transform
-            {
-                get { return IExecuteWithSignatureArray<float>("getTransform", "()[F"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html#getWhitePoint()"/> 
-            /// </summary>
-            public float[] WhitePoint
-            {
-                get { return IExecuteWithSignatureArray<float>("getWhitePoint", "()[F"); }
+                return IExecuteWithSignature<Android.Graphics.ColorSpace.Rgb.TransferParameters>("getTransferParameters", "()Landroid/graphics/ColorSpace$Rgb$TransferParameters;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html#fromLinear(float,float,float)"/>
@@ -935,6 +903,14 @@ namespace Android.Graphics
                 return IExecuteWithSignatureArray<float>("fromLinear", "([F)[F", new object[] { arg0 });
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html#getInverseTransform()"/>
+            /// </summary>
+            /// <returns><see cref="float"/></returns>
+            public float[] GetInverseTransform()
+            {
+                return IExecuteWithSignatureArray<float>("getInverseTransform", "()[F");
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html#getInverseTransform(float[])"/>
             /// </summary>
             /// <param name="arg0"><see cref="float"/></param>
@@ -942,6 +918,14 @@ namespace Android.Graphics
             public float[] GetInverseTransform(float[] arg0)
             {
                 return IExecuteWithSignatureArray<float>("getInverseTransform", "([F)[F", new object[] { arg0 });
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html#getPrimaries()"/>
+            /// </summary>
+            /// <returns><see cref="float"/></returns>
+            public float[] GetPrimaries()
+            {
+                return IExecuteWithSignatureArray<float>("getPrimaries", "()[F");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html#getPrimaries(float[])"/>
@@ -953,6 +937,14 @@ namespace Android.Graphics
                 return IExecuteWithSignatureArray<float>("getPrimaries", "([F)[F", new object[] { arg0 });
             }
             /// <summary>
+            /// <see href="https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html#getTransform()"/>
+            /// </summary>
+            /// <returns><see cref="float"/></returns>
+            public float[] GetTransform()
+            {
+                return IExecuteWithSignatureArray<float>("getTransform", "()[F");
+            }
+            /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html#getTransform(float[])"/>
             /// </summary>
             /// <param name="arg0"><see cref="float"/></param>
@@ -960,6 +952,14 @@ namespace Android.Graphics
             public float[] GetTransform(float[] arg0)
             {
                 return IExecuteWithSignatureArray<float>("getTransform", "([F)[F", new object[] { arg0 });
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html#getWhitePoint()"/>
+            /// </summary>
+            /// <returns><see cref="float"/></returns>
+            public float[] GetWhitePoint()
+            {
+                return IExecuteWithSignatureArray<float>("getWhitePoint", "()[F");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html#getWhitePoint(float[])"/>
@@ -989,6 +989,38 @@ namespace Android.Graphics
             public float[] ToLinear(float[] arg0)
             {
                 return IExecuteWithSignatureArray<float>("toLinear", "([F)[F", new object[] { arg0 });
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html#getEotf()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Util.Function.DoubleUnaryOperator"/></returns>
+            public Java.Util.Function.DoubleUnaryOperator GetEotf()
+            {
+                return IExecuteWithSignature<Java.Util.Function.DoubleUnaryOperator>("getEotf", "()Ljava/util/function/DoubleUnaryOperator;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html#getEotf()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Util.Function.DoubleUnaryOperator"/></returns>
+            public Java.Util.Function.DoubleUnaryOperator GetEotfDirect()
+            {
+                return IExecuteWithSignature<Java.Util.Function.DoubleUnaryOperatorDirect, Java.Util.Function.DoubleUnaryOperator>("getEotf", "()Ljava/util/function/DoubleUnaryOperator;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html#getOetf()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Util.Function.DoubleUnaryOperator"/></returns>
+            public Java.Util.Function.DoubleUnaryOperator GetOetf()
+            {
+                return IExecuteWithSignature<Java.Util.Function.DoubleUnaryOperator>("getOetf", "()Ljava/util/function/DoubleUnaryOperator;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html#getOetf()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Util.Function.DoubleUnaryOperator"/></returns>
+            public Java.Util.Function.DoubleUnaryOperator GetOetfDirect()
+            {
+                return IExecuteWithSignature<Java.Util.Function.DoubleUnaryOperatorDirect, Java.Util.Function.DoubleUnaryOperator>("getOetf", "()Ljava/util/function/DoubleUnaryOperator;");
             }
 
             #endregion

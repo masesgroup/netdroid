@@ -56,18 +56,12 @@ namespace Android.View.Inputmethod
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InsertGesture.html#getInsertionPoint()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InsertGesture.html#getInsertionPoint()"/>
         /// </summary>
-        public Android.Graphics.PointF InsertionPoint
+        /// <returns><see cref="Android.Graphics.PointF"/></returns>
+        public Android.Graphics.PointF GetInsertionPoint()
         {
-            get { return IExecuteWithSignature<Android.Graphics.PointF>("getInsertionPoint", "()Landroid/graphics/PointF;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InsertGesture.html#getTextToInsert()"/> 
-        /// </summary>
-        public Java.Lang.String TextToInsert
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getTextToInsert", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Android.Graphics.PointF>("getInsertionPoint", "()Landroid/graphics/PointF;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InsertGesture.html#describeContents()"/>
@@ -76,6 +70,14 @@ namespace Android.View.Inputmethod
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InsertGesture.html#getTextToInsert()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetTextToInsert()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getTextToInsert", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InsertGesture.html#writeToParcel(android.os.Parcel,int)"/>

@@ -42,14 +42,15 @@ namespace Java.Security.Cert
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/CertStore.html#getDefaultType()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/cert/CertStore.html#getDefaultType()"/>
         /// </summary>
-        public static Java.Lang.String DefaultType
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public static Java.Lang.String GetDefaultType()
         {
-            get { return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getDefaultType", "()Ljava/lang/String;"); }
+            return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getDefaultType", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/CertStore.html#getInstance(java.lang.String,java.security.cert.CertStoreParameters,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/security/cert/CertStore.html#getInstance(java.lang.String,java.security.cert.CertStoreParameters,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Security.Cert.CertStoreParameters"/></param>
@@ -63,7 +64,7 @@ namespace Java.Security.Cert
             return SExecute<Java.Security.Cert.CertStore>(LocalBridgeClazz, "getInstance", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/CertStore.html#getInstance(java.lang.String,java.security.cert.CertStoreParameters,java.security.Provider)"/>
+        /// <see href="https://developer.android.com/reference/java/security/cert/CertStore.html#getInstance(java.lang.String,java.security.cert.CertStoreParameters,java.security.Provider)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Security.Cert.CertStoreParameters"/></param>
@@ -76,7 +77,7 @@ namespace Java.Security.Cert
             return SExecute<Java.Security.Cert.CertStore>(LocalBridgeClazz, "getInstance", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/CertStore.html#getInstance(java.lang.String,java.security.cert.CertStoreParameters)"/>
+        /// <see href="https://developer.android.com/reference/java/security/cert/CertStore.html#getInstance(java.lang.String,java.security.cert.CertStoreParameters)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Security.Cert.CertStoreParameters"/></param>
@@ -92,45 +93,48 @@ namespace Java.Security.Cert
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/CertStore.html#getCertStoreParameters()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/cert/CertStore.html#getType()"/>
         /// </summary>
-        public Java.Security.Cert.CertStoreParameters CertStoreParameters
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetType()
         {
-            get { return IExecuteWithSignature<Java.Security.Cert.CertStoreParameters>("getCertStoreParameters", "()Ljava/security/cert/CertStoreParameters;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getType", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/CertStore.html#getProvider()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/cert/CertStore.html#getCertStoreParameters()"/>
         /// </summary>
-        public Java.Security.Provider Provider
+        /// <returns><see cref="Java.Security.Cert.CertStoreParameters"/></returns>
+        public Java.Security.Cert.CertStoreParameters GetCertStoreParameters()
         {
-            get { return IExecuteWithSignature<Java.Security.Provider>("getProvider", "()Ljava/security/Provider;"); }
+            return IExecuteWithSignature<Java.Security.Cert.CertStoreParameters>("getCertStoreParameters", "()Ljava/security/cert/CertStoreParameters;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/CertStore.html#getType()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/cert/CertStore.html#getProvider()"/>
         /// </summary>
-        public Java.Lang.String Type
+        /// <returns><see cref="Java.Security.Provider"/></returns>
+        public Java.Security.Provider GetProvider()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getType", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Security.Provider>("getProvider", "()Ljava/security/Provider;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/CertStore.html#getCertificates(java.security.cert.CertSelector)"/>
+        /// <see href="https://developer.android.com/reference/java/security/cert/CertStore.html#getCertificates(java.security.cert.CertSelector)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Cert.CertSelector"/></param>
         /// <typeparam name="ReturnExtendsJava_Security_Cert_Certificate"><see cref="Java.Security.Cert.Certificate"/></typeparam>
         /// <returns><see cref="Java.Util.Collection"/></returns>
         /// <exception cref="Java.Security.Cert.CertStoreException"/>
-        public Java.Util.Collection<ReturnExtendsJava_Security_Cert_Certificate> GetCertificates<ReturnExtendsJava_Security_Cert_Certificate>(Java.Security.Cert.CertSelector arg0) where ReturnExtendsJava_Security_Cert_Certificate: Java.Security.Cert.Certificate
+        public Java.Util.Collection<ReturnExtendsJava_Security_Cert_Certificate> GetCertificates<ReturnExtendsJava_Security_Cert_Certificate>(Java.Security.Cert.CertSelector arg0) where ReturnExtendsJava_Security_Cert_Certificate : Java.Security.Cert.Certificate
         {
             return IExecuteWithSignature<Java.Util.Collection<ReturnExtendsJava_Security_Cert_Certificate>>("getCertificates", "(Ljava/security/cert/CertSelector;)Ljava/util/Collection;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/CertStore.html#getCRLs(java.security.cert.CRLSelector)"/>
+        /// <see href="https://developer.android.com/reference/java/security/cert/CertStore.html#getCRLs(java.security.cert.CRLSelector)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Cert.CRLSelector"/></param>
         /// <typeparam name="ReturnExtendsJava_Security_Cert_CRL"><see cref="Java.Security.Cert.CRL"/></typeparam>
         /// <returns><see cref="Java.Util.Collection"/></returns>
         /// <exception cref="Java.Security.Cert.CertStoreException"/>
-        public Java.Util.Collection<ReturnExtendsJava_Security_Cert_CRL> GetCRLs<ReturnExtendsJava_Security_Cert_CRL>(Java.Security.Cert.CRLSelector arg0) where ReturnExtendsJava_Security_Cert_CRL: Java.Security.Cert.CRL
+        public Java.Util.Collection<ReturnExtendsJava_Security_Cert_CRL> GetCRLs<ReturnExtendsJava_Security_Cert_CRL>(Java.Security.Cert.CRLSelector arg0) where ReturnExtendsJava_Security_Cert_CRL : Java.Security.Cert.CRL
         {
             return IExecuteWithSignature<Java.Util.Collection<ReturnExtendsJava_Security_Cert_CRL>>("getCRLs", "(Ljava/security/cert/CRLSelector;)Ljava/util/Collection;", arg0);
         }

@@ -76,40 +76,44 @@ namespace Android.Adservices.Common
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/common/FrequencyCapFilters.html#getKeyedFrequencyCapsForClickEvents()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Adservices.Common.KeyedFrequencyCap> KeyedFrequencyCapsForClickEvents
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Adservices.Common.KeyedFrequencyCap>>("getKeyedFrequencyCapsForClickEvents", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/common/FrequencyCapFilters.html#getKeyedFrequencyCapsForImpressionEvents()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Adservices.Common.KeyedFrequencyCap> KeyedFrequencyCapsForImpressionEvents
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Adservices.Common.KeyedFrequencyCap>>("getKeyedFrequencyCapsForImpressionEvents", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/common/FrequencyCapFilters.html#getKeyedFrequencyCapsForViewEvents()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Adservices.Common.KeyedFrequencyCap> KeyedFrequencyCapsForViewEvents
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Adservices.Common.KeyedFrequencyCap>>("getKeyedFrequencyCapsForViewEvents", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/common/FrequencyCapFilters.html#getKeyedFrequencyCapsForWinEvents()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Adservices.Common.KeyedFrequencyCap> KeyedFrequencyCapsForWinEvents
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Adservices.Common.KeyedFrequencyCap>>("getKeyedFrequencyCapsForWinEvents", "()Ljava/util/List;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/common/FrequencyCapFilters.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/adservices/common/FrequencyCapFilters.html#getKeyedFrequencyCapsForClickEvents()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Adservices.Common.KeyedFrequencyCap> GetKeyedFrequencyCapsForClickEvents()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Adservices.Common.KeyedFrequencyCap>>("getKeyedFrequencyCapsForClickEvents", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/adservices/common/FrequencyCapFilters.html#getKeyedFrequencyCapsForImpressionEvents()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Adservices.Common.KeyedFrequencyCap> GetKeyedFrequencyCapsForImpressionEvents()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Adservices.Common.KeyedFrequencyCap>>("getKeyedFrequencyCapsForImpressionEvents", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/adservices/common/FrequencyCapFilters.html#getKeyedFrequencyCapsForViewEvents()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Adservices.Common.KeyedFrequencyCap> GetKeyedFrequencyCapsForViewEvents()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Adservices.Common.KeyedFrequencyCap>>("getKeyedFrequencyCapsForViewEvents", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/adservices/common/FrequencyCapFilters.html#getKeyedFrequencyCapsForWinEvents()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Adservices.Common.KeyedFrequencyCap> GetKeyedFrequencyCapsForWinEvents()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Adservices.Common.KeyedFrequencyCap>>("getKeyedFrequencyCapsForWinEvents", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/common/FrequencyCapFilters.html#writeToParcel(android.os.Parcel,int)"/>

@@ -33,7 +33,7 @@ namespace Android.Util
         /// <see href="https://developer.android.com/reference/android/util/MutableLong.html#%3Cinit%3E(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public MutableLong(long arg0)
             : base(arg0)
         {
@@ -49,7 +49,7 @@ namespace Android.Util
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/MutableLong.html#value"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public long value { get { return IGetField<long>("value"); } set { ISetField("value", value); } }
 
         #endregion

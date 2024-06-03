@@ -64,7 +64,7 @@ namespace Java.Lang.Annotation
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/annotation/Retention.html#value()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/annotation/Retention.html#value()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.Annotation.RetentionPolicy"/></returns>
         public Java.Lang.Annotation.RetentionPolicy Value()

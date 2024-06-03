@@ -108,88 +108,20 @@ namespace Android.Gesture
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.html#getCurrentStroke()"/> 
+        /// <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.html#getGesture()"/>
         /// </summary>
-        public Java.Util.ArrayList<Android.Gesture.GesturePoint> CurrentStroke
+        /// <returns><see cref="Android.Gesture.Gesture"/></returns>
+        public Android.Gesture.Gesture GetGesture()
         {
-            get { return IExecuteWithSignature<Java.Util.ArrayList<Android.Gesture.GesturePoint>>("getCurrentStroke", "()Ljava/util/ArrayList;"); }
+            return IExecuteWithSignature<Android.Gesture.Gesture>("getGesture", "()Landroid/gesture/Gesture;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.html#getFadeOffset()"/> <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.html#setFadeOffset(long)"/>
+        /// <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.html#getGesturePath()"/>
         /// </summary>
-        public long FadeOffset
+        /// <returns><see cref="Android.Graphics.Path"/></returns>
+        public Android.Graphics.Path GetGesturePath()
         {
-            get { return IExecuteWithSignature<long>("getFadeOffset", "()J"); } set { IExecuteWithSignature("setFadeOffset", "(J)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.html#getGesture()"/> <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.html#setGesture(android.gesture.Gesture)"/>
-        /// </summary>
-        public Android.Gesture.Gesture Gesture
-        {
-            get { return IExecuteWithSignature<Android.Gesture.Gesture>("getGesture", "()Landroid/gesture/Gesture;"); } set { IExecuteWithSignature("setGesture", "(Landroid/gesture/Gesture;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.html#getGestureColor()"/> <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.html#setGestureColor(int)"/>
-        /// </summary>
-        public int GestureColor
-        {
-            get { return IExecuteWithSignature<int>("getGestureColor", "()I"); } set { IExecuteWithSignature("setGestureColor", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.html#getGesturePath()"/> 
-        /// </summary>
-        public Android.Graphics.Path GesturePath
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Path>("getGesturePath", "()Landroid/graphics/Path;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.html#getGestureStrokeAngleThreshold()"/> <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.html#setGestureStrokeAngleThreshold(float)"/>
-        /// </summary>
-        public float GestureStrokeAngleThreshold
-        {
-            get { return IExecuteWithSignature<float>("getGestureStrokeAngleThreshold", "()F"); } set { IExecuteWithSignature("setGestureStrokeAngleThreshold", "(F)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.html#getGestureStrokeLengthThreshold()"/> <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.html#setGestureStrokeLengthThreshold(float)"/>
-        /// </summary>
-        public float GestureStrokeLengthThreshold
-        {
-            get { return IExecuteWithSignature<float>("getGestureStrokeLengthThreshold", "()F"); } set { IExecuteWithSignature("setGestureStrokeLengthThreshold", "(F)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.html#getGestureStrokeSquarenessTreshold()"/> <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.html#setGestureStrokeSquarenessTreshold(float)"/>
-        /// </summary>
-        public float GestureStrokeSquarenessTreshold
-        {
-            get { return IExecuteWithSignature<float>("getGestureStrokeSquarenessTreshold", "()F"); } set { IExecuteWithSignature("setGestureStrokeSquarenessTreshold", "(F)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.html#getGestureStrokeType()"/> <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.html#setGestureStrokeType(int)"/>
-        /// </summary>
-        public int GestureStrokeType
-        {
-            get { return IExecuteWithSignature<int>("getGestureStrokeType", "()I"); } set { IExecuteWithSignature("setGestureStrokeType", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.html#getGestureStrokeWidth()"/> <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.html#setGestureStrokeWidth(float)"/>
-        /// </summary>
-        public float GestureStrokeWidth
-        {
-            get { return IExecuteWithSignature<float>("getGestureStrokeWidth", "()F"); } set { IExecuteWithSignature("setGestureStrokeWidth", "(F)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.html#getOrientation()"/> <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.html#setOrientation(int)"/>
-        /// </summary>
-        public int Orientation
-        {
-            get { return IExecuteWithSignature<int>("getOrientation", "()I"); } set { IExecuteWithSignature("setOrientation", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.html#getUncertainGestureColor()"/> <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.html#setUncertainGestureColor(int)"/>
-        /// </summary>
-        public int UncertainGestureColor
-        {
-            get { return IExecuteWithSignature<int>("getUncertainGestureColor", "()I"); } set { IExecuteWithSignature("setUncertainGestureColor", "(I)V", value); }
+            return IExecuteWithSignature<Android.Graphics.Path>("getGesturePath", "()Landroid/graphics/Path;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.html#getGesturePath(android.graphics.Path)"/>
@@ -231,6 +163,86 @@ namespace Android.Gesture
         public bool IsGesturing()
         {
             return IExecuteWithSignature<bool>("isGesturing", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.html#getGestureStrokeAngleThreshold()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetGestureStrokeAngleThreshold()
+        {
+            return IExecuteWithSignature<float>("getGestureStrokeAngleThreshold", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.html#getGestureStrokeLengthThreshold()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetGestureStrokeLengthThreshold()
+        {
+            return IExecuteWithSignature<float>("getGestureStrokeLengthThreshold", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.html#getGestureStrokeSquarenessTreshold()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetGestureStrokeSquarenessTreshold()
+        {
+            return IExecuteWithSignature<float>("getGestureStrokeSquarenessTreshold", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.html#getGestureStrokeWidth()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetGestureStrokeWidth()
+        {
+            return IExecuteWithSignature<float>("getGestureStrokeWidth", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.html#getGestureColor()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetGestureColor()
+        {
+            return IExecuteWithSignature<int>("getGestureColor", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.html#getGestureStrokeType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetGestureStrokeType()
+        {
+            return IExecuteWithSignature<int>("getGestureStrokeType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.html#getOrientation()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetOrientation()
+        {
+            return IExecuteWithSignature<int>("getOrientation", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.html#getUncertainGestureColor()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetUncertainGestureColor()
+        {
+            return IExecuteWithSignature<int>("getUncertainGestureColor", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.html#getCurrentStroke()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.ArrayList"/></returns>
+        public Java.Util.ArrayList<Android.Gesture.GesturePoint> GetCurrentStroke()
+        {
+            return IExecuteWithSignature<Java.Util.ArrayList<Android.Gesture.GesturePoint>>("getCurrentStroke", "()Ljava/util/ArrayList;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.html#getFadeOffset()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetFadeOffset()
+        {
+            return IExecuteWithSignature<long>("getFadeOffset", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.html#addOnGestureListener(android.gesture.GestureOverlayView.OnGestureListener)"/>
@@ -340,12 +352,92 @@ namespace Android.Gesture
             IExecuteWithSignature("setFadeEnabled", "(Z)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.html#setFadeOffset(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        public void SetFadeOffset(long arg0)
+        {
+            IExecuteWithSignature("setFadeOffset", "(J)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.html#setGesture(android.gesture.Gesture)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Gesture.Gesture"/></param>
+        public void SetGesture(Android.Gesture.Gesture arg0)
+        {
+            IExecuteWithSignature("setGesture", "(Landroid/gesture/Gesture;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.html#setGestureColor(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetGestureColor(int arg0)
+        {
+            IExecuteWithSignature("setGestureColor", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.html#setGestureStrokeAngleThreshold(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetGestureStrokeAngleThreshold(float arg0)
+        {
+            IExecuteWithSignature("setGestureStrokeAngleThreshold", "(F)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.html#setGestureStrokeLengthThreshold(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetGestureStrokeLengthThreshold(float arg0)
+        {
+            IExecuteWithSignature("setGestureStrokeLengthThreshold", "(F)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.html#setGestureStrokeSquarenessTreshold(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetGestureStrokeSquarenessTreshold(float arg0)
+        {
+            IExecuteWithSignature("setGestureStrokeSquarenessTreshold", "(F)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.html#setGestureStrokeType(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetGestureStrokeType(int arg0)
+        {
+            IExecuteWithSignature("setGestureStrokeType", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.html#setGestureStrokeWidth(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetGestureStrokeWidth(float arg0)
+        {
+            IExecuteWithSignature("setGestureStrokeWidth", "(F)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.html#setGestureVisible(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetGestureVisible(bool arg0)
         {
             IExecuteWithSignature("setGestureVisible", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.html#setOrientation(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetOrientation(int arg0)
+        {
+            IExecuteWithSignature("setOrientation", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.html#setUncertainGestureColor(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetUncertainGestureColor(int arg0)
+        {
+            IExecuteWithSignature("setUncertainGestureColor", "(I)V", arg0);
         }
 
         #endregion
@@ -376,10 +468,10 @@ namespace Android.Gesture
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onGesture", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Gesture.GestureOverlayView>>>(OnGestureEventHandler));
-                AddEventHandler("onGestureCancelled", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Gesture.GestureOverlayView>>>(OnGestureCancelledEventHandler));
-                AddEventHandler("onGestureEnded", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Gesture.GestureOverlayView>>>(OnGestureEndedEventHandler));
-                AddEventHandler("onGestureStarted", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Gesture.GestureOverlayView>>>(OnGestureStartedEventHandler));
+                AddEventHandler("onGesture", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Gesture.GestureOverlayView>>>(OnGestureEventHandler));
+                AddEventHandler("onGestureCancelled", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Gesture.GestureOverlayView>>>(OnGestureCancelledEventHandler));
+                AddEventHandler("onGestureEnded", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Gesture.GestureOverlayView>>>(OnGestureEndedEventHandler));
+                AddEventHandler("onGestureStarted", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Gesture.GestureOverlayView>>>(OnGestureStartedEventHandler));
 
             }
 
@@ -387,7 +479,7 @@ namespace Android.Gesture
             /// Handler for <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.OnGestureListener.html#onGesture(android.gesture.GestureOverlayView,android.view.MotionEvent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnGesture"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Gesture.GestureOverlayView, Android.View.MotionEvent> OnOnGesture { get; set; } = null;
+            public global::System.Action<Android.Gesture.GestureOverlayView, Android.View.MotionEvent> OnOnGesture { get; set; } = null;
 
             void OnGestureEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Gesture.GestureOverlayView>> data)
             {
@@ -409,7 +501,7 @@ namespace Android.Gesture
             /// Handler for <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.OnGestureListener.html#onGestureCancelled(android.gesture.GestureOverlayView,android.view.MotionEvent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnGestureCancelled"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Gesture.GestureOverlayView, Android.View.MotionEvent> OnOnGestureCancelled { get; set; } = null;
+            public global::System.Action<Android.Gesture.GestureOverlayView, Android.View.MotionEvent> OnOnGestureCancelled { get; set; } = null;
 
             void OnGestureCancelledEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Gesture.GestureOverlayView>> data)
             {
@@ -431,7 +523,7 @@ namespace Android.Gesture
             /// Handler for <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.OnGestureListener.html#onGestureEnded(android.gesture.GestureOverlayView,android.view.MotionEvent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnGestureEnded"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Gesture.GestureOverlayView, Android.View.MotionEvent> OnOnGestureEnded { get; set; } = null;
+            public global::System.Action<Android.Gesture.GestureOverlayView, Android.View.MotionEvent> OnOnGestureEnded { get; set; } = null;
 
             void OnGestureEndedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Gesture.GestureOverlayView>> data)
             {
@@ -453,7 +545,7 @@ namespace Android.Gesture
             /// Handler for <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.OnGestureListener.html#onGestureStarted(android.gesture.GestureOverlayView,android.view.MotionEvent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnGestureStarted"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Gesture.GestureOverlayView, Android.View.MotionEvent> OnOnGestureStarted { get; set; } = null;
+            public global::System.Action<Android.Gesture.GestureOverlayView, Android.View.MotionEvent> OnOnGestureStarted { get; set; } = null;
 
             void OnGestureStartedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Gesture.GestureOverlayView>> data)
             {
@@ -573,7 +665,7 @@ namespace Android.Gesture
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onGesturePerformed", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Gesture.GestureOverlayView>>>(OnGesturePerformedEventHandler));
+                AddEventHandler("onGesturePerformed", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Gesture.GestureOverlayView>>>(OnGesturePerformedEventHandler));
 
             }
 
@@ -581,7 +673,7 @@ namespace Android.Gesture
             /// Handler for <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.OnGesturePerformedListener.html#onGesturePerformed(android.gesture.GestureOverlayView,android.gesture.Gesture)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnGesturePerformed"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Gesture.GestureOverlayView, Android.Gesture.Gesture> OnOnGesturePerformed { get; set; } = null;
+            public global::System.Action<Android.Gesture.GestureOverlayView, Android.Gesture.Gesture> OnOnGesturePerformed { get; set; } = null;
 
             void OnGesturePerformedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Gesture.GestureOverlayView>> data)
             {
@@ -674,8 +766,8 @@ namespace Android.Gesture
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onGesturingEnded", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Gesture.GestureOverlayView>>>(OnGesturingEndedEventHandler));
-                AddEventHandler("onGesturingStarted", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Gesture.GestureOverlayView>>>(OnGesturingStartedEventHandler));
+                AddEventHandler("onGesturingEnded", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Gesture.GestureOverlayView>>>(OnGesturingEndedEventHandler));
+                AddEventHandler("onGesturingStarted", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Gesture.GestureOverlayView>>>(OnGesturingStartedEventHandler));
 
             }
 
@@ -683,7 +775,7 @@ namespace Android.Gesture
             /// Handler for <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.OnGesturingListener.html#onGesturingEnded(android.gesture.GestureOverlayView)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnGesturingEnded"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Gesture.GestureOverlayView> OnOnGesturingEnded { get; set; } = null;
+            public global::System.Action<Android.Gesture.GestureOverlayView> OnOnGesturingEnded { get; set; } = null;
 
             void OnGesturingEndedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Gesture.GestureOverlayView>> data)
             {
@@ -704,7 +796,7 @@ namespace Android.Gesture
             /// Handler for <see href="https://developer.android.com/reference/android/gesture/GestureOverlayView.OnGesturingListener.html#onGesturingStarted(android.gesture.GestureOverlayView)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnGesturingStarted"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.Gesture.GestureOverlayView> OnOnGesturingStarted { get; set; } = null;
+            public global::System.Action<Android.Gesture.GestureOverlayView> OnOnGesturingStarted { get; set; } = null;
 
             void OnGesturingStartedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Gesture.GestureOverlayView>> data)
             {

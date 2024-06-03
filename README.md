@@ -1,8 +1,3 @@
----
-title: Android suite for .NET
-_description: Main page of Android suite for .NET
----
-
 # Netdroid: Android suite for .NET
 
 Netdroid is a comprehensive suite of libraries and tools to use Android and .NET side-by-side.

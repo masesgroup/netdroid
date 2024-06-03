@@ -46,35 +46,6 @@ namespace Android.Security.Identity
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/security/identity/IdentityCredential.html#getAuthenticationDataUsageCount()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public int[] AuthenticationDataUsageCount
-        {
-            get { return IExecuteWithSignatureArray<int>("getAuthenticationDataUsageCount", "()[I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/security/identity/IdentityCredential.html#getAuthenticationKeyMetadata()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Security.Identity.AuthenticationKeyMetadata> AuthenticationKeyMetadata
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Security.Identity.AuthenticationKeyMetadata>>("getAuthenticationKeyMetadata", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/security/identity/IdentityCredential.html#getAuthKeysNeedingCertification()"/> 
-        /// </summary>
-        public Java.Util.Collection<Java.Security.Cert.X509Certificate> AuthKeysNeedingCertification
-        {
-            get { return IExecuteWithSignature<Java.Util.Collection<Java.Security.Cert.X509Certificate>>("getAuthKeysNeedingCertification", "()Ljava/util/Collection;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/security/identity/IdentityCredential.html#getCredentialKeyCertificateChain()"/> 
-        /// </summary>
-        public Java.Util.Collection<Java.Security.Cert.X509Certificate> CredentialKeyCertificateChain
-        {
-            get { return IExecuteWithSignature<Java.Util.Collection<Java.Security.Cert.X509Certificate>>("getCredentialKeyCertificateChain", "()Ljava/util/Collection;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/security/identity/IdentityCredential.html#getEntries(byte[],java.util.Map,byte[],byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
@@ -87,7 +58,7 @@ namespace Android.Security.Identity
         /// <exception cref="Android.Security.Identity.InvalidRequestMessageException"/>
         /// <exception cref="Android.Security.Identity.NoAuthenticationKeyAvailableException"/>
         /// <exception cref="Android.Security.Identity.SessionTranscriptMismatchException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Security.Identity.ResultData GetEntries(byte[] arg0, Java.Util.Map<Java.Lang.String, Java.Util.Collection<Java.Lang.String>> arg1, byte[] arg2, byte[] arg3)
         {
             return IExecute<Android.Security.Identity.ResultData>("getEntries", arg0, arg1, arg2, arg3);
@@ -98,7 +69,7 @@ namespace Android.Security.Identity
         /// <param name="arg0"><see cref="byte"/></param>
         /// <returns><see cref="byte"/></returns>
         /// <exception cref="Android.Security.Identity.MessageDecryptionException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public byte[] DecryptMessageFromReader(byte[] arg0)
         {
             return IExecuteWithSignatureArray<byte>("decryptMessageFromReader", "([B)[B", new object[] { arg0 });
@@ -108,25 +79,50 @@ namespace Android.Security.Identity
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <returns><see cref="byte"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public byte[] EncryptMessageToReader(byte[] arg0)
         {
             return IExecuteWithSignatureArray<byte>("encryptMessageToReader", "([B)[B", new object[] { arg0 });
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/security/identity/IdentityCredential.html#getAuthenticationDataUsageCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int[] GetAuthenticationDataUsageCount()
+        {
+            return IExecuteWithSignatureArray<int>("getAuthenticationDataUsageCount", "()[I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/security/identity/IdentityCredential.html#createEphemeralKeyPair()"/>
         /// </summary>
         /// <returns><see cref="Java.Security.KeyPair"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Security.KeyPair CreateEphemeralKeyPair()
         {
             return IExecuteWithSignature<Java.Security.KeyPair>("createEphemeralKeyPair", "()Ljava/security/KeyPair;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/security/identity/IdentityCredential.html#getAuthKeysNeedingCertification()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Collection"/></returns>
+        public Java.Util.Collection<Java.Security.Cert.X509Certificate> GetAuthKeysNeedingCertification()
+        {
+            return IExecuteWithSignature<Java.Util.Collection<Java.Security.Cert.X509Certificate>>("getAuthKeysNeedingCertification", "()Ljava/util/Collection;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/security/identity/IdentityCredential.html#getCredentialKeyCertificateChain()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Collection"/></returns>
+        public Java.Util.Collection<Java.Security.Cert.X509Certificate> GetCredentialKeyCertificateChain()
+        {
+            return IExecuteWithSignature<Java.Util.Collection<Java.Security.Cert.X509Certificate>>("getCredentialKeyCertificateChain", "()Ljava/util/Collection;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/security/identity/IdentityCredential.html#setAllowUsingExhaustedKeys(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetAllowUsingExhaustedKeys(bool arg0)
         {
             IExecuteWithSignature("setAllowUsingExhaustedKeys", "(Z)V", arg0);
@@ -136,7 +132,7 @@ namespace Android.Security.Identity
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetAvailableAuthenticationKeys(int arg0, int arg1)
         {
             IExecute("setAvailableAuthenticationKeys", arg0, arg1);
@@ -146,7 +142,7 @@ namespace Android.Security.Identity
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.PublicKey"/></param>
         /// <exception cref="Java.Security.InvalidKeyException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetReaderEphemeralPublicKey(Java.Security.PublicKey arg0)
         {
             IExecuteWithSignature("setReaderEphemeralPublicKey", "(Ljava/security/PublicKey;)V", arg0);
@@ -157,7 +153,7 @@ namespace Android.Security.Identity
         /// <param name="arg0"><see cref="Java.Security.Cert.X509Certificate"/></param>
         /// <param name="arg1"><see cref="byte"/></param>
         /// <exception cref="Android.Security.Identity.UnknownAuthenticationKeyException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void StoreStaticAuthenticationData(Java.Security.Cert.X509Certificate arg0, byte[] arg1)
         {
             IExecute("storeStaticAuthenticationData", arg0, arg1);
@@ -190,10 +186,18 @@ namespace Android.Security.Identity
             return IExecuteWithSignatureArray<byte>("update", "(Landroid/security/identity/PersonalizationData;)[B", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/security/identity/IdentityCredential.html#getAuthenticationKeyMetadata()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Security.Identity.AuthenticationKeyMetadata> GetAuthenticationKeyMetadata()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Security.Identity.AuthenticationKeyMetadata>>("getAuthenticationKeyMetadata", "()Ljava/util/List;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/security/identity/IdentityCredential.html#setAllowUsingExpiredKeys(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetAllowUsingExpiredKeys(bool arg0)
         {
             IExecuteWithSignature("setAllowUsingExpiredKeys", "(Z)V", arg0);

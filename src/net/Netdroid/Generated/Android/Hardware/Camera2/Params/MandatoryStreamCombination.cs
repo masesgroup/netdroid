@@ -46,26 +46,28 @@ namespace Android.Hardware.Camera2.Params
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/MandatoryStreamCombination.html#getDescription()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence Description
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getDescription", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/MandatoryStreamCombination.html#getStreamsInformation()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Hardware.Camera2.Params.MandatoryStreamCombination.MandatoryStreamInformation> StreamsInformation
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Hardware.Camera2.Params.MandatoryStreamCombination.MandatoryStreamInformation>>("getStreamsInformation", "()Ljava/util/List;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/MandatoryStreamCombination.html#isReprocessable()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsReprocessable()
         {
             return IExecuteWithSignature<bool>("isReprocessable", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/MandatoryStreamCombination.html#getDescription()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetDescription()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getDescription", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/MandatoryStreamCombination.html#getStreamsInformation()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Hardware.Camera2.Params.MandatoryStreamCombination.MandatoryStreamInformation> GetStreamsInformation()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Hardware.Camera2.Params.MandatoryStreamCombination.MandatoryStreamInformation>>("getStreamsInformation", "()Ljava/util/List;");
         }
 
         #endregion
@@ -91,34 +93,6 @@ namespace Android.Hardware.Camera2.Params
             #endregion
 
             #region Instance methods
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/MandatoryStreamCombination.MandatoryStreamInformation.html#getAvailableSizes()"/> 
-            /// </summary>
-            public Java.Util.List<Android.Util.Size> AvailableSizes
-            {
-                get { return IExecuteWithSignature<Java.Util.List<Android.Util.Size>>("getAvailableSizes", "()Ljava/util/List;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/MandatoryStreamCombination.MandatoryStreamInformation.html#getFormat()"/> 
-            /// </summary>
-            public int Format
-            {
-                get { return IExecuteWithSignature<int>("getFormat", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/MandatoryStreamCombination.MandatoryStreamInformation.html#get10BitFormat()"/> 
-            /// </summary>
-            public int Get10BitFormat
-            {
-                get { return IExecuteWithSignature<int>("get10BitFormat", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/MandatoryStreamCombination.MandatoryStreamInformation.html#getStreamUseCase()"/> 
-            /// </summary>
-            public long StreamUseCase
-            {
-                get { return IExecuteWithSignature<long>("getStreamUseCase", "()J"); }
-            }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/MandatoryStreamCombination.MandatoryStreamInformation.html#is10BitCapable()"/>
             /// </summary>
@@ -150,6 +124,38 @@ namespace Android.Hardware.Camera2.Params
             public bool IsUltraHighResolution()
             {
                 return IExecuteWithSignature<bool>("isUltraHighResolution", "()Z");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/MandatoryStreamCombination.MandatoryStreamInformation.html#get10BitFormat()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int Get10BitFormat()
+            {
+                return IExecuteWithSignature<int>("get10BitFormat", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/MandatoryStreamCombination.MandatoryStreamInformation.html#getFormat()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetFormat()
+            {
+                return IExecuteWithSignature<int>("getFormat", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/MandatoryStreamCombination.MandatoryStreamInformation.html#getAvailableSizes()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Util.List"/></returns>
+            public Java.Util.List<Android.Util.Size> GetAvailableSizes()
+            {
+                return IExecuteWithSignature<Java.Util.List<Android.Util.Size>>("getAvailableSizes", "()Ljava/util/List;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/MandatoryStreamCombination.MandatoryStreamInformation.html#getStreamUseCase()"/>
+            /// </summary>
+            /// <returns><see cref="long"/></returns>
+            public long GetStreamUseCase()
+            {
+                return IExecuteWithSignature<long>("getStreamUseCase", "()J");
             }
 
             #endregion

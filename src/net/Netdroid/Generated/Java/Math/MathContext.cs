@@ -30,7 +30,7 @@ namespace Java.Math
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/math/MathContext.html#%3Cinit%3E(int,java.math.RoundingMode)"/>
+        /// <see href="https://developer.android.com/reference/java/math/MathContext.html#%3Cinit%3E(int,java.math.RoundingMode)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Math.RoundingMode"/></param>
@@ -39,7 +39,7 @@ namespace Java.Math
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/math/MathContext.html#%3Cinit%3E(int)"/>
+        /// <see href="https://developer.android.com/reference/java/math/MathContext.html#%3Cinit%3E(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public MathContext(int arg0)
@@ -47,7 +47,7 @@ namespace Java.Math
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/math/MathContext.html#%3Cinit%3E(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/math/MathContext.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public MathContext(Java.Lang.String arg0)
@@ -63,25 +63,25 @@ namespace Java.Math
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/math/MathContext.html#DECIMAL128"/>
+        /// <see href="https://developer.android.com/reference/java/math/MathContext.html#DECIMAL128"/>
         /// </summary>
         public static Java.Math.MathContext DECIMAL128 { get { if (!_DECIMAL128Ready) { _DECIMAL128Content = SGetField<Java.Math.MathContext>(LocalBridgeClazz, "DECIMAL128"); _DECIMAL128Ready = true; } return _DECIMAL128Content; } }
         private static Java.Math.MathContext _DECIMAL128Content = default;
         private static bool _DECIMAL128Ready = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/math/MathContext.html#DECIMAL32"/>
+        /// <see href="https://developer.android.com/reference/java/math/MathContext.html#DECIMAL32"/>
         /// </summary>
         public static Java.Math.MathContext DECIMAL32 { get { if (!_DECIMAL32Ready) { _DECIMAL32Content = SGetField<Java.Math.MathContext>(LocalBridgeClazz, "DECIMAL32"); _DECIMAL32Ready = true; } return _DECIMAL32Content; } }
         private static Java.Math.MathContext _DECIMAL32Content = default;
         private static bool _DECIMAL32Ready = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/math/MathContext.html#DECIMAL64"/>
+        /// <see href="https://developer.android.com/reference/java/math/MathContext.html#DECIMAL64"/>
         /// </summary>
         public static Java.Math.MathContext DECIMAL64 { get { if (!_DECIMAL64Ready) { _DECIMAL64Content = SGetField<Java.Math.MathContext>(LocalBridgeClazz, "DECIMAL64"); _DECIMAL64Ready = true; } return _DECIMAL64Content; } }
         private static Java.Math.MathContext _DECIMAL64Content = default;
         private static bool _DECIMAL64Ready = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/math/MathContext.html#UNLIMITED"/>
+        /// <see href="https://developer.android.com/reference/java/math/MathContext.html#UNLIMITED"/>
         /// </summary>
         public static Java.Math.MathContext UNLIMITED { get { if (!_UNLIMITEDReady) { _UNLIMITEDContent = SGetField<Java.Math.MathContext>(LocalBridgeClazz, "UNLIMITED"); _UNLIMITEDReady = true; } return _UNLIMITEDContent; } }
         private static Java.Math.MathContext _UNLIMITEDContent = default;
@@ -95,18 +95,20 @@ namespace Java.Math
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/math/MathContext.html#getPrecision()"/> 
+        /// <see href="https://developer.android.com/reference/java/math/MathContext.html#getPrecision()"/>
         /// </summary>
-        public int Precision
+        /// <returns><see cref="int"/></returns>
+        public int GetPrecision()
         {
-            get { return IExecuteWithSignature<int>("getPrecision", "()I"); }
+            return IExecuteWithSignature<int>("getPrecision", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/math/MathContext.html#getRoundingMode()"/> 
+        /// <see href="https://developer.android.com/reference/java/math/MathContext.html#getRoundingMode()"/>
         /// </summary>
-        public Java.Math.RoundingMode RoundingMode
+        /// <returns><see cref="Java.Math.RoundingMode"/></returns>
+        public Java.Math.RoundingMode GetRoundingMode()
         {
-            get { return IExecuteWithSignature<Java.Math.RoundingMode>("getRoundingMode", "()Ljava/math/RoundingMode;"); }
+            return IExecuteWithSignature<Java.Math.RoundingMode>("getRoundingMode", "()Ljava/math/RoundingMode;");
         }
 
         #endregion

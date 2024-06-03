@@ -64,14 +64,7 @@ namespace Org.W3c.Dom
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/DOMConfiguration.html#getParameterNames()"/> 
-        /// </summary>
-        public Org.W3c.Dom.DOMStringList ParameterNames
-        {
-            get { return IExecuteWithSignature<Org.W3c.Dom.DOMStringList>("getParameterNames", "()Lorg/w3c/dom/DOMStringList;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/DOMConfiguration.html#canSetParameter(java.lang.String,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/DOMConfiguration.html#canSetParameter(java.lang.String,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -81,7 +74,7 @@ namespace Org.W3c.Dom
             return IExecute<bool>("canSetParameter", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/DOMConfiguration.html#getParameter(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/DOMConfiguration.html#getParameter(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="object"/></returns>
@@ -91,7 +84,15 @@ namespace Org.W3c.Dom
             return IExecuteWithSignature("getParameter", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/DOMConfiguration.html#setParameter(java.lang.String,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/DOMConfiguration.html#getParameterNames()"/>
+        /// </summary>
+        /// <returns><see cref="Org.W3c.Dom.DOMStringList"/></returns>
+        public Org.W3c.Dom.DOMStringList GetParameterNames()
+        {
+            return IExecuteWithSignature<Org.W3c.Dom.DOMStringList>("getParameterNames", "()Lorg/w3c/dom/DOMStringList;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/DOMConfiguration.html#setParameter(java.lang.String,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>

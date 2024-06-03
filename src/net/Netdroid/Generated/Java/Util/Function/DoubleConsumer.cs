@@ -27,7 +27,7 @@ namespace Java.Util.Function
 {
     #region IDoubleConsumer
     /// <summary>
-    /// .NET interface for org.mases.netdroid.generated.java.util.function.DoubleConsumer implementing <see href="https://developer.android.com/reference/java.base/java/util/function/DoubleConsumer.html"/>
+    /// .NET interface for org.mases.netdroid.generated.java.util.function.DoubleConsumer implementing <see href="https://developer.android.com/reference/java/util/function/DoubleConsumer.html"/>
     /// </summary>
     public partial interface IDoubleConsumer
     {
@@ -68,16 +68,16 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("accept", new System.EventHandler<CLRListenerEventArgs<CLREventData<double>>>(AcceptEventHandler));
-            AddEventHandler("andThen", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.DoubleConsumer>>>(AndThenEventHandler));
+            AddEventHandler("accept", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<double>>>(AcceptEventHandler));
+            AddEventHandler("andThen", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.DoubleConsumer>>>(AndThenEventHandler));
 
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/DoubleConsumer.html#accept(double)"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/DoubleConsumer.html#accept(double)"/>
         /// </summary>
         /// <remarks>If <see cref="OnAccept"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<double> OnAccept { get; set; } = null;
+        public global::System.Action<double> OnAccept { get; set; } = null;
 
         void AcceptEventHandler(object sender, CLRListenerEventArgs<CLREventData<double>> data)
         {
@@ -86,7 +86,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/DoubleConsumer.html#accept(double)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/DoubleConsumer.html#accept(double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         public virtual void Accept(double arg0)
@@ -94,7 +94,7 @@ namespace Java.Util.Function
             
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/DoubleConsumer.html#andThen(java.util.function.DoubleConsumer)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/DoubleConsumer.html#andThen(java.util.function.DoubleConsumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.DoubleConsumer"/></param>
         /// <returns><see cref="Java.Util.Function.DoubleConsumer"/></returns>
@@ -105,10 +105,10 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/DoubleConsumer.html#andThen(java.util.function.DoubleConsumer)"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/DoubleConsumer.html#andThen(java.util.function.DoubleConsumer)"/>
         /// </summary>
         /// <remarks>If <see cref="OnAndThen"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.DoubleConsumer, Java.Util.Function.DoubleConsumer> OnAndThen { get; set; } = null;
+        public global::System.Func<Java.Util.Function.DoubleConsumer, Java.Util.Function.DoubleConsumer> OnAndThen { get; set; } = null;
 
         void AndThenEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.DoubleConsumer>> data)
         {
@@ -118,7 +118,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/DoubleConsumer.html#andThen(java.util.function.DoubleConsumer)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/DoubleConsumer.html#andThen(java.util.function.DoubleConsumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.DoubleConsumer"/></param>
         /// <returns><see cref="Java.Util.Function.DoubleConsumer"/></returns>
@@ -159,7 +159,7 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/DoubleConsumer.html#accept(double)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/DoubleConsumer.html#accept(double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         public override void Accept(double arg0)
@@ -167,7 +167,7 @@ namespace Java.Util.Function
             IExecuteWithSignature("accept", "(D)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/DoubleConsumer.html#andThen(java.util.function.DoubleConsumer)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/DoubleConsumer.html#andThen(java.util.function.DoubleConsumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.DoubleConsumer"/></param>
         /// <returns><see cref="Java.Util.Function.DoubleConsumer"/></returns>

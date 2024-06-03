@@ -102,739 +102,84 @@ namespace Android.Widget
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getAutoLinkMask()"/> <see href="https://developer.android.com/reference/android/widget/TextView.html#setAutoLinkMask(int)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getCompoundDrawableTintList()"/>
         /// </summary>
-        public int AutoLinkMask
+        /// <returns><see cref="Android.Content.Res.ColorStateList"/></returns>
+        public Android.Content.Res.ColorStateList GetCompoundDrawableTintList()
         {
-            get { return IExecuteWithSignature<int>("getAutoLinkMask", "()I"); } set { IExecuteWithSignature("setAutoLinkMask", "(I)V", value); }
+            return IExecuteWithSignature<Android.Content.Res.ColorStateList>("getCompoundDrawableTintList", "()Landroid/content/res/ColorStateList;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getAutoSizeMaxTextSize()"/> 
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getCompoundDrawableTintBlendMode()"/>
         /// </summary>
-        public int AutoSizeMaxTextSize
+        /// <returns><see cref="Android.Graphics.BlendMode"/></returns>
+        public Android.Graphics.BlendMode GetCompoundDrawableTintBlendMode()
         {
-            get { return IExecuteWithSignature<int>("getAutoSizeMaxTextSize", "()I"); }
+            return IExecuteWithSignature<Android.Graphics.BlendMode>("getCompoundDrawableTintBlendMode", "()Landroid/graphics/BlendMode;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getAutoSizeMinTextSize()"/> 
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getTextCursorDrawable()"/>
         /// </summary>
-        public int AutoSizeMinTextSize
+        /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
+        public Android.Graphics.Drawable.Drawable GetTextCursorDrawable()
         {
-            get { return IExecuteWithSignature<int>("getAutoSizeMinTextSize", "()I"); }
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getTextCursorDrawable", "()Landroid/graphics/drawable/Drawable;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getAutoSizeStepGranularity()"/> 
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getTextSelectHandle()"/>
         /// </summary>
-        public int AutoSizeStepGranularity
+        /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
+        public Android.Graphics.Drawable.Drawable GetTextSelectHandle()
         {
-            get { return IExecuteWithSignature<int>("getAutoSizeStepGranularity", "()I"); }
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getTextSelectHandle", "()Landroid/graphics/drawable/Drawable;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getAutoSizeTextAvailableSizes()"/> 
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getTextSelectHandleLeft()"/>
         /// </summary>
-        public int[] AutoSizeTextAvailableSizes
+        /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
+        public Android.Graphics.Drawable.Drawable GetTextSelectHandleLeft()
         {
-            get { return IExecuteWithSignatureArray<int>("getAutoSizeTextAvailableSizes", "()[I"); }
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getTextSelectHandleLeft", "()Landroid/graphics/drawable/Drawable;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getAutoSizeTextType()"/> 
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getTextSelectHandleRight()"/>
         /// </summary>
-        public int AutoSizeTextType
+        /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
+        public Android.Graphics.Drawable.Drawable GetTextSelectHandleRight()
         {
-            get { return IExecuteWithSignature<int>("getAutoSizeTextType", "()I"); }
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getTextSelectHandleRight", "()Landroid/graphics/drawable/Drawable;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getBreakStrategy()"/> <see href="https://developer.android.com/reference/android/widget/TextView.html#setBreakStrategy(int)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getCompoundDrawables()"/>
         /// </summary>
-        public int BreakStrategy
+        /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
+        public Android.Graphics.Drawable.Drawable[] GetCompoundDrawables()
         {
-            get { return IExecuteWithSignature<int>("getBreakStrategy", "()I"); } set { IExecuteWithSignature("setBreakStrategy", "(I)V", value); }
+            return IExecuteWithSignatureArray<Android.Graphics.Drawable.Drawable>("getCompoundDrawables", "()[Landroid/graphics/drawable/Drawable;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getCompoundDrawablePadding()"/> <see href="https://developer.android.com/reference/android/widget/TextView.html#setCompoundDrawablePadding(int)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getCompoundDrawablesRelative()"/>
         /// </summary>
-        public int CompoundDrawablePadding
+        /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
+        public Android.Graphics.Drawable.Drawable[] GetCompoundDrawablesRelative()
         {
-            get { return IExecuteWithSignature<int>("getCompoundDrawablePadding", "()I"); } set { IExecuteWithSignature("setCompoundDrawablePadding", "(I)V", value); }
+            return IExecuteWithSignatureArray<Android.Graphics.Drawable.Drawable>("getCompoundDrawablesRelative", "()[Landroid/graphics/drawable/Drawable;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getCompoundDrawables()"/> 
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getCompoundDrawableTintMode()"/>
         /// </summary>
-        public Android.Graphics.Drawable.Drawable[] CompoundDrawables
+        /// <returns><see cref="Android.Graphics.PorterDuff.Mode"/></returns>
+        public Android.Graphics.PorterDuff.Mode GetCompoundDrawableTintMode()
         {
-            get { return IExecuteWithSignatureArray<Android.Graphics.Drawable.Drawable>("getCompoundDrawables", "()[Landroid/graphics/drawable/Drawable;"); }
+            return IExecuteWithSignature<Android.Graphics.PorterDuff.Mode>("getCompoundDrawableTintMode", "()Landroid/graphics/PorterDuff$Mode;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getCompoundDrawablesRelative()"/> 
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getTypeface()"/>
         /// </summary>
-        public Android.Graphics.Drawable.Drawable[] CompoundDrawablesRelative
+        /// <returns><see cref="Android.Graphics.Typeface"/></returns>
+        public Android.Graphics.Typeface GetTypeface()
         {
-            get { return IExecuteWithSignatureArray<Android.Graphics.Drawable.Drawable>("getCompoundDrawablesRelative", "()[Landroid/graphics/drawable/Drawable;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getCompoundDrawableTintBlendMode()"/> <see href="https://developer.android.com/reference/android/widget/TextView.html#setCompoundDrawableTintBlendMode(android.graphics.BlendMode)"/>
-        /// </summary>
-        public Android.Graphics.BlendMode CompoundDrawableTintBlendMode
-        {
-            get { return IExecuteWithSignature<Android.Graphics.BlendMode>("getCompoundDrawableTintBlendMode", "()Landroid/graphics/BlendMode;"); } set { IExecuteWithSignature("setCompoundDrawableTintBlendMode", "(Landroid/graphics/BlendMode;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getCompoundDrawableTintList()"/> <see href="https://developer.android.com/reference/android/widget/TextView.html#setCompoundDrawableTintList(android.content.res.ColorStateList)"/>
-        /// </summary>
-        public Android.Content.Res.ColorStateList CompoundDrawableTintList
-        {
-            get { return IExecuteWithSignature<Android.Content.Res.ColorStateList>("getCompoundDrawableTintList", "()Landroid/content/res/ColorStateList;"); } set { IExecuteWithSignature("setCompoundDrawableTintList", "(Landroid/content/res/ColorStateList;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getCompoundDrawableTintMode()"/> <see href="https://developer.android.com/reference/android/widget/TextView.html#setCompoundDrawableTintMode(android.graphics.PorterDuff.Mode)"/>
-        /// </summary>
-        public Android.Graphics.PorterDuff.Mode CompoundDrawableTintMode
-        {
-            get { return IExecuteWithSignature<Android.Graphics.PorterDuff.Mode>("getCompoundDrawableTintMode", "()Landroid/graphics/PorterDuff$Mode;"); } set { IExecuteWithSignature("setCompoundDrawableTintMode", "(Landroid/graphics/PorterDuff$Mode;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getCompoundPaddingBottom()"/> 
-        /// </summary>
-        public int CompoundPaddingBottom
-        {
-            get { return IExecuteWithSignature<int>("getCompoundPaddingBottom", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getCompoundPaddingEnd()"/> 
-        /// </summary>
-        public int CompoundPaddingEnd
-        {
-            get { return IExecuteWithSignature<int>("getCompoundPaddingEnd", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getCompoundPaddingLeft()"/> 
-        /// </summary>
-        public int CompoundPaddingLeft
-        {
-            get { return IExecuteWithSignature<int>("getCompoundPaddingLeft", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getCompoundPaddingRight()"/> 
-        /// </summary>
-        public int CompoundPaddingRight
-        {
-            get { return IExecuteWithSignature<int>("getCompoundPaddingRight", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getCompoundPaddingStart()"/> 
-        /// </summary>
-        public int CompoundPaddingStart
-        {
-            get { return IExecuteWithSignature<int>("getCompoundPaddingStart", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getCompoundPaddingTop()"/> 
-        /// </summary>
-        public int CompoundPaddingTop
-        {
-            get { return IExecuteWithSignature<int>("getCompoundPaddingTop", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getCurrentHintTextColor()"/> 
-        /// </summary>
-        public int CurrentHintTextColor
-        {
-            get { return IExecuteWithSignature<int>("getCurrentHintTextColor", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getCurrentTextColor()"/> 
-        /// </summary>
-        public int CurrentTextColor
-        {
-            get { return IExecuteWithSignature<int>("getCurrentTextColor", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getCustomInsertionActionModeCallback()"/> <see href="https://developer.android.com/reference/android/widget/TextView.html#setCustomInsertionActionModeCallback(android.view.ActionMode.Callback)"/>
-        /// </summary>
-        public Android.View.ActionMode.Callback CustomInsertionActionModeCallback
-        {
-            get { return IExecuteWithSignature<Android.View.ActionMode.Callback>("getCustomInsertionActionModeCallback", "()Landroid/view/ActionMode$Callback;"); } set { IExecuteWithSignature("setCustomInsertionActionModeCallback", "(Landroid/view/ActionMode$Callback;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getCustomSelectionActionModeCallback()"/> <see href="https://developer.android.com/reference/android/widget/TextView.html#setCustomSelectionActionModeCallback(android.view.ActionMode.Callback)"/>
-        /// </summary>
-        public Android.View.ActionMode.Callback CustomSelectionActionModeCallback
-        {
-            get { return IExecuteWithSignature<Android.View.ActionMode.Callback>("getCustomSelectionActionModeCallback", "()Landroid/view/ActionMode$Callback;"); } set { IExecuteWithSignature("setCustomSelectionActionModeCallback", "(Landroid/view/ActionMode$Callback;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getEditableText()"/> 
-        /// </summary>
-        public Android.Text.Editable EditableText
-        {
-            get { return IExecuteWithSignature<Android.Text.Editable>("getEditableText", "()Landroid/text/Editable;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getEllipsize()"/> <see href="https://developer.android.com/reference/android/widget/TextView.html#setEllipsize(android.text.TextUtils.TruncateAt)"/>
-        /// </summary>
-        public Android.Text.TextUtils.TruncateAt Ellipsize
-        {
-            get { return IExecuteWithSignature<Android.Text.TextUtils.TruncateAt>("getEllipsize", "()Landroid/text/TextUtils$TruncateAt;"); } set { IExecuteWithSignature("setEllipsize", "(Landroid/text/TextUtils$TruncateAt;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getError()"/> <see href="https://developer.android.com/reference/android/widget/TextView.html#setError(java.lang.CharSequence)"/>
-        /// </summary>
-        public Java.Lang.CharSequence Error
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getError", "()Ljava/lang/CharSequence;"); } set { IExecuteWithSignature("setError", "(Ljava/lang/CharSequence;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getExtendedPaddingBottom()"/> 
-        /// </summary>
-        public int ExtendedPaddingBottom
-        {
-            get { return IExecuteWithSignature<int>("getExtendedPaddingBottom", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getExtendedPaddingTop()"/> 
-        /// </summary>
-        public int ExtendedPaddingTop
-        {
-            get { return IExecuteWithSignature<int>("getExtendedPaddingTop", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getFilters()"/> <see href="https://developer.android.com/reference/android/widget/TextView.html#setFilters(android.text.InputFilter[])"/>
-        /// </summary>
-        public Android.Text.InputFilter[] Filters
-        {
-            get { return IExecuteWithSignatureArray<Android.Text.InputFilter>("getFilters", "()[Landroid/text/InputFilter;"); } set { IExecuteWithSignature("setFilters", "([Landroid/text/InputFilter;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getFirstBaselineToTopHeight()"/> <see href="https://developer.android.com/reference/android/widget/TextView.html#setFirstBaselineToTopHeight(int)"/>
-        /// </summary>
-        public int FirstBaselineToTopHeight
-        {
-            get { return IExecuteWithSignature<int>("getFirstBaselineToTopHeight", "()I"); } set { IExecuteWithSignature("setFirstBaselineToTopHeight", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getFocusedSearchResultHighlightColor()"/> <see href="https://developer.android.com/reference/android/widget/TextView.html#setFocusedSearchResultHighlightColor(int)"/>
-        /// </summary>
-        public int FocusedSearchResultHighlightColor
-        {
-            get { return IExecuteWithSignature<int>("getFocusedSearchResultHighlightColor", "()I"); } set { IExecuteWithSignature("setFocusedSearchResultHighlightColor", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getFocusedSearchResultIndex()"/> <see href="https://developer.android.com/reference/android/widget/TextView.html#setFocusedSearchResultIndex(int)"/>
-        /// </summary>
-        public int FocusedSearchResultIndex
-        {
-            get { return IExecuteWithSignature<int>("getFocusedSearchResultIndex", "()I"); } set { IExecuteWithSignature("setFocusedSearchResultIndex", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getFontFeatureSettings()"/> <see href="https://developer.android.com/reference/android/widget/TextView.html#setFontFeatureSettings(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String FontFeatureSettings
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getFontFeatureSettings", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setFontFeatureSettings", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getFontVariationSettings()"/> 
-        /// </summary>
-        public Java.Lang.String FontVariationSettings
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getFontVariationSettings", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getFreezesText()"/> <see href="https://developer.android.com/reference/android/widget/TextView.html#setFreezesText(boolean)"/>
-        /// </summary>
-        public bool FreezesText
-        {
-            get { return IExecuteWithSignature<bool>("getFreezesText", "()Z"); } set { IExecuteWithSignature("setFreezesText", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getGravity()"/> <see href="https://developer.android.com/reference/android/widget/TextView.html#setGravity(int)"/>
-        /// </summary>
-        public int Gravity
-        {
-            get { return IExecuteWithSignature<int>("getGravity", "()I"); } set { IExecuteWithSignature("setGravity", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getHighlightColor()"/> <see href="https://developer.android.com/reference/android/widget/TextView.html#setHighlightColor(int)"/>
-        /// </summary>
-        public int HighlightColor
-        {
-            get { return IExecuteWithSignature<int>("getHighlightColor", "()I"); } set { IExecuteWithSignature("setHighlightColor", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getHighlights()"/> <see href="https://developer.android.com/reference/android/widget/TextView.html#setHighlights(android.text.Highlights)"/>
-        /// </summary>
-        public Android.Text.Highlights Highlights
-        {
-            get { return IExecuteWithSignature<Android.Text.Highlights>("getHighlights", "()Landroid/text/Highlights;"); } set { IExecuteWithSignature("setHighlights", "(Landroid/text/Highlights;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getHint()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence Hint
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getHint", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getHintTextColors()"/> 
-        /// </summary>
-        public Android.Content.Res.ColorStateList HintTextColors
-        {
-            get { return IExecuteWithSignature<Android.Content.Res.ColorStateList>("getHintTextColors", "()Landroid/content/res/ColorStateList;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getHyphenationFrequency()"/> <see href="https://developer.android.com/reference/android/widget/TextView.html#setHyphenationFrequency(int)"/>
-        /// </summary>
-        public int HyphenationFrequency
-        {
-            get { return IExecuteWithSignature<int>("getHyphenationFrequency", "()I"); } set { IExecuteWithSignature("setHyphenationFrequency", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getImeActionId()"/> 
-        /// </summary>
-        public int ImeActionId
-        {
-            get { return IExecuteWithSignature<int>("getImeActionId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getImeActionLabel()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence ImeActionLabel
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getImeActionLabel", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getImeHintLocales()"/> <see href="https://developer.android.com/reference/android/widget/TextView.html#setImeHintLocales(android.os.LocaleList)"/>
-        /// </summary>
-        public Android.Os.LocaleList ImeHintLocales
-        {
-            get { return IExecuteWithSignature<Android.Os.LocaleList>("getImeHintLocales", "()Landroid/os/LocaleList;"); } set { IExecuteWithSignature("setImeHintLocales", "(Landroid/os/LocaleList;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getImeOptions()"/> <see href="https://developer.android.com/reference/android/widget/TextView.html#setImeOptions(int)"/>
-        /// </summary>
-        public int ImeOptions
-        {
-            get { return IExecuteWithSignature<int>("getImeOptions", "()I"); } set { IExecuteWithSignature("setImeOptions", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getIncludeFontPadding()"/> <see href="https://developer.android.com/reference/android/widget/TextView.html#setIncludeFontPadding(boolean)"/>
-        /// </summary>
-        public bool IncludeFontPadding
-        {
-            get { return IExecuteWithSignature<bool>("getIncludeFontPadding", "()Z"); } set { IExecuteWithSignature("setIncludeFontPadding", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getInputType()"/> <see href="https://developer.android.com/reference/android/widget/TextView.html#setInputType(int)"/>
-        /// </summary>
-        public int InputType
-        {
-            get { return IExecuteWithSignature<int>("getInputType", "()I"); } set { IExecuteWithSignature("setInputType", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getJustificationMode()"/> <see href="https://developer.android.com/reference/android/widget/TextView.html#setJustificationMode(int)"/>
-        /// </summary>
-        public int JustificationMode
-        {
-            get { return IExecuteWithSignature<int>("getJustificationMode", "()I"); } set { IExecuteWithSignature("setJustificationMode", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getKeyListener()"/> <see href="https://developer.android.com/reference/android/widget/TextView.html#setKeyListener(android.text.method.KeyListener)"/>
-        /// </summary>
-        public Android.Text.Method.KeyListener KeyListener
-        {
-            get { return IExecuteWithSignature<Android.Text.Method.KeyListener>("getKeyListener", "()Landroid/text/method/KeyListener;"); } set { IExecuteWithSignature("setKeyListener", "(Landroid/text/method/KeyListener;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getLastBaselineToBottomHeight()"/> <see href="https://developer.android.com/reference/android/widget/TextView.html#setLastBaselineToBottomHeight(int)"/>
-        /// </summary>
-        public int LastBaselineToBottomHeight
-        {
-            get { return IExecuteWithSignature<int>("getLastBaselineToBottomHeight", "()I"); } set { IExecuteWithSignature("setLastBaselineToBottomHeight", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getLayout()"/> 
-        /// </summary>
-        public Android.Text.Layout Layout
-        {
-            get { return IExecuteWithSignature<Android.Text.Layout>("getLayout", "()Landroid/text/Layout;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getLetterSpacing()"/> <see href="https://developer.android.com/reference/android/widget/TextView.html#setLetterSpacing(float)"/>
-        /// </summary>
-        public float LetterSpacing
-        {
-            get { return IExecuteWithSignature<float>("getLetterSpacing", "()F"); } set { IExecuteWithSignature("setLetterSpacing", "(F)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getLineBreakStyle()"/> <see href="https://developer.android.com/reference/android/widget/TextView.html#setLineBreakStyle(int)"/>
-        /// </summary>
-        public int LineBreakStyle
-        {
-            get { return IExecuteWithSignature<int>("getLineBreakStyle", "()I"); } set { IExecuteWithSignature("setLineBreakStyle", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getLineBreakWordStyle()"/> <see href="https://developer.android.com/reference/android/widget/TextView.html#setLineBreakWordStyle(int)"/>
-        /// </summary>
-        public int LineBreakWordStyle
-        {
-            get { return IExecuteWithSignature<int>("getLineBreakWordStyle", "()I"); } set { IExecuteWithSignature("setLineBreakWordStyle", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getLineCount()"/> 
-        /// </summary>
-        public int LineCount
-        {
-            get { return IExecuteWithSignature<int>("getLineCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getLineHeight()"/> <see href="https://developer.android.com/reference/android/widget/TextView.html#setLineHeight(int)"/>
-        /// </summary>
-        public int LineHeight
-        {
-            get { return IExecuteWithSignature<int>("getLineHeight", "()I"); } set { IExecuteWithSignature("setLineHeight", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getLineSpacingExtra()"/> 
-        /// </summary>
-        public float LineSpacingExtra
-        {
-            get { return IExecuteWithSignature<float>("getLineSpacingExtra", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getLineSpacingMultiplier()"/> 
-        /// </summary>
-        public float LineSpacingMultiplier
-        {
-            get { return IExecuteWithSignature<float>("getLineSpacingMultiplier", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getLinksClickable()"/> <see href="https://developer.android.com/reference/android/widget/TextView.html#setLinksClickable(boolean)"/>
-        /// </summary>
-        public bool LinksClickable
-        {
-            get { return IExecuteWithSignature<bool>("getLinksClickable", "()Z"); } set { IExecuteWithSignature("setLinksClickable", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getLinkTextColors()"/> 
-        /// </summary>
-        public Android.Content.Res.ColorStateList LinkTextColors
-        {
-            get { return IExecuteWithSignature<Android.Content.Res.ColorStateList>("getLinkTextColors", "()Landroid/content/res/ColorStateList;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getMarqueeRepeatLimit()"/> <see href="https://developer.android.com/reference/android/widget/TextView.html#setMarqueeRepeatLimit(int)"/>
-        /// </summary>
-        public int MarqueeRepeatLimit
-        {
-            get { return IExecuteWithSignature<int>("getMarqueeRepeatLimit", "()I"); } set { IExecuteWithSignature("setMarqueeRepeatLimit", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getMaxEms()"/> <see href="https://developer.android.com/reference/android/widget/TextView.html#setMaxEms(int)"/>
-        /// </summary>
-        public int MaxEms
-        {
-            get { return IExecuteWithSignature<int>("getMaxEms", "()I"); } set { IExecuteWithSignature("setMaxEms", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getMaxHeight()"/> <see href="https://developer.android.com/reference/android/widget/TextView.html#setMaxHeight(int)"/>
-        /// </summary>
-        public int MaxHeight
-        {
-            get { return IExecuteWithSignature<int>("getMaxHeight", "()I"); } set { IExecuteWithSignature("setMaxHeight", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getMaxLines()"/> <see href="https://developer.android.com/reference/android/widget/TextView.html#setMaxLines(int)"/>
-        /// </summary>
-        public int MaxLines
-        {
-            get { return IExecuteWithSignature<int>("getMaxLines", "()I"); } set { IExecuteWithSignature("setMaxLines", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getMaxWidth()"/> <see href="https://developer.android.com/reference/android/widget/TextView.html#setMaxWidth(int)"/>
-        /// </summary>
-        public int MaxWidth
-        {
-            get { return IExecuteWithSignature<int>("getMaxWidth", "()I"); } set { IExecuteWithSignature("setMaxWidth", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getMinEms()"/> <see href="https://developer.android.com/reference/android/widget/TextView.html#setMinEms(int)"/>
-        /// </summary>
-        public int MinEms
-        {
-            get { return IExecuteWithSignature<int>("getMinEms", "()I"); } set { IExecuteWithSignature("setMinEms", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getMinHeight()"/> <see href="https://developer.android.com/reference/android/widget/TextView.html#setMinHeight(int)"/>
-        /// </summary>
-        public int MinHeight
-        {
-            get { return IExecuteWithSignature<int>("getMinHeight", "()I"); } set { IExecuteWithSignature("setMinHeight", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getMinLines()"/> <see href="https://developer.android.com/reference/android/widget/TextView.html#setMinLines(int)"/>
-        /// </summary>
-        public int MinLines
-        {
-            get { return IExecuteWithSignature<int>("getMinLines", "()I"); } set { IExecuteWithSignature("setMinLines", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getMinWidth()"/> <see href="https://developer.android.com/reference/android/widget/TextView.html#setMinWidth(int)"/>
-        /// </summary>
-        public int MinWidth
-        {
-            get { return IExecuteWithSignature<int>("getMinWidth", "()I"); } set { IExecuteWithSignature("setMinWidth", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getMovementMethod()"/> <see href="https://developer.android.com/reference/android/widget/TextView.html#setMovementMethod(android.text.method.MovementMethod)"/>
-        /// </summary>
-        public Android.Text.Method.MovementMethod MovementMethod
-        {
-            get { return IExecuteWithSignature<Android.Text.Method.MovementMethod>("getMovementMethod", "()Landroid/text/method/MovementMethod;"); } set { IExecuteWithSignature("setMovementMethod", "(Landroid/text/method/MovementMethod;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getPaint()"/> 
-        /// </summary>
-        public Android.Text.TextPaint Paint
-        {
-            get { return IExecuteWithSignature<Android.Text.TextPaint>("getPaint", "()Landroid/text/TextPaint;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getPaintFlags()"/> <see href="https://developer.android.com/reference/android/widget/TextView.html#setPaintFlags(int)"/>
-        /// </summary>
-        public int PaintFlags
-        {
-            get { return IExecuteWithSignature<int>("getPaintFlags", "()I"); } set { IExecuteWithSignature("setPaintFlags", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getPrivateImeOptions()"/> <see href="https://developer.android.com/reference/android/widget/TextView.html#setPrivateImeOptions(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String PrivateImeOptions
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPrivateImeOptions", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setPrivateImeOptions", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getSearchResultHighlightColor()"/> <see href="https://developer.android.com/reference/android/widget/TextView.html#setSearchResultHighlightColor(int)"/>
-        /// </summary>
-        public int SearchResultHighlightColor
-        {
-            get { return IExecuteWithSignature<int>("getSearchResultHighlightColor", "()I"); } set { IExecuteWithSignature("setSearchResultHighlightColor", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getSearchResultHighlights()"/> <see href="https://developer.android.com/reference/android/widget/TextView.html#setSearchResultHighlights(int[])"/>
-        /// </summary>
-        public int[] SearchResultHighlights
-        {
-            get { return IExecuteWithSignatureArray<int>("getSearchResultHighlights", "()[I"); } set { IExecuteWithSignature("setSearchResultHighlights", "([I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getSelectionEnd()"/> 
-        /// </summary>
-        public int SelectionEnd
-        {
-            get { return IExecuteWithSignature<int>("getSelectionEnd", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getSelectionStart()"/> 
-        /// </summary>
-        public int SelectionStart
-        {
-            get { return IExecuteWithSignature<int>("getSelectionStart", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getShadowColor()"/> 
-        /// </summary>
-        public int ShadowColor
-        {
-            get { return IExecuteWithSignature<int>("getShadowColor", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getShadowDx()"/> 
-        /// </summary>
-        public float ShadowDx
-        {
-            get { return IExecuteWithSignature<float>("getShadowDx", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getShadowDy()"/> 
-        /// </summary>
-        public float ShadowDy
-        {
-            get { return IExecuteWithSignature<float>("getShadowDy", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getShadowRadius()"/> 
-        /// </summary>
-        public float ShadowRadius
-        {
-            get { return IExecuteWithSignature<float>("getShadowRadius", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getShowSoftInputOnFocus()"/> <see href="https://developer.android.com/reference/android/widget/TextView.html#setShowSoftInputOnFocus(boolean)"/>
-        /// </summary>
-        public bool ShowSoftInputOnFocus
-        {
-            get { return IExecuteWithSignature<bool>("getShowSoftInputOnFocus", "()Z"); } set { IExecuteWithSignature("setShowSoftInputOnFocus", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getText()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence Text
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getText", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getTextClassifier()"/> <see href="https://developer.android.com/reference/android/widget/TextView.html#setTextClassifier(android.view.textclassifier.TextClassifier)"/>
-        /// </summary>
-        public Android.View.Textclassifier.TextClassifier TextClassifier
-        {
-            get { return IExecute<Android.View.Textclassifier.TextClassifier>("getTextClassifier"); } set { IExecute("setTextClassifier", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getTextColors()"/> 
-        /// </summary>
-        public Android.Content.Res.ColorStateList TextColors
-        {
-            get { return IExecuteWithSignature<Android.Content.Res.ColorStateList>("getTextColors", "()Landroid/content/res/ColorStateList;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getTextCursorDrawable()"/> 
-        /// </summary>
-        public Android.Graphics.Drawable.Drawable TextCursorDrawable
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getTextCursorDrawable", "()Landroid/graphics/drawable/Drawable;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getTextDirectionHeuristic()"/> 
-        /// </summary>
-        public Android.Text.TextDirectionHeuristic TextDirectionHeuristic
-        {
-            get { return IExecuteWithSignature<Android.Text.TextDirectionHeuristic>("getTextDirectionHeuristic", "()Landroid/text/TextDirectionHeuristic;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getTextLocale()"/> <see href="https://developer.android.com/reference/android/widget/TextView.html#setTextLocale(java.util.Locale)"/>
-        /// </summary>
-        public Java.Util.Locale TextLocale
-        {
-            get { return IExecuteWithSignature<Java.Util.Locale>("getTextLocale", "()Ljava/util/Locale;"); } set { IExecuteWithSignature("setTextLocale", "(Ljava/util/Locale;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getTextLocales()"/> <see href="https://developer.android.com/reference/android/widget/TextView.html#setTextLocales(android.os.LocaleList)"/>
-        /// </summary>
-        public Android.Os.LocaleList TextLocales
-        {
-            get { return IExecuteWithSignature<Android.Os.LocaleList>("getTextLocales", "()Landroid/os/LocaleList;"); } set { IExecuteWithSignature("setTextLocales", "(Landroid/os/LocaleList;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getTextMetricsParams()"/> <see href="https://developer.android.com/reference/android/widget/TextView.html#setTextMetricsParams(android.text.PrecomputedText.Params)"/>
-        /// </summary>
-        public Android.Text.PrecomputedText.Params TextMetricsParams
-        {
-            get { return IExecuteWithSignature<Android.Text.PrecomputedText.Params>("getTextMetricsParams", "()Landroid/text/PrecomputedText$Params;"); } set { IExecuteWithSignature("setTextMetricsParams", "(Landroid/text/PrecomputedText$Params;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getTextScaleX()"/> <see href="https://developer.android.com/reference/android/widget/TextView.html#setTextScaleX(float)"/>
-        /// </summary>
-        public float TextScaleX
-        {
-            get { return IExecuteWithSignature<float>("getTextScaleX", "()F"); } set { IExecuteWithSignature("setTextScaleX", "(F)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getTextSelectHandle()"/> 
-        /// </summary>
-        public Android.Graphics.Drawable.Drawable TextSelectHandle
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getTextSelectHandle", "()Landroid/graphics/drawable/Drawable;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getTextSelectHandleLeft()"/> 
-        /// </summary>
-        public Android.Graphics.Drawable.Drawable TextSelectHandleLeft
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getTextSelectHandleLeft", "()Landroid/graphics/drawable/Drawable;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getTextSelectHandleRight()"/> 
-        /// </summary>
-        public Android.Graphics.Drawable.Drawable TextSelectHandleRight
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getTextSelectHandleRight", "()Landroid/graphics/drawable/Drawable;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getTextSize()"/> <see href="https://developer.android.com/reference/android/widget/TextView.html#setTextSize(float)"/>
-        /// </summary>
-        public float TextSize
-        {
-            get { return IExecuteWithSignature<float>("getTextSize", "()F"); } set { IExecuteWithSignature("setTextSize", "(F)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getTextSizeUnit()"/> 
-        /// </summary>
-        public int TextSizeUnit
-        {
-            get { return IExecuteWithSignature<int>("getTextSizeUnit", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getTotalPaddingBottom()"/> 
-        /// </summary>
-        public int TotalPaddingBottom
-        {
-            get { return IExecuteWithSignature<int>("getTotalPaddingBottom", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getTotalPaddingEnd()"/> 
-        /// </summary>
-        public int TotalPaddingEnd
-        {
-            get { return IExecuteWithSignature<int>("getTotalPaddingEnd", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getTotalPaddingLeft()"/> 
-        /// </summary>
-        public int TotalPaddingLeft
-        {
-            get { return IExecuteWithSignature<int>("getTotalPaddingLeft", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getTotalPaddingRight()"/> 
-        /// </summary>
-        public int TotalPaddingRight
-        {
-            get { return IExecuteWithSignature<int>("getTotalPaddingRight", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getTotalPaddingStart()"/> 
-        /// </summary>
-        public int TotalPaddingStart
-        {
-            get { return IExecuteWithSignature<int>("getTotalPaddingStart", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getTotalPaddingTop()"/> 
-        /// </summary>
-        public int TotalPaddingTop
-        {
-            get { return IExecuteWithSignature<int>("getTotalPaddingTop", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getTransformationMethod()"/> <see href="https://developer.android.com/reference/android/widget/TextView.html#setTransformationMethod(android.text.method.TransformationMethod)"/>
-        /// </summary>
-        public Android.Text.Method.TransformationMethod TransformationMethod
-        {
-            get { return IExecuteWithSignature<Android.Text.Method.TransformationMethod>("getTransformationMethod", "()Landroid/text/method/TransformationMethod;"); } set { IExecuteWithSignature("setTransformationMethod", "(Landroid/text/method/TransformationMethod;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getTypeface()"/> <see href="https://developer.android.com/reference/android/widget/TextView.html#setTypeface(android.graphics.Typeface)"/>
-        /// </summary>
-        public Android.Graphics.Typeface Typeface
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Typeface>("getTypeface", "()Landroid/graphics/Typeface;"); } set { IExecuteWithSignature("setTypeface", "(Landroid/graphics/Typeface;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getUrls()"/> 
-        /// </summary>
-        public Android.Text.Style.URLSpan[] Urls
-        {
-            get { return IExecuteWithSignatureArray<Android.Text.Style.URLSpan>("getUrls", "()[Landroid/text/style/URLSpan;"); }
+            return IExecuteWithSignature<Android.Graphics.Typeface>("getTypeface", "()Landroid/graphics/Typeface;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getInputExtras(boolean)"/>
@@ -846,12 +191,116 @@ namespace Android.Widget
             return IExecuteWithSignature<Android.Os.Bundle>("getInputExtras", "(Z)Landroid/os/Bundle;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getImeHintLocales()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Os.LocaleList"/></returns>
+        public Android.Os.LocaleList GetImeHintLocales()
+        {
+            return IExecuteWithSignature<Android.Os.LocaleList>("getImeHintLocales", "()Landroid/os/LocaleList;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getTextLocales()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Os.LocaleList"/></returns>
+        public Android.Os.LocaleList GetTextLocales()
+        {
+            return IExecuteWithSignature<Android.Os.LocaleList>("getTextLocales", "()Landroid/os/LocaleList;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextView.html#onSaveInstanceState()"/>
         /// </summary>
         /// <returns><see cref="Android.Os.Parcelable"/></returns>
         public Android.Os.Parcelable OnSaveInstanceState()
         {
             return IExecuteWithSignature<Android.Os.Parcelable>("onSaveInstanceState", "()Landroid/os/Parcelable;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getEditableText()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Text.Editable"/></returns>
+        public Android.Text.Editable GetEditableText()
+        {
+            return IExecuteWithSignature<Android.Text.Editable>("getEditableText", "()Landroid/text/Editable;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getHighlights()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Text.Highlights"/></returns>
+        public Android.Text.Highlights GetHighlights()
+        {
+            return IExecuteWithSignature<Android.Text.Highlights>("getHighlights", "()Landroid/text/Highlights;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getFilters()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Text.InputFilter"/></returns>
+        public Android.Text.InputFilter[] GetFilters()
+        {
+            return IExecuteWithSignatureArray<Android.Text.InputFilter>("getFilters", "()[Landroid/text/InputFilter;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getTextMetricsParams()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Text.PrecomputedText.Params"/></returns>
+        public Android.Text.PrecomputedText.Params GetTextMetricsParams()
+        {
+            return IExecuteWithSignature<Android.Text.PrecomputedText.Params>("getTextMetricsParams", "()Landroid/text/PrecomputedText$Params;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getUrls()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Text.Style.URLSpan"/></returns>
+        public Android.Text.Style.URLSpan[] GetUrls()
+        {
+            return IExecuteWithSignatureArray<Android.Text.Style.URLSpan>("getUrls", "()[Landroid/text/style/URLSpan;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getTextDirectionHeuristic()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Text.TextDirectionHeuristic"/></returns>
+        public Android.Text.TextDirectionHeuristic GetTextDirectionHeuristic()
+        {
+            return IExecuteWithSignature<Android.Text.TextDirectionHeuristic>("getTextDirectionHeuristic", "()Landroid/text/TextDirectionHeuristic;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getPaint()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Text.TextPaint"/></returns>
+        public Android.Text.TextPaint GetPaint()
+        {
+            return IExecuteWithSignature<Android.Text.TextPaint>("getPaint", "()Landroid/text/TextPaint;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getEllipsize()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Text.TextUtils.TruncateAt"/></returns>
+        public Android.Text.TextUtils.TruncateAt GetEllipsize()
+        {
+            return IExecuteWithSignature<Android.Text.TextUtils.TruncateAt>("getEllipsize", "()Landroid/text/TextUtils$TruncateAt;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getCustomInsertionActionModeCallback()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.ActionMode.Callback"/></returns>
+        public Android.View.ActionMode.Callback GetCustomInsertionActionModeCallback()
+        {
+            return IExecuteWithSignature<Android.View.ActionMode.Callback>("getCustomInsertionActionModeCallback", "()Landroid/view/ActionMode$Callback;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getCustomSelectionActionModeCallback()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.ActionMode.Callback"/></returns>
+        public Android.View.ActionMode.Callback GetCustomSelectionActionModeCallback()
+        {
+            return IExecuteWithSignature<Android.View.ActionMode.Callback>("getCustomSelectionActionModeCallback", "()Landroid/view/ActionMode$Callback;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getTextClassifier()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.Textclassifier.TextClassifier"/></returns>
+        public Android.View.Textclassifier.TextClassifier GetTextClassifier()
+        {
+            return IExecute<Android.View.Textclassifier.TextClassifier>("getTextClassifier");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextView.html#bringPointIntoView(int,boolean)"/>
@@ -889,6 +338,22 @@ namespace Android.Widget
         public bool ExtractText(Android.View.Inputmethod.ExtractedTextRequest arg0, Android.View.Inputmethod.ExtractedText arg1)
         {
             return IExecute<bool>("extractText", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getFreezesText()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetFreezesText()
+        {
+            return IExecuteWithSignature<bool>("getFreezesText", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getIncludeFontPadding()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetIncludeFontPadding()
+        {
+            return IExecuteWithSignature<bool>("getIncludeFontPadding", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextView.html#hasSelection()"/>
@@ -1007,6 +472,86 @@ namespace Android.Widget
             return IExecuteWithSignature<bool>("setFontVariationSettings", "(Ljava/lang/String;)Z", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getHintTextColors()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Content.Res.ColorStateList"/></returns>
+        public Android.Content.Res.ColorStateList GetHintTextColors()
+        {
+            return IExecuteWithSignature<Android.Content.Res.ColorStateList>("getHintTextColors", "()Landroid/content/res/ColorStateList;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getLinkTextColors()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Content.Res.ColorStateList"/></returns>
+        public Android.Content.Res.ColorStateList GetLinkTextColors()
+        {
+            return IExecuteWithSignature<Android.Content.Res.ColorStateList>("getLinkTextColors", "()Landroid/content/res/ColorStateList;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getTextColors()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Content.Res.ColorStateList"/></returns>
+        public Android.Content.Res.ColorStateList GetTextColors()
+        {
+            return IExecuteWithSignature<Android.Content.Res.ColorStateList>("getTextColors", "()Landroid/content/res/ColorStateList;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getLayout()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Text.Layout"/></returns>
+        public Android.Text.Layout GetLayout()
+        {
+            return IExecuteWithSignature<Android.Text.Layout>("getLayout", "()Landroid/text/Layout;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getKeyListener()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Text.Method.KeyListener"/></returns>
+        public Android.Text.Method.KeyListener GetKeyListener()
+        {
+            return IExecuteWithSignature<Android.Text.Method.KeyListener>("getKeyListener", "()Landroid/text/method/KeyListener;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getKeyListener()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Text.Method.KeyListener"/></returns>
+        public Android.Text.Method.KeyListener GetKeyListenerDirect()
+        {
+            return IExecuteWithSignature<Android.Text.Method.KeyListenerDirect, Android.Text.Method.KeyListener>("getKeyListener", "()Landroid/text/method/KeyListener;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getMovementMethod()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Text.Method.MovementMethod"/></returns>
+        public Android.Text.Method.MovementMethod GetMovementMethod()
+        {
+            return IExecuteWithSignature<Android.Text.Method.MovementMethod>("getMovementMethod", "()Landroid/text/method/MovementMethod;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getTransformationMethod()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Text.Method.TransformationMethod"/></returns>
+        public Android.Text.Method.TransformationMethod GetTransformationMethod()
+        {
+            return IExecuteWithSignature<Android.Text.Method.TransformationMethod>("getTransformationMethod", "()Landroid/text/method/TransformationMethod;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getLinksClickable()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetLinksClickable()
+        {
+            return IExecuteWithSignature<bool>("getLinksClickable", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getShowSoftInputOnFocus()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetShowSoftInputOnFocus()
+        {
+            return IExecuteWithSignature<bool>("getShowSoftInputOnFocus", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextView.html#isHorizontallyScrollable()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -1015,12 +560,44 @@ namespace Android.Widget
             return IExecuteWithSignature<bool>("isHorizontallyScrollable", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getAutoLinkMask()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetAutoLinkMask()
+        {
+            return IExecuteWithSignature<int>("getAutoLinkMask", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getCurrentHintTextColor()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCurrentHintTextColor()
+        {
+            return IExecuteWithSignature<int>("getCurrentHintTextColor", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getCurrentTextColor()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCurrentTextColor()
+        {
+            return IExecuteWithSignature<int>("getCurrentTextColor", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextView.html#append(java.lang.CharSequence)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         public void Append(Java.Lang.CharSequence arg0)
         {
             IExecuteWithSignature("append", "(Ljava/lang/CharSequence;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setAutoLinkMask(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetAutoLinkMask(int arg0)
+        {
+            IExecuteWithSignature("setAutoLinkMask", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setEditableFactory(android.text.Editable.Factory)"/>
@@ -1063,6 +640,14 @@ namespace Android.Widget
             IExecuteWithSignature("setHintTextColor", "(I)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setLinksClickable(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetLinksClickable(bool arg0)
+        {
+            IExecuteWithSignature("setLinksClickable", "(Z)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setLinkTextColor(android.content.res.ColorStateList)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Res.ColorStateList"/></param>
@@ -1077,6 +662,22 @@ namespace Android.Widget
         public void SetLinkTextColor(int arg0)
         {
             IExecuteWithSignature("setLinkTextColor", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setMovementMethod(android.text.method.MovementMethod)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Text.Method.MovementMethod"/></param>
+        public void SetMovementMethod(Android.Text.Method.MovementMethod arg0)
+        {
+            IExecuteWithSignature("setMovementMethod", "(Landroid/text/method/MovementMethod;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setShowSoftInputOnFocus(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetShowSoftInputOnFocus(bool arg0)
+        {
+            IExecuteWithSignature("setShowSoftInputOnFocus", "(Z)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setSpannableFactory(android.text.Spannable.Factory)"/>
@@ -1139,6 +740,278 @@ namespace Android.Widget
             IExecuteWithSignature("setTextKeepState", "(Ljava/lang/CharSequence;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setTransformationMethod(android.text.method.TransformationMethod)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Text.Method.TransformationMethod"/></param>
+        public void SetTransformationMethod(Android.Text.Method.TransformationMethod arg0)
+        {
+            IExecuteWithSignature("setTransformationMethod", "(Landroid/text/method/TransformationMethod;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getLetterSpacing()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetLetterSpacing()
+        {
+            return IExecuteWithSignature<float>("getLetterSpacing", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getLineSpacingExtra()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetLineSpacingExtra()
+        {
+            return IExecuteWithSignature<float>("getLineSpacingExtra", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getLineSpacingMultiplier()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetLineSpacingMultiplier()
+        {
+            return IExecuteWithSignature<float>("getLineSpacingMultiplier", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getShadowDx()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetShadowDx()
+        {
+            return IExecuteWithSignature<float>("getShadowDx", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getShadowDy()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetShadowDy()
+        {
+            return IExecuteWithSignature<float>("getShadowDy", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getShadowRadius()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetShadowRadius()
+        {
+            return IExecuteWithSignature<float>("getShadowRadius", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getTextScaleX()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetTextScaleX()
+        {
+            return IExecuteWithSignature<float>("getTextScaleX", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getTextSize()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetTextSize()
+        {
+            return IExecuteWithSignature<float>("getTextSize", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getAutoSizeMaxTextSize()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetAutoSizeMaxTextSize()
+        {
+            return IExecuteWithSignature<int>("getAutoSizeMaxTextSize", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getAutoSizeMinTextSize()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetAutoSizeMinTextSize()
+        {
+            return IExecuteWithSignature<int>("getAutoSizeMinTextSize", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getAutoSizeStepGranularity()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetAutoSizeStepGranularity()
+        {
+            return IExecuteWithSignature<int>("getAutoSizeStepGranularity", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getAutoSizeTextType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetAutoSizeTextType()
+        {
+            return IExecuteWithSignature<int>("getAutoSizeTextType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getBreakStrategy()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetBreakStrategy()
+        {
+            return IExecuteWithSignature<int>("getBreakStrategy", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getCompoundDrawablePadding()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCompoundDrawablePadding()
+        {
+            return IExecuteWithSignature<int>("getCompoundDrawablePadding", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getCompoundPaddingBottom()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCompoundPaddingBottom()
+        {
+            return IExecuteWithSignature<int>("getCompoundPaddingBottom", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getCompoundPaddingEnd()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCompoundPaddingEnd()
+        {
+            return IExecuteWithSignature<int>("getCompoundPaddingEnd", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getCompoundPaddingLeft()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCompoundPaddingLeft()
+        {
+            return IExecuteWithSignature<int>("getCompoundPaddingLeft", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getCompoundPaddingRight()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCompoundPaddingRight()
+        {
+            return IExecuteWithSignature<int>("getCompoundPaddingRight", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getCompoundPaddingStart()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCompoundPaddingStart()
+        {
+            return IExecuteWithSignature<int>("getCompoundPaddingStart", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getCompoundPaddingTop()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCompoundPaddingTop()
+        {
+            return IExecuteWithSignature<int>("getCompoundPaddingTop", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getExtendedPaddingBottom()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetExtendedPaddingBottom()
+        {
+            return IExecuteWithSignature<int>("getExtendedPaddingBottom", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getExtendedPaddingTop()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetExtendedPaddingTop()
+        {
+            return IExecuteWithSignature<int>("getExtendedPaddingTop", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getFirstBaselineToTopHeight()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetFirstBaselineToTopHeight()
+        {
+            return IExecuteWithSignature<int>("getFirstBaselineToTopHeight", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getFocusedSearchResultHighlightColor()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetFocusedSearchResultHighlightColor()
+        {
+            return IExecuteWithSignature<int>("getFocusedSearchResultHighlightColor", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getFocusedSearchResultIndex()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetFocusedSearchResultIndex()
+        {
+            return IExecuteWithSignature<int>("getFocusedSearchResultIndex", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getGravity()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetGravity()
+        {
+            return IExecuteWithSignature<int>("getGravity", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getHighlightColor()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetHighlightColor()
+        {
+            return IExecuteWithSignature<int>("getHighlightColor", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getHyphenationFrequency()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetHyphenationFrequency()
+        {
+            return IExecuteWithSignature<int>("getHyphenationFrequency", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getImeActionId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetImeActionId()
+        {
+            return IExecuteWithSignature<int>("getImeActionId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getImeOptions()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetImeOptions()
+        {
+            return IExecuteWithSignature<int>("getImeOptions", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getInputType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetInputType()
+        {
+            return IExecuteWithSignature<int>("getInputType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getJustificationMode()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetJustificationMode()
+        {
+            return IExecuteWithSignature<int>("getJustificationMode", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getLastBaselineToBottomHeight()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetLastBaselineToBottomHeight()
+        {
+            return IExecuteWithSignature<int>("getLastBaselineToBottomHeight", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getLineBounds(int,android.graphics.Rect)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -1147,6 +1020,110 @@ namespace Android.Widget
         public int GetLineBounds(int arg0, Android.Graphics.Rect arg1)
         {
             return IExecute<int>("getLineBounds", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getLineBreakStyle()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetLineBreakStyle()
+        {
+            return IExecuteWithSignature<int>("getLineBreakStyle", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getLineBreakWordStyle()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetLineBreakWordStyle()
+        {
+            return IExecuteWithSignature<int>("getLineBreakWordStyle", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getLineCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetLineCount()
+        {
+            return IExecuteWithSignature<int>("getLineCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getLineHeight()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetLineHeight()
+        {
+            return IExecuteWithSignature<int>("getLineHeight", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getMarqueeRepeatLimit()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMarqueeRepeatLimit()
+        {
+            return IExecuteWithSignature<int>("getMarqueeRepeatLimit", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getMaxEms()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMaxEms()
+        {
+            return IExecuteWithSignature<int>("getMaxEms", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getMaxHeight()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMaxHeight()
+        {
+            return IExecuteWithSignature<int>("getMaxHeight", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getMaxLines()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMaxLines()
+        {
+            return IExecuteWithSignature<int>("getMaxLines", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getMaxWidth()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMaxWidth()
+        {
+            return IExecuteWithSignature<int>("getMaxWidth", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getMinEms()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMinEms()
+        {
+            return IExecuteWithSignature<int>("getMinEms", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getMinHeight()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMinHeight()
+        {
+            return IExecuteWithSignature<int>("getMinHeight", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getMinLines()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMinLines()
+        {
+            return IExecuteWithSignature<int>("getMinLines", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getMinWidth()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMinWidth()
+        {
+            return IExecuteWithSignature<int>("getMinWidth", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getOffsetForPosition(float,float)"/>
@@ -1159,12 +1136,188 @@ namespace Android.Widget
             return IExecute<int>("getOffsetForPosition", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getPaintFlags()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPaintFlags()
+        {
+            return IExecuteWithSignature<int>("getPaintFlags", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getSearchResultHighlightColor()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSearchResultHighlightColor()
+        {
+            return IExecuteWithSignature<int>("getSearchResultHighlightColor", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getSelectionEnd()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSelectionEnd()
+        {
+            return IExecuteWithSignature<int>("getSelectionEnd", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getSelectionStart()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSelectionStart()
+        {
+            return IExecuteWithSignature<int>("getSelectionStart", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getShadowColor()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetShadowColor()
+        {
+            return IExecuteWithSignature<int>("getShadowColor", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getTextSizeUnit()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTextSizeUnit()
+        {
+            return IExecuteWithSignature<int>("getTextSizeUnit", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getTotalPaddingBottom()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTotalPaddingBottom()
+        {
+            return IExecuteWithSignature<int>("getTotalPaddingBottom", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getTotalPaddingEnd()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTotalPaddingEnd()
+        {
+            return IExecuteWithSignature<int>("getTotalPaddingEnd", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getTotalPaddingLeft()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTotalPaddingLeft()
+        {
+            return IExecuteWithSignature<int>("getTotalPaddingLeft", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getTotalPaddingRight()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTotalPaddingRight()
+        {
+            return IExecuteWithSignature<int>("getTotalPaddingRight", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getTotalPaddingStart()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTotalPaddingStart()
+        {
+            return IExecuteWithSignature<int>("getTotalPaddingStart", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getTotalPaddingTop()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTotalPaddingTop()
+        {
+            return IExecuteWithSignature<int>("getTotalPaddingTop", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextView.html#length()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int Length()
         {
             return IExecuteWithSignature<int>("length", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getAutoSizeTextAvailableSizes()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int[] GetAutoSizeTextAvailableSizes()
+        {
+            return IExecuteWithSignatureArray<int>("getAutoSizeTextAvailableSizes", "()[I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getSearchResultHighlights()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int[] GetSearchResultHighlights()
+        {
+            return IExecuteWithSignatureArray<int>("getSearchResultHighlights", "()[I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getError()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetError()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getError", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getHint()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetHint()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getHint", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getImeActionLabel()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetImeActionLabel()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getImeActionLabel", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getText()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetText()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getText", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getFontFeatureSettings()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetFontFeatureSettings()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getFontFeatureSettings", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getFontVariationSettings()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetFontVariationSettings()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getFontVariationSettings", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getPrivateImeOptions()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPrivateImeOptions()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPrivateImeOptions", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#getTextLocale()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Locale"/></returns>
+        public Java.Util.Locale GetTextLocale()
+        {
+            return IExecuteWithSignature<Java.Util.Locale>("getTextLocale", "()Ljava/util/Locale;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextView.html#addTextChangedListener(android.text.TextWatcher)"/>
@@ -1304,6 +1457,22 @@ namespace Android.Widget
             IExecuteWithSignature("setAutoSizeTextTypeWithDefaults", "(I)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setBreakStrategy(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetBreakStrategy(int arg0)
+        {
+            IExecuteWithSignature("setBreakStrategy", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setCompoundDrawablePadding(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetCompoundDrawablePadding(int arg0)
+        {
+            IExecuteWithSignature("setCompoundDrawablePadding", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setCompoundDrawables(android.graphics.drawable.Drawable,android.graphics.drawable.Drawable,android.graphics.drawable.Drawable,android.graphics.drawable.Drawable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Graphics.Drawable.Drawable"/></param>
@@ -1370,6 +1539,30 @@ namespace Android.Widget
             IExecute("setCompoundDrawablesWithIntrinsicBounds", arg0, arg1, arg2, arg3);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setCompoundDrawableTintBlendMode(android.graphics.BlendMode)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.BlendMode"/></param>
+        public void SetCompoundDrawableTintBlendMode(Android.Graphics.BlendMode arg0)
+        {
+            IExecuteWithSignature("setCompoundDrawableTintBlendMode", "(Landroid/graphics/BlendMode;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setCompoundDrawableTintList(android.content.res.ColorStateList)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Content.Res.ColorStateList"/></param>
+        public void SetCompoundDrawableTintList(Android.Content.Res.ColorStateList arg0)
+        {
+            IExecuteWithSignature("setCompoundDrawableTintList", "(Landroid/content/res/ColorStateList;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setCompoundDrawableTintMode(android.graphics.PorterDuff.Mode)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.PorterDuff.Mode"/></param>
+        public void SetCompoundDrawableTintMode(Android.Graphics.PorterDuff.Mode arg0)
+        {
+            IExecuteWithSignature("setCompoundDrawableTintMode", "(Landroid/graphics/PorterDuff$Mode;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setCursorVisible(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
@@ -1378,12 +1571,36 @@ namespace Android.Widget
             IExecuteWithSignature("setCursorVisible", "(Z)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setCustomInsertionActionModeCallback(android.view.ActionMode.Callback)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.ActionMode.Callback"/></param>
+        public void SetCustomInsertionActionModeCallback(Android.View.ActionMode.Callback arg0)
+        {
+            IExecuteWithSignature("setCustomInsertionActionModeCallback", "(Landroid/view/ActionMode$Callback;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setCustomSelectionActionModeCallback(android.view.ActionMode.Callback)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.ActionMode.Callback"/></param>
+        public void SetCustomSelectionActionModeCallback(Android.View.ActionMode.Callback arg0)
+        {
+            IExecuteWithSignature("setCustomSelectionActionModeCallback", "(Landroid/view/ActionMode$Callback;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setElegantTextHeight(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetElegantTextHeight(bool arg0)
         {
             IExecuteWithSignature("setElegantTextHeight", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setEllipsize(android.text.TextUtils.TruncateAt)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Text.TextUtils.TruncateAt"/></param>
+        public void SetEllipsize(Android.Text.TextUtils.TruncateAt arg0)
+        {
+            IExecuteWithSignature("setEllipsize", "(Landroid/text/TextUtils$TruncateAt;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setEms(int)"/>
@@ -1403,6 +1620,14 @@ namespace Android.Widget
             IExecute("setError", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setError(java.lang.CharSequence)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        public void SetError(Java.Lang.CharSequence arg0)
+        {
+            IExecuteWithSignature("setError", "(Ljava/lang/CharSequence;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setExtractedText(android.view.inputmethod.ExtractedText)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.Inputmethod.ExtractedText"/></param>
@@ -1419,12 +1644,84 @@ namespace Android.Widget
             IExecuteWithSignature("setFallbackLineSpacing", "(Z)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setFilters(android.text.InputFilter[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Text.InputFilter"/></param>
+        public void SetFilters(Android.Text.InputFilter[] arg0)
+        {
+            IExecuteWithSignature("setFilters", "([Landroid/text/InputFilter;)V", new object[] { arg0 });
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setFirstBaselineToTopHeight(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetFirstBaselineToTopHeight(int arg0)
+        {
+            IExecuteWithSignature("setFirstBaselineToTopHeight", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setFocusedSearchResultHighlightColor(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetFocusedSearchResultHighlightColor(int arg0)
+        {
+            IExecuteWithSignature("setFocusedSearchResultHighlightColor", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setFocusedSearchResultIndex(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetFocusedSearchResultIndex(int arg0)
+        {
+            IExecuteWithSignature("setFocusedSearchResultIndex", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setFontFeatureSettings(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetFontFeatureSettings(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setFontFeatureSettings", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setFreezesText(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetFreezesText(bool arg0)
+        {
+            IExecuteWithSignature("setFreezesText", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setGravity(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetGravity(int arg0)
+        {
+            IExecuteWithSignature("setGravity", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setHeight(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public void SetHeight(int arg0)
         {
             IExecuteWithSignature("setHeight", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setHighlightColor(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetHighlightColor(int arg0)
+        {
+            IExecuteWithSignature("setHighlightColor", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setHighlights(android.text.Highlights)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Text.Highlights"/></param>
+        public void SetHighlights(Android.Text.Highlights arg0)
+        {
+            IExecuteWithSignature("setHighlights", "(Landroid/text/Highlights;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setHorizontallyScrolling(boolean)"/>
@@ -1435,6 +1732,14 @@ namespace Android.Widget
             IExecuteWithSignature("setHorizontallyScrolling", "(Z)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setHyphenationFrequency(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetHyphenationFrequency(int arg0)
+        {
+            IExecuteWithSignature("setHyphenationFrequency", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setImeActionLabel(java.lang.CharSequence,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
@@ -1442,6 +1747,30 @@ namespace Android.Widget
         public void SetImeActionLabel(Java.Lang.CharSequence arg0, int arg1)
         {
             IExecute("setImeActionLabel", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setImeHintLocales(android.os.LocaleList)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Os.LocaleList"/></param>
+        public void SetImeHintLocales(Android.Os.LocaleList arg0)
+        {
+            IExecuteWithSignature("setImeHintLocales", "(Landroid/os/LocaleList;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setImeOptions(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetImeOptions(int arg0)
+        {
+            IExecuteWithSignature("setImeOptions", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setIncludeFontPadding(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetIncludeFontPadding(bool arg0)
+        {
+            IExecuteWithSignature("setIncludeFontPadding", "(Z)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setInputExtras(int)"/>
@@ -1454,6 +1783,62 @@ namespace Android.Widget
             IExecuteWithSignature("setInputExtras", "(I)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setInputType(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetInputType(int arg0)
+        {
+            IExecuteWithSignature("setInputType", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setJustificationMode(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetJustificationMode(int arg0)
+        {
+            IExecuteWithSignature("setJustificationMode", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setKeyListener(android.text.method.KeyListener)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Text.Method.KeyListener"/></param>
+        public void SetKeyListener(Android.Text.Method.KeyListener arg0)
+        {
+            IExecuteWithSignature("setKeyListener", "(Landroid/text/method/KeyListener;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setLastBaselineToBottomHeight(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetLastBaselineToBottomHeight(int arg0)
+        {
+            IExecuteWithSignature("setLastBaselineToBottomHeight", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setLetterSpacing(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetLetterSpacing(float arg0)
+        {
+            IExecuteWithSignature("setLetterSpacing", "(F)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setLineBreakStyle(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetLineBreakStyle(int arg0)
+        {
+            IExecuteWithSignature("setLineBreakStyle", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setLineBreakWordStyle(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetLineBreakWordStyle(int arg0)
+        {
+            IExecuteWithSignature("setLineBreakWordStyle", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setLineHeight(int,float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -1461,6 +1846,14 @@ namespace Android.Widget
         public void SetLineHeight(int arg0, float arg1)
         {
             IExecute("setLineHeight", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setLineHeight(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetLineHeight(int arg0)
+        {
+            IExecuteWithSignature("setLineHeight", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setLines(int)"/>
@@ -1480,12 +1873,100 @@ namespace Android.Widget
             IExecute("setLineSpacing", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setMarqueeRepeatLimit(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetMarqueeRepeatLimit(int arg0)
+        {
+            IExecuteWithSignature("setMarqueeRepeatLimit", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setMaxEms(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetMaxEms(int arg0)
+        {
+            IExecuteWithSignature("setMaxEms", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setMaxHeight(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetMaxHeight(int arg0)
+        {
+            IExecuteWithSignature("setMaxHeight", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setMaxLines(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetMaxLines(int arg0)
+        {
+            IExecuteWithSignature("setMaxLines", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setMaxWidth(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetMaxWidth(int arg0)
+        {
+            IExecuteWithSignature("setMaxWidth", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setMinEms(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetMinEms(int arg0)
+        {
+            IExecuteWithSignature("setMinEms", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setMinHeight(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetMinHeight(int arg0)
+        {
+            IExecuteWithSignature("setMinHeight", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setMinLines(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetMinLines(int arg0)
+        {
+            IExecuteWithSignature("setMinLines", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setMinWidth(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetMinWidth(int arg0)
+        {
+            IExecuteWithSignature("setMinWidth", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setOnEditorActionListener(android.widget.TextView.OnEditorActionListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Widget.TextView.OnEditorActionListener"/></param>
         public void SetOnEditorActionListener(Android.Widget.TextView.OnEditorActionListener arg0)
         {
             IExecuteWithSignature("setOnEditorActionListener", "(Landroid/widget/TextView$OnEditorActionListener;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setPaintFlags(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetPaintFlags(int arg0)
+        {
+            IExecuteWithSignature("setPaintFlags", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setPrivateImeOptions(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetPrivateImeOptions(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setPrivateImeOptions", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setRawInputType(int)"/>
@@ -1502,6 +1983,22 @@ namespace Android.Widget
         public void SetScroller(Android.Widget.Scroller arg0)
         {
             IExecuteWithSignature("setScroller", "(Landroid/widget/Scroller;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setSearchResultHighlightColor(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetSearchResultHighlightColor(int arg0)
+        {
+            IExecuteWithSignature("setSearchResultHighlightColor", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setSearchResultHighlights(int[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetSearchResultHighlights(params int[] arg0)
+        {
+            if (arg0.Length == 0) IExecuteWithSignature("setSearchResultHighlights", "([I)V"); else IExecuteWithSignature("setSearchResultHighlights", "([I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setSelectAllOnFocus(boolean)"/>
@@ -1551,7 +2048,7 @@ namespace Android.Widget
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetTextAppearance(Android.Content.Context arg0, int arg1)
         {
             IExecute("setTextAppearance", arg0, arg1);
@@ -1563,6 +2060,14 @@ namespace Android.Widget
         public void SetTextAppearance(int arg0)
         {
             IExecuteWithSignature("setTextAppearance", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setTextClassifier(android.view.textclassifier.TextClassifier)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.View.Textclassifier.TextClassifier"/></param>
+        public void SetTextClassifier(Android.View.Textclassifier.TextClassifier arg0)
+        {
+            IExecute("setTextClassifier", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setTextColor(android.content.res.ColorStateList)"/>
@@ -1603,6 +2108,38 @@ namespace Android.Widget
         public void SetTextIsSelectable(bool arg0)
         {
             IExecuteWithSignature("setTextIsSelectable", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setTextLocale(java.util.Locale)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
+        public void SetTextLocale(Java.Util.Locale arg0)
+        {
+            IExecuteWithSignature("setTextLocale", "(Ljava/util/Locale;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setTextLocales(android.os.LocaleList)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Os.LocaleList"/></param>
+        public void SetTextLocales(Android.Os.LocaleList arg0)
+        {
+            IExecuteWithSignature("setTextLocales", "(Landroid/os/LocaleList;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setTextMetricsParams(android.text.PrecomputedText.Params)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Text.PrecomputedText.Params"/></param>
+        public void SetTextMetricsParams(Android.Text.PrecomputedText.Params arg0)
+        {
+            IExecuteWithSignature("setTextMetricsParams", "(Landroid/text/PrecomputedText$Params;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setTextScaleX(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetTextScaleX(float arg0)
+        {
+            IExecuteWithSignature("setTextScaleX", "(F)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setTextSelectHandle(android.graphics.drawable.Drawable)"/>
@@ -1653,6 +2190,14 @@ namespace Android.Widget
             IExecuteWithSignature("setTextSelectHandleRight", "(I)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setTextSize(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetTextSize(float arg0)
+        {
+            IExecuteWithSignature("setTextSize", "(F)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setTextSize(int,float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -1669,6 +2214,14 @@ namespace Android.Widget
         public void SetTypeface(Android.Graphics.Typeface arg0, int arg1)
         {
             IExecute("setTypeface", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setTypeface(android.graphics.Typeface)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Typeface"/></param>
+        public void SetTypeface(Android.Graphics.Typeface arg0)
+        {
+            IExecuteWithSignature("setTypeface", "(Landroid/graphics/Typeface;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/TextView.html#setWidth(int)"/>
@@ -1773,7 +2326,7 @@ namespace Android.Widget
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onEditorAction", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Widget.TextView>>>(OnEditorActionEventHandler));
+                AddEventHandler("onEditorAction", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Widget.TextView>>>(OnEditorActionEventHandler));
 
             }
 
@@ -1781,7 +2334,7 @@ namespace Android.Widget
             /// Handler for <see href="https://developer.android.com/reference/android/widget/TextView.OnEditorActionListener.html#onEditorAction(android.widget.TextView,int,android.view.KeyEvent)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnEditorAction"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Func<Android.Widget.TextView, int, Android.View.KeyEvent, bool> OnOnEditorAction { get; set; } = null;
+            public global::System.Func<Android.Widget.TextView, int, Android.View.KeyEvent, bool> OnOnEditorAction { get; set; } = null;
 
             void OnEditorActionEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Widget.TextView>> data)
             {

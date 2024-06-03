@@ -27,7 +27,7 @@ namespace Java.Util.Function
 {
     #region IIntConsumer
     /// <summary>
-    /// .NET interface for org.mases.netdroid.generated.java.util.function.IntConsumer implementing <see href="https://developer.android.com/reference/java.base/java/util/function/IntConsumer.html"/>
+    /// .NET interface for org.mases.netdroid.generated.java.util.function.IntConsumer implementing <see href="https://developer.android.com/reference/java/util/function/IntConsumer.html"/>
     /// </summary>
     public partial interface IIntConsumer
     {
@@ -68,16 +68,16 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("accept", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(AcceptEventHandler));
-            AddEventHandler("andThen", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.IntConsumer>>>(AndThenEventHandler));
+            AddEventHandler("accept", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(AcceptEventHandler));
+            AddEventHandler("andThen", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.IntConsumer>>>(AndThenEventHandler));
 
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/IntConsumer.html#accept(int)"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/IntConsumer.html#accept(int)"/>
         /// </summary>
         /// <remarks>If <see cref="OnAccept"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<int> OnAccept { get; set; } = null;
+        public global::System.Action<int> OnAccept { get; set; } = null;
 
         void AcceptEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
         {
@@ -86,7 +86,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/IntConsumer.html#accept(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/IntConsumer.html#accept(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public virtual void Accept(int arg0)
@@ -94,7 +94,7 @@ namespace Java.Util.Function
             
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/IntConsumer.html#andThen(java.util.function.IntConsumer)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/IntConsumer.html#andThen(java.util.function.IntConsumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.IntConsumer"/></param>
         /// <returns><see cref="Java.Util.Function.IntConsumer"/></returns>
@@ -105,10 +105,10 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/IntConsumer.html#andThen(java.util.function.IntConsumer)"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/IntConsumer.html#andThen(java.util.function.IntConsumer)"/>
         /// </summary>
         /// <remarks>If <see cref="OnAndThen"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.IntConsumer, Java.Util.Function.IntConsumer> OnAndThen { get; set; } = null;
+        public global::System.Func<Java.Util.Function.IntConsumer, Java.Util.Function.IntConsumer> OnAndThen { get; set; } = null;
 
         void AndThenEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.IntConsumer>> data)
         {
@@ -118,7 +118,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/IntConsumer.html#andThen(java.util.function.IntConsumer)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/IntConsumer.html#andThen(java.util.function.IntConsumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.IntConsumer"/></param>
         /// <returns><see cref="Java.Util.Function.IntConsumer"/></returns>
@@ -159,7 +159,7 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/IntConsumer.html#accept(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/IntConsumer.html#accept(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public override void Accept(int arg0)
@@ -167,7 +167,7 @@ namespace Java.Util.Function
             IExecuteWithSignature("accept", "(I)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/IntConsumer.html#andThen(java.util.function.IntConsumer)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/IntConsumer.html#andThen(java.util.function.IntConsumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.IntConsumer"/></param>
         /// <returns><see cref="Java.Util.Function.IntConsumer"/></returns>

@@ -56,18 +56,20 @@ namespace Android.View.Inputmethod
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InsertModeGesture.html#getCancellationSignal()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InsertModeGesture.html#getInsertionPoint()"/>
         /// </summary>
-        public Android.Os.CancellationSignal CancellationSignal
+        /// <returns><see cref="Android.Graphics.PointF"/></returns>
+        public Android.Graphics.PointF GetInsertionPoint()
         {
-            get { return IExecuteWithSignature<Android.Os.CancellationSignal>("getCancellationSignal", "()Landroid/os/CancellationSignal;"); }
+            return IExecuteWithSignature<Android.Graphics.PointF>("getInsertionPoint", "()Landroid/graphics/PointF;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InsertModeGesture.html#getInsertionPoint()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InsertModeGesture.html#getCancellationSignal()"/>
         /// </summary>
-        public Android.Graphics.PointF InsertionPoint
+        /// <returns><see cref="Android.Os.CancellationSignal"/></returns>
+        public Android.Os.CancellationSignal GetCancellationSignal()
         {
-            get { return IExecuteWithSignature<Android.Graphics.PointF>("getInsertionPoint", "()Landroid/graphics/PointF;"); }
+            return IExecuteWithSignature<Android.Os.CancellationSignal>("getCancellationSignal", "()Landroid/os/CancellationSignal;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InsertModeGesture.html#describeContents()"/>

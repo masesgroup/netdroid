@@ -55,18 +55,20 @@ namespace Android.Media
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/TimedMetaData.html#getMetaData()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/TimedMetaData.html#getMetaData()"/>
         /// </summary>
-        public byte[] MetaData
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetMetaData()
         {
-            get { return IExecuteWithSignatureArray<byte>("getMetaData", "()[B"); }
+            return IExecuteWithSignatureArray<byte>("getMetaData", "()[B");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/TimedMetaData.html#getTimestamp()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/TimedMetaData.html#getTimestamp()"/>
         /// </summary>
-        public long Timestamp
+        /// <returns><see cref="long"/></returns>
+        public long GetTimestamp()
         {
-            get { return IExecuteWithSignature<long>("getTimestamp", "()J"); }
+            return IExecuteWithSignature<long>("getTimestamp", "()J");
         }
 
         #endregion

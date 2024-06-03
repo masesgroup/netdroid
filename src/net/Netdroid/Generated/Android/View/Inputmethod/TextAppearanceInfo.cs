@@ -52,137 +52,12 @@ namespace Android.View.Inputmethod
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextAppearanceInfo.html#getFontFeatureSettings()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextAppearanceInfo.html#getTextLocales()"/>
         /// </summary>
-        public Java.Lang.String FontFeatureSettings
+        /// <returns><see cref="Android.Os.LocaleList"/></returns>
+        public Android.Os.LocaleList GetTextLocales()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getFontFeatureSettings", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextAppearanceInfo.html#getFontVariationSettings()"/> 
-        /// </summary>
-        public Java.Lang.String FontVariationSettings
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getFontVariationSettings", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextAppearanceInfo.html#getHighlightTextColor()"/> 
-        /// </summary>
-        public int HighlightTextColor
-        {
-            get { return IExecuteWithSignature<int>("getHighlightTextColor", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextAppearanceInfo.html#getHintTextColor()"/> 
-        /// </summary>
-        public int HintTextColor
-        {
-            get { return IExecuteWithSignature<int>("getHintTextColor", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextAppearanceInfo.html#getLetterSpacing()"/> 
-        /// </summary>
-        public float LetterSpacing
-        {
-            get { return IExecuteWithSignature<float>("getLetterSpacing", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextAppearanceInfo.html#getLineBreakStyle()"/> 
-        /// </summary>
-        public int LineBreakStyle
-        {
-            get { return IExecuteWithSignature<int>("getLineBreakStyle", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextAppearanceInfo.html#getLineBreakWordStyle()"/> 
-        /// </summary>
-        public int LineBreakWordStyle
-        {
-            get { return IExecuteWithSignature<int>("getLineBreakWordStyle", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextAppearanceInfo.html#getLinkTextColor()"/> 
-        /// </summary>
-        public int LinkTextColor
-        {
-            get { return IExecuteWithSignature<int>("getLinkTextColor", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextAppearanceInfo.html#getShadowColor()"/> 
-        /// </summary>
-        public int ShadowColor
-        {
-            get { return IExecuteWithSignature<int>("getShadowColor", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextAppearanceInfo.html#getShadowDx()"/> 
-        /// </summary>
-        public float ShadowDx
-        {
-            get { return IExecuteWithSignature<float>("getShadowDx", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextAppearanceInfo.html#getShadowDy()"/> 
-        /// </summary>
-        public float ShadowDy
-        {
-            get { return IExecuteWithSignature<float>("getShadowDy", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextAppearanceInfo.html#getShadowRadius()"/> 
-        /// </summary>
-        public float ShadowRadius
-        {
-            get { return IExecuteWithSignature<float>("getShadowRadius", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextAppearanceInfo.html#getSystemFontFamilyName()"/> 
-        /// </summary>
-        public Java.Lang.String SystemFontFamilyName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSystemFontFamilyName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextAppearanceInfo.html#getTextColor()"/> 
-        /// </summary>
-        public int TextColor
-        {
-            get { return IExecuteWithSignature<int>("getTextColor", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextAppearanceInfo.html#getTextFontWeight()"/> 
-        /// </summary>
-        public int TextFontWeight
-        {
-            get { return IExecuteWithSignature<int>("getTextFontWeight", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextAppearanceInfo.html#getTextLocales()"/> 
-        /// </summary>
-        public Android.Os.LocaleList TextLocales
-        {
-            get { return IExecuteWithSignature<Android.Os.LocaleList>("getTextLocales", "()Landroid/os/LocaleList;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextAppearanceInfo.html#getTextScaleX()"/> 
-        /// </summary>
-        public float TextScaleX
-        {
-            get { return IExecuteWithSignature<float>("getTextScaleX", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextAppearanceInfo.html#getTextSize()"/> 
-        /// </summary>
-        public float TextSize
-        {
-            get { return IExecuteWithSignature<float>("getTextSize", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextAppearanceInfo.html#getTextStyle()"/> 
-        /// </summary>
-        public int TextStyle
-        {
-            get { return IExecuteWithSignature<int>("getTextStyle", "()I"); }
+            return IExecuteWithSignature<Android.Os.LocaleList>("getTextLocales", "()Landroid/os/LocaleList;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextAppearanceInfo.html#isAllCaps()"/>
@@ -209,12 +84,156 @@ namespace Android.View.Inputmethod
             return IExecuteWithSignature<bool>("isFallbackLineSpacing", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextAppearanceInfo.html#getLetterSpacing()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetLetterSpacing()
+        {
+            return IExecuteWithSignature<float>("getLetterSpacing", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextAppearanceInfo.html#getShadowDx()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetShadowDx()
+        {
+            return IExecuteWithSignature<float>("getShadowDx", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextAppearanceInfo.html#getShadowDy()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetShadowDy()
+        {
+            return IExecuteWithSignature<float>("getShadowDy", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextAppearanceInfo.html#getShadowRadius()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetShadowRadius()
+        {
+            return IExecuteWithSignature<float>("getShadowRadius", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextAppearanceInfo.html#getTextScaleX()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetTextScaleX()
+        {
+            return IExecuteWithSignature<float>("getTextScaleX", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextAppearanceInfo.html#getTextSize()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetTextSize()
+        {
+            return IExecuteWithSignature<float>("getTextSize", "()F");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextAppearanceInfo.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextAppearanceInfo.html#getHighlightTextColor()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetHighlightTextColor()
+        {
+            return IExecuteWithSignature<int>("getHighlightTextColor", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextAppearanceInfo.html#getHintTextColor()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetHintTextColor()
+        {
+            return IExecuteWithSignature<int>("getHintTextColor", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextAppearanceInfo.html#getLineBreakStyle()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetLineBreakStyle()
+        {
+            return IExecuteWithSignature<int>("getLineBreakStyle", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextAppearanceInfo.html#getLineBreakWordStyle()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetLineBreakWordStyle()
+        {
+            return IExecuteWithSignature<int>("getLineBreakWordStyle", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextAppearanceInfo.html#getLinkTextColor()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetLinkTextColor()
+        {
+            return IExecuteWithSignature<int>("getLinkTextColor", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextAppearanceInfo.html#getShadowColor()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetShadowColor()
+        {
+            return IExecuteWithSignature<int>("getShadowColor", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextAppearanceInfo.html#getTextColor()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTextColor()
+        {
+            return IExecuteWithSignature<int>("getTextColor", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextAppearanceInfo.html#getTextFontWeight()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTextFontWeight()
+        {
+            return IExecuteWithSignature<int>("getTextFontWeight", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextAppearanceInfo.html#getTextStyle()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTextStyle()
+        {
+            return IExecuteWithSignature<int>("getTextStyle", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextAppearanceInfo.html#getFontFeatureSettings()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetFontFeatureSettings()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getFontFeatureSettings", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextAppearanceInfo.html#getFontVariationSettings()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetFontVariationSettings()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getFontVariationSettings", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextAppearanceInfo.html#getSystemFontFamilyName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSystemFontFamilyName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getSystemFontFamilyName", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/TextAppearanceInfo.html#writeToParcel(android.os.Parcel,int)"/>

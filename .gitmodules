@@ -1,0 +1,3 @@
+[submodule "3rdparty/JNet"]
+	path = 3rdparty/JNet
+	url = https://github.com/masesgroup/JNet

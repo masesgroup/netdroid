@@ -72,53 +72,12 @@ namespace Android.Net.Wifi.P2p
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pGroup.html#getClientList()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pGroup.html#getOwner()"/>
         /// </summary>
-        public Java.Util.Collection<Android.Net.Wifi.P2p.WifiP2pDevice> ClientList
+        /// <returns><see cref="Android.Net.Wifi.P2p.WifiP2pDevice"/></returns>
+        public Android.Net.Wifi.P2p.WifiP2pDevice GetOwner()
         {
-            get { return IExecuteWithSignature<Java.Util.Collection<Android.Net.Wifi.P2p.WifiP2pDevice>>("getClientList", "()Ljava/util/Collection;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pGroup.html#getFrequency()"/> 
-        /// </summary>
-        public int Frequency
-        {
-            get { return IExecuteWithSignature<int>("getFrequency", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pGroup.html#getInterface()"/> 
-        /// </summary>
-        public Java.Lang.String Interface
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getInterface", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pGroup.html#getNetworkId()"/> 
-        /// </summary>
-        public int NetworkId
-        {
-            get { return IExecuteWithSignature<int>("getNetworkId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pGroup.html#getNetworkName()"/> 
-        /// </summary>
-        public Java.Lang.String NetworkName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getNetworkName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pGroup.html#getOwner()"/> 
-        /// </summary>
-        public Android.Net.Wifi.P2p.WifiP2pDevice Owner
-        {
-            get { return IExecuteWithSignature<Android.Net.Wifi.P2p.WifiP2pDevice>("getOwner", "()Landroid/net/wifi/p2p/WifiP2pDevice;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pGroup.html#getPassphrase()"/> 
-        /// </summary>
-        public Java.Lang.String Passphrase
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPassphrase", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Android.Net.Wifi.P2p.WifiP2pDevice>("getOwner", "()Landroid/net/wifi/p2p/WifiP2pDevice;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pGroup.html#isGroupOwner()"/>
@@ -135,6 +94,54 @@ namespace Android.Net.Wifi.P2p
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pGroup.html#getFrequency()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetFrequency()
+        {
+            return IExecuteWithSignature<int>("getFrequency", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pGroup.html#getNetworkId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetNetworkId()
+        {
+            return IExecuteWithSignature<int>("getNetworkId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pGroup.html#getInterface()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetInterface()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getInterface", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pGroup.html#getNetworkName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetNetworkName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getNetworkName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pGroup.html#getPassphrase()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPassphrase()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPassphrase", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pGroup.html#getClientList()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Collection"/></returns>
+        public Java.Util.Collection<Android.Net.Wifi.P2p.WifiP2pDevice> GetClientList()
+        {
+            return IExecuteWithSignature<Java.Util.Collection<Android.Net.Wifi.P2p.WifiP2pDevice>>("getClientList", "()Ljava/util/Collection;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pGroup.html#writeToParcel(android.os.Parcel,int)"/>

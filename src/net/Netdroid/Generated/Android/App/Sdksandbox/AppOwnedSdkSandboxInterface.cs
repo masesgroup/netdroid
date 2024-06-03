@@ -62,25 +62,12 @@ namespace Android.App.Sdksandbox
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/sdksandbox/AppOwnedSdkSandboxInterface.html#getInterface()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/sdksandbox/AppOwnedSdkSandboxInterface.html#getInterface()"/>
         /// </summary>
-        public Android.Os.IBinder Interface
+        /// <returns><see cref="Android.Os.IBinder"/></returns>
+        public Android.Os.IBinder GetInterface()
         {
-            get { return IExecuteWithSignature<Android.Os.IBinder>("getInterface", "()Landroid/os/IBinder;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/sdksandbox/AppOwnedSdkSandboxInterface.html#getName()"/> 
-        /// </summary>
-        public Java.Lang.String Name
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/sdksandbox/AppOwnedSdkSandboxInterface.html#getVersion()"/> 
-        /// </summary>
-        public long Version
-        {
-            get { return IExecuteWithSignature<long>("getVersion", "()J"); }
+            return IExecuteWithSignature<Android.Os.IBinder>("getInterface", "()Landroid/os/IBinder;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/sdksandbox/AppOwnedSdkSandboxInterface.html#describeContents()"/>
@@ -89,6 +76,22 @@ namespace Android.App.Sdksandbox
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/sdksandbox/AppOwnedSdkSandboxInterface.html#getName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/sdksandbox/AppOwnedSdkSandboxInterface.html#getVersion()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetVersion()
+        {
+            return IExecuteWithSignature<long>("getVersion", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/sdksandbox/AppOwnedSdkSandboxInterface.html#writeToParcel(android.os.Parcel,int)"/>

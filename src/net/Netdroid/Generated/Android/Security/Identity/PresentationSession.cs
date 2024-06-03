@@ -46,13 +46,6 @@ namespace Android.Security.Identity
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/security/identity/PresentationSession.html#getEphemeralKeyPair()"/> 
-        /// </summary>
-        public Java.Security.KeyPair EphemeralKeyPair
-        {
-            get { return IExecuteWithSignature<Java.Security.KeyPair>("getEphemeralKeyPair", "()Ljava/security/KeyPair;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/security/identity/PresentationSession.html#getCredentialData(java.lang.String,android.security.identity.CredentialDataRequest)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -65,6 +58,14 @@ namespace Android.Security.Identity
         public Android.Security.Identity.CredentialDataResult GetCredentialData(Java.Lang.String arg0, Android.Security.Identity.CredentialDataRequest arg1)
         {
             return IExecute<Android.Security.Identity.CredentialDataResult>("getCredentialData", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/security/identity/PresentationSession.html#getEphemeralKeyPair()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Security.KeyPair"/></returns>
+        public Java.Security.KeyPair GetEphemeralKeyPair()
+        {
+            return IExecuteWithSignature<Java.Security.KeyPair>("getEphemeralKeyPair", "()Ljava/security/KeyPair;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/security/identity/PresentationSession.html#setReaderEphemeralPublicKey(java.security.PublicKey)"/>

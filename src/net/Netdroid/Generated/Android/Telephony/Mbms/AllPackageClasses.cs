@@ -30,38 +30,24 @@ namespace Android.Telephony.Mbms
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/telephony/mbms/DownloadProgressListener.html"/>
     /// </summary>
-    public partial class DownloadProgressListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class DownloadProgressListener : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DownloadProgressListener>
     {
+        const string _bridgeClassName = "android.telephony.mbms.DownloadProgressListener";
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public DownloadProgressListener() { InitializeHandlers(); }
-
-    #warning Remember to build the Java class for event listener
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region DownloadProgressListenerDirect
-    /// <summary>
-    /// Direct override of <see cref="DownloadProgressListener"/> or its generic type if there is one
-    /// </summary>
-    public partial class DownloadProgressListenerDirect : DownloadProgressListener
-    {
+        public DownloadProgressListener() { }
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public override bool AutoInit => false;
+        public DownloadProgressListener(params object[] args) : base(args) { }
 
-        /// <inheritdoc />
-        protected override void InitializeHandlers() { }
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
 
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "android.telephony.mbms.DownloadProgressListener";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -78,6 +64,9 @@ namespace Android.Telephony.Mbms
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
+
+        // TODO: complete the class
+
     }
     #endregion
 
@@ -173,38 +162,24 @@ namespace Android.Telephony.Mbms
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/telephony/mbms/DownloadStatusListener.html"/>
     /// </summary>
-    public partial class DownloadStatusListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class DownloadStatusListener : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DownloadStatusListener>
     {
+        const string _bridgeClassName = "android.telephony.mbms.DownloadStatusListener";
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public DownloadStatusListener() { InitializeHandlers(); }
-
-    #warning Remember to build the Java class for event listener
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region DownloadStatusListenerDirect
-    /// <summary>
-    /// Direct override of <see cref="DownloadStatusListener"/> or its generic type if there is one
-    /// </summary>
-    public partial class DownloadStatusListenerDirect : DownloadStatusListener
-    {
+        public DownloadStatusListener() { }
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public override bool AutoInit => false;
+        public DownloadStatusListener(params object[] args) : base(args) { }
 
-        /// <inheritdoc />
-        protected override void InitializeHandlers() { }
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
 
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "android.telephony.mbms.DownloadStatusListener";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -221,6 +196,9 @@ namespace Android.Telephony.Mbms
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
+
+        // TODO: complete the class
+
     }
     #endregion
 
@@ -366,12 +344,12 @@ namespace Android.Telephony.Mbms
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("GroupCallCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("GroupCallCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public GroupCallCallback() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("GroupCallCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("GroupCallCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public GroupCallCallback(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -764,12 +742,12 @@ namespace Android.Telephony.Mbms
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("MbmsGroupCallSessionCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("MbmsGroupCallSessionCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public MbmsGroupCallSessionCallback() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("MbmsGroupCallSessionCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("MbmsGroupCallSessionCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public MbmsGroupCallSessionCallback(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);

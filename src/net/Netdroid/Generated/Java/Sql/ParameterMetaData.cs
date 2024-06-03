@@ -56,43 +56,43 @@ namespace Java.Sql
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/ParameterMetaData.html#parameterModeIn"/>
+        /// <see href="https://developer.android.com/reference/java/sql/ParameterMetaData.html#parameterModeIn"/>
         /// </summary>
         public static int parameterModeIn { get { if (!_parameterModeInReady) { _parameterModeInContent = SGetField<int>(LocalBridgeClazz, "parameterModeIn"); _parameterModeInReady = true; } return _parameterModeInContent; } }
         private static int _parameterModeInContent = default;
         private static bool _parameterModeInReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/ParameterMetaData.html#parameterModeInOut"/>
+        /// <see href="https://developer.android.com/reference/java/sql/ParameterMetaData.html#parameterModeInOut"/>
         /// </summary>
         public static int parameterModeInOut { get { if (!_parameterModeInOutReady) { _parameterModeInOutContent = SGetField<int>(LocalBridgeClazz, "parameterModeInOut"); _parameterModeInOutReady = true; } return _parameterModeInOutContent; } }
         private static int _parameterModeInOutContent = default;
         private static bool _parameterModeInOutReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/ParameterMetaData.html#parameterModeOut"/>
+        /// <see href="https://developer.android.com/reference/java/sql/ParameterMetaData.html#parameterModeOut"/>
         /// </summary>
         public static int parameterModeOut { get { if (!_parameterModeOutReady) { _parameterModeOutContent = SGetField<int>(LocalBridgeClazz, "parameterModeOut"); _parameterModeOutReady = true; } return _parameterModeOutContent; } }
         private static int _parameterModeOutContent = default;
         private static bool _parameterModeOutReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/ParameterMetaData.html#parameterModeUnknown"/>
+        /// <see href="https://developer.android.com/reference/java/sql/ParameterMetaData.html#parameterModeUnknown"/>
         /// </summary>
         public static int parameterModeUnknown { get { if (!_parameterModeUnknownReady) { _parameterModeUnknownContent = SGetField<int>(LocalBridgeClazz, "parameterModeUnknown"); _parameterModeUnknownReady = true; } return _parameterModeUnknownContent; } }
         private static int _parameterModeUnknownContent = default;
         private static bool _parameterModeUnknownReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/ParameterMetaData.html#parameterNoNulls"/>
+        /// <see href="https://developer.android.com/reference/java/sql/ParameterMetaData.html#parameterNoNulls"/>
         /// </summary>
         public static int parameterNoNulls { get { if (!_parameterNoNullsReady) { _parameterNoNullsContent = SGetField<int>(LocalBridgeClazz, "parameterNoNulls"); _parameterNoNullsReady = true; } return _parameterNoNullsContent; } }
         private static int _parameterNoNullsContent = default;
         private static bool _parameterNoNullsReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/ParameterMetaData.html#parameterNullable"/>
+        /// <see href="https://developer.android.com/reference/java/sql/ParameterMetaData.html#parameterNullable"/>
         /// </summary>
         public static int parameterNullable { get { if (!_parameterNullableReady) { _parameterNullableContent = SGetField<int>(LocalBridgeClazz, "parameterNullable"); _parameterNullableReady = true; } return _parameterNullableContent; } }
         private static int _parameterNullableContent = default;
         private static bool _parameterNullableReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/ParameterMetaData.html#parameterNullableUnknown"/>
+        /// <see href="https://developer.android.com/reference/java/sql/ParameterMetaData.html#parameterNullableUnknown"/>
         /// </summary>
         public static int parameterNullableUnknown { get { if (!_parameterNullableUnknownReady) { _parameterNullableUnknownContent = SGetField<int>(LocalBridgeClazz, "parameterNullableUnknown"); _parameterNullableUnknownReady = true; } return _parameterNullableUnknownContent; } }
         private static int _parameterNullableUnknownContent = default;
@@ -106,14 +106,7 @@ namespace Java.Sql
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/ParameterMetaData.html#getParameterCount()"/> 
-        /// </summary>
-        public int ParameterCount
-        {
-            get { return IExecuteWithSignature<int>("getParameterCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/ParameterMetaData.html#isSigned(int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/ParameterMetaData.html#isSigned(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -123,7 +116,16 @@ namespace Java.Sql
             return IExecuteWithSignature<bool>("isSigned", "(I)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/ParameterMetaData.html#getParameterMode(int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/ParameterMetaData.html#getParameterCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public int GetParameterCount()
+        {
+            return IExecuteWithSignature<int>("getParameterCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/sql/ParameterMetaData.html#getParameterMode(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
@@ -133,7 +135,7 @@ namespace Java.Sql
             return IExecuteWithSignature<int>("getParameterMode", "(I)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/ParameterMetaData.html#getParameterType(int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/ParameterMetaData.html#getParameterType(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
@@ -143,7 +145,7 @@ namespace Java.Sql
             return IExecuteWithSignature<int>("getParameterType", "(I)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/ParameterMetaData.html#getPrecision(int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/ParameterMetaData.html#getPrecision(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
@@ -153,7 +155,7 @@ namespace Java.Sql
             return IExecuteWithSignature<int>("getPrecision", "(I)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/ParameterMetaData.html#getScale(int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/ParameterMetaData.html#getScale(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
@@ -163,7 +165,7 @@ namespace Java.Sql
             return IExecuteWithSignature<int>("getScale", "(I)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/ParameterMetaData.html#isNullable(int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/ParameterMetaData.html#isNullable(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
@@ -173,7 +175,7 @@ namespace Java.Sql
             return IExecuteWithSignature<int>("isNullable", "(I)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/ParameterMetaData.html#getParameterClassName(int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/ParameterMetaData.html#getParameterClassName(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -183,7 +185,7 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Lang.String>("getParameterClassName", "(I)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/ParameterMetaData.html#getParameterTypeName(int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/ParameterMetaData.html#getParameterTypeName(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>

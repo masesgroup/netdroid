@@ -30,7 +30,7 @@ namespace Org.Xml.Sax.Helpers
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/AttributeListImpl.html#%3Cinit%3E(org.xml.sax.AttributeList)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/AttributeListImpl.html#%3Cinit%3E(org.xml.sax.AttributeList)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.Xml.Sax.AttributeList"/></param>
         public AttributeListImpl(Org.Xml.Sax.AttributeList arg0)
@@ -54,14 +54,15 @@ namespace Org.Xml.Sax.Helpers
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/AttributeListImpl.html#getLength()"/> 
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/AttributeListImpl.html#getLength()"/>
         /// </summary>
-        public int Length
+        /// <returns><see cref="int"/></returns>
+        public int GetLength()
         {
-            get { return IExecuteWithSignature<int>("getLength", "()I"); }
+            return IExecuteWithSignature<int>("getLength", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/AttributeListImpl.html#getName(int)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/AttributeListImpl.html#getName(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -70,7 +71,7 @@ namespace Org.Xml.Sax.Helpers
             return IExecuteWithSignature<Java.Lang.String>("getName", "(I)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/AttributeListImpl.html#getType(int)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/AttributeListImpl.html#getType(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -79,7 +80,7 @@ namespace Org.Xml.Sax.Helpers
             return IExecuteWithSignature<Java.Lang.String>("getType", "(I)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/AttributeListImpl.html#getType(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/AttributeListImpl.html#getType(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -88,7 +89,7 @@ namespace Org.Xml.Sax.Helpers
             return IExecuteWithSignature<Java.Lang.String>("getType", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/AttributeListImpl.html#getValue(int)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/AttributeListImpl.html#getValue(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -97,7 +98,7 @@ namespace Org.Xml.Sax.Helpers
             return IExecuteWithSignature<Java.Lang.String>("getValue", "(I)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/AttributeListImpl.html#getValue(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/AttributeListImpl.html#getValue(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -106,7 +107,7 @@ namespace Org.Xml.Sax.Helpers
             return IExecuteWithSignature<Java.Lang.String>("getValue", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/AttributeListImpl.html#addAttribute(java.lang.String,java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/AttributeListImpl.html#addAttribute(java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -116,14 +117,14 @@ namespace Org.Xml.Sax.Helpers
             IExecute("addAttribute", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/AttributeListImpl.html#clear()"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/AttributeListImpl.html#clear()"/>
         /// </summary>
         public void Clear()
         {
             IExecuteWithSignature("clear", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/AttributeListImpl.html#removeAttribute(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/AttributeListImpl.html#removeAttribute(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void RemoveAttribute(Java.Lang.String arg0)
@@ -131,7 +132,7 @@ namespace Org.Xml.Sax.Helpers
             IExecuteWithSignature("removeAttribute", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/AttributeListImpl.html#setAttributeList(org.xml.sax.AttributeList)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/AttributeListImpl.html#setAttributeList(org.xml.sax.AttributeList)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.Xml.Sax.AttributeList"/></param>
         public void SetAttributeList(Org.Xml.Sax.AttributeList arg0)

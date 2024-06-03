@@ -74,20 +74,6 @@ namespace Android.Icu.Text
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/DateIntervalInfo.html#getDefaultOrder()"/> 
-        /// </summary>
-        public bool DefaultOrder
-        {
-            get { return IExecuteWithSignature<bool>("getDefaultOrder", "()Z"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/DateIntervalInfo.html#getFallbackIntervalPattern()"/> <see href="https://developer.android.com/reference/android/icu/text/DateIntervalInfo.html#setFallbackIntervalPattern(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String FallbackIntervalPattern
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getFallbackIntervalPattern", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setFallbackIntervalPattern", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DateIntervalInfo.html#getIntervalPattern(java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -96,6 +82,14 @@ namespace Android.Icu.Text
         public Android.Icu.Text.DateIntervalInfo.PatternInfo GetIntervalPattern(Java.Lang.String arg0, int arg1)
         {
             return IExecute<Android.Icu.Text.DateIntervalInfo.PatternInfo>("getIntervalPattern", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/DateIntervalInfo.html#getDefaultOrder()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetDefaultOrder()
+        {
+            return IExecuteWithSignature<bool>("getDefaultOrder", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DateIntervalInfo.html#isFrozen()"/>
@@ -120,6 +114,22 @@ namespace Android.Icu.Text
         public object Freeze()
         {
             return IExecuteWithSignature("freeze", "()Ljava/lang/Object;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/DateIntervalInfo.html#getFallbackIntervalPattern()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetFallbackIntervalPattern()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getFallbackIntervalPattern", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/DateIntervalInfo.html#setFallbackIntervalPattern(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetFallbackIntervalPattern(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setFallbackIntervalPattern", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DateIntervalInfo.html#setIntervalPattern(java.lang.String,int,java.lang.String)"/>
@@ -174,26 +184,28 @@ namespace Android.Icu.Text
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/icu/text/DateIntervalInfo.PatternInfo.html#getFirstPart()"/> 
-            /// </summary>
-            public Java.Lang.String FirstPart
-            {
-                get { return IExecuteWithSignature<Java.Lang.String>("getFirstPart", "()Ljava/lang/String;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/icu/text/DateIntervalInfo.PatternInfo.html#getSecondPart()"/> 
-            /// </summary>
-            public Java.Lang.String SecondPart
-            {
-                get { return IExecuteWithSignature<Java.Lang.String>("getSecondPart", "()Ljava/lang/String;"); }
-            }
-            /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/DateIntervalInfo.PatternInfo.html#firstDateInPtnIsLaterDate()"/>
             /// </summary>
             /// <returns><see cref="bool"/></returns>
             public bool FirstDateInPtnIsLaterDate()
             {
                 return IExecuteWithSignature<bool>("firstDateInPtnIsLaterDate", "()Z");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/icu/text/DateIntervalInfo.PatternInfo.html#getFirstPart()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetFirstPart()
+            {
+                return IExecuteWithSignature<Java.Lang.String>("getFirstPart", "()Ljava/lang/String;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/icu/text/DateIntervalInfo.PatternInfo.html#getSecondPart()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetSecondPart()
+            {
+                return IExecuteWithSignature<Java.Lang.String>("getSecondPart", "()Ljava/lang/String;");
             }
 
             #endregion

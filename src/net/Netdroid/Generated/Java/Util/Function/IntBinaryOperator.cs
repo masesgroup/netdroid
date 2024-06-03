@@ -27,7 +27,7 @@ namespace Java.Util.Function
 {
     #region IIntBinaryOperator
     /// <summary>
-    /// .NET interface for org.mases.netdroid.generated.java.util.function.IntBinaryOperator implementing <see href="https://developer.android.com/reference/java.base/java/util/function/IntBinaryOperator.html"/>
+    /// .NET interface for org.mases.netdroid.generated.java.util.function.IntBinaryOperator implementing <see href="https://developer.android.com/reference/java/util/function/IntBinaryOperator.html"/>
     /// </summary>
     public partial interface IIntBinaryOperator
     {
@@ -68,15 +68,15 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("applyAsInt", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(ApplyAsIntEventHandler));
+            AddEventHandler("applyAsInt", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(ApplyAsIntEventHandler));
 
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/IntBinaryOperator.html#applyAsInt(int,int)"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/IntBinaryOperator.html#applyAsInt(int,int)"/>
         /// </summary>
         /// <remarks>If <see cref="OnApplyAsInt"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<int, int, int> OnApplyAsInt { get; set; } = null;
+        public global::System.Func<int, int, int> OnApplyAsInt { get; set; } = null;
 
         void ApplyAsIntEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
         {
@@ -86,7 +86,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/IntBinaryOperator.html#applyAsInt(int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/IntBinaryOperator.html#applyAsInt(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -127,7 +127,7 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/IntBinaryOperator.html#applyAsInt(int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/IntBinaryOperator.html#applyAsInt(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>

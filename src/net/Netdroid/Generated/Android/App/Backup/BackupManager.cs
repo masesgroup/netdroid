@@ -75,7 +75,7 @@ namespace Android.App.Backup
         /// </summary>
         /// <param name="arg0"><see cref="Android.App.Backup.RestoreObserver"/></param>
         /// <returns><see cref="int"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int RequestRestore(Android.App.Backup.RestoreObserver arg0)
         {
             return IExecuteWithSignature<int>("requestRestore", "(Landroid/app/backup/RestoreObserver;)I", arg0);

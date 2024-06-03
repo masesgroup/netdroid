@@ -29,6 +29,15 @@ namespace Android.Telephony
     public partial class PhoneStateListener
     {
         #region Constructors
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#%3Cinit%3E(java.util.concurrent.Executor)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>
+        [global::System.Obsolete()]
+        public PhoneStateListener(Java.Util.Concurrent.Executor arg0)
+            : base(arg0)
+        {
+        }
 
         #endregion
 
@@ -37,511 +46,146 @@ namespace Android.Telephony
         #endregion
 
         #region Fields
-
-        #endregion
-
-        #region Static methods
-
-        #endregion
-
-        #region Instance methods
         /// <summary>
-        /// Handlers initializer for <see cref="PhoneStateListener"/>
+        /// <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#LISTEN_ACTIVE_DATA_SUBSCRIPTION_ID_CHANGE"/>
         /// </summary>
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("onActiveDataSubscriptionIdChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnActiveDataSubscriptionIdChangedEventHandler));
-            AddEventHandler("onBarringInfoChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Telephony.BarringInfo>>>(OnBarringInfoChangedEventHandler));
-            AddEventHandler("onCallDisconnectCauseChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnCallDisconnectCauseChangedEventHandler));
-            AddEventHandler("onCallForwardingIndicatorChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<bool>>>(OnCallForwardingIndicatorChangedEventHandler));
-            AddEventHandler("onCallStateChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnCallStateChangedEventHandler));
-            AddEventHandler("onCellInfoChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.List<Android.Telephony.CellInfo>>>>(OnCellInfoChangedEventHandler));
-            AddEventHandler("onCellLocationChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Telephony.CellLocation>>>(OnCellLocationChangedEventHandler));
-            AddEventHandler("onDataActivity", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnDataActivityEventHandler));
-            AddEventHandler("onDataConnectionStateChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnDataConnectionStateChangedEventHandler));
-            AddEventHandler("onDataConnectionStateChanged1", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnDataConnectionStateChanged1EventHandler));
-            AddEventHandler("onDisplayInfoChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Telephony.TelephonyDisplayInfo>>>(OnDisplayInfoChangedEventHandler));
-            AddEventHandler("onEmergencyNumberListChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Map<Java.Lang.Integer, Java.Util.List<Android.Telephony.Emergency.EmergencyNumber>>>>>(OnEmergencyNumberListChangedEventHandler));
-            AddEventHandler("onImsCallDisconnectCauseChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Telephony.Ims.ImsReasonInfo>>>(OnImsCallDisconnectCauseChangedEventHandler));
-            AddEventHandler("onMessageWaitingIndicatorChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<bool>>>(OnMessageWaitingIndicatorChangedEventHandler));
-            AddEventHandler("onPreciseDataConnectionStateChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Telephony.PreciseDataConnectionState>>>(OnPreciseDataConnectionStateChangedEventHandler));
-            AddEventHandler("onRegistrationFailed", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Telephony.CellIdentity>>>(OnRegistrationFailedEventHandler));
-            AddEventHandler("onServiceStateChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Telephony.ServiceState>>>(OnServiceStateChangedEventHandler));
-            AddEventHandler("onSignalStrengthChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnSignalStrengthChangedEventHandler));
-            AddEventHandler("onSignalStrengthsChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Telephony.SignalStrength>>>(OnSignalStrengthsChangedEventHandler));
-            AddEventHandler("onUserMobileDataStateChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<bool>>>(OnUserMobileDataStateChangedEventHandler));
-
-        }
-
+        [global::System.Obsolete()]
+        public static int LISTEN_ACTIVE_DATA_SUBSCRIPTION_ID_CHANGE { get { if (!_LISTEN_ACTIVE_DATA_SUBSCRIPTION_ID_CHANGEReady) { _LISTEN_ACTIVE_DATA_SUBSCRIPTION_ID_CHANGEContent = SGetField<int>(LocalBridgeClazz, "LISTEN_ACTIVE_DATA_SUBSCRIPTION_ID_CHANGE"); _LISTEN_ACTIVE_DATA_SUBSCRIPTION_ID_CHANGEReady = true; } return _LISTEN_ACTIVE_DATA_SUBSCRIPTION_ID_CHANGEContent; } }
+        private static int _LISTEN_ACTIVE_DATA_SUBSCRIPTION_ID_CHANGEContent = default;
+        private static bool _LISTEN_ACTIVE_DATA_SUBSCRIPTION_ID_CHANGEReady = false; // this is used because in case of generics 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#onActiveDataSubscriptionIdChanged(int)"/>
+        /// <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#LISTEN_BARRING_INFO"/>
         /// </summary>
-        /// <remarks>If <see cref="OnOnActiveDataSubscriptionIdChanged"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<int> OnOnActiveDataSubscriptionIdChanged { get; set; } = null;
-
-        void OnActiveDataSubscriptionIdChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
-        {
-            var methodToExecute = (OnOnActiveDataSubscriptionIdChanged != null) ? OnOnActiveDataSubscriptionIdChanged : OnActiveDataSubscriptionIdChanged;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
-        }
-
+        [global::System.Obsolete()]
+        public static int LISTEN_BARRING_INFO { get { if (!_LISTEN_BARRING_INFOReady) { _LISTEN_BARRING_INFOContent = SGetField<int>(LocalBridgeClazz, "LISTEN_BARRING_INFO"); _LISTEN_BARRING_INFOReady = true; } return _LISTEN_BARRING_INFOContent; } }
+        private static int _LISTEN_BARRING_INFOContent = default;
+        private static bool _LISTEN_BARRING_INFOReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#onActiveDataSubscriptionIdChanged(int)"/>
+        /// <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#LISTEN_CALL_DISCONNECT_CAUSES"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
-        public virtual void OnActiveDataSubscriptionIdChanged(int arg0)
-        {
-            
-        }
-
+        [global::System.Obsolete()]
+        public static int LISTEN_CALL_DISCONNECT_CAUSES { get { if (!_LISTEN_CALL_DISCONNECT_CAUSESReady) { _LISTEN_CALL_DISCONNECT_CAUSESContent = SGetField<int>(LocalBridgeClazz, "LISTEN_CALL_DISCONNECT_CAUSES"); _LISTEN_CALL_DISCONNECT_CAUSESReady = true; } return _LISTEN_CALL_DISCONNECT_CAUSESContent; } }
+        private static int _LISTEN_CALL_DISCONNECT_CAUSESContent = default;
+        private static bool _LISTEN_CALL_DISCONNECT_CAUSESReady = false; // this is used because in case of generics 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#onBarringInfoChanged(android.telephony.BarringInfo)"/>
+        /// <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#LISTEN_CALL_FORWARDING_INDICATOR"/>
         /// </summary>
-        /// <remarks>If <see cref="OnOnBarringInfoChanged"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Android.Telephony.BarringInfo> OnOnBarringInfoChanged { get; set; } = null;
-
-        void OnBarringInfoChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Telephony.BarringInfo>> data)
-        {
-            var methodToExecute = (OnOnBarringInfoChanged != null) ? OnOnBarringInfoChanged : OnBarringInfoChanged;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
-        }
-
+        [global::System.Obsolete()]
+        public static int LISTEN_CALL_FORWARDING_INDICATOR { get { if (!_LISTEN_CALL_FORWARDING_INDICATORReady) { _LISTEN_CALL_FORWARDING_INDICATORContent = SGetField<int>(LocalBridgeClazz, "LISTEN_CALL_FORWARDING_INDICATOR"); _LISTEN_CALL_FORWARDING_INDICATORReady = true; } return _LISTEN_CALL_FORWARDING_INDICATORContent; } }
+        private static int _LISTEN_CALL_FORWARDING_INDICATORContent = default;
+        private static bool _LISTEN_CALL_FORWARDING_INDICATORReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#onBarringInfoChanged(android.telephony.BarringInfo)"/>
+        /// <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#LISTEN_CALL_STATE"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Android.Telephony.BarringInfo"/></param>
-        [System.Obsolete()]
-        public virtual void OnBarringInfoChanged(Android.Telephony.BarringInfo arg0)
-        {
-            
-        }
-
+        [global::System.Obsolete()]
+        public static int LISTEN_CALL_STATE { get { if (!_LISTEN_CALL_STATEReady) { _LISTEN_CALL_STATEContent = SGetField<int>(LocalBridgeClazz, "LISTEN_CALL_STATE"); _LISTEN_CALL_STATEReady = true; } return _LISTEN_CALL_STATEContent; } }
+        private static int _LISTEN_CALL_STATEContent = default;
+        private static bool _LISTEN_CALL_STATEReady = false; // this is used because in case of generics 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#onCallDisconnectCauseChanged(int,int)"/>
+        /// <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#LISTEN_CELL_INFO"/>
         /// </summary>
-        /// <remarks>If <see cref="OnOnCallDisconnectCauseChanged"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<int, int> OnOnCallDisconnectCauseChanged { get; set; } = null;
-
-        void OnCallDisconnectCauseChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
-        {
-            var methodToExecute = (OnOnCallDisconnectCauseChanged != null) ? OnOnCallDisconnectCauseChanged : OnCallDisconnectCauseChanged;
-            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<int>(0));
-        }
-
+        [global::System.Obsolete()]
+        public static int LISTEN_CELL_INFO { get { if (!_LISTEN_CELL_INFOReady) { _LISTEN_CELL_INFOContent = SGetField<int>(LocalBridgeClazz, "LISTEN_CELL_INFO"); _LISTEN_CELL_INFOReady = true; } return _LISTEN_CELL_INFOContent; } }
+        private static int _LISTEN_CELL_INFOContent = default;
+        private static bool _LISTEN_CELL_INFOReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#onCallDisconnectCauseChanged(int,int)"/>
+        /// <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#LISTEN_CELL_LOCATION"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        [System.Obsolete()]
-        public virtual void OnCallDisconnectCauseChanged(int arg0, int arg1)
-        {
-            
-        }
-
+        [global::System.Obsolete()]
+        public static int LISTEN_CELL_LOCATION { get { if (!_LISTEN_CELL_LOCATIONReady) { _LISTEN_CELL_LOCATIONContent = SGetField<int>(LocalBridgeClazz, "LISTEN_CELL_LOCATION"); _LISTEN_CELL_LOCATIONReady = true; } return _LISTEN_CELL_LOCATIONContent; } }
+        private static int _LISTEN_CELL_LOCATIONContent = default;
+        private static bool _LISTEN_CELL_LOCATIONReady = false; // this is used because in case of generics 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#onCallForwardingIndicatorChanged(boolean)"/>
+        /// <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#LISTEN_DATA_ACTIVITY"/>
         /// </summary>
-        /// <remarks>If <see cref="OnOnCallForwardingIndicatorChanged"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<bool> OnOnCallForwardingIndicatorChanged { get; set; } = null;
-
-        void OnCallForwardingIndicatorChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<bool>> data)
-        {
-            var methodToExecute = (OnOnCallForwardingIndicatorChanged != null) ? OnOnCallForwardingIndicatorChanged : OnCallForwardingIndicatorChanged;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
-        }
-
+        [global::System.Obsolete()]
+        public static int LISTEN_DATA_ACTIVITY { get { if (!_LISTEN_DATA_ACTIVITYReady) { _LISTEN_DATA_ACTIVITYContent = SGetField<int>(LocalBridgeClazz, "LISTEN_DATA_ACTIVITY"); _LISTEN_DATA_ACTIVITYReady = true; } return _LISTEN_DATA_ACTIVITYContent; } }
+        private static int _LISTEN_DATA_ACTIVITYContent = default;
+        private static bool _LISTEN_DATA_ACTIVITYReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#onCallForwardingIndicatorChanged(boolean)"/>
+        /// <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#LISTEN_DATA_CONNECTION_STATE"/>
         /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
-        public virtual void OnCallForwardingIndicatorChanged(bool arg0)
-        {
-            
-        }
-
+        [global::System.Obsolete()]
+        public static int LISTEN_DATA_CONNECTION_STATE { get { if (!_LISTEN_DATA_CONNECTION_STATEReady) { _LISTEN_DATA_CONNECTION_STATEContent = SGetField<int>(LocalBridgeClazz, "LISTEN_DATA_CONNECTION_STATE"); _LISTEN_DATA_CONNECTION_STATEReady = true; } return _LISTEN_DATA_CONNECTION_STATEContent; } }
+        private static int _LISTEN_DATA_CONNECTION_STATEContent = default;
+        private static bool _LISTEN_DATA_CONNECTION_STATEReady = false; // this is used because in case of generics 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#onCallStateChanged(int,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#LISTEN_DISPLAY_INFO_CHANGED"/>
         /// </summary>
-        /// <remarks>If <see cref="OnOnCallStateChanged"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<int, Java.Lang.String> OnOnCallStateChanged { get; set; } = null;
-
-        void OnCallStateChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
-        {
-            var methodToExecute = (OnOnCallStateChanged != null) ? OnOnCallStateChanged : OnCallStateChanged;
-            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Java.Lang.String>(0));
-        }
-
+        [global::System.Obsolete()]
+        public static int LISTEN_DISPLAY_INFO_CHANGED { get { if (!_LISTEN_DISPLAY_INFO_CHANGEDReady) { _LISTEN_DISPLAY_INFO_CHANGEDContent = SGetField<int>(LocalBridgeClazz, "LISTEN_DISPLAY_INFO_CHANGED"); _LISTEN_DISPLAY_INFO_CHANGEDReady = true; } return _LISTEN_DISPLAY_INFO_CHANGEDContent; } }
+        private static int _LISTEN_DISPLAY_INFO_CHANGEDContent = default;
+        private static bool _LISTEN_DISPLAY_INFO_CHANGEDReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#onCallStateChanged(int,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#LISTEN_EMERGENCY_NUMBER_LIST"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        [System.Obsolete()]
-        public virtual void OnCallStateChanged(int arg0, Java.Lang.String arg1)
-        {
-            
-        }
-
+        [global::System.Obsolete()]
+        public static int LISTEN_EMERGENCY_NUMBER_LIST { get { if (!_LISTEN_EMERGENCY_NUMBER_LISTReady) { _LISTEN_EMERGENCY_NUMBER_LISTContent = SGetField<int>(LocalBridgeClazz, "LISTEN_EMERGENCY_NUMBER_LIST"); _LISTEN_EMERGENCY_NUMBER_LISTReady = true; } return _LISTEN_EMERGENCY_NUMBER_LISTContent; } }
+        private static int _LISTEN_EMERGENCY_NUMBER_LISTContent = default;
+        private static bool _LISTEN_EMERGENCY_NUMBER_LISTReady = false; // this is used because in case of generics 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#onCellInfoChanged(java.util.List)"/>
+        /// <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#LISTEN_IMS_CALL_DISCONNECT_CAUSES"/>
         /// </summary>
-        /// <remarks>If <see cref="OnOnCellInfoChanged"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Util.List<Android.Telephony.CellInfo>> OnOnCellInfoChanged { get; set; } = null;
-
-        void OnCellInfoChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.List<Android.Telephony.CellInfo>>> data)
-        {
-            var methodToExecute = (OnOnCellInfoChanged != null) ? OnOnCellInfoChanged : OnCellInfoChanged;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
-        }
-
+        [global::System.Obsolete()]
+        public static int LISTEN_IMS_CALL_DISCONNECT_CAUSES { get { if (!_LISTEN_IMS_CALL_DISCONNECT_CAUSESReady) { _LISTEN_IMS_CALL_DISCONNECT_CAUSESContent = SGetField<int>(LocalBridgeClazz, "LISTEN_IMS_CALL_DISCONNECT_CAUSES"); _LISTEN_IMS_CALL_DISCONNECT_CAUSESReady = true; } return _LISTEN_IMS_CALL_DISCONNECT_CAUSESContent; } }
+        private static int _LISTEN_IMS_CALL_DISCONNECT_CAUSESContent = default;
+        private static bool _LISTEN_IMS_CALL_DISCONNECT_CAUSESReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#onCellInfoChanged(java.util.List)"/>
+        /// <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#LISTEN_MESSAGE_WAITING_INDICATOR"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.List"/></param>
-        [System.Obsolete()]
-        public virtual void OnCellInfoChanged(Java.Util.List<Android.Telephony.CellInfo> arg0)
-        {
-            
-        }
-
+        [global::System.Obsolete()]
+        public static int LISTEN_MESSAGE_WAITING_INDICATOR { get { if (!_LISTEN_MESSAGE_WAITING_INDICATORReady) { _LISTEN_MESSAGE_WAITING_INDICATORContent = SGetField<int>(LocalBridgeClazz, "LISTEN_MESSAGE_WAITING_INDICATOR"); _LISTEN_MESSAGE_WAITING_INDICATORReady = true; } return _LISTEN_MESSAGE_WAITING_INDICATORContent; } }
+        private static int _LISTEN_MESSAGE_WAITING_INDICATORContent = default;
+        private static bool _LISTEN_MESSAGE_WAITING_INDICATORReady = false; // this is used because in case of generics 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#onCellLocationChanged(android.telephony.CellLocation)"/>
+        /// <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#LISTEN_NONE"/>
         /// </summary>
-        /// <remarks>If <see cref="OnOnCellLocationChanged"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Android.Telephony.CellLocation> OnOnCellLocationChanged { get; set; } = null;
-
-        void OnCellLocationChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Telephony.CellLocation>> data)
-        {
-            var methodToExecute = (OnOnCellLocationChanged != null) ? OnOnCellLocationChanged : OnCellLocationChanged;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
-        }
-
+        [global::System.Obsolete()]
+        public static int LISTEN_NONE { get { if (!_LISTEN_NONEReady) { _LISTEN_NONEContent = SGetField<int>(LocalBridgeClazz, "LISTEN_NONE"); _LISTEN_NONEReady = true; } return _LISTEN_NONEContent; } }
+        private static int _LISTEN_NONEContent = default;
+        private static bool _LISTEN_NONEReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#onCellLocationChanged(android.telephony.CellLocation)"/>
+        /// <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#LISTEN_PRECISE_DATA_CONNECTION_STATE"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Android.Telephony.CellLocation"/></param>
-        [System.Obsolete()]
-        public virtual void OnCellLocationChanged(Android.Telephony.CellLocation arg0)
-        {
-            
-        }
-
+        [global::System.Obsolete()]
+        public static int LISTEN_PRECISE_DATA_CONNECTION_STATE { get { if (!_LISTEN_PRECISE_DATA_CONNECTION_STATEReady) { _LISTEN_PRECISE_DATA_CONNECTION_STATEContent = SGetField<int>(LocalBridgeClazz, "LISTEN_PRECISE_DATA_CONNECTION_STATE"); _LISTEN_PRECISE_DATA_CONNECTION_STATEReady = true; } return _LISTEN_PRECISE_DATA_CONNECTION_STATEContent; } }
+        private static int _LISTEN_PRECISE_DATA_CONNECTION_STATEContent = default;
+        private static bool _LISTEN_PRECISE_DATA_CONNECTION_STATEReady = false; // this is used because in case of generics 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#onDataActivity(int)"/>
+        /// <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#LISTEN_REGISTRATION_FAILURE"/>
         /// </summary>
-        /// <remarks>If <see cref="OnOnDataActivity"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<int> OnOnDataActivity { get; set; } = null;
-
-        void OnDataActivityEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
-        {
-            var methodToExecute = (OnOnDataActivity != null) ? OnOnDataActivity : OnDataActivity;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
-        }
-
+        [global::System.Obsolete()]
+        public static int LISTEN_REGISTRATION_FAILURE { get { if (!_LISTEN_REGISTRATION_FAILUREReady) { _LISTEN_REGISTRATION_FAILUREContent = SGetField<int>(LocalBridgeClazz, "LISTEN_REGISTRATION_FAILURE"); _LISTEN_REGISTRATION_FAILUREReady = true; } return _LISTEN_REGISTRATION_FAILUREContent; } }
+        private static int _LISTEN_REGISTRATION_FAILUREContent = default;
+        private static bool _LISTEN_REGISTRATION_FAILUREReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#onDataActivity(int)"/>
+        /// <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#LISTEN_SERVICE_STATE"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
-        public virtual void OnDataActivity(int arg0)
-        {
-            
-        }
-
+        [global::System.Obsolete()]
+        public static int LISTEN_SERVICE_STATE { get { if (!_LISTEN_SERVICE_STATEReady) { _LISTEN_SERVICE_STATEContent = SGetField<int>(LocalBridgeClazz, "LISTEN_SERVICE_STATE"); _LISTEN_SERVICE_STATEReady = true; } return _LISTEN_SERVICE_STATEContent; } }
+        private static int _LISTEN_SERVICE_STATEContent = default;
+        private static bool _LISTEN_SERVICE_STATEReady = false; // this is used because in case of generics 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#onDataConnectionStateChanged(int,int)"/>
+        /// <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#LISTEN_SIGNAL_STRENGTH"/>
         /// </summary>
-        /// <remarks>If <see cref="OnOnDataConnectionStateChanged"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<int, int> OnOnDataConnectionStateChanged { get; set; } = null;
-
-        void OnDataConnectionStateChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
-        {
-            var methodToExecute = (OnOnDataConnectionStateChanged != null) ? OnOnDataConnectionStateChanged : OnDataConnectionStateChanged;
-            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<int>(0));
-        }
-
+        [global::System.Obsolete()]
+        public static int LISTEN_SIGNAL_STRENGTH { get { if (!_LISTEN_SIGNAL_STRENGTHReady) { _LISTEN_SIGNAL_STRENGTHContent = SGetField<int>(LocalBridgeClazz, "LISTEN_SIGNAL_STRENGTH"); _LISTEN_SIGNAL_STRENGTHReady = true; } return _LISTEN_SIGNAL_STRENGTHContent; } }
+        private static int _LISTEN_SIGNAL_STRENGTHContent = default;
+        private static bool _LISTEN_SIGNAL_STRENGTHReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#onDataConnectionStateChanged(int,int)"/>
+        /// <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#LISTEN_SIGNAL_STRENGTHS"/>
         /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        [System.Obsolete()]
-        public virtual void OnDataConnectionStateChanged(int arg0, int arg1)
-        {
-            
-        }
-
+        [global::System.Obsolete()]
+        public static int LISTEN_SIGNAL_STRENGTHS { get { if (!_LISTEN_SIGNAL_STRENGTHSReady) { _LISTEN_SIGNAL_STRENGTHSContent = SGetField<int>(LocalBridgeClazz, "LISTEN_SIGNAL_STRENGTHS"); _LISTEN_SIGNAL_STRENGTHSReady = true; } return _LISTEN_SIGNAL_STRENGTHSContent; } }
+        private static int _LISTEN_SIGNAL_STRENGTHSContent = default;
+        private static bool _LISTEN_SIGNAL_STRENGTHSReady = false; // this is used because in case of generics 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#onDataConnectionStateChanged(int)"/>
+        /// <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#LISTEN_USER_MOBILE_DATA_STATE"/>
         /// </summary>
-        /// <remarks>If <see cref="OnOnDataConnectionStateChanged1"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<int> OnOnDataConnectionStateChanged1 { get; set; } = null;
-
-        void OnDataConnectionStateChanged1EventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
-        {
-            var methodToExecute = (OnOnDataConnectionStateChanged1 != null) ? OnOnDataConnectionStateChanged1 : OnDataConnectionStateChanged;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
-        }
-
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#onDataConnectionStateChanged(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
-        public virtual void OnDataConnectionStateChanged(int arg0)
-        {
-            
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#onDisplayInfoChanged(android.telephony.TelephonyDisplayInfo)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnOnDisplayInfoChanged"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Android.Telephony.TelephonyDisplayInfo> OnOnDisplayInfoChanged { get; set; } = null;
-
-        void OnDisplayInfoChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Telephony.TelephonyDisplayInfo>> data)
-        {
-            var methodToExecute = (OnOnDisplayInfoChanged != null) ? OnOnDisplayInfoChanged : OnDisplayInfoChanged;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
-        }
-
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#onDisplayInfoChanged(android.telephony.TelephonyDisplayInfo)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Telephony.TelephonyDisplayInfo"/></param>
-        [System.Obsolete()]
-        public virtual void OnDisplayInfoChanged(Android.Telephony.TelephonyDisplayInfo arg0)
-        {
-            
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#onEmergencyNumberListChanged(java.util.Map)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnOnEmergencyNumberListChanged"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Util.Map<Java.Lang.Integer, Java.Util.List<Android.Telephony.Emergency.EmergencyNumber>>> OnOnEmergencyNumberListChanged { get; set; } = null;
-
-        void OnEmergencyNumberListChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Map<Java.Lang.Integer, Java.Util.List<Android.Telephony.Emergency.EmergencyNumber>>>> data)
-        {
-            var methodToExecute = (OnOnEmergencyNumberListChanged != null) ? OnOnEmergencyNumberListChanged : OnEmergencyNumberListChanged;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
-        }
-
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#onEmergencyNumberListChanged(java.util.Map)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
-        [System.Obsolete()]
-        public virtual void OnEmergencyNumberListChanged(Java.Util.Map<Java.Lang.Integer, Java.Util.List<Android.Telephony.Emergency.EmergencyNumber>> arg0)
-        {
-            
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#onImsCallDisconnectCauseChanged(android.telephony.ims.ImsReasonInfo)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnOnImsCallDisconnectCauseChanged"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Android.Telephony.Ims.ImsReasonInfo> OnOnImsCallDisconnectCauseChanged { get; set; } = null;
-
-        void OnImsCallDisconnectCauseChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Telephony.Ims.ImsReasonInfo>> data)
-        {
-            var methodToExecute = (OnOnImsCallDisconnectCauseChanged != null) ? OnOnImsCallDisconnectCauseChanged : OnImsCallDisconnectCauseChanged;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
-        }
-
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#onImsCallDisconnectCauseChanged(android.telephony.ims.ImsReasonInfo)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Telephony.Ims.ImsReasonInfo"/></param>
-        [System.Obsolete()]
-        public virtual void OnImsCallDisconnectCauseChanged(Android.Telephony.Ims.ImsReasonInfo arg0)
-        {
-            
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#onMessageWaitingIndicatorChanged(boolean)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnOnMessageWaitingIndicatorChanged"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<bool> OnOnMessageWaitingIndicatorChanged { get; set; } = null;
-
-        void OnMessageWaitingIndicatorChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<bool>> data)
-        {
-            var methodToExecute = (OnOnMessageWaitingIndicatorChanged != null) ? OnOnMessageWaitingIndicatorChanged : OnMessageWaitingIndicatorChanged;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
-        }
-
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#onMessageWaitingIndicatorChanged(boolean)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
-        public virtual void OnMessageWaitingIndicatorChanged(bool arg0)
-        {
-            
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#onPreciseDataConnectionStateChanged(android.telephony.PreciseDataConnectionState)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnOnPreciseDataConnectionStateChanged"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Android.Telephony.PreciseDataConnectionState> OnOnPreciseDataConnectionStateChanged { get; set; } = null;
-
-        void OnPreciseDataConnectionStateChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Telephony.PreciseDataConnectionState>> data)
-        {
-            var methodToExecute = (OnOnPreciseDataConnectionStateChanged != null) ? OnOnPreciseDataConnectionStateChanged : OnPreciseDataConnectionStateChanged;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
-        }
-
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#onPreciseDataConnectionStateChanged(android.telephony.PreciseDataConnectionState)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Telephony.PreciseDataConnectionState"/></param>
-        [System.Obsolete()]
-        public virtual void OnPreciseDataConnectionStateChanged(Android.Telephony.PreciseDataConnectionState arg0)
-        {
-            
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#onRegistrationFailed(android.telephony.CellIdentity,java.lang.String,int,int,int)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnOnRegistrationFailed"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Android.Telephony.CellIdentity, Java.Lang.String, int, int, int> OnOnRegistrationFailed { get; set; } = null;
-
-        void OnRegistrationFailedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Telephony.CellIdentity>> data)
-        {
-            var methodToExecute = (OnOnRegistrationFailed != null) ? OnOnRegistrationFailed : OnRegistrationFailed;
-            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<Java.Lang.String>(0), data.EventData.GetAt<int>(1), data.EventData.GetAt<int>(2), data.EventData.GetAt<int>(3));
-        }
-
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#onRegistrationFailed(android.telephony.CellIdentity,java.lang.String,int,int,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Telephony.CellIdentity"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <param name="arg4"><see cref="int"/></param>
-        [System.Obsolete()]
-        public virtual void OnRegistrationFailed(Android.Telephony.CellIdentity arg0, Java.Lang.String arg1, int arg2, int arg3, int arg4)
-        {
-            
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#onServiceStateChanged(android.telephony.ServiceState)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnOnServiceStateChanged"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Android.Telephony.ServiceState> OnOnServiceStateChanged { get; set; } = null;
-
-        void OnServiceStateChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Telephony.ServiceState>> data)
-        {
-            var methodToExecute = (OnOnServiceStateChanged != null) ? OnOnServiceStateChanged : OnServiceStateChanged;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
-        }
-
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#onServiceStateChanged(android.telephony.ServiceState)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Telephony.ServiceState"/></param>
-        [System.Obsolete()]
-        public virtual void OnServiceStateChanged(Android.Telephony.ServiceState arg0)
-        {
-            
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#onSignalStrengthChanged(int)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnOnSignalStrengthChanged"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<int> OnOnSignalStrengthChanged { get; set; } = null;
-
-        void OnSignalStrengthChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
-        {
-            var methodToExecute = (OnOnSignalStrengthChanged != null) ? OnOnSignalStrengthChanged : OnSignalStrengthChanged;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
-        }
-
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#onSignalStrengthChanged(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
-        public virtual void OnSignalStrengthChanged(int arg0)
-        {
-            
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#onSignalStrengthsChanged(android.telephony.SignalStrength)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnOnSignalStrengthsChanged"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Android.Telephony.SignalStrength> OnOnSignalStrengthsChanged { get; set; } = null;
-
-        void OnSignalStrengthsChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Telephony.SignalStrength>> data)
-        {
-            var methodToExecute = (OnOnSignalStrengthsChanged != null) ? OnOnSignalStrengthsChanged : OnSignalStrengthsChanged;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
-        }
-
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#onSignalStrengthsChanged(android.telephony.SignalStrength)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Telephony.SignalStrength"/></param>
-        [System.Obsolete()]
-        public virtual void OnSignalStrengthsChanged(Android.Telephony.SignalStrength arg0)
-        {
-            
-        }
-
-        /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#onUserMobileDataStateChanged(boolean)"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnOnUserMobileDataStateChanged"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<bool> OnOnUserMobileDataStateChanged { get; set; } = null;
-
-        void OnUserMobileDataStateChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<bool>> data)
-        {
-            var methodToExecute = (OnOnUserMobileDataStateChanged != null) ? OnOnUserMobileDataStateChanged : OnUserMobileDataStateChanged;
-            methodToExecute.Invoke(data.EventData.TypedEventData);
-        }
-
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#onUserMobileDataStateChanged(boolean)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
-        public virtual void OnUserMobileDataStateChanged(bool arg0)
-        {
-            
-        }
-
-        #endregion
-
-        #region Nested classes
-
-        #endregion
-
-        // TODO: complete the class
-    }
-    #endregion
-
-    #region PhoneStateListenerDirect
-    public partial class PhoneStateListenerDirect
-    {
-        #region Constructors
-
-        #endregion
-
-        #region Class/Interface conversion operators
-
-        #endregion
-
-        #region Fields
+        [global::System.Obsolete()]
+        public static int LISTEN_USER_MOBILE_DATA_STATE { get { if (!_LISTEN_USER_MOBILE_DATA_STATEReady) { _LISTEN_USER_MOBILE_DATA_STATEContent = SGetField<int>(LocalBridgeClazz, "LISTEN_USER_MOBILE_DATA_STATE"); _LISTEN_USER_MOBILE_DATA_STATEReady = true; } return _LISTEN_USER_MOBILE_DATA_STATEContent; } }
+        private static int _LISTEN_USER_MOBILE_DATA_STATEContent = default;
+        private static bool _LISTEN_USER_MOBILE_DATA_STATEReady = false; // this is used because in case of generics 
 
         #endregion
 
@@ -554,8 +198,8 @@ namespace Android.Telephony
         /// <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#onActiveDataSubscriptionIdChanged(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
-        public override void OnActiveDataSubscriptionIdChanged(int arg0)
+        [global::System.Obsolete()]
+        public void OnActiveDataSubscriptionIdChanged(int arg0)
         {
             IExecuteWithSignature("onActiveDataSubscriptionIdChanged", "(I)V", arg0);
         }
@@ -563,8 +207,8 @@ namespace Android.Telephony
         /// <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#onBarringInfoChanged(android.telephony.BarringInfo)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Telephony.BarringInfo"/></param>
-        [System.Obsolete()]
-        public override void OnBarringInfoChanged(Android.Telephony.BarringInfo arg0)
+        [global::System.Obsolete()]
+        public void OnBarringInfoChanged(Android.Telephony.BarringInfo arg0)
         {
             IExecuteWithSignature("onBarringInfoChanged", "(Landroid/telephony/BarringInfo;)V", arg0);
         }
@@ -573,8 +217,8 @@ namespace Android.Telephony
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        [System.Obsolete()]
-        public override void OnCallDisconnectCauseChanged(int arg0, int arg1)
+        [global::System.Obsolete()]
+        public void OnCallDisconnectCauseChanged(int arg0, int arg1)
         {
             IExecute("onCallDisconnectCauseChanged", arg0, arg1);
         }
@@ -582,8 +226,8 @@ namespace Android.Telephony
         /// <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#onCallForwardingIndicatorChanged(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
-        public override void OnCallForwardingIndicatorChanged(bool arg0)
+        [global::System.Obsolete()]
+        public void OnCallForwardingIndicatorChanged(bool arg0)
         {
             IExecuteWithSignature("onCallForwardingIndicatorChanged", "(Z)V", arg0);
         }
@@ -592,8 +236,8 @@ namespace Android.Telephony
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        [System.Obsolete()]
-        public override void OnCallStateChanged(int arg0, Java.Lang.String arg1)
+        [global::System.Obsolete()]
+        public void OnCallStateChanged(int arg0, Java.Lang.String arg1)
         {
             IExecute("onCallStateChanged", arg0, arg1);
         }
@@ -601,8 +245,8 @@ namespace Android.Telephony
         /// <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#onCellInfoChanged(java.util.List)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
-        [System.Obsolete()]
-        public override void OnCellInfoChanged(Java.Util.List<Android.Telephony.CellInfo> arg0)
+        [global::System.Obsolete()]
+        public void OnCellInfoChanged(Java.Util.List<Android.Telephony.CellInfo> arg0)
         {
             IExecuteWithSignature("onCellInfoChanged", "(Ljava/util/List;)V", arg0);
         }
@@ -610,8 +254,8 @@ namespace Android.Telephony
         /// <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#onCellLocationChanged(android.telephony.CellLocation)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Telephony.CellLocation"/></param>
-        [System.Obsolete()]
-        public override void OnCellLocationChanged(Android.Telephony.CellLocation arg0)
+        [global::System.Obsolete()]
+        public void OnCellLocationChanged(Android.Telephony.CellLocation arg0)
         {
             IExecuteWithSignature("onCellLocationChanged", "(Landroid/telephony/CellLocation;)V", arg0);
         }
@@ -619,8 +263,8 @@ namespace Android.Telephony
         /// <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#onDataActivity(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
-        public override void OnDataActivity(int arg0)
+        [global::System.Obsolete()]
+        public void OnDataActivity(int arg0)
         {
             IExecuteWithSignature("onDataActivity", "(I)V", arg0);
         }
@@ -629,8 +273,8 @@ namespace Android.Telephony
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        [System.Obsolete()]
-        public override void OnDataConnectionStateChanged(int arg0, int arg1)
+        [global::System.Obsolete()]
+        public void OnDataConnectionStateChanged(int arg0, int arg1)
         {
             IExecute("onDataConnectionStateChanged", arg0, arg1);
         }
@@ -638,8 +282,8 @@ namespace Android.Telephony
         /// <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#onDataConnectionStateChanged(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
-        public override void OnDataConnectionStateChanged(int arg0)
+        [global::System.Obsolete()]
+        public void OnDataConnectionStateChanged(int arg0)
         {
             IExecuteWithSignature("onDataConnectionStateChanged", "(I)V", arg0);
         }
@@ -647,8 +291,8 @@ namespace Android.Telephony
         /// <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#onDisplayInfoChanged(android.telephony.TelephonyDisplayInfo)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Telephony.TelephonyDisplayInfo"/></param>
-        [System.Obsolete()]
-        public override void OnDisplayInfoChanged(Android.Telephony.TelephonyDisplayInfo arg0)
+        [global::System.Obsolete()]
+        public void OnDisplayInfoChanged(Android.Telephony.TelephonyDisplayInfo arg0)
         {
             IExecuteWithSignature("onDisplayInfoChanged", "(Landroid/telephony/TelephonyDisplayInfo;)V", arg0);
         }
@@ -656,8 +300,8 @@ namespace Android.Telephony
         /// <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#onEmergencyNumberListChanged(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
-        [System.Obsolete()]
-        public override void OnEmergencyNumberListChanged(Java.Util.Map<Java.Lang.Integer, Java.Util.List<Android.Telephony.Emergency.EmergencyNumber>> arg0)
+        [global::System.Obsolete()]
+        public void OnEmergencyNumberListChanged(Java.Util.Map<Java.Lang.Integer, Java.Util.List<Android.Telephony.Emergency.EmergencyNumber>> arg0)
         {
             IExecuteWithSignature("onEmergencyNumberListChanged", "(Ljava/util/Map;)V", arg0);
         }
@@ -665,8 +309,8 @@ namespace Android.Telephony
         /// <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#onImsCallDisconnectCauseChanged(android.telephony.ims.ImsReasonInfo)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Telephony.Ims.ImsReasonInfo"/></param>
-        [System.Obsolete()]
-        public override void OnImsCallDisconnectCauseChanged(Android.Telephony.Ims.ImsReasonInfo arg0)
+        [global::System.Obsolete()]
+        public void OnImsCallDisconnectCauseChanged(Android.Telephony.Ims.ImsReasonInfo arg0)
         {
             IExecuteWithSignature("onImsCallDisconnectCauseChanged", "(Landroid/telephony/ims/ImsReasonInfo;)V", arg0);
         }
@@ -674,8 +318,8 @@ namespace Android.Telephony
         /// <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#onMessageWaitingIndicatorChanged(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
-        public override void OnMessageWaitingIndicatorChanged(bool arg0)
+        [global::System.Obsolete()]
+        public void OnMessageWaitingIndicatorChanged(bool arg0)
         {
             IExecuteWithSignature("onMessageWaitingIndicatorChanged", "(Z)V", arg0);
         }
@@ -683,8 +327,8 @@ namespace Android.Telephony
         /// <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#onPreciseDataConnectionStateChanged(android.telephony.PreciseDataConnectionState)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Telephony.PreciseDataConnectionState"/></param>
-        [System.Obsolete()]
-        public override void OnPreciseDataConnectionStateChanged(Android.Telephony.PreciseDataConnectionState arg0)
+        [global::System.Obsolete()]
+        public void OnPreciseDataConnectionStateChanged(Android.Telephony.PreciseDataConnectionState arg0)
         {
             IExecuteWithSignature("onPreciseDataConnectionStateChanged", "(Landroid/telephony/PreciseDataConnectionState;)V", arg0);
         }
@@ -696,8 +340,8 @@ namespace Android.Telephony
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="int"/></param>
-        [System.Obsolete()]
-        public override void OnRegistrationFailed(Android.Telephony.CellIdentity arg0, Java.Lang.String arg1, int arg2, int arg3, int arg4)
+        [global::System.Obsolete()]
+        public void OnRegistrationFailed(Android.Telephony.CellIdentity arg0, Java.Lang.String arg1, int arg2, int arg3, int arg4)
         {
             IExecute("onRegistrationFailed", arg0, arg1, arg2, arg3, arg4);
         }
@@ -705,8 +349,8 @@ namespace Android.Telephony
         /// <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#onServiceStateChanged(android.telephony.ServiceState)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Telephony.ServiceState"/></param>
-        [System.Obsolete()]
-        public override void OnServiceStateChanged(Android.Telephony.ServiceState arg0)
+        [global::System.Obsolete()]
+        public void OnServiceStateChanged(Android.Telephony.ServiceState arg0)
         {
             IExecuteWithSignature("onServiceStateChanged", "(Landroid/telephony/ServiceState;)V", arg0);
         }
@@ -714,8 +358,8 @@ namespace Android.Telephony
         /// <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#onSignalStrengthChanged(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
-        public override void OnSignalStrengthChanged(int arg0)
+        [global::System.Obsolete()]
+        public void OnSignalStrengthChanged(int arg0)
         {
             IExecuteWithSignature("onSignalStrengthChanged", "(I)V", arg0);
         }
@@ -723,8 +367,8 @@ namespace Android.Telephony
         /// <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#onSignalStrengthsChanged(android.telephony.SignalStrength)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Telephony.SignalStrength"/></param>
-        [System.Obsolete()]
-        public override void OnSignalStrengthsChanged(Android.Telephony.SignalStrength arg0)
+        [global::System.Obsolete()]
+        public void OnSignalStrengthsChanged(Android.Telephony.SignalStrength arg0)
         {
             IExecuteWithSignature("onSignalStrengthsChanged", "(Landroid/telephony/SignalStrength;)V", arg0);
         }
@@ -732,8 +376,8 @@ namespace Android.Telephony
         /// <see href="https://developer.android.com/reference/android/telephony/PhoneStateListener.html#onUserMobileDataStateChanged(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
-        public override void OnUserMobileDataStateChanged(bool arg0)
+        [global::System.Obsolete()]
+        public void OnUserMobileDataStateChanged(bool arg0)
         {
             IExecuteWithSignature("onUserMobileDataStateChanged", "(Z)V", arg0);
         }

@@ -74,25 +74,12 @@ namespace Android.Text.Style
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/style/LocaleSpan.html#getLocale()"/> 
+        /// <see href="https://developer.android.com/reference/android/text/style/LocaleSpan.html#getLocales()"/>
         /// </summary>
-        public Java.Util.Locale Locale
+        /// <returns><see cref="Android.Os.LocaleList"/></returns>
+        public Android.Os.LocaleList GetLocales()
         {
-            get { return IExecuteWithSignature<Java.Util.Locale>("getLocale", "()Ljava/util/Locale;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/style/LocaleSpan.html#getLocales()"/> 
-        /// </summary>
-        public Android.Os.LocaleList Locales
-        {
-            get { return IExecuteWithSignature<Android.Os.LocaleList>("getLocales", "()Landroid/os/LocaleList;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/style/LocaleSpan.html#getSpanTypeId()"/> 
-        /// </summary>
-        public int SpanTypeId
-        {
-            get { return IExecuteWithSignature<int>("getSpanTypeId", "()I"); }
+            return IExecuteWithSignature<Android.Os.LocaleList>("getLocales", "()Landroid/os/LocaleList;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/LocaleSpan.html#describeContents()"/>
@@ -101,6 +88,22 @@ namespace Android.Text.Style
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/style/LocaleSpan.html#getSpanTypeId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSpanTypeId()
+        {
+            return IExecuteWithSignature<int>("getSpanTypeId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/style/LocaleSpan.html#getLocale()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Locale"/></returns>
+        public Java.Util.Locale GetLocale()
+        {
+            return IExecuteWithSignature<Java.Util.Locale>("getLocale", "()Ljava/util/Locale;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/LocaleSpan.html#writeToParcel(android.os.Parcel,int)"/>

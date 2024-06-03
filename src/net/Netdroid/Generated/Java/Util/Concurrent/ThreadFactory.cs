@@ -64,7 +64,7 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/ThreadFactory.html#newThread(java.lang.Runnable)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/ThreadFactory.html#newThread(java.lang.Runnable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
         /// <returns><see cref="Java.Lang.Thread"/></returns>

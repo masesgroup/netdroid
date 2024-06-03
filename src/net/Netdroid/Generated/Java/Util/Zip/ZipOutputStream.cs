@@ -30,7 +30,7 @@ namespace Java.Util.Zip
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/ZipOutputStream.html#%3Cinit%3E(java.io.OutputStream,java.nio.charset.Charset)"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/ZipOutputStream.html#%3Cinit%3E(java.io.OutputStream,java.nio.charset.Charset)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
         /// <param name="arg1"><see cref="Java.Nio.Charset.Charset"/></param>
@@ -39,7 +39,7 @@ namespace Java.Util.Zip
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/ZipOutputStream.html#%3Cinit%3E(java.io.OutputStream)"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/ZipOutputStream.html#%3Cinit%3E(java.io.OutputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
         public ZipOutputStream(Java.Io.OutputStream arg0)
@@ -55,13 +55,13 @@ namespace Java.Util.Zip
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/ZipOutputStream.html#DEFLATED"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/ZipOutputStream.html#DEFLATED"/>
         /// </summary>
         public static int DEFLATED { get { if (!_DEFLATEDReady) { _DEFLATEDContent = SGetField<int>(LocalBridgeClazz, "DEFLATED"); _DEFLATEDReady = true; } return _DEFLATEDContent; } }
         private static int _DEFLATEDContent = default;
         private static bool _DEFLATEDReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/ZipOutputStream.html#STORED"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/ZipOutputStream.html#STORED"/>
         /// </summary>
         public static int STORED { get { if (!_STOREDReady) { _STOREDContent = SGetField<int>(LocalBridgeClazz, "STORED"); _STOREDReady = true; } return _STOREDContent; } }
         private static int _STOREDContent = default;
@@ -75,7 +75,7 @@ namespace Java.Util.Zip
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/ZipOutputStream.html#closeEntry()"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/ZipOutputStream.html#closeEntry()"/>
         /// </summary>
         /// <exception cref="Java.Io.IOException"/>
         public void CloseEntry()
@@ -83,7 +83,7 @@ namespace Java.Util.Zip
             IExecuteWithSignature("closeEntry", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/ZipOutputStream.html#putNextEntry(java.util.zip.ZipEntry)"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/ZipOutputStream.html#putNextEntry(java.util.zip.ZipEntry)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Zip.ZipEntry"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -92,7 +92,7 @@ namespace Java.Util.Zip
             IExecuteWithSignature("putNextEntry", "(Ljava/util/zip/ZipEntry;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/ZipOutputStream.html#setComment(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/ZipOutputStream.html#setComment(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void SetComment(Java.Lang.String arg0)
@@ -100,7 +100,7 @@ namespace Java.Util.Zip
             IExecuteWithSignature("setComment", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/ZipOutputStream.html#setLevel(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/ZipOutputStream.html#setLevel(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public void SetLevel(int arg0)
@@ -108,7 +108,7 @@ namespace Java.Util.Zip
             IExecuteWithSignature("setLevel", "(I)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/ZipOutputStream.html#setMethod(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/ZipOutputStream.html#setMethod(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public void SetMethod(int arg0)

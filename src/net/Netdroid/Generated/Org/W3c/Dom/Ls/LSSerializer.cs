@@ -64,21 +64,7 @@ namespace Org.W3c.Dom.Ls
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSSerializer.html#getDomConfig()"/> 
-        /// </summary>
-        public Org.W3c.Dom.DOMConfiguration DomConfig
-        {
-            get { return IExecuteWithSignature<Org.W3c.Dom.DOMConfiguration>("getDomConfig", "()Lorg/w3c/dom/DOMConfiguration;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSSerializer.html#getNewLine()"/> <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSSerializer.html#setNewLine(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String NewLine
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getNewLine", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setNewLine", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSSerializer.html#write(org.w3c.dom.Node,org.w3c.dom.ls.LSOutput)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSSerializer.html#write(org.w3c.dom.Node,org.w3c.dom.ls.LSOutput)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
         /// <param name="arg1"><see cref="Org.W3c.Dom.Ls.LSOutput"/></param>
@@ -89,7 +75,7 @@ namespace Org.W3c.Dom.Ls
             return IExecute<bool>("write", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSSerializer.html#writeToURI(org.w3c.dom.Node,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSSerializer.html#writeToURI(org.w3c.dom.Node,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -100,7 +86,15 @@ namespace Org.W3c.Dom.Ls
             return IExecute<bool>("writeToURI", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/w3c/dom/ls/LSSerializer.html#writeToString(org.w3c.dom.Node)"/>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSSerializer.html#getNewLine()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetNewLine()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getNewLine", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSSerializer.html#writeToString(org.w3c.dom.Node)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.W3c.Dom.Node"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -109,6 +103,22 @@ namespace Org.W3c.Dom.Ls
         public Java.Lang.String WriteToString(Org.W3c.Dom.Node arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("writeToString", "(Lorg/w3c/dom/Node;)Ljava/lang/String;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSSerializer.html#getDomConfig()"/>
+        /// </summary>
+        /// <returns><see cref="Org.W3c.Dom.DOMConfiguration"/></returns>
+        public Org.W3c.Dom.DOMConfiguration GetDomConfig()
+        {
+            return IExecuteWithSignature<Org.W3c.Dom.DOMConfiguration>("getDomConfig", "()Lorg/w3c/dom/DOMConfiguration;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/w3c/dom/ls/LSSerializer.html#setNewLine(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetNewLine(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setNewLine", "(Ljava/lang/String;)V", arg0);
         }
 
         #endregion

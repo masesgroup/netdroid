@@ -46,34 +46,6 @@ namespace Android.Graphics.Drawable
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/RotateDrawable.html#getFromDegrees()"/> <see href="https://developer.android.com/reference/android/graphics/drawable/RotateDrawable.html#setFromDegrees(float)"/>
-        /// </summary>
-        public float FromDegrees
-        {
-            get { return IExecuteWithSignature<float>("getFromDegrees", "()F"); } set { IExecuteWithSignature("setFromDegrees", "(F)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/RotateDrawable.html#getPivotX()"/> <see href="https://developer.android.com/reference/android/graphics/drawable/RotateDrawable.html#setPivotX(float)"/>
-        /// </summary>
-        public float PivotX
-        {
-            get { return IExecuteWithSignature<float>("getPivotX", "()F"); } set { IExecuteWithSignature("setPivotX", "(F)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/RotateDrawable.html#getPivotY()"/> <see href="https://developer.android.com/reference/android/graphics/drawable/RotateDrawable.html#setPivotY(float)"/>
-        /// </summary>
-        public float PivotY
-        {
-            get { return IExecuteWithSignature<float>("getPivotY", "()F"); } set { IExecuteWithSignature("setPivotY", "(F)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/RotateDrawable.html#getToDegrees()"/> <see href="https://developer.android.com/reference/android/graphics/drawable/RotateDrawable.html#setToDegrees(float)"/>
-        /// </summary>
-        public float ToDegrees
-        {
-            get { return IExecuteWithSignature<float>("getToDegrees", "()F"); } set { IExecuteWithSignature("setToDegrees", "(F)V", value); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/RotateDrawable.html#isPivotXRelative()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -90,6 +62,54 @@ namespace Android.Graphics.Drawable
             return IExecuteWithSignature<bool>("isPivotYRelative", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/RotateDrawable.html#getFromDegrees()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetFromDegrees()
+        {
+            return IExecuteWithSignature<float>("getFromDegrees", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/RotateDrawable.html#getPivotX()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetPivotX()
+        {
+            return IExecuteWithSignature<float>("getPivotX", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/RotateDrawable.html#getPivotY()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetPivotY()
+        {
+            return IExecuteWithSignature<float>("getPivotY", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/RotateDrawable.html#getToDegrees()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetToDegrees()
+        {
+            return IExecuteWithSignature<float>("getToDegrees", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/RotateDrawable.html#setFromDegrees(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetFromDegrees(float arg0)
+        {
+            IExecuteWithSignature("setFromDegrees", "(F)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/RotateDrawable.html#setPivotX(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetPivotX(float arg0)
+        {
+            IExecuteWithSignature("setPivotX", "(F)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/RotateDrawable.html#setPivotXRelative(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
@@ -98,12 +118,28 @@ namespace Android.Graphics.Drawable
             IExecuteWithSignature("setPivotXRelative", "(Z)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/RotateDrawable.html#setPivotY(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetPivotY(float arg0)
+        {
+            IExecuteWithSignature("setPivotY", "(F)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/RotateDrawable.html#setPivotYRelative(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetPivotYRelative(bool arg0)
         {
             IExecuteWithSignature("setPivotYRelative", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/RotateDrawable.html#setToDegrees(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetToDegrees(float arg0)
+        {
+            IExecuteWithSignature("setToDegrees", "(F)V", arg0);
         }
 
         #endregion

@@ -46,11 +46,12 @@ namespace Android.Content
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/ContentProviderClient.html#getLocalContentProvider()"/> 
+        /// <see href="https://developer.android.com/reference/android/content/ContentProviderClient.html#getLocalContentProvider()"/>
         /// </summary>
-        public Android.Content.ContentProvider LocalContentProvider
+        /// <returns><see cref="Android.Content.ContentProvider"/></returns>
+        public Android.Content.ContentProvider GetLocalContentProvider()
         {
-            get { return IExecuteWithSignature<Android.Content.ContentProvider>("getLocalContentProvider", "()Landroid/content/ContentProvider;"); }
+            return IExecuteWithSignature<Android.Content.ContentProvider>("getLocalContentProvider", "()Landroid/content/ContentProvider;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/ContentProviderClient.html#applyBatch(java.lang.String,java.util.ArrayList)"/>
@@ -231,7 +232,7 @@ namespace Android.Content
         /// <see href="https://developer.android.com/reference/android/content/ContentProviderClient.html#release()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool Release()
         {
             return IExecuteWithSignature<bool>("release", "()Z");

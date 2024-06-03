@@ -30,7 +30,7 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Scanner.html#%3Cinit%3E(java.io.File,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Scanner.html#%3Cinit%3E(java.io.File,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -40,7 +40,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Scanner.html#%3Cinit%3E(java.io.File,java.nio.charset.Charset)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Scanner.html#%3Cinit%3E(java.io.File,java.nio.charset.Charset)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
         /// <param name="arg1"><see cref="Java.Nio.Charset.Charset"/></param>
@@ -50,7 +50,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Scanner.html#%3Cinit%3E(java.io.File)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Scanner.html#%3Cinit%3E(java.io.File)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
         /// <exception cref="Java.Io.FileNotFoundException"/>
@@ -59,7 +59,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Scanner.html#%3Cinit%3E(java.io.InputStream,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Scanner.html#%3Cinit%3E(java.io.InputStream,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -68,7 +68,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Scanner.html#%3Cinit%3E(java.io.InputStream,java.nio.charset.Charset)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Scanner.html#%3Cinit%3E(java.io.InputStream,java.nio.charset.Charset)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         /// <param name="arg1"><see cref="Java.Nio.Charset.Charset"/></param>
@@ -77,7 +77,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Scanner.html#%3Cinit%3E(java.io.InputStream)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Scanner.html#%3Cinit%3E(java.io.InputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         public Scanner(Java.Io.InputStream arg0)
@@ -85,7 +85,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Scanner.html#%3Cinit%3E(java.lang.Readable)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Scanner.html#%3Cinit%3E(java.lang.Readable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Readable"/></param>
         public Scanner(Java.Lang.Readable arg0)
@@ -93,7 +93,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Scanner.html#%3Cinit%3E(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Scanner.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public Scanner(Java.Lang.String arg0)
@@ -101,7 +101,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Scanner.html#%3Cinit%3E(java.nio.channels.ReadableByteChannel,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Scanner.html#%3Cinit%3E(java.nio.channels.ReadableByteChannel,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.Channels.ReadableByteChannel"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -110,7 +110,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Scanner.html#%3Cinit%3E(java.nio.channels.ReadableByteChannel,java.nio.charset.Charset)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Scanner.html#%3Cinit%3E(java.nio.channels.ReadableByteChannel,java.nio.charset.Charset)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.Channels.ReadableByteChannel"/></param>
         /// <param name="arg1"><see cref="Java.Nio.Charset.Charset"/></param>
@@ -119,7 +119,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Scanner.html#%3Cinit%3E(java.nio.channels.ReadableByteChannel)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Scanner.html#%3Cinit%3E(java.nio.channels.ReadableByteChannel)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.Channels.ReadableByteChannel"/></param>
         public Scanner(Java.Nio.Channels.ReadableByteChannel arg0)
@@ -127,7 +127,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Scanner.html#%3Cinit%3E(java.nio.file.Path,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Scanner.html#%3Cinit%3E(java.nio.file.Path,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -137,7 +137,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Scanner.html#%3Cinit%3E(java.nio.file.Path,java.nio.charset.Charset)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Scanner.html#%3Cinit%3E(java.nio.file.Path,java.nio.charset.Charset)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <param name="arg1"><see cref="Java.Nio.Charset.Charset"/></param>
@@ -147,7 +147,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Scanner.html#%3Cinit%3E(java.nio.file.Path)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Scanner.html#%3Cinit%3E(java.nio.file.Path)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -176,7 +176,7 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Scanner.html#hasNext()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Scanner.html#hasNext()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool HasNext()
@@ -184,7 +184,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("hasNext", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Scanner.html#hasNext(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Scanner.html#hasNext(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -193,7 +193,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("hasNext", "(Ljava/lang/String;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Scanner.html#hasNext(java.util.regex.Pattern)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Scanner.html#hasNext(java.util.regex.Pattern)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Regex.Pattern"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -202,7 +202,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("hasNext", "(Ljava/util/regex/Pattern;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Scanner.html#hasNextBigDecimal()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Scanner.html#hasNextBigDecimal()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool HasNextBigDecimal()
@@ -210,7 +210,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("hasNextBigDecimal", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Scanner.html#hasNextBigInteger()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Scanner.html#hasNextBigInteger()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool HasNextBigInteger()
@@ -218,7 +218,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("hasNextBigInteger", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Scanner.html#hasNextBigInteger(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Scanner.html#hasNextBigInteger(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -227,7 +227,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("hasNextBigInteger", "(I)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Scanner.html#hasNextBoolean()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Scanner.html#hasNextBoolean()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool HasNextBoolean()
@@ -235,7 +235,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("hasNextBoolean", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Scanner.html#hasNextByte()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Scanner.html#hasNextByte()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool HasNextByte()
@@ -243,7 +243,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("hasNextByte", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Scanner.html#hasNextByte(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Scanner.html#hasNextByte(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -252,7 +252,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("hasNextByte", "(I)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Scanner.html#hasNextDouble()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Scanner.html#hasNextDouble()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool HasNextDouble()
@@ -260,7 +260,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("hasNextDouble", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Scanner.html#hasNextFloat()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Scanner.html#hasNextFloat()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool HasNextFloat()
@@ -268,7 +268,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("hasNextFloat", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Scanner.html#hasNextInt()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Scanner.html#hasNextInt()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool HasNextInt()
@@ -276,7 +276,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("hasNextInt", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Scanner.html#hasNextInt(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Scanner.html#hasNextInt(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -285,7 +285,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("hasNextInt", "(I)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Scanner.html#hasNextLine()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Scanner.html#hasNextLine()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool HasNextLine()
@@ -293,7 +293,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("hasNextLine", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Scanner.html#hasNextLong()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Scanner.html#hasNextLong()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool HasNextLong()
@@ -301,7 +301,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("hasNextLong", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Scanner.html#hasNextLong(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Scanner.html#hasNextLong(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -310,7 +310,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("hasNextLong", "(I)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Scanner.html#hasNextShort()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Scanner.html#hasNextShort()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool HasNextShort()
@@ -318,7 +318,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("hasNextShort", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Scanner.html#hasNextShort(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Scanner.html#hasNextShort(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -327,7 +327,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("hasNextShort", "(I)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Scanner.html#nextBoolean()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Scanner.html#nextBoolean()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool NextBoolean()
@@ -335,7 +335,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("nextBoolean", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Scanner.html#nextByte()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Scanner.html#nextByte()"/>
         /// </summary>
         /// <returns><see cref="byte"/></returns>
         public byte NextByte()
@@ -343,7 +343,7 @@ namespace Java.Util
             return IExecuteWithSignature<byte>("nextByte", "()B");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Scanner.html#nextByte(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Scanner.html#nextByte(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="byte"/></returns>
@@ -352,7 +352,7 @@ namespace Java.Util
             return IExecuteWithSignature<byte>("nextByte", "(I)B", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Scanner.html#nextDouble()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Scanner.html#nextDouble()"/>
         /// </summary>
         /// <returns><see cref="double"/></returns>
         public double NextDouble()
@@ -360,7 +360,7 @@ namespace Java.Util
             return IExecuteWithSignature<double>("nextDouble", "()D");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Scanner.html#nextFloat()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Scanner.html#nextFloat()"/>
         /// </summary>
         /// <returns><see cref="float"/></returns>
         public float NextFloat()
@@ -368,7 +368,7 @@ namespace Java.Util
             return IExecuteWithSignature<float>("nextFloat", "()F");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Scanner.html#nextInt()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Scanner.html#nextInt()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int NextInt()
@@ -376,7 +376,7 @@ namespace Java.Util
             return IExecuteWithSignature<int>("nextInt", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Scanner.html#nextInt(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Scanner.html#nextInt(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
@@ -385,7 +385,7 @@ namespace Java.Util
             return IExecuteWithSignature<int>("nextInt", "(I)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Scanner.html#radix()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Scanner.html#radix()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int Radix()
@@ -393,7 +393,7 @@ namespace Java.Util
             return IExecuteWithSignature<int>("radix", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Scanner.html#ioException()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Scanner.html#ioException()"/>
         /// </summary>
         /// <returns><see cref="Java.Io.IOException"/></returns>
         public Java.Io.IOException IoException()
@@ -401,7 +401,7 @@ namespace Java.Util
             var obj = IExecuteWithSignature<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>("ioException", "()Ljava/io/IOException;"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<Java.Io.IOException>(obj);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Scanner.html#next()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Scanner.html#next()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object Next()
@@ -409,7 +409,7 @@ namespace Java.Util
             return IExecuteWithSignature("next", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Scanner.html#findInLine(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Scanner.html#findInLine(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -418,7 +418,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Lang.String>("findInLine", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Scanner.html#findInLine(java.util.regex.Pattern)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Scanner.html#findInLine(java.util.regex.Pattern)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Regex.Pattern"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -427,7 +427,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Lang.String>("findInLine", "(Ljava/util/regex/Pattern;)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Scanner.html#findWithinHorizon(java.lang.String,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Scanner.html#findWithinHorizon(java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -437,7 +437,7 @@ namespace Java.Util
             return IExecute<Java.Lang.String>("findWithinHorizon", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Scanner.html#findWithinHorizon(java.util.regex.Pattern,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Scanner.html#findWithinHorizon(java.util.regex.Pattern,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Regex.Pattern"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -447,7 +447,7 @@ namespace Java.Util
             return IExecute<Java.Lang.String>("findWithinHorizon", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Scanner.html#next(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Scanner.html#next(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -456,7 +456,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Lang.String>("next", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Scanner.html#next(java.util.regex.Pattern)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Scanner.html#next(java.util.regex.Pattern)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Regex.Pattern"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -465,7 +465,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Lang.String>("next", "(Ljava/util/regex/Pattern;)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Scanner.html#nextLine()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Scanner.html#nextLine()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String NextLine()
@@ -473,7 +473,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Lang.String>("nextLine", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Scanner.html#nextBigDecimal()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Scanner.html#nextBigDecimal()"/>
         /// </summary>
         /// <returns><see cref="Java.Math.BigDecimal"/></returns>
         public Java.Math.BigDecimal NextBigDecimal()
@@ -481,7 +481,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Math.BigDecimal>("nextBigDecimal", "()Ljava/math/BigDecimal;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Scanner.html#nextBigInteger()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Scanner.html#nextBigInteger()"/>
         /// </summary>
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
         public Java.Math.BigInteger NextBigInteger()
@@ -489,7 +489,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Math.BigInteger>("nextBigInteger", "()Ljava/math/BigInteger;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Scanner.html#nextBigInteger(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Scanner.html#nextBigInteger(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Math.BigInteger"/></returns>
@@ -498,7 +498,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Math.BigInteger>("nextBigInteger", "(I)Ljava/math/BigInteger;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Scanner.html#locale()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Scanner.html#locale()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Locale"/></returns>
         public Java.Util.Locale Locale()
@@ -506,7 +506,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Locale>("locale", "()Ljava/util/Locale;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Scanner.html#match()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Scanner.html#match()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Regex.MatchResult"/></returns>
         public Java.Util.Regex.MatchResult Match()
@@ -514,7 +514,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Regex.MatchResult>("match", "()Ljava/util/regex/MatchResult;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Scanner.html#delimiter()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Scanner.html#delimiter()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Regex.Pattern"/></returns>
         public Java.Util.Regex.Pattern Delimiter()
@@ -522,7 +522,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Regex.Pattern>("delimiter", "()Ljava/util/regex/Pattern;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Scanner.html#reset()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Scanner.html#reset()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Scanner"/></returns>
         public Java.Util.Scanner Reset()
@@ -530,7 +530,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Scanner>("reset", "()Ljava/util/Scanner;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Scanner.html#skip(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Scanner.html#skip(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Util.Scanner"/></returns>
@@ -539,7 +539,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Scanner>("skip", "(Ljava/lang/String;)Ljava/util/Scanner;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Scanner.html#skip(java.util.regex.Pattern)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Scanner.html#skip(java.util.regex.Pattern)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Regex.Pattern"/></param>
         /// <returns><see cref="Java.Util.Scanner"/></returns>
@@ -548,7 +548,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Scanner>("skip", "(Ljava/util/regex/Pattern;)Ljava/util/Scanner;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Scanner.html#useDelimiter(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Scanner.html#useDelimiter(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Util.Scanner"/></returns>
@@ -557,7 +557,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Scanner>("useDelimiter", "(Ljava/lang/String;)Ljava/util/Scanner;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Scanner.html#useDelimiter(java.util.regex.Pattern)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Scanner.html#useDelimiter(java.util.regex.Pattern)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Regex.Pattern"/></param>
         /// <returns><see cref="Java.Util.Scanner"/></returns>
@@ -566,7 +566,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Scanner>("useDelimiter", "(Ljava/util/regex/Pattern;)Ljava/util/Scanner;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Scanner.html#useLocale(java.util.Locale)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Scanner.html#useLocale(java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
         /// <returns><see cref="Java.Util.Scanner"/></returns>
@@ -575,7 +575,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Scanner>("useLocale", "(Ljava/util/Locale;)Ljava/util/Scanner;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Scanner.html#useRadix(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Scanner.html#useRadix(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Util.Scanner"/></returns>
@@ -584,7 +584,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Scanner>("useRadix", "(I)Ljava/util/Scanner;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Scanner.html#tokens()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Scanner.html#tokens()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream<Java.Lang.String> Tokens()
@@ -592,7 +592,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Stream.Stream<Java.Lang.String>>("tokens", "()Ljava/util/stream/Stream;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Scanner.html#findAll(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Scanner.html#findAll(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
@@ -601,7 +601,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Stream.Stream<Java.Util.Regex.MatchResult>>("findAll", "(Ljava/lang/String;)Ljava/util/stream/Stream;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Scanner.html#findAll(java.util.regex.Pattern)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Scanner.html#findAll(java.util.regex.Pattern)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Regex.Pattern"/></param>
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
@@ -610,7 +610,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Stream.Stream<Java.Util.Regex.MatchResult>>("findAll", "(Ljava/util/regex/Pattern;)Ljava/util/stream/Stream;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Scanner.html#nextLong()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Scanner.html#nextLong()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
         public long NextLong()
@@ -618,7 +618,7 @@ namespace Java.Util
             return IExecuteWithSignature<long>("nextLong", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Scanner.html#nextLong(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Scanner.html#nextLong(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="long"/></returns>
@@ -627,7 +627,7 @@ namespace Java.Util
             return IExecuteWithSignature<long>("nextLong", "(I)J", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Scanner.html#nextShort()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Scanner.html#nextShort()"/>
         /// </summary>
         /// <returns><see cref="short"/></returns>
         public short NextShort()
@@ -635,7 +635,7 @@ namespace Java.Util
             return IExecuteWithSignature<short>("nextShort", "()S");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Scanner.html#nextShort(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/Scanner.html#nextShort(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="short"/></returns>
@@ -644,14 +644,14 @@ namespace Java.Util
             return IExecuteWithSignature<short>("nextShort", "(I)S", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Scanner.html#close()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Scanner.html#close()"/>
         /// </summary>
         public void Close()
         {
             IExecuteWithSignature("close", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/Scanner.html#remove()"/>
+        /// <see href="https://developer.android.com/reference/java/util/Scanner.html#remove()"/>
         /// </summary>
         public void Remove()
         {

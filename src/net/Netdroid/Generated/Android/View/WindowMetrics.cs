@@ -44,7 +44,7 @@ namespace Android.View
         /// </summary>
         /// <param name="arg0"><see cref="Android.Graphics.Rect"/></param>
         /// <param name="arg1"><see cref="Android.View.WindowInsets"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public WindowMetrics(Android.Graphics.Rect arg0, Android.View.WindowInsets arg1)
             : base(arg0, arg1)
         {
@@ -66,25 +66,28 @@ namespace Android.View
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/WindowMetrics.html#getBounds()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/WindowMetrics.html#getBounds()"/>
         /// </summary>
-        public Android.Graphics.Rect Bounds
+        /// <returns><see cref="Android.Graphics.Rect"/></returns>
+        public Android.Graphics.Rect GetBounds()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Rect>("getBounds", "()Landroid/graphics/Rect;"); }
+            return IExecuteWithSignature<Android.Graphics.Rect>("getBounds", "()Landroid/graphics/Rect;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/WindowMetrics.html#getDensity()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/WindowMetrics.html#getWindowInsets()"/>
         /// </summary>
-        public float Density
+        /// <returns><see cref="Android.View.WindowInsets"/></returns>
+        public Android.View.WindowInsets GetWindowInsets()
         {
-            get { return IExecuteWithSignature<float>("getDensity", "()F"); }
+            return IExecuteWithSignature<Android.View.WindowInsets>("getWindowInsets", "()Landroid/view/WindowInsets;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/WindowMetrics.html#getWindowInsets()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/WindowMetrics.html#getDensity()"/>
         /// </summary>
-        public Android.View.WindowInsets WindowInsets
+        /// <returns><see cref="float"/></returns>
+        public float GetDensity()
         {
-            get { return IExecuteWithSignature<Android.View.WindowInsets>("getWindowInsets", "()Landroid/view/WindowInsets;"); }
+            return IExecuteWithSignature<float>("getDensity", "()F");
         }
 
         #endregion

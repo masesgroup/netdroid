@@ -46,13 +46,6 @@ namespace Android.Os
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/PerformanceHintManager.html#getPreferredUpdateRateNanos()"/> 
-        /// </summary>
-        public long PreferredUpdateRateNanos
-        {
-            get { return IExecuteWithSignature<long>("getPreferredUpdateRateNanos", "()J"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/PerformanceHintManager.html#createHintSession(int[],long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -61,6 +54,14 @@ namespace Android.Os
         public Android.Os.PerformanceHintManager.Session CreateHintSession(int[] arg0, long arg1)
         {
             return IExecute<Android.Os.PerformanceHintManager.Session>("createHintSession", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/PerformanceHintManager.html#getPreferredUpdateRateNanos()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetPreferredUpdateRateNanos()
+        {
+            return IExecuteWithSignature<long>("getPreferredUpdateRateNanos", "()J");
         }
 
         #endregion

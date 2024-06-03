@@ -582,39 +582,12 @@ namespace Android.Icu.Text
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/DateFormat.html#getAvailableLocales()"/> 
+        /// <see href="https://developer.android.com/reference/android/icu/text/DateFormat.html#getDateInstance()"/>
         /// </summary>
-        public static Java.Util.Locale[] AvailableLocales
+        /// <returns><see cref="Android.Icu.Text.DateFormat"/></returns>
+        public static Android.Icu.Text.DateFormat GetDateInstance()
         {
-            get { return SExecuteWithSignatureArray<Java.Util.Locale>(LocalBridgeClazz, "getAvailableLocales", "()[Ljava/util/Locale;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/DateFormat.html#getDateInstance()"/> 
-        /// </summary>
-        public static Android.Icu.Text.DateFormat DateInstance
-        {
-            get { return SExecuteWithSignature<Android.Icu.Text.DateFormat>(LocalBridgeClazz, "getDateInstance", "()Landroid/icu/text/DateFormat;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/DateFormat.html#getDateTimeInstance()"/> 
-        /// </summary>
-        public static Android.Icu.Text.DateFormat DateTimeInstance
-        {
-            get { return SExecuteWithSignature<Android.Icu.Text.DateFormat>(LocalBridgeClazz, "getDateTimeInstance", "()Landroid/icu/text/DateFormat;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/DateFormat.html#getInstance()"/> 
-        /// </summary>
-        public static Android.Icu.Text.DateFormat Instance
-        {
-            get { return SExecuteWithSignature<Android.Icu.Text.DateFormat>(LocalBridgeClazz, "getInstance", "()Landroid/icu/text/DateFormat;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/DateFormat.html#getTimeInstance()"/> 
-        /// </summary>
-        public static Android.Icu.Text.DateFormat TimeInstance
-        {
-            get { return SExecuteWithSignature<Android.Icu.Text.DateFormat>(LocalBridgeClazz, "getTimeInstance", "()Landroid/icu/text/DateFormat;"); }
+            return SExecuteWithSignature<Android.Icu.Text.DateFormat>(LocalBridgeClazz, "getDateInstance", "()Landroid/icu/text/DateFormat;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DateFormat.html#getDateInstance(android.icu.util.Calendar,int,android.icu.util.ULocale)"/>
@@ -676,6 +649,14 @@ namespace Android.Icu.Text
         public static Android.Icu.Text.DateFormat GetDateInstance(int arg0)
         {
             return SExecuteWithSignature<Android.Icu.Text.DateFormat>(LocalBridgeClazz, "getDateInstance", "(I)Landroid/icu/text/DateFormat;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/DateFormat.html#getDateTimeInstance()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Icu.Text.DateFormat"/></returns>
+        public static Android.Icu.Text.DateFormat GetDateTimeInstance()
+        {
+            return SExecuteWithSignature<Android.Icu.Text.DateFormat>(LocalBridgeClazz, "getDateTimeInstance", "()Landroid/icu/text/DateFormat;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DateFormat.html#getDateTimeInstance(android.icu.util.Calendar,int,int,android.icu.util.ULocale)"/>
@@ -743,6 +724,14 @@ namespace Android.Icu.Text
         public static Android.Icu.Text.DateFormat GetDateTimeInstance(int arg0, int arg1)
         {
             return SExecute<Android.Icu.Text.DateFormat>(LocalBridgeClazz, "getDateTimeInstance", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/DateFormat.html#getInstance()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Icu.Text.DateFormat"/></returns>
+        public static Android.Icu.Text.DateFormat GetInstance()
+        {
+            return SExecuteWithSignature<Android.Icu.Text.DateFormat>(LocalBridgeClazz, "getInstance", "()Landroid/icu/text/DateFormat;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DateFormat.html#getInstance(android.icu.util.Calendar,android.icu.util.ULocale)"/>
@@ -876,6 +865,14 @@ namespace Android.Icu.Text
             return SExecuteWithSignature<Android.Icu.Text.DateFormat>(LocalBridgeClazz, "getPatternInstance", "(Ljava/lang/String;)Landroid/icu/text/DateFormat;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/DateFormat.html#getTimeInstance()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Icu.Text.DateFormat"/></returns>
+        public static Android.Icu.Text.DateFormat GetTimeInstance()
+        {
+            return SExecuteWithSignature<Android.Icu.Text.DateFormat>(LocalBridgeClazz, "getTimeInstance", "()Landroid/icu/text/DateFormat;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DateFormat.html#getTimeInstance(android.icu.util.Calendar,int,android.icu.util.ULocale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Icu.Util.Calendar"/></param>
@@ -936,31 +933,18 @@ namespace Android.Icu.Text
         {
             return SExecuteWithSignature<Android.Icu.Text.DateFormat>(LocalBridgeClazz, "getTimeInstance", "(I)Landroid/icu/text/DateFormat;", arg0);
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/DateFormat.html#getAvailableLocales()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Locale"/></returns>
+        public static Java.Util.Locale[] GetAvailableLocales()
+        {
+            return SExecuteWithSignatureArray<Java.Util.Locale>(LocalBridgeClazz, "getAvailableLocales", "()[Ljava/util/Locale;");
+        }
 
         #endregion
 
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/DateFormat.html#getCalendar()"/> <see href="https://developer.android.com/reference/android/icu/text/DateFormat.html#setCalendar(android.icu.util.Calendar)"/>
-        /// </summary>
-        public Android.Icu.Util.Calendar Calendar
-        {
-            get { return IExecuteWithSignature<Android.Icu.Util.Calendar>("getCalendar", "()Landroid/icu/util/Calendar;"); } set { IExecuteWithSignature("setCalendar", "(Landroid/icu/util/Calendar;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/DateFormat.html#getNumberFormat()"/> <see href="https://developer.android.com/reference/android/icu/text/DateFormat.html#setNumberFormat(android.icu.text.NumberFormat)"/>
-        /// </summary>
-        public Android.Icu.Text.NumberFormat NumberFormat
-        {
-            get { return IExecuteWithSignature<Android.Icu.Text.NumberFormat>("getNumberFormat", "()Landroid/icu/text/NumberFormat;"); } set { IExecuteWithSignature("setNumberFormat", "(Landroid/icu/text/NumberFormat;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/DateFormat.html#getTimeZone()"/> <see href="https://developer.android.com/reference/android/icu/text/DateFormat.html#setTimeZone(android.icu.util.TimeZone)"/>
-        /// </summary>
-        public Android.Icu.Util.TimeZone TimeZone
-        {
-            get { return IExecuteWithSignature<Android.Icu.Util.TimeZone>("getTimeZone", "()Landroid/icu/util/TimeZone;"); } set { IExecuteWithSignature("setTimeZone", "(Landroid/icu/util/TimeZone;)V", value); }
-        }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DateFormat.html#format(android.icu.util.Calendar,java.lang.StringBuffer,java.text.FieldPosition)"/>
         /// </summary>
@@ -1000,6 +984,30 @@ namespace Android.Icu.Text
         public Android.Icu.Text.DisplayContext GetContext(Android.Icu.Text.DisplayContext.Type arg0)
         {
             return IExecuteWithSignature<Android.Icu.Text.DisplayContext>("getContext", "(Landroid/icu/text/DisplayContext$Type;)Landroid/icu/text/DisplayContext;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/DateFormat.html#getNumberFormat()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Icu.Text.NumberFormat"/></returns>
+        public Android.Icu.Text.NumberFormat GetNumberFormat()
+        {
+            return IExecuteWithSignature<Android.Icu.Text.NumberFormat>("getNumberFormat", "()Landroid/icu/text/NumberFormat;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/DateFormat.html#getCalendar()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Icu.Util.Calendar"/></returns>
+        public Android.Icu.Util.Calendar GetCalendar()
+        {
+            return IExecuteWithSignature<Android.Icu.Util.Calendar>("getCalendar", "()Landroid/icu/util/Calendar;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/DateFormat.html#getTimeZone()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Icu.Util.TimeZone"/></returns>
+        public Android.Icu.Util.TimeZone GetTimeZone()
+        {
+            return IExecuteWithSignature<Android.Icu.Util.TimeZone>("getTimeZone", "()Landroid/icu/util/TimeZone;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DateFormat.html#getBooleanAttribute(android.icu.text.DateFormat.BooleanAttribute)"/>
@@ -1067,6 +1075,14 @@ namespace Android.Icu.Text
             return IExecuteWithSignature<Java.Util.Date>("parse", "(Ljava/lang/String;)Ljava/util/Date;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/DateFormat.html#setCalendar(android.icu.util.Calendar)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Icu.Util.Calendar"/></param>
+        public void SetCalendar(Android.Icu.Util.Calendar arg0)
+        {
+            IExecuteWithSignature("setCalendar", "(Landroid/icu/util/Calendar;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/DateFormat.html#setCalendarLenient(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
@@ -1089,6 +1105,22 @@ namespace Android.Icu.Text
         public void SetLenient(bool arg0)
         {
             IExecuteWithSignature("setLenient", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/DateFormat.html#setNumberFormat(android.icu.text.NumberFormat)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Icu.Text.NumberFormat"/></param>
+        public void SetNumberFormat(Android.Icu.Text.NumberFormat arg0)
+        {
+            IExecuteWithSignature("setNumberFormat", "(Landroid/icu/text/NumberFormat;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/DateFormat.html#setTimeZone(android.icu.util.TimeZone)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Icu.Util.TimeZone"/></param>
+        public void SetTimeZone(Android.Icu.Util.TimeZone arg0)
+        {
+            IExecuteWithSignature("setTimeZone", "(Landroid/icu/util/TimeZone;)V", arg0);
         }
 
         #endregion
@@ -1352,11 +1384,12 @@ namespace Android.Icu.Text
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/icu/text/DateFormat.Field.html#getCalendarField()"/> 
+            /// <see href="https://developer.android.com/reference/android/icu/text/DateFormat.Field.html#getCalendarField()"/>
             /// </summary>
-            public int CalendarField
+            /// <returns><see cref="int"/></returns>
+            public int GetCalendarField()
             {
-                get { return IExecuteWithSignature<int>("getCalendarField", "()I"); }
+                return IExecuteWithSignature<int>("getCalendarField", "()I");
             }
 
             #endregion

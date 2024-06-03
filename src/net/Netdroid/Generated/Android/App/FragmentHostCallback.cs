@@ -35,7 +35,7 @@ namespace Android.App
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
         /// <param name="arg1"><see cref="Android.Os.Handler"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public FragmentHostCallback(Android.Content.Context arg0, Android.Os.Handler arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
@@ -60,7 +60,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/FragmentHostCallback.html#onGetHost()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public object OnGetHost()
         {
             return IExecuteWithSignature("onGetHost", "()Ljava/lang/Object;");
@@ -69,7 +69,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/FragmentHostCallback.html#onGetLayoutInflater()"/>
         /// </summary>
         /// <returns><see cref="Android.View.LayoutInflater"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.View.LayoutInflater OnGetLayoutInflater()
         {
             return IExecuteWithSignature<Android.View.LayoutInflater>("onGetLayoutInflater", "()Landroid/view/LayoutInflater;");
@@ -78,7 +78,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/FragmentHostCallback.html#onHasWindowAnimations()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool OnHasWindowAnimations()
         {
             return IExecuteWithSignature<bool>("onHasWindowAnimations", "()Z");
@@ -88,7 +88,7 @@ namespace Android.App
         /// </summary>
         /// <param name="arg0"><see cref="Android.App.Fragment"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool OnShouldSaveFragmentState(Android.App.Fragment arg0)
         {
             return IExecuteWithSignature<bool>("onShouldSaveFragmentState", "(Landroid/app/Fragment;)Z", arg0);
@@ -97,7 +97,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/FragmentHostCallback.html#onUseFragmentManagerInflaterFactory()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool OnUseFragmentManagerInflaterFactory()
         {
             return IExecuteWithSignature<bool>("onUseFragmentManagerInflaterFactory", "()Z");
@@ -106,7 +106,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/FragmentHostCallback.html#onGetWindowAnimations()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int OnGetWindowAnimations()
         {
             return IExecuteWithSignature<int>("onGetWindowAnimations", "()I");
@@ -115,7 +115,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/FragmentHostCallback.html#onAttachFragment(android.app.Fragment)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.App.Fragment"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnAttachFragment(Android.App.Fragment arg0)
         {
             IExecuteWithSignature("onAttachFragment", "(Landroid/app/Fragment;)V", arg0);
@@ -127,7 +127,7 @@ namespace Android.App
         /// <param name="arg1"><see cref="Java.Io.FileDescriptor"/></param>
         /// <param name="arg2"><see cref="Java.Io.PrintWriter"/></param>
         /// <param name="arg3"><see cref="Java.Lang.String"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnDump(Java.Lang.String arg0, Java.Io.FileDescriptor arg1, Java.Io.PrintWriter arg2, Java.Lang.String[] arg3)
         {
             IExecute("onDump", arg0, arg1, arg2, arg3);
@@ -135,7 +135,7 @@ namespace Android.App
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/FragmentHostCallback.html#onInvalidateOptionsMenu()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnInvalidateOptionsMenu()
         {
             IExecuteWithSignature("onInvalidateOptionsMenu", "()V");
@@ -146,7 +146,7 @@ namespace Android.App
         /// <param name="arg0"><see cref="Android.App.Fragment"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnRequestPermissionsFromFragment(Android.App.Fragment arg0, Java.Lang.String[] arg1, int arg2)
         {
             IExecute("onRequestPermissionsFromFragment", arg0, arg1, arg2);
@@ -158,7 +158,7 @@ namespace Android.App
         /// <param name="arg1"><see cref="Android.Content.Intent"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="Android.Os.Bundle"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnStartActivityFromFragment(Android.App.Fragment arg0, Android.Content.Intent arg1, int arg2, Android.Os.Bundle arg3)
         {
             IExecute("onStartActivityFromFragment", arg0, arg1, arg2, arg3);
@@ -175,7 +175,7 @@ namespace Android.App
         /// <param name="arg6"><see cref="int"/></param>
         /// <param name="arg7"><see cref="Android.Os.Bundle"/></param>
         /// <exception cref="Android.Content.IntentSender.SendIntentException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnStartIntentSenderFromFragment(Android.App.Fragment arg0, Android.Content.IntentSender arg1, int arg2, Android.Content.Intent arg3, int arg4, int arg5, int arg6, Android.Os.Bundle arg7)
         {
             IExecute("onStartIntentSenderFromFragment", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
@@ -201,7 +201,7 @@ namespace Android.App
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
         /// <param name="arg1"><see cref="Android.Os.Handler"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public FragmentHostCallback(Android.Content.Context arg0, Android.Os.Handler arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
@@ -230,7 +230,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/FragmentHostCallback.html#onGetHost()"/>
         /// </summary>
         /// <returns><typeparamref name="E"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public E OnGetHost()
         {
             return IExecuteWithSignature<E>("onGetHost", "()Ljava/lang/Object;");
@@ -239,7 +239,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/FragmentHostCallback.html#onGetLayoutInflater()"/>
         /// </summary>
         /// <returns><see cref="Android.View.LayoutInflater"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.View.LayoutInflater OnGetLayoutInflater()
         {
             return IExecuteWithSignature<Android.View.LayoutInflater>("onGetLayoutInflater", "()Landroid/view/LayoutInflater;");
@@ -248,7 +248,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/FragmentHostCallback.html#onHasWindowAnimations()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool OnHasWindowAnimations()
         {
             return IExecuteWithSignature<bool>("onHasWindowAnimations", "()Z");
@@ -258,7 +258,7 @@ namespace Android.App
         /// </summary>
         /// <param name="arg0"><see cref="Android.App.Fragment"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool OnShouldSaveFragmentState(Android.App.Fragment arg0)
         {
             return IExecuteWithSignature<bool>("onShouldSaveFragmentState", "(Landroid/app/Fragment;)Z", arg0);
@@ -267,7 +267,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/FragmentHostCallback.html#onUseFragmentManagerInflaterFactory()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool OnUseFragmentManagerInflaterFactory()
         {
             return IExecuteWithSignature<bool>("onUseFragmentManagerInflaterFactory", "()Z");
@@ -276,7 +276,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/FragmentHostCallback.html#onGetWindowAnimations()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int OnGetWindowAnimations()
         {
             return IExecuteWithSignature<int>("onGetWindowAnimations", "()I");
@@ -285,7 +285,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/FragmentHostCallback.html#onAttachFragment(android.app.Fragment)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.App.Fragment"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnAttachFragment(Android.App.Fragment arg0)
         {
             IExecuteWithSignature("onAttachFragment", "(Landroid/app/Fragment;)V", arg0);
@@ -297,7 +297,7 @@ namespace Android.App
         /// <param name="arg1"><see cref="Java.Io.FileDescriptor"/></param>
         /// <param name="arg2"><see cref="Java.Io.PrintWriter"/></param>
         /// <param name="arg3"><see cref="Java.Lang.String"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnDump(Java.Lang.String arg0, Java.Io.FileDescriptor arg1, Java.Io.PrintWriter arg2, Java.Lang.String[] arg3)
         {
             IExecute("onDump", arg0, arg1, arg2, arg3);
@@ -305,7 +305,7 @@ namespace Android.App
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/FragmentHostCallback.html#onInvalidateOptionsMenu()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnInvalidateOptionsMenu()
         {
             IExecuteWithSignature("onInvalidateOptionsMenu", "()V");
@@ -316,7 +316,7 @@ namespace Android.App
         /// <param name="arg0"><see cref="Android.App.Fragment"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnRequestPermissionsFromFragment(Android.App.Fragment arg0, Java.Lang.String[] arg1, int arg2)
         {
             IExecute("onRequestPermissionsFromFragment", arg0, arg1, arg2);
@@ -328,7 +328,7 @@ namespace Android.App
         /// <param name="arg1"><see cref="Android.Content.Intent"/></param>
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="Android.Os.Bundle"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnStartActivityFromFragment(Android.App.Fragment arg0, Android.Content.Intent arg1, int arg2, Android.Os.Bundle arg3)
         {
             IExecute("onStartActivityFromFragment", arg0, arg1, arg2, arg3);
@@ -345,7 +345,7 @@ namespace Android.App
         /// <param name="arg6"><see cref="int"/></param>
         /// <param name="arg7"><see cref="Android.Os.Bundle"/></param>
         /// <exception cref="Android.Content.IntentSender.SendIntentException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnStartIntentSenderFromFragment(Android.App.Fragment arg0, Android.Content.IntentSender arg1, int arg2, Android.Content.Intent arg3, int arg4, int arg5, int arg6, Android.Os.Bundle arg7)
         {
             IExecute("onStartIntentSenderFromFragment", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);

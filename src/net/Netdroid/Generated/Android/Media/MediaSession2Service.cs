@@ -52,13 +52,6 @@ namespace Android.Media
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaSession2Service.html#getSessions()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Media.MediaSession2> Sessions
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Media.MediaSession2>>("getSessions", "()Ljava/util/List;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaSession2Service.html#onGetSession(android.media.MediaSession2.ControllerInfo)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Media.MediaSession2.ControllerInfo"/></param>
@@ -75,6 +68,14 @@ namespace Android.Media
         public Android.Media.MediaSession2Service.MediaNotification OnUpdateNotification(Android.Media.MediaSession2 arg0)
         {
             return IExecuteWithSignature<Android.Media.MediaSession2Service.MediaNotification>("onUpdateNotification", "(Landroid/media/MediaSession2;)Landroid/media/MediaSession2Service$MediaNotification;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaSession2Service.html#getSessions()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Media.MediaSession2> GetSessions()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Media.MediaSession2>>("getSessions", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaSession2Service.html#addSession(android.media.MediaSession2)"/>
@@ -126,18 +127,20 @@ namespace Android.Media
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaSession2Service.MediaNotification.html#getNotification()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/MediaSession2Service.MediaNotification.html#getNotification()"/>
             /// </summary>
-            public Android.App.Notification Notification
+            /// <returns><see cref="Android.App.Notification"/></returns>
+            public Android.App.Notification GetNotification()
             {
-                get { return IExecuteWithSignature<Android.App.Notification>("getNotification", "()Landroid/app/Notification;"); }
+                return IExecuteWithSignature<Android.App.Notification>("getNotification", "()Landroid/app/Notification;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaSession2Service.MediaNotification.html#getNotificationId()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/MediaSession2Service.MediaNotification.html#getNotificationId()"/>
             /// </summary>
-            public int NotificationId
+            /// <returns><see cref="int"/></returns>
+            public int GetNotificationId()
             {
-                get { return IExecuteWithSignature<int>("getNotificationId", "()I"); }
+                return IExecuteWithSignature<int>("getNotificationId", "()I");
             }
 
             #endregion

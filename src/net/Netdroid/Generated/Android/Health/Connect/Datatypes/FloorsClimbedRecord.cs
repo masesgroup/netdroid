@@ -52,11 +52,12 @@ namespace Android.Health.Connect.Datatypes
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/FloorsClimbedRecord.html#getFloors()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/FloorsClimbedRecord.html#getFloors()"/>
         /// </summary>
-        public double Floors
+        /// <returns><see cref="double"/></returns>
+        public double GetFloors()
         {
-            get { return IExecuteWithSignature<double>("getFloors", "()D"); }
+            return IExecuteWithSignature<double>("getFloors", "()D");
         }
 
         #endregion

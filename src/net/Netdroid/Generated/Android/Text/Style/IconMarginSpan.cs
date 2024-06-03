@@ -71,18 +71,12 @@ namespace Android.Text.Style
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/style/IconMarginSpan.html#getBitmap()"/> 
+        /// <see href="https://developer.android.com/reference/android/text/style/IconMarginSpan.html#getBitmap()"/>
         /// </summary>
-        public Android.Graphics.Bitmap Bitmap
+        /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
+        public Android.Graphics.Bitmap GetBitmap()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Bitmap>("getBitmap", "()Landroid/graphics/Bitmap;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/style/IconMarginSpan.html#getPadding()"/> 
-        /// </summary>
-        public int Padding
-        {
-            get { return IExecuteWithSignature<int>("getPadding", "()I"); }
+            return IExecuteWithSignature<Android.Graphics.Bitmap>("getBitmap", "()Landroid/graphics/Bitmap;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/IconMarginSpan.html#getLeadingMargin(boolean)"/>
@@ -92,6 +86,14 @@ namespace Android.Text.Style
         public int GetLeadingMargin(bool arg0)
         {
             return IExecuteWithSignature<int>("getLeadingMargin", "(Z)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/text/style/IconMarginSpan.html#getPadding()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPadding()
+        {
+            return IExecuteWithSignature<int>("getPadding", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/text/style/IconMarginSpan.html#chooseHeight(java.lang.CharSequence,int,int,int,int,android.graphics.Paint.FontMetricsInt)"/>

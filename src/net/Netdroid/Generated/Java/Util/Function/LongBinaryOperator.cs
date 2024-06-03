@@ -27,7 +27,7 @@ namespace Java.Util.Function
 {
     #region ILongBinaryOperator
     /// <summary>
-    /// .NET interface for org.mases.netdroid.generated.java.util.function.LongBinaryOperator implementing <see href="https://developer.android.com/reference/java.base/java/util/function/LongBinaryOperator.html"/>
+    /// .NET interface for org.mases.netdroid.generated.java.util.function.LongBinaryOperator implementing <see href="https://developer.android.com/reference/java/util/function/LongBinaryOperator.html"/>
     /// </summary>
     public partial interface ILongBinaryOperator
     {
@@ -68,15 +68,15 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("applyAsLong", new System.EventHandler<CLRListenerEventArgs<CLREventData<long>>>(ApplyAsLongEventHandler));
+            AddEventHandler("applyAsLong", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<long>>>(ApplyAsLongEventHandler));
 
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/LongBinaryOperator.html#applyAsLong(long,long)"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/LongBinaryOperator.html#applyAsLong(long,long)"/>
         /// </summary>
         /// <remarks>If <see cref="OnApplyAsLong"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<long, long, long> OnApplyAsLong { get; set; } = null;
+        public global::System.Func<long, long, long> OnApplyAsLong { get; set; } = null;
 
         void ApplyAsLongEventHandler(object sender, CLRListenerEventArgs<CLREventData<long>> data)
         {
@@ -86,7 +86,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/LongBinaryOperator.html#applyAsLong(long,long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/LongBinaryOperator.html#applyAsLong(long,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -127,7 +127,7 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/LongBinaryOperator.html#applyAsLong(long,long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/LongBinaryOperator.html#applyAsLong(long,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="long"/></param>

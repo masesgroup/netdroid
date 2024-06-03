@@ -30,7 +30,7 @@ namespace Java.Util.Zip
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/DeflaterInputStream.html#%3Cinit%3E(java.io.InputStream,java.util.zip.Deflater,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/DeflaterInputStream.html#%3Cinit%3E(java.io.InputStream,java.util.zip.Deflater,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         /// <param name="arg1"><see cref="Java.Util.Zip.Deflater"/></param>
@@ -40,7 +40,7 @@ namespace Java.Util.Zip
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/DeflaterInputStream.html#%3Cinit%3E(java.io.InputStream,java.util.zip.Deflater)"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/DeflaterInputStream.html#%3Cinit%3E(java.io.InputStream,java.util.zip.Deflater)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         /// <param name="arg1"><see cref="Java.Util.Zip.Deflater"/></param>
@@ -49,7 +49,7 @@ namespace Java.Util.Zip
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/DeflaterInputStream.html#%3Cinit%3E(java.io.InputStream)"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/DeflaterInputStream.html#%3Cinit%3E(java.io.InputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         public DeflaterInputStream(Java.Io.InputStream arg0)

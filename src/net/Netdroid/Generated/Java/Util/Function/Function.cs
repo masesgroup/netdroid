@@ -41,27 +41,14 @@ namespace Java.Util.Function
         #endregion
 
         #region Static methods
-        
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/Function.html#identity()"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnIdentity"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.Function> OnIdentity { get; set; } = null;
-
-        void IdentityEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
-        {
-            var methodToExecute = (OnIdentity != null) ? OnIdentity : Identity;
-            var executionResult = methodToExecute.Invoke();
-            data.SetReturnValue(executionResult);
-        }
-
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/Function.html#identity()"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/Function.html#identity()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Function.Function"/></returns>
-        public virtual Java.Util.Function.Function Identity()
+        /// <remarks>The method invokes the static implementation in the JVM interface</remarks>
+        public static Java.Util.Function.Function Identity()
         {
-            return default;
+            return SExecuteWithSignature<Java.Util.Function.Function>(LocalBridgeClazz, "identity", "()Ljava/util/function/Function;");
         }
 
         #endregion
@@ -72,17 +59,17 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("apply", new System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(ApplyEventHandler));
-            AddEventHandler("andThen", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Function>>>(AndThenEventHandler));
-            AddEventHandler("compose", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Function>>>(ComposeEventHandler));
+            AddEventHandler("apply", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(ApplyEventHandler));
+            AddEventHandler("andThen", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Function>>>(AndThenEventHandler));
+            AddEventHandler("compose", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Function>>>(ComposeEventHandler));
 
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/Function.html#apply(java.lang.Object)"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/Function.html#apply(java.lang.Object)"/>
         /// </summary>
         /// <remarks>If <see cref="OnApply"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<object, object> OnApply { get; set; } = null;
+        public global::System.Func<object, object> OnApply { get; set; } = null;
 
         void ApplyEventHandler(object sender, CLRListenerEventArgs<CLREventData<object>> data)
         {
@@ -92,7 +79,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/Function.html#apply(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/Function.html#apply(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="object"/></returns>
@@ -101,7 +88,7 @@ namespace Java.Util.Function
             return default;
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/Function.html#andThen(java.util.function.Function)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/Function.html#andThen(java.util.function.Function)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <returns><see cref="Java.Util.Function.Function"/></returns>
@@ -112,10 +99,10 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/Function.html#andThen(java.util.function.Function)"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/Function.html#andThen(java.util.function.Function)"/>
         /// </summary>
         /// <remarks>If <see cref="OnAndThen"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.Function, Java.Util.Function.Function> OnAndThen { get; set; } = null;
+        public global::System.Func<Java.Util.Function.Function, Java.Util.Function.Function> OnAndThen { get; set; } = null;
 
         void AndThenEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.Function>> data)
         {
@@ -125,7 +112,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/Function.html#andThen(java.util.function.Function)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/Function.html#andThen(java.util.function.Function)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <returns><see cref="Java.Util.Function.Function"/></returns>
@@ -135,7 +122,7 @@ namespace Java.Util.Function
             return AndThenDefault(arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/Function.html#compose(java.util.function.Function)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/Function.html#compose(java.util.function.Function)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <returns><see cref="Java.Util.Function.Function"/></returns>
@@ -146,10 +133,10 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/Function.html#compose(java.util.function.Function)"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/Function.html#compose(java.util.function.Function)"/>
         /// </summary>
         /// <remarks>If <see cref="OnCompose"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.Function, Java.Util.Function.Function> OnCompose { get; set; } = null;
+        public global::System.Func<Java.Util.Function.Function, Java.Util.Function.Function> OnCompose { get; set; } = null;
 
         void ComposeEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.Function>> data)
         {
@@ -159,7 +146,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/Function.html#compose(java.util.function.Function)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/Function.html#compose(java.util.function.Function)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <returns><see cref="Java.Util.Function.Function"/></returns>
@@ -200,7 +187,7 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/Function.html#apply(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/Function.html#apply(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="object"/></returns>
@@ -209,7 +196,7 @@ namespace Java.Util.Function
             return IExecuteWithSignature("apply", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/Function.html#andThen(java.util.function.Function)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/Function.html#andThen(java.util.function.Function)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <returns><see cref="Java.Util.Function.Function"/></returns>
@@ -218,7 +205,7 @@ namespace Java.Util.Function
             return IExecuteWithSignature<Java.Util.Function.FunctionDirect, Java.Util.Function.Function>("andThen", "(Ljava/util/function/Function;)Ljava/util/function/Function;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/Function.html#compose(java.util.function.Function)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/Function.html#compose(java.util.function.Function)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <returns><see cref="Java.Util.Function.Function"/></returns>
@@ -239,7 +226,7 @@ namespace Java.Util.Function
 
     #region IFunction<T, R>
     /// <summary>
-    /// .NET interface for org.mases.netdroid.generated.java.util.function.Function implementing <see href="https://developer.android.com/reference/java.base/java/util/function/Function.html"/>
+    /// .NET interface for org.mases.netdroid.generated.java.util.function.Function implementing <see href="https://developer.android.com/reference/java/util/function/Function.html"/>
     /// </summary>
     public partial interface IFunction<T, R>
     {
@@ -271,27 +258,14 @@ namespace Java.Util.Function
         #endregion
 
         #region Static methods
-        
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/Function.html#identity()"/>
-        /// </summary>
-        /// <remarks>If <see cref="OnIdentity"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.Function<T, T>> OnIdentity { get; set; } = null;
-
-        void IdentityEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
-        {
-            var methodToExecute = (OnIdentity != null) ? OnIdentity : Identity;
-            var executionResult = methodToExecute.Invoke();
-            data.SetReturnValue(executionResult);
-        }
-
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/Function.html#identity()"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/Function.html#identity()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Function.Function"/></returns>
-        public virtual Java.Util.Function.Function<T, T> Identity()
+        /// <remarks>The method invokes the static implementation in the JVM interface</remarks>
+        public static Java.Util.Function.Function<T, T> Identity()
         {
-            return default;
+            return SExecuteWithSignature<Java.Util.Function.Function<T, T>>(LocalBridgeClazz, "identity", "()Ljava/util/function/Function;");
         }
 
         #endregion
@@ -302,17 +276,17 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("apply", new System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(ApplyEventHandler));
-            AddEventHandler("andThen", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV>>>>(AndThen<V, Arg0objectSuperR, Arg0ExtendsV>EventHandler));
-            AddEventHandler("compose", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Function<Arg0objectSuperV, Arg0ExtendsT>>>>(Compose<V, Arg0objectSuperV, Arg0ExtendsT>EventHandler));
+            AddEventHandler("apply", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(ApplyEventHandler));
+            AddEventHandler("andThen", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV>>>>(AndThen<V, Arg0objectSuperR, Arg0ExtendsV>EventHandler));
+            AddEventHandler("compose", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.Function<Arg0objectSuperV, Arg0ExtendsT>>>>(Compose<V, Arg0objectSuperV, Arg0ExtendsT>EventHandler));
 
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/Function.html#apply(java.lang.Object)"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/Function.html#apply(java.lang.Object)"/>
         /// </summary>
         /// <remarks>If <see cref="OnApply"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<T, R> OnApply { get; set; } = null;
+        public global::System.Func<T, R> OnApply { get; set; } = null;
 
         void ApplyEventHandler(object sender, CLRListenerEventArgs<CLREventData<T>> data)
         {
@@ -322,7 +296,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/Function.html#apply(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/Function.html#apply(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <returns><typeparamref name="R"/></returns>
@@ -331,7 +305,7 @@ namespace Java.Util.Function
             return default;
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/Function.html#andThen(java.util.function.Function)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/Function.html#andThen(java.util.function.Function)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <typeparam name="V"></typeparam>
@@ -339,16 +313,16 @@ namespace Java.Util.Function
         /// <typeparam name="Arg0ExtendsV"><typeparamref name="V"/></typeparam>
         /// <returns><see cref="Java.Util.Function.Function"/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
-        public Java.Util.Function.Function<T, V> AndThen<V, Arg0objectSuperR, Arg0ExtendsV>Default(Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV> arg0) where Arg0objectSuperR: R where Arg0ExtendsV: V
+        public Java.Util.Function.Function<T, V> AndThen<V, Arg0objectSuperR, Arg0ExtendsV>Default(Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV> arg0) where Arg0objectSuperR : R where Arg0ExtendsV : V
         {
             return IExecuteWithSignature<Java.Util.Function.Function<T, V>>("andThenDefault", "(Ljava/util/function/Function;)Ljava/util/function/Function;", arg0);
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/Function.html#andThen(java.util.function.Function)"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/Function.html#andThen(java.util.function.Function)"/>
         /// </summary>
         /// <remarks>If <see cref="OnAndThen<V, Arg0objectSuperR, Arg0ExtendsV>"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV>, Java.Util.Function.Function<T, V>> OnAndThen<V, Arg0objectSuperR, Arg0ExtendsV> { get; set; } = null;
+        public global::System.Func<Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV>, Java.Util.Function.Function<T, V>> OnAndThen<V, Arg0objectSuperR, Arg0ExtendsV> { get; set; } = null;
 
         void AndThen<V, Arg0objectSuperR, Arg0ExtendsV>EventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV>>> data)
         {
@@ -358,7 +332,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/Function.html#andThen(java.util.function.Function)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/Function.html#andThen(java.util.function.Function)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <typeparam name="V"></typeparam>
@@ -366,12 +340,12 @@ namespace Java.Util.Function
         /// <typeparam name="Arg0ExtendsV"><typeparamref name="V"/></typeparam>
         /// <returns><see cref="Java.Util.Function.Function"/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="AndThen<V, Arg0objectSuperR, Arg0ExtendsV>Default"/>; override the method to implement a different behavior</remarks>
-        public virtual Java.Util.Function.Function<T, V> AndThen<V, Arg0objectSuperR, Arg0ExtendsV>(Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV> arg0) where Arg0objectSuperR: R where Arg0ExtendsV: V
+        public virtual Java.Util.Function.Function<T, V> AndThen<V, Arg0objectSuperR, Arg0ExtendsV>(Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV> arg0) where Arg0objectSuperR : R where Arg0ExtendsV : V
         {
             return AndThen<V, Arg0objectSuperR, Arg0ExtendsV>Default(arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/Function.html#compose(java.util.function.Function)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/Function.html#compose(java.util.function.Function)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <typeparam name="V"></typeparam>
@@ -379,16 +353,16 @@ namespace Java.Util.Function
         /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Function.Function"/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
-        public Java.Util.Function.Function<V, R> Compose<V, Arg0objectSuperV, Arg0ExtendsT>Default(Java.Util.Function.Function<Arg0objectSuperV, Arg0ExtendsT> arg0) where Arg0objectSuperV: V where Arg0ExtendsT: T
+        public Java.Util.Function.Function<V, R> Compose<V, Arg0objectSuperV, Arg0ExtendsT>Default(Java.Util.Function.Function<Arg0objectSuperV, Arg0ExtendsT> arg0) where Arg0objectSuperV : V where Arg0ExtendsT : T
         {
             return IExecuteWithSignature<Java.Util.Function.Function<V, R>>("composeDefault", "(Ljava/util/function/Function;)Ljava/util/function/Function;", arg0);
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/Function.html#compose(java.util.function.Function)"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/Function.html#compose(java.util.function.Function)"/>
         /// </summary>
         /// <remarks>If <see cref="OnCompose<V, Arg0objectSuperV, Arg0ExtendsT>"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.Function<Arg0objectSuperV, Arg0ExtendsT>, Java.Util.Function.Function<V, R>> OnCompose<V, Arg0objectSuperV, Arg0ExtendsT> { get; set; } = null;
+        public global::System.Func<Java.Util.Function.Function<Arg0objectSuperV, Arg0ExtendsT>, Java.Util.Function.Function<V, R>> OnCompose<V, Arg0objectSuperV, Arg0ExtendsT> { get; set; } = null;
 
         void Compose<V, Arg0objectSuperV, Arg0ExtendsT>EventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.Function<Arg0objectSuperV, Arg0ExtendsT>>> data)
         {
@@ -398,7 +372,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/Function.html#compose(java.util.function.Function)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/Function.html#compose(java.util.function.Function)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <typeparam name="V"></typeparam>
@@ -406,7 +380,7 @@ namespace Java.Util.Function
         /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Function.Function"/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="Compose<V, Arg0objectSuperV, Arg0ExtendsT>Default"/>; override the method to implement a different behavior</remarks>
-        public virtual Java.Util.Function.Function<V, R> Compose<V, Arg0objectSuperV, Arg0ExtendsT>(Java.Util.Function.Function<Arg0objectSuperV, Arg0ExtendsT> arg0) where Arg0objectSuperV: V where Arg0ExtendsT: T
+        public virtual Java.Util.Function.Function<V, R> Compose<V, Arg0objectSuperV, Arg0ExtendsT>(Java.Util.Function.Function<Arg0objectSuperV, Arg0ExtendsT> arg0) where Arg0objectSuperV : V where Arg0ExtendsT : T
         {
             return Compose<V, Arg0objectSuperV, Arg0ExtendsT>Default(arg0);
         }
@@ -442,7 +416,7 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/Function.html#apply(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/Function.html#apply(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <returns><typeparamref name="R"/></returns>
@@ -451,26 +425,26 @@ namespace Java.Util.Function
             return IExecuteWithSignature<R>("apply", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/Function.html#andThen(java.util.function.Function)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/Function.html#andThen(java.util.function.Function)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <typeparam name="V"></typeparam>
         /// <typeparam name="Arg0objectSuperR"><typeparamref name="R"/></typeparam>
         /// <typeparam name="Arg0ExtendsV"><typeparamref name="V"/></typeparam>
         /// <returns><see cref="Java.Util.Function.Function"/></returns>
-        public override Java.Util.Function.Function<T, V> AndThen<V, Arg0objectSuperR, Arg0ExtendsV>(Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV> arg0) where Arg0objectSuperR: R where Arg0ExtendsV: V
+        public override Java.Util.Function.Function<T, V> AndThen<V, Arg0objectSuperR, Arg0ExtendsV>(Java.Util.Function.Function<Arg0objectSuperR, Arg0ExtendsV> arg0) where Arg0objectSuperR : R where Arg0ExtendsV : V
         {
             return IExecuteWithSignature<Java.Util.Function.FunctionDirect<T, V>, Java.Util.Function.Function<T, V>>("andThen", "(Ljava/util/function/Function;)Ljava/util/function/Function;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/Function.html#compose(java.util.function.Function)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/Function.html#compose(java.util.function.Function)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <typeparam name="V"></typeparam>
         /// <typeparam name="Arg0objectSuperV"><typeparamref name="V"/></typeparam>
         /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Function.Function"/></returns>
-        public override Java.Util.Function.Function<V, R> Compose<V, Arg0objectSuperV, Arg0ExtendsT>(Java.Util.Function.Function<Arg0objectSuperV, Arg0ExtendsT> arg0) where Arg0objectSuperV: V where Arg0ExtendsT: T
+        public override Java.Util.Function.Function<V, R> Compose<V, Arg0objectSuperV, Arg0ExtendsT>(Java.Util.Function.Function<Arg0objectSuperV, Arg0ExtendsT> arg0) where Arg0objectSuperV : V where Arg0ExtendsT : T
         {
             return IExecuteWithSignature<Java.Util.Function.FunctionDirect<V, R>, Java.Util.Function.Function<V, R>>("compose", "(Ljava/util/function/Function;)Ljava/util/function/Function;", arg0);
         }

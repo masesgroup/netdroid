@@ -73,13 +73,6 @@ namespace Android.Icu.Text
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/TimeZoneNames.html#getAvailableMetaZoneIDs()"/> 
-        /// </summary>
-        public Java.Util.Set<Java.Lang.String> AvailableMetaZoneIDs
-        {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getAvailableMetaZoneIDs", "()Ljava/util/Set;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/TimeZoneNames.html#getMetaZoneDisplayName(java.lang.String,android.icu.text.TimeZoneNames.NameType)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -118,6 +111,14 @@ namespace Android.Icu.Text
         public Java.Lang.String GetTimeZoneDisplayName(Java.Lang.String arg0, Android.Icu.Text.TimeZoneNames.NameType arg1)
         {
             return IExecute<Java.Lang.String>("getTimeZoneDisplayName", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/TimeZoneNames.html#getAvailableMetaZoneIDs()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Lang.String> GetAvailableMetaZoneIDs()
+        {
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getAvailableMetaZoneIDs", "()Ljava/util/Set;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/TimeZoneNames.html#getAvailableMetaZoneIDs(java.lang.String)"/>

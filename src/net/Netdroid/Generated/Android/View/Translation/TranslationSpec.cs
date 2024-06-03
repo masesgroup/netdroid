@@ -67,18 +67,12 @@ namespace Android.View.Translation
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/translation/TranslationSpec.html#getDataFormat()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/translation/TranslationSpec.html#getLocale()"/>
         /// </summary>
-        public int DataFormat
+        /// <returns><see cref="Android.Icu.Util.ULocale"/></returns>
+        public Android.Icu.Util.ULocale GetLocale()
         {
-            get { return IExecuteWithSignature<int>("getDataFormat", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/translation/TranslationSpec.html#getLocale()"/> 
-        /// </summary>
-        public Android.Icu.Util.ULocale Locale
-        {
-            get { return IExecuteWithSignature<Android.Icu.Util.ULocale>("getLocale", "()Landroid/icu/util/ULocale;"); }
+            return IExecuteWithSignature<Android.Icu.Util.ULocale>("getLocale", "()Landroid/icu/util/ULocale;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/translation/TranslationSpec.html#describeContents()"/>
@@ -87,6 +81,14 @@ namespace Android.View.Translation
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/translation/TranslationSpec.html#getDataFormat()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDataFormat()
+        {
+            return IExecuteWithSignature<int>("getDataFormat", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/translation/TranslationSpec.html#writeToParcel(android.os.Parcel,int)"/>

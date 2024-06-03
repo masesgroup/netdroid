@@ -76,7 +76,7 @@ namespace Android.Telephony
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyDisplayInfo.html#OVERRIDE_NETWORK_TYPE_NR_NSA_MMWAVE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int OVERRIDE_NETWORK_TYPE_NR_NSA_MMWAVE { get { if (!_OVERRIDE_NETWORK_TYPE_NR_NSA_MMWAVEReady) { _OVERRIDE_NETWORK_TYPE_NR_NSA_MMWAVEContent = SGetField<int>(LocalBridgeClazz, "OVERRIDE_NETWORK_TYPE_NR_NSA_MMWAVE"); _OVERRIDE_NETWORK_TYPE_NR_NSA_MMWAVEReady = true; } return _OVERRIDE_NETWORK_TYPE_NR_NSA_MMWAVEContent; } }
         private static int _OVERRIDE_NETWORK_TYPE_NR_NSA_MMWAVEContent = default;
         private static bool _OVERRIDE_NETWORK_TYPE_NR_NSA_MMWAVEReady = false; // this is used because in case of generics 
@@ -88,20 +88,6 @@ namespace Android.Telephony
         #endregion
 
         #region Instance methods
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/TelephonyDisplayInfo.html#getNetworkType()"/> 
-        /// </summary>
-        public int NetworkType
-        {
-            get { return IExecuteWithSignature<int>("getNetworkType", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/TelephonyDisplayInfo.html#getOverrideNetworkType()"/> 
-        /// </summary>
-        public int OverrideNetworkType
-        {
-            get { return IExecuteWithSignature<int>("getOverrideNetworkType", "()I"); }
-        }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyDisplayInfo.html#isRoaming()"/>
         /// </summary>
@@ -117,6 +103,22 @@ namespace Android.Telephony
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/TelephonyDisplayInfo.html#getNetworkType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetNetworkType()
+        {
+            return IExecuteWithSignature<int>("getNetworkType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/TelephonyDisplayInfo.html#getOverrideNetworkType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetOverrideNetworkType()
+        {
+            return IExecuteWithSignature<int>("getOverrideNetworkType", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/TelephonyDisplayInfo.html#writeToParcel(android.os.Parcel,int)"/>

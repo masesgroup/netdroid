@@ -30,7 +30,7 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/DoubleSummaryStatistics.html#%3Cinit%3E(long,double,double,double)"/>
+        /// <see href="https://developer.android.com/reference/java/util/DoubleSummaryStatistics.html#%3Cinit%3E(long,double,double,double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="double"/></param>
@@ -62,42 +62,47 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/DoubleSummaryStatistics.html#getAverage()"/> 
+        /// <see href="https://developer.android.com/reference/java/util/DoubleSummaryStatistics.html#getAverage()"/>
         /// </summary>
-        public double Average
+        /// <returns><see cref="double"/></returns>
+        public double GetAverage()
         {
-            get { return IExecuteWithSignature<double>("getAverage", "()D"); }
+            return IExecuteWithSignature<double>("getAverage", "()D");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/DoubleSummaryStatistics.html#getCount()"/> 
+        /// <see href="https://developer.android.com/reference/java/util/DoubleSummaryStatistics.html#getMax()"/>
         /// </summary>
-        public long Count
+        /// <returns><see cref="double"/></returns>
+        public double GetMax()
         {
-            get { return IExecuteWithSignature<long>("getCount", "()J"); }
+            return IExecuteWithSignature<double>("getMax", "()D");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/DoubleSummaryStatistics.html#getMax()"/> 
+        /// <see href="https://developer.android.com/reference/java/util/DoubleSummaryStatistics.html#getMin()"/>
         /// </summary>
-        public double Max
+        /// <returns><see cref="double"/></returns>
+        public double GetMin()
         {
-            get { return IExecuteWithSignature<double>("getMax", "()D"); }
+            return IExecuteWithSignature<double>("getMin", "()D");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/DoubleSummaryStatistics.html#getMin()"/> 
+        /// <see href="https://developer.android.com/reference/java/util/DoubleSummaryStatistics.html#getSum()"/>
         /// </summary>
-        public double Min
+        /// <returns><see cref="double"/></returns>
+        public double GetSum()
         {
-            get { return IExecuteWithSignature<double>("getMin", "()D"); }
+            return IExecuteWithSignature<double>("getSum", "()D");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/DoubleSummaryStatistics.html#getSum()"/> 
+        /// <see href="https://developer.android.com/reference/java/util/DoubleSummaryStatistics.html#getCount()"/>
         /// </summary>
-        public double Sum
+        /// <returns><see cref="long"/></returns>
+        public long GetCount()
         {
-            get { return IExecuteWithSignature<double>("getSum", "()D"); }
+            return IExecuteWithSignature<long>("getCount", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/DoubleSummaryStatistics.html#accept(double)"/>
+        /// <see href="https://developer.android.com/reference/java/util/DoubleSummaryStatistics.html#accept(double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         public void Accept(double arg0)
@@ -105,7 +110,7 @@ namespace Java.Util
             IExecuteWithSignature("accept", "(D)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/DoubleSummaryStatistics.html#combine(java.util.DoubleSummaryStatistics)"/>
+        /// <see href="https://developer.android.com/reference/java/util/DoubleSummaryStatistics.html#combine(java.util.DoubleSummaryStatistics)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.DoubleSummaryStatistics"/></param>
         public void Combine(Java.Util.DoubleSummaryStatistics arg0)

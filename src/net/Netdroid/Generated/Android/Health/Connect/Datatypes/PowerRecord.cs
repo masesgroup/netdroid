@@ -64,11 +64,12 @@ namespace Android.Health.Connect.Datatypes
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/PowerRecord.html#getSamples()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/PowerRecord.html#getSamples()"/>
         /// </summary>
-        public Java.Util.List<Android.Health.Connect.Datatypes.PowerRecord.PowerRecordSample> Samples
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Health.Connect.Datatypes.PowerRecord.PowerRecordSample> GetSamples()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Health.Connect.Datatypes.PowerRecord.PowerRecordSample>>("getSamples", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Java.Util.List<Android.Health.Connect.Datatypes.PowerRecord.PowerRecordSample>>("getSamples", "()Ljava/util/List;");
         }
 
         #endregion
@@ -188,18 +189,20 @@ namespace Android.Health.Connect.Datatypes
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/PowerRecord.PowerRecordSample.html#getPower()"/> 
+            /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/PowerRecord.PowerRecordSample.html#getPower()"/>
             /// </summary>
-            public Android.Health.Connect.Datatypes.Units.Power Power
+            /// <returns><see cref="Android.Health.Connect.Datatypes.Units.Power"/></returns>
+            public Android.Health.Connect.Datatypes.Units.Power GetPower()
             {
-                get { return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Power>("getPower", "()Landroid/health/connect/datatypes/units/Power;"); }
+                return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Power>("getPower", "()Landroid/health/connect/datatypes/units/Power;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/PowerRecord.PowerRecordSample.html#getTime()"/> 
+            /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/PowerRecord.PowerRecordSample.html#getTime()"/>
             /// </summary>
-            public Java.Time.Instant Time
+            /// <returns><see cref="Java.Time.Instant"/></returns>
+            public Java.Time.Instant GetTime()
             {
-                get { return IExecuteWithSignature<Java.Time.Instant>("getTime", "()Ljava/time/Instant;"); }
+                return IExecuteWithSignature<Java.Time.Instant>("getTime", "()Ljava/time/Instant;");
             }
 
             #endregion

@@ -28,7 +28,7 @@ namespace Java.Util.Concurrent.Locks
 {
     #region AbstractOwnableSynchronizer
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/AbstractOwnableSynchronizer.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/AbstractOwnableSynchronizer.html"/>
     /// </summary>
     public partial class AbstractOwnableSynchronizer : Java.Io.Serializable
     {
@@ -36,12 +36,12 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("AbstractOwnableSynchronizer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("AbstractOwnableSynchronizer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AbstractOwnableSynchronizer() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("AbstractOwnableSynchronizer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("AbstractOwnableSynchronizer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AbstractOwnableSynchronizer(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -74,7 +74,7 @@ namespace Java.Util.Concurrent.Locks
 
     #region AbstractQueuedLongSynchronizer
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.html"/>
     /// </summary>
     public partial class AbstractQueuedLongSynchronizer : Java.Util.Concurrent.Locks.AbstractOwnableSynchronizer
     {
@@ -82,12 +82,12 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("AbstractQueuedLongSynchronizer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("AbstractQueuedLongSynchronizer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AbstractQueuedLongSynchronizer() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("AbstractQueuedLongSynchronizer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("AbstractQueuedLongSynchronizer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AbstractQueuedLongSynchronizer(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -116,7 +116,7 @@ namespace Java.Util.Concurrent.Locks
         // TODO: complete the class
         #region ConditionObject
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.ConditionObject.html"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.ConditionObject.html"/>
         /// </summary>
         public partial class ConditionObject : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ConditionObject>
         {
@@ -164,7 +164,7 @@ namespace Java.Util.Concurrent.Locks
 
     #region AbstractQueuedSynchronizer
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/AbstractQueuedSynchronizer.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/AbstractQueuedSynchronizer.html"/>
     /// </summary>
     public partial class AbstractQueuedSynchronizer : Java.Util.Concurrent.Locks.AbstractOwnableSynchronizer
     {
@@ -172,12 +172,12 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("AbstractQueuedSynchronizer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("AbstractQueuedSynchronizer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AbstractQueuedSynchronizer() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("AbstractQueuedSynchronizer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("AbstractQueuedSynchronizer class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AbstractQueuedSynchronizer(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -206,7 +206,7 @@ namespace Java.Util.Concurrent.Locks
         // TODO: complete the class
         #region ConditionObject
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/AbstractQueuedSynchronizer.ConditionObject.html"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/AbstractQueuedSynchronizer.ConditionObject.html"/>
         /// </summary>
         public partial class ConditionObject : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ConditionObject>
         {
@@ -254,7 +254,7 @@ namespace Java.Util.Concurrent.Locks
 
     #region Condition
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/Condition.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/Condition.html"/>
     /// </summary>
     public partial class Condition : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Condition>
     {
@@ -262,12 +262,12 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Condition class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Condition class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Condition() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Condition class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Condition class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Condition(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -300,7 +300,7 @@ namespace Java.Util.Concurrent.Locks
 
     #region Lock
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/Lock.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/Lock.html"/>
     /// </summary>
     public partial class Lock : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Lock>
     {
@@ -308,12 +308,12 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Lock class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Lock class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Lock() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Lock class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Lock class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Lock(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -346,7 +346,7 @@ namespace Java.Util.Concurrent.Locks
 
     #region LockSupport
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/LockSupport.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/LockSupport.html"/>
     /// </summary>
     public partial class LockSupport : MASES.JCOBridge.C2JBridge.JVMBridgeBase<LockSupport>
     {
@@ -390,7 +390,7 @@ namespace Java.Util.Concurrent.Locks
 
     #region ReadWriteLock
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/ReadWriteLock.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/ReadWriteLock.html"/>
     /// </summary>
     public partial class ReadWriteLock : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ReadWriteLock>
     {
@@ -398,12 +398,12 @@ namespace Java.Util.Concurrent.Locks
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("ReadWriteLock class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ReadWriteLock class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ReadWriteLock() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("ReadWriteLock class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ReadWriteLock class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ReadWriteLock(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -436,7 +436,7 @@ namespace Java.Util.Concurrent.Locks
 
     #region ReentrantLock
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/ReentrantLock.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/ReentrantLock.html"/>
     /// </summary>
     public partial class ReentrantLock : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ReentrantLock>
     {
@@ -480,7 +480,7 @@ namespace Java.Util.Concurrent.Locks
 
     #region ReentrantReadWriteLock
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/ReentrantReadWriteLock.html"/>
     /// </summary>
     public partial class ReentrantReadWriteLock : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ReentrantReadWriteLock>
     {
@@ -520,7 +520,7 @@ namespace Java.Util.Concurrent.Locks
         // TODO: complete the class
         #region ReadLock
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.ReadLock.html"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/ReentrantReadWriteLock.ReadLock.html"/>
         /// </summary>
         public partial class ReadLock : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ReadLock>
         {
@@ -564,7 +564,7 @@ namespace Java.Util.Concurrent.Locks
 
         #region WriteLock
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/ReentrantReadWriteLock.WriteLock.html"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/ReentrantReadWriteLock.WriteLock.html"/>
         /// </summary>
         public partial class WriteLock : MASES.JCOBridge.C2JBridge.JVMBridgeBase<WriteLock>
         {
@@ -612,7 +612,7 @@ namespace Java.Util.Concurrent.Locks
 
     #region StampedLock
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/StampedLock.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/StampedLock.html"/>
     /// </summary>
     public partial class StampedLock : Java.Io.Serializable
     {

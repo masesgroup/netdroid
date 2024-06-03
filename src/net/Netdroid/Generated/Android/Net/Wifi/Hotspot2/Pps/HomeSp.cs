@@ -60,54 +60,108 @@ namespace Android.Net.Wifi.Hotspot2.Pps
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/HomeSp.html#getFqdn()"/> <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/HomeSp.html#setFqdn(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String Fqdn
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getFqdn", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setFqdn", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/HomeSp.html#getFriendlyName()"/> <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/HomeSp.html#setFriendlyName(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String FriendlyName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getFriendlyName", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setFriendlyName", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/HomeSp.html#getMatchAllOis()"/> <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/HomeSp.html#setMatchAllOis(long[])"/>
-        /// </summary>
-        public long[] MatchAllOis
-        {
-            get { return IExecuteWithSignatureArray<long>("getMatchAllOis", "()[J"); } set { IExecuteWithSignature("setMatchAllOis", "([J)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/HomeSp.html#getMatchAnyOis()"/> <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/HomeSp.html#setMatchAnyOis(long[])"/>
-        /// </summary>
-        public long[] MatchAnyOis
-        {
-            get { return IExecuteWithSignatureArray<long>("getMatchAnyOis", "()[J"); } set { IExecuteWithSignature("setMatchAnyOis", "([J)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/HomeSp.html#getOtherHomePartnersList()"/> <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/HomeSp.html#setOtherHomePartnersList(java.util.Collection)"/>
-        /// </summary>
-        public Java.Util.Collection<Java.Lang.String> OtherHomePartnersList
-        {
-            get { return IExecuteWithSignature<Java.Util.Collection<Java.Lang.String>>("getOtherHomePartnersList", "()Ljava/util/Collection;"); } set { IExecuteWithSignature("setOtherHomePartnersList", "(Ljava/util/Collection;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/HomeSp.html#getRoamingConsortiumOis()"/> <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/HomeSp.html#setRoamingConsortiumOis(long[])"/>
-        /// </summary>
-        public long[] RoamingConsortiumOis
-        {
-            get { return IExecuteWithSignatureArray<long>("getRoamingConsortiumOis", "()[J"); } set { IExecuteWithSignature("setRoamingConsortiumOis", "([J)V", value); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/HomeSp.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/HomeSp.html#getFqdn()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetFqdn()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getFqdn", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/HomeSp.html#getFriendlyName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetFriendlyName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getFriendlyName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/HomeSp.html#getOtherHomePartnersList()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Collection"/></returns>
+        public Java.Util.Collection<Java.Lang.String> GetOtherHomePartnersList()
+        {
+            return IExecuteWithSignature<Java.Util.Collection<Java.Lang.String>>("getOtherHomePartnersList", "()Ljava/util/Collection;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/HomeSp.html#getMatchAllOis()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long[] GetMatchAllOis()
+        {
+            return IExecuteWithSignatureArray<long>("getMatchAllOis", "()[J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/HomeSp.html#getMatchAnyOis()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long[] GetMatchAnyOis()
+        {
+            return IExecuteWithSignatureArray<long>("getMatchAnyOis", "()[J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/HomeSp.html#getRoamingConsortiumOis()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long[] GetRoamingConsortiumOis()
+        {
+            return IExecuteWithSignatureArray<long>("getRoamingConsortiumOis", "()[J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/HomeSp.html#setFqdn(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetFqdn(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setFqdn", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/HomeSp.html#setFriendlyName(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetFriendlyName(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setFriendlyName", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/HomeSp.html#setMatchAllOis(long[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        public void SetMatchAllOis(long[] arg0)
+        {
+            IExecuteWithSignature("setMatchAllOis", "([J)V", new object[] { arg0 });
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/HomeSp.html#setMatchAnyOis(long[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        public void SetMatchAnyOis(long[] arg0)
+        {
+            IExecuteWithSignature("setMatchAnyOis", "([J)V", new object[] { arg0 });
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/HomeSp.html#setOtherHomePartnersList(java.util.Collection)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
+        public void SetOtherHomePartnersList(Java.Util.Collection<Java.Lang.String> arg0)
+        {
+            IExecuteWithSignature("setOtherHomePartnersList", "(Ljava/util/Collection;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/HomeSp.html#setRoamingConsortiumOis(long[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        public void SetRoamingConsortiumOis(long[] arg0)
+        {
+            IExecuteWithSignature("setRoamingConsortiumOis", "([J)V", new object[] { arg0 });
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/hotspot2/pps/HomeSp.html#writeToParcel(android.os.Parcel,int)"/>

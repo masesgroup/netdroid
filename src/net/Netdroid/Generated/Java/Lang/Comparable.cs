@@ -46,7 +46,7 @@ namespace Java.Lang
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Comparable.html#compareTo(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Comparable.html#compareTo(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="int"/></returns>
@@ -108,7 +108,7 @@ namespace Java.Lang
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Comparable.html#compareTo(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Comparable.html#compareTo(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <returns><see cref="int"/></returns>

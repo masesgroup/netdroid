@@ -30,7 +30,7 @@ namespace Java.Util.Concurrent
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CountDownLatch.html#%3Cinit%3E(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CountDownLatch.html#%3Cinit%3E(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public CountDownLatch(int arg0)
@@ -54,14 +54,7 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CountDownLatch.html#getCount()"/> 
-        /// </summary>
-        public long Count
-        {
-            get { return IExecuteWithSignature<long>("getCount", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CountDownLatch.html#await(long,java.util.concurrent.TimeUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CountDownLatch.html#await(long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
@@ -72,7 +65,15 @@ namespace Java.Util.Concurrent
             return IExecute<bool>("await", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CountDownLatch.html#await()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CountDownLatch.html#getCount()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetCount()
+        {
+            return IExecuteWithSignature<long>("getCount", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CountDownLatch.html#await()"/>
         /// </summary>
         /// <exception cref="Java.Lang.InterruptedException"/>
         public void Await()
@@ -80,7 +81,7 @@ namespace Java.Util.Concurrent
             IExecuteWithSignature("await", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CountDownLatch.html#countDown()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CountDownLatch.html#countDown()"/>
         /// </summary>
         public void CountDown()
         {

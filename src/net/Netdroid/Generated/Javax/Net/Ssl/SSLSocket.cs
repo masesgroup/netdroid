@@ -46,105 +46,79 @@ namespace Javax.Net.Ssl
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLSocket.html#getApplicationProtocol()"/> 
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#getEnableSessionCreation()"/>
         /// </summary>
-        public Java.Lang.String ApplicationProtocol
+        /// <returns><see cref="bool"/></returns>
+        public bool GetEnableSessionCreation()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getApplicationProtocol", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<bool>("getEnableSessionCreation", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLSocket.html#getEnabledCipherSuites()"/> <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLSocket.html#setEnabledCipherSuites(java.lang.String[])"/>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#getNeedClientAuth()"/>
         /// </summary>
-        public Java.Lang.String[] EnabledCipherSuites
+        /// <returns><see cref="bool"/></returns>
+        public bool GetNeedClientAuth()
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getEnabledCipherSuites", "()[Ljava/lang/String;"); } set { IExecuteWithSignature("setEnabledCipherSuites", "([Ljava/lang/String;)V", value); }
+            return IExecuteWithSignature<bool>("getNeedClientAuth", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLSocket.html#getEnabledProtocols()"/> <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLSocket.html#setEnabledProtocols(java.lang.String[])"/>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#getUseClientMode()"/>
         /// </summary>
-        public Java.Lang.String[] EnabledProtocols
+        /// <returns><see cref="bool"/></returns>
+        public bool GetUseClientMode()
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getEnabledProtocols", "()[Ljava/lang/String;"); } set { IExecuteWithSignature("setEnabledProtocols", "([Ljava/lang/String;)V", value); }
+            return IExecuteWithSignature<bool>("getUseClientMode", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLSocket.html#getEnableSessionCreation()"/> <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLSocket.html#setEnableSessionCreation(boolean)"/>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#getWantClientAuth()"/>
         /// </summary>
-        public bool EnableSessionCreation
+        /// <returns><see cref="bool"/></returns>
+        public bool GetWantClientAuth()
         {
-            get { return IExecuteWithSignature<bool>("getEnableSessionCreation", "()Z"); } set { IExecuteWithSignature("setEnableSessionCreation", "(Z)V", value); }
+            return IExecuteWithSignature<bool>("getWantClientAuth", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLSocket.html#getHandshakeApplicationProtocol()"/> 
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#getEnabledCipherSuites()"/>
         /// </summary>
-        public Java.Lang.String HandshakeApplicationProtocol
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String[] GetEnabledCipherSuites()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getHandshakeApplicationProtocol", "()Ljava/lang/String;"); }
+            return IExecuteWithSignatureArray<Java.Lang.String>("getEnabledCipherSuites", "()[Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLSocket.html#getHandshakeApplicationProtocolSelector()"/> <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLSocket.html#setHandshakeApplicationProtocolSelector(java.util.function.BiFunction)"/>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#getEnabledProtocols()"/>
         /// </summary>
-        public Java.Util.Function.BiFunction<Javax.Net.Ssl.SSLSocket, Java.Util.List<Java.Lang.String>, Java.Lang.String> HandshakeApplicationProtocolSelector
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String[] GetEnabledProtocols()
         {
-            get { return IExecuteWithSignature<Java.Util.Function.BiFunction<Javax.Net.Ssl.SSLSocket, Java.Util.List<Java.Lang.String>, Java.Lang.String>>("getHandshakeApplicationProtocolSelector", "()Ljava/util/function/BiFunction;"); } set { IExecuteWithSignature("setHandshakeApplicationProtocolSelector", "(Ljava/util/function/BiFunction;)V", value); }
+            return IExecuteWithSignatureArray<Java.Lang.String>("getEnabledProtocols", "()[Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLSocket.html#getHandshakeSession()"/> 
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#getSupportedCipherSuites()"/>
         /// </summary>
-        public Javax.Net.Ssl.SSLSession HandshakeSession
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String[] GetSupportedCipherSuites()
         {
-            get { return IExecuteWithSignature<Javax.Net.Ssl.SSLSession>("getHandshakeSession", "()Ljavax/net/ssl/SSLSession;"); }
+            return IExecuteWithSignatureArray<Java.Lang.String>("getSupportedCipherSuites", "()[Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLSocket.html#getNeedClientAuth()"/> <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLSocket.html#setNeedClientAuth(boolean)"/>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#getSupportedProtocols()"/>
         /// </summary>
-        public bool NeedClientAuth
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String[] GetSupportedProtocols()
         {
-            get { return IExecuteWithSignature<bool>("getNeedClientAuth", "()Z"); } set { IExecuteWithSignature("setNeedClientAuth", "(Z)V", value); }
+            return IExecuteWithSignatureArray<Java.Lang.String>("getSupportedProtocols", "()[Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLSocket.html#getSession()"/> 
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#getSession()"/>
         /// </summary>
-        public Javax.Net.Ssl.SSLSession Session
+        /// <returns><see cref="Javax.Net.Ssl.SSLSession"/></returns>
+        public Javax.Net.Ssl.SSLSession GetSession()
         {
-            get { return IExecuteWithSignature<Javax.Net.Ssl.SSLSession>("getSession", "()Ljavax/net/ssl/SSLSession;"); }
+            return IExecuteWithSignature<Javax.Net.Ssl.SSLSession>("getSession", "()Ljavax/net/ssl/SSLSession;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLSocket.html#getSSLParameters()"/> <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLSocket.html#setSSLParameters(javax.net.ssl.SSLParameters)"/>
-        /// </summary>
-        public Javax.Net.Ssl.SSLParameters SSLParameters
-        {
-            get { return IExecuteWithSignature<Javax.Net.Ssl.SSLParameters>("getSSLParameters", "()Ljavax/net/ssl/SSLParameters;"); } set { IExecuteWithSignature("setSSLParameters", "(Ljavax/net/ssl/SSLParameters;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLSocket.html#getSupportedCipherSuites()"/> 
-        /// </summary>
-        public Java.Lang.String[] SupportedCipherSuites
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getSupportedCipherSuites", "()[Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLSocket.html#getSupportedProtocols()"/> 
-        /// </summary>
-        public Java.Lang.String[] SupportedProtocols
-        {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getSupportedProtocols", "()[Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLSocket.html#getUseClientMode()"/> <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLSocket.html#setUseClientMode(boolean)"/>
-        /// </summary>
-        public bool UseClientMode
-        {
-            get { return IExecuteWithSignature<bool>("getUseClientMode", "()Z"); } set { IExecuteWithSignature("setUseClientMode", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLSocket.html#getWantClientAuth()"/> <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLSocket.html#setWantClientAuth(boolean)"/>
-        /// </summary>
-        public bool WantClientAuth
-        {
-            get { return IExecuteWithSignature<bool>("getWantClientAuth", "()Z"); } set { IExecuteWithSignature("setWantClientAuth", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLSocket.html#addHandshakeCompletedListener(javax.net.ssl.HandshakeCompletedListener)"/>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#addHandshakeCompletedListener(javax.net.ssl.HandshakeCompletedListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Net.Ssl.HandshakeCompletedListener"/></param>
         public void AddHandshakeCompletedListener(Javax.Net.Ssl.HandshakeCompletedListener arg0)
@@ -152,7 +126,7 @@ namespace Javax.Net.Ssl
             IExecuteWithSignature("addHandshakeCompletedListener", "(Ljavax/net/ssl/HandshakeCompletedListener;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLSocket.html#removeHandshakeCompletedListener(javax.net.ssl.HandshakeCompletedListener)"/>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#removeHandshakeCompletedListener(javax.net.ssl.HandshakeCompletedListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Net.Ssl.HandshakeCompletedListener"/></param>
         public void RemoveHandshakeCompletedListener(Javax.Net.Ssl.HandshakeCompletedListener arg0)
@@ -160,12 +134,124 @@ namespace Javax.Net.Ssl
             IExecuteWithSignature("removeHandshakeCompletedListener", "(Ljavax/net/ssl/HandshakeCompletedListener;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/net/ssl/SSLSocket.html#startHandshake()"/>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#setEnabledCipherSuites(java.lang.String[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetEnabledCipherSuites(Java.Lang.String[] arg0)
+        {
+            IExecuteWithSignature("setEnabledCipherSuites", "([Ljava/lang/String;)V", new object[] { arg0 });
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#setEnabledProtocols(java.lang.String[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetEnabledProtocols(Java.Lang.String[] arg0)
+        {
+            IExecuteWithSignature("setEnabledProtocols", "([Ljava/lang/String;)V", new object[] { arg0 });
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#setEnableSessionCreation(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetEnableSessionCreation(bool arg0)
+        {
+            IExecuteWithSignature("setEnableSessionCreation", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#setNeedClientAuth(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetNeedClientAuth(bool arg0)
+        {
+            IExecuteWithSignature("setNeedClientAuth", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#setUseClientMode(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetUseClientMode(bool arg0)
+        {
+            IExecuteWithSignature("setUseClientMode", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#setWantClientAuth(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetWantClientAuth(bool arg0)
+        {
+            IExecuteWithSignature("setWantClientAuth", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#startHandshake()"/>
         /// </summary>
         /// <exception cref="Java.Io.IOException"/>
         public void StartHandshake()
         {
             IExecuteWithSignature("startHandshake", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#getApplicationProtocol()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetApplicationProtocol()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getApplicationProtocol", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#getHandshakeApplicationProtocol()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetHandshakeApplicationProtocol()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getHandshakeApplicationProtocol", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#getHandshakeApplicationProtocolSelector()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Function.BiFunction"/></returns>
+        public Java.Util.Function.BiFunction<Javax.Net.Ssl.SSLSocket, Java.Util.List<Java.Lang.String>, Java.Lang.String> GetHandshakeApplicationProtocolSelector()
+        {
+            return IExecuteWithSignature<Java.Util.Function.BiFunction<Javax.Net.Ssl.SSLSocket, Java.Util.List<Java.Lang.String>, Java.Lang.String>>("getHandshakeApplicationProtocolSelector", "()Ljava/util/function/BiFunction;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#getHandshakeApplicationProtocolSelector()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Function.BiFunction"/></returns>
+        public Java.Util.Function.BiFunction<Javax.Net.Ssl.SSLSocket, Java.Util.List<Java.Lang.String>, Java.Lang.String> GetHandshakeApplicationProtocolSelectorDirect()
+        {
+            return IExecuteWithSignature<Java.Util.Function.BiFunctionDirect<Javax.Net.Ssl.SSLSocket, Java.Util.List<Java.Lang.String>, Java.Lang.String>, Java.Util.Function.BiFunction<Javax.Net.Ssl.SSLSocket, Java.Util.List<Java.Lang.String>, Java.Lang.String>>("getHandshakeApplicationProtocolSelector", "()Ljava/util/function/BiFunction;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#getSSLParameters()"/>
+        /// </summary>
+        /// <returns><see cref="Javax.Net.Ssl.SSLParameters"/></returns>
+        public Javax.Net.Ssl.SSLParameters GetSSLParameters()
+        {
+            return IExecuteWithSignature<Javax.Net.Ssl.SSLParameters>("getSSLParameters", "()Ljavax/net/ssl/SSLParameters;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#getHandshakeSession()"/>
+        /// </summary>
+        /// <returns><see cref="Javax.Net.Ssl.SSLSession"/></returns>
+        public Javax.Net.Ssl.SSLSession GetHandshakeSession()
+        {
+            return IExecuteWithSignature<Javax.Net.Ssl.SSLSession>("getHandshakeSession", "()Ljavax/net/ssl/SSLSession;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#setHandshakeApplicationProtocolSelector(java.util.function.BiFunction)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.BiFunction"/></param>
+        public void SetHandshakeApplicationProtocolSelector(Java.Util.Function.BiFunction<Javax.Net.Ssl.SSLSocket, Java.Util.List<Java.Lang.String>, Java.Lang.String> arg0)
+        {
+            IExecuteWithSignature("setHandshakeApplicationProtocolSelector", "(Ljava/util/function/BiFunction;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLSocket.html#setSSLParameters(javax.net.ssl.SSLParameters)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Javax.Net.Ssl.SSLParameters"/></param>
+        public void SetSSLParameters(Javax.Net.Ssl.SSLParameters arg0)
+        {
+            IExecuteWithSignature("setSSLParameters", "(Ljavax/net/ssl/SSLParameters;)V", arg0);
         }
 
         #endregion

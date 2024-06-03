@@ -30,7 +30,7 @@ namespace Javax.Security.Auth
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/security/auth/SubjectDomainCombiner.html#%3Cinit%3E(javax.security.auth.Subject)"/>
+        /// <see href="https://developer.android.com/reference/javax/security/auth/SubjectDomainCombiner.html#%3Cinit%3E(javax.security.auth.Subject)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Security.Auth.Subject"/></param>
         public SubjectDomainCombiner(Javax.Security.Auth.Subject arg0)
@@ -54,14 +54,7 @@ namespace Javax.Security.Auth
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/security/auth/SubjectDomainCombiner.html#getSubject()"/> 
-        /// </summary>
-        public Javax.Security.Auth.Subject Subject
-        {
-            get { return IExecuteWithSignature<Javax.Security.Auth.Subject>("getSubject", "()Ljavax/security/auth/Subject;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/security/auth/SubjectDomainCombiner.html#combine(java.security.ProtectionDomain[],java.security.ProtectionDomain[])"/>
+        /// <see href="https://developer.android.com/reference/javax/security/auth/SubjectDomainCombiner.html#combine(java.security.ProtectionDomain[],java.security.ProtectionDomain[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.ProtectionDomain"/></param>
         /// <param name="arg1"><see cref="Java.Security.ProtectionDomain"/></param>
@@ -69,6 +62,14 @@ namespace Javax.Security.Auth
         public Java.Security.ProtectionDomain[] Combine(Java.Security.ProtectionDomain[] arg0, Java.Security.ProtectionDomain[] arg1)
         {
             return IExecuteArray<Java.Security.ProtectionDomain>("combine", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/security/auth/SubjectDomainCombiner.html#getSubject()"/>
+        /// </summary>
+        /// <returns><see cref="Javax.Security.Auth.Subject"/></returns>
+        public Javax.Security.Auth.Subject GetSubject()
+        {
+            return IExecuteWithSignature<Javax.Security.Auth.Subject>("getSubject", "()Ljavax/security/auth/Subject;");
         }
 
         #endregion

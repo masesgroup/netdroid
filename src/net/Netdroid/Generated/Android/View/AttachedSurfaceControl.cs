@@ -64,13 +64,6 @@ namespace Android.View
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/AttachedSurfaceControl.html#getBufferTransformHint()"/> 
-        /// </summary>
-        public int BufferTransformHint
-        {
-            get { return IExecuteWithSignature<int>("getBufferTransformHint", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/AttachedSurfaceControl.html#buildReparentTransaction(android.view.SurfaceControl)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.SurfaceControl"/></param>
@@ -87,6 +80,14 @@ namespace Android.View
         public bool ApplyTransactionOnDraw(Android.View.SurfaceControl.Transaction arg0)
         {
             return IExecuteWithSignature<bool>("applyTransactionOnDraw", "(Landroid/view/SurfaceControl$Transaction;)Z", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/AttachedSurfaceControl.html#getBufferTransformHint()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetBufferTransformHint()
+        {
+            return IExecuteWithSignature<int>("getBufferTransformHint", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/AttachedSurfaceControl.html#addOnBufferTransformHintChangedListener(android.view.AttachedSurfaceControl.OnBufferTransformHintChangedListener)"/>
@@ -149,7 +150,7 @@ namespace Android.View
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onBufferTransformHintChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnBufferTransformHintChangedEventHandler));
+                AddEventHandler("onBufferTransformHintChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnBufferTransformHintChangedEventHandler));
 
             }
 
@@ -157,7 +158,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/AttachedSurfaceControl.OnBufferTransformHintChangedListener.html#onBufferTransformHintChanged(int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnBufferTransformHintChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<int> OnOnBufferTransformHintChanged { get; set; } = null;
+            public global::System.Action<int> OnOnBufferTransformHintChanged { get; set; } = null;
 
             void OnBufferTransformHintChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
             {

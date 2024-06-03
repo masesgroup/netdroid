@@ -46,13 +46,6 @@ namespace Android.Bluetooth
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothServerSocket.html#getPsm()"/> 
-        /// </summary>
-        public int Psm
-        {
-            get { return IExecuteWithSignature<int>("getPsm", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothServerSocket.html#accept()"/>
         /// </summary>
         /// <returns><see cref="Android.Bluetooth.BluetoothSocket"/></returns>
@@ -70,6 +63,14 @@ namespace Android.Bluetooth
         public Android.Bluetooth.BluetoothSocket Accept(int arg0)
         {
             return IExecuteWithSignature<Android.Bluetooth.BluetoothSocket>("accept", "(I)Landroid/bluetooth/BluetoothSocket;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothServerSocket.html#getPsm()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPsm()
+        {
+            return IExecuteWithSignature<int>("getPsm", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothServerSocket.html#close()"/>

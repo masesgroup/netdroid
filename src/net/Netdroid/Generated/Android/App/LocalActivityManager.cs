@@ -34,7 +34,7 @@ namespace Android.App
         /// </summary>
         /// <param name="arg0"><see cref="Android.App.Activity"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public LocalActivityManager(Android.App.Activity arg0, bool arg1)
             : base(arg0, arg1)
         {
@@ -56,36 +56,29 @@ namespace Android.App
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/LocalActivityManager.html#getCurrentActivity()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Android.App.Activity CurrentActivity
-        {
-            get { return IExecuteWithSignature<Android.App.Activity>("getCurrentActivity", "()Landroid/app/Activity;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/LocalActivityManager.html#getCurrentId()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Java.Lang.String CurrentId
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCurrentId", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/LocalActivityManager.html#getActivity(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Android.App.Activity"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.App.Activity GetActivity(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Android.App.Activity>("getActivity", "(Ljava/lang/String;)Landroid/app/Activity;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/LocalActivityManager.html#getCurrentActivity()"/>
+        /// </summary>
+        /// <returns><see cref="Android.App.Activity"/></returns>
+        [global::System.Obsolete()]
+        public Android.App.Activity GetCurrentActivity()
+        {
+            return IExecuteWithSignature<Android.App.Activity>("getCurrentActivity", "()Landroid/app/Activity;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/LocalActivityManager.html#saveInstanceState()"/>
         /// </summary>
         /// <returns><see cref="Android.Os.Bundle"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Os.Bundle SaveInstanceState()
         {
             return IExecuteWithSignature<Android.Os.Bundle>("saveInstanceState", "()Landroid/os/Bundle;");
@@ -96,7 +89,7 @@ namespace Android.App
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
         /// <returns><see cref="Android.View.Window"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.View.Window DestroyActivity(Java.Lang.String arg0, bool arg1)
         {
             return IExecute<Android.View.Window>("destroyActivity", arg0, arg1);
@@ -107,16 +100,25 @@ namespace Android.App
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Android.Content.Intent"/></param>
         /// <returns><see cref="Android.View.Window"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.View.Window StartActivity(Java.Lang.String arg0, Android.Content.Intent arg1)
         {
             return IExecute<Android.View.Window>("startActivity", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/LocalActivityManager.html#getCurrentId()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        [global::System.Obsolete()]
+        public Java.Lang.String GetCurrentId()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getCurrentId", "()Ljava/lang/String;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/LocalActivityManager.html#dispatchCreate(android.os.Bundle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Os.Bundle"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void DispatchCreate(Android.Os.Bundle arg0)
         {
             IExecuteWithSignature("dispatchCreate", "(Landroid/os/Bundle;)V", arg0);
@@ -125,7 +127,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/LocalActivityManager.html#dispatchDestroy(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void DispatchDestroy(bool arg0)
         {
             IExecuteWithSignature("dispatchDestroy", "(Z)V", arg0);
@@ -134,7 +136,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/LocalActivityManager.html#dispatchPause(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void DispatchPause(bool arg0)
         {
             IExecuteWithSignature("dispatchPause", "(Z)V", arg0);
@@ -142,7 +144,7 @@ namespace Android.App
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/LocalActivityManager.html#dispatchResume()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void DispatchResume()
         {
             IExecuteWithSignature("dispatchResume", "()V");
@@ -150,7 +152,7 @@ namespace Android.App
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/LocalActivityManager.html#dispatchStop()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void DispatchStop()
         {
             IExecuteWithSignature("dispatchStop", "()V");
@@ -158,7 +160,7 @@ namespace Android.App
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/LocalActivityManager.html#removeAllActivities()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void RemoveAllActivities()
         {
             IExecuteWithSignature("removeAllActivities", "()V");

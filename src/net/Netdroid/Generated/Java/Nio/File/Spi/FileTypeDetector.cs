@@ -46,7 +46,7 @@ namespace Java.Nio.File.Spi
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/spi/FileTypeDetector.html#probeContentType(java.nio.file.Path)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/spi/FileTypeDetector.html#probeContentType(java.nio.file.Path)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.File.Path"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>

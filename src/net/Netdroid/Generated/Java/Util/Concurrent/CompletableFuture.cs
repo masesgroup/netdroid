@@ -50,7 +50,7 @@ namespace Java.Util.Concurrent
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#completedFuture(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#completedFuture(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
@@ -59,7 +59,7 @@ namespace Java.Util.Concurrent
             return SExecuteWithSignature<Java.Util.Concurrent.CompletableFuture>(LocalBridgeClazz, "completedFuture", "(Ljava/lang/Object;)Ljava/util/concurrent/CompletableFuture;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#failedFuture(java.lang.Throwable)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#failedFuture(java.lang.Throwable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Throwable"/></param>
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
@@ -68,7 +68,7 @@ namespace Java.Util.Concurrent
             return SExecuteWithSignature<Java.Util.Concurrent.CompletableFuture>(LocalBridgeClazz, "failedFuture", "(Ljava/lang/Throwable;)Ljava/util/concurrent/CompletableFuture;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#supplyAsync(java.util.function.Supplier,java.util.concurrent.Executor)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#supplyAsync(java.util.function.Supplier,java.util.concurrent.Executor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
@@ -78,7 +78,7 @@ namespace Java.Util.Concurrent
             return SExecute<Java.Util.Concurrent.CompletableFuture>(LocalBridgeClazz, "supplyAsync", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#supplyAsync(java.util.function.Supplier)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#supplyAsync(java.util.function.Supplier)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
@@ -87,7 +87,7 @@ namespace Java.Util.Concurrent
             return SExecuteWithSignature<Java.Util.Concurrent.CompletableFuture>(LocalBridgeClazz, "supplyAsync", "(Ljava/util/function/Supplier;)Ljava/util/concurrent/CompletableFuture;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#completedStage(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#completedStage(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
@@ -96,7 +96,7 @@ namespace Java.Util.Concurrent
             return SExecuteWithSignature<Java.Util.Concurrent.CompletionStage>(LocalBridgeClazz, "completedStage", "(Ljava/lang/Object;)Ljava/util/concurrent/CompletionStage;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#failedStage(java.lang.Throwable)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#failedStage(java.lang.Throwable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Throwable"/></param>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
@@ -105,7 +105,7 @@ namespace Java.Util.Concurrent
             return SExecuteWithSignature<Java.Util.Concurrent.CompletionStage>(LocalBridgeClazz, "failedStage", "(Ljava/lang/Throwable;)Ljava/util/concurrent/CompletionStage;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#anyOf(java.util.concurrent.CompletableFuture[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#anyOf(java.util.concurrent.CompletableFuture[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletableFuture"/></param>
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
@@ -114,7 +114,7 @@ namespace Java.Util.Concurrent
             if (arg0.Length == 0) return SExecuteWithSignature<Java.Util.Concurrent.CompletableFuture>(LocalBridgeClazz, "anyOf", "([Ljava/util/concurrent/CompletableFuture;)Ljava/util/concurrent/CompletableFuture;"); else return SExecuteWithSignature<Java.Util.Concurrent.CompletableFuture>(LocalBridgeClazz, "anyOf", "([Ljava/util/concurrent/CompletableFuture;)Ljava/util/concurrent/CompletableFuture;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#allOf(java.util.concurrent.CompletableFuture[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#allOf(java.util.concurrent.CompletableFuture[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletableFuture"/></param>
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
@@ -123,7 +123,7 @@ namespace Java.Util.Concurrent
             if (arg0.Length == 0) return SExecuteWithSignature<Java.Util.Concurrent.CompletableFuture>(LocalBridgeClazz, "allOf", "([Ljava/util/concurrent/CompletableFuture;)Ljava/util/concurrent/CompletableFuture;"); else return SExecuteWithSignature<Java.Util.Concurrent.CompletableFuture>(LocalBridgeClazz, "allOf", "([Ljava/util/concurrent/CompletableFuture;)Ljava/util/concurrent/CompletableFuture;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#runAsync(java.lang.Runnable,java.util.concurrent.Executor)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#runAsync(java.lang.Runnable,java.util.concurrent.Executor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
@@ -133,7 +133,7 @@ namespace Java.Util.Concurrent
             return SExecute<Java.Util.Concurrent.CompletableFuture>(LocalBridgeClazz, "runAsync", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#runAsync(java.lang.Runnable)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#runAsync(java.lang.Runnable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
@@ -142,7 +142,7 @@ namespace Java.Util.Concurrent
             return SExecuteWithSignature<Java.Util.Concurrent.CompletableFuture>(LocalBridgeClazz, "runAsync", "(Ljava/lang/Runnable;)Ljava/util/concurrent/CompletableFuture;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#delayedExecutor(long,java.util.concurrent.TimeUnit,java.util.concurrent.Executor)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#delayedExecutor(long,java.util.concurrent.TimeUnit,java.util.concurrent.Executor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
@@ -153,7 +153,7 @@ namespace Java.Util.Concurrent
             return SExecute<Java.Util.Concurrent.Executor>(LocalBridgeClazz, "delayedExecutor", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#delayedExecutor(long,java.util.concurrent.TimeUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#delayedExecutor(long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
@@ -167,14 +167,7 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#getNumberOfDependents()"/> 
-        /// </summary>
-        public int NumberOfDependents
-        {
-            get { return IExecuteWithSignature<int>("getNumberOfDependents", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#newIncompleteFuture()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#newIncompleteFuture()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
         public Java.Util.Concurrent.CompletableFuture NewIncompleteFuture()
@@ -182,7 +175,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.Concurrent.CompletableFuture>("newIncompleteFuture", "()Ljava/util/concurrent/CompletableFuture;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#cancel(boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#cancel(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -191,7 +184,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("cancel", "(Z)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#complete(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#complete(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -200,7 +193,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("complete", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#completeExceptionally(java.lang.Throwable)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#completeExceptionally(java.lang.Throwable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Throwable"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -209,7 +202,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("completeExceptionally", "(Ljava/lang/Throwable;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#isCancelled()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#isCancelled()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsCancelled()
@@ -217,7 +210,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("isCancelled", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#isCompletedExceptionally()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#isCompletedExceptionally()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsCompletedExceptionally()
@@ -225,7 +218,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("isCompletedExceptionally", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#isDone()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#isDone()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsDone()
@@ -233,7 +226,15 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("isDone", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#completeAsync(java.util.function.Supplier,java.util.concurrent.Executor)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#getNumberOfDependents()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetNumberOfDependents()
+        {
+            return IExecuteWithSignature<int>("getNumberOfDependents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#completeAsync(java.util.function.Supplier,java.util.concurrent.Executor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
@@ -243,7 +244,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.Concurrent.CompletableFuture>("completeAsync", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#completeAsync(java.util.function.Supplier)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#completeAsync(java.util.function.Supplier)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
@@ -252,7 +253,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.Concurrent.CompletableFuture>("completeAsync", "(Ljava/util/function/Supplier;)Ljava/util/concurrent/CompletableFuture;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#completeOnTimeout(java.lang.Object,long,java.util.concurrent.TimeUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#completeOnTimeout(java.lang.Object,long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -263,7 +264,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.Concurrent.CompletableFuture>("completeOnTimeout", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#copy()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#copy()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
         public Java.Util.Concurrent.CompletableFuture Copy()
@@ -271,7 +272,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.Concurrent.CompletableFuture>("copy", "()Ljava/util/concurrent/CompletableFuture;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#orTimeout(long,java.util.concurrent.TimeUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#orTimeout(long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
@@ -281,7 +282,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.Concurrent.CompletableFuture>("orTimeout", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#toCompletableFuture()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#toCompletableFuture()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
         public Java.Util.Concurrent.CompletableFuture ToCompletableFuture()
@@ -289,7 +290,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.Concurrent.CompletableFuture>("toCompletableFuture", "()Ljava/util/concurrent/CompletableFuture;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#acceptEither(java.util.concurrent.CompletionStage,java.util.function.Consumer)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#acceptEither(java.util.concurrent.CompletionStage,java.util.function.Consumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletionStage"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.Consumer"/></param>
@@ -299,7 +300,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.Concurrent.CompletionStage>("acceptEither", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#acceptEitherAsync(java.util.concurrent.CompletionStage,java.util.function.Consumer,java.util.concurrent.Executor)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#acceptEitherAsync(java.util.concurrent.CompletionStage,java.util.function.Consumer,java.util.concurrent.Executor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletionStage"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.Consumer"/></param>
@@ -310,7 +311,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.Concurrent.CompletionStage>("acceptEitherAsync", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#acceptEitherAsync(java.util.concurrent.CompletionStage,java.util.function.Consumer)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#acceptEitherAsync(java.util.concurrent.CompletionStage,java.util.function.Consumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletionStage"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.Consumer"/></param>
@@ -320,7 +321,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.Concurrent.CompletionStage>("acceptEitherAsync", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#applyToEither(java.util.concurrent.CompletionStage,java.util.function.Function)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#applyToEither(java.util.concurrent.CompletionStage,java.util.function.Function)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletionStage"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
@@ -330,7 +331,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.Concurrent.CompletionStage>("applyToEither", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#applyToEitherAsync(java.util.concurrent.CompletionStage,java.util.function.Function,java.util.concurrent.Executor)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#applyToEitherAsync(java.util.concurrent.CompletionStage,java.util.function.Function,java.util.concurrent.Executor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletionStage"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
@@ -341,7 +342,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.Concurrent.CompletionStage>("applyToEitherAsync", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#applyToEitherAsync(java.util.concurrent.CompletionStage,java.util.function.Function)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#applyToEitherAsync(java.util.concurrent.CompletionStage,java.util.function.Function)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletionStage"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
@@ -351,7 +352,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.Concurrent.CompletionStage>("applyToEitherAsync", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#exceptionally(java.util.function.Function)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#exceptionally(java.util.function.Function)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
@@ -360,54 +361,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("exceptionally", "(Ljava/util/function/Function;)Ljava/util/concurrent/CompletionStage;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#exceptionallyAsync(java.util.function.Function,java.util.concurrent.Executor)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
-        /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
-        public Java.Util.Concurrent.CompletionStage ExceptionallyAsync(Java.Util.Function.Function arg0, Java.Util.Concurrent.Executor arg1)
-        {
-            return IExecute<Java.Util.Concurrent.CompletionStage>("exceptionallyAsync", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#exceptionallyAsync(java.util.function.Function)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
-        /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
-        public Java.Util.Concurrent.CompletionStage ExceptionallyAsync(Java.Util.Function.Function arg0)
-        {
-            return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("exceptionallyAsync", "(Ljava/util/function/Function;)Ljava/util/concurrent/CompletionStage;", arg0);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#exceptionallyCompose(java.util.function.Function)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
-        /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
-        public Java.Util.Concurrent.CompletionStage ExceptionallyCompose(Java.Util.Function.Function arg0)
-        {
-            return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("exceptionallyCompose", "(Ljava/util/function/Function;)Ljava/util/concurrent/CompletionStage;", arg0);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#exceptionallyComposeAsync(java.util.function.Function,java.util.concurrent.Executor)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
-        /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
-        public Java.Util.Concurrent.CompletionStage ExceptionallyComposeAsync(Java.Util.Function.Function arg0, Java.Util.Concurrent.Executor arg1)
-        {
-            return IExecute<Java.Util.Concurrent.CompletionStage>("exceptionallyComposeAsync", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#exceptionallyComposeAsync(java.util.function.Function)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
-        /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
-        public Java.Util.Concurrent.CompletionStage ExceptionallyComposeAsync(Java.Util.Function.Function arg0)
-        {
-            return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("exceptionallyComposeAsync", "(Ljava/util/function/Function;)Ljava/util/concurrent/CompletionStage;", arg0);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#handle(java.util.function.BiFunction)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#handle(java.util.function.BiFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.BiFunction"/></param>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
@@ -416,7 +370,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("handle", "(Ljava/util/function/BiFunction;)Ljava/util/concurrent/CompletionStage;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#handleAsync(java.util.function.BiFunction,java.util.concurrent.Executor)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#handleAsync(java.util.function.BiFunction,java.util.concurrent.Executor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.BiFunction"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
@@ -426,7 +380,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.Concurrent.CompletionStage>("handleAsync", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#handleAsync(java.util.function.BiFunction)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#handleAsync(java.util.function.BiFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.BiFunction"/></param>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
@@ -435,7 +389,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("handleAsync", "(Ljava/util/function/BiFunction;)Ljava/util/concurrent/CompletionStage;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#runAfterBoth(java.util.concurrent.CompletionStage,java.lang.Runnable)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#runAfterBoth(java.util.concurrent.CompletionStage,java.lang.Runnable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletionStage"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
@@ -445,7 +399,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.Concurrent.CompletionStage>("runAfterBoth", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#runAfterBothAsync(java.util.concurrent.CompletionStage,java.lang.Runnable,java.util.concurrent.Executor)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#runAfterBothAsync(java.util.concurrent.CompletionStage,java.lang.Runnable,java.util.concurrent.Executor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletionStage"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
@@ -456,7 +410,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.Concurrent.CompletionStage>("runAfterBothAsync", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#runAfterBothAsync(java.util.concurrent.CompletionStage,java.lang.Runnable)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#runAfterBothAsync(java.util.concurrent.CompletionStage,java.lang.Runnable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletionStage"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
@@ -466,7 +420,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.Concurrent.CompletionStage>("runAfterBothAsync", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#runAfterEither(java.util.concurrent.CompletionStage,java.lang.Runnable)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#runAfterEither(java.util.concurrent.CompletionStage,java.lang.Runnable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletionStage"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
@@ -476,7 +430,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.Concurrent.CompletionStage>("runAfterEither", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#runAfterEitherAsync(java.util.concurrent.CompletionStage,java.lang.Runnable,java.util.concurrent.Executor)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#runAfterEitherAsync(java.util.concurrent.CompletionStage,java.lang.Runnable,java.util.concurrent.Executor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletionStage"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
@@ -487,7 +441,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.Concurrent.CompletionStage>("runAfterEitherAsync", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#runAfterEitherAsync(java.util.concurrent.CompletionStage,java.lang.Runnable)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#runAfterEitherAsync(java.util.concurrent.CompletionStage,java.lang.Runnable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletionStage"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
@@ -497,7 +451,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.Concurrent.CompletionStage>("runAfterEitherAsync", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#thenAccept(java.util.function.Consumer)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#thenAccept(java.util.function.Consumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
@@ -506,7 +460,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("thenAccept", "(Ljava/util/function/Consumer;)Ljava/util/concurrent/CompletionStage;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#thenAcceptAsync(java.util.function.Consumer,java.util.concurrent.Executor)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#thenAcceptAsync(java.util.function.Consumer,java.util.concurrent.Executor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
@@ -516,7 +470,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.Concurrent.CompletionStage>("thenAcceptAsync", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#thenAcceptAsync(java.util.function.Consumer)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#thenAcceptAsync(java.util.function.Consumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
@@ -525,7 +479,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("thenAcceptAsync", "(Ljava/util/function/Consumer;)Ljava/util/concurrent/CompletionStage;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#thenAcceptBoth(java.util.concurrent.CompletionStage,java.util.function.BiConsumer)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#thenAcceptBoth(java.util.concurrent.CompletionStage,java.util.function.BiConsumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletionStage"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.BiConsumer"/></param>
@@ -535,7 +489,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.Concurrent.CompletionStage>("thenAcceptBoth", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#thenAcceptBothAsync(java.util.concurrent.CompletionStage,java.util.function.BiConsumer,java.util.concurrent.Executor)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#thenAcceptBothAsync(java.util.concurrent.CompletionStage,java.util.function.BiConsumer,java.util.concurrent.Executor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletionStage"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.BiConsumer"/></param>
@@ -546,7 +500,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.Concurrent.CompletionStage>("thenAcceptBothAsync", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#thenAcceptBothAsync(java.util.concurrent.CompletionStage,java.util.function.BiConsumer)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#thenAcceptBothAsync(java.util.concurrent.CompletionStage,java.util.function.BiConsumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletionStage"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.BiConsumer"/></param>
@@ -556,7 +510,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.Concurrent.CompletionStage>("thenAcceptBothAsync", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#thenApply(java.util.function.Function)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#thenApply(java.util.function.Function)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
@@ -565,7 +519,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("thenApply", "(Ljava/util/function/Function;)Ljava/util/concurrent/CompletionStage;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#thenApplyAsync(java.util.function.Function,java.util.concurrent.Executor)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#thenApplyAsync(java.util.function.Function,java.util.concurrent.Executor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
@@ -575,7 +529,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.Concurrent.CompletionStage>("thenApplyAsync", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#thenApplyAsync(java.util.function.Function)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#thenApplyAsync(java.util.function.Function)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
@@ -584,7 +538,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("thenApplyAsync", "(Ljava/util/function/Function;)Ljava/util/concurrent/CompletionStage;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#thenCombine(java.util.concurrent.CompletionStage,java.util.function.BiFunction)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#thenCombine(java.util.concurrent.CompletionStage,java.util.function.BiFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletionStage"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.BiFunction"/></param>
@@ -594,7 +548,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.Concurrent.CompletionStage>("thenCombine", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#thenCombineAsync(java.util.concurrent.CompletionStage,java.util.function.BiFunction,java.util.concurrent.Executor)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#thenCombineAsync(java.util.concurrent.CompletionStage,java.util.function.BiFunction,java.util.concurrent.Executor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletionStage"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.BiFunction"/></param>
@@ -605,7 +559,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.Concurrent.CompletionStage>("thenCombineAsync", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#thenCombineAsync(java.util.concurrent.CompletionStage,java.util.function.BiFunction)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#thenCombineAsync(java.util.concurrent.CompletionStage,java.util.function.BiFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletionStage"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.BiFunction"/></param>
@@ -615,7 +569,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.Concurrent.CompletionStage>("thenCombineAsync", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#thenCompose(java.util.function.Function)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#thenCompose(java.util.function.Function)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
@@ -624,7 +578,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("thenCompose", "(Ljava/util/function/Function;)Ljava/util/concurrent/CompletionStage;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#thenComposeAsync(java.util.function.Function,java.util.concurrent.Executor)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#thenComposeAsync(java.util.function.Function,java.util.concurrent.Executor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
@@ -634,7 +588,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.Concurrent.CompletionStage>("thenComposeAsync", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#thenComposeAsync(java.util.function.Function)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#thenComposeAsync(java.util.function.Function)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
@@ -643,7 +597,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("thenComposeAsync", "(Ljava/util/function/Function;)Ljava/util/concurrent/CompletionStage;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#thenRun(java.lang.Runnable)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#thenRun(java.lang.Runnable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
@@ -652,7 +606,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("thenRun", "(Ljava/lang/Runnable;)Ljava/util/concurrent/CompletionStage;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#thenRunAsync(java.lang.Runnable,java.util.concurrent.Executor)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#thenRunAsync(java.lang.Runnable,java.util.concurrent.Executor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
@@ -662,7 +616,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.Concurrent.CompletionStage>("thenRunAsync", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#thenRunAsync(java.lang.Runnable)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#thenRunAsync(java.lang.Runnable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
@@ -671,7 +625,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("thenRunAsync", "(Ljava/lang/Runnable;)Ljava/util/concurrent/CompletionStage;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#whenComplete(java.util.function.BiConsumer)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#whenComplete(java.util.function.BiConsumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.BiConsumer"/></param>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
@@ -680,7 +634,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("whenComplete", "(Ljava/util/function/BiConsumer;)Ljava/util/concurrent/CompletionStage;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#whenCompleteAsync(java.util.function.BiConsumer,java.util.concurrent.Executor)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#whenCompleteAsync(java.util.function.BiConsumer,java.util.concurrent.Executor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.BiConsumer"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
@@ -690,7 +644,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.Concurrent.CompletionStage>("whenCompleteAsync", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#whenCompleteAsync(java.util.function.BiConsumer)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#whenCompleteAsync(java.util.function.BiConsumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.BiConsumer"/></param>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
@@ -699,7 +653,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("whenCompleteAsync", "(Ljava/util/function/BiConsumer;)Ljava/util/concurrent/CompletionStage;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#minimalCompletionStage()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#minimalCompletionStage()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage MinimalCompletionStage()
@@ -707,7 +661,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("minimalCompletionStage", "()Ljava/util/concurrent/CompletionStage;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#defaultExecutor()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#defaultExecutor()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Concurrent.Executor"/></returns>
         public Java.Util.Concurrent.Executor DefaultExecutor()
@@ -715,7 +669,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.Concurrent.Executor>("defaultExecutor", "()Ljava/util/concurrent/Executor;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#get()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#get()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
@@ -725,7 +679,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature("get", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#get(long,java.util.concurrent.TimeUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#get(long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
@@ -738,7 +692,7 @@ namespace Java.Util.Concurrent
             return IExecute("get", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#getNow(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#getNow(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="object"/></returns>
@@ -747,7 +701,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature("getNow", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#join()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#join()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object Join()
@@ -755,7 +709,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature("join", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#obtrudeException(java.lang.Throwable)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#obtrudeException(java.lang.Throwable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Throwable"/></param>
         public void ObtrudeException(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0)
@@ -763,7 +717,7 @@ namespace Java.Util.Concurrent
             IExecuteWithSignature("obtrudeException", "(Ljava/lang/Throwable;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#obtrudeValue(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#obtrudeValue(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         public void ObtrudeValue(object arg0)
@@ -841,7 +795,7 @@ namespace Java.Util.Concurrent
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#completedFuture(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#completedFuture(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="U"/></param>
         /// <typeparam name="U"></typeparam>
@@ -851,7 +805,7 @@ namespace Java.Util.Concurrent
             return SExecuteWithSignature<Java.Util.Concurrent.CompletableFuture<U>>(LocalBridgeClazz, "completedFuture", "(Ljava/lang/Object;)Ljava/util/concurrent/CompletableFuture;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#failedFuture(java.lang.Throwable)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#failedFuture(java.lang.Throwable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Throwable"/></param>
         /// <typeparam name="U"></typeparam>
@@ -861,7 +815,7 @@ namespace Java.Util.Concurrent
             return SExecuteWithSignature<Java.Util.Concurrent.CompletableFuture<U>>(LocalBridgeClazz, "failedFuture", "(Ljava/lang/Throwable;)Ljava/util/concurrent/CompletableFuture;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#supplyAsync(java.util.function.Supplier,java.util.concurrent.Executor)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#supplyAsync(java.util.function.Supplier,java.util.concurrent.Executor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
@@ -872,7 +826,7 @@ namespace Java.Util.Concurrent
             return SExecute<Java.Util.Concurrent.CompletableFuture<U>>(LocalBridgeClazz, "supplyAsync", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#supplyAsync(java.util.function.Supplier)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#supplyAsync(java.util.function.Supplier)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
         /// <typeparam name="U"></typeparam>
@@ -882,7 +836,7 @@ namespace Java.Util.Concurrent
             return SExecuteWithSignature<Java.Util.Concurrent.CompletableFuture<U>>(LocalBridgeClazz, "supplyAsync", "(Ljava/util/function/Supplier;)Ljava/util/concurrent/CompletableFuture;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#completedStage(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#completedStage(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="U"/></param>
         /// <typeparam name="U"></typeparam>
@@ -892,7 +846,7 @@ namespace Java.Util.Concurrent
             return SExecuteWithSignature<Java.Util.Concurrent.CompletionStage<U>>(LocalBridgeClazz, "completedStage", "(Ljava/lang/Object;)Ljava/util/concurrent/CompletionStage;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#failedStage(java.lang.Throwable)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#failedStage(java.lang.Throwable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Throwable"/></param>
         /// <typeparam name="U"></typeparam>
@@ -902,7 +856,7 @@ namespace Java.Util.Concurrent
             return SExecuteWithSignature<Java.Util.Concurrent.CompletionStage<U>>(LocalBridgeClazz, "failedStage", "(Ljava/lang/Throwable;)Ljava/util/concurrent/CompletionStage;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#anyOf(java.util.concurrent.CompletableFuture[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#anyOf(java.util.concurrent.CompletableFuture[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletableFuture"/></param>
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
@@ -911,7 +865,7 @@ namespace Java.Util.Concurrent
             if (arg0.Length == 0) return SExecuteWithSignature<Java.Util.Concurrent.CompletableFuture<object>>(LocalBridgeClazz, "anyOf", "([Ljava/util/concurrent/CompletableFuture;)Ljava/util/concurrent/CompletableFuture;"); else return SExecuteWithSignature<Java.Util.Concurrent.CompletableFuture<object>>(LocalBridgeClazz, "anyOf", "([Ljava/util/concurrent/CompletableFuture;)Ljava/util/concurrent/CompletableFuture;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#allOf(java.util.concurrent.CompletableFuture[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#allOf(java.util.concurrent.CompletableFuture[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletableFuture"/></param>
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
@@ -920,7 +874,7 @@ namespace Java.Util.Concurrent
             if (arg0.Length == 0) return SExecuteWithSignature<Java.Util.Concurrent.CompletableFuture<Java.Lang.Void>>(LocalBridgeClazz, "allOf", "([Ljava/util/concurrent/CompletableFuture;)Ljava/util/concurrent/CompletableFuture;"); else return SExecuteWithSignature<Java.Util.Concurrent.CompletableFuture<Java.Lang.Void>>(LocalBridgeClazz, "allOf", "([Ljava/util/concurrent/CompletableFuture;)Ljava/util/concurrent/CompletableFuture;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#runAsync(java.lang.Runnable,java.util.concurrent.Executor)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#runAsync(java.lang.Runnable,java.util.concurrent.Executor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
@@ -930,7 +884,7 @@ namespace Java.Util.Concurrent
             return SExecute<Java.Util.Concurrent.CompletableFuture<Java.Lang.Void>>(LocalBridgeClazz, "runAsync", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#runAsync(java.lang.Runnable)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#runAsync(java.lang.Runnable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
@@ -939,7 +893,7 @@ namespace Java.Util.Concurrent
             return SExecuteWithSignature<Java.Util.Concurrent.CompletableFuture<Java.Lang.Void>>(LocalBridgeClazz, "runAsync", "(Ljava/lang/Runnable;)Ljava/util/concurrent/CompletableFuture;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#delayedExecutor(long,java.util.concurrent.TimeUnit,java.util.concurrent.Executor)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#delayedExecutor(long,java.util.concurrent.TimeUnit,java.util.concurrent.Executor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
@@ -950,7 +904,7 @@ namespace Java.Util.Concurrent
             return SExecute<Java.Util.Concurrent.Executor>(LocalBridgeClazz, "delayedExecutor", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#delayedExecutor(long,java.util.concurrent.TimeUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#delayedExecutor(long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
@@ -964,14 +918,7 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#getNumberOfDependents()"/> 
-        /// </summary>
-        public int NumberOfDependents
-        {
-            get { return IExecuteWithSignature<int>("getNumberOfDependents", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#newIncompleteFuture()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#newIncompleteFuture()"/>
         /// </summary>
         /// <typeparam name="U"></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
@@ -980,7 +927,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.Concurrent.CompletableFuture<U>>("newIncompleteFuture", "()Ljava/util/concurrent/CompletableFuture;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#cancel(boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#cancel(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -989,7 +936,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("cancel", "(Z)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#complete(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#complete(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -998,7 +945,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("complete", "(Ljava/lang/Object;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#completeExceptionally(java.lang.Throwable)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#completeExceptionally(java.lang.Throwable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Throwable"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -1007,7 +954,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("completeExceptionally", "(Ljava/lang/Throwable;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#isCancelled()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#isCancelled()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsCancelled()
@@ -1015,7 +962,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("isCancelled", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#isCompletedExceptionally()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#isCompletedExceptionally()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsCompletedExceptionally()
@@ -1023,7 +970,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("isCompletedExceptionally", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#isDone()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#isDone()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsDone()
@@ -1031,28 +978,36 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<bool>("isDone", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#completeAsync(java.util.function.Supplier,java.util.concurrent.Executor)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#getNumberOfDependents()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetNumberOfDependents()
+        {
+            return IExecuteWithSignature<int>("getNumberOfDependents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#completeAsync(java.util.function.Supplier,java.util.concurrent.Executor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
         /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
-        public Java.Util.Concurrent.CompletableFuture<T> CompleteAsync<Arg0ExtendsT>(Java.Util.Function.Supplier<Arg0ExtendsT> arg0, Java.Util.Concurrent.Executor arg1) where Arg0ExtendsT: T
+        public Java.Util.Concurrent.CompletableFuture<T> CompleteAsync<Arg0ExtendsT>(Java.Util.Function.Supplier<Arg0ExtendsT> arg0, Java.Util.Concurrent.Executor arg1) where Arg0ExtendsT : T
         {
             return IExecute<Java.Util.Concurrent.CompletableFuture<T>>("completeAsync", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#completeAsync(java.util.function.Supplier)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#completeAsync(java.util.function.Supplier)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
         /// <typeparam name="Arg0ExtendsT"><typeparamref name="T"/></typeparam>
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
-        public Java.Util.Concurrent.CompletableFuture<T> CompleteAsync<Arg0ExtendsT>(Java.Util.Function.Supplier<Arg0ExtendsT> arg0) where Arg0ExtendsT: T
+        public Java.Util.Concurrent.CompletableFuture<T> CompleteAsync<Arg0ExtendsT>(Java.Util.Function.Supplier<Arg0ExtendsT> arg0) where Arg0ExtendsT : T
         {
             return IExecuteWithSignature<Java.Util.Concurrent.CompletableFuture<T>>("completeAsync", "(Ljava/util/function/Supplier;)Ljava/util/concurrent/CompletableFuture;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#completeOnTimeout(java.lang.Object,long,java.util.concurrent.TimeUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#completeOnTimeout(java.lang.Object,long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -1063,7 +1018,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.Concurrent.CompletableFuture<T>>("completeOnTimeout", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#copy()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#copy()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
         public Java.Util.Concurrent.CompletableFuture<T> Copy()
@@ -1071,7 +1026,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.Concurrent.CompletableFuture<T>>("copy", "()Ljava/util/concurrent/CompletableFuture;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#orTimeout(long,java.util.concurrent.TimeUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#orTimeout(long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
@@ -1081,7 +1036,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.Concurrent.CompletableFuture<T>>("orTimeout", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#toCompletableFuture()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#toCompletableFuture()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Concurrent.CompletableFuture"/></returns>
         public Java.Util.Concurrent.CompletableFuture<T> ToCompletableFuture()
@@ -1089,7 +1044,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.Concurrent.CompletableFuture<T>>("toCompletableFuture", "()Ljava/util/concurrent/CompletableFuture;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#acceptEither(java.util.concurrent.CompletionStage,java.util.function.Consumer)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#acceptEither(java.util.concurrent.CompletionStage,java.util.function.Consumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletionStage"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.Consumer"/></param>
@@ -1099,7 +1054,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.Concurrent.CompletionStage>("acceptEither", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#acceptEitherAsync(java.util.concurrent.CompletionStage,java.util.function.Consumer,java.util.concurrent.Executor)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#acceptEitherAsync(java.util.concurrent.CompletionStage,java.util.function.Consumer,java.util.concurrent.Executor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletionStage"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.Consumer"/></param>
@@ -1110,7 +1065,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.Concurrent.CompletionStage>("acceptEitherAsync", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#acceptEitherAsync(java.util.concurrent.CompletionStage,java.util.function.Consumer)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#acceptEitherAsync(java.util.concurrent.CompletionStage,java.util.function.Consumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletionStage"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.Consumer"/></param>
@@ -1120,7 +1075,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.Concurrent.CompletionStage>("acceptEitherAsync", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#applyToEither(java.util.concurrent.CompletionStage,java.util.function.Function)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#applyToEither(java.util.concurrent.CompletionStage,java.util.function.Function)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletionStage"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
@@ -1130,7 +1085,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.Concurrent.CompletionStage>("applyToEither", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#applyToEitherAsync(java.util.concurrent.CompletionStage,java.util.function.Function,java.util.concurrent.Executor)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#applyToEitherAsync(java.util.concurrent.CompletionStage,java.util.function.Function,java.util.concurrent.Executor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletionStage"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
@@ -1141,7 +1096,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.Concurrent.CompletionStage>("applyToEitherAsync", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#applyToEitherAsync(java.util.concurrent.CompletionStage,java.util.function.Function)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#applyToEitherAsync(java.util.concurrent.CompletionStage,java.util.function.Function)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletionStage"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.Function"/></param>
@@ -1151,7 +1106,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.Concurrent.CompletionStage>("applyToEitherAsync", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#exceptionally(java.util.function.Function)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#exceptionally(java.util.function.Function)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
@@ -1160,54 +1115,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("exceptionally", "(Ljava/util/function/Function;)Ljava/util/concurrent/CompletionStage;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#exceptionallyAsync(java.util.function.Function,java.util.concurrent.Executor)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
-        /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
-        public Java.Util.Concurrent.CompletionStage ExceptionallyAsync(Java.Util.Function.Function arg0, Java.Util.Concurrent.Executor arg1)
-        {
-            return IExecute<Java.Util.Concurrent.CompletionStage>("exceptionallyAsync", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#exceptionallyAsync(java.util.function.Function)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
-        /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
-        public Java.Util.Concurrent.CompletionStage ExceptionallyAsync(Java.Util.Function.Function arg0)
-        {
-            return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("exceptionallyAsync", "(Ljava/util/function/Function;)Ljava/util/concurrent/CompletionStage;", arg0);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#exceptionallyCompose(java.util.function.Function)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
-        /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
-        public Java.Util.Concurrent.CompletionStage ExceptionallyCompose(Java.Util.Function.Function arg0)
-        {
-            return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("exceptionallyCompose", "(Ljava/util/function/Function;)Ljava/util/concurrent/CompletionStage;", arg0);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#exceptionallyComposeAsync(java.util.function.Function,java.util.concurrent.Executor)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
-        /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
-        public Java.Util.Concurrent.CompletionStage ExceptionallyComposeAsync(Java.Util.Function.Function arg0, Java.Util.Concurrent.Executor arg1)
-        {
-            return IExecute<Java.Util.Concurrent.CompletionStage>("exceptionallyComposeAsync", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#exceptionallyComposeAsync(java.util.function.Function)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
-        /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
-        public Java.Util.Concurrent.CompletionStage ExceptionallyComposeAsync(Java.Util.Function.Function arg0)
-        {
-            return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("exceptionallyComposeAsync", "(Ljava/util/function/Function;)Ljava/util/concurrent/CompletionStage;", arg0);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#handle(java.util.function.BiFunction)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#handle(java.util.function.BiFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.BiFunction"/></param>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
@@ -1216,7 +1124,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("handle", "(Ljava/util/function/BiFunction;)Ljava/util/concurrent/CompletionStage;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#handleAsync(java.util.function.BiFunction,java.util.concurrent.Executor)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#handleAsync(java.util.function.BiFunction,java.util.concurrent.Executor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.BiFunction"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
@@ -1226,7 +1134,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.Concurrent.CompletionStage>("handleAsync", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#handleAsync(java.util.function.BiFunction)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#handleAsync(java.util.function.BiFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.BiFunction"/></param>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
@@ -1235,7 +1143,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("handleAsync", "(Ljava/util/function/BiFunction;)Ljava/util/concurrent/CompletionStage;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#runAfterBoth(java.util.concurrent.CompletionStage,java.lang.Runnable)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#runAfterBoth(java.util.concurrent.CompletionStage,java.lang.Runnable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletionStage"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
@@ -1245,7 +1153,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.Concurrent.CompletionStage>("runAfterBoth", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#runAfterBothAsync(java.util.concurrent.CompletionStage,java.lang.Runnable,java.util.concurrent.Executor)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#runAfterBothAsync(java.util.concurrent.CompletionStage,java.lang.Runnable,java.util.concurrent.Executor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletionStage"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
@@ -1256,7 +1164,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.Concurrent.CompletionStage>("runAfterBothAsync", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#runAfterBothAsync(java.util.concurrent.CompletionStage,java.lang.Runnable)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#runAfterBothAsync(java.util.concurrent.CompletionStage,java.lang.Runnable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletionStage"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
@@ -1266,7 +1174,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.Concurrent.CompletionStage>("runAfterBothAsync", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#runAfterEither(java.util.concurrent.CompletionStage,java.lang.Runnable)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#runAfterEither(java.util.concurrent.CompletionStage,java.lang.Runnable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletionStage"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
@@ -1276,7 +1184,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.Concurrent.CompletionStage>("runAfterEither", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#runAfterEitherAsync(java.util.concurrent.CompletionStage,java.lang.Runnable,java.util.concurrent.Executor)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#runAfterEitherAsync(java.util.concurrent.CompletionStage,java.lang.Runnable,java.util.concurrent.Executor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletionStage"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
@@ -1287,7 +1195,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.Concurrent.CompletionStage>("runAfterEitherAsync", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#runAfterEitherAsync(java.util.concurrent.CompletionStage,java.lang.Runnable)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#runAfterEitherAsync(java.util.concurrent.CompletionStage,java.lang.Runnable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletionStage"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Runnable"/></param>
@@ -1297,7 +1205,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.Concurrent.CompletionStage>("runAfterEitherAsync", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#thenAccept(java.util.function.Consumer)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#thenAccept(java.util.function.Consumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
@@ -1306,7 +1214,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("thenAccept", "(Ljava/util/function/Consumer;)Ljava/util/concurrent/CompletionStage;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#thenAcceptAsync(java.util.function.Consumer,java.util.concurrent.Executor)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#thenAcceptAsync(java.util.function.Consumer,java.util.concurrent.Executor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
@@ -1316,7 +1224,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.Concurrent.CompletionStage>("thenAcceptAsync", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#thenAcceptAsync(java.util.function.Consumer)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#thenAcceptAsync(java.util.function.Consumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Consumer"/></param>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
@@ -1325,7 +1233,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("thenAcceptAsync", "(Ljava/util/function/Consumer;)Ljava/util/concurrent/CompletionStage;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#thenAcceptBoth(java.util.concurrent.CompletionStage,java.util.function.BiConsumer)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#thenAcceptBoth(java.util.concurrent.CompletionStage,java.util.function.BiConsumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletionStage"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.BiConsumer"/></param>
@@ -1335,7 +1243,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.Concurrent.CompletionStage>("thenAcceptBoth", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#thenAcceptBothAsync(java.util.concurrent.CompletionStage,java.util.function.BiConsumer,java.util.concurrent.Executor)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#thenAcceptBothAsync(java.util.concurrent.CompletionStage,java.util.function.BiConsumer,java.util.concurrent.Executor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletionStage"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.BiConsumer"/></param>
@@ -1346,7 +1254,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.Concurrent.CompletionStage>("thenAcceptBothAsync", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#thenAcceptBothAsync(java.util.concurrent.CompletionStage,java.util.function.BiConsumer)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#thenAcceptBothAsync(java.util.concurrent.CompletionStage,java.util.function.BiConsumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletionStage"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.BiConsumer"/></param>
@@ -1356,7 +1264,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.Concurrent.CompletionStage>("thenAcceptBothAsync", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#thenApply(java.util.function.Function)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#thenApply(java.util.function.Function)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
@@ -1365,7 +1273,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("thenApply", "(Ljava/util/function/Function;)Ljava/util/concurrent/CompletionStage;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#thenApplyAsync(java.util.function.Function,java.util.concurrent.Executor)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#thenApplyAsync(java.util.function.Function,java.util.concurrent.Executor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
@@ -1375,7 +1283,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.Concurrent.CompletionStage>("thenApplyAsync", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#thenApplyAsync(java.util.function.Function)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#thenApplyAsync(java.util.function.Function)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
@@ -1384,7 +1292,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("thenApplyAsync", "(Ljava/util/function/Function;)Ljava/util/concurrent/CompletionStage;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#thenCombine(java.util.concurrent.CompletionStage,java.util.function.BiFunction)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#thenCombine(java.util.concurrent.CompletionStage,java.util.function.BiFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletionStage"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.BiFunction"/></param>
@@ -1394,7 +1302,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.Concurrent.CompletionStage>("thenCombine", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#thenCombineAsync(java.util.concurrent.CompletionStage,java.util.function.BiFunction,java.util.concurrent.Executor)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#thenCombineAsync(java.util.concurrent.CompletionStage,java.util.function.BiFunction,java.util.concurrent.Executor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletionStage"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.BiFunction"/></param>
@@ -1405,7 +1313,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.Concurrent.CompletionStage>("thenCombineAsync", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#thenCombineAsync(java.util.concurrent.CompletionStage,java.util.function.BiFunction)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#thenCombineAsync(java.util.concurrent.CompletionStage,java.util.function.BiFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.CompletionStage"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.BiFunction"/></param>
@@ -1415,7 +1323,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.Concurrent.CompletionStage>("thenCombineAsync", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#thenCompose(java.util.function.Function)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#thenCompose(java.util.function.Function)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
@@ -1424,7 +1332,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("thenCompose", "(Ljava/util/function/Function;)Ljava/util/concurrent/CompletionStage;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#thenComposeAsync(java.util.function.Function,java.util.concurrent.Executor)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#thenComposeAsync(java.util.function.Function,java.util.concurrent.Executor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
@@ -1434,7 +1342,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.Concurrent.CompletionStage>("thenComposeAsync", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#thenComposeAsync(java.util.function.Function)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#thenComposeAsync(java.util.function.Function)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
@@ -1443,7 +1351,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("thenComposeAsync", "(Ljava/util/function/Function;)Ljava/util/concurrent/CompletionStage;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#thenRun(java.lang.Runnable)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#thenRun(java.lang.Runnable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
@@ -1452,7 +1360,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("thenRun", "(Ljava/lang/Runnable;)Ljava/util/concurrent/CompletionStage;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#thenRunAsync(java.lang.Runnable,java.util.concurrent.Executor)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#thenRunAsync(java.lang.Runnable,java.util.concurrent.Executor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
@@ -1462,7 +1370,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.Concurrent.CompletionStage>("thenRunAsync", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#thenRunAsync(java.lang.Runnable)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#thenRunAsync(java.lang.Runnable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Runnable"/></param>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
@@ -1471,7 +1379,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("thenRunAsync", "(Ljava/lang/Runnable;)Ljava/util/concurrent/CompletionStage;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#whenComplete(java.util.function.BiConsumer)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#whenComplete(java.util.function.BiConsumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.BiConsumer"/></param>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
@@ -1480,7 +1388,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("whenComplete", "(Ljava/util/function/BiConsumer;)Ljava/util/concurrent/CompletionStage;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#whenCompleteAsync(java.util.function.BiConsumer,java.util.concurrent.Executor)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#whenCompleteAsync(java.util.function.BiConsumer,java.util.concurrent.Executor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.BiConsumer"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
@@ -1490,7 +1398,7 @@ namespace Java.Util.Concurrent
             return IExecute<Java.Util.Concurrent.CompletionStage>("whenCompleteAsync", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#whenCompleteAsync(java.util.function.BiConsumer)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#whenCompleteAsync(java.util.function.BiConsumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.BiConsumer"/></param>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
@@ -1499,7 +1407,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("whenCompleteAsync", "(Ljava/util/function/BiConsumer;)Ljava/util/concurrent/CompletionStage;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#minimalCompletionStage()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#minimalCompletionStage()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
         public Java.Util.Concurrent.CompletionStage<T> MinimalCompletionStage()
@@ -1507,7 +1415,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage<T>>("minimalCompletionStage", "()Ljava/util/concurrent/CompletionStage;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#defaultExecutor()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#defaultExecutor()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Concurrent.Executor"/></returns>
         public Java.Util.Concurrent.Executor DefaultExecutor()
@@ -1515,7 +1423,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.Concurrent.Executor>("defaultExecutor", "()Ljava/util/concurrent/Executor;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#get()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#get()"/>
         /// </summary>
         /// <returns><typeparamref name="T"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
@@ -1525,7 +1433,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<T>("get", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#get(long,java.util.concurrent.TimeUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#get(long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
@@ -1538,7 +1446,7 @@ namespace Java.Util.Concurrent
             return IExecute<T>("get", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#getNow(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#getNow(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <returns><typeparamref name="T"/></returns>
@@ -1547,7 +1455,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<T>("getNow", "(Ljava/lang/Object;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#join()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#join()"/>
         /// </summary>
         /// <returns><typeparamref name="T"/></returns>
         public T Join()
@@ -1555,7 +1463,7 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<T>("join", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#obtrudeException(java.lang.Throwable)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#obtrudeException(java.lang.Throwable)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Throwable"/></param>
         public void ObtrudeException(MASES.JCOBridge.C2JBridge.JVMBridgeException arg0)
@@ -1563,7 +1471,7 @@ namespace Java.Util.Concurrent
             IExecuteWithSignature("obtrudeException", "(Ljava/lang/Throwable;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/CompletableFuture.html#obtrudeValue(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#obtrudeValue(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         public void ObtrudeValue(T arg0)

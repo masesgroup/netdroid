@@ -64,7 +64,7 @@ namespace Java.Io
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/DataInput.html#readBoolean()"/>
+        /// <see href="https://developer.android.com/reference/java/io/DataInput.html#readBoolean()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -73,7 +73,7 @@ namespace Java.Io
             return IExecuteWithSignature<bool>("readBoolean", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/DataInput.html#readByte()"/>
+        /// <see href="https://developer.android.com/reference/java/io/DataInput.html#readByte()"/>
         /// </summary>
         /// <returns><see cref="byte"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -82,7 +82,7 @@ namespace Java.Io
             return IExecuteWithSignature<byte>("readByte", "()B");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/DataInput.html#readChar()"/>
+        /// <see href="https://developer.android.com/reference/java/io/DataInput.html#readChar()"/>
         /// </summary>
         /// <returns><see cref="char"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -91,7 +91,7 @@ namespace Java.Io
             return IExecuteWithSignature<char>("readChar", "()C");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/DataInput.html#readDouble()"/>
+        /// <see href="https://developer.android.com/reference/java/io/DataInput.html#readDouble()"/>
         /// </summary>
         /// <returns><see cref="double"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -100,7 +100,7 @@ namespace Java.Io
             return IExecuteWithSignature<double>("readDouble", "()D");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/DataInput.html#readFloat()"/>
+        /// <see href="https://developer.android.com/reference/java/io/DataInput.html#readFloat()"/>
         /// </summary>
         /// <returns><see cref="float"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -109,7 +109,7 @@ namespace Java.Io
             return IExecuteWithSignature<float>("readFloat", "()F");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/DataInput.html#readInt()"/>
+        /// <see href="https://developer.android.com/reference/java/io/DataInput.html#readInt()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -118,7 +118,7 @@ namespace Java.Io
             return IExecuteWithSignature<int>("readInt", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/DataInput.html#readUnsignedByte()"/>
+        /// <see href="https://developer.android.com/reference/java/io/DataInput.html#readUnsignedByte()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -127,7 +127,7 @@ namespace Java.Io
             return IExecuteWithSignature<int>("readUnsignedByte", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/DataInput.html#readUnsignedShort()"/>
+        /// <see href="https://developer.android.com/reference/java/io/DataInput.html#readUnsignedShort()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -136,7 +136,7 @@ namespace Java.Io
             return IExecuteWithSignature<int>("readUnsignedShort", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/DataInput.html#skipBytes(int)"/>
+        /// <see href="https://developer.android.com/reference/java/io/DataInput.html#skipBytes(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
@@ -146,7 +146,7 @@ namespace Java.Io
             return IExecuteWithSignature<int>("skipBytes", "(I)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/DataInput.html#readLine()"/>
+        /// <see href="https://developer.android.com/reference/java/io/DataInput.html#readLine()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -155,7 +155,7 @@ namespace Java.Io
             return IExecuteWithSignature<Java.Lang.String>("readLine", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/DataInput.html#readUTF()"/>
+        /// <see href="https://developer.android.com/reference/java/io/DataInput.html#readUTF()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -164,7 +164,7 @@ namespace Java.Io
             return IExecuteWithSignature<Java.Lang.String>("readUTF", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/DataInput.html#readLong()"/>
+        /// <see href="https://developer.android.com/reference/java/io/DataInput.html#readLong()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -173,7 +173,7 @@ namespace Java.Io
             return IExecuteWithSignature<long>("readLong", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/DataInput.html#readShort()"/>
+        /// <see href="https://developer.android.com/reference/java/io/DataInput.html#readShort()"/>
         /// </summary>
         /// <returns><see cref="short"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -182,7 +182,7 @@ namespace Java.Io
             return IExecuteWithSignature<short>("readShort", "()S");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/DataInput.html#readFully(byte[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/io/DataInput.html#readFully(byte[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -193,7 +193,7 @@ namespace Java.Io
             IExecute("readFully", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/DataInput.html#readFully(byte[])"/>
+        /// <see href="https://developer.android.com/reference/java/io/DataInput.html#readFully(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <exception cref="Java.Io.IOException"/>

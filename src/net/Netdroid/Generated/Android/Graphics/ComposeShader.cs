@@ -55,7 +55,7 @@ namespace Android.Graphics
         /// <param name="arg0"><see cref="Android.Graphics.Shader"/></param>
         /// <param name="arg1"><see cref="Android.Graphics.Shader"/></param>
         /// <param name="arg2"><see cref="Android.Graphics.Xfermode"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public ComposeShader(Android.Graphics.Shader arg0, Android.Graphics.Shader arg1, Android.Graphics.Xfermode arg2)
             : base(arg0, arg1, arg2)
         {

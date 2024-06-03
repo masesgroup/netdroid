@@ -46,7 +46,7 @@ namespace Android.Renderscript
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.RenderScript"/></param>
         /// <returns><see cref="Android.Renderscript.ScriptIntrinsicResize"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Renderscript.ScriptIntrinsicResize Create(Android.Renderscript.RenderScript arg0)
         {
             return SExecuteWithSignature<Android.Renderscript.ScriptIntrinsicResize>(LocalBridgeClazz, "create", "(Landroid/renderscript/RenderScript;)Landroid/renderscript/ScriptIntrinsicResize;", arg0);
@@ -56,27 +56,29 @@ namespace Android.Renderscript
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicResize.html#getFieldID_Input()"/> 
+        /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicResize.html#getFieldID_Input()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Renderscript.Script.FieldID FieldID_Input
+        /// <returns><see cref="Android.Renderscript.Script.FieldID"/></returns>
+        [global::System.Obsolete()]
+        public Android.Renderscript.Script.FieldID GetFieldID_Input()
         {
-            get { return IExecuteWithSignature<Android.Renderscript.Script.FieldID>("getFieldID_Input", "()Landroid/renderscript/Script$FieldID;"); }
+            return IExecuteWithSignature<Android.Renderscript.Script.FieldID>("getFieldID_Input", "()Landroid/renderscript/Script$FieldID;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicResize.html#getKernelID_bicubic()"/> 
+        /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicResize.html#getKernelID_bicubic()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Renderscript.Script.KernelID KernelID_bicubic
+        /// <returns><see cref="Android.Renderscript.Script.KernelID"/></returns>
+        [global::System.Obsolete()]
+        public Android.Renderscript.Script.KernelID GetKernelID_bicubic()
         {
-            get { return IExecuteWithSignature<Android.Renderscript.Script.KernelID>("getKernelID_bicubic", "()Landroid/renderscript/Script$KernelID;"); }
+            return IExecuteWithSignature<Android.Renderscript.Script.KernelID>("getKernelID_bicubic", "()Landroid/renderscript/Script$KernelID;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicResize.html#forEach_bicubic(android.renderscript.Allocation,android.renderscript.Script.LaunchOptions)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.Allocation"/></param>
         /// <param name="arg1"><see cref="Android.Renderscript.Script.LaunchOptions"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ForEach_bicubic(Android.Renderscript.Allocation arg0, Android.Renderscript.Script.LaunchOptions arg1)
         {
             IExecute("forEach_bicubic", arg0, arg1);
@@ -85,7 +87,7 @@ namespace Android.Renderscript
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicResize.html#forEach_bicubic(android.renderscript.Allocation)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ForEach_bicubic(Android.Renderscript.Allocation arg0)
         {
             IExecuteWithSignature("forEach_bicubic", "(Landroid/renderscript/Allocation;)V", arg0);
@@ -94,7 +96,7 @@ namespace Android.Renderscript
         /// <see href="https://developer.android.com/reference/android/renderscript/ScriptIntrinsicResize.html#setInput(android.renderscript.Allocation)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Renderscript.Allocation"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetInput(Android.Renderscript.Allocation arg0)
         {
             IExecuteWithSignature("setInput", "(Landroid/renderscript/Allocation;)V", arg0);

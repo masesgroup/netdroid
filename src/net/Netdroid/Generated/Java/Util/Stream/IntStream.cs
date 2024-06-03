@@ -60,7 +60,7 @@ namespace Java.Util.Stream
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/IntStream.html#concat(java.util.stream.IntStream,java.util.stream.IntStream)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/IntStream.html#concat(java.util.stream.IntStream,java.util.stream.IntStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Stream.IntStream"/></param>
         /// <param name="arg1"><see cref="Java.Util.Stream.IntStream"/></param>
@@ -70,7 +70,7 @@ namespace Java.Util.Stream
             return SExecute<Java.Util.Stream.IntStream>(LocalBridgeClazz, "concat", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/IntStream.html#empty()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/IntStream.html#empty()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
         public static Java.Util.Stream.IntStream Empty()
@@ -78,7 +78,7 @@ namespace Java.Util.Stream
             return SExecuteWithSignature<Java.Util.Stream.IntStream>(LocalBridgeClazz, "empty", "()Ljava/util/stream/IntStream;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/IntStream.html#generate(java.util.function.IntSupplier)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/IntStream.html#generate(java.util.function.IntSupplier)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.IntSupplier"/></param>
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
@@ -87,7 +87,7 @@ namespace Java.Util.Stream
             return SExecuteWithSignature<Java.Util.Stream.IntStream>(LocalBridgeClazz, "generate", "(Ljava/util/function/IntSupplier;)Ljava/util/stream/IntStream;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/IntStream.html#iterate(int,java.util.function.IntPredicate,java.util.function.IntUnaryOperator)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/IntStream.html#iterate(int,java.util.function.IntPredicate,java.util.function.IntUnaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.IntPredicate"/></param>
@@ -98,7 +98,7 @@ namespace Java.Util.Stream
             return SExecute<Java.Util.Stream.IntStream>(LocalBridgeClazz, "iterate", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/IntStream.html#iterate(int,java.util.function.IntUnaryOperator)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/IntStream.html#iterate(int,java.util.function.IntUnaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.IntUnaryOperator"/></param>
@@ -108,7 +108,7 @@ namespace Java.Util.Stream
             return SExecute<Java.Util.Stream.IntStream>(LocalBridgeClazz, "iterate", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/IntStream.html#of(int[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/IntStream.html#of(int[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
@@ -117,7 +117,7 @@ namespace Java.Util.Stream
             if (arg0.Length == 0) return SExecuteWithSignature<Java.Util.Stream.IntStream>(LocalBridgeClazz, "of", "([I)Ljava/util/stream/IntStream;"); else return SExecuteWithSignature<Java.Util.Stream.IntStream>(LocalBridgeClazz, "of", "([I)Ljava/util/stream/IntStream;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/IntStream.html#of(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/IntStream.html#of(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
@@ -126,7 +126,7 @@ namespace Java.Util.Stream
             return SExecuteWithSignature<Java.Util.Stream.IntStream>(LocalBridgeClazz, "of", "(I)Ljava/util/stream/IntStream;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/IntStream.html#range(int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/IntStream.html#range(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -136,7 +136,7 @@ namespace Java.Util.Stream
             return SExecute<Java.Util.Stream.IntStream>(LocalBridgeClazz, "range", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/IntStream.html#rangeClosed(int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/IntStream.html#rangeClosed(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -150,7 +150,7 @@ namespace Java.Util.Stream
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/IntStream.html#collect(java.util.function.Supplier,java.util.function.ObjIntConsumer,java.util.function.BiConsumer)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/IntStream.html#collect(java.util.function.Supplier,java.util.function.ObjIntConsumer,java.util.function.BiConsumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Supplier"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.ObjIntConsumer"/></param>
@@ -162,18 +162,18 @@ namespace Java.Util.Stream
             return IExecute<R>("collect", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/IntStream.html#mapToObj(java.util.function.IntFunction)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/IntStream.html#mapToObj(java.util.function.IntFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.IntFunction"/></param>
         /// <typeparam name="U"></typeparam>
         /// <typeparam name="Arg0ExtendsU"><typeparamref name="U"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        public Java.Util.Stream.Stream<U> MapToObj<U, Arg0ExtendsU>(Java.Util.Function.IntFunction<Arg0ExtendsU> arg0) where Arg0ExtendsU: U
+        public Java.Util.Stream.Stream<U> MapToObj<U, Arg0ExtendsU>(Java.Util.Function.IntFunction<Arg0ExtendsU> arg0) where Arg0ExtendsU : U
         {
             return IExecuteWithSignature<Java.Util.Stream.Stream<U>>("mapToObj", "(Ljava/util/function/IntFunction;)Ljava/util/stream/Stream;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/IntStream.html#allMatch(java.util.function.IntPredicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/IntStream.html#allMatch(java.util.function.IntPredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.IntPredicate"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -182,7 +182,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<bool>("allMatch", "(Ljava/util/function/IntPredicate;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/IntStream.html#anyMatch(java.util.function.IntPredicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/IntStream.html#anyMatch(java.util.function.IntPredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.IntPredicate"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -191,7 +191,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<bool>("anyMatch", "(Ljava/util/function/IntPredicate;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/IntStream.html#noneMatch(java.util.function.IntPredicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/IntStream.html#noneMatch(java.util.function.IntPredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.IntPredicate"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -200,7 +200,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<bool>("noneMatch", "(Ljava/util/function/IntPredicate;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/IntStream.html#reduce(int,java.util.function.IntBinaryOperator)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/IntStream.html#reduce(int,java.util.function.IntBinaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.IntBinaryOperator"/></param>
@@ -210,7 +210,7 @@ namespace Java.Util.Stream
             return IExecute<int>("reduce", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/IntStream.html#sum()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/IntStream.html#sum()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int Sum()
@@ -218,7 +218,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<int>("sum", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/IntStream.html#toArray()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/IntStream.html#toArray()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int[] ToArray()
@@ -226,7 +226,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignatureArray<int>("toArray", "()[I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/IntStream.html#summaryStatistics()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/IntStream.html#summaryStatistics()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.IntSummaryStatistics"/></returns>
         public Java.Util.IntSummaryStatistics SummaryStatistics()
@@ -234,7 +234,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.IntSummaryStatistics>("summaryStatistics", "()Ljava/util/IntSummaryStatistics;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/IntStream.html#average()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/IntStream.html#average()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.OptionalDouble"/></returns>
         public Java.Util.OptionalDouble Average()
@@ -242,7 +242,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.OptionalDouble>("average", "()Ljava/util/OptionalDouble;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/IntStream.html#findAny()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/IntStream.html#findAny()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.OptionalInt"/></returns>
         public Java.Util.OptionalInt FindAny()
@@ -250,7 +250,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.OptionalInt>("findAny", "()Ljava/util/OptionalInt;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/IntStream.html#findFirst()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/IntStream.html#findFirst()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.OptionalInt"/></returns>
         public Java.Util.OptionalInt FindFirst()
@@ -258,7 +258,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.OptionalInt>("findFirst", "()Ljava/util/OptionalInt;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/IntStream.html#max()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/IntStream.html#max()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.OptionalInt"/></returns>
         public Java.Util.OptionalInt Max()
@@ -266,7 +266,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.OptionalInt>("max", "()Ljava/util/OptionalInt;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/IntStream.html#min()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/IntStream.html#min()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.OptionalInt"/></returns>
         public Java.Util.OptionalInt Min()
@@ -274,7 +274,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.OptionalInt>("min", "()Ljava/util/OptionalInt;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/IntStream.html#reduce(java.util.function.IntBinaryOperator)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/IntStream.html#reduce(java.util.function.IntBinaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.IntBinaryOperator"/></param>
         /// <returns><see cref="Java.Util.OptionalInt"/></returns>
@@ -283,7 +283,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.OptionalInt>("reduce", "(Ljava/util/function/IntBinaryOperator;)Ljava/util/OptionalInt;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/IntStream.html#asDoubleStream()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/IntStream.html#asDoubleStream()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
         public Java.Util.Stream.DoubleStream AsDoubleStream()
@@ -291,7 +291,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Stream.DoubleStream>("asDoubleStream", "()Ljava/util/stream/DoubleStream;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/IntStream.html#mapToDouble(java.util.function.IntToDoubleFunction)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/IntStream.html#mapToDouble(java.util.function.IntToDoubleFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.IntToDoubleFunction"/></param>
         /// <returns><see cref="Java.Util.Stream.DoubleStream"/></returns>
@@ -300,7 +300,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Stream.DoubleStream>("mapToDouble", "(Ljava/util/function/IntToDoubleFunction;)Ljava/util/stream/DoubleStream;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/IntStream.html#distinct()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/IntStream.html#distinct()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
         public Java.Util.Stream.IntStream Distinct()
@@ -308,7 +308,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Stream.IntStream>("distinct", "()Ljava/util/stream/IntStream;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/IntStream.html#filter(java.util.function.IntPredicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/IntStream.html#filter(java.util.function.IntPredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.IntPredicate"/></param>
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
@@ -317,17 +317,17 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Stream.IntStream>("filter", "(Ljava/util/function/IntPredicate;)Ljava/util/stream/IntStream;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/IntStream.html#flatMap(java.util.function.IntFunction)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/IntStream.html#flatMap(java.util.function.IntFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.IntFunction"/></param>
         /// <typeparam name="Arg0ExtendsJava_Util_Stream_IntStream"><see cref="Java.Util.Stream.IntStream"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
-        public Java.Util.Stream.IntStream FlatMap<Arg0ExtendsJava_Util_Stream_IntStream>(Java.Util.Function.IntFunction<Arg0ExtendsJava_Util_Stream_IntStream> arg0) where Arg0ExtendsJava_Util_Stream_IntStream: Java.Util.Stream.IntStream
+        public Java.Util.Stream.IntStream FlatMap<Arg0ExtendsJava_Util_Stream_IntStream>(Java.Util.Function.IntFunction<Arg0ExtendsJava_Util_Stream_IntStream> arg0) where Arg0ExtendsJava_Util_Stream_IntStream : Java.Util.Stream.IntStream
         {
             return IExecuteWithSignature<Java.Util.Stream.IntStream>("flatMap", "(Ljava/util/function/IntFunction;)Ljava/util/stream/IntStream;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/IntStream.html#limit(long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/IntStream.html#limit(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
@@ -336,7 +336,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Stream.IntStream>("limit", "(J)Ljava/util/stream/IntStream;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/IntStream.html#map(java.util.function.IntUnaryOperator)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/IntStream.html#map(java.util.function.IntUnaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.IntUnaryOperator"/></param>
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
@@ -345,7 +345,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Stream.IntStream>("map", "(Ljava/util/function/IntUnaryOperator;)Ljava/util/stream/IntStream;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/IntStream.html#peek(java.util.function.IntConsumer)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/IntStream.html#peek(java.util.function.IntConsumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.IntConsumer"/></param>
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
@@ -354,7 +354,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Stream.IntStream>("peek", "(Ljava/util/function/IntConsumer;)Ljava/util/stream/IntStream;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/IntStream.html#skip(long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/IntStream.html#skip(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
@@ -363,7 +363,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Stream.IntStream>("skip", "(J)Ljava/util/stream/IntStream;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/IntStream.html#sorted()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/IntStream.html#sorted()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
         public Java.Util.Stream.IntStream Sorted()
@@ -371,7 +371,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Stream.IntStream>("sorted", "()Ljava/util/stream/IntStream;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/IntStream.html#asLongStream()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/IntStream.html#asLongStream()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
         public Java.Util.Stream.LongStream AsLongStream()
@@ -379,7 +379,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Stream.LongStream>("asLongStream", "()Ljava/util/stream/LongStream;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/IntStream.html#mapToLong(java.util.function.IntToLongFunction)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/IntStream.html#mapToLong(java.util.function.IntToLongFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.IntToLongFunction"/></param>
         /// <returns><see cref="Java.Util.Stream.LongStream"/></returns>
@@ -388,7 +388,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Stream.LongStream>("mapToLong", "(Ljava/util/function/IntToLongFunction;)Ljava/util/stream/LongStream;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/IntStream.html#boxed()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/IntStream.html#boxed()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
         public Java.Util.Stream.Stream<Java.Lang.Integer> Boxed()
@@ -396,7 +396,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Stream.Stream<Java.Lang.Integer>>("boxed", "()Ljava/util/stream/Stream;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/IntStream.html#count()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/IntStream.html#count()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
         public long Count()
@@ -404,7 +404,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<long>("count", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/IntStream.html#forEach(java.util.function.IntConsumer)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/IntStream.html#forEach(java.util.function.IntConsumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.IntConsumer"/></param>
         public void ForEach(Java.Util.Function.IntConsumer arg0)
@@ -412,7 +412,7 @@ namespace Java.Util.Stream
             IExecuteWithSignature("forEach", "(Ljava/util/function/IntConsumer;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/IntStream.html#forEachOrdered(java.util.function.IntConsumer)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/IntStream.html#forEachOrdered(java.util.function.IntConsumer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.IntConsumer"/></param>
         public void ForEachOrdered(Java.Util.Function.IntConsumer arg0)
@@ -420,7 +420,7 @@ namespace Java.Util.Stream
             IExecuteWithSignature("forEachOrdered", "(Ljava/util/function/IntConsumer;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/IntStream.html#iterator()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/IntStream.html#iterator()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Iterator"/></returns>
         public Java.Util.Iterator Iterator()
@@ -428,7 +428,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Iterator>("iterator", "()Ljava/util/Iterator;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/IntStream.html#spliterator()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/IntStream.html#spliterator()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Spliterator"/></returns>
         public Java.Util.Spliterator Spliterator()
@@ -436,7 +436,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Spliterator>("spliterator", "()Ljava/util/Spliterator;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/IntStream.html#parallel()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/IntStream.html#parallel()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Stream.BaseStream"/></returns>
         public Java.Util.Stream.BaseStream Parallel()
@@ -444,7 +444,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Stream.BaseStream>("parallel", "()Ljava/util/stream/BaseStream;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/IntStream.html#sequential()"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/IntStream.html#sequential()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Stream.BaseStream"/></returns>
         public Java.Util.Stream.BaseStream Sequential()
@@ -452,7 +452,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Stream.BaseStream>("sequential", "()Ljava/util/stream/BaseStream;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/IntStream.html#dropWhile(java.util.function.IntPredicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/IntStream.html#dropWhile(java.util.function.IntPredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.IntPredicate"/></param>
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
@@ -461,16 +461,7 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Stream.IntStream>("dropWhile", "(Ljava/util/function/IntPredicate;)Ljava/util/stream/IntStream;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/IntStream.html#mapMulti(java.util.stream.IntStream.IntMapMultiConsumer)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Stream.IntStream.IntMapMultiConsumer"/></param>
-        /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
-        public Java.Util.Stream.IntStream MapMulti(Java.Util.Stream.IntStream.IntMapMultiConsumer arg0)
-        {
-            return IExecuteWithSignature<Java.Util.Stream.IntStream>("mapMulti", "(Ljava/util/stream/IntStream$IntMapMultiConsumer;)Ljava/util/stream/IntStream;", arg0);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/stream/IntStream.html#takeWhile(java.util.function.IntPredicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/stream/IntStream.html#takeWhile(java.util.function.IntPredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.IntPredicate"/></param>
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>

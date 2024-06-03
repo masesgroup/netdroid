@@ -64,28 +64,34 @@ namespace Javax.Sql
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/ConnectionPoolDataSource.html#getLoginTimeout()"/> <see href="https://developer.android.com/reference/java.sql/javax/sql/ConnectionPoolDataSource.html#setLoginTimeout(int)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/ConnectionPoolDataSource.html#getLoginTimeout()"/>
         /// </summary>
-        public int LoginTimeout
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public int GetLoginTimeout()
         {
-            get { return IExecuteWithSignature<int>("getLoginTimeout", "()I"); } set { IExecuteWithSignature("setLoginTimeout", "(I)V", value); }
+            return IExecuteWithSignature<int>("getLoginTimeout", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/ConnectionPoolDataSource.html#getLogWriter()"/> <see href="https://developer.android.com/reference/java.sql/javax/sql/ConnectionPoolDataSource.html#setLogWriter(java.io.PrintWriter)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/ConnectionPoolDataSource.html#getLogWriter()"/>
         /// </summary>
-        public Java.Io.PrintWriter LogWriter
+        /// <returns><see cref="Java.Io.PrintWriter"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public Java.Io.PrintWriter GetLogWriter()
         {
-            get { return IExecuteWithSignature<Java.Io.PrintWriter>("getLogWriter", "()Ljava/io/PrintWriter;"); } set { IExecuteWithSignature("setLogWriter", "(Ljava/io/PrintWriter;)V", value); }
+            return IExecuteWithSignature<Java.Io.PrintWriter>("getLogWriter", "()Ljava/io/PrintWriter;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/ConnectionPoolDataSource.html#getPooledConnection()"/> 
+        /// <see href="https://developer.android.com/reference/javax/sql/ConnectionPoolDataSource.html#getPooledConnection()"/>
         /// </summary>
-        public Javax.Sql.PooledConnection PooledConnection
+        /// <returns><see cref="Javax.Sql.PooledConnection"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public Javax.Sql.PooledConnection GetPooledConnection()
         {
-            get { return IExecuteWithSignature<Javax.Sql.PooledConnection>("getPooledConnection", "()Ljavax/sql/PooledConnection;"); }
+            return IExecuteWithSignature<Javax.Sql.PooledConnection>("getPooledConnection", "()Ljavax/sql/PooledConnection;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/ConnectionPoolDataSource.html#getPooledConnection(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/ConnectionPoolDataSource.html#getPooledConnection(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -94,6 +100,24 @@ namespace Javax.Sql
         public Javax.Sql.PooledConnection GetPooledConnection(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return IExecute<Javax.Sql.PooledConnection>("getPooledConnection", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/sql/ConnectionPoolDataSource.html#setLoginTimeout(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public void SetLoginTimeout(int arg0)
+        {
+            IExecuteWithSignature("setLoginTimeout", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/sql/ConnectionPoolDataSource.html#setLogWriter(java.io.PrintWriter)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.PrintWriter"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public void SetLogWriter(Java.Io.PrintWriter arg0)
+        {
+            IExecuteWithSignature("setLogWriter", "(Ljava/io/PrintWriter;)V", arg0);
         }
 
         #endregion

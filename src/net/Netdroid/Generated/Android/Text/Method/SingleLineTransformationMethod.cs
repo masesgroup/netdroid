@@ -42,11 +42,12 @@ namespace Android.Text.Method
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/text/method/SingleLineTransformationMethod.html#getInstance()"/> 
+        /// <see href="https://developer.android.com/reference/android/text/method/SingleLineTransformationMethod.html#getInstance()"/>
         /// </summary>
-        public static Android.Text.Method.SingleLineTransformationMethod Instance
+        /// <returns><see cref="Android.Text.Method.SingleLineTransformationMethod"/></returns>
+        public static Android.Text.Method.SingleLineTransformationMethod GetInstance()
         {
-            get { return SExecuteWithSignature<Android.Text.Method.SingleLineTransformationMethod>(LocalBridgeClazz, "getInstance", "()Landroid/text/method/SingleLineTransformationMethod;"); }
+            return SExecuteWithSignature<Android.Text.Method.SingleLineTransformationMethod>(LocalBridgeClazz, "getInstance", "()Landroid/text/method/SingleLineTransformationMethod;");
         }
 
         #endregion

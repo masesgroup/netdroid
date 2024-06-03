@@ -52,32 +52,12 @@ namespace Android.App.Sdksandbox.Sdkprovider
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/sdksandbox/sdkprovider/SdkSandboxController.html#getAppOwnedSdkSandboxInterfaces()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/sdksandbox/sdkprovider/SdkSandboxController.html#getClientSharedPreferences()"/>
         /// </summary>
-        public Java.Util.List<Android.App.Sdksandbox.AppOwnedSdkSandboxInterface> AppOwnedSdkSandboxInterfaces
+        /// <returns><see cref="Android.Content.SharedPreferences"/></returns>
+        public Android.Content.SharedPreferences GetClientSharedPreferences()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.App.Sdksandbox.AppOwnedSdkSandboxInterface>>("getAppOwnedSdkSandboxInterfaces", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/sdksandbox/sdkprovider/SdkSandboxController.html#getClientPackageName()"/> 
-        /// </summary>
-        public Java.Lang.String ClientPackageName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getClientPackageName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/sdksandbox/sdkprovider/SdkSandboxController.html#getClientSharedPreferences()"/> 
-        /// </summary>
-        public Android.Content.SharedPreferences ClientSharedPreferences
-        {
-            get { return IExecuteWithSignature<Android.Content.SharedPreferences>("getClientSharedPreferences", "()Landroid/content/SharedPreferences;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/sdksandbox/sdkprovider/SdkSandboxController.html#getSandboxedSdks()"/> 
-        /// </summary>
-        public Java.Util.List<Android.App.Sdksandbox.SandboxedSdk> SandboxedSdks
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.App.Sdksandbox.SandboxedSdk>>("getSandboxedSdks", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Android.Content.SharedPreferences>("getClientSharedPreferences", "()Landroid/content/SharedPreferences;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/sdksandbox/sdkprovider/SdkSandboxController.html#registerSdkSandboxActivityHandler(android.app.sdksandbox.sdkprovider.SdkSandboxActivityHandler)"/>
@@ -87,6 +67,30 @@ namespace Android.App.Sdksandbox.Sdkprovider
         public Android.Os.IBinder RegisterSdkSandboxActivityHandler(Android.App.Sdksandbox.Sdkprovider.SdkSandboxActivityHandler arg0)
         {
             return IExecuteWithSignature<Android.Os.IBinder>("registerSdkSandboxActivityHandler", "(Landroid/app/sdksandbox/sdkprovider/SdkSandboxActivityHandler;)Landroid/os/IBinder;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/sdksandbox/sdkprovider/SdkSandboxController.html#getClientPackageName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetClientPackageName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getClientPackageName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/sdksandbox/sdkprovider/SdkSandboxController.html#getAppOwnedSdkSandboxInterfaces()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.App.Sdksandbox.AppOwnedSdkSandboxInterface> GetAppOwnedSdkSandboxInterfaces()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.App.Sdksandbox.AppOwnedSdkSandboxInterface>>("getAppOwnedSdkSandboxInterfaces", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/sdksandbox/sdkprovider/SdkSandboxController.html#getSandboxedSdks()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.App.Sdksandbox.SandboxedSdk> GetSandboxedSdks()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.App.Sdksandbox.SandboxedSdk>>("getSandboxedSdks", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/sdksandbox/sdkprovider/SdkSandboxController.html#unregisterSdkSandboxActivityHandler(android.app.sdksandbox.sdkprovider.SdkSandboxActivityHandler)"/>

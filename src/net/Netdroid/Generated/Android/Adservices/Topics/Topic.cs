@@ -56,25 +56,28 @@ namespace Android.Adservices.Topics
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/topics/Topic.html#getModelVersion()"/> 
+        /// <see href="https://developer.android.com/reference/android/adservices/topics/Topic.html#getTopicId()"/>
         /// </summary>
-        public long ModelVersion
+        /// <returns><see cref="int"/></returns>
+        public int GetTopicId()
         {
-            get { return IExecuteWithSignature<long>("getModelVersion", "()J"); }
+            return IExecuteWithSignature<int>("getTopicId", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/topics/Topic.html#getTaxonomyVersion()"/> 
+        /// <see href="https://developer.android.com/reference/android/adservices/topics/Topic.html#getModelVersion()"/>
         /// </summary>
-        public long TaxonomyVersion
+        /// <returns><see cref="long"/></returns>
+        public long GetModelVersion()
         {
-            get { return IExecuteWithSignature<long>("getTaxonomyVersion", "()J"); }
+            return IExecuteWithSignature<long>("getModelVersion", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/topics/Topic.html#getTopicId()"/> 
+        /// <see href="https://developer.android.com/reference/android/adservices/topics/Topic.html#getTaxonomyVersion()"/>
         /// </summary>
-        public int TopicId
+        /// <returns><see cref="long"/></returns>
+        public long GetTaxonomyVersion()
         {
-            get { return IExecuteWithSignature<int>("getTopicId", "()I"); }
+            return IExecuteWithSignature<long>("getTaxonomyVersion", "()J");
         }
 
         #endregion

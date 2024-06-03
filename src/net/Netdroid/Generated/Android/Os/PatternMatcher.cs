@@ -99,20 +99,6 @@ namespace Android.Os
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/PatternMatcher.html#getPath()"/> 
-        /// </summary>
-        public Java.Lang.String Path
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPath", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/PatternMatcher.html#getType()"/> 
-        /// </summary>
-        public int Type
-        {
-            get { return IExecuteWithSignature<int>("getType", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/PatternMatcher.html#match(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -120,6 +106,22 @@ namespace Android.Os
         public bool Match(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<bool>("match", "(Ljava/lang/String;)Z", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/PatternMatcher.html#getType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetType()
+        {
+            return IExecuteWithSignature<int>("getType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/PatternMatcher.html#getPath()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPath()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPath", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/PatternMatcher.html#describeContents()"/>

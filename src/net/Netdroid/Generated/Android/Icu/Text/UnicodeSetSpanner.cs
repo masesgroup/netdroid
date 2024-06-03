@@ -54,11 +54,12 @@ namespace Android.Icu.Text
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/UnicodeSetSpanner.html#getUnicodeSet()"/> 
+        /// <see href="https://developer.android.com/reference/android/icu/text/UnicodeSetSpanner.html#getUnicodeSet()"/>
         /// </summary>
-        public Android.Icu.Text.UnicodeSet UnicodeSet
+        /// <returns><see cref="Android.Icu.Text.UnicodeSet"/></returns>
+        public Android.Icu.Text.UnicodeSet GetUnicodeSet()
         {
-            get { return IExecuteWithSignature<Android.Icu.Text.UnicodeSet>("getUnicodeSet", "()Landroid/icu/text/UnicodeSet;"); }
+            return IExecuteWithSignature<Android.Icu.Text.UnicodeSet>("getUnicodeSet", "()Landroid/icu/text/UnicodeSet;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/UnicodeSetSpanner.html#countIn(java.lang.CharSequence,android.icu.text.UnicodeSetSpanner.CountMethod,android.icu.text.UnicodeSet.SpanCondition)"/>

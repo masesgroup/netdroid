@@ -46,60 +46,28 @@ namespace Android.Content.Pm
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/LauncherActivityInfo.html#getActivityInfo()"/> 
+        /// <see href="https://developer.android.com/reference/android/content/pm/LauncherActivityInfo.html#getComponentName()"/>
         /// </summary>
-        public Android.Content.Pm.ActivityInfo ActivityInfo
+        /// <returns><see cref="Android.Content.ComponentName"/></returns>
+        public Android.Content.ComponentName GetComponentName()
         {
-            get { return IExecuteWithSignature<Android.Content.Pm.ActivityInfo>("getActivityInfo", "()Landroid/content/pm/ActivityInfo;"); }
+            return IExecuteWithSignature<Android.Content.ComponentName>("getComponentName", "()Landroid/content/ComponentName;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/LauncherActivityInfo.html#getApplicationInfo()"/> 
+        /// <see href="https://developer.android.com/reference/android/content/pm/LauncherActivityInfo.html#getActivityInfo()"/>
         /// </summary>
-        public Android.Content.Pm.ApplicationInfo ApplicationInfo
+        /// <returns><see cref="Android.Content.Pm.ActivityInfo"/></returns>
+        public Android.Content.Pm.ActivityInfo GetActivityInfo()
         {
-            get { return IExecuteWithSignature<Android.Content.Pm.ApplicationInfo>("getApplicationInfo", "()Landroid/content/pm/ApplicationInfo;"); }
+            return IExecuteWithSignature<Android.Content.Pm.ActivityInfo>("getActivityInfo", "()Landroid/content/pm/ActivityInfo;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/LauncherActivityInfo.html#getComponentName()"/> 
+        /// <see href="https://developer.android.com/reference/android/content/pm/LauncherActivityInfo.html#getApplicationInfo()"/>
         /// </summary>
-        public Android.Content.ComponentName ComponentName
+        /// <returns><see cref="Android.Content.Pm.ApplicationInfo"/></returns>
+        public Android.Content.Pm.ApplicationInfo GetApplicationInfo()
         {
-            get { return IExecuteWithSignature<Android.Content.ComponentName>("getComponentName", "()Landroid/content/ComponentName;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/LauncherActivityInfo.html#getFirstInstallTime()"/> 
-        /// </summary>
-        public long FirstInstallTime
-        {
-            get { return IExecuteWithSignature<long>("getFirstInstallTime", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/LauncherActivityInfo.html#getLabel()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence Label
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getLabel", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/LauncherActivityInfo.html#getLoadingProgress()"/> 
-        /// </summary>
-        public float LoadingProgress
-        {
-            get { return IExecuteWithSignature<float>("getLoadingProgress", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/LauncherActivityInfo.html#getName()"/> 
-        /// </summary>
-        public Java.Lang.String Name
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/LauncherActivityInfo.html#getUser()"/> 
-        /// </summary>
-        public Android.Os.UserHandle User
-        {
-            get { return IExecuteWithSignature<Android.Os.UserHandle>("getUser", "()Landroid/os/UserHandle;"); }
+            return IExecuteWithSignature<Android.Content.Pm.ApplicationInfo>("getApplicationInfo", "()Landroid/content/pm/ApplicationInfo;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/LauncherActivityInfo.html#getBadgedIcon(int)"/>
@@ -118,6 +86,46 @@ namespace Android.Content.Pm
         public Android.Graphics.Drawable.Drawable GetIcon(int arg0)
         {
             return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getIcon", "(I)Landroid/graphics/drawable/Drawable;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/LauncherActivityInfo.html#getUser()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Os.UserHandle"/></returns>
+        public Android.Os.UserHandle GetUser()
+        {
+            return IExecuteWithSignature<Android.Os.UserHandle>("getUser", "()Landroid/os/UserHandle;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/LauncherActivityInfo.html#getLoadingProgress()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetLoadingProgress()
+        {
+            return IExecuteWithSignature<float>("getLoadingProgress", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/LauncherActivityInfo.html#getLabel()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetLabel()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getLabel", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/LauncherActivityInfo.html#getName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/LauncherActivityInfo.html#getFirstInstallTime()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetFirstInstallTime()
+        {
+            return IExecuteWithSignature<long>("getFirstInstallTime", "()J");
         }
 
         #endregion

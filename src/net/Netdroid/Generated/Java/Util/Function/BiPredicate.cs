@@ -50,18 +50,18 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("test", new System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(TestEventHandler));
-            AddEventHandler("and", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.BiPredicate>>>(AndEventHandler));
-            AddEventHandler("negate", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(NegateEventHandler));
-            AddEventHandler("or", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.BiPredicate>>>(OrEventHandler));
+            AddEventHandler("test", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<object>>>(TestEventHandler));
+            AddEventHandler("and", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.BiPredicate>>>(AndEventHandler));
+            AddEventHandler("negate", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(NegateEventHandler));
+            AddEventHandler("or", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.BiPredicate>>>(OrEventHandler));
 
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/BiPredicate.html#test(java.lang.Object,java.lang.Object)"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/BiPredicate.html#test(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <remarks>If <see cref="OnTest"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<object, object, bool> OnTest { get; set; } = null;
+        public global::System.Func<object, object, bool> OnTest { get; set; } = null;
 
         void TestEventHandler(object sender, CLRListenerEventArgs<CLREventData<object>> data)
         {
@@ -71,7 +71,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/BiPredicate.html#test(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/BiPredicate.html#test(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -81,7 +81,7 @@ namespace Java.Util.Function
             return default;
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/BiPredicate.html#and(java.util.function.BiPredicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/BiPredicate.html#and(java.util.function.BiPredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.BiPredicate"/></param>
         /// <returns><see cref="Java.Util.Function.BiPredicate"/></returns>
@@ -92,10 +92,10 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/BiPredicate.html#and(java.util.function.BiPredicate)"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/BiPredicate.html#and(java.util.function.BiPredicate)"/>
         /// </summary>
         /// <remarks>If <see cref="OnAnd"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.BiPredicate, Java.Util.Function.BiPredicate> OnAnd { get; set; } = null;
+        public global::System.Func<Java.Util.Function.BiPredicate, Java.Util.Function.BiPredicate> OnAnd { get; set; } = null;
 
         void AndEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.BiPredicate>> data)
         {
@@ -105,7 +105,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/BiPredicate.html#and(java.util.function.BiPredicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/BiPredicate.html#and(java.util.function.BiPredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.BiPredicate"/></param>
         /// <returns><see cref="Java.Util.Function.BiPredicate"/></returns>
@@ -115,7 +115,7 @@ namespace Java.Util.Function
             return AndDefault(arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/BiPredicate.html#negate()"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/BiPredicate.html#negate()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Function.BiPredicate"/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
@@ -125,10 +125,10 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/BiPredicate.html#negate()"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/BiPredicate.html#negate()"/>
         /// </summary>
         /// <remarks>If <see cref="OnNegate"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.BiPredicate> OnNegate { get; set; } = null;
+        public global::System.Func<Java.Util.Function.BiPredicate> OnNegate { get; set; } = null;
 
         void NegateEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
@@ -138,7 +138,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/BiPredicate.html#negate()"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/BiPredicate.html#negate()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Function.BiPredicate"/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="NegateDefault"/>; override the method to implement a different behavior</remarks>
@@ -147,7 +147,7 @@ namespace Java.Util.Function
             return NegateDefault();
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/BiPredicate.html#or(java.util.function.BiPredicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/BiPredicate.html#or(java.util.function.BiPredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.BiPredicate"/></param>
         /// <returns><see cref="Java.Util.Function.BiPredicate"/></returns>
@@ -158,10 +158,10 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/BiPredicate.html#or(java.util.function.BiPredicate)"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/BiPredicate.html#or(java.util.function.BiPredicate)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOr"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.BiPredicate, Java.Util.Function.BiPredicate> OnOr { get; set; } = null;
+        public global::System.Func<Java.Util.Function.BiPredicate, Java.Util.Function.BiPredicate> OnOr { get; set; } = null;
 
         void OrEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.BiPredicate>> data)
         {
@@ -171,7 +171,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/BiPredicate.html#or(java.util.function.BiPredicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/BiPredicate.html#or(java.util.function.BiPredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.BiPredicate"/></param>
         /// <returns><see cref="Java.Util.Function.BiPredicate"/></returns>
@@ -212,7 +212,7 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/BiPredicate.html#test(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/BiPredicate.html#test(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -222,7 +222,7 @@ namespace Java.Util.Function
             return IExecute<bool>("test", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/BiPredicate.html#and(java.util.function.BiPredicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/BiPredicate.html#and(java.util.function.BiPredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.BiPredicate"/></param>
         /// <returns><see cref="Java.Util.Function.BiPredicate"/></returns>
@@ -231,7 +231,7 @@ namespace Java.Util.Function
             return IExecuteWithSignature<Java.Util.Function.BiPredicateDirect, Java.Util.Function.BiPredicate>("and", "(Ljava/util/function/BiPredicate;)Ljava/util/function/BiPredicate;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/BiPredicate.html#negate()"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/BiPredicate.html#negate()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Function.BiPredicate"/></returns>
         public override Java.Util.Function.BiPredicate Negate()
@@ -239,7 +239,7 @@ namespace Java.Util.Function
             return IExecuteWithSignature<Java.Util.Function.BiPredicateDirect, Java.Util.Function.BiPredicate>("negate", "()Ljava/util/function/BiPredicate;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/BiPredicate.html#or(java.util.function.BiPredicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/BiPredicate.html#or(java.util.function.BiPredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.BiPredicate"/></param>
         /// <returns><see cref="Java.Util.Function.BiPredicate"/></returns>
@@ -260,7 +260,7 @@ namespace Java.Util.Function
 
     #region IBiPredicate<T, U>
     /// <summary>
-    /// .NET interface for org.mases.netdroid.generated.java.util.function.BiPredicate implementing <see href="https://developer.android.com/reference/java.base/java/util/function/BiPredicate.html"/>
+    /// .NET interface for org.mases.netdroid.generated.java.util.function.BiPredicate implementing <see href="https://developer.android.com/reference/java/util/function/BiPredicate.html"/>
     /// </summary>
     public partial interface IBiPredicate<T, U>
     {
@@ -301,18 +301,18 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("test", new System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(TestEventHandler));
-            AddEventHandler("and", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU>>>>(And<Arg0objectSuperT, Arg0objectSuperU>EventHandler));
-            AddEventHandler("negate", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(NegateEventHandler));
-            AddEventHandler("or", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU>>>>(Or<Arg0objectSuperT, Arg0objectSuperU>EventHandler));
+            AddEventHandler("test", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<T>>>(TestEventHandler));
+            AddEventHandler("and", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU>>>>(And<Arg0objectSuperT, Arg0objectSuperU>EventHandler));
+            AddEventHandler("negate", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(NegateEventHandler));
+            AddEventHandler("or", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU>>>>(Or<Arg0objectSuperT, Arg0objectSuperU>EventHandler));
 
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/BiPredicate.html#test(java.lang.Object,java.lang.Object)"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/BiPredicate.html#test(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <remarks>If <see cref="OnTest"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<T, U, bool> OnTest { get; set; } = null;
+        public global::System.Func<T, U, bool> OnTest { get; set; } = null;
 
         void TestEventHandler(object sender, CLRListenerEventArgs<CLREventData<T>> data)
         {
@@ -322,7 +322,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/BiPredicate.html#test(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/BiPredicate.html#test(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><typeparamref name="U"/></param>
@@ -332,23 +332,23 @@ namespace Java.Util.Function
             return default;
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/BiPredicate.html#and(java.util.function.BiPredicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/BiPredicate.html#and(java.util.function.BiPredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.BiPredicate"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <typeparam name="Arg0objectSuperU"><typeparamref name="U"/></typeparam>
         /// <returns><see cref="Java.Util.Function.BiPredicate"/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
-        public Java.Util.Function.BiPredicate<T, U> And<Arg0objectSuperT, Arg0objectSuperU>Default(Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU> arg0) where Arg0objectSuperT: T where Arg0objectSuperU: U
+        public Java.Util.Function.BiPredicate<T, U> And<Arg0objectSuperT, Arg0objectSuperU>Default(Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU> arg0) where Arg0objectSuperT : T where Arg0objectSuperU : U
         {
             return IExecuteWithSignature<Java.Util.Function.BiPredicate<T, U>>("andDefault", "(Ljava/util/function/BiPredicate;)Ljava/util/function/BiPredicate;", arg0);
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/BiPredicate.html#and(java.util.function.BiPredicate)"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/BiPredicate.html#and(java.util.function.BiPredicate)"/>
         /// </summary>
         /// <remarks>If <see cref="OnAnd<Arg0objectSuperT, Arg0objectSuperU>"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU>, Java.Util.Function.BiPredicate<T, U>> OnAnd<Arg0objectSuperT, Arg0objectSuperU> { get; set; } = null;
+        public global::System.Func<Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU>, Java.Util.Function.BiPredicate<T, U>> OnAnd<Arg0objectSuperT, Arg0objectSuperU> { get; set; } = null;
 
         void And<Arg0objectSuperT, Arg0objectSuperU>EventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU>>> data)
         {
@@ -358,19 +358,19 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/BiPredicate.html#and(java.util.function.BiPredicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/BiPredicate.html#and(java.util.function.BiPredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.BiPredicate"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <typeparam name="Arg0objectSuperU"><typeparamref name="U"/></typeparam>
         /// <returns><see cref="Java.Util.Function.BiPredicate"/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="And<Arg0objectSuperT, Arg0objectSuperU>Default"/>; override the method to implement a different behavior</remarks>
-        public virtual Java.Util.Function.BiPredicate<T, U> And<Arg0objectSuperT, Arg0objectSuperU>(Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU> arg0) where Arg0objectSuperT: T where Arg0objectSuperU: U
+        public virtual Java.Util.Function.BiPredicate<T, U> And<Arg0objectSuperT, Arg0objectSuperU>(Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU> arg0) where Arg0objectSuperT : T where Arg0objectSuperU : U
         {
             return And<Arg0objectSuperT, Arg0objectSuperU>Default(arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/BiPredicate.html#negate()"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/BiPredicate.html#negate()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Function.BiPredicate"/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
@@ -380,10 +380,10 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/BiPredicate.html#negate()"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/BiPredicate.html#negate()"/>
         /// </summary>
         /// <remarks>If <see cref="OnNegate"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.BiPredicate<T, U>> OnNegate { get; set; } = null;
+        public global::System.Func<Java.Util.Function.BiPredicate<T, U>> OnNegate { get; set; } = null;
 
         void NegateEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
@@ -393,7 +393,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/BiPredicate.html#negate()"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/BiPredicate.html#negate()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Function.BiPredicate"/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="NegateDefault"/>; override the method to implement a different behavior</remarks>
@@ -402,23 +402,23 @@ namespace Java.Util.Function
             return NegateDefault();
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/BiPredicate.html#or(java.util.function.BiPredicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/BiPredicate.html#or(java.util.function.BiPredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.BiPredicate"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <typeparam name="Arg0objectSuperU"><typeparamref name="U"/></typeparam>
         /// <returns><see cref="Java.Util.Function.BiPredicate"/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface</remarks>
-        public Java.Util.Function.BiPredicate<T, U> Or<Arg0objectSuperT, Arg0objectSuperU>Default(Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU> arg0) where Arg0objectSuperT: T where Arg0objectSuperU: U
+        public Java.Util.Function.BiPredicate<T, U> Or<Arg0objectSuperT, Arg0objectSuperU>Default(Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU> arg0) where Arg0objectSuperT : T where Arg0objectSuperU : U
         {
             return IExecuteWithSignature<Java.Util.Function.BiPredicate<T, U>>("orDefault", "(Ljava/util/function/BiPredicate;)Ljava/util/function/BiPredicate;", arg0);
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/BiPredicate.html#or(java.util.function.BiPredicate)"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/BiPredicate.html#or(java.util.function.BiPredicate)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOr<Arg0objectSuperT, Arg0objectSuperU>"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU>, Java.Util.Function.BiPredicate<T, U>> OnOr<Arg0objectSuperT, Arg0objectSuperU> { get; set; } = null;
+        public global::System.Func<Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU>, Java.Util.Function.BiPredicate<T, U>> OnOr<Arg0objectSuperT, Arg0objectSuperU> { get; set; } = null;
 
         void Or<Arg0objectSuperT, Arg0objectSuperU>EventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU>>> data)
         {
@@ -428,14 +428,14 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/BiPredicate.html#or(java.util.function.BiPredicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/BiPredicate.html#or(java.util.function.BiPredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.BiPredicate"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <typeparam name="Arg0objectSuperU"><typeparamref name="U"/></typeparam>
         /// <returns><see cref="Java.Util.Function.BiPredicate"/></returns>
         /// <remarks>The method invokes the default implementation in the JVM interface using <see cref="Or<Arg0objectSuperT, Arg0objectSuperU>Default"/>; override the method to implement a different behavior</remarks>
-        public virtual Java.Util.Function.BiPredicate<T, U> Or<Arg0objectSuperT, Arg0objectSuperU>(Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU> arg0) where Arg0objectSuperT: T where Arg0objectSuperU: U
+        public virtual Java.Util.Function.BiPredicate<T, U> Or<Arg0objectSuperT, Arg0objectSuperU>(Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU> arg0) where Arg0objectSuperT : T where Arg0objectSuperU : U
         {
             return Or<Arg0objectSuperT, Arg0objectSuperU>Default(arg0);
         }
@@ -471,7 +471,7 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/BiPredicate.html#test(java.lang.Object,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/BiPredicate.html#test(java.lang.Object,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><typeparamref name="U"/></param>
@@ -481,18 +481,18 @@ namespace Java.Util.Function
             return IExecute<bool>("test", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/BiPredicate.html#and(java.util.function.BiPredicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/BiPredicate.html#and(java.util.function.BiPredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.BiPredicate"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <typeparam name="Arg0objectSuperU"><typeparamref name="U"/></typeparam>
         /// <returns><see cref="Java.Util.Function.BiPredicate"/></returns>
-        public override Java.Util.Function.BiPredicate<T, U> And<Arg0objectSuperT, Arg0objectSuperU>(Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU> arg0) where Arg0objectSuperT: T where Arg0objectSuperU: U
+        public override Java.Util.Function.BiPredicate<T, U> And<Arg0objectSuperT, Arg0objectSuperU>(Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU> arg0) where Arg0objectSuperT : T where Arg0objectSuperU : U
         {
             return IExecuteWithSignature<Java.Util.Function.BiPredicateDirect<T, U>, Java.Util.Function.BiPredicate<T, U>>("and", "(Ljava/util/function/BiPredicate;)Ljava/util/function/BiPredicate;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/BiPredicate.html#negate()"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/BiPredicate.html#negate()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Function.BiPredicate"/></returns>
         public override Java.Util.Function.BiPredicate<T, U> Negate()
@@ -500,13 +500,13 @@ namespace Java.Util.Function
             return IExecuteWithSignature<Java.Util.Function.BiPredicateDirect<T, U>, Java.Util.Function.BiPredicate<T, U>>("negate", "()Ljava/util/function/BiPredicate;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/BiPredicate.html#or(java.util.function.BiPredicate)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/BiPredicate.html#or(java.util.function.BiPredicate)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.BiPredicate"/></param>
         /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
         /// <typeparam name="Arg0objectSuperU"><typeparamref name="U"/></typeparam>
         /// <returns><see cref="Java.Util.Function.BiPredicate"/></returns>
-        public override Java.Util.Function.BiPredicate<T, U> Or<Arg0objectSuperT, Arg0objectSuperU>(Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU> arg0) where Arg0objectSuperT: T where Arg0objectSuperU: U
+        public override Java.Util.Function.BiPredicate<T, U> Or<Arg0objectSuperT, Arg0objectSuperU>(Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU> arg0) where Arg0objectSuperT : T where Arg0objectSuperU : U
         {
             return IExecuteWithSignature<Java.Util.Function.BiPredicateDirect<T, U>, Java.Util.Function.BiPredicate<T, U>>("or", "(Ljava/util/function/BiPredicate;)Ljava/util/function/BiPredicate;", arg0);
         }

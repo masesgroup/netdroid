@@ -60,11 +60,12 @@ namespace Android.Credentials
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/credentials/ClearCredentialStateRequest.html#getData()"/> 
+        /// <see href="https://developer.android.com/reference/android/credentials/ClearCredentialStateRequest.html#getData()"/>
         /// </summary>
-        public Android.Os.Bundle Data
+        /// <returns><see cref="Android.Os.Bundle"/></returns>
+        public Android.Os.Bundle GetData()
         {
-            get { return IExecuteWithSignature<Android.Os.Bundle>("getData", "()Landroid/os/Bundle;"); }
+            return IExecuteWithSignature<Android.Os.Bundle>("getData", "()Landroid/os/Bundle;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/credentials/ClearCredentialStateRequest.html#describeContents()"/>

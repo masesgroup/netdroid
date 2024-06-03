@@ -46,25 +46,28 @@ namespace Android.Health.Connect.Datatypes
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/AppInfo.html#getIcon()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/AppInfo.html#getIcon()"/>
         /// </summary>
-        public Android.Graphics.Bitmap Icon
+        /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
+        public Android.Graphics.Bitmap GetIcon()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Bitmap>("getIcon", "()Landroid/graphics/Bitmap;"); }
+            return IExecuteWithSignature<Android.Graphics.Bitmap>("getIcon", "()Landroid/graphics/Bitmap;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/AppInfo.html#getName()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/AppInfo.html#getName()"/>
         /// </summary>
-        public Java.Lang.String Name
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetName()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/AppInfo.html#getPackageName()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/AppInfo.html#getPackageName()"/>
         /// </summary>
-        public Java.Lang.String PackageName
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPackageName()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPackageName", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getPackageName", "()Ljava/lang/String;");
         }
 
         #endregion

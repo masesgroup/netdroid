@@ -46,25 +46,12 @@ namespace Android.View.Accessibility
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/accessibility/CaptioningManager.html#getFontScale()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/CaptioningManager.html#getUserStyle()"/>
         /// </summary>
-        public float FontScale
+        /// <returns><see cref="Android.View.Accessibility.CaptioningManager.CaptionStyle"/></returns>
+        public Android.View.Accessibility.CaptioningManager.CaptionStyle GetUserStyle()
         {
-            get { return IExecuteWithSignature<float>("getFontScale", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/accessibility/CaptioningManager.html#getLocale()"/> 
-        /// </summary>
-        public Java.Util.Locale Locale
-        {
-            get { return IExecuteWithSignature<Java.Util.Locale>("getLocale", "()Ljava/util/Locale;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/accessibility/CaptioningManager.html#getUserStyle()"/> 
-        /// </summary>
-        public Android.View.Accessibility.CaptioningManager.CaptionStyle UserStyle
-        {
-            get { return IExecuteWithSignature<Android.View.Accessibility.CaptioningManager.CaptionStyle>("getUserStyle", "()Landroid/view/accessibility/CaptioningManager$CaptionStyle;"); }
+            return IExecuteWithSignature<Android.View.Accessibility.CaptioningManager.CaptionStyle>("getUserStyle", "()Landroid/view/accessibility/CaptioningManager$CaptionStyle;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/CaptioningManager.html#isCallCaptioningEnabled()"/>
@@ -97,6 +84,22 @@ namespace Android.View.Accessibility
         public bool IsSystemAudioCaptioningUiEnabled()
         {
             return IExecuteWithSignature<bool>("isSystemAudioCaptioningUiEnabled", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/CaptioningManager.html#getFontScale()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetFontScale()
+        {
+            return IExecuteWithSignature<float>("getFontScale", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/accessibility/CaptioningManager.html#getLocale()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Locale"/></returns>
+        public Java.Util.Locale GetLocale()
+        {
+            return IExecuteWithSignature<Java.Util.Locale>("getLocale", "()Ljava/util/Locale;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/accessibility/CaptioningManager.html#addCaptioningChangeListener(android.view.accessibility.CaptioningManager.CaptioningChangeListener)"/>
@@ -139,180 +142,10 @@ namespace Android.View.Accessibility
 
             #region Instance methods
             /// <summary>
-            /// Handlers initializer for <see cref="CaptioningChangeListener"/>
-            /// </summary>
-            protected virtual void InitializeHandlers()
-            {
-                AddEventHandler("onEnabledChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<bool>>>(OnEnabledChangedEventHandler));
-                AddEventHandler("onFontScaleChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<float>>>(OnFontScaleChangedEventHandler));
-                AddEventHandler("onLocaleChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.Locale>>>(OnLocaleChangedEventHandler));
-                AddEventHandler("onSystemAudioCaptioningChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<bool>>>(OnSystemAudioCaptioningChangedEventHandler));
-                AddEventHandler("onSystemAudioCaptioningUiChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<bool>>>(OnSystemAudioCaptioningUiChangedEventHandler));
-                AddEventHandler("onUserStyleChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.Accessibility.CaptioningManager.CaptionStyle>>>(OnUserStyleChangedEventHandler));
-
-            }
-
-            /// <summary>
-            /// Handler for <see href="https://developer.android.com/reference/android/view/accessibility/CaptioningManager.CaptioningChangeListener.html#onEnabledChanged(boolean)"/>
-            /// </summary>
-            /// <remarks>If <see cref="OnOnEnabledChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<bool> OnOnEnabledChanged { get; set; } = null;
-
-            void OnEnabledChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<bool>> data)
-            {
-                var methodToExecute = (OnOnEnabledChanged != null) ? OnOnEnabledChanged : OnEnabledChanged;
-                methodToExecute.Invoke(data.EventData.TypedEventData);
-            }
-
-            /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/accessibility/CaptioningManager.CaptioningChangeListener.html#onEnabledChanged(boolean)"/>
             /// </summary>
             /// <param name="arg0"><see cref="bool"/></param>
-            public virtual void OnEnabledChanged(bool arg0)
-            {
-                
-            }
-
-            /// <summary>
-            /// Handler for <see href="https://developer.android.com/reference/android/view/accessibility/CaptioningManager.CaptioningChangeListener.html#onFontScaleChanged(float)"/>
-            /// </summary>
-            /// <remarks>If <see cref="OnOnFontScaleChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<float> OnOnFontScaleChanged { get; set; } = null;
-
-            void OnFontScaleChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<float>> data)
-            {
-                var methodToExecute = (OnOnFontScaleChanged != null) ? OnOnFontScaleChanged : OnFontScaleChanged;
-                methodToExecute.Invoke(data.EventData.TypedEventData);
-            }
-
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/accessibility/CaptioningManager.CaptioningChangeListener.html#onFontScaleChanged(float)"/>
-            /// </summary>
-            /// <param name="arg0"><see cref="float"/></param>
-            public virtual void OnFontScaleChanged(float arg0)
-            {
-                
-            }
-
-            /// <summary>
-            /// Handler for <see href="https://developer.android.com/reference/android/view/accessibility/CaptioningManager.CaptioningChangeListener.html#onLocaleChanged(java.util.Locale)"/>
-            /// </summary>
-            /// <remarks>If <see cref="OnOnLocaleChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Java.Util.Locale> OnOnLocaleChanged { get; set; } = null;
-
-            void OnLocaleChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.Locale>> data)
-            {
-                var methodToExecute = (OnOnLocaleChanged != null) ? OnOnLocaleChanged : OnLocaleChanged;
-                methodToExecute.Invoke(data.EventData.TypedEventData);
-            }
-
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/accessibility/CaptioningManager.CaptioningChangeListener.html#onLocaleChanged(java.util.Locale)"/>
-            /// </summary>
-            /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-            public virtual void OnLocaleChanged(Java.Util.Locale arg0)
-            {
-                
-            }
-
-            /// <summary>
-            /// Handler for <see href="https://developer.android.com/reference/android/view/accessibility/CaptioningManager.CaptioningChangeListener.html#onSystemAudioCaptioningChanged(boolean)"/>
-            /// </summary>
-            /// <remarks>If <see cref="OnOnSystemAudioCaptioningChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<bool> OnOnSystemAudioCaptioningChanged { get; set; } = null;
-
-            void OnSystemAudioCaptioningChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<bool>> data)
-            {
-                var methodToExecute = (OnOnSystemAudioCaptioningChanged != null) ? OnOnSystemAudioCaptioningChanged : OnSystemAudioCaptioningChanged;
-                methodToExecute.Invoke(data.EventData.TypedEventData);
-            }
-
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/accessibility/CaptioningManager.CaptioningChangeListener.html#onSystemAudioCaptioningChanged(boolean)"/>
-            /// </summary>
-            /// <param name="arg0"><see cref="bool"/></param>
-            public virtual void OnSystemAudioCaptioningChanged(bool arg0)
-            {
-                
-            }
-
-            /// <summary>
-            /// Handler for <see href="https://developer.android.com/reference/android/view/accessibility/CaptioningManager.CaptioningChangeListener.html#onSystemAudioCaptioningUiChanged(boolean)"/>
-            /// </summary>
-            /// <remarks>If <see cref="OnOnSystemAudioCaptioningUiChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<bool> OnOnSystemAudioCaptioningUiChanged { get; set; } = null;
-
-            void OnSystemAudioCaptioningUiChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<bool>> data)
-            {
-                var methodToExecute = (OnOnSystemAudioCaptioningUiChanged != null) ? OnOnSystemAudioCaptioningUiChanged : OnSystemAudioCaptioningUiChanged;
-                methodToExecute.Invoke(data.EventData.TypedEventData);
-            }
-
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/accessibility/CaptioningManager.CaptioningChangeListener.html#onSystemAudioCaptioningUiChanged(boolean)"/>
-            /// </summary>
-            /// <param name="arg0"><see cref="bool"/></param>
-            public virtual void OnSystemAudioCaptioningUiChanged(bool arg0)
-            {
-                
-            }
-
-            /// <summary>
-            /// Handler for <see href="https://developer.android.com/reference/android/view/accessibility/CaptioningManager.CaptioningChangeListener.html#onUserStyleChanged(android.view.accessibility.CaptioningManager.CaptionStyle)"/>
-            /// </summary>
-            /// <remarks>If <see cref="OnOnUserStyleChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Android.View.Accessibility.CaptioningManager.CaptionStyle> OnOnUserStyleChanged { get; set; } = null;
-
-            void OnUserStyleChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.Accessibility.CaptioningManager.CaptionStyle>> data)
-            {
-                var methodToExecute = (OnOnUserStyleChanged != null) ? OnOnUserStyleChanged : OnUserStyleChanged;
-                methodToExecute.Invoke(data.EventData.TypedEventData);
-            }
-
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/accessibility/CaptioningManager.CaptioningChangeListener.html#onUserStyleChanged(android.view.accessibility.CaptioningManager.CaptionStyle)"/>
-            /// </summary>
-            /// <param name="arg0"><see cref="Android.View.Accessibility.CaptioningManager.CaptionStyle"/></param>
-            public virtual void OnUserStyleChanged(Android.View.Accessibility.CaptioningManager.CaptionStyle arg0)
-            {
-                
-            }
-
-            #endregion
-
-            #region Nested classes
-
-            #endregion
-
-            // TODO: complete the class
-        }
-        #endregion
-
-        #region CaptioningChangeListenerDirect
-        public partial class CaptioningChangeListenerDirect
-        {
-            #region Constructors
-
-            #endregion
-
-            #region Class/Interface conversion operators
-
-            #endregion
-
-            #region Fields
-
-            #endregion
-
-            #region Static methods
-
-            #endregion
-
-            #region Instance methods
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/accessibility/CaptioningManager.CaptioningChangeListener.html#onEnabledChanged(boolean)"/>
-            /// </summary>
-            /// <param name="arg0"><see cref="bool"/></param>
-            public override void OnEnabledChanged(bool arg0)
+            public void OnEnabledChanged(bool arg0)
             {
                 IExecuteWithSignature("onEnabledChanged", "(Z)V", arg0);
             }
@@ -320,7 +153,7 @@ namespace Android.View.Accessibility
             /// <see href="https://developer.android.com/reference/android/view/accessibility/CaptioningManager.CaptioningChangeListener.html#onFontScaleChanged(float)"/>
             /// </summary>
             /// <param name="arg0"><see cref="float"/></param>
-            public override void OnFontScaleChanged(float arg0)
+            public void OnFontScaleChanged(float arg0)
             {
                 IExecuteWithSignature("onFontScaleChanged", "(F)V", arg0);
             }
@@ -328,7 +161,7 @@ namespace Android.View.Accessibility
             /// <see href="https://developer.android.com/reference/android/view/accessibility/CaptioningManager.CaptioningChangeListener.html#onLocaleChanged(java.util.Locale)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
-            public override void OnLocaleChanged(Java.Util.Locale arg0)
+            public void OnLocaleChanged(Java.Util.Locale arg0)
             {
                 IExecuteWithSignature("onLocaleChanged", "(Ljava/util/Locale;)V", arg0);
             }
@@ -336,7 +169,7 @@ namespace Android.View.Accessibility
             /// <see href="https://developer.android.com/reference/android/view/accessibility/CaptioningManager.CaptioningChangeListener.html#onSystemAudioCaptioningChanged(boolean)"/>
             /// </summary>
             /// <param name="arg0"><see cref="bool"/></param>
-            public override void OnSystemAudioCaptioningChanged(bool arg0)
+            public void OnSystemAudioCaptioningChanged(bool arg0)
             {
                 IExecuteWithSignature("onSystemAudioCaptioningChanged", "(Z)V", arg0);
             }
@@ -344,7 +177,7 @@ namespace Android.View.Accessibility
             /// <see href="https://developer.android.com/reference/android/view/accessibility/CaptioningManager.CaptioningChangeListener.html#onSystemAudioCaptioningUiChanged(boolean)"/>
             /// </summary>
             /// <param name="arg0"><see cref="bool"/></param>
-            public override void OnSystemAudioCaptioningUiChanged(bool arg0)
+            public void OnSystemAudioCaptioningUiChanged(bool arg0)
             {
                 IExecuteWithSignature("onSystemAudioCaptioningUiChanged", "(Z)V", arg0);
             }
@@ -352,7 +185,7 @@ namespace Android.View.Accessibility
             /// <see href="https://developer.android.com/reference/android/view/accessibility/CaptioningManager.CaptioningChangeListener.html#onUserStyleChanged(android.view.accessibility.CaptioningManager.CaptionStyle)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Android.View.Accessibility.CaptioningManager.CaptionStyle"/></param>
-            public override void OnUserStyleChanged(Android.View.Accessibility.CaptioningManager.CaptionStyle arg0)
+            public void OnUserStyleChanged(Android.View.Accessibility.CaptioningManager.CaptionStyle arg0)
             {
                 IExecuteWithSignature("onUserStyleChanged", "(Landroid/view/accessibility/CaptioningManager$CaptionStyle;)V", arg0);
             }
@@ -454,11 +287,12 @@ namespace Android.View.Accessibility
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/view/accessibility/CaptioningManager.CaptionStyle.html#getTypeface()"/> 
+            /// <see href="https://developer.android.com/reference/android/view/accessibility/CaptioningManager.CaptionStyle.html#getTypeface()"/>
             /// </summary>
-            public Android.Graphics.Typeface Typeface
+            /// <returns><see cref="Android.Graphics.Typeface"/></returns>
+            public Android.Graphics.Typeface GetTypeface()
             {
-                get { return IExecuteWithSignature<Android.Graphics.Typeface>("getTypeface", "()Landroid/graphics/Typeface;"); }
+                return IExecuteWithSignature<Android.Graphics.Typeface>("getTypeface", "()Landroid/graphics/Typeface;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/view/accessibility/CaptioningManager.CaptionStyle.html#hasBackgroundColor()"/>

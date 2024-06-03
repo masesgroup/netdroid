@@ -46,11 +46,12 @@ namespace Android.Health.Connect.Datatypes
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/SpeedRecord.html#getSamples()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/SpeedRecord.html#getSamples()"/>
         /// </summary>
-        public Java.Util.List<Android.Health.Connect.Datatypes.SpeedRecord.SpeedRecordSample> Samples
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Health.Connect.Datatypes.SpeedRecord.SpeedRecordSample> GetSamples()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Health.Connect.Datatypes.SpeedRecord.SpeedRecordSample>>("getSamples", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Java.Util.List<Android.Health.Connect.Datatypes.SpeedRecord.SpeedRecordSample>>("getSamples", "()Ljava/util/List;");
         }
 
         #endregion
@@ -170,18 +171,20 @@ namespace Android.Health.Connect.Datatypes
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/SpeedRecord.SpeedRecordSample.html#getSpeed()"/> 
+            /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/SpeedRecord.SpeedRecordSample.html#getSpeed()"/>
             /// </summary>
-            public Android.Health.Connect.Datatypes.Units.Velocity Speed
+            /// <returns><see cref="Android.Health.Connect.Datatypes.Units.Velocity"/></returns>
+            public Android.Health.Connect.Datatypes.Units.Velocity GetSpeed()
             {
-                get { return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Velocity>("getSpeed", "()Landroid/health/connect/datatypes/units/Velocity;"); }
+                return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Velocity>("getSpeed", "()Landroid/health/connect/datatypes/units/Velocity;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/SpeedRecord.SpeedRecordSample.html#getTime()"/> 
+            /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/SpeedRecord.SpeedRecordSample.html#getTime()"/>
             /// </summary>
-            public Java.Time.Instant Time
+            /// <returns><see cref="Java.Time.Instant"/></returns>
+            public Java.Time.Instant GetTime()
             {
-                get { return IExecuteWithSignature<Java.Time.Instant>("getTime", "()Ljava/time/Instant;"); }
+                return IExecuteWithSignature<Java.Time.Instant>("getTime", "()Ljava/time/Instant;");
             }
 
             #endregion

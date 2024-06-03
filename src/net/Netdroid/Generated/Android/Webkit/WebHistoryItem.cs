@@ -46,32 +46,36 @@ namespace Android.Webkit
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebHistoryItem.html#getFavicon()"/> 
+        /// <see href="https://developer.android.com/reference/android/webkit/WebHistoryItem.html#getFavicon()"/>
         /// </summary>
-        public Android.Graphics.Bitmap Favicon
+        /// <returns><see cref="Android.Graphics.Bitmap"/></returns>
+        public Android.Graphics.Bitmap GetFavicon()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Bitmap>("getFavicon", "()Landroid/graphics/Bitmap;"); }
+            return IExecuteWithSignature<Android.Graphics.Bitmap>("getFavicon", "()Landroid/graphics/Bitmap;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebHistoryItem.html#getOriginalUrl()"/> 
+        /// <see href="https://developer.android.com/reference/android/webkit/WebHistoryItem.html#getOriginalUrl()"/>
         /// </summary>
-        public Java.Lang.String OriginalUrl
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetOriginalUrl()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getOriginalUrl", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getOriginalUrl", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebHistoryItem.html#getTitle()"/> 
+        /// <see href="https://developer.android.com/reference/android/webkit/WebHistoryItem.html#getTitle()"/>
         /// </summary>
-        public Java.Lang.String Title
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetTitle()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getTitle", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getTitle", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebHistoryItem.html#getUrl()"/> 
+        /// <see href="https://developer.android.com/reference/android/webkit/WebHistoryItem.html#getUrl()"/>
         /// </summary>
-        public Java.Lang.String Url
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetUrl()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getUrl", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getUrl", "()Ljava/lang/String;");
         }
 
         #endregion

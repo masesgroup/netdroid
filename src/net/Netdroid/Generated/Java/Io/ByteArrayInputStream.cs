@@ -30,7 +30,7 @@ namespace Java.Io
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ByteArrayInputStream.html#%3Cinit%3E(byte[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/io/ByteArrayInputStream.html#%3Cinit%3E(byte[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -40,7 +40,7 @@ namespace Java.Io
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ByteArrayInputStream.html#%3Cinit%3E(byte[])"/>
+        /// <see href="https://developer.android.com/reference/java/io/ByteArrayInputStream.html#%3Cinit%3E(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         public ByteArrayInputStream(byte[] arg0)

@@ -46,18 +46,20 @@ namespace Android.Print
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/print/PrintJob.html#getId()"/> 
+        /// <see href="https://developer.android.com/reference/android/print/PrintJob.html#getId()"/>
         /// </summary>
-        public Android.Print.PrintJobId Id
+        /// <returns><see cref="Android.Print.PrintJobId"/></returns>
+        public Android.Print.PrintJobId GetId()
         {
-            get { return IExecuteWithSignature<Android.Print.PrintJobId>("getId", "()Landroid/print/PrintJobId;"); }
+            return IExecuteWithSignature<Android.Print.PrintJobId>("getId", "()Landroid/print/PrintJobId;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/print/PrintJob.html#getInfo()"/> 
+        /// <see href="https://developer.android.com/reference/android/print/PrintJob.html#getInfo()"/>
         /// </summary>
-        public Android.Print.PrintJobInfo Info
+        /// <returns><see cref="Android.Print.PrintJobInfo"/></returns>
+        public Android.Print.PrintJobInfo GetInfo()
         {
-            get { return IExecuteWithSignature<Android.Print.PrintJobInfo>("getInfo", "()Landroid/print/PrintJobInfo;"); }
+            return IExecuteWithSignature<Android.Print.PrintJobInfo>("getInfo", "()Landroid/print/PrintJobInfo;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/print/PrintJob.html#isBlocked()"/>

@@ -52,33 +52,36 @@ namespace Android.Telephony.Data
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/data/UrspRule.html#getPrecedence()"/> 
-        /// </summary>
-        public int Precedence
-        {
-            get { return IExecuteWithSignature<int>("getPrecedence", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/data/UrspRule.html#getRouteSelectionDescriptor()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Telephony.Data.RouteSelectionDescriptor> RouteSelectionDescriptor
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Telephony.Data.RouteSelectionDescriptor>>("getRouteSelectionDescriptor", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/data/UrspRule.html#getTrafficDescriptors()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Telephony.Data.TrafficDescriptor> TrafficDescriptors
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Telephony.Data.TrafficDescriptor>>("getTrafficDescriptors", "()Ljava/util/List;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/data/UrspRule.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/data/UrspRule.html#getPrecedence()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPrecedence()
+        {
+            return IExecuteWithSignature<int>("getPrecedence", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/data/UrspRule.html#getRouteSelectionDescriptor()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Telephony.Data.RouteSelectionDescriptor> GetRouteSelectionDescriptor()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Telephony.Data.RouteSelectionDescriptor>>("getRouteSelectionDescriptor", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/data/UrspRule.html#getTrafficDescriptors()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Telephony.Data.TrafficDescriptor> GetTrafficDescriptors()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Telephony.Data.TrafficDescriptor>>("getTrafficDescriptors", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/data/UrspRule.html#writeToParcel(android.os.Parcel,int)"/>

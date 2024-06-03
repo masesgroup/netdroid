@@ -57,32 +57,36 @@ namespace Android.Media
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/SubtitleData.html#getData()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/SubtitleData.html#getData()"/>
         /// </summary>
-        public byte[] Data
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetData()
         {
-            get { return IExecuteWithSignatureArray<byte>("getData", "()[B"); }
+            return IExecuteWithSignatureArray<byte>("getData", "()[B");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/SubtitleData.html#getDurationUs()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/SubtitleData.html#getTrackIndex()"/>
         /// </summary>
-        public long DurationUs
+        /// <returns><see cref="int"/></returns>
+        public int GetTrackIndex()
         {
-            get { return IExecuteWithSignature<long>("getDurationUs", "()J"); }
+            return IExecuteWithSignature<int>("getTrackIndex", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/SubtitleData.html#getStartTimeUs()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/SubtitleData.html#getDurationUs()"/>
         /// </summary>
-        public long StartTimeUs
+        /// <returns><see cref="long"/></returns>
+        public long GetDurationUs()
         {
-            get { return IExecuteWithSignature<long>("getStartTimeUs", "()J"); }
+            return IExecuteWithSignature<long>("getDurationUs", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/SubtitleData.html#getTrackIndex()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/SubtitleData.html#getStartTimeUs()"/>
         /// </summary>
-        public int TrackIndex
+        /// <returns><see cref="long"/></returns>
+        public long GetStartTimeUs()
         {
-            get { return IExecuteWithSignature<int>("getTrackIndex", "()I"); }
+            return IExecuteWithSignature<long>("getStartTimeUs", "()J");
         }
 
         #endregion

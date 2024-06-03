@@ -72,7 +72,7 @@ namespace Android.Media
         /// <param name="arg1"><see cref="Android.Net.Uri"/></param>
         /// <param name="arg2"><see cref="bool"/></param>
         /// <param name="arg3"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void Play(Android.Content.Context arg0, Android.Net.Uri arg1, bool arg2, int arg3)
         {
             IExecute("play", arg0, arg1, arg2, arg3);

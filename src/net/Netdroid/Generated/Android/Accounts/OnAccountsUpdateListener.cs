@@ -68,7 +68,7 @@ namespace Android.Accounts
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("onAccountsUpdated", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Accounts.Account[]>>>(OnAccountsUpdatedEventHandler));
+            AddEventHandler("onAccountsUpdated", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Accounts.Account[]>>>(OnAccountsUpdatedEventHandler));
 
         }
 
@@ -76,7 +76,7 @@ namespace Android.Accounts
         /// Handler for <see href="https://developer.android.com/reference/android/accounts/OnAccountsUpdateListener.html#onAccountsUpdated(android.accounts.Account[])"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnAccountsUpdated"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Android.Accounts.Account[]> OnOnAccountsUpdated { get; set; } = null;
+        public global::System.Action<Android.Accounts.Account[]> OnOnAccountsUpdated { get; set; } = null;
 
         void OnAccountsUpdatedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Accounts.Account[]>> data)
         {

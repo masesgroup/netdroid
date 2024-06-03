@@ -42,17 +42,18 @@ namespace Android.Telephony
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/CellLocation.html#getEmpty()"/> 
+        /// <see href="https://developer.android.com/reference/android/telephony/CellLocation.html#getEmpty()"/>
         /// </summary>
-        [System.Obsolete()]
-        public static Android.Telephony.CellLocation Empty
+        /// <returns><see cref="Android.Telephony.CellLocation"/></returns>
+        [global::System.Obsolete()]
+        public static Android.Telephony.CellLocation GetEmpty()
         {
-            get { return SExecuteWithSignature<Android.Telephony.CellLocation>(LocalBridgeClazz, "getEmpty", "()Landroid/telephony/CellLocation;"); }
+            return SExecuteWithSignature<Android.Telephony.CellLocation>(LocalBridgeClazz, "getEmpty", "()Landroid/telephony/CellLocation;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/CellLocation.html#requestLocationUpdate()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static void RequestLocationUpdate()
         {
             SExecuteWithSignature(LocalBridgeClazz, "requestLocationUpdate", "()V");

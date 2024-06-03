@@ -48,13 +48,6 @@ namespace Android.Os.Ext
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/ext/SdkExtensions.html#getAllExtensionVersions()"/> 
-        /// </summary>
-        public static Java.Util.Map<Java.Lang.Integer, Java.Lang.Integer> AllExtensionVersions
-        {
-            get { return SExecuteWithSignature<Java.Util.Map<Java.Lang.Integer, Java.Lang.Integer>>(LocalBridgeClazz, "getAllExtensionVersions", "()Ljava/util/Map;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/ext/SdkExtensions.html#getExtensionVersion(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -62,6 +55,14 @@ namespace Android.Os.Ext
         public static int GetExtensionVersion(int arg0)
         {
             return SExecuteWithSignature<int>(LocalBridgeClazz, "getExtensionVersion", "(I)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/ext/SdkExtensions.html#getAllExtensionVersions()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        public static Java.Util.Map<Java.Lang.Integer, Java.Lang.Integer> GetAllExtensionVersions()
+        {
+            return SExecuteWithSignature<Java.Util.Map<Java.Lang.Integer, Java.Lang.Integer>>(LocalBridgeClazz, "getAllExtensionVersions", "()Ljava/util/Map;");
         }
 
         #endregion

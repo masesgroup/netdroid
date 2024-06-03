@@ -52,18 +52,20 @@ namespace Android.Media
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioPlaybackConfiguration.html#getAudioAttributes()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/AudioPlaybackConfiguration.html#getAudioAttributes()"/>
         /// </summary>
-        public Android.Media.AudioAttributes AudioAttributes
+        /// <returns><see cref="Android.Media.AudioAttributes"/></returns>
+        public Android.Media.AudioAttributes GetAudioAttributes()
         {
-            get { return IExecuteWithSignature<Android.Media.AudioAttributes>("getAudioAttributes", "()Landroid/media/AudioAttributes;"); }
+            return IExecuteWithSignature<Android.Media.AudioAttributes>("getAudioAttributes", "()Landroid/media/AudioAttributes;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioPlaybackConfiguration.html#getAudioDeviceInfo()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/AudioPlaybackConfiguration.html#getAudioDeviceInfo()"/>
         /// </summary>
-        public Android.Media.AudioDeviceInfo AudioDeviceInfo
+        /// <returns><see cref="Android.Media.AudioDeviceInfo"/></returns>
+        public Android.Media.AudioDeviceInfo GetAudioDeviceInfo()
         {
-            get { return IExecuteWithSignature<Android.Media.AudioDeviceInfo>("getAudioDeviceInfo", "()Landroid/media/AudioDeviceInfo;"); }
+            return IExecuteWithSignature<Android.Media.AudioDeviceInfo>("getAudioDeviceInfo", "()Landroid/media/AudioDeviceInfo;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioPlaybackConfiguration.html#describeContents()"/>

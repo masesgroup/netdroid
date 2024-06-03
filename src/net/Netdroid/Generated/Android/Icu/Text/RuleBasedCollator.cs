@@ -55,20 +55,6 @@ namespace Android.Icu.Text
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/RuleBasedCollator.html#getNumericCollation()"/> <see href="https://developer.android.com/reference/android/icu/text/RuleBasedCollator.html#setNumericCollation(boolean)"/>
-        /// </summary>
-        public bool NumericCollation
-        {
-            get { return IExecuteWithSignature<bool>("getNumericCollation", "()Z"); } set { IExecuteWithSignature("setNumericCollation", "(Z)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/RuleBasedCollator.html#getRules()"/> 
-        /// </summary>
-        public Java.Lang.String Rules
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getRules", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/RuleBasedCollator.html#getCollationElementIterator(android.icu.text.UCharacterIterator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Icu.Text.UCharacterIterator"/></param>
@@ -94,6 +80,14 @@ namespace Android.Icu.Text
         public Android.Icu.Text.CollationElementIterator GetCollationElementIterator(Java.Text.CharacterIterator arg0)
         {
             return IExecuteWithSignature<Android.Icu.Text.CollationElementIterator>("getCollationElementIterator", "(Ljava/text/CharacterIterator;)Landroid/icu/text/CollationElementIterator;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/RuleBasedCollator.html#getNumericCollation()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool GetNumericCollation()
+        {
+            return IExecuteWithSignature<bool>("getNumericCollation", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/RuleBasedCollator.html#isAlternateHandlingShifted()"/>
@@ -134,6 +128,14 @@ namespace Android.Icu.Text
         public bool IsUpperCaseFirst()
         {
             return IExecuteWithSignature<bool>("isUpperCaseFirst", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/RuleBasedCollator.html#getRules()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetRules()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getRules", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/RuleBasedCollator.html#getRules(boolean)"/>
@@ -221,6 +223,14 @@ namespace Android.Icu.Text
         public void SetLowerCaseFirst(bool arg0)
         {
             IExecuteWithSignature("setLowerCaseFirst", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/RuleBasedCollator.html#setNumericCollation(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetNumericCollation(bool arg0)
+        {
+            IExecuteWithSignature("setNumericCollation", "(Z)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/RuleBasedCollator.html#setNumericCollationDefault()"/>

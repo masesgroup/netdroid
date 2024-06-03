@@ -76,7 +76,7 @@ namespace Android.View.Inputmethod
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#SHOW_FORCED"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int SHOW_FORCED { get { if (!_SHOW_FORCEDReady) { _SHOW_FORCEDContent = SGetField<int>(LocalBridgeClazz, "SHOW_FORCED"); _SHOW_FORCEDReady = true; } return _SHOW_FORCEDContent; } }
         private static int _SHOW_FORCEDContent = default;
         private static bool _SHOW_FORCEDReady = false; // this is used because in case of generics 
@@ -95,46 +95,28 @@ namespace Android.View.Inputmethod
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#getCurrentInputMethodInfo()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#getCurrentInputMethodInfo()"/>
         /// </summary>
-        public Android.View.Inputmethod.InputMethodInfo CurrentInputMethodInfo
+        /// <returns><see cref="Android.View.Inputmethod.InputMethodInfo"/></returns>
+        public Android.View.Inputmethod.InputMethodInfo GetCurrentInputMethodInfo()
         {
-            get { return IExecuteWithSignature<Android.View.Inputmethod.InputMethodInfo>("getCurrentInputMethodInfo", "()Landroid/view/inputmethod/InputMethodInfo;"); }
+            return IExecuteWithSignature<Android.View.Inputmethod.InputMethodInfo>("getCurrentInputMethodInfo", "()Landroid/view/inputmethod/InputMethodInfo;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#getCurrentInputMethodSubtype()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#getCurrentInputMethodSubtype()"/>
         /// </summary>
-        public Android.View.Inputmethod.InputMethodSubtype CurrentInputMethodSubtype
+        /// <returns><see cref="Android.View.Inputmethod.InputMethodSubtype"/></returns>
+        public Android.View.Inputmethod.InputMethodSubtype GetCurrentInputMethodSubtype()
         {
-            get { return IExecuteWithSignature<Android.View.Inputmethod.InputMethodSubtype>("getCurrentInputMethodSubtype", "()Landroid/view/inputmethod/InputMethodSubtype;"); }
+            return IExecuteWithSignature<Android.View.Inputmethod.InputMethodSubtype>("getCurrentInputMethodSubtype", "()Landroid/view/inputmethod/InputMethodSubtype;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#getEnabledInputMethodList()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#getLastInputMethodSubtype()"/>
         /// </summary>
-        public Java.Util.List<Android.View.Inputmethod.InputMethodInfo> EnabledInputMethodList
+        /// <returns><see cref="Android.View.Inputmethod.InputMethodSubtype"/></returns>
+        public Android.View.Inputmethod.InputMethodSubtype GetLastInputMethodSubtype()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.View.Inputmethod.InputMethodInfo>>("getEnabledInputMethodList", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#getInputMethodList()"/> 
-        /// </summary>
-        public Java.Util.List<Android.View.Inputmethod.InputMethodInfo> InputMethodList
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.View.Inputmethod.InputMethodInfo>>("getInputMethodList", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#getLastInputMethodSubtype()"/> 
-        /// </summary>
-        public Android.View.Inputmethod.InputMethodSubtype LastInputMethodSubtype
-        {
-            get { return IExecuteWithSignature<Android.View.Inputmethod.InputMethodSubtype>("getLastInputMethodSubtype", "()Landroid/view/inputmethod/InputMethodSubtype;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#getShortcutInputMethodsAndSubtypes()"/> 
-        /// </summary>
-        public Java.Util.Map<Android.View.Inputmethod.InputMethodInfo, Java.Util.List<Android.View.Inputmethod.InputMethodSubtype>> ShortcutInputMethodsAndSubtypes
-        {
-            get { return IExecuteWithSignature<Java.Util.Map<Android.View.Inputmethod.InputMethodInfo, Java.Util.List<Android.View.Inputmethod.InputMethodSubtype>>>("getShortcutInputMethodsAndSubtypes", "()Ljava/util/Map;"); }
+            return IExecuteWithSignature<Android.View.Inputmethod.InputMethodSubtype>("getLastInputMethodSubtype", "()Landroid/view/inputmethod/InputMethodSubtype;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#acceptStylusHandwritingDelegation(android.view.View,java.lang.String)"/>
@@ -230,7 +212,7 @@ namespace Android.View.Inputmethod
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.View"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsWatchingCursor(Android.View.View arg0)
         {
             return IExecuteWithSignature<bool>("isWatchingCursor", "(Landroid/view/View;)Z", arg0);
@@ -240,7 +222,7 @@ namespace Android.View.Inputmethod
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.Inputmethod.InputMethodSubtype"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool SetCurrentInputMethodSubtype(Android.View.Inputmethod.InputMethodSubtype arg0)
         {
             return IExecuteWithSignature<bool>("setCurrentInputMethodSubtype", "(Landroid/view/inputmethod/InputMethodSubtype;)Z", arg0);
@@ -250,7 +232,7 @@ namespace Android.View.Inputmethod
         /// </summary>
         /// <param name="arg0"><see cref="Android.Os.IBinder"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool ShouldOfferSwitchingToNextInputMethod(Android.Os.IBinder arg0)
         {
             return IExecuteWithSignature<bool>("shouldOfferSwitchingToNextInputMethod", "(Landroid/os/IBinder;)Z", arg0);
@@ -281,7 +263,7 @@ namespace Android.View.Inputmethod
         /// </summary>
         /// <param name="arg0"><see cref="Android.Os.IBinder"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool SwitchToLastInputMethod(Android.Os.IBinder arg0)
         {
             return IExecuteWithSignature<bool>("switchToLastInputMethod", "(Landroid/os/IBinder;)Z", arg0);
@@ -292,10 +274,26 @@ namespace Android.View.Inputmethod
         /// <param name="arg0"><see cref="Android.Os.IBinder"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool SwitchToNextInputMethod(Android.Os.IBinder arg0, bool arg1)
         {
             return IExecute<bool>("switchToNextInputMethod", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#getEnabledInputMethodList()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.View.Inputmethod.InputMethodInfo> GetEnabledInputMethodList()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.View.Inputmethod.InputMethodInfo>>("getEnabledInputMethodList", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#getInputMethodList()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.View.Inputmethod.InputMethodInfo> GetInputMethodList()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.View.Inputmethod.InputMethodInfo>>("getInputMethodList", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#getEnabledInputMethodSubtypeList(android.view.inputmethod.InputMethodInfo,boolean)"/>
@@ -306,6 +304,14 @@ namespace Android.View.Inputmethod
         public Java.Util.List<Android.View.Inputmethod.InputMethodSubtype> GetEnabledInputMethodSubtypeList(Android.View.Inputmethod.InputMethodInfo arg0, bool arg1)
         {
             return IExecute<Java.Util.List<Android.View.Inputmethod.InputMethodSubtype>>("getEnabledInputMethodSubtypeList", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#getShortcutInputMethodsAndSubtypes()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        public Java.Util.Map<Android.View.Inputmethod.InputMethodInfo, Java.Util.List<Android.View.Inputmethod.InputMethodSubtype>> GetShortcutInputMethodsAndSubtypes()
+        {
+            return IExecuteWithSignature<Java.Util.Map<Android.View.Inputmethod.InputMethodInfo, Java.Util.List<Android.View.Inputmethod.InputMethodSubtype>>>("getShortcutInputMethodsAndSubtypes", "()Ljava/util/Map;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#dispatchKeyEventFromInputMethod(android.view.View,android.view.KeyEvent)"/>
@@ -330,7 +336,7 @@ namespace Android.View.Inputmethod
         /// </summary>
         /// <param name="arg0"><see cref="Android.Os.IBinder"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void HideSoftInputFromInputMethod(Android.Os.IBinder arg0, int arg1)
         {
             IExecute("hideSoftInputFromInputMethod", arg0, arg1);
@@ -339,7 +345,7 @@ namespace Android.View.Inputmethod
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#hideStatusIcon(android.os.IBinder)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Os.IBinder"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void HideStatusIcon(Android.Os.IBinder arg0)
         {
             IExecuteWithSignature("hideStatusIcon", "(Landroid/os/IBinder;)V", arg0);
@@ -392,7 +398,7 @@ namespace Android.View.Inputmethod
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Android.View.Inputmethod.InputMethodSubtype"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetAdditionalInputMethodSubtypes(Java.Lang.String arg0, Android.View.Inputmethod.InputMethodSubtype[] arg1)
         {
             IExecute("setAdditionalInputMethodSubtypes", arg0, arg1);
@@ -411,7 +417,7 @@ namespace Android.View.Inputmethod
         /// </summary>
         /// <param name="arg0"><see cref="Android.Os.IBinder"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetInputMethod(Android.Os.IBinder arg0, Java.Lang.String arg1)
         {
             IExecute("setInputMethod", arg0, arg1);
@@ -422,7 +428,7 @@ namespace Android.View.Inputmethod
         /// <param name="arg0"><see cref="Android.Os.IBinder"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="Android.View.Inputmethod.InputMethodSubtype"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetInputMethodAndSubtype(Android.Os.IBinder arg0, Java.Lang.String arg1, Android.View.Inputmethod.InputMethodSubtype arg2)
         {
             IExecute("setInputMethodAndSubtype", arg0, arg1, arg2);
@@ -447,7 +453,7 @@ namespace Android.View.Inputmethod
         /// </summary>
         /// <param name="arg0"><see cref="Android.Os.IBinder"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ShowSoftInputFromInputMethod(Android.Os.IBinder arg0, int arg1)
         {
             IExecute("showSoftInputFromInputMethod", arg0, arg1);
@@ -458,7 +464,7 @@ namespace Android.View.Inputmethod
         /// <param name="arg0"><see cref="Android.Os.IBinder"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ShowStatusIcon(Android.Os.IBinder arg0, Java.Lang.String arg1, int arg2)
         {
             IExecute("showStatusIcon", arg0, arg1, arg2);
@@ -476,7 +482,7 @@ namespace Android.View.Inputmethod
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ToggleSoftInput(int arg0, int arg1)
         {
             IExecute("toggleSoftInput", arg0, arg1);
@@ -487,7 +493,7 @@ namespace Android.View.Inputmethod
         /// <param name="arg0"><see cref="Android.Os.IBinder"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ToggleSoftInputFromWindow(Android.Os.IBinder arg0, int arg1, int arg2)
         {
             IExecute("toggleSoftInputFromWindow", arg0, arg1, arg2);
@@ -500,7 +506,7 @@ namespace Android.View.Inputmethod
         /// <param name="arg2"><see cref="int"/></param>
         /// <param name="arg3"><see cref="int"/></param>
         /// <param name="arg4"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void UpdateCursor(Android.View.View arg0, int arg1, int arg2, int arg3, int arg4)
         {
             IExecute("updateCursor", arg0, arg1, arg2, arg3, arg4);
@@ -540,7 +546,7 @@ namespace Android.View.Inputmethod
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/InputMethodManager.html#viewClicked(android.view.View)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.View"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void ViewClicked(Android.View.View arg0)
         {
             IExecuteWithSignature("viewClicked", "(Landroid/view/View;)V", arg0);

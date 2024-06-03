@@ -30,7 +30,7 @@ namespace Java.Security
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyRep.html#%3Cinit%3E(java.security.KeyRep.Type,java.lang.String,java.lang.String,byte[])"/>
+        /// <see href="https://developer.android.com/reference/java/security/KeyRep.html#%3Cinit%3E(java.security.KeyRep.Type,java.lang.String,java.lang.String,byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.KeyRep.Type"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -73,19 +73,19 @@ namespace Java.Security
 
             #region Fields
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/security/KeyRep.Type.html#PRIVATE"/>
+            /// <see href="https://developer.android.com/reference/java/security/KeyRep.Type.html#PRIVATE"/>
             /// </summary>
             public static Java.Security.KeyRep.Type PRIVATE { get { if (!_PRIVATEReady) { _PRIVATEContent = SGetField<Java.Security.KeyRep.Type>(LocalBridgeClazz, "PRIVATE"); _PRIVATEReady = true; } return _PRIVATEContent; } }
             private static Java.Security.KeyRep.Type _PRIVATEContent = default;
             private static bool _PRIVATEReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/security/KeyRep.Type.html#PUBLIC"/>
+            /// <see href="https://developer.android.com/reference/java/security/KeyRep.Type.html#PUBLIC"/>
             /// </summary>
             public static Java.Security.KeyRep.Type PUBLIC { get { if (!_PUBLICReady) { _PUBLICContent = SGetField<Java.Security.KeyRep.Type>(LocalBridgeClazz, "PUBLIC"); _PUBLICReady = true; } return _PUBLICContent; } }
             private static Java.Security.KeyRep.Type _PUBLICContent = default;
             private static bool _PUBLICReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/security/KeyRep.Type.html#SECRET"/>
+            /// <see href="https://developer.android.com/reference/java/security/KeyRep.Type.html#SECRET"/>
             /// </summary>
             public static Java.Security.KeyRep.Type SECRET { get { if (!_SECRETReady) { _SECRETContent = SGetField<Java.Security.KeyRep.Type>(LocalBridgeClazz, "SECRET"); _SECRETReady = true; } return _SECRETContent; } }
             private static Java.Security.KeyRep.Type _SECRETContent = default;
@@ -95,7 +95,7 @@ namespace Java.Security
 
             #region Static methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/security/KeyRep.Type.html#valueOf(java.lang.String)"/>
+            /// <see href="https://developer.android.com/reference/java/security/KeyRep.Type.html#valueOf(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="Java.Security.KeyRep.Type"/></returns>
@@ -104,7 +104,7 @@ namespace Java.Security
                 return SExecuteWithSignature<Java.Security.KeyRep.Type>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/security/KeyRep$Type;", arg0);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/security/KeyRep.Type.html#values()"/>
+            /// <see href="https://developer.android.com/reference/java/security/KeyRep.Type.html#values()"/>
             /// </summary>
             /// <returns><see cref="Java.Security.KeyRep.Type"/></returns>
             public static Java.Security.KeyRep.Type[] Values()

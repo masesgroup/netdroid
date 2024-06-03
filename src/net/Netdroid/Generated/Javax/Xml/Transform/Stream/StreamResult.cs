@@ -30,7 +30,7 @@ namespace Javax.Xml.Transform.Stream
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/stream/StreamResult.html#%3Cinit%3E(java.io.File)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/stream/StreamResult.html#%3Cinit%3E(java.io.File)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
         public StreamResult(Java.Io.File arg0)
@@ -38,7 +38,7 @@ namespace Javax.Xml.Transform.Stream
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/stream/StreamResult.html#%3Cinit%3E(java.io.OutputStream)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/stream/StreamResult.html#%3Cinit%3E(java.io.OutputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
         public StreamResult(Java.Io.OutputStream arg0)
@@ -46,7 +46,7 @@ namespace Javax.Xml.Transform.Stream
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/stream/StreamResult.html#%3Cinit%3E(java.io.Writer)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/stream/StreamResult.html#%3Cinit%3E(java.io.Writer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.Writer"/></param>
         public StreamResult(Java.Io.Writer arg0)
@@ -54,7 +54,7 @@ namespace Javax.Xml.Transform.Stream
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/stream/StreamResult.html#%3Cinit%3E(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/stream/StreamResult.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public StreamResult(Java.Lang.String arg0)
@@ -70,7 +70,7 @@ namespace Javax.Xml.Transform.Stream
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/stream/StreamResult.html#FEATURE"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/stream/StreamResult.html#FEATURE"/>
         /// </summary>
         public static Java.Lang.String FEATURE { get { if (!_FEATUREReady) { _FEATUREContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "FEATURE"); _FEATUREReady = true; } return _FEATUREContent; } }
         private static Java.Lang.String _FEATUREContent = default;
@@ -84,28 +84,39 @@ namespace Javax.Xml.Transform.Stream
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/stream/StreamResult.html#getOutputStream()"/> <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/stream/StreamResult.html#setOutputStream(java.io.OutputStream)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/stream/StreamResult.html#getOutputStream()"/>
         /// </summary>
-        public Java.Io.OutputStream OutputStream
+        /// <returns><see cref="Java.Io.OutputStream"/></returns>
+        public Java.Io.OutputStream GetOutputStream()
         {
-            get { return IExecuteWithSignature<Java.Io.OutputStream>("getOutputStream", "()Ljava/io/OutputStream;"); } set { IExecuteWithSignature("setOutputStream", "(Ljava/io/OutputStream;)V", value); }
+            return IExecuteWithSignature<Java.Io.OutputStream>("getOutputStream", "()Ljava/io/OutputStream;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/stream/StreamResult.html#getSystemId()"/> 
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/stream/StreamResult.html#getWriter()"/>
         /// </summary>
-        public Java.Lang.String SystemId
+        /// <returns><see cref="Java.Io.Writer"/></returns>
+        public Java.Io.Writer GetWriter()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSystemId", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Io.Writer>("getWriter", "()Ljava/io/Writer;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/stream/StreamResult.html#getWriter()"/> <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/stream/StreamResult.html#setWriter(java.io.Writer)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/stream/StreamResult.html#getSystemId()"/>
         /// </summary>
-        public Java.Io.Writer Writer
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSystemId()
         {
-            get { return IExecuteWithSignature<Java.Io.Writer>("getWriter", "()Ljava/io/Writer;"); } set { IExecuteWithSignature("setWriter", "(Ljava/io/Writer;)V", value); }
+            return IExecuteWithSignature<Java.Lang.String>("getSystemId", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/stream/StreamResult.html#setSystemId(java.io.File)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/stream/StreamResult.html#setOutputStream(java.io.OutputStream)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
+        public void SetOutputStream(Java.Io.OutputStream arg0)
+        {
+            IExecuteWithSignature("setOutputStream", "(Ljava/io/OutputStream;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/stream/StreamResult.html#setSystemId(java.io.File)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
         public void SetSystemId(Java.Io.File arg0)
@@ -113,12 +124,20 @@ namespace Javax.Xml.Transform.Stream
             IExecuteWithSignature("setSystemId", "(Ljava/io/File;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/stream/StreamResult.html#setSystemId(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/stream/StreamResult.html#setSystemId(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void SetSystemId(Java.Lang.String arg0)
         {
             IExecuteWithSignature("setSystemId", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/stream/StreamResult.html#setWriter(java.io.Writer)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Io.Writer"/></param>
+        public void SetWriter(Java.Io.Writer arg0)
+        {
+            IExecuteWithSignature("setWriter", "(Ljava/io/Writer;)V", arg0);
         }
 
         #endregion

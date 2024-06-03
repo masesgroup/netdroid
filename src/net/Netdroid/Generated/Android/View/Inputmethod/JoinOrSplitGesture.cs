@@ -56,11 +56,12 @@ namespace Android.View.Inputmethod
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/JoinOrSplitGesture.html#getJoinOrSplitPoint()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/JoinOrSplitGesture.html#getJoinOrSplitPoint()"/>
         /// </summary>
-        public Android.Graphics.PointF JoinOrSplitPoint
+        /// <returns><see cref="Android.Graphics.PointF"/></returns>
+        public Android.Graphics.PointF GetJoinOrSplitPoint()
         {
-            get { return IExecuteWithSignature<Android.Graphics.PointF>("getJoinOrSplitPoint", "()Landroid/graphics/PointF;"); }
+            return IExecuteWithSignature<Android.Graphics.PointF>("getJoinOrSplitPoint", "()Landroid/graphics/PointF;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/JoinOrSplitGesture.html#describeContents()"/>

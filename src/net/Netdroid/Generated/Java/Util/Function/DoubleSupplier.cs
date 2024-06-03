@@ -27,7 +27,7 @@ namespace Java.Util.Function
 {
     #region IDoubleSupplier
     /// <summary>
-    /// .NET interface for org.mases.netdroid.generated.java.util.function.DoubleSupplier implementing <see href="https://developer.android.com/reference/java.base/java/util/function/DoubleSupplier.html"/>
+    /// .NET interface for org.mases.netdroid.generated.java.util.function.DoubleSupplier implementing <see href="https://developer.android.com/reference/java/util/function/DoubleSupplier.html"/>
     /// </summary>
     public partial interface IDoubleSupplier
     {
@@ -68,15 +68,15 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("getAsDouble", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetAsDoubleEventHandler));
+            AddEventHandler("getAsDouble", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetAsDoubleEventHandler));
 
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/DoubleSupplier.html#getAsDouble()"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/DoubleSupplier.html#getAsDouble()"/>
         /// </summary>
         /// <remarks>If <see cref="OnGetAsDouble"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<double> OnGetAsDouble { get; set; } = null;
+        public global::System.Func<double> OnGetAsDouble { get; set; } = null;
 
         void GetAsDoubleEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
@@ -86,7 +86,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/DoubleSupplier.html#getAsDouble()"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/DoubleSupplier.html#getAsDouble()"/>
         /// </summary>
         /// <returns><see cref="double"/></returns>
         public virtual double GetAsDouble()
@@ -125,11 +125,12 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/DoubleSupplier.html#getAsDouble()"/> 
+        /// <see href="https://developer.android.com/reference/java/util/function/DoubleSupplier.html#getAsDouble()"/>
         /// </summary>
-        public double AsDouble
+        /// <returns><see cref="double"/></returns>
+        public override double GetAsDouble()
         {
-            get { return IExecuteWithSignature<double>("getAsDouble", "()D"); }
+            return IExecuteWithSignature<double>("getAsDouble", "()D");
         }
 
         #endregion

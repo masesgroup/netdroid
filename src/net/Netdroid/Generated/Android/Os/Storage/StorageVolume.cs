@@ -58,53 +58,11 @@ namespace Android.Os.Storage
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/storage/StorageVolume.html#getDirectory()"/> 
-        /// </summary>
-        public Java.Io.File Directory
-        {
-            get { return IExecuteWithSignature<Java.Io.File>("getDirectory", "()Ljava/io/File;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/storage/StorageVolume.html#getMediaStoreVolumeName()"/> 
-        /// </summary>
-        public Java.Lang.String MediaStoreVolumeName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getMediaStoreVolumeName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/storage/StorageVolume.html#getOwner()"/> 
-        /// </summary>
-        public Android.Os.UserHandle Owner
-        {
-            get { return IExecuteWithSignature<Android.Os.UserHandle>("getOwner", "()Landroid/os/UserHandle;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/storage/StorageVolume.html#getState()"/> 
-        /// </summary>
-        public Java.Lang.String State
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getState", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/storage/StorageVolume.html#getStorageUuid()"/> 
-        /// </summary>
-        public Java.Util.UUID StorageUuid
-        {
-            get { return IExecuteWithSignature<Java.Util.UUID>("getStorageUuid", "()Ljava/util/UUID;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/storage/StorageVolume.html#getUuid()"/> 
-        /// </summary>
-        public Java.Lang.String Uuid
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getUuid", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/storage/StorageVolume.html#createAccessIntent(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Android.Content.Intent"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Content.Intent CreateAccessIntent(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Android.Content.Intent>("createAccessIntent", "(Ljava/lang/String;)Landroid/content/Intent;", arg0);
@@ -116,6 +74,14 @@ namespace Android.Os.Storage
         public Android.Content.Intent CreateOpenDocumentTreeIntent()
         {
             return IExecuteWithSignature<Android.Content.Intent>("createOpenDocumentTreeIntent", "()Landroid/content/Intent;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/storage/StorageVolume.html#getOwner()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Os.UserHandle"/></returns>
+        public Android.Os.UserHandle GetOwner()
+        {
+            return IExecuteWithSignature<Android.Os.UserHandle>("getOwner", "()Landroid/os/UserHandle;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/storage/StorageVolume.html#isEmulated()"/>
@@ -150,6 +116,14 @@ namespace Android.Os.Storage
             return IExecuteWithSignature<int>("describeContents", "()I");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/storage/StorageVolume.html#getDirectory()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Io.File"/></returns>
+        public Java.Io.File GetDirectory()
+        {
+            return IExecuteWithSignature<Java.Io.File>("getDirectory", "()Ljava/io/File;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/storage/StorageVolume.html#getDescription(android.content.Context)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
@@ -157,6 +131,38 @@ namespace Android.Os.Storage
         public Java.Lang.String GetDescription(Android.Content.Context arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("getDescription", "(Landroid/content/Context;)Ljava/lang/String;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/storage/StorageVolume.html#getMediaStoreVolumeName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetMediaStoreVolumeName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getMediaStoreVolumeName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/storage/StorageVolume.html#getState()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetState()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getState", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/storage/StorageVolume.html#getUuid()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetUuid()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getUuid", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/storage/StorageVolume.html#getStorageUuid()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.UUID"/></returns>
+        public Java.Util.UUID GetStorageUuid()
+        {
+            return IExecuteWithSignature<Java.Util.UUID>("getStorageUuid", "()Ljava/util/UUID;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/storage/StorageVolume.html#writeToParcel(android.os.Parcel,int)"/>

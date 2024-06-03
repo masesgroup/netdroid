@@ -27,7 +27,7 @@ namespace Java.Util.Function
 {
     #region ILongSupplier
     /// <summary>
-    /// .NET interface for org.mases.netdroid.generated.java.util.function.LongSupplier implementing <see href="https://developer.android.com/reference/java.base/java/util/function/LongSupplier.html"/>
+    /// .NET interface for org.mases.netdroid.generated.java.util.function.LongSupplier implementing <see href="https://developer.android.com/reference/java/util/function/LongSupplier.html"/>
     /// </summary>
     public partial interface ILongSupplier
     {
@@ -68,15 +68,15 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("getAsLong", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetAsLongEventHandler));
+            AddEventHandler("getAsLong", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetAsLongEventHandler));
 
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/LongSupplier.html#getAsLong()"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/LongSupplier.html#getAsLong()"/>
         /// </summary>
         /// <remarks>If <see cref="OnGetAsLong"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<long> OnGetAsLong { get; set; } = null;
+        public global::System.Func<long> OnGetAsLong { get; set; } = null;
 
         void GetAsLongEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
@@ -86,7 +86,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/LongSupplier.html#getAsLong()"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/LongSupplier.html#getAsLong()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
         public virtual long GetAsLong()
@@ -125,11 +125,12 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/LongSupplier.html#getAsLong()"/> 
+        /// <see href="https://developer.android.com/reference/java/util/function/LongSupplier.html#getAsLong()"/>
         /// </summary>
-        public long AsLong
+        /// <returns><see cref="long"/></returns>
+        public override long GetAsLong()
         {
-            get { return IExecuteWithSignature<long>("getAsLong", "()J"); }
+            return IExecuteWithSignature<long>("getAsLong", "()J");
         }
 
         #endregion

@@ -442,7 +442,7 @@ namespace Android.View
             /// <param name="arg2"><see cref="Android.Graphics.Rect"/></param>
             /// <param name="arg3"><see cref="int"/></param>
             /// <returns><see cref="Android.View.SurfaceControl.Transaction"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.View.SurfaceControl.Transaction SetGeometry(Android.View.SurfaceControl arg0, Android.Graphics.Rect arg1, Android.Graphics.Rect arg2, int arg3)
             {
                 return IExecute<Android.View.SurfaceControl.Transaction>("setGeometry", arg0, arg1, arg2, arg3);
@@ -578,7 +578,7 @@ namespace Android.View
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onTransactionCommitted", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnTransactionCommittedEventHandler));
+                AddEventHandler("onTransactionCommitted", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(OnTransactionCommittedEventHandler));
 
             }
 
@@ -586,7 +586,7 @@ namespace Android.View
             /// Handler for <see href="https://developer.android.com/reference/android/view/SurfaceControl.TransactionCommittedListener.html#onTransactionCommitted()"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnTransactionCommitted"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action OnOnTransactionCommitted { get; set; } = null;
+            public global::System.Action OnOnTransactionCommitted { get; set; } = null;
 
             void OnTransactionCommittedEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
             {

@@ -63,32 +63,12 @@ namespace Android.App
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/RemoteAction.html#getActionIntent()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/RemoteAction.html#getActionIntent()"/>
         /// </summary>
-        public Android.App.PendingIntent ActionIntent
+        /// <returns><see cref="Android.App.PendingIntent"/></returns>
+        public Android.App.PendingIntent GetActionIntent()
         {
-            get { return IExecuteWithSignature<Android.App.PendingIntent>("getActionIntent", "()Landroid/app/PendingIntent;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/RemoteAction.html#getContentDescription()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence ContentDescription
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getContentDescription", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/RemoteAction.html#getIcon()"/> 
-        /// </summary>
-        public Android.Graphics.Drawable.Icon Icon
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Icon>("getIcon", "()Landroid/graphics/drawable/Icon;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/RemoteAction.html#getTitle()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence Title
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getTitle", "()Ljava/lang/CharSequence;"); }
+            return IExecuteWithSignature<Android.App.PendingIntent>("getActionIntent", "()Landroid/app/PendingIntent;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/RemoteAction.html#clone()"/>
@@ -97,6 +77,14 @@ namespace Android.App
         public Android.App.RemoteAction Clone()
         {
             return IExecuteWithSignature<Android.App.RemoteAction>("clone", "()Landroid/app/RemoteAction;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/RemoteAction.html#getIcon()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Graphics.Drawable.Icon"/></returns>
+        public Android.Graphics.Drawable.Icon GetIcon()
+        {
+            return IExecuteWithSignature<Android.Graphics.Drawable.Icon>("getIcon", "()Landroid/graphics/drawable/Icon;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/RemoteAction.html#isEnabled()"/>
@@ -121,6 +109,22 @@ namespace Android.App
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/RemoteAction.html#getContentDescription()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetContentDescription()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getContentDescription", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/RemoteAction.html#getTitle()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetTitle()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getTitle", "()Ljava/lang/CharSequence;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/RemoteAction.html#dump(java.lang.String,java.io.PrintWriter)"/>

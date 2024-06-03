@@ -52,27 +52,6 @@ namespace Android.Hardware.Camera2.Params
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/LensShadingMap.html#getColumnCount()"/> 
-        /// </summary>
-        public int ColumnCount
-        {
-            get { return IExecuteWithSignature<int>("getColumnCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/LensShadingMap.html#getGainFactorCount()"/> 
-        /// </summary>
-        public int GainFactorCount
-        {
-            get { return IExecuteWithSignature<int>("getGainFactorCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/LensShadingMap.html#getRowCount()"/> 
-        /// </summary>
-        public int RowCount
-        {
-            get { return IExecuteWithSignature<int>("getRowCount", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/LensShadingMap.html#getGainFactorVector(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -92,6 +71,30 @@ namespace Android.Hardware.Camera2.Params
         public float GetGainFactor(int arg0, int arg1, int arg2)
         {
             return IExecute<float>("getGainFactor", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/LensShadingMap.html#getColumnCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetColumnCount()
+        {
+            return IExecuteWithSignature<int>("getColumnCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/LensShadingMap.html#getGainFactorCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetGainFactorCount()
+        {
+            return IExecuteWithSignature<int>("getGainFactorCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/LensShadingMap.html#getRowCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetRowCount()
+        {
+            return IExecuteWithSignature<int>("getRowCount", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/params/LensShadingMap.html#copyGainFactors(float[],int)"/>

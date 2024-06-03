@@ -73,41 +73,6 @@ namespace Android.Bluetooth
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattService.html#getCharacteristics()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Bluetooth.BluetoothGattCharacteristic> Characteristics
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Bluetooth.BluetoothGattCharacteristic>>("getCharacteristics", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattService.html#getIncludedServices()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Bluetooth.BluetoothGattService> IncludedServices
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Bluetooth.BluetoothGattService>>("getIncludedServices", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattService.html#getInstanceId()"/> 
-        /// </summary>
-        public int InstanceId
-        {
-            get { return IExecuteWithSignature<int>("getInstanceId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattService.html#getType()"/> 
-        /// </summary>
-        public int Type
-        {
-            get { return IExecuteWithSignature<int>("getType", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattService.html#getUuid()"/> 
-        /// </summary>
-        public Java.Util.UUID Uuid
-        {
-            get { return IExecuteWithSignature<Java.Util.UUID>("getUuid", "()Ljava/util/UUID;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattService.html#getCharacteristic(java.util.UUID)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.UUID"/></param>
@@ -141,6 +106,46 @@ namespace Android.Bluetooth
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattService.html#getInstanceId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetInstanceId()
+        {
+            return IExecuteWithSignature<int>("getInstanceId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattService.html#getType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetType()
+        {
+            return IExecuteWithSignature<int>("getType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattService.html#getCharacteristics()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Bluetooth.BluetoothGattCharacteristic> GetCharacteristics()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Bluetooth.BluetoothGattCharacteristic>>("getCharacteristics", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattService.html#getIncludedServices()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Bluetooth.BluetoothGattService> GetIncludedServices()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Bluetooth.BluetoothGattService>>("getIncludedServices", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattService.html#getUuid()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.UUID"/></returns>
+        public Java.Util.UUID GetUuid()
+        {
+            return IExecuteWithSignature<Java.Util.UUID>("getUuid", "()Ljava/util/UUID;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothGattService.html#writeToParcel(android.os.Parcel,int)"/>

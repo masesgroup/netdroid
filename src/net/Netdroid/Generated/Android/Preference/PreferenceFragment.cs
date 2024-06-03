@@ -46,30 +46,32 @@ namespace Android.Preference
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/preference/PreferenceFragment.html#getPreferenceManager()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Android.Preference.PreferenceManager PreferenceManager
-        {
-            get { return IExecuteWithSignature<Android.Preference.PreferenceManager>("getPreferenceManager", "()Landroid/preference/PreferenceManager;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/preference/PreferenceFragment.html#getPreferenceScreen()"/> <see href="https://developer.android.com/reference/android/preference/PreferenceFragment.html#setPreferenceScreen(android.preference.PreferenceScreen)"/>
-        /// </summary>
-        [System.Obsolete()]
-        public Android.Preference.PreferenceScreen PreferenceScreen
-        {
-            get { return IExecuteWithSignature<Android.Preference.PreferenceScreen>("getPreferenceScreen", "()Landroid/preference/PreferenceScreen;"); } set { IExecuteWithSignature("setPreferenceScreen", "(Landroid/preference/PreferenceScreen;)V", value); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/preference/PreferenceFragment.html#findPreference(java.lang.CharSequence)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <returns><see cref="Android.Preference.Preference"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Preference.Preference FindPreference(Java.Lang.CharSequence arg0)
         {
             return IExecuteWithSignature<Android.Preference.Preference>("findPreference", "(Ljava/lang/CharSequence;)Landroid/preference/Preference;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/preference/PreferenceFragment.html#getPreferenceManager()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Preference.PreferenceManager"/></returns>
+        [global::System.Obsolete()]
+        public Android.Preference.PreferenceManager GetPreferenceManager()
+        {
+            return IExecuteWithSignature<Android.Preference.PreferenceManager>("getPreferenceManager", "()Landroid/preference/PreferenceManager;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/preference/PreferenceFragment.html#getPreferenceScreen()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Preference.PreferenceScreen"/></returns>
+        [global::System.Obsolete()]
+        public Android.Preference.PreferenceScreen GetPreferenceScreen()
+        {
+            return IExecuteWithSignature<Android.Preference.PreferenceScreen>("getPreferenceScreen", "()Landroid/preference/PreferenceScreen;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/preference/PreferenceFragment.html#onPreferenceTreeClick(android.preference.PreferenceScreen,android.preference.Preference)"/>
@@ -77,7 +79,7 @@ namespace Android.Preference
         /// <param name="arg0"><see cref="Android.Preference.PreferenceScreen"/></param>
         /// <param name="arg1"><see cref="Android.Preference.Preference"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool OnPreferenceTreeClick(Android.Preference.PreferenceScreen arg0, Android.Preference.Preference arg1)
         {
             return IExecute<bool>("onPreferenceTreeClick", arg0, arg1);
@@ -86,7 +88,7 @@ namespace Android.Preference
         /// <see href="https://developer.android.com/reference/android/preference/PreferenceFragment.html#addPreferencesFromIntent(android.content.Intent)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Intent"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void AddPreferencesFromIntent(Android.Content.Intent arg0)
         {
             IExecuteWithSignature("addPreferencesFromIntent", "(Landroid/content/Intent;)V", arg0);
@@ -95,10 +97,19 @@ namespace Android.Preference
         /// <see href="https://developer.android.com/reference/android/preference/PreferenceFragment.html#addPreferencesFromResource(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void AddPreferencesFromResource(int arg0)
         {
             IExecuteWithSignature("addPreferencesFromResource", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/preference/PreferenceFragment.html#setPreferenceScreen(android.preference.PreferenceScreen)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Preference.PreferenceScreen"/></param>
+        [global::System.Obsolete()]
+        public void SetPreferenceScreen(Android.Preference.PreferenceScreen arg0)
+        {
+            IExecuteWithSignature("setPreferenceScreen", "(Landroid/preference/PreferenceScreen;)V", arg0);
         }
 
         #endregion
@@ -130,7 +141,7 @@ namespace Android.Preference
             /// <param name="arg0"><see cref="Android.Preference.PreferenceFragment"/></param>
             /// <param name="arg1"><see cref="Android.Preference.Preference"/></param>
             /// <returns><see cref="bool"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public bool OnPreferenceStartFragment(Android.Preference.PreferenceFragment arg0, Android.Preference.Preference arg1)
             {
                 return IExecute<bool>("onPreferenceStartFragment", arg0, arg1);

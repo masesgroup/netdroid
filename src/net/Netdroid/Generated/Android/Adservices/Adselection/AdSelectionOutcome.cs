@@ -46,18 +46,20 @@ namespace Android.Adservices.Adselection
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/adselection/AdSelectionOutcome.html#getAdSelectionId()"/> 
+        /// <see href="https://developer.android.com/reference/android/adservices/adselection/AdSelectionOutcome.html#getRenderUri()"/>
         /// </summary>
-        public long AdSelectionId
+        /// <returns><see cref="Android.Net.Uri"/></returns>
+        public Android.Net.Uri GetRenderUri()
         {
-            get { return IExecuteWithSignature<long>("getAdSelectionId", "()J"); }
+            return IExecuteWithSignature<Android.Net.Uri>("getRenderUri", "()Landroid/net/Uri;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/adselection/AdSelectionOutcome.html#getRenderUri()"/> 
+        /// <see href="https://developer.android.com/reference/android/adservices/adselection/AdSelectionOutcome.html#getAdSelectionId()"/>
         /// </summary>
-        public Android.Net.Uri RenderUri
+        /// <returns><see cref="long"/></returns>
+        public long GetAdSelectionId()
         {
-            get { return IExecuteWithSignature<Android.Net.Uri>("getRenderUri", "()Landroid/net/Uri;"); }
+            return IExecuteWithSignature<long>("getAdSelectionId", "()J");
         }
 
         #endregion

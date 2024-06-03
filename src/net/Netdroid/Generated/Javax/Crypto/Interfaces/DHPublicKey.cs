@@ -64,9 +64,8 @@ namespace Javax.Crypto.Interfaces
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/interfaces/DHPublicKey.html#serialVersionUID"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/interfaces/DHPublicKey.html#serialVersionUID"/>
         /// </summary>
-        [System.Obsolete()]
         public static long serialVersionUID { get { if (!_serialVersionUIDReady) { _serialVersionUIDContent = SGetField<long>(LocalBridgeClazz, "serialVersionUID"); _serialVersionUIDReady = true; } return _serialVersionUIDContent; } }
         private static long _serialVersionUIDContent = default;
         private static bool _serialVersionUIDReady = false; // this is used because in case of generics 
@@ -79,11 +78,12 @@ namespace Javax.Crypto.Interfaces
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/interfaces/DHPublicKey.html#getY()"/> 
+        /// <see href="https://developer.android.com/reference/javax/crypto/interfaces/DHPublicKey.html#getY()"/>
         /// </summary>
-        public Java.Math.BigInteger Y
+        /// <returns><see cref="Java.Math.BigInteger"/></returns>
+        public Java.Math.BigInteger GetY()
         {
-            get { return IExecuteWithSignature<Java.Math.BigInteger>("getY", "()Ljava/math/BigInteger;"); }
+            return IExecuteWithSignature<Java.Math.BigInteger>("getY", "()Ljava/math/BigInteger;");
         }
 
         #endregion

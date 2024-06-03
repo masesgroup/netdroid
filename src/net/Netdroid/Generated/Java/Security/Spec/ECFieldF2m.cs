@@ -30,7 +30,7 @@ namespace Java.Security.Spec
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/ECFieldF2m.html#%3Cinit%3E(int,int[])"/>
+        /// <see href="https://developer.android.com/reference/java/security/spec/ECFieldF2m.html#%3Cinit%3E(int,int[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -39,7 +39,7 @@ namespace Java.Security.Spec
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/ECFieldF2m.html#%3Cinit%3E(int,java.math.BigInteger)"/>
+        /// <see href="https://developer.android.com/reference/java/security/spec/ECFieldF2m.html#%3Cinit%3E(int,java.math.BigInteger)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Math.BigInteger"/></param>
@@ -48,7 +48,7 @@ namespace Java.Security.Spec
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/ECFieldF2m.html#%3Cinit%3E(int)"/>
+        /// <see href="https://developer.android.com/reference/java/security/spec/ECFieldF2m.html#%3Cinit%3E(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public ECFieldF2m(int arg0)
@@ -72,32 +72,36 @@ namespace Java.Security.Spec
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/ECFieldF2m.html#getFieldSize()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/spec/ECFieldF2m.html#getFieldSize()"/>
         /// </summary>
-        public int FieldSize
+        /// <returns><see cref="int"/></returns>
+        public int GetFieldSize()
         {
-            get { return IExecuteWithSignature<int>("getFieldSize", "()I"); }
+            return IExecuteWithSignature<int>("getFieldSize", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/ECFieldF2m.html#getM()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/spec/ECFieldF2m.html#getM()"/>
         /// </summary>
-        public int M
+        /// <returns><see cref="int"/></returns>
+        public int GetM()
         {
-            get { return IExecuteWithSignature<int>("getM", "()I"); }
+            return IExecuteWithSignature<int>("getM", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/ECFieldF2m.html#getMidTermsOfReductionPolynomial()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/spec/ECFieldF2m.html#getMidTermsOfReductionPolynomial()"/>
         /// </summary>
-        public int[] MidTermsOfReductionPolynomial
+        /// <returns><see cref="int"/></returns>
+        public int[] GetMidTermsOfReductionPolynomial()
         {
-            get { return IExecuteWithSignatureArray<int>("getMidTermsOfReductionPolynomial", "()[I"); }
+            return IExecuteWithSignatureArray<int>("getMidTermsOfReductionPolynomial", "()[I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/ECFieldF2m.html#getReductionPolynomial()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/spec/ECFieldF2m.html#getReductionPolynomial()"/>
         /// </summary>
-        public Java.Math.BigInteger ReductionPolynomial
+        /// <returns><see cref="Java.Math.BigInteger"/></returns>
+        public Java.Math.BigInteger GetReductionPolynomial()
         {
-            get { return IExecuteWithSignature<Java.Math.BigInteger>("getReductionPolynomial", "()Ljava/math/BigInteger;"); }
+            return IExecuteWithSignature<Java.Math.BigInteger>("getReductionPolynomial", "()Ljava/math/BigInteger;");
         }
 
         #endregion

@@ -52,26 +52,28 @@ namespace Android.Hardware.Lights
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/lights/LightState.html#getColor()"/> 
-        /// </summary>
-        public int Color
-        {
-            get { return IExecuteWithSignature<int>("getColor", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/lights/LightState.html#getPlayerId()"/> 
-        /// </summary>
-        public int PlayerId
-        {
-            get { return IExecuteWithSignature<int>("getPlayerId", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/lights/LightState.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/lights/LightState.html#getColor()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetColor()
+        {
+            return IExecuteWithSignature<int>("getColor", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/lights/LightState.html#getPlayerId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPlayerId()
+        {
+            return IExecuteWithSignature<int>("getPlayerId", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/lights/LightState.html#writeToParcel(android.os.Parcel,int)"/>

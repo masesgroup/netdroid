@@ -46,7 +46,7 @@ namespace Java.Nio
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ShortBuffer.html#allocate(int)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/ShortBuffer.html#allocate(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Nio.ShortBuffer"/></returns>
@@ -55,7 +55,7 @@ namespace Java.Nio
             return SExecuteWithSignature<Java.Nio.ShortBuffer>(LocalBridgeClazz, "allocate", "(I)Ljava/nio/ShortBuffer;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ShortBuffer.html#wrap(short[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/ShortBuffer.html#wrap(short[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -66,7 +66,7 @@ namespace Java.Nio
             return SExecute<Java.Nio.ShortBuffer>(LocalBridgeClazz, "wrap", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ShortBuffer.html#wrap(short[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/ShortBuffer.html#wrap(short[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
         /// <returns><see cref="Java.Nio.ShortBuffer"/></returns>
@@ -79,7 +79,7 @@ namespace Java.Nio
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ShortBuffer.html#order()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/ShortBuffer.html#order()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.ByteOrder"/></returns>
         public Java.Nio.ByteOrder Order()
@@ -87,7 +87,7 @@ namespace Java.Nio
             return IExecuteWithSignature<Java.Nio.ByteOrder>("order", "()Ljava/nio/ByteOrder;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ShortBuffer.html#asReadOnlyBuffer()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/ShortBuffer.html#asReadOnlyBuffer()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.ShortBuffer"/></returns>
         public Java.Nio.ShortBuffer AsReadOnlyBuffer()
@@ -95,7 +95,7 @@ namespace Java.Nio
             return IExecuteWithSignature<Java.Nio.ShortBuffer>("asReadOnlyBuffer", "()Ljava/nio/ShortBuffer;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ShortBuffer.html#compact()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/ShortBuffer.html#compact()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.ShortBuffer"/></returns>
         public Java.Nio.ShortBuffer Compact()
@@ -103,7 +103,7 @@ namespace Java.Nio
             return IExecuteWithSignature<Java.Nio.ShortBuffer>("compact", "()Ljava/nio/ShortBuffer;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ShortBuffer.html#put(int,short)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/ShortBuffer.html#put(int,short)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="short"/></param>
@@ -113,7 +113,7 @@ namespace Java.Nio
             return IExecute<Java.Nio.ShortBuffer>("put", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ShortBuffer.html#put(short)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/ShortBuffer.html#put(short)"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
         /// <returns><see cref="Java.Nio.ShortBuffer"/></returns>
@@ -122,7 +122,7 @@ namespace Java.Nio
             return IExecuteWithSignature<Java.Nio.ShortBuffer>("put", "(S)Ljava/nio/ShortBuffer;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ShortBuffer.html#get()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/ShortBuffer.html#get()"/>
         /// </summary>
         /// <returns><see cref="short"/></returns>
         public short Get()
@@ -130,7 +130,7 @@ namespace Java.Nio
             return IExecuteWithSignature<short>("get", "()S");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ShortBuffer.html#get(int)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/ShortBuffer.html#get(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="short"/></returns>
@@ -139,7 +139,7 @@ namespace Java.Nio
             return IExecuteWithSignature<short>("get", "(I)S", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ShortBuffer.html#put(short[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/ShortBuffer.html#put(short[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
         /// <returns><see cref="Java.Nio.ShortBuffer"/></returns>
@@ -148,7 +148,7 @@ namespace Java.Nio
             return IExecuteWithSignature<Java.Nio.ShortBuffer>("put", "([S)Ljava/nio/ShortBuffer;", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ShortBuffer.html#compareTo(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/ShortBuffer.html#compareTo(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="int"/></returns>
@@ -157,7 +157,7 @@ namespace Java.Nio
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ShortBuffer.html#compareTo(java.nio.ShortBuffer)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/ShortBuffer.html#compareTo(java.nio.ShortBuffer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ShortBuffer"/></param>
         /// <returns><see cref="int"/></returns>
@@ -166,7 +166,7 @@ namespace Java.Nio
             return IExecuteWithSignature<int>("compareTo", "(Ljava/nio/ShortBuffer;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ShortBuffer.html#mismatch(java.nio.ShortBuffer)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/ShortBuffer.html#mismatch(java.nio.ShortBuffer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ShortBuffer"/></param>
         /// <returns><see cref="int"/></returns>
@@ -175,29 +175,7 @@ namespace Java.Nio
             return IExecuteWithSignature<int>("mismatch", "(Ljava/nio/ShortBuffer;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ShortBuffer.html#get(int,short[],int,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="short"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <returns><see cref="Java.Nio.ShortBuffer"/></returns>
-        public Java.Nio.ShortBuffer Get(int arg0, short[] arg1, int arg2, int arg3)
-        {
-            return IExecute<Java.Nio.ShortBuffer>("get", arg0, arg1, arg2, arg3);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ShortBuffer.html#get(int,short[])"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="short"/></param>
-        /// <returns><see cref="Java.Nio.ShortBuffer"/></returns>
-        public Java.Nio.ShortBuffer Get(int arg0, short[] arg1)
-        {
-            return IExecute<Java.Nio.ShortBuffer>("get", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ShortBuffer.html#get(short[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/ShortBuffer.html#get(short[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -208,7 +186,7 @@ namespace Java.Nio
             return IExecute<Java.Nio.ShortBuffer>("get", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ShortBuffer.html#get(short[])"/>
+        /// <see href="https://developer.android.com/reference/java/nio/ShortBuffer.html#get(short[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
         /// <returns><see cref="Java.Nio.ShortBuffer"/></returns>
@@ -217,41 +195,7 @@ namespace Java.Nio
             return IExecuteWithSignature<Java.Nio.ShortBuffer>("get", "([S)Ljava/nio/ShortBuffer;", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ShortBuffer.html#put(int,java.nio.ShortBuffer,int,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="Java.Nio.ShortBuffer"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <returns><see cref="Java.Nio.ShortBuffer"/></returns>
-        public Java.Nio.ShortBuffer Put(int arg0, Java.Nio.ShortBuffer arg1, int arg2, int arg3)
-        {
-            return IExecute<Java.Nio.ShortBuffer>("put", arg0, arg1, arg2, arg3);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ShortBuffer.html#put(int,short[],int,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="short"/></param>
-        /// <param name="arg2"><see cref="int"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <returns><see cref="Java.Nio.ShortBuffer"/></returns>
-        public Java.Nio.ShortBuffer Put(int arg0, short[] arg1, int arg2, int arg3)
-        {
-            return IExecute<Java.Nio.ShortBuffer>("put", arg0, arg1, arg2, arg3);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ShortBuffer.html#put(int,short[])"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="short"/></param>
-        /// <returns><see cref="Java.Nio.ShortBuffer"/></returns>
-        public Java.Nio.ShortBuffer Put(int arg0, short[] arg1)
-        {
-            return IExecute<Java.Nio.ShortBuffer>("put", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ShortBuffer.html#put(java.nio.ShortBuffer)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/ShortBuffer.html#put(java.nio.ShortBuffer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ShortBuffer"/></param>
         /// <returns><see cref="Java.Nio.ShortBuffer"/></returns>
@@ -260,7 +204,7 @@ namespace Java.Nio
             return IExecuteWithSignature<Java.Nio.ShortBuffer>("put", "(Ljava/nio/ShortBuffer;)Ljava/nio/ShortBuffer;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/ShortBuffer.html#put(short[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/ShortBuffer.html#put(short[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="short"/></param>
         /// <param name="arg1"><see cref="int"/></param>

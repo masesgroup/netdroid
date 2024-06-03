@@ -64,25 +64,12 @@ namespace Android.Webkit
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebResourceRequest.html#getMethod()"/> 
+        /// <see href="https://developer.android.com/reference/android/webkit/WebResourceRequest.html#getUrl()"/>
         /// </summary>
-        public Java.Lang.String Method
+        /// <returns><see cref="Android.Net.Uri"/></returns>
+        public Android.Net.Uri GetUrl()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getMethod", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebResourceRequest.html#getRequestHeaders()"/> 
-        /// </summary>
-        public Java.Util.Map<Java.Lang.String, Java.Lang.String> RequestHeaders
-        {
-            get { return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Lang.String>>("getRequestHeaders", "()Ljava/util/Map;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/WebResourceRequest.html#getUrl()"/> 
-        /// </summary>
-        public Android.Net.Uri Url
-        {
-            get { return IExecuteWithSignature<Android.Net.Uri>("getUrl", "()Landroid/net/Uri;"); }
+            return IExecuteWithSignature<Android.Net.Uri>("getUrl", "()Landroid/net/Uri;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/WebResourceRequest.html#hasGesture()"/>
@@ -107,6 +94,22 @@ namespace Android.Webkit
         public bool IsRedirect()
         {
             return IExecuteWithSignature<bool>("isRedirect", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebResourceRequest.html#getMethod()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetMethod()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getMethod", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/webkit/WebResourceRequest.html#getRequestHeaders()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        public Java.Util.Map<Java.Lang.String, Java.Lang.String> GetRequestHeaders()
+        {
+            return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Lang.String>>("getRequestHeaders", "()Ljava/util/Map;");
         }
 
         #endregion

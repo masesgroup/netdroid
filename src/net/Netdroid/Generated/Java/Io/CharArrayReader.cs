@@ -30,7 +30,7 @@ namespace Java.Io
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/CharArrayReader.html#%3Cinit%3E(char[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/io/CharArrayReader.html#%3Cinit%3E(char[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -40,7 +40,7 @@ namespace Java.Io
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/CharArrayReader.html#%3Cinit%3E(char[])"/>
+        /// <see href="https://developer.android.com/reference/java/io/CharArrayReader.html#%3Cinit%3E(char[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         public CharArrayReader(char[] arg0)

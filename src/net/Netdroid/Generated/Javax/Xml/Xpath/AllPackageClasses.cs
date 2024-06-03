@@ -28,7 +28,7 @@ namespace Javax.Xml.Xpath
 {
     #region XPath
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/javax/xml/xpath/XPath.html"/>
+    /// <see href="https://developer.android.com/reference/javax/xml/xpath/XPath.html"/>
     /// </summary>
     public partial class XPath : MASES.JCOBridge.C2JBridge.JVMBridgeBase<XPath>
     {
@@ -36,12 +36,12 @@ namespace Javax.Xml.Xpath
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("XPath class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("XPath class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public XPath() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("XPath class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("XPath class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public XPath(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -74,7 +74,7 @@ namespace Javax.Xml.Xpath
 
     #region XPathConstants
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/javax/xml/xpath/XPathConstants.html"/>
+    /// <see href="https://developer.android.com/reference/javax/xml/xpath/XPathConstants.html"/>
     /// </summary>
     public partial class XPathConstants : MASES.JCOBridge.C2JBridge.JVMBridgeBase<XPathConstants>
     {
@@ -118,7 +118,7 @@ namespace Javax.Xml.Xpath
 
     #region XPathException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/javax/xml/xpath/XPathException.html"/>
+    /// <see href="https://developer.android.com/reference/javax/xml/xpath/XPathException.html"/>
     /// </summary>
     public partial class XPathException : Java.Lang.Exception
     {
@@ -135,7 +135,7 @@ namespace Javax.Xml.Xpath
 
     #region XPathExpression
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/javax/xml/xpath/XPathExpression.html"/>
+    /// <see href="https://developer.android.com/reference/javax/xml/xpath/XPathExpression.html"/>
     /// </summary>
     public partial class XPathExpression : MASES.JCOBridge.C2JBridge.JVMBridgeBase<XPathExpression>
     {
@@ -143,12 +143,12 @@ namespace Javax.Xml.Xpath
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("XPathExpression class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("XPathExpression class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public XPathExpression() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("XPathExpression class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("XPathExpression class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public XPathExpression(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -181,7 +181,7 @@ namespace Javax.Xml.Xpath
 
     #region XPathExpressionException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/javax/xml/xpath/XPathExpressionException.html"/>
+    /// <see href="https://developer.android.com/reference/javax/xml/xpath/XPathExpressionException.html"/>
     /// </summary>
     public partial class XPathExpressionException : Javax.Xml.Xpath.XPathException
     {
@@ -198,7 +198,7 @@ namespace Javax.Xml.Xpath
 
     #region XPathFactory
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/javax/xml/xpath/XPathFactory.html"/>
+    /// <see href="https://developer.android.com/reference/javax/xml/xpath/XPathFactory.html"/>
     /// </summary>
     public partial class XPathFactory : MASES.JCOBridge.C2JBridge.JVMBridgeBase<XPathFactory>
     {
@@ -206,12 +206,12 @@ namespace Javax.Xml.Xpath
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("XPathFactory class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("XPathFactory class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public XPathFactory() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("XPathFactory class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("XPathFactory class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public XPathFactory(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -244,7 +244,7 @@ namespace Javax.Xml.Xpath
 
     #region XPathFactoryConfigurationException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/javax/xml/xpath/XPathFactoryConfigurationException.html"/>
+    /// <see href="https://developer.android.com/reference/javax/xml/xpath/XPathFactoryConfigurationException.html"/>
     /// </summary>
     public partial class XPathFactoryConfigurationException : Javax.Xml.Xpath.XPathException
     {
@@ -261,7 +261,7 @@ namespace Javax.Xml.Xpath
 
     #region XPathFunction
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/javax/xml/xpath/XPathFunction.html"/>
+    /// <see href="https://developer.android.com/reference/javax/xml/xpath/XPathFunction.html"/>
     /// </summary>
     public partial class XPathFunction : MASES.JCOBridge.C2JBridge.JVMBridgeBase<XPathFunction>
     {
@@ -269,12 +269,12 @@ namespace Javax.Xml.Xpath
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("XPathFunction class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("XPathFunction class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public XPathFunction() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("XPathFunction class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("XPathFunction class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public XPathFunction(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -307,7 +307,7 @@ namespace Javax.Xml.Xpath
 
     #region XPathFunctionException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/javax/xml/xpath/XPathFunctionException.html"/>
+    /// <see href="https://developer.android.com/reference/javax/xml/xpath/XPathFunctionException.html"/>
     /// </summary>
     public partial class XPathFunctionException : Javax.Xml.Xpath.XPathExpressionException
     {
@@ -324,7 +324,7 @@ namespace Javax.Xml.Xpath
 
     #region XPathFunctionResolver
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/javax/xml/xpath/XPathFunctionResolver.html"/>
+    /// <see href="https://developer.android.com/reference/javax/xml/xpath/XPathFunctionResolver.html"/>
     /// </summary>
     public partial class XPathFunctionResolver : MASES.JCOBridge.C2JBridge.JVMBridgeBase<XPathFunctionResolver>
     {
@@ -332,12 +332,12 @@ namespace Javax.Xml.Xpath
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("XPathFunctionResolver class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("XPathFunctionResolver class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public XPathFunctionResolver() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("XPathFunctionResolver class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("XPathFunctionResolver class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public XPathFunctionResolver(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -370,7 +370,7 @@ namespace Javax.Xml.Xpath
 
     #region XPathVariableResolver
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.xml/javax/xml/xpath/XPathVariableResolver.html"/>
+    /// <see href="https://developer.android.com/reference/javax/xml/xpath/XPathVariableResolver.html"/>
     /// </summary>
     public partial class XPathVariableResolver : MASES.JCOBridge.C2JBridge.JVMBridgeBase<XPathVariableResolver>
     {
@@ -378,12 +378,12 @@ namespace Javax.Xml.Xpath
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("XPathVariableResolver class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("XPathVariableResolver class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public XPathVariableResolver() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("XPathVariableResolver class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("XPathVariableResolver class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public XPathVariableResolver(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);

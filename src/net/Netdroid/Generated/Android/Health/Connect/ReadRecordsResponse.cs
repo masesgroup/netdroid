@@ -46,18 +46,20 @@ namespace Android.Health.Connect
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/ReadRecordsResponse.html#getNextPageToken()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/ReadRecordsResponse.html#getRecords()"/>
         /// </summary>
-        public long NextPageToken
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List GetRecords()
         {
-            get { return IExecuteWithSignature<long>("getNextPageToken", "()J"); }
+            return IExecuteWithSignature<Java.Util.List>("getRecords", "()Ljava/util/List;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/ReadRecordsResponse.html#getRecords()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/ReadRecordsResponse.html#getNextPageToken()"/>
         /// </summary>
-        public Java.Util.List Records
+        /// <returns><see cref="long"/></returns>
+        public long GetNextPageToken()
         {
-            get { return IExecuteWithSignature<Java.Util.List>("getRecords", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<long>("getNextPageToken", "()J");
         }
 
         #endregion
@@ -95,18 +97,20 @@ namespace Android.Health.Connect
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/ReadRecordsResponse.html#getNextPageToken()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/ReadRecordsResponse.html#getRecords()"/>
         /// </summary>
-        public long NextPageToken
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<T> GetRecords()
         {
-            get { return IExecuteWithSignature<long>("getNextPageToken", "()J"); }
+            return IExecuteWithSignature<Java.Util.List<T>>("getRecords", "()Ljava/util/List;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/ReadRecordsResponse.html#getRecords()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/ReadRecordsResponse.html#getNextPageToken()"/>
         /// </summary>
-        public Java.Util.List<T> Records
+        /// <returns><see cref="long"/></returns>
+        public long GetNextPageToken()
         {
-            get { return IExecuteWithSignature<Java.Util.List<T>>("getRecords", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<long>("getNextPageToken", "()J");
         }
 
         #endregion

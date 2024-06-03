@@ -64,7 +64,7 @@ namespace Org.Xml.Sax
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/Parser.html#parse(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/Parser.html#parse(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Org.Xml.Sax.SAXException"/>
@@ -74,7 +74,7 @@ namespace Org.Xml.Sax
             IExecuteWithSignature("parse", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/Parser.html#parse(org.xml.sax.InputSource)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/Parser.html#parse(org.xml.sax.InputSource)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.Xml.Sax.InputSource"/></param>
         /// <exception cref="Org.Xml.Sax.SAXException"/>
@@ -84,7 +84,7 @@ namespace Org.Xml.Sax
             IExecuteWithSignature("parse", "(Lorg/xml/sax/InputSource;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/Parser.html#setDocumentHandler(org.xml.sax.DocumentHandler)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/Parser.html#setDocumentHandler(org.xml.sax.DocumentHandler)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.Xml.Sax.DocumentHandler"/></param>
         public void SetDocumentHandler(Org.Xml.Sax.DocumentHandler arg0)
@@ -92,7 +92,7 @@ namespace Org.Xml.Sax
             IExecuteWithSignature("setDocumentHandler", "(Lorg/xml/sax/DocumentHandler;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/Parser.html#setDTDHandler(org.xml.sax.DTDHandler)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/Parser.html#setDTDHandler(org.xml.sax.DTDHandler)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.Xml.Sax.DTDHandler"/></param>
         public void SetDTDHandler(Org.Xml.Sax.DTDHandler arg0)
@@ -100,7 +100,7 @@ namespace Org.Xml.Sax
             IExecuteWithSignature("setDTDHandler", "(Lorg/xml/sax/DTDHandler;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/Parser.html#setEntityResolver(org.xml.sax.EntityResolver)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/Parser.html#setEntityResolver(org.xml.sax.EntityResolver)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.Xml.Sax.EntityResolver"/></param>
         public void SetEntityResolver(Org.Xml.Sax.EntityResolver arg0)
@@ -108,7 +108,7 @@ namespace Org.Xml.Sax
             IExecuteWithSignature("setEntityResolver", "(Lorg/xml/sax/EntityResolver;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/Parser.html#setErrorHandler(org.xml.sax.ErrorHandler)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/Parser.html#setErrorHandler(org.xml.sax.ErrorHandler)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.Xml.Sax.ErrorHandler"/></param>
         public void SetErrorHandler(Org.Xml.Sax.ErrorHandler arg0)
@@ -116,7 +116,7 @@ namespace Org.Xml.Sax
             IExecuteWithSignature("setErrorHandler", "(Lorg/xml/sax/ErrorHandler;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/Parser.html#setLocale(java.util.Locale)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/Parser.html#setLocale(java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
         /// <exception cref="Org.Xml.Sax.SAXException"/>

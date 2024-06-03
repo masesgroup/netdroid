@@ -67,7 +67,7 @@ namespace Dalvik.Annotation
         /// <see href="https://developer.android.com/reference/dalvik/annotation/TestTarget.html#methodArgs()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.Class"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Lang.Class[] MethodArgs()
         {
             return IExecuteWithSignatureArray<Java.Lang.Class>("methodArgs", "()[Ljava/lang/Class;");
@@ -76,7 +76,7 @@ namespace Dalvik.Annotation
         /// <see href="https://developer.android.com/reference/dalvik/annotation/TestTarget.html#conceptName()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Lang.String ConceptName()
         {
             return IExecuteWithSignature<Java.Lang.String>("conceptName", "()Ljava/lang/String;");
@@ -85,7 +85,7 @@ namespace Dalvik.Annotation
         /// <see href="https://developer.android.com/reference/dalvik/annotation/TestTarget.html#methodName()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Lang.String MethodName()
         {
             return IExecuteWithSignature<Java.Lang.String>("methodName", "()Ljava/lang/String;");

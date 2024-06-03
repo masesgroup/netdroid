@@ -73,62 +73,6 @@ namespace Android.Widget
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Scroller.html#getCurrVelocity()"/> 
-        /// </summary>
-        public float CurrVelocity
-        {
-            get { return IExecuteWithSignature<float>("getCurrVelocity", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Scroller.html#getCurrX()"/> 
-        /// </summary>
-        public int CurrX
-        {
-            get { return IExecuteWithSignature<int>("getCurrX", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Scroller.html#getCurrY()"/> 
-        /// </summary>
-        public int CurrY
-        {
-            get { return IExecuteWithSignature<int>("getCurrY", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Scroller.html#getDuration()"/> 
-        /// </summary>
-        public int Duration
-        {
-            get { return IExecuteWithSignature<int>("getDuration", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Scroller.html#getFinalX()"/> <see href="https://developer.android.com/reference/android/widget/Scroller.html#setFinalX(int)"/>
-        /// </summary>
-        public int FinalX
-        {
-            get { return IExecuteWithSignature<int>("getFinalX", "()I"); } set { IExecuteWithSignature("setFinalX", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Scroller.html#getFinalY()"/> <see href="https://developer.android.com/reference/android/widget/Scroller.html#setFinalY(int)"/>
-        /// </summary>
-        public int FinalY
-        {
-            get { return IExecuteWithSignature<int>("getFinalY", "()I"); } set { IExecuteWithSignature("setFinalY", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Scroller.html#getStartX()"/> 
-        /// </summary>
-        public int StartX
-        {
-            get { return IExecuteWithSignature<int>("getStartX", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Scroller.html#getStartY()"/> 
-        /// </summary>
-        public int StartY
-        {
-            get { return IExecuteWithSignature<int>("getStartY", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/Scroller.html#computeScrollOffset()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -145,6 +89,62 @@ namespace Android.Widget
             return IExecuteWithSignature<bool>("isFinished", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Scroller.html#getCurrX()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCurrX()
+        {
+            return IExecuteWithSignature<int>("getCurrX", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Scroller.html#getCurrY()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCurrY()
+        {
+            return IExecuteWithSignature<int>("getCurrY", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Scroller.html#getDuration()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDuration()
+        {
+            return IExecuteWithSignature<int>("getDuration", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Scroller.html#getFinalX()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetFinalX()
+        {
+            return IExecuteWithSignature<int>("getFinalX", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Scroller.html#getFinalY()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetFinalY()
+        {
+            return IExecuteWithSignature<int>("getFinalY", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Scroller.html#getStartX()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetStartX()
+        {
+            return IExecuteWithSignature<int>("getStartX", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Scroller.html#getStartY()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetStartY()
+        {
+            return IExecuteWithSignature<int>("getStartY", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/Scroller.html#forceFinished(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
@@ -159,6 +159,14 @@ namespace Android.Widget
         public void SetFriction(float arg0)
         {
             IExecuteWithSignature("setFriction", "(F)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Scroller.html#getCurrVelocity()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetCurrVelocity()
+        {
+            return IExecuteWithSignature<float>("getCurrVelocity", "()F");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/Scroller.html#timePassed()"/>
@@ -197,6 +205,22 @@ namespace Android.Widget
         public void Fling(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7)
         {
             IExecute("fling", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Scroller.html#setFinalX(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetFinalX(int arg0)
+        {
+            IExecuteWithSignature("setFinalX", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Scroller.html#setFinalY(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetFinalY(int arg0)
+        {
+            IExecuteWithSignature("setFinalY", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/Scroller.html#startScroll(int,int,int,int,int)"/>

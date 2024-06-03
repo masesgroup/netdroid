@@ -30,7 +30,7 @@ namespace Java.Util.Concurrent.Atomic
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicMarkableReference.html#%3Cinit%3E(java.lang.Object,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicMarkableReference.html#%3Cinit%3E(java.lang.Object,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -55,14 +55,7 @@ namespace Java.Util.Concurrent.Atomic
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicMarkableReference.html#getReference()"/> 
-        /// </summary>
-        public object Reference
-        {
-            get { return IExecuteWithSignature("getReference", "()Ljava/lang/Object;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicMarkableReference.html#attemptMark(java.lang.Object,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicMarkableReference.html#attemptMark(java.lang.Object,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -72,7 +65,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<bool>("attemptMark", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicMarkableReference.html#compareAndSet(java.lang.Object,java.lang.Object,boolean,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicMarkableReference.html#compareAndSet(java.lang.Object,java.lang.Object,boolean,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -84,7 +77,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<bool>("compareAndSet", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicMarkableReference.html#isMarked()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicMarkableReference.html#isMarked()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsMarked()
@@ -92,7 +85,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecuteWithSignature<bool>("isMarked", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicMarkableReference.html#weakCompareAndSet(java.lang.Object,java.lang.Object,boolean,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicMarkableReference.html#weakCompareAndSet(java.lang.Object,java.lang.Object,boolean,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -104,7 +97,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<bool>("weakCompareAndSet", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicMarkableReference.html#get(boolean[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicMarkableReference.html#get(boolean[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <returns><see cref="object"/></returns>
@@ -113,7 +106,15 @@ namespace Java.Util.Concurrent.Atomic
             return IExecuteWithSignature("get", "([Z)Ljava/lang/Object;", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicMarkableReference.html#set(java.lang.Object,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicMarkableReference.html#getReference()"/>
+        /// </summary>
+        /// <returns><see cref="object"/></returns>
+        public object GetReference()
+        {
+            return IExecuteWithSignature("getReference", "()Ljava/lang/Object;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicMarkableReference.html#set(java.lang.Object,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -137,7 +138,7 @@ namespace Java.Util.Concurrent.Atomic
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicMarkableReference.html#%3Cinit%3E(java.lang.Object,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicMarkableReference.html#%3Cinit%3E(java.lang.Object,boolean)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="V"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -166,14 +167,7 @@ namespace Java.Util.Concurrent.Atomic
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicMarkableReference.html#getReference()"/> 
-        /// </summary>
-        public V Reference
-        {
-            get { return IExecuteWithSignature<V>("getReference", "()Ljava/lang/Object;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicMarkableReference.html#attemptMark(java.lang.Object,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicMarkableReference.html#attemptMark(java.lang.Object,boolean)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="V"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -183,7 +177,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<bool>("attemptMark", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicMarkableReference.html#compareAndSet(java.lang.Object,java.lang.Object,boolean,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicMarkableReference.html#compareAndSet(java.lang.Object,java.lang.Object,boolean,boolean)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="V"/></param>
         /// <param name="arg1"><typeparamref name="V"/></param>
@@ -195,7 +189,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<bool>("compareAndSet", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicMarkableReference.html#isMarked()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicMarkableReference.html#isMarked()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsMarked()
@@ -203,7 +197,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecuteWithSignature<bool>("isMarked", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicMarkableReference.html#weakCompareAndSet(java.lang.Object,java.lang.Object,boolean,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicMarkableReference.html#weakCompareAndSet(java.lang.Object,java.lang.Object,boolean,boolean)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="V"/></param>
         /// <param name="arg1"><typeparamref name="V"/></param>
@@ -215,7 +209,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<bool>("weakCompareAndSet", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicMarkableReference.html#get(boolean[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicMarkableReference.html#get(boolean[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <returns><typeparamref name="V"/></returns>
@@ -224,7 +218,15 @@ namespace Java.Util.Concurrent.Atomic
             return IExecuteWithSignature<V>("get", "([Z)Ljava/lang/Object;", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicMarkableReference.html#set(java.lang.Object,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicMarkableReference.html#getReference()"/>
+        /// </summary>
+        /// <returns><typeparamref name="V"/></returns>
+        public V GetReference()
+        {
+            return IExecuteWithSignature<V>("getReference", "()Ljava/lang/Object;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicMarkableReference.html#set(java.lang.Object,boolean)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="V"/></param>
         /// <param name="arg1"><see cref="bool"/></param>

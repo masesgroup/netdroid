@@ -106,13 +106,6 @@ namespace Android.App.Usage
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/usage/UsageStatsManager.html#getAppStandbyBucket()"/> 
-        /// </summary>
-        public int AppStandbyBucket
-        {
-            get { return IExecuteWithSignature<int>("getAppStandbyBucket", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/usage/UsageStatsManager.html#queryEvents(long,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
@@ -140,6 +133,14 @@ namespace Android.App.Usage
         public bool IsAppInactive(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<bool>("isAppInactive", "(Ljava/lang/String;)Z", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/usage/UsageStatsManager.html#getAppStandbyBucket()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetAppStandbyBucket()
+        {
+            return IExecuteWithSignature<int>("getAppStandbyBucket", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/usage/UsageStatsManager.html#queryConfigurations(int,long,long)"/>

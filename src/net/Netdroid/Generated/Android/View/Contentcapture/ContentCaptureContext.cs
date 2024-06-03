@@ -61,18 +61,20 @@ namespace Android.View.Contentcapture
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/contentcapture/ContentCaptureContext.html#getExtras()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/contentcapture/ContentCaptureContext.html#getLocusId()"/>
         /// </summary>
-        public Android.Os.Bundle Extras
+        /// <returns><see cref="Android.Content.LocusId"/></returns>
+        public Android.Content.LocusId GetLocusId()
         {
-            get { return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;"); }
+            return IExecuteWithSignature<Android.Content.LocusId>("getLocusId", "()Landroid/content/LocusId;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/contentcapture/ContentCaptureContext.html#getLocusId()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/contentcapture/ContentCaptureContext.html#getExtras()"/>
         /// </summary>
-        public Android.Content.LocusId LocusId
+        /// <returns><see cref="Android.Os.Bundle"/></returns>
+        public Android.Os.Bundle GetExtras()
         {
-            get { return IExecuteWithSignature<Android.Content.LocusId>("getLocusId", "()Landroid/content/LocusId;"); }
+            return IExecuteWithSignature<Android.Os.Bundle>("getExtras", "()Landroid/os/Bundle;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/contentcapture/ContentCaptureContext.html#describeContents()"/>

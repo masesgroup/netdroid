@@ -30,7 +30,7 @@ namespace Java.Security
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyPair.html#%3Cinit%3E(java.security.PublicKey,java.security.PrivateKey)"/>
+        /// <see href="https://developer.android.com/reference/java/security/KeyPair.html#%3Cinit%3E(java.security.PublicKey,java.security.PrivateKey)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.PublicKey"/></param>
         /// <param name="arg1"><see cref="Java.Security.PrivateKey"/></param>
@@ -55,18 +55,20 @@ namespace Java.Security
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyPair.html#getPrivate()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/KeyPair.html#getPrivate()"/>
         /// </summary>
-        public Java.Security.PrivateKey Private
+        /// <returns><see cref="Java.Security.PrivateKey"/></returns>
+        public Java.Security.PrivateKey GetPrivate()
         {
-            get { return IExecuteWithSignature<Java.Security.PrivateKey>("getPrivate", "()Ljava/security/PrivateKey;"); }
+            return IExecuteWithSignature<Java.Security.PrivateKey>("getPrivate", "()Ljava/security/PrivateKey;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/KeyPair.html#getPublic()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/KeyPair.html#getPublic()"/>
         /// </summary>
-        public Java.Security.PublicKey Public
+        /// <returns><see cref="Java.Security.PublicKey"/></returns>
+        public Java.Security.PublicKey GetPublic()
         {
-            get { return IExecuteWithSignature<Java.Security.PublicKey>("getPublic", "()Ljava/security/PublicKey;"); }
+            return IExecuteWithSignature<Java.Security.PublicKey>("getPublic", "()Ljava/security/PublicKey;");
         }
 
         #endregion

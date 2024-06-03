@@ -46,7 +46,7 @@ namespace Java.Nio.Channels
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/MembershipKey.html#isValid()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/MembershipKey.html#isValid()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsValid()
@@ -54,7 +54,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<bool>("isValid", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/MembershipKey.html#group()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/MembershipKey.html#group()"/>
         /// </summary>
         /// <returns><see cref="Java.Net.InetAddress"/></returns>
         public Java.Net.InetAddress Group()
@@ -62,7 +62,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<Java.Net.InetAddress>("group", "()Ljava/net/InetAddress;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/MembershipKey.html#sourceAddress()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/MembershipKey.html#sourceAddress()"/>
         /// </summary>
         /// <returns><see cref="Java.Net.InetAddress"/></returns>
         public Java.Net.InetAddress SourceAddress()
@@ -70,7 +70,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<Java.Net.InetAddress>("sourceAddress", "()Ljava/net/InetAddress;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/MembershipKey.html#networkInterface()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/MembershipKey.html#networkInterface()"/>
         /// </summary>
         /// <returns><see cref="Java.Net.NetworkInterface"/></returns>
         public Java.Net.NetworkInterface NetworkInterface()
@@ -78,7 +78,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<Java.Net.NetworkInterface>("networkInterface", "()Ljava/net/NetworkInterface;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/MembershipKey.html#block(java.net.InetAddress)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/MembershipKey.html#block(java.net.InetAddress)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.InetAddress"/></param>
         /// <returns><see cref="Java.Nio.Channels.MembershipKey"/></returns>
@@ -88,7 +88,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<Java.Nio.Channels.MembershipKey>("block", "(Ljava/net/InetAddress;)Ljava/nio/channels/MembershipKey;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/MembershipKey.html#unblock(java.net.InetAddress)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/MembershipKey.html#unblock(java.net.InetAddress)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.InetAddress"/></param>
         /// <returns><see cref="Java.Nio.Channels.MembershipKey"/></returns>
@@ -97,7 +97,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<Java.Nio.Channels.MembershipKey>("unblock", "(Ljava/net/InetAddress;)Ljava/nio/channels/MembershipKey;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/MembershipKey.html#channel()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/MembershipKey.html#channel()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.Channels.MulticastChannel"/></returns>
         public Java.Nio.Channels.MulticastChannel Channel()
@@ -105,7 +105,7 @@ namespace Java.Nio.Channels
             return IExecuteWithSignature<Java.Nio.Channels.MulticastChannel>("channel", "()Ljava/nio/channels/MulticastChannel;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/channels/MembershipKey.html#drop()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/MembershipKey.html#drop()"/>
         /// </summary>
         public void Drop()
         {

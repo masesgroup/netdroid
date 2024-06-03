@@ -98,57 +98,6 @@ namespace Android.Os
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/Bundle.html#getClassLoader()"/> <see href="https://developer.android.com/reference/android/os/Bundle.html#setClassLoader(java.lang.ClassLoader)"/>
-        /// </summary>
-        public Java.Lang.ClassLoader ClassLoader
-        {
-            get { return IExecuteWithSignature<Java.Lang.ClassLoader>("getClassLoader", "()Ljava/lang/ClassLoader;"); } set { IExecuteWithSignature("setClassLoader", "(Ljava/lang/ClassLoader;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/Bundle.html#getSparseParcelableArray(java.lang.String)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <typeparam name="T"><see cref="Android.Os.IParcelable"/></typeparam>
-        /// <returns><see cref="Android.Util.SparseArray"/></returns>
-        [System.Obsolete()]
-        public Android.Util.SparseArray<T> GetSparseParcelableArray<T>(Java.Lang.String arg0) where T: Android.Os.IParcelable, new()
-        {
-            return IExecuteWithSignature<Android.Util.SparseArray<T>>("getSparseParcelableArray", "(Ljava/lang/String;)Landroid/util/SparseArray;", arg0);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/Bundle.html#getParcelableArrayList(java.lang.String)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <typeparam name="T"><see cref="Android.Os.IParcelable"/></typeparam>
-        /// <returns><see cref="Java.Util.ArrayList"/></returns>
-        [System.Obsolete()]
-        public Java.Util.ArrayList<T> GetParcelableArrayList<T>(Java.Lang.String arg0) where T: Android.Os.IParcelable, new()
-        {
-            return IExecuteWithSignature<Java.Util.ArrayList<T>>("getParcelableArrayList", "(Ljava/lang/String;)Ljava/util/ArrayList;", arg0);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/Bundle.html#getParcelable(java.lang.String)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <typeparam name="T"><see cref="Android.Os.IParcelable"/></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        [System.Obsolete()]
-        public T GetParcelable<T>(Java.Lang.String arg0) where T: Android.Os.IParcelable, new()
-        {
-            return IExecuteWithSignature<T>("getParcelable", "(Ljava/lang/String;)Landroid/os/Parcelable;", arg0);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/Bundle.html#getSerializable(java.lang.String,java.lang.Class)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="T"><see cref="Java.Io.ISerializable"/></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        public T GetSerializable<T>(Java.Lang.String arg0, Java.Lang.Class arg1) where T: Java.Io.ISerializable, new()
-        {
-            return IExecute<T>("getSerializable", arg0, arg1);
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Bundle.html#getSparseParcelableArray(java.lang.String,java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -158,6 +107,17 @@ namespace Android.Os
         public Android.Util.SparseArray<T> GetSparseParcelableArray<T>(Java.Lang.String arg0, Java.Lang.Class arg1)
         {
             return IExecute<Android.Util.SparseArray<T>>("getSparseParcelableArray", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Bundle.html#getSparseParcelableArray(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <typeparam name="T"><see cref="Android.Os.IParcelable"/></typeparam>
+        /// <returns><see cref="Android.Util.SparseArray"/></returns>
+        [global::System.Obsolete()]
+        public Android.Util.SparseArray<T> GetSparseParcelableArray<T>(Java.Lang.String arg0) where T : Android.Os.IParcelable, new()
+        {
+            return IExecute<Android.Util.SparseArray<T>>("getSparseParcelableArray", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Bundle.html#getParcelableArrayList(java.lang.String,java.lang.Class)"/>
@@ -171,6 +131,17 @@ namespace Android.Os
             return IExecute<Java.Util.ArrayList<T>>("getParcelableArrayList", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Bundle.html#getParcelableArrayList(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <typeparam name="T"><see cref="Android.Os.IParcelable"/></typeparam>
+        /// <returns><see cref="Java.Util.ArrayList"/></returns>
+        [global::System.Obsolete()]
+        public Java.Util.ArrayList<T> GetParcelableArrayList<T>(Java.Lang.String arg0) where T : Android.Os.IParcelable, new()
+        {
+            return IExecute<Java.Util.ArrayList<T>>("getParcelableArrayList", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Bundle.html#getParcelable(java.lang.String,java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -180,6 +151,28 @@ namespace Android.Os
         public T GetParcelable<T>(Java.Lang.String arg0, Java.Lang.Class arg1)
         {
             return IExecute<T>("getParcelable", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Bundle.html#getParcelable(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <typeparam name="T"><see cref="Android.Os.IParcelable"/></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
+        [global::System.Obsolete()]
+        public T GetParcelable<T>(Java.Lang.String arg0) where T : Android.Os.IParcelable, new()
+        {
+            return IExecute<T>("getParcelable", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Bundle.html#getSerializable(java.lang.String,java.lang.Class)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
+        /// <typeparam name="T"><see cref="Java.Io.ISerializable"/></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
+        public T GetSerializable<T>(Java.Lang.String arg0, Java.Lang.Class arg1) where T : Java.Io.ISerializable, new()
+        {
+            return IExecute<T>("getSerializable", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Bundle.html#getParcelableArray(java.lang.String,java.lang.Class)"/>
@@ -223,7 +216,7 @@ namespace Android.Os
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Android.Os.Parcelable"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Os.Parcelable[] GetParcelableArray(Java.Lang.String arg0)
         {
             return IExecuteWithSignatureArray<Android.Os.Parcelable>("getParcelableArray", "(Ljava/lang/String;)[Landroid/os/Parcelable;", arg0);
@@ -341,7 +334,7 @@ namespace Android.Os
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Io.Serializable"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Io.Serializable GetSerializable(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Io.Serializable>("getSerializable", "(Ljava/lang/String;)Ljava/io/Serializable;", arg0);
@@ -383,6 +376,14 @@ namespace Android.Os
         public Java.Lang.CharSequence[] GetCharSequenceArray(Java.Lang.String arg0)
         {
             return IExecuteWithSignatureArray<Java.Lang.CharSequence>("getCharSequenceArray", "(Ljava/lang/String;)[Ljava/lang/CharSequence;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Bundle.html#getClassLoader()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.ClassLoader"/></returns>
+        public Java.Lang.ClassLoader GetClassLoader()
+        {
+            return IExecuteWithSignature<Java.Lang.ClassLoader>("getClassLoader", "()Ljava/lang/ClassLoader;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Bundle.html#getCharSequenceArrayList(java.lang.String)"/>
@@ -579,7 +580,7 @@ namespace Android.Os
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Util.ArrayList"/></param>
         /// <typeparam name="Arg1ExtendsAndroid_Os_Parcelable"><see cref="Android.Os.Parcelable"/></typeparam>
-        public void PutParcelableArrayList<Arg1ExtendsAndroid_Os_Parcelable>(Java.Lang.String arg0, Java.Util.ArrayList<Arg1ExtendsAndroid_Os_Parcelable> arg1) where Arg1ExtendsAndroid_Os_Parcelable: Android.Os.Parcelable
+        public void PutParcelableArrayList<Arg1ExtendsAndroid_Os_Parcelable>(Java.Lang.String arg0, Java.Util.ArrayList<Arg1ExtendsAndroid_Os_Parcelable> arg1) where Arg1ExtendsAndroid_Os_Parcelable : Android.Os.Parcelable
         {
             IExecute("putParcelableArrayList", arg0, arg1);
         }
@@ -634,7 +635,7 @@ namespace Android.Os
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Android.Util.SparseArray"/></param>
         /// <typeparam name="Arg1ExtendsAndroid_Os_Parcelable"><see cref="Android.Os.Parcelable"/></typeparam>
-        public void PutSparseParcelableArray<Arg1ExtendsAndroid_Os_Parcelable>(Java.Lang.String arg0, Android.Util.SparseArray<Arg1ExtendsAndroid_Os_Parcelable> arg1) where Arg1ExtendsAndroid_Os_Parcelable: Android.Os.Parcelable
+        public void PutSparseParcelableArray<Arg1ExtendsAndroid_Os_Parcelable>(Java.Lang.String arg0, Android.Util.SparseArray<Arg1ExtendsAndroid_Os_Parcelable> arg1) where Arg1ExtendsAndroid_Os_Parcelable : Android.Os.Parcelable
         {
             IExecute("putSparseParcelableArray", arg0, arg1);
         }
@@ -654,6 +655,14 @@ namespace Android.Os
         public void ReadFromParcel(Android.Os.Parcel arg0)
         {
             IExecuteWithSignature("readFromParcel", "(Landroid/os/Parcel;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/Bundle.html#setClassLoader(java.lang.ClassLoader)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.ClassLoader"/></param>
+        public void SetClassLoader(Java.Lang.ClassLoader arg0)
+        {
+            IExecuteWithSignature("setClassLoader", "(Ljava/lang/ClassLoader;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/os/Bundle.html#writeToParcel(android.os.Parcel,int)"/>

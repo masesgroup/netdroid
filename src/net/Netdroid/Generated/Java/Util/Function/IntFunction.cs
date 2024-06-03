@@ -50,15 +50,15 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("apply", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(ApplyEventHandler));
+            AddEventHandler("apply", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(ApplyEventHandler));
 
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/IntFunction.html#apply(int)"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/IntFunction.html#apply(int)"/>
         /// </summary>
         /// <remarks>If <see cref="OnApply"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<int, object> OnApply { get; set; } = null;
+        public global::System.Func<int, object> OnApply { get; set; } = null;
 
         void ApplyEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
         {
@@ -68,7 +68,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/IntFunction.html#apply(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/IntFunction.html#apply(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="object"/></returns>
@@ -108,7 +108,7 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/IntFunction.html#apply(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/IntFunction.html#apply(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="object"/></returns>
@@ -129,7 +129,7 @@ namespace Java.Util.Function
 
     #region IIntFunction<R>
     /// <summary>
-    /// .NET interface for org.mases.netdroid.generated.java.util.function.IntFunction implementing <see href="https://developer.android.com/reference/java.base/java/util/function/IntFunction.html"/>
+    /// .NET interface for org.mases.netdroid.generated.java.util.function.IntFunction implementing <see href="https://developer.android.com/reference/java/util/function/IntFunction.html"/>
     /// </summary>
     public partial interface IIntFunction<R>
     {
@@ -170,15 +170,15 @@ namespace Java.Util.Function
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("apply", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(ApplyEventHandler));
+            AddEventHandler("apply", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(ApplyEventHandler));
 
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.base/java/util/function/IntFunction.html#apply(int)"/>
+        /// Handler for <see href="https://developer.android.com/reference/java/util/function/IntFunction.html#apply(int)"/>
         /// </summary>
         /// <remarks>If <see cref="OnApply"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<int, R> OnApply { get; set; } = null;
+        public global::System.Func<int, R> OnApply { get; set; } = null;
 
         void ApplyEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
         {
@@ -188,7 +188,7 @@ namespace Java.Util.Function
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/IntFunction.html#apply(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/IntFunction.html#apply(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><typeparamref name="R"/></returns>
@@ -228,7 +228,7 @@ namespace Java.Util.Function
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/function/IntFunction.html#apply(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/function/IntFunction.html#apply(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><typeparamref name="R"/></returns>

@@ -162,32 +162,28 @@ namespace Android.Icu.Lang
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/lang/UCharacter.html#getExtendedNameIterator()"/> 
+        /// <see href="https://developer.android.com/reference/android/icu/lang/UCharacter.html#getTypeIterator()"/>
         /// </summary>
-        public static Android.Icu.Util.ValueIterator ExtendedNameIterator
+        /// <returns><see cref="Android.Icu.Util.RangeValueIterator"/></returns>
+        public static Android.Icu.Util.RangeValueIterator GetTypeIterator()
         {
-            get { return SExecuteWithSignature<Android.Icu.Util.ValueIterator>(LocalBridgeClazz, "getExtendedNameIterator", "()Landroid/icu/util/ValueIterator;"); }
+            return SExecuteWithSignature<Android.Icu.Util.RangeValueIterator>(LocalBridgeClazz, "getTypeIterator", "()Landroid/icu/util/RangeValueIterator;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/lang/UCharacter.html#getNameIterator()"/> 
+        /// <see href="https://developer.android.com/reference/android/icu/lang/UCharacter.html#getExtendedNameIterator()"/>
         /// </summary>
-        public static Android.Icu.Util.ValueIterator NameIterator
+        /// <returns><see cref="Android.Icu.Util.ValueIterator"/></returns>
+        public static Android.Icu.Util.ValueIterator GetExtendedNameIterator()
         {
-            get { return SExecuteWithSignature<Android.Icu.Util.ValueIterator>(LocalBridgeClazz, "getNameIterator", "()Landroid/icu/util/ValueIterator;"); }
+            return SExecuteWithSignature<Android.Icu.Util.ValueIterator>(LocalBridgeClazz, "getExtendedNameIterator", "()Landroid/icu/util/ValueIterator;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/lang/UCharacter.html#getTypeIterator()"/> 
+        /// <see href="https://developer.android.com/reference/android/icu/lang/UCharacter.html#getNameIterator()"/>
         /// </summary>
-        public static Android.Icu.Util.RangeValueIterator TypeIterator
+        /// <returns><see cref="Android.Icu.Util.ValueIterator"/></returns>
+        public static Android.Icu.Util.ValueIterator GetNameIterator()
         {
-            get { return SExecuteWithSignature<Android.Icu.Util.RangeValueIterator>(LocalBridgeClazz, "getTypeIterator", "()Landroid/icu/util/RangeValueIterator;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/lang/UCharacter.html#getUnicodeVersion()"/> 
-        /// </summary>
-        public static Android.Icu.Util.VersionInfo UnicodeVersion
-        {
-            get { return SExecuteWithSignature<Android.Icu.Util.VersionInfo>(LocalBridgeClazz, "getUnicodeVersion", "()Landroid/icu/util/VersionInfo;"); }
+            return SExecuteWithSignature<Android.Icu.Util.ValueIterator>(LocalBridgeClazz, "getNameIterator", "()Landroid/icu/util/ValueIterator;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/lang/UCharacter.html#getAge(int)"/>
@@ -197,6 +193,14 @@ namespace Android.Icu.Lang
         public static Android.Icu.Util.VersionInfo GetAge(int arg0)
         {
             return SExecuteWithSignature<Android.Icu.Util.VersionInfo>(LocalBridgeClazz, "getAge", "(I)Landroid/icu/util/VersionInfo;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/lang/UCharacter.html#getUnicodeVersion()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Icu.Util.VersionInfo"/></returns>
+        public static Android.Icu.Util.VersionInfo GetUnicodeVersion()
+        {
+            return SExecuteWithSignature<Android.Icu.Util.VersionInfo>(LocalBridgeClazz, "getUnicodeVersion", "()Landroid/icu/util/VersionInfo;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/lang/UCharacter.html#hasBinaryProperty(int,int)"/>
@@ -7200,11 +7204,12 @@ namespace Android.Icu.Lang
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/icu/lang/UCharacter.UnicodeBlock.html#getID()"/> 
+            /// <see href="https://developer.android.com/reference/android/icu/lang/UCharacter.UnicodeBlock.html#getID()"/>
             /// </summary>
-            public int ID
+            /// <returns><see cref="int"/></returns>
+            public int GetID()
             {
-                get { return IExecuteWithSignature<int>("getID", "()I"); }
+                return IExecuteWithSignature<int>("getID", "()I");
             }
 
             #endregion

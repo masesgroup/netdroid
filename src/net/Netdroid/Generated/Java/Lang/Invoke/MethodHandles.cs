@@ -42,45 +42,18 @@ namespace Java.Lang.Invoke
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.html#reflectAs(java.lang.Class,java.lang.invoke.MethodHandle)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.html#reflectAs(java.lang.Class,java.lang.invoke.MethodHandle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
         /// <typeparam name="T"><see cref="Java.Lang.Reflect.IMember"/></typeparam>
         /// <returns><typeparamref name="T"/></returns>
-        public static T ReflectAs<T>(Java.Lang.Class arg0, Java.Lang.Invoke.MethodHandle arg1) where T: Java.Lang.Reflect.IMember, new()
+        public static T ReflectAs<T>(Java.Lang.Class arg0, Java.Lang.Invoke.MethodHandle arg1) where T : Java.Lang.Reflect.IMember, new()
         {
             return SExecute<T>(LocalBridgeClazz, "reflectAs", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.html#classData(java.lang.invoke.MethodHandles.Lookup,java.lang.String,java.lang.Class)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandles.Lookup"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.Class"/></param>
-        /// <typeparam name="T"></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        /// <exception cref="Java.Lang.IllegalAccessException"/>
-        public static T ClassData<T>(Java.Lang.Invoke.MethodHandles.Lookup arg0, Java.Lang.String arg1, Java.Lang.Class arg2)
-        {
-            return SExecute<T>(LocalBridgeClazz, "classData", arg0, arg1, arg2);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.html#classDataAt(java.lang.invoke.MethodHandles.Lookup,java.lang.String,java.lang.Class,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandles.Lookup"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg2"><see cref="Java.Lang.Class"/></param>
-        /// <param name="arg3"><see cref="int"/></param>
-        /// <typeparam name="T"></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        /// <exception cref="Java.Lang.IllegalAccessException"/>
-        public static T ClassDataAt<T>(Java.Lang.Invoke.MethodHandles.Lookup arg0, Java.Lang.String arg1, Java.Lang.Class arg2, int arg3)
-        {
-            return SExecute<T>(LocalBridgeClazz, "classDataAt", arg0, arg1, arg2, arg3);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.html#arrayConstructor(java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.html#arrayConstructor(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
@@ -90,7 +63,7 @@ namespace Java.Lang.Invoke
             return SExecuteWithSignature<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "arrayConstructor", "(Ljava/lang/Class;)Ljava/lang/invoke/MethodHandle;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.html#arrayElementGetter(java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.html#arrayElementGetter(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
@@ -100,7 +73,7 @@ namespace Java.Lang.Invoke
             return SExecuteWithSignature<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "arrayElementGetter", "(Ljava/lang/Class;)Ljava/lang/invoke/MethodHandle;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.html#arrayElementSetter(java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.html#arrayElementSetter(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
@@ -110,7 +83,7 @@ namespace Java.Lang.Invoke
             return SExecuteWithSignature<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "arrayElementSetter", "(Ljava/lang/Class;)Ljava/lang/invoke/MethodHandle;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.html#arrayLength(java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.html#arrayLength(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
@@ -120,7 +93,7 @@ namespace Java.Lang.Invoke
             return SExecuteWithSignature<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "arrayLength", "(Ljava/lang/Class;)Ljava/lang/invoke/MethodHandle;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.html#catchException(java.lang.invoke.MethodHandle,java.lang.Class,java.lang.invoke.MethodHandle)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.html#catchException(java.lang.invoke.MethodHandle,java.lang.Class,java.lang.invoke.MethodHandle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
@@ -131,7 +104,7 @@ namespace Java.Lang.Invoke
             return SExecute<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "catchException", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.html#collectArguments(java.lang.invoke.MethodHandle,int,java.lang.invoke.MethodHandle)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.html#collectArguments(java.lang.invoke.MethodHandle,int,java.lang.invoke.MethodHandle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -142,7 +115,7 @@ namespace Java.Lang.Invoke
             return SExecute<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "collectArguments", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.html#constant(java.lang.Class,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.html#constant(java.lang.Class,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -152,7 +125,7 @@ namespace Java.Lang.Invoke
             return SExecute<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "constant", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.html#countedLoop(java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.html#countedLoop(java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
@@ -164,7 +137,7 @@ namespace Java.Lang.Invoke
             return SExecute<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "countedLoop", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.html#countedLoop(java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.html#countedLoop(java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
@@ -175,7 +148,7 @@ namespace Java.Lang.Invoke
             return SExecute<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "countedLoop", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.html#doWhileLoop(java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.html#doWhileLoop(java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
@@ -186,7 +159,7 @@ namespace Java.Lang.Invoke
             return SExecute<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "doWhileLoop", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.html#dropArguments(java.lang.invoke.MethodHandle,int,java.lang.Class[])"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.html#dropArguments(java.lang.invoke.MethodHandle,int,java.lang.Class[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -197,7 +170,7 @@ namespace Java.Lang.Invoke
             if (arg2.Length == 0) return SExecute<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "dropArguments", arg0, arg1); else return SExecute<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "dropArguments", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.html#dropArguments(java.lang.invoke.MethodHandle,int,java.util.List)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.html#dropArguments(java.lang.invoke.MethodHandle,int,java.util.List)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -208,7 +181,7 @@ namespace Java.Lang.Invoke
             return SExecute<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "dropArguments", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.html#dropArgumentsToMatch(java.lang.invoke.MethodHandle,int,java.util.List,int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.html#dropArgumentsToMatch(java.lang.invoke.MethodHandle,int,java.util.List,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -220,16 +193,7 @@ namespace Java.Lang.Invoke
             return SExecute<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "dropArgumentsToMatch", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.html#dropReturn(java.lang.invoke.MethodHandle)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
-        /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
-        public static Java.Lang.Invoke.MethodHandle DropReturn(Java.Lang.Invoke.MethodHandle arg0)
-        {
-            return SExecuteWithSignature<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "dropReturn", "(Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/MethodHandle;", arg0);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.html#empty(java.lang.invoke.MethodType)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.html#empty(java.lang.invoke.MethodType)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodType"/></param>
         /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
@@ -238,7 +202,7 @@ namespace Java.Lang.Invoke
             return SExecuteWithSignature<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "empty", "(Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/MethodHandle;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.html#exactInvoker(java.lang.invoke.MethodType)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.html#exactInvoker(java.lang.invoke.MethodType)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodType"/></param>
         /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
@@ -247,7 +211,7 @@ namespace Java.Lang.Invoke
             return SExecuteWithSignature<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "exactInvoker", "(Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/MethodHandle;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.html#explicitCastArguments(java.lang.invoke.MethodHandle,java.lang.invoke.MethodType)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.html#explicitCastArguments(java.lang.invoke.MethodHandle,java.lang.invoke.MethodType)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Invoke.MethodType"/></param>
@@ -257,7 +221,7 @@ namespace Java.Lang.Invoke
             return SExecute<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "explicitCastArguments", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.html#filterArguments(java.lang.invoke.MethodHandle,int,java.lang.invoke.MethodHandle[])"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.html#filterArguments(java.lang.invoke.MethodHandle,int,java.lang.invoke.MethodHandle[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -268,7 +232,7 @@ namespace Java.Lang.Invoke
             if (arg2.Length == 0) return SExecute<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "filterArguments", arg0, arg1); else return SExecute<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "filterArguments", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.html#filterReturnValue(java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.html#filterReturnValue(java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
@@ -278,7 +242,7 @@ namespace Java.Lang.Invoke
             return SExecute<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "filterReturnValue", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.html#foldArguments(java.lang.invoke.MethodHandle,int,java.lang.invoke.MethodHandle)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.html#foldArguments(java.lang.invoke.MethodHandle,int,java.lang.invoke.MethodHandle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -289,7 +253,7 @@ namespace Java.Lang.Invoke
             return SExecute<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "foldArguments", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.html#foldArguments(java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.html#foldArguments(java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
@@ -299,7 +263,7 @@ namespace Java.Lang.Invoke
             return SExecute<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "foldArguments", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.html#guardWithTest(java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.html#guardWithTest(java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
@@ -310,7 +274,7 @@ namespace Java.Lang.Invoke
             return SExecute<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "guardWithTest", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.html#identity(java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.html#identity(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
@@ -319,7 +283,7 @@ namespace Java.Lang.Invoke
             return SExecuteWithSignature<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "identity", "(Ljava/lang/Class;)Ljava/lang/invoke/MethodHandle;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.html#insertArguments(java.lang.invoke.MethodHandle,int,java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.html#insertArguments(java.lang.invoke.MethodHandle,int,java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -330,7 +294,7 @@ namespace Java.Lang.Invoke
             if (arg2.Length == 0) return SExecute<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "insertArguments", arg0, arg1); else return SExecute<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "insertArguments", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.html#invoker(java.lang.invoke.MethodType)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.html#invoker(java.lang.invoke.MethodType)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodType"/></param>
         /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
@@ -339,7 +303,7 @@ namespace Java.Lang.Invoke
             return SExecuteWithSignature<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "invoker", "(Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/MethodHandle;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.html#iteratedLoop(java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.html#iteratedLoop(java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
@@ -350,7 +314,7 @@ namespace Java.Lang.Invoke
             return SExecute<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "iteratedLoop", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.html#loop(java.lang.invoke.MethodHandle[][])"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.html#loop(java.lang.invoke.MethodHandle[][])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
         /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
@@ -359,7 +323,7 @@ namespace Java.Lang.Invoke
             if (arg0.Length == 0) return SExecuteWithSignature<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "loop", "([[Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/MethodHandle;"); else return SExecuteWithSignature<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "loop", "([[Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/MethodHandle;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.html#permuteArguments(java.lang.invoke.MethodHandle,java.lang.invoke.MethodType,int[])"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.html#permuteArguments(java.lang.invoke.MethodHandle,java.lang.invoke.MethodType,int[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Invoke.MethodType"/></param>
@@ -370,7 +334,7 @@ namespace Java.Lang.Invoke
             if (arg2.Length == 0) return SExecute<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "permuteArguments", arg0, arg1); else return SExecute<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "permuteArguments", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.html#spreadInvoker(java.lang.invoke.MethodType,int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.html#spreadInvoker(java.lang.invoke.MethodType,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodType"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -380,17 +344,7 @@ namespace Java.Lang.Invoke
             return SExecute<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "spreadInvoker", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.html#tableSwitch(java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle[])"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
-        /// <param name="arg1"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
-        /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
-        public static Java.Lang.Invoke.MethodHandle TableSwitch(Java.Lang.Invoke.MethodHandle arg0, params Java.Lang.Invoke.MethodHandle[] arg1)
-        {
-            if (arg1.Length == 0) return SExecute<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "tableSwitch", arg0); else return SExecute<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "tableSwitch", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.html#throwException(java.lang.Class,java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.html#throwException(java.lang.Class,java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
@@ -400,7 +354,7 @@ namespace Java.Lang.Invoke
             return SExecute<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "throwException", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.html#tryFinally(java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.html#tryFinally(java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
@@ -410,7 +364,7 @@ namespace Java.Lang.Invoke
             return SExecute<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "tryFinally", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.html#varHandleExactInvoker(java.lang.invoke.VarHandle.AccessMode,java.lang.invoke.MethodType)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.html#varHandleExactInvoker(java.lang.invoke.VarHandle.AccessMode,java.lang.invoke.MethodType)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Invoke.VarHandle.AccessMode"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Invoke.MethodType"/></param>
@@ -420,7 +374,7 @@ namespace Java.Lang.Invoke
             return SExecute<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "varHandleExactInvoker", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.html#varHandleInvoker(java.lang.invoke.VarHandle.AccessMode,java.lang.invoke.MethodType)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.html#varHandleInvoker(java.lang.invoke.VarHandle.AccessMode,java.lang.invoke.MethodType)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Invoke.VarHandle.AccessMode"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Invoke.MethodType"/></param>
@@ -430,7 +384,7 @@ namespace Java.Lang.Invoke
             return SExecute<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "varHandleInvoker", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.html#whileLoop(java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.html#whileLoop(java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle,java.lang.invoke.MethodHandle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
@@ -441,7 +395,7 @@ namespace Java.Lang.Invoke
             return SExecute<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "whileLoop", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.html#zero(java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.html#zero(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
@@ -450,7 +404,7 @@ namespace Java.Lang.Invoke
             return SExecuteWithSignature<Java.Lang.Invoke.MethodHandle>(LocalBridgeClazz, "zero", "(Ljava/lang/Class;)Ljava/lang/invoke/MethodHandle;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.html#lookup()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.html#lookup()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.Invoke.MethodHandles.Lookup"/></returns>
         public static Java.Lang.Invoke.MethodHandles.Lookup LookupMethod()
@@ -458,7 +412,7 @@ namespace Java.Lang.Invoke
             return SExecuteWithSignature<Java.Lang.Invoke.MethodHandles.Lookup>(LocalBridgeClazz, "lookup", "()Ljava/lang/invoke/MethodHandles$Lookup;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.html#privateLookupIn(java.lang.Class,java.lang.invoke.MethodHandles.Lookup)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.html#privateLookupIn(java.lang.Class,java.lang.invoke.MethodHandles.Lookup)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg1"><see cref="Java.Lang.Invoke.MethodHandles.Lookup"/></param>
@@ -469,7 +423,7 @@ namespace Java.Lang.Invoke
             return SExecute<Java.Lang.Invoke.MethodHandles.Lookup>(LocalBridgeClazz, "privateLookupIn", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.html#publicLookup()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.html#publicLookup()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.Invoke.MethodHandles.Lookup"/></returns>
         public static Java.Lang.Invoke.MethodHandles.Lookup PublicLookup()
@@ -477,7 +431,7 @@ namespace Java.Lang.Invoke
             return SExecuteWithSignature<Java.Lang.Invoke.MethodHandles.Lookup>(LocalBridgeClazz, "publicLookup", "()Ljava/lang/invoke/MethodHandles$Lookup;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.html#arrayElementVarHandle(java.lang.Class)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.html#arrayElementVarHandle(java.lang.Class)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <returns><see cref="Java.Lang.Invoke.VarHandle"/></returns>
@@ -487,7 +441,7 @@ namespace Java.Lang.Invoke
             return SExecuteWithSignature<Java.Lang.Invoke.VarHandle>(LocalBridgeClazz, "arrayElementVarHandle", "(Ljava/lang/Class;)Ljava/lang/invoke/VarHandle;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.html#byteArrayViewVarHandle(java.lang.Class,java.nio.ByteOrder)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.html#byteArrayViewVarHandle(java.lang.Class,java.nio.ByteOrder)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg1"><see cref="Java.Nio.ByteOrder"/></param>
@@ -498,7 +452,7 @@ namespace Java.Lang.Invoke
             return SExecute<Java.Lang.Invoke.VarHandle>(LocalBridgeClazz, "byteArrayViewVarHandle", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.html#byteBufferViewVarHandle(java.lang.Class,java.nio.ByteOrder)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.html#byteBufferViewVarHandle(java.lang.Class,java.nio.ByteOrder)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg1"><see cref="Java.Nio.ByteOrder"/></param>
@@ -529,43 +483,37 @@ namespace Java.Lang.Invoke
 
             #region Fields
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.Lookup.html#MODULE"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.Lookup.html#MODULE"/>
             /// </summary>
             public static int MODULE { get { if (!_MODULEReady) { _MODULEContent = SGetField<int>(LocalBridgeClazz, "MODULE"); _MODULEReady = true; } return _MODULEContent; } }
             private static int _MODULEContent = default;
             private static bool _MODULEReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.Lookup.html#ORIGINAL"/>
-            /// </summary>
-            public static int ORIGINAL { get { if (!_ORIGINALReady) { _ORIGINALContent = SGetField<int>(LocalBridgeClazz, "ORIGINAL"); _ORIGINALReady = true; } return _ORIGINALContent; } }
-            private static int _ORIGINALContent = default;
-            private static bool _ORIGINALReady = false; // this is used because in case of generics 
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.Lookup.html#PACKAGE"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.Lookup.html#PACKAGE"/>
             /// </summary>
             public static int PACKAGE { get { if (!_PACKAGEReady) { _PACKAGEContent = SGetField<int>(LocalBridgeClazz, "PACKAGE"); _PACKAGEReady = true; } return _PACKAGEContent; } }
             private static int _PACKAGEContent = default;
             private static bool _PACKAGEReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.Lookup.html#PRIVATE"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.Lookup.html#PRIVATE"/>
             /// </summary>
             public static int PRIVATE { get { if (!_PRIVATEReady) { _PRIVATEContent = SGetField<int>(LocalBridgeClazz, "PRIVATE"); _PRIVATEReady = true; } return _PRIVATEContent; } }
             private static int _PRIVATEContent = default;
             private static bool _PRIVATEReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.Lookup.html#PROTECTED"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.Lookup.html#PROTECTED"/>
             /// </summary>
             public static int PROTECTED { get { if (!_PROTECTEDReady) { _PROTECTEDContent = SGetField<int>(LocalBridgeClazz, "PROTECTED"); _PROTECTEDReady = true; } return _PROTECTEDContent; } }
             private static int _PROTECTEDContent = default;
             private static bool _PROTECTEDReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.Lookup.html#PUBLIC"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.Lookup.html#PUBLIC"/>
             /// </summary>
             public static int PUBLIC { get { if (!_PUBLICReady) { _PUBLICContent = SGetField<int>(LocalBridgeClazz, "PUBLIC"); _PUBLICReady = true; } return _PUBLICContent; } }
             private static int _PUBLICContent = default;
             private static bool _PUBLICReady = false; // this is used because in case of generics 
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.Lookup.html#UNCONDITIONAL"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.Lookup.html#UNCONDITIONAL"/>
             /// </summary>
             public static int UNCONDITIONAL { get { if (!_UNCONDITIONALReady) { _UNCONDITIONALContent = SGetField<int>(LocalBridgeClazz, "UNCONDITIONAL"); _UNCONDITIONALReady = true; } return _UNCONDITIONALContent; } }
             private static int _UNCONDITIONALContent = default;
@@ -579,24 +527,15 @@ namespace Java.Lang.Invoke
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.Lookup.html#hasFullPrivilegeAccess()"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.Lookup.html#hasPrivateAccess()"/>
             /// </summary>
             /// <returns><see cref="bool"/></returns>
-            public bool HasFullPrivilegeAccess()
-            {
-                return IExecuteWithSignature<bool>("hasFullPrivilegeAccess", "()Z");
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.Lookup.html#hasPrivateAccess()"/>
-            /// </summary>
-            /// <returns><see cref="bool"/></returns>
-            [System.Obsolete()]
             public bool HasPrivateAccess()
             {
                 return IExecuteWithSignature<bool>("hasPrivateAccess", "()Z");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.Lookup.html#lookupModes()"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.Lookup.html#lookupModes()"/>
             /// </summary>
             /// <returns><see cref="int"/></returns>
             public int LookupModes()
@@ -604,17 +543,17 @@ namespace Java.Lang.Invoke
                 return IExecuteWithSignature<int>("lookupModes", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.Lookup.html#accessClass(java.lang.Class)"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.Lookup.html#accessClass(java.lang.Class)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
             /// <returns><see cref="Java.Lang.Class"/></returns>
             /// <exception cref="Java.Lang.IllegalAccessException"/>
             public Java.Lang.Class AccessClass(Java.Lang.Class arg0)
             {
-                return IExecuteWithSignature<Java.Lang.Class>("accessClass", "(Ljava/lang/Class;)Ljava/lang/Class;", arg0);
+                return IExecute<Java.Lang.Class>("accessClass", arg0);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.Lookup.html#defineClass(byte[])"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.Lookup.html#defineClass(byte[])"/>
             /// </summary>
             /// <param name="arg0"><see cref="byte"/></param>
             /// <returns><see cref="Java.Lang.Class"/></returns>
@@ -624,17 +563,7 @@ namespace Java.Lang.Invoke
                 return IExecuteWithSignature<Java.Lang.Class>("defineClass", "([B)Ljava/lang/Class;", new object[] { arg0 });
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.Lookup.html#ensureInitialized(java.lang.Class)"/>
-            /// </summary>
-            /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
-            /// <returns><see cref="Java.Lang.Class"/></returns>
-            /// <exception cref="Java.Lang.IllegalAccessException"/>
-            public Java.Lang.Class EnsureInitialized(Java.Lang.Class arg0)
-            {
-                return IExecuteWithSignature<Java.Lang.Class>("ensureInitialized", "(Ljava/lang/Class;)Ljava/lang/Class;", arg0);
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.Lookup.html#findClass(java.lang.String)"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.Lookup.html#findClass(java.lang.String)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.String"/></param>
             /// <returns><see cref="Java.Lang.Class"/></returns>
@@ -645,7 +574,7 @@ namespace Java.Lang.Invoke
                 return IExecuteWithSignature<Java.Lang.Class>("findClass", "(Ljava/lang/String;)Ljava/lang/Class;", arg0);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.Lookup.html#lookupClass()"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.Lookup.html#lookupClass()"/>
             /// </summary>
             /// <returns><see cref="Java.Lang.Class"/></returns>
             public Java.Lang.Class LookupClass()
@@ -653,15 +582,7 @@ namespace Java.Lang.Invoke
                 return IExecuteWithSignature<Java.Lang.Class>("lookupClass", "()Ljava/lang/Class;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.Lookup.html#previousLookupClass()"/>
-            /// </summary>
-            /// <returns><see cref="Java.Lang.Class"/></returns>
-            public Java.Lang.Class PreviousLookupClass()
-            {
-                return IExecuteWithSignature<Java.Lang.Class>("previousLookupClass", "()Ljava/lang/Class;");
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.Lookup.html#bind(java.lang.Object,java.lang.String,java.lang.invoke.MethodType)"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.Lookup.html#bind(java.lang.Object,java.lang.String,java.lang.invoke.MethodType)"/>
             /// </summary>
             /// <param name="arg0"><see cref="object"/></param>
             /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -674,7 +595,7 @@ namespace Java.Lang.Invoke
                 return IExecute<Java.Lang.Invoke.MethodHandle>("bind", arg0, arg1, arg2);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.Lookup.html#findConstructor(java.lang.Class,java.lang.invoke.MethodType)"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.Lookup.html#findConstructor(java.lang.Class,java.lang.invoke.MethodType)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
             /// <param name="arg1"><see cref="Java.Lang.Invoke.MethodType"/></param>
@@ -686,7 +607,7 @@ namespace Java.Lang.Invoke
                 return IExecute<Java.Lang.Invoke.MethodHandle>("findConstructor", arg0, arg1);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.Lookup.html#findGetter(java.lang.Class,java.lang.String,java.lang.Class)"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.Lookup.html#findGetter(java.lang.Class,java.lang.String,java.lang.Class)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
             /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -699,7 +620,7 @@ namespace Java.Lang.Invoke
                 return IExecute<Java.Lang.Invoke.MethodHandle>("findGetter", arg0, arg1, arg2);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.Lookup.html#findSetter(java.lang.Class,java.lang.String,java.lang.Class)"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.Lookup.html#findSetter(java.lang.Class,java.lang.String,java.lang.Class)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
             /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -712,7 +633,7 @@ namespace Java.Lang.Invoke
                 return IExecute<Java.Lang.Invoke.MethodHandle>("findSetter", arg0, arg1, arg2);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.Lookup.html#findSpecial(java.lang.Class,java.lang.String,java.lang.invoke.MethodType,java.lang.Class)"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.Lookup.html#findSpecial(java.lang.Class,java.lang.String,java.lang.invoke.MethodType,java.lang.Class)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
             /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -726,7 +647,7 @@ namespace Java.Lang.Invoke
                 return IExecute<Java.Lang.Invoke.MethodHandle>("findSpecial", arg0, arg1, arg2, arg3);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.Lookup.html#findStatic(java.lang.Class,java.lang.String,java.lang.invoke.MethodType)"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.Lookup.html#findStatic(java.lang.Class,java.lang.String,java.lang.invoke.MethodType)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
             /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -739,7 +660,7 @@ namespace Java.Lang.Invoke
                 return IExecute<Java.Lang.Invoke.MethodHandle>("findStatic", arg0, arg1, arg2);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.Lookup.html#findStaticGetter(java.lang.Class,java.lang.String,java.lang.Class)"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.Lookup.html#findStaticGetter(java.lang.Class,java.lang.String,java.lang.Class)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
             /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -752,7 +673,7 @@ namespace Java.Lang.Invoke
                 return IExecute<Java.Lang.Invoke.MethodHandle>("findStaticGetter", arg0, arg1, arg2);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.Lookup.html#findStaticSetter(java.lang.Class,java.lang.String,java.lang.Class)"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.Lookup.html#findStaticSetter(java.lang.Class,java.lang.String,java.lang.Class)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
             /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -765,7 +686,7 @@ namespace Java.Lang.Invoke
                 return IExecute<Java.Lang.Invoke.MethodHandle>("findStaticSetter", arg0, arg1, arg2);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.Lookup.html#findVirtual(java.lang.Class,java.lang.String,java.lang.invoke.MethodType)"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.Lookup.html#findVirtual(java.lang.Class,java.lang.String,java.lang.invoke.MethodType)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
             /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -778,7 +699,7 @@ namespace Java.Lang.Invoke
                 return IExecute<Java.Lang.Invoke.MethodHandle>("findVirtual", arg0, arg1, arg2);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.Lookup.html#unreflect(java.lang.reflect.Method)"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.Lookup.html#unreflect(java.lang.reflect.Method)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.Reflect.Method"/></param>
             /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
@@ -788,7 +709,7 @@ namespace Java.Lang.Invoke
                 return IExecuteWithSignature<Java.Lang.Invoke.MethodHandle>("unreflect", "(Ljava/lang/reflect/Method;)Ljava/lang/invoke/MethodHandle;", arg0);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.Lookup.html#unreflectConstructor(java.lang.reflect.Constructor)"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.Lookup.html#unreflectConstructor(java.lang.reflect.Constructor)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.Reflect.Constructor"/></param>
             /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
@@ -798,7 +719,7 @@ namespace Java.Lang.Invoke
                 return IExecuteWithSignature<Java.Lang.Invoke.MethodHandle>("unreflectConstructor", "(Ljava/lang/reflect/Constructor;)Ljava/lang/invoke/MethodHandle;", arg0);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.Lookup.html#unreflectGetter(java.lang.reflect.Field)"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.Lookup.html#unreflectGetter(java.lang.reflect.Field)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.Reflect.Field"/></param>
             /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
@@ -808,7 +729,7 @@ namespace Java.Lang.Invoke
                 return IExecuteWithSignature<Java.Lang.Invoke.MethodHandle>("unreflectGetter", "(Ljava/lang/reflect/Field;)Ljava/lang/invoke/MethodHandle;", arg0);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.Lookup.html#unreflectSetter(java.lang.reflect.Field)"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.Lookup.html#unreflectSetter(java.lang.reflect.Field)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.Reflect.Field"/></param>
             /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
@@ -818,7 +739,7 @@ namespace Java.Lang.Invoke
                 return IExecuteWithSignature<Java.Lang.Invoke.MethodHandle>("unreflectSetter", "(Ljava/lang/reflect/Field;)Ljava/lang/invoke/MethodHandle;", arg0);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.Lookup.html#unreflectSpecial(java.lang.reflect.Method,java.lang.Class)"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.Lookup.html#unreflectSpecial(java.lang.reflect.Method,java.lang.Class)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.Reflect.Method"/></param>
             /// <param name="arg1"><see cref="Java.Lang.Class"/></param>
@@ -829,7 +750,7 @@ namespace Java.Lang.Invoke
                 return IExecute<Java.Lang.Invoke.MethodHandle>("unreflectSpecial", arg0, arg1);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.Lookup.html#revealDirect(java.lang.invoke.MethodHandle)"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.Lookup.html#revealDirect(java.lang.invoke.MethodHandle)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandle"/></param>
             /// <returns><see cref="Java.Lang.Invoke.MethodHandleInfo"/></returns>
@@ -838,32 +759,7 @@ namespace Java.Lang.Invoke
                 return IExecuteWithSignature<Java.Lang.Invoke.MethodHandleInfo>("revealDirect", "(Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/MethodHandleInfo;", arg0);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.Lookup.html#defineHiddenClass(byte[],boolean,java.lang.invoke.MethodHandles.Lookup.ClassOption[])"/>
-            /// </summary>
-            /// <param name="arg0"><see cref="byte"/></param>
-            /// <param name="arg1"><see cref="bool"/></param>
-            /// <param name="arg2"><see cref="Java.Lang.Invoke.MethodHandles.Lookup.ClassOption"/></param>
-            /// <returns><see cref="Java.Lang.Invoke.MethodHandles.Lookup"/></returns>
-            /// <exception cref="Java.Lang.IllegalAccessException"/>
-            public Java.Lang.Invoke.MethodHandles.Lookup DefineHiddenClass(byte[] arg0, bool arg1, params Java.Lang.Invoke.MethodHandles.Lookup.ClassOption[] arg2)
-            {
-                if (arg2.Length == 0) return IExecute<Java.Lang.Invoke.MethodHandles.Lookup>("defineHiddenClass", arg0, arg1); else return IExecute<Java.Lang.Invoke.MethodHandles.Lookup>("defineHiddenClass", arg0, arg1, arg2);
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.Lookup.html#defineHiddenClassWithClassData(byte[],java.lang.Object,boolean,java.lang.invoke.MethodHandles.Lookup.ClassOption[])"/>
-            /// </summary>
-            /// <param name="arg0"><see cref="byte"/></param>
-            /// <param name="arg1"><see cref="object"/></param>
-            /// <param name="arg2"><see cref="bool"/></param>
-            /// <param name="arg3"><see cref="Java.Lang.Invoke.MethodHandles.Lookup.ClassOption"/></param>
-            /// <returns><see cref="Java.Lang.Invoke.MethodHandles.Lookup"/></returns>
-            /// <exception cref="Java.Lang.IllegalAccessException"/>
-            public Java.Lang.Invoke.MethodHandles.Lookup DefineHiddenClassWithClassData(byte[] arg0, object arg1, bool arg2, params Java.Lang.Invoke.MethodHandles.Lookup.ClassOption[] arg3)
-            {
-                if (arg3.Length == 0) return IExecute<Java.Lang.Invoke.MethodHandles.Lookup>("defineHiddenClassWithClassData", arg0, arg1, arg2); else return IExecute<Java.Lang.Invoke.MethodHandles.Lookup>("defineHiddenClassWithClassData", arg0, arg1, arg2, arg3);
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.Lookup.html#dropLookupMode(int)"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.Lookup.html#dropLookupMode(int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
             /// <returns><see cref="Java.Lang.Invoke.MethodHandles.Lookup"/></returns>
@@ -872,7 +768,7 @@ namespace Java.Lang.Invoke
                 return IExecuteWithSignature<Java.Lang.Invoke.MethodHandles.Lookup>("dropLookupMode", "(I)Ljava/lang/invoke/MethodHandles$Lookup;", arg0);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.Lookup.html#in(java.lang.Class)"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.Lookup.html#in(java.lang.Class)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
             /// <returns><see cref="Java.Lang.Invoke.MethodHandles.Lookup"/></returns>
@@ -881,7 +777,7 @@ namespace Java.Lang.Invoke
                 return IExecuteWithSignature<Java.Lang.Invoke.MethodHandles.Lookup>("in", "(Ljava/lang/Class;)Ljava/lang/invoke/MethodHandles$Lookup;", arg0);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.Lookup.html#findStaticVarHandle(java.lang.Class,java.lang.String,java.lang.Class)"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.Lookup.html#findStaticVarHandle(java.lang.Class,java.lang.String,java.lang.Class)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
             /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -894,7 +790,7 @@ namespace Java.Lang.Invoke
                 return IExecute<Java.Lang.Invoke.VarHandle>("findStaticVarHandle", arg0, arg1, arg2);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.Lookup.html#findVarHandle(java.lang.Class,java.lang.String,java.lang.Class)"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.Lookup.html#findVarHandle(java.lang.Class,java.lang.String,java.lang.Class)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
             /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -907,7 +803,7 @@ namespace Java.Lang.Invoke
                 return IExecute<Java.Lang.Invoke.VarHandle>("findVarHandle", arg0, arg1, arg2);
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.Lookup.html#unreflectVarHandle(java.lang.reflect.Field)"/>
+            /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodHandles.Lookup.html#unreflectVarHandle(java.lang.reflect.Field)"/>
             /// </summary>
             /// <param name="arg0"><see cref="Java.Lang.Reflect.Field"/></param>
             /// <returns><see cref="Java.Lang.Invoke.VarHandle"/></returns>
@@ -920,67 +816,7 @@ namespace Java.Lang.Invoke
             #endregion
 
             #region Nested classes
-            #region ClassOption
-            public partial class ClassOption
-            {
-                #region Constructors
 
-                #endregion
-
-                #region Class/Interface conversion operators
-
-                #endregion
-
-                #region Fields
-                /// <summary>
-                /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.Lookup.ClassOption.html#NESTMATE"/>
-                /// </summary>
-                public static Java.Lang.Invoke.MethodHandles.Lookup.ClassOption NESTMATE { get { if (!_NESTMATEReady) { _NESTMATEContent = SGetField<Java.Lang.Invoke.MethodHandles.Lookup.ClassOption>(LocalBridgeClazz, "NESTMATE"); _NESTMATEReady = true; } return _NESTMATEContent; } }
-                private static Java.Lang.Invoke.MethodHandles.Lookup.ClassOption _NESTMATEContent = default;
-                private static bool _NESTMATEReady = false; // this is used because in case of generics 
-                /// <summary>
-                /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.Lookup.ClassOption.html#STRONG"/>
-                /// </summary>
-                public static Java.Lang.Invoke.MethodHandles.Lookup.ClassOption STRONG { get { if (!_STRONGReady) { _STRONGContent = SGetField<Java.Lang.Invoke.MethodHandles.Lookup.ClassOption>(LocalBridgeClazz, "STRONG"); _STRONGReady = true; } return _STRONGContent; } }
-                private static Java.Lang.Invoke.MethodHandles.Lookup.ClassOption _STRONGContent = default;
-                private static bool _STRONGReady = false; // this is used because in case of generics 
-
-                #endregion
-
-                #region Static methods
-                /// <summary>
-                /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.Lookup.ClassOption.html#valueOf(java.lang.String)"/>
-                /// </summary>
-                /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-                /// <returns><see cref="Java.Lang.Invoke.MethodHandles.Lookup.ClassOption"/></returns>
-                public static Java.Lang.Invoke.MethodHandles.Lookup.ClassOption ValueOf(Java.Lang.String arg0)
-                {
-                    return SExecuteWithSignature<Java.Lang.Invoke.MethodHandles.Lookup.ClassOption>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/lang/invoke/MethodHandles$Lookup$ClassOption;", arg0);
-                }
-                /// <summary>
-                /// <see href="https://developer.android.com/reference/java.base/java/lang/invoke/MethodHandles.Lookup.ClassOption.html#values()"/>
-                /// </summary>
-                /// <returns><see cref="Java.Lang.Invoke.MethodHandles.Lookup.ClassOption"/></returns>
-                public static Java.Lang.Invoke.MethodHandles.Lookup.ClassOption[] Values()
-                {
-                    return SExecuteWithSignatureArray<Java.Lang.Invoke.MethodHandles.Lookup.ClassOption>(LocalBridgeClazz, "values", "()[Ljava/lang/invoke/MethodHandles$Lookup$ClassOption;");
-                }
-
-                #endregion
-
-                #region Instance methods
-
-                #endregion
-
-                #region Nested classes
-
-                #endregion
-
-                // TODO: complete the class
-            }
-            #endregion
-
-        
             #endregion
 
             // TODO: complete the class

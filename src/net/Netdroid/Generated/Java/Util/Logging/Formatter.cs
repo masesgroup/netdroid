@@ -46,7 +46,7 @@ namespace Java.Util.Logging
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/Formatter.html#format(java.util.logging.LogRecord)"/>
+        /// <see href="https://developer.android.com/reference/java/util/logging/Formatter.html#format(java.util.logging.LogRecord)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Logging.LogRecord"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -55,7 +55,7 @@ namespace Java.Util.Logging
             return IExecuteWithSignature<Java.Lang.String>("format", "(Ljava/util/logging/LogRecord;)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/Formatter.html#formatMessage(java.util.logging.LogRecord)"/>
+        /// <see href="https://developer.android.com/reference/java/util/logging/Formatter.html#formatMessage(java.util.logging.LogRecord)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Logging.LogRecord"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -64,7 +64,7 @@ namespace Java.Util.Logging
             return IExecuteWithSignature<Java.Lang.String>("formatMessage", "(Ljava/util/logging/LogRecord;)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/Formatter.html#getHead(java.util.logging.Handler)"/>
+        /// <see href="https://developer.android.com/reference/java/util/logging/Formatter.html#getHead(java.util.logging.Handler)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Logging.Handler"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -73,7 +73,7 @@ namespace Java.Util.Logging
             return IExecuteWithSignature<Java.Lang.String>("getHead", "(Ljava/util/logging/Handler;)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/Formatter.html#getTail(java.util.logging.Handler)"/>
+        /// <see href="https://developer.android.com/reference/java/util/logging/Formatter.html#getTail(java.util.logging.Handler)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Logging.Handler"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>

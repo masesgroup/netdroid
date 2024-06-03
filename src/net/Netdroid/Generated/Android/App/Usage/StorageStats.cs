@@ -52,40 +52,44 @@ namespace Android.App.Usage
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/usage/StorageStats.html#getAppBytes()"/> 
-        /// </summary>
-        public long AppBytes
-        {
-            get { return IExecuteWithSignature<long>("getAppBytes", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/usage/StorageStats.html#getCacheBytes()"/> 
-        /// </summary>
-        public long CacheBytes
-        {
-            get { return IExecuteWithSignature<long>("getCacheBytes", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/usage/StorageStats.html#getDataBytes()"/> 
-        /// </summary>
-        public long DataBytes
-        {
-            get { return IExecuteWithSignature<long>("getDataBytes", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/usage/StorageStats.html#getExternalCacheBytes()"/> 
-        /// </summary>
-        public long ExternalCacheBytes
-        {
-            get { return IExecuteWithSignature<long>("getExternalCacheBytes", "()J"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/usage/StorageStats.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/usage/StorageStats.html#getAppBytes()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetAppBytes()
+        {
+            return IExecuteWithSignature<long>("getAppBytes", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/usage/StorageStats.html#getCacheBytes()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetCacheBytes()
+        {
+            return IExecuteWithSignature<long>("getCacheBytes", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/usage/StorageStats.html#getDataBytes()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetDataBytes()
+        {
+            return IExecuteWithSignature<long>("getDataBytes", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/usage/StorageStats.html#getExternalCacheBytes()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetExternalCacheBytes()
+        {
+            return IExecuteWithSignature<long>("getExternalCacheBytes", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/usage/StorageStats.html#writeToParcel(android.os.Parcel,int)"/>

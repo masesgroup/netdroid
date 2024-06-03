@@ -50,36 +50,36 @@ namespace Org.Xml.Sax.Helpers
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("getFeature", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(GetFeatureEventHandler));
-            AddEventHandler("getProperty", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(GetPropertyEventHandler));
-            AddEventHandler("getContentHandler", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetContentHandlerEventHandler));
-            AddEventHandler("getDTDHandler", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetDTDHandlerEventHandler));
-            AddEventHandler("getEntityResolver", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetEntityResolverEventHandler));
-            AddEventHandler("getErrorHandler", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetErrorHandlerEventHandler));
-            AddEventHandler("characters", new System.EventHandler<CLRListenerEventArgs<CLREventData<char[]>>>(CharactersEventHandler));
-            AddEventHandler("endDocument", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(EndDocumentEventHandler));
-            AddEventHandler("endElement", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(EndElementEventHandler));
-            AddEventHandler("ignorableWhitespace", new System.EventHandler<CLRListenerEventArgs<CLREventData<char[]>>>(IgnorableWhitespaceEventHandler));
-            AddEventHandler("parse", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(ParseEventHandler));
-            AddEventHandler("parse1", new System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.InputSource>>>(Parse1EventHandler));
-            AddEventHandler("processingInstruction", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(ProcessingInstructionEventHandler));
-            AddEventHandler("setContentHandler", new System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.ContentHandler>>>(SetContentHandlerEventHandler));
-            AddEventHandler("setDocumentLocator", new System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.Locator>>>(SetDocumentLocatorEventHandler));
-            AddEventHandler("setDTDHandler", new System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.DTDHandler>>>(SetDTDHandlerEventHandler));
-            AddEventHandler("setEntityResolver", new System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.EntityResolver>>>(SetEntityResolverEventHandler));
-            AddEventHandler("setErrorHandler", new System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.ErrorHandler>>>(SetErrorHandlerEventHandler));
-            AddEventHandler("setFeature", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(SetFeatureEventHandler));
-            AddEventHandler("setProperty", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(SetPropertyEventHandler));
-            AddEventHandler("startDocument", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(StartDocumentEventHandler));
-            AddEventHandler("startElement", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(StartElementEventHandler));
+            AddEventHandler("getFeature", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(GetFeatureEventHandler));
+            AddEventHandler("getProperty", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(GetPropertyEventHandler));
+            AddEventHandler("getContentHandler", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetContentHandlerEventHandler));
+            AddEventHandler("getDTDHandler", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetDTDHandlerEventHandler));
+            AddEventHandler("getEntityResolver", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetEntityResolverEventHandler));
+            AddEventHandler("getErrorHandler", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(GetErrorHandlerEventHandler));
+            AddEventHandler("characters", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<char[]>>>(CharactersEventHandler));
+            AddEventHandler("endDocument", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(EndDocumentEventHandler));
+            AddEventHandler("endElement", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(EndElementEventHandler));
+            AddEventHandler("ignorableWhitespace", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<char[]>>>(IgnorableWhitespaceEventHandler));
+            AddEventHandler("parse", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(ParseEventHandler));
+            AddEventHandler("parse1", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.InputSource>>>(Parse1EventHandler));
+            AddEventHandler("processingInstruction", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(ProcessingInstructionEventHandler));
+            AddEventHandler("setContentHandler", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.ContentHandler>>>(SetContentHandlerEventHandler));
+            AddEventHandler("setDocumentLocator", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.Locator>>>(SetDocumentLocatorEventHandler));
+            AddEventHandler("setDTDHandler", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.DTDHandler>>>(SetDTDHandlerEventHandler));
+            AddEventHandler("setEntityResolver", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.EntityResolver>>>(SetEntityResolverEventHandler));
+            AddEventHandler("setErrorHandler", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Org.Xml.Sax.ErrorHandler>>>(SetErrorHandlerEventHandler));
+            AddEventHandler("setFeature", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(SetFeatureEventHandler));
+            AddEventHandler("setProperty", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(SetPropertyEventHandler));
+            AddEventHandler("startDocument", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(StartDocumentEventHandler));
+            AddEventHandler("startElement", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(StartElementEventHandler));
 
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserAdapter.html#getFeature(java.lang.String)"/>
+        /// Handler for <see href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#getFeature(java.lang.String)"/>
         /// </summary>
         /// <remarks>If <see cref="OnGetFeature"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Lang.String, bool> OnGetFeature { get; set; } = null;
+        public global::System.Func<Java.Lang.String, bool> OnGetFeature { get; set; } = null;
 
         void GetFeatureEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
         {
@@ -89,7 +89,7 @@ namespace Org.Xml.Sax.Helpers
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserAdapter.html#getFeature(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#getFeature(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -101,10 +101,10 @@ namespace Org.Xml.Sax.Helpers
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserAdapter.html#getProperty(java.lang.String)"/>
+        /// Handler for <see href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#getProperty(java.lang.String)"/>
         /// </summary>
         /// <remarks>If <see cref="OnGetProperty"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Java.Lang.String, object> OnGetProperty { get; set; } = null;
+        public global::System.Func<Java.Lang.String, object> OnGetProperty { get; set; } = null;
 
         void GetPropertyEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
         {
@@ -114,7 +114,7 @@ namespace Org.Xml.Sax.Helpers
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserAdapter.html#getProperty(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#getProperty(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="object"/></returns>
@@ -126,10 +126,10 @@ namespace Org.Xml.Sax.Helpers
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserAdapter.html#getContentHandler()"/>
+        /// Handler for <see href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#getContentHandler()"/>
         /// </summary>
         /// <remarks>If <see cref="OnGetContentHandler"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Org.Xml.Sax.ContentHandler> OnGetContentHandler { get; set; } = null;
+        public global::System.Func<Org.Xml.Sax.ContentHandler> OnGetContentHandler { get; set; } = null;
 
         void GetContentHandlerEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
@@ -139,7 +139,7 @@ namespace Org.Xml.Sax.Helpers
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserAdapter.html#getContentHandler()"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#getContentHandler()"/>
         /// </summary>
         /// <returns><see cref="Org.Xml.Sax.ContentHandler"/></returns>
         public virtual Org.Xml.Sax.ContentHandler GetContentHandler()
@@ -148,10 +148,10 @@ namespace Org.Xml.Sax.Helpers
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserAdapter.html#getDTDHandler()"/>
+        /// Handler for <see href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#getDTDHandler()"/>
         /// </summary>
         /// <remarks>If <see cref="OnGetDTDHandler"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Org.Xml.Sax.DTDHandler> OnGetDTDHandler { get; set; } = null;
+        public global::System.Func<Org.Xml.Sax.DTDHandler> OnGetDTDHandler { get; set; } = null;
 
         void GetDTDHandlerEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
@@ -161,7 +161,7 @@ namespace Org.Xml.Sax.Helpers
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserAdapter.html#getDTDHandler()"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#getDTDHandler()"/>
         /// </summary>
         /// <returns><see cref="Org.Xml.Sax.DTDHandler"/></returns>
         public virtual Org.Xml.Sax.DTDHandler GetDTDHandler()
@@ -170,10 +170,10 @@ namespace Org.Xml.Sax.Helpers
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserAdapter.html#getEntityResolver()"/>
+        /// Handler for <see href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#getEntityResolver()"/>
         /// </summary>
         /// <remarks>If <see cref="OnGetEntityResolver"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Org.Xml.Sax.EntityResolver> OnGetEntityResolver { get; set; } = null;
+        public global::System.Func<Org.Xml.Sax.EntityResolver> OnGetEntityResolver { get; set; } = null;
 
         void GetEntityResolverEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
@@ -183,7 +183,7 @@ namespace Org.Xml.Sax.Helpers
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserAdapter.html#getEntityResolver()"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#getEntityResolver()"/>
         /// </summary>
         /// <returns><see cref="Org.Xml.Sax.EntityResolver"/></returns>
         public virtual Org.Xml.Sax.EntityResolver GetEntityResolver()
@@ -192,10 +192,10 @@ namespace Org.Xml.Sax.Helpers
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserAdapter.html#getErrorHandler()"/>
+        /// Handler for <see href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#getErrorHandler()"/>
         /// </summary>
         /// <remarks>If <see cref="OnGetErrorHandler"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Func<Org.Xml.Sax.ErrorHandler> OnGetErrorHandler { get; set; } = null;
+        public global::System.Func<Org.Xml.Sax.ErrorHandler> OnGetErrorHandler { get; set; } = null;
 
         void GetErrorHandlerEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
@@ -205,7 +205,7 @@ namespace Org.Xml.Sax.Helpers
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserAdapter.html#getErrorHandler()"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#getErrorHandler()"/>
         /// </summary>
         /// <returns><see cref="Org.Xml.Sax.ErrorHandler"/></returns>
         public virtual Org.Xml.Sax.ErrorHandler GetErrorHandler()
@@ -214,10 +214,10 @@ namespace Org.Xml.Sax.Helpers
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserAdapter.html#characters(char[],int,int)"/>
+        /// Handler for <see href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#characters(char[],int,int)"/>
         /// </summary>
         /// <remarks>If <see cref="OnCharacters"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<char[], int, int> OnCharacters { get; set; } = null;
+        public global::System.Action<char[], int, int> OnCharacters { get; set; } = null;
 
         void CharactersEventHandler(object sender, CLRListenerEventArgs<CLREventData<char[]>> data)
         {
@@ -226,7 +226,7 @@ namespace Org.Xml.Sax.Helpers
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserAdapter.html#characters(char[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#characters(char[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -238,10 +238,10 @@ namespace Org.Xml.Sax.Helpers
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserAdapter.html#endDocument()"/>
+        /// Handler for <see href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#endDocument()"/>
         /// </summary>
         /// <remarks>If <see cref="OnEndDocument"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action OnEndDocument { get; set; } = null;
+        public global::System.Action OnEndDocument { get; set; } = null;
 
         void EndDocumentEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
@@ -250,7 +250,7 @@ namespace Org.Xml.Sax.Helpers
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserAdapter.html#endDocument()"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#endDocument()"/>
         /// </summary>
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public virtual void EndDocument()
@@ -259,10 +259,10 @@ namespace Org.Xml.Sax.Helpers
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserAdapter.html#endElement(java.lang.String)"/>
+        /// Handler for <see href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#endElement(java.lang.String)"/>
         /// </summary>
         /// <remarks>If <see cref="OnEndElement"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Lang.String> OnEndElement { get; set; } = null;
+        public global::System.Action<Java.Lang.String> OnEndElement { get; set; } = null;
 
         void EndElementEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
         {
@@ -271,7 +271,7 @@ namespace Org.Xml.Sax.Helpers
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserAdapter.html#endElement(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#endElement(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Org.Xml.Sax.SAXException"/>
@@ -281,10 +281,10 @@ namespace Org.Xml.Sax.Helpers
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserAdapter.html#ignorableWhitespace(char[],int,int)"/>
+        /// Handler for <see href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#ignorableWhitespace(char[],int,int)"/>
         /// </summary>
         /// <remarks>If <see cref="OnIgnorableWhitespace"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<char[], int, int> OnIgnorableWhitespace { get; set; } = null;
+        public global::System.Action<char[], int, int> OnIgnorableWhitespace { get; set; } = null;
 
         void IgnorableWhitespaceEventHandler(object sender, CLRListenerEventArgs<CLREventData<char[]>> data)
         {
@@ -293,7 +293,7 @@ namespace Org.Xml.Sax.Helpers
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserAdapter.html#ignorableWhitespace(char[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#ignorableWhitespace(char[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -305,10 +305,10 @@ namespace Org.Xml.Sax.Helpers
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserAdapter.html#parse(java.lang.String)"/>
+        /// Handler for <see href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#parse(java.lang.String)"/>
         /// </summary>
         /// <remarks>If <see cref="OnParse"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Lang.String> OnParse { get; set; } = null;
+        public global::System.Action<Java.Lang.String> OnParse { get; set; } = null;
 
         void ParseEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
         {
@@ -317,7 +317,7 @@ namespace Org.Xml.Sax.Helpers
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserAdapter.html#parse(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#parse(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -328,10 +328,10 @@ namespace Org.Xml.Sax.Helpers
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserAdapter.html#parse(org.xml.sax.InputSource)"/>
+        /// Handler for <see href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#parse(org.xml.sax.InputSource)"/>
         /// </summary>
         /// <remarks>If <see cref="OnParse1"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Org.Xml.Sax.InputSource> OnParse1 { get; set; } = null;
+        public global::System.Action<Org.Xml.Sax.InputSource> OnParse1 { get; set; } = null;
 
         void Parse1EventHandler(object sender, CLRListenerEventArgs<CLREventData<Org.Xml.Sax.InputSource>> data)
         {
@@ -340,7 +340,7 @@ namespace Org.Xml.Sax.Helpers
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserAdapter.html#parse(org.xml.sax.InputSource)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#parse(org.xml.sax.InputSource)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.Xml.Sax.InputSource"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -351,10 +351,10 @@ namespace Org.Xml.Sax.Helpers
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserAdapter.html#processingInstruction(java.lang.String,java.lang.String)"/>
+        /// Handler for <see href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#processingInstruction(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <remarks>If <see cref="OnProcessingInstruction"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Lang.String, Java.Lang.String> OnProcessingInstruction { get; set; } = null;
+        public global::System.Action<Java.Lang.String, Java.Lang.String> OnProcessingInstruction { get; set; } = null;
 
         void ProcessingInstructionEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
         {
@@ -363,7 +363,7 @@ namespace Org.Xml.Sax.Helpers
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserAdapter.html#processingInstruction(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#processingInstruction(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -374,10 +374,10 @@ namespace Org.Xml.Sax.Helpers
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserAdapter.html#setContentHandler(org.xml.sax.ContentHandler)"/>
+        /// Handler for <see href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#setContentHandler(org.xml.sax.ContentHandler)"/>
         /// </summary>
         /// <remarks>If <see cref="OnSetContentHandler"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Org.Xml.Sax.ContentHandler> OnSetContentHandler { get; set; } = null;
+        public global::System.Action<Org.Xml.Sax.ContentHandler> OnSetContentHandler { get; set; } = null;
 
         void SetContentHandlerEventHandler(object sender, CLRListenerEventArgs<CLREventData<Org.Xml.Sax.ContentHandler>> data)
         {
@@ -386,7 +386,7 @@ namespace Org.Xml.Sax.Helpers
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserAdapter.html#setContentHandler(org.xml.sax.ContentHandler)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#setContentHandler(org.xml.sax.ContentHandler)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.Xml.Sax.ContentHandler"/></param>
         public virtual void SetContentHandler(Org.Xml.Sax.ContentHandler arg0)
@@ -395,10 +395,10 @@ namespace Org.Xml.Sax.Helpers
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserAdapter.html#setDocumentLocator(org.xml.sax.Locator)"/>
+        /// Handler for <see href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#setDocumentLocator(org.xml.sax.Locator)"/>
         /// </summary>
         /// <remarks>If <see cref="OnSetDocumentLocator"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Org.Xml.Sax.Locator> OnSetDocumentLocator { get; set; } = null;
+        public global::System.Action<Org.Xml.Sax.Locator> OnSetDocumentLocator { get; set; } = null;
 
         void SetDocumentLocatorEventHandler(object sender, CLRListenerEventArgs<CLREventData<Org.Xml.Sax.Locator>> data)
         {
@@ -407,7 +407,7 @@ namespace Org.Xml.Sax.Helpers
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserAdapter.html#setDocumentLocator(org.xml.sax.Locator)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#setDocumentLocator(org.xml.sax.Locator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.Xml.Sax.Locator"/></param>
         public virtual void SetDocumentLocator(Org.Xml.Sax.Locator arg0)
@@ -416,10 +416,10 @@ namespace Org.Xml.Sax.Helpers
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserAdapter.html#setDTDHandler(org.xml.sax.DTDHandler)"/>
+        /// Handler for <see href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#setDTDHandler(org.xml.sax.DTDHandler)"/>
         /// </summary>
         /// <remarks>If <see cref="OnSetDTDHandler"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Org.Xml.Sax.DTDHandler> OnSetDTDHandler { get; set; } = null;
+        public global::System.Action<Org.Xml.Sax.DTDHandler> OnSetDTDHandler { get; set; } = null;
 
         void SetDTDHandlerEventHandler(object sender, CLRListenerEventArgs<CLREventData<Org.Xml.Sax.DTDHandler>> data)
         {
@@ -428,7 +428,7 @@ namespace Org.Xml.Sax.Helpers
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserAdapter.html#setDTDHandler(org.xml.sax.DTDHandler)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#setDTDHandler(org.xml.sax.DTDHandler)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.Xml.Sax.DTDHandler"/></param>
         public virtual void SetDTDHandler(Org.Xml.Sax.DTDHandler arg0)
@@ -437,10 +437,10 @@ namespace Org.Xml.Sax.Helpers
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserAdapter.html#setEntityResolver(org.xml.sax.EntityResolver)"/>
+        /// Handler for <see href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#setEntityResolver(org.xml.sax.EntityResolver)"/>
         /// </summary>
         /// <remarks>If <see cref="OnSetEntityResolver"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Org.Xml.Sax.EntityResolver> OnSetEntityResolver { get; set; } = null;
+        public global::System.Action<Org.Xml.Sax.EntityResolver> OnSetEntityResolver { get; set; } = null;
 
         void SetEntityResolverEventHandler(object sender, CLRListenerEventArgs<CLREventData<Org.Xml.Sax.EntityResolver>> data)
         {
@@ -449,7 +449,7 @@ namespace Org.Xml.Sax.Helpers
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserAdapter.html#setEntityResolver(org.xml.sax.EntityResolver)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#setEntityResolver(org.xml.sax.EntityResolver)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.Xml.Sax.EntityResolver"/></param>
         public virtual void SetEntityResolver(Org.Xml.Sax.EntityResolver arg0)
@@ -458,10 +458,10 @@ namespace Org.Xml.Sax.Helpers
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserAdapter.html#setErrorHandler(org.xml.sax.ErrorHandler)"/>
+        /// Handler for <see href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#setErrorHandler(org.xml.sax.ErrorHandler)"/>
         /// </summary>
         /// <remarks>If <see cref="OnSetErrorHandler"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Org.Xml.Sax.ErrorHandler> OnSetErrorHandler { get; set; } = null;
+        public global::System.Action<Org.Xml.Sax.ErrorHandler> OnSetErrorHandler { get; set; } = null;
 
         void SetErrorHandlerEventHandler(object sender, CLRListenerEventArgs<CLREventData<Org.Xml.Sax.ErrorHandler>> data)
         {
@@ -470,7 +470,7 @@ namespace Org.Xml.Sax.Helpers
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserAdapter.html#setErrorHandler(org.xml.sax.ErrorHandler)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#setErrorHandler(org.xml.sax.ErrorHandler)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.Xml.Sax.ErrorHandler"/></param>
         public virtual void SetErrorHandler(Org.Xml.Sax.ErrorHandler arg0)
@@ -479,10 +479,10 @@ namespace Org.Xml.Sax.Helpers
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserAdapter.html#setFeature(java.lang.String,boolean)"/>
+        /// Handler for <see href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#setFeature(java.lang.String,boolean)"/>
         /// </summary>
         /// <remarks>If <see cref="OnSetFeature"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Lang.String, bool> OnSetFeature { get; set; } = null;
+        public global::System.Action<Java.Lang.String, bool> OnSetFeature { get; set; } = null;
 
         void SetFeatureEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
         {
@@ -491,7 +491,7 @@ namespace Org.Xml.Sax.Helpers
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserAdapter.html#setFeature(java.lang.String,boolean)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#setFeature(java.lang.String,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -503,10 +503,10 @@ namespace Org.Xml.Sax.Helpers
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserAdapter.html#setProperty(java.lang.String,java.lang.Object)"/>
+        /// Handler for <see href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#setProperty(java.lang.String,java.lang.Object)"/>
         /// </summary>
         /// <remarks>If <see cref="OnSetProperty"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Lang.String, object> OnSetProperty { get; set; } = null;
+        public global::System.Action<Java.Lang.String, object> OnSetProperty { get; set; } = null;
 
         void SetPropertyEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
         {
@@ -515,7 +515,7 @@ namespace Org.Xml.Sax.Helpers
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserAdapter.html#setProperty(java.lang.String,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#setProperty(java.lang.String,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -527,10 +527,10 @@ namespace Org.Xml.Sax.Helpers
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserAdapter.html#startDocument()"/>
+        /// Handler for <see href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#startDocument()"/>
         /// </summary>
         /// <remarks>If <see cref="OnStartDocument"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action OnStartDocument { get; set; } = null;
+        public global::System.Action OnStartDocument { get; set; } = null;
 
         void StartDocumentEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
@@ -539,7 +539,7 @@ namespace Org.Xml.Sax.Helpers
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserAdapter.html#startDocument()"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#startDocument()"/>
         /// </summary>
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public virtual void StartDocument()
@@ -548,10 +548,10 @@ namespace Org.Xml.Sax.Helpers
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserAdapter.html#startElement(java.lang.String,org.xml.sax.AttributeList)"/>
+        /// Handler for <see href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#startElement(java.lang.String,org.xml.sax.AttributeList)"/>
         /// </summary>
         /// <remarks>If <see cref="OnStartElement"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Lang.String, Org.Xml.Sax.AttributeList> OnStartElement { get; set; } = null;
+        public global::System.Action<Java.Lang.String, Org.Xml.Sax.AttributeList> OnStartElement { get; set; } = null;
 
         void StartElementEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
         {
@@ -560,7 +560,7 @@ namespace Org.Xml.Sax.Helpers
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserAdapter.html#startElement(java.lang.String,org.xml.sax.AttributeList)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#startElement(java.lang.String,org.xml.sax.AttributeList)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Org.Xml.Sax.AttributeList"/></param>
@@ -601,35 +601,7 @@ namespace Org.Xml.Sax.Helpers
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserAdapter.html#getContentHandler()"/> <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserAdapter.html#setContentHandler(org.xml.sax.ContentHandler)"/>
-        /// </summary>
-        public Org.Xml.Sax.ContentHandler ContentHandler
-        {
-            get { return IExecuteWithSignature<Org.Xml.Sax.ContentHandler>("getContentHandler", "()Lorg/xml/sax/ContentHandler;"); } set { IExecuteWithSignature("setContentHandler", "(Lorg/xml/sax/ContentHandler;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserAdapter.html#getDTDHandler()"/> <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserAdapter.html#setDTDHandler(org.xml.sax.DTDHandler)"/>
-        /// </summary>
-        public Org.Xml.Sax.DTDHandler DTDHandler
-        {
-            get { return IExecuteWithSignature<Org.Xml.Sax.DTDHandler>("getDTDHandler", "()Lorg/xml/sax/DTDHandler;"); } set { IExecuteWithSignature("setDTDHandler", "(Lorg/xml/sax/DTDHandler;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserAdapter.html#getEntityResolver()"/> <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserAdapter.html#setEntityResolver(org.xml.sax.EntityResolver)"/>
-        /// </summary>
-        public Org.Xml.Sax.EntityResolver EntityResolver
-        {
-            get { return IExecuteWithSignature<Org.Xml.Sax.EntityResolver>("getEntityResolver", "()Lorg/xml/sax/EntityResolver;"); } set { IExecuteWithSignature("setEntityResolver", "(Lorg/xml/sax/EntityResolver;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserAdapter.html#getErrorHandler()"/> <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserAdapter.html#setErrorHandler(org.xml.sax.ErrorHandler)"/>
-        /// </summary>
-        public Org.Xml.Sax.ErrorHandler ErrorHandler
-        {
-            get { return IExecuteWithSignature<Org.Xml.Sax.ErrorHandler>("getErrorHandler", "()Lorg/xml/sax/ErrorHandler;"); } set { IExecuteWithSignature("setErrorHandler", "(Lorg/xml/sax/ErrorHandler;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserAdapter.html#getFeature(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#getFeature(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -640,7 +612,7 @@ namespace Org.Xml.Sax.Helpers
             return IExecuteWithSignature<bool>("getFeature", "(Ljava/lang/String;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserAdapter.html#getProperty(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#getProperty(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="object"/></returns>
@@ -651,7 +623,39 @@ namespace Org.Xml.Sax.Helpers
             return IExecuteWithSignature("getProperty", "(Ljava/lang/String;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserAdapter.html#characters(char[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#getContentHandler()"/>
+        /// </summary>
+        /// <returns><see cref="Org.Xml.Sax.ContentHandler"/></returns>
+        public override Org.Xml.Sax.ContentHandler GetContentHandler()
+        {
+            return IExecuteWithSignature<Org.Xml.Sax.ContentHandler>("getContentHandler", "()Lorg/xml/sax/ContentHandler;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#getDTDHandler()"/>
+        /// </summary>
+        /// <returns><see cref="Org.Xml.Sax.DTDHandler"/></returns>
+        public override Org.Xml.Sax.DTDHandler GetDTDHandler()
+        {
+            return IExecuteWithSignature<Org.Xml.Sax.DTDHandler>("getDTDHandler", "()Lorg/xml/sax/DTDHandler;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#getEntityResolver()"/>
+        /// </summary>
+        /// <returns><see cref="Org.Xml.Sax.EntityResolver"/></returns>
+        public override Org.Xml.Sax.EntityResolver GetEntityResolver()
+        {
+            return IExecuteWithSignature<Org.Xml.Sax.EntityResolver>("getEntityResolver", "()Lorg/xml/sax/EntityResolver;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#getErrorHandler()"/>
+        /// </summary>
+        /// <returns><see cref="Org.Xml.Sax.ErrorHandler"/></returns>
+        public override Org.Xml.Sax.ErrorHandler GetErrorHandler()
+        {
+            return IExecuteWithSignature<Org.Xml.Sax.ErrorHandler>("getErrorHandler", "()Lorg/xml/sax/ErrorHandler;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#characters(char[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -662,7 +666,7 @@ namespace Org.Xml.Sax.Helpers
             IExecute("characters", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserAdapter.html#endDocument()"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#endDocument()"/>
         /// </summary>
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public override void EndDocument()
@@ -670,7 +674,7 @@ namespace Org.Xml.Sax.Helpers
             IExecuteWithSignature("endDocument", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserAdapter.html#endElement(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#endElement(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Org.Xml.Sax.SAXException"/>
@@ -679,7 +683,7 @@ namespace Org.Xml.Sax.Helpers
             IExecuteWithSignature("endElement", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserAdapter.html#ignorableWhitespace(char[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#ignorableWhitespace(char[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -690,7 +694,7 @@ namespace Org.Xml.Sax.Helpers
             IExecute("ignorableWhitespace", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserAdapter.html#parse(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#parse(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -700,7 +704,7 @@ namespace Org.Xml.Sax.Helpers
             IExecuteWithSignature("parse", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserAdapter.html#parse(org.xml.sax.InputSource)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#parse(org.xml.sax.InputSource)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.Xml.Sax.InputSource"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -710,7 +714,7 @@ namespace Org.Xml.Sax.Helpers
             IExecuteWithSignature("parse", "(Lorg/xml/sax/InputSource;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserAdapter.html#processingInstruction(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#processingInstruction(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -720,7 +724,15 @@ namespace Org.Xml.Sax.Helpers
             IExecute("processingInstruction", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserAdapter.html#setDocumentLocator(org.xml.sax.Locator)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#setContentHandler(org.xml.sax.ContentHandler)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Org.Xml.Sax.ContentHandler"/></param>
+        public override void SetContentHandler(Org.Xml.Sax.ContentHandler arg0)
+        {
+            IExecuteWithSignature("setContentHandler", "(Lorg/xml/sax/ContentHandler;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#setDocumentLocator(org.xml.sax.Locator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.Xml.Sax.Locator"/></param>
         public override void SetDocumentLocator(Org.Xml.Sax.Locator arg0)
@@ -728,7 +740,31 @@ namespace Org.Xml.Sax.Helpers
             IExecuteWithSignature("setDocumentLocator", "(Lorg/xml/sax/Locator;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserAdapter.html#setFeature(java.lang.String,boolean)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#setDTDHandler(org.xml.sax.DTDHandler)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Org.Xml.Sax.DTDHandler"/></param>
+        public override void SetDTDHandler(Org.Xml.Sax.DTDHandler arg0)
+        {
+            IExecuteWithSignature("setDTDHandler", "(Lorg/xml/sax/DTDHandler;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#setEntityResolver(org.xml.sax.EntityResolver)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Org.Xml.Sax.EntityResolver"/></param>
+        public override void SetEntityResolver(Org.Xml.Sax.EntityResolver arg0)
+        {
+            IExecuteWithSignature("setEntityResolver", "(Lorg/xml/sax/EntityResolver;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#setErrorHandler(org.xml.sax.ErrorHandler)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Org.Xml.Sax.ErrorHandler"/></param>
+        public override void SetErrorHandler(Org.Xml.Sax.ErrorHandler arg0)
+        {
+            IExecuteWithSignature("setErrorHandler", "(Lorg/xml/sax/ErrorHandler;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#setFeature(java.lang.String,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -739,7 +775,7 @@ namespace Org.Xml.Sax.Helpers
             IExecute("setFeature", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserAdapter.html#setProperty(java.lang.String,java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#setProperty(java.lang.String,java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -750,7 +786,7 @@ namespace Org.Xml.Sax.Helpers
             IExecute("setProperty", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserAdapter.html#startDocument()"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#startDocument()"/>
         /// </summary>
         /// <exception cref="Org.Xml.Sax.SAXException"/>
         public override void StartDocument()
@@ -758,7 +794,7 @@ namespace Org.Xml.Sax.Helpers
             IExecuteWithSignature("startDocument", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/helpers/ParserAdapter.html#startElement(java.lang.String,org.xml.sax.AttributeList)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/helpers/ParserAdapter.html#startElement(java.lang.String,org.xml.sax.AttributeList)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Org.Xml.Sax.AttributeList"/></param>

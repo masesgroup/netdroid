@@ -64,81 +64,44 @@ namespace Android.Net.Wifi
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiNetworkSuggestion.html#getBssid()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiNetworkSuggestion.html#getBssid()"/>
         /// </summary>
-        public Android.Net.MacAddress Bssid
+        /// <returns><see cref="Android.Net.MacAddress"/></returns>
+        public Android.Net.MacAddress GetBssid()
         {
-            get { return IExecuteWithSignature<Android.Net.MacAddress>("getBssid", "()Landroid/net/MacAddress;"); }
+            return IExecuteWithSignature<Android.Net.MacAddress>("getBssid", "()Landroid/net/MacAddress;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiNetworkSuggestion.html#getEnterpriseConfig()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiNetworkSuggestion.html#getPasspointConfig()"/>
         /// </summary>
-        public Android.Net.Wifi.WifiEnterpriseConfig EnterpriseConfig
+        /// <returns><see cref="Android.Net.Wifi.Hotspot2.PasspointConfiguration"/></returns>
+        public Android.Net.Wifi.Hotspot2.PasspointConfiguration GetPasspointConfig()
         {
-            get { return IExecuteWithSignature<Android.Net.Wifi.WifiEnterpriseConfig>("getEnterpriseConfig", "()Landroid/net/wifi/WifiEnterpriseConfig;"); }
+            return IExecuteWithSignature<Android.Net.Wifi.Hotspot2.PasspointConfiguration>("getPasspointConfig", "()Landroid/net/wifi/hotspot2/PasspointConfiguration;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiNetworkSuggestion.html#getMacRandomizationSetting()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiNetworkSuggestion.html#getEnterpriseConfig()"/>
         /// </summary>
-        public int MacRandomizationSetting
+        /// <returns><see cref="Android.Net.Wifi.WifiEnterpriseConfig"/></returns>
+        public Android.Net.Wifi.WifiEnterpriseConfig GetEnterpriseConfig()
         {
-            get { return IExecuteWithSignature<int>("getMacRandomizationSetting", "()I"); }
+            return IExecuteWithSignature<Android.Net.Wifi.WifiEnterpriseConfig>("getEnterpriseConfig", "()Landroid/net/wifi/WifiEnterpriseConfig;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiNetworkSuggestion.html#getPassphrase()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiNetworkSuggestion.html#getWifiSsid()"/>
         /// </summary>
-        public Java.Lang.String Passphrase
+        /// <returns><see cref="Android.Net.Wifi.WifiSsid"/></returns>
+        public Android.Net.Wifi.WifiSsid GetWifiSsid()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPassphrase", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Android.Net.Wifi.WifiSsid>("getWifiSsid", "()Landroid/net/wifi/WifiSsid;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiNetworkSuggestion.html#getPasspointConfig()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiNetworkSuggestion.html#getSubscriptionGroup()"/>
         /// </summary>
-        public Android.Net.Wifi.Hotspot2.PasspointConfiguration PasspointConfig
+        /// <returns><see cref="Android.Os.ParcelUuid"/></returns>
+        public Android.Os.ParcelUuid GetSubscriptionGroup()
         {
-            get { return IExecuteWithSignature<Android.Net.Wifi.Hotspot2.PasspointConfiguration>("getPasspointConfig", "()Landroid/net/wifi/hotspot2/PasspointConfiguration;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiNetworkSuggestion.html#getPriority()"/> 
-        /// </summary>
-        public int Priority
-        {
-            get { return IExecuteWithSignature<int>("getPriority", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiNetworkSuggestion.html#getPriorityGroup()"/> 
-        /// </summary>
-        public int PriorityGroup
-        {
-            get { return IExecuteWithSignature<int>("getPriorityGroup", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiNetworkSuggestion.html#getSsid()"/> 
-        /// </summary>
-        public Java.Lang.String Ssid
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSsid", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiNetworkSuggestion.html#getSubscriptionGroup()"/> 
-        /// </summary>
-        public Android.Os.ParcelUuid SubscriptionGroup
-        {
-            get { return IExecuteWithSignature<Android.Os.ParcelUuid>("getSubscriptionGroup", "()Landroid/os/ParcelUuid;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiNetworkSuggestion.html#getSubscriptionId()"/> 
-        /// </summary>
-        public int SubscriptionId
-        {
-            get { return IExecuteWithSignature<int>("getSubscriptionId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiNetworkSuggestion.html#getWifiSsid()"/> 
-        /// </summary>
-        public Android.Net.Wifi.WifiSsid WifiSsid
-        {
-            get { return IExecuteWithSignature<Android.Net.Wifi.WifiSsid>("getWifiSsid", "()Landroid/net/wifi/WifiSsid;"); }
+            return IExecuteWithSignature<Android.Os.ParcelUuid>("getSubscriptionGroup", "()Landroid/os/ParcelUuid;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiNetworkSuggestion.html#isAppInteractionRequired()"/>
@@ -227,6 +190,54 @@ namespace Android.Net.Wifi
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiNetworkSuggestion.html#getMacRandomizationSetting()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMacRandomizationSetting()
+        {
+            return IExecuteWithSignature<int>("getMacRandomizationSetting", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiNetworkSuggestion.html#getPriority()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPriority()
+        {
+            return IExecuteWithSignature<int>("getPriority", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiNetworkSuggestion.html#getPriorityGroup()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPriorityGroup()
+        {
+            return IExecuteWithSignature<int>("getPriorityGroup", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiNetworkSuggestion.html#getSubscriptionId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSubscriptionId()
+        {
+            return IExecuteWithSignature<int>("getSubscriptionId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiNetworkSuggestion.html#getPassphrase()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPassphrase()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPassphrase", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiNetworkSuggestion.html#getSsid()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSsid()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getSsid", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiNetworkSuggestion.html#writeToParcel(android.os.Parcel,int)"/>
@@ -499,7 +510,7 @@ namespace Android.Net.Wifi
             /// </summary>
             /// <param name="arg0"><see cref="Android.Net.Wifi.WifiEnterpriseConfig"/></param>
             /// <returns><see cref="Android.Net.Wifi.WifiNetworkSuggestion.Builder"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public Android.Net.Wifi.WifiNetworkSuggestion.Builder SetWpa3EnterpriseConfig(Android.Net.Wifi.WifiEnterpriseConfig arg0)
             {
                 return IExecuteWithSignature<Android.Net.Wifi.WifiNetworkSuggestion.Builder>("setWpa3EnterpriseConfig", "(Landroid/net/wifi/WifiEnterpriseConfig;)Landroid/net/wifi/WifiNetworkSuggestion$Builder;", arg0);

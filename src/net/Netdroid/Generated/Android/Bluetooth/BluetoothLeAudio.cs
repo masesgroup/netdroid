@@ -66,13 +66,6 @@ namespace Android.Bluetooth
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothLeAudio.html#getConnectedDevices()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Bluetooth.BluetoothDevice> ConnectedDevices
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Bluetooth.BluetoothDevice>>("getConnectedDevices", "()Ljava/util/List;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothLeAudio.html#getConnectedGroupLeadDevice(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -98,6 +91,14 @@ namespace Android.Bluetooth
         public int GetGroupId(Android.Bluetooth.BluetoothDevice arg0)
         {
             return IExecuteWithSignature<int>("getGroupId", "(Landroid/bluetooth/BluetoothDevice;)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothLeAudio.html#getConnectedDevices()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Bluetooth.BluetoothDevice> GetConnectedDevices()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Bluetooth.BluetoothDevice>>("getConnectedDevices", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothLeAudio.html#getDevicesMatchingConnectionStates(int[])"/>

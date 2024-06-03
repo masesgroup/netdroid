@@ -55,11 +55,12 @@ namespace Android.Health.Connect.Datatypes.Units
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/units/Temperature.html#getInCelsius()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/units/Temperature.html#getInCelsius()"/>
         /// </summary>
-        public double InCelsius
+        /// <returns><see cref="double"/></returns>
+        public double GetInCelsius()
         {
-            get { return IExecuteWithSignature<double>("getInCelsius", "()D"); }
+            return IExecuteWithSignature<double>("getInCelsius", "()D");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/units/Temperature.html#compareTo(android.health.connect.datatypes.units.Temperature)"/>

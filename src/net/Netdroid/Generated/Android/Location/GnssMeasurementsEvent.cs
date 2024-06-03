@@ -52,25 +52,12 @@ namespace Android.Location
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/GnssMeasurementsEvent.html#getClock()"/> 
+        /// <see href="https://developer.android.com/reference/android/location/GnssMeasurementsEvent.html#getClock()"/>
         /// </summary>
-        public Android.Location.GnssClock Clock
+        /// <returns><see cref="Android.Location.GnssClock"/></returns>
+        public Android.Location.GnssClock GetClock()
         {
-            get { return IExecuteWithSignature<Android.Location.GnssClock>("getClock", "()Landroid/location/GnssClock;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/GnssMeasurementsEvent.html#getGnssAutomaticGainControls()"/> 
-        /// </summary>
-        public Java.Util.Collection<Android.Location.GnssAutomaticGainControl> GnssAutomaticGainControls
-        {
-            get { return IExecuteWithSignature<Java.Util.Collection<Android.Location.GnssAutomaticGainControl>>("getGnssAutomaticGainControls", "()Ljava/util/Collection;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/GnssMeasurementsEvent.html#getMeasurements()"/> 
-        /// </summary>
-        public Java.Util.Collection<Android.Location.GnssMeasurement> Measurements
-        {
-            get { return IExecuteWithSignature<Java.Util.Collection<Android.Location.GnssMeasurement>>("getMeasurements", "()Ljava/util/Collection;"); }
+            return IExecuteWithSignature<Android.Location.GnssClock>("getClock", "()Landroid/location/GnssClock;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/GnssMeasurementsEvent.html#hasIsFullTracking()"/>
@@ -95,6 +82,22 @@ namespace Android.Location
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/GnssMeasurementsEvent.html#getGnssAutomaticGainControls()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Collection"/></returns>
+        public Java.Util.Collection<Android.Location.GnssAutomaticGainControl> GetGnssAutomaticGainControls()
+        {
+            return IExecuteWithSignature<Java.Util.Collection<Android.Location.GnssAutomaticGainControl>>("getGnssAutomaticGainControls", "()Ljava/util/Collection;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/GnssMeasurementsEvent.html#getMeasurements()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Collection"/></returns>
+        public Java.Util.Collection<Android.Location.GnssMeasurement> GetMeasurements()
+        {
+            return IExecuteWithSignature<Java.Util.Collection<Android.Location.GnssMeasurement>>("getMeasurements", "()Ljava/util/Collection;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/GnssMeasurementsEvent.html#writeToParcel(android.os.Parcel,int)"/>
@@ -215,28 +218,28 @@ namespace Android.Location
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/location/GnssMeasurementsEvent.Callback.html#STATUS_LOCATION_DISABLED"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int STATUS_LOCATION_DISABLED { get { if (!_STATUS_LOCATION_DISABLEDReady) { _STATUS_LOCATION_DISABLEDContent = SGetField<int>(LocalBridgeClazz, "STATUS_LOCATION_DISABLED"); _STATUS_LOCATION_DISABLEDReady = true; } return _STATUS_LOCATION_DISABLEDContent; } }
             private static int _STATUS_LOCATION_DISABLEDContent = default;
             private static bool _STATUS_LOCATION_DISABLEDReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/location/GnssMeasurementsEvent.Callback.html#STATUS_NOT_ALLOWED"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int STATUS_NOT_ALLOWED { get { if (!_STATUS_NOT_ALLOWEDReady) { _STATUS_NOT_ALLOWEDContent = SGetField<int>(LocalBridgeClazz, "STATUS_NOT_ALLOWED"); _STATUS_NOT_ALLOWEDReady = true; } return _STATUS_NOT_ALLOWEDContent; } }
             private static int _STATUS_NOT_ALLOWEDContent = default;
             private static bool _STATUS_NOT_ALLOWEDReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/location/GnssMeasurementsEvent.Callback.html#STATUS_NOT_SUPPORTED"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int STATUS_NOT_SUPPORTED { get { if (!_STATUS_NOT_SUPPORTEDReady) { _STATUS_NOT_SUPPORTEDContent = SGetField<int>(LocalBridgeClazz, "STATUS_NOT_SUPPORTED"); _STATUS_NOT_SUPPORTEDReady = true; } return _STATUS_NOT_SUPPORTEDContent; } }
             private static int _STATUS_NOT_SUPPORTEDContent = default;
             private static bool _STATUS_NOT_SUPPORTEDReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/location/GnssMeasurementsEvent.Callback.html#STATUS_READY"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int STATUS_READY { get { if (!_STATUS_READYReady) { _STATUS_READYContent = SGetField<int>(LocalBridgeClazz, "STATUS_READY"); _STATUS_READYReady = true; } return _STATUS_READYContent; } }
             private static int _STATUS_READYContent = default;
             private static bool _STATUS_READYReady = false; // this is used because in case of generics 
@@ -260,7 +263,7 @@ namespace Android.Location
             /// <see href="https://developer.android.com/reference/android/location/GnssMeasurementsEvent.Callback.html#onStatusChanged(int)"/>
             /// </summary>
             /// <param name="arg0"><see cref="int"/></param>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public void OnStatusChanged(int arg0)
             {
                 IExecuteWithSignature("onStatusChanged", "(I)V", arg0);

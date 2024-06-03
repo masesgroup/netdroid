@@ -228,40 +228,37 @@ namespace Android.Os
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/os/DropBoxManager.Entry.html#getFlags()"/> 
-            /// </summary>
-            public int Flags
-            {
-                get { return IExecuteWithSignature<int>("getFlags", "()I"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/os/DropBoxManager.Entry.html#getInputStream()"/> 
-            /// </summary>
-            public Java.Io.InputStream InputStream
-            {
-                get { return IExecuteWithSignature<Java.Io.InputStream>("getInputStream", "()Ljava/io/InputStream;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/os/DropBoxManager.Entry.html#getTag()"/> 
-            /// </summary>
-            public Java.Lang.String Tag
-            {
-                get { return IExecuteWithSignature<Java.Lang.String>("getTag", "()Ljava/lang/String;"); }
-            }
-            /// <summary>
-            /// <see href="https://developer.android.com/reference/android/os/DropBoxManager.Entry.html#getTimeMillis()"/> 
-            /// </summary>
-            public long TimeMillis
-            {
-                get { return IExecuteWithSignature<long>("getTimeMillis", "()J"); }
-            }
-            /// <summary>
             /// <see href="https://developer.android.com/reference/android/os/DropBoxManager.Entry.html#describeContents()"/>
             /// </summary>
             /// <returns><see cref="int"/></returns>
             public int DescribeContents()
             {
                 return IExecuteWithSignature<int>("describeContents", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/os/DropBoxManager.Entry.html#getFlags()"/>
+            /// </summary>
+            /// <returns><see cref="int"/></returns>
+            public int GetFlags()
+            {
+                return IExecuteWithSignature<int>("getFlags", "()I");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/os/DropBoxManager.Entry.html#getInputStream()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Io.InputStream"/></returns>
+            /// <exception cref="Java.Io.IOException"/>
+            public Java.Io.InputStream GetInputStream()
+            {
+                return IExecuteWithSignature<Java.Io.InputStream>("getInputStream", "()Ljava/io/InputStream;");
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/os/DropBoxManager.Entry.html#getTag()"/>
+            /// </summary>
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetTag()
+            {
+                return IExecuteWithSignature<Java.Lang.String>("getTag", "()Ljava/lang/String;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/os/DropBoxManager.Entry.html#getText(int)"/>
@@ -271,6 +268,14 @@ namespace Android.Os
             public Java.Lang.String GetText(int arg0)
             {
                 return IExecuteWithSignature<Java.Lang.String>("getText", "(I)Ljava/lang/String;", arg0);
+            }
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/android/os/DropBoxManager.Entry.html#getTimeMillis()"/>
+            /// </summary>
+            /// <returns><see cref="long"/></returns>
+            public long GetTimeMillis()
+            {
+                return IExecuteWithSignature<long>("getTimeMillis", "()J");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/os/DropBoxManager.Entry.html#close()"/>

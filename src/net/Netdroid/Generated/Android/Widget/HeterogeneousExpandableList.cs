@@ -64,20 +64,6 @@ namespace Android.Widget
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/HeterogeneousExpandableList.html#getChildTypeCount()"/> 
-        /// </summary>
-        public int ChildTypeCount
-        {
-            get { return IExecuteWithSignature<int>("getChildTypeCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/HeterogeneousExpandableList.html#getGroupTypeCount()"/> 
-        /// </summary>
-        public int GroupTypeCount
-        {
-            get { return IExecuteWithSignature<int>("getGroupTypeCount", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/HeterogeneousExpandableList.html#getChildType(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -88,6 +74,14 @@ namespace Android.Widget
             return IExecute<int>("getChildType", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/HeterogeneousExpandableList.html#getChildTypeCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetChildTypeCount()
+        {
+            return IExecuteWithSignature<int>("getChildTypeCount", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/HeterogeneousExpandableList.html#getGroupType(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -95,6 +89,14 @@ namespace Android.Widget
         public int GetGroupType(int arg0)
         {
             return IExecuteWithSignature<int>("getGroupType", "(I)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/HeterogeneousExpandableList.html#getGroupTypeCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetGroupTypeCount()
+        {
+            return IExecuteWithSignature<int>("getGroupTypeCount", "()I");
         }
 
         #endregion

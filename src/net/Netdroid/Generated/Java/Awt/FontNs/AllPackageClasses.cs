@@ -28,7 +28,7 @@ namespace Java.Awt.FontNs
 {
     #region NumericShaper
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.desktop/java/awt/font/NumericShaper.html"/>
+    /// <see href="https://developer.android.com/reference/java/awt/font/NumericShaper.html"/>
     /// </summary>
     public partial class NumericShaper : Java.Io.Serializable
     {
@@ -68,7 +68,7 @@ namespace Java.Awt.FontNs
         // TODO: complete the class
         #region Range
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.desktop/java/awt/font/NumericShaper.Range.html"/>
+        /// <see href="https://developer.android.com/reference/java/awt/font/NumericShaper.Range.html"/>
         /// </summary>
         public partial class Range : Java.Lang.Enum<Java.Awt.FontNs.NumericShaper.Range>
         {
@@ -116,7 +116,7 @@ namespace Java.Awt.FontNs
 
     #region TextAttribute
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.desktop/java/awt/font/TextAttribute.html"/>
+    /// <see href="https://developer.android.com/reference/java/awt/font/TextAttribute.html"/>
     /// </summary>
     public partial class TextAttribute : Java.Text.AttributedCharacterIterator.Attribute
     {

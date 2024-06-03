@@ -37,67 +37,54 @@ namespace Android.Os.Storage
         #endregion
 
         #region Fields
-
-        #endregion
-
-        #region Static methods
-
-        #endregion
-
-        #region Instance methods
         /// <summary>
-        /// Handlers initializer for <see cref="OnObbStateChangeListener"/>
+        /// <see href="https://developer.android.com/reference/android/os/storage/OnObbStateChangeListener.html#ERROR_ALREADY_MOUNTED"/>
         /// </summary>
-        protected virtual void InitializeHandlers()
-        {
-            AddEventHandler("onObbStateChange", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Lang.String>>>(OnObbStateChangeEventHandler));
-
-        }
-
+        public static int ERROR_ALREADY_MOUNTED { get { if (!_ERROR_ALREADY_MOUNTEDReady) { _ERROR_ALREADY_MOUNTEDContent = SGetField<int>(LocalBridgeClazz, "ERROR_ALREADY_MOUNTED"); _ERROR_ALREADY_MOUNTEDReady = true; } return _ERROR_ALREADY_MOUNTEDContent; } }
+        private static int _ERROR_ALREADY_MOUNTEDContent = default;
+        private static bool _ERROR_ALREADY_MOUNTEDReady = false; // this is used because in case of generics 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/android/os/storage/OnObbStateChangeListener.html#onObbStateChange(java.lang.String,int)"/>
+        /// <see href="https://developer.android.com/reference/android/os/storage/OnObbStateChangeListener.html#ERROR_COULD_NOT_MOUNT"/>
         /// </summary>
-        /// <remarks>If <see cref="OnOnObbStateChange"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Java.Lang.String, int> OnOnObbStateChange { get; set; } = null;
-
-        void OnObbStateChangeEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Lang.String>> data)
-        {
-            var methodToExecute = (OnOnObbStateChange != null) ? OnOnObbStateChange : OnObbStateChange;
-            methodToExecute.Invoke(data.EventData.TypedEventData, data.EventData.GetAt<int>(0));
-        }
-
+        public static int ERROR_COULD_NOT_MOUNT { get { if (!_ERROR_COULD_NOT_MOUNTReady) { _ERROR_COULD_NOT_MOUNTContent = SGetField<int>(LocalBridgeClazz, "ERROR_COULD_NOT_MOUNT"); _ERROR_COULD_NOT_MOUNTReady = true; } return _ERROR_COULD_NOT_MOUNTContent; } }
+        private static int _ERROR_COULD_NOT_MOUNTContent = default;
+        private static bool _ERROR_COULD_NOT_MOUNTReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/os/storage/OnObbStateChangeListener.html#onObbStateChange(java.lang.String,int)"/>
+        /// <see href="https://developer.android.com/reference/android/os/storage/OnObbStateChangeListener.html#ERROR_COULD_NOT_UNMOUNT"/>
         /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        public virtual void OnObbStateChange(Java.Lang.String arg0, int arg1)
-        {
-            
-        }
-
-        #endregion
-
-        #region Nested classes
-
-        #endregion
-
-        // TODO: complete the class
-    }
-    #endregion
-
-    #region OnObbStateChangeListenerDirect
-    public partial class OnObbStateChangeListenerDirect
-    {
-        #region Constructors
-
-        #endregion
-
-        #region Class/Interface conversion operators
-
-        #endregion
-
-        #region Fields
+        public static int ERROR_COULD_NOT_UNMOUNT { get { if (!_ERROR_COULD_NOT_UNMOUNTReady) { _ERROR_COULD_NOT_UNMOUNTContent = SGetField<int>(LocalBridgeClazz, "ERROR_COULD_NOT_UNMOUNT"); _ERROR_COULD_NOT_UNMOUNTReady = true; } return _ERROR_COULD_NOT_UNMOUNTContent; } }
+        private static int _ERROR_COULD_NOT_UNMOUNTContent = default;
+        private static bool _ERROR_COULD_NOT_UNMOUNTReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/storage/OnObbStateChangeListener.html#ERROR_INTERNAL"/>
+        /// </summary>
+        public static int ERROR_INTERNAL { get { if (!_ERROR_INTERNALReady) { _ERROR_INTERNALContent = SGetField<int>(LocalBridgeClazz, "ERROR_INTERNAL"); _ERROR_INTERNALReady = true; } return _ERROR_INTERNALContent; } }
+        private static int _ERROR_INTERNALContent = default;
+        private static bool _ERROR_INTERNALReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/storage/OnObbStateChangeListener.html#ERROR_NOT_MOUNTED"/>
+        /// </summary>
+        public static int ERROR_NOT_MOUNTED { get { if (!_ERROR_NOT_MOUNTEDReady) { _ERROR_NOT_MOUNTEDContent = SGetField<int>(LocalBridgeClazz, "ERROR_NOT_MOUNTED"); _ERROR_NOT_MOUNTEDReady = true; } return _ERROR_NOT_MOUNTEDContent; } }
+        private static int _ERROR_NOT_MOUNTEDContent = default;
+        private static bool _ERROR_NOT_MOUNTEDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/storage/OnObbStateChangeListener.html#ERROR_PERMISSION_DENIED"/>
+        /// </summary>
+        public static int ERROR_PERMISSION_DENIED { get { if (!_ERROR_PERMISSION_DENIEDReady) { _ERROR_PERMISSION_DENIEDContent = SGetField<int>(LocalBridgeClazz, "ERROR_PERMISSION_DENIED"); _ERROR_PERMISSION_DENIEDReady = true; } return _ERROR_PERMISSION_DENIEDContent; } }
+        private static int _ERROR_PERMISSION_DENIEDContent = default;
+        private static bool _ERROR_PERMISSION_DENIEDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/storage/OnObbStateChangeListener.html#MOUNTED"/>
+        /// </summary>
+        public static int MOUNTED { get { if (!_MOUNTEDReady) { _MOUNTEDContent = SGetField<int>(LocalBridgeClazz, "MOUNTED"); _MOUNTEDReady = true; } return _MOUNTEDContent; } }
+        private static int _MOUNTEDContent = default;
+        private static bool _MOUNTEDReady = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/os/storage/OnObbStateChangeListener.html#UNMOUNTED"/>
+        /// </summary>
+        public static int UNMOUNTED { get { if (!_UNMOUNTEDReady) { _UNMOUNTEDContent = SGetField<int>(LocalBridgeClazz, "UNMOUNTED"); _UNMOUNTEDReady = true; } return _UNMOUNTEDContent; } }
+        private static int _UNMOUNTEDContent = default;
+        private static bool _UNMOUNTEDReady = false; // this is used because in case of generics 
 
         #endregion
 
@@ -111,7 +98,7 @@ namespace Android.Os.Storage
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        public override void OnObbStateChange(Java.Lang.String arg0, int arg1)
+        public void OnObbStateChange(Java.Lang.String arg0, int arg1)
         {
             IExecute("onObbStateChange", arg0, arg1);
         }

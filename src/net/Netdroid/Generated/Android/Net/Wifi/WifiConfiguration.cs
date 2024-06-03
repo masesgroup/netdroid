@@ -33,7 +33,7 @@ namespace Android.Net.Wifi
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.html#%3Cinit%3E(android.net.wifi.WifiConfiguration)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Net.Wifi.WifiConfiguration"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public WifiConfiguration(Android.Net.Wifi.WifiConfiguration arg0)
             : base(arg0)
         {
@@ -49,217 +49,217 @@ namespace Android.Net.Wifi
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.html#enterpriseConfig"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Android.Net.Wifi.WifiEnterpriseConfig enterpriseConfig { get { return IGetField<Android.Net.Wifi.WifiEnterpriseConfig>("enterpriseConfig"); } set { ISetField("enterpriseConfig", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.html#hiddenSSID"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool hiddenSSID { get { return IGetField<bool>("hiddenSSID"); } set { ISetField("hiddenSSID", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.html#isHomeProviderNetwork"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool isHomeProviderNetwork { get { return IGetField<bool>("isHomeProviderNetwork"); } set { ISetField("isHomeProviderNetwork", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.html#networkId"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int networkId { get { return IGetField<int>("networkId"); } set { ISetField("networkId", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.html#priority"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int priority { get { return IGetField<int>("priority"); } set { ISetField("priority", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.html#status"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int status { get { return IGetField<int>("status"); } set { ISetField("status", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.html#wepTxKeyIndex"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int wepTxKeyIndex { get { return IGetField<int>("wepTxKeyIndex"); } set { ISetField("wepTxKeyIndex", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.html#BSSID"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Lang.String BSSID { get { return IGetField<Java.Lang.String>("BSSID"); } set { ISetField("BSSID", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.html#FQDN"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Lang.String FQDN { get { return IGetField<Java.Lang.String>("FQDN"); } set { ISetField("FQDN", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.html#preSharedKey"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Lang.String preSharedKey { get { return IGetField<Java.Lang.String>("preSharedKey"); } set { ISetField("preSharedKey", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.html#providerFriendlyName"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Lang.String providerFriendlyName { get { return IGetField<Java.Lang.String>("providerFriendlyName"); } set { ISetField("providerFriendlyName", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.html#SSID"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Lang.String SSID { get { return IGetField<Java.Lang.String>("SSID"); } set { ISetField("SSID", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.html#wepKeys"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Lang.String[] wepKeys { get { return IGetFieldArray<Java.Lang.String>("wepKeys"); } set { ISetField("wepKeys", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.html#allowedAuthAlgorithms"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Util.BitSet allowedAuthAlgorithms { get { return IGetField<Java.Util.BitSet>("allowedAuthAlgorithms"); } set { ISetField("allowedAuthAlgorithms", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.html#allowedGroupCiphers"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Util.BitSet allowedGroupCiphers { get { return IGetField<Java.Util.BitSet>("allowedGroupCiphers"); } set { ISetField("allowedGroupCiphers", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.html#allowedGroupManagementCiphers"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Util.BitSet allowedGroupManagementCiphers { get { return IGetField<Java.Util.BitSet>("allowedGroupManagementCiphers"); } set { ISetField("allowedGroupManagementCiphers", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.html#allowedKeyManagement"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Util.BitSet allowedKeyManagement { get { return IGetField<Java.Util.BitSet>("allowedKeyManagement"); } set { ISetField("allowedKeyManagement", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.html#allowedPairwiseCiphers"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Util.BitSet allowedPairwiseCiphers { get { return IGetField<Java.Util.BitSet>("allowedPairwiseCiphers"); } set { ISetField("allowedPairwiseCiphers", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.html#allowedProtocols"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Util.BitSet allowedProtocols { get { return IGetField<Java.Util.BitSet>("allowedProtocols"); } set { ISetField("allowedProtocols", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.html#allowedSuiteBCiphers"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Util.BitSet allowedSuiteBCiphers { get { return IGetField<Java.Util.BitSet>("allowedSuiteBCiphers"); } set { ISetField("allowedSuiteBCiphers", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.html#roamingConsortiumIds"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public long[] roamingConsortiumIds { get { return IGetFieldArray<long>("roamingConsortiumIds"); } set { ISetField("roamingConsortiumIds", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.html#RANDOMIZATION_AUTO"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int RANDOMIZATION_AUTO { get { if (!_RANDOMIZATION_AUTOReady) { _RANDOMIZATION_AUTOContent = SGetField<int>(LocalBridgeClazz, "RANDOMIZATION_AUTO"); _RANDOMIZATION_AUTOReady = true; } return _RANDOMIZATION_AUTOContent; } }
         private static int _RANDOMIZATION_AUTOContent = default;
         private static bool _RANDOMIZATION_AUTOReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.html#RANDOMIZATION_NON_PERSISTENT"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int RANDOMIZATION_NON_PERSISTENT { get { if (!_RANDOMIZATION_NON_PERSISTENTReady) { _RANDOMIZATION_NON_PERSISTENTContent = SGetField<int>(LocalBridgeClazz, "RANDOMIZATION_NON_PERSISTENT"); _RANDOMIZATION_NON_PERSISTENTReady = true; } return _RANDOMIZATION_NON_PERSISTENTContent; } }
         private static int _RANDOMIZATION_NON_PERSISTENTContent = default;
         private static bool _RANDOMIZATION_NON_PERSISTENTReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.html#RANDOMIZATION_NONE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int RANDOMIZATION_NONE { get { if (!_RANDOMIZATION_NONEReady) { _RANDOMIZATION_NONEContent = SGetField<int>(LocalBridgeClazz, "RANDOMIZATION_NONE"); _RANDOMIZATION_NONEReady = true; } return _RANDOMIZATION_NONEContent; } }
         private static int _RANDOMIZATION_NONEContent = default;
         private static bool _RANDOMIZATION_NONEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.html#RANDOMIZATION_PERSISTENT"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int RANDOMIZATION_PERSISTENT { get { if (!_RANDOMIZATION_PERSISTENTReady) { _RANDOMIZATION_PERSISTENTContent = SGetField<int>(LocalBridgeClazz, "RANDOMIZATION_PERSISTENT"); _RANDOMIZATION_PERSISTENTReady = true; } return _RANDOMIZATION_PERSISTENTContent; } }
         private static int _RANDOMIZATION_PERSISTENTContent = default;
         private static bool _RANDOMIZATION_PERSISTENTReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.html#SECURITY_TYPE_DPP"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int SECURITY_TYPE_DPP { get { if (!_SECURITY_TYPE_DPPReady) { _SECURITY_TYPE_DPPContent = SGetField<int>(LocalBridgeClazz, "SECURITY_TYPE_DPP"); _SECURITY_TYPE_DPPReady = true; } return _SECURITY_TYPE_DPPContent; } }
         private static int _SECURITY_TYPE_DPPContent = default;
         private static bool _SECURITY_TYPE_DPPReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.html#SECURITY_TYPE_EAP"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int SECURITY_TYPE_EAP { get { if (!_SECURITY_TYPE_EAPReady) { _SECURITY_TYPE_EAPContent = SGetField<int>(LocalBridgeClazz, "SECURITY_TYPE_EAP"); _SECURITY_TYPE_EAPReady = true; } return _SECURITY_TYPE_EAPContent; } }
         private static int _SECURITY_TYPE_EAPContent = default;
         private static bool _SECURITY_TYPE_EAPReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.html#SECURITY_TYPE_EAP_SUITE_B"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int SECURITY_TYPE_EAP_SUITE_B { get { if (!_SECURITY_TYPE_EAP_SUITE_BReady) { _SECURITY_TYPE_EAP_SUITE_BContent = SGetField<int>(LocalBridgeClazz, "SECURITY_TYPE_EAP_SUITE_B"); _SECURITY_TYPE_EAP_SUITE_BReady = true; } return _SECURITY_TYPE_EAP_SUITE_BContent; } }
         private static int _SECURITY_TYPE_EAP_SUITE_BContent = default;
         private static bool _SECURITY_TYPE_EAP_SUITE_BReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.html#SECURITY_TYPE_EAP_WPA3_ENTERPRISE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int SECURITY_TYPE_EAP_WPA3_ENTERPRISE { get { if (!_SECURITY_TYPE_EAP_WPA3_ENTERPRISEReady) { _SECURITY_TYPE_EAP_WPA3_ENTERPRISEContent = SGetField<int>(LocalBridgeClazz, "SECURITY_TYPE_EAP_WPA3_ENTERPRISE"); _SECURITY_TYPE_EAP_WPA3_ENTERPRISEReady = true; } return _SECURITY_TYPE_EAP_WPA3_ENTERPRISEContent; } }
         private static int _SECURITY_TYPE_EAP_WPA3_ENTERPRISEContent = default;
         private static bool _SECURITY_TYPE_EAP_WPA3_ENTERPRISEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.html#SECURITY_TYPE_EAP_WPA3_ENTERPRISE_192_BIT"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int SECURITY_TYPE_EAP_WPA3_ENTERPRISE_192_BIT { get { if (!_SECURITY_TYPE_EAP_WPA3_ENTERPRISE_192_BITReady) { _SECURITY_TYPE_EAP_WPA3_ENTERPRISE_192_BITContent = SGetField<int>(LocalBridgeClazz, "SECURITY_TYPE_EAP_WPA3_ENTERPRISE_192_BIT"); _SECURITY_TYPE_EAP_WPA3_ENTERPRISE_192_BITReady = true; } return _SECURITY_TYPE_EAP_WPA3_ENTERPRISE_192_BITContent; } }
         private static int _SECURITY_TYPE_EAP_WPA3_ENTERPRISE_192_BITContent = default;
         private static bool _SECURITY_TYPE_EAP_WPA3_ENTERPRISE_192_BITReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.html#SECURITY_TYPE_OPEN"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int SECURITY_TYPE_OPEN { get { if (!_SECURITY_TYPE_OPENReady) { _SECURITY_TYPE_OPENContent = SGetField<int>(LocalBridgeClazz, "SECURITY_TYPE_OPEN"); _SECURITY_TYPE_OPENReady = true; } return _SECURITY_TYPE_OPENContent; } }
         private static int _SECURITY_TYPE_OPENContent = default;
         private static bool _SECURITY_TYPE_OPENReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.html#SECURITY_TYPE_OWE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int SECURITY_TYPE_OWE { get { if (!_SECURITY_TYPE_OWEReady) { _SECURITY_TYPE_OWEContent = SGetField<int>(LocalBridgeClazz, "SECURITY_TYPE_OWE"); _SECURITY_TYPE_OWEReady = true; } return _SECURITY_TYPE_OWEContent; } }
         private static int _SECURITY_TYPE_OWEContent = default;
         private static bool _SECURITY_TYPE_OWEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.html#SECURITY_TYPE_PSK"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int SECURITY_TYPE_PSK { get { if (!_SECURITY_TYPE_PSKReady) { _SECURITY_TYPE_PSKContent = SGetField<int>(LocalBridgeClazz, "SECURITY_TYPE_PSK"); _SECURITY_TYPE_PSKReady = true; } return _SECURITY_TYPE_PSKContent; } }
         private static int _SECURITY_TYPE_PSKContent = default;
         private static bool _SECURITY_TYPE_PSKReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.html#SECURITY_TYPE_SAE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int SECURITY_TYPE_SAE { get { if (!_SECURITY_TYPE_SAEReady) { _SECURITY_TYPE_SAEContent = SGetField<int>(LocalBridgeClazz, "SECURITY_TYPE_SAE"); _SECURITY_TYPE_SAEReady = true; } return _SECURITY_TYPE_SAEContent; } }
         private static int _SECURITY_TYPE_SAEContent = default;
         private static bool _SECURITY_TYPE_SAEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.html#SECURITY_TYPE_WAPI_CERT"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int SECURITY_TYPE_WAPI_CERT { get { if (!_SECURITY_TYPE_WAPI_CERTReady) { _SECURITY_TYPE_WAPI_CERTContent = SGetField<int>(LocalBridgeClazz, "SECURITY_TYPE_WAPI_CERT"); _SECURITY_TYPE_WAPI_CERTReady = true; } return _SECURITY_TYPE_WAPI_CERTContent; } }
         private static int _SECURITY_TYPE_WAPI_CERTContent = default;
         private static bool _SECURITY_TYPE_WAPI_CERTReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.html#SECURITY_TYPE_WAPI_PSK"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int SECURITY_TYPE_WAPI_PSK { get { if (!_SECURITY_TYPE_WAPI_PSKReady) { _SECURITY_TYPE_WAPI_PSKContent = SGetField<int>(LocalBridgeClazz, "SECURITY_TYPE_WAPI_PSK"); _SECURITY_TYPE_WAPI_PSKReady = true; } return _SECURITY_TYPE_WAPI_PSKContent; } }
         private static int _SECURITY_TYPE_WAPI_PSKContent = default;
         private static bool _SECURITY_TYPE_WAPI_PSKReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.html#SECURITY_TYPE_WEP"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int SECURITY_TYPE_WEP { get { if (!_SECURITY_TYPE_WEPReady) { _SECURITY_TYPE_WEPContent = SGetField<int>(LocalBridgeClazz, "SECURITY_TYPE_WEP"); _SECURITY_TYPE_WEPReady = true; } return _SECURITY_TYPE_WEPContent; } }
         private static int _SECURITY_TYPE_WEPContent = default;
         private static bool _SECURITY_TYPE_WEPReady = false; // this is used because in case of generics 
@@ -272,42 +272,28 @@ namespace Android.Net.Wifi
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.html#getHttpProxy()"/> <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.html#setHttpProxy(android.net.ProxyInfo)"/>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.html#getRandomizedMacAddress()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Net.ProxyInfo HttpProxy
+        /// <returns><see cref="Android.Net.MacAddress"/></returns>
+        [global::System.Obsolete()]
+        public Android.Net.MacAddress GetRandomizedMacAddress()
         {
-            get { return IExecuteWithSignature<Android.Net.ProxyInfo>("getHttpProxy", "()Landroid/net/ProxyInfo;"); } set { IExecuteWithSignature("setHttpProxy", "(Landroid/net/ProxyInfo;)V", value); }
+            return IExecuteWithSignature<Android.Net.MacAddress>("getRandomizedMacAddress", "()Landroid/net/MacAddress;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.html#getKey()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.html#getHttpProxy()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Java.Lang.String Key
+        /// <returns><see cref="Android.Net.ProxyInfo"/></returns>
+        [global::System.Obsolete()]
+        public Android.Net.ProxyInfo GetHttpProxy()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getKey", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.html#getMacRandomizationSetting()"/> <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.html#setMacRandomizationSetting(int)"/>
-        /// </summary>
-        [System.Obsolete()]
-        public int MacRandomizationSetting
-        {
-            get { return IExecuteWithSignature<int>("getMacRandomizationSetting", "()I"); } set { IExecuteWithSignature("setMacRandomizationSetting", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.html#getRandomizedMacAddress()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Android.Net.MacAddress RandomizedMacAddress
-        {
-            get { return IExecuteWithSignature<Android.Net.MacAddress>("getRandomizedMacAddress", "()Landroid/net/MacAddress;"); }
+            return IExecuteWithSignature<Android.Net.ProxyInfo>("getHttpProxy", "()Landroid/net/ProxyInfo;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.html#isDppConfigurator()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsDppConfigurator()
         {
             return IExecuteWithSignature<bool>("isDppConfigurator", "()Z");
@@ -316,7 +302,7 @@ namespace Android.Net.Wifi
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.html#isPasspoint()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsPasspoint()
         {
             return IExecuteWithSignature<bool>("isPasspoint", "()Z");
@@ -330,19 +316,55 @@ namespace Android.Net.Wifi
             return IExecuteWithSignature<int>("describeContents", "()I");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.html#getMacRandomizationSetting()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetMacRandomizationSetting()
+        {
+            return IExecuteWithSignature<int>("getMacRandomizationSetting", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.html#getKey()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        [global::System.Obsolete()]
+        public Java.Lang.String GetKey()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getKey", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.html#setHttpProxy(android.net.ProxyInfo)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Net.ProxyInfo"/></param>
+        [global::System.Obsolete()]
+        public void SetHttpProxy(Android.Net.ProxyInfo arg0)
+        {
+            IExecuteWithSignature("setHttpProxy", "(Landroid/net/ProxyInfo;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.html#setIpConfiguration(android.net.IpConfiguration)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Net.IpConfiguration"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetIpConfiguration(Android.Net.IpConfiguration arg0)
         {
             IExecuteWithSignature("setIpConfiguration", "(Landroid/net/IpConfiguration;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.html#setMacRandomizationSetting(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        [global::System.Obsolete()]
+        public void SetMacRandomizationSetting(int arg0)
+        {
+            IExecuteWithSignature("setMacRandomizationSetting", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.html#setSecurityParams(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetSecurityParams(int arg0)
         {
             IExecuteWithSignature("setSecurityParams", "(I)V", arg0);
@@ -375,42 +397,42 @@ namespace Android.Net.Wifi
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.AuthAlgorithm.html#LEAP"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int LEAP { get { if (!_LEAPReady) { _LEAPContent = SGetField<int>(LocalBridgeClazz, "LEAP"); _LEAPReady = true; } return _LEAPContent; } }
             private static int _LEAPContent = default;
             private static bool _LEAPReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.AuthAlgorithm.html#OPEN"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int OPEN { get { if (!_OPENReady) { _OPENContent = SGetField<int>(LocalBridgeClazz, "OPEN"); _OPENReady = true; } return _OPENContent; } }
             private static int _OPENContent = default;
             private static bool _OPENReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.AuthAlgorithm.html#SAE"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int SAE { get { if (!_SAEReady) { _SAEContent = SGetField<int>(LocalBridgeClazz, "SAE"); _SAEReady = true; } return _SAEContent; } }
             private static int _SAEContent = default;
             private static bool _SAEReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.AuthAlgorithm.html#SHARED"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int SHARED { get { if (!_SHAREDReady) { _SHAREDContent = SGetField<int>(LocalBridgeClazz, "SHARED"); _SHAREDReady = true; } return _SHAREDContent; } }
             private static int _SHAREDContent = default;
             private static bool _SHAREDReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.AuthAlgorithm.html#varName"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String varName { get { if (!_varNameReady) { _varNameContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "varName"); _varNameReady = true; } return _varNameContent; } }
             private static Java.Lang.String _varNameContent = default;
             private static bool _varNameReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.AuthAlgorithm.html#strings"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String[] strings { get { if (!_stringsReady) { _stringsContent = SGetFieldArray<Java.Lang.String>(LocalBridgeClazz, "strings"); _stringsReady = true; } return _stringsContent; } }
             private static Java.Lang.String[] _stringsContent = default;
             private static bool _stringsReady = false; // this is used because in case of generics 
@@ -448,63 +470,63 @@ namespace Android.Net.Wifi
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.GroupCipher.html#CCMP"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int CCMP { get { if (!_CCMPReady) { _CCMPContent = SGetField<int>(LocalBridgeClazz, "CCMP"); _CCMPReady = true; } return _CCMPContent; } }
             private static int _CCMPContent = default;
             private static bool _CCMPReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.GroupCipher.html#GCMP_128"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int GCMP_128 { get { if (!_GCMP_128Ready) { _GCMP_128Content = SGetField<int>(LocalBridgeClazz, "GCMP_128"); _GCMP_128Ready = true; } return _GCMP_128Content; } }
             private static int _GCMP_128Content = default;
             private static bool _GCMP_128Ready = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.GroupCipher.html#GCMP_256"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int GCMP_256 { get { if (!_GCMP_256Ready) { _GCMP_256Content = SGetField<int>(LocalBridgeClazz, "GCMP_256"); _GCMP_256Ready = true; } return _GCMP_256Content; } }
             private static int _GCMP_256Content = default;
             private static bool _GCMP_256Ready = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.GroupCipher.html#SMS4"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int SMS4 { get { if (!_SMS4Ready) { _SMS4Content = SGetField<int>(LocalBridgeClazz, "SMS4"); _SMS4Ready = true; } return _SMS4Content; } }
             private static int _SMS4Content = default;
             private static bool _SMS4Ready = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.GroupCipher.html#TKIP"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int TKIP { get { if (!_TKIPReady) { _TKIPContent = SGetField<int>(LocalBridgeClazz, "TKIP"); _TKIPReady = true; } return _TKIPContent; } }
             private static int _TKIPContent = default;
             private static bool _TKIPReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.GroupCipher.html#WEP104"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int WEP104 { get { if (!_WEP104Ready) { _WEP104Content = SGetField<int>(LocalBridgeClazz, "WEP104"); _WEP104Ready = true; } return _WEP104Content; } }
             private static int _WEP104Content = default;
             private static bool _WEP104Ready = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.GroupCipher.html#WEP40"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int WEP40 { get { if (!_WEP40Ready) { _WEP40Content = SGetField<int>(LocalBridgeClazz, "WEP40"); _WEP40Ready = true; } return _WEP40Content; } }
             private static int _WEP40Content = default;
             private static bool _WEP40Ready = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.GroupCipher.html#varName"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String varName { get { if (!_varNameReady) { _varNameContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "varName"); _varNameReady = true; } return _varNameContent; } }
             private static Java.Lang.String _varNameContent = default;
             private static bool _varNameReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.GroupCipher.html#strings"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String[] strings { get { if (!_stringsReady) { _stringsContent = SGetFieldArray<Java.Lang.String>(LocalBridgeClazz, "strings"); _stringsReady = true; } return _stringsContent; } }
             private static Java.Lang.String[] _stringsContent = default;
             private static bool _stringsReady = false; // this is used because in case of generics 
@@ -542,21 +564,21 @@ namespace Android.Net.Wifi
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.GroupMgmtCipher.html#BIP_CMAC_256"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int BIP_CMAC_256 { get { if (!_BIP_CMAC_256Ready) { _BIP_CMAC_256Content = SGetField<int>(LocalBridgeClazz, "BIP_CMAC_256"); _BIP_CMAC_256Ready = true; } return _BIP_CMAC_256Content; } }
             private static int _BIP_CMAC_256Content = default;
             private static bool _BIP_CMAC_256Ready = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.GroupMgmtCipher.html#BIP_GMAC_128"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int BIP_GMAC_128 { get { if (!_BIP_GMAC_128Ready) { _BIP_GMAC_128Content = SGetField<int>(LocalBridgeClazz, "BIP_GMAC_128"); _BIP_GMAC_128Ready = true; } return _BIP_GMAC_128Content; } }
             private static int _BIP_GMAC_128Content = default;
             private static bool _BIP_GMAC_128Ready = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.GroupMgmtCipher.html#BIP_GMAC_256"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int BIP_GMAC_256 { get { if (!_BIP_GMAC_256Ready) { _BIP_GMAC_256Content = SGetField<int>(LocalBridgeClazz, "BIP_GMAC_256"); _BIP_GMAC_256Ready = true; } return _BIP_GMAC_256Content; } }
             private static int _BIP_GMAC_256Content = default;
             private static bool _BIP_GMAC_256Ready = false; // this is used because in case of generics 
@@ -594,140 +616,140 @@ namespace Android.Net.Wifi
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.KeyMgmt.html#DPP"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int DPP { get { if (!_DPPReady) { _DPPContent = SGetField<int>(LocalBridgeClazz, "DPP"); _DPPReady = true; } return _DPPContent; } }
             private static int _DPPContent = default;
             private static bool _DPPReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.KeyMgmt.html#FILS_SHA256"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int FILS_SHA256 { get { if (!_FILS_SHA256Ready) { _FILS_SHA256Content = SGetField<int>(LocalBridgeClazz, "FILS_SHA256"); _FILS_SHA256Ready = true; } return _FILS_SHA256Content; } }
             private static int _FILS_SHA256Content = default;
             private static bool _FILS_SHA256Ready = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.KeyMgmt.html#FILS_SHA384"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int FILS_SHA384 { get { if (!_FILS_SHA384Ready) { _FILS_SHA384Content = SGetField<int>(LocalBridgeClazz, "FILS_SHA384"); _FILS_SHA384Ready = true; } return _FILS_SHA384Content; } }
             private static int _FILS_SHA384Content = default;
             private static bool _FILS_SHA384Ready = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.KeyMgmt.html#FT_EAP"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int FT_EAP { get { if (!_FT_EAPReady) { _FT_EAPContent = SGetField<int>(LocalBridgeClazz, "FT_EAP"); _FT_EAPReady = true; } return _FT_EAPContent; } }
             private static int _FT_EAPContent = default;
             private static bool _FT_EAPReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.KeyMgmt.html#FT_PSK"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int FT_PSK { get { if (!_FT_PSKReady) { _FT_PSKContent = SGetField<int>(LocalBridgeClazz, "FT_PSK"); _FT_PSKReady = true; } return _FT_PSKContent; } }
             private static int _FT_PSKContent = default;
             private static bool _FT_PSKReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.KeyMgmt.html#IEEE8021X"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int IEEE8021X { get { if (!_IEEE8021XReady) { _IEEE8021XContent = SGetField<int>(LocalBridgeClazz, "IEEE8021X"); _IEEE8021XReady = true; } return _IEEE8021XContent; } }
             private static int _IEEE8021XContent = default;
             private static bool _IEEE8021XReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.KeyMgmt.html#NONE"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int NONE { get { if (!_NONEReady) { _NONEContent = SGetField<int>(LocalBridgeClazz, "NONE"); _NONEReady = true; } return _NONEContent; } }
             private static int _NONEContent = default;
             private static bool _NONEReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.KeyMgmt.html#OSEN"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int OSEN { get { if (!_OSENReady) { _OSENContent = SGetField<int>(LocalBridgeClazz, "OSEN"); _OSENReady = true; } return _OSENContent; } }
             private static int _OSENContent = default;
             private static bool _OSENReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.KeyMgmt.html#OWE"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int OWE { get { if (!_OWEReady) { _OWEContent = SGetField<int>(LocalBridgeClazz, "OWE"); _OWEReady = true; } return _OWEContent; } }
             private static int _OWEContent = default;
             private static bool _OWEReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.KeyMgmt.html#SAE"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int SAE { get { if (!_SAEReady) { _SAEContent = SGetField<int>(LocalBridgeClazz, "SAE"); _SAEReady = true; } return _SAEContent; } }
             private static int _SAEContent = default;
             private static bool _SAEReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.KeyMgmt.html#SUITE_B_192"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int SUITE_B_192 { get { if (!_SUITE_B_192Ready) { _SUITE_B_192Content = SGetField<int>(LocalBridgeClazz, "SUITE_B_192"); _SUITE_B_192Ready = true; } return _SUITE_B_192Content; } }
             private static int _SUITE_B_192Content = default;
             private static bool _SUITE_B_192Ready = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.KeyMgmt.html#WAPI_CERT"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int WAPI_CERT { get { if (!_WAPI_CERTReady) { _WAPI_CERTContent = SGetField<int>(LocalBridgeClazz, "WAPI_CERT"); _WAPI_CERTReady = true; } return _WAPI_CERTContent; } }
             private static int _WAPI_CERTContent = default;
             private static bool _WAPI_CERTReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.KeyMgmt.html#WAPI_PSK"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int WAPI_PSK { get { if (!_WAPI_PSKReady) { _WAPI_PSKContent = SGetField<int>(LocalBridgeClazz, "WAPI_PSK"); _WAPI_PSKReady = true; } return _WAPI_PSKContent; } }
             private static int _WAPI_PSKContent = default;
             private static bool _WAPI_PSKReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.KeyMgmt.html#WPA_EAP"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int WPA_EAP { get { if (!_WPA_EAPReady) { _WPA_EAPContent = SGetField<int>(LocalBridgeClazz, "WPA_EAP"); _WPA_EAPReady = true; } return _WPA_EAPContent; } }
             private static int _WPA_EAPContent = default;
             private static bool _WPA_EAPReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.KeyMgmt.html#WPA_EAP_SHA256"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int WPA_EAP_SHA256 { get { if (!_WPA_EAP_SHA256Ready) { _WPA_EAP_SHA256Content = SGetField<int>(LocalBridgeClazz, "WPA_EAP_SHA256"); _WPA_EAP_SHA256Ready = true; } return _WPA_EAP_SHA256Content; } }
             private static int _WPA_EAP_SHA256Content = default;
             private static bool _WPA_EAP_SHA256Ready = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.KeyMgmt.html#WPA_PSK"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int WPA_PSK { get { if (!_WPA_PSKReady) { _WPA_PSKContent = SGetField<int>(LocalBridgeClazz, "WPA_PSK"); _WPA_PSKReady = true; } return _WPA_PSKContent; } }
             private static int _WPA_PSKContent = default;
             private static bool _WPA_PSKReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.KeyMgmt.html#WPA_PSK_SHA256"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int WPA_PSK_SHA256 { get { if (!_WPA_PSK_SHA256Ready) { _WPA_PSK_SHA256Content = SGetField<int>(LocalBridgeClazz, "WPA_PSK_SHA256"); _WPA_PSK_SHA256Ready = true; } return _WPA_PSK_SHA256Content; } }
             private static int _WPA_PSK_SHA256Content = default;
             private static bool _WPA_PSK_SHA256Ready = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.KeyMgmt.html#WPA2_PSK"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int WPA2_PSK { get { if (!_WPA2_PSKReady) { _WPA2_PSKContent = SGetField<int>(LocalBridgeClazz, "WPA2_PSK"); _WPA2_PSKReady = true; } return _WPA2_PSKContent; } }
             private static int _WPA2_PSKContent = default;
             private static bool _WPA2_PSKReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.KeyMgmt.html#varName"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String varName { get { if (!_varNameReady) { _varNameContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "varName"); _varNameReady = true; } return _varNameContent; } }
             private static Java.Lang.String _varNameContent = default;
             private static bool _varNameReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.KeyMgmt.html#strings"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String[] strings { get { if (!_stringsReady) { _stringsContent = SGetFieldArray<Java.Lang.String>(LocalBridgeClazz, "strings"); _stringsReady = true; } return _stringsContent; } }
             private static Java.Lang.String[] _stringsContent = default;
             private static bool _stringsReady = false; // this is used because in case of generics 
@@ -765,56 +787,56 @@ namespace Android.Net.Wifi
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.PairwiseCipher.html#CCMP"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int CCMP { get { if (!_CCMPReady) { _CCMPContent = SGetField<int>(LocalBridgeClazz, "CCMP"); _CCMPReady = true; } return _CCMPContent; } }
             private static int _CCMPContent = default;
             private static bool _CCMPReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.PairwiseCipher.html#GCMP_128"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int GCMP_128 { get { if (!_GCMP_128Ready) { _GCMP_128Content = SGetField<int>(LocalBridgeClazz, "GCMP_128"); _GCMP_128Ready = true; } return _GCMP_128Content; } }
             private static int _GCMP_128Content = default;
             private static bool _GCMP_128Ready = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.PairwiseCipher.html#GCMP_256"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int GCMP_256 { get { if (!_GCMP_256Ready) { _GCMP_256Content = SGetField<int>(LocalBridgeClazz, "GCMP_256"); _GCMP_256Ready = true; } return _GCMP_256Content; } }
             private static int _GCMP_256Content = default;
             private static bool _GCMP_256Ready = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.PairwiseCipher.html#NONE"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int NONE { get { if (!_NONEReady) { _NONEContent = SGetField<int>(LocalBridgeClazz, "NONE"); _NONEReady = true; } return _NONEContent; } }
             private static int _NONEContent = default;
             private static bool _NONEReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.PairwiseCipher.html#SMS4"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int SMS4 { get { if (!_SMS4Ready) { _SMS4Content = SGetField<int>(LocalBridgeClazz, "SMS4"); _SMS4Ready = true; } return _SMS4Content; } }
             private static int _SMS4Content = default;
             private static bool _SMS4Ready = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.PairwiseCipher.html#TKIP"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int TKIP { get { if (!_TKIPReady) { _TKIPContent = SGetField<int>(LocalBridgeClazz, "TKIP"); _TKIPReady = true; } return _TKIPContent; } }
             private static int _TKIPContent = default;
             private static bool _TKIPReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.PairwiseCipher.html#varName"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String varName { get { if (!_varNameReady) { _varNameContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "varName"); _varNameReady = true; } return _varNameContent; } }
             private static Java.Lang.String _varNameContent = default;
             private static bool _varNameReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.PairwiseCipher.html#strings"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String[] strings { get { if (!_stringsReady) { _stringsContent = SGetFieldArray<Java.Lang.String>(LocalBridgeClazz, "strings"); _stringsReady = true; } return _stringsContent; } }
             private static Java.Lang.String[] _stringsContent = default;
             private static bool _stringsReady = false; // this is used because in case of generics 
@@ -852,35 +874,35 @@ namespace Android.Net.Wifi
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.Protocol.html#RSN"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int RSN { get { if (!_RSNReady) { _RSNContent = SGetField<int>(LocalBridgeClazz, "RSN"); _RSNReady = true; } return _RSNContent; } }
             private static int _RSNContent = default;
             private static bool _RSNReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.Protocol.html#WAPI"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int WAPI { get { if (!_WAPIReady) { _WAPIContent = SGetField<int>(LocalBridgeClazz, "WAPI"); _WAPIReady = true; } return _WAPIContent; } }
             private static int _WAPIContent = default;
             private static bool _WAPIReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.Protocol.html#WPA"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int WPA { get { if (!_WPAReady) { _WPAContent = SGetField<int>(LocalBridgeClazz, "WPA"); _WPAReady = true; } return _WPAContent; } }
             private static int _WPAContent = default;
             private static bool _WPAReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.Protocol.html#varName"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String varName { get { if (!_varNameReady) { _varNameContent = SGetField<Java.Lang.String>(LocalBridgeClazz, "varName"); _varNameReady = true; } return _varNameContent; } }
             private static Java.Lang.String _varNameContent = default;
             private static bool _varNameReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.Protocol.html#strings"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String[] strings { get { if (!_stringsReady) { _stringsContent = SGetFieldArray<Java.Lang.String>(LocalBridgeClazz, "strings"); _stringsReady = true; } return _stringsContent; } }
             private static Java.Lang.String[] _stringsContent = default;
             private static bool _stringsReady = false; // this is used because in case of generics 
@@ -918,28 +940,28 @@ namespace Android.Net.Wifi
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.Status.html#CURRENT"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int CURRENT { get { if (!_CURRENTReady) { _CURRENTContent = SGetField<int>(LocalBridgeClazz, "CURRENT"); _CURRENTReady = true; } return _CURRENTContent; } }
             private static int _CURRENTContent = default;
             private static bool _CURRENTReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.Status.html#DISABLED"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int DISABLED { get { if (!_DISABLEDReady) { _DISABLEDContent = SGetField<int>(LocalBridgeClazz, "DISABLED"); _DISABLEDReady = true; } return _DISABLEDContent; } }
             private static int _DISABLEDContent = default;
             private static bool _DISABLEDReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.Status.html#ENABLED"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static int ENABLED { get { if (!_ENABLEDReady) { _ENABLEDContent = SGetField<int>(LocalBridgeClazz, "ENABLED"); _ENABLEDReady = true; } return _ENABLEDContent; } }
             private static int _ENABLEDContent = default;
             private static bool _ENABLEDReady = false; // this is used because in case of generics 
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/net/wifi/WifiConfiguration.Status.html#strings"/>
             /// </summary>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public static Java.Lang.String[] strings { get { if (!_stringsReady) { _stringsContent = SGetFieldArray<Java.Lang.String>(LocalBridgeClazz, "strings"); _stringsReady = true; } return _stringsContent; } }
             private static Java.Lang.String[] _stringsContent = default;
             private static bool _stringsReady = false; // this is used because in case of generics 

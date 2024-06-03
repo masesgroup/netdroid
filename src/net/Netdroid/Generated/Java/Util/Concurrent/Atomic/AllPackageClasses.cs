@@ -28,7 +28,7 @@ namespace Java.Util.Concurrent.Atomic
 {
     #region AtomicBoolean
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicBoolean.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicBoolean.html"/>
     /// </summary>
     public partial class AtomicBoolean : Java.Io.Serializable
     {
@@ -72,7 +72,7 @@ namespace Java.Util.Concurrent.Atomic
 
     #region AtomicInteger
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicInteger.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicInteger.html"/>
     /// </summary>
     public partial class AtomicInteger : Java.Lang.Number
     {
@@ -116,7 +116,7 @@ namespace Java.Util.Concurrent.Atomic
 
     #region AtomicIntegerArray
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicIntegerArray.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicIntegerArray.html"/>
     /// </summary>
     public partial class AtomicIntegerArray : Java.Io.Serializable
     {
@@ -160,7 +160,7 @@ namespace Java.Util.Concurrent.Atomic
 
     #region AtomicIntegerFieldUpdater
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html"/>
     /// </summary>
     public partial class AtomicIntegerFieldUpdater : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AtomicIntegerFieldUpdater>
     {
@@ -168,12 +168,12 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("AtomicIntegerFieldUpdater class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("AtomicIntegerFieldUpdater class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AtomicIntegerFieldUpdater() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("AtomicIntegerFieldUpdater class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("AtomicIntegerFieldUpdater class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AtomicIntegerFieldUpdater(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -206,7 +206,7 @@ namespace Java.Util.Concurrent.Atomic
 
     #region AtomicIntegerFieldUpdater<T>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicIntegerFieldUpdater.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
     public partial class AtomicIntegerFieldUpdater<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AtomicIntegerFieldUpdater<T>>
@@ -215,12 +215,12 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("AtomicIntegerFieldUpdater class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("AtomicIntegerFieldUpdater class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AtomicIntegerFieldUpdater() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("AtomicIntegerFieldUpdater class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("AtomicIntegerFieldUpdater class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AtomicIntegerFieldUpdater(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -253,7 +253,7 @@ namespace Java.Util.Concurrent.Atomic
 
     #region AtomicLong
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicLong.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLong.html"/>
     /// </summary>
     public partial class AtomicLong : Java.Lang.Number
     {
@@ -297,7 +297,7 @@ namespace Java.Util.Concurrent.Atomic
 
     #region AtomicLongArray
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicLongArray.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLongArray.html"/>
     /// </summary>
     public partial class AtomicLongArray : Java.Io.Serializable
     {
@@ -341,7 +341,7 @@ namespace Java.Util.Concurrent.Atomic
 
     #region AtomicLongFieldUpdater
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicLongFieldUpdater.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLongFieldUpdater.html"/>
     /// </summary>
     public partial class AtomicLongFieldUpdater : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AtomicLongFieldUpdater>
     {
@@ -349,12 +349,12 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("AtomicLongFieldUpdater class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("AtomicLongFieldUpdater class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AtomicLongFieldUpdater() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("AtomicLongFieldUpdater class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("AtomicLongFieldUpdater class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AtomicLongFieldUpdater(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -387,7 +387,7 @@ namespace Java.Util.Concurrent.Atomic
 
     #region AtomicLongFieldUpdater<T>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicLongFieldUpdater.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLongFieldUpdater.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
     public partial class AtomicLongFieldUpdater<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AtomicLongFieldUpdater<T>>
@@ -396,12 +396,12 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("AtomicLongFieldUpdater class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("AtomicLongFieldUpdater class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AtomicLongFieldUpdater() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("AtomicLongFieldUpdater class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("AtomicLongFieldUpdater class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AtomicLongFieldUpdater(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -434,7 +434,7 @@ namespace Java.Util.Concurrent.Atomic
 
     #region AtomicMarkableReference
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicMarkableReference.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicMarkableReference.html"/>
     /// </summary>
     public partial class AtomicMarkableReference : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AtomicMarkableReference>
     {
@@ -478,7 +478,7 @@ namespace Java.Util.Concurrent.Atomic
 
     #region AtomicMarkableReference<V>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicMarkableReference.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicMarkableReference.html"/>
     /// </summary>
     /// <typeparam name="V"></typeparam>
     public partial class AtomicMarkableReference<V> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AtomicMarkableReference<V>>
@@ -523,7 +523,7 @@ namespace Java.Util.Concurrent.Atomic
 
     #region AtomicReference
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReference.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html"/>
     /// </summary>
     public partial class AtomicReference : Java.Io.Serializable
     {
@@ -567,7 +567,7 @@ namespace Java.Util.Concurrent.Atomic
 
     #region AtomicReference<V>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReference.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReference.html"/>
     /// </summary>
     /// <typeparam name="V"></typeparam>
     public partial class AtomicReference<V> : Java.Io.Serializable
@@ -612,7 +612,7 @@ namespace Java.Util.Concurrent.Atomic
 
     #region AtomicReferenceArray
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReferenceArray.html"/>
     /// </summary>
     public partial class AtomicReferenceArray : Java.Io.Serializable
     {
@@ -656,7 +656,7 @@ namespace Java.Util.Concurrent.Atomic
 
     #region AtomicReferenceArray<E>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReferenceArray.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReferenceArray.html"/>
     /// </summary>
     /// <typeparam name="E"></typeparam>
     public partial class AtomicReferenceArray<E> : Java.Io.Serializable
@@ -701,7 +701,7 @@ namespace Java.Util.Concurrent.Atomic
 
     #region AtomicReferenceFieldUpdater
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html"/>
     /// </summary>
     public partial class AtomicReferenceFieldUpdater : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AtomicReferenceFieldUpdater>
     {
@@ -709,12 +709,12 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("AtomicReferenceFieldUpdater class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("AtomicReferenceFieldUpdater class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AtomicReferenceFieldUpdater() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("AtomicReferenceFieldUpdater class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("AtomicReferenceFieldUpdater class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AtomicReferenceFieldUpdater(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -747,7 +747,7 @@ namespace Java.Util.Concurrent.Atomic
 
     #region AtomicReferenceFieldUpdater<T, V>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
     /// <typeparam name="V"></typeparam>
@@ -757,12 +757,12 @@ namespace Java.Util.Concurrent.Atomic
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("AtomicReferenceFieldUpdater class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("AtomicReferenceFieldUpdater class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AtomicReferenceFieldUpdater() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("AtomicReferenceFieldUpdater class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("AtomicReferenceFieldUpdater class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AtomicReferenceFieldUpdater(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -795,7 +795,7 @@ namespace Java.Util.Concurrent.Atomic
 
     #region AtomicStampedReference
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicStampedReference.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicStampedReference.html"/>
     /// </summary>
     public partial class AtomicStampedReference : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AtomicStampedReference>
     {
@@ -839,7 +839,7 @@ namespace Java.Util.Concurrent.Atomic
 
     #region AtomicStampedReference<V>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicStampedReference.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicStampedReference.html"/>
     /// </summary>
     /// <typeparam name="V"></typeparam>
     public partial class AtomicStampedReference<V> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AtomicStampedReference<V>>
@@ -884,7 +884,7 @@ namespace Java.Util.Concurrent.Atomic
 
     #region DoubleAccumulator
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/DoubleAccumulator.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/DoubleAccumulator.html"/>
     /// </summary>
     public partial class DoubleAccumulator : Java.Io.Serializable
     {
@@ -928,7 +928,7 @@ namespace Java.Util.Concurrent.Atomic
 
     #region DoubleAdder
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/DoubleAdder.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/DoubleAdder.html"/>
     /// </summary>
     public partial class DoubleAdder : Java.Io.Serializable
     {
@@ -972,7 +972,7 @@ namespace Java.Util.Concurrent.Atomic
 
     #region LongAccumulator
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/LongAccumulator.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/LongAccumulator.html"/>
     /// </summary>
     public partial class LongAccumulator : Java.Io.Serializable
     {
@@ -1016,7 +1016,7 @@ namespace Java.Util.Concurrent.Atomic
 
     #region LongAdder
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/LongAdder.html"/>
+    /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/LongAdder.html"/>
     /// </summary>
     public partial class LongAdder : Java.Io.Serializable
     {

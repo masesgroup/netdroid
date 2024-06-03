@@ -42,7 +42,7 @@ namespace Javax.Security.Cert
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/security/cert/X509Certificate.html#getInstance(byte[])"/>
+        /// <see href="https://developer.android.com/reference/javax/security/cert/X509Certificate.html#getInstance(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <returns><see cref="Javax.Security.Cert.X509Certificate"/></returns>
@@ -52,7 +52,7 @@ namespace Javax.Security.Cert
             return SExecuteWithSignature<Javax.Security.Cert.X509Certificate>(LocalBridgeClazz, "getInstance", "([B)Ljavax/security/cert/X509Certificate;", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/security/cert/X509Certificate.html#getInstance(java.io.InputStream)"/>
+        /// <see href="https://developer.android.com/reference/javax/security/cert/X509Certificate.html#getInstance(java.io.InputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.InputStream"/></param>
         /// <returns><see cref="Javax.Security.Cert.X509Certificate"/></returns>
@@ -66,70 +66,79 @@ namespace Javax.Security.Cert
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/security/cert/X509Certificate.html#getIssuerDN()"/> 
+        /// <see href="https://developer.android.com/reference/javax/security/cert/X509Certificate.html#getSigAlgParams()"/>
         /// </summary>
-        public Java.Security.Principal IssuerDN
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetSigAlgParams()
         {
-            get { return IExecuteWithSignature<Java.Security.Principal>("getIssuerDN", "()Ljava/security/Principal;"); }
+            return IExecuteWithSignatureArray<byte>("getSigAlgParams", "()[B");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/security/cert/X509Certificate.html#getNotAfter()"/> 
+        /// <see href="https://developer.android.com/reference/javax/security/cert/X509Certificate.html#getVersion()"/>
         /// </summary>
-        public Java.Util.Date NotAfter
+        /// <returns><see cref="int"/></returns>
+        public int GetVersion()
         {
-            get { return IExecuteWithSignature<Java.Util.Date>("getNotAfter", "()Ljava/util/Date;"); }
+            return IExecuteWithSignature<int>("getVersion", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/security/cert/X509Certificate.html#getNotBefore()"/> 
+        /// <see href="https://developer.android.com/reference/javax/security/cert/X509Certificate.html#getSigAlgName()"/>
         /// </summary>
-        public Java.Util.Date NotBefore
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSigAlgName()
         {
-            get { return IExecuteWithSignature<Java.Util.Date>("getNotBefore", "()Ljava/util/Date;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getSigAlgName", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/security/cert/X509Certificate.html#getSerialNumber()"/> 
+        /// <see href="https://developer.android.com/reference/javax/security/cert/X509Certificate.html#getSigAlgOID()"/>
         /// </summary>
-        public Java.Math.BigInteger SerialNumber
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSigAlgOID()
         {
-            get { return IExecuteWithSignature<Java.Math.BigInteger>("getSerialNumber", "()Ljava/math/BigInteger;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getSigAlgOID", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/security/cert/X509Certificate.html#getSigAlgName()"/> 
+        /// <see href="https://developer.android.com/reference/javax/security/cert/X509Certificate.html#getSerialNumber()"/>
         /// </summary>
-        public Java.Lang.String SigAlgName
+        /// <returns><see cref="Java.Math.BigInteger"/></returns>
+        public Java.Math.BigInteger GetSerialNumber()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSigAlgName", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Math.BigInteger>("getSerialNumber", "()Ljava/math/BigInteger;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/security/cert/X509Certificate.html#getSigAlgOID()"/> 
+        /// <see href="https://developer.android.com/reference/javax/security/cert/X509Certificate.html#getIssuerDN()"/>
         /// </summary>
-        public Java.Lang.String SigAlgOID
+        /// <returns><see cref="Java.Security.Principal"/></returns>
+        public Java.Security.Principal GetIssuerDN()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSigAlgOID", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Security.Principal>("getIssuerDN", "()Ljava/security/Principal;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/security/cert/X509Certificate.html#getSigAlgParams()"/> 
+        /// <see href="https://developer.android.com/reference/javax/security/cert/X509Certificate.html#getSubjectDN()"/>
         /// </summary>
-        public byte[] SigAlgParams
+        /// <returns><see cref="Java.Security.Principal"/></returns>
+        public Java.Security.Principal GetSubjectDN()
         {
-            get { return IExecuteWithSignatureArray<byte>("getSigAlgParams", "()[B"); }
+            return IExecuteWithSignature<Java.Security.Principal>("getSubjectDN", "()Ljava/security/Principal;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/security/cert/X509Certificate.html#getSubjectDN()"/> 
+        /// <see href="https://developer.android.com/reference/javax/security/cert/X509Certificate.html#getNotAfter()"/>
         /// </summary>
-        public Java.Security.Principal SubjectDN
+        /// <returns><see cref="Java.Util.Date"/></returns>
+        public Java.Util.Date GetNotAfter()
         {
-            get { return IExecuteWithSignature<Java.Security.Principal>("getSubjectDN", "()Ljava/security/Principal;"); }
+            return IExecuteWithSignature<Java.Util.Date>("getNotAfter", "()Ljava/util/Date;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/security/cert/X509Certificate.html#getVersion()"/> 
+        /// <see href="https://developer.android.com/reference/javax/security/cert/X509Certificate.html#getNotBefore()"/>
         /// </summary>
-        public int Version
+        /// <returns><see cref="Java.Util.Date"/></returns>
+        public Java.Util.Date GetNotBefore()
         {
-            get { return IExecuteWithSignature<int>("getVersion", "()I"); }
+            return IExecuteWithSignature<Java.Util.Date>("getNotBefore", "()Ljava/util/Date;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/security/cert/X509Certificate.html#checkValidity()"/>
+        /// <see href="https://developer.android.com/reference/javax/security/cert/X509Certificate.html#checkValidity()"/>
         /// </summary>
         /// <exception cref="Javax.Security.Cert.CertificateExpiredException"/>
         /// <exception cref="Javax.Security.Cert.CertificateNotYetValidException"/>
@@ -138,7 +147,7 @@ namespace Javax.Security.Cert
             IExecuteWithSignature("checkValidity", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/security/cert/X509Certificate.html#checkValidity(java.util.Date)"/>
+        /// <see href="https://developer.android.com/reference/javax/security/cert/X509Certificate.html#checkValidity(java.util.Date)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Date"/></param>
         /// <exception cref="Javax.Security.Cert.CertificateExpiredException"/>

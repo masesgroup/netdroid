@@ -62,33 +62,36 @@ namespace Android.Telephony
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/RadioAccessSpecifier.html#getBands()"/> 
-        /// </summary>
-        public int[] Bands
-        {
-            get { return IExecuteWithSignatureArray<int>("getBands", "()[I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/RadioAccessSpecifier.html#getChannels()"/> 
-        /// </summary>
-        public int[] Channels
-        {
-            get { return IExecuteWithSignatureArray<int>("getChannels", "()[I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telephony/RadioAccessSpecifier.html#getRadioAccessNetwork()"/> 
-        /// </summary>
-        public int RadioAccessNetwork
-        {
-            get { return IExecuteWithSignature<int>("getRadioAccessNetwork", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/RadioAccessSpecifier.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/RadioAccessSpecifier.html#getRadioAccessNetwork()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetRadioAccessNetwork()
+        {
+            return IExecuteWithSignature<int>("getRadioAccessNetwork", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/RadioAccessSpecifier.html#getBands()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int[] GetBands()
+        {
+            return IExecuteWithSignatureArray<int>("getBands", "()[I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telephony/RadioAccessSpecifier.html#getChannels()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int[] GetChannels()
+        {
+            return IExecuteWithSignatureArray<int>("getChannels", "()[I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telephony/RadioAccessSpecifier.html#writeToParcel(android.os.Parcel,int)"/>

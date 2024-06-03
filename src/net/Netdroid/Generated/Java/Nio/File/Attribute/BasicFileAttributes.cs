@@ -64,7 +64,7 @@ namespace Java.Nio.File.Attribute
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/BasicFileAttributes.html#isDirectory()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/attribute/BasicFileAttributes.html#isDirectory()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsDirectory()
@@ -72,7 +72,7 @@ namespace Java.Nio.File.Attribute
             return IExecuteWithSignature<bool>("isDirectory", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/BasicFileAttributes.html#isOther()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/attribute/BasicFileAttributes.html#isOther()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsOther()
@@ -80,7 +80,7 @@ namespace Java.Nio.File.Attribute
             return IExecuteWithSignature<bool>("isOther", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/BasicFileAttributes.html#isRegularFile()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/attribute/BasicFileAttributes.html#isRegularFile()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsRegularFile()
@@ -88,7 +88,7 @@ namespace Java.Nio.File.Attribute
             return IExecuteWithSignature<bool>("isRegularFile", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/BasicFileAttributes.html#isSymbolicLink()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/attribute/BasicFileAttributes.html#isSymbolicLink()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsSymbolicLink()
@@ -96,7 +96,7 @@ namespace Java.Nio.File.Attribute
             return IExecuteWithSignature<bool>("isSymbolicLink", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/BasicFileAttributes.html#fileKey()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/attribute/BasicFileAttributes.html#fileKey()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         public object FileKey()
@@ -104,7 +104,7 @@ namespace Java.Nio.File.Attribute
             return IExecuteWithSignature("fileKey", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/BasicFileAttributes.html#creationTime()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/attribute/BasicFileAttributes.html#creationTime()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.File.Attribute.FileTime"/></returns>
         public Java.Nio.File.Attribute.FileTime CreationTime()
@@ -112,7 +112,7 @@ namespace Java.Nio.File.Attribute
             return IExecuteWithSignature<Java.Nio.File.Attribute.FileTime>("creationTime", "()Ljava/nio/file/attribute/FileTime;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/BasicFileAttributes.html#lastAccessTime()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/attribute/BasicFileAttributes.html#lastAccessTime()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.File.Attribute.FileTime"/></returns>
         public Java.Nio.File.Attribute.FileTime LastAccessTime()
@@ -120,7 +120,7 @@ namespace Java.Nio.File.Attribute
             return IExecuteWithSignature<Java.Nio.File.Attribute.FileTime>("lastAccessTime", "()Ljava/nio/file/attribute/FileTime;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/BasicFileAttributes.html#lastModifiedTime()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/attribute/BasicFileAttributes.html#lastModifiedTime()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.File.Attribute.FileTime"/></returns>
         public Java.Nio.File.Attribute.FileTime LastModifiedTime()
@@ -128,7 +128,7 @@ namespace Java.Nio.File.Attribute
             return IExecuteWithSignature<Java.Nio.File.Attribute.FileTime>("lastModifiedTime", "()Ljava/nio/file/attribute/FileTime;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/BasicFileAttributes.html#size()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/attribute/BasicFileAttributes.html#size()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
         public long Size()

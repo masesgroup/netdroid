@@ -84,27 +84,6 @@ namespace Android.Widget
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ScrollView.html#getBottomEdgeEffectColor()"/> <see href="https://developer.android.com/reference/android/widget/ScrollView.html#setBottomEdgeEffectColor(int)"/>
-        /// </summary>
-        public int BottomEdgeEffectColor
-        {
-            get { return IExecuteWithSignature<int>("getBottomEdgeEffectColor", "()I"); } set { IExecuteWithSignature("setBottomEdgeEffectColor", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ScrollView.html#getMaxScrollAmount()"/> 
-        /// </summary>
-        public int MaxScrollAmount
-        {
-            get { return IExecuteWithSignature<int>("getMaxScrollAmount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ScrollView.html#getTopEdgeEffectColor()"/> <see href="https://developer.android.com/reference/android/widget/ScrollView.html#setTopEdgeEffectColor(int)"/>
-        /// </summary>
-        public int TopEdgeEffectColor
-        {
-            get { return IExecuteWithSignature<int>("getTopEdgeEffectColor", "()I"); } set { IExecuteWithSignature("setTopEdgeEffectColor", "(I)V", value); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ScrollView.html#arrowScroll(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -175,6 +154,30 @@ namespace Android.Widget
             IExecute("smoothScrollTo", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ScrollView.html#getBottomEdgeEffectColor()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetBottomEdgeEffectColor()
+        {
+            return IExecuteWithSignature<int>("getBottomEdgeEffectColor", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ScrollView.html#getMaxScrollAmount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMaxScrollAmount()
+        {
+            return IExecuteWithSignature<int>("getMaxScrollAmount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ScrollView.html#getTopEdgeEffectColor()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetTopEdgeEffectColor()
+        {
+            return IExecuteWithSignature<int>("getTopEdgeEffectColor", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ScrollView.html#fling(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -189,6 +192,14 @@ namespace Android.Widget
         public void ScrollToDescendant(Android.View.View arg0)
         {
             IExecuteWithSignature("scrollToDescendant", "(Landroid/view/View;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ScrollView.html#setBottomEdgeEffectColor(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetBottomEdgeEffectColor(int arg0)
+        {
+            IExecuteWithSignature("setBottomEdgeEffectColor", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ScrollView.html#setEdgeEffectColor(int)"/>
@@ -213,6 +224,14 @@ namespace Android.Widget
         public void SetSmoothScrollingEnabled(bool arg0)
         {
             IExecuteWithSignature("setSmoothScrollingEnabled", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ScrollView.html#setTopEdgeEffectColor(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetTopEdgeEffectColor(int arg0)
+        {
+            IExecuteWithSignature("setTopEdgeEffectColor", "(I)V", arg0);
         }
 
         #endregion

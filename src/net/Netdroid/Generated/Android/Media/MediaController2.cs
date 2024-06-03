@@ -46,11 +46,12 @@ namespace Android.Media
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaController2.html#getConnectedToken()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/MediaController2.html#getConnectedToken()"/>
         /// </summary>
-        public Android.Media.Session2Token ConnectedToken
+        /// <returns><see cref="Android.Media.Session2Token"/></returns>
+        public Android.Media.Session2Token GetConnectedToken()
         {
-            get { return IExecuteWithSignature<Android.Media.Session2Token>("getConnectedToken", "()Landroid/media/Session2Token;"); }
+            return IExecuteWithSignature<Android.Media.Session2Token>("getConnectedToken", "()Landroid/media/Session2Token;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaController2.html#isPlaybackActive()"/>

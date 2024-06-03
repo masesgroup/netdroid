@@ -46,13 +46,6 @@ namespace Android.Graphics.Drawable
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/drawable/StateListDrawable.html#getStateCount()"/> 
-        /// </summary>
-        public int StateCount
-        {
-            get { return IExecuteWithSignature<int>("getStateCount", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/StateListDrawable.html#getStateDrawable(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -69,6 +62,14 @@ namespace Android.Graphics.Drawable
         public int FindStateDrawableIndex(int[] arg0)
         {
             return IExecuteWithSignature<int>("findStateDrawableIndex", "([I)I", new object[] { arg0 });
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/graphics/drawable/StateListDrawable.html#getStateCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetStateCount()
+        {
+            return IExecuteWithSignature<int>("getStateCount", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/graphics/drawable/StateListDrawable.html#getStateSet(int)"/>

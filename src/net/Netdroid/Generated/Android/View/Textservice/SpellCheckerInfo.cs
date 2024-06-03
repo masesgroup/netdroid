@@ -52,46 +52,20 @@ namespace Android.View.Textservice
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textservice/SpellCheckerInfo.html#getComponent()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/textservice/SpellCheckerInfo.html#getComponent()"/>
         /// </summary>
-        public Android.Content.ComponentName Component
+        /// <returns><see cref="Android.Content.ComponentName"/></returns>
+        public Android.Content.ComponentName GetComponent()
         {
-            get { return IExecuteWithSignature<Android.Content.ComponentName>("getComponent", "()Landroid/content/ComponentName;"); }
+            return IExecuteWithSignature<Android.Content.ComponentName>("getComponent", "()Landroid/content/ComponentName;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textservice/SpellCheckerInfo.html#getId()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/textservice/SpellCheckerInfo.html#getServiceInfo()"/>
         /// </summary>
-        public Java.Lang.String Id
+        /// <returns><see cref="Android.Content.Pm.ServiceInfo"/></returns>
+        public Android.Content.Pm.ServiceInfo GetServiceInfo()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textservice/SpellCheckerInfo.html#getPackageName()"/> 
-        /// </summary>
-        public Java.Lang.String PackageName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPackageName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textservice/SpellCheckerInfo.html#getServiceInfo()"/> 
-        /// </summary>
-        public Android.Content.Pm.ServiceInfo ServiceInfo
-        {
-            get { return IExecuteWithSignature<Android.Content.Pm.ServiceInfo>("getServiceInfo", "()Landroid/content/pm/ServiceInfo;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textservice/SpellCheckerInfo.html#getSettingsActivity()"/> 
-        /// </summary>
-        public Java.Lang.String SettingsActivity
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSettingsActivity", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textservice/SpellCheckerInfo.html#getSubtypeCount()"/> 
-        /// </summary>
-        public int SubtypeCount
-        {
-            get { return IExecuteWithSignature<int>("getSubtypeCount", "()I"); }
+            return IExecuteWithSignature<Android.Content.Pm.ServiceInfo>("getServiceInfo", "()Landroid/content/pm/ServiceInfo;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/textservice/SpellCheckerInfo.html#loadIcon(android.content.pm.PackageManager)"/>
@@ -120,6 +94,14 @@ namespace Android.View.Textservice
             return IExecuteWithSignature<int>("describeContents", "()I");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/textservice/SpellCheckerInfo.html#getSubtypeCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSubtypeCount()
+        {
+            return IExecuteWithSignature<int>("getSubtypeCount", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/textservice/SpellCheckerInfo.html#loadLabel(android.content.pm.PackageManager)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Pm.PackageManager"/></param>
@@ -127,6 +109,30 @@ namespace Android.View.Textservice
         public Java.Lang.CharSequence LoadLabel(Android.Content.Pm.PackageManager arg0)
         {
             return IExecuteWithSignature<Java.Lang.CharSequence>("loadLabel", "(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/textservice/SpellCheckerInfo.html#getId()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetId()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/textservice/SpellCheckerInfo.html#getPackageName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPackageName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPackageName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/textservice/SpellCheckerInfo.html#getSettingsActivity()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSettingsActivity()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getSettingsActivity", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/textservice/SpellCheckerInfo.html#writeToParcel(android.os.Parcel,int)"/>

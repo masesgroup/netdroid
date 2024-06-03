@@ -33,7 +33,7 @@ namespace Android.Content.Pm
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageStats.html#%3Cinit%3E(android.content.pm.PackageStats)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Pm.PackageStats"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public PackageStats(Android.Content.Pm.PackageStats arg0)
             : base(arg0)
         {
@@ -42,7 +42,7 @@ namespace Android.Content.Pm
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageStats.html#%3Cinit%3E(android.os.Parcel)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Os.Parcel"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public PackageStats(Android.Os.Parcel arg0)
             : base(arg0)
         {
@@ -51,7 +51,7 @@ namespace Android.Content.Pm
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageStats.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public PackageStats(Java.Lang.String arg0)
             : base(arg0)
         {
@@ -67,52 +67,52 @@ namespace Android.Content.Pm
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageStats.html#packageName"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public Java.Lang.String packageName { get { return IGetField<Java.Lang.String>("packageName"); } set { ISetField("packageName", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageStats.html#cacheSize"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public long cacheSize { get { return IGetField<long>("cacheSize"); } set { ISetField("cacheSize", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageStats.html#codeSize"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public long codeSize { get { return IGetField<long>("codeSize"); } set { ISetField("codeSize", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageStats.html#dataSize"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public long dataSize { get { return IGetField<long>("dataSize"); } set { ISetField("dataSize", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageStats.html#externalCacheSize"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public long externalCacheSize { get { return IGetField<long>("externalCacheSize"); } set { ISetField("externalCacheSize", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageStats.html#externalCodeSize"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public long externalCodeSize { get { return IGetField<long>("externalCodeSize"); } set { ISetField("externalCodeSize", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageStats.html#externalDataSize"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public long externalDataSize { get { return IGetField<long>("externalDataSize"); } set { ISetField("externalDataSize", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageStats.html#externalMediaSize"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public long externalMediaSize { get { return IGetField<long>("externalMediaSize"); } set { ISetField("externalMediaSize", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageStats.html#externalObbSize"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public long externalObbSize { get { return IGetField<long>("externalObbSize"); } set { ISetField("externalObbSize", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageStats.html#CREATOR"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Os.Parcelable.Creator CREATOR { get { if (!_CREATORReady) { _CREATORContent = SGetField<Android.Os.Parcelable.Creator>(LocalBridgeClazz, "CREATOR"); _CREATORReady = true; } return _CREATORContent; } }
         private static Android.Os.Parcelable.Creator _CREATORContent = default;
         private static bool _CREATORReady = false; // this is used because in case of generics 
@@ -128,7 +128,7 @@ namespace Android.Content.Pm
         /// <see href="https://developer.android.com/reference/android/content/pm/PackageStats.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
@@ -138,7 +138,7 @@ namespace Android.Content.Pm
         /// </summary>
         /// <param name="arg0"><see cref="Android.Os.Parcel"/></param>
         /// <param name="arg1"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void WriteToParcel(Android.Os.Parcel arg0, int arg1)
         {
             IExecute("writeToParcel", arg0, arg1);

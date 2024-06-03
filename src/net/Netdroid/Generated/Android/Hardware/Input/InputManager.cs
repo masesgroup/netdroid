@@ -58,20 +58,6 @@ namespace Android.Hardware.Input
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/input/InputManager.html#getInputDeviceIds()"/> 
-        /// </summary>
-        public int[] InputDeviceIds
-        {
-            get { return IExecuteWithSignatureArray<int>("getInputDeviceIds", "()[I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/input/InputManager.html#getMaximumObscuringOpacityForTouch()"/> 
-        /// </summary>
-        public float MaximumObscuringOpacityForTouch
-        {
-            get { return IExecuteWithSignature<float>("getMaximumObscuringOpacityForTouch", "()F"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/input/InputManager.html#getHostUsiVersion(android.view.Display)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.View.Display"/></param>
@@ -105,6 +91,22 @@ namespace Android.Hardware.Input
         public bool IsStylusPointerIconEnabled()
         {
             return IExecuteWithSignature<bool>("isStylusPointerIconEnabled", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/input/InputManager.html#getMaximumObscuringOpacityForTouch()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetMaximumObscuringOpacityForTouch()
+        {
+            return IExecuteWithSignature<float>("getMaximumObscuringOpacityForTouch", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/input/InputManager.html#getInputDeviceIds()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int[] GetInputDeviceIds()
+        {
+            return IExecuteWithSignatureArray<int>("getInputDeviceIds", "()[I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/input/InputManager.html#registerInputDeviceListener(android.hardware.input.InputManager.InputDeviceListener,android.os.Handler)"/>
@@ -152,9 +154,9 @@ namespace Android.Hardware.Input
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onInputDeviceAdded", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnInputDeviceAddedEventHandler));
-                AddEventHandler("onInputDeviceChanged", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnInputDeviceChangedEventHandler));
-                AddEventHandler("onInputDeviceRemoved", new System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnInputDeviceRemovedEventHandler));
+                AddEventHandler("onInputDeviceAdded", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnInputDeviceAddedEventHandler));
+                AddEventHandler("onInputDeviceChanged", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnInputDeviceChangedEventHandler));
+                AddEventHandler("onInputDeviceRemoved", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<int>>>(OnInputDeviceRemovedEventHandler));
 
             }
 
@@ -162,7 +164,7 @@ namespace Android.Hardware.Input
             /// Handler for <see href="https://developer.android.com/reference/android/hardware/input/InputManager.InputDeviceListener.html#onInputDeviceAdded(int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnInputDeviceAdded"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<int> OnOnInputDeviceAdded { get; set; } = null;
+            public global::System.Action<int> OnOnInputDeviceAdded { get; set; } = null;
 
             void OnInputDeviceAddedEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
             {
@@ -183,7 +185,7 @@ namespace Android.Hardware.Input
             /// Handler for <see href="https://developer.android.com/reference/android/hardware/input/InputManager.InputDeviceListener.html#onInputDeviceChanged(int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnInputDeviceChanged"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<int> OnOnInputDeviceChanged { get; set; } = null;
+            public global::System.Action<int> OnOnInputDeviceChanged { get; set; } = null;
 
             void OnInputDeviceChangedEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
             {
@@ -204,7 +206,7 @@ namespace Android.Hardware.Input
             /// Handler for <see href="https://developer.android.com/reference/android/hardware/input/InputManager.InputDeviceListener.html#onInputDeviceRemoved(int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnInputDeviceRemoved"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<int> OnOnInputDeviceRemoved { get; set; } = null;
+            public global::System.Action<int> OnOnInputDeviceRemoved { get; set; } = null;
 
             void OnInputDeviceRemovedEventHandler(object sender, CLRListenerEventArgs<CLREventData<int>> data)
             {

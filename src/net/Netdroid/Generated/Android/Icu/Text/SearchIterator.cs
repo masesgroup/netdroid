@@ -52,53 +52,28 @@ namespace Android.Icu.Text
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/SearchIterator.html#getBreakIterator()"/> <see href="https://developer.android.com/reference/android/icu/text/SearchIterator.html#setBreakIterator(android.icu.text.BreakIterator)"/>
+        /// <see href="https://developer.android.com/reference/android/icu/text/SearchIterator.html#getIndex()"/>
         /// </summary>
-        public Android.Icu.Text.BreakIterator BreakIterator
+        /// <returns><see cref="int"/></returns>
+        public int GetIndex()
         {
-            get { return IExecuteWithSignature<Android.Icu.Text.BreakIterator>("getBreakIterator", "()Landroid/icu/text/BreakIterator;"); } set { IExecuteWithSignature("setBreakIterator", "(Landroid/icu/text/BreakIterator;)V", value); }
+            return IExecuteWithSignature<int>("getIndex", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/SearchIterator.html#getElementComparisonType()"/> 
+        /// <see href="https://developer.android.com/reference/android/icu/text/SearchIterator.html#getBreakIterator()"/>
         /// </summary>
-        public Android.Icu.Text.SearchIterator.ElementComparisonType GetElementComparisonType
+        /// <returns><see cref="Android.Icu.Text.BreakIterator"/></returns>
+        public Android.Icu.Text.BreakIterator GetBreakIterator()
         {
-            get { return IExecuteWithSignature<Android.Icu.Text.SearchIterator.ElementComparisonType>("getElementComparisonType", "()Landroid/icu/text/SearchIterator$ElementComparisonType;"); }
+            return IExecuteWithSignature<Android.Icu.Text.BreakIterator>("getBreakIterator", "()Landroid/icu/text/BreakIterator;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/SearchIterator.html#getIndex()"/> <see href="https://developer.android.com/reference/android/icu/text/SearchIterator.html#setIndex(int)"/>
+        /// <see href="https://developer.android.com/reference/android/icu/text/SearchIterator.html#getElementComparisonType()"/>
         /// </summary>
-        public int Index
+        /// <returns><see cref="Android.Icu.Text.SearchIterator.ElementComparisonType"/></returns>
+        public Android.Icu.Text.SearchIterator.ElementComparisonType GetElementComparisonType()
         {
-            get { return IExecuteWithSignature<int>("getIndex", "()I"); } set { IExecuteWithSignature("setIndex", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/SearchIterator.html#getMatchedText()"/> 
-        /// </summary>
-        public Java.Lang.String MatchedText
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getMatchedText", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/SearchIterator.html#getMatchLength()"/> 
-        /// </summary>
-        public int MatchLength
-        {
-            get { return IExecuteWithSignature<int>("getMatchLength", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/SearchIterator.html#getMatchStart()"/> 
-        /// </summary>
-        public int MatchStart
-        {
-            get { return IExecuteWithSignature<int>("getMatchStart", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/icu/text/SearchIterator.html#getTarget()"/> <see href="https://developer.android.com/reference/android/icu/text/SearchIterator.html#setTarget(java.text.CharacterIterator)"/>
-        /// </summary>
-        public Java.Text.CharacterIterator Target
-        {
-            get { return IExecuteWithSignature<Java.Text.CharacterIterator>("getTarget", "()Ljava/text/CharacterIterator;"); } set { IExecuteWithSignature("setTarget", "(Ljava/text/CharacterIterator;)V", value); }
+            return IExecuteWithSignature<Android.Icu.Text.SearchIterator.ElementComparisonType>("getElementComparisonType", "()Landroid/icu/text/SearchIterator$ElementComparisonType;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/SearchIterator.html#isOverlapping()"/>
@@ -143,6 +118,22 @@ namespace Android.Icu.Text
             return IExecuteWithSignature<int>("preceding", "(I)I", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/SearchIterator.html#getMatchLength()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMatchLength()
+        {
+            return IExecuteWithSignature<int>("getMatchLength", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/SearchIterator.html#getMatchStart()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMatchStart()
+        {
+            return IExecuteWithSignature<int>("getMatchStart", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/SearchIterator.html#next()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
@@ -159,11 +150,35 @@ namespace Android.Icu.Text
             return IExecuteWithSignature<int>("previous", "()I");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/SearchIterator.html#getMatchedText()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetMatchedText()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getMatchedText", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/SearchIterator.html#getTarget()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Text.CharacterIterator"/></returns>
+        public Java.Text.CharacterIterator GetTarget()
+        {
+            return IExecuteWithSignature<Java.Text.CharacterIterator>("getTarget", "()Ljava/text/CharacterIterator;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/SearchIterator.html#reset()"/>
         /// </summary>
         public void Reset()
         {
             IExecuteWithSignature("reset", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/SearchIterator.html#setBreakIterator(android.icu.text.BreakIterator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Icu.Text.BreakIterator"/></param>
+        public void SetBreakIterator(Android.Icu.Text.BreakIterator arg0)
+        {
+            IExecuteWithSignature("setBreakIterator", "(Landroid/icu/text/BreakIterator;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/SearchIterator.html#setElementComparisonType(android.icu.text.SearchIterator.ElementComparisonType)"/>
@@ -174,12 +189,28 @@ namespace Android.Icu.Text
             IExecuteWithSignature("setElementComparisonType", "(Landroid/icu/text/SearchIterator$ElementComparisonType;)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/SearchIterator.html#setIndex(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetIndex(int arg0)
+        {
+            IExecuteWithSignature("setIndex", "(I)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/SearchIterator.html#setOverlapping(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         public void SetOverlapping(bool arg0)
         {
             IExecuteWithSignature("setOverlapping", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/icu/text/SearchIterator.html#setTarget(java.text.CharacterIterator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Text.CharacterIterator"/></param>
+        public void SetTarget(Java.Text.CharacterIterator arg0)
+        {
+            IExecuteWithSignature("setTarget", "(Ljava/text/CharacterIterator;)V", arg0);
         }
 
         #endregion

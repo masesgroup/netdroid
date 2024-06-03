@@ -35,7 +35,7 @@ namespace Android.App
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
         /// <param name="arg1"><see cref="Android.Util.AttributeSet"/></param>
         /// <param name="arg2"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public FragmentBreadCrumbs(Android.Content.Context arg0, Android.Util.AttributeSet arg1, int arg2)
             : base(arg0, arg1, arg2)
         {
@@ -45,7 +45,7 @@ namespace Android.App
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
         /// <param name="arg1"><see cref="Android.Util.AttributeSet"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public FragmentBreadCrumbs(Android.Content.Context arg0, Android.Util.AttributeSet arg1)
             : base(arg0, arg1)
         {
@@ -54,7 +54,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/FragmentBreadCrumbs.html#%3Cinit%3E(android.content.Context)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Context"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public FragmentBreadCrumbs(Android.Content.Context arg0)
             : base(arg0)
         {
@@ -78,7 +78,7 @@ namespace Android.App
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/FragmentBreadCrumbs.html#onBackStackChanged()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnBackStackChanged()
         {
             IExecuteWithSignature("onBackStackChanged", "()V");
@@ -87,7 +87,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/FragmentBreadCrumbs.html#setActivity(android.app.Activity)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.App.Activity"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetActivity(Android.App.Activity arg0)
         {
             IExecuteWithSignature("setActivity", "(Landroid/app/Activity;)V", arg0);
@@ -96,7 +96,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/FragmentBreadCrumbs.html#setMaxVisible(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetMaxVisible(int arg0)
         {
             IExecuteWithSignature("setMaxVisible", "(I)V", arg0);
@@ -105,7 +105,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/FragmentBreadCrumbs.html#setOnBreadCrumbClickListener(android.app.FragmentBreadCrumbs.OnBreadCrumbClickListener)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.App.FragmentBreadCrumbs.OnBreadCrumbClickListener"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetOnBreadCrumbClickListener(Android.App.FragmentBreadCrumbs.OnBreadCrumbClickListener arg0)
         {
             IExecuteWithSignature("setOnBreadCrumbClickListener", "(Landroid/app/FragmentBreadCrumbs$OnBreadCrumbClickListener;)V", arg0);
@@ -116,7 +116,7 @@ namespace Android.App
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <param name="arg1"><see cref="Java.Lang.CharSequence"/></param>
         /// <param name="arg2"><see cref="Android.View.View.OnClickListener"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetParentTitle(Java.Lang.CharSequence arg0, Java.Lang.CharSequence arg1, Android.View.View.OnClickListener arg2)
         {
             IExecute("setParentTitle", arg0, arg1, arg2);
@@ -126,7 +126,7 @@ namespace Android.App
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <param name="arg1"><see cref="Java.Lang.CharSequence"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetTitle(Java.Lang.CharSequence arg0, Java.Lang.CharSequence arg1)
         {
             IExecute("setTitle", arg0, arg1);
@@ -160,7 +160,7 @@ namespace Android.App
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onBreadCrumbClick", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.App.FragmentManager.BackStackEntry>>>(OnBreadCrumbClickEventHandler));
+                AddEventHandler("onBreadCrumbClick", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.App.FragmentManager.BackStackEntry>>>(OnBreadCrumbClickEventHandler));
 
             }
 
@@ -168,7 +168,7 @@ namespace Android.App
             /// Handler for <see href="https://developer.android.com/reference/android/app/FragmentBreadCrumbs.OnBreadCrumbClickListener.html#onBreadCrumbClick(android.app.FragmentManager.BackStackEntry,int)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnBreadCrumbClick"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Func<Android.App.FragmentManager.BackStackEntry, int, bool> OnOnBreadCrumbClick { get; set; } = null;
+            public global::System.Func<Android.App.FragmentManager.BackStackEntry, int, bool> OnOnBreadCrumbClick { get; set; } = null;
 
             void OnBreadCrumbClickEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.App.FragmentManager.BackStackEntry>> data)
             {
@@ -183,7 +183,7 @@ namespace Android.App
             /// <param name="arg0"><see cref="Android.App.FragmentManager.BackStackEntry"/></param>
             /// <param name="arg1"><see cref="int"/></param>
             /// <returns><see cref="bool"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public virtual bool OnBreadCrumbClick(Android.App.FragmentManager.BackStackEntry arg0, int arg1)
             {
                 return default;
@@ -225,7 +225,7 @@ namespace Android.App
             /// <param name="arg0"><see cref="Android.App.FragmentManager.BackStackEntry"/></param>
             /// <param name="arg1"><see cref="int"/></param>
             /// <returns><see cref="bool"/></returns>
-            [System.Obsolete()]
+            [global::System.Obsolete()]
             public override bool OnBreadCrumbClick(Android.App.FragmentManager.BackStackEntry arg0, int arg1)
             {
                 return IExecute<bool>("onBreadCrumbClick", arg0, arg1);

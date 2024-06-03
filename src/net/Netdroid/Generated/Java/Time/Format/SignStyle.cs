@@ -38,31 +38,31 @@ namespace Java.Time.Format
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/format/SignStyle.html#ALWAYS"/>
+        /// <see href="https://developer.android.com/reference/java/time/format/SignStyle.html#ALWAYS"/>
         /// </summary>
         public static Java.Time.Format.SignStyle ALWAYS { get { if (!_ALWAYSReady) { _ALWAYSContent = SGetField<Java.Time.Format.SignStyle>(LocalBridgeClazz, "ALWAYS"); _ALWAYSReady = true; } return _ALWAYSContent; } }
         private static Java.Time.Format.SignStyle _ALWAYSContent = default;
         private static bool _ALWAYSReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/format/SignStyle.html#EXCEEDS_PAD"/>
+        /// <see href="https://developer.android.com/reference/java/time/format/SignStyle.html#EXCEEDS_PAD"/>
         /// </summary>
         public static Java.Time.Format.SignStyle EXCEEDS_PAD { get { if (!_EXCEEDS_PADReady) { _EXCEEDS_PADContent = SGetField<Java.Time.Format.SignStyle>(LocalBridgeClazz, "EXCEEDS_PAD"); _EXCEEDS_PADReady = true; } return _EXCEEDS_PADContent; } }
         private static Java.Time.Format.SignStyle _EXCEEDS_PADContent = default;
         private static bool _EXCEEDS_PADReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/format/SignStyle.html#NEVER"/>
+        /// <see href="https://developer.android.com/reference/java/time/format/SignStyle.html#NEVER"/>
         /// </summary>
         public static Java.Time.Format.SignStyle NEVER { get { if (!_NEVERReady) { _NEVERContent = SGetField<Java.Time.Format.SignStyle>(LocalBridgeClazz, "NEVER"); _NEVERReady = true; } return _NEVERContent; } }
         private static Java.Time.Format.SignStyle _NEVERContent = default;
         private static bool _NEVERReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/format/SignStyle.html#NORMAL"/>
+        /// <see href="https://developer.android.com/reference/java/time/format/SignStyle.html#NORMAL"/>
         /// </summary>
         public static Java.Time.Format.SignStyle NORMAL { get { if (!_NORMALReady) { _NORMALContent = SGetField<Java.Time.Format.SignStyle>(LocalBridgeClazz, "NORMAL"); _NORMALReady = true; } return _NORMALContent; } }
         private static Java.Time.Format.SignStyle _NORMALContent = default;
         private static bool _NORMALReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/format/SignStyle.html#NOT_NEGATIVE"/>
+        /// <see href="https://developer.android.com/reference/java/time/format/SignStyle.html#NOT_NEGATIVE"/>
         /// </summary>
         public static Java.Time.Format.SignStyle NOT_NEGATIVE { get { if (!_NOT_NEGATIVEReady) { _NOT_NEGATIVEContent = SGetField<Java.Time.Format.SignStyle>(LocalBridgeClazz, "NOT_NEGATIVE"); _NOT_NEGATIVEReady = true; } return _NOT_NEGATIVEContent; } }
         private static Java.Time.Format.SignStyle _NOT_NEGATIVEContent = default;
@@ -72,7 +72,7 @@ namespace Java.Time.Format
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/format/SignStyle.html#valueOf(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/time/format/SignStyle.html#valueOf(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Time.Format.SignStyle"/></returns>
@@ -81,7 +81,7 @@ namespace Java.Time.Format
             return SExecuteWithSignature<Java.Time.Format.SignStyle>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/time/format/SignStyle;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/format/SignStyle.html#values()"/>
+        /// <see href="https://developer.android.com/reference/java/time/format/SignStyle.html#values()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.Format.SignStyle"/></returns>
         public static Java.Time.Format.SignStyle[] Values()

@@ -30,7 +30,7 @@ namespace Java.Util.Zip
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/ZipFile.html#%3Cinit%3E(java.io.File,int,java.nio.charset.Charset)"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/ZipFile.html#%3Cinit%3E(java.io.File,int,java.nio.charset.Charset)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -41,7 +41,7 @@ namespace Java.Util.Zip
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/ZipFile.html#%3Cinit%3E(java.io.File,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/ZipFile.html#%3Cinit%3E(java.io.File,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -51,7 +51,7 @@ namespace Java.Util.Zip
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/ZipFile.html#%3Cinit%3E(java.io.File,java.nio.charset.Charset)"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/ZipFile.html#%3Cinit%3E(java.io.File,java.nio.charset.Charset)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
         /// <param name="arg1"><see cref="Java.Nio.Charset.Charset"/></param>
@@ -61,7 +61,7 @@ namespace Java.Util.Zip
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/ZipFile.html#%3Cinit%3E(java.io.File)"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/ZipFile.html#%3Cinit%3E(java.io.File)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
         /// <exception cref="Java.Util.Zip.ZipException"/>
@@ -71,7 +71,7 @@ namespace Java.Util.Zip
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/ZipFile.html#%3Cinit%3E(java.lang.String,java.nio.charset.Charset)"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/ZipFile.html#%3Cinit%3E(java.lang.String,java.nio.charset.Charset)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Nio.Charset.Charset"/></param>
@@ -81,7 +81,7 @@ namespace Java.Util.Zip
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/ZipFile.html#%3Cinit%3E(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/ZipFile.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -102,13 +102,13 @@ namespace Java.Util.Zip
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/ZipFile.html#OPEN_DELETE"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/ZipFile.html#OPEN_DELETE"/>
         /// </summary>
         public static int OPEN_DELETE { get { if (!_OPEN_DELETEReady) { _OPEN_DELETEContent = SGetField<int>(LocalBridgeClazz, "OPEN_DELETE"); _OPEN_DELETEReady = true; } return _OPEN_DELETEContent; } }
         private static int _OPEN_DELETEContent = default;
         private static bool _OPEN_DELETEReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/ZipFile.html#OPEN_READ"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/ZipFile.html#OPEN_READ"/>
         /// </summary>
         public static int OPEN_READ { get { if (!_OPEN_READReady) { _OPEN_READContent = SGetField<int>(LocalBridgeClazz, "OPEN_READ"); _OPEN_READReady = true; } return _OPEN_READContent; } }
         private static int _OPEN_READContent = default;
@@ -122,21 +122,7 @@ namespace Java.Util.Zip
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/ZipFile.html#getComment()"/> 
-        /// </summary>
-        public Java.Lang.String Comment
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getComment", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/ZipFile.html#getName()"/> 
-        /// </summary>
-        public Java.Lang.String Name
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/ZipFile.html#size()"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/ZipFile.html#size()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int Size()
@@ -144,7 +130,7 @@ namespace Java.Util.Zip
             return IExecuteWithSignature<int>("size", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/ZipFile.html#getInputStream(java.util.zip.ZipEntry)"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/ZipFile.html#getInputStream(java.util.zip.ZipEntry)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Zip.ZipEntry"/></param>
         /// <returns><see cref="Java.Io.InputStream"/></returns>
@@ -154,25 +140,41 @@ namespace Java.Util.Zip
             return IExecuteWithSignature<Java.Io.InputStream>("getInputStream", "(Ljava/util/zip/ZipEntry;)Ljava/io/InputStream;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/ZipFile.html#entries()"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/ZipFile.html#getComment()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetComment()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getComment", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/zip/ZipFile.html#getName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/zip/ZipFile.html#entries()"/>
         /// </summary>
         /// <typeparam name="ReturnExtendsJava_Util_Zip_ZipEntry"><see cref="Java.Util.Zip.ZipEntry"/></typeparam>
         /// <returns><see cref="Java.Util.Enumeration"/></returns>
-        public Java.Util.Enumeration<ReturnExtendsJava_Util_Zip_ZipEntry> Entries<ReturnExtendsJava_Util_Zip_ZipEntry>() where ReturnExtendsJava_Util_Zip_ZipEntry: Java.Util.Zip.ZipEntry
+        public Java.Util.Enumeration<ReturnExtendsJava_Util_Zip_ZipEntry> Entries<ReturnExtendsJava_Util_Zip_ZipEntry>() where ReturnExtendsJava_Util_Zip_ZipEntry : Java.Util.Zip.ZipEntry
         {
             return IExecuteWithSignature<Java.Util.Enumeration<ReturnExtendsJava_Util_Zip_ZipEntry>>("entries", "()Ljava/util/Enumeration;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/ZipFile.html#stream()"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/ZipFile.html#stream()"/>
         /// </summary>
         /// <typeparam name="ReturnExtendsJava_Util_Zip_ZipEntry"><see cref="Java.Util.Zip.ZipEntry"/></typeparam>
         /// <returns><see cref="Java.Util.Stream.Stream"/></returns>
-        public Java.Util.Stream.Stream<ReturnExtendsJava_Util_Zip_ZipEntry> Stream<ReturnExtendsJava_Util_Zip_ZipEntry>() where ReturnExtendsJava_Util_Zip_ZipEntry: Java.Util.Zip.ZipEntry
+        public Java.Util.Stream.Stream<ReturnExtendsJava_Util_Zip_ZipEntry> Stream<ReturnExtendsJava_Util_Zip_ZipEntry>() where ReturnExtendsJava_Util_Zip_ZipEntry : Java.Util.Zip.ZipEntry
         {
             return IExecuteWithSignature<Java.Util.Stream.Stream<ReturnExtendsJava_Util_Zip_ZipEntry>>("stream", "()Ljava/util/stream/Stream;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/ZipFile.html#getEntry(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/ZipFile.html#getEntry(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Util.Zip.ZipEntry"/></returns>
@@ -181,7 +183,7 @@ namespace Java.Util.Zip
             return IExecuteWithSignature<Java.Util.Zip.ZipEntry>("getEntry", "(Ljava/lang/String;)Ljava/util/zip/ZipEntry;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/zip/ZipFile.html#close()"/>
+        /// <see href="https://developer.android.com/reference/java/util/zip/ZipFile.html#close()"/>
         /// </summary>
         /// <exception cref="Java.Io.IOException"/>
         public void Close()

@@ -55,20 +55,6 @@ namespace Android.App
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/TaskStackBuilder.html#getIntentCount()"/> 
-        /// </summary>
-        public int IntentCount
-        {
-            get { return IExecuteWithSignature<int>("getIntentCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/TaskStackBuilder.html#getIntents()"/> 
-        /// </summary>
-        public Android.Content.Intent[] Intents
-        {
-            get { return IExecuteWithSignatureArray<Android.Content.Intent>("getIntents", "()[Landroid/content/Intent;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/TaskStackBuilder.html#getPendingIntent(int,int,android.os.Bundle)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -142,6 +128,22 @@ namespace Android.App
         public Android.Content.Intent EditIntentAt(int arg0)
         {
             return IExecuteWithSignature<Android.Content.Intent>("editIntentAt", "(I)Landroid/content/Intent;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/TaskStackBuilder.html#getIntents()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Content.Intent"/></returns>
+        public Android.Content.Intent[] GetIntents()
+        {
+            return IExecuteWithSignatureArray<Android.Content.Intent>("getIntents", "()[Landroid/content/Intent;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/TaskStackBuilder.html#getIntentCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetIntentCount()
+        {
+            return IExecuteWithSignature<int>("getIntentCount", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/TaskStackBuilder.html#startActivities()"/>

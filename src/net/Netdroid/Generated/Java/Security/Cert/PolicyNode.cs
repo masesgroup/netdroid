@@ -64,54 +64,62 @@ namespace Java.Security.Cert
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/PolicyNode.html#getChildren()"/> 
-        /// </summary>
-        public Java.Util.Iterator Children
-        {
-            get { return IExecuteWithSignature<Java.Util.Iterator>("getChildren", "()Ljava/util/Iterator;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/PolicyNode.html#getDepth()"/> 
-        /// </summary>
-        public int Depth
-        {
-            get { return IExecuteWithSignature<int>("getDepth", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/PolicyNode.html#getExpectedPolicies()"/> 
-        /// </summary>
-        public Java.Util.Set<Java.Lang.String> ExpectedPolicies
-        {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getExpectedPolicies", "()Ljava/util/Set;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/PolicyNode.html#getParent()"/> 
-        /// </summary>
-        public Java.Security.Cert.PolicyNode Parent
-        {
-            get { return IExecuteWithSignature<Java.Security.Cert.PolicyNode>("getParent", "()Ljava/security/cert/PolicyNode;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/PolicyNode.html#getPolicyQualifiers()"/> 
-        /// </summary>
-        public Java.Util.Set PolicyQualifiers
-        {
-            get { return IExecuteWithSignature<Java.Util.Set>("getPolicyQualifiers", "()Ljava/util/Set;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/PolicyNode.html#getValidPolicy()"/> 
-        /// </summary>
-        public Java.Lang.String ValidPolicy
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getValidPolicy", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/PolicyNode.html#isCritical()"/>
+        /// <see href="https://developer.android.com/reference/java/security/cert/PolicyNode.html#isCritical()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsCritical()
         {
             return IExecuteWithSignature<bool>("isCritical", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/cert/PolicyNode.html#getDepth()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDepth()
+        {
+            return IExecuteWithSignature<int>("getDepth", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/cert/PolicyNode.html#getValidPolicy()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetValidPolicy()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getValidPolicy", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/cert/PolicyNode.html#getParent()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Security.Cert.PolicyNode"/></returns>
+        public Java.Security.Cert.PolicyNode GetParent()
+        {
+            return IExecuteWithSignature<Java.Security.Cert.PolicyNode>("getParent", "()Ljava/security/cert/PolicyNode;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/cert/PolicyNode.html#getChildren()"/>
+        /// </summary>
+        /// <typeparam name="ReturnExtendsJava_Security_Cert_PolicyNode"><see cref="Java.Security.Cert.PolicyNode"/></typeparam>
+        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        public Java.Util.Iterator<ReturnExtendsJava_Security_Cert_PolicyNode> GetChildren<ReturnExtendsJava_Security_Cert_PolicyNode>() where ReturnExtendsJava_Security_Cert_PolicyNode : Java.Security.Cert.PolicyNode
+        {
+            return IExecuteWithSignature<Java.Util.Iterator<ReturnExtendsJava_Security_Cert_PolicyNode>>("getChildren", "()Ljava/util/Iterator;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/cert/PolicyNode.html#getPolicyQualifiers()"/>
+        /// </summary>
+        /// <typeparam name="ReturnExtendsJava_Security_Cert_PolicyQualifierInfo"><see cref="Java.Security.Cert.PolicyQualifierInfo"/></typeparam>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<ReturnExtendsJava_Security_Cert_PolicyQualifierInfo> GetPolicyQualifiers<ReturnExtendsJava_Security_Cert_PolicyQualifierInfo>() where ReturnExtendsJava_Security_Cert_PolicyQualifierInfo : Java.Security.Cert.PolicyQualifierInfo
+        {
+            return IExecuteWithSignature<Java.Util.Set<ReturnExtendsJava_Security_Cert_PolicyQualifierInfo>>("getPolicyQualifiers", "()Ljava/util/Set;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/cert/PolicyNode.html#getExpectedPolicies()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Lang.String> GetExpectedPolicies()
+        {
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getExpectedPolicies", "()Ljava/util/Set;");
         }
 
         #endregion

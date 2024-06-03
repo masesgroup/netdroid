@@ -190,88 +190,100 @@ namespace Android.App.Usage
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/usage/NetworkStats.Bucket.html#getDefaultNetworkStatus()"/> 
+            /// <see href="https://developer.android.com/reference/android/app/usage/NetworkStats.Bucket.html#getDefaultNetworkStatus()"/>
             /// </summary>
-            public int DefaultNetworkStatus
+            /// <returns><see cref="int"/></returns>
+            public int GetDefaultNetworkStatus()
             {
-                get { return IExecuteWithSignature<int>("getDefaultNetworkStatus", "()I"); }
+                return IExecuteWithSignature<int>("getDefaultNetworkStatus", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/usage/NetworkStats.Bucket.html#getEndTimeStamp()"/> 
+            /// <see href="https://developer.android.com/reference/android/app/usage/NetworkStats.Bucket.html#getMetered()"/>
             /// </summary>
-            public long EndTimeStamp
+            /// <returns><see cref="int"/></returns>
+            public int GetMetered()
             {
-                get { return IExecuteWithSignature<long>("getEndTimeStamp", "()J"); }
+                return IExecuteWithSignature<int>("getMetered", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/usage/NetworkStats.Bucket.html#getMetered()"/> 
+            /// <see href="https://developer.android.com/reference/android/app/usage/NetworkStats.Bucket.html#getRoaming()"/>
             /// </summary>
-            public int Metered
+            /// <returns><see cref="int"/></returns>
+            public int GetRoaming()
             {
-                get { return IExecuteWithSignature<int>("getMetered", "()I"); }
+                return IExecuteWithSignature<int>("getRoaming", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/usage/NetworkStats.Bucket.html#getRoaming()"/> 
+            /// <see href="https://developer.android.com/reference/android/app/usage/NetworkStats.Bucket.html#getState()"/>
             /// </summary>
-            public int Roaming
+            /// <returns><see cref="int"/></returns>
+            public int GetState()
             {
-                get { return IExecuteWithSignature<int>("getRoaming", "()I"); }
+                return IExecuteWithSignature<int>("getState", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/usage/NetworkStats.Bucket.html#getRxBytes()"/> 
+            /// <see href="https://developer.android.com/reference/android/app/usage/NetworkStats.Bucket.html#getTag()"/>
             /// </summary>
-            public long RxBytes
+            /// <returns><see cref="int"/></returns>
+            public int GetTag()
             {
-                get { return IExecuteWithSignature<long>("getRxBytes", "()J"); }
+                return IExecuteWithSignature<int>("getTag", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/usage/NetworkStats.Bucket.html#getRxPackets()"/> 
+            /// <see href="https://developer.android.com/reference/android/app/usage/NetworkStats.Bucket.html#getUid()"/>
             /// </summary>
-            public long RxPackets
+            /// <returns><see cref="int"/></returns>
+            public int GetUid()
             {
-                get { return IExecuteWithSignature<long>("getRxPackets", "()J"); }
+                return IExecuteWithSignature<int>("getUid", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/usage/NetworkStats.Bucket.html#getStartTimeStamp()"/> 
+            /// <see href="https://developer.android.com/reference/android/app/usage/NetworkStats.Bucket.html#getEndTimeStamp()"/>
             /// </summary>
-            public long StartTimeStamp
+            /// <returns><see cref="long"/></returns>
+            public long GetEndTimeStamp()
             {
-                get { return IExecuteWithSignature<long>("getStartTimeStamp", "()J"); }
+                return IExecuteWithSignature<long>("getEndTimeStamp", "()J");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/usage/NetworkStats.Bucket.html#getState()"/> 
+            /// <see href="https://developer.android.com/reference/android/app/usage/NetworkStats.Bucket.html#getRxBytes()"/>
             /// </summary>
-            public int State
+            /// <returns><see cref="long"/></returns>
+            public long GetRxBytes()
             {
-                get { return IExecuteWithSignature<int>("getState", "()I"); }
+                return IExecuteWithSignature<long>("getRxBytes", "()J");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/usage/NetworkStats.Bucket.html#getTag()"/> 
+            /// <see href="https://developer.android.com/reference/android/app/usage/NetworkStats.Bucket.html#getRxPackets()"/>
             /// </summary>
-            public int Tag
+            /// <returns><see cref="long"/></returns>
+            public long GetRxPackets()
             {
-                get { return IExecuteWithSignature<int>("getTag", "()I"); }
+                return IExecuteWithSignature<long>("getRxPackets", "()J");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/usage/NetworkStats.Bucket.html#getTxBytes()"/> 
+            /// <see href="https://developer.android.com/reference/android/app/usage/NetworkStats.Bucket.html#getStartTimeStamp()"/>
             /// </summary>
-            public long TxBytes
+            /// <returns><see cref="long"/></returns>
+            public long GetStartTimeStamp()
             {
-                get { return IExecuteWithSignature<long>("getTxBytes", "()J"); }
+                return IExecuteWithSignature<long>("getStartTimeStamp", "()J");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/usage/NetworkStats.Bucket.html#getTxPackets()"/> 
+            /// <see href="https://developer.android.com/reference/android/app/usage/NetworkStats.Bucket.html#getTxBytes()"/>
             /// </summary>
-            public long TxPackets
+            /// <returns><see cref="long"/></returns>
+            public long GetTxBytes()
             {
-                get { return IExecuteWithSignature<long>("getTxPackets", "()J"); }
+                return IExecuteWithSignature<long>("getTxBytes", "()J");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/usage/NetworkStats.Bucket.html#getUid()"/> 
+            /// <see href="https://developer.android.com/reference/android/app/usage/NetworkStats.Bucket.html#getTxPackets()"/>
             /// </summary>
-            public int Uid
+            /// <returns><see cref="long"/></returns>
+            public long GetTxPackets()
             {
-                get { return IExecuteWithSignature<int>("getUid", "()I"); }
+                return IExecuteWithSignature<long>("getTxPackets", "()J");
             }
 
             #endregion

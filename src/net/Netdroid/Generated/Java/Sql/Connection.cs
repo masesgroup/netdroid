@@ -64,31 +64,31 @@ namespace Java.Sql
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Connection.html#TRANSACTION_NONE"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Connection.html#TRANSACTION_NONE"/>
         /// </summary>
         public static int TRANSACTION_NONE { get { if (!_TRANSACTION_NONEReady) { _TRANSACTION_NONEContent = SGetField<int>(LocalBridgeClazz, "TRANSACTION_NONE"); _TRANSACTION_NONEReady = true; } return _TRANSACTION_NONEContent; } }
         private static int _TRANSACTION_NONEContent = default;
         private static bool _TRANSACTION_NONEReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Connection.html#TRANSACTION_READ_COMMITTED"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Connection.html#TRANSACTION_READ_COMMITTED"/>
         /// </summary>
         public static int TRANSACTION_READ_COMMITTED { get { if (!_TRANSACTION_READ_COMMITTEDReady) { _TRANSACTION_READ_COMMITTEDContent = SGetField<int>(LocalBridgeClazz, "TRANSACTION_READ_COMMITTED"); _TRANSACTION_READ_COMMITTEDReady = true; } return _TRANSACTION_READ_COMMITTEDContent; } }
         private static int _TRANSACTION_READ_COMMITTEDContent = default;
         private static bool _TRANSACTION_READ_COMMITTEDReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Connection.html#TRANSACTION_READ_UNCOMMITTED"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Connection.html#TRANSACTION_READ_UNCOMMITTED"/>
         /// </summary>
         public static int TRANSACTION_READ_UNCOMMITTED { get { if (!_TRANSACTION_READ_UNCOMMITTEDReady) { _TRANSACTION_READ_UNCOMMITTEDContent = SGetField<int>(LocalBridgeClazz, "TRANSACTION_READ_UNCOMMITTED"); _TRANSACTION_READ_UNCOMMITTEDReady = true; } return _TRANSACTION_READ_UNCOMMITTEDContent; } }
         private static int _TRANSACTION_READ_UNCOMMITTEDContent = default;
         private static bool _TRANSACTION_READ_UNCOMMITTEDReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Connection.html#TRANSACTION_REPEATABLE_READ"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Connection.html#TRANSACTION_REPEATABLE_READ"/>
         /// </summary>
         public static int TRANSACTION_REPEATABLE_READ { get { if (!_TRANSACTION_REPEATABLE_READReady) { _TRANSACTION_REPEATABLE_READContent = SGetField<int>(LocalBridgeClazz, "TRANSACTION_REPEATABLE_READ"); _TRANSACTION_REPEATABLE_READReady = true; } return _TRANSACTION_REPEATABLE_READContent; } }
         private static int _TRANSACTION_REPEATABLE_READContent = default;
         private static bool _TRANSACTION_REPEATABLE_READReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Connection.html#TRANSACTION_SERIALIZABLE"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Connection.html#TRANSACTION_SERIALIZABLE"/>
         /// </summary>
         public static int TRANSACTION_SERIALIZABLE { get { if (!_TRANSACTION_SERIALIZABLEReady) { _TRANSACTION_SERIALIZABLEContent = SGetField<int>(LocalBridgeClazz, "TRANSACTION_SERIALIZABLE"); _TRANSACTION_SERIALIZABLEReady = true; } return _TRANSACTION_SERIALIZABLEContent; } }
         private static int _TRANSACTION_SERIALIZABLEContent = default;
@@ -102,77 +102,16 @@ namespace Java.Sql
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Connection.html#getAutoCommit()"/> <see href="https://developer.android.com/reference/java.sql/java/sql/Connection.html#setAutoCommit(boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Connection.html#getAutoCommit()"/>
         /// </summary>
-        public bool AutoCommit
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public bool GetAutoCommit()
         {
-            get { return IExecuteWithSignature<bool>("getAutoCommit", "()Z"); } set { IExecuteWithSignature("setAutoCommit", "(Z)V", value); }
+            return IExecuteWithSignature<bool>("getAutoCommit", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Connection.html#getCatalog()"/> <see href="https://developer.android.com/reference/java.sql/java/sql/Connection.html#setCatalog(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String Catalog
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCatalog", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setCatalog", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Connection.html#getClientInfo()"/> <see href="https://developer.android.com/reference/java.sql/java/sql/Connection.html#setClientInfo(java.util.Properties)"/>
-        /// </summary>
-        public Java.Util.Properties ClientInfo
-        {
-            get { return IExecuteWithSignature<Java.Util.Properties>("getClientInfo", "()Ljava/util/Properties;"); } set { IExecuteWithSignature("setClientInfo", "(Ljava/util/Properties;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Connection.html#getHoldability()"/> <see href="https://developer.android.com/reference/java.sql/java/sql/Connection.html#setHoldability(int)"/>
-        /// </summary>
-        public int Holdability
-        {
-            get { return IExecuteWithSignature<int>("getHoldability", "()I"); } set { IExecuteWithSignature("setHoldability", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Connection.html#getMetaData()"/> 
-        /// </summary>
-        public Java.Sql.DatabaseMetaData MetaData
-        {
-            get { return IExecuteWithSignature<Java.Sql.DatabaseMetaData>("getMetaData", "()Ljava/sql/DatabaseMetaData;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Connection.html#getNetworkTimeout()"/> 
-        /// </summary>
-        public int NetworkTimeout
-        {
-            get { return IExecuteWithSignature<int>("getNetworkTimeout", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Connection.html#getSchema()"/> <see href="https://developer.android.com/reference/java.sql/java/sql/Connection.html#setSchema(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String Schema
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSchema", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setSchema", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Connection.html#getTransactionIsolation()"/> <see href="https://developer.android.com/reference/java.sql/java/sql/Connection.html#setTransactionIsolation(int)"/>
-        /// </summary>
-        public int TransactionIsolation
-        {
-            get { return IExecuteWithSignature<int>("getTransactionIsolation", "()I"); } set { IExecuteWithSignature("setTransactionIsolation", "(I)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Connection.html#getTypeMap()"/> <see href="https://developer.android.com/reference/java.sql/java/sql/Connection.html#setTypeMap(java.util.Map)"/>
-        /// </summary>
-        public Java.Util.Map<Java.Lang.String, Java.Lang.Class> TypeMap
-        {
-            get { return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Lang.Class>>("getTypeMap", "()Ljava/util/Map;"); } set { IExecuteWithSignature("setTypeMap", "(Ljava/util/Map;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Connection.html#getWarnings()"/> 
-        /// </summary>
-        public Java.Sql.SQLWarning Warnings
-        {
-            get { var obj = IExecuteWithSignature<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>("getWarnings", "()Ljava/sql/SQLWarning;"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<Java.Sql.SQLWarning>(obj); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Connection.html#isClosed()"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Connection.html#isClosed()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -181,7 +120,7 @@ namespace Java.Sql
             return IExecuteWithSignature<bool>("isClosed", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Connection.html#isReadOnly()"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Connection.html#isReadOnly()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -190,7 +129,7 @@ namespace Java.Sql
             return IExecuteWithSignature<bool>("isReadOnly", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Connection.html#isValid(int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Connection.html#isValid(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -200,7 +139,43 @@ namespace Java.Sql
             return IExecuteWithSignature<bool>("isValid", "(I)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Connection.html#getClientInfo(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Connection.html#getHoldability()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public int GetHoldability()
+        {
+            return IExecuteWithSignature<int>("getHoldability", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/sql/Connection.html#getNetworkTimeout()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public int GetNetworkTimeout()
+        {
+            return IExecuteWithSignature<int>("getNetworkTimeout", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/sql/Connection.html#getTransactionIsolation()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public int GetTransactionIsolation()
+        {
+            return IExecuteWithSignature<int>("getTransactionIsolation", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/sql/Connection.html#getCatalog()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public Java.Lang.String GetCatalog()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getCatalog", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/sql/Connection.html#getClientInfo(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -210,7 +185,16 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Lang.String>("getClientInfo", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Connection.html#nativeSQL(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Connection.html#getSchema()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public Java.Lang.String GetSchema()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getSchema", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/sql/Connection.html#nativeSQL(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -220,7 +204,7 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Lang.String>("nativeSQL", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Connection.html#createArrayOf(java.lang.String,java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Connection.html#createArrayOf(java.lang.String,java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -231,7 +215,7 @@ namespace Java.Sql
             return IExecute<Java.Sql.Array>("createArrayOf", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Connection.html#createBlob()"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Connection.html#createBlob()"/>
         /// </summary>
         /// <returns><see cref="Java.Sql.Blob"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -240,7 +224,7 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Sql.Blob>("createBlob", "()Ljava/sql/Blob;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Connection.html#prepareCall(java.lang.String,int,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Connection.html#prepareCall(java.lang.String,int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -253,7 +237,7 @@ namespace Java.Sql
             return IExecute<Java.Sql.CallableStatement>("prepareCall", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Connection.html#prepareCall(java.lang.String,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Connection.html#prepareCall(java.lang.String,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -265,7 +249,7 @@ namespace Java.Sql
             return IExecute<Java.Sql.CallableStatement>("prepareCall", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Connection.html#prepareCall(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Connection.html#prepareCall(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Sql.CallableStatement"/></returns>
@@ -275,7 +259,7 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Sql.CallableStatement>("prepareCall", "(Ljava/lang/String;)Ljava/sql/CallableStatement;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Connection.html#createClob()"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Connection.html#createClob()"/>
         /// </summary>
         /// <returns><see cref="Java.Sql.Clob"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -284,7 +268,16 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Sql.Clob>("createClob", "()Ljava/sql/Clob;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Connection.html#createNClob()"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Connection.html#getMetaData()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Sql.DatabaseMetaData"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public Java.Sql.DatabaseMetaData GetMetaData()
+        {
+            return IExecuteWithSignature<Java.Sql.DatabaseMetaData>("getMetaData", "()Ljava/sql/DatabaseMetaData;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/sql/Connection.html#createNClob()"/>
         /// </summary>
         /// <returns><see cref="Java.Sql.NClob"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -293,7 +286,7 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Sql.NClob>("createNClob", "()Ljava/sql/NClob;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Connection.html#prepareStatement(java.lang.String,int,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Connection.html#prepareStatement(java.lang.String,int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -306,7 +299,7 @@ namespace Java.Sql
             return IExecute<Java.Sql.PreparedStatement>("prepareStatement", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Connection.html#prepareStatement(java.lang.String,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Connection.html#prepareStatement(java.lang.String,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -318,7 +311,7 @@ namespace Java.Sql
             return IExecute<Java.Sql.PreparedStatement>("prepareStatement", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Connection.html#prepareStatement(java.lang.String,int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Connection.html#prepareStatement(java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -329,7 +322,7 @@ namespace Java.Sql
             return IExecute<Java.Sql.PreparedStatement>("prepareStatement", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Connection.html#prepareStatement(java.lang.String,int[])"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Connection.html#prepareStatement(java.lang.String,int[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -340,7 +333,7 @@ namespace Java.Sql
             return IExecute<Java.Sql.PreparedStatement>("prepareStatement", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Connection.html#prepareStatement(java.lang.String,java.lang.String[])"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Connection.html#prepareStatement(java.lang.String,java.lang.String[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -351,7 +344,7 @@ namespace Java.Sql
             return IExecute<Java.Sql.PreparedStatement>("prepareStatement", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Connection.html#prepareStatement(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Connection.html#prepareStatement(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Sql.PreparedStatement"/></returns>
@@ -361,7 +354,7 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Sql.PreparedStatement>("prepareStatement", "(Ljava/lang/String;)Ljava/sql/PreparedStatement;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Connection.html#setSavepoint()"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Connection.html#setSavepoint()"/>
         /// </summary>
         /// <returns><see cref="Java.Sql.Savepoint"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -370,7 +363,7 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Sql.Savepoint>("setSavepoint", "()Ljava/sql/Savepoint;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Connection.html#setSavepoint(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Connection.html#setSavepoint(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Sql.Savepoint"/></returns>
@@ -380,7 +373,16 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Sql.Savepoint>("setSavepoint", "(Ljava/lang/String;)Ljava/sql/Savepoint;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Connection.html#createSQLXML()"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Connection.html#getWarnings()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Sql.SQLWarning"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public Java.Sql.SQLWarning GetWarnings()
+        {
+            var obj = IExecuteWithSignature<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>("getWarnings", "()Ljava/sql/SQLWarning;"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<Java.Sql.SQLWarning>(obj);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/sql/Connection.html#createSQLXML()"/>
         /// </summary>
         /// <returns><see cref="Java.Sql.SQLXML"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -389,7 +391,7 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Sql.SQLXML>("createSQLXML", "()Ljava/sql/SQLXML;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Connection.html#createStatement()"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Connection.html#createStatement()"/>
         /// </summary>
         /// <returns><see cref="Java.Sql.Statement"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -398,7 +400,7 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Sql.Statement>("createStatement", "()Ljava/sql/Statement;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Connection.html#createStatement(int,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Connection.html#createStatement(int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -410,7 +412,7 @@ namespace Java.Sql
             return IExecute<Java.Sql.Statement>("createStatement", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Connection.html#createStatement(int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Connection.html#createStatement(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -421,7 +423,7 @@ namespace Java.Sql
             return IExecute<Java.Sql.Statement>("createStatement", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Connection.html#createStruct(java.lang.String,java.lang.Object[])"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Connection.html#createStruct(java.lang.String,java.lang.Object[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="object"/></param>
@@ -432,7 +434,25 @@ namespace Java.Sql
             return IExecute<Java.Sql.Struct>("createStruct", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Connection.html#abort(java.util.concurrent.Executor)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Connection.html#getTypeMap()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public Java.Util.Map<Java.Lang.String, Java.Lang.Class> GetTypeMap()
+        {
+            return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Lang.Class>>("getTypeMap", "()Ljava/util/Map;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/sql/Connection.html#getClientInfo()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Properties"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public Java.Util.Properties GetClientInfo()
+        {
+            return IExecuteWithSignature<Java.Util.Properties>("getClientInfo", "()Ljava/util/Properties;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/sql/Connection.html#abort(java.util.concurrent.Executor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -441,7 +461,7 @@ namespace Java.Sql
             IExecuteWithSignature("abort", "(Ljava/util/concurrent/Executor;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Connection.html#clearWarnings()"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Connection.html#clearWarnings()"/>
         /// </summary>
         /// <exception cref="Java.Sql.SQLException"/>
         public void ClearWarnings()
@@ -449,7 +469,7 @@ namespace Java.Sql
             IExecuteWithSignature("clearWarnings", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Connection.html#close()"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Connection.html#close()"/>
         /// </summary>
         /// <exception cref="Java.Sql.SQLException"/>
         public void Close()
@@ -457,7 +477,7 @@ namespace Java.Sql
             IExecuteWithSignature("close", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Connection.html#commit()"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Connection.html#commit()"/>
         /// </summary>
         /// <exception cref="Java.Sql.SQLException"/>
         public void Commit()
@@ -465,7 +485,7 @@ namespace Java.Sql
             IExecuteWithSignature("commit", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Connection.html#releaseSavepoint(java.sql.Savepoint)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Connection.html#releaseSavepoint(java.sql.Savepoint)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Sql.Savepoint"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -474,7 +494,7 @@ namespace Java.Sql
             IExecuteWithSignature("releaseSavepoint", "(Ljava/sql/Savepoint;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Connection.html#rollback()"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Connection.html#rollback()"/>
         /// </summary>
         /// <exception cref="Java.Sql.SQLException"/>
         public void Rollback()
@@ -482,7 +502,7 @@ namespace Java.Sql
             IExecuteWithSignature("rollback", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Connection.html#rollback(java.sql.Savepoint)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Connection.html#rollback(java.sql.Savepoint)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Sql.Savepoint"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -491,7 +511,25 @@ namespace Java.Sql
             IExecuteWithSignature("rollback", "(Ljava/sql/Savepoint;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Connection.html#setClientInfo(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Connection.html#setAutoCommit(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public void SetAutoCommit(bool arg0)
+        {
+            IExecuteWithSignature("setAutoCommit", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/sql/Connection.html#setCatalog(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public void SetCatalog(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setCatalog", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/sql/Connection.html#setClientInfo(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -501,7 +539,25 @@ namespace Java.Sql
             IExecute("setClientInfo", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Connection.html#setNetworkTimeout(java.util.concurrent.Executor,int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Connection.html#setClientInfo(java.util.Properties)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Properties"/></param>
+        /// <exception cref="Java.Sql.SQLClientInfoException"/>
+        public void SetClientInfo(Java.Util.Properties arg0)
+        {
+            IExecuteWithSignature("setClientInfo", "(Ljava/util/Properties;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/sql/Connection.html#setHoldability(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public void SetHoldability(int arg0)
+        {
+            IExecuteWithSignature("setHoldability", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/sql/Connection.html#setNetworkTimeout(java.util.concurrent.Executor,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Concurrent.Executor"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -511,7 +567,7 @@ namespace Java.Sql
             IExecute("setNetworkTimeout", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Connection.html#setReadOnly(boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Connection.html#setReadOnly(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -520,7 +576,34 @@ namespace Java.Sql
             IExecuteWithSignature("setReadOnly", "(Z)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Connection.html#beginRequest()"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Connection.html#setSchema(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public void SetSchema(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setSchema", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/sql/Connection.html#setTransactionIsolation(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public void SetTransactionIsolation(int arg0)
+        {
+            IExecuteWithSignature("setTransactionIsolation", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/sql/Connection.html#setTypeMap(java.util.Map)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public void SetTypeMap(Java.Util.Map<Java.Lang.String, Java.Lang.Class> arg0)
+        {
+            IExecuteWithSignature("setTypeMap", "(Ljava/util/Map;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/sql/Connection.html#beginRequest()"/>
         /// </summary>
         /// <exception cref="Java.Sql.SQLException"/>
         public void BeginRequest()
@@ -528,7 +611,7 @@ namespace Java.Sql
             IExecuteWithSignature("beginRequest", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Connection.html#endRequest()"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Connection.html#endRequest()"/>
         /// </summary>
         /// <exception cref="Java.Sql.SQLException"/>
         public void EndRequest()

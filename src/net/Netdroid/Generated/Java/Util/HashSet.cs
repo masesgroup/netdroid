@@ -30,7 +30,7 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/HashSet.html#%3Cinit%3E(int,float)"/>
+        /// <see href="https://developer.android.com/reference/java/util/HashSet.html#%3Cinit%3E(int,float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="float"/></param>
@@ -39,7 +39,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/HashSet.html#%3Cinit%3E(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/HashSet.html#%3Cinit%3E(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public HashSet(int arg0)
@@ -47,7 +47,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/HashSet.html#%3Cinit%3E(java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/HashSet.html#%3Cinit%3E(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         public HashSet(Java.Util.Collection arg0)
@@ -94,7 +94,7 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/HashSet.html#%3Cinit%3E(int,float)"/>
+        /// <see href="https://developer.android.com/reference/java/util/HashSet.html#%3Cinit%3E(int,float)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="float"/></param>
@@ -103,7 +103,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/HashSet.html#%3Cinit%3E(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/HashSet.html#%3Cinit%3E(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public HashSet(int arg0)
@@ -111,7 +111,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/HashSet.html#%3Cinit%3E(java.util.Collection)"/>
+        /// <see href="https://developer.android.com/reference/java/util/HashSet.html#%3Cinit%3E(java.util.Collection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Collection"/></param>
         public HashSet(Java.Util.Collection<E> arg0)

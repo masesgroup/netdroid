@@ -46,32 +46,36 @@ namespace Android.Webkit
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/ClientCertRequest.html#getHost()"/> 
+        /// <see href="https://developer.android.com/reference/android/webkit/ClientCertRequest.html#getPort()"/>
         /// </summary>
-        public Java.Lang.String Host
+        /// <returns><see cref="int"/></returns>
+        public int GetPort()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getHost", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<int>("getPort", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/ClientCertRequest.html#getKeyTypes()"/> 
+        /// <see href="https://developer.android.com/reference/android/webkit/ClientCertRequest.html#getHost()"/>
         /// </summary>
-        public Java.Lang.String[] KeyTypes
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetHost()
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getKeyTypes", "()[Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getHost", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/ClientCertRequest.html#getPort()"/> 
+        /// <see href="https://developer.android.com/reference/android/webkit/ClientCertRequest.html#getKeyTypes()"/>
         /// </summary>
-        public int Port
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String[] GetKeyTypes()
         {
-            get { return IExecuteWithSignature<int>("getPort", "()I"); }
+            return IExecuteWithSignatureArray<Java.Lang.String>("getKeyTypes", "()[Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/ClientCertRequest.html#getPrincipals()"/> 
+        /// <see href="https://developer.android.com/reference/android/webkit/ClientCertRequest.html#getPrincipals()"/>
         /// </summary>
-        public Java.Security.Principal[] Principals
+        /// <returns><see cref="Java.Security.Principal"/></returns>
+        public Java.Security.Principal[] GetPrincipals()
         {
-            get { return IExecuteWithSignatureArray<Java.Security.Principal>("getPrincipals", "()[Ljava/security/Principal;"); }
+            return IExecuteWithSignatureArray<Java.Security.Principal>("getPrincipals", "()[Ljava/security/Principal;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/ClientCertRequest.html#cancel()"/>

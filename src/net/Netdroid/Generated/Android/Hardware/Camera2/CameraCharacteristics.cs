@@ -328,7 +328,7 @@ namespace Android.Hardware.Camera2
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraCharacteristics.html#LENS_RADIAL_DISTORTION"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Android.Hardware.Camera2.CameraCharacteristics.Key LENS_RADIAL_DISTORTION { get { if (!_LENS_RADIAL_DISTORTIONReady) { _LENS_RADIAL_DISTORTIONContent = SGetField<Android.Hardware.Camera2.CameraCharacteristics.Key>(LocalBridgeClazz, "LENS_RADIAL_DISTORTION"); _LENS_RADIAL_DISTORTIONReady = true; } return _LENS_RADIAL_DISTORTIONContent; } }
         private static Android.Hardware.Camera2.CameraCharacteristics.Key _LENS_RADIAL_DISTORTIONContent = default;
         private static bool _LENS_RADIAL_DISTORTIONReady = false; // this is used because in case of generics 
@@ -743,48 +743,6 @@ namespace Android.Hardware.Camera2
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraCharacteristics.html#getAvailableCaptureRequestKeys()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Hardware.Camera2.CaptureRequest.Key<object>> AvailableCaptureRequestKeys
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Hardware.Camera2.CaptureRequest.Key<object>>>("getAvailableCaptureRequestKeys", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraCharacteristics.html#getAvailableCaptureResultKeys()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Hardware.Camera2.CaptureResult.Key<object>> AvailableCaptureResultKeys
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Hardware.Camera2.CaptureResult.Key<object>>>("getAvailableCaptureResultKeys", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraCharacteristics.html#getAvailablePhysicalCameraRequestKeys()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Hardware.Camera2.CaptureRequest.Key<object>> AvailablePhysicalCameraRequestKeys
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Hardware.Camera2.CaptureRequest.Key<object>>>("getAvailablePhysicalCameraRequestKeys", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraCharacteristics.html#getAvailableSessionKeys()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Hardware.Camera2.CaptureRequest.Key<object>> AvailableSessionKeys
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Hardware.Camera2.CaptureRequest.Key<object>>>("getAvailableSessionKeys", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraCharacteristics.html#getKeysNeedingPermission()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Hardware.Camera2.CameraCharacteristics.Key<object>> KeysNeedingPermission
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Hardware.Camera2.CameraCharacteristics.Key<object>>>("getKeysNeedingPermission", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraCharacteristics.html#getPhysicalCameraIds()"/> 
-        /// </summary>
-        public Java.Util.Set<Java.Lang.String> PhysicalCameraIds
-        {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getPhysicalCameraIds", "()Ljava/util/Set;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraCharacteristics.html#get(android.hardware.camera2.CameraCharacteristics.Key)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Hardware.Camera2.CameraCharacteristics.Key"/></param>
@@ -802,6 +760,54 @@ namespace Android.Hardware.Camera2
         public Android.Hardware.Camera2.Params.RecommendedStreamConfigurationMap GetRecommendedStreamConfigurationMap(int arg0)
         {
             return IExecuteWithSignature<Android.Hardware.Camera2.Params.RecommendedStreamConfigurationMap>("getRecommendedStreamConfigurationMap", "(I)Landroid/hardware/camera2/params/RecommendedStreamConfigurationMap;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraCharacteristics.html#getKeysNeedingPermission()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Hardware.Camera2.CameraCharacteristics.Key<object>> GetKeysNeedingPermission()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Hardware.Camera2.CameraCharacteristics.Key<object>>>("getKeysNeedingPermission", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraCharacteristics.html#getAvailableCaptureRequestKeys()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Hardware.Camera2.CaptureRequest.Key<object>> GetAvailableCaptureRequestKeys()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Hardware.Camera2.CaptureRequest.Key<object>>>("getAvailableCaptureRequestKeys", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraCharacteristics.html#getAvailablePhysicalCameraRequestKeys()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Hardware.Camera2.CaptureRequest.Key<object>> GetAvailablePhysicalCameraRequestKeys()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Hardware.Camera2.CaptureRequest.Key<object>>>("getAvailablePhysicalCameraRequestKeys", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraCharacteristics.html#getAvailableSessionKeys()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Hardware.Camera2.CaptureRequest.Key<object>> GetAvailableSessionKeys()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Hardware.Camera2.CaptureRequest.Key<object>>>("getAvailableSessionKeys", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraCharacteristics.html#getAvailableCaptureResultKeys()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Hardware.Camera2.CaptureResult.Key<object>> GetAvailableCaptureResultKeys()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Hardware.Camera2.CaptureResult.Key<object>>>("getAvailableCaptureResultKeys", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraCharacteristics.html#getPhysicalCameraIds()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Lang.String> GetPhysicalCameraIds()
+        {
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getPhysicalCameraIds", "()Ljava/util/Set;");
         }
 
         #endregion
@@ -837,11 +843,12 @@ namespace Android.Hardware.Camera2
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraCharacteristics.Key.html#getName()"/> 
+            /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraCharacteristics.Key.html#getName()"/>
             /// </summary>
-            public Java.Lang.String Name
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetName()
             {
-                get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+                return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
             }
 
             #endregion
@@ -888,11 +895,12 @@ namespace Android.Hardware.Camera2
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraCharacteristics.Key.html#getName()"/> 
+            /// <see href="https://developer.android.com/reference/android/hardware/camera2/CameraCharacteristics.Key.html#getName()"/>
             /// </summary>
-            public Java.Lang.String Name
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetName()
             {
-                get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
+                return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
             }
 
             #endregion

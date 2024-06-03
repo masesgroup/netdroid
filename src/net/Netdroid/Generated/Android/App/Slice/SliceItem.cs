@@ -100,81 +100,44 @@ namespace Android.App.Slice
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/slice/SliceItem.html#getAction()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/slice/SliceItem.html#getAction()"/>
         /// </summary>
-        public Android.App.PendingIntent Action
+        /// <returns><see cref="Android.App.PendingIntent"/></returns>
+        public Android.App.PendingIntent GetAction()
         {
-            get { return IExecuteWithSignature<Android.App.PendingIntent>("getAction", "()Landroid/app/PendingIntent;"); }
+            return IExecuteWithSignature<Android.App.PendingIntent>("getAction", "()Landroid/app/PendingIntent;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/slice/SliceItem.html#getBundle()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/slice/SliceItem.html#getRemoteInput()"/>
         /// </summary>
-        public Android.Os.Bundle Bundle
+        /// <returns><see cref="Android.App.RemoteInput"/></returns>
+        public Android.App.RemoteInput GetRemoteInput()
         {
-            get { return IExecuteWithSignature<Android.Os.Bundle>("getBundle", "()Landroid/os/Bundle;"); }
+            return IExecuteWithSignature<Android.App.RemoteInput>("getRemoteInput", "()Landroid/app/RemoteInput;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/slice/SliceItem.html#getFormat()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/slice/SliceItem.html#getSlice()"/>
         /// </summary>
-        public Java.Lang.String Format
+        /// <returns><see cref="Android.App.Slice.Slice"/></returns>
+        public Android.App.Slice.Slice GetSlice()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getFormat", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Android.App.Slice.Slice>("getSlice", "()Landroid/app/slice/Slice;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/slice/SliceItem.html#getHints()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/slice/SliceItem.html#getIcon()"/>
         /// </summary>
-        public Java.Util.List<Java.Lang.String> Hints
+        /// <returns><see cref="Android.Graphics.Drawable.Icon"/></returns>
+        public Android.Graphics.Drawable.Icon GetIcon()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getHints", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Android.Graphics.Drawable.Icon>("getIcon", "()Landroid/graphics/drawable/Icon;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/slice/SliceItem.html#getIcon()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/slice/SliceItem.html#getBundle()"/>
         /// </summary>
-        public Android.Graphics.Drawable.Icon Icon
+        /// <returns><see cref="Android.Os.Bundle"/></returns>
+        public Android.Os.Bundle GetBundle()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Icon>("getIcon", "()Landroid/graphics/drawable/Icon;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/slice/SliceItem.html#getInt()"/> 
-        /// </summary>
-        public int Int
-        {
-            get { return IExecuteWithSignature<int>("getInt", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/slice/SliceItem.html#getLong()"/> 
-        /// </summary>
-        public long Long
-        {
-            get { return IExecuteWithSignature<long>("getLong", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/slice/SliceItem.html#getRemoteInput()"/> 
-        /// </summary>
-        public Android.App.RemoteInput RemoteInput
-        {
-            get { return IExecuteWithSignature<Android.App.RemoteInput>("getRemoteInput", "()Landroid/app/RemoteInput;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/slice/SliceItem.html#getSlice()"/> 
-        /// </summary>
-        public Android.App.Slice.Slice Slice
-        {
-            get { return IExecuteWithSignature<Android.App.Slice.Slice>("getSlice", "()Landroid/app/slice/Slice;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/slice/SliceItem.html#getSubType()"/> 
-        /// </summary>
-        public Java.Lang.String SubType
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSubType", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/slice/SliceItem.html#getText()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence Text
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getText", "()Ljava/lang/CharSequence;"); }
+            return IExecuteWithSignature<Android.Os.Bundle>("getBundle", "()Landroid/os/Bundle;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/slice/SliceItem.html#hasHint(java.lang.String)"/>
@@ -192,6 +155,54 @@ namespace Android.App.Slice
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/slice/SliceItem.html#getInt()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetInt()
+        {
+            return IExecuteWithSignature<int>("getInt", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/slice/SliceItem.html#getText()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetText()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getText", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/slice/SliceItem.html#getFormat()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetFormat()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getFormat", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/slice/SliceItem.html#getSubType()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSubType()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getSubType", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/slice/SliceItem.html#getHints()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Lang.String> GetHints()
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.String>>("getHints", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/slice/SliceItem.html#getLong()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetLong()
+        {
+            return IExecuteWithSignature<long>("getLong", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/slice/SliceItem.html#writeToParcel(android.os.Parcel,int)"/>

@@ -46,7 +46,7 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Callable.html#call()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/Callable.html#call()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Lang.Exception"/>
@@ -108,7 +108,7 @@ namespace Java.Util.Concurrent
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/Callable.html#call()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/Callable.html#call()"/>
         /// </summary>
         /// <returns><typeparamref name="V"/></returns>
         /// <exception cref="Java.Lang.Exception"/>

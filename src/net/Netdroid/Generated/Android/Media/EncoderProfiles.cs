@@ -46,32 +46,36 @@ namespace Android.Media
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/EncoderProfiles.html#getAudioProfiles()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/EncoderProfiles.html#getDefaultDurationSeconds()"/>
         /// </summary>
-        public Java.Util.List<Android.Media.EncoderProfiles.AudioProfile> AudioProfiles
+        /// <returns><see cref="int"/></returns>
+        public int GetDefaultDurationSeconds()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Media.EncoderProfiles.AudioProfile>>("getAudioProfiles", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<int>("getDefaultDurationSeconds", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/EncoderProfiles.html#getDefaultDurationSeconds()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/EncoderProfiles.html#getRecommendedFileFormat()"/>
         /// </summary>
-        public int DefaultDurationSeconds
+        /// <returns><see cref="int"/></returns>
+        public int GetRecommendedFileFormat()
         {
-            get { return IExecuteWithSignature<int>("getDefaultDurationSeconds", "()I"); }
+            return IExecuteWithSignature<int>("getRecommendedFileFormat", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/EncoderProfiles.html#getRecommendedFileFormat()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/EncoderProfiles.html#getAudioProfiles()"/>
         /// </summary>
-        public int RecommendedFileFormat
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Media.EncoderProfiles.AudioProfile> GetAudioProfiles()
         {
-            get { return IExecuteWithSignature<int>("getRecommendedFileFormat", "()I"); }
+            return IExecuteWithSignature<Java.Util.List<Android.Media.EncoderProfiles.AudioProfile>>("getAudioProfiles", "()Ljava/util/List;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/EncoderProfiles.html#getVideoProfiles()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/EncoderProfiles.html#getVideoProfiles()"/>
         /// </summary>
-        public Java.Util.List<Android.Media.EncoderProfiles.VideoProfile> VideoProfiles
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Media.EncoderProfiles.VideoProfile> GetVideoProfiles()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Media.EncoderProfiles.VideoProfile>>("getVideoProfiles", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Java.Util.List<Android.Media.EncoderProfiles.VideoProfile>>("getVideoProfiles", "()Ljava/util/List;");
         }
 
         #endregion
@@ -98,46 +102,52 @@ namespace Android.Media
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/EncoderProfiles.AudioProfile.html#getBitrate()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/EncoderProfiles.AudioProfile.html#getBitrate()"/>
             /// </summary>
-            public int Bitrate
+            /// <returns><see cref="int"/></returns>
+            public int GetBitrate()
             {
-                get { return IExecuteWithSignature<int>("getBitrate", "()I"); }
+                return IExecuteWithSignature<int>("getBitrate", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/EncoderProfiles.AudioProfile.html#getChannels()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/EncoderProfiles.AudioProfile.html#getChannels()"/>
             /// </summary>
-            public int Channels
+            /// <returns><see cref="int"/></returns>
+            public int GetChannels()
             {
-                get { return IExecuteWithSignature<int>("getChannels", "()I"); }
+                return IExecuteWithSignature<int>("getChannels", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/EncoderProfiles.AudioProfile.html#getCodec()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/EncoderProfiles.AudioProfile.html#getCodec()"/>
             /// </summary>
-            public int Codec
+            /// <returns><see cref="int"/></returns>
+            public int GetCodec()
             {
-                get { return IExecuteWithSignature<int>("getCodec", "()I"); }
+                return IExecuteWithSignature<int>("getCodec", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/EncoderProfiles.AudioProfile.html#getMediaType()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/EncoderProfiles.AudioProfile.html#getProfile()"/>
             /// </summary>
-            public Java.Lang.String MediaType
+            /// <returns><see cref="int"/></returns>
+            public int GetProfile()
             {
-                get { return IExecuteWithSignature<Java.Lang.String>("getMediaType", "()Ljava/lang/String;"); }
+                return IExecuteWithSignature<int>("getProfile", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/EncoderProfiles.AudioProfile.html#getProfile()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/EncoderProfiles.AudioProfile.html#getSampleRate()"/>
             /// </summary>
-            public int Profile
+            /// <returns><see cref="int"/></returns>
+            public int GetSampleRate()
             {
-                get { return IExecuteWithSignature<int>("getProfile", "()I"); }
+                return IExecuteWithSignature<int>("getSampleRate", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/EncoderProfiles.AudioProfile.html#getSampleRate()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/EncoderProfiles.AudioProfile.html#getMediaType()"/>
             /// </summary>
-            public int SampleRate
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetMediaType()
             {
-                get { return IExecuteWithSignature<int>("getSampleRate", "()I"); }
+                return IExecuteWithSignature<Java.Lang.String>("getMediaType", "()Ljava/lang/String;");
             }
 
             #endregion
@@ -219,74 +229,84 @@ namespace Android.Media
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/EncoderProfiles.VideoProfile.html#getBitDepth()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/EncoderProfiles.VideoProfile.html#getBitDepth()"/>
             /// </summary>
-            public int BitDepth
+            /// <returns><see cref="int"/></returns>
+            public int GetBitDepth()
             {
-                get { return IExecuteWithSignature<int>("getBitDepth", "()I"); }
+                return IExecuteWithSignature<int>("getBitDepth", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/EncoderProfiles.VideoProfile.html#getBitrate()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/EncoderProfiles.VideoProfile.html#getBitrate()"/>
             /// </summary>
-            public int Bitrate
+            /// <returns><see cref="int"/></returns>
+            public int GetBitrate()
             {
-                get { return IExecuteWithSignature<int>("getBitrate", "()I"); }
+                return IExecuteWithSignature<int>("getBitrate", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/EncoderProfiles.VideoProfile.html#getChromaSubsampling()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/EncoderProfiles.VideoProfile.html#getChromaSubsampling()"/>
             /// </summary>
-            public int ChromaSubsampling
+            /// <returns><see cref="int"/></returns>
+            public int GetChromaSubsampling()
             {
-                get { return IExecuteWithSignature<int>("getChromaSubsampling", "()I"); }
+                return IExecuteWithSignature<int>("getChromaSubsampling", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/EncoderProfiles.VideoProfile.html#getCodec()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/EncoderProfiles.VideoProfile.html#getCodec()"/>
             /// </summary>
-            public int Codec
+            /// <returns><see cref="int"/></returns>
+            public int GetCodec()
             {
-                get { return IExecuteWithSignature<int>("getCodec", "()I"); }
+                return IExecuteWithSignature<int>("getCodec", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/EncoderProfiles.VideoProfile.html#getFrameRate()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/EncoderProfiles.VideoProfile.html#getFrameRate()"/>
             /// </summary>
-            public int FrameRate
+            /// <returns><see cref="int"/></returns>
+            public int GetFrameRate()
             {
-                get { return IExecuteWithSignature<int>("getFrameRate", "()I"); }
+                return IExecuteWithSignature<int>("getFrameRate", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/EncoderProfiles.VideoProfile.html#getHdrFormat()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/EncoderProfiles.VideoProfile.html#getHdrFormat()"/>
             /// </summary>
-            public int HdrFormat
+            /// <returns><see cref="int"/></returns>
+            public int GetHdrFormat()
             {
-                get { return IExecuteWithSignature<int>("getHdrFormat", "()I"); }
+                return IExecuteWithSignature<int>("getHdrFormat", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/EncoderProfiles.VideoProfile.html#getHeight()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/EncoderProfiles.VideoProfile.html#getHeight()"/>
             /// </summary>
-            public int Height
+            /// <returns><see cref="int"/></returns>
+            public int GetHeight()
             {
-                get { return IExecuteWithSignature<int>("getHeight", "()I"); }
+                return IExecuteWithSignature<int>("getHeight", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/EncoderProfiles.VideoProfile.html#getMediaType()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/EncoderProfiles.VideoProfile.html#getProfile()"/>
             /// </summary>
-            public Java.Lang.String MediaType
+            /// <returns><see cref="int"/></returns>
+            public int GetProfile()
             {
-                get { return IExecuteWithSignature<Java.Lang.String>("getMediaType", "()Ljava/lang/String;"); }
+                return IExecuteWithSignature<int>("getProfile", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/EncoderProfiles.VideoProfile.html#getProfile()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/EncoderProfiles.VideoProfile.html#getWidth()"/>
             /// </summary>
-            public int Profile
+            /// <returns><see cref="int"/></returns>
+            public int GetWidth()
             {
-                get { return IExecuteWithSignature<int>("getProfile", "()I"); }
+                return IExecuteWithSignature<int>("getWidth", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/EncoderProfiles.VideoProfile.html#getWidth()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/EncoderProfiles.VideoProfile.html#getMediaType()"/>
             /// </summary>
-            public int Width
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetMediaType()
             {
-                get { return IExecuteWithSignature<int>("getWidth", "()I"); }
+                return IExecuteWithSignature<Java.Lang.String>("getMediaType", "()Ljava/lang/String;");
             }
 
             #endregion

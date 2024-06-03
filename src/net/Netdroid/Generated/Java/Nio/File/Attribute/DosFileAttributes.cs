@@ -64,7 +64,7 @@ namespace Java.Nio.File.Attribute
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/DosFileAttributes.html#isArchive()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/attribute/DosFileAttributes.html#isArchive()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsArchive()
@@ -72,7 +72,7 @@ namespace Java.Nio.File.Attribute
             return IExecuteWithSignature<bool>("isArchive", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/DosFileAttributes.html#isHidden()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/attribute/DosFileAttributes.html#isHidden()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsHidden()
@@ -80,7 +80,7 @@ namespace Java.Nio.File.Attribute
             return IExecuteWithSignature<bool>("isHidden", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/DosFileAttributes.html#isReadOnly()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/attribute/DosFileAttributes.html#isReadOnly()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsReadOnly()
@@ -88,7 +88,7 @@ namespace Java.Nio.File.Attribute
             return IExecuteWithSignature<bool>("isReadOnly", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/DosFileAttributes.html#isSystem()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/attribute/DosFileAttributes.html#isSystem()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsSystem()

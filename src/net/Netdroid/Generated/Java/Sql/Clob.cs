@@ -64,21 +64,7 @@ namespace Java.Sql
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Clob.html#getAsciiStream()"/> 
-        /// </summary>
-        public Java.Io.InputStream AsciiStream
-        {
-            get { return IExecuteWithSignature<Java.Io.InputStream>("getAsciiStream", "()Ljava/io/InputStream;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Clob.html#getCharacterStream()"/> 
-        /// </summary>
-        public Java.Io.Reader CharacterStream
-        {
-            get { return IExecuteWithSignature<Java.Io.Reader>("getCharacterStream", "()Ljava/io/Reader;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Clob.html#setString(long,java.lang.String,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Clob.html#setString(long,java.lang.String,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -91,7 +77,7 @@ namespace Java.Sql
             return IExecute<int>("setString", arg0, arg1, arg2, arg3);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Clob.html#setString(long,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Clob.html#setString(long,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -102,7 +88,16 @@ namespace Java.Sql
             return IExecute<int>("setString", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Clob.html#setAsciiStream(long)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Clob.html#getAsciiStream()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Io.InputStream"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public Java.Io.InputStream GetAsciiStream()
+        {
+            return IExecuteWithSignature<Java.Io.InputStream>("getAsciiStream", "()Ljava/io/InputStream;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/sql/Clob.html#setAsciiStream(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Io.OutputStream"/></returns>
@@ -112,7 +107,16 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Io.OutputStream>("setAsciiStream", "(J)Ljava/io/OutputStream;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Clob.html#getCharacterStream(long,long)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Clob.html#getCharacterStream()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Io.Reader"/></returns>
+        /// <exception cref="Java.Sql.SQLException"/>
+        public Java.Io.Reader GetCharacterStream()
+        {
+            return IExecuteWithSignature<Java.Io.Reader>("getCharacterStream", "()Ljava/io/Reader;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/sql/Clob.html#getCharacterStream(long,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -123,7 +127,7 @@ namespace Java.Sql
             return IExecute<Java.Io.Reader>("getCharacterStream", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Clob.html#setCharacterStream(long)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Clob.html#setCharacterStream(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Io.Writer"/></returns>
@@ -133,7 +137,7 @@ namespace Java.Sql
             return IExecuteWithSignature<Java.Io.Writer>("setCharacterStream", "(J)Ljava/io/Writer;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Clob.html#getSubString(long,int)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Clob.html#getSubString(long,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -144,7 +148,7 @@ namespace Java.Sql
             return IExecute<Java.Lang.String>("getSubString", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Clob.html#length()"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Clob.html#length()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
@@ -153,7 +157,7 @@ namespace Java.Sql
             return IExecuteWithSignature<long>("length", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Clob.html#position(java.lang.String,long)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Clob.html#position(java.lang.String,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -164,7 +168,7 @@ namespace Java.Sql
             return IExecute<long>("position", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Clob.html#position(java.sql.Clob,long)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Clob.html#position(java.sql.Clob,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Sql.Clob"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -175,7 +179,7 @@ namespace Java.Sql
             return IExecute<long>("position", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Clob.html#free()"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Clob.html#free()"/>
         /// </summary>
         /// <exception cref="Java.Sql.SQLException"/>
         public void Free()
@@ -183,7 +187,7 @@ namespace Java.Sql
             IExecuteWithSignature("free", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/java/sql/Clob.html#truncate(long)"/>
+        /// <see href="https://developer.android.com/reference/java/sql/Clob.html#truncate(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <exception cref="Java.Sql.SQLException"/>

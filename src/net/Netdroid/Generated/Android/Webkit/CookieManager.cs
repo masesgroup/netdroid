@@ -42,11 +42,12 @@ namespace Android.Webkit
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/webkit/CookieManager.html#getInstance()"/> 
+        /// <see href="https://developer.android.com/reference/android/webkit/CookieManager.html#getInstance()"/>
         /// </summary>
-        public static Android.Webkit.CookieManager Instance
+        /// <returns><see cref="Android.Webkit.CookieManager"/></returns>
+        public static Android.Webkit.CookieManager GetInstance()
         {
-            get { return SExecuteWithSignature<Android.Webkit.CookieManager>(LocalBridgeClazz, "getInstance", "()Landroid/webkit/CookieManager;"); }
+            return SExecuteWithSignature<Android.Webkit.CookieManager>(LocalBridgeClazz, "getInstance", "()Landroid/webkit/CookieManager;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/CookieManager.html#allowFileSchemeCookies()"/>
@@ -60,7 +61,7 @@ namespace Android.Webkit
         /// <see href="https://developer.android.com/reference/android/webkit/CookieManager.html#setAcceptFileSchemeCookies(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static void SetAcceptFileSchemeCookies(bool arg0)
         {
             SExecuteWithSignature(LocalBridgeClazz, "setAcceptFileSchemeCookies", "(Z)V", arg0);
@@ -113,7 +114,7 @@ namespace Android.Webkit
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/CookieManager.html#removeAllCookie()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void RemoveAllCookie()
         {
             IExecuteWithSignature("removeAllCookie", "()V");
@@ -129,7 +130,7 @@ namespace Android.Webkit
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/CookieManager.html#removeExpiredCookie()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void RemoveExpiredCookie()
         {
             IExecuteWithSignature("removeExpiredCookie", "()V");
@@ -137,7 +138,7 @@ namespace Android.Webkit
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/webkit/CookieManager.html#removeSessionCookie()"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void RemoveSessionCookie()
         {
             IExecuteWithSignature("removeSessionCookie", "()V");

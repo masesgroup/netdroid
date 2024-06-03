@@ -63,25 +63,12 @@ namespace Android.Location
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/GnssSignalType.html#getCarrierFrequencyHz()"/> 
+        /// <see href="https://developer.android.com/reference/android/location/GnssSignalType.html#getCarrierFrequencyHz()"/>
         /// </summary>
-        public double CarrierFrequencyHz
+        /// <returns><see cref="double"/></returns>
+        public double GetCarrierFrequencyHz()
         {
-            get { return IExecuteWithSignature<double>("getCarrierFrequencyHz", "()D"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/GnssSignalType.html#getCodeType()"/> 
-        /// </summary>
-        public Java.Lang.String CodeType
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCodeType", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/GnssSignalType.html#getConstellationType()"/> 
-        /// </summary>
-        public int ConstellationType
-        {
-            get { return IExecuteWithSignature<int>("getConstellationType", "()I"); }
+            return IExecuteWithSignature<double>("getCarrierFrequencyHz", "()D");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/GnssSignalType.html#describeContents()"/>
@@ -90,6 +77,22 @@ namespace Android.Location
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/GnssSignalType.html#getConstellationType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetConstellationType()
+        {
+            return IExecuteWithSignature<int>("getConstellationType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/location/GnssSignalType.html#getCodeType()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetCodeType()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getCodeType", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/GnssSignalType.html#writeToParcel(android.os.Parcel,int)"/>

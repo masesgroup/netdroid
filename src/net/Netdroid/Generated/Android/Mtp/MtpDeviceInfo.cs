@@ -46,48 +46,6 @@ namespace Android.Mtp
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/mtp/MtpDeviceInfo.html#getEventsSupported()"/> 
-        /// </summary>
-        public int[] EventsSupported
-        {
-            get { return IExecuteWithSignatureArray<int>("getEventsSupported", "()[I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/mtp/MtpDeviceInfo.html#getManufacturer()"/> 
-        /// </summary>
-        public Java.Lang.String Manufacturer
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getManufacturer", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/mtp/MtpDeviceInfo.html#getModel()"/> 
-        /// </summary>
-        public Java.Lang.String Model
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getModel", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/mtp/MtpDeviceInfo.html#getOperationsSupported()"/> 
-        /// </summary>
-        public int[] OperationsSupported
-        {
-            get { return IExecuteWithSignatureArray<int>("getOperationsSupported", "()[I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/mtp/MtpDeviceInfo.html#getSerialNumber()"/> 
-        /// </summary>
-        public Java.Lang.String SerialNumber
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getSerialNumber", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/mtp/MtpDeviceInfo.html#getVersion()"/> 
-        /// </summary>
-        public Java.Lang.String Version
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getVersion", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/mtp/MtpDeviceInfo.html#isEventSupported(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -104,6 +62,54 @@ namespace Android.Mtp
         public bool IsOperationSupported(int arg0)
         {
             return IExecuteWithSignature<bool>("isOperationSupported", "(I)Z", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/mtp/MtpDeviceInfo.html#getEventsSupported()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int[] GetEventsSupported()
+        {
+            return IExecuteWithSignatureArray<int>("getEventsSupported", "()[I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/mtp/MtpDeviceInfo.html#getOperationsSupported()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int[] GetOperationsSupported()
+        {
+            return IExecuteWithSignatureArray<int>("getOperationsSupported", "()[I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/mtp/MtpDeviceInfo.html#getManufacturer()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetManufacturer()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getManufacturer", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/mtp/MtpDeviceInfo.html#getModel()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetModel()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getModel", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/mtp/MtpDeviceInfo.html#getSerialNumber()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetSerialNumber()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getSerialNumber", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/mtp/MtpDeviceInfo.html#getVersion()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetVersion()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getVersion", "()Ljava/lang/String;");
         }
 
         #endregion

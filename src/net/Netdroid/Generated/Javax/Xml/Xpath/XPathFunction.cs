@@ -64,7 +64,7 @@ namespace Javax.Xml.Xpath
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/xpath/XPathFunction.html#evaluate(java.util.List)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/xpath/XPathFunction.html#evaluate(java.util.List)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.List"/></param>
         /// <returns><see cref="object"/></returns>

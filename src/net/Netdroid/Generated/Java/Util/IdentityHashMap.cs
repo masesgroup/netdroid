@@ -30,7 +30,7 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/IdentityHashMap.html#%3Cinit%3E(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/IdentityHashMap.html#%3Cinit%3E(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public IdentityHashMap(int arg0)
@@ -38,7 +38,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/IdentityHashMap.html#%3Cinit%3E(java.util.Map)"/>
+        /// <see href="https://developer.android.com/reference/java/util/IdentityHashMap.html#%3Cinit%3E(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         public IdentityHashMap(Java.Util.Map arg0)
@@ -85,7 +85,7 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/IdentityHashMap.html#%3Cinit%3E(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/IdentityHashMap.html#%3Cinit%3E(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public IdentityHashMap(int arg0)
@@ -93,7 +93,7 @@ namespace Java.Util
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/IdentityHashMap.html#%3Cinit%3E(java.util.Map)"/>
+        /// <see href="https://developer.android.com/reference/java/util/IdentityHashMap.html#%3Cinit%3E(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         public IdentityHashMap(Java.Util.Map<K, V> arg0)

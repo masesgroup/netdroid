@@ -30,7 +30,7 @@ namespace Java.Security
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/CodeSigner.html#%3Cinit%3E(java.security.cert.CertPath,java.security.Timestamp)"/>
+        /// <see href="https://developer.android.com/reference/java/security/CodeSigner.html#%3Cinit%3E(java.security.cert.CertPath,java.security.Timestamp)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Cert.CertPath"/></param>
         /// <param name="arg1"><see cref="Java.Security.Timestamp"/></param>
@@ -55,18 +55,20 @@ namespace Java.Security
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/CodeSigner.html#getSignerCertPath()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/CodeSigner.html#getSignerCertPath()"/>
         /// </summary>
-        public Java.Security.Cert.CertPath SignerCertPath
+        /// <returns><see cref="Java.Security.Cert.CertPath"/></returns>
+        public Java.Security.Cert.CertPath GetSignerCertPath()
         {
-            get { return IExecuteWithSignature<Java.Security.Cert.CertPath>("getSignerCertPath", "()Ljava/security/cert/CertPath;"); }
+            return IExecuteWithSignature<Java.Security.Cert.CertPath>("getSignerCertPath", "()Ljava/security/cert/CertPath;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/CodeSigner.html#getTimestamp()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/CodeSigner.html#getTimestamp()"/>
         /// </summary>
-        public Java.Security.Timestamp Timestamp
+        /// <returns><see cref="Java.Security.Timestamp"/></returns>
+        public Java.Security.Timestamp GetTimestamp()
         {
-            get { return IExecuteWithSignature<Java.Security.Timestamp>("getTimestamp", "()Ljava/security/Timestamp;"); }
+            return IExecuteWithSignature<Java.Security.Timestamp>("getTimestamp", "()Ljava/security/Timestamp;");
         }
 
         #endregion

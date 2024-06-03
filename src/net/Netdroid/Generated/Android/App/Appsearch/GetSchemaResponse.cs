@@ -46,39 +46,44 @@ namespace Android.App.Appsearch
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/GetSchemaResponse.html#getRequiredPermissionsForSchemaTypeVisibility()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/GetSchemaResponse.html#getVersion()"/>
         /// </summary>
-        public Java.Util.Map<Java.Lang.String, Java.Util.Set<Java.Util.Set<Java.Lang.Integer>>> RequiredPermissionsForSchemaTypeVisibility
+        /// <returns><see cref="int"/></returns>
+        public int GetVersion()
         {
-            get { return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Util.Set<Java.Util.Set<Java.Lang.Integer>>>>("getRequiredPermissionsForSchemaTypeVisibility", "()Ljava/util/Map;"); }
+            return IExecuteWithSignature<int>("getVersion", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/GetSchemaResponse.html#getSchemas()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/GetSchemaResponse.html#getSchemaTypesVisibleToPackages()"/>
         /// </summary>
-        public Java.Util.Set<Android.App.Appsearch.AppSearchSchema> Schemas
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        public Java.Util.Map<Java.Lang.String, Java.Util.Set<Android.App.Appsearch.PackageIdentifier>> GetSchemaTypesVisibleToPackages()
         {
-            get { return IExecuteWithSignature<Java.Util.Set<Android.App.Appsearch.AppSearchSchema>>("getSchemas", "()Ljava/util/Set;"); }
+            return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Util.Set<Android.App.Appsearch.PackageIdentifier>>>("getSchemaTypesVisibleToPackages", "()Ljava/util/Map;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/GetSchemaResponse.html#getSchemaTypesNotDisplayedBySystem()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/GetSchemaResponse.html#getRequiredPermissionsForSchemaTypeVisibility()"/>
         /// </summary>
-        public Java.Util.Set<Java.Lang.String> SchemaTypesNotDisplayedBySystem
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        public Java.Util.Map<Java.Lang.String, Java.Util.Set<Java.Util.Set<Java.Lang.Integer>>> GetRequiredPermissionsForSchemaTypeVisibility()
         {
-            get { return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getSchemaTypesNotDisplayedBySystem", "()Ljava/util/Set;"); }
+            return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Util.Set<Java.Util.Set<Java.Lang.Integer>>>>("getRequiredPermissionsForSchemaTypeVisibility", "()Ljava/util/Map;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/GetSchemaResponse.html#getSchemaTypesVisibleToPackages()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/GetSchemaResponse.html#getSchemas()"/>
         /// </summary>
-        public Java.Util.Map<Java.Lang.String, Java.Util.Set<Android.App.Appsearch.PackageIdentifier>> SchemaTypesVisibleToPackages
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Android.App.Appsearch.AppSearchSchema> GetSchemas()
         {
-            get { return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Java.Util.Set<Android.App.Appsearch.PackageIdentifier>>>("getSchemaTypesVisibleToPackages", "()Ljava/util/Map;"); }
+            return IExecuteWithSignature<Java.Util.Set<Android.App.Appsearch.AppSearchSchema>>("getSchemas", "()Ljava/util/Set;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/appsearch/GetSchemaResponse.html#getVersion()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/appsearch/GetSchemaResponse.html#getSchemaTypesNotDisplayedBySystem()"/>
         /// </summary>
-        public int Version
+        /// <returns><see cref="Java.Util.Set"/></returns>
+        public Java.Util.Set<Java.Lang.String> GetSchemaTypesNotDisplayedBySystem()
         {
-            get { return IExecuteWithSignature<int>("getVersion", "()I"); }
+            return IExecuteWithSignature<Java.Util.Set<Java.Lang.String>>("getSchemaTypesNotDisplayedBySystem", "()Ljava/util/Set;");
         }
 
         #endregion

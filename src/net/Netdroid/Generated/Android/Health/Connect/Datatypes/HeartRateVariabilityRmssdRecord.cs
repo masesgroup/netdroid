@@ -46,11 +46,12 @@ namespace Android.Health.Connect.Datatypes
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/HeartRateVariabilityRmssdRecord.html#getHeartRateVariabilityMillis()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/HeartRateVariabilityRmssdRecord.html#getHeartRateVariabilityMillis()"/>
         /// </summary>
-        public double HeartRateVariabilityMillis
+        /// <returns><see cref="double"/></returns>
+        public double GetHeartRateVariabilityMillis()
         {
-            get { return IExecuteWithSignature<double>("getHeartRateVariabilityMillis", "()D"); }
+            return IExecuteWithSignature<double>("getHeartRateVariabilityMillis", "()D");
         }
 
         #endregion

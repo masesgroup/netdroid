@@ -81,10 +81,13 @@ namespace Android.Text.Method
         /// </summary>
         public BaseKeyListener() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.android.text.method.BaseKeyListener";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.android.text.method.BaseKeyListener";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -106,10 +109,13 @@ namespace Android.Text.Method
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "android.text.method.BaseKeyListener";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "android.text.method.BaseKeyListener";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -221,38 +227,24 @@ namespace Android.Text.Method
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/text/method/DateKeyListener.html"/>
     /// </summary>
-    public partial class DateKeyListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class DateKeyListener : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DateKeyListener>
     {
+        const string _bridgeClassName = "android.text.method.DateKeyListener";
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public DateKeyListener() { InitializeHandlers(); }
-
-    #warning Remember to build the Java class for event listener
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region DateKeyListenerDirect
-    /// <summary>
-    /// Direct override of <see cref="DateKeyListener"/> or its generic type if there is one
-    /// </summary>
-    public partial class DateKeyListenerDirect : DateKeyListener
-    {
+        public DateKeyListener() { }
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public override bool AutoInit => false;
+        public DateKeyListener(params object[] args) : base(args) { }
 
-        /// <inheritdoc />
-        protected override void InitializeHandlers() { }
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
 
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "android.text.method.DateKeyListener";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -269,6 +261,9 @@ namespace Android.Text.Method
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
+
+        // TODO: complete the class
+
     }
     #endregion
 
@@ -276,38 +271,24 @@ namespace Android.Text.Method
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/text/method/DateTimeKeyListener.html"/>
     /// </summary>
-    public partial class DateTimeKeyListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class DateTimeKeyListener : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DateTimeKeyListener>
     {
+        const string _bridgeClassName = "android.text.method.DateTimeKeyListener";
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public DateTimeKeyListener() { InitializeHandlers(); }
-
-    #warning Remember to build the Java class for event listener
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region DateTimeKeyListenerDirect
-    /// <summary>
-    /// Direct override of <see cref="DateTimeKeyListener"/> or its generic type if there is one
-    /// </summary>
-    public partial class DateTimeKeyListenerDirect : DateTimeKeyListener
-    {
+        public DateTimeKeyListener() { }
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public override bool AutoInit => false;
+        public DateTimeKeyListener(params object[] args) : base(args) { }
 
-        /// <inheritdoc />
-        protected override void InitializeHandlers() { }
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
 
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "android.text.method.DateTimeKeyListener";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -324,6 +305,9 @@ namespace Android.Text.Method
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
+
+        // TODO: complete the class
+
     }
     #endregion
 
@@ -331,38 +315,24 @@ namespace Android.Text.Method
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/text/method/DialerKeyListener.html"/>
     /// </summary>
-    public partial class DialerKeyListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class DialerKeyListener : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DialerKeyListener>
     {
+        const string _bridgeClassName = "android.text.method.DialerKeyListener";
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public DialerKeyListener() { InitializeHandlers(); }
-
-    #warning Remember to build the Java class for event listener
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region DialerKeyListenerDirect
-    /// <summary>
-    /// Direct override of <see cref="DialerKeyListener"/> or its generic type if there is one
-    /// </summary>
-    public partial class DialerKeyListenerDirect : DialerKeyListener
-    {
+        public DialerKeyListener() { }
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public override bool AutoInit => false;
+        public DialerKeyListener(params object[] args) : base(args) { }
 
-        /// <inheritdoc />
-        protected override void InitializeHandlers() { }
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
 
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "android.text.method.DialerKeyListener";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -379,6 +349,9 @@ namespace Android.Text.Method
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
+
+        // TODO: complete the class
+
     }
     #endregion
 
@@ -386,38 +359,24 @@ namespace Android.Text.Method
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/text/method/DigitsKeyListener.html"/>
     /// </summary>
-    public partial class DigitsKeyListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class DigitsKeyListener : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DigitsKeyListener>
     {
+        const string _bridgeClassName = "android.text.method.DigitsKeyListener";
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public DigitsKeyListener() { InitializeHandlers(); }
-
-    #warning Remember to build the Java class for event listener
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region DigitsKeyListenerDirect
-    /// <summary>
-    /// Direct override of <see cref="DigitsKeyListener"/> or its generic type if there is one
-    /// </summary>
-    public partial class DigitsKeyListenerDirect : DigitsKeyListener
-    {
+        public DigitsKeyListener() { }
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public override bool AutoInit => false;
+        public DigitsKeyListener(params object[] args) : base(args) { }
 
-        /// <inheritdoc />
-        protected override void InitializeHandlers() { }
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
 
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "android.text.method.DigitsKeyListener";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -434,6 +393,9 @@ namespace Android.Text.Method
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
+
+        // TODO: complete the class
+
     }
     #endregion
 
@@ -492,10 +454,13 @@ namespace Android.Text.Method
         /// </summary>
         public KeyListener() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.android.text.method.KeyListener";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.android.text.method.KeyListener";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -517,10 +482,13 @@ namespace Android.Text.Method
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "android.text.method.KeyListener";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "android.text.method.KeyListener";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -588,38 +556,26 @@ namespace Android.Text.Method
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/text/method/MetaKeyKeyListener.html"/>
     /// </summary>
-    public partial class MetaKeyKeyListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class MetaKeyKeyListener : MASES.JCOBridge.C2JBridge.JVMBridgeBase<MetaKeyKeyListener>
     {
+        const string _bridgeClassName = "android.text.method.MetaKeyKeyListener";
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public MetaKeyKeyListener() { InitializeHandlers(); }
-
-    #warning Remember to build the Java class for event listener
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region MetaKeyKeyListenerDirect
-    /// <summary>
-    /// Direct override of <see cref="MetaKeyKeyListener"/> or its generic type if there is one
-    /// </summary>
-    public partial class MetaKeyKeyListenerDirect : MetaKeyKeyListener
-    {
+        [global::System.Obsolete("MetaKeyKeyListener class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        public MetaKeyKeyListener() { }
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public override bool AutoInit => false;
+        [global::System.Obsolete("MetaKeyKeyListener class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        public MetaKeyKeyListener(params object[] args) : base(args) { }
 
-        /// <inheritdoc />
-        protected override void InitializeHandlers() { }
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
 
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "android.text.method.MetaKeyKeyListener";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -636,6 +592,9 @@ namespace Android.Text.Method
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
+
+        // TODO: complete the class
+
     }
     #endregion
 
@@ -649,12 +608,12 @@ namespace Android.Text.Method
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("MovementMethod class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("MovementMethod class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public MovementMethod() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("MovementMethod class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("MovementMethod class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public MovementMethod(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -696,10 +655,13 @@ namespace Android.Text.Method
         /// </summary>
         public MultiTapKeyListener() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.android.text.method.MultiTapKeyListener";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.android.text.method.MultiTapKeyListener";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -721,10 +683,13 @@ namespace Android.Text.Method
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "android.text.method.MultiTapKeyListener";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "android.text.method.MultiTapKeyListener";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -755,10 +720,13 @@ namespace Android.Text.Method
         /// </summary>
         public NumberKeyListener() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.android.text.method.NumberKeyListener";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.android.text.method.NumberKeyListener";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -780,10 +748,13 @@ namespace Android.Text.Method
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "android.text.method.NumberKeyListener";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "android.text.method.NumberKeyListener";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -851,38 +822,24 @@ namespace Android.Text.Method
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/text/method/QwertyKeyListener.html"/>
     /// </summary>
-    public partial class QwertyKeyListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class QwertyKeyListener : MASES.JCOBridge.C2JBridge.JVMBridgeBase<QwertyKeyListener>
     {
+        const string _bridgeClassName = "android.text.method.QwertyKeyListener";
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public QwertyKeyListener() { InitializeHandlers(); }
-
-    #warning Remember to build the Java class for event listener
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region QwertyKeyListenerDirect
-    /// <summary>
-    /// Direct override of <see cref="QwertyKeyListener"/> or its generic type if there is one
-    /// </summary>
-    public partial class QwertyKeyListenerDirect : QwertyKeyListener
-    {
+        public QwertyKeyListener() { }
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public override bool AutoInit => false;
+        public QwertyKeyListener(params object[] args) : base(args) { }
 
-        /// <inheritdoc />
-        protected override void InitializeHandlers() { }
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
 
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "android.text.method.QwertyKeyListener";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -899,6 +856,9 @@ namespace Android.Text.Method
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
+
+        // TODO: complete the class
+
     }
     #endregion
 
@@ -912,12 +872,12 @@ namespace Android.Text.Method
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("ReplacementTransformationMethod class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ReplacementTransformationMethod class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ReplacementTransformationMethod() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("ReplacementTransformationMethod class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ReplacementTransformationMethod class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ReplacementTransformationMethod(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1047,10 +1007,13 @@ namespace Android.Text.Method
         /// </summary>
         public TextKeyListener() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.android.text.method.TextKeyListener";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "org.mases.netdroid.generated.android.text.method.TextKeyListener";
+        public override string BridgeClassName => _bridgeClassName;
 
     
         // TODO: complete the class
@@ -1116,10 +1079,13 @@ namespace Android.Text.Method
         /// <inheritdoc />
         protected override void InitializeHandlers() { }
 
+        const string _bridgeClassName = "android.text.method.TextKeyListener";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "android.text.method.TextKeyListener";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -1143,38 +1109,24 @@ namespace Android.Text.Method
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/text/method/TimeKeyListener.html"/>
     /// </summary>
-    public partial class TimeKeyListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class TimeKeyListener : MASES.JCOBridge.C2JBridge.JVMBridgeBase<TimeKeyListener>
     {
+        const string _bridgeClassName = "android.text.method.TimeKeyListener";
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public TimeKeyListener() { InitializeHandlers(); }
-
-    #warning Remember to build the Java class for event listener
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region TimeKeyListenerDirect
-    /// <summary>
-    /// Direct override of <see cref="TimeKeyListener"/> or its generic type if there is one
-    /// </summary>
-    public partial class TimeKeyListenerDirect : TimeKeyListener
-    {
+        public TimeKeyListener() { }
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public override bool AutoInit => false;
+        public TimeKeyListener(params object[] args) : base(args) { }
 
-        /// <inheritdoc />
-        protected override void InitializeHandlers() { }
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
 
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "android.text.method.TimeKeyListener";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -1191,6 +1143,9 @@ namespace Android.Text.Method
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
+
+        // TODO: complete the class
+
     }
     #endregion
 
@@ -1248,12 +1203,12 @@ namespace Android.Text.Method
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("TransformationMethod class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("TransformationMethod class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public TransformationMethod() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("TransformationMethod class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("TransformationMethod class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public TransformationMethod(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);

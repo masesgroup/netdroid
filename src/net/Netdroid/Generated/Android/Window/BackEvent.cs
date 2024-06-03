@@ -69,32 +69,36 @@ namespace Android.Window
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/window/BackEvent.html#getProgress()"/> 
+        /// <see href="https://developer.android.com/reference/android/window/BackEvent.html#getProgress()"/>
         /// </summary>
-        public float Progress
+        /// <returns><see cref="float"/></returns>
+        public float GetProgress()
         {
-            get { return IExecuteWithSignature<float>("getProgress", "()F"); }
+            return IExecuteWithSignature<float>("getProgress", "()F");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/window/BackEvent.html#getSwipeEdge()"/> 
+        /// <see href="https://developer.android.com/reference/android/window/BackEvent.html#getTouchX()"/>
         /// </summary>
-        public int SwipeEdge
+        /// <returns><see cref="float"/></returns>
+        public float GetTouchX()
         {
-            get { return IExecuteWithSignature<int>("getSwipeEdge", "()I"); }
+            return IExecuteWithSignature<float>("getTouchX", "()F");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/window/BackEvent.html#getTouchX()"/> 
+        /// <see href="https://developer.android.com/reference/android/window/BackEvent.html#getTouchY()"/>
         /// </summary>
-        public float TouchX
+        /// <returns><see cref="float"/></returns>
+        public float GetTouchY()
         {
-            get { return IExecuteWithSignature<float>("getTouchX", "()F"); }
+            return IExecuteWithSignature<float>("getTouchY", "()F");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/window/BackEvent.html#getTouchY()"/> 
+        /// <see href="https://developer.android.com/reference/android/window/BackEvent.html#getSwipeEdge()"/>
         /// </summary>
-        public float TouchY
+        /// <returns><see cref="int"/></returns>
+        public int GetSwipeEdge()
         {
-            get { return IExecuteWithSignature<float>("getTouchY", "()F"); }
+            return IExecuteWithSignature<int>("getSwipeEdge", "()I");
         }
 
         #endregion

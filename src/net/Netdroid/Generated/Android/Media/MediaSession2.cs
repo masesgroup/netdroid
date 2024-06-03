@@ -46,25 +46,12 @@ namespace Android.Media
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaSession2.html#getConnectedControllers()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/MediaSession2.html#getToken()"/>
         /// </summary>
-        public Java.Util.List<Android.Media.MediaSession2.ControllerInfo> ConnectedControllers
+        /// <returns><see cref="Android.Media.Session2Token"/></returns>
+        public Android.Media.Session2Token GetToken()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Media.MediaSession2.ControllerInfo>>("getConnectedControllers", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaSession2.html#getId()"/> 
-        /// </summary>
-        public Java.Lang.String Id
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/MediaSession2.html#getToken()"/> 
-        /// </summary>
-        public Android.Media.Session2Token Token
-        {
-            get { return IExecuteWithSignature<Android.Media.Session2Token>("getToken", "()Landroid/media/Session2Token;"); }
+            return IExecuteWithSignature<Android.Media.Session2Token>("getToken", "()Landroid/media/Session2Token;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaSession2.html#isPlaybackActive()"/>
@@ -84,6 +71,22 @@ namespace Android.Media
         public object SendSessionCommand(Android.Media.MediaSession2.ControllerInfo arg0, Android.Media.Session2Command arg1, Android.Os.Bundle arg2)
         {
             return IExecute("sendSessionCommand", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaSession2.html#getId()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetId()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/MediaSession2.html#getConnectedControllers()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Media.MediaSession2.ControllerInfo> GetConnectedControllers()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Media.MediaSession2.ControllerInfo>>("getConnectedControllers", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/MediaSession2.html#broadcastSessionCommand(android.media.Session2Command,android.os.Bundle)"/>
@@ -227,32 +230,36 @@ namespace Android.Media
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaSession2.ControllerInfo.html#getConnectionHints()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/MediaSession2.ControllerInfo.html#getRemoteUserInfo()"/>
             /// </summary>
-            public Android.Os.Bundle ConnectionHints
+            /// <returns><see cref="Android.Media.Session.MediaSessionManager.RemoteUserInfo"/></returns>
+            public Android.Media.Session.MediaSessionManager.RemoteUserInfo GetRemoteUserInfo()
             {
-                get { return IExecuteWithSignature<Android.Os.Bundle>("getConnectionHints", "()Landroid/os/Bundle;"); }
+                return IExecuteWithSignature<Android.Media.Session.MediaSessionManager.RemoteUserInfo>("getRemoteUserInfo", "()Landroid/media/session/MediaSessionManager$RemoteUserInfo;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaSession2.ControllerInfo.html#getPackageName()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/MediaSession2.ControllerInfo.html#getConnectionHints()"/>
             /// </summary>
-            public Java.Lang.String PackageName
+            /// <returns><see cref="Android.Os.Bundle"/></returns>
+            public Android.Os.Bundle GetConnectionHints()
             {
-                get { return IExecuteWithSignature<Java.Lang.String>("getPackageName", "()Ljava/lang/String;"); }
+                return IExecuteWithSignature<Android.Os.Bundle>("getConnectionHints", "()Landroid/os/Bundle;");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaSession2.ControllerInfo.html#getRemoteUserInfo()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/MediaSession2.ControllerInfo.html#getUid()"/>
             /// </summary>
-            public Android.Media.Session.MediaSessionManager.RemoteUserInfo RemoteUserInfo
+            /// <returns><see cref="int"/></returns>
+            public int GetUid()
             {
-                get { return IExecuteWithSignature<Android.Media.Session.MediaSessionManager.RemoteUserInfo>("getRemoteUserInfo", "()Landroid/media/session/MediaSessionManager$RemoteUserInfo;"); }
+                return IExecuteWithSignature<int>("getUid", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/media/MediaSession2.ControllerInfo.html#getUid()"/> 
+            /// <see href="https://developer.android.com/reference/android/media/MediaSession2.ControllerInfo.html#getPackageName()"/>
             /// </summary>
-            public int Uid
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetPackageName()
             {
-                get { return IExecuteWithSignature<int>("getUid", "()I"); }
+                return IExecuteWithSignature<Java.Lang.String>("getPackageName", "()Ljava/lang/String;");
             }
 
             #endregion

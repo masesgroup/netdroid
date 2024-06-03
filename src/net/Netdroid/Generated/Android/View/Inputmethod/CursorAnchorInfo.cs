@@ -78,95 +78,12 @@ namespace Android.View.Inputmethod
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/CursorAnchorInfo.html#getComposingText()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/CursorAnchorInfo.html#getMatrix()"/>
         /// </summary>
-        public Java.Lang.CharSequence ComposingText
+        /// <returns><see cref="Android.Graphics.Matrix"/></returns>
+        public Android.Graphics.Matrix GetMatrix()
         {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getComposingText", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/CursorAnchorInfo.html#getComposingTextStart()"/> 
-        /// </summary>
-        public int ComposingTextStart
-        {
-            get { return IExecuteWithSignature<int>("getComposingTextStart", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/CursorAnchorInfo.html#getEditorBoundsInfo()"/> 
-        /// </summary>
-        public Android.View.Inputmethod.EditorBoundsInfo EditorBoundsInfo
-        {
-            get { return IExecuteWithSignature<Android.View.Inputmethod.EditorBoundsInfo>("getEditorBoundsInfo", "()Landroid/view/inputmethod/EditorBoundsInfo;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/CursorAnchorInfo.html#getInsertionMarkerBaseline()"/> 
-        /// </summary>
-        public float InsertionMarkerBaseline
-        {
-            get { return IExecuteWithSignature<float>("getInsertionMarkerBaseline", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/CursorAnchorInfo.html#getInsertionMarkerBottom()"/> 
-        /// </summary>
-        public float InsertionMarkerBottom
-        {
-            get { return IExecuteWithSignature<float>("getInsertionMarkerBottom", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/CursorAnchorInfo.html#getInsertionMarkerFlags()"/> 
-        /// </summary>
-        public int InsertionMarkerFlags
-        {
-            get { return IExecuteWithSignature<int>("getInsertionMarkerFlags", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/CursorAnchorInfo.html#getInsertionMarkerHorizontal()"/> 
-        /// </summary>
-        public float InsertionMarkerHorizontal
-        {
-            get { return IExecuteWithSignature<float>("getInsertionMarkerHorizontal", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/CursorAnchorInfo.html#getInsertionMarkerTop()"/> 
-        /// </summary>
-        public float InsertionMarkerTop
-        {
-            get { return IExecuteWithSignature<float>("getInsertionMarkerTop", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/CursorAnchorInfo.html#getMatrix()"/> 
-        /// </summary>
-        public Android.Graphics.Matrix Matrix
-        {
-            get { return IExecuteWithSignature<Android.Graphics.Matrix>("getMatrix", "()Landroid/graphics/Matrix;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/CursorAnchorInfo.html#getSelectionEnd()"/> 
-        /// </summary>
-        public int SelectionEnd
-        {
-            get { return IExecuteWithSignature<int>("getSelectionEnd", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/CursorAnchorInfo.html#getSelectionStart()"/> 
-        /// </summary>
-        public int SelectionStart
-        {
-            get { return IExecuteWithSignature<int>("getSelectionStart", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/CursorAnchorInfo.html#getTextAppearanceInfo()"/> 
-        /// </summary>
-        public Android.View.Inputmethod.TextAppearanceInfo TextAppearanceInfo
-        {
-            get { return IExecuteWithSignature<Android.View.Inputmethod.TextAppearanceInfo>("getTextAppearanceInfo", "()Landroid/view/inputmethod/TextAppearanceInfo;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inputmethod/CursorAnchorInfo.html#getVisibleLineBounds()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Graphics.RectF> VisibleLineBounds
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Graphics.RectF>>("getVisibleLineBounds", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Android.Graphics.Matrix>("getMatrix", "()Landroid/graphics/Matrix;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/CursorAnchorInfo.html#getCharacterBounds(int)"/>
@@ -176,6 +93,54 @@ namespace Android.View.Inputmethod
         public Android.Graphics.RectF GetCharacterBounds(int arg0)
         {
             return IExecuteWithSignature<Android.Graphics.RectF>("getCharacterBounds", "(I)Landroid/graphics/RectF;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/CursorAnchorInfo.html#getEditorBoundsInfo()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.Inputmethod.EditorBoundsInfo"/></returns>
+        public Android.View.Inputmethod.EditorBoundsInfo GetEditorBoundsInfo()
+        {
+            return IExecuteWithSignature<Android.View.Inputmethod.EditorBoundsInfo>("getEditorBoundsInfo", "()Landroid/view/inputmethod/EditorBoundsInfo;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/CursorAnchorInfo.html#getTextAppearanceInfo()"/>
+        /// </summary>
+        /// <returns><see cref="Android.View.Inputmethod.TextAppearanceInfo"/></returns>
+        public Android.View.Inputmethod.TextAppearanceInfo GetTextAppearanceInfo()
+        {
+            return IExecuteWithSignature<Android.View.Inputmethod.TextAppearanceInfo>("getTextAppearanceInfo", "()Landroid/view/inputmethod/TextAppearanceInfo;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/CursorAnchorInfo.html#getInsertionMarkerBaseline()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetInsertionMarkerBaseline()
+        {
+            return IExecuteWithSignature<float>("getInsertionMarkerBaseline", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/CursorAnchorInfo.html#getInsertionMarkerBottom()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetInsertionMarkerBottom()
+        {
+            return IExecuteWithSignature<float>("getInsertionMarkerBottom", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/CursorAnchorInfo.html#getInsertionMarkerHorizontal()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetInsertionMarkerHorizontal()
+        {
+            return IExecuteWithSignature<float>("getInsertionMarkerHorizontal", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/CursorAnchorInfo.html#getInsertionMarkerTop()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetInsertionMarkerTop()
+        {
+            return IExecuteWithSignature<float>("getInsertionMarkerTop", "()F");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/CursorAnchorInfo.html#describeContents()"/>
@@ -193,6 +158,54 @@ namespace Android.View.Inputmethod
         public int GetCharacterBoundsFlags(int arg0)
         {
             return IExecuteWithSignature<int>("getCharacterBoundsFlags", "(I)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/CursorAnchorInfo.html#getComposingTextStart()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetComposingTextStart()
+        {
+            return IExecuteWithSignature<int>("getComposingTextStart", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/CursorAnchorInfo.html#getInsertionMarkerFlags()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetInsertionMarkerFlags()
+        {
+            return IExecuteWithSignature<int>("getInsertionMarkerFlags", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/CursorAnchorInfo.html#getSelectionEnd()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSelectionEnd()
+        {
+            return IExecuteWithSignature<int>("getSelectionEnd", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/CursorAnchorInfo.html#getSelectionStart()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSelectionStart()
+        {
+            return IExecuteWithSignature<int>("getSelectionStart", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/CursorAnchorInfo.html#getComposingText()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetComposingText()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getComposingText", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/inputmethod/CursorAnchorInfo.html#getVisibleLineBounds()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Graphics.RectF> GetVisibleLineBounds()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Graphics.RectF>>("getVisibleLineBounds", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/inputmethod/CursorAnchorInfo.html#writeToParcel(android.os.Parcel,int)"/>

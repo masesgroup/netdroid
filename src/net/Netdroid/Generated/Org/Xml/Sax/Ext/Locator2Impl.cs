@@ -30,7 +30,7 @@ namespace Org.Xml.Sax.Ext
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/ext/Locator2Impl.html#%3Cinit%3E(org.xml.sax.Locator)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/ext/Locator2Impl.html#%3Cinit%3E(org.xml.sax.Locator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Org.Xml.Sax.Locator"/></param>
         public Locator2Impl(Org.Xml.Sax.Locator arg0)
@@ -58,18 +58,36 @@ namespace Org.Xml.Sax.Ext
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/ext/Locator2Impl.html#getEncoding()"/> <see href="https://developer.android.com/reference/java.xml/org/xml/sax/ext/Locator2Impl.html#setEncoding(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/ext/Locator2Impl.html#getEncoding()"/>
         /// </summary>
-        public Java.Lang.String Encoding
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetEncoding()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getEncoding", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setEncoding", "(Ljava/lang/String;)V", value); }
+            return IExecuteWithSignature<Java.Lang.String>("getEncoding", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/ext/Locator2Impl.html#getXMLVersion()"/> <see href="https://developer.android.com/reference/java.xml/org/xml/sax/ext/Locator2Impl.html#setXMLVersion(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/ext/Locator2Impl.html#getXMLVersion()"/>
         /// </summary>
-        public Java.Lang.String XMLVersion
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetXMLVersion()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getXMLVersion", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setXMLVersion", "(Ljava/lang/String;)V", value); }
+            return IExecuteWithSignature<Java.Lang.String>("getXMLVersion", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/ext/Locator2Impl.html#setEncoding(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetEncoding(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setEncoding", "(Ljava/lang/String;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/ext/Locator2Impl.html#setXMLVersion(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetXMLVersion(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setXMLVersion", "(Ljava/lang/String;)V", arg0);
         }
 
         #endregion

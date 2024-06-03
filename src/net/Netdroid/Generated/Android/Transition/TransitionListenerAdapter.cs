@@ -50,11 +50,11 @@ namespace Android.Transition
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("onTransitionCancel", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Transition.Transition>>>(OnTransitionCancelEventHandler));
-            AddEventHandler("onTransitionEnd", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Transition.Transition>>>(OnTransitionEndEventHandler));
-            AddEventHandler("onTransitionPause", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Transition.Transition>>>(OnTransitionPauseEventHandler));
-            AddEventHandler("onTransitionResume", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Transition.Transition>>>(OnTransitionResumeEventHandler));
-            AddEventHandler("onTransitionStart", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Transition.Transition>>>(OnTransitionStartEventHandler));
+            AddEventHandler("onTransitionCancel", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Transition.Transition>>>(OnTransitionCancelEventHandler));
+            AddEventHandler("onTransitionEnd", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Transition.Transition>>>(OnTransitionEndEventHandler));
+            AddEventHandler("onTransitionPause", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Transition.Transition>>>(OnTransitionPauseEventHandler));
+            AddEventHandler("onTransitionResume", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Transition.Transition>>>(OnTransitionResumeEventHandler));
+            AddEventHandler("onTransitionStart", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.Transition.Transition>>>(OnTransitionStartEventHandler));
 
         }
 
@@ -62,7 +62,7 @@ namespace Android.Transition
         /// Handler for <see href="https://developer.android.com/reference/android/transition/TransitionListenerAdapter.html#onTransitionCancel(android.transition.Transition)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnTransitionCancel"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Android.Transition.Transition> OnOnTransitionCancel { get; set; } = null;
+        public global::System.Action<Android.Transition.Transition> OnOnTransitionCancel { get; set; } = null;
 
         void OnTransitionCancelEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Transition.Transition>> data)
         {
@@ -83,7 +83,7 @@ namespace Android.Transition
         /// Handler for <see href="https://developer.android.com/reference/android/transition/TransitionListenerAdapter.html#onTransitionEnd(android.transition.Transition)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnTransitionEnd"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Android.Transition.Transition> OnOnTransitionEnd { get; set; } = null;
+        public global::System.Action<Android.Transition.Transition> OnOnTransitionEnd { get; set; } = null;
 
         void OnTransitionEndEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Transition.Transition>> data)
         {
@@ -104,7 +104,7 @@ namespace Android.Transition
         /// Handler for <see href="https://developer.android.com/reference/android/transition/TransitionListenerAdapter.html#onTransitionPause(android.transition.Transition)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnTransitionPause"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Android.Transition.Transition> OnOnTransitionPause { get; set; } = null;
+        public global::System.Action<Android.Transition.Transition> OnOnTransitionPause { get; set; } = null;
 
         void OnTransitionPauseEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Transition.Transition>> data)
         {
@@ -125,7 +125,7 @@ namespace Android.Transition
         /// Handler for <see href="https://developer.android.com/reference/android/transition/TransitionListenerAdapter.html#onTransitionResume(android.transition.Transition)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnTransitionResume"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Android.Transition.Transition> OnOnTransitionResume { get; set; } = null;
+        public global::System.Action<Android.Transition.Transition> OnOnTransitionResume { get; set; } = null;
 
         void OnTransitionResumeEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Transition.Transition>> data)
         {
@@ -146,7 +146,7 @@ namespace Android.Transition
         /// Handler for <see href="https://developer.android.com/reference/android/transition/TransitionListenerAdapter.html#onTransitionStart(android.transition.Transition)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnTransitionStart"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Android.Transition.Transition> OnOnTransitionStart { get; set; } = null;
+        public global::System.Action<Android.Transition.Transition> OnOnTransitionStart { get; set; } = null;
 
         void OnTransitionStartEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.Transition.Transition>> data)
         {

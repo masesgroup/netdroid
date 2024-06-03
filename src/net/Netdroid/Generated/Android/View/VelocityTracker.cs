@@ -54,20 +54,6 @@ namespace Android.View
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/VelocityTracker.html#getXVelocity()"/> 
-        /// </summary>
-        public float XVelocity
-        {
-            get { return IExecuteWithSignature<float>("getXVelocity", "()F"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/VelocityTracker.html#getYVelocity()"/> 
-        /// </summary>
-        public float YVelocity
-        {
-            get { return IExecuteWithSignature<float>("getYVelocity", "()F"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/VelocityTracker.html#isAxisSupported(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -96,6 +82,14 @@ namespace Android.View
             return IExecuteWithSignature<float>("getAxisVelocity", "(I)F", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/VelocityTracker.html#getXVelocity()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetXVelocity()
+        {
+            return IExecuteWithSignature<float>("getXVelocity", "()F");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/VelocityTracker.html#getXVelocity(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -103,6 +97,14 @@ namespace Android.View
         public float GetXVelocity(int arg0)
         {
             return IExecuteWithSignature<float>("getXVelocity", "(I)F", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/VelocityTracker.html#getYVelocity()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetYVelocity()
+        {
+            return IExecuteWithSignature<float>("getYVelocity", "()F");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/VelocityTracker.html#getYVelocity(int)"/>

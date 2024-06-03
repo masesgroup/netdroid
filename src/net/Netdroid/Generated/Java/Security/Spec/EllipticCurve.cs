@@ -30,7 +30,7 @@ namespace Java.Security.Spec
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/EllipticCurve.html#%3Cinit%3E(java.security.spec.ECField,java.math.BigInteger,java.math.BigInteger,byte[])"/>
+        /// <see href="https://developer.android.com/reference/java/security/spec/EllipticCurve.html#%3Cinit%3E(java.security.spec.ECField,java.math.BigInteger,java.math.BigInteger,byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Spec.ECField"/></param>
         /// <param name="arg1"><see cref="Java.Math.BigInteger"/></param>
@@ -41,7 +41,7 @@ namespace Java.Security.Spec
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/EllipticCurve.html#%3Cinit%3E(java.security.spec.ECField,java.math.BigInteger,java.math.BigInteger)"/>
+        /// <see href="https://developer.android.com/reference/java/security/spec/EllipticCurve.html#%3Cinit%3E(java.security.spec.ECField,java.math.BigInteger,java.math.BigInteger)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Spec.ECField"/></param>
         /// <param name="arg1"><see cref="Java.Math.BigInteger"/></param>
@@ -67,32 +67,36 @@ namespace Java.Security.Spec
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/EllipticCurve.html#getA()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/spec/EllipticCurve.html#getSeed()"/>
         /// </summary>
-        public Java.Math.BigInteger A
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetSeed()
         {
-            get { return IExecuteWithSignature<Java.Math.BigInteger>("getA", "()Ljava/math/BigInteger;"); }
+            return IExecuteWithSignatureArray<byte>("getSeed", "()[B");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/EllipticCurve.html#getB()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/spec/EllipticCurve.html#getA()"/>
         /// </summary>
-        public Java.Math.BigInteger B
+        /// <returns><see cref="Java.Math.BigInteger"/></returns>
+        public Java.Math.BigInteger GetA()
         {
-            get { return IExecuteWithSignature<Java.Math.BigInteger>("getB", "()Ljava/math/BigInteger;"); }
+            return IExecuteWithSignature<Java.Math.BigInteger>("getA", "()Ljava/math/BigInteger;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/EllipticCurve.html#getField()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/spec/EllipticCurve.html#getB()"/>
         /// </summary>
-        public Java.Security.Spec.ECField Field
+        /// <returns><see cref="Java.Math.BigInteger"/></returns>
+        public Java.Math.BigInteger GetB()
         {
-            get { return IExecuteWithSignature<Java.Security.Spec.ECField>("getField", "()Ljava/security/spec/ECField;"); }
+            return IExecuteWithSignature<Java.Math.BigInteger>("getB", "()Ljava/math/BigInteger;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/spec/EllipticCurve.html#getSeed()"/> 
+        /// <see href="https://developer.android.com/reference/java/security/spec/EllipticCurve.html#getField()"/>
         /// </summary>
-        public byte[] Seed
+        /// <returns><see cref="Java.Security.Spec.ECField"/></returns>
+        public Java.Security.Spec.ECField GetField()
         {
-            get { return IExecuteWithSignatureArray<byte>("getSeed", "()[B"); }
+            return IExecuteWithSignature<Java.Security.Spec.ECField>("getField", "()Ljava/security/spec/ECField;");
         }
 
         #endregion

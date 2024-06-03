@@ -46,31 +46,25 @@ namespace Java.Time.Chrono
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/JapaneseEra.html#HEISEI"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/JapaneseEra.html#HEISEI"/>
         /// </summary>
         public static Java.Time.Chrono.JapaneseEra HEISEI { get { if (!_HEISEIReady) { _HEISEIContent = SGetField<Java.Time.Chrono.JapaneseEra>(LocalBridgeClazz, "HEISEI"); _HEISEIReady = true; } return _HEISEIContent; } }
         private static Java.Time.Chrono.JapaneseEra _HEISEIContent = default;
         private static bool _HEISEIReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/JapaneseEra.html#MEIJI"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/JapaneseEra.html#MEIJI"/>
         /// </summary>
         public static Java.Time.Chrono.JapaneseEra MEIJI { get { if (!_MEIJIReady) { _MEIJIContent = SGetField<Java.Time.Chrono.JapaneseEra>(LocalBridgeClazz, "MEIJI"); _MEIJIReady = true; } return _MEIJIContent; } }
         private static Java.Time.Chrono.JapaneseEra _MEIJIContent = default;
         private static bool _MEIJIReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/JapaneseEra.html#REIWA"/>
-        /// </summary>
-        public static Java.Time.Chrono.JapaneseEra REIWA { get { if (!_REIWAReady) { _REIWAContent = SGetField<Java.Time.Chrono.JapaneseEra>(LocalBridgeClazz, "REIWA"); _REIWAReady = true; } return _REIWAContent; } }
-        private static Java.Time.Chrono.JapaneseEra _REIWAContent = default;
-        private static bool _REIWAReady = false; // this is used because in case of generics 
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/JapaneseEra.html#SHOWA"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/JapaneseEra.html#SHOWA"/>
         /// </summary>
         public static Java.Time.Chrono.JapaneseEra SHOWA { get { if (!_SHOWAReady) { _SHOWAContent = SGetField<Java.Time.Chrono.JapaneseEra>(LocalBridgeClazz, "SHOWA"); _SHOWAReady = true; } return _SHOWAContent; } }
         private static Java.Time.Chrono.JapaneseEra _SHOWAContent = default;
         private static bool _SHOWAReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/JapaneseEra.html#TAISHO"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/JapaneseEra.html#TAISHO"/>
         /// </summary>
         public static Java.Time.Chrono.JapaneseEra TAISHO { get { if (!_TAISHOReady) { _TAISHOContent = SGetField<Java.Time.Chrono.JapaneseEra>(LocalBridgeClazz, "TAISHO"); _TAISHOReady = true; } return _TAISHOContent; } }
         private static Java.Time.Chrono.JapaneseEra _TAISHOContent = default;
@@ -80,7 +74,7 @@ namespace Java.Time.Chrono
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/JapaneseEra.html#of(int)"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/JapaneseEra.html#of(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Time.Chrono.JapaneseEra"/></returns>
@@ -89,7 +83,7 @@ namespace Java.Time.Chrono
             return SExecuteWithSignature<Java.Time.Chrono.JapaneseEra>(LocalBridgeClazz, "of", "(I)Ljava/time/chrono/JapaneseEra;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/JapaneseEra.html#valueOf(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/JapaneseEra.html#valueOf(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Time.Chrono.JapaneseEra"/></returns>
@@ -98,7 +92,7 @@ namespace Java.Time.Chrono
             return SExecuteWithSignature<Java.Time.Chrono.JapaneseEra>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/time/chrono/JapaneseEra;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/JapaneseEra.html#values()"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/JapaneseEra.html#values()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.Chrono.JapaneseEra"/></returns>
         public static Java.Time.Chrono.JapaneseEra[] Values()
@@ -110,14 +104,15 @@ namespace Java.Time.Chrono
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/JapaneseEra.html#getValue()"/> 
+        /// <see href="https://developer.android.com/reference/java/time/chrono/JapaneseEra.html#getValue()"/>
         /// </summary>
-        public int Value
+        /// <returns><see cref="int"/></returns>
+        public int GetValue()
         {
-            get { return IExecuteWithSignature<int>("getValue", "()I"); }
+            return IExecuteWithSignature<int>("getValue", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/JapaneseEra.html#getDisplayName(java.time.format.TextStyle,java.util.Locale)"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/JapaneseEra.html#getDisplayName(java.time.format.TextStyle,java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Format.TextStyle"/></param>
         /// <param name="arg1"><see cref="Java.Util.Locale"/></param>
@@ -127,7 +122,7 @@ namespace Java.Time.Chrono
             return IExecute<Java.Lang.String>("getDisplayName", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/JapaneseEra.html#range(java.time.temporal.TemporalField)"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/JapaneseEra.html#range(java.time.temporal.TemporalField)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
         /// <returns><see cref="Java.Time.Temporal.ValueRange"/></returns>

@@ -64,7 +64,7 @@ namespace Java.Nio.File.Attribute
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/DosFileAttributeView.html#name()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/attribute/DosFileAttributeView.html#name()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
         public Java.Lang.String Name()
@@ -72,7 +72,7 @@ namespace Java.Nio.File.Attribute
             return IExecuteWithSignature<Java.Lang.String>("name", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/DosFileAttributeView.html#setArchive(boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/attribute/DosFileAttributeView.html#setArchive(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -81,7 +81,7 @@ namespace Java.Nio.File.Attribute
             IExecuteWithSignature("setArchive", "(Z)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/DosFileAttributeView.html#setHidden(boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/attribute/DosFileAttributeView.html#setHidden(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -90,7 +90,7 @@ namespace Java.Nio.File.Attribute
             IExecuteWithSignature("setHidden", "(Z)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/DosFileAttributeView.html#setReadOnly(boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/attribute/DosFileAttributeView.html#setReadOnly(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -99,7 +99,7 @@ namespace Java.Nio.File.Attribute
             IExecuteWithSignature("setReadOnly", "(Z)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/DosFileAttributeView.html#setSystem(boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/attribute/DosFileAttributeView.html#setSystem(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -108,7 +108,7 @@ namespace Java.Nio.File.Attribute
             IExecuteWithSignature("setSystem", "(Z)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/DosFileAttributeView.html#readAttributes()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/attribute/DosFileAttributeView.html#readAttributes()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.File.Attribute.BasicFileAttributes"/></returns>
         /// <exception cref="Java.Io.IOException"/>

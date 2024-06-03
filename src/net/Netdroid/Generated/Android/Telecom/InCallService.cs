@@ -52,26 +52,21 @@ namespace Android.Telecom
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/InCallService.html#getCallAudioState()"/> 
+        /// <see href="https://developer.android.com/reference/android/telecom/InCallService.html#getCallAudioState()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Telecom.CallAudioState CallAudioState
+        /// <returns><see cref="Android.Telecom.CallAudioState"/></returns>
+        [global::System.Obsolete()]
+        public Android.Telecom.CallAudioState GetCallAudioState()
         {
-            get { return IExecuteWithSignature<Android.Telecom.CallAudioState>("getCallAudioState", "()Landroid/telecom/CallAudioState;"); }
+            return IExecuteWithSignature<Android.Telecom.CallAudioState>("getCallAudioState", "()Landroid/telecom/CallAudioState;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/InCallService.html#getCalls()"/> 
+        /// <see href="https://developer.android.com/reference/android/telecom/InCallService.html#getCurrentCallEndpoint()"/>
         /// </summary>
-        public Java.Util.List<Android.Telecom.Call> Calls
+        /// <returns><see cref="Android.Telecom.CallEndpoint"/></returns>
+        public Android.Telecom.CallEndpoint GetCurrentCallEndpoint()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Telecom.Call>>("getCalls", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/telecom/InCallService.html#getCurrentCallEndpoint()"/> 
-        /// </summary>
-        public Android.Telecom.CallEndpoint CurrentCallEndpoint
-        {
-            get { return IExecuteWithSignature<Android.Telecom.CallEndpoint>("getCurrentCallEndpoint", "()Landroid/telecom/CallEndpoint;"); }
+            return IExecuteWithSignature<Android.Telecom.CallEndpoint>("getCurrentCallEndpoint", "()Landroid/telecom/CallEndpoint;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/InCallService.html#canAddCall()"/>
@@ -82,10 +77,18 @@ namespace Android.Telecom
             return IExecuteWithSignature<bool>("canAddCall", "()Z");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/telecom/InCallService.html#getCalls()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Telecom.Call> GetCalls()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Telecom.Call>>("getCalls", "()Ljava/util/List;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/telecom/InCallService.html#requestBluetoothAudio(android.bluetooth.BluetoothDevice)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Bluetooth.BluetoothDevice"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void RequestBluetoothAudio(Android.Bluetooth.BluetoothDevice arg0)
         {
             IExecuteWithSignature("requestBluetoothAudio", "(Landroid/bluetooth/BluetoothDevice;)V", arg0);
@@ -104,7 +107,7 @@ namespace Android.Telecom
         /// <see href="https://developer.android.com/reference/android/telecom/InCallService.html#setAudioRoute(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetAudioRoute(int arg0)
         {
             IExecuteWithSignature("setAudioRoute", "(I)V", arg0);
@@ -145,7 +148,7 @@ namespace Android.Telecom
         /// <see href="https://developer.android.com/reference/android/telecom/InCallService.html#onCallAudioStateChanged(android.telecom.CallAudioState)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Telecom.CallAudioState"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void OnCallAudioStateChanged(Android.Telecom.CallAudioState arg0)
         {
             IExecuteWithSignature("onCallAudioStateChanged", "(Landroid/telecom/CallAudioState;)V", arg0);

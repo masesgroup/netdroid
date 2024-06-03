@@ -61,34 +61,6 @@ namespace Android.App
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/NotificationChannelGroup.html#getChannels()"/> 
-        /// </summary>
-        public Java.Util.List<Android.App.NotificationChannel> Channels
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.App.NotificationChannel>>("getChannels", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/NotificationChannelGroup.html#getDescription()"/> <see href="https://developer.android.com/reference/android/app/NotificationChannelGroup.html#setDescription(java.lang.String)"/>
-        /// </summary>
-        public Java.Lang.String Description
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDescription", "()Ljava/lang/String;"); } set { IExecuteWithSignature("setDescription", "(Ljava/lang/String;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/NotificationChannelGroup.html#getId()"/> 
-        /// </summary>
-        public Java.Lang.String Id
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/NotificationChannelGroup.html#getName()"/> 
-        /// </summary>
-        public Java.Lang.CharSequence Name
-        {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getName", "()Ljava/lang/CharSequence;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/NotificationChannelGroup.html#clone()"/>
         /// </summary>
         /// <returns><see cref="Android.App.NotificationChannelGroup"/></returns>
@@ -111,6 +83,46 @@ namespace Android.App
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/NotificationChannelGroup.html#getName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetName()
+        {
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getName", "()Ljava/lang/CharSequence;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/NotificationChannelGroup.html#getDescription()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDescription()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getDescription", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/NotificationChannelGroup.html#getId()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetId()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/NotificationChannelGroup.html#getChannels()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.App.NotificationChannel> GetChannels()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.App.NotificationChannel>>("getChannels", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/NotificationChannelGroup.html#setDescription(java.lang.String)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        public void SetDescription(Java.Lang.String arg0)
+        {
+            IExecuteWithSignature("setDescription", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/NotificationChannelGroup.html#writeToParcel(android.os.Parcel,int)"/>

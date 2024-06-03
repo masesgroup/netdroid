@@ -54,7 +54,7 @@ namespace Java.Io
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/Writer.html#nullWriter()"/>
+        /// <see href="https://developer.android.com/reference/java/io/Writer.html#nullWriter()"/>
         /// </summary>
         /// <returns><see cref="Java.Io.Writer"/></returns>
         public static Java.Io.Writer NullWriter()
@@ -66,7 +66,7 @@ namespace Java.Io
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/Writer.html#close()"/>
+        /// <see href="https://developer.android.com/reference/java/io/Writer.html#close()"/>
         /// </summary>
         /// <exception cref="Java.Io.IOException"/>
         public void Close()
@@ -74,7 +74,7 @@ namespace Java.Io
             IExecuteWithSignature("close", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/Writer.html#flush()"/>
+        /// <see href="https://developer.android.com/reference/java/io/Writer.html#flush()"/>
         /// </summary>
         /// <exception cref="Java.Io.IOException"/>
         public void Flush()
@@ -82,7 +82,7 @@ namespace Java.Io
             IExecuteWithSignature("flush", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/Writer.html#write(char[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/io/Writer.html#write(char[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -93,7 +93,7 @@ namespace Java.Io
             IExecute("write", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/Writer.html#append(char)"/>
+        /// <see href="https://developer.android.com/reference/java/io/Writer.html#append(char)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <returns><see cref="Java.Lang.Appendable"/></returns>
@@ -103,7 +103,7 @@ namespace Java.Io
             return IExecuteWithSignature<Java.Lang.Appendable>("append", "(C)Ljava/lang/Appendable;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/Writer.html#append(java.lang.CharSequence,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/io/Writer.html#append(java.lang.CharSequence,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -115,7 +115,7 @@ namespace Java.Io
             return IExecute<Java.Lang.Appendable>("append", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/Writer.html#append(java.lang.CharSequence)"/>
+        /// <see href="https://developer.android.com/reference/java/io/Writer.html#append(java.lang.CharSequence)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <returns><see cref="Java.Lang.Appendable"/></returns>
@@ -125,7 +125,7 @@ namespace Java.Io
             return IExecuteWithSignature<Java.Lang.Appendable>("append", "(Ljava/lang/CharSequence;)Ljava/lang/Appendable;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/Writer.html#write(char[])"/>
+        /// <see href="https://developer.android.com/reference/java/io/Writer.html#write(char[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -134,7 +134,7 @@ namespace Java.Io
             IExecuteWithSignature("write", "([C)V", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/Writer.html#write(int)"/>
+        /// <see href="https://developer.android.com/reference/java/io/Writer.html#write(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -143,7 +143,7 @@ namespace Java.Io
             IExecuteWithSignature("write", "(I)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/Writer.html#write(java.lang.String,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/io/Writer.html#write(java.lang.String,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -154,7 +154,7 @@ namespace Java.Io
             IExecute("write", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/Writer.html#write(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/io/Writer.html#write(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Io.IOException"/>

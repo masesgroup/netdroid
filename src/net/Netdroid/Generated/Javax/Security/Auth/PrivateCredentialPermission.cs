@@ -30,7 +30,7 @@ namespace Javax.Security.Auth
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/security/auth/PrivateCredentialPermission.html#%3Cinit%3E(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/security/auth/PrivateCredentialPermission.html#%3Cinit%3E(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -55,18 +55,20 @@ namespace Javax.Security.Auth
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/security/auth/PrivateCredentialPermission.html#getCredentialClass()"/> 
+        /// <see href="https://developer.android.com/reference/javax/security/auth/PrivateCredentialPermission.html#getCredentialClass()"/>
         /// </summary>
-        public Java.Lang.String CredentialClass
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetCredentialClass()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCredentialClass", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getCredentialClass", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/security/auth/PrivateCredentialPermission.html#getPrincipals()"/> 
+        /// <see href="https://developer.android.com/reference/javax/security/auth/PrivateCredentialPermission.html#getPrincipals()"/>
         /// </summary>
-        public Java.Lang.String[] Principals
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String[] GetPrincipals()
         {
-            get { return IExecuteWithSignatureArray<Java.Lang.String>("getPrincipals", "()[[Ljava/lang/String;"); }
+            return IExecuteWithSignatureArray<Java.Lang.String>("getPrincipals", "()[[Ljava/lang/String;");
         }
 
         #endregion

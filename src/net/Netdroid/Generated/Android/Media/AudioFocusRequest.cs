@@ -46,18 +46,12 @@ namespace Android.Media
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioFocusRequest.html#getAudioAttributes()"/> 
+        /// <see href="https://developer.android.com/reference/android/media/AudioFocusRequest.html#getAudioAttributes()"/>
         /// </summary>
-        public Android.Media.AudioAttributes AudioAttributes
+        /// <returns><see cref="Android.Media.AudioAttributes"/></returns>
+        public Android.Media.AudioAttributes GetAudioAttributes()
         {
-            get { return IExecuteWithSignature<Android.Media.AudioAttributes>("getAudioAttributes", "()Landroid/media/AudioAttributes;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/media/AudioFocusRequest.html#getFocusGain()"/> 
-        /// </summary>
-        public int FocusGain
-        {
-            get { return IExecuteWithSignature<int>("getFocusGain", "()I"); }
+            return IExecuteWithSignature<Android.Media.AudioAttributes>("getAudioAttributes", "()Landroid/media/AudioAttributes;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/media/AudioFocusRequest.html#acceptsDelayedFocusGain()"/>
@@ -74,6 +68,14 @@ namespace Android.Media
         public bool WillPauseWhenDucked()
         {
             return IExecuteWithSignature<bool>("willPauseWhenDucked", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/media/AudioFocusRequest.html#getFocusGain()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetFocusGain()
+        {
+            return IExecuteWithSignature<int>("getFocusGain", "()I");
         }
 
         #endregion

@@ -64,7 +64,7 @@ namespace Java.Nio.File
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/WatchService.html#poll()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/WatchService.html#poll()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.File.WatchKey"/></returns>
         public Java.Nio.File.WatchKey Poll()
@@ -72,7 +72,7 @@ namespace Java.Nio.File
             return IExecuteWithSignature<Java.Nio.File.WatchKey>("poll", "()Ljava/nio/file/WatchKey;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/WatchService.html#poll(long,java.util.concurrent.TimeUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/WatchService.html#poll(long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
@@ -83,7 +83,7 @@ namespace Java.Nio.File
             return IExecute<Java.Nio.File.WatchKey>("poll", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/WatchService.html#take()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/WatchService.html#take()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.File.WatchKey"/></returns>
         /// <exception cref="Java.Lang.InterruptedException"/>
@@ -92,7 +92,7 @@ namespace Java.Nio.File
             return IExecuteWithSignature<Java.Nio.File.WatchKey>("take", "()Ljava/nio/file/WatchKey;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/WatchService.html#close()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/WatchService.html#close()"/>
         /// </summary>
         /// <exception cref="Java.Io.IOException"/>
         public void Close()

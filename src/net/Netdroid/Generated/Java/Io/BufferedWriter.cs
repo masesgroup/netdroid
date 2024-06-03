@@ -30,7 +30,7 @@ namespace Java.Io
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/BufferedWriter.html#%3Cinit%3E(java.io.Writer,int)"/>
+        /// <see href="https://developer.android.com/reference/java/io/BufferedWriter.html#%3Cinit%3E(java.io.Writer,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.Writer"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -39,7 +39,7 @@ namespace Java.Io
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/BufferedWriter.html#%3Cinit%3E(java.io.Writer)"/>
+        /// <see href="https://developer.android.com/reference/java/io/BufferedWriter.html#%3Cinit%3E(java.io.Writer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.Writer"/></param>
         public BufferedWriter(Java.Io.Writer arg0)
@@ -63,7 +63,7 @@ namespace Java.Io
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/BufferedWriter.html#newLine()"/>
+        /// <see href="https://developer.android.com/reference/java/io/BufferedWriter.html#newLine()"/>
         /// </summary>
         /// <exception cref="Java.Io.IOException"/>
         public void NewLine()

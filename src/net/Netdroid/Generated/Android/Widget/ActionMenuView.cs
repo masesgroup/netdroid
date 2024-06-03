@@ -63,25 +63,20 @@ namespace Android.Widget
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ActionMenuView.html#getMenu()"/> 
+        /// <see href="https://developer.android.com/reference/android/widget/ActionMenuView.html#getOverflowIcon()"/>
         /// </summary>
-        public Android.View.Menu Menu
+        /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
+        public Android.Graphics.Drawable.Drawable GetOverflowIcon()
         {
-            get { return IExecuteWithSignature<Android.View.Menu>("getMenu", "()Landroid/view/Menu;"); }
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getOverflowIcon", "()Landroid/graphics/drawable/Drawable;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ActionMenuView.html#getOverflowIcon()"/> <see href="https://developer.android.com/reference/android/widget/ActionMenuView.html#setOverflowIcon(android.graphics.drawable.Drawable)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/ActionMenuView.html#getMenu()"/>
         /// </summary>
-        public Android.Graphics.Drawable.Drawable OverflowIcon
+        /// <returns><see cref="Android.View.Menu"/></returns>
+        public Android.View.Menu GetMenu()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getOverflowIcon", "()Landroid/graphics/drawable/Drawable;"); } set { IExecuteWithSignature("setOverflowIcon", "(Landroid/graphics/drawable/Drawable;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/ActionMenuView.html#getPopupTheme()"/> <see href="https://developer.android.com/reference/android/widget/ActionMenuView.html#setPopupTheme(int)"/>
-        /// </summary>
-        public int PopupTheme
-        {
-            get { return IExecuteWithSignature<int>("getPopupTheme", "()I"); } set { IExecuteWithSignature("setPopupTheme", "(I)V", value); }
+            return IExecuteWithSignature<Android.View.Menu>("getMenu", "()Landroid/view/Menu;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ActionMenuView.html#hideOverflowMenu()"/>
@@ -106,6 +101,14 @@ namespace Android.Widget
         public bool ShowOverflowMenu()
         {
             return IExecuteWithSignature<bool>("showOverflowMenu", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ActionMenuView.html#getPopupTheme()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPopupTheme()
+        {
+            return IExecuteWithSignature<int>("getPopupTheme", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/ActionMenuView.html#dismissPopupMenus()"/>
@@ -136,6 +139,22 @@ namespace Android.Widget
         public void SetOnMenuItemClickListener(Android.Widget.ActionMenuView.OnMenuItemClickListener arg0)
         {
             IExecuteWithSignature("setOnMenuItemClickListener", "(Landroid/widget/ActionMenuView$OnMenuItemClickListener;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ActionMenuView.html#setOverflowIcon(android.graphics.drawable.Drawable)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Graphics.Drawable.Drawable"/></param>
+        public void SetOverflowIcon(Android.Graphics.Drawable.Drawable arg0)
+        {
+            IExecuteWithSignature("setOverflowIcon", "(Landroid/graphics/drawable/Drawable;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/ActionMenuView.html#setPopupTheme(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetPopupTheme(int arg0)
+        {
+            IExecuteWithSignature("setPopupTheme", "(I)V", arg0);
         }
 
         #endregion
@@ -231,7 +250,7 @@ namespace Android.Widget
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onMenuItemClick", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.MenuItem>>>(OnMenuItemClickEventHandler));
+                AddEventHandler("onMenuItemClick", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.MenuItem>>>(OnMenuItemClickEventHandler));
 
             }
 
@@ -239,7 +258,7 @@ namespace Android.Widget
             /// Handler for <see href="https://developer.android.com/reference/android/widget/ActionMenuView.OnMenuItemClickListener.html#onMenuItemClick(android.view.MenuItem)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnMenuItemClick"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Func<Android.View.MenuItem, bool> OnOnMenuItemClick { get; set; } = null;
+            public global::System.Func<Android.View.MenuItem, bool> OnOnMenuItemClick { get; set; } = null;
 
             void OnMenuItemClickEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.MenuItem>> data)
             {

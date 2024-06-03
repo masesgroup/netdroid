@@ -42,14 +42,7 @@ namespace Java.Security
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Security.html#getProviders()"/> 
-        /// </summary>
-        public static Java.Security.Provider[] Providers
-        {
-            get { return SExecuteWithSignatureArray<Java.Security.Provider>(LocalBridgeClazz, "getProviders", "()[Ljava/security/Provider;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Security.html#addProvider(java.security.Provider)"/>
+        /// <see href="https://developer.android.com/reference/java/security/Security.html#addProvider(java.security.Provider)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Provider"/></param>
         /// <returns><see cref="int"/></returns>
@@ -58,18 +51,18 @@ namespace Java.Security
             return SExecuteWithSignature<int>(LocalBridgeClazz, "addProvider", "(Ljava/security/Provider;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Security.html#getAlgorithmProperty(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/security/Security.html#getAlgorithmProperty(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static Java.Lang.String GetAlgorithmProperty(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return SExecute<Java.Lang.String>(LocalBridgeClazz, "getAlgorithmProperty", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Security.html#getProperty(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/security/Security.html#getProperty(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -78,7 +71,7 @@ namespace Java.Security
             return SExecuteWithSignature<Java.Lang.String>(LocalBridgeClazz, "getProperty", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Security.html#getProvider(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/security/Security.html#getProvider(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Security.Provider"/></returns>
@@ -87,7 +80,15 @@ namespace Java.Security
             return SExecuteWithSignature<Java.Security.Provider>(LocalBridgeClazz, "getProvider", "(Ljava/lang/String;)Ljava/security/Provider;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Security.html#getProviders(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/security/Security.html#getProviders()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Security.Provider"/></returns>
+        public static Java.Security.Provider[] GetProviders()
+        {
+            return SExecuteWithSignatureArray<Java.Security.Provider>(LocalBridgeClazz, "getProviders", "()[Ljava/security/Provider;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/Security.html#getProviders(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Security.Provider"/></returns>
@@ -96,7 +97,7 @@ namespace Java.Security
             return SExecuteWithSignatureArray<Java.Security.Provider>(LocalBridgeClazz, "getProviders", "(Ljava/lang/String;)[Ljava/security/Provider;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Security.html#getProviders(java.util.Map)"/>
+        /// <see href="https://developer.android.com/reference/java/security/Security.html#getProviders(java.util.Map)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Map"/></param>
         /// <returns><see cref="Java.Security.Provider"/></returns>
@@ -105,7 +106,7 @@ namespace Java.Security
             return SExecuteWithSignatureArray<Java.Security.Provider>(LocalBridgeClazz, "getProviders", "(Ljava/util/Map;)[Ljava/security/Provider;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Security.html#getAlgorithms(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/security/Security.html#getAlgorithms(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Util.Set"/></returns>
@@ -114,7 +115,7 @@ namespace Java.Security
             return SExecuteWithSignature<Java.Util.Set<Java.Lang.String>>(LocalBridgeClazz, "getAlgorithms", "(Ljava/lang/String;)Ljava/util/Set;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Security.html#insertProviderAt(java.security.Provider,int)"/>
+        /// <see href="https://developer.android.com/reference/java/security/Security.html#insertProviderAt(java.security.Provider,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.Provider"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -124,7 +125,7 @@ namespace Java.Security
             return SExecute<int>(LocalBridgeClazz, "insertProviderAt", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Security.html#removeProvider(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/security/Security.html#removeProvider(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public static void RemoveProvider(Java.Lang.String arg0)
@@ -132,7 +133,7 @@ namespace Java.Security
             SExecuteWithSignature(LocalBridgeClazz, "removeProvider", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/Security.html#setProperty(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/security/Security.html#setProperty(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>

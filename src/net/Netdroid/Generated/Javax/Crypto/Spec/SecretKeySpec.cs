@@ -30,7 +30,7 @@ namespace Javax.Crypto.Spec
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/spec/SecretKeySpec.html#%3Cinit%3E(byte[],int,int,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/spec/SecretKeySpec.html#%3Cinit%3E(byte[],int,int,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -41,7 +41,7 @@ namespace Javax.Crypto.Spec
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/spec/SecretKeySpec.html#%3Cinit%3E(byte[],java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/javax/crypto/spec/SecretKeySpec.html#%3Cinit%3E(byte[],java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -74,25 +74,28 @@ namespace Javax.Crypto.Spec
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/spec/SecretKeySpec.html#getAlgorithm()"/> 
+        /// <see href="https://developer.android.com/reference/javax/crypto/spec/SecretKeySpec.html#getEncoded()"/>
         /// </summary>
-        public Java.Lang.String Algorithm
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetEncoded()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getAlgorithm", "()Ljava/lang/String;"); }
+            return IExecuteWithSignatureArray<byte>("getEncoded", "()[B");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/spec/SecretKeySpec.html#getEncoded()"/> 
+        /// <see href="https://developer.android.com/reference/javax/crypto/spec/SecretKeySpec.html#getAlgorithm()"/>
         /// </summary>
-        public byte[] Encoded
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetAlgorithm()
         {
-            get { return IExecuteWithSignatureArray<byte>("getEncoded", "()[B"); }
+            return IExecuteWithSignature<Java.Lang.String>("getAlgorithm", "()Ljava/lang/String;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/crypto/spec/SecretKeySpec.html#getFormat()"/> 
+        /// <see href="https://developer.android.com/reference/javax/crypto/spec/SecretKeySpec.html#getFormat()"/>
         /// </summary>
-        public Java.Lang.String Format
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetFormat()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getFormat", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Java.Lang.String>("getFormat", "()Ljava/lang/String;");
         }
 
         #endregion

@@ -46,26 +46,29 @@ namespace Android.Hardware.Camera2
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/TotalCaptureResult.html#getPartialResults()"/> 
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/TotalCaptureResult.html#getPartialResults()"/>
         /// </summary>
-        public Java.Util.List<Android.Hardware.Camera2.CaptureResult> PartialResults
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Hardware.Camera2.CaptureResult> GetPartialResults()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Hardware.Camera2.CaptureResult>>("getPartialResults", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Java.Util.List<Android.Hardware.Camera2.CaptureResult>>("getPartialResults", "()Ljava/util/List;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/TotalCaptureResult.html#getPhysicalCameraResults()"/> 
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/TotalCaptureResult.html#getPhysicalCameraResults()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Java.Util.Map<Java.Lang.String, Android.Hardware.Camera2.CaptureResult> PhysicalCameraResults
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        [global::System.Obsolete()]
+        public Java.Util.Map<Java.Lang.String, Android.Hardware.Camera2.CaptureResult> GetPhysicalCameraResults()
         {
-            get { return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Android.Hardware.Camera2.CaptureResult>>("getPhysicalCameraResults", "()Ljava/util/Map;"); }
+            return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Android.Hardware.Camera2.CaptureResult>>("getPhysicalCameraResults", "()Ljava/util/Map;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/hardware/camera2/TotalCaptureResult.html#getPhysicalCameraTotalResults()"/> 
+        /// <see href="https://developer.android.com/reference/android/hardware/camera2/TotalCaptureResult.html#getPhysicalCameraTotalResults()"/>
         /// </summary>
-        public Java.Util.Map<Java.Lang.String, Android.Hardware.Camera2.TotalCaptureResult> PhysicalCameraTotalResults
+        /// <returns><see cref="Java.Util.Map"/></returns>
+        public Java.Util.Map<Java.Lang.String, Android.Hardware.Camera2.TotalCaptureResult> GetPhysicalCameraTotalResults()
         {
-            get { return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Android.Hardware.Camera2.TotalCaptureResult>>("getPhysicalCameraTotalResults", "()Ljava/util/Map;"); }
+            return IExecuteWithSignature<Java.Util.Map<Java.Lang.String, Android.Hardware.Camera2.TotalCaptureResult>>("getPhysicalCameraTotalResults", "()Ljava/util/Map;");
         }
 
         #endregion

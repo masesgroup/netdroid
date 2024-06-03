@@ -58,7 +58,7 @@ namespace Android.Database
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsBlob(int arg0)
         {
             return IExecuteWithSignature<bool>("isBlob", "(I)Z", arg0);
@@ -68,7 +68,7 @@ namespace Android.Database
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsFloat(int arg0)
         {
             return IExecuteWithSignature<bool>("isFloat", "(I)Z", arg0);
@@ -78,7 +78,7 @@ namespace Android.Database
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsLong(int arg0)
         {
             return IExecuteWithSignature<bool>("isLong", "(I)Z", arg0);
@@ -88,7 +88,7 @@ namespace Android.Database
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public bool IsString(int arg0)
         {
             return IExecuteWithSignature<bool>("isString", "(I)Z", arg0);

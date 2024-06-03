@@ -55,18 +55,20 @@ namespace Android.Net.Ipsec.Ike
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeTunnelConnectionParams.html#getIkeSessionParams()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeTunnelConnectionParams.html#getIkeSessionParams()"/>
         /// </summary>
-        public Android.Net.Ipsec.Ike.IkeSessionParams IkeSessionParams
+        /// <returns><see cref="Android.Net.Ipsec.Ike.IkeSessionParams"/></returns>
+        public Android.Net.Ipsec.Ike.IkeSessionParams GetIkeSessionParams()
         {
-            get { return IExecuteWithSignature<Android.Net.Ipsec.Ike.IkeSessionParams>("getIkeSessionParams", "()Landroid/net/ipsec/ike/IkeSessionParams;"); }
+            return IExecuteWithSignature<Android.Net.Ipsec.Ike.IkeSessionParams>("getIkeSessionParams", "()Landroid/net/ipsec/ike/IkeSessionParams;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeTunnelConnectionParams.html#getTunnelModeChildSessionParams()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/IkeTunnelConnectionParams.html#getTunnelModeChildSessionParams()"/>
         /// </summary>
-        public Android.Net.Ipsec.Ike.TunnelModeChildSessionParams TunnelModeChildSessionParams
+        /// <returns><see cref="Android.Net.Ipsec.Ike.TunnelModeChildSessionParams"/></returns>
+        public Android.Net.Ipsec.Ike.TunnelModeChildSessionParams GetTunnelModeChildSessionParams()
         {
-            get { return IExecuteWithSignature<Android.Net.Ipsec.Ike.TunnelModeChildSessionParams>("getTunnelModeChildSessionParams", "()Landroid/net/ipsec/ike/TunnelModeChildSessionParams;"); }
+            return IExecuteWithSignature<Android.Net.Ipsec.Ike.TunnelModeChildSessionParams>("getTunnelModeChildSessionParams", "()Landroid/net/ipsec/ike/TunnelModeChildSessionParams;");
         }
 
         #endregion

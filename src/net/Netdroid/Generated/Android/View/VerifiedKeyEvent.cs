@@ -52,46 +52,44 @@ namespace Android.View
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/VerifiedKeyEvent.html#getAction()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/VerifiedKeyEvent.html#getAction()"/>
         /// </summary>
-        public int Action
+        /// <returns><see cref="int"/></returns>
+        public int GetAction()
         {
-            get { return IExecuteWithSignature<int>("getAction", "()I"); }
+            return IExecuteWithSignature<int>("getAction", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/VerifiedKeyEvent.html#getDownTimeNanos()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/VerifiedKeyEvent.html#getKeyCode()"/>
         /// </summary>
-        public long DownTimeNanos
+        /// <returns><see cref="int"/></returns>
+        public int GetKeyCode()
         {
-            get { return IExecuteWithSignature<long>("getDownTimeNanos", "()J"); }
+            return IExecuteWithSignature<int>("getKeyCode", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/VerifiedKeyEvent.html#getKeyCode()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/VerifiedKeyEvent.html#getMetaState()"/>
         /// </summary>
-        public int KeyCode
+        /// <returns><see cref="int"/></returns>
+        public int GetMetaState()
         {
-            get { return IExecuteWithSignature<int>("getKeyCode", "()I"); }
+            return IExecuteWithSignature<int>("getMetaState", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/VerifiedKeyEvent.html#getMetaState()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/VerifiedKeyEvent.html#getRepeatCount()"/>
         /// </summary>
-        public int MetaState
+        /// <returns><see cref="int"/></returns>
+        public int GetRepeatCount()
         {
-            get { return IExecuteWithSignature<int>("getMetaState", "()I"); }
+            return IExecuteWithSignature<int>("getRepeatCount", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/VerifiedKeyEvent.html#getRepeatCount()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/VerifiedKeyEvent.html#getScanCode()"/>
         /// </summary>
-        public int RepeatCount
+        /// <returns><see cref="int"/></returns>
+        public int GetScanCode()
         {
-            get { return IExecuteWithSignature<int>("getRepeatCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/VerifiedKeyEvent.html#getScanCode()"/> 
-        /// </summary>
-        public int ScanCode
-        {
-            get { return IExecuteWithSignature<int>("getScanCode", "()I"); }
+            return IExecuteWithSignature<int>("getScanCode", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/VerifiedKeyEvent.html#getFlag(int)"/>
@@ -101,6 +99,14 @@ namespace Android.View
         public Java.Lang.Boolean GetFlag(int arg0)
         {
             return IExecuteWithSignature<Java.Lang.Boolean>("getFlag", "(I)Ljava/lang/Boolean;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/VerifiedKeyEvent.html#getDownTimeNanos()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetDownTimeNanos()
+        {
+            return IExecuteWithSignature<long>("getDownTimeNanos", "()J");
         }
 
         #endregion

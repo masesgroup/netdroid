@@ -64,41 +64,6 @@ namespace Android.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/util/AttributeSet.html#getAttributeCount()"/> 
-        /// </summary>
-        public int AttributeCount
-        {
-            get { return IExecuteWithSignature<int>("getAttributeCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/util/AttributeSet.html#getClassAttribute()"/> 
-        /// </summary>
-        public Java.Lang.String ClassAttribute
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getClassAttribute", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/util/AttributeSet.html#getIdAttribute()"/> 
-        /// </summary>
-        public Java.Lang.String IdAttribute
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getIdAttribute", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/util/AttributeSet.html#getPositionDescription()"/> 
-        /// </summary>
-        public Java.Lang.String PositionDescription
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getPositionDescription", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/util/AttributeSet.html#getStyleAttribute()"/> 
-        /// </summary>
-        public int StyleAttribute
-        {
-            get { return IExecuteWithSignature<int>("getStyleAttribute", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/AttributeSet.html#getAttributeBooleanValue(int,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -139,6 +104,14 @@ namespace Android.Util
         public float GetAttributeFloatValue(Java.Lang.String arg0, Java.Lang.String arg1, float arg2)
         {
             return IExecute<float>("getAttributeFloatValue", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/util/AttributeSet.html#getAttributeCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetAttributeCount()
+        {
+            return IExecuteWithSignature<int>("getAttributeCount", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/AttributeSet.html#getAttributeIntValue(int,int)"/>
@@ -245,6 +218,14 @@ namespace Android.Util
             return IExecuteWithSignature<int>("getIdAttributeResourceValue", "(I)I", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/util/AttributeSet.html#getStyleAttribute()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetStyleAttribute()
+        {
+            return IExecuteWithSignature<int>("getStyleAttribute", "()I");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/AttributeSet.html#getAttributeName(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -271,6 +252,30 @@ namespace Android.Util
         public Java.Lang.String GetAttributeValue(Java.Lang.String arg0, Java.Lang.String arg1)
         {
             return IExecute<Java.Lang.String>("getAttributeValue", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/util/AttributeSet.html#getClassAttribute()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetClassAttribute()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getClassAttribute", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/util/AttributeSet.html#getIdAttribute()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetIdAttribute()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getIdAttribute", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/util/AttributeSet.html#getPositionDescription()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetPositionDescription()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getPositionDescription", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/util/AttributeSet.html#getAttributeNamespace(int)"/>

@@ -46,42 +46,64 @@ namespace Android.App
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/ListActivity.html#getListAdapter()"/> <see href="https://developer.android.com/reference/android/app/ListActivity.html#setListAdapter(android.widget.ListAdapter)"/>
+        /// <see href="https://developer.android.com/reference/android/app/ListActivity.html#getListAdapter()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Widget.ListAdapter ListAdapter
+        /// <returns><see cref="Android.Widget.ListAdapter"/></returns>
+        [global::System.Obsolete()]
+        public Android.Widget.ListAdapter GetListAdapter()
         {
-            get { return IExecuteWithSignature<Android.Widget.ListAdapter>("getListAdapter", "()Landroid/widget/ListAdapter;"); } set { IExecuteWithSignature("setListAdapter", "(Landroid/widget/ListAdapter;)V", value); }
+            return IExecuteWithSignature<Android.Widget.ListAdapter>("getListAdapter", "()Landroid/widget/ListAdapter;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/ListActivity.html#getListView()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/ListActivity.html#getListAdapter()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.Widget.ListView ListView
+        /// <returns><see cref="Android.Widget.ListAdapter"/></returns>
+        [global::System.Obsolete()]
+        public Android.Widget.ListAdapter GetListAdapterDirect()
         {
-            get { return IExecuteWithSignature<Android.Widget.ListView>("getListView", "()Landroid/widget/ListView;"); }
+            return IExecuteWithSignature<Android.Widget.ListAdapterDirect, Android.Widget.ListAdapter>("getListAdapter", "()Landroid/widget/ListAdapter;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/ListActivity.html#getSelectedItemId()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/ListActivity.html#getListView()"/>
         /// </summary>
-        [System.Obsolete()]
-        public long SelectedItemId
+        /// <returns><see cref="Android.Widget.ListView"/></returns>
+        [global::System.Obsolete()]
+        public Android.Widget.ListView GetListView()
         {
-            get { return IExecuteWithSignature<long>("getSelectedItemId", "()J"); }
+            return IExecuteWithSignature<Android.Widget.ListView>("getListView", "()Landroid/widget/ListView;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/ListActivity.html#getSelectedItemPosition()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/ListActivity.html#getSelectedItemPosition()"/>
         /// </summary>
-        [System.Obsolete()]
-        public int SelectedItemPosition
+        /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
+        public int GetSelectedItemPosition()
         {
-            get { return IExecuteWithSignature<int>("getSelectedItemPosition", "()I"); }
+            return IExecuteWithSignature<int>("getSelectedItemPosition", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ListActivity.html#getSelectedItemId()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        [global::System.Obsolete()]
+        public long GetSelectedItemId()
+        {
+            return IExecuteWithSignature<long>("getSelectedItemId", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/ListActivity.html#setListAdapter(android.widget.ListAdapter)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Widget.ListAdapter"/></param>
+        [global::System.Obsolete()]
+        public void SetListAdapter(Android.Widget.ListAdapter arg0)
+        {
+            IExecuteWithSignature("setListAdapter", "(Landroid/widget/ListAdapter;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/ListActivity.html#setSelection(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetSelection(int arg0)
         {
             IExecuteWithSignature("setSelection", "(I)V", arg0);

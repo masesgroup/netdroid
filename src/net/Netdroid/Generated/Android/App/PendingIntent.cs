@@ -198,40 +198,20 @@ namespace Android.App
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/PendingIntent.html#getCreatorPackage()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/PendingIntent.html#getIntentSender()"/>
         /// </summary>
-        public Java.Lang.String CreatorPackage
+        /// <returns><see cref="Android.Content.IntentSender"/></returns>
+        public Android.Content.IntentSender GetIntentSender()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getCreatorPackage", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Android.Content.IntentSender>("getIntentSender", "()Landroid/content/IntentSender;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/PendingIntent.html#getCreatorUid()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/PendingIntent.html#getCreatorUserHandle()"/>
         /// </summary>
-        public int CreatorUid
+        /// <returns><see cref="Android.Os.UserHandle"/></returns>
+        public Android.Os.UserHandle GetCreatorUserHandle()
         {
-            get { return IExecuteWithSignature<int>("getCreatorUid", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/PendingIntent.html#getCreatorUserHandle()"/> 
-        /// </summary>
-        public Android.Os.UserHandle CreatorUserHandle
-        {
-            get { return IExecuteWithSignature<Android.Os.UserHandle>("getCreatorUserHandle", "()Landroid/os/UserHandle;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/PendingIntent.html#getIntentSender()"/> 
-        /// </summary>
-        public Android.Content.IntentSender IntentSender
-        {
-            get { return IExecuteWithSignature<Android.Content.IntentSender>("getIntentSender", "()Landroid/content/IntentSender;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/PendingIntent.html#getTargetPackage()"/> 
-        /// </summary>
-        [System.Obsolete()]
-        public Java.Lang.String TargetPackage
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getTargetPackage", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Android.Os.UserHandle>("getCreatorUserHandle", "()Landroid/os/UserHandle;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/PendingIntent.html#isActivity()"/>
@@ -280,6 +260,31 @@ namespace Android.App
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/PendingIntent.html#getCreatorUid()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCreatorUid()
+        {
+            return IExecuteWithSignature<int>("getCreatorUid", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/PendingIntent.html#getCreatorPackage()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetCreatorPackage()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getCreatorPackage", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/app/PendingIntent.html#getTargetPackage()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        [global::System.Obsolete()]
+        public Java.Lang.String GetTargetPackage()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getTargetPackage", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/PendingIntent.html#cancel()"/>

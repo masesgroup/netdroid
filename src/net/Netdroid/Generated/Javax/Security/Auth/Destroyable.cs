@@ -64,7 +64,7 @@ namespace Javax.Security.Auth
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/security/auth/Destroyable.html#isDestroyed()"/>
+        /// <see href="https://developer.android.com/reference/javax/security/auth/Destroyable.html#isDestroyed()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsDestroyed()
@@ -72,7 +72,7 @@ namespace Javax.Security.Auth
             return IExecuteWithSignature<bool>("isDestroyed", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/javax/security/auth/Destroyable.html#destroy()"/>
+        /// <see href="https://developer.android.com/reference/javax/security/auth/Destroyable.html#destroy()"/>
         /// </summary>
         /// <exception cref="Javax.Security.Auth.DestroyFailedException"/>
         public void Destroy()

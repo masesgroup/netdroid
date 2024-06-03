@@ -42,7 +42,7 @@ namespace Java.Util.Concurrent.Atomic
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#newUpdater(java.lang.Class,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#newUpdater(java.lang.Class,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -56,7 +56,7 @@ namespace Java.Util.Concurrent.Atomic
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#compareAndSet(java.lang.Object,long,long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#compareAndSet(java.lang.Object,long,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -67,7 +67,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<bool>("compareAndSet", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#weakCompareAndSet(java.lang.Object,long,long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#weakCompareAndSet(java.lang.Object,long,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -78,7 +78,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<bool>("weakCompareAndSet", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#get(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#get(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="long"/></returns>
@@ -87,7 +87,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecuteWithSignature<long>("get", "(Ljava/lang/Object;)J", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#lazySet(java.lang.Object,long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#lazySet(java.lang.Object,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -96,7 +96,7 @@ namespace Java.Util.Concurrent.Atomic
             IExecute("lazySet", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#set(java.lang.Object,long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#set(java.lang.Object,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -105,7 +105,7 @@ namespace Java.Util.Concurrent.Atomic
             IExecute("set", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#accumulateAndGet(java.lang.Object,long,java.util.function.LongBinaryOperator)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#accumulateAndGet(java.lang.Object,long,java.util.function.LongBinaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -116,7 +116,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<long>("accumulateAndGet", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#getAndAccumulate(java.lang.Object,long,java.util.function.LongBinaryOperator)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#getAndAccumulate(java.lang.Object,long,java.util.function.LongBinaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -127,7 +127,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<long>("getAndAccumulate", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#getAndUpdate(java.lang.Object,java.util.function.LongUnaryOperator)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#getAndUpdate(java.lang.Object,java.util.function.LongUnaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.LongUnaryOperator"/></param>
@@ -137,7 +137,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<long>("getAndUpdate", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#updateAndGet(java.lang.Object,java.util.function.LongUnaryOperator)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#updateAndGet(java.lang.Object,java.util.function.LongUnaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.LongUnaryOperator"/></param>
@@ -147,7 +147,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<long>("updateAndGet", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#addAndGet(java.lang.Object,long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#addAndGet(java.lang.Object,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -157,7 +157,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<long>("addAndGet", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#decrementAndGet(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#decrementAndGet(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="long"/></returns>
@@ -166,7 +166,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecuteWithSignature<long>("decrementAndGet", "(Ljava/lang/Object;)J", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#getAndAdd(java.lang.Object,long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#getAndAdd(java.lang.Object,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -176,7 +176,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<long>("getAndAdd", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#getAndDecrement(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#getAndDecrement(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="long"/></returns>
@@ -185,7 +185,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecuteWithSignature<long>("getAndDecrement", "(Ljava/lang/Object;)J", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#getAndIncrement(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#getAndIncrement(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="long"/></returns>
@@ -194,7 +194,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecuteWithSignature<long>("getAndIncrement", "(Ljava/lang/Object;)J", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#getAndSet(java.lang.Object,long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#getAndSet(java.lang.Object,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -204,7 +204,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<long>("getAndSet", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#incrementAndGet(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#incrementAndGet(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
         /// <returns><see cref="long"/></returns>
@@ -244,7 +244,7 @@ namespace Java.Util.Concurrent.Atomic
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#newUpdater(java.lang.Class,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#newUpdater(java.lang.Class,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -259,7 +259,7 @@ namespace Java.Util.Concurrent.Atomic
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#compareAndSet(java.lang.Object,long,long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#compareAndSet(java.lang.Object,long,long)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -270,7 +270,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<bool>("compareAndSet", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#weakCompareAndSet(java.lang.Object,long,long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#weakCompareAndSet(java.lang.Object,long,long)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -281,7 +281,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<bool>("weakCompareAndSet", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#get(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#get(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <returns><see cref="long"/></returns>
@@ -290,7 +290,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecuteWithSignature<long>("get", "(Ljava/lang/Object;)J", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#lazySet(java.lang.Object,long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#lazySet(java.lang.Object,long)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -299,7 +299,7 @@ namespace Java.Util.Concurrent.Atomic
             IExecute("lazySet", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#set(java.lang.Object,long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#set(java.lang.Object,long)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -308,7 +308,7 @@ namespace Java.Util.Concurrent.Atomic
             IExecute("set", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#accumulateAndGet(java.lang.Object,long,java.util.function.LongBinaryOperator)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#accumulateAndGet(java.lang.Object,long,java.util.function.LongBinaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -319,7 +319,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<long>("accumulateAndGet", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#getAndAccumulate(java.lang.Object,long,java.util.function.LongBinaryOperator)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#getAndAccumulate(java.lang.Object,long,java.util.function.LongBinaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -330,7 +330,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<long>("getAndAccumulate", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#getAndUpdate(java.lang.Object,java.util.function.LongUnaryOperator)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#getAndUpdate(java.lang.Object,java.util.function.LongUnaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.LongUnaryOperator"/></param>
@@ -340,7 +340,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<long>("getAndUpdate", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#updateAndGet(java.lang.Object,java.util.function.LongUnaryOperator)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#updateAndGet(java.lang.Object,java.util.function.LongUnaryOperator)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="Java.Util.Function.LongUnaryOperator"/></param>
@@ -350,7 +350,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<long>("updateAndGet", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#addAndGet(java.lang.Object,long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#addAndGet(java.lang.Object,long)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -360,7 +360,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<long>("addAndGet", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#decrementAndGet(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#decrementAndGet(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <returns><see cref="long"/></returns>
@@ -369,7 +369,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecuteWithSignature<long>("decrementAndGet", "(Ljava/lang/Object;)J", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#getAndAdd(java.lang.Object,long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#getAndAdd(java.lang.Object,long)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -379,7 +379,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<long>("getAndAdd", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#getAndDecrement(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#getAndDecrement(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <returns><see cref="long"/></returns>
@@ -388,7 +388,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecuteWithSignature<long>("getAndDecrement", "(Ljava/lang/Object;)J", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#getAndIncrement(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#getAndIncrement(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <returns><see cref="long"/></returns>
@@ -397,7 +397,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecuteWithSignature<long>("getAndIncrement", "(Ljava/lang/Object;)J", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#getAndSet(java.lang.Object,long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#getAndSet(java.lang.Object,long)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -407,7 +407,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecute<long>("getAndSet", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#incrementAndGet(java.lang.Object)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/AtomicLongFieldUpdater.html#incrementAndGet(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <returns><see cref="long"/></returns>

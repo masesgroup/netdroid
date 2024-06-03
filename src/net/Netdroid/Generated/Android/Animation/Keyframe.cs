@@ -103,34 +103,6 @@ namespace Android.Animation
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/animation/Keyframe.html#getFraction()"/> <see href="https://developer.android.com/reference/android/animation/Keyframe.html#setFraction(float)"/>
-        /// </summary>
-        public float Fraction
-        {
-            get { return IExecuteWithSignature<float>("getFraction", "()F"); } set { IExecuteWithSignature("setFraction", "(F)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/animation/Keyframe.html#getInterpolator()"/> <see href="https://developer.android.com/reference/android/animation/Keyframe.html#setInterpolator(android.animation.TimeInterpolator)"/>
-        /// </summary>
-        public Android.Animation.TimeInterpolator Interpolator
-        {
-            get { return IExecuteWithSignature<Android.Animation.TimeInterpolator>("getInterpolator", "()Landroid/animation/TimeInterpolator;"); } set { IExecuteWithSignature("setInterpolator", "(Landroid/animation/TimeInterpolator;)V", value); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/animation/Keyframe.html#getType()"/> 
-        /// </summary>
-        public Java.Lang.Class Type
-        {
-            get { return IExecuteWithSignature<Java.Lang.Class>("getType", "()Ljava/lang/Class;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/animation/Keyframe.html#getValue()"/> <see href="https://developer.android.com/reference/android/animation/Keyframe.html#setValue(java.lang.Object)"/>
-        /// </summary>
-        public object Value
-        {
-            get { return IExecuteWithSignature("getValue", "()Ljava/lang/Object;"); } set { IExecuteWithSignature("setValue", "(Ljava/lang/Object;)V", value); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/animation/Keyframe.html#clone()"/>
         /// </summary>
         /// <returns><see cref="Android.Animation.Keyframe"/></returns>
@@ -139,12 +111,68 @@ namespace Android.Animation
             return IExecuteWithSignature<Android.Animation.Keyframe>("clone", "()Landroid/animation/Keyframe;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/animation/Keyframe.html#getValue()"/>
+        /// </summary>
+        /// <returns><see cref="object"/></returns>
+        public object GetValue()
+        {
+            return IExecuteWithSignature("getValue", "()Ljava/lang/Object;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/animation/Keyframe.html#setValue(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        public void SetValue(object arg0)
+        {
+            IExecuteWithSignature("setValue", "(Ljava/lang/Object;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/animation/Keyframe.html#getInterpolator()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Animation.TimeInterpolator"/></returns>
+        public Android.Animation.TimeInterpolator GetInterpolator()
+        {
+            return IExecuteWithSignature<Android.Animation.TimeInterpolator>("getInterpolator", "()Landroid/animation/TimeInterpolator;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/animation/Keyframe.html#hasValue()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool HasValue()
         {
             return IExecuteWithSignature<bool>("hasValue", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/animation/Keyframe.html#getFraction()"/>
+        /// </summary>
+        /// <returns><see cref="float"/></returns>
+        public float GetFraction()
+        {
+            return IExecuteWithSignature<float>("getFraction", "()F");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/animation/Keyframe.html#getType()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Class"/></returns>
+        public Java.Lang.Class GetType()
+        {
+            return IExecuteWithSignature<Java.Lang.Class>("getType", "()Ljava/lang/Class;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/animation/Keyframe.html#setFraction(float)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="float"/></param>
+        public void SetFraction(float arg0)
+        {
+            IExecuteWithSignature("setFraction", "(F)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/animation/Keyframe.html#setInterpolator(android.animation.TimeInterpolator)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Animation.TimeInterpolator"/></param>
+        public void SetInterpolator(Android.Animation.TimeInterpolator arg0)
+        {
+            IExecuteWithSignature("setInterpolator", "(Landroid/animation/TimeInterpolator;)V", arg0);
         }
 
         #endregion

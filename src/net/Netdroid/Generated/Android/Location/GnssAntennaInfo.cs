@@ -52,32 +52,36 @@ namespace Android.Location
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/GnssAntennaInfo.html#getCarrierFrequencyMHz()"/> 
+        /// <see href="https://developer.android.com/reference/android/location/GnssAntennaInfo.html#getPhaseCenterOffset()"/>
         /// </summary>
-        public double CarrierFrequencyMHz
+        /// <returns><see cref="Android.Location.GnssAntennaInfo.PhaseCenterOffset"/></returns>
+        public Android.Location.GnssAntennaInfo.PhaseCenterOffset GetPhaseCenterOffset()
         {
-            get { return IExecuteWithSignature<double>("getCarrierFrequencyMHz", "()D"); }
+            return IExecuteWithSignature<Android.Location.GnssAntennaInfo.PhaseCenterOffset>("getPhaseCenterOffset", "()Landroid/location/GnssAntennaInfo$PhaseCenterOffset;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/GnssAntennaInfo.html#getPhaseCenterOffset()"/> 
+        /// <see href="https://developer.android.com/reference/android/location/GnssAntennaInfo.html#getPhaseCenterVariationCorrections()"/>
         /// </summary>
-        public Android.Location.GnssAntennaInfo.PhaseCenterOffset GetPhaseCenterOffset
+        /// <returns><see cref="Android.Location.GnssAntennaInfo.SphericalCorrections"/></returns>
+        public Android.Location.GnssAntennaInfo.SphericalCorrections GetPhaseCenterVariationCorrections()
         {
-            get { return IExecuteWithSignature<Android.Location.GnssAntennaInfo.PhaseCenterOffset>("getPhaseCenterOffset", "()Landroid/location/GnssAntennaInfo$PhaseCenterOffset;"); }
+            return IExecuteWithSignature<Android.Location.GnssAntennaInfo.SphericalCorrections>("getPhaseCenterVariationCorrections", "()Landroid/location/GnssAntennaInfo$SphericalCorrections;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/GnssAntennaInfo.html#getPhaseCenterVariationCorrections()"/> 
+        /// <see href="https://developer.android.com/reference/android/location/GnssAntennaInfo.html#getSignalGainCorrections()"/>
         /// </summary>
-        public Android.Location.GnssAntennaInfo.SphericalCorrections PhaseCenterVariationCorrections
+        /// <returns><see cref="Android.Location.GnssAntennaInfo.SphericalCorrections"/></returns>
+        public Android.Location.GnssAntennaInfo.SphericalCorrections GetSignalGainCorrections()
         {
-            get { return IExecuteWithSignature<Android.Location.GnssAntennaInfo.SphericalCorrections>("getPhaseCenterVariationCorrections", "()Landroid/location/GnssAntennaInfo$SphericalCorrections;"); }
+            return IExecuteWithSignature<Android.Location.GnssAntennaInfo.SphericalCorrections>("getSignalGainCorrections", "()Landroid/location/GnssAntennaInfo$SphericalCorrections;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/location/GnssAntennaInfo.html#getSignalGainCorrections()"/> 
+        /// <see href="https://developer.android.com/reference/android/location/GnssAntennaInfo.html#getCarrierFrequencyMHz()"/>
         /// </summary>
-        public Android.Location.GnssAntennaInfo.SphericalCorrections SignalGainCorrections
+        /// <returns><see cref="double"/></returns>
+        public double GetCarrierFrequencyMHz()
         {
-            get { return IExecuteWithSignature<Android.Location.GnssAntennaInfo.SphericalCorrections>("getSignalGainCorrections", "()Landroid/location/GnssAntennaInfo$SphericalCorrections;"); }
+            return IExecuteWithSignature<double>("getCarrierFrequencyMHz", "()D");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/location/GnssAntennaInfo.html#describeContents()"/>
@@ -217,7 +221,7 @@ namespace Android.Location
             /// </summary>
             protected virtual void InitializeHandlers()
             {
-                AddEventHandler("onGnssAntennaInfoReceived", new System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.List<Android.Location.GnssAntennaInfo>>>>(OnGnssAntennaInfoReceivedEventHandler));
+                AddEventHandler("onGnssAntennaInfoReceived", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Java.Util.List<Android.Location.GnssAntennaInfo>>>>(OnGnssAntennaInfoReceivedEventHandler));
 
             }
 
@@ -225,7 +229,7 @@ namespace Android.Location
             /// Handler for <see href="https://developer.android.com/reference/android/location/GnssAntennaInfo.Listener.html#onGnssAntennaInfoReceived(java.util.List)"/>
             /// </summary>
             /// <remarks>If <see cref="OnOnGnssAntennaInfoReceived"/> has a value it takes precedence over corresponding class method</remarks>
-            public System.Action<Java.Util.List<Android.Location.GnssAntennaInfo>> OnOnGnssAntennaInfoReceived { get; set; } = null;
+            public global::System.Action<Java.Util.List<Android.Location.GnssAntennaInfo>> OnOnGnssAntennaInfoReceived { get; set; } = null;
 
             void OnGnssAntennaInfoReceivedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Java.Util.List<Android.Location.GnssAntennaInfo>>> data)
             {
@@ -331,46 +335,52 @@ namespace Android.Location
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/location/GnssAntennaInfo.PhaseCenterOffset.html#getXOffsetMm()"/> 
+            /// <see href="https://developer.android.com/reference/android/location/GnssAntennaInfo.PhaseCenterOffset.html#getXOffsetMm()"/>
             /// </summary>
-            public double XOffsetMm
+            /// <returns><see cref="double"/></returns>
+            public double GetXOffsetMm()
             {
-                get { return IExecuteWithSignature<double>("getXOffsetMm", "()D"); }
+                return IExecuteWithSignature<double>("getXOffsetMm", "()D");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/location/GnssAntennaInfo.PhaseCenterOffset.html#getXOffsetUncertaintyMm()"/> 
+            /// <see href="https://developer.android.com/reference/android/location/GnssAntennaInfo.PhaseCenterOffset.html#getXOffsetUncertaintyMm()"/>
             /// </summary>
-            public double XOffsetUncertaintyMm
+            /// <returns><see cref="double"/></returns>
+            public double GetXOffsetUncertaintyMm()
             {
-                get { return IExecuteWithSignature<double>("getXOffsetUncertaintyMm", "()D"); }
+                return IExecuteWithSignature<double>("getXOffsetUncertaintyMm", "()D");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/location/GnssAntennaInfo.PhaseCenterOffset.html#getYOffsetMm()"/> 
+            /// <see href="https://developer.android.com/reference/android/location/GnssAntennaInfo.PhaseCenterOffset.html#getYOffsetMm()"/>
             /// </summary>
-            public double YOffsetMm
+            /// <returns><see cref="double"/></returns>
+            public double GetYOffsetMm()
             {
-                get { return IExecuteWithSignature<double>("getYOffsetMm", "()D"); }
+                return IExecuteWithSignature<double>("getYOffsetMm", "()D");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/location/GnssAntennaInfo.PhaseCenterOffset.html#getYOffsetUncertaintyMm()"/> 
+            /// <see href="https://developer.android.com/reference/android/location/GnssAntennaInfo.PhaseCenterOffset.html#getYOffsetUncertaintyMm()"/>
             /// </summary>
-            public double YOffsetUncertaintyMm
+            /// <returns><see cref="double"/></returns>
+            public double GetYOffsetUncertaintyMm()
             {
-                get { return IExecuteWithSignature<double>("getYOffsetUncertaintyMm", "()D"); }
+                return IExecuteWithSignature<double>("getYOffsetUncertaintyMm", "()D");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/location/GnssAntennaInfo.PhaseCenterOffset.html#getZOffsetMm()"/> 
+            /// <see href="https://developer.android.com/reference/android/location/GnssAntennaInfo.PhaseCenterOffset.html#getZOffsetMm()"/>
             /// </summary>
-            public double ZOffsetMm
+            /// <returns><see cref="double"/></returns>
+            public double GetZOffsetMm()
             {
-                get { return IExecuteWithSignature<double>("getZOffsetMm", "()D"); }
+                return IExecuteWithSignature<double>("getZOffsetMm", "()D");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/location/GnssAntennaInfo.PhaseCenterOffset.html#getZOffsetUncertaintyMm()"/> 
+            /// <see href="https://developer.android.com/reference/android/location/GnssAntennaInfo.PhaseCenterOffset.html#getZOffsetUncertaintyMm()"/>
             /// </summary>
-            public double ZOffsetUncertaintyMm
+            /// <returns><see cref="double"/></returns>
+            public double GetZOffsetUncertaintyMm()
             {
-                get { return IExecuteWithSignature<double>("getZOffsetUncertaintyMm", "()D"); }
+                return IExecuteWithSignature<double>("getZOffsetUncertaintyMm", "()D");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/location/GnssAntennaInfo.PhaseCenterOffset.html#describeContents()"/>
@@ -436,32 +446,36 @@ namespace Android.Location
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/location/GnssAntennaInfo.SphericalCorrections.html#getCorrectionsArray()"/> 
+            /// <see href="https://developer.android.com/reference/android/location/GnssAntennaInfo.SphericalCorrections.html#getDeltaPhi()"/>
             /// </summary>
-            public double[] CorrectionsArray
+            /// <returns><see cref="double"/></returns>
+            public double GetDeltaPhi()
             {
-                get { return IExecuteWithSignatureArray<double>("getCorrectionsArray", "()[[D"); }
+                return IExecuteWithSignature<double>("getDeltaPhi", "()D");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/location/GnssAntennaInfo.SphericalCorrections.html#getCorrectionUncertaintiesArray()"/> 
+            /// <see href="https://developer.android.com/reference/android/location/GnssAntennaInfo.SphericalCorrections.html#getDeltaTheta()"/>
             /// </summary>
-            public double[] CorrectionUncertaintiesArray
+            /// <returns><see cref="double"/></returns>
+            public double GetDeltaTheta()
             {
-                get { return IExecuteWithSignatureArray<double>("getCorrectionUncertaintiesArray", "()[[D"); }
+                return IExecuteWithSignature<double>("getDeltaTheta", "()D");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/location/GnssAntennaInfo.SphericalCorrections.html#getDeltaPhi()"/> 
+            /// <see href="https://developer.android.com/reference/android/location/GnssAntennaInfo.SphericalCorrections.html#getCorrectionsArray()"/>
             /// </summary>
-            public double DeltaPhi
+            /// <returns><see cref="double"/></returns>
+            public double[] GetCorrectionsArray()
             {
-                get { return IExecuteWithSignature<double>("getDeltaPhi", "()D"); }
+                return IExecuteWithSignatureArray<double>("getCorrectionsArray", "()[[D");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/location/GnssAntennaInfo.SphericalCorrections.html#getDeltaTheta()"/> 
+            /// <see href="https://developer.android.com/reference/android/location/GnssAntennaInfo.SphericalCorrections.html#getCorrectionUncertaintiesArray()"/>
             /// </summary>
-            public double DeltaTheta
+            /// <returns><see cref="double"/></returns>
+            public double[] GetCorrectionUncertaintiesArray()
             {
-                get { return IExecuteWithSignature<double>("getDeltaTheta", "()D"); }
+                return IExecuteWithSignatureArray<double>("getCorrectionUncertaintiesArray", "()[[D");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/location/GnssAntennaInfo.SphericalCorrections.html#describeContents()"/>

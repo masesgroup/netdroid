@@ -64,20 +64,6 @@ namespace Android.Net
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/LocalServerSocket.html#getFileDescriptor()"/> 
-        /// </summary>
-        public Java.Io.FileDescriptor FileDescriptor
-        {
-            get { return IExecuteWithSignature<Java.Io.FileDescriptor>("getFileDescriptor", "()Ljava/io/FileDescriptor;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/LocalServerSocket.html#getLocalSocketAddress()"/> 
-        /// </summary>
-        public Android.Net.LocalSocketAddress LocalSocketAddress
-        {
-            get { return IExecuteWithSignature<Android.Net.LocalSocketAddress>("getLocalSocketAddress", "()Landroid/net/LocalSocketAddress;"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/LocalServerSocket.html#accept()"/>
         /// </summary>
         /// <returns><see cref="Android.Net.LocalSocket"/></returns>
@@ -85,6 +71,22 @@ namespace Android.Net
         public Android.Net.LocalSocket Accept()
         {
             return IExecuteWithSignature<Android.Net.LocalSocket>("accept", "()Landroid/net/LocalSocket;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/LocalServerSocket.html#getLocalSocketAddress()"/>
+        /// </summary>
+        /// <returns><see cref="Android.Net.LocalSocketAddress"/></returns>
+        public Android.Net.LocalSocketAddress GetLocalSocketAddress()
+        {
+            return IExecuteWithSignature<Android.Net.LocalSocketAddress>("getLocalSocketAddress", "()Landroid/net/LocalSocketAddress;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/LocalServerSocket.html#getFileDescriptor()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Io.FileDescriptor"/></returns>
+        public Java.Io.FileDescriptor GetFileDescriptor()
+        {
+            return IExecuteWithSignature<Java.Io.FileDescriptor>("getFileDescriptor", "()Ljava/io/FileDescriptor;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/LocalServerSocket.html#close()"/>

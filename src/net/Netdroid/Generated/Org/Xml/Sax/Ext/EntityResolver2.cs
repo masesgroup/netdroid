@@ -64,7 +64,7 @@ namespace Org.Xml.Sax.Ext
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/ext/EntityResolver2.html#getExternalSubset(java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/ext/EntityResolver2.html#getExternalSubset(java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -76,7 +76,7 @@ namespace Org.Xml.Sax.Ext
             return IExecute<Org.Xml.Sax.InputSource>("getExternalSubset", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/org/xml/sax/ext/EntityResolver2.html#resolveEntity(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/org/xml/sax/ext/EntityResolver2.html#resolveEntity(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>

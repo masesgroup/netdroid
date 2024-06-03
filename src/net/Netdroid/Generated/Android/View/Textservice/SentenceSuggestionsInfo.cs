@@ -70,13 +70,6 @@ namespace Android.View.Textservice
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/textservice/SentenceSuggestionsInfo.html#getSuggestionsCount()"/> 
-        /// </summary>
-        public int SuggestionsCount
-        {
-            get { return IExecuteWithSignature<int>("getSuggestionsCount", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/textservice/SentenceSuggestionsInfo.html#getSuggestionsInfoAt(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -110,6 +103,14 @@ namespace Android.View.Textservice
         public int GetOffsetAt(int arg0)
         {
             return IExecuteWithSignature<int>("getOffsetAt", "(I)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/view/textservice/SentenceSuggestionsInfo.html#getSuggestionsCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSuggestionsCount()
+        {
+            return IExecuteWithSignature<int>("getSuggestionsCount", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/textservice/SentenceSuggestionsInfo.html#writeToParcel(android.os.Parcel,int)"/>

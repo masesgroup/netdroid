@@ -33,7 +33,7 @@ namespace Android.Content.Pm
         /// <see href="https://developer.android.com/reference/android/content/pm/PermissionInfo.html#%3Cinit%3E(android.content.pm.PermissionInfo)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.Pm.PermissionInfo"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public PermissionInfo(Android.Content.Pm.PermissionInfo arg0)
             : base(arg0)
         {
@@ -61,7 +61,7 @@ namespace Android.Content.Pm
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PermissionInfo.html#protectionLevel"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public int protectionLevel { get { return IGetField<int>("protectionLevel"); } set { ISetField("protectionLevel", value); } }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PermissionInfo.html#nonLocalizedDescription"/>
@@ -170,7 +170,7 @@ namespace Android.Content.Pm
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PermissionInfo.html#PROTECTION_FLAG_SYSTEM"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int PROTECTION_FLAG_SYSTEM { get { if (!_PROTECTION_FLAG_SYSTEMReady) { _PROTECTION_FLAG_SYSTEMContent = SGetField<int>(LocalBridgeClazz, "PROTECTION_FLAG_SYSTEM"); _PROTECTION_FLAG_SYSTEMReady = true; } return _PROTECTION_FLAG_SYSTEMContent; } }
         private static int _PROTECTION_FLAG_SYSTEMContent = default;
         private static bool _PROTECTION_FLAG_SYSTEMReady = false; // this is used because in case of generics 
@@ -189,14 +189,14 @@ namespace Android.Content.Pm
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PermissionInfo.html#PROTECTION_MASK_BASE"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int PROTECTION_MASK_BASE { get { if (!_PROTECTION_MASK_BASEReady) { _PROTECTION_MASK_BASEContent = SGetField<int>(LocalBridgeClazz, "PROTECTION_MASK_BASE"); _PROTECTION_MASK_BASEReady = true; } return _PROTECTION_MASK_BASEContent; } }
         private static int _PROTECTION_MASK_BASEContent = default;
         private static bool _PROTECTION_MASK_BASEReady = false; // this is used because in case of generics 
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PermissionInfo.html#PROTECTION_MASK_FLAGS"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int PROTECTION_MASK_FLAGS { get { if (!_PROTECTION_MASK_FLAGSReady) { _PROTECTION_MASK_FLAGSContent = SGetField<int>(LocalBridgeClazz, "PROTECTION_MASK_FLAGS"); _PROTECTION_MASK_FLAGSReady = true; } return _PROTECTION_MASK_FLAGSContent; } }
         private static int _PROTECTION_MASK_FLAGSContent = default;
         private static bool _PROTECTION_MASK_FLAGSReady = false; // this is used because in case of generics 
@@ -215,7 +215,7 @@ namespace Android.Content.Pm
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PermissionInfo.html#PROTECTION_SIGNATURE_OR_SYSTEM"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int PROTECTION_SIGNATURE_OR_SYSTEM { get { if (!_PROTECTION_SIGNATURE_OR_SYSTEMReady) { _PROTECTION_SIGNATURE_OR_SYSTEMContent = SGetField<int>(LocalBridgeClazz, "PROTECTION_SIGNATURE_OR_SYSTEM"); _PROTECTION_SIGNATURE_OR_SYSTEMReady = true; } return _PROTECTION_SIGNATURE_OR_SYSTEMContent; } }
         private static int _PROTECTION_SIGNATURE_OR_SYSTEMContent = default;
         private static bool _PROTECTION_SIGNATURE_OR_SYSTEMReady = false; // this is used because in case of generics 
@@ -228,26 +228,28 @@ namespace Android.Content.Pm
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/PermissionInfo.html#getProtection()"/> 
-        /// </summary>
-        public int Protection
-        {
-            get { return IExecuteWithSignature<int>("getProtection", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/pm/PermissionInfo.html#getProtectionFlags()"/> 
-        /// </summary>
-        public int ProtectionFlags
-        {
-            get { return IExecuteWithSignature<int>("getProtectionFlags", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PermissionInfo.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PermissionInfo.html#getProtection()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetProtection()
+        {
+            return IExecuteWithSignature<int>("getProtection", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/content/pm/PermissionInfo.html#getProtectionFlags()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetProtectionFlags()
+        {
+            return IExecuteWithSignature<int>("getProtectionFlags", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/pm/PermissionInfo.html#loadDescription(android.content.pm.PackageManager)"/>

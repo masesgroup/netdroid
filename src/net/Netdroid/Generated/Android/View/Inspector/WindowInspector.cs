@@ -42,11 +42,12 @@ namespace Android.View.Inspector
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/view/inspector/WindowInspector.html#getGlobalWindowViews()"/> 
+        /// <see href="https://developer.android.com/reference/android/view/inspector/WindowInspector.html#getGlobalWindowViews()"/>
         /// </summary>
-        public static Java.Util.List<Android.View.View> GlobalWindowViews
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public static Java.Util.List<Android.View.View> GetGlobalWindowViews()
         {
-            get { return SExecuteWithSignature<Java.Util.List<Android.View.View>>(LocalBridgeClazz, "getGlobalWindowViews", "()Ljava/util/List;"); }
+            return SExecuteWithSignature<Java.Util.List<Android.View.View>>(LocalBridgeClazz, "getGlobalWindowViews", "()Ljava/util/List;");
         }
 
         #endregion

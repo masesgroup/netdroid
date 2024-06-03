@@ -34,7 +34,7 @@ namespace Android.Nfc
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <exception cref="Android.Nfc.FormatException"/>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public NdefRecord(byte[] arg0)
             : base(arg0)
         {
@@ -215,34 +215,6 @@ namespace Android.Nfc
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/nfc/NdefRecord.html#getId()"/> 
-        /// </summary>
-        public byte[] Id
-        {
-            get { return IExecuteWithSignatureArray<byte>("getId", "()[B"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/nfc/NdefRecord.html#getPayload()"/> 
-        /// </summary>
-        public byte[] Payload
-        {
-            get { return IExecuteWithSignatureArray<byte>("getPayload", "()[B"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/nfc/NdefRecord.html#getTnf()"/> 
-        /// </summary>
-        public short Tnf
-        {
-            get { return IExecuteWithSignature<short>("getTnf", "()S"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/nfc/NdefRecord.html#getType()"/> 
-        /// </summary>
-        public byte[] Type
-        {
-            get { return IExecuteWithSignatureArray<byte>("getType", "()[B"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/nfc/NdefRecord.html#toUri()"/>
         /// </summary>
         /// <returns><see cref="Android.Net.Uri"/></returns>
@@ -251,10 +223,34 @@ namespace Android.Nfc
             return IExecuteWithSignature<Android.Net.Uri>("toUri", "()Landroid/net/Uri;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/NdefRecord.html#getId()"/>
+        /// </summary>
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetId()
+        {
+            return IExecuteWithSignatureArray<byte>("getId", "()[B");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/NdefRecord.html#getPayload()"/>
+        /// </summary>
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetPayload()
+        {
+            return IExecuteWithSignatureArray<byte>("getPayload", "()[B");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/NdefRecord.html#getType()"/>
+        /// </summary>
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetType()
+        {
+            return IExecuteWithSignatureArray<byte>("getType", "()[B");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/nfc/NdefRecord.html#toByteArray()"/>
         /// </summary>
         /// <returns><see cref="byte"/></returns>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public byte[] ToByteArray()
         {
             return IExecuteWithSignatureArray<byte>("toByteArray", "()[B");
@@ -274,6 +270,14 @@ namespace Android.Nfc
         public Java.Lang.String ToMimeType()
         {
             return IExecuteWithSignature<Java.Lang.String>("toMimeType", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/nfc/NdefRecord.html#getTnf()"/>
+        /// </summary>
+        /// <returns><see cref="short"/></returns>
+        public short GetTnf()
+        {
+            return IExecuteWithSignature<short>("getTnf", "()S");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/nfc/NdefRecord.html#writeToParcel(android.os.Parcel,int)"/>

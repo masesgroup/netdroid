@@ -202,69 +202,6 @@ namespace Android.Bluetooth
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothCodecConfig.html#getBitsPerSample()"/> 
-        /// </summary>
-        public int BitsPerSample
-        {
-            get { return IExecuteWithSignature<int>("getBitsPerSample", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothCodecConfig.html#getChannelMode()"/> 
-        /// </summary>
-        public int ChannelMode
-        {
-            get { return IExecuteWithSignature<int>("getChannelMode", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothCodecConfig.html#getCodecPriority()"/> 
-        /// </summary>
-        public int CodecPriority
-        {
-            get { return IExecuteWithSignature<int>("getCodecPriority", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothCodecConfig.html#getCodecSpecific1()"/> 
-        /// </summary>
-        public long CodecSpecific1
-        {
-            get { return IExecuteWithSignature<long>("getCodecSpecific1", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothCodecConfig.html#getCodecSpecific2()"/> 
-        /// </summary>
-        public long CodecSpecific2
-        {
-            get { return IExecuteWithSignature<long>("getCodecSpecific2", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothCodecConfig.html#getCodecSpecific3()"/> 
-        /// </summary>
-        public long CodecSpecific3
-        {
-            get { return IExecuteWithSignature<long>("getCodecSpecific3", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothCodecConfig.html#getCodecSpecific4()"/> 
-        /// </summary>
-        public long CodecSpecific4
-        {
-            get { return IExecuteWithSignature<long>("getCodecSpecific4", "()J"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothCodecConfig.html#getCodecType()"/> 
-        /// </summary>
-        public int CodecType
-        {
-            get { return IExecuteWithSignature<int>("getCodecType", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothCodecConfig.html#getSampleRate()"/> 
-        /// </summary>
-        public int SampleRate
-        {
-            get { return IExecuteWithSignature<int>("getSampleRate", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothCodecConfig.html#isMandatoryCodec()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
@@ -279,6 +216,78 @@ namespace Android.Bluetooth
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothCodecConfig.html#getBitsPerSample()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetBitsPerSample()
+        {
+            return IExecuteWithSignature<int>("getBitsPerSample", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothCodecConfig.html#getChannelMode()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetChannelMode()
+        {
+            return IExecuteWithSignature<int>("getChannelMode", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothCodecConfig.html#getCodecPriority()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCodecPriority()
+        {
+            return IExecuteWithSignature<int>("getCodecPriority", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothCodecConfig.html#getCodecType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetCodecType()
+        {
+            return IExecuteWithSignature<int>("getCodecType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothCodecConfig.html#getSampleRate()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSampleRate()
+        {
+            return IExecuteWithSignature<int>("getSampleRate", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothCodecConfig.html#getCodecSpecific1()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetCodecSpecific1()
+        {
+            return IExecuteWithSignature<long>("getCodecSpecific1", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothCodecConfig.html#getCodecSpecific2()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetCodecSpecific2()
+        {
+            return IExecuteWithSignature<long>("getCodecSpecific2", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothCodecConfig.html#getCodecSpecific3()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetCodecSpecific3()
+        {
+            return IExecuteWithSignature<long>("getCodecSpecific3", "()J");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothCodecConfig.html#getCodecSpecific4()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetCodecSpecific4()
+        {
+            return IExecuteWithSignature<long>("getCodecSpecific4", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothCodecConfig.html#writeToParcel(android.os.Parcel,int)"/>

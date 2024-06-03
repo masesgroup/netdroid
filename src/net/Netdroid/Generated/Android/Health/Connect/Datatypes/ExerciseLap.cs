@@ -46,25 +46,28 @@ namespace Android.Health.Connect.Datatypes
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/ExerciseLap.html#getEndTime()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/ExerciseLap.html#getLength()"/>
         /// </summary>
-        public Java.Time.Instant EndTime
+        /// <returns><see cref="Android.Health.Connect.Datatypes.Units.Length"/></returns>
+        public Android.Health.Connect.Datatypes.Units.Length GetLength()
         {
-            get { return IExecuteWithSignature<Java.Time.Instant>("getEndTime", "()Ljava/time/Instant;"); }
+            return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Length>("getLength", "()Landroid/health/connect/datatypes/units/Length;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/ExerciseLap.html#getLength()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/ExerciseLap.html#getEndTime()"/>
         /// </summary>
-        public Android.Health.Connect.Datatypes.Units.Length Length
+        /// <returns><see cref="Java.Time.Instant"/></returns>
+        public Java.Time.Instant GetEndTime()
         {
-            get { return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Length>("getLength", "()Landroid/health/connect/datatypes/units/Length;"); }
+            return IExecuteWithSignature<Java.Time.Instant>("getEndTime", "()Ljava/time/Instant;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/ExerciseLap.html#getStartTime()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/ExerciseLap.html#getStartTime()"/>
         /// </summary>
-        public Java.Time.Instant StartTime
+        /// <returns><see cref="Java.Time.Instant"/></returns>
+        public Java.Time.Instant GetStartTime()
         {
-            get { return IExecuteWithSignature<Java.Time.Instant>("getStartTime", "()Ljava/time/Instant;"); }
+            return IExecuteWithSignature<Java.Time.Instant>("getStartTime", "()Ljava/time/Instant;");
         }
 
         #endregion

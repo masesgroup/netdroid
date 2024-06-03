@@ -38,25 +38,25 @@ namespace Java.Nio.File.Attribute
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/AclEntryFlag.html#DIRECTORY_INHERIT"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/attribute/AclEntryFlag.html#DIRECTORY_INHERIT"/>
         /// </summary>
         public static Java.Nio.File.Attribute.AclEntryFlag DIRECTORY_INHERIT { get { if (!_DIRECTORY_INHERITReady) { _DIRECTORY_INHERITContent = SGetField<Java.Nio.File.Attribute.AclEntryFlag>(LocalBridgeClazz, "DIRECTORY_INHERIT"); _DIRECTORY_INHERITReady = true; } return _DIRECTORY_INHERITContent; } }
         private static Java.Nio.File.Attribute.AclEntryFlag _DIRECTORY_INHERITContent = default;
         private static bool _DIRECTORY_INHERITReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/AclEntryFlag.html#FILE_INHERIT"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/attribute/AclEntryFlag.html#FILE_INHERIT"/>
         /// </summary>
         public static Java.Nio.File.Attribute.AclEntryFlag FILE_INHERIT { get { if (!_FILE_INHERITReady) { _FILE_INHERITContent = SGetField<Java.Nio.File.Attribute.AclEntryFlag>(LocalBridgeClazz, "FILE_INHERIT"); _FILE_INHERITReady = true; } return _FILE_INHERITContent; } }
         private static Java.Nio.File.Attribute.AclEntryFlag _FILE_INHERITContent = default;
         private static bool _FILE_INHERITReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/AclEntryFlag.html#INHERIT_ONLY"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/attribute/AclEntryFlag.html#INHERIT_ONLY"/>
         /// </summary>
         public static Java.Nio.File.Attribute.AclEntryFlag INHERIT_ONLY { get { if (!_INHERIT_ONLYReady) { _INHERIT_ONLYContent = SGetField<Java.Nio.File.Attribute.AclEntryFlag>(LocalBridgeClazz, "INHERIT_ONLY"); _INHERIT_ONLYReady = true; } return _INHERIT_ONLYContent; } }
         private static Java.Nio.File.Attribute.AclEntryFlag _INHERIT_ONLYContent = default;
         private static bool _INHERIT_ONLYReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/AclEntryFlag.html#NO_PROPAGATE_INHERIT"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/attribute/AclEntryFlag.html#NO_PROPAGATE_INHERIT"/>
         /// </summary>
         public static Java.Nio.File.Attribute.AclEntryFlag NO_PROPAGATE_INHERIT { get { if (!_NO_PROPAGATE_INHERITReady) { _NO_PROPAGATE_INHERITContent = SGetField<Java.Nio.File.Attribute.AclEntryFlag>(LocalBridgeClazz, "NO_PROPAGATE_INHERIT"); _NO_PROPAGATE_INHERITReady = true; } return _NO_PROPAGATE_INHERITContent; } }
         private static Java.Nio.File.Attribute.AclEntryFlag _NO_PROPAGATE_INHERITContent = default;
@@ -66,7 +66,7 @@ namespace Java.Nio.File.Attribute
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/AclEntryFlag.html#valueOf(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/attribute/AclEntryFlag.html#valueOf(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Nio.File.Attribute.AclEntryFlag"/></returns>
@@ -75,7 +75,7 @@ namespace Java.Nio.File.Attribute
             return SExecuteWithSignature<Java.Nio.File.Attribute.AclEntryFlag>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/nio/file/attribute/AclEntryFlag;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/file/attribute/AclEntryFlag.html#values()"/>
+        /// <see href="https://developer.android.com/reference/java/nio/file/attribute/AclEntryFlag.html#values()"/>
         /// </summary>
         /// <returns><see cref="Java.Nio.File.Attribute.AclEntryFlag"/></returns>
         public static Java.Nio.File.Attribute.AclEntryFlag[] Values()

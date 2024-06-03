@@ -38,19 +38,19 @@ namespace Java.Time.Format
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/format/ResolverStyle.html#LENIENT"/>
+        /// <see href="https://developer.android.com/reference/java/time/format/ResolverStyle.html#LENIENT"/>
         /// </summary>
         public static Java.Time.Format.ResolverStyle LENIENT { get { if (!_LENIENTReady) { _LENIENTContent = SGetField<Java.Time.Format.ResolverStyle>(LocalBridgeClazz, "LENIENT"); _LENIENTReady = true; } return _LENIENTContent; } }
         private static Java.Time.Format.ResolverStyle _LENIENTContent = default;
         private static bool _LENIENTReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/format/ResolverStyle.html#SMART"/>
+        /// <see href="https://developer.android.com/reference/java/time/format/ResolverStyle.html#SMART"/>
         /// </summary>
         public static Java.Time.Format.ResolverStyle SMART { get { if (!_SMARTReady) { _SMARTContent = SGetField<Java.Time.Format.ResolverStyle>(LocalBridgeClazz, "SMART"); _SMARTReady = true; } return _SMARTContent; } }
         private static Java.Time.Format.ResolverStyle _SMARTContent = default;
         private static bool _SMARTReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/format/ResolverStyle.html#STRICT"/>
+        /// <see href="https://developer.android.com/reference/java/time/format/ResolverStyle.html#STRICT"/>
         /// </summary>
         public static Java.Time.Format.ResolverStyle STRICT { get { if (!_STRICTReady) { _STRICTContent = SGetField<Java.Time.Format.ResolverStyle>(LocalBridgeClazz, "STRICT"); _STRICTReady = true; } return _STRICTContent; } }
         private static Java.Time.Format.ResolverStyle _STRICTContent = default;
@@ -60,7 +60,7 @@ namespace Java.Time.Format
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/format/ResolverStyle.html#valueOf(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/time/format/ResolverStyle.html#valueOf(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Time.Format.ResolverStyle"/></returns>
@@ -69,7 +69,7 @@ namespace Java.Time.Format
             return SExecuteWithSignature<Java.Time.Format.ResolverStyle>(LocalBridgeClazz, "valueOf", "(Ljava/lang/String;)Ljava/time/format/ResolverStyle;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/format/ResolverStyle.html#values()"/>
+        /// <see href="https://developer.android.com/reference/java/time/format/ResolverStyle.html#values()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.Format.ResolverStyle"/></returns>
         public static Java.Time.Format.ResolverStyle[] Values()

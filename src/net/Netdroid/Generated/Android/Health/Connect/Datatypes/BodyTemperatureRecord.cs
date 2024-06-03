@@ -46,18 +46,20 @@ namespace Android.Health.Connect.Datatypes
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/BodyTemperatureRecord.html#getMeasurementLocation()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/BodyTemperatureRecord.html#getTemperature()"/>
         /// </summary>
-        public int MeasurementLocation
+        /// <returns><see cref="Android.Health.Connect.Datatypes.Units.Temperature"/></returns>
+        public Android.Health.Connect.Datatypes.Units.Temperature GetTemperature()
         {
-            get { return IExecuteWithSignature<int>("getMeasurementLocation", "()I"); }
+            return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Temperature>("getTemperature", "()Landroid/health/connect/datatypes/units/Temperature;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/BodyTemperatureRecord.html#getTemperature()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/datatypes/BodyTemperatureRecord.html#getMeasurementLocation()"/>
         /// </summary>
-        public Android.Health.Connect.Datatypes.Units.Temperature Temperature
+        /// <returns><see cref="int"/></returns>
+        public int GetMeasurementLocation()
         {
-            get { return IExecuteWithSignature<Android.Health.Connect.Datatypes.Units.Temperature>("getTemperature", "()Landroid/health/connect/datatypes/units/Temperature;"); }
+            return IExecuteWithSignature<int>("getMeasurementLocation", "()I");
         }
 
         #endregion

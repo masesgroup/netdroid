@@ -38,19 +38,19 @@ namespace Java.Nio.Charset
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/charset/CodingErrorAction.html#IGNORE"/>
+        /// <see href="https://developer.android.com/reference/java/nio/charset/CodingErrorAction.html#IGNORE"/>
         /// </summary>
         public static Java.Nio.Charset.CodingErrorAction IGNORE { get { if (!_IGNOREReady) { _IGNOREContent = SGetField<Java.Nio.Charset.CodingErrorAction>(LocalBridgeClazz, "IGNORE"); _IGNOREReady = true; } return _IGNOREContent; } }
         private static Java.Nio.Charset.CodingErrorAction _IGNOREContent = default;
         private static bool _IGNOREReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/charset/CodingErrorAction.html#REPLACE"/>
+        /// <see href="https://developer.android.com/reference/java/nio/charset/CodingErrorAction.html#REPLACE"/>
         /// </summary>
         public static Java.Nio.Charset.CodingErrorAction REPLACE { get { if (!_REPLACEReady) { _REPLACEContent = SGetField<Java.Nio.Charset.CodingErrorAction>(LocalBridgeClazz, "REPLACE"); _REPLACEReady = true; } return _REPLACEContent; } }
         private static Java.Nio.Charset.CodingErrorAction _REPLACEContent = default;
         private static bool _REPLACEReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/nio/charset/CodingErrorAction.html#REPORT"/>
+        /// <see href="https://developer.android.com/reference/java/nio/charset/CodingErrorAction.html#REPORT"/>
         /// </summary>
         public static Java.Nio.Charset.CodingErrorAction REPORT { get { if (!_REPORTReady) { _REPORTContent = SGetField<Java.Nio.Charset.CodingErrorAction>(LocalBridgeClazz, "REPORT"); _REPORTReady = true; } return _REPORTContent; } }
         private static Java.Nio.Charset.CodingErrorAction _REPORTContent = default;

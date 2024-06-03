@@ -130,53 +130,60 @@ namespace Android.Widget
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Spinner.html#getDropDownHorizontalOffset()"/> <see href="https://developer.android.com/reference/android/widget/Spinner.html#setDropDownHorizontalOffset(int)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/Spinner.html#getPopupContext()"/>
         /// </summary>
-        public int DropDownHorizontalOffset
+        /// <returns><see cref="Android.Content.Context"/></returns>
+        public Android.Content.Context GetPopupContext()
         {
-            get { return IExecuteWithSignature<int>("getDropDownHorizontalOffset", "()I"); } set { IExecuteWithSignature("setDropDownHorizontalOffset", "(I)V", value); }
+            return IExecuteWithSignature<Android.Content.Context>("getPopupContext", "()Landroid/content/Context;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Spinner.html#getDropDownVerticalOffset()"/> <see href="https://developer.android.com/reference/android/widget/Spinner.html#setDropDownVerticalOffset(int)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/Spinner.html#getPopupBackground()"/>
         /// </summary>
-        public int DropDownVerticalOffset
+        /// <returns><see cref="Android.Graphics.Drawable.Drawable"/></returns>
+        public Android.Graphics.Drawable.Drawable GetPopupBackground()
         {
-            get { return IExecuteWithSignature<int>("getDropDownVerticalOffset", "()I"); } set { IExecuteWithSignature("setDropDownVerticalOffset", "(I)V", value); }
+            return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getPopupBackground", "()Landroid/graphics/drawable/Drawable;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Spinner.html#getDropDownWidth()"/> <see href="https://developer.android.com/reference/android/widget/Spinner.html#setDropDownWidth(int)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/Spinner.html#getDropDownHorizontalOffset()"/>
         /// </summary>
-        public int DropDownWidth
+        /// <returns><see cref="int"/></returns>
+        public int GetDropDownHorizontalOffset()
         {
-            get { return IExecuteWithSignature<int>("getDropDownWidth", "()I"); } set { IExecuteWithSignature("setDropDownWidth", "(I)V", value); }
+            return IExecuteWithSignature<int>("getDropDownHorizontalOffset", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Spinner.html#getGravity()"/> <see href="https://developer.android.com/reference/android/widget/Spinner.html#setGravity(int)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/Spinner.html#getDropDownVerticalOffset()"/>
         /// </summary>
-        public int Gravity
+        /// <returns><see cref="int"/></returns>
+        public int GetDropDownVerticalOffset()
         {
-            get { return IExecuteWithSignature<int>("getGravity", "()I"); } set { IExecuteWithSignature("setGravity", "(I)V", value); }
+            return IExecuteWithSignature<int>("getDropDownVerticalOffset", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Spinner.html#getPopupBackground()"/> 
+        /// <see href="https://developer.android.com/reference/android/widget/Spinner.html#getDropDownWidth()"/>
         /// </summary>
-        public Android.Graphics.Drawable.Drawable PopupBackground
+        /// <returns><see cref="int"/></returns>
+        public int GetDropDownWidth()
         {
-            get { return IExecuteWithSignature<Android.Graphics.Drawable.Drawable>("getPopupBackground", "()Landroid/graphics/drawable/Drawable;"); }
+            return IExecuteWithSignature<int>("getDropDownWidth", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Spinner.html#getPopupContext()"/> 
+        /// <see href="https://developer.android.com/reference/android/widget/Spinner.html#getGravity()"/>
         /// </summary>
-        public Android.Content.Context PopupContext
+        /// <returns><see cref="int"/></returns>
+        public int GetGravity()
         {
-            get { return IExecuteWithSignature<Android.Content.Context>("getPopupContext", "()Landroid/content/Context;"); }
+            return IExecuteWithSignature<int>("getGravity", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/widget/Spinner.html#getPrompt()"/> <see href="https://developer.android.com/reference/android/widget/Spinner.html#setPrompt(java.lang.CharSequence)"/>
+        /// <see href="https://developer.android.com/reference/android/widget/Spinner.html#getPrompt()"/>
         /// </summary>
-        public Java.Lang.CharSequence Prompt
+        /// <returns><see cref="Java.Lang.CharSequence"/></returns>
+        public Java.Lang.CharSequence GetPrompt()
         {
-            get { return IExecuteWithSignature<Java.Lang.CharSequence>("getPrompt", "()Ljava/lang/CharSequence;"); } set { IExecuteWithSignature("setPrompt", "(Ljava/lang/CharSequence;)V", value); }
+            return IExecuteWithSignature<Java.Lang.CharSequence>("getPrompt", "()Ljava/lang/CharSequence;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/Spinner.html#onClick(android.content.DialogInterface,int)"/>
@@ -186,6 +193,38 @@ namespace Android.Widget
         public void OnClick(Android.Content.DialogInterface arg0, int arg1)
         {
             IExecute("onClick", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Spinner.html#setDropDownHorizontalOffset(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetDropDownHorizontalOffset(int arg0)
+        {
+            IExecuteWithSignature("setDropDownHorizontalOffset", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Spinner.html#setDropDownVerticalOffset(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetDropDownVerticalOffset(int arg0)
+        {
+            IExecuteWithSignature("setDropDownVerticalOffset", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Spinner.html#setDropDownWidth(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetDropDownWidth(int arg0)
+        {
+            IExecuteWithSignature("setDropDownWidth", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Spinner.html#setGravity(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        public void SetGravity(int arg0)
+        {
+            IExecuteWithSignature("setGravity", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/Spinner.html#setPopupBackgroundDrawable(android.graphics.drawable.Drawable)"/>
@@ -202,6 +241,14 @@ namespace Android.Widget
         public void SetPopupBackgroundResource(int arg0)
         {
             IExecuteWithSignature("setPopupBackgroundResource", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/Spinner.html#setPrompt(java.lang.CharSequence)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
+        public void SetPrompt(Java.Lang.CharSequence arg0)
+        {
+            IExecuteWithSignature("setPrompt", "(Ljava/lang/CharSequence;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/Spinner.html#setPromptId(int)"/>

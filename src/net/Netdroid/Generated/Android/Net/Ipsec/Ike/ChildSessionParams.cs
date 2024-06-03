@@ -46,39 +46,44 @@ namespace Android.Net.Ipsec.Ike
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/ChildSessionParams.html#getChildSaProposals()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/ChildSessionParams.html#getHardLifetimeSeconds()"/>
         /// </summary>
-        public Java.Util.List<Android.Net.Ipsec.Ike.ChildSaProposal> ChildSaProposals
+        /// <returns><see cref="int"/></returns>
+        public int GetHardLifetimeSeconds()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Net.Ipsec.Ike.ChildSaProposal>>("getChildSaProposals", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<int>("getHardLifetimeSeconds", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/ChildSessionParams.html#getHardLifetimeSeconds()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/ChildSessionParams.html#getSoftLifetimeSeconds()"/>
         /// </summary>
-        public int HardLifetimeSeconds
+        /// <returns><see cref="int"/></returns>
+        public int GetSoftLifetimeSeconds()
         {
-            get { return IExecuteWithSignature<int>("getHardLifetimeSeconds", "()I"); }
+            return IExecuteWithSignature<int>("getSoftLifetimeSeconds", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/ChildSessionParams.html#getInboundTrafficSelectors()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/ChildSessionParams.html#getChildSaProposals()"/>
         /// </summary>
-        public Java.Util.List<Android.Net.Ipsec.Ike.IkeTrafficSelector> InboundTrafficSelectors
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Net.Ipsec.Ike.ChildSaProposal> GetChildSaProposals()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Net.Ipsec.Ike.IkeTrafficSelector>>("getInboundTrafficSelectors", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Java.Util.List<Android.Net.Ipsec.Ike.ChildSaProposal>>("getChildSaProposals", "()Ljava/util/List;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/ChildSessionParams.html#getOutboundTrafficSelectors()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/ChildSessionParams.html#getInboundTrafficSelectors()"/>
         /// </summary>
-        public Java.Util.List<Android.Net.Ipsec.Ike.IkeTrafficSelector> OutboundTrafficSelectors
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Net.Ipsec.Ike.IkeTrafficSelector> GetInboundTrafficSelectors()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Net.Ipsec.Ike.IkeTrafficSelector>>("getOutboundTrafficSelectors", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Java.Util.List<Android.Net.Ipsec.Ike.IkeTrafficSelector>>("getInboundTrafficSelectors", "()Ljava/util/List;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/ChildSessionParams.html#getSoftLifetimeSeconds()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/ipsec/ike/ChildSessionParams.html#getOutboundTrafficSelectors()"/>
         /// </summary>
-        public int SoftLifetimeSeconds
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Net.Ipsec.Ike.IkeTrafficSelector> GetOutboundTrafficSelectors()
         {
-            get { return IExecuteWithSignature<int>("getSoftLifetimeSeconds", "()I"); }
+            return IExecuteWithSignature<Java.Util.List<Android.Net.Ipsec.Ike.IkeTrafficSelector>>("getOutboundTrafficSelectors", "()Ljava/util/List;");
         }
 
         #endregion

@@ -30,7 +30,7 @@ namespace Java.Io
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/FileOutputStream.html#%3Cinit%3E(java.io.File,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/io/FileOutputStream.html#%3Cinit%3E(java.io.File,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -40,7 +40,7 @@ namespace Java.Io
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/FileOutputStream.html#%3Cinit%3E(java.io.File)"/>
+        /// <see href="https://developer.android.com/reference/java/io/FileOutputStream.html#%3Cinit%3E(java.io.File)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.File"/></param>
         /// <exception cref="Java.Io.FileNotFoundException"/>
@@ -49,7 +49,7 @@ namespace Java.Io
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/FileOutputStream.html#%3Cinit%3E(java.io.FileDescriptor)"/>
+        /// <see href="https://developer.android.com/reference/java/io/FileOutputStream.html#%3Cinit%3E(java.io.FileDescriptor)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.FileDescriptor"/></param>
         public FileOutputStream(Java.Io.FileDescriptor arg0)
@@ -57,7 +57,7 @@ namespace Java.Io
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/FileOutputStream.html#%3Cinit%3E(java.lang.String,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/io/FileOutputStream.html#%3Cinit%3E(java.lang.String,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -67,7 +67,7 @@ namespace Java.Io
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/FileOutputStream.html#%3Cinit%3E(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/io/FileOutputStream.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Io.FileNotFoundException"/>
@@ -92,18 +92,21 @@ namespace Java.Io
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/FileOutputStream.html#getChannel()"/> 
+        /// <see href="https://developer.android.com/reference/java/io/FileOutputStream.html#getFD()"/>
         /// </summary>
-        public Java.Nio.Channels.FileChannel Channel
+        /// <returns><see cref="Java.Io.FileDescriptor"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public Java.Io.FileDescriptor GetFD()
         {
-            get { return IExecuteWithSignature<Java.Nio.Channels.FileChannel>("getChannel", "()Ljava/nio/channels/FileChannel;"); }
+            return IExecuteWithSignature<Java.Io.FileDescriptor>("getFD", "()Ljava/io/FileDescriptor;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/FileOutputStream.html#getFD()"/> 
+        /// <see href="https://developer.android.com/reference/java/io/FileOutputStream.html#getChannel()"/>
         /// </summary>
-        public Java.Io.FileDescriptor FD
+        /// <returns><see cref="Java.Nio.Channels.FileChannel"/></returns>
+        public Java.Nio.Channels.FileChannel GetChannel()
         {
-            get { return IExecuteWithSignature<Java.Io.FileDescriptor>("getFD", "()Ljava/io/FileDescriptor;"); }
+            return IExecuteWithSignature<Java.Nio.Channels.FileChannel>("getChannel", "()Ljava/nio/channels/FileChannel;");
         }
 
         #endregion

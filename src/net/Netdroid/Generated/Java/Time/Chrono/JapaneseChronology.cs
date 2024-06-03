@@ -42,7 +42,7 @@ namespace Java.Time.Chrono
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/JapaneseChronology.html#INSTANCE"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/JapaneseChronology.html#INSTANCE"/>
         /// </summary>
         public static Java.Time.Chrono.JapaneseChronology INSTANCE { get { if (!_INSTANCEReady) { _INSTANCEContent = SGetField<Java.Time.Chrono.JapaneseChronology>(LocalBridgeClazz, "INSTANCE"); _INSTANCEReady = true; } return _INSTANCEContent; } }
         private static Java.Time.Chrono.JapaneseChronology _INSTANCEContent = default;

@@ -50,7 +50,7 @@ namespace Java.Io
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/Reader.html#nullReader()"/>
+        /// <see href="https://developer.android.com/reference/java/io/Reader.html#nullReader()"/>
         /// </summary>
         /// <returns><see cref="Java.Io.Reader"/></returns>
         public static Java.Io.Reader NullReader()
@@ -62,7 +62,7 @@ namespace Java.Io
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/Reader.html#read(char[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/io/Reader.html#read(char[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -74,7 +74,7 @@ namespace Java.Io
             return IExecute<int>("read", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/Reader.html#close()"/>
+        /// <see href="https://developer.android.com/reference/java/io/Reader.html#close()"/>
         /// </summary>
         /// <exception cref="Java.Io.IOException"/>
         public void Close()
@@ -82,7 +82,7 @@ namespace Java.Io
             IExecuteWithSignature("close", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/Reader.html#markSupported()"/>
+        /// <see href="https://developer.android.com/reference/java/io/Reader.html#markSupported()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool MarkSupported()
@@ -90,7 +90,7 @@ namespace Java.Io
             return IExecuteWithSignature<bool>("markSupported", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/Reader.html#ready()"/>
+        /// <see href="https://developer.android.com/reference/java/io/Reader.html#ready()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -99,7 +99,7 @@ namespace Java.Io
             return IExecuteWithSignature<bool>("ready", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/Reader.html#read()"/>
+        /// <see href="https://developer.android.com/reference/java/io/Reader.html#read()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -108,7 +108,7 @@ namespace Java.Io
             return IExecuteWithSignature<int>("read", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/Reader.html#read(char[])"/>
+        /// <see href="https://developer.android.com/reference/java/io/Reader.html#read(char[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <returns><see cref="int"/></returns>
@@ -118,7 +118,7 @@ namespace Java.Io
             return IExecuteWithSignature<int>("read", "([C)I", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/Reader.html#read(java.nio.CharBuffer)"/>
+        /// <see href="https://developer.android.com/reference/java/io/Reader.html#read(java.nio.CharBuffer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.CharBuffer"/></param>
         /// <returns><see cref="int"/></returns>
@@ -128,7 +128,7 @@ namespace Java.Io
             return IExecuteWithSignature<int>("read", "(Ljava/nio/CharBuffer;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/Reader.html#skip(long)"/>
+        /// <see href="https://developer.android.com/reference/java/io/Reader.html#skip(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="long"/></returns>
@@ -138,7 +138,7 @@ namespace Java.Io
             return IExecuteWithSignature<long>("skip", "(J)J", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/Reader.html#transferTo(java.io.Writer)"/>
+        /// <see href="https://developer.android.com/reference/java/io/Reader.html#transferTo(java.io.Writer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.Writer"/></param>
         /// <returns><see cref="long"/></returns>
@@ -148,7 +148,7 @@ namespace Java.Io
             return IExecuteWithSignature<long>("transferTo", "(Ljava/io/Writer;)J", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/Reader.html#mark(int)"/>
+        /// <see href="https://developer.android.com/reference/java/io/Reader.html#mark(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <exception cref="Java.Io.IOException"/>
@@ -157,7 +157,7 @@ namespace Java.Io
             IExecuteWithSignature("mark", "(I)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/Reader.html#reset()"/>
+        /// <see href="https://developer.android.com/reference/java/io/Reader.html#reset()"/>
         /// </summary>
         /// <exception cref="Java.Io.IOException"/>
         public void Reset()

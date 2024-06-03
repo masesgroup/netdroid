@@ -46,11 +46,12 @@ namespace Android.Health.Connect
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/ReadRecordsRequestUsingIds.html#getRecordIdFilters()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/ReadRecordsRequestUsingIds.html#getRecordIdFilters()"/>
         /// </summary>
-        public Java.Util.List RecordIdFilters
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List GetRecordIdFilters()
         {
-            get { return IExecuteWithSignature<Java.Util.List>("getRecordIdFilters", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Java.Util.List>("getRecordIdFilters", "()Ljava/util/List;");
         }
 
         #endregion
@@ -222,11 +223,12 @@ namespace Android.Health.Connect
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/ReadRecordsRequestUsingIds.html#getRecordIdFilters()"/> 
+        /// <see href="https://developer.android.com/reference/android/health/connect/ReadRecordsRequestUsingIds.html#getRecordIdFilters()"/>
         /// </summary>
-        public Java.Util.List<Android.Health.Connect.RecordIdFilter> RecordIdFilters
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Health.Connect.RecordIdFilter> GetRecordIdFilters()
         {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Health.Connect.RecordIdFilter>>("getRecordIdFilters", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Java.Util.List<Android.Health.Connect.RecordIdFilter>>("getRecordIdFilters", "()Ljava/util/List;");
         }
 
         #endregion

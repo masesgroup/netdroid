@@ -52,109 +52,44 @@ namespace Android.Bluetooth.Le
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/le/ScanFilter.html#getAdvertisingData()"/> 
+        /// <see href="https://developer.android.com/reference/android/bluetooth/le/ScanFilter.html#getServiceDataUuid()"/>
         /// </summary>
-        public byte[] AdvertisingData
+        /// <returns><see cref="Android.Os.ParcelUuid"/></returns>
+        public Android.Os.ParcelUuid GetServiceDataUuid()
         {
-            get { return IExecuteWithSignatureArray<byte>("getAdvertisingData", "()[B"); }
+            return IExecuteWithSignature<Android.Os.ParcelUuid>("getServiceDataUuid", "()Landroid/os/ParcelUuid;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/le/ScanFilter.html#getAdvertisingDataMask()"/> 
+        /// <see href="https://developer.android.com/reference/android/bluetooth/le/ScanFilter.html#getServiceSolicitationUuid()"/>
         /// </summary>
-        public byte[] AdvertisingDataMask
+        /// <returns><see cref="Android.Os.ParcelUuid"/></returns>
+        public Android.Os.ParcelUuid GetServiceSolicitationUuid()
         {
-            get { return IExecuteWithSignatureArray<byte>("getAdvertisingDataMask", "()[B"); }
+            return IExecuteWithSignature<Android.Os.ParcelUuid>("getServiceSolicitationUuid", "()Landroid/os/ParcelUuid;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/le/ScanFilter.html#getAdvertisingDataType()"/> 
+        /// <see href="https://developer.android.com/reference/android/bluetooth/le/ScanFilter.html#getServiceSolicitationUuidMask()"/>
         /// </summary>
-        public int AdvertisingDataType
+        /// <returns><see cref="Android.Os.ParcelUuid"/></returns>
+        public Android.Os.ParcelUuid GetServiceSolicitationUuidMask()
         {
-            get { return IExecuteWithSignature<int>("getAdvertisingDataType", "()I"); }
+            return IExecuteWithSignature<Android.Os.ParcelUuid>("getServiceSolicitationUuidMask", "()Landroid/os/ParcelUuid;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/le/ScanFilter.html#getDeviceAddress()"/> 
+        /// <see href="https://developer.android.com/reference/android/bluetooth/le/ScanFilter.html#getServiceUuid()"/>
         /// </summary>
-        public Java.Lang.String DeviceAddress
+        /// <returns><see cref="Android.Os.ParcelUuid"/></returns>
+        public Android.Os.ParcelUuid GetServiceUuid()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDeviceAddress", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Android.Os.ParcelUuid>("getServiceUuid", "()Landroid/os/ParcelUuid;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/le/ScanFilter.html#getDeviceName()"/> 
+        /// <see href="https://developer.android.com/reference/android/bluetooth/le/ScanFilter.html#getServiceUuidMask()"/>
         /// </summary>
-        public Java.Lang.String DeviceName
+        /// <returns><see cref="Android.Os.ParcelUuid"/></returns>
+        public Android.Os.ParcelUuid GetServiceUuidMask()
         {
-            get { return IExecuteWithSignature<Java.Lang.String>("getDeviceName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/le/ScanFilter.html#getManufacturerData()"/> 
-        /// </summary>
-        public byte[] ManufacturerData
-        {
-            get { return IExecuteWithSignatureArray<byte>("getManufacturerData", "()[B"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/le/ScanFilter.html#getManufacturerDataMask()"/> 
-        /// </summary>
-        public byte[] ManufacturerDataMask
-        {
-            get { return IExecuteWithSignatureArray<byte>("getManufacturerDataMask", "()[B"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/le/ScanFilter.html#getManufacturerId()"/> 
-        /// </summary>
-        public int ManufacturerId
-        {
-            get { return IExecuteWithSignature<int>("getManufacturerId", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/le/ScanFilter.html#getServiceData()"/> 
-        /// </summary>
-        public byte[] ServiceData
-        {
-            get { return IExecuteWithSignatureArray<byte>("getServiceData", "()[B"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/le/ScanFilter.html#getServiceDataMask()"/> 
-        /// </summary>
-        public byte[] ServiceDataMask
-        {
-            get { return IExecuteWithSignatureArray<byte>("getServiceDataMask", "()[B"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/le/ScanFilter.html#getServiceDataUuid()"/> 
-        /// </summary>
-        public Android.Os.ParcelUuid ServiceDataUuid
-        {
-            get { return IExecuteWithSignature<Android.Os.ParcelUuid>("getServiceDataUuid", "()Landroid/os/ParcelUuid;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/le/ScanFilter.html#getServiceSolicitationUuid()"/> 
-        /// </summary>
-        public Android.Os.ParcelUuid ServiceSolicitationUuid
-        {
-            get { return IExecuteWithSignature<Android.Os.ParcelUuid>("getServiceSolicitationUuid", "()Landroid/os/ParcelUuid;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/le/ScanFilter.html#getServiceSolicitationUuidMask()"/> 
-        /// </summary>
-        public Android.Os.ParcelUuid ServiceSolicitationUuidMask
-        {
-            get { return IExecuteWithSignature<Android.Os.ParcelUuid>("getServiceSolicitationUuidMask", "()Landroid/os/ParcelUuid;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/le/ScanFilter.html#getServiceUuid()"/> 
-        /// </summary>
-        public Android.Os.ParcelUuid ServiceUuid
-        {
-            get { return IExecuteWithSignature<Android.Os.ParcelUuid>("getServiceUuid", "()Landroid/os/ParcelUuid;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/le/ScanFilter.html#getServiceUuidMask()"/> 
-        /// </summary>
-        public Android.Os.ParcelUuid ServiceUuidMask
-        {
-            get { return IExecuteWithSignature<Android.Os.ParcelUuid>("getServiceUuidMask", "()Landroid/os/ParcelUuid;"); }
+            return IExecuteWithSignature<Android.Os.ParcelUuid>("getServiceUuidMask", "()Landroid/os/ParcelUuid;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/le/ScanFilter.html#matches(android.bluetooth.le.ScanResult)"/>
@@ -166,12 +101,92 @@ namespace Android.Bluetooth.Le
             return IExecuteWithSignature<bool>("matches", "(Landroid/bluetooth/le/ScanResult;)Z", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/le/ScanFilter.html#getAdvertisingData()"/>
+        /// </summary>
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetAdvertisingData()
+        {
+            return IExecuteWithSignatureArray<byte>("getAdvertisingData", "()[B");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/le/ScanFilter.html#getAdvertisingDataMask()"/>
+        /// </summary>
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetAdvertisingDataMask()
+        {
+            return IExecuteWithSignatureArray<byte>("getAdvertisingDataMask", "()[B");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/le/ScanFilter.html#getManufacturerData()"/>
+        /// </summary>
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetManufacturerData()
+        {
+            return IExecuteWithSignatureArray<byte>("getManufacturerData", "()[B");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/le/ScanFilter.html#getManufacturerDataMask()"/>
+        /// </summary>
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetManufacturerDataMask()
+        {
+            return IExecuteWithSignatureArray<byte>("getManufacturerDataMask", "()[B");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/le/ScanFilter.html#getServiceData()"/>
+        /// </summary>
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetServiceData()
+        {
+            return IExecuteWithSignatureArray<byte>("getServiceData", "()[B");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/le/ScanFilter.html#getServiceDataMask()"/>
+        /// </summary>
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetServiceDataMask()
+        {
+            return IExecuteWithSignatureArray<byte>("getServiceDataMask", "()[B");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/le/ScanFilter.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/le/ScanFilter.html#getAdvertisingDataType()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetAdvertisingDataType()
+        {
+            return IExecuteWithSignature<int>("getAdvertisingDataType", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/le/ScanFilter.html#getManufacturerId()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetManufacturerId()
+        {
+            return IExecuteWithSignature<int>("getManufacturerId", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/le/ScanFilter.html#getDeviceAddress()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDeviceAddress()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getDeviceAddress", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/le/ScanFilter.html#getDeviceName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetDeviceName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getDeviceName", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/le/ScanFilter.html#writeToParcel(android.os.Parcel,int)"/>

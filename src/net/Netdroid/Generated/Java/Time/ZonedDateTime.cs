@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Time
 {
     #region ZonedDateTime
-    public partial class ZonedDateTime : Java.Time.Temporal.ITemporal, Java.Time.Chrono.IChronoZonedDateTime, Java.Io.ISerializable
+    public partial class ZonedDateTime : Java.Time.Temporal.ITemporal, Java.Time.Chrono.IChronoZonedDateTime<Java.Time.LocalDate>, Java.Io.ISerializable
     {
         #region Constructors
 
@@ -54,7 +54,7 @@ namespace Java.Time
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZonedDateTime.html#now()"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#now()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
         public static Java.Time.ZonedDateTime Now()
@@ -62,7 +62,7 @@ namespace Java.Time
             return SExecuteWithSignature<Java.Time.ZonedDateTime>(LocalBridgeClazz, "now", "()Ljava/time/ZonedDateTime;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZonedDateTime.html#now(java.time.Clock)"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#now(java.time.Clock)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Clock"/></param>
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
@@ -71,7 +71,7 @@ namespace Java.Time
             return SExecuteWithSignature<Java.Time.ZonedDateTime>(LocalBridgeClazz, "now", "(Ljava/time/Clock;)Ljava/time/ZonedDateTime;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZonedDateTime.html#now(java.time.ZoneId)"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#now(java.time.ZoneId)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.ZoneId"/></param>
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
@@ -80,7 +80,7 @@ namespace Java.Time
             return SExecuteWithSignature<Java.Time.ZonedDateTime>(LocalBridgeClazz, "now", "(Ljava/time/ZoneId;)Ljava/time/ZonedDateTime;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZonedDateTime.html#of(int,int,int,int,int,int,int,java.time.ZoneId)"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#of(int,int,int,int,int,int,int,java.time.ZoneId)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -96,7 +96,7 @@ namespace Java.Time
             return SExecute<Java.Time.ZonedDateTime>(LocalBridgeClazz, "of", arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZonedDateTime.html#of(java.time.LocalDate,java.time.LocalTime,java.time.ZoneId)"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#of(java.time.LocalDate,java.time.LocalTime,java.time.ZoneId)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.LocalDate"/></param>
         /// <param name="arg1"><see cref="Java.Time.LocalTime"/></param>
@@ -107,7 +107,7 @@ namespace Java.Time
             return SExecute<Java.Time.ZonedDateTime>(LocalBridgeClazz, "of", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZonedDateTime.html#of(java.time.LocalDateTime,java.time.ZoneId)"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#of(java.time.LocalDateTime,java.time.ZoneId)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.LocalDateTime"/></param>
         /// <param name="arg1"><see cref="Java.Time.ZoneId"/></param>
@@ -117,7 +117,7 @@ namespace Java.Time
             return SExecute<Java.Time.ZonedDateTime>(LocalBridgeClazz, "of", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZonedDateTime.html#ofInstant(java.time.Instant,java.time.ZoneId)"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#ofInstant(java.time.Instant,java.time.ZoneId)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Instant"/></param>
         /// <param name="arg1"><see cref="Java.Time.ZoneId"/></param>
@@ -127,7 +127,7 @@ namespace Java.Time
             return SExecute<Java.Time.ZonedDateTime>(LocalBridgeClazz, "ofInstant", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZonedDateTime.html#ofInstant(java.time.LocalDateTime,java.time.ZoneOffset,java.time.ZoneId)"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#ofInstant(java.time.LocalDateTime,java.time.ZoneOffset,java.time.ZoneId)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.LocalDateTime"/></param>
         /// <param name="arg1"><see cref="Java.Time.ZoneOffset"/></param>
@@ -138,7 +138,7 @@ namespace Java.Time
             return SExecute<Java.Time.ZonedDateTime>(LocalBridgeClazz, "ofInstant", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZonedDateTime.html#ofLocal(java.time.LocalDateTime,java.time.ZoneId,java.time.ZoneOffset)"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#ofLocal(java.time.LocalDateTime,java.time.ZoneId,java.time.ZoneOffset)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.LocalDateTime"/></param>
         /// <param name="arg1"><see cref="Java.Time.ZoneId"/></param>
@@ -149,7 +149,7 @@ namespace Java.Time
             return SExecute<Java.Time.ZonedDateTime>(LocalBridgeClazz, "ofLocal", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZonedDateTime.html#ofStrict(java.time.LocalDateTime,java.time.ZoneOffset,java.time.ZoneId)"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#ofStrict(java.time.LocalDateTime,java.time.ZoneOffset,java.time.ZoneId)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.LocalDateTime"/></param>
         /// <param name="arg1"><see cref="Java.Time.ZoneOffset"/></param>
@@ -160,7 +160,7 @@ namespace Java.Time
             return SExecute<Java.Time.ZonedDateTime>(LocalBridgeClazz, "ofStrict", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZonedDateTime.html#parse(java.lang.CharSequence,java.time.format.DateTimeFormatter)"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#parse(java.lang.CharSequence,java.time.format.DateTimeFormatter)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <param name="arg1"><see cref="Java.Time.Format.DateTimeFormatter"/></param>
@@ -170,7 +170,7 @@ namespace Java.Time
             return SExecute<Java.Time.ZonedDateTime>(LocalBridgeClazz, "parse", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZonedDateTime.html#parse(java.lang.CharSequence)"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#parse(java.lang.CharSequence)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
@@ -183,91 +183,7 @@ namespace Java.Time
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZonedDateTime.html#getDayOfMonth()"/> 
-        /// </summary>
-        public int DayOfMonth
-        {
-            get { return IExecuteWithSignature<int>("getDayOfMonth", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZonedDateTime.html#getDayOfWeek()"/> 
-        /// </summary>
-        public Java.Time.DayOfWeek DayOfWeek
-        {
-            get { return IExecuteWithSignature<Java.Time.DayOfWeek>("getDayOfWeek", "()Ljava/time/DayOfWeek;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZonedDateTime.html#getDayOfYear()"/> 
-        /// </summary>
-        public int DayOfYear
-        {
-            get { return IExecuteWithSignature<int>("getDayOfYear", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZonedDateTime.html#getHour()"/> 
-        /// </summary>
-        public int Hour
-        {
-            get { return IExecuteWithSignature<int>("getHour", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZonedDateTime.html#getMinute()"/> 
-        /// </summary>
-        public int Minute
-        {
-            get { return IExecuteWithSignature<int>("getMinute", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZonedDateTime.html#getMonth()"/> 
-        /// </summary>
-        public Java.Time.Month Month
-        {
-            get { return IExecuteWithSignature<Java.Time.Month>("getMonth", "()Ljava/time/Month;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZonedDateTime.html#getMonthValue()"/> 
-        /// </summary>
-        public int MonthValue
-        {
-            get { return IExecuteWithSignature<int>("getMonthValue", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZonedDateTime.html#getNano()"/> 
-        /// </summary>
-        public int Nano
-        {
-            get { return IExecuteWithSignature<int>("getNano", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZonedDateTime.html#getOffset()"/> 
-        /// </summary>
-        public Java.Time.ZoneOffset Offset
-        {
-            get { return IExecuteWithSignature<Java.Time.ZoneOffset>("getOffset", "()Ljava/time/ZoneOffset;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZonedDateTime.html#getSecond()"/> 
-        /// </summary>
-        public int Second
-        {
-            get { return IExecuteWithSignature<int>("getSecond", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZonedDateTime.html#getYear()"/> 
-        /// </summary>
-        public int Year
-        {
-            get { return IExecuteWithSignature<int>("getYear", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZonedDateTime.html#getZone()"/> 
-        /// </summary>
-        public Java.Time.ZoneId Zone
-        {
-            get { return IExecuteWithSignature<Java.Time.ZoneId>("getZone", "()Ljava/time/ZoneId;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZonedDateTime.html#query(java.time.temporal.TemporalQuery)"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#query(java.time.temporal.TemporalQuery)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalQuery"/></param>
         /// <typeparam name="R"></typeparam>
@@ -277,7 +193,7 @@ namespace Java.Time
             return IExecuteWithSignature<R>("query", "(Ljava/time/temporal/TemporalQuery;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZonedDateTime.html#isSupported(java.time.temporal.TemporalField)"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#isSupported(java.time.temporal.TemporalField)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -286,7 +202,7 @@ namespace Java.Time
             return IExecuteWithSignature<bool>("isSupported", "(Ljava/time/temporal/TemporalField;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZonedDateTime.html#isSupported(java.time.temporal.TemporalUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#isSupported(java.time.temporal.TemporalUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalUnit"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -295,7 +211,7 @@ namespace Java.Time
             return IExecuteWithSignature<bool>("isSupported", "(Ljava/time/temporal/TemporalUnit;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZonedDateTime.html#get(java.time.temporal.TemporalField)"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#get(java.time.temporal.TemporalField)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
         /// <returns><see cref="int"/></returns>
@@ -304,7 +220,71 @@ namespace Java.Time
             return IExecuteWithSignature<int>("get", "(Ljava/time/temporal/TemporalField;)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZonedDateTime.html#format(java.time.format.DateTimeFormatter)"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#getDayOfMonth()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDayOfMonth()
+        {
+            return IExecuteWithSignature<int>("getDayOfMonth", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#getDayOfYear()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetDayOfYear()
+        {
+            return IExecuteWithSignature<int>("getDayOfYear", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#getHour()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetHour()
+        {
+            return IExecuteWithSignature<int>("getHour", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#getMinute()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMinute()
+        {
+            return IExecuteWithSignature<int>("getMinute", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#getMonthValue()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMonthValue()
+        {
+            return IExecuteWithSignature<int>("getMonthValue", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#getNano()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetNano()
+        {
+            return IExecuteWithSignature<int>("getNano", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#getSecond()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetSecond()
+        {
+            return IExecuteWithSignature<int>("getSecond", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#getYear()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetYear()
+        {
+            return IExecuteWithSignature<int>("getYear", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#format(java.time.format.DateTimeFormatter)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Format.DateTimeFormatter"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -313,7 +293,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Lang.String>("format", "(Ljava/time/format/DateTimeFormatter;)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZonedDateTime.html#toLocalDate()"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#toLocalDate()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.Chrono.ChronoLocalDate"/></returns>
         public Java.Time.Chrono.ChronoLocalDate ToLocalDate()
@@ -321,7 +301,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.Chrono.ChronoLocalDate>("toLocalDate", "()Ljava/time/chrono/ChronoLocalDate;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZonedDateTime.html#toLocalDateTime()"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#toLocalDateTime()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.Chrono.ChronoLocalDateTime"/></returns>
         public Java.Time.Chrono.ChronoLocalDateTime ToLocalDateTime()
@@ -329,7 +309,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.Chrono.ChronoLocalDateTime>("toLocalDateTime", "()Ljava/time/chrono/ChronoLocalDateTime;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZonedDateTime.html#withEarlierOffsetAtOverlap()"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#withEarlierOffsetAtOverlap()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.Chrono.ChronoZonedDateTime"/></returns>
         public Java.Time.Chrono.ChronoZonedDateTime WithEarlierOffsetAtOverlap()
@@ -337,7 +317,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.Chrono.ChronoZonedDateTime>("withEarlierOffsetAtOverlap", "()Ljava/time/chrono/ChronoZonedDateTime;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZonedDateTime.html#withLaterOffsetAtOverlap()"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#withLaterOffsetAtOverlap()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.Chrono.ChronoZonedDateTime"/></returns>
         public Java.Time.Chrono.ChronoZonedDateTime WithLaterOffsetAtOverlap()
@@ -345,7 +325,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.Chrono.ChronoZonedDateTime>("withLaterOffsetAtOverlap", "()Ljava/time/chrono/ChronoZonedDateTime;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZonedDateTime.html#withZoneSameInstant(java.time.ZoneId)"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#withZoneSameInstant(java.time.ZoneId)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.ZoneId"/></param>
         /// <returns><see cref="Java.Time.Chrono.ChronoZonedDateTime"/></returns>
@@ -354,7 +334,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.Chrono.ChronoZonedDateTime>("withZoneSameInstant", "(Ljava/time/ZoneId;)Ljava/time/chrono/ChronoZonedDateTime;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZonedDateTime.html#withZoneSameLocal(java.time.ZoneId)"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#withZoneSameLocal(java.time.ZoneId)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.ZoneId"/></param>
         /// <returns><see cref="Java.Time.Chrono.ChronoZonedDateTime"/></returns>
@@ -363,7 +343,15 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.Chrono.ChronoZonedDateTime>("withZoneSameLocal", "(Ljava/time/ZoneId;)Ljava/time/chrono/ChronoZonedDateTime;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZonedDateTime.html#toLocalTime()"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#getDayOfWeek()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Time.DayOfWeek"/></returns>
+        public Java.Time.DayOfWeek GetDayOfWeek()
+        {
+            return IExecuteWithSignature<Java.Time.DayOfWeek>("getDayOfWeek", "()Ljava/time/DayOfWeek;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#toLocalTime()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.LocalTime"/></returns>
         public Java.Time.LocalTime ToLocalTime()
@@ -371,7 +359,15 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.LocalTime>("toLocalTime", "()Ljava/time/LocalTime;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZonedDateTime.html#toOffsetDateTime()"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#getMonth()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Time.Month"/></returns>
+        public Java.Time.Month GetMonth()
+        {
+            return IExecuteWithSignature<Java.Time.Month>("getMonth", "()Ljava/time/Month;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#toOffsetDateTime()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.OffsetDateTime"/></returns>
         public Java.Time.OffsetDateTime ToOffsetDateTime()
@@ -379,7 +375,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.OffsetDateTime>("toOffsetDateTime", "()Ljava/time/OffsetDateTime;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZonedDateTime.html#range(java.time.temporal.TemporalField)"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#range(java.time.temporal.TemporalField)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
         /// <returns><see cref="Java.Time.Temporal.ValueRange"/></returns>
@@ -388,7 +384,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.Temporal.ValueRange>("range", "(Ljava/time/temporal/TemporalField;)Ljava/time/temporal/ValueRange;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZonedDateTime.html#minusDays(long)"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#minusDays(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
@@ -397,7 +393,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.ZonedDateTime>("minusDays", "(J)Ljava/time/ZonedDateTime;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZonedDateTime.html#minusHours(long)"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#minusHours(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
@@ -406,7 +402,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.ZonedDateTime>("minusHours", "(J)Ljava/time/ZonedDateTime;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZonedDateTime.html#minusMinutes(long)"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#minusMinutes(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
@@ -415,7 +411,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.ZonedDateTime>("minusMinutes", "(J)Ljava/time/ZonedDateTime;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZonedDateTime.html#minusMonths(long)"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#minusMonths(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
@@ -424,7 +420,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.ZonedDateTime>("minusMonths", "(J)Ljava/time/ZonedDateTime;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZonedDateTime.html#minusNanos(long)"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#minusNanos(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
@@ -433,7 +429,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.ZonedDateTime>("minusNanos", "(J)Ljava/time/ZonedDateTime;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZonedDateTime.html#minusSeconds(long)"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#minusSeconds(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
@@ -442,7 +438,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.ZonedDateTime>("minusSeconds", "(J)Ljava/time/ZonedDateTime;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZonedDateTime.html#minusWeeks(long)"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#minusWeeks(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
@@ -451,7 +447,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.ZonedDateTime>("minusWeeks", "(J)Ljava/time/ZonedDateTime;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZonedDateTime.html#minusYears(long)"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#minusYears(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
@@ -460,7 +456,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.ZonedDateTime>("minusYears", "(J)Ljava/time/ZonedDateTime;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZonedDateTime.html#plusDays(long)"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#plusDays(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
@@ -469,7 +465,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.ZonedDateTime>("plusDays", "(J)Ljava/time/ZonedDateTime;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZonedDateTime.html#plusHours(long)"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#plusHours(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
@@ -478,7 +474,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.ZonedDateTime>("plusHours", "(J)Ljava/time/ZonedDateTime;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZonedDateTime.html#plusMinutes(long)"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#plusMinutes(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
@@ -487,7 +483,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.ZonedDateTime>("plusMinutes", "(J)Ljava/time/ZonedDateTime;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZonedDateTime.html#plusMonths(long)"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#plusMonths(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
@@ -496,7 +492,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.ZonedDateTime>("plusMonths", "(J)Ljava/time/ZonedDateTime;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZonedDateTime.html#plusNanos(long)"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#plusNanos(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
@@ -505,7 +501,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.ZonedDateTime>("plusNanos", "(J)Ljava/time/ZonedDateTime;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZonedDateTime.html#plusSeconds(long)"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#plusSeconds(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
@@ -514,7 +510,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.ZonedDateTime>("plusSeconds", "(J)Ljava/time/ZonedDateTime;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZonedDateTime.html#plusWeeks(long)"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#plusWeeks(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
@@ -523,7 +519,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.ZonedDateTime>("plusWeeks", "(J)Ljava/time/ZonedDateTime;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZonedDateTime.html#plusYears(long)"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#plusYears(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
@@ -532,7 +528,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.ZonedDateTime>("plusYears", "(J)Ljava/time/ZonedDateTime;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZonedDateTime.html#truncatedTo(java.time.temporal.TemporalUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#truncatedTo(java.time.temporal.TemporalUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalUnit"/></param>
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
@@ -541,7 +537,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.ZonedDateTime>("truncatedTo", "(Ljava/time/temporal/TemporalUnit;)Ljava/time/ZonedDateTime;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZonedDateTime.html#withDayOfMonth(int)"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#withDayOfMonth(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
@@ -550,7 +546,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.ZonedDateTime>("withDayOfMonth", "(I)Ljava/time/ZonedDateTime;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZonedDateTime.html#withDayOfYear(int)"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#withDayOfYear(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
@@ -559,7 +555,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.ZonedDateTime>("withDayOfYear", "(I)Ljava/time/ZonedDateTime;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZonedDateTime.html#withFixedOffsetZone()"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#withFixedOffsetZone()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
         public Java.Time.ZonedDateTime WithFixedOffsetZone()
@@ -567,7 +563,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.ZonedDateTime>("withFixedOffsetZone", "()Ljava/time/ZonedDateTime;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZonedDateTime.html#withHour(int)"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#withHour(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
@@ -576,7 +572,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.ZonedDateTime>("withHour", "(I)Ljava/time/ZonedDateTime;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZonedDateTime.html#withMinute(int)"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#withMinute(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
@@ -585,7 +581,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.ZonedDateTime>("withMinute", "(I)Ljava/time/ZonedDateTime;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZonedDateTime.html#withMonth(int)"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#withMonth(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
@@ -594,7 +590,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.ZonedDateTime>("withMonth", "(I)Ljava/time/ZonedDateTime;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZonedDateTime.html#withNano(int)"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#withNano(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
@@ -603,7 +599,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.ZonedDateTime>("withNano", "(I)Ljava/time/ZonedDateTime;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZonedDateTime.html#withSecond(int)"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#withSecond(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
@@ -612,7 +608,7 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.ZonedDateTime>("withSecond", "(I)Ljava/time/ZonedDateTime;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZonedDateTime.html#withYear(int)"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#withYear(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Time.ZonedDateTime"/></returns>
@@ -621,7 +617,23 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Time.ZonedDateTime>("withYear", "(I)Ljava/time/ZonedDateTime;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZonedDateTime.html#getLong(java.time.temporal.TemporalField)"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#getZone()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Time.ZoneId"/></returns>
+        public Java.Time.ZoneId GetZone()
+        {
+            return IExecuteWithSignature<Java.Time.ZoneId>("getZone", "()Ljava/time/ZoneId;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#getOffset()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Time.ZoneOffset"/></returns>
+        public Java.Time.ZoneOffset GetOffset()
+        {
+            return IExecuteWithSignature<Java.Time.ZoneOffset>("getOffset", "()Ljava/time/ZoneOffset;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#getLong(java.time.temporal.TemporalField)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
         /// <returns><see cref="long"/></returns>
@@ -630,7 +642,7 @@ namespace Java.Time
             return IExecuteWithSignature<long>("getLong", "(Ljava/time/temporal/TemporalField;)J", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/ZonedDateTime.html#until(java.time.temporal.Temporal,java.time.temporal.TemporalUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#until(java.time.temporal.Temporal,java.time.temporal.TemporalUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.Temporal"/></param>
         /// <param name="arg1"><see cref="Java.Time.Temporal.TemporalUnit"/></param>

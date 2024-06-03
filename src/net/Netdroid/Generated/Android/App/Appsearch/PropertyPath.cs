@@ -136,18 +136,20 @@ namespace Android.App.Appsearch
 
             #region Instance methods
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/appsearch/PropertyPath.PathSegment.html#getPropertyIndex()"/> 
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/PropertyPath.PathSegment.html#getPropertyIndex()"/>
             /// </summary>
-            public int PropertyIndex
+            /// <returns><see cref="int"/></returns>
+            public int GetPropertyIndex()
             {
-                get { return IExecuteWithSignature<int>("getPropertyIndex", "()I"); }
+                return IExecuteWithSignature<int>("getPropertyIndex", "()I");
             }
             /// <summary>
-            /// <see href="https://developer.android.com/reference/android/app/appsearch/PropertyPath.PathSegment.html#getPropertyName()"/> 
+            /// <see href="https://developer.android.com/reference/android/app/appsearch/PropertyPath.PathSegment.html#getPropertyName()"/>
             /// </summary>
-            public Java.Lang.String PropertyName
+            /// <returns><see cref="Java.Lang.String"/></returns>
+            public Java.Lang.String GetPropertyName()
             {
-                get { return IExecuteWithSignature<Java.Lang.String>("getPropertyName", "()Ljava/lang/String;"); }
+                return IExecuteWithSignature<Java.Lang.String>("getPropertyName", "()Ljava/lang/String;");
             }
 
             #endregion

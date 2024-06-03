@@ -38,55 +38,55 @@ namespace Java.Util.Logging
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/Level.html#ALL"/>
+        /// <see href="https://developer.android.com/reference/java/util/logging/Level.html#ALL"/>
         /// </summary>
         public static Java.Util.Logging.Level ALL { get { if (!_ALLReady) { _ALLContent = SGetField<Java.Util.Logging.Level>(LocalBridgeClazz, "ALL"); _ALLReady = true; } return _ALLContent; } }
         private static Java.Util.Logging.Level _ALLContent = default;
         private static bool _ALLReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/Level.html#CONFIG"/>
+        /// <see href="https://developer.android.com/reference/java/util/logging/Level.html#CONFIG"/>
         /// </summary>
         public static Java.Util.Logging.Level CONFIG { get { if (!_CONFIGReady) { _CONFIGContent = SGetField<Java.Util.Logging.Level>(LocalBridgeClazz, "CONFIG"); _CONFIGReady = true; } return _CONFIGContent; } }
         private static Java.Util.Logging.Level _CONFIGContent = default;
         private static bool _CONFIGReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/Level.html#FINE"/>
+        /// <see href="https://developer.android.com/reference/java/util/logging/Level.html#FINE"/>
         /// </summary>
         public static Java.Util.Logging.Level FINE { get { if (!_FINEReady) { _FINEContent = SGetField<Java.Util.Logging.Level>(LocalBridgeClazz, "FINE"); _FINEReady = true; } return _FINEContent; } }
         private static Java.Util.Logging.Level _FINEContent = default;
         private static bool _FINEReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/Level.html#FINER"/>
+        /// <see href="https://developer.android.com/reference/java/util/logging/Level.html#FINER"/>
         /// </summary>
         public static Java.Util.Logging.Level FINER { get { if (!_FINERReady) { _FINERContent = SGetField<Java.Util.Logging.Level>(LocalBridgeClazz, "FINER"); _FINERReady = true; } return _FINERContent; } }
         private static Java.Util.Logging.Level _FINERContent = default;
         private static bool _FINERReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/Level.html#FINEST"/>
+        /// <see href="https://developer.android.com/reference/java/util/logging/Level.html#FINEST"/>
         /// </summary>
         public static Java.Util.Logging.Level FINEST { get { if (!_FINESTReady) { _FINESTContent = SGetField<Java.Util.Logging.Level>(LocalBridgeClazz, "FINEST"); _FINESTReady = true; } return _FINESTContent; } }
         private static Java.Util.Logging.Level _FINESTContent = default;
         private static bool _FINESTReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/Level.html#INFO"/>
+        /// <see href="https://developer.android.com/reference/java/util/logging/Level.html#INFO"/>
         /// </summary>
         public static Java.Util.Logging.Level INFO { get { if (!_INFOReady) { _INFOContent = SGetField<Java.Util.Logging.Level>(LocalBridgeClazz, "INFO"); _INFOReady = true; } return _INFOContent; } }
         private static Java.Util.Logging.Level _INFOContent = default;
         private static bool _INFOReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/Level.html#OFF"/>
+        /// <see href="https://developer.android.com/reference/java/util/logging/Level.html#OFF"/>
         /// </summary>
         public static Java.Util.Logging.Level OFF { get { if (!_OFFReady) { _OFFContent = SGetField<Java.Util.Logging.Level>(LocalBridgeClazz, "OFF"); _OFFReady = true; } return _OFFContent; } }
         private static Java.Util.Logging.Level _OFFContent = default;
         private static bool _OFFReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/Level.html#SEVERE"/>
+        /// <see href="https://developer.android.com/reference/java/util/logging/Level.html#SEVERE"/>
         /// </summary>
         public static Java.Util.Logging.Level SEVERE { get { if (!_SEVEREReady) { _SEVEREContent = SGetField<Java.Util.Logging.Level>(LocalBridgeClazz, "SEVERE"); _SEVEREReady = true; } return _SEVEREContent; } }
         private static Java.Util.Logging.Level _SEVEREContent = default;
         private static bool _SEVEREReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/Level.html#WARNING"/>
+        /// <see href="https://developer.android.com/reference/java/util/logging/Level.html#WARNING"/>
         /// </summary>
         public static Java.Util.Logging.Level WARNING { get { if (!_WARNINGReady) { _WARNINGContent = SGetField<Java.Util.Logging.Level>(LocalBridgeClazz, "WARNING"); _WARNINGReady = true; } return _WARNINGContent; } }
         private static Java.Util.Logging.Level _WARNINGContent = default;
@@ -96,7 +96,7 @@ namespace Java.Util.Logging
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/Level.html#parse(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/util/logging/Level.html#parse(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Util.Logging.Level"/></returns>
@@ -110,33 +110,36 @@ namespace Java.Util.Logging
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/Level.html#getLocalizedName()"/> 
-        /// </summary>
-        public Java.Lang.String LocalizedName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getLocalizedName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/Level.html#getName()"/> 
-        /// </summary>
-        public Java.Lang.String Name
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/Level.html#getResourceBundleName()"/> 
-        /// </summary>
-        public Java.Lang.String ResourceBundleName
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getResourceBundleName", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.logging/java/util/logging/Level.html#intValue()"/>
+        /// <see href="https://developer.android.com/reference/java/util/logging/Level.html#intValue()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int IntValue()
         {
             return IExecuteWithSignature<int>("intValue", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/logging/Level.html#getLocalizedName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetLocalizedName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getLocalizedName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/logging/Level.html#getName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getName", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/logging/Level.html#getResourceBundleName()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetResourceBundleName()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getResourceBundleName", "()Ljava/lang/String;");
         }
 
         #endregion

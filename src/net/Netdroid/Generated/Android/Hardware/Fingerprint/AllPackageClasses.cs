@@ -30,7 +30,7 @@ namespace Android.Hardware.Fingerprint
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/hardware/fingerprint/FingerprintManager.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class FingerprintManager : MASES.JCOBridge.C2JBridge.JVMBridgeBase<FingerprintManager>
     {
         const string _bridgeClassName = "android.hardware.fingerprint.FingerprintManager";
@@ -71,19 +71,19 @@ namespace Android.Hardware.Fingerprint
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/fingerprint/FingerprintManager.AuthenticationCallback.html"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public partial class AuthenticationCallback : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AuthenticationCallback>
         {
             const string _bridgeClassName = "android.hardware.fingerprint.FingerprintManager$AuthenticationCallback";
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
-            [Obsolete("AuthenticationCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("AuthenticationCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public AuthenticationCallback() { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
-            [Obsolete("AuthenticationCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("AuthenticationCallback class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public AuthenticationCallback(params object[] args) : base(args) { }
 
             private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -118,7 +118,7 @@ namespace Android.Hardware.Fingerprint
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/fingerprint/FingerprintManager.AuthenticationResult.html"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public partial class AuthenticationResult : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AuthenticationResult>
         {
             const string _bridgeClassName = "android.hardware.fingerprint.FingerprintManager$AuthenticationResult";
@@ -163,7 +163,7 @@ namespace Android.Hardware.Fingerprint
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/hardware/fingerprint/FingerprintManager.CryptoObject.html"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public partial class CryptoObject : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CryptoObject>
         {
             const string _bridgeClassName = "android.hardware.fingerprint.FingerprintManager$CryptoObject";

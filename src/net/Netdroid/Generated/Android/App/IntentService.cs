@@ -33,7 +33,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/IntentService.html#%3Cinit%3E(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public IntentService(Java.Lang.String arg0)
             : base(arg0)
         {
@@ -58,7 +58,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/IntentService.html#setIntentRedelivery(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public void SetIntentRedelivery(bool arg0)
         {
             IExecuteWithSignature("setIntentRedelivery", "(Z)V", arg0);

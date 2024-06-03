@@ -58,25 +58,12 @@ namespace Android.Bluetooth
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothCodecStatus.html#getCodecConfig()"/> 
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothCodecStatus.html#getCodecConfig()"/>
         /// </summary>
-        public Android.Bluetooth.BluetoothCodecConfig CodecConfig
+        /// <returns><see cref="Android.Bluetooth.BluetoothCodecConfig"/></returns>
+        public Android.Bluetooth.BluetoothCodecConfig GetCodecConfig()
         {
-            get { return IExecuteWithSignature<Android.Bluetooth.BluetoothCodecConfig>("getCodecConfig", "()Landroid/bluetooth/BluetoothCodecConfig;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothCodecStatus.html#getCodecsLocalCapabilities()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Bluetooth.BluetoothCodecConfig> CodecsLocalCapabilities
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Bluetooth.BluetoothCodecConfig>>("getCodecsLocalCapabilities", "()Ljava/util/List;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothCodecStatus.html#getCodecsSelectableCapabilities()"/> 
-        /// </summary>
-        public Java.Util.List<Android.Bluetooth.BluetoothCodecConfig> CodecsSelectableCapabilities
-        {
-            get { return IExecuteWithSignature<Java.Util.List<Android.Bluetooth.BluetoothCodecConfig>>("getCodecsSelectableCapabilities", "()Ljava/util/List;"); }
+            return IExecuteWithSignature<Android.Bluetooth.BluetoothCodecConfig>("getCodecConfig", "()Landroid/bluetooth/BluetoothCodecConfig;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothCodecStatus.html#isCodecConfigSelectable(android.bluetooth.BluetoothCodecConfig)"/>
@@ -94,6 +81,22 @@ namespace Android.Bluetooth
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothCodecStatus.html#getCodecsLocalCapabilities()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Bluetooth.BluetoothCodecConfig> GetCodecsLocalCapabilities()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Bluetooth.BluetoothCodecConfig>>("getCodecsLocalCapabilities", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothCodecStatus.html#getCodecsSelectableCapabilities()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Android.Bluetooth.BluetoothCodecConfig> GetCodecsSelectableCapabilities()
+        {
+            return IExecuteWithSignature<Java.Util.List<Android.Bluetooth.BluetoothCodecConfig>>("getCodecsSelectableCapabilities", "()Ljava/util/List;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothCodecStatus.html#writeToParcel(android.os.Parcel,int)"/>

@@ -65,18 +65,20 @@ namespace Android.App
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Presentation.html#getDisplay()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/Presentation.html#getResources()"/>
         /// </summary>
-        public Android.View.Display Display
+        /// <returns><see cref="Android.Content.Res.Resources"/></returns>
+        public Android.Content.Res.Resources GetResources()
         {
-            get { return IExecuteWithSignature<Android.View.Display>("getDisplay", "()Landroid/view/Display;"); }
+            return IExecuteWithSignature<Android.Content.Res.Resources>("getResources", "()Landroid/content/res/Resources;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/Presentation.html#getResources()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/Presentation.html#getDisplay()"/>
         /// </summary>
-        public Android.Content.Res.Resources Resources
+        /// <returns><see cref="Android.View.Display"/></returns>
+        public Android.View.Display GetDisplay()
         {
-            get { return IExecuteWithSignature<Android.Content.Res.Resources>("getResources", "()Landroid/content/res/Resources;"); }
+            return IExecuteWithSignature<Android.View.Display>("getDisplay", "()Landroid/view/Display;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/Presentation.html#onDisplayChanged()"/>

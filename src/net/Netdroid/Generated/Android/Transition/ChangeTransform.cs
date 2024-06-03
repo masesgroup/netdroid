@@ -55,18 +55,36 @@ namespace Android.Transition
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/transition/ChangeTransform.html#getReparent()"/> <see href="https://developer.android.com/reference/android/transition/ChangeTransform.html#setReparent(boolean)"/>
+        /// <see href="https://developer.android.com/reference/android/transition/ChangeTransform.html#getReparent()"/>
         /// </summary>
-        public bool Reparent
+        /// <returns><see cref="bool"/></returns>
+        public bool GetReparent()
         {
-            get { return IExecuteWithSignature<bool>("getReparent", "()Z"); } set { IExecuteWithSignature("setReparent", "(Z)V", value); }
+            return IExecuteWithSignature<bool>("getReparent", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/transition/ChangeTransform.html#getReparentWithOverlay()"/> <see href="https://developer.android.com/reference/android/transition/ChangeTransform.html#setReparentWithOverlay(boolean)"/>
+        /// <see href="https://developer.android.com/reference/android/transition/ChangeTransform.html#getReparentWithOverlay()"/>
         /// </summary>
-        public bool ReparentWithOverlay
+        /// <returns><see cref="bool"/></returns>
+        public bool GetReparentWithOverlay()
         {
-            get { return IExecuteWithSignature<bool>("getReparentWithOverlay", "()Z"); } set { IExecuteWithSignature("setReparentWithOverlay", "(Z)V", value); }
+            return IExecuteWithSignature<bool>("getReparentWithOverlay", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/transition/ChangeTransform.html#setReparent(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetReparent(bool arg0)
+        {
+            IExecuteWithSignature("setReparent", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/transition/ChangeTransform.html#setReparentWithOverlay(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        public void SetReparentWithOverlay(bool arg0)
+        {
+            IExecuteWithSignature("setReparentWithOverlay", "(Z)V", arg0);
         }
 
         #endregion

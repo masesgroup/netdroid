@@ -52,33 +52,36 @@ namespace Android.Adservices.Common
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/common/KeyedFrequencyCap.html#getAdCounterKey()"/> 
-        /// </summary>
-        public int AdCounterKey
-        {
-            get { return IExecuteWithSignature<int>("getAdCounterKey", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/common/KeyedFrequencyCap.html#getInterval()"/> 
-        /// </summary>
-        public Java.Time.Duration Interval
-        {
-            get { return IExecuteWithSignature<Java.Time.Duration>("getInterval", "()Ljava/time/Duration;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/adservices/common/KeyedFrequencyCap.html#getMaxCount()"/> 
-        /// </summary>
-        public int MaxCount
-        {
-            get { return IExecuteWithSignature<int>("getMaxCount", "()I"); }
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/common/KeyedFrequencyCap.html#describeContents()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int DescribeContents()
         {
             return IExecuteWithSignature<int>("describeContents", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/adservices/common/KeyedFrequencyCap.html#getAdCounterKey()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetAdCounterKey()
+        {
+            return IExecuteWithSignature<int>("getAdCounterKey", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/adservices/common/KeyedFrequencyCap.html#getMaxCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetMaxCount()
+        {
+            return IExecuteWithSignature<int>("getMaxCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/adservices/common/KeyedFrequencyCap.html#getInterval()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Time.Duration"/></returns>
+        public Java.Time.Duration GetInterval()
+        {
+            return IExecuteWithSignature<Java.Time.Duration>("getInterval", "()Ljava/time/Duration;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/adservices/common/KeyedFrequencyCap.html#writeToParcel(android.os.Parcel,int)"/>

@@ -30,7 +30,7 @@ namespace Java.Util
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/BitSet.html#%3Cinit%3E(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/BitSet.html#%3Cinit%3E(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public BitSet(int arg0)
@@ -58,7 +58,7 @@ namespace Java.Util
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/BitSet.html#valueOf(byte[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/BitSet.html#valueOf(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <returns><see cref="Java.Util.BitSet"/></returns>
@@ -67,7 +67,7 @@ namespace Java.Util
             return SExecuteWithSignature<Java.Util.BitSet>(LocalBridgeClazz, "valueOf", "([B)Ljava/util/BitSet;", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/BitSet.html#valueOf(java.nio.ByteBuffer)"/>
+        /// <see href="https://developer.android.com/reference/java/util/BitSet.html#valueOf(java.nio.ByteBuffer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>
         /// <returns><see cref="Java.Util.BitSet"/></returns>
@@ -76,7 +76,7 @@ namespace Java.Util
             return SExecuteWithSignature<Java.Util.BitSet>(LocalBridgeClazz, "valueOf", "(Ljava/nio/ByteBuffer;)Ljava/util/BitSet;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/BitSet.html#valueOf(java.nio.LongBuffer)"/>
+        /// <see href="https://developer.android.com/reference/java/util/BitSet.html#valueOf(java.nio.LongBuffer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.LongBuffer"/></param>
         /// <returns><see cref="Java.Util.BitSet"/></returns>
@@ -85,7 +85,7 @@ namespace Java.Util
             return SExecuteWithSignature<Java.Util.BitSet>(LocalBridgeClazz, "valueOf", "(Ljava/nio/LongBuffer;)Ljava/util/BitSet;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/BitSet.html#valueOf(long[])"/>
+        /// <see href="https://developer.android.com/reference/java/util/BitSet.html#valueOf(long[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="Java.Util.BitSet"/></returns>
@@ -98,7 +98,7 @@ namespace Java.Util
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/BitSet.html#get(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/BitSet.html#get(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -107,7 +107,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("get", "(I)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/BitSet.html#intersects(java.util.BitSet)"/>
+        /// <see href="https://developer.android.com/reference/java/util/BitSet.html#intersects(java.util.BitSet)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.BitSet"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -116,7 +116,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("intersects", "(Ljava/util/BitSet;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/BitSet.html#isEmpty()"/>
+        /// <see href="https://developer.android.com/reference/java/util/BitSet.html#isEmpty()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsEmpty()
@@ -124,7 +124,7 @@ namespace Java.Util
             return IExecuteWithSignature<bool>("isEmpty", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/BitSet.html#toByteArray()"/>
+        /// <see href="https://developer.android.com/reference/java/util/BitSet.html#toByteArray()"/>
         /// </summary>
         /// <returns><see cref="byte"/></returns>
         public byte[] ToByteArray()
@@ -132,7 +132,7 @@ namespace Java.Util
             return IExecuteWithSignatureArray<byte>("toByteArray", "()[B");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/BitSet.html#cardinality()"/>
+        /// <see href="https://developer.android.com/reference/java/util/BitSet.html#cardinality()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int Cardinality()
@@ -140,7 +140,7 @@ namespace Java.Util
             return IExecuteWithSignature<int>("cardinality", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/BitSet.html#length()"/>
+        /// <see href="https://developer.android.com/reference/java/util/BitSet.html#length()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int Length()
@@ -148,7 +148,7 @@ namespace Java.Util
             return IExecuteWithSignature<int>("length", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/BitSet.html#nextClearBit(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/BitSet.html#nextClearBit(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
@@ -157,7 +157,7 @@ namespace Java.Util
             return IExecuteWithSignature<int>("nextClearBit", "(I)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/BitSet.html#nextSetBit(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/BitSet.html#nextSetBit(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
@@ -166,7 +166,7 @@ namespace Java.Util
             return IExecuteWithSignature<int>("nextSetBit", "(I)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/BitSet.html#previousClearBit(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/BitSet.html#previousClearBit(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
@@ -175,7 +175,7 @@ namespace Java.Util
             return IExecuteWithSignature<int>("previousClearBit", "(I)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/BitSet.html#previousSetBit(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/BitSet.html#previousSetBit(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
@@ -184,7 +184,7 @@ namespace Java.Util
             return IExecuteWithSignature<int>("previousSetBit", "(I)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/BitSet.html#size()"/>
+        /// <see href="https://developer.android.com/reference/java/util/BitSet.html#size()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int Size()
@@ -192,7 +192,7 @@ namespace Java.Util
             return IExecuteWithSignature<int>("size", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/BitSet.html#get(int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/BitSet.html#get(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -202,7 +202,7 @@ namespace Java.Util
             return IExecute<Java.Util.BitSet>("get", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/BitSet.html#stream()"/>
+        /// <see href="https://developer.android.com/reference/java/util/BitSet.html#stream()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>
         public Java.Util.Stream.IntStream Stream()
@@ -210,7 +210,7 @@ namespace Java.Util
             return IExecuteWithSignature<Java.Util.Stream.IntStream>("stream", "()Ljava/util/stream/IntStream;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/BitSet.html#toLongArray()"/>
+        /// <see href="https://developer.android.com/reference/java/util/BitSet.html#toLongArray()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
         public long[] ToLongArray()
@@ -218,7 +218,7 @@ namespace Java.Util
             return IExecuteWithSignatureArray<long>("toLongArray", "()[J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/BitSet.html#and(java.util.BitSet)"/>
+        /// <see href="https://developer.android.com/reference/java/util/BitSet.html#and(java.util.BitSet)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.BitSet"/></param>
         public void And(Java.Util.BitSet arg0)
@@ -226,7 +226,7 @@ namespace Java.Util
             IExecuteWithSignature("and", "(Ljava/util/BitSet;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/BitSet.html#andNot(java.util.BitSet)"/>
+        /// <see href="https://developer.android.com/reference/java/util/BitSet.html#andNot(java.util.BitSet)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.BitSet"/></param>
         public void AndNot(Java.Util.BitSet arg0)
@@ -234,14 +234,14 @@ namespace Java.Util
             IExecuteWithSignature("andNot", "(Ljava/util/BitSet;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/BitSet.html#clear()"/>
+        /// <see href="https://developer.android.com/reference/java/util/BitSet.html#clear()"/>
         /// </summary>
         public void Clear()
         {
             IExecuteWithSignature("clear", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/BitSet.html#clear(int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/BitSet.html#clear(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -250,7 +250,7 @@ namespace Java.Util
             IExecute("clear", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/BitSet.html#clear(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/BitSet.html#clear(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public void Clear(int arg0)
@@ -258,7 +258,7 @@ namespace Java.Util
             IExecuteWithSignature("clear", "(I)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/BitSet.html#flip(int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/BitSet.html#flip(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -267,7 +267,7 @@ namespace Java.Util
             IExecute("flip", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/BitSet.html#flip(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/BitSet.html#flip(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public void Flip(int arg0)
@@ -275,7 +275,7 @@ namespace Java.Util
             IExecuteWithSignature("flip", "(I)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/BitSet.html#or(java.util.BitSet)"/>
+        /// <see href="https://developer.android.com/reference/java/util/BitSet.html#or(java.util.BitSet)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.BitSet"/></param>
         public void Or(Java.Util.BitSet arg0)
@@ -283,7 +283,7 @@ namespace Java.Util
             IExecuteWithSignature("or", "(Ljava/util/BitSet;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/BitSet.html#set(int,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/BitSet.html#set(int,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="bool"/></param>
@@ -292,7 +292,7 @@ namespace Java.Util
             IExecute("set", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/BitSet.html#set(int,int,boolean)"/>
+        /// <see href="https://developer.android.com/reference/java/util/BitSet.html#set(int,int,boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -302,7 +302,7 @@ namespace Java.Util
             IExecute("set", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/BitSet.html#set(int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/BitSet.html#set(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -311,7 +311,7 @@ namespace Java.Util
             IExecute("set", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/BitSet.html#set(int)"/>
+        /// <see href="https://developer.android.com/reference/java/util/BitSet.html#set(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public void Set(int arg0)
@@ -319,7 +319,7 @@ namespace Java.Util
             IExecuteWithSignature("set", "(I)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/BitSet.html#xor(java.util.BitSet)"/>
+        /// <see href="https://developer.android.com/reference/java/util/BitSet.html#xor(java.util.BitSet)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.BitSet"/></param>
         public void Xor(Java.Util.BitSet arg0)

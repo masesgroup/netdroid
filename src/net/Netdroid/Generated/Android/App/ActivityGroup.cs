@@ -33,7 +33,7 @@ namespace Android.App
         /// <see href="https://developer.android.com/reference/android/app/ActivityGroup.html#%3Cinit%3E(boolean)"/>
         /// </summary>
         /// <param name="arg0"><see cref="bool"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public ActivityGroup(bool arg0)
             : base(arg0)
         {
@@ -55,20 +55,22 @@ namespace Android.App
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/ActivityGroup.html#getCurrentActivity()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/ActivityGroup.html#getCurrentActivity()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.App.Activity CurrentActivity
+        /// <returns><see cref="Android.App.Activity"/></returns>
+        [global::System.Obsolete()]
+        public Android.App.Activity GetCurrentActivity()
         {
-            get { return IExecuteWithSignature<Android.App.Activity>("getCurrentActivity", "()Landroid/app/Activity;"); }
+            return IExecuteWithSignature<Android.App.Activity>("getCurrentActivity", "()Landroid/app/Activity;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/app/ActivityGroup.html#getLocalActivityManager()"/> 
+        /// <see href="https://developer.android.com/reference/android/app/ActivityGroup.html#getLocalActivityManager()"/>
         /// </summary>
-        [System.Obsolete()]
-        public Android.App.LocalActivityManager LocalActivityManager
+        /// <returns><see cref="Android.App.LocalActivityManager"/></returns>
+        [global::System.Obsolete()]
+        public Android.App.LocalActivityManager GetLocalActivityManager()
         {
-            get { return IExecuteWithSignature<Android.App.LocalActivityManager>("getLocalActivityManager", "()Landroid/app/LocalActivityManager;"); }
+            return IExecuteWithSignature<Android.App.LocalActivityManager>("getLocalActivityManager", "()Landroid/app/LocalActivityManager;");
         }
 
         #endregion

@@ -30,7 +30,7 @@ namespace Javax.Sql
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/ConnectionEvent.html#%3Cinit%3E(javax.sql.PooledConnection,java.sql.SQLException)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/ConnectionEvent.html#%3Cinit%3E(javax.sql.PooledConnection,java.sql.SQLException)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Sql.PooledConnection"/></param>
         /// <param name="arg1"><see cref="Java.Sql.SQLException"/></param>
@@ -39,7 +39,7 @@ namespace Javax.Sql
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/ConnectionEvent.html#%3Cinit%3E(javax.sql.PooledConnection)"/>
+        /// <see href="https://developer.android.com/reference/javax/sql/ConnectionEvent.html#%3Cinit%3E(javax.sql.PooledConnection)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Sql.PooledConnection"/></param>
         public ConnectionEvent(Javax.Sql.PooledConnection arg0)
@@ -63,11 +63,12 @@ namespace Javax.Sql
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.sql/javax/sql/ConnectionEvent.html#getSQLException()"/> 
+        /// <see href="https://developer.android.com/reference/javax/sql/ConnectionEvent.html#getSQLException()"/>
         /// </summary>
-        public Java.Sql.SQLException SQLException
+        /// <returns><see cref="Java.Sql.SQLException"/></returns>
+        public Java.Sql.SQLException GetSQLException()
         {
-            get { var obj = IExecuteWithSignature<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>("getSQLException", "()Ljava/sql/SQLException;"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<Java.Sql.SQLException>(obj); }
+            var obj = IExecuteWithSignature<MASES.JCOBridge.C2JBridge.JVMInterop.IJavaObject>("getSQLException", "()Ljava/sql/SQLException;"); return MASES.JCOBridge.C2JBridge.JVMBridgeException.New<Java.Sql.SQLException>(obj);
         }
 
         #endregion

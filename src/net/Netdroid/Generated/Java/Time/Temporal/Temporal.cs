@@ -64,7 +64,7 @@ namespace Java.Time.Temporal
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/Temporal.html#isSupported(java.time.temporal.TemporalUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/Temporal.html#isSupported(java.time.temporal.TemporalUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalUnit"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -73,7 +73,7 @@ namespace Java.Time.Temporal
             return IExecuteWithSignature<bool>("isSupported", "(Ljava/time/temporal/TemporalUnit;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/Temporal.html#plus(long,java.time.temporal.TemporalUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/Temporal.html#plus(long,java.time.temporal.TemporalUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Time.Temporal.TemporalUnit"/></param>
@@ -83,7 +83,7 @@ namespace Java.Time.Temporal
             return IExecute<Java.Time.Temporal.Temporal>("plus", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/Temporal.html#with(java.time.temporal.TemporalField,long)"/>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/Temporal.html#with(java.time.temporal.TemporalField,long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalField"/></param>
         /// <param name="arg1"><see cref="long"/></param>
@@ -93,7 +93,7 @@ namespace Java.Time.Temporal
             return IExecute<Java.Time.Temporal.Temporal>("with", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/Temporal.html#until(java.time.temporal.Temporal,java.time.temporal.TemporalUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/Temporal.html#until(java.time.temporal.Temporal,java.time.temporal.TemporalUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.Temporal"/></param>
         /// <param name="arg1"><see cref="Java.Time.Temporal.TemporalUnit"/></param>
@@ -103,7 +103,7 @@ namespace Java.Time.Temporal
             return IExecute<long>("until", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/Temporal.html#minus(java.time.temporal.TemporalAmount)"/>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/Temporal.html#minus(java.time.temporal.TemporalAmount)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAmount"/></param>
         /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
@@ -112,7 +112,7 @@ namespace Java.Time.Temporal
             return IExecuteWithSignature<Java.Time.Temporal.Temporal>("minus", "(Ljava/time/temporal/TemporalAmount;)Ljava/time/temporal/Temporal;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/Temporal.html#minus(long,java.time.temporal.TemporalUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/Temporal.html#minus(long,java.time.temporal.TemporalUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Time.Temporal.TemporalUnit"/></param>
@@ -122,7 +122,7 @@ namespace Java.Time.Temporal
             return IExecute<Java.Time.Temporal.Temporal>("minus", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/Temporal.html#plus(java.time.temporal.TemporalAmount)"/>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/Temporal.html#plus(java.time.temporal.TemporalAmount)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAmount"/></param>
         /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>
@@ -131,7 +131,7 @@ namespace Java.Time.Temporal
             return IExecuteWithSignature<Java.Time.Temporal.Temporal>("plus", "(Ljava/time/temporal/TemporalAmount;)Ljava/time/temporal/Temporal;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/temporal/Temporal.html#with(java.time.temporal.TemporalAdjuster)"/>
+        /// <see href="https://developer.android.com/reference/java/time/temporal/Temporal.html#with(java.time.temporal.TemporalAdjuster)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAdjuster"/></param>
         /// <returns><see cref="Java.Time.Temporal.Temporal"/></returns>

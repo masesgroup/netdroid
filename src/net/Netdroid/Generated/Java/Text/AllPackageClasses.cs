@@ -28,7 +28,7 @@ namespace Java.Text
 {
     #region Annotation
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/text/Annotation.html"/>
+    /// <see href="https://developer.android.com/reference/java/text/Annotation.html"/>
     /// </summary>
     public partial class Annotation : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Annotation>
     {
@@ -72,7 +72,7 @@ namespace Java.Text
 
     #region AttributedCharacterIterator
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/text/AttributedCharacterIterator.html"/>
+    /// <see href="https://developer.android.com/reference/java/text/AttributedCharacterIterator.html"/>
     /// </summary>
     public partial class AttributedCharacterIterator : Java.Text.CharacterIterator
     {
@@ -80,12 +80,12 @@ namespace Java.Text
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("AttributedCharacterIterator class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("AttributedCharacterIterator class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AttributedCharacterIterator() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("AttributedCharacterIterator class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("AttributedCharacterIterator class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AttributedCharacterIterator(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -114,7 +114,7 @@ namespace Java.Text
         // TODO: complete the class
         #region Attribute
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/AttributedCharacterIterator.Attribute.html"/>
+        /// <see href="https://developer.android.com/reference/java/text/AttributedCharacterIterator.Attribute.html"/>
         /// </summary>
         public partial class Attribute : Java.Io.Serializable
         {
@@ -162,7 +162,7 @@ namespace Java.Text
 
     #region AttributedString
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/text/AttributedString.html"/>
+    /// <see href="https://developer.android.com/reference/java/text/AttributedString.html"/>
     /// </summary>
     public partial class AttributedString : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AttributedString>
     {
@@ -206,7 +206,7 @@ namespace Java.Text
 
     #region Bidi
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/text/Bidi.html"/>
+    /// <see href="https://developer.android.com/reference/java/text/Bidi.html"/>
     /// </summary>
     public partial class Bidi : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Bidi>
     {
@@ -250,7 +250,7 @@ namespace Java.Text
 
     #region BreakIterator
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/text/BreakIterator.html"/>
+    /// <see href="https://developer.android.com/reference/java/text/BreakIterator.html"/>
     /// </summary>
     public partial class BreakIterator : Java.Lang.Cloneable
     {
@@ -258,12 +258,12 @@ namespace Java.Text
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("BreakIterator class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("BreakIterator class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public BreakIterator() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("BreakIterator class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("BreakIterator class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public BreakIterator(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -296,7 +296,7 @@ namespace Java.Text
 
     #region CharacterIterator
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/text/CharacterIterator.html"/>
+    /// <see href="https://developer.android.com/reference/java/text/CharacterIterator.html"/>
     /// </summary>
     public partial class CharacterIterator : Java.Lang.Cloneable
     {
@@ -304,12 +304,12 @@ namespace Java.Text
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("CharacterIterator class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("CharacterIterator class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CharacterIterator() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("CharacterIterator class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("CharacterIterator class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CharacterIterator(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -342,7 +342,7 @@ namespace Java.Text
 
     #region ChoiceFormat
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/text/ChoiceFormat.html"/>
+    /// <see href="https://developer.android.com/reference/java/text/ChoiceFormat.html"/>
     /// </summary>
     public partial class ChoiceFormat : Java.Text.NumberFormat
     {
@@ -386,7 +386,7 @@ namespace Java.Text
 
     #region CollationElementIterator
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/text/CollationElementIterator.html"/>
+    /// <see href="https://developer.android.com/reference/java/text/CollationElementIterator.html"/>
     /// </summary>
     public partial class CollationElementIterator : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CollationElementIterator>
     {
@@ -430,7 +430,7 @@ namespace Java.Text
 
     #region CollationKey
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/text/CollationKey.html"/>
+    /// <see href="https://developer.android.com/reference/java/text/CollationKey.html"/>
     /// </summary>
     public partial class CollationKey : Java.Lang.Comparable<Java.Text.CollationKey>
     {
@@ -438,12 +438,12 @@ namespace Java.Text
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("CollationKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("CollationKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CollationKey() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("CollationKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("CollationKey class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CollationKey(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -476,7 +476,7 @@ namespace Java.Text
 
     #region Collator
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/text/Collator.html"/>
+    /// <see href="https://developer.android.com/reference/java/text/Collator.html"/>
     /// </summary>
     public partial class Collator : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Collator>
     {
@@ -484,12 +484,12 @@ namespace Java.Text
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Collator class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Collator class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Collator() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Collator class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Collator class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Collator(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -522,7 +522,7 @@ namespace Java.Text
 
     #region DateFormat
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/text/DateFormat.html"/>
+    /// <see href="https://developer.android.com/reference/java/text/DateFormat.html"/>
     /// </summary>
     public partial class DateFormat : Java.Text.Format
     {
@@ -530,12 +530,12 @@ namespace Java.Text
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("DateFormat class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DateFormat class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DateFormat() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("DateFormat class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("DateFormat class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public DateFormat(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -564,7 +564,7 @@ namespace Java.Text
         // TODO: complete the class
         #region Field
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/DateFormat.Field.html"/>
+        /// <see href="https://developer.android.com/reference/java/text/DateFormat.Field.html"/>
         /// </summary>
         public partial class Field : Java.Text.Format.Field
         {
@@ -612,7 +612,7 @@ namespace Java.Text
 
     #region DateFormatSymbols
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/text/DateFormatSymbols.html"/>
+    /// <see href="https://developer.android.com/reference/java/text/DateFormatSymbols.html"/>
     /// </summary>
     public partial class DateFormatSymbols : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DateFormatSymbols>
     {
@@ -656,7 +656,7 @@ namespace Java.Text
 
     #region DecimalFormat
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/text/DecimalFormat.html"/>
+    /// <see href="https://developer.android.com/reference/java/text/DecimalFormat.html"/>
     /// </summary>
     public partial class DecimalFormat : Java.Text.NumberFormat
     {
@@ -700,7 +700,7 @@ namespace Java.Text
 
     #region DecimalFormatSymbols
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/text/DecimalFormatSymbols.html"/>
+    /// <see href="https://developer.android.com/reference/java/text/DecimalFormatSymbols.html"/>
     /// </summary>
     public partial class DecimalFormatSymbols : MASES.JCOBridge.C2JBridge.JVMBridgeBase<DecimalFormatSymbols>
     {
@@ -744,7 +744,7 @@ namespace Java.Text
 
     #region FieldPosition
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/text/FieldPosition.html"/>
+    /// <see href="https://developer.android.com/reference/java/text/FieldPosition.html"/>
     /// </summary>
     public partial class FieldPosition : MASES.JCOBridge.C2JBridge.JVMBridgeBase<FieldPosition>
     {
@@ -788,7 +788,7 @@ namespace Java.Text
 
     #region Format
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/text/Format.html"/>
+    /// <see href="https://developer.android.com/reference/java/text/Format.html"/>
     /// </summary>
     public partial class Format : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Format>
     {
@@ -796,12 +796,12 @@ namespace Java.Text
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Format class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Format class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Format() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Format class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Format class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Format(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -830,7 +830,7 @@ namespace Java.Text
         // TODO: complete the class
         #region Field
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/Format.Field.html"/>
+        /// <see href="https://developer.android.com/reference/java/text/Format.Field.html"/>
         /// </summary>
         public partial class Field : Java.Text.AttributedCharacterIterator.Attribute
         {
@@ -878,7 +878,7 @@ namespace Java.Text
 
     #region MessageFormat
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/text/MessageFormat.html"/>
+    /// <see href="https://developer.android.com/reference/java/text/MessageFormat.html"/>
     /// </summary>
     public partial class MessageFormat : Java.Text.Format
     {
@@ -918,7 +918,7 @@ namespace Java.Text
         // TODO: complete the class
         #region Field
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/MessageFormat.Field.html"/>
+        /// <see href="https://developer.android.com/reference/java/text/MessageFormat.Field.html"/>
         /// </summary>
         public partial class Field : Java.Text.Format.Field
         {
@@ -966,7 +966,7 @@ namespace Java.Text
 
     #region Normalizer
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/text/Normalizer.html"/>
+    /// <see href="https://developer.android.com/reference/java/text/Normalizer.html"/>
     /// </summary>
     public partial class Normalizer : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Normalizer>
     {
@@ -1006,7 +1006,7 @@ namespace Java.Text
         // TODO: complete the class
         #region Form
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/Normalizer.Form.html"/>
+        /// <see href="https://developer.android.com/reference/java/text/Normalizer.Form.html"/>
         /// </summary>
         public partial class Form : Java.Lang.Enum<Java.Text.Normalizer.Form>
         {
@@ -1054,7 +1054,7 @@ namespace Java.Text
 
     #region NumberFormat
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/text/NumberFormat.html"/>
+    /// <see href="https://developer.android.com/reference/java/text/NumberFormat.html"/>
     /// </summary>
     public partial class NumberFormat : Java.Text.Format
     {
@@ -1062,12 +1062,12 @@ namespace Java.Text
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("NumberFormat class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("NumberFormat class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public NumberFormat() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("NumberFormat class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("NumberFormat class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public NumberFormat(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1096,7 +1096,7 @@ namespace Java.Text
         // TODO: complete the class
         #region Field
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/NumberFormat.Field.html"/>
+        /// <see href="https://developer.android.com/reference/java/text/NumberFormat.Field.html"/>
         /// </summary>
         public partial class Field : Java.Text.Format.Field
         {
@@ -1144,7 +1144,7 @@ namespace Java.Text
 
     #region ParseException
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/text/ParseException.html"/>
+    /// <see href="https://developer.android.com/reference/java/text/ParseException.html"/>
     /// </summary>
     public partial class ParseException : Java.Lang.Exception
     {
@@ -1161,7 +1161,7 @@ namespace Java.Text
 
     #region ParsePosition
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/text/ParsePosition.html"/>
+    /// <see href="https://developer.android.com/reference/java/text/ParsePosition.html"/>
     /// </summary>
     public partial class ParsePosition : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ParsePosition>
     {
@@ -1205,7 +1205,7 @@ namespace Java.Text
 
     #region RuleBasedCollator
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/text/RuleBasedCollator.html"/>
+    /// <see href="https://developer.android.com/reference/java/text/RuleBasedCollator.html"/>
     /// </summary>
     public partial class RuleBasedCollator : Java.Text.Collator
     {
@@ -1249,7 +1249,7 @@ namespace Java.Text
 
     #region SimpleDateFormat
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/text/SimpleDateFormat.html"/>
+    /// <see href="https://developer.android.com/reference/java/text/SimpleDateFormat.html"/>
     /// </summary>
     public partial class SimpleDateFormat : Java.Text.DateFormat
     {
@@ -1293,7 +1293,7 @@ namespace Java.Text
 
     #region StringCharacterIterator
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/text/StringCharacterIterator.html"/>
+    /// <see href="https://developer.android.com/reference/java/text/StringCharacterIterator.html"/>
     /// </summary>
     public partial class StringCharacterIterator : Java.Text.CharacterIterator
     {

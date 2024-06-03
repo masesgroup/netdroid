@@ -46,7 +46,7 @@ namespace Java.Util.Concurrent.Atomic
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/DoubleAdder.html#sum()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/DoubleAdder.html#sum()"/>
         /// </summary>
         /// <returns><see cref="double"/></returns>
         public double Sum()
@@ -54,7 +54,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecuteWithSignature<double>("sum", "()D");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/DoubleAdder.html#sumThenReset()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/DoubleAdder.html#sumThenReset()"/>
         /// </summary>
         /// <returns><see cref="double"/></returns>
         public double SumThenReset()
@@ -62,7 +62,7 @@ namespace Java.Util.Concurrent.Atomic
             return IExecuteWithSignature<double>("sumThenReset", "()D");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/DoubleAdder.html#add(double)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/DoubleAdder.html#add(double)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
         public void Add(double arg0)
@@ -70,7 +70,7 @@ namespace Java.Util.Concurrent.Atomic
             IExecuteWithSignature("add", "(D)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/atomic/DoubleAdder.html#reset()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/atomic/DoubleAdder.html#reset()"/>
         /// </summary>
         public void Reset()
         {

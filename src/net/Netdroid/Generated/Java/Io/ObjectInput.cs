@@ -72,7 +72,7 @@ namespace Java.Io
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectInput.html#available()"/>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectInput.html#available()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -81,7 +81,7 @@ namespace Java.Io
             return IExecuteWithSignature<int>("available", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectInput.html#read()"/>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectInput.html#read()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Io.IOException"/>
@@ -90,7 +90,7 @@ namespace Java.Io
             return IExecuteWithSignature<int>("read", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectInput.html#read(byte[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectInput.html#read(byte[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -102,7 +102,7 @@ namespace Java.Io
             return IExecute<int>("read", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectInput.html#read(byte[])"/>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectInput.html#read(byte[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <returns><see cref="int"/></returns>
@@ -112,7 +112,7 @@ namespace Java.Io
             return IExecuteWithSignature<int>("read", "([B)I", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectInput.html#readObject()"/>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectInput.html#readObject()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
         /// <exception cref="Java.Lang.ClassNotFoundException"/>
@@ -122,7 +122,7 @@ namespace Java.Io
             return IExecuteWithSignature("readObject", "()Ljava/lang/Object;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectInput.html#skip(long)"/>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectInput.html#skip(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="long"/></returns>
@@ -132,7 +132,7 @@ namespace Java.Io
             return IExecuteWithSignature<long>("skip", "(J)J", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/io/ObjectInput.html#close()"/>
+        /// <see href="https://developer.android.com/reference/java/io/ObjectInput.html#close()"/>
         /// </summary>
         /// <exception cref="Java.Io.IOException"/>
         public void Close()

@@ -55,18 +55,20 @@ namespace Android.Graphics
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/LightingColorFilter.html#getColorAdd()"/> 
+        /// <see href="https://developer.android.com/reference/android/graphics/LightingColorFilter.html#getColorAdd()"/>
         /// </summary>
-        public int ColorAdd
+        /// <returns><see cref="int"/></returns>
+        public int GetColorAdd()
         {
-            get { return IExecuteWithSignature<int>("getColorAdd", "()I"); }
+            return IExecuteWithSignature<int>("getColorAdd", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/graphics/LightingColorFilter.html#getColorMultiply()"/> 
+        /// <see href="https://developer.android.com/reference/android/graphics/LightingColorFilter.html#getColorMultiply()"/>
         /// </summary>
-        public int ColorMultiply
+        /// <returns><see cref="int"/></returns>
+        public int GetColorMultiply()
         {
-            get { return IExecuteWithSignature<int>("getColorMultiply", "()I"); }
+            return IExecuteWithSignature<int>("getColorMultiply", "()I");
         }
 
         #endregion

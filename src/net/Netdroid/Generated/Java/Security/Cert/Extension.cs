@@ -64,21 +64,7 @@ namespace Java.Security.Cert
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/Extension.html#getId()"/> 
-        /// </summary>
-        public Java.Lang.String Id
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/Extension.html#getValue()"/> 
-        /// </summary>
-        public byte[] Value
-        {
-            get { return IExecuteWithSignatureArray<byte>("getValue", "()[B"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/Extension.html#isCritical()"/>
+        /// <see href="https://developer.android.com/reference/java/security/cert/Extension.html#isCritical()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsCritical()
@@ -86,7 +72,23 @@ namespace Java.Security.Cert
             return IExecuteWithSignature<bool>("isCritical", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/security/cert/Extension.html#encode(java.io.OutputStream)"/>
+        /// <see href="https://developer.android.com/reference/java/security/cert/Extension.html#getValue()"/>
+        /// </summary>
+        /// <returns><see cref="byte"/></returns>
+        public byte[] GetValue()
+        {
+            return IExecuteWithSignatureArray<byte>("getValue", "()[B");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/cert/Extension.html#getId()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetId()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getId", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/cert/Extension.html#encode(java.io.OutputStream)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Io.OutputStream"/></param>
         /// <exception cref="Java.Io.IOException"/>

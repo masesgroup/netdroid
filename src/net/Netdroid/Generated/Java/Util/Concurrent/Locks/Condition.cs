@@ -64,7 +64,7 @@ namespace Java.Util.Concurrent.Locks
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/Condition.html#await(long,java.util.concurrent.TimeUnit)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/Condition.html#await(long,java.util.concurrent.TimeUnit)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <param name="arg1"><see cref="Java.Util.Concurrent.TimeUnit"/></param>
@@ -75,7 +75,7 @@ namespace Java.Util.Concurrent.Locks
             return IExecute<bool>("await", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/Condition.html#awaitUntil(java.util.Date)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/Condition.html#awaitUntil(java.util.Date)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Date"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -85,7 +85,7 @@ namespace Java.Util.Concurrent.Locks
             return IExecuteWithSignature<bool>("awaitUntil", "(Ljava/util/Date;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/Condition.html#awaitNanos(long)"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/Condition.html#awaitNanos(long)"/>
         /// </summary>
         /// <param name="arg0"><see cref="long"/></param>
         /// <returns><see cref="long"/></returns>
@@ -95,7 +95,7 @@ namespace Java.Util.Concurrent.Locks
             return IExecuteWithSignature<long>("awaitNanos", "(J)J", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/Condition.html#await()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/Condition.html#await()"/>
         /// </summary>
         /// <exception cref="Java.Lang.InterruptedException"/>
         public void Await()
@@ -103,21 +103,21 @@ namespace Java.Util.Concurrent.Locks
             IExecuteWithSignature("await", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/Condition.html#awaitUninterruptibly()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/Condition.html#awaitUninterruptibly()"/>
         /// </summary>
         public void AwaitUninterruptibly()
         {
             IExecuteWithSignature("awaitUninterruptibly", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/Condition.html#signal()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/Condition.html#signal()"/>
         /// </summary>
         public void Signal()
         {
             IExecuteWithSignature("signal", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/util/concurrent/locks/Condition.html#signalAll()"/>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/Condition.html#signalAll()"/>
         /// </summary>
         public void SignalAll()
         {

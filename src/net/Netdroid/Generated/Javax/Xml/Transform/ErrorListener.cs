@@ -27,7 +27,7 @@ namespace Javax.Xml.Transform
 {
     #region IErrorListener
     /// <summary>
-    /// .NET interface for org.mases.netdroid.generated.javax.xml.transform.ErrorListener implementing <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/ErrorListener.html"/>
+    /// .NET interface for org.mases.netdroid.generated.javax.xml.transform.ErrorListener implementing <see href="https://developer.android.com/reference/javax/xml/transform/ErrorListener.html"/>
     /// </summary>
     public partial interface IErrorListener
     {
@@ -68,17 +68,17 @@ namespace Javax.Xml.Transform
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("error", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(ErrorEventHandler));
-            AddEventHandler("fatalError", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(FatalErrorEventHandler));
-            AddEventHandler("warning", new System.EventHandler<CLRListenerEventArgs<CLREventData>>(WarningEventHandler));
+            AddEventHandler("error", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(ErrorEventHandler));
+            AddEventHandler("fatalError", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(FatalErrorEventHandler));
+            AddEventHandler("warning", new global::System.EventHandler<CLRListenerEventArgs<CLREventData>>(WarningEventHandler));
 
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/ErrorListener.html#error(javax.xml.transform.TransformerException)"/>
+        /// Handler for <see href="https://developer.android.com/reference/javax/xml/transform/ErrorListener.html#error(javax.xml.transform.TransformerException)"/>
         /// </summary>
         /// <remarks>If <see cref="OnError"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<MASES.JCOBridge.C2JBridge.JVMBridgeException> OnError { get; set; } = null;
+        public global::System.Action<MASES.JCOBridge.C2JBridge.JVMBridgeException> OnError { get; set; } = null;
 
         void ErrorEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
@@ -87,7 +87,7 @@ namespace Javax.Xml.Transform
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/ErrorListener.html#error(javax.xml.transform.TransformerException)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/ErrorListener.html#error(javax.xml.transform.TransformerException)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Xml.Transform.TransformerException"/></param>
         /// <exception cref="Javax.Xml.Transform.TransformerException"/>
@@ -97,10 +97,10 @@ namespace Javax.Xml.Transform
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/ErrorListener.html#fatalError(javax.xml.transform.TransformerException)"/>
+        /// Handler for <see href="https://developer.android.com/reference/javax/xml/transform/ErrorListener.html#fatalError(javax.xml.transform.TransformerException)"/>
         /// </summary>
         /// <remarks>If <see cref="OnFatalError"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<MASES.JCOBridge.C2JBridge.JVMBridgeException> OnFatalError { get; set; } = null;
+        public global::System.Action<MASES.JCOBridge.C2JBridge.JVMBridgeException> OnFatalError { get; set; } = null;
 
         void FatalErrorEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
@@ -109,7 +109,7 @@ namespace Javax.Xml.Transform
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/ErrorListener.html#fatalError(javax.xml.transform.TransformerException)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/ErrorListener.html#fatalError(javax.xml.transform.TransformerException)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Xml.Transform.TransformerException"/></param>
         /// <exception cref="Javax.Xml.Transform.TransformerException"/>
@@ -119,10 +119,10 @@ namespace Javax.Xml.Transform
         }
 
         /// <summary>
-        /// Handler for <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/ErrorListener.html#warning(javax.xml.transform.TransformerException)"/>
+        /// Handler for <see href="https://developer.android.com/reference/javax/xml/transform/ErrorListener.html#warning(javax.xml.transform.TransformerException)"/>
         /// </summary>
         /// <remarks>If <see cref="OnWarning"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<MASES.JCOBridge.C2JBridge.JVMBridgeException> OnWarning { get; set; } = null;
+        public global::System.Action<MASES.JCOBridge.C2JBridge.JVMBridgeException> OnWarning { get; set; } = null;
 
         void WarningEventHandler(object sender, CLRListenerEventArgs<CLREventData> data)
         {
@@ -131,7 +131,7 @@ namespace Javax.Xml.Transform
         }
 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/ErrorListener.html#warning(javax.xml.transform.TransformerException)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/ErrorListener.html#warning(javax.xml.transform.TransformerException)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Xml.Transform.TransformerException"/></param>
         /// <exception cref="Javax.Xml.Transform.TransformerException"/>
@@ -171,7 +171,7 @@ namespace Javax.Xml.Transform
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/ErrorListener.html#error(javax.xml.transform.TransformerException)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/ErrorListener.html#error(javax.xml.transform.TransformerException)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Xml.Transform.TransformerException"/></param>
         /// <exception cref="Javax.Xml.Transform.TransformerException"/>
@@ -180,7 +180,7 @@ namespace Javax.Xml.Transform
             IExecuteWithSignature("error", "(Ljavax/xml/transform/TransformerException;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/ErrorListener.html#fatalError(javax.xml.transform.TransformerException)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/ErrorListener.html#fatalError(javax.xml.transform.TransformerException)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Xml.Transform.TransformerException"/></param>
         /// <exception cref="Javax.Xml.Transform.TransformerException"/>
@@ -189,7 +189,7 @@ namespace Javax.Xml.Transform
             IExecuteWithSignature("fatalError", "(Ljavax/xml/transform/TransformerException;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.xml/javax/xml/transform/ErrorListener.html#warning(javax.xml.transform.TransformerException)"/>
+        /// <see href="https://developer.android.com/reference/javax/xml/transform/ErrorListener.html#warning(javax.xml.transform.TransformerException)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Javax.Xml.Transform.TransformerException"/></param>
         /// <exception cref="Javax.Xml.Transform.TransformerException"/>

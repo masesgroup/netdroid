@@ -30,7 +30,7 @@ namespace Java.Text
     {
         #region Constructors
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/Bidi.html#%3Cinit%3E(char[],int,byte[],int,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/text/Bidi.html#%3Cinit%3E(char[],int,byte[],int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -43,7 +43,7 @@ namespace Java.Text
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/Bidi.html#%3Cinit%3E(java.lang.String,int)"/>
+        /// <see href="https://developer.android.com/reference/java/text/Bidi.html#%3Cinit%3E(java.lang.String,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -52,7 +52,7 @@ namespace Java.Text
         {
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/Bidi.html#%3Cinit%3E(java.text.AttributedCharacterIterator)"/>
+        /// <see href="https://developer.android.com/reference/java/text/Bidi.html#%3Cinit%3E(java.text.AttributedCharacterIterator)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Text.AttributedCharacterIterator"/></param>
         public Bidi(Java.Text.AttributedCharacterIterator arg0)
@@ -68,25 +68,25 @@ namespace Java.Text
 
         #region Fields
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/Bidi.html#DIRECTION_DEFAULT_LEFT_TO_RIGHT"/>
+        /// <see href="https://developer.android.com/reference/java/text/Bidi.html#DIRECTION_DEFAULT_LEFT_TO_RIGHT"/>
         /// </summary>
         public static int DIRECTION_DEFAULT_LEFT_TO_RIGHT { get { if (!_DIRECTION_DEFAULT_LEFT_TO_RIGHTReady) { _DIRECTION_DEFAULT_LEFT_TO_RIGHTContent = SGetField<int>(LocalBridgeClazz, "DIRECTION_DEFAULT_LEFT_TO_RIGHT"); _DIRECTION_DEFAULT_LEFT_TO_RIGHTReady = true; } return _DIRECTION_DEFAULT_LEFT_TO_RIGHTContent; } }
         private static int _DIRECTION_DEFAULT_LEFT_TO_RIGHTContent = default;
         private static bool _DIRECTION_DEFAULT_LEFT_TO_RIGHTReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/Bidi.html#DIRECTION_DEFAULT_RIGHT_TO_LEFT"/>
+        /// <see href="https://developer.android.com/reference/java/text/Bidi.html#DIRECTION_DEFAULT_RIGHT_TO_LEFT"/>
         /// </summary>
         public static int DIRECTION_DEFAULT_RIGHT_TO_LEFT { get { if (!_DIRECTION_DEFAULT_RIGHT_TO_LEFTReady) { _DIRECTION_DEFAULT_RIGHT_TO_LEFTContent = SGetField<int>(LocalBridgeClazz, "DIRECTION_DEFAULT_RIGHT_TO_LEFT"); _DIRECTION_DEFAULT_RIGHT_TO_LEFTReady = true; } return _DIRECTION_DEFAULT_RIGHT_TO_LEFTContent; } }
         private static int _DIRECTION_DEFAULT_RIGHT_TO_LEFTContent = default;
         private static bool _DIRECTION_DEFAULT_RIGHT_TO_LEFTReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/Bidi.html#DIRECTION_LEFT_TO_RIGHT"/>
+        /// <see href="https://developer.android.com/reference/java/text/Bidi.html#DIRECTION_LEFT_TO_RIGHT"/>
         /// </summary>
         public static int DIRECTION_LEFT_TO_RIGHT { get { if (!_DIRECTION_LEFT_TO_RIGHTReady) { _DIRECTION_LEFT_TO_RIGHTContent = SGetField<int>(LocalBridgeClazz, "DIRECTION_LEFT_TO_RIGHT"); _DIRECTION_LEFT_TO_RIGHTReady = true; } return _DIRECTION_LEFT_TO_RIGHTContent; } }
         private static int _DIRECTION_LEFT_TO_RIGHTContent = default;
         private static bool _DIRECTION_LEFT_TO_RIGHTReady = false; // this is used because in case of generics 
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/Bidi.html#DIRECTION_RIGHT_TO_LEFT"/>
+        /// <see href="https://developer.android.com/reference/java/text/Bidi.html#DIRECTION_RIGHT_TO_LEFT"/>
         /// </summary>
         public static int DIRECTION_RIGHT_TO_LEFT { get { if (!_DIRECTION_RIGHT_TO_LEFTReady) { _DIRECTION_RIGHT_TO_LEFTContent = SGetField<int>(LocalBridgeClazz, "DIRECTION_RIGHT_TO_LEFT"); _DIRECTION_RIGHT_TO_LEFTReady = true; } return _DIRECTION_RIGHT_TO_LEFTContent; } }
         private static int _DIRECTION_RIGHT_TO_LEFTContent = default;
@@ -96,7 +96,7 @@ namespace Java.Text
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/Bidi.html#requiresBidi(char[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/text/Bidi.html#requiresBidi(char[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -107,7 +107,7 @@ namespace Java.Text
             return SExecute<bool>(LocalBridgeClazz, "requiresBidi", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/Bidi.html#reorderVisually(byte[],int,java.lang.Object[],int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/text/Bidi.html#reorderVisually(byte[],int,java.lang.Object[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="byte"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -123,28 +123,7 @@ namespace Java.Text
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/Bidi.html#getBaseLevel()"/> 
-        /// </summary>
-        public int BaseLevel
-        {
-            get { return IExecuteWithSignature<int>("getBaseLevel", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/Bidi.html#getLength()"/> 
-        /// </summary>
-        public int Length
-        {
-            get { return IExecuteWithSignature<int>("getLength", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/Bidi.html#getRunCount()"/> 
-        /// </summary>
-        public int RunCount
-        {
-            get { return IExecuteWithSignature<int>("getRunCount", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/Bidi.html#baseIsLeftToRight()"/>
+        /// <see href="https://developer.android.com/reference/java/text/Bidi.html#baseIsLeftToRight()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool BaseIsLeftToRight()
@@ -152,7 +131,7 @@ namespace Java.Text
             return IExecuteWithSignature<bool>("baseIsLeftToRight", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/Bidi.html#isLeftToRight()"/>
+        /// <see href="https://developer.android.com/reference/java/text/Bidi.html#isLeftToRight()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsLeftToRight()
@@ -160,7 +139,7 @@ namespace Java.Text
             return IExecuteWithSignature<bool>("isLeftToRight", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/Bidi.html#isMixed()"/>
+        /// <see href="https://developer.android.com/reference/java/text/Bidi.html#isMixed()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsMixed()
@@ -168,7 +147,7 @@ namespace Java.Text
             return IExecuteWithSignature<bool>("isMixed", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/Bidi.html#isRightToLeft()"/>
+        /// <see href="https://developer.android.com/reference/java/text/Bidi.html#isRightToLeft()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         public bool IsRightToLeft()
@@ -176,7 +155,23 @@ namespace Java.Text
             return IExecuteWithSignature<bool>("isRightToLeft", "()Z");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/Bidi.html#getLevelAt(int)"/>
+        /// <see href="https://developer.android.com/reference/java/text/Bidi.html#getBaseLevel()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetBaseLevel()
+        {
+            return IExecuteWithSignature<int>("getBaseLevel", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/text/Bidi.html#getLength()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetLength()
+        {
+            return IExecuteWithSignature<int>("getLength", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/text/Bidi.html#getLevelAt(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
@@ -185,7 +180,15 @@ namespace Java.Text
             return IExecuteWithSignature<int>("getLevelAt", "(I)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/Bidi.html#getRunLevel(int)"/>
+        /// <see href="https://developer.android.com/reference/java/text/Bidi.html#getRunCount()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetRunCount()
+        {
+            return IExecuteWithSignature<int>("getRunCount", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/text/Bidi.html#getRunLevel(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
@@ -194,7 +197,7 @@ namespace Java.Text
             return IExecuteWithSignature<int>("getRunLevel", "(I)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/Bidi.html#getRunLimit(int)"/>
+        /// <see href="https://developer.android.com/reference/java/text/Bidi.html#getRunLimit(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
@@ -203,7 +206,7 @@ namespace Java.Text
             return IExecuteWithSignature<int>("getRunLimit", "(I)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/Bidi.html#getRunStart(int)"/>
+        /// <see href="https://developer.android.com/reference/java/text/Bidi.html#getRunStart(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
@@ -212,7 +215,7 @@ namespace Java.Text
             return IExecuteWithSignature<int>("getRunStart", "(I)I", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/text/Bidi.html#createLineBidi(int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/text/Bidi.html#createLineBidi(int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>

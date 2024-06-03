@@ -44,7 +44,7 @@ namespace Android.Net.Http
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Android.Net.Http.SslCertificate"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public SslError(int arg0, Android.Net.Http.SslCertificate arg1)
             : base(arg0, arg1)
         {
@@ -64,7 +64,7 @@ namespace Android.Net.Http
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="Java.Security.Cert.X509Certificate"/></param>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public SslError(int arg0, Java.Security.Cert.X509Certificate arg1)
             : base(arg0, arg1)
         {
@@ -104,7 +104,7 @@ namespace Android.Net.Http
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/http/SslError.html#SSL_MAX_ERROR"/>
         /// </summary>
-        [System.Obsolete()]
+        [global::System.Obsolete()]
         public static int SSL_MAX_ERROR { get { if (!_SSL_MAX_ERRORReady) { _SSL_MAX_ERRORContent = SGetField<int>(LocalBridgeClazz, "SSL_MAX_ERROR"); _SSL_MAX_ERRORReady = true; } return _SSL_MAX_ERRORContent; } }
         private static int _SSL_MAX_ERRORContent = default;
         private static bool _SSL_MAX_ERRORReady = false; // this is used because in case of generics 
@@ -129,25 +129,12 @@ namespace Android.Net.Http
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/http/SslError.html#getCertificate()"/> 
+        /// <see href="https://developer.android.com/reference/android/net/http/SslError.html#getCertificate()"/>
         /// </summary>
-        public Android.Net.Http.SslCertificate Certificate
+        /// <returns><see cref="Android.Net.Http.SslCertificate"/></returns>
+        public Android.Net.Http.SslCertificate GetCertificate()
         {
-            get { return IExecuteWithSignature<Android.Net.Http.SslCertificate>("getCertificate", "()Landroid/net/http/SslCertificate;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/http/SslError.html#getPrimaryError()"/> 
-        /// </summary>
-        public int PrimaryError
-        {
-            get { return IExecuteWithSignature<int>("getPrimaryError", "()I"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/http/SslError.html#getUrl()"/> 
-        /// </summary>
-        public Java.Lang.String Url
-        {
-            get { return IExecuteWithSignature<Java.Lang.String>("getUrl", "()Ljava/lang/String;"); }
+            return IExecuteWithSignature<Android.Net.Http.SslCertificate>("getCertificate", "()Landroid/net/http/SslCertificate;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/http/SslError.html#addError(int)"/>
@@ -166,6 +153,22 @@ namespace Android.Net.Http
         public bool HasError(int arg0)
         {
             return IExecuteWithSignature<bool>("hasError", "(I)Z", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/http/SslError.html#getPrimaryError()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        public int GetPrimaryError()
+        {
+            return IExecuteWithSignature<int>("getPrimaryError", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/android/net/http/SslError.html#getUrl()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String GetUrl()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("getUrl", "()Ljava/lang/String;");
         }
 
         #endregion

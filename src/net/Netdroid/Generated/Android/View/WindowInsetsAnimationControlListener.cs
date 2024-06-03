@@ -68,9 +68,9 @@ namespace Android.View
         /// </summary>
         protected virtual void InitializeHandlers()
         {
-            AddEventHandler("onCancelled", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.WindowInsetsAnimationController>>>(OnCancelledEventHandler));
-            AddEventHandler("onFinished", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.WindowInsetsAnimationController>>>(OnFinishedEventHandler));
-            AddEventHandler("onReady", new System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.WindowInsetsAnimationController>>>(OnReadyEventHandler));
+            AddEventHandler("onCancelled", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.WindowInsetsAnimationController>>>(OnCancelledEventHandler));
+            AddEventHandler("onFinished", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.WindowInsetsAnimationController>>>(OnFinishedEventHandler));
+            AddEventHandler("onReady", new global::System.EventHandler<CLRListenerEventArgs<CLREventData<Android.View.WindowInsetsAnimationController>>>(OnReadyEventHandler));
 
         }
 
@@ -78,7 +78,7 @@ namespace Android.View
         /// Handler for <see href="https://developer.android.com/reference/android/view/WindowInsetsAnimationControlListener.html#onCancelled(android.view.WindowInsetsAnimationController)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnCancelled"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Android.View.WindowInsetsAnimationController> OnOnCancelled { get; set; } = null;
+        public global::System.Action<Android.View.WindowInsetsAnimationController> OnOnCancelled { get; set; } = null;
 
         void OnCancelledEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.WindowInsetsAnimationController>> data)
         {
@@ -99,7 +99,7 @@ namespace Android.View
         /// Handler for <see href="https://developer.android.com/reference/android/view/WindowInsetsAnimationControlListener.html#onFinished(android.view.WindowInsetsAnimationController)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnFinished"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Android.View.WindowInsetsAnimationController> OnOnFinished { get; set; } = null;
+        public global::System.Action<Android.View.WindowInsetsAnimationController> OnOnFinished { get; set; } = null;
 
         void OnFinishedEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.WindowInsetsAnimationController>> data)
         {
@@ -120,7 +120,7 @@ namespace Android.View
         /// Handler for <see href="https://developer.android.com/reference/android/view/WindowInsetsAnimationControlListener.html#onReady(android.view.WindowInsetsAnimationController,int)"/>
         /// </summary>
         /// <remarks>If <see cref="OnOnReady"/> has a value it takes precedence over corresponding class method</remarks>
-        public System.Action<Android.View.WindowInsetsAnimationController, int> OnOnReady { get; set; } = null;
+        public global::System.Action<Android.View.WindowInsetsAnimationController, int> OnOnReady { get; set; } = null;
 
         void OnReadyEventHandler(object sender, CLRListenerEventArgs<CLREventData<Android.View.WindowInsetsAnimationController>> data)
         {

@@ -50,7 +50,7 @@ namespace Java.Time.Chrono
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/JapaneseDate.html#now()"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/JapaneseDate.html#now()"/>
         /// </summary>
         /// <returns><see cref="Java.Time.Chrono.JapaneseDate"/></returns>
         public static Java.Time.Chrono.JapaneseDate Now()
@@ -58,7 +58,7 @@ namespace Java.Time.Chrono
             return SExecuteWithSignature<Java.Time.Chrono.JapaneseDate>(LocalBridgeClazz, "now", "()Ljava/time/chrono/JapaneseDate;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/JapaneseDate.html#now(java.time.Clock)"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/JapaneseDate.html#now(java.time.Clock)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Clock"/></param>
         /// <returns><see cref="Java.Time.Chrono.JapaneseDate"/></returns>
@@ -67,7 +67,7 @@ namespace Java.Time.Chrono
             return SExecuteWithSignature<Java.Time.Chrono.JapaneseDate>(LocalBridgeClazz, "now", "(Ljava/time/Clock;)Ljava/time/chrono/JapaneseDate;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/JapaneseDate.html#now(java.time.ZoneId)"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/JapaneseDate.html#now(java.time.ZoneId)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.ZoneId"/></param>
         /// <returns><see cref="Java.Time.Chrono.JapaneseDate"/></returns>
@@ -76,7 +76,7 @@ namespace Java.Time.Chrono
             return SExecuteWithSignature<Java.Time.Chrono.JapaneseDate>(LocalBridgeClazz, "now", "(Ljava/time/ZoneId;)Ljava/time/chrono/JapaneseDate;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/JapaneseDate.html#of(int,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/JapaneseDate.html#of(int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         /// <param name="arg1"><see cref="int"/></param>
@@ -87,7 +87,7 @@ namespace Java.Time.Chrono
             return SExecute<Java.Time.Chrono.JapaneseDate>(LocalBridgeClazz, "of", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/time/chrono/JapaneseDate.html#of(java.time.chrono.JapaneseEra,int,int,int)"/>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/JapaneseDate.html#of(java.time.chrono.JapaneseEra,int,int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.Chrono.JapaneseEra"/></param>
         /// <param name="arg1"><see cref="int"/></param>

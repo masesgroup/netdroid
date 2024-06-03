@@ -338,38 +338,24 @@ namespace Android.Net.Wifi.Aware
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/net/wifi/aware/IdentityChangedListener.html"/>
     /// </summary>
-    public partial class IdentityChangedListener : MASES.JCOBridge.C2JBridge.JVMBridgeListener
+    public partial class IdentityChangedListener : MASES.JCOBridge.C2JBridge.JVMBridgeBase<IdentityChangedListener>
     {
+        const string _bridgeClassName = "android.net.wifi.aware.IdentityChangedListener";
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        public IdentityChangedListener() { InitializeHandlers(); }
-
-    #warning Remember to build the Java class for event listener
-
-        // TODO: complete the class
-
-    }
-    #endregion
-
-    #region IdentityChangedListenerDirect
-    /// <summary>
-    /// Direct override of <see cref="IdentityChangedListener"/> or its generic type if there is one
-    /// </summary>
-    public partial class IdentityChangedListenerDirect : IdentityChangedListener
-    {
+        public IdentityChangedListener() { }
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        public override bool AutoInit => false;
+        public IdentityChangedListener(params object[] args) : base(args) { }
 
-        /// <inheritdoc />
-        protected override void InitializeHandlers() { }
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
 
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "android.net.wifi.aware.IdentityChangedListener";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -386,6 +372,9 @@ namespace Android.Net.Wifi.Aware
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
+
+        // TODO: complete the class
+
     }
     #endregion
 

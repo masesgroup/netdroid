@@ -42,26 +42,19 @@ namespace Java.Lang
 
         #region Static methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Runtime.html#getRuntime()"/> 
+        /// <see href="https://developer.android.com/reference/java/lang/Runtime.html#getRuntime()"/>
         /// </summary>
-        public static Java.Lang.Runtime GetRuntime
+        /// <returns><see cref="Java.Lang.Runtime"/></returns>
+        public static Java.Lang.Runtime GetRuntime()
         {
-            get { return SExecuteWithSignature<Java.Lang.Runtime>(LocalBridgeClazz, "getRuntime", "()Ljava/lang/Runtime;"); }
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Runtime.html#version()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Lang.Runtime.Version"/></returns>
-        public static Java.Lang.Runtime.Version Version()
-        {
-            return SExecuteWithSignature<Java.Lang.Runtime.Version>(LocalBridgeClazz, "version", "()Ljava/lang/Runtime$Version;");
+            return SExecuteWithSignature<Java.Lang.Runtime>(LocalBridgeClazz, "getRuntime", "()Ljava/lang/Runtime;");
         }
 
         #endregion
 
         #region Instance methods
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Runtime.html#removeShutdownHook(java.lang.Thread)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Runtime.html#removeShutdownHook(java.lang.Thread)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Thread"/></param>
         /// <returns><see cref="bool"/></returns>
@@ -70,7 +63,7 @@ namespace Java.Lang
             return IExecuteWithSignature<bool>("removeShutdownHook", "(Ljava/lang/Thread;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Runtime.html#exec(java.lang.String,java.lang.String[],java.io.File)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Runtime.html#exec(java.lang.String,java.lang.String[],java.io.File)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -82,7 +75,7 @@ namespace Java.Lang
             return IExecute<Java.Lang.Process>("exec", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Runtime.html#exec(java.lang.String,java.lang.String[])"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Runtime.html#exec(java.lang.String,java.lang.String[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -93,7 +86,7 @@ namespace Java.Lang
             return IExecute<Java.Lang.Process>("exec", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Runtime.html#exec(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Runtime.html#exec(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.Process"/></returns>
@@ -103,7 +96,7 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Lang.Process>("exec", "(Ljava/lang/String;)Ljava/lang/Process;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Runtime.html#exec(java.lang.String[],java.lang.String[],java.io.File)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Runtime.html#exec(java.lang.String[],java.lang.String[],java.io.File)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -115,7 +108,7 @@ namespace Java.Lang
             return IExecute<Java.Lang.Process>("exec", arg0, arg1, arg2);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Runtime.html#exec(java.lang.String[],java.lang.String[])"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Runtime.html#exec(java.lang.String[],java.lang.String[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <param name="arg1"><see cref="Java.Lang.String"/></param>
@@ -126,7 +119,7 @@ namespace Java.Lang
             return IExecute<Java.Lang.Process>("exec", arg0, arg1);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Runtime.html#exec(java.lang.String[])"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Runtime.html#exec(java.lang.String[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <returns><see cref="Java.Lang.Process"/></returns>
@@ -136,7 +129,7 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Lang.Process>("exec", "([Ljava/lang/String;)Ljava/lang/Process;", new object[] { arg0 });
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Runtime.html#availableProcessors()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Runtime.html#availableProcessors()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
         public int AvailableProcessors()
@@ -144,7 +137,7 @@ namespace Java.Lang
             return IExecuteWithSignature<int>("availableProcessors", "()I");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Runtime.html#freeMemory()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Runtime.html#freeMemory()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
         public long FreeMemory()
@@ -152,7 +145,7 @@ namespace Java.Lang
             return IExecuteWithSignature<long>("freeMemory", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Runtime.html#maxMemory()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Runtime.html#maxMemory()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
         public long MaxMemory()
@@ -160,7 +153,7 @@ namespace Java.Lang
             return IExecuteWithSignature<long>("maxMemory", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Runtime.html#totalMemory()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Runtime.html#totalMemory()"/>
         /// </summary>
         /// <returns><see cref="long"/></returns>
         public long TotalMemory()
@@ -168,14 +161,14 @@ namespace Java.Lang
             return IExecuteWithSignature<long>("totalMemory", "()J");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Runtime.html#gc()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Runtime.html#gc()"/>
         /// </summary>
         public void Gc()
         {
             IExecuteWithSignature("gc", "()V");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Runtime.html#addShutdownHook(java.lang.Thread)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Runtime.html#addShutdownHook(java.lang.Thread)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Thread"/></param>
         public void AddShutdownHook(Java.Lang.Thread arg0)
@@ -183,7 +176,7 @@ namespace Java.Lang
             IExecuteWithSignature("addShutdownHook", "(Ljava/lang/Thread;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Runtime.html#exit(int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Runtime.html#exit(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public void Exit(int arg0)
@@ -191,7 +184,7 @@ namespace Java.Lang
             IExecuteWithSignature("exit", "(I)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Runtime.html#halt(int)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Runtime.html#halt(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
         public void Halt(int arg0)
@@ -199,7 +192,7 @@ namespace Java.Lang
             IExecuteWithSignature("halt", "(I)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Runtime.html#load(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Runtime.html#load(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void Load(Java.Lang.String arg0)
@@ -207,7 +200,7 @@ namespace Java.Lang
             IExecuteWithSignature("load", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Runtime.html#loadLibrary(java.lang.String)"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Runtime.html#loadLibrary(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         public void LoadLibrary(Java.Lang.String arg0)
@@ -215,11 +208,29 @@ namespace Java.Lang
             IExecuteWithSignature("loadLibrary", "(Ljava/lang/String;)V", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Runtime.html#runFinalization()"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Runtime.html#runFinalization()"/>
         /// </summary>
         public void RunFinalization()
         {
             IExecuteWithSignature("runFinalization", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Runtime.html#traceInstructions(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        [global::System.Obsolete()]
+        public void TraceInstructions(bool arg0)
+        {
+            IExecute("traceInstructions", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Runtime.html#traceMethodCalls(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        [global::System.Obsolete()]
+        public void TraceMethodCalls(bool arg0)
+        {
+            IExecute("traceMethodCalls", arg0);
         }
 
         #endregion
