@@ -422,14 +422,6 @@ namespace Java.Lang.Invoke
         {
             return IExecuteWithSignature<Java.Util.List<Java.Lang.Class>>("coordinateTypes", "()Ljava/util/List;");
         }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.html#describeConstable()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Util.Optional"/></returns>
-        public Java.Util.Optional<Java.Lang.Invoke.VarHandle.VarHandleDesc> DescribeConstable()
-        {
-            return IExecuteWithSignature<Java.Util.Optional<Java.Lang.Invoke.VarHandle.VarHandleDesc>>("describeConstable", "()Ljava/util/Optional;");
-        }
 
         #endregion
 
