@@ -36,15 +36,15 @@ jobs:
       
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
-        if: ${{ inputs.UseLatestJNetReflector == true }}
         with:
           fetch-depth: '1'
           submodules: 'true'
 
       - uses: actions/checkout@v4
-        if: ${{ inputs.UseLatestJNetReflector == false }}
+        if: ${{ inputs.UseLatestJNetReflector == true }}
         with:
-          fetch-depth: '1'
+          repository: masesgroup/JNet
+          path: JNet
 
       - name: Pre compile
         run: dotnet build --no-incremental --configuration Release /p:Platform="Any CPU" /p:NoWarn="0108%3B1030%3B0618" src\net\Netdroid\Netdroid.csproj
@@ -76,12 +76,13 @@ jobs:
       - name: Clear Java generated files
         run: Remove-Item .\src\jvm\netdroid\src\main\java\org\mases\netdroid\generated\* -Recurse -Force -Exclude README.md
 
-      - name: Prebuild
-        run: dotnet build --no-incremental --configuration Release 3rdparty\JNet\src\net\JNetReflector\JNetReflector.csproj
+      - name: Prebuild JNetReflector
+        if: ${{ inputs.UseLatestJNetReflector == true }}
+        run: dotnet build --no-incremental --configuration Release JNet\src\net\JNetReflector\JNetReflector.csproj
 
       - name: Create Jars of JNetReflector
         if: ${{ inputs.UseLatestJNetReflector == true }}
-        run: mvn "-Djcobridgepath=../../../binReflector/net8.0/JCOBridge.jar" --file ./3rdparty/JNet/src/jvm/jnet/pom.xml --no-transfer-progress package
+        run: mvn "-Djcobridgepath=../../../binReflector/net8.0/JCOBridge.jar" --file ./JNet/src/jvm/jnet/pom.xml --no-transfer-progress package
         env:
           MAVEN_USERNAME: ${{ secrets.MAVEN_USERNAME }}
           MAVEN_CENTRAL_TOKEN: ${{ secrets.MAVEN_CENTRAL_TOKEN }}
@@ -107,7 +108,7 @@ jobs:
         if: ${{ inputs.UseLatestJNetReflector == true }}
         shell: cmd
         run: |
-          cd 3rdparty\JNet\binReflector\net8.0
+          cd JNet\binReflector\net8.0
           MASES.JNetReflector.exe -TraceLevel 0 -OriginRootPath %ANDROID_HOME%\platforms\android-34-ext8 -DestinationRootPath %GITHUB_WORKSPACE%\src\ -ConfigurationFile %GITHUB_WORKSPACE%\src\configuration.json
         env:
           JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ONLINE }}
