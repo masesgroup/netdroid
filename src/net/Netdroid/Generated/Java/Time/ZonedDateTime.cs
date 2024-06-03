@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Time
 {
     #region ZonedDateTime
-    public partial class ZonedDateTime : Java.Time.Temporal.ITemporal, Java.Time.Chrono.IChronoZonedDateTime<Java.Time.LocalDate>, Java.Io.ISerializable
+    public partial class ZonedDateTime : Java.Time.Temporal.ITemporal, Java.Time.Chrono.IChronoZonedDateTime, Java.Io.ISerializable
     {
         #region Constructors
 
@@ -291,6 +291,14 @@ namespace Java.Time
         public Java.Lang.String Format(Java.Time.Format.DateTimeFormatter arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("format", "(Ljava/time/format/DateTimeFormatter;)Ljava/lang/String;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#toLocalDate()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Time.Chrono.ChronoLocalDate"/></returns>
+        public Java.Time.Chrono.ChronoLocalDate ToLocalDate()
+        {
+            return IExecuteWithSignature<Java.Time.Chrono.ChronoLocalDate>("toLocalDate", "()Ljava/time/chrono/ChronoLocalDate;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/ZonedDateTime.html#toLocalDateTime()"/>

@@ -97,6 +97,8 @@
     "java.sql.ShardingKeyBuilder",
     "java.sql.SQLType",
     "java.text.NumberFormat$Style",
+    "java.time.chrono.ChronoLocalDateTime",
+    "java.time.chrono.ChronoZonedDateTime",
     "java.util.Comparator",
     "java.util.EventListener",
     "java.util.random.RandomGenerator",

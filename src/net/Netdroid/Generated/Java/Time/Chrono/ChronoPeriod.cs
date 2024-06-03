@@ -59,6 +59,16 @@ namespace Java.Time.Chrono
         #endregion
 
         #region Static methods
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/time/chrono/ChronoPeriod.html#between(java.time.chrono.ChronoLocalDate,java.time.chrono.ChronoLocalDate)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Time.Chrono.ChronoLocalDate"/></param>
+        /// <param name="arg1"><see cref="Java.Time.Chrono.ChronoLocalDate"/></param>
+        /// <returns><see cref="Java.Time.Chrono.ChronoPeriod"/></returns>
+        public static Java.Time.Chrono.ChronoPeriod Between(Java.Time.Chrono.ChronoLocalDate arg0, Java.Time.Chrono.ChronoLocalDate arg1)
+        {
+            return SExecute<Java.Time.Chrono.ChronoPeriod>(LocalBridgeClazz, "between", arg0, arg1);
+        }
 
         #endregion
 
