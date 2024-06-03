@@ -77,7 +77,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.SyncFailedException"/>
         public void Sync()
         {
-            IExecute("sync");
+            IExecuteWithSignature("sync", "()V");
         }
 
         #endregion

@@ -97,7 +97,7 @@ namespace Java.Util
         /// <exception cref="Java.Lang.Throwable"/>
         public object OrElseThrow(Java.Util.Function.Supplier arg0)
         {
-            return IExecute("orElseThrow", arg0);
+            return IExecuteWithSignature("orElseThrow", "(Ljava/util/function/Supplier;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Optional.html#isEmpty()"/>
@@ -288,7 +288,7 @@ namespace Java.Util
         /// <exception cref="Java.Lang.Throwable"/>
         public T OrElseThrow<Arg0ExtendsX, X>(Java.Util.Function.Supplier<Arg0ExtendsX> arg0) where Arg0ExtendsX : X
         {
-            return IExecute<T>("orElseThrow", arg0);
+            return IExecuteWithSignature<T>("orElseThrow", "(Ljava/util/function/Supplier;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Optional.html#isEmpty()"/>

@@ -94,6 +94,24 @@ namespace Java.Text
             return SExecuteWithSignature<Java.Text.NumberFormat>(LocalBridgeClazz, "getPercentInstance", "()Ljava/text/NumberFormat;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java/text/NumberFormat.html#getCompactNumberInstance()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Text.NumberFormat"/></returns>
+        public static Java.Text.NumberFormat GetCompactNumberInstance()
+        {
+            return SExecuteWithSignature<Java.Text.NumberFormat>(LocalBridgeClazz, "getCompactNumberInstance", "()Ljava/text/NumberFormat;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/text/NumberFormat.html#getCompactNumberInstance(java.util.Locale,java.text.NumberFormat.Style)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
+        /// <param name="arg1"><see cref="Java.Text.NumberFormat.Style"/></param>
+        /// <returns><see cref="Java.Text.NumberFormat"/></returns>
+        public static Java.Text.NumberFormat GetCompactNumberInstance(Java.Util.Locale arg0, Java.Text.NumberFormat.Style arg1)
+        {
+            return SExecute<Java.Text.NumberFormat>(LocalBridgeClazz, "getCompactNumberInstance", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java/text/NumberFormat.html#getCurrencyInstance(java.util.Locale)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Locale"/></param>
@@ -415,11 +433,23 @@ namespace Java.Text
             private static Java.Text.NumberFormat.Field _PERMILLEContent = default;
             private static bool _PERMILLEReady = false; // this is used because in case of generics 
             /// <summary>
+            /// <see href="https://developer.android.com/reference/java/text/NumberFormat.Field.html#PREFIX"/>
+            /// </summary>
+            public static Java.Text.NumberFormat.Field PREFIX { get { if (!_PREFIXReady) { _PREFIXContent = SGetField<Java.Text.NumberFormat.Field>(LocalBridgeClazz, "PREFIX"); _PREFIXReady = true; } return _PREFIXContent; } }
+            private static Java.Text.NumberFormat.Field _PREFIXContent = default;
+            private static bool _PREFIXReady = false; // this is used because in case of generics 
+            /// <summary>
             /// <see href="https://developer.android.com/reference/java/text/NumberFormat.Field.html#SIGN"/>
             /// </summary>
             public static Java.Text.NumberFormat.Field SIGN { get { if (!_SIGNReady) { _SIGNContent = SGetField<Java.Text.NumberFormat.Field>(LocalBridgeClazz, "SIGN"); _SIGNReady = true; } return _SIGNContent; } }
             private static Java.Text.NumberFormat.Field _SIGNContent = default;
             private static bool _SIGNReady = false; // this is used because in case of generics 
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/java/text/NumberFormat.Field.html#SUFFIX"/>
+            /// </summary>
+            public static Java.Text.NumberFormat.Field SUFFIX { get { if (!_SUFFIXReady) { _SUFFIXContent = SGetField<Java.Text.NumberFormat.Field>(LocalBridgeClazz, "SUFFIX"); _SUFFIXReady = true; } return _SUFFIXContent; } }
+            private static Java.Text.NumberFormat.Field _SUFFIXContent = default;
+            private static bool _SUFFIXReady = false; // this is used because in case of generics 
 
             #endregion
 

@@ -225,6 +225,7 @@ namespace Javax.Security.Auth
     /// <summary>
     /// <see href="https://developer.android.com/reference/javax/security/auth/SubjectDomainCombiner.html"/>
     /// </summary>
+    [global::System.Obsolete()]
     public partial class SubjectDomainCombiner : Java.Security.DomainCombiner
     {
         const string _bridgeClassName = "javax.security.auth.SubjectDomainCombiner";

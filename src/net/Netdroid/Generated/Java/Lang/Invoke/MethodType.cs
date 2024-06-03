@@ -26,13 +26,17 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Lang.Invoke
 {
     #region MethodType
-    public partial class MethodType
+    public partial class MethodType : Java.Io.ISerializable
     {
         #region Constructors
 
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Lang.Invoke.MethodType"/> to <see cref="Java.Io.Serializable"/>
+        /// </summary>
+        public static implicit operator Java.Io.Serializable(Java.Lang.Invoke.MethodType t) => t.Cast<Java.Io.Serializable>();
 
         #endregion
 
@@ -169,31 +173,6 @@ namespace Java.Lang.Invoke
             return IExecuteWithSignature<Java.Lang.Class>("lastParameterType", "()Ljava/lang/Class;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodType.html#parameterType(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <returns><see cref="Java.Lang.Class"/></returns>
-        public Java.Lang.Class ParameterType(int arg0)
-        {
-            return IExecuteWithSignature<Java.Lang.Class>("parameterType", "(I)Ljava/lang/Class;", arg0);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodType.html#returnType()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Lang.Class"/></returns>
-        public Java.Lang.Class ReturnType()
-        {
-            return IExecuteWithSignature<Java.Lang.Class>("returnType", "()Ljava/lang/Class;");
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodType.html#parameterArray()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Lang.Class"/></returns>
-        public Java.Lang.Class[] ParameterArray()
-        {
-            return IExecuteWithSignatureArray<Java.Lang.Class>("parameterArray", "()[Ljava/lang/Class;");
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodType.html#appendParameterTypes(java.lang.Class[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Class"/></param>
@@ -229,16 +208,6 @@ namespace Java.Lang.Invoke
         public Java.Lang.Invoke.MethodType ChangeReturnType(Java.Lang.Class arg0)
         {
             return IExecuteWithSignature<Java.Lang.Invoke.MethodType>("changeReturnType", "(Ljava/lang/Class;)Ljava/lang/invoke/MethodType;", arg0);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodType.html#dropParameterTypes(int,int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <param name="arg1"><see cref="int"/></param>
-        /// <returns><see cref="Java.Lang.Invoke.MethodType"/></returns>
-        public Java.Lang.Invoke.MethodType DropParameterTypes(int arg0, int arg1)
-        {
-            return IExecute<Java.Lang.Invoke.MethodType>("dropParameterTypes", arg0, arg1);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodType.html#erase()"/>
@@ -291,6 +260,78 @@ namespace Java.Lang.Invoke
         public Java.Lang.Invoke.MethodType Wrap()
         {
             return IExecuteWithSignature<Java.Lang.Invoke.MethodType>("wrap", "()Ljava/lang/invoke/MethodType;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodType.html#parameterType(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="Java.Lang.Invoke.TypeDescriptor.OfField"/></returns>
+        public Java.Lang.Invoke.TypeDescriptor.OfField ParameterType(int arg0)
+        {
+            return IExecuteWithSignature<Java.Lang.Invoke.TypeDescriptor.OfField>("parameterType", "(I)Ljava/lang/invoke/TypeDescriptor$OfField;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodType.html#returnType()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Invoke.TypeDescriptor.OfField"/></returns>
+        public Java.Lang.Invoke.TypeDescriptor.OfField ReturnType()
+        {
+            return IExecuteWithSignature<Java.Lang.Invoke.TypeDescriptor.OfField>("returnType", "()Ljava/lang/invoke/TypeDescriptor$OfField;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodType.html#parameterArray()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Invoke.TypeDescriptor.OfField"/></returns>
+        public Java.Lang.Invoke.TypeDescriptor.OfField[] ParameterArray()
+        {
+            return IExecuteWithSignatureArray<Java.Lang.Invoke.TypeDescriptor.OfField>("parameterArray", "()[Ljava/lang/invoke/TypeDescriptor$OfField;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodType.html#changeParameterType(int,java.lang.invoke.TypeDescriptor.OfField)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Invoke.TypeDescriptor.OfField"/></param>
+        /// <returns><see cref="Java.Lang.Invoke.TypeDescriptor.OfMethod"/></returns>
+        public Java.Lang.Invoke.TypeDescriptor.OfMethod ChangeParameterType(int arg0, Java.Lang.Invoke.TypeDescriptor.OfField arg1)
+        {
+            return IExecute<Java.Lang.Invoke.TypeDescriptor.OfMethod>("changeParameterType", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodType.html#changeReturnType(java.lang.invoke.TypeDescriptor.OfField)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Invoke.TypeDescriptor.OfField"/></param>
+        /// <returns><see cref="Java.Lang.Invoke.TypeDescriptor.OfMethod"/></returns>
+        public Java.Lang.Invoke.TypeDescriptor.OfMethod ChangeReturnType(Java.Lang.Invoke.TypeDescriptor.OfField arg0)
+        {
+            return IExecuteWithSignature<Java.Lang.Invoke.TypeDescriptor.OfMethod>("changeReturnType", "(Ljava/lang/invoke/TypeDescriptor$OfField;)Ljava/lang/invoke/TypeDescriptor$OfMethod;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodType.html#dropParameterTypes(int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see cref="Java.Lang.Invoke.TypeDescriptor.OfMethod"/></returns>
+        public Java.Lang.Invoke.TypeDescriptor.OfMethod DropParameterTypes(int arg0, int arg1)
+        {
+            return IExecute<Java.Lang.Invoke.TypeDescriptor.OfMethod>("dropParameterTypes", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodType.html#insertParameterTypes(int,java.lang.invoke.TypeDescriptor.OfField[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.Invoke.TypeDescriptor.OfField"/></param>
+        /// <returns><see cref="Java.Lang.Invoke.TypeDescriptor.OfMethod"/></returns>
+        public Java.Lang.Invoke.TypeDescriptor.OfMethod InsertParameterTypes(int arg0, Java.Lang.Invoke.TypeDescriptor.OfField[] arg1)
+        {
+            return IExecute<Java.Lang.Invoke.TypeDescriptor.OfMethod>("insertParameterTypes", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodType.html#descriptorString()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String DescriptorString()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("descriptorString", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/invoke/MethodType.html#toMethodDescriptorString()"/>

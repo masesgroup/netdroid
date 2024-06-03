@@ -88,7 +88,7 @@ namespace Javax.Crypto.Spec
         /// <returns><see cref="char"/></returns>
         public char[] GetPassword()
         {
-            return IExecuteArray<char>("getPassword");
+            return IExecuteWithSignatureArray<char>("getPassword", "()[C");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/crypto/spec/PBEKeySpec.html#getIterationCount()"/>
@@ -111,7 +111,7 @@ namespace Javax.Crypto.Spec
         /// </summary>
         public void ClearPassword()
         {
-            IExecute("clearPassword");
+            IExecuteWithSignature("clearPassword", "()V");
         }
 
         #endregion

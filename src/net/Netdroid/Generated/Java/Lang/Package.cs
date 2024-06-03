@@ -71,7 +71,7 @@ namespace Java.Lang
         /// <returns><typeparamref name="A"/></returns>
         public A GetAnnotation<A>(Java.Lang.Class arg0) where A : Java.Lang.Annotation.IAnnotation, new()
         {
-            return IExecute<A>("getAnnotation", arg0);
+            return IExecuteWithSignature<A>("getAnnotation", "(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Package.html#getDeclaredAnnotation(java.lang.Class)"/>
@@ -81,7 +81,7 @@ namespace Java.Lang
         /// <returns><typeparamref name="A"/></returns>
         public A GetDeclaredAnnotation<A>(Java.Lang.Class arg0) where A : Java.Lang.Annotation.IAnnotation, new()
         {
-            return IExecute<A>("getDeclaredAnnotation", arg0);
+            return IExecuteWithSignature<A>("getDeclaredAnnotation", "(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Package.html#getAnnotationsByType(java.lang.Class)"/>
@@ -91,7 +91,7 @@ namespace Java.Lang
         /// <returns><typeparamref name="A"/></returns>
         public A[] GetAnnotationsByType<A>(Java.Lang.Class arg0) where A : Java.Lang.Annotation.IAnnotation, new()
         {
-            return IExecuteArray<A>("getAnnotationsByType", arg0);
+            return IExecuteWithSignatureArray<A>("getAnnotationsByType", "(Ljava/lang/Class;)[Ljava/lang/annotation/Annotation;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Package.html#getDeclaredAnnotationsByType(java.lang.Class)"/>
@@ -101,7 +101,7 @@ namespace Java.Lang
         /// <returns><typeparamref name="A"/></returns>
         public A[] GetDeclaredAnnotationsByType<A>(Java.Lang.Class arg0) where A : Java.Lang.Annotation.IAnnotation, new()
         {
-            return IExecuteArray<A>("getDeclaredAnnotationsByType", arg0);
+            return IExecuteWithSignatureArray<A>("getDeclaredAnnotationsByType", "(Ljava/lang/Class;)[Ljava/lang/annotation/Annotation;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Package.html#isAnnotationPresent(java.lang.Class)"/>

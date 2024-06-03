@@ -64,6 +64,30 @@ namespace Java.Security.Spec
         private static Java.Security.Spec.MGF1ParameterSpec _SHA256Content = default;
         private static bool _SHA256Ready = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/spec/MGF1ParameterSpec.html#SHA3_224"/>
+        /// </summary>
+        public static Java.Security.Spec.MGF1ParameterSpec SHA3_224 { get { if (!_SHA3_224Ready) { _SHA3_224Content = SGetField<Java.Security.Spec.MGF1ParameterSpec>(LocalBridgeClazz, "SHA3_224"); _SHA3_224Ready = true; } return _SHA3_224Content; } }
+        private static Java.Security.Spec.MGF1ParameterSpec _SHA3_224Content = default;
+        private static bool _SHA3_224Ready = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/spec/MGF1ParameterSpec.html#SHA3_256"/>
+        /// </summary>
+        public static Java.Security.Spec.MGF1ParameterSpec SHA3_256 { get { if (!_SHA3_256Ready) { _SHA3_256Content = SGetField<Java.Security.Spec.MGF1ParameterSpec>(LocalBridgeClazz, "SHA3_256"); _SHA3_256Ready = true; } return _SHA3_256Content; } }
+        private static Java.Security.Spec.MGF1ParameterSpec _SHA3_256Content = default;
+        private static bool _SHA3_256Ready = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/spec/MGF1ParameterSpec.html#SHA3_384"/>
+        /// </summary>
+        public static Java.Security.Spec.MGF1ParameterSpec SHA3_384 { get { if (!_SHA3_384Ready) { _SHA3_384Content = SGetField<Java.Security.Spec.MGF1ParameterSpec>(LocalBridgeClazz, "SHA3_384"); _SHA3_384Ready = true; } return _SHA3_384Content; } }
+        private static Java.Security.Spec.MGF1ParameterSpec _SHA3_384Content = default;
+        private static bool _SHA3_384Ready = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/spec/MGF1ParameterSpec.html#SHA3_512"/>
+        /// </summary>
+        public static Java.Security.Spec.MGF1ParameterSpec SHA3_512 { get { if (!_SHA3_512Ready) { _SHA3_512Content = SGetField<Java.Security.Spec.MGF1ParameterSpec>(LocalBridgeClazz, "SHA3_512"); _SHA3_512Ready = true; } return _SHA3_512Content; } }
+        private static Java.Security.Spec.MGF1ParameterSpec _SHA3_512Content = default;
+        private static bool _SHA3_512Ready = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/spec/MGF1ParameterSpec.html#SHA384"/>
         /// </summary>
         public static Java.Security.Spec.MGF1ParameterSpec SHA384 { get { if (!_SHA384Ready) { _SHA384Content = SGetField<Java.Security.Spec.MGF1ParameterSpec>(LocalBridgeClazz, "SHA384"); _SHA384Ready = true; } return _SHA384Content; } }

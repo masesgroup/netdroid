@@ -124,6 +124,7 @@ namespace Java.Security.Cert
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
         /// <exception cref="Java.Io.IOException"/>
+        [global::System.Obsolete()]
         public void AddIssuerName(Java.Lang.String arg0)
         {
             IExecuteWithSignature("addIssuerName", "(Ljava/lang/String;)V", arg0);

@@ -195,6 +195,28 @@ namespace Java.Nio
             return IExecuteWithSignature<Java.Nio.DoubleBuffer>("get", "([D)Ljava/nio/DoubleBuffer;", new object[] { arg0 });
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java/nio/DoubleBuffer.html#get(int,double[],int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="double"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <returns><see cref="Java.Nio.DoubleBuffer"/></returns>
+        public Java.Nio.DoubleBuffer Get(int arg0, double[] arg1, int arg2, int arg3)
+        {
+            return IExecute<Java.Nio.DoubleBuffer>("get", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/nio/DoubleBuffer.html#get(int,double[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="double"/></param>
+        /// <returns><see cref="Java.Nio.DoubleBuffer"/></returns>
+        public Java.Nio.DoubleBuffer Get(int arg0, double[] arg1)
+        {
+            return IExecute<Java.Nio.DoubleBuffer>("get", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/DoubleBuffer.html#put(double[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="double"/></param>
@@ -204,6 +226,40 @@ namespace Java.Nio
         public Java.Nio.DoubleBuffer Put(double[] arg0, int arg1, int arg2)
         {
             return IExecute<Java.Nio.DoubleBuffer>("put", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/nio/DoubleBuffer.html#put(int,double[],int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="double"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <returns><see cref="Java.Nio.DoubleBuffer"/></returns>
+        public Java.Nio.DoubleBuffer Put(int arg0, double[] arg1, int arg2, int arg3)
+        {
+            return IExecute<Java.Nio.DoubleBuffer>("put", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/nio/DoubleBuffer.html#put(int,double[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="double"/></param>
+        /// <returns><see cref="Java.Nio.DoubleBuffer"/></returns>
+        public Java.Nio.DoubleBuffer Put(int arg0, double[] arg1)
+        {
+            return IExecute<Java.Nio.DoubleBuffer>("put", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/nio/DoubleBuffer.html#put(int,java.nio.DoubleBuffer,int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Java.Nio.DoubleBuffer"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <returns><see cref="Java.Nio.DoubleBuffer"/></returns>
+        public Java.Nio.DoubleBuffer Put(int arg0, Java.Nio.DoubleBuffer arg1, int arg2, int arg3)
+        {
+            return IExecute<Java.Nio.DoubleBuffer>("put", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/DoubleBuffer.html#put(java.nio.DoubleBuffer)"/>

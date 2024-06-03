@@ -72,7 +72,7 @@ namespace Java.Util
         /// <exception cref="Java.Lang.Throwable"/>
         public double OrElseThrow<Arg0ExtendsX, X>(Java.Util.Function.Supplier<Arg0ExtendsX> arg0) where Arg0ExtendsX : X
         {
-            return IExecute<double>("orElseThrow", arg0);
+            return IExecuteWithSignature<double>("orElseThrow", "(Ljava/util/function/Supplier;)D", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/OptionalDouble.html#isEmpty()"/>

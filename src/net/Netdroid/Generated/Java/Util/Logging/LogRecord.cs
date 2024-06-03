@@ -58,6 +58,7 @@ namespace Java.Util.Logging
         /// <see href="https://developer.android.com/reference/java/util/logging/LogRecord.html#getThreadID()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
+        [global::System.Obsolete()]
         public int GetThreadID()
         {
             return IExecuteWithSignature<int>("getThreadID", "()I");
@@ -135,12 +136,29 @@ namespace Java.Util.Logging
             return IExecuteWithSignature<Java.Util.Logging.Level>("getLevel", "()Ljava/util/logging/Level;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/logging/LogRecord.html#setLongThreadID(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <returns><see cref="Java.Util.Logging.LogRecord"/></returns>
+        public Java.Util.Logging.LogRecord SetLongThreadID(long arg0)
+        {
+            return IExecuteWithSignature<Java.Util.Logging.LogRecord>("setLongThreadID", "(J)Ljava/util/logging/LogRecord;", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/logging/LogRecord.html#getResourceBundle()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.ResourceBundle"/></returns>
         public Java.Util.ResourceBundle GetResourceBundle()
         {
             return IExecuteWithSignature<Java.Util.ResourceBundle>("getResourceBundle", "()Ljava/util/ResourceBundle;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/logging/LogRecord.html#getLongThreadID()"/>
+        /// </summary>
+        /// <returns><see cref="long"/></returns>
+        public long GetLongThreadID()
+        {
+            return IExecuteWithSignature<long>("getLongThreadID", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/logging/LogRecord.html#getMillis()"/>
@@ -251,6 +269,7 @@ namespace Java.Util.Logging
         /// <see href="https://developer.android.com/reference/java/util/logging/LogRecord.html#setThreadID(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
+        [global::System.Obsolete()]
         public void SetThreadID(int arg0)
         {
             IExecuteWithSignature("setThreadID", "(I)V", arg0);

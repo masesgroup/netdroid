@@ -121,6 +121,57 @@ namespace Java.Lang
             return IExecute<bool>("waitFor", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Process.html#errorReader()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Io.BufferedReader"/></returns>
+        public Java.Io.BufferedReader ErrorReader()
+        {
+            return IExecuteWithSignature<Java.Io.BufferedReader>("errorReader", "()Ljava/io/BufferedReader;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Process.html#errorReader(java.nio.charset.Charset)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.Charset.Charset"/></param>
+        /// <returns><see cref="Java.Io.BufferedReader"/></returns>
+        public Java.Io.BufferedReader ErrorReader(Java.Nio.Charset.Charset arg0)
+        {
+            return IExecuteWithSignature<Java.Io.BufferedReader>("errorReader", "(Ljava/nio/charset/Charset;)Ljava/io/BufferedReader;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Process.html#inputReader()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Io.BufferedReader"/></returns>
+        public Java.Io.BufferedReader InputReader()
+        {
+            return IExecuteWithSignature<Java.Io.BufferedReader>("inputReader", "()Ljava/io/BufferedReader;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Process.html#inputReader(java.nio.charset.Charset)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.Charset.Charset"/></param>
+        /// <returns><see cref="Java.Io.BufferedReader"/></returns>
+        public Java.Io.BufferedReader InputReader(Java.Nio.Charset.Charset arg0)
+        {
+            return IExecuteWithSignature<Java.Io.BufferedReader>("inputReader", "(Ljava/nio/charset/Charset;)Ljava/io/BufferedReader;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Process.html#outputWriter()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Io.BufferedWriter"/></returns>
+        public Java.Io.BufferedWriter OutputWriter()
+        {
+            return IExecuteWithSignature<Java.Io.BufferedWriter>("outputWriter", "()Ljava/io/BufferedWriter;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Process.html#outputWriter(java.nio.charset.Charset)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Nio.Charset.Charset"/></param>
+        /// <returns><see cref="Java.Io.BufferedWriter"/></returns>
+        public Java.Io.BufferedWriter OutputWriter(Java.Nio.Charset.Charset arg0)
+        {
+            return IExecuteWithSignature<Java.Io.BufferedWriter>("outputWriter", "(Ljava/nio/charset/Charset;)Ljava/io/BufferedWriter;", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/Process.html#destroyForcibly()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.Process"/></returns>

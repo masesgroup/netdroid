@@ -100,6 +100,14 @@ namespace Java.Util.Concurrent.Locks
             SExecuteWithSignature(LocalBridgeClazz, "parkUntil", "(J)V", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/LockSupport.html#setCurrentBlocker(java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        public static void SetCurrentBlocker(object arg0)
+        {
+            SExecuteWithSignature(LocalBridgeClazz, "setCurrentBlocker", "(Ljava/lang/Object;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/locks/LockSupport.html#unpark(java.lang.Thread)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Thread"/></param>

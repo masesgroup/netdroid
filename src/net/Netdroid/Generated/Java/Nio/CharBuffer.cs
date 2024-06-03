@@ -171,6 +171,14 @@ namespace Java.Nio
             return IExecute<Java.Nio.CharBuffer>("put", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java/nio/CharBuffer.html#isEmpty()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool IsEmpty()
+        {
+            return IExecuteWithSignature<bool>("isEmpty", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/CharBuffer.html#charAt(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
@@ -305,6 +313,28 @@ namespace Java.Nio
             return IExecuteWithSignature<Java.Nio.CharBuffer>("get", "([C)Ljava/nio/CharBuffer;", new object[] { arg0 });
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java/nio/CharBuffer.html#get(int,char[],int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="char"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <returns><see cref="Java.Nio.CharBuffer"/></returns>
+        public Java.Nio.CharBuffer Get(int arg0, char[] arg1, int arg2, int arg3)
+        {
+            return IExecute<Java.Nio.CharBuffer>("get", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/nio/CharBuffer.html#get(int,char[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="char"/></param>
+        /// <returns><see cref="Java.Nio.CharBuffer"/></returns>
+        public Java.Nio.CharBuffer Get(int arg0, char[] arg1)
+        {
+            return IExecute<Java.Nio.CharBuffer>("get", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/CharBuffer.html#put(char[],int,int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="char"/></param>
@@ -314,6 +344,40 @@ namespace Java.Nio
         public Java.Nio.CharBuffer Put(char[] arg0, int arg1, int arg2)
         {
             return IExecute<Java.Nio.CharBuffer>("put", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/nio/CharBuffer.html#put(int,char[],int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="char"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <returns><see cref="Java.Nio.CharBuffer"/></returns>
+        public Java.Nio.CharBuffer Put(int arg0, char[] arg1, int arg2, int arg3)
+        {
+            return IExecute<Java.Nio.CharBuffer>("put", arg0, arg1, arg2, arg3);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/nio/CharBuffer.html#put(int,char[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="char"/></param>
+        /// <returns><see cref="Java.Nio.CharBuffer"/></returns>
+        public Java.Nio.CharBuffer Put(int arg0, char[] arg1)
+        {
+            return IExecute<Java.Nio.CharBuffer>("put", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/nio/CharBuffer.html#put(int,java.nio.CharBuffer,int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="Java.Nio.CharBuffer"/></param>
+        /// <param name="arg2"><see cref="int"/></param>
+        /// <param name="arg3"><see cref="int"/></param>
+        /// <returns><see cref="Java.Nio.CharBuffer"/></returns>
+        public Java.Nio.CharBuffer Put(int arg0, Java.Nio.CharBuffer arg1, int arg2, int arg3)
+        {
+            return IExecute<Java.Nio.CharBuffer>("put", arg0, arg1, arg2, arg3);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/CharBuffer.html#put(java.lang.String,int,int)"/>

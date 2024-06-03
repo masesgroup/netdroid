@@ -86,6 +86,12 @@ namespace Java.Lang.Annotation
         private static Java.Lang.Annotation.ElementType _PARAMETERContent = default;
         private static bool _PARAMETERReady = false; // this is used because in case of generics 
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/annotation/ElementType.html#RECORD_COMPONENT"/>
+        /// </summary>
+        public static Java.Lang.Annotation.ElementType RECORD_COMPONENT { get { if (!_RECORD_COMPONENTReady) { _RECORD_COMPONENTContent = SGetField<Java.Lang.Annotation.ElementType>(LocalBridgeClazz, "RECORD_COMPONENT"); _RECORD_COMPONENTReady = true; } return _RECORD_COMPONENTContent; } }
+        private static Java.Lang.Annotation.ElementType _RECORD_COMPONENTContent = default;
+        private static bool _RECORD_COMPONENTReady = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/annotation/ElementType.html#TYPE"/>
         /// </summary>
         public static Java.Lang.Annotation.ElementType TYPE { get { if (!_TYPEReady) { _TYPEContent = SGetField<Java.Lang.Annotation.ElementType>(LocalBridgeClazz, "TYPE"); _TYPEReady = true; } return _TYPEContent; } }

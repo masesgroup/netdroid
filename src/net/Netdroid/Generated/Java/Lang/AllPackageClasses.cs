@@ -1744,6 +1744,52 @@ namespace Java.Lang
     }
     #endregion
 
+    #region Record
+    /// <summary>
+    /// <see href="https://developer.android.com/reference/java/lang/Record.html"/>
+    /// </summary>
+    public partial class Record : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Record>
+    {
+        const string _bridgeClassName = "java.lang.Record";
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        [global::System.Obsolete("Record class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        public Record() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        [global::System.Obsolete("Record class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        public Record(params object[] args) : base(args) { }
+
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+        /// </summary>
+        public override bool IsBridgeAbstract => true;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+        /// </summary>
+        public override bool IsBridgeCloseable => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+        /// </summary>
+        public override bool IsBridgeInterface => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+        /// </summary>
+        public override bool IsBridgeStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region Runnable
     /// <summary>
     /// <see href="https://developer.android.com/reference/java/lang/Runnable.html"/>
@@ -1928,6 +1974,7 @@ namespace Java.Lang
     /// <summary>
     /// <see href="https://developer.android.com/reference/java/lang/SecurityManager.html"/>
     /// </summary>
+    [global::System.Obsolete()]
     public partial class SecurityManager : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SecurityManager>
     {
         const string _bridgeClassName = "java.lang.SecurityManager";

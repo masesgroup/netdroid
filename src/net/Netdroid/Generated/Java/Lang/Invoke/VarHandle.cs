@@ -81,30 +81,37 @@ namespace Java.Lang.Invoke
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.html#withInvokeBehavior()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Invoke.VarHandle"/></returns>
+        public Java.Lang.Invoke.VarHandle WithInvokeBehavior()
+        {
+            return IExecuteWithSignature<Java.Lang.Invoke.VarHandle>("withInvokeBehavior", "()Ljava/lang/invoke/VarHandle;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.html#withInvokeExactBehavior()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Invoke.VarHandle"/></returns>
+        public Java.Lang.Invoke.VarHandle WithInvokeExactBehavior()
+        {
+            return IExecuteWithSignature<Java.Lang.Invoke.VarHandle>("withInvokeExactBehavior", "()Ljava/lang/invoke/VarHandle;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.html#hasInvokeExactBehavior()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool HasInvokeExactBehavior()
+        {
+            return IExecuteWithSignature<bool>("hasInvokeExactBehavior", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.html#isAccessModeSupported(java.lang.invoke.VarHandle.AccessMode)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.Invoke.VarHandle.AccessMode"/></param>
         /// <returns><see cref="bool"/></returns>
         public bool IsAccessModeSupported(Java.Lang.Invoke.VarHandle.AccessMode arg0)
         {
-            return IExecute<bool>("isAccessModeSupported", arg0);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.html#varType()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Lang.Class"/></returns>
-        public Java.Lang.Class VarType()
-        {
-            return IExecute<Java.Lang.Class>("varType");
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.html#toMethodHandle(java.lang.invoke.VarHandle.AccessMode)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Lang.Invoke.VarHandle.AccessMode"/></param>
-        /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
-        public Java.Lang.Invoke.MethodHandle ToMethodHandle(Java.Lang.Invoke.VarHandle.AccessMode arg0)
-        {
-            return IExecute<Java.Lang.Invoke.MethodHandle>("toMethodHandle", arg0);
+            return IExecuteWithSignature<bool>("isAccessModeSupported", "(Ljava/lang/invoke/VarHandle$AccessMode;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.html#accessModeType(java.lang.invoke.VarHandle.AccessMode)"/>
@@ -114,14 +121,6 @@ namespace Java.Lang.Invoke
         public Java.Lang.Invoke.MethodType AccessModeType(Java.Lang.Invoke.VarHandle.AccessMode arg0)
         {
             return IExecuteWithSignature<Java.Lang.Invoke.MethodType>("accessModeType", "(Ljava/lang/invoke/VarHandle$AccessMode;)Ljava/lang/invoke/MethodType;", arg0);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.html#coordinateTypes()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Util.List"/></returns>
-        public Java.Util.List<Java.Lang.Class> CoordinateTypes()
-        {
-            return IExecute<Java.Util.List<Java.Lang.Class>>("coordinateTypes");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.html#compareAndSet(java.lang.Object[])"/>
@@ -397,6 +396,39 @@ namespace Java.Lang.Invoke
         public void SetVolatile(params object[] arg0)
         {
             if (arg0.Length == 0) IExecuteWithSignature("setVolatile", "([Ljava/lang/Object;)V"); else IExecuteWithSignature("setVolatile", "([Ljava/lang/Object;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.html#varType()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.Class"/></returns>
+        public Java.Lang.Class VarType()
+        {
+            return IExecuteWithSignature<Java.Lang.Class>("varType", "()Ljava/lang/Class;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.html#toMethodHandle(java.lang.invoke.VarHandle.AccessMode)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Invoke.VarHandle.AccessMode"/></param>
+        /// <returns><see cref="Java.Lang.Invoke.MethodHandle"/></returns>
+        public Java.Lang.Invoke.MethodHandle ToMethodHandle(Java.Lang.Invoke.VarHandle.AccessMode arg0)
+        {
+            return IExecuteWithSignature<Java.Lang.Invoke.MethodHandle>("toMethodHandle", "(Ljava/lang/invoke/VarHandle$AccessMode;)Ljava/lang/invoke/MethodHandle;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.html#coordinateTypes()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.List"/></returns>
+        public Java.Util.List<Java.Lang.Class> CoordinateTypes()
+        {
+            return IExecuteWithSignature<Java.Util.List<Java.Lang.Class>>("coordinateTypes", "()Ljava/util/List;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/invoke/VarHandle.html#describeConstable()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Optional"/></returns>
+        public Java.Util.Optional<Java.Lang.Invoke.VarHandle.VarHandleDesc> DescribeConstable()
+        {
+            return IExecuteWithSignature<Java.Util.Optional<Java.Lang.Invoke.VarHandle.VarHandleDesc>>("describeConstable", "()Ljava/util/Optional;");
         }
 
         #endregion

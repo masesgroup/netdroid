@@ -46,6 +46,18 @@ namespace Java.Security.Spec
 
         #region Fields
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/spec/NamedParameterSpec.html#ED25519"/>
+        /// </summary>
+        public static Java.Security.Spec.NamedParameterSpec ED25519 { get { if (!_ED25519Ready) { _ED25519Content = SGetField<Java.Security.Spec.NamedParameterSpec>(LocalBridgeClazz, "ED25519"); _ED25519Ready = true; } return _ED25519Content; } }
+        private static Java.Security.Spec.NamedParameterSpec _ED25519Content = default;
+        private static bool _ED25519Ready = false; // this is used because in case of generics 
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/spec/NamedParameterSpec.html#ED448"/>
+        /// </summary>
+        public static Java.Security.Spec.NamedParameterSpec ED448 { get { if (!_ED448Ready) { _ED448Content = SGetField<Java.Security.Spec.NamedParameterSpec>(LocalBridgeClazz, "ED448"); _ED448Ready = true; } return _ED448Content; } }
+        private static Java.Security.Spec.NamedParameterSpec _ED448Content = default;
+        private static bool _ED448Ready = false; // this is used because in case of generics 
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/spec/NamedParameterSpec.html#X25519"/>
         /// </summary>
         public static Java.Security.Spec.NamedParameterSpec X25519 { get { if (!_X25519Ready) { _X25519Content = SGetField<Java.Security.Spec.NamedParameterSpec>(LocalBridgeClazz, "X25519"); _X25519Ready = true; } return _X25519Content; } }

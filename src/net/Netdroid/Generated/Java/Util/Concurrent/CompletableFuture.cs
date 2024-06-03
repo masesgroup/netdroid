@@ -361,6 +361,53 @@ namespace Java.Util.Concurrent
             return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("exceptionally", "(Ljava/util/function/Function;)Ljava/util/concurrent/CompletionStage;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#exceptionallyAsync(java.util.function.Function,java.util.concurrent.Executor)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
+        public Java.Util.Concurrent.CompletionStage ExceptionallyAsync(Java.Util.Function.Function arg0, Java.Util.Concurrent.Executor arg1)
+        {
+            return IExecute<Java.Util.Concurrent.CompletionStage>("exceptionallyAsync", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#exceptionallyAsync(java.util.function.Function)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
+        public Java.Util.Concurrent.CompletionStage ExceptionallyAsync(Java.Util.Function.Function arg0)
+        {
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("exceptionallyAsync", "(Ljava/util/function/Function;)Ljava/util/concurrent/CompletionStage;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#exceptionallyCompose(java.util.function.Function)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
+        public Java.Util.Concurrent.CompletionStage ExceptionallyCompose(Java.Util.Function.Function arg0)
+        {
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("exceptionallyCompose", "(Ljava/util/function/Function;)Ljava/util/concurrent/CompletionStage;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#exceptionallyComposeAsync(java.util.function.Function,java.util.concurrent.Executor)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
+        public Java.Util.Concurrent.CompletionStage ExceptionallyComposeAsync(Java.Util.Function.Function arg0, Java.Util.Concurrent.Executor arg1)
+        {
+            return IExecute<Java.Util.Concurrent.CompletionStage>("exceptionallyComposeAsync", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#exceptionallyComposeAsync(java.util.function.Function)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
+        public Java.Util.Concurrent.CompletionStage ExceptionallyComposeAsync(Java.Util.Function.Function arg0)
+        {
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("exceptionallyComposeAsync", "(Ljava/util/function/Function;)Ljava/util/concurrent/CompletionStage;", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#handle(java.util.function.BiFunction)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.BiFunction"/></param>
@@ -1113,6 +1160,53 @@ namespace Java.Util.Concurrent
         public Java.Util.Concurrent.CompletionStage Exceptionally(Java.Util.Function.Function arg0)
         {
             return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("exceptionally", "(Ljava/util/function/Function;)Ljava/util/concurrent/CompletionStage;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#exceptionallyAsync(java.util.function.Function,java.util.concurrent.Executor)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
+        public Java.Util.Concurrent.CompletionStage ExceptionallyAsync(Java.Util.Function.Function arg0, Java.Util.Concurrent.Executor arg1)
+        {
+            return IExecute<Java.Util.Concurrent.CompletionStage>("exceptionallyAsync", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#exceptionallyAsync(java.util.function.Function)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
+        public Java.Util.Concurrent.CompletionStage ExceptionallyAsync(Java.Util.Function.Function arg0)
+        {
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("exceptionallyAsync", "(Ljava/util/function/Function;)Ljava/util/concurrent/CompletionStage;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#exceptionallyCompose(java.util.function.Function)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
+        public Java.Util.Concurrent.CompletionStage ExceptionallyCompose(Java.Util.Function.Function arg0)
+        {
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("exceptionallyCompose", "(Ljava/util/function/Function;)Ljava/util/concurrent/CompletionStage;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#exceptionallyComposeAsync(java.util.function.Function,java.util.concurrent.Executor)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
+        public Java.Util.Concurrent.CompletionStage ExceptionallyComposeAsync(Java.Util.Function.Function arg0, Java.Util.Concurrent.Executor arg1)
+        {
+            return IExecute<Java.Util.Concurrent.CompletionStage>("exceptionallyComposeAsync", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#exceptionallyComposeAsync(java.util.function.Function)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <returns><see cref="Java.Util.Concurrent.CompletionStage"/></returns>
+        public Java.Util.Concurrent.CompletionStage ExceptionallyComposeAsync(Java.Util.Function.Function arg0)
+        {
+            return IExecuteWithSignature<Java.Util.Concurrent.CompletionStage>("exceptionallyComposeAsync", "(Ljava/util/function/Function;)Ljava/util/concurrent/CompletionStage;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/CompletableFuture.html#handle(java.util.function.BiFunction)"/>

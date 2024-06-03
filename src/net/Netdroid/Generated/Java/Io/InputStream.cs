@@ -158,7 +158,7 @@ namespace Java.Io
         /// <param name="arg0"><see cref="int"/></param>
         public void Mark(int arg0)
         {
-            IExecute("mark", arg0);
+            IExecuteWithSignature("mark", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/io/InputStream.html#reset()"/>
@@ -166,7 +166,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void Reset()
         {
-            IExecute("reset");
+            IExecuteWithSignature("reset", "()V");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/io/InputStream.html#close()"/>
@@ -175,6 +175,15 @@ namespace Java.Io
         public void Close()
         {
             IExecuteWithSignature("close", "()V");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/io/InputStream.html#skipNBytes(long)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="long"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        public void SkipNBytes(long arg0)
+        {
+            IExecuteWithSignature("skipNBytes", "(J)V", arg0);
         }
 
         #endregion

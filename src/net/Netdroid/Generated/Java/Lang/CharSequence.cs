@@ -101,6 +101,14 @@ namespace Java.Lang
             return IExecute<Java.Lang.CharSequence>("subSequence", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/CharSequence.html#isEmpty()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        public bool IsEmpty()
+        {
+            return IExecuteWithSignature<bool>("isEmpty", "()Z");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/CharSequence.html#chars()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Stream.IntStream"/></returns>

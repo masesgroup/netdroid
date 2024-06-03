@@ -249,7 +249,7 @@ namespace Android.View
         /// <returns><typeparamref name="T"/></returns>
         public T FindViewById<T>(int arg0) where T : Android.View.View
         {
-            return IExecute<T>("findViewById", arg0);
+            return IExecuteWithSignature<T>("findViewById", "(I)Landroid/view/View;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Window.html#saveHierarchyState()"/>
@@ -848,7 +848,7 @@ namespace Android.View
         /// <returns><typeparamref name="T"/></returns>
         public T RequireViewById<T>(int arg0) where T : Android.View.View
         {
-            return IExecute<T>("requireViewById", arg0);
+            return IExecuteWithSignature<T>("requireViewById", "(I)Landroid/view/View;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/view/Window.html#getContext()"/>

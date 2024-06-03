@@ -76,6 +76,7 @@ namespace Java.Net
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.SocketImplFactory"/></param>
         /// <exception cref="Java.Io.IOException"/>
+        [global::System.Obsolete()]
         public static void SetSocketFactory(Java.Net.SocketImplFactory arg0)
         {
             SExecuteWithSignature(LocalBridgeClazz, "setSocketFactory", "(Ljava/net/SocketImplFactory;)V", arg0);
@@ -188,7 +189,7 @@ namespace Java.Net
         /// <exception cref="Java.Net.SocketException"/>
         public int GetReceiveBufferSize()
         {
-            return IExecute<int>("getReceiveBufferSize");
+            return IExecuteWithSignature<int>("getReceiveBufferSize", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/net/ServerSocket.html#getSoTimeout()"/>
@@ -197,7 +198,7 @@ namespace Java.Net
         /// <exception cref="Java.Io.IOException"/>
         public int GetSoTimeout()
         {
-            return IExecute<int>("getSoTimeout");
+            return IExecuteWithSignature<int>("getSoTimeout", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/net/ServerSocket.html#setReceiveBufferSize(int)"/>
@@ -206,7 +207,7 @@ namespace Java.Net
         /// <exception cref="Java.Net.SocketException"/>
         public void SetReceiveBufferSize(int arg0)
         {
-            IExecute("setReceiveBufferSize", arg0);
+            IExecuteWithSignature("setReceiveBufferSize", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/net/ServerSocket.html#setSoTimeout(int)"/>
@@ -215,7 +216,7 @@ namespace Java.Net
         /// <exception cref="Java.Net.SocketException"/>
         public void SetSoTimeout(int arg0)
         {
-            IExecute("setSoTimeout", arg0);
+            IExecuteWithSignature("setSoTimeout", "(I)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/net/ServerSocket.html#bind(java.net.SocketAddress,int)"/>

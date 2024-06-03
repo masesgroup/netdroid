@@ -139,7 +139,7 @@ namespace Java.Lang.Reflect
         /// <returns><see cref="int"/></returns>
         public int GetParameterCount()
         {
-            return IExecute<int>("getParameterCount");
+            return IExecuteWithSignature<int>("getParameterCount", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/reflect/Executable.html#getParameters()"/>

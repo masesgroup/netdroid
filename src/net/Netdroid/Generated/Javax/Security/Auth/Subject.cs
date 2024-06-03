@@ -83,6 +83,7 @@ namespace Javax.Security.Auth
         /// <param name="arg2"><see cref="Java.Security.AccessControlContext"/></param>
         /// <typeparam name="T"></typeparam>
         /// <returns><typeparamref name="T"/></returns>
+        [global::System.Obsolete()]
         public static T DoAsPrivileged<T>(Javax.Security.Auth.Subject arg0, Java.Security.PrivilegedAction<T> arg1, Java.Security.AccessControlContext arg2)
         {
             return SExecute<T>(LocalBridgeClazz, "doAsPrivileged", arg0, arg1, arg2);
@@ -96,6 +97,7 @@ namespace Javax.Security.Auth
         /// <typeparam name="T"></typeparam>
         /// <returns><typeparamref name="T"/></returns>
         /// <exception cref="Java.Security.PrivilegedActionException"/>
+        [global::System.Obsolete()]
         public static T DoAsPrivileged<T>(Javax.Security.Auth.Subject arg0, Java.Security.PrivilegedExceptionAction<T> arg1, Java.Security.AccessControlContext arg2)
         {
             return SExecute<T>(LocalBridgeClazz, "doAsPrivileged", arg0, arg1, arg2);
@@ -105,6 +107,7 @@ namespace Javax.Security.Auth
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.AccessControlContext"/></param>
         /// <returns><see cref="Javax.Security.Auth.Subject"/></returns>
+        [global::System.Obsolete()]
         public static Javax.Security.Auth.Subject GetSubject(Java.Security.AccessControlContext arg0)
         {
             return SExecuteWithSignature<Javax.Security.Auth.Subject>(LocalBridgeClazz, "getSubject", "(Ljava/security/AccessControlContext;)Ljavax/security/auth/Subject;", arg0);
@@ -121,7 +124,7 @@ namespace Javax.Security.Auth
         /// <returns><see cref="Java.Util.Set"/></returns>
         public Java.Util.Set<T> GetPrincipals<T>(Java.Lang.Class arg0) where T : Java.Security.IPrincipal, new()
         {
-            return IExecute<Java.Util.Set<T>>("getPrincipals", arg0);
+            return IExecuteWithSignature<Java.Util.Set<T>>("getPrincipals", "(Ljava/lang/Class;)Ljava/util/Set;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/javax/security/auth/Subject.html#getPrivateCredentials(java.lang.Class)"/>

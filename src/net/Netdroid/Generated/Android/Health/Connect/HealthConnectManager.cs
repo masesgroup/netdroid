@@ -76,6 +76,17 @@ namespace Android.Health.Connect
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/health/connect/HealthConnectManager.html#readRecords(android.health.connect.ReadRecordsRequest,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Android.Health.Connect.ReadRecordsRequest"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
+        /// <param name="arg2"><see cref="Android.Os.OutcomeReceiver"/></param>
+        /// <typeparam name="T"><see cref="Android.Health.Connect.Datatypes.Record"/></typeparam>
+        public void ReadRecords<T>(Android.Health.Connect.ReadRecordsRequest<T> arg0, Java.Util.Concurrent.Executor arg1, Android.Os.OutcomeReceiver<Android.Health.Connect.ReadRecordsResponse<T>, Android.Health.Connect.HealthConnectException> arg2) where T : Android.Health.Connect.Datatypes.Record
+        {
+            IExecute("readRecords", arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/health/connect/HealthConnectManager.html#aggregate(android.health.connect.AggregateRecordsRequest,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Health.Connect.AggregateRecordsRequest"/></param>
@@ -109,17 +120,6 @@ namespace Android.Health.Connect
         public void AggregateGroupByPeriod<T>(Android.Health.Connect.AggregateRecordsRequest<T> arg0, Java.Time.Period arg1, Java.Util.Concurrent.Executor arg2, Android.Os.OutcomeReceiver<Java.Util.List<Android.Health.Connect.AggregateRecordsGroupedByPeriodResponse<T>>, Android.Health.Connect.HealthConnectException> arg3)
         {
             IExecute("aggregateGroupByPeriod", arg0, arg1, arg2, arg3);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/health/connect/HealthConnectManager.html#readRecords(android.health.connect.ReadRecordsRequest,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Health.Connect.ReadRecordsRequest"/></param>
-        /// <param name="arg1"><see cref="Java.Util.Concurrent.Executor"/></param>
-        /// <param name="arg2"><see cref="Android.Os.OutcomeReceiver"/></param>
-        /// <typeparam name="T"><see cref="Android.Health.Connect.Datatypes.Record"/></typeparam>
-        public void ReadRecords<T>(Android.Health.Connect.ReadRecordsRequest<T> arg0, Java.Util.Concurrent.Executor arg1, Android.Os.OutcomeReceiver<Android.Health.Connect.ReadRecordsResponse<T>, Android.Health.Connect.HealthConnectException> arg2) where T : Android.Health.Connect.Datatypes.Record
-        {
-            IExecute("readRecords", arg0, arg1, arg2);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/health/connect/HealthConnectManager.html#deleteRecords(java.lang.Class,android.health.connect.TimeRangeFilter,java.util.concurrent.Executor,android.os.OutcomeReceiver)"/>

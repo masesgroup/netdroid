@@ -100,9 +100,9 @@ namespace Android.Widget
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
         /// <typeparam name="T"><see cref="Android.Widget.IListAdapter"/></typeparam>
-        public void SetAdapter<T>(T arg0) where T : Android.Widget.IListAdapter, Android.Widget.IFilterable, new()
+        public void SetAdapter<T>(T arg0) where T : Android.Widget.IListAdapter, new(), Android.Widget.IFilterable, new()
         {
-            IExecute("setAdapter", arg0);
+            IExecuteWithSignature("setAdapter", "(Landroid/widget/ListAdapter;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#getDropDownBackground()"/>

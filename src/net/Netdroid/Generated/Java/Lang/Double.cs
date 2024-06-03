@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Lang
 {
     #region Double
-    public partial class Double
+    public partial class Double : Java.Lang.IComparable<Java.Lang.Double>
     {
         #region Constructors
         /// <summary>
@@ -317,6 +317,24 @@ namespace Java.Lang
         public int CompareTo(object arg0)
         {
             return IExecuteWithSignature<int>("compareTo", "(Ljava/lang/Object;)I", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Double.html#resolveConstantDesc(java.lang.invoke.MethodHandles.Lookup)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandles.Lookup"/></param>
+        /// <returns><see cref="object"/></returns>
+        /// <exception cref="Java.Lang.ReflectiveOperationException"/>
+        public object ResolveConstantDesc(Java.Lang.Invoke.MethodHandles.Lookup arg0)
+        {
+            return IExecuteWithSignature("resolveConstantDesc", "(Ljava/lang/invoke/MethodHandles$Lookup;)Ljava/lang/Object;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/Double.html#describeConstable()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Optional"/></returns>
+        public Java.Util.Optional<Java.Lang.Double> DescribeConstable()
+        {
+            return IExecuteWithSignature<Java.Util.Optional<Java.Lang.Double>>("describeConstable", "()Ljava/util/Optional;");
         }
 
         #endregion

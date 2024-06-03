@@ -340,6 +340,25 @@ namespace Java.Util.Stream
             return SExecute<Java.Util.Stream.Collector<T, object, Java.Util.Map<K, Java.Util.List<T>>>>(LocalBridgeClazz, "groupingBy", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java/util/stream/Collectors.html#teeing(java.util.stream.Collector,java.util.stream.Collector,java.util.function.BiFunction)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Stream.Collector"/></param>
+        /// <param name="arg1"><see cref="Java.Util.Stream.Collector"/></param>
+        /// <param name="arg2"><see cref="Java.Util.Function.BiFunction"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <typeparam name="R"></typeparam>
+        /// <typeparam name="Arg0objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="R1"></typeparam>
+        /// <typeparam name="Arg1objectSuperT"><typeparamref name="T"/></typeparam>
+        /// <typeparam name="R2"></typeparam>
+        /// <typeparam name="Arg2objectSuperR1"><typeparamref name="R1"/></typeparam>
+        /// <typeparam name="Arg2objectSuperR2"><typeparamref name="R2"/></typeparam>
+        /// <returns><see cref="Java.Util.Stream.Collector"/></returns>
+        public static Java.Util.Stream.Collector<T, object, R> Teeing<T, R, Arg0objectSuperT, R1, Arg1objectSuperT, R2, Arg2objectSuperR1, Arg2objectSuperR2>(Java.Util.Stream.Collector<Arg0objectSuperT, object, R1> arg0, Java.Util.Stream.Collector<Arg1objectSuperT, object, R2> arg1, Java.Util.Function.BiFunction<Arg2objectSuperR1, Arg2objectSuperR2, R> arg2) where Arg0objectSuperT : T where Arg1objectSuperT : T where Arg2objectSuperR1 : R1 where Arg2objectSuperR2 : R2
+        {
+            return SExecute<Java.Util.Stream.Collector<T, object, R>>(LocalBridgeClazz, "teeing", arg0, arg1, arg2);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/Collectors.html#flatMapping(java.util.function.Function,java.util.stream.Collector)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>

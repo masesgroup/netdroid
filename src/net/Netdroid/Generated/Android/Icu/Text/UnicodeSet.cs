@@ -199,7 +199,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Android.Icu.Text.UnicodeSet"/></returns>
         public Android.Icu.Text.UnicodeSet AddAll<T>(params T[] arg0) where T : Java.Lang.ICharSequence, new()
         {
-            if (arg0.Length == 0) return IExecute<Android.Icu.Text.UnicodeSet>("addAll"); else return IExecute<Android.Icu.Text.UnicodeSet>("addAll", arg0);
+            if (arg0.Length == 0) return IExecuteWithSignature<Android.Icu.Text.UnicodeSet>("addAll", "([Ljava/lang/CharSequence;)Landroid/icu/text/UnicodeSet;"); else return IExecuteWithSignature<Android.Icu.Text.UnicodeSet>("addAll", "([Ljava/lang/CharSequence;)Landroid/icu/text/UnicodeSet;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#removeAll(java.lang.Iterable)"/>
@@ -209,7 +209,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Android.Icu.Text.UnicodeSet"/></returns>
         public Android.Icu.Text.UnicodeSet RemoveAll<T>(Java.Lang.Iterable<T> arg0) where T : Java.Lang.ICharSequence, new()
         {
-            return IExecute<Android.Icu.Text.UnicodeSet>("removeAll", arg0);
+            return IExecuteWithSignature<Android.Icu.Text.UnicodeSet>("removeAll", "(Ljava/lang/Iterable;)Landroid/icu/text/UnicodeSet;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#retainAll(java.lang.Iterable)"/>
@@ -219,7 +219,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="Android.Icu.Text.UnicodeSet"/></returns>
         public Android.Icu.Text.UnicodeSet RetainAll<T>(Java.Lang.Iterable<T> arg0) where T : Java.Lang.ICharSequence, new()
         {
-            return IExecute<Android.Icu.Text.UnicodeSet>("retainAll", arg0);
+            return IExecuteWithSignature<Android.Icu.Text.UnicodeSet>("retainAll", "(Ljava/lang/Iterable;)Landroid/icu/text/UnicodeSet;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#containsAll(java.lang.Iterable)"/>
@@ -229,7 +229,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="bool"/></returns>
         public bool ContainsAll<T>(Java.Lang.Iterable<T> arg0) where T : Java.Lang.ICharSequence, new()
         {
-            return IExecute<bool>("containsAll", arg0);
+            return IExecuteWithSignature<bool>("containsAll", "(Ljava/lang/Iterable;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#containsNone(java.lang.Iterable)"/>
@@ -239,7 +239,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="bool"/></returns>
         public bool ContainsNone<T>(Java.Lang.Iterable<T> arg0) where T : Java.Lang.ICharSequence, new()
         {
-            return IExecute<bool>("containsNone", arg0);
+            return IExecuteWithSignature<bool>("containsNone", "(Ljava/lang/Iterable;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#addAllTo(java.util.Collection)"/>
@@ -249,7 +249,7 @@ namespace Android.Icu.Text
         /// <returns><typeparamref name="T"/></returns>
         public T AddAllTo<T>(T arg0) where T : Java.Util.Collection<Java.Lang.String>
         {
-            return IExecute<T>("addAllTo", arg0);
+            return IExecuteWithSignature<T>("addAllTo", "(Ljava/util/Collection;)Ljava/util/Collection;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#add(int,int)"/>
@@ -546,7 +546,7 @@ namespace Android.Icu.Text
         /// <returns><see cref="bool"/></returns>
         public bool ContainsSome<T>(Java.Lang.Iterable<T> arg0) where T : Java.Lang.ICharSequence, new()
         {
-            return IExecute<bool>("containsSome", arg0);
+            return IExecuteWithSignature<bool>("containsSome", "(Ljava/lang/Iterable;)Z", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#add(int)"/>

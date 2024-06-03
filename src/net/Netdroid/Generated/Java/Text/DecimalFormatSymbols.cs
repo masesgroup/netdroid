@@ -127,6 +127,14 @@ namespace Java.Text
             return IExecuteWithSignature<char>("getMonetaryDecimalSeparator", "()C");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java/text/DecimalFormatSymbols.html#getMonetaryGroupingSeparator()"/>
+        /// </summary>
+        /// <returns><see cref="char"/></returns>
+        public char GetMonetaryGroupingSeparator()
+        {
+            return IExecuteWithSignature<char>("getMonetaryGroupingSeparator", "()C");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java/text/DecimalFormatSymbols.html#getPatternSeparator()"/>
         /// </summary>
         /// <returns><see cref="char"/></returns>
@@ -285,6 +293,14 @@ namespace Java.Text
         public void SetMonetaryDecimalSeparator(char arg0)
         {
             IExecuteWithSignature("setMonetaryDecimalSeparator", "(C)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/text/DecimalFormatSymbols.html#setMonetaryGroupingSeparator(char)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="char"/></param>
+        public void SetMonetaryGroupingSeparator(char arg0)
+        {
+            IExecuteWithSignature("setMonetaryGroupingSeparator", "(C)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/text/DecimalFormatSymbols.html#setNaN(java.lang.String)"/>

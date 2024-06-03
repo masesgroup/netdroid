@@ -33,6 +33,10 @@ namespace Android.Hardware
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Android.Hardware.SensorEventCallback"/> to <see cref="Android.Hardware.SensorEventListener2"/>
+        /// </summary>
+        public static implicit operator Android.Hardware.SensorEventListener2(Android.Hardware.SensorEventCallback t) => t.Cast<Android.Hardware.SensorEventListener2>();
 
         #endregion
 

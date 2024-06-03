@@ -54,6 +54,16 @@ namespace Java.Nio.Channels
         {
             return SExecuteWithSignature<Java.Nio.Channels.ServerSocketChannel>(LocalBridgeClazz, "open", "()Ljava/nio/channels/ServerSocketChannel;");
         }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/nio/channels/ServerSocketChannel.html#open(java.net.ProtocolFamily)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.ProtocolFamily"/></param>
+        /// <returns><see cref="Java.Nio.Channels.ServerSocketChannel"/></returns>
+        /// <exception cref="Java.Io.IOException"/>
+        public static Java.Nio.Channels.ServerSocketChannel Open(Java.Net.ProtocolFamily arg0)
+        {
+            return SExecuteWithSignature<Java.Nio.Channels.ServerSocketChannel>(LocalBridgeClazz, "open", "(Ljava/net/ProtocolFamily;)Ljava/nio/channels/ServerSocketChannel;", arg0);
+        }
 
         #endregion
 

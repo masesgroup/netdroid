@@ -23,13 +23,13 @@
 
 using MASES.JCOBridge.C2JBridge;
 
-namespace Java.Security.Acl
+namespace Java.Security.Interfaces
 {
-    #region IPermission
+    #region IEdECPrivateKey
     /// <summary>
     /// .NET interface for TO BE DEFINED FROM USER
     /// </summary>
-    public partial interface IPermission
+    public partial interface IEdECPrivateKey
     {
         #region Instance methods
 
@@ -43,14 +43,22 @@ namespace Java.Security.Acl
     }
     #endregion
 
-    #region Permission
-    public partial class Permission : Java.Security.Acl.IPermission
+    #region EdECPrivateKey
+    public partial class EdECPrivateKey : Java.Security.Interfaces.IEdECPrivateKey, Java.Security.Interfaces.IEdECKey, Java.Security.IPrivateKey
     {
         #region Constructors
 
         #endregion
 
         #region Class/Interface conversion operators
+        /// <summary>
+        /// Converter from <see cref="Java.Security.Interfaces.EdECPrivateKey"/> to <see cref="Java.Security.Interfaces.EdECKey"/>
+        /// </summary>
+        public static implicit operator Java.Security.Interfaces.EdECKey(Java.Security.Interfaces.EdECPrivateKey t) => t.Cast<Java.Security.Interfaces.EdECKey>();
+        /// <summary>
+        /// Converter from <see cref="Java.Security.Interfaces.EdECPrivateKey"/> to <see cref="Java.Security.PrivateKey"/>
+        /// </summary>
+        public static implicit operator Java.Security.PrivateKey(Java.Security.Interfaces.EdECPrivateKey t) => t.Cast<Java.Security.PrivateKey>();
 
         #endregion
 
@@ -63,6 +71,14 @@ namespace Java.Security.Acl
         #endregion
 
         #region Instance methods
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/interfaces/EdECPrivateKey.html#getBytes()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Optional"/></returns>
+        public Java.Util.Optional<byte[]> GetBytes()
+        {
+            return IExecuteWithSignature<Java.Util.Optional<byte[]>>("getBytes", "()Ljava/util/Optional;");
+        }
 
         #endregion
 

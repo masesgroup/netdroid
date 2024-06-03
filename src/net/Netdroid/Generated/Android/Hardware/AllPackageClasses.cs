@@ -1156,7 +1156,7 @@ namespace Android.Hardware
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/hardware/SensorEventCallback.html"/>
     /// </summary>
-    public partial class SensorEventCallback : Android.Hardware.SensorEventListener2
+    public partial class SensorEventCallback : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SensorEventCallback>
     {
         const string _bridgeClassName = "android.hardware.SensorEventCallback";
         /// <summary>
@@ -1267,24 +1267,46 @@ namespace Android.Hardware
     /// <summary>
     /// <see href="https://developer.android.com/reference/android/hardware/SensorEventListener2.html"/>
     /// </summary>
-    public partial class SensorEventListener2 : Android.Hardware.SensorEventListener
+    public partial class SensorEventListener2 : MASES.JCOBridge.C2JBridge.JVMBridgeListener
     {
-        const string _bridgeClassName = "android.hardware.SensorEventListener2";
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [global::System.Obsolete("SensorEventListener2 class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-        public SensorEventListener2() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        [global::System.Obsolete("SensorEventListener2 class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
-        public SensorEventListener2(params object[] args) : base(args) { }
+        public SensorEventListener2() { InitializeHandlers(); }
 
+        const string _bridgeClassName = "org.mases.netdroid.generated.android.hardware.SensorEventListener2";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+        
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+
+    
+        // TODO: complete the class
+
+    }
+    #endregion
+
+    #region SensorEventListener2Direct
+    /// <summary>
+    /// Direct override of <see cref="SensorEventListener2"/> or its generic type if there is one
+    /// </summary>
+    public partial class SensorEventListener2Direct : SensorEventListener2
+    {
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// </summary>
+        public override bool AutoInit => false;
+
+        /// <inheritdoc />
+        protected override void InitializeHandlers() { }
+
+        const string _bridgeClassName = "android.hardware.SensorEventListener2";
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
 
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
         public override string BridgeClassName => _bridgeClassName;
         /// <summary>
@@ -1303,9 +1325,6 @@ namespace Android.Hardware
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
-
-        // TODO: complete the class
-
     }
     #endregion
 

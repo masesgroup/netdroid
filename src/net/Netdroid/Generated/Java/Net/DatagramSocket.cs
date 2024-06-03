@@ -74,6 +74,7 @@ namespace Java.Net
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.DatagramSocketImplFactory"/></param>
         /// <exception cref="Java.Io.IOException"/>
+        [global::System.Obsolete()]
         public static void SetDatagramSocketImplFactory(Java.Net.DatagramSocketImplFactory arg0)
         {
             SExecuteWithSignature(LocalBridgeClazz, "setDatagramSocketImplFactory", "(Ljava/net/DatagramSocketImplFactory;)V", arg0);
@@ -104,6 +105,24 @@ namespace Java.Net
         public T GetOption<T>(Java.Net.SocketOption<T> arg0)
         {
             return IExecuteWithSignature<T>("getOption", "(Ljava/net/SocketOption;)Ljava/lang/Object;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/DatagramSocket.html#getBroadcast()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Java.Net.SocketException"/>
+        public bool GetBroadcast()
+        {
+            return IExecuteWithSignature<bool>("getBroadcast", "()Z");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/DatagramSocket.html#getReuseAddress()"/>
+        /// </summary>
+        /// <returns><see cref="bool"/></returns>
+        /// <exception cref="Java.Net.SocketException"/>
+        public bool GetReuseAddress()
+        {
+            return IExecuteWithSignature<bool>("getReuseAddress", "()Z");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/net/DatagramSocket.html#isBound()"/>
@@ -144,6 +163,42 @@ namespace Java.Net
         public int GetPort()
         {
             return IExecuteWithSignature<int>("getPort", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/DatagramSocket.html#getReceiveBufferSize()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Java.Net.SocketException"/>
+        public int GetReceiveBufferSize()
+        {
+            return IExecuteWithSignature<int>("getReceiveBufferSize", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/DatagramSocket.html#getSendBufferSize()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Java.Net.SocketException"/>
+        public int GetSendBufferSize()
+        {
+            return IExecuteWithSignature<int>("getSendBufferSize", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/DatagramSocket.html#getSoTimeout()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Java.Net.SocketException"/>
+        public int GetSoTimeout()
+        {
+            return IExecuteWithSignature<int>("getSoTimeout", "()I");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/DatagramSocket.html#getTrafficClass()"/>
+        /// </summary>
+        /// <returns><see cref="int"/></returns>
+        /// <exception cref="Java.Net.SocketException"/>
+        public int GetTrafficClass()
+        {
+            return IExecuteWithSignature<int>("getTrafficClass", "()I");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/net/DatagramSocket.html#getInetAddress()"/>
@@ -194,130 +249,13 @@ namespace Java.Net
             return IExecuteWithSignature<Java.Util.Set<Java.Net.SocketOption<object>>>("supportedOptions", "()Ljava/util/Set;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java/net/DatagramSocket.html#getBroadcast()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Java.Net.SocketException"/>
-        public bool GetBroadcast()
-        {
-            return IExecute<bool>("getBroadcast");
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java/net/DatagramSocket.html#getReuseAddress()"/>
-        /// </summary>
-        /// <returns><see cref="bool"/></returns>
-        /// <exception cref="Java.Net.SocketException"/>
-        public bool GetReuseAddress()
-        {
-            return IExecute<bool>("getReuseAddress");
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java/net/DatagramSocket.html#getReceiveBufferSize()"/>
-        /// </summary>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Java.Net.SocketException"/>
-        public int GetReceiveBufferSize()
-        {
-            return IExecute<int>("getReceiveBufferSize");
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java/net/DatagramSocket.html#getSendBufferSize()"/>
-        /// </summary>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Java.Net.SocketException"/>
-        public int GetSendBufferSize()
-        {
-            return IExecute<int>("getSendBufferSize");
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java/net/DatagramSocket.html#getSoTimeout()"/>
-        /// </summary>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Java.Net.SocketException"/>
-        public int GetSoTimeout()
-        {
-            return IExecute<int>("getSoTimeout");
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java/net/DatagramSocket.html#getTrafficClass()"/>
-        /// </summary>
-        /// <returns><see cref="int"/></returns>
-        /// <exception cref="Java.Net.SocketException"/>
-        public int GetTrafficClass()
-        {
-            return IExecute<int>("getTrafficClass");
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/java/net/DatagramSocket.html#bind(java.net.SocketAddress)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.SocketAddress"/></param>
         /// <exception cref="Java.Net.SocketException"/>
         public void Bind(Java.Net.SocketAddress arg0)
         {
-            IExecute("bind", arg0);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java/net/DatagramSocket.html#receive(java.net.DatagramPacket)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Net.DatagramPacket"/></param>
-        /// <exception cref="Java.Io.IOException"/>
-        public void Receive(Java.Net.DatagramPacket arg0)
-        {
-            IExecute("receive", arg0);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java/net/DatagramSocket.html#setBroadcast(boolean)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <exception cref="Java.Net.SocketException"/>
-        public void SetBroadcast(bool arg0)
-        {
-            IExecute("setBroadcast", arg0);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java/net/DatagramSocket.html#setReceiveBufferSize(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <exception cref="Java.Net.SocketException"/>
-        public void SetReceiveBufferSize(int arg0)
-        {
-            IExecute("setReceiveBufferSize", arg0);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java/net/DatagramSocket.html#setReuseAddress(boolean)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        /// <exception cref="Java.Net.SocketException"/>
-        public void SetReuseAddress(bool arg0)
-        {
-            IExecute("setReuseAddress", arg0);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java/net/DatagramSocket.html#setSendBufferSize(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <exception cref="Java.Net.SocketException"/>
-        public void SetSendBufferSize(int arg0)
-        {
-            IExecute("setSendBufferSize", arg0);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java/net/DatagramSocket.html#setSoTimeout(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <exception cref="Java.Net.SocketException"/>
-        public void SetSoTimeout(int arg0)
-        {
-            IExecute("setSoTimeout", arg0);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java/net/DatagramSocket.html#setTrafficClass(int)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="int"/></param>
-        /// <exception cref="Java.Net.SocketException"/>
-        public void SetTrafficClass(int arg0)
-        {
-            IExecute("setTrafficClass", arg0);
+            IExecuteWithSignature("bind", "(Ljava/net/SocketAddress;)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/net/DatagramSocket.html#close()"/>
@@ -352,6 +290,35 @@ namespace Java.Net
             IExecuteWithSignature("disconnect", "()V");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/DatagramSocket.html#joinGroup(java.net.SocketAddress,java.net.NetworkInterface)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.SocketAddress"/></param>
+        /// <param name="arg1"><see cref="Java.Net.NetworkInterface"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        public void JoinGroup(Java.Net.SocketAddress arg0, Java.Net.NetworkInterface arg1)
+        {
+            IExecute("joinGroup", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/DatagramSocket.html#leaveGroup(java.net.SocketAddress,java.net.NetworkInterface)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.SocketAddress"/></param>
+        /// <param name="arg1"><see cref="Java.Net.NetworkInterface"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        public void LeaveGroup(Java.Net.SocketAddress arg0, Java.Net.NetworkInterface arg1)
+        {
+            IExecute("leaveGroup", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/DatagramSocket.html#receive(java.net.DatagramPacket)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Net.DatagramPacket"/></param>
+        /// <exception cref="Java.Io.IOException"/>
+        public void Receive(Java.Net.DatagramPacket arg0)
+        {
+            IExecuteWithSignature("receive", "(Ljava/net/DatagramPacket;)V", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java/net/DatagramSocket.html#send(java.net.DatagramPacket)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Net.DatagramPacket"/></param>
@@ -359,6 +326,60 @@ namespace Java.Net
         public void Send(Java.Net.DatagramPacket arg0)
         {
             IExecuteWithSignature("send", "(Ljava/net/DatagramPacket;)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/DatagramSocket.html#setBroadcast(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        /// <exception cref="Java.Net.SocketException"/>
+        public void SetBroadcast(bool arg0)
+        {
+            IExecuteWithSignature("setBroadcast", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/DatagramSocket.html#setReceiveBufferSize(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <exception cref="Java.Net.SocketException"/>
+        public void SetReceiveBufferSize(int arg0)
+        {
+            IExecuteWithSignature("setReceiveBufferSize", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/DatagramSocket.html#setReuseAddress(boolean)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="bool"/></param>
+        /// <exception cref="Java.Net.SocketException"/>
+        public void SetReuseAddress(bool arg0)
+        {
+            IExecuteWithSignature("setReuseAddress", "(Z)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/DatagramSocket.html#setSendBufferSize(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <exception cref="Java.Net.SocketException"/>
+        public void SetSendBufferSize(int arg0)
+        {
+            IExecuteWithSignature("setSendBufferSize", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/DatagramSocket.html#setSoTimeout(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <exception cref="Java.Net.SocketException"/>
+        public void SetSoTimeout(int arg0)
+        {
+            IExecuteWithSignature("setSoTimeout", "(I)V", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/net/DatagramSocket.html#setTrafficClass(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <exception cref="Java.Net.SocketException"/>
+        public void SetTrafficClass(int arg0)
+        {
+            IExecuteWithSignature("setTrafficClass", "(I)V", arg0);
         }
 
         #endregion

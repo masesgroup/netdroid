@@ -337,6 +337,18 @@ namespace Java.Lang
 
         #region Instance methods
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#transform(java.util.function.Function)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <typeparam name="R"></typeparam>
+        /// <typeparam name="Arg0objectSuperJava_Lang_String"><see cref="Java.Lang.String"/></typeparam>
+        /// <typeparam name="Arg0ExtendsR"><typeparamref name="R"/></typeparam>
+        /// <returns><typeparamref name="R"/></returns>
+        public R Transform<R, Arg0objectSuperJava_Lang_String, Arg0ExtendsR>(Java.Util.Function.Function<Arg0objectSuperJava_Lang_String, Arg0ExtendsR> arg0) where Arg0objectSuperJava_Lang_String : Java.Lang.String where Arg0ExtendsR : R
+        {
+            return IExecuteWithSignature<R>("transform", "(Ljava/util/function/Function;)Ljava/lang/Object;", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/String.html#contains(java.lang.CharSequence)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.CharSequence"/></param>
@@ -654,6 +666,16 @@ namespace Java.Lang
             return IExecute<Java.Lang.CharSequence>("subSequence", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#resolveConstantDesc(java.lang.invoke.MethodHandles.Lookup)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.Invoke.MethodHandles.Lookup"/></param>
+        /// <returns><see cref="object"/></returns>
+        /// <exception cref="Java.Lang.ReflectiveOperationException"/>
+        public object ResolveConstantDesc(Java.Lang.Invoke.MethodHandles.Lookup arg0)
+        {
+            return IExecuteWithSignature("resolveConstantDesc", "(Ljava/lang/invoke/MethodHandles$Lookup;)Ljava/lang/Object;", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/String.html#concat(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
@@ -661,6 +683,24 @@ namespace Java.Lang
         public Java.Lang.String Concat(Java.Lang.String arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("concat", "(Ljava/lang/String;)Ljava/lang/String;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#formatted(java.lang.Object[])"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String Formatted(params object[] arg0)
+        {
+            if (arg0.Length == 0) return IExecuteWithSignature<Java.Lang.String>("formatted", "([Ljava/lang/Object;)Ljava/lang/String;"); else return IExecuteWithSignature<Java.Lang.String>("formatted", "([Ljava/lang/Object;)Ljava/lang/String;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#indent(int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String Indent(int arg0)
+        {
+            return IExecuteWithSignature<Java.Lang.String>("indent", "(I)Ljava/lang/String;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/String.html#repeat(int)"/>
@@ -718,6 +758,14 @@ namespace Java.Lang
         public Java.Lang.String Strip()
         {
             return IExecuteWithSignature<Java.Lang.String>("strip", "()Ljava/lang/String;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#stripIndent()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String StripIndent()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("stripIndent", "()Ljava/lang/String;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/String.html#stripLeading()"/>
@@ -789,6 +837,14 @@ namespace Java.Lang
             return IExecuteWithSignature<Java.Lang.String>("toUpperCase", "(Ljava/util/Locale;)Ljava/lang/String;", arg0);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#translateEscapes()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Lang.String"/></returns>
+        public Java.Lang.String TranslateEscapes()
+        {
+            return IExecuteWithSignature<Java.Lang.String>("translateEscapes", "()Ljava/lang/String;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/String.html#trim()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.String"/></returns>
@@ -814,6 +870,14 @@ namespace Java.Lang
         public Java.Lang.String[] Split(Java.Lang.String arg0)
         {
             return IExecuteWithSignatureArray<Java.Lang.String>("split", "(Ljava/lang/String;)[Ljava/lang/String;", arg0);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/lang/String.html#describeConstable()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Util.Optional"/></returns>
+        public Java.Util.Optional<Java.Lang.String> DescribeConstable()
+        {
+            return IExecuteWithSignature<Java.Util.Optional<Java.Lang.String>>("describeConstable", "()Ljava/util/Optional;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/lang/String.html#chars()"/>

@@ -214,24 +214,6 @@ namespace Java.Lang
         {
             IExecuteWithSignature("runFinalization", "()V");
         }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java/lang/Runtime.html#traceInstructions(boolean)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        [global::System.Obsolete()]
-        public void TraceInstructions(bool arg0)
-        {
-            IExecute("traceInstructions", arg0);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java/lang/Runtime.html#traceMethodCalls(boolean)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="bool"/></param>
-        [global::System.Obsolete()]
-        public void TraceMethodCalls(bool arg0)
-        {
-            IExecute("traceMethodCalls", arg0);
-        }
 
         #endregion
 

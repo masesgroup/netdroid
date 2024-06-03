@@ -54,7 +54,7 @@ namespace Android.App
         [global::System.Obsolete()]
         public T OnFindViewById<T>(int arg0) where T : Android.View.View
         {
-            return IExecute<T>("onFindViewById", arg0);
+            return IExecuteWithSignature<T>("onFindViewById", "(I)Landroid/view/View;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/FragmentContainer.html#onHasView()"/>

@@ -2698,6 +2698,50 @@ namespace Java.Util
     }
     #endregion
 
+    #region HexFormat
+    /// <summary>
+    /// <see href="https://developer.android.com/reference/java/util/HexFormat.html"/>
+    /// </summary>
+    public partial class HexFormat : MASES.JCOBridge.C2JBridge.JVMBridgeBase<HexFormat>
+    {
+        const string _bridgeClassName = "java.util.HexFormat";
+        /// <summary>
+        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
+        /// </summary>
+        public HexFormat() { }
+        /// <summary>
+        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
+        /// </summary>
+        public HexFormat(params object[] args) : base(args) { }
+
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
+
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
+        /// </summary>
+        public override string BridgeClassName => _bridgeClassName;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
+        /// </summary>
+        public override bool IsBridgeAbstract => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
+        /// </summary>
+        public override bool IsBridgeCloseable => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
+        /// </summary>
+        public override bool IsBridgeInterface => false;
+        /// <summary>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
+        /// </summary>
+        public override bool IsBridgeStatic => false;
+
+        // TODO: complete the class
+
+    }
+    #endregion
+
     #region IdentityHashMap
     /// <summary>
     /// <see href="https://developer.android.com/reference/java/util/IdentityHashMap.html"/>
@@ -5149,7 +5193,7 @@ namespace Java.Util
     /// <summary>
     /// <see href="https://developer.android.com/reference/java/util/Random.html"/>
     /// </summary>
-    public partial class Random : Java.Io.Serializable
+    public partial class Random : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Random>
     {
         const string _bridgeClassName = "java.util.Random";
         /// <summary>

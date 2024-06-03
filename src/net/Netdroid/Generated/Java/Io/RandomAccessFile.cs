@@ -378,7 +378,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public long Length()
         {
-            return IExecute<long>("length");
+            return IExecuteWithSignature<long>("length", "()J");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/io/RandomAccessFile.html#setLength(long)"/>
@@ -387,7 +387,7 @@ namespace Java.Io
         /// <exception cref="Java.Io.IOException"/>
         public void SetLength(long arg0)
         {
-            IExecute("setLength", arg0);
+            IExecuteWithSignature("setLength", "(J)V", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/io/RandomAccessFile.html#close()"/>

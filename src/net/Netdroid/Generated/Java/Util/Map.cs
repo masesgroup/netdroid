@@ -500,6 +500,15 @@ namespace Java.Util
             #endregion
 
             #region Static methods
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/java/util/Map.Entry.html#copyOf(java.util.Map.Entry)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.Map.Entry"/></param>
+            /// <returns><see cref="Java.Util.Map.Entry"/></returns>
+            public static Java.Util.Map.Entry CopyOf(Java.Util.Map.Entry arg0)
+            {
+                return SExecute<Java.Util.Map.Entry>(LocalBridgeClazz, "copyOf", arg0);
+            }
 
             #endregion
 
@@ -560,6 +569,17 @@ namespace Java.Util
             #endregion
 
             #region Static methods
+            /// <summary>
+            /// <see href="https://developer.android.com/reference/java/util/Map.Entry.html#copyOf(java.util.Map.Entry)"/>
+            /// </summary>
+            /// <param name="arg0"><see cref="Java.Util.Map.Entry"/></param>
+            /// <typeparam name="Arg0ExtendsK"><typeparamref name="K"/></typeparam>
+            /// <typeparam name="Arg0ExtendsV"><typeparamref name="V"/></typeparam>
+            /// <returns><see cref="Java.Util.Map.Entry"/></returns>
+            public static Java.Util.Map.Entry<K, V> CopyOf<Arg0ExtendsK, Arg0ExtendsV>(Java.Util.Map.Entry<Arg0ExtendsK, Arg0ExtendsV> arg0) where Arg0ExtendsK : K where Arg0ExtendsV : V
+            {
+                return SExecute<Java.Util.Map.Entry<K, V>>(LocalBridgeClazz, "copyOf", arg0);
+            }
 
             #endregion
 

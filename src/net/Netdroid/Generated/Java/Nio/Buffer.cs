@@ -102,6 +102,16 @@ namespace Java.Nio
             return IExecuteWithSignature<Java.Nio.Buffer>("slice", "()Ljava/nio/Buffer;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java/nio/Buffer.html#slice(int,int)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="int"/></param>
+        /// <param name="arg1"><see cref="int"/></param>
+        /// <returns><see cref="Java.Nio.Buffer"/></returns>
+        public Java.Nio.Buffer Slice(int arg0, int arg1)
+        {
+            return IExecute<Java.Nio.Buffer>("slice", arg0, arg1);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/Buffer.html#hasRemaining()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>

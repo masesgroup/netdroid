@@ -71,6 +71,7 @@ namespace Java.Lang
         /// <see href="https://developer.android.com/reference/java/lang/System.html#getSecurityManager()"/>
         /// </summary>
         /// <returns><see cref="Java.Lang.SecurityManager"/></returns>
+        [global::System.Obsolete()]
         public static Java.Lang.SecurityManager GetSecurityManager()
         {
             return SExecuteWithSignature<Java.Lang.SecurityManager>(LocalBridgeClazz, "getSecurityManager", "()Ljava/lang/SecurityManager;");
@@ -275,6 +276,7 @@ namespace Java.Lang
         /// <see href="https://developer.android.com/reference/java/lang/System.html#setSecurityManager(java.lang.SecurityManager)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.SecurityManager"/></param>
+        [global::System.Obsolete()]
         public static void SetSecurityManager(Java.Lang.SecurityManager arg0)
         {
             SExecuteWithSignature(LocalBridgeClazz, "setSecurityManager", "(Ljava/lang/SecurityManager;)V", arg0);

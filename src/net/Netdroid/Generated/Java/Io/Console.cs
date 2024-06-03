@@ -118,6 +118,14 @@ namespace Java.Io
             if (arg1.Length == 0) return IExecute<Java.Lang.String>("readLine", arg0); else return IExecute<Java.Lang.String>("readLine", arg0, arg1);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java/io/Console.html#charset()"/>
+        /// </summary>
+        /// <returns><see cref="Java.Nio.Charset.Charset"/></returns>
+        public Java.Nio.Charset.Charset Charset()
+        {
+            return IExecuteWithSignature<Java.Nio.Charset.Charset>("charset", "()Ljava/nio/charset/Charset;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java/io/Console.html#flush()"/>
         /// </summary>
         public void Flush()

@@ -54,6 +54,27 @@ namespace Java.Security
             if (arg2.Length == 0) return SExecute<T>(LocalBridgeClazz, "doPrivileged", arg0, arg1); else return SExecute<T>(LocalBridgeClazz, "doPrivileged", arg0, arg1, arg2);
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/AccessController.html#doPrivileged(java.security.PrivilegedAction,java.security.AccessControlContext)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.PrivilegedAction"/></param>
+        /// <param name="arg1"><see cref="Java.Security.AccessControlContext"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
+        public static T DoPrivileged<T>(Java.Security.PrivilegedAction<T> arg0, Java.Security.AccessControlContext arg1)
+        {
+            return SExecute<T>(LocalBridgeClazz, "doPrivileged", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/AccessController.html#doPrivileged(java.security.PrivilegedAction)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.PrivilegedAction"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
+        public static T DoPrivileged<T>(Java.Security.PrivilegedAction<T> arg0)
+        {
+            return SExecuteWithSignature<T>(LocalBridgeClazz, "doPrivileged", "(Ljava/security/PrivilegedAction;)Ljava/lang/Object;", arg0);
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/AccessController.html#doPrivileged(java.security.PrivilegedExceptionAction,java.security.AccessControlContext,java.security.Permission[])"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Security.PrivilegedExceptionAction"/></param>
@@ -65,6 +86,29 @@ namespace Java.Security
         public static T DoPrivileged<T>(Java.Security.PrivilegedExceptionAction<T> arg0, Java.Security.AccessControlContext arg1, params Java.Security.Permission[] arg2)
         {
             if (arg2.Length == 0) return SExecute<T>(LocalBridgeClazz, "doPrivileged", arg0, arg1); else return SExecute<T>(LocalBridgeClazz, "doPrivileged", arg0, arg1, arg2);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/AccessController.html#doPrivileged(java.security.PrivilegedExceptionAction,java.security.AccessControlContext)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.PrivilegedExceptionAction"/></param>
+        /// <param name="arg1"><see cref="Java.Security.AccessControlContext"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
+        /// <exception cref="Java.Security.PrivilegedActionException"/>
+        public static T DoPrivileged<T>(Java.Security.PrivilegedExceptionAction<T> arg0, Java.Security.AccessControlContext arg1)
+        {
+            return SExecute<T>(LocalBridgeClazz, "doPrivileged", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/java/security/AccessController.html#doPrivileged(java.security.PrivilegedExceptionAction)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Security.PrivilegedExceptionAction"/></param>
+        /// <typeparam name="T"></typeparam>
+        /// <returns><typeparamref name="T"/></returns>
+        /// <exception cref="Java.Security.PrivilegedActionException"/>
+        public static T DoPrivileged<T>(Java.Security.PrivilegedExceptionAction<T> arg0)
+        {
+            return SExecuteWithSignature<T>(LocalBridgeClazz, "doPrivileged", "(Ljava/security/PrivilegedExceptionAction;)Ljava/lang/Object;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/AccessController.html#doPrivilegedWithCombiner(java.security.PrivilegedAction,java.security.AccessControlContext,java.security.Permission[])"/>
@@ -119,50 +163,6 @@ namespace Java.Security
         public static Java.Security.AccessControlContext GetContext()
         {
             return SExecuteWithSignature<Java.Security.AccessControlContext>(LocalBridgeClazz, "getContext", "()Ljava/security/AccessControlContext;");
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java/security/AccessController.html#doPrivileged(java.security.PrivilegedAction,java.security.AccessControlContext)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.PrivilegedAction"/></param>
-        /// <param name="arg1"><see cref="Java.Security.AccessControlContext"/></param>
-        /// <typeparam name="T"></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        public static T DoPrivileged<T>(Java.Security.PrivilegedAction<T> arg0, Java.Security.AccessControlContext arg1)
-        {
-            return SExecute<T>(LocalBridgeClazz, "doPrivileged", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java/security/AccessController.html#doPrivileged(java.security.PrivilegedAction)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.PrivilegedAction"/></param>
-        /// <typeparam name="T"></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        public static T DoPrivileged<T>(Java.Security.PrivilegedAction<T> arg0)
-        {
-            return SExecute<T>(LocalBridgeClazz, "doPrivileged", arg0);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java/security/AccessController.html#doPrivileged(java.security.PrivilegedExceptionAction,java.security.AccessControlContext)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.PrivilegedExceptionAction"/></param>
-        /// <param name="arg1"><see cref="Java.Security.AccessControlContext"/></param>
-        /// <typeparam name="T"></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        /// <exception cref="Java.Security.PrivilegedActionException"/>
-        public static T DoPrivileged<T>(Java.Security.PrivilegedExceptionAction<T> arg0, Java.Security.AccessControlContext arg1)
-        {
-            return SExecute<T>(LocalBridgeClazz, "doPrivileged", arg0, arg1);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java/security/AccessController.html#doPrivileged(java.security.PrivilegedExceptionAction)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Security.PrivilegedExceptionAction"/></param>
-        /// <typeparam name="T"></typeparam>
-        /// <returns><typeparamref name="T"/></returns>
-        /// <exception cref="Java.Security.PrivilegedActionException"/>
-        public static T DoPrivileged<T>(Java.Security.PrivilegedExceptionAction<T> arg0)
-        {
-            return SExecute<T>(LocalBridgeClazz, "doPrivileged", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/AccessController.html#checkPermission(java.security.Permission)"/>

@@ -50,6 +50,14 @@ namespace Javax.Xml.Parsers
             return SExecuteWithSignature<Javax.Xml.Parsers.SAXParserFactory>(LocalBridgeClazz, "newDefaultInstance", "()Ljavax/xml/parsers/SAXParserFactory;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/xml/parsers/SAXParserFactory.html#newDefaultNSInstance()"/>
+        /// </summary>
+        /// <returns><see cref="Javax.Xml.Parsers.SAXParserFactory"/></returns>
+        public static Javax.Xml.Parsers.SAXParserFactory NewDefaultNSInstance()
+        {
+            return SExecuteWithSignature<Javax.Xml.Parsers.SAXParserFactory>(LocalBridgeClazz, "newDefaultNSInstance", "()Ljavax/xml/parsers/SAXParserFactory;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/javax/xml/parsers/SAXParserFactory.html#newInstance()"/>
         /// </summary>
         /// <returns><see cref="Javax.Xml.Parsers.SAXParserFactory"/></returns>
@@ -66,6 +74,24 @@ namespace Javax.Xml.Parsers
         public static Javax.Xml.Parsers.SAXParserFactory NewInstance(Java.Lang.String arg0, Java.Lang.ClassLoader arg1)
         {
             return SExecute<Javax.Xml.Parsers.SAXParserFactory>(LocalBridgeClazz, "newInstance", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/xml/parsers/SAXParserFactory.html#newNSInstance()"/>
+        /// </summary>
+        /// <returns><see cref="Javax.Xml.Parsers.SAXParserFactory"/></returns>
+        public static Javax.Xml.Parsers.SAXParserFactory NewNSInstance()
+        {
+            return SExecuteWithSignature<Javax.Xml.Parsers.SAXParserFactory>(LocalBridgeClazz, "newNSInstance", "()Ljavax/xml/parsers/SAXParserFactory;");
+        }
+        /// <summary>
+        /// <see href="https://developer.android.com/reference/javax/xml/parsers/SAXParserFactory.html#newNSInstance(java.lang.String,java.lang.ClassLoader)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Lang.String"/></param>
+        /// <param name="arg1"><see cref="Java.Lang.ClassLoader"/></param>
+        /// <returns><see cref="Javax.Xml.Parsers.SAXParserFactory"/></returns>
+        public static Javax.Xml.Parsers.SAXParserFactory NewNSInstance(Java.Lang.String arg0, Java.Lang.ClassLoader arg1)
+        {
+            return SExecute<Javax.Xml.Parsers.SAXParserFactory>(LocalBridgeClazz, "newNSInstance", arg0, arg1);
         }
 
         #endregion

@@ -26,7 +26,7 @@ using MASES.JCOBridge.C2JBridge;
 namespace Java.Lang
 {
     #region Byte
-    public partial class Byte
+    public partial class Byte : Java.Lang.IComparable<Java.Lang.Byte>
     {
         #region Constructors
         /// <summary>
