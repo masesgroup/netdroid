@@ -101,8 +101,8 @@ Using the listed properties it is possible to instruct the JVM about the action 
 If no classes are available the solution comes from the global accessor available in JCOBridge and the code snippet is like the following one:
 
 ```C#
-var panel = JNetCore.New("java.awt.Panel"); // the returned object is a dynamic object reference of the Panel object in Java
-var dynImageCapabilities = JNetCore.New("java.awt.ImageCapabilities", true); // the returned object is a dynamic object which is a reference of the ImageCapabilities object in Java
+var panel = NetdroidCore.New("java.awt.Panel"); // the returned object is a dynamic object reference of the Panel object in Java
+var dynImageCapabilities = NetdroidCore.New("java.awt.ImageCapabilities", true); // the returned object is a dynamic object which is a reference of the ImageCapabilities object in Java
 var volImage = panel.createVolatileImage(100, 100, dynImageCapabilities); // the returned object is a dynamic object which reference the VolatileImage object in Java
 var snapshot = volImage.getSnapshot(); // the returned object is a dynamic object reference of the BufferedImage object in Java
 var isContentLost = volImage.contentsLost(); // the returned object is a bool representing the Java counterpart

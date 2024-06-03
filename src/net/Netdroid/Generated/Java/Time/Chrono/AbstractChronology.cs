@@ -63,16 +63,6 @@ namespace Java.Time.Chrono
         {
             return IExecuteWithSignature<int>("compareTo", "(Ljava/time/chrono/Chronology;)I", arg0);
         }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java/time/chrono/AbstractChronology.html#resolveDate(java.util.Map,java.time.format.ResolverStyle)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Java.Util.Map"/></param>
-        /// <param name="arg1"><see cref="Java.Time.Format.ResolverStyle"/></param>
-        /// <returns><see cref="Java.Time.Chrono.ChronoLocalDate"/></returns>
-        public Java.Time.Chrono.ChronoLocalDate ResolveDate(Java.Util.Map<Java.Time.Temporal.TemporalField, Java.Lang.Long> arg0, Java.Time.Format.ResolverStyle arg1)
-        {
-            return IExecute<Java.Time.Chrono.ChronoLocalDate>("resolveDate", arg0, arg1);
-        }
 
         #endregion
 

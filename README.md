@@ -47,9 +47,9 @@ netdroid uses [JCOBridge](https://www.jcobridge.com/), and its [features](https:
   * [JVM](https://en.wikipedia.org/wiki/Java_virtual_machine) and [CLR, or CoreCLR,](https://en.wikipedia.org/wiki/Common_Language_Runtime) runs in the same process, but are insulated from each other;
   * JCOBridge does not make any code injection into JVM;
   * JCOBridge does not use any other communication mechanism than JNI;
-  * .NET (CLR) inherently inherits the cyber-security levels of running JVM and Apache Kafka; 
+  * .NET (CLR) inherently inherits the cyber-security levels of running JVM and Android SDK;
 * **Direct access the JVM from any .NET application**: 
-  * Any Java/Scala class behind Apache Kafka can be directly managed: Consumer, Producer, Administration, Streams, Server-side, and so on;
+  * Any JVM class behind Android SDK can be directly managed;
   * No need to learn new APIs: we try to expose the same APIs in C# style;
   * No extra validation cycle on protocol and functionality: bug fix, improvements, new features are immediately available;
   * Documentation is shared;

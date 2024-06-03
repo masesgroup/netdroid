@@ -19,7 +19,7 @@ One of the most important command-line switch is **JVMPath** and it is available
 If a developer is using KNet within its own product it is possible to override the **JVMPath** property with a snippet like the following one:
 
 ```c#
-    class MyJNetCore : JNetCore
+    class MyNetdroidCore : NetdroidCore
     {
         public override string JVMPath
         {
