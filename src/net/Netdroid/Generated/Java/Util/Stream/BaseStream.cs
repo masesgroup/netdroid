@@ -56,10 +56,10 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/BaseStream.html#iterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator Iterator()
+        /// <returns><see cref="Java.Util.IteratorClass"/></returns>
+        public Java.Util.IteratorClass IteratorMethod()
         {
-            return IExecuteWithSignature<Java.Util.Iterator>("iterator", "()Ljava/util/Iterator;");
+            return IExecuteWithSignature<Java.Util.IteratorClass>("iterator", "()Ljava/util/Iterator;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/BaseStream.html#spliterator()"/>
@@ -173,10 +173,10 @@ namespace Java.Util.Stream
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/BaseStream.html#iterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator<T> Iterator()
+        /// <returns><see cref="Java.Util.IteratorClass"/></returns>
+        public Java.Util.IteratorClass<T> IteratorMethod()
         {
-            return IExecuteWithSignature<Java.Util.Iterator<T>>("iterator", "()Ljava/util/Iterator;");
+            return IExecuteWithSignature<Java.Util.IteratorClass<T>>("iterator", "()Ljava/util/Iterator;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/BaseStream.html#spliterator()"/>

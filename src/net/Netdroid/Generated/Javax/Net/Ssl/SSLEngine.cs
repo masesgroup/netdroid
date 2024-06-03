@@ -287,14 +287,6 @@ namespace Javax.Net.Ssl
             return IExecuteWithSignature<Java.Util.Function.BiFunction<Javax.Net.Ssl.SSLEngine, Java.Util.List<Java.Lang.String>, Java.Lang.String>>("getHandshakeApplicationProtocolSelector", "()Ljava/util/function/BiFunction;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLEngine.html#getHandshakeApplicationProtocolSelector()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Util.Function.BiFunction"/></returns>
-        public Java.Util.Function.BiFunction<Javax.Net.Ssl.SSLEngine, Java.Util.List<Java.Lang.String>, Java.Lang.String> GetHandshakeApplicationProtocolSelectorDirect()
-        {
-            return IExecuteWithSignature<Java.Util.Function.BiFunctionDirect<Javax.Net.Ssl.SSLEngine, Java.Util.List<Java.Lang.String>, Java.Lang.String>, Java.Util.Function.BiFunction<Javax.Net.Ssl.SSLEngine, Java.Util.List<Java.Lang.String>, Java.Lang.String>>("getHandshakeApplicationProtocolSelector", "()Ljava/util/function/BiFunction;");
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/javax/net/ssl/SSLEngine.html#unwrap(java.nio.ByteBuffer,java.nio.ByteBuffer)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Nio.ByteBuffer"/></param>

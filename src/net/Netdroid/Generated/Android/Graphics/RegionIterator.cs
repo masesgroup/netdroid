@@ -58,7 +58,7 @@ namespace Android.Graphics
         /// </summary>
         /// <param name="arg0"><see cref="Android.Graphics.Rect"/></param>
         /// <returns><see cref="bool"/></returns>
-        public bool Next(Android.Graphics.Rect arg0)
+        public bool NextMethod(Android.Graphics.Rect arg0)
         {
             return IExecuteWithSignature<bool>("next", "(Landroid/graphics/Rect;)Z", arg0);
         }

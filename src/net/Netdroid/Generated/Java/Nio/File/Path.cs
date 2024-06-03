@@ -324,10 +324,10 @@ namespace Java.Nio.File
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/file/Path.html#iterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator<Java.Nio.File.Path> Iterator()
+        /// <returns><see cref="Java.Util.IteratorClass"/></returns>
+        public Java.Util.IteratorClass<Java.Nio.File.Path> IteratorMethod()
         {
-            return IExecuteWithSignature<Java.Util.Iterator<Java.Nio.File.Path>>("iterator", "()Ljava/util/Iterator;");
+            return IExecuteWithSignature<Java.Util.IteratorClass<Java.Nio.File.Path>>("iterator", "()Ljava/util/Iterator;");
         }
 
         #endregion

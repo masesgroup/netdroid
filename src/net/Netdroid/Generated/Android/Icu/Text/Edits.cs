@@ -58,34 +58,34 @@ namespace Android.Icu.Text
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/Edits.html#getCoarseChangesIterator()"/>
         /// </summary>
-        /// <returns><see cref="Android.Icu.Text.Edits.Iterator"/></returns>
-        public Android.Icu.Text.Edits.Iterator GetCoarseChangesIterator()
+        /// <returns><see cref="Android.Icu.Text.Edits.IteratorClass"/></returns>
+        public Android.Icu.Text.Edits.IteratorClass GetCoarseChangesIterator()
         {
-            return IExecuteWithSignature<Android.Icu.Text.Edits.Iterator>("getCoarseChangesIterator", "()Landroid/icu/text/Edits$Iterator;");
+            return IExecuteWithSignature<Android.Icu.Text.Edits.IteratorClass>("getCoarseChangesIterator", "()Landroid/icu/text/Edits$Iterator;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/Edits.html#getCoarseIterator()"/>
         /// </summary>
-        /// <returns><see cref="Android.Icu.Text.Edits.Iterator"/></returns>
-        public Android.Icu.Text.Edits.Iterator GetCoarseIterator()
+        /// <returns><see cref="Android.Icu.Text.Edits.IteratorClass"/></returns>
+        public Android.Icu.Text.Edits.IteratorClass GetCoarseIterator()
         {
-            return IExecuteWithSignature<Android.Icu.Text.Edits.Iterator>("getCoarseIterator", "()Landroid/icu/text/Edits$Iterator;");
+            return IExecuteWithSignature<Android.Icu.Text.Edits.IteratorClass>("getCoarseIterator", "()Landroid/icu/text/Edits$Iterator;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/Edits.html#getFineChangesIterator()"/>
         /// </summary>
-        /// <returns><see cref="Android.Icu.Text.Edits.Iterator"/></returns>
-        public Android.Icu.Text.Edits.Iterator GetFineChangesIterator()
+        /// <returns><see cref="Android.Icu.Text.Edits.IteratorClass"/></returns>
+        public Android.Icu.Text.Edits.IteratorClass GetFineChangesIterator()
         {
-            return IExecuteWithSignature<Android.Icu.Text.Edits.Iterator>("getFineChangesIterator", "()Landroid/icu/text/Edits$Iterator;");
+            return IExecuteWithSignature<Android.Icu.Text.Edits.IteratorClass>("getFineChangesIterator", "()Landroid/icu/text/Edits$Iterator;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/Edits.html#getFineIterator()"/>
         /// </summary>
-        /// <returns><see cref="Android.Icu.Text.Edits.Iterator"/></returns>
-        public Android.Icu.Text.Edits.Iterator GetFineIterator()
+        /// <returns><see cref="Android.Icu.Text.Edits.IteratorClass"/></returns>
+        public Android.Icu.Text.Edits.IteratorClass GetFineIterator()
         {
-            return IExecuteWithSignature<Android.Icu.Text.Edits.Iterator>("getFineIterator", "()Landroid/icu/text/Edits$Iterator;");
+            return IExecuteWithSignature<Android.Icu.Text.Edits.IteratorClass>("getFineIterator", "()Landroid/icu/text/Edits$Iterator;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/Edits.html#hasChanges()"/>
@@ -139,8 +139,8 @@ namespace Android.Icu.Text
         #endregion
 
         #region Nested classes
-        #region Iterator
-        public partial class Iterator
+        #region IteratorClass
+        public partial class IteratorClass
         {
             #region Constructors
 
@@ -189,7 +189,7 @@ namespace Android.Icu.Text
             /// <see href="https://developer.android.com/reference/android/icu/text/Edits.Iterator.html#next()"/>
             /// </summary>
             /// <returns><see cref="bool"/></returns>
-            public bool Next()
+            public bool NextMethod()
             {
                 return IExecuteWithSignature<bool>("next", "()Z");
             }

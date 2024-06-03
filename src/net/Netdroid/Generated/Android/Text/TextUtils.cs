@@ -562,7 +562,7 @@ namespace Android.Text
         #endregion
 
         #region SimpleStringSplitter
-        public partial class SimpleStringSplitter : Java.Util.IIterator<Java.Lang.String>
+        public partial class SimpleStringSplitter : Java.Util.IIteratorClass<Java.Lang.String>
         {
             #region Constructors
             /// <summary>
@@ -593,7 +593,7 @@ namespace Android.Text
             /// <see href="https://developer.android.com/reference/android/text/TextUtils.SimpleStringSplitter.html#hasNext()"/>
             /// </summary>
             /// <returns><see cref="bool"/></returns>
-            public bool HasNext()
+            public bool HasNextMethod()
             {
                 return IExecuteWithSignature<bool>("hasNext", "()Z");
             }
@@ -601,17 +601,17 @@ namespace Android.Text
             /// <see href="https://developer.android.com/reference/android/text/TextUtils.SimpleStringSplitter.html#next()"/>
             /// </summary>
             /// <returns><see cref="object"/></returns>
-            public object Next()
+            public object NextMethod()
             {
                 return IExecuteWithSignature("next", "()Ljava/lang/Object;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/TextUtils.SimpleStringSplitter.html#iterator()"/>
             /// </summary>
-            /// <returns><see cref="Java.Util.Iterator"/></returns>
-            public Java.Util.Iterator<Java.Lang.String> Iterator()
+            /// <returns><see cref="Java.Util.IteratorClass"/></returns>
+            public Java.Util.IteratorClass<Java.Lang.String> IteratorMethod()
             {
-                return IExecuteWithSignature<Java.Util.Iterator<Java.Lang.String>>("iterator", "()Ljava/util/Iterator;");
+                return IExecuteWithSignature<Java.Util.IteratorClass<Java.Lang.String>>("iterator", "()Ljava/util/Iterator;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/text/TextUtils.SimpleStringSplitter.html#remove()"/>

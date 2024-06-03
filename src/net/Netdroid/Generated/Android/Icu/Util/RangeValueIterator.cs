@@ -68,7 +68,7 @@ namespace Android.Icu.Util
         /// </summary>
         /// <param name="arg0"><see cref="Android.Icu.Util.RangeValueIterator.Element"/></param>
         /// <returns><see cref="bool"/></returns>
-        public bool Next(Android.Icu.Util.RangeValueIterator.Element arg0)
+        public bool NextMethod(Android.Icu.Util.RangeValueIterator.Element arg0)
         {
             return IExecuteWithSignature<bool>("next", "(Landroid/icu/util/RangeValueIterator$Element;)Z", arg0);
         }

@@ -66,20 +66,20 @@ namespace Android.Drm
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/drm/DrmSupportInfo.html#getFileSuffixIterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        /// <returns><see cref="Java.Util.IteratorClass"/></returns>
         [global::System.Obsolete()]
-        public Java.Util.Iterator<Java.Lang.String> GetFileSuffixIterator()
+        public Java.Util.IteratorClass<Java.Lang.String> GetFileSuffixIterator()
         {
-            return IExecuteWithSignature<Java.Util.Iterator<Java.Lang.String>>("getFileSuffixIterator", "()Ljava/util/Iterator;");
+            return IExecuteWithSignature<Java.Util.IteratorClass<Java.Lang.String>>("getFileSuffixIterator", "()Ljava/util/Iterator;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/drm/DrmSupportInfo.html#getMimeTypeIterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
+        /// <returns><see cref="Java.Util.IteratorClass"/></returns>
         [global::System.Obsolete()]
-        public Java.Util.Iterator<Java.Lang.String> GetMimeTypeIterator()
+        public Java.Util.IteratorClass<Java.Lang.String> GetMimeTypeIterator()
         {
-            return IExecuteWithSignature<Java.Util.Iterator<Java.Lang.String>>("getMimeTypeIterator", "()Ljava/util/Iterator;");
+            return IExecuteWithSignature<Java.Util.IteratorClass<Java.Lang.String>>("getMimeTypeIterator", "()Ljava/util/Iterator;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/drm/DrmSupportInfo.html#addFileSuffix(java.lang.String)"/>

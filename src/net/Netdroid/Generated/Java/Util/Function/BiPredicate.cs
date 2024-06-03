@@ -489,7 +489,7 @@ namespace Java.Util.Function
         /// <returns><see cref="Java.Util.Function.BiPredicate"/></returns>
         public override Java.Util.Function.BiPredicate<T, U> And<Arg0objectSuperT, Arg0objectSuperU>(Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU> arg0) where Arg0objectSuperT : T where Arg0objectSuperU : U
         {
-            return IExecuteWithSignature<Java.Util.Function.BiPredicateDirect<T, U>, Java.Util.Function.BiPredicate<T, U>>("and", "(Ljava/util/function/BiPredicate;)Ljava/util/function/BiPredicate;", arg0);
+            return IExecuteWithSignature<Java.Util.Function.BiPredicate<T, U>>("and", "(Ljava/util/function/BiPredicate;)Ljava/util/function/BiPredicate;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/function/BiPredicate.html#negate()"/>
@@ -497,7 +497,7 @@ namespace Java.Util.Function
         /// <returns><see cref="Java.Util.Function.BiPredicate"/></returns>
         public override Java.Util.Function.BiPredicate<T, U> Negate()
         {
-            return IExecuteWithSignature<Java.Util.Function.BiPredicateDirect<T, U>, Java.Util.Function.BiPredicate<T, U>>("negate", "()Ljava/util/function/BiPredicate;");
+            return IExecuteWithSignature<Java.Util.Function.BiPredicate<T, U>>("negate", "()Ljava/util/function/BiPredicate;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/function/BiPredicate.html#or(java.util.function.BiPredicate)"/>
@@ -508,7 +508,7 @@ namespace Java.Util.Function
         /// <returns><see cref="Java.Util.Function.BiPredicate"/></returns>
         public override Java.Util.Function.BiPredicate<T, U> Or<Arg0objectSuperT, Arg0objectSuperU>(Java.Util.Function.BiPredicate<Arg0objectSuperT, Arg0objectSuperU> arg0) where Arg0objectSuperT : T where Arg0objectSuperU : U
         {
-            return IExecuteWithSignature<Java.Util.Function.BiPredicateDirect<T, U>, Java.Util.Function.BiPredicate<T, U>>("or", "(Ljava/util/function/BiPredicate;)Ljava/util/function/BiPredicate;", arg0);
+            return IExecuteWithSignature<Java.Util.Function.BiPredicate<T, U>>("or", "(Ljava/util/function/BiPredicate;)Ljava/util/function/BiPredicate;", arg0);
         }
 
         #endregion

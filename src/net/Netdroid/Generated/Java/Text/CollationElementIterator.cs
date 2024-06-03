@@ -99,7 +99,7 @@ namespace Java.Text
         /// <see href="https://developer.android.com/reference/java/text/CollationElementIterator.html#next()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
-        public int Next()
+        public int NextMethod()
         {
             return IExecuteWithSignature<int>("next", "()I");
         }

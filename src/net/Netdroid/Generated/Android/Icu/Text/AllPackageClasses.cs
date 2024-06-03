@@ -2016,21 +2016,21 @@ namespace Android.Icu.Text
         public override bool IsBridgeStatic => false;
 
         // TODO: complete the class
-        #region Iterator
+        #region IteratorClass
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/Edits.Iterator.html"/>
         /// </summary>
-        public partial class Iterator : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Iterator>
+        public partial class IteratorClass : MASES.JCOBridge.C2JBridge.JVMBridgeBase<IteratorClass>
         {
             const string _bridgeClassName = "android.icu.text.Edits$Iterator";
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
-            public Iterator() { }
+            public IteratorClass() { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
-            public Iterator(params object[] args) : base(args) { }
+            public IteratorClass(params object[] args) : base(args) { }
 
             private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
 

@@ -60,7 +60,7 @@ namespace Android.Database
         /// <see href="https://developer.android.com/reference/android/database/CursorJoiner.html#hasNext()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        public bool HasNext()
+        public bool HasNextMethod()
         {
             return IExecuteWithSignature<bool>("hasNext", "()Z");
         }
@@ -68,17 +68,17 @@ namespace Android.Database
         /// <see href="https://developer.android.com/reference/android/database/CursorJoiner.html#next()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
-        public object Next()
+        public object NextMethod()
         {
             return IExecuteWithSignature("next", "()Ljava/lang/Object;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/CursorJoiner.html#iterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator<Android.Database.CursorJoiner.Result> Iterator()
+        /// <returns><see cref="Java.Util.IteratorClass"/></returns>
+        public Java.Util.IteratorClass<Android.Database.CursorJoiner.Result> IteratorMethod()
         {
-            return IExecuteWithSignature<Java.Util.Iterator<Android.Database.CursorJoiner.Result>>("iterator", "()Ljava/util/Iterator;");
+            return IExecuteWithSignature<Java.Util.IteratorClass<Android.Database.CursorJoiner.Result>>("iterator", "()Ljava/util/Iterator;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/database/CursorJoiner.html#remove()"/>

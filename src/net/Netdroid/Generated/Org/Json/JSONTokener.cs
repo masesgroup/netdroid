@@ -74,7 +74,7 @@ namespace Org.Json
         /// <see href="https://developer.android.com/reference/org/json/JSONTokener.html#next()"/>
         /// </summary>
         /// <returns><see cref="char"/></returns>
-        public char Next()
+        public char NextMethod()
         {
             return IExecuteWithSignature<char>("next", "()C");
         }
@@ -84,7 +84,7 @@ namespace Org.Json
         /// <param name="arg0"><see cref="char"/></param>
         /// <returns><see cref="char"/></returns>
         /// <exception cref="Org.Json.JSONException"/>
-        public char Next(char arg0)
+        public char NextMethod(char arg0)
         {
             return IExecuteWithSignature<char>("next", "(C)C", arg0);
         }
@@ -121,7 +121,7 @@ namespace Org.Json
         /// <param name="arg0"><see cref="int"/></param>
         /// <returns><see cref="Java.Lang.String"/></returns>
         /// <exception cref="Org.Json.JSONException"/>
-        public Java.Lang.String Next(int arg0)
+        public Java.Lang.String NextMethod(int arg0)
         {
             return IExecuteWithSignature<Java.Lang.String>("next", "(I)Ljava/lang/String;", arg0);
         }

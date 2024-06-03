@@ -91,7 +91,7 @@ namespace Android.Graphics
         /// <see href="https://developer.android.com/reference/android/graphics/PathIterator.html#hasNext()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        public bool HasNext()
+        public bool HasNextMethod()
         {
             return IExecuteWithSignature<bool>("hasNext", "()Z");
         }
@@ -101,7 +101,7 @@ namespace Android.Graphics
         /// <param name="arg0"><see cref="float"/></param>
         /// <param name="arg1"><see cref="int"/></param>
         /// <returns><see cref="int"/></returns>
-        public int Next(float[] arg0, int arg1)
+        public int NextMethod(float[] arg0, int arg1)
         {
             return IExecute<int>("next", arg0, arg1);
         }
@@ -117,7 +117,7 @@ namespace Android.Graphics
         /// <see href="https://developer.android.com/reference/android/graphics/PathIterator.html#next()"/>
         /// </summary>
         /// <returns><see cref="object"/></returns>
-        public object Next()
+        public object NextMethod()
         {
             return IExecuteWithSignature("next", "()Ljava/lang/Object;");
         }

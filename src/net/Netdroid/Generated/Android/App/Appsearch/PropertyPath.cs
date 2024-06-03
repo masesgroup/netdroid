@@ -81,10 +81,10 @@ namespace Android.App.Appsearch
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/app/appsearch/PropertyPath.html#iterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator<Android.App.Appsearch.PropertyPath.PathSegment> Iterator()
+        /// <returns><see cref="Java.Util.IteratorClass"/></returns>
+        public Java.Util.IteratorClass<Android.App.Appsearch.PropertyPath.PathSegment> IteratorMethod()
         {
-            return IExecuteWithSignature<Java.Util.Iterator<Android.App.Appsearch.PropertyPath.PathSegment>>("iterator", "()Ljava/util/Iterator;");
+            return IExecuteWithSignature<Java.Util.IteratorClass<Android.App.Appsearch.PropertyPath.PathSegment>>("iterator", "()Ljava/util/Iterator;");
         }
 
         #endregion

@@ -264,10 +264,10 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingDeque.html#iterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator Iterator()
+        /// <returns><see cref="Java.Util.IteratorClass"/></returns>
+        public Java.Util.IteratorClass IteratorMethod()
         {
-            return IExecuteWithSignature<Java.Util.Iterator>("iterator", "()Ljava/util/Iterator;");
+            return IExecuteWithSignature<Java.Util.IteratorClass>("iterator", "()Ljava/util/Iterator;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingDeque.html#addFirst(java.lang.Object)"/>
@@ -592,10 +592,10 @@ namespace Java.Util.Concurrent
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingDeque.html#iterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator<E> Iterator()
+        /// <returns><see cref="Java.Util.IteratorClass"/></returns>
+        public Java.Util.IteratorClass<E> IteratorMethod()
         {
-            return IExecuteWithSignature<Java.Util.Iterator<E>>("iterator", "()Ljava/util/Iterator;");
+            return IExecuteWithSignature<Java.Util.IteratorClass<E>>("iterator", "()Ljava/util/Iterator;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/concurrent/BlockingDeque.html#addFirst(java.lang.Object)"/>

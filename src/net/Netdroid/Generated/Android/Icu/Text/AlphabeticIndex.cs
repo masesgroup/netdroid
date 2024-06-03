@@ -226,10 +226,10 @@ namespace Android.Icu.Text
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.html#iterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator Iterator()
+        /// <returns><see cref="Java.Util.IteratorClass"/></returns>
+        public Java.Util.IteratorClass IteratorMethod()
         {
-            return IExecuteWithSignature<Java.Util.Iterator>("iterator", "()Ljava/util/Iterator;");
+            return IExecuteWithSignature<Java.Util.IteratorClass>("iterator", "()Ljava/util/Iterator;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.html#getBucketLabels()"/>
@@ -290,10 +290,10 @@ namespace Android.Icu.Text
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.Bucket.html#iterator()"/>
             /// </summary>
-            /// <returns><see cref="Java.Util.Iterator"/></returns>
-            public Java.Util.Iterator Iterator()
+            /// <returns><see cref="Java.Util.IteratorClass"/></returns>
+            public Java.Util.IteratorClass IteratorMethod()
             {
-                return IExecuteWithSignature<Java.Util.Iterator>("iterator", "()Ljava/util/Iterator;");
+                return IExecuteWithSignature<Java.Util.IteratorClass>("iterator", "()Ljava/util/Iterator;");
             }
 
             #endregion
@@ -429,10 +429,10 @@ namespace Android.Icu.Text
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.Bucket.html#iterator()"/>
             /// </summary>
-            /// <returns><see cref="Java.Util.Iterator"/></returns>
-            public Java.Util.Iterator<Android.Icu.Text.AlphabeticIndex.Record<V>> Iterator()
+            /// <returns><see cref="Java.Util.IteratorClass"/></returns>
+            public Java.Util.IteratorClass<Android.Icu.Text.AlphabeticIndex.Record<V>> IteratorMethod()
             {
-                return IExecuteWithSignature<Java.Util.Iterator<Android.Icu.Text.AlphabeticIndex.Record<V>>>("iterator", "()Ljava/util/Iterator;");
+                return IExecuteWithSignature<Java.Util.IteratorClass<Android.Icu.Text.AlphabeticIndex.Record<V>>>("iterator", "()Ljava/util/Iterator;");
             }
 
             #endregion
@@ -566,10 +566,10 @@ namespace Android.Icu.Text
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.ImmutableIndex.html#iterator()"/>
             /// </summary>
-            /// <returns><see cref="Java.Util.Iterator"/></returns>
-            public Java.Util.Iterator Iterator()
+            /// <returns><see cref="Java.Util.IteratorClass"/></returns>
+            public Java.Util.IteratorClass IteratorMethod()
             {
-                return IExecuteWithSignature<Java.Util.Iterator>("iterator", "()Ljava/util/Iterator;");
+                return IExecuteWithSignature<Java.Util.IteratorClass>("iterator", "()Ljava/util/Iterator;");
             }
 
             #endregion
@@ -635,10 +635,10 @@ namespace Android.Icu.Text
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.ImmutableIndex.html#iterator()"/>
             /// </summary>
-            /// <returns><see cref="Java.Util.Iterator"/></returns>
-            public Java.Util.Iterator<Android.Icu.Text.AlphabeticIndex.Bucket<V>> Iterator()
+            /// <returns><see cref="Java.Util.IteratorClass"/></returns>
+            public Java.Util.IteratorClass<Android.Icu.Text.AlphabeticIndex.Bucket<V>> IteratorMethod()
             {
-                return IExecuteWithSignature<Java.Util.Iterator<Android.Icu.Text.AlphabeticIndex.Bucket<V>>>("iterator", "()Ljava/util/Iterator;");
+                return IExecuteWithSignature<Java.Util.IteratorClass<Android.Icu.Text.AlphabeticIndex.Bucket<V>>>("iterator", "()Ljava/util/Iterator;");
             }
 
             #endregion
@@ -961,10 +961,10 @@ namespace Android.Icu.Text
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.html#iterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator<Android.Icu.Text.AlphabeticIndex.Bucket<V>> Iterator()
+        /// <returns><see cref="Java.Util.IteratorClass"/></returns>
+        public Java.Util.IteratorClass<Android.Icu.Text.AlphabeticIndex.Bucket<V>> IteratorMethod()
         {
-            return IExecuteWithSignature<Java.Util.Iterator<Android.Icu.Text.AlphabeticIndex.Bucket<V>>>("iterator", "()Ljava/util/Iterator;");
+            return IExecuteWithSignature<Java.Util.IteratorClass<Android.Icu.Text.AlphabeticIndex.Bucket<V>>>("iterator", "()Ljava/util/Iterator;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/AlphabeticIndex.html#getBucketLabels()"/>

@@ -145,7 +145,7 @@ namespace Android.Icu.Text
         /// <see href="https://developer.android.com/reference/android/icu/text/UCharacterIterator.html#next()"/>
         /// </summary>
         /// <returns><see cref="int"/></returns>
-        public int Next()
+        public int NextMethod()
         {
             return IExecuteWithSignature<int>("next", "()I");
         }

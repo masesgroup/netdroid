@@ -67,7 +67,7 @@ namespace Android.Util
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Io.IOException"/>
-        public bool HasNext()
+        public bool HasNextMethod()
         {
             return IExecuteWithSignature<bool>("hasNext", "()Z");
         }

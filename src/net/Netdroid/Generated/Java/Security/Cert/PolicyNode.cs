@@ -99,10 +99,10 @@ namespace Java.Security.Cert
         /// <see href="https://developer.android.com/reference/java/security/cert/PolicyNode.html#getChildren()"/>
         /// </summary>
         /// <typeparam name="ReturnExtendsJava_Security_Cert_PolicyNode"><see cref="Java.Security.Cert.PolicyNode"/></typeparam>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator<ReturnExtendsJava_Security_Cert_PolicyNode> GetChildren<ReturnExtendsJava_Security_Cert_PolicyNode>() where ReturnExtendsJava_Security_Cert_PolicyNode : Java.Security.Cert.PolicyNode
+        /// <returns><see cref="Java.Util.IteratorClass"/></returns>
+        public Java.Util.IteratorClass<ReturnExtendsJava_Security_Cert_PolicyNode> GetChildren<ReturnExtendsJava_Security_Cert_PolicyNode>() where ReturnExtendsJava_Security_Cert_PolicyNode : Java.Security.Cert.PolicyNode
         {
-            return IExecuteWithSignature<Java.Util.Iterator<ReturnExtendsJava_Security_Cert_PolicyNode>>("getChildren", "()Ljava/util/Iterator;");
+            return IExecuteWithSignature<Java.Util.IteratorClass<ReturnExtendsJava_Security_Cert_PolicyNode>>("getChildren", "()Ljava/util/Iterator;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/cert/PolicyNode.html#getPolicyQualifiers()"/>

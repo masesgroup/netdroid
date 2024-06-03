@@ -97,7 +97,7 @@ namespace Java.Text
         /// <see href="https://developer.android.com/reference/java/text/CharacterIterator.html#next()"/>
         /// </summary>
         /// <returns><see cref="char"/></returns>
-        public char Next()
+        public char NextMethod()
         {
             return IExecuteWithSignature<char>("next", "()C");
         }

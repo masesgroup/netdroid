@@ -710,10 +710,10 @@ namespace Android.Icu.Util
         /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getKeywords(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public static Java.Util.Iterator<Java.Lang.String> GetKeywords(Java.Lang.String arg0)
+        /// <returns><see cref="Java.Util.IteratorClass"/></returns>
+        public static Java.Util.IteratorClass<Java.Lang.String> GetKeywords(Java.Lang.String arg0)
         {
-            return SExecuteWithSignature<Java.Util.Iterator<Java.Lang.String>>(LocalBridgeClazz, "getKeywords", "(Ljava/lang/String;)Ljava/util/Iterator;", arg0);
+            return SExecuteWithSignature<Java.Util.IteratorClass<Java.Lang.String>>(LocalBridgeClazz, "getKeywords", "(Ljava/lang/String;)Ljava/util/Iterator;", arg0);
         }
 
         #endregion
@@ -1019,10 +1019,10 @@ namespace Android.Icu.Util
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#getKeywords()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator<Java.Lang.String> GetKeywords()
+        /// <returns><see cref="Java.Util.IteratorClass"/></returns>
+        public Java.Util.IteratorClass<Java.Lang.String> GetKeywords()
         {
-            return IExecuteWithSignature<Java.Util.Iterator<Java.Lang.String>>("getKeywords", "()Ljava/util/Iterator;");
+            return IExecuteWithSignature<Java.Util.IteratorClass<Java.Lang.String>>("getKeywords", "()Ljava/util/Iterator;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/util/ULocale.html#toLocale()"/>

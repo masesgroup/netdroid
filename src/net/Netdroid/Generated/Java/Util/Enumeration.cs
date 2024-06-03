@@ -64,10 +64,10 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Enumeration.html#asIterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator AsIterator()
+        /// <returns><see cref="Java.Util.IteratorClass"/></returns>
+        public Java.Util.IteratorClass AsIterator()
         {
-            return IExecuteWithSignature<Java.Util.Iterator>("asIterator", "()Ljava/util/Iterator;");
+            return IExecuteWithSignature<Java.Util.IteratorClass>("asIterator", "()Ljava/util/Iterator;");
         }
 
         #endregion
@@ -141,10 +141,10 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Enumeration.html#asIterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator<E> AsIterator()
+        /// <returns><see cref="Java.Util.IteratorClass"/></returns>
+        public Java.Util.IteratorClass<E> AsIterator()
         {
-            return IExecuteWithSignature<Java.Util.Iterator<E>>("asIterator", "()Ljava/util/Iterator;");
+            return IExecuteWithSignature<Java.Util.IteratorClass<E>>("asIterator", "()Ljava/util/Iterator;");
         }
 
         #endregion

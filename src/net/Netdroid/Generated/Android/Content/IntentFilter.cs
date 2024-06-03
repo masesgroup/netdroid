@@ -448,58 +448,58 @@ namespace Android.Content
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/IntentFilter.html#authoritiesIterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator<Android.Content.IntentFilter.AuthorityEntry> AuthoritiesIterator()
+        /// <returns><see cref="Java.Util.IteratorClass"/></returns>
+        public Java.Util.IteratorClass<Android.Content.IntentFilter.AuthorityEntry> AuthoritiesIterator()
         {
-            return IExecuteWithSignature<Java.Util.Iterator<Android.Content.IntentFilter.AuthorityEntry>>("authoritiesIterator", "()Ljava/util/Iterator;");
+            return IExecuteWithSignature<Java.Util.IteratorClass<Android.Content.IntentFilter.AuthorityEntry>>("authoritiesIterator", "()Ljava/util/Iterator;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/IntentFilter.html#pathsIterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator<Android.Os.PatternMatcher> PathsIterator()
+        /// <returns><see cref="Java.Util.IteratorClass"/></returns>
+        public Java.Util.IteratorClass<Android.Os.PatternMatcher> PathsIterator()
         {
-            return IExecuteWithSignature<Java.Util.Iterator<Android.Os.PatternMatcher>>("pathsIterator", "()Ljava/util/Iterator;");
+            return IExecuteWithSignature<Java.Util.IteratorClass<Android.Os.PatternMatcher>>("pathsIterator", "()Ljava/util/Iterator;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/IntentFilter.html#schemeSpecificPartsIterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator<Android.Os.PatternMatcher> SchemeSpecificPartsIterator()
+        /// <returns><see cref="Java.Util.IteratorClass"/></returns>
+        public Java.Util.IteratorClass<Android.Os.PatternMatcher> SchemeSpecificPartsIterator()
         {
-            return IExecuteWithSignature<Java.Util.Iterator<Android.Os.PatternMatcher>>("schemeSpecificPartsIterator", "()Ljava/util/Iterator;");
+            return IExecuteWithSignature<Java.Util.IteratorClass<Android.Os.PatternMatcher>>("schemeSpecificPartsIterator", "()Ljava/util/Iterator;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/IntentFilter.html#actionsIterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator<Java.Lang.String> ActionsIterator()
+        /// <returns><see cref="Java.Util.IteratorClass"/></returns>
+        public Java.Util.IteratorClass<Java.Lang.String> ActionsIterator()
         {
-            return IExecuteWithSignature<Java.Util.Iterator<Java.Lang.String>>("actionsIterator", "()Ljava/util/Iterator;");
+            return IExecuteWithSignature<Java.Util.IteratorClass<Java.Lang.String>>("actionsIterator", "()Ljava/util/Iterator;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/IntentFilter.html#categoriesIterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator<Java.Lang.String> CategoriesIterator()
+        /// <returns><see cref="Java.Util.IteratorClass"/></returns>
+        public Java.Util.IteratorClass<Java.Lang.String> CategoriesIterator()
         {
-            return IExecuteWithSignature<Java.Util.Iterator<Java.Lang.String>>("categoriesIterator", "()Ljava/util/Iterator;");
+            return IExecuteWithSignature<Java.Util.IteratorClass<Java.Lang.String>>("categoriesIterator", "()Ljava/util/Iterator;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/IntentFilter.html#schemesIterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator<Java.Lang.String> SchemesIterator()
+        /// <returns><see cref="Java.Util.IteratorClass"/></returns>
+        public Java.Util.IteratorClass<Java.Lang.String> SchemesIterator()
         {
-            return IExecuteWithSignature<Java.Util.Iterator<Java.Lang.String>>("schemesIterator", "()Ljava/util/Iterator;");
+            return IExecuteWithSignature<Java.Util.IteratorClass<Java.Lang.String>>("schemesIterator", "()Ljava/util/Iterator;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/IntentFilter.html#typesIterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator<Java.Lang.String> TypesIterator()
+        /// <returns><see cref="Java.Util.IteratorClass"/></returns>
+        public Java.Util.IteratorClass<Java.Lang.String> TypesIterator()
         {
-            return IExecuteWithSignature<Java.Util.Iterator<Java.Lang.String>>("typesIterator", "()Ljava/util/Iterator;");
+            return IExecuteWithSignature<Java.Util.IteratorClass<Java.Lang.String>>("typesIterator", "()Ljava/util/Iterator;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/IntentFilter.html#addAction(java.lang.String)"/>
@@ -587,14 +587,6 @@ namespace Android.Content
             return IExecuteWithSignature<Java.Util.Function.Predicate<Android.Content.Intent>>("asPredicate", "()Ljava/util/function/Predicate;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/IntentFilter.html#asPredicate()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
-        public Java.Util.Function.Predicate<Android.Content.Intent> AsPredicateDirect()
-        {
-            return IExecuteWithSignature<Java.Util.Function.PredicateDirect<Android.Content.Intent>, Java.Util.Function.Predicate<Android.Content.Intent>>("asPredicate", "()Ljava/util/function/Predicate;");
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/IntentFilter.html#asPredicateWithTypeResolution(android.content.ContentResolver)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Android.Content.ContentResolver"/></param>
@@ -602,15 +594,6 @@ namespace Android.Content
         public Java.Util.Function.Predicate<Android.Content.Intent> AsPredicateWithTypeResolution(Android.Content.ContentResolver arg0)
         {
             return IExecuteWithSignature<Java.Util.Function.Predicate<Android.Content.Intent>>("asPredicateWithTypeResolution", "(Landroid/content/ContentResolver;)Ljava/util/function/Predicate;", arg0);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/content/IntentFilter.html#asPredicateWithTypeResolution(android.content.ContentResolver)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="Android.Content.ContentResolver"/></param>
-        /// <returns><see cref="Java.Util.Function.Predicate"/></returns>
-        public Java.Util.Function.Predicate<Android.Content.Intent> AsPredicateWithTypeResolutionDirect(Android.Content.ContentResolver arg0)
-        {
-            return IExecuteWithSignature<Java.Util.Function.PredicateDirect<Android.Content.Intent>, Java.Util.Function.Predicate<Android.Content.Intent>>("asPredicateWithTypeResolution", "(Landroid/content/ContentResolver;)Ljava/util/function/Predicate;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/content/IntentFilter.html#dump(android.util.Printer,java.lang.String)"/>

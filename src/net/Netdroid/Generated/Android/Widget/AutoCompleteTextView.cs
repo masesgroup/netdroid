@@ -99,7 +99,7 @@ namespace Android.Widget
         /// <see href="https://developer.android.com/reference/android/widget/AutoCompleteTextView.html#setAdapter(android.widget.ListAdapter)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>
-        /// <typeparam name="T"><see cref="Android.Widget.IListAdapter"/></typeparam>
+        /// <typeparam name="T"><see cref="Android.Widget.IListAdapter, Android.Widget.IFilterable"/></typeparam>
         public void SetAdapter<T>(T arg0) where T : Android.Widget.IListAdapter, Android.Widget.IFilterable, new()
         {
             IExecuteWithSignature("setAdapter", "(Landroid/widget/ListAdapter;)V", arg0);

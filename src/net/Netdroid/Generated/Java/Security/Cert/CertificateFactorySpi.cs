@@ -122,10 +122,10 @@ namespace Java.Security.Cert
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/security/cert/CertificateFactorySpi.html#engineGetCertPathEncodings()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator<Java.Lang.String> EngineGetCertPathEncodings()
+        /// <returns><see cref="Java.Util.IteratorClass"/></returns>
+        public Java.Util.IteratorClass<Java.Lang.String> EngineGetCertPathEncodings()
         {
-            return IExecuteWithSignature<Java.Util.Iterator<Java.Lang.String>>("engineGetCertPathEncodings", "()Ljava/util/Iterator;");
+            return IExecuteWithSignature<Java.Util.IteratorClass<Java.Lang.String>>("engineGetCertPathEncodings", "()Ljava/util/Iterator;");
         }
 
         #endregion

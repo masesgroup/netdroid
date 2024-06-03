@@ -57,10 +57,10 @@ namespace Java.Nio.Charset.Spi
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/nio/charset/spi/CharsetProvider.html#charsets()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator<Java.Nio.Charset.Charset> Charsets()
+        /// <returns><see cref="Java.Util.IteratorClass"/></returns>
+        public Java.Util.IteratorClass<Java.Nio.Charset.Charset> Charsets()
         {
-            return IExecuteWithSignature<Java.Util.Iterator<Java.Nio.Charset.Charset>>("charsets", "()Ljava/util/Iterator;");
+            return IExecuteWithSignature<Java.Util.IteratorClass<Java.Nio.Charset.Charset>>("charsets", "()Ljava/util/Iterator;");
         }
 
         #endregion

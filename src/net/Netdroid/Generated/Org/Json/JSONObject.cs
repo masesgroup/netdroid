@@ -298,10 +298,10 @@ namespace Org.Json
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/json/JSONObject.html#keys()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator<Java.Lang.String> Keys()
+        /// <returns><see cref="Java.Util.IteratorClass"/></returns>
+        public Java.Util.IteratorClass<Java.Lang.String> Keys()
         {
-            return IExecuteWithSignature<Java.Util.Iterator<Java.Lang.String>>("keys", "()Ljava/util/Iterator;");
+            return IExecuteWithSignature<Java.Util.IteratorClass<Java.Lang.String>>("keys", "()Ljava/util/Iterator;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/org/json/JSONObject.html#getLong(java.lang.String)"/>

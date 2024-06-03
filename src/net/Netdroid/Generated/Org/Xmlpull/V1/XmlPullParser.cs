@@ -267,7 +267,7 @@ namespace Org.Xmlpull.V1
         /// <returns><see cref="int"/></returns>
         /// <exception cref="Java.Io.IOException"/>
         /// <exception cref="Org.Xmlpull.V1.XmlPullParserException"/>
-        public int Next()
+        public int NextMethod()
         {
             return IExecuteWithSignature<int>("next", "()I");
         }

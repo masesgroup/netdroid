@@ -85,10 +85,10 @@ namespace Javax.Xml.Namespace
         /// <see href="https://developer.android.com/reference/javax/xml/namespace/NamespaceContext.html#getPrefixes(java.lang.String)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Lang.String"/></param>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator<Java.Lang.String> GetPrefixes(Java.Lang.String arg0)
+        /// <returns><see cref="Java.Util.IteratorClass"/></returns>
+        public Java.Util.IteratorClass<Java.Lang.String> GetPrefixes(Java.Lang.String arg0)
         {
-            return IExecuteWithSignature<Java.Util.Iterator<Java.Lang.String>>("getPrefixes", "(Ljava/lang/String;)Ljava/util/Iterator;", arg0);
+            return IExecuteWithSignature<Java.Util.IteratorClass<Java.Lang.String>>("getPrefixes", "(Ljava/lang/String;)Ljava/util/Iterator;", arg0);
         }
 
         #endregion

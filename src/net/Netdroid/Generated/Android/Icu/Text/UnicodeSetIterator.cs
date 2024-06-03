@@ -81,7 +81,7 @@ namespace Android.Icu.Text
         /// <see href="https://developer.android.com/reference/android/icu/text/UnicodeSetIterator.html#next()"/>
         /// </summary>
         /// <returns><see cref="bool"/></returns>
-        public bool Next()
+        public bool NextMethod()
         {
             return IExecuteWithSignature<bool>("next", "()Z");
         }

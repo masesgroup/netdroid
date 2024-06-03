@@ -49,7 +49,7 @@ namespace Android.Os
         /// <see href="https://developer.android.com/reference/android/os/TestLooperManager.html#next()"/>
         /// </summary>
         /// <returns><see cref="Android.Os.Message"/></returns>
-        public Android.Os.Message Next()
+        public Android.Os.Message NextMethod()
         {
             return IExecuteWithSignature<Android.Os.Message>("next", "()Landroid/os/Message;");
         }

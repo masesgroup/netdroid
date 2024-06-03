@@ -295,28 +295,12 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Function.BiConsumer<A, T>>("accumulator", "()Ljava/util/function/BiConsumer;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java/util/stream/Collector.html#accumulator()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Util.Function.BiConsumer"/></returns>
-        public Java.Util.Function.BiConsumer<A, T> AccumulatorDirect()
-        {
-            return IExecuteWithSignature<Java.Util.Function.BiConsumerDirect<A, T>, Java.Util.Function.BiConsumer<A, T>>("accumulator", "()Ljava/util/function/BiConsumer;");
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/Collector.html#combiner()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Function.BinaryOperator"/></returns>
         public Java.Util.Function.BinaryOperator<A> Combiner()
         {
             return IExecuteWithSignature<Java.Util.Function.BinaryOperator<A>>("combiner", "()Ljava/util/function/BinaryOperator;");
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java/util/stream/Collector.html#combiner()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Util.Function.BinaryOperator"/></returns>
-        public Java.Util.Function.BinaryOperator<A> CombinerDirect()
-        {
-            return IExecuteWithSignature<Java.Util.Function.BinaryOperatorDirect<A>, Java.Util.Function.BinaryOperator<A>>("combiner", "()Ljava/util/function/BinaryOperator;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/Collector.html#finisher()"/>
@@ -327,28 +311,12 @@ namespace Java.Util.Stream
             return IExecuteWithSignature<Java.Util.Function.Function<A, R>>("finisher", "()Ljava/util/function/Function;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java/util/stream/Collector.html#finisher()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Util.Function.Function"/></returns>
-        public Java.Util.Function.Function<A, R> FinisherDirect()
-        {
-            return IExecuteWithSignature<Java.Util.Function.FunctionDirect<A, R>, Java.Util.Function.Function<A, R>>("finisher", "()Ljava/util/function/Function;");
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/Collector.html#supplier()"/>
         /// </summary>
         /// <returns><see cref="Java.Util.Function.Supplier"/></returns>
         public Java.Util.Function.Supplier<A> Supplier()
         {
             return IExecuteWithSignature<Java.Util.Function.Supplier<A>>("supplier", "()Ljava/util/function/Supplier;");
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java/util/stream/Collector.html#supplier()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Util.Function.Supplier"/></returns>
-        public Java.Util.Function.Supplier<A> SupplierDirect()
-        {
-            return IExecuteWithSignature<Java.Util.Function.SupplierDirect<A>, Java.Util.Function.Supplier<A>>("supplier", "()Ljava/util/function/Supplier;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/stream/Collector.html#characteristics()"/>

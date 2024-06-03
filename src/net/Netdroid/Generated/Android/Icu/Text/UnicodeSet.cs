@@ -897,10 +897,10 @@ namespace Android.Icu.Text
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#iterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator<Java.Lang.String> Iterator()
+        /// <returns><see cref="Java.Util.IteratorClass"/></returns>
+        public Java.Util.IteratorClass<Java.Lang.String> IteratorMethod()
         {
-            return IExecuteWithSignature<Java.Util.Iterator<Java.Lang.String>>("iterator", "()Ljava/util/Iterator;");
+            return IExecuteWithSignature<Java.Util.IteratorClass<Java.Lang.String>>("iterator", "()Ljava/util/Iterator;");
         }
 
         #endregion

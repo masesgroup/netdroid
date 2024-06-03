@@ -76,10 +76,10 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/ServiceLoader.html#iterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator Iterator()
+        /// <returns><see cref="Java.Util.IteratorClass"/></returns>
+        public Java.Util.IteratorClass IteratorMethod()
         {
-            return IExecuteWithSignature<Java.Util.Iterator>("iterator", "()Ljava/util/Iterator;");
+            return IExecuteWithSignature<Java.Util.IteratorClass>("iterator", "()Ljava/util/Iterator;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/ServiceLoader.html#findFirst()"/>
@@ -162,10 +162,10 @@ namespace Java.Util
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/ServiceLoader.html#iterator()"/>
         /// </summary>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public Java.Util.Iterator<S> Iterator()
+        /// <returns><see cref="Java.Util.IteratorClass"/></returns>
+        public Java.Util.IteratorClass<S> IteratorMethod()
         {
-            return IExecuteWithSignature<Java.Util.Iterator<S>>("iterator", "()Ljava/util/Iterator;");
+            return IExecuteWithSignature<Java.Util.IteratorClass<S>>("iterator", "()Ljava/util/Iterator;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/ServiceLoader.html#findFirst()"/>

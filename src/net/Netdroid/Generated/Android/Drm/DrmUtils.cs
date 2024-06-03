@@ -92,20 +92,20 @@ namespace Android.Drm
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/drm/DrmUtils.ExtendedMetadataParser.html#iterator()"/>
             /// </summary>
-            /// <returns><see cref="Java.Util.Iterator"/></returns>
+            /// <returns><see cref="Java.Util.IteratorClass"/></returns>
             [global::System.Obsolete()]
-            public Java.Util.Iterator<Java.Lang.String> Iterator()
+            public Java.Util.IteratorClass<Java.Lang.String> IteratorMethod()
             {
-                return IExecuteWithSignature<Java.Util.Iterator<Java.Lang.String>>("iterator", "()Ljava/util/Iterator;");
+                return IExecuteWithSignature<Java.Util.IteratorClass<Java.Lang.String>>("iterator", "()Ljava/util/Iterator;");
             }
             /// <summary>
             /// <see href="https://developer.android.com/reference/android/drm/DrmUtils.ExtendedMetadataParser.html#keyIterator()"/>
             /// </summary>
-            /// <returns><see cref="Java.Util.Iterator"/></returns>
+            /// <returns><see cref="Java.Util.IteratorClass"/></returns>
             [global::System.Obsolete()]
-            public Java.Util.Iterator<Java.Lang.String> KeyIterator()
+            public Java.Util.IteratorClass<Java.Lang.String> KeyIterator()
             {
-                return IExecuteWithSignature<Java.Util.Iterator<Java.Lang.String>>("keyIterator", "()Ljava/util/Iterator;");
+                return IExecuteWithSignature<Java.Util.IteratorClass<Java.Lang.String>>("keyIterator", "()Ljava/util/Iterator;");
             }
 
             #endregion

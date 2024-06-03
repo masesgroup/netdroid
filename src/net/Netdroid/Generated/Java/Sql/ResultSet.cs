@@ -253,7 +253,7 @@ namespace Java.Sql
         /// </summary>
         /// <returns><see cref="bool"/></returns>
         /// <exception cref="Java.Sql.SQLException"/>
-        public bool Next()
+        public bool NextMethod()
         {
             return IExecuteWithSignature<bool>("next", "()Z");
         }

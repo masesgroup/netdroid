@@ -396,10 +396,10 @@ namespace Java.Util
         /// <see href="https://developer.android.com/reference/java/util/Collections.html#emptyIterator()"/>
         /// </summary>
         /// <typeparam name="T"></typeparam>
-        /// <returns><see cref="Java.Util.Iterator"/></returns>
-        public static Java.Util.Iterator<T> EmptyIterator<T>()
+        /// <returns><see cref="Java.Util.IteratorClass"/></returns>
+        public static Java.Util.IteratorClass<T> EmptyIterator<T>()
         {
-            return SExecuteWithSignature<Java.Util.Iterator<T>>(LocalBridgeClazz, "emptyIterator", "()Ljava/util/Iterator;");
+            return SExecuteWithSignature<Java.Util.IteratorClass<T>>(LocalBridgeClazz, "emptyIterator", "()Ljava/util/Iterator;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/util/Collections.html#nCopies(int,java.lang.Object)"/>
