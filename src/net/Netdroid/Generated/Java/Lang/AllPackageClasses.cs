@@ -28,7 +28,7 @@ namespace Java.Lang
 {
     #region Appendable
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/Appendable.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/Appendable.html"/>
     /// </summary>
     public partial class Appendable : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Appendable>
     {
@@ -36,12 +36,12 @@ namespace Java.Lang
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Appendable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Appendable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Appendable() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Appendable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Appendable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Appendable(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -74,7 +74,7 @@ namespace Java.Lang
 
     #region AutoCloseable
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/AutoCloseable.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/AutoCloseable.html"/>
     /// </summary>
     public partial class AutoCloseable : MASES.JCOBridge.C2JBridge.JVMBridgeBase<AutoCloseable>
     {
@@ -82,12 +82,12 @@ namespace Java.Lang
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("AutoCloseable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("AutoCloseable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AutoCloseable() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("AutoCloseable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("AutoCloseable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public AutoCloseable(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -120,7 +120,7 @@ namespace Java.Lang
 
     #region Boolean
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/Boolean.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/Boolean.html"/>
     /// </summary>
     public partial class Boolean : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Boolean>
     {
@@ -164,7 +164,7 @@ namespace Java.Lang
 
     #region Byte
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/Byte.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/Byte.html"/>
     /// </summary>
     public partial class Byte : Java.Lang.Number
     {
@@ -208,7 +208,7 @@ namespace Java.Lang
 
     #region Character
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/Character.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/Character.html"/>
     /// </summary>
     public partial class Character : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Character>
     {
@@ -248,7 +248,7 @@ namespace Java.Lang
         // TODO: complete the class
         #region Subset
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Character.Subset.html"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Character.Subset.html"/>
         /// </summary>
         public partial class Subset : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Subset>
         {
@@ -292,7 +292,7 @@ namespace Java.Lang
 
         #region UnicodeBlock
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Character.UnicodeBlock.html"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Character.UnicodeBlock.html"/>
         /// </summary>
         public partial class UnicodeBlock : Java.Lang.Character.Subset
         {
@@ -336,7 +336,7 @@ namespace Java.Lang
 
         #region UnicodeScript
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Character.UnicodeScript.html"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Character.UnicodeScript.html"/>
         /// </summary>
         public partial class UnicodeScript : Java.Lang.Enum<Java.Lang.Character.UnicodeScript>
         {
@@ -384,7 +384,7 @@ namespace Java.Lang
 
     #region CharSequence
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/CharSequence.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/CharSequence.html"/>
     /// </summary>
     public partial class CharSequence : MASES.JCOBridge.C2JBridge.JVMBridgeBase<CharSequence>
     {
@@ -392,12 +392,12 @@ namespace Java.Lang
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("CharSequence class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("CharSequence class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CharSequence() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("CharSequence class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("CharSequence class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public CharSequence(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -430,7 +430,7 @@ namespace Java.Lang
 
     #region Class
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/Class.html"/>
     /// </summary>
     public partial class Class : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Class>
     {
@@ -474,7 +474,7 @@ namespace Java.Lang
 
     #region Class<T>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/Class.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/Class.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
     public partial class Class<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Class<T>>
@@ -519,7 +519,7 @@ namespace Java.Lang
 
     #region ClassLoader
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/ClassLoader.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/ClassLoader.html"/>
     /// </summary>
     public partial class ClassLoader : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ClassLoader>
     {
@@ -527,12 +527,12 @@ namespace Java.Lang
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("ClassLoader class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ClassLoader class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ClassLoader() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("ClassLoader class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ClassLoader class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ClassLoader(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -565,7 +565,7 @@ namespace Java.Lang
 
     #region ClassValue
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/ClassValue.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/ClassValue.html"/>
     /// </summary>
     public partial class ClassValue : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ClassValue>
     {
@@ -573,12 +573,12 @@ namespace Java.Lang
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("ClassValue class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ClassValue class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ClassValue() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("ClassValue class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ClassValue class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ClassValue(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -611,7 +611,7 @@ namespace Java.Lang
 
     #region ClassValue<T>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/ClassValue.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/ClassValue.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
     public partial class ClassValue<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ClassValue<T>>
@@ -620,12 +620,12 @@ namespace Java.Lang
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("ClassValue class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ClassValue class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ClassValue() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("ClassValue class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("ClassValue class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public ClassValue(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -658,7 +658,7 @@ namespace Java.Lang
 
     #region Cloneable
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/Cloneable.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/Cloneable.html"/>
     /// </summary>
     public partial class Cloneable : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Cloneable>
     {
@@ -666,12 +666,12 @@ namespace Java.Lang
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Cloneable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Cloneable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Cloneable() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Cloneable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Cloneable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Cloneable(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -704,7 +704,7 @@ namespace Java.Lang
 
     #region Comparable
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/Comparable.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/Comparable.html"/>
     /// </summary>
     public partial class Comparable : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Comparable>
     {
@@ -712,12 +712,12 @@ namespace Java.Lang
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Comparable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Comparable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Comparable() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Comparable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Comparable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Comparable(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -750,7 +750,7 @@ namespace Java.Lang
 
     #region Comparable<T>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/Comparable.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/Comparable.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
     public partial class Comparable<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Comparable<T>>
@@ -759,12 +759,12 @@ namespace Java.Lang
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Comparable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Comparable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Comparable() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Comparable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Comparable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Comparable(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -797,9 +797,9 @@ namespace Java.Lang
 
     #region Compiler
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/Compiler.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/Compiler.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class Compiler : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Compiler>
     {
         const string _bridgeClassName = "java.lang.Compiler";
@@ -842,7 +842,7 @@ namespace Java.Lang
 
     #region Deprecated
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/Deprecated.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/Deprecated.html"/>
     /// </summary>
     public partial class Deprecated : Java.Lang.Annotation.Annotation
     {
@@ -850,12 +850,12 @@ namespace Java.Lang
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Deprecated class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Deprecated class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Deprecated() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Deprecated class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Deprecated class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Deprecated(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -888,7 +888,7 @@ namespace Java.Lang
 
     #region Double
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/Double.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/Double.html"/>
     /// </summary>
     public partial class Double : Java.Lang.Number
     {
@@ -932,7 +932,7 @@ namespace Java.Lang
 
     #region Enum
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/Enum.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/Enum.html"/>
     /// </summary>
     public partial class Enum : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Enum>
     {
@@ -940,12 +940,12 @@ namespace Java.Lang
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Enum class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Enum class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Enum() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Enum class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Enum class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Enum(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -978,21 +978,21 @@ namespace Java.Lang
 
     #region Enum<E>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/Enum.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/Enum.html"/>
     /// </summary>
     /// <typeparam name="E"><see cref="Java.Lang.Enum{E}"/></typeparam>
-    public partial class Enum<E> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Enum<E>> where E: Java.Lang.Enum<E>
+    public partial class Enum<E> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Enum<E>> where E : Java.Lang.Enum<E>
     {
         const string _bridgeClassName = "java.lang.Enum";
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Enum class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Enum class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Enum() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Enum class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Enum class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Enum(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1025,7 +1025,7 @@ namespace Java.Lang
 
     #region Float
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/Float.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/Float.html"/>
     /// </summary>
     public partial class Float : Java.Lang.Number
     {
@@ -1069,7 +1069,7 @@ namespace Java.Lang
 
     #region FunctionalInterface
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/FunctionalInterface.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/FunctionalInterface.html"/>
     /// </summary>
     public partial class FunctionalInterface : Java.Lang.Annotation.Annotation
     {
@@ -1077,12 +1077,12 @@ namespace Java.Lang
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("FunctionalInterface class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("FunctionalInterface class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public FunctionalInterface() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("FunctionalInterface class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("FunctionalInterface class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public FunctionalInterface(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1115,7 +1115,7 @@ namespace Java.Lang
 
     #region InheritableThreadLocal
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/InheritableThreadLocal.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/InheritableThreadLocal.html"/>
     /// </summary>
     public partial class InheritableThreadLocal : Java.Lang.ThreadLocal
     {
@@ -1159,7 +1159,7 @@ namespace Java.Lang
 
     #region InheritableThreadLocal<T>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/InheritableThreadLocal.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/InheritableThreadLocal.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
     public partial class InheritableThreadLocal<T> : Java.Lang.ThreadLocal<T>
@@ -1204,7 +1204,7 @@ namespace Java.Lang
 
     #region Integer
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/Integer.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/Integer.html"/>
     /// </summary>
     public partial class Integer : Java.Lang.Number
     {
@@ -1252,7 +1252,7 @@ namespace Java.Lang
 
     #region Long
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/Long.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/Long.html"/>
     /// </summary>
     public partial class Long : Java.Lang.Number
     {
@@ -1296,7 +1296,7 @@ namespace Java.Lang
 
     #region Math
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/Math.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/Math.html"/>
     /// </summary>
     public partial class Math : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Math>
     {
@@ -1340,7 +1340,7 @@ namespace Java.Lang
 
     #region Number
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/Number.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/Number.html"/>
     /// </summary>
     public partial class Number : Java.Io.Serializable
     {
@@ -1348,12 +1348,12 @@ namespace Java.Lang
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Number class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Number class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Number() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Number class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Number class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Number(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1386,7 +1386,7 @@ namespace Java.Lang
 
     #region Object
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/Object.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/Object.html"/>
     /// </summary>
     public partial class Object : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Object>
     {
@@ -1430,7 +1430,7 @@ namespace Java.Lang
 
     #region Override
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/Override.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/Override.html"/>
     /// </summary>
     public partial class Override : Java.Lang.Annotation.Annotation
     {
@@ -1438,12 +1438,12 @@ namespace Java.Lang
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Override class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Override class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Override() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Override class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Override class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Override(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1476,7 +1476,7 @@ namespace Java.Lang
 
     #region Package
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/Package.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/Package.html"/>
     /// </summary>
     public partial class Package : Java.Lang.Reflect.AnnotatedElement
     {
@@ -1520,7 +1520,7 @@ namespace Java.Lang
 
     #region Process
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/Process.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/Process.html"/>
     /// </summary>
     public partial class Process : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Process>
     {
@@ -1528,12 +1528,12 @@ namespace Java.Lang
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Process class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Process class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Process() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Process class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Process class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Process(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1566,7 +1566,7 @@ namespace Java.Lang
 
     #region ProcessBuilder
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/ProcessBuilder.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/ProcessBuilder.html"/>
     /// </summary>
     public partial class ProcessBuilder : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ProcessBuilder>
     {
@@ -1606,7 +1606,7 @@ namespace Java.Lang
         // TODO: complete the class
         #region Redirect
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/ProcessBuilder.Redirect.html"/>
+        /// <see href="https://developer.android.com/reference/java/lang/ProcessBuilder.Redirect.html"/>
         /// </summary>
         public partial class Redirect : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Redirect>
         {
@@ -1614,12 +1614,12 @@ namespace Java.Lang
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
-            [Obsolete("Redirect class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("Redirect class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Redirect() { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
-            [Obsolete("Redirect class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("Redirect class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public Redirect(params object[] args) : base(args) { }
 
             private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1648,7 +1648,7 @@ namespace Java.Lang
             // TODO: complete the class
             #region Type
             /// <summary>
-            /// <see href="https://developer.android.com/reference/java.base/java/lang/ProcessBuilder.Redirect.Type.html"/>
+            /// <see href="https://developer.android.com/reference/java/lang/ProcessBuilder.Redirect.Type.html"/>
             /// </summary>
             public partial class Type : Java.Lang.Enum<Java.Lang.ProcessBuilder.Redirect.Type>
             {
@@ -1700,7 +1700,7 @@ namespace Java.Lang
 
     #region Readable
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/Readable.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/Readable.html"/>
     /// </summary>
     public partial class Readable : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Readable>
     {
@@ -1708,12 +1708,12 @@ namespace Java.Lang
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Readable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Readable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Readable() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Readable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Readable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Readable(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1746,7 +1746,7 @@ namespace Java.Lang
 
     #region Record
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/Record.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/Record.html"/>
     /// </summary>
     public partial class Record : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Record>
     {
@@ -1754,12 +1754,12 @@ namespace Java.Lang
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Record class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Record class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Record() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Record class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Record class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Record(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1792,7 +1792,7 @@ namespace Java.Lang
 
     #region Runnable
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/Runnable.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/Runnable.html"/>
     /// </summary>
     public partial class Runnable : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Runnable>
     {
@@ -1800,12 +1800,12 @@ namespace Java.Lang
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("Runnable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Runnable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Runnable() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("Runnable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("Runnable class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public Runnable(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1836,53 +1836,11 @@ namespace Java.Lang
     }
     #endregion
 
-    #region Runtime
-    /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/Runtime.html"/>
-    /// </summary>
-    public partial class Runtime : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Runtime>
-    {
-        const string _bridgeClassName = "java.lang.Runtime";
-        /// <summary>
-        /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
-        /// </summary>
-        public Runtime() { }
-        /// <summary>
-        /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
-        /// </summary>
-        public Runtime(params object[] args) : base(args) { }
 
-        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
-
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm"/>
-        /// </summary>
-        public override string BridgeClassName => _bridgeClassName;
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
-        /// </summary>
-        public override bool IsBridgeAbstract => false;
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm"/>
-        /// </summary>
-        public override bool IsBridgeCloseable => false;
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm"/>
-        /// </summary>
-        public override bool IsBridgeInterface => false;
-        /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
-        /// </summary>
-        public override bool IsBridgeStatic => false;
-
-        // TODO: complete the class
-
-    }
-    #endregion
 
     #region RuntimePermission
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/RuntimePermission.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/RuntimePermission.html"/>
     /// </summary>
     public partial class RuntimePermission : Java.Security.BasicPermission
     {
@@ -1926,7 +1884,7 @@ namespace Java.Lang
 
     #region SafeVarargs
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/SafeVarargs.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/SafeVarargs.html"/>
     /// </summary>
     public partial class SafeVarargs : Java.Lang.Annotation.Annotation
     {
@@ -1934,12 +1892,12 @@ namespace Java.Lang
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("SafeVarargs class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("SafeVarargs class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public SafeVarargs() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("SafeVarargs class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("SafeVarargs class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public SafeVarargs(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -1972,9 +1930,9 @@ namespace Java.Lang
 
     #region SecurityManager
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/SecurityManager.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/SecurityManager.html"/>
     /// </summary>
-    [System.Obsolete()]
+    [global::System.Obsolete()]
     public partial class SecurityManager : MASES.JCOBridge.C2JBridge.JVMBridgeBase<SecurityManager>
     {
         const string _bridgeClassName = "java.lang.SecurityManager";
@@ -2017,7 +1975,7 @@ namespace Java.Lang
 
     #region Short
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/Short.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/Short.html"/>
     /// </summary>
     public partial class Short : Java.Lang.Number
     {
@@ -2061,7 +2019,7 @@ namespace Java.Lang
 
     #region StackTraceElement
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/StackTraceElement.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/StackTraceElement.html"/>
     /// </summary>
     public partial class StackTraceElement : Java.Io.Serializable
     {
@@ -2105,7 +2063,7 @@ namespace Java.Lang
 
     #region StackWalker
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/StackWalker.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/StackWalker.html"/>
     /// </summary>
     public partial class StackWalker : MASES.JCOBridge.C2JBridge.JVMBridgeBase<StackWalker>
     {
@@ -2145,7 +2103,7 @@ namespace Java.Lang
         // TODO: complete the class
         #region Option
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/StackWalker.Option.html"/>
+        /// <see href="https://developer.android.com/reference/java/lang/StackWalker.Option.html"/>
         /// </summary>
         public partial class Option : Java.Lang.Enum<Java.Lang.StackWalker.Option>
         {
@@ -2189,7 +2147,7 @@ namespace Java.Lang
 
         #region StackFrame
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/StackWalker.StackFrame.html"/>
+        /// <see href="https://developer.android.com/reference/java/lang/StackWalker.StackFrame.html"/>
         /// </summary>
         public partial class StackFrame : MASES.JCOBridge.C2JBridge.JVMBridgeBase<StackFrame>
         {
@@ -2197,12 +2155,12 @@ namespace Java.Lang
             /// <summary>
             /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
             /// </summary>
-            [Obsolete("StackFrame class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("StackFrame class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public StackFrame() { }
             /// <summary>
             /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
             /// </summary>
-            [Obsolete("StackFrame class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+            [global::System.Obsolete("StackFrame class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
             public StackFrame(params object[] args) : base(args) { }
 
             private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -2239,7 +2197,7 @@ namespace Java.Lang
 
     #region StrictMath
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/StrictMath.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/StrictMath.html"/>
     /// </summary>
     public partial class StrictMath : MASES.JCOBridge.C2JBridge.JVMBridgeBase<StrictMath>
     {
@@ -2283,7 +2241,7 @@ namespace Java.Lang
 
     #region String
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/String.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/String.html"/>
     /// </summary>
     public partial class String : MASES.JCOBridge.C2JBridge.JVMBridgeBase<String>
     {
@@ -2327,7 +2285,7 @@ namespace Java.Lang
 
     #region StringBuffer
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/StringBuffer.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/StringBuffer.html"/>
     /// </summary>
     public partial class StringBuffer : MASES.JCOBridge.C2JBridge.JVMBridgeBase<StringBuffer>
     {
@@ -2371,7 +2329,7 @@ namespace Java.Lang
 
     #region StringBuilder
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/StringBuilder.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/StringBuilder.html"/>
     /// </summary>
     public partial class StringBuilder : MASES.JCOBridge.C2JBridge.JVMBridgeBase<StringBuilder>
     {
@@ -2415,7 +2373,7 @@ namespace Java.Lang
 
     #region SuppressWarnings
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/SuppressWarnings.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/SuppressWarnings.html"/>
     /// </summary>
     public partial class SuppressWarnings : Java.Lang.Annotation.Annotation
     {
@@ -2423,12 +2381,12 @@ namespace Java.Lang
         /// <summary>
         /// Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge
         /// </summary>
-        [Obsolete("SuppressWarnings class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("SuppressWarnings class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public SuppressWarnings() { }
         /// <summary>
         /// Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class
         /// </summary>
-        [Obsolete("SuppressWarnings class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
+        [global::System.Obsolete("SuppressWarnings class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.")]
         public SuppressWarnings(params object[] args) : base(args) { }
 
         private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
@@ -2461,7 +2419,7 @@ namespace Java.Lang
 
     #region System
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/System.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/System.html"/>
     /// </summary>
     public partial class System : MASES.JCOBridge.C2JBridge.JVMBridgeBase<System>
     {
@@ -2505,7 +2463,7 @@ namespace Java.Lang
 
     #region Thread
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/Thread.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/Thread.html"/>
     /// </summary>
     public partial class Thread : Java.Lang.Runnable
     {
@@ -2545,7 +2503,7 @@ namespace Java.Lang
         // TODO: complete the class
         #region State
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java.base/java/lang/Thread.State.html"/>
+        /// <see href="https://developer.android.com/reference/java/lang/Thread.State.html"/>
         /// </summary>
         public partial class State : Java.Lang.Enum<Java.Lang.Thread.State>
         {
@@ -2593,7 +2551,7 @@ namespace Java.Lang
 
     #region ThreadDeath
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/ThreadDeath.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/ThreadDeath.html"/>
     /// </summary>
     public partial class ThreadDeath : Java.Lang.Error
     {
@@ -2610,7 +2568,7 @@ namespace Java.Lang
 
     #region ThreadGroup
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/ThreadGroup.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/ThreadGroup.html"/>
     /// </summary>
     public partial class ThreadGroup : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ThreadGroup>
     {
@@ -2654,7 +2612,7 @@ namespace Java.Lang
 
     #region ThreadLocal
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/ThreadLocal.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/ThreadLocal.html"/>
     /// </summary>
     public partial class ThreadLocal : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ThreadLocal>
     {
@@ -2698,7 +2656,7 @@ namespace Java.Lang
 
     #region ThreadLocal<T>
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/ThreadLocal.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/ThreadLocal.html"/>
     /// </summary>
     /// <typeparam name="T"></typeparam>
     public partial class ThreadLocal<T> : MASES.JCOBridge.C2JBridge.JVMBridgeBase<ThreadLocal<T>>
@@ -2743,7 +2701,7 @@ namespace Java.Lang
 
     #region Void
     /// <summary>
-    /// <see href="https://developer.android.com/reference/java.base/java/lang/Void.html"/>
+    /// <see href="https://developer.android.com/reference/java/lang/Void.html"/>
     /// </summary>
     public partial class Void : MASES.JCOBridge.C2JBridge.JVMBridgeBase<Void>
     {

@@ -87,6 +87,7 @@
     "java.lang.ProcessHandle",
     "java.lang.Thread$UncaughtExceptionHandler",
     "java.lang.reflect.AnnotatedType",
+    "java.lang.runtime.ObjectMethods",
     "java.security.SecureRandomParameters",
     "java.sql.ConnectionBuilder",
     "java.sql.DriverAction",
