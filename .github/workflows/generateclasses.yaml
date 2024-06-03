@@ -13,7 +13,7 @@ on:
         default: false
         type: boolean
       UseLatestJNetReflector:
-        description: 'Uses latest non published version of JNetReflector'
+        description: 'Shall use latest unpublished version of JNetReflector'
         required: true
         default: false
         type: boolean
@@ -79,7 +79,7 @@ jobs:
       - name: Prebuild
         run: dotnet build --no-incremental --configuration Release 3rdparty\JNet\src\net\JNetReflector\JNetReflector.csproj
 
-      - name: Create Jars
+      - name: Create Jars of JNetReflector
         if: ${{ inputs.UseLatestJNetReflector == true }}
         run: mvn "-Djcobridgepath=../../../binReflector/net8.0/JCOBridge.jar" --file ./3rdparty/JNet/src/jvm/jnet/pom.xml --no-transfer-progress package
         env:
@@ -87,7 +87,8 @@ jobs:
           MAVEN_CENTRAL_TOKEN: ${{ secrets.MAVEN_CENTRAL_TOKEN }}
           MAVEN_GPG_PASSPHRASE: ${{ secrets.MAVEN_GPG_PASSPHRASE }}
 
-      - run: dotnet tool update --version 2.5.1 -g MASES.JNetReflector
+      - name: Download latest published version of JNetReflector
+        run: dotnet tool update --version 2.5.1 -g MASES.JNetReflector
         if: ${{ inputs.UseLatestJNetReflector == false }}
 
       - name: Set up Apache Maven Central
@@ -102,7 +103,7 @@ jobs:
           gpg-private-key: ${{ secrets.MAVEN_GPG_PRIVATE_KEY }} # Value of the GPG private key to import
           gpg-passphrase: MAVEN_GPG_PASSPHRASE # env variable for GPG private key passphrase
 
-      - name: Build classes
+      - name: Build classes with unpublished JNetReflector
         if: ${{ inputs.UseLatestJNetReflector == true }}
         shell: cmd
         run: |
@@ -111,7 +112,7 @@ jobs:
         env:
           JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ONLINE }}
 
-      - name: Build classes
+      - name: Build classes with latest published version of JNetReflector
         if: ${{ inputs.UseLatestJNetReflector == false }}
         shell: cmd
         run: jnetreflector -TraceLevel 0 -OriginRootPath %ANDROID_HOME%\platforms\android-34-ext8 -DestinationRootPath %GITHUB_WORKSPACE%\src\ -ConfigurationFile %GITHUB_WORKSPACE%\src\configuration.json
