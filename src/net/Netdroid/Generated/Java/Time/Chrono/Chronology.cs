@@ -291,7 +291,7 @@ namespace Java.Time.Chrono
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAccessor"/></param>
         /// <typeparam name="ReturnExtendsJava_Time_Chrono_ChronoLocalDate"><see cref="Java.Time.Chrono.ChronoLocalDate"/></typeparam>
         /// <returns><see cref="Java.Time.Chrono.ChronoLocalDateTime"/></returns>
-        public Java.Time.Chrono.ChronoLocalDateTime<ReturnExtendsJava_Time_Chrono_ChronoLocalDate> LocalDateTime<ReturnExtendsJava_Time_Chrono_ChronoLocalDate>(Java.Time.Temporal.TemporalAccessor arg0) where ReturnExtendsJava_Time_Chrono_ChronoLocalDate : Java.Time.Chrono.ChronoLocalDate
+        public Java.Time.Chrono.ChronoLocalDateTime<ReturnExtendsJava_Time_Chrono_ChronoLocalDate> LocalDateTime<ReturnExtendsJava_Time_Chrono_ChronoLocalDate>(Java.Time.Temporal.TemporalAccessor arg0) where ReturnExtendsJava_Time_Chrono_ChronoLocalDate : Java.Time.Chrono.ChronoLocalDate, new()
         {
             return IExecuteWithSignature<Java.Time.Chrono.ChronoLocalDateTime<ReturnExtendsJava_Time_Chrono_ChronoLocalDate>>("localDateTime", "(Ljava/time/temporal/TemporalAccessor;)Ljava/time/chrono/ChronoLocalDateTime;", arg0);
         }
@@ -313,7 +313,7 @@ namespace Java.Time.Chrono
         /// <param name="arg1"><see cref="Java.Time.ZoneId"/></param>
         /// <typeparam name="ReturnExtendsJava_Time_Chrono_ChronoLocalDate"><see cref="Java.Time.Chrono.ChronoLocalDate"/></typeparam>
         /// <returns><see cref="Java.Time.Chrono.ChronoZonedDateTime"/></returns>
-        public Java.Time.Chrono.ChronoZonedDateTime<ReturnExtendsJava_Time_Chrono_ChronoLocalDate> ZonedDateTime<ReturnExtendsJava_Time_Chrono_ChronoLocalDate>(Java.Time.Instant arg0, Java.Time.ZoneId arg1) where ReturnExtendsJava_Time_Chrono_ChronoLocalDate : Java.Time.Chrono.ChronoLocalDate
+        public Java.Time.Chrono.ChronoZonedDateTime<ReturnExtendsJava_Time_Chrono_ChronoLocalDate> ZonedDateTime<ReturnExtendsJava_Time_Chrono_ChronoLocalDate>(Java.Time.Instant arg0, Java.Time.ZoneId arg1) where ReturnExtendsJava_Time_Chrono_ChronoLocalDate : Java.Time.Chrono.ChronoLocalDate, new()
         {
             return IExecute<Java.Time.Chrono.ChronoZonedDateTime<ReturnExtendsJava_Time_Chrono_ChronoLocalDate>>("zonedDateTime", arg0, arg1);
         }
@@ -323,7 +323,7 @@ namespace Java.Time.Chrono
         /// <param name="arg0"><see cref="Java.Time.Temporal.TemporalAccessor"/></param>
         /// <typeparam name="ReturnExtendsJava_Time_Chrono_ChronoLocalDate"><see cref="Java.Time.Chrono.ChronoLocalDate"/></typeparam>
         /// <returns><see cref="Java.Time.Chrono.ChronoZonedDateTime"/></returns>
-        public Java.Time.Chrono.ChronoZonedDateTime<ReturnExtendsJava_Time_Chrono_ChronoLocalDate> ZonedDateTime<ReturnExtendsJava_Time_Chrono_ChronoLocalDate>(Java.Time.Temporal.TemporalAccessor arg0) where ReturnExtendsJava_Time_Chrono_ChronoLocalDate : Java.Time.Chrono.ChronoLocalDate
+        public Java.Time.Chrono.ChronoZonedDateTime<ReturnExtendsJava_Time_Chrono_ChronoLocalDate> ZonedDateTime<ReturnExtendsJava_Time_Chrono_ChronoLocalDate>(Java.Time.Temporal.TemporalAccessor arg0) where ReturnExtendsJava_Time_Chrono_ChronoLocalDate : Java.Time.Chrono.ChronoLocalDate, new()
         {
             return IExecuteWithSignature<Java.Time.Chrono.ChronoZonedDateTime<ReturnExtendsJava_Time_Chrono_ChronoLocalDate>>("zonedDateTime", "(Ljava/time/temporal/TemporalAccessor;)Ljava/time/chrono/ChronoZonedDateTime;", arg0);
         }
