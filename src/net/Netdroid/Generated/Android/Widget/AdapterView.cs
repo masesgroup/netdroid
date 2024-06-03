@@ -836,6 +836,14 @@ namespace Android.Widget
             return IExecuteWithSignature<T>("getAdapter", "()Landroid/widget/Adapter;");
         }
         /// <summary>
+        /// <see href="https://developer.android.com/reference/android/widget/AdapterView.html#getAdapter()"/>
+        /// </summary>
+        /// <returns><typeparamref name="T"/></returns>
+        public T GetAdapterDirect()
+        {
+            return IExecuteWithSignature<TDirect, T>("getAdapter", "()Landroid/widget/Adapter;");
+        }
+        /// <summary>
         /// <see href="https://developer.android.com/reference/android/widget/AdapterView.html#setAdapter(android.widget.Adapter)"/>
         /// </summary>
         /// <param name="arg0"><typeparamref name="T"/></param>

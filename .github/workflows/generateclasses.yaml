@@ -119,14 +119,29 @@ jobs:
         run: jnetreflector -TraceLevel 0 -OriginRootPath %ANDROID_HOME%\platforms\android-34-ext8 -DestinationRootPath %GITHUB_WORKSPACE%\src\ -ConfigurationFile %GITHUB_WORKSPACE%\src\configuration.json
         env:
           JCOBRIDGE_LicensePath: ${{ secrets.JCOBRIDGE_ONLINE }}
-          
+
+      - name: Request a PR to commit changes made with unpublished version of JNetReflector
+        if: ${{ github.repository_owner == 'masesgroup' && inputs.GeneratePR == true && inputs.UseLatestJNetReflector == true }} #do not push any changes outside main repo or GeneratePR is false
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch-suffix: short-commit-hash
+          add-paths: src/*.*
+          commit-message: Update generated classes using last unpublished version of JNetReflector
+          title: Changes by GitHub action
+          body: |
+            Automated changes by GitHub action, fix #2
+          reviewers: masesdevelopers
+          assignees: masesdevelopers
+          labels: java, .NET, enhancement 
+
       - name: Extract commit SHA
+        if: ${{ github.repository_owner == 'masesgroup' && inputs.GeneratePR == true && inputs.UseLatestJNetReflector == false }}
         run: |
           echo "GITHUB_COMMIT_MESSAGE=$(echo $GITHUB_SHA | cut -c 1-7)" >> $GITHUB_ENV
         shell: bash
 
       - name: Request a PR to commit changes
-        if: ${{ github.repository_owner == 'masesgroup' && inputs.GeneratePR == true }} #do not push any changes outside main repo or GeneratePR is false
+        if: ${{ github.repository_owner == 'masesgroup' && inputs.GeneratePR == true && inputs.UseLatestJNetReflector == false }} #do not push any changes outside main repo or GeneratePR is false
         uses: peter-evans/create-pull-request@v6
         with:
           branch-suffix: short-commit-hash
