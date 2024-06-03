@@ -26,17 +26,13 @@ using MASES.JCOBridge.C2JBridge;
 namespace Android.Net.Wifi.Aware
 {
     #region WifiAwareNetworkInfo
-    public partial class WifiAwareNetworkInfo : Android.Net.ITransportInfo, Android.Os.IParcelable
+    public partial class WifiAwareNetworkInfo : Android.Os.IParcelable
     {
         #region Constructors
 
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Android.Net.Wifi.Aware.WifiAwareNetworkInfo"/> to <see cref="Android.Net.TransportInfo"/>
-        /// </summary>
-        public static implicit operator Android.Net.TransportInfo(Android.Net.Wifi.Aware.WifiAwareNetworkInfo t) => t.Cast<Android.Net.TransportInfo>();
         /// <summary>
         /// Converter from <see cref="Android.Net.Wifi.Aware.WifiAwareNetworkInfo"/> to <see cref="Android.Os.Parcelable"/>
         /// </summary>

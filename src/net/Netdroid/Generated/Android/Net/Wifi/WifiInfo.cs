@@ -26,17 +26,13 @@ using MASES.JCOBridge.C2JBridge;
 namespace Android.Net.Wifi
 {
     #region WifiInfo
-    public partial class WifiInfo : Android.Net.ITransportInfo, Android.Os.IParcelable
+    public partial class WifiInfo : Android.Os.IParcelable
     {
         #region Constructors
 
         #endregion
 
         #region Class/Interface conversion operators
-        /// <summary>
-        /// Converter from <see cref="Android.Net.Wifi.WifiInfo"/> to <see cref="Android.Net.TransportInfo"/>
-        /// </summary>
-        public static implicit operator Android.Net.TransportInfo(Android.Net.Wifi.WifiInfo t) => t.Cast<Android.Net.TransportInfo>();
         /// <summary>
         /// Converter from <see cref="Android.Net.Wifi.WifiInfo"/> to <see cref="Android.Os.Parcelable"/>
         /// </summary>
@@ -177,15 +173,6 @@ namespace Android.Net.Wifi
         public Android.Net.MacAddress GetApMldMacAddress()
         {
             return IExecuteWithSignature<Android.Net.MacAddress>("getApMldMacAddress", "()Landroid/net/MacAddress;");
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/wifi/WifiInfo.html#makeCopy(long)"/>
-        /// </summary>
-        /// <param name="arg0"><see cref="long"/></param>
-        /// <returns><see cref="Android.Net.TransportInfo"/></returns>
-        public Android.Net.TransportInfo MakeCopy(long arg0)
-        {
-            return IExecuteWithSignature<Android.Net.TransportInfo>("makeCopy", "(J)Landroid/net/TransportInfo;", arg0);
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/wifi/WifiInfo.html#getSupplicantState()"/>

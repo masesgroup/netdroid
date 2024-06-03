@@ -389,14 +389,6 @@ namespace Java.Time
             return IExecuteWithSignature<Java.Lang.String>("format", "(Ljava/time/format/DateTimeFormatter;)Ljava/lang/String;", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java/time/LocalDateTime.html#toLocalDate()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Time.Chrono.ChronoLocalDate"/></returns>
-        public Java.Time.Chrono.ChronoLocalDate ToLocalDate()
-        {
-            return IExecuteWithSignature<Java.Time.Chrono.ChronoLocalDate>("toLocalDate", "()Ljava/time/chrono/ChronoLocalDate;");
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/LocalDateTime.html#atZone(java.time.ZoneId)"/>
         /// </summary>
         /// <param name="arg0"><see cref="Java.Time.ZoneId"/></param>

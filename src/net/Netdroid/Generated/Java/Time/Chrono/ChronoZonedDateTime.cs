@@ -175,14 +175,6 @@ namespace Java.Time.Chrono
             return IExecuteWithSignature<bool>("isSupported", "(Ljava/time/temporal/TemporalUnit;)Z", arg0);
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/java/time/chrono/ChronoZonedDateTime.html#toLocalDate()"/>
-        /// </summary>
-        /// <returns><see cref="Java.Time.Chrono.ChronoLocalDate"/></returns>
-        public Java.Time.Chrono.ChronoLocalDate ToLocalDate()
-        {
-            return IExecuteWithSignature<Java.Time.Chrono.ChronoLocalDate>("toLocalDate", "()Ljava/time/chrono/ChronoLocalDate;");
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/chrono/ChronoZonedDateTime.html#compareTo(java.lang.Object)"/>
         /// </summary>
         /// <param name="arg0"><see cref="object"/></param>
@@ -507,14 +499,6 @@ namespace Java.Time.Chrono
         public bool IsSupported(Java.Time.Temporal.TemporalUnit arg0)
         {
             return IExecuteWithSignature<bool>("isSupported", "(Ljava/time/temporal/TemporalUnit;)Z", arg0);
-        }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/java/time/chrono/ChronoZonedDateTime.html#toLocalDate()"/>
-        /// </summary>
-        /// <returns><typeparamref name="D"/></returns>
-        public D ToLocalDate()
-        {
-            return IExecuteWithSignature<D>("toLocalDate", "()Ljava/time/chrono/ChronoLocalDate;");
         }
         /// <summary>
         /// <see href="https://developer.android.com/reference/java/time/chrono/ChronoZonedDateTime.html#compareTo(java.lang.Object)"/>

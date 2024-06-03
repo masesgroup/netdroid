@@ -332,14 +332,6 @@ namespace Android.Net
             return IExecuteWithSignature<Android.Net.NetworkSpecifier>("getNetworkSpecifier", "()Landroid/net/NetworkSpecifier;");
         }
         /// <summary>
-        /// <see href="https://developer.android.com/reference/android/net/NetworkCapabilities.html#getTransportInfo()"/>
-        /// </summary>
-        /// <returns><see cref="Android.Net.TransportInfo"/></returns>
-        public Android.Net.TransportInfo GetTransportInfo()
-        {
-            return IExecuteWithSignature<Android.Net.TransportInfo>("getTransportInfo", "()Landroid/net/TransportInfo;");
-        }
-        /// <summary>
         /// <see href="https://developer.android.com/reference/android/net/NetworkCapabilities.html#hasCapability(int)"/>
         /// </summary>
         /// <param name="arg0"><see cref="int"/></param>
