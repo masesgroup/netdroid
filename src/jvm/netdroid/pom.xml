@@ -7,7 +7,7 @@
     <groupId>com.masesgroup</groupId>
     <artifactId>netdroid</artifactId>
     <name>mases.netdroid</name>
-    <description>Interface bridging implementation for Maven</description>
+    <description>Interface bridging implementation for Android SDK</description>
     <url>https://github.com/masesgroup/netdroid</url>
     <version>${netdroidVersion}</version>
 
@@ -41,7 +41,6 @@
         <maven.compiler.target>11</maven.compiler.target>
         <classpathfile>${basedir}/classpathfile.classpath</classpathfile>
         <netdroidVersion>1.0.0.0</netdroidVersion>
-        <jcobridgeVersion>2.5.13</jcobridgeVersion>
 		<jcobridgepath>../../../bin/net8.0/JCOBridge.jar</jcobridgepath>
 		<androidJarPath>${env.ANDROID_HOME}/platforms/android-34-ext8/android.jar</androidJarPath>
     </properties>
