@@ -1,0 +1,3905 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class OffsetDateTime | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class OffsetDateTime | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/java/time/OffsetDateTime.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Java_Time_OffsetDateTime.md&amp;value=---%0Auid%3A%20Java.Time.OffsetDateTime%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Java.Time.OffsetDateTime">
+
+
+
+  <h1 id="Java_Time_OffsetDateTime" data-uid="Java.Time.OffsetDateTime" class="text-break">
+Class OffsetDateTime  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Java.html">Java</a>.<a class="xref" href="Java.Time.html">Time</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html">https://developer.android.com/reference/java/time/OffsetDateTime.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class OffsetDateTime : JVMBridgeBase&lt;OffsetDateTime&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, ITemporal, ITemporalAccessor, ITemporalAdjuster, IComparable&lt;OffsetDateTime&gt;, ISerializable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a>&gt;</div>
+      <div><span class="xref">OffsetDateTime</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+      <div><a class="xref" href="Java.Time.Temporal.ITemporal.html">ITemporal</a></div>
+      <div><a class="xref" href="Java.Time.Temporal.ITemporalAccessor.html">ITemporalAccessor</a></div>
+      <div><a class="xref" href="Java.Time.Temporal.ITemporalAdjuster.html">ITemporalAdjuster</a></div>
+      <div><a class="xref" href="Java.Lang.IComparable-1.html">IComparable</a>&lt;<a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a>&gt;</div>
+      <div><a class="xref" href="Java.Io.ISerializable.html">ISerializable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;OffsetDateTime&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;OffsetDateTime&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;OffsetDateTime&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;OffsetDateTime&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;OffsetDateTime&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;OffsetDateTime&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;OffsetDateTime&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;OffsetDateTime&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;OffsetDateTime&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;OffsetDateTime&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;OffsetDateTime&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;OffsetDateTime&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;OffsetDateTime&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;OffsetDateTime&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;OffsetDateTime&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;OffsetDateTime&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;OffsetDateTime&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;OffsetDateTime&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;OffsetDateTime&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;OffsetDateTime&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;OffsetDateTime&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;OffsetDateTime&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;OffsetDateTime&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;OffsetDateTime&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;OffsetDateTime&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;OffsetDateTime&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;OffsetDateTime&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;OffsetDateTime&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;OffsetDateTime&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;OffsetDateTime&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;OffsetDateTime&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;OffsetDateTime&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;OffsetDateTime&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;OffsetDateTime&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;OffsetDateTime&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;OffsetDateTime&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;OffsetDateTime&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;OffsetDateTime&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;OffsetDateTime&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;OffsetDateTime&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;OffsetDateTime&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;OffsetDateTime&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;OffsetDateTime&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;OffsetDateTime&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;OffsetDateTime&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;OffsetDateTime&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;OffsetDateTime&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;OffsetDateTime&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;OffsetDateTime&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;OffsetDateTime&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Java_Time_OffsetDateTime__ctor_" data-uid="Java.Time.OffsetDateTime.#ctor*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime__ctor" data-uid="Java.Time.OffsetDateTime.#ctor">
+  OffsetDateTime()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/AllPackageClasses.cs/#L500"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OffsetDateTime()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime__ctor_" data-uid="Java.Time.OffsetDateTime.#ctor*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime__ctor_System_Object___" data-uid="Java.Time.OffsetDateTime.#ctor(System.Object[])">
+  OffsetDateTime(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/AllPackageClasses.cs/#L504"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OffsetDateTime(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Java_Time_OffsetDateTime_BridgeClassName_" data-uid="Java.Time.OffsetDateTime.BridgeClassName*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_BridgeClassName" data-uid="Java.Time.OffsetDateTime.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/AllPackageClasses.cs/#L511"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_IsBridgeAbstract_" data-uid="Java.Time.OffsetDateTime.IsBridgeAbstract*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_IsBridgeAbstract" data-uid="Java.Time.OffsetDateTime.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/AllPackageClasses.cs/#L515"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_IsBridgeCloseable_" data-uid="Java.Time.OffsetDateTime.IsBridgeCloseable*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_IsBridgeCloseable" data-uid="Java.Time.OffsetDateTime.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/AllPackageClasses.cs/#L519"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_IsBridgeInterface_" data-uid="Java.Time.OffsetDateTime.IsBridgeInterface*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_IsBridgeInterface" data-uid="Java.Time.OffsetDateTime.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/AllPackageClasses.cs/#L523"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_IsBridgeStatic_" data-uid="Java.Time.OffsetDateTime.IsBridgeStatic*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_IsBridgeStatic" data-uid="Java.Time.OffsetDateTime.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/AllPackageClasses.cs/#L527"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_MAX_" data-uid="Java.Time.OffsetDateTime.MAX*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_MAX" data-uid="Java.Time.OffsetDateTime.MAX">
+  MAX
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#MAX">https://developer.android.com/reference/java/time/OffsetDateTime.html#MAX</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static OffsetDateTime MAX { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_MIN_" data-uid="Java.Time.OffsetDateTime.MIN*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_MIN" data-uid="Java.Time.OffsetDateTime.MIN">
+  MIN
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L65"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#MIN">https://developer.android.com/reference/java/time/OffsetDateTime.html#MIN</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static OffsetDateTime MIN { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Java_Time_OffsetDateTime_AdjustInto_" data-uid="Java.Time.OffsetDateTime.AdjustInto*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_AdjustInto_Java_Time_Temporal_Temporal_" data-uid="Java.Time.OffsetDateTime.AdjustInto(Java.Time.Temporal.Temporal)">
+  AdjustInto(Temporal)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L636"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#adjustInto(java.time.temporal.Temporal)">https://developer.android.com/reference/java/time/OffsetDateTime.html#adjustInto(java.time.temporal.Temporal)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Temporal AdjustInto(Temporal arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.Temporal.Temporal.html">Temporal</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Temporal.Temporal.html">Temporal</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.Temporal.Temporal.html">Temporal</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Temporal.Temporal.html">Temporal</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_AtZoneSameInstant_" data-uid="Java.Time.OffsetDateTime.AtZoneSameInstant*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_AtZoneSameInstant_Java_Time_ZoneId_" data-uid="Java.Time.OffsetDateTime.AtZoneSameInstant(Java.Time.ZoneId)">
+  AtZoneSameInstant(ZoneId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L711"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#atZoneSameInstant(java.time.ZoneId)">https://developer.android.com/reference/java/time/OffsetDateTime.html#atZoneSameInstant(java.time.ZoneId)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ZonedDateTime AtZoneSameInstant(ZoneId arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.ZoneId.html">ZoneId</a></dt>
+    <dd><p><a class="xref" href="Java.Time.ZoneId.html">ZoneId</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.ZonedDateTime.html">ZonedDateTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.ZonedDateTime.html">ZonedDateTime</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_AtZoneSimilarLocal_" data-uid="Java.Time.OffsetDateTime.AtZoneSimilarLocal*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_AtZoneSimilarLocal_Java_Time_ZoneId_" data-uid="Java.Time.OffsetDateTime.AtZoneSimilarLocal(Java.Time.ZoneId)">
+  AtZoneSimilarLocal(ZoneId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L720"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#atZoneSimilarLocal(java.time.ZoneId)">https://developer.android.com/reference/java/time/OffsetDateTime.html#atZoneSimilarLocal(java.time.ZoneId)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ZonedDateTime AtZoneSimilarLocal(ZoneId arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.ZoneId.html">ZoneId</a></dt>
+    <dd><p><a class="xref" href="Java.Time.ZoneId.html">ZoneId</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.ZonedDateTime.html">ZonedDateTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.ZonedDateTime.html">ZonedDateTime</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_CompareTo_" data-uid="Java.Time.OffsetDateTime.CompareTo*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_CompareTo_Java_Time_OffsetDateTime_" data-uid="Java.Time.OffsetDateTime.CompareTo(Java.Time.OffsetDateTime)">
+  CompareTo(OffsetDateTime)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L246"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#compareTo(java.time.OffsetDateTime)">https://developer.android.com/reference/java/time/OffsetDateTime.html#compareTo(java.time.OffsetDateTime)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CompareTo(OffsetDateTime arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_CompareTo_" data-uid="Java.Time.OffsetDateTime.CompareTo*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_CompareTo_System_Object_" data-uid="Java.Time.OffsetDateTime.CompareTo(System.Object)">
+  CompareTo(object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L237"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#compareTo(java.lang.Object)">https://developer.android.com/reference/java/time/OffsetDateTime.html#compareTo(java.lang.Object)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CompareTo(object arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_Format_" data-uid="Java.Time.OffsetDateTime.Format*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_Format_Java_Time_Format_DateTimeFormatter_" data-uid="Java.Time.OffsetDateTime.Format(Java.Time.Format.DateTimeFormatter)">
+  Format(DateTimeFormatter)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L328"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#format(java.time.format.DateTimeFormatter)">https://developer.android.com/reference/java/time/OffsetDateTime.html#format(java.time.format.DateTimeFormatter)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String Format(DateTimeFormatter arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.Format.DateTimeFormatter.html">DateTimeFormatter</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Format.DateTimeFormatter.html">DateTimeFormatter</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_From_" data-uid="Java.Time.OffsetDateTime.From*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_From_Java_Time_Temporal_TemporalAccessor_" data-uid="Java.Time.OffsetDateTime.From(Java.Time.Temporal.TemporalAccessor)">
+  From(TemporalAccessor)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L77"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#from(java.time.temporal.TemporalAccessor)">https://developer.android.com/reference/java/time/OffsetDateTime.html#from(java.time.temporal.TemporalAccessor)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static OffsetDateTime From(TemporalAccessor arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.Temporal.TemporalAccessor.html">TemporalAccessor</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Temporal.TemporalAccessor.html">TemporalAccessor</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_Get_" data-uid="Java.Time.OffsetDateTime.Get*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_Get_Java_Time_Temporal_TemporalField_" data-uid="Java.Time.OffsetDateTime.Get(Java.Time.Temporal.TemporalField)">
+  Get(TemporalField)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L255"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#get(java.time.temporal.TemporalField)">https://developer.android.com/reference/java/time/OffsetDateTime.html#get(java.time.temporal.TemporalField)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Get(TemporalField arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.Temporal.TemporalField.html">TemporalField</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Temporal.TemporalField.html">TemporalField</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_GetDayOfMonth_" data-uid="Java.Time.OffsetDateTime.GetDayOfMonth*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_GetDayOfMonth" data-uid="Java.Time.OffsetDateTime.GetDayOfMonth">
+  GetDayOfMonth()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L263"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#getDayOfMonth()">https://developer.android.com/reference/java/time/OffsetDateTime.html#getDayOfMonth()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetDayOfMonth()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_GetDayOfWeek_" data-uid="Java.Time.OffsetDateTime.GetDayOfWeek*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_GetDayOfWeek" data-uid="Java.Time.OffsetDateTime.GetDayOfWeek">
+  GetDayOfWeek()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L336"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#getDayOfWeek()">https://developer.android.com/reference/java/time/OffsetDateTime.html#getDayOfWeek()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DayOfWeek GetDayOfWeek()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.DayOfWeek.html">DayOfWeek</a></dt>
+    <dd><p><a class="xref" href="Java.Time.DayOfWeek.html">DayOfWeek</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_GetDayOfYear_" data-uid="Java.Time.OffsetDateTime.GetDayOfYear*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_GetDayOfYear" data-uid="Java.Time.OffsetDateTime.GetDayOfYear">
+  GetDayOfYear()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L271"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#getDayOfYear()">https://developer.android.com/reference/java/time/OffsetDateTime.html#getDayOfYear()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetDayOfYear()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_GetHour_" data-uid="Java.Time.OffsetDateTime.GetHour*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_GetHour" data-uid="Java.Time.OffsetDateTime.GetHour">
+  GetHour()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L279"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#getHour()">https://developer.android.com/reference/java/time/OffsetDateTime.html#getHour()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetHour()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_GetLong_" data-uid="Java.Time.OffsetDateTime.GetLong*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_GetLong_Java_Time_Temporal_TemporalField_" data-uid="Java.Time.OffsetDateTime.GetLong(Java.Time.Temporal.TemporalField)">
+  GetLong(TemporalField)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L745"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#getLong(java.time.temporal.TemporalField)">https://developer.android.com/reference/java/time/OffsetDateTime.html#getLong(java.time.temporal.TemporalField)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long GetLong(TemporalField arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.Temporal.TemporalField.html">TemporalField</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Temporal.TemporalField.html">TemporalField</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_GetMinute_" data-uid="Java.Time.OffsetDateTime.GetMinute*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_GetMinute" data-uid="Java.Time.OffsetDateTime.GetMinute">
+  GetMinute()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L287"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#getMinute()">https://developer.android.com/reference/java/time/OffsetDateTime.html#getMinute()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetMinute()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_GetMonth_" data-uid="Java.Time.OffsetDateTime.GetMonth*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_GetMonth" data-uid="Java.Time.OffsetDateTime.GetMonth">
+  GetMonth()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L376"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#getMonth()">https://developer.android.com/reference/java/time/OffsetDateTime.html#getMonth()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Month GetMonth()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.Month.html">Month</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Month.html">Month</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_GetMonthValue_" data-uid="Java.Time.OffsetDateTime.GetMonthValue*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_GetMonthValue" data-uid="Java.Time.OffsetDateTime.GetMonthValue">
+  GetMonthValue()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L295"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#getMonthValue()">https://developer.android.com/reference/java/time/OffsetDateTime.html#getMonthValue()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetMonthValue()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_GetNano_" data-uid="Java.Time.OffsetDateTime.GetNano*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_GetNano" data-uid="Java.Time.OffsetDateTime.GetNano">
+  GetNano()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L303"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#getNano()">https://developer.android.com/reference/java/time/OffsetDateTime.html#getNano()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetNano()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_GetOffset_" data-uid="Java.Time.OffsetDateTime.GetOffset*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_GetOffset" data-uid="Java.Time.OffsetDateTime.GetOffset">
+  GetOffset()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L736"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#getOffset()">https://developer.android.com/reference/java/time/OffsetDateTime.html#getOffset()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ZoneOffset GetOffset()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.ZoneOffset.html">ZoneOffset</a></dt>
+    <dd><p><a class="xref" href="Java.Time.ZoneOffset.html">ZoneOffset</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_GetSecond_" data-uid="Java.Time.OffsetDateTime.GetSecond*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_GetSecond" data-uid="Java.Time.OffsetDateTime.GetSecond">
+  GetSecond()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L311"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#getSecond()">https://developer.android.com/reference/java/time/OffsetDateTime.html#getSecond()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetSecond()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_GetYear_" data-uid="Java.Time.OffsetDateTime.GetYear*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_GetYear" data-uid="Java.Time.OffsetDateTime.GetYear">
+  GetYear()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L319"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#getYear()">https://developer.android.com/reference/java/time/OffsetDateTime.html#getYear()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetYear()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_IsAfter_" data-uid="Java.Time.OffsetDateTime.IsAfter*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_IsAfter_Java_Time_OffsetDateTime_" data-uid="Java.Time.OffsetDateTime.IsAfter(Java.Time.OffsetDateTime)">
+  IsAfter(OffsetDateTime)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L192"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#isAfter(java.time.OffsetDateTime)">https://developer.android.com/reference/java/time/OffsetDateTime.html#isAfter(java.time.OffsetDateTime)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsAfter(OffsetDateTime arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_IsBefore_" data-uid="Java.Time.OffsetDateTime.IsBefore*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_IsBefore_Java_Time_OffsetDateTime_" data-uid="Java.Time.OffsetDateTime.IsBefore(Java.Time.OffsetDateTime)">
+  IsBefore(OffsetDateTime)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L201"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#isBefore(java.time.OffsetDateTime)">https://developer.android.com/reference/java/time/OffsetDateTime.html#isBefore(java.time.OffsetDateTime)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsBefore(OffsetDateTime arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_IsEqual_" data-uid="Java.Time.OffsetDateTime.IsEqual*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_IsEqual_Java_Time_OffsetDateTime_" data-uid="Java.Time.OffsetDateTime.IsEqual(Java.Time.OffsetDateTime)">
+  IsEqual(OffsetDateTime)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L210"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#isEqual(java.time.OffsetDateTime)">https://developer.android.com/reference/java/time/OffsetDateTime.html#isEqual(java.time.OffsetDateTime)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsEqual(OffsetDateTime arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_IsSupported_" data-uid="Java.Time.OffsetDateTime.IsSupported*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_IsSupported_Java_Time_Temporal_TemporalField_" data-uid="Java.Time.OffsetDateTime.IsSupported(Java.Time.Temporal.TemporalField)">
+  IsSupported(TemporalField)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L219"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#isSupported(java.time.temporal.TemporalField)">https://developer.android.com/reference/java/time/OffsetDateTime.html#isSupported(java.time.temporal.TemporalField)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSupported(TemporalField arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.Temporal.TemporalField.html">TemporalField</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Temporal.TemporalField.html">TemporalField</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_IsSupported_" data-uid="Java.Time.OffsetDateTime.IsSupported*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_IsSupported_Java_Time_Temporal_TemporalUnit_" data-uid="Java.Time.OffsetDateTime.IsSupported(Java.Time.Temporal.TemporalUnit)">
+  IsSupported(TemporalUnit)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L228"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#isSupported(java.time.temporal.TemporalUnit)">https://developer.android.com/reference/java/time/OffsetDateTime.html#isSupported(java.time.temporal.TemporalUnit)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSupported(TemporalUnit arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.Temporal.TemporalUnit.html">TemporalUnit</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Temporal.TemporalUnit.html">TemporalUnit</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_Minus_" data-uid="Java.Time.OffsetDateTime.Minus*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_Minus_Java_Time_Temporal_TemporalAmount_" data-uid="Java.Time.OffsetDateTime.Minus(Java.Time.Temporal.TemporalAmount)">
+  Minus(TemporalAmount)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L645"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#minus(java.time.temporal.TemporalAmount)">https://developer.android.com/reference/java/time/OffsetDateTime.html#minus(java.time.temporal.TemporalAmount)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Temporal Minus(TemporalAmount arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.Temporal.TemporalAmount.html">TemporalAmount</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Temporal.TemporalAmount.html">TemporalAmount</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.Temporal.Temporal.html">Temporal</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Temporal.Temporal.html">Temporal</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_Minus_" data-uid="Java.Time.OffsetDateTime.Minus*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_Minus_System_Int64_Java_Time_Temporal_TemporalUnit_" data-uid="Java.Time.OffsetDateTime.Minus(System.Int64,Java.Time.Temporal.TemporalUnit)">
+  Minus(long, TemporalUnit)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L655"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#minus(long,java.time.temporal.TemporalUnit)">https://developer.android.com/reference/java/time/OffsetDateTime.html#minus(long,java.time.temporal.TemporalUnit)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Temporal Minus(long arg0, TemporalUnit arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Time.Temporal.TemporalUnit.html">TemporalUnit</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Temporal.TemporalUnit.html">TemporalUnit</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.Temporal.Temporal.html">Temporal</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Temporal.Temporal.html">Temporal</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_MinusDays_" data-uid="Java.Time.OffsetDateTime.MinusDays*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_MinusDays_System_Int64_" data-uid="Java.Time.OffsetDateTime.MinusDays(System.Int64)">
+  MinusDays(long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L385"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#minusDays(long)">https://developer.android.com/reference/java/time/OffsetDateTime.html#minusDays(long)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OffsetDateTime MinusDays(long arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_MinusHours_" data-uid="Java.Time.OffsetDateTime.MinusHours*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_MinusHours_System_Int64_" data-uid="Java.Time.OffsetDateTime.MinusHours(System.Int64)">
+  MinusHours(long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L394"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#minusHours(long)">https://developer.android.com/reference/java/time/OffsetDateTime.html#minusHours(long)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OffsetDateTime MinusHours(long arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_MinusMinutes_" data-uid="Java.Time.OffsetDateTime.MinusMinutes*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_MinusMinutes_System_Int64_" data-uid="Java.Time.OffsetDateTime.MinusMinutes(System.Int64)">
+  MinusMinutes(long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L403"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#minusMinutes(long)">https://developer.android.com/reference/java/time/OffsetDateTime.html#minusMinutes(long)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OffsetDateTime MinusMinutes(long arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_MinusMonths_" data-uid="Java.Time.OffsetDateTime.MinusMonths*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_MinusMonths_System_Int64_" data-uid="Java.Time.OffsetDateTime.MinusMonths(System.Int64)">
+  MinusMonths(long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L412"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#minusMonths(long)">https://developer.android.com/reference/java/time/OffsetDateTime.html#minusMonths(long)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OffsetDateTime MinusMonths(long arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_MinusNanos_" data-uid="Java.Time.OffsetDateTime.MinusNanos*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_MinusNanos_System_Int64_" data-uid="Java.Time.OffsetDateTime.MinusNanos(System.Int64)">
+  MinusNanos(long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L421"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#minusNanos(long)">https://developer.android.com/reference/java/time/OffsetDateTime.html#minusNanos(long)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OffsetDateTime MinusNanos(long arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_MinusSeconds_" data-uid="Java.Time.OffsetDateTime.MinusSeconds*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_MinusSeconds_System_Int64_" data-uid="Java.Time.OffsetDateTime.MinusSeconds(System.Int64)">
+  MinusSeconds(long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L430"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#minusSeconds(long)">https://developer.android.com/reference/java/time/OffsetDateTime.html#minusSeconds(long)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OffsetDateTime MinusSeconds(long arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_MinusWeeks_" data-uid="Java.Time.OffsetDateTime.MinusWeeks*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_MinusWeeks_System_Int64_" data-uid="Java.Time.OffsetDateTime.MinusWeeks(System.Int64)">
+  MinusWeeks(long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L439"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#minusWeeks(long)">https://developer.android.com/reference/java/time/OffsetDateTime.html#minusWeeks(long)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OffsetDateTime MinusWeeks(long arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_MinusYears_" data-uid="Java.Time.OffsetDateTime.MinusYears*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_MinusYears_System_Int64_" data-uid="Java.Time.OffsetDateTime.MinusYears(System.Int64)">
+  MinusYears(long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L448"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#minusYears(long)">https://developer.android.com/reference/java/time/OffsetDateTime.html#minusYears(long)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OffsetDateTime MinusYears(long arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_Now_" data-uid="Java.Time.OffsetDateTime.Now*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_Now" data-uid="Java.Time.OffsetDateTime.Now">
+  Now()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#now()">https://developer.android.com/reference/java/time/OffsetDateTime.html#now()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static OffsetDateTime Now()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_Now_" data-uid="Java.Time.OffsetDateTime.Now*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_Now_Java_Time_Clock_" data-uid="Java.Time.OffsetDateTime.Now(Java.Time.Clock)">
+  Now(Clock)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L94"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#now(java.time.Clock)">https://developer.android.com/reference/java/time/OffsetDateTime.html#now(java.time.Clock)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static OffsetDateTime Now(Clock arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.Clock.html">Clock</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Clock.html">Clock</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_Now_" data-uid="Java.Time.OffsetDateTime.Now*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_Now_Java_Time_ZoneId_" data-uid="Java.Time.OffsetDateTime.Now(Java.Time.ZoneId)">
+  Now(ZoneId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#now(java.time.ZoneId)">https://developer.android.com/reference/java/time/OffsetDateTime.html#now(java.time.ZoneId)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static OffsetDateTime Now(ZoneId arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.ZoneId.html">ZoneId</a></dt>
+    <dd><p><a class="xref" href="Java.Time.ZoneId.html">ZoneId</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_Of_" data-uid="Java.Time.OffsetDateTime.Of*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_Of_Java_Time_LocalDate_Java_Time_LocalTime_Java_Time_ZoneOffset_" data-uid="Java.Time.OffsetDateTime.Of(Java.Time.LocalDate,Java.Time.LocalTime,Java.Time.ZoneOffset)">
+  Of(LocalDate, LocalTime, ZoneOffset)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L130"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#of(java.time.LocalDate,java.time.LocalTime,java.time.ZoneOffset)">https://developer.android.com/reference/java/time/OffsetDateTime.html#of(java.time.LocalDate,java.time.LocalTime,java.time.ZoneOffset)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static OffsetDateTime Of(LocalDate arg0, LocalTime arg1, ZoneOffset arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.LocalDate.html">LocalDate</a></dt>
+    <dd><p><a class="xref" href="Java.Time.LocalDate.html">LocalDate</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Time.LocalTime.html">LocalTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.LocalTime.html">LocalTime</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Time.ZoneOffset.html">ZoneOffset</a></dt>
+    <dd><p><a class="xref" href="Java.Time.ZoneOffset.html">ZoneOffset</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_Of_" data-uid="Java.Time.OffsetDateTime.Of*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_Of_Java_Time_LocalDateTime_Java_Time_ZoneOffset_" data-uid="Java.Time.OffsetDateTime.Of(Java.Time.LocalDateTime,Java.Time.ZoneOffset)">
+  Of(LocalDateTime, ZoneOffset)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L140"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#of(java.time.LocalDateTime,java.time.ZoneOffset)">https://developer.android.com/reference/java/time/OffsetDateTime.html#of(java.time.LocalDateTime,java.time.ZoneOffset)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static OffsetDateTime Of(LocalDateTime arg0, ZoneOffset arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.LocalDateTime.html">LocalDateTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.LocalDateTime.html">LocalDateTime</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Time.ZoneOffset.html">ZoneOffset</a></dt>
+    <dd><p><a class="xref" href="Java.Time.ZoneOffset.html">ZoneOffset</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_Of_" data-uid="Java.Time.OffsetDateTime.Of*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_Of_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_Java_Time_ZoneOffset_" data-uid="Java.Time.OffsetDateTime.Of(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,Java.Time.ZoneOffset)">
+  Of(int, int, int, int, int, int, int, ZoneOffset)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L119"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#of(int,int,int,int,int,int,int,java.time.ZoneOffset)">https://developer.android.com/reference/java/time/OffsetDateTime.html#of(int,int,int,int,int,int,int,java.time.ZoneOffset)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static OffsetDateTime Of(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, ZoneOffset arg7)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg4</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg5</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg6</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg7</code> <a class="xref" href="Java.Time.ZoneOffset.html">ZoneOffset</a></dt>
+    <dd><p><a class="xref" href="Java.Time.ZoneOffset.html">ZoneOffset</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_OfInstant_" data-uid="Java.Time.OffsetDateTime.OfInstant*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_OfInstant_Java_Time_Instant_Java_Time_ZoneId_" data-uid="Java.Time.OffsetDateTime.OfInstant(Java.Time.Instant,Java.Time.ZoneId)">
+  OfInstant(Instant, ZoneId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L150"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#ofInstant(java.time.Instant,java.time.ZoneId)">https://developer.android.com/reference/java/time/OffsetDateTime.html#ofInstant(java.time.Instant,java.time.ZoneId)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static OffsetDateTime OfInstant(Instant arg0, ZoneId arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.Instant.html">Instant</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Instant.html">Instant</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Time.ZoneId.html">ZoneId</a></dt>
+    <dd><p><a class="xref" href="Java.Time.ZoneId.html">ZoneId</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_Parse_" data-uid="Java.Time.OffsetDateTime.Parse*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_Parse_Java_Lang_CharSequence_" data-uid="Java.Time.OffsetDateTime.Parse(Java.Lang.CharSequence)">
+  Parse(CharSequence)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L169"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#parse(java.lang.CharSequence)">https://developer.android.com/reference/java/time/OffsetDateTime.html#parse(java.lang.CharSequence)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static OffsetDateTime Parse(CharSequence arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_Parse_" data-uid="Java.Time.OffsetDateTime.Parse*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_Parse_Java_Lang_CharSequence_Java_Time_Format_DateTimeFormatter_" data-uid="Java.Time.OffsetDateTime.Parse(Java.Lang.CharSequence,Java.Time.Format.DateTimeFormatter)">
+  Parse(CharSequence, DateTimeFormatter)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L160"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#parse(java.lang.CharSequence,java.time.format.DateTimeFormatter)">https://developer.android.com/reference/java/time/OffsetDateTime.html#parse(java.lang.CharSequence,java.time.format.DateTimeFormatter)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static OffsetDateTime Parse(CharSequence arg0, DateTimeFormatter arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Time.Format.DateTimeFormatter.html">DateTimeFormatter</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Format.DateTimeFormatter.html">DateTimeFormatter</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_Plus_" data-uid="Java.Time.OffsetDateTime.Plus*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_Plus_Java_Time_Temporal_TemporalAmount_" data-uid="Java.Time.OffsetDateTime.Plus(Java.Time.Temporal.TemporalAmount)">
+  Plus(TemporalAmount)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L664"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#plus(java.time.temporal.TemporalAmount)">https://developer.android.com/reference/java/time/OffsetDateTime.html#plus(java.time.temporal.TemporalAmount)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Temporal Plus(TemporalAmount arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.Temporal.TemporalAmount.html">TemporalAmount</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Temporal.TemporalAmount.html">TemporalAmount</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.Temporal.Temporal.html">Temporal</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Temporal.Temporal.html">Temporal</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_Plus_" data-uid="Java.Time.OffsetDateTime.Plus*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_Plus_System_Int64_Java_Time_Temporal_TemporalUnit_" data-uid="Java.Time.OffsetDateTime.Plus(System.Int64,Java.Time.Temporal.TemporalUnit)">
+  Plus(long, TemporalUnit)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L674"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#plus(long,java.time.temporal.TemporalUnit)">https://developer.android.com/reference/java/time/OffsetDateTime.html#plus(long,java.time.temporal.TemporalUnit)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Temporal Plus(long arg0, TemporalUnit arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Time.Temporal.TemporalUnit.html">TemporalUnit</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Temporal.TemporalUnit.html">TemporalUnit</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.Temporal.Temporal.html">Temporal</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Temporal.Temporal.html">Temporal</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_PlusDays_" data-uid="Java.Time.OffsetDateTime.PlusDays*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_PlusDays_System_Int64_" data-uid="Java.Time.OffsetDateTime.PlusDays(System.Int64)">
+  PlusDays(long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L457"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#plusDays(long)">https://developer.android.com/reference/java/time/OffsetDateTime.html#plusDays(long)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OffsetDateTime PlusDays(long arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_PlusHours_" data-uid="Java.Time.OffsetDateTime.PlusHours*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_PlusHours_System_Int64_" data-uid="Java.Time.OffsetDateTime.PlusHours(System.Int64)">
+  PlusHours(long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L466"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#plusHours(long)">https://developer.android.com/reference/java/time/OffsetDateTime.html#plusHours(long)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OffsetDateTime PlusHours(long arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_PlusMinutes_" data-uid="Java.Time.OffsetDateTime.PlusMinutes*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_PlusMinutes_System_Int64_" data-uid="Java.Time.OffsetDateTime.PlusMinutes(System.Int64)">
+  PlusMinutes(long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L475"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#plusMinutes(long)">https://developer.android.com/reference/java/time/OffsetDateTime.html#plusMinutes(long)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OffsetDateTime PlusMinutes(long arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_PlusMonths_" data-uid="Java.Time.OffsetDateTime.PlusMonths*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_PlusMonths_System_Int64_" data-uid="Java.Time.OffsetDateTime.PlusMonths(System.Int64)">
+  PlusMonths(long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L484"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#plusMonths(long)">https://developer.android.com/reference/java/time/OffsetDateTime.html#plusMonths(long)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OffsetDateTime PlusMonths(long arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_PlusNanos_" data-uid="Java.Time.OffsetDateTime.PlusNanos*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_PlusNanos_System_Int64_" data-uid="Java.Time.OffsetDateTime.PlusNanos(System.Int64)">
+  PlusNanos(long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L493"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#plusNanos(long)">https://developer.android.com/reference/java/time/OffsetDateTime.html#plusNanos(long)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OffsetDateTime PlusNanos(long arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_PlusSeconds_" data-uid="Java.Time.OffsetDateTime.PlusSeconds*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_PlusSeconds_System_Int64_" data-uid="Java.Time.OffsetDateTime.PlusSeconds(System.Int64)">
+  PlusSeconds(long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L502"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#plusSeconds(long)">https://developer.android.com/reference/java/time/OffsetDateTime.html#plusSeconds(long)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OffsetDateTime PlusSeconds(long arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_PlusWeeks_" data-uid="Java.Time.OffsetDateTime.PlusWeeks*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_PlusWeeks_System_Int64_" data-uid="Java.Time.OffsetDateTime.PlusWeeks(System.Int64)">
+  PlusWeeks(long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L511"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#plusWeeks(long)">https://developer.android.com/reference/java/time/OffsetDateTime.html#plusWeeks(long)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OffsetDateTime PlusWeeks(long arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_PlusYears_" data-uid="Java.Time.OffsetDateTime.PlusYears*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_PlusYears_System_Int64_" data-uid="Java.Time.OffsetDateTime.PlusYears(System.Int64)">
+  PlusYears(long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L520"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#plusYears(long)">https://developer.android.com/reference/java/time/OffsetDateTime.html#plusYears(long)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OffsetDateTime PlusYears(long arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_Query_" data-uid="Java.Time.OffsetDateTime.Query*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_Query__1_Java_Time_Temporal_TemporalQuery___0__" data-uid="Java.Time.OffsetDateTime.Query``1(Java.Time.Temporal.TemporalQuery{``0})">
+  Query&lt;R&gt;(TemporalQuery&lt;R&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L183"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#query(java.time.temporal.TemporalQuery)">https://developer.android.com/reference/java/time/OffsetDateTime.html#query(java.time.temporal.TemporalQuery)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public R Query&lt;R&gt;(TemporalQuery&lt;R&gt; arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.Temporal.TemporalQuery-1.html">TemporalQuery</a>&lt;R&gt;</dt>
+    <dd><p><a class="xref" href="Java.Time.Temporal.TemporalQuery.html">TemporalQuery</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">R</span></dt>
+    <dd><p><code class="typeparamref">R</code></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>R</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_Range_" data-uid="Java.Time.OffsetDateTime.Range*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_Range_Java_Time_Temporal_TemporalField_" data-uid="Java.Time.OffsetDateTime.Range(Java.Time.Temporal.TemporalField)">
+  Range(TemporalField)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L702"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#range(java.time.temporal.TemporalField)">https://developer.android.com/reference/java/time/OffsetDateTime.html#range(java.time.temporal.TemporalField)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ValueRange Range(TemporalField arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.Temporal.TemporalField.html">TemporalField</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Temporal.TemporalField.html">TemporalField</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.Temporal.ValueRange.html">ValueRange</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Temporal.ValueRange.html">ValueRange</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_ToEpochSecond_" data-uid="Java.Time.OffsetDateTime.ToEpochSecond*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_ToEpochSecond" data-uid="Java.Time.OffsetDateTime.ToEpochSecond">
+  ToEpochSecond()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L753"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#toEpochSecond()">https://developer.android.com/reference/java/time/OffsetDateTime.html#toEpochSecond()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long ToEpochSecond()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_ToInstant_" data-uid="Java.Time.OffsetDateTime.ToInstant*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_ToInstant" data-uid="Java.Time.OffsetDateTime.ToInstant">
+  ToInstant()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L344"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#toInstant()">https://developer.android.com/reference/java/time/OffsetDateTime.html#toInstant()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Instant ToInstant()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.Instant.html">Instant</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Instant.html">Instant</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_ToLocalDate_" data-uid="Java.Time.OffsetDateTime.ToLocalDate*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_ToLocalDate" data-uid="Java.Time.OffsetDateTime.ToLocalDate">
+  ToLocalDate()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L352"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#toLocalDate()">https://developer.android.com/reference/java/time/OffsetDateTime.html#toLocalDate()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LocalDate ToLocalDate()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.LocalDate.html">LocalDate</a></dt>
+    <dd><p><a class="xref" href="Java.Time.LocalDate.html">LocalDate</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_ToLocalDateTime_" data-uid="Java.Time.OffsetDateTime.ToLocalDateTime*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_ToLocalDateTime" data-uid="Java.Time.OffsetDateTime.ToLocalDateTime">
+  ToLocalDateTime()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L360"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#toLocalDateTime()">https://developer.android.com/reference/java/time/OffsetDateTime.html#toLocalDateTime()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LocalDateTime ToLocalDateTime()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.LocalDateTime.html">LocalDateTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.LocalDateTime.html">LocalDateTime</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_ToLocalTime_" data-uid="Java.Time.OffsetDateTime.ToLocalTime*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_ToLocalTime" data-uid="Java.Time.OffsetDateTime.ToLocalTime">
+  ToLocalTime()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L368"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#toLocalTime()">https://developer.android.com/reference/java/time/OffsetDateTime.html#toLocalTime()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LocalTime ToLocalTime()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.LocalTime.html">LocalTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.LocalTime.html">LocalTime</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_ToOffsetTime_" data-uid="Java.Time.OffsetDateTime.ToOffsetTime*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_ToOffsetTime" data-uid="Java.Time.OffsetDateTime.ToOffsetTime">
+  ToOffsetTime()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L627"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#toOffsetTime()">https://developer.android.com/reference/java/time/OffsetDateTime.html#toOffsetTime()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OffsetTime ToOffsetTime()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.OffsetTime.html">OffsetTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.OffsetTime.html">OffsetTime</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_ToZonedDateTime_" data-uid="Java.Time.OffsetDateTime.ToZonedDateTime*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_ToZonedDateTime" data-uid="Java.Time.OffsetDateTime.ToZonedDateTime">
+  ToZonedDateTime()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L728"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#toZonedDateTime()">https://developer.android.com/reference/java/time/OffsetDateTime.html#toZonedDateTime()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ZonedDateTime ToZonedDateTime()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.ZonedDateTime.html">ZonedDateTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.ZonedDateTime.html">ZonedDateTime</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_TruncatedTo_" data-uid="Java.Time.OffsetDateTime.TruncatedTo*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_TruncatedTo_Java_Time_Temporal_TemporalUnit_" data-uid="Java.Time.OffsetDateTime.TruncatedTo(Java.Time.Temporal.TemporalUnit)">
+  TruncatedTo(TemporalUnit)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L529"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#truncatedTo(java.time.temporal.TemporalUnit)">https://developer.android.com/reference/java/time/OffsetDateTime.html#truncatedTo(java.time.temporal.TemporalUnit)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OffsetDateTime TruncatedTo(TemporalUnit arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.Temporal.TemporalUnit.html">TemporalUnit</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Temporal.TemporalUnit.html">TemporalUnit</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_Until_" data-uid="Java.Time.OffsetDateTime.Until*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_Until_Java_Time_Temporal_Temporal_Java_Time_Temporal_TemporalUnit_" data-uid="Java.Time.OffsetDateTime.Until(Java.Time.Temporal.Temporal,Java.Time.Temporal.TemporalUnit)">
+  Until(Temporal, TemporalUnit)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L763"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#until(java.time.temporal.Temporal,java.time.temporal.TemporalUnit)">https://developer.android.com/reference/java/time/OffsetDateTime.html#until(java.time.temporal.Temporal,java.time.temporal.TemporalUnit)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long Until(Temporal arg0, TemporalUnit arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.Temporal.Temporal.html">Temporal</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Temporal.Temporal.html">Temporal</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Time.Temporal.TemporalUnit.html">TemporalUnit</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Temporal.TemporalUnit.html">TemporalUnit</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_With_" data-uid="Java.Time.OffsetDateTime.With*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_With_Java_Time_Temporal_TemporalAdjuster_" data-uid="Java.Time.OffsetDateTime.With(Java.Time.Temporal.TemporalAdjuster)">
+  With(TemporalAdjuster)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L683"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#with(java.time.temporal.TemporalAdjuster)">https://developer.android.com/reference/java/time/OffsetDateTime.html#with(java.time.temporal.TemporalAdjuster)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Temporal With(TemporalAdjuster arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.Temporal.TemporalAdjuster.html">TemporalAdjuster</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Temporal.TemporalAdjuster.html">TemporalAdjuster</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.Temporal.Temporal.html">Temporal</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Temporal.Temporal.html">Temporal</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_With_" data-uid="Java.Time.OffsetDateTime.With*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_With_Java_Time_Temporal_TemporalField_System_Int64_" data-uid="Java.Time.OffsetDateTime.With(Java.Time.Temporal.TemporalField,System.Int64)">
+  With(TemporalField, long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L693"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#with(java.time.temporal.TemporalField,long)">https://developer.android.com/reference/java/time/OffsetDateTime.html#with(java.time.temporal.TemporalField,long)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Temporal With(TemporalField arg0, long arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.Temporal.TemporalField.html">TemporalField</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Temporal.TemporalField.html">TemporalField</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.Temporal.Temporal.html">Temporal</a></dt>
+    <dd><p><a class="xref" href="Java.Time.Temporal.Temporal.html">Temporal</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_WithDayOfMonth_" data-uid="Java.Time.OffsetDateTime.WithDayOfMonth*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_WithDayOfMonth_System_Int32_" data-uid="Java.Time.OffsetDateTime.WithDayOfMonth(System.Int32)">
+  WithDayOfMonth(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L538"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#withDayOfMonth(int)">https://developer.android.com/reference/java/time/OffsetDateTime.html#withDayOfMonth(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OffsetDateTime WithDayOfMonth(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_WithDayOfYear_" data-uid="Java.Time.OffsetDateTime.WithDayOfYear*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_WithDayOfYear_System_Int32_" data-uid="Java.Time.OffsetDateTime.WithDayOfYear(System.Int32)">
+  WithDayOfYear(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L547"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#withDayOfYear(int)">https://developer.android.com/reference/java/time/OffsetDateTime.html#withDayOfYear(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OffsetDateTime WithDayOfYear(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_WithHour_" data-uid="Java.Time.OffsetDateTime.WithHour*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_WithHour_System_Int32_" data-uid="Java.Time.OffsetDateTime.WithHour(System.Int32)">
+  WithHour(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L556"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#withHour(int)">https://developer.android.com/reference/java/time/OffsetDateTime.html#withHour(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OffsetDateTime WithHour(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_WithMinute_" data-uid="Java.Time.OffsetDateTime.WithMinute*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_WithMinute_System_Int32_" data-uid="Java.Time.OffsetDateTime.WithMinute(System.Int32)">
+  WithMinute(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L565"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#withMinute(int)">https://developer.android.com/reference/java/time/OffsetDateTime.html#withMinute(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OffsetDateTime WithMinute(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_WithMonth_" data-uid="Java.Time.OffsetDateTime.WithMonth*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_WithMonth_System_Int32_" data-uid="Java.Time.OffsetDateTime.WithMonth(System.Int32)">
+  WithMonth(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L574"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#withMonth(int)">https://developer.android.com/reference/java/time/OffsetDateTime.html#withMonth(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OffsetDateTime WithMonth(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_WithNano_" data-uid="Java.Time.OffsetDateTime.WithNano*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_WithNano_System_Int32_" data-uid="Java.Time.OffsetDateTime.WithNano(System.Int32)">
+  WithNano(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L583"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#withNano(int)">https://developer.android.com/reference/java/time/OffsetDateTime.html#withNano(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OffsetDateTime WithNano(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_WithOffsetSameInstant_" data-uid="Java.Time.OffsetDateTime.WithOffsetSameInstant*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_WithOffsetSameInstant_Java_Time_ZoneOffset_" data-uid="Java.Time.OffsetDateTime.WithOffsetSameInstant(Java.Time.ZoneOffset)">
+  WithOffsetSameInstant(ZoneOffset)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L592"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#withOffsetSameInstant(java.time.ZoneOffset)">https://developer.android.com/reference/java/time/OffsetDateTime.html#withOffsetSameInstant(java.time.ZoneOffset)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OffsetDateTime WithOffsetSameInstant(ZoneOffset arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.ZoneOffset.html">ZoneOffset</a></dt>
+    <dd><p><a class="xref" href="Java.Time.ZoneOffset.html">ZoneOffset</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_WithOffsetSameLocal_" data-uid="Java.Time.OffsetDateTime.WithOffsetSameLocal*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_WithOffsetSameLocal_Java_Time_ZoneOffset_" data-uid="Java.Time.OffsetDateTime.WithOffsetSameLocal(Java.Time.ZoneOffset)">
+  WithOffsetSameLocal(ZoneOffset)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L601"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#withOffsetSameLocal(java.time.ZoneOffset)">https://developer.android.com/reference/java/time/OffsetDateTime.html#withOffsetSameLocal(java.time.ZoneOffset)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OffsetDateTime WithOffsetSameLocal(ZoneOffset arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Time.ZoneOffset.html">ZoneOffset</a></dt>
+    <dd><p><a class="xref" href="Java.Time.ZoneOffset.html">ZoneOffset</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_WithSecond_" data-uid="Java.Time.OffsetDateTime.WithSecond*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_WithSecond_System_Int32_" data-uid="Java.Time.OffsetDateTime.WithSecond(System.Int32)">
+  WithSecond(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L610"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#withSecond(int)">https://developer.android.com/reference/java/time/OffsetDateTime.html#withSecond(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OffsetDateTime WithSecond(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_WithYear_" data-uid="Java.Time.OffsetDateTime.WithYear*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_WithYear_System_Int32_" data-uid="Java.Time.OffsetDateTime.WithYear(System.Int32)">
+  WithYear(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L619"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/time/OffsetDateTime.html#withYear(int)">https://developer.android.com/reference/java/time/OffsetDateTime.html#withYear(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OffsetDateTime WithYear(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></dt>
+    <dd><p><a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="Java_Time_OffsetDateTime_op_Implicit_" data-uid="Java.Time.OffsetDateTime.op_Implicit*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_op_Implicit_Java_Time_OffsetDateTime__Java_Io_Serializable" data-uid="Java.Time.OffsetDateTime.op_Implicit(Java.Time.OffsetDateTime)~Java.Io.Serializable">
+  implicit operator Serializable(OffsetDateTime)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a> to <a class="xref" href="Java.Io.Serializable.html">Serializable</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Serializable(OffsetDateTime t)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>t</code> <a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.Serializable.html">Serializable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_op_Implicit_" data-uid="Java.Time.OffsetDateTime.op_Implicit*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_op_Implicit_Java_Time_OffsetDateTime__Java_Lang_Comparable" data-uid="Java.Time.OffsetDateTime.op_Implicit(Java.Time.OffsetDateTime)~Java.Lang.Comparable">
+  implicit operator Comparable(OffsetDateTime)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a> to <a class="xref" href="Java.Lang.Comparable.html">Comparable</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Comparable(OffsetDateTime t)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>t</code> <a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.Comparable.html">Comparable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_op_Implicit_" data-uid="Java.Time.OffsetDateTime.op_Implicit*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_op_Implicit_Java_Time_OffsetDateTime__Java_Time_Temporal_Temporal" data-uid="Java.Time.OffsetDateTime.op_Implicit(Java.Time.OffsetDateTime)~Java.Time.Temporal.Temporal">
+  implicit operator Temporal(OffsetDateTime)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a> to <a class="xref" href="Java.Time.Temporal.Temporal.html">Temporal</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Temporal(OffsetDateTime t)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>t</code> <a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.Temporal.Temporal.html">Temporal</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Time_OffsetDateTime_op_Implicit_" data-uid="Java.Time.OffsetDateTime.op_Implicit*"></a>
+
+  <h3 id="Java_Time_OffsetDateTime_op_Implicit_Java_Time_OffsetDateTime__Java_Time_Temporal_TemporalAdjuster" data-uid="Java.Time.OffsetDateTime.op_Implicit(Java.Time.OffsetDateTime)~Java.Time.Temporal.TemporalAdjuster">
+  implicit operator TemporalAdjuster(OffsetDateTime)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a> to <a class="xref" href="Java.Time.Temporal.TemporalAdjuster.html">TemporalAdjuster</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator TemporalAdjuster(OffsetDateTime t)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>t</code> <a class="xref" href="Java.Time.OffsetDateTime.html">OffsetDateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Time.Temporal.TemporalAdjuster.html">TemporalAdjuster</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Time/OffsetDateTime.cs/#L29" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

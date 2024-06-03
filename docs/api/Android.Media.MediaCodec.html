@@ -1,0 +1,3263 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class MediaCodec | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MediaCodec | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/media/MediaCodec.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_Media_MediaCodec.md&amp;value=---%0Auid%3A%20Android.Media.MediaCodec%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.Media.MediaCodec">
+
+
+
+  <h1 id="Android_Media_MediaCodec" data-uid="Android.Media.MediaCodec" class="text-break">
+Class MediaCodec  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.Media.html">Media</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html">https://developer.android.com/reference/android/media/MediaCodec.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MediaCodec : JVMBridgeBase&lt;MediaCodec&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.Media.MediaCodec.html">MediaCodec</a>&gt;</div>
+      <div><span class="xref">MediaCodec</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaCodec&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaCodec&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaCodec&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaCodec&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaCodec&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaCodec&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaCodec&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaCodec&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;MediaCodec&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;MediaCodec&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;MediaCodec&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;MediaCodec&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaCodec&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaCodec&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaCodec&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaCodec&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;MediaCodec&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;MediaCodec&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;MediaCodec&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;MediaCodec&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaCodec&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaCodec&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaCodec&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaCodec&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;MediaCodec&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;MediaCodec&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;MediaCodec&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;MediaCodec&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaCodec&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaCodec&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaCodec&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaCodec&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaCodec&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaCodec&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaCodec&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaCodec&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaCodec&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaCodec&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaCodec&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaCodec&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaCodec&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaCodec&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaCodec&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;MediaCodec&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;MediaCodec&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;MediaCodec&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;MediaCodec&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;MediaCodec&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;MediaCodec&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;MediaCodec&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_Media_MediaCodec__ctor_" data-uid="Android.Media.MediaCodec.#ctor*"></a>
+
+  <h3 id="Android_Media_MediaCodec__ctor" data-uid="Android.Media.MediaCodec.#ctor">
+  MediaCodec()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AllPackageClasses.cs/#L3798"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MediaCodec()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec__ctor_" data-uid="Android.Media.MediaCodec.#ctor*"></a>
+
+  <h3 id="Android_Media_MediaCodec__ctor_System_Object___" data-uid="Android.Media.MediaCodec.#ctor(System.Object[])">
+  MediaCodec(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AllPackageClasses.cs/#L3802"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MediaCodec(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_Media_MediaCodec_BUFFER_FLAG_CODEC_CONFIG_" data-uid="Android.Media.MediaCodec.BUFFER_FLAG_CODEC_CONFIG*"></a>
+
+  <h3 id="Android_Media_MediaCodec_BUFFER_FLAG_CODEC_CONFIG" data-uid="Android.Media.MediaCodec.BUFFER_FLAG_CODEC_CONFIG">
+  BUFFER_FLAG_CODEC_CONFIG
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#BUFFER_FLAG_CODEC_CONFIG">https://developer.android.com/reference/android/media/MediaCodec.html#BUFFER_FLAG_CODEC_CONFIG</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int BUFFER_FLAG_CODEC_CONFIG { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec_BUFFER_FLAG_DECODE_ONLY_" data-uid="Android.Media.MediaCodec.BUFFER_FLAG_DECODE_ONLY*"></a>
+
+  <h3 id="Android_Media_MediaCodec_BUFFER_FLAG_DECODE_ONLY" data-uid="Android.Media.MediaCodec.BUFFER_FLAG_DECODE_ONLY">
+  BUFFER_FLAG_DECODE_ONLY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#BUFFER_FLAG_DECODE_ONLY">https://developer.android.com/reference/android/media/MediaCodec.html#BUFFER_FLAG_DECODE_ONLY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int BUFFER_FLAG_DECODE_ONLY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec_BUFFER_FLAG_END_OF_STREAM_" data-uid="Android.Media.MediaCodec.BUFFER_FLAG_END_OF_STREAM*"></a>
+
+  <h3 id="Android_Media_MediaCodec_BUFFER_FLAG_END_OF_STREAM" data-uid="Android.Media.MediaCodec.BUFFER_FLAG_END_OF_STREAM">
+  BUFFER_FLAG_END_OF_STREAM
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#BUFFER_FLAG_END_OF_STREAM">https://developer.android.com/reference/android/media/MediaCodec.html#BUFFER_FLAG_END_OF_STREAM</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int BUFFER_FLAG_END_OF_STREAM { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec_BUFFER_FLAG_KEY_FRAME_" data-uid="Android.Media.MediaCodec.BUFFER_FLAG_KEY_FRAME*"></a>
+
+  <h3 id="Android_Media_MediaCodec_BUFFER_FLAG_KEY_FRAME" data-uid="Android.Media.MediaCodec.BUFFER_FLAG_KEY_FRAME">
+  BUFFER_FLAG_KEY_FRAME
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#BUFFER_FLAG_KEY_FRAME">https://developer.android.com/reference/android/media/MediaCodec.html#BUFFER_FLAG_KEY_FRAME</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int BUFFER_FLAG_KEY_FRAME { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec_BUFFER_FLAG_PARTIAL_FRAME_" data-uid="Android.Media.MediaCodec.BUFFER_FLAG_PARTIAL_FRAME*"></a>
+
+  <h3 id="Android_Media_MediaCodec_BUFFER_FLAG_PARTIAL_FRAME" data-uid="Android.Media.MediaCodec.BUFFER_FLAG_PARTIAL_FRAME">
+  BUFFER_FLAG_PARTIAL_FRAME
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#BUFFER_FLAG_PARTIAL_FRAME">https://developer.android.com/reference/android/media/MediaCodec.html#BUFFER_FLAG_PARTIAL_FRAME</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int BUFFER_FLAG_PARTIAL_FRAME { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec_BUFFER_FLAG_SYNC_FRAME_" data-uid="Android.Media.MediaCodec.BUFFER_FLAG_SYNC_FRAME*"></a>
+
+  <h3 id="Android_Media_MediaCodec_BUFFER_FLAG_SYNC_FRAME" data-uid="Android.Media.MediaCodec.BUFFER_FLAG_SYNC_FRAME">
+  BUFFER_FLAG_SYNC_FRAME
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#BUFFER_FLAG_SYNC_FRAME">https://developer.android.com/reference/android/media/MediaCodec.html#BUFFER_FLAG_SYNC_FRAME</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static int BUFFER_FLAG_SYNC_FRAME { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec_BridgeClassName_" data-uid="Android.Media.MediaCodec.BridgeClassName*"></a>
+
+  <h3 id="Android_Media_MediaCodec_BridgeClassName" data-uid="Android.Media.MediaCodec.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AllPackageClasses.cs/#L3809"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec_CONFIGURE_FLAG_ENCODE_" data-uid="Android.Media.MediaCodec.CONFIGURE_FLAG_ENCODE*"></a>
+
+  <h3 id="Android_Media_MediaCodec_CONFIGURE_FLAG_ENCODE" data-uid="Android.Media.MediaCodec.CONFIGURE_FLAG_ENCODE">
+  CONFIGURE_FLAG_ENCODE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L80"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#CONFIGURE_FLAG_ENCODE">https://developer.android.com/reference/android/media/MediaCodec.html#CONFIGURE_FLAG_ENCODE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CONFIGURE_FLAG_ENCODE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec_CONFIGURE_FLAG_USE_BLOCK_MODEL_" data-uid="Android.Media.MediaCodec.CONFIGURE_FLAG_USE_BLOCK_MODEL*"></a>
+
+  <h3 id="Android_Media_MediaCodec_CONFIGURE_FLAG_USE_BLOCK_MODEL" data-uid="Android.Media.MediaCodec.CONFIGURE_FLAG_USE_BLOCK_MODEL">
+  CONFIGURE_FLAG_USE_BLOCK_MODEL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L86"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#CONFIGURE_FLAG_USE_BLOCK_MODEL">https://developer.android.com/reference/android/media/MediaCodec.html#CONFIGURE_FLAG_USE_BLOCK_MODEL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CONFIGURE_FLAG_USE_BLOCK_MODEL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec_CONFIGURE_FLAG_USE_CRYPTO_ASYNC_" data-uid="Android.Media.MediaCodec.CONFIGURE_FLAG_USE_CRYPTO_ASYNC*"></a>
+
+  <h3 id="Android_Media_MediaCodec_CONFIGURE_FLAG_USE_CRYPTO_ASYNC" data-uid="Android.Media.MediaCodec.CONFIGURE_FLAG_USE_CRYPTO_ASYNC">
+  CONFIGURE_FLAG_USE_CRYPTO_ASYNC
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L92"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#CONFIGURE_FLAG_USE_CRYPTO_ASYNC">https://developer.android.com/reference/android/media/MediaCodec.html#CONFIGURE_FLAG_USE_CRYPTO_ASYNC</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CONFIGURE_FLAG_USE_CRYPTO_ASYNC { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec_CRYPTO_MODE_AES_CBC_" data-uid="Android.Media.MediaCodec.CRYPTO_MODE_AES_CBC*"></a>
+
+  <h3 id="Android_Media_MediaCodec_CRYPTO_MODE_AES_CBC" data-uid="Android.Media.MediaCodec.CRYPTO_MODE_AES_CBC">
+  CRYPTO_MODE_AES_CBC
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L98"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#CRYPTO_MODE_AES_CBC">https://developer.android.com/reference/android/media/MediaCodec.html#CRYPTO_MODE_AES_CBC</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CRYPTO_MODE_AES_CBC { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec_CRYPTO_MODE_AES_CTR_" data-uid="Android.Media.MediaCodec.CRYPTO_MODE_AES_CTR*"></a>
+
+  <h3 id="Android_Media_MediaCodec_CRYPTO_MODE_AES_CTR" data-uid="Android.Media.MediaCodec.CRYPTO_MODE_AES_CTR">
+  CRYPTO_MODE_AES_CTR
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L104"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#CRYPTO_MODE_AES_CTR">https://developer.android.com/reference/android/media/MediaCodec.html#CRYPTO_MODE_AES_CTR</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CRYPTO_MODE_AES_CTR { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec_CRYPTO_MODE_UNENCRYPTED_" data-uid="Android.Media.MediaCodec.CRYPTO_MODE_UNENCRYPTED*"></a>
+
+  <h3 id="Android_Media_MediaCodec_CRYPTO_MODE_UNENCRYPTED" data-uid="Android.Media.MediaCodec.CRYPTO_MODE_UNENCRYPTED">
+  CRYPTO_MODE_UNENCRYPTED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L110"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#CRYPTO_MODE_UNENCRYPTED">https://developer.android.com/reference/android/media/MediaCodec.html#CRYPTO_MODE_UNENCRYPTED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CRYPTO_MODE_UNENCRYPTED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec_INFO_OUTPUT_BUFFERS_CHANGED_" data-uid="Android.Media.MediaCodec.INFO_OUTPUT_BUFFERS_CHANGED*"></a>
+
+  <h3 id="Android_Media_MediaCodec_INFO_OUTPUT_BUFFERS_CHANGED" data-uid="Android.Media.MediaCodec.INFO_OUTPUT_BUFFERS_CHANGED">
+  INFO_OUTPUT_BUFFERS_CHANGED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L116"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#INFO_OUTPUT_BUFFERS_CHANGED">https://developer.android.com/reference/android/media/MediaCodec.html#INFO_OUTPUT_BUFFERS_CHANGED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static int INFO_OUTPUT_BUFFERS_CHANGED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec_INFO_OUTPUT_FORMAT_CHANGED_" data-uid="Android.Media.MediaCodec.INFO_OUTPUT_FORMAT_CHANGED*"></a>
+
+  <h3 id="Android_Media_MediaCodec_INFO_OUTPUT_FORMAT_CHANGED" data-uid="Android.Media.MediaCodec.INFO_OUTPUT_FORMAT_CHANGED">
+  INFO_OUTPUT_FORMAT_CHANGED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L123"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#INFO_OUTPUT_FORMAT_CHANGED">https://developer.android.com/reference/android/media/MediaCodec.html#INFO_OUTPUT_FORMAT_CHANGED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int INFO_OUTPUT_FORMAT_CHANGED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec_INFO_TRY_AGAIN_LATER_" data-uid="Android.Media.MediaCodec.INFO_TRY_AGAIN_LATER*"></a>
+
+  <h3 id="Android_Media_MediaCodec_INFO_TRY_AGAIN_LATER" data-uid="Android.Media.MediaCodec.INFO_TRY_AGAIN_LATER">
+  INFO_TRY_AGAIN_LATER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L129"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#INFO_TRY_AGAIN_LATER">https://developer.android.com/reference/android/media/MediaCodec.html#INFO_TRY_AGAIN_LATER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int INFO_TRY_AGAIN_LATER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec_IsBridgeAbstract_" data-uid="Android.Media.MediaCodec.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_Media_MediaCodec_IsBridgeAbstract" data-uid="Android.Media.MediaCodec.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AllPackageClasses.cs/#L3813"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec_IsBridgeCloseable_" data-uid="Android.Media.MediaCodec.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_Media_MediaCodec_IsBridgeCloseable" data-uid="Android.Media.MediaCodec.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AllPackageClasses.cs/#L3817"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec_IsBridgeInterface_" data-uid="Android.Media.MediaCodec.IsBridgeInterface*"></a>
+
+  <h3 id="Android_Media_MediaCodec_IsBridgeInterface" data-uid="Android.Media.MediaCodec.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AllPackageClasses.cs/#L3821"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec_IsBridgeStatic_" data-uid="Android.Media.MediaCodec.IsBridgeStatic*"></a>
+
+  <h3 id="Android_Media_MediaCodec_IsBridgeStatic" data-uid="Android.Media.MediaCodec.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AllPackageClasses.cs/#L3825"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec_PARAMETER_KEY_HDR10_PLUS_INFO_" data-uid="Android.Media.MediaCodec.PARAMETER_KEY_HDR10_PLUS_INFO*"></a>
+
+  <h3 id="Android_Media_MediaCodec_PARAMETER_KEY_HDR10_PLUS_INFO" data-uid="Android.Media.MediaCodec.PARAMETER_KEY_HDR10_PLUS_INFO">
+  PARAMETER_KEY_HDR10_PLUS_INFO
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L147"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#PARAMETER_KEY_HDR10_PLUS_INFO">https://developer.android.com/reference/android/media/MediaCodec.html#PARAMETER_KEY_HDR10_PLUS_INFO</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String PARAMETER_KEY_HDR10_PLUS_INFO { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec_PARAMETER_KEY_LOW_LATENCY_" data-uid="Android.Media.MediaCodec.PARAMETER_KEY_LOW_LATENCY*"></a>
+
+  <h3 id="Android_Media_MediaCodec_PARAMETER_KEY_LOW_LATENCY" data-uid="Android.Media.MediaCodec.PARAMETER_KEY_LOW_LATENCY">
+  PARAMETER_KEY_LOW_LATENCY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L153"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#PARAMETER_KEY_LOW_LATENCY">https://developer.android.com/reference/android/media/MediaCodec.html#PARAMETER_KEY_LOW_LATENCY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String PARAMETER_KEY_LOW_LATENCY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec_PARAMETER_KEY_OFFSET_TIME_" data-uid="Android.Media.MediaCodec.PARAMETER_KEY_OFFSET_TIME*"></a>
+
+  <h3 id="Android_Media_MediaCodec_PARAMETER_KEY_OFFSET_TIME" data-uid="Android.Media.MediaCodec.PARAMETER_KEY_OFFSET_TIME">
+  PARAMETER_KEY_OFFSET_TIME
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L159"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#PARAMETER_KEY_OFFSET_TIME">https://developer.android.com/reference/android/media/MediaCodec.html#PARAMETER_KEY_OFFSET_TIME</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String PARAMETER_KEY_OFFSET_TIME { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec_PARAMETER_KEY_REQUEST_SYNC_FRAME_" data-uid="Android.Media.MediaCodec.PARAMETER_KEY_REQUEST_SYNC_FRAME*"></a>
+
+  <h3 id="Android_Media_MediaCodec_PARAMETER_KEY_REQUEST_SYNC_FRAME" data-uid="Android.Media.MediaCodec.PARAMETER_KEY_REQUEST_SYNC_FRAME">
+  PARAMETER_KEY_REQUEST_SYNC_FRAME
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L165"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#PARAMETER_KEY_REQUEST_SYNC_FRAME">https://developer.android.com/reference/android/media/MediaCodec.html#PARAMETER_KEY_REQUEST_SYNC_FRAME</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String PARAMETER_KEY_REQUEST_SYNC_FRAME { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec_PARAMETER_KEY_SUSPEND_" data-uid="Android.Media.MediaCodec.PARAMETER_KEY_SUSPEND*"></a>
+
+  <h3 id="Android_Media_MediaCodec_PARAMETER_KEY_SUSPEND" data-uid="Android.Media.MediaCodec.PARAMETER_KEY_SUSPEND">
+  PARAMETER_KEY_SUSPEND
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L171"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#PARAMETER_KEY_SUSPEND">https://developer.android.com/reference/android/media/MediaCodec.html#PARAMETER_KEY_SUSPEND</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String PARAMETER_KEY_SUSPEND { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec_PARAMETER_KEY_SUSPEND_TIME_" data-uid="Android.Media.MediaCodec.PARAMETER_KEY_SUSPEND_TIME*"></a>
+
+  <h3 id="Android_Media_MediaCodec_PARAMETER_KEY_SUSPEND_TIME" data-uid="Android.Media.MediaCodec.PARAMETER_KEY_SUSPEND_TIME">
+  PARAMETER_KEY_SUSPEND_TIME
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L177"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#PARAMETER_KEY_SUSPEND_TIME">https://developer.android.com/reference/android/media/MediaCodec.html#PARAMETER_KEY_SUSPEND_TIME</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String PARAMETER_KEY_SUSPEND_TIME { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec_PARAMETER_KEY_TUNNEL_PEEK_" data-uid="Android.Media.MediaCodec.PARAMETER_KEY_TUNNEL_PEEK*"></a>
+
+  <h3 id="Android_Media_MediaCodec_PARAMETER_KEY_TUNNEL_PEEK" data-uid="Android.Media.MediaCodec.PARAMETER_KEY_TUNNEL_PEEK">
+  PARAMETER_KEY_TUNNEL_PEEK
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L183"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#PARAMETER_KEY_TUNNEL_PEEK">https://developer.android.com/reference/android/media/MediaCodec.html#PARAMETER_KEY_TUNNEL_PEEK</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String PARAMETER_KEY_TUNNEL_PEEK { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec_PARAMETER_KEY_VIDEO_BITRATE_" data-uid="Android.Media.MediaCodec.PARAMETER_KEY_VIDEO_BITRATE*"></a>
+
+  <h3 id="Android_Media_MediaCodec_PARAMETER_KEY_VIDEO_BITRATE" data-uid="Android.Media.MediaCodec.PARAMETER_KEY_VIDEO_BITRATE">
+  PARAMETER_KEY_VIDEO_BITRATE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L189"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#PARAMETER_KEY_VIDEO_BITRATE">https://developer.android.com/reference/android/media/MediaCodec.html#PARAMETER_KEY_VIDEO_BITRATE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String PARAMETER_KEY_VIDEO_BITRATE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec_VIDEO_SCALING_MODE_SCALE_TO_FIT_" data-uid="Android.Media.MediaCodec.VIDEO_SCALING_MODE_SCALE_TO_FIT*"></a>
+
+  <h3 id="Android_Media_MediaCodec_VIDEO_SCALING_MODE_SCALE_TO_FIT" data-uid="Android.Media.MediaCodec.VIDEO_SCALING_MODE_SCALE_TO_FIT">
+  VIDEO_SCALING_MODE_SCALE_TO_FIT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L135"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#VIDEO_SCALING_MODE_SCALE_TO_FIT">https://developer.android.com/reference/android/media/MediaCodec.html#VIDEO_SCALING_MODE_SCALE_TO_FIT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int VIDEO_SCALING_MODE_SCALE_TO_FIT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec_VIDEO_SCALING_MODE_SCALE_TO_FIT_WITH_CROPPING_" data-uid="Android.Media.MediaCodec.VIDEO_SCALING_MODE_SCALE_TO_FIT_WITH_CROPPING*"></a>
+
+  <h3 id="Android_Media_MediaCodec_VIDEO_SCALING_MODE_SCALE_TO_FIT_WITH_CROPPING" data-uid="Android.Media.MediaCodec.VIDEO_SCALING_MODE_SCALE_TO_FIT_WITH_CROPPING">
+  VIDEO_SCALING_MODE_SCALE_TO_FIT_WITH_CROPPING
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L141"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#VIDEO_SCALING_MODE_SCALE_TO_FIT_WITH_CROPPING">https://developer.android.com/reference/android/media/MediaCodec.html#VIDEO_SCALING_MODE_SCALE_TO_FIT_WITH_CROPPING</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int VIDEO_SCALING_MODE_SCALE_TO_FIT_WITH_CROPPING { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_Media_MediaCodec_Configure_" data-uid="Android.Media.MediaCodec.Configure*"></a>
+
+  <h3 id="Android_Media_MediaCodec_Configure_Android_Media_MediaFormat_Android_View_Surface_Android_Media_MediaCrypto_System_Int32_" data-uid="Android.Media.MediaCodec.Configure(Android.Media.MediaFormat,Android.View.Surface,Android.Media.MediaCrypto,System.Int32)">
+  Configure(MediaFormat, Surface, MediaCrypto, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L442"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#configure(android.media.MediaFormat,android.view.Surface,android.media.MediaCrypto,int)">https://developer.android.com/reference/android/media/MediaCodec.html#configure(android.media.MediaFormat,android.view.Surface,android.media.MediaCrypto,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Configure(MediaFormat arg0, Surface arg1, MediaCrypto arg2, int arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Media.MediaFormat.html">MediaFormat</a></dt>
+    <dd><p><a class="xref" href="Android.Media.MediaFormat.html">MediaFormat</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.View.Surface.html">Surface</a></dt>
+    <dd><p><a class="xref" href="Android.View.Surface.html">Surface</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Media.MediaCrypto.html">MediaCrypto</a></dt>
+    <dd><p><a class="xref" href="Android.Media.MediaCrypto.html">MediaCrypto</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec_Configure_" data-uid="Android.Media.MediaCodec.Configure*"></a>
+
+  <h3 id="Android_Media_MediaCodec_Configure_Android_Media_MediaFormat_Android_View_Surface_System_Int32_Android_Media_MediaDescrambler_" data-uid="Android.Media.MediaCodec.Configure(Android.Media.MediaFormat,Android.View.Surface,System.Int32,Android.Media.MediaDescrambler)">
+  Configure(MediaFormat, Surface, int, MediaDescrambler)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L453"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#configure(android.media.MediaFormat,android.view.Surface,int,android.media.MediaDescrambler)">https://developer.android.com/reference/android/media/MediaCodec.html#configure(android.media.MediaFormat,android.view.Surface,int,android.media.MediaDescrambler)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Configure(MediaFormat arg0, Surface arg1, int arg2, MediaDescrambler arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Media.MediaFormat.html">MediaFormat</a></dt>
+    <dd><p><a class="xref" href="Android.Media.MediaFormat.html">MediaFormat</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.View.Surface.html">Surface</a></dt>
+    <dd><p><a class="xref" href="Android.View.Surface.html">Surface</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Android.Media.MediaDescrambler.html">MediaDescrambler</a></dt>
+    <dd><p><a class="xref" href="Android.Media.MediaDescrambler.html">MediaDescrambler</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec_CreateByCodecName_" data-uid="Android.Media.MediaCodec.CreateByCodecName*"></a>
+
+  <h3 id="Android_Media_MediaCodec_CreateByCodecName_Java_Lang_String_" data-uid="Android.Media.MediaCodec.CreateByCodecName(Java.Lang.String)">
+  CreateByCodecName(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L211"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#createByCodecName(java.lang.String)">https://developer.android.com/reference/android/media/MediaCodec.html#createByCodecName(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MediaCodec CreateByCodecName(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Media.MediaCodec.html">MediaCodec</a></dt>
+    <dd><p><a class="xref" href="Android.Media.MediaCodec.html">MediaCodec</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.IOException.html">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Media_MediaCodec_CreateDecoderByType_" data-uid="Android.Media.MediaCodec.CreateDecoderByType*"></a>
+
+  <h3 id="Android_Media_MediaCodec_CreateDecoderByType_Java_Lang_String_" data-uid="Android.Media.MediaCodec.CreateDecoderByType(Java.Lang.String)">
+  CreateDecoderByType(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L221"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#createDecoderByType(java.lang.String)">https://developer.android.com/reference/android/media/MediaCodec.html#createDecoderByType(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MediaCodec CreateDecoderByType(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Media.MediaCodec.html">MediaCodec</a></dt>
+    <dd><p><a class="xref" href="Android.Media.MediaCodec.html">MediaCodec</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.IOException.html">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Media_MediaCodec_CreateEncoderByType_" data-uid="Android.Media.MediaCodec.CreateEncoderByType*"></a>
+
+  <h3 id="Android_Media_MediaCodec_CreateEncoderByType_Java_Lang_String_" data-uid="Android.Media.MediaCodec.CreateEncoderByType(Java.Lang.String)">
+  CreateEncoderByType(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L231"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#createEncoderByType(java.lang.String)">https://developer.android.com/reference/android/media/MediaCodec.html#createEncoderByType(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MediaCodec CreateEncoderByType(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Media.MediaCodec.html">MediaCodec</a></dt>
+    <dd><p><a class="xref" href="Android.Media.MediaCodec.html">MediaCodec</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.IOException.html">IOException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Media_MediaCodec_CreateInputSurface_" data-uid="Android.Media.MediaCodec.CreateInputSurface*"></a>
+
+  <h3 id="Android_Media_MediaCodec_CreateInputSurface" data-uid="Android.Media.MediaCodec.CreateInputSurface">
+  CreateInputSurface()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L408"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#createInputSurface()">https://developer.android.com/reference/android/media/MediaCodec.html#createInputSurface()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Surface CreateInputSurface()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.View.Surface.html">Surface</a></dt>
+    <dd><p><a class="xref" href="Android.View.Surface.html">Surface</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec_CreatePersistentInputSurface_" data-uid="Android.Media.MediaCodec.CreatePersistentInputSurface*"></a>
+
+  <h3 id="Android_Media_MediaCodec_CreatePersistentInputSurface" data-uid="Android.Media.MediaCodec.CreatePersistentInputSurface">
+  CreatePersistentInputSurface()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L239"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#createPersistentInputSurface()">https://developer.android.com/reference/android/media/MediaCodec.html#createPersistentInputSurface()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Surface CreatePersistentInputSurface()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.View.Surface.html">Surface</a></dt>
+    <dd><p><a class="xref" href="Android.View.Surface.html">Surface</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec_DequeueInputBuffer_" data-uid="Android.Media.MediaCodec.DequeueInputBuffer*"></a>
+
+  <h3 id="Android_Media_MediaCodec_DequeueInputBuffer_System_Int64_" data-uid="Android.Media.MediaCodec.DequeueInputBuffer(System.Int64)">
+  DequeueInputBuffer(long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L338"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#dequeueInputBuffer(long)">https://developer.android.com/reference/android/media/MediaCodec.html#dequeueInputBuffer(long)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int DequeueInputBuffer(long arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec_DequeueOutputBuffer_" data-uid="Android.Media.MediaCodec.DequeueOutputBuffer*"></a>
+
+  <h3 id="Android_Media_MediaCodec_DequeueOutputBuffer_Android_Media_MediaCodec_BufferInfo_System_Int64_" data-uid="Android.Media.MediaCodec.DequeueOutputBuffer(Android.Media.MediaCodec.BufferInfo,System.Int64)">
+  DequeueOutputBuffer(BufferInfo, long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L348"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#dequeueOutputBuffer(android.media.MediaCodec.BufferInfo,long)">https://developer.android.com/reference/android/media/MediaCodec.html#dequeueOutputBuffer(android.media.MediaCodec.BufferInfo,long)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int DequeueOutputBuffer(MediaCodec.BufferInfo arg0, long arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Media.MediaCodec.html">MediaCodec</a>.<a class="xref" href="Android.Media.MediaCodec.BufferInfo.html">BufferInfo</a></dt>
+    <dd><p><a class="xref" href="Android.Media.MediaCodec.BufferInfo.html">MediaCodec.BufferInfo</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec_Flush_" data-uid="Android.Media.MediaCodec.Flush*"></a>
+
+  <h3 id="Android_Media_MediaCodec_Flush" data-uid="Android.Media.MediaCodec.Flush">
+  Flush()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L460"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#flush()">https://developer.android.com/reference/android/media/MediaCodec.html#flush()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Flush()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec_GetCanonicalName_" data-uid="Android.Media.MediaCodec.GetCanonicalName*"></a>
+
+  <h3 id="Android_Media_MediaCodec_GetCanonicalName" data-uid="Android.Media.MediaCodec.GetCanonicalName">
+  GetCanonicalName()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L416"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#getCanonicalName()">https://developer.android.com/reference/android/media/MediaCodec.html#getCanonicalName()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetCanonicalName()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec_GetCodecInfo_" data-uid="Android.Media.MediaCodec.GetCodecInfo*"></a>
+
+  <h3 id="Android_Media_MediaCodec_GetCodecInfo" data-uid="Android.Media.MediaCodec.GetCodecInfo">
+  GetCodecInfo()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L296"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#getCodecInfo()">https://developer.android.com/reference/android/media/MediaCodec.html#getCodecInfo()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MediaCodecInfo GetCodecInfo()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Media.MediaCodecInfo.html">MediaCodecInfo</a></dt>
+    <dd><p><a class="xref" href="Android.Media.MediaCodecInfo.html">MediaCodecInfo</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec_GetInputBuffer_" data-uid="Android.Media.MediaCodec.GetInputBuffer*"></a>
+
+  <h3 id="Android_Media_MediaCodec_GetInputBuffer_System_Int32_" data-uid="Android.Media.MediaCodec.GetInputBuffer(System.Int32)">
+  GetInputBuffer(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L365"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#getInputBuffer(int)">https://developer.android.com/reference/android/media/MediaCodec.html#getInputBuffer(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ByteBuffer GetInputBuffer(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Nio.ByteBuffer.html">ByteBuffer</a></dt>
+    <dd><p><a class="xref" href="Java.Nio.ByteBuffer.html">ByteBuffer</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec_GetInputBuffers_" data-uid="Android.Media.MediaCodec.GetInputBuffers*"></a>
+
+  <h3 id="Android_Media_MediaCodec_GetInputBuffers" data-uid="Android.Media.MediaCodec.GetInputBuffers">
+  GetInputBuffers()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L382"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#getInputBuffers()">https://developer.android.com/reference/android/media/MediaCodec.html#getInputBuffers()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public ByteBuffer[] GetInputBuffers()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Nio.ByteBuffer.html">ByteBuffer</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Nio.ByteBuffer.html">ByteBuffer</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec_GetInputFormat_" data-uid="Android.Media.MediaCodec.GetInputFormat*"></a>
+
+  <h3 id="Android_Media_MediaCodec_GetInputFormat" data-uid="Android.Media.MediaCodec.GetInputFormat">
+  GetInputFormat()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L304"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#getInputFormat()">https://developer.android.com/reference/android/media/MediaCodec.html#getInputFormat()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MediaFormat GetInputFormat()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Media.MediaFormat.html">MediaFormat</a></dt>
+    <dd><p><a class="xref" href="Android.Media.MediaFormat.html">MediaFormat</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec_GetInputImage_" data-uid="Android.Media.MediaCodec.GetInputImage*"></a>
+
+  <h3 id="Android_Media_MediaCodec_GetInputImage_System_Int32_" data-uid="Android.Media.MediaCodec.GetInputImage(System.Int32)">
+  GetInputImage(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L252"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#getInputImage(int)">https://developer.android.com/reference/android/media/MediaCodec.html#getInputImage(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Image GetInputImage(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Media.Image.html">Image</a></dt>
+    <dd><p><a class="xref" href="Android.Media.Image.html">Image</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec_GetMetrics_" data-uid="Android.Media.MediaCodec.GetMetrics*"></a>
+
+  <h3 id="Android_Media_MediaCodec_GetMetrics" data-uid="Android.Media.MediaCodec.GetMetrics">
+  GetMetrics()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L329"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#getMetrics()">https://developer.android.com/reference/android/media/MediaCodec.html#getMetrics()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PersistableBundle GetMetrics()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Os.PersistableBundle.html">PersistableBundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.PersistableBundle.html">PersistableBundle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec_GetName_" data-uid="Android.Media.MediaCodec.GetName*"></a>
+
+  <h3 id="Android_Media_MediaCodec_GetName" data-uid="Android.Media.MediaCodec.GetName">
+  GetName()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L356"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#getName()">https://developer.android.com/reference/android/media/MediaCodec.html#getName()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetName()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec_GetOutputBuffer_" data-uid="Android.Media.MediaCodec.GetOutputBuffer*"></a>
+
+  <h3 id="Android_Media_MediaCodec_GetOutputBuffer_System_Int32_" data-uid="Android.Media.MediaCodec.GetOutputBuffer(System.Int32)">
+  GetOutputBuffer(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L374"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#getOutputBuffer(int)">https://developer.android.com/reference/android/media/MediaCodec.html#getOutputBuffer(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ByteBuffer GetOutputBuffer(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Nio.ByteBuffer.html">ByteBuffer</a></dt>
+    <dd><p><a class="xref" href="Java.Nio.ByteBuffer.html">ByteBuffer</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec_GetOutputBuffers_" data-uid="Android.Media.MediaCodec.GetOutputBuffers*"></a>
+
+  <h3 id="Android_Media_MediaCodec_GetOutputBuffers" data-uid="Android.Media.MediaCodec.GetOutputBuffers">
+  GetOutputBuffers()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L391"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#getOutputBuffers()">https://developer.android.com/reference/android/media/MediaCodec.html#getOutputBuffers()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public ByteBuffer[] GetOutputBuffers()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Nio.ByteBuffer.html">ByteBuffer</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Nio.ByteBuffer.html">ByteBuffer</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec_GetOutputFormat_" data-uid="Android.Media.MediaCodec.GetOutputFormat*"></a>
+
+  <h3 id="Android_Media_MediaCodec_GetOutputFormat" data-uid="Android.Media.MediaCodec.GetOutputFormat">
+  GetOutputFormat()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L312"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#getOutputFormat()">https://developer.android.com/reference/android/media/MediaCodec.html#getOutputFormat()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MediaFormat GetOutputFormat()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Media.MediaFormat.html">MediaFormat</a></dt>
+    <dd><p><a class="xref" href="Android.Media.MediaFormat.html">MediaFormat</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec_GetOutputFormat_" data-uid="Android.Media.MediaCodec.GetOutputFormat*"></a>
+
+  <h3 id="Android_Media_MediaCodec_GetOutputFormat_System_Int32_" data-uid="Android.Media.MediaCodec.GetOutputFormat(System.Int32)">
+  GetOutputFormat(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L321"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#getOutputFormat(int)">https://developer.android.com/reference/android/media/MediaCodec.html#getOutputFormat(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MediaFormat GetOutputFormat(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Media.MediaFormat.html">MediaFormat</a></dt>
+    <dd><p><a class="xref" href="Android.Media.MediaFormat.html">MediaFormat</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec_GetOutputFrame_" data-uid="Android.Media.MediaCodec.GetOutputFrame*"></a>
+
+  <h3 id="Android_Media_MediaCodec_GetOutputFrame_System_Int32_" data-uid="Android.Media.MediaCodec.GetOutputFrame(System.Int32)">
+  GetOutputFrame(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L270"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#getOutputFrame(int)">https://developer.android.com/reference/android/media/MediaCodec.html#getOutputFrame(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MediaCodec.OutputFrame GetOutputFrame(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Media.MediaCodec.html">MediaCodec</a>.<a class="xref" href="Android.Media.MediaCodec.OutputFrame.html">OutputFrame</a></dt>
+    <dd><p><a class="xref" href="Android.Media.MediaCodec.OutputFrame.html">MediaCodec.OutputFrame</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec_GetOutputImage_" data-uid="Android.Media.MediaCodec.GetOutputImage*"></a>
+
+  <h3 id="Android_Media_MediaCodec_GetOutputImage_System_Int32_" data-uid="Android.Media.MediaCodec.GetOutputImage(System.Int32)">
+  GetOutputImage(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L261"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#getOutputImage(int)">https://developer.android.com/reference/android/media/MediaCodec.html#getOutputImage(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Image GetOutputImage(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Media.Image.html">Image</a></dt>
+    <dd><p><a class="xref" href="Android.Media.Image.html">Image</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec_GetParameterDescriptor_" data-uid="Android.Media.MediaCodec.GetParameterDescriptor*"></a>
+
+  <h3 id="Android_Media_MediaCodec_GetParameterDescriptor_Java_Lang_String_" data-uid="Android.Media.MediaCodec.GetParameterDescriptor(Java.Lang.String)">
+  GetParameterDescriptor(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L279"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#getParameterDescriptor(java.lang.String)">https://developer.android.com/reference/android/media/MediaCodec.html#getParameterDescriptor(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MediaCodec.ParameterDescriptor GetParameterDescriptor(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Media.MediaCodec.html">MediaCodec</a>.<a class="xref" href="Android.Media.MediaCodec.ParameterDescriptor.html">ParameterDescriptor</a></dt>
+    <dd><p><a class="xref" href="Android.Media.MediaCodec.ParameterDescriptor.html">MediaCodec.ParameterDescriptor</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec_GetQueueRequest_" data-uid="Android.Media.MediaCodec.GetQueueRequest*"></a>
+
+  <h3 id="Android_Media_MediaCodec_GetQueueRequest_System_Int32_" data-uid="Android.Media.MediaCodec.GetQueueRequest(System.Int32)">
+  GetQueueRequest(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L288"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#getQueueRequest(int)">https://developer.android.com/reference/android/media/MediaCodec.html#getQueueRequest(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MediaCodec.QueueRequest GetQueueRequest(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Media.MediaCodec.html">MediaCodec</a>.<a class="xref" href="Android.Media.MediaCodec.QueueRequest.html">QueueRequest</a></dt>
+    <dd><p><a class="xref" href="Android.Media.MediaCodec.QueueRequest.html">MediaCodec.QueueRequest</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec_GetSupportedVendorParameters_" data-uid="Android.Media.MediaCodec.GetSupportedVendorParameters*"></a>
+
+  <h3 id="Android_Media_MediaCodec_GetSupportedVendorParameters" data-uid="Android.Media.MediaCodec.GetSupportedVendorParameters">
+  GetSupportedVendorParameters()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L400"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#getSupportedVendorParameters()">https://developer.android.com/reference/android/media/MediaCodec.html#getSupportedVendorParameters()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;String&gt; GetSupportedVendorParameters()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Java.Lang.String.html">String</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.List.html">List</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec_MapHardwareBuffer_" data-uid="Android.Media.MediaCodec.MapHardwareBuffer*"></a>
+
+  <h3 id="Android_Media_MediaCodec_MapHardwareBuffer_Android_Hardware_HardwareBuffer_" data-uid="Android.Media.MediaCodec.MapHardwareBuffer(Android.Hardware.HardwareBuffer)">
+  MapHardwareBuffer(HardwareBuffer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L201"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#mapHardwareBuffer(android.hardware.HardwareBuffer)">https://developer.android.com/reference/android/media/MediaCodec.html#mapHardwareBuffer(android.hardware.HardwareBuffer)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Image MapHardwareBuffer(HardwareBuffer arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Hardware.HardwareBuffer.html">HardwareBuffer</a></dt>
+    <dd><p><a class="xref" href="Android.Hardware.HardwareBuffer.html">HardwareBuffer</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Media.Image.html">Image</a></dt>
+    <dd><p><a class="xref" href="Android.Media.Image.html">Image</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec_QueueInputBuffer_" data-uid="Android.Media.MediaCodec.QueueInputBuffer*"></a>
+
+  <h3 id="Android_Media_MediaCodec_QueueInputBuffer_System_Int32_System_Int32_System_Int32_System_Int64_System_Int32_" data-uid="Android.Media.MediaCodec.QueueInputBuffer(System.Int32,System.Int32,System.Int32,System.Int64,System.Int32)">
+  QueueInputBuffer(int, int, int, long, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L473"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#queueInputBuffer(int,int,int,long,int)">https://developer.android.com/reference/android/media/MediaCodec.html#queueInputBuffer(int,int,int,long,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void QueueInputBuffer(int arg0, int arg1, int arg2, long arg3, int arg4)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+    <dt><code>arg4</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Media.MediaCodec.html">MediaCodec</a>.<a class="xref" href="Android.Media.MediaCodec.CryptoException.html">CryptoException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Media_MediaCodec_QueueSecureInputBuffer_" data-uid="Android.Media.MediaCodec.QueueSecureInputBuffer*"></a>
+
+  <h3 id="Android_Media_MediaCodec_QueueSecureInputBuffer_System_Int32_System_Int32_Android_Media_MediaCodec_CryptoInfo_System_Int64_System_Int32_" data-uid="Android.Media.MediaCodec.QueueSecureInputBuffer(System.Int32,System.Int32,Android.Media.MediaCodec.CryptoInfo,System.Int64,System.Int32)">
+  QueueSecureInputBuffer(int, int, CryptoInfo, long, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L486"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#queueSecureInputBuffer(int,int,android.media.MediaCodec.CryptoInfo,long,int)">https://developer.android.com/reference/android/media/MediaCodec.html#queueSecureInputBuffer(int,int,android.media.MediaCodec.CryptoInfo,long,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void QueueSecureInputBuffer(int arg0, int arg1, MediaCodec.CryptoInfo arg2, long arg3, int arg4)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Media.MediaCodec.html">MediaCodec</a>.<a class="xref" href="Android.Media.MediaCodec.CryptoInfo.html">CryptoInfo</a></dt>
+    <dd><p><a class="xref" href="Android.Media.MediaCodec.CryptoInfo.html">MediaCodec.CryptoInfo</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+    <dt><code>arg4</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Media.MediaCodec.html">MediaCodec</a>.<a class="xref" href="Android.Media.MediaCodec.CryptoException.html">CryptoException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Media_MediaCodec_Release_" data-uid="Android.Media.MediaCodec.Release*"></a>
+
+  <h3 id="Android_Media_MediaCodec_Release" data-uid="Android.Media.MediaCodec.Release">
+  Release()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L493"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#release()">https://developer.android.com/reference/android/media/MediaCodec.html#release()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Release()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec_ReleaseOutputBuffer_" data-uid="Android.Media.MediaCodec.ReleaseOutputBuffer*"></a>
+
+  <h3 id="Android_Media_MediaCodec_ReleaseOutputBuffer_System_Int32_System_Boolean_" data-uid="Android.Media.MediaCodec.ReleaseOutputBuffer(System.Int32,System.Boolean)">
+  ReleaseOutputBuffer(int, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L502"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#releaseOutputBuffer(int,boolean)">https://developer.android.com/reference/android/media/MediaCodec.html#releaseOutputBuffer(int,boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReleaseOutputBuffer(int arg0, bool arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec_ReleaseOutputBuffer_" data-uid="Android.Media.MediaCodec.ReleaseOutputBuffer*"></a>
+
+  <h3 id="Android_Media_MediaCodec_ReleaseOutputBuffer_System_Int32_System_Int64_" data-uid="Android.Media.MediaCodec.ReleaseOutputBuffer(System.Int32,System.Int64)">
+  ReleaseOutputBuffer(int, long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L511"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#releaseOutputBuffer(int,long)">https://developer.android.com/reference/android/media/MediaCodec.html#releaseOutputBuffer(int,long)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReleaseOutputBuffer(int arg0, long arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec_Reset_" data-uid="Android.Media.MediaCodec.Reset*"></a>
+
+  <h3 id="Android_Media_MediaCodec_Reset" data-uid="Android.Media.MediaCodec.Reset">
+  Reset()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L518"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#reset()">https://developer.android.com/reference/android/media/MediaCodec.html#reset()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Reset()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec_SetAudioPresentation_" data-uid="Android.Media.MediaCodec.SetAudioPresentation*"></a>
+
+  <h3 id="Android_Media_MediaCodec_SetAudioPresentation_Android_Media_AudioPresentation_" data-uid="Android.Media.MediaCodec.SetAudioPresentation(Android.Media.AudioPresentation)">
+  SetAudioPresentation(AudioPresentation)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L526"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#setAudioPresentation(android.media.AudioPresentation)">https://developer.android.com/reference/android/media/MediaCodec.html#setAudioPresentation(android.media.AudioPresentation)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAudioPresentation(AudioPresentation arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Media.AudioPresentation.html">AudioPresentation</a></dt>
+    <dd><p><a class="xref" href="Android.Media.AudioPresentation.html">AudioPresentation</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec_SetCallback_" data-uid="Android.Media.MediaCodec.SetCallback*"></a>
+
+  <h3 id="Android_Media_MediaCodec_SetCallback_Android_Media_MediaCodec_Callback_" data-uid="Android.Media.MediaCodec.SetCallback(Android.Media.MediaCodec.Callback)">
+  SetCallback(Callback)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L543"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#setCallback(android.media.MediaCodec.Callback)">https://developer.android.com/reference/android/media/MediaCodec.html#setCallback(android.media.MediaCodec.Callback)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCallback(MediaCodec.Callback arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Media.MediaCodec.html">MediaCodec</a>.<a class="xref" href="Android.Media.MediaCodec.Callback.html">Callback</a></dt>
+    <dd><p><a class="xref" href="Android.Media.MediaCodec.Callback.html">MediaCodec.Callback</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec_SetCallback_" data-uid="Android.Media.MediaCodec.SetCallback*"></a>
+
+  <h3 id="Android_Media_MediaCodec_SetCallback_Android_Media_MediaCodec_Callback_Android_Os_Handler_" data-uid="Android.Media.MediaCodec.SetCallback(Android.Media.MediaCodec.Callback,Android.Os.Handler)">
+  SetCallback(Callback, Handler)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L535"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#setCallback(android.media.MediaCodec.Callback,android.os.Handler)">https://developer.android.com/reference/android/media/MediaCodec.html#setCallback(android.media.MediaCodec.Callback,android.os.Handler)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCallback(MediaCodec.Callback arg0, Handler arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Media.MediaCodec.html">MediaCodec</a>.<a class="xref" href="Android.Media.MediaCodec.Callback.html">Callback</a></dt>
+    <dd><p><a class="xref" href="Android.Media.MediaCodec.Callback.html">MediaCodec.Callback</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Os.Handler.html">Handler</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Handler.html">Handler</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec_SetInputSurface_" data-uid="Android.Media.MediaCodec.SetInputSurface*"></a>
+
+  <h3 id="Android_Media_MediaCodec_SetInputSurface_Android_View_Surface_" data-uid="Android.Media.MediaCodec.SetInputSurface(Android.View.Surface)">
+  SetInputSurface(Surface)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L551"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#setInputSurface(android.view.Surface)">https://developer.android.com/reference/android/media/MediaCodec.html#setInputSurface(android.view.Surface)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetInputSurface(Surface arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.View.Surface.html">Surface</a></dt>
+    <dd><p><a class="xref" href="Android.View.Surface.html">Surface</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec_SetOnFirstTunnelFrameReadyListener_" data-uid="Android.Media.MediaCodec.SetOnFirstTunnelFrameReadyListener*"></a>
+
+  <h3 id="Android_Media_MediaCodec_SetOnFirstTunnelFrameReadyListener_Android_Os_Handler_Android_Media_MediaCodec_OnFirstTunnelFrameReadyListener_" data-uid="Android.Media.MediaCodec.SetOnFirstTunnelFrameReadyListener(Android.Os.Handler,Android.Media.MediaCodec.OnFirstTunnelFrameReadyListener)">
+  SetOnFirstTunnelFrameReadyListener(Handler, OnFirstTunnelFrameReadyListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L560"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#setOnFirstTunnelFrameReadyListener(android.os.Handler,android.media.MediaCodec.OnFirstTunnelFrameReadyListener)">https://developer.android.com/reference/android/media/MediaCodec.html#setOnFirstTunnelFrameReadyListener(android.os.Handler,android.media.MediaCodec.OnFirstTunnelFrameReadyListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetOnFirstTunnelFrameReadyListener(Handler arg0, MediaCodec.OnFirstTunnelFrameReadyListener arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Os.Handler.html">Handler</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Handler.html">Handler</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Media.MediaCodec.html">MediaCodec</a>.<a class="xref" href="Android.Media.MediaCodec.OnFirstTunnelFrameReadyListener.html">OnFirstTunnelFrameReadyListener</a></dt>
+    <dd><p><a class="xref" href="Android.Media.MediaCodec.OnFirstTunnelFrameReadyListener.html">MediaCodec.OnFirstTunnelFrameReadyListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec_SetOnFrameRenderedListener_" data-uid="Android.Media.MediaCodec.SetOnFrameRenderedListener*"></a>
+
+  <h3 id="Android_Media_MediaCodec_SetOnFrameRenderedListener_Android_Media_MediaCodec_OnFrameRenderedListener_Android_Os_Handler_" data-uid="Android.Media.MediaCodec.SetOnFrameRenderedListener(Android.Media.MediaCodec.OnFrameRenderedListener,Android.Os.Handler)">
+  SetOnFrameRenderedListener(OnFrameRenderedListener, Handler)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L569"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#setOnFrameRenderedListener(android.media.MediaCodec.OnFrameRenderedListener,android.os.Handler)">https://developer.android.com/reference/android/media/MediaCodec.html#setOnFrameRenderedListener(android.media.MediaCodec.OnFrameRenderedListener,android.os.Handler)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetOnFrameRenderedListener(MediaCodec.OnFrameRenderedListener arg0, Handler arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Media.MediaCodec.html">MediaCodec</a>.<a class="xref" href="Android.Media.MediaCodec.OnFrameRenderedListener.html">OnFrameRenderedListener</a></dt>
+    <dd><p><a class="xref" href="Android.Media.MediaCodec.OnFrameRenderedListener.html">MediaCodec.OnFrameRenderedListener</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Os.Handler.html">Handler</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Handler.html">Handler</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec_SetOutputSurface_" data-uid="Android.Media.MediaCodec.SetOutputSurface*"></a>
+
+  <h3 id="Android_Media_MediaCodec_SetOutputSurface_Android_View_Surface_" data-uid="Android.Media.MediaCodec.SetOutputSurface(Android.View.Surface)">
+  SetOutputSurface(Surface)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L577"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#setOutputSurface(android.view.Surface)">https://developer.android.com/reference/android/media/MediaCodec.html#setOutputSurface(android.view.Surface)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetOutputSurface(Surface arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.View.Surface.html">Surface</a></dt>
+    <dd><p><a class="xref" href="Android.View.Surface.html">Surface</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec_SetParameters_" data-uid="Android.Media.MediaCodec.SetParameters*"></a>
+
+  <h3 id="Android_Media_MediaCodec_SetParameters_Android_Os_Bundle_" data-uid="Android.Media.MediaCodec.SetParameters(Android.Os.Bundle)">
+  SetParameters(Bundle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L585"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#setParameters(android.os.Bundle)">https://developer.android.com/reference/android/media/MediaCodec.html#setParameters(android.os.Bundle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetParameters(Bundle arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec_SetVideoScalingMode_" data-uid="Android.Media.MediaCodec.SetVideoScalingMode*"></a>
+
+  <h3 id="Android_Media_MediaCodec_SetVideoScalingMode_System_Int32_" data-uid="Android.Media.MediaCodec.SetVideoScalingMode(System.Int32)">
+  SetVideoScalingMode(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L424"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#setVideoScalingMode(int)">https://developer.android.com/reference/android/media/MediaCodec.html#setVideoScalingMode(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetVideoScalingMode(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec_SignalEndOfInputStream_" data-uid="Android.Media.MediaCodec.SignalEndOfInputStream*"></a>
+
+  <h3 id="Android_Media_MediaCodec_SignalEndOfInputStream" data-uid="Android.Media.MediaCodec.SignalEndOfInputStream">
+  SignalEndOfInputStream()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L431"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#signalEndOfInputStream()">https://developer.android.com/reference/android/media/MediaCodec.html#signalEndOfInputStream()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SignalEndOfInputStream()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec_Start_" data-uid="Android.Media.MediaCodec.Start*"></a>
+
+  <h3 id="Android_Media_MediaCodec_Start" data-uid="Android.Media.MediaCodec.Start">
+  Start()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L592"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#start()">https://developer.android.com/reference/android/media/MediaCodec.html#start()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Start()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec_Stop_" data-uid="Android.Media.MediaCodec.Stop*"></a>
+
+  <h3 id="Android_Media_MediaCodec_Stop" data-uid="Android.Media.MediaCodec.Stop">
+  Stop()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L599"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#stop()">https://developer.android.com/reference/android/media/MediaCodec.html#stop()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Stop()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec_SubscribeToVendorParameters_" data-uid="Android.Media.MediaCodec.SubscribeToVendorParameters*"></a>
+
+  <h3 id="Android_Media_MediaCodec_SubscribeToVendorParameters_Java_Util_List_Java_Lang_String__" data-uid="Android.Media.MediaCodec.SubscribeToVendorParameters(Java.Util.List{Java.Lang.String})">
+  SubscribeToVendorParameters(List&lt;String&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L607"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#subscribeToVendorParameters(java.util.List)">https://developer.android.com/reference/android/media/MediaCodec.html#subscribeToVendorParameters(java.util.List)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SubscribeToVendorParameters(List&lt;String&gt; arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Java.Lang.String.html">String</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.List.html">List</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaCodec_UnsubscribeFromVendorParameters_" data-uid="Android.Media.MediaCodec.UnsubscribeFromVendorParameters*"></a>
+
+  <h3 id="Android_Media_MediaCodec_UnsubscribeFromVendorParameters_Java_Util_List_Java_Lang_String__" data-uid="Android.Media.MediaCodec.UnsubscribeFromVendorParameters(Java.Util.List{Java.Lang.String})">
+  UnsubscribeFromVendorParameters(List&lt;String&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L615"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaCodec.html#unsubscribeFromVendorParameters(java.util.List)">https://developer.android.com/reference/android/media/MediaCodec.html#unsubscribeFromVendorParameters(java.util.List)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnsubscribeFromVendorParameters(List&lt;String&gt; arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Java.Lang.String.html">String</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.List.html">List</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaCodec.cs/#L29" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

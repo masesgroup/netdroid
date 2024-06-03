@@ -1,0 +1,1270 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class EditTextPreference | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class EditTextPreference | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/preference/EditTextPreference.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_Preference_EditTextPreference.md&amp;value=---%0Auid%3A%20Android.Preference.EditTextPreference%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.Preference.EditTextPreference">
+
+
+
+  <h1 id="Android_Preference_EditTextPreference" data-uid="Android.Preference.EditTextPreference" class="text-break">
+Class EditTextPreference  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Preference/EditTextPreference.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.Preference.html">Preference</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/preference/EditTextPreference.html">https://developer.android.com/reference/android/preference/EditTextPreference.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public class EditTextPreference : DialogPreference, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IComparable&lt;Preference&gt;</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Java.Lang.Comparable-1.html">Comparable</a>&lt;<a class="xref" href="Android.Preference.Preference.html">Preference</a>&gt;&gt;</div>
+      <div><a class="xref" href="Java.Lang.Comparable-1.html">Comparable</a>&lt;<a class="xref" href="Android.Preference.Preference.html">Preference</a>&gt;</div>
+      <div><a class="xref" href="Android.Preference.Preference.html">Preference</a></div>
+      <div><a class="xref" href="Android.Preference.DialogPreference.html">DialogPreference</a></div>
+      <div><span class="xref">EditTextPreference</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+      <div><a class="xref" href="Java.Lang.IComparable-1.html">IComparable</a>&lt;<a class="xref" href="Android.Preference.Preference.html">Preference</a>&gt;</div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Android.Preference.DialogPreference.html#Android_Preference_DialogPreference_GetDialog">DialogPreference.GetDialog()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.DialogPreference.html#Android_Preference_DialogPreference_GetDialogIcon">DialogPreference.GetDialogIcon()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.DialogPreference.html#Android_Preference_DialogPreference_GetDialogLayoutResource">DialogPreference.GetDialogLayoutResource()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.DialogPreference.html#Android_Preference_DialogPreference_GetDialogMessage">DialogPreference.GetDialogMessage()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.DialogPreference.html#Android_Preference_DialogPreference_GetDialogTitle">DialogPreference.GetDialogTitle()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.DialogPreference.html#Android_Preference_DialogPreference_GetNegativeButtonText">DialogPreference.GetNegativeButtonText()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.DialogPreference.html#Android_Preference_DialogPreference_GetPositiveButtonText">DialogPreference.GetPositiveButtonText()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.DialogPreference.html#Android_Preference_DialogPreference_OnActivityDestroy">DialogPreference.OnActivityDestroy()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.DialogPreference.html#Android_Preference_DialogPreference_OnClick_Android_Content_DialogInterface_System_Int32_">DialogPreference.OnClick(DialogInterface, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.DialogPreference.html#Android_Preference_DialogPreference_OnDismiss_Android_Content_DialogInterface_">DialogPreference.OnDismiss(DialogInterface)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.DialogPreference.html#Android_Preference_DialogPreference_SetDialogIcon_Android_Graphics_Drawable_Drawable_">DialogPreference.SetDialogIcon(Drawable)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.DialogPreference.html#Android_Preference_DialogPreference_SetDialogIcon_System_Int32_">DialogPreference.SetDialogIcon(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.DialogPreference.html#Android_Preference_DialogPreference_SetDialogLayoutResource_System_Int32_">DialogPreference.SetDialogLayoutResource(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.DialogPreference.html#Android_Preference_DialogPreference_SetDialogMessage_System_Int32_">DialogPreference.SetDialogMessage(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.DialogPreference.html#Android_Preference_DialogPreference_SetDialogMessage_Java_Lang_CharSequence_">DialogPreference.SetDialogMessage(CharSequence)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.DialogPreference.html#Android_Preference_DialogPreference_SetDialogTitle_System_Int32_">DialogPreference.SetDialogTitle(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.DialogPreference.html#Android_Preference_DialogPreference_SetDialogTitle_Java_Lang_CharSequence_">DialogPreference.SetDialogTitle(CharSequence)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.DialogPreference.html#Android_Preference_DialogPreference_SetNegativeButtonText_System_Int32_">DialogPreference.SetNegativeButtonText(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.DialogPreference.html#Android_Preference_DialogPreference_SetNegativeButtonText_Java_Lang_CharSequence_">DialogPreference.SetNegativeButtonText(CharSequence)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.DialogPreference.html#Android_Preference_DialogPreference_SetPositiveButtonText_System_Int32_">DialogPreference.SetPositiveButtonText(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.DialogPreference.html#Android_Preference_DialogPreference_SetPositiveButtonText_Java_Lang_CharSequence_">DialogPreference.SetPositiveButtonText(CharSequence)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.Preference.html#Android_Preference_Preference_DEFAULT_ORDER">Preference.DEFAULT_ORDER</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.Preference.html#Android_Preference_Preference_GetContext">Preference.GetContext()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.Preference.html#Android_Preference_Preference_GetIntent">Preference.GetIntent()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.Preference.html#Android_Preference_Preference_GetSharedPreferences">Preference.GetSharedPreferences()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.Preference.html#Android_Preference_Preference_GetEditor">Preference.GetEditor()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.Preference.html#Android_Preference_Preference_GetIcon">Preference.GetIcon()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.Preference.html#Android_Preference_Preference_GetExtras">Preference.GetExtras()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.Preference.html#Android_Preference_Preference_PeekExtras">Preference.PeekExtras()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.Preference.html#Android_Preference_Preference_GetOnPreferenceChangeListener">Preference.GetOnPreferenceChangeListener()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.Preference.html#Android_Preference_Preference_GetOnPreferenceChangeListenerDirect">Preference.GetOnPreferenceChangeListenerDirect()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.Preference.html#Android_Preference_Preference_GetOnPreferenceClickListener">Preference.GetOnPreferenceClickListener()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.Preference.html#Android_Preference_Preference_GetOnPreferenceClickListenerDirect">Preference.GetOnPreferenceClickListenerDirect()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.Preference.html#Android_Preference_Preference_GetPreferenceDataStore">Preference.GetPreferenceDataStore()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.Preference.html#Android_Preference_Preference_GetParent">Preference.GetParent()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.Preference.html#Android_Preference_Preference_GetPreferenceManager">Preference.GetPreferenceManager()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.Preference.html#Android_Preference_Preference_GetView_Android_View_View_Android_View_ViewGroup_">Preference.GetView(View, ViewGroup)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.Preference.html#Android_Preference_Preference_GetShouldDisableView">Preference.GetShouldDisableView()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.Preference.html#Android_Preference_Preference_HasKey">Preference.HasKey()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.Preference.html#Android_Preference_Preference_IsEnabled">Preference.IsEnabled()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.Preference.html#Android_Preference_Preference_IsIconSpaceReserved">Preference.IsIconSpaceReserved()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.Preference.html#Android_Preference_Preference_IsPersistent">Preference.IsPersistent()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.Preference.html#Android_Preference_Preference_IsRecycleEnabled">Preference.IsRecycleEnabled()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.Preference.html#Android_Preference_Preference_IsSelectable">Preference.IsSelectable()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.Preference.html#Android_Preference_Preference_IsSingleLineTitle">Preference.IsSingleLineTitle()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.Preference.html#Android_Preference_Preference_PersistStringSet_Java_Util_Set_Java_Lang_String__">Preference.PersistStringSet(Set&lt;String&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.Preference.html#Android_Preference_Preference_ShouldCommit">Preference.ShouldCommit()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.Preference.html#Android_Preference_Preference_ShouldDisableDependents">Preference.ShouldDisableDependents()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.Preference.html#Android_Preference_Preference_CompareTo_Android_Preference_Preference_">Preference.CompareTo(Preference)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.Preference.html#Android_Preference_Preference_CompareTo_System_Object_">Preference.CompareTo(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.Preference.html#Android_Preference_Preference_GetLayoutResource">Preference.GetLayoutResource()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.Preference.html#Android_Preference_Preference_GetOrder">Preference.GetOrder()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.Preference.html#Android_Preference_Preference_GetTitleRes">Preference.GetTitleRes()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.Preference.html#Android_Preference_Preference_GetWidgetLayoutResource">Preference.GetWidgetLayoutResource()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.Preference.html#Android_Preference_Preference_GetSummary">Preference.GetSummary()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.Preference.html#Android_Preference_Preference_GetTitle">Preference.GetTitle()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.Preference.html#Android_Preference_Preference_GetDependency">Preference.GetDependency()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.Preference.html#Android_Preference_Preference_GetFragment">Preference.GetFragment()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.Preference.html#Android_Preference_Preference_GetKey">Preference.GetKey()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.Preference.html#Android_Preference_Preference_GetPersistedStringSet_Java_Util_Set_Java_Lang_String__">Preference.GetPersistedStringSet(Set&lt;String&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.Preference.html#Android_Preference_Preference_NotifyDependencyChange_System_Boolean_">Preference.NotifyDependencyChange(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.Preference.html#Android_Preference_Preference_OnDependencyChanged_Android_Preference_Preference_System_Boolean_">Preference.OnDependencyChanged(Preference, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.Preference.html#Android_Preference_Preference_OnParentChanged_Android_Preference_Preference_System_Boolean_">Preference.OnParentChanged(Preference, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.Preference.html#Android_Preference_Preference_RestoreHierarchyState_Android_Os_Bundle_">Preference.RestoreHierarchyState(Bundle)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.Preference.html#Android_Preference_Preference_SaveHierarchyState_Android_Os_Bundle_">Preference.SaveHierarchyState(Bundle)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.Preference.html#Android_Preference_Preference_SetDefaultValue_System_Object_">Preference.SetDefaultValue(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.Preference.html#Android_Preference_Preference_SetDependency_Java_Lang_String_">Preference.SetDependency(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.Preference.html#Android_Preference_Preference_SetEnabled_System_Boolean_">Preference.SetEnabled(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.Preference.html#Android_Preference_Preference_SetFragment_Java_Lang_String_">Preference.SetFragment(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.Preference.html#Android_Preference_Preference_SetIcon_Android_Graphics_Drawable_Drawable_">Preference.SetIcon(Drawable)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.Preference.html#Android_Preference_Preference_SetIcon_System_Int32_">Preference.SetIcon(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.Preference.html#Android_Preference_Preference_SetIconSpaceReserved_System_Boolean_">Preference.SetIconSpaceReserved(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.Preference.html#Android_Preference_Preference_SetIntent_Android_Content_Intent_">Preference.SetIntent(Intent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.Preference.html#Android_Preference_Preference_SetKey_Java_Lang_String_">Preference.SetKey(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.Preference.html#Android_Preference_Preference_SetLayoutResource_System_Int32_">Preference.SetLayoutResource(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.Preference.html#Android_Preference_Preference_SetOnPreferenceChangeListener_Android_Preference_Preference_OnPreferenceChangeListener_">Preference.SetOnPreferenceChangeListener(Preference.OnPreferenceChangeListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.Preference.html#Android_Preference_Preference_SetOnPreferenceClickListener_Android_Preference_Preference_OnPreferenceClickListener_">Preference.SetOnPreferenceClickListener(Preference.OnPreferenceClickListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.Preference.html#Android_Preference_Preference_SetOrder_System_Int32_">Preference.SetOrder(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.Preference.html#Android_Preference_Preference_SetPersistent_System_Boolean_">Preference.SetPersistent(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.Preference.html#Android_Preference_Preference_SetPreferenceDataStore_Android_Preference_PreferenceDataStore_">Preference.SetPreferenceDataStore(PreferenceDataStore)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.Preference.html#Android_Preference_Preference_SetRecycleEnabled_System_Boolean_">Preference.SetRecycleEnabled(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.Preference.html#Android_Preference_Preference_SetSelectable_System_Boolean_">Preference.SetSelectable(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.Preference.html#Android_Preference_Preference_SetShouldDisableView_System_Boolean_">Preference.SetShouldDisableView(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.Preference.html#Android_Preference_Preference_SetSingleLineTitle_System_Boolean_">Preference.SetSingleLineTitle(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.Preference.html#Android_Preference_Preference_SetSummary_System_Int32_">Preference.SetSummary(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.Preference.html#Android_Preference_Preference_SetSummary_Java_Lang_CharSequence_">Preference.SetSummary(CharSequence)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.Preference.html#Android_Preference_Preference_SetTitle_System_Int32_">Preference.SetTitle(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.Preference.html#Android_Preference_Preference_SetTitle_Java_Lang_CharSequence_">Preference.SetTitle(CharSequence)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Preference.Preference.html#Android_Preference_Preference_SetWidgetLayoutResource_System_Int32_">Preference.SetWidgetLayoutResource(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Comparable&lt;Preference&gt;&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Comparable&lt;Preference&gt;&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Comparable&lt;Preference&gt;&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Comparable&lt;Preference&gt;&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Comparable&lt;Preference&gt;&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Comparable&lt;Preference&gt;&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Comparable&lt;Preference&gt;&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Comparable&lt;Preference&gt;&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Comparable&lt;Preference&gt;&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Comparable&lt;Preference&gt;&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Comparable&lt;Preference&gt;&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Comparable&lt;Preference&gt;&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Comparable&lt;Preference&gt;&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Comparable&lt;Preference&gt;&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Comparable&lt;Preference&gt;&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Comparable&lt;Preference&gt;&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Comparable&lt;Preference&gt;&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Comparable&lt;Preference&gt;&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Comparable&lt;Preference&gt;&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Comparable&lt;Preference&gt;&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Comparable&lt;Preference&gt;&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Comparable&lt;Preference&gt;&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Comparable&lt;Preference&gt;&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Comparable&lt;Preference&gt;&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Comparable&lt;Preference&gt;&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Comparable&lt;Preference&gt;&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Comparable&lt;Preference&gt;&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Comparable&lt;Preference&gt;&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Comparable&lt;Preference&gt;&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Comparable&lt;Preference&gt;&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Comparable&lt;Preference&gt;&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Comparable&lt;Preference&gt;&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Comparable&lt;Preference&gt;&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Comparable&lt;Preference&gt;&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Comparable&lt;Preference&gt;&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Comparable&lt;Preference&gt;&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Comparable&lt;Preference&gt;&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Comparable&lt;Preference&gt;&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Comparable&lt;Preference&gt;&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Comparable&lt;Preference&gt;&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Comparable&lt;Preference&gt;&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Comparable&lt;Preference&gt;&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Comparable&lt;Preference&gt;&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Comparable&lt;Preference&gt;&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Comparable&lt;Preference&gt;&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;Comparable&lt;Preference&gt;&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Comparable&lt;Preference&gt;&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Comparable&lt;Preference&gt;&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Comparable&lt;Preference&gt;&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Comparable&lt;Preference&gt;&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_Preference_EditTextPreference__ctor_" data-uid="Android.Preference.EditTextPreference.#ctor*"></a>
+
+  <h3 id="Android_Preference_EditTextPreference__ctor" data-uid="Android.Preference.EditTextPreference.#ctor">
+  EditTextPreference()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Preference/AllPackageClasses.cs/#L132"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EditTextPreference()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Preference_EditTextPreference__ctor_" data-uid="Android.Preference.EditTextPreference.#ctor*"></a>
+
+  <h3 id="Android_Preference_EditTextPreference__ctor_Android_Content_Context_" data-uid="Android.Preference.EditTextPreference.#ctor(Android.Content.Context)">
+  EditTextPreference(Context)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Preference/EditTextPreference.cs/#L69"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/preference/EditTextPreference.html#%3Cinit%3E(android.content.Context)">https://developer.android.com/reference/android/preference/EditTextPreference.html#%3Cinit%3E(android.content.Context)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public EditTextPreference(Context arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Preference_EditTextPreference__ctor_" data-uid="Android.Preference.EditTextPreference.#ctor*"></a>
+
+  <h3 id="Android_Preference_EditTextPreference__ctor_Android_Content_Context_Android_Util_AttributeSet_" data-uid="Android.Preference.EditTextPreference.#ctor(Android.Content.Context,Android.Util.AttributeSet)">
+  EditTextPreference(Context, AttributeSet)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Preference/EditTextPreference.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/preference/EditTextPreference.html#%3Cinit%3E(android.content.Context,android.util.AttributeSet)">https://developer.android.com/reference/android/preference/EditTextPreference.html#%3Cinit%3E(android.content.Context,android.util.AttributeSet)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public EditTextPreference(Context arg0, AttributeSet arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Util.AttributeSet.html">AttributeSet</a></dt>
+    <dd><p><a class="xref" href="Android.Util.AttributeSet.html">AttributeSet</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Preference_EditTextPreference__ctor_" data-uid="Android.Preference.EditTextPreference.#ctor*"></a>
+
+  <h3 id="Android_Preference_EditTextPreference__ctor_Android_Content_Context_Android_Util_AttributeSet_System_Int32_" data-uid="Android.Preference.EditTextPreference.#ctor(Android.Content.Context,Android.Util.AttributeSet,System.Int32)">
+  EditTextPreference(Context, AttributeSet, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Preference/EditTextPreference.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/preference/EditTextPreference.html#%3Cinit%3E(android.content.Context,android.util.AttributeSet,int)">https://developer.android.com/reference/android/preference/EditTextPreference.html#%3Cinit%3E(android.content.Context,android.util.AttributeSet,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public EditTextPreference(Context arg0, AttributeSet arg1, int arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Util.AttributeSet.html">AttributeSet</a></dt>
+    <dd><p><a class="xref" href="Android.Util.AttributeSet.html">AttributeSet</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Preference_EditTextPreference__ctor_" data-uid="Android.Preference.EditTextPreference.#ctor*"></a>
+
+  <h3 id="Android_Preference_EditTextPreference__ctor_Android_Content_Context_Android_Util_AttributeSet_System_Int32_System_Int32_" data-uid="Android.Preference.EditTextPreference.#ctor(Android.Content.Context,Android.Util.AttributeSet,System.Int32,System.Int32)">
+  EditTextPreference(Context, AttributeSet, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Preference/EditTextPreference.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/preference/EditTextPreference.html#%3Cinit%3E(android.content.Context,android.util.AttributeSet,int,int)">https://developer.android.com/reference/android/preference/EditTextPreference.html#%3Cinit%3E(android.content.Context,android.util.AttributeSet,int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public EditTextPreference(Context arg0, AttributeSet arg1, int arg2, int arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Util.AttributeSet.html">AttributeSet</a></dt>
+    <dd><p><a class="xref" href="Android.Util.AttributeSet.html">AttributeSet</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Preference_EditTextPreference__ctor_" data-uid="Android.Preference.EditTextPreference.#ctor*"></a>
+
+  <h3 id="Android_Preference_EditTextPreference__ctor_System_Object___" data-uid="Android.Preference.EditTextPreference.#ctor(System.Object[])">
+  EditTextPreference(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Preference/AllPackageClasses.cs/#L136"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EditTextPreference(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_Preference_EditTextPreference_BridgeClassName_" data-uid="Android.Preference.EditTextPreference.BridgeClassName*"></a>
+
+  <h3 id="Android_Preference_EditTextPreference_BridgeClassName" data-uid="Android.Preference.EditTextPreference.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Preference/AllPackageClasses.cs/#L143"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Preference_EditTextPreference_IsBridgeAbstract_" data-uid="Android.Preference.EditTextPreference.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_Preference_EditTextPreference_IsBridgeAbstract" data-uid="Android.Preference.EditTextPreference.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Preference/AllPackageClasses.cs/#L147"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Preference_EditTextPreference_IsBridgeCloseable_" data-uid="Android.Preference.EditTextPreference.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_Preference_EditTextPreference_IsBridgeCloseable" data-uid="Android.Preference.EditTextPreference.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Preference/AllPackageClasses.cs/#L151"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Preference_EditTextPreference_IsBridgeInterface_" data-uid="Android.Preference.EditTextPreference.IsBridgeInterface*"></a>
+
+  <h3 id="Android_Preference_EditTextPreference_IsBridgeInterface" data-uid="Android.Preference.EditTextPreference.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Preference/AllPackageClasses.cs/#L155"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Preference_EditTextPreference_IsBridgeStatic_" data-uid="Android.Preference.EditTextPreference.IsBridgeStatic*"></a>
+
+  <h3 id="Android_Preference_EditTextPreference_IsBridgeStatic" data-uid="Android.Preference.EditTextPreference.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Preference/AllPackageClasses.cs/#L159"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_Preference_EditTextPreference_GetEditText_" data-uid="Android.Preference.EditTextPreference.GetEditText*"></a>
+
+  <h3 id="Android_Preference_EditTextPreference_GetEditText" data-uid="Android.Preference.EditTextPreference.GetEditText">
+  GetEditText()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Preference/EditTextPreference.cs/#L94"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/preference/EditTextPreference.html#getEditText()">https://developer.android.com/reference/android/preference/EditTextPreference.html#getEditText()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public EditText GetEditText()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Widget.EditText.html">EditText</a></dt>
+    <dd><p><a class="xref" href="Android.Widget.EditText.html">EditText</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Preference_EditTextPreference_GetText_" data-uid="Android.Preference.EditTextPreference.GetText*"></a>
+
+  <h3 id="Android_Preference_EditTextPreference_GetText" data-uid="Android.Preference.EditTextPreference.GetText">
+  GetText()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Preference/EditTextPreference.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/preference/EditTextPreference.html#getText()">https://developer.android.com/reference/android/preference/EditTextPreference.html#getText()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public String GetText()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Preference_EditTextPreference_SetText_" data-uid="Android.Preference.EditTextPreference.SetText*"></a>
+
+  <h3 id="Android_Preference_EditTextPreference_SetText_Java_Lang_String_" data-uid="Android.Preference.EditTextPreference.SetText(Java.Lang.String)">
+  SetText(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Preference/EditTextPreference.cs/#L112"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/preference/EditTextPreference.html#setText(java.lang.String)">https://developer.android.com/reference/android/preference/EditTextPreference.html#setText(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void SetText(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Preference/EditTextPreference.cs/#L29" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

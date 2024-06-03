@@ -1,0 +1,1279 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class TimeUnit | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class TimeUnit | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/icu/util/TimeUnit.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_Icu_Util_TimeUnit.md&amp;value=---%0Auid%3A%20Android.Icu.Util.TimeUnit%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.Icu.Util.TimeUnit">
+
+
+
+  <h1 id="Android_Icu_Util_TimeUnit" data-uid="Android.Icu.Util.TimeUnit" class="text-break">
+Class TimeUnit  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Util/TimeUnit.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.Icu.html">Icu</a>.<a class="xref" href="Android.Icu.Util.html">Util</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/icu/util/TimeUnit.html">https://developer.android.com/reference/android/icu/util/TimeUnit.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class TimeUnit : MeasureUnit, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, ISerializable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Java.Io.Serializable.html">Serializable</a>&gt;</div>
+      <div><a class="xref" href="Java.Io.Serializable.html">Serializable</a></div>
+      <div><a class="xref" href="Android.Icu.Util.MeasureUnit.html">MeasureUnit</a></div>
+      <div><span class="xref">TimeUnit</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+      <div><a class="xref" href="Java.Io.ISerializable.html">ISerializable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_ACRE">MeasureUnit.ACRE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_ACRE_FOOT">MeasureUnit.ACRE_FOOT</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_AMPERE">MeasureUnit.AMPERE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_ARC_MINUTE">MeasureUnit.ARC_MINUTE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_ARC_SECOND">MeasureUnit.ARC_SECOND</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_ASTRONOMICAL_UNIT">MeasureUnit.ASTRONOMICAL_UNIT</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_ATMOSPHERE">MeasureUnit.ATMOSPHERE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_BIT">MeasureUnit.BIT</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_BUSHEL">MeasureUnit.BUSHEL</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_BYTE">MeasureUnit.BYTE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_CALORIE">MeasureUnit.CALORIE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_CANDELA">MeasureUnit.CANDELA</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_CARAT">MeasureUnit.CARAT</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_CELSIUS">MeasureUnit.CELSIUS</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_CENTILITER">MeasureUnit.CENTILITER</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_CENTIMETER">MeasureUnit.CENTIMETER</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_CENTURY">MeasureUnit.CENTURY</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_CUBIC_CENTIMETER">MeasureUnit.CUBIC_CENTIMETER</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_CUBIC_FOOT">MeasureUnit.CUBIC_FOOT</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_CUBIC_INCH">MeasureUnit.CUBIC_INCH</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_CUBIC_KILOMETER">MeasureUnit.CUBIC_KILOMETER</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_CUBIC_METER">MeasureUnit.CUBIC_METER</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_CUBIC_MILE">MeasureUnit.CUBIC_MILE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_CUBIC_YARD">MeasureUnit.CUBIC_YARD</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_CUP">MeasureUnit.CUP</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_CUP_METRIC">MeasureUnit.CUP_METRIC</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_DECADE">MeasureUnit.DECADE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_DECILITER">MeasureUnit.DECILITER</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_DECIMETER">MeasureUnit.DECIMETER</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_DEGREE">MeasureUnit.DEGREE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_DOT">MeasureUnit.DOT</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_DOT_PER_CENTIMETER">MeasureUnit.DOT_PER_CENTIMETER</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_DOT_PER_INCH">MeasureUnit.DOT_PER_INCH</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_EM">MeasureUnit.EM</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_FAHRENHEIT">MeasureUnit.FAHRENHEIT</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_FATHOM">MeasureUnit.FATHOM</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_FLUID_OUNCE">MeasureUnit.FLUID_OUNCE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_FOODCALORIE">MeasureUnit.FOODCALORIE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_FOOT">MeasureUnit.FOOT</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_FURLONG">MeasureUnit.FURLONG</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_G_FORCE">MeasureUnit.G_FORCE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_GALLON">MeasureUnit.GALLON</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_GALLON_IMPERIAL">MeasureUnit.GALLON_IMPERIAL</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_GENERIC_TEMPERATURE">MeasureUnit.GENERIC_TEMPERATURE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_GIGABIT">MeasureUnit.GIGABIT</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_GIGABYTE">MeasureUnit.GIGABYTE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_GIGAHERTZ">MeasureUnit.GIGAHERTZ</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_GIGAWATT">MeasureUnit.GIGAWATT</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_GRAM">MeasureUnit.GRAM</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_HECTARE">MeasureUnit.HECTARE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_HECTOLITER">MeasureUnit.HECTOLITER</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_HECTOPASCAL">MeasureUnit.HECTOPASCAL</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_HERTZ">MeasureUnit.HERTZ</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_HORSEPOWER">MeasureUnit.HORSEPOWER</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_INCH">MeasureUnit.INCH</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_INCH_HG">MeasureUnit.INCH_HG</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_ITEM">MeasureUnit.ITEM</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_JOULE">MeasureUnit.JOULE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_KARAT">MeasureUnit.KARAT</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_KELVIN">MeasureUnit.KELVIN</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_KILOBIT">MeasureUnit.KILOBIT</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_KILOBYTE">MeasureUnit.KILOBYTE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_KILOCALORIE">MeasureUnit.KILOCALORIE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_KILOGRAM">MeasureUnit.KILOGRAM</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_KILOHERTZ">MeasureUnit.KILOHERTZ</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_KILOJOULE">MeasureUnit.KILOJOULE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_KILOMETER">MeasureUnit.KILOMETER</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_KILOMETER_PER_HOUR">MeasureUnit.KILOMETER_PER_HOUR</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_KILOWATT">MeasureUnit.KILOWATT</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_KILOWATT_HOUR">MeasureUnit.KILOWATT_HOUR</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_KILOWATT_HOUR_PER_100_KILOMETER">MeasureUnit.KILOWATT_HOUR_PER_100_KILOMETER</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_KNOT">MeasureUnit.KNOT</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_LIGHT_YEAR">MeasureUnit.LIGHT_YEAR</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_LITER">MeasureUnit.LITER</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_LITER_PER_100KILOMETERS">MeasureUnit.LITER_PER_100KILOMETERS</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_LITER_PER_KILOMETER">MeasureUnit.LITER_PER_KILOMETER</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_LUMEN">MeasureUnit.LUMEN</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_LUX">MeasureUnit.LUX</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_MEGABIT">MeasureUnit.MEGABIT</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_MEGABYTE">MeasureUnit.MEGABYTE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_MEGAHERTZ">MeasureUnit.MEGAHERTZ</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_MEGALITER">MeasureUnit.MEGALITER</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_MEGAPIXEL">MeasureUnit.MEGAPIXEL</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_MEGAWATT">MeasureUnit.MEGAWATT</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_METER">MeasureUnit.METER</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_METER_PER_SECOND">MeasureUnit.METER_PER_SECOND</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_METER_PER_SECOND_SQUARED">MeasureUnit.METER_PER_SECOND_SQUARED</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_METRIC_TON">MeasureUnit.METRIC_TON</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_MICROGRAM">MeasureUnit.MICROGRAM</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_MICROMETER">MeasureUnit.MICROMETER</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_MICROSECOND">MeasureUnit.MICROSECOND</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_MILE">MeasureUnit.MILE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_MILE_PER_GALLON">MeasureUnit.MILE_PER_GALLON</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_MILE_PER_GALLON_IMPERIAL">MeasureUnit.MILE_PER_GALLON_IMPERIAL</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_MILE_PER_HOUR">MeasureUnit.MILE_PER_HOUR</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_MILE_SCANDINAVIAN">MeasureUnit.MILE_SCANDINAVIAN</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_MILLIAMPERE">MeasureUnit.MILLIAMPERE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_MILLIBAR">MeasureUnit.MILLIBAR</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_MILLIGRAM">MeasureUnit.MILLIGRAM</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_MILLIGRAM_OFGLUCOSE_PER_DECILITER">MeasureUnit.MILLIGRAM_OFGLUCOSE_PER_DECILITER</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_MILLIGRAM_PER_DECILITER">MeasureUnit.MILLIGRAM_PER_DECILITER</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_MILLILITER">MeasureUnit.MILLILITER</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_MILLIMETER">MeasureUnit.MILLIMETER</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_MILLIMETER_OF_MERCURY">MeasureUnit.MILLIMETER_OF_MERCURY</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_MILLIMOLE_PER_LITER">MeasureUnit.MILLIMOLE_PER_LITER</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_MILLISECOND">MeasureUnit.MILLISECOND</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_MILLIWATT">MeasureUnit.MILLIWATT</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_NANOMETER">MeasureUnit.NANOMETER</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_NANOSECOND">MeasureUnit.NANOSECOND</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_NAUTICAL_MILE">MeasureUnit.NAUTICAL_MILE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_OHM">MeasureUnit.OHM</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_OUNCE">MeasureUnit.OUNCE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_OUNCE_TROY">MeasureUnit.OUNCE_TROY</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_PARSEC">MeasureUnit.PARSEC</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_PART_PER_MILLION">MeasureUnit.PART_PER_MILLION</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_PERCENT">MeasureUnit.PERCENT</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_PERMILLE">MeasureUnit.PERMILLE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_PETABYTE">MeasureUnit.PETABYTE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_PICOMETER">MeasureUnit.PICOMETER</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_PINT">MeasureUnit.PINT</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_PINT_METRIC">MeasureUnit.PINT_METRIC</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_PIXEL">MeasureUnit.PIXEL</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_PIXEL_PER_CENTIMETER">MeasureUnit.PIXEL_PER_CENTIMETER</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_PIXEL_PER_INCH">MeasureUnit.PIXEL_PER_INCH</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_POINT">MeasureUnit.POINT</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_POUND">MeasureUnit.POUND</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_POUND_PER_SQUARE_INCH">MeasureUnit.POUND_PER_SQUARE_INCH</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_QUART">MeasureUnit.QUART</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_RADIAN">MeasureUnit.RADIAN</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_REVOLUTION_ANGLE">MeasureUnit.REVOLUTION_ANGLE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_SQUARE_CENTIMETER">MeasureUnit.SQUARE_CENTIMETER</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_SQUARE_FOOT">MeasureUnit.SQUARE_FOOT</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_SQUARE_INCH">MeasureUnit.SQUARE_INCH</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_SQUARE_KILOMETER">MeasureUnit.SQUARE_KILOMETER</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_SQUARE_METER">MeasureUnit.SQUARE_METER</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_SQUARE_MILE">MeasureUnit.SQUARE_MILE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_SQUARE_YARD">MeasureUnit.SQUARE_YARD</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_STONE">MeasureUnit.STONE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_TABLESPOON">MeasureUnit.TABLESPOON</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_TEASPOON">MeasureUnit.TEASPOON</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_TERABIT">MeasureUnit.TERABIT</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_TERABYTE">MeasureUnit.TERABYTE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_TON">MeasureUnit.TON</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_VOLT">MeasureUnit.VOLT</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_WATT">MeasureUnit.WATT</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_YARD">MeasureUnit.YARD</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_DAY">MeasureUnit.DAY</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_HOUR">MeasureUnit.HOUR</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_MINUTE">MeasureUnit.MINUTE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_MONTH">MeasureUnit.MONTH</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_SECOND">MeasureUnit.SECOND</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_WEEK">MeasureUnit.WEEK</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_YEAR">MeasureUnit.YEAR</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_ForIdentifier_Java_Lang_String_">MeasureUnit.ForIdentifier(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_GetAvailable_Java_Lang_String_">MeasureUnit.GetAvailable(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_GetAvailableTypes">MeasureUnit.GetAvailableTypes()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_GetAvailable">MeasureUnit.GetAvailable()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_Product_Android_Icu_Util_MeasureUnit_">MeasureUnit.Product(MeasureUnit)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_Reciprocal">MeasureUnit.Reciprocal()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_WithDimensionality_System_Int32_">MeasureUnit.WithDimensionality(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_WithPrefix_Android_Icu_Util_MeasureUnit_MeasurePrefix_">MeasureUnit.WithPrefix(MeasureUnit.MeasurePrefix)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_GetComplexity">MeasureUnit.GetComplexity()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_GetPrefix">MeasureUnit.GetPrefix()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_GetDimensionality">MeasureUnit.GetDimensionality()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_GetIdentifier">MeasureUnit.GetIdentifier()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_GetSubtype">MeasureUnit.GetSubtype()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_GetType">MeasureUnit.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Util.MeasureUnit.html#Android_Icu_Util_MeasureUnit_SplitToSingleUnits">MeasureUnit.SplitToSingleUnits()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Serializable&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Serializable&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;Serializable&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Serializable&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Serializable&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Serializable&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Serializable&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_Icu_Util_TimeUnit__ctor_" data-uid="Android.Icu.Util.TimeUnit.#ctor*"></a>
+
+  <h3 id="Android_Icu_Util_TimeUnit__ctor" data-uid="Android.Icu.Util.TimeUnit.#ctor">
+  TimeUnit()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Util/AllPackageClasses.cs/#L1403"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeUnit()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Util_TimeUnit__ctor_" data-uid="Android.Icu.Util.TimeUnit.#ctor*"></a>
+
+  <h3 id="Android_Icu_Util_TimeUnit__ctor_System_Object___" data-uid="Android.Icu.Util.TimeUnit.#ctor(System.Object[])">
+  TimeUnit(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Util/AllPackageClasses.cs/#L1407"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeUnit(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_Icu_Util_TimeUnit_BridgeClassName_" data-uid="Android.Icu.Util.TimeUnit.BridgeClassName*"></a>
+
+  <h3 id="Android_Icu_Util_TimeUnit_BridgeClassName" data-uid="Android.Icu.Util.TimeUnit.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Util/AllPackageClasses.cs/#L1414"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Util_TimeUnit_IsBridgeAbstract_" data-uid="Android.Icu.Util.TimeUnit.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_Icu_Util_TimeUnit_IsBridgeAbstract" data-uid="Android.Icu.Util.TimeUnit.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Util/AllPackageClasses.cs/#L1418"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Util_TimeUnit_IsBridgeCloseable_" data-uid="Android.Icu.Util.TimeUnit.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_Icu_Util_TimeUnit_IsBridgeCloseable" data-uid="Android.Icu.Util.TimeUnit.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Util/AllPackageClasses.cs/#L1422"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Util_TimeUnit_IsBridgeInterface_" data-uid="Android.Icu.Util.TimeUnit.IsBridgeInterface*"></a>
+
+  <h3 id="Android_Icu_Util_TimeUnit_IsBridgeInterface" data-uid="Android.Icu.Util.TimeUnit.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Util/AllPackageClasses.cs/#L1426"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Util_TimeUnit_IsBridgeStatic_" data-uid="Android.Icu.Util.TimeUnit.IsBridgeStatic*"></a>
+
+  <h3 id="Android_Icu_Util_TimeUnit_IsBridgeStatic" data-uid="Android.Icu.Util.TimeUnit.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Util/AllPackageClasses.cs/#L1430"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_Icu_Util_TimeUnit_Values_" data-uid="Android.Icu.Util.TimeUnit.Values*"></a>
+
+  <h3 id="Android_Icu_Util_TimeUnit_Values" data-uid="Android.Icu.Util.TimeUnit.Values">
+  Values()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Util/TimeUnit.cs/#L48"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/util/TimeUnit.html#values()">https://developer.android.com/reference/android/icu/util/TimeUnit.html#values()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TimeUnit[] Values()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Util.TimeUnit.html">TimeUnit</a>[]</dt>
+    <dd><p><a class="xref" href="Android.Icu.Util.TimeUnit.html">TimeUnit</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Util/TimeUnit.cs/#L29" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

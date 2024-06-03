@@ -1,0 +1,3477 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class CallLog.Calls | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class CallLog.Calls | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/provider/CallLog.Calls.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_Provider_CallLog_Calls.md&amp;value=---%0Auid%3A%20Android.Provider.CallLog.Calls%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.Provider.CallLog.Calls">
+
+
+
+  <h1 id="Android_Provider_CallLog_Calls" data-uid="Android.Provider.CallLog.Calls" class="text-break">
+Class CallLog.Calls  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L65"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.Provider.html">Provider</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html">https://developer.android.com/reference/android/provider/CallLog.Calls.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CallLog.Calls : BaseColumns, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IBaseColumns</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.Provider.BaseColumns.html">BaseColumns</a>&gt;</div>
+      <div><a class="xref" href="Android.Provider.BaseColumns.html">BaseColumns</a></div>
+      <div><span class="xref">CallLog.Calls</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+      <div><a class="xref" href="Android.Provider.IBaseColumns.html">IBaseColumns</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Android.Provider.BaseColumns.html#Android_Provider_BaseColumns__COUNT">BaseColumns._COUNT</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Provider.BaseColumns.html#Android_Provider_BaseColumns__ID">BaseColumns._ID</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BaseColumns&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BaseColumns&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BaseColumns&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BaseColumns&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BaseColumns&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BaseColumns&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BaseColumns&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BaseColumns&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BaseColumns&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BaseColumns&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BaseColumns&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BaseColumns&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;BaseColumns&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;BaseColumns&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;BaseColumns&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;BaseColumns&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;BaseColumns&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;BaseColumns&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_Provider_CallLog_Calls__ctor_" data-uid="Android.Provider.CallLog.Calls.#ctor*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls__ctor" data-uid="Android.Provider.CallLog.Calls.#ctor">
+  Calls()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/AllPackageClasses.cs/#L917"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Calls()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls__ctor_" data-uid="Android.Provider.CallLog.Calls.#ctor*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls__ctor_System_Object___" data-uid="Android.Provider.CallLog.Calls.#ctor(System.Object[])">
+  Calls(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/AllPackageClasses.cs/#L921"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Calls(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_Provider_CallLog_Calls_ANSWERED_EXTERNALLY_TYPE_" data-uid="Android.Provider.CallLog.Calls.ANSWERED_EXTERNALLY_TYPE*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_ANSWERED_EXTERNALLY_TYPE" data-uid="Android.Provider.CallLog.Calls.ANSWERED_EXTERNALLY_TYPE">
+  ANSWERED_EXTERNALLY_TYPE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#ANSWERED_EXTERNALLY_TYPE">https://developer.android.com/reference/android/provider/CallLog.Calls.html#ANSWERED_EXTERNALLY_TYPE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ANSWERED_EXTERNALLY_TYPE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_AUTO_MISSED_EMERGENCY_CALL_" data-uid="Android.Provider.CallLog.Calls.AUTO_MISSED_EMERGENCY_CALL*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_AUTO_MISSED_EMERGENCY_CALL" data-uid="Android.Provider.CallLog.Calls.AUTO_MISSED_EMERGENCY_CALL">
+  AUTO_MISSED_EMERGENCY_CALL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L517"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#AUTO_MISSED_EMERGENCY_CALL">https://developer.android.com/reference/android/provider/CallLog.Calls.html#AUTO_MISSED_EMERGENCY_CALL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long AUTO_MISSED_EMERGENCY_CALL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_AUTO_MISSED_MAXIMUM_DIALING_" data-uid="Android.Provider.CallLog.Calls.AUTO_MISSED_MAXIMUM_DIALING*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_AUTO_MISSED_MAXIMUM_DIALING" data-uid="Android.Provider.CallLog.Calls.AUTO_MISSED_MAXIMUM_DIALING">
+  AUTO_MISSED_MAXIMUM_DIALING
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L523"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#AUTO_MISSED_MAXIMUM_DIALING">https://developer.android.com/reference/android/provider/CallLog.Calls.html#AUTO_MISSED_MAXIMUM_DIALING</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long AUTO_MISSED_MAXIMUM_DIALING { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_AUTO_MISSED_MAXIMUM_RINGING_" data-uid="Android.Provider.CallLog.Calls.AUTO_MISSED_MAXIMUM_RINGING*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_AUTO_MISSED_MAXIMUM_RINGING" data-uid="Android.Provider.CallLog.Calls.AUTO_MISSED_MAXIMUM_RINGING">
+  AUTO_MISSED_MAXIMUM_RINGING
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L529"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#AUTO_MISSED_MAXIMUM_RINGING">https://developer.android.com/reference/android/provider/CallLog.Calls.html#AUTO_MISSED_MAXIMUM_RINGING</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long AUTO_MISSED_MAXIMUM_RINGING { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_BLOCKED_TYPE_" data-uid="Android.Provider.CallLog.Calls.BLOCKED_TYPE*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_BLOCKED_TYPE" data-uid="Android.Provider.CallLog.Calls.BLOCKED_TYPE">
+  BLOCKED_TYPE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L151"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#BLOCKED_TYPE">https://developer.android.com/reference/android/provider/CallLog.Calls.html#BLOCKED_TYPE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int BLOCKED_TYPE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_BLOCK_REASON_" data-uid="Android.Provider.CallLog.Calls.BLOCK_REASON*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_BLOCK_REASON" data-uid="Android.Provider.CallLog.Calls.BLOCK_REASON">
+  BLOCK_REASON
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L271"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#BLOCK_REASON">https://developer.android.com/reference/android/provider/CallLog.Calls.html#BLOCK_REASON</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String BLOCK_REASON { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_BLOCK_REASON_BLOCKED_NUMBER_" data-uid="Android.Provider.CallLog.Calls.BLOCK_REASON_BLOCKED_NUMBER*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_BLOCK_REASON_BLOCKED_NUMBER" data-uid="Android.Provider.CallLog.Calls.BLOCK_REASON_BLOCKED_NUMBER">
+  BLOCK_REASON_BLOCKED_NUMBER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#BLOCK_REASON_BLOCKED_NUMBER">https://developer.android.com/reference/android/provider/CallLog.Calls.html#BLOCK_REASON_BLOCKED_NUMBER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int BLOCK_REASON_BLOCKED_NUMBER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_BLOCK_REASON_CALL_SCREENING_SERVICE_" data-uid="Android.Provider.CallLog.Calls.BLOCK_REASON_CALL_SCREENING_SERVICE*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_BLOCK_REASON_CALL_SCREENING_SERVICE" data-uid="Android.Provider.CallLog.Calls.BLOCK_REASON_CALL_SCREENING_SERVICE">
+  BLOCK_REASON_CALL_SCREENING_SERVICE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#BLOCK_REASON_CALL_SCREENING_SERVICE">https://developer.android.com/reference/android/provider/CallLog.Calls.html#BLOCK_REASON_CALL_SCREENING_SERVICE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int BLOCK_REASON_CALL_SCREENING_SERVICE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_BLOCK_REASON_DIRECT_TO_VOICEMAIL_" data-uid="Android.Provider.CallLog.Calls.BLOCK_REASON_DIRECT_TO_VOICEMAIL*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_BLOCK_REASON_DIRECT_TO_VOICEMAIL" data-uid="Android.Provider.CallLog.Calls.BLOCK_REASON_DIRECT_TO_VOICEMAIL">
+  BLOCK_REASON_DIRECT_TO_VOICEMAIL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#BLOCK_REASON_DIRECT_TO_VOICEMAIL">https://developer.android.com/reference/android/provider/CallLog.Calls.html#BLOCK_REASON_DIRECT_TO_VOICEMAIL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int BLOCK_REASON_DIRECT_TO_VOICEMAIL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_BLOCK_REASON_NOT_BLOCKED_" data-uid="Android.Provider.CallLog.Calls.BLOCK_REASON_NOT_BLOCKED*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_BLOCK_REASON_NOT_BLOCKED" data-uid="Android.Provider.CallLog.Calls.BLOCK_REASON_NOT_BLOCKED">
+  BLOCK_REASON_NOT_BLOCKED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#BLOCK_REASON_NOT_BLOCKED">https://developer.android.com/reference/android/provider/CallLog.Calls.html#BLOCK_REASON_NOT_BLOCKED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int BLOCK_REASON_NOT_BLOCKED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_BLOCK_REASON_NOT_IN_CONTACTS_" data-uid="Android.Provider.CallLog.Calls.BLOCK_REASON_NOT_IN_CONTACTS*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_BLOCK_REASON_NOT_IN_CONTACTS" data-uid="Android.Provider.CallLog.Calls.BLOCK_REASON_NOT_IN_CONTACTS">
+  BLOCK_REASON_NOT_IN_CONTACTS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#BLOCK_REASON_NOT_IN_CONTACTS">https://developer.android.com/reference/android/provider/CallLog.Calls.html#BLOCK_REASON_NOT_IN_CONTACTS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int BLOCK_REASON_NOT_IN_CONTACTS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_BLOCK_REASON_PAY_PHONE_" data-uid="Android.Provider.CallLog.Calls.BLOCK_REASON_PAY_PHONE*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_BLOCK_REASON_PAY_PHONE" data-uid="Android.Provider.CallLog.Calls.BLOCK_REASON_PAY_PHONE">
+  BLOCK_REASON_PAY_PHONE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L133"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#BLOCK_REASON_PAY_PHONE">https://developer.android.com/reference/android/provider/CallLog.Calls.html#BLOCK_REASON_PAY_PHONE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int BLOCK_REASON_PAY_PHONE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_BLOCK_REASON_RESTRICTED_NUMBER_" data-uid="Android.Provider.CallLog.Calls.BLOCK_REASON_RESTRICTED_NUMBER*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_BLOCK_REASON_RESTRICTED_NUMBER" data-uid="Android.Provider.CallLog.Calls.BLOCK_REASON_RESTRICTED_NUMBER">
+  BLOCK_REASON_RESTRICTED_NUMBER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#BLOCK_REASON_RESTRICTED_NUMBER">https://developer.android.com/reference/android/provider/CallLog.Calls.html#BLOCK_REASON_RESTRICTED_NUMBER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int BLOCK_REASON_RESTRICTED_NUMBER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_BLOCK_REASON_UNKNOWN_NUMBER_" data-uid="Android.Provider.CallLog.Calls.BLOCK_REASON_UNKNOWN_NUMBER*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_BLOCK_REASON_UNKNOWN_NUMBER" data-uid="Android.Provider.CallLog.Calls.BLOCK_REASON_UNKNOWN_NUMBER">
+  BLOCK_REASON_UNKNOWN_NUMBER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L145"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#BLOCK_REASON_UNKNOWN_NUMBER">https://developer.android.com/reference/android/provider/CallLog.Calls.html#BLOCK_REASON_UNKNOWN_NUMBER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int BLOCK_REASON_UNKNOWN_NUMBER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_BridgeClassName_" data-uid="Android.Provider.CallLog.Calls.BridgeClassName*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_BridgeClassName" data-uid="Android.Provider.CallLog.Calls.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/AllPackageClasses.cs/#L928"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_CACHED_FORMATTED_NUMBER_" data-uid="Android.Provider.CallLog.Calls.CACHED_FORMATTED_NUMBER*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_CACHED_FORMATTED_NUMBER" data-uid="Android.Provider.CallLog.Calls.CACHED_FORMATTED_NUMBER">
+  CACHED_FORMATTED_NUMBER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L277"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#CACHED_FORMATTED_NUMBER">https://developer.android.com/reference/android/provider/CallLog.Calls.html#CACHED_FORMATTED_NUMBER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String CACHED_FORMATTED_NUMBER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_CACHED_LOOKUP_URI_" data-uid="Android.Provider.CallLog.Calls.CACHED_LOOKUP_URI*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_CACHED_LOOKUP_URI" data-uid="Android.Provider.CallLog.Calls.CACHED_LOOKUP_URI">
+  CACHED_LOOKUP_URI
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L283"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#CACHED_LOOKUP_URI">https://developer.android.com/reference/android/provider/CallLog.Calls.html#CACHED_LOOKUP_URI</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String CACHED_LOOKUP_URI { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_CACHED_MATCHED_NUMBER_" data-uid="Android.Provider.CallLog.Calls.CACHED_MATCHED_NUMBER*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_CACHED_MATCHED_NUMBER" data-uid="Android.Provider.CallLog.Calls.CACHED_MATCHED_NUMBER">
+  CACHED_MATCHED_NUMBER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L289"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#CACHED_MATCHED_NUMBER">https://developer.android.com/reference/android/provider/CallLog.Calls.html#CACHED_MATCHED_NUMBER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String CACHED_MATCHED_NUMBER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_CACHED_NAME_" data-uid="Android.Provider.CallLog.Calls.CACHED_NAME*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_CACHED_NAME" data-uid="Android.Provider.CallLog.Calls.CACHED_NAME">
+  CACHED_NAME
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L295"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#CACHED_NAME">https://developer.android.com/reference/android/provider/CallLog.Calls.html#CACHED_NAME</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String CACHED_NAME { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_CACHED_NORMALIZED_NUMBER_" data-uid="Android.Provider.CallLog.Calls.CACHED_NORMALIZED_NUMBER*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_CACHED_NORMALIZED_NUMBER" data-uid="Android.Provider.CallLog.Calls.CACHED_NORMALIZED_NUMBER">
+  CACHED_NORMALIZED_NUMBER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L301"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#CACHED_NORMALIZED_NUMBER">https://developer.android.com/reference/android/provider/CallLog.Calls.html#CACHED_NORMALIZED_NUMBER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String CACHED_NORMALIZED_NUMBER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_CACHED_NUMBER_LABEL_" data-uid="Android.Provider.CallLog.Calls.CACHED_NUMBER_LABEL*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_CACHED_NUMBER_LABEL" data-uid="Android.Provider.CallLog.Calls.CACHED_NUMBER_LABEL">
+  CACHED_NUMBER_LABEL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L307"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#CACHED_NUMBER_LABEL">https://developer.android.com/reference/android/provider/CallLog.Calls.html#CACHED_NUMBER_LABEL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String CACHED_NUMBER_LABEL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_CACHED_NUMBER_TYPE_" data-uid="Android.Provider.CallLog.Calls.CACHED_NUMBER_TYPE*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_CACHED_NUMBER_TYPE" data-uid="Android.Provider.CallLog.Calls.CACHED_NUMBER_TYPE">
+  CACHED_NUMBER_TYPE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L313"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#CACHED_NUMBER_TYPE">https://developer.android.com/reference/android/provider/CallLog.Calls.html#CACHED_NUMBER_TYPE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String CACHED_NUMBER_TYPE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_CACHED_PHOTO_ID_" data-uid="Android.Provider.CallLog.Calls.CACHED_PHOTO_ID*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_CACHED_PHOTO_ID" data-uid="Android.Provider.CallLog.Calls.CACHED_PHOTO_ID">
+  CACHED_PHOTO_ID
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L319"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#CACHED_PHOTO_ID">https://developer.android.com/reference/android/provider/CallLog.Calls.html#CACHED_PHOTO_ID</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String CACHED_PHOTO_ID { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_CACHED_PHOTO_URI_" data-uid="Android.Provider.CallLog.Calls.CACHED_PHOTO_URI*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_CACHED_PHOTO_URI" data-uid="Android.Provider.CallLog.Calls.CACHED_PHOTO_URI">
+  CACHED_PHOTO_URI
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L325"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#CACHED_PHOTO_URI">https://developer.android.com/reference/android/provider/CallLog.Calls.html#CACHED_PHOTO_URI</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String CACHED_PHOTO_URI { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_CALL_SCREENING_APP_NAME_" data-uid="Android.Provider.CallLog.Calls.CALL_SCREENING_APP_NAME*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_CALL_SCREENING_APP_NAME" data-uid="Android.Provider.CallLog.Calls.CALL_SCREENING_APP_NAME">
+  CALL_SCREENING_APP_NAME
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L331"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#CALL_SCREENING_APP_NAME">https://developer.android.com/reference/android/provider/CallLog.Calls.html#CALL_SCREENING_APP_NAME</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String CALL_SCREENING_APP_NAME { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_CALL_SCREENING_COMPONENT_NAME_" data-uid="Android.Provider.CallLog.Calls.CALL_SCREENING_COMPONENT_NAME*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_CALL_SCREENING_COMPONENT_NAME" data-uid="Android.Provider.CallLog.Calls.CALL_SCREENING_COMPONENT_NAME">
+  CALL_SCREENING_COMPONENT_NAME
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L337"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#CALL_SCREENING_COMPONENT_NAME">https://developer.android.com/reference/android/provider/CallLog.Calls.html#CALL_SCREENING_COMPONENT_NAME</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String CALL_SCREENING_COMPONENT_NAME { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_COMPOSER_PHOTO_URI_" data-uid="Android.Provider.CallLog.Calls.COMPOSER_PHOTO_URI*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_COMPOSER_PHOTO_URI" data-uid="Android.Provider.CallLog.Calls.COMPOSER_PHOTO_URI">
+  COMPOSER_PHOTO_URI
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L343"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#COMPOSER_PHOTO_URI">https://developer.android.com/reference/android/provider/CallLog.Calls.html#COMPOSER_PHOTO_URI</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String COMPOSER_PHOTO_URI { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_CONTENT_FILTER_URI_" data-uid="Android.Provider.CallLog.Calls.CONTENT_FILTER_URI*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_CONTENT_FILTER_URI" data-uid="Android.Provider.CallLog.Calls.CONTENT_FILTER_URI">
+  CONTENT_FILTER_URI
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#CONTENT_FILTER_URI">https://developer.android.com/reference/android/provider/CallLog.Calls.html#CONTENT_FILTER_URI</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Uri CONTENT_FILTER_URI { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Net.Uri.html">Uri</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_CONTENT_ITEM_TYPE_" data-uid="Android.Provider.CallLog.Calls.CONTENT_ITEM_TYPE*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_CONTENT_ITEM_TYPE" data-uid="Android.Provider.CallLog.Calls.CONTENT_ITEM_TYPE">
+  CONTENT_ITEM_TYPE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L349"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#CONTENT_ITEM_TYPE">https://developer.android.com/reference/android/provider/CallLog.Calls.html#CONTENT_ITEM_TYPE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String CONTENT_ITEM_TYPE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_CONTENT_TYPE_" data-uid="Android.Provider.CallLog.Calls.CONTENT_TYPE*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_CONTENT_TYPE" data-uid="Android.Provider.CallLog.Calls.CONTENT_TYPE">
+  CONTENT_TYPE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L355"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#CONTENT_TYPE">https://developer.android.com/reference/android/provider/CallLog.Calls.html#CONTENT_TYPE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String CONTENT_TYPE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_CONTENT_URI_" data-uid="Android.Provider.CallLog.Calls.CONTENT_URI*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_CONTENT_URI" data-uid="Android.Provider.CallLog.Calls.CONTENT_URI">
+  CONTENT_URI
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#CONTENT_URI">https://developer.android.com/reference/android/provider/CallLog.Calls.html#CONTENT_URI</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Uri CONTENT_URI { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Net.Uri.html">Uri</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_CONTENT_URI_WITH_VOICEMAIL_" data-uid="Android.Provider.CallLog.Calls.CONTENT_URI_WITH_VOICEMAIL*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_CONTENT_URI_WITH_VOICEMAIL" data-uid="Android.Provider.CallLog.Calls.CONTENT_URI_WITH_VOICEMAIL">
+  CONTENT_URI_WITH_VOICEMAIL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#CONTENT_URI_WITH_VOICEMAIL">https://developer.android.com/reference/android/provider/CallLog.Calls.html#CONTENT_URI_WITH_VOICEMAIL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Uri CONTENT_URI_WITH_VOICEMAIL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Net.Uri.html">Uri</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_COUNTRY_ISO_" data-uid="Android.Provider.CallLog.Calls.COUNTRY_ISO*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_COUNTRY_ISO" data-uid="Android.Provider.CallLog.Calls.COUNTRY_ISO">
+  COUNTRY_ISO
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L361"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#COUNTRY_ISO">https://developer.android.com/reference/android/provider/CallLog.Calls.html#COUNTRY_ISO</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String COUNTRY_ISO { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_DATA_USAGE_" data-uid="Android.Provider.CallLog.Calls.DATA_USAGE*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_DATA_USAGE" data-uid="Android.Provider.CallLog.Calls.DATA_USAGE">
+  DATA_USAGE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L367"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#DATA_USAGE">https://developer.android.com/reference/android/provider/CallLog.Calls.html#DATA_USAGE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DATA_USAGE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_DATE_" data-uid="Android.Provider.CallLog.Calls.DATE*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_DATE" data-uid="Android.Provider.CallLog.Calls.DATE">
+  DATE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L373"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#DATE">https://developer.android.com/reference/android/provider/CallLog.Calls.html#DATE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DATE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_DEFAULT_SORT_ORDER_" data-uid="Android.Provider.CallLog.Calls.DEFAULT_SORT_ORDER*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_DEFAULT_SORT_ORDER" data-uid="Android.Provider.CallLog.Calls.DEFAULT_SORT_ORDER">
+  DEFAULT_SORT_ORDER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L379"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#DEFAULT_SORT_ORDER">https://developer.android.com/reference/android/provider/CallLog.Calls.html#DEFAULT_SORT_ORDER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DEFAULT_SORT_ORDER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_DURATION_" data-uid="Android.Provider.CallLog.Calls.DURATION*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_DURATION" data-uid="Android.Provider.CallLog.Calls.DURATION">
+  DURATION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L385"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#DURATION">https://developer.android.com/reference/android/provider/CallLog.Calls.html#DURATION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DURATION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_EXTRA_CALL_TYPE_FILTER_" data-uid="Android.Provider.CallLog.Calls.EXTRA_CALL_TYPE_FILTER*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_EXTRA_CALL_TYPE_FILTER" data-uid="Android.Provider.CallLog.Calls.EXTRA_CALL_TYPE_FILTER">
+  EXTRA_CALL_TYPE_FILTER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L391"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#EXTRA_CALL_TYPE_FILTER">https://developer.android.com/reference/android/provider/CallLog.Calls.html#EXTRA_CALL_TYPE_FILTER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_CALL_TYPE_FILTER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_FEATURES_" data-uid="Android.Provider.CallLog.Calls.FEATURES*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_FEATURES" data-uid="Android.Provider.CallLog.Calls.FEATURES">
+  FEATURES
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L397"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#FEATURES">https://developer.android.com/reference/android/provider/CallLog.Calls.html#FEATURES</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String FEATURES { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_FEATURES_ASSISTED_DIALING_USED_" data-uid="Android.Provider.CallLog.Calls.FEATURES_ASSISTED_DIALING_USED*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_FEATURES_ASSISTED_DIALING_USED" data-uid="Android.Provider.CallLog.Calls.FEATURES_ASSISTED_DIALING_USED">
+  FEATURES_ASSISTED_DIALING_USED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L157"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#FEATURES_ASSISTED_DIALING_USED">https://developer.android.com/reference/android/provider/CallLog.Calls.html#FEATURES_ASSISTED_DIALING_USED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int FEATURES_ASSISTED_DIALING_USED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_FEATURES_HD_CALL_" data-uid="Android.Provider.CallLog.Calls.FEATURES_HD_CALL*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_FEATURES_HD_CALL" data-uid="Android.Provider.CallLog.Calls.FEATURES_HD_CALL">
+  FEATURES_HD_CALL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L163"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#FEATURES_HD_CALL">https://developer.android.com/reference/android/provider/CallLog.Calls.html#FEATURES_HD_CALL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int FEATURES_HD_CALL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_FEATURES_PULLED_EXTERNALLY_" data-uid="Android.Provider.CallLog.Calls.FEATURES_PULLED_EXTERNALLY*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_FEATURES_PULLED_EXTERNALLY" data-uid="Android.Provider.CallLog.Calls.FEATURES_PULLED_EXTERNALLY">
+  FEATURES_PULLED_EXTERNALLY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L169"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#FEATURES_PULLED_EXTERNALLY">https://developer.android.com/reference/android/provider/CallLog.Calls.html#FEATURES_PULLED_EXTERNALLY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int FEATURES_PULLED_EXTERNALLY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_FEATURES_RTT_" data-uid="Android.Provider.CallLog.Calls.FEATURES_RTT*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_FEATURES_RTT" data-uid="Android.Provider.CallLog.Calls.FEATURES_RTT">
+  FEATURES_RTT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L175"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#FEATURES_RTT">https://developer.android.com/reference/android/provider/CallLog.Calls.html#FEATURES_RTT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int FEATURES_RTT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_FEATURES_VIDEO_" data-uid="Android.Provider.CallLog.Calls.FEATURES_VIDEO*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_FEATURES_VIDEO" data-uid="Android.Provider.CallLog.Calls.FEATURES_VIDEO">
+  FEATURES_VIDEO
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L181"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#FEATURES_VIDEO">https://developer.android.com/reference/android/provider/CallLog.Calls.html#FEATURES_VIDEO</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int FEATURES_VIDEO { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_FEATURES_VOLTE_" data-uid="Android.Provider.CallLog.Calls.FEATURES_VOLTE*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_FEATURES_VOLTE" data-uid="Android.Provider.CallLog.Calls.FEATURES_VOLTE">
+  FEATURES_VOLTE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L187"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#FEATURES_VOLTE">https://developer.android.com/reference/android/provider/CallLog.Calls.html#FEATURES_VOLTE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int FEATURES_VOLTE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_FEATURES_WIFI_" data-uid="Android.Provider.CallLog.Calls.FEATURES_WIFI*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_FEATURES_WIFI" data-uid="Android.Provider.CallLog.Calls.FEATURES_WIFI">
+  FEATURES_WIFI
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L193"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#FEATURES_WIFI">https://developer.android.com/reference/android/provider/CallLog.Calls.html#FEATURES_WIFI</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int FEATURES_WIFI { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_GEOCODED_LOCATION_" data-uid="Android.Provider.CallLog.Calls.GEOCODED_LOCATION*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_GEOCODED_LOCATION" data-uid="Android.Provider.CallLog.Calls.GEOCODED_LOCATION">
+  GEOCODED_LOCATION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L403"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#GEOCODED_LOCATION">https://developer.android.com/reference/android/provider/CallLog.Calls.html#GEOCODED_LOCATION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String GEOCODED_LOCATION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_INCOMING_TYPE_" data-uid="Android.Provider.CallLog.Calls.INCOMING_TYPE*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_INCOMING_TYPE" data-uid="Android.Provider.CallLog.Calls.INCOMING_TYPE">
+  INCOMING_TYPE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L199"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#INCOMING_TYPE">https://developer.android.com/reference/android/provider/CallLog.Calls.html#INCOMING_TYPE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int INCOMING_TYPE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_IS_READ_" data-uid="Android.Provider.CallLog.Calls.IS_READ*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_IS_READ" data-uid="Android.Provider.CallLog.Calls.IS_READ">
+  IS_READ
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L409"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#IS_READ">https://developer.android.com/reference/android/provider/CallLog.Calls.html#IS_READ</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String IS_READ { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_IsBridgeAbstract_" data-uid="Android.Provider.CallLog.Calls.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_IsBridgeAbstract" data-uid="Android.Provider.CallLog.Calls.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/AllPackageClasses.cs/#L932"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_IsBridgeCloseable_" data-uid="Android.Provider.CallLog.Calls.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_IsBridgeCloseable" data-uid="Android.Provider.CallLog.Calls.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/AllPackageClasses.cs/#L936"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_IsBridgeInterface_" data-uid="Android.Provider.CallLog.Calls.IsBridgeInterface*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_IsBridgeInterface" data-uid="Android.Provider.CallLog.Calls.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/AllPackageClasses.cs/#L940"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_IsBridgeStatic_" data-uid="Android.Provider.CallLog.Calls.IsBridgeStatic*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_IsBridgeStatic" data-uid="Android.Provider.CallLog.Calls.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/AllPackageClasses.cs/#L944"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_LAST_MODIFIED_" data-uid="Android.Provider.CallLog.Calls.LAST_MODIFIED*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_LAST_MODIFIED" data-uid="Android.Provider.CallLog.Calls.LAST_MODIFIED">
+  LAST_MODIFIED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L415"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#LAST_MODIFIED">https://developer.android.com/reference/android/provider/CallLog.Calls.html#LAST_MODIFIED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String LAST_MODIFIED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_LIMIT_PARAM_KEY_" data-uid="Android.Provider.CallLog.Calls.LIMIT_PARAM_KEY*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_LIMIT_PARAM_KEY" data-uid="Android.Provider.CallLog.Calls.LIMIT_PARAM_KEY">
+  LIMIT_PARAM_KEY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L421"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#LIMIT_PARAM_KEY">https://developer.android.com/reference/android/provider/CallLog.Calls.html#LIMIT_PARAM_KEY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String LIMIT_PARAM_KEY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_LOCATION_" data-uid="Android.Provider.CallLog.Calls.LOCATION*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_LOCATION" data-uid="Android.Provider.CallLog.Calls.LOCATION">
+  LOCATION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L427"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#LOCATION">https://developer.android.com/reference/android/provider/CallLog.Calls.html#LOCATION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String LOCATION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_MISSED_REASON_" data-uid="Android.Provider.CallLog.Calls.MISSED_REASON*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_MISSED_REASON" data-uid="Android.Provider.CallLog.Calls.MISSED_REASON">
+  MISSED_REASON
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L433"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#MISSED_REASON">https://developer.android.com/reference/android/provider/CallLog.Calls.html#MISSED_REASON</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String MISSED_REASON { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_MISSED_REASON_NOT_MISSED_" data-uid="Android.Provider.CallLog.Calls.MISSED_REASON_NOT_MISSED*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_MISSED_REASON_NOT_MISSED" data-uid="Android.Provider.CallLog.Calls.MISSED_REASON_NOT_MISSED">
+  MISSED_REASON_NOT_MISSED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L535"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#MISSED_REASON_NOT_MISSED">https://developer.android.com/reference/android/provider/CallLog.Calls.html#MISSED_REASON_NOT_MISSED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long MISSED_REASON_NOT_MISSED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_MISSED_TYPE_" data-uid="Android.Provider.CallLog.Calls.MISSED_TYPE*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_MISSED_TYPE" data-uid="Android.Provider.CallLog.Calls.MISSED_TYPE">
+  MISSED_TYPE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L205"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#MISSED_TYPE">https://developer.android.com/reference/android/provider/CallLog.Calls.html#MISSED_TYPE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int MISSED_TYPE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_NEW_" data-uid="Android.Provider.CallLog.Calls.NEW*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_NEW" data-uid="Android.Provider.CallLog.Calls.NEW">
+  NEW
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L439"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#NEW">https://developer.android.com/reference/android/provider/CallLog.Calls.html#NEW</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String NEW { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_NUMBER_" data-uid="Android.Provider.CallLog.Calls.NUMBER*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_NUMBER" data-uid="Android.Provider.CallLog.Calls.NUMBER">
+  NUMBER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L445"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#NUMBER">https://developer.android.com/reference/android/provider/CallLog.Calls.html#NUMBER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String NUMBER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_NUMBER_PRESENTATION_" data-uid="Android.Provider.CallLog.Calls.NUMBER_PRESENTATION*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_NUMBER_PRESENTATION" data-uid="Android.Provider.CallLog.Calls.NUMBER_PRESENTATION">
+  NUMBER_PRESENTATION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L451"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#NUMBER_PRESENTATION">https://developer.android.com/reference/android/provider/CallLog.Calls.html#NUMBER_PRESENTATION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String NUMBER_PRESENTATION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_OFFSET_PARAM_KEY_" data-uid="Android.Provider.CallLog.Calls.OFFSET_PARAM_KEY*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_OFFSET_PARAM_KEY" data-uid="Android.Provider.CallLog.Calls.OFFSET_PARAM_KEY">
+  OFFSET_PARAM_KEY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L457"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#OFFSET_PARAM_KEY">https://developer.android.com/reference/android/provider/CallLog.Calls.html#OFFSET_PARAM_KEY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String OFFSET_PARAM_KEY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_OUTGOING_TYPE_" data-uid="Android.Provider.CallLog.Calls.OUTGOING_TYPE*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_OUTGOING_TYPE" data-uid="Android.Provider.CallLog.Calls.OUTGOING_TYPE">
+  OUTGOING_TYPE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L211"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#OUTGOING_TYPE">https://developer.android.com/reference/android/provider/CallLog.Calls.html#OUTGOING_TYPE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int OUTGOING_TYPE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_PHONE_ACCOUNT_COMPONENT_NAME_" data-uid="Android.Provider.CallLog.Calls.PHONE_ACCOUNT_COMPONENT_NAME*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_PHONE_ACCOUNT_COMPONENT_NAME" data-uid="Android.Provider.CallLog.Calls.PHONE_ACCOUNT_COMPONENT_NAME">
+  PHONE_ACCOUNT_COMPONENT_NAME
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L463"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#PHONE_ACCOUNT_COMPONENT_NAME">https://developer.android.com/reference/android/provider/CallLog.Calls.html#PHONE_ACCOUNT_COMPONENT_NAME</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String PHONE_ACCOUNT_COMPONENT_NAME { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_PHONE_ACCOUNT_ID_" data-uid="Android.Provider.CallLog.Calls.PHONE_ACCOUNT_ID*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_PHONE_ACCOUNT_ID" data-uid="Android.Provider.CallLog.Calls.PHONE_ACCOUNT_ID">
+  PHONE_ACCOUNT_ID
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L469"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#PHONE_ACCOUNT_ID">https://developer.android.com/reference/android/provider/CallLog.Calls.html#PHONE_ACCOUNT_ID</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String PHONE_ACCOUNT_ID { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_POST_DIAL_DIGITS_" data-uid="Android.Provider.CallLog.Calls.POST_DIAL_DIGITS*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_POST_DIAL_DIGITS" data-uid="Android.Provider.CallLog.Calls.POST_DIAL_DIGITS">
+  POST_DIAL_DIGITS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L475"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#POST_DIAL_DIGITS">https://developer.android.com/reference/android/provider/CallLog.Calls.html#POST_DIAL_DIGITS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String POST_DIAL_DIGITS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_PRESENTATION_ALLOWED_" data-uid="Android.Provider.CallLog.Calls.PRESENTATION_ALLOWED*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_PRESENTATION_ALLOWED" data-uid="Android.Provider.CallLog.Calls.PRESENTATION_ALLOWED">
+  PRESENTATION_ALLOWED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L217"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#PRESENTATION_ALLOWED">https://developer.android.com/reference/android/provider/CallLog.Calls.html#PRESENTATION_ALLOWED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int PRESENTATION_ALLOWED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_PRESENTATION_PAYPHONE_" data-uid="Android.Provider.CallLog.Calls.PRESENTATION_PAYPHONE*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_PRESENTATION_PAYPHONE" data-uid="Android.Provider.CallLog.Calls.PRESENTATION_PAYPHONE">
+  PRESENTATION_PAYPHONE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L223"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#PRESENTATION_PAYPHONE">https://developer.android.com/reference/android/provider/CallLog.Calls.html#PRESENTATION_PAYPHONE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int PRESENTATION_PAYPHONE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_PRESENTATION_RESTRICTED_" data-uid="Android.Provider.CallLog.Calls.PRESENTATION_RESTRICTED*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_PRESENTATION_RESTRICTED" data-uid="Android.Provider.CallLog.Calls.PRESENTATION_RESTRICTED">
+  PRESENTATION_RESTRICTED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L229"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#PRESENTATION_RESTRICTED">https://developer.android.com/reference/android/provider/CallLog.Calls.html#PRESENTATION_RESTRICTED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int PRESENTATION_RESTRICTED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_PRESENTATION_UNAVAILABLE_" data-uid="Android.Provider.CallLog.Calls.PRESENTATION_UNAVAILABLE*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_PRESENTATION_UNAVAILABLE" data-uid="Android.Provider.CallLog.Calls.PRESENTATION_UNAVAILABLE">
+  PRESENTATION_UNAVAILABLE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L235"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#PRESENTATION_UNAVAILABLE">https://developer.android.com/reference/android/provider/CallLog.Calls.html#PRESENTATION_UNAVAILABLE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int PRESENTATION_UNAVAILABLE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_PRESENTATION_UNKNOWN_" data-uid="Android.Provider.CallLog.Calls.PRESENTATION_UNKNOWN*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_PRESENTATION_UNKNOWN" data-uid="Android.Provider.CallLog.Calls.PRESENTATION_UNKNOWN">
+  PRESENTATION_UNKNOWN
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L241"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#PRESENTATION_UNKNOWN">https://developer.android.com/reference/android/provider/CallLog.Calls.html#PRESENTATION_UNKNOWN</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int PRESENTATION_UNKNOWN { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_PRIORITY_" data-uid="Android.Provider.CallLog.Calls.PRIORITY*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_PRIORITY" data-uid="Android.Provider.CallLog.Calls.PRIORITY">
+  PRIORITY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L481"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#PRIORITY">https://developer.android.com/reference/android/provider/CallLog.Calls.html#PRIORITY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String PRIORITY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_PRIORITY_NORMAL_" data-uid="Android.Provider.CallLog.Calls.PRIORITY_NORMAL*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_PRIORITY_NORMAL" data-uid="Android.Provider.CallLog.Calls.PRIORITY_NORMAL">
+  PRIORITY_NORMAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L247"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#PRIORITY_NORMAL">https://developer.android.com/reference/android/provider/CallLog.Calls.html#PRIORITY_NORMAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int PRIORITY_NORMAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_PRIORITY_URGENT_" data-uid="Android.Provider.CallLog.Calls.PRIORITY_URGENT*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_PRIORITY_URGENT" data-uid="Android.Provider.CallLog.Calls.PRIORITY_URGENT">
+  PRIORITY_URGENT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L253"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#PRIORITY_URGENT">https://developer.android.com/reference/android/provider/CallLog.Calls.html#PRIORITY_URGENT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int PRIORITY_URGENT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_REJECTED_TYPE_" data-uid="Android.Provider.CallLog.Calls.REJECTED_TYPE*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_REJECTED_TYPE" data-uid="Android.Provider.CallLog.Calls.REJECTED_TYPE">
+  REJECTED_TYPE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L259"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#REJECTED_TYPE">https://developer.android.com/reference/android/provider/CallLog.Calls.html#REJECTED_TYPE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int REJECTED_TYPE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_SUBJECT_" data-uid="Android.Provider.CallLog.Calls.SUBJECT*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_SUBJECT" data-uid="Android.Provider.CallLog.Calls.SUBJECT">
+  SUBJECT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L487"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#SUBJECT">https://developer.android.com/reference/android/provider/CallLog.Calls.html#SUBJECT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String SUBJECT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_TRANSCRIPTION_" data-uid="Android.Provider.CallLog.Calls.TRANSCRIPTION*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_TRANSCRIPTION" data-uid="Android.Provider.CallLog.Calls.TRANSCRIPTION">
+  TRANSCRIPTION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L493"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#TRANSCRIPTION">https://developer.android.com/reference/android/provider/CallLog.Calls.html#TRANSCRIPTION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String TRANSCRIPTION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_TYPE_" data-uid="Android.Provider.CallLog.Calls.TYPE*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_TYPE" data-uid="Android.Provider.CallLog.Calls.TYPE">
+  TYPE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L499"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#TYPE">https://developer.android.com/reference/android/provider/CallLog.Calls.html#TYPE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String TYPE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_USER_MISSED_CALL_FILTERS_TIMEOUT_" data-uid="Android.Provider.CallLog.Calls.USER_MISSED_CALL_FILTERS_TIMEOUT*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_USER_MISSED_CALL_FILTERS_TIMEOUT" data-uid="Android.Provider.CallLog.Calls.USER_MISSED_CALL_FILTERS_TIMEOUT">
+  USER_MISSED_CALL_FILTERS_TIMEOUT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L541"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#USER_MISSED_CALL_FILTERS_TIMEOUT">https://developer.android.com/reference/android/provider/CallLog.Calls.html#USER_MISSED_CALL_FILTERS_TIMEOUT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long USER_MISSED_CALL_FILTERS_TIMEOUT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_USER_MISSED_CALL_SCREENING_SERVICE_SILENCED_" data-uid="Android.Provider.CallLog.Calls.USER_MISSED_CALL_SCREENING_SERVICE_SILENCED*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_USER_MISSED_CALL_SCREENING_SERVICE_SILENCED" data-uid="Android.Provider.CallLog.Calls.USER_MISSED_CALL_SCREENING_SERVICE_SILENCED">
+  USER_MISSED_CALL_SCREENING_SERVICE_SILENCED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L547"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#USER_MISSED_CALL_SCREENING_SERVICE_SILENCED">https://developer.android.com/reference/android/provider/CallLog.Calls.html#USER_MISSED_CALL_SCREENING_SERVICE_SILENCED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long USER_MISSED_CALL_SCREENING_SERVICE_SILENCED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_USER_MISSED_DND_MODE_" data-uid="Android.Provider.CallLog.Calls.USER_MISSED_DND_MODE*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_USER_MISSED_DND_MODE" data-uid="Android.Provider.CallLog.Calls.USER_MISSED_DND_MODE">
+  USER_MISSED_DND_MODE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L553"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#USER_MISSED_DND_MODE">https://developer.android.com/reference/android/provider/CallLog.Calls.html#USER_MISSED_DND_MODE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long USER_MISSED_DND_MODE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_USER_MISSED_LOW_RING_VOLUME_" data-uid="Android.Provider.CallLog.Calls.USER_MISSED_LOW_RING_VOLUME*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_USER_MISSED_LOW_RING_VOLUME" data-uid="Android.Provider.CallLog.Calls.USER_MISSED_LOW_RING_VOLUME">
+  USER_MISSED_LOW_RING_VOLUME
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L559"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#USER_MISSED_LOW_RING_VOLUME">https://developer.android.com/reference/android/provider/CallLog.Calls.html#USER_MISSED_LOW_RING_VOLUME</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long USER_MISSED_LOW_RING_VOLUME { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_USER_MISSED_NO_ANSWER_" data-uid="Android.Provider.CallLog.Calls.USER_MISSED_NO_ANSWER*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_USER_MISSED_NO_ANSWER" data-uid="Android.Provider.CallLog.Calls.USER_MISSED_NO_ANSWER">
+  USER_MISSED_NO_ANSWER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L565"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#USER_MISSED_NO_ANSWER">https://developer.android.com/reference/android/provider/CallLog.Calls.html#USER_MISSED_NO_ANSWER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long USER_MISSED_NO_ANSWER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_USER_MISSED_NO_VIBRATE_" data-uid="Android.Provider.CallLog.Calls.USER_MISSED_NO_VIBRATE*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_USER_MISSED_NO_VIBRATE" data-uid="Android.Provider.CallLog.Calls.USER_MISSED_NO_VIBRATE">
+  USER_MISSED_NO_VIBRATE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L571"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#USER_MISSED_NO_VIBRATE">https://developer.android.com/reference/android/provider/CallLog.Calls.html#USER_MISSED_NO_VIBRATE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long USER_MISSED_NO_VIBRATE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_USER_MISSED_SHORT_RING_" data-uid="Android.Provider.CallLog.Calls.USER_MISSED_SHORT_RING*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_USER_MISSED_SHORT_RING" data-uid="Android.Provider.CallLog.Calls.USER_MISSED_SHORT_RING">
+  USER_MISSED_SHORT_RING
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L577"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#USER_MISSED_SHORT_RING">https://developer.android.com/reference/android/provider/CallLog.Calls.html#USER_MISSED_SHORT_RING</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long USER_MISSED_SHORT_RING { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_VIA_NUMBER_" data-uid="Android.Provider.CallLog.Calls.VIA_NUMBER*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_VIA_NUMBER" data-uid="Android.Provider.CallLog.Calls.VIA_NUMBER">
+  VIA_NUMBER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L505"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#VIA_NUMBER">https://developer.android.com/reference/android/provider/CallLog.Calls.html#VIA_NUMBER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String VIA_NUMBER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_VOICEMAIL_TYPE_" data-uid="Android.Provider.CallLog.Calls.VOICEMAIL_TYPE*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_VOICEMAIL_TYPE" data-uid="Android.Provider.CallLog.Calls.VOICEMAIL_TYPE">
+  VOICEMAIL_TYPE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L265"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#VOICEMAIL_TYPE">https://developer.android.com/reference/android/provider/CallLog.Calls.html#VOICEMAIL_TYPE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int VOICEMAIL_TYPE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CallLog_Calls_VOICEMAIL_URI_" data-uid="Android.Provider.CallLog.Calls.VOICEMAIL_URI*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_VOICEMAIL_URI" data-uid="Android.Provider.CallLog.Calls.VOICEMAIL_URI">
+  VOICEMAIL_URI
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L511"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#VOICEMAIL_URI">https://developer.android.com/reference/android/provider/CallLog.Calls.html#VOICEMAIL_URI</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String VOICEMAIL_URI { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_Provider_CallLog_Calls_GetLastOutgoingCall_" data-uid="Android.Provider.CallLog.Calls.GetLastOutgoingCall*"></a>
+
+  <h3 id="Android_Provider_CallLog_Calls_GetLastOutgoingCall_Android_Content_Context_" data-uid="Android.Provider.CallLog.Calls.GetLastOutgoingCall(Android.Content.Context)">
+  GetLastOutgoingCall(Context)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L589"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CallLog.Calls.html#getLastOutgoingCall(android.content.Context)">https://developer.android.com/reference/android/provider/CallLog.Calls.html#getLastOutgoingCall(android.content.Context)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String GetLastOutgoingCall(Context arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CallLog.cs/#L65" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

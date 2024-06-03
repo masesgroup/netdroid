@@ -1,0 +1,4512 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class UnicodeSet | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class UnicodeSet | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/icu/text/UnicodeSet.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_Icu_Text_UnicodeSet.md&amp;value=---%0Auid%3A%20Android.Icu.Text.UnicodeSet%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.Icu.Text.UnicodeSet">
+
+
+
+  <h1 id="Android_Icu_Text_UnicodeSet" data-uid="Android.Icu.Text.UnicodeSet" class="text-break">
+Class UnicodeSet  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.Icu.html">Icu</a>.<a class="xref" href="Android.Icu.Text.html">Text</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html">https://developer.android.com/reference/android/icu/text/UnicodeSet.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class UnicodeSet : UnicodeFilter, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IUnicodeMatcher, IIterable&lt;String&gt;, IComparable&lt;UnicodeSet&gt;, IFreezable&lt;UnicodeSet&gt;, ICloneable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.Icu.Text.UnicodeMatcher.html">UnicodeMatcher</a>&gt;</div>
+      <div><a class="xref" href="Android.Icu.Text.UnicodeMatcher.html">UnicodeMatcher</a></div>
+      <div><a class="xref" href="Android.Icu.Text.UnicodeFilter.html">UnicodeFilter</a></div>
+      <div><span class="xref">UnicodeSet</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+      <div><a class="xref" href="Android.Icu.Text.IUnicodeMatcher.html">IUnicodeMatcher</a></div>
+      <div><a class="xref" href="Java.Lang.IIterable-1.html">IIterable</a>&lt;<a class="xref" href="Java.Lang.String.html">String</a>&gt;</div>
+      <div><a class="xref" href="Java.Lang.IComparable-1.html">IComparable</a>&lt;<a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a>&gt;</div>
+      <div><a class="xref" href="Android.Icu.Util.IFreezable-1.html">IFreezable</a>&lt;<a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a>&gt;</div>
+      <div><a class="xref" href="Java.Lang.ICloneable.html">ICloneable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Android.Icu.Text.UnicodeFilter.html#Android_Icu_Text_UnicodeFilter_Contains_System_Int32_">UnicodeFilter.Contains(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.UnicodeFilter.html#Android_Icu_Text_UnicodeFilter_Matches_Android_Icu_Text_Replaceable_System_Int32___System_Int32_System_Boolean_">UnicodeFilter.Matches(Replaceable, int[], int, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.UnicodeMatcher.html#Android_Icu_Text_UnicodeMatcher_ETHER">UnicodeMatcher.ETHER</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.UnicodeMatcher.html#Android_Icu_Text_UnicodeMatcher_U_MATCH">UnicodeMatcher.U_MATCH</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.UnicodeMatcher.html#Android_Icu_Text_UnicodeMatcher_U_MISMATCH">UnicodeMatcher.U_MISMATCH</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.UnicodeMatcher.html#Android_Icu_Text_UnicodeMatcher_U_PARTIAL_MATCH">UnicodeMatcher.U_PARTIAL_MATCH</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.UnicodeMatcher.html#Android_Icu_Text_UnicodeMatcher_MatchesIndexValue_System_Int32_">UnicodeMatcher.MatchesIndexValue(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.UnicodeMatcher.html#Android_Icu_Text_UnicodeMatcher_ToPattern_System_Boolean_">UnicodeMatcher.ToPattern(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.UnicodeMatcher.html#Android_Icu_Text_UnicodeMatcher_AddMatchSetTo_Android_Icu_Text_UnicodeSet_">UnicodeMatcher.AddMatchSetTo(UnicodeSet)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;UnicodeMatcher&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;UnicodeMatcher&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;UnicodeMatcher&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;UnicodeMatcher&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;UnicodeMatcher&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;UnicodeMatcher&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;UnicodeMatcher&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;UnicodeMatcher&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;UnicodeMatcher&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;UnicodeMatcher&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;UnicodeMatcher&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;UnicodeMatcher&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;UnicodeMatcher&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;UnicodeMatcher&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;UnicodeMatcher&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;UnicodeMatcher&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;UnicodeMatcher&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;UnicodeMatcher&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;UnicodeMatcher&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;UnicodeMatcher&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;UnicodeMatcher&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;UnicodeMatcher&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;UnicodeMatcher&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;UnicodeMatcher&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;UnicodeMatcher&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;UnicodeMatcher&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;UnicodeMatcher&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;UnicodeMatcher&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;UnicodeMatcher&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;UnicodeMatcher&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;UnicodeMatcher&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;UnicodeMatcher&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;UnicodeMatcher&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;UnicodeMatcher&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;UnicodeMatcher&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;UnicodeMatcher&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;UnicodeMatcher&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;UnicodeMatcher&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;UnicodeMatcher&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;UnicodeMatcher&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;UnicodeMatcher&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;UnicodeMatcher&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;UnicodeMatcher&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;UnicodeMatcher&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;UnicodeMatcher&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;UnicodeMatcher&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;UnicodeMatcher&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;UnicodeMatcher&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;UnicodeMatcher&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;UnicodeMatcher&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_Icu_Text_UnicodeSet__ctor_" data-uid="Android.Icu.Text.UnicodeSet.#ctor*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet__ctor" data-uid="Android.Icu.Text.UnicodeSet.#ctor">
+  UnicodeSet()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/AllPackageClasses.cs/#L4718"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnicodeSet()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet__ctor_" data-uid="Android.Icu.Text.UnicodeSet.#ctor*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet__ctor_Android_Icu_Text_UnicodeSet_" data-uid="Android.Icu.Text.UnicodeSet.#ctor(Android.Icu.Text.UnicodeSet)">
+  UnicodeSet(UnicodeSet)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#%3Cinit%3E(android.icu.text.UnicodeSet)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#%3Cinit%3E(android.icu.text.UnicodeSet)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnicodeSet(UnicodeSet arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet__ctor_" data-uid="Android.Icu.Text.UnicodeSet.#ctor*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet__ctor_Java_Lang_String_" data-uid="Android.Icu.Text.UnicodeSet.#ctor(Java.Lang.String)">
+  UnicodeSet(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L100"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#%3Cinit%3E(java.lang.String)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#%3Cinit%3E(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnicodeSet(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet__ctor_" data-uid="Android.Icu.Text.UnicodeSet.#ctor*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet__ctor_Java_Lang_String_Java_Text_ParsePosition_Android_Icu_Text_SymbolTable_" data-uid="Android.Icu.Text.UnicodeSet.#ctor(Java.Lang.String,Java.Text.ParsePosition,Android.Icu.Text.SymbolTable)">
+  UnicodeSet(String, ParsePosition, SymbolTable)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L92"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#%3Cinit%3E(java.lang.String,java.text.ParsePosition,android.icu.text.SymbolTable)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#%3Cinit%3E(java.lang.String,java.text.ParsePosition,android.icu.text.SymbolTable)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnicodeSet(String arg0, ParsePosition arg1, SymbolTable arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Text.ParsePosition.html">ParsePosition</a></dt>
+    <dd><p><a class="xref" href="Java.Text.ParsePosition.html">ParsePosition</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Icu.Text.SymbolTable.html">SymbolTable</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.SymbolTable.html">SymbolTable</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet__ctor_" data-uid="Android.Icu.Text.UnicodeSet.#ctor*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet__ctor_Java_Lang_String_Java_Text_ParsePosition_Android_Icu_Text_SymbolTable_System_Int32_" data-uid="Android.Icu.Text.UnicodeSet.#ctor(Java.Lang.String,Java.Text.ParsePosition,Android.Icu.Text.SymbolTable,System.Int32)">
+  UnicodeSet(String, ParsePosition, SymbolTable, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L82"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#%3Cinit%3E(java.lang.String,java.text.ParsePosition,android.icu.text.SymbolTable,int)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#%3Cinit%3E(java.lang.String,java.text.ParsePosition,android.icu.text.SymbolTable,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnicodeSet(String arg0, ParsePosition arg1, SymbolTable arg2, int arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Text.ParsePosition.html">ParsePosition</a></dt>
+    <dd><p><a class="xref" href="Java.Text.ParsePosition.html">ParsePosition</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Icu.Text.SymbolTable.html">SymbolTable</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.SymbolTable.html">SymbolTable</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet__ctor_" data-uid="Android.Icu.Text.UnicodeSet.#ctor*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet__ctor_Java_Lang_String_System_Boolean_" data-uid="Android.Icu.Text.UnicodeSet.#ctor(Java.Lang.String,System.Boolean)">
+  UnicodeSet(String, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#%3Cinit%3E(java.lang.String,boolean)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#%3Cinit%3E(java.lang.String,boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnicodeSet(String arg0, bool arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet__ctor_" data-uid="Android.Icu.Text.UnicodeSet.#ctor*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet__ctor_Java_Lang_String_System_Int32_" data-uid="Android.Icu.Text.UnicodeSet.#ctor(Java.Lang.String,System.Int32)">
+  UnicodeSet(String, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#%3Cinit%3E(java.lang.String,int)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#%3Cinit%3E(java.lang.String,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnicodeSet(String arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet__ctor_" data-uid="Android.Icu.Text.UnicodeSet.#ctor*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet__ctor_System_Int32_System_Int32_" data-uid="Android.Icu.Text.UnicodeSet.#ctor(System.Int32,System.Int32)">
+  UnicodeSet(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#%3Cinit%3E(int,int)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#%3Cinit%3E(int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnicodeSet(int arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet__ctor_" data-uid="Android.Icu.Text.UnicodeSet.#ctor*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet__ctor_System_Int32___" data-uid="Android.Icu.Text.UnicodeSet.#ctor(System.Int32[])">
+  UnicodeSet(params int[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L53"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#%3Cinit%3E(int[])">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#%3Cinit%3E(int[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnicodeSet(params int[] arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet__ctor_" data-uid="Android.Icu.Text.UnicodeSet.#ctor*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet__ctor_System_Object___" data-uid="Android.Icu.Text.UnicodeSet.#ctor(System.Object[])">
+  UnicodeSet(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/AllPackageClasses.cs/#L4722"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnicodeSet(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_Icu_Text_UnicodeSet_ADD_CASE_MAPPINGS_" data-uid="Android.Icu.Text.UnicodeSet.ADD_CASE_MAPPINGS*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_ADD_CASE_MAPPINGS" data-uid="Android.Icu.Text.UnicodeSet.ADD_CASE_MAPPINGS">
+  ADD_CASE_MAPPINGS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L135"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#ADD_CASE_MAPPINGS">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#ADD_CASE_MAPPINGS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ADD_CASE_MAPPINGS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_ALL_CODE_POINTS_" data-uid="Android.Icu.Text.UnicodeSet.ALL_CODE_POINTS*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_ALL_CODE_POINTS" data-uid="Android.Icu.Text.UnicodeSet.ALL_CODE_POINTS">
+  ALL_CODE_POINTS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L123"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#ALL_CODE_POINTS">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#ALL_CODE_POINTS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static UnicodeSet ALL_CODE_POINTS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_BridgeClassName_" data-uid="Android.Icu.Text.UnicodeSet.BridgeClassName*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_BridgeClassName" data-uid="Android.Icu.Text.UnicodeSet.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/AllPackageClasses.cs/#L4729"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_CASE_" data-uid="Android.Icu.Text.UnicodeSet.CASE*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_CASE" data-uid="Android.Icu.Text.UnicodeSet.CASE">
+  CASE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L141"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#CASE">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#CASE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CASE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_CASE_INSENSITIVE_" data-uid="Android.Icu.Text.UnicodeSet.CASE_INSENSITIVE*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_CASE_INSENSITIVE" data-uid="Android.Icu.Text.UnicodeSet.CASE_INSENSITIVE">
+  CASE_INSENSITIVE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L147"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#CASE_INSENSITIVE">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#CASE_INSENSITIVE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CASE_INSENSITIVE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_EMPTY_" data-uid="Android.Icu.Text.UnicodeSet.EMPTY*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_EMPTY" data-uid="Android.Icu.Text.UnicodeSet.EMPTY">
+  EMPTY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L129"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#EMPTY">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#EMPTY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static UnicodeSet EMPTY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_IGNORE_SPACE_" data-uid="Android.Icu.Text.UnicodeSet.IGNORE_SPACE*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_IGNORE_SPACE" data-uid="Android.Icu.Text.UnicodeSet.IGNORE_SPACE">
+  IGNORE_SPACE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L153"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#IGNORE_SPACE">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#IGNORE_SPACE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int IGNORE_SPACE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_IsBridgeAbstract_" data-uid="Android.Icu.Text.UnicodeSet.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_IsBridgeAbstract" data-uid="Android.Icu.Text.UnicodeSet.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/AllPackageClasses.cs/#L4733"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_IsBridgeCloseable_" data-uid="Android.Icu.Text.UnicodeSet.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_IsBridgeCloseable" data-uid="Android.Icu.Text.UnicodeSet.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/AllPackageClasses.cs/#L4737"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_IsBridgeInterface_" data-uid="Android.Icu.Text.UnicodeSet.IsBridgeInterface*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_IsBridgeInterface" data-uid="Android.Icu.Text.UnicodeSet.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/AllPackageClasses.cs/#L4741"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_IsBridgeStatic_" data-uid="Android.Icu.Text.UnicodeSet.IsBridgeStatic*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_IsBridgeStatic" data-uid="Android.Icu.Text.UnicodeSet.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/AllPackageClasses.cs/#L4745"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_MAX_VALUE_" data-uid="Android.Icu.Text.UnicodeSet.MAX_VALUE*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_MAX_VALUE" data-uid="Android.Icu.Text.UnicodeSet.MAX_VALUE">
+  MAX_VALUE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L159"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#MAX_VALUE">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#MAX_VALUE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int MAX_VALUE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_MIN_VALUE_" data-uid="Android.Icu.Text.UnicodeSet.MIN_VALUE*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_MIN_VALUE" data-uid="Android.Icu.Text.UnicodeSet.MIN_VALUE">
+  MIN_VALUE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L165"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#MIN_VALUE">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#MIN_VALUE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int MIN_VALUE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_Icu_Text_UnicodeSet_Add_" data-uid="Android.Icu.Text.UnicodeSet.Add*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_Add_Java_Lang_CharSequence_" data-uid="Android.Icu.Text.UnicodeSet.Add(Java.Lang.CharSequence)">
+  Add(CharSequence)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L565"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#add(java.lang.CharSequence)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#add(java.lang.CharSequence)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnicodeSet Add(CharSequence arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_Add_" data-uid="Android.Icu.Text.UnicodeSet.Add*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_Add_Java_Lang_Iterable_System_Object__" data-uid="Android.Icu.Text.UnicodeSet.Add(Java.Lang.Iterable{System.Object})">
+  Add(Iterable&lt;object&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L269"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#add(java.lang.Iterable)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#add(java.lang.Iterable)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnicodeSet Add(Iterable&lt;object&gt; arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.Iterable-1.html">Iterable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Lang.Iterable.html">Iterable</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_Add_" data-uid="Android.Icu.Text.UnicodeSet.Add*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_Add_System_Int32_" data-uid="Android.Icu.Text.UnicodeSet.Add(System.Int32)">
+  Add(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L556"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#add(int)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#add(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnicodeSet Add(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_Add_" data-uid="Android.Icu.Text.UnicodeSet.Add*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_Add_System_Int32_System_Int32_" data-uid="Android.Icu.Text.UnicodeSet.Add(System.Int32,System.Int32)">
+  Add(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L260"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#add(int,int)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#add(int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnicodeSet Add(int arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_AddAll_" data-uid="Android.Icu.Text.UnicodeSet.AddAll*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_AddAll_Android_Icu_Text_UnicodeSet_" data-uid="Android.Icu.Text.UnicodeSet.AddAll(Android.Icu.Text.UnicodeSet)">
+  AddAll(UnicodeSet)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L278"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#addAll(android.icu.text.UnicodeSet)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#addAll(android.icu.text.UnicodeSet)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnicodeSet AddAll(UnicodeSet arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_AddAll_" data-uid="Android.Icu.Text.UnicodeSet.AddAll*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_AddAll_Java_Lang_CharSequence_" data-uid="Android.Icu.Text.UnicodeSet.AddAll(Java.Lang.CharSequence)">
+  AddAll(CharSequence)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L574"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#addAll(java.lang.CharSequence)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#addAll(java.lang.CharSequence)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnicodeSet AddAll(CharSequence arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_AddAll_" data-uid="Android.Icu.Text.UnicodeSet.AddAll*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_AddAll_Java_Lang_Iterable_System_Object__" data-uid="Android.Icu.Text.UnicodeSet.AddAll(Java.Lang.Iterable{System.Object})">
+  AddAll(Iterable&lt;object&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L297"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#addAll(java.lang.Iterable)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#addAll(java.lang.Iterable)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnicodeSet AddAll(Iterable&lt;object&gt; arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.Iterable-1.html">Iterable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Lang.Iterable.html">Iterable</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_AddAll_" data-uid="Android.Icu.Text.UnicodeSet.AddAll*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_AddAll_System_Int32_System_Int32_" data-uid="Android.Icu.Text.UnicodeSet.AddAll(System.Int32,System.Int32)">
+  AddAll(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L288"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#addAll(int,int)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#addAll(int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnicodeSet AddAll(int arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_AddAllTo_" data-uid="Android.Icu.Text.UnicodeSet.AddAllTo*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_AddAllTo__1___0_" data-uid="Android.Icu.Text.UnicodeSet.AddAllTo``1(``0)">
+  AddAllTo&lt;T&gt;(T)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L250"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#addAllTo(java.util.Collection)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#addAllTo(java.util.Collection)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T AddAllTo&lt;T&gt;(T arg0) where T : Collection&lt;String&gt;</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <span class="xref">T</span></dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>Java.Util.Collection&lt;Java.Lang.String&gt;</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_AddAll_" data-uid="Android.Icu.Text.UnicodeSet.AddAll*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_AddAll__1___0___" data-uid="Android.Icu.Text.UnicodeSet.AddAll``1(``0[])">
+  AddAll&lt;T&gt;(params T[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L200"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#addAll(java.lang.CharSequence[])">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#addAll(java.lang.CharSequence[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnicodeSet AddAll&lt;T&gt;(params T[] arg0) where T : ICharSequence, new()</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> T[]</dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p><a class="xref" href="Java.Lang.ICharSequence.html">ICharSequence</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_ApplyIntPropertyValue_" data-uid="Android.Icu.Text.UnicodeSet.ApplyIntPropertyValue*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_ApplyIntPropertyValue_System_Int32_System_Int32_" data-uid="Android.Icu.Text.UnicodeSet.ApplyIntPropertyValue(System.Int32,System.Int32)">
+  ApplyIntPropertyValue(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L307"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#applyIntPropertyValue(int,int)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#applyIntPropertyValue(int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnicodeSet ApplyIntPropertyValue(int arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_ApplyPattern_" data-uid="Android.Icu.Text.UnicodeSet.ApplyPattern*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_ApplyPattern_Java_Lang_String_" data-uid="Android.Icu.Text.UnicodeSet.ApplyPattern(Java.Lang.String)">
+  ApplyPattern(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L583"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#applyPattern(java.lang.String)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#applyPattern(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnicodeSet ApplyPattern(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_ApplyPattern_" data-uid="Android.Icu.Text.UnicodeSet.ApplyPattern*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_ApplyPattern_Java_Lang_String_System_Boolean_" data-uid="Android.Icu.Text.UnicodeSet.ApplyPattern(Java.Lang.String,System.Boolean)">
+  ApplyPattern(String, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L317"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#applyPattern(java.lang.String,boolean)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#applyPattern(java.lang.String,boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnicodeSet ApplyPattern(String arg0, bool arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_ApplyPattern_" data-uid="Android.Icu.Text.UnicodeSet.ApplyPattern*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_ApplyPattern_Java_Lang_String_System_Int32_" data-uid="Android.Icu.Text.UnicodeSet.ApplyPattern(Java.Lang.String,System.Int32)">
+  ApplyPattern(String, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L327"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#applyPattern(java.lang.String,int)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#applyPattern(java.lang.String,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnicodeSet ApplyPattern(String arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_ApplyPropertyAlias_" data-uid="Android.Icu.Text.UnicodeSet.ApplyPropertyAlias*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_ApplyPropertyAlias_Java_Lang_String_Java_Lang_String_" data-uid="Android.Icu.Text.UnicodeSet.ApplyPropertyAlias(Java.Lang.String,Java.Lang.String)">
+  ApplyPropertyAlias(String, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L348"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#applyPropertyAlias(java.lang.String,java.lang.String)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#applyPropertyAlias(java.lang.String,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnicodeSet ApplyPropertyAlias(String arg0, String arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_ApplyPropertyAlias_" data-uid="Android.Icu.Text.UnicodeSet.ApplyPropertyAlias*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_ApplyPropertyAlias_Java_Lang_String_Java_Lang_String_Android_Icu_Text_SymbolTable_" data-uid="Android.Icu.Text.UnicodeSet.ApplyPropertyAlias(Java.Lang.String,Java.Lang.String,Android.Icu.Text.SymbolTable)">
+  ApplyPropertyAlias(String, String, SymbolTable)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L338"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#applyPropertyAlias(java.lang.String,java.lang.String,android.icu.text.SymbolTable)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#applyPropertyAlias(java.lang.String,java.lang.String,android.icu.text.SymbolTable)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnicodeSet ApplyPropertyAlias(String arg0, String arg1, SymbolTable arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Icu.Text.SymbolTable.html">SymbolTable</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.SymbolTable.html">SymbolTable</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_CharAt_" data-uid="Android.Icu.Text.UnicodeSet.CharAt*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_CharAt_System_Int32_" data-uid="Android.Icu.Text.UnicodeSet.CharAt(System.Int32)">
+  CharAt(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L718"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#charAt(int)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#charAt(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CharAt(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_Clear_" data-uid="Android.Icu.Text.UnicodeSet.Clear*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_Clear" data-uid="Android.Icu.Text.UnicodeSet.Clear">
+  Clear()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L356"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#clear()">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#clear()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnicodeSet Clear()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_CloneAsThawed_" data-uid="Android.Icu.Text.UnicodeSet.CloneAsThawed*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_CloneAsThawed" data-uid="Android.Icu.Text.UnicodeSet.CloneAsThawed">
+  CloneAsThawed()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L856"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#cloneAsThawed()">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#cloneAsThawed()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object CloneAsThawed()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_CloseOver_" data-uid="Android.Icu.Text.UnicodeSet.CloseOver*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_CloseOver_System_Int32_" data-uid="Android.Icu.Text.UnicodeSet.CloseOver(System.Int32)">
+  CloseOver(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L365"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#closeOver(int)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#closeOver(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnicodeSet CloseOver(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_Compact_" data-uid="Android.Icu.Text.UnicodeSet.Compact*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_Compact" data-uid="Android.Icu.Text.UnicodeSet.Compact">
+  Compact()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L373"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#compact()">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#compact()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnicodeSet Compact()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_CompareTo_" data-uid="Android.Icu.Text.UnicodeSet.CompareTo*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_CompareTo_Android_Icu_Text_UnicodeSet_" data-uid="Android.Icu.Text.UnicodeSet.CompareTo(Android.Icu.Text.UnicodeSet)">
+  CompareTo(UnicodeSet)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L737"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#compareTo(android.icu.text.UnicodeSet)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#compareTo(android.icu.text.UnicodeSet)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CompareTo(UnicodeSet arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_CompareTo_" data-uid="Android.Icu.Text.UnicodeSet.CompareTo*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_CompareTo_Android_Icu_Text_UnicodeSet_Android_Icu_Text_UnicodeSet_ComparisonStyle_" data-uid="Android.Icu.Text.UnicodeSet.CompareTo(Android.Icu.Text.UnicodeSet,Android.Icu.Text.UnicodeSet.ComparisonStyle)">
+  CompareTo(UnicodeSet, ComparisonStyle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L728"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#compareTo(android.icu.text.UnicodeSet,android.icu.text.UnicodeSet.ComparisonStyle)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#compareTo(android.icu.text.UnicodeSet,android.icu.text.UnicodeSet.ComparisonStyle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CompareTo(UnicodeSet arg0, UnicodeSet.ComparisonStyle arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a>.<a class="xref" href="Android.Icu.Text.UnicodeSet.ComparisonStyle.html">ComparisonStyle</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.UnicodeSet.ComparisonStyle.html">UnicodeSet.ComparisonStyle</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_CompareTo_" data-uid="Android.Icu.Text.UnicodeSet.CompareTo*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_CompareTo_Java_Lang_Iterable_Java_Lang_String__" data-uid="Android.Icu.Text.UnicodeSet.CompareTo(Java.Lang.Iterable{Java.Lang.String})">
+  CompareTo(Iterable&lt;String&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L746"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#compareTo(java.lang.Iterable)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#compareTo(java.lang.Iterable)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CompareTo(Iterable&lt;String&gt; arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.Iterable-1.html">Iterable</a>&lt;<a class="xref" href="Java.Lang.String.html">String</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Lang.Iterable.html">Iterable</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_CompareTo_" data-uid="Android.Icu.Text.UnicodeSet.CompareTo*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_CompareTo_System_Object_" data-uid="Android.Icu.Text.UnicodeSet.CompareTo(System.Object)">
+  CompareTo(object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L755"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#compareTo(java.lang.Object)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#compareTo(java.lang.Object)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CompareTo(object arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_Complement_" data-uid="Android.Icu.Text.UnicodeSet.Complement*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_Complement" data-uid="Android.Icu.Text.UnicodeSet.Complement">
+  Complement()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L381"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#complement()">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#complement()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnicodeSet Complement()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_Complement_" data-uid="Android.Icu.Text.UnicodeSet.Complement*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_Complement_Java_Lang_CharSequence_" data-uid="Android.Icu.Text.UnicodeSet.Complement(Java.Lang.CharSequence)">
+  Complement(CharSequence)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L601"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#complement(java.lang.CharSequence)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#complement(java.lang.CharSequence)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnicodeSet Complement(CharSequence arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_Complement_" data-uid="Android.Icu.Text.UnicodeSet.Complement*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_Complement_System_Int32_" data-uid="Android.Icu.Text.UnicodeSet.Complement(System.Int32)">
+  Complement(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L592"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#complement(int)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#complement(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnicodeSet Complement(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_Complement_" data-uid="Android.Icu.Text.UnicodeSet.Complement*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_Complement_System_Int32_System_Int32_" data-uid="Android.Icu.Text.UnicodeSet.Complement(System.Int32,System.Int32)">
+  Complement(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L391"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#complement(int,int)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#complement(int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnicodeSet Complement(int arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_ComplementAll_" data-uid="Android.Icu.Text.UnicodeSet.ComplementAll*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_ComplementAll_Android_Icu_Text_UnicodeSet_" data-uid="Android.Icu.Text.UnicodeSet.ComplementAll(Android.Icu.Text.UnicodeSet)">
+  ComplementAll(UnicodeSet)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L400"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#complementAll(android.icu.text.UnicodeSet)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#complementAll(android.icu.text.UnicodeSet)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnicodeSet ComplementAll(UnicodeSet arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_ComplementAll_" data-uid="Android.Icu.Text.UnicodeSet.ComplementAll*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_ComplementAll_Java_Lang_CharSequence_" data-uid="Android.Icu.Text.UnicodeSet.ComplementAll(Java.Lang.CharSequence)">
+  ComplementAll(CharSequence)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L610"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#complementAll(java.lang.CharSequence)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#complementAll(java.lang.CharSequence)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnicodeSet ComplementAll(CharSequence arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_Contains_" data-uid="Android.Icu.Text.UnicodeSet.Contains*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_Contains_Java_Lang_CharSequence_" data-uid="Android.Icu.Text.UnicodeSet.Contains(Java.Lang.CharSequence)">
+  Contains(CharSequence)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L681"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#contains(java.lang.CharSequence)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#contains(java.lang.CharSequence)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Contains(CharSequence arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_Contains_" data-uid="Android.Icu.Text.UnicodeSet.Contains*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_Contains_System_Int32_System_Int32_" data-uid="Android.Icu.Text.UnicodeSet.Contains(System.Int32,System.Int32)">
+  Contains(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L467"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#contains(int,int)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#contains(int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Contains(int arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_ContainsAll_" data-uid="Android.Icu.Text.UnicodeSet.ContainsAll*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_ContainsAll_Android_Icu_Text_UnicodeSet_" data-uid="Android.Icu.Text.UnicodeSet.ContainsAll(Android.Icu.Text.UnicodeSet)">
+  ContainsAll(UnicodeSet)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L476"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#containsAll(android.icu.text.UnicodeSet)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#containsAll(android.icu.text.UnicodeSet)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ContainsAll(UnicodeSet arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_ContainsAll_" data-uid="Android.Icu.Text.UnicodeSet.ContainsAll*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_ContainsAll_Java_Lang_String_" data-uid="Android.Icu.Text.UnicodeSet.ContainsAll(Java.Lang.String)">
+  ContainsAll(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L485"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#containsAll(java.lang.String)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#containsAll(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ContainsAll(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_ContainsAll_" data-uid="Android.Icu.Text.UnicodeSet.ContainsAll*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_ContainsAll__1_Java_Lang_Iterable___0__" data-uid="Android.Icu.Text.UnicodeSet.ContainsAll``1(Java.Lang.Iterable{``0})">
+  ContainsAll&lt;T&gt;(Iterable&lt;T&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L230"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#containsAll(java.lang.Iterable)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#containsAll(java.lang.Iterable)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ContainsAll&lt;T&gt;(Iterable&lt;T&gt; arg0) where T : ICharSequence, new()</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.Iterable-1.html">Iterable</a>&lt;T&gt;</dt>
+    <dd><p><a class="xref" href="Java.Lang.Iterable.html">Iterable</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p><a class="xref" href="Java.Lang.ICharSequence.html">ICharSequence</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_ContainsNone_" data-uid="Android.Icu.Text.UnicodeSet.ContainsNone*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_ContainsNone_Android_Icu_Text_UnicodeSet_" data-uid="Android.Icu.Text.UnicodeSet.ContainsNone(Android.Icu.Text.UnicodeSet)">
+  ContainsNone(UnicodeSet)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L494"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#containsNone(android.icu.text.UnicodeSet)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#containsNone(android.icu.text.UnicodeSet)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ContainsNone(UnicodeSet arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_ContainsNone_" data-uid="Android.Icu.Text.UnicodeSet.ContainsNone*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_ContainsNone_Java_Lang_CharSequence_" data-uid="Android.Icu.Text.UnicodeSet.ContainsNone(Java.Lang.CharSequence)">
+  ContainsNone(CharSequence)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L513"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#containsNone(java.lang.CharSequence)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#containsNone(java.lang.CharSequence)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ContainsNone(CharSequence arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_ContainsNone_" data-uid="Android.Icu.Text.UnicodeSet.ContainsNone*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_ContainsNone_System_Int32_System_Int32_" data-uid="Android.Icu.Text.UnicodeSet.ContainsNone(System.Int32,System.Int32)">
+  ContainsNone(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L504"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#containsNone(int,int)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#containsNone(int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ContainsNone(int arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_ContainsNone_" data-uid="Android.Icu.Text.UnicodeSet.ContainsNone*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_ContainsNone__1_Java_Lang_Iterable___0__" data-uid="Android.Icu.Text.UnicodeSet.ContainsNone``1(Java.Lang.Iterable{``0})">
+  ContainsNone&lt;T&gt;(Iterable&lt;T&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L240"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#containsNone(java.lang.Iterable)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#containsNone(java.lang.Iterable)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ContainsNone&lt;T&gt;(Iterable&lt;T&gt; arg0) where T : ICharSequence, new()</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.Iterable-1.html">Iterable</a>&lt;T&gt;</dt>
+    <dd><p><a class="xref" href="Java.Lang.Iterable.html">Iterable</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p><a class="xref" href="Java.Lang.ICharSequence.html">ICharSequence</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_ContainsSome_" data-uid="Android.Icu.Text.UnicodeSet.ContainsSome*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_ContainsSome_Android_Icu_Text_UnicodeSet_" data-uid="Android.Icu.Text.UnicodeSet.ContainsSome(Android.Icu.Text.UnicodeSet)">
+  ContainsSome(UnicodeSet)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L690"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#containsSome(android.icu.text.UnicodeSet)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#containsSome(android.icu.text.UnicodeSet)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ContainsSome(UnicodeSet arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_ContainsSome_" data-uid="Android.Icu.Text.UnicodeSet.ContainsSome*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_ContainsSome_Java_Lang_CharSequence_" data-uid="Android.Icu.Text.UnicodeSet.ContainsSome(Java.Lang.CharSequence)">
+  ContainsSome(CharSequence)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L709"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#containsSome(java.lang.CharSequence)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#containsSome(java.lang.CharSequence)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ContainsSome(CharSequence arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_ContainsSome_" data-uid="Android.Icu.Text.UnicodeSet.ContainsSome*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_ContainsSome_System_Int32_System_Int32_" data-uid="Android.Icu.Text.UnicodeSet.ContainsSome(System.Int32,System.Int32)">
+  ContainsSome(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L700"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#containsSome(int,int)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#containsSome(int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ContainsSome(int arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_ContainsSome_" data-uid="Android.Icu.Text.UnicodeSet.ContainsSome*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_ContainsSome__1_Java_Lang_Iterable___0__" data-uid="Android.Icu.Text.UnicodeSet.ContainsSome``1(Java.Lang.Iterable{``0})">
+  ContainsSome&lt;T&gt;(Iterable&lt;T&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L547"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#containsSome(java.lang.Iterable)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#containsSome(java.lang.Iterable)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ContainsSome&lt;T&gt;(Iterable&lt;T&gt; arg0) where T : ICharSequence, new()</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.Iterable-1.html">Iterable</a>&lt;T&gt;</dt>
+    <dd><p><a class="xref" href="Java.Lang.Iterable.html">Iterable</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p><a class="xref" href="Java.Lang.ICharSequence.html">ICharSequence</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_Freeze_" data-uid="Android.Icu.Text.UnicodeSet.Freeze*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_Freeze" data-uid="Android.Icu.Text.UnicodeSet.Freeze">
+  Freeze()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L864"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#freeze()">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#freeze()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object Freeze()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_From_" data-uid="Android.Icu.Text.UnicodeSet.From*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_From_Java_Lang_CharSequence_" data-uid="Android.Icu.Text.UnicodeSet.From(Java.Lang.CharSequence)">
+  From(CharSequence)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L177"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#from(java.lang.CharSequence)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#from(java.lang.CharSequence)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static UnicodeSet From(CharSequence arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_FromAll_" data-uid="Android.Icu.Text.UnicodeSet.FromAll*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_FromAll_Java_Lang_CharSequence_" data-uid="Android.Icu.Text.UnicodeSet.FromAll(Java.Lang.CharSequence)">
+  FromAll(CharSequence)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L186"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#fromAll(java.lang.CharSequence)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#fromAll(java.lang.CharSequence)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static UnicodeSet FromAll(CharSequence arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_GetRangeCount_" data-uid="Android.Icu.Text.UnicodeSet.GetRangeCount*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_GetRangeCount" data-uid="Android.Icu.Text.UnicodeSet.GetRangeCount">
+  GetRangeCount()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L763"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#getRangeCount()">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#getRangeCount()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetRangeCount()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_GetRangeEnd_" data-uid="Android.Icu.Text.UnicodeSet.GetRangeEnd*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_GetRangeEnd_System_Int32_" data-uid="Android.Icu.Text.UnicodeSet.GetRangeEnd(System.Int32)">
+  GetRangeEnd(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L772"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#getRangeEnd(int)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#getRangeEnd(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetRangeEnd(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_GetRangeStart_" data-uid="Android.Icu.Text.UnicodeSet.GetRangeStart*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_GetRangeStart_System_Int32_" data-uid="Android.Icu.Text.UnicodeSet.GetRangeStart(System.Int32)">
+  GetRangeStart(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L781"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#getRangeStart(int)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#getRangeStart(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetRangeStart(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_HasStrings_" data-uid="Android.Icu.Text.UnicodeSet.HasStrings*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_HasStrings" data-uid="Android.Icu.Text.UnicodeSet.HasStrings">
+  HasStrings()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L521"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#hasStrings()">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#hasStrings()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasStrings()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_IndexOf_" data-uid="Android.Icu.Text.UnicodeSet.IndexOf*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_IndexOf_System_Int32_" data-uid="Android.Icu.Text.UnicodeSet.IndexOf(System.Int32)">
+  IndexOf(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L790"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#indexOf(int)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#indexOf(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IndexOf(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_IsEmpty_" data-uid="Android.Icu.Text.UnicodeSet.IsEmpty*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_IsEmpty" data-uid="Android.Icu.Text.UnicodeSet.IsEmpty">
+  IsEmpty()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L529"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#isEmpty()">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#isEmpty()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsEmpty()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_IsFrozen_" data-uid="Android.Icu.Text.UnicodeSet.IsFrozen*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_IsFrozen" data-uid="Android.Icu.Text.UnicodeSet.IsFrozen">
+  IsFrozen()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L537"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#isFrozen()">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#isFrozen()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsFrozen()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_Iterator_" data-uid="Android.Icu.Text.UnicodeSet.Iterator*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_Iterator" data-uid="Android.Icu.Text.UnicodeSet.Iterator">
+  Iterator()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L901"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#iterator()">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#iterator()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Iterator&lt;String&gt; Iterator()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Iterator-1.html">Iterator</a>&lt;<a class="xref" href="Java.Lang.String.html">String</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Iterator.html">Iterator</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_Ranges_" data-uid="Android.Icu.Text.UnicodeSet.Ranges*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_Ranges" data-uid="Android.Icu.Text.UnicodeSet.Ranges">
+  Ranges()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L848"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#ranges()">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#ranges()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Iterable&lt;UnicodeSet.EntryRange&gt; Ranges()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.Iterable-1.html">Iterable</a>&lt;<a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a>.<a class="xref" href="Android.Icu.Text.UnicodeSet.EntryRange.html">EntryRange</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Lang.Iterable.html">Iterable</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_Remove_" data-uid="Android.Icu.Text.UnicodeSet.Remove*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_Remove_Java_Lang_CharSequence_" data-uid="Android.Icu.Text.UnicodeSet.Remove(Java.Lang.CharSequence)">
+  Remove(CharSequence)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L628"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#remove(java.lang.CharSequence)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#remove(java.lang.CharSequence)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnicodeSet Remove(CharSequence arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_Remove_" data-uid="Android.Icu.Text.UnicodeSet.Remove*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_Remove_System_Int32_" data-uid="Android.Icu.Text.UnicodeSet.Remove(System.Int32)">
+  Remove(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L619"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#remove(int)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#remove(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnicodeSet Remove(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_Remove_" data-uid="Android.Icu.Text.UnicodeSet.Remove*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_Remove_System_Int32_System_Int32_" data-uid="Android.Icu.Text.UnicodeSet.Remove(System.Int32,System.Int32)">
+  Remove(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L410"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#remove(int,int)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#remove(int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnicodeSet Remove(int arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_RemoveAll_" data-uid="Android.Icu.Text.UnicodeSet.RemoveAll*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_RemoveAll_Android_Icu_Text_UnicodeSet_" data-uid="Android.Icu.Text.UnicodeSet.RemoveAll(Android.Icu.Text.UnicodeSet)">
+  RemoveAll(UnicodeSet)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L419"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#removeAll(android.icu.text.UnicodeSet)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#removeAll(android.icu.text.UnicodeSet)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnicodeSet RemoveAll(UnicodeSet arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_RemoveAll_" data-uid="Android.Icu.Text.UnicodeSet.RemoveAll*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_RemoveAll_Java_Lang_CharSequence_" data-uid="Android.Icu.Text.UnicodeSet.RemoveAll(Java.Lang.CharSequence)">
+  RemoveAll(CharSequence)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L637"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#removeAll(java.lang.CharSequence)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#removeAll(java.lang.CharSequence)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnicodeSet RemoveAll(CharSequence arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_RemoveAllStrings_" data-uid="Android.Icu.Text.UnicodeSet.RemoveAllStrings*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_RemoveAllStrings" data-uid="Android.Icu.Text.UnicodeSet.RemoveAllStrings">
+  RemoveAllStrings()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L645"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#removeAllStrings()">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#removeAllStrings()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnicodeSet RemoveAllStrings()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_RemoveAll_" data-uid="Android.Icu.Text.UnicodeSet.RemoveAll*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_RemoveAll__1_Java_Lang_Iterable___0__" data-uid="Android.Icu.Text.UnicodeSet.RemoveAll``1(Java.Lang.Iterable{``0})">
+  RemoveAll&lt;T&gt;(Iterable&lt;T&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L210"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#removeAll(java.lang.Iterable)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#removeAll(java.lang.Iterable)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnicodeSet RemoveAll&lt;T&gt;(Iterable&lt;T&gt; arg0) where T : ICharSequence, new()</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.Iterable-1.html">Iterable</a>&lt;T&gt;</dt>
+    <dd><p><a class="xref" href="Java.Lang.Iterable.html">Iterable</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p><a class="xref" href="Java.Lang.ICharSequence.html">ICharSequence</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_Retain_" data-uid="Android.Icu.Text.UnicodeSet.Retain*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_Retain_Java_Lang_CharSequence_" data-uid="Android.Icu.Text.UnicodeSet.Retain(Java.Lang.CharSequence)">
+  Retain(CharSequence)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L663"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#retain(java.lang.CharSequence)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#retain(java.lang.CharSequence)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnicodeSet Retain(CharSequence arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_Retain_" data-uid="Android.Icu.Text.UnicodeSet.Retain*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_Retain_System_Int32_" data-uid="Android.Icu.Text.UnicodeSet.Retain(System.Int32)">
+  Retain(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L654"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#retain(int)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#retain(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnicodeSet Retain(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_Retain_" data-uid="Android.Icu.Text.UnicodeSet.Retain*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_Retain_System_Int32_System_Int32_" data-uid="Android.Icu.Text.UnicodeSet.Retain(System.Int32,System.Int32)">
+  Retain(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L429"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#retain(int,int)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#retain(int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnicodeSet Retain(int arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_RetainAll_" data-uid="Android.Icu.Text.UnicodeSet.RetainAll*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_RetainAll_Android_Icu_Text_UnicodeSet_" data-uid="Android.Icu.Text.UnicodeSet.RetainAll(Android.Icu.Text.UnicodeSet)">
+  RetainAll(UnicodeSet)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L438"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#retainAll(android.icu.text.UnicodeSet)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#retainAll(android.icu.text.UnicodeSet)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnicodeSet RetainAll(UnicodeSet arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_RetainAll_" data-uid="Android.Icu.Text.UnicodeSet.RetainAll*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_RetainAll_Java_Lang_CharSequence_" data-uid="Android.Icu.Text.UnicodeSet.RetainAll(Java.Lang.CharSequence)">
+  RetainAll(CharSequence)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L672"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#retainAll(java.lang.CharSequence)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#retainAll(java.lang.CharSequence)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnicodeSet RetainAll(CharSequence arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_RetainAll_" data-uid="Android.Icu.Text.UnicodeSet.RetainAll*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_RetainAll__1_Java_Lang_Iterable___0__" data-uid="Android.Icu.Text.UnicodeSet.RetainAll``1(Java.Lang.Iterable{``0})">
+  RetainAll&lt;T&gt;(Iterable&lt;T&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L220"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#retainAll(java.lang.Iterable)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#retainAll(java.lang.Iterable)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnicodeSet RetainAll&lt;T&gt;(Iterable&lt;T&gt; arg0) where T : ICharSequence, new()</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.Iterable-1.html">Iterable</a>&lt;T&gt;</dt>
+    <dd><p><a class="xref" href="Java.Lang.Iterable.html">Iterable</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p><a class="xref" href="Java.Lang.ICharSequence.html">ICharSequence</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_Set_" data-uid="Android.Icu.Text.UnicodeSet.Set*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_Set_Android_Icu_Text_UnicodeSet_" data-uid="Android.Icu.Text.UnicodeSet.Set(Android.Icu.Text.UnicodeSet)">
+  Set(UnicodeSet)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L447"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#set(android.icu.text.UnicodeSet)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#set(android.icu.text.UnicodeSet)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnicodeSet Set(UnicodeSet arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_Set_" data-uid="Android.Icu.Text.UnicodeSet.Set*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_Set_System_Int32_System_Int32_" data-uid="Android.Icu.Text.UnicodeSet.Set(System.Int32,System.Int32)">
+  Set(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L457"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#set(int,int)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#set(int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnicodeSet Set(int arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_Size_" data-uid="Android.Icu.Text.UnicodeSet.Size*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_Size" data-uid="Android.Icu.Text.UnicodeSet.Size">
+  Size()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L798"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#size()">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#size()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Size()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_Span_" data-uid="Android.Icu.Text.UnicodeSet.Span*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_Span_Java_Lang_CharSequence_Android_Icu_Text_UnicodeSet_SpanCondition_" data-uid="Android.Icu.Text.UnicodeSet.Span(Java.Lang.CharSequence,Android.Icu.Text.UnicodeSet.SpanCondition)">
+  Span(CharSequence, SpanCondition)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L808"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#span(java.lang.CharSequence,android.icu.text.UnicodeSet.SpanCondition)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#span(java.lang.CharSequence,android.icu.text.UnicodeSet.SpanCondition)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Span(CharSequence arg0, UnicodeSet.SpanCondition arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a>.<a class="xref" href="Android.Icu.Text.UnicodeSet.SpanCondition.html">SpanCondition</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.UnicodeSet.SpanCondition.html">UnicodeSet.SpanCondition</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_Span_" data-uid="Android.Icu.Text.UnicodeSet.Span*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_Span_Java_Lang_CharSequence_System_Int32_Android_Icu_Text_UnicodeSet_SpanCondition_" data-uid="Android.Icu.Text.UnicodeSet.Span(Java.Lang.CharSequence,System.Int32,Android.Icu.Text.UnicodeSet.SpanCondition)">
+  Span(CharSequence, int, SpanCondition)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L819"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#span(java.lang.CharSequence,int,android.icu.text.UnicodeSet.SpanCondition)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#span(java.lang.CharSequence,int,android.icu.text.UnicodeSet.SpanCondition)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Span(CharSequence arg0, int arg1, UnicodeSet.SpanCondition arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a>.<a class="xref" href="Android.Icu.Text.UnicodeSet.SpanCondition.html">SpanCondition</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.UnicodeSet.SpanCondition.html">UnicodeSet.SpanCondition</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_SpanBack_" data-uid="Android.Icu.Text.UnicodeSet.SpanBack*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_SpanBack_Java_Lang_CharSequence_Android_Icu_Text_UnicodeSet_SpanCondition_" data-uid="Android.Icu.Text.UnicodeSet.SpanBack(Java.Lang.CharSequence,Android.Icu.Text.UnicodeSet.SpanCondition)">
+  SpanBack(CharSequence, SpanCondition)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L829"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#spanBack(java.lang.CharSequence,android.icu.text.UnicodeSet.SpanCondition)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#spanBack(java.lang.CharSequence,android.icu.text.UnicodeSet.SpanCondition)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SpanBack(CharSequence arg0, UnicodeSet.SpanCondition arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a>.<a class="xref" href="Android.Icu.Text.UnicodeSet.SpanCondition.html">SpanCondition</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.UnicodeSet.SpanCondition.html">UnicodeSet.SpanCondition</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_SpanBack_" data-uid="Android.Icu.Text.UnicodeSet.SpanBack*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_SpanBack_Java_Lang_CharSequence_System_Int32_Android_Icu_Text_UnicodeSet_SpanCondition_" data-uid="Android.Icu.Text.UnicodeSet.SpanBack(Java.Lang.CharSequence,System.Int32,Android.Icu.Text.UnicodeSet.SpanCondition)">
+  SpanBack(CharSequence, int, SpanCondition)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L840"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#spanBack(java.lang.CharSequence,int,android.icu.text.UnicodeSet.SpanCondition)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#spanBack(java.lang.CharSequence,int,android.icu.text.UnicodeSet.SpanCondition)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SpanBack(CharSequence arg0, int arg1, UnicodeSet.SpanCondition arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a>.<a class="xref" href="Android.Icu.Text.UnicodeSet.SpanCondition.html">SpanCondition</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.UnicodeSet.SpanCondition.html">UnicodeSet.SpanCondition</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_Strings_" data-uid="Android.Icu.Text.UnicodeSet.Strings*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_Strings" data-uid="Android.Icu.Text.UnicodeSet.Strings">
+  Strings()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L893"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#strings()">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#strings()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Collection&lt;String&gt; Strings()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Collection-1.html">Collection</a>&lt;<a class="xref" href="Java.Lang.String.html">String</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Collection.html">Collection</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet__generatePattern_" data-uid="Android.Icu.Text.UnicodeSet._generatePattern*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet__generatePattern_Java_Lang_StringBuffer_System_Boolean_" data-uid="Android.Icu.Text.UnicodeSet._generatePattern(Java.Lang.StringBuffer,System.Boolean)">
+  _generatePattern(StringBuffer, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L885"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#_generatePattern(java.lang.StringBuffer,boolean)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#_generatePattern(java.lang.StringBuffer,boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StringBuffer _generatePattern(StringBuffer arg0, bool arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.StringBuffer.html">StringBuffer</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.StringBuffer.html">StringBuffer</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.StringBuffer.html">StringBuffer</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.StringBuffer.html">StringBuffer</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet__generatePattern_" data-uid="Android.Icu.Text.UnicodeSet._generatePattern*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet__generatePattern_Java_Lang_StringBuffer_System_Boolean_System_Boolean_" data-uid="Android.Icu.Text.UnicodeSet._generatePattern(Java.Lang.StringBuffer,System.Boolean,System.Boolean)">
+  _generatePattern(StringBuffer, bool, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L875"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/UnicodeSet.html#_generatePattern(java.lang.StringBuffer,boolean,boolean)">https://developer.android.com/reference/android/icu/text/UnicodeSet.html#_generatePattern(java.lang.StringBuffer,boolean,boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StringBuffer _generatePattern(StringBuffer arg0, bool arg1, bool arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.StringBuffer.html">StringBuffer</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.StringBuffer.html">StringBuffer</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.StringBuffer.html">StringBuffer</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.StringBuffer.html">StringBuffer</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="Android_Icu_Text_UnicodeSet_op_Implicit_" data-uid="Android.Icu.Text.UnicodeSet.op_Implicit*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_op_Implicit_Android_Icu_Text_UnicodeSet__Android_Icu_Util_Freezable" data-uid="Android.Icu.Text.UnicodeSet.op_Implicit(Android.Icu.Text.UnicodeSet)~Android.Icu.Util.Freezable">
+  implicit operator Freezable(UnicodeSet)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a> to <a class="xref" href="Android.Icu.Util.Freezable.html">Freezable</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Freezable(UnicodeSet t)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>t</code> <a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Util.Freezable.html">Freezable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_UnicodeSet_op_Implicit_" data-uid="Android.Icu.Text.UnicodeSet.op_Implicit*"></a>
+
+  <h3 id="Android_Icu_Text_UnicodeSet_op_Implicit_Android_Icu_Text_UnicodeSet__Java_Lang_Comparable" data-uid="Android.Icu.Text.UnicodeSet.op_Implicit(Android.Icu.Text.UnicodeSet)~Java.Lang.Comparable">
+  implicit operator Comparable(UnicodeSet)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L111"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a> to <a class="xref" href="Java.Lang.Comparable.html">Comparable</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Comparable(UnicodeSet t)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>t</code> <a class="xref" href="Android.Icu.Text.UnicodeSet.html">UnicodeSet</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.Comparable.html">Comparable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/UnicodeSet.cs/#L29" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

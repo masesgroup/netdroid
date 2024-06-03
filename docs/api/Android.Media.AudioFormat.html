@@ -1,0 +1,4159 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class AudioFormat | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class AudioFormat | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/media/AudioFormat.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_Media_AudioFormat.md&amp;value=---%0Auid%3A%20Android.Media.AudioFormat%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.Media.AudioFormat">
+
+
+
+  <h1 id="Android_Media_AudioFormat" data-uid="Android.Media.AudioFormat" class="text-break">
+Class AudioFormat  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.Media.html">Media</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html">https://developer.android.com/reference/android/media/AudioFormat.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AudioFormat : Parcelable, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IParcelable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.Os.Parcelable.html">Parcelable</a>&gt;</div>
+      <div><a class="xref" href="Android.Os.Parcelable.html">Parcelable</a></div>
+      <div><span class="xref">AudioFormat</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+      <div><a class="xref" href="Android.Os.IParcelable.html">IParcelable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Android.Os.Parcelable.html#Android_Os_Parcelable_CONTENTS_FILE_DESCRIPTOR">Parcelable.CONTENTS_FILE_DESCRIPTOR</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Os.Parcelable.html#Android_Os_Parcelable_PARCELABLE_WRITE_RETURN_VALUE">Parcelable.PARCELABLE_WRITE_RETURN_VALUE</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Parcelable&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Parcelable&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Parcelable&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Parcelable&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Parcelable&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Parcelable&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Parcelable&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Parcelable&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Parcelable&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Parcelable&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Parcelable&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Parcelable&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Parcelable&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Parcelable&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;Parcelable&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Parcelable&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Parcelable&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Parcelable&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_Media_AudioFormat__ctor_" data-uid="Android.Media.AudioFormat.#ctor*"></a>
+
+  <h3 id="Android_Media_AudioFormat__ctor" data-uid="Android.Media.AudioFormat.#ctor">
+  AudioFormat()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AllPackageClasses.cs/#L481"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioFormat()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat__ctor_" data-uid="Android.Media.AudioFormat.#ctor*"></a>
+
+  <h3 id="Android_Media_AudioFormat__ctor_System_Object___" data-uid="Android.Media.AudioFormat.#ctor(System.Object[])">
+  AudioFormat(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AllPackageClasses.cs/#L485"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioFormat(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_Media_AudioFormat_BridgeClassName_" data-uid="Android.Media.AudioFormat.BridgeClassName*"></a>
+
+  <h3 id="Android_Media_AudioFormat_BridgeClassName" data-uid="Android.Media.AudioFormat.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AllPackageClasses.cs/#L492"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_CHANNEL_CONFIGURATION_DEFAULT_" data-uid="Android.Media.AudioFormat.CHANNEL_CONFIGURATION_DEFAULT*"></a>
+
+  <h3 id="Android_Media_AudioFormat_CHANNEL_CONFIGURATION_DEFAULT" data-uid="Android.Media.AudioFormat.CHANNEL_CONFIGURATION_DEFAULT">
+  CHANNEL_CONFIGURATION_DEFAULT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_CONFIGURATION_DEFAULT">https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_CONFIGURATION_DEFAULT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static int CHANNEL_CONFIGURATION_DEFAULT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_CHANNEL_CONFIGURATION_INVALID_" data-uid="Android.Media.AudioFormat.CHANNEL_CONFIGURATION_INVALID*"></a>
+
+  <h3 id="Android_Media_AudioFormat_CHANNEL_CONFIGURATION_INVALID" data-uid="Android.Media.AudioFormat.CHANNEL_CONFIGURATION_INVALID">
+  CHANNEL_CONFIGURATION_INVALID
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_CONFIGURATION_INVALID">https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_CONFIGURATION_INVALID</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static int CHANNEL_CONFIGURATION_INVALID { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_CHANNEL_CONFIGURATION_MONO_" data-uid="Android.Media.AudioFormat.CHANNEL_CONFIGURATION_MONO*"></a>
+
+  <h3 id="Android_Media_AudioFormat_CHANNEL_CONFIGURATION_MONO" data-uid="Android.Media.AudioFormat.CHANNEL_CONFIGURATION_MONO">
+  CHANNEL_CONFIGURATION_MONO
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L63"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_CONFIGURATION_MONO">https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_CONFIGURATION_MONO</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static int CHANNEL_CONFIGURATION_MONO { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_CHANNEL_CONFIGURATION_STEREO_" data-uid="Android.Media.AudioFormat.CHANNEL_CONFIGURATION_STEREO*"></a>
+
+  <h3 id="Android_Media_AudioFormat_CHANNEL_CONFIGURATION_STEREO" data-uid="Android.Media.AudioFormat.CHANNEL_CONFIGURATION_STEREO">
+  CHANNEL_CONFIGURATION_STEREO
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L70"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_CONFIGURATION_STEREO">https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_CONFIGURATION_STEREO</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static int CHANNEL_CONFIGURATION_STEREO { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_CHANNEL_INVALID_" data-uid="Android.Media.AudioFormat.CHANNEL_INVALID*"></a>
+
+  <h3 id="Android_Media_AudioFormat_CHANNEL_INVALID" data-uid="Android.Media.AudioFormat.CHANNEL_INVALID">
+  CHANNEL_INVALID
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L179"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_INVALID">https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_INVALID</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CHANNEL_INVALID { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_CHANNEL_IN_BACK_" data-uid="Android.Media.AudioFormat.CHANNEL_IN_BACK*"></a>
+
+  <h3 id="Android_Media_AudioFormat_CHANNEL_IN_BACK" data-uid="Android.Media.AudioFormat.CHANNEL_IN_BACK">
+  CHANNEL_IN_BACK
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L77"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_IN_BACK">https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_IN_BACK</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CHANNEL_IN_BACK { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_CHANNEL_IN_BACK_PROCESSED_" data-uid="Android.Media.AudioFormat.CHANNEL_IN_BACK_PROCESSED*"></a>
+
+  <h3 id="Android_Media_AudioFormat_CHANNEL_IN_BACK_PROCESSED" data-uid="Android.Media.AudioFormat.CHANNEL_IN_BACK_PROCESSED">
+  CHANNEL_IN_BACK_PROCESSED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L83"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_IN_BACK_PROCESSED">https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_IN_BACK_PROCESSED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CHANNEL_IN_BACK_PROCESSED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_CHANNEL_IN_DEFAULT_" data-uid="Android.Media.AudioFormat.CHANNEL_IN_DEFAULT*"></a>
+
+  <h3 id="Android_Media_AudioFormat_CHANNEL_IN_DEFAULT" data-uid="Android.Media.AudioFormat.CHANNEL_IN_DEFAULT">
+  CHANNEL_IN_DEFAULT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L89"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_IN_DEFAULT">https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_IN_DEFAULT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CHANNEL_IN_DEFAULT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_CHANNEL_IN_FRONT_" data-uid="Android.Media.AudioFormat.CHANNEL_IN_FRONT*"></a>
+
+  <h3 id="Android_Media_AudioFormat_CHANNEL_IN_FRONT" data-uid="Android.Media.AudioFormat.CHANNEL_IN_FRONT">
+  CHANNEL_IN_FRONT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L95"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_IN_FRONT">https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_IN_FRONT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CHANNEL_IN_FRONT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_CHANNEL_IN_FRONT_PROCESSED_" data-uid="Android.Media.AudioFormat.CHANNEL_IN_FRONT_PROCESSED*"></a>
+
+  <h3 id="Android_Media_AudioFormat_CHANNEL_IN_FRONT_PROCESSED" data-uid="Android.Media.AudioFormat.CHANNEL_IN_FRONT_PROCESSED">
+  CHANNEL_IN_FRONT_PROCESSED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L101"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_IN_FRONT_PROCESSED">https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_IN_FRONT_PROCESSED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CHANNEL_IN_FRONT_PROCESSED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_CHANNEL_IN_LEFT_" data-uid="Android.Media.AudioFormat.CHANNEL_IN_LEFT*"></a>
+
+  <h3 id="Android_Media_AudioFormat_CHANNEL_IN_LEFT" data-uid="Android.Media.AudioFormat.CHANNEL_IN_LEFT">
+  CHANNEL_IN_LEFT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L107"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_IN_LEFT">https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_IN_LEFT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CHANNEL_IN_LEFT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_CHANNEL_IN_LEFT_PROCESSED_" data-uid="Android.Media.AudioFormat.CHANNEL_IN_LEFT_PROCESSED*"></a>
+
+  <h3 id="Android_Media_AudioFormat_CHANNEL_IN_LEFT_PROCESSED" data-uid="Android.Media.AudioFormat.CHANNEL_IN_LEFT_PROCESSED">
+  CHANNEL_IN_LEFT_PROCESSED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L113"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_IN_LEFT_PROCESSED">https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_IN_LEFT_PROCESSED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CHANNEL_IN_LEFT_PROCESSED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_CHANNEL_IN_MONO_" data-uid="Android.Media.AudioFormat.CHANNEL_IN_MONO*"></a>
+
+  <h3 id="Android_Media_AudioFormat_CHANNEL_IN_MONO" data-uid="Android.Media.AudioFormat.CHANNEL_IN_MONO">
+  CHANNEL_IN_MONO
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L119"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_IN_MONO">https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_IN_MONO</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CHANNEL_IN_MONO { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_CHANNEL_IN_PRESSURE_" data-uid="Android.Media.AudioFormat.CHANNEL_IN_PRESSURE*"></a>
+
+  <h3 id="Android_Media_AudioFormat_CHANNEL_IN_PRESSURE" data-uid="Android.Media.AudioFormat.CHANNEL_IN_PRESSURE">
+  CHANNEL_IN_PRESSURE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L125"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_IN_PRESSURE">https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_IN_PRESSURE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CHANNEL_IN_PRESSURE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_CHANNEL_IN_RIGHT_" data-uid="Android.Media.AudioFormat.CHANNEL_IN_RIGHT*"></a>
+
+  <h3 id="Android_Media_AudioFormat_CHANNEL_IN_RIGHT" data-uid="Android.Media.AudioFormat.CHANNEL_IN_RIGHT">
+  CHANNEL_IN_RIGHT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L131"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_IN_RIGHT">https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_IN_RIGHT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CHANNEL_IN_RIGHT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_CHANNEL_IN_RIGHT_PROCESSED_" data-uid="Android.Media.AudioFormat.CHANNEL_IN_RIGHT_PROCESSED*"></a>
+
+  <h3 id="Android_Media_AudioFormat_CHANNEL_IN_RIGHT_PROCESSED" data-uid="Android.Media.AudioFormat.CHANNEL_IN_RIGHT_PROCESSED">
+  CHANNEL_IN_RIGHT_PROCESSED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L137"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_IN_RIGHT_PROCESSED">https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_IN_RIGHT_PROCESSED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CHANNEL_IN_RIGHT_PROCESSED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_CHANNEL_IN_STEREO_" data-uid="Android.Media.AudioFormat.CHANNEL_IN_STEREO*"></a>
+
+  <h3 id="Android_Media_AudioFormat_CHANNEL_IN_STEREO" data-uid="Android.Media.AudioFormat.CHANNEL_IN_STEREO">
+  CHANNEL_IN_STEREO
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L143"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_IN_STEREO">https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_IN_STEREO</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CHANNEL_IN_STEREO { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_CHANNEL_IN_VOICE_DNLINK_" data-uid="Android.Media.AudioFormat.CHANNEL_IN_VOICE_DNLINK*"></a>
+
+  <h3 id="Android_Media_AudioFormat_CHANNEL_IN_VOICE_DNLINK" data-uid="Android.Media.AudioFormat.CHANNEL_IN_VOICE_DNLINK">
+  CHANNEL_IN_VOICE_DNLINK
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L149"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_IN_VOICE_DNLINK">https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_IN_VOICE_DNLINK</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CHANNEL_IN_VOICE_DNLINK { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_CHANNEL_IN_VOICE_UPLINK_" data-uid="Android.Media.AudioFormat.CHANNEL_IN_VOICE_UPLINK*"></a>
+
+  <h3 id="Android_Media_AudioFormat_CHANNEL_IN_VOICE_UPLINK" data-uid="Android.Media.AudioFormat.CHANNEL_IN_VOICE_UPLINK">
+  CHANNEL_IN_VOICE_UPLINK
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L155"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_IN_VOICE_UPLINK">https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_IN_VOICE_UPLINK</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CHANNEL_IN_VOICE_UPLINK { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_CHANNEL_IN_X_AXIS_" data-uid="Android.Media.AudioFormat.CHANNEL_IN_X_AXIS*"></a>
+
+  <h3 id="Android_Media_AudioFormat_CHANNEL_IN_X_AXIS" data-uid="Android.Media.AudioFormat.CHANNEL_IN_X_AXIS">
+  CHANNEL_IN_X_AXIS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L161"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_IN_X_AXIS">https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_IN_X_AXIS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CHANNEL_IN_X_AXIS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_CHANNEL_IN_Y_AXIS_" data-uid="Android.Media.AudioFormat.CHANNEL_IN_Y_AXIS*"></a>
+
+  <h3 id="Android_Media_AudioFormat_CHANNEL_IN_Y_AXIS" data-uid="Android.Media.AudioFormat.CHANNEL_IN_Y_AXIS">
+  CHANNEL_IN_Y_AXIS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L167"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_IN_Y_AXIS">https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_IN_Y_AXIS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CHANNEL_IN_Y_AXIS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_CHANNEL_IN_Z_AXIS_" data-uid="Android.Media.AudioFormat.CHANNEL_IN_Z_AXIS*"></a>
+
+  <h3 id="Android_Media_AudioFormat_CHANNEL_IN_Z_AXIS" data-uid="Android.Media.AudioFormat.CHANNEL_IN_Z_AXIS">
+  CHANNEL_IN_Z_AXIS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L173"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_IN_Z_AXIS">https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_IN_Z_AXIS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CHANNEL_IN_Z_AXIS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_CHANNEL_OUT_5POINT1_" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_5POINT1*"></a>
+
+  <h3 id="Android_Media_AudioFormat_CHANNEL_OUT_5POINT1" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_5POINT1">
+  CHANNEL_OUT_5POINT1
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L185"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_5POINT1">https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_5POINT1</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CHANNEL_OUT_5POINT1 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_CHANNEL_OUT_5POINT1POINT2_" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_5POINT1POINT2*"></a>
+
+  <h3 id="Android_Media_AudioFormat_CHANNEL_OUT_5POINT1POINT2" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_5POINT1POINT2">
+  CHANNEL_OUT_5POINT1POINT2
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L191"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_5POINT1POINT2">https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_5POINT1POINT2</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CHANNEL_OUT_5POINT1POINT2 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_CHANNEL_OUT_5POINT1POINT4_" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_5POINT1POINT4*"></a>
+
+  <h3 id="Android_Media_AudioFormat_CHANNEL_OUT_5POINT1POINT4" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_5POINT1POINT4">
+  CHANNEL_OUT_5POINT1POINT4
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L197"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_5POINT1POINT4">https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_5POINT1POINT4</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CHANNEL_OUT_5POINT1POINT4 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_CHANNEL_OUT_6POINT1_" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_6POINT1*"></a>
+
+  <h3 id="Android_Media_AudioFormat_CHANNEL_OUT_6POINT1" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_6POINT1">
+  CHANNEL_OUT_6POINT1
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L203"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_6POINT1">https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_6POINT1</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CHANNEL_OUT_6POINT1 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_CHANNEL_OUT_7POINT1_" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_7POINT1*"></a>
+
+  <h3 id="Android_Media_AudioFormat_CHANNEL_OUT_7POINT1" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_7POINT1">
+  CHANNEL_OUT_7POINT1
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L209"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_7POINT1">https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_7POINT1</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static int CHANNEL_OUT_7POINT1 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_CHANNEL_OUT_7POINT1POINT2_" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_7POINT1POINT2*"></a>
+
+  <h3 id="Android_Media_AudioFormat_CHANNEL_OUT_7POINT1POINT2" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_7POINT1POINT2">
+  CHANNEL_OUT_7POINT1POINT2
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L222"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_7POINT1POINT2">https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_7POINT1POINT2</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CHANNEL_OUT_7POINT1POINT2 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_CHANNEL_OUT_7POINT1POINT4_" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_7POINT1POINT4*"></a>
+
+  <h3 id="Android_Media_AudioFormat_CHANNEL_OUT_7POINT1POINT4" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_7POINT1POINT4">
+  CHANNEL_OUT_7POINT1POINT4
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L228"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_7POINT1POINT4">https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_7POINT1POINT4</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CHANNEL_OUT_7POINT1POINT4 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_CHANNEL_OUT_7POINT1_SURROUND_" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_7POINT1_SURROUND*"></a>
+
+  <h3 id="Android_Media_AudioFormat_CHANNEL_OUT_7POINT1_SURROUND" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_7POINT1_SURROUND">
+  CHANNEL_OUT_7POINT1_SURROUND
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L216"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_7POINT1_SURROUND">https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_7POINT1_SURROUND</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CHANNEL_OUT_7POINT1_SURROUND { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_CHANNEL_OUT_9POINT1POINT4_" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_9POINT1POINT4*"></a>
+
+  <h3 id="Android_Media_AudioFormat_CHANNEL_OUT_9POINT1POINT4" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_9POINT1POINT4">
+  CHANNEL_OUT_9POINT1POINT4
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L234"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_9POINT1POINT4">https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_9POINT1POINT4</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CHANNEL_OUT_9POINT1POINT4 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_CHANNEL_OUT_9POINT1POINT6_" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_9POINT1POINT6*"></a>
+
+  <h3 id="Android_Media_AudioFormat_CHANNEL_OUT_9POINT1POINT6" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_9POINT1POINT6">
+  CHANNEL_OUT_9POINT1POINT6
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L240"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_9POINT1POINT6">https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_9POINT1POINT6</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CHANNEL_OUT_9POINT1POINT6 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_CHANNEL_OUT_BACK_CENTER_" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_BACK_CENTER*"></a>
+
+  <h3 id="Android_Media_AudioFormat_CHANNEL_OUT_BACK_CENTER" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_BACK_CENTER">
+  CHANNEL_OUT_BACK_CENTER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L246"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_BACK_CENTER">https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_BACK_CENTER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CHANNEL_OUT_BACK_CENTER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_CHANNEL_OUT_BACK_LEFT_" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_BACK_LEFT*"></a>
+
+  <h3 id="Android_Media_AudioFormat_CHANNEL_OUT_BACK_LEFT" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_BACK_LEFT">
+  CHANNEL_OUT_BACK_LEFT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L252"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_BACK_LEFT">https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_BACK_LEFT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CHANNEL_OUT_BACK_LEFT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_CHANNEL_OUT_BACK_RIGHT_" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_BACK_RIGHT*"></a>
+
+  <h3 id="Android_Media_AudioFormat_CHANNEL_OUT_BACK_RIGHT" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_BACK_RIGHT">
+  CHANNEL_OUT_BACK_RIGHT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L258"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_BACK_RIGHT">https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_BACK_RIGHT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CHANNEL_OUT_BACK_RIGHT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_CHANNEL_OUT_BOTTOM_FRONT_CENTER_" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_BOTTOM_FRONT_CENTER*"></a>
+
+  <h3 id="Android_Media_AudioFormat_CHANNEL_OUT_BOTTOM_FRONT_CENTER" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_BOTTOM_FRONT_CENTER">
+  CHANNEL_OUT_BOTTOM_FRONT_CENTER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L264"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_BOTTOM_FRONT_CENTER">https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_BOTTOM_FRONT_CENTER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CHANNEL_OUT_BOTTOM_FRONT_CENTER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_CHANNEL_OUT_BOTTOM_FRONT_LEFT_" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_BOTTOM_FRONT_LEFT*"></a>
+
+  <h3 id="Android_Media_AudioFormat_CHANNEL_OUT_BOTTOM_FRONT_LEFT" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_BOTTOM_FRONT_LEFT">
+  CHANNEL_OUT_BOTTOM_FRONT_LEFT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L270"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_BOTTOM_FRONT_LEFT">https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_BOTTOM_FRONT_LEFT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CHANNEL_OUT_BOTTOM_FRONT_LEFT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_CHANNEL_OUT_BOTTOM_FRONT_RIGHT_" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_BOTTOM_FRONT_RIGHT*"></a>
+
+  <h3 id="Android_Media_AudioFormat_CHANNEL_OUT_BOTTOM_FRONT_RIGHT" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_BOTTOM_FRONT_RIGHT">
+  CHANNEL_OUT_BOTTOM_FRONT_RIGHT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L276"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_BOTTOM_FRONT_RIGHT">https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_BOTTOM_FRONT_RIGHT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CHANNEL_OUT_BOTTOM_FRONT_RIGHT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_CHANNEL_OUT_DEFAULT_" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_DEFAULT*"></a>
+
+  <h3 id="Android_Media_AudioFormat_CHANNEL_OUT_DEFAULT" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_DEFAULT">
+  CHANNEL_OUT_DEFAULT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L282"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_DEFAULT">https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_DEFAULT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CHANNEL_OUT_DEFAULT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_CHANNEL_OUT_FRONT_CENTER_" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_FRONT_CENTER*"></a>
+
+  <h3 id="Android_Media_AudioFormat_CHANNEL_OUT_FRONT_CENTER" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_FRONT_CENTER">
+  CHANNEL_OUT_FRONT_CENTER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L288"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_FRONT_CENTER">https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_FRONT_CENTER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CHANNEL_OUT_FRONT_CENTER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_CHANNEL_OUT_FRONT_LEFT_" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_FRONT_LEFT*"></a>
+
+  <h3 id="Android_Media_AudioFormat_CHANNEL_OUT_FRONT_LEFT" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_FRONT_LEFT">
+  CHANNEL_OUT_FRONT_LEFT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L294"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_FRONT_LEFT">https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_FRONT_LEFT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CHANNEL_OUT_FRONT_LEFT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_CHANNEL_OUT_FRONT_LEFT_OF_CENTER_" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_FRONT_LEFT_OF_CENTER*"></a>
+
+  <h3 id="Android_Media_AudioFormat_CHANNEL_OUT_FRONT_LEFT_OF_CENTER" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_FRONT_LEFT_OF_CENTER">
+  CHANNEL_OUT_FRONT_LEFT_OF_CENTER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L300"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_FRONT_LEFT_OF_CENTER">https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_FRONT_LEFT_OF_CENTER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CHANNEL_OUT_FRONT_LEFT_OF_CENTER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_CHANNEL_OUT_FRONT_RIGHT_" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_FRONT_RIGHT*"></a>
+
+  <h3 id="Android_Media_AudioFormat_CHANNEL_OUT_FRONT_RIGHT" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_FRONT_RIGHT">
+  CHANNEL_OUT_FRONT_RIGHT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L306"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_FRONT_RIGHT">https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_FRONT_RIGHT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CHANNEL_OUT_FRONT_RIGHT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_CHANNEL_OUT_FRONT_RIGHT_OF_CENTER_" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_FRONT_RIGHT_OF_CENTER*"></a>
+
+  <h3 id="Android_Media_AudioFormat_CHANNEL_OUT_FRONT_RIGHT_OF_CENTER" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_FRONT_RIGHT_OF_CENTER">
+  CHANNEL_OUT_FRONT_RIGHT_OF_CENTER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L312"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_FRONT_RIGHT_OF_CENTER">https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_FRONT_RIGHT_OF_CENTER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CHANNEL_OUT_FRONT_RIGHT_OF_CENTER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_CHANNEL_OUT_FRONT_WIDE_LEFT_" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_FRONT_WIDE_LEFT*"></a>
+
+  <h3 id="Android_Media_AudioFormat_CHANNEL_OUT_FRONT_WIDE_LEFT" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_FRONT_WIDE_LEFT">
+  CHANNEL_OUT_FRONT_WIDE_LEFT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L318"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_FRONT_WIDE_LEFT">https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_FRONT_WIDE_LEFT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CHANNEL_OUT_FRONT_WIDE_LEFT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_CHANNEL_OUT_FRONT_WIDE_RIGHT_" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_FRONT_WIDE_RIGHT*"></a>
+
+  <h3 id="Android_Media_AudioFormat_CHANNEL_OUT_FRONT_WIDE_RIGHT" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_FRONT_WIDE_RIGHT">
+  CHANNEL_OUT_FRONT_WIDE_RIGHT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L324"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_FRONT_WIDE_RIGHT">https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_FRONT_WIDE_RIGHT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CHANNEL_OUT_FRONT_WIDE_RIGHT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_CHANNEL_OUT_LOW_FREQUENCY_" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_LOW_FREQUENCY*"></a>
+
+  <h3 id="Android_Media_AudioFormat_CHANNEL_OUT_LOW_FREQUENCY" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_LOW_FREQUENCY">
+  CHANNEL_OUT_LOW_FREQUENCY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L330"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_LOW_FREQUENCY">https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_LOW_FREQUENCY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CHANNEL_OUT_LOW_FREQUENCY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_CHANNEL_OUT_LOW_FREQUENCY_2_" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_LOW_FREQUENCY_2*"></a>
+
+  <h3 id="Android_Media_AudioFormat_CHANNEL_OUT_LOW_FREQUENCY_2" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_LOW_FREQUENCY_2">
+  CHANNEL_OUT_LOW_FREQUENCY_2
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L336"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_LOW_FREQUENCY_2">https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_LOW_FREQUENCY_2</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CHANNEL_OUT_LOW_FREQUENCY_2 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_CHANNEL_OUT_MONO_" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_MONO*"></a>
+
+  <h3 id="Android_Media_AudioFormat_CHANNEL_OUT_MONO" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_MONO">
+  CHANNEL_OUT_MONO
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L342"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_MONO">https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_MONO</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CHANNEL_OUT_MONO { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_CHANNEL_OUT_QUAD_" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_QUAD*"></a>
+
+  <h3 id="Android_Media_AudioFormat_CHANNEL_OUT_QUAD" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_QUAD">
+  CHANNEL_OUT_QUAD
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L348"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_QUAD">https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_QUAD</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CHANNEL_OUT_QUAD { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_CHANNEL_OUT_SIDE_LEFT_" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_SIDE_LEFT*"></a>
+
+  <h3 id="Android_Media_AudioFormat_CHANNEL_OUT_SIDE_LEFT" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_SIDE_LEFT">
+  CHANNEL_OUT_SIDE_LEFT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L354"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_SIDE_LEFT">https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_SIDE_LEFT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CHANNEL_OUT_SIDE_LEFT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_CHANNEL_OUT_SIDE_RIGHT_" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_SIDE_RIGHT*"></a>
+
+  <h3 id="Android_Media_AudioFormat_CHANNEL_OUT_SIDE_RIGHT" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_SIDE_RIGHT">
+  CHANNEL_OUT_SIDE_RIGHT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L360"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_SIDE_RIGHT">https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_SIDE_RIGHT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CHANNEL_OUT_SIDE_RIGHT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_CHANNEL_OUT_STEREO_" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_STEREO*"></a>
+
+  <h3 id="Android_Media_AudioFormat_CHANNEL_OUT_STEREO" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_STEREO">
+  CHANNEL_OUT_STEREO
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L366"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_STEREO">https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_STEREO</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CHANNEL_OUT_STEREO { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_CHANNEL_OUT_SURROUND_" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_SURROUND*"></a>
+
+  <h3 id="Android_Media_AudioFormat_CHANNEL_OUT_SURROUND" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_SURROUND">
+  CHANNEL_OUT_SURROUND
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L372"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_SURROUND">https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_SURROUND</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CHANNEL_OUT_SURROUND { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_CHANNEL_OUT_TOP_BACK_CENTER_" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_TOP_BACK_CENTER*"></a>
+
+  <h3 id="Android_Media_AudioFormat_CHANNEL_OUT_TOP_BACK_CENTER" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_TOP_BACK_CENTER">
+  CHANNEL_OUT_TOP_BACK_CENTER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L378"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_TOP_BACK_CENTER">https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_TOP_BACK_CENTER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CHANNEL_OUT_TOP_BACK_CENTER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_CHANNEL_OUT_TOP_BACK_LEFT_" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_TOP_BACK_LEFT*"></a>
+
+  <h3 id="Android_Media_AudioFormat_CHANNEL_OUT_TOP_BACK_LEFT" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_TOP_BACK_LEFT">
+  CHANNEL_OUT_TOP_BACK_LEFT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L384"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_TOP_BACK_LEFT">https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_TOP_BACK_LEFT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CHANNEL_OUT_TOP_BACK_LEFT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_CHANNEL_OUT_TOP_BACK_RIGHT_" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_TOP_BACK_RIGHT*"></a>
+
+  <h3 id="Android_Media_AudioFormat_CHANNEL_OUT_TOP_BACK_RIGHT" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_TOP_BACK_RIGHT">
+  CHANNEL_OUT_TOP_BACK_RIGHT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L390"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_TOP_BACK_RIGHT">https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_TOP_BACK_RIGHT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CHANNEL_OUT_TOP_BACK_RIGHT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_CHANNEL_OUT_TOP_CENTER_" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_TOP_CENTER*"></a>
+
+  <h3 id="Android_Media_AudioFormat_CHANNEL_OUT_TOP_CENTER" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_TOP_CENTER">
+  CHANNEL_OUT_TOP_CENTER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L396"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_TOP_CENTER">https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_TOP_CENTER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CHANNEL_OUT_TOP_CENTER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_CHANNEL_OUT_TOP_FRONT_CENTER_" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_TOP_FRONT_CENTER*"></a>
+
+  <h3 id="Android_Media_AudioFormat_CHANNEL_OUT_TOP_FRONT_CENTER" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_TOP_FRONT_CENTER">
+  CHANNEL_OUT_TOP_FRONT_CENTER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L402"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_TOP_FRONT_CENTER">https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_TOP_FRONT_CENTER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CHANNEL_OUT_TOP_FRONT_CENTER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_CHANNEL_OUT_TOP_FRONT_LEFT_" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_TOP_FRONT_LEFT*"></a>
+
+  <h3 id="Android_Media_AudioFormat_CHANNEL_OUT_TOP_FRONT_LEFT" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_TOP_FRONT_LEFT">
+  CHANNEL_OUT_TOP_FRONT_LEFT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L408"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_TOP_FRONT_LEFT">https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_TOP_FRONT_LEFT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CHANNEL_OUT_TOP_FRONT_LEFT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_CHANNEL_OUT_TOP_FRONT_RIGHT_" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_TOP_FRONT_RIGHT*"></a>
+
+  <h3 id="Android_Media_AudioFormat_CHANNEL_OUT_TOP_FRONT_RIGHT" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_TOP_FRONT_RIGHT">
+  CHANNEL_OUT_TOP_FRONT_RIGHT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L414"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_TOP_FRONT_RIGHT">https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_TOP_FRONT_RIGHT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CHANNEL_OUT_TOP_FRONT_RIGHT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_CHANNEL_OUT_TOP_SIDE_LEFT_" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_TOP_SIDE_LEFT*"></a>
+
+  <h3 id="Android_Media_AudioFormat_CHANNEL_OUT_TOP_SIDE_LEFT" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_TOP_SIDE_LEFT">
+  CHANNEL_OUT_TOP_SIDE_LEFT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L420"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_TOP_SIDE_LEFT">https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_TOP_SIDE_LEFT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CHANNEL_OUT_TOP_SIDE_LEFT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_CHANNEL_OUT_TOP_SIDE_RIGHT_" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_TOP_SIDE_RIGHT*"></a>
+
+  <h3 id="Android_Media_AudioFormat_CHANNEL_OUT_TOP_SIDE_RIGHT" data-uid="Android.Media.AudioFormat.CHANNEL_OUT_TOP_SIDE_RIGHT">
+  CHANNEL_OUT_TOP_SIDE_RIGHT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L426"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_TOP_SIDE_RIGHT">https://developer.android.com/reference/android/media/AudioFormat.html#CHANNEL_OUT_TOP_SIDE_RIGHT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CHANNEL_OUT_TOP_SIDE_RIGHT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_CREATOR_" data-uid="Android.Media.AudioFormat.CREATOR*"></a>
+
+  <h3 id="Android_Media_AudioFormat_CREATOR" data-uid="Android.Media.AudioFormat.CREATOR">
+  CREATOR
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#CREATOR">https://developer.android.com/reference/android/media/AudioFormat.html#CREATOR</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Parcelable.Creator CREATOR { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Os.Parcelable.html">Parcelable</a>.<a class="xref" href="Android.Os.Parcelable.Creator.html">Creator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_ENCODING_AAC_ELD_" data-uid="Android.Media.AudioFormat.ENCODING_AAC_ELD*"></a>
+
+  <h3 id="Android_Media_AudioFormat_ENCODING_AAC_ELD" data-uid="Android.Media.AudioFormat.ENCODING_AAC_ELD">
+  ENCODING_AAC_ELD
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L432"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_AAC_ELD">https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_AAC_ELD</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ENCODING_AAC_ELD { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_ENCODING_AAC_HE_V1_" data-uid="Android.Media.AudioFormat.ENCODING_AAC_HE_V1*"></a>
+
+  <h3 id="Android_Media_AudioFormat_ENCODING_AAC_HE_V1" data-uid="Android.Media.AudioFormat.ENCODING_AAC_HE_V1">
+  ENCODING_AAC_HE_V1
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L438"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_AAC_HE_V1">https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_AAC_HE_V1</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ENCODING_AAC_HE_V1 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_ENCODING_AAC_HE_V2_" data-uid="Android.Media.AudioFormat.ENCODING_AAC_HE_V2*"></a>
+
+  <h3 id="Android_Media_AudioFormat_ENCODING_AAC_HE_V2" data-uid="Android.Media.AudioFormat.ENCODING_AAC_HE_V2">
+  ENCODING_AAC_HE_V2
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L444"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_AAC_HE_V2">https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_AAC_HE_V2</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ENCODING_AAC_HE_V2 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_ENCODING_AAC_LC_" data-uid="Android.Media.AudioFormat.ENCODING_AAC_LC*"></a>
+
+  <h3 id="Android_Media_AudioFormat_ENCODING_AAC_LC" data-uid="Android.Media.AudioFormat.ENCODING_AAC_LC">
+  ENCODING_AAC_LC
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L450"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_AAC_LC">https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_AAC_LC</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ENCODING_AAC_LC { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_ENCODING_AAC_XHE_" data-uid="Android.Media.AudioFormat.ENCODING_AAC_XHE*"></a>
+
+  <h3 id="Android_Media_AudioFormat_ENCODING_AAC_XHE" data-uid="Android.Media.AudioFormat.ENCODING_AAC_XHE">
+  ENCODING_AAC_XHE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L456"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_AAC_XHE">https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_AAC_XHE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ENCODING_AAC_XHE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_ENCODING_AC3_" data-uid="Android.Media.AudioFormat.ENCODING_AC3*"></a>
+
+  <h3 id="Android_Media_AudioFormat_ENCODING_AC3" data-uid="Android.Media.AudioFormat.ENCODING_AC3">
+  ENCODING_AC3
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L462"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_AC3">https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_AC3</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ENCODING_AC3 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_ENCODING_AC4_" data-uid="Android.Media.AudioFormat.ENCODING_AC4*"></a>
+
+  <h3 id="Android_Media_AudioFormat_ENCODING_AC4" data-uid="Android.Media.AudioFormat.ENCODING_AC4">
+  ENCODING_AC4
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L468"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_AC4">https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_AC4</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ENCODING_AC4 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_ENCODING_DEFAULT_" data-uid="Android.Media.AudioFormat.ENCODING_DEFAULT*"></a>
+
+  <h3 id="Android_Media_AudioFormat_ENCODING_DEFAULT" data-uid="Android.Media.AudioFormat.ENCODING_DEFAULT">
+  ENCODING_DEFAULT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L474"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_DEFAULT">https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_DEFAULT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ENCODING_DEFAULT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_ENCODING_DOLBY_MAT_" data-uid="Android.Media.AudioFormat.ENCODING_DOLBY_MAT*"></a>
+
+  <h3 id="Android_Media_AudioFormat_ENCODING_DOLBY_MAT" data-uid="Android.Media.AudioFormat.ENCODING_DOLBY_MAT">
+  ENCODING_DOLBY_MAT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L480"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_DOLBY_MAT">https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_DOLBY_MAT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ENCODING_DOLBY_MAT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_ENCODING_DOLBY_TRUEHD_" data-uid="Android.Media.AudioFormat.ENCODING_DOLBY_TRUEHD*"></a>
+
+  <h3 id="Android_Media_AudioFormat_ENCODING_DOLBY_TRUEHD" data-uid="Android.Media.AudioFormat.ENCODING_DOLBY_TRUEHD">
+  ENCODING_DOLBY_TRUEHD
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L486"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_DOLBY_TRUEHD">https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_DOLBY_TRUEHD</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ENCODING_DOLBY_TRUEHD { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_ENCODING_DRA_" data-uid="Android.Media.AudioFormat.ENCODING_DRA*"></a>
+
+  <h3 id="Android_Media_AudioFormat_ENCODING_DRA" data-uid="Android.Media.AudioFormat.ENCODING_DRA">
+  ENCODING_DRA
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L492"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_DRA">https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_DRA</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ENCODING_DRA { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_ENCODING_DSD_" data-uid="Android.Media.AudioFormat.ENCODING_DSD*"></a>
+
+  <h3 id="Android_Media_AudioFormat_ENCODING_DSD" data-uid="Android.Media.AudioFormat.ENCODING_DSD">
+  ENCODING_DSD
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L498"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_DSD">https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_DSD</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ENCODING_DSD { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_ENCODING_DTS_" data-uid="Android.Media.AudioFormat.ENCODING_DTS*"></a>
+
+  <h3 id="Android_Media_AudioFormat_ENCODING_DTS" data-uid="Android.Media.AudioFormat.ENCODING_DTS">
+  ENCODING_DTS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L504"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_DTS">https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_DTS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ENCODING_DTS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_ENCODING_DTS_HD_" data-uid="Android.Media.AudioFormat.ENCODING_DTS_HD*"></a>
+
+  <h3 id="Android_Media_AudioFormat_ENCODING_DTS_HD" data-uid="Android.Media.AudioFormat.ENCODING_DTS_HD">
+  ENCODING_DTS_HD
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L510"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_DTS_HD">https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_DTS_HD</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ENCODING_DTS_HD { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_ENCODING_DTS_HD_MA_" data-uid="Android.Media.AudioFormat.ENCODING_DTS_HD_MA*"></a>
+
+  <h3 id="Android_Media_AudioFormat_ENCODING_DTS_HD_MA" data-uid="Android.Media.AudioFormat.ENCODING_DTS_HD_MA">
+  ENCODING_DTS_HD_MA
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L516"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_DTS_HD_MA">https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_DTS_HD_MA</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ENCODING_DTS_HD_MA { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_ENCODING_DTS_UHD_" data-uid="Android.Media.AudioFormat.ENCODING_DTS_UHD*"></a>
+
+  <h3 id="Android_Media_AudioFormat_ENCODING_DTS_UHD" data-uid="Android.Media.AudioFormat.ENCODING_DTS_UHD">
+  ENCODING_DTS_UHD
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L522"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_DTS_UHD">https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_DTS_UHD</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static int ENCODING_DTS_UHD { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_ENCODING_DTS_UHD_P1_" data-uid="Android.Media.AudioFormat.ENCODING_DTS_UHD_P1*"></a>
+
+  <h3 id="Android_Media_AudioFormat_ENCODING_DTS_UHD_P1" data-uid="Android.Media.AudioFormat.ENCODING_DTS_UHD_P1">
+  ENCODING_DTS_UHD_P1
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L529"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_DTS_UHD_P1">https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_DTS_UHD_P1</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ENCODING_DTS_UHD_P1 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_ENCODING_DTS_UHD_P2_" data-uid="Android.Media.AudioFormat.ENCODING_DTS_UHD_P2*"></a>
+
+  <h3 id="Android_Media_AudioFormat_ENCODING_DTS_UHD_P2" data-uid="Android.Media.AudioFormat.ENCODING_DTS_UHD_P2">
+  ENCODING_DTS_UHD_P2
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L535"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_DTS_UHD_P2">https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_DTS_UHD_P2</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ENCODING_DTS_UHD_P2 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_ENCODING_E_AC3_" data-uid="Android.Media.AudioFormat.ENCODING_E_AC3*"></a>
+
+  <h3 id="Android_Media_AudioFormat_ENCODING_E_AC3" data-uid="Android.Media.AudioFormat.ENCODING_E_AC3">
+  ENCODING_E_AC3
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L541"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_E_AC3">https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_E_AC3</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ENCODING_E_AC3 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_ENCODING_E_AC3_JOC_" data-uid="Android.Media.AudioFormat.ENCODING_E_AC3_JOC*"></a>
+
+  <h3 id="Android_Media_AudioFormat_ENCODING_E_AC3_JOC" data-uid="Android.Media.AudioFormat.ENCODING_E_AC3_JOC">
+  ENCODING_E_AC3_JOC
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L547"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_E_AC3_JOC">https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_E_AC3_JOC</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ENCODING_E_AC3_JOC { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_ENCODING_IEC61937_" data-uid="Android.Media.AudioFormat.ENCODING_IEC61937*"></a>
+
+  <h3 id="Android_Media_AudioFormat_ENCODING_IEC61937" data-uid="Android.Media.AudioFormat.ENCODING_IEC61937">
+  ENCODING_IEC61937
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L553"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_IEC61937">https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_IEC61937</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ENCODING_IEC61937 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_ENCODING_INVALID_" data-uid="Android.Media.AudioFormat.ENCODING_INVALID*"></a>
+
+  <h3 id="Android_Media_AudioFormat_ENCODING_INVALID" data-uid="Android.Media.AudioFormat.ENCODING_INVALID">
+  ENCODING_INVALID
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L559"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_INVALID">https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_INVALID</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ENCODING_INVALID { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_ENCODING_MP3_" data-uid="Android.Media.AudioFormat.ENCODING_MP3*"></a>
+
+  <h3 id="Android_Media_AudioFormat_ENCODING_MP3" data-uid="Android.Media.AudioFormat.ENCODING_MP3">
+  ENCODING_MP3
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L565"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_MP3">https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_MP3</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ENCODING_MP3 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_ENCODING_MPEGH_BL_L3_" data-uid="Android.Media.AudioFormat.ENCODING_MPEGH_BL_L3*"></a>
+
+  <h3 id="Android_Media_AudioFormat_ENCODING_MPEGH_BL_L3" data-uid="Android.Media.AudioFormat.ENCODING_MPEGH_BL_L3">
+  ENCODING_MPEGH_BL_L3
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L571"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_MPEGH_BL_L3">https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_MPEGH_BL_L3</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ENCODING_MPEGH_BL_L3 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_ENCODING_MPEGH_BL_L4_" data-uid="Android.Media.AudioFormat.ENCODING_MPEGH_BL_L4*"></a>
+
+  <h3 id="Android_Media_AudioFormat_ENCODING_MPEGH_BL_L4" data-uid="Android.Media.AudioFormat.ENCODING_MPEGH_BL_L4">
+  ENCODING_MPEGH_BL_L4
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L577"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_MPEGH_BL_L4">https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_MPEGH_BL_L4</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ENCODING_MPEGH_BL_L4 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_ENCODING_MPEGH_LC_L3_" data-uid="Android.Media.AudioFormat.ENCODING_MPEGH_LC_L3*"></a>
+
+  <h3 id="Android_Media_AudioFormat_ENCODING_MPEGH_LC_L3" data-uid="Android.Media.AudioFormat.ENCODING_MPEGH_LC_L3">
+  ENCODING_MPEGH_LC_L3
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L583"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_MPEGH_LC_L3">https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_MPEGH_LC_L3</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ENCODING_MPEGH_LC_L3 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_ENCODING_MPEGH_LC_L4_" data-uid="Android.Media.AudioFormat.ENCODING_MPEGH_LC_L4*"></a>
+
+  <h3 id="Android_Media_AudioFormat_ENCODING_MPEGH_LC_L4" data-uid="Android.Media.AudioFormat.ENCODING_MPEGH_LC_L4">
+  ENCODING_MPEGH_LC_L4
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L589"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_MPEGH_LC_L4">https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_MPEGH_LC_L4</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ENCODING_MPEGH_LC_L4 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_ENCODING_OPUS_" data-uid="Android.Media.AudioFormat.ENCODING_OPUS*"></a>
+
+  <h3 id="Android_Media_AudioFormat_ENCODING_OPUS" data-uid="Android.Media.AudioFormat.ENCODING_OPUS">
+  ENCODING_OPUS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L595"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_OPUS">https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_OPUS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ENCODING_OPUS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_ENCODING_PCM_16BIT_" data-uid="Android.Media.AudioFormat.ENCODING_PCM_16BIT*"></a>
+
+  <h3 id="Android_Media_AudioFormat_ENCODING_PCM_16BIT" data-uid="Android.Media.AudioFormat.ENCODING_PCM_16BIT">
+  ENCODING_PCM_16BIT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L601"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_PCM_16BIT">https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_PCM_16BIT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ENCODING_PCM_16BIT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_ENCODING_PCM_24BIT_PACKED_" data-uid="Android.Media.AudioFormat.ENCODING_PCM_24BIT_PACKED*"></a>
+
+  <h3 id="Android_Media_AudioFormat_ENCODING_PCM_24BIT_PACKED" data-uid="Android.Media.AudioFormat.ENCODING_PCM_24BIT_PACKED">
+  ENCODING_PCM_24BIT_PACKED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L607"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_PCM_24BIT_PACKED">https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_PCM_24BIT_PACKED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ENCODING_PCM_24BIT_PACKED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_ENCODING_PCM_32BIT_" data-uid="Android.Media.AudioFormat.ENCODING_PCM_32BIT*"></a>
+
+  <h3 id="Android_Media_AudioFormat_ENCODING_PCM_32BIT" data-uid="Android.Media.AudioFormat.ENCODING_PCM_32BIT">
+  ENCODING_PCM_32BIT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L613"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_PCM_32BIT">https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_PCM_32BIT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ENCODING_PCM_32BIT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_ENCODING_PCM_8BIT_" data-uid="Android.Media.AudioFormat.ENCODING_PCM_8BIT*"></a>
+
+  <h3 id="Android_Media_AudioFormat_ENCODING_PCM_8BIT" data-uid="Android.Media.AudioFormat.ENCODING_PCM_8BIT">
+  ENCODING_PCM_8BIT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L619"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_PCM_8BIT">https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_PCM_8BIT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ENCODING_PCM_8BIT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_ENCODING_PCM_FLOAT_" data-uid="Android.Media.AudioFormat.ENCODING_PCM_FLOAT*"></a>
+
+  <h3 id="Android_Media_AudioFormat_ENCODING_PCM_FLOAT" data-uid="Android.Media.AudioFormat.ENCODING_PCM_FLOAT">
+  ENCODING_PCM_FLOAT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L625"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_PCM_FLOAT">https://developer.android.com/reference/android/media/AudioFormat.html#ENCODING_PCM_FLOAT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ENCODING_PCM_FLOAT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_IsBridgeAbstract_" data-uid="Android.Media.AudioFormat.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_Media_AudioFormat_IsBridgeAbstract" data-uid="Android.Media.AudioFormat.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AllPackageClasses.cs/#L496"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_IsBridgeCloseable_" data-uid="Android.Media.AudioFormat.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_Media_AudioFormat_IsBridgeCloseable" data-uid="Android.Media.AudioFormat.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AllPackageClasses.cs/#L500"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_IsBridgeInterface_" data-uid="Android.Media.AudioFormat.IsBridgeInterface*"></a>
+
+  <h3 id="Android_Media_AudioFormat_IsBridgeInterface" data-uid="Android.Media.AudioFormat.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AllPackageClasses.cs/#L504"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_IsBridgeStatic_" data-uid="Android.Media.AudioFormat.IsBridgeStatic*"></a>
+
+  <h3 id="Android_Media_AudioFormat_IsBridgeStatic" data-uid="Android.Media.AudioFormat.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AllPackageClasses.cs/#L508"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_SAMPLE_RATE_UNSPECIFIED_" data-uid="Android.Media.AudioFormat.SAMPLE_RATE_UNSPECIFIED*"></a>
+
+  <h3 id="Android_Media_AudioFormat_SAMPLE_RATE_UNSPECIFIED" data-uid="Android.Media.AudioFormat.SAMPLE_RATE_UNSPECIFIED">
+  SAMPLE_RATE_UNSPECIFIED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L631"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#SAMPLE_RATE_UNSPECIFIED">https://developer.android.com/reference/android/media/AudioFormat.html#SAMPLE_RATE_UNSPECIFIED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SAMPLE_RATE_UNSPECIFIED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_Media_AudioFormat_DescribeContents_" data-uid="Android.Media.AudioFormat.DescribeContents*"></a>
+
+  <h3 id="Android_Media_AudioFormat_DescribeContents" data-uid="Android.Media.AudioFormat.DescribeContents">
+  DescribeContents()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L646"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#describeContents()">https://developer.android.com/reference/android/media/AudioFormat.html#describeContents()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int DescribeContents()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_GetChannelCount_" data-uid="Android.Media.AudioFormat.GetChannelCount*"></a>
+
+  <h3 id="Android_Media_AudioFormat_GetChannelCount" data-uid="Android.Media.AudioFormat.GetChannelCount">
+  GetChannelCount()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L654"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#getChannelCount()">https://developer.android.com/reference/android/media/AudioFormat.html#getChannelCount()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetChannelCount()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_GetChannelIndexMask_" data-uid="Android.Media.AudioFormat.GetChannelIndexMask*"></a>
+
+  <h3 id="Android_Media_AudioFormat_GetChannelIndexMask" data-uid="Android.Media.AudioFormat.GetChannelIndexMask">
+  GetChannelIndexMask()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L662"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#getChannelIndexMask()">https://developer.android.com/reference/android/media/AudioFormat.html#getChannelIndexMask()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetChannelIndexMask()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_GetChannelMask_" data-uid="Android.Media.AudioFormat.GetChannelMask*"></a>
+
+  <h3 id="Android_Media_AudioFormat_GetChannelMask" data-uid="Android.Media.AudioFormat.GetChannelMask">
+  GetChannelMask()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L670"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#getChannelMask()">https://developer.android.com/reference/android/media/AudioFormat.html#getChannelMask()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetChannelMask()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_GetEncoding_" data-uid="Android.Media.AudioFormat.GetEncoding*"></a>
+
+  <h3 id="Android_Media_AudioFormat_GetEncoding" data-uid="Android.Media.AudioFormat.GetEncoding">
+  GetEncoding()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L678"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#getEncoding()">https://developer.android.com/reference/android/media/AudioFormat.html#getEncoding()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetEncoding()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_GetFrameSizeInBytes_" data-uid="Android.Media.AudioFormat.GetFrameSizeInBytes*"></a>
+
+  <h3 id="Android_Media_AudioFormat_GetFrameSizeInBytes" data-uid="Android.Media.AudioFormat.GetFrameSizeInBytes">
+  GetFrameSizeInBytes()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L686"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#getFrameSizeInBytes()">https://developer.android.com/reference/android/media/AudioFormat.html#getFrameSizeInBytes()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetFrameSizeInBytes()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_GetSampleRate_" data-uid="Android.Media.AudioFormat.GetSampleRate*"></a>
+
+  <h3 id="Android_Media_AudioFormat_GetSampleRate" data-uid="Android.Media.AudioFormat.GetSampleRate">
+  GetSampleRate()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L694"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#getSampleRate()">https://developer.android.com/reference/android/media/AudioFormat.html#getSampleRate()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetSampleRate()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_AudioFormat_WriteToParcel_" data-uid="Android.Media.AudioFormat.WriteToParcel*"></a>
+
+  <h3 id="Android_Media_AudioFormat_WriteToParcel_Android_Os_Parcel_System_Int32_" data-uid="Android.Media.AudioFormat.WriteToParcel(Android.Os.Parcel,System.Int32)">
+  WriteToParcel(Parcel, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L703"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/AudioFormat.html#writeToParcel(android.os.Parcel,int)">https://developer.android.com/reference/android/media/AudioFormat.html#writeToParcel(android.os.Parcel,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteToParcel(Parcel arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Os.Parcel.html">Parcel</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Parcel.html">Parcel</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AudioFormat.cs/#L29" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,4128 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class ApplicationInfo | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ApplicationInfo | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_Content_Pm_ApplicationInfo.md&amp;value=---%0Auid%3A%20Android.Content.Pm.ApplicationInfo%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.Content.Pm.ApplicationInfo">
+
+
+
+  <h1 id="Android_Content_Pm_ApplicationInfo" data-uid="Android.Content.Pm.ApplicationInfo" class="text-break">
+Class ApplicationInfo  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.Content.html">Content</a>.<a class="xref" href="Android.Content.Pm.html">Pm</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ApplicationInfo : PackageItemInfo, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.Content.Pm.PackageItemInfo.html">PackageItemInfo</a>&gt;</div>
+      <div><a class="xref" href="Android.Content.Pm.PackageItemInfo.html">PackageItemInfo</a></div>
+      <div><span class="xref">ApplicationInfo</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Android.Content.Pm.PackageItemInfo.html#Android_Content_Pm_PackageItemInfo_metaData">PackageItemInfo.metaData</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.Pm.PackageItemInfo.html#Android_Content_Pm_PackageItemInfo_banner">PackageItemInfo.banner</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.Pm.PackageItemInfo.html#Android_Content_Pm_PackageItemInfo_icon">PackageItemInfo.icon</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.Pm.PackageItemInfo.html#Android_Content_Pm_PackageItemInfo_labelRes">PackageItemInfo.labelRes</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.Pm.PackageItemInfo.html#Android_Content_Pm_PackageItemInfo_logo">PackageItemInfo.logo</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.Pm.PackageItemInfo.html#Android_Content_Pm_PackageItemInfo_nonLocalizedLabel">PackageItemInfo.nonLocalizedLabel</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.Pm.PackageItemInfo.html#Android_Content_Pm_PackageItemInfo_name">PackageItemInfo.name</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.Pm.PackageItemInfo.html#Android_Content_Pm_PackageItemInfo_packageName">PackageItemInfo.packageName</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.Pm.PackageItemInfo.html#Android_Content_Pm_PackageItemInfo_LoadXmlMetaData_Android_Content_Pm_PackageManager_Java_Lang_String_">PackageItemInfo.LoadXmlMetaData(PackageManager, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.Pm.PackageItemInfo.html#Android_Content_Pm_PackageItemInfo_LoadBanner_Android_Content_Pm_PackageManager_">PackageItemInfo.LoadBanner(PackageManager)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.Pm.PackageItemInfo.html#Android_Content_Pm_PackageItemInfo_LoadIcon_Android_Content_Pm_PackageManager_">PackageItemInfo.LoadIcon(PackageManager)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.Pm.PackageItemInfo.html#Android_Content_Pm_PackageItemInfo_LoadLogo_Android_Content_Pm_PackageManager_">PackageItemInfo.LoadLogo(PackageManager)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.Pm.PackageItemInfo.html#Android_Content_Pm_PackageItemInfo_LoadUnbadgedIcon_Android_Content_Pm_PackageManager_">PackageItemInfo.LoadUnbadgedIcon(PackageManager)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.Pm.PackageItemInfo.html#Android_Content_Pm_PackageItemInfo_LoadLabel_Android_Content_Pm_PackageManager_">PackageItemInfo.LoadLabel(PackageManager)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.Pm.PackageItemInfo.html#Android_Content_Pm_PackageItemInfo_WriteToParcel_Android_Os_Parcel_System_Int32_">PackageItemInfo.WriteToParcel(Parcel, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;PackageItemInfo&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;PackageItemInfo&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;PackageItemInfo&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;PackageItemInfo&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;PackageItemInfo&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;PackageItemInfo&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;PackageItemInfo&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;PackageItemInfo&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;PackageItemInfo&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;PackageItemInfo&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;PackageItemInfo&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;PackageItemInfo&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;PackageItemInfo&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;PackageItemInfo&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;PackageItemInfo&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;PackageItemInfo&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;PackageItemInfo&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;PackageItemInfo&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;PackageItemInfo&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;PackageItemInfo&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;PackageItemInfo&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;PackageItemInfo&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;PackageItemInfo&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;PackageItemInfo&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;PackageItemInfo&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;PackageItemInfo&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;PackageItemInfo&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;PackageItemInfo&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;PackageItemInfo&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;PackageItemInfo&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;PackageItemInfo&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;PackageItemInfo&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;PackageItemInfo&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;PackageItemInfo&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;PackageItemInfo&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;PackageItemInfo&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;PackageItemInfo&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;PackageItemInfo&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;PackageItemInfo&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;PackageItemInfo&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;PackageItemInfo&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;PackageItemInfo&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;PackageItemInfo&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;PackageItemInfo&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;PackageItemInfo&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;PackageItemInfo&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;PackageItemInfo&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;PackageItemInfo&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;PackageItemInfo&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;PackageItemInfo&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_Content_Pm_ApplicationInfo__ctor_" data-uid="Android.Content.Pm.ApplicationInfo.#ctor*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo__ctor" data-uid="Android.Content.Pm.ApplicationInfo.#ctor">
+  ApplicationInfo()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/AllPackageClasses.cs/#L171"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApplicationInfo()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo__ctor_" data-uid="Android.Content.Pm.ApplicationInfo.#ctor*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo__ctor_Android_Content_Pm_ApplicationInfo_" data-uid="Android.Content.Pm.ApplicationInfo.#ctor(Android.Content.Pm.ApplicationInfo)">
+  ApplicationInfo(ApplicationInfo)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#%3Cinit%3E(android.content.pm.ApplicationInfo)">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#%3Cinit%3E(android.content.pm.ApplicationInfo)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApplicationInfo(ApplicationInfo arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Pm.ApplicationInfo.html">ApplicationInfo</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Pm.ApplicationInfo.html">ApplicationInfo</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo__ctor_" data-uid="Android.Content.Pm.ApplicationInfo.#ctor*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo__ctor_System_Object___" data-uid="Android.Content.Pm.ApplicationInfo.#ctor(System.Object[])">
+  ApplicationInfo(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/AllPackageClasses.cs/#L175"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ApplicationInfo(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_BridgeClassName_" data-uid="Android.Content.Pm.ApplicationInfo.BridgeClassName*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_BridgeClassName" data-uid="Android.Content.Pm.ApplicationInfo.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/AllPackageClasses.cs/#L182"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_CATEGORY_ACCESSIBILITY_" data-uid="Android.Content.Pm.ApplicationInfo.CATEGORY_ACCESSIBILITY*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_CATEGORY_ACCESSIBILITY" data-uid="Android.Content.Pm.ApplicationInfo.CATEGORY_ACCESSIBILITY">
+  CATEGORY_ACCESSIBILITY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L185"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#CATEGORY_ACCESSIBILITY">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#CATEGORY_ACCESSIBILITY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CATEGORY_ACCESSIBILITY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_CATEGORY_AUDIO_" data-uid="Android.Content.Pm.ApplicationInfo.CATEGORY_AUDIO*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_CATEGORY_AUDIO" data-uid="Android.Content.Pm.ApplicationInfo.CATEGORY_AUDIO">
+  CATEGORY_AUDIO
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L191"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#CATEGORY_AUDIO">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#CATEGORY_AUDIO</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CATEGORY_AUDIO { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_CATEGORY_GAME_" data-uid="Android.Content.Pm.ApplicationInfo.CATEGORY_GAME*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_CATEGORY_GAME" data-uid="Android.Content.Pm.ApplicationInfo.CATEGORY_GAME">
+  CATEGORY_GAME
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L197"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#CATEGORY_GAME">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#CATEGORY_GAME</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CATEGORY_GAME { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_CATEGORY_IMAGE_" data-uid="Android.Content.Pm.ApplicationInfo.CATEGORY_IMAGE*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_CATEGORY_IMAGE" data-uid="Android.Content.Pm.ApplicationInfo.CATEGORY_IMAGE">
+  CATEGORY_IMAGE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L203"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#CATEGORY_IMAGE">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#CATEGORY_IMAGE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CATEGORY_IMAGE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_CATEGORY_MAPS_" data-uid="Android.Content.Pm.ApplicationInfo.CATEGORY_MAPS*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_CATEGORY_MAPS" data-uid="Android.Content.Pm.ApplicationInfo.CATEGORY_MAPS">
+  CATEGORY_MAPS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L209"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#CATEGORY_MAPS">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#CATEGORY_MAPS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CATEGORY_MAPS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_CATEGORY_NEWS_" data-uid="Android.Content.Pm.ApplicationInfo.CATEGORY_NEWS*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_CATEGORY_NEWS" data-uid="Android.Content.Pm.ApplicationInfo.CATEGORY_NEWS">
+  CATEGORY_NEWS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L215"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#CATEGORY_NEWS">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#CATEGORY_NEWS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CATEGORY_NEWS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_CATEGORY_PRODUCTIVITY_" data-uid="Android.Content.Pm.ApplicationInfo.CATEGORY_PRODUCTIVITY*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_CATEGORY_PRODUCTIVITY" data-uid="Android.Content.Pm.ApplicationInfo.CATEGORY_PRODUCTIVITY">
+  CATEGORY_PRODUCTIVITY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L221"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#CATEGORY_PRODUCTIVITY">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#CATEGORY_PRODUCTIVITY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CATEGORY_PRODUCTIVITY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_CATEGORY_SOCIAL_" data-uid="Android.Content.Pm.ApplicationInfo.CATEGORY_SOCIAL*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_CATEGORY_SOCIAL" data-uid="Android.Content.Pm.ApplicationInfo.CATEGORY_SOCIAL">
+  CATEGORY_SOCIAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L227"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#CATEGORY_SOCIAL">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#CATEGORY_SOCIAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CATEGORY_SOCIAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_CATEGORY_UNDEFINED_" data-uid="Android.Content.Pm.ApplicationInfo.CATEGORY_UNDEFINED*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_CATEGORY_UNDEFINED" data-uid="Android.Content.Pm.ApplicationInfo.CATEGORY_UNDEFINED">
+  CATEGORY_UNDEFINED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L233"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#CATEGORY_UNDEFINED">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#CATEGORY_UNDEFINED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CATEGORY_UNDEFINED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_CATEGORY_VIDEO_" data-uid="Android.Content.Pm.ApplicationInfo.CATEGORY_VIDEO*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_CATEGORY_VIDEO" data-uid="Android.Content.Pm.ApplicationInfo.CATEGORY_VIDEO">
+  CATEGORY_VIDEO
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L239"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#CATEGORY_VIDEO">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#CATEGORY_VIDEO</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CATEGORY_VIDEO { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_CREATOR_" data-uid="Android.Content.Pm.ApplicationInfo.CREATOR*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_CREATOR" data-uid="Android.Content.Pm.ApplicationInfo.CREATOR">
+  CREATOR
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L179"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#CREATOR">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#CREATOR</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Parcelable.Creator CREATOR { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Os.Parcelable.html">Parcelable</a>.<a class="xref" href="Android.Os.Parcelable.Creator.html">Creator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_FLAG_ALLOW_BACKUP_" data-uid="Android.Content.Pm.ApplicationInfo.FLAG_ALLOW_BACKUP*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_FLAG_ALLOW_BACKUP" data-uid="Android.Content.Pm.ApplicationInfo.FLAG_ALLOW_BACKUP">
+  FLAG_ALLOW_BACKUP
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L245"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#FLAG_ALLOW_BACKUP">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#FLAG_ALLOW_BACKUP</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int FLAG_ALLOW_BACKUP { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_FLAG_ALLOW_CLEAR_USER_DATA_" data-uid="Android.Content.Pm.ApplicationInfo.FLAG_ALLOW_CLEAR_USER_DATA*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_FLAG_ALLOW_CLEAR_USER_DATA" data-uid="Android.Content.Pm.ApplicationInfo.FLAG_ALLOW_CLEAR_USER_DATA">
+  FLAG_ALLOW_CLEAR_USER_DATA
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L251"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#FLAG_ALLOW_CLEAR_USER_DATA">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#FLAG_ALLOW_CLEAR_USER_DATA</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int FLAG_ALLOW_CLEAR_USER_DATA { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_FLAG_ALLOW_TASK_REPARENTING_" data-uid="Android.Content.Pm.ApplicationInfo.FLAG_ALLOW_TASK_REPARENTING*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_FLAG_ALLOW_TASK_REPARENTING" data-uid="Android.Content.Pm.ApplicationInfo.FLAG_ALLOW_TASK_REPARENTING">
+  FLAG_ALLOW_TASK_REPARENTING
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L257"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#FLAG_ALLOW_TASK_REPARENTING">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#FLAG_ALLOW_TASK_REPARENTING</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int FLAG_ALLOW_TASK_REPARENTING { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_FLAG_DEBUGGABLE_" data-uid="Android.Content.Pm.ApplicationInfo.FLAG_DEBUGGABLE*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_FLAG_DEBUGGABLE" data-uid="Android.Content.Pm.ApplicationInfo.FLAG_DEBUGGABLE">
+  FLAG_DEBUGGABLE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L263"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#FLAG_DEBUGGABLE">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#FLAG_DEBUGGABLE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int FLAG_DEBUGGABLE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_FLAG_EXTERNAL_STORAGE_" data-uid="Android.Content.Pm.ApplicationInfo.FLAG_EXTERNAL_STORAGE*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_FLAG_EXTERNAL_STORAGE" data-uid="Android.Content.Pm.ApplicationInfo.FLAG_EXTERNAL_STORAGE">
+  FLAG_EXTERNAL_STORAGE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L269"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#FLAG_EXTERNAL_STORAGE">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#FLAG_EXTERNAL_STORAGE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int FLAG_EXTERNAL_STORAGE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_FLAG_EXTRACT_NATIVE_LIBS_" data-uid="Android.Content.Pm.ApplicationInfo.FLAG_EXTRACT_NATIVE_LIBS*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_FLAG_EXTRACT_NATIVE_LIBS" data-uid="Android.Content.Pm.ApplicationInfo.FLAG_EXTRACT_NATIVE_LIBS">
+  FLAG_EXTRACT_NATIVE_LIBS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L275"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#FLAG_EXTRACT_NATIVE_LIBS">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#FLAG_EXTRACT_NATIVE_LIBS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int FLAG_EXTRACT_NATIVE_LIBS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_FLAG_FACTORY_TEST_" data-uid="Android.Content.Pm.ApplicationInfo.FLAG_FACTORY_TEST*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_FLAG_FACTORY_TEST" data-uid="Android.Content.Pm.ApplicationInfo.FLAG_FACTORY_TEST">
+  FLAG_FACTORY_TEST
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L281"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#FLAG_FACTORY_TEST">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#FLAG_FACTORY_TEST</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int FLAG_FACTORY_TEST { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_FLAG_FULL_BACKUP_ONLY_" data-uid="Android.Content.Pm.ApplicationInfo.FLAG_FULL_BACKUP_ONLY*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_FLAG_FULL_BACKUP_ONLY" data-uid="Android.Content.Pm.ApplicationInfo.FLAG_FULL_BACKUP_ONLY">
+  FLAG_FULL_BACKUP_ONLY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L287"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#FLAG_FULL_BACKUP_ONLY">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#FLAG_FULL_BACKUP_ONLY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int FLAG_FULL_BACKUP_ONLY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_FLAG_HARDWARE_ACCELERATED_" data-uid="Android.Content.Pm.ApplicationInfo.FLAG_HARDWARE_ACCELERATED*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_FLAG_HARDWARE_ACCELERATED" data-uid="Android.Content.Pm.ApplicationInfo.FLAG_HARDWARE_ACCELERATED">
+  FLAG_HARDWARE_ACCELERATED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L293"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#FLAG_HARDWARE_ACCELERATED">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#FLAG_HARDWARE_ACCELERATED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int FLAG_HARDWARE_ACCELERATED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_FLAG_HAS_CODE_" data-uid="Android.Content.Pm.ApplicationInfo.FLAG_HAS_CODE*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_FLAG_HAS_CODE" data-uid="Android.Content.Pm.ApplicationInfo.FLAG_HAS_CODE">
+  FLAG_HAS_CODE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L299"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#FLAG_HAS_CODE">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#FLAG_HAS_CODE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int FLAG_HAS_CODE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_FLAG_INSTALLED_" data-uid="Android.Content.Pm.ApplicationInfo.FLAG_INSTALLED*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_FLAG_INSTALLED" data-uid="Android.Content.Pm.ApplicationInfo.FLAG_INSTALLED">
+  FLAG_INSTALLED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L305"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#FLAG_INSTALLED">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#FLAG_INSTALLED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int FLAG_INSTALLED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_FLAG_IS_DATA_ONLY_" data-uid="Android.Content.Pm.ApplicationInfo.FLAG_IS_DATA_ONLY*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_FLAG_IS_DATA_ONLY" data-uid="Android.Content.Pm.ApplicationInfo.FLAG_IS_DATA_ONLY">
+  FLAG_IS_DATA_ONLY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L311"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#FLAG_IS_DATA_ONLY">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#FLAG_IS_DATA_ONLY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int FLAG_IS_DATA_ONLY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_FLAG_IS_GAME_" data-uid="Android.Content.Pm.ApplicationInfo.FLAG_IS_GAME*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_FLAG_IS_GAME" data-uid="Android.Content.Pm.ApplicationInfo.FLAG_IS_GAME">
+  FLAG_IS_GAME
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L317"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#FLAG_IS_GAME">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#FLAG_IS_GAME</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static int FLAG_IS_GAME { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_FLAG_KILL_AFTER_RESTORE_" data-uid="Android.Content.Pm.ApplicationInfo.FLAG_KILL_AFTER_RESTORE*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_FLAG_KILL_AFTER_RESTORE" data-uid="Android.Content.Pm.ApplicationInfo.FLAG_KILL_AFTER_RESTORE">
+  FLAG_KILL_AFTER_RESTORE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L324"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#FLAG_KILL_AFTER_RESTORE">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#FLAG_KILL_AFTER_RESTORE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int FLAG_KILL_AFTER_RESTORE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_FLAG_LARGE_HEAP_" data-uid="Android.Content.Pm.ApplicationInfo.FLAG_LARGE_HEAP*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_FLAG_LARGE_HEAP" data-uid="Android.Content.Pm.ApplicationInfo.FLAG_LARGE_HEAP">
+  FLAG_LARGE_HEAP
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L330"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#FLAG_LARGE_HEAP">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#FLAG_LARGE_HEAP</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int FLAG_LARGE_HEAP { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_FLAG_MULTIARCH_" data-uid="Android.Content.Pm.ApplicationInfo.FLAG_MULTIARCH*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_FLAG_MULTIARCH" data-uid="Android.Content.Pm.ApplicationInfo.FLAG_MULTIARCH">
+  FLAG_MULTIARCH
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L336"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#FLAG_MULTIARCH">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#FLAG_MULTIARCH</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int FLAG_MULTIARCH { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_FLAG_PERSISTENT_" data-uid="Android.Content.Pm.ApplicationInfo.FLAG_PERSISTENT*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_FLAG_PERSISTENT" data-uid="Android.Content.Pm.ApplicationInfo.FLAG_PERSISTENT">
+  FLAG_PERSISTENT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L342"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#FLAG_PERSISTENT">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#FLAG_PERSISTENT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int FLAG_PERSISTENT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_FLAG_RESIZEABLE_FOR_SCREENS_" data-uid="Android.Content.Pm.ApplicationInfo.FLAG_RESIZEABLE_FOR_SCREENS*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_FLAG_RESIZEABLE_FOR_SCREENS" data-uid="Android.Content.Pm.ApplicationInfo.FLAG_RESIZEABLE_FOR_SCREENS">
+  FLAG_RESIZEABLE_FOR_SCREENS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L348"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#FLAG_RESIZEABLE_FOR_SCREENS">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#FLAG_RESIZEABLE_FOR_SCREENS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int FLAG_RESIZEABLE_FOR_SCREENS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_FLAG_RESTORE_ANY_VERSION_" data-uid="Android.Content.Pm.ApplicationInfo.FLAG_RESTORE_ANY_VERSION*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_FLAG_RESTORE_ANY_VERSION" data-uid="Android.Content.Pm.ApplicationInfo.FLAG_RESTORE_ANY_VERSION">
+  FLAG_RESTORE_ANY_VERSION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L354"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#FLAG_RESTORE_ANY_VERSION">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#FLAG_RESTORE_ANY_VERSION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int FLAG_RESTORE_ANY_VERSION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_FLAG_STOPPED_" data-uid="Android.Content.Pm.ApplicationInfo.FLAG_STOPPED*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_FLAG_STOPPED" data-uid="Android.Content.Pm.ApplicationInfo.FLAG_STOPPED">
+  FLAG_STOPPED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L360"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#FLAG_STOPPED">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#FLAG_STOPPED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int FLAG_STOPPED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_FLAG_SUPPORTS_LARGE_SCREENS_" data-uid="Android.Content.Pm.ApplicationInfo.FLAG_SUPPORTS_LARGE_SCREENS*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_FLAG_SUPPORTS_LARGE_SCREENS" data-uid="Android.Content.Pm.ApplicationInfo.FLAG_SUPPORTS_LARGE_SCREENS">
+  FLAG_SUPPORTS_LARGE_SCREENS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L366"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#FLAG_SUPPORTS_LARGE_SCREENS">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#FLAG_SUPPORTS_LARGE_SCREENS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int FLAG_SUPPORTS_LARGE_SCREENS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_FLAG_SUPPORTS_NORMAL_SCREENS_" data-uid="Android.Content.Pm.ApplicationInfo.FLAG_SUPPORTS_NORMAL_SCREENS*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_FLAG_SUPPORTS_NORMAL_SCREENS" data-uid="Android.Content.Pm.ApplicationInfo.FLAG_SUPPORTS_NORMAL_SCREENS">
+  FLAG_SUPPORTS_NORMAL_SCREENS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L372"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#FLAG_SUPPORTS_NORMAL_SCREENS">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#FLAG_SUPPORTS_NORMAL_SCREENS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int FLAG_SUPPORTS_NORMAL_SCREENS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_FLAG_SUPPORTS_RTL_" data-uid="Android.Content.Pm.ApplicationInfo.FLAG_SUPPORTS_RTL*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_FLAG_SUPPORTS_RTL" data-uid="Android.Content.Pm.ApplicationInfo.FLAG_SUPPORTS_RTL">
+  FLAG_SUPPORTS_RTL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L378"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#FLAG_SUPPORTS_RTL">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#FLAG_SUPPORTS_RTL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int FLAG_SUPPORTS_RTL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_FLAG_SUPPORTS_SCREEN_DENSITIES_" data-uid="Android.Content.Pm.ApplicationInfo.FLAG_SUPPORTS_SCREEN_DENSITIES*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_FLAG_SUPPORTS_SCREEN_DENSITIES" data-uid="Android.Content.Pm.ApplicationInfo.FLAG_SUPPORTS_SCREEN_DENSITIES">
+  FLAG_SUPPORTS_SCREEN_DENSITIES
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L384"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#FLAG_SUPPORTS_SCREEN_DENSITIES">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#FLAG_SUPPORTS_SCREEN_DENSITIES</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static int FLAG_SUPPORTS_SCREEN_DENSITIES { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_FLAG_SUPPORTS_SMALL_SCREENS_" data-uid="Android.Content.Pm.ApplicationInfo.FLAG_SUPPORTS_SMALL_SCREENS*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_FLAG_SUPPORTS_SMALL_SCREENS" data-uid="Android.Content.Pm.ApplicationInfo.FLAG_SUPPORTS_SMALL_SCREENS">
+  FLAG_SUPPORTS_SMALL_SCREENS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L391"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#FLAG_SUPPORTS_SMALL_SCREENS">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#FLAG_SUPPORTS_SMALL_SCREENS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int FLAG_SUPPORTS_SMALL_SCREENS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_FLAG_SUPPORTS_XLARGE_SCREENS_" data-uid="Android.Content.Pm.ApplicationInfo.FLAG_SUPPORTS_XLARGE_SCREENS*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_FLAG_SUPPORTS_XLARGE_SCREENS" data-uid="Android.Content.Pm.ApplicationInfo.FLAG_SUPPORTS_XLARGE_SCREENS">
+  FLAG_SUPPORTS_XLARGE_SCREENS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L397"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#FLAG_SUPPORTS_XLARGE_SCREENS">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#FLAG_SUPPORTS_XLARGE_SCREENS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int FLAG_SUPPORTS_XLARGE_SCREENS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_FLAG_SUSPENDED_" data-uid="Android.Content.Pm.ApplicationInfo.FLAG_SUSPENDED*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_FLAG_SUSPENDED" data-uid="Android.Content.Pm.ApplicationInfo.FLAG_SUSPENDED">
+  FLAG_SUSPENDED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L403"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#FLAG_SUSPENDED">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#FLAG_SUSPENDED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int FLAG_SUSPENDED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_FLAG_SYSTEM_" data-uid="Android.Content.Pm.ApplicationInfo.FLAG_SYSTEM*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_FLAG_SYSTEM" data-uid="Android.Content.Pm.ApplicationInfo.FLAG_SYSTEM">
+  FLAG_SYSTEM
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L409"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#FLAG_SYSTEM">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#FLAG_SYSTEM</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int FLAG_SYSTEM { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_FLAG_TEST_ONLY_" data-uid="Android.Content.Pm.ApplicationInfo.FLAG_TEST_ONLY*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_FLAG_TEST_ONLY" data-uid="Android.Content.Pm.ApplicationInfo.FLAG_TEST_ONLY">
+  FLAG_TEST_ONLY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L415"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#FLAG_TEST_ONLY">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#FLAG_TEST_ONLY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int FLAG_TEST_ONLY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_FLAG_UPDATED_SYSTEM_APP_" data-uid="Android.Content.Pm.ApplicationInfo.FLAG_UPDATED_SYSTEM_APP*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_FLAG_UPDATED_SYSTEM_APP" data-uid="Android.Content.Pm.ApplicationInfo.FLAG_UPDATED_SYSTEM_APP">
+  FLAG_UPDATED_SYSTEM_APP
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L421"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#FLAG_UPDATED_SYSTEM_APP">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#FLAG_UPDATED_SYSTEM_APP</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int FLAG_UPDATED_SYSTEM_APP { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_FLAG_USES_CLEARTEXT_TRAFFIC_" data-uid="Android.Content.Pm.ApplicationInfo.FLAG_USES_CLEARTEXT_TRAFFIC*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_FLAG_USES_CLEARTEXT_TRAFFIC" data-uid="Android.Content.Pm.ApplicationInfo.FLAG_USES_CLEARTEXT_TRAFFIC">
+  FLAG_USES_CLEARTEXT_TRAFFIC
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L427"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#FLAG_USES_CLEARTEXT_TRAFFIC">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#FLAG_USES_CLEARTEXT_TRAFFIC</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int FLAG_USES_CLEARTEXT_TRAFFIC { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_FLAG_VM_SAFE_MODE_" data-uid="Android.Content.Pm.ApplicationInfo.FLAG_VM_SAFE_MODE*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_FLAG_VM_SAFE_MODE" data-uid="Android.Content.Pm.ApplicationInfo.FLAG_VM_SAFE_MODE">
+  FLAG_VM_SAFE_MODE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L433"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#FLAG_VM_SAFE_MODE">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#FLAG_VM_SAFE_MODE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int FLAG_VM_SAFE_MODE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_GWP_ASAN_ALWAYS_" data-uid="Android.Content.Pm.ApplicationInfo.GWP_ASAN_ALWAYS*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_GWP_ASAN_ALWAYS" data-uid="Android.Content.Pm.ApplicationInfo.GWP_ASAN_ALWAYS">
+  GWP_ASAN_ALWAYS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L439"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#GWP_ASAN_ALWAYS">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#GWP_ASAN_ALWAYS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GWP_ASAN_ALWAYS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_GWP_ASAN_DEFAULT_" data-uid="Android.Content.Pm.ApplicationInfo.GWP_ASAN_DEFAULT*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_GWP_ASAN_DEFAULT" data-uid="Android.Content.Pm.ApplicationInfo.GWP_ASAN_DEFAULT">
+  GWP_ASAN_DEFAULT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L445"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#GWP_ASAN_DEFAULT">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#GWP_ASAN_DEFAULT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GWP_ASAN_DEFAULT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_GWP_ASAN_NEVER_" data-uid="Android.Content.Pm.ApplicationInfo.GWP_ASAN_NEVER*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_GWP_ASAN_NEVER" data-uid="Android.Content.Pm.ApplicationInfo.GWP_ASAN_NEVER">
+  GWP_ASAN_NEVER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L451"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#GWP_ASAN_NEVER">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#GWP_ASAN_NEVER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GWP_ASAN_NEVER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_IsBridgeAbstract_" data-uid="Android.Content.Pm.ApplicationInfo.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_IsBridgeAbstract" data-uid="Android.Content.Pm.ApplicationInfo.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/AllPackageClasses.cs/#L186"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_IsBridgeCloseable_" data-uid="Android.Content.Pm.ApplicationInfo.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_IsBridgeCloseable" data-uid="Android.Content.Pm.ApplicationInfo.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/AllPackageClasses.cs/#L190"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_IsBridgeInterface_" data-uid="Android.Content.Pm.ApplicationInfo.IsBridgeInterface*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_IsBridgeInterface" data-uid="Android.Content.Pm.ApplicationInfo.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/AllPackageClasses.cs/#L194"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_IsBridgeStatic_" data-uid="Android.Content.Pm.ApplicationInfo.IsBridgeStatic*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_IsBridgeStatic" data-uid="Android.Content.Pm.ApplicationInfo.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/AllPackageClasses.cs/#L198"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_MEMTAG_ASYNC_" data-uid="Android.Content.Pm.ApplicationInfo.MEMTAG_ASYNC*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_MEMTAG_ASYNC" data-uid="Android.Content.Pm.ApplicationInfo.MEMTAG_ASYNC">
+  MEMTAG_ASYNC
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L457"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#MEMTAG_ASYNC">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#MEMTAG_ASYNC</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int MEMTAG_ASYNC { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_MEMTAG_DEFAULT_" data-uid="Android.Content.Pm.ApplicationInfo.MEMTAG_DEFAULT*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_MEMTAG_DEFAULT" data-uid="Android.Content.Pm.ApplicationInfo.MEMTAG_DEFAULT">
+  MEMTAG_DEFAULT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L463"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#MEMTAG_DEFAULT">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#MEMTAG_DEFAULT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int MEMTAG_DEFAULT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_MEMTAG_OFF_" data-uid="Android.Content.Pm.ApplicationInfo.MEMTAG_OFF*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_MEMTAG_OFF" data-uid="Android.Content.Pm.ApplicationInfo.MEMTAG_OFF">
+  MEMTAG_OFF
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L469"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#MEMTAG_OFF">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#MEMTAG_OFF</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int MEMTAG_OFF { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_MEMTAG_SYNC_" data-uid="Android.Content.Pm.ApplicationInfo.MEMTAG_SYNC*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_MEMTAG_SYNC" data-uid="Android.Content.Pm.ApplicationInfo.MEMTAG_SYNC">
+  MEMTAG_SYNC
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L475"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#MEMTAG_SYNC">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#MEMTAG_SYNC</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int MEMTAG_SYNC { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_RAW_EXTERNAL_STORAGE_ACCESS_DEFAULT_" data-uid="Android.Content.Pm.ApplicationInfo.RAW_EXTERNAL_STORAGE_ACCESS_DEFAULT*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_RAW_EXTERNAL_STORAGE_ACCESS_DEFAULT" data-uid="Android.Content.Pm.ApplicationInfo.RAW_EXTERNAL_STORAGE_ACCESS_DEFAULT">
+  RAW_EXTERNAL_STORAGE_ACCESS_DEFAULT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L481"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#RAW_EXTERNAL_STORAGE_ACCESS_DEFAULT">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#RAW_EXTERNAL_STORAGE_ACCESS_DEFAULT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int RAW_EXTERNAL_STORAGE_ACCESS_DEFAULT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_RAW_EXTERNAL_STORAGE_ACCESS_NOT_REQUESTED_" data-uid="Android.Content.Pm.ApplicationInfo.RAW_EXTERNAL_STORAGE_ACCESS_NOT_REQUESTED*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_RAW_EXTERNAL_STORAGE_ACCESS_NOT_REQUESTED" data-uid="Android.Content.Pm.ApplicationInfo.RAW_EXTERNAL_STORAGE_ACCESS_NOT_REQUESTED">
+  RAW_EXTERNAL_STORAGE_ACCESS_NOT_REQUESTED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L487"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#RAW_EXTERNAL_STORAGE_ACCESS_NOT_REQUESTED">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#RAW_EXTERNAL_STORAGE_ACCESS_NOT_REQUESTED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int RAW_EXTERNAL_STORAGE_ACCESS_NOT_REQUESTED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_RAW_EXTERNAL_STORAGE_ACCESS_REQUESTED_" data-uid="Android.Content.Pm.ApplicationInfo.RAW_EXTERNAL_STORAGE_ACCESS_REQUESTED*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_RAW_EXTERNAL_STORAGE_ACCESS_REQUESTED" data-uid="Android.Content.Pm.ApplicationInfo.RAW_EXTERNAL_STORAGE_ACCESS_REQUESTED">
+  RAW_EXTERNAL_STORAGE_ACCESS_REQUESTED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L493"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#RAW_EXTERNAL_STORAGE_ACCESS_REQUESTED">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#RAW_EXTERNAL_STORAGE_ACCESS_REQUESTED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int RAW_EXTERNAL_STORAGE_ACCESS_REQUESTED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_ZEROINIT_DEFAULT_" data-uid="Android.Content.Pm.ApplicationInfo.ZEROINIT_DEFAULT*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_ZEROINIT_DEFAULT" data-uid="Android.Content.Pm.ApplicationInfo.ZEROINIT_DEFAULT">
+  ZEROINIT_DEFAULT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L499"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#ZEROINIT_DEFAULT">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#ZEROINIT_DEFAULT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ZEROINIT_DEFAULT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_ZEROINIT_DISABLED_" data-uid="Android.Content.Pm.ApplicationInfo.ZEROINIT_DISABLED*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_ZEROINIT_DISABLED" data-uid="Android.Content.Pm.ApplicationInfo.ZEROINIT_DISABLED">
+  ZEROINIT_DISABLED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L505"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#ZEROINIT_DISABLED">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#ZEROINIT_DISABLED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ZEROINIT_DISABLED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_ZEROINIT_ENABLED_" data-uid="Android.Content.Pm.ApplicationInfo.ZEROINIT_ENABLED*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_ZEROINIT_ENABLED" data-uid="Android.Content.Pm.ApplicationInfo.ZEROINIT_ENABLED">
+  ZEROINIT_ENABLED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L511"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#ZEROINIT_ENABLED">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#ZEROINIT_ENABLED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ZEROINIT_ENABLED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_appComponentFactory_" data-uid="Android.Content.Pm.ApplicationInfo.appComponentFactory*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_appComponentFactory" data-uid="Android.Content.Pm.ApplicationInfo.appComponentFactory">
+  appComponentFactory
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L107"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#appComponentFactory">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#appComponentFactory</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String appComponentFactory { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_backupAgentName_" data-uid="Android.Content.Pm.ApplicationInfo.backupAgentName*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_backupAgentName" data-uid="Android.Content.Pm.ApplicationInfo.backupAgentName">
+  backupAgentName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L111"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#backupAgentName">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#backupAgentName</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String backupAgentName { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_category_" data-uid="Android.Content.Pm.ApplicationInfo.category*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_category" data-uid="Android.Content.Pm.ApplicationInfo.category">
+  category
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#category">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#category</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int category { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_className_" data-uid="Android.Content.Pm.ApplicationInfo.className*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_className" data-uid="Android.Content.Pm.ApplicationInfo.className">
+  className
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#className">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#className</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String className { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_compatibleWidthLimitDp_" data-uid="Android.Content.Pm.ApplicationInfo.compatibleWidthLimitDp*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_compatibleWidthLimitDp" data-uid="Android.Content.Pm.ApplicationInfo.compatibleWidthLimitDp">
+  compatibleWidthLimitDp
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L63"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#compatibleWidthLimitDp">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#compatibleWidthLimitDp</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int compatibleWidthLimitDp { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_compileSdkVersion_" data-uid="Android.Content.Pm.ApplicationInfo.compileSdkVersion*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_compileSdkVersion" data-uid="Android.Content.Pm.ApplicationInfo.compileSdkVersion">
+  compileSdkVersion
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#compileSdkVersion">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#compileSdkVersion</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int compileSdkVersion { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_compileSdkVersionCodename_" data-uid="Android.Content.Pm.ApplicationInfo.compileSdkVersionCodename*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_compileSdkVersionCodename" data-uid="Android.Content.Pm.ApplicationInfo.compileSdkVersionCodename">
+  compileSdkVersionCodename
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L119"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#compileSdkVersionCodename">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#compileSdkVersionCodename</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String compileSdkVersionCodename { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_dataDir_" data-uid="Android.Content.Pm.ApplicationInfo.dataDir*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_dataDir" data-uid="Android.Content.Pm.ApplicationInfo.dataDir">
+  dataDir
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L123"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#dataDir">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#dataDir</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String dataDir { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_descriptionRes_" data-uid="Android.Content.Pm.ApplicationInfo.descriptionRes*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_descriptionRes" data-uid="Android.Content.Pm.ApplicationInfo.descriptionRes">
+  descriptionRes
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#descriptionRes">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#descriptionRes</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int descriptionRes { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_deviceProtectedDataDir_" data-uid="Android.Content.Pm.ApplicationInfo.deviceProtectedDataDir*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_deviceProtectedDataDir" data-uid="Android.Content.Pm.ApplicationInfo.deviceProtectedDataDir">
+  deviceProtectedDataDir
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#deviceProtectedDataDir">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#deviceProtectedDataDir</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String deviceProtectedDataDir { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_enabled_" data-uid="Android.Content.Pm.ApplicationInfo.enabled*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_enabled" data-uid="Android.Content.Pm.ApplicationInfo.enabled">
+  enabled
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#enabled">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#enabled</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool enabled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_flags_" data-uid="Android.Content.Pm.ApplicationInfo.flags*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_flags" data-uid="Android.Content.Pm.ApplicationInfo.flags">
+  flags
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L75"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#flags">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#flags</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int flags { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_largestWidthLimitDp_" data-uid="Android.Content.Pm.ApplicationInfo.largestWidthLimitDp*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_largestWidthLimitDp" data-uid="Android.Content.Pm.ApplicationInfo.largestWidthLimitDp">
+  largestWidthLimitDp
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#largestWidthLimitDp">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#largestWidthLimitDp</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int largestWidthLimitDp { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_manageSpaceActivityName_" data-uid="Android.Content.Pm.ApplicationInfo.manageSpaceActivityName*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_manageSpaceActivityName" data-uid="Android.Content.Pm.ApplicationInfo.manageSpaceActivityName">
+  manageSpaceActivityName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L131"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#manageSpaceActivityName">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#manageSpaceActivityName</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String manageSpaceActivityName { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_minSdkVersion_" data-uid="Android.Content.Pm.ApplicationInfo.minSdkVersion*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_minSdkVersion" data-uid="Android.Content.Pm.ApplicationInfo.minSdkVersion">
+  minSdkVersion
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L83"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#minSdkVersion">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#minSdkVersion</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int minSdkVersion { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_nativeLibraryDir_" data-uid="Android.Content.Pm.ApplicationInfo.nativeLibraryDir*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_nativeLibraryDir" data-uid="Android.Content.Pm.ApplicationInfo.nativeLibraryDir">
+  nativeLibraryDir
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L135"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#nativeLibraryDir">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#nativeLibraryDir</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String nativeLibraryDir { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_permission_" data-uid="Android.Content.Pm.ApplicationInfo.permission*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_permission" data-uid="Android.Content.Pm.ApplicationInfo.permission">
+  permission
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#permission">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#permission</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String permission { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_processName_" data-uid="Android.Content.Pm.ApplicationInfo.processName*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_processName" data-uid="Android.Content.Pm.ApplicationInfo.processName">
+  processName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L143"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#processName">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#processName</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String processName { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_publicSourceDir_" data-uid="Android.Content.Pm.ApplicationInfo.publicSourceDir*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_publicSourceDir" data-uid="Android.Content.Pm.ApplicationInfo.publicSourceDir">
+  publicSourceDir
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L147"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#publicSourceDir">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#publicSourceDir</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String publicSourceDir { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_requiresSmallestWidthDp_" data-uid="Android.Content.Pm.ApplicationInfo.requiresSmallestWidthDp*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_requiresSmallestWidthDp" data-uid="Android.Content.Pm.ApplicationInfo.requiresSmallestWidthDp">
+  requiresSmallestWidthDp
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L87"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#requiresSmallestWidthDp">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#requiresSmallestWidthDp</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int requiresSmallestWidthDp { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_sharedLibraryFiles_" data-uid="Android.Content.Pm.ApplicationInfo.sharedLibraryFiles*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_sharedLibraryFiles" data-uid="Android.Content.Pm.ApplicationInfo.sharedLibraryFiles">
+  sharedLibraryFiles
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L159"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#sharedLibraryFiles">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#sharedLibraryFiles</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String[] sharedLibraryFiles { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_sourceDir_" data-uid="Android.Content.Pm.ApplicationInfo.sourceDir*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_sourceDir" data-uid="Android.Content.Pm.ApplicationInfo.sourceDir">
+  sourceDir
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L151"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#sourceDir">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#sourceDir</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String sourceDir { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_splitNames_" data-uid="Android.Content.Pm.ApplicationInfo.splitNames*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_splitNames" data-uid="Android.Content.Pm.ApplicationInfo.splitNames">
+  splitNames
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L163"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#splitNames">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#splitNames</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String[] splitNames { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_splitPublicSourceDirs_" data-uid="Android.Content.Pm.ApplicationInfo.splitPublicSourceDirs*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_splitPublicSourceDirs" data-uid="Android.Content.Pm.ApplicationInfo.splitPublicSourceDirs">
+  splitPublicSourceDirs
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L167"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#splitPublicSourceDirs">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#splitPublicSourceDirs</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String[] splitPublicSourceDirs { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_splitSourceDirs_" data-uid="Android.Content.Pm.ApplicationInfo.splitSourceDirs*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_splitSourceDirs" data-uid="Android.Content.Pm.ApplicationInfo.splitSourceDirs">
+  splitSourceDirs
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L171"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#splitSourceDirs">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#splitSourceDirs</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String[] splitSourceDirs { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_storageUuid_" data-uid="Android.Content.Pm.ApplicationInfo.storageUuid*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_storageUuid" data-uid="Android.Content.Pm.ApplicationInfo.storageUuid">
+  storageUuid
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L175"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#storageUuid">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#storageUuid</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UUID storageUuid { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.UUID.html">UUID</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_targetSdkVersion_" data-uid="Android.Content.Pm.ApplicationInfo.targetSdkVersion*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_targetSdkVersion" data-uid="Android.Content.Pm.ApplicationInfo.targetSdkVersion">
+  targetSdkVersion
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#targetSdkVersion">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#targetSdkVersion</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int targetSdkVersion { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_taskAffinity_" data-uid="Android.Content.Pm.ApplicationInfo.taskAffinity*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_taskAffinity" data-uid="Android.Content.Pm.ApplicationInfo.taskAffinity">
+  taskAffinity
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L155"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#taskAffinity">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#taskAffinity</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String taskAffinity { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_theme_" data-uid="Android.Content.Pm.ApplicationInfo.theme*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_theme" data-uid="Android.Content.Pm.ApplicationInfo.theme">
+  theme
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L95"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#theme">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#theme</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int theme { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_uiOptions_" data-uid="Android.Content.Pm.ApplicationInfo.uiOptions*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_uiOptions" data-uid="Android.Content.Pm.ApplicationInfo.uiOptions">
+  uiOptions
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#uiOptions">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#uiOptions</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int uiOptions { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_uid_" data-uid="Android.Content.Pm.ApplicationInfo.uid*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_uid" data-uid="Android.Content.Pm.ApplicationInfo.uid">
+  uid
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L99"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#uid">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#uid</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int uid { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_AreAttributionsUserVisible_" data-uid="Android.Content.Pm.ApplicationInfo.AreAttributionsUserVisible*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_AreAttributionsUserVisible" data-uid="Android.Content.Pm.ApplicationInfo.AreAttributionsUserVisible">
+  AreAttributionsUserVisible()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L536"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#areAttributionsUserVisible()">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#areAttributionsUserVisible()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AreAttributionsUserVisible()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_DescribeContents_" data-uid="Android.Content.Pm.ApplicationInfo.DescribeContents*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_DescribeContents" data-uid="Android.Content.Pm.ApplicationInfo.DescribeContents">
+  DescribeContents()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L576"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#describeContents()">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#describeContents()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int DescribeContents()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_Dump_" data-uid="Android.Content.Pm.ApplicationInfo.Dump*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_Dump_Android_Util_Printer_Java_Lang_String_" data-uid="Android.Content.Pm.ApplicationInfo.Dump(Android.Util.Printer,Java.Lang.String)">
+  Dump(Printer, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L634"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#dump(android.util.Printer,java.lang.String)">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#dump(android.util.Printer,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dump(Printer arg0, String arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Util.Printer.html">Printer</a></dt>
+    <dd><p><a class="xref" href="Android.Util.Printer.html">Printer</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_GetCategoryTitle_" data-uid="Android.Content.Pm.ApplicationInfo.GetCategoryTitle*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_GetCategoryTitle_Android_Content_Context_System_Int32_" data-uid="Android.Content.Pm.ApplicationInfo.GetCategoryTitle(Android.Content.Context,System.Int32)">
+  GetCategoryTitle(Context, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L524"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#getCategoryTitle(android.content.Context,int)">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#getCategoryTitle(android.content.Context,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CharSequence GetCategoryTitle(Context arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_GetGwpAsanMode_" data-uid="Android.Content.Pm.ApplicationInfo.GetGwpAsanMode*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_GetGwpAsanMode" data-uid="Android.Content.Pm.ApplicationInfo.GetGwpAsanMode">
+  GetGwpAsanMode()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L584"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#getGwpAsanMode()">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#getGwpAsanMode()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetGwpAsanMode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_GetKnownActivityEmbeddingCerts_" data-uid="Android.Content.Pm.ApplicationInfo.GetKnownActivityEmbeddingCerts*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_GetKnownActivityEmbeddingCerts" data-uid="Android.Content.Pm.ApplicationInfo.GetKnownActivityEmbeddingCerts">
+  GetKnownActivityEmbeddingCerts()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L625"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#getKnownActivityEmbeddingCerts()">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#getKnownActivityEmbeddingCerts()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Set&lt;String&gt; GetKnownActivityEmbeddingCerts()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Set-1.html">Set</a>&lt;<a class="xref" href="Java.Lang.String.html">String</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Set.html">Set</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_GetMemtagMode_" data-uid="Android.Content.Pm.ApplicationInfo.GetMemtagMode*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_GetMemtagMode" data-uid="Android.Content.Pm.ApplicationInfo.GetMemtagMode">
+  GetMemtagMode()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L592"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#getMemtagMode()">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#getMemtagMode()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetMemtagMode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_GetNativeHeapZeroInitialized_" data-uid="Android.Content.Pm.ApplicationInfo.GetNativeHeapZeroInitialized*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_GetNativeHeapZeroInitialized" data-uid="Android.Content.Pm.ApplicationInfo.GetNativeHeapZeroInitialized">
+  GetNativeHeapZeroInitialized()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L600"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#getNativeHeapZeroInitialized()">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#getNativeHeapZeroInitialized()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetNativeHeapZeroInitialized()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_GetRequestRawExternalStorageAccess_" data-uid="Android.Content.Pm.ApplicationInfo.GetRequestRawExternalStorageAccess*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_GetRequestRawExternalStorageAccess" data-uid="Android.Content.Pm.ApplicationInfo.GetRequestRawExternalStorageAccess">
+  GetRequestRawExternalStorageAccess()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L608"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#getRequestRawExternalStorageAccess()">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#getRequestRawExternalStorageAccess()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetRequestRawExternalStorageAccess()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_IsProfileable_" data-uid="Android.Content.Pm.ApplicationInfo.IsProfileable*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_IsProfileable" data-uid="Android.Content.Pm.ApplicationInfo.IsProfileable">
+  IsProfileable()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L544"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#isProfileable()">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#isProfileable()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsProfileable()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_IsProfileableByShell_" data-uid="Android.Content.Pm.ApplicationInfo.IsProfileableByShell*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_IsProfileableByShell" data-uid="Android.Content.Pm.ApplicationInfo.IsProfileableByShell">
+  IsProfileableByShell()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L552"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#isProfileableByShell()">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#isProfileableByShell()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsProfileableByShell()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_IsResourceOverlay_" data-uid="Android.Content.Pm.ApplicationInfo.IsResourceOverlay*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_IsResourceOverlay" data-uid="Android.Content.Pm.ApplicationInfo.IsResourceOverlay">
+  IsResourceOverlay()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L560"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#isResourceOverlay()">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#isResourceOverlay()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsResourceOverlay()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_IsVirtualPreload_" data-uid="Android.Content.Pm.ApplicationInfo.IsVirtualPreload*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_IsVirtualPreload" data-uid="Android.Content.Pm.ApplicationInfo.IsVirtualPreload">
+  IsVirtualPreload()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L568"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#isVirtualPreload()">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#isVirtualPreload()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsVirtualPreload()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_LoadDescription_" data-uid="Android.Content.Pm.ApplicationInfo.LoadDescription*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_LoadDescription_Android_Content_Pm_PackageManager_" data-uid="Android.Content.Pm.ApplicationInfo.LoadDescription(Android.Content.Pm.PackageManager)">
+  LoadDescription(PackageManager)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L617"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#loadDescription(android.content.pm.PackageManager)">https://developer.android.com/reference/android/content/pm/ApplicationInfo.html#loadDescription(android.content.pm.PackageManager)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CharSequence LoadDescription(PackageManager arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Pm.PackageManager.html">PackageManager</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Pm.PackageManager.html">PackageManager</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="Android_Content_Pm_ApplicationInfo_op_Implicit_" data-uid="Android.Content.Pm.ApplicationInfo.op_Implicit*"></a>
+
+  <h3 id="Android_Content_Pm_ApplicationInfo_op_Implicit_Android_Content_Pm_ApplicationInfo__Android_Os_Parcelable" data-uid="Android.Content.Pm.ApplicationInfo.op_Implicit(Android.Content.Pm.ApplicationInfo)~Android.Os.Parcelable">
+  implicit operator Parcelable(ApplicationInfo)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Android.Content.Pm.ApplicationInfo.html">ApplicationInfo</a> to <a class="xref" href="Android.Os.Parcelable.html">Parcelable</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Parcelable(ApplicationInfo t)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>t</code> <a class="xref" href="Android.Content.Pm.ApplicationInfo.html">ApplicationInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Os.Parcelable.html">Parcelable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Content/Pm/ApplicationInfo.cs/#L29" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

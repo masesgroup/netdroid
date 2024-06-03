@@ -1,0 +1,3386 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class ConnectivityManager | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ConnectivityManager | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/net/ConnectivityManager.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_Net_ConnectivityManager.md&amp;value=---%0Auid%3A%20Android.Net.ConnectivityManager%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.Net.ConnectivityManager">
+
+
+
+  <h1 id="Android_Net_ConnectivityManager" data-uid="Android.Net.ConnectivityManager" class="text-break">
+Class ConnectivityManager  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.Net.html">Net</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html">https://developer.android.com/reference/android/net/ConnectivityManager.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ConnectivityManager : JVMBridgeBase&lt;ConnectivityManager&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.Net.ConnectivityManager.html">ConnectivityManager</a>&gt;</div>
+      <div><span class="xref">ConnectivityManager</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ConnectivityManager&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ConnectivityManager&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ConnectivityManager&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ConnectivityManager&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ConnectivityManager&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ConnectivityManager&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ConnectivityManager&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ConnectivityManager&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ConnectivityManager&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ConnectivityManager&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ConnectivityManager&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ConnectivityManager&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ConnectivityManager&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ConnectivityManager&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ConnectivityManager&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ConnectivityManager&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ConnectivityManager&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ConnectivityManager&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ConnectivityManager&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ConnectivityManager&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ConnectivityManager&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ConnectivityManager&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ConnectivityManager&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ConnectivityManager&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ConnectivityManager&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ConnectivityManager&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ConnectivityManager&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ConnectivityManager&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ConnectivityManager&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ConnectivityManager&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ConnectivityManager&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ConnectivityManager&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ConnectivityManager&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ConnectivityManager&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ConnectivityManager&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ConnectivityManager&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ConnectivityManager&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ConnectivityManager&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ConnectivityManager&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ConnectivityManager&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ConnectivityManager&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ConnectivityManager&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ConnectivityManager&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;ConnectivityManager&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;ConnectivityManager&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;ConnectivityManager&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ConnectivityManager&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;ConnectivityManager&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;ConnectivityManager&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;ConnectivityManager&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_Net_ConnectivityManager__ctor_" data-uid="Android.Net.ConnectivityManager.#ctor*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager__ctor" data-uid="Android.Net.ConnectivityManager.#ctor">
+  ConnectivityManager()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/AllPackageClasses.cs/#L261"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ConnectivityManager()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager__ctor_" data-uid="Android.Net.ConnectivityManager.#ctor*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager__ctor_System_Object___" data-uid="Android.Net.ConnectivityManager.#ctor(System.Object[])">
+  ConnectivityManager(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/AllPackageClasses.cs/#L265"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ConnectivityManager(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_Net_ConnectivityManager_ACTION_BACKGROUND_DATA_SETTING_CHANGED_" data-uid="Android.Net.ConnectivityManager.ACTION_BACKGROUND_DATA_SETTING_CHANGED*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_ACTION_BACKGROUND_DATA_SETTING_CHANGED" data-uid="Android.Net.ConnectivityManager.ACTION_BACKGROUND_DATA_SETTING_CHANGED">
+  ACTION_BACKGROUND_DATA_SETTING_CHANGED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L163"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#ACTION_BACKGROUND_DATA_SETTING_CHANGED">https://developer.android.com/reference/android/net/ConnectivityManager.html#ACTION_BACKGROUND_DATA_SETTING_CHANGED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String ACTION_BACKGROUND_DATA_SETTING_CHANGED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_ACTION_CAPTIVE_PORTAL_SIGN_IN_" data-uid="Android.Net.ConnectivityManager.ACTION_CAPTIVE_PORTAL_SIGN_IN*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_ACTION_CAPTIVE_PORTAL_SIGN_IN" data-uid="Android.Net.ConnectivityManager.ACTION_CAPTIVE_PORTAL_SIGN_IN">
+  ACTION_CAPTIVE_PORTAL_SIGN_IN
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L170"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#ACTION_CAPTIVE_PORTAL_SIGN_IN">https://developer.android.com/reference/android/net/ConnectivityManager.html#ACTION_CAPTIVE_PORTAL_SIGN_IN</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACTION_CAPTIVE_PORTAL_SIGN_IN { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_ACTION_RESTRICT_BACKGROUND_CHANGED_" data-uid="Android.Net.ConnectivityManager.ACTION_RESTRICT_BACKGROUND_CHANGED*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_ACTION_RESTRICT_BACKGROUND_CHANGED" data-uid="Android.Net.ConnectivityManager.ACTION_RESTRICT_BACKGROUND_CHANGED">
+  ACTION_RESTRICT_BACKGROUND_CHANGED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L176"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#ACTION_RESTRICT_BACKGROUND_CHANGED">https://developer.android.com/reference/android/net/ConnectivityManager.html#ACTION_RESTRICT_BACKGROUND_CHANGED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACTION_RESTRICT_BACKGROUND_CHANGED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_BridgeClassName_" data-uid="Android.Net.ConnectivityManager.BridgeClassName*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_BridgeClassName" data-uid="Android.Net.ConnectivityManager.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/AllPackageClasses.cs/#L272"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_CONNECTIVITY_ACTION_" data-uid="Android.Net.ConnectivityManager.CONNECTIVITY_ACTION*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_CONNECTIVITY_ACTION" data-uid="Android.Net.ConnectivityManager.CONNECTIVITY_ACTION">
+  CONNECTIVITY_ACTION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L182"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#CONNECTIVITY_ACTION">https://developer.android.com/reference/android/net/ConnectivityManager.html#CONNECTIVITY_ACTION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String CONNECTIVITY_ACTION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_DEFAULT_NETWORK_PREFERENCE_" data-uid="Android.Net.ConnectivityManager.DEFAULT_NETWORK_PREFERENCE*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_DEFAULT_NETWORK_PREFERENCE" data-uid="Android.Net.ConnectivityManager.DEFAULT_NETWORK_PREFERENCE">
+  DEFAULT_NETWORK_PREFERENCE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#DEFAULT_NETWORK_PREFERENCE">https://developer.android.com/reference/android/net/ConnectivityManager.html#DEFAULT_NETWORK_PREFERENCE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static int DEFAULT_NETWORK_PREFERENCE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_EXTRA_CAPTIVE_PORTAL_" data-uid="Android.Net.ConnectivityManager.EXTRA_CAPTIVE_PORTAL*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_EXTRA_CAPTIVE_PORTAL" data-uid="Android.Net.ConnectivityManager.EXTRA_CAPTIVE_PORTAL">
+  EXTRA_CAPTIVE_PORTAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L189"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#EXTRA_CAPTIVE_PORTAL">https://developer.android.com/reference/android/net/ConnectivityManager.html#EXTRA_CAPTIVE_PORTAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_CAPTIVE_PORTAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_EXTRA_CAPTIVE_PORTAL_URL_" data-uid="Android.Net.ConnectivityManager.EXTRA_CAPTIVE_PORTAL_URL*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_EXTRA_CAPTIVE_PORTAL_URL" data-uid="Android.Net.ConnectivityManager.EXTRA_CAPTIVE_PORTAL_URL">
+  EXTRA_CAPTIVE_PORTAL_URL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L195"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#EXTRA_CAPTIVE_PORTAL_URL">https://developer.android.com/reference/android/net/ConnectivityManager.html#EXTRA_CAPTIVE_PORTAL_URL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_CAPTIVE_PORTAL_URL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_EXTRA_EXTRA_INFO_" data-uid="Android.Net.ConnectivityManager.EXTRA_EXTRA_INFO*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_EXTRA_EXTRA_INFO" data-uid="Android.Net.ConnectivityManager.EXTRA_EXTRA_INFO">
+  EXTRA_EXTRA_INFO
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L201"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#EXTRA_EXTRA_INFO">https://developer.android.com/reference/android/net/ConnectivityManager.html#EXTRA_EXTRA_INFO</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String EXTRA_EXTRA_INFO { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_EXTRA_IS_FAILOVER_" data-uid="Android.Net.ConnectivityManager.EXTRA_IS_FAILOVER*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_EXTRA_IS_FAILOVER" data-uid="Android.Net.ConnectivityManager.EXTRA_IS_FAILOVER">
+  EXTRA_IS_FAILOVER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L208"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#EXTRA_IS_FAILOVER">https://developer.android.com/reference/android/net/ConnectivityManager.html#EXTRA_IS_FAILOVER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String EXTRA_IS_FAILOVER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_EXTRA_NETWORK_" data-uid="Android.Net.ConnectivityManager.EXTRA_NETWORK*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_EXTRA_NETWORK" data-uid="Android.Net.ConnectivityManager.EXTRA_NETWORK">
+  EXTRA_NETWORK
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L215"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#EXTRA_NETWORK">https://developer.android.com/reference/android/net/ConnectivityManager.html#EXTRA_NETWORK</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_NETWORK { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_EXTRA_NETWORK_INFO_" data-uid="Android.Net.ConnectivityManager.EXTRA_NETWORK_INFO*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_EXTRA_NETWORK_INFO" data-uid="Android.Net.ConnectivityManager.EXTRA_NETWORK_INFO">
+  EXTRA_NETWORK_INFO
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L221"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#EXTRA_NETWORK_INFO">https://developer.android.com/reference/android/net/ConnectivityManager.html#EXTRA_NETWORK_INFO</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String EXTRA_NETWORK_INFO { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_EXTRA_NETWORK_REQUEST_" data-uid="Android.Net.ConnectivityManager.EXTRA_NETWORK_REQUEST*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_EXTRA_NETWORK_REQUEST" data-uid="Android.Net.ConnectivityManager.EXTRA_NETWORK_REQUEST">
+  EXTRA_NETWORK_REQUEST
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L228"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#EXTRA_NETWORK_REQUEST">https://developer.android.com/reference/android/net/ConnectivityManager.html#EXTRA_NETWORK_REQUEST</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_NETWORK_REQUEST { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_EXTRA_NETWORK_TYPE_" data-uid="Android.Net.ConnectivityManager.EXTRA_NETWORK_TYPE*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_EXTRA_NETWORK_TYPE" data-uid="Android.Net.ConnectivityManager.EXTRA_NETWORK_TYPE">
+  EXTRA_NETWORK_TYPE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L234"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#EXTRA_NETWORK_TYPE">https://developer.android.com/reference/android/net/ConnectivityManager.html#EXTRA_NETWORK_TYPE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String EXTRA_NETWORK_TYPE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_EXTRA_NO_CONNECTIVITY_" data-uid="Android.Net.ConnectivityManager.EXTRA_NO_CONNECTIVITY*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_EXTRA_NO_CONNECTIVITY" data-uid="Android.Net.ConnectivityManager.EXTRA_NO_CONNECTIVITY">
+  EXTRA_NO_CONNECTIVITY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L241"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#EXTRA_NO_CONNECTIVITY">https://developer.android.com/reference/android/net/ConnectivityManager.html#EXTRA_NO_CONNECTIVITY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_NO_CONNECTIVITY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_EXTRA_OTHER_NETWORK_INFO_" data-uid="Android.Net.ConnectivityManager.EXTRA_OTHER_NETWORK_INFO*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_EXTRA_OTHER_NETWORK_INFO" data-uid="Android.Net.ConnectivityManager.EXTRA_OTHER_NETWORK_INFO">
+  EXTRA_OTHER_NETWORK_INFO
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L247"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#EXTRA_OTHER_NETWORK_INFO">https://developer.android.com/reference/android/net/ConnectivityManager.html#EXTRA_OTHER_NETWORK_INFO</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String EXTRA_OTHER_NETWORK_INFO { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_EXTRA_REASON_" data-uid="Android.Net.ConnectivityManager.EXTRA_REASON*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_EXTRA_REASON" data-uid="Android.Net.ConnectivityManager.EXTRA_REASON">
+  EXTRA_REASON
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L254"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#EXTRA_REASON">https://developer.android.com/reference/android/net/ConnectivityManager.html#EXTRA_REASON</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_REASON { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_IsBridgeAbstract_" data-uid="Android.Net.ConnectivityManager.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_IsBridgeAbstract" data-uid="Android.Net.ConnectivityManager.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/AllPackageClasses.cs/#L276"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_IsBridgeCloseable_" data-uid="Android.Net.ConnectivityManager.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_IsBridgeCloseable" data-uid="Android.Net.ConnectivityManager.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/AllPackageClasses.cs/#L280"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_IsBridgeInterface_" data-uid="Android.Net.ConnectivityManager.IsBridgeInterface*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_IsBridgeInterface" data-uid="Android.Net.ConnectivityManager.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/AllPackageClasses.cs/#L284"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_IsBridgeStatic_" data-uid="Android.Net.ConnectivityManager.IsBridgeStatic*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_IsBridgeStatic" data-uid="Android.Net.ConnectivityManager.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/AllPackageClasses.cs/#L288"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_MULTIPATH_PREFERENCE_HANDOVER_" data-uid="Android.Net.ConnectivityManager.MULTIPATH_PREFERENCE_HANDOVER*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_MULTIPATH_PREFERENCE_HANDOVER" data-uid="Android.Net.ConnectivityManager.MULTIPATH_PREFERENCE_HANDOVER">
+  MULTIPATH_PREFERENCE_HANDOVER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#MULTIPATH_PREFERENCE_HANDOVER">https://developer.android.com/reference/android/net/ConnectivityManager.html#MULTIPATH_PREFERENCE_HANDOVER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int MULTIPATH_PREFERENCE_HANDOVER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_MULTIPATH_PREFERENCE_PERFORMANCE_" data-uid="Android.Net.ConnectivityManager.MULTIPATH_PREFERENCE_PERFORMANCE*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_MULTIPATH_PREFERENCE_PERFORMANCE" data-uid="Android.Net.ConnectivityManager.MULTIPATH_PREFERENCE_PERFORMANCE">
+  MULTIPATH_PREFERENCE_PERFORMANCE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#MULTIPATH_PREFERENCE_PERFORMANCE">https://developer.android.com/reference/android/net/ConnectivityManager.html#MULTIPATH_PREFERENCE_PERFORMANCE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int MULTIPATH_PREFERENCE_PERFORMANCE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_MULTIPATH_PREFERENCE_RELIABILITY_" data-uid="Android.Net.ConnectivityManager.MULTIPATH_PREFERENCE_RELIABILITY*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_MULTIPATH_PREFERENCE_RELIABILITY" data-uid="Android.Net.ConnectivityManager.MULTIPATH_PREFERENCE_RELIABILITY">
+  MULTIPATH_PREFERENCE_RELIABILITY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#MULTIPATH_PREFERENCE_RELIABILITY">https://developer.android.com/reference/android/net/ConnectivityManager.html#MULTIPATH_PREFERENCE_RELIABILITY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int MULTIPATH_PREFERENCE_RELIABILITY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_RESTRICT_BACKGROUND_STATUS_DISABLED_" data-uid="Android.Net.ConnectivityManager.RESTRICT_BACKGROUND_STATUS_DISABLED*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_RESTRICT_BACKGROUND_STATUS_DISABLED" data-uid="Android.Net.ConnectivityManager.RESTRICT_BACKGROUND_STATUS_DISABLED">
+  RESTRICT_BACKGROUND_STATUS_DISABLED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L68"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#RESTRICT_BACKGROUND_STATUS_DISABLED">https://developer.android.com/reference/android/net/ConnectivityManager.html#RESTRICT_BACKGROUND_STATUS_DISABLED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int RESTRICT_BACKGROUND_STATUS_DISABLED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_RESTRICT_BACKGROUND_STATUS_ENABLED_" data-uid="Android.Net.ConnectivityManager.RESTRICT_BACKGROUND_STATUS_ENABLED*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_RESTRICT_BACKGROUND_STATUS_ENABLED" data-uid="Android.Net.ConnectivityManager.RESTRICT_BACKGROUND_STATUS_ENABLED">
+  RESTRICT_BACKGROUND_STATUS_ENABLED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L74"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#RESTRICT_BACKGROUND_STATUS_ENABLED">https://developer.android.com/reference/android/net/ConnectivityManager.html#RESTRICT_BACKGROUND_STATUS_ENABLED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int RESTRICT_BACKGROUND_STATUS_ENABLED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_RESTRICT_BACKGROUND_STATUS_WHITELISTED_" data-uid="Android.Net.ConnectivityManager.RESTRICT_BACKGROUND_STATUS_WHITELISTED*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_RESTRICT_BACKGROUND_STATUS_WHITELISTED" data-uid="Android.Net.ConnectivityManager.RESTRICT_BACKGROUND_STATUS_WHITELISTED">
+  RESTRICT_BACKGROUND_STATUS_WHITELISTED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L80"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#RESTRICT_BACKGROUND_STATUS_WHITELISTED">https://developer.android.com/reference/android/net/ConnectivityManager.html#RESTRICT_BACKGROUND_STATUS_WHITELISTED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int RESTRICT_BACKGROUND_STATUS_WHITELISTED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_TYPE_BLUETOOTH_" data-uid="Android.Net.ConnectivityManager.TYPE_BLUETOOTH*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_TYPE_BLUETOOTH" data-uid="Android.Net.ConnectivityManager.TYPE_BLUETOOTH">
+  TYPE_BLUETOOTH
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L86"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#TYPE_BLUETOOTH">https://developer.android.com/reference/android/net/ConnectivityManager.html#TYPE_BLUETOOTH</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static int TYPE_BLUETOOTH { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_TYPE_DUMMY_" data-uid="Android.Net.ConnectivityManager.TYPE_DUMMY*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_TYPE_DUMMY" data-uid="Android.Net.ConnectivityManager.TYPE_DUMMY">
+  TYPE_DUMMY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L93"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#TYPE_DUMMY">https://developer.android.com/reference/android/net/ConnectivityManager.html#TYPE_DUMMY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static int TYPE_DUMMY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_TYPE_ETHERNET_" data-uid="Android.Net.ConnectivityManager.TYPE_ETHERNET*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_TYPE_ETHERNET" data-uid="Android.Net.ConnectivityManager.TYPE_ETHERNET">
+  TYPE_ETHERNET
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L100"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#TYPE_ETHERNET">https://developer.android.com/reference/android/net/ConnectivityManager.html#TYPE_ETHERNET</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static int TYPE_ETHERNET { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_TYPE_MOBILE_" data-uid="Android.Net.ConnectivityManager.TYPE_MOBILE*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_TYPE_MOBILE" data-uid="Android.Net.ConnectivityManager.TYPE_MOBILE">
+  TYPE_MOBILE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L107"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#TYPE_MOBILE">https://developer.android.com/reference/android/net/ConnectivityManager.html#TYPE_MOBILE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static int TYPE_MOBILE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_TYPE_MOBILE_DUN_" data-uid="Android.Net.ConnectivityManager.TYPE_MOBILE_DUN*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_TYPE_MOBILE_DUN" data-uid="Android.Net.ConnectivityManager.TYPE_MOBILE_DUN">
+  TYPE_MOBILE_DUN
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L114"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#TYPE_MOBILE_DUN">https://developer.android.com/reference/android/net/ConnectivityManager.html#TYPE_MOBILE_DUN</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static int TYPE_MOBILE_DUN { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_TYPE_MOBILE_HIPRI_" data-uid="Android.Net.ConnectivityManager.TYPE_MOBILE_HIPRI*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_TYPE_MOBILE_HIPRI" data-uid="Android.Net.ConnectivityManager.TYPE_MOBILE_HIPRI">
+  TYPE_MOBILE_HIPRI
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#TYPE_MOBILE_HIPRI">https://developer.android.com/reference/android/net/ConnectivityManager.html#TYPE_MOBILE_HIPRI</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static int TYPE_MOBILE_HIPRI { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_TYPE_MOBILE_MMS_" data-uid="Android.Net.ConnectivityManager.TYPE_MOBILE_MMS*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_TYPE_MOBILE_MMS" data-uid="Android.Net.ConnectivityManager.TYPE_MOBILE_MMS">
+  TYPE_MOBILE_MMS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L128"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#TYPE_MOBILE_MMS">https://developer.android.com/reference/android/net/ConnectivityManager.html#TYPE_MOBILE_MMS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static int TYPE_MOBILE_MMS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_TYPE_MOBILE_SUPL_" data-uid="Android.Net.ConnectivityManager.TYPE_MOBILE_SUPL*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_TYPE_MOBILE_SUPL" data-uid="Android.Net.ConnectivityManager.TYPE_MOBILE_SUPL">
+  TYPE_MOBILE_SUPL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L135"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#TYPE_MOBILE_SUPL">https://developer.android.com/reference/android/net/ConnectivityManager.html#TYPE_MOBILE_SUPL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static int TYPE_MOBILE_SUPL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_TYPE_VPN_" data-uid="Android.Net.ConnectivityManager.TYPE_VPN*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_TYPE_VPN" data-uid="Android.Net.ConnectivityManager.TYPE_VPN">
+  TYPE_VPN
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L142"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#TYPE_VPN">https://developer.android.com/reference/android/net/ConnectivityManager.html#TYPE_VPN</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static int TYPE_VPN { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_TYPE_WIFI_" data-uid="Android.Net.ConnectivityManager.TYPE_WIFI*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_TYPE_WIFI" data-uid="Android.Net.ConnectivityManager.TYPE_WIFI">
+  TYPE_WIFI
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L149"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#TYPE_WIFI">https://developer.android.com/reference/android/net/ConnectivityManager.html#TYPE_WIFI</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static int TYPE_WIFI { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_TYPE_WIMAX_" data-uid="Android.Net.ConnectivityManager.TYPE_WIMAX*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_TYPE_WIMAX" data-uid="Android.Net.ConnectivityManager.TYPE_WIMAX">
+  TYPE_WIMAX
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L156"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#TYPE_WIMAX">https://developer.android.com/reference/android/net/ConnectivityManager.html#TYPE_WIMAX</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static int TYPE_WIMAX { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_Net_ConnectivityManager_AddDefaultNetworkActiveListener_" data-uid="Android.Net.ConnectivityManager.AddDefaultNetworkActiveListener*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_AddDefaultNetworkActiveListener_Android_Net_ConnectivityManager_OnNetworkActiveListener_" data-uid="Android.Net.ConnectivityManager.AddDefaultNetworkActiveListener(Android.Net.ConnectivityManager.OnNetworkActiveListener)">
+  AddDefaultNetworkActiveListener(OnNetworkActiveListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L489"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#addDefaultNetworkActiveListener(android.net.ConnectivityManager.OnNetworkActiveListener)">https://developer.android.com/reference/android/net/ConnectivityManager.html#addDefaultNetworkActiveListener(android.net.ConnectivityManager.OnNetworkActiveListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddDefaultNetworkActiveListener(ConnectivityManager.OnNetworkActiveListener arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.ConnectivityManager.html">ConnectivityManager</a>.<a class="xref" href="Android.Net.ConnectivityManager.OnNetworkActiveListener.html">OnNetworkActiveListener</a></dt>
+    <dd><p><a class="xref" href="Android.Net.ConnectivityManager.OnNetworkActiveListener.html">ConnectivityManager.OnNetworkActiveListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_BindProcessToNetwork_" data-uid="Android.Net.ConnectivityManager.BindProcessToNetwork*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_BindProcessToNetwork_Android_Net_Network_" data-uid="Android.Net.ConnectivityManager.BindProcessToNetwork(Android.Net.Network)">
+  BindProcessToNetwork(Network)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L402"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#bindProcessToNetwork(android.net.Network)">https://developer.android.com/reference/android/net/ConnectivityManager.html#bindProcessToNetwork(android.net.Network)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool BindProcessToNetwork(Network arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Network.html">Network</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Network.html">Network</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_CreateSocketKeepalive_" data-uid="Android.Net.ConnectivityManager.CreateSocketKeepalive*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_CreateSocketKeepalive_Android_Net_Network_Android_Net_IpSecManager_UdpEncapsulationSocket_Java_Net_InetAddress_Java_Net_InetAddress_Java_Util_Concurrent_Executor_Android_Net_SocketKeepalive_Callback_" data-uid="Android.Net.ConnectivityManager.CreateSocketKeepalive(Android.Net.Network,Android.Net.IpSecManager.UdpEncapsulationSocket,Java.Net.InetAddress,Java.Net.InetAddress,Java.Util.Concurrent.Executor,Android.Net.SocketKeepalive.Callback)">
+  CreateSocketKeepalive(Network, UdpEncapsulationSocket, InetAddress, InetAddress, Executor, Callback)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L393"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#createSocketKeepalive(android.net.Network,android.net.IpSecManager.UdpEncapsulationSocket,java.net.InetAddress,java.net.InetAddress,java.util.concurrent.Executor,android.net.SocketKeepalive.Callback)">https://developer.android.com/reference/android/net/ConnectivityManager.html#createSocketKeepalive(android.net.Network,android.net.IpSecManager.UdpEncapsulationSocket,java.net.InetAddress,java.net.InetAddress,java.util.concurrent.Executor,android.net.SocketKeepalive.Callback)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SocketKeepalive CreateSocketKeepalive(Network arg0, IpSecManager.UdpEncapsulationSocket arg1, InetAddress arg2, InetAddress arg3, Executor arg4, SocketKeepalive.Callback arg5)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Network.html">Network</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Network.html">Network</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Net.IpSecManager.html">IpSecManager</a>.<a class="xref" href="Android.Net.IpSecManager.UdpEncapsulationSocket.html">UdpEncapsulationSocket</a></dt>
+    <dd><p><a class="xref" href="Android.Net.IpSecManager.UdpEncapsulationSocket.html">IpSecManager.UdpEncapsulationSocket</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Net.InetAddress.html">InetAddress</a></dt>
+    <dd><p><a class="xref" href="Java.Net.InetAddress.html">InetAddress</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Java.Net.InetAddress.html">InetAddress</a></dt>
+    <dd><p><a class="xref" href="Java.Net.InetAddress.html">InetAddress</a></p>
+</dd>
+    <dt><code>arg4</code> <a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></p>
+</dd>
+    <dt><code>arg5</code> <a class="xref" href="Android.Net.SocketKeepalive.html">SocketKeepalive</a>.<a class="xref" href="Android.Net.SocketKeepalive.Callback.html">Callback</a></dt>
+    <dd><p><a class="xref" href="Android.Net.SocketKeepalive.Callback.html">SocketKeepalive.Callback</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Net.SocketKeepalive.html">SocketKeepalive</a></dt>
+    <dd><p><a class="xref" href="Android.Net.SocketKeepalive.html">SocketKeepalive</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_GetActiveNetwork_" data-uid="Android.Net.ConnectivityManager.GetActiveNetwork*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_GetActiveNetwork" data-uid="Android.Net.ConnectivityManager.GetActiveNetwork">
+  GetActiveNetwork()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L307"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#getActiveNetwork()">https://developer.android.com/reference/android/net/ConnectivityManager.html#getActiveNetwork()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Network GetActiveNetwork()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Net.Network.html">Network</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Network.html">Network</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_GetActiveNetworkInfo_" data-uid="Android.Net.ConnectivityManager.GetActiveNetworkInfo*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_GetActiveNetworkInfo" data-uid="Android.Net.ConnectivityManager.GetActiveNetworkInfo">
+  GetActiveNetworkInfo()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L341"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#getActiveNetworkInfo()">https://developer.android.com/reference/android/net/ConnectivityManager.html#getActiveNetworkInfo()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public NetworkInfo GetActiveNetworkInfo()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Net.NetworkInfo.html">NetworkInfo</a></dt>
+    <dd><p><a class="xref" href="Android.Net.NetworkInfo.html">NetworkInfo</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_GetAllNetworkInfo_" data-uid="Android.Net.ConnectivityManager.GetAllNetworkInfo*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_GetAllNetworkInfo" data-uid="Android.Net.ConnectivityManager.GetAllNetworkInfo">
+  GetAllNetworkInfo()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L370"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#getAllNetworkInfo()">https://developer.android.com/reference/android/net/ConnectivityManager.html#getAllNetworkInfo()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public NetworkInfo[] GetAllNetworkInfo()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Net.NetworkInfo.html">NetworkInfo</a>[]</dt>
+    <dd><p><a class="xref" href="Android.Net.NetworkInfo.html">NetworkInfo</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_GetAllNetworks_" data-uid="Android.Net.ConnectivityManager.GetAllNetworks*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_GetAllNetworks" data-uid="Android.Net.ConnectivityManager.GetAllNetworks">
+  GetAllNetworks()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L323"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#getAllNetworks()">https://developer.android.com/reference/android/net/ConnectivityManager.html#getAllNetworks()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public Network[] GetAllNetworks()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Net.Network.html">Network</a>[]</dt>
+    <dd><p><a class="xref" href="Android.Net.Network.html">Network</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_GetBackgroundDataSetting_" data-uid="Android.Net.ConnectivityManager.GetBackgroundDataSetting*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_GetBackgroundDataSetting" data-uid="Android.Net.ConnectivityManager.GetBackgroundDataSetting">
+  GetBackgroundDataSetting()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L410"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#getBackgroundDataSetting()">https://developer.android.com/reference/android/net/ConnectivityManager.html#getBackgroundDataSetting()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public bool GetBackgroundDataSetting()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_GetBoundNetworkForProcess_" data-uid="Android.Net.ConnectivityManager.GetBoundNetworkForProcess*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_GetBoundNetworkForProcess" data-uid="Android.Net.ConnectivityManager.GetBoundNetworkForProcess">
+  GetBoundNetworkForProcess()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L315"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#getBoundNetworkForProcess()">https://developer.android.com/reference/android/net/ConnectivityManager.html#getBoundNetworkForProcess()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Network GetBoundNetworkForProcess()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Net.Network.html">Network</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Network.html">Network</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_GetConnectionOwnerUid_" data-uid="Android.Net.ConnectivityManager.GetConnectionOwnerUid*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_GetConnectionOwnerUid_System_Int32_Java_Net_InetSocketAddress_Java_Net_InetSocketAddress_" data-uid="Android.Net.ConnectivityManager.GetConnectionOwnerUid(System.Int32,Java.Net.InetSocketAddress,Java.Net.InetSocketAddress)">
+  GetConnectionOwnerUid(int, InetSocketAddress, InetSocketAddress)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L455"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#getConnectionOwnerUid(int,java.net.InetSocketAddress,java.net.InetSocketAddress)">https://developer.android.com/reference/android/net/ConnectivityManager.html#getConnectionOwnerUid(int,java.net.InetSocketAddress,java.net.InetSocketAddress)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetConnectionOwnerUid(int arg0, InetSocketAddress arg1, InetSocketAddress arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Net.InetSocketAddress.html">InetSocketAddress</a></dt>
+    <dd><p><a class="xref" href="Java.Net.InetSocketAddress.html">InetSocketAddress</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Net.InetSocketAddress.html">InetSocketAddress</a></dt>
+    <dd><p><a class="xref" href="Java.Net.InetSocketAddress.html">InetSocketAddress</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_GetDefaultProxy_" data-uid="Android.Net.ConnectivityManager.GetDefaultProxy*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_GetDefaultProxy" data-uid="Android.Net.ConnectivityManager.GetDefaultProxy">
+  GetDefaultProxy()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L379"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#getDefaultProxy()">https://developer.android.com/reference/android/net/ConnectivityManager.html#getDefaultProxy()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ProxyInfo GetDefaultProxy()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Net.ProxyInfo.html">ProxyInfo</a></dt>
+    <dd><p><a class="xref" href="Android.Net.ProxyInfo.html">ProxyInfo</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_GetLinkProperties_" data-uid="Android.Net.ConnectivityManager.GetLinkProperties*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_GetLinkProperties_Android_Net_Network_" data-uid="Android.Net.ConnectivityManager.GetLinkProperties(Android.Net.Network)">
+  GetLinkProperties(Network)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L299"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#getLinkProperties(android.net.Network)">https://developer.android.com/reference/android/net/ConnectivityManager.html#getLinkProperties(android.net.Network)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LinkProperties GetLinkProperties(Network arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Network.html">Network</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Network.html">Network</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Net.LinkProperties.html">LinkProperties</a></dt>
+    <dd><p><a class="xref" href="Android.Net.LinkProperties.html">LinkProperties</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_GetMultipathPreference_" data-uid="Android.Net.ConnectivityManager.GetMultipathPreference*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_GetMultipathPreference_Android_Net_Network_" data-uid="Android.Net.ConnectivityManager.GetMultipathPreference(Android.Net.Network)">
+  GetMultipathPreference(Network)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L464"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#getMultipathPreference(android.net.Network)">https://developer.android.com/reference/android/net/ConnectivityManager.html#getMultipathPreference(android.net.Network)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetMultipathPreference(Network arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Network.html">Network</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Network.html">Network</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_GetNetworkCapabilities_" data-uid="Android.Net.ConnectivityManager.GetNetworkCapabilities*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_GetNetworkCapabilities_Android_Net_Network_" data-uid="Android.Net.ConnectivityManager.GetNetworkCapabilities(Android.Net.Network)">
+  GetNetworkCapabilities(Network)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L333"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#getNetworkCapabilities(android.net.Network)">https://developer.android.com/reference/android/net/ConnectivityManager.html#getNetworkCapabilities(android.net.Network)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NetworkCapabilities GetNetworkCapabilities(Network arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Network.html">Network</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Network.html">Network</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Net.NetworkCapabilities.html">NetworkCapabilities</a></dt>
+    <dd><p><a class="xref" href="Android.Net.NetworkCapabilities.html">NetworkCapabilities</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_GetNetworkInfo_" data-uid="Android.Net.ConnectivityManager.GetNetworkInfo*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_GetNetworkInfo_Android_Net_Network_" data-uid="Android.Net.ConnectivityManager.GetNetworkInfo(Android.Net.Network)">
+  GetNetworkInfo(Network)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L351"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#getNetworkInfo(android.net.Network)">https://developer.android.com/reference/android/net/ConnectivityManager.html#getNetworkInfo(android.net.Network)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public NetworkInfo GetNetworkInfo(Network arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Network.html">Network</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Network.html">Network</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Net.NetworkInfo.html">NetworkInfo</a></dt>
+    <dd><p><a class="xref" href="Android.Net.NetworkInfo.html">NetworkInfo</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_GetNetworkInfo_" data-uid="Android.Net.ConnectivityManager.GetNetworkInfo*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_GetNetworkInfo_System_Int32_" data-uid="Android.Net.ConnectivityManager.GetNetworkInfo(System.Int32)">
+  GetNetworkInfo(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L361"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#getNetworkInfo(int)">https://developer.android.com/reference/android/net/ConnectivityManager.html#getNetworkInfo(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public NetworkInfo GetNetworkInfo(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Net.NetworkInfo.html">NetworkInfo</a></dt>
+    <dd><p><a class="xref" href="Android.Net.NetworkInfo.html">NetworkInfo</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_GetNetworkPreference_" data-uid="Android.Net.ConnectivityManager.GetNetworkPreference*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_GetNetworkPreference" data-uid="Android.Net.ConnectivityManager.GetNetworkPreference">
+  GetNetworkPreference()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L472"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#getNetworkPreference()">https://developer.android.com/reference/android/net/ConnectivityManager.html#getNetworkPreference()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public int GetNetworkPreference()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_GetNetworkWatchlistConfigHash_" data-uid="Android.Net.ConnectivityManager.GetNetworkWatchlistConfigHash*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_GetNetworkWatchlistConfigHash" data-uid="Android.Net.ConnectivityManager.GetNetworkWatchlistConfigHash">
+  GetNetworkWatchlistConfigHash()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L444"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#getNetworkWatchlistConfigHash()">https://developer.android.com/reference/android/net/ConnectivityManager.html#getNetworkWatchlistConfigHash()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] GetNetworkWatchlistConfigHash()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_GetProcessDefaultNetwork_" data-uid="Android.Net.ConnectivityManager.GetProcessDefaultNetwork*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_GetProcessDefaultNetwork" data-uid="Android.Net.ConnectivityManager.GetProcessDefaultNetwork">
+  GetProcessDefaultNetwork()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L265"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#getProcessDefaultNetwork()">https://developer.android.com/reference/android/net/ConnectivityManager.html#getProcessDefaultNetwork()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static Network GetProcessDefaultNetwork()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Net.Network.html">Network</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Network.html">Network</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_GetRestrictBackgroundStatus_" data-uid="Android.Net.ConnectivityManager.GetRestrictBackgroundStatus*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_GetRestrictBackgroundStatus" data-uid="Android.Net.ConnectivityManager.GetRestrictBackgroundStatus">
+  GetRestrictBackgroundStatus()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L481"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#getRestrictBackgroundStatus()">https://developer.android.com/reference/android/net/ConnectivityManager.html#getRestrictBackgroundStatus()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetRestrictBackgroundStatus()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_IsActiveNetworkMetered_" data-uid="Android.Net.ConnectivityManager.IsActiveNetworkMetered*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_IsActiveNetworkMetered" data-uid="Android.Net.ConnectivityManager.IsActiveNetworkMetered">
+  IsActiveNetworkMetered()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L419"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#isActiveNetworkMetered()">https://developer.android.com/reference/android/net/ConnectivityManager.html#isActiveNetworkMetered()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsActiveNetworkMetered()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_IsDefaultNetworkActive_" data-uid="Android.Net.ConnectivityManager.IsDefaultNetworkActive*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_IsDefaultNetworkActive" data-uid="Android.Net.ConnectivityManager.IsDefaultNetworkActive">
+  IsDefaultNetworkActive()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L427"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#isDefaultNetworkActive()">https://developer.android.com/reference/android/net/ConnectivityManager.html#isDefaultNetworkActive()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsDefaultNetworkActive()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_IsNetworkTypeValid_" data-uid="Android.Net.ConnectivityManager.IsNetworkTypeValid*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_IsNetworkTypeValid_System_Int32_" data-uid="Android.Net.ConnectivityManager.IsNetworkTypeValid(System.Int32)">
+  IsNetworkTypeValid(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L275"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#isNetworkTypeValid(int)">https://developer.android.com/reference/android/net/ConnectivityManager.html#isNetworkTypeValid(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static bool IsNetworkTypeValid(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_RegisterBestMatchingNetworkCallback_" data-uid="Android.Net.ConnectivityManager.RegisterBestMatchingNetworkCallback*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_RegisterBestMatchingNetworkCallback_Android_Net_NetworkRequest_Android_Net_ConnectivityManager_NetworkCallback_Android_Os_Handler_" data-uid="Android.Net.ConnectivityManager.RegisterBestMatchingNetworkCallback(Android.Net.NetworkRequest,Android.Net.ConnectivityManager.NetworkCallback,Android.Os.Handler)">
+  RegisterBestMatchingNetworkCallback(NetworkRequest, NetworkCallback, Handler)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L499"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#registerBestMatchingNetworkCallback(android.net.NetworkRequest,android.net.ConnectivityManager.NetworkCallback,android.os.Handler)">https://developer.android.com/reference/android/net/ConnectivityManager.html#registerBestMatchingNetworkCallback(android.net.NetworkRequest,android.net.ConnectivityManager.NetworkCallback,android.os.Handler)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterBestMatchingNetworkCallback(NetworkRequest arg0, ConnectivityManager.NetworkCallback arg1, Handler arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.NetworkRequest.html">NetworkRequest</a></dt>
+    <dd><p><a class="xref" href="Android.Net.NetworkRequest.html">NetworkRequest</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Net.ConnectivityManager.html">ConnectivityManager</a>.<a class="xref" href="Android.Net.ConnectivityManager.NetworkCallback.html">NetworkCallback</a></dt>
+    <dd><p><a class="xref" href="Android.Net.ConnectivityManager.NetworkCallback.html">ConnectivityManager.NetworkCallback</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Os.Handler.html">Handler</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Handler.html">Handler</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_RegisterDefaultNetworkCallback_" data-uid="Android.Net.ConnectivityManager.RegisterDefaultNetworkCallback*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_RegisterDefaultNetworkCallback_Android_Net_ConnectivityManager_NetworkCallback_" data-uid="Android.Net.ConnectivityManager.RegisterDefaultNetworkCallback(Android.Net.ConnectivityManager.NetworkCallback)">
+  RegisterDefaultNetworkCallback(NetworkCallback)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L516"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#registerDefaultNetworkCallback(android.net.ConnectivityManager.NetworkCallback)">https://developer.android.com/reference/android/net/ConnectivityManager.html#registerDefaultNetworkCallback(android.net.ConnectivityManager.NetworkCallback)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterDefaultNetworkCallback(ConnectivityManager.NetworkCallback arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.ConnectivityManager.html">ConnectivityManager</a>.<a class="xref" href="Android.Net.ConnectivityManager.NetworkCallback.html">NetworkCallback</a></dt>
+    <dd><p><a class="xref" href="Android.Net.ConnectivityManager.NetworkCallback.html">ConnectivityManager.NetworkCallback</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_RegisterDefaultNetworkCallback_" data-uid="Android.Net.ConnectivityManager.RegisterDefaultNetworkCallback*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_RegisterDefaultNetworkCallback_Android_Net_ConnectivityManager_NetworkCallback_Android_Os_Handler_" data-uid="Android.Net.ConnectivityManager.RegisterDefaultNetworkCallback(Android.Net.ConnectivityManager.NetworkCallback,Android.Os.Handler)">
+  RegisterDefaultNetworkCallback(NetworkCallback, Handler)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L508"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#registerDefaultNetworkCallback(android.net.ConnectivityManager.NetworkCallback,android.os.Handler)">https://developer.android.com/reference/android/net/ConnectivityManager.html#registerDefaultNetworkCallback(android.net.ConnectivityManager.NetworkCallback,android.os.Handler)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterDefaultNetworkCallback(ConnectivityManager.NetworkCallback arg0, Handler arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.ConnectivityManager.html">ConnectivityManager</a>.<a class="xref" href="Android.Net.ConnectivityManager.NetworkCallback.html">NetworkCallback</a></dt>
+    <dd><p><a class="xref" href="Android.Net.ConnectivityManager.NetworkCallback.html">ConnectivityManager.NetworkCallback</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Os.Handler.html">Handler</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Handler.html">Handler</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_RegisterNetworkCallback_" data-uid="Android.Net.ConnectivityManager.RegisterNetworkCallback*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_RegisterNetworkCallback_Android_Net_NetworkRequest_Android_App_PendingIntent_" data-uid="Android.Net.ConnectivityManager.RegisterNetworkCallback(Android.Net.NetworkRequest,Android.App.PendingIntent)">
+  RegisterNetworkCallback(NetworkRequest, PendingIntent)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L525"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#registerNetworkCallback(android.net.NetworkRequest,android.app.PendingIntent)">https://developer.android.com/reference/android/net/ConnectivityManager.html#registerNetworkCallback(android.net.NetworkRequest,android.app.PendingIntent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterNetworkCallback(NetworkRequest arg0, PendingIntent arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.NetworkRequest.html">NetworkRequest</a></dt>
+    <dd><p><a class="xref" href="Android.Net.NetworkRequest.html">NetworkRequest</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.App.PendingIntent.html">PendingIntent</a></dt>
+    <dd><p><a class="xref" href="Android.App.PendingIntent.html">PendingIntent</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_RegisterNetworkCallback_" data-uid="Android.Net.ConnectivityManager.RegisterNetworkCallback*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_RegisterNetworkCallback_Android_Net_NetworkRequest_Android_Net_ConnectivityManager_NetworkCallback_" data-uid="Android.Net.ConnectivityManager.RegisterNetworkCallback(Android.Net.NetworkRequest,Android.Net.ConnectivityManager.NetworkCallback)">
+  RegisterNetworkCallback(NetworkRequest, NetworkCallback)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L544"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#registerNetworkCallback(android.net.NetworkRequest,android.net.ConnectivityManager.NetworkCallback)">https://developer.android.com/reference/android/net/ConnectivityManager.html#registerNetworkCallback(android.net.NetworkRequest,android.net.ConnectivityManager.NetworkCallback)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterNetworkCallback(NetworkRequest arg0, ConnectivityManager.NetworkCallback arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.NetworkRequest.html">NetworkRequest</a></dt>
+    <dd><p><a class="xref" href="Android.Net.NetworkRequest.html">NetworkRequest</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Net.ConnectivityManager.html">ConnectivityManager</a>.<a class="xref" href="Android.Net.ConnectivityManager.NetworkCallback.html">NetworkCallback</a></dt>
+    <dd><p><a class="xref" href="Android.Net.ConnectivityManager.NetworkCallback.html">ConnectivityManager.NetworkCallback</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_RegisterNetworkCallback_" data-uid="Android.Net.ConnectivityManager.RegisterNetworkCallback*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_RegisterNetworkCallback_Android_Net_NetworkRequest_Android_Net_ConnectivityManager_NetworkCallback_Android_Os_Handler_" data-uid="Android.Net.ConnectivityManager.RegisterNetworkCallback(Android.Net.NetworkRequest,Android.Net.ConnectivityManager.NetworkCallback,Android.Os.Handler)">
+  RegisterNetworkCallback(NetworkRequest, NetworkCallback, Handler)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L535"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#registerNetworkCallback(android.net.NetworkRequest,android.net.ConnectivityManager.NetworkCallback,android.os.Handler)">https://developer.android.com/reference/android/net/ConnectivityManager.html#registerNetworkCallback(android.net.NetworkRequest,android.net.ConnectivityManager.NetworkCallback,android.os.Handler)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterNetworkCallback(NetworkRequest arg0, ConnectivityManager.NetworkCallback arg1, Handler arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.NetworkRequest.html">NetworkRequest</a></dt>
+    <dd><p><a class="xref" href="Android.Net.NetworkRequest.html">NetworkRequest</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Net.ConnectivityManager.html">ConnectivityManager</a>.<a class="xref" href="Android.Net.ConnectivityManager.NetworkCallback.html">NetworkCallback</a></dt>
+    <dd><p><a class="xref" href="Android.Net.ConnectivityManager.NetworkCallback.html">ConnectivityManager.NetworkCallback</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Os.Handler.html">Handler</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Handler.html">Handler</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_ReleaseNetworkRequest_" data-uid="Android.Net.ConnectivityManager.ReleaseNetworkRequest*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_ReleaseNetworkRequest_Android_App_PendingIntent_" data-uid="Android.Net.ConnectivityManager.ReleaseNetworkRequest(Android.App.PendingIntent)">
+  ReleaseNetworkRequest(PendingIntent)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L552"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#releaseNetworkRequest(android.app.PendingIntent)">https://developer.android.com/reference/android/net/ConnectivityManager.html#releaseNetworkRequest(android.app.PendingIntent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReleaseNetworkRequest(PendingIntent arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.App.PendingIntent.html">PendingIntent</a></dt>
+    <dd><p><a class="xref" href="Android.App.PendingIntent.html">PendingIntent</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_RemoveDefaultNetworkActiveListener_" data-uid="Android.Net.ConnectivityManager.RemoveDefaultNetworkActiveListener*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_RemoveDefaultNetworkActiveListener_Android_Net_ConnectivityManager_OnNetworkActiveListener_" data-uid="Android.Net.ConnectivityManager.RemoveDefaultNetworkActiveListener(Android.Net.ConnectivityManager.OnNetworkActiveListener)">
+  RemoveDefaultNetworkActiveListener(OnNetworkActiveListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L560"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#removeDefaultNetworkActiveListener(android.net.ConnectivityManager.OnNetworkActiveListener)">https://developer.android.com/reference/android/net/ConnectivityManager.html#removeDefaultNetworkActiveListener(android.net.ConnectivityManager.OnNetworkActiveListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveDefaultNetworkActiveListener(ConnectivityManager.OnNetworkActiveListener arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.ConnectivityManager.html">ConnectivityManager</a>.<a class="xref" href="Android.Net.ConnectivityManager.OnNetworkActiveListener.html">OnNetworkActiveListener</a></dt>
+    <dd><p><a class="xref" href="Android.Net.ConnectivityManager.OnNetworkActiveListener.html">ConnectivityManager.OnNetworkActiveListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_ReportBadNetwork_" data-uid="Android.Net.ConnectivityManager.ReportBadNetwork*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_ReportBadNetwork_Android_Net_Network_" data-uid="Android.Net.ConnectivityManager.ReportBadNetwork(Android.Net.Network)">
+  ReportBadNetwork(Network)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L568"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#reportBadNetwork(android.net.Network)">https://developer.android.com/reference/android/net/ConnectivityManager.html#reportBadNetwork(android.net.Network)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void ReportBadNetwork(Network arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Network.html">Network</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Network.html">Network</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_ReportNetworkConnectivity_" data-uid="Android.Net.ConnectivityManager.ReportNetworkConnectivity*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_ReportNetworkConnectivity_Android_Net_Network_System_Boolean_" data-uid="Android.Net.ConnectivityManager.ReportNetworkConnectivity(Android.Net.Network,System.Boolean)">
+  ReportNetworkConnectivity(Network, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L578"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#reportNetworkConnectivity(android.net.Network,boolean)">https://developer.android.com/reference/android/net/ConnectivityManager.html#reportNetworkConnectivity(android.net.Network,boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReportNetworkConnectivity(Network arg0, bool arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Network.html">Network</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Network.html">Network</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_RequestBandwidthUpdate_" data-uid="Android.Net.ConnectivityManager.RequestBandwidthUpdate*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_RequestBandwidthUpdate_Android_Net_Network_" data-uid="Android.Net.ConnectivityManager.RequestBandwidthUpdate(Android.Net.Network)">
+  RequestBandwidthUpdate(Network)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L436"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#requestBandwidthUpdate(android.net.Network)">https://developer.android.com/reference/android/net/ConnectivityManager.html#requestBandwidthUpdate(android.net.Network)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RequestBandwidthUpdate(Network arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Network.html">Network</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Network.html">Network</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_RequestNetwork_" data-uid="Android.Net.ConnectivityManager.RequestNetwork*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_RequestNetwork_Android_Net_NetworkRequest_Android_App_PendingIntent_" data-uid="Android.Net.ConnectivityManager.RequestNetwork(Android.Net.NetworkRequest,Android.App.PendingIntent)">
+  RequestNetwork(NetworkRequest, PendingIntent)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L587"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#requestNetwork(android.net.NetworkRequest,android.app.PendingIntent)">https://developer.android.com/reference/android/net/ConnectivityManager.html#requestNetwork(android.net.NetworkRequest,android.app.PendingIntent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestNetwork(NetworkRequest arg0, PendingIntent arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.NetworkRequest.html">NetworkRequest</a></dt>
+    <dd><p><a class="xref" href="Android.Net.NetworkRequest.html">NetworkRequest</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.App.PendingIntent.html">PendingIntent</a></dt>
+    <dd><p><a class="xref" href="Android.App.PendingIntent.html">PendingIntent</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_RequestNetwork_" data-uid="Android.Net.ConnectivityManager.RequestNetwork*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_RequestNetwork_Android_Net_NetworkRequest_Android_Net_ConnectivityManager_NetworkCallback_" data-uid="Android.Net.ConnectivityManager.RequestNetwork(Android.Net.NetworkRequest,Android.Net.ConnectivityManager.NetworkCallback)">
+  RequestNetwork(NetworkRequest, NetworkCallback)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L627"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#requestNetwork(android.net.NetworkRequest,android.net.ConnectivityManager.NetworkCallback)">https://developer.android.com/reference/android/net/ConnectivityManager.html#requestNetwork(android.net.NetworkRequest,android.net.ConnectivityManager.NetworkCallback)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestNetwork(NetworkRequest arg0, ConnectivityManager.NetworkCallback arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.NetworkRequest.html">NetworkRequest</a></dt>
+    <dd><p><a class="xref" href="Android.Net.NetworkRequest.html">NetworkRequest</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Net.ConnectivityManager.html">ConnectivityManager</a>.<a class="xref" href="Android.Net.ConnectivityManager.NetworkCallback.html">NetworkCallback</a></dt>
+    <dd><p><a class="xref" href="Android.Net.ConnectivityManager.NetworkCallback.html">ConnectivityManager.NetworkCallback</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_RequestNetwork_" data-uid="Android.Net.ConnectivityManager.RequestNetwork*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_RequestNetwork_Android_Net_NetworkRequest_Android_Net_ConnectivityManager_NetworkCallback_Android_Os_Handler_" data-uid="Android.Net.ConnectivityManager.RequestNetwork(Android.Net.NetworkRequest,Android.Net.ConnectivityManager.NetworkCallback,Android.Os.Handler)">
+  RequestNetwork(NetworkRequest, NetworkCallback, Handler)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L608"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#requestNetwork(android.net.NetworkRequest,android.net.ConnectivityManager.NetworkCallback,android.os.Handler)">https://developer.android.com/reference/android/net/ConnectivityManager.html#requestNetwork(android.net.NetworkRequest,android.net.ConnectivityManager.NetworkCallback,android.os.Handler)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestNetwork(NetworkRequest arg0, ConnectivityManager.NetworkCallback arg1, Handler arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.NetworkRequest.html">NetworkRequest</a></dt>
+    <dd><p><a class="xref" href="Android.Net.NetworkRequest.html">NetworkRequest</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Net.ConnectivityManager.html">ConnectivityManager</a>.<a class="xref" href="Android.Net.ConnectivityManager.NetworkCallback.html">NetworkCallback</a></dt>
+    <dd><p><a class="xref" href="Android.Net.ConnectivityManager.NetworkCallback.html">ConnectivityManager.NetworkCallback</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Os.Handler.html">Handler</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Handler.html">Handler</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_RequestNetwork_" data-uid="Android.Net.ConnectivityManager.RequestNetwork*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_RequestNetwork_Android_Net_NetworkRequest_Android_Net_ConnectivityManager_NetworkCallback_Android_Os_Handler_System_Int32_" data-uid="Android.Net.ConnectivityManager.RequestNetwork(Android.Net.NetworkRequest,Android.Net.ConnectivityManager.NetworkCallback,Android.Os.Handler,System.Int32)">
+  RequestNetwork(NetworkRequest, NetworkCallback, Handler, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L598"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#requestNetwork(android.net.NetworkRequest,android.net.ConnectivityManager.NetworkCallback,android.os.Handler,int)">https://developer.android.com/reference/android/net/ConnectivityManager.html#requestNetwork(android.net.NetworkRequest,android.net.ConnectivityManager.NetworkCallback,android.os.Handler,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestNetwork(NetworkRequest arg0, ConnectivityManager.NetworkCallback arg1, Handler arg2, int arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.NetworkRequest.html">NetworkRequest</a></dt>
+    <dd><p><a class="xref" href="Android.Net.NetworkRequest.html">NetworkRequest</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Net.ConnectivityManager.html">ConnectivityManager</a>.<a class="xref" href="Android.Net.ConnectivityManager.NetworkCallback.html">NetworkCallback</a></dt>
+    <dd><p><a class="xref" href="Android.Net.ConnectivityManager.NetworkCallback.html">ConnectivityManager.NetworkCallback</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Os.Handler.html">Handler</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Handler.html">Handler</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_RequestNetwork_" data-uid="Android.Net.ConnectivityManager.RequestNetwork*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_RequestNetwork_Android_Net_NetworkRequest_Android_Net_ConnectivityManager_NetworkCallback_System_Int32_" data-uid="Android.Net.ConnectivityManager.RequestNetwork(Android.Net.NetworkRequest,Android.Net.ConnectivityManager.NetworkCallback,System.Int32)">
+  RequestNetwork(NetworkRequest, NetworkCallback, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L618"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#requestNetwork(android.net.NetworkRequest,android.net.ConnectivityManager.NetworkCallback,int)">https://developer.android.com/reference/android/net/ConnectivityManager.html#requestNetwork(android.net.NetworkRequest,android.net.ConnectivityManager.NetworkCallback,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestNetwork(NetworkRequest arg0, ConnectivityManager.NetworkCallback arg1, int arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.NetworkRequest.html">NetworkRequest</a></dt>
+    <dd><p><a class="xref" href="Android.Net.NetworkRequest.html">NetworkRequest</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Net.ConnectivityManager.html">ConnectivityManager</a>.<a class="xref" href="Android.Net.ConnectivityManager.NetworkCallback.html">NetworkCallback</a></dt>
+    <dd><p><a class="xref" href="Android.Net.ConnectivityManager.NetworkCallback.html">ConnectivityManager.NetworkCallback</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_SetNetworkPreference_" data-uid="Android.Net.ConnectivityManager.SetNetworkPreference*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_SetNetworkPreference_System_Int32_" data-uid="Android.Net.ConnectivityManager.SetNetworkPreference(System.Int32)">
+  SetNetworkPreference(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L635"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#setNetworkPreference(int)">https://developer.android.com/reference/android/net/ConnectivityManager.html#setNetworkPreference(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void SetNetworkPreference(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_SetProcessDefaultNetwork_" data-uid="Android.Net.ConnectivityManager.SetProcessDefaultNetwork*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_SetProcessDefaultNetwork_Android_Net_Network_" data-uid="Android.Net.ConnectivityManager.SetProcessDefaultNetwork(Android.Net.Network)">
+  SetProcessDefaultNetwork(Network)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L285"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#setProcessDefaultNetwork(android.net.Network)">https://developer.android.com/reference/android/net/ConnectivityManager.html#setProcessDefaultNetwork(android.net.Network)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static bool SetProcessDefaultNetwork(Network arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Network.html">Network</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Network.html">Network</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_UnregisterNetworkCallback_" data-uid="Android.Net.ConnectivityManager.UnregisterNetworkCallback*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_UnregisterNetworkCallback_Android_App_PendingIntent_" data-uid="Android.Net.ConnectivityManager.UnregisterNetworkCallback(Android.App.PendingIntent)">
+  UnregisterNetworkCallback(PendingIntent)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L644"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#unregisterNetworkCallback(android.app.PendingIntent)">https://developer.android.com/reference/android/net/ConnectivityManager.html#unregisterNetworkCallback(android.app.PendingIntent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnregisterNetworkCallback(PendingIntent arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.App.PendingIntent.html">PendingIntent</a></dt>
+    <dd><p><a class="xref" href="Android.App.PendingIntent.html">PendingIntent</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_ConnectivityManager_UnregisterNetworkCallback_" data-uid="Android.Net.ConnectivityManager.UnregisterNetworkCallback*"></a>
+
+  <h3 id="Android_Net_ConnectivityManager_UnregisterNetworkCallback_Android_Net_ConnectivityManager_NetworkCallback_" data-uid="Android.Net.ConnectivityManager.UnregisterNetworkCallback(Android.Net.ConnectivityManager.NetworkCallback)">
+  UnregisterNetworkCallback(NetworkCallback)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L652"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/ConnectivityManager.html#unregisterNetworkCallback(android.net.ConnectivityManager.NetworkCallback)">https://developer.android.com/reference/android/net/ConnectivityManager.html#unregisterNetworkCallback(android.net.ConnectivityManager.NetworkCallback)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnregisterNetworkCallback(ConnectivityManager.NetworkCallback arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.ConnectivityManager.html">ConnectivityManager</a>.<a class="xref" href="Android.Net.ConnectivityManager.NetworkCallback.html">NetworkCallback</a></dt>
+    <dd><p><a class="xref" href="Android.Net.ConnectivityManager.NetworkCallback.html">ConnectivityManager.NetworkCallback</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/ConnectivityManager.cs/#L29" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

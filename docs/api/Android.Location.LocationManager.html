@@ -1,0 +1,4025 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class LocationManager | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class LocationManager | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/location/LocationManager.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_Location_LocationManager.md&amp;value=---%0Auid%3A%20Android.Location.LocationManager%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.Location.LocationManager">
+
+
+
+  <h1 id="Android_Location_LocationManager" data-uid="Android.Location.LocationManager" class="text-break">
+Class LocationManager  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.Location.html">Location</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html">https://developer.android.com/reference/android/location/LocationManager.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class LocationManager : JVMBridgeBase&lt;LocationManager&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.Location.LocationManager.html">LocationManager</a>&gt;</div>
+      <div><span class="xref">LocationManager</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LocationManager&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LocationManager&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LocationManager&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LocationManager&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LocationManager&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LocationManager&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LocationManager&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LocationManager&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;LocationManager&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;LocationManager&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;LocationManager&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;LocationManager&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LocationManager&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LocationManager&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LocationManager&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LocationManager&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;LocationManager&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;LocationManager&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;LocationManager&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;LocationManager&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LocationManager&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LocationManager&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LocationManager&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LocationManager&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;LocationManager&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;LocationManager&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;LocationManager&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;LocationManager&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LocationManager&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LocationManager&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LocationManager&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LocationManager&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LocationManager&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LocationManager&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LocationManager&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LocationManager&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LocationManager&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LocationManager&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LocationManager&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LocationManager&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LocationManager&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LocationManager&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LocationManager&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;LocationManager&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;LocationManager&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;LocationManager&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;LocationManager&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;LocationManager&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;LocationManager&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;LocationManager&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_Location_LocationManager__ctor_" data-uid="Android.Location.LocationManager.#ctor*"></a>
+
+  <h3 id="Android_Location_LocationManager__ctor" data-uid="Android.Location.LocationManager.#ctor">
+  LocationManager()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/AllPackageClasses.cs/#L1563"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LocationManager()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager__ctor_" data-uid="Android.Location.LocationManager.#ctor*"></a>
+
+  <h3 id="Android_Location_LocationManager__ctor_System_Object___" data-uid="Android.Location.LocationManager.#ctor(System.Object[])">
+  LocationManager(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/AllPackageClasses.cs/#L1567"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LocationManager(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_Location_LocationManager_ACTION_GNSS_CAPABILITIES_CHANGED_" data-uid="Android.Location.LocationManager.ACTION_GNSS_CAPABILITIES_CHANGED*"></a>
+
+  <h3 id="Android_Location_LocationManager_ACTION_GNSS_CAPABILITIES_CHANGED" data-uid="Android.Location.LocationManager.ACTION_GNSS_CAPABILITIES_CHANGED">
+  ACTION_GNSS_CAPABILITIES_CHANGED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#ACTION_GNSS_CAPABILITIES_CHANGED">https://developer.android.com/reference/android/location/LocationManager.html#ACTION_GNSS_CAPABILITIES_CHANGED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACTION_GNSS_CAPABILITIES_CHANGED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_BridgeClassName_" data-uid="Android.Location.LocationManager.BridgeClassName*"></a>
+
+  <h3 id="Android_Location_LocationManager_BridgeClassName" data-uid="Android.Location.LocationManager.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/AllPackageClasses.cs/#L1574"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_EXTRA_GNSS_CAPABILITIES_" data-uid="Android.Location.LocationManager.EXTRA_GNSS_CAPABILITIES*"></a>
+
+  <h3 id="Android_Location_LocationManager_EXTRA_GNSS_CAPABILITIES" data-uid="Android.Location.LocationManager.EXTRA_GNSS_CAPABILITIES">
+  EXTRA_GNSS_CAPABILITIES
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#EXTRA_GNSS_CAPABILITIES">https://developer.android.com/reference/android/location/LocationManager.html#EXTRA_GNSS_CAPABILITIES</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_GNSS_CAPABILITIES { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_EXTRA_LOCATION_ENABLED_" data-uid="Android.Location.LocationManager.EXTRA_LOCATION_ENABLED*"></a>
+
+  <h3 id="Android_Location_LocationManager_EXTRA_LOCATION_ENABLED" data-uid="Android.Location.LocationManager.EXTRA_LOCATION_ENABLED">
+  EXTRA_LOCATION_ENABLED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#EXTRA_LOCATION_ENABLED">https://developer.android.com/reference/android/location/LocationManager.html#EXTRA_LOCATION_ENABLED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_LOCATION_ENABLED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_EXTRA_PROVIDER_ENABLED_" data-uid="Android.Location.LocationManager.EXTRA_PROVIDER_ENABLED*"></a>
+
+  <h3 id="Android_Location_LocationManager_EXTRA_PROVIDER_ENABLED" data-uid="Android.Location.LocationManager.EXTRA_PROVIDER_ENABLED">
+  EXTRA_PROVIDER_ENABLED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#EXTRA_PROVIDER_ENABLED">https://developer.android.com/reference/android/location/LocationManager.html#EXTRA_PROVIDER_ENABLED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_PROVIDER_ENABLED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_EXTRA_PROVIDER_NAME_" data-uid="Android.Location.LocationManager.EXTRA_PROVIDER_NAME*"></a>
+
+  <h3 id="Android_Location_LocationManager_EXTRA_PROVIDER_NAME" data-uid="Android.Location.LocationManager.EXTRA_PROVIDER_NAME">
+  EXTRA_PROVIDER_NAME
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#EXTRA_PROVIDER_NAME">https://developer.android.com/reference/android/location/LocationManager.html#EXTRA_PROVIDER_NAME</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_PROVIDER_NAME { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_FUSED_PROVIDER_" data-uid="Android.Location.LocationManager.FUSED_PROVIDER*"></a>
+
+  <h3 id="Android_Location_LocationManager_FUSED_PROVIDER" data-uid="Android.Location.LocationManager.FUSED_PROVIDER">
+  FUSED_PROVIDER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#FUSED_PROVIDER">https://developer.android.com/reference/android/location/LocationManager.html#FUSED_PROVIDER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String FUSED_PROVIDER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_GPS_PROVIDER_" data-uid="Android.Location.LocationManager.GPS_PROVIDER*"></a>
+
+  <h3 id="Android_Location_LocationManager_GPS_PROVIDER" data-uid="Android.Location.LocationManager.GPS_PROVIDER">
+  GPS_PROVIDER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#GPS_PROVIDER">https://developer.android.com/reference/android/location/LocationManager.html#GPS_PROVIDER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String GPS_PROVIDER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_IsBridgeAbstract_" data-uid="Android.Location.LocationManager.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_Location_LocationManager_IsBridgeAbstract" data-uid="Android.Location.LocationManager.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/AllPackageClasses.cs/#L1578"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_IsBridgeCloseable_" data-uid="Android.Location.LocationManager.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_Location_LocationManager_IsBridgeCloseable" data-uid="Android.Location.LocationManager.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/AllPackageClasses.cs/#L1582"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_IsBridgeInterface_" data-uid="Android.Location.LocationManager.IsBridgeInterface*"></a>
+
+  <h3 id="Android_Location_LocationManager_IsBridgeInterface" data-uid="Android.Location.LocationManager.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/AllPackageClasses.cs/#L1586"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_IsBridgeStatic_" data-uid="Android.Location.LocationManager.IsBridgeStatic*"></a>
+
+  <h3 id="Android_Location_LocationManager_IsBridgeStatic" data-uid="Android.Location.LocationManager.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/AllPackageClasses.cs/#L1590"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_KEY_FLUSH_COMPLETE_" data-uid="Android.Location.LocationManager.KEY_FLUSH_COMPLETE*"></a>
+
+  <h3 id="Android_Location_LocationManager_KEY_FLUSH_COMPLETE" data-uid="Android.Location.LocationManager.KEY_FLUSH_COMPLETE">
+  KEY_FLUSH_COMPLETE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#KEY_FLUSH_COMPLETE">https://developer.android.com/reference/android/location/LocationManager.html#KEY_FLUSH_COMPLETE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String KEY_FLUSH_COMPLETE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_KEY_LOCATIONS_" data-uid="Android.Location.LocationManager.KEY_LOCATIONS*"></a>
+
+  <h3 id="Android_Location_LocationManager_KEY_LOCATIONS" data-uid="Android.Location.LocationManager.KEY_LOCATIONS">
+  KEY_LOCATIONS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#KEY_LOCATIONS">https://developer.android.com/reference/android/location/LocationManager.html#KEY_LOCATIONS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String KEY_LOCATIONS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_KEY_LOCATION_CHANGED_" data-uid="Android.Location.LocationManager.KEY_LOCATION_CHANGED*"></a>
+
+  <h3 id="Android_Location_LocationManager_KEY_LOCATION_CHANGED" data-uid="Android.Location.LocationManager.KEY_LOCATION_CHANGED">
+  KEY_LOCATION_CHANGED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#KEY_LOCATION_CHANGED">https://developer.android.com/reference/android/location/LocationManager.html#KEY_LOCATION_CHANGED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String KEY_LOCATION_CHANGED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_KEY_PROVIDER_ENABLED_" data-uid="Android.Location.LocationManager.KEY_PROVIDER_ENABLED*"></a>
+
+  <h3 id="Android_Location_LocationManager_KEY_PROVIDER_ENABLED" data-uid="Android.Location.LocationManager.KEY_PROVIDER_ENABLED">
+  KEY_PROVIDER_ENABLED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#KEY_PROVIDER_ENABLED">https://developer.android.com/reference/android/location/LocationManager.html#KEY_PROVIDER_ENABLED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String KEY_PROVIDER_ENABLED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_KEY_PROXIMITY_ENTERING_" data-uid="Android.Location.LocationManager.KEY_PROXIMITY_ENTERING*"></a>
+
+  <h3 id="Android_Location_LocationManager_KEY_PROXIMITY_ENTERING" data-uid="Android.Location.LocationManager.KEY_PROXIMITY_ENTERING">
+  KEY_PROXIMITY_ENTERING
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#KEY_PROXIMITY_ENTERING">https://developer.android.com/reference/android/location/LocationManager.html#KEY_PROXIMITY_ENTERING</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String KEY_PROXIMITY_ENTERING { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_KEY_STATUS_CHANGED_" data-uid="Android.Location.LocationManager.KEY_STATUS_CHANGED*"></a>
+
+  <h3 id="Android_Location_LocationManager_KEY_STATUS_CHANGED" data-uid="Android.Location.LocationManager.KEY_STATUS_CHANGED">
+  KEY_STATUS_CHANGED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#KEY_STATUS_CHANGED">https://developer.android.com/reference/android/location/LocationManager.html#KEY_STATUS_CHANGED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String KEY_STATUS_CHANGED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_MODE_CHANGED_ACTION_" data-uid="Android.Location.LocationManager.MODE_CHANGED_ACTION*"></a>
+
+  <h3 id="Android_Location_LocationManager_MODE_CHANGED_ACTION" data-uid="Android.Location.LocationManager.MODE_CHANGED_ACTION">
+  MODE_CHANGED_ACTION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L122"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#MODE_CHANGED_ACTION">https://developer.android.com/reference/android/location/LocationManager.html#MODE_CHANGED_ACTION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String MODE_CHANGED_ACTION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_NETWORK_PROVIDER_" data-uid="Android.Location.LocationManager.NETWORK_PROVIDER*"></a>
+
+  <h3 id="Android_Location_LocationManager_NETWORK_PROVIDER" data-uid="Android.Location.LocationManager.NETWORK_PROVIDER">
+  NETWORK_PROVIDER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L128"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#NETWORK_PROVIDER">https://developer.android.com/reference/android/location/LocationManager.html#NETWORK_PROVIDER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String NETWORK_PROVIDER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_PASSIVE_PROVIDER_" data-uid="Android.Location.LocationManager.PASSIVE_PROVIDER*"></a>
+
+  <h3 id="Android_Location_LocationManager_PASSIVE_PROVIDER" data-uid="Android.Location.LocationManager.PASSIVE_PROVIDER">
+  PASSIVE_PROVIDER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L134"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#PASSIVE_PROVIDER">https://developer.android.com/reference/android/location/LocationManager.html#PASSIVE_PROVIDER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String PASSIVE_PROVIDER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_PROVIDERS_CHANGED_ACTION_" data-uid="Android.Location.LocationManager.PROVIDERS_CHANGED_ACTION*"></a>
+
+  <h3 id="Android_Location_LocationManager_PROVIDERS_CHANGED_ACTION" data-uid="Android.Location.LocationManager.PROVIDERS_CHANGED_ACTION">
+  PROVIDERS_CHANGED_ACTION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L140"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#PROVIDERS_CHANGED_ACTION">https://developer.android.com/reference/android/location/LocationManager.html#PROVIDERS_CHANGED_ACTION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String PROVIDERS_CHANGED_ACTION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_Location_LocationManager_AddGpsStatusListener_" data-uid="Android.Location.LocationManager.AddGpsStatusListener*"></a>
+
+  <h3 id="Android_Location_LocationManager_AddGpsStatusListener_Android_Location_GpsStatus_Listener_" data-uid="Android.Location.LocationManager.AddGpsStatusListener(Android.Location.GpsStatus.Listener)">
+  AddGpsStatusListener(Listener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L202"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#addGpsStatusListener(android.location.GpsStatus.Listener)">https://developer.android.com/reference/android/location/LocationManager.html#addGpsStatusListener(android.location.GpsStatus.Listener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public bool AddGpsStatusListener(GpsStatus.Listener arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Location.GpsStatus.html">GpsStatus</a>.<a class="xref" href="Android.Location.GpsStatus.Listener.html">Listener</a></dt>
+    <dd><p><a class="xref" href="Android.Location.GpsStatus.Listener.html">GpsStatus.Listener</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_AddNmeaListener_" data-uid="Android.Location.LocationManager.AddNmeaListener*"></a>
+
+  <h3 id="Android_Location_LocationManager_AddNmeaListener_Android_Location_GpsStatus_NmeaListener_" data-uid="Android.Location.LocationManager.AddNmeaListener(Android.Location.GpsStatus.NmeaListener)">
+  AddNmeaListener(NmeaListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L212"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#addNmeaListener(android.location.GpsStatus.NmeaListener)">https://developer.android.com/reference/android/location/LocationManager.html#addNmeaListener(android.location.GpsStatus.NmeaListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public bool AddNmeaListener(GpsStatus.NmeaListener arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Location.GpsStatus.html">GpsStatus</a>.<a class="xref" href="Android.Location.GpsStatus.NmeaListener.html">NmeaListener</a></dt>
+    <dd><p><a class="xref" href="Android.Location.GpsStatus.NmeaListener.html">GpsStatus.NmeaListener</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_AddNmeaListener_" data-uid="Android.Location.LocationManager.AddNmeaListener*"></a>
+
+  <h3 id="Android_Location_LocationManager_AddNmeaListener_Android_Location_OnNmeaMessageListener_" data-uid="Android.Location.LocationManager.AddNmeaListener(Android.Location.OnNmeaMessageListener)">
+  AddNmeaListener(OnNmeaMessageListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L232"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#addNmeaListener(android.location.OnNmeaMessageListener)">https://developer.android.com/reference/android/location/LocationManager.html#addNmeaListener(android.location.OnNmeaMessageListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public bool AddNmeaListener(OnNmeaMessageListener arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Location.OnNmeaMessageListener.html">OnNmeaMessageListener</a></dt>
+    <dd><p><a class="xref" href="Android.Location.OnNmeaMessageListener.html">OnNmeaMessageListener</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_AddNmeaListener_" data-uid="Android.Location.LocationManager.AddNmeaListener*"></a>
+
+  <h3 id="Android_Location_LocationManager_AddNmeaListener_Android_Location_OnNmeaMessageListener_Android_Os_Handler_" data-uid="Android.Location.LocationManager.AddNmeaListener(Android.Location.OnNmeaMessageListener,Android.Os.Handler)">
+  AddNmeaListener(OnNmeaMessageListener, Handler)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L223"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#addNmeaListener(android.location.OnNmeaMessageListener,android.os.Handler)">https://developer.android.com/reference/android/location/LocationManager.html#addNmeaListener(android.location.OnNmeaMessageListener,android.os.Handler)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AddNmeaListener(OnNmeaMessageListener arg0, Handler arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Location.OnNmeaMessageListener.html">OnNmeaMessageListener</a></dt>
+    <dd><p><a class="xref" href="Android.Location.OnNmeaMessageListener.html">OnNmeaMessageListener</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Os.Handler.html">Handler</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Handler.html">Handler</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_AddNmeaListener_" data-uid="Android.Location.LocationManager.AddNmeaListener*"></a>
+
+  <h3 id="Android_Location_LocationManager_AddNmeaListener_Java_Util_Concurrent_Executor_Android_Location_OnNmeaMessageListener_" data-uid="Android.Location.LocationManager.AddNmeaListener(Java.Util.Concurrent.Executor,Android.Location.OnNmeaMessageListener)">
+  AddNmeaListener(Executor, OnNmeaMessageListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L243"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#addNmeaListener(java.util.concurrent.Executor,android.location.OnNmeaMessageListener)">https://developer.android.com/reference/android/location/LocationManager.html#addNmeaListener(java.util.concurrent.Executor,android.location.OnNmeaMessageListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AddNmeaListener(Executor arg0, OnNmeaMessageListener arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Location.OnNmeaMessageListener.html">OnNmeaMessageListener</a></dt>
+    <dd><p><a class="xref" href="Android.Location.OnNmeaMessageListener.html">OnNmeaMessageListener</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_AddProximityAlert_" data-uid="Android.Location.LocationManager.AddProximityAlert*"></a>
+
+  <h3 id="Android_Location_LocationManager_AddProximityAlert_System_Double_System_Double_System_Single_System_Int64_Android_App_PendingIntent_" data-uid="Android.Location.LocationManager.AddProximityAlert(System.Double,System.Double,System.Single,System.Int64,Android.App.PendingIntent)">
+  AddProximityAlert(double, double, float, long, PendingIntent)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L466"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#addProximityAlert(double,double,float,long,android.app.PendingIntent)">https://developer.android.com/reference/android/location/LocationManager.html#addProximityAlert(double,double,float,long,android.app.PendingIntent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddProximityAlert(double arg0, double arg1, float arg2, long arg3, PendingIntent arg4)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+    <dt><code>arg4</code> <a class="xref" href="Android.App.PendingIntent.html">PendingIntent</a></dt>
+    <dd><p><a class="xref" href="Android.App.PendingIntent.html">PendingIntent</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_AddTestProvider_" data-uid="Android.Location.LocationManager.AddTestProvider*"></a>
+
+  <h3 id="Android_Location_LocationManager_AddTestProvider_Java_Lang_String_Android_Location_Provider_ProviderProperties_" data-uid="Android.Location.LocationManager.AddTestProvider(Java.Lang.String,Android.Location.Provider.ProviderProperties)">
+  AddTestProvider(String, ProviderProperties)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L485"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#addTestProvider(java.lang.String,android.location.provider.ProviderProperties)">https://developer.android.com/reference/android/location/LocationManager.html#addTestProvider(java.lang.String,android.location.provider.ProviderProperties)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddTestProvider(String arg0, ProviderProperties arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Location.Provider.ProviderProperties.html">ProviderProperties</a></dt>
+    <dd><p><a class="xref" href="Android.Location.Provider.ProviderProperties.html">ProviderProperties</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_AddTestProvider_" data-uid="Android.Location.LocationManager.AddTestProvider*"></a>
+
+  <h3 id="Android_Location_LocationManager_AddTestProvider_Java_Lang_String_Android_Location_Provider_ProviderProperties_Java_Util_Set_Java_Lang_String__" data-uid="Android.Location.LocationManager.AddTestProvider(Java.Lang.String,Android.Location.Provider.ProviderProperties,Java.Util.Set{Java.Lang.String})">
+  AddTestProvider(String, ProviderProperties, Set&lt;String&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L476"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#addTestProvider(java.lang.String,android.location.provider.ProviderProperties,java.util.Set)">https://developer.android.com/reference/android/location/LocationManager.html#addTestProvider(java.lang.String,android.location.provider.ProviderProperties,java.util.Set)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddTestProvider(String arg0, ProviderProperties arg1, Set&lt;String&gt; arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Location.Provider.ProviderProperties.html">ProviderProperties</a></dt>
+    <dd><p><a class="xref" href="Android.Location.Provider.ProviderProperties.html">ProviderProperties</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Util.Set-1.html">Set</a>&lt;<a class="xref" href="Java.Lang.String.html">String</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Set.html">Set</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_AddTestProvider_" data-uid="Android.Location.LocationManager.AddTestProvider*"></a>
+
+  <h3 id="Android_Location_LocationManager_AddTestProvider_Java_Lang_String_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Int32_System_Int32_" data-uid="Android.Location.LocationManager.AddTestProvider(Java.Lang.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Int32,System.Int32)">
+  AddTestProvider(String, bool, bool, bool, bool, bool, bool, bool, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L502"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#addTestProvider(java.lang.String,boolean,boolean,boolean,boolean,boolean,boolean,boolean,int,int)">https://developer.android.com/reference/android/location/LocationManager.html#addTestProvider(java.lang.String,boolean,boolean,boolean,boolean,boolean,boolean,boolean,int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddTestProvider(String arg0, bool arg1, bool arg2, bool arg3, bool arg4, bool arg5, bool arg6, bool arg7, int arg8, int arg9)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+    <dt><code>arg4</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+    <dt><code>arg5</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+    <dt><code>arg6</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+    <dt><code>arg7</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+    <dt><code>arg8</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg9</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_ClearTestProviderEnabled_" data-uid="Android.Location.LocationManager.ClearTestProviderEnabled*"></a>
+
+  <h3 id="Android_Location_LocationManager_ClearTestProviderEnabled_Java_Lang_String_" data-uid="Android.Location.LocationManager.ClearTestProviderEnabled(Java.Lang.String)">
+  ClearTestProviderEnabled(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L510"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#clearTestProviderEnabled(java.lang.String)">https://developer.android.com/reference/android/location/LocationManager.html#clearTestProviderEnabled(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void ClearTestProviderEnabled(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_ClearTestProviderLocation_" data-uid="Android.Location.LocationManager.ClearTestProviderLocation*"></a>
+
+  <h3 id="Android_Location_LocationManager_ClearTestProviderLocation_Java_Lang_String_" data-uid="Android.Location.LocationManager.ClearTestProviderLocation(Java.Lang.String)">
+  ClearTestProviderLocation(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L519"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#clearTestProviderLocation(java.lang.String)">https://developer.android.com/reference/android/location/LocationManager.html#clearTestProviderLocation(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void ClearTestProviderLocation(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_ClearTestProviderStatus_" data-uid="Android.Location.LocationManager.ClearTestProviderStatus*"></a>
+
+  <h3 id="Android_Location_LocationManager_ClearTestProviderStatus_Java_Lang_String_" data-uid="Android.Location.LocationManager.ClearTestProviderStatus(Java.Lang.String)">
+  ClearTestProviderStatus(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L528"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#clearTestProviderStatus(java.lang.String)">https://developer.android.com/reference/android/location/LocationManager.html#clearTestProviderStatus(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void ClearTestProviderStatus(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_GetAllProviders_" data-uid="Android.Location.LocationManager.GetAllProviders*"></a>
+
+  <h3 id="Android_Location_LocationManager_GetAllProviders" data-uid="Android.Location.LocationManager.GetAllProviders">
+  GetAllProviders()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L434"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#getAllProviders()">https://developer.android.com/reference/android/location/LocationManager.html#getAllProviders()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;String&gt; GetAllProviders()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Java.Lang.String.html">String</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.List.html">List</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_GetBestProvider_" data-uid="Android.Location.LocationManager.GetBestProvider*"></a>
+
+  <h3 id="Android_Location_LocationManager_GetBestProvider_Android_Location_Criteria_System_Boolean_" data-uid="Android.Location.LocationManager.GetBestProvider(Android.Location.Criteria,System.Boolean)">
+  GetBestProvider(Criteria, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L409"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#getBestProvider(android.location.Criteria,boolean)">https://developer.android.com/reference/android/location/LocationManager.html#getBestProvider(android.location.Criteria,boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public String GetBestProvider(Criteria arg0, bool arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Location.Criteria.html">Criteria</a></dt>
+    <dd><p><a class="xref" href="Android.Location.Criteria.html">Criteria</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_GetCurrentLocation_" data-uid="Android.Location.LocationManager.GetCurrentLocation*"></a>
+
+  <h3 id="Android_Location_LocationManager_GetCurrentLocation_Java_Lang_String_Android_Location_LocationRequest_Android_Os_CancellationSignal_Java_Util_Concurrent_Executor_Java_Util_Function_Consumer_Android_Location_Location__" data-uid="Android.Location.LocationManager.GetCurrentLocation(Java.Lang.String,Android.Location.LocationRequest,Android.Os.CancellationSignal,Java.Util.Concurrent.Executor,Java.Util.Function.Consumer{Android.Location.Location})">
+  GetCurrentLocation(String, LocationRequest, CancellationSignal, Executor, Consumer&lt;Location&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L541"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#getCurrentLocation(java.lang.String,android.location.LocationRequest,android.os.CancellationSignal,java.util.concurrent.Executor,java.util.function.Consumer)">https://developer.android.com/reference/android/location/LocationManager.html#getCurrentLocation(java.lang.String,android.location.LocationRequest,android.os.CancellationSignal,java.util.concurrent.Executor,java.util.function.Consumer)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetCurrentLocation(String arg0, LocationRequest arg1, CancellationSignal arg2, Executor arg3, Consumer&lt;Location&gt; arg4)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Location.LocationRequest.html">LocationRequest</a></dt>
+    <dd><p><a class="xref" href="Android.Location.LocationRequest.html">LocationRequest</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Os.CancellationSignal.html">CancellationSignal</a></dt>
+    <dd><p><a class="xref" href="Android.Os.CancellationSignal.html">CancellationSignal</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></p>
+</dd>
+    <dt><code>arg4</code> <a class="xref" href="Java.Util.Function.Consumer-1.html">Consumer</a>&lt;<a class="xref" href="Android.Location.Location.html">Location</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Function.Consumer.html">Consumer</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_GetCurrentLocation_" data-uid="Android.Location.LocationManager.GetCurrentLocation*"></a>
+
+  <h3 id="Android_Location_LocationManager_GetCurrentLocation_Java_Lang_String_Android_Os_CancellationSignal_Java_Util_Concurrent_Executor_Java_Util_Function_Consumer_Android_Location_Location__" data-uid="Android.Location.LocationManager.GetCurrentLocation(Java.Lang.String,Android.Os.CancellationSignal,Java.Util.Concurrent.Executor,Java.Util.Function.Consumer{Android.Location.Location})">
+  GetCurrentLocation(String, CancellationSignal, Executor, Consumer&lt;Location&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L552"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#getCurrentLocation(java.lang.String,android.os.CancellationSignal,java.util.concurrent.Executor,java.util.function.Consumer)">https://developer.android.com/reference/android/location/LocationManager.html#getCurrentLocation(java.lang.String,android.os.CancellationSignal,java.util.concurrent.Executor,java.util.function.Consumer)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetCurrentLocation(String arg0, CancellationSignal arg1, Executor arg2, Consumer&lt;Location&gt; arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Os.CancellationSignal.html">CancellationSignal</a></dt>
+    <dd><p><a class="xref" href="Android.Os.CancellationSignal.html">CancellationSignal</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Java.Util.Function.Consumer-1.html">Consumer</a>&lt;<a class="xref" href="Android.Location.Location.html">Location</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Function.Consumer.html">Consumer</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_GetGnssAntennaInfos_" data-uid="Android.Location.LocationManager.GetGnssAntennaInfos*"></a>
+
+  <h3 id="Android_Location_LocationManager_GetGnssAntennaInfos" data-uid="Android.Location.LocationManager.GetGnssAntennaInfos">
+  GetGnssAntennaInfos()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L426"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#getGnssAntennaInfos()">https://developer.android.com/reference/android/location/LocationManager.html#getGnssAntennaInfos()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;GnssAntennaInfo&gt; GetGnssAntennaInfos()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Android.Location.GnssAntennaInfo.html">GnssAntennaInfo</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.List.html">List</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_GetGnssCapabilities_" data-uid="Android.Location.LocationManager.GetGnssCapabilities*"></a>
+
+  <h3 id="Android_Location_LocationManager_GetGnssCapabilities" data-uid="Android.Location.LocationManager.GetGnssCapabilities">
+  GetGnssCapabilities()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L155"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#getGnssCapabilities()">https://developer.android.com/reference/android/location/LocationManager.html#getGnssCapabilities()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GnssCapabilities GetGnssCapabilities()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Location.GnssCapabilities.html">GnssCapabilities</a></dt>
+    <dd><p><a class="xref" href="Android.Location.GnssCapabilities.html">GnssCapabilities</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_GetGnssHardwareModelName_" data-uid="Android.Location.LocationManager.GetGnssHardwareModelName*"></a>
+
+  <h3 id="Android_Location_LocationManager_GetGnssHardwareModelName" data-uid="Android.Location.LocationManager.GetGnssHardwareModelName">
+  GetGnssHardwareModelName()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L418"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#getGnssHardwareModelName()">https://developer.android.com/reference/android/location/LocationManager.html#getGnssHardwareModelName()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetGnssHardwareModelName()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_GetGnssYearOfHardware_" data-uid="Android.Location.LocationManager.GetGnssYearOfHardware*"></a>
+
+  <h3 id="Android_Location_LocationManager_GetGnssYearOfHardware" data-uid="Android.Location.LocationManager.GetGnssYearOfHardware">
+  GetGnssYearOfHardware()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L399"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#getGnssYearOfHardware()">https://developer.android.com/reference/android/location/LocationManager.html#getGnssYearOfHardware()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetGnssYearOfHardware()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_GetGpsStatus_" data-uid="Android.Location.LocationManager.GetGpsStatus*"></a>
+
+  <h3 id="Android_Location_LocationManager_GetGpsStatus_Android_Location_GpsStatus_" data-uid="Android.Location.LocationManager.GetGpsStatus(Android.Location.GpsStatus)">
+  GetGpsStatus(GpsStatus)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L164"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#getGpsStatus(android.location.GpsStatus)">https://developer.android.com/reference/android/location/LocationManager.html#getGpsStatus(android.location.GpsStatus)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public GpsStatus GetGpsStatus(GpsStatus arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Location.GpsStatus.html">GpsStatus</a></dt>
+    <dd><p><a class="xref" href="Android.Location.GpsStatus.html">GpsStatus</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Location.GpsStatus.html">GpsStatus</a></dt>
+    <dd><p><a class="xref" href="Android.Location.GpsStatus.html">GpsStatus</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_GetLastKnownLocation_" data-uid="Android.Location.LocationManager.GetLastKnownLocation*"></a>
+
+  <h3 id="Android_Location_LocationManager_GetLastKnownLocation_Java_Lang_String_" data-uid="Android.Location.LocationManager.GetLastKnownLocation(Java.Lang.String)">
+  GetLastKnownLocation(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L174"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#getLastKnownLocation(java.lang.String)">https://developer.android.com/reference/android/location/LocationManager.html#getLastKnownLocation(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Location GetLastKnownLocation(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Location.Location.html">Location</a></dt>
+    <dd><p><a class="xref" href="Android.Location.Location.html">Location</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_GetProvider_" data-uid="Android.Location.LocationManager.GetProvider*"></a>
+
+  <h3 id="Android_Location_LocationManager_GetProvider_Java_Lang_String_" data-uid="Android.Location.LocationManager.GetProvider(Java.Lang.String)">
+  GetProvider(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L183"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#getProvider(java.lang.String)">https://developer.android.com/reference/android/location/LocationManager.html#getProvider(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public LocationProvider GetProvider(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Location.LocationProvider.html">LocationProvider</a></dt>
+    <dd><p><a class="xref" href="Android.Location.LocationProvider.html">LocationProvider</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_GetProviderProperties_" data-uid="Android.Location.LocationManager.GetProviderProperties*"></a>
+
+  <h3 id="Android_Location_LocationManager_GetProviderProperties_Java_Lang_String_" data-uid="Android.Location.LocationManager.GetProviderProperties(Java.Lang.String)">
+  GetProviderProperties(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L193"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#getProviderProperties(java.lang.String)">https://developer.android.com/reference/android/location/LocationManager.html#getProviderProperties(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ProviderProperties GetProviderProperties(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Location.Provider.ProviderProperties.html">ProviderProperties</a></dt>
+    <dd><p><a class="xref" href="Android.Location.Provider.ProviderProperties.html">ProviderProperties</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_GetProviders_" data-uid="Android.Location.LocationManager.GetProviders*"></a>
+
+  <h3 id="Android_Location_LocationManager_GetProviders_Android_Location_Criteria_System_Boolean_" data-uid="Android.Location.LocationManager.GetProviders(Android.Location.Criteria,System.Boolean)">
+  GetProviders(Criteria, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L444"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#getProviders(android.location.Criteria,boolean)">https://developer.android.com/reference/android/location/LocationManager.html#getProviders(android.location.Criteria,boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public List&lt;String&gt; GetProviders(Criteria arg0, bool arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Location.Criteria.html">Criteria</a></dt>
+    <dd><p><a class="xref" href="Android.Location.Criteria.html">Criteria</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Java.Lang.String.html">String</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.List.html">List</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_GetProviders_" data-uid="Android.Location.LocationManager.GetProviders*"></a>
+
+  <h3 id="Android_Location_LocationManager_GetProviders_System_Boolean_" data-uid="Android.Location.LocationManager.GetProviders(System.Boolean)">
+  GetProviders(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L454"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#getProviders(boolean)">https://developer.android.com/reference/android/location/LocationManager.html#getProviders(boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;String&gt; GetProviders(bool arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Java.Lang.String.html">String</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.List.html">List</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_HasProvider_" data-uid="Android.Location.LocationManager.HasProvider*"></a>
+
+  <h3 id="Android_Location_LocationManager_HasProvider_Java_Lang_String_" data-uid="Android.Location.LocationManager.HasProvider(Java.Lang.String)">
+  HasProvider(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L252"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#hasProvider(java.lang.String)">https://developer.android.com/reference/android/location/LocationManager.html#hasProvider(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasProvider(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_IsLocationEnabled_" data-uid="Android.Location.LocationManager.IsLocationEnabled*"></a>
+
+  <h3 id="Android_Location_LocationManager_IsLocationEnabled" data-uid="Android.Location.LocationManager.IsLocationEnabled">
+  IsLocationEnabled()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L260"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#isLocationEnabled()">https://developer.android.com/reference/android/location/LocationManager.html#isLocationEnabled()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsLocationEnabled()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_IsProviderEnabled_" data-uid="Android.Location.LocationManager.IsProviderEnabled*"></a>
+
+  <h3 id="Android_Location_LocationManager_IsProviderEnabled_Java_Lang_String_" data-uid="Android.Location.LocationManager.IsProviderEnabled(Java.Lang.String)">
+  IsProviderEnabled(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L269"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#isProviderEnabled(java.lang.String)">https://developer.android.com/reference/android/location/LocationManager.html#isProviderEnabled(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsProviderEnabled(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_RegisterAntennaInfoListener_" data-uid="Android.Location.LocationManager.RegisterAntennaInfoListener*"></a>
+
+  <h3 id="Android_Location_LocationManager_RegisterAntennaInfoListener_Java_Util_Concurrent_Executor_Android_Location_GnssAntennaInfo_Listener_" data-uid="Android.Location.LocationManager.RegisterAntennaInfoListener(Java.Util.Concurrent.Executor,Android.Location.GnssAntennaInfo.Listener)">
+  RegisterAntennaInfoListener(Executor, Listener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L279"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#registerAntennaInfoListener(java.util.concurrent.Executor,android.location.GnssAntennaInfo.Listener)">https://developer.android.com/reference/android/location/LocationManager.html#registerAntennaInfoListener(java.util.concurrent.Executor,android.location.GnssAntennaInfo.Listener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RegisterAntennaInfoListener(Executor arg0, GnssAntennaInfo.Listener arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Location.GnssAntennaInfo.html">GnssAntennaInfo</a>.<a class="xref" href="Android.Location.GnssAntennaInfo.Listener.html">Listener</a></dt>
+    <dd><p><a class="xref" href="Android.Location.GnssAntennaInfo.Listener.html">GnssAntennaInfo.Listener</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_RegisterGnssMeasurementsCallback_" data-uid="Android.Location.LocationManager.RegisterGnssMeasurementsCallback*"></a>
+
+  <h3 id="Android_Location_LocationManager_RegisterGnssMeasurementsCallback_Android_Location_GnssMeasurementRequest_Java_Util_Concurrent_Executor_Android_Location_GnssMeasurementsEvent_Callback_" data-uid="Android.Location.LocationManager.RegisterGnssMeasurementsCallback(Android.Location.GnssMeasurementRequest,Java.Util.Concurrent.Executor,Android.Location.GnssMeasurementsEvent.Callback)">
+  RegisterGnssMeasurementsCallback(GnssMeasurementRequest, Executor, Callback)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L290"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#registerGnssMeasurementsCallback(android.location.GnssMeasurementRequest,java.util.concurrent.Executor,android.location.GnssMeasurementsEvent.Callback)">https://developer.android.com/reference/android/location/LocationManager.html#registerGnssMeasurementsCallback(android.location.GnssMeasurementRequest,java.util.concurrent.Executor,android.location.GnssMeasurementsEvent.Callback)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RegisterGnssMeasurementsCallback(GnssMeasurementRequest arg0, Executor arg1, GnssMeasurementsEvent.Callback arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Location.GnssMeasurementRequest.html">GnssMeasurementRequest</a></dt>
+    <dd><p><a class="xref" href="Android.Location.GnssMeasurementRequest.html">GnssMeasurementRequest</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Location.GnssMeasurementsEvent.html">GnssMeasurementsEvent</a>.<a class="xref" href="Android.Location.GnssMeasurementsEvent.Callback.html">Callback</a></dt>
+    <dd><p><a class="xref" href="Android.Location.GnssMeasurementsEvent.Callback.html">GnssMeasurementsEvent.Callback</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_RegisterGnssMeasurementsCallback_" data-uid="Android.Location.LocationManager.RegisterGnssMeasurementsCallback*"></a>
+
+  <h3 id="Android_Location_LocationManager_RegisterGnssMeasurementsCallback_Android_Location_GnssMeasurementsEvent_Callback_" data-uid="Android.Location.LocationManager.RegisterGnssMeasurementsCallback(Android.Location.GnssMeasurementsEvent.Callback)">
+  RegisterGnssMeasurementsCallback(Callback)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L309"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#registerGnssMeasurementsCallback(android.location.GnssMeasurementsEvent.Callback)">https://developer.android.com/reference/android/location/LocationManager.html#registerGnssMeasurementsCallback(android.location.GnssMeasurementsEvent.Callback)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public bool RegisterGnssMeasurementsCallback(GnssMeasurementsEvent.Callback arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Location.GnssMeasurementsEvent.html">GnssMeasurementsEvent</a>.<a class="xref" href="Android.Location.GnssMeasurementsEvent.Callback.html">Callback</a></dt>
+    <dd><p><a class="xref" href="Android.Location.GnssMeasurementsEvent.Callback.html">GnssMeasurementsEvent.Callback</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_RegisterGnssMeasurementsCallback_" data-uid="Android.Location.LocationManager.RegisterGnssMeasurementsCallback*"></a>
+
+  <h3 id="Android_Location_LocationManager_RegisterGnssMeasurementsCallback_Android_Location_GnssMeasurementsEvent_Callback_Android_Os_Handler_" data-uid="Android.Location.LocationManager.RegisterGnssMeasurementsCallback(Android.Location.GnssMeasurementsEvent.Callback,Android.Os.Handler)">
+  RegisterGnssMeasurementsCallback(Callback, Handler)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L300"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#registerGnssMeasurementsCallback(android.location.GnssMeasurementsEvent.Callback,android.os.Handler)">https://developer.android.com/reference/android/location/LocationManager.html#registerGnssMeasurementsCallback(android.location.GnssMeasurementsEvent.Callback,android.os.Handler)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RegisterGnssMeasurementsCallback(GnssMeasurementsEvent.Callback arg0, Handler arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Location.GnssMeasurementsEvent.html">GnssMeasurementsEvent</a>.<a class="xref" href="Android.Location.GnssMeasurementsEvent.Callback.html">Callback</a></dt>
+    <dd><p><a class="xref" href="Android.Location.GnssMeasurementsEvent.Callback.html">GnssMeasurementsEvent.Callback</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Os.Handler.html">Handler</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Handler.html">Handler</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_RegisterGnssMeasurementsCallback_" data-uid="Android.Location.LocationManager.RegisterGnssMeasurementsCallback*"></a>
+
+  <h3 id="Android_Location_LocationManager_RegisterGnssMeasurementsCallback_Java_Util_Concurrent_Executor_Android_Location_GnssMeasurementsEvent_Callback_" data-uid="Android.Location.LocationManager.RegisterGnssMeasurementsCallback(Java.Util.Concurrent.Executor,Android.Location.GnssMeasurementsEvent.Callback)">
+  RegisterGnssMeasurementsCallback(Executor, Callback)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L320"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#registerGnssMeasurementsCallback(java.util.concurrent.Executor,android.location.GnssMeasurementsEvent.Callback)">https://developer.android.com/reference/android/location/LocationManager.html#registerGnssMeasurementsCallback(java.util.concurrent.Executor,android.location.GnssMeasurementsEvent.Callback)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RegisterGnssMeasurementsCallback(Executor arg0, GnssMeasurementsEvent.Callback arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Location.GnssMeasurementsEvent.html">GnssMeasurementsEvent</a>.<a class="xref" href="Android.Location.GnssMeasurementsEvent.Callback.html">Callback</a></dt>
+    <dd><p><a class="xref" href="Android.Location.GnssMeasurementsEvent.Callback.html">GnssMeasurementsEvent.Callback</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_RegisterGnssNavigationMessageCallback_" data-uid="Android.Location.LocationManager.RegisterGnssNavigationMessageCallback*"></a>
+
+  <h3 id="Android_Location_LocationManager_RegisterGnssNavigationMessageCallback_Android_Location_GnssNavigationMessage_Callback_" data-uid="Android.Location.LocationManager.RegisterGnssNavigationMessageCallback(Android.Location.GnssNavigationMessage.Callback)">
+  RegisterGnssNavigationMessageCallback(Callback)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L339"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#registerGnssNavigationMessageCallback(android.location.GnssNavigationMessage.Callback)">https://developer.android.com/reference/android/location/LocationManager.html#registerGnssNavigationMessageCallback(android.location.GnssNavigationMessage.Callback)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public bool RegisterGnssNavigationMessageCallback(GnssNavigationMessage.Callback arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Location.GnssNavigationMessage.html">GnssNavigationMessage</a>.<a class="xref" href="Android.Location.GnssNavigationMessage.Callback.html">Callback</a></dt>
+    <dd><p><a class="xref" href="Android.Location.GnssNavigationMessage.Callback.html">GnssNavigationMessage.Callback</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_RegisterGnssNavigationMessageCallback_" data-uid="Android.Location.LocationManager.RegisterGnssNavigationMessageCallback*"></a>
+
+  <h3 id="Android_Location_LocationManager_RegisterGnssNavigationMessageCallback_Android_Location_GnssNavigationMessage_Callback_Android_Os_Handler_" data-uid="Android.Location.LocationManager.RegisterGnssNavigationMessageCallback(Android.Location.GnssNavigationMessage.Callback,Android.Os.Handler)">
+  RegisterGnssNavigationMessageCallback(Callback, Handler)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L330"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#registerGnssNavigationMessageCallback(android.location.GnssNavigationMessage.Callback,android.os.Handler)">https://developer.android.com/reference/android/location/LocationManager.html#registerGnssNavigationMessageCallback(android.location.GnssNavigationMessage.Callback,android.os.Handler)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RegisterGnssNavigationMessageCallback(GnssNavigationMessage.Callback arg0, Handler arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Location.GnssNavigationMessage.html">GnssNavigationMessage</a>.<a class="xref" href="Android.Location.GnssNavigationMessage.Callback.html">Callback</a></dt>
+    <dd><p><a class="xref" href="Android.Location.GnssNavigationMessage.Callback.html">GnssNavigationMessage.Callback</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Os.Handler.html">Handler</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Handler.html">Handler</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_RegisterGnssNavigationMessageCallback_" data-uid="Android.Location.LocationManager.RegisterGnssNavigationMessageCallback*"></a>
+
+  <h3 id="Android_Location_LocationManager_RegisterGnssNavigationMessageCallback_Java_Util_Concurrent_Executor_Android_Location_GnssNavigationMessage_Callback_" data-uid="Android.Location.LocationManager.RegisterGnssNavigationMessageCallback(Java.Util.Concurrent.Executor,Android.Location.GnssNavigationMessage.Callback)">
+  RegisterGnssNavigationMessageCallback(Executor, Callback)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L350"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#registerGnssNavigationMessageCallback(java.util.concurrent.Executor,android.location.GnssNavigationMessage.Callback)">https://developer.android.com/reference/android/location/LocationManager.html#registerGnssNavigationMessageCallback(java.util.concurrent.Executor,android.location.GnssNavigationMessage.Callback)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RegisterGnssNavigationMessageCallback(Executor arg0, GnssNavigationMessage.Callback arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Location.GnssNavigationMessage.html">GnssNavigationMessage</a>.<a class="xref" href="Android.Location.GnssNavigationMessage.Callback.html">Callback</a></dt>
+    <dd><p><a class="xref" href="Android.Location.GnssNavigationMessage.Callback.html">GnssNavigationMessage.Callback</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_RegisterGnssStatusCallback_" data-uid="Android.Location.LocationManager.RegisterGnssStatusCallback*"></a>
+
+  <h3 id="Android_Location_LocationManager_RegisterGnssStatusCallback_Android_Location_GnssStatus_Callback_" data-uid="Android.Location.LocationManager.RegisterGnssStatusCallback(Android.Location.GnssStatus.Callback)">
+  RegisterGnssStatusCallback(Callback)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L369"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#registerGnssStatusCallback(android.location.GnssStatus.Callback)">https://developer.android.com/reference/android/location/LocationManager.html#registerGnssStatusCallback(android.location.GnssStatus.Callback)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public bool RegisterGnssStatusCallback(GnssStatus.Callback arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Location.GnssStatus.html">GnssStatus</a>.<a class="xref" href="Android.Location.GnssStatus.Callback.html">Callback</a></dt>
+    <dd><p><a class="xref" href="Android.Location.GnssStatus.Callback.html">GnssStatus.Callback</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_RegisterGnssStatusCallback_" data-uid="Android.Location.LocationManager.RegisterGnssStatusCallback*"></a>
+
+  <h3 id="Android_Location_LocationManager_RegisterGnssStatusCallback_Android_Location_GnssStatus_Callback_Android_Os_Handler_" data-uid="Android.Location.LocationManager.RegisterGnssStatusCallback(Android.Location.GnssStatus.Callback,Android.Os.Handler)">
+  RegisterGnssStatusCallback(Callback, Handler)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L360"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#registerGnssStatusCallback(android.location.GnssStatus.Callback,android.os.Handler)">https://developer.android.com/reference/android/location/LocationManager.html#registerGnssStatusCallback(android.location.GnssStatus.Callback,android.os.Handler)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RegisterGnssStatusCallback(GnssStatus.Callback arg0, Handler arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Location.GnssStatus.html">GnssStatus</a>.<a class="xref" href="Android.Location.GnssStatus.Callback.html">Callback</a></dt>
+    <dd><p><a class="xref" href="Android.Location.GnssStatus.Callback.html">GnssStatus.Callback</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Os.Handler.html">Handler</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Handler.html">Handler</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_RegisterGnssStatusCallback_" data-uid="Android.Location.LocationManager.RegisterGnssStatusCallback*"></a>
+
+  <h3 id="Android_Location_LocationManager_RegisterGnssStatusCallback_Java_Util_Concurrent_Executor_Android_Location_GnssStatus_Callback_" data-uid="Android.Location.LocationManager.RegisterGnssStatusCallback(Java.Util.Concurrent.Executor,Android.Location.GnssStatus.Callback)">
+  RegisterGnssStatusCallback(Executor, Callback)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L380"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#registerGnssStatusCallback(java.util.concurrent.Executor,android.location.GnssStatus.Callback)">https://developer.android.com/reference/android/location/LocationManager.html#registerGnssStatusCallback(java.util.concurrent.Executor,android.location.GnssStatus.Callback)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RegisterGnssStatusCallback(Executor arg0, GnssStatus.Callback arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Location.GnssStatus.html">GnssStatus</a>.<a class="xref" href="Android.Location.GnssStatus.Callback.html">Callback</a></dt>
+    <dd><p><a class="xref" href="Android.Location.GnssStatus.Callback.html">GnssStatus.Callback</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_RemoveGpsStatusListener_" data-uid="Android.Location.LocationManager.RemoveGpsStatusListener*"></a>
+
+  <h3 id="Android_Location_LocationManager_RemoveGpsStatusListener_Android_Location_GpsStatus_Listener_" data-uid="Android.Location.LocationManager.RemoveGpsStatusListener(Android.Location.GpsStatus.Listener)">
+  RemoveGpsStatusListener(Listener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L560"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#removeGpsStatusListener(android.location.GpsStatus.Listener)">https://developer.android.com/reference/android/location/LocationManager.html#removeGpsStatusListener(android.location.GpsStatus.Listener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void RemoveGpsStatusListener(GpsStatus.Listener arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Location.GpsStatus.html">GpsStatus</a>.<a class="xref" href="Android.Location.GpsStatus.Listener.html">Listener</a></dt>
+    <dd><p><a class="xref" href="Android.Location.GpsStatus.Listener.html">GpsStatus.Listener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_RemoveNmeaListener_" data-uid="Android.Location.LocationManager.RemoveNmeaListener*"></a>
+
+  <h3 id="Android_Location_LocationManager_RemoveNmeaListener_Android_Location_GpsStatus_NmeaListener_" data-uid="Android.Location.LocationManager.RemoveNmeaListener(Android.Location.GpsStatus.NmeaListener)">
+  RemoveNmeaListener(NmeaListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L569"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#removeNmeaListener(android.location.GpsStatus.NmeaListener)">https://developer.android.com/reference/android/location/LocationManager.html#removeNmeaListener(android.location.GpsStatus.NmeaListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void RemoveNmeaListener(GpsStatus.NmeaListener arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Location.GpsStatus.html">GpsStatus</a>.<a class="xref" href="Android.Location.GpsStatus.NmeaListener.html">NmeaListener</a></dt>
+    <dd><p><a class="xref" href="Android.Location.GpsStatus.NmeaListener.html">GpsStatus.NmeaListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_RemoveNmeaListener_" data-uid="Android.Location.LocationManager.RemoveNmeaListener*"></a>
+
+  <h3 id="Android_Location_LocationManager_RemoveNmeaListener_Android_Location_OnNmeaMessageListener_" data-uid="Android.Location.LocationManager.RemoveNmeaListener(Android.Location.OnNmeaMessageListener)">
+  RemoveNmeaListener(OnNmeaMessageListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L578"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#removeNmeaListener(android.location.OnNmeaMessageListener)">https://developer.android.com/reference/android/location/LocationManager.html#removeNmeaListener(android.location.OnNmeaMessageListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveNmeaListener(OnNmeaMessageListener arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Location.OnNmeaMessageListener.html">OnNmeaMessageListener</a></dt>
+    <dd><p><a class="xref" href="Android.Location.OnNmeaMessageListener.html">OnNmeaMessageListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_RemoveProximityAlert_" data-uid="Android.Location.LocationManager.RemoveProximityAlert*"></a>
+
+  <h3 id="Android_Location_LocationManager_RemoveProximityAlert_Android_App_PendingIntent_" data-uid="Android.Location.LocationManager.RemoveProximityAlert(Android.App.PendingIntent)">
+  RemoveProximityAlert(PendingIntent)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L586"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#removeProximityAlert(android.app.PendingIntent)">https://developer.android.com/reference/android/location/LocationManager.html#removeProximityAlert(android.app.PendingIntent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveProximityAlert(PendingIntent arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.App.PendingIntent.html">PendingIntent</a></dt>
+    <dd><p><a class="xref" href="Android.App.PendingIntent.html">PendingIntent</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_RemoveTestProvider_" data-uid="Android.Location.LocationManager.RemoveTestProvider*"></a>
+
+  <h3 id="Android_Location_LocationManager_RemoveTestProvider_Java_Lang_String_" data-uid="Android.Location.LocationManager.RemoveTestProvider(Java.Lang.String)">
+  RemoveTestProvider(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L594"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#removeTestProvider(java.lang.String)">https://developer.android.com/reference/android/location/LocationManager.html#removeTestProvider(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveTestProvider(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_RemoveUpdates_" data-uid="Android.Location.LocationManager.RemoveUpdates*"></a>
+
+  <h3 id="Android_Location_LocationManager_RemoveUpdates_Android_App_PendingIntent_" data-uid="Android.Location.LocationManager.RemoveUpdates(Android.App.PendingIntent)">
+  RemoveUpdates(PendingIntent)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L602"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#removeUpdates(android.app.PendingIntent)">https://developer.android.com/reference/android/location/LocationManager.html#removeUpdates(android.app.PendingIntent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveUpdates(PendingIntent arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.App.PendingIntent.html">PendingIntent</a></dt>
+    <dd><p><a class="xref" href="Android.App.PendingIntent.html">PendingIntent</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_RemoveUpdates_" data-uid="Android.Location.LocationManager.RemoveUpdates*"></a>
+
+  <h3 id="Android_Location_LocationManager_RemoveUpdates_Android_Location_LocationListener_" data-uid="Android.Location.LocationManager.RemoveUpdates(Android.Location.LocationListener)">
+  RemoveUpdates(LocationListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L610"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#removeUpdates(android.location.LocationListener)">https://developer.android.com/reference/android/location/LocationManager.html#removeUpdates(android.location.LocationListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveUpdates(LocationListener arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Location.LocationListener.html">LocationListener</a></dt>
+    <dd><p><a class="xref" href="Android.Location.LocationListener.html">LocationListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_RequestFlush_" data-uid="Android.Location.LocationManager.RequestFlush*"></a>
+
+  <h3 id="Android_Location_LocationManager_RequestFlush_Java_Lang_String_Android_App_PendingIntent_System_Int32_" data-uid="Android.Location.LocationManager.RequestFlush(Java.Lang.String,Android.App.PendingIntent,System.Int32)">
+  RequestFlush(String, PendingIntent, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L620"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#requestFlush(java.lang.String,android.app.PendingIntent,int)">https://developer.android.com/reference/android/location/LocationManager.html#requestFlush(java.lang.String,android.app.PendingIntent,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestFlush(String arg0, PendingIntent arg1, int arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.App.PendingIntent.html">PendingIntent</a></dt>
+    <dd><p><a class="xref" href="Android.App.PendingIntent.html">PendingIntent</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_RequestFlush_" data-uid="Android.Location.LocationManager.RequestFlush*"></a>
+
+  <h3 id="Android_Location_LocationManager_RequestFlush_Java_Lang_String_Android_Location_LocationListener_System_Int32_" data-uid="Android.Location.LocationManager.RequestFlush(Java.Lang.String,Android.Location.LocationListener,System.Int32)">
+  RequestFlush(String, LocationListener, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L630"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#requestFlush(java.lang.String,android.location.LocationListener,int)">https://developer.android.com/reference/android/location/LocationManager.html#requestFlush(java.lang.String,android.location.LocationListener,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestFlush(String arg0, LocationListener arg1, int arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Location.LocationListener.html">LocationListener</a></dt>
+    <dd><p><a class="xref" href="Android.Location.LocationListener.html">LocationListener</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_RequestLocationUpdates_" data-uid="Android.Location.LocationManager.RequestLocationUpdates*"></a>
+
+  <h3 id="Android_Location_LocationManager_RequestLocationUpdates_Java_Lang_String_Android_Location_LocationRequest_Android_App_PendingIntent_" data-uid="Android.Location.LocationManager.RequestLocationUpdates(Java.Lang.String,Android.Location.LocationRequest,Android.App.PendingIntent)">
+  RequestLocationUpdates(String, LocationRequest, PendingIntent)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L640"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#requestLocationUpdates(java.lang.String,android.location.LocationRequest,android.app.PendingIntent)">https://developer.android.com/reference/android/location/LocationManager.html#requestLocationUpdates(java.lang.String,android.location.LocationRequest,android.app.PendingIntent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestLocationUpdates(String arg0, LocationRequest arg1, PendingIntent arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Location.LocationRequest.html">LocationRequest</a></dt>
+    <dd><p><a class="xref" href="Android.Location.LocationRequest.html">LocationRequest</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.App.PendingIntent.html">PendingIntent</a></dt>
+    <dd><p><a class="xref" href="Android.App.PendingIntent.html">PendingIntent</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_RequestLocationUpdates_" data-uid="Android.Location.LocationManager.RequestLocationUpdates*"></a>
+
+  <h3 id="Android_Location_LocationManager_RequestLocationUpdates_Java_Lang_String_Android_Location_LocationRequest_Java_Util_Concurrent_Executor_Android_Location_LocationListener_" data-uid="Android.Location.LocationManager.RequestLocationUpdates(Java.Lang.String,Android.Location.LocationRequest,Java.Util.Concurrent.Executor,Android.Location.LocationListener)">
+  RequestLocationUpdates(String, LocationRequest, Executor, LocationListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L651"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#requestLocationUpdates(java.lang.String,android.location.LocationRequest,java.util.concurrent.Executor,android.location.LocationListener)">https://developer.android.com/reference/android/location/LocationManager.html#requestLocationUpdates(java.lang.String,android.location.LocationRequest,java.util.concurrent.Executor,android.location.LocationListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestLocationUpdates(String arg0, LocationRequest arg1, Executor arg2, LocationListener arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Location.LocationRequest.html">LocationRequest</a></dt>
+    <dd><p><a class="xref" href="Android.Location.LocationRequest.html">LocationRequest</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Android.Location.LocationListener.html">LocationListener</a></dt>
+    <dd><p><a class="xref" href="Android.Location.LocationListener.html">LocationListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_RequestLocationUpdates_" data-uid="Android.Location.LocationManager.RequestLocationUpdates*"></a>
+
+  <h3 id="Android_Location_LocationManager_RequestLocationUpdates_Java_Lang_String_System_Int64_System_Single_Android_App_PendingIntent_" data-uid="Android.Location.LocationManager.RequestLocationUpdates(Java.Lang.String,System.Int64,System.Single,Android.App.PendingIntent)">
+  RequestLocationUpdates(String, long, float, PendingIntent)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L662"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#requestLocationUpdates(java.lang.String,long,float,android.app.PendingIntent)">https://developer.android.com/reference/android/location/LocationManager.html#requestLocationUpdates(java.lang.String,long,float,android.app.PendingIntent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestLocationUpdates(String arg0, long arg1, float arg2, PendingIntent arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Android.App.PendingIntent.html">PendingIntent</a></dt>
+    <dd><p><a class="xref" href="Android.App.PendingIntent.html">PendingIntent</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_RequestLocationUpdates_" data-uid="Android.Location.LocationManager.RequestLocationUpdates*"></a>
+
+  <h3 id="Android_Location_LocationManager_RequestLocationUpdates_Java_Lang_String_System_Int64_System_Single_Android_Location_LocationListener_" data-uid="Android.Location.LocationManager.RequestLocationUpdates(Java.Lang.String,System.Int64,System.Single,Android.Location.LocationListener)">
+  RequestLocationUpdates(String, long, float, LocationListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L685"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#requestLocationUpdates(java.lang.String,long,float,android.location.LocationListener)">https://developer.android.com/reference/android/location/LocationManager.html#requestLocationUpdates(java.lang.String,long,float,android.location.LocationListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestLocationUpdates(String arg0, long arg1, float arg2, LocationListener arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Android.Location.LocationListener.html">LocationListener</a></dt>
+    <dd><p><a class="xref" href="Android.Location.LocationListener.html">LocationListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_RequestLocationUpdates_" data-uid="Android.Location.LocationManager.RequestLocationUpdates*"></a>
+
+  <h3 id="Android_Location_LocationManager_RequestLocationUpdates_Java_Lang_String_System_Int64_System_Single_Android_Location_LocationListener_Android_Os_Looper_" data-uid="Android.Location.LocationManager.RequestLocationUpdates(Java.Lang.String,System.Int64,System.Single,Android.Location.LocationListener,Android.Os.Looper)">
+  RequestLocationUpdates(String, long, float, LocationListener, Looper)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L674"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#requestLocationUpdates(java.lang.String,long,float,android.location.LocationListener,android.os.Looper)">https://developer.android.com/reference/android/location/LocationManager.html#requestLocationUpdates(java.lang.String,long,float,android.location.LocationListener,android.os.Looper)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestLocationUpdates(String arg0, long arg1, float arg2, LocationListener arg3, Looper arg4)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Android.Location.LocationListener.html">LocationListener</a></dt>
+    <dd><p><a class="xref" href="Android.Location.LocationListener.html">LocationListener</a></p>
+</dd>
+    <dt><code>arg4</code> <a class="xref" href="Android.Os.Looper.html">Looper</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Looper.html">Looper</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_RequestLocationUpdates_" data-uid="Android.Location.LocationManager.RequestLocationUpdates*"></a>
+
+  <h3 id="Android_Location_LocationManager_RequestLocationUpdates_Java_Lang_String_System_Int64_System_Single_Java_Util_Concurrent_Executor_Android_Location_LocationListener_" data-uid="Android.Location.LocationManager.RequestLocationUpdates(Java.Lang.String,System.Int64,System.Single,Java.Util.Concurrent.Executor,Android.Location.LocationListener)">
+  RequestLocationUpdates(String, long, float, Executor, LocationListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L697"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#requestLocationUpdates(java.lang.String,long,float,java.util.concurrent.Executor,android.location.LocationListener)">https://developer.android.com/reference/android/location/LocationManager.html#requestLocationUpdates(java.lang.String,long,float,java.util.concurrent.Executor,android.location.LocationListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestLocationUpdates(String arg0, long arg1, float arg2, Executor arg3, LocationListener arg4)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></p>
+</dd>
+    <dt><code>arg4</code> <a class="xref" href="Android.Location.LocationListener.html">LocationListener</a></dt>
+    <dd><p><a class="xref" href="Android.Location.LocationListener.html">LocationListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_RequestLocationUpdates_" data-uid="Android.Location.LocationManager.RequestLocationUpdates*"></a>
+
+  <h3 id="Android_Location_LocationManager_RequestLocationUpdates_System_Int64_System_Single_Android_Location_Criteria_Android_App_PendingIntent_" data-uid="Android.Location.LocationManager.RequestLocationUpdates(System.Int64,System.Single,Android.Location.Criteria,Android.App.PendingIntent)">
+  RequestLocationUpdates(long, float, Criteria, PendingIntent)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L708"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#requestLocationUpdates(long,float,android.location.Criteria,android.app.PendingIntent)">https://developer.android.com/reference/android/location/LocationManager.html#requestLocationUpdates(long,float,android.location.Criteria,android.app.PendingIntent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void RequestLocationUpdates(long arg0, float arg1, Criteria arg2, PendingIntent arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Location.Criteria.html">Criteria</a></dt>
+    <dd><p><a class="xref" href="Android.Location.Criteria.html">Criteria</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Android.App.PendingIntent.html">PendingIntent</a></dt>
+    <dd><p><a class="xref" href="Android.App.PendingIntent.html">PendingIntent</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_RequestLocationUpdates_" data-uid="Android.Location.LocationManager.RequestLocationUpdates*"></a>
+
+  <h3 id="Android_Location_LocationManager_RequestLocationUpdates_System_Int64_System_Single_Android_Location_Criteria_Android_Location_LocationListener_Android_Os_Looper_" data-uid="Android.Location.LocationManager.RequestLocationUpdates(System.Int64,System.Single,Android.Location.Criteria,Android.Location.LocationListener,Android.Os.Looper)">
+  RequestLocationUpdates(long, float, Criteria, LocationListener, Looper)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L721"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#requestLocationUpdates(long,float,android.location.Criteria,android.location.LocationListener,android.os.Looper)">https://developer.android.com/reference/android/location/LocationManager.html#requestLocationUpdates(long,float,android.location.Criteria,android.location.LocationListener,android.os.Looper)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void RequestLocationUpdates(long arg0, float arg1, Criteria arg2, LocationListener arg3, Looper arg4)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Location.Criteria.html">Criteria</a></dt>
+    <dd><p><a class="xref" href="Android.Location.Criteria.html">Criteria</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Android.Location.LocationListener.html">LocationListener</a></dt>
+    <dd><p><a class="xref" href="Android.Location.LocationListener.html">LocationListener</a></p>
+</dd>
+    <dt><code>arg4</code> <a class="xref" href="Android.Os.Looper.html">Looper</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Looper.html">Looper</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_RequestLocationUpdates_" data-uid="Android.Location.LocationManager.RequestLocationUpdates*"></a>
+
+  <h3 id="Android_Location_LocationManager_RequestLocationUpdates_System_Int64_System_Single_Android_Location_Criteria_Java_Util_Concurrent_Executor_Android_Location_LocationListener_" data-uid="Android.Location.LocationManager.RequestLocationUpdates(System.Int64,System.Single,Android.Location.Criteria,Java.Util.Concurrent.Executor,Android.Location.LocationListener)">
+  RequestLocationUpdates(long, float, Criteria, Executor, LocationListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L734"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#requestLocationUpdates(long,float,android.location.Criteria,java.util.concurrent.Executor,android.location.LocationListener)">https://developer.android.com/reference/android/location/LocationManager.html#requestLocationUpdates(long,float,android.location.Criteria,java.util.concurrent.Executor,android.location.LocationListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void RequestLocationUpdates(long arg0, float arg1, Criteria arg2, Executor arg3, LocationListener arg4)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Location.Criteria.html">Criteria</a></dt>
+    <dd><p><a class="xref" href="Android.Location.Criteria.html">Criteria</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></p>
+</dd>
+    <dt><code>arg4</code> <a class="xref" href="Android.Location.LocationListener.html">LocationListener</a></dt>
+    <dd><p><a class="xref" href="Android.Location.LocationListener.html">LocationListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_RequestSingleUpdate_" data-uid="Android.Location.LocationManager.RequestSingleUpdate*"></a>
+
+  <h3 id="Android_Location_LocationManager_RequestSingleUpdate_Android_Location_Criteria_Android_App_PendingIntent_" data-uid="Android.Location.LocationManager.RequestSingleUpdate(Android.Location.Criteria,Android.App.PendingIntent)">
+  RequestSingleUpdate(Criteria, PendingIntent)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L744"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#requestSingleUpdate(android.location.Criteria,android.app.PendingIntent)">https://developer.android.com/reference/android/location/LocationManager.html#requestSingleUpdate(android.location.Criteria,android.app.PendingIntent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void RequestSingleUpdate(Criteria arg0, PendingIntent arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Location.Criteria.html">Criteria</a></dt>
+    <dd><p><a class="xref" href="Android.Location.Criteria.html">Criteria</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.App.PendingIntent.html">PendingIntent</a></dt>
+    <dd><p><a class="xref" href="Android.App.PendingIntent.html">PendingIntent</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_RequestSingleUpdate_" data-uid="Android.Location.LocationManager.RequestSingleUpdate*"></a>
+
+  <h3 id="Android_Location_LocationManager_RequestSingleUpdate_Android_Location_Criteria_Android_Location_LocationListener_Android_Os_Looper_" data-uid="Android.Location.LocationManager.RequestSingleUpdate(Android.Location.Criteria,Android.Location.LocationListener,Android.Os.Looper)">
+  RequestSingleUpdate(Criteria, LocationListener, Looper)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L755"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#requestSingleUpdate(android.location.Criteria,android.location.LocationListener,android.os.Looper)">https://developer.android.com/reference/android/location/LocationManager.html#requestSingleUpdate(android.location.Criteria,android.location.LocationListener,android.os.Looper)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void RequestSingleUpdate(Criteria arg0, LocationListener arg1, Looper arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Location.Criteria.html">Criteria</a></dt>
+    <dd><p><a class="xref" href="Android.Location.Criteria.html">Criteria</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Location.LocationListener.html">LocationListener</a></dt>
+    <dd><p><a class="xref" href="Android.Location.LocationListener.html">LocationListener</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Os.Looper.html">Looper</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Looper.html">Looper</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_RequestSingleUpdate_" data-uid="Android.Location.LocationManager.RequestSingleUpdate*"></a>
+
+  <h3 id="Android_Location_LocationManager_RequestSingleUpdate_Java_Lang_String_Android_App_PendingIntent_" data-uid="Android.Location.LocationManager.RequestSingleUpdate(Java.Lang.String,Android.App.PendingIntent)">
+  RequestSingleUpdate(String, PendingIntent)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L765"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#requestSingleUpdate(java.lang.String,android.app.PendingIntent)">https://developer.android.com/reference/android/location/LocationManager.html#requestSingleUpdate(java.lang.String,android.app.PendingIntent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void RequestSingleUpdate(String arg0, PendingIntent arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.App.PendingIntent.html">PendingIntent</a></dt>
+    <dd><p><a class="xref" href="Android.App.PendingIntent.html">PendingIntent</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_RequestSingleUpdate_" data-uid="Android.Location.LocationManager.RequestSingleUpdate*"></a>
+
+  <h3 id="Android_Location_LocationManager_RequestSingleUpdate_Java_Lang_String_Android_Location_LocationListener_Android_Os_Looper_" data-uid="Android.Location.LocationManager.RequestSingleUpdate(Java.Lang.String,Android.Location.LocationListener,Android.Os.Looper)">
+  RequestSingleUpdate(String, LocationListener, Looper)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L776"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#requestSingleUpdate(java.lang.String,android.location.LocationListener,android.os.Looper)">https://developer.android.com/reference/android/location/LocationManager.html#requestSingleUpdate(java.lang.String,android.location.LocationListener,android.os.Looper)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void RequestSingleUpdate(String arg0, LocationListener arg1, Looper arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Location.LocationListener.html">LocationListener</a></dt>
+    <dd><p><a class="xref" href="Android.Location.LocationListener.html">LocationListener</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Os.Looper.html">Looper</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Looper.html">Looper</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_SendExtraCommand_" data-uid="Android.Location.LocationManager.SendExtraCommand*"></a>
+
+  <h3 id="Android_Location_LocationManager_SendExtraCommand_Java_Lang_String_Java_Lang_String_Android_Os_Bundle_" data-uid="Android.Location.LocationManager.SendExtraCommand(Java.Lang.String,Java.Lang.String,Android.Os.Bundle)">
+  SendExtraCommand(String, String, Bundle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L391"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#sendExtraCommand(java.lang.String,java.lang.String,android.os.Bundle)">https://developer.android.com/reference/android/location/LocationManager.html#sendExtraCommand(java.lang.String,java.lang.String,android.os.Bundle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SendExtraCommand(String arg0, String arg1, Bundle arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_SetTestProviderEnabled_" data-uid="Android.Location.LocationManager.SetTestProviderEnabled*"></a>
+
+  <h3 id="Android_Location_LocationManager_SetTestProviderEnabled_Java_Lang_String_System_Boolean_" data-uid="Android.Location.LocationManager.SetTestProviderEnabled(Java.Lang.String,System.Boolean)">
+  SetTestProviderEnabled(String, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L786"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#setTestProviderEnabled(java.lang.String,boolean)">https://developer.android.com/reference/android/location/LocationManager.html#setTestProviderEnabled(java.lang.String,boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTestProviderEnabled(String arg0, bool arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_SetTestProviderLocation_" data-uid="Android.Location.LocationManager.SetTestProviderLocation*"></a>
+
+  <h3 id="Android_Location_LocationManager_SetTestProviderLocation_Java_Lang_String_Android_Location_Location_" data-uid="Android.Location.LocationManager.SetTestProviderLocation(Java.Lang.String,Android.Location.Location)">
+  SetTestProviderLocation(String, Location)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L795"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#setTestProviderLocation(java.lang.String,android.location.Location)">https://developer.android.com/reference/android/location/LocationManager.html#setTestProviderLocation(java.lang.String,android.location.Location)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTestProviderLocation(String arg0, Location arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Location.Location.html">Location</a></dt>
+    <dd><p><a class="xref" href="Android.Location.Location.html">Location</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_SetTestProviderStatus_" data-uid="Android.Location.LocationManager.SetTestProviderStatus*"></a>
+
+  <h3 id="Android_Location_LocationManager_SetTestProviderStatus_Java_Lang_String_System_Int32_Android_Os_Bundle_System_Int64_" data-uid="Android.Location.LocationManager.SetTestProviderStatus(Java.Lang.String,System.Int32,Android.Os.Bundle,System.Int64)">
+  SetTestProviderStatus(String, int, Bundle, long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L806"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#setTestProviderStatus(java.lang.String,int,android.os.Bundle,long)">https://developer.android.com/reference/android/location/LocationManager.html#setTestProviderStatus(java.lang.String,int,android.os.Bundle,long)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void SetTestProviderStatus(String arg0, int arg1, Bundle arg2, long arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_UnregisterAntennaInfoListener_" data-uid="Android.Location.LocationManager.UnregisterAntennaInfoListener*"></a>
+
+  <h3 id="Android_Location_LocationManager_UnregisterAntennaInfoListener_Android_Location_GnssAntennaInfo_Listener_" data-uid="Android.Location.LocationManager.UnregisterAntennaInfoListener(Android.Location.GnssAntennaInfo.Listener)">
+  UnregisterAntennaInfoListener(Listener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L815"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#unregisterAntennaInfoListener(android.location.GnssAntennaInfo.Listener)">https://developer.android.com/reference/android/location/LocationManager.html#unregisterAntennaInfoListener(android.location.GnssAntennaInfo.Listener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnregisterAntennaInfoListener(GnssAntennaInfo.Listener arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Location.GnssAntennaInfo.html">GnssAntennaInfo</a>.<a class="xref" href="Android.Location.GnssAntennaInfo.Listener.html">Listener</a></dt>
+    <dd><p><a class="xref" href="Android.Location.GnssAntennaInfo.Listener.html">GnssAntennaInfo.Listener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_UnregisterGnssMeasurementsCallback_" data-uid="Android.Location.LocationManager.UnregisterGnssMeasurementsCallback*"></a>
+
+  <h3 id="Android_Location_LocationManager_UnregisterGnssMeasurementsCallback_Android_Location_GnssMeasurementsEvent_Callback_" data-uid="Android.Location.LocationManager.UnregisterGnssMeasurementsCallback(Android.Location.GnssMeasurementsEvent.Callback)">
+  UnregisterGnssMeasurementsCallback(Callback)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L823"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#unregisterGnssMeasurementsCallback(android.location.GnssMeasurementsEvent.Callback)">https://developer.android.com/reference/android/location/LocationManager.html#unregisterGnssMeasurementsCallback(android.location.GnssMeasurementsEvent.Callback)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnregisterGnssMeasurementsCallback(GnssMeasurementsEvent.Callback arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Location.GnssMeasurementsEvent.html">GnssMeasurementsEvent</a>.<a class="xref" href="Android.Location.GnssMeasurementsEvent.Callback.html">Callback</a></dt>
+    <dd><p><a class="xref" href="Android.Location.GnssMeasurementsEvent.Callback.html">GnssMeasurementsEvent.Callback</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_UnregisterGnssNavigationMessageCallback_" data-uid="Android.Location.LocationManager.UnregisterGnssNavigationMessageCallback*"></a>
+
+  <h3 id="Android_Location_LocationManager_UnregisterGnssNavigationMessageCallback_Android_Location_GnssNavigationMessage_Callback_" data-uid="Android.Location.LocationManager.UnregisterGnssNavigationMessageCallback(Android.Location.GnssNavigationMessage.Callback)">
+  UnregisterGnssNavigationMessageCallback(Callback)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L831"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#unregisterGnssNavigationMessageCallback(android.location.GnssNavigationMessage.Callback)">https://developer.android.com/reference/android/location/LocationManager.html#unregisterGnssNavigationMessageCallback(android.location.GnssNavigationMessage.Callback)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnregisterGnssNavigationMessageCallback(GnssNavigationMessage.Callback arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Location.GnssNavigationMessage.html">GnssNavigationMessage</a>.<a class="xref" href="Android.Location.GnssNavigationMessage.Callback.html">Callback</a></dt>
+    <dd><p><a class="xref" href="Android.Location.GnssNavigationMessage.Callback.html">GnssNavigationMessage.Callback</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Location_LocationManager_UnregisterGnssStatusCallback_" data-uid="Android.Location.LocationManager.UnregisterGnssStatusCallback*"></a>
+
+  <h3 id="Android_Location_LocationManager_UnregisterGnssStatusCallback_Android_Location_GnssStatus_Callback_" data-uid="Android.Location.LocationManager.UnregisterGnssStatusCallback(Android.Location.GnssStatus.Callback)">
+  UnregisterGnssStatusCallback(Callback)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L839"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/location/LocationManager.html#unregisterGnssStatusCallback(android.location.GnssStatus.Callback)">https://developer.android.com/reference/android/location/LocationManager.html#unregisterGnssStatusCallback(android.location.GnssStatus.Callback)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnregisterGnssStatusCallback(GnssStatus.Callback arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Location.GnssStatus.html">GnssStatus</a>.<a class="xref" href="Android.Location.GnssStatus.Callback.html">Callback</a></dt>
+    <dd><p><a class="xref" href="Android.Location.GnssStatus.Callback.html">GnssStatus.Callback</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Location/LocationManager.cs/#L29" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,3546 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class TtsSpan | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class TtsSpan | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/text/style/TtsSpan.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_Text_Style_TtsSpan.md&amp;value=---%0Auid%3A%20Android.Text.Style.TtsSpan%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.Text.Style.TtsSpan">
+
+
+
+  <h1 id="Android_Text_Style_TtsSpan" data-uid="Android.Text.Style.TtsSpan" class="text-break">
+Class TtsSpan  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.Text.html">Text</a>.<a class="xref" href="Android.Text.Style.html">Style</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html">https://developer.android.com/reference/android/text/style/TtsSpan.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class TtsSpan : ParcelableSpan, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IParcelableSpan, IParcelable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.Os.Parcelable.html">Parcelable</a>&gt;</div>
+      <div><a class="xref" href="Android.Os.Parcelable.html">Parcelable</a></div>
+      <div><a class="xref" href="Android.Text.ParcelableSpan.html">ParcelableSpan</a></div>
+      <div><span class="xref">TtsSpan</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+      <div><a class="xref" href="Android.Text.IParcelableSpan.html">IParcelableSpan</a></div>
+      <div><a class="xref" href="Android.Os.IParcelable.html">IParcelable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Android.Os.Parcelable.html#Android_Os_Parcelable_CONTENTS_FILE_DESCRIPTOR">Parcelable.CONTENTS_FILE_DESCRIPTOR</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Os.Parcelable.html#Android_Os_Parcelable_PARCELABLE_WRITE_RETURN_VALUE">Parcelable.PARCELABLE_WRITE_RETURN_VALUE</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Parcelable&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Parcelable&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Parcelable&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Parcelable&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Parcelable&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Parcelable&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Parcelable&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Parcelable&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Parcelable&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Parcelable&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Parcelable&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Parcelable&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Parcelable&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Parcelable&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;Parcelable&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Parcelable&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Parcelable&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Parcelable&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Parcelable&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_Text_Style_TtsSpan__ctor_" data-uid="Android.Text.Style.TtsSpan.#ctor*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan__ctor" data-uid="Android.Text.Style.TtsSpan.#ctor">
+  TtsSpan()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/AllPackageClasses.cs/#L1737"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TtsSpan()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan__ctor_" data-uid="Android.Text.Style.TtsSpan.#ctor*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan__ctor_Android_Os_Parcel_" data-uid="Android.Text.Style.TtsSpan.#ctor(Android.Os.Parcel)">
+  TtsSpan(Parcel)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#%3Cinit%3E(android.os.Parcel)">https://developer.android.com/reference/android/text/style/TtsSpan.html#%3Cinit%3E(android.os.Parcel)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TtsSpan(Parcel arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Os.Parcel.html">Parcel</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Parcel.html">Parcel</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan__ctor_" data-uid="Android.Text.Style.TtsSpan.#ctor*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan__ctor_Java_Lang_String_Android_Os_PersistableBundle_" data-uid="Android.Text.Style.TtsSpan.#ctor(Java.Lang.String,Android.Os.PersistableBundle)">
+  TtsSpan(String, PersistableBundle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#%3Cinit%3E(java.lang.String,android.os.PersistableBundle)">https://developer.android.com/reference/android/text/style/TtsSpan.html#%3Cinit%3E(java.lang.String,android.os.PersistableBundle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TtsSpan(String arg0, PersistableBundle arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Os.PersistableBundle.html">PersistableBundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.PersistableBundle.html">PersistableBundle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan__ctor_" data-uid="Android.Text.Style.TtsSpan.#ctor*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan__ctor_System_Object___" data-uid="Android.Text.Style.TtsSpan.#ctor(System.Object[])">
+  TtsSpan(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/AllPackageClasses.cs/#L1741"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TtsSpan(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_Text_Style_TtsSpan_ANIMACY_ANIMATE_" data-uid="Android.Text.Style.TtsSpan.ANIMACY_ANIMATE*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_ANIMACY_ANIMATE" data-uid="Android.Text.Style.TtsSpan.ANIMACY_ANIMATE">
+  ANIMACY_ANIMATE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L174"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#ANIMACY_ANIMATE">https://developer.android.com/reference/android/text/style/TtsSpan.html#ANIMACY_ANIMATE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ANIMACY_ANIMATE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_ANIMACY_INANIMATE_" data-uid="Android.Text.Style.TtsSpan.ANIMACY_INANIMATE*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_ANIMACY_INANIMATE" data-uid="Android.Text.Style.TtsSpan.ANIMACY_INANIMATE">
+  ANIMACY_INANIMATE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L180"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#ANIMACY_INANIMATE">https://developer.android.com/reference/android/text/style/TtsSpan.html#ANIMACY_INANIMATE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ANIMACY_INANIMATE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_ARG_ANIMACY_" data-uid="Android.Text.Style.TtsSpan.ARG_ANIMACY*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_ARG_ANIMACY" data-uid="Android.Text.Style.TtsSpan.ARG_ANIMACY">
+  ARG_ANIMACY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L186"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#ARG_ANIMACY">https://developer.android.com/reference/android/text/style/TtsSpan.html#ARG_ANIMACY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ARG_ANIMACY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_ARG_CASE_" data-uid="Android.Text.Style.TtsSpan.ARG_CASE*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_ARG_CASE" data-uid="Android.Text.Style.TtsSpan.ARG_CASE">
+  ARG_CASE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L192"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#ARG_CASE">https://developer.android.com/reference/android/text/style/TtsSpan.html#ARG_CASE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ARG_CASE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_ARG_COUNTRY_CODE_" data-uid="Android.Text.Style.TtsSpan.ARG_COUNTRY_CODE*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_ARG_COUNTRY_CODE" data-uid="Android.Text.Style.TtsSpan.ARG_COUNTRY_CODE">
+  ARG_COUNTRY_CODE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L198"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#ARG_COUNTRY_CODE">https://developer.android.com/reference/android/text/style/TtsSpan.html#ARG_COUNTRY_CODE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ARG_COUNTRY_CODE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_ARG_CURRENCY_" data-uid="Android.Text.Style.TtsSpan.ARG_CURRENCY*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_ARG_CURRENCY" data-uid="Android.Text.Style.TtsSpan.ARG_CURRENCY">
+  ARG_CURRENCY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L204"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#ARG_CURRENCY">https://developer.android.com/reference/android/text/style/TtsSpan.html#ARG_CURRENCY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ARG_CURRENCY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_ARG_DAY_" data-uid="Android.Text.Style.TtsSpan.ARG_DAY*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_ARG_DAY" data-uid="Android.Text.Style.TtsSpan.ARG_DAY">
+  ARG_DAY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L210"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#ARG_DAY">https://developer.android.com/reference/android/text/style/TtsSpan.html#ARG_DAY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ARG_DAY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_ARG_DENOMINATOR_" data-uid="Android.Text.Style.TtsSpan.ARG_DENOMINATOR*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_ARG_DENOMINATOR" data-uid="Android.Text.Style.TtsSpan.ARG_DENOMINATOR">
+  ARG_DENOMINATOR
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L216"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#ARG_DENOMINATOR">https://developer.android.com/reference/android/text/style/TtsSpan.html#ARG_DENOMINATOR</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ARG_DENOMINATOR { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_ARG_DIGITS_" data-uid="Android.Text.Style.TtsSpan.ARG_DIGITS*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_ARG_DIGITS" data-uid="Android.Text.Style.TtsSpan.ARG_DIGITS">
+  ARG_DIGITS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L222"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#ARG_DIGITS">https://developer.android.com/reference/android/text/style/TtsSpan.html#ARG_DIGITS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ARG_DIGITS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_ARG_DOMAIN_" data-uid="Android.Text.Style.TtsSpan.ARG_DOMAIN*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_ARG_DOMAIN" data-uid="Android.Text.Style.TtsSpan.ARG_DOMAIN">
+  ARG_DOMAIN
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L228"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#ARG_DOMAIN">https://developer.android.com/reference/android/text/style/TtsSpan.html#ARG_DOMAIN</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ARG_DOMAIN { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_ARG_EXTENSION_" data-uid="Android.Text.Style.TtsSpan.ARG_EXTENSION*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_ARG_EXTENSION" data-uid="Android.Text.Style.TtsSpan.ARG_EXTENSION">
+  ARG_EXTENSION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L234"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#ARG_EXTENSION">https://developer.android.com/reference/android/text/style/TtsSpan.html#ARG_EXTENSION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ARG_EXTENSION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_ARG_FRACTIONAL_PART_" data-uid="Android.Text.Style.TtsSpan.ARG_FRACTIONAL_PART*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_ARG_FRACTIONAL_PART" data-uid="Android.Text.Style.TtsSpan.ARG_FRACTIONAL_PART">
+  ARG_FRACTIONAL_PART
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L240"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#ARG_FRACTIONAL_PART">https://developer.android.com/reference/android/text/style/TtsSpan.html#ARG_FRACTIONAL_PART</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ARG_FRACTIONAL_PART { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_ARG_FRAGMENT_ID_" data-uid="Android.Text.Style.TtsSpan.ARG_FRAGMENT_ID*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_ARG_FRAGMENT_ID" data-uid="Android.Text.Style.TtsSpan.ARG_FRAGMENT_ID">
+  ARG_FRAGMENT_ID
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L246"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#ARG_FRAGMENT_ID">https://developer.android.com/reference/android/text/style/TtsSpan.html#ARG_FRAGMENT_ID</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ARG_FRAGMENT_ID { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_ARG_GENDER_" data-uid="Android.Text.Style.TtsSpan.ARG_GENDER*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_ARG_GENDER" data-uid="Android.Text.Style.TtsSpan.ARG_GENDER">
+  ARG_GENDER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L252"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#ARG_GENDER">https://developer.android.com/reference/android/text/style/TtsSpan.html#ARG_GENDER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ARG_GENDER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_ARG_HOURS_" data-uid="Android.Text.Style.TtsSpan.ARG_HOURS*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_ARG_HOURS" data-uid="Android.Text.Style.TtsSpan.ARG_HOURS">
+  ARG_HOURS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L258"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#ARG_HOURS">https://developer.android.com/reference/android/text/style/TtsSpan.html#ARG_HOURS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ARG_HOURS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_ARG_INTEGER_PART_" data-uid="Android.Text.Style.TtsSpan.ARG_INTEGER_PART*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_ARG_INTEGER_PART" data-uid="Android.Text.Style.TtsSpan.ARG_INTEGER_PART">
+  ARG_INTEGER_PART
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L264"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#ARG_INTEGER_PART">https://developer.android.com/reference/android/text/style/TtsSpan.html#ARG_INTEGER_PART</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ARG_INTEGER_PART { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_ARG_MINUTES_" data-uid="Android.Text.Style.TtsSpan.ARG_MINUTES*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_ARG_MINUTES" data-uid="Android.Text.Style.TtsSpan.ARG_MINUTES">
+  ARG_MINUTES
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L270"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#ARG_MINUTES">https://developer.android.com/reference/android/text/style/TtsSpan.html#ARG_MINUTES</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ARG_MINUTES { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_ARG_MONTH_" data-uid="Android.Text.Style.TtsSpan.ARG_MONTH*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_ARG_MONTH" data-uid="Android.Text.Style.TtsSpan.ARG_MONTH">
+  ARG_MONTH
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L276"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#ARG_MONTH">https://developer.android.com/reference/android/text/style/TtsSpan.html#ARG_MONTH</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ARG_MONTH { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_ARG_MULTIPLICITY_" data-uid="Android.Text.Style.TtsSpan.ARG_MULTIPLICITY*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_ARG_MULTIPLICITY" data-uid="Android.Text.Style.TtsSpan.ARG_MULTIPLICITY">
+  ARG_MULTIPLICITY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L282"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#ARG_MULTIPLICITY">https://developer.android.com/reference/android/text/style/TtsSpan.html#ARG_MULTIPLICITY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ARG_MULTIPLICITY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_ARG_NUMBER_" data-uid="Android.Text.Style.TtsSpan.ARG_NUMBER*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_ARG_NUMBER" data-uid="Android.Text.Style.TtsSpan.ARG_NUMBER">
+  ARG_NUMBER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L288"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#ARG_NUMBER">https://developer.android.com/reference/android/text/style/TtsSpan.html#ARG_NUMBER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ARG_NUMBER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_ARG_NUMBER_PARTS_" data-uid="Android.Text.Style.TtsSpan.ARG_NUMBER_PARTS*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_ARG_NUMBER_PARTS" data-uid="Android.Text.Style.TtsSpan.ARG_NUMBER_PARTS">
+  ARG_NUMBER_PARTS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L294"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#ARG_NUMBER_PARTS">https://developer.android.com/reference/android/text/style/TtsSpan.html#ARG_NUMBER_PARTS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ARG_NUMBER_PARTS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_ARG_NUMERATOR_" data-uid="Android.Text.Style.TtsSpan.ARG_NUMERATOR*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_ARG_NUMERATOR" data-uid="Android.Text.Style.TtsSpan.ARG_NUMERATOR">
+  ARG_NUMERATOR
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L300"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#ARG_NUMERATOR">https://developer.android.com/reference/android/text/style/TtsSpan.html#ARG_NUMERATOR</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ARG_NUMERATOR { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_ARG_PASSWORD_" data-uid="Android.Text.Style.TtsSpan.ARG_PASSWORD*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_ARG_PASSWORD" data-uid="Android.Text.Style.TtsSpan.ARG_PASSWORD">
+  ARG_PASSWORD
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L306"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#ARG_PASSWORD">https://developer.android.com/reference/android/text/style/TtsSpan.html#ARG_PASSWORD</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ARG_PASSWORD { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_ARG_PATH_" data-uid="Android.Text.Style.TtsSpan.ARG_PATH*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_ARG_PATH" data-uid="Android.Text.Style.TtsSpan.ARG_PATH">
+  ARG_PATH
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L312"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#ARG_PATH">https://developer.android.com/reference/android/text/style/TtsSpan.html#ARG_PATH</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ARG_PATH { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_ARG_PORT_" data-uid="Android.Text.Style.TtsSpan.ARG_PORT*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_ARG_PORT" data-uid="Android.Text.Style.TtsSpan.ARG_PORT">
+  ARG_PORT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L318"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#ARG_PORT">https://developer.android.com/reference/android/text/style/TtsSpan.html#ARG_PORT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ARG_PORT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_ARG_PROTOCOL_" data-uid="Android.Text.Style.TtsSpan.ARG_PROTOCOL*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_ARG_PROTOCOL" data-uid="Android.Text.Style.TtsSpan.ARG_PROTOCOL">
+  ARG_PROTOCOL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L324"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#ARG_PROTOCOL">https://developer.android.com/reference/android/text/style/TtsSpan.html#ARG_PROTOCOL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ARG_PROTOCOL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_ARG_QUANTITY_" data-uid="Android.Text.Style.TtsSpan.ARG_QUANTITY*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_ARG_QUANTITY" data-uid="Android.Text.Style.TtsSpan.ARG_QUANTITY">
+  ARG_QUANTITY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L330"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#ARG_QUANTITY">https://developer.android.com/reference/android/text/style/TtsSpan.html#ARG_QUANTITY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ARG_QUANTITY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_ARG_QUERY_STRING_" data-uid="Android.Text.Style.TtsSpan.ARG_QUERY_STRING*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_ARG_QUERY_STRING" data-uid="Android.Text.Style.TtsSpan.ARG_QUERY_STRING">
+  ARG_QUERY_STRING
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L336"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#ARG_QUERY_STRING">https://developer.android.com/reference/android/text/style/TtsSpan.html#ARG_QUERY_STRING</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ARG_QUERY_STRING { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_ARG_TEXT_" data-uid="Android.Text.Style.TtsSpan.ARG_TEXT*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_ARG_TEXT" data-uid="Android.Text.Style.TtsSpan.ARG_TEXT">
+  ARG_TEXT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L342"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#ARG_TEXT">https://developer.android.com/reference/android/text/style/TtsSpan.html#ARG_TEXT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ARG_TEXT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_ARG_UNIT_" data-uid="Android.Text.Style.TtsSpan.ARG_UNIT*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_ARG_UNIT" data-uid="Android.Text.Style.TtsSpan.ARG_UNIT">
+  ARG_UNIT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L348"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#ARG_UNIT">https://developer.android.com/reference/android/text/style/TtsSpan.html#ARG_UNIT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ARG_UNIT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_ARG_USERNAME_" data-uid="Android.Text.Style.TtsSpan.ARG_USERNAME*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_ARG_USERNAME" data-uid="Android.Text.Style.TtsSpan.ARG_USERNAME">
+  ARG_USERNAME
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L354"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#ARG_USERNAME">https://developer.android.com/reference/android/text/style/TtsSpan.html#ARG_USERNAME</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ARG_USERNAME { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_ARG_VERBATIM_" data-uid="Android.Text.Style.TtsSpan.ARG_VERBATIM*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_ARG_VERBATIM" data-uid="Android.Text.Style.TtsSpan.ARG_VERBATIM">
+  ARG_VERBATIM
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L360"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#ARG_VERBATIM">https://developer.android.com/reference/android/text/style/TtsSpan.html#ARG_VERBATIM</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ARG_VERBATIM { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_ARG_WEEKDAY_" data-uid="Android.Text.Style.TtsSpan.ARG_WEEKDAY*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_ARG_WEEKDAY" data-uid="Android.Text.Style.TtsSpan.ARG_WEEKDAY">
+  ARG_WEEKDAY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L366"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#ARG_WEEKDAY">https://developer.android.com/reference/android/text/style/TtsSpan.html#ARG_WEEKDAY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ARG_WEEKDAY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_ARG_YEAR_" data-uid="Android.Text.Style.TtsSpan.ARG_YEAR*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_ARG_YEAR" data-uid="Android.Text.Style.TtsSpan.ARG_YEAR">
+  ARG_YEAR
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L372"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#ARG_YEAR">https://developer.android.com/reference/android/text/style/TtsSpan.html#ARG_YEAR</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ARG_YEAR { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_BridgeClassName_" data-uid="Android.Text.Style.TtsSpan.BridgeClassName*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_BridgeClassName" data-uid="Android.Text.Style.TtsSpan.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/AllPackageClasses.cs/#L1748"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_CASE_ABLATIVE_" data-uid="Android.Text.Style.TtsSpan.CASE_ABLATIVE*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_CASE_ABLATIVE" data-uid="Android.Text.Style.TtsSpan.CASE_ABLATIVE">
+  CASE_ABLATIVE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L378"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#CASE_ABLATIVE">https://developer.android.com/reference/android/text/style/TtsSpan.html#CASE_ABLATIVE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String CASE_ABLATIVE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_CASE_ACCUSATIVE_" data-uid="Android.Text.Style.TtsSpan.CASE_ACCUSATIVE*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_CASE_ACCUSATIVE" data-uid="Android.Text.Style.TtsSpan.CASE_ACCUSATIVE">
+  CASE_ACCUSATIVE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L384"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#CASE_ACCUSATIVE">https://developer.android.com/reference/android/text/style/TtsSpan.html#CASE_ACCUSATIVE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String CASE_ACCUSATIVE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_CASE_DATIVE_" data-uid="Android.Text.Style.TtsSpan.CASE_DATIVE*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_CASE_DATIVE" data-uid="Android.Text.Style.TtsSpan.CASE_DATIVE">
+  CASE_DATIVE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L390"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#CASE_DATIVE">https://developer.android.com/reference/android/text/style/TtsSpan.html#CASE_DATIVE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String CASE_DATIVE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_CASE_GENITIVE_" data-uid="Android.Text.Style.TtsSpan.CASE_GENITIVE*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_CASE_GENITIVE" data-uid="Android.Text.Style.TtsSpan.CASE_GENITIVE">
+  CASE_GENITIVE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L396"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#CASE_GENITIVE">https://developer.android.com/reference/android/text/style/TtsSpan.html#CASE_GENITIVE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String CASE_GENITIVE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_CASE_INSTRUMENTAL_" data-uid="Android.Text.Style.TtsSpan.CASE_INSTRUMENTAL*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_CASE_INSTRUMENTAL" data-uid="Android.Text.Style.TtsSpan.CASE_INSTRUMENTAL">
+  CASE_INSTRUMENTAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L402"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#CASE_INSTRUMENTAL">https://developer.android.com/reference/android/text/style/TtsSpan.html#CASE_INSTRUMENTAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String CASE_INSTRUMENTAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_CASE_LOCATIVE_" data-uid="Android.Text.Style.TtsSpan.CASE_LOCATIVE*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_CASE_LOCATIVE" data-uid="Android.Text.Style.TtsSpan.CASE_LOCATIVE">
+  CASE_LOCATIVE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L408"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#CASE_LOCATIVE">https://developer.android.com/reference/android/text/style/TtsSpan.html#CASE_LOCATIVE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String CASE_LOCATIVE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_CASE_NOMINATIVE_" data-uid="Android.Text.Style.TtsSpan.CASE_NOMINATIVE*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_CASE_NOMINATIVE" data-uid="Android.Text.Style.TtsSpan.CASE_NOMINATIVE">
+  CASE_NOMINATIVE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L414"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#CASE_NOMINATIVE">https://developer.android.com/reference/android/text/style/TtsSpan.html#CASE_NOMINATIVE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String CASE_NOMINATIVE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_CASE_VOCATIVE_" data-uid="Android.Text.Style.TtsSpan.CASE_VOCATIVE*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_CASE_VOCATIVE" data-uid="Android.Text.Style.TtsSpan.CASE_VOCATIVE">
+  CASE_VOCATIVE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L420"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#CASE_VOCATIVE">https://developer.android.com/reference/android/text/style/TtsSpan.html#CASE_VOCATIVE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String CASE_VOCATIVE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_GENDER_FEMALE_" data-uid="Android.Text.Style.TtsSpan.GENDER_FEMALE*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_GENDER_FEMALE" data-uid="Android.Text.Style.TtsSpan.GENDER_FEMALE">
+  GENDER_FEMALE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L426"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#GENDER_FEMALE">https://developer.android.com/reference/android/text/style/TtsSpan.html#GENDER_FEMALE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String GENDER_FEMALE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_GENDER_MALE_" data-uid="Android.Text.Style.TtsSpan.GENDER_MALE*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_GENDER_MALE" data-uid="Android.Text.Style.TtsSpan.GENDER_MALE">
+  GENDER_MALE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L432"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#GENDER_MALE">https://developer.android.com/reference/android/text/style/TtsSpan.html#GENDER_MALE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String GENDER_MALE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_GENDER_NEUTRAL_" data-uid="Android.Text.Style.TtsSpan.GENDER_NEUTRAL*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_GENDER_NEUTRAL" data-uid="Android.Text.Style.TtsSpan.GENDER_NEUTRAL">
+  GENDER_NEUTRAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L438"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#GENDER_NEUTRAL">https://developer.android.com/reference/android/text/style/TtsSpan.html#GENDER_NEUTRAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String GENDER_NEUTRAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_IsBridgeAbstract_" data-uid="Android.Text.Style.TtsSpan.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_IsBridgeAbstract" data-uid="Android.Text.Style.TtsSpan.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/AllPackageClasses.cs/#L1752"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_IsBridgeCloseable_" data-uid="Android.Text.Style.TtsSpan.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_IsBridgeCloseable" data-uid="Android.Text.Style.TtsSpan.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/AllPackageClasses.cs/#L1756"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_IsBridgeInterface_" data-uid="Android.Text.Style.TtsSpan.IsBridgeInterface*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_IsBridgeInterface" data-uid="Android.Text.Style.TtsSpan.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/AllPackageClasses.cs/#L1760"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_IsBridgeStatic_" data-uid="Android.Text.Style.TtsSpan.IsBridgeStatic*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_IsBridgeStatic" data-uid="Android.Text.Style.TtsSpan.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/AllPackageClasses.cs/#L1764"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_MONTH_APRIL_" data-uid="Android.Text.Style.TtsSpan.MONTH_APRIL*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_MONTH_APRIL" data-uid="Android.Text.Style.TtsSpan.MONTH_APRIL">
+  MONTH_APRIL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#MONTH_APRIL">https://developer.android.com/reference/android/text/style/TtsSpan.html#MONTH_APRIL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int MONTH_APRIL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_MONTH_AUGUST_" data-uid="Android.Text.Style.TtsSpan.MONTH_AUGUST*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_MONTH_AUGUST" data-uid="Android.Text.Style.TtsSpan.MONTH_AUGUST">
+  MONTH_AUGUST
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#MONTH_AUGUST">https://developer.android.com/reference/android/text/style/TtsSpan.html#MONTH_AUGUST</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int MONTH_AUGUST { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_MONTH_DECEMBER_" data-uid="Android.Text.Style.TtsSpan.MONTH_DECEMBER*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_MONTH_DECEMBER" data-uid="Android.Text.Style.TtsSpan.MONTH_DECEMBER">
+  MONTH_DECEMBER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L72"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#MONTH_DECEMBER">https://developer.android.com/reference/android/text/style/TtsSpan.html#MONTH_DECEMBER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int MONTH_DECEMBER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_MONTH_FEBRUARY_" data-uid="Android.Text.Style.TtsSpan.MONTH_FEBRUARY*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_MONTH_FEBRUARY" data-uid="Android.Text.Style.TtsSpan.MONTH_FEBRUARY">
+  MONTH_FEBRUARY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L78"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#MONTH_FEBRUARY">https://developer.android.com/reference/android/text/style/TtsSpan.html#MONTH_FEBRUARY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int MONTH_FEBRUARY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_MONTH_JANUARY_" data-uid="Android.Text.Style.TtsSpan.MONTH_JANUARY*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_MONTH_JANUARY" data-uid="Android.Text.Style.TtsSpan.MONTH_JANUARY">
+  MONTH_JANUARY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L84"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#MONTH_JANUARY">https://developer.android.com/reference/android/text/style/TtsSpan.html#MONTH_JANUARY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int MONTH_JANUARY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_MONTH_JULY_" data-uid="Android.Text.Style.TtsSpan.MONTH_JULY*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_MONTH_JULY" data-uid="Android.Text.Style.TtsSpan.MONTH_JULY">
+  MONTH_JULY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L90"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#MONTH_JULY">https://developer.android.com/reference/android/text/style/TtsSpan.html#MONTH_JULY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int MONTH_JULY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_MONTH_JUNE_" data-uid="Android.Text.Style.TtsSpan.MONTH_JUNE*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_MONTH_JUNE" data-uid="Android.Text.Style.TtsSpan.MONTH_JUNE">
+  MONTH_JUNE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L96"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#MONTH_JUNE">https://developer.android.com/reference/android/text/style/TtsSpan.html#MONTH_JUNE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int MONTH_JUNE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_MONTH_MARCH_" data-uid="Android.Text.Style.TtsSpan.MONTH_MARCH*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_MONTH_MARCH" data-uid="Android.Text.Style.TtsSpan.MONTH_MARCH">
+  MONTH_MARCH
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L102"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#MONTH_MARCH">https://developer.android.com/reference/android/text/style/TtsSpan.html#MONTH_MARCH</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int MONTH_MARCH { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_MONTH_MAY_" data-uid="Android.Text.Style.TtsSpan.MONTH_MAY*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_MONTH_MAY" data-uid="Android.Text.Style.TtsSpan.MONTH_MAY">
+  MONTH_MAY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L108"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#MONTH_MAY">https://developer.android.com/reference/android/text/style/TtsSpan.html#MONTH_MAY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int MONTH_MAY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_MONTH_NOVEMBER_" data-uid="Android.Text.Style.TtsSpan.MONTH_NOVEMBER*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_MONTH_NOVEMBER" data-uid="Android.Text.Style.TtsSpan.MONTH_NOVEMBER">
+  MONTH_NOVEMBER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L114"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#MONTH_NOVEMBER">https://developer.android.com/reference/android/text/style/TtsSpan.html#MONTH_NOVEMBER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int MONTH_NOVEMBER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_MONTH_OCTOBER_" data-uid="Android.Text.Style.TtsSpan.MONTH_OCTOBER*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_MONTH_OCTOBER" data-uid="Android.Text.Style.TtsSpan.MONTH_OCTOBER">
+  MONTH_OCTOBER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L120"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#MONTH_OCTOBER">https://developer.android.com/reference/android/text/style/TtsSpan.html#MONTH_OCTOBER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int MONTH_OCTOBER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_MONTH_SEPTEMBER_" data-uid="Android.Text.Style.TtsSpan.MONTH_SEPTEMBER*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_MONTH_SEPTEMBER" data-uid="Android.Text.Style.TtsSpan.MONTH_SEPTEMBER">
+  MONTH_SEPTEMBER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L126"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#MONTH_SEPTEMBER">https://developer.android.com/reference/android/text/style/TtsSpan.html#MONTH_SEPTEMBER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int MONTH_SEPTEMBER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_MULTIPLICITY_DUAL_" data-uid="Android.Text.Style.TtsSpan.MULTIPLICITY_DUAL*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_MULTIPLICITY_DUAL" data-uid="Android.Text.Style.TtsSpan.MULTIPLICITY_DUAL">
+  MULTIPLICITY_DUAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L444"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#MULTIPLICITY_DUAL">https://developer.android.com/reference/android/text/style/TtsSpan.html#MULTIPLICITY_DUAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String MULTIPLICITY_DUAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_MULTIPLICITY_PLURAL_" data-uid="Android.Text.Style.TtsSpan.MULTIPLICITY_PLURAL*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_MULTIPLICITY_PLURAL" data-uid="Android.Text.Style.TtsSpan.MULTIPLICITY_PLURAL">
+  MULTIPLICITY_PLURAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L450"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#MULTIPLICITY_PLURAL">https://developer.android.com/reference/android/text/style/TtsSpan.html#MULTIPLICITY_PLURAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String MULTIPLICITY_PLURAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_MULTIPLICITY_SINGLE_" data-uid="Android.Text.Style.TtsSpan.MULTIPLICITY_SINGLE*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_MULTIPLICITY_SINGLE" data-uid="Android.Text.Style.TtsSpan.MULTIPLICITY_SINGLE">
+  MULTIPLICITY_SINGLE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L456"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#MULTIPLICITY_SINGLE">https://developer.android.com/reference/android/text/style/TtsSpan.html#MULTIPLICITY_SINGLE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String MULTIPLICITY_SINGLE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_TYPE_CARDINAL_" data-uid="Android.Text.Style.TtsSpan.TYPE_CARDINAL*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_TYPE_CARDINAL" data-uid="Android.Text.Style.TtsSpan.TYPE_CARDINAL">
+  TYPE_CARDINAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L462"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#TYPE_CARDINAL">https://developer.android.com/reference/android/text/style/TtsSpan.html#TYPE_CARDINAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String TYPE_CARDINAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_TYPE_DATE_" data-uid="Android.Text.Style.TtsSpan.TYPE_DATE*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_TYPE_DATE" data-uid="Android.Text.Style.TtsSpan.TYPE_DATE">
+  TYPE_DATE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L468"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#TYPE_DATE">https://developer.android.com/reference/android/text/style/TtsSpan.html#TYPE_DATE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String TYPE_DATE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_TYPE_DECIMAL_" data-uid="Android.Text.Style.TtsSpan.TYPE_DECIMAL*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_TYPE_DECIMAL" data-uid="Android.Text.Style.TtsSpan.TYPE_DECIMAL">
+  TYPE_DECIMAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L474"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#TYPE_DECIMAL">https://developer.android.com/reference/android/text/style/TtsSpan.html#TYPE_DECIMAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String TYPE_DECIMAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_TYPE_DIGITS_" data-uid="Android.Text.Style.TtsSpan.TYPE_DIGITS*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_TYPE_DIGITS" data-uid="Android.Text.Style.TtsSpan.TYPE_DIGITS">
+  TYPE_DIGITS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L480"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#TYPE_DIGITS">https://developer.android.com/reference/android/text/style/TtsSpan.html#TYPE_DIGITS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String TYPE_DIGITS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_TYPE_ELECTRONIC_" data-uid="Android.Text.Style.TtsSpan.TYPE_ELECTRONIC*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_TYPE_ELECTRONIC" data-uid="Android.Text.Style.TtsSpan.TYPE_ELECTRONIC">
+  TYPE_ELECTRONIC
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L486"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#TYPE_ELECTRONIC">https://developer.android.com/reference/android/text/style/TtsSpan.html#TYPE_ELECTRONIC</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String TYPE_ELECTRONIC { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_TYPE_FRACTION_" data-uid="Android.Text.Style.TtsSpan.TYPE_FRACTION*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_TYPE_FRACTION" data-uid="Android.Text.Style.TtsSpan.TYPE_FRACTION">
+  TYPE_FRACTION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L492"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#TYPE_FRACTION">https://developer.android.com/reference/android/text/style/TtsSpan.html#TYPE_FRACTION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String TYPE_FRACTION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_TYPE_MEASURE_" data-uid="Android.Text.Style.TtsSpan.TYPE_MEASURE*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_TYPE_MEASURE" data-uid="Android.Text.Style.TtsSpan.TYPE_MEASURE">
+  TYPE_MEASURE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L498"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#TYPE_MEASURE">https://developer.android.com/reference/android/text/style/TtsSpan.html#TYPE_MEASURE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String TYPE_MEASURE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_TYPE_MONEY_" data-uid="Android.Text.Style.TtsSpan.TYPE_MONEY*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_TYPE_MONEY" data-uid="Android.Text.Style.TtsSpan.TYPE_MONEY">
+  TYPE_MONEY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L504"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#TYPE_MONEY">https://developer.android.com/reference/android/text/style/TtsSpan.html#TYPE_MONEY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String TYPE_MONEY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_TYPE_ORDINAL_" data-uid="Android.Text.Style.TtsSpan.TYPE_ORDINAL*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_TYPE_ORDINAL" data-uid="Android.Text.Style.TtsSpan.TYPE_ORDINAL">
+  TYPE_ORDINAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L510"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#TYPE_ORDINAL">https://developer.android.com/reference/android/text/style/TtsSpan.html#TYPE_ORDINAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String TYPE_ORDINAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_TYPE_TELEPHONE_" data-uid="Android.Text.Style.TtsSpan.TYPE_TELEPHONE*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_TYPE_TELEPHONE" data-uid="Android.Text.Style.TtsSpan.TYPE_TELEPHONE">
+  TYPE_TELEPHONE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L516"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#TYPE_TELEPHONE">https://developer.android.com/reference/android/text/style/TtsSpan.html#TYPE_TELEPHONE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String TYPE_TELEPHONE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_TYPE_TEXT_" data-uid="Android.Text.Style.TtsSpan.TYPE_TEXT*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_TYPE_TEXT" data-uid="Android.Text.Style.TtsSpan.TYPE_TEXT">
+  TYPE_TEXT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L522"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#TYPE_TEXT">https://developer.android.com/reference/android/text/style/TtsSpan.html#TYPE_TEXT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String TYPE_TEXT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_TYPE_TIME_" data-uid="Android.Text.Style.TtsSpan.TYPE_TIME*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_TYPE_TIME" data-uid="Android.Text.Style.TtsSpan.TYPE_TIME">
+  TYPE_TIME
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L528"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#TYPE_TIME">https://developer.android.com/reference/android/text/style/TtsSpan.html#TYPE_TIME</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String TYPE_TIME { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_TYPE_VERBATIM_" data-uid="Android.Text.Style.TtsSpan.TYPE_VERBATIM*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_TYPE_VERBATIM" data-uid="Android.Text.Style.TtsSpan.TYPE_VERBATIM">
+  TYPE_VERBATIM
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L534"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#TYPE_VERBATIM">https://developer.android.com/reference/android/text/style/TtsSpan.html#TYPE_VERBATIM</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String TYPE_VERBATIM { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_WEEKDAY_FRIDAY_" data-uid="Android.Text.Style.TtsSpan.WEEKDAY_FRIDAY*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_WEEKDAY_FRIDAY" data-uid="Android.Text.Style.TtsSpan.WEEKDAY_FRIDAY">
+  WEEKDAY_FRIDAY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L132"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#WEEKDAY_FRIDAY">https://developer.android.com/reference/android/text/style/TtsSpan.html#WEEKDAY_FRIDAY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int WEEKDAY_FRIDAY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_WEEKDAY_MONDAY_" data-uid="Android.Text.Style.TtsSpan.WEEKDAY_MONDAY*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_WEEKDAY_MONDAY" data-uid="Android.Text.Style.TtsSpan.WEEKDAY_MONDAY">
+  WEEKDAY_MONDAY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L138"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#WEEKDAY_MONDAY">https://developer.android.com/reference/android/text/style/TtsSpan.html#WEEKDAY_MONDAY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int WEEKDAY_MONDAY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_WEEKDAY_SATURDAY_" data-uid="Android.Text.Style.TtsSpan.WEEKDAY_SATURDAY*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_WEEKDAY_SATURDAY" data-uid="Android.Text.Style.TtsSpan.WEEKDAY_SATURDAY">
+  WEEKDAY_SATURDAY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L144"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#WEEKDAY_SATURDAY">https://developer.android.com/reference/android/text/style/TtsSpan.html#WEEKDAY_SATURDAY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int WEEKDAY_SATURDAY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_WEEKDAY_SUNDAY_" data-uid="Android.Text.Style.TtsSpan.WEEKDAY_SUNDAY*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_WEEKDAY_SUNDAY" data-uid="Android.Text.Style.TtsSpan.WEEKDAY_SUNDAY">
+  WEEKDAY_SUNDAY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L150"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#WEEKDAY_SUNDAY">https://developer.android.com/reference/android/text/style/TtsSpan.html#WEEKDAY_SUNDAY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int WEEKDAY_SUNDAY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_WEEKDAY_THURSDAY_" data-uid="Android.Text.Style.TtsSpan.WEEKDAY_THURSDAY*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_WEEKDAY_THURSDAY" data-uid="Android.Text.Style.TtsSpan.WEEKDAY_THURSDAY">
+  WEEKDAY_THURSDAY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L156"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#WEEKDAY_THURSDAY">https://developer.android.com/reference/android/text/style/TtsSpan.html#WEEKDAY_THURSDAY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int WEEKDAY_THURSDAY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_WEEKDAY_TUESDAY_" data-uid="Android.Text.Style.TtsSpan.WEEKDAY_TUESDAY*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_WEEKDAY_TUESDAY" data-uid="Android.Text.Style.TtsSpan.WEEKDAY_TUESDAY">
+  WEEKDAY_TUESDAY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L162"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#WEEKDAY_TUESDAY">https://developer.android.com/reference/android/text/style/TtsSpan.html#WEEKDAY_TUESDAY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int WEEKDAY_TUESDAY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_WEEKDAY_WEDNESDAY_" data-uid="Android.Text.Style.TtsSpan.WEEKDAY_WEDNESDAY*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_WEEKDAY_WEDNESDAY" data-uid="Android.Text.Style.TtsSpan.WEEKDAY_WEDNESDAY">
+  WEEKDAY_WEDNESDAY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L168"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#WEEKDAY_WEDNESDAY">https://developer.android.com/reference/android/text/style/TtsSpan.html#WEEKDAY_WEDNESDAY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int WEEKDAY_WEDNESDAY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_Text_Style_TtsSpan_DescribeContents_" data-uid="Android.Text.Style.TtsSpan.DescribeContents*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_DescribeContents" data-uid="Android.Text.Style.TtsSpan.DescribeContents">
+  DescribeContents()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L557"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#describeContents()">https://developer.android.com/reference/android/text/style/TtsSpan.html#describeContents()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int DescribeContents()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_GetArgs_" data-uid="Android.Text.Style.TtsSpan.GetArgs*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_GetArgs" data-uid="Android.Text.Style.TtsSpan.GetArgs">
+  GetArgs()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L549"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#getArgs()">https://developer.android.com/reference/android/text/style/TtsSpan.html#getArgs()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PersistableBundle GetArgs()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Os.PersistableBundle.html">PersistableBundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.PersistableBundle.html">PersistableBundle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_GetSpanTypeId_" data-uid="Android.Text.Style.TtsSpan.GetSpanTypeId*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_GetSpanTypeId" data-uid="Android.Text.Style.TtsSpan.GetSpanTypeId">
+  GetSpanTypeId()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L565"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#getSpanTypeId()">https://developer.android.com/reference/android/text/style/TtsSpan.html#getSpanTypeId()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetSpanTypeId()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_GetType_" data-uid="Android.Text.Style.TtsSpan.GetType*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_GetType" data-uid="Android.Text.Style.TtsSpan.GetType">
+  GetType()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L573"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#getType()">https://developer.android.com/reference/android/text/style/TtsSpan.html#getType()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetType()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Text_Style_TtsSpan_WriteToParcel_" data-uid="Android.Text.Style.TtsSpan.WriteToParcel*"></a>
+
+  <h3 id="Android_Text_Style_TtsSpan_WriteToParcel_Android_Os_Parcel_System_Int32_" data-uid="Android.Text.Style.TtsSpan.WriteToParcel(Android.Os.Parcel,System.Int32)">
+  WriteToParcel(Parcel, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L582"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/style/TtsSpan.html#writeToParcel(android.os.Parcel,int)">https://developer.android.com/reference/android/text/style/TtsSpan.html#writeToParcel(android.os.Parcel,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteToParcel(Parcel arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Os.Parcel.html">Parcel</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Parcel.html">Parcel</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/Style/TtsSpan.cs/#L29" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,2210 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class SecurityLog | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class SecurityLog | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/app/admin/SecurityLog.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_App_Admin_SecurityLog.md&amp;value=---%0Auid%3A%20Android.App.Admin.SecurityLog%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.App.Admin.SecurityLog">
+
+
+
+  <h1 id="Android_App_Admin_SecurityLog" data-uid="Android.App.Admin.SecurityLog" class="text-break">
+Class SecurityLog  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/SecurityLog.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.App.html">App</a>.<a class="xref" href="Android.App.Admin.html">Admin</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/app/admin/SecurityLog.html">https://developer.android.com/reference/android/app/admin/SecurityLog.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SecurityLog : JVMBridgeBase&lt;SecurityLog&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.App.Admin.SecurityLog.html">SecurityLog</a>&gt;</div>
+      <div><span class="xref">SecurityLog</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SecurityLog&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SecurityLog&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SecurityLog&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SecurityLog&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SecurityLog&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SecurityLog&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SecurityLog&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SecurityLog&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SecurityLog&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SecurityLog&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SecurityLog&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SecurityLog&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SecurityLog&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SecurityLog&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SecurityLog&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SecurityLog&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SecurityLog&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SecurityLog&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SecurityLog&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SecurityLog&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SecurityLog&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SecurityLog&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SecurityLog&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SecurityLog&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SecurityLog&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SecurityLog&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SecurityLog&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;SecurityLog&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SecurityLog&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SecurityLog&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SecurityLog&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SecurityLog&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SecurityLog&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SecurityLog&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SecurityLog&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SecurityLog&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SecurityLog&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SecurityLog&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SecurityLog&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SecurityLog&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SecurityLog&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SecurityLog&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SecurityLog&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;SecurityLog&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;SecurityLog&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;SecurityLog&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;SecurityLog&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;SecurityLog&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;SecurityLog&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;SecurityLog&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_App_Admin_SecurityLog__ctor_" data-uid="Android.App.Admin.SecurityLog.#ctor*"></a>
+
+  <h3 id="Android_App_Admin_SecurityLog__ctor" data-uid="Android.App.Admin.SecurityLog.#ctor">
+  SecurityLog()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/AllPackageClasses.cs/#L1034"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SecurityLog()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_SecurityLog__ctor_" data-uid="Android.App.Admin.SecurityLog.#ctor*"></a>
+
+  <h3 id="Android_App_Admin_SecurityLog__ctor_System_Object___" data-uid="Android.App.Admin.SecurityLog.#ctor(System.Object[])">
+  SecurityLog(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/AllPackageClasses.cs/#L1038"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SecurityLog(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_App_Admin_SecurityLog_BridgeClassName_" data-uid="Android.App.Admin.SecurityLog.BridgeClassName*"></a>
+
+  <h3 id="Android_App_Admin_SecurityLog_BridgeClassName" data-uid="Android.App.Admin.SecurityLog.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/AllPackageClasses.cs/#L1045"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_SecurityLog_IsBridgeAbstract_" data-uid="Android.App.Admin.SecurityLog.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_App_Admin_SecurityLog_IsBridgeAbstract" data-uid="Android.App.Admin.SecurityLog.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/AllPackageClasses.cs/#L1049"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_SecurityLog_IsBridgeCloseable_" data-uid="Android.App.Admin.SecurityLog.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_App_Admin_SecurityLog_IsBridgeCloseable" data-uid="Android.App.Admin.SecurityLog.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/AllPackageClasses.cs/#L1053"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_SecurityLog_IsBridgeInterface_" data-uid="Android.App.Admin.SecurityLog.IsBridgeInterface*"></a>
+
+  <h3 id="Android_App_Admin_SecurityLog_IsBridgeInterface" data-uid="Android.App.Admin.SecurityLog.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/AllPackageClasses.cs/#L1057"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_SecurityLog_IsBridgeStatic_" data-uid="Android.App.Admin.SecurityLog.IsBridgeStatic*"></a>
+
+  <h3 id="Android_App_Admin_SecurityLog_IsBridgeStatic" data-uid="Android.App.Admin.SecurityLog.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/AllPackageClasses.cs/#L1061"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_SecurityLog_LEVEL_ERROR_" data-uid="Android.App.Admin.SecurityLog.LEVEL_ERROR*"></a>
+
+  <h3 id="Android_App_Admin_SecurityLog_LEVEL_ERROR" data-uid="Android.App.Admin.SecurityLog.LEVEL_ERROR">
+  LEVEL_ERROR
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/SecurityLog.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/SecurityLog.html#LEVEL_ERROR">https://developer.android.com/reference/android/app/admin/SecurityLog.html#LEVEL_ERROR</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int LEVEL_ERROR { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_SecurityLog_LEVEL_INFO_" data-uid="Android.App.Admin.SecurityLog.LEVEL_INFO*"></a>
+
+  <h3 id="Android_App_Admin_SecurityLog_LEVEL_INFO" data-uid="Android.App.Admin.SecurityLog.LEVEL_INFO">
+  LEVEL_INFO
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/SecurityLog.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/SecurityLog.html#LEVEL_INFO">https://developer.android.com/reference/android/app/admin/SecurityLog.html#LEVEL_INFO</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int LEVEL_INFO { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_SecurityLog_LEVEL_WARNING_" data-uid="Android.App.Admin.SecurityLog.LEVEL_WARNING*"></a>
+
+  <h3 id="Android_App_Admin_SecurityLog_LEVEL_WARNING" data-uid="Android.App.Admin.SecurityLog.LEVEL_WARNING">
+  LEVEL_WARNING
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/SecurityLog.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/SecurityLog.html#LEVEL_WARNING">https://developer.android.com/reference/android/app/admin/SecurityLog.html#LEVEL_WARNING</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int LEVEL_WARNING { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_SecurityLog_TAG_ADB_SHELL_CMD_" data-uid="Android.App.Admin.SecurityLog.TAG_ADB_SHELL_CMD*"></a>
+
+  <h3 id="Android_App_Admin_SecurityLog_TAG_ADB_SHELL_CMD" data-uid="Android.App.Admin.SecurityLog.TAG_ADB_SHELL_CMD">
+  TAG_ADB_SHELL_CMD
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/SecurityLog.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_ADB_SHELL_CMD">https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_ADB_SHELL_CMD</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TAG_ADB_SHELL_CMD { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_SecurityLog_TAG_ADB_SHELL_INTERACTIVE_" data-uid="Android.App.Admin.SecurityLog.TAG_ADB_SHELL_INTERACTIVE*"></a>
+
+  <h3 id="Android_App_Admin_SecurityLog_TAG_ADB_SHELL_INTERACTIVE" data-uid="Android.App.Admin.SecurityLog.TAG_ADB_SHELL_INTERACTIVE">
+  TAG_ADB_SHELL_INTERACTIVE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/SecurityLog.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_ADB_SHELL_INTERACTIVE">https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_ADB_SHELL_INTERACTIVE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TAG_ADB_SHELL_INTERACTIVE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_SecurityLog_TAG_APP_PROCESS_START_" data-uid="Android.App.Admin.SecurityLog.TAG_APP_PROCESS_START*"></a>
+
+  <h3 id="Android_App_Admin_SecurityLog_TAG_APP_PROCESS_START" data-uid="Android.App.Admin.SecurityLog.TAG_APP_PROCESS_START">
+  TAG_APP_PROCESS_START
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/SecurityLog.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_APP_PROCESS_START">https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_APP_PROCESS_START</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TAG_APP_PROCESS_START { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_SecurityLog_TAG_BLUETOOTH_CONNECTION_" data-uid="Android.App.Admin.SecurityLog.TAG_BLUETOOTH_CONNECTION*"></a>
+
+  <h3 id="Android_App_Admin_SecurityLog_TAG_BLUETOOTH_CONNECTION" data-uid="Android.App.Admin.SecurityLog.TAG_BLUETOOTH_CONNECTION">
+  TAG_BLUETOOTH_CONNECTION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/SecurityLog.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_BLUETOOTH_CONNECTION">https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_BLUETOOTH_CONNECTION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TAG_BLUETOOTH_CONNECTION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_SecurityLog_TAG_BLUETOOTH_DISCONNECTION_" data-uid="Android.App.Admin.SecurityLog.TAG_BLUETOOTH_DISCONNECTION*"></a>
+
+  <h3 id="Android_App_Admin_SecurityLog_TAG_BLUETOOTH_DISCONNECTION" data-uid="Android.App.Admin.SecurityLog.TAG_BLUETOOTH_DISCONNECTION">
+  TAG_BLUETOOTH_DISCONNECTION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/SecurityLog.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_BLUETOOTH_DISCONNECTION">https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_BLUETOOTH_DISCONNECTION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TAG_BLUETOOTH_DISCONNECTION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_SecurityLog_TAG_CAMERA_POLICY_SET_" data-uid="Android.App.Admin.SecurityLog.TAG_CAMERA_POLICY_SET*"></a>
+
+  <h3 id="Android_App_Admin_SecurityLog_TAG_CAMERA_POLICY_SET" data-uid="Android.App.Admin.SecurityLog.TAG_CAMERA_POLICY_SET">
+  TAG_CAMERA_POLICY_SET
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/SecurityLog.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_CAMERA_POLICY_SET">https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_CAMERA_POLICY_SET</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TAG_CAMERA_POLICY_SET { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_SecurityLog_TAG_CERT_AUTHORITY_INSTALLED_" data-uid="Android.App.Admin.SecurityLog.TAG_CERT_AUTHORITY_INSTALLED*"></a>
+
+  <h3 id="Android_App_Admin_SecurityLog_TAG_CERT_AUTHORITY_INSTALLED" data-uid="Android.App.Admin.SecurityLog.TAG_CERT_AUTHORITY_INSTALLED">
+  TAG_CERT_AUTHORITY_INSTALLED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/SecurityLog.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_CERT_AUTHORITY_INSTALLED">https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_CERT_AUTHORITY_INSTALLED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TAG_CERT_AUTHORITY_INSTALLED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_SecurityLog_TAG_CERT_AUTHORITY_REMOVED_" data-uid="Android.App.Admin.SecurityLog.TAG_CERT_AUTHORITY_REMOVED*"></a>
+
+  <h3 id="Android_App_Admin_SecurityLog_TAG_CERT_AUTHORITY_REMOVED" data-uid="Android.App.Admin.SecurityLog.TAG_CERT_AUTHORITY_REMOVED">
+  TAG_CERT_AUTHORITY_REMOVED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/SecurityLog.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_CERT_AUTHORITY_REMOVED">https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_CERT_AUTHORITY_REMOVED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TAG_CERT_AUTHORITY_REMOVED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_SecurityLog_TAG_CERT_VALIDATION_FAILURE_" data-uid="Android.App.Admin.SecurityLog.TAG_CERT_VALIDATION_FAILURE*"></a>
+
+  <h3 id="Android_App_Admin_SecurityLog_TAG_CERT_VALIDATION_FAILURE" data-uid="Android.App.Admin.SecurityLog.TAG_CERT_VALIDATION_FAILURE">
+  TAG_CERT_VALIDATION_FAILURE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/SecurityLog.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_CERT_VALIDATION_FAILURE">https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_CERT_VALIDATION_FAILURE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TAG_CERT_VALIDATION_FAILURE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_SecurityLog_TAG_CRYPTO_SELF_TEST_COMPLETED_" data-uid="Android.App.Admin.SecurityLog.TAG_CRYPTO_SELF_TEST_COMPLETED*"></a>
+
+  <h3 id="Android_App_Admin_SecurityLog_TAG_CRYPTO_SELF_TEST_COMPLETED" data-uid="Android.App.Admin.SecurityLog.TAG_CRYPTO_SELF_TEST_COMPLETED">
+  TAG_CRYPTO_SELF_TEST_COMPLETED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/SecurityLog.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_CRYPTO_SELF_TEST_COMPLETED">https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_CRYPTO_SELF_TEST_COMPLETED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TAG_CRYPTO_SELF_TEST_COMPLETED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_SecurityLog_TAG_KEYGUARD_DISABLED_FEATURES_SET_" data-uid="Android.App.Admin.SecurityLog.TAG_KEYGUARD_DISABLED_FEATURES_SET*"></a>
+
+  <h3 id="Android_App_Admin_SecurityLog_TAG_KEYGUARD_DISABLED_FEATURES_SET" data-uid="Android.App.Admin.SecurityLog.TAG_KEYGUARD_DISABLED_FEATURES_SET">
+  TAG_KEYGUARD_DISABLED_FEATURES_SET
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/SecurityLog.cs/#L145"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_KEYGUARD_DISABLED_FEATURES_SET">https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_KEYGUARD_DISABLED_FEATURES_SET</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TAG_KEYGUARD_DISABLED_FEATURES_SET { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_SecurityLog_TAG_KEYGUARD_DISMISSED_" data-uid="Android.App.Admin.SecurityLog.TAG_KEYGUARD_DISMISSED*"></a>
+
+  <h3 id="Android_App_Admin_SecurityLog_TAG_KEYGUARD_DISMISSED" data-uid="Android.App.Admin.SecurityLog.TAG_KEYGUARD_DISMISSED">
+  TAG_KEYGUARD_DISMISSED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/SecurityLog.cs/#L157"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_KEYGUARD_DISMISSED">https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_KEYGUARD_DISMISSED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TAG_KEYGUARD_DISMISSED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_SecurityLog_TAG_KEYGUARD_DISMISS_AUTH_ATTEMPT_" data-uid="Android.App.Admin.SecurityLog.TAG_KEYGUARD_DISMISS_AUTH_ATTEMPT*"></a>
+
+  <h3 id="Android_App_Admin_SecurityLog_TAG_KEYGUARD_DISMISS_AUTH_ATTEMPT" data-uid="Android.App.Admin.SecurityLog.TAG_KEYGUARD_DISMISS_AUTH_ATTEMPT">
+  TAG_KEYGUARD_DISMISS_AUTH_ATTEMPT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/SecurityLog.cs/#L151"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_KEYGUARD_DISMISS_AUTH_ATTEMPT">https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_KEYGUARD_DISMISS_AUTH_ATTEMPT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TAG_KEYGUARD_DISMISS_AUTH_ATTEMPT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_SecurityLog_TAG_KEYGUARD_SECURED_" data-uid="Android.App.Admin.SecurityLog.TAG_KEYGUARD_SECURED*"></a>
+
+  <h3 id="Android_App_Admin_SecurityLog_TAG_KEYGUARD_SECURED" data-uid="Android.App.Admin.SecurityLog.TAG_KEYGUARD_SECURED">
+  TAG_KEYGUARD_SECURED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/SecurityLog.cs/#L163"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_KEYGUARD_SECURED">https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_KEYGUARD_SECURED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TAG_KEYGUARD_SECURED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_SecurityLog_TAG_KEY_DESTRUCTION_" data-uid="Android.App.Admin.SecurityLog.TAG_KEY_DESTRUCTION*"></a>
+
+  <h3 id="Android_App_Admin_SecurityLog_TAG_KEY_DESTRUCTION" data-uid="Android.App.Admin.SecurityLog.TAG_KEY_DESTRUCTION">
+  TAG_KEY_DESTRUCTION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/SecurityLog.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_KEY_DESTRUCTION">https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_KEY_DESTRUCTION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TAG_KEY_DESTRUCTION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_SecurityLog_TAG_KEY_GENERATED_" data-uid="Android.App.Admin.SecurityLog.TAG_KEY_GENERATED*"></a>
+
+  <h3 id="Android_App_Admin_SecurityLog_TAG_KEY_GENERATED" data-uid="Android.App.Admin.SecurityLog.TAG_KEY_GENERATED">
+  TAG_KEY_GENERATED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/SecurityLog.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_KEY_GENERATED">https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_KEY_GENERATED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TAG_KEY_GENERATED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_SecurityLog_TAG_KEY_IMPORT_" data-uid="Android.App.Admin.SecurityLog.TAG_KEY_IMPORT*"></a>
+
+  <h3 id="Android_App_Admin_SecurityLog_TAG_KEY_IMPORT" data-uid="Android.App.Admin.SecurityLog.TAG_KEY_IMPORT">
+  TAG_KEY_IMPORT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/SecurityLog.cs/#L133"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_KEY_IMPORT">https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_KEY_IMPORT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TAG_KEY_IMPORT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_SecurityLog_TAG_KEY_INTEGRITY_VIOLATION_" data-uid="Android.App.Admin.SecurityLog.TAG_KEY_INTEGRITY_VIOLATION*"></a>
+
+  <h3 id="Android_App_Admin_SecurityLog_TAG_KEY_INTEGRITY_VIOLATION" data-uid="Android.App.Admin.SecurityLog.TAG_KEY_INTEGRITY_VIOLATION">
+  TAG_KEY_INTEGRITY_VIOLATION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/SecurityLog.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_KEY_INTEGRITY_VIOLATION">https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_KEY_INTEGRITY_VIOLATION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TAG_KEY_INTEGRITY_VIOLATION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_SecurityLog_TAG_LOGGING_STARTED_" data-uid="Android.App.Admin.SecurityLog.TAG_LOGGING_STARTED*"></a>
+
+  <h3 id="Android_App_Admin_SecurityLog_TAG_LOGGING_STARTED" data-uid="Android.App.Admin.SecurityLog.TAG_LOGGING_STARTED">
+  TAG_LOGGING_STARTED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/SecurityLog.cs/#L175"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_LOGGING_STARTED">https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_LOGGING_STARTED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TAG_LOGGING_STARTED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_SecurityLog_TAG_LOGGING_STOPPED_" data-uid="Android.App.Admin.SecurityLog.TAG_LOGGING_STOPPED*"></a>
+
+  <h3 id="Android_App_Admin_SecurityLog_TAG_LOGGING_STOPPED" data-uid="Android.App.Admin.SecurityLog.TAG_LOGGING_STOPPED">
+  TAG_LOGGING_STOPPED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/SecurityLog.cs/#L181"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_LOGGING_STOPPED">https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_LOGGING_STOPPED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TAG_LOGGING_STOPPED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_SecurityLog_TAG_LOG_BUFFER_SIZE_CRITICAL_" data-uid="Android.App.Admin.SecurityLog.TAG_LOG_BUFFER_SIZE_CRITICAL*"></a>
+
+  <h3 id="Android_App_Admin_SecurityLog_TAG_LOG_BUFFER_SIZE_CRITICAL" data-uid="Android.App.Admin.SecurityLog.TAG_LOG_BUFFER_SIZE_CRITICAL">
+  TAG_LOG_BUFFER_SIZE_CRITICAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/SecurityLog.cs/#L169"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_LOG_BUFFER_SIZE_CRITICAL">https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_LOG_BUFFER_SIZE_CRITICAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TAG_LOG_BUFFER_SIZE_CRITICAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_SecurityLog_TAG_MAX_PASSWORD_ATTEMPTS_SET_" data-uid="Android.App.Admin.SecurityLog.TAG_MAX_PASSWORD_ATTEMPTS_SET*"></a>
+
+  <h3 id="Android_App_Admin_SecurityLog_TAG_MAX_PASSWORD_ATTEMPTS_SET" data-uid="Android.App.Admin.SecurityLog.TAG_MAX_PASSWORD_ATTEMPTS_SET">
+  TAG_MAX_PASSWORD_ATTEMPTS_SET
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/SecurityLog.cs/#L187"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_MAX_PASSWORD_ATTEMPTS_SET">https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_MAX_PASSWORD_ATTEMPTS_SET</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TAG_MAX_PASSWORD_ATTEMPTS_SET { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_SecurityLog_TAG_MAX_SCREEN_LOCK_TIMEOUT_SET_" data-uid="Android.App.Admin.SecurityLog.TAG_MAX_SCREEN_LOCK_TIMEOUT_SET*"></a>
+
+  <h3 id="Android_App_Admin_SecurityLog_TAG_MAX_SCREEN_LOCK_TIMEOUT_SET" data-uid="Android.App.Admin.SecurityLog.TAG_MAX_SCREEN_LOCK_TIMEOUT_SET">
+  TAG_MAX_SCREEN_LOCK_TIMEOUT_SET
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/SecurityLog.cs/#L193"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_MAX_SCREEN_LOCK_TIMEOUT_SET">https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_MAX_SCREEN_LOCK_TIMEOUT_SET</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TAG_MAX_SCREEN_LOCK_TIMEOUT_SET { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_SecurityLog_TAG_MEDIA_MOUNT_" data-uid="Android.App.Admin.SecurityLog.TAG_MEDIA_MOUNT*"></a>
+
+  <h3 id="Android_App_Admin_SecurityLog_TAG_MEDIA_MOUNT" data-uid="Android.App.Admin.SecurityLog.TAG_MEDIA_MOUNT">
+  TAG_MEDIA_MOUNT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/SecurityLog.cs/#L199"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_MEDIA_MOUNT">https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_MEDIA_MOUNT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TAG_MEDIA_MOUNT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_SecurityLog_TAG_MEDIA_UNMOUNT_" data-uid="Android.App.Admin.SecurityLog.TAG_MEDIA_UNMOUNT*"></a>
+
+  <h3 id="Android_App_Admin_SecurityLog_TAG_MEDIA_UNMOUNT" data-uid="Android.App.Admin.SecurityLog.TAG_MEDIA_UNMOUNT">
+  TAG_MEDIA_UNMOUNT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/SecurityLog.cs/#L205"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_MEDIA_UNMOUNT">https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_MEDIA_UNMOUNT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TAG_MEDIA_UNMOUNT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_SecurityLog_TAG_OS_SHUTDOWN_" data-uid="Android.App.Admin.SecurityLog.TAG_OS_SHUTDOWN*"></a>
+
+  <h3 id="Android_App_Admin_SecurityLog_TAG_OS_SHUTDOWN" data-uid="Android.App.Admin.SecurityLog.TAG_OS_SHUTDOWN">
+  TAG_OS_SHUTDOWN
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/SecurityLog.cs/#L211"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_OS_SHUTDOWN">https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_OS_SHUTDOWN</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TAG_OS_SHUTDOWN { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_SecurityLog_TAG_OS_STARTUP_" data-uid="Android.App.Admin.SecurityLog.TAG_OS_STARTUP*"></a>
+
+  <h3 id="Android_App_Admin_SecurityLog_TAG_OS_STARTUP" data-uid="Android.App.Admin.SecurityLog.TAG_OS_STARTUP">
+  TAG_OS_STARTUP
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/SecurityLog.cs/#L217"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_OS_STARTUP">https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_OS_STARTUP</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TAG_OS_STARTUP { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_SecurityLog_TAG_PACKAGE_INSTALLED_" data-uid="Android.App.Admin.SecurityLog.TAG_PACKAGE_INSTALLED*"></a>
+
+  <h3 id="Android_App_Admin_SecurityLog_TAG_PACKAGE_INSTALLED" data-uid="Android.App.Admin.SecurityLog.TAG_PACKAGE_INSTALLED">
+  TAG_PACKAGE_INSTALLED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/SecurityLog.cs/#L223"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_PACKAGE_INSTALLED">https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_PACKAGE_INSTALLED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TAG_PACKAGE_INSTALLED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_SecurityLog_TAG_PACKAGE_UNINSTALLED_" data-uid="Android.App.Admin.SecurityLog.TAG_PACKAGE_UNINSTALLED*"></a>
+
+  <h3 id="Android_App_Admin_SecurityLog_TAG_PACKAGE_UNINSTALLED" data-uid="Android.App.Admin.SecurityLog.TAG_PACKAGE_UNINSTALLED">
+  TAG_PACKAGE_UNINSTALLED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/SecurityLog.cs/#L229"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_PACKAGE_UNINSTALLED">https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_PACKAGE_UNINSTALLED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TAG_PACKAGE_UNINSTALLED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_SecurityLog_TAG_PACKAGE_UPDATED_" data-uid="Android.App.Admin.SecurityLog.TAG_PACKAGE_UPDATED*"></a>
+
+  <h3 id="Android_App_Admin_SecurityLog_TAG_PACKAGE_UPDATED" data-uid="Android.App.Admin.SecurityLog.TAG_PACKAGE_UPDATED">
+  TAG_PACKAGE_UPDATED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/SecurityLog.cs/#L235"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_PACKAGE_UPDATED">https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_PACKAGE_UPDATED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TAG_PACKAGE_UPDATED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_SecurityLog_TAG_PASSWORD_CHANGED_" data-uid="Android.App.Admin.SecurityLog.TAG_PASSWORD_CHANGED*"></a>
+
+  <h3 id="Android_App_Admin_SecurityLog_TAG_PASSWORD_CHANGED" data-uid="Android.App.Admin.SecurityLog.TAG_PASSWORD_CHANGED">
+  TAG_PASSWORD_CHANGED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/SecurityLog.cs/#L241"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_PASSWORD_CHANGED">https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_PASSWORD_CHANGED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TAG_PASSWORD_CHANGED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_SecurityLog_TAG_PASSWORD_COMPLEXITY_REQUIRED_" data-uid="Android.App.Admin.SecurityLog.TAG_PASSWORD_COMPLEXITY_REQUIRED*"></a>
+
+  <h3 id="Android_App_Admin_SecurityLog_TAG_PASSWORD_COMPLEXITY_REQUIRED" data-uid="Android.App.Admin.SecurityLog.TAG_PASSWORD_COMPLEXITY_REQUIRED">
+  TAG_PASSWORD_COMPLEXITY_REQUIRED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/SecurityLog.cs/#L247"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_PASSWORD_COMPLEXITY_REQUIRED">https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_PASSWORD_COMPLEXITY_REQUIRED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TAG_PASSWORD_COMPLEXITY_REQUIRED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_SecurityLog_TAG_PASSWORD_COMPLEXITY_SET_" data-uid="Android.App.Admin.SecurityLog.TAG_PASSWORD_COMPLEXITY_SET*"></a>
+
+  <h3 id="Android_App_Admin_SecurityLog_TAG_PASSWORD_COMPLEXITY_SET" data-uid="Android.App.Admin.SecurityLog.TAG_PASSWORD_COMPLEXITY_SET">
+  TAG_PASSWORD_COMPLEXITY_SET
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/SecurityLog.cs/#L253"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_PASSWORD_COMPLEXITY_SET">https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_PASSWORD_COMPLEXITY_SET</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TAG_PASSWORD_COMPLEXITY_SET { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_SecurityLog_TAG_PASSWORD_EXPIRATION_SET_" data-uid="Android.App.Admin.SecurityLog.TAG_PASSWORD_EXPIRATION_SET*"></a>
+
+  <h3 id="Android_App_Admin_SecurityLog_TAG_PASSWORD_EXPIRATION_SET" data-uid="Android.App.Admin.SecurityLog.TAG_PASSWORD_EXPIRATION_SET">
+  TAG_PASSWORD_EXPIRATION_SET
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/SecurityLog.cs/#L259"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_PASSWORD_EXPIRATION_SET">https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_PASSWORD_EXPIRATION_SET</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TAG_PASSWORD_EXPIRATION_SET { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_SecurityLog_TAG_PASSWORD_HISTORY_LENGTH_SET_" data-uid="Android.App.Admin.SecurityLog.TAG_PASSWORD_HISTORY_LENGTH_SET*"></a>
+
+  <h3 id="Android_App_Admin_SecurityLog_TAG_PASSWORD_HISTORY_LENGTH_SET" data-uid="Android.App.Admin.SecurityLog.TAG_PASSWORD_HISTORY_LENGTH_SET">
+  TAG_PASSWORD_HISTORY_LENGTH_SET
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/SecurityLog.cs/#L265"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_PASSWORD_HISTORY_LENGTH_SET">https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_PASSWORD_HISTORY_LENGTH_SET</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TAG_PASSWORD_HISTORY_LENGTH_SET { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_SecurityLog_TAG_REMOTE_LOCK_" data-uid="Android.App.Admin.SecurityLog.TAG_REMOTE_LOCK*"></a>
+
+  <h3 id="Android_App_Admin_SecurityLog_TAG_REMOTE_LOCK" data-uid="Android.App.Admin.SecurityLog.TAG_REMOTE_LOCK">
+  TAG_REMOTE_LOCK
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/SecurityLog.cs/#L271"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_REMOTE_LOCK">https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_REMOTE_LOCK</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TAG_REMOTE_LOCK { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_SecurityLog_TAG_SYNC_RECV_FILE_" data-uid="Android.App.Admin.SecurityLog.TAG_SYNC_RECV_FILE*"></a>
+
+  <h3 id="Android_App_Admin_SecurityLog_TAG_SYNC_RECV_FILE" data-uid="Android.App.Admin.SecurityLog.TAG_SYNC_RECV_FILE">
+  TAG_SYNC_RECV_FILE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/SecurityLog.cs/#L277"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_SYNC_RECV_FILE">https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_SYNC_RECV_FILE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TAG_SYNC_RECV_FILE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_SecurityLog_TAG_SYNC_SEND_FILE_" data-uid="Android.App.Admin.SecurityLog.TAG_SYNC_SEND_FILE*"></a>
+
+  <h3 id="Android_App_Admin_SecurityLog_TAG_SYNC_SEND_FILE" data-uid="Android.App.Admin.SecurityLog.TAG_SYNC_SEND_FILE">
+  TAG_SYNC_SEND_FILE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/SecurityLog.cs/#L283"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_SYNC_SEND_FILE">https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_SYNC_SEND_FILE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TAG_SYNC_SEND_FILE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_SecurityLog_TAG_USER_RESTRICTION_ADDED_" data-uid="Android.App.Admin.SecurityLog.TAG_USER_RESTRICTION_ADDED*"></a>
+
+  <h3 id="Android_App_Admin_SecurityLog_TAG_USER_RESTRICTION_ADDED" data-uid="Android.App.Admin.SecurityLog.TAG_USER_RESTRICTION_ADDED">
+  TAG_USER_RESTRICTION_ADDED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/SecurityLog.cs/#L289"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_USER_RESTRICTION_ADDED">https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_USER_RESTRICTION_ADDED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TAG_USER_RESTRICTION_ADDED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_SecurityLog_TAG_USER_RESTRICTION_REMOVED_" data-uid="Android.App.Admin.SecurityLog.TAG_USER_RESTRICTION_REMOVED*"></a>
+
+  <h3 id="Android_App_Admin_SecurityLog_TAG_USER_RESTRICTION_REMOVED" data-uid="Android.App.Admin.SecurityLog.TAG_USER_RESTRICTION_REMOVED">
+  TAG_USER_RESTRICTION_REMOVED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/SecurityLog.cs/#L295"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_USER_RESTRICTION_REMOVED">https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_USER_RESTRICTION_REMOVED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TAG_USER_RESTRICTION_REMOVED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_SecurityLog_TAG_WIFI_CONNECTION_" data-uid="Android.App.Admin.SecurityLog.TAG_WIFI_CONNECTION*"></a>
+
+  <h3 id="Android_App_Admin_SecurityLog_TAG_WIFI_CONNECTION" data-uid="Android.App.Admin.SecurityLog.TAG_WIFI_CONNECTION">
+  TAG_WIFI_CONNECTION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/SecurityLog.cs/#L301"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_WIFI_CONNECTION">https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_WIFI_CONNECTION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TAG_WIFI_CONNECTION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_SecurityLog_TAG_WIFI_DISCONNECTION_" data-uid="Android.App.Admin.SecurityLog.TAG_WIFI_DISCONNECTION*"></a>
+
+  <h3 id="Android_App_Admin_SecurityLog_TAG_WIFI_DISCONNECTION" data-uid="Android.App.Admin.SecurityLog.TAG_WIFI_DISCONNECTION">
+  TAG_WIFI_DISCONNECTION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/SecurityLog.cs/#L307"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_WIFI_DISCONNECTION">https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_WIFI_DISCONNECTION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TAG_WIFI_DISCONNECTION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_Admin_SecurityLog_TAG_WIPE_FAILURE_" data-uid="Android.App.Admin.SecurityLog.TAG_WIPE_FAILURE*"></a>
+
+  <h3 id="Android_App_Admin_SecurityLog_TAG_WIPE_FAILURE" data-uid="Android.App.Admin.SecurityLog.TAG_WIPE_FAILURE">
+  TAG_WIPE_FAILURE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/SecurityLog.cs/#L313"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_WIPE_FAILURE">https://developer.android.com/reference/android/app/admin/SecurityLog.html#TAG_WIPE_FAILURE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TAG_WIPE_FAILURE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/Admin/SecurityLog.cs/#L29" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

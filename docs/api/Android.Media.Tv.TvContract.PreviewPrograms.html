@@ -1,0 +1,3406 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class TvContract.PreviewPrograms | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class TvContract.PreviewPrograms | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_Media_Tv_TvContract_PreviewPrograms.md&amp;value=---%0Auid%3A%20Android.Media.Tv.TvContract.PreviewPrograms%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.Media.Tv.TvContract.PreviewPrograms">
+
+
+
+  <h1 id="Android_Media_Tv_TvContract_PreviewPrograms" data-uid="Android.Media.Tv.TvContract.PreviewPrograms" class="text-break">
+Class TvContract.PreviewPrograms  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L915"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.Media.html">Media</a>.<a class="xref" href="Android.Media.Tv.html">Tv</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class TvContract.PreviewPrograms : TvContract.BaseTvColumns, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IBaseColumns</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.Provider.BaseColumns.html">BaseColumns</a>&gt;</div>
+      <div><a class="xref" href="Android.Provider.BaseColumns.html">BaseColumns</a></div>
+      <div><a class="xref" href="Android.Media.Tv.TvContract.html">TvContract</a>.<a class="xref" href="Android.Media.Tv.TvContract.BaseTvColumns.html">BaseTvColumns</a></div>
+      <div><span class="xref">TvContract.PreviewPrograms</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+      <div><a class="xref" href="Android.Provider.IBaseColumns.html">IBaseColumns</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Android.Media.Tv.TvContract.BaseTvColumns.html#Android_Media_Tv_TvContract_BaseTvColumns_COLUMN_PACKAGE_NAME">TvContract.BaseTvColumns.COLUMN_PACKAGE_NAME</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Provider.BaseColumns.html#Android_Provider_BaseColumns__COUNT">BaseColumns._COUNT</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Provider.BaseColumns.html#Android_Provider_BaseColumns__ID">BaseColumns._ID</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BaseColumns&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BaseColumns&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BaseColumns&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BaseColumns&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BaseColumns&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BaseColumns&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BaseColumns&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BaseColumns&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BaseColumns&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BaseColumns&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BaseColumns&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;BaseColumns&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;BaseColumns&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;BaseColumns&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;BaseColumns&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;BaseColumns&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;BaseColumns&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;BaseColumns&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;BaseColumns&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms__ctor_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.#ctor*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms__ctor" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.#ctor">
+  PreviewPrograms()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/AllPackageClasses.cs/#L1273"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PreviewPrograms()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms__ctor_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.#ctor*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms__ctor_System_Object___" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.#ctor(System.Object[])">
+  PreviewPrograms(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/AllPackageClasses.cs/#L1277"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PreviewPrograms(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_ASPECT_RATIO_16_9_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.ASPECT_RATIO_16_9*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_ASPECT_RATIO_16_9" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.ASPECT_RATIO_16_9">
+  ASPECT_RATIO_16_9
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L941"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#ASPECT_RATIO_16_9">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#ASPECT_RATIO_16_9</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ASPECT_RATIO_16_9 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_ASPECT_RATIO_1_1_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.ASPECT_RATIO_1_1*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_ASPECT_RATIO_1_1" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.ASPECT_RATIO_1_1">
+  ASPECT_RATIO_1_1
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L935"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#ASPECT_RATIO_1_1">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#ASPECT_RATIO_1_1</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ASPECT_RATIO_1_1 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_ASPECT_RATIO_2_3_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.ASPECT_RATIO_2_3*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_ASPECT_RATIO_2_3" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.ASPECT_RATIO_2_3">
+  ASPECT_RATIO_2_3
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L947"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#ASPECT_RATIO_2_3">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#ASPECT_RATIO_2_3</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ASPECT_RATIO_2_3 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_ASPECT_RATIO_3_2_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.ASPECT_RATIO_3_2*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_ASPECT_RATIO_3_2" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.ASPECT_RATIO_3_2">
+  ASPECT_RATIO_3_2
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L953"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#ASPECT_RATIO_3_2">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#ASPECT_RATIO_3_2</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ASPECT_RATIO_3_2 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_ASPECT_RATIO_4_3_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.ASPECT_RATIO_4_3*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_ASPECT_RATIO_4_3" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.ASPECT_RATIO_4_3">
+  ASPECT_RATIO_4_3
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L959"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#ASPECT_RATIO_4_3">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#ASPECT_RATIO_4_3</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ASPECT_RATIO_4_3 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_AVAILABILITY_AVAILABLE_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.AVAILABILITY_AVAILABLE*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_AVAILABILITY_AVAILABLE" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.AVAILABILITY_AVAILABLE">
+  AVAILABILITY_AVAILABLE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L965"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#AVAILABILITY_AVAILABLE">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#AVAILABILITY_AVAILABLE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int AVAILABILITY_AVAILABLE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_AVAILABILITY_FREE_WITH_SUBSCRIPTION_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.AVAILABILITY_FREE_WITH_SUBSCRIPTION*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_AVAILABILITY_FREE_WITH_SUBSCRIPTION" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.AVAILABILITY_FREE_WITH_SUBSCRIPTION">
+  AVAILABILITY_FREE_WITH_SUBSCRIPTION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L971"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#AVAILABILITY_FREE_WITH_SUBSCRIPTION">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#AVAILABILITY_FREE_WITH_SUBSCRIPTION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int AVAILABILITY_FREE_WITH_SUBSCRIPTION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_AVAILABILITY_PAID_CONTENT_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.AVAILABILITY_PAID_CONTENT*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_AVAILABILITY_PAID_CONTENT" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.AVAILABILITY_PAID_CONTENT">
+  AVAILABILITY_PAID_CONTENT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L977"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#AVAILABILITY_PAID_CONTENT">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#AVAILABILITY_PAID_CONTENT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int AVAILABILITY_PAID_CONTENT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_BridgeClassName_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.BridgeClassName*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_BridgeClassName" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/AllPackageClasses.cs/#L1284"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_AUDIO_LANGUAGE_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_AUDIO_LANGUAGE*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_AUDIO_LANGUAGE" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_AUDIO_LANGUAGE">
+  COLUMN_AUDIO_LANGUAGE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L1115"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_AUDIO_LANGUAGE">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_AUDIO_LANGUAGE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String COLUMN_AUDIO_LANGUAGE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_AUTHOR_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_AUTHOR*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_AUTHOR" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_AUTHOR">
+  COLUMN_AUTHOR
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L1121"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_AUTHOR">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_AUTHOR</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String COLUMN_AUTHOR { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_AVAILABILITY_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_AVAILABILITY*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_AVAILABILITY" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_AVAILABILITY">
+  COLUMN_AVAILABILITY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L1127"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_AVAILABILITY">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_AVAILABILITY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String COLUMN_AVAILABILITY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_BROWSABLE_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_BROWSABLE*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_BROWSABLE" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_BROWSABLE">
+  COLUMN_BROWSABLE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L1133"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_BROWSABLE">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_BROWSABLE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String COLUMN_BROWSABLE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_CANONICAL_GENRE_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_CANONICAL_GENRE*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_CANONICAL_GENRE" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_CANONICAL_GENRE">
+  COLUMN_CANONICAL_GENRE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L1139"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_CANONICAL_GENRE">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_CANONICAL_GENRE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String COLUMN_CANONICAL_GENRE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_CHANNEL_ID_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_CHANNEL_ID*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_CHANNEL_ID" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_CHANNEL_ID">
+  COLUMN_CHANNEL_ID
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L1145"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_CHANNEL_ID">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_CHANNEL_ID</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String COLUMN_CHANNEL_ID { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_CONTENT_ID_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_CONTENT_ID*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_CONTENT_ID" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_CONTENT_ID">
+  COLUMN_CONTENT_ID
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L1151"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_CONTENT_ID">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_CONTENT_ID</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String COLUMN_CONTENT_ID { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_CONTENT_RATING_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_CONTENT_RATING*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_CONTENT_RATING" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_CONTENT_RATING">
+  COLUMN_CONTENT_RATING
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L1157"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_CONTENT_RATING">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_CONTENT_RATING</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String COLUMN_CONTENT_RATING { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_DURATION_MILLIS_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_DURATION_MILLIS*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_DURATION_MILLIS" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_DURATION_MILLIS">
+  COLUMN_DURATION_MILLIS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L1163"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_DURATION_MILLIS">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_DURATION_MILLIS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String COLUMN_DURATION_MILLIS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_END_TIME_UTC_MILLIS_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_END_TIME_UTC_MILLIS*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_END_TIME_UTC_MILLIS" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_END_TIME_UTC_MILLIS">
+  COLUMN_END_TIME_UTC_MILLIS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L1169"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_END_TIME_UTC_MILLIS">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_END_TIME_UTC_MILLIS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String COLUMN_END_TIME_UTC_MILLIS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_EPISODE_DISPLAY_NUMBER_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_EPISODE_DISPLAY_NUMBER*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_EPISODE_DISPLAY_NUMBER" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_EPISODE_DISPLAY_NUMBER">
+  COLUMN_EPISODE_DISPLAY_NUMBER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L1175"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_EPISODE_DISPLAY_NUMBER">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_EPISODE_DISPLAY_NUMBER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String COLUMN_EPISODE_DISPLAY_NUMBER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_EPISODE_TITLE_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_EPISODE_TITLE*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_EPISODE_TITLE" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_EPISODE_TITLE">
+  COLUMN_EPISODE_TITLE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L1181"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_EPISODE_TITLE">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_EPISODE_TITLE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String COLUMN_EPISODE_TITLE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_INTENT_URI_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_INTENT_URI*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_INTENT_URI" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_INTENT_URI">
+  COLUMN_INTENT_URI
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L1187"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_INTENT_URI">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_INTENT_URI</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String COLUMN_INTENT_URI { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_INTERACTION_COUNT_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_INTERACTION_COUNT*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_INTERACTION_COUNT" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_INTERACTION_COUNT">
+  COLUMN_INTERACTION_COUNT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L1193"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_INTERACTION_COUNT">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_INTERACTION_COUNT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String COLUMN_INTERACTION_COUNT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_INTERACTION_TYPE_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_INTERACTION_TYPE*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_INTERACTION_TYPE" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_INTERACTION_TYPE">
+  COLUMN_INTERACTION_TYPE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L1199"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_INTERACTION_TYPE">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_INTERACTION_TYPE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String COLUMN_INTERACTION_TYPE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_INTERNAL_PROVIDER_DATA_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_INTERNAL_PROVIDER_DATA*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_INTERNAL_PROVIDER_DATA" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_INTERNAL_PROVIDER_DATA">
+  COLUMN_INTERNAL_PROVIDER_DATA
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L1205"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_INTERNAL_PROVIDER_DATA">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_INTERNAL_PROVIDER_DATA</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String COLUMN_INTERNAL_PROVIDER_DATA { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_INTERNAL_PROVIDER_FLAG1_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_INTERNAL_PROVIDER_FLAG1*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_INTERNAL_PROVIDER_FLAG1" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_INTERNAL_PROVIDER_FLAG1">
+  COLUMN_INTERNAL_PROVIDER_FLAG1
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L1211"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_INTERNAL_PROVIDER_FLAG1">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_INTERNAL_PROVIDER_FLAG1</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String COLUMN_INTERNAL_PROVIDER_FLAG1 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_INTERNAL_PROVIDER_FLAG2_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_INTERNAL_PROVIDER_FLAG2*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_INTERNAL_PROVIDER_FLAG2" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_INTERNAL_PROVIDER_FLAG2">
+  COLUMN_INTERNAL_PROVIDER_FLAG2
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L1217"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_INTERNAL_PROVIDER_FLAG2">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_INTERNAL_PROVIDER_FLAG2</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String COLUMN_INTERNAL_PROVIDER_FLAG2 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_INTERNAL_PROVIDER_FLAG3_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_INTERNAL_PROVIDER_FLAG3*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_INTERNAL_PROVIDER_FLAG3" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_INTERNAL_PROVIDER_FLAG3">
+  COLUMN_INTERNAL_PROVIDER_FLAG3
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L1223"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_INTERNAL_PROVIDER_FLAG3">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_INTERNAL_PROVIDER_FLAG3</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String COLUMN_INTERNAL_PROVIDER_FLAG3 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_INTERNAL_PROVIDER_FLAG4_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_INTERNAL_PROVIDER_FLAG4*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_INTERNAL_PROVIDER_FLAG4" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_INTERNAL_PROVIDER_FLAG4">
+  COLUMN_INTERNAL_PROVIDER_FLAG4
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L1229"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_INTERNAL_PROVIDER_FLAG4">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_INTERNAL_PROVIDER_FLAG4</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String COLUMN_INTERNAL_PROVIDER_FLAG4 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_INTERNAL_PROVIDER_ID_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_INTERNAL_PROVIDER_ID*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_INTERNAL_PROVIDER_ID" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_INTERNAL_PROVIDER_ID">
+  COLUMN_INTERNAL_PROVIDER_ID
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L1235"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_INTERNAL_PROVIDER_ID">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_INTERNAL_PROVIDER_ID</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String COLUMN_INTERNAL_PROVIDER_ID { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_ITEM_COUNT_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_ITEM_COUNT*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_ITEM_COUNT" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_ITEM_COUNT">
+  COLUMN_ITEM_COUNT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L1241"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_ITEM_COUNT">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_ITEM_COUNT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String COLUMN_ITEM_COUNT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_LAST_PLAYBACK_POSITION_MILLIS_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_LAST_PLAYBACK_POSITION_MILLIS*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_LAST_PLAYBACK_POSITION_MILLIS" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_LAST_PLAYBACK_POSITION_MILLIS">
+  COLUMN_LAST_PLAYBACK_POSITION_MILLIS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L1247"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_LAST_PLAYBACK_POSITION_MILLIS">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_LAST_PLAYBACK_POSITION_MILLIS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String COLUMN_LAST_PLAYBACK_POSITION_MILLIS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_LIVE_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_LIVE*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_LIVE" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_LIVE">
+  COLUMN_LIVE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L1253"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_LIVE">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_LIVE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String COLUMN_LIVE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_LOGO_URI_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_LOGO_URI*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_LOGO_URI" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_LOGO_URI">
+  COLUMN_LOGO_URI
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L1259"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_LOGO_URI">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_LOGO_URI</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String COLUMN_LOGO_URI { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_LONG_DESCRIPTION_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_LONG_DESCRIPTION*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_LONG_DESCRIPTION" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_LONG_DESCRIPTION">
+  COLUMN_LONG_DESCRIPTION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L1265"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_LONG_DESCRIPTION">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_LONG_DESCRIPTION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String COLUMN_LONG_DESCRIPTION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_OFFER_PRICE_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_OFFER_PRICE*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_OFFER_PRICE" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_OFFER_PRICE">
+  COLUMN_OFFER_PRICE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L1271"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_OFFER_PRICE">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_OFFER_PRICE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String COLUMN_OFFER_PRICE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_POSTER_ART_ASPECT_RATIO_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_POSTER_ART_ASPECT_RATIO*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_POSTER_ART_ASPECT_RATIO" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_POSTER_ART_ASPECT_RATIO">
+  COLUMN_POSTER_ART_ASPECT_RATIO
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L1277"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_POSTER_ART_ASPECT_RATIO">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_POSTER_ART_ASPECT_RATIO</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String COLUMN_POSTER_ART_ASPECT_RATIO { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_POSTER_ART_URI_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_POSTER_ART_URI*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_POSTER_ART_URI" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_POSTER_ART_URI">
+  COLUMN_POSTER_ART_URI
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L1283"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_POSTER_ART_URI">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_POSTER_ART_URI</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String COLUMN_POSTER_ART_URI { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_PREVIEW_VIDEO_URI_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_PREVIEW_VIDEO_URI*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_PREVIEW_VIDEO_URI" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_PREVIEW_VIDEO_URI">
+  COLUMN_PREVIEW_VIDEO_URI
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L1289"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_PREVIEW_VIDEO_URI">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_PREVIEW_VIDEO_URI</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String COLUMN_PREVIEW_VIDEO_URI { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_RELEASE_DATE_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_RELEASE_DATE*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_RELEASE_DATE" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_RELEASE_DATE">
+  COLUMN_RELEASE_DATE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L1295"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_RELEASE_DATE">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_RELEASE_DATE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String COLUMN_RELEASE_DATE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_REVIEW_RATING_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_REVIEW_RATING*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_REVIEW_RATING" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_REVIEW_RATING">
+  COLUMN_REVIEW_RATING
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L1301"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_REVIEW_RATING">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_REVIEW_RATING</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String COLUMN_REVIEW_RATING { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_REVIEW_RATING_STYLE_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_REVIEW_RATING_STYLE*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_REVIEW_RATING_STYLE" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_REVIEW_RATING_STYLE">
+  COLUMN_REVIEW_RATING_STYLE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L1307"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_REVIEW_RATING_STYLE">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_REVIEW_RATING_STYLE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String COLUMN_REVIEW_RATING_STYLE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_SEARCHABLE_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_SEARCHABLE*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_SEARCHABLE" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_SEARCHABLE">
+  COLUMN_SEARCHABLE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L1313"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_SEARCHABLE">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_SEARCHABLE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String COLUMN_SEARCHABLE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_SEASON_DISPLAY_NUMBER_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_SEASON_DISPLAY_NUMBER*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_SEASON_DISPLAY_NUMBER" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_SEASON_DISPLAY_NUMBER">
+  COLUMN_SEASON_DISPLAY_NUMBER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L1319"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_SEASON_DISPLAY_NUMBER">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_SEASON_DISPLAY_NUMBER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String COLUMN_SEASON_DISPLAY_NUMBER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_SEASON_TITLE_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_SEASON_TITLE*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_SEASON_TITLE" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_SEASON_TITLE">
+  COLUMN_SEASON_TITLE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L1325"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_SEASON_TITLE">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_SEASON_TITLE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String COLUMN_SEASON_TITLE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_SERIES_ID_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_SERIES_ID*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_SERIES_ID" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_SERIES_ID">
+  COLUMN_SERIES_ID
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L1331"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_SERIES_ID">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_SERIES_ID</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String COLUMN_SERIES_ID { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_SHORT_DESCRIPTION_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_SHORT_DESCRIPTION*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_SHORT_DESCRIPTION" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_SHORT_DESCRIPTION">
+  COLUMN_SHORT_DESCRIPTION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L1337"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_SHORT_DESCRIPTION">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_SHORT_DESCRIPTION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String COLUMN_SHORT_DESCRIPTION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_SPLIT_ID_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_SPLIT_ID*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_SPLIT_ID" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_SPLIT_ID">
+  COLUMN_SPLIT_ID
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L1343"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_SPLIT_ID">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_SPLIT_ID</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String COLUMN_SPLIT_ID { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_STARTING_PRICE_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_STARTING_PRICE*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_STARTING_PRICE" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_STARTING_PRICE">
+  COLUMN_STARTING_PRICE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L1355"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_STARTING_PRICE">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_STARTING_PRICE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String COLUMN_STARTING_PRICE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_START_TIME_UTC_MILLIS_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_START_TIME_UTC_MILLIS*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_START_TIME_UTC_MILLIS" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_START_TIME_UTC_MILLIS">
+  COLUMN_START_TIME_UTC_MILLIS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L1349"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_START_TIME_UTC_MILLIS">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_START_TIME_UTC_MILLIS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String COLUMN_START_TIME_UTC_MILLIS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_THUMBNAIL_ASPECT_RATIO_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_THUMBNAIL_ASPECT_RATIO*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_THUMBNAIL_ASPECT_RATIO" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_THUMBNAIL_ASPECT_RATIO">
+  COLUMN_THUMBNAIL_ASPECT_RATIO
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L1361"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_THUMBNAIL_ASPECT_RATIO">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_THUMBNAIL_ASPECT_RATIO</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String COLUMN_THUMBNAIL_ASPECT_RATIO { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_THUMBNAIL_URI_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_THUMBNAIL_URI*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_THUMBNAIL_URI" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_THUMBNAIL_URI">
+  COLUMN_THUMBNAIL_URI
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L1367"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_THUMBNAIL_URI">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_THUMBNAIL_URI</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String COLUMN_THUMBNAIL_URI { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_TITLE_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_TITLE*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_TITLE" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_TITLE">
+  COLUMN_TITLE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L1373"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_TITLE">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_TITLE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String COLUMN_TITLE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_TRANSIENT_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_TRANSIENT*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_TRANSIENT" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_TRANSIENT">
+  COLUMN_TRANSIENT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L1379"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_TRANSIENT">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_TRANSIENT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String COLUMN_TRANSIENT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_TYPE_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_TYPE*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_TYPE" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_TYPE">
+  COLUMN_TYPE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L1385"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_TYPE">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_TYPE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String COLUMN_TYPE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_VERSION_NUMBER_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_VERSION_NUMBER*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_VERSION_NUMBER" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_VERSION_NUMBER">
+  COLUMN_VERSION_NUMBER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L1391"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_VERSION_NUMBER">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_VERSION_NUMBER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String COLUMN_VERSION_NUMBER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_VIDEO_HEIGHT_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_VIDEO_HEIGHT*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_VIDEO_HEIGHT" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_VIDEO_HEIGHT">
+  COLUMN_VIDEO_HEIGHT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L1397"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_VIDEO_HEIGHT">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_VIDEO_HEIGHT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String COLUMN_VIDEO_HEIGHT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_VIDEO_WIDTH_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_VIDEO_WIDTH*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_VIDEO_WIDTH" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_VIDEO_WIDTH">
+  COLUMN_VIDEO_WIDTH
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L1403"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_VIDEO_WIDTH">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_VIDEO_WIDTH</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String COLUMN_VIDEO_WIDTH { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_WEIGHT_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_WEIGHT*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_COLUMN_WEIGHT" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.COLUMN_WEIGHT">
+  COLUMN_WEIGHT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L1409"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_WEIGHT">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#COLUMN_WEIGHT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String COLUMN_WEIGHT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_CONTENT_ITEM_TYPE_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.CONTENT_ITEM_TYPE*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_CONTENT_ITEM_TYPE" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.CONTENT_ITEM_TYPE">
+  CONTENT_ITEM_TYPE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L1415"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#CONTENT_ITEM_TYPE">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#CONTENT_ITEM_TYPE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String CONTENT_ITEM_TYPE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_CONTENT_TYPE_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.CONTENT_TYPE*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_CONTENT_TYPE" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.CONTENT_TYPE">
+  CONTENT_TYPE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L1421"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#CONTENT_TYPE">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#CONTENT_TYPE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String CONTENT_TYPE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_CONTENT_URI_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.CONTENT_URI*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_CONTENT_URI" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.CONTENT_URI">
+  CONTENT_URI
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L929"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#CONTENT_URI">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#CONTENT_URI</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Uri CONTENT_URI { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Net.Uri.html">Uri</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_INTERACTION_TYPE_FANS_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.INTERACTION_TYPE_FANS*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_INTERACTION_TYPE_FANS" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.INTERACTION_TYPE_FANS">
+  INTERACTION_TYPE_FANS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L983"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#INTERACTION_TYPE_FANS">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#INTERACTION_TYPE_FANS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int INTERACTION_TYPE_FANS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_INTERACTION_TYPE_FOLLOWERS_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.INTERACTION_TYPE_FOLLOWERS*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_INTERACTION_TYPE_FOLLOWERS" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.INTERACTION_TYPE_FOLLOWERS">
+  INTERACTION_TYPE_FOLLOWERS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L989"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#INTERACTION_TYPE_FOLLOWERS">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#INTERACTION_TYPE_FOLLOWERS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int INTERACTION_TYPE_FOLLOWERS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_INTERACTION_TYPE_LIKES_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.INTERACTION_TYPE_LIKES*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_INTERACTION_TYPE_LIKES" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.INTERACTION_TYPE_LIKES">
+  INTERACTION_TYPE_LIKES
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L995"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#INTERACTION_TYPE_LIKES">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#INTERACTION_TYPE_LIKES</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int INTERACTION_TYPE_LIKES { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_INTERACTION_TYPE_LISTENS_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.INTERACTION_TYPE_LISTENS*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_INTERACTION_TYPE_LISTENS" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.INTERACTION_TYPE_LISTENS">
+  INTERACTION_TYPE_LISTENS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L1001"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#INTERACTION_TYPE_LISTENS">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#INTERACTION_TYPE_LISTENS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int INTERACTION_TYPE_LISTENS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_INTERACTION_TYPE_THUMBS_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.INTERACTION_TYPE_THUMBS*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_INTERACTION_TYPE_THUMBS" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.INTERACTION_TYPE_THUMBS">
+  INTERACTION_TYPE_THUMBS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L1007"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#INTERACTION_TYPE_THUMBS">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#INTERACTION_TYPE_THUMBS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int INTERACTION_TYPE_THUMBS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_INTERACTION_TYPE_VIEWERS_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.INTERACTION_TYPE_VIEWERS*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_INTERACTION_TYPE_VIEWERS" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.INTERACTION_TYPE_VIEWERS">
+  INTERACTION_TYPE_VIEWERS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L1013"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#INTERACTION_TYPE_VIEWERS">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#INTERACTION_TYPE_VIEWERS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int INTERACTION_TYPE_VIEWERS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_INTERACTION_TYPE_VIEWS_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.INTERACTION_TYPE_VIEWS*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_INTERACTION_TYPE_VIEWS" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.INTERACTION_TYPE_VIEWS">
+  INTERACTION_TYPE_VIEWS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L1019"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#INTERACTION_TYPE_VIEWS">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#INTERACTION_TYPE_VIEWS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int INTERACTION_TYPE_VIEWS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_IsBridgeAbstract_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_IsBridgeAbstract" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/AllPackageClasses.cs/#L1288"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_IsBridgeCloseable_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_IsBridgeCloseable" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/AllPackageClasses.cs/#L1292"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_IsBridgeInterface_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.IsBridgeInterface*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_IsBridgeInterface" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/AllPackageClasses.cs/#L1296"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_IsBridgeStatic_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.IsBridgeStatic*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_IsBridgeStatic" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/AllPackageClasses.cs/#L1300"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_REVIEW_RATING_STYLE_PERCENTAGE_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.REVIEW_RATING_STYLE_PERCENTAGE*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_REVIEW_RATING_STYLE_PERCENTAGE" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.REVIEW_RATING_STYLE_PERCENTAGE">
+  REVIEW_RATING_STYLE_PERCENTAGE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L1025"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#REVIEW_RATING_STYLE_PERCENTAGE">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#REVIEW_RATING_STYLE_PERCENTAGE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int REVIEW_RATING_STYLE_PERCENTAGE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_REVIEW_RATING_STYLE_STARS_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.REVIEW_RATING_STYLE_STARS*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_REVIEW_RATING_STYLE_STARS" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.REVIEW_RATING_STYLE_STARS">
+  REVIEW_RATING_STYLE_STARS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L1031"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#REVIEW_RATING_STYLE_STARS">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#REVIEW_RATING_STYLE_STARS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int REVIEW_RATING_STYLE_STARS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_REVIEW_RATING_STYLE_THUMBS_UP_DOWN_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.REVIEW_RATING_STYLE_THUMBS_UP_DOWN*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_REVIEW_RATING_STYLE_THUMBS_UP_DOWN" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.REVIEW_RATING_STYLE_THUMBS_UP_DOWN">
+  REVIEW_RATING_STYLE_THUMBS_UP_DOWN
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L1037"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#REVIEW_RATING_STYLE_THUMBS_UP_DOWN">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#REVIEW_RATING_STYLE_THUMBS_UP_DOWN</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int REVIEW_RATING_STYLE_THUMBS_UP_DOWN { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_TYPE_ALBUM_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.TYPE_ALBUM*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_TYPE_ALBUM" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.TYPE_ALBUM">
+  TYPE_ALBUM
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L1043"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#TYPE_ALBUM">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#TYPE_ALBUM</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_ALBUM { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_TYPE_ARTIST_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.TYPE_ARTIST*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_TYPE_ARTIST" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.TYPE_ARTIST">
+  TYPE_ARTIST
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L1049"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#TYPE_ARTIST">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#TYPE_ARTIST</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_ARTIST { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_TYPE_CHANNEL_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.TYPE_CHANNEL*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_TYPE_CHANNEL" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.TYPE_CHANNEL">
+  TYPE_CHANNEL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L1055"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#TYPE_CHANNEL">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#TYPE_CHANNEL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_CHANNEL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_TYPE_CLIP_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.TYPE_CLIP*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_TYPE_CLIP" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.TYPE_CLIP">
+  TYPE_CLIP
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L1061"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#TYPE_CLIP">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#TYPE_CLIP</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_CLIP { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_TYPE_EVENT_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.TYPE_EVENT*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_TYPE_EVENT" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.TYPE_EVENT">
+  TYPE_EVENT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L1067"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#TYPE_EVENT">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#TYPE_EVENT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_EVENT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_TYPE_MOVIE_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.TYPE_MOVIE*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_TYPE_MOVIE" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.TYPE_MOVIE">
+  TYPE_MOVIE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L1073"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#TYPE_MOVIE">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#TYPE_MOVIE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_MOVIE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_TYPE_PLAYLIST_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.TYPE_PLAYLIST*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_TYPE_PLAYLIST" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.TYPE_PLAYLIST">
+  TYPE_PLAYLIST
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L1079"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#TYPE_PLAYLIST">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#TYPE_PLAYLIST</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_PLAYLIST { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_TYPE_STATION_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.TYPE_STATION*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_TYPE_STATION" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.TYPE_STATION">
+  TYPE_STATION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L1085"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#TYPE_STATION">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#TYPE_STATION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_STATION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_TYPE_TRACK_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.TYPE_TRACK*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_TYPE_TRACK" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.TYPE_TRACK">
+  TYPE_TRACK
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L1091"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#TYPE_TRACK">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#TYPE_TRACK</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_TRACK { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_TYPE_TV_EPISODE_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.TYPE_TV_EPISODE*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_TYPE_TV_EPISODE" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.TYPE_TV_EPISODE">
+  TYPE_TV_EPISODE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L1097"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#TYPE_TV_EPISODE">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#TYPE_TV_EPISODE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_TV_EPISODE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_TYPE_TV_SEASON_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.TYPE_TV_SEASON*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_TYPE_TV_SEASON" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.TYPE_TV_SEASON">
+  TYPE_TV_SEASON
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L1103"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#TYPE_TV_SEASON">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#TYPE_TV_SEASON</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_TV_SEASON { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvContract_PreviewPrograms_TYPE_TV_SERIES_" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.TYPE_TV_SERIES*"></a>
+
+  <h3 id="Android_Media_Tv_TvContract_PreviewPrograms_TYPE_TV_SERIES" data-uid="Android.Media.Tv.TvContract.PreviewPrograms.TYPE_TV_SERIES">
+  TYPE_TV_SERIES
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L1109"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#TYPE_TV_SERIES">https://developer.android.com/reference/android/media/tv/TvContract.PreviewPrograms.html#TYPE_TV_SERIES</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TYPE_TV_SERIES { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvContract.cs/#L915" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

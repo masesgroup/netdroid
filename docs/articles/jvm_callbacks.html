@@ -1,0 +1,231 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>JVM callbacks within Netdroid powered code | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="JVM callbacks within Netdroid powered code | MASES Group - Netdroid ">
+      <meta name="description" content="Describes how to manage callbacks from JVM using the Android suite for .NET">
+      
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/blob/master/src/documentation/articles/jvm_callbacks.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="netdroid-jvm-callbacks">Netdroid: JVM callbacks</h1>
+
+<p>One of the features of <a href="https://www.jcobridge.com/">JCOBridge</a>, used in Netdroid, is the callback management from JVM.
+Many applications use the callback mechanism to be informed about events which happens during execution.
+Apache Kakfa exposes many API which have callbacks in the parameters.
+The Java code of a callback can be written with lambda expressions, but Netdroid cannot, it needs an object.</p>
+<h2 id="netdroid-callback-internals">Netdroid Callback internals</h2>
+<p>Netdroid is based on <a href="https://www.jcobridge.com/">JCOBridge</a>. JCOBridge as per its name is a bridge between the CLR (CoreCLR) and the JVM.
+Events, generally are expressed as interfaces in Java, and a lambda expression is translated into an object at compile time. Otherwise the developer can implement a Java class which <strong>implements</strong> the interface: with JCOBridge the developer needs to follow a seamless approach.
+In Netdroid some callbacks are ready made. In this tutorial the <strong>Predicate</strong> interface (<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html">java.util.function.Predicate</a>) will be taken as an example.
+The concrete class implementing the interface is the following one:</p>
+<pre><code class="lang-java">public final class Predicate extends JCListener implements java.util.function.Predicate {
+    public Predicate(String key) throws JCNativeException {
+        super(key);
+    }
+
+    @Override
+    public boolean test(Object e) {
+        raiseEvent(&quot;test&quot;, e);
+        Object retVal = getReturnData();
+        return (boolean) retVal;
+    }
+}
+</code></pre>
+<p>The structure follows the guidelines of JCOBridge:</p>
+<ul>
+<li>It <strong>must</strong> <code>extends</code> the base class <code>JCListener</code> (or <code>implements</code> the interface <code>IJCListener</code>): this is a constraint of JCOBridge; <code>JCListener</code> has many ready made methods; if the callback is not based on an interface the developer can <code>implements</code> the <code>IJCListener</code>;</li>
+<li>The concrete class <strong>must</strong> have at least a constructor accepting a String;</li>
+<li>Within the implementation of the interface method (in this case the method <code>test</code> of the <code>Predicate</code> interface) the method <code>raiseEvent</code> informs the CLR that a method was raised using the specific key (<strong>test</strong> in this case) along with all associated objects:
+<ul>
+<li>If the interface has many methods each one must have its own <code>raiseEvent</code> call;</li>
+<li>The key used from raiseEvent is not mandatory to be equal to the name of the calling method, it is only a convention for the mapping: this will be more clear looking at the C# code.</li>
+</ul>
+</li>
+</ul>
+<p>Now there is a concrete class within the JVM space.
+Going on to the CLR side a possible concrete class in C# is as the following one:</p>
+<pre><code class="lang-c#">public class Predicate&lt;TObject&gt; : JVMBridgeListener
+{
+	public override string ClassName =&gt; &quot;org.mases.netdroid.developed.java.util.function.Predicate&quot;;
+
+	Func&lt;TObject, bool&gt; executionFunction = null;
+	public virtual Func&lt;TObject, bool&gt; OnTest { get { return executionFunction; } }
+	
+	public Predicate(Func&lt;TObject, bool&gt; func = null, bool attachEventHandler = true)
+	{
+		if (func != null) executionFunction = func;
+		else executionFunction = Test;
+
+		if (attachEventHandler)
+		{
+			AddEventHandler(&quot;test&quot;, new EventHandler&lt;CLRListenerEventArgs&lt;CLREventData&lt;TObject&gt;&gt;&gt;(EventHandler));
+		}
+	}
+
+	void EventHandler(object sender, CLRListenerEventArgs&lt;CLREventData&lt;TObject&gt;&gt; data)
+	{
+		var retVal = OnTest(data.EventData.TypedEventData);
+		data.SetReturnValue(retVal);
+	}
+
+	public virtual bool Test(TObject obj) { return false; }
+}
+</code></pre>
+<p>The structure follows the guidelines of JCOBridge:</p>
+<ul>
+<li>It <strong>must</strong> <code>extends</code> the base class <code>JVMBridgeListener</code> : this is a constraint of JCOBridge; <code>JVMBridgeListener</code> contains all the functionality to handle events from the JVM;</li>
+<li>The <code>ClassName</code> property informs the base class about the concrete class in JVM associated to this event handler;</li>
+<li>Within the constructor the method <code>AddEventHandler</code> registers a .NET <code>EventHandler</code> associated to the method in JVM; look at the key string: <strong>it is the same used from the JVM</strong>;
+<ul>
+<li>The costructor of the code above accept in input an <code>Func</code> which permits to write lambda expression in C#;</li>
+<li>The code above associate a private handler with specific data type:
+<ul>
+<li><code>CLRListenerEventArgs</code> is mandatory and it is used from <code>JVMBridgeListener</code>;</li>
+<li><code>TObject</code> represents the CLR version of the corresponding <code>TObject</code> within the JVM;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>On callback invocation (<code>test</code> in this case) the CLR will invoke <code>EventHandler</code>:
+<ul>
+<li>The first parameter is directly reported using the <code>TypedEventData</code> property;</li>
+<li>On completion the result is reported back to the JVM using the <code>SetReturnValue</code> function;</li>
+</ul>
+</li>
+<li>Other pieces of the class are useful in other condition:
+<ul>
+<li>Creating a new class extending <code>Callback</code> class, the method <code>OnTest</code> can be overridden;</li>
+<li>Otherwise to the property <code>OnTest</code> can be associated to an handler;</li>
+</ul>
+</li>
+</ul>
+<h2 id="netdroid-callback-lifecycle">Netdroid Callback lifecycle</h2>
+<p>The lifecycle of the callback managed from JCOBridge is slightly different from the standard one.
+To avoid the Garbage Collector collects an instance of <code>JVMBridgeListener</code> it shall be registered. <code>JVMBridgeListener</code> do this automatically within the initialization (this behavior can be avoided using the property <code>AutoInit</code>).
+So at the end of its use it must be disposed to avoid a resource leak. In the example below there is a <strong>using</strong> clause and the class is instantiated only one time.
+A correct approach is like the following:</p>
+<pre><code class="lang-c#">using (var handler = new Predicate&lt;int&gt;((o1) =&gt;
+{
+	if (o1 &gt; 10) return true;
+	return false;
+}))
+{
+	while (!resetEvent.WaitOne(0))
+	{
+		if (o.CanSend(i, handler)) o.Send(i);
+		i++;
+	}
+}
+</code></pre>
+<p>while with an approach like the following one:</p>
+<pre><code class="lang-c#">var result = o.CanSend(i, new Predicate&lt;int&gt;((o1) =&gt;
+{
+	if (o1 &gt; 10) return true;
+	return false;
+}));
+</code></pre>
+<p>there are two main drawbacks:</p>
+<ul>
+<li>it creates a resource leak because the object instance related to <code>Predicate&lt;int&gt;</code> cannot be programmatically disposed;</li>
+<li>on each cycle, the engine shall allocate the infrastructure to handle events from the JVM.</li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/documentation/articles/jvm_callbacks.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

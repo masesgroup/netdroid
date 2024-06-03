@@ -1,0 +1,4343 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class UserManager | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class UserManager | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/os/UserManager.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_Os_UserManager.md&amp;value=---%0Auid%3A%20Android.Os.UserManager%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.Os.UserManager">
+
+
+
+  <h1 id="Android_Os_UserManager" data-uid="Android.Os.UserManager" class="text-break">
+Class UserManager  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.Os.html">Os</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html">https://developer.android.com/reference/android/os/UserManager.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class UserManager : JVMBridgeBase&lt;UserManager&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.Os.UserManager.html">UserManager</a>&gt;</div>
+      <div><span class="xref">UserManager</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;UserManager&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;UserManager&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;UserManager&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;UserManager&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;UserManager&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;UserManager&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;UserManager&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;UserManager&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;UserManager&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;UserManager&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;UserManager&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;UserManager&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;UserManager&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;UserManager&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;UserManager&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;UserManager&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;UserManager&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;UserManager&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;UserManager&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;UserManager&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;UserManager&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;UserManager&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;UserManager&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;UserManager&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;UserManager&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;UserManager&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;UserManager&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;UserManager&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;UserManager&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;UserManager&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;UserManager&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;UserManager&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;UserManager&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;UserManager&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;UserManager&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;UserManager&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;UserManager&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;UserManager&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;UserManager&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;UserManager&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;UserManager&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;UserManager&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;UserManager&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;UserManager&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;UserManager&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;UserManager&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;UserManager&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;UserManager&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;UserManager&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;UserManager&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_Os_UserManager__ctor_" data-uid="Android.Os.UserManager.#ctor*"></a>
+
+  <h3 id="Android_Os_UserManager__ctor" data-uid="Android.Os.UserManager.#ctor">
+  UserManager()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/AllPackageClasses.cs/#L4251"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UserManager()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager__ctor_" data-uid="Android.Os.UserManager.#ctor*"></a>
+
+  <h3 id="Android_Os_UserManager__ctor_System_Object___" data-uid="Android.Os.UserManager.#ctor(System.Object[])">
+  UserManager(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/AllPackageClasses.cs/#L4255"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UserManager(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_Os_UserManager_ALLOW_PARENT_PROFILE_APP_LINKING_" data-uid="Android.Os.UserManager.ALLOW_PARENT_PROFILE_APP_LINKING*"></a>
+
+  <h3 id="Android_Os_UserManager_ALLOW_PARENT_PROFILE_APP_LINKING" data-uid="Android.Os.UserManager.ALLOW_PARENT_PROFILE_APP_LINKING">
+  ALLOW_PARENT_PROFILE_APP_LINKING
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#ALLOW_PARENT_PROFILE_APP_LINKING">https://developer.android.com/reference/android/os/UserManager.html#ALLOW_PARENT_PROFILE_APP_LINKING</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ALLOW_PARENT_PROFILE_APP_LINKING { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_BridgeClassName_" data-uid="Android.Os.UserManager.BridgeClassName*"></a>
+
+  <h3 id="Android_Os_UserManager_BridgeClassName" data-uid="Android.Os.UserManager.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/AllPackageClasses.cs/#L4262"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_DISALLOW_ADD_MANAGED_PROFILE_" data-uid="Android.Os.UserManager.DISALLOW_ADD_MANAGED_PROFILE*"></a>
+
+  <h3 id="Android_Os_UserManager_DISALLOW_ADD_MANAGED_PROFILE" data-uid="Android.Os.UserManager.DISALLOW_ADD_MANAGED_PROFILE">
+  DISALLOW_ADD_MANAGED_PROFILE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_ADD_MANAGED_PROFILE">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_ADD_MANAGED_PROFILE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String DISALLOW_ADD_MANAGED_PROFILE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_DISALLOW_ADD_USER_" data-uid="Android.Os.UserManager.DISALLOW_ADD_USER*"></a>
+
+  <h3 id="Android_Os_UserManager_DISALLOW_ADD_USER" data-uid="Android.Os.UserManager.DISALLOW_ADD_USER">
+  DISALLOW_ADD_USER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L116"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_ADD_USER">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_ADD_USER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DISALLOW_ADD_USER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_DISALLOW_ADD_WIFI_CONFIG_" data-uid="Android.Os.UserManager.DISALLOW_ADD_WIFI_CONFIG*"></a>
+
+  <h3 id="Android_Os_UserManager_DISALLOW_ADD_WIFI_CONFIG" data-uid="Android.Os.UserManager.DISALLOW_ADD_WIFI_CONFIG">
+  DISALLOW_ADD_WIFI_CONFIG
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L122"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_ADD_WIFI_CONFIG">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_ADD_WIFI_CONFIG</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DISALLOW_ADD_WIFI_CONFIG { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_DISALLOW_ADJUST_VOLUME_" data-uid="Android.Os.UserManager.DISALLOW_ADJUST_VOLUME*"></a>
+
+  <h3 id="Android_Os_UserManager_DISALLOW_ADJUST_VOLUME" data-uid="Android.Os.UserManager.DISALLOW_ADJUST_VOLUME">
+  DISALLOW_ADJUST_VOLUME
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L128"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_ADJUST_VOLUME">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_ADJUST_VOLUME</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DISALLOW_ADJUST_VOLUME { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_DISALLOW_AIRPLANE_MODE_" data-uid="Android.Os.UserManager.DISALLOW_AIRPLANE_MODE*"></a>
+
+  <h3 id="Android_Os_UserManager_DISALLOW_AIRPLANE_MODE" data-uid="Android.Os.UserManager.DISALLOW_AIRPLANE_MODE">
+  DISALLOW_AIRPLANE_MODE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L134"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_AIRPLANE_MODE">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_AIRPLANE_MODE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DISALLOW_AIRPLANE_MODE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_DISALLOW_AMBIENT_DISPLAY_" data-uid="Android.Os.UserManager.DISALLOW_AMBIENT_DISPLAY*"></a>
+
+  <h3 id="Android_Os_UserManager_DISALLOW_AMBIENT_DISPLAY" data-uid="Android.Os.UserManager.DISALLOW_AMBIENT_DISPLAY">
+  DISALLOW_AMBIENT_DISPLAY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L140"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_AMBIENT_DISPLAY">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_AMBIENT_DISPLAY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DISALLOW_AMBIENT_DISPLAY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_DISALLOW_APPS_CONTROL_" data-uid="Android.Os.UserManager.DISALLOW_APPS_CONTROL*"></a>
+
+  <h3 id="Android_Os_UserManager_DISALLOW_APPS_CONTROL" data-uid="Android.Os.UserManager.DISALLOW_APPS_CONTROL">
+  DISALLOW_APPS_CONTROL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L146"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_APPS_CONTROL">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_APPS_CONTROL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DISALLOW_APPS_CONTROL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_DISALLOW_AUTOFILL_" data-uid="Android.Os.UserManager.DISALLOW_AUTOFILL*"></a>
+
+  <h3 id="Android_Os_UserManager_DISALLOW_AUTOFILL" data-uid="Android.Os.UserManager.DISALLOW_AUTOFILL">
+  DISALLOW_AUTOFILL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L152"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_AUTOFILL">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_AUTOFILL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DISALLOW_AUTOFILL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_DISALLOW_BLUETOOTH_" data-uid="Android.Os.UserManager.DISALLOW_BLUETOOTH*"></a>
+
+  <h3 id="Android_Os_UserManager_DISALLOW_BLUETOOTH" data-uid="Android.Os.UserManager.DISALLOW_BLUETOOTH">
+  DISALLOW_BLUETOOTH
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L158"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_BLUETOOTH">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_BLUETOOTH</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DISALLOW_BLUETOOTH { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_DISALLOW_BLUETOOTH_SHARING_" data-uid="Android.Os.UserManager.DISALLOW_BLUETOOTH_SHARING*"></a>
+
+  <h3 id="Android_Os_UserManager_DISALLOW_BLUETOOTH_SHARING" data-uid="Android.Os.UserManager.DISALLOW_BLUETOOTH_SHARING">
+  DISALLOW_BLUETOOTH_SHARING
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L164"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_BLUETOOTH_SHARING">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_BLUETOOTH_SHARING</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DISALLOW_BLUETOOTH_SHARING { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_DISALLOW_CAMERA_TOGGLE_" data-uid="Android.Os.UserManager.DISALLOW_CAMERA_TOGGLE*"></a>
+
+  <h3 id="Android_Os_UserManager_DISALLOW_CAMERA_TOGGLE" data-uid="Android.Os.UserManager.DISALLOW_CAMERA_TOGGLE">
+  DISALLOW_CAMERA_TOGGLE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L170"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CAMERA_TOGGLE">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CAMERA_TOGGLE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DISALLOW_CAMERA_TOGGLE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_DISALLOW_CELLULAR_2G_" data-uid="Android.Os.UserManager.DISALLOW_CELLULAR_2G*"></a>
+
+  <h3 id="Android_Os_UserManager_DISALLOW_CELLULAR_2G" data-uid="Android.Os.UserManager.DISALLOW_CELLULAR_2G">
+  DISALLOW_CELLULAR_2G
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L176"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CELLULAR_2G">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CELLULAR_2G</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DISALLOW_CELLULAR_2G { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_DISALLOW_CHANGE_WIFI_STATE_" data-uid="Android.Os.UserManager.DISALLOW_CHANGE_WIFI_STATE*"></a>
+
+  <h3 id="Android_Os_UserManager_DISALLOW_CHANGE_WIFI_STATE" data-uid="Android.Os.UserManager.DISALLOW_CHANGE_WIFI_STATE">
+  DISALLOW_CHANGE_WIFI_STATE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L182"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CHANGE_WIFI_STATE">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CHANGE_WIFI_STATE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DISALLOW_CHANGE_WIFI_STATE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_DISALLOW_CONFIG_BLUETOOTH_" data-uid="Android.Os.UserManager.DISALLOW_CONFIG_BLUETOOTH*"></a>
+
+  <h3 id="Android_Os_UserManager_DISALLOW_CONFIG_BLUETOOTH" data-uid="Android.Os.UserManager.DISALLOW_CONFIG_BLUETOOTH">
+  DISALLOW_CONFIG_BLUETOOTH
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L188"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CONFIG_BLUETOOTH">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CONFIG_BLUETOOTH</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DISALLOW_CONFIG_BLUETOOTH { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_DISALLOW_CONFIG_BRIGHTNESS_" data-uid="Android.Os.UserManager.DISALLOW_CONFIG_BRIGHTNESS*"></a>
+
+  <h3 id="Android_Os_UserManager_DISALLOW_CONFIG_BRIGHTNESS" data-uid="Android.Os.UserManager.DISALLOW_CONFIG_BRIGHTNESS">
+  DISALLOW_CONFIG_BRIGHTNESS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L194"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CONFIG_BRIGHTNESS">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CONFIG_BRIGHTNESS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DISALLOW_CONFIG_BRIGHTNESS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_DISALLOW_CONFIG_CELL_BROADCASTS_" data-uid="Android.Os.UserManager.DISALLOW_CONFIG_CELL_BROADCASTS*"></a>
+
+  <h3 id="Android_Os_UserManager_DISALLOW_CONFIG_CELL_BROADCASTS" data-uid="Android.Os.UserManager.DISALLOW_CONFIG_CELL_BROADCASTS">
+  DISALLOW_CONFIG_CELL_BROADCASTS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L200"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CONFIG_CELL_BROADCASTS">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CONFIG_CELL_BROADCASTS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DISALLOW_CONFIG_CELL_BROADCASTS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_DISALLOW_CONFIG_CREDENTIALS_" data-uid="Android.Os.UserManager.DISALLOW_CONFIG_CREDENTIALS*"></a>
+
+  <h3 id="Android_Os_UserManager_DISALLOW_CONFIG_CREDENTIALS" data-uid="Android.Os.UserManager.DISALLOW_CONFIG_CREDENTIALS">
+  DISALLOW_CONFIG_CREDENTIALS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L206"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CONFIG_CREDENTIALS">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CONFIG_CREDENTIALS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DISALLOW_CONFIG_CREDENTIALS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_DISALLOW_CONFIG_DATE_TIME_" data-uid="Android.Os.UserManager.DISALLOW_CONFIG_DATE_TIME*"></a>
+
+  <h3 id="Android_Os_UserManager_DISALLOW_CONFIG_DATE_TIME" data-uid="Android.Os.UserManager.DISALLOW_CONFIG_DATE_TIME">
+  DISALLOW_CONFIG_DATE_TIME
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L212"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CONFIG_DATE_TIME">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CONFIG_DATE_TIME</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DISALLOW_CONFIG_DATE_TIME { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_DISALLOW_CONFIG_DEFAULT_APPS_" data-uid="Android.Os.UserManager.DISALLOW_CONFIG_DEFAULT_APPS*"></a>
+
+  <h3 id="Android_Os_UserManager_DISALLOW_CONFIG_DEFAULT_APPS" data-uid="Android.Os.UserManager.DISALLOW_CONFIG_DEFAULT_APPS">
+  DISALLOW_CONFIG_DEFAULT_APPS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L218"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CONFIG_DEFAULT_APPS">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CONFIG_DEFAULT_APPS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DISALLOW_CONFIG_DEFAULT_APPS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_DISALLOW_CONFIG_LOCALE_" data-uid="Android.Os.UserManager.DISALLOW_CONFIG_LOCALE*"></a>
+
+  <h3 id="Android_Os_UserManager_DISALLOW_CONFIG_LOCALE" data-uid="Android.Os.UserManager.DISALLOW_CONFIG_LOCALE">
+  DISALLOW_CONFIG_LOCALE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L224"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CONFIG_LOCALE">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CONFIG_LOCALE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DISALLOW_CONFIG_LOCALE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_DISALLOW_CONFIG_LOCATION_" data-uid="Android.Os.UserManager.DISALLOW_CONFIG_LOCATION*"></a>
+
+  <h3 id="Android_Os_UserManager_DISALLOW_CONFIG_LOCATION" data-uid="Android.Os.UserManager.DISALLOW_CONFIG_LOCATION">
+  DISALLOW_CONFIG_LOCATION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L230"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CONFIG_LOCATION">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CONFIG_LOCATION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DISALLOW_CONFIG_LOCATION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_DISALLOW_CONFIG_MOBILE_NETWORKS_" data-uid="Android.Os.UserManager.DISALLOW_CONFIG_MOBILE_NETWORKS*"></a>
+
+  <h3 id="Android_Os_UserManager_DISALLOW_CONFIG_MOBILE_NETWORKS" data-uid="Android.Os.UserManager.DISALLOW_CONFIG_MOBILE_NETWORKS">
+  DISALLOW_CONFIG_MOBILE_NETWORKS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L236"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CONFIG_MOBILE_NETWORKS">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CONFIG_MOBILE_NETWORKS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DISALLOW_CONFIG_MOBILE_NETWORKS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_DISALLOW_CONFIG_PRIVATE_DNS_" data-uid="Android.Os.UserManager.DISALLOW_CONFIG_PRIVATE_DNS*"></a>
+
+  <h3 id="Android_Os_UserManager_DISALLOW_CONFIG_PRIVATE_DNS" data-uid="Android.Os.UserManager.DISALLOW_CONFIG_PRIVATE_DNS">
+  DISALLOW_CONFIG_PRIVATE_DNS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L242"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CONFIG_PRIVATE_DNS">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CONFIG_PRIVATE_DNS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DISALLOW_CONFIG_PRIVATE_DNS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_DISALLOW_CONFIG_SCREEN_TIMEOUT_" data-uid="Android.Os.UserManager.DISALLOW_CONFIG_SCREEN_TIMEOUT*"></a>
+
+  <h3 id="Android_Os_UserManager_DISALLOW_CONFIG_SCREEN_TIMEOUT" data-uid="Android.Os.UserManager.DISALLOW_CONFIG_SCREEN_TIMEOUT">
+  DISALLOW_CONFIG_SCREEN_TIMEOUT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L248"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CONFIG_SCREEN_TIMEOUT">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CONFIG_SCREEN_TIMEOUT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DISALLOW_CONFIG_SCREEN_TIMEOUT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_DISALLOW_CONFIG_TETHERING_" data-uid="Android.Os.UserManager.DISALLOW_CONFIG_TETHERING*"></a>
+
+  <h3 id="Android_Os_UserManager_DISALLOW_CONFIG_TETHERING" data-uid="Android.Os.UserManager.DISALLOW_CONFIG_TETHERING">
+  DISALLOW_CONFIG_TETHERING
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L254"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CONFIG_TETHERING">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CONFIG_TETHERING</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DISALLOW_CONFIG_TETHERING { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_DISALLOW_CONFIG_VPN_" data-uid="Android.Os.UserManager.DISALLOW_CONFIG_VPN*"></a>
+
+  <h3 id="Android_Os_UserManager_DISALLOW_CONFIG_VPN" data-uid="Android.Os.UserManager.DISALLOW_CONFIG_VPN">
+  DISALLOW_CONFIG_VPN
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L260"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CONFIG_VPN">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CONFIG_VPN</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DISALLOW_CONFIG_VPN { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_DISALLOW_CONFIG_WIFI_" data-uid="Android.Os.UserManager.DISALLOW_CONFIG_WIFI*"></a>
+
+  <h3 id="Android_Os_UserManager_DISALLOW_CONFIG_WIFI" data-uid="Android.Os.UserManager.DISALLOW_CONFIG_WIFI">
+  DISALLOW_CONFIG_WIFI
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L266"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CONFIG_WIFI">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CONFIG_WIFI</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DISALLOW_CONFIG_WIFI { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_DISALLOW_CONTENT_CAPTURE_" data-uid="Android.Os.UserManager.DISALLOW_CONTENT_CAPTURE*"></a>
+
+  <h3 id="Android_Os_UserManager_DISALLOW_CONTENT_CAPTURE" data-uid="Android.Os.UserManager.DISALLOW_CONTENT_CAPTURE">
+  DISALLOW_CONTENT_CAPTURE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L272"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CONTENT_CAPTURE">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CONTENT_CAPTURE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DISALLOW_CONTENT_CAPTURE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_DISALLOW_CONTENT_SUGGESTIONS_" data-uid="Android.Os.UserManager.DISALLOW_CONTENT_SUGGESTIONS*"></a>
+
+  <h3 id="Android_Os_UserManager_DISALLOW_CONTENT_SUGGESTIONS" data-uid="Android.Os.UserManager.DISALLOW_CONTENT_SUGGESTIONS">
+  DISALLOW_CONTENT_SUGGESTIONS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L278"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CONTENT_SUGGESTIONS">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CONTENT_SUGGESTIONS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DISALLOW_CONTENT_SUGGESTIONS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_DISALLOW_CREATE_WINDOWS_" data-uid="Android.Os.UserManager.DISALLOW_CREATE_WINDOWS*"></a>
+
+  <h3 id="Android_Os_UserManager_DISALLOW_CREATE_WINDOWS" data-uid="Android.Os.UserManager.DISALLOW_CREATE_WINDOWS">
+  DISALLOW_CREATE_WINDOWS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L284"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CREATE_WINDOWS">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CREATE_WINDOWS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DISALLOW_CREATE_WINDOWS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_DISALLOW_CROSS_PROFILE_COPY_PASTE_" data-uid="Android.Os.UserManager.DISALLOW_CROSS_PROFILE_COPY_PASTE*"></a>
+
+  <h3 id="Android_Os_UserManager_DISALLOW_CROSS_PROFILE_COPY_PASTE" data-uid="Android.Os.UserManager.DISALLOW_CROSS_PROFILE_COPY_PASTE">
+  DISALLOW_CROSS_PROFILE_COPY_PASTE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L290"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CROSS_PROFILE_COPY_PASTE">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_CROSS_PROFILE_COPY_PASTE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DISALLOW_CROSS_PROFILE_COPY_PASTE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_DISALLOW_DATA_ROAMING_" data-uid="Android.Os.UserManager.DISALLOW_DATA_ROAMING*"></a>
+
+  <h3 id="Android_Os_UserManager_DISALLOW_DATA_ROAMING" data-uid="Android.Os.UserManager.DISALLOW_DATA_ROAMING">
+  DISALLOW_DATA_ROAMING
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L296"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_DATA_ROAMING">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_DATA_ROAMING</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DISALLOW_DATA_ROAMING { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_DISALLOW_DEBUGGING_FEATURES_" data-uid="Android.Os.UserManager.DISALLOW_DEBUGGING_FEATURES*"></a>
+
+  <h3 id="Android_Os_UserManager_DISALLOW_DEBUGGING_FEATURES" data-uid="Android.Os.UserManager.DISALLOW_DEBUGGING_FEATURES">
+  DISALLOW_DEBUGGING_FEATURES
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L302"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_DEBUGGING_FEATURES">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_DEBUGGING_FEATURES</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DISALLOW_DEBUGGING_FEATURES { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_DISALLOW_FACTORY_RESET_" data-uid="Android.Os.UserManager.DISALLOW_FACTORY_RESET*"></a>
+
+  <h3 id="Android_Os_UserManager_DISALLOW_FACTORY_RESET" data-uid="Android.Os.UserManager.DISALLOW_FACTORY_RESET">
+  DISALLOW_FACTORY_RESET
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L308"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_FACTORY_RESET">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_FACTORY_RESET</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DISALLOW_FACTORY_RESET { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_DISALLOW_FUN_" data-uid="Android.Os.UserManager.DISALLOW_FUN*"></a>
+
+  <h3 id="Android_Os_UserManager_DISALLOW_FUN" data-uid="Android.Os.UserManager.DISALLOW_FUN">
+  DISALLOW_FUN
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L314"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_FUN">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_FUN</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DISALLOW_FUN { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_DISALLOW_GRANT_ADMIN_" data-uid="Android.Os.UserManager.DISALLOW_GRANT_ADMIN*"></a>
+
+  <h3 id="Android_Os_UserManager_DISALLOW_GRANT_ADMIN" data-uid="Android.Os.UserManager.DISALLOW_GRANT_ADMIN">
+  DISALLOW_GRANT_ADMIN
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L320"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_GRANT_ADMIN">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_GRANT_ADMIN</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DISALLOW_GRANT_ADMIN { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_DISALLOW_INSTALL_APPS_" data-uid="Android.Os.UserManager.DISALLOW_INSTALL_APPS*"></a>
+
+  <h3 id="Android_Os_UserManager_DISALLOW_INSTALL_APPS" data-uid="Android.Os.UserManager.DISALLOW_INSTALL_APPS">
+  DISALLOW_INSTALL_APPS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L326"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_INSTALL_APPS">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_INSTALL_APPS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DISALLOW_INSTALL_APPS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_DISALLOW_INSTALL_UNKNOWN_SOURCES_" data-uid="Android.Os.UserManager.DISALLOW_INSTALL_UNKNOWN_SOURCES*"></a>
+
+  <h3 id="Android_Os_UserManager_DISALLOW_INSTALL_UNKNOWN_SOURCES" data-uid="Android.Os.UserManager.DISALLOW_INSTALL_UNKNOWN_SOURCES">
+  DISALLOW_INSTALL_UNKNOWN_SOURCES
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L332"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_INSTALL_UNKNOWN_SOURCES">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_INSTALL_UNKNOWN_SOURCES</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DISALLOW_INSTALL_UNKNOWN_SOURCES { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_DISALLOW_INSTALL_UNKNOWN_SOURCES_GLOBALLY_" data-uid="Android.Os.UserManager.DISALLOW_INSTALL_UNKNOWN_SOURCES_GLOBALLY*"></a>
+
+  <h3 id="Android_Os_UserManager_DISALLOW_INSTALL_UNKNOWN_SOURCES_GLOBALLY" data-uid="Android.Os.UserManager.DISALLOW_INSTALL_UNKNOWN_SOURCES_GLOBALLY">
+  DISALLOW_INSTALL_UNKNOWN_SOURCES_GLOBALLY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L338"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_INSTALL_UNKNOWN_SOURCES_GLOBALLY">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_INSTALL_UNKNOWN_SOURCES_GLOBALLY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DISALLOW_INSTALL_UNKNOWN_SOURCES_GLOBALLY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_DISALLOW_MICROPHONE_TOGGLE_" data-uid="Android.Os.UserManager.DISALLOW_MICROPHONE_TOGGLE*"></a>
+
+  <h3 id="Android_Os_UserManager_DISALLOW_MICROPHONE_TOGGLE" data-uid="Android.Os.UserManager.DISALLOW_MICROPHONE_TOGGLE">
+  DISALLOW_MICROPHONE_TOGGLE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L344"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_MICROPHONE_TOGGLE">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_MICROPHONE_TOGGLE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DISALLOW_MICROPHONE_TOGGLE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_DISALLOW_MODIFY_ACCOUNTS_" data-uid="Android.Os.UserManager.DISALLOW_MODIFY_ACCOUNTS*"></a>
+
+  <h3 id="Android_Os_UserManager_DISALLOW_MODIFY_ACCOUNTS" data-uid="Android.Os.UserManager.DISALLOW_MODIFY_ACCOUNTS">
+  DISALLOW_MODIFY_ACCOUNTS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L350"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_MODIFY_ACCOUNTS">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_MODIFY_ACCOUNTS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DISALLOW_MODIFY_ACCOUNTS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_DISALLOW_MOUNT_PHYSICAL_MEDIA_" data-uid="Android.Os.UserManager.DISALLOW_MOUNT_PHYSICAL_MEDIA*"></a>
+
+  <h3 id="Android_Os_UserManager_DISALLOW_MOUNT_PHYSICAL_MEDIA" data-uid="Android.Os.UserManager.DISALLOW_MOUNT_PHYSICAL_MEDIA">
+  DISALLOW_MOUNT_PHYSICAL_MEDIA
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L356"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_MOUNT_PHYSICAL_MEDIA">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_MOUNT_PHYSICAL_MEDIA</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DISALLOW_MOUNT_PHYSICAL_MEDIA { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_DISALLOW_NETWORK_RESET_" data-uid="Android.Os.UserManager.DISALLOW_NETWORK_RESET*"></a>
+
+  <h3 id="Android_Os_UserManager_DISALLOW_NETWORK_RESET" data-uid="Android.Os.UserManager.DISALLOW_NETWORK_RESET">
+  DISALLOW_NETWORK_RESET
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L362"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_NETWORK_RESET">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_NETWORK_RESET</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DISALLOW_NETWORK_RESET { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_DISALLOW_OUTGOING_BEAM_" data-uid="Android.Os.UserManager.DISALLOW_OUTGOING_BEAM*"></a>
+
+  <h3 id="Android_Os_UserManager_DISALLOW_OUTGOING_BEAM" data-uid="Android.Os.UserManager.DISALLOW_OUTGOING_BEAM">
+  DISALLOW_OUTGOING_BEAM
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L368"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_OUTGOING_BEAM">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_OUTGOING_BEAM</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DISALLOW_OUTGOING_BEAM { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_DISALLOW_OUTGOING_CALLS_" data-uid="Android.Os.UserManager.DISALLOW_OUTGOING_CALLS*"></a>
+
+  <h3 id="Android_Os_UserManager_DISALLOW_OUTGOING_CALLS" data-uid="Android.Os.UserManager.DISALLOW_OUTGOING_CALLS">
+  DISALLOW_OUTGOING_CALLS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L374"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_OUTGOING_CALLS">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_OUTGOING_CALLS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DISALLOW_OUTGOING_CALLS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_DISALLOW_PRINTING_" data-uid="Android.Os.UserManager.DISALLOW_PRINTING*"></a>
+
+  <h3 id="Android_Os_UserManager_DISALLOW_PRINTING" data-uid="Android.Os.UserManager.DISALLOW_PRINTING">
+  DISALLOW_PRINTING
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L380"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_PRINTING">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_PRINTING</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DISALLOW_PRINTING { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_DISALLOW_REMOVE_MANAGED_PROFILE_" data-uid="Android.Os.UserManager.DISALLOW_REMOVE_MANAGED_PROFILE*"></a>
+
+  <h3 id="Android_Os_UserManager_DISALLOW_REMOVE_MANAGED_PROFILE" data-uid="Android.Os.UserManager.DISALLOW_REMOVE_MANAGED_PROFILE">
+  DISALLOW_REMOVE_MANAGED_PROFILE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L386"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_REMOVE_MANAGED_PROFILE">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_REMOVE_MANAGED_PROFILE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String DISALLOW_REMOVE_MANAGED_PROFILE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_DISALLOW_REMOVE_USER_" data-uid="Android.Os.UserManager.DISALLOW_REMOVE_USER*"></a>
+
+  <h3 id="Android_Os_UserManager_DISALLOW_REMOVE_USER" data-uid="Android.Os.UserManager.DISALLOW_REMOVE_USER">
+  DISALLOW_REMOVE_USER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L393"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_REMOVE_USER">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_REMOVE_USER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DISALLOW_REMOVE_USER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_DISALLOW_SAFE_BOOT_" data-uid="Android.Os.UserManager.DISALLOW_SAFE_BOOT*"></a>
+
+  <h3 id="Android_Os_UserManager_DISALLOW_SAFE_BOOT" data-uid="Android.Os.UserManager.DISALLOW_SAFE_BOOT">
+  DISALLOW_SAFE_BOOT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L399"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_SAFE_BOOT">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_SAFE_BOOT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DISALLOW_SAFE_BOOT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_DISALLOW_SET_USER_ICON_" data-uid="Android.Os.UserManager.DISALLOW_SET_USER_ICON*"></a>
+
+  <h3 id="Android_Os_UserManager_DISALLOW_SET_USER_ICON" data-uid="Android.Os.UserManager.DISALLOW_SET_USER_ICON">
+  DISALLOW_SET_USER_ICON
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L405"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_SET_USER_ICON">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_SET_USER_ICON</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DISALLOW_SET_USER_ICON { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_DISALLOW_SET_WALLPAPER_" data-uid="Android.Os.UserManager.DISALLOW_SET_WALLPAPER*"></a>
+
+  <h3 id="Android_Os_UserManager_DISALLOW_SET_WALLPAPER" data-uid="Android.Os.UserManager.DISALLOW_SET_WALLPAPER">
+  DISALLOW_SET_WALLPAPER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L411"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_SET_WALLPAPER">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_SET_WALLPAPER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DISALLOW_SET_WALLPAPER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_DISALLOW_SHARE_INTO_MANAGED_PROFILE_" data-uid="Android.Os.UserManager.DISALLOW_SHARE_INTO_MANAGED_PROFILE*"></a>
+
+  <h3 id="Android_Os_UserManager_DISALLOW_SHARE_INTO_MANAGED_PROFILE" data-uid="Android.Os.UserManager.DISALLOW_SHARE_INTO_MANAGED_PROFILE">
+  DISALLOW_SHARE_INTO_MANAGED_PROFILE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L417"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_SHARE_INTO_MANAGED_PROFILE">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_SHARE_INTO_MANAGED_PROFILE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DISALLOW_SHARE_INTO_MANAGED_PROFILE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_DISALLOW_SHARE_LOCATION_" data-uid="Android.Os.UserManager.DISALLOW_SHARE_LOCATION*"></a>
+
+  <h3 id="Android_Os_UserManager_DISALLOW_SHARE_LOCATION" data-uid="Android.Os.UserManager.DISALLOW_SHARE_LOCATION">
+  DISALLOW_SHARE_LOCATION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L423"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_SHARE_LOCATION">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_SHARE_LOCATION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DISALLOW_SHARE_LOCATION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_DISALLOW_SHARING_ADMIN_CONFIGURED_WIFI_" data-uid="Android.Os.UserManager.DISALLOW_SHARING_ADMIN_CONFIGURED_WIFI*"></a>
+
+  <h3 id="Android_Os_UserManager_DISALLOW_SHARING_ADMIN_CONFIGURED_WIFI" data-uid="Android.Os.UserManager.DISALLOW_SHARING_ADMIN_CONFIGURED_WIFI">
+  DISALLOW_SHARING_ADMIN_CONFIGURED_WIFI
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L429"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_SHARING_ADMIN_CONFIGURED_WIFI">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_SHARING_ADMIN_CONFIGURED_WIFI</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DISALLOW_SHARING_ADMIN_CONFIGURED_WIFI { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_DISALLOW_SMS_" data-uid="Android.Os.UserManager.DISALLOW_SMS*"></a>
+
+  <h3 id="Android_Os_UserManager_DISALLOW_SMS" data-uid="Android.Os.UserManager.DISALLOW_SMS">
+  DISALLOW_SMS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L435"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_SMS">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_SMS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DISALLOW_SMS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_DISALLOW_SYSTEM_ERROR_DIALOGS_" data-uid="Android.Os.UserManager.DISALLOW_SYSTEM_ERROR_DIALOGS*"></a>
+
+  <h3 id="Android_Os_UserManager_DISALLOW_SYSTEM_ERROR_DIALOGS" data-uid="Android.Os.UserManager.DISALLOW_SYSTEM_ERROR_DIALOGS">
+  DISALLOW_SYSTEM_ERROR_DIALOGS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L441"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_SYSTEM_ERROR_DIALOGS">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_SYSTEM_ERROR_DIALOGS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DISALLOW_SYSTEM_ERROR_DIALOGS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_DISALLOW_ULTRA_WIDEBAND_RADIO_" data-uid="Android.Os.UserManager.DISALLOW_ULTRA_WIDEBAND_RADIO*"></a>
+
+  <h3 id="Android_Os_UserManager_DISALLOW_ULTRA_WIDEBAND_RADIO" data-uid="Android.Os.UserManager.DISALLOW_ULTRA_WIDEBAND_RADIO">
+  DISALLOW_ULTRA_WIDEBAND_RADIO
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L447"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_ULTRA_WIDEBAND_RADIO">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_ULTRA_WIDEBAND_RADIO</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DISALLOW_ULTRA_WIDEBAND_RADIO { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_DISALLOW_UNIFIED_PASSWORD_" data-uid="Android.Os.UserManager.DISALLOW_UNIFIED_PASSWORD*"></a>
+
+  <h3 id="Android_Os_UserManager_DISALLOW_UNIFIED_PASSWORD" data-uid="Android.Os.UserManager.DISALLOW_UNIFIED_PASSWORD">
+  DISALLOW_UNIFIED_PASSWORD
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L453"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_UNIFIED_PASSWORD">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_UNIFIED_PASSWORD</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DISALLOW_UNIFIED_PASSWORD { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_DISALLOW_UNINSTALL_APPS_" data-uid="Android.Os.UserManager.DISALLOW_UNINSTALL_APPS*"></a>
+
+  <h3 id="Android_Os_UserManager_DISALLOW_UNINSTALL_APPS" data-uid="Android.Os.UserManager.DISALLOW_UNINSTALL_APPS">
+  DISALLOW_UNINSTALL_APPS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L459"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_UNINSTALL_APPS">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_UNINSTALL_APPS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DISALLOW_UNINSTALL_APPS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_DISALLOW_UNMUTE_MICROPHONE_" data-uid="Android.Os.UserManager.DISALLOW_UNMUTE_MICROPHONE*"></a>
+
+  <h3 id="Android_Os_UserManager_DISALLOW_UNMUTE_MICROPHONE" data-uid="Android.Os.UserManager.DISALLOW_UNMUTE_MICROPHONE">
+  DISALLOW_UNMUTE_MICROPHONE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L465"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_UNMUTE_MICROPHONE">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_UNMUTE_MICROPHONE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DISALLOW_UNMUTE_MICROPHONE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_DISALLOW_USB_FILE_TRANSFER_" data-uid="Android.Os.UserManager.DISALLOW_USB_FILE_TRANSFER*"></a>
+
+  <h3 id="Android_Os_UserManager_DISALLOW_USB_FILE_TRANSFER" data-uid="Android.Os.UserManager.DISALLOW_USB_FILE_TRANSFER">
+  DISALLOW_USB_FILE_TRANSFER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L471"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_USB_FILE_TRANSFER">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_USB_FILE_TRANSFER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DISALLOW_USB_FILE_TRANSFER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_DISALLOW_USER_SWITCH_" data-uid="Android.Os.UserManager.DISALLOW_USER_SWITCH*"></a>
+
+  <h3 id="Android_Os_UserManager_DISALLOW_USER_SWITCH" data-uid="Android.Os.UserManager.DISALLOW_USER_SWITCH">
+  DISALLOW_USER_SWITCH
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L477"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_USER_SWITCH">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_USER_SWITCH</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DISALLOW_USER_SWITCH { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_DISALLOW_WIFI_DIRECT_" data-uid="Android.Os.UserManager.DISALLOW_WIFI_DIRECT*"></a>
+
+  <h3 id="Android_Os_UserManager_DISALLOW_WIFI_DIRECT" data-uid="Android.Os.UserManager.DISALLOW_WIFI_DIRECT">
+  DISALLOW_WIFI_DIRECT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L483"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_WIFI_DIRECT">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_WIFI_DIRECT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DISALLOW_WIFI_DIRECT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_DISALLOW_WIFI_TETHERING_" data-uid="Android.Os.UserManager.DISALLOW_WIFI_TETHERING*"></a>
+
+  <h3 id="Android_Os_UserManager_DISALLOW_WIFI_TETHERING" data-uid="Android.Os.UserManager.DISALLOW_WIFI_TETHERING">
+  DISALLOW_WIFI_TETHERING
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L489"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_WIFI_TETHERING">https://developer.android.com/reference/android/os/UserManager.html#DISALLOW_WIFI_TETHERING</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String DISALLOW_WIFI_TETHERING { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_ENSURE_VERIFY_APPS_" data-uid="Android.Os.UserManager.ENSURE_VERIFY_APPS*"></a>
+
+  <h3 id="Android_Os_UserManager_ENSURE_VERIFY_APPS" data-uid="Android.Os.UserManager.ENSURE_VERIFY_APPS">
+  ENSURE_VERIFY_APPS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L495"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#ENSURE_VERIFY_APPS">https://developer.android.com/reference/android/os/UserManager.html#ENSURE_VERIFY_APPS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ENSURE_VERIFY_APPS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_IsBridgeAbstract_" data-uid="Android.Os.UserManager.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_Os_UserManager_IsBridgeAbstract" data-uid="Android.Os.UserManager.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/AllPackageClasses.cs/#L4266"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_IsBridgeCloseable_" data-uid="Android.Os.UserManager.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_Os_UserManager_IsBridgeCloseable" data-uid="Android.Os.UserManager.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/AllPackageClasses.cs/#L4270"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_IsBridgeInterface_" data-uid="Android.Os.UserManager.IsBridgeInterface*"></a>
+
+  <h3 id="Android_Os_UserManager_IsBridgeInterface" data-uid="Android.Os.UserManager.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/AllPackageClasses.cs/#L4274"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_IsBridgeStatic_" data-uid="Android.Os.UserManager.IsBridgeStatic*"></a>
+
+  <h3 id="Android_Os_UserManager_IsBridgeStatic" data-uid="Android.Os.UserManager.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/AllPackageClasses.cs/#L4278"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_KEY_RESTRICTIONS_PENDING_" data-uid="Android.Os.UserManager.KEY_RESTRICTIONS_PENDING*"></a>
+
+  <h3 id="Android_Os_UserManager_KEY_RESTRICTIONS_PENDING" data-uid="Android.Os.UserManager.KEY_RESTRICTIONS_PENDING">
+  KEY_RESTRICTIONS_PENDING
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L501"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#KEY_RESTRICTIONS_PENDING">https://developer.android.com/reference/android/os/UserManager.html#KEY_RESTRICTIONS_PENDING</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String KEY_RESTRICTIONS_PENDING { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_QUIET_MODE_DISABLE_ONLY_IF_CREDENTIAL_NOT_REQUIRED_" data-uid="Android.Os.UserManager.QUIET_MODE_DISABLE_ONLY_IF_CREDENTIAL_NOT_REQUIRED*"></a>
+
+  <h3 id="Android_Os_UserManager_QUIET_MODE_DISABLE_ONLY_IF_CREDENTIAL_NOT_REQUIRED" data-uid="Android.Os.UserManager.QUIET_MODE_DISABLE_ONLY_IF_CREDENTIAL_NOT_REQUIRED">
+  QUIET_MODE_DISABLE_ONLY_IF_CREDENTIAL_NOT_REQUIRED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#QUIET_MODE_DISABLE_ONLY_IF_CREDENTIAL_NOT_REQUIRED">https://developer.android.com/reference/android/os/UserManager.html#QUIET_MODE_DISABLE_ONLY_IF_CREDENTIAL_NOT_REQUIRED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int QUIET_MODE_DISABLE_ONLY_IF_CREDENTIAL_NOT_REQUIRED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_USER_CREATION_FAILED_NOT_PERMITTED_" data-uid="Android.Os.UserManager.USER_CREATION_FAILED_NOT_PERMITTED*"></a>
+
+  <h3 id="Android_Os_UserManager_USER_CREATION_FAILED_NOT_PERMITTED" data-uid="Android.Os.UserManager.USER_CREATION_FAILED_NOT_PERMITTED">
+  USER_CREATION_FAILED_NOT_PERMITTED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#USER_CREATION_FAILED_NOT_PERMITTED">https://developer.android.com/reference/android/os/UserManager.html#USER_CREATION_FAILED_NOT_PERMITTED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int USER_CREATION_FAILED_NOT_PERMITTED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_USER_CREATION_FAILED_NO_MORE_USERS_" data-uid="Android.Os.UserManager.USER_CREATION_FAILED_NO_MORE_USERS*"></a>
+
+  <h3 id="Android_Os_UserManager_USER_CREATION_FAILED_NO_MORE_USERS" data-uid="Android.Os.UserManager.USER_CREATION_FAILED_NO_MORE_USERS">
+  USER_CREATION_FAILED_NO_MORE_USERS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#USER_CREATION_FAILED_NO_MORE_USERS">https://developer.android.com/reference/android/os/UserManager.html#USER_CREATION_FAILED_NO_MORE_USERS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int USER_CREATION_FAILED_NO_MORE_USERS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_USER_OPERATION_ERROR_CURRENT_USER_" data-uid="Android.Os.UserManager.USER_OPERATION_ERROR_CURRENT_USER*"></a>
+
+  <h3 id="Android_Os_UserManager_USER_OPERATION_ERROR_CURRENT_USER" data-uid="Android.Os.UserManager.USER_OPERATION_ERROR_CURRENT_USER">
+  USER_OPERATION_ERROR_CURRENT_USER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#USER_OPERATION_ERROR_CURRENT_USER">https://developer.android.com/reference/android/os/UserManager.html#USER_OPERATION_ERROR_CURRENT_USER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int USER_OPERATION_ERROR_CURRENT_USER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_USER_OPERATION_ERROR_LOW_STORAGE_" data-uid="Android.Os.UserManager.USER_OPERATION_ERROR_LOW_STORAGE*"></a>
+
+  <h3 id="Android_Os_UserManager_USER_OPERATION_ERROR_LOW_STORAGE" data-uid="Android.Os.UserManager.USER_OPERATION_ERROR_LOW_STORAGE">
+  USER_OPERATION_ERROR_LOW_STORAGE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#USER_OPERATION_ERROR_LOW_STORAGE">https://developer.android.com/reference/android/os/UserManager.html#USER_OPERATION_ERROR_LOW_STORAGE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int USER_OPERATION_ERROR_LOW_STORAGE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_USER_OPERATION_ERROR_MANAGED_PROFILE_" data-uid="Android.Os.UserManager.USER_OPERATION_ERROR_MANAGED_PROFILE*"></a>
+
+  <h3 id="Android_Os_UserManager_USER_OPERATION_ERROR_MANAGED_PROFILE" data-uid="Android.Os.UserManager.USER_OPERATION_ERROR_MANAGED_PROFILE">
+  USER_OPERATION_ERROR_MANAGED_PROFILE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#USER_OPERATION_ERROR_MANAGED_PROFILE">https://developer.android.com/reference/android/os/UserManager.html#USER_OPERATION_ERROR_MANAGED_PROFILE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int USER_OPERATION_ERROR_MANAGED_PROFILE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_USER_OPERATION_ERROR_MAX_RUNNING_USERS_" data-uid="Android.Os.UserManager.USER_OPERATION_ERROR_MAX_RUNNING_USERS*"></a>
+
+  <h3 id="Android_Os_UserManager_USER_OPERATION_ERROR_MAX_RUNNING_USERS" data-uid="Android.Os.UserManager.USER_OPERATION_ERROR_MAX_RUNNING_USERS">
+  USER_OPERATION_ERROR_MAX_RUNNING_USERS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#USER_OPERATION_ERROR_MAX_RUNNING_USERS">https://developer.android.com/reference/android/os/UserManager.html#USER_OPERATION_ERROR_MAX_RUNNING_USERS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int USER_OPERATION_ERROR_MAX_RUNNING_USERS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_USER_OPERATION_ERROR_MAX_USERS_" data-uid="Android.Os.UserManager.USER_OPERATION_ERROR_MAX_USERS*"></a>
+
+  <h3 id="Android_Os_UserManager_USER_OPERATION_ERROR_MAX_USERS" data-uid="Android.Os.UserManager.USER_OPERATION_ERROR_MAX_USERS">
+  USER_OPERATION_ERROR_MAX_USERS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#USER_OPERATION_ERROR_MAX_USERS">https://developer.android.com/reference/android/os/UserManager.html#USER_OPERATION_ERROR_MAX_USERS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int USER_OPERATION_ERROR_MAX_USERS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_USER_OPERATION_ERROR_UNKNOWN_" data-uid="Android.Os.UserManager.USER_OPERATION_ERROR_UNKNOWN*"></a>
+
+  <h3 id="Android_Os_UserManager_USER_OPERATION_ERROR_UNKNOWN" data-uid="Android.Os.UserManager.USER_OPERATION_ERROR_UNKNOWN">
+  USER_OPERATION_ERROR_UNKNOWN
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#USER_OPERATION_ERROR_UNKNOWN">https://developer.android.com/reference/android/os/UserManager.html#USER_OPERATION_ERROR_UNKNOWN</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int USER_OPERATION_ERROR_UNKNOWN { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_USER_OPERATION_SUCCESS_" data-uid="Android.Os.UserManager.USER_OPERATION_SUCCESS*"></a>
+
+  <h3 id="Android_Os_UserManager_USER_OPERATION_SUCCESS" data-uid="Android.Os.UserManager.USER_OPERATION_SUCCESS">
+  USER_OPERATION_SUCCESS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#USER_OPERATION_SUCCESS">https://developer.android.com/reference/android/os/UserManager.html#USER_OPERATION_SUCCESS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int USER_OPERATION_SUCCESS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_Os_UserManager_CreateUserCreationIntent_" data-uid="Android.Os.UserManager.CreateUserCreationIntent*"></a>
+
+  <h3 id="Android_Os_UserManager_CreateUserCreationIntent_Java_Lang_String_Java_Lang_String_Java_Lang_String_Android_Os_PersistableBundle_" data-uid="Android.Os.UserManager.CreateUserCreationIntent(Java.Lang.String,Java.Lang.String,Java.Lang.String,Android.Os.PersistableBundle)">
+  CreateUserCreationIntent(String, String, String, PersistableBundle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L516"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#createUserCreationIntent(java.lang.String,java.lang.String,java.lang.String,android.os.PersistableBundle)">https://developer.android.com/reference/android/os/UserManager.html#createUserCreationIntent(java.lang.String,java.lang.String,java.lang.String,android.os.PersistableBundle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Intent CreateUserCreationIntent(String arg0, String arg1, String arg2, PersistableBundle arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Android.Os.PersistableBundle.html">PersistableBundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.PersistableBundle.html">PersistableBundle</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Intent.html">Intent</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Intent.html">Intent</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_GetApplicationRestrictions_" data-uid="Android.Os.UserManager.GetApplicationRestrictions*"></a>
+
+  <h3 id="Android_Os_UserManager_GetApplicationRestrictions_Java_Lang_String_" data-uid="Android.Os.UserManager.GetApplicationRestrictions(Java.Lang.String)">
+  GetApplicationRestrictions(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L545"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#getApplicationRestrictions(java.lang.String)">https://developer.android.com/reference/android/os/UserManager.html#getApplicationRestrictions(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Bundle GetApplicationRestrictions(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_GetSerialNumberForUser_" data-uid="Android.Os.UserManager.GetSerialNumberForUser*"></a>
+
+  <h3 id="Android_Os_UserManager_GetSerialNumberForUser_Android_Os_UserHandle_" data-uid="Android.Os.UserManager.GetSerialNumberForUser(Android.Os.UserHandle)">
+  GetSerialNumberForUser(UserHandle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L744"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#getSerialNumberForUser(android.os.UserHandle)">https://developer.android.com/reference/android/os/UserManager.html#getSerialNumberForUser(android.os.UserHandle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long GetSerialNumberForUser(UserHandle arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Os.UserHandle.html">UserHandle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.UserHandle.html">UserHandle</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_GetUserCount_" data-uid="Android.Os.UserManager.GetUserCount*"></a>
+
+  <h3 id="Android_Os_UserManager_GetUserCount" data-uid="Android.Os.UserManager.GetUserCount">
+  GetUserCount()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L719"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#getUserCount()">https://developer.android.com/reference/android/os/UserManager.html#getUserCount()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetUserCount()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_GetUserCreationTime_" data-uid="Android.Os.UserManager.GetUserCreationTime*"></a>
+
+  <h3 id="Android_Os_UserManager_GetUserCreationTime_Android_Os_UserHandle_" data-uid="Android.Os.UserManager.GetUserCreationTime(Android.Os.UserHandle)">
+  GetUserCreationTime(UserHandle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L753"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#getUserCreationTime(android.os.UserHandle)">https://developer.android.com/reference/android/os/UserManager.html#getUserCreationTime(android.os.UserHandle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long GetUserCreationTime(UserHandle arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Os.UserHandle.html">UserHandle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.UserHandle.html">UserHandle</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_GetUserForSerialNumber_" data-uid="Android.Os.UserManager.GetUserForSerialNumber*"></a>
+
+  <h3 id="Android_Os_UserManager_GetUserForSerialNumber_System_Int64_" data-uid="Android.Os.UserManager.GetUserForSerialNumber(System.Int64)">
+  GetUserForSerialNumber(long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L571"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#getUserForSerialNumber(long)">https://developer.android.com/reference/android/os/UserManager.html#getUserForSerialNumber(long)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UserHandle GetUserForSerialNumber(long arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Os.UserHandle.html">UserHandle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.UserHandle.html">UserHandle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_GetUserName_" data-uid="Android.Os.UserManager.GetUserName*"></a>
+
+  <h3 id="Android_Os_UserManager_GetUserName" data-uid="Android.Os.UserManager.GetUserName">
+  GetUserName()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L727"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#getUserName()">https://developer.android.com/reference/android/os/UserManager.html#getUserName()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetUserName()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_GetUserProfiles_" data-uid="Android.Os.UserManager.GetUserProfiles*"></a>
+
+  <h3 id="Android_Os_UserManager_GetUserProfiles" data-uid="Android.Os.UserManager.GetUserProfiles">
+  GetUserProfiles()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L735"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#getUserProfiles()">https://developer.android.com/reference/android/os/UserManager.html#getUserProfiles()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;UserHandle&gt; GetUserProfiles()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Android.Os.UserHandle.html">UserHandle</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.List.html">List</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_GetUserRestrictions_" data-uid="Android.Os.UserManager.GetUserRestrictions*"></a>
+
+  <h3 id="Android_Os_UserManager_GetUserRestrictions" data-uid="Android.Os.UserManager.GetUserRestrictions">
+  GetUserRestrictions()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L553"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#getUserRestrictions()">https://developer.android.com/reference/android/os/UserManager.html#getUserRestrictions()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Bundle GetUserRestrictions()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_GetUserRestrictions_" data-uid="Android.Os.UserManager.GetUserRestrictions*"></a>
+
+  <h3 id="Android_Os_UserManager_GetUserRestrictions_Android_Os_UserHandle_" data-uid="Android.Os.UserManager.GetUserRestrictions(Android.Os.UserHandle)">
+  GetUserRestrictions(UserHandle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L562"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#getUserRestrictions(android.os.UserHandle)">https://developer.android.com/reference/android/os/UserManager.html#getUserRestrictions(android.os.UserHandle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Bundle GetUserRestrictions(UserHandle arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Os.UserHandle.html">UserHandle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.UserHandle.html">UserHandle</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_HasUserRestriction_" data-uid="Android.Os.UserManager.HasUserRestriction*"></a>
+
+  <h3 id="Android_Os_UserManager_HasUserRestriction_Java_Lang_String_" data-uid="Android.Os.UserManager.HasUserRestriction(Java.Lang.String)">
+  HasUserRestriction(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L580"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#hasUserRestriction(java.lang.String)">https://developer.android.com/reference/android/os/UserManager.html#hasUserRestriction(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasUserRestriction(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_IsAdminUser_" data-uid="Android.Os.UserManager.IsAdminUser*"></a>
+
+  <h3 id="Android_Os_UserManager_IsAdminUser" data-uid="Android.Os.UserManager.IsAdminUser">
+  IsAdminUser()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L588"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#isAdminUser()">https://developer.android.com/reference/android/os/UserManager.html#isAdminUser()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsAdminUser()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_IsDemoUser_" data-uid="Android.Os.UserManager.IsDemoUser*"></a>
+
+  <h3 id="Android_Os_UserManager_IsDemoUser" data-uid="Android.Os.UserManager.IsDemoUser">
+  IsDemoUser()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L596"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#isDemoUser()">https://developer.android.com/reference/android/os/UserManager.html#isDemoUser()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsDemoUser()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_IsHeadlessSystemUserMode_" data-uid="Android.Os.UserManager.IsHeadlessSystemUserMode*"></a>
+
+  <h3 id="Android_Os_UserManager_IsHeadlessSystemUserMode" data-uid="Android.Os.UserManager.IsHeadlessSystemUserMode">
+  IsHeadlessSystemUserMode()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L524"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#isHeadlessSystemUserMode()">https://developer.android.com/reference/android/os/UserManager.html#isHeadlessSystemUserMode()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsHeadlessSystemUserMode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_IsManagedProfile_" data-uid="Android.Os.UserManager.IsManagedProfile*"></a>
+
+  <h3 id="Android_Os_UserManager_IsManagedProfile" data-uid="Android.Os.UserManager.IsManagedProfile">
+  IsManagedProfile()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L604"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#isManagedProfile()">https://developer.android.com/reference/android/os/UserManager.html#isManagedProfile()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsManagedProfile()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_IsProfile_" data-uid="Android.Os.UserManager.IsProfile*"></a>
+
+  <h3 id="Android_Os_UserManager_IsProfile" data-uid="Android.Os.UserManager.IsProfile">
+  IsProfile()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L612"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#isProfile()">https://developer.android.com/reference/android/os/UserManager.html#isProfile()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsProfile()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_IsQuietModeEnabled_" data-uid="Android.Os.UserManager.IsQuietModeEnabled*"></a>
+
+  <h3 id="Android_Os_UserManager_IsQuietModeEnabled_Android_Os_UserHandle_" data-uid="Android.Os.UserManager.IsQuietModeEnabled(Android.Os.UserHandle)">
+  IsQuietModeEnabled(UserHandle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L621"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#isQuietModeEnabled(android.os.UserHandle)">https://developer.android.com/reference/android/os/UserManager.html#isQuietModeEnabled(android.os.UserHandle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsQuietModeEnabled(UserHandle arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Os.UserHandle.html">UserHandle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.UserHandle.html">UserHandle</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_IsSystemUser_" data-uid="Android.Os.UserManager.IsSystemUser*"></a>
+
+  <h3 id="Android_Os_UserManager_IsSystemUser" data-uid="Android.Os.UserManager.IsSystemUser">
+  IsSystemUser()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L629"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#isSystemUser()">https://developer.android.com/reference/android/os/UserManager.html#isSystemUser()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSystemUser()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_IsUserAGoat_" data-uid="Android.Os.UserManager.IsUserAGoat*"></a>
+
+  <h3 id="Android_Os_UserManager_IsUserAGoat" data-uid="Android.Os.UserManager.IsUserAGoat">
+  IsUserAGoat()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L637"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#isUserAGoat()">https://developer.android.com/reference/android/os/UserManager.html#isUserAGoat()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsUserAGoat()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_IsUserForeground_" data-uid="Android.Os.UserManager.IsUserForeground*"></a>
+
+  <h3 id="Android_Os_UserManager_IsUserForeground" data-uid="Android.Os.UserManager.IsUserForeground">
+  IsUserForeground()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L645"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#isUserForeground()">https://developer.android.com/reference/android/os/UserManager.html#isUserForeground()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsUserForeground()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_IsUserRunning_" data-uid="Android.Os.UserManager.IsUserRunning*"></a>
+
+  <h3 id="Android_Os_UserManager_IsUserRunning_Android_Os_UserHandle_" data-uid="Android.Os.UserManager.IsUserRunning(Android.Os.UserHandle)">
+  IsUserRunning(UserHandle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L654"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#isUserRunning(android.os.UserHandle)">https://developer.android.com/reference/android/os/UserManager.html#isUserRunning(android.os.UserHandle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsUserRunning(UserHandle arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Os.UserHandle.html">UserHandle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.UserHandle.html">UserHandle</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_IsUserRunningOrStopping_" data-uid="Android.Os.UserManager.IsUserRunningOrStopping*"></a>
+
+  <h3 id="Android_Os_UserManager_IsUserRunningOrStopping_Android_Os_UserHandle_" data-uid="Android.Os.UserManager.IsUserRunningOrStopping(Android.Os.UserHandle)">
+  IsUserRunningOrStopping(UserHandle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L663"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#isUserRunningOrStopping(android.os.UserHandle)">https://developer.android.com/reference/android/os/UserManager.html#isUserRunningOrStopping(android.os.UserHandle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsUserRunningOrStopping(UserHandle arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Os.UserHandle.html">UserHandle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.UserHandle.html">UserHandle</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_IsUserUnlocked_" data-uid="Android.Os.UserManager.IsUserUnlocked*"></a>
+
+  <h3 id="Android_Os_UserManager_IsUserUnlocked" data-uid="Android.Os.UserManager.IsUserUnlocked">
+  IsUserUnlocked()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L671"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#isUserUnlocked()">https://developer.android.com/reference/android/os/UserManager.html#isUserUnlocked()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsUserUnlocked()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_IsUserUnlocked_" data-uid="Android.Os.UserManager.IsUserUnlocked*"></a>
+
+  <h3 id="Android_Os_UserManager_IsUserUnlocked_Android_Os_UserHandle_" data-uid="Android.Os.UserManager.IsUserUnlocked(Android.Os.UserHandle)">
+  IsUserUnlocked(UserHandle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L680"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#isUserUnlocked(android.os.UserHandle)">https://developer.android.com/reference/android/os/UserManager.html#isUserUnlocked(android.os.UserHandle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsUserUnlocked(UserHandle arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Os.UserHandle.html">UserHandle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.UserHandle.html">UserHandle</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_RequestQuietModeEnabled_" data-uid="Android.Os.UserManager.RequestQuietModeEnabled*"></a>
+
+  <h3 id="Android_Os_UserManager_RequestQuietModeEnabled_System_Boolean_Android_Os_UserHandle_" data-uid="Android.Os.UserManager.RequestQuietModeEnabled(System.Boolean,Android.Os.UserHandle)">
+  RequestQuietModeEnabled(bool, UserHandle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L701"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#requestQuietModeEnabled(boolean,android.os.UserHandle)">https://developer.android.com/reference/android/os/UserManager.html#requestQuietModeEnabled(boolean,android.os.UserHandle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RequestQuietModeEnabled(bool arg0, UserHandle arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Os.UserHandle.html">UserHandle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.UserHandle.html">UserHandle</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_RequestQuietModeEnabled_" data-uid="Android.Os.UserManager.RequestQuietModeEnabled*"></a>
+
+  <h3 id="Android_Os_UserManager_RequestQuietModeEnabled_System_Boolean_Android_Os_UserHandle_System_Int32_" data-uid="Android.Os.UserManager.RequestQuietModeEnabled(System.Boolean,Android.Os.UserHandle,System.Int32)">
+  RequestQuietModeEnabled(bool, UserHandle, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L691"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#requestQuietModeEnabled(boolean,android.os.UserHandle,int)">https://developer.android.com/reference/android/os/UserManager.html#requestQuietModeEnabled(boolean,android.os.UserHandle,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RequestQuietModeEnabled(bool arg0, UserHandle arg1, int arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Os.UserHandle.html">UserHandle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.UserHandle.html">UserHandle</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_SetRestrictionsChallenge_" data-uid="Android.Os.UserManager.SetRestrictionsChallenge*"></a>
+
+  <h3 id="Android_Os_UserManager_SetRestrictionsChallenge_Java_Lang_String_" data-uid="Android.Os.UserManager.SetRestrictionsChallenge(Java.Lang.String)">
+  SetRestrictionsChallenge(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L710"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#setRestrictionsChallenge(java.lang.String)">https://developer.android.com/reference/android/os/UserManager.html#setRestrictionsChallenge(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public bool SetRestrictionsChallenge(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_SetUserRestriction_" data-uid="Android.Os.UserManager.SetUserRestriction*"></a>
+
+  <h3 id="Android_Os_UserManager_SetUserRestriction_Java_Lang_String_System_Boolean_" data-uid="Android.Os.UserManager.SetUserRestriction(Java.Lang.String,System.Boolean)">
+  SetUserRestriction(String, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L762"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#setUserRestriction(java.lang.String,boolean)">https://developer.android.com/reference/android/os/UserManager.html#setUserRestriction(java.lang.String,boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void SetUserRestriction(String arg0, bool arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_SetUserRestrictions_" data-uid="Android.Os.UserManager.SetUserRestrictions*"></a>
+
+  <h3 id="Android_Os_UserManager_SetUserRestrictions_Android_Os_Bundle_" data-uid="Android.Os.UserManager.SetUserRestrictions(Android.Os.Bundle)">
+  SetUserRestrictions(Bundle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L781"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#setUserRestrictions(android.os.Bundle)">https://developer.android.com/reference/android/os/UserManager.html#setUserRestrictions(android.os.Bundle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void SetUserRestrictions(Bundle arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_SetUserRestrictions_" data-uid="Android.Os.UserManager.SetUserRestrictions*"></a>
+
+  <h3 id="Android_Os_UserManager_SetUserRestrictions_Android_Os_Bundle_Android_Os_UserHandle_" data-uid="Android.Os.UserManager.SetUserRestrictions(Android.Os.Bundle,Android.Os.UserHandle)">
+  SetUserRestrictions(Bundle, UserHandle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L772"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#setUserRestrictions(android.os.Bundle,android.os.UserHandle)">https://developer.android.com/reference/android/os/UserManager.html#setUserRestrictions(android.os.Bundle,android.os.UserHandle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void SetUserRestrictions(Bundle arg0, UserHandle arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Os.UserHandle.html">UserHandle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.UserHandle.html">UserHandle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Os_UserManager_SupportsMultipleUsers_" data-uid="Android.Os.UserManager.SupportsMultipleUsers*"></a>
+
+  <h3 id="Android_Os_UserManager_SupportsMultipleUsers" data-uid="Android.Os.UserManager.SupportsMultipleUsers">
+  SupportsMultipleUsers()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L532"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/os/UserManager.html#supportsMultipleUsers()">https://developer.android.com/reference/android/os/UserManager.html#supportsMultipleUsers()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool SupportsMultipleUsers()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Os/UserManager.cs/#L29" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

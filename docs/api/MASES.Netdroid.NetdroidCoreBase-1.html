@@ -1,0 +1,1591 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class NetdroidCoreBase&lt;T&gt; | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class NetdroidCoreBase&lt;T&gt; | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="Public entry point of">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=MASES_Netdroid_NetdroidCoreBase_1.md&amp;value=---%0Auid%3A%20MASES.Netdroid.NetdroidCoreBase%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MASES.Netdroid.NetdroidCoreBase`1">
+
+
+
+  <h1 id="MASES_Netdroid_NetdroidCoreBase_1" data-uid="MASES.Netdroid.NetdroidCoreBase`1" class="text-break">
+Class NetdroidCoreBase&lt;T&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/NetdroidCoreBase.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MASES.html">MASES</a>.<a class="xref" href="MASES.Netdroid.html">Netdroid</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Public entry point of <a class="xref" href="MASES.Netdroid.NetdroidCoreBase-1.html">NetdroidCoreBase&lt;T&gt;</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class NetdroidCoreBase&lt;T&gt; : SetupJVMWrapper&lt;T&gt;, IJVMWrapperManagement, IJVMBridgeCore where T : NetdroidCoreBase&lt;T&gt;</code></pre>
+  </div>
+
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">SetupJVMWrapper</span></div>
+      <div><span class="xref">SetupJVMWrapper</span>&lt;T&gt;</div>
+      <div><span class="xref">NetdroidCoreBase&lt;T&gt;</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><span class="xref">IJVMWrapperManagement</span></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="MASES.Netdroid.NetdroidCore-1.html">NetdroidCore&lt;T&gt;</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <span class="xref">SetupJVMWrapper&lt;T&gt;.CreateGlobalInstance()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.parameterizedthreadstart">SetupJVMWrapper&lt;T&gt;.UnwrapOn(ParameterizedThreadStart, object, ApartmentState)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.parameterizedthreadstart">SetupJVMWrapper&lt;T&gt;.UnwrapAndDemonizeOn(ParameterizedThreadStart, object, ApartmentState)</a>
+    </div>
+    <div>
+      <span class="xref">SetupJVMWrapper&lt;T&gt;.HasGlobalInstance</span>
+    </div>
+    <div>
+      <span class="xref">SetupJVMWrapper&lt;T&gt;.GlobalInstance</span>
+    </div>
+    <div>
+      <span class="xref">SetupJVMWrapper&lt;T&gt;.ScopedOn</span>
+    </div>
+    <div>
+      <span class="xref">SetupJVMWrapper&lt;T&gt;.ScopedOnVersion</span>
+    </div>
+    <div>
+      <span class="xref">SetupJVMWrapper.Initialize()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">SetupJVMWrapper.ImportPackage(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">SetupJVMWrapper.RegisterCLRGlobal(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">SetupJVMWrapper.UnregisterCLRGlobal(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">SetupJVMWrapper.GetJVMGlobal(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">SetupJVMWrapper.GetCLRGlobal(string)</a>
+    </div>
+    <div>
+      <span class="xref">SetupJVMWrapper.InitializeListener(IJVMBridgeBase)</span>
+    </div>
+    <div>
+      <span class="xref">SetupJVMWrapper.GetListener(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">SetupJVMWrapper.ReleaseListener(IJVMBridgeBase)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">SetupJVMWrapper.GetJCGraphicContainer(string, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">SetupJVMWrapper.GetJCGraphicContainer(IJavaObject, bool)</a>
+    </div>
+    <div>
+      <span class="xref">SetupJVMWrapper.ReleaseJCGraphicContainer(IJCGraphicContainer)</span>
+    </div>
+    <div>
+      <span class="xref">SetupJVMWrapper.InitializeRemote()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.parameterizedthreadstart">SetupJVMWrapper.UnwrapOn&lt;T&gt;(ParameterizedThreadStart, object, ApartmentState)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.parameterizedthreadstart">SetupJVMWrapper.UnwrapAndDemonizeOn&lt;T&gt;(ParameterizedThreadStart, object, ApartmentState)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.assembly">SetupJVMWrapper.GetMainClasses(Assembly)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">SetupJVMWrapper.Launch&lt;TClass&gt;(params string[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">SetupJVMWrapper.Launch(Type, params string[])</a>
+    </div>
+    <div>
+      <span class="xref">SetupJVMWrapper.FilteredArgs</span>
+    </div>
+    <div>
+      <span class="xref">SetupJVMWrapper.IsContainer</span>
+    </div>
+    <div>
+      <span class="xref">SetupJVMWrapper.ContainerId</span>
+    </div>
+    <div>
+      <span class="xref">SetupJVMWrapper.FeatureLevel</span>
+    </div>
+    <div>
+      <span class="xref">SetupJVMWrapper.EnableCriticalMethods</span>
+    </div>
+    <div>
+      <span class="xref">SetupJVMWrapper.EnableCriticalMethodsOnGetThreshold</span>
+    </div>
+    <div>
+      <span class="xref">SetupJVMWrapper.EnableCriticalMethodsOnGet</span>
+    </div>
+    <div>
+      <span class="xref">SetupJVMWrapper.EnableCriticalMethodsOnSetThreshold</span>
+    </div>
+    <div>
+      <span class="xref">SetupJVMWrapper.EnableCriticalMethodsOnSet</span>
+    </div>
+    <div>
+      <span class="xref">SetupJVMWrapper.JVM</span>
+    </div>
+    <div>
+      <span class="xref">SetupJVMWrapper.Management</span>
+    </div>
+    <div>
+      <span class="xref">SetupJVMWrapper.JVMStats</span>
+    </div>
+    <div>
+      <span class="xref">SetupJVMWrapper.DynJVM</span>
+    </div>
+    <div>
+      <span class="xref">SetupJVMWrapper.RemoteBridge</span>
+    </div>
+    <div>
+      <span class="xref">SetupJVMWrapper.RemoteJCOBridge</span>
+    </div>
+    <div>
+      <span class="xref">SetupJVMWrapper.ModulePath</span>
+    </div>
+    <div>
+      <span class="xref">SetupJVMWrapper.JVMPackages</span>
+    </div>
+    <div>
+      <span class="xref">SetupJVMWrapper.SuppressFinalize</span>
+    </div>
+    <div>
+      <span class="xref">SetupJVMWrapper.Globalize</span>
+    </div>
+    <div>
+      <span class="xref">SetupJVMWrapper.LastBindingException</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="MASES_Netdroid_NetdroidCoreBase_1__ctor_" data-uid="MASES.Netdroid.NetdroidCoreBase`1.#ctor*"></a>
+
+  <h3 id="MASES_Netdroid_NetdroidCoreBase_1__ctor" data-uid="MASES.Netdroid.NetdroidCoreBase`1.#ctor">
+  NetdroidCoreBase()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/NetdroidCoreBase.cs/#L160"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Public ctor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NetdroidCoreBase()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="MASES_Netdroid_NetdroidCoreBase_1_JARsSubFolder" data-uid="MASES.Netdroid.NetdroidCoreBase`1.JARsSubFolder">
+  JARsSubFolder
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/NetdroidCoreBase.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The path where JARs are stored</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string JARsSubFolder = &quot;jars&quot;</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="MASES_Netdroid_NetdroidCoreBase_1_Parser" data-uid="MASES.Netdroid.NetdroidCoreBase`1.Parser">
+  Parser
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/NetdroidCoreBase.cs/#L128"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Command line <a class="xref" href="MASES.Netdroid.NetdroidCoreBase-1.html#MASES_Netdroid_NetdroidCoreBase_1_Parser">Parser</a> instance</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static readonly Parser Parser</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="api/MASES.CLIParser.Parser.html">Parser</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="MASES_Netdroid_NetdroidCoreBase_1_ApplicationDebugSuspendFlag_" data-uid="MASES.Netdroid.NetdroidCoreBase`1.ApplicationDebugSuspendFlag*"></a>
+
+  <h3 id="MASES_Netdroid_NetdroidCoreBase_1_ApplicationDebugSuspendFlag" data-uid="MASES.Netdroid.NetdroidCoreBase`1.ApplicationDebugSuspendFlag">
+  ApplicationDebugSuspendFlag
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/NetdroidCoreBase.cs/#L82"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the value of <a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_SetupJVMWrapper_DebugSuspendFlag.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_SetupJVMWrapper_DebugSuspendFlag.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ApplicationDebugSuspendFlag { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MASES_Netdroid_NetdroidCoreBase_1_ApplicationEnableDebug_" data-uid="MASES.Netdroid.NetdroidCoreBase`1.ApplicationEnableDebug*"></a>
+
+  <h3 id="MASES_Netdroid_NetdroidCoreBase_1_ApplicationEnableDebug" data-uid="MASES.Netdroid.NetdroidCoreBase`1.ApplicationEnableDebug">
+  ApplicationEnableDebug
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/NetdroidCoreBase.cs/#L74"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the value of <a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_SetupJVMWrapper_EnableDebug.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_SetupJVMWrapper_EnableDebug.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool? ApplicationEnableDebug { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MASES_Netdroid_NetdroidCoreBase_1_ApplicationHeapSize_" data-uid="MASES.Netdroid.NetdroidCoreBase`1.ApplicationHeapSize*"></a>
+
+  <h3 id="MASES_Netdroid_NetdroidCoreBase_1_ApplicationHeapSize" data-uid="MASES.Netdroid.NetdroidCoreBase`1.ApplicationHeapSize">
+  ApplicationHeapSize
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/NetdroidCoreBase.cs/#L90"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the global value of <a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_SetupJVMWrapper_GlobalHeapSize.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_SetupJVMWrapper_GlobalHeapSize.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ApplicationHeapSize { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MASES_Netdroid_NetdroidCoreBase_1_ApplicationInitialHeapSize_" data-uid="MASES.Netdroid.NetdroidCoreBase`1.ApplicationInitialHeapSize*"></a>
+
+  <h3 id="MASES_Netdroid_NetdroidCoreBase_1_ApplicationInitialHeapSize" data-uid="MASES.Netdroid.NetdroidCoreBase`1.ApplicationInitialHeapSize">
+  ApplicationInitialHeapSize
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/NetdroidCoreBase.cs/#L94"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the global value of the <a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_SetupJVMWrapper_InitialHeapSize.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_SetupJVMWrapper_InitialHeapSize.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ApplicationInitialHeapSize { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MASES_Netdroid_NetdroidCoreBase_1_ApplicationJDKHome_" data-uid="MASES.Netdroid.NetdroidCoreBase`1.ApplicationJDKHome*"></a>
+
+  <h3 id="MASES_Netdroid_NetdroidCoreBase_1_ApplicationJDKHome" data-uid="MASES.Netdroid.NetdroidCoreBase`1.ApplicationJDKHome">
+  ApplicationJDKHome
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/NetdroidCoreBase.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the value of <a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_SetupJVMWrapper_JDKHome.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_SetupJVMWrapper_JDKHome.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ApplicationJDKHome { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MASES_Netdroid_NetdroidCoreBase_1_ApplicationJNIOutputFile_" data-uid="MASES.Netdroid.NetdroidCoreBase`1.ApplicationJNIOutputFile*"></a>
+
+  <h3 id="MASES_Netdroid_NetdroidCoreBase_1_ApplicationJNIOutputFile" data-uid="MASES.Netdroid.NetdroidCoreBase`1.ApplicationJNIOutputFile">
+  ApplicationJNIOutputFile
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/NetdroidCoreBase.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the value of <a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_SetupJVMWrapper_JNIOutputFile.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_SetupJVMWrapper_JNIOutputFile.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ApplicationJNIOutputFile { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MASES_Netdroid_NetdroidCoreBase_1_ApplicationJNIVerbosity_" data-uid="MASES.Netdroid.NetdroidCoreBase`1.ApplicationJNIVerbosity*"></a>
+
+  <h3 id="MASES_Netdroid_NetdroidCoreBase_1_ApplicationJNIVerbosity" data-uid="MASES.Netdroid.NetdroidCoreBase`1.ApplicationJNIVerbosity">
+  ApplicationJNIVerbosity
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/NetdroidCoreBase.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the value of <a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_SetupJVMWrapper_JNIVerbosity.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_SetupJVMWrapper_JNIVerbosity.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ApplicationJNIVerbosity { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MASES_Netdroid_NetdroidCoreBase_1_ApplicationJVMPath_" data-uid="MASES.Netdroid.NetdroidCoreBase`1.ApplicationJVMPath*"></a>
+
+  <h3 id="MASES_Netdroid_NetdroidCoreBase_1_ApplicationJVMPath" data-uid="MASES.Netdroid.NetdroidCoreBase`1.ApplicationJVMPath">
+  ApplicationJVMPath
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/NetdroidCoreBase.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the value of <a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_SetupJVMWrapper_JVMPath.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_SetupJVMWrapper_JVMPath.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ApplicationJVMPath { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MASES_Netdroid_NetdroidCoreBase_1_ApplicationJavaDebugOpts_" data-uid="MASES.Netdroid.NetdroidCoreBase`1.ApplicationJavaDebugOpts*"></a>
+
+  <h3 id="MASES_Netdroid_NetdroidCoreBase_1_ApplicationJavaDebugOpts" data-uid="MASES.Netdroid.NetdroidCoreBase`1.ApplicationJavaDebugOpts">
+  ApplicationJavaDebugOpts
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/NetdroidCoreBase.cs/#L86"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the value of <a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_SetupJVMWrapper_JavaDebugOpts.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_SetupJVMWrapper_JavaDebugOpts.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ApplicationJavaDebugOpts { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MASES_Netdroid_NetdroidCoreBase_1_ApplicationJavaDebugPort_" data-uid="MASES.Netdroid.NetdroidCoreBase`1.ApplicationJavaDebugPort*"></a>
+
+  <h3 id="MASES_Netdroid_NetdroidCoreBase_1_ApplicationJavaDebugPort" data-uid="MASES.Netdroid.NetdroidCoreBase`1.ApplicationJavaDebugPort">
+  ApplicationJavaDebugPort
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/NetdroidCoreBase.cs/#L78"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the value of <a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_SetupJVMWrapper_JavaDebugPort.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_SetupJVMWrapper_JavaDebugPort.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static short? ApplicationJavaDebugPort { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MASES_Netdroid_NetdroidCoreBase_1_ApplicationJmxPort_" data-uid="MASES.Netdroid.NetdroidCoreBase`1.ApplicationJmxPort*"></a>
+
+  <h3 id="MASES_Netdroid_NetdroidCoreBase_1_ApplicationJmxPort" data-uid="MASES.Netdroid.NetdroidCoreBase`1.ApplicationJmxPort">
+  ApplicationJmxPort
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/NetdroidCoreBase.cs/#L70"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the value of <a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_SetupJVMWrapper_JmxPort.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_SetupJVMWrapper_JmxPort.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static short? ApplicationJmxPort { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MASES_Netdroid_NetdroidCoreBase_1_ApplicationLicensePath_" data-uid="MASES.Netdroid.NetdroidCoreBase`1.ApplicationLicensePath*"></a>
+
+  <h3 id="MASES_Netdroid_NetdroidCoreBase_1_ApplicationLicensePath" data-uid="MASES.Netdroid.NetdroidCoreBase`1.ApplicationLicensePath">
+  ApplicationLicensePath
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/NetdroidCoreBase.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the value of <a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_SetupJVMWrapper_LicensePath.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_SetupJVMWrapper_LicensePath.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ApplicationLicensePath { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MASES_Netdroid_NetdroidCoreBase_1_ApplicationLogClassPath_" data-uid="MASES.Netdroid.NetdroidCoreBase`1.ApplicationLogClassPath*"></a>
+
+  <h3 id="MASES_Netdroid_NetdroidCoreBase_1_ApplicationLogClassPath" data-uid="MASES.Netdroid.NetdroidCoreBase`1.ApplicationLogClassPath">
+  ApplicationLogClassPath
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/NetdroidCoreBase.cs/#L98"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the global value of the log class path</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool? ApplicationLogClassPath { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MASES_Netdroid_NetdroidCoreBase_1_ClassPath_" data-uid="MASES.Netdroid.NetdroidCoreBase`1.ClassPath*"></a>
+
+  <h3 id="MASES_Netdroid_NetdroidCoreBase_1_ClassPath" data-uid="MASES.Netdroid.NetdroidCoreBase`1.ClassPath">
+  ClassPath
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/NetdroidCoreBase.cs/#L215"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override sealed string ClassPath { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MASES_Netdroid_NetdroidCoreBase_1_CommandLineArguments_" data-uid="MASES.Netdroid.NetdroidCoreBase`1.CommandLineArguments*"></a>
+
+  <h3 id="MASES_Netdroid_NetdroidCoreBase_1_CommandLineArguments" data-uid="MASES.Netdroid.NetdroidCoreBase`1.CommandLineArguments">
+  CommandLineArguments
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/NetdroidCoreBase.cs/#L135"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a> for command line</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IEnumerable&lt;IArgumentMetadata&gt; CommandLineArguments { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="api/MASES.CLIParser.IArgumentMetadata.html">IArgumentMetadata</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MASES_Netdroid_NetdroidCoreBase_1_DebugSuspendFlag_" data-uid="MASES.Netdroid.NetdroidCoreBase`1.DebugSuspendFlag*"></a>
+
+  <h3 id="MASES_Netdroid_NetdroidCoreBase_1_DebugSuspendFlag" data-uid="MASES.Netdroid.NetdroidCoreBase`1.DebugSuspendFlag">
+  DebugSuspendFlag
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/NetdroidCoreBase.cs/#L117"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string DebugSuspendFlag { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MASES_Netdroid_NetdroidCoreBase_1_EnableDebug_" data-uid="MASES.Netdroid.NetdroidCoreBase`1.EnableDebug*"></a>
+
+  <h3 id="MASES_Netdroid_NetdroidCoreBase_1_EnableDebug" data-uid="MASES.Netdroid.NetdroidCoreBase`1.EnableDebug">
+  EnableDebug
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/NetdroidCoreBase.cs/#L113"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool EnableDebug { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MASES_Netdroid_NetdroidCoreBase_1_GlobalHeapSize_" data-uid="MASES.Netdroid.NetdroidCoreBase`1.GlobalHeapSize*"></a>
+
+  <h3 id="MASES_Netdroid_NetdroidCoreBase_1_GlobalHeapSize" data-uid="MASES.Netdroid.NetdroidCoreBase`1.GlobalHeapSize">
+  GlobalHeapSize
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/NetdroidCoreBase.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string GlobalHeapSize { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MASES_Netdroid_NetdroidCoreBase_1_InitialHeapSize_" data-uid="MASES.Netdroid.NetdroidCoreBase`1.InitialHeapSize*"></a>
+
+  <h3 id="MASES_Netdroid_NetdroidCoreBase_1_InitialHeapSize" data-uid="MASES.Netdroid.NetdroidCoreBase`1.InitialHeapSize">
+  InitialHeapSize
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/NetdroidCoreBase.cs/#L123"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string InitialHeapSize { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MASES_Netdroid_NetdroidCoreBase_1_JDKHome_" data-uid="MASES.Netdroid.NetdroidCoreBase`1.JDKHome*"></a>
+
+  <h3 id="MASES_Netdroid_NetdroidCoreBase_1_JDKHome" data-uid="MASES.Netdroid.NetdroidCoreBase`1.JDKHome">
+  JDKHome
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/NetdroidCoreBase.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string JDKHome { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MASES_Netdroid_NetdroidCoreBase_1_JNIOutputFile_" data-uid="MASES.Netdroid.NetdroidCoreBase`1.JNIOutputFile*"></a>
+
+  <h3 id="MASES_Netdroid_NetdroidCoreBase_1_JNIOutputFile" data-uid="MASES.Netdroid.NetdroidCoreBase`1.JNIOutputFile">
+  JNIOutputFile
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/NetdroidCoreBase.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string JNIOutputFile { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MASES_Netdroid_NetdroidCoreBase_1_JNIVerbosity_" data-uid="MASES.Netdroid.NetdroidCoreBase`1.JNIVerbosity*"></a>
+
+  <h3 id="MASES_Netdroid_NetdroidCoreBase_1_JNIVerbosity" data-uid="MASES.Netdroid.NetdroidCoreBase`1.JNIVerbosity">
+  JNIVerbosity
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/NetdroidCoreBase.cs/#L107"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string JNIVerbosity { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MASES_Netdroid_NetdroidCoreBase_1_JVMOptions_" data-uid="MASES.Netdroid.NetdroidCoreBase`1.JVMOptions*"></a>
+
+  <h3 id="MASES_Netdroid_NetdroidCoreBase_1_JVMOptions" data-uid="MASES.Netdroid.NetdroidCoreBase`1.JVMOptions">
+  JVMOptions
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/NetdroidCoreBase.cs/#L183"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override sealed IEnumerable&lt;KeyValuePair&lt;string, string&gt;&gt; JVMOptions { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MASES_Netdroid_NetdroidCoreBase_1_JVMPath_" data-uid="MASES.Netdroid.NetdroidCoreBase`1.JVMPath*"></a>
+
+  <h3 id="MASES_Netdroid_NetdroidCoreBase_1_JVMPath" data-uid="MASES.Netdroid.NetdroidCoreBase`1.JVMPath">
+  JVMPath
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/NetdroidCoreBase.cs/#L105"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string JVMPath { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MASES_Netdroid_NetdroidCoreBase_1_JavaDebugOpts_" data-uid="MASES.Netdroid.NetdroidCoreBase`1.JavaDebugOpts*"></a>
+
+  <h3 id="MASES_Netdroid_NetdroidCoreBase_1_JavaDebugOpts" data-uid="MASES.Netdroid.NetdroidCoreBase`1.JavaDebugOpts">
+  JavaDebugOpts
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/NetdroidCoreBase.cs/#L119"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string JavaDebugOpts { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MASES_Netdroid_NetdroidCoreBase_1_JavaDebugPort_" data-uid="MASES.Netdroid.NetdroidCoreBase`1.JavaDebugPort*"></a>
+
+  <h3 id="MASES_Netdroid_NetdroidCoreBase_1_JavaDebugPort" data-uid="MASES.Netdroid.NetdroidCoreBase`1.JavaDebugPort">
+  JavaDebugPort
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/NetdroidCoreBase.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override short JavaDebugPort { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MASES_Netdroid_NetdroidCoreBase_1_JmxPort_" data-uid="MASES.Netdroid.NetdroidCoreBase`1.JmxPort*"></a>
+
+  <h3 id="MASES_Netdroid_NetdroidCoreBase_1_JmxPort" data-uid="MASES.Netdroid.NetdroidCoreBase`1.JmxPort">
+  JmxPort
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/NetdroidCoreBase.cs/#L111"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override short? JmxPort { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MASES_Netdroid_NetdroidCoreBase_1_LicensePath_" data-uid="MASES.Netdroid.NetdroidCoreBase`1.LicensePath*"></a>
+
+  <h3 id="MASES_Netdroid_NetdroidCoreBase_1_LicensePath" data-uid="MASES.Netdroid.NetdroidCoreBase`1.LicensePath">
+  LicensePath
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/NetdroidCoreBase.cs/#L101"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string LicensePath { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MASES_Netdroid_NetdroidCoreBase_1_LogClassPath_" data-uid="MASES.Netdroid.NetdroidCoreBase`1.LogClassPath*"></a>
+
+  <h3 id="MASES_Netdroid_NetdroidCoreBase_1_LogClassPath" data-uid="MASES.Netdroid.NetdroidCoreBase`1.LogClassPath">
+  LogClassPath
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/NetdroidCoreBase.cs/#L150"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> to print ClassPath</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool LogClassPath { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MASES_Netdroid_NetdroidCoreBase_1_Options_" data-uid="MASES.Netdroid.NetdroidCoreBase`1.Options*"></a>
+
+  <h3 id="MASES_Netdroid_NetdroidCoreBase_1_Options" data-uid="MASES.Netdroid.NetdroidCoreBase`1.Options">
+  Options
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/NetdroidCoreBase.cs/#L180"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds options to the JVM</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract IDictionary&lt;string, string&gt; Options { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MASES_Netdroid_NetdroidCoreBase_1_ParsedArgs_" data-uid="MASES.Netdroid.NetdroidCoreBase`1.ParsedArgs*"></a>
+
+  <h3 id="MASES_Netdroid_NetdroidCoreBase_1_ParsedArgs" data-uid="MASES.Netdroid.NetdroidCoreBase`1.ParsedArgs">
+  ParsedArgs
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/NetdroidCoreBase.cs/#L156"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Arguments parsed</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;IArgumentMetadataParsed&gt; ParsedArgs { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="api/MASES.CLIParser.IArgumentMetadataParsed.html">IArgumentMetadataParsed</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="MASES_Netdroid_NetdroidCoreBase_1_PathToParse_" data-uid="MASES.Netdroid.NetdroidCoreBase`1.PathToParse*"></a>
+
+  <h3 id="MASES_Netdroid_NetdroidCoreBase_1_PathToParse" data-uid="MASES.Netdroid.NetdroidCoreBase`1.PathToParse">
+  PathToParse
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/NetdroidCoreBase.cs/#L220"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>A list of paths to be used in initialization of JVM ClassPath</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual IList&lt;string&gt; PathToParse { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MASES_Netdroid_NetdroidCoreBase_1_HelpInfo_" data-uid="MASES.Netdroid.NetdroidCoreBase`1.HelpInfo*"></a>
+
+  <h3 id="MASES_Netdroid_NetdroidCoreBase_1_HelpInfo_System_Nullable_System_Int32__" data-uid="MASES.Netdroid.NetdroidCoreBase`1.HelpInfo(System.Nullable{System.Int32})">
+  HelpInfo(int?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/NetdroidCoreBase.cs/#L245"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string HelpInfo(int? width = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MASES_Netdroid_NetdroidCoreBase_1_New_" data-uid="MASES.Netdroid.NetdroidCoreBase`1.New*"></a>
+
+  <h3 id="MASES_Netdroid_NetdroidCoreBase_1_New_System_String_" data-uid="MASES.Netdroid.NetdroidCoreBase`1.New(System.String)">
+  New(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/NetdroidCoreBase.cs/#L252"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieve the object associated to <code class="paramref">className</code></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static dynamic New(string className)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>className</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The java class to be instantiated</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">dynamic</span></dt>
+    <dd><p>The instance associated to the requested <code class="paramref">className</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MASES_Netdroid_NetdroidCoreBase_1_New_" data-uid="MASES.Netdroid.NetdroidCoreBase`1.New*"></a>
+
+  <h3 id="MASES_Netdroid_NetdroidCoreBase_1_New_System_String_System_Object___" data-uid="MASES.Netdroid.NetdroidCoreBase`1.New(System.String,System.Object[])">
+  New(string, params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/NetdroidCoreBase.cs/#L263"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieve the object associated to <code class="paramref">className</code></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static dynamic New(string className, params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>className</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The java class to be instantiated</p>
+</dd>
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd><p>The argument of the costructor</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">dynamic</span></dt>
+    <dd><p>The instance associated to the requested <code class="paramref">className</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MASES_Netdroid_NetdroidCoreBase_1_ProcessCommandLine_" data-uid="MASES.Netdroid.NetdroidCoreBase`1.ProcessCommandLine*"></a>
+
+  <h3 id="MASES_Netdroid_NetdroidCoreBase_1_ProcessCommandLine" data-uid="MASES.Netdroid.NetdroidCoreBase`1.ProcessCommandLine">
+  ProcessCommandLine()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/NetdroidCoreBase.cs/#L166"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/M_MASES_JCOBridge_C2JBridge_SetupJVMWrapper_ProcessCommandLine.htm">https://www.jcobridge.com/api-clr/html/M_MASES_JCOBridge_C2JBridge_SetupJVMWrapper_ProcessCommandLine.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override string[] ProcessCommandLine()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/NetdroidCoreBase.cs/#L37" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

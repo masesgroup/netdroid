@@ -1,0 +1,1531 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class TextPaint | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class TextPaint | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/text/TextPaint.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_Text_TextPaint.md&amp;value=---%0Auid%3A%20Android.Text.TextPaint%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.Text.TextPaint">
+
+
+
+  <h1 id="Android_Text_TextPaint" data-uid="Android.Text.TextPaint" class="text-break">
+Class TextPaint  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/TextPaint.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.Text.html">Text</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/text/TextPaint.html">https://developer.android.com/reference/android/text/TextPaint.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class TextPaint : Paint, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.Graphics.Paint.html">Paint</a>&gt;</div>
+      <div><a class="xref" href="Android.Graphics.Paint.html">Paint</a></div>
+      <div><span class="xref">TextPaint</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_ANTI_ALIAS_FLAG">Paint.ANTI_ALIAS_FLAG</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_CURSOR_AFTER">Paint.CURSOR_AFTER</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_CURSOR_AT">Paint.CURSOR_AT</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_CURSOR_AT_OR_AFTER">Paint.CURSOR_AT_OR_AFTER</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_CURSOR_AT_OR_BEFORE">Paint.CURSOR_AT_OR_BEFORE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_CURSOR_BEFORE">Paint.CURSOR_BEFORE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_DEV_KERN_TEXT_FLAG">Paint.DEV_KERN_TEXT_FLAG</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_DITHER_FLAG">Paint.DITHER_FLAG</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_EMBEDDED_BITMAP_TEXT_FLAG">Paint.EMBEDDED_BITMAP_TEXT_FLAG</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_END_HYPHEN_EDIT_INSERT_ARMENIAN_HYPHEN">Paint.END_HYPHEN_EDIT_INSERT_ARMENIAN_HYPHEN</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_END_HYPHEN_EDIT_INSERT_HYPHEN">Paint.END_HYPHEN_EDIT_INSERT_HYPHEN</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_END_HYPHEN_EDIT_INSERT_MAQAF">Paint.END_HYPHEN_EDIT_INSERT_MAQAF</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_END_HYPHEN_EDIT_INSERT_UCAS_HYPHEN">Paint.END_HYPHEN_EDIT_INSERT_UCAS_HYPHEN</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_END_HYPHEN_EDIT_INSERT_ZWJ_AND_HYPHEN">Paint.END_HYPHEN_EDIT_INSERT_ZWJ_AND_HYPHEN</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_END_HYPHEN_EDIT_NO_EDIT">Paint.END_HYPHEN_EDIT_NO_EDIT</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_END_HYPHEN_EDIT_REPLACE_WITH_HYPHEN">Paint.END_HYPHEN_EDIT_REPLACE_WITH_HYPHEN</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_FAKE_BOLD_TEXT_FLAG">Paint.FAKE_BOLD_TEXT_FLAG</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_FILTER_BITMAP_FLAG">Paint.FILTER_BITMAP_FLAG</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_HINTING_OFF">Paint.HINTING_OFF</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_HINTING_ON">Paint.HINTING_ON</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_LINEAR_TEXT_FLAG">Paint.LINEAR_TEXT_FLAG</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_START_HYPHEN_EDIT_INSERT_HYPHEN">Paint.START_HYPHEN_EDIT_INSERT_HYPHEN</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_START_HYPHEN_EDIT_INSERT_ZWJ">Paint.START_HYPHEN_EDIT_INSERT_ZWJ</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_START_HYPHEN_EDIT_NO_EDIT">Paint.START_HYPHEN_EDIT_NO_EDIT</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_STRIKE_THRU_TEXT_FLAG">Paint.STRIKE_THRU_TEXT_FLAG</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_SUBPIXEL_TEXT_FLAG">Paint.SUBPIXEL_TEXT_FLAG</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_UNDERLINE_TEXT_FLAG">Paint.UNDERLINE_TEXT_FLAG</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_GetBlendMode">Paint.GetBlendMode()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_GetColorFilter">Paint.GetColorFilter()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_SetColorFilter_Android_Graphics_ColorFilter_">Paint.SetColorFilter(ColorFilter)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_GetMaskFilter">Paint.GetMaskFilter()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_SetMaskFilter_Android_Graphics_MaskFilter_">Paint.SetMaskFilter(MaskFilter)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_GetTextAlign">Paint.GetTextAlign()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_GetStrokeCap">Paint.GetStrokeCap()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_GetFontMetrics">Paint.GetFontMetrics()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_GetFontMetricsInt">Paint.GetFontMetricsInt()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_GetStrokeJoin">Paint.GetStrokeJoin()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_GetStyle">Paint.GetStyle()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_GetPathEffect">Paint.GetPathEffect()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_SetPathEffect_Android_Graphics_PathEffect_">Paint.SetPathEffect(PathEffect)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_GetShader">Paint.GetShader()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_SetShader_Android_Graphics_Shader_">Paint.SetShader(Shader)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_GetTypeface">Paint.GetTypeface()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_SetTypeface_Android_Graphics_Typeface_">Paint.SetTypeface(Typeface)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_GetXfermode">Paint.GetXfermode()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_SetXfermode_Android_Graphics_Xfermode_">Paint.SetXfermode(Xfermode)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_GetTextLocales">Paint.GetTextLocales()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_EqualsForTextMeasurement_Android_Graphics_Paint_">Paint.EqualsForTextMeasurement(Paint)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_GetFillPath_Android_Graphics_Path_Android_Graphics_Path_">Paint.GetFillPath(Path, Path)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_HasGlyph_Java_Lang_String_">Paint.HasGlyph(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_IsElegantTextHeight">Paint.IsElegantTextHeight()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_SetFontVariationSettings_Java_Lang_String_">Paint.SetFontVariationSettings(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_IsAntiAlias">Paint.IsAntiAlias()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_IsDither">Paint.IsDither()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_IsFakeBoldText">Paint.IsFakeBoldText()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_IsFilterBitmap">Paint.IsFilterBitmap()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_IsLinearText">Paint.IsLinearText()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_IsStrikeThruText">Paint.IsStrikeThruText()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_IsSubpixelText">Paint.IsSubpixelText()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_IsUnderlineText">Paint.IsUnderlineText()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_Ascent">Paint.Ascent()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_Descent">Paint.Descent()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_GetFontMetrics_Android_Graphics_Paint_FontMetrics_">Paint.GetFontMetrics(Paint.FontMetrics)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_GetFontSpacing">Paint.GetFontSpacing()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_GetLetterSpacing">Paint.GetLetterSpacing()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_GetRunAdvance_System_Char___System_Int32_System_Int32_System_Int32_System_Int32_System_Boolean_System_Int32_">Paint.GetRunAdvance(char[], int, int, int, int, bool, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_GetRunAdvance_Java_Lang_CharSequence_System_Int32_System_Int32_System_Int32_System_Int32_System_Boolean_System_Int32_">Paint.GetRunAdvance(CharSequence, int, int, int, int, bool, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_GetRunCharacterAdvance_System_Char___System_Int32_System_Int32_System_Int32_System_Int32_System_Boolean_System_Int32_System_Single___System_Int32_">Paint.GetRunCharacterAdvance(char[], int, int, int, int, bool, int, float[], int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_GetRunCharacterAdvance_Java_Lang_CharSequence_System_Int32_System_Int32_System_Int32_System_Int32_System_Boolean_System_Int32_System_Single___System_Int32_">Paint.GetRunCharacterAdvance(CharSequence, int, int, int, int, bool, int, float[], int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_GetShadowLayerDx">Paint.GetShadowLayerDx()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_GetShadowLayerDy">Paint.GetShadowLayerDy()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_GetShadowLayerRadius">Paint.GetShadowLayerRadius()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_GetStrikeThruPosition">Paint.GetStrikeThruPosition()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_GetStrikeThruThickness">Paint.GetStrikeThruThickness()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_GetStrokeMiter">Paint.GetStrokeMiter()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_GetStrokeWidth">Paint.GetStrokeWidth()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_GetTextRunAdvances_System_Char___System_Int32_System_Int32_System_Int32_System_Int32_System_Boolean_System_Single___System_Int32_">Paint.GetTextRunAdvances(char[], int, int, int, int, bool, float[], int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_GetTextScaleX">Paint.GetTextScaleX()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_GetTextSize">Paint.GetTextSize()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_GetTextSkewX">Paint.GetTextSkewX()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_GetUnderlinePosition">Paint.GetUnderlinePosition()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_GetUnderlineThickness">Paint.GetUnderlineThickness()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_GetWordSpacing">Paint.GetWordSpacing()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_MeasureText_System_Char___System_Int32_System_Int32_">Paint.MeasureText(char[], int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_MeasureText_Java_Lang_CharSequence_System_Int32_System_Int32_">Paint.MeasureText(CharSequence, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_MeasureText_Java_Lang_String_System_Int32_System_Int32_">Paint.MeasureText(String, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_MeasureText_Java_Lang_String_">Paint.MeasureText(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_BreakText_System_Char___System_Int32_System_Int32_System_Single_System_Single___">Paint.BreakText(char[], int, int, float, float[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_BreakText_Java_Lang_CharSequence_System_Int32_System_Int32_System_Boolean_System_Single_System_Single___">Paint.BreakText(CharSequence, int, int, bool, float, float[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_BreakText_Java_Lang_String_System_Boolean_System_Single_System_Single___">Paint.BreakText(String, bool, float, float[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_GetAlpha">Paint.GetAlpha()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_GetColor">Paint.GetColor()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_GetEndHyphenEdit">Paint.GetEndHyphenEdit()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_GetFlags">Paint.GetFlags()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_GetFontMetricsInt_Android_Graphics_Paint_FontMetricsInt_">Paint.GetFontMetricsInt(Paint.FontMetricsInt)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_GetHinting">Paint.GetHinting()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_GetOffsetForAdvance_System_Char___System_Int32_System_Int32_System_Int32_System_Int32_System_Boolean_System_Single_">Paint.GetOffsetForAdvance(char[], int, int, int, int, bool, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_GetOffsetForAdvance_Java_Lang_CharSequence_System_Int32_System_Int32_System_Int32_System_Int32_System_Boolean_System_Single_">Paint.GetOffsetForAdvance(CharSequence, int, int, int, int, bool, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_GetShadowLayerColor">Paint.GetShadowLayerColor()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_GetStartHyphenEdit">Paint.GetStartHyphenEdit()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_GetTextRunCursor_System_Char___System_Int32_System_Int32_System_Boolean_System_Int32_System_Int32_">Paint.GetTextRunCursor(char[], int, int, bool, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_GetTextRunCursor_Java_Lang_CharSequence_System_Int32_System_Int32_System_Boolean_System_Int32_System_Int32_">Paint.GetTextRunCursor(CharSequence, int, int, bool, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_GetTextWidths_System_Char___System_Int32_System_Int32_System_Single___">Paint.GetTextWidths(char[], int, int, float[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_GetTextWidths_Java_Lang_CharSequence_System_Int32_System_Int32_System_Single___">Paint.GetTextWidths(CharSequence, int, int, float[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_GetTextWidths_Java_Lang_String_System_Single___">Paint.GetTextWidths(String, float[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_GetTextWidths_Java_Lang_String_System_Int32_System_Int32_System_Single___">Paint.GetTextWidths(String, int, int, float[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_GetFontFeatureSettings">Paint.GetFontFeatureSettings()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_GetFontVariationSettings">Paint.GetFontVariationSettings()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_GetTextLocale">Paint.GetTextLocale()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_GetColorLong">Paint.GetColorLong()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_GetShadowLayerColorLong">Paint.GetShadowLayerColorLong()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_ClearShadowLayer">Paint.ClearShadowLayer()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_GetFontMetricsInt_System_Char___System_Int32_System_Int32_System_Int32_System_Int32_System_Boolean_Android_Graphics_Paint_FontMetricsInt_">Paint.GetFontMetricsInt(char[], int, int, int, int, bool, Paint.FontMetricsInt)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_GetFontMetricsInt_Java_Lang_CharSequence_System_Int32_System_Int32_System_Int32_System_Int32_System_Boolean_Android_Graphics_Paint_FontMetricsInt_">Paint.GetFontMetricsInt(CharSequence, int, int, int, int, bool, Paint.FontMetricsInt)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_GetTextBounds_System_Char___System_Int32_System_Int32_Android_Graphics_Rect_">Paint.GetTextBounds(char[], int, int, Rect)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_GetTextBounds_Java_Lang_CharSequence_System_Int32_System_Int32_Android_Graphics_Rect_">Paint.GetTextBounds(CharSequence, int, int, Rect)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_GetTextBounds_Java_Lang_String_System_Int32_System_Int32_Android_Graphics_Rect_">Paint.GetTextBounds(String, int, int, Rect)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_GetTextPath_System_Char___System_Int32_System_Int32_System_Single_System_Single_Android_Graphics_Path_">Paint.GetTextPath(char[], int, int, float, float, Path)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_GetTextPath_Java_Lang_String_System_Int32_System_Int32_System_Single_System_Single_Android_Graphics_Path_">Paint.GetTextPath(String, int, int, float, float, Path)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_Reset">Paint.Reset()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_Set_Android_Graphics_Paint_">Paint.Set(Paint)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_SetAlpha_System_Int32_">Paint.SetAlpha(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_SetAntiAlias_System_Boolean_">Paint.SetAntiAlias(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_SetARGB_System_Int32_System_Int32_System_Int32_System_Int32_">Paint.SetARGB(int, int, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_SetBlendMode_Android_Graphics_BlendMode_">Paint.SetBlendMode(BlendMode)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_SetColor_System_Int32_">Paint.SetColor(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_SetColor_System_Int64_">Paint.SetColor(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_SetDither_System_Boolean_">Paint.SetDither(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_SetElegantTextHeight_System_Boolean_">Paint.SetElegantTextHeight(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_SetEndHyphenEdit_System_Int32_">Paint.SetEndHyphenEdit(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_SetFakeBoldText_System_Boolean_">Paint.SetFakeBoldText(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_SetFilterBitmap_System_Boolean_">Paint.SetFilterBitmap(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_SetFlags_System_Int32_">Paint.SetFlags(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_SetFontFeatureSettings_Java_Lang_String_">Paint.SetFontFeatureSettings(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_SetHinting_System_Int32_">Paint.SetHinting(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_SetLetterSpacing_System_Single_">Paint.SetLetterSpacing(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_SetLinearText_System_Boolean_">Paint.SetLinearText(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_SetShadowLayer_System_Single_System_Single_System_Single_System_Int32_">Paint.SetShadowLayer(float, float, float, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_SetShadowLayer_System_Single_System_Single_System_Single_System_Int64_">Paint.SetShadowLayer(float, float, float, long)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_SetStartHyphenEdit_System_Int32_">Paint.SetStartHyphenEdit(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_SetStrikeThruText_System_Boolean_">Paint.SetStrikeThruText(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_SetStrokeCap_Android_Graphics_Paint_Cap_">Paint.SetStrokeCap(Paint.Cap)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_SetStrokeJoin_Android_Graphics_Paint_Join_">Paint.SetStrokeJoin(Paint.Join)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_SetStrokeMiter_System_Single_">Paint.SetStrokeMiter(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_SetStrokeWidth_System_Single_">Paint.SetStrokeWidth(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_SetStyle_Android_Graphics_Paint_Style_">Paint.SetStyle(Paint.Style)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_SetSubpixelText_System_Boolean_">Paint.SetSubpixelText(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_SetTextAlign_Android_Graphics_Paint_Align_">Paint.SetTextAlign(Paint.Align)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_SetTextLocale_Java_Util_Locale_">Paint.SetTextLocale(Locale)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_SetTextLocales_Android_Os_LocaleList_">Paint.SetTextLocales(LocaleList)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_SetTextScaleX_System_Single_">Paint.SetTextScaleX(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_SetTextSize_System_Single_">Paint.SetTextSize(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_SetTextSkewX_System_Single_">Paint.SetTextSkewX(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_SetUnderlineText_System_Boolean_">Paint.SetUnderlineText(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.Paint.html#Android_Graphics_Paint_SetWordSpacing_System_Single_">Paint.SetWordSpacing(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Paint&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Paint&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Paint&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Paint&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Paint&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Paint&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Paint&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Paint&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Paint&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Paint&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Paint&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Paint&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Paint&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Paint&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Paint&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Paint&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Paint&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Paint&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Paint&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Paint&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Paint&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Paint&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Paint&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Paint&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Paint&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Paint&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Paint&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Paint&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Paint&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Paint&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Paint&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Paint&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Paint&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Paint&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Paint&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Paint&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Paint&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Paint&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Paint&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Paint&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Paint&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Paint&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Paint&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Paint&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Paint&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;Paint&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Paint&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Paint&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Paint&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Paint&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_Text_TextPaint__ctor_" data-uid="Android.Text.TextPaint.#ctor*"></a>
+
+  <h3 id="Android_Text_TextPaint__ctor" data-uid="Android.Text.TextPaint.#ctor">
+  TextPaint()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/AllPackageClasses.cs/#L2412"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextPaint()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Text_TextPaint__ctor_" data-uid="Android.Text.TextPaint.#ctor*"></a>
+
+  <h3 id="Android_Text_TextPaint__ctor_Android_Graphics_Paint_" data-uid="Android.Text.TextPaint.#ctor(Android.Graphics.Paint)">
+  TextPaint(Paint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/TextPaint.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/TextPaint.html#%3Cinit%3E(android.graphics.Paint)">https://developer.android.com/reference/android/text/TextPaint.html#%3Cinit%3E(android.graphics.Paint)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextPaint(Paint arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Graphics.Paint.html">Paint</a></dt>
+    <dd><p><a class="xref" href="Android.Graphics.Paint.html">Paint</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Text_TextPaint__ctor_" data-uid="Android.Text.TextPaint.#ctor*"></a>
+
+  <h3 id="Android_Text_TextPaint__ctor_System_Int32_" data-uid="Android.Text.TextPaint.#ctor(System.Int32)">
+  TextPaint(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/TextPaint.cs/#L44"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/TextPaint.html#%3Cinit%3E(int)">https://developer.android.com/reference/android/text/TextPaint.html#%3Cinit%3E(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextPaint(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Text_TextPaint__ctor_" data-uid="Android.Text.TextPaint.#ctor*"></a>
+
+  <h3 id="Android_Text_TextPaint__ctor_System_Object___" data-uid="Android.Text.TextPaint.#ctor(System.Object[])">
+  TextPaint(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/AllPackageClasses.cs/#L2416"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextPaint(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_Text_TextPaint_BridgeClassName_" data-uid="Android.Text.TextPaint.BridgeClassName*"></a>
+
+  <h3 id="Android_Text_TextPaint_BridgeClassName" data-uid="Android.Text.TextPaint.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/AllPackageClasses.cs/#L2423"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_TextPaint_IsBridgeAbstract_" data-uid="Android.Text.TextPaint.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_Text_TextPaint_IsBridgeAbstract" data-uid="Android.Text.TextPaint.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/AllPackageClasses.cs/#L2427"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_TextPaint_IsBridgeCloseable_" data-uid="Android.Text.TextPaint.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_Text_TextPaint_IsBridgeCloseable" data-uid="Android.Text.TextPaint.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/AllPackageClasses.cs/#L2431"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_TextPaint_IsBridgeInterface_" data-uid="Android.Text.TextPaint.IsBridgeInterface*"></a>
+
+  <h3 id="Android_Text_TextPaint_IsBridgeInterface" data-uid="Android.Text.TextPaint.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/AllPackageClasses.cs/#L2435"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_TextPaint_IsBridgeStatic_" data-uid="Android.Text.TextPaint.IsBridgeStatic*"></a>
+
+  <h3 id="Android_Text_TextPaint_IsBridgeStatic" data-uid="Android.Text.TextPaint.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/AllPackageClasses.cs/#L2439"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_TextPaint_baselineShift_" data-uid="Android.Text.TextPaint.baselineShift*"></a>
+
+  <h3 id="Android_Text_TextPaint_baselineShift" data-uid="Android.Text.TextPaint.baselineShift">
+  baselineShift
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/TextPaint.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/TextPaint.html#baselineShift">https://developer.android.com/reference/android/text/TextPaint.html#baselineShift</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int baselineShift { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_TextPaint_bgColor_" data-uid="Android.Text.TextPaint.bgColor*"></a>
+
+  <h3 id="Android_Text_TextPaint_bgColor" data-uid="Android.Text.TextPaint.bgColor">
+  bgColor
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/TextPaint.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/TextPaint.html#bgColor">https://developer.android.com/reference/android/text/TextPaint.html#bgColor</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int bgColor { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_TextPaint_density_" data-uid="Android.Text.TextPaint.density*"></a>
+
+  <h3 id="Android_Text_TextPaint_density" data-uid="Android.Text.TextPaint.density">
+  density
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/TextPaint.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/TextPaint.html#density">https://developer.android.com/reference/android/text/TextPaint.html#density</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float density { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_TextPaint_drawableState_" data-uid="Android.Text.TextPaint.drawableState*"></a>
+
+  <h3 id="Android_Text_TextPaint_drawableState" data-uid="Android.Text.TextPaint.drawableState">
+  drawableState
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/TextPaint.cs/#L83"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/TextPaint.html#drawableState">https://developer.android.com/reference/android/text/TextPaint.html#drawableState</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int[] drawableState { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_TextPaint_linkColor_" data-uid="Android.Text.TextPaint.linkColor*"></a>
+
+  <h3 id="Android_Text_TextPaint_linkColor" data-uid="Android.Text.TextPaint.linkColor">
+  linkColor
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/TextPaint.cs/#L75"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/TextPaint.html#linkColor">https://developer.android.com/reference/android/text/TextPaint.html#linkColor</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int linkColor { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_TextPaint_underlineColor_" data-uid="Android.Text.TextPaint.underlineColor*"></a>
+
+  <h3 id="Android_Text_TextPaint_underlineColor" data-uid="Android.Text.TextPaint.underlineColor">
+  underlineColor
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/TextPaint.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/TextPaint.html#underlineColor">https://developer.android.com/reference/android/text/TextPaint.html#underlineColor</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int underlineColor { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_TextPaint_underlineThickness_" data-uid="Android.Text.TextPaint.underlineThickness*"></a>
+
+  <h3 id="Android_Text_TextPaint_underlineThickness" data-uid="Android.Text.TextPaint.underlineThickness">
+  underlineThickness
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/TextPaint.cs/#L63"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/TextPaint.html#underlineThickness">https://developer.android.com/reference/android/text/TextPaint.html#underlineThickness</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float underlineThickness { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_Text_TextPaint_Set_" data-uid="Android.Text.TextPaint.Set*"></a>
+
+  <h3 id="Android_Text_TextPaint_Set_Android_Text_TextPaint_" data-uid="Android.Text.TextPaint.Set(Android.Text.TextPaint)">
+  Set(TextPaint)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/TextPaint.cs/#L96"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/TextPaint.html#set(android.text.TextPaint)">https://developer.android.com/reference/android/text/TextPaint.html#set(android.text.TextPaint)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Set(TextPaint arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Text.TextPaint.html">TextPaint</a></dt>
+    <dd><p><a class="xref" href="Android.Text.TextPaint.html">TextPaint</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/TextPaint.cs/#L29" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

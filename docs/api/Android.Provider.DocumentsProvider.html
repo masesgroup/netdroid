@@ -1,0 +1,2057 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class DocumentsProvider | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class DocumentsProvider | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/provider/DocumentsProvider.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_Provider_DocumentsProvider.md&amp;value=---%0Auid%3A%20Android.Provider.DocumentsProvider%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.Provider.DocumentsProvider">
+
+
+
+  <h1 id="Android_Provider_DocumentsProvider" data-uid="Android.Provider.DocumentsProvider" class="text-break">
+Class DocumentsProvider  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/DocumentsProvider.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.Provider.html">Provider</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/provider/DocumentsProvider.html">https://developer.android.com/reference/android/provider/DocumentsProvider.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DocumentsProvider : ContentProvider, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IComponentCallbacks2, IComponentCallbacks</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.Content.ComponentCallbacks.html">ComponentCallbacks</a>&gt;</div>
+      <div><a class="xref" href="Android.Content.ComponentCallbacks.html">ComponentCallbacks</a></div>
+      <div><a class="xref" href="Android.Content.ComponentCallbacks2.html">ComponentCallbacks2</a></div>
+      <div><a class="xref" href="Android.Content.ContentProvider.html">ContentProvider</a></div>
+      <div><span class="xref">DocumentsProvider</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+      <div><a class="xref" href="Android.Content.IComponentCallbacks2.html">IComponentCallbacks2</a></div>
+      <div><a class="xref" href="Android.Content.IComponentCallbacks.html">IComponentCallbacks</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_OpenPipeHelper__1_Android_Net_Uri_Java_Lang_String_Android_Os_Bundle___0_Android_Content_ContentProvider_PipeDataWriter___0__">ContentProvider.OpenPipeHelper&lt;T&gt;(Uri, String, Bundle, T, ContentProvider.PipeDataWriter&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_Query_Android_Net_Uri_Java_Lang_String___Java_Lang_String_Java_Lang_String___Java_Lang_String_">ContentProvider.Query(Uri, String[], String, String[], String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_Insert_Android_Net_Uri_Android_Content_ContentValues_">ContentProvider.Insert(Uri, ContentValues)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_OnCreate">ContentProvider.OnCreate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_Delete_Android_Net_Uri_Java_Lang_String_Java_Lang_String___">ContentProvider.Delete(Uri, String, String[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_Update_Android_Net_Uri_Android_Content_ContentValues_Java_Lang_String_Java_Lang_String___">ContentProvider.Update(Uri, ContentValues, String, String[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_GetType_Android_Net_Uri_">ContentProvider.GetType(Uri)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_ApplyBatch_Java_Lang_String_Java_Util_ArrayList_Android_Content_ContentProviderOperation__">ContentProvider.ApplyBatch(String, ArrayList&lt;ContentProviderOperation&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_ApplyBatch_Java_Util_ArrayList_Android_Content_ContentProviderOperation__">ContentProvider.ApplyBatch(ArrayList&lt;ContentProviderOperation&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_OpenAssetFile_Android_Net_Uri_Java_Lang_String_Android_Os_CancellationSignal_">ContentProvider.OpenAssetFile(Uri, String, CancellationSignal)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_OpenAssetFile_Android_Net_Uri_Java_Lang_String_">ContentProvider.OpenAssetFile(Uri, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_OpenTypedAssetFile_Android_Net_Uri_Java_Lang_String_Android_Os_Bundle_Android_Os_CancellationSignal_">ContentProvider.OpenTypedAssetFile(Uri, String, Bundle, CancellationSignal)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_OpenTypedAssetFile_Android_Net_Uri_Java_Lang_String_Android_Os_Bundle_">ContentProvider.OpenTypedAssetFile(Uri, String, Bundle)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_Query_Android_Net_Uri_Java_Lang_String___Android_Os_Bundle_Android_Os_CancellationSignal_">ContentProvider.Query(Uri, String[], Bundle, CancellationSignal)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_Query_Android_Net_Uri_Java_Lang_String___Java_Lang_String_Java_Lang_String___Java_Lang_String_Android_Os_CancellationSignal_">ContentProvider.Query(Uri, String[], String, String[], String, CancellationSignal)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_Canonicalize_Android_Net_Uri_">ContentProvider.Canonicalize(Uri)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_Insert_Android_Net_Uri_Android_Content_ContentValues_Android_Os_Bundle_">ContentProvider.Insert(Uri, ContentValues, Bundle)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_Uncanonicalize_Android_Net_Uri_">ContentProvider.Uncanonicalize(Uri)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_Call_Java_Lang_String_Java_Lang_String_Android_Os_Bundle_">ContentProvider.Call(String, String, Bundle)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_Call_Java_Lang_String_Java_Lang_String_Java_Lang_String_Android_Os_Bundle_">ContentProvider.Call(String, String, String, Bundle)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_OpenFile_Android_Net_Uri_Java_Lang_String_Android_Os_CancellationSignal_">ContentProvider.OpenFile(Uri, String, CancellationSignal)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_OpenFile_Android_Net_Uri_Java_Lang_String_">ContentProvider.OpenFile(Uri, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_Refresh_Android_Net_Uri_Android_Os_Bundle_Android_Os_CancellationSignal_">ContentProvider.Refresh(Uri, Bundle, CancellationSignal)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_GetCallingAttributionSource">ContentProvider.GetCallingAttributionSource()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_ClearCallingIdentity">ContentProvider.ClearCallingIdentity()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_GetContext">ContentProvider.GetContext()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_RequireContext">ContentProvider.RequireContext()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_GetPathPermissions">ContentProvider.GetPathPermissions()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_GetCallingAttributionTag">ContentProvider.GetCallingAttributionTag()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_GetCallingPackage">ContentProvider.GetCallingPackage()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_GetCallingPackageUnchecked">ContentProvider.GetCallingPackageUnchecked()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_GetReadPermission">ContentProvider.GetReadPermission()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_GetWritePermission">ContentProvider.GetWritePermission()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_RestoreCallingIdentity_Android_Content_ContentProvider_CallingIdentity_">ContentProvider.RestoreCallingIdentity(ContentProvider.CallingIdentity)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_BulkInsert_Android_Net_Uri_Android_Content_ContentValues___">ContentProvider.BulkInsert(Uri, ContentValues[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_Delete_Android_Net_Uri_Android_Os_Bundle_">ContentProvider.Delete(Uri, Bundle)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_Update_Android_Net_Uri_Android_Content_ContentValues_Android_Os_Bundle_">ContentProvider.Update(Uri, ContentValues, Bundle)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_GetTypeAnonymous_Android_Net_Uri_">ContentProvider.GetTypeAnonymous(Uri)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_GetStreamTypes_Android_Net_Uri_Java_Lang_String_">ContentProvider.GetStreamTypes(Uri, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_AttachInfo_Android_Content_Context_Android_Content_Pm_ProviderInfo_">ContentProvider.AttachInfo(Context, ProviderInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_Dump_Java_Io_FileDescriptor_Java_Io_PrintWriter_Java_Lang_String___">ContentProvider.Dump(FileDescriptor, PrintWriter, String[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_OnCallingPackageChanged">ContentProvider.OnCallingPackageChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_OnConfigurationChanged_Android_Content_Res_Configuration_">ContentProvider.OnConfigurationChanged(Configuration)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_OnLowMemory">ContentProvider.OnLowMemory()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_OnTrimMemory_System_Int32_">ContentProvider.OnTrimMemory(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_Shutdown">ContentProvider.Shutdown()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ComponentCallbacks2.html#Android_Content_ComponentCallbacks2_TRIM_MEMORY_BACKGROUND">ComponentCallbacks2.TRIM_MEMORY_BACKGROUND</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ComponentCallbacks2.html#Android_Content_ComponentCallbacks2_TRIM_MEMORY_COMPLETE">ComponentCallbacks2.TRIM_MEMORY_COMPLETE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ComponentCallbacks2.html#Android_Content_ComponentCallbacks2_TRIM_MEMORY_MODERATE">ComponentCallbacks2.TRIM_MEMORY_MODERATE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ComponentCallbacks2.html#Android_Content_ComponentCallbacks2_TRIM_MEMORY_RUNNING_CRITICAL">ComponentCallbacks2.TRIM_MEMORY_RUNNING_CRITICAL</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ComponentCallbacks2.html#Android_Content_ComponentCallbacks2_TRIM_MEMORY_RUNNING_LOW">ComponentCallbacks2.TRIM_MEMORY_RUNNING_LOW</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ComponentCallbacks2.html#Android_Content_ComponentCallbacks2_TRIM_MEMORY_RUNNING_MODERATE">ComponentCallbacks2.TRIM_MEMORY_RUNNING_MODERATE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ComponentCallbacks2.html#Android_Content_ComponentCallbacks2_TRIM_MEMORY_UI_HIDDEN">ComponentCallbacks2.TRIM_MEMORY_UI_HIDDEN</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;ComponentCallbacks&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;ComponentCallbacks&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;ComponentCallbacks&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;ComponentCallbacks&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;ComponentCallbacks&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;ComponentCallbacks&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_Provider_DocumentsProvider__ctor_" data-uid="Android.Provider.DocumentsProvider.#ctor*"></a>
+
+  <h3 id="Android_Provider_DocumentsProvider__ctor" data-uid="Android.Provider.DocumentsProvider.#ctor">
+  DocumentsProvider()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/AllPackageClasses.cs/#L5114"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;DocumentsProvider class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public DocumentsProvider()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_DocumentsProvider__ctor_" data-uid="Android.Provider.DocumentsProvider.#ctor*"></a>
+
+  <h3 id="Android_Provider_DocumentsProvider__ctor_System_Object___" data-uid="Android.Provider.DocumentsProvider.#ctor(System.Object[])">
+  DocumentsProvider(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/AllPackageClasses.cs/#L5119"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;DocumentsProvider class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public DocumentsProvider(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_Provider_DocumentsProvider_BridgeClassName_" data-uid="Android.Provider.DocumentsProvider.BridgeClassName*"></a>
+
+  <h3 id="Android_Provider_DocumentsProvider_BridgeClassName" data-uid="Android.Provider.DocumentsProvider.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/AllPackageClasses.cs/#L5127"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_DocumentsProvider_IsBridgeAbstract_" data-uid="Android.Provider.DocumentsProvider.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_Provider_DocumentsProvider_IsBridgeAbstract" data-uid="Android.Provider.DocumentsProvider.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/AllPackageClasses.cs/#L5131"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_DocumentsProvider_IsBridgeCloseable_" data-uid="Android.Provider.DocumentsProvider.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_Provider_DocumentsProvider_IsBridgeCloseable" data-uid="Android.Provider.DocumentsProvider.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/AllPackageClasses.cs/#L5135"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_DocumentsProvider_IsBridgeInterface_" data-uid="Android.Provider.DocumentsProvider.IsBridgeInterface*"></a>
+
+  <h3 id="Android_Provider_DocumentsProvider_IsBridgeInterface" data-uid="Android.Provider.DocumentsProvider.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/AllPackageClasses.cs/#L5139"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_DocumentsProvider_IsBridgeStatic_" data-uid="Android.Provider.DocumentsProvider.IsBridgeStatic*"></a>
+
+  <h3 id="Android_Provider_DocumentsProvider_IsBridgeStatic" data-uid="Android.Provider.DocumentsProvider.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/AllPackageClasses.cs/#L5143"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_Provider_DocumentsProvider_CopyDocument_" data-uid="Android.Provider.DocumentsProvider.CopyDocument*"></a>
+
+  <h3 id="Android_Provider_DocumentsProvider_CopyDocument_Java_Lang_String_Java_Lang_String_" data-uid="Android.Provider.DocumentsProvider.CopyDocument(Java.Lang.String,Java.Lang.String)">
+  CopyDocument(String, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/DocumentsProvider.cs/#L235"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/DocumentsProvider.html#copyDocument(java.lang.String,java.lang.String)">https://developer.android.com/reference/android/provider/DocumentsProvider.html#copyDocument(java.lang.String,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String CopyDocument(String arg0, String arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.FileNotFoundException.html">FileNotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Provider_DocumentsProvider_CreateDocument_" data-uid="Android.Provider.DocumentsProvider.CreateDocument*"></a>
+
+  <h3 id="Android_Provider_DocumentsProvider_CreateDocument_Java_Lang_String_Java_Lang_String_Java_Lang_String_" data-uid="Android.Provider.DocumentsProvider.CreateDocument(Java.Lang.String,Java.Lang.String,Java.Lang.String)">
+  CreateDocument(String, String, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/DocumentsProvider.cs/#L247"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/DocumentsProvider.html#createDocument(java.lang.String,java.lang.String,java.lang.String)">https://developer.android.com/reference/android/provider/DocumentsProvider.html#createDocument(java.lang.String,java.lang.String,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String CreateDocument(String arg0, String arg1, String arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.FileNotFoundException.html">FileNotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Provider_DocumentsProvider_CreateWebLinkIntent_" data-uid="Android.Provider.DocumentsProvider.CreateWebLinkIntent*"></a>
+
+  <h3 id="Android_Provider_DocumentsProvider_CreateWebLinkIntent_Java_Lang_String_Android_Os_Bundle_" data-uid="Android.Provider.DocumentsProvider.CreateWebLinkIntent(Java.Lang.String,Android.Os.Bundle)">
+  CreateWebLinkIntent(String, Bundle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/DocumentsProvider.cs/#L100"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/DocumentsProvider.html#createWebLinkIntent(java.lang.String,android.os.Bundle)">https://developer.android.com/reference/android/provider/DocumentsProvider.html#createWebLinkIntent(java.lang.String,android.os.Bundle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IntentSender CreateWebLinkIntent(String arg0, Bundle arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.IntentSender.html">IntentSender</a></dt>
+    <dd><p><a class="xref" href="Android.Content.IntentSender.html">IntentSender</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.FileNotFoundException.html">FileNotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Provider_DocumentsProvider_DeleteDocument_" data-uid="Android.Provider.DocumentsProvider.DeleteDocument*"></a>
+
+  <h3 id="Android_Provider_DocumentsProvider_DeleteDocument_Java_Lang_String_" data-uid="Android.Provider.DocumentsProvider.DeleteDocument(Java.Lang.String)">
+  DeleteDocument(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/DocumentsProvider.cs/#L299"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/DocumentsProvider.html#deleteDocument(java.lang.String)">https://developer.android.com/reference/android/provider/DocumentsProvider.html#deleteDocument(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DeleteDocument(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.FileNotFoundException.html">FileNotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Provider_DocumentsProvider_EjectRoot_" data-uid="Android.Provider.DocumentsProvider.EjectRoot*"></a>
+
+  <h3 id="Android_Provider_DocumentsProvider_EjectRoot_Java_Lang_String_" data-uid="Android.Provider.DocumentsProvider.EjectRoot(Java.Lang.String)">
+  EjectRoot(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/DocumentsProvider.cs/#L307"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/DocumentsProvider.html#ejectRoot(java.lang.String)">https://developer.android.com/reference/android/provider/DocumentsProvider.html#ejectRoot(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EjectRoot(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_DocumentsProvider_FindDocumentPath_" data-uid="Android.Provider.DocumentsProvider.FindDocumentPath*"></a>
+
+  <h3 id="Android_Provider_DocumentsProvider_FindDocumentPath_Java_Lang_String_Java_Lang_String_" data-uid="Android.Provider.DocumentsProvider.FindDocumentPath(Java.Lang.String,Java.Lang.String)">
+  FindDocumentPath(String, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/DocumentsProvider.cs/#L206"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/DocumentsProvider.html#findDocumentPath(java.lang.String,java.lang.String)">https://developer.android.com/reference/android/provider/DocumentsProvider.html#findDocumentPath(java.lang.String,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DocumentsContract.Path FindDocumentPath(String arg0, String arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Provider.DocumentsContract.html">DocumentsContract</a>.<a class="xref" href="Android.Provider.DocumentsContract.Path.html">Path</a></dt>
+    <dd><p><a class="xref" href="Android.Provider.DocumentsContract.Path.html">DocumentsContract.Path</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.FileNotFoundException.html">FileNotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Provider_DocumentsProvider_GetDocumentMetadata_" data-uid="Android.Provider.DocumentsProvider.GetDocumentMetadata*"></a>
+
+  <h3 id="Android_Provider_DocumentsProvider_GetDocumentMetadata_Java_Lang_String_" data-uid="Android.Provider.DocumentsProvider.GetDocumentMetadata(Java.Lang.String)">
+  GetDocumentMetadata(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/DocumentsProvider.cs/#L195"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/DocumentsProvider.html#getDocumentMetadata(java.lang.String)">https://developer.android.com/reference/android/provider/DocumentsProvider.html#getDocumentMetadata(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Bundle GetDocumentMetadata(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.FileNotFoundException.html">FileNotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Provider_DocumentsProvider_GetDocumentStreamTypes_" data-uid="Android.Provider.DocumentsProvider.GetDocumentStreamTypes*"></a>
+
+  <h3 id="Android_Provider_DocumentsProvider_GetDocumentStreamTypes_Java_Lang_String_Java_Lang_String_" data-uid="Android.Provider.DocumentsProvider.GetDocumentStreamTypes(Java.Lang.String,Java.Lang.String)">
+  GetDocumentStreamTypes(String, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/DocumentsProvider.cs/#L290"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/DocumentsProvider.html#getDocumentStreamTypes(java.lang.String,java.lang.String)">https://developer.android.com/reference/android/provider/DocumentsProvider.html#getDocumentStreamTypes(java.lang.String,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String[] GetDocumentStreamTypes(String arg0, String arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_DocumentsProvider_GetDocumentType_" data-uid="Android.Provider.DocumentsProvider.GetDocumentType*"></a>
+
+  <h3 id="Android_Provider_DocumentsProvider_GetDocumentType_Java_Lang_String_" data-uid="Android.Provider.DocumentsProvider.GetDocumentType(Java.Lang.String)">
+  GetDocumentType(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/DocumentsProvider.cs/#L257"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/DocumentsProvider.html#getDocumentType(java.lang.String)">https://developer.android.com/reference/android/provider/DocumentsProvider.html#getDocumentType(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetDocumentType(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.FileNotFoundException.html">FileNotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Provider_DocumentsProvider_IsChildDocument_" data-uid="Android.Provider.DocumentsProvider.IsChildDocument*"></a>
+
+  <h3 id="Android_Provider_DocumentsProvider_IsChildDocument_Java_Lang_String_Java_Lang_String_" data-uid="Android.Provider.DocumentsProvider.IsChildDocument(Java.Lang.String,Java.Lang.String)">
+  IsChildDocument(String, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/DocumentsProvider.cs/#L216"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/DocumentsProvider.html#isChildDocument(java.lang.String,java.lang.String)">https://developer.android.com/reference/android/provider/DocumentsProvider.html#isChildDocument(java.lang.String,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsChildDocument(String arg0, String arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_DocumentsProvider_MoveDocument_" data-uid="Android.Provider.DocumentsProvider.MoveDocument*"></a>
+
+  <h3 id="Android_Provider_DocumentsProvider_MoveDocument_Java_Lang_String_Java_Lang_String_Java_Lang_String_" data-uid="Android.Provider.DocumentsProvider.MoveDocument(Java.Lang.String,Java.Lang.String,Java.Lang.String)">
+  MoveDocument(String, String, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/DocumentsProvider.cs/#L269"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/DocumentsProvider.html#moveDocument(java.lang.String,java.lang.String,java.lang.String)">https://developer.android.com/reference/android/provider/DocumentsProvider.html#moveDocument(java.lang.String,java.lang.String,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String MoveDocument(String arg0, String arg1, String arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.FileNotFoundException.html">FileNotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Provider_DocumentsProvider_OpenDocument_" data-uid="Android.Provider.DocumentsProvider.OpenDocument*"></a>
+
+  <h3 id="Android_Provider_DocumentsProvider_OpenDocument_Java_Lang_String_Java_Lang_String_Android_Os_CancellationSignal_" data-uid="Android.Provider.DocumentsProvider.OpenDocument(Java.Lang.String,Java.Lang.String,Android.Os.CancellationSignal)">
+  OpenDocument(String, String, CancellationSignal)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/DocumentsProvider.cs/#L89"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/DocumentsProvider.html#openDocument(java.lang.String,java.lang.String,android.os.CancellationSignal)">https://developer.android.com/reference/android/provider/DocumentsProvider.html#openDocument(java.lang.String,java.lang.String,android.os.CancellationSignal)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ParcelFileDescriptor OpenDocument(String arg0, String arg1, CancellationSignal arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Os.CancellationSignal.html">CancellationSignal</a></dt>
+    <dd><p><a class="xref" href="Android.Os.CancellationSignal.html">CancellationSignal</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Os.ParcelFileDescriptor.html">ParcelFileDescriptor</a></dt>
+    <dd><p><a class="xref" href="Android.Os.ParcelFileDescriptor.html">ParcelFileDescriptor</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.FileNotFoundException.html">FileNotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Provider_DocumentsProvider_OpenDocumentThumbnail_" data-uid="Android.Provider.DocumentsProvider.OpenDocumentThumbnail*"></a>
+
+  <h3 id="Android_Provider_DocumentsProvider_OpenDocumentThumbnail_Java_Lang_String_Android_Graphics_Point_Android_Os_CancellationSignal_" data-uid="Android.Provider.DocumentsProvider.OpenDocumentThumbnail(Java.Lang.String,Android.Graphics.Point,Android.Os.CancellationSignal)">
+  OpenDocumentThumbnail(String, Point, CancellationSignal)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/DocumentsProvider.cs/#L112"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/DocumentsProvider.html#openDocumentThumbnail(java.lang.String,android.graphics.Point,android.os.CancellationSignal)">https://developer.android.com/reference/android/provider/DocumentsProvider.html#openDocumentThumbnail(java.lang.String,android.graphics.Point,android.os.CancellationSignal)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AssetFileDescriptor OpenDocumentThumbnail(String arg0, Point arg1, CancellationSignal arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Graphics.Point.html">Point</a></dt>
+    <dd><p><a class="xref" href="Android.Graphics.Point.html">Point</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Os.CancellationSignal.html">CancellationSignal</a></dt>
+    <dd><p><a class="xref" href="Android.Os.CancellationSignal.html">CancellationSignal</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Res.AssetFileDescriptor.html">AssetFileDescriptor</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Res.AssetFileDescriptor.html">AssetFileDescriptor</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.FileNotFoundException.html">FileNotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Provider_DocumentsProvider_OpenTypedDocument_" data-uid="Android.Provider.DocumentsProvider.OpenTypedDocument*"></a>
+
+  <h3 id="Android_Provider_DocumentsProvider_OpenTypedDocument_Java_Lang_String_Java_Lang_String_Android_Os_Bundle_Android_Os_CancellationSignal_" data-uid="Android.Provider.DocumentsProvider.OpenTypedDocument(Java.Lang.String,Java.Lang.String,Android.Os.Bundle,Android.Os.CancellationSignal)">
+  OpenTypedDocument(String, String, Bundle, CancellationSignal)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/DocumentsProvider.cs/#L125"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/DocumentsProvider.html#openTypedDocument(java.lang.String,java.lang.String,android.os.Bundle,android.os.CancellationSignal)">https://developer.android.com/reference/android/provider/DocumentsProvider.html#openTypedDocument(java.lang.String,java.lang.String,android.os.Bundle,android.os.CancellationSignal)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AssetFileDescriptor OpenTypedDocument(String arg0, String arg1, Bundle arg2, CancellationSignal arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Android.Os.CancellationSignal.html">CancellationSignal</a></dt>
+    <dd><p><a class="xref" href="Android.Os.CancellationSignal.html">CancellationSignal</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Res.AssetFileDescriptor.html">AssetFileDescriptor</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Res.AssetFileDescriptor.html">AssetFileDescriptor</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.FileNotFoundException.html">FileNotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Provider_DocumentsProvider_QueryChildDocuments_" data-uid="Android.Provider.DocumentsProvider.QueryChildDocuments*"></a>
+
+  <h3 id="Android_Provider_DocumentsProvider_QueryChildDocuments_Java_Lang_String_Java_Lang_String___Android_Os_Bundle_" data-uid="Android.Provider.DocumentsProvider.QueryChildDocuments(Java.Lang.String,Java.Lang.String[],Android.Os.Bundle)">
+  QueryChildDocuments(String, String[], Bundle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/DocumentsProvider.cs/#L137"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/DocumentsProvider.html#queryChildDocuments(java.lang.String,java.lang.String[],android.os.Bundle)">https://developer.android.com/reference/android/provider/DocumentsProvider.html#queryChildDocuments(java.lang.String,java.lang.String[],android.os.Bundle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Cursor QueryChildDocuments(String arg0, String[] arg1, Bundle arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Database.Cursor.html">Cursor</a></dt>
+    <dd><p><a class="xref" href="Android.Database.Cursor.html">Cursor</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.FileNotFoundException.html">FileNotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Provider_DocumentsProvider_QueryChildDocuments_" data-uid="Android.Provider.DocumentsProvider.QueryChildDocuments*"></a>
+
+  <h3 id="Android_Provider_DocumentsProvider_QueryChildDocuments_Java_Lang_String_Java_Lang_String___Java_Lang_String_" data-uid="Android.Provider.DocumentsProvider.QueryChildDocuments(Java.Lang.String,Java.Lang.String[],Java.Lang.String)">
+  QueryChildDocuments(String, String[], String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/DocumentsProvider.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/DocumentsProvider.html#queryChildDocuments(java.lang.String,java.lang.String[],java.lang.String)">https://developer.android.com/reference/android/provider/DocumentsProvider.html#queryChildDocuments(java.lang.String,java.lang.String[],java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Cursor QueryChildDocuments(String arg0, String[] arg1, String arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Database.Cursor.html">Cursor</a></dt>
+    <dd><p><a class="xref" href="Android.Database.Cursor.html">Cursor</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.FileNotFoundException.html">FileNotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Provider_DocumentsProvider_QueryDocument_" data-uid="Android.Provider.DocumentsProvider.QueryDocument*"></a>
+
+  <h3 id="Android_Provider_DocumentsProvider_QueryDocument_Java_Lang_String_Java_Lang_String___" data-uid="Android.Provider.DocumentsProvider.QueryDocument(Java.Lang.String,Java.Lang.String[])">
+  QueryDocument(String, String[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/DocumentsProvider.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/DocumentsProvider.html#queryDocument(java.lang.String,java.lang.String[])">https://developer.android.com/reference/android/provider/DocumentsProvider.html#queryDocument(java.lang.String,java.lang.String[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Cursor QueryDocument(String arg0, String[] arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Database.Cursor.html">Cursor</a></dt>
+    <dd><p><a class="xref" href="Android.Database.Cursor.html">Cursor</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.FileNotFoundException.html">FileNotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Provider_DocumentsProvider_QueryRecentDocuments_" data-uid="Android.Provider.DocumentsProvider.QueryRecentDocuments*"></a>
+
+  <h3 id="Android_Provider_DocumentsProvider_QueryRecentDocuments_Java_Lang_String_Java_Lang_String___" data-uid="Android.Provider.DocumentsProvider.QueryRecentDocuments(Java.Lang.String,Java.Lang.String[])">
+  QueryRecentDocuments(String, String[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/DocumentsProvider.cs/#L161"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/DocumentsProvider.html#queryRecentDocuments(java.lang.String,java.lang.String[])">https://developer.android.com/reference/android/provider/DocumentsProvider.html#queryRecentDocuments(java.lang.String,java.lang.String[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Cursor QueryRecentDocuments(String arg0, String[] arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Database.Cursor.html">Cursor</a></dt>
+    <dd><p><a class="xref" href="Android.Database.Cursor.html">Cursor</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.FileNotFoundException.html">FileNotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Provider_DocumentsProvider_QueryRecentDocuments_" data-uid="Android.Provider.DocumentsProvider.QueryRecentDocuments*"></a>
+
+  <h3 id="Android_Provider_DocumentsProvider_QueryRecentDocuments_Java_Lang_String_Java_Lang_String___Android_Os_Bundle_Android_Os_CancellationSignal_" data-uid="Android.Provider.DocumentsProvider.QueryRecentDocuments(Java.Lang.String,Java.Lang.String[],Android.Os.Bundle,Android.Os.CancellationSignal)">
+  QueryRecentDocuments(String, String[], Bundle, CancellationSignal)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/DocumentsProvider.cs/#L150"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/DocumentsProvider.html#queryRecentDocuments(java.lang.String,java.lang.String[],android.os.Bundle,android.os.CancellationSignal)">https://developer.android.com/reference/android/provider/DocumentsProvider.html#queryRecentDocuments(java.lang.String,java.lang.String[],android.os.Bundle,android.os.CancellationSignal)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Cursor QueryRecentDocuments(String arg0, String[] arg1, Bundle arg2, CancellationSignal arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Android.Os.CancellationSignal.html">CancellationSignal</a></dt>
+    <dd><p><a class="xref" href="Android.Os.CancellationSignal.html">CancellationSignal</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Database.Cursor.html">Cursor</a></dt>
+    <dd><p><a class="xref" href="Android.Database.Cursor.html">Cursor</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.FileNotFoundException.html">FileNotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Provider_DocumentsProvider_QueryRoots_" data-uid="Android.Provider.DocumentsProvider.QueryRoots*"></a>
+
+  <h3 id="Android_Provider_DocumentsProvider_QueryRoots_Java_Lang_String___" data-uid="Android.Provider.DocumentsProvider.QueryRoots(Java.Lang.String[])">
+  QueryRoots(String[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/DocumentsProvider.cs/#L77"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/DocumentsProvider.html#queryRoots(java.lang.String[])">https://developer.android.com/reference/android/provider/DocumentsProvider.html#queryRoots(java.lang.String[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Cursor QueryRoots(String[] arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Database.Cursor.html">Cursor</a></dt>
+    <dd><p><a class="xref" href="Android.Database.Cursor.html">Cursor</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.FileNotFoundException.html">FileNotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Provider_DocumentsProvider_QuerySearchDocuments_" data-uid="Android.Provider.DocumentsProvider.QuerySearchDocuments*"></a>
+
+  <h3 id="Android_Provider_DocumentsProvider_QuerySearchDocuments_Java_Lang_String_Java_Lang_String_Java_Lang_String___" data-uid="Android.Provider.DocumentsProvider.QuerySearchDocuments(Java.Lang.String,Java.Lang.String,Java.Lang.String[])">
+  QuerySearchDocuments(String, String, String[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/DocumentsProvider.cs/#L173"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/DocumentsProvider.html#querySearchDocuments(java.lang.String,java.lang.String,java.lang.String[])">https://developer.android.com/reference/android/provider/DocumentsProvider.html#querySearchDocuments(java.lang.String,java.lang.String,java.lang.String[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Cursor QuerySearchDocuments(String arg0, String arg1, String[] arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Lang.String.html">String</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Database.Cursor.html">Cursor</a></dt>
+    <dd><p><a class="xref" href="Android.Database.Cursor.html">Cursor</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.FileNotFoundException.html">FileNotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Provider_DocumentsProvider_QuerySearchDocuments_" data-uid="Android.Provider.DocumentsProvider.QuerySearchDocuments*"></a>
+
+  <h3 id="Android_Provider_DocumentsProvider_QuerySearchDocuments_Java_Lang_String_Java_Lang_String___Android_Os_Bundle_" data-uid="Android.Provider.DocumentsProvider.QuerySearchDocuments(Java.Lang.String,Java.Lang.String[],Android.Os.Bundle)">
+  QuerySearchDocuments(String, String[], Bundle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/DocumentsProvider.cs/#L185"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/DocumentsProvider.html#querySearchDocuments(java.lang.String,java.lang.String[],android.os.Bundle)">https://developer.android.com/reference/android/provider/DocumentsProvider.html#querySearchDocuments(java.lang.String,java.lang.String[],android.os.Bundle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Cursor QuerySearchDocuments(String arg0, String[] arg1, Bundle arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Database.Cursor.html">Cursor</a></dt>
+    <dd><p><a class="xref" href="Android.Database.Cursor.html">Cursor</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.FileNotFoundException.html">FileNotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Provider_DocumentsProvider_RemoveDocument_" data-uid="Android.Provider.DocumentsProvider.RemoveDocument*"></a>
+
+  <h3 id="Android_Provider_DocumentsProvider_RemoveDocument_Java_Lang_String_Java_Lang_String_" data-uid="Android.Provider.DocumentsProvider.RemoveDocument(Java.Lang.String,Java.Lang.String)">
+  RemoveDocument(String, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/DocumentsProvider.cs/#L317"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/DocumentsProvider.html#removeDocument(java.lang.String,java.lang.String)">https://developer.android.com/reference/android/provider/DocumentsProvider.html#removeDocument(java.lang.String,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveDocument(String arg0, String arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.FileNotFoundException.html">FileNotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Provider_DocumentsProvider_RenameDocument_" data-uid="Android.Provider.DocumentsProvider.RenameDocument*"></a>
+
+  <h3 id="Android_Provider_DocumentsProvider_RenameDocument_Java_Lang_String_Java_Lang_String_" data-uid="Android.Provider.DocumentsProvider.RenameDocument(Java.Lang.String,Java.Lang.String)">
+  RenameDocument(String, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/DocumentsProvider.cs/#L280"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/DocumentsProvider.html#renameDocument(java.lang.String,java.lang.String)">https://developer.android.com/reference/android/provider/DocumentsProvider.html#renameDocument(java.lang.String,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String RenameDocument(String arg0, String arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.FileNotFoundException.html">FileNotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Provider_DocumentsProvider_RevokeDocumentPermission_" data-uid="Android.Provider.DocumentsProvider.RevokeDocumentPermission*"></a>
+
+  <h3 id="Android_Provider_DocumentsProvider_RevokeDocumentPermission_Java_Lang_String_" data-uid="Android.Provider.DocumentsProvider.RevokeDocumentPermission(Java.Lang.String)">
+  RevokeDocumentPermission(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/DocumentsProvider.cs/#L224"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/DocumentsProvider.html#revokeDocumentPermission(java.lang.String)">https://developer.android.com/reference/android/provider/DocumentsProvider.html#revokeDocumentPermission(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RevokeDocumentPermission(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/DocumentsProvider.cs/#L29" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

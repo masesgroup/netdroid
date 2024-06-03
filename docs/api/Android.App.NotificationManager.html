@@ -1,0 +1,3405 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class NotificationManager | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class NotificationManager | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/app/NotificationManager.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_App_NotificationManager.md&amp;value=---%0Auid%3A%20Android.App.NotificationManager%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.App.NotificationManager">
+
+
+
+  <h1 id="Android_App_NotificationManager" data-uid="Android.App.NotificationManager" class="text-break">
+Class NotificationManager  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.App.html">App</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html">https://developer.android.com/reference/android/app/NotificationManager.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class NotificationManager : JVMBridgeBase&lt;NotificationManager&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.App.NotificationManager.html">NotificationManager</a>&gt;</div>
+      <div><span class="xref">NotificationManager</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationManager&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationManager&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationManager&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationManager&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationManager&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationManager&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationManager&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationManager&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;NotificationManager&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;NotificationManager&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;NotificationManager&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;NotificationManager&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationManager&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationManager&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationManager&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationManager&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;NotificationManager&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;NotificationManager&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;NotificationManager&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;NotificationManager&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationManager&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationManager&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationManager&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationManager&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;NotificationManager&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;NotificationManager&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;NotificationManager&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;NotificationManager&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationManager&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationManager&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationManager&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationManager&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationManager&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationManager&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationManager&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationManager&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationManager&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationManager&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationManager&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationManager&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationManager&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationManager&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationManager&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;NotificationManager&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;NotificationManager&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;NotificationManager&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;NotificationManager&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;NotificationManager&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;NotificationManager&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;NotificationManager&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_App_NotificationManager__ctor_" data-uid="Android.App.NotificationManager.#ctor*"></a>
+
+  <h3 id="Android_App_NotificationManager__ctor" data-uid="Android.App.NotificationManager.#ctor">
+  NotificationManager()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AllPackageClasses.cs/#L5661"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NotificationManager()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager__ctor_" data-uid="Android.App.NotificationManager.#ctor*"></a>
+
+  <h3 id="Android_App_NotificationManager__ctor_System_Object___" data-uid="Android.App.NotificationManager.#ctor(System.Object[])">
+  NotificationManager(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AllPackageClasses.cs/#L5665"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NotificationManager(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_App_NotificationManager_ACTION_APP_BLOCK_STATE_CHANGED_" data-uid="Android.App.NotificationManager.ACTION_APP_BLOCK_STATE_CHANGED*"></a>
+
+  <h3 id="Android_App_NotificationManager_ACTION_APP_BLOCK_STATE_CHANGED" data-uid="Android.App.NotificationManager.ACTION_APP_BLOCK_STATE_CHANGED">
+  ACTION_APP_BLOCK_STATE_CHANGED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L157"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#ACTION_APP_BLOCK_STATE_CHANGED">https://developer.android.com/reference/android/app/NotificationManager.html#ACTION_APP_BLOCK_STATE_CHANGED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACTION_APP_BLOCK_STATE_CHANGED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_ACTION_AUTOMATIC_ZEN_RULE_" data-uid="Android.App.NotificationManager.ACTION_AUTOMATIC_ZEN_RULE*"></a>
+
+  <h3 id="Android_App_NotificationManager_ACTION_AUTOMATIC_ZEN_RULE" data-uid="Android.App.NotificationManager.ACTION_AUTOMATIC_ZEN_RULE">
+  ACTION_AUTOMATIC_ZEN_RULE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L163"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#ACTION_AUTOMATIC_ZEN_RULE">https://developer.android.com/reference/android/app/NotificationManager.html#ACTION_AUTOMATIC_ZEN_RULE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACTION_AUTOMATIC_ZEN_RULE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_ACTION_AUTOMATIC_ZEN_RULE_STATUS_CHANGED_" data-uid="Android.App.NotificationManager.ACTION_AUTOMATIC_ZEN_RULE_STATUS_CHANGED*"></a>
+
+  <h3 id="Android_App_NotificationManager_ACTION_AUTOMATIC_ZEN_RULE_STATUS_CHANGED" data-uid="Android.App.NotificationManager.ACTION_AUTOMATIC_ZEN_RULE_STATUS_CHANGED">
+  ACTION_AUTOMATIC_ZEN_RULE_STATUS_CHANGED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L169"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#ACTION_AUTOMATIC_ZEN_RULE_STATUS_CHANGED">https://developer.android.com/reference/android/app/NotificationManager.html#ACTION_AUTOMATIC_ZEN_RULE_STATUS_CHANGED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACTION_AUTOMATIC_ZEN_RULE_STATUS_CHANGED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_ACTION_INTERRUPTION_FILTER_CHANGED_" data-uid="Android.App.NotificationManager.ACTION_INTERRUPTION_FILTER_CHANGED*"></a>
+
+  <h3 id="Android_App_NotificationManager_ACTION_INTERRUPTION_FILTER_CHANGED" data-uid="Android.App.NotificationManager.ACTION_INTERRUPTION_FILTER_CHANGED">
+  ACTION_INTERRUPTION_FILTER_CHANGED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L175"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#ACTION_INTERRUPTION_FILTER_CHANGED">https://developer.android.com/reference/android/app/NotificationManager.html#ACTION_INTERRUPTION_FILTER_CHANGED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACTION_INTERRUPTION_FILTER_CHANGED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_ACTION_NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED_" data-uid="Android.App.NotificationManager.ACTION_NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED*"></a>
+
+  <h3 id="Android_App_NotificationManager_ACTION_NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED" data-uid="Android.App.NotificationManager.ACTION_NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED">
+  ACTION_NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L181"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#ACTION_NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED">https://developer.android.com/reference/android/app/NotificationManager.html#ACTION_NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACTION_NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_ACTION_NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED_" data-uid="Android.App.NotificationManager.ACTION_NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED*"></a>
+
+  <h3 id="Android_App_NotificationManager_ACTION_NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED" data-uid="Android.App.NotificationManager.ACTION_NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED">
+  ACTION_NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L187"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#ACTION_NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED">https://developer.android.com/reference/android/app/NotificationManager.html#ACTION_NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACTION_NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_ACTION_NOTIFICATION_POLICY_ACCESS_GRANTED_CHANGED_" data-uid="Android.App.NotificationManager.ACTION_NOTIFICATION_POLICY_ACCESS_GRANTED_CHANGED*"></a>
+
+  <h3 id="Android_App_NotificationManager_ACTION_NOTIFICATION_POLICY_ACCESS_GRANTED_CHANGED" data-uid="Android.App.NotificationManager.ACTION_NOTIFICATION_POLICY_ACCESS_GRANTED_CHANGED">
+  ACTION_NOTIFICATION_POLICY_ACCESS_GRANTED_CHANGED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L193"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#ACTION_NOTIFICATION_POLICY_ACCESS_GRANTED_CHANGED">https://developer.android.com/reference/android/app/NotificationManager.html#ACTION_NOTIFICATION_POLICY_ACCESS_GRANTED_CHANGED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACTION_NOTIFICATION_POLICY_ACCESS_GRANTED_CHANGED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_ACTION_NOTIFICATION_POLICY_CHANGED_" data-uid="Android.App.NotificationManager.ACTION_NOTIFICATION_POLICY_CHANGED*"></a>
+
+  <h3 id="Android_App_NotificationManager_ACTION_NOTIFICATION_POLICY_CHANGED" data-uid="Android.App.NotificationManager.ACTION_NOTIFICATION_POLICY_CHANGED">
+  ACTION_NOTIFICATION_POLICY_CHANGED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L199"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#ACTION_NOTIFICATION_POLICY_CHANGED">https://developer.android.com/reference/android/app/NotificationManager.html#ACTION_NOTIFICATION_POLICY_CHANGED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACTION_NOTIFICATION_POLICY_CHANGED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_AUTOMATIC_RULE_STATUS_DISABLED_" data-uid="Android.App.NotificationManager.AUTOMATIC_RULE_STATUS_DISABLED*"></a>
+
+  <h3 id="Android_App_NotificationManager_AUTOMATIC_RULE_STATUS_DISABLED" data-uid="Android.App.NotificationManager.AUTOMATIC_RULE_STATUS_DISABLED">
+  AUTOMATIC_RULE_STATUS_DISABLED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#AUTOMATIC_RULE_STATUS_DISABLED">https://developer.android.com/reference/android/app/NotificationManager.html#AUTOMATIC_RULE_STATUS_DISABLED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int AUTOMATIC_RULE_STATUS_DISABLED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_AUTOMATIC_RULE_STATUS_ENABLED_" data-uid="Android.App.NotificationManager.AUTOMATIC_RULE_STATUS_ENABLED*"></a>
+
+  <h3 id="Android_App_NotificationManager_AUTOMATIC_RULE_STATUS_ENABLED" data-uid="Android.App.NotificationManager.AUTOMATIC_RULE_STATUS_ENABLED">
+  AUTOMATIC_RULE_STATUS_ENABLED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#AUTOMATIC_RULE_STATUS_ENABLED">https://developer.android.com/reference/android/app/NotificationManager.html#AUTOMATIC_RULE_STATUS_ENABLED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int AUTOMATIC_RULE_STATUS_ENABLED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_AUTOMATIC_RULE_STATUS_REMOVED_" data-uid="Android.App.NotificationManager.AUTOMATIC_RULE_STATUS_REMOVED*"></a>
+
+  <h3 id="Android_App_NotificationManager_AUTOMATIC_RULE_STATUS_REMOVED" data-uid="Android.App.NotificationManager.AUTOMATIC_RULE_STATUS_REMOVED">
+  AUTOMATIC_RULE_STATUS_REMOVED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#AUTOMATIC_RULE_STATUS_REMOVED">https://developer.android.com/reference/android/app/NotificationManager.html#AUTOMATIC_RULE_STATUS_REMOVED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int AUTOMATIC_RULE_STATUS_REMOVED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_AUTOMATIC_RULE_STATUS_UNKNOWN_" data-uid="Android.App.NotificationManager.AUTOMATIC_RULE_STATUS_UNKNOWN*"></a>
+
+  <h3 id="Android_App_NotificationManager_AUTOMATIC_RULE_STATUS_UNKNOWN" data-uid="Android.App.NotificationManager.AUTOMATIC_RULE_STATUS_UNKNOWN">
+  AUTOMATIC_RULE_STATUS_UNKNOWN
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#AUTOMATIC_RULE_STATUS_UNKNOWN">https://developer.android.com/reference/android/app/NotificationManager.html#AUTOMATIC_RULE_STATUS_UNKNOWN</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int AUTOMATIC_RULE_STATUS_UNKNOWN { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_BUBBLE_PREFERENCE_ALL_" data-uid="Android.App.NotificationManager.BUBBLE_PREFERENCE_ALL*"></a>
+
+  <h3 id="Android_App_NotificationManager_BUBBLE_PREFERENCE_ALL" data-uid="Android.App.NotificationManager.BUBBLE_PREFERENCE_ALL">
+  BUBBLE_PREFERENCE_ALL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#BUBBLE_PREFERENCE_ALL">https://developer.android.com/reference/android/app/NotificationManager.html#BUBBLE_PREFERENCE_ALL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int BUBBLE_PREFERENCE_ALL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_BUBBLE_PREFERENCE_NONE_" data-uid="Android.App.NotificationManager.BUBBLE_PREFERENCE_NONE*"></a>
+
+  <h3 id="Android_App_NotificationManager_BUBBLE_PREFERENCE_NONE" data-uid="Android.App.NotificationManager.BUBBLE_PREFERENCE_NONE">
+  BUBBLE_PREFERENCE_NONE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#BUBBLE_PREFERENCE_NONE">https://developer.android.com/reference/android/app/NotificationManager.html#BUBBLE_PREFERENCE_NONE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int BUBBLE_PREFERENCE_NONE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_BUBBLE_PREFERENCE_SELECTED_" data-uid="Android.App.NotificationManager.BUBBLE_PREFERENCE_SELECTED*"></a>
+
+  <h3 id="Android_App_NotificationManager_BUBBLE_PREFERENCE_SELECTED" data-uid="Android.App.NotificationManager.BUBBLE_PREFERENCE_SELECTED">
+  BUBBLE_PREFERENCE_SELECTED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#BUBBLE_PREFERENCE_SELECTED">https://developer.android.com/reference/android/app/NotificationManager.html#BUBBLE_PREFERENCE_SELECTED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int BUBBLE_PREFERENCE_SELECTED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_BridgeClassName_" data-uid="Android.App.NotificationManager.BridgeClassName*"></a>
+
+  <h3 id="Android_App_NotificationManager_BridgeClassName" data-uid="Android.App.NotificationManager.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AllPackageClasses.cs/#L5672"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_EXTRA_AUTOMATIC_RULE_ID_" data-uid="Android.App.NotificationManager.EXTRA_AUTOMATIC_RULE_ID*"></a>
+
+  <h3 id="Android_App_NotificationManager_EXTRA_AUTOMATIC_RULE_ID" data-uid="Android.App.NotificationManager.EXTRA_AUTOMATIC_RULE_ID">
+  EXTRA_AUTOMATIC_RULE_ID
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L205"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#EXTRA_AUTOMATIC_RULE_ID">https://developer.android.com/reference/android/app/NotificationManager.html#EXTRA_AUTOMATIC_RULE_ID</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_AUTOMATIC_RULE_ID { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_EXTRA_AUTOMATIC_ZEN_RULE_ID_" data-uid="Android.App.NotificationManager.EXTRA_AUTOMATIC_ZEN_RULE_ID*"></a>
+
+  <h3 id="Android_App_NotificationManager_EXTRA_AUTOMATIC_ZEN_RULE_ID" data-uid="Android.App.NotificationManager.EXTRA_AUTOMATIC_ZEN_RULE_ID">
+  EXTRA_AUTOMATIC_ZEN_RULE_ID
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L211"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#EXTRA_AUTOMATIC_ZEN_RULE_ID">https://developer.android.com/reference/android/app/NotificationManager.html#EXTRA_AUTOMATIC_ZEN_RULE_ID</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_AUTOMATIC_ZEN_RULE_ID { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_EXTRA_AUTOMATIC_ZEN_RULE_STATUS_" data-uid="Android.App.NotificationManager.EXTRA_AUTOMATIC_ZEN_RULE_STATUS*"></a>
+
+  <h3 id="Android_App_NotificationManager_EXTRA_AUTOMATIC_ZEN_RULE_STATUS" data-uid="Android.App.NotificationManager.EXTRA_AUTOMATIC_ZEN_RULE_STATUS">
+  EXTRA_AUTOMATIC_ZEN_RULE_STATUS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L217"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#EXTRA_AUTOMATIC_ZEN_RULE_STATUS">https://developer.android.com/reference/android/app/NotificationManager.html#EXTRA_AUTOMATIC_ZEN_RULE_STATUS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_AUTOMATIC_ZEN_RULE_STATUS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_EXTRA_BLOCKED_STATE_" data-uid="Android.App.NotificationManager.EXTRA_BLOCKED_STATE*"></a>
+
+  <h3 id="Android_App_NotificationManager_EXTRA_BLOCKED_STATE" data-uid="Android.App.NotificationManager.EXTRA_BLOCKED_STATE">
+  EXTRA_BLOCKED_STATE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L223"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#EXTRA_BLOCKED_STATE">https://developer.android.com/reference/android/app/NotificationManager.html#EXTRA_BLOCKED_STATE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_BLOCKED_STATE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_EXTRA_NOTIFICATION_CHANNEL_GROUP_ID_" data-uid="Android.App.NotificationManager.EXTRA_NOTIFICATION_CHANNEL_GROUP_ID*"></a>
+
+  <h3 id="Android_App_NotificationManager_EXTRA_NOTIFICATION_CHANNEL_GROUP_ID" data-uid="Android.App.NotificationManager.EXTRA_NOTIFICATION_CHANNEL_GROUP_ID">
+  EXTRA_NOTIFICATION_CHANNEL_GROUP_ID
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L229"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#EXTRA_NOTIFICATION_CHANNEL_GROUP_ID">https://developer.android.com/reference/android/app/NotificationManager.html#EXTRA_NOTIFICATION_CHANNEL_GROUP_ID</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_NOTIFICATION_CHANNEL_GROUP_ID { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_EXTRA_NOTIFICATION_CHANNEL_ID_" data-uid="Android.App.NotificationManager.EXTRA_NOTIFICATION_CHANNEL_ID*"></a>
+
+  <h3 id="Android_App_NotificationManager_EXTRA_NOTIFICATION_CHANNEL_ID" data-uid="Android.App.NotificationManager.EXTRA_NOTIFICATION_CHANNEL_ID">
+  EXTRA_NOTIFICATION_CHANNEL_ID
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L235"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#EXTRA_NOTIFICATION_CHANNEL_ID">https://developer.android.com/reference/android/app/NotificationManager.html#EXTRA_NOTIFICATION_CHANNEL_ID</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_NOTIFICATION_CHANNEL_ID { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_IMPORTANCE_DEFAULT_" data-uid="Android.App.NotificationManager.IMPORTANCE_DEFAULT*"></a>
+
+  <h3 id="Android_App_NotificationManager_IMPORTANCE_DEFAULT" data-uid="Android.App.NotificationManager.IMPORTANCE_DEFAULT">
+  IMPORTANCE_DEFAULT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#IMPORTANCE_DEFAULT">https://developer.android.com/reference/android/app/NotificationManager.html#IMPORTANCE_DEFAULT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int IMPORTANCE_DEFAULT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_IMPORTANCE_HIGH_" data-uid="Android.App.NotificationManager.IMPORTANCE_HIGH*"></a>
+
+  <h3 id="Android_App_NotificationManager_IMPORTANCE_HIGH" data-uid="Android.App.NotificationManager.IMPORTANCE_HIGH">
+  IMPORTANCE_HIGH
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#IMPORTANCE_HIGH">https://developer.android.com/reference/android/app/NotificationManager.html#IMPORTANCE_HIGH</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int IMPORTANCE_HIGH { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_IMPORTANCE_LOW_" data-uid="Android.App.NotificationManager.IMPORTANCE_LOW*"></a>
+
+  <h3 id="Android_App_NotificationManager_IMPORTANCE_LOW" data-uid="Android.App.NotificationManager.IMPORTANCE_LOW">
+  IMPORTANCE_LOW
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#IMPORTANCE_LOW">https://developer.android.com/reference/android/app/NotificationManager.html#IMPORTANCE_LOW</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int IMPORTANCE_LOW { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_IMPORTANCE_MAX_" data-uid="Android.App.NotificationManager.IMPORTANCE_MAX*"></a>
+
+  <h3 id="Android_App_NotificationManager_IMPORTANCE_MAX" data-uid="Android.App.NotificationManager.IMPORTANCE_MAX">
+  IMPORTANCE_MAX
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#IMPORTANCE_MAX">https://developer.android.com/reference/android/app/NotificationManager.html#IMPORTANCE_MAX</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int IMPORTANCE_MAX { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_IMPORTANCE_MIN_" data-uid="Android.App.NotificationManager.IMPORTANCE_MIN*"></a>
+
+  <h3 id="Android_App_NotificationManager_IMPORTANCE_MIN" data-uid="Android.App.NotificationManager.IMPORTANCE_MIN">
+  IMPORTANCE_MIN
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#IMPORTANCE_MIN">https://developer.android.com/reference/android/app/NotificationManager.html#IMPORTANCE_MIN</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int IMPORTANCE_MIN { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_IMPORTANCE_NONE_" data-uid="Android.App.NotificationManager.IMPORTANCE_NONE*"></a>
+
+  <h3 id="Android_App_NotificationManager_IMPORTANCE_NONE" data-uid="Android.App.NotificationManager.IMPORTANCE_NONE">
+  IMPORTANCE_NONE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#IMPORTANCE_NONE">https://developer.android.com/reference/android/app/NotificationManager.html#IMPORTANCE_NONE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int IMPORTANCE_NONE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_IMPORTANCE_UNSPECIFIED_" data-uid="Android.App.NotificationManager.IMPORTANCE_UNSPECIFIED*"></a>
+
+  <h3 id="Android_App_NotificationManager_IMPORTANCE_UNSPECIFIED" data-uid="Android.App.NotificationManager.IMPORTANCE_UNSPECIFIED">
+  IMPORTANCE_UNSPECIFIED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#IMPORTANCE_UNSPECIFIED">https://developer.android.com/reference/android/app/NotificationManager.html#IMPORTANCE_UNSPECIFIED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int IMPORTANCE_UNSPECIFIED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_INTERRUPTION_FILTER_ALARMS_" data-uid="Android.App.NotificationManager.INTERRUPTION_FILTER_ALARMS*"></a>
+
+  <h3 id="Android_App_NotificationManager_INTERRUPTION_FILTER_ALARMS" data-uid="Android.App.NotificationManager.INTERRUPTION_FILTER_ALARMS">
+  INTERRUPTION_FILTER_ALARMS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#INTERRUPTION_FILTER_ALARMS">https://developer.android.com/reference/android/app/NotificationManager.html#INTERRUPTION_FILTER_ALARMS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int INTERRUPTION_FILTER_ALARMS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_INTERRUPTION_FILTER_ALL_" data-uid="Android.App.NotificationManager.INTERRUPTION_FILTER_ALL*"></a>
+
+  <h3 id="Android_App_NotificationManager_INTERRUPTION_FILTER_ALL" data-uid="Android.App.NotificationManager.INTERRUPTION_FILTER_ALL">
+  INTERRUPTION_FILTER_ALL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L133"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#INTERRUPTION_FILTER_ALL">https://developer.android.com/reference/android/app/NotificationManager.html#INTERRUPTION_FILTER_ALL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int INTERRUPTION_FILTER_ALL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_INTERRUPTION_FILTER_NONE_" data-uid="Android.App.NotificationManager.INTERRUPTION_FILTER_NONE*"></a>
+
+  <h3 id="Android_App_NotificationManager_INTERRUPTION_FILTER_NONE" data-uid="Android.App.NotificationManager.INTERRUPTION_FILTER_NONE">
+  INTERRUPTION_FILTER_NONE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#INTERRUPTION_FILTER_NONE">https://developer.android.com/reference/android/app/NotificationManager.html#INTERRUPTION_FILTER_NONE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int INTERRUPTION_FILTER_NONE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_INTERRUPTION_FILTER_PRIORITY_" data-uid="Android.App.NotificationManager.INTERRUPTION_FILTER_PRIORITY*"></a>
+
+  <h3 id="Android_App_NotificationManager_INTERRUPTION_FILTER_PRIORITY" data-uid="Android.App.NotificationManager.INTERRUPTION_FILTER_PRIORITY">
+  INTERRUPTION_FILTER_PRIORITY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L145"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#INTERRUPTION_FILTER_PRIORITY">https://developer.android.com/reference/android/app/NotificationManager.html#INTERRUPTION_FILTER_PRIORITY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int INTERRUPTION_FILTER_PRIORITY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_INTERRUPTION_FILTER_UNKNOWN_" data-uid="Android.App.NotificationManager.INTERRUPTION_FILTER_UNKNOWN*"></a>
+
+  <h3 id="Android_App_NotificationManager_INTERRUPTION_FILTER_UNKNOWN" data-uid="Android.App.NotificationManager.INTERRUPTION_FILTER_UNKNOWN">
+  INTERRUPTION_FILTER_UNKNOWN
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L151"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#INTERRUPTION_FILTER_UNKNOWN">https://developer.android.com/reference/android/app/NotificationManager.html#INTERRUPTION_FILTER_UNKNOWN</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int INTERRUPTION_FILTER_UNKNOWN { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_IsBridgeAbstract_" data-uid="Android.App.NotificationManager.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_App_NotificationManager_IsBridgeAbstract" data-uid="Android.App.NotificationManager.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AllPackageClasses.cs/#L5676"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_IsBridgeCloseable_" data-uid="Android.App.NotificationManager.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_App_NotificationManager_IsBridgeCloseable" data-uid="Android.App.NotificationManager.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AllPackageClasses.cs/#L5680"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_IsBridgeInterface_" data-uid="Android.App.NotificationManager.IsBridgeInterface*"></a>
+
+  <h3 id="Android_App_NotificationManager_IsBridgeInterface" data-uid="Android.App.NotificationManager.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AllPackageClasses.cs/#L5684"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_IsBridgeStatic_" data-uid="Android.App.NotificationManager.IsBridgeStatic*"></a>
+
+  <h3 id="Android_App_NotificationManager_IsBridgeStatic" data-uid="Android.App.NotificationManager.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AllPackageClasses.cs/#L5688"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_META_DATA_AUTOMATIC_RULE_TYPE_" data-uid="Android.App.NotificationManager.META_DATA_AUTOMATIC_RULE_TYPE*"></a>
+
+  <h3 id="Android_App_NotificationManager_META_DATA_AUTOMATIC_RULE_TYPE" data-uid="Android.App.NotificationManager.META_DATA_AUTOMATIC_RULE_TYPE">
+  META_DATA_AUTOMATIC_RULE_TYPE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L241"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#META_DATA_AUTOMATIC_RULE_TYPE">https://developer.android.com/reference/android/app/NotificationManager.html#META_DATA_AUTOMATIC_RULE_TYPE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String META_DATA_AUTOMATIC_RULE_TYPE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_META_DATA_RULE_INSTANCE_LIMIT_" data-uid="Android.App.NotificationManager.META_DATA_RULE_INSTANCE_LIMIT*"></a>
+
+  <h3 id="Android_App_NotificationManager_META_DATA_RULE_INSTANCE_LIMIT" data-uid="Android.App.NotificationManager.META_DATA_RULE_INSTANCE_LIMIT">
+  META_DATA_RULE_INSTANCE_LIMIT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L247"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#META_DATA_RULE_INSTANCE_LIMIT">https://developer.android.com/reference/android/app/NotificationManager.html#META_DATA_RULE_INSTANCE_LIMIT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String META_DATA_RULE_INSTANCE_LIMIT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_App_NotificationManager_AddAutomaticZenRule_" data-uid="Android.App.NotificationManager.AddAutomaticZenRule*"></a>
+
+  <h3 id="Android_App_NotificationManager_AddAutomaticZenRule_Android_App_AutomaticZenRule_" data-uid="Android.App.NotificationManager.AddAutomaticZenRule(Android.App.AutomaticZenRule)">
+  AddAutomaticZenRule(AutomaticZenRule)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L459"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#addAutomaticZenRule(android.app.AutomaticZenRule)">https://developer.android.com/reference/android/app/NotificationManager.html#addAutomaticZenRule(android.app.AutomaticZenRule)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String AddAutomaticZenRule(AutomaticZenRule arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.App.AutomaticZenRule.html">AutomaticZenRule</a></dt>
+    <dd><p><a class="xref" href="Android.App.AutomaticZenRule.html">AutomaticZenRule</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_AreBubblesAllowed_" data-uid="Android.App.NotificationManager.AreBubblesAllowed*"></a>
+
+  <h3 id="Android_App_NotificationManager_AreBubblesAllowed" data-uid="Android.App.NotificationManager.AreBubblesAllowed">
+  AreBubblesAllowed()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L323"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#areBubblesAllowed()">https://developer.android.com/reference/android/app/NotificationManager.html#areBubblesAllowed()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public bool AreBubblesAllowed()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_AreBubblesEnabled_" data-uid="Android.App.NotificationManager.AreBubblesEnabled*"></a>
+
+  <h3 id="Android_App_NotificationManager_AreBubblesEnabled" data-uid="Android.App.NotificationManager.AreBubblesEnabled">
+  AreBubblesEnabled()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L332"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#areBubblesEnabled()">https://developer.android.com/reference/android/app/NotificationManager.html#areBubblesEnabled()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AreBubblesEnabled()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_AreNotificationsEnabled_" data-uid="Android.App.NotificationManager.AreNotificationsEnabled*"></a>
+
+  <h3 id="Android_App_NotificationManager_AreNotificationsEnabled" data-uid="Android.App.NotificationManager.AreNotificationsEnabled">
+  AreNotificationsEnabled()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L340"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#areNotificationsEnabled()">https://developer.android.com/reference/android/app/NotificationManager.html#areNotificationsEnabled()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AreNotificationsEnabled()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_AreNotificationsPaused_" data-uid="Android.App.NotificationManager.AreNotificationsPaused*"></a>
+
+  <h3 id="Android_App_NotificationManager_AreNotificationsPaused" data-uid="Android.App.NotificationManager.AreNotificationsPaused">
+  AreNotificationsPaused()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L348"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#areNotificationsPaused()">https://developer.android.com/reference/android/app/NotificationManager.html#areNotificationsPaused()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AreNotificationsPaused()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_CanNotifyAsPackage_" data-uid="Android.App.NotificationManager.CanNotifyAsPackage*"></a>
+
+  <h3 id="Android_App_NotificationManager_CanNotifyAsPackage_Java_Lang_String_" data-uid="Android.App.NotificationManager.CanNotifyAsPackage(Java.Lang.String)">
+  CanNotifyAsPackage(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L357"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#canNotifyAsPackage(java.lang.String)">https://developer.android.com/reference/android/app/NotificationManager.html#canNotifyAsPackage(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanNotifyAsPackage(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_CanUseFullScreenIntent_" data-uid="Android.App.NotificationManager.CanUseFullScreenIntent*"></a>
+
+  <h3 id="Android_App_NotificationManager_CanUseFullScreenIntent" data-uid="Android.App.NotificationManager.CanUseFullScreenIntent">
+  CanUseFullScreenIntent()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L365"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#canUseFullScreenIntent()">https://developer.android.com/reference/android/app/NotificationManager.html#canUseFullScreenIntent()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanUseFullScreenIntent()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_Cancel_" data-uid="Android.App.NotificationManager.Cancel*"></a>
+
+  <h3 id="Android_App_NotificationManager_Cancel_Java_Lang_String_System_Int32_" data-uid="Android.App.NotificationManager.Cancel(Java.Lang.String,System.Int32)">
+  Cancel(String, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L508"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#cancel(java.lang.String,int)">https://developer.android.com/reference/android/app/NotificationManager.html#cancel(java.lang.String,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Cancel(String arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_Cancel_" data-uid="Android.App.NotificationManager.Cancel*"></a>
+
+  <h3 id="Android_App_NotificationManager_Cancel_System_Int32_" data-uid="Android.App.NotificationManager.Cancel(System.Int32)">
+  Cancel(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L499"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#cancel(int)">https://developer.android.com/reference/android/app/NotificationManager.html#cancel(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Cancel(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_CancelAll_" data-uid="Android.App.NotificationManager.CancelAll*"></a>
+
+  <h3 id="Android_App_NotificationManager_CancelAll" data-uid="Android.App.NotificationManager.CancelAll">
+  CancelAll()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L515"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#cancelAll()">https://developer.android.com/reference/android/app/NotificationManager.html#cancelAll()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CancelAll()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_CancelAsPackage_" data-uid="Android.App.NotificationManager.CancelAsPackage*"></a>
+
+  <h3 id="Android_App_NotificationManager_CancelAsPackage_Java_Lang_String_Java_Lang_String_System_Int32_" data-uid="Android.App.NotificationManager.CancelAsPackage(Java.Lang.String,Java.Lang.String,System.Int32)">
+  CancelAsPackage(String, String, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L525"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#cancelAsPackage(java.lang.String,java.lang.String,int)">https://developer.android.com/reference/android/app/NotificationManager.html#cancelAsPackage(java.lang.String,java.lang.String,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CancelAsPackage(String arg0, String arg1, int arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_CreateNotificationChannel_" data-uid="Android.App.NotificationManager.CreateNotificationChannel*"></a>
+
+  <h3 id="Android_App_NotificationManager_CreateNotificationChannel_Android_App_NotificationChannel_" data-uid="Android.App.NotificationManager.CreateNotificationChannel(Android.App.NotificationChannel)">
+  CreateNotificationChannel(NotificationChannel)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L533"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#createNotificationChannel(android.app.NotificationChannel)">https://developer.android.com/reference/android/app/NotificationManager.html#createNotificationChannel(android.app.NotificationChannel)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CreateNotificationChannel(NotificationChannel arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.App.NotificationChannel.html">NotificationChannel</a></dt>
+    <dd><p><a class="xref" href="Android.App.NotificationChannel.html">NotificationChannel</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_CreateNotificationChannelGroup_" data-uid="Android.App.NotificationManager.CreateNotificationChannelGroup*"></a>
+
+  <h3 id="Android_App_NotificationManager_CreateNotificationChannelGroup_Android_App_NotificationChannelGroup_" data-uid="Android.App.NotificationManager.CreateNotificationChannelGroup(Android.App.NotificationChannelGroup)">
+  CreateNotificationChannelGroup(NotificationChannelGroup)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L541"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#createNotificationChannelGroup(android.app.NotificationChannelGroup)">https://developer.android.com/reference/android/app/NotificationManager.html#createNotificationChannelGroup(android.app.NotificationChannelGroup)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CreateNotificationChannelGroup(NotificationChannelGroup arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.App.NotificationChannelGroup.html">NotificationChannelGroup</a></dt>
+    <dd><p><a class="xref" href="Android.App.NotificationChannelGroup.html">NotificationChannelGroup</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_CreateNotificationChannelGroups_" data-uid="Android.App.NotificationManager.CreateNotificationChannelGroups*"></a>
+
+  <h3 id="Android_App_NotificationManager_CreateNotificationChannelGroups_Java_Util_List_Android_App_NotificationChannelGroup__" data-uid="Android.App.NotificationManager.CreateNotificationChannelGroups(Java.Util.List{Android.App.NotificationChannelGroup})">
+  CreateNotificationChannelGroups(List&lt;NotificationChannelGroup&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L549"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#createNotificationChannelGroups(java.util.List)">https://developer.android.com/reference/android/app/NotificationManager.html#createNotificationChannelGroups(java.util.List)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CreateNotificationChannelGroups(List&lt;NotificationChannelGroup&gt; arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Android.App.NotificationChannelGroup.html">NotificationChannelGroup</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.List.html">List</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_CreateNotificationChannels_" data-uid="Android.App.NotificationManager.CreateNotificationChannels*"></a>
+
+  <h3 id="Android_App_NotificationManager_CreateNotificationChannels_Java_Util_List_Android_App_NotificationChannel__" data-uid="Android.App.NotificationManager.CreateNotificationChannels(Java.Util.List{Android.App.NotificationChannel})">
+  CreateNotificationChannels(List&lt;NotificationChannel&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L557"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#createNotificationChannels(java.util.List)">https://developer.android.com/reference/android/app/NotificationManager.html#createNotificationChannels(java.util.List)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CreateNotificationChannels(List&lt;NotificationChannel&gt; arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Android.App.NotificationChannel.html">NotificationChannel</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.List.html">List</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_DeleteNotificationChannel_" data-uid="Android.App.NotificationManager.DeleteNotificationChannel*"></a>
+
+  <h3 id="Android_App_NotificationManager_DeleteNotificationChannel_Java_Lang_String_" data-uid="Android.App.NotificationManager.DeleteNotificationChannel(Java.Lang.String)">
+  DeleteNotificationChannel(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L565"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#deleteNotificationChannel(java.lang.String)">https://developer.android.com/reference/android/app/NotificationManager.html#deleteNotificationChannel(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DeleteNotificationChannel(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_DeleteNotificationChannelGroup_" data-uid="Android.App.NotificationManager.DeleteNotificationChannelGroup*"></a>
+
+  <h3 id="Android_App_NotificationManager_DeleteNotificationChannelGroup_Java_Lang_String_" data-uid="Android.App.NotificationManager.DeleteNotificationChannelGroup(Java.Lang.String)">
+  DeleteNotificationChannelGroup(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L573"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#deleteNotificationChannelGroup(java.lang.String)">https://developer.android.com/reference/android/app/NotificationManager.html#deleteNotificationChannelGroup(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DeleteNotificationChannelGroup(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_GetActiveNotifications_" data-uid="Android.App.NotificationManager.GetActiveNotifications*"></a>
+
+  <h3 id="Android_App_NotificationManager_GetActiveNotifications" data-uid="Android.App.NotificationManager.GetActiveNotifications">
+  GetActiveNotifications()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L315"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#getActiveNotifications()">https://developer.android.com/reference/android/app/NotificationManager.html#getActiveNotifications()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StatusBarNotification[] GetActiveNotifications()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Service.Notification.StatusBarNotification.html">StatusBarNotification</a>[]</dt>
+    <dd><p><a class="xref" href="Android.Service.Notification.StatusBarNotification.html">StatusBarNotification</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_GetAutomaticZenRule_" data-uid="Android.App.NotificationManager.GetAutomaticZenRule*"></a>
+
+  <h3 id="Android_App_NotificationManager_GetAutomaticZenRule_Java_Lang_String_" data-uid="Android.App.NotificationManager.GetAutomaticZenRule(Java.Lang.String)">
+  GetAutomaticZenRule(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L263"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#getAutomaticZenRule(java.lang.String)">https://developer.android.com/reference/android/app/NotificationManager.html#getAutomaticZenRule(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AutomaticZenRule GetAutomaticZenRule(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.App.AutomaticZenRule.html">AutomaticZenRule</a></dt>
+    <dd><p><a class="xref" href="Android.App.AutomaticZenRule.html">AutomaticZenRule</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_GetAutomaticZenRules_" data-uid="Android.App.NotificationManager.GetAutomaticZenRules*"></a>
+
+  <h3 id="Android_App_NotificationManager_GetAutomaticZenRules" data-uid="Android.App.NotificationManager.GetAutomaticZenRules">
+  GetAutomaticZenRules()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L491"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#getAutomaticZenRules()">https://developer.android.com/reference/android/app/NotificationManager.html#getAutomaticZenRules()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Map&lt;String, AutomaticZenRule&gt; GetAutomaticZenRules()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Map-2.html">Map</a>&lt;<a class="xref" href="Java.Lang.String.html">String</a>, <a class="xref" href="Android.App.AutomaticZenRule.html">AutomaticZenRule</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Map.html">Map</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_GetBubblePreference_" data-uid="Android.App.NotificationManager.GetBubblePreference*"></a>
+
+  <h3 id="Android_App_NotificationManager_GetBubblePreference" data-uid="Android.App.NotificationManager.GetBubblePreference">
+  GetBubblePreference()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L442"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#getBubblePreference()">https://developer.android.com/reference/android/app/NotificationManager.html#getBubblePreference()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetBubblePreference()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_GetConsolidatedNotificationPolicy_" data-uid="Android.App.NotificationManager.GetConsolidatedNotificationPolicy*"></a>
+
+  <h3 id="Android_App_NotificationManager_GetConsolidatedNotificationPolicy" data-uid="Android.App.NotificationManager.GetConsolidatedNotificationPolicy">
+  GetConsolidatedNotificationPolicy()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L299"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#getConsolidatedNotificationPolicy()">https://developer.android.com/reference/android/app/NotificationManager.html#getConsolidatedNotificationPolicy()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NotificationManager.Policy GetConsolidatedNotificationPolicy()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.App.NotificationManager.html">NotificationManager</a>.<a class="xref" href="Android.App.NotificationManager.Policy.html">Policy</a></dt>
+    <dd><p><a class="xref" href="Android.App.NotificationManager.Policy.html">NotificationManager.Policy</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_GetCurrentInterruptionFilter_" data-uid="Android.App.NotificationManager.GetCurrentInterruptionFilter*"></a>
+
+  <h3 id="Android_App_NotificationManager_GetCurrentInterruptionFilter" data-uid="Android.App.NotificationManager.GetCurrentInterruptionFilter">
+  GetCurrentInterruptionFilter()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L426"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#getCurrentInterruptionFilter()">https://developer.android.com/reference/android/app/NotificationManager.html#getCurrentInterruptionFilter()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetCurrentInterruptionFilter()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_GetImportance_" data-uid="Android.App.NotificationManager.GetImportance*"></a>
+
+  <h3 id="Android_App_NotificationManager_GetImportance" data-uid="Android.App.NotificationManager.GetImportance">
+  GetImportance()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L450"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#getImportance()">https://developer.android.com/reference/android/app/NotificationManager.html#getImportance()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetImportance()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_GetNotificationChannel_" data-uid="Android.App.NotificationManager.GetNotificationChannel*"></a>
+
+  <h3 id="Android_App_NotificationManager_GetNotificationChannel_Java_Lang_String_" data-uid="Android.App.NotificationManager.GetNotificationChannel(Java.Lang.String)">
+  GetNotificationChannel(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L282"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#getNotificationChannel(java.lang.String)">https://developer.android.com/reference/android/app/NotificationManager.html#getNotificationChannel(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NotificationChannel GetNotificationChannel(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.App.NotificationChannel.html">NotificationChannel</a></dt>
+    <dd><p><a class="xref" href="Android.App.NotificationChannel.html">NotificationChannel</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_GetNotificationChannel_" data-uid="Android.App.NotificationManager.GetNotificationChannel*"></a>
+
+  <h3 id="Android_App_NotificationManager_GetNotificationChannel_Java_Lang_String_Java_Lang_String_" data-uid="Android.App.NotificationManager.GetNotificationChannel(Java.Lang.String,Java.Lang.String)">
+  GetNotificationChannel(String, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L273"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#getNotificationChannel(java.lang.String,java.lang.String)">https://developer.android.com/reference/android/app/NotificationManager.html#getNotificationChannel(java.lang.String,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NotificationChannel GetNotificationChannel(String arg0, String arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.App.NotificationChannel.html">NotificationChannel</a></dt>
+    <dd><p><a class="xref" href="Android.App.NotificationChannel.html">NotificationChannel</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_GetNotificationChannelGroup_" data-uid="Android.App.NotificationManager.GetNotificationChannelGroup*"></a>
+
+  <h3 id="Android_App_NotificationManager_GetNotificationChannelGroup_Java_Lang_String_" data-uid="Android.App.NotificationManager.GetNotificationChannelGroup(Java.Lang.String)">
+  GetNotificationChannelGroup(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L291"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#getNotificationChannelGroup(java.lang.String)">https://developer.android.com/reference/android/app/NotificationManager.html#getNotificationChannelGroup(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NotificationChannelGroup GetNotificationChannelGroup(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.App.NotificationChannelGroup.html">NotificationChannelGroup</a></dt>
+    <dd><p><a class="xref" href="Android.App.NotificationChannelGroup.html">NotificationChannelGroup</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_GetNotificationChannelGroups_" data-uid="Android.App.NotificationManager.GetNotificationChannelGroups*"></a>
+
+  <h3 id="Android_App_NotificationManager_GetNotificationChannelGroups" data-uid="Android.App.NotificationManager.GetNotificationChannelGroups">
+  GetNotificationChannelGroups()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L483"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#getNotificationChannelGroups()">https://developer.android.com/reference/android/app/NotificationManager.html#getNotificationChannelGroups()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;NotificationChannelGroup&gt; GetNotificationChannelGroups()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Android.App.NotificationChannelGroup.html">NotificationChannelGroup</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.List.html">List</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_GetNotificationChannels_" data-uid="Android.App.NotificationManager.GetNotificationChannels*"></a>
+
+  <h3 id="Android_App_NotificationManager_GetNotificationChannels" data-uid="Android.App.NotificationManager.GetNotificationChannels">
+  GetNotificationChannels()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L475"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#getNotificationChannels()">https://developer.android.com/reference/android/app/NotificationManager.html#getNotificationChannels()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;NotificationChannel&gt; GetNotificationChannels()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Android.App.NotificationChannel.html">NotificationChannel</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.List.html">List</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_GetNotificationDelegate_" data-uid="Android.App.NotificationManager.GetNotificationDelegate*"></a>
+
+  <h3 id="Android_App_NotificationManager_GetNotificationDelegate" data-uid="Android.App.NotificationManager.GetNotificationDelegate">
+  GetNotificationDelegate()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L467"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#getNotificationDelegate()">https://developer.android.com/reference/android/app/NotificationManager.html#getNotificationDelegate()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetNotificationDelegate()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_GetNotificationPolicy_" data-uid="Android.App.NotificationManager.GetNotificationPolicy*"></a>
+
+  <h3 id="Android_App_NotificationManager_GetNotificationPolicy" data-uid="Android.App.NotificationManager.GetNotificationPolicy">
+  GetNotificationPolicy()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L307"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#getNotificationPolicy()">https://developer.android.com/reference/android/app/NotificationManager.html#getNotificationPolicy()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NotificationManager.Policy GetNotificationPolicy()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.App.NotificationManager.html">NotificationManager</a>.<a class="xref" href="Android.App.NotificationManager.Policy.html">Policy</a></dt>
+    <dd><p><a class="xref" href="Android.App.NotificationManager.Policy.html">NotificationManager.Policy</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_IsNotificationListenerAccessGranted_" data-uid="Android.App.NotificationManager.IsNotificationListenerAccessGranted*"></a>
+
+  <h3 id="Android_App_NotificationManager_IsNotificationListenerAccessGranted_Android_Content_ComponentName_" data-uid="Android.App.NotificationManager.IsNotificationListenerAccessGranted(Android.Content.ComponentName)">
+  IsNotificationListenerAccessGranted(ComponentName)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L374"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#isNotificationListenerAccessGranted(android.content.ComponentName)">https://developer.android.com/reference/android/app/NotificationManager.html#isNotificationListenerAccessGranted(android.content.ComponentName)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsNotificationListenerAccessGranted(ComponentName arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.ComponentName.html">ComponentName</a></dt>
+    <dd><p><a class="xref" href="Android.Content.ComponentName.html">ComponentName</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_IsNotificationPolicyAccessGranted_" data-uid="Android.App.NotificationManager.IsNotificationPolicyAccessGranted*"></a>
+
+  <h3 id="Android_App_NotificationManager_IsNotificationPolicyAccessGranted" data-uid="Android.App.NotificationManager.IsNotificationPolicyAccessGranted">
+  IsNotificationPolicyAccessGranted()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L382"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#isNotificationPolicyAccessGranted()">https://developer.android.com/reference/android/app/NotificationManager.html#isNotificationPolicyAccessGranted()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsNotificationPolicyAccessGranted()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_MatchesCallFilter_" data-uid="Android.App.NotificationManager.MatchesCallFilter*"></a>
+
+  <h3 id="Android_App_NotificationManager_MatchesCallFilter_Android_Net_Uri_" data-uid="Android.App.NotificationManager.MatchesCallFilter(Android.Net.Uri)">
+  MatchesCallFilter(Uri)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L391"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#matchesCallFilter(android.net.Uri)">https://developer.android.com/reference/android/app/NotificationManager.html#matchesCallFilter(android.net.Uri)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool MatchesCallFilter(Uri arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Uri.html">Uri</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Uri.html">Uri</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_Notify_" data-uid="Android.App.NotificationManager.Notify*"></a>
+
+  <h3 id="Android_App_NotificationManager_Notify_Java_Lang_String_System_Int32_Android_App_Notification_" data-uid="Android.App.NotificationManager.Notify(Java.Lang.String,System.Int32,Android.App.Notification)">
+  Notify(String, int, Notification)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L592"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#notify(java.lang.String,int,android.app.Notification)">https://developer.android.com/reference/android/app/NotificationManager.html#notify(java.lang.String,int,android.app.Notification)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Notify(String arg0, int arg1, Notification arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.App.Notification.html">Notification</a></dt>
+    <dd><p><a class="xref" href="Android.App.Notification.html">Notification</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_Notify_" data-uid="Android.App.NotificationManager.Notify*"></a>
+
+  <h3 id="Android_App_NotificationManager_Notify_System_Int32_Android_App_Notification_" data-uid="Android.App.NotificationManager.Notify(System.Int32,Android.App.Notification)">
+  Notify(int, Notification)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L582"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#notify(int,android.app.Notification)">https://developer.android.com/reference/android/app/NotificationManager.html#notify(int,android.app.Notification)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Notify(int arg0, Notification arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.App.Notification.html">Notification</a></dt>
+    <dd><p><a class="xref" href="Android.App.Notification.html">Notification</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_NotifyAsPackage_" data-uid="Android.App.NotificationManager.NotifyAsPackage*"></a>
+
+  <h3 id="Android_App_NotificationManager_NotifyAsPackage_Java_Lang_String_Java_Lang_String_System_Int32_Android_App_Notification_" data-uid="Android.App.NotificationManager.NotifyAsPackage(Java.Lang.String,Java.Lang.String,System.Int32,Android.App.Notification)">
+  NotifyAsPackage(String, String, int, Notification)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L603"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#notifyAsPackage(java.lang.String,java.lang.String,int,android.app.Notification)">https://developer.android.com/reference/android/app/NotificationManager.html#notifyAsPackage(java.lang.String,java.lang.String,int,android.app.Notification)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void NotifyAsPackage(String arg0, String arg1, int arg2, Notification arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Android.App.Notification.html">Notification</a></dt>
+    <dd><p><a class="xref" href="Android.App.Notification.html">Notification</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_RemoveAutomaticZenRule_" data-uid="Android.App.NotificationManager.RemoveAutomaticZenRule*"></a>
+
+  <h3 id="Android_App_NotificationManager_RemoveAutomaticZenRule_Java_Lang_String_" data-uid="Android.App.NotificationManager.RemoveAutomaticZenRule(Java.Lang.String)">
+  RemoveAutomaticZenRule(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L400"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#removeAutomaticZenRule(java.lang.String)">https://developer.android.com/reference/android/app/NotificationManager.html#removeAutomaticZenRule(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RemoveAutomaticZenRule(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_SetAutomaticZenRuleState_" data-uid="Android.App.NotificationManager.SetAutomaticZenRuleState*"></a>
+
+  <h3 id="Android_App_NotificationManager_SetAutomaticZenRuleState_Java_Lang_String_Android_Service_Notification_Condition_" data-uid="Android.App.NotificationManager.SetAutomaticZenRuleState(Java.Lang.String,Android.Service.Notification.Condition)">
+  SetAutomaticZenRuleState(String, Condition)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L612"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#setAutomaticZenRuleState(java.lang.String,android.service.notification.Condition)">https://developer.android.com/reference/android/app/NotificationManager.html#setAutomaticZenRuleState(java.lang.String,android.service.notification.Condition)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAutomaticZenRuleState(String arg0, Condition arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Service.Notification.Condition.html">Condition</a></dt>
+    <dd><p><a class="xref" href="Android.Service.Notification.Condition.html">Condition</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_SetInterruptionFilter_" data-uid="Android.App.NotificationManager.SetInterruptionFilter*"></a>
+
+  <h3 id="Android_App_NotificationManager_SetInterruptionFilter_System_Int32_" data-uid="Android.App.NotificationManager.SetInterruptionFilter(System.Int32)">
+  SetInterruptionFilter(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L434"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#setInterruptionFilter(int)">https://developer.android.com/reference/android/app/NotificationManager.html#setInterruptionFilter(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetInterruptionFilter(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_SetNotificationDelegate_" data-uid="Android.App.NotificationManager.SetNotificationDelegate*"></a>
+
+  <h3 id="Android_App_NotificationManager_SetNotificationDelegate_Java_Lang_String_" data-uid="Android.App.NotificationManager.SetNotificationDelegate(Java.Lang.String)">
+  SetNotificationDelegate(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L620"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#setNotificationDelegate(java.lang.String)">https://developer.android.com/reference/android/app/NotificationManager.html#setNotificationDelegate(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetNotificationDelegate(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_SetNotificationPolicy_" data-uid="Android.App.NotificationManager.SetNotificationPolicy*"></a>
+
+  <h3 id="Android_App_NotificationManager_SetNotificationPolicy_Android_App_NotificationManager_Policy_" data-uid="Android.App.NotificationManager.SetNotificationPolicy(Android.App.NotificationManager.Policy)">
+  SetNotificationPolicy(Policy)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L628"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#setNotificationPolicy(android.app.NotificationManager.Policy)">https://developer.android.com/reference/android/app/NotificationManager.html#setNotificationPolicy(android.app.NotificationManager.Policy)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetNotificationPolicy(NotificationManager.Policy arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.App.NotificationManager.html">NotificationManager</a>.<a class="xref" href="Android.App.NotificationManager.Policy.html">Policy</a></dt>
+    <dd><p><a class="xref" href="Android.App.NotificationManager.Policy.html">NotificationManager.Policy</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_ShouldHideSilentStatusBarIcons_" data-uid="Android.App.NotificationManager.ShouldHideSilentStatusBarIcons*"></a>
+
+  <h3 id="Android_App_NotificationManager_ShouldHideSilentStatusBarIcons" data-uid="Android.App.NotificationManager.ShouldHideSilentStatusBarIcons">
+  ShouldHideSilentStatusBarIcons()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L408"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#shouldHideSilentStatusBarIcons()">https://developer.android.com/reference/android/app/NotificationManager.html#shouldHideSilentStatusBarIcons()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ShouldHideSilentStatusBarIcons()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_NotificationManager_UpdateAutomaticZenRule_" data-uid="Android.App.NotificationManager.UpdateAutomaticZenRule*"></a>
+
+  <h3 id="Android_App_NotificationManager_UpdateAutomaticZenRule_Java_Lang_String_Android_App_AutomaticZenRule_" data-uid="Android.App.NotificationManager.UpdateAutomaticZenRule(Java.Lang.String,Android.App.AutomaticZenRule)">
+  UpdateAutomaticZenRule(String, AutomaticZenRule)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L418"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/NotificationManager.html#updateAutomaticZenRule(java.lang.String,android.app.AutomaticZenRule)">https://developer.android.com/reference/android/app/NotificationManager.html#updateAutomaticZenRule(java.lang.String,android.app.AutomaticZenRule)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UpdateAutomaticZenRule(String arg0, AutomaticZenRule arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.App.AutomaticZenRule.html">AutomaticZenRule</a></dt>
+    <dd><p><a class="xref" href="Android.App.AutomaticZenRule.html">AutomaticZenRule</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/NotificationManager.cs/#L29" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,1823 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class AlertDialog | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class AlertDialog | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/app/AlertDialog.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_App_AlertDialog.md&amp;value=---%0Auid%3A%20Android.App.AlertDialog%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.App.AlertDialog">
+
+
+
+  <h1 id="Android_App_AlertDialog" data-uid="Android.App.AlertDialog" class="text-break">
+Class AlertDialog  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AllPackageClasses.cs/#L1139"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.App.html">App</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/app/AlertDialog.html">https://developer.android.com/reference/android/app/AlertDialog.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AlertDialog : Dialog, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IDialogInterface</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.App.Dialog.html">Dialog</a>&gt;</div>
+      <div><a class="xref" href="Android.App.Dialog.html">Dialog</a></div>
+      <div><span class="xref">AlertDialog</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+      <div><a class="xref" href="Android.Content.IDialogInterface.html">IDialogInterface</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="Android.App.DatePickerDialog.html">DatePickerDialog</a></div>
+      <div><a class="xref" href="Android.App.ProgressDialog.html">ProgressDialog</a></div>
+      <div><a class="xref" href="Android.App.TimePickerDialog.html">TimePickerDialog</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_FindViewById__1_System_Int32_">Dialog.FindViewById&lt;T&gt;(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_GetActionBar">Dialog.GetActionBar()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_OnSaveInstanceState">Dialog.OnSaveInstanceState()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_OnWindowStartingActionMode_Android_View_ActionMode_Callback_System_Int32_">Dialog.OnWindowStartingActionMode(ActionMode.Callback, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_OnWindowStartingActionMode_Android_View_ActionMode_Callback_">Dialog.OnWindowStartingActionMode(ActionMode.Callback)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_GetLayoutInflater">Dialog.GetLayoutInflater()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_GetCurrentFocus">Dialog.GetCurrentFocus()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_OnCreatePanelView_System_Int32_">Dialog.OnCreatePanelView(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_GetWindow">Dialog.GetWindow()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_GetOnBackInvokedDispatcher">Dialog.GetOnBackInvokedDispatcher()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_DispatchGenericMotionEvent_Android_View_MotionEvent_">Dialog.DispatchGenericMotionEvent(MotionEvent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_DispatchKeyEvent_Android_View_KeyEvent_">Dialog.DispatchKeyEvent(KeyEvent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_DispatchKeyShortcutEvent_Android_View_KeyEvent_">Dialog.DispatchKeyShortcutEvent(KeyEvent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_DispatchPopulateAccessibilityEvent_Android_View_Accessibility_AccessibilityEvent_">Dialog.DispatchPopulateAccessibilityEvent(AccessibilityEvent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_DispatchTouchEvent_Android_View_MotionEvent_">Dialog.DispatchTouchEvent(MotionEvent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_DispatchTrackballEvent_Android_View_MotionEvent_">Dialog.DispatchTrackballEvent(MotionEvent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_IsShowing">Dialog.IsShowing()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_OnContextItemSelected_Android_View_MenuItem_">Dialog.OnContextItemSelected(MenuItem)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_OnCreateOptionsMenu_Android_View_Menu_">Dialog.OnCreateOptionsMenu(Menu)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_OnCreatePanelMenu_System_Int32_Android_View_Menu_">Dialog.OnCreatePanelMenu(int, Menu)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_OnGenericMotionEvent_Android_View_MotionEvent_">Dialog.OnGenericMotionEvent(MotionEvent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_OnKeyDown_System_Int32_Android_View_KeyEvent_">Dialog.OnKeyDown(int, KeyEvent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_OnKeyLongPress_System_Int32_Android_View_KeyEvent_">Dialog.OnKeyLongPress(int, KeyEvent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_OnKeyMultiple_System_Int32_System_Int32_Android_View_KeyEvent_">Dialog.OnKeyMultiple(int, int, KeyEvent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_OnKeyShortcut_System_Int32_Android_View_KeyEvent_">Dialog.OnKeyShortcut(int, KeyEvent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_OnKeyUp_System_Int32_Android_View_KeyEvent_">Dialog.OnKeyUp(int, KeyEvent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_OnMenuItemSelected_System_Int32_Android_View_MenuItem_">Dialog.OnMenuItemSelected(int, MenuItem)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_OnMenuOpened_System_Int32_Android_View_Menu_">Dialog.OnMenuOpened(int, Menu)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_OnOptionsItemSelected_Android_View_MenuItem_">Dialog.OnOptionsItemSelected(MenuItem)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_OnPrepareOptionsMenu_Android_View_Menu_">Dialog.OnPrepareOptionsMenu(Menu)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_OnPreparePanel_System_Int32_Android_View_View_Android_View_Menu_">Dialog.OnPreparePanel(int, View, Menu)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_OnSearchRequested">Dialog.OnSearchRequested()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_OnSearchRequested_Android_View_SearchEvent_">Dialog.OnSearchRequested(SearchEvent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_OnTouchEvent_Android_View_MotionEvent_">Dialog.OnTouchEvent(MotionEvent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_OnTrackballEvent_Android_View_MotionEvent_">Dialog.OnTrackballEvent(MotionEvent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_RequireViewById__1_System_Int32_">Dialog.RequireViewById&lt;T&gt;(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_GetOwnerActivity">Dialog.GetOwnerActivity()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_GetContext">Dialog.GetContext()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_GetSearchEvent">Dialog.GetSearchEvent()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_RequestWindowFeature_System_Int32_">Dialog.RequestWindowFeature(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_GetVolumeControlStream">Dialog.GetVolumeControlStream()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_SetFeatureDrawable_System_Int32_Android_Graphics_Drawable_Drawable_">Dialog.SetFeatureDrawable(int, Drawable)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_SetFeatureDrawableAlpha_System_Int32_System_Int32_">Dialog.SetFeatureDrawableAlpha(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_SetFeatureDrawableResource_System_Int32_System_Int32_">Dialog.SetFeatureDrawableResource(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_SetFeatureDrawableUri_System_Int32_Android_Net_Uri_">Dialog.SetFeatureDrawableUri(int, Uri)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_SetOwnerActivity_Android_App_Activity_">Dialog.SetOwnerActivity(Activity)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_SetVolumeControlStream_System_Int32_">Dialog.SetVolumeControlStream(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_AddContentView_Android_View_View_Android_View_ViewGroup_LayoutParams_">Dialog.AddContentView(View, ViewGroup.LayoutParams)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_Cancel">Dialog.Cancel()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_CloseOptionsMenu">Dialog.CloseOptionsMenu()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_Create">Dialog.Create()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_Dismiss">Dialog.Dismiss()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_Hide">Dialog.Hide()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_InvalidateOptionsMenu">Dialog.InvalidateOptionsMenu()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_OnActionModeFinished_Android_View_ActionMode_">Dialog.OnActionModeFinished(ActionMode)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_OnActionModeStarted_Android_View_ActionMode_">Dialog.OnActionModeStarted(ActionMode)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_OnAttachedToWindow">Dialog.OnAttachedToWindow()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_OnBackPressed">Dialog.OnBackPressed()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_OnContentChanged">Dialog.OnContentChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_OnContextMenuClosed_Android_View_Menu_">Dialog.OnContextMenuClosed(Menu)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_OnCreateContextMenu_Android_View_ContextMenu_Android_View_View_Android_View_ContextMenu_ContextMenuInfo_">Dialog.OnCreateContextMenu(ContextMenu, View, ContextMenu.ContextMenuInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_OnDetachedFromWindow">Dialog.OnDetachedFromWindow()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_OnOptionsMenuClosed_Android_View_Menu_">Dialog.OnOptionsMenuClosed(Menu)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_OnPanelClosed_System_Int32_Android_View_Menu_">Dialog.OnPanelClosed(int, Menu)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_OnRestoreInstanceState_Android_Os_Bundle_">Dialog.OnRestoreInstanceState(Bundle)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_OnWindowAttributesChanged_Android_View_WindowManager_LayoutParams_">Dialog.OnWindowAttributesChanged(WindowManager.LayoutParams)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_OnWindowFocusChanged_System_Boolean_">Dialog.OnWindowFocusChanged(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_OpenContextMenu_Android_View_View_">Dialog.OpenContextMenu(View)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_OpenOptionsMenu">Dialog.OpenOptionsMenu()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_RegisterForContextMenu_Android_View_View_">Dialog.RegisterForContextMenu(View)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_SetCancelable_System_Boolean_">Dialog.SetCancelable(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_SetCanceledOnTouchOutside_System_Boolean_">Dialog.SetCanceledOnTouchOutside(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_SetCancelMessage_Android_Os_Message_">Dialog.SetCancelMessage(Message)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_SetContentView_Android_View_View_Android_View_ViewGroup_LayoutParams_">Dialog.SetContentView(View, ViewGroup.LayoutParams)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_SetContentView_Android_View_View_">Dialog.SetContentView(View)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_SetContentView_System_Int32_">Dialog.SetContentView(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_SetDismissMessage_Android_Os_Message_">Dialog.SetDismissMessage(Message)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_SetOnCancelListener_Android_Content_DialogInterface_OnCancelListener_">Dialog.SetOnCancelListener(DialogInterface.OnCancelListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_SetOnDismissListener_Android_Content_DialogInterface_OnDismissListener_">Dialog.SetOnDismissListener(DialogInterface.OnDismissListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_SetOnKeyListener_Android_Content_DialogInterface_OnKeyListener_">Dialog.SetOnKeyListener(DialogInterface.OnKeyListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_SetOnShowListener_Android_Content_DialogInterface_OnShowListener_">Dialog.SetOnShowListener(DialogInterface.OnShowListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_SetTitle_System_Int32_">Dialog.SetTitle(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_SetTitle_Java_Lang_CharSequence_">Dialog.SetTitle(CharSequence)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_Show">Dialog.Show()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_TakeKeyEvents_System_Boolean_">Dialog.TakeKeyEvents(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.App.Dialog.html#Android_App_Dialog_UnregisterForContextMenu_Android_View_View_">Dialog.UnregisterForContextMenu(View)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Dialog&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Dialog&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Dialog&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Dialog&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Dialog&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Dialog&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Dialog&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Dialog&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Dialog&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Dialog&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Dialog&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Dialog&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Dialog&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Dialog&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Dialog&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Dialog&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Dialog&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Dialog&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Dialog&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Dialog&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Dialog&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Dialog&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Dialog&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Dialog&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Dialog&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Dialog&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Dialog&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Dialog&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Dialog&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Dialog&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Dialog&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Dialog&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Dialog&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Dialog&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Dialog&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Dialog&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Dialog&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Dialog&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Dialog&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Dialog&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Dialog&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Dialog&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Dialog&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Dialog&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Dialog&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;Dialog&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Dialog&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Dialog&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Dialog&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Dialog&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_App_AlertDialog__ctor_" data-uid="Android.App.AlertDialog.#ctor*"></a>
+
+  <h3 id="Android_App_AlertDialog__ctor" data-uid="Android.App.AlertDialog.#ctor">
+  AlertDialog()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AllPackageClasses.cs/#L1145"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AlertDialog()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_AlertDialog__ctor_" data-uid="Android.App.AlertDialog.#ctor*"></a>
+
+  <h3 id="Android_App_AlertDialog__ctor_System_Object___" data-uid="Android.App.AlertDialog.#ctor(System.Object[])">
+  AlertDialog(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AllPackageClasses.cs/#L1149"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AlertDialog(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_App_AlertDialog_BridgeClassName_" data-uid="Android.App.AlertDialog.BridgeClassName*"></a>
+
+  <h3 id="Android_App_AlertDialog_BridgeClassName" data-uid="Android.App.AlertDialog.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AllPackageClasses.cs/#L1156"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_AlertDialog_IsBridgeAbstract_" data-uid="Android.App.AlertDialog.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_App_AlertDialog_IsBridgeAbstract" data-uid="Android.App.AlertDialog.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AllPackageClasses.cs/#L1160"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_AlertDialog_IsBridgeCloseable_" data-uid="Android.App.AlertDialog.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_App_AlertDialog_IsBridgeCloseable" data-uid="Android.App.AlertDialog.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AllPackageClasses.cs/#L1164"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_AlertDialog_IsBridgeInterface_" data-uid="Android.App.AlertDialog.IsBridgeInterface*"></a>
+
+  <h3 id="Android_App_AlertDialog_IsBridgeInterface" data-uid="Android.App.AlertDialog.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AllPackageClasses.cs/#L1168"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_AlertDialog_IsBridgeStatic_" data-uid="Android.App.AlertDialog.IsBridgeStatic*"></a>
+
+  <h3 id="Android_App_AlertDialog_IsBridgeStatic" data-uid="Android.App.AlertDialog.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AllPackageClasses.cs/#L1172"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_AlertDialog_THEME_DEVICE_DEFAULT_DARK_" data-uid="Android.App.AlertDialog.THEME_DEVICE_DEFAULT_DARK*"></a>
+
+  <h3 id="Android_App_AlertDialog_THEME_DEVICE_DEFAULT_DARK" data-uid="Android.App.AlertDialog.THEME_DEVICE_DEFAULT_DARK">
+  THEME_DEVICE_DEFAULT_DARK
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AlertDialog.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/AlertDialog.html#THEME_DEVICE_DEFAULT_DARK">https://developer.android.com/reference/android/app/AlertDialog.html#THEME_DEVICE_DEFAULT_DARK</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static int THEME_DEVICE_DEFAULT_DARK { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_AlertDialog_THEME_DEVICE_DEFAULT_LIGHT_" data-uid="Android.App.AlertDialog.THEME_DEVICE_DEFAULT_LIGHT*"></a>
+
+  <h3 id="Android_App_AlertDialog_THEME_DEVICE_DEFAULT_LIGHT" data-uid="Android.App.AlertDialog.THEME_DEVICE_DEFAULT_LIGHT">
+  THEME_DEVICE_DEFAULT_LIGHT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AlertDialog.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/AlertDialog.html#THEME_DEVICE_DEFAULT_LIGHT">https://developer.android.com/reference/android/app/AlertDialog.html#THEME_DEVICE_DEFAULT_LIGHT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static int THEME_DEVICE_DEFAULT_LIGHT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_AlertDialog_THEME_HOLO_DARK_" data-uid="Android.App.AlertDialog.THEME_HOLO_DARK*"></a>
+
+  <h3 id="Android_App_AlertDialog_THEME_HOLO_DARK" data-uid="Android.App.AlertDialog.THEME_HOLO_DARK">
+  THEME_HOLO_DARK
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AlertDialog.cs/#L57"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/AlertDialog.html#THEME_HOLO_DARK">https://developer.android.com/reference/android/app/AlertDialog.html#THEME_HOLO_DARK</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static int THEME_HOLO_DARK { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_AlertDialog_THEME_HOLO_LIGHT_" data-uid="Android.App.AlertDialog.THEME_HOLO_LIGHT*"></a>
+
+  <h3 id="Android_App_AlertDialog_THEME_HOLO_LIGHT" data-uid="Android.App.AlertDialog.THEME_HOLO_LIGHT">
+  THEME_HOLO_LIGHT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AlertDialog.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/AlertDialog.html#THEME_HOLO_LIGHT">https://developer.android.com/reference/android/app/AlertDialog.html#THEME_HOLO_LIGHT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static int THEME_HOLO_LIGHT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_App_AlertDialog_THEME_TRADITIONAL_" data-uid="Android.App.AlertDialog.THEME_TRADITIONAL*"></a>
+
+  <h3 id="Android_App_AlertDialog_THEME_TRADITIONAL" data-uid="Android.App.AlertDialog.THEME_TRADITIONAL">
+  THEME_TRADITIONAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AlertDialog.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/AlertDialog.html#THEME_TRADITIONAL">https://developer.android.com/reference/android/app/AlertDialog.html#THEME_TRADITIONAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static int THEME_TRADITIONAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_App_AlertDialog_GetButton_" data-uid="Android.App.AlertDialog.GetButton*"></a>
+
+  <h3 id="Android_App_AlertDialog_GetButton_System_Int32_" data-uid="Android.App.AlertDialog.GetButton(System.Int32)">
+  GetButton(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AlertDialog.cs/#L88"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/AlertDialog.html#getButton(int)">https://developer.android.com/reference/android/app/AlertDialog.html#getButton(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Button GetButton(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Widget.Button.html">Button</a></dt>
+    <dd><p><a class="xref" href="Android.Widget.Button.html">Button</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_AlertDialog_GetListView_" data-uid="Android.App.AlertDialog.GetListView*"></a>
+
+  <h3 id="Android_App_AlertDialog_GetListView" data-uid="Android.App.AlertDialog.GetListView">
+  GetListView()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AlertDialog.cs/#L96"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/AlertDialog.html#getListView()">https://developer.android.com/reference/android/app/AlertDialog.html#getListView()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ListView GetListView()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Widget.ListView.html">ListView</a></dt>
+    <dd><p><a class="xref" href="Android.Widget.ListView.html">ListView</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_AlertDialog_SetButton_" data-uid="Android.App.AlertDialog.SetButton*"></a>
+
+  <h3 id="Android_App_AlertDialog_SetButton_Java_Lang_CharSequence_Android_Content_DialogInterface_OnClickListener_" data-uid="Android.App.AlertDialog.SetButton(Java.Lang.CharSequence,Android.Content.DialogInterface.OnClickListener)">
+  SetButton(CharSequence, OnClickListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AlertDialog.cs/#L125"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/AlertDialog.html#setButton(java.lang.CharSequence,android.content.DialogInterface.OnClickListener)">https://developer.android.com/reference/android/app/AlertDialog.html#setButton(java.lang.CharSequence,android.content.DialogInterface.OnClickListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void SetButton(CharSequence arg0, DialogInterface.OnClickListener arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Content.DialogInterface.html">DialogInterface</a>.<a class="xref" href="Android.Content.DialogInterface.OnClickListener.html">OnClickListener</a></dt>
+    <dd><p><a class="xref" href="Android.Content.DialogInterface.OnClickListener.html">DialogInterface.OnClickListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_AlertDialog_SetButton_" data-uid="Android.App.AlertDialog.SetButton*"></a>
+
+  <h3 id="Android_App_AlertDialog_SetButton_Java_Lang_CharSequence_Android_Os_Message_" data-uid="Android.App.AlertDialog.SetButton(Java.Lang.CharSequence,Android.Os.Message)">
+  SetButton(CharSequence, Message)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AlertDialog.cs/#L135"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/AlertDialog.html#setButton(java.lang.CharSequence,android.os.Message)">https://developer.android.com/reference/android/app/AlertDialog.html#setButton(java.lang.CharSequence,android.os.Message)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void SetButton(CharSequence arg0, Message arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Os.Message.html">Message</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Message.html">Message</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_AlertDialog_SetButton_" data-uid="Android.App.AlertDialog.SetButton*"></a>
+
+  <h3 id="Android_App_AlertDialog_SetButton_System_Int32_Java_Lang_CharSequence_Android_Content_DialogInterface_OnClickListener_" data-uid="Android.App.AlertDialog.SetButton(System.Int32,Java.Lang.CharSequence,Android.Content.DialogInterface.OnClickListener)">
+  SetButton(int, CharSequence, OnClickListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AlertDialog.cs/#L106"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/AlertDialog.html#setButton(int,java.lang.CharSequence,android.content.DialogInterface.OnClickListener)">https://developer.android.com/reference/android/app/AlertDialog.html#setButton(int,java.lang.CharSequence,android.content.DialogInterface.OnClickListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetButton(int arg0, CharSequence arg1, DialogInterface.OnClickListener arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Content.DialogInterface.html">DialogInterface</a>.<a class="xref" href="Android.Content.DialogInterface.OnClickListener.html">OnClickListener</a></dt>
+    <dd><p><a class="xref" href="Android.Content.DialogInterface.OnClickListener.html">DialogInterface.OnClickListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_AlertDialog_SetButton_" data-uid="Android.App.AlertDialog.SetButton*"></a>
+
+  <h3 id="Android_App_AlertDialog_SetButton_System_Int32_Java_Lang_CharSequence_Android_Os_Message_" data-uid="Android.App.AlertDialog.SetButton(System.Int32,Java.Lang.CharSequence,Android.Os.Message)">
+  SetButton(int, CharSequence, Message)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AlertDialog.cs/#L116"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/AlertDialog.html#setButton(int,java.lang.CharSequence,android.os.Message)">https://developer.android.com/reference/android/app/AlertDialog.html#setButton(int,java.lang.CharSequence,android.os.Message)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetButton(int arg0, CharSequence arg1, Message arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Os.Message.html">Message</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Message.html">Message</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_AlertDialog_SetButton2_" data-uid="Android.App.AlertDialog.SetButton2*"></a>
+
+  <h3 id="Android_App_AlertDialog_SetButton2_Java_Lang_CharSequence_Android_Content_DialogInterface_OnClickListener_" data-uid="Android.App.AlertDialog.SetButton2(Java.Lang.CharSequence,Android.Content.DialogInterface.OnClickListener)">
+  SetButton2(CharSequence, OnClickListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AlertDialog.cs/#L145"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/AlertDialog.html#setButton2(java.lang.CharSequence,android.content.DialogInterface.OnClickListener)">https://developer.android.com/reference/android/app/AlertDialog.html#setButton2(java.lang.CharSequence,android.content.DialogInterface.OnClickListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void SetButton2(CharSequence arg0, DialogInterface.OnClickListener arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Content.DialogInterface.html">DialogInterface</a>.<a class="xref" href="Android.Content.DialogInterface.OnClickListener.html">OnClickListener</a></dt>
+    <dd><p><a class="xref" href="Android.Content.DialogInterface.OnClickListener.html">DialogInterface.OnClickListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_AlertDialog_SetButton2_" data-uid="Android.App.AlertDialog.SetButton2*"></a>
+
+  <h3 id="Android_App_AlertDialog_SetButton2_Java_Lang_CharSequence_Android_Os_Message_" data-uid="Android.App.AlertDialog.SetButton2(Java.Lang.CharSequence,Android.Os.Message)">
+  SetButton2(CharSequence, Message)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AlertDialog.cs/#L155"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/AlertDialog.html#setButton2(java.lang.CharSequence,android.os.Message)">https://developer.android.com/reference/android/app/AlertDialog.html#setButton2(java.lang.CharSequence,android.os.Message)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void SetButton2(CharSequence arg0, Message arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Os.Message.html">Message</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Message.html">Message</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_AlertDialog_SetButton3_" data-uid="Android.App.AlertDialog.SetButton3*"></a>
+
+  <h3 id="Android_App_AlertDialog_SetButton3_Java_Lang_CharSequence_Android_Content_DialogInterface_OnClickListener_" data-uid="Android.App.AlertDialog.SetButton3(Java.Lang.CharSequence,Android.Content.DialogInterface.OnClickListener)">
+  SetButton3(CharSequence, OnClickListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AlertDialog.cs/#L165"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/AlertDialog.html#setButton3(java.lang.CharSequence,android.content.DialogInterface.OnClickListener)">https://developer.android.com/reference/android/app/AlertDialog.html#setButton3(java.lang.CharSequence,android.content.DialogInterface.OnClickListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void SetButton3(CharSequence arg0, DialogInterface.OnClickListener arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Content.DialogInterface.html">DialogInterface</a>.<a class="xref" href="Android.Content.DialogInterface.OnClickListener.html">OnClickListener</a></dt>
+    <dd><p><a class="xref" href="Android.Content.DialogInterface.OnClickListener.html">DialogInterface.OnClickListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_AlertDialog_SetButton3_" data-uid="Android.App.AlertDialog.SetButton3*"></a>
+
+  <h3 id="Android_App_AlertDialog_SetButton3_Java_Lang_CharSequence_Android_Os_Message_" data-uid="Android.App.AlertDialog.SetButton3(Java.Lang.CharSequence,Android.Os.Message)">
+  SetButton3(CharSequence, Message)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AlertDialog.cs/#L175"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/AlertDialog.html#setButton3(java.lang.CharSequence,android.os.Message)">https://developer.android.com/reference/android/app/AlertDialog.html#setButton3(java.lang.CharSequence,android.os.Message)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void SetButton3(CharSequence arg0, Message arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Os.Message.html">Message</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Message.html">Message</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_AlertDialog_SetCustomTitle_" data-uid="Android.App.AlertDialog.SetCustomTitle*"></a>
+
+  <h3 id="Android_App_AlertDialog_SetCustomTitle_Android_View_View_" data-uid="Android.App.AlertDialog.SetCustomTitle(Android.View.View)">
+  SetCustomTitle(View)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AlertDialog.cs/#L184"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/AlertDialog.html#setCustomTitle(android.view.View)">https://developer.android.com/reference/android/app/AlertDialog.html#setCustomTitle(android.view.View)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCustomTitle(View arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.View.View.html">View</a></dt>
+    <dd><p><a class="xref" href="Android.View.View.html">View</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_AlertDialog_SetIcon_" data-uid="Android.App.AlertDialog.SetIcon*"></a>
+
+  <h3 id="Android_App_AlertDialog_SetIcon_Android_Graphics_Drawable_Drawable_" data-uid="Android.App.AlertDialog.SetIcon(Android.Graphics.Drawable.Drawable)">
+  SetIcon(Drawable)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AlertDialog.cs/#L192"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/AlertDialog.html#setIcon(android.graphics.drawable.Drawable)">https://developer.android.com/reference/android/app/AlertDialog.html#setIcon(android.graphics.drawable.Drawable)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetIcon(Drawable arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Graphics.Drawable.Drawable.html">Drawable</a></dt>
+    <dd><p><a class="xref" href="Android.Graphics.Drawable.Drawable.html">Drawable</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_AlertDialog_SetIcon_" data-uid="Android.App.AlertDialog.SetIcon*"></a>
+
+  <h3 id="Android_App_AlertDialog_SetIcon_System_Int32_" data-uid="Android.App.AlertDialog.SetIcon(System.Int32)">
+  SetIcon(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AlertDialog.cs/#L200"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/AlertDialog.html#setIcon(int)">https://developer.android.com/reference/android/app/AlertDialog.html#setIcon(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetIcon(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_AlertDialog_SetIconAttribute_" data-uid="Android.App.AlertDialog.SetIconAttribute*"></a>
+
+  <h3 id="Android_App_AlertDialog_SetIconAttribute_System_Int32_" data-uid="Android.App.AlertDialog.SetIconAttribute(System.Int32)">
+  SetIconAttribute(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AlertDialog.cs/#L208"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/AlertDialog.html#setIconAttribute(int)">https://developer.android.com/reference/android/app/AlertDialog.html#setIconAttribute(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetIconAttribute(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_AlertDialog_SetInverseBackgroundForced_" data-uid="Android.App.AlertDialog.SetInverseBackgroundForced*"></a>
+
+  <h3 id="Android_App_AlertDialog_SetInverseBackgroundForced_System_Boolean_" data-uid="Android.App.AlertDialog.SetInverseBackgroundForced(System.Boolean)">
+  SetInverseBackgroundForced(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AlertDialog.cs/#L216"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/AlertDialog.html#setInverseBackgroundForced(boolean)">https://developer.android.com/reference/android/app/AlertDialog.html#setInverseBackgroundForced(boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetInverseBackgroundForced(bool arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_AlertDialog_SetMessage_" data-uid="Android.App.AlertDialog.SetMessage*"></a>
+
+  <h3 id="Android_App_AlertDialog_SetMessage_Java_Lang_CharSequence_" data-uid="Android.App.AlertDialog.SetMessage(Java.Lang.CharSequence)">
+  SetMessage(CharSequence)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AlertDialog.cs/#L224"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/AlertDialog.html#setMessage(java.lang.CharSequence)">https://developer.android.com/reference/android/app/AlertDialog.html#setMessage(java.lang.CharSequence)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMessage(CharSequence arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_AlertDialog_SetView_" data-uid="Android.App.AlertDialog.SetView*"></a>
+
+  <h3 id="Android_App_AlertDialog_SetView_Android_View_View_" data-uid="Android.App.AlertDialog.SetView(Android.View.View)">
+  SetView(View)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AlertDialog.cs/#L244"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/AlertDialog.html#setView(android.view.View)">https://developer.android.com/reference/android/app/AlertDialog.html#setView(android.view.View)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetView(View arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.View.View.html">View</a></dt>
+    <dd><p><a class="xref" href="Android.View.View.html">View</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_App_AlertDialog_SetView_" data-uid="Android.App.AlertDialog.SetView*"></a>
+
+  <h3 id="Android_App_AlertDialog_SetView_Android_View_View_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Android.App.AlertDialog.SetView(Android.View.View,System.Int32,System.Int32,System.Int32,System.Int32)">
+  SetView(View, int, int, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AlertDialog.cs/#L236"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/app/AlertDialog.html#setView(android.view.View,int,int,int,int)">https://developer.android.com/reference/android/app/AlertDialog.html#setView(android.view.View,int,int,int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetView(View arg0, int arg1, int arg2, int arg3, int arg4)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.View.View.html">View</a></dt>
+    <dd><p><a class="xref" href="Android.View.View.html">View</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg4</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/App/AllPackageClasses.cs/#L1139" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

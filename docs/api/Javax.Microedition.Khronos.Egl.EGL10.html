@@ -1,0 +1,4052 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class EGL10 | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class EGL10 | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Javax_Microedition_Khronos_Egl_EGL10.md&amp;value=---%0Auid%3A%20Javax.Microedition.Khronos.Egl.EGL10%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Javax.Microedition.Khronos.Egl.EGL10">
+
+
+
+  <h1 id="Javax_Microedition_Khronos_Egl_EGL10" data-uid="Javax.Microedition.Khronos.Egl.EGL10" class="text-break">
+Class EGL10  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Javax.html">Javax</a>.<a class="xref" href="Javax.Microedition.html">Microedition</a>.<a class="xref" href="Javax.Microedition.Khronos.html">Khronos</a>.<a class="xref" href="Javax.Microedition.Khronos.Egl.html">Egl</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class EGL10 : EGL, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IEGL10, IEGL</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Javax.Microedition.Khronos.Egl.EGL.html">EGL</a>&gt;</div>
+      <div><a class="xref" href="Javax.Microedition.Khronos.Egl.EGL.html">EGL</a></div>
+      <div><span class="xref">EGL10</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+      <div><a class="xref" href="Javax.Microedition.Khronos.Egl.IEGL10.html">IEGL10</a></div>
+      <div><a class="xref" href="Javax.Microedition.Khronos.Egl.IEGL.html">IEGL</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="Javax.Microedition.Khronos.Egl.EGL11.html">EGL11</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EGL&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EGL&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EGL&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EGL&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EGL&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EGL&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EGL&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EGL&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;EGL&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;EGL&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;EGL&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;EGL&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EGL&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EGL&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EGL&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EGL&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;EGL&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;EGL&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;EGL&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;EGL&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EGL&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EGL&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EGL&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EGL&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;EGL&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;EGL&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;EGL&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;EGL&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EGL&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EGL&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EGL&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EGL&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EGL&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EGL&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EGL&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EGL&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EGL&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EGL&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EGL&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EGL&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EGL&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EGL&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EGL&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;EGL&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;EGL&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;EGL&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;EGL&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;EGL&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;EGL&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;EGL&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10__ctor_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.#ctor*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10__ctor" data-uid="Javax.Microedition.Khronos.Egl.EGL10.#ctor">
+  EGL10()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/AllPackageClasses.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;EGL10 class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public EGL10()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10__ctor_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.#ctor*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10__ctor_System_Object___" data-uid="Javax.Microedition.Khronos.Egl.EGL10.#ctor(System.Object[])">
+  EGL10(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/AllPackageClasses.cs/#L90"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;EGL10 class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public EGL10(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_BridgeClassName_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.BridgeClassName*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_BridgeClassName" data-uid="Javax.Microedition.Khronos.Egl.EGL10.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/AllPackageClasses.cs/#L98"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EGL_ALPHA_FORMAT_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_ALPHA_FORMAT*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EGL_ALPHA_FORMAT" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_ALPHA_FORMAT">
+  EGL_ALPHA_FORMAT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_ALPHA_FORMAT">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_ALPHA_FORMAT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EGL_ALPHA_FORMAT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EGL_ALPHA_MASK_SIZE_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_ALPHA_MASK_SIZE*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EGL_ALPHA_MASK_SIZE" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_ALPHA_MASK_SIZE">
+  EGL_ALPHA_MASK_SIZE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_ALPHA_MASK_SIZE">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_ALPHA_MASK_SIZE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EGL_ALPHA_MASK_SIZE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EGL_ALPHA_SIZE_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_ALPHA_SIZE*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EGL_ALPHA_SIZE" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_ALPHA_SIZE">
+  EGL_ALPHA_SIZE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_ALPHA_SIZE">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_ALPHA_SIZE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EGL_ALPHA_SIZE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EGL_BAD_ACCESS_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_BAD_ACCESS*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EGL_BAD_ACCESS" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_BAD_ACCESS">
+  EGL_BAD_ACCESS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_BAD_ACCESS">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_BAD_ACCESS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EGL_BAD_ACCESS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EGL_BAD_ALLOC_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_BAD_ALLOC*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EGL_BAD_ALLOC" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_BAD_ALLOC">
+  EGL_BAD_ALLOC
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_BAD_ALLOC">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_BAD_ALLOC</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EGL_BAD_ALLOC { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EGL_BAD_ATTRIBUTE_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_BAD_ATTRIBUTE*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EGL_BAD_ATTRIBUTE" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_BAD_ATTRIBUTE">
+  EGL_BAD_ATTRIBUTE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_BAD_ATTRIBUTE">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_BAD_ATTRIBUTE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EGL_BAD_ATTRIBUTE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EGL_BAD_CONFIG_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_BAD_CONFIG*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EGL_BAD_CONFIG" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_BAD_CONFIG">
+  EGL_BAD_CONFIG
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_BAD_CONFIG">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_BAD_CONFIG</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EGL_BAD_CONFIG { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EGL_BAD_CONTEXT_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_BAD_CONTEXT*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EGL_BAD_CONTEXT" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_BAD_CONTEXT">
+  EGL_BAD_CONTEXT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_BAD_CONTEXT">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_BAD_CONTEXT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EGL_BAD_CONTEXT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EGL_BAD_CURRENT_SURFACE_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_BAD_CURRENT_SURFACE*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EGL_BAD_CURRENT_SURFACE" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_BAD_CURRENT_SURFACE">
+  EGL_BAD_CURRENT_SURFACE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_BAD_CURRENT_SURFACE">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_BAD_CURRENT_SURFACE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EGL_BAD_CURRENT_SURFACE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EGL_BAD_DISPLAY_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_BAD_DISPLAY*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EGL_BAD_DISPLAY" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_BAD_DISPLAY">
+  EGL_BAD_DISPLAY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_BAD_DISPLAY">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_BAD_DISPLAY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EGL_BAD_DISPLAY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EGL_BAD_MATCH_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_BAD_MATCH*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EGL_BAD_MATCH" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_BAD_MATCH">
+  EGL_BAD_MATCH
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_BAD_MATCH">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_BAD_MATCH</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EGL_BAD_MATCH { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EGL_BAD_NATIVE_PIXMAP_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_BAD_NATIVE_PIXMAP*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EGL_BAD_NATIVE_PIXMAP" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_BAD_NATIVE_PIXMAP">
+  EGL_BAD_NATIVE_PIXMAP
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_BAD_NATIVE_PIXMAP">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_BAD_NATIVE_PIXMAP</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EGL_BAD_NATIVE_PIXMAP { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EGL_BAD_NATIVE_WINDOW_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_BAD_NATIVE_WINDOW*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EGL_BAD_NATIVE_WINDOW" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_BAD_NATIVE_WINDOW">
+  EGL_BAD_NATIVE_WINDOW
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L133"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_BAD_NATIVE_WINDOW">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_BAD_NATIVE_WINDOW</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EGL_BAD_NATIVE_WINDOW { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EGL_BAD_PARAMETER_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_BAD_PARAMETER*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EGL_BAD_PARAMETER" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_BAD_PARAMETER">
+  EGL_BAD_PARAMETER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_BAD_PARAMETER">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_BAD_PARAMETER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EGL_BAD_PARAMETER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EGL_BAD_SURFACE_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_BAD_SURFACE*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EGL_BAD_SURFACE" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_BAD_SURFACE">
+  EGL_BAD_SURFACE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L145"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_BAD_SURFACE">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_BAD_SURFACE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EGL_BAD_SURFACE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EGL_BLUE_SIZE_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_BLUE_SIZE*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EGL_BLUE_SIZE" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_BLUE_SIZE">
+  EGL_BLUE_SIZE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L151"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_BLUE_SIZE">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_BLUE_SIZE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EGL_BLUE_SIZE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EGL_BUFFER_SIZE_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_BUFFER_SIZE*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EGL_BUFFER_SIZE" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_BUFFER_SIZE">
+  EGL_BUFFER_SIZE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L157"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_BUFFER_SIZE">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_BUFFER_SIZE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EGL_BUFFER_SIZE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EGL_COLORSPACE_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_COLORSPACE*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EGL_COLORSPACE" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_COLORSPACE">
+  EGL_COLORSPACE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L169"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_COLORSPACE">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_COLORSPACE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EGL_COLORSPACE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EGL_COLOR_BUFFER_TYPE_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_COLOR_BUFFER_TYPE*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EGL_COLOR_BUFFER_TYPE" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_COLOR_BUFFER_TYPE">
+  EGL_COLOR_BUFFER_TYPE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L163"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_COLOR_BUFFER_TYPE">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_COLOR_BUFFER_TYPE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EGL_COLOR_BUFFER_TYPE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EGL_CONFIG_CAVEAT_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_CONFIG_CAVEAT*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EGL_CONFIG_CAVEAT" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_CONFIG_CAVEAT">
+  EGL_CONFIG_CAVEAT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L175"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_CONFIG_CAVEAT">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_CONFIG_CAVEAT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EGL_CONFIG_CAVEAT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EGL_CONFIG_ID_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_CONFIG_ID*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EGL_CONFIG_ID" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_CONFIG_ID">
+  EGL_CONFIG_ID
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L181"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_CONFIG_ID">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_CONFIG_ID</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EGL_CONFIG_ID { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EGL_CORE_NATIVE_ENGINE_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_CORE_NATIVE_ENGINE*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EGL_CORE_NATIVE_ENGINE" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_CORE_NATIVE_ENGINE">
+  EGL_CORE_NATIVE_ENGINE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L187"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_CORE_NATIVE_ENGINE">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_CORE_NATIVE_ENGINE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EGL_CORE_NATIVE_ENGINE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EGL_DEFAULT_DISPLAY_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_DEFAULT_DISPLAY*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EGL_DEFAULT_DISPLAY" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_DEFAULT_DISPLAY">
+  EGL_DEFAULT_DISPLAY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L463"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_DEFAULT_DISPLAY">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_DEFAULT_DISPLAY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object EGL_DEFAULT_DISPLAY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EGL_DEPTH_SIZE_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_DEPTH_SIZE*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EGL_DEPTH_SIZE" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_DEPTH_SIZE">
+  EGL_DEPTH_SIZE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L193"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_DEPTH_SIZE">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_DEPTH_SIZE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EGL_DEPTH_SIZE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EGL_DONT_CARE_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_DONT_CARE*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EGL_DONT_CARE" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_DONT_CARE">
+  EGL_DONT_CARE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L199"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_DONT_CARE">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_DONT_CARE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EGL_DONT_CARE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EGL_DRAW_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_DRAW*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EGL_DRAW" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_DRAW">
+  EGL_DRAW
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L205"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_DRAW">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_DRAW</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EGL_DRAW { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EGL_EXTENSIONS_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_EXTENSIONS*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EGL_EXTENSIONS" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_EXTENSIONS">
+  EGL_EXTENSIONS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L211"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_EXTENSIONS">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_EXTENSIONS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EGL_EXTENSIONS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EGL_GREEN_SIZE_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_GREEN_SIZE*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EGL_GREEN_SIZE" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_GREEN_SIZE">
+  EGL_GREEN_SIZE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L217"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_GREEN_SIZE">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_GREEN_SIZE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EGL_GREEN_SIZE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EGL_HEIGHT_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_HEIGHT*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EGL_HEIGHT" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_HEIGHT">
+  EGL_HEIGHT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L223"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_HEIGHT">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_HEIGHT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EGL_HEIGHT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EGL_HORIZONTAL_RESOLUTION_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_HORIZONTAL_RESOLUTION*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EGL_HORIZONTAL_RESOLUTION" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_HORIZONTAL_RESOLUTION">
+  EGL_HORIZONTAL_RESOLUTION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L229"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_HORIZONTAL_RESOLUTION">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_HORIZONTAL_RESOLUTION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EGL_HORIZONTAL_RESOLUTION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EGL_LARGEST_PBUFFER_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_LARGEST_PBUFFER*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EGL_LARGEST_PBUFFER" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_LARGEST_PBUFFER">
+  EGL_LARGEST_PBUFFER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L235"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_LARGEST_PBUFFER">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_LARGEST_PBUFFER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EGL_LARGEST_PBUFFER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EGL_LEVEL_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_LEVEL*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EGL_LEVEL" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_LEVEL">
+  EGL_LEVEL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L241"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_LEVEL">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_LEVEL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EGL_LEVEL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EGL_LUMINANCE_BUFFER_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_LUMINANCE_BUFFER*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EGL_LUMINANCE_BUFFER" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_LUMINANCE_BUFFER">
+  EGL_LUMINANCE_BUFFER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L247"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_LUMINANCE_BUFFER">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_LUMINANCE_BUFFER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EGL_LUMINANCE_BUFFER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EGL_LUMINANCE_SIZE_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_LUMINANCE_SIZE*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EGL_LUMINANCE_SIZE" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_LUMINANCE_SIZE">
+  EGL_LUMINANCE_SIZE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L253"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_LUMINANCE_SIZE">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_LUMINANCE_SIZE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EGL_LUMINANCE_SIZE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EGL_MAX_PBUFFER_HEIGHT_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_MAX_PBUFFER_HEIGHT*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EGL_MAX_PBUFFER_HEIGHT" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_MAX_PBUFFER_HEIGHT">
+  EGL_MAX_PBUFFER_HEIGHT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L259"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_MAX_PBUFFER_HEIGHT">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_MAX_PBUFFER_HEIGHT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EGL_MAX_PBUFFER_HEIGHT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EGL_MAX_PBUFFER_PIXELS_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_MAX_PBUFFER_PIXELS*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EGL_MAX_PBUFFER_PIXELS" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_MAX_PBUFFER_PIXELS">
+  EGL_MAX_PBUFFER_PIXELS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L265"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_MAX_PBUFFER_PIXELS">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_MAX_PBUFFER_PIXELS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EGL_MAX_PBUFFER_PIXELS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EGL_MAX_PBUFFER_WIDTH_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_MAX_PBUFFER_WIDTH*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EGL_MAX_PBUFFER_WIDTH" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_MAX_PBUFFER_WIDTH">
+  EGL_MAX_PBUFFER_WIDTH
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L271"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_MAX_PBUFFER_WIDTH">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_MAX_PBUFFER_WIDTH</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EGL_MAX_PBUFFER_WIDTH { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EGL_NATIVE_RENDERABLE_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_NATIVE_RENDERABLE*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EGL_NATIVE_RENDERABLE" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_NATIVE_RENDERABLE">
+  EGL_NATIVE_RENDERABLE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L277"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_NATIVE_RENDERABLE">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_NATIVE_RENDERABLE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EGL_NATIVE_RENDERABLE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EGL_NATIVE_VISUAL_ID_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_NATIVE_VISUAL_ID*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EGL_NATIVE_VISUAL_ID" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_NATIVE_VISUAL_ID">
+  EGL_NATIVE_VISUAL_ID
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L283"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_NATIVE_VISUAL_ID">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_NATIVE_VISUAL_ID</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EGL_NATIVE_VISUAL_ID { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EGL_NATIVE_VISUAL_TYPE_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_NATIVE_VISUAL_TYPE*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EGL_NATIVE_VISUAL_TYPE" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_NATIVE_VISUAL_TYPE">
+  EGL_NATIVE_VISUAL_TYPE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L289"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_NATIVE_VISUAL_TYPE">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_NATIVE_VISUAL_TYPE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EGL_NATIVE_VISUAL_TYPE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EGL_NONE_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_NONE*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EGL_NONE" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_NONE">
+  EGL_NONE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L301"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_NONE">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_NONE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EGL_NONE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EGL_NON_CONFORMANT_CONFIG_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_NON_CONFORMANT_CONFIG*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EGL_NON_CONFORMANT_CONFIG" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_NON_CONFORMANT_CONFIG">
+  EGL_NON_CONFORMANT_CONFIG
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L295"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_NON_CONFORMANT_CONFIG">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_NON_CONFORMANT_CONFIG</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EGL_NON_CONFORMANT_CONFIG { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EGL_NOT_INITIALIZED_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_NOT_INITIALIZED*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EGL_NOT_INITIALIZED" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_NOT_INITIALIZED">
+  EGL_NOT_INITIALIZED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L307"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_NOT_INITIALIZED">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_NOT_INITIALIZED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EGL_NOT_INITIALIZED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EGL_NO_CONTEXT_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_NO_CONTEXT*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EGL_NO_CONTEXT" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_NO_CONTEXT">
+  EGL_NO_CONTEXT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L469"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_NO_CONTEXT">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_NO_CONTEXT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static EGLContext EGL_NO_CONTEXT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Microedition.Khronos.Egl.EGLContext.html">EGLContext</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EGL_NO_DISPLAY_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_NO_DISPLAY*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EGL_NO_DISPLAY" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_NO_DISPLAY">
+  EGL_NO_DISPLAY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L475"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_NO_DISPLAY">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_NO_DISPLAY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static EGLDisplay EGL_NO_DISPLAY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Microedition.Khronos.Egl.EGLDisplay.html">EGLDisplay</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EGL_NO_SURFACE_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_NO_SURFACE*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EGL_NO_SURFACE" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_NO_SURFACE">
+  EGL_NO_SURFACE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L481"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_NO_SURFACE">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_NO_SURFACE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static EGLSurface EGL_NO_SURFACE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Microedition.Khronos.Egl.EGLSurface.html">EGLSurface</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EGL_PBUFFER_BIT_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_PBUFFER_BIT*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EGL_PBUFFER_BIT" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_PBUFFER_BIT">
+  EGL_PBUFFER_BIT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L313"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_PBUFFER_BIT">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_PBUFFER_BIT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EGL_PBUFFER_BIT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EGL_PIXEL_ASPECT_RATIO_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_PIXEL_ASPECT_RATIO*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EGL_PIXEL_ASPECT_RATIO" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_PIXEL_ASPECT_RATIO">
+  EGL_PIXEL_ASPECT_RATIO
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L319"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_PIXEL_ASPECT_RATIO">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_PIXEL_ASPECT_RATIO</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EGL_PIXEL_ASPECT_RATIO { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EGL_PIXMAP_BIT_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_PIXMAP_BIT*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EGL_PIXMAP_BIT" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_PIXMAP_BIT">
+  EGL_PIXMAP_BIT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L325"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_PIXMAP_BIT">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_PIXMAP_BIT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EGL_PIXMAP_BIT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EGL_READ_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_READ*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EGL_READ" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_READ">
+  EGL_READ
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L331"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_READ">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_READ</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EGL_READ { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EGL_RED_SIZE_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_RED_SIZE*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EGL_RED_SIZE" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_RED_SIZE">
+  EGL_RED_SIZE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L337"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_RED_SIZE">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_RED_SIZE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EGL_RED_SIZE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EGL_RENDERABLE_TYPE_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_RENDERABLE_TYPE*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EGL_RENDERABLE_TYPE" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_RENDERABLE_TYPE">
+  EGL_RENDERABLE_TYPE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L349"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_RENDERABLE_TYPE">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_RENDERABLE_TYPE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EGL_RENDERABLE_TYPE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EGL_RENDER_BUFFER_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_RENDER_BUFFER*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EGL_RENDER_BUFFER" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_RENDER_BUFFER">
+  EGL_RENDER_BUFFER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L343"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_RENDER_BUFFER">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_RENDER_BUFFER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EGL_RENDER_BUFFER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EGL_RGB_BUFFER_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_RGB_BUFFER*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EGL_RGB_BUFFER" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_RGB_BUFFER">
+  EGL_RGB_BUFFER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L355"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_RGB_BUFFER">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_RGB_BUFFER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EGL_RGB_BUFFER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EGL_SAMPLES_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_SAMPLES*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EGL_SAMPLES" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_SAMPLES">
+  EGL_SAMPLES
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L367"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_SAMPLES">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_SAMPLES</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EGL_SAMPLES { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EGL_SAMPLE_BUFFERS_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_SAMPLE_BUFFERS*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EGL_SAMPLE_BUFFERS" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_SAMPLE_BUFFERS">
+  EGL_SAMPLE_BUFFERS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L361"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_SAMPLE_BUFFERS">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_SAMPLE_BUFFERS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EGL_SAMPLE_BUFFERS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EGL_SINGLE_BUFFER_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_SINGLE_BUFFER*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EGL_SINGLE_BUFFER" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_SINGLE_BUFFER">
+  EGL_SINGLE_BUFFER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L373"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_SINGLE_BUFFER">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_SINGLE_BUFFER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EGL_SINGLE_BUFFER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EGL_SLOW_CONFIG_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_SLOW_CONFIG*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EGL_SLOW_CONFIG" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_SLOW_CONFIG">
+  EGL_SLOW_CONFIG
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L379"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_SLOW_CONFIG">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_SLOW_CONFIG</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EGL_SLOW_CONFIG { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EGL_STENCIL_SIZE_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_STENCIL_SIZE*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EGL_STENCIL_SIZE" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_STENCIL_SIZE">
+  EGL_STENCIL_SIZE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L385"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_STENCIL_SIZE">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_STENCIL_SIZE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EGL_STENCIL_SIZE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EGL_SUCCESS_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_SUCCESS*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EGL_SUCCESS" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_SUCCESS">
+  EGL_SUCCESS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L391"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_SUCCESS">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_SUCCESS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EGL_SUCCESS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EGL_SURFACE_TYPE_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_SURFACE_TYPE*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EGL_SURFACE_TYPE" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_SURFACE_TYPE">
+  EGL_SURFACE_TYPE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L397"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_SURFACE_TYPE">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_SURFACE_TYPE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EGL_SURFACE_TYPE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EGL_TRANSPARENT_BLUE_VALUE_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_TRANSPARENT_BLUE_VALUE*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EGL_TRANSPARENT_BLUE_VALUE" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_TRANSPARENT_BLUE_VALUE">
+  EGL_TRANSPARENT_BLUE_VALUE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L403"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_TRANSPARENT_BLUE_VALUE">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_TRANSPARENT_BLUE_VALUE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EGL_TRANSPARENT_BLUE_VALUE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EGL_TRANSPARENT_GREEN_VALUE_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_TRANSPARENT_GREEN_VALUE*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EGL_TRANSPARENT_GREEN_VALUE" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_TRANSPARENT_GREEN_VALUE">
+  EGL_TRANSPARENT_GREEN_VALUE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L409"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_TRANSPARENT_GREEN_VALUE">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_TRANSPARENT_GREEN_VALUE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EGL_TRANSPARENT_GREEN_VALUE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EGL_TRANSPARENT_RED_VALUE_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_TRANSPARENT_RED_VALUE*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EGL_TRANSPARENT_RED_VALUE" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_TRANSPARENT_RED_VALUE">
+  EGL_TRANSPARENT_RED_VALUE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L415"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_TRANSPARENT_RED_VALUE">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_TRANSPARENT_RED_VALUE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EGL_TRANSPARENT_RED_VALUE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EGL_TRANSPARENT_RGB_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_TRANSPARENT_RGB*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EGL_TRANSPARENT_RGB" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_TRANSPARENT_RGB">
+  EGL_TRANSPARENT_RGB
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L421"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_TRANSPARENT_RGB">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_TRANSPARENT_RGB</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EGL_TRANSPARENT_RGB { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EGL_TRANSPARENT_TYPE_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_TRANSPARENT_TYPE*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EGL_TRANSPARENT_TYPE" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_TRANSPARENT_TYPE">
+  EGL_TRANSPARENT_TYPE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L427"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_TRANSPARENT_TYPE">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_TRANSPARENT_TYPE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EGL_TRANSPARENT_TYPE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EGL_VENDOR_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_VENDOR*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EGL_VENDOR" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_VENDOR">
+  EGL_VENDOR
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L433"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_VENDOR">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_VENDOR</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EGL_VENDOR { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EGL_VERSION_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_VERSION*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EGL_VERSION" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_VERSION">
+  EGL_VERSION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L439"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_VERSION">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_VERSION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EGL_VERSION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EGL_VERTICAL_RESOLUTION_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_VERTICAL_RESOLUTION*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EGL_VERTICAL_RESOLUTION" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_VERTICAL_RESOLUTION">
+  EGL_VERTICAL_RESOLUTION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L445"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_VERTICAL_RESOLUTION">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_VERTICAL_RESOLUTION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EGL_VERTICAL_RESOLUTION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EGL_WIDTH_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_WIDTH*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EGL_WIDTH" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_WIDTH">
+  EGL_WIDTH
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L451"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_WIDTH">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_WIDTH</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EGL_WIDTH { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EGL_WINDOW_BIT_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_WINDOW_BIT*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EGL_WINDOW_BIT" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EGL_WINDOW_BIT">
+  EGL_WINDOW_BIT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L457"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_WINDOW_BIT">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#EGL_WINDOW_BIT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EGL_WINDOW_BIT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_IsBridgeAbstract_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.IsBridgeAbstract*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_IsBridgeAbstract" data-uid="Javax.Microedition.Khronos.Egl.EGL10.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/AllPackageClasses.cs/#L102"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_IsBridgeCloseable_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.IsBridgeCloseable*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_IsBridgeCloseable" data-uid="Javax.Microedition.Khronos.Egl.EGL10.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/AllPackageClasses.cs/#L106"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_IsBridgeInterface_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.IsBridgeInterface*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_IsBridgeInterface" data-uid="Javax.Microedition.Khronos.Egl.EGL10.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/AllPackageClasses.cs/#L110"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_IsBridgeStatic_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.IsBridgeStatic*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_IsBridgeStatic" data-uid="Javax.Microedition.Khronos.Egl.EGL10.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/AllPackageClasses.cs/#L114"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EglChooseConfig_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EglChooseConfig*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EglChooseConfig_Javax_Microedition_Khronos_Egl_EGLDisplay_System_Int32___Javax_Microedition_Khronos_Egl_EGLConfig___System_Int32_System_Int32___" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EglChooseConfig(Javax.Microedition.Khronos.Egl.EGLDisplay,System.Int32[],Javax.Microedition.Khronos.Egl.EGLConfig[],System.Int32,System.Int32[])">
+  EglChooseConfig(EGLDisplay, int[], EGLConfig[], int, int[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L501"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglChooseConfig(javax.microedition.khronos.egl.EGLDisplay,int[],javax.microedition.khronos.egl.EGLConfig[],int,int[])">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglChooseConfig(javax.microedition.khronos.egl.EGLDisplay,int[],javax.microedition.khronos.egl.EGLConfig[],int,int[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EglChooseConfig(EGLDisplay arg0, int[] arg1, EGLConfig[] arg2, int arg3, int[] arg4)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Microedition.Khronos.Egl.EGLDisplay.html">EGLDisplay</a></dt>
+    <dd><p><a class="xref" href="Javax.Microedition.Khronos.Egl.EGLDisplay.html">EGLDisplay</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Javax.Microedition.Khronos.Egl.EGLConfig.html">EGLConfig</a>[]</dt>
+    <dd><p><a class="xref" href="Javax.Microedition.Khronos.Egl.EGLConfig.html">EGLConfig</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg4</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EglCopyBuffers_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EglCopyBuffers*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EglCopyBuffers_Javax_Microedition_Khronos_Egl_EGLDisplay_Javax_Microedition_Khronos_Egl_EGLSurface_System_Object_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EglCopyBuffers(Javax.Microedition.Khronos.Egl.EGLDisplay,Javax.Microedition.Khronos.Egl.EGLSurface,System.Object)">
+  EglCopyBuffers(EGLDisplay, EGLSurface, object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L512"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglCopyBuffers(javax.microedition.khronos.egl.EGLDisplay,javax.microedition.khronos.egl.EGLSurface,java.lang.Object)">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglCopyBuffers(javax.microedition.khronos.egl.EGLDisplay,javax.microedition.khronos.egl.EGLSurface,java.lang.Object)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EglCopyBuffers(EGLDisplay arg0, EGLSurface arg1, object arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Microedition.Khronos.Egl.EGLDisplay.html">EGLDisplay</a></dt>
+    <dd><p><a class="xref" href="Javax.Microedition.Khronos.Egl.EGLDisplay.html">EGLDisplay</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Javax.Microedition.Khronos.Egl.EGLSurface.html">EGLSurface</a></dt>
+    <dd><p><a class="xref" href="Javax.Microedition.Khronos.Egl.EGLSurface.html">EGLSurface</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EglCreateContext_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EglCreateContext*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EglCreateContext_Javax_Microedition_Khronos_Egl_EGLDisplay_Javax_Microedition_Khronos_Egl_EGLConfig_Javax_Microedition_Khronos_Egl_EGLContext_System_Int32___" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EglCreateContext(Javax.Microedition.Khronos.Egl.EGLDisplay,Javax.Microedition.Khronos.Egl.EGLConfig,Javax.Microedition.Khronos.Egl.EGLContext,System.Int32[])">
+  EglCreateContext(EGLDisplay, EGLConfig, EGLContext, int[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L669"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglCreateContext(javax.microedition.khronos.egl.EGLDisplay,javax.microedition.khronos.egl.EGLConfig,javax.microedition.khronos.egl.EGLContext,int[])">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglCreateContext(javax.microedition.khronos.egl.EGLDisplay,javax.microedition.khronos.egl.EGLConfig,javax.microedition.khronos.egl.EGLContext,int[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EGLContext EglCreateContext(EGLDisplay arg0, EGLConfig arg1, EGLContext arg2, int[] arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Microedition.Khronos.Egl.EGLDisplay.html">EGLDisplay</a></dt>
+    <dd><p><a class="xref" href="Javax.Microedition.Khronos.Egl.EGLDisplay.html">EGLDisplay</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Javax.Microedition.Khronos.Egl.EGLConfig.html">EGLConfig</a></dt>
+    <dd><p><a class="xref" href="Javax.Microedition.Khronos.Egl.EGLConfig.html">EGLConfig</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Javax.Microedition.Khronos.Egl.EGLContext.html">EGLContext</a></dt>
+    <dd><p><a class="xref" href="Javax.Microedition.Khronos.Egl.EGLContext.html">EGLContext</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Microedition.Khronos.Egl.EGLContext.html">EGLContext</a></dt>
+    <dd><p><a class="xref" href="Javax.Microedition.Khronos.Egl.EGLContext.html">EGLContext</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EglCreatePbufferSurface_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EglCreatePbufferSurface*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EglCreatePbufferSurface_Javax_Microedition_Khronos_Egl_EGLDisplay_Javax_Microedition_Khronos_Egl_EGLConfig_System_Int32___" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EglCreatePbufferSurface(Javax.Microedition.Khronos.Egl.EGLDisplay,Javax.Microedition.Khronos.Egl.EGLConfig,System.Int32[])">
+  EglCreatePbufferSurface(EGLDisplay, EGLConfig, int[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L705"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglCreatePbufferSurface(javax.microedition.khronos.egl.EGLDisplay,javax.microedition.khronos.egl.EGLConfig,int[])">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglCreatePbufferSurface(javax.microedition.khronos.egl.EGLDisplay,javax.microedition.khronos.egl.EGLConfig,int[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EGLSurface EglCreatePbufferSurface(EGLDisplay arg0, EGLConfig arg1, int[] arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Microedition.Khronos.Egl.EGLDisplay.html">EGLDisplay</a></dt>
+    <dd><p><a class="xref" href="Javax.Microedition.Khronos.Egl.EGLDisplay.html">EGLDisplay</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Javax.Microedition.Khronos.Egl.EGLConfig.html">EGLConfig</a></dt>
+    <dd><p><a class="xref" href="Javax.Microedition.Khronos.Egl.EGLConfig.html">EGLConfig</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Microedition.Khronos.Egl.EGLSurface.html">EGLSurface</a></dt>
+    <dd><p><a class="xref" href="Javax.Microedition.Khronos.Egl.EGLSurface.html">EGLSurface</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EglCreatePixmapSurface_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EglCreatePixmapSurface*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EglCreatePixmapSurface_Javax_Microedition_Khronos_Egl_EGLDisplay_Javax_Microedition_Khronos_Egl_EGLConfig_System_Object_System_Int32___" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EglCreatePixmapSurface(Javax.Microedition.Khronos.Egl.EGLDisplay,Javax.Microedition.Khronos.Egl.EGLConfig,System.Object,System.Int32[])">
+  EglCreatePixmapSurface(EGLDisplay, EGLConfig, object, int[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L717"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglCreatePixmapSurface(javax.microedition.khronos.egl.EGLDisplay,javax.microedition.khronos.egl.EGLConfig,java.lang.Object,int[])">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglCreatePixmapSurface(javax.microedition.khronos.egl.EGLDisplay,javax.microedition.khronos.egl.EGLConfig,java.lang.Object,int[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public EGLSurface EglCreatePixmapSurface(EGLDisplay arg0, EGLConfig arg1, object arg2, int[] arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Microedition.Khronos.Egl.EGLDisplay.html">EGLDisplay</a></dt>
+    <dd><p><a class="xref" href="Javax.Microedition.Khronos.Egl.EGLDisplay.html">EGLDisplay</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Javax.Microedition.Khronos.Egl.EGLConfig.html">EGLConfig</a></dt>
+    <dd><p><a class="xref" href="Javax.Microedition.Khronos.Egl.EGLConfig.html">EGLConfig</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Microedition.Khronos.Egl.EGLSurface.html">EGLSurface</a></dt>
+    <dd><p><a class="xref" href="Javax.Microedition.Khronos.Egl.EGLSurface.html">EGLSurface</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EglCreateWindowSurface_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EglCreateWindowSurface*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EglCreateWindowSurface_Javax_Microedition_Khronos_Egl_EGLDisplay_Javax_Microedition_Khronos_Egl_EGLConfig_System_Object_System_Int32___" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EglCreateWindowSurface(Javax.Microedition.Khronos.Egl.EGLDisplay,Javax.Microedition.Khronos.Egl.EGLConfig,System.Object,System.Int32[])">
+  EglCreateWindowSurface(EGLDisplay, EGLConfig, object, int[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L730"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglCreateWindowSurface(javax.microedition.khronos.egl.EGLDisplay,javax.microedition.khronos.egl.EGLConfig,java.lang.Object,int[])">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglCreateWindowSurface(javax.microedition.khronos.egl.EGLDisplay,javax.microedition.khronos.egl.EGLConfig,java.lang.Object,int[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EGLSurface EglCreateWindowSurface(EGLDisplay arg0, EGLConfig arg1, object arg2, int[] arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Microedition.Khronos.Egl.EGLDisplay.html">EGLDisplay</a></dt>
+    <dd><p><a class="xref" href="Javax.Microedition.Khronos.Egl.EGLDisplay.html">EGLDisplay</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Javax.Microedition.Khronos.Egl.EGLConfig.html">EGLConfig</a></dt>
+    <dd><p><a class="xref" href="Javax.Microedition.Khronos.Egl.EGLConfig.html">EGLConfig</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Microedition.Khronos.Egl.EGLSurface.html">EGLSurface</a></dt>
+    <dd><p><a class="xref" href="Javax.Microedition.Khronos.Egl.EGLSurface.html">EGLSurface</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EglDestroyContext_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EglDestroyContext*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EglDestroyContext_Javax_Microedition_Khronos_Egl_EGLDisplay_Javax_Microedition_Khronos_Egl_EGLContext_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EglDestroyContext(Javax.Microedition.Khronos.Egl.EGLDisplay,Javax.Microedition.Khronos.Egl.EGLContext)">
+  EglDestroyContext(EGLDisplay, EGLContext)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L522"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglDestroyContext(javax.microedition.khronos.egl.EGLDisplay,javax.microedition.khronos.egl.EGLContext)">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglDestroyContext(javax.microedition.khronos.egl.EGLDisplay,javax.microedition.khronos.egl.EGLContext)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EglDestroyContext(EGLDisplay arg0, EGLContext arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Microedition.Khronos.Egl.EGLDisplay.html">EGLDisplay</a></dt>
+    <dd><p><a class="xref" href="Javax.Microedition.Khronos.Egl.EGLDisplay.html">EGLDisplay</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Javax.Microedition.Khronos.Egl.EGLContext.html">EGLContext</a></dt>
+    <dd><p><a class="xref" href="Javax.Microedition.Khronos.Egl.EGLContext.html">EGLContext</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EglDestroySurface_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EglDestroySurface*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EglDestroySurface_Javax_Microedition_Khronos_Egl_EGLDisplay_Javax_Microedition_Khronos_Egl_EGLSurface_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EglDestroySurface(Javax.Microedition.Khronos.Egl.EGLDisplay,Javax.Microedition.Khronos.Egl.EGLSurface)">
+  EglDestroySurface(EGLDisplay, EGLSurface)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L532"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglDestroySurface(javax.microedition.khronos.egl.EGLDisplay,javax.microedition.khronos.egl.EGLSurface)">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglDestroySurface(javax.microedition.khronos.egl.EGLDisplay,javax.microedition.khronos.egl.EGLSurface)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EglDestroySurface(EGLDisplay arg0, EGLSurface arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Microedition.Khronos.Egl.EGLDisplay.html">EGLDisplay</a></dt>
+    <dd><p><a class="xref" href="Javax.Microedition.Khronos.Egl.EGLDisplay.html">EGLDisplay</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Javax.Microedition.Khronos.Egl.EGLSurface.html">EGLSurface</a></dt>
+    <dd><p><a class="xref" href="Javax.Microedition.Khronos.Egl.EGLSurface.html">EGLSurface</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EglGetConfigAttrib_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EglGetConfigAttrib*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EglGetConfigAttrib_Javax_Microedition_Khronos_Egl_EGLDisplay_Javax_Microedition_Khronos_Egl_EGLConfig_System_Int32_System_Int32___" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EglGetConfigAttrib(Javax.Microedition.Khronos.Egl.EGLDisplay,Javax.Microedition.Khronos.Egl.EGLConfig,System.Int32,System.Int32[])">
+  EglGetConfigAttrib(EGLDisplay, EGLConfig, int, int[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L544"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglGetConfigAttrib(javax.microedition.khronos.egl.EGLDisplay,javax.microedition.khronos.egl.EGLConfig,int,int[])">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglGetConfigAttrib(javax.microedition.khronos.egl.EGLDisplay,javax.microedition.khronos.egl.EGLConfig,int,int[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EglGetConfigAttrib(EGLDisplay arg0, EGLConfig arg1, int arg2, int[] arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Microedition.Khronos.Egl.EGLDisplay.html">EGLDisplay</a></dt>
+    <dd><p><a class="xref" href="Javax.Microedition.Khronos.Egl.EGLDisplay.html">EGLDisplay</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Javax.Microedition.Khronos.Egl.EGLConfig.html">EGLConfig</a></dt>
+    <dd><p><a class="xref" href="Javax.Microedition.Khronos.Egl.EGLConfig.html">EGLConfig</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EglGetConfigs_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EglGetConfigs*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EglGetConfigs_Javax_Microedition_Khronos_Egl_EGLDisplay_Javax_Microedition_Khronos_Egl_EGLConfig___System_Int32_System_Int32___" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EglGetConfigs(Javax.Microedition.Khronos.Egl.EGLDisplay,Javax.Microedition.Khronos.Egl.EGLConfig[],System.Int32,System.Int32[])">
+  EglGetConfigs(EGLDisplay, EGLConfig[], int, int[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L556"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglGetConfigs(javax.microedition.khronos.egl.EGLDisplay,javax.microedition.khronos.egl.EGLConfig[],int,int[])">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglGetConfigs(javax.microedition.khronos.egl.EGLDisplay,javax.microedition.khronos.egl.EGLConfig[],int,int[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EglGetConfigs(EGLDisplay arg0, EGLConfig[] arg1, int arg2, int[] arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Microedition.Khronos.Egl.EGLDisplay.html">EGLDisplay</a></dt>
+    <dd><p><a class="xref" href="Javax.Microedition.Khronos.Egl.EGLDisplay.html">EGLDisplay</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Javax.Microedition.Khronos.Egl.EGLConfig.html">EGLConfig</a>[]</dt>
+    <dd><p><a class="xref" href="Javax.Microedition.Khronos.Egl.EGLConfig.html">EGLConfig</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EglGetCurrentContext_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EglGetCurrentContext*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EglGetCurrentContext" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EglGetCurrentContext">
+  EglGetCurrentContext()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L677"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglGetCurrentContext()">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglGetCurrentContext()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EGLContext EglGetCurrentContext()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Microedition.Khronos.Egl.EGLContext.html">EGLContext</a></dt>
+    <dd><p><a class="xref" href="Javax.Microedition.Khronos.Egl.EGLContext.html">EGLContext</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EglGetCurrentDisplay_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EglGetCurrentDisplay*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EglGetCurrentDisplay" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EglGetCurrentDisplay">
+  EglGetCurrentDisplay()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L685"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglGetCurrentDisplay()">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglGetCurrentDisplay()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EGLDisplay EglGetCurrentDisplay()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Microedition.Khronos.Egl.EGLDisplay.html">EGLDisplay</a></dt>
+    <dd><p><a class="xref" href="Javax.Microedition.Khronos.Egl.EGLDisplay.html">EGLDisplay</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EglGetCurrentSurface_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EglGetCurrentSurface*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EglGetCurrentSurface_System_Int32_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EglGetCurrentSurface(System.Int32)">
+  EglGetCurrentSurface(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L739"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglGetCurrentSurface(int)">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglGetCurrentSurface(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EGLSurface EglGetCurrentSurface(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Microedition.Khronos.Egl.EGLSurface.html">EGLSurface</a></dt>
+    <dd><p><a class="xref" href="Javax.Microedition.Khronos.Egl.EGLSurface.html">EGLSurface</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EglGetDisplay_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EglGetDisplay*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EglGetDisplay_System_Object_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EglGetDisplay(System.Object)">
+  EglGetDisplay(object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L694"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglGetDisplay(java.lang.Object)">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglGetDisplay(java.lang.Object)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EGLDisplay EglGetDisplay(object arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Microedition.Khronos.Egl.EGLDisplay.html">EGLDisplay</a></dt>
+    <dd><p><a class="xref" href="Javax.Microedition.Khronos.Egl.EGLDisplay.html">EGLDisplay</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EglGetError_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EglGetError*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EglGetError" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EglGetError">
+  EglGetError()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L647"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglGetError()">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglGetError()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int EglGetError()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EglInitialize_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EglInitialize*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EglInitialize_Javax_Microedition_Khronos_Egl_EGLDisplay_System_Int32___" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EglInitialize(Javax.Microedition.Khronos.Egl.EGLDisplay,System.Int32[])">
+  EglInitialize(EGLDisplay, int[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L566"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglInitialize(javax.microedition.khronos.egl.EGLDisplay,int[])">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglInitialize(javax.microedition.khronos.egl.EGLDisplay,int[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EglInitialize(EGLDisplay arg0, int[] arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Microedition.Khronos.Egl.EGLDisplay.html">EGLDisplay</a></dt>
+    <dd><p><a class="xref" href="Javax.Microedition.Khronos.Egl.EGLDisplay.html">EGLDisplay</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EglMakeCurrent_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EglMakeCurrent*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EglMakeCurrent_Javax_Microedition_Khronos_Egl_EGLDisplay_Javax_Microedition_Khronos_Egl_EGLSurface_Javax_Microedition_Khronos_Egl_EGLSurface_Javax_Microedition_Khronos_Egl_EGLContext_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EglMakeCurrent(Javax.Microedition.Khronos.Egl.EGLDisplay,Javax.Microedition.Khronos.Egl.EGLSurface,Javax.Microedition.Khronos.Egl.EGLSurface,Javax.Microedition.Khronos.Egl.EGLContext)">
+  EglMakeCurrent(EGLDisplay, EGLSurface, EGLSurface, EGLContext)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L578"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglMakeCurrent(javax.microedition.khronos.egl.EGLDisplay,javax.microedition.khronos.egl.EGLSurface,javax.microedition.khronos.egl.EGLSurface,javax.microedition.khronos.egl.EGLContext)">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglMakeCurrent(javax.microedition.khronos.egl.EGLDisplay,javax.microedition.khronos.egl.EGLSurface,javax.microedition.khronos.egl.EGLSurface,javax.microedition.khronos.egl.EGLContext)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EglMakeCurrent(EGLDisplay arg0, EGLSurface arg1, EGLSurface arg2, EGLContext arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Microedition.Khronos.Egl.EGLDisplay.html">EGLDisplay</a></dt>
+    <dd><p><a class="xref" href="Javax.Microedition.Khronos.Egl.EGLDisplay.html">EGLDisplay</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Javax.Microedition.Khronos.Egl.EGLSurface.html">EGLSurface</a></dt>
+    <dd><p><a class="xref" href="Javax.Microedition.Khronos.Egl.EGLSurface.html">EGLSurface</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Javax.Microedition.Khronos.Egl.EGLSurface.html">EGLSurface</a></dt>
+    <dd><p><a class="xref" href="Javax.Microedition.Khronos.Egl.EGLSurface.html">EGLSurface</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Javax.Microedition.Khronos.Egl.EGLContext.html">EGLContext</a></dt>
+    <dd><p><a class="xref" href="Javax.Microedition.Khronos.Egl.EGLContext.html">EGLContext</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EglQueryContext_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EglQueryContext*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EglQueryContext_Javax_Microedition_Khronos_Egl_EGLDisplay_Javax_Microedition_Khronos_Egl_EGLContext_System_Int32_System_Int32___" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EglQueryContext(Javax.Microedition.Khronos.Egl.EGLDisplay,Javax.Microedition.Khronos.Egl.EGLContext,System.Int32,System.Int32[])">
+  EglQueryContext(EGLDisplay, EGLContext, int, int[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L590"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglQueryContext(javax.microedition.khronos.egl.EGLDisplay,javax.microedition.khronos.egl.EGLContext,int,int[])">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglQueryContext(javax.microedition.khronos.egl.EGLDisplay,javax.microedition.khronos.egl.EGLContext,int,int[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EglQueryContext(EGLDisplay arg0, EGLContext arg1, int arg2, int[] arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Microedition.Khronos.Egl.EGLDisplay.html">EGLDisplay</a></dt>
+    <dd><p><a class="xref" href="Javax.Microedition.Khronos.Egl.EGLDisplay.html">EGLDisplay</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Javax.Microedition.Khronos.Egl.EGLContext.html">EGLContext</a></dt>
+    <dd><p><a class="xref" href="Javax.Microedition.Khronos.Egl.EGLContext.html">EGLContext</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EglQueryString_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EglQueryString*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EglQueryString_Javax_Microedition_Khronos_Egl_EGLDisplay_System_Int32_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EglQueryString(Javax.Microedition.Khronos.Egl.EGLDisplay,System.Int32)">
+  EglQueryString(EGLDisplay, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L657"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglQueryString(javax.microedition.khronos.egl.EGLDisplay,int)">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglQueryString(javax.microedition.khronos.egl.EGLDisplay,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String EglQueryString(EGLDisplay arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Microedition.Khronos.Egl.EGLDisplay.html">EGLDisplay</a></dt>
+    <dd><p><a class="xref" href="Javax.Microedition.Khronos.Egl.EGLDisplay.html">EGLDisplay</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EglQuerySurface_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EglQuerySurface*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EglQuerySurface_Javax_Microedition_Khronos_Egl_EGLDisplay_Javax_Microedition_Khronos_Egl_EGLSurface_System_Int32_System_Int32___" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EglQuerySurface(Javax.Microedition.Khronos.Egl.EGLDisplay,Javax.Microedition.Khronos.Egl.EGLSurface,System.Int32,System.Int32[])">
+  EglQuerySurface(EGLDisplay, EGLSurface, int, int[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L602"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglQuerySurface(javax.microedition.khronos.egl.EGLDisplay,javax.microedition.khronos.egl.EGLSurface,int,int[])">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglQuerySurface(javax.microedition.khronos.egl.EGLDisplay,javax.microedition.khronos.egl.EGLSurface,int,int[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EglQuerySurface(EGLDisplay arg0, EGLSurface arg1, int arg2, int[] arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Microedition.Khronos.Egl.EGLDisplay.html">EGLDisplay</a></dt>
+    <dd><p><a class="xref" href="Javax.Microedition.Khronos.Egl.EGLDisplay.html">EGLDisplay</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Javax.Microedition.Khronos.Egl.EGLSurface.html">EGLSurface</a></dt>
+    <dd><p><a class="xref" href="Javax.Microedition.Khronos.Egl.EGLSurface.html">EGLSurface</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EglSwapBuffers_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EglSwapBuffers*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EglSwapBuffers_Javax_Microedition_Khronos_Egl_EGLDisplay_Javax_Microedition_Khronos_Egl_EGLSurface_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EglSwapBuffers(Javax.Microedition.Khronos.Egl.EGLDisplay,Javax.Microedition.Khronos.Egl.EGLSurface)">
+  EglSwapBuffers(EGLDisplay, EGLSurface)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L612"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglSwapBuffers(javax.microedition.khronos.egl.EGLDisplay,javax.microedition.khronos.egl.EGLSurface)">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglSwapBuffers(javax.microedition.khronos.egl.EGLDisplay,javax.microedition.khronos.egl.EGLSurface)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EglSwapBuffers(EGLDisplay arg0, EGLSurface arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Microedition.Khronos.Egl.EGLDisplay.html">EGLDisplay</a></dt>
+    <dd><p><a class="xref" href="Javax.Microedition.Khronos.Egl.EGLDisplay.html">EGLDisplay</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Javax.Microedition.Khronos.Egl.EGLSurface.html">EGLSurface</a></dt>
+    <dd><p><a class="xref" href="Javax.Microedition.Khronos.Egl.EGLSurface.html">EGLSurface</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EglTerminate_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EglTerminate*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EglTerminate_Javax_Microedition_Khronos_Egl_EGLDisplay_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EglTerminate(Javax.Microedition.Khronos.Egl.EGLDisplay)">
+  EglTerminate(EGLDisplay)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L621"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglTerminate(javax.microedition.khronos.egl.EGLDisplay)">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglTerminate(javax.microedition.khronos.egl.EGLDisplay)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EglTerminate(EGLDisplay arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Microedition.Khronos.Egl.EGLDisplay.html">EGLDisplay</a></dt>
+    <dd><p><a class="xref" href="Javax.Microedition.Khronos.Egl.EGLDisplay.html">EGLDisplay</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EglWaitGL_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EglWaitGL*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EglWaitGL" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EglWaitGL">
+  EglWaitGL()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L629"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglWaitGL()">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglWaitGL()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EglWaitGL()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Microedition_Khronos_Egl_EGL10_EglWaitNative_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EglWaitNative*"></a>
+
+  <h3 id="Javax_Microedition_Khronos_Egl_EGL10_EglWaitNative_System_Int32_System_Object_" data-uid="Javax.Microedition.Khronos.Egl.EGL10.EglWaitNative(System.Int32,System.Object)">
+  EglWaitNative(int, object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L639"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglWaitNative(int,java.lang.Object)">https://developer.android.com/reference/javax/microedition/khronos/egl/EGL10.html#eglWaitNative(int,java.lang.Object)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EglWaitNative(int arg0, object arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Microedition/Khronos/Egl/EGL10.cs/#L47" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,3712 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class MediaDrm | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MediaDrm | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/media/MediaDrm.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_Media_MediaDrm.md&amp;value=---%0Auid%3A%20Android.Media.MediaDrm%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.Media.MediaDrm">
+
+
+
+  <h1 id="Android_Media_MediaDrm" data-uid="Android.Media.MediaDrm" class="text-break">
+Class MediaDrm  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.Media.html">Media</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html">https://developer.android.com/reference/android/media/MediaDrm.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MediaDrm : AutoCloseable, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IAutoCloseable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Java.Lang.AutoCloseable.html">AutoCloseable</a>&gt;</div>
+      <div><a class="xref" href="Java.Lang.AutoCloseable.html">AutoCloseable</a></div>
+      <div><span class="xref">MediaDrm</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+      <div><a class="xref" href="Java.Lang.IAutoCloseable.html">IAutoCloseable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;AutoCloseable&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;AutoCloseable&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;AutoCloseable&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;AutoCloseable&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;AutoCloseable&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;AutoCloseable&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_Media_MediaDrm__ctor_" data-uid="Android.Media.MediaDrm.#ctor*"></a>
+
+  <h3 id="Android_Media_MediaDrm__ctor" data-uid="Android.Media.MediaDrm.#ctor">
+  MediaDrm()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AllPackageClasses.cs/#L5207"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MediaDrm()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm__ctor_" data-uid="Android.Media.MediaDrm.#ctor*"></a>
+
+  <h3 id="Android_Media_MediaDrm__ctor_Java_Util_UUID_" data-uid="Android.Media.MediaDrm.#ctor(Java.Util.UUID)">
+  MediaDrm(UUID)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#%3Cinit%3E(java.util.UUID)">https://developer.android.com/reference/android/media/MediaDrm.html#%3Cinit%3E(java.util.UUID)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MediaDrm(UUID arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.UUID.html">UUID</a></dt>
+    <dd><p><a class="xref" href="Java.Util.UUID.html">UUID</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Media.UnsupportedSchemeException.html">UnsupportedSchemeException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Media_MediaDrm__ctor_" data-uid="Android.Media.MediaDrm.#ctor*"></a>
+
+  <h3 id="Android_Media_MediaDrm__ctor_System_Object___" data-uid="Android.Media.MediaDrm.#ctor(System.Object[])">
+  MediaDrm(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AllPackageClasses.cs/#L5211"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MediaDrm(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_Media_MediaDrm_BridgeClassName_" data-uid="Android.Media.MediaDrm.BridgeClassName*"></a>
+
+  <h3 id="Android_Media_MediaDrm_BridgeClassName" data-uid="Android.Media.MediaDrm.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AllPackageClasses.cs/#L5218"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_EVENT_KEY_EXPIRED_" data-uid="Android.Media.MediaDrm.EVENT_KEY_EXPIRED*"></a>
+
+  <h3 id="Android_Media_MediaDrm_EVENT_KEY_EXPIRED" data-uid="Android.Media.MediaDrm.EVENT_KEY_EXPIRED">
+  EVENT_KEY_EXPIRED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#EVENT_KEY_EXPIRED">https://developer.android.com/reference/android/media/MediaDrm.html#EVENT_KEY_EXPIRED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static int EVENT_KEY_EXPIRED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_EVENT_KEY_REQUIRED_" data-uid="Android.Media.MediaDrm.EVENT_KEY_REQUIRED*"></a>
+
+  <h3 id="Android_Media_MediaDrm_EVENT_KEY_REQUIRED" data-uid="Android.Media.MediaDrm.EVENT_KEY_REQUIRED">
+  EVENT_KEY_REQUIRED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#EVENT_KEY_REQUIRED">https://developer.android.com/reference/android/media/MediaDrm.html#EVENT_KEY_REQUIRED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EVENT_KEY_REQUIRED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_EVENT_PROVISION_REQUIRED_" data-uid="Android.Media.MediaDrm.EVENT_PROVISION_REQUIRED*"></a>
+
+  <h3 id="Android_Media_MediaDrm_EVENT_PROVISION_REQUIRED" data-uid="Android.Media.MediaDrm.EVENT_PROVISION_REQUIRED">
+  EVENT_PROVISION_REQUIRED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L65"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#EVENT_PROVISION_REQUIRED">https://developer.android.com/reference/android/media/MediaDrm.html#EVENT_PROVISION_REQUIRED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static int EVENT_PROVISION_REQUIRED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_EVENT_SESSION_RECLAIMED_" data-uid="Android.Media.MediaDrm.EVENT_SESSION_RECLAIMED*"></a>
+
+  <h3 id="Android_Media_MediaDrm_EVENT_SESSION_RECLAIMED" data-uid="Android.Media.MediaDrm.EVENT_SESSION_RECLAIMED">
+  EVENT_SESSION_RECLAIMED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L72"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#EVENT_SESSION_RECLAIMED">https://developer.android.com/reference/android/media/MediaDrm.html#EVENT_SESSION_RECLAIMED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EVENT_SESSION_RECLAIMED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_EVENT_VENDOR_DEFINED_" data-uid="Android.Media.MediaDrm.EVENT_VENDOR_DEFINED*"></a>
+
+  <h3 id="Android_Media_MediaDrm_EVENT_VENDOR_DEFINED" data-uid="Android.Media.MediaDrm.EVENT_VENDOR_DEFINED">
+  EVENT_VENDOR_DEFINED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L78"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#EVENT_VENDOR_DEFINED">https://developer.android.com/reference/android/media/MediaDrm.html#EVENT_VENDOR_DEFINED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int EVENT_VENDOR_DEFINED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_HDCP_LEVEL_UNKNOWN_" data-uid="Android.Media.MediaDrm.HDCP_LEVEL_UNKNOWN*"></a>
+
+  <h3 id="Android_Media_MediaDrm_HDCP_LEVEL_UNKNOWN" data-uid="Android.Media.MediaDrm.HDCP_LEVEL_UNKNOWN">
+  HDCP_LEVEL_UNKNOWN
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L84"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#HDCP_LEVEL_UNKNOWN">https://developer.android.com/reference/android/media/MediaDrm.html#HDCP_LEVEL_UNKNOWN</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int HDCP_LEVEL_UNKNOWN { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_HDCP_NONE_" data-uid="Android.Media.MediaDrm.HDCP_NONE*"></a>
+
+  <h3 id="Android_Media_MediaDrm_HDCP_NONE" data-uid="Android.Media.MediaDrm.HDCP_NONE">
+  HDCP_NONE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L96"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#HDCP_NONE">https://developer.android.com/reference/android/media/MediaDrm.html#HDCP_NONE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int HDCP_NONE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_HDCP_NO_DIGITAL_OUTPUT_" data-uid="Android.Media.MediaDrm.HDCP_NO_DIGITAL_OUTPUT*"></a>
+
+  <h3 id="Android_Media_MediaDrm_HDCP_NO_DIGITAL_OUTPUT" data-uid="Android.Media.MediaDrm.HDCP_NO_DIGITAL_OUTPUT">
+  HDCP_NO_DIGITAL_OUTPUT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L90"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#HDCP_NO_DIGITAL_OUTPUT">https://developer.android.com/reference/android/media/MediaDrm.html#HDCP_NO_DIGITAL_OUTPUT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int HDCP_NO_DIGITAL_OUTPUT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_HDCP_V1_" data-uid="Android.Media.MediaDrm.HDCP_V1*"></a>
+
+  <h3 id="Android_Media_MediaDrm_HDCP_V1" data-uid="Android.Media.MediaDrm.HDCP_V1">
+  HDCP_V1
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L102"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#HDCP_V1">https://developer.android.com/reference/android/media/MediaDrm.html#HDCP_V1</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int HDCP_V1 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_HDCP_V2_" data-uid="Android.Media.MediaDrm.HDCP_V2*"></a>
+
+  <h3 id="Android_Media_MediaDrm_HDCP_V2" data-uid="Android.Media.MediaDrm.HDCP_V2">
+  HDCP_V2
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L108"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#HDCP_V2">https://developer.android.com/reference/android/media/MediaDrm.html#HDCP_V2</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int HDCP_V2 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_HDCP_V2_1_" data-uid="Android.Media.MediaDrm.HDCP_V2_1*"></a>
+
+  <h3 id="Android_Media_MediaDrm_HDCP_V2_1" data-uid="Android.Media.MediaDrm.HDCP_V2_1">
+  HDCP_V2_1
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L114"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#HDCP_V2_1">https://developer.android.com/reference/android/media/MediaDrm.html#HDCP_V2_1</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int HDCP_V2_1 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_HDCP_V2_2_" data-uid="Android.Media.MediaDrm.HDCP_V2_2*"></a>
+
+  <h3 id="Android_Media_MediaDrm_HDCP_V2_2" data-uid="Android.Media.MediaDrm.HDCP_V2_2">
+  HDCP_V2_2
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L120"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#HDCP_V2_2">https://developer.android.com/reference/android/media/MediaDrm.html#HDCP_V2_2</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int HDCP_V2_2 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_HDCP_V2_3_" data-uid="Android.Media.MediaDrm.HDCP_V2_3*"></a>
+
+  <h3 id="Android_Media_MediaDrm_HDCP_V2_3" data-uid="Android.Media.MediaDrm.HDCP_V2_3">
+  HDCP_V2_3
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L126"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#HDCP_V2_3">https://developer.android.com/reference/android/media/MediaDrm.html#HDCP_V2_3</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int HDCP_V2_3 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_IsBridgeAbstract_" data-uid="Android.Media.MediaDrm.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_Media_MediaDrm_IsBridgeAbstract" data-uid="Android.Media.MediaDrm.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AllPackageClasses.cs/#L5222"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_IsBridgeCloseable_" data-uid="Android.Media.MediaDrm.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_Media_MediaDrm_IsBridgeCloseable" data-uid="Android.Media.MediaDrm.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AllPackageClasses.cs/#L5226"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_IsBridgeInterface_" data-uid="Android.Media.MediaDrm.IsBridgeInterface*"></a>
+
+  <h3 id="Android_Media_MediaDrm_IsBridgeInterface" data-uid="Android.Media.MediaDrm.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AllPackageClasses.cs/#L5230"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_IsBridgeStatic_" data-uid="Android.Media.MediaDrm.IsBridgeStatic*"></a>
+
+  <h3 id="Android_Media_MediaDrm_IsBridgeStatic" data-uid="Android.Media.MediaDrm.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/AllPackageClasses.cs/#L5234"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_KEY_TYPE_OFFLINE_" data-uid="Android.Media.MediaDrm.KEY_TYPE_OFFLINE*"></a>
+
+  <h3 id="Android_Media_MediaDrm_KEY_TYPE_OFFLINE" data-uid="Android.Media.MediaDrm.KEY_TYPE_OFFLINE">
+  KEY_TYPE_OFFLINE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L132"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#KEY_TYPE_OFFLINE">https://developer.android.com/reference/android/media/MediaDrm.html#KEY_TYPE_OFFLINE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int KEY_TYPE_OFFLINE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_KEY_TYPE_RELEASE_" data-uid="Android.Media.MediaDrm.KEY_TYPE_RELEASE*"></a>
+
+  <h3 id="Android_Media_MediaDrm_KEY_TYPE_RELEASE" data-uid="Android.Media.MediaDrm.KEY_TYPE_RELEASE">
+  KEY_TYPE_RELEASE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L138"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#KEY_TYPE_RELEASE">https://developer.android.com/reference/android/media/MediaDrm.html#KEY_TYPE_RELEASE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int KEY_TYPE_RELEASE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_KEY_TYPE_STREAMING_" data-uid="Android.Media.MediaDrm.KEY_TYPE_STREAMING*"></a>
+
+  <h3 id="Android_Media_MediaDrm_KEY_TYPE_STREAMING" data-uid="Android.Media.MediaDrm.KEY_TYPE_STREAMING">
+  KEY_TYPE_STREAMING
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L144"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#KEY_TYPE_STREAMING">https://developer.android.com/reference/android/media/MediaDrm.html#KEY_TYPE_STREAMING</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int KEY_TYPE_STREAMING { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_OFFLINE_LICENSE_STATE_RELEASED_" data-uid="Android.Media.MediaDrm.OFFLINE_LICENSE_STATE_RELEASED*"></a>
+
+  <h3 id="Android_Media_MediaDrm_OFFLINE_LICENSE_STATE_RELEASED" data-uid="Android.Media.MediaDrm.OFFLINE_LICENSE_STATE_RELEASED">
+  OFFLINE_LICENSE_STATE_RELEASED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L150"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#OFFLINE_LICENSE_STATE_RELEASED">https://developer.android.com/reference/android/media/MediaDrm.html#OFFLINE_LICENSE_STATE_RELEASED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int OFFLINE_LICENSE_STATE_RELEASED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_OFFLINE_LICENSE_STATE_UNKNOWN_" data-uid="Android.Media.MediaDrm.OFFLINE_LICENSE_STATE_UNKNOWN*"></a>
+
+  <h3 id="Android_Media_MediaDrm_OFFLINE_LICENSE_STATE_UNKNOWN" data-uid="Android.Media.MediaDrm.OFFLINE_LICENSE_STATE_UNKNOWN">
+  OFFLINE_LICENSE_STATE_UNKNOWN
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L156"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#OFFLINE_LICENSE_STATE_UNKNOWN">https://developer.android.com/reference/android/media/MediaDrm.html#OFFLINE_LICENSE_STATE_UNKNOWN</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int OFFLINE_LICENSE_STATE_UNKNOWN { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_OFFLINE_LICENSE_STATE_USABLE_" data-uid="Android.Media.MediaDrm.OFFLINE_LICENSE_STATE_USABLE*"></a>
+
+  <h3 id="Android_Media_MediaDrm_OFFLINE_LICENSE_STATE_USABLE" data-uid="Android.Media.MediaDrm.OFFLINE_LICENSE_STATE_USABLE">
+  OFFLINE_LICENSE_STATE_USABLE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L162"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#OFFLINE_LICENSE_STATE_USABLE">https://developer.android.com/reference/android/media/MediaDrm.html#OFFLINE_LICENSE_STATE_USABLE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int OFFLINE_LICENSE_STATE_USABLE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_PROPERTY_ALGORITHMS_" data-uid="Android.Media.MediaDrm.PROPERTY_ALGORITHMS*"></a>
+
+  <h3 id="Android_Media_MediaDrm_PROPERTY_ALGORITHMS" data-uid="Android.Media.MediaDrm.PROPERTY_ALGORITHMS">
+  PROPERTY_ALGORITHMS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L204"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#PROPERTY_ALGORITHMS">https://developer.android.com/reference/android/media/MediaDrm.html#PROPERTY_ALGORITHMS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String PROPERTY_ALGORITHMS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_PROPERTY_DESCRIPTION_" data-uid="Android.Media.MediaDrm.PROPERTY_DESCRIPTION*"></a>
+
+  <h3 id="Android_Media_MediaDrm_PROPERTY_DESCRIPTION" data-uid="Android.Media.MediaDrm.PROPERTY_DESCRIPTION">
+  PROPERTY_DESCRIPTION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L210"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#PROPERTY_DESCRIPTION">https://developer.android.com/reference/android/media/MediaDrm.html#PROPERTY_DESCRIPTION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String PROPERTY_DESCRIPTION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_PROPERTY_DEVICE_UNIQUE_ID_" data-uid="Android.Media.MediaDrm.PROPERTY_DEVICE_UNIQUE_ID*"></a>
+
+  <h3 id="Android_Media_MediaDrm_PROPERTY_DEVICE_UNIQUE_ID" data-uid="Android.Media.MediaDrm.PROPERTY_DEVICE_UNIQUE_ID">
+  PROPERTY_DEVICE_UNIQUE_ID
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L216"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#PROPERTY_DEVICE_UNIQUE_ID">https://developer.android.com/reference/android/media/MediaDrm.html#PROPERTY_DEVICE_UNIQUE_ID</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String PROPERTY_DEVICE_UNIQUE_ID { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_PROPERTY_VENDOR_" data-uid="Android.Media.MediaDrm.PROPERTY_VENDOR*"></a>
+
+  <h3 id="Android_Media_MediaDrm_PROPERTY_VENDOR" data-uid="Android.Media.MediaDrm.PROPERTY_VENDOR">
+  PROPERTY_VENDOR
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L222"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#PROPERTY_VENDOR">https://developer.android.com/reference/android/media/MediaDrm.html#PROPERTY_VENDOR</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String PROPERTY_VENDOR { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_PROPERTY_VERSION_" data-uid="Android.Media.MediaDrm.PROPERTY_VERSION*"></a>
+
+  <h3 id="Android_Media_MediaDrm_PROPERTY_VERSION" data-uid="Android.Media.MediaDrm.PROPERTY_VERSION">
+  PROPERTY_VERSION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L228"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#PROPERTY_VERSION">https://developer.android.com/reference/android/media/MediaDrm.html#PROPERTY_VERSION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String PROPERTY_VERSION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_SECURITY_LEVEL_HW_SECURE_ALL_" data-uid="Android.Media.MediaDrm.SECURITY_LEVEL_HW_SECURE_ALL*"></a>
+
+  <h3 id="Android_Media_MediaDrm_SECURITY_LEVEL_HW_SECURE_ALL" data-uid="Android.Media.MediaDrm.SECURITY_LEVEL_HW_SECURE_ALL">
+  SECURITY_LEVEL_HW_SECURE_ALL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L168"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#SECURITY_LEVEL_HW_SECURE_ALL">https://developer.android.com/reference/android/media/MediaDrm.html#SECURITY_LEVEL_HW_SECURE_ALL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SECURITY_LEVEL_HW_SECURE_ALL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_SECURITY_LEVEL_HW_SECURE_CRYPTO_" data-uid="Android.Media.MediaDrm.SECURITY_LEVEL_HW_SECURE_CRYPTO*"></a>
+
+  <h3 id="Android_Media_MediaDrm_SECURITY_LEVEL_HW_SECURE_CRYPTO" data-uid="Android.Media.MediaDrm.SECURITY_LEVEL_HW_SECURE_CRYPTO">
+  SECURITY_LEVEL_HW_SECURE_CRYPTO
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L174"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#SECURITY_LEVEL_HW_SECURE_CRYPTO">https://developer.android.com/reference/android/media/MediaDrm.html#SECURITY_LEVEL_HW_SECURE_CRYPTO</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SECURITY_LEVEL_HW_SECURE_CRYPTO { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_SECURITY_LEVEL_HW_SECURE_DECODE_" data-uid="Android.Media.MediaDrm.SECURITY_LEVEL_HW_SECURE_DECODE*"></a>
+
+  <h3 id="Android_Media_MediaDrm_SECURITY_LEVEL_HW_SECURE_DECODE" data-uid="Android.Media.MediaDrm.SECURITY_LEVEL_HW_SECURE_DECODE">
+  SECURITY_LEVEL_HW_SECURE_DECODE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L180"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#SECURITY_LEVEL_HW_SECURE_DECODE">https://developer.android.com/reference/android/media/MediaDrm.html#SECURITY_LEVEL_HW_SECURE_DECODE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SECURITY_LEVEL_HW_SECURE_DECODE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_SECURITY_LEVEL_SW_SECURE_CRYPTO_" data-uid="Android.Media.MediaDrm.SECURITY_LEVEL_SW_SECURE_CRYPTO*"></a>
+
+  <h3 id="Android_Media_MediaDrm_SECURITY_LEVEL_SW_SECURE_CRYPTO" data-uid="Android.Media.MediaDrm.SECURITY_LEVEL_SW_SECURE_CRYPTO">
+  SECURITY_LEVEL_SW_SECURE_CRYPTO
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L186"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#SECURITY_LEVEL_SW_SECURE_CRYPTO">https://developer.android.com/reference/android/media/MediaDrm.html#SECURITY_LEVEL_SW_SECURE_CRYPTO</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SECURITY_LEVEL_SW_SECURE_CRYPTO { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_SECURITY_LEVEL_SW_SECURE_DECODE_" data-uid="Android.Media.MediaDrm.SECURITY_LEVEL_SW_SECURE_DECODE*"></a>
+
+  <h3 id="Android_Media_MediaDrm_SECURITY_LEVEL_SW_SECURE_DECODE" data-uid="Android.Media.MediaDrm.SECURITY_LEVEL_SW_SECURE_DECODE">
+  SECURITY_LEVEL_SW_SECURE_DECODE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L192"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#SECURITY_LEVEL_SW_SECURE_DECODE">https://developer.android.com/reference/android/media/MediaDrm.html#SECURITY_LEVEL_SW_SECURE_DECODE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SECURITY_LEVEL_SW_SECURE_DECODE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_SECURITY_LEVEL_UNKNOWN_" data-uid="Android.Media.MediaDrm.SECURITY_LEVEL_UNKNOWN*"></a>
+
+  <h3 id="Android_Media_MediaDrm_SECURITY_LEVEL_UNKNOWN" data-uid="Android.Media.MediaDrm.SECURITY_LEVEL_UNKNOWN">
+  SECURITY_LEVEL_UNKNOWN
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L198"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#SECURITY_LEVEL_UNKNOWN">https://developer.android.com/reference/android/media/MediaDrm.html#SECURITY_LEVEL_UNKNOWN</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SECURITY_LEVEL_UNKNOWN { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_Media_MediaDrm_ClearOnEventListener_" data-uid="Android.Media.MediaDrm.ClearOnEventListener*"></a>
+
+  <h3 id="Android_Media_MediaDrm_ClearOnEventListener" data-uid="Android.Media.MediaDrm.ClearOnEventListener">
+  ClearOnEventListener()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L580"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#clearOnEventListener()">https://developer.android.com/reference/android/media/MediaDrm.html#clearOnEventListener()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearOnEventListener()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_ClearOnExpirationUpdateListener_" data-uid="Android.Media.MediaDrm.ClearOnExpirationUpdateListener*"></a>
+
+  <h3 id="Android_Media_MediaDrm_ClearOnExpirationUpdateListener" data-uid="Android.Media.MediaDrm.ClearOnExpirationUpdateListener">
+  ClearOnExpirationUpdateListener()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L587"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#clearOnExpirationUpdateListener()">https://developer.android.com/reference/android/media/MediaDrm.html#clearOnExpirationUpdateListener()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearOnExpirationUpdateListener()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_ClearOnKeyStatusChangeListener_" data-uid="Android.Media.MediaDrm.ClearOnKeyStatusChangeListener*"></a>
+
+  <h3 id="Android_Media_MediaDrm_ClearOnKeyStatusChangeListener" data-uid="Android.Media.MediaDrm.ClearOnKeyStatusChangeListener">
+  ClearOnKeyStatusChangeListener()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L594"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#clearOnKeyStatusChangeListener()">https://developer.android.com/reference/android/media/MediaDrm.html#clearOnKeyStatusChangeListener()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearOnKeyStatusChangeListener()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_ClearOnSessionLostStateListener_" data-uid="Android.Media.MediaDrm.ClearOnSessionLostStateListener*"></a>
+
+  <h3 id="Android_Media_MediaDrm_ClearOnSessionLostStateListener" data-uid="Android.Media.MediaDrm.ClearOnSessionLostStateListener">
+  ClearOnSessionLostStateListener()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L601"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#clearOnSessionLostStateListener()">https://developer.android.com/reference/android/media/MediaDrm.html#clearOnSessionLostStateListener()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearOnSessionLostStateListener()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_Close_" data-uid="Android.Media.MediaDrm.Close*"></a>
+
+  <h3 id="Android_Media_MediaDrm_Close" data-uid="Android.Media.MediaDrm.Close">
+  Close()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L608"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#close()">https://developer.android.com/reference/android/media/MediaDrm.html#close()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Close()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_CloseSession_" data-uid="Android.Media.MediaDrm.CloseSession*"></a>
+
+  <h3 id="Android_Media_MediaDrm_CloseSession_System_Byte___" data-uid="Android.Media.MediaDrm.CloseSession(System.Byte[])">
+  CloseSession(byte[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L616"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#closeSession(byte[])">https://developer.android.com/reference/android/media/MediaDrm.html#closeSession(byte[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CloseSession(byte[] arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_GetConnectedHdcpLevel_" data-uid="Android.Media.MediaDrm.GetConnectedHdcpLevel*"></a>
+
+  <h3 id="Android_Media_MediaDrm_GetConnectedHdcpLevel" data-uid="Android.Media.MediaDrm.GetConnectedHdcpLevel">
+  GetConnectedHdcpLevel()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L410"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#getConnectedHdcpLevel()">https://developer.android.com/reference/android/media/MediaDrm.html#getConnectedHdcpLevel()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetConnectedHdcpLevel()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_GetCryptoSession_" data-uid="Android.Media.MediaDrm.GetCryptoSession*"></a>
+
+  <h3 id="Android_Media_MediaDrm_GetCryptoSession_System_Byte___Java_Lang_String_Java_Lang_String_" data-uid="Android.Media.MediaDrm.GetCryptoSession(System.Byte[],Java.Lang.String,Java.Lang.String)">
+  GetCryptoSession(byte[], String, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L292"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#getCryptoSession(byte[],java.lang.String,java.lang.String)">https://developer.android.com/reference/android/media/MediaDrm.html#getCryptoSession(byte[],java.lang.String,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MediaDrm.CryptoSession GetCryptoSession(byte[] arg0, String arg1, String arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Media.MediaDrm.html">MediaDrm</a>.<a class="xref" href="Android.Media.MediaDrm.CryptoSession.html">CryptoSession</a></dt>
+    <dd><p><a class="xref" href="Android.Media.MediaDrm.CryptoSession.html">MediaDrm.CryptoSession</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_GetKeyRequest_" data-uid="Android.Media.MediaDrm.GetKeyRequest*"></a>
+
+  <h3 id="Android_Media_MediaDrm_GetKeyRequest_System_Byte___System_Byte___Java_Lang_String_System_Int32_Java_Util_HashMap_Java_Lang_String_Java_Lang_String__" data-uid="Android.Media.MediaDrm.GetKeyRequest(System.Byte[],System.Byte[],Java.Lang.String,System.Int32,Java.Util.HashMap{Java.Lang.String,Java.Lang.String})">
+  GetKeyRequest(byte[], byte[], String, int, HashMap&lt;String, String&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L306"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#getKeyRequest(byte[],byte[],java.lang.String,int,java.util.HashMap)">https://developer.android.com/reference/android/media/MediaDrm.html#getKeyRequest(byte[],byte[],java.lang.String,int,java.util.HashMap)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MediaDrm.KeyRequest GetKeyRequest(byte[] arg0, byte[] arg1, String arg2, int arg3, HashMap&lt;String, String&gt; arg4)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg4</code> <a class="xref" href="Java.Util.HashMap-2.html">HashMap</a>&lt;<a class="xref" href="Java.Lang.String.html">String</a>, <a class="xref" href="Java.Lang.String.html">String</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.HashMap.html">HashMap</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Media.MediaDrm.html">MediaDrm</a>.<a class="xref" href="Android.Media.MediaDrm.KeyRequest.html">KeyRequest</a></dt>
+    <dd><p><a class="xref" href="Android.Media.MediaDrm.KeyRequest.html">MediaDrm.KeyRequest</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Media.NotProvisionedException.html">NotProvisionedException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Media_MediaDrm_GetLogMessages_" data-uid="Android.Media.MediaDrm.GetLogMessages*"></a>
+
+  <h3 id="Android_Media_MediaDrm_GetLogMessages" data-uid="Android.Media.MediaDrm.GetLogMessages">
+  GetLogMessages()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L478"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#getLogMessages()">https://developer.android.com/reference/android/media/MediaDrm.html#getLogMessages()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;MediaDrm.LogMessage&gt; GetLogMessages()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Android.Media.MediaDrm.html">MediaDrm</a>.<a class="xref" href="Android.Media.MediaDrm.LogMessage.html">LogMessage</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.List.html">List</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_GetMaxHdcpLevel_" data-uid="Android.Media.MediaDrm.GetMaxHdcpLevel*"></a>
+
+  <h3 id="Android_Media_MediaDrm_GetMaxHdcpLevel" data-uid="Android.Media.MediaDrm.GetMaxHdcpLevel">
+  GetMaxHdcpLevel()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L418"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#getMaxHdcpLevel()">https://developer.android.com/reference/android/media/MediaDrm.html#getMaxHdcpLevel()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetMaxHdcpLevel()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_GetMaxSecurityLevel_" data-uid="Android.Media.MediaDrm.GetMaxSecurityLevel*"></a>
+
+  <h3 id="Android_Media_MediaDrm_GetMaxSecurityLevel" data-uid="Android.Media.MediaDrm.GetMaxSecurityLevel">
+  GetMaxSecurityLevel()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L269"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#getMaxSecurityLevel()">https://developer.android.com/reference/android/media/MediaDrm.html#getMaxSecurityLevel()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetMaxSecurityLevel()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_GetMaxSessionCount_" data-uid="Android.Media.MediaDrm.GetMaxSessionCount*"></a>
+
+  <h3 id="Android_Media_MediaDrm_GetMaxSessionCount" data-uid="Android.Media.MediaDrm.GetMaxSessionCount">
+  GetMaxSessionCount()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L426"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#getMaxSessionCount()">https://developer.android.com/reference/android/media/MediaDrm.html#getMaxSessionCount()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetMaxSessionCount()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_GetMetrics_" data-uid="Android.Media.MediaDrm.GetMetrics*"></a>
+
+  <h3 id="Android_Media_MediaDrm_GetMetrics" data-uid="Android.Media.MediaDrm.GetMetrics">
+  GetMetrics()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L331"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#getMetrics()">https://developer.android.com/reference/android/media/MediaDrm.html#getMetrics()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PersistableBundle GetMetrics()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Os.PersistableBundle.html">PersistableBundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.PersistableBundle.html">PersistableBundle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_GetOfflineLicenseKeySetIds_" data-uid="Android.Media.MediaDrm.GetOfflineLicenseKeySetIds*"></a>
+
+  <h3 id="Android_Media_MediaDrm_GetOfflineLicenseKeySetIds" data-uid="Android.Media.MediaDrm.GetOfflineLicenseKeySetIds">
+  GetOfflineLicenseKeySetIds()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L486"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#getOfflineLicenseKeySetIds()">https://developer.android.com/reference/android/media/MediaDrm.html#getOfflineLicenseKeySetIds()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;byte[]&gt; GetOfflineLicenseKeySetIds()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.List.html">List</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_GetOfflineLicenseState_" data-uid="Android.Media.MediaDrm.GetOfflineLicenseState*"></a>
+
+  <h3 id="Android_Media_MediaDrm_GetOfflineLicenseState_System_Byte___" data-uid="Android.Media.MediaDrm.GetOfflineLicenseState(System.Byte[])">
+  GetOfflineLicenseState(byte[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L435"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#getOfflineLicenseState(byte[])">https://developer.android.com/reference/android/media/MediaDrm.html#getOfflineLicenseState(byte[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetOfflineLicenseState(byte[] arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_GetOpenSessionCount_" data-uid="Android.Media.MediaDrm.GetOpenSessionCount*"></a>
+
+  <h3 id="Android_Media_MediaDrm_GetOpenSessionCount" data-uid="Android.Media.MediaDrm.GetOpenSessionCount">
+  GetOpenSessionCount()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L443"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#getOpenSessionCount()">https://developer.android.com/reference/android/media/MediaDrm.html#getOpenSessionCount()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetOpenSessionCount()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_GetPlaybackComponent_" data-uid="Android.Media.MediaDrm.GetPlaybackComponent*"></a>
+
+  <h3 id="Android_Media_MediaDrm_GetPlaybackComponent_System_Byte___" data-uid="Android.Media.MediaDrm.GetPlaybackComponent(System.Byte[])">
+  GetPlaybackComponent(byte[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L315"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#getPlaybackComponent(byte[])">https://developer.android.com/reference/android/media/MediaDrm.html#getPlaybackComponent(byte[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MediaDrm.PlaybackComponent GetPlaybackComponent(byte[] arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Media.MediaDrm.html">MediaDrm</a>.<a class="xref" href="Android.Media.MediaDrm.PlaybackComponent.html">PlaybackComponent</a></dt>
+    <dd><p><a class="xref" href="Android.Media.MediaDrm.PlaybackComponent.html">MediaDrm.PlaybackComponent</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_GetPropertyByteArray_" data-uid="Android.Media.MediaDrm.GetPropertyByteArray*"></a>
+
+  <h3 id="Android_Media_MediaDrm_GetPropertyByteArray_Java_Lang_String_" data-uid="Android.Media.MediaDrm.GetPropertyByteArray(Java.Lang.String)">
+  GetPropertyByteArray(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L380"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#getPropertyByteArray(java.lang.String)">https://developer.android.com/reference/android/media/MediaDrm.html#getPropertyByteArray(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] GetPropertyByteArray(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_GetPropertyString_" data-uid="Android.Media.MediaDrm.GetPropertyString*"></a>
+
+  <h3 id="Android_Media_MediaDrm_GetPropertyString_Java_Lang_String_" data-uid="Android.Media.MediaDrm.GetPropertyString(Java.Lang.String)">
+  GetPropertyString(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L461"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#getPropertyString(java.lang.String)">https://developer.android.com/reference/android/media/MediaDrm.html#getPropertyString(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetPropertyString(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_GetProvisionRequest_" data-uid="Android.Media.MediaDrm.GetProvisionRequest*"></a>
+
+  <h3 id="Android_Media_MediaDrm_GetProvisionRequest" data-uid="Android.Media.MediaDrm.GetProvisionRequest">
+  GetProvisionRequest()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L323"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#getProvisionRequest()">https://developer.android.com/reference/android/media/MediaDrm.html#getProvisionRequest()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MediaDrm.ProvisionRequest GetProvisionRequest()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Media.MediaDrm.html">MediaDrm</a>.<a class="xref" href="Android.Media.MediaDrm.ProvisionRequest.html">ProvisionRequest</a></dt>
+    <dd><p><a class="xref" href="Android.Media.MediaDrm.ProvisionRequest.html">MediaDrm.ProvisionRequest</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_GetSecureStop_" data-uid="Android.Media.MediaDrm.GetSecureStop*"></a>
+
+  <h3 id="Android_Media_MediaDrm_GetSecureStop_System_Byte___" data-uid="Android.Media.MediaDrm.GetSecureStop(System.Byte[])">
+  GetSecureStop(byte[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L389"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#getSecureStop(byte[])">https://developer.android.com/reference/android/media/MediaDrm.html#getSecureStop(byte[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public byte[] GetSecureStop(byte[] arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_GetSecureStopIds_" data-uid="Android.Media.MediaDrm.GetSecureStopIds*"></a>
+
+  <h3 id="Android_Media_MediaDrm_GetSecureStopIds" data-uid="Android.Media.MediaDrm.GetSecureStopIds">
+  GetSecureStopIds()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L494"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#getSecureStopIds()">https://developer.android.com/reference/android/media/MediaDrm.html#getSecureStopIds()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public List&lt;byte[]&gt; GetSecureStopIds()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.List.html">List</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_GetSecureStops_" data-uid="Android.Media.MediaDrm.GetSecureStops*"></a>
+
+  <h3 id="Android_Media_MediaDrm_GetSecureStops" data-uid="Android.Media.MediaDrm.GetSecureStops">
+  GetSecureStops()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L503"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#getSecureStops()">https://developer.android.com/reference/android/media/MediaDrm.html#getSecureStops()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public List&lt;byte[]&gt; GetSecureStops()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.List.html">List</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_GetSecurityLevel_" data-uid="Android.Media.MediaDrm.GetSecurityLevel*"></a>
+
+  <h3 id="Android_Media_MediaDrm_GetSecurityLevel_System_Byte___" data-uid="Android.Media.MediaDrm.GetSecurityLevel(System.Byte[])">
+  GetSecurityLevel(byte[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L452"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#getSecurityLevel(byte[])">https://developer.android.com/reference/android/media/MediaDrm.html#getSecurityLevel(byte[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetSecurityLevel(byte[] arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_GetSupportedCryptoSchemes_" data-uid="Android.Media.MediaDrm.GetSupportedCryptoSchemes*"></a>
+
+  <h3 id="Android_Media_MediaDrm_GetSupportedCryptoSchemes" data-uid="Android.Media.MediaDrm.GetSupportedCryptoSchemes">
+  GetSupportedCryptoSchemes()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L277"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#getSupportedCryptoSchemes()">https://developer.android.com/reference/android/media/MediaDrm.html#getSupportedCryptoSchemes()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;UUID&gt; GetSupportedCryptoSchemes()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Java.Util.UUID.html">UUID</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.List.html">List</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_IsCryptoSchemeSupported_" data-uid="Android.Media.MediaDrm.IsCryptoSchemeSupported*"></a>
+
+  <h3 id="Android_Media_MediaDrm_IsCryptoSchemeSupported_Java_Util_UUID_" data-uid="Android.Media.MediaDrm.IsCryptoSchemeSupported(Java.Util.UUID)">
+  IsCryptoSchemeSupported(UUID)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L261"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#isCryptoSchemeSupported(java.util.UUID)">https://developer.android.com/reference/android/media/MediaDrm.html#isCryptoSchemeSupported(java.util.UUID)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsCryptoSchemeSupported(UUID arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.UUID.html">UUID</a></dt>
+    <dd><p><a class="xref" href="Java.Util.UUID.html">UUID</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_IsCryptoSchemeSupported_" data-uid="Android.Media.MediaDrm.IsCryptoSchemeSupported*"></a>
+
+  <h3 id="Android_Media_MediaDrm_IsCryptoSchemeSupported_Java_Util_UUID_Java_Lang_String_" data-uid="Android.Media.MediaDrm.IsCryptoSchemeSupported(Java.Util.UUID,Java.Lang.String)">
+  IsCryptoSchemeSupported(UUID, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L252"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#isCryptoSchemeSupported(java.util.UUID,java.lang.String)">https://developer.android.com/reference/android/media/MediaDrm.html#isCryptoSchemeSupported(java.util.UUID,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsCryptoSchemeSupported(UUID arg0, String arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.UUID.html">UUID</a></dt>
+    <dd><p><a class="xref" href="Java.Util.UUID.html">UUID</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_IsCryptoSchemeSupported_" data-uid="Android.Media.MediaDrm.IsCryptoSchemeSupported*"></a>
+
+  <h3 id="Android_Media_MediaDrm_IsCryptoSchemeSupported_Java_Util_UUID_Java_Lang_String_System_Int32_" data-uid="Android.Media.MediaDrm.IsCryptoSchemeSupported(Java.Util.UUID,Java.Lang.String,System.Int32)">
+  IsCryptoSchemeSupported(UUID, String, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L242"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#isCryptoSchemeSupported(java.util.UUID,java.lang.String,int)">https://developer.android.com/reference/android/media/MediaDrm.html#isCryptoSchemeSupported(java.util.UUID,java.lang.String,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsCryptoSchemeSupported(UUID arg0, String arg1, int arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.UUID.html">UUID</a></dt>
+    <dd><p><a class="xref" href="Java.Util.UUID.html">UUID</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_OpenSession_" data-uid="Android.Media.MediaDrm.OpenSession*"></a>
+
+  <h3 id="Android_Media_MediaDrm_OpenSession" data-uid="Android.Media.MediaDrm.OpenSession">
+  OpenSession()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L350"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#openSession()">https://developer.android.com/reference/android/media/MediaDrm.html#openSession()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] OpenSession()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Media.NotProvisionedException.html">NotProvisionedException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Android.Media.ResourceBusyException.html">ResourceBusyException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Media_MediaDrm_OpenSession_" data-uid="Android.Media.MediaDrm.OpenSession*"></a>
+
+  <h3 id="Android_Media_MediaDrm_OpenSession_System_Int32_" data-uid="Android.Media.MediaDrm.OpenSession(System.Int32)">
+  OpenSession(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L361"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#openSession(int)">https://developer.android.com/reference/android/media/MediaDrm.html#openSession(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] OpenSession(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Media.NotProvisionedException.html">NotProvisionedException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Android.Media.ResourceBusyException.html">ResourceBusyException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Media_MediaDrm_ProvideKeyResponse_" data-uid="Android.Media.MediaDrm.ProvideKeyResponse*"></a>
+
+  <h3 id="Android_Media_MediaDrm_ProvideKeyResponse_System_Byte___System_Byte___" data-uid="Android.Media.MediaDrm.ProvideKeyResponse(System.Byte[],System.Byte[])">
+  ProvideKeyResponse(byte[], byte[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L402"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#provideKeyResponse(byte[],byte[])">https://developer.android.com/reference/android/media/MediaDrm.html#provideKeyResponse(byte[],byte[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] ProvideKeyResponse(byte[] arg0, byte[] arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Media.DeniedByServerException.html">DeniedByServerException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Android.Media.NotProvisionedException.html">NotProvisionedException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Media_MediaDrm_ProvideProvisionResponse_" data-uid="Android.Media.MediaDrm.ProvideProvisionResponse*"></a>
+
+  <h3 id="Android_Media_MediaDrm_ProvideProvisionResponse_System_Byte___" data-uid="Android.Media.MediaDrm.ProvideProvisionResponse(System.Byte[])">
+  ProvideProvisionResponse(byte[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L625"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#provideProvisionResponse(byte[])">https://developer.android.com/reference/android/media/MediaDrm.html#provideProvisionResponse(byte[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ProvideProvisionResponse(byte[] arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Media.DeniedByServerException.html">DeniedByServerException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Media_MediaDrm_QueryKeyStatus_" data-uid="Android.Media.MediaDrm.QueryKeyStatus*"></a>
+
+  <h3 id="Android_Media_MediaDrm_QueryKeyStatus_System_Byte___" data-uid="Android.Media.MediaDrm.QueryKeyStatus(System.Byte[])">
+  QueryKeyStatus(byte[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L470"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#queryKeyStatus(byte[])">https://developer.android.com/reference/android/media/MediaDrm.html#queryKeyStatus(byte[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HashMap&lt;String, String&gt; QueryKeyStatus(byte[] arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.HashMap-2.html">HashMap</a>&lt;<a class="xref" href="Java.Lang.String.html">String</a>, <a class="xref" href="Java.Lang.String.html">String</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.HashMap.html">HashMap</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_Release_" data-uid="Android.Media.MediaDrm.Release*"></a>
+
+  <h3 id="Android_Media_MediaDrm_Release" data-uid="Android.Media.MediaDrm.Release">
+  Release()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L632"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#release()">https://developer.android.com/reference/android/media/MediaDrm.html#release()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void Release()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_ReleaseAllSecureStops_" data-uid="Android.Media.MediaDrm.ReleaseAllSecureStops*"></a>
+
+  <h3 id="Android_Media_MediaDrm_ReleaseAllSecureStops" data-uid="Android.Media.MediaDrm.ReleaseAllSecureStops">
+  ReleaseAllSecureStops()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L640"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#releaseAllSecureStops()">https://developer.android.com/reference/android/media/MediaDrm.html#releaseAllSecureStops()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void ReleaseAllSecureStops()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_ReleaseSecureStops_" data-uid="Android.Media.MediaDrm.ReleaseSecureStops*"></a>
+
+  <h3 id="Android_Media_MediaDrm_ReleaseSecureStops_System_Byte___" data-uid="Android.Media.MediaDrm.ReleaseSecureStops(System.Byte[])">
+  ReleaseSecureStops(byte[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L512"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#releaseSecureStops(byte[])">https://developer.android.com/reference/android/media/MediaDrm.html#releaseSecureStops(byte[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void ReleaseSecureStops(byte[] arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_RemoveAllSecureStops_" data-uid="Android.Media.MediaDrm.RemoveAllSecureStops*"></a>
+
+  <h3 id="Android_Media_MediaDrm_RemoveAllSecureStops" data-uid="Android.Media.MediaDrm.RemoveAllSecureStops">
+  RemoveAllSecureStops()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L520"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#removeAllSecureStops()">https://developer.android.com/reference/android/media/MediaDrm.html#removeAllSecureStops()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void RemoveAllSecureStops()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_RemoveKeys_" data-uid="Android.Media.MediaDrm.RemoveKeys*"></a>
+
+  <h3 id="Android_Media_MediaDrm_RemoveKeys_System_Byte___" data-uid="Android.Media.MediaDrm.RemoveKeys(System.Byte[])">
+  RemoveKeys(byte[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L529"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#removeKeys(byte[])">https://developer.android.com/reference/android/media/MediaDrm.html#removeKeys(byte[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveKeys(byte[] arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_RemoveOfflineLicense_" data-uid="Android.Media.MediaDrm.RemoveOfflineLicense*"></a>
+
+  <h3 id="Android_Media_MediaDrm_RemoveOfflineLicense_System_Byte___" data-uid="Android.Media.MediaDrm.RemoveOfflineLicense(System.Byte[])">
+  RemoveOfflineLicense(byte[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L537"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#removeOfflineLicense(byte[])">https://developer.android.com/reference/android/media/MediaDrm.html#removeOfflineLicense(byte[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveOfflineLicense(byte[] arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_RemoveSecureStop_" data-uid="Android.Media.MediaDrm.RemoveSecureStop*"></a>
+
+  <h3 id="Android_Media_MediaDrm_RemoveSecureStop_System_Byte___" data-uid="Android.Media.MediaDrm.RemoveSecureStop(System.Byte[])">
+  RemoveSecureStop(byte[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L545"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#removeSecureStop(byte[])">https://developer.android.com/reference/android/media/MediaDrm.html#removeSecureStop(byte[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void RemoveSecureStop(byte[] arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_RequiresSecureDecoder_" data-uid="Android.Media.MediaDrm.RequiresSecureDecoder*"></a>
+
+  <h3 id="Android_Media_MediaDrm_RequiresSecureDecoder_Java_Lang_String_" data-uid="Android.Media.MediaDrm.RequiresSecureDecoder(Java.Lang.String)">
+  RequiresSecureDecoder(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L340"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#requiresSecureDecoder(java.lang.String)">https://developer.android.com/reference/android/media/MediaDrm.html#requiresSecureDecoder(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RequiresSecureDecoder(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_RequiresSecureDecoder_" data-uid="Android.Media.MediaDrm.RequiresSecureDecoder*"></a>
+
+  <h3 id="Android_Media_MediaDrm_RequiresSecureDecoder_Java_Lang_String_System_Int32_" data-uid="Android.Media.MediaDrm.RequiresSecureDecoder(Java.Lang.String,System.Int32)">
+  RequiresSecureDecoder(String, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L371"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#requiresSecureDecoder(java.lang.String,int)">https://developer.android.com/reference/android/media/MediaDrm.html#requiresSecureDecoder(java.lang.String,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RequiresSecureDecoder(String arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_RestoreKeys_" data-uid="Android.Media.MediaDrm.RestoreKeys*"></a>
+
+  <h3 id="Android_Media_MediaDrm_RestoreKeys_System_Byte___System_Byte___" data-uid="Android.Media.MediaDrm.RestoreKeys(System.Byte[],System.Byte[])">
+  RestoreKeys(byte[], byte[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L555"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#restoreKeys(byte[],byte[])">https://developer.android.com/reference/android/media/MediaDrm.html#restoreKeys(byte[],byte[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RestoreKeys(byte[] arg0, byte[] arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_SetOnEventListener_" data-uid="Android.Media.MediaDrm.SetOnEventListener*"></a>
+
+  <h3 id="Android_Media_MediaDrm_SetOnEventListener_Android_Media_MediaDrm_OnEventListener_" data-uid="Android.Media.MediaDrm.SetOnEventListener(Android.Media.MediaDrm.OnEventListener)">
+  SetOnEventListener(OnEventListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L658"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#setOnEventListener(android.media.MediaDrm.OnEventListener)">https://developer.android.com/reference/android/media/MediaDrm.html#setOnEventListener(android.media.MediaDrm.OnEventListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetOnEventListener(MediaDrm.OnEventListener arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Media.MediaDrm.html">MediaDrm</a>.<a class="xref" href="Android.Media.MediaDrm.OnEventListener.html">OnEventListener</a></dt>
+    <dd><p><a class="xref" href="Android.Media.MediaDrm.OnEventListener.html">MediaDrm.OnEventListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_SetOnEventListener_" data-uid="Android.Media.MediaDrm.SetOnEventListener*"></a>
+
+  <h3 id="Android_Media_MediaDrm_SetOnEventListener_Android_Media_MediaDrm_OnEventListener_Android_Os_Handler_" data-uid="Android.Media.MediaDrm.SetOnEventListener(Android.Media.MediaDrm.OnEventListener,Android.Os.Handler)">
+  SetOnEventListener(OnEventListener, Handler)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L650"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#setOnEventListener(android.media.MediaDrm.OnEventListener,android.os.Handler)">https://developer.android.com/reference/android/media/MediaDrm.html#setOnEventListener(android.media.MediaDrm.OnEventListener,android.os.Handler)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetOnEventListener(MediaDrm.OnEventListener arg0, Handler arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Media.MediaDrm.html">MediaDrm</a>.<a class="xref" href="Android.Media.MediaDrm.OnEventListener.html">OnEventListener</a></dt>
+    <dd><p><a class="xref" href="Android.Media.MediaDrm.OnEventListener.html">MediaDrm.OnEventListener</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Os.Handler.html">Handler</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Handler.html">Handler</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_SetOnEventListener_" data-uid="Android.Media.MediaDrm.SetOnEventListener*"></a>
+
+  <h3 id="Android_Media_MediaDrm_SetOnEventListener_Java_Util_Concurrent_Executor_Android_Media_MediaDrm_OnEventListener_" data-uid="Android.Media.MediaDrm.SetOnEventListener(Java.Util.Concurrent.Executor,Android.Media.MediaDrm.OnEventListener)">
+  SetOnEventListener(Executor, OnEventListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L667"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#setOnEventListener(java.util.concurrent.Executor,android.media.MediaDrm.OnEventListener)">https://developer.android.com/reference/android/media/MediaDrm.html#setOnEventListener(java.util.concurrent.Executor,android.media.MediaDrm.OnEventListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetOnEventListener(Executor arg0, MediaDrm.OnEventListener arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Media.MediaDrm.html">MediaDrm</a>.<a class="xref" href="Android.Media.MediaDrm.OnEventListener.html">OnEventListener</a></dt>
+    <dd><p><a class="xref" href="Android.Media.MediaDrm.OnEventListener.html">MediaDrm.OnEventListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_SetOnExpirationUpdateListener_" data-uid="Android.Media.MediaDrm.SetOnExpirationUpdateListener*"></a>
+
+  <h3 id="Android_Media_MediaDrm_SetOnExpirationUpdateListener_Android_Media_MediaDrm_OnExpirationUpdateListener_Android_Os_Handler_" data-uid="Android.Media.MediaDrm.SetOnExpirationUpdateListener(Android.Media.MediaDrm.OnExpirationUpdateListener,Android.Os.Handler)">
+  SetOnExpirationUpdateListener(OnExpirationUpdateListener, Handler)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L676"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#setOnExpirationUpdateListener(android.media.MediaDrm.OnExpirationUpdateListener,android.os.Handler)">https://developer.android.com/reference/android/media/MediaDrm.html#setOnExpirationUpdateListener(android.media.MediaDrm.OnExpirationUpdateListener,android.os.Handler)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetOnExpirationUpdateListener(MediaDrm.OnExpirationUpdateListener arg0, Handler arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Media.MediaDrm.html">MediaDrm</a>.<a class="xref" href="Android.Media.MediaDrm.OnExpirationUpdateListener.html">OnExpirationUpdateListener</a></dt>
+    <dd><p><a class="xref" href="Android.Media.MediaDrm.OnExpirationUpdateListener.html">MediaDrm.OnExpirationUpdateListener</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Os.Handler.html">Handler</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Handler.html">Handler</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_SetOnExpirationUpdateListener_" data-uid="Android.Media.MediaDrm.SetOnExpirationUpdateListener*"></a>
+
+  <h3 id="Android_Media_MediaDrm_SetOnExpirationUpdateListener_Java_Util_Concurrent_Executor_Android_Media_MediaDrm_OnExpirationUpdateListener_" data-uid="Android.Media.MediaDrm.SetOnExpirationUpdateListener(Java.Util.Concurrent.Executor,Android.Media.MediaDrm.OnExpirationUpdateListener)">
+  SetOnExpirationUpdateListener(Executor, OnExpirationUpdateListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L685"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#setOnExpirationUpdateListener(java.util.concurrent.Executor,android.media.MediaDrm.OnExpirationUpdateListener)">https://developer.android.com/reference/android/media/MediaDrm.html#setOnExpirationUpdateListener(java.util.concurrent.Executor,android.media.MediaDrm.OnExpirationUpdateListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetOnExpirationUpdateListener(Executor arg0, MediaDrm.OnExpirationUpdateListener arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Media.MediaDrm.html">MediaDrm</a>.<a class="xref" href="Android.Media.MediaDrm.OnExpirationUpdateListener.html">OnExpirationUpdateListener</a></dt>
+    <dd><p><a class="xref" href="Android.Media.MediaDrm.OnExpirationUpdateListener.html">MediaDrm.OnExpirationUpdateListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_SetOnKeyStatusChangeListener_" data-uid="Android.Media.MediaDrm.SetOnKeyStatusChangeListener*"></a>
+
+  <h3 id="Android_Media_MediaDrm_SetOnKeyStatusChangeListener_Android_Media_MediaDrm_OnKeyStatusChangeListener_Android_Os_Handler_" data-uid="Android.Media.MediaDrm.SetOnKeyStatusChangeListener(Android.Media.MediaDrm.OnKeyStatusChangeListener,Android.Os.Handler)">
+  SetOnKeyStatusChangeListener(OnKeyStatusChangeListener, Handler)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L694"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#setOnKeyStatusChangeListener(android.media.MediaDrm.OnKeyStatusChangeListener,android.os.Handler)">https://developer.android.com/reference/android/media/MediaDrm.html#setOnKeyStatusChangeListener(android.media.MediaDrm.OnKeyStatusChangeListener,android.os.Handler)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetOnKeyStatusChangeListener(MediaDrm.OnKeyStatusChangeListener arg0, Handler arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Media.MediaDrm.html">MediaDrm</a>.<a class="xref" href="Android.Media.MediaDrm.OnKeyStatusChangeListener.html">OnKeyStatusChangeListener</a></dt>
+    <dd><p><a class="xref" href="Android.Media.MediaDrm.OnKeyStatusChangeListener.html">MediaDrm.OnKeyStatusChangeListener</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Os.Handler.html">Handler</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Handler.html">Handler</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_SetOnKeyStatusChangeListener_" data-uid="Android.Media.MediaDrm.SetOnKeyStatusChangeListener*"></a>
+
+  <h3 id="Android_Media_MediaDrm_SetOnKeyStatusChangeListener_Java_Util_Concurrent_Executor_Android_Media_MediaDrm_OnKeyStatusChangeListener_" data-uid="Android.Media.MediaDrm.SetOnKeyStatusChangeListener(Java.Util.Concurrent.Executor,Android.Media.MediaDrm.OnKeyStatusChangeListener)">
+  SetOnKeyStatusChangeListener(Executor, OnKeyStatusChangeListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L703"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#setOnKeyStatusChangeListener(java.util.concurrent.Executor,android.media.MediaDrm.OnKeyStatusChangeListener)">https://developer.android.com/reference/android/media/MediaDrm.html#setOnKeyStatusChangeListener(java.util.concurrent.Executor,android.media.MediaDrm.OnKeyStatusChangeListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetOnKeyStatusChangeListener(Executor arg0, MediaDrm.OnKeyStatusChangeListener arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Media.MediaDrm.html">MediaDrm</a>.<a class="xref" href="Android.Media.MediaDrm.OnKeyStatusChangeListener.html">OnKeyStatusChangeListener</a></dt>
+    <dd><p><a class="xref" href="Android.Media.MediaDrm.OnKeyStatusChangeListener.html">MediaDrm.OnKeyStatusChangeListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_SetOnSessionLostStateListener_" data-uid="Android.Media.MediaDrm.SetOnSessionLostStateListener*"></a>
+
+  <h3 id="Android_Media_MediaDrm_SetOnSessionLostStateListener_Android_Media_MediaDrm_OnSessionLostStateListener_Android_Os_Handler_" data-uid="Android.Media.MediaDrm.SetOnSessionLostStateListener(Android.Media.MediaDrm.OnSessionLostStateListener,Android.Os.Handler)">
+  SetOnSessionLostStateListener(OnSessionLostStateListener, Handler)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L712"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#setOnSessionLostStateListener(android.media.MediaDrm.OnSessionLostStateListener,android.os.Handler)">https://developer.android.com/reference/android/media/MediaDrm.html#setOnSessionLostStateListener(android.media.MediaDrm.OnSessionLostStateListener,android.os.Handler)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetOnSessionLostStateListener(MediaDrm.OnSessionLostStateListener arg0, Handler arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Media.MediaDrm.html">MediaDrm</a>.<a class="xref" href="Android.Media.MediaDrm.OnSessionLostStateListener.html">OnSessionLostStateListener</a></dt>
+    <dd><p><a class="xref" href="Android.Media.MediaDrm.OnSessionLostStateListener.html">MediaDrm.OnSessionLostStateListener</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Os.Handler.html">Handler</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Handler.html">Handler</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_SetOnSessionLostStateListener_" data-uid="Android.Media.MediaDrm.SetOnSessionLostStateListener*"></a>
+
+  <h3 id="Android_Media_MediaDrm_SetOnSessionLostStateListener_Java_Util_Concurrent_Executor_Android_Media_MediaDrm_OnSessionLostStateListener_" data-uid="Android.Media.MediaDrm.SetOnSessionLostStateListener(Java.Util.Concurrent.Executor,Android.Media.MediaDrm.OnSessionLostStateListener)">
+  SetOnSessionLostStateListener(Executor, OnSessionLostStateListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L721"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#setOnSessionLostStateListener(java.util.concurrent.Executor,android.media.MediaDrm.OnSessionLostStateListener)">https://developer.android.com/reference/android/media/MediaDrm.html#setOnSessionLostStateListener(java.util.concurrent.Executor,android.media.MediaDrm.OnSessionLostStateListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetOnSessionLostStateListener(Executor arg0, MediaDrm.OnSessionLostStateListener arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Media.MediaDrm.html">MediaDrm</a>.<a class="xref" href="Android.Media.MediaDrm.OnSessionLostStateListener.html">OnSessionLostStateListener</a></dt>
+    <dd><p><a class="xref" href="Android.Media.MediaDrm.OnSessionLostStateListener.html">MediaDrm.OnSessionLostStateListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_SetPropertyByteArray_" data-uid="Android.Media.MediaDrm.SetPropertyByteArray*"></a>
+
+  <h3 id="Android_Media_MediaDrm_SetPropertyByteArray_Java_Lang_String_System_Byte___" data-uid="Android.Media.MediaDrm.SetPropertyByteArray(Java.Lang.String,System.Byte[])">
+  SetPropertyByteArray(String, byte[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L564"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#setPropertyByteArray(java.lang.String,byte[])">https://developer.android.com/reference/android/media/MediaDrm.html#setPropertyByteArray(java.lang.String,byte[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPropertyByteArray(String arg0, byte[] arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_MediaDrm_SetPropertyString_" data-uid="Android.Media.MediaDrm.SetPropertyString*"></a>
+
+  <h3 id="Android_Media_MediaDrm_SetPropertyString_Java_Lang_String_Java_Lang_String_" data-uid="Android.Media.MediaDrm.SetPropertyString(Java.Lang.String,Java.Lang.String)">
+  SetPropertyString(String, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L573"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/MediaDrm.html#setPropertyString(java.lang.String,java.lang.String)">https://developer.android.com/reference/android/media/MediaDrm.html#setPropertyString(java.lang.String,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPropertyString(String arg0, String arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/MediaDrm.cs/#L29" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

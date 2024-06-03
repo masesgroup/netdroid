@@ -1,0 +1,2980 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class VoiceInteractionSession | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class VoiceInteractionSession | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_Service_Voice_VoiceInteractionSession.md&amp;value=---%0Auid%3A%20Android.Service.Voice.VoiceInteractionSession%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.Service.Voice.VoiceInteractionSession">
+
+
+
+  <h1 id="Android_Service_Voice_VoiceInteractionSession" data-uid="Android.Service.Voice.VoiceInteractionSession" class="text-break">
+Class VoiceInteractionSession  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/VoiceInteractionSession.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.Service.html">Service</a>.<a class="xref" href="Android.Service.Voice.html">Voice</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html">https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class VoiceInteractionSession : JVMBridgeBase&lt;VoiceInteractionSession&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IComponentCallbacks2, IComponentCallbacks</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.Service.Voice.VoiceInteractionSession.html">VoiceInteractionSession</a>&gt;</div>
+      <div><span class="xref">VoiceInteractionSession</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+      <div><a class="xref" href="Android.Content.IComponentCallbacks2.html">IComponentCallbacks2</a></div>
+      <div><a class="xref" href="Android.Content.IComponentCallbacks.html">IComponentCallbacks</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;VoiceInteractionSession&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;VoiceInteractionSession&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;VoiceInteractionSession&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;VoiceInteractionSession&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;VoiceInteractionSession&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;VoiceInteractionSession&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;VoiceInteractionSession&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;VoiceInteractionSession&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;VoiceInteractionSession&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;VoiceInteractionSession&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;VoiceInteractionSession&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;VoiceInteractionSession&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;VoiceInteractionSession&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;VoiceInteractionSession&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;VoiceInteractionSession&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;VoiceInteractionSession&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;VoiceInteractionSession&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;VoiceInteractionSession&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;VoiceInteractionSession&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;VoiceInteractionSession&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;VoiceInteractionSession&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;VoiceInteractionSession&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;VoiceInteractionSession&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;VoiceInteractionSession&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;VoiceInteractionSession&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;VoiceInteractionSession&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;VoiceInteractionSession&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;VoiceInteractionSession&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;VoiceInteractionSession&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;VoiceInteractionSession&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;VoiceInteractionSession&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;VoiceInteractionSession&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;VoiceInteractionSession&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;VoiceInteractionSession&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;VoiceInteractionSession&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;VoiceInteractionSession&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;VoiceInteractionSession&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;VoiceInteractionSession&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;VoiceInteractionSession&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;VoiceInteractionSession&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;VoiceInteractionSession&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;VoiceInteractionSession&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;VoiceInteractionSession&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;VoiceInteractionSession&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;VoiceInteractionSession&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;VoiceInteractionSession&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;VoiceInteractionSession&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;VoiceInteractionSession&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;VoiceInteractionSession&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;VoiceInteractionSession&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession__ctor_" data-uid="Android.Service.Voice.VoiceInteractionSession.#ctor*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession__ctor" data-uid="Android.Service.Voice.VoiceInteractionSession.#ctor">
+  VoiceInteractionSession()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/AllPackageClasses.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VoiceInteractionSession()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession__ctor_" data-uid="Android.Service.Voice.VoiceInteractionSession.#ctor*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession__ctor_Android_Content_Context_" data-uid="Android.Service.Voice.VoiceInteractionSession.#ctor(Android.Content.Context)">
+  VoiceInteractionSession(Context)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/VoiceInteractionSession.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#%3Cinit%3E(android.content.Context)">https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#%3Cinit%3E(android.content.Context)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VoiceInteractionSession(Context arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession__ctor_" data-uid="Android.Service.Voice.VoiceInteractionSession.#ctor*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession__ctor_Android_Content_Context_Android_Os_Handler_" data-uid="Android.Service.Voice.VoiceInteractionSession.#ctor(Android.Content.Context,Android.Os.Handler)">
+  VoiceInteractionSession(Context, Handler)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/VoiceInteractionSession.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#%3Cinit%3E(android.content.Context,android.os.Handler)">https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#%3Cinit%3E(android.content.Context,android.os.Handler)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VoiceInteractionSession(Context arg0, Handler arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Os.Handler.html">Handler</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Handler.html">Handler</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession__ctor_" data-uid="Android.Service.Voice.VoiceInteractionSession.#ctor*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession__ctor_System_Object___" data-uid="Android.Service.Voice.VoiceInteractionSession.#ctor(System.Object[])">
+  VoiceInteractionSession(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/AllPackageClasses.cs/#L131"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VoiceInteractionSession(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession_BridgeClassName_" data-uid="Android.Service.Voice.VoiceInteractionSession.BridgeClassName*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession_BridgeClassName" data-uid="Android.Service.Voice.VoiceInteractionSession.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/AllPackageClasses.cs/#L138"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession_IsBridgeAbstract_" data-uid="Android.Service.Voice.VoiceInteractionSession.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession_IsBridgeAbstract" data-uid="Android.Service.Voice.VoiceInteractionSession.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/AllPackageClasses.cs/#L142"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession_IsBridgeCloseable_" data-uid="Android.Service.Voice.VoiceInteractionSession.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession_IsBridgeCloseable" data-uid="Android.Service.Voice.VoiceInteractionSession.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/AllPackageClasses.cs/#L146"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession_IsBridgeInterface_" data-uid="Android.Service.Voice.VoiceInteractionSession.IsBridgeInterface*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession_IsBridgeInterface" data-uid="Android.Service.Voice.VoiceInteractionSession.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/AllPackageClasses.cs/#L150"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession_IsBridgeStatic_" data-uid="Android.Service.Voice.VoiceInteractionSession.IsBridgeStatic*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession_IsBridgeStatic" data-uid="Android.Service.Voice.VoiceInteractionSession.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/AllPackageClasses.cs/#L154"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession_KEY_SHOW_SESSION_ID_" data-uid="Android.Service.Voice.VoiceInteractionSession.KEY_SHOW_SESSION_ID*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession_KEY_SHOW_SESSION_ID" data-uid="Android.Service.Voice.VoiceInteractionSession.KEY_SHOW_SESSION_ID">
+  KEY_SHOW_SESSION_ID
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/VoiceInteractionSession.cs/#L112"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#KEY_SHOW_SESSION_ID">https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#KEY_SHOW_SESSION_ID</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String KEY_SHOW_SESSION_ID { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession_SHOW_SOURCE_ACTIVITY_" data-uid="Android.Service.Voice.VoiceInteractionSession.SHOW_SOURCE_ACTIVITY*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession_SHOW_SOURCE_ACTIVITY" data-uid="Android.Service.Voice.VoiceInteractionSession.SHOW_SOURCE_ACTIVITY">
+  SHOW_SOURCE_ACTIVITY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/VoiceInteractionSession.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#SHOW_SOURCE_ACTIVITY">https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#SHOW_SOURCE_ACTIVITY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SHOW_SOURCE_ACTIVITY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession_SHOW_SOURCE_APPLICATION_" data-uid="Android.Service.Voice.VoiceInteractionSession.SHOW_SOURCE_APPLICATION*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession_SHOW_SOURCE_APPLICATION" data-uid="Android.Service.Voice.VoiceInteractionSession.SHOW_SOURCE_APPLICATION">
+  SHOW_SOURCE_APPLICATION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/VoiceInteractionSession.cs/#L70"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#SHOW_SOURCE_APPLICATION">https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#SHOW_SOURCE_APPLICATION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SHOW_SOURCE_APPLICATION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession_SHOW_SOURCE_ASSIST_GESTURE_" data-uid="Android.Service.Voice.VoiceInteractionSession.SHOW_SOURCE_ASSIST_GESTURE*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession_SHOW_SOURCE_ASSIST_GESTURE" data-uid="Android.Service.Voice.VoiceInteractionSession.SHOW_SOURCE_ASSIST_GESTURE">
+  SHOW_SOURCE_ASSIST_GESTURE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/VoiceInteractionSession.cs/#L76"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#SHOW_SOURCE_ASSIST_GESTURE">https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#SHOW_SOURCE_ASSIST_GESTURE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SHOW_SOURCE_ASSIST_GESTURE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession_SHOW_SOURCE_AUTOMOTIVE_SYSTEM_UI_" data-uid="Android.Service.Voice.VoiceInteractionSession.SHOW_SOURCE_AUTOMOTIVE_SYSTEM_UI*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession_SHOW_SOURCE_AUTOMOTIVE_SYSTEM_UI" data-uid="Android.Service.Voice.VoiceInteractionSession.SHOW_SOURCE_AUTOMOTIVE_SYSTEM_UI">
+  SHOW_SOURCE_AUTOMOTIVE_SYSTEM_UI
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/VoiceInteractionSession.cs/#L82"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#SHOW_SOURCE_AUTOMOTIVE_SYSTEM_UI">https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#SHOW_SOURCE_AUTOMOTIVE_SYSTEM_UI</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SHOW_SOURCE_AUTOMOTIVE_SYSTEM_UI { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession_SHOW_SOURCE_NOTIFICATION_" data-uid="Android.Service.Voice.VoiceInteractionSession.SHOW_SOURCE_NOTIFICATION*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession_SHOW_SOURCE_NOTIFICATION" data-uid="Android.Service.Voice.VoiceInteractionSession.SHOW_SOURCE_NOTIFICATION">
+  SHOW_SOURCE_NOTIFICATION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/VoiceInteractionSession.cs/#L88"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#SHOW_SOURCE_NOTIFICATION">https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#SHOW_SOURCE_NOTIFICATION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SHOW_SOURCE_NOTIFICATION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession_SHOW_SOURCE_PUSH_TO_TALK_" data-uid="Android.Service.Voice.VoiceInteractionSession.SHOW_SOURCE_PUSH_TO_TALK*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession_SHOW_SOURCE_PUSH_TO_TALK" data-uid="Android.Service.Voice.VoiceInteractionSession.SHOW_SOURCE_PUSH_TO_TALK">
+  SHOW_SOURCE_PUSH_TO_TALK
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/VoiceInteractionSession.cs/#L94"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#SHOW_SOURCE_PUSH_TO_TALK">https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#SHOW_SOURCE_PUSH_TO_TALK</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SHOW_SOURCE_PUSH_TO_TALK { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession_SHOW_WITH_ASSIST_" data-uid="Android.Service.Voice.VoiceInteractionSession.SHOW_WITH_ASSIST*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession_SHOW_WITH_ASSIST" data-uid="Android.Service.Voice.VoiceInteractionSession.SHOW_WITH_ASSIST">
+  SHOW_WITH_ASSIST
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/VoiceInteractionSession.cs/#L100"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#SHOW_WITH_ASSIST">https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#SHOW_WITH_ASSIST</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SHOW_WITH_ASSIST { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession_SHOW_WITH_SCREENSHOT_" data-uid="Android.Service.Voice.VoiceInteractionSession.SHOW_WITH_SCREENSHOT*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession_SHOW_WITH_SCREENSHOT" data-uid="Android.Service.Voice.VoiceInteractionSession.SHOW_WITH_SCREENSHOT">
+  SHOW_WITH_SCREENSHOT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/VoiceInteractionSession.cs/#L106"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#SHOW_WITH_SCREENSHOT">https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#SHOW_WITH_SCREENSHOT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SHOW_WITH_SCREENSHOT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession_CloseSystemDialogs_" data-uid="Android.Service.Voice.VoiceInteractionSession.CloseSystemDialogs*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession_CloseSystemDialogs" data-uid="Android.Service.Voice.VoiceInteractionSession.CloseSystemDialogs">
+  CloseSystemDialogs()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/VoiceInteractionSession.cs/#L264"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#closeSystemDialogs()">https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#closeSystemDialogs()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CloseSystemDialogs()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession_Dump_" data-uid="Android.Service.Voice.VoiceInteractionSession.Dump*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession_Dump_Java_Lang_String_Java_Io_FileDescriptor_Java_Io_PrintWriter_Java_Lang_String___" data-uid="Android.Service.Voice.VoiceInteractionSession.Dump(Java.Lang.String,Java.Io.FileDescriptor,Java.Io.PrintWriter,Java.Lang.String[])">
+  Dump(String, FileDescriptor, PrintWriter, String[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/VoiceInteractionSession.cs/#L275"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[])">https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dump(String arg0, FileDescriptor arg1, PrintWriter arg2, String[] arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Io.FileDescriptor.html">FileDescriptor</a></dt>
+    <dd><p><a class="xref" href="Java.Io.FileDescriptor.html">FileDescriptor</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Io.PrintWriter.html">PrintWriter</a></dt>
+    <dd><p><a class="xref" href="Java.Io.PrintWriter.html">PrintWriter</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Java.Lang.String.html">String</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession_Finish_" data-uid="Android.Service.Voice.VoiceInteractionSession.Finish*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession_Finish" data-uid="Android.Service.Voice.VoiceInteractionSession.Finish">
+  Finish()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/VoiceInteractionSession.cs/#L282"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#finish()">https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#finish()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Finish()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession_GetContext_" data-uid="Android.Service.Voice.VoiceInteractionSession.GetContext*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession_GetContext" data-uid="Android.Service.Voice.VoiceInteractionSession.GetContext">
+  GetContext()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/VoiceInteractionSession.cs/#L135"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#getContext()">https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#getContext()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Context GetContext()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession_GetDisabledShowContext_" data-uid="Android.Service.Voice.VoiceInteractionSession.GetDisabledShowContext*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession_GetDisabledShowContext" data-uid="Android.Service.Voice.VoiceInteractionSession.GetDisabledShowContext">
+  GetDisabledShowContext()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/VoiceInteractionSession.cs/#L249"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#getDisabledShowContext()">https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#getDisabledShowContext()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetDisabledShowContext()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession_GetLayoutInflater_" data-uid="Android.Service.Voice.VoiceInteractionSession.GetLayoutInflater*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession_GetLayoutInflater" data-uid="Android.Service.Voice.VoiceInteractionSession.GetLayoutInflater">
+  GetLayoutInflater()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/VoiceInteractionSession.cs/#L143"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#getLayoutInflater()">https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#getLayoutInflater()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LayoutInflater GetLayoutInflater()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.View.LayoutInflater.html">LayoutInflater</a></dt>
+    <dd><p><a class="xref" href="Android.View.LayoutInflater.html">LayoutInflater</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession_GetUserDisabledShowContext_" data-uid="Android.Service.Voice.VoiceInteractionSession.GetUserDisabledShowContext*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession_GetUserDisabledShowContext" data-uid="Android.Service.Voice.VoiceInteractionSession.GetUserDisabledShowContext">
+  GetUserDisabledShowContext()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/VoiceInteractionSession.cs/#L257"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#getUserDisabledShowContext()">https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#getUserDisabledShowContext()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetUserDisabledShowContext()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession_GetWindow_" data-uid="Android.Service.Voice.VoiceInteractionSession.GetWindow*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession_GetWindow" data-uid="Android.Service.Voice.VoiceInteractionSession.GetWindow">
+  GetWindow()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/VoiceInteractionSession.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#getWindow()">https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#getWindow()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dialog GetWindow()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.App.Dialog.html">Dialog</a></dt>
+    <dd><p><a class="xref" href="Android.App.Dialog.html">Dialog</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession_Hide_" data-uid="Android.Service.Voice.VoiceInteractionSession.Hide*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession_Hide" data-uid="Android.Service.Voice.VoiceInteractionSession.Hide">
+  Hide()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/VoiceInteractionSession.cs/#L289"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#hide()">https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#hide()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Hide()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession_OnAssistStructureFailure_" data-uid="Android.Service.Voice.VoiceInteractionSession.OnAssistStructureFailure*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession_OnAssistStructureFailure_MASES_JCOBridge_C2JBridge_JVMBridgeException_" data-uid="Android.Service.Voice.VoiceInteractionSession.OnAssistStructureFailure(MASES.JCOBridge.C2JBridge.JVMBridgeException)">
+  OnAssistStructureFailure(JVMBridgeException)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/VoiceInteractionSession.cs/#L297"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onAssistStructureFailure(java.lang.Throwable)">https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onAssistStructureFailure(java.lang.Throwable)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnAssistStructureFailure(JVMBridgeException arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <span class="xref">JVMBridgeException</span></dt>
+    <dd><p><a class="xref" href="Java.Lang.Throwable.html">Throwable</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession_OnBackPressed_" data-uid="Android.Service.Voice.VoiceInteractionSession.OnBackPressed*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession_OnBackPressed" data-uid="Android.Service.Voice.VoiceInteractionSession.OnBackPressed">
+  OnBackPressed()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/VoiceInteractionSession.cs/#L304"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onBackPressed()">https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onBackPressed()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnBackPressed()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession_OnCancelRequest_" data-uid="Android.Service.Voice.VoiceInteractionSession.OnCancelRequest*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession_OnCancelRequest_Android_Service_Voice_VoiceInteractionSession_Request_" data-uid="Android.Service.Voice.VoiceInteractionSession.OnCancelRequest(Android.Service.Voice.VoiceInteractionSession.Request)">
+  OnCancelRequest(Request)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/VoiceInteractionSession.cs/#L312"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onCancelRequest(android.service.voice.VoiceInteractionSession.Request)">https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onCancelRequest(android.service.voice.VoiceInteractionSession.Request)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnCancelRequest(VoiceInteractionSession.Request arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Service.Voice.VoiceInteractionSession.html">VoiceInteractionSession</a>.<a class="xref" href="Android.Service.Voice.VoiceInteractionSession.Request.html">Request</a></dt>
+    <dd><p><a class="xref" href="Android.Service.Voice.VoiceInteractionSession.Request.html">VoiceInteractionSession.Request</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession_OnCloseSystemDialogs_" data-uid="Android.Service.Voice.VoiceInteractionSession.OnCloseSystemDialogs*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession_OnCloseSystemDialogs" data-uid="Android.Service.Voice.VoiceInteractionSession.OnCloseSystemDialogs">
+  OnCloseSystemDialogs()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/VoiceInteractionSession.cs/#L319"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onCloseSystemDialogs()">https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onCloseSystemDialogs()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnCloseSystemDialogs()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession_OnComputeInsets_" data-uid="Android.Service.Voice.VoiceInteractionSession.OnComputeInsets*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession_OnComputeInsets_Android_Service_Voice_VoiceInteractionSession_Insets_" data-uid="Android.Service.Voice.VoiceInteractionSession.OnComputeInsets(Android.Service.Voice.VoiceInteractionSession.Insets)">
+  OnComputeInsets(Insets)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/VoiceInteractionSession.cs/#L327"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onComputeInsets(android.service.voice.VoiceInteractionSession.Insets)">https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onComputeInsets(android.service.voice.VoiceInteractionSession.Insets)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnComputeInsets(VoiceInteractionSession.Insets arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Service.Voice.VoiceInteractionSession.html">VoiceInteractionSession</a>.<a class="xref" href="Android.Service.Voice.VoiceInteractionSession.Insets.html">Insets</a></dt>
+    <dd><p><a class="xref" href="Android.Service.Voice.VoiceInteractionSession.Insets.html">VoiceInteractionSession.Insets</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession_OnConfigurationChanged_" data-uid="Android.Service.Voice.VoiceInteractionSession.OnConfigurationChanged*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession_OnConfigurationChanged_Android_Content_Res_Configuration_" data-uid="Android.Service.Voice.VoiceInteractionSession.OnConfigurationChanged(Android.Content.Res.Configuration)">
+  OnConfigurationChanged(Configuration)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/VoiceInteractionSession.cs/#L335"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onConfigurationChanged(android.content.res.Configuration)">https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onConfigurationChanged(android.content.res.Configuration)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnConfigurationChanged(Configuration arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Res.Configuration.html">Configuration</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Res.Configuration.html">Configuration</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession_OnCreate_" data-uid="Android.Service.Voice.VoiceInteractionSession.OnCreate*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession_OnCreate" data-uid="Android.Service.Voice.VoiceInteractionSession.OnCreate">
+  OnCreate()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/VoiceInteractionSession.cs/#L342"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onCreate()">https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onCreate()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnCreate()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession_OnCreateContentView_" data-uid="Android.Service.Voice.VoiceInteractionSession.OnCreateContentView*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession_OnCreateContentView" data-uid="Android.Service.Voice.VoiceInteractionSession.OnCreateContentView">
+  OnCreateContentView()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/VoiceInteractionSession.cs/#L151"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onCreateContentView()">https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onCreateContentView()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public View OnCreateContentView()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.View.View.html">View</a></dt>
+    <dd><p><a class="xref" href="Android.View.View.html">View</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession_OnDestroy_" data-uid="Android.Service.Voice.VoiceInteractionSession.OnDestroy*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession_OnDestroy" data-uid="Android.Service.Voice.VoiceInteractionSession.OnDestroy">
+  OnDestroy()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/VoiceInteractionSession.cs/#L349"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onDestroy()">https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onDestroy()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnDestroy()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession_OnDirectActionsInvalidated_" data-uid="Android.Service.Voice.VoiceInteractionSession.OnDirectActionsInvalidated*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession_OnDirectActionsInvalidated_Android_Service_Voice_VoiceInteractionSession_ActivityId_" data-uid="Android.Service.Voice.VoiceInteractionSession.OnDirectActionsInvalidated(Android.Service.Voice.VoiceInteractionSession.ActivityId)">
+  OnDirectActionsInvalidated(ActivityId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/VoiceInteractionSession.cs/#L357"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onDirectActionsInvalidated(android.service.voice.VoiceInteractionSession.ActivityId)">https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onDirectActionsInvalidated(android.service.voice.VoiceInteractionSession.ActivityId)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnDirectActionsInvalidated(VoiceInteractionSession.ActivityId arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Service.Voice.VoiceInteractionSession.html">VoiceInteractionSession</a>.<a class="xref" href="Android.Service.Voice.VoiceInteractionSession.ActivityId.html">ActivityId</a></dt>
+    <dd><p><a class="xref" href="Android.Service.Voice.VoiceInteractionSession.ActivityId.html">VoiceInteractionSession.ActivityId</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession_OnGetSupportedCommands_" data-uid="Android.Service.Voice.VoiceInteractionSession.OnGetSupportedCommands*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession_OnGetSupportedCommands_Java_Lang_String___" data-uid="Android.Service.Voice.VoiceInteractionSession.OnGetSupportedCommands(Java.Lang.String[])">
+  OnGetSupportedCommands(String[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/VoiceInteractionSession.cs/#L201"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onGetSupportedCommands(java.lang.String[])">https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onGetSupportedCommands(java.lang.String[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool[] OnGetSupportedCommands(String[] arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession_OnHandleAssist_" data-uid="Android.Service.Voice.VoiceInteractionSession.OnHandleAssist*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession_OnHandleAssist_Android_Os_Bundle_Android_App_Assist_AssistStructure_Android_App_Assist_AssistContent_" data-uid="Android.Service.Voice.VoiceInteractionSession.OnHandleAssist(Android.Os.Bundle,Android.App.Assist.AssistStructure,Android.App.Assist.AssistContent)">
+  OnHandleAssist(Bundle, AssistStructure, AssistContent)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/VoiceInteractionSession.cs/#L367"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onHandleAssist(android.os.Bundle,android.app.assist.AssistStructure,android.app.assist.AssistContent)">https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onHandleAssist(android.os.Bundle,android.app.assist.AssistStructure,android.app.assist.AssistContent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void OnHandleAssist(Bundle arg0, AssistStructure arg1, AssistContent arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.App.Assist.AssistStructure.html">AssistStructure</a></dt>
+    <dd><p><a class="xref" href="Android.App.Assist.AssistStructure.html">AssistStructure</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.App.Assist.AssistContent.html">AssistContent</a></dt>
+    <dd><p><a class="xref" href="Android.App.Assist.AssistContent.html">AssistContent</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession_OnHandleAssist_" data-uid="Android.Service.Voice.VoiceInteractionSession.OnHandleAssist*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession_OnHandleAssist_Android_Service_Voice_VoiceInteractionSession_AssistState_" data-uid="Android.Service.Voice.VoiceInteractionSession.OnHandleAssist(Android.Service.Voice.VoiceInteractionSession.AssistState)">
+  OnHandleAssist(AssistState)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/VoiceInteractionSession.cs/#L376"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onHandleAssist(android.service.voice.VoiceInteractionSession.AssistState)">https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onHandleAssist(android.service.voice.VoiceInteractionSession.AssistState)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnHandleAssist(VoiceInteractionSession.AssistState arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Service.Voice.VoiceInteractionSession.html">VoiceInteractionSession</a>.<a class="xref" href="Android.Service.Voice.VoiceInteractionSession.AssistState.html">AssistState</a></dt>
+    <dd><p><a class="xref" href="Android.Service.Voice.VoiceInteractionSession.AssistState.html">VoiceInteractionSession.AssistState</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession_OnHandleAssistSecondary_" data-uid="Android.Service.Voice.VoiceInteractionSession.OnHandleAssistSecondary*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession_OnHandleAssistSecondary_Android_Os_Bundle_Android_App_Assist_AssistStructure_Android_App_Assist_AssistContent_System_Int32_System_Int32_" data-uid="Android.Service.Voice.VoiceInteractionSession.OnHandleAssistSecondary(Android.Os.Bundle,Android.App.Assist.AssistStructure,Android.App.Assist.AssistContent,System.Int32,System.Int32)">
+  OnHandleAssistSecondary(Bundle, AssistStructure, AssistContent, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/VoiceInteractionSession.cs/#L388"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onHandleAssistSecondary(android.os.Bundle,android.app.assist.AssistStructure,android.app.assist.AssistContent,int,int)">https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onHandleAssistSecondary(android.os.Bundle,android.app.assist.AssistStructure,android.app.assist.AssistContent,int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void OnHandleAssistSecondary(Bundle arg0, AssistStructure arg1, AssistContent arg2, int arg3, int arg4)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.App.Assist.AssistStructure.html">AssistStructure</a></dt>
+    <dd><p><a class="xref" href="Android.App.Assist.AssistStructure.html">AssistStructure</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.App.Assist.AssistContent.html">AssistContent</a></dt>
+    <dd><p><a class="xref" href="Android.App.Assist.AssistContent.html">AssistContent</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg4</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession_OnHandleScreenshot_" data-uid="Android.Service.Voice.VoiceInteractionSession.OnHandleScreenshot*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession_OnHandleScreenshot_Android_Graphics_Bitmap_" data-uid="Android.Service.Voice.VoiceInteractionSession.OnHandleScreenshot(Android.Graphics.Bitmap)">
+  OnHandleScreenshot(Bitmap)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/VoiceInteractionSession.cs/#L397"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onHandleScreenshot(android.graphics.Bitmap)">https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onHandleScreenshot(android.graphics.Bitmap)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnHandleScreenshot(Bitmap arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Graphics.Bitmap.html">Bitmap</a></dt>
+    <dd><p><a class="xref" href="Android.Graphics.Bitmap.html">Bitmap</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession_OnHide_" data-uid="Android.Service.Voice.VoiceInteractionSession.OnHide*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession_OnHide" data-uid="Android.Service.Voice.VoiceInteractionSession.OnHide">
+  OnHide()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/VoiceInteractionSession.cs/#L404"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onHide()">https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onHide()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnHide()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession_OnKeyDown_" data-uid="Android.Service.Voice.VoiceInteractionSession.OnKeyDown*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession_OnKeyDown_System_Int32_Android_View_KeyEvent_" data-uid="Android.Service.Voice.VoiceInteractionSession.OnKeyDown(System.Int32,Android.View.KeyEvent)">
+  OnKeyDown(int, KeyEvent)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/VoiceInteractionSession.cs/#L161"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onKeyDown(int,android.view.KeyEvent)">https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onKeyDown(int,android.view.KeyEvent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool OnKeyDown(int arg0, KeyEvent arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.View.KeyEvent.html">KeyEvent</a></dt>
+    <dd><p><a class="xref" href="Android.View.KeyEvent.html">KeyEvent</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession_OnKeyLongPress_" data-uid="Android.Service.Voice.VoiceInteractionSession.OnKeyLongPress*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession_OnKeyLongPress_System_Int32_Android_View_KeyEvent_" data-uid="Android.Service.Voice.VoiceInteractionSession.OnKeyLongPress(System.Int32,Android.View.KeyEvent)">
+  OnKeyLongPress(int, KeyEvent)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/VoiceInteractionSession.cs/#L171"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onKeyLongPress(int,android.view.KeyEvent)">https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onKeyLongPress(int,android.view.KeyEvent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool OnKeyLongPress(int arg0, KeyEvent arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.View.KeyEvent.html">KeyEvent</a></dt>
+    <dd><p><a class="xref" href="Android.View.KeyEvent.html">KeyEvent</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession_OnKeyMultiple_" data-uid="Android.Service.Voice.VoiceInteractionSession.OnKeyMultiple*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession_OnKeyMultiple_System_Int32_System_Int32_Android_View_KeyEvent_" data-uid="Android.Service.Voice.VoiceInteractionSession.OnKeyMultiple(System.Int32,System.Int32,Android.View.KeyEvent)">
+  OnKeyMultiple(int, int, KeyEvent)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/VoiceInteractionSession.cs/#L182"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onKeyMultiple(int,int,android.view.KeyEvent)">https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onKeyMultiple(int,int,android.view.KeyEvent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool OnKeyMultiple(int arg0, int arg1, KeyEvent arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.View.KeyEvent.html">KeyEvent</a></dt>
+    <dd><p><a class="xref" href="Android.View.KeyEvent.html">KeyEvent</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession_OnKeyUp_" data-uid="Android.Service.Voice.VoiceInteractionSession.OnKeyUp*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession_OnKeyUp_System_Int32_Android_View_KeyEvent_" data-uid="Android.Service.Voice.VoiceInteractionSession.OnKeyUp(System.Int32,Android.View.KeyEvent)">
+  OnKeyUp(int, KeyEvent)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/VoiceInteractionSession.cs/#L192"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onKeyUp(int,android.view.KeyEvent)">https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onKeyUp(int,android.view.KeyEvent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool OnKeyUp(int arg0, KeyEvent arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.View.KeyEvent.html">KeyEvent</a></dt>
+    <dd><p><a class="xref" href="Android.View.KeyEvent.html">KeyEvent</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession_OnLockscreenShown_" data-uid="Android.Service.Voice.VoiceInteractionSession.OnLockscreenShown*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession_OnLockscreenShown" data-uid="Android.Service.Voice.VoiceInteractionSession.OnLockscreenShown">
+  OnLockscreenShown()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/VoiceInteractionSession.cs/#L411"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onLockscreenShown()">https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onLockscreenShown()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnLockscreenShown()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession_OnLowMemory_" data-uid="Android.Service.Voice.VoiceInteractionSession.OnLowMemory*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession_OnLowMemory" data-uid="Android.Service.Voice.VoiceInteractionSession.OnLowMemory">
+  OnLowMemory()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/VoiceInteractionSession.cs/#L418"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onLowMemory()">https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onLowMemory()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnLowMemory()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession_OnPrepareShow_" data-uid="Android.Service.Voice.VoiceInteractionSession.OnPrepareShow*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession_OnPrepareShow_Android_Os_Bundle_System_Int32_" data-uid="Android.Service.Voice.VoiceInteractionSession.OnPrepareShow(Android.Os.Bundle,System.Int32)">
+  OnPrepareShow(Bundle, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/VoiceInteractionSession.cs/#L427"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onPrepareShow(android.os.Bundle,int)">https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onPrepareShow(android.os.Bundle,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnPrepareShow(Bundle arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession_OnRequestAbortVoice_" data-uid="Android.Service.Voice.VoiceInteractionSession.OnRequestAbortVoice*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession_OnRequestAbortVoice_Android_Service_Voice_VoiceInteractionSession_AbortVoiceRequest_" data-uid="Android.Service.Voice.VoiceInteractionSession.OnRequestAbortVoice(Android.Service.Voice.VoiceInteractionSession.AbortVoiceRequest)">
+  OnRequestAbortVoice(AbortVoiceRequest)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/VoiceInteractionSession.cs/#L435"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onRequestAbortVoice(android.service.voice.VoiceInteractionSession.AbortVoiceRequest)">https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onRequestAbortVoice(android.service.voice.VoiceInteractionSession.AbortVoiceRequest)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnRequestAbortVoice(VoiceInteractionSession.AbortVoiceRequest arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Service.Voice.VoiceInteractionSession.html">VoiceInteractionSession</a>.<a class="xref" href="Android.Service.Voice.VoiceInteractionSession.AbortVoiceRequest.html">AbortVoiceRequest</a></dt>
+    <dd><p><a class="xref" href="Android.Service.Voice.VoiceInteractionSession.AbortVoiceRequest.html">VoiceInteractionSession.AbortVoiceRequest</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession_OnRequestCommand_" data-uid="Android.Service.Voice.VoiceInteractionSession.OnRequestCommand*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession_OnRequestCommand_Android_Service_Voice_VoiceInteractionSession_CommandRequest_" data-uid="Android.Service.Voice.VoiceInteractionSession.OnRequestCommand(Android.Service.Voice.VoiceInteractionSession.CommandRequest)">
+  OnRequestCommand(CommandRequest)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/VoiceInteractionSession.cs/#L443"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onRequestCommand(android.service.voice.VoiceInteractionSession.CommandRequest)">https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onRequestCommand(android.service.voice.VoiceInteractionSession.CommandRequest)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnRequestCommand(VoiceInteractionSession.CommandRequest arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Service.Voice.VoiceInteractionSession.html">VoiceInteractionSession</a>.<a class="xref" href="Android.Service.Voice.VoiceInteractionSession.CommandRequest.html">CommandRequest</a></dt>
+    <dd><p><a class="xref" href="Android.Service.Voice.VoiceInteractionSession.CommandRequest.html">VoiceInteractionSession.CommandRequest</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession_OnRequestCompleteVoice_" data-uid="Android.Service.Voice.VoiceInteractionSession.OnRequestCompleteVoice*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession_OnRequestCompleteVoice_Android_Service_Voice_VoiceInteractionSession_CompleteVoiceRequest_" data-uid="Android.Service.Voice.VoiceInteractionSession.OnRequestCompleteVoice(Android.Service.Voice.VoiceInteractionSession.CompleteVoiceRequest)">
+  OnRequestCompleteVoice(CompleteVoiceRequest)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/VoiceInteractionSession.cs/#L451"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onRequestCompleteVoice(android.service.voice.VoiceInteractionSession.CompleteVoiceRequest)">https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onRequestCompleteVoice(android.service.voice.VoiceInteractionSession.CompleteVoiceRequest)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnRequestCompleteVoice(VoiceInteractionSession.CompleteVoiceRequest arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Service.Voice.VoiceInteractionSession.html">VoiceInteractionSession</a>.<a class="xref" href="Android.Service.Voice.VoiceInteractionSession.CompleteVoiceRequest.html">CompleteVoiceRequest</a></dt>
+    <dd><p><a class="xref" href="Android.Service.Voice.VoiceInteractionSession.CompleteVoiceRequest.html">VoiceInteractionSession.CompleteVoiceRequest</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession_OnRequestConfirmation_" data-uid="Android.Service.Voice.VoiceInteractionSession.OnRequestConfirmation*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession_OnRequestConfirmation_Android_Service_Voice_VoiceInteractionSession_ConfirmationRequest_" data-uid="Android.Service.Voice.VoiceInteractionSession.OnRequestConfirmation(Android.Service.Voice.VoiceInteractionSession.ConfirmationRequest)">
+  OnRequestConfirmation(ConfirmationRequest)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/VoiceInteractionSession.cs/#L459"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onRequestConfirmation(android.service.voice.VoiceInteractionSession.ConfirmationRequest)">https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onRequestConfirmation(android.service.voice.VoiceInteractionSession.ConfirmationRequest)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnRequestConfirmation(VoiceInteractionSession.ConfirmationRequest arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Service.Voice.VoiceInteractionSession.html">VoiceInteractionSession</a>.<a class="xref" href="Android.Service.Voice.VoiceInteractionSession.ConfirmationRequest.html">ConfirmationRequest</a></dt>
+    <dd><p><a class="xref" href="Android.Service.Voice.VoiceInteractionSession.ConfirmationRequest.html">VoiceInteractionSession.ConfirmationRequest</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession_OnRequestPickOption_" data-uid="Android.Service.Voice.VoiceInteractionSession.OnRequestPickOption*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession_OnRequestPickOption_Android_Service_Voice_VoiceInteractionSession_PickOptionRequest_" data-uid="Android.Service.Voice.VoiceInteractionSession.OnRequestPickOption(Android.Service.Voice.VoiceInteractionSession.PickOptionRequest)">
+  OnRequestPickOption(PickOptionRequest)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/VoiceInteractionSession.cs/#L467"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onRequestPickOption(android.service.voice.VoiceInteractionSession.PickOptionRequest)">https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onRequestPickOption(android.service.voice.VoiceInteractionSession.PickOptionRequest)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnRequestPickOption(VoiceInteractionSession.PickOptionRequest arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Service.Voice.VoiceInteractionSession.html">VoiceInteractionSession</a>.<a class="xref" href="Android.Service.Voice.VoiceInteractionSession.PickOptionRequest.html">PickOptionRequest</a></dt>
+    <dd><p><a class="xref" href="Android.Service.Voice.VoiceInteractionSession.PickOptionRequest.html">VoiceInteractionSession.PickOptionRequest</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession_OnShow_" data-uid="Android.Service.Voice.VoiceInteractionSession.OnShow*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession_OnShow_Android_Os_Bundle_System_Int32_" data-uid="Android.Service.Voice.VoiceInteractionSession.OnShow(Android.Os.Bundle,System.Int32)">
+  OnShow(Bundle, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/VoiceInteractionSession.cs/#L476"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onShow(android.os.Bundle,int)">https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onShow(android.os.Bundle,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnShow(Bundle arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession_OnTaskFinished_" data-uid="Android.Service.Voice.VoiceInteractionSession.OnTaskFinished*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession_OnTaskFinished_Android_Content_Intent_System_Int32_" data-uid="Android.Service.Voice.VoiceInteractionSession.OnTaskFinished(Android.Content.Intent,System.Int32)">
+  OnTaskFinished(Intent, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/VoiceInteractionSession.cs/#L485"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onTaskFinished(android.content.Intent,int)">https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onTaskFinished(android.content.Intent,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnTaskFinished(Intent arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Intent.html">Intent</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Intent.html">Intent</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession_OnTaskStarted_" data-uid="Android.Service.Voice.VoiceInteractionSession.OnTaskStarted*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession_OnTaskStarted_Android_Content_Intent_System_Int32_" data-uid="Android.Service.Voice.VoiceInteractionSession.OnTaskStarted(Android.Content.Intent,System.Int32)">
+  OnTaskStarted(Intent, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/VoiceInteractionSession.cs/#L494"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onTaskStarted(android.content.Intent,int)">https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onTaskStarted(android.content.Intent,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnTaskStarted(Intent arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Intent.html">Intent</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Intent.html">Intent</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession_OnTrimMemory_" data-uid="Android.Service.Voice.VoiceInteractionSession.OnTrimMemory*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession_OnTrimMemory_System_Int32_" data-uid="Android.Service.Voice.VoiceInteractionSession.OnTrimMemory(System.Int32)">
+  OnTrimMemory(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/VoiceInteractionSession.cs/#L502"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onTrimMemory(int)">https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#onTrimMemory(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnTrimMemory(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession_PerformDirectAction_" data-uid="Android.Service.Voice.VoiceInteractionSession.PerformDirectAction*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession_PerformDirectAction_Android_App_DirectAction_Android_Os_Bundle_Android_Os_CancellationSignal_Java_Util_Concurrent_Executor_Java_Util_Function_Consumer_Android_Os_Bundle__" data-uid="Android.Service.Voice.VoiceInteractionSession.PerformDirectAction(Android.App.DirectAction,Android.Os.Bundle,Android.Os.CancellationSignal,Java.Util.Concurrent.Executor,Java.Util.Function.Consumer{Android.Os.Bundle})">
+  PerformDirectAction(DirectAction, Bundle, CancellationSignal, Executor, Consumer&lt;Bundle&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/VoiceInteractionSession.cs/#L213"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#performDirectAction(android.app.DirectAction,android.os.Bundle,android.os.CancellationSignal,java.util.concurrent.Executor,java.util.function.Consumer)">https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#performDirectAction(android.app.DirectAction,android.os.Bundle,android.os.CancellationSignal,java.util.concurrent.Executor,java.util.function.Consumer)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PerformDirectAction(DirectAction arg0, Bundle arg1, CancellationSignal arg2, Executor arg3, Consumer&lt;Bundle&gt; arg4)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.App.DirectAction.html">DirectAction</a></dt>
+    <dd><p><a class="xref" href="Android.App.DirectAction.html">DirectAction</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Os.CancellationSignal.html">CancellationSignal</a></dt>
+    <dd><p><a class="xref" href="Android.Os.CancellationSignal.html">CancellationSignal</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></p>
+</dd>
+    <dt><code>arg4</code> <a class="xref" href="Java.Util.Function.Consumer-1.html">Consumer</a>&lt;<a class="xref" href="Android.Os.Bundle.html">Bundle</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Function.Consumer.html">Consumer</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession_RegisterVisibleActivityCallback_" data-uid="Android.Service.Voice.VoiceInteractionSession.RegisterVisibleActivityCallback*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession_RegisterVisibleActivityCallback_Java_Util_Concurrent_Executor_Android_Service_Voice_VoiceInteractionSession_VisibleActivityCallback_" data-uid="Android.Service.Voice.VoiceInteractionSession.RegisterVisibleActivityCallback(Java.Util.Concurrent.Executor,Android.Service.Voice.VoiceInteractionSession.VisibleActivityCallback)">
+  RegisterVisibleActivityCallback(Executor, VisibleActivityCallback)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/VoiceInteractionSession.cs/#L222"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#registerVisibleActivityCallback(java.util.concurrent.Executor,android.service.voice.VoiceInteractionSession.VisibleActivityCallback)">https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#registerVisibleActivityCallback(java.util.concurrent.Executor,android.service.voice.VoiceInteractionSession.VisibleActivityCallback)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterVisibleActivityCallback(Executor arg0, VoiceInteractionSession.VisibleActivityCallback arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Service.Voice.VoiceInteractionSession.html">VoiceInteractionSession</a>.<a class="xref" href="Android.Service.Voice.VoiceInteractionSession.VisibleActivityCallback.html">VisibleActivityCallback</a></dt>
+    <dd><p><a class="xref" href="Android.Service.Voice.VoiceInteractionSession.VisibleActivityCallback.html">VoiceInteractionSession.VisibleActivityCallback</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession_RequestDirectActions_" data-uid="Android.Service.Voice.VoiceInteractionSession.RequestDirectActions*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession_RequestDirectActions_Android_Service_Voice_VoiceInteractionSession_ActivityId_Android_Os_CancellationSignal_Java_Util_Concurrent_Executor_Java_Util_Function_Consumer_Java_Util_List_Android_App_DirectAction___" data-uid="Android.Service.Voice.VoiceInteractionSession.RequestDirectActions(Android.Service.Voice.VoiceInteractionSession.ActivityId,Android.Os.CancellationSignal,Java.Util.Concurrent.Executor,Java.Util.Function.Consumer{Java.Util.List{Android.App.DirectAction}})">
+  RequestDirectActions(ActivityId, CancellationSignal, Executor, Consumer&lt;List&lt;DirectAction&gt;&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/VoiceInteractionSession.cs/#L233"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#requestDirectActions(android.service.voice.VoiceInteractionSession.ActivityId,android.os.CancellationSignal,java.util.concurrent.Executor,java.util.function.Consumer)">https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#requestDirectActions(android.service.voice.VoiceInteractionSession.ActivityId,android.os.CancellationSignal,java.util.concurrent.Executor,java.util.function.Consumer)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestDirectActions(VoiceInteractionSession.ActivityId arg0, CancellationSignal arg1, Executor arg2, Consumer&lt;List&lt;DirectAction&gt;&gt; arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Service.Voice.VoiceInteractionSession.html">VoiceInteractionSession</a>.<a class="xref" href="Android.Service.Voice.VoiceInteractionSession.ActivityId.html">ActivityId</a></dt>
+    <dd><p><a class="xref" href="Android.Service.Voice.VoiceInteractionSession.ActivityId.html">VoiceInteractionSession.ActivityId</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Os.CancellationSignal.html">CancellationSignal</a></dt>
+    <dd><p><a class="xref" href="Android.Os.CancellationSignal.html">CancellationSignal</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Java.Util.Function.Consumer-1.html">Consumer</a>&lt;<a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Android.App.DirectAction.html">DirectAction</a>&gt;&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Function.Consumer.html">Consumer</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession_SetContentView_" data-uid="Android.Service.Voice.VoiceInteractionSession.SetContentView*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession_SetContentView_Android_View_View_" data-uid="Android.Service.Voice.VoiceInteractionSession.SetContentView(Android.View.View)">
+  SetContentView(View)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/VoiceInteractionSession.cs/#L510"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#setContentView(android.view.View)">https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#setContentView(android.view.View)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetContentView(View arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.View.View.html">View</a></dt>
+    <dd><p><a class="xref" href="Android.View.View.html">View</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession_SetDisabledShowContext_" data-uid="Android.Service.Voice.VoiceInteractionSession.SetDisabledShowContext*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession_SetDisabledShowContext_System_Int32_" data-uid="Android.Service.Voice.VoiceInteractionSession.SetDisabledShowContext(System.Int32)">
+  SetDisabledShowContext(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/VoiceInteractionSession.cs/#L518"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#setDisabledShowContext(int)">https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#setDisabledShowContext(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDisabledShowContext(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession_SetKeepAwake_" data-uid="Android.Service.Voice.VoiceInteractionSession.SetKeepAwake*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession_SetKeepAwake_System_Boolean_" data-uid="Android.Service.Voice.VoiceInteractionSession.SetKeepAwake(System.Boolean)">
+  SetKeepAwake(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/VoiceInteractionSession.cs/#L526"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#setKeepAwake(boolean)">https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#setKeepAwake(boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetKeepAwake(bool arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession_SetTheme_" data-uid="Android.Service.Voice.VoiceInteractionSession.SetTheme*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession_SetTheme_System_Int32_" data-uid="Android.Service.Voice.VoiceInteractionSession.SetTheme(System.Int32)">
+  SetTheme(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/VoiceInteractionSession.cs/#L534"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#setTheme(int)">https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#setTheme(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTheme(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession_SetUiEnabled_" data-uid="Android.Service.Voice.VoiceInteractionSession.SetUiEnabled*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession_SetUiEnabled_System_Boolean_" data-uid="Android.Service.Voice.VoiceInteractionSession.SetUiEnabled(System.Boolean)">
+  SetUiEnabled(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/VoiceInteractionSession.cs/#L542"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#setUiEnabled(boolean)">https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#setUiEnabled(boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetUiEnabled(bool arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession_Show_" data-uid="Android.Service.Voice.VoiceInteractionSession.Show*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession_Show_Android_Os_Bundle_System_Int32_" data-uid="Android.Service.Voice.VoiceInteractionSession.Show(Android.Os.Bundle,System.Int32)">
+  Show(Bundle, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/VoiceInteractionSession.cs/#L551"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#show(android.os.Bundle,int)">https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#show(android.os.Bundle,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Show(Bundle arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession_StartAssistantActivity_" data-uid="Android.Service.Voice.VoiceInteractionSession.StartAssistantActivity*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession_StartAssistantActivity_Android_Content_Intent_" data-uid="Android.Service.Voice.VoiceInteractionSession.StartAssistantActivity(Android.Content.Intent)">
+  StartAssistantActivity(Intent)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/VoiceInteractionSession.cs/#L568"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#startAssistantActivity(android.content.Intent)">https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#startAssistantActivity(android.content.Intent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartAssistantActivity(Intent arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Intent.html">Intent</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Intent.html">Intent</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession_StartAssistantActivity_" data-uid="Android.Service.Voice.VoiceInteractionSession.StartAssistantActivity*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession_StartAssistantActivity_Android_Content_Intent_Android_Os_Bundle_" data-uid="Android.Service.Voice.VoiceInteractionSession.StartAssistantActivity(Android.Content.Intent,Android.Os.Bundle)">
+  StartAssistantActivity(Intent, Bundle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/VoiceInteractionSession.cs/#L560"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#startAssistantActivity(android.content.Intent,android.os.Bundle)">https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#startAssistantActivity(android.content.Intent,android.os.Bundle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartAssistantActivity(Intent arg0, Bundle arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Intent.html">Intent</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Intent.html">Intent</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession_StartVoiceActivity_" data-uid="Android.Service.Voice.VoiceInteractionSession.StartVoiceActivity*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession_StartVoiceActivity_Android_Content_Intent_" data-uid="Android.Service.Voice.VoiceInteractionSession.StartVoiceActivity(Android.Content.Intent)">
+  StartVoiceActivity(Intent)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/VoiceInteractionSession.cs/#L576"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#startVoiceActivity(android.content.Intent)">https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#startVoiceActivity(android.content.Intent)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartVoiceActivity(Intent arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Intent.html">Intent</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Intent.html">Intent</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession_UnregisterVisibleActivityCallback_" data-uid="Android.Service.Voice.VoiceInteractionSession.UnregisterVisibleActivityCallback*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession_UnregisterVisibleActivityCallback_Android_Service_Voice_VoiceInteractionSession_VisibleActivityCallback_" data-uid="Android.Service.Voice.VoiceInteractionSession.UnregisterVisibleActivityCallback(Android.Service.Voice.VoiceInteractionSession.VisibleActivityCallback)">
+  UnregisterVisibleActivityCallback(VisibleActivityCallback)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/VoiceInteractionSession.cs/#L241"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#unregisterVisibleActivityCallback(android.service.voice.VoiceInteractionSession.VisibleActivityCallback)">https://developer.android.com/reference/android/service/voice/VoiceInteractionSession.html#unregisterVisibleActivityCallback(android.service.voice.VoiceInteractionSession.VisibleActivityCallback)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnregisterVisibleActivityCallback(VoiceInteractionSession.VisibleActivityCallback arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Service.Voice.VoiceInteractionSession.html">VoiceInteractionSession</a>.<a class="xref" href="Android.Service.Voice.VoiceInteractionSession.VisibleActivityCallback.html">VisibleActivityCallback</a></dt>
+    <dd><p><a class="xref" href="Android.Service.Voice.VoiceInteractionSession.VisibleActivityCallback.html">VoiceInteractionSession.VisibleActivityCallback</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="Android_Service_Voice_VoiceInteractionSession_op_Implicit_" data-uid="Android.Service.Voice.VoiceInteractionSession.op_Implicit*"></a>
+
+  <h3 id="Android_Service_Voice_VoiceInteractionSession_op_Implicit_Android_Service_Voice_VoiceInteractionSession__Android_Content_ComponentCallbacks2" data-uid="Android.Service.Voice.VoiceInteractionSession.op_Implicit(Android.Service.Voice.VoiceInteractionSession)~Android.Content.ComponentCallbacks2">
+  implicit operator ComponentCallbacks2(VoiceInteractionSession)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/VoiceInteractionSession.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converter from <a class="xref" href="Android.Service.Voice.VoiceInteractionSession.html">VoiceInteractionSession</a> to <a class="xref" href="Android.Content.ComponentCallbacks2.html">ComponentCallbacks2</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator ComponentCallbacks2(VoiceInteractionSession t)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>t</code> <a class="xref" href="Android.Service.Voice.VoiceInteractionSession.html">VoiceInteractionSession</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.ComponentCallbacks2.html">ComponentCallbacks2</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Service/Voice/VoiceInteractionSession.cs/#L29" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

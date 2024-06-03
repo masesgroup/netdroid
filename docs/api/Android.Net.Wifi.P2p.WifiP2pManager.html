@@ -1,0 +1,3297 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class WifiP2pManager | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class WifiP2pManager | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_Net_Wifi_P2p_WifiP2pManager.md&amp;value=---%0Auid%3A%20Android.Net.Wifi.P2p.WifiP2pManager%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.Net.Wifi.P2p.WifiP2pManager">
+
+
+
+  <h1 id="Android_Net_Wifi_P2p_WifiP2pManager" data-uid="Android.Net.Wifi.P2p.WifiP2pManager" class="text-break">
+Class WifiP2pManager  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.Net.html">Net</a>.<a class="xref" href="Android.Net.Wifi.html">Wifi</a>.<a class="xref" href="Android.Net.Wifi.P2p.html">P2p</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class WifiP2pManager : JVMBridgeBase&lt;WifiP2pManager&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>&gt;</div>
+      <div><span class="xref">WifiP2pManager</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;WifiP2pManager&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;WifiP2pManager&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;WifiP2pManager&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;WifiP2pManager&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;WifiP2pManager&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;WifiP2pManager&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;WifiP2pManager&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;WifiP2pManager&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;WifiP2pManager&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;WifiP2pManager&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;WifiP2pManager&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;WifiP2pManager&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;WifiP2pManager&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;WifiP2pManager&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;WifiP2pManager&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;WifiP2pManager&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;WifiP2pManager&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;WifiP2pManager&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;WifiP2pManager&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;WifiP2pManager&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;WifiP2pManager&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;WifiP2pManager&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;WifiP2pManager&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;WifiP2pManager&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;WifiP2pManager&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;WifiP2pManager&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;WifiP2pManager&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;WifiP2pManager&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;WifiP2pManager&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;WifiP2pManager&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;WifiP2pManager&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;WifiP2pManager&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;WifiP2pManager&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;WifiP2pManager&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;WifiP2pManager&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;WifiP2pManager&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;WifiP2pManager&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;WifiP2pManager&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;WifiP2pManager&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;WifiP2pManager&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;WifiP2pManager&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;WifiP2pManager&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;WifiP2pManager&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;WifiP2pManager&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;WifiP2pManager&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;WifiP2pManager&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;WifiP2pManager&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;WifiP2pManager&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;WifiP2pManager&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;WifiP2pManager&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager__ctor_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.#ctor*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager__ctor" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.#ctor">
+  WifiP2pManager()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/AllPackageClasses.cs/#L303"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WifiP2pManager()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager__ctor_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.#ctor*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager__ctor_System_Object___" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.#ctor(System.Object[])">
+  WifiP2pManager(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/AllPackageClasses.cs/#L307"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WifiP2pManager(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_ACTION_WIFI_P2P_LISTEN_STATE_CHANGED_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.ACTION_WIFI_P2P_LISTEN_STATE_CHANGED*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_ACTION_WIFI_P2P_LISTEN_STATE_CHANGED" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.ACTION_WIFI_P2P_LISTEN_STATE_CHANGED">
+  ACTION_WIFI_P2P_LISTEN_STATE_CHANGED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#ACTION_WIFI_P2P_LISTEN_STATE_CHANGED">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#ACTION_WIFI_P2P_LISTEN_STATE_CHANGED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACTION_WIFI_P2P_LISTEN_STATE_CHANGED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_ACTION_WIFI_P2P_REQUEST_RESPONSE_CHANGED_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.ACTION_WIFI_P2P_REQUEST_RESPONSE_CHANGED*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_ACTION_WIFI_P2P_REQUEST_RESPONSE_CHANGED" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.ACTION_WIFI_P2P_REQUEST_RESPONSE_CHANGED">
+  ACTION_WIFI_P2P_REQUEST_RESPONSE_CHANGED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L133"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#ACTION_WIFI_P2P_REQUEST_RESPONSE_CHANGED">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#ACTION_WIFI_P2P_REQUEST_RESPONSE_CHANGED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACTION_WIFI_P2P_REQUEST_RESPONSE_CHANGED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_BUSY_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.BUSY*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_BUSY" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.BUSY">
+  BUSY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#BUSY">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#BUSY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int BUSY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_BridgeClassName_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.BridgeClassName*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_BridgeClassName" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/AllPackageClasses.cs/#L314"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_CONNECTION_REQUEST_ACCEPT_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.CONNECTION_REQUEST_ACCEPT*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_CONNECTION_REQUEST_ACCEPT" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.CONNECTION_REQUEST_ACCEPT">
+  CONNECTION_REQUEST_ACCEPT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#CONNECTION_REQUEST_ACCEPT">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#CONNECTION_REQUEST_ACCEPT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CONNECTION_REQUEST_ACCEPT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_CONNECTION_REQUEST_DEFER_SHOW_PIN_TO_SERVICE_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.CONNECTION_REQUEST_DEFER_SHOW_PIN_TO_SERVICE*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_CONNECTION_REQUEST_DEFER_SHOW_PIN_TO_SERVICE" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.CONNECTION_REQUEST_DEFER_SHOW_PIN_TO_SERVICE">
+  CONNECTION_REQUEST_DEFER_SHOW_PIN_TO_SERVICE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#CONNECTION_REQUEST_DEFER_SHOW_PIN_TO_SERVICE">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#CONNECTION_REQUEST_DEFER_SHOW_PIN_TO_SERVICE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CONNECTION_REQUEST_DEFER_SHOW_PIN_TO_SERVICE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_CONNECTION_REQUEST_DEFER_TO_SERVICE_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.CONNECTION_REQUEST_DEFER_TO_SERVICE*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_CONNECTION_REQUEST_DEFER_TO_SERVICE" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.CONNECTION_REQUEST_DEFER_TO_SERVICE">
+  CONNECTION_REQUEST_DEFER_TO_SERVICE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#CONNECTION_REQUEST_DEFER_TO_SERVICE">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#CONNECTION_REQUEST_DEFER_TO_SERVICE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CONNECTION_REQUEST_DEFER_TO_SERVICE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_CONNECTION_REQUEST_REJECT_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.CONNECTION_REQUEST_REJECT*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_CONNECTION_REQUEST_REJECT" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.CONNECTION_REQUEST_REJECT">
+  CONNECTION_REQUEST_REJECT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#CONNECTION_REQUEST_REJECT">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#CONNECTION_REQUEST_REJECT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CONNECTION_REQUEST_REJECT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_ERROR_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.ERROR*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_ERROR" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.ERROR">
+  ERROR
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#ERROR">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#ERROR</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_EXTRA_DISCOVERY_STATE_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.EXTRA_DISCOVERY_STATE*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_EXTRA_DISCOVERY_STATE" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.EXTRA_DISCOVERY_STATE">
+  EXTRA_DISCOVERY_STATE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#EXTRA_DISCOVERY_STATE">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#EXTRA_DISCOVERY_STATE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_DISCOVERY_STATE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_EXTRA_LISTEN_STATE_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.EXTRA_LISTEN_STATE*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_EXTRA_LISTEN_STATE" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.EXTRA_LISTEN_STATE">
+  EXTRA_LISTEN_STATE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L145"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#EXTRA_LISTEN_STATE">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#EXTRA_LISTEN_STATE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_LISTEN_STATE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_EXTRA_NETWORK_INFO_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.EXTRA_NETWORK_INFO*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_EXTRA_NETWORK_INFO" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.EXTRA_NETWORK_INFO">
+  EXTRA_NETWORK_INFO
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L151"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#EXTRA_NETWORK_INFO">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#EXTRA_NETWORK_INFO</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_NETWORK_INFO { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_EXTRA_P2P_DEVICE_LIST_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.EXTRA_P2P_DEVICE_LIST*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_EXTRA_P2P_DEVICE_LIST" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.EXTRA_P2P_DEVICE_LIST">
+  EXTRA_P2P_DEVICE_LIST
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L157"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#EXTRA_P2P_DEVICE_LIST">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#EXTRA_P2P_DEVICE_LIST</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_P2P_DEVICE_LIST { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_EXTRA_REQUEST_CONFIG_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.EXTRA_REQUEST_CONFIG*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_EXTRA_REQUEST_CONFIG" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.EXTRA_REQUEST_CONFIG">
+  EXTRA_REQUEST_CONFIG
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L163"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#EXTRA_REQUEST_CONFIG">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#EXTRA_REQUEST_CONFIG</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_REQUEST_CONFIG { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_EXTRA_REQUEST_RESPONSE_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.EXTRA_REQUEST_RESPONSE*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_EXTRA_REQUEST_RESPONSE" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.EXTRA_REQUEST_RESPONSE">
+  EXTRA_REQUEST_RESPONSE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L169"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#EXTRA_REQUEST_RESPONSE">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#EXTRA_REQUEST_RESPONSE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_REQUEST_RESPONSE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_EXTRA_WIFI_P2P_DEVICE_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.EXTRA_WIFI_P2P_DEVICE*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_EXTRA_WIFI_P2P_DEVICE" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.EXTRA_WIFI_P2P_DEVICE">
+  EXTRA_WIFI_P2P_DEVICE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L175"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#EXTRA_WIFI_P2P_DEVICE">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#EXTRA_WIFI_P2P_DEVICE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_WIFI_P2P_DEVICE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_EXTRA_WIFI_P2P_GROUP_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.EXTRA_WIFI_P2P_GROUP*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_EXTRA_WIFI_P2P_GROUP" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.EXTRA_WIFI_P2P_GROUP">
+  EXTRA_WIFI_P2P_GROUP
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L181"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#EXTRA_WIFI_P2P_GROUP">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#EXTRA_WIFI_P2P_GROUP</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_WIFI_P2P_GROUP { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_EXTRA_WIFI_P2P_INFO_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.EXTRA_WIFI_P2P_INFO*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_EXTRA_WIFI_P2P_INFO" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.EXTRA_WIFI_P2P_INFO">
+  EXTRA_WIFI_P2P_INFO
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L187"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#EXTRA_WIFI_P2P_INFO">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#EXTRA_WIFI_P2P_INFO</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_WIFI_P2P_INFO { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_EXTRA_WIFI_STATE_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.EXTRA_WIFI_STATE*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_EXTRA_WIFI_STATE" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.EXTRA_WIFI_STATE">
+  EXTRA_WIFI_STATE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L193"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#EXTRA_WIFI_STATE">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#EXTRA_WIFI_STATE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_WIFI_STATE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_IsBridgeAbstract_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_IsBridgeAbstract" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/AllPackageClasses.cs/#L318"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_IsBridgeCloseable_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_IsBridgeCloseable" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/AllPackageClasses.cs/#L322"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_IsBridgeInterface_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.IsBridgeInterface*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_IsBridgeInterface" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/AllPackageClasses.cs/#L326"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_IsBridgeStatic_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.IsBridgeStatic*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_IsBridgeStatic" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/AllPackageClasses.cs/#L330"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_NO_SERVICE_REQUESTS_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.NO_SERVICE_REQUESTS*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_NO_SERVICE_REQUESTS" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.NO_SERVICE_REQUESTS">
+  NO_SERVICE_REQUESTS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#NO_SERVICE_REQUESTS">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#NO_SERVICE_REQUESTS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int NO_SERVICE_REQUESTS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_P2P_UNSUPPORTED_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.P2P_UNSUPPORTED*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_P2P_UNSUPPORTED" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.P2P_UNSUPPORTED">
+  P2P_UNSUPPORTED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#P2P_UNSUPPORTED">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#P2P_UNSUPPORTED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int P2P_UNSUPPORTED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_WIFI_P2P_CONNECTION_CHANGED_ACTION_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.WIFI_P2P_CONNECTION_CHANGED_ACTION*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_WIFI_P2P_CONNECTION_CHANGED_ACTION" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.WIFI_P2P_CONNECTION_CHANGED_ACTION">
+  WIFI_P2P_CONNECTION_CHANGED_ACTION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L199"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#WIFI_P2P_CONNECTION_CHANGED_ACTION">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#WIFI_P2P_CONNECTION_CHANGED_ACTION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String WIFI_P2P_CONNECTION_CHANGED_ACTION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_WIFI_P2P_DISCOVERY_CHANGED_ACTION_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.WIFI_P2P_DISCOVERY_CHANGED_ACTION*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_WIFI_P2P_DISCOVERY_CHANGED_ACTION" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.WIFI_P2P_DISCOVERY_CHANGED_ACTION">
+  WIFI_P2P_DISCOVERY_CHANGED_ACTION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L205"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#WIFI_P2P_DISCOVERY_CHANGED_ACTION">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#WIFI_P2P_DISCOVERY_CHANGED_ACTION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String WIFI_P2P_DISCOVERY_CHANGED_ACTION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_WIFI_P2P_DISCOVERY_STARTED_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.WIFI_P2P_DISCOVERY_STARTED*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_WIFI_P2P_DISCOVERY_STARTED" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.WIFI_P2P_DISCOVERY_STARTED">
+  WIFI_P2P_DISCOVERY_STARTED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#WIFI_P2P_DISCOVERY_STARTED">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#WIFI_P2P_DISCOVERY_STARTED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int WIFI_P2P_DISCOVERY_STARTED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_WIFI_P2P_DISCOVERY_STOPPED_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.WIFI_P2P_DISCOVERY_STOPPED*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_WIFI_P2P_DISCOVERY_STOPPED" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.WIFI_P2P_DISCOVERY_STOPPED">
+  WIFI_P2P_DISCOVERY_STOPPED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#WIFI_P2P_DISCOVERY_STOPPED">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#WIFI_P2P_DISCOVERY_STOPPED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int WIFI_P2P_DISCOVERY_STOPPED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_WIFI_P2P_LISTEN_STARTED_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.WIFI_P2P_LISTEN_STARTED*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_WIFI_P2P_LISTEN_STARTED" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.WIFI_P2P_LISTEN_STARTED">
+  WIFI_P2P_LISTEN_STARTED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#WIFI_P2P_LISTEN_STARTED">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#WIFI_P2P_LISTEN_STARTED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int WIFI_P2P_LISTEN_STARTED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_WIFI_P2P_LISTEN_STOPPED_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.WIFI_P2P_LISTEN_STOPPED*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_WIFI_P2P_LISTEN_STOPPED" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.WIFI_P2P_LISTEN_STOPPED">
+  WIFI_P2P_LISTEN_STOPPED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#WIFI_P2P_LISTEN_STOPPED">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#WIFI_P2P_LISTEN_STOPPED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int WIFI_P2P_LISTEN_STOPPED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_WIFI_P2P_PEERS_CHANGED_ACTION_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.WIFI_P2P_PEERS_CHANGED_ACTION*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_WIFI_P2P_PEERS_CHANGED_ACTION" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.WIFI_P2P_PEERS_CHANGED_ACTION">
+  WIFI_P2P_PEERS_CHANGED_ACTION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L211"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#WIFI_P2P_PEERS_CHANGED_ACTION">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#WIFI_P2P_PEERS_CHANGED_ACTION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String WIFI_P2P_PEERS_CHANGED_ACTION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_WIFI_P2P_STATE_CHANGED_ACTION_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.WIFI_P2P_STATE_CHANGED_ACTION*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_WIFI_P2P_STATE_CHANGED_ACTION" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.WIFI_P2P_STATE_CHANGED_ACTION">
+  WIFI_P2P_STATE_CHANGED_ACTION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L217"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#WIFI_P2P_STATE_CHANGED_ACTION">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#WIFI_P2P_STATE_CHANGED_ACTION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String WIFI_P2P_STATE_CHANGED_ACTION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_WIFI_P2P_STATE_DISABLED_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.WIFI_P2P_STATE_DISABLED*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_WIFI_P2P_STATE_DISABLED" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.WIFI_P2P_STATE_DISABLED">
+  WIFI_P2P_STATE_DISABLED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#WIFI_P2P_STATE_DISABLED">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#WIFI_P2P_STATE_DISABLED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int WIFI_P2P_STATE_DISABLED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_WIFI_P2P_STATE_ENABLED_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.WIFI_P2P_STATE_ENABLED*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_WIFI_P2P_STATE_ENABLED" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.WIFI_P2P_STATE_ENABLED">
+  WIFI_P2P_STATE_ENABLED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#WIFI_P2P_STATE_ENABLED">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#WIFI_P2P_STATE_ENABLED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int WIFI_P2P_STATE_ENABLED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_WIFI_P2P_THIS_DEVICE_CHANGED_ACTION_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.WIFI_P2P_THIS_DEVICE_CHANGED_ACTION*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_WIFI_P2P_THIS_DEVICE_CHANGED_ACTION" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.WIFI_P2P_THIS_DEVICE_CHANGED_ACTION">
+  WIFI_P2P_THIS_DEVICE_CHANGED_ACTION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L223"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#WIFI_P2P_THIS_DEVICE_CHANGED_ACTION">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#WIFI_P2P_THIS_DEVICE_CHANGED_ACTION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String WIFI_P2P_THIS_DEVICE_CHANGED_ACTION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_AddExternalApprover_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.AddExternalApprover*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_AddExternalApprover_Android_Net_Wifi_P2p_WifiP2pManager_Channel_Android_Net_MacAddress_Android_Net_Wifi_P2p_WifiP2pManager_ExternalApproverRequestListener_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.AddExternalApprover(Android.Net.Wifi.P2p.WifiP2pManager.Channel,Android.Net.MacAddress,Android.Net.Wifi.P2p.WifiP2pManager.ExternalApproverRequestListener)">
+  AddExternalApprover(Channel, MacAddress, ExternalApproverRequestListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L291"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#addExternalApprover(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.MacAddress,android.net.wifi.p2p.WifiP2pManager.ExternalApproverRequestListener)">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#addExternalApprover(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.MacAddress,android.net.wifi.p2p.WifiP2pManager.ExternalApproverRequestListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddExternalApprover(WifiP2pManager.Channel arg0, MacAddress arg1, WifiP2pManager.ExternalApproverRequestListener arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">Channel</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">WifiP2pManager.Channel</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Net.MacAddress.html">MacAddress</a></dt>
+    <dd><p><a class="xref" href="Android.Net.MacAddress.html">MacAddress</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.ExternalApproverRequestListener.html">ExternalApproverRequestListener</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.ExternalApproverRequestListener.html">WifiP2pManager.ExternalApproverRequestListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_AddLocalService_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.AddLocalService*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_AddLocalService_Android_Net_Wifi_P2p_WifiP2pManager_Channel_Android_Net_Wifi_P2p_Nsd_WifiP2pServiceInfo_Android_Net_Wifi_P2p_WifiP2pManager_ActionListener_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.AddLocalService(Android.Net.Wifi.P2p.WifiP2pManager.Channel,Android.Net.Wifi.P2p.Nsd.WifiP2pServiceInfo,Android.Net.Wifi.P2p.WifiP2pManager.ActionListener)">
+  AddLocalService(Channel, WifiP2pServiceInfo, ActionListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L301"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#addLocalService(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.nsd.WifiP2pServiceInfo,android.net.wifi.p2p.WifiP2pManager.ActionListener)">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#addLocalService(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.nsd.WifiP2pServiceInfo,android.net.wifi.p2p.WifiP2pManager.ActionListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddLocalService(WifiP2pManager.Channel arg0, WifiP2pServiceInfo arg1, WifiP2pManager.ActionListener arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">Channel</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">WifiP2pManager.Channel</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Net.Wifi.P2p.Nsd.WifiP2pServiceInfo.html">WifiP2pServiceInfo</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.Nsd.WifiP2pServiceInfo.html">WifiP2pServiceInfo</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener.html">ActionListener</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener.html">WifiP2pManager.ActionListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_AddServiceRequest_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.AddServiceRequest*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_AddServiceRequest_Android_Net_Wifi_P2p_WifiP2pManager_Channel_Android_Net_Wifi_P2p_Nsd_WifiP2pServiceRequest_Android_Net_Wifi_P2p_WifiP2pManager_ActionListener_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.AddServiceRequest(Android.Net.Wifi.P2p.WifiP2pManager.Channel,Android.Net.Wifi.P2p.Nsd.WifiP2pServiceRequest,Android.Net.Wifi.P2p.WifiP2pManager.ActionListener)">
+  AddServiceRequest(Channel, WifiP2pServiceRequest, ActionListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L311"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#addServiceRequest(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.nsd.WifiP2pServiceRequest,android.net.wifi.p2p.WifiP2pManager.ActionListener)">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#addServiceRequest(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.nsd.WifiP2pServiceRequest,android.net.wifi.p2p.WifiP2pManager.ActionListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddServiceRequest(WifiP2pManager.Channel arg0, WifiP2pServiceRequest arg1, WifiP2pManager.ActionListener arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">Channel</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">WifiP2pManager.Channel</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Net.Wifi.P2p.Nsd.WifiP2pServiceRequest.html">WifiP2pServiceRequest</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.Nsd.WifiP2pServiceRequest.html">WifiP2pServiceRequest</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener.html">ActionListener</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener.html">WifiP2pManager.ActionListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_CancelConnect_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.CancelConnect*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_CancelConnect_Android_Net_Wifi_P2p_WifiP2pManager_Channel_Android_Net_Wifi_P2p_WifiP2pManager_ActionListener_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.CancelConnect(Android.Net.Wifi.P2p.WifiP2pManager.Channel,Android.Net.Wifi.P2p.WifiP2pManager.ActionListener)">
+  CancelConnect(Channel, ActionListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L320"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#cancelConnect(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.ActionListener)">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#cancelConnect(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.ActionListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CancelConnect(WifiP2pManager.Channel arg0, WifiP2pManager.ActionListener arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">Channel</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">WifiP2pManager.Channel</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener.html">ActionListener</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener.html">WifiP2pManager.ActionListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_ClearLocalServices_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.ClearLocalServices*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_ClearLocalServices_Android_Net_Wifi_P2p_WifiP2pManager_Channel_Android_Net_Wifi_P2p_WifiP2pManager_ActionListener_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.ClearLocalServices(Android.Net.Wifi.P2p.WifiP2pManager.Channel,Android.Net.Wifi.P2p.WifiP2pManager.ActionListener)">
+  ClearLocalServices(Channel, ActionListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L329"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#clearLocalServices(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.ActionListener)">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#clearLocalServices(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.ActionListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearLocalServices(WifiP2pManager.Channel arg0, WifiP2pManager.ActionListener arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">Channel</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">WifiP2pManager.Channel</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener.html">ActionListener</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener.html">WifiP2pManager.ActionListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_ClearServiceRequests_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.ClearServiceRequests*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_ClearServiceRequests_Android_Net_Wifi_P2p_WifiP2pManager_Channel_Android_Net_Wifi_P2p_WifiP2pManager_ActionListener_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.ClearServiceRequests(Android.Net.Wifi.P2p.WifiP2pManager.Channel,Android.Net.Wifi.P2p.WifiP2pManager.ActionListener)">
+  ClearServiceRequests(Channel, ActionListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L338"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#clearServiceRequests(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.ActionListener)">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#clearServiceRequests(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.ActionListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearServiceRequests(WifiP2pManager.Channel arg0, WifiP2pManager.ActionListener arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">Channel</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">WifiP2pManager.Channel</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener.html">ActionListener</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener.html">WifiP2pManager.ActionListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_Connect_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.Connect*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_Connect_Android_Net_Wifi_P2p_WifiP2pManager_Channel_Android_Net_Wifi_P2p_WifiP2pConfig_Android_Net_Wifi_P2p_WifiP2pManager_ActionListener_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.Connect(Android.Net.Wifi.P2p.WifiP2pManager.Channel,Android.Net.Wifi.P2p.WifiP2pConfig,Android.Net.Wifi.P2p.WifiP2pManager.ActionListener)">
+  Connect(Channel, WifiP2pConfig, ActionListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L348"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#connect(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pConfig,android.net.wifi.p2p.WifiP2pManager.ActionListener)">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#connect(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pConfig,android.net.wifi.p2p.WifiP2pManager.ActionListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Connect(WifiP2pManager.Channel arg0, WifiP2pConfig arg1, WifiP2pManager.ActionListener arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">Channel</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">WifiP2pManager.Channel</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pConfig.html">WifiP2pConfig</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pConfig.html">WifiP2pConfig</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener.html">ActionListener</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener.html">WifiP2pManager.ActionListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_CreateGroup_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.CreateGroup*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_CreateGroup_Android_Net_Wifi_P2p_WifiP2pManager_Channel_Android_Net_Wifi_P2p_WifiP2pConfig_Android_Net_Wifi_P2p_WifiP2pManager_ActionListener_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.CreateGroup(Android.Net.Wifi.P2p.WifiP2pManager.Channel,Android.Net.Wifi.P2p.WifiP2pConfig,Android.Net.Wifi.P2p.WifiP2pManager.ActionListener)">
+  CreateGroup(Channel, WifiP2pConfig, ActionListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L358"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#createGroup(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pConfig,android.net.wifi.p2p.WifiP2pManager.ActionListener)">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#createGroup(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pConfig,android.net.wifi.p2p.WifiP2pManager.ActionListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CreateGroup(WifiP2pManager.Channel arg0, WifiP2pConfig arg1, WifiP2pManager.ActionListener arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">Channel</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">WifiP2pManager.Channel</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pConfig.html">WifiP2pConfig</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pConfig.html">WifiP2pConfig</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener.html">ActionListener</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener.html">WifiP2pManager.ActionListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_CreateGroup_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.CreateGroup*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_CreateGroup_Android_Net_Wifi_P2p_WifiP2pManager_Channel_Android_Net_Wifi_P2p_WifiP2pManager_ActionListener_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.CreateGroup(Android.Net.Wifi.P2p.WifiP2pManager.Channel,Android.Net.Wifi.P2p.WifiP2pManager.ActionListener)">
+  CreateGroup(Channel, ActionListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L367"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#createGroup(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.ActionListener)">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#createGroup(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.ActionListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CreateGroup(WifiP2pManager.Channel arg0, WifiP2pManager.ActionListener arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">Channel</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">WifiP2pManager.Channel</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener.html">ActionListener</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener.html">WifiP2pManager.ActionListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_DiscoverPeers_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.DiscoverPeers*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_DiscoverPeers_Android_Net_Wifi_P2p_WifiP2pManager_Channel_Android_Net_Wifi_P2p_WifiP2pManager_ActionListener_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.DiscoverPeers(Android.Net.Wifi.P2p.WifiP2pManager.Channel,Android.Net.Wifi.P2p.WifiP2pManager.ActionListener)">
+  DiscoverPeers(Channel, ActionListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L376"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#discoverPeers(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.ActionListener)">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#discoverPeers(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.ActionListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DiscoverPeers(WifiP2pManager.Channel arg0, WifiP2pManager.ActionListener arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">Channel</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">WifiP2pManager.Channel</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener.html">ActionListener</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener.html">WifiP2pManager.ActionListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_DiscoverPeersOnSocialChannels_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.DiscoverPeersOnSocialChannels*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_DiscoverPeersOnSocialChannels_Android_Net_Wifi_P2p_WifiP2pManager_Channel_Android_Net_Wifi_P2p_WifiP2pManager_ActionListener_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.DiscoverPeersOnSocialChannels(Android.Net.Wifi.P2p.WifiP2pManager.Channel,Android.Net.Wifi.P2p.WifiP2pManager.ActionListener)">
+  DiscoverPeersOnSocialChannels(Channel, ActionListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L385"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#discoverPeersOnSocialChannels(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.ActionListener)">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#discoverPeersOnSocialChannels(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.ActionListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DiscoverPeersOnSocialChannels(WifiP2pManager.Channel arg0, WifiP2pManager.ActionListener arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">Channel</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">WifiP2pManager.Channel</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener.html">ActionListener</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener.html">WifiP2pManager.ActionListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_DiscoverPeersOnSpecificFrequency_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.DiscoverPeersOnSpecificFrequency*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_DiscoverPeersOnSpecificFrequency_Android_Net_Wifi_P2p_WifiP2pManager_Channel_System_Int32_Android_Net_Wifi_P2p_WifiP2pManager_ActionListener_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.DiscoverPeersOnSpecificFrequency(Android.Net.Wifi.P2p.WifiP2pManager.Channel,System.Int32,Android.Net.Wifi.P2p.WifiP2pManager.ActionListener)">
+  DiscoverPeersOnSpecificFrequency(Channel, int, ActionListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L395"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#discoverPeersOnSpecificFrequency(android.net.wifi.p2p.WifiP2pManager.Channel,int,android.net.wifi.p2p.WifiP2pManager.ActionListener)">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#discoverPeersOnSpecificFrequency(android.net.wifi.p2p.WifiP2pManager.Channel,int,android.net.wifi.p2p.WifiP2pManager.ActionListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DiscoverPeersOnSpecificFrequency(WifiP2pManager.Channel arg0, int arg1, WifiP2pManager.ActionListener arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">Channel</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">WifiP2pManager.Channel</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener.html">ActionListener</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener.html">WifiP2pManager.ActionListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_DiscoverServices_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.DiscoverServices*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_DiscoverServices_Android_Net_Wifi_P2p_WifiP2pManager_Channel_Android_Net_Wifi_P2p_WifiP2pManager_ActionListener_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.DiscoverServices(Android.Net.Wifi.P2p.WifiP2pManager.Channel,Android.Net.Wifi.P2p.WifiP2pManager.ActionListener)">
+  DiscoverServices(Channel, ActionListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L404"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#discoverServices(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.ActionListener)">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#discoverServices(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.ActionListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DiscoverServices(WifiP2pManager.Channel arg0, WifiP2pManager.ActionListener arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">Channel</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">WifiP2pManager.Channel</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener.html">ActionListener</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener.html">WifiP2pManager.ActionListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_GetListenState_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.GetListenState*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_GetListenState_Android_Net_Wifi_P2p_WifiP2pManager_Channel_Java_Util_Concurrent_Executor_Java_Util_Function_Consumer_Java_Lang_Integer__" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.GetListenState(Android.Net.Wifi.P2p.WifiP2pManager.Channel,Java.Util.Concurrent.Executor,Java.Util.Function.Consumer{Java.Lang.Integer})">
+  GetListenState(Channel, Executor, Consumer&lt;Integer&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L414"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#getListenState(android.net.wifi.p2p.WifiP2pManager.Channel,java.util.concurrent.Executor,java.util.function.Consumer)">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#getListenState(android.net.wifi.p2p.WifiP2pManager.Channel,java.util.concurrent.Executor,java.util.function.Consumer)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetListenState(WifiP2pManager.Channel arg0, Executor arg1, Consumer&lt;Integer&gt; arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">Channel</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">WifiP2pManager.Channel</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Util.Function.Consumer-1.html">Consumer</a>&lt;<a class="xref" href="Java.Lang.Integer.html">Integer</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Function.Consumer.html">Consumer</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_GetP2pMaxAllowedVendorElementsLengthBytes_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.GetP2pMaxAllowedVendorElementsLengthBytes*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_GetP2pMaxAllowedVendorElementsLengthBytes" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.GetP2pMaxAllowedVendorElementsLengthBytes">
+  GetP2pMaxAllowedVendorElementsLengthBytes()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L234"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#getP2pMaxAllowedVendorElementsLengthBytes()">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#getP2pMaxAllowedVendorElementsLengthBytes()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetP2pMaxAllowedVendorElementsLengthBytes()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_Initialize_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.Initialize*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_Initialize_Android_Content_Context_Android_Os_Looper_Android_Net_Wifi_P2p_WifiP2pManager_ChannelListener_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.Initialize(Android.Content.Context,Android.Os.Looper,Android.Net.Wifi.P2p.WifiP2pManager.ChannelListener)">
+  Initialize(Context, Looper, ChannelListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L249"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#initialize(android.content.Context,android.os.Looper,android.net.wifi.p2p.WifiP2pManager.ChannelListener)">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#initialize(android.content.Context,android.os.Looper,android.net.wifi.p2p.WifiP2pManager.ChannelListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WifiP2pManager.Channel Initialize(Context arg0, Looper arg1, WifiP2pManager.ChannelListener arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Os.Looper.html">Looper</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Looper.html">Looper</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.ChannelListener.html">ChannelListener</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.ChannelListener.html">WifiP2pManager.ChannelListener</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">Channel</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">WifiP2pManager.Channel</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_IsChannelConstrainedDiscoverySupported_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.IsChannelConstrainedDiscoverySupported*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_IsChannelConstrainedDiscoverySupported" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.IsChannelConstrainedDiscoverySupported">
+  IsChannelConstrainedDiscoverySupported()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L257"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#isChannelConstrainedDiscoverySupported()">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#isChannelConstrainedDiscoverySupported()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsChannelConstrainedDiscoverySupported()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_IsGroupClientRemovalSupported_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.IsGroupClientRemovalSupported*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_IsGroupClientRemovalSupported" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.IsGroupClientRemovalSupported">
+  IsGroupClientRemovalSupported()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L265"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#isGroupClientRemovalSupported()">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#isGroupClientRemovalSupported()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsGroupClientRemovalSupported()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_IsGroupOwnerIPv6LinkLocalAddressProvided_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.IsGroupOwnerIPv6LinkLocalAddressProvided*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_IsGroupOwnerIPv6LinkLocalAddressProvided" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.IsGroupOwnerIPv6LinkLocalAddressProvided">
+  IsGroupOwnerIPv6LinkLocalAddressProvided()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L273"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#isGroupOwnerIPv6LinkLocalAddressProvided()">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#isGroupOwnerIPv6LinkLocalAddressProvided()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsGroupOwnerIPv6LinkLocalAddressProvided()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_IsSetVendorElementsSupported_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.IsSetVendorElementsSupported*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_IsSetVendorElementsSupported" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.IsSetVendorElementsSupported">
+  IsSetVendorElementsSupported()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L281"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#isSetVendorElementsSupported()">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#isSetVendorElementsSupported()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSetVendorElementsSupported()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_RemoveClient_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.RemoveClient*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_RemoveClient_Android_Net_Wifi_P2p_WifiP2pManager_Channel_Android_Net_MacAddress_Android_Net_Wifi_P2p_WifiP2pManager_ActionListener_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.RemoveClient(Android.Net.Wifi.P2p.WifiP2pManager.Channel,Android.Net.MacAddress,Android.Net.Wifi.P2p.WifiP2pManager.ActionListener)">
+  RemoveClient(Channel, MacAddress, ActionListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L424"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#removeClient(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.MacAddress,android.net.wifi.p2p.WifiP2pManager.ActionListener)">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#removeClient(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.MacAddress,android.net.wifi.p2p.WifiP2pManager.ActionListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveClient(WifiP2pManager.Channel arg0, MacAddress arg1, WifiP2pManager.ActionListener arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">Channel</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">WifiP2pManager.Channel</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Net.MacAddress.html">MacAddress</a></dt>
+    <dd><p><a class="xref" href="Android.Net.MacAddress.html">MacAddress</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener.html">ActionListener</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener.html">WifiP2pManager.ActionListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_RemoveExternalApprover_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.RemoveExternalApprover*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_RemoveExternalApprover_Android_Net_Wifi_P2p_WifiP2pManager_Channel_Android_Net_MacAddress_Android_Net_Wifi_P2p_WifiP2pManager_ActionListener_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.RemoveExternalApprover(Android.Net.Wifi.P2p.WifiP2pManager.Channel,Android.Net.MacAddress,Android.Net.Wifi.P2p.WifiP2pManager.ActionListener)">
+  RemoveExternalApprover(Channel, MacAddress, ActionListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L434"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#removeExternalApprover(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.MacAddress,android.net.wifi.p2p.WifiP2pManager.ActionListener)">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#removeExternalApprover(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.MacAddress,android.net.wifi.p2p.WifiP2pManager.ActionListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveExternalApprover(WifiP2pManager.Channel arg0, MacAddress arg1, WifiP2pManager.ActionListener arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">Channel</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">WifiP2pManager.Channel</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Net.MacAddress.html">MacAddress</a></dt>
+    <dd><p><a class="xref" href="Android.Net.MacAddress.html">MacAddress</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener.html">ActionListener</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener.html">WifiP2pManager.ActionListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_RemoveGroup_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.RemoveGroup*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_RemoveGroup_Android_Net_Wifi_P2p_WifiP2pManager_Channel_Android_Net_Wifi_P2p_WifiP2pManager_ActionListener_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.RemoveGroup(Android.Net.Wifi.P2p.WifiP2pManager.Channel,Android.Net.Wifi.P2p.WifiP2pManager.ActionListener)">
+  RemoveGroup(Channel, ActionListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L443"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#removeGroup(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.ActionListener)">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#removeGroup(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.ActionListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveGroup(WifiP2pManager.Channel arg0, WifiP2pManager.ActionListener arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">Channel</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">WifiP2pManager.Channel</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener.html">ActionListener</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener.html">WifiP2pManager.ActionListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_RemoveLocalService_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.RemoveLocalService*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_RemoveLocalService_Android_Net_Wifi_P2p_WifiP2pManager_Channel_Android_Net_Wifi_P2p_Nsd_WifiP2pServiceInfo_Android_Net_Wifi_P2p_WifiP2pManager_ActionListener_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.RemoveLocalService(Android.Net.Wifi.P2p.WifiP2pManager.Channel,Android.Net.Wifi.P2p.Nsd.WifiP2pServiceInfo,Android.Net.Wifi.P2p.WifiP2pManager.ActionListener)">
+  RemoveLocalService(Channel, WifiP2pServiceInfo, ActionListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L453"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#removeLocalService(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.nsd.WifiP2pServiceInfo,android.net.wifi.p2p.WifiP2pManager.ActionListener)">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#removeLocalService(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.nsd.WifiP2pServiceInfo,android.net.wifi.p2p.WifiP2pManager.ActionListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveLocalService(WifiP2pManager.Channel arg0, WifiP2pServiceInfo arg1, WifiP2pManager.ActionListener arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">Channel</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">WifiP2pManager.Channel</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Net.Wifi.P2p.Nsd.WifiP2pServiceInfo.html">WifiP2pServiceInfo</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.Nsd.WifiP2pServiceInfo.html">WifiP2pServiceInfo</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener.html">ActionListener</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener.html">WifiP2pManager.ActionListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_RemoveServiceRequest_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.RemoveServiceRequest*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_RemoveServiceRequest_Android_Net_Wifi_P2p_WifiP2pManager_Channel_Android_Net_Wifi_P2p_Nsd_WifiP2pServiceRequest_Android_Net_Wifi_P2p_WifiP2pManager_ActionListener_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.RemoveServiceRequest(Android.Net.Wifi.P2p.WifiP2pManager.Channel,Android.Net.Wifi.P2p.Nsd.WifiP2pServiceRequest,Android.Net.Wifi.P2p.WifiP2pManager.ActionListener)">
+  RemoveServiceRequest(Channel, WifiP2pServiceRequest, ActionListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L463"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#removeServiceRequest(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.nsd.WifiP2pServiceRequest,android.net.wifi.p2p.WifiP2pManager.ActionListener)">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#removeServiceRequest(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.nsd.WifiP2pServiceRequest,android.net.wifi.p2p.WifiP2pManager.ActionListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveServiceRequest(WifiP2pManager.Channel arg0, WifiP2pServiceRequest arg1, WifiP2pManager.ActionListener arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">Channel</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">WifiP2pManager.Channel</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Net.Wifi.P2p.Nsd.WifiP2pServiceRequest.html">WifiP2pServiceRequest</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.Nsd.WifiP2pServiceRequest.html">WifiP2pServiceRequest</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener.html">ActionListener</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener.html">WifiP2pManager.ActionListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_RequestConnectionInfo_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.RequestConnectionInfo*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_RequestConnectionInfo_Android_Net_Wifi_P2p_WifiP2pManager_Channel_Android_Net_Wifi_P2p_WifiP2pManager_ConnectionInfoListener_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.RequestConnectionInfo(Android.Net.Wifi.P2p.WifiP2pManager.Channel,Android.Net.Wifi.P2p.WifiP2pManager.ConnectionInfoListener)">
+  RequestConnectionInfo(Channel, ConnectionInfoListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L472"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#requestConnectionInfo(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.ConnectionInfoListener)">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#requestConnectionInfo(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.ConnectionInfoListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestConnectionInfo(WifiP2pManager.Channel arg0, WifiP2pManager.ConnectionInfoListener arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">Channel</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">WifiP2pManager.Channel</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.ConnectionInfoListener.html">ConnectionInfoListener</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.ConnectionInfoListener.html">WifiP2pManager.ConnectionInfoListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_RequestDeviceInfo_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.RequestDeviceInfo*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_RequestDeviceInfo_Android_Net_Wifi_P2p_WifiP2pManager_Channel_Android_Net_Wifi_P2p_WifiP2pManager_DeviceInfoListener_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.RequestDeviceInfo(Android.Net.Wifi.P2p.WifiP2pManager.Channel,Android.Net.Wifi.P2p.WifiP2pManager.DeviceInfoListener)">
+  RequestDeviceInfo(Channel, DeviceInfoListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L481"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#requestDeviceInfo(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.DeviceInfoListener)">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#requestDeviceInfo(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.DeviceInfoListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestDeviceInfo(WifiP2pManager.Channel arg0, WifiP2pManager.DeviceInfoListener arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">Channel</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">WifiP2pManager.Channel</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.DeviceInfoListener.html">DeviceInfoListener</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.DeviceInfoListener.html">WifiP2pManager.DeviceInfoListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_RequestDiscoveryState_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.RequestDiscoveryState*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_RequestDiscoveryState_Android_Net_Wifi_P2p_WifiP2pManager_Channel_Android_Net_Wifi_P2p_WifiP2pManager_DiscoveryStateListener_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.RequestDiscoveryState(Android.Net.Wifi.P2p.WifiP2pManager.Channel,Android.Net.Wifi.P2p.WifiP2pManager.DiscoveryStateListener)">
+  RequestDiscoveryState(Channel, DiscoveryStateListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L490"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#requestDiscoveryState(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.DiscoveryStateListener)">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#requestDiscoveryState(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.DiscoveryStateListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestDiscoveryState(WifiP2pManager.Channel arg0, WifiP2pManager.DiscoveryStateListener arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">Channel</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">WifiP2pManager.Channel</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.DiscoveryStateListener.html">DiscoveryStateListener</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.DiscoveryStateListener.html">WifiP2pManager.DiscoveryStateListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_RequestGroupInfo_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.RequestGroupInfo*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_RequestGroupInfo_Android_Net_Wifi_P2p_WifiP2pManager_Channel_Android_Net_Wifi_P2p_WifiP2pManager_GroupInfoListener_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.RequestGroupInfo(Android.Net.Wifi.P2p.WifiP2pManager.Channel,Android.Net.Wifi.P2p.WifiP2pManager.GroupInfoListener)">
+  RequestGroupInfo(Channel, GroupInfoListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L499"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#requestGroupInfo(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.GroupInfoListener)">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#requestGroupInfo(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.GroupInfoListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestGroupInfo(WifiP2pManager.Channel arg0, WifiP2pManager.GroupInfoListener arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">Channel</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">WifiP2pManager.Channel</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.GroupInfoListener.html">GroupInfoListener</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.GroupInfoListener.html">WifiP2pManager.GroupInfoListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_RequestNetworkInfo_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.RequestNetworkInfo*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_RequestNetworkInfo_Android_Net_Wifi_P2p_WifiP2pManager_Channel_Android_Net_Wifi_P2p_WifiP2pManager_NetworkInfoListener_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.RequestNetworkInfo(Android.Net.Wifi.P2p.WifiP2pManager.Channel,Android.Net.Wifi.P2p.WifiP2pManager.NetworkInfoListener)">
+  RequestNetworkInfo(Channel, NetworkInfoListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L508"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#requestNetworkInfo(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.NetworkInfoListener)">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#requestNetworkInfo(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.NetworkInfoListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestNetworkInfo(WifiP2pManager.Channel arg0, WifiP2pManager.NetworkInfoListener arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">Channel</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">WifiP2pManager.Channel</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.NetworkInfoListener.html">NetworkInfoListener</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.NetworkInfoListener.html">WifiP2pManager.NetworkInfoListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_RequestP2pState_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.RequestP2pState*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_RequestP2pState_Android_Net_Wifi_P2p_WifiP2pManager_Channel_Android_Net_Wifi_P2p_WifiP2pManager_P2pStateListener_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.RequestP2pState(Android.Net.Wifi.P2p.WifiP2pManager.Channel,Android.Net.Wifi.P2p.WifiP2pManager.P2pStateListener)">
+  RequestP2pState(Channel, P2pStateListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L517"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#requestP2pState(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.P2pStateListener)">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#requestP2pState(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.P2pStateListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestP2pState(WifiP2pManager.Channel arg0, WifiP2pManager.P2pStateListener arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">Channel</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">WifiP2pManager.Channel</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.P2pStateListener.html">P2pStateListener</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.P2pStateListener.html">WifiP2pManager.P2pStateListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_RequestPeers_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.RequestPeers*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_RequestPeers_Android_Net_Wifi_P2p_WifiP2pManager_Channel_Android_Net_Wifi_P2p_WifiP2pManager_PeerListListener_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.RequestPeers(Android.Net.Wifi.P2p.WifiP2pManager.Channel,Android.Net.Wifi.P2p.WifiP2pManager.PeerListListener)">
+  RequestPeers(Channel, PeerListListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L526"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#requestPeers(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.PeerListListener)">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#requestPeers(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.PeerListListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RequestPeers(WifiP2pManager.Channel arg0, WifiP2pManager.PeerListListener arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">Channel</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">WifiP2pManager.Channel</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.PeerListListener.html">PeerListListener</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.PeerListListener.html">WifiP2pManager.PeerListListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_SetConnectionRequestResult_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.SetConnectionRequestResult*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_SetConnectionRequestResult_Android_Net_Wifi_P2p_WifiP2pManager_Channel_Android_Net_MacAddress_System_Int32_Android_Net_Wifi_P2p_WifiP2pManager_ActionListener_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.SetConnectionRequestResult(Android.Net.Wifi.P2p.WifiP2pManager.Channel,Android.Net.MacAddress,System.Int32,Android.Net.Wifi.P2p.WifiP2pManager.ActionListener)">
+  SetConnectionRequestResult(Channel, MacAddress, int, ActionListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L537"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#setConnectionRequestResult(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.MacAddress,int,android.net.wifi.p2p.WifiP2pManager.ActionListener)">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#setConnectionRequestResult(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.MacAddress,int,android.net.wifi.p2p.WifiP2pManager.ActionListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetConnectionRequestResult(WifiP2pManager.Channel arg0, MacAddress arg1, int arg2, WifiP2pManager.ActionListener arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">Channel</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">WifiP2pManager.Channel</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Net.MacAddress.html">MacAddress</a></dt>
+    <dd><p><a class="xref" href="Android.Net.MacAddress.html">MacAddress</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener.html">ActionListener</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener.html">WifiP2pManager.ActionListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_SetConnectionRequestResult_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.SetConnectionRequestResult*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_SetConnectionRequestResult_Android_Net_Wifi_P2p_WifiP2pManager_Channel_Android_Net_MacAddress_System_Int32_Java_Lang_String_Android_Net_Wifi_P2p_WifiP2pManager_ActionListener_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.SetConnectionRequestResult(Android.Net.Wifi.P2p.WifiP2pManager.Channel,Android.Net.MacAddress,System.Int32,Java.Lang.String,Android.Net.Wifi.P2p.WifiP2pManager.ActionListener)">
+  SetConnectionRequestResult(Channel, MacAddress, int, String, ActionListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L549"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#setConnectionRequestResult(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.MacAddress,int,java.lang.String,android.net.wifi.p2p.WifiP2pManager.ActionListener)">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#setConnectionRequestResult(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.MacAddress,int,java.lang.String,android.net.wifi.p2p.WifiP2pManager.ActionListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetConnectionRequestResult(WifiP2pManager.Channel arg0, MacAddress arg1, int arg2, String arg3, WifiP2pManager.ActionListener arg4)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">Channel</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">WifiP2pManager.Channel</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Net.MacAddress.html">MacAddress</a></dt>
+    <dd><p><a class="xref" href="Android.Net.MacAddress.html">MacAddress</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg4</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener.html">ActionListener</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener.html">WifiP2pManager.ActionListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_SetDnsSdResponseListeners_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.SetDnsSdResponseListeners*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_SetDnsSdResponseListeners_Android_Net_Wifi_P2p_WifiP2pManager_Channel_Android_Net_Wifi_P2p_WifiP2pManager_DnsSdServiceResponseListener_Android_Net_Wifi_P2p_WifiP2pManager_DnsSdTxtRecordListener_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.SetDnsSdResponseListeners(Android.Net.Wifi.P2p.WifiP2pManager.Channel,Android.Net.Wifi.P2p.WifiP2pManager.DnsSdServiceResponseListener,Android.Net.Wifi.P2p.WifiP2pManager.DnsSdTxtRecordListener)">
+  SetDnsSdResponseListeners(Channel, DnsSdServiceResponseListener, DnsSdTxtRecordListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L559"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#setDnsSdResponseListeners(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.DnsSdServiceResponseListener,android.net.wifi.p2p.WifiP2pManager.DnsSdTxtRecordListener)">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#setDnsSdResponseListeners(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.DnsSdServiceResponseListener,android.net.wifi.p2p.WifiP2pManager.DnsSdTxtRecordListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDnsSdResponseListeners(WifiP2pManager.Channel arg0, WifiP2pManager.DnsSdServiceResponseListener arg1, WifiP2pManager.DnsSdTxtRecordListener arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">Channel</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">WifiP2pManager.Channel</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.DnsSdServiceResponseListener.html">DnsSdServiceResponseListener</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.DnsSdServiceResponseListener.html">WifiP2pManager.DnsSdServiceResponseListener</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.DnsSdTxtRecordListener.html">DnsSdTxtRecordListener</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.DnsSdTxtRecordListener.html">WifiP2pManager.DnsSdTxtRecordListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_SetServiceResponseListener_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.SetServiceResponseListener*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_SetServiceResponseListener_Android_Net_Wifi_P2p_WifiP2pManager_Channel_Android_Net_Wifi_P2p_WifiP2pManager_ServiceResponseListener_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.SetServiceResponseListener(Android.Net.Wifi.P2p.WifiP2pManager.Channel,Android.Net.Wifi.P2p.WifiP2pManager.ServiceResponseListener)">
+  SetServiceResponseListener(Channel, ServiceResponseListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L568"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#setServiceResponseListener(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.ServiceResponseListener)">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#setServiceResponseListener(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.ServiceResponseListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetServiceResponseListener(WifiP2pManager.Channel arg0, WifiP2pManager.ServiceResponseListener arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">Channel</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">WifiP2pManager.Channel</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.ServiceResponseListener.html">ServiceResponseListener</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.ServiceResponseListener.html">WifiP2pManager.ServiceResponseListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_SetUpnpServiceResponseListener_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.SetUpnpServiceResponseListener*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_SetUpnpServiceResponseListener_Android_Net_Wifi_P2p_WifiP2pManager_Channel_Android_Net_Wifi_P2p_WifiP2pManager_UpnpServiceResponseListener_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.SetUpnpServiceResponseListener(Android.Net.Wifi.P2p.WifiP2pManager.Channel,Android.Net.Wifi.P2p.WifiP2pManager.UpnpServiceResponseListener)">
+  SetUpnpServiceResponseListener(Channel, UpnpServiceResponseListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L577"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#setUpnpServiceResponseListener(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.UpnpServiceResponseListener)">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#setUpnpServiceResponseListener(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.UpnpServiceResponseListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetUpnpServiceResponseListener(WifiP2pManager.Channel arg0, WifiP2pManager.UpnpServiceResponseListener arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">Channel</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">WifiP2pManager.Channel</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.UpnpServiceResponseListener.html">UpnpServiceResponseListener</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.UpnpServiceResponseListener.html">WifiP2pManager.UpnpServiceResponseListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_SetVendorElements_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.SetVendorElements*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_SetVendorElements_Android_Net_Wifi_P2p_WifiP2pManager_Channel_Java_Util_List_Android_Net_Wifi_ScanResult_InformationElement__Android_Net_Wifi_P2p_WifiP2pManager_ActionListener_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.SetVendorElements(Android.Net.Wifi.P2p.WifiP2pManager.Channel,Java.Util.List{Android.Net.Wifi.ScanResult.InformationElement},Android.Net.Wifi.P2p.WifiP2pManager.ActionListener)">
+  SetVendorElements(Channel, List&lt;InformationElement&gt;, ActionListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L587"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#setVendorElements(android.net.wifi.p2p.WifiP2pManager.Channel,java.util.List,android.net.wifi.p2p.WifiP2pManager.ActionListener)">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#setVendorElements(android.net.wifi.p2p.WifiP2pManager.Channel,java.util.List,android.net.wifi.p2p.WifiP2pManager.ActionListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetVendorElements(WifiP2pManager.Channel arg0, List&lt;ScanResult.InformationElement&gt; arg1, WifiP2pManager.ActionListener arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">Channel</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">WifiP2pManager.Channel</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Android.Net.Wifi.ScanResult.html">ScanResult</a>.<a class="xref" href="Android.Net.Wifi.ScanResult.InformationElement.html">InformationElement</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.List.html">List</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener.html">ActionListener</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener.html">WifiP2pManager.ActionListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_SetWfdInfo_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.SetWfdInfo*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_SetWfdInfo_Android_Net_Wifi_P2p_WifiP2pManager_Channel_Android_Net_Wifi_P2p_WifiP2pWfdInfo_Android_Net_Wifi_P2p_WifiP2pManager_ActionListener_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.SetWfdInfo(Android.Net.Wifi.P2p.WifiP2pManager.Channel,Android.Net.Wifi.P2p.WifiP2pWfdInfo,Android.Net.Wifi.P2p.WifiP2pManager.ActionListener)">
+  SetWfdInfo(Channel, WifiP2pWfdInfo, ActionListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L597"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#setWfdInfo(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pWfdInfo,android.net.wifi.p2p.WifiP2pManager.ActionListener)">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#setWfdInfo(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pWfdInfo,android.net.wifi.p2p.WifiP2pManager.ActionListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetWfdInfo(WifiP2pManager.Channel arg0, WifiP2pWfdInfo arg1, WifiP2pManager.ActionListener arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">Channel</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">WifiP2pManager.Channel</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pWfdInfo.html">WifiP2pWfdInfo</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pWfdInfo.html">WifiP2pWfdInfo</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener.html">ActionListener</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener.html">WifiP2pManager.ActionListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_StartListening_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.StartListening*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_StartListening_Android_Net_Wifi_P2p_WifiP2pManager_Channel_Android_Net_Wifi_P2p_WifiP2pManager_ActionListener_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.StartListening(Android.Net.Wifi.P2p.WifiP2pManager.Channel,Android.Net.Wifi.P2p.WifiP2pManager.ActionListener)">
+  StartListening(Channel, ActionListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L606"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#startListening(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.ActionListener)">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#startListening(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.ActionListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartListening(WifiP2pManager.Channel arg0, WifiP2pManager.ActionListener arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">Channel</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">WifiP2pManager.Channel</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener.html">ActionListener</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener.html">WifiP2pManager.ActionListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_StopListening_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.StopListening*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_StopListening_Android_Net_Wifi_P2p_WifiP2pManager_Channel_Android_Net_Wifi_P2p_WifiP2pManager_ActionListener_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.StopListening(Android.Net.Wifi.P2p.WifiP2pManager.Channel,Android.Net.Wifi.P2p.WifiP2pManager.ActionListener)">
+  StopListening(Channel, ActionListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L615"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#stopListening(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.ActionListener)">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#stopListening(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.ActionListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StopListening(WifiP2pManager.Channel arg0, WifiP2pManager.ActionListener arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">Channel</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">WifiP2pManager.Channel</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener.html">ActionListener</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener.html">WifiP2pManager.ActionListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Net_Wifi_P2p_WifiP2pManager_StopPeerDiscovery_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.StopPeerDiscovery*"></a>
+
+  <h3 id="Android_Net_Wifi_P2p_WifiP2pManager_StopPeerDiscovery_Android_Net_Wifi_P2p_WifiP2pManager_Channel_Android_Net_Wifi_P2p_WifiP2pManager_ActionListener_" data-uid="Android.Net.Wifi.P2p.WifiP2pManager.StopPeerDiscovery(Android.Net.Wifi.P2p.WifiP2pManager.Channel,Android.Net.Wifi.P2p.WifiP2pManager.ActionListener)">
+  StopPeerDiscovery(Channel, ActionListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L624"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#stopPeerDiscovery(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.ActionListener)">https://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#stopPeerDiscovery(android.net.wifi.p2p.WifiP2pManager.Channel,android.net.wifi.p2p.WifiP2pManager.ActionListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StopPeerDiscovery(WifiP2pManager.Channel arg0, WifiP2pManager.ActionListener arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">Channel</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.Channel.html">WifiP2pManager.Channel</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.html">WifiP2pManager</a>.<a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener.html">ActionListener</a></dt>
+    <dd><p><a class="xref" href="Android.Net.Wifi.P2p.WifiP2pManager.ActionListener.html">WifiP2pManager.ActionListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Net/Wifi/P2p/WifiP2pManager.cs/#L29" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

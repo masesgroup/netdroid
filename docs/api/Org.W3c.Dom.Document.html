@@ -1,0 +1,2100 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class Document | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Document | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/org/w3c/dom/Document.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Org_W3c_Dom_Document.md&amp;value=---%0Auid%3A%20Org.W3c.Dom.Document%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Org.W3c.Dom.Document">
+
+
+
+  <h1 id="Org_W3c_Dom_Document" data-uid="Org.W3c.Dom.Document" class="text-break">
+Class Document  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/W3c/Dom/Document.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Org.html">Org</a>.<a class="xref" href="Org.W3c.html">W3c</a>.<a class="xref" href="Org.W3c.Dom.html">Dom</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/org/w3c/dom/Document.html">https://developer.android.com/reference/org/w3c/dom/Document.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Document : Node, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IDocument, INode</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Org.W3c.Dom.Node.html">Node</a>&gt;</div>
+      <div><a class="xref" href="Org.W3c.Dom.Node.html">Node</a></div>
+      <div><span class="xref">Document</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+      <div><a class="xref" href="Org.W3c.Dom.IDocument.html">IDocument</a></div>
+      <div><a class="xref" href="Org.W3c.Dom.INode.html">INode</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Org.W3c.Dom.Node.html#Org_W3c_Dom_Node_ATTRIBUTE_NODE">Node.ATTRIBUTE_NODE</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.W3c.Dom.Node.html#Org_W3c_Dom_Node_CDATA_SECTION_NODE">Node.CDATA_SECTION_NODE</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.W3c.Dom.Node.html#Org_W3c_Dom_Node_COMMENT_NODE">Node.COMMENT_NODE</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.W3c.Dom.Node.html#Org_W3c_Dom_Node_DOCUMENT_FRAGMENT_NODE">Node.DOCUMENT_FRAGMENT_NODE</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.W3c.Dom.Node.html#Org_W3c_Dom_Node_DOCUMENT_NODE">Node.DOCUMENT_NODE</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.W3c.Dom.Node.html#Org_W3c_Dom_Node_DOCUMENT_POSITION_CONTAINED_BY">Node.DOCUMENT_POSITION_CONTAINED_BY</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.W3c.Dom.Node.html#Org_W3c_Dom_Node_DOCUMENT_POSITION_CONTAINS">Node.DOCUMENT_POSITION_CONTAINS</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.W3c.Dom.Node.html#Org_W3c_Dom_Node_DOCUMENT_POSITION_DISCONNECTED">Node.DOCUMENT_POSITION_DISCONNECTED</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.W3c.Dom.Node.html#Org_W3c_Dom_Node_DOCUMENT_POSITION_FOLLOWING">Node.DOCUMENT_POSITION_FOLLOWING</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.W3c.Dom.Node.html#Org_W3c_Dom_Node_DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC">Node.DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.W3c.Dom.Node.html#Org_W3c_Dom_Node_DOCUMENT_POSITION_PRECEDING">Node.DOCUMENT_POSITION_PRECEDING</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.W3c.Dom.Node.html#Org_W3c_Dom_Node_DOCUMENT_TYPE_NODE">Node.DOCUMENT_TYPE_NODE</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.W3c.Dom.Node.html#Org_W3c_Dom_Node_ELEMENT_NODE">Node.ELEMENT_NODE</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.W3c.Dom.Node.html#Org_W3c_Dom_Node_ENTITY_NODE">Node.ENTITY_NODE</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.W3c.Dom.Node.html#Org_W3c_Dom_Node_ENTITY_REFERENCE_NODE">Node.ENTITY_REFERENCE_NODE</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.W3c.Dom.Node.html#Org_W3c_Dom_Node_NOTATION_NODE">Node.NOTATION_NODE</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.W3c.Dom.Node.html#Org_W3c_Dom_Node_PROCESSING_INSTRUCTION_NODE">Node.PROCESSING_INSTRUCTION_NODE</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.W3c.Dom.Node.html#Org_W3c_Dom_Node_TEXT_NODE">Node.TEXT_NODE</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.W3c.Dom.Node.html#Org_W3c_Dom_Node_HasAttributes">Node.HasAttributes()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.W3c.Dom.Node.html#Org_W3c_Dom_Node_HasChildNodes">Node.HasChildNodes()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.W3c.Dom.Node.html#Org_W3c_Dom_Node_IsDefaultNamespace_Java_Lang_String_">Node.IsDefaultNamespace(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.W3c.Dom.Node.html#Org_W3c_Dom_Node_IsEqualNode_Org_W3c_Dom_Node_">Node.IsEqualNode(Node)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.W3c.Dom.Node.html#Org_W3c_Dom_Node_IsSameNode_Org_W3c_Dom_Node_">Node.IsSameNode(Node)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.W3c.Dom.Node.html#Org_W3c_Dom_Node_IsSupported_Java_Lang_String_Java_Lang_String_">Node.IsSupported(String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.W3c.Dom.Node.html#Org_W3c_Dom_Node_GetFeature_Java_Lang_String_Java_Lang_String_">Node.GetFeature(String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.W3c.Dom.Node.html#Org_W3c_Dom_Node_GetUserData_Java_Lang_String_">Node.GetUserData(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.W3c.Dom.Node.html#Org_W3c_Dom_Node_SetUserData_Java_Lang_String_System_Object_Org_W3c_Dom_UserDataHandler_">Node.SetUserData(String, object, UserDataHandler)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.W3c.Dom.Node.html#Org_W3c_Dom_Node_GetBaseURI">Node.GetBaseURI()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.W3c.Dom.Node.html#Org_W3c_Dom_Node_GetLocalName">Node.GetLocalName()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.W3c.Dom.Node.html#Org_W3c_Dom_Node_GetNamespaceURI">Node.GetNamespaceURI()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.W3c.Dom.Node.html#Org_W3c_Dom_Node_GetNodeName">Node.GetNodeName()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.W3c.Dom.Node.html#Org_W3c_Dom_Node_GetNodeValue">Node.GetNodeValue()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.W3c.Dom.Node.html#Org_W3c_Dom_Node_GetPrefix">Node.GetPrefix()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.W3c.Dom.Node.html#Org_W3c_Dom_Node_GetTextContent">Node.GetTextContent()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.W3c.Dom.Node.html#Org_W3c_Dom_Node_LookupNamespaceURI_Java_Lang_String_">Node.LookupNamespaceURI(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.W3c.Dom.Node.html#Org_W3c_Dom_Node_LookupPrefix_Java_Lang_String_">Node.LookupPrefix(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.W3c.Dom.Node.html#Org_W3c_Dom_Node_GetOwnerDocument">Node.GetOwnerDocument()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.W3c.Dom.Node.html#Org_W3c_Dom_Node_GetAttributes">Node.GetAttributes()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.W3c.Dom.Node.html#Org_W3c_Dom_Node_AppendChild_Org_W3c_Dom_Node_">Node.AppendChild(Node)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.W3c.Dom.Node.html#Org_W3c_Dom_Node_CloneNode_System_Boolean_">Node.CloneNode(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.W3c.Dom.Node.html#Org_W3c_Dom_Node_GetFirstChild">Node.GetFirstChild()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.W3c.Dom.Node.html#Org_W3c_Dom_Node_GetLastChild">Node.GetLastChild()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.W3c.Dom.Node.html#Org_W3c_Dom_Node_GetNextSibling">Node.GetNextSibling()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.W3c.Dom.Node.html#Org_W3c_Dom_Node_GetParentNode">Node.GetParentNode()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.W3c.Dom.Node.html#Org_W3c_Dom_Node_GetPreviousSibling">Node.GetPreviousSibling()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.W3c.Dom.Node.html#Org_W3c_Dom_Node_InsertBefore_Org_W3c_Dom_Node_Org_W3c_Dom_Node_">Node.InsertBefore(Node, Node)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.W3c.Dom.Node.html#Org_W3c_Dom_Node_RemoveChild_Org_W3c_Dom_Node_">Node.RemoveChild(Node)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.W3c.Dom.Node.html#Org_W3c_Dom_Node_ReplaceChild_Org_W3c_Dom_Node_Org_W3c_Dom_Node_">Node.ReplaceChild(Node, Node)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.W3c.Dom.Node.html#Org_W3c_Dom_Node_GetChildNodes">Node.GetChildNodes()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.W3c.Dom.Node.html#Org_W3c_Dom_Node_CompareDocumentPosition_Org_W3c_Dom_Node_">Node.CompareDocumentPosition(Node)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.W3c.Dom.Node.html#Org_W3c_Dom_Node_GetNodeType">Node.GetNodeType()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.W3c.Dom.Node.html#Org_W3c_Dom_Node_Normalize">Node.Normalize()</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.W3c.Dom.Node.html#Org_W3c_Dom_Node_SetNodeValue_Java_Lang_String_">Node.SetNodeValue(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.W3c.Dom.Node.html#Org_W3c_Dom_Node_SetPrefix_Java_Lang_String_">Node.SetPrefix(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Org.W3c.Dom.Node.html#Org_W3c_Dom_Node_SetTextContent_Java_Lang_String_">Node.SetTextContent(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Node&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Node&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Node&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Node&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Node&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Node&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Node&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Node&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Node&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Node&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Node&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Node&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Node&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Node&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Node&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Node&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Node&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Node&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Node&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Node&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Node&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Node&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Node&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Node&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Node&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Node&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Node&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Node&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Node&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Node&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Node&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Node&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Node&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Node&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Node&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Node&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Node&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Node&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Node&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Node&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Node&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Node&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Node&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Node&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Node&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;Node&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Node&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Node&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Node&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Node&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Org_W3c_Dom_Document__ctor_" data-uid="Org.W3c.Dom.Document.#ctor*"></a>
+
+  <h3 id="Org_W3c_Dom_Document__ctor" data-uid="Org.W3c.Dom.Document.#ctor">
+  Document()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/W3c/Dom/AllPackageClasses.cs/#L223"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Document class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public Document()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_W3c_Dom_Document__ctor_" data-uid="Org.W3c.Dom.Document.#ctor*"></a>
+
+  <h3 id="Org_W3c_Dom_Document__ctor_System_Object___" data-uid="Org.W3c.Dom.Document.#ctor(System.Object[])">
+  Document(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/W3c/Dom/AllPackageClasses.cs/#L228"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Document class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public Document(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Org_W3c_Dom_Document_BridgeClassName_" data-uid="Org.W3c.Dom.Document.BridgeClassName*"></a>
+
+  <h3 id="Org_W3c_Dom_Document_BridgeClassName" data-uid="Org.W3c.Dom.Document.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/W3c/Dom/AllPackageClasses.cs/#L236"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_W3c_Dom_Document_IsBridgeAbstract_" data-uid="Org.W3c.Dom.Document.IsBridgeAbstract*"></a>
+
+  <h3 id="Org_W3c_Dom_Document_IsBridgeAbstract" data-uid="Org.W3c.Dom.Document.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/W3c/Dom/AllPackageClasses.cs/#L240"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_W3c_Dom_Document_IsBridgeCloseable_" data-uid="Org.W3c.Dom.Document.IsBridgeCloseable*"></a>
+
+  <h3 id="Org_W3c_Dom_Document_IsBridgeCloseable" data-uid="Org.W3c.Dom.Document.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/W3c/Dom/AllPackageClasses.cs/#L244"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_W3c_Dom_Document_IsBridgeInterface_" data-uid="Org.W3c.Dom.Document.IsBridgeInterface*"></a>
+
+  <h3 id="Org_W3c_Dom_Document_IsBridgeInterface" data-uid="Org.W3c.Dom.Document.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/W3c/Dom/AllPackageClasses.cs/#L248"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Org_W3c_Dom_Document_IsBridgeStatic_" data-uid="Org.W3c.Dom.Document.IsBridgeStatic*"></a>
+
+  <h3 id="Org_W3c_Dom_Document_IsBridgeStatic" data-uid="Org.W3c.Dom.Document.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/W3c/Dom/AllPackageClasses.cs/#L252"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Org_W3c_Dom_Document_AdoptNode_" data-uid="Org.W3c.Dom.Document.AdoptNode*"></a>
+
+  <h3 id="Org_W3c_Dom_Document_AdoptNode_Org_W3c_Dom_Node_" data-uid="Org.W3c.Dom.Document.AdoptNode(Org.W3c.Dom.Node)">
+  AdoptNode(Node)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/W3c/Dom/Document.cs/#L240"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/org/w3c/dom/Document.html#adoptNode(org.w3c.dom.Node)">https://developer.android.com/reference/org/w3c/dom/Document.html#adoptNode(org.w3c.dom.Node)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Node AdoptNode(Node arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Org.W3c.Dom.Node.html">Node</a></dt>
+    <dd><p><a class="xref" href="Org.W3c.Dom.Node.html">Node</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.W3c.Dom.Node.html">Node</a></dt>
+    <dd><p><a class="xref" href="Org.W3c.Dom.Node.html">Node</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.W3c.Dom.DOMException.html">DOMException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_W3c_Dom_Document_CreateAttribute_" data-uid="Org.W3c.Dom.Document.CreateAttribute*"></a>
+
+  <h3 id="Org_W3c_Dom_Document_CreateAttribute_Java_Lang_String_" data-uid="Org.W3c.Dom.Document.CreateAttribute(Java.Lang.String)">
+  CreateAttribute(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/W3c/Dom/Document.cs/#L120"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/org/w3c/dom/Document.html#createAttribute(java.lang.String)">https://developer.android.com/reference/org/w3c/dom/Document.html#createAttribute(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Attr CreateAttribute(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.W3c.Dom.Attr.html">Attr</a></dt>
+    <dd><p><a class="xref" href="Org.W3c.Dom.Attr.html">Attr</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.W3c.Dom.DOMException.html">DOMException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_W3c_Dom_Document_CreateAttributeNS_" data-uid="Org.W3c.Dom.Document.CreateAttributeNS*"></a>
+
+  <h3 id="Org_W3c_Dom_Document_CreateAttributeNS_Java_Lang_String_Java_Lang_String_" data-uid="Org.W3c.Dom.Document.CreateAttributeNS(Java.Lang.String,Java.Lang.String)">
+  CreateAttributeNS(String, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/W3c/Dom/Document.cs/#L131"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/org/w3c/dom/Document.html#createAttributeNS(java.lang.String,java.lang.String)">https://developer.android.com/reference/org/w3c/dom/Document.html#createAttributeNS(java.lang.String,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Attr CreateAttributeNS(String arg0, String arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.W3c.Dom.Attr.html">Attr</a></dt>
+    <dd><p><a class="xref" href="Org.W3c.Dom.Attr.html">Attr</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.W3c.Dom.DOMException.html">DOMException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_W3c_Dom_Document_CreateCDATASection_" data-uid="Org.W3c.Dom.Document.CreateCDATASection*"></a>
+
+  <h3 id="Org_W3c_Dom_Document_CreateCDATASection_Java_Lang_String_" data-uid="Org.W3c.Dom.Document.CreateCDATASection(Java.Lang.String)">
+  CreateCDATASection(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/W3c/Dom/Document.cs/#L141"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/org/w3c/dom/Document.html#createCDATASection(java.lang.String)">https://developer.android.com/reference/org/w3c/dom/Document.html#createCDATASection(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CDATASection CreateCDATASection(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.W3c.Dom.CDATASection.html">CDATASection</a></dt>
+    <dd><p><a class="xref" href="Org.W3c.Dom.CDATASection.html">CDATASection</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.W3c.Dom.DOMException.html">DOMException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_W3c_Dom_Document_CreateComment_" data-uid="Org.W3c.Dom.Document.CreateComment*"></a>
+
+  <h3 id="Org_W3c_Dom_Document_CreateComment_Java_Lang_String_" data-uid="Org.W3c.Dom.Document.CreateComment(Java.Lang.String)">
+  CreateComment(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/W3c/Dom/Document.cs/#L150"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/org/w3c/dom/Document.html#createComment(java.lang.String)">https://developer.android.com/reference/org/w3c/dom/Document.html#createComment(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Comment CreateComment(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.W3c.Dom.Comment.html">Comment</a></dt>
+    <dd><p><a class="xref" href="Org.W3c.Dom.Comment.html">Comment</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_W3c_Dom_Document_CreateDocumentFragment_" data-uid="Org.W3c.Dom.Document.CreateDocumentFragment*"></a>
+
+  <h3 id="Org_W3c_Dom_Document_CreateDocumentFragment" data-uid="Org.W3c.Dom.Document.CreateDocumentFragment">
+  CreateDocumentFragment()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/W3c/Dom/Document.cs/#L158"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/org/w3c/dom/Document.html#createDocumentFragment()">https://developer.android.com/reference/org/w3c/dom/Document.html#createDocumentFragment()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DocumentFragment CreateDocumentFragment()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.W3c.Dom.DocumentFragment.html">DocumentFragment</a></dt>
+    <dd><p><a class="xref" href="Org.W3c.Dom.DocumentFragment.html">DocumentFragment</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_W3c_Dom_Document_CreateElement_" data-uid="Org.W3c.Dom.Document.CreateElement*"></a>
+
+  <h3 id="Org_W3c_Dom_Document_CreateElement_Java_Lang_String_" data-uid="Org.W3c.Dom.Document.CreateElement(Java.Lang.String)">
+  CreateElement(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/W3c/Dom/Document.cs/#L192"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/org/w3c/dom/Document.html#createElement(java.lang.String)">https://developer.android.com/reference/org/w3c/dom/Document.html#createElement(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Element CreateElement(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.W3c.Dom.Element.html">Element</a></dt>
+    <dd><p><a class="xref" href="Org.W3c.Dom.Element.html">Element</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.W3c.Dom.DOMException.html">DOMException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_W3c_Dom_Document_CreateElementNS_" data-uid="Org.W3c.Dom.Document.CreateElementNS*"></a>
+
+  <h3 id="Org_W3c_Dom_Document_CreateElementNS_Java_Lang_String_Java_Lang_String_" data-uid="Org.W3c.Dom.Document.CreateElementNS(Java.Lang.String,Java.Lang.String)">
+  CreateElementNS(String, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/W3c/Dom/Document.cs/#L203"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/org/w3c/dom/Document.html#createElementNS(java.lang.String,java.lang.String)">https://developer.android.com/reference/org/w3c/dom/Document.html#createElementNS(java.lang.String,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Element CreateElementNS(String arg0, String arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.W3c.Dom.Element.html">Element</a></dt>
+    <dd><p><a class="xref" href="Org.W3c.Dom.Element.html">Element</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.W3c.Dom.DOMException.html">DOMException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_W3c_Dom_Document_CreateEntityReference_" data-uid="Org.W3c.Dom.Document.CreateEntityReference*"></a>
+
+  <h3 id="Org_W3c_Dom_Document_CreateEntityReference_Java_Lang_String_" data-uid="Org.W3c.Dom.Document.CreateEntityReference(Java.Lang.String)">
+  CreateEntityReference(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/W3c/Dom/Document.cs/#L230"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/org/w3c/dom/Document.html#createEntityReference(java.lang.String)">https://developer.android.com/reference/org/w3c/dom/Document.html#createEntityReference(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EntityReference CreateEntityReference(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.W3c.Dom.EntityReference.html">EntityReference</a></dt>
+    <dd><p><a class="xref" href="Org.W3c.Dom.EntityReference.html">EntityReference</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.W3c.Dom.DOMException.html">DOMException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_W3c_Dom_Document_CreateProcessingInstruction_" data-uid="Org.W3c.Dom.Document.CreateProcessingInstruction*"></a>
+
+  <h3 id="Org_W3c_Dom_Document_CreateProcessingInstruction_Java_Lang_String_Java_Lang_String_" data-uid="Org.W3c.Dom.Document.CreateProcessingInstruction(Java.Lang.String,Java.Lang.String)">
+  CreateProcessingInstruction(String, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/W3c/Dom/Document.cs/#L293"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/org/w3c/dom/Document.html#createProcessingInstruction(java.lang.String,java.lang.String)">https://developer.android.com/reference/org/w3c/dom/Document.html#createProcessingInstruction(java.lang.String,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ProcessingInstruction CreateProcessingInstruction(String arg0, String arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.W3c.Dom.ProcessingInstruction.html">ProcessingInstruction</a></dt>
+    <dd><p><a class="xref" href="Org.W3c.Dom.ProcessingInstruction.html">ProcessingInstruction</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.W3c.Dom.DOMException.html">DOMException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_W3c_Dom_Document_CreateTextNode_" data-uid="Org.W3c.Dom.Document.CreateTextNode*"></a>
+
+  <h3 id="Org_W3c_Dom_Document_CreateTextNode_Java_Lang_String_" data-uid="Org.W3c.Dom.Document.CreateTextNode(Java.Lang.String)">
+  CreateTextNode(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/W3c/Dom/Document.cs/#L302"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/org/w3c/dom/Document.html#createTextNode(java.lang.String)">https://developer.android.com/reference/org/w3c/dom/Document.html#createTextNode(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Text CreateTextNode(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.W3c.Dom.Text.html">Text</a></dt>
+    <dd><p><a class="xref" href="Org.W3c.Dom.Text.html">Text</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_W3c_Dom_Document_GetDoctype_" data-uid="Org.W3c.Dom.Document.GetDoctype*"></a>
+
+  <h3 id="Org_W3c_Dom_Document_GetDoctype" data-uid="Org.W3c.Dom.Document.GetDoctype">
+  GetDoctype()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/W3c/Dom/Document.cs/#L166"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/org/w3c/dom/Document.html#getDoctype()">https://developer.android.com/reference/org/w3c/dom/Document.html#getDoctype()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DocumentType GetDoctype()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.W3c.Dom.DocumentType.html">DocumentType</a></dt>
+    <dd><p><a class="xref" href="Org.W3c.Dom.DocumentType.html">DocumentType</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_W3c_Dom_Document_GetDocumentElement_" data-uid="Org.W3c.Dom.Document.GetDocumentElement*"></a>
+
+  <h3 id="Org_W3c_Dom_Document_GetDocumentElement" data-uid="Org.W3c.Dom.Document.GetDocumentElement">
+  GetDocumentElement()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/W3c/Dom/Document.cs/#L211"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/org/w3c/dom/Document.html#getDocumentElement()">https://developer.android.com/reference/org/w3c/dom/Document.html#getDocumentElement()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Element GetDocumentElement()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.W3c.Dom.Element.html">Element</a></dt>
+    <dd><p><a class="xref" href="Org.W3c.Dom.Element.html">Element</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_W3c_Dom_Document_GetDocumentURI_" data-uid="Org.W3c.Dom.Document.GetDocumentURI*"></a>
+
+  <h3 id="Org_W3c_Dom_Document_GetDocumentURI" data-uid="Org.W3c.Dom.Document.GetDocumentURI">
+  GetDocumentURI()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/W3c/Dom/Document.cs/#L86"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/org/w3c/dom/Document.html#getDocumentURI()">https://developer.android.com/reference/org/w3c/dom/Document.html#getDocumentURI()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetDocumentURI()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_W3c_Dom_Document_GetDomConfig_" data-uid="Org.W3c.Dom.Document.GetDomConfig*"></a>
+
+  <h3 id="Org_W3c_Dom_Document_GetDomConfig" data-uid="Org.W3c.Dom.Document.GetDomConfig">
+  GetDomConfig()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/W3c/Dom/Document.cs/#L174"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/org/w3c/dom/Document.html#getDomConfig()">https://developer.android.com/reference/org/w3c/dom/Document.html#getDomConfig()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DOMConfiguration GetDomConfig()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.W3c.Dom.DOMConfiguration.html">DOMConfiguration</a></dt>
+    <dd><p><a class="xref" href="Org.W3c.Dom.DOMConfiguration.html">DOMConfiguration</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_W3c_Dom_Document_GetElementById_" data-uid="Org.W3c.Dom.Document.GetElementById*"></a>
+
+  <h3 id="Org_W3c_Dom_Document_GetElementById_Java_Lang_String_" data-uid="Org.W3c.Dom.Document.GetElementById(Java.Lang.String)">
+  GetElementById(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/W3c/Dom/Document.cs/#L220"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/org/w3c/dom/Document.html#getElementById(java.lang.String)">https://developer.android.com/reference/org/w3c/dom/Document.html#getElementById(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Element GetElementById(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.W3c.Dom.Element.html">Element</a></dt>
+    <dd><p><a class="xref" href="Org.W3c.Dom.Element.html">Element</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_W3c_Dom_Document_GetElementsByTagName_" data-uid="Org.W3c.Dom.Document.GetElementsByTagName*"></a>
+
+  <h3 id="Org_W3c_Dom_Document_GetElementsByTagName_Java_Lang_String_" data-uid="Org.W3c.Dom.Document.GetElementsByTagName(Java.Lang.String)">
+  GetElementsByTagName(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/W3c/Dom/Document.cs/#L272"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/org/w3c/dom/Document.html#getElementsByTagName(java.lang.String)">https://developer.android.com/reference/org/w3c/dom/Document.html#getElementsByTagName(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NodeList GetElementsByTagName(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.W3c.Dom.NodeList.html">NodeList</a></dt>
+    <dd><p><a class="xref" href="Org.W3c.Dom.NodeList.html">NodeList</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_W3c_Dom_Document_GetElementsByTagNameNS_" data-uid="Org.W3c.Dom.Document.GetElementsByTagNameNS*"></a>
+
+  <h3 id="Org_W3c_Dom_Document_GetElementsByTagNameNS_Java_Lang_String_Java_Lang_String_" data-uid="Org.W3c.Dom.Document.GetElementsByTagNameNS(Java.Lang.String,Java.Lang.String)">
+  GetElementsByTagNameNS(String, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/W3c/Dom/Document.cs/#L282"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/org/w3c/dom/Document.html#getElementsByTagNameNS(java.lang.String,java.lang.String)">https://developer.android.com/reference/org/w3c/dom/Document.html#getElementsByTagNameNS(java.lang.String,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NodeList GetElementsByTagNameNS(String arg0, String arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.W3c.Dom.NodeList.html">NodeList</a></dt>
+    <dd><p><a class="xref" href="Org.W3c.Dom.NodeList.html">NodeList</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_W3c_Dom_Document_GetImplementation_" data-uid="Org.W3c.Dom.Document.GetImplementation*"></a>
+
+  <h3 id="Org_W3c_Dom_Document_GetImplementation" data-uid="Org.W3c.Dom.Document.GetImplementation">
+  GetImplementation()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/W3c/Dom/Document.cs/#L182"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/org/w3c/dom/Document.html#getImplementation()">https://developer.android.com/reference/org/w3c/dom/Document.html#getImplementation()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DOMImplementation GetImplementation()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.W3c.Dom.DOMImplementation.html">DOMImplementation</a></dt>
+    <dd><p><a class="xref" href="Org.W3c.Dom.DOMImplementation.html">DOMImplementation</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_W3c_Dom_Document_GetInputEncoding_" data-uid="Org.W3c.Dom.Document.GetInputEncoding*"></a>
+
+  <h3 id="Org_W3c_Dom_Document_GetInputEncoding" data-uid="Org.W3c.Dom.Document.GetInputEncoding">
+  GetInputEncoding()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/W3c/Dom/Document.cs/#L94"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/org/w3c/dom/Document.html#getInputEncoding()">https://developer.android.com/reference/org/w3c/dom/Document.html#getInputEncoding()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetInputEncoding()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_W3c_Dom_Document_GetStrictErrorChecking_" data-uid="Org.W3c.Dom.Document.GetStrictErrorChecking*"></a>
+
+  <h3 id="Org_W3c_Dom_Document_GetStrictErrorChecking" data-uid="Org.W3c.Dom.Document.GetStrictErrorChecking">
+  GetStrictErrorChecking()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/W3c/Dom/Document.cs/#L70"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/org/w3c/dom/Document.html#getStrictErrorChecking()">https://developer.android.com/reference/org/w3c/dom/Document.html#getStrictErrorChecking()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetStrictErrorChecking()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_W3c_Dom_Document_GetXmlEncoding_" data-uid="Org.W3c.Dom.Document.GetXmlEncoding*"></a>
+
+  <h3 id="Org_W3c_Dom_Document_GetXmlEncoding" data-uid="Org.W3c.Dom.Document.GetXmlEncoding">
+  GetXmlEncoding()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/W3c/Dom/Document.cs/#L102"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/org/w3c/dom/Document.html#getXmlEncoding()">https://developer.android.com/reference/org/w3c/dom/Document.html#getXmlEncoding()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetXmlEncoding()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_W3c_Dom_Document_GetXmlStandalone_" data-uid="Org.W3c.Dom.Document.GetXmlStandalone*"></a>
+
+  <h3 id="Org_W3c_Dom_Document_GetXmlStandalone" data-uid="Org.W3c.Dom.Document.GetXmlStandalone">
+  GetXmlStandalone()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/W3c/Dom/Document.cs/#L78"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/org/w3c/dom/Document.html#getXmlStandalone()">https://developer.android.com/reference/org/w3c/dom/Document.html#getXmlStandalone()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetXmlStandalone()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_W3c_Dom_Document_GetXmlVersion_" data-uid="Org.W3c.Dom.Document.GetXmlVersion*"></a>
+
+  <h3 id="Org_W3c_Dom_Document_GetXmlVersion" data-uid="Org.W3c.Dom.Document.GetXmlVersion">
+  GetXmlVersion()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/W3c/Dom/Document.cs/#L110"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/org/w3c/dom/Document.html#getXmlVersion()">https://developer.android.com/reference/org/w3c/dom/Document.html#getXmlVersion()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetXmlVersion()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_W3c_Dom_Document_ImportNode_" data-uid="Org.W3c.Dom.Document.ImportNode*"></a>
+
+  <h3 id="Org_W3c_Dom_Document_ImportNode_Org_W3c_Dom_Node_System_Boolean_" data-uid="Org.W3c.Dom.Document.ImportNode(Org.W3c.Dom.Node,System.Boolean)">
+  ImportNode(Node, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/W3c/Dom/Document.cs/#L251"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/org/w3c/dom/Document.html#importNode(org.w3c.dom.Node,boolean)">https://developer.android.com/reference/org/w3c/dom/Document.html#importNode(org.w3c.dom.Node,boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Node ImportNode(Node arg0, bool arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Org.W3c.Dom.Node.html">Node</a></dt>
+    <dd><p><a class="xref" href="Org.W3c.Dom.Node.html">Node</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.W3c.Dom.Node.html">Node</a></dt>
+    <dd><p><a class="xref" href="Org.W3c.Dom.Node.html">Node</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.W3c.Dom.DOMException.html">DOMException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_W3c_Dom_Document_NormalizeDocument_" data-uid="Org.W3c.Dom.Document.NormalizeDocument*"></a>
+
+  <h3 id="Org_W3c_Dom_Document_NormalizeDocument" data-uid="Org.W3c.Dom.Document.NormalizeDocument">
+  NormalizeDocument()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/W3c/Dom/Document.cs/#L309"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/org/w3c/dom/Document.html#normalizeDocument()">https://developer.android.com/reference/org/w3c/dom/Document.html#normalizeDocument()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void NormalizeDocument()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_W3c_Dom_Document_RenameNode_" data-uid="Org.W3c.Dom.Document.RenameNode*"></a>
+
+  <h3 id="Org_W3c_Dom_Document_RenameNode_Org_W3c_Dom_Node_Java_Lang_String_Java_Lang_String_" data-uid="Org.W3c.Dom.Document.RenameNode(Org.W3c.Dom.Node,Java.Lang.String,Java.Lang.String)">
+  RenameNode(Node, String, String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/W3c/Dom/Document.cs/#L263"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/org/w3c/dom/Document.html#renameNode(org.w3c.dom.Node,java.lang.String,java.lang.String)">https://developer.android.com/reference/org/w3c/dom/Document.html#renameNode(org.w3c.dom.Node,java.lang.String,java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Node RenameNode(Node arg0, String arg1, String arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Org.W3c.Dom.Node.html">Node</a></dt>
+    <dd><p><a class="xref" href="Org.W3c.Dom.Node.html">Node</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.W3c.Dom.Node.html">Node</a></dt>
+    <dd><p><a class="xref" href="Org.W3c.Dom.Node.html">Node</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.W3c.Dom.DOMException.html">DOMException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_W3c_Dom_Document_SetDocumentURI_" data-uid="Org.W3c.Dom.Document.SetDocumentURI*"></a>
+
+  <h3 id="Org_W3c_Dom_Document_SetDocumentURI_Java_Lang_String_" data-uid="Org.W3c.Dom.Document.SetDocumentURI(Java.Lang.String)">
+  SetDocumentURI(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/W3c/Dom/Document.cs/#L317"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/org/w3c/dom/Document.html#setDocumentURI(java.lang.String)">https://developer.android.com/reference/org/w3c/dom/Document.html#setDocumentURI(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDocumentURI(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_W3c_Dom_Document_SetStrictErrorChecking_" data-uid="Org.W3c.Dom.Document.SetStrictErrorChecking*"></a>
+
+  <h3 id="Org_W3c_Dom_Document_SetStrictErrorChecking_System_Boolean_" data-uid="Org.W3c.Dom.Document.SetStrictErrorChecking(System.Boolean)">
+  SetStrictErrorChecking(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/W3c/Dom/Document.cs/#L325"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/org/w3c/dom/Document.html#setStrictErrorChecking(boolean)">https://developer.android.com/reference/org/w3c/dom/Document.html#setStrictErrorChecking(boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetStrictErrorChecking(bool arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Org_W3c_Dom_Document_SetXmlStandalone_" data-uid="Org.W3c.Dom.Document.SetXmlStandalone*"></a>
+
+  <h3 id="Org_W3c_Dom_Document_SetXmlStandalone_System_Boolean_" data-uid="Org.W3c.Dom.Document.SetXmlStandalone(System.Boolean)">
+  SetXmlStandalone(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/W3c/Dom/Document.cs/#L334"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/org/w3c/dom/Document.html#setXmlStandalone(boolean)">https://developer.android.com/reference/org/w3c/dom/Document.html#setXmlStandalone(boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetXmlStandalone(bool arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.W3c.Dom.DOMException.html">DOMException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Org_W3c_Dom_Document_SetXmlVersion_" data-uid="Org.W3c.Dom.Document.SetXmlVersion*"></a>
+
+  <h3 id="Org_W3c_Dom_Document_SetXmlVersion_Java_Lang_String_" data-uid="Org.W3c.Dom.Document.SetXmlVersion(Java.Lang.String)">
+  SetXmlVersion(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/W3c/Dom/Document.cs/#L343"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/org/w3c/dom/Document.html#setXmlVersion(java.lang.String)">https://developer.android.com/reference/org/w3c/dom/Document.html#setXmlVersion(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetXmlVersion(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Org.W3c.Dom.DOMException.html">DOMException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Org/W3c/Dom/Document.cs/#L47" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

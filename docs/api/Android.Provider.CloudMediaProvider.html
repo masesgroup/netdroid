@@ -1,0 +1,1209 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class CloudMediaProvider | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class CloudMediaProvider | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/provider/CloudMediaProvider.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_Provider_CloudMediaProvider.md&amp;value=---%0Auid%3A%20Android.Provider.CloudMediaProvider%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.Provider.CloudMediaProvider">
+
+
+
+  <h1 id="Android_Provider_CloudMediaProvider" data-uid="Android.Provider.CloudMediaProvider" class="text-break">
+Class CloudMediaProvider  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CloudMediaProvider.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.Provider.html">Provider</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/provider/CloudMediaProvider.html">https://developer.android.com/reference/android/provider/CloudMediaProvider.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CloudMediaProvider : ContentProvider, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IComponentCallbacks2, IComponentCallbacks</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.Content.ComponentCallbacks.html">ComponentCallbacks</a>&gt;</div>
+      <div><a class="xref" href="Android.Content.ComponentCallbacks.html">ComponentCallbacks</a></div>
+      <div><a class="xref" href="Android.Content.ComponentCallbacks2.html">ComponentCallbacks2</a></div>
+      <div><a class="xref" href="Android.Content.ContentProvider.html">ContentProvider</a></div>
+      <div><span class="xref">CloudMediaProvider</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+      <div><a class="xref" href="Android.Content.IComponentCallbacks2.html">IComponentCallbacks2</a></div>
+      <div><a class="xref" href="Android.Content.IComponentCallbacks.html">IComponentCallbacks</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_OpenPipeHelper__1_Android_Net_Uri_Java_Lang_String_Android_Os_Bundle___0_Android_Content_ContentProvider_PipeDataWriter___0__">ContentProvider.OpenPipeHelper&lt;T&gt;(Uri, String, Bundle, T, ContentProvider.PipeDataWriter&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_Query_Android_Net_Uri_Java_Lang_String___Java_Lang_String_Java_Lang_String___Java_Lang_String_">ContentProvider.Query(Uri, String[], String, String[], String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_Insert_Android_Net_Uri_Android_Content_ContentValues_">ContentProvider.Insert(Uri, ContentValues)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_OnCreate">ContentProvider.OnCreate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_Delete_Android_Net_Uri_Java_Lang_String_Java_Lang_String___">ContentProvider.Delete(Uri, String, String[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_Update_Android_Net_Uri_Android_Content_ContentValues_Java_Lang_String_Java_Lang_String___">ContentProvider.Update(Uri, ContentValues, String, String[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_GetType_Android_Net_Uri_">ContentProvider.GetType(Uri)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_ApplyBatch_Java_Lang_String_Java_Util_ArrayList_Android_Content_ContentProviderOperation__">ContentProvider.ApplyBatch(String, ArrayList&lt;ContentProviderOperation&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_ApplyBatch_Java_Util_ArrayList_Android_Content_ContentProviderOperation__">ContentProvider.ApplyBatch(ArrayList&lt;ContentProviderOperation&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_OpenAssetFile_Android_Net_Uri_Java_Lang_String_Android_Os_CancellationSignal_">ContentProvider.OpenAssetFile(Uri, String, CancellationSignal)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_OpenAssetFile_Android_Net_Uri_Java_Lang_String_">ContentProvider.OpenAssetFile(Uri, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_OpenTypedAssetFile_Android_Net_Uri_Java_Lang_String_Android_Os_Bundle_Android_Os_CancellationSignal_">ContentProvider.OpenTypedAssetFile(Uri, String, Bundle, CancellationSignal)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_OpenTypedAssetFile_Android_Net_Uri_Java_Lang_String_Android_Os_Bundle_">ContentProvider.OpenTypedAssetFile(Uri, String, Bundle)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_Query_Android_Net_Uri_Java_Lang_String___Android_Os_Bundle_Android_Os_CancellationSignal_">ContentProvider.Query(Uri, String[], Bundle, CancellationSignal)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_Query_Android_Net_Uri_Java_Lang_String___Java_Lang_String_Java_Lang_String___Java_Lang_String_Android_Os_CancellationSignal_">ContentProvider.Query(Uri, String[], String, String[], String, CancellationSignal)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_Canonicalize_Android_Net_Uri_">ContentProvider.Canonicalize(Uri)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_Insert_Android_Net_Uri_Android_Content_ContentValues_Android_Os_Bundle_">ContentProvider.Insert(Uri, ContentValues, Bundle)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_Uncanonicalize_Android_Net_Uri_">ContentProvider.Uncanonicalize(Uri)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_Call_Java_Lang_String_Java_Lang_String_Android_Os_Bundle_">ContentProvider.Call(String, String, Bundle)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_Call_Java_Lang_String_Java_Lang_String_Java_Lang_String_Android_Os_Bundle_">ContentProvider.Call(String, String, String, Bundle)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_OpenFile_Android_Net_Uri_Java_Lang_String_Android_Os_CancellationSignal_">ContentProvider.OpenFile(Uri, String, CancellationSignal)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_OpenFile_Android_Net_Uri_Java_Lang_String_">ContentProvider.OpenFile(Uri, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_Refresh_Android_Net_Uri_Android_Os_Bundle_Android_Os_CancellationSignal_">ContentProvider.Refresh(Uri, Bundle, CancellationSignal)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_GetCallingAttributionSource">ContentProvider.GetCallingAttributionSource()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_ClearCallingIdentity">ContentProvider.ClearCallingIdentity()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_GetContext">ContentProvider.GetContext()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_RequireContext">ContentProvider.RequireContext()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_GetPathPermissions">ContentProvider.GetPathPermissions()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_GetCallingAttributionTag">ContentProvider.GetCallingAttributionTag()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_GetCallingPackage">ContentProvider.GetCallingPackage()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_GetCallingPackageUnchecked">ContentProvider.GetCallingPackageUnchecked()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_GetReadPermission">ContentProvider.GetReadPermission()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_GetWritePermission">ContentProvider.GetWritePermission()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_RestoreCallingIdentity_Android_Content_ContentProvider_CallingIdentity_">ContentProvider.RestoreCallingIdentity(ContentProvider.CallingIdentity)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_BulkInsert_Android_Net_Uri_Android_Content_ContentValues___">ContentProvider.BulkInsert(Uri, ContentValues[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_Delete_Android_Net_Uri_Android_Os_Bundle_">ContentProvider.Delete(Uri, Bundle)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_Update_Android_Net_Uri_Android_Content_ContentValues_Android_Os_Bundle_">ContentProvider.Update(Uri, ContentValues, Bundle)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_GetTypeAnonymous_Android_Net_Uri_">ContentProvider.GetTypeAnonymous(Uri)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_GetStreamTypes_Android_Net_Uri_Java_Lang_String_">ContentProvider.GetStreamTypes(Uri, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_AttachInfo_Android_Content_Context_Android_Content_Pm_ProviderInfo_">ContentProvider.AttachInfo(Context, ProviderInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_Dump_Java_Io_FileDescriptor_Java_Io_PrintWriter_Java_Lang_String___">ContentProvider.Dump(FileDescriptor, PrintWriter, String[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_OnCallingPackageChanged">ContentProvider.OnCallingPackageChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_OnConfigurationChanged_Android_Content_Res_Configuration_">ContentProvider.OnConfigurationChanged(Configuration)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_OnLowMemory">ContentProvider.OnLowMemory()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_OnTrimMemory_System_Int32_">ContentProvider.OnTrimMemory(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ContentProvider.html#Android_Content_ContentProvider_Shutdown">ContentProvider.Shutdown()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ComponentCallbacks2.html#Android_Content_ComponentCallbacks2_TRIM_MEMORY_BACKGROUND">ComponentCallbacks2.TRIM_MEMORY_BACKGROUND</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ComponentCallbacks2.html#Android_Content_ComponentCallbacks2_TRIM_MEMORY_COMPLETE">ComponentCallbacks2.TRIM_MEMORY_COMPLETE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ComponentCallbacks2.html#Android_Content_ComponentCallbacks2_TRIM_MEMORY_MODERATE">ComponentCallbacks2.TRIM_MEMORY_MODERATE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ComponentCallbacks2.html#Android_Content_ComponentCallbacks2_TRIM_MEMORY_RUNNING_CRITICAL">ComponentCallbacks2.TRIM_MEMORY_RUNNING_CRITICAL</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ComponentCallbacks2.html#Android_Content_ComponentCallbacks2_TRIM_MEMORY_RUNNING_LOW">ComponentCallbacks2.TRIM_MEMORY_RUNNING_LOW</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ComponentCallbacks2.html#Android_Content_ComponentCallbacks2_TRIM_MEMORY_RUNNING_MODERATE">ComponentCallbacks2.TRIM_MEMORY_RUNNING_MODERATE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Content.ComponentCallbacks2.html#Android_Content_ComponentCallbacks2_TRIM_MEMORY_UI_HIDDEN">ComponentCallbacks2.TRIM_MEMORY_UI_HIDDEN</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;ComponentCallbacks&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;ComponentCallbacks&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;ComponentCallbacks&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ComponentCallbacks&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;ComponentCallbacks&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;ComponentCallbacks&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;ComponentCallbacks&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_Provider_CloudMediaProvider__ctor_" data-uid="Android.Provider.CloudMediaProvider.#ctor*"></a>
+
+  <h3 id="Android_Provider_CloudMediaProvider__ctor" data-uid="Android.Provider.CloudMediaProvider.#ctor">
+  CloudMediaProvider()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/AllPackageClasses.cs/#L1009"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;CloudMediaProvider class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public CloudMediaProvider()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CloudMediaProvider__ctor_" data-uid="Android.Provider.CloudMediaProvider.#ctor*"></a>
+
+  <h3 id="Android_Provider_CloudMediaProvider__ctor_System_Object___" data-uid="Android.Provider.CloudMediaProvider.#ctor(System.Object[])">
+  CloudMediaProvider(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/AllPackageClasses.cs/#L1014"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;CloudMediaProvider class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public CloudMediaProvider(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_Provider_CloudMediaProvider_BridgeClassName_" data-uid="Android.Provider.CloudMediaProvider.BridgeClassName*"></a>
+
+  <h3 id="Android_Provider_CloudMediaProvider_BridgeClassName" data-uid="Android.Provider.CloudMediaProvider.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/AllPackageClasses.cs/#L1022"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CloudMediaProvider_IsBridgeAbstract_" data-uid="Android.Provider.CloudMediaProvider.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_Provider_CloudMediaProvider_IsBridgeAbstract" data-uid="Android.Provider.CloudMediaProvider.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/AllPackageClasses.cs/#L1026"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CloudMediaProvider_IsBridgeCloseable_" data-uid="Android.Provider.CloudMediaProvider.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_Provider_CloudMediaProvider_IsBridgeCloseable" data-uid="Android.Provider.CloudMediaProvider.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/AllPackageClasses.cs/#L1030"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CloudMediaProvider_IsBridgeInterface_" data-uid="Android.Provider.CloudMediaProvider.IsBridgeInterface*"></a>
+
+  <h3 id="Android_Provider_CloudMediaProvider_IsBridgeInterface" data-uid="Android.Provider.CloudMediaProvider.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/AllPackageClasses.cs/#L1034"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CloudMediaProvider_IsBridgeStatic_" data-uid="Android.Provider.CloudMediaProvider.IsBridgeStatic*"></a>
+
+  <h3 id="Android_Provider_CloudMediaProvider_IsBridgeStatic" data-uid="Android.Provider.CloudMediaProvider.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/AllPackageClasses.cs/#L1038"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_Provider_CloudMediaProvider_OnCreateCloudMediaSurfaceController_" data-uid="Android.Provider.CloudMediaProvider.OnCreateCloudMediaSurfaceController*"></a>
+
+  <h3 id="Android_Provider_CloudMediaProvider_OnCreateCloudMediaSurfaceController_Android_Os_Bundle_Android_Provider_CloudMediaProvider_CloudMediaSurfaceStateChangedCallback_" data-uid="Android.Provider.CloudMediaProvider.OnCreateCloudMediaSurfaceController(Android.Os.Bundle,Android.Provider.CloudMediaProvider.CloudMediaSurfaceStateChangedCallback)">
+  OnCreateCloudMediaSurfaceController(Bundle, CloudMediaSurfaceStateChangedCallback)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CloudMediaProvider.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CloudMediaProvider.html#onCreateCloudMediaSurfaceController(android.os.Bundle,android.provider.CloudMediaProvider.CloudMediaSurfaceStateChangedCallback)">https://developer.android.com/reference/android/provider/CloudMediaProvider.html#onCreateCloudMediaSurfaceController(android.os.Bundle,android.provider.CloudMediaProvider.CloudMediaSurfaceStateChangedCallback)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CloudMediaProvider.CloudMediaSurfaceController OnCreateCloudMediaSurfaceController(Bundle arg0, CloudMediaProvider.CloudMediaSurfaceStateChangedCallback arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Provider.CloudMediaProvider.html">CloudMediaProvider</a>.<a class="xref" href="Android.Provider.CloudMediaProvider.CloudMediaSurfaceStateChangedCallback.html">CloudMediaSurfaceStateChangedCallback</a></dt>
+    <dd><p><a class="xref" href="Android.Provider.CloudMediaProvider.CloudMediaSurfaceStateChangedCallback.html">CloudMediaProvider.CloudMediaSurfaceStateChangedCallback</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Provider.CloudMediaProvider.html">CloudMediaProvider</a>.<a class="xref" href="Android.Provider.CloudMediaProvider.CloudMediaSurfaceController.html">CloudMediaSurfaceController</a></dt>
+    <dd><p><a class="xref" href="Android.Provider.CloudMediaProvider.CloudMediaSurfaceController.html">CloudMediaProvider.CloudMediaSurfaceController</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CloudMediaProvider_OnGetMediaCollectionInfo_" data-uid="Android.Provider.CloudMediaProvider.OnGetMediaCollectionInfo*"></a>
+
+  <h3 id="Android_Provider_CloudMediaProvider_OnGetMediaCollectionInfo_Android_Os_Bundle_" data-uid="Android.Provider.CloudMediaProvider.OnGetMediaCollectionInfo(Android.Os.Bundle)">
+  OnGetMediaCollectionInfo(Bundle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CloudMediaProvider.cs/#L84"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CloudMediaProvider.html#onGetMediaCollectionInfo(android.os.Bundle)">https://developer.android.com/reference/android/provider/CloudMediaProvider.html#onGetMediaCollectionInfo(android.os.Bundle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Bundle OnGetMediaCollectionInfo(Bundle arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CloudMediaProvider_OnOpenMedia_" data-uid="Android.Provider.CloudMediaProvider.OnOpenMedia*"></a>
+
+  <h3 id="Android_Provider_CloudMediaProvider_OnOpenMedia_Java_Lang_String_Android_Os_Bundle_Android_Os_CancellationSignal_" data-uid="Android.Provider.CloudMediaProvider.OnOpenMedia(Java.Lang.String,Android.Os.Bundle,Android.Os.CancellationSignal)">
+  OnOpenMedia(String, Bundle, CancellationSignal)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CloudMediaProvider.cs/#L96"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CloudMediaProvider.html#onOpenMedia(java.lang.String,android.os.Bundle,android.os.CancellationSignal)">https://developer.android.com/reference/android/provider/CloudMediaProvider.html#onOpenMedia(java.lang.String,android.os.Bundle,android.os.CancellationSignal)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ParcelFileDescriptor OnOpenMedia(String arg0, Bundle arg1, CancellationSignal arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Os.CancellationSignal.html">CancellationSignal</a></dt>
+    <dd><p><a class="xref" href="Android.Os.CancellationSignal.html">CancellationSignal</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Os.ParcelFileDescriptor.html">ParcelFileDescriptor</a></dt>
+    <dd><p><a class="xref" href="Android.Os.ParcelFileDescriptor.html">ParcelFileDescriptor</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.FileNotFoundException.html">FileNotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Provider_CloudMediaProvider_OnOpenPreview_" data-uid="Android.Provider.CloudMediaProvider.OnOpenPreview*"></a>
+
+  <h3 id="Android_Provider_CloudMediaProvider_OnOpenPreview_Java_Lang_String_Android_Graphics_Point_Android_Os_Bundle_Android_Os_CancellationSignal_" data-uid="Android.Provider.CloudMediaProvider.OnOpenPreview(Java.Lang.String,Android.Graphics.Point,Android.Os.Bundle,Android.Os.CancellationSignal)">
+  OnOpenPreview(String, Point, Bundle, CancellationSignal)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CloudMediaProvider.cs/#L57"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CloudMediaProvider.html#onOpenPreview(java.lang.String,android.graphics.Point,android.os.Bundle,android.os.CancellationSignal)">https://developer.android.com/reference/android/provider/CloudMediaProvider.html#onOpenPreview(java.lang.String,android.graphics.Point,android.os.Bundle,android.os.CancellationSignal)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AssetFileDescriptor OnOpenPreview(String arg0, Point arg1, Bundle arg2, CancellationSignal arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Graphics.Point.html">Point</a></dt>
+    <dd><p><a class="xref" href="Android.Graphics.Point.html">Point</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Android.Os.CancellationSignal.html">CancellationSignal</a></dt>
+    <dd><p><a class="xref" href="Android.Os.CancellationSignal.html">CancellationSignal</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Content.Res.AssetFileDescriptor.html">AssetFileDescriptor</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Res.AssetFileDescriptor.html">AssetFileDescriptor</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Io.FileNotFoundException.html">FileNotFoundException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Provider_CloudMediaProvider_OnQueryAlbums_" data-uid="Android.Provider.CloudMediaProvider.OnQueryAlbums*"></a>
+
+  <h3 id="Android_Provider_CloudMediaProvider_OnQueryAlbums_Android_Os_Bundle_" data-uid="Android.Provider.CloudMediaProvider.OnQueryAlbums(Android.Os.Bundle)">
+  OnQueryAlbums(Bundle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CloudMediaProvider.cs/#L105"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CloudMediaProvider.html#onQueryAlbums(android.os.Bundle)">https://developer.android.com/reference/android/provider/CloudMediaProvider.html#onQueryAlbums(android.os.Bundle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Cursor OnQueryAlbums(Bundle arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Database.Cursor.html">Cursor</a></dt>
+    <dd><p><a class="xref" href="Android.Database.Cursor.html">Cursor</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CloudMediaProvider_OnQueryDeletedMedia_" data-uid="Android.Provider.CloudMediaProvider.OnQueryDeletedMedia*"></a>
+
+  <h3 id="Android_Provider_CloudMediaProvider_OnQueryDeletedMedia_Android_Os_Bundle_" data-uid="Android.Provider.CloudMediaProvider.OnQueryDeletedMedia(Android.Os.Bundle)">
+  OnQueryDeletedMedia(Bundle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CloudMediaProvider.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CloudMediaProvider.html#onQueryDeletedMedia(android.os.Bundle)">https://developer.android.com/reference/android/provider/CloudMediaProvider.html#onQueryDeletedMedia(android.os.Bundle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Cursor OnQueryDeletedMedia(Bundle arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Database.Cursor.html">Cursor</a></dt>
+    <dd><p><a class="xref" href="Android.Database.Cursor.html">Cursor</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Provider_CloudMediaProvider_OnQueryMedia_" data-uid="Android.Provider.CloudMediaProvider.OnQueryMedia*"></a>
+
+  <h3 id="Android_Provider_CloudMediaProvider_OnQueryMedia_Android_Os_Bundle_" data-uid="Android.Provider.CloudMediaProvider.OnQueryMedia(Android.Os.Bundle)">
+  OnQueryMedia(Bundle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CloudMediaProvider.cs/#L75"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/provider/CloudMediaProvider.html#onQueryMedia(android.os.Bundle)">https://developer.android.com/reference/android/provider/CloudMediaProvider.html#onQueryMedia(android.os.Bundle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Cursor OnQueryMedia(Bundle arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Database.Cursor.html">Cursor</a></dt>
+    <dd><p><a class="xref" href="Android.Database.Cursor.html">Cursor</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Provider/CloudMediaProvider.cs/#L29" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

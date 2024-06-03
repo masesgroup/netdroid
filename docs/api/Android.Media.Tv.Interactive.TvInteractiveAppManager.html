@@ -1,0 +1,1945 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class TvInteractiveAppManager | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class TvInteractiveAppManager | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_Media_Tv_Interactive_TvInteractiveAppManager.md&amp;value=---%0Auid%3A%20Android.Media.Tv.Interactive.TvInteractiveAppManager%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager">
+
+
+
+  <h1 id="Android_Media_Tv_Interactive_TvInteractiveAppManager" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager" class="text-break">
+Class TvInteractiveAppManager  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Interactive/TvInteractiveAppManager.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.Media.html">Media</a>.<a class="xref" href="Android.Media.Tv.html">Tv</a>.<a class="xref" href="Android.Media.Tv.Interactive.html">Interactive</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html">https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class TvInteractiveAppManager : JVMBridgeBase&lt;TvInteractiveAppManager&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.Media.Tv.Interactive.TvInteractiveAppManager.html">TvInteractiveAppManager</a>&gt;</div>
+      <div><span class="xref">TvInteractiveAppManager</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TvInteractiveAppManager&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TvInteractiveAppManager&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TvInteractiveAppManager&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TvInteractiveAppManager&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TvInteractiveAppManager&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TvInteractiveAppManager&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TvInteractiveAppManager&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TvInteractiveAppManager&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;TvInteractiveAppManager&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;TvInteractiveAppManager&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;TvInteractiveAppManager&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;TvInteractiveAppManager&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TvInteractiveAppManager&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TvInteractiveAppManager&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TvInteractiveAppManager&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TvInteractiveAppManager&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;TvInteractiveAppManager&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;TvInteractiveAppManager&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;TvInteractiveAppManager&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;TvInteractiveAppManager&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TvInteractiveAppManager&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TvInteractiveAppManager&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TvInteractiveAppManager&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TvInteractiveAppManager&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;TvInteractiveAppManager&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;TvInteractiveAppManager&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;TvInteractiveAppManager&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;TvInteractiveAppManager&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TvInteractiveAppManager&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TvInteractiveAppManager&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TvInteractiveAppManager&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TvInteractiveAppManager&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TvInteractiveAppManager&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TvInteractiveAppManager&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TvInteractiveAppManager&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TvInteractiveAppManager&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TvInteractiveAppManager&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TvInteractiveAppManager&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TvInteractiveAppManager&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TvInteractiveAppManager&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TvInteractiveAppManager&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TvInteractiveAppManager&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TvInteractiveAppManager&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;TvInteractiveAppManager&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;TvInteractiveAppManager&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;TvInteractiveAppManager&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TvInteractiveAppManager&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;TvInteractiveAppManager&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;TvInteractiveAppManager&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;TvInteractiveAppManager&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_Media_Tv_Interactive_TvInteractiveAppManager__ctor_" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.#ctor*"></a>
+
+  <h3 id="Android_Media_Tv_Interactive_TvInteractiveAppManager__ctor" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.#ctor">
+  TvInteractiveAppManager()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Interactive/AllPackageClasses.cs/#L83"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TvInteractiveAppManager()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Interactive_TvInteractiveAppManager__ctor_" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.#ctor*"></a>
+
+  <h3 id="Android_Media_Tv_Interactive_TvInteractiveAppManager__ctor_System_Object___" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.#ctor(System.Object[])">
+  TvInteractiveAppManager(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Interactive/AllPackageClasses.cs/#L87"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TvInteractiveAppManager(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_Media_Tv_Interactive_TvInteractiveAppManager_ACTION_APP_LINK_COMMAND_" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.ACTION_APP_LINK_COMMAND*"></a>
+
+  <h3 id="Android_Media_Tv_Interactive_TvInteractiveAppManager_ACTION_APP_LINK_COMMAND" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.ACTION_APP_LINK_COMMAND">
+  ACTION_APP_LINK_COMMAND
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Interactive/TvInteractiveAppManager.cs/#L151"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#ACTION_APP_LINK_COMMAND">https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#ACTION_APP_LINK_COMMAND</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACTION_APP_LINK_COMMAND { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Interactive_TvInteractiveAppManager_APP_LINK_KEY_BACK_URI_" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.APP_LINK_KEY_BACK_URI*"></a>
+
+  <h3 id="Android_Media_Tv_Interactive_TvInteractiveAppManager_APP_LINK_KEY_BACK_URI" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.APP_LINK_KEY_BACK_URI">
+  APP_LINK_KEY_BACK_URI
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Interactive/TvInteractiveAppManager.cs/#L157"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#APP_LINK_KEY_BACK_URI">https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#APP_LINK_KEY_BACK_URI</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String APP_LINK_KEY_BACK_URI { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Interactive_TvInteractiveAppManager_APP_LINK_KEY_CLASS_NAME_" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.APP_LINK_KEY_CLASS_NAME*"></a>
+
+  <h3 id="Android_Media_Tv_Interactive_TvInteractiveAppManager_APP_LINK_KEY_CLASS_NAME" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.APP_LINK_KEY_CLASS_NAME">
+  APP_LINK_KEY_CLASS_NAME
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Interactive/TvInteractiveAppManager.cs/#L163"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#APP_LINK_KEY_CLASS_NAME">https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#APP_LINK_KEY_CLASS_NAME</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String APP_LINK_KEY_CLASS_NAME { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Interactive_TvInteractiveAppManager_APP_LINK_KEY_COMMAND_TYPE_" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.APP_LINK_KEY_COMMAND_TYPE*"></a>
+
+  <h3 id="Android_Media_Tv_Interactive_TvInteractiveAppManager_APP_LINK_KEY_COMMAND_TYPE" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.APP_LINK_KEY_COMMAND_TYPE">
+  APP_LINK_KEY_COMMAND_TYPE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Interactive/TvInteractiveAppManager.cs/#L169"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#APP_LINK_KEY_COMMAND_TYPE">https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#APP_LINK_KEY_COMMAND_TYPE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String APP_LINK_KEY_COMMAND_TYPE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Interactive_TvInteractiveAppManager_APP_LINK_KEY_PACKAGE_NAME_" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.APP_LINK_KEY_PACKAGE_NAME*"></a>
+
+  <h3 id="Android_Media_Tv_Interactive_TvInteractiveAppManager_APP_LINK_KEY_PACKAGE_NAME" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.APP_LINK_KEY_PACKAGE_NAME">
+  APP_LINK_KEY_PACKAGE_NAME
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Interactive/TvInteractiveAppManager.cs/#L175"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#APP_LINK_KEY_PACKAGE_NAME">https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#APP_LINK_KEY_PACKAGE_NAME</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String APP_LINK_KEY_PACKAGE_NAME { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Interactive_TvInteractiveAppManager_APP_LINK_KEY_SERVICE_ID_" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.APP_LINK_KEY_SERVICE_ID*"></a>
+
+  <h3 id="Android_Media_Tv_Interactive_TvInteractiveAppManager_APP_LINK_KEY_SERVICE_ID" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.APP_LINK_KEY_SERVICE_ID">
+  APP_LINK_KEY_SERVICE_ID
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Interactive/TvInteractiveAppManager.cs/#L181"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#APP_LINK_KEY_SERVICE_ID">https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#APP_LINK_KEY_SERVICE_ID</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String APP_LINK_KEY_SERVICE_ID { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Interactive_TvInteractiveAppManager_BridgeClassName_" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.BridgeClassName*"></a>
+
+  <h3 id="Android_Media_Tv_Interactive_TvInteractiveAppManager_BridgeClassName" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Interactive/AllPackageClasses.cs/#L94"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Interactive_TvInteractiveAppManager_ERROR_BLOCKED_" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.ERROR_BLOCKED*"></a>
+
+  <h3 id="Android_Media_Tv_Interactive_TvInteractiveAppManager_ERROR_BLOCKED" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.ERROR_BLOCKED">
+  ERROR_BLOCKED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Interactive/TvInteractiveAppManager.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#ERROR_BLOCKED">https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#ERROR_BLOCKED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR_BLOCKED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Interactive_TvInteractiveAppManager_ERROR_ENCRYPTED_" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.ERROR_ENCRYPTED*"></a>
+
+  <h3 id="Android_Media_Tv_Interactive_TvInteractiveAppManager_ERROR_ENCRYPTED" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.ERROR_ENCRYPTED">
+  ERROR_ENCRYPTED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Interactive/TvInteractiveAppManager.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#ERROR_ENCRYPTED">https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#ERROR_ENCRYPTED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR_ENCRYPTED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Interactive_TvInteractiveAppManager_ERROR_NONE_" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.ERROR_NONE*"></a>
+
+  <h3 id="Android_Media_Tv_Interactive_TvInteractiveAppManager_ERROR_NONE" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.ERROR_NONE">
+  ERROR_NONE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Interactive/TvInteractiveAppManager.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#ERROR_NONE">https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#ERROR_NONE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR_NONE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Interactive_TvInteractiveAppManager_ERROR_NOT_SUPPORTED_" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.ERROR_NOT_SUPPORTED*"></a>
+
+  <h3 id="Android_Media_Tv_Interactive_TvInteractiveAppManager_ERROR_NOT_SUPPORTED" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.ERROR_NOT_SUPPORTED">
+  ERROR_NOT_SUPPORTED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Interactive/TvInteractiveAppManager.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#ERROR_NOT_SUPPORTED">https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#ERROR_NOT_SUPPORTED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR_NOT_SUPPORTED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Interactive_TvInteractiveAppManager_ERROR_RESOURCE_UNAVAILABLE_" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.ERROR_RESOURCE_UNAVAILABLE*"></a>
+
+  <h3 id="Android_Media_Tv_Interactive_TvInteractiveAppManager_ERROR_RESOURCE_UNAVAILABLE" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.ERROR_RESOURCE_UNAVAILABLE">
+  ERROR_RESOURCE_UNAVAILABLE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Interactive/TvInteractiveAppManager.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#ERROR_RESOURCE_UNAVAILABLE">https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#ERROR_RESOURCE_UNAVAILABLE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR_RESOURCE_UNAVAILABLE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Interactive_TvInteractiveAppManager_ERROR_UNKNOWN_" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.ERROR_UNKNOWN*"></a>
+
+  <h3 id="Android_Media_Tv_Interactive_TvInteractiveAppManager_ERROR_UNKNOWN" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.ERROR_UNKNOWN">
+  ERROR_UNKNOWN
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Interactive/TvInteractiveAppManager.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#ERROR_UNKNOWN">https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#ERROR_UNKNOWN</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR_UNKNOWN { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Interactive_TvInteractiveAppManager_ERROR_UNKNOWN_CHANNEL_" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.ERROR_UNKNOWN_CHANNEL*"></a>
+
+  <h3 id="Android_Media_Tv_Interactive_TvInteractiveAppManager_ERROR_UNKNOWN_CHANNEL" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.ERROR_UNKNOWN_CHANNEL">
+  ERROR_UNKNOWN_CHANNEL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Interactive/TvInteractiveAppManager.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#ERROR_UNKNOWN_CHANNEL">https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#ERROR_UNKNOWN_CHANNEL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR_UNKNOWN_CHANNEL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Interactive_TvInteractiveAppManager_ERROR_WEAK_SIGNAL_" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.ERROR_WEAK_SIGNAL*"></a>
+
+  <h3 id="Android_Media_Tv_Interactive_TvInteractiveAppManager_ERROR_WEAK_SIGNAL" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.ERROR_WEAK_SIGNAL">
+  ERROR_WEAK_SIGNAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Interactive/TvInteractiveAppManager.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#ERROR_WEAK_SIGNAL">https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#ERROR_WEAK_SIGNAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ERROR_WEAK_SIGNAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Interactive_TvInteractiveAppManager_INTENT_KEY_BI_INTERACTIVE_APP_TYPE_" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.INTENT_KEY_BI_INTERACTIVE_APP_TYPE*"></a>
+
+  <h3 id="Android_Media_Tv_Interactive_TvInteractiveAppManager_INTENT_KEY_BI_INTERACTIVE_APP_TYPE" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.INTENT_KEY_BI_INTERACTIVE_APP_TYPE">
+  INTENT_KEY_BI_INTERACTIVE_APP_TYPE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Interactive/TvInteractiveAppManager.cs/#L187"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#INTENT_KEY_BI_INTERACTIVE_APP_TYPE">https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#INTENT_KEY_BI_INTERACTIVE_APP_TYPE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String INTENT_KEY_BI_INTERACTIVE_APP_TYPE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Interactive_TvInteractiveAppManager_INTENT_KEY_BI_INTERACTIVE_APP_URI_" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.INTENT_KEY_BI_INTERACTIVE_APP_URI*"></a>
+
+  <h3 id="Android_Media_Tv_Interactive_TvInteractiveAppManager_INTENT_KEY_BI_INTERACTIVE_APP_URI" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.INTENT_KEY_BI_INTERACTIVE_APP_URI">
+  INTENT_KEY_BI_INTERACTIVE_APP_URI
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Interactive/TvInteractiveAppManager.cs/#L193"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#INTENT_KEY_BI_INTERACTIVE_APP_URI">https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#INTENT_KEY_BI_INTERACTIVE_APP_URI</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String INTENT_KEY_BI_INTERACTIVE_APP_URI { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Interactive_TvInteractiveAppManager_INTENT_KEY_CHANNEL_URI_" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.INTENT_KEY_CHANNEL_URI*"></a>
+
+  <h3 id="Android_Media_Tv_Interactive_TvInteractiveAppManager_INTENT_KEY_CHANNEL_URI" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.INTENT_KEY_CHANNEL_URI">
+  INTENT_KEY_CHANNEL_URI
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Interactive/TvInteractiveAppManager.cs/#L199"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#INTENT_KEY_CHANNEL_URI">https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#INTENT_KEY_CHANNEL_URI</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String INTENT_KEY_CHANNEL_URI { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Interactive_TvInteractiveAppManager_INTENT_KEY_COMMAND_TYPE_" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.INTENT_KEY_COMMAND_TYPE*"></a>
+
+  <h3 id="Android_Media_Tv_Interactive_TvInteractiveAppManager_INTENT_KEY_COMMAND_TYPE" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.INTENT_KEY_COMMAND_TYPE">
+  INTENT_KEY_COMMAND_TYPE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Interactive/TvInteractiveAppManager.cs/#L205"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#INTENT_KEY_COMMAND_TYPE">https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#INTENT_KEY_COMMAND_TYPE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String INTENT_KEY_COMMAND_TYPE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Interactive_TvInteractiveAppManager_INTENT_KEY_INTERACTIVE_APP_SERVICE_ID_" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.INTENT_KEY_INTERACTIVE_APP_SERVICE_ID*"></a>
+
+  <h3 id="Android_Media_Tv_Interactive_TvInteractiveAppManager_INTENT_KEY_INTERACTIVE_APP_SERVICE_ID" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.INTENT_KEY_INTERACTIVE_APP_SERVICE_ID">
+  INTENT_KEY_INTERACTIVE_APP_SERVICE_ID
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Interactive/TvInteractiveAppManager.cs/#L211"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#INTENT_KEY_INTERACTIVE_APP_SERVICE_ID">https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#INTENT_KEY_INTERACTIVE_APP_SERVICE_ID</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String INTENT_KEY_INTERACTIVE_APP_SERVICE_ID { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Interactive_TvInteractiveAppManager_INTENT_KEY_TV_INPUT_ID_" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.INTENT_KEY_TV_INPUT_ID*"></a>
+
+  <h3 id="Android_Media_Tv_Interactive_TvInteractiveAppManager_INTENT_KEY_TV_INPUT_ID" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.INTENT_KEY_TV_INPUT_ID">
+  INTENT_KEY_TV_INPUT_ID
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Interactive/TvInteractiveAppManager.cs/#L217"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#INTENT_KEY_TV_INPUT_ID">https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#INTENT_KEY_TV_INPUT_ID</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String INTENT_KEY_TV_INPUT_ID { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Interactive_TvInteractiveAppManager_INTERACTIVE_APP_STATE_ERROR_" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.INTERACTIVE_APP_STATE_ERROR*"></a>
+
+  <h3 id="Android_Media_Tv_Interactive_TvInteractiveAppManager_INTERACTIVE_APP_STATE_ERROR" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.INTERACTIVE_APP_STATE_ERROR">
+  INTERACTIVE_APP_STATE_ERROR
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Interactive/TvInteractiveAppManager.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#INTERACTIVE_APP_STATE_ERROR">https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#INTERACTIVE_APP_STATE_ERROR</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int INTERACTIVE_APP_STATE_ERROR { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Interactive_TvInteractiveAppManager_INTERACTIVE_APP_STATE_RUNNING_" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.INTERACTIVE_APP_STATE_RUNNING*"></a>
+
+  <h3 id="Android_Media_Tv_Interactive_TvInteractiveAppManager_INTERACTIVE_APP_STATE_RUNNING" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.INTERACTIVE_APP_STATE_RUNNING">
+  INTERACTIVE_APP_STATE_RUNNING
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Interactive/TvInteractiveAppManager.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#INTERACTIVE_APP_STATE_RUNNING">https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#INTERACTIVE_APP_STATE_RUNNING</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int INTERACTIVE_APP_STATE_RUNNING { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Interactive_TvInteractiveAppManager_INTERACTIVE_APP_STATE_STOPPED_" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.INTERACTIVE_APP_STATE_STOPPED*"></a>
+
+  <h3 id="Android_Media_Tv_Interactive_TvInteractiveAppManager_INTERACTIVE_APP_STATE_STOPPED" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.INTERACTIVE_APP_STATE_STOPPED">
+  INTERACTIVE_APP_STATE_STOPPED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Interactive/TvInteractiveAppManager.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#INTERACTIVE_APP_STATE_STOPPED">https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#INTERACTIVE_APP_STATE_STOPPED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int INTERACTIVE_APP_STATE_STOPPED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Interactive_TvInteractiveAppManager_IsBridgeAbstract_" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_Media_Tv_Interactive_TvInteractiveAppManager_IsBridgeAbstract" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Interactive/AllPackageClasses.cs/#L98"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Interactive_TvInteractiveAppManager_IsBridgeCloseable_" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_Media_Tv_Interactive_TvInteractiveAppManager_IsBridgeCloseable" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Interactive/AllPackageClasses.cs/#L102"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Interactive_TvInteractiveAppManager_IsBridgeInterface_" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.IsBridgeInterface*"></a>
+
+  <h3 id="Android_Media_Tv_Interactive_TvInteractiveAppManager_IsBridgeInterface" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Interactive/AllPackageClasses.cs/#L106"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Interactive_TvInteractiveAppManager_IsBridgeStatic_" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.IsBridgeStatic*"></a>
+
+  <h3 id="Android_Media_Tv_Interactive_TvInteractiveAppManager_IsBridgeStatic" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Interactive/AllPackageClasses.cs/#L110"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Interactive_TvInteractiveAppManager_SERVICE_STATE_ERROR_" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.SERVICE_STATE_ERROR*"></a>
+
+  <h3 id="Android_Media_Tv_Interactive_TvInteractiveAppManager_SERVICE_STATE_ERROR" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.SERVICE_STATE_ERROR">
+  SERVICE_STATE_ERROR
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Interactive/TvInteractiveAppManager.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#SERVICE_STATE_ERROR">https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#SERVICE_STATE_ERROR</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SERVICE_STATE_ERROR { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Interactive_TvInteractiveAppManager_SERVICE_STATE_PREPARING_" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.SERVICE_STATE_PREPARING*"></a>
+
+  <h3 id="Android_Media_Tv_Interactive_TvInteractiveAppManager_SERVICE_STATE_PREPARING" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.SERVICE_STATE_PREPARING">
+  SERVICE_STATE_PREPARING
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Interactive/TvInteractiveAppManager.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#SERVICE_STATE_PREPARING">https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#SERVICE_STATE_PREPARING</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SERVICE_STATE_PREPARING { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Interactive_TvInteractiveAppManager_SERVICE_STATE_READY_" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.SERVICE_STATE_READY*"></a>
+
+  <h3 id="Android_Media_Tv_Interactive_TvInteractiveAppManager_SERVICE_STATE_READY" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.SERVICE_STATE_READY">
+  SERVICE_STATE_READY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Interactive/TvInteractiveAppManager.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#SERVICE_STATE_READY">https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#SERVICE_STATE_READY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SERVICE_STATE_READY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Interactive_TvInteractiveAppManager_SERVICE_STATE_UNREALIZED_" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.SERVICE_STATE_UNREALIZED*"></a>
+
+  <h3 id="Android_Media_Tv_Interactive_TvInteractiveAppManager_SERVICE_STATE_UNREALIZED" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.SERVICE_STATE_UNREALIZED">
+  SERVICE_STATE_UNREALIZED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Interactive/TvInteractiveAppManager.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#SERVICE_STATE_UNREALIZED">https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#SERVICE_STATE_UNREALIZED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SERVICE_STATE_UNREALIZED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Interactive_TvInteractiveAppManager_TELETEXT_APP_STATE_ERROR_" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.TELETEXT_APP_STATE_ERROR*"></a>
+
+  <h3 id="Android_Media_Tv_Interactive_TvInteractiveAppManager_TELETEXT_APP_STATE_ERROR" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.TELETEXT_APP_STATE_ERROR">
+  TELETEXT_APP_STATE_ERROR
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Interactive/TvInteractiveAppManager.cs/#L133"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#TELETEXT_APP_STATE_ERROR">https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#TELETEXT_APP_STATE_ERROR</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TELETEXT_APP_STATE_ERROR { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Interactive_TvInteractiveAppManager_TELETEXT_APP_STATE_HIDE_" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.TELETEXT_APP_STATE_HIDE*"></a>
+
+  <h3 id="Android_Media_Tv_Interactive_TvInteractiveAppManager_TELETEXT_APP_STATE_HIDE" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.TELETEXT_APP_STATE_HIDE">
+  TELETEXT_APP_STATE_HIDE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Interactive/TvInteractiveAppManager.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#TELETEXT_APP_STATE_HIDE">https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#TELETEXT_APP_STATE_HIDE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TELETEXT_APP_STATE_HIDE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Interactive_TvInteractiveAppManager_TELETEXT_APP_STATE_SHOW_" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.TELETEXT_APP_STATE_SHOW*"></a>
+
+  <h3 id="Android_Media_Tv_Interactive_TvInteractiveAppManager_TELETEXT_APP_STATE_SHOW" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.TELETEXT_APP_STATE_SHOW">
+  TELETEXT_APP_STATE_SHOW
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Interactive/TvInteractiveAppManager.cs/#L145"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#TELETEXT_APP_STATE_SHOW">https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#TELETEXT_APP_STATE_SHOW</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TELETEXT_APP_STATE_SHOW { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_Media_Tv_Interactive_TvInteractiveAppManager_GetAppLinkInfoList_" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.GetAppLinkInfoList*"></a>
+
+  <h3 id="Android_Media_Tv_Interactive_TvInteractiveAppManager_GetAppLinkInfoList" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.GetAppLinkInfoList">
+  GetAppLinkInfoList()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Interactive/TvInteractiveAppManager.cs/#L232"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#getAppLinkInfoList()">https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#getAppLinkInfoList()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;AppLinkInfo&gt; GetAppLinkInfoList()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Android.Media.Tv.Interactive.AppLinkInfo.html">AppLinkInfo</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.List.html">List</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Interactive_TvInteractiveAppManager_GetTvInteractiveAppServiceList_" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.GetTvInteractiveAppServiceList*"></a>
+
+  <h3 id="Android_Media_Tv_Interactive_TvInteractiveAppManager_GetTvInteractiveAppServiceList" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.GetTvInteractiveAppServiceList">
+  GetTvInteractiveAppServiceList()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Interactive/TvInteractiveAppManager.cs/#L240"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#getTvInteractiveAppServiceList()">https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#getTvInteractiveAppServiceList()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;TvInteractiveAppServiceInfo&gt; GetTvInteractiveAppServiceList()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Android.Media.Tv.Interactive.TvInteractiveAppServiceInfo.html">TvInteractiveAppServiceInfo</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.List.html">List</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Interactive_TvInteractiveAppManager_RegisterAppLinkInfo_" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.RegisterAppLinkInfo*"></a>
+
+  <h3 id="Android_Media_Tv_Interactive_TvInteractiveAppManager_RegisterAppLinkInfo_Java_Lang_String_Android_Media_Tv_Interactive_AppLinkInfo_" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.RegisterAppLinkInfo(Java.Lang.String,Android.Media.Tv.Interactive.AppLinkInfo)">
+  RegisterAppLinkInfo(String, AppLinkInfo)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Interactive/TvInteractiveAppManager.cs/#L249"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#registerAppLinkInfo(java.lang.String,android.media.tv.interactive.AppLinkInfo)">https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#registerAppLinkInfo(java.lang.String,android.media.tv.interactive.AppLinkInfo)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterAppLinkInfo(String arg0, AppLinkInfo arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Media.Tv.Interactive.AppLinkInfo.html">AppLinkInfo</a></dt>
+    <dd><p><a class="xref" href="Android.Media.Tv.Interactive.AppLinkInfo.html">AppLinkInfo</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Interactive_TvInteractiveAppManager_RegisterCallback_" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.RegisterCallback*"></a>
+
+  <h3 id="Android_Media_Tv_Interactive_TvInteractiveAppManager_RegisterCallback_Java_Util_Concurrent_Executor_Android_Media_Tv_Interactive_TvInteractiveAppManager_TvInteractiveAppCallback_" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.RegisterCallback(Java.Util.Concurrent.Executor,Android.Media.Tv.Interactive.TvInteractiveAppManager.TvInteractiveAppCallback)">
+  RegisterCallback(Executor, TvInteractiveAppCallback)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Interactive/TvInteractiveAppManager.cs/#L258"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#registerCallback(java.util.concurrent.Executor,android.media.tv.interactive.TvInteractiveAppManager.TvInteractiveAppCallback)">https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#registerCallback(java.util.concurrent.Executor,android.media.tv.interactive.TvInteractiveAppManager.TvInteractiveAppCallback)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterCallback(Executor arg0, TvInteractiveAppManager.TvInteractiveAppCallback arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Concurrent.Executor.html">Executor</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Media.Tv.Interactive.TvInteractiveAppManager.html">TvInteractiveAppManager</a>.<a class="xref" href="Android.Media.Tv.Interactive.TvInteractiveAppManager.TvInteractiveAppCallback.html">TvInteractiveAppCallback</a></dt>
+    <dd><p><a class="xref" href="Android.Media.Tv.Interactive.TvInteractiveAppManager.TvInteractiveAppCallback.html">TvInteractiveAppManager.TvInteractiveAppCallback</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Interactive_TvInteractiveAppManager_SendAppLinkCommand_" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.SendAppLinkCommand*"></a>
+
+  <h3 id="Android_Media_Tv_Interactive_TvInteractiveAppManager_SendAppLinkCommand_Java_Lang_String_Android_Os_Bundle_" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.SendAppLinkCommand(Java.Lang.String,Android.Os.Bundle)">
+  SendAppLinkCommand(String, Bundle)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Interactive/TvInteractiveAppManager.cs/#L267"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#sendAppLinkCommand(java.lang.String,android.os.Bundle)">https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#sendAppLinkCommand(java.lang.String,android.os.Bundle)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendAppLinkCommand(String arg0, Bundle arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Os.Bundle.html">Bundle</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Bundle.html">Bundle</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Interactive_TvInteractiveAppManager_UnregisterAppLinkInfo_" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.UnregisterAppLinkInfo*"></a>
+
+  <h3 id="Android_Media_Tv_Interactive_TvInteractiveAppManager_UnregisterAppLinkInfo_Java_Lang_String_Android_Media_Tv_Interactive_AppLinkInfo_" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.UnregisterAppLinkInfo(Java.Lang.String,Android.Media.Tv.Interactive.AppLinkInfo)">
+  UnregisterAppLinkInfo(String, AppLinkInfo)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Interactive/TvInteractiveAppManager.cs/#L276"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#unregisterAppLinkInfo(java.lang.String,android.media.tv.interactive.AppLinkInfo)">https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#unregisterAppLinkInfo(java.lang.String,android.media.tv.interactive.AppLinkInfo)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnregisterAppLinkInfo(String arg0, AppLinkInfo arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Media.Tv.Interactive.AppLinkInfo.html">AppLinkInfo</a></dt>
+    <dd><p><a class="xref" href="Android.Media.Tv.Interactive.AppLinkInfo.html">AppLinkInfo</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_Interactive_TvInteractiveAppManager_UnregisterCallback_" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.UnregisterCallback*"></a>
+
+  <h3 id="Android_Media_Tv_Interactive_TvInteractiveAppManager_UnregisterCallback_Android_Media_Tv_Interactive_TvInteractiveAppManager_TvInteractiveAppCallback_" data-uid="Android.Media.Tv.Interactive.TvInteractiveAppManager.UnregisterCallback(Android.Media.Tv.Interactive.TvInteractiveAppManager.TvInteractiveAppCallback)">
+  UnregisterCallback(TvInteractiveAppCallback)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Interactive/TvInteractiveAppManager.cs/#L284"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#unregisterCallback(android.media.tv.interactive.TvInteractiveAppManager.TvInteractiveAppCallback)">https://developer.android.com/reference/android/media/tv/interactive/TvInteractiveAppManager.html#unregisterCallback(android.media.tv.interactive.TvInteractiveAppManager.TvInteractiveAppCallback)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnregisterCallback(TvInteractiveAppManager.TvInteractiveAppCallback arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Media.Tv.Interactive.TvInteractiveAppManager.html">TvInteractiveAppManager</a>.<a class="xref" href="Android.Media.Tv.Interactive.TvInteractiveAppManager.TvInteractiveAppCallback.html">TvInteractiveAppCallback</a></dt>
+    <dd><p><a class="xref" href="Android.Media.Tv.Interactive.TvInteractiveAppManager.TvInteractiveAppCallback.html">TvInteractiveAppManager.TvInteractiveAppCallback</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/Interactive/TvInteractiveAppManager.cs/#L29" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

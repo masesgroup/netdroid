@@ -1,0 +1,2191 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class EnvironmentalReverb | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class EnvironmentalReverb | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_Media_Audiofx_EnvironmentalReverb.md&amp;value=---%0Auid%3A%20Android.Media.Audiofx.EnvironmentalReverb%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.Media.Audiofx.EnvironmentalReverb">
+
+
+
+  <h1 id="Android_Media_Audiofx_EnvironmentalReverb" data-uid="Android.Media.Audiofx.EnvironmentalReverb" class="text-break">
+Class EnvironmentalReverb  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/EnvironmentalReverb.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.Media.html">Media</a>.<a class="xref" href="Android.Media.Audiofx.html">Audiofx</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html">https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class EnvironmentalReverb : AudioEffect, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.Media.Audiofx.AudioEffect.html">AudioEffect</a>&gt;</div>
+      <div><a class="xref" href="Android.Media.Audiofx.AudioEffect.html">AudioEffect</a></div>
+      <div><span class="xref">EnvironmentalReverb</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_ALREADY_EXISTS">AudioEffect.ALREADY_EXISTS</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_CONTENT_TYPE_GAME">AudioEffect.CONTENT_TYPE_GAME</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_CONTENT_TYPE_MOVIE">AudioEffect.CONTENT_TYPE_MOVIE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_CONTENT_TYPE_MUSIC">AudioEffect.CONTENT_TYPE_MUSIC</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_CONTENT_TYPE_VOICE">AudioEffect.CONTENT_TYPE_VOICE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_ERROR">AudioEffect.ERROR</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_ERROR_BAD_VALUE">AudioEffect.ERROR_BAD_VALUE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_ERROR_DEAD_OBJECT">AudioEffect.ERROR_DEAD_OBJECT</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_ERROR_INVALID_OPERATION">AudioEffect.ERROR_INVALID_OPERATION</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_ERROR_NO_INIT">AudioEffect.ERROR_NO_INIT</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_ERROR_NO_MEMORY">AudioEffect.ERROR_NO_MEMORY</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_SUCCESS">AudioEffect.SUCCESS</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_ACTION_CLOSE_AUDIO_EFFECT_CONTROL_SESSION">AudioEffect.ACTION_CLOSE_AUDIO_EFFECT_CONTROL_SESSION</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_ACTION_DISPLAY_AUDIO_EFFECT_CONTROL_PANEL">AudioEffect.ACTION_DISPLAY_AUDIO_EFFECT_CONTROL_PANEL</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_ACTION_OPEN_AUDIO_EFFECT_CONTROL_SESSION">AudioEffect.ACTION_OPEN_AUDIO_EFFECT_CONTROL_SESSION</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_EFFECT_AUXILIARY">AudioEffect.EFFECT_AUXILIARY</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_EFFECT_INSERT">AudioEffect.EFFECT_INSERT</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_EFFECT_POST_PROCESSING">AudioEffect.EFFECT_POST_PROCESSING</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_EFFECT_PRE_PROCESSING">AudioEffect.EFFECT_PRE_PROCESSING</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_EXTRA_AUDIO_SESSION">AudioEffect.EXTRA_AUDIO_SESSION</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_EXTRA_CONTENT_TYPE">AudioEffect.EXTRA_CONTENT_TYPE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_EXTRA_PACKAGE_NAME">AudioEffect.EXTRA_PACKAGE_NAME</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_EFFECT_TYPE_AEC">AudioEffect.EFFECT_TYPE_AEC</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_EFFECT_TYPE_AGC">AudioEffect.EFFECT_TYPE_AGC</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_EFFECT_TYPE_BASS_BOOST">AudioEffect.EFFECT_TYPE_BASS_BOOST</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_EFFECT_TYPE_DYNAMICS_PROCESSING">AudioEffect.EFFECT_TYPE_DYNAMICS_PROCESSING</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_EFFECT_TYPE_ENV_REVERB">AudioEffect.EFFECT_TYPE_ENV_REVERB</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_EFFECT_TYPE_EQUALIZER">AudioEffect.EFFECT_TYPE_EQUALIZER</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_EFFECT_TYPE_HAPTIC_GENERATOR">AudioEffect.EFFECT_TYPE_HAPTIC_GENERATOR</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_EFFECT_TYPE_LOUDNESS_ENHANCER">AudioEffect.EFFECT_TYPE_LOUDNESS_ENHANCER</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_EFFECT_TYPE_NS">AudioEffect.EFFECT_TYPE_NS</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_EFFECT_TYPE_PRESET_REVERB">AudioEffect.EFFECT_TYPE_PRESET_REVERB</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_EFFECT_TYPE_VIRTUALIZER">AudioEffect.EFFECT_TYPE_VIRTUALIZER</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_QueryEffects">AudioEffect.QueryEffects()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_GetDescriptor">AudioEffect.GetDescriptor()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_GetEnabled">AudioEffect.GetEnabled()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_HasControl">AudioEffect.HasControl()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_GetId">AudioEffect.GetId()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_SetEnabled_System_Boolean_">AudioEffect.SetEnabled(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_Release">AudioEffect.Release()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_SetControlStatusListener_Android_Media_Audiofx_AudioEffect_OnControlStatusChangeListener_">AudioEffect.SetControlStatusListener(AudioEffect.OnControlStatusChangeListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Media.Audiofx.AudioEffect.html#Android_Media_Audiofx_AudioEffect_SetEnableStatusListener_Android_Media_Audiofx_AudioEffect_OnEnableStatusChangeListener_">AudioEffect.SetEnableStatusListener(AudioEffect.OnEnableStatusChangeListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioEffect&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioEffect&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioEffect&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioEffect&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioEffect&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioEffect&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioEffect&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioEffect&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AudioEffect&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AudioEffect&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AudioEffect&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AudioEffect&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioEffect&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioEffect&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioEffect&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioEffect&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AudioEffect&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AudioEffect&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AudioEffect&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AudioEffect&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioEffect&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioEffect&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioEffect&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioEffect&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AudioEffect&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AudioEffect&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AudioEffect&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AudioEffect&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioEffect&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioEffect&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioEffect&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioEffect&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioEffect&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioEffect&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioEffect&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioEffect&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioEffect&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioEffect&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioEffect&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioEffect&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioEffect&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioEffect&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioEffect&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;AudioEffect&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;AudioEffect&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;AudioEffect&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AudioEffect&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;AudioEffect&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;AudioEffect&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;AudioEffect&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_Media_Audiofx_EnvironmentalReverb__ctor_" data-uid="Android.Media.Audiofx.EnvironmentalReverb.#ctor*"></a>
+
+  <h3 id="Android_Media_Audiofx_EnvironmentalReverb__ctor" data-uid="Android.Media.Audiofx.EnvironmentalReverb.#ctor">
+  EnvironmentalReverb()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/AllPackageClasses.cs/#L1026"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EnvironmentalReverb()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Audiofx_EnvironmentalReverb__ctor_" data-uid="Android.Media.Audiofx.EnvironmentalReverb.#ctor*"></a>
+
+  <h3 id="Android_Media_Audiofx_EnvironmentalReverb__ctor_System_Int32_System_Int32_" data-uid="Android.Media.Audiofx.EnvironmentalReverb.#ctor(System.Int32,System.Int32)">
+  EnvironmentalReverb(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/EnvironmentalReverb.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#%3Cinit%3E(int,int)">https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#%3Cinit%3E(int,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EnvironmentalReverb(int arg0, int arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.IllegalArgumentException.html">IllegalArgumentException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Lang.RuntimeException.html">RuntimeException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Lang.UnsupportedOperationException.html">UnsupportedOperationException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Media_Audiofx_EnvironmentalReverb__ctor_" data-uid="Android.Media.Audiofx.EnvironmentalReverb.#ctor*"></a>
+
+  <h3 id="Android_Media_Audiofx_EnvironmentalReverb__ctor_System_Object___" data-uid="Android.Media.Audiofx.EnvironmentalReverb.#ctor(System.Object[])">
+  EnvironmentalReverb(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/AllPackageClasses.cs/#L1030"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EnvironmentalReverb(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_Media_Audiofx_EnvironmentalReverb_BridgeClassName_" data-uid="Android.Media.Audiofx.EnvironmentalReverb.BridgeClassName*"></a>
+
+  <h3 id="Android_Media_Audiofx_EnvironmentalReverb_BridgeClassName" data-uid="Android.Media.Audiofx.EnvironmentalReverb.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/AllPackageClasses.cs/#L1037"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Audiofx_EnvironmentalReverb_IsBridgeAbstract_" data-uid="Android.Media.Audiofx.EnvironmentalReverb.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_Media_Audiofx_EnvironmentalReverb_IsBridgeAbstract" data-uid="Android.Media.Audiofx.EnvironmentalReverb.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/AllPackageClasses.cs/#L1041"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Audiofx_EnvironmentalReverb_IsBridgeCloseable_" data-uid="Android.Media.Audiofx.EnvironmentalReverb.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_Media_Audiofx_EnvironmentalReverb_IsBridgeCloseable" data-uid="Android.Media.Audiofx.EnvironmentalReverb.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/AllPackageClasses.cs/#L1045"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Audiofx_EnvironmentalReverb_IsBridgeInterface_" data-uid="Android.Media.Audiofx.EnvironmentalReverb.IsBridgeInterface*"></a>
+
+  <h3 id="Android_Media_Audiofx_EnvironmentalReverb_IsBridgeInterface" data-uid="Android.Media.Audiofx.EnvironmentalReverb.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/AllPackageClasses.cs/#L1049"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Audiofx_EnvironmentalReverb_IsBridgeStatic_" data-uid="Android.Media.Audiofx.EnvironmentalReverb.IsBridgeStatic*"></a>
+
+  <h3 id="Android_Media_Audiofx_EnvironmentalReverb_IsBridgeStatic" data-uid="Android.Media.Audiofx.EnvironmentalReverb.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/AllPackageClasses.cs/#L1053"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Audiofx_EnvironmentalReverb_PARAM_DECAY_HF_RATIO_" data-uid="Android.Media.Audiofx.EnvironmentalReverb.PARAM_DECAY_HF_RATIO*"></a>
+
+  <h3 id="Android_Media_Audiofx_EnvironmentalReverb_PARAM_DECAY_HF_RATIO" data-uid="Android.Media.Audiofx.EnvironmentalReverb.PARAM_DECAY_HF_RATIO">
+  PARAM_DECAY_HF_RATIO
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/EnvironmentalReverb.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#PARAM_DECAY_HF_RATIO">https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#PARAM_DECAY_HF_RATIO</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int PARAM_DECAY_HF_RATIO { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Audiofx_EnvironmentalReverb_PARAM_DECAY_TIME_" data-uid="Android.Media.Audiofx.EnvironmentalReverb.PARAM_DECAY_TIME*"></a>
+
+  <h3 id="Android_Media_Audiofx_EnvironmentalReverb_PARAM_DECAY_TIME" data-uid="Android.Media.Audiofx.EnvironmentalReverb.PARAM_DECAY_TIME">
+  PARAM_DECAY_TIME
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/EnvironmentalReverb.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#PARAM_DECAY_TIME">https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#PARAM_DECAY_TIME</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int PARAM_DECAY_TIME { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Audiofx_EnvironmentalReverb_PARAM_DENSITY_" data-uid="Android.Media.Audiofx.EnvironmentalReverb.PARAM_DENSITY*"></a>
+
+  <h3 id="Android_Media_Audiofx_EnvironmentalReverb_PARAM_DENSITY" data-uid="Android.Media.Audiofx.EnvironmentalReverb.PARAM_DENSITY">
+  PARAM_DENSITY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/EnvironmentalReverb.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#PARAM_DENSITY">https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#PARAM_DENSITY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int PARAM_DENSITY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Audiofx_EnvironmentalReverb_PARAM_DIFFUSION_" data-uid="Android.Media.Audiofx.EnvironmentalReverb.PARAM_DIFFUSION*"></a>
+
+  <h3 id="Android_Media_Audiofx_EnvironmentalReverb_PARAM_DIFFUSION" data-uid="Android.Media.Audiofx.EnvironmentalReverb.PARAM_DIFFUSION">
+  PARAM_DIFFUSION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/EnvironmentalReverb.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#PARAM_DIFFUSION">https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#PARAM_DIFFUSION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int PARAM_DIFFUSION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Audiofx_EnvironmentalReverb_PARAM_REFLECTIONS_DELAY_" data-uid="Android.Media.Audiofx.EnvironmentalReverb.PARAM_REFLECTIONS_DELAY*"></a>
+
+  <h3 id="Android_Media_Audiofx_EnvironmentalReverb_PARAM_REFLECTIONS_DELAY" data-uid="Android.Media.Audiofx.EnvironmentalReverb.PARAM_REFLECTIONS_DELAY">
+  PARAM_REFLECTIONS_DELAY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/EnvironmentalReverb.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#PARAM_REFLECTIONS_DELAY">https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#PARAM_REFLECTIONS_DELAY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int PARAM_REFLECTIONS_DELAY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Audiofx_EnvironmentalReverb_PARAM_REFLECTIONS_LEVEL_" data-uid="Android.Media.Audiofx.EnvironmentalReverb.PARAM_REFLECTIONS_LEVEL*"></a>
+
+  <h3 id="Android_Media_Audiofx_EnvironmentalReverb_PARAM_REFLECTIONS_LEVEL" data-uid="Android.Media.Audiofx.EnvironmentalReverb.PARAM_REFLECTIONS_LEVEL">
+  PARAM_REFLECTIONS_LEVEL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/EnvironmentalReverb.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#PARAM_REFLECTIONS_LEVEL">https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#PARAM_REFLECTIONS_LEVEL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int PARAM_REFLECTIONS_LEVEL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Audiofx_EnvironmentalReverb_PARAM_REVERB_DELAY_" data-uid="Android.Media.Audiofx.EnvironmentalReverb.PARAM_REVERB_DELAY*"></a>
+
+  <h3 id="Android_Media_Audiofx_EnvironmentalReverb_PARAM_REVERB_DELAY" data-uid="Android.Media.Audiofx.EnvironmentalReverb.PARAM_REVERB_DELAY">
+  PARAM_REVERB_DELAY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/EnvironmentalReverb.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#PARAM_REVERB_DELAY">https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#PARAM_REVERB_DELAY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int PARAM_REVERB_DELAY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Audiofx_EnvironmentalReverb_PARAM_REVERB_LEVEL_" data-uid="Android.Media.Audiofx.EnvironmentalReverb.PARAM_REVERB_LEVEL*"></a>
+
+  <h3 id="Android_Media_Audiofx_EnvironmentalReverb_PARAM_REVERB_LEVEL" data-uid="Android.Media.Audiofx.EnvironmentalReverb.PARAM_REVERB_LEVEL">
+  PARAM_REVERB_LEVEL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/EnvironmentalReverb.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#PARAM_REVERB_LEVEL">https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#PARAM_REVERB_LEVEL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int PARAM_REVERB_LEVEL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Audiofx_EnvironmentalReverb_PARAM_ROOM_HF_LEVEL_" data-uid="Android.Media.Audiofx.EnvironmentalReverb.PARAM_ROOM_HF_LEVEL*"></a>
+
+  <h3 id="Android_Media_Audiofx_EnvironmentalReverb_PARAM_ROOM_HF_LEVEL" data-uid="Android.Media.Audiofx.EnvironmentalReverb.PARAM_ROOM_HF_LEVEL">
+  PARAM_ROOM_HF_LEVEL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/EnvironmentalReverb.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#PARAM_ROOM_HF_LEVEL">https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#PARAM_ROOM_HF_LEVEL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int PARAM_ROOM_HF_LEVEL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Audiofx_EnvironmentalReverb_PARAM_ROOM_LEVEL_" data-uid="Android.Media.Audiofx.EnvironmentalReverb.PARAM_ROOM_LEVEL*"></a>
+
+  <h3 id="Android_Media_Audiofx_EnvironmentalReverb_PARAM_ROOM_LEVEL" data-uid="Android.Media.Audiofx.EnvironmentalReverb.PARAM_ROOM_LEVEL">
+  PARAM_ROOM_LEVEL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/EnvironmentalReverb.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#PARAM_ROOM_LEVEL">https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#PARAM_ROOM_LEVEL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int PARAM_ROOM_LEVEL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_Media_Audiofx_EnvironmentalReverb_GetDecayHFRatio_" data-uid="Android.Media.Audiofx.EnvironmentalReverb.GetDecayHFRatio*"></a>
+
+  <h3 id="Android_Media_Audiofx_EnvironmentalReverb_GetDecayHFRatio" data-uid="Android.Media.Audiofx.EnvironmentalReverb.GetDecayHFRatio">
+  GetDecayHFRatio()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/EnvironmentalReverb.cs/#L171"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#getDecayHFRatio()">https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#getDecayHFRatio()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public short GetDecayHFRatio()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.IllegalArgumentException.html">IllegalArgumentException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Lang.IllegalStateException.html">IllegalStateException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Lang.UnsupportedOperationException.html">UnsupportedOperationException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Media_Audiofx_EnvironmentalReverb_GetDecayTime_" data-uid="Android.Media.Audiofx.EnvironmentalReverb.GetDecayTime*"></a>
+
+  <h3 id="Android_Media_Audiofx_EnvironmentalReverb_GetDecayTime" data-uid="Android.Media.Audiofx.EnvironmentalReverb.GetDecayTime">
+  GetDecayTime()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/EnvironmentalReverb.cs/#L138"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#getDecayTime()">https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#getDecayTime()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetDecayTime()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.IllegalArgumentException.html">IllegalArgumentException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Lang.IllegalStateException.html">IllegalStateException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Lang.UnsupportedOperationException.html">UnsupportedOperationException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Media_Audiofx_EnvironmentalReverb_GetDensity_" data-uid="Android.Media.Audiofx.EnvironmentalReverb.GetDensity*"></a>
+
+  <h3 id="Android_Media_Audiofx_EnvironmentalReverb_GetDensity" data-uid="Android.Media.Audiofx.EnvironmentalReverb.GetDensity">
+  GetDensity()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/EnvironmentalReverb.cs/#L182"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#getDensity()">https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#getDensity()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public short GetDensity()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.IllegalArgumentException.html">IllegalArgumentException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Lang.IllegalStateException.html">IllegalStateException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Lang.UnsupportedOperationException.html">UnsupportedOperationException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Media_Audiofx_EnvironmentalReverb_GetDiffusion_" data-uid="Android.Media.Audiofx.EnvironmentalReverb.GetDiffusion*"></a>
+
+  <h3 id="Android_Media_Audiofx_EnvironmentalReverb_GetDiffusion" data-uid="Android.Media.Audiofx.EnvironmentalReverb.GetDiffusion">
+  GetDiffusion()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/EnvironmentalReverb.cs/#L193"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#getDiffusion()">https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#getDiffusion()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public short GetDiffusion()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.IllegalArgumentException.html">IllegalArgumentException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Lang.IllegalStateException.html">IllegalStateException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Lang.UnsupportedOperationException.html">UnsupportedOperationException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Media_Audiofx_EnvironmentalReverb_GetProperties_" data-uid="Android.Media.Audiofx.EnvironmentalReverb.GetProperties*"></a>
+
+  <h3 id="Android_Media_Audiofx_EnvironmentalReverb_GetProperties" data-uid="Android.Media.Audiofx.EnvironmentalReverb.GetProperties">
+  GetProperties()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/EnvironmentalReverb.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#getProperties()">https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#getProperties()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EnvironmentalReverb.Settings GetProperties()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Media.Audiofx.EnvironmentalReverb.html">EnvironmentalReverb</a>.<a class="xref" href="Android.Media.Audiofx.EnvironmentalReverb.Settings.html">Settings</a></dt>
+    <dd><p><a class="xref" href="Android.Media.Audiofx.EnvironmentalReverb.Settings.html">EnvironmentalReverb.Settings</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.IllegalArgumentException.html">IllegalArgumentException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Lang.IllegalStateException.html">IllegalStateException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Lang.UnsupportedOperationException.html">UnsupportedOperationException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Media_Audiofx_EnvironmentalReverb_GetReflectionsDelay_" data-uid="Android.Media.Audiofx.EnvironmentalReverb.GetReflectionsDelay*"></a>
+
+  <h3 id="Android_Media_Audiofx_EnvironmentalReverb_GetReflectionsDelay" data-uid="Android.Media.Audiofx.EnvironmentalReverb.GetReflectionsDelay">
+  GetReflectionsDelay()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/EnvironmentalReverb.cs/#L149"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#getReflectionsDelay()">https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#getReflectionsDelay()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetReflectionsDelay()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.IllegalArgumentException.html">IllegalArgumentException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Lang.IllegalStateException.html">IllegalStateException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Lang.UnsupportedOperationException.html">UnsupportedOperationException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Media_Audiofx_EnvironmentalReverb_GetReflectionsLevel_" data-uid="Android.Media.Audiofx.EnvironmentalReverb.GetReflectionsLevel*"></a>
+
+  <h3 id="Android_Media_Audiofx_EnvironmentalReverb_GetReflectionsLevel" data-uid="Android.Media.Audiofx.EnvironmentalReverb.GetReflectionsLevel">
+  GetReflectionsLevel()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/EnvironmentalReverb.cs/#L204"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#getReflectionsLevel()">https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#getReflectionsLevel()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public short GetReflectionsLevel()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.IllegalArgumentException.html">IllegalArgumentException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Lang.IllegalStateException.html">IllegalStateException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Lang.UnsupportedOperationException.html">UnsupportedOperationException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Media_Audiofx_EnvironmentalReverb_GetReverbDelay_" data-uid="Android.Media.Audiofx.EnvironmentalReverb.GetReverbDelay*"></a>
+
+  <h3 id="Android_Media_Audiofx_EnvironmentalReverb_GetReverbDelay" data-uid="Android.Media.Audiofx.EnvironmentalReverb.GetReverbDelay">
+  GetReverbDelay()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/EnvironmentalReverb.cs/#L160"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#getReverbDelay()">https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#getReverbDelay()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetReverbDelay()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.IllegalArgumentException.html">IllegalArgumentException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Lang.IllegalStateException.html">IllegalStateException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Lang.UnsupportedOperationException.html">UnsupportedOperationException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Media_Audiofx_EnvironmentalReverb_GetReverbLevel_" data-uid="Android.Media.Audiofx.EnvironmentalReverb.GetReverbLevel*"></a>
+
+  <h3 id="Android_Media_Audiofx_EnvironmentalReverb_GetReverbLevel" data-uid="Android.Media.Audiofx.EnvironmentalReverb.GetReverbLevel">
+  GetReverbLevel()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/EnvironmentalReverb.cs/#L215"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#getReverbLevel()">https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#getReverbLevel()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public short GetReverbLevel()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.IllegalArgumentException.html">IllegalArgumentException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Lang.IllegalStateException.html">IllegalStateException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Lang.UnsupportedOperationException.html">UnsupportedOperationException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Media_Audiofx_EnvironmentalReverb_GetRoomHFLevel_" data-uid="Android.Media.Audiofx.EnvironmentalReverb.GetRoomHFLevel*"></a>
+
+  <h3 id="Android_Media_Audiofx_EnvironmentalReverb_GetRoomHFLevel" data-uid="Android.Media.Audiofx.EnvironmentalReverb.GetRoomHFLevel">
+  GetRoomHFLevel()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/EnvironmentalReverb.cs/#L226"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#getRoomHFLevel()">https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#getRoomHFLevel()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public short GetRoomHFLevel()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.IllegalArgumentException.html">IllegalArgumentException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Lang.IllegalStateException.html">IllegalStateException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Lang.UnsupportedOperationException.html">UnsupportedOperationException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Media_Audiofx_EnvironmentalReverb_GetRoomLevel_" data-uid="Android.Media.Audiofx.EnvironmentalReverb.GetRoomLevel*"></a>
+
+  <h3 id="Android_Media_Audiofx_EnvironmentalReverb_GetRoomLevel" data-uid="Android.Media.Audiofx.EnvironmentalReverb.GetRoomLevel">
+  GetRoomLevel()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/EnvironmentalReverb.cs/#L237"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#getRoomLevel()">https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#getRoomLevel()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public short GetRoomLevel()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.IllegalArgumentException.html">IllegalArgumentException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Lang.IllegalStateException.html">IllegalStateException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Lang.UnsupportedOperationException.html">UnsupportedOperationException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Media_Audiofx_EnvironmentalReverb_SetDecayHFRatio_" data-uid="Android.Media.Audiofx.EnvironmentalReverb.SetDecayHFRatio*"></a>
+
+  <h3 id="Android_Media_Audiofx_EnvironmentalReverb_SetDecayHFRatio_System_Int16_" data-uid="Android.Media.Audiofx.EnvironmentalReverb.SetDecayHFRatio(System.Int16)">
+  SetDecayHFRatio(short)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/EnvironmentalReverb.cs/#L248"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#setDecayHFRatio(short)">https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#setDecayHFRatio(short)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDecayHFRatio(short arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.IllegalArgumentException.html">IllegalArgumentException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Lang.IllegalStateException.html">IllegalStateException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Lang.UnsupportedOperationException.html">UnsupportedOperationException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Media_Audiofx_EnvironmentalReverb_SetDecayTime_" data-uid="Android.Media.Audiofx.EnvironmentalReverb.SetDecayTime*"></a>
+
+  <h3 id="Android_Media_Audiofx_EnvironmentalReverb_SetDecayTime_System_Int32_" data-uid="Android.Media.Audiofx.EnvironmentalReverb.SetDecayTime(System.Int32)">
+  SetDecayTime(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/EnvironmentalReverb.cs/#L259"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#setDecayTime(int)">https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#setDecayTime(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDecayTime(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.IllegalArgumentException.html">IllegalArgumentException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Lang.IllegalStateException.html">IllegalStateException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Lang.UnsupportedOperationException.html">UnsupportedOperationException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Media_Audiofx_EnvironmentalReverb_SetDensity_" data-uid="Android.Media.Audiofx.EnvironmentalReverb.SetDensity*"></a>
+
+  <h3 id="Android_Media_Audiofx_EnvironmentalReverb_SetDensity_System_Int16_" data-uid="Android.Media.Audiofx.EnvironmentalReverb.SetDensity(System.Int16)">
+  SetDensity(short)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/EnvironmentalReverb.cs/#L270"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#setDensity(short)">https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#setDensity(short)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDensity(short arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.IllegalArgumentException.html">IllegalArgumentException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Lang.IllegalStateException.html">IllegalStateException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Lang.UnsupportedOperationException.html">UnsupportedOperationException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Media_Audiofx_EnvironmentalReverb_SetDiffusion_" data-uid="Android.Media.Audiofx.EnvironmentalReverb.SetDiffusion*"></a>
+
+  <h3 id="Android_Media_Audiofx_EnvironmentalReverb_SetDiffusion_System_Int16_" data-uid="Android.Media.Audiofx.EnvironmentalReverb.SetDiffusion(System.Int16)">
+  SetDiffusion(short)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/EnvironmentalReverb.cs/#L281"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#setDiffusion(short)">https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#setDiffusion(short)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDiffusion(short arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.IllegalArgumentException.html">IllegalArgumentException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Lang.IllegalStateException.html">IllegalStateException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Lang.UnsupportedOperationException.html">UnsupportedOperationException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Media_Audiofx_EnvironmentalReverb_SetParameterListener_" data-uid="Android.Media.Audiofx.EnvironmentalReverb.SetParameterListener*"></a>
+
+  <h3 id="Android_Media_Audiofx_EnvironmentalReverb_SetParameterListener_Android_Media_Audiofx_EnvironmentalReverb_OnParameterChangeListener_" data-uid="Android.Media.Audiofx.EnvironmentalReverb.SetParameterListener(Android.Media.Audiofx.EnvironmentalReverb.OnParameterChangeListener)">
+  SetParameterListener(OnParameterChangeListener)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/EnvironmentalReverb.cs/#L289"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#setParameterListener(android.media.audiofx.EnvironmentalReverb.OnParameterChangeListener)">https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#setParameterListener(android.media.audiofx.EnvironmentalReverb.OnParameterChangeListener)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetParameterListener(EnvironmentalReverb.OnParameterChangeListener arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Media.Audiofx.EnvironmentalReverb.html">EnvironmentalReverb</a>.<a class="xref" href="Android.Media.Audiofx.EnvironmentalReverb.OnParameterChangeListener.html">OnParameterChangeListener</a></dt>
+    <dd><p><a class="xref" href="Android.Media.Audiofx.EnvironmentalReverb.OnParameterChangeListener.html">EnvironmentalReverb.OnParameterChangeListener</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Audiofx_EnvironmentalReverb_SetProperties_" data-uid="Android.Media.Audiofx.EnvironmentalReverb.SetProperties*"></a>
+
+  <h3 id="Android_Media_Audiofx_EnvironmentalReverb_SetProperties_Android_Media_Audiofx_EnvironmentalReverb_Settings_" data-uid="Android.Media.Audiofx.EnvironmentalReverb.SetProperties(Android.Media.Audiofx.EnvironmentalReverb.Settings)">
+  SetProperties(Settings)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/EnvironmentalReverb.cs/#L300"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#setProperties(android.media.audiofx.EnvironmentalReverb.Settings)">https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#setProperties(android.media.audiofx.EnvironmentalReverb.Settings)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetProperties(EnvironmentalReverb.Settings arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Media.Audiofx.EnvironmentalReverb.html">EnvironmentalReverb</a>.<a class="xref" href="Android.Media.Audiofx.EnvironmentalReverb.Settings.html">Settings</a></dt>
+    <dd><p><a class="xref" href="Android.Media.Audiofx.EnvironmentalReverb.Settings.html">EnvironmentalReverb.Settings</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.IllegalArgumentException.html">IllegalArgumentException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Lang.IllegalStateException.html">IllegalStateException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Lang.UnsupportedOperationException.html">UnsupportedOperationException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Media_Audiofx_EnvironmentalReverb_SetReflectionsDelay_" data-uid="Android.Media.Audiofx.EnvironmentalReverb.SetReflectionsDelay*"></a>
+
+  <h3 id="Android_Media_Audiofx_EnvironmentalReverb_SetReflectionsDelay_System_Int32_" data-uid="Android.Media.Audiofx.EnvironmentalReverb.SetReflectionsDelay(System.Int32)">
+  SetReflectionsDelay(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/EnvironmentalReverb.cs/#L311"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#setReflectionsDelay(int)">https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#setReflectionsDelay(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetReflectionsDelay(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.IllegalArgumentException.html">IllegalArgumentException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Lang.IllegalStateException.html">IllegalStateException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Lang.UnsupportedOperationException.html">UnsupportedOperationException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Media_Audiofx_EnvironmentalReverb_SetReflectionsLevel_" data-uid="Android.Media.Audiofx.EnvironmentalReverb.SetReflectionsLevel*"></a>
+
+  <h3 id="Android_Media_Audiofx_EnvironmentalReverb_SetReflectionsLevel_System_Int16_" data-uid="Android.Media.Audiofx.EnvironmentalReverb.SetReflectionsLevel(System.Int16)">
+  SetReflectionsLevel(short)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/EnvironmentalReverb.cs/#L322"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#setReflectionsLevel(short)">https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#setReflectionsLevel(short)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetReflectionsLevel(short arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.IllegalArgumentException.html">IllegalArgumentException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Lang.IllegalStateException.html">IllegalStateException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Lang.UnsupportedOperationException.html">UnsupportedOperationException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Media_Audiofx_EnvironmentalReverb_SetReverbDelay_" data-uid="Android.Media.Audiofx.EnvironmentalReverb.SetReverbDelay*"></a>
+
+  <h3 id="Android_Media_Audiofx_EnvironmentalReverb_SetReverbDelay_System_Int32_" data-uid="Android.Media.Audiofx.EnvironmentalReverb.SetReverbDelay(System.Int32)">
+  SetReverbDelay(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/EnvironmentalReverb.cs/#L333"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#setReverbDelay(int)">https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#setReverbDelay(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetReverbDelay(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.IllegalArgumentException.html">IllegalArgumentException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Lang.IllegalStateException.html">IllegalStateException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Lang.UnsupportedOperationException.html">UnsupportedOperationException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Media_Audiofx_EnvironmentalReverb_SetReverbLevel_" data-uid="Android.Media.Audiofx.EnvironmentalReverb.SetReverbLevel*"></a>
+
+  <h3 id="Android_Media_Audiofx_EnvironmentalReverb_SetReverbLevel_System_Int16_" data-uid="Android.Media.Audiofx.EnvironmentalReverb.SetReverbLevel(System.Int16)">
+  SetReverbLevel(short)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/EnvironmentalReverb.cs/#L344"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#setReverbLevel(short)">https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#setReverbLevel(short)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetReverbLevel(short arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.IllegalArgumentException.html">IllegalArgumentException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Lang.IllegalStateException.html">IllegalStateException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Lang.UnsupportedOperationException.html">UnsupportedOperationException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Media_Audiofx_EnvironmentalReverb_SetRoomHFLevel_" data-uid="Android.Media.Audiofx.EnvironmentalReverb.SetRoomHFLevel*"></a>
+
+  <h3 id="Android_Media_Audiofx_EnvironmentalReverb_SetRoomHFLevel_System_Int16_" data-uid="Android.Media.Audiofx.EnvironmentalReverb.SetRoomHFLevel(System.Int16)">
+  SetRoomHFLevel(short)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/EnvironmentalReverb.cs/#L355"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#setRoomHFLevel(short)">https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#setRoomHFLevel(short)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetRoomHFLevel(short arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.IllegalArgumentException.html">IllegalArgumentException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Lang.IllegalStateException.html">IllegalStateException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Lang.UnsupportedOperationException.html">UnsupportedOperationException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Android_Media_Audiofx_EnvironmentalReverb_SetRoomLevel_" data-uid="Android.Media.Audiofx.EnvironmentalReverb.SetRoomLevel*"></a>
+
+  <h3 id="Android_Media_Audiofx_EnvironmentalReverb_SetRoomLevel_System_Int16_" data-uid="Android.Media.Audiofx.EnvironmentalReverb.SetRoomLevel(System.Int16)">
+  SetRoomLevel(short)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/EnvironmentalReverb.cs/#L366"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#setRoomLevel(short)">https://developer.android.com/reference/android/media/audiofx/EnvironmentalReverb.html#setRoomLevel(short)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetRoomLevel(short arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.IllegalArgumentException.html">IllegalArgumentException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Lang.IllegalStateException.html">IllegalStateException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="Java.Lang.UnsupportedOperationException.html">UnsupportedOperationException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Audiofx/EnvironmentalReverb.cs/#L29" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

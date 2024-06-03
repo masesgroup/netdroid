@@ -1,0 +1,1126 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class StaticLayout | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class StaticLayout | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/text/StaticLayout.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_Text_StaticLayout.md&amp;value=---%0Auid%3A%20Android.Text.StaticLayout%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.Text.StaticLayout">
+
+
+
+  <h1 id="Android_Text_StaticLayout" data-uid="Android.Text.StaticLayout" class="text-break">
+Class StaticLayout  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/StaticLayout.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.Text.html">Text</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/text/StaticLayout.html">https://developer.android.com/reference/android/text/StaticLayout.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class StaticLayout : Layout, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.Text.Layout.html">Layout</a>&gt;</div>
+      <div><a class="xref" href="Android.Text.Layout.html">Layout</a></div>
+      <div><span class="xref">StaticLayout</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Android.Text.Layout.html#Android_Text_Layout_INCLUSION_STRATEGY_ANY_OVERLAP">Layout.INCLUSION_STRATEGY_ANY_OVERLAP</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Text.Layout.html#Android_Text_Layout_INCLUSION_STRATEGY_CONTAINS_ALL">Layout.INCLUSION_STRATEGY_CONTAINS_ALL</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Text.Layout.html#Android_Text_Layout_INCLUSION_STRATEGY_CONTAINS_CENTER">Layout.INCLUSION_STRATEGY_CONTAINS_CENTER</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Text.Layout.html#Android_Text_Layout_DEFAULT_LINESPACING_ADDITION">Layout.DEFAULT_LINESPACING_ADDITION</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Text.Layout.html#Android_Text_Layout_DEFAULT_LINESPACING_MULTIPLIER">Layout.DEFAULT_LINESPACING_MULTIPLIER</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Text.Layout.html#Android_Text_Layout_BREAK_STRATEGY_BALANCED">Layout.BREAK_STRATEGY_BALANCED</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Text.Layout.html#Android_Text_Layout_BREAK_STRATEGY_HIGH_QUALITY">Layout.BREAK_STRATEGY_HIGH_QUALITY</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Text.Layout.html#Android_Text_Layout_BREAK_STRATEGY_SIMPLE">Layout.BREAK_STRATEGY_SIMPLE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Text.Layout.html#Android_Text_Layout_DIR_LEFT_TO_RIGHT">Layout.DIR_LEFT_TO_RIGHT</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Text.Layout.html#Android_Text_Layout_DIR_RIGHT_TO_LEFT">Layout.DIR_RIGHT_TO_LEFT</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Text.Layout.html#Android_Text_Layout_HYPHENATION_FREQUENCY_FULL">Layout.HYPHENATION_FREQUENCY_FULL</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Text.Layout.html#Android_Text_Layout_HYPHENATION_FREQUENCY_FULL_FAST">Layout.HYPHENATION_FREQUENCY_FULL_FAST</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Text.Layout.html#Android_Text_Layout_HYPHENATION_FREQUENCY_NONE">Layout.HYPHENATION_FREQUENCY_NONE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Text.Layout.html#Android_Text_Layout_HYPHENATION_FREQUENCY_NORMAL">Layout.HYPHENATION_FREQUENCY_NORMAL</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Text.Layout.html#Android_Text_Layout_HYPHENATION_FREQUENCY_NORMAL_FAST">Layout.HYPHENATION_FREQUENCY_NORMAL_FAST</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Text.Layout.html#Android_Text_Layout_JUSTIFICATION_MODE_INTER_WORD">Layout.JUSTIFICATION_MODE_INTER_WORD</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Text.Layout.html#Android_Text_Layout_JUSTIFICATION_MODE_NONE">Layout.JUSTIFICATION_MODE_NONE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Text.Layout.html#Android_Text_Layout_GetDesiredWidth_Java_Lang_CharSequence_Android_Text_TextPaint_">Layout.GetDesiredWidth(CharSequence, TextPaint)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Text.Layout.html#Android_Text_Layout_GetDesiredWidth_Java_Lang_CharSequence_System_Int32_System_Int32_Android_Text_TextPaint_">Layout.GetDesiredWidth(CharSequence, int, int, TextPaint)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Text.Layout.html#Android_Text_Layout_GetLineDirections_System_Int32_">Layout.GetLineDirections(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Text.Layout.html#Android_Text_Layout_GetLineContainsTab_System_Int32_">Layout.GetLineContainsTab(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Text.Layout.html#Android_Text_Layout_GetBottomPadding">Layout.GetBottomPadding()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Text.Layout.html#Android_Text_Layout_GetEllipsisCount_System_Int32_">Layout.GetEllipsisCount(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Text.Layout.html#Android_Text_Layout_GetEllipsisStart_System_Int32_">Layout.GetEllipsisStart(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Text.Layout.html#Android_Text_Layout_GetLineCount">Layout.GetLineCount()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Text.Layout.html#Android_Text_Layout_GetLineDescent_System_Int32_">Layout.GetLineDescent(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Text.Layout.html#Android_Text_Layout_GetLineStart_System_Int32_">Layout.GetLineStart(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Text.Layout.html#Android_Text_Layout_GetLineTop_System_Int32_">Layout.GetLineTop(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Text.Layout.html#Android_Text_Layout_GetParagraphDirection_System_Int32_">Layout.GetParagraphDirection(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Text.Layout.html#Android_Text_Layout_GetTopPadding">Layout.GetTopPadding()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Text.Layout.html#Android_Text_Layout_IsFallbackLineSpacingEnabled">Layout.IsFallbackLineSpacingEnabled()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Text.Layout.html#Android_Text_Layout_IsRtlCharAt_System_Int32_">Layout.IsRtlCharAt(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Text.Layout.html#Android_Text_Layout_GetAlignment">Layout.GetAlignment()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Text.Layout.html#Android_Text_Layout_GetParagraphAlignment_System_Int32_">Layout.GetParagraphAlignment(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Text.Layout.html#Android_Text_Layout_GetPaint">Layout.GetPaint()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Text.Layout.html#Android_Text_Layout_GetSpacingAdd">Layout.GetSpacingAdd()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Text.Layout.html#Android_Text_Layout_GetSpacingMultiplier">Layout.GetSpacingMultiplier()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Text.Layout.html#Android_Text_Layout_GetLineAscent_System_Int32_">Layout.GetLineAscent(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Text.Layout.html#Android_Text_Layout_GetLineBaseline_System_Int32_">Layout.GetLineBaseline(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Text.Layout.html#Android_Text_Layout_GetLineBottom_System_Int32_">Layout.GetLineBottom(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Text.Layout.html#Android_Text_Layout_GetLineEnd_System_Int32_">Layout.GetLineEnd(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Text.Layout.html#Android_Text_Layout_GetParagraphLeft_System_Int32_">Layout.GetParagraphLeft(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Text.Layout.html#Android_Text_Layout_GetParagraphRight_System_Int32_">Layout.GetParagraphRight(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Text.Layout.html#Android_Text_Layout_GetWidth">Layout.GetWidth()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Text.Layout.html#Android_Text_Layout_GetText">Layout.GetText()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Text.Layout.html#Android_Text_Layout_IncreaseWidthTo_System_Int32_">Layout.IncreaseWidthTo(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Text.Layout.html#Android_Text_Layout_GetLineLeft_System_Int32_">Layout.GetLineLeft(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Text.Layout.html#Android_Text_Layout_GetLineMax_System_Int32_">Layout.GetLineMax(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Text.Layout.html#Android_Text_Layout_GetLineRight_System_Int32_">Layout.GetLineRight(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Text.Layout.html#Android_Text_Layout_GetLineWidth_System_Int32_">Layout.GetLineWidth(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Text.Layout.html#Android_Text_Layout_GetPrimaryHorizontal_System_Int32_">Layout.GetPrimaryHorizontal(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Text.Layout.html#Android_Text_Layout_GetSecondaryHorizontal_System_Int32_">Layout.GetSecondaryHorizontal(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Text.Layout.html#Android_Text_Layout_GetEllipsizedWidth">Layout.GetEllipsizedWidth()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Text.Layout.html#Android_Text_Layout_GetHeight">Layout.GetHeight()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Text.Layout.html#Android_Text_Layout_GetLineBottom_System_Int32_System_Boolean_">Layout.GetLineBottom(int, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Text.Layout.html#Android_Text_Layout_GetLineBounds_System_Int32_Android_Graphics_Rect_">Layout.GetLineBounds(int, Rect)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Text.Layout.html#Android_Text_Layout_GetLineForOffset_System_Int32_">Layout.GetLineForOffset(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Text.Layout.html#Android_Text_Layout_GetLineForVertical_System_Int32_">Layout.GetLineForVertical(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Text.Layout.html#Android_Text_Layout_GetLineVisibleEnd_System_Int32_">Layout.GetLineVisibleEnd(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Text.Layout.html#Android_Text_Layout_GetOffsetForHorizontal_System_Int32_System_Single_">Layout.GetOffsetForHorizontal(int, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Text.Layout.html#Android_Text_Layout_GetOffsetToLeftOf_System_Int32_">Layout.GetOffsetToLeftOf(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Text.Layout.html#Android_Text_Layout_GetOffsetToRightOf_System_Int32_">Layout.GetOffsetToRightOf(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Text.Layout.html#Android_Text_Layout_GetRangeForRect_Android_Graphics_RectF_Android_Text_SegmentFinder_Android_Text_Layout_TextInclusionStrategy_">Layout.GetRangeForRect(RectF, SegmentFinder, Layout.TextInclusionStrategy)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Text.Layout.html#Android_Text_Layout_Draw_Android_Graphics_Canvas_Android_Graphics_Path_Android_Graphics_Paint_System_Int32_">Layout.Draw(Canvas, Path, Paint, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Text.Layout.html#Android_Text_Layout_Draw_Android_Graphics_Canvas_Java_Util_List_Android_Graphics_Path__Java_Util_List_Android_Graphics_Paint__Android_Graphics_Path_Android_Graphics_Paint_System_Int32_">Layout.Draw(Canvas, List&lt;Path&gt;, List&lt;Paint&gt;, Path, Paint, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Text.Layout.html#Android_Text_Layout_Draw_Android_Graphics_Canvas_">Layout.Draw(Canvas)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Text.Layout.html#Android_Text_Layout_DrawBackground_Android_Graphics_Canvas_">Layout.DrawBackground(Canvas)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Text.Layout.html#Android_Text_Layout_DrawText_Android_Graphics_Canvas_">Layout.DrawText(Canvas)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Text.Layout.html#Android_Text_Layout_FillCharacterBounds_System_Int32_System_Int32_System_Single___System_Int32_">Layout.FillCharacterBounds(int, int, float[], int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Text.Layout.html#Android_Text_Layout_GetCursorPath_System_Int32_Android_Graphics_Path_Java_Lang_CharSequence_">Layout.GetCursorPath(int, Path, CharSequence)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Text.Layout.html#Android_Text_Layout_GetSelectionPath_System_Int32_System_Int32_Android_Graphics_Path_">Layout.GetSelectionPath(int, int, Path)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Layout&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Layout&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Layout&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Layout&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Layout&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Layout&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Layout&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Layout&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Layout&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Layout&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Layout&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Layout&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Layout&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Layout&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Layout&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Layout&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Layout&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Layout&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Layout&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Layout&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Layout&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Layout&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Layout&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Layout&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Layout&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Layout&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Layout&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Layout&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Layout&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Layout&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Layout&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Layout&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Layout&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Layout&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Layout&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Layout&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Layout&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Layout&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Layout&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Layout&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Layout&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Layout&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Layout&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Layout&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Layout&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;Layout&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Layout&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Layout&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Layout&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Layout&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_Text_StaticLayout__ctor_" data-uid="Android.Text.StaticLayout.#ctor*"></a>
+
+  <h3 id="Android_Text_StaticLayout__ctor" data-uid="Android.Text.StaticLayout.#ctor">
+  StaticLayout()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/AllPackageClasses.cs/#L2234"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StaticLayout()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Text_StaticLayout__ctor_" data-uid="Android.Text.StaticLayout.#ctor*"></a>
+
+  <h3 id="Android_Text_StaticLayout__ctor_Java_Lang_CharSequence_Android_Text_TextPaint_System_Int32_Android_Text_Layout_Alignment_System_Single_System_Single_System_Boolean_" data-uid="Android.Text.StaticLayout.#ctor(Java.Lang.CharSequence,Android.Text.TextPaint,System.Int32,Android.Text.Layout.Alignment,System.Single,System.Single,System.Boolean)">
+  StaticLayout(CharSequence, TextPaint, int, Alignment, float, float, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/StaticLayout.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/StaticLayout.html#%3Cinit%3E(java.lang.CharSequence,android.text.TextPaint,int,android.text.Layout.Alignment,float,float,boolean)">https://developer.android.com/reference/android/text/StaticLayout.html#%3Cinit%3E(java.lang.CharSequence,android.text.TextPaint,int,android.text.Layout.Alignment,float,float,boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public StaticLayout(CharSequence arg0, TextPaint arg1, int arg2, Layout.Alignment arg3, float arg4, float arg5, bool arg6)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Text.TextPaint.html">TextPaint</a></dt>
+    <dd><p><a class="xref" href="Android.Text.TextPaint.html">TextPaint</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Android.Text.Layout.html">Layout</a>.<a class="xref" href="Android.Text.Layout.Alignment.html">Alignment</a></dt>
+    <dd><p><a class="xref" href="Android.Text.Layout.Alignment.html">Layout.Alignment</a></p>
+</dd>
+    <dt><code>arg4</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+    <dt><code>arg5</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+    <dt><code>arg6</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Text_StaticLayout__ctor_" data-uid="Android.Text.StaticLayout.#ctor*"></a>
+
+  <h3 id="Android_Text_StaticLayout__ctor_Java_Lang_CharSequence_System_Int32_System_Int32_Android_Text_TextPaint_System_Int32_Android_Text_Layout_Alignment_System_Single_System_Single_System_Boolean_" data-uid="Android.Text.StaticLayout.#ctor(Java.Lang.CharSequence,System.Int32,System.Int32,Android.Text.TextPaint,System.Int32,Android.Text.Layout.Alignment,System.Single,System.Single,System.Boolean)">
+  StaticLayout(CharSequence, int, int, TextPaint, int, Alignment, float, float, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/StaticLayout.cs/#L78"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/StaticLayout.html#%3Cinit%3E(java.lang.CharSequence,int,int,android.text.TextPaint,int,android.text.Layout.Alignment,float,float,boolean)">https://developer.android.com/reference/android/text/StaticLayout.html#%3Cinit%3E(java.lang.CharSequence,int,int,android.text.TextPaint,int,android.text.Layout.Alignment,float,float,boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public StaticLayout(CharSequence arg0, int arg1, int arg2, TextPaint arg3, int arg4, Layout.Alignment arg5, float arg6, float arg7, bool arg8)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Android.Text.TextPaint.html">TextPaint</a></dt>
+    <dd><p><a class="xref" href="Android.Text.TextPaint.html">TextPaint</a></p>
+</dd>
+    <dt><code>arg4</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg5</code> <a class="xref" href="Android.Text.Layout.html">Layout</a>.<a class="xref" href="Android.Text.Layout.Alignment.html">Alignment</a></dt>
+    <dd><p><a class="xref" href="Android.Text.Layout.Alignment.html">Layout.Alignment</a></p>
+</dd>
+    <dt><code>arg6</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+    <dt><code>arg7</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+    <dt><code>arg8</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Text_StaticLayout__ctor_" data-uid="Android.Text.StaticLayout.#ctor*"></a>
+
+  <h3 id="Android_Text_StaticLayout__ctor_Java_Lang_CharSequence_System_Int32_System_Int32_Android_Text_TextPaint_System_Int32_Android_Text_Layout_Alignment_System_Single_System_Single_System_Boolean_Android_Text_TextUtils_TruncateAt_System_Int32_" data-uid="Android.Text.StaticLayout.#ctor(Java.Lang.CharSequence,System.Int32,System.Int32,Android.Text.TextPaint,System.Int32,Android.Text.Layout.Alignment,System.Single,System.Single,System.Boolean,Android.Text.TextUtils.TruncateAt,System.Int32)">
+  StaticLayout(CharSequence, int, int, TextPaint, int, Alignment, float, float, bool, TruncateAt, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/StaticLayout.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/text/StaticLayout.html#%3Cinit%3E(java.lang.CharSequence,int,int,android.text.TextPaint,int,android.text.Layout.Alignment,float,float,boolean,android.text.TextUtils.TruncateAt,int)">https://developer.android.com/reference/android/text/StaticLayout.html#%3Cinit%3E(java.lang.CharSequence,int,int,android.text.TextPaint,int,android.text.Layout.Alignment,float,float,boolean,android.text.TextUtils.TruncateAt,int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public StaticLayout(CharSequence arg0, int arg1, int arg2, TextPaint arg3, int arg4, Layout.Alignment arg5, float arg6, float arg7, bool arg8, TextUtils.TruncateAt arg9, int arg10)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.CharSequence.html">CharSequence</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Android.Text.TextPaint.html">TextPaint</a></dt>
+    <dd><p><a class="xref" href="Android.Text.TextPaint.html">TextPaint</a></p>
+</dd>
+    <dt><code>arg4</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+    <dt><code>arg5</code> <a class="xref" href="Android.Text.Layout.html">Layout</a>.<a class="xref" href="Android.Text.Layout.Alignment.html">Alignment</a></dt>
+    <dd><p><a class="xref" href="Android.Text.Layout.Alignment.html">Layout.Alignment</a></p>
+</dd>
+    <dt><code>arg6</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+    <dt><code>arg7</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+    <dt><code>arg8</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+    <dt><code>arg9</code> <a class="xref" href="Android.Text.TextUtils.html">TextUtils</a>.<a class="xref" href="Android.Text.TextUtils.TruncateAt.html">TruncateAt</a></dt>
+    <dd><p><a class="xref" href="Android.Text.TextUtils.TruncateAt.html">TextUtils.TruncateAt</a></p>
+</dd>
+    <dt><code>arg10</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Text_StaticLayout__ctor_" data-uid="Android.Text.StaticLayout.#ctor*"></a>
+
+  <h3 id="Android_Text_StaticLayout__ctor_System_Object___" data-uid="Android.Text.StaticLayout.#ctor(System.Object[])">
+  StaticLayout(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/AllPackageClasses.cs/#L2238"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StaticLayout(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_Text_StaticLayout_BridgeClassName_" data-uid="Android.Text.StaticLayout.BridgeClassName*"></a>
+
+  <h3 id="Android_Text_StaticLayout_BridgeClassName" data-uid="Android.Text.StaticLayout.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/AllPackageClasses.cs/#L2245"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_StaticLayout_IsBridgeAbstract_" data-uid="Android.Text.StaticLayout.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_Text_StaticLayout_IsBridgeAbstract" data-uid="Android.Text.StaticLayout.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/AllPackageClasses.cs/#L2249"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_StaticLayout_IsBridgeCloseable_" data-uid="Android.Text.StaticLayout.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_Text_StaticLayout_IsBridgeCloseable" data-uid="Android.Text.StaticLayout.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/AllPackageClasses.cs/#L2253"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_StaticLayout_IsBridgeInterface_" data-uid="Android.Text.StaticLayout.IsBridgeInterface*"></a>
+
+  <h3 id="Android_Text_StaticLayout_IsBridgeInterface" data-uid="Android.Text.StaticLayout.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/AllPackageClasses.cs/#L2257"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Text_StaticLayout_IsBridgeStatic_" data-uid="Android.Text.StaticLayout.IsBridgeStatic*"></a>
+
+  <h3 id="Android_Text_StaticLayout_IsBridgeStatic" data-uid="Android.Text.StaticLayout.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/AllPackageClasses.cs/#L2261"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Text/StaticLayout.cs/#L29" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

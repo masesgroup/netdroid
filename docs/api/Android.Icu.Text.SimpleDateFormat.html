@@ -1,0 +1,1785 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class SimpleDateFormat | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class SimpleDateFormat | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_Icu_Text_SimpleDateFormat.md&amp;value=---%0Auid%3A%20Android.Icu.Text.SimpleDateFormat%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.Icu.Text.SimpleDateFormat">
+
+
+
+  <h1 id="Android_Icu_Text_SimpleDateFormat" data-uid="Android.Icu.Text.SimpleDateFormat" class="text-break">
+Class SimpleDateFormat  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/SimpleDateFormat.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.Icu.html">Icu</a>.<a class="xref" href="Android.Icu.Text.html">Text</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html">https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SimpleDateFormat : DateFormat, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, ISerializable, ICloneable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Java.Text.Format.html">Format</a>&gt;</div>
+      <div><a class="xref" href="Java.Text.Format.html">Format</a></div>
+      <div><a class="xref" href="Android.Icu.Text.UFormat.html">UFormat</a></div>
+      <div><a class="xref" href="Android.Icu.Text.DateFormat.html">DateFormat</a></div>
+      <div><span class="xref">SimpleDateFormat</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+      <div><a class="xref" href="Java.Io.ISerializable.html">ISerializable</a></div>
+      <div><a class="xref" href="Java.Lang.ICloneable.html">ICloneable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_AM_PM_FIELD">DateFormat.AM_PM_FIELD</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_AM_PM_MIDNIGHT_NOON_FIELD">DateFormat.AM_PM_MIDNIGHT_NOON_FIELD</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_DATE_FIELD">DateFormat.DATE_FIELD</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_DAY_OF_WEEK_FIELD">DateFormat.DAY_OF_WEEK_FIELD</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_DAY_OF_WEEK_IN_MONTH_FIELD">DateFormat.DAY_OF_WEEK_IN_MONTH_FIELD</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_DAY_OF_YEAR_FIELD">DateFormat.DAY_OF_YEAR_FIELD</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_DEFAULT">DateFormat.DEFAULT</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_DOW_LOCAL_FIELD">DateFormat.DOW_LOCAL_FIELD</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_ERA_FIELD">DateFormat.ERA_FIELD</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_EXTENDED_YEAR_FIELD">DateFormat.EXTENDED_YEAR_FIELD</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_FLEXIBLE_DAY_PERIOD_FIELD">DateFormat.FLEXIBLE_DAY_PERIOD_FIELD</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_FRACTIONAL_SECOND_FIELD">DateFormat.FRACTIONAL_SECOND_FIELD</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_FULL">DateFormat.FULL</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_HOUR_OF_DAY0_FIELD">DateFormat.HOUR_OF_DAY0_FIELD</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_HOUR_OF_DAY1_FIELD">DateFormat.HOUR_OF_DAY1_FIELD</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_HOUR0_FIELD">DateFormat.HOUR0_FIELD</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_HOUR1_FIELD">DateFormat.HOUR1_FIELD</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_JULIAN_DAY_FIELD">DateFormat.JULIAN_DAY_FIELD</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_LONG">DateFormat.LONG</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_MEDIUM">DateFormat.MEDIUM</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_MILLISECOND_FIELD">DateFormat.MILLISECOND_FIELD</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_MILLISECONDS_IN_DAY_FIELD">DateFormat.MILLISECONDS_IN_DAY_FIELD</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_MINUTE_FIELD">DateFormat.MINUTE_FIELD</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_MONTH_FIELD">DateFormat.MONTH_FIELD</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_NONE">DateFormat.NONE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_QUARTER_FIELD">DateFormat.QUARTER_FIELD</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_RELATIVE">DateFormat.RELATIVE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_RELATIVE_DEFAULT">DateFormat.RELATIVE_DEFAULT</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_RELATIVE_FULL">DateFormat.RELATIVE_FULL</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_RELATIVE_LONG">DateFormat.RELATIVE_LONG</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_RELATIVE_MEDIUM">DateFormat.RELATIVE_MEDIUM</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_RELATIVE_SHORT">DateFormat.RELATIVE_SHORT</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_SECOND_FIELD">DateFormat.SECOND_FIELD</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_SHORT">DateFormat.SHORT</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_STANDALONE_DAY_FIELD">DateFormat.STANDALONE_DAY_FIELD</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_STANDALONE_MONTH_FIELD">DateFormat.STANDALONE_MONTH_FIELD</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_STANDALONE_QUARTER_FIELD">DateFormat.STANDALONE_QUARTER_FIELD</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_TIMEZONE_FIELD">DateFormat.TIMEZONE_FIELD</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_TIMEZONE_GENERIC_FIELD">DateFormat.TIMEZONE_GENERIC_FIELD</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_TIMEZONE_ISO_FIELD">DateFormat.TIMEZONE_ISO_FIELD</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_TIMEZONE_ISO_LOCAL_FIELD">DateFormat.TIMEZONE_ISO_LOCAL_FIELD</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_TIMEZONE_LOCALIZED_GMT_OFFSET_FIELD">DateFormat.TIMEZONE_LOCALIZED_GMT_OFFSET_FIELD</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_TIMEZONE_RFC_FIELD">DateFormat.TIMEZONE_RFC_FIELD</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_TIMEZONE_SPECIAL_FIELD">DateFormat.TIMEZONE_SPECIAL_FIELD</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_WEEK_OF_MONTH_FIELD">DateFormat.WEEK_OF_MONTH_FIELD</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_WEEK_OF_YEAR_FIELD">DateFormat.WEEK_OF_YEAR_FIELD</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_YEAR_FIELD">DateFormat.YEAR_FIELD</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_YEAR_NAME_FIELD">DateFormat.YEAR_NAME_FIELD</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_YEAR_WOY_FIELD">DateFormat.YEAR_WOY_FIELD</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_ABBR_GENERIC_TZ">DateFormat.ABBR_GENERIC_TZ</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_ABBR_MONTH">DateFormat.ABBR_MONTH</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_ABBR_MONTH_DAY">DateFormat.ABBR_MONTH_DAY</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_ABBR_MONTH_WEEKDAY_DAY">DateFormat.ABBR_MONTH_WEEKDAY_DAY</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_ABBR_QUARTER">DateFormat.ABBR_QUARTER</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_ABBR_SPECIFIC_TZ">DateFormat.ABBR_SPECIFIC_TZ</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_ABBR_UTC_TZ">DateFormat.ABBR_UTC_TZ</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_ABBR_WEEKDAY">DateFormat.ABBR_WEEKDAY</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_DAY">DateFormat.DAY</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_GENERIC_TZ">DateFormat.GENERIC_TZ</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_HOUR">DateFormat.HOUR</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_HOUR_MINUTE">DateFormat.HOUR_MINUTE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_HOUR_MINUTE_SECOND">DateFormat.HOUR_MINUTE_SECOND</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_HOUR24">DateFormat.HOUR24</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_HOUR24_MINUTE">DateFormat.HOUR24_MINUTE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_HOUR24_MINUTE_SECOND">DateFormat.HOUR24_MINUTE_SECOND</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_LOCATION_TZ">DateFormat.LOCATION_TZ</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_MINUTE">DateFormat.MINUTE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_MINUTE_SECOND">DateFormat.MINUTE_SECOND</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_MONTH">DateFormat.MONTH</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_MONTH_DAY">DateFormat.MONTH_DAY</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_MONTH_WEEKDAY_DAY">DateFormat.MONTH_WEEKDAY_DAY</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_NUM_MONTH">DateFormat.NUM_MONTH</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_NUM_MONTH_DAY">DateFormat.NUM_MONTH_DAY</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_NUM_MONTH_WEEKDAY_DAY">DateFormat.NUM_MONTH_WEEKDAY_DAY</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_QUARTER">DateFormat.QUARTER</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_SECOND">DateFormat.SECOND</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_SPECIFIC_TZ">DateFormat.SPECIFIC_TZ</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_WEEKDAY">DateFormat.WEEKDAY</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_YEAR">DateFormat.YEAR</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_YEAR_ABBR_MONTH">DateFormat.YEAR_ABBR_MONTH</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_YEAR_ABBR_MONTH_DAY">DateFormat.YEAR_ABBR_MONTH_DAY</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_YEAR_ABBR_MONTH_WEEKDAY_DAY">DateFormat.YEAR_ABBR_MONTH_WEEKDAY_DAY</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_YEAR_ABBR_QUARTER">DateFormat.YEAR_ABBR_QUARTER</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_YEAR_MONTH">DateFormat.YEAR_MONTH</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_YEAR_MONTH_DAY">DateFormat.YEAR_MONTH_DAY</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_YEAR_MONTH_WEEKDAY_DAY">DateFormat.YEAR_MONTH_WEEKDAY_DAY</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_YEAR_NUM_MONTH">DateFormat.YEAR_NUM_MONTH</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_YEAR_NUM_MONTH_DAY">DateFormat.YEAR_NUM_MONTH_DAY</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_YEAR_NUM_MONTH_WEEKDAY_DAY">DateFormat.YEAR_NUM_MONTH_WEEKDAY_DAY</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_YEAR_QUARTER">DateFormat.YEAR_QUARTER</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_GetDateInstance">DateFormat.GetDateInstance()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_GetDateInstance_Android_Icu_Util_Calendar_System_Int32_Android_Icu_Util_ULocale_">DateFormat.GetDateInstance(Calendar, int, ULocale)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_GetDateInstance_Android_Icu_Util_Calendar_System_Int32_Java_Util_Locale_">DateFormat.GetDateInstance(Calendar, int, Locale)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_GetDateInstance_Android_Icu_Util_Calendar_System_Int32_">DateFormat.GetDateInstance(Calendar, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_GetDateInstance_System_Int32_Android_Icu_Util_ULocale_">DateFormat.GetDateInstance(int, ULocale)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_GetDateInstance_System_Int32_Java_Util_Locale_">DateFormat.GetDateInstance(int, Locale)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_GetDateInstance_System_Int32_">DateFormat.GetDateInstance(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_GetDateTimeInstance">DateFormat.GetDateTimeInstance()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_GetDateTimeInstance_Android_Icu_Util_Calendar_System_Int32_System_Int32_Android_Icu_Util_ULocale_">DateFormat.GetDateTimeInstance(Calendar, int, int, ULocale)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_GetDateTimeInstance_Android_Icu_Util_Calendar_System_Int32_System_Int32_Java_Util_Locale_">DateFormat.GetDateTimeInstance(Calendar, int, int, Locale)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_GetDateTimeInstance_Android_Icu_Util_Calendar_System_Int32_System_Int32_">DateFormat.GetDateTimeInstance(Calendar, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_GetDateTimeInstance_System_Int32_System_Int32_Android_Icu_Util_ULocale_">DateFormat.GetDateTimeInstance(int, int, ULocale)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_GetDateTimeInstance_System_Int32_System_Int32_Java_Util_Locale_">DateFormat.GetDateTimeInstance(int, int, Locale)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_GetDateTimeInstance_System_Int32_System_Int32_">DateFormat.GetDateTimeInstance(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_GetInstance">DateFormat.GetInstance()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_GetInstance_Android_Icu_Util_Calendar_Android_Icu_Util_ULocale_">DateFormat.GetInstance(Calendar, ULocale)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_GetInstance_Android_Icu_Util_Calendar_Java_Util_Locale_">DateFormat.GetInstance(Calendar, Locale)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_GetInstance_Android_Icu_Util_Calendar_">DateFormat.GetInstance(Calendar)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_GetInstanceForSkeleton_Android_Icu_Util_Calendar_Java_Lang_String_Android_Icu_Util_ULocale_">DateFormat.GetInstanceForSkeleton(Calendar, String, ULocale)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_GetInstanceForSkeleton_Android_Icu_Util_Calendar_Java_Lang_String_Java_Util_Locale_">DateFormat.GetInstanceForSkeleton(Calendar, String, Locale)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_GetInstanceForSkeleton_Java_Lang_String_Android_Icu_Util_ULocale_">DateFormat.GetInstanceForSkeleton(String, ULocale)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_GetInstanceForSkeleton_Java_Lang_String_Java_Util_Locale_">DateFormat.GetInstanceForSkeleton(String, Locale)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_GetInstanceForSkeleton_Java_Lang_String_">DateFormat.GetInstanceForSkeleton(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_GetPatternInstance_Android_Icu_Util_Calendar_Java_Lang_String_Android_Icu_Util_ULocale_">DateFormat.GetPatternInstance(Calendar, String, ULocale)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_GetPatternInstance_Android_Icu_Util_Calendar_Java_Lang_String_Java_Util_Locale_">DateFormat.GetPatternInstance(Calendar, String, Locale)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_GetPatternInstance_Java_Lang_String_Android_Icu_Util_ULocale_">DateFormat.GetPatternInstance(String, ULocale)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_GetPatternInstance_Java_Lang_String_Java_Util_Locale_">DateFormat.GetPatternInstance(String, Locale)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_GetPatternInstance_Java_Lang_String_">DateFormat.GetPatternInstance(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_GetTimeInstance">DateFormat.GetTimeInstance()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_GetTimeInstance_Android_Icu_Util_Calendar_System_Int32_Android_Icu_Util_ULocale_">DateFormat.GetTimeInstance(Calendar, int, ULocale)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_GetTimeInstance_Android_Icu_Util_Calendar_System_Int32_Java_Util_Locale_">DateFormat.GetTimeInstance(Calendar, int, Locale)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_GetTimeInstance_Android_Icu_Util_Calendar_System_Int32_">DateFormat.GetTimeInstance(Calendar, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_GetTimeInstance_System_Int32_Android_Icu_Util_ULocale_">DateFormat.GetTimeInstance(int, ULocale)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_GetTimeInstance_System_Int32_Java_Util_Locale_">DateFormat.GetTimeInstance(int, Locale)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_GetTimeInstance_System_Int32_">DateFormat.GetTimeInstance(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_GetAvailableLocales">DateFormat.GetAvailableLocales()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_Format_Android_Icu_Util_Calendar_Java_Lang_StringBuffer_Java_Text_FieldPosition_">DateFormat.Format(Calendar, StringBuffer, FieldPosition)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_Parse_Java_Lang_String_Android_Icu_Util_Calendar_Java_Text_ParsePosition_">DateFormat.Parse(String, Calendar, ParsePosition)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_SetBooleanAttribute_Android_Icu_Text_DateFormat_BooleanAttribute_System_Boolean_">DateFormat.SetBooleanAttribute(DateFormat.BooleanAttribute, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_GetContext_Android_Icu_Text_DisplayContext_Type_">DateFormat.GetContext(DisplayContext.Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_GetNumberFormat">DateFormat.GetNumberFormat()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_GetCalendar">DateFormat.GetCalendar()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_GetTimeZone">DateFormat.GetTimeZone()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_GetBooleanAttribute_Android_Icu_Text_DateFormat_BooleanAttribute_">DateFormat.GetBooleanAttribute(DateFormat.BooleanAttribute)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_IsCalendarLenient">DateFormat.IsCalendarLenient()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_IsLenient">DateFormat.IsLenient()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_Format_Java_Util_Date_">DateFormat.Format(Date)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_Format_Java_Util_Date_Java_Lang_StringBuffer_Java_Text_FieldPosition_">DateFormat.Format(Date, StringBuffer, FieldPosition)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_Parse_Java_Lang_String_Java_Text_ParsePosition_">DateFormat.Parse(String, ParsePosition)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_Parse_Java_Lang_String_">DateFormat.Parse(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_SetCalendar_Android_Icu_Util_Calendar_">DateFormat.SetCalendar(Calendar)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_SetCalendarLenient_System_Boolean_">DateFormat.SetCalendarLenient(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_SetContext_Android_Icu_Text_DisplayContext_">DateFormat.SetContext(DisplayContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_SetLenient_System_Boolean_">DateFormat.SetLenient(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_SetNumberFormat_Android_Icu_Text_NumberFormat_">DateFormat.SetNumberFormat(NumberFormat)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Icu.Text.DateFormat.html#Android_Icu_Text_DateFormat_SetTimeZone_Android_Icu_Util_TimeZone_">DateFormat.SetTimeZone(TimeZone)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Text.Format.html#Java_Text_Format_ParseObject_Java_Lang_String_Java_Text_ParsePosition_">Format.ParseObject(String, ParsePosition)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Text.Format.html#Java_Text_Format_FormatMethod_System_Object_Java_Lang_StringBuffer_Java_Text_FieldPosition_">Format.FormatMethod(object, StringBuffer, FieldPosition)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Text.Format.html#Java_Text_Format_FormatMethod_System_Object_">Format.FormatMethod(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Text.Format.html#Java_Text_Format_ParseObject_Java_Lang_String_">Format.ParseObject(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Text.Format.html#Java_Text_Format_FormatToCharacterIterator_System_Object_">Format.FormatToCharacterIterator(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Format&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Format&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Format&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Format&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Format&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Format&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Format&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Format&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Format&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Format&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Format&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Format&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Format&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Format&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;Format&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Format&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Format&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Format&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Format&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_Icu_Text_SimpleDateFormat__ctor_" data-uid="Android.Icu.Text.SimpleDateFormat.#ctor*"></a>
+
+  <h3 id="Android_Icu_Text_SimpleDateFormat__ctor" data-uid="Android.Icu.Text.SimpleDateFormat.#ctor">
+  SimpleDateFormat()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/AllPackageClasses.cs/#L3983"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SimpleDateFormat()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_SimpleDateFormat__ctor_" data-uid="Android.Icu.Text.SimpleDateFormat.#ctor*"></a>
+
+  <h3 id="Android_Icu_Text_SimpleDateFormat__ctor_Java_Lang_String_" data-uid="Android.Icu.Text.SimpleDateFormat.#ctor(Java.Lang.String)">
+  SimpleDateFormat(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/SimpleDateFormat.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html#%3Cinit%3E(java.lang.String)">https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html#%3Cinit%3E(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SimpleDateFormat(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_SimpleDateFormat__ctor_" data-uid="Android.Icu.Text.SimpleDateFormat.#ctor*"></a>
+
+  <h3 id="Android_Icu_Text_SimpleDateFormat__ctor_Java_Lang_String_Android_Icu_Text_DateFormatSymbols_" data-uid="Android.Icu.Text.SimpleDateFormat.#ctor(Java.Lang.String,Android.Icu.Text.DateFormatSymbols)">
+  SimpleDateFormat(String, DateFormatSymbols)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/SimpleDateFormat.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html#%3Cinit%3E(java.lang.String,android.icu.text.DateFormatSymbols)">https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html#%3Cinit%3E(java.lang.String,android.icu.text.DateFormatSymbols)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SimpleDateFormat(String arg0, DateFormatSymbols arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Icu.Text.DateFormatSymbols.html">DateFormatSymbols</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.DateFormatSymbols.html">DateFormatSymbols</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_SimpleDateFormat__ctor_" data-uid="Android.Icu.Text.SimpleDateFormat.#ctor*"></a>
+
+  <h3 id="Android_Icu_Text_SimpleDateFormat__ctor_Java_Lang_String_Android_Icu_Util_ULocale_" data-uid="Android.Icu.Text.SimpleDateFormat.#ctor(Java.Lang.String,Android.Icu.Util.ULocale)">
+  SimpleDateFormat(String, ULocale)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/SimpleDateFormat.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html#%3Cinit%3E(java.lang.String,android.icu.util.ULocale)">https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html#%3Cinit%3E(java.lang.String,android.icu.util.ULocale)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SimpleDateFormat(String arg0, ULocale arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Icu.Util.ULocale.html">ULocale</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Util.ULocale.html">ULocale</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_SimpleDateFormat__ctor_" data-uid="Android.Icu.Text.SimpleDateFormat.#ctor*"></a>
+
+  <h3 id="Android_Icu_Text_SimpleDateFormat__ctor_Java_Lang_String_Java_Lang_String_Android_Icu_Util_ULocale_" data-uid="Android.Icu.Text.SimpleDateFormat.#ctor(Java.Lang.String,Java.Lang.String,Android.Icu.Util.ULocale)">
+  SimpleDateFormat(String, String, ULocale)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/SimpleDateFormat.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html#%3Cinit%3E(java.lang.String,java.lang.String,android.icu.util.ULocale)">https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html#%3Cinit%3E(java.lang.String,java.lang.String,android.icu.util.ULocale)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SimpleDateFormat(String arg0, String arg1, ULocale arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Icu.Util.ULocale.html">ULocale</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Util.ULocale.html">ULocale</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_SimpleDateFormat__ctor_" data-uid="Android.Icu.Text.SimpleDateFormat.#ctor*"></a>
+
+  <h3 id="Android_Icu_Text_SimpleDateFormat__ctor_Java_Lang_String_Java_Util_Locale_" data-uid="Android.Icu.Text.SimpleDateFormat.#ctor(Java.Lang.String,Java.Util.Locale)">
+  SimpleDateFormat(String, Locale)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/SimpleDateFormat.cs/#L65"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html#%3Cinit%3E(java.lang.String,java.util.Locale)">https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html#%3Cinit%3E(java.lang.String,java.util.Locale)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SimpleDateFormat(String arg0, Locale arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Util.Locale.html">Locale</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Locale.html">Locale</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_SimpleDateFormat__ctor_" data-uid="Android.Icu.Text.SimpleDateFormat.#ctor*"></a>
+
+  <h3 id="Android_Icu_Text_SimpleDateFormat__ctor_System_Object___" data-uid="Android.Icu.Text.SimpleDateFormat.#ctor(System.Object[])">
+  SimpleDateFormat(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/AllPackageClasses.cs/#L3987"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SimpleDateFormat(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_Icu_Text_SimpleDateFormat_BridgeClassName_" data-uid="Android.Icu.Text.SimpleDateFormat.BridgeClassName*"></a>
+
+  <h3 id="Android_Icu_Text_SimpleDateFormat_BridgeClassName" data-uid="Android.Icu.Text.SimpleDateFormat.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/AllPackageClasses.cs/#L3994"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_SimpleDateFormat_IsBridgeAbstract_" data-uid="Android.Icu.Text.SimpleDateFormat.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_Icu_Text_SimpleDateFormat_IsBridgeAbstract" data-uid="Android.Icu.Text.SimpleDateFormat.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/AllPackageClasses.cs/#L3998"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_SimpleDateFormat_IsBridgeCloseable_" data-uid="Android.Icu.Text.SimpleDateFormat.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_Icu_Text_SimpleDateFormat_IsBridgeCloseable" data-uid="Android.Icu.Text.SimpleDateFormat.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/AllPackageClasses.cs/#L4002"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_SimpleDateFormat_IsBridgeInterface_" data-uid="Android.Icu.Text.SimpleDateFormat.IsBridgeInterface*"></a>
+
+  <h3 id="Android_Icu_Text_SimpleDateFormat_IsBridgeInterface" data-uid="Android.Icu.Text.SimpleDateFormat.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/AllPackageClasses.cs/#L4006"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_SimpleDateFormat_IsBridgeStatic_" data-uid="Android.Icu.Text.SimpleDateFormat.IsBridgeStatic*"></a>
+
+  <h3 id="Android_Icu_Text_SimpleDateFormat_IsBridgeStatic" data-uid="Android.Icu.Text.SimpleDateFormat.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/AllPackageClasses.cs/#L4010"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_Icu_Text_SimpleDateFormat_ApplyLocalizedPattern_" data-uid="Android.Icu.Text.SimpleDateFormat.ApplyLocalizedPattern*"></a>
+
+  <h3 id="Android_Icu_Text_SimpleDateFormat_ApplyLocalizedPattern_Java_Lang_String_" data-uid="Android.Icu.Text.SimpleDateFormat.ApplyLocalizedPattern(Java.Lang.String)">
+  ApplyLocalizedPattern(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/SimpleDateFormat.cs/#L146"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html#applyLocalizedPattern(java.lang.String)">https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html#applyLocalizedPattern(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ApplyLocalizedPattern(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_SimpleDateFormat_ApplyPattern_" data-uid="Android.Icu.Text.SimpleDateFormat.ApplyPattern*"></a>
+
+  <h3 id="Android_Icu_Text_SimpleDateFormat_ApplyPattern_Java_Lang_String_" data-uid="Android.Icu.Text.SimpleDateFormat.ApplyPattern(Java.Lang.String)">
+  ApplyPattern(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/SimpleDateFormat.cs/#L154"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html#applyPattern(java.lang.String)">https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html#applyPattern(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ApplyPattern(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_SimpleDateFormat_Get2DigitYearStart_" data-uid="Android.Icu.Text.SimpleDateFormat.Get2DigitYearStart*"></a>
+
+  <h3 id="Android_Icu_Text_SimpleDateFormat_Get2DigitYearStart" data-uid="Android.Icu.Text.SimpleDateFormat.Get2DigitYearStart">
+  Get2DigitYearStart()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/SimpleDateFormat.cs/#L138"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html#get2DigitYearStart()">https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html#get2DigitYearStart()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Date Get2DigitYearStart()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Date.html">Date</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Date.html">Date</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_SimpleDateFormat_GetDateFormatSymbols_" data-uid="Android.Icu.Text.SimpleDateFormat.GetDateFormatSymbols*"></a>
+
+  <h3 id="Android_Icu_Text_SimpleDateFormat_GetDateFormatSymbols" data-uid="Android.Icu.Text.SimpleDateFormat.GetDateFormatSymbols">
+  GetDateFormatSymbols()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/SimpleDateFormat.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html#getDateFormatSymbols()">https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html#getDateFormatSymbols()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateFormatSymbols GetDateFormatSymbols()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.DateFormatSymbols.html">DateFormatSymbols</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.DateFormatSymbols.html">DateFormatSymbols</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_SimpleDateFormat_GetNumberFormat_" data-uid="Android.Icu.Text.SimpleDateFormat.GetNumberFormat*"></a>
+
+  <h3 id="Android_Icu_Text_SimpleDateFormat_GetNumberFormat_System_Char_" data-uid="Android.Icu.Text.SimpleDateFormat.GetNumberFormat(System.Char)">
+  GetNumberFormat(char)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/SimpleDateFormat.cs/#L106"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html#getNumberFormat(char)">https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html#getNumberFormat(char)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NumberFormat GetNumberFormat(char arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.NumberFormat.html">NumberFormat</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.NumberFormat.html">NumberFormat</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_SimpleDateFormat_GetTimeZoneFormat_" data-uid="Android.Icu.Text.SimpleDateFormat.GetTimeZoneFormat*"></a>
+
+  <h3 id="Android_Icu_Text_SimpleDateFormat_GetTimeZoneFormat" data-uid="Android.Icu.Text.SimpleDateFormat.GetTimeZoneFormat">
+  GetTimeZoneFormat()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/SimpleDateFormat.cs/#L114"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html#getTimeZoneFormat()">https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html#getTimeZoneFormat()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeZoneFormat GetTimeZoneFormat()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Icu.Text.TimeZoneFormat.html">TimeZoneFormat</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.TimeZoneFormat.html">TimeZoneFormat</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_SimpleDateFormat_Set2DigitYearStart_" data-uid="Android.Icu.Text.SimpleDateFormat.Set2DigitYearStart*"></a>
+
+  <h3 id="Android_Icu_Text_SimpleDateFormat_Set2DigitYearStart_Java_Util_Date_" data-uid="Android.Icu.Text.SimpleDateFormat.Set2DigitYearStart(Java.Util.Date)">
+  Set2DigitYearStart(Date)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/SimpleDateFormat.cs/#L162"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html#set2DigitYearStart(java.util.Date)">https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html#set2DigitYearStart(java.util.Date)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Set2DigitYearStart(Date arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Date.html">Date</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Date.html">Date</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_SimpleDateFormat_SetDateFormatSymbols_" data-uid="Android.Icu.Text.SimpleDateFormat.SetDateFormatSymbols*"></a>
+
+  <h3 id="Android_Icu_Text_SimpleDateFormat_SetDateFormatSymbols_Android_Icu_Text_DateFormatSymbols_" data-uid="Android.Icu.Text.SimpleDateFormat.SetDateFormatSymbols(Android.Icu.Text.DateFormatSymbols)">
+  SetDateFormatSymbols(DateFormatSymbols)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/SimpleDateFormat.cs/#L170"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html#setDateFormatSymbols(android.icu.text.DateFormatSymbols)">https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html#setDateFormatSymbols(android.icu.text.DateFormatSymbols)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDateFormatSymbols(DateFormatSymbols arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Icu.Text.DateFormatSymbols.html">DateFormatSymbols</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.DateFormatSymbols.html">DateFormatSymbols</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_SimpleDateFormat_SetNumberFormat_" data-uid="Android.Icu.Text.SimpleDateFormat.SetNumberFormat*"></a>
+
+  <h3 id="Android_Icu_Text_SimpleDateFormat_SetNumberFormat_Java_Lang_String_Android_Icu_Text_NumberFormat_" data-uid="Android.Icu.Text.SimpleDateFormat.SetNumberFormat(Java.Lang.String,Android.Icu.Text.NumberFormat)">
+  SetNumberFormat(String, NumberFormat)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/SimpleDateFormat.cs/#L179"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html#setNumberFormat(java.lang.String,android.icu.text.NumberFormat)">https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html#setNumberFormat(java.lang.String,android.icu.text.NumberFormat)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetNumberFormat(String arg0, NumberFormat arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Icu.Text.NumberFormat.html">NumberFormat</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.NumberFormat.html">NumberFormat</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_SimpleDateFormat_SetTimeZoneFormat_" data-uid="Android.Icu.Text.SimpleDateFormat.SetTimeZoneFormat*"></a>
+
+  <h3 id="Android_Icu_Text_SimpleDateFormat_SetTimeZoneFormat_Android_Icu_Text_TimeZoneFormat_" data-uid="Android.Icu.Text.SimpleDateFormat.SetTimeZoneFormat(Android.Icu.Text.TimeZoneFormat)">
+  SetTimeZoneFormat(TimeZoneFormat)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/SimpleDateFormat.cs/#L187"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html#setTimeZoneFormat(android.icu.text.TimeZoneFormat)">https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html#setTimeZoneFormat(android.icu.text.TimeZoneFormat)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTimeZoneFormat(TimeZoneFormat arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Icu.Text.TimeZoneFormat.html">TimeZoneFormat</a></dt>
+    <dd><p><a class="xref" href="Android.Icu.Text.TimeZoneFormat.html">TimeZoneFormat</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_SimpleDateFormat_ToLocalizedPattern_" data-uid="Android.Icu.Text.SimpleDateFormat.ToLocalizedPattern*"></a>
+
+  <h3 id="Android_Icu_Text_SimpleDateFormat_ToLocalizedPattern" data-uid="Android.Icu.Text.SimpleDateFormat.ToLocalizedPattern">
+  ToLocalizedPattern()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/SimpleDateFormat.cs/#L122"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html#toLocalizedPattern()">https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html#toLocalizedPattern()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String ToLocalizedPattern()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Icu_Text_SimpleDateFormat_ToPattern_" data-uid="Android.Icu.Text.SimpleDateFormat.ToPattern*"></a>
+
+  <h3 id="Android_Icu_Text_SimpleDateFormat_ToPattern" data-uid="Android.Icu.Text.SimpleDateFormat.ToPattern">
+  ToPattern()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/SimpleDateFormat.cs/#L130"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html#toPattern()">https://developer.android.com/reference/android/icu/text/SimpleDateFormat.html#toPattern()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String ToPattern()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Icu/Text/SimpleDateFormat.cs/#L29" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

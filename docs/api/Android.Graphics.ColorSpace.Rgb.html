@@ -1,0 +1,1724 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class ColorSpace.Rgb | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ColorSpace.Rgb | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_Graphics_ColorSpace_Rgb.md&amp;value=---%0Auid%3A%20Android.Graphics.ColorSpace.Rgb%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.Graphics.ColorSpace.Rgb">
+
+
+
+  <h1 id="Android_Graphics_ColorSpace_Rgb" data-uid="Android.Graphics.ColorSpace.Rgb" class="text-break">
+Class ColorSpace.Rgb  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/ColorSpace.cs/#L791"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.Graphics.html">Graphics</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html">https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ColorSpace.Rgb : ColorSpace, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.Graphics.ColorSpace.html">ColorSpace</a>&gt;</div>
+      <div><a class="xref" href="Android.Graphics.ColorSpace.html">ColorSpace</a></div>
+      <div><span class="xref">ColorSpace.Rgb</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Android.Graphics.ColorSpace.html#Android_Graphics_ColorSpace_ILLUMINANT_A">ColorSpace.ILLUMINANT_A</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.ColorSpace.html#Android_Graphics_ColorSpace_ILLUMINANT_B">ColorSpace.ILLUMINANT_B</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.ColorSpace.html#Android_Graphics_ColorSpace_ILLUMINANT_C">ColorSpace.ILLUMINANT_C</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.ColorSpace.html#Android_Graphics_ColorSpace_ILLUMINANT_D50">ColorSpace.ILLUMINANT_D50</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.ColorSpace.html#Android_Graphics_ColorSpace_ILLUMINANT_D55">ColorSpace.ILLUMINANT_D55</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.ColorSpace.html#Android_Graphics_ColorSpace_ILLUMINANT_D60">ColorSpace.ILLUMINANT_D60</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.ColorSpace.html#Android_Graphics_ColorSpace_ILLUMINANT_D65">ColorSpace.ILLUMINANT_D65</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.ColorSpace.html#Android_Graphics_ColorSpace_ILLUMINANT_D75">ColorSpace.ILLUMINANT_D75</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.ColorSpace.html#Android_Graphics_ColorSpace_ILLUMINANT_E">ColorSpace.ILLUMINANT_E</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.ColorSpace.html#Android_Graphics_ColorSpace_MAX_ID">ColorSpace.MAX_ID</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.ColorSpace.html#Android_Graphics_ColorSpace_MIN_ID">ColorSpace.MIN_ID</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.ColorSpace.html#Android_Graphics_ColorSpace_Adapt_Android_Graphics_ColorSpace_System_Single___Android_Graphics_ColorSpace_Adaptation_">ColorSpace.Adapt(ColorSpace, float[], ColorSpace.Adaptation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.ColorSpace.html#Android_Graphics_ColorSpace_Adapt_Android_Graphics_ColorSpace_System_Single___">ColorSpace.Adapt(ColorSpace, float[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.ColorSpace.html#Android_Graphics_ColorSpace_Get_Android_Graphics_ColorSpace_Named_">ColorSpace.Get(ColorSpace.Named)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.ColorSpace.html#Android_Graphics_ColorSpace_GetFromDataSpace_System_Int32_">ColorSpace.GetFromDataSpace(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.ColorSpace.html#Android_Graphics_ColorSpace_Match_System_Single___Android_Graphics_ColorSpace_Rgb_TransferParameters_">ColorSpace.Match(float[], ColorSpace.Rgb.TransferParameters)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.ColorSpace.html#Android_Graphics_ColorSpace_Connect_Android_Graphics_ColorSpace_Android_Graphics_ColorSpace_Android_Graphics_ColorSpace_RenderIntent_">ColorSpace.Connect(ColorSpace, ColorSpace, ColorSpace.RenderIntent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.ColorSpace.html#Android_Graphics_ColorSpace_Connect_Android_Graphics_ColorSpace_Android_Graphics_ColorSpace_">ColorSpace.Connect(ColorSpace, ColorSpace)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.ColorSpace.html#Android_Graphics_ColorSpace_Connect_Android_Graphics_ColorSpace_Android_Graphics_ColorSpace_RenderIntent_">ColorSpace.Connect(ColorSpace, ColorSpace.RenderIntent)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.ColorSpace.html#Android_Graphics_ColorSpace_Connect_Android_Graphics_ColorSpace_">ColorSpace.Connect(ColorSpace)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.ColorSpace.html#Android_Graphics_ColorSpace_CctToXyz_System_Int32_">ColorSpace.CctToXyz(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.ColorSpace.html#Android_Graphics_ColorSpace_ChromaticAdaptation_Android_Graphics_ColorSpace_Adaptation_System_Single___System_Single___">ColorSpace.ChromaticAdaptation(ColorSpace.Adaptation, float[], float[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.ColorSpace.html#Android_Graphics_ColorSpace_IsWideGamut">ColorSpace.IsWideGamut()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.ColorSpace.html#Android_Graphics_ColorSpace_GetMaxValue_System_Int32_">ColorSpace.GetMaxValue(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.ColorSpace.html#Android_Graphics_ColorSpace_GetMinValue_System_Int32_">ColorSpace.GetMinValue(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.ColorSpace.html#Android_Graphics_ColorSpace_FromXyz_System_Single___">ColorSpace.FromXyz(float[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.ColorSpace.html#Android_Graphics_ColorSpace_ToXyz_System_Single___">ColorSpace.ToXyz(float[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.ColorSpace.html#Android_Graphics_ColorSpace_GetModel">ColorSpace.GetModel()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.ColorSpace.html#Android_Graphics_ColorSpace_IsSrgb">ColorSpace.IsSrgb()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.ColorSpace.html#Android_Graphics_ColorSpace_FromXyz_System_Single_System_Single_System_Single_">ColorSpace.FromXyz(float, float, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.ColorSpace.html#Android_Graphics_ColorSpace_ToXyz_System_Single_System_Single_System_Single_">ColorSpace.ToXyz(float, float, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.ColorSpace.html#Android_Graphics_ColorSpace_GetComponentCount">ColorSpace.GetComponentCount()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.ColorSpace.html#Android_Graphics_ColorSpace_GetDataSpace">ColorSpace.GetDataSpace()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.ColorSpace.html#Android_Graphics_ColorSpace_GetId">ColorSpace.GetId()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Graphics.ColorSpace.html#Android_Graphics_ColorSpace_GetName">ColorSpace.GetName()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ColorSpace&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ColorSpace&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ColorSpace&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ColorSpace&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ColorSpace&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ColorSpace&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ColorSpace&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ColorSpace&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ColorSpace&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ColorSpace&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ColorSpace&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ColorSpace&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ColorSpace&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ColorSpace&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ColorSpace&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ColorSpace&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ColorSpace&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ColorSpace&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ColorSpace&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ColorSpace&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ColorSpace&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ColorSpace&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ColorSpace&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ColorSpace&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ColorSpace&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ColorSpace&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ColorSpace&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;ColorSpace&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ColorSpace&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ColorSpace&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ColorSpace&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ColorSpace&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ColorSpace&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ColorSpace&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ColorSpace&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ColorSpace&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ColorSpace&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ColorSpace&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ColorSpace&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ColorSpace&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ColorSpace&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ColorSpace&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ColorSpace&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;ColorSpace&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;ColorSpace&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;ColorSpace&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;ColorSpace&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;ColorSpace&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;ColorSpace&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;ColorSpace&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_Graphics_ColorSpace_Rgb__ctor_" data-uid="Android.Graphics.ColorSpace.Rgb.#ctor*"></a>
+
+  <h3 id="Android_Graphics_ColorSpace_Rgb__ctor" data-uid="Android.Graphics.ColorSpace.Rgb.#ctor">
+  Rgb()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/AllPackageClasses.cs/#L1138"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rgb()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_ColorSpace_Rgb__ctor_" data-uid="Android.Graphics.ColorSpace.Rgb.#ctor*"></a>
+
+  <h3 id="Android_Graphics_ColorSpace_Rgb__ctor_Java_Lang_String_System_Single___Android_Graphics_ColorSpace_Rgb_TransferParameters_" data-uid="Android.Graphics.ColorSpace.Rgb.#ctor(Java.Lang.String,System.Single[],Android.Graphics.ColorSpace.Rgb.TransferParameters)">
+  Rgb(String, float[], TransferParameters)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/ColorSpace.cs/#L800"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html#%3Cinit%3E(java.lang.String,float[],android.graphics.ColorSpace.Rgb.TransferParameters)">https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html#%3Cinit%3E(java.lang.String,float[],android.graphics.ColorSpace.Rgb.TransferParameters)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rgb(String arg0, float[] arg1, ColorSpace.Rgb.TransferParameters arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Graphics.ColorSpace.html">ColorSpace</a>.<a class="xref" href="Android.Graphics.ColorSpace.Rgb.html">Rgb</a>.<a class="xref" href="Android.Graphics.ColorSpace.Rgb.TransferParameters.html">TransferParameters</a></dt>
+    <dd><p><a class="xref" href="Android.Graphics.ColorSpace.Rgb.TransferParameters.html">ColorSpace.Rgb.TransferParameters</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_ColorSpace_Rgb__ctor_" data-uid="Android.Graphics.ColorSpace.Rgb.#ctor*"></a>
+
+  <h3 id="Android_Graphics_ColorSpace_Rgb__ctor_Java_Lang_String_System_Single___Java_Util_Function_DoubleUnaryOperator_Java_Util_Function_DoubleUnaryOperator_" data-uid="Android.Graphics.ColorSpace.Rgb.#ctor(Java.Lang.String,System.Single[],Java.Util.Function.DoubleUnaryOperator,Java.Util.Function.DoubleUnaryOperator)">
+  Rgb(String, float[], DoubleUnaryOperator, DoubleUnaryOperator)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/ColorSpace.cs/#L857"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html#%3Cinit%3E(java.lang.String,float[],java.util.function.DoubleUnaryOperator,java.util.function.DoubleUnaryOperator)">https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html#%3Cinit%3E(java.lang.String,float[],java.util.function.DoubleUnaryOperator,java.util.function.DoubleUnaryOperator)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rgb(String arg0, float[] arg1, DoubleUnaryOperator arg2, DoubleUnaryOperator arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Util.Function.DoubleUnaryOperator.html">DoubleUnaryOperator</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Function.DoubleUnaryOperator.html">DoubleUnaryOperator</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Java.Util.Function.DoubleUnaryOperator.html">DoubleUnaryOperator</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Function.DoubleUnaryOperator.html">DoubleUnaryOperator</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_ColorSpace_Rgb__ctor_" data-uid="Android.Graphics.ColorSpace.Rgb.#ctor*"></a>
+
+  <h3 id="Android_Graphics_ColorSpace_Rgb__ctor_Java_Lang_String_System_Single___System_Double_" data-uid="Android.Graphics.ColorSpace.Rgb.#ctor(Java.Lang.String,System.Single[],System.Double)">
+  Rgb(String, float[], double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/ColorSpace.cs/#L810"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html#%3Cinit%3E(java.lang.String,float[],double)">https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html#%3Cinit%3E(java.lang.String,float[],double)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rgb(String arg0, float[] arg1, double arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_ColorSpace_Rgb__ctor_" data-uid="Android.Graphics.ColorSpace.Rgb.#ctor*"></a>
+
+  <h3 id="Android_Graphics_ColorSpace_Rgb__ctor_Java_Lang_String_System_Single___System_Single___Android_Graphics_ColorSpace_Rgb_TransferParameters_" data-uid="Android.Graphics.ColorSpace.Rgb.#ctor(Java.Lang.String,System.Single[],System.Single[],Android.Graphics.ColorSpace.Rgb.TransferParameters)">
+  Rgb(String, float[], float[], TransferParameters)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/ColorSpace.cs/#L821"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html#%3Cinit%3E(java.lang.String,float[],float[],android.graphics.ColorSpace.Rgb.TransferParameters)">https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html#%3Cinit%3E(java.lang.String,float[],float[],android.graphics.ColorSpace.Rgb.TransferParameters)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rgb(String arg0, float[] arg1, float[] arg2, ColorSpace.Rgb.TransferParameters arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Android.Graphics.ColorSpace.html">ColorSpace</a>.<a class="xref" href="Android.Graphics.ColorSpace.Rgb.html">Rgb</a>.<a class="xref" href="Android.Graphics.ColorSpace.Rgb.TransferParameters.html">TransferParameters</a></dt>
+    <dd><p><a class="xref" href="Android.Graphics.ColorSpace.Rgb.TransferParameters.html">ColorSpace.Rgb.TransferParameters</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_ColorSpace_Rgb__ctor_" data-uid="Android.Graphics.ColorSpace.Rgb.#ctor*"></a>
+
+  <h3 id="Android_Graphics_ColorSpace_Rgb__ctor_Java_Lang_String_System_Single___System_Single___Java_Util_Function_DoubleUnaryOperator_Java_Util_Function_DoubleUnaryOperator_System_Single_System_Single_" data-uid="Android.Graphics.ColorSpace.Rgb.#ctor(Java.Lang.String,System.Single[],System.Single[],Java.Util.Function.DoubleUnaryOperator,Java.Util.Function.DoubleUnaryOperator,System.Single,System.Single)">
+  Rgb(String, float[], float[], DoubleUnaryOperator, DoubleUnaryOperator, float, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/ColorSpace.cs/#L846"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html#%3Cinit%3E(java.lang.String,float[],float[],java.util.function.DoubleUnaryOperator,java.util.function.DoubleUnaryOperator,float,float)">https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html#%3Cinit%3E(java.lang.String,float[],float[],java.util.function.DoubleUnaryOperator,java.util.function.DoubleUnaryOperator,float,float)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rgb(String arg0, float[] arg1, float[] arg2, DoubleUnaryOperator arg3, DoubleUnaryOperator arg4, float arg5, float arg6)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Java.Util.Function.DoubleUnaryOperator.html">DoubleUnaryOperator</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Function.DoubleUnaryOperator.html">DoubleUnaryOperator</a></p>
+</dd>
+    <dt><code>arg4</code> <a class="xref" href="Java.Util.Function.DoubleUnaryOperator.html">DoubleUnaryOperator</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Function.DoubleUnaryOperator.html">DoubleUnaryOperator</a></p>
+</dd>
+    <dt><code>arg5</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+    <dt><code>arg6</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_ColorSpace_Rgb__ctor_" data-uid="Android.Graphics.ColorSpace.Rgb.#ctor*"></a>
+
+  <h3 id="Android_Graphics_ColorSpace_Rgb__ctor_Java_Lang_String_System_Single___System_Single___System_Double_" data-uid="Android.Graphics.ColorSpace.Rgb.#ctor(Java.Lang.String,System.Single[],System.Single[],System.Double)">
+  Rgb(String, float[], float[], double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/ColorSpace.cs/#L832"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html#%3Cinit%3E(java.lang.String,float[],float[],double)">https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html#%3Cinit%3E(java.lang.String,float[],float[],double)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rgb(String arg0, float[] arg1, float[] arg2, double arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_ColorSpace_Rgb__ctor_" data-uid="Android.Graphics.ColorSpace.Rgb.#ctor*"></a>
+
+  <h3 id="Android_Graphics_ColorSpace_Rgb__ctor_System_Object___" data-uid="Android.Graphics.ColorSpace.Rgb.#ctor(System.Object[])">
+  Rgb(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/AllPackageClasses.cs/#L1142"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rgb(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_Graphics_ColorSpace_Rgb_BridgeClassName_" data-uid="Android.Graphics.ColorSpace.Rgb.BridgeClassName*"></a>
+
+  <h3 id="Android_Graphics_ColorSpace_Rgb_BridgeClassName" data-uid="Android.Graphics.ColorSpace.Rgb.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/AllPackageClasses.cs/#L1149"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_ColorSpace_Rgb_IsBridgeAbstract_" data-uid="Android.Graphics.ColorSpace.Rgb.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_Graphics_ColorSpace_Rgb_IsBridgeAbstract" data-uid="Android.Graphics.ColorSpace.Rgb.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/AllPackageClasses.cs/#L1153"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_ColorSpace_Rgb_IsBridgeCloseable_" data-uid="Android.Graphics.ColorSpace.Rgb.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_Graphics_ColorSpace_Rgb_IsBridgeCloseable" data-uid="Android.Graphics.ColorSpace.Rgb.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/AllPackageClasses.cs/#L1157"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_ColorSpace_Rgb_IsBridgeInterface_" data-uid="Android.Graphics.ColorSpace.Rgb.IsBridgeInterface*"></a>
+
+  <h3 id="Android_Graphics_ColorSpace_Rgb_IsBridgeInterface" data-uid="Android.Graphics.ColorSpace.Rgb.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/AllPackageClasses.cs/#L1161"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_ColorSpace_Rgb_IsBridgeStatic_" data-uid="Android.Graphics.ColorSpace.Rgb.IsBridgeStatic*"></a>
+
+  <h3 id="Android_Graphics_ColorSpace_Rgb_IsBridgeStatic" data-uid="Android.Graphics.ColorSpace.Rgb.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/AllPackageClasses.cs/#L1165"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_Graphics_ColorSpace_Rgb_FromLinear_" data-uid="Android.Graphics.ColorSpace.Rgb.FromLinear*"></a>
+
+  <h3 id="Android_Graphics_ColorSpace_Rgb_FromLinear_System_Single_System_Single_System_Single_" data-uid="Android.Graphics.ColorSpace.Rgb.FromLinear(System.Single,System.Single,System.Single)">
+  FromLinear(float, float, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/ColorSpace.cs/#L892"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html#fromLinear(float,float,float)">https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html#fromLinear(float,float,float)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float[] FromLinear(float arg0, float arg1, float arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_ColorSpace_Rgb_FromLinear_" data-uid="Android.Graphics.ColorSpace.Rgb.FromLinear*"></a>
+
+  <h3 id="Android_Graphics_ColorSpace_Rgb_FromLinear_System_Single___" data-uid="Android.Graphics.ColorSpace.Rgb.FromLinear(System.Single[])">
+  FromLinear(float[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/ColorSpace.cs/#L901"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html#fromLinear(float[])">https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html#fromLinear(float[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float[] FromLinear(float[] arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_ColorSpace_Rgb_GetEotf_" data-uid="Android.Graphics.ColorSpace.Rgb.GetEotf*"></a>
+
+  <h3 id="Android_Graphics_ColorSpace_Rgb_GetEotf" data-uid="Android.Graphics.ColorSpace.Rgb.GetEotf">
+  GetEotf()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/ColorSpace.cs/#L997"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html#getEotf()">https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html#getEotf()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DoubleUnaryOperator GetEotf()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Function.DoubleUnaryOperator.html">DoubleUnaryOperator</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Function.DoubleUnaryOperator.html">DoubleUnaryOperator</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_ColorSpace_Rgb_GetEotfDirect_" data-uid="Android.Graphics.ColorSpace.Rgb.GetEotfDirect*"></a>
+
+  <h3 id="Android_Graphics_ColorSpace_Rgb_GetEotfDirect" data-uid="Android.Graphics.ColorSpace.Rgb.GetEotfDirect">
+  GetEotfDirect()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/ColorSpace.cs/#L1005"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html#getEotf()">https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html#getEotf()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DoubleUnaryOperator GetEotfDirect()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Function.DoubleUnaryOperator.html">DoubleUnaryOperator</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Function.DoubleUnaryOperator.html">DoubleUnaryOperator</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_ColorSpace_Rgb_GetInverseTransform_" data-uid="Android.Graphics.ColorSpace.Rgb.GetInverseTransform*"></a>
+
+  <h3 id="Android_Graphics_ColorSpace_Rgb_GetInverseTransform" data-uid="Android.Graphics.ColorSpace.Rgb.GetInverseTransform">
+  GetInverseTransform()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/ColorSpace.cs/#L909"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html#getInverseTransform()">https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html#getInverseTransform()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float[] GetInverseTransform()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_ColorSpace_Rgb_GetInverseTransform_" data-uid="Android.Graphics.ColorSpace.Rgb.GetInverseTransform*"></a>
+
+  <h3 id="Android_Graphics_ColorSpace_Rgb_GetInverseTransform_System_Single___" data-uid="Android.Graphics.ColorSpace.Rgb.GetInverseTransform(System.Single[])">
+  GetInverseTransform(float[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/ColorSpace.cs/#L918"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html#getInverseTransform(float[])">https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html#getInverseTransform(float[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float[] GetInverseTransform(float[] arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_ColorSpace_Rgb_GetOetf_" data-uid="Android.Graphics.ColorSpace.Rgb.GetOetf*"></a>
+
+  <h3 id="Android_Graphics_ColorSpace_Rgb_GetOetf" data-uid="Android.Graphics.ColorSpace.Rgb.GetOetf">
+  GetOetf()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/ColorSpace.cs/#L1013"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html#getOetf()">https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html#getOetf()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DoubleUnaryOperator GetOetf()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Function.DoubleUnaryOperator.html">DoubleUnaryOperator</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Function.DoubleUnaryOperator.html">DoubleUnaryOperator</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_ColorSpace_Rgb_GetOetfDirect_" data-uid="Android.Graphics.ColorSpace.Rgb.GetOetfDirect*"></a>
+
+  <h3 id="Android_Graphics_ColorSpace_Rgb_GetOetfDirect" data-uid="Android.Graphics.ColorSpace.Rgb.GetOetfDirect">
+  GetOetfDirect()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/ColorSpace.cs/#L1021"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html#getOetf()">https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html#getOetf()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DoubleUnaryOperator GetOetfDirect()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Function.DoubleUnaryOperator.html">DoubleUnaryOperator</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Function.DoubleUnaryOperator.html">DoubleUnaryOperator</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_ColorSpace_Rgb_GetPrimaries_" data-uid="Android.Graphics.ColorSpace.Rgb.GetPrimaries*"></a>
+
+  <h3 id="Android_Graphics_ColorSpace_Rgb_GetPrimaries" data-uid="Android.Graphics.ColorSpace.Rgb.GetPrimaries">
+  GetPrimaries()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/ColorSpace.cs/#L926"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html#getPrimaries()">https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html#getPrimaries()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float[] GetPrimaries()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_ColorSpace_Rgb_GetPrimaries_" data-uid="Android.Graphics.ColorSpace.Rgb.GetPrimaries*"></a>
+
+  <h3 id="Android_Graphics_ColorSpace_Rgb_GetPrimaries_System_Single___" data-uid="Android.Graphics.ColorSpace.Rgb.GetPrimaries(System.Single[])">
+  GetPrimaries(float[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/ColorSpace.cs/#L935"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html#getPrimaries(float[])">https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html#getPrimaries(float[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float[] GetPrimaries(float[] arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_ColorSpace_Rgb_GetTransferParameters_" data-uid="Android.Graphics.ColorSpace.Rgb.GetTransferParameters*"></a>
+
+  <h3 id="Android_Graphics_ColorSpace_Rgb_GetTransferParameters" data-uid="Android.Graphics.ColorSpace.Rgb.GetTransferParameters">
+  GetTransferParameters()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/ColorSpace.cs/#L881"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html#getTransferParameters()">https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html#getTransferParameters()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ColorSpace.Rgb.TransferParameters GetTransferParameters()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Graphics.ColorSpace.html">ColorSpace</a>.<a class="xref" href="Android.Graphics.ColorSpace.Rgb.html">Rgb</a>.<a class="xref" href="Android.Graphics.ColorSpace.Rgb.TransferParameters.html">TransferParameters</a></dt>
+    <dd><p><a class="xref" href="Android.Graphics.ColorSpace.Rgb.TransferParameters.html">ColorSpace.Rgb.TransferParameters</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_ColorSpace_Rgb_GetTransform_" data-uid="Android.Graphics.ColorSpace.Rgb.GetTransform*"></a>
+
+  <h3 id="Android_Graphics_ColorSpace_Rgb_GetTransform" data-uid="Android.Graphics.ColorSpace.Rgb.GetTransform">
+  GetTransform()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/ColorSpace.cs/#L943"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html#getTransform()">https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html#getTransform()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float[] GetTransform()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_ColorSpace_Rgb_GetTransform_" data-uid="Android.Graphics.ColorSpace.Rgb.GetTransform*"></a>
+
+  <h3 id="Android_Graphics_ColorSpace_Rgb_GetTransform_System_Single___" data-uid="Android.Graphics.ColorSpace.Rgb.GetTransform(System.Single[])">
+  GetTransform(float[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/ColorSpace.cs/#L952"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html#getTransform(float[])">https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html#getTransform(float[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float[] GetTransform(float[] arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_ColorSpace_Rgb_GetWhitePoint_" data-uid="Android.Graphics.ColorSpace.Rgb.GetWhitePoint*"></a>
+
+  <h3 id="Android_Graphics_ColorSpace_Rgb_GetWhitePoint" data-uid="Android.Graphics.ColorSpace.Rgb.GetWhitePoint">
+  GetWhitePoint()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/ColorSpace.cs/#L960"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html#getWhitePoint()">https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html#getWhitePoint()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float[] GetWhitePoint()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_ColorSpace_Rgb_GetWhitePoint_" data-uid="Android.Graphics.ColorSpace.Rgb.GetWhitePoint*"></a>
+
+  <h3 id="Android_Graphics_ColorSpace_Rgb_GetWhitePoint_System_Single___" data-uid="Android.Graphics.ColorSpace.Rgb.GetWhitePoint(System.Single[])">
+  GetWhitePoint(float[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/ColorSpace.cs/#L969"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html#getWhitePoint(float[])">https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html#getWhitePoint(float[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float[] GetWhitePoint(float[] arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_ColorSpace_Rgb_ToLinear_" data-uid="Android.Graphics.ColorSpace.Rgb.ToLinear*"></a>
+
+  <h3 id="Android_Graphics_ColorSpace_Rgb_ToLinear_System_Single_System_Single_System_Single_" data-uid="Android.Graphics.ColorSpace.Rgb.ToLinear(System.Single,System.Single,System.Single)">
+  ToLinear(float, float, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/ColorSpace.cs/#L980"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html#toLinear(float,float,float)">https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html#toLinear(float,float,float)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float[] ToLinear(float arg0, float arg1, float arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Graphics_ColorSpace_Rgb_ToLinear_" data-uid="Android.Graphics.ColorSpace.Rgb.ToLinear*"></a>
+
+  <h3 id="Android_Graphics_ColorSpace_Rgb_ToLinear_System_Single___" data-uid="Android.Graphics.ColorSpace.Rgb.ToLinear(System.Single[])">
+  ToLinear(float[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/ColorSpace.cs/#L989"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html#toLinear(float[])">https://developer.android.com/reference/android/graphics/ColorSpace.Rgb.html#toLinear(float[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float[] ToLinear(float[] arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Graphics/ColorSpace.cs/#L791" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

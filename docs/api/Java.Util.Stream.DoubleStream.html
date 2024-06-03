@@ -1,0 +1,2355 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class DoubleStream | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class DoubleStream | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/java/util/stream/DoubleStream.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Java_Util_Stream_DoubleStream.md&amp;value=---%0Auid%3A%20Java.Util.Stream.DoubleStream%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Java.Util.Stream.DoubleStream">
+
+
+
+  <h1 id="Java_Util_Stream_DoubleStream" data-uid="Java.Util.Stream.DoubleStream" class="text-break">
+Class DoubleStream  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/DoubleStream.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Java.html">Java</a>.<a class="xref" href="Java.Util.html">Util</a>.<a class="xref" href="Java.Util.Stream.html">Stream</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/java/util/stream/DoubleStream.html">https://developer.android.com/reference/java/util/stream/DoubleStream.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DoubleStream : BaseStream&lt;Double, DoubleStream&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, IDoubleStream, IBaseStream&lt;Double, DoubleStream&gt;, IAutoCloseable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Java.Lang.AutoCloseable.html">AutoCloseable</a>&gt;</div>
+      <div><a class="xref" href="Java.Lang.AutoCloseable.html">AutoCloseable</a></div>
+      <div><a class="xref" href="Java.Util.Stream.BaseStream-2.html">BaseStream</a>&lt;<a class="xref" href="Java.Lang.Double.html">Double</a>, <a class="xref" href="Java.Util.Stream.DoubleStream.html">DoubleStream</a>&gt;</div>
+      <div><span class="xref">DoubleStream</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+      <div><a class="xref" href="Java.Util.Stream.IDoubleStream.html">IDoubleStream</a></div>
+      <div><a class="xref" href="Java.Util.Stream.IBaseStream-2.html">IBaseStream</a>&lt;<a class="xref" href="Java.Lang.Double.html">Double</a>, <a class="xref" href="Java.Util.Stream.DoubleStream.html">DoubleStream</a>&gt;</div>
+      <div><a class="xref" href="Java.Lang.IAutoCloseable.html">IAutoCloseable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Java.Util.Stream.BaseStream-2.html#Java_Util_Stream_BaseStream_2_BridgeClassName">BaseStream&lt;Double, DoubleStream&gt;.BridgeClassName</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Util.Stream.BaseStream-2.html#Java_Util_Stream_BaseStream_2_IsBridgeAbstract">BaseStream&lt;Double, DoubleStream&gt;.IsBridgeAbstract</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Util.Stream.BaseStream-2.html#Java_Util_Stream_BaseStream_2_IsBridgeCloseable">BaseStream&lt;Double, DoubleStream&gt;.IsBridgeCloseable</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Util.Stream.BaseStream-2.html#Java_Util_Stream_BaseStream_2_IsBridgeInterface">BaseStream&lt;Double, DoubleStream&gt;.IsBridgeInterface</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Util.Stream.BaseStream-2.html#Java_Util_Stream_BaseStream_2_IsBridgeStatic">BaseStream&lt;Double, DoubleStream&gt;.IsBridgeStatic</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Util.Stream.BaseStream-2.html#Java_Util_Stream_BaseStream_2_IsParallel">BaseStream&lt;Double, DoubleStream&gt;.IsParallel()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Util.Stream.BaseStream-2.html#Java_Util_Stream_BaseStream_2_Iterator">BaseStream&lt;Double, DoubleStream&gt;.Iterator()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Util.Stream.BaseStream-2.html#Java_Util_Stream_BaseStream_2_Spliterator">BaseStream&lt;Double, DoubleStream&gt;.Spliterator()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Util.Stream.BaseStream-2.html#Java_Util_Stream_BaseStream_2_OnClose_Java_Lang_Runnable_">BaseStream&lt;Double, DoubleStream&gt;.OnClose(Runnable)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Util.Stream.BaseStream-2.html#Java_Util_Stream_BaseStream_2_Parallel">BaseStream&lt;Double, DoubleStream&gt;.Parallel()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Util.Stream.BaseStream-2.html#Java_Util_Stream_BaseStream_2_Sequential">BaseStream&lt;Double, DoubleStream&gt;.Sequential()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Util.Stream.BaseStream-2.html#Java_Util_Stream_BaseStream_2_Unordered">BaseStream&lt;Double, DoubleStream&gt;.Unordered()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Util.Stream.BaseStream-2.html#Java_Util_Stream_BaseStream_2_Close">BaseStream&lt;Double, DoubleStream&gt;.Close()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Lang.AutoCloseable.html#Java_Lang_AutoCloseable_Close">AutoCloseable.Close()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;AutoCloseable&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;AutoCloseable&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;AutoCloseable&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;AutoCloseable&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;AutoCloseable&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;AutoCloseable&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;AutoCloseable&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Java_Util_Stream_DoubleStream__ctor_" data-uid="Java.Util.Stream.DoubleStream.#ctor*"></a>
+
+  <h3 id="Java_Util_Stream_DoubleStream__ctor" data-uid="Java.Util.Stream.DoubleStream.#ctor">
+  DoubleStream()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/AllPackageClasses.cs/#L316"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;DoubleStream class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public DoubleStream()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Stream_DoubleStream__ctor_" data-uid="Java.Util.Stream.DoubleStream.#ctor*"></a>
+
+  <h3 id="Java_Util_Stream_DoubleStream__ctor_System_Object___" data-uid="Java.Util.Stream.DoubleStream.#ctor(System.Object[])">
+  DoubleStream(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/AllPackageClasses.cs/#L321"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;DoubleStream class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public DoubleStream(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Java_Util_Stream_DoubleStream_BridgeClassName_" data-uid="Java.Util.Stream.DoubleStream.BridgeClassName*"></a>
+
+  <h3 id="Java_Util_Stream_DoubleStream_BridgeClassName" data-uid="Java.Util.Stream.DoubleStream.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/AllPackageClasses.cs/#L329"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Stream_DoubleStream_IsBridgeAbstract_" data-uid="Java.Util.Stream.DoubleStream.IsBridgeAbstract*"></a>
+
+  <h3 id="Java_Util_Stream_DoubleStream_IsBridgeAbstract" data-uid="Java.Util.Stream.DoubleStream.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/AllPackageClasses.cs/#L333"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Stream_DoubleStream_IsBridgeCloseable_" data-uid="Java.Util.Stream.DoubleStream.IsBridgeCloseable*"></a>
+
+  <h3 id="Java_Util_Stream_DoubleStream_IsBridgeCloseable" data-uid="Java.Util.Stream.DoubleStream.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/AllPackageClasses.cs/#L337"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Stream_DoubleStream_IsBridgeInterface_" data-uid="Java.Util.Stream.DoubleStream.IsBridgeInterface*"></a>
+
+  <h3 id="Java_Util_Stream_DoubleStream_IsBridgeInterface" data-uid="Java.Util.Stream.DoubleStream.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/AllPackageClasses.cs/#L341"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Stream_DoubleStream_IsBridgeStatic_" data-uid="Java.Util.Stream.DoubleStream.IsBridgeStatic*"></a>
+
+  <h3 id="Java_Util_Stream_DoubleStream_IsBridgeStatic" data-uid="Java.Util.Stream.DoubleStream.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/AllPackageClasses.cs/#L345"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Java_Util_Stream_DoubleStream_AllMatch_" data-uid="Java.Util.Stream.DoubleStream.AllMatch*"></a>
+
+  <h3 id="Java_Util_Stream_DoubleStream_AllMatch_Java_Util_Function_DoublePredicate_" data-uid="Java.Util.Stream.DoubleStream.AllMatch(Java.Util.Function.DoublePredicate)">
+  AllMatch(DoublePredicate)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/DoubleStream.cs/#L160"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#allMatch(java.util.function.DoublePredicate)">https://developer.android.com/reference/java/util/stream/DoubleStream.html#allMatch(java.util.function.DoublePredicate)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AllMatch(DoublePredicate arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Function.DoublePredicate.html">DoublePredicate</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Function.DoublePredicate.html">DoublePredicate</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Stream_DoubleStream_AnyMatch_" data-uid="Java.Util.Stream.DoubleStream.AnyMatch*"></a>
+
+  <h3 id="Java_Util_Stream_DoubleStream_AnyMatch_Java_Util_Function_DoublePredicate_" data-uid="Java.Util.Stream.DoubleStream.AnyMatch(Java.Util.Function.DoublePredicate)">
+  AnyMatch(DoublePredicate)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/DoubleStream.cs/#L169"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#anyMatch(java.util.function.DoublePredicate)">https://developer.android.com/reference/java/util/stream/DoubleStream.html#anyMatch(java.util.function.DoublePredicate)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AnyMatch(DoublePredicate arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Function.DoublePredicate.html">DoublePredicate</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Function.DoublePredicate.html">DoublePredicate</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Stream_DoubleStream_Average_" data-uid="Java.Util.Stream.DoubleStream.Average*"></a>
+
+  <h3 id="Java_Util_Stream_DoubleStream_Average" data-uid="Java.Util.Stream.DoubleStream.Average">
+  Average()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/DoubleStream.cs/#L220"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#average()">https://developer.android.com/reference/java/util/stream/DoubleStream.html#average()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OptionalDouble Average()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.OptionalDouble.html">OptionalDouble</a></dt>
+    <dd><p><a class="xref" href="Java.Util.OptionalDouble.html">OptionalDouble</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Stream_DoubleStream_Boxed_" data-uid="Java.Util.Stream.DoubleStream.Boxed*"></a>
+
+  <h3 id="Java_Util_Stream_DoubleStream_Boxed" data-uid="Java.Util.Stream.DoubleStream.Boxed">
+  Boxed()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/DoubleStream.cs/#L358"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#boxed()">https://developer.android.com/reference/java/util/stream/DoubleStream.html#boxed()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Stream&lt;Double&gt; Boxed()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Stream.Stream-1.html">Stream</a>&lt;<a class="xref" href="Java.Lang.Double.html">Double</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Stream.Stream.html">Stream</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Stream_DoubleStream_Collect_" data-uid="Java.Util.Stream.DoubleStream.Collect*"></a>
+
+  <h3 id="Java_Util_Stream_DoubleStream_Collect__1_Java_Util_Function_Supplier___0__Java_Util_Function_ObjDoubleConsumer___0__Java_Util_Function_BiConsumer___0___0__" data-uid="Java.Util.Stream.DoubleStream.Collect``1(Java.Util.Function.Supplier{``0},Java.Util.Function.ObjDoubleConsumer{``0},Java.Util.Function.BiConsumer{``0,``0})">
+  Collect&lt;R&gt;(Supplier&lt;R&gt;, ObjDoubleConsumer&lt;R&gt;, BiConsumer&lt;R, R&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/DoubleStream.cs/#L140"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#collect(java.util.function.Supplier,java.util.function.ObjDoubleConsumer,java.util.function.BiConsumer)">https://developer.android.com/reference/java/util/stream/DoubleStream.html#collect(java.util.function.Supplier,java.util.function.ObjDoubleConsumer,java.util.function.BiConsumer)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public R Collect&lt;R&gt;(Supplier&lt;R&gt; arg0, ObjDoubleConsumer&lt;R&gt; arg1, BiConsumer&lt;R, R&gt; arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Function.Supplier-1.html">Supplier</a>&lt;R&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Function.Supplier.html">Supplier</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Util.Function.ObjDoubleConsumer-1.html">ObjDoubleConsumer</a>&lt;R&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Function.ObjDoubleConsumer.html">ObjDoubleConsumer</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Util.Function.BiConsumer-2.html">BiConsumer</a>&lt;R, R&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Function.BiConsumer.html">BiConsumer</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">R</span></dt>
+    <dd><p><code class="typeparamref">R</code></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>R</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Stream_DoubleStream_Concat_" data-uid="Java.Util.Stream.DoubleStream.Concat*"></a>
+
+  <h3 id="Java_Util_Stream_DoubleStream_Concat_Java_Util_Stream_DoubleStream_Java_Util_Stream_DoubleStream_" data-uid="Java.Util.Stream.DoubleStream.Concat(Java.Util.Stream.DoubleStream,Java.Util.Stream.DoubleStream)">
+  Concat(DoubleStream, DoubleStream)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/DoubleStream.cs/#L68"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#concat(java.util.stream.DoubleStream,java.util.stream.DoubleStream)">https://developer.android.com/reference/java/util/stream/DoubleStream.html#concat(java.util.stream.DoubleStream,java.util.stream.DoubleStream)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DoubleStream Concat(DoubleStream arg0, DoubleStream arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Stream.DoubleStream.html">DoubleStream</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Stream.DoubleStream.html">DoubleStream</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Util.Stream.DoubleStream.html">DoubleStream</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Stream.DoubleStream.html">DoubleStream</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Stream.DoubleStream.html">DoubleStream</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Stream.DoubleStream.html">DoubleStream</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Stream_DoubleStream_Count_" data-uid="Java.Util.Stream.DoubleStream.Count*"></a>
+
+  <h3 id="Java_Util_Stream_DoubleStream_Count" data-uid="Java.Util.Stream.DoubleStream.Count">
+  Count()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/DoubleStream.cs/#L366"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#count()">https://developer.android.com/reference/java/util/stream/DoubleStream.html#count()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long Count()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Stream_DoubleStream_Distinct_" data-uid="Java.Util.Stream.DoubleStream.Distinct*"></a>
+
+  <h3 id="Java_Util_Stream_DoubleStream_Distinct" data-uid="Java.Util.Stream.DoubleStream.Distinct">
+  Distinct()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/DoubleStream.cs/#L269"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#distinct()">https://developer.android.com/reference/java/util/stream/DoubleStream.html#distinct()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DoubleStream Distinct()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Stream.DoubleStream.html">DoubleStream</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Stream.DoubleStream.html">DoubleStream</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Stream_DoubleStream_DropWhile_" data-uid="Java.Util.Stream.DoubleStream.DropWhile*"></a>
+
+  <h3 id="Java_Util_Stream_DoubleStream_DropWhile_Java_Util_Function_DoublePredicate_" data-uid="Java.Util.Stream.DoubleStream.DropWhile(Java.Util.Function.DoublePredicate)">
+  DropWhile(DoublePredicate)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/DoubleStream.cs/#L423"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#dropWhile(java.util.function.DoublePredicate)">https://developer.android.com/reference/java/util/stream/DoubleStream.html#dropWhile(java.util.function.DoublePredicate)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DoubleStream DropWhile(DoublePredicate arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Function.DoublePredicate.html">DoublePredicate</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Function.DoublePredicate.html">DoublePredicate</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Stream.DoubleStream.html">DoubleStream</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Stream.DoubleStream.html">DoubleStream</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Stream_DoubleStream_Empty_" data-uid="Java.Util.Stream.DoubleStream.Empty*"></a>
+
+  <h3 id="Java_Util_Stream_DoubleStream_Empty" data-uid="Java.Util.Stream.DoubleStream.Empty">
+  Empty()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/DoubleStream.cs/#L76"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#empty()">https://developer.android.com/reference/java/util/stream/DoubleStream.html#empty()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DoubleStream Empty()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Stream.DoubleStream.html">DoubleStream</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Stream.DoubleStream.html">DoubleStream</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Stream_DoubleStream_Filter_" data-uid="Java.Util.Stream.DoubleStream.Filter*"></a>
+
+  <h3 id="Java_Util_Stream_DoubleStream_Filter_Java_Util_Function_DoublePredicate_" data-uid="Java.Util.Stream.DoubleStream.Filter(Java.Util.Function.DoublePredicate)">
+  Filter(DoublePredicate)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/DoubleStream.cs/#L278"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#filter(java.util.function.DoublePredicate)">https://developer.android.com/reference/java/util/stream/DoubleStream.html#filter(java.util.function.DoublePredicate)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DoubleStream Filter(DoublePredicate arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Function.DoublePredicate.html">DoublePredicate</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Function.DoublePredicate.html">DoublePredicate</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Stream.DoubleStream.html">DoubleStream</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Stream.DoubleStream.html">DoubleStream</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Stream_DoubleStream_FindAny_" data-uid="Java.Util.Stream.DoubleStream.FindAny*"></a>
+
+  <h3 id="Java_Util_Stream_DoubleStream_FindAny" data-uid="Java.Util.Stream.DoubleStream.FindAny">
+  FindAny()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/DoubleStream.cs/#L228"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#findAny()">https://developer.android.com/reference/java/util/stream/DoubleStream.html#findAny()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OptionalDouble FindAny()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.OptionalDouble.html">OptionalDouble</a></dt>
+    <dd><p><a class="xref" href="Java.Util.OptionalDouble.html">OptionalDouble</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Stream_DoubleStream_FindFirst_" data-uid="Java.Util.Stream.DoubleStream.FindFirst*"></a>
+
+  <h3 id="Java_Util_Stream_DoubleStream_FindFirst" data-uid="Java.Util.Stream.DoubleStream.FindFirst">
+  FindFirst()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/DoubleStream.cs/#L236"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#findFirst()">https://developer.android.com/reference/java/util/stream/DoubleStream.html#findFirst()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OptionalDouble FindFirst()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.OptionalDouble.html">OptionalDouble</a></dt>
+    <dd><p><a class="xref" href="Java.Util.OptionalDouble.html">OptionalDouble</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Stream_DoubleStream_FlatMap_" data-uid="Java.Util.Stream.DoubleStream.FlatMap*"></a>
+
+  <h3 id="Java_Util_Stream_DoubleStream_FlatMap__1_Java_Util_Function_DoubleFunction___0__" data-uid="Java.Util.Stream.DoubleStream.FlatMap``1(Java.Util.Function.DoubleFunction{``0})">
+  FlatMap&lt;Arg0ExtendsJava_Util_Stream_DoubleStream&gt;(DoubleFunction&lt;Arg0ExtendsJava_Util_Stream_DoubleStream&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/DoubleStream.cs/#L288"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#flatMap(java.util.function.DoubleFunction)">https://developer.android.com/reference/java/util/stream/DoubleStream.html#flatMap(java.util.function.DoubleFunction)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DoubleStream FlatMap&lt;Arg0ExtendsJava_Util_Stream_DoubleStream&gt;(DoubleFunction&lt;Arg0ExtendsJava_Util_Stream_DoubleStream&gt; arg0) where Arg0ExtendsJava_Util_Stream_DoubleStream : DoubleStream</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Function.DoubleFunction-1.html">DoubleFunction</a>&lt;Arg0ExtendsJava_Util_Stream_DoubleStream&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Function.DoubleFunction.html">DoubleFunction</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Stream.DoubleStream.html">DoubleStream</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Stream.DoubleStream.html">DoubleStream</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Arg0ExtendsJava_Util_Stream_DoubleStream</code></dt>
+    <dd><p><a class="xref" href="Java.Util.Stream.DoubleStream.html">DoubleStream</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Stream_DoubleStream_ForEach_" data-uid="Java.Util.Stream.DoubleStream.ForEach*"></a>
+
+  <h3 id="Java_Util_Stream_DoubleStream_ForEach_Java_Util_Function_DoubleConsumer_" data-uid="Java.Util.Stream.DoubleStream.ForEach(Java.Util.Function.DoubleConsumer)">
+  ForEach(DoubleConsumer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/DoubleStream.cs/#L374"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#forEach(java.util.function.DoubleConsumer)">https://developer.android.com/reference/java/util/stream/DoubleStream.html#forEach(java.util.function.DoubleConsumer)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ForEach(DoubleConsumer arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Function.DoubleConsumer.html">DoubleConsumer</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Function.DoubleConsumer.html">DoubleConsumer</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Stream_DoubleStream_ForEachOrdered_" data-uid="Java.Util.Stream.DoubleStream.ForEachOrdered*"></a>
+
+  <h3 id="Java_Util_Stream_DoubleStream_ForEachOrdered_Java_Util_Function_DoubleConsumer_" data-uid="Java.Util.Stream.DoubleStream.ForEachOrdered(Java.Util.Function.DoubleConsumer)">
+  ForEachOrdered(DoubleConsumer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/DoubleStream.cs/#L382"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#forEachOrdered(java.util.function.DoubleConsumer)">https://developer.android.com/reference/java/util/stream/DoubleStream.html#forEachOrdered(java.util.function.DoubleConsumer)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ForEachOrdered(DoubleConsumer arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Function.DoubleConsumer.html">DoubleConsumer</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Function.DoubleConsumer.html">DoubleConsumer</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Stream_DoubleStream_Generate_" data-uid="Java.Util.Stream.DoubleStream.Generate*"></a>
+
+  <h3 id="Java_Util_Stream_DoubleStream_Generate_Java_Util_Function_DoubleSupplier_" data-uid="Java.Util.Stream.DoubleStream.Generate(Java.Util.Function.DoubleSupplier)">
+  Generate(DoubleSupplier)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/DoubleStream.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#generate(java.util.function.DoubleSupplier)">https://developer.android.com/reference/java/util/stream/DoubleStream.html#generate(java.util.function.DoubleSupplier)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DoubleStream Generate(DoubleSupplier arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Function.DoubleSupplier.html">DoubleSupplier</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Function.DoubleSupplier.html">DoubleSupplier</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Stream.DoubleStream.html">DoubleStream</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Stream.DoubleStream.html">DoubleStream</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Stream_DoubleStream_Iterate_" data-uid="Java.Util.Stream.DoubleStream.Iterate*"></a>
+
+  <h3 id="Java_Util_Stream_DoubleStream_Iterate_System_Double_Java_Util_Function_DoublePredicate_Java_Util_Function_DoubleUnaryOperator_" data-uid="Java.Util.Stream.DoubleStream.Iterate(System.Double,Java.Util.Function.DoublePredicate,Java.Util.Function.DoubleUnaryOperator)">
+  Iterate(double, DoublePredicate, DoubleUnaryOperator)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/DoubleStream.cs/#L96"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#iterate(double,java.util.function.DoublePredicate,java.util.function.DoubleUnaryOperator)">https://developer.android.com/reference/java/util/stream/DoubleStream.html#iterate(double,java.util.function.DoublePredicate,java.util.function.DoubleUnaryOperator)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DoubleStream Iterate(double arg0, DoublePredicate arg1, DoubleUnaryOperator arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Util.Function.DoublePredicate.html">DoublePredicate</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Function.DoublePredicate.html">DoublePredicate</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Util.Function.DoubleUnaryOperator.html">DoubleUnaryOperator</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Function.DoubleUnaryOperator.html">DoubleUnaryOperator</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Stream.DoubleStream.html">DoubleStream</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Stream.DoubleStream.html">DoubleStream</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Stream_DoubleStream_Iterate_" data-uid="Java.Util.Stream.DoubleStream.Iterate*"></a>
+
+  <h3 id="Java_Util_Stream_DoubleStream_Iterate_System_Double_Java_Util_Function_DoubleUnaryOperator_" data-uid="Java.Util.Stream.DoubleStream.Iterate(System.Double,Java.Util.Function.DoubleUnaryOperator)">
+  Iterate(double, DoubleUnaryOperator)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/DoubleStream.cs/#L106"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#iterate(double,java.util.function.DoubleUnaryOperator)">https://developer.android.com/reference/java/util/stream/DoubleStream.html#iterate(double,java.util.function.DoubleUnaryOperator)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DoubleStream Iterate(double arg0, DoubleUnaryOperator arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Util.Function.DoubleUnaryOperator.html">DoubleUnaryOperator</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Function.DoubleUnaryOperator.html">DoubleUnaryOperator</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Stream.DoubleStream.html">DoubleStream</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Stream.DoubleStream.html">DoubleStream</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Stream_DoubleStream_Iterator_" data-uid="Java.Util.Stream.DoubleStream.Iterator*"></a>
+
+  <h3 id="Java_Util_Stream_DoubleStream_Iterator" data-uid="Java.Util.Stream.DoubleStream.Iterator">
+  Iterator()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/DoubleStream.cs/#L390"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#iterator()">https://developer.android.com/reference/java/util/stream/DoubleStream.html#iterator()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Iterator Iterator()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Iterator.html">Iterator</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Iterator.html">Iterator</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Stream_DoubleStream_Limit_" data-uid="Java.Util.Stream.DoubleStream.Limit*"></a>
+
+  <h3 id="Java_Util_Stream_DoubleStream_Limit_System_Int64_" data-uid="Java.Util.Stream.DoubleStream.Limit(System.Int64)">
+  Limit(long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/DoubleStream.cs/#L297"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#limit(long)">https://developer.android.com/reference/java/util/stream/DoubleStream.html#limit(long)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DoubleStream Limit(long arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Stream.DoubleStream.html">DoubleStream</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Stream.DoubleStream.html">DoubleStream</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Stream_DoubleStream_Map_" data-uid="Java.Util.Stream.DoubleStream.Map*"></a>
+
+  <h3 id="Java_Util_Stream_DoubleStream_Map_Java_Util_Function_DoubleUnaryOperator_" data-uid="Java.Util.Stream.DoubleStream.Map(Java.Util.Function.DoubleUnaryOperator)">
+  Map(DoubleUnaryOperator)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/DoubleStream.cs/#L306"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#map(java.util.function.DoubleUnaryOperator)">https://developer.android.com/reference/java/util/stream/DoubleStream.html#map(java.util.function.DoubleUnaryOperator)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DoubleStream Map(DoubleUnaryOperator arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Function.DoubleUnaryOperator.html">DoubleUnaryOperator</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Function.DoubleUnaryOperator.html">DoubleUnaryOperator</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Stream.DoubleStream.html">DoubleStream</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Stream.DoubleStream.html">DoubleStream</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Stream_DoubleStream_MapToInt_" data-uid="Java.Util.Stream.DoubleStream.MapToInt*"></a>
+
+  <h3 id="Java_Util_Stream_DoubleStream_MapToInt_Java_Util_Function_DoubleToIntFunction_" data-uid="Java.Util.Stream.DoubleStream.MapToInt(Java.Util.Function.DoubleToIntFunction)">
+  MapToInt(DoubleToIntFunction)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/DoubleStream.cs/#L341"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#mapToInt(java.util.function.DoubleToIntFunction)">https://developer.android.com/reference/java/util/stream/DoubleStream.html#mapToInt(java.util.function.DoubleToIntFunction)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IntStream MapToInt(DoubleToIntFunction arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Function.DoubleToIntFunction.html">DoubleToIntFunction</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Function.DoubleToIntFunction.html">DoubleToIntFunction</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Stream.IntStream.html">IntStream</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Stream.IntStream.html">IntStream</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Stream_DoubleStream_MapToLong_" data-uid="Java.Util.Stream.DoubleStream.MapToLong*"></a>
+
+  <h3 id="Java_Util_Stream_DoubleStream_MapToLong_Java_Util_Function_DoubleToLongFunction_" data-uid="Java.Util.Stream.DoubleStream.MapToLong(Java.Util.Function.DoubleToLongFunction)">
+  MapToLong(DoubleToLongFunction)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/DoubleStream.cs/#L350"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#mapToLong(java.util.function.DoubleToLongFunction)">https://developer.android.com/reference/java/util/stream/DoubleStream.html#mapToLong(java.util.function.DoubleToLongFunction)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LongStream MapToLong(DoubleToLongFunction arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Function.DoubleToLongFunction.html">DoubleToLongFunction</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Function.DoubleToLongFunction.html">DoubleToLongFunction</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Stream.LongStream.html">LongStream</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Stream.LongStream.html">LongStream</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Stream_DoubleStream_MapToObj_" data-uid="Java.Util.Stream.DoubleStream.MapToObj*"></a>
+
+  <h3 id="Java_Util_Stream_DoubleStream_MapToObj__2_Java_Util_Function_DoubleFunction___1__" data-uid="Java.Util.Stream.DoubleStream.MapToObj``2(Java.Util.Function.DoubleFunction{``1})">
+  MapToObj&lt;U, Arg0ExtendsU&gt;(DoubleFunction&lt;Arg0ExtendsU&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/DoubleStream.cs/#L151"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#mapToObj(java.util.function.DoubleFunction)">https://developer.android.com/reference/java/util/stream/DoubleStream.html#mapToObj(java.util.function.DoubleFunction)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Stream&lt;U&gt; MapToObj&lt;U, Arg0ExtendsU&gt;(DoubleFunction&lt;Arg0ExtendsU&gt; arg0) where Arg0ExtendsU : U</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Function.DoubleFunction-1.html">DoubleFunction</a>&lt;Arg0ExtendsU&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Function.DoubleFunction.html">DoubleFunction</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Stream.Stream-1.html">Stream</a>&lt;U&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Stream.Stream.html">Stream</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>U</code></dt>
+    <dd></dd>
+    <dt><code>Arg0ExtendsU</code></dt>
+    <dd><p><code class="typeparamref">U</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Stream_DoubleStream_Max_" data-uid="Java.Util.Stream.DoubleStream.Max*"></a>
+
+  <h3 id="Java_Util_Stream_DoubleStream_Max" data-uid="Java.Util.Stream.DoubleStream.Max">
+  Max()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/DoubleStream.cs/#L244"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#max()">https://developer.android.com/reference/java/util/stream/DoubleStream.html#max()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OptionalDouble Max()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.OptionalDouble.html">OptionalDouble</a></dt>
+    <dd><p><a class="xref" href="Java.Util.OptionalDouble.html">OptionalDouble</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Stream_DoubleStream_Min_" data-uid="Java.Util.Stream.DoubleStream.Min*"></a>
+
+  <h3 id="Java_Util_Stream_DoubleStream_Min" data-uid="Java.Util.Stream.DoubleStream.Min">
+  Min()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/DoubleStream.cs/#L252"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#min()">https://developer.android.com/reference/java/util/stream/DoubleStream.html#min()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OptionalDouble Min()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.OptionalDouble.html">OptionalDouble</a></dt>
+    <dd><p><a class="xref" href="Java.Util.OptionalDouble.html">OptionalDouble</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Stream_DoubleStream_NoneMatch_" data-uid="Java.Util.Stream.DoubleStream.NoneMatch*"></a>
+
+  <h3 id="Java_Util_Stream_DoubleStream_NoneMatch_Java_Util_Function_DoublePredicate_" data-uid="Java.Util.Stream.DoubleStream.NoneMatch(Java.Util.Function.DoublePredicate)">
+  NoneMatch(DoublePredicate)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/DoubleStream.cs/#L178"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#noneMatch(java.util.function.DoublePredicate)">https://developer.android.com/reference/java/util/stream/DoubleStream.html#noneMatch(java.util.function.DoublePredicate)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool NoneMatch(DoublePredicate arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Function.DoublePredicate.html">DoublePredicate</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Function.DoublePredicate.html">DoublePredicate</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Stream_DoubleStream_Of_" data-uid="Java.Util.Stream.DoubleStream.Of*"></a>
+
+  <h3 id="Java_Util_Stream_DoubleStream_Of_System_Double_" data-uid="Java.Util.Stream.DoubleStream.Of(System.Double)">
+  Of(double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/DoubleStream.cs/#L124"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#of(double)">https://developer.android.com/reference/java/util/stream/DoubleStream.html#of(double)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DoubleStream Of(double arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Stream.DoubleStream.html">DoubleStream</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Stream.DoubleStream.html">DoubleStream</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Stream_DoubleStream_Of_" data-uid="Java.Util.Stream.DoubleStream.Of*"></a>
+
+  <h3 id="Java_Util_Stream_DoubleStream_Of_System_Double___" data-uid="Java.Util.Stream.DoubleStream.Of(System.Double[])">
+  Of(params double[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/DoubleStream.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#of(double[])">https://developer.android.com/reference/java/util/stream/DoubleStream.html#of(double[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DoubleStream Of(params double[] arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Stream.DoubleStream.html">DoubleStream</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Stream.DoubleStream.html">DoubleStream</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Stream_DoubleStream_Parallel_" data-uid="Java.Util.Stream.DoubleStream.Parallel*"></a>
+
+  <h3 id="Java_Util_Stream_DoubleStream_Parallel" data-uid="Java.Util.Stream.DoubleStream.Parallel">
+  Parallel()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/DoubleStream.cs/#L406"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#parallel()">https://developer.android.com/reference/java/util/stream/DoubleStream.html#parallel()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BaseStream Parallel()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Stream.BaseStream.html">BaseStream</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Stream.BaseStream.html">BaseStream</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Stream_DoubleStream_Peek_" data-uid="Java.Util.Stream.DoubleStream.Peek*"></a>
+
+  <h3 id="Java_Util_Stream_DoubleStream_Peek_Java_Util_Function_DoubleConsumer_" data-uid="Java.Util.Stream.DoubleStream.Peek(Java.Util.Function.DoubleConsumer)">
+  Peek(DoubleConsumer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/DoubleStream.cs/#L315"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#peek(java.util.function.DoubleConsumer)">https://developer.android.com/reference/java/util/stream/DoubleStream.html#peek(java.util.function.DoubleConsumer)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DoubleStream Peek(DoubleConsumer arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Function.DoubleConsumer.html">DoubleConsumer</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Function.DoubleConsumer.html">DoubleConsumer</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Stream.DoubleStream.html">DoubleStream</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Stream.DoubleStream.html">DoubleStream</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Stream_DoubleStream_Reduce_" data-uid="Java.Util.Stream.DoubleStream.Reduce*"></a>
+
+  <h3 id="Java_Util_Stream_DoubleStream_Reduce_Java_Util_Function_DoubleBinaryOperator_" data-uid="Java.Util.Stream.DoubleStream.Reduce(Java.Util.Function.DoubleBinaryOperator)">
+  Reduce(DoubleBinaryOperator)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/DoubleStream.cs/#L261"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#reduce(java.util.function.DoubleBinaryOperator)">https://developer.android.com/reference/java/util/stream/DoubleStream.html#reduce(java.util.function.DoubleBinaryOperator)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OptionalDouble Reduce(DoubleBinaryOperator arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Function.DoubleBinaryOperator.html">DoubleBinaryOperator</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Function.DoubleBinaryOperator.html">DoubleBinaryOperator</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.OptionalDouble.html">OptionalDouble</a></dt>
+    <dd><p><a class="xref" href="Java.Util.OptionalDouble.html">OptionalDouble</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Stream_DoubleStream_Reduce_" data-uid="Java.Util.Stream.DoubleStream.Reduce*"></a>
+
+  <h3 id="Java_Util_Stream_DoubleStream_Reduce_System_Double_Java_Util_Function_DoubleBinaryOperator_" data-uid="Java.Util.Stream.DoubleStream.Reduce(System.Double,Java.Util.Function.DoubleBinaryOperator)">
+  Reduce(double, DoubleBinaryOperator)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/DoubleStream.cs/#L188"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#reduce(double,java.util.function.DoubleBinaryOperator)">https://developer.android.com/reference/java/util/stream/DoubleStream.html#reduce(double,java.util.function.DoubleBinaryOperator)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Reduce(double arg0, DoubleBinaryOperator arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Util.Function.DoubleBinaryOperator.html">DoubleBinaryOperator</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Function.DoubleBinaryOperator.html">DoubleBinaryOperator</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Stream_DoubleStream_Sequential_" data-uid="Java.Util.Stream.DoubleStream.Sequential*"></a>
+
+  <h3 id="Java_Util_Stream_DoubleStream_Sequential" data-uid="Java.Util.Stream.DoubleStream.Sequential">
+  Sequential()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/DoubleStream.cs/#L414"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#sequential()">https://developer.android.com/reference/java/util/stream/DoubleStream.html#sequential()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BaseStream Sequential()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Stream.BaseStream.html">BaseStream</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Stream.BaseStream.html">BaseStream</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Stream_DoubleStream_Skip_" data-uid="Java.Util.Stream.DoubleStream.Skip*"></a>
+
+  <h3 id="Java_Util_Stream_DoubleStream_Skip_System_Int64_" data-uid="Java.Util.Stream.DoubleStream.Skip(System.Int64)">
+  Skip(long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/DoubleStream.cs/#L324"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#skip(long)">https://developer.android.com/reference/java/util/stream/DoubleStream.html#skip(long)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DoubleStream Skip(long arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Stream.DoubleStream.html">DoubleStream</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Stream.DoubleStream.html">DoubleStream</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Stream_DoubleStream_Sorted_" data-uid="Java.Util.Stream.DoubleStream.Sorted*"></a>
+
+  <h3 id="Java_Util_Stream_DoubleStream_Sorted" data-uid="Java.Util.Stream.DoubleStream.Sorted">
+  Sorted()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/DoubleStream.cs/#L332"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#sorted()">https://developer.android.com/reference/java/util/stream/DoubleStream.html#sorted()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DoubleStream Sorted()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Stream.DoubleStream.html">DoubleStream</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Stream.DoubleStream.html">DoubleStream</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Stream_DoubleStream_Spliterator_" data-uid="Java.Util.Stream.DoubleStream.Spliterator*"></a>
+
+  <h3 id="Java_Util_Stream_DoubleStream_Spliterator" data-uid="Java.Util.Stream.DoubleStream.Spliterator">
+  Spliterator()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/DoubleStream.cs/#L398"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#spliterator()">https://developer.android.com/reference/java/util/stream/DoubleStream.html#spliterator()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Spliterator Spliterator()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Spliterator.html">Spliterator</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Spliterator.html">Spliterator</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Stream_DoubleStream_Sum_" data-uid="Java.Util.Stream.DoubleStream.Sum*"></a>
+
+  <h3 id="Java_Util_Stream_DoubleStream_Sum" data-uid="Java.Util.Stream.DoubleStream.Sum">
+  Sum()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/DoubleStream.cs/#L196"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#sum()">https://developer.android.com/reference/java/util/stream/DoubleStream.html#sum()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Sum()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Stream_DoubleStream_SummaryStatistics_" data-uid="Java.Util.Stream.DoubleStream.SummaryStatistics*"></a>
+
+  <h3 id="Java_Util_Stream_DoubleStream_SummaryStatistics" data-uid="Java.Util.Stream.DoubleStream.SummaryStatistics">
+  SummaryStatistics()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/DoubleStream.cs/#L212"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#summaryStatistics()">https://developer.android.com/reference/java/util/stream/DoubleStream.html#summaryStatistics()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DoubleSummaryStatistics SummaryStatistics()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.DoubleSummaryStatistics.html">DoubleSummaryStatistics</a></dt>
+    <dd><p><a class="xref" href="Java.Util.DoubleSummaryStatistics.html">DoubleSummaryStatistics</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Stream_DoubleStream_TakeWhile_" data-uid="Java.Util.Stream.DoubleStream.TakeWhile*"></a>
+
+  <h3 id="Java_Util_Stream_DoubleStream_TakeWhile_Java_Util_Function_DoublePredicate_" data-uid="Java.Util.Stream.DoubleStream.TakeWhile(Java.Util.Function.DoublePredicate)">
+  TakeWhile(DoublePredicate)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/DoubleStream.cs/#L432"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#takeWhile(java.util.function.DoublePredicate)">https://developer.android.com/reference/java/util/stream/DoubleStream.html#takeWhile(java.util.function.DoublePredicate)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DoubleStream TakeWhile(DoublePredicate arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Util.Function.DoublePredicate.html">DoublePredicate</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Function.DoublePredicate.html">DoublePredicate</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Stream.DoubleStream.html">DoubleStream</a></dt>
+    <dd><p><a class="xref" href="Java.Util.Stream.DoubleStream.html">DoubleStream</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Java_Util_Stream_DoubleStream_ToArray_" data-uid="Java.Util.Stream.DoubleStream.ToArray*"></a>
+
+  <h3 id="Java_Util_Stream_DoubleStream_ToArray" data-uid="Java.Util.Stream.DoubleStream.ToArray">
+  ToArray()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/DoubleStream.cs/#L204"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/java/util/stream/DoubleStream.html#toArray()">https://developer.android.com/reference/java/util/stream/DoubleStream.html#toArray()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double[] ToArray()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Java/Util/Stream/DoubleStream.cs/#L47" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

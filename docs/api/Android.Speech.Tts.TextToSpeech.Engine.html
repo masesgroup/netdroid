@@ -1,0 +1,1741 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class TextToSpeech.Engine | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class TextToSpeech.Engine | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_Speech_Tts_TextToSpeech_Engine.md&amp;value=---%0Auid%3A%20Android.Speech.Tts.TextToSpeech.Engine%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.Speech.Tts.TextToSpeech.Engine">
+
+
+
+  <h1 id="Android_Speech_Tts_TextToSpeech_Engine" data-uid="Android.Speech.Tts.TextToSpeech.Engine" class="text-break">
+Class TextToSpeech.Engine  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/Tts/TextToSpeech.cs/#L580"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.Speech.html">Speech</a>.<a class="xref" href="Android.Speech.Tts.html">Tts</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html">https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class TextToSpeech.Engine : JVMBridgeBase&lt;TextToSpeech.Engine&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.Speech.Tts.TextToSpeech.html">TextToSpeech</a>.<a class="xref" href="Android.Speech.Tts.TextToSpeech.Engine.html">Engine</a>&gt;</div>
+      <div><span class="xref">TextToSpeech.Engine</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TextToSpeech.Engine&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TextToSpeech.Engine&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TextToSpeech.Engine&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TextToSpeech.Engine&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TextToSpeech.Engine&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TextToSpeech.Engine&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TextToSpeech.Engine&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TextToSpeech.Engine&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;TextToSpeech.Engine&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;TextToSpeech.Engine&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;TextToSpeech.Engine&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;TextToSpeech.Engine&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TextToSpeech.Engine&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TextToSpeech.Engine&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TextToSpeech.Engine&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TextToSpeech.Engine&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;TextToSpeech.Engine&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;TextToSpeech.Engine&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;TextToSpeech.Engine&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;TextToSpeech.Engine&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TextToSpeech.Engine&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TextToSpeech.Engine&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TextToSpeech.Engine&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TextToSpeech.Engine&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;TextToSpeech.Engine&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;TextToSpeech.Engine&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;TextToSpeech.Engine&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;TextToSpeech.Engine&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TextToSpeech.Engine&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TextToSpeech.Engine&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TextToSpeech.Engine&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TextToSpeech.Engine&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TextToSpeech.Engine&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TextToSpeech.Engine&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TextToSpeech.Engine&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TextToSpeech.Engine&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TextToSpeech.Engine&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TextToSpeech.Engine&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TextToSpeech.Engine&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TextToSpeech.Engine&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TextToSpeech.Engine&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TextToSpeech.Engine&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TextToSpeech.Engine&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;TextToSpeech.Engine&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;TextToSpeech.Engine&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;TextToSpeech.Engine&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TextToSpeech.Engine&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;TextToSpeech.Engine&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;TextToSpeech.Engine&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;TextToSpeech.Engine&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_Speech_Tts_TextToSpeech_Engine__ctor_" data-uid="Android.Speech.Tts.TextToSpeech.Engine.#ctor*"></a>
+
+  <h3 id="Android_Speech_Tts_TextToSpeech_Engine__ctor" data-uid="Android.Speech.Tts.TextToSpeech.Engine.#ctor">
+  Engine()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/Tts/AllPackageClasses.cs/#L169"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Engine()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_Tts_TextToSpeech_Engine__ctor_" data-uid="Android.Speech.Tts.TextToSpeech.Engine.#ctor*"></a>
+
+  <h3 id="Android_Speech_Tts_TextToSpeech_Engine__ctor_Android_Speech_Tts_TextToSpeech_" data-uid="Android.Speech.Tts.TextToSpeech.Engine.#ctor(Android.Speech.Tts.TextToSpeech)">
+  Engine(TextToSpeech)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/Tts/TextToSpeech.cs/#L587"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#%3Cinit%3E(android.speech.tts.TextToSpeech)">https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#%3Cinit%3E(android.speech.tts.TextToSpeech)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Engine(TextToSpeech arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Speech.Tts.TextToSpeech.html">TextToSpeech</a></dt>
+    <dd><p><a class="xref" href="Android.Speech.Tts.TextToSpeech.html">TextToSpeech</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_Tts_TextToSpeech_Engine__ctor_" data-uid="Android.Speech.Tts.TextToSpeech.Engine.#ctor*"></a>
+
+  <h3 id="Android_Speech_Tts_TextToSpeech_Engine__ctor_System_Object___" data-uid="Android.Speech.Tts.TextToSpeech.Engine.#ctor(System.Object[])">
+  Engine(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/Tts/AllPackageClasses.cs/#L173"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Engine(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_Speech_Tts_TextToSpeech_Engine_ACTION_CHECK_TTS_DATA_" data-uid="Android.Speech.Tts.TextToSpeech.Engine.ACTION_CHECK_TTS_DATA*"></a>
+
+  <h3 id="Android_Speech_Tts_TextToSpeech_Engine_ACTION_CHECK_TTS_DATA" data-uid="Android.Speech.Tts.TextToSpeech.Engine.ACTION_CHECK_TTS_DATA">
+  ACTION_CHECK_TTS_DATA
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/Tts/TextToSpeech.cs/#L641"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#ACTION_CHECK_TTS_DATA">https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#ACTION_CHECK_TTS_DATA</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACTION_CHECK_TTS_DATA { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_Tts_TextToSpeech_Engine_ACTION_GET_SAMPLE_TEXT_" data-uid="Android.Speech.Tts.TextToSpeech.Engine.ACTION_GET_SAMPLE_TEXT*"></a>
+
+  <h3 id="Android_Speech_Tts_TextToSpeech_Engine_ACTION_GET_SAMPLE_TEXT" data-uid="Android.Speech.Tts.TextToSpeech.Engine.ACTION_GET_SAMPLE_TEXT">
+  ACTION_GET_SAMPLE_TEXT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/Tts/TextToSpeech.cs/#L647"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#ACTION_GET_SAMPLE_TEXT">https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#ACTION_GET_SAMPLE_TEXT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACTION_GET_SAMPLE_TEXT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_Tts_TextToSpeech_Engine_ACTION_INSTALL_TTS_DATA_" data-uid="Android.Speech.Tts.TextToSpeech.Engine.ACTION_INSTALL_TTS_DATA*"></a>
+
+  <h3 id="Android_Speech_Tts_TextToSpeech_Engine_ACTION_INSTALL_TTS_DATA" data-uid="Android.Speech.Tts.TextToSpeech.Engine.ACTION_INSTALL_TTS_DATA">
+  ACTION_INSTALL_TTS_DATA
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/Tts/TextToSpeech.cs/#L653"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#ACTION_INSTALL_TTS_DATA">https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#ACTION_INSTALL_TTS_DATA</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACTION_INSTALL_TTS_DATA { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_Tts_TextToSpeech_Engine_ACTION_TTS_DATA_INSTALLED_" data-uid="Android.Speech.Tts.TextToSpeech.Engine.ACTION_TTS_DATA_INSTALLED*"></a>
+
+  <h3 id="Android_Speech_Tts_TextToSpeech_Engine_ACTION_TTS_DATA_INSTALLED" data-uid="Android.Speech.Tts.TextToSpeech.Engine.ACTION_TTS_DATA_INSTALLED">
+  ACTION_TTS_DATA_INSTALLED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/Tts/TextToSpeech.cs/#L659"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#ACTION_TTS_DATA_INSTALLED">https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#ACTION_TTS_DATA_INSTALLED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACTION_TTS_DATA_INSTALLED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_Tts_TextToSpeech_Engine_BridgeClassName_" data-uid="Android.Speech.Tts.TextToSpeech.Engine.BridgeClassName*"></a>
+
+  <h3 id="Android_Speech_Tts_TextToSpeech_Engine_BridgeClassName" data-uid="Android.Speech.Tts.TextToSpeech.Engine.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/Tts/AllPackageClasses.cs/#L180"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_Tts_TextToSpeech_Engine_CHECK_VOICE_DATA_BAD_DATA_" data-uid="Android.Speech.Tts.TextToSpeech.Engine.CHECK_VOICE_DATA_BAD_DATA*"></a>
+
+  <h3 id="Android_Speech_Tts_TextToSpeech_Engine_CHECK_VOICE_DATA_BAD_DATA" data-uid="Android.Speech.Tts.TextToSpeech.Engine.CHECK_VOICE_DATA_BAD_DATA">
+  CHECK_VOICE_DATA_BAD_DATA
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/Tts/TextToSpeech.cs/#L602"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#CHECK_VOICE_DATA_BAD_DATA">https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#CHECK_VOICE_DATA_BAD_DATA</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static int CHECK_VOICE_DATA_BAD_DATA { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_Tts_TextToSpeech_Engine_CHECK_VOICE_DATA_FAIL_" data-uid="Android.Speech.Tts.TextToSpeech.Engine.CHECK_VOICE_DATA_FAIL*"></a>
+
+  <h3 id="Android_Speech_Tts_TextToSpeech_Engine_CHECK_VOICE_DATA_FAIL" data-uid="Android.Speech.Tts.TextToSpeech.Engine.CHECK_VOICE_DATA_FAIL">
+  CHECK_VOICE_DATA_FAIL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/Tts/TextToSpeech.cs/#L609"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#CHECK_VOICE_DATA_FAIL">https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#CHECK_VOICE_DATA_FAIL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CHECK_VOICE_DATA_FAIL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_Tts_TextToSpeech_Engine_CHECK_VOICE_DATA_MISSING_DATA_" data-uid="Android.Speech.Tts.TextToSpeech.Engine.CHECK_VOICE_DATA_MISSING_DATA*"></a>
+
+  <h3 id="Android_Speech_Tts_TextToSpeech_Engine_CHECK_VOICE_DATA_MISSING_DATA" data-uid="Android.Speech.Tts.TextToSpeech.Engine.CHECK_VOICE_DATA_MISSING_DATA">
+  CHECK_VOICE_DATA_MISSING_DATA
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/Tts/TextToSpeech.cs/#L615"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#CHECK_VOICE_DATA_MISSING_DATA">https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#CHECK_VOICE_DATA_MISSING_DATA</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static int CHECK_VOICE_DATA_MISSING_DATA { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_Tts_TextToSpeech_Engine_CHECK_VOICE_DATA_MISSING_VOLUME_" data-uid="Android.Speech.Tts.TextToSpeech.Engine.CHECK_VOICE_DATA_MISSING_VOLUME*"></a>
+
+  <h3 id="Android_Speech_Tts_TextToSpeech_Engine_CHECK_VOICE_DATA_MISSING_VOLUME" data-uid="Android.Speech.Tts.TextToSpeech.Engine.CHECK_VOICE_DATA_MISSING_VOLUME">
+  CHECK_VOICE_DATA_MISSING_VOLUME
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/Tts/TextToSpeech.cs/#L622"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#CHECK_VOICE_DATA_MISSING_VOLUME">https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#CHECK_VOICE_DATA_MISSING_VOLUME</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static int CHECK_VOICE_DATA_MISSING_VOLUME { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_Tts_TextToSpeech_Engine_CHECK_VOICE_DATA_PASS_" data-uid="Android.Speech.Tts.TextToSpeech.Engine.CHECK_VOICE_DATA_PASS*"></a>
+
+  <h3 id="Android_Speech_Tts_TextToSpeech_Engine_CHECK_VOICE_DATA_PASS" data-uid="Android.Speech.Tts.TextToSpeech.Engine.CHECK_VOICE_DATA_PASS">
+  CHECK_VOICE_DATA_PASS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/Tts/TextToSpeech.cs/#L629"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#CHECK_VOICE_DATA_PASS">https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#CHECK_VOICE_DATA_PASS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CHECK_VOICE_DATA_PASS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_Tts_TextToSpeech_Engine_DEFAULT_STREAM_" data-uid="Android.Speech.Tts.TextToSpeech.Engine.DEFAULT_STREAM*"></a>
+
+  <h3 id="Android_Speech_Tts_TextToSpeech_Engine_DEFAULT_STREAM" data-uid="Android.Speech.Tts.TextToSpeech.Engine.DEFAULT_STREAM">
+  DEFAULT_STREAM
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/Tts/TextToSpeech.cs/#L635"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#DEFAULT_STREAM">https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#DEFAULT_STREAM</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int DEFAULT_STREAM { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_Tts_TextToSpeech_Engine_EXTRA_AVAILABLE_VOICES_" data-uid="Android.Speech.Tts.TextToSpeech.Engine.EXTRA_AVAILABLE_VOICES*"></a>
+
+  <h3 id="Android_Speech_Tts_TextToSpeech_Engine_EXTRA_AVAILABLE_VOICES" data-uid="Android.Speech.Tts.TextToSpeech.Engine.EXTRA_AVAILABLE_VOICES">
+  EXTRA_AVAILABLE_VOICES
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/Tts/TextToSpeech.cs/#L665"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#EXTRA_AVAILABLE_VOICES">https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#EXTRA_AVAILABLE_VOICES</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_AVAILABLE_VOICES { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_Tts_TextToSpeech_Engine_EXTRA_CHECK_VOICE_DATA_FOR_" data-uid="Android.Speech.Tts.TextToSpeech.Engine.EXTRA_CHECK_VOICE_DATA_FOR*"></a>
+
+  <h3 id="Android_Speech_Tts_TextToSpeech_Engine_EXTRA_CHECK_VOICE_DATA_FOR" data-uid="Android.Speech.Tts.TextToSpeech.Engine.EXTRA_CHECK_VOICE_DATA_FOR">
+  EXTRA_CHECK_VOICE_DATA_FOR
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/Tts/TextToSpeech.cs/#L671"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#EXTRA_CHECK_VOICE_DATA_FOR">https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#EXTRA_CHECK_VOICE_DATA_FOR</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String EXTRA_CHECK_VOICE_DATA_FOR { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_Tts_TextToSpeech_Engine_EXTRA_SAMPLE_TEXT_" data-uid="Android.Speech.Tts.TextToSpeech.Engine.EXTRA_SAMPLE_TEXT*"></a>
+
+  <h3 id="Android_Speech_Tts_TextToSpeech_Engine_EXTRA_SAMPLE_TEXT" data-uid="Android.Speech.Tts.TextToSpeech.Engine.EXTRA_SAMPLE_TEXT">
+  EXTRA_SAMPLE_TEXT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/Tts/TextToSpeech.cs/#L678"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#EXTRA_SAMPLE_TEXT">https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#EXTRA_SAMPLE_TEXT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_SAMPLE_TEXT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_Tts_TextToSpeech_Engine_EXTRA_TTS_DATA_INSTALLED_" data-uid="Android.Speech.Tts.TextToSpeech.Engine.EXTRA_TTS_DATA_INSTALLED*"></a>
+
+  <h3 id="Android_Speech_Tts_TextToSpeech_Engine_EXTRA_TTS_DATA_INSTALLED" data-uid="Android.Speech.Tts.TextToSpeech.Engine.EXTRA_TTS_DATA_INSTALLED">
+  EXTRA_TTS_DATA_INSTALLED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/Tts/TextToSpeech.cs/#L684"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#EXTRA_TTS_DATA_INSTALLED">https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#EXTRA_TTS_DATA_INSTALLED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String EXTRA_TTS_DATA_INSTALLED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_Tts_TextToSpeech_Engine_EXTRA_UNAVAILABLE_VOICES_" data-uid="Android.Speech.Tts.TextToSpeech.Engine.EXTRA_UNAVAILABLE_VOICES*"></a>
+
+  <h3 id="Android_Speech_Tts_TextToSpeech_Engine_EXTRA_UNAVAILABLE_VOICES" data-uid="Android.Speech.Tts.TextToSpeech.Engine.EXTRA_UNAVAILABLE_VOICES">
+  EXTRA_UNAVAILABLE_VOICES
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/Tts/TextToSpeech.cs/#L691"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#EXTRA_UNAVAILABLE_VOICES">https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#EXTRA_UNAVAILABLE_VOICES</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String EXTRA_UNAVAILABLE_VOICES { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_Tts_TextToSpeech_Engine_EXTRA_VOICE_DATA_FILES_" data-uid="Android.Speech.Tts.TextToSpeech.Engine.EXTRA_VOICE_DATA_FILES*"></a>
+
+  <h3 id="Android_Speech_Tts_TextToSpeech_Engine_EXTRA_VOICE_DATA_FILES" data-uid="Android.Speech.Tts.TextToSpeech.Engine.EXTRA_VOICE_DATA_FILES">
+  EXTRA_VOICE_DATA_FILES
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/Tts/TextToSpeech.cs/#L697"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#EXTRA_VOICE_DATA_FILES">https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#EXTRA_VOICE_DATA_FILES</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String EXTRA_VOICE_DATA_FILES { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_Tts_TextToSpeech_Engine_EXTRA_VOICE_DATA_FILES_INFO_" data-uid="Android.Speech.Tts.TextToSpeech.Engine.EXTRA_VOICE_DATA_FILES_INFO*"></a>
+
+  <h3 id="Android_Speech_Tts_TextToSpeech_Engine_EXTRA_VOICE_DATA_FILES_INFO" data-uid="Android.Speech.Tts.TextToSpeech.Engine.EXTRA_VOICE_DATA_FILES_INFO">
+  EXTRA_VOICE_DATA_FILES_INFO
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/Tts/TextToSpeech.cs/#L704"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#EXTRA_VOICE_DATA_FILES_INFO">https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#EXTRA_VOICE_DATA_FILES_INFO</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String EXTRA_VOICE_DATA_FILES_INFO { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_Tts_TextToSpeech_Engine_EXTRA_VOICE_DATA_ROOT_DIRECTORY_" data-uid="Android.Speech.Tts.TextToSpeech.Engine.EXTRA_VOICE_DATA_ROOT_DIRECTORY*"></a>
+
+  <h3 id="Android_Speech_Tts_TextToSpeech_Engine_EXTRA_VOICE_DATA_ROOT_DIRECTORY" data-uid="Android.Speech.Tts.TextToSpeech.Engine.EXTRA_VOICE_DATA_ROOT_DIRECTORY">
+  EXTRA_VOICE_DATA_ROOT_DIRECTORY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/Tts/TextToSpeech.cs/#L711"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#EXTRA_VOICE_DATA_ROOT_DIRECTORY">https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#EXTRA_VOICE_DATA_ROOT_DIRECTORY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String EXTRA_VOICE_DATA_ROOT_DIRECTORY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_Tts_TextToSpeech_Engine_INTENT_ACTION_TTS_SERVICE_" data-uid="Android.Speech.Tts.TextToSpeech.Engine.INTENT_ACTION_TTS_SERVICE*"></a>
+
+  <h3 id="Android_Speech_Tts_TextToSpeech_Engine_INTENT_ACTION_TTS_SERVICE" data-uid="Android.Speech.Tts.TextToSpeech.Engine.INTENT_ACTION_TTS_SERVICE">
+  INTENT_ACTION_TTS_SERVICE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/Tts/TextToSpeech.cs/#L718"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#INTENT_ACTION_TTS_SERVICE">https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#INTENT_ACTION_TTS_SERVICE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String INTENT_ACTION_TTS_SERVICE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_Tts_TextToSpeech_Engine_IsBridgeAbstract_" data-uid="Android.Speech.Tts.TextToSpeech.Engine.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_Speech_Tts_TextToSpeech_Engine_IsBridgeAbstract" data-uid="Android.Speech.Tts.TextToSpeech.Engine.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/Tts/AllPackageClasses.cs/#L184"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_Tts_TextToSpeech_Engine_IsBridgeCloseable_" data-uid="Android.Speech.Tts.TextToSpeech.Engine.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_Speech_Tts_TextToSpeech_Engine_IsBridgeCloseable" data-uid="Android.Speech.Tts.TextToSpeech.Engine.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/Tts/AllPackageClasses.cs/#L188"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_Tts_TextToSpeech_Engine_IsBridgeInterface_" data-uid="Android.Speech.Tts.TextToSpeech.Engine.IsBridgeInterface*"></a>
+
+  <h3 id="Android_Speech_Tts_TextToSpeech_Engine_IsBridgeInterface" data-uid="Android.Speech.Tts.TextToSpeech.Engine.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/Tts/AllPackageClasses.cs/#L192"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_Tts_TextToSpeech_Engine_IsBridgeStatic_" data-uid="Android.Speech.Tts.TextToSpeech.Engine.IsBridgeStatic*"></a>
+
+  <h3 id="Android_Speech_Tts_TextToSpeech_Engine_IsBridgeStatic" data-uid="Android.Speech.Tts.TextToSpeech.Engine.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/Tts/AllPackageClasses.cs/#L196"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_Tts_TextToSpeech_Engine_KEY_FEATURE_EMBEDDED_SYNTHESIS_" data-uid="Android.Speech.Tts.TextToSpeech.Engine.KEY_FEATURE_EMBEDDED_SYNTHESIS*"></a>
+
+  <h3 id="Android_Speech_Tts_TextToSpeech_Engine_KEY_FEATURE_EMBEDDED_SYNTHESIS" data-uid="Android.Speech.Tts.TextToSpeech.Engine.KEY_FEATURE_EMBEDDED_SYNTHESIS">
+  KEY_FEATURE_EMBEDDED_SYNTHESIS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/Tts/TextToSpeech.cs/#L724"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#KEY_FEATURE_EMBEDDED_SYNTHESIS">https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#KEY_FEATURE_EMBEDDED_SYNTHESIS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String KEY_FEATURE_EMBEDDED_SYNTHESIS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_Tts_TextToSpeech_Engine_KEY_FEATURE_NETWORK_RETRIES_COUNT_" data-uid="Android.Speech.Tts.TextToSpeech.Engine.KEY_FEATURE_NETWORK_RETRIES_COUNT*"></a>
+
+  <h3 id="Android_Speech_Tts_TextToSpeech_Engine_KEY_FEATURE_NETWORK_RETRIES_COUNT" data-uid="Android.Speech.Tts.TextToSpeech.Engine.KEY_FEATURE_NETWORK_RETRIES_COUNT">
+  KEY_FEATURE_NETWORK_RETRIES_COUNT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/Tts/TextToSpeech.cs/#L731"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#KEY_FEATURE_NETWORK_RETRIES_COUNT">https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#KEY_FEATURE_NETWORK_RETRIES_COUNT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String KEY_FEATURE_NETWORK_RETRIES_COUNT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_Tts_TextToSpeech_Engine_KEY_FEATURE_NETWORK_SYNTHESIS_" data-uid="Android.Speech.Tts.TextToSpeech.Engine.KEY_FEATURE_NETWORK_SYNTHESIS*"></a>
+
+  <h3 id="Android_Speech_Tts_TextToSpeech_Engine_KEY_FEATURE_NETWORK_SYNTHESIS" data-uid="Android.Speech.Tts.TextToSpeech.Engine.KEY_FEATURE_NETWORK_SYNTHESIS">
+  KEY_FEATURE_NETWORK_SYNTHESIS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/Tts/TextToSpeech.cs/#L737"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#KEY_FEATURE_NETWORK_SYNTHESIS">https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#KEY_FEATURE_NETWORK_SYNTHESIS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static String KEY_FEATURE_NETWORK_SYNTHESIS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_Tts_TextToSpeech_Engine_KEY_FEATURE_NETWORK_TIMEOUT_MS_" data-uid="Android.Speech.Tts.TextToSpeech.Engine.KEY_FEATURE_NETWORK_TIMEOUT_MS*"></a>
+
+  <h3 id="Android_Speech_Tts_TextToSpeech_Engine_KEY_FEATURE_NETWORK_TIMEOUT_MS" data-uid="Android.Speech.Tts.TextToSpeech.Engine.KEY_FEATURE_NETWORK_TIMEOUT_MS">
+  KEY_FEATURE_NETWORK_TIMEOUT_MS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/Tts/TextToSpeech.cs/#L744"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#KEY_FEATURE_NETWORK_TIMEOUT_MS">https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#KEY_FEATURE_NETWORK_TIMEOUT_MS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String KEY_FEATURE_NETWORK_TIMEOUT_MS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_Tts_TextToSpeech_Engine_KEY_FEATURE_NOT_INSTALLED_" data-uid="Android.Speech.Tts.TextToSpeech.Engine.KEY_FEATURE_NOT_INSTALLED*"></a>
+
+  <h3 id="Android_Speech_Tts_TextToSpeech_Engine_KEY_FEATURE_NOT_INSTALLED" data-uid="Android.Speech.Tts.TextToSpeech.Engine.KEY_FEATURE_NOT_INSTALLED">
+  KEY_FEATURE_NOT_INSTALLED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/Tts/TextToSpeech.cs/#L750"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#KEY_FEATURE_NOT_INSTALLED">https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#KEY_FEATURE_NOT_INSTALLED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String KEY_FEATURE_NOT_INSTALLED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_Tts_TextToSpeech_Engine_KEY_PARAM_PAN_" data-uid="Android.Speech.Tts.TextToSpeech.Engine.KEY_PARAM_PAN*"></a>
+
+  <h3 id="Android_Speech_Tts_TextToSpeech_Engine_KEY_PARAM_PAN" data-uid="Android.Speech.Tts.TextToSpeech.Engine.KEY_PARAM_PAN">
+  KEY_PARAM_PAN
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/Tts/TextToSpeech.cs/#L756"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#KEY_PARAM_PAN">https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#KEY_PARAM_PAN</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String KEY_PARAM_PAN { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_Tts_TextToSpeech_Engine_KEY_PARAM_SESSION_ID_" data-uid="Android.Speech.Tts.TextToSpeech.Engine.KEY_PARAM_SESSION_ID*"></a>
+
+  <h3 id="Android_Speech_Tts_TextToSpeech_Engine_KEY_PARAM_SESSION_ID" data-uid="Android.Speech.Tts.TextToSpeech.Engine.KEY_PARAM_SESSION_ID">
+  KEY_PARAM_SESSION_ID
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/Tts/TextToSpeech.cs/#L762"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#KEY_PARAM_SESSION_ID">https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#KEY_PARAM_SESSION_ID</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String KEY_PARAM_SESSION_ID { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_Tts_TextToSpeech_Engine_KEY_PARAM_STREAM_" data-uid="Android.Speech.Tts.TextToSpeech.Engine.KEY_PARAM_STREAM*"></a>
+
+  <h3 id="Android_Speech_Tts_TextToSpeech_Engine_KEY_PARAM_STREAM" data-uid="Android.Speech.Tts.TextToSpeech.Engine.KEY_PARAM_STREAM">
+  KEY_PARAM_STREAM
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/Tts/TextToSpeech.cs/#L768"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#KEY_PARAM_STREAM">https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#KEY_PARAM_STREAM</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String KEY_PARAM_STREAM { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_Tts_TextToSpeech_Engine_KEY_PARAM_UTTERANCE_ID_" data-uid="Android.Speech.Tts.TextToSpeech.Engine.KEY_PARAM_UTTERANCE_ID*"></a>
+
+  <h3 id="Android_Speech_Tts_TextToSpeech_Engine_KEY_PARAM_UTTERANCE_ID" data-uid="Android.Speech.Tts.TextToSpeech.Engine.KEY_PARAM_UTTERANCE_ID">
+  KEY_PARAM_UTTERANCE_ID
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/Tts/TextToSpeech.cs/#L774"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#KEY_PARAM_UTTERANCE_ID">https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#KEY_PARAM_UTTERANCE_ID</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String KEY_PARAM_UTTERANCE_ID { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_Tts_TextToSpeech_Engine_KEY_PARAM_VOLUME_" data-uid="Android.Speech.Tts.TextToSpeech.Engine.KEY_PARAM_VOLUME*"></a>
+
+  <h3 id="Android_Speech_Tts_TextToSpeech_Engine_KEY_PARAM_VOLUME" data-uid="Android.Speech.Tts.TextToSpeech.Engine.KEY_PARAM_VOLUME">
+  KEY_PARAM_VOLUME
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/Tts/TextToSpeech.cs/#L780"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#KEY_PARAM_VOLUME">https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#KEY_PARAM_VOLUME</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String KEY_PARAM_VOLUME { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Speech_Tts_TextToSpeech_Engine_SERVICE_META_DATA_" data-uid="Android.Speech.Tts.TextToSpeech.Engine.SERVICE_META_DATA*"></a>
+
+  <h3 id="Android_Speech_Tts_TextToSpeech_Engine_SERVICE_META_DATA" data-uid="Android.Speech.Tts.TextToSpeech.Engine.SERVICE_META_DATA">
+  SERVICE_META_DATA
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/Tts/TextToSpeech.cs/#L786"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#SERVICE_META_DATA">https://developer.android.com/reference/android/speech/tts/TextToSpeech.Engine.html#SERVICE_META_DATA</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String SERVICE_META_DATA { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Speech/Tts/TextToSpeech.cs/#L580" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

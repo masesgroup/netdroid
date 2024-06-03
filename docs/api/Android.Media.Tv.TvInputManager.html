@@ -1,0 +1,2980 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class TvInputManager | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class TvInputManager | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/media/tv/TvInputManager.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_Media_Tv_TvInputManager.md&amp;value=---%0Auid%3A%20Android.Media.Tv.TvInputManager%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.Media.Tv.TvInputManager">
+
+
+
+  <h1 id="Android_Media_Tv_TvInputManager" data-uid="Android.Media.Tv.TvInputManager" class="text-break">
+Class TvInputManager  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvInputManager.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.Media.html">Media</a>.<a class="xref" href="Android.Media.Tv.html">Tv</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvInputManager.html">https://developer.android.com/reference/android/media/tv/TvInputManager.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class TvInputManager : JVMBridgeBase&lt;TvInputManager&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.Media.Tv.TvInputManager.html">TvInputManager</a>&gt;</div>
+      <div><span class="xref">TvInputManager</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TvInputManager&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TvInputManager&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TvInputManager&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TvInputManager&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TvInputManager&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TvInputManager&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TvInputManager&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TvInputManager&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;TvInputManager&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;TvInputManager&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;TvInputManager&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;TvInputManager&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TvInputManager&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TvInputManager&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TvInputManager&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TvInputManager&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;TvInputManager&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;TvInputManager&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;TvInputManager&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;TvInputManager&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TvInputManager&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TvInputManager&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TvInputManager&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TvInputManager&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;TvInputManager&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;TvInputManager&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;TvInputManager&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;TvInputManager&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TvInputManager&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TvInputManager&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TvInputManager&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TvInputManager&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TvInputManager&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TvInputManager&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TvInputManager&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TvInputManager&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TvInputManager&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TvInputManager&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TvInputManager&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TvInputManager&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TvInputManager&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TvInputManager&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TvInputManager&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;TvInputManager&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;TvInputManager&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;TvInputManager&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;TvInputManager&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;TvInputManager&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;TvInputManager&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;TvInputManager&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_Media_Tv_TvInputManager__ctor_" data-uid="Android.Media.Tv.TvInputManager.#ctor*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager__ctor" data-uid="Android.Media.Tv.TvInputManager.#ctor">
+  TvInputManager()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/AllPackageClasses.cs/#L1585"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TvInputManager()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager__ctor_" data-uid="Android.Media.Tv.TvInputManager.#ctor*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager__ctor_System_Object___" data-uid="Android.Media.Tv.TvInputManager.#ctor(System.Object[])">
+  TvInputManager(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/AllPackageClasses.cs/#L1589"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TvInputManager(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_Media_Tv_TvInputManager_ACTION_BLOCKED_RATINGS_CHANGED_" data-uid="Android.Media.Tv.TvInputManager.ACTION_BLOCKED_RATINGS_CHANGED*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_ACTION_BLOCKED_RATINGS_CHANGED" data-uid="Android.Media.Tv.TvInputManager.ACTION_BLOCKED_RATINGS_CHANGED">
+  ACTION_BLOCKED_RATINGS_CHANGED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvInputManager.cs/#L319"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#ACTION_BLOCKED_RATINGS_CHANGED">https://developer.android.com/reference/android/media/tv/TvInputManager.html#ACTION_BLOCKED_RATINGS_CHANGED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACTION_BLOCKED_RATINGS_CHANGED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_ACTION_PARENTAL_CONTROLS_ENABLED_CHANGED_" data-uid="Android.Media.Tv.TvInputManager.ACTION_PARENTAL_CONTROLS_ENABLED_CHANGED*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_ACTION_PARENTAL_CONTROLS_ENABLED_CHANGED" data-uid="Android.Media.Tv.TvInputManager.ACTION_PARENTAL_CONTROLS_ENABLED_CHANGED">
+  ACTION_PARENTAL_CONTROLS_ENABLED_CHANGED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvInputManager.cs/#L325"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#ACTION_PARENTAL_CONTROLS_ENABLED_CHANGED">https://developer.android.com/reference/android/media/tv/TvInputManager.html#ACTION_PARENTAL_CONTROLS_ENABLED_CHANGED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACTION_PARENTAL_CONTROLS_ENABLED_CHANGED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_ACTION_QUERY_CONTENT_RATING_SYSTEMS_" data-uid="Android.Media.Tv.TvInputManager.ACTION_QUERY_CONTENT_RATING_SYSTEMS*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_ACTION_QUERY_CONTENT_RATING_SYSTEMS" data-uid="Android.Media.Tv.TvInputManager.ACTION_QUERY_CONTENT_RATING_SYSTEMS">
+  ACTION_QUERY_CONTENT_RATING_SYSTEMS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvInputManager.cs/#L331"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#ACTION_QUERY_CONTENT_RATING_SYSTEMS">https://developer.android.com/reference/android/media/tv/TvInputManager.html#ACTION_QUERY_CONTENT_RATING_SYSTEMS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACTION_QUERY_CONTENT_RATING_SYSTEMS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_ACTION_SETUP_INPUTS_" data-uid="Android.Media.Tv.TvInputManager.ACTION_SETUP_INPUTS*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_ACTION_SETUP_INPUTS" data-uid="Android.Media.Tv.TvInputManager.ACTION_SETUP_INPUTS">
+  ACTION_SETUP_INPUTS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvInputManager.cs/#L337"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#ACTION_SETUP_INPUTS">https://developer.android.com/reference/android/media/tv/TvInputManager.html#ACTION_SETUP_INPUTS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACTION_SETUP_INPUTS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_ACTION_VIEW_RECORDING_SCHEDULES_" data-uid="Android.Media.Tv.TvInputManager.ACTION_VIEW_RECORDING_SCHEDULES*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_ACTION_VIEW_RECORDING_SCHEDULES" data-uid="Android.Media.Tv.TvInputManager.ACTION_VIEW_RECORDING_SCHEDULES">
+  ACTION_VIEW_RECORDING_SCHEDULES
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvInputManager.cs/#L343"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#ACTION_VIEW_RECORDING_SCHEDULES">https://developer.android.com/reference/android/media/tv/TvInputManager.html#ACTION_VIEW_RECORDING_SCHEDULES</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String ACTION_VIEW_RECORDING_SCHEDULES { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_BROADCAST_INFO_STREAM_EVENT_" data-uid="Android.Media.Tv.TvInputManager.BROADCAST_INFO_STREAM_EVENT*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_BROADCAST_INFO_STREAM_EVENT" data-uid="Android.Media.Tv.TvInputManager.BROADCAST_INFO_STREAM_EVENT">
+  BROADCAST_INFO_STREAM_EVENT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvInputManager.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#BROADCAST_INFO_STREAM_EVENT">https://developer.android.com/reference/android/media/tv/TvInputManager.html#BROADCAST_INFO_STREAM_EVENT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int BROADCAST_INFO_STREAM_EVENT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_BROADCAST_INFO_TYPE_COMMAND_" data-uid="Android.Media.Tv.TvInputManager.BROADCAST_INFO_TYPE_COMMAND*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_BROADCAST_INFO_TYPE_COMMAND" data-uid="Android.Media.Tv.TvInputManager.BROADCAST_INFO_TYPE_COMMAND">
+  BROADCAST_INFO_TYPE_COMMAND
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvInputManager.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#BROADCAST_INFO_TYPE_COMMAND">https://developer.android.com/reference/android/media/tv/TvInputManager.html#BROADCAST_INFO_TYPE_COMMAND</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int BROADCAST_INFO_TYPE_COMMAND { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_BROADCAST_INFO_TYPE_DSMCC_" data-uid="Android.Media.Tv.TvInputManager.BROADCAST_INFO_TYPE_DSMCC*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_BROADCAST_INFO_TYPE_DSMCC" data-uid="Android.Media.Tv.TvInputManager.BROADCAST_INFO_TYPE_DSMCC">
+  BROADCAST_INFO_TYPE_DSMCC
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvInputManager.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#BROADCAST_INFO_TYPE_DSMCC">https://developer.android.com/reference/android/media/tv/TvInputManager.html#BROADCAST_INFO_TYPE_DSMCC</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int BROADCAST_INFO_TYPE_DSMCC { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_BROADCAST_INFO_TYPE_PES_" data-uid="Android.Media.Tv.TvInputManager.BROADCAST_INFO_TYPE_PES*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_BROADCAST_INFO_TYPE_PES" data-uid="Android.Media.Tv.TvInputManager.BROADCAST_INFO_TYPE_PES">
+  BROADCAST_INFO_TYPE_PES
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvInputManager.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#BROADCAST_INFO_TYPE_PES">https://developer.android.com/reference/android/media/tv/TvInputManager.html#BROADCAST_INFO_TYPE_PES</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int BROADCAST_INFO_TYPE_PES { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_BROADCAST_INFO_TYPE_SECTION_" data-uid="Android.Media.Tv.TvInputManager.BROADCAST_INFO_TYPE_SECTION*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_BROADCAST_INFO_TYPE_SECTION" data-uid="Android.Media.Tv.TvInputManager.BROADCAST_INFO_TYPE_SECTION">
+  BROADCAST_INFO_TYPE_SECTION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvInputManager.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#BROADCAST_INFO_TYPE_SECTION">https://developer.android.com/reference/android/media/tv/TvInputManager.html#BROADCAST_INFO_TYPE_SECTION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int BROADCAST_INFO_TYPE_SECTION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_BROADCAST_INFO_TYPE_TABLE_" data-uid="Android.Media.Tv.TvInputManager.BROADCAST_INFO_TYPE_TABLE*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_BROADCAST_INFO_TYPE_TABLE" data-uid="Android.Media.Tv.TvInputManager.BROADCAST_INFO_TYPE_TABLE">
+  BROADCAST_INFO_TYPE_TABLE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvInputManager.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#BROADCAST_INFO_TYPE_TABLE">https://developer.android.com/reference/android/media/tv/TvInputManager.html#BROADCAST_INFO_TYPE_TABLE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int BROADCAST_INFO_TYPE_TABLE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_BROADCAST_INFO_TYPE_TIMELINE_" data-uid="Android.Media.Tv.TvInputManager.BROADCAST_INFO_TYPE_TIMELINE*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_BROADCAST_INFO_TYPE_TIMELINE" data-uid="Android.Media.Tv.TvInputManager.BROADCAST_INFO_TYPE_TIMELINE">
+  BROADCAST_INFO_TYPE_TIMELINE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvInputManager.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#BROADCAST_INFO_TYPE_TIMELINE">https://developer.android.com/reference/android/media/tv/TvInputManager.html#BROADCAST_INFO_TYPE_TIMELINE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int BROADCAST_INFO_TYPE_TIMELINE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_BROADCAST_INFO_TYPE_TS_" data-uid="Android.Media.Tv.TvInputManager.BROADCAST_INFO_TYPE_TS*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_BROADCAST_INFO_TYPE_TS" data-uid="Android.Media.Tv.TvInputManager.BROADCAST_INFO_TYPE_TS">
+  BROADCAST_INFO_TYPE_TS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvInputManager.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#BROADCAST_INFO_TYPE_TS">https://developer.android.com/reference/android/media/tv/TvInputManager.html#BROADCAST_INFO_TYPE_TS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int BROADCAST_INFO_TYPE_TS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_BridgeClassName_" data-uid="Android.Media.Tv.TvInputManager.BridgeClassName*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_BridgeClassName" data-uid="Android.Media.Tv.TvInputManager.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/AllPackageClasses.cs/#L1596"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_INPUT_STATE_CONNECTED_" data-uid="Android.Media.Tv.TvInputManager.INPUT_STATE_CONNECTED*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_INPUT_STATE_CONNECTED" data-uid="Android.Media.Tv.TvInputManager.INPUT_STATE_CONNECTED">
+  INPUT_STATE_CONNECTED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvInputManager.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#INPUT_STATE_CONNECTED">https://developer.android.com/reference/android/media/tv/TvInputManager.html#INPUT_STATE_CONNECTED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int INPUT_STATE_CONNECTED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_INPUT_STATE_CONNECTED_STANDBY_" data-uid="Android.Media.Tv.TvInputManager.INPUT_STATE_CONNECTED_STANDBY*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_INPUT_STATE_CONNECTED_STANDBY" data-uid="Android.Media.Tv.TvInputManager.INPUT_STATE_CONNECTED_STANDBY">
+  INPUT_STATE_CONNECTED_STANDBY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvInputManager.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#INPUT_STATE_CONNECTED_STANDBY">https://developer.android.com/reference/android/media/tv/TvInputManager.html#INPUT_STATE_CONNECTED_STANDBY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int INPUT_STATE_CONNECTED_STANDBY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_INPUT_STATE_DISCONNECTED_" data-uid="Android.Media.Tv.TvInputManager.INPUT_STATE_DISCONNECTED*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_INPUT_STATE_DISCONNECTED" data-uid="Android.Media.Tv.TvInputManager.INPUT_STATE_DISCONNECTED">
+  INPUT_STATE_DISCONNECTED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvInputManager.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#INPUT_STATE_DISCONNECTED">https://developer.android.com/reference/android/media/tv/TvInputManager.html#INPUT_STATE_DISCONNECTED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int INPUT_STATE_DISCONNECTED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_IsBridgeAbstract_" data-uid="Android.Media.Tv.TvInputManager.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_IsBridgeAbstract" data-uid="Android.Media.Tv.TvInputManager.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/AllPackageClasses.cs/#L1600"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_IsBridgeCloseable_" data-uid="Android.Media.Tv.TvInputManager.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_IsBridgeCloseable" data-uid="Android.Media.Tv.TvInputManager.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/AllPackageClasses.cs/#L1604"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_IsBridgeInterface_" data-uid="Android.Media.Tv.TvInputManager.IsBridgeInterface*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_IsBridgeInterface" data-uid="Android.Media.Tv.TvInputManager.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/AllPackageClasses.cs/#L1608"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_IsBridgeStatic_" data-uid="Android.Media.Tv.TvInputManager.IsBridgeStatic*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_IsBridgeStatic" data-uid="Android.Media.Tv.TvInputManager.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/AllPackageClasses.cs/#L1612"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_META_DATA_CONTENT_RATING_SYSTEMS_" data-uid="Android.Media.Tv.TvInputManager.META_DATA_CONTENT_RATING_SYSTEMS*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_META_DATA_CONTENT_RATING_SYSTEMS" data-uid="Android.Media.Tv.TvInputManager.META_DATA_CONTENT_RATING_SYSTEMS">
+  META_DATA_CONTENT_RATING_SYSTEMS
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvInputManager.cs/#L349"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#META_DATA_CONTENT_RATING_SYSTEMS">https://developer.android.com/reference/android/media/tv/TvInputManager.html#META_DATA_CONTENT_RATING_SYSTEMS</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String META_DATA_CONTENT_RATING_SYSTEMS { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_RECORDING_ERROR_INSUFFICIENT_SPACE_" data-uid="Android.Media.Tv.TvInputManager.RECORDING_ERROR_INSUFFICIENT_SPACE*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_RECORDING_ERROR_INSUFFICIENT_SPACE" data-uid="Android.Media.Tv.TvInputManager.RECORDING_ERROR_INSUFFICIENT_SPACE">
+  RECORDING_ERROR_INSUFFICIENT_SPACE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvInputManager.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#RECORDING_ERROR_INSUFFICIENT_SPACE">https://developer.android.com/reference/android/media/tv/TvInputManager.html#RECORDING_ERROR_INSUFFICIENT_SPACE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int RECORDING_ERROR_INSUFFICIENT_SPACE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_RECORDING_ERROR_RESOURCE_BUSY_" data-uid="Android.Media.Tv.TvInputManager.RECORDING_ERROR_RESOURCE_BUSY*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_RECORDING_ERROR_RESOURCE_BUSY" data-uid="Android.Media.Tv.TvInputManager.RECORDING_ERROR_RESOURCE_BUSY">
+  RECORDING_ERROR_RESOURCE_BUSY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvInputManager.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#RECORDING_ERROR_RESOURCE_BUSY">https://developer.android.com/reference/android/media/tv/TvInputManager.html#RECORDING_ERROR_RESOURCE_BUSY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int RECORDING_ERROR_RESOURCE_BUSY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_RECORDING_ERROR_UNKNOWN_" data-uid="Android.Media.Tv.TvInputManager.RECORDING_ERROR_UNKNOWN*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_RECORDING_ERROR_UNKNOWN" data-uid="Android.Media.Tv.TvInputManager.RECORDING_ERROR_UNKNOWN">
+  RECORDING_ERROR_UNKNOWN
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvInputManager.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#RECORDING_ERROR_UNKNOWN">https://developer.android.com/reference/android/media/tv/TvInputManager.html#RECORDING_ERROR_UNKNOWN</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int RECORDING_ERROR_UNKNOWN { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_SIGNAL_STRENGTH_LOST_" data-uid="Android.Media.Tv.TvInputManager.SIGNAL_STRENGTH_LOST*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_SIGNAL_STRENGTH_LOST" data-uid="Android.Media.Tv.TvInputManager.SIGNAL_STRENGTH_LOST">
+  SIGNAL_STRENGTH_LOST
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvInputManager.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#SIGNAL_STRENGTH_LOST">https://developer.android.com/reference/android/media/tv/TvInputManager.html#SIGNAL_STRENGTH_LOST</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SIGNAL_STRENGTH_LOST { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_SIGNAL_STRENGTH_STRONG_" data-uid="Android.Media.Tv.TvInputManager.SIGNAL_STRENGTH_STRONG*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_SIGNAL_STRENGTH_STRONG" data-uid="Android.Media.Tv.TvInputManager.SIGNAL_STRENGTH_STRONG">
+  SIGNAL_STRENGTH_STRONG
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvInputManager.cs/#L133"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#SIGNAL_STRENGTH_STRONG">https://developer.android.com/reference/android/media/tv/TvInputManager.html#SIGNAL_STRENGTH_STRONG</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SIGNAL_STRENGTH_STRONG { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_SIGNAL_STRENGTH_WEAK_" data-uid="Android.Media.Tv.TvInputManager.SIGNAL_STRENGTH_WEAK*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_SIGNAL_STRENGTH_WEAK" data-uid="Android.Media.Tv.TvInputManager.SIGNAL_STRENGTH_WEAK">
+  SIGNAL_STRENGTH_WEAK
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvInputManager.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#SIGNAL_STRENGTH_WEAK">https://developer.android.com/reference/android/media/tv/TvInputManager.html#SIGNAL_STRENGTH_WEAK</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SIGNAL_STRENGTH_WEAK { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_TIME_SHIFT_INVALID_TIME_" data-uid="Android.Media.Tv.TvInputManager.TIME_SHIFT_INVALID_TIME*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_TIME_SHIFT_INVALID_TIME" data-uid="Android.Media.Tv.TvInputManager.TIME_SHIFT_INVALID_TIME">
+  TIME_SHIFT_INVALID_TIME
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvInputManager.cs/#L391"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#TIME_SHIFT_INVALID_TIME">https://developer.android.com/reference/android/media/tv/TvInputManager.html#TIME_SHIFT_INVALID_TIME</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long TIME_SHIFT_INVALID_TIME { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_TIME_SHIFT_MODE_AUTO_" data-uid="Android.Media.Tv.TvInputManager.TIME_SHIFT_MODE_AUTO*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_TIME_SHIFT_MODE_AUTO" data-uid="Android.Media.Tv.TvInputManager.TIME_SHIFT_MODE_AUTO">
+  TIME_SHIFT_MODE_AUTO
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvInputManager.cs/#L145"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#TIME_SHIFT_MODE_AUTO">https://developer.android.com/reference/android/media/tv/TvInputManager.html#TIME_SHIFT_MODE_AUTO</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TIME_SHIFT_MODE_AUTO { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_TIME_SHIFT_MODE_LOCAL_" data-uid="Android.Media.Tv.TvInputManager.TIME_SHIFT_MODE_LOCAL*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_TIME_SHIFT_MODE_LOCAL" data-uid="Android.Media.Tv.TvInputManager.TIME_SHIFT_MODE_LOCAL">
+  TIME_SHIFT_MODE_LOCAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvInputManager.cs/#L151"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#TIME_SHIFT_MODE_LOCAL">https://developer.android.com/reference/android/media/tv/TvInputManager.html#TIME_SHIFT_MODE_LOCAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TIME_SHIFT_MODE_LOCAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_TIME_SHIFT_MODE_NETWORK_" data-uid="Android.Media.Tv.TvInputManager.TIME_SHIFT_MODE_NETWORK*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_TIME_SHIFT_MODE_NETWORK" data-uid="Android.Media.Tv.TvInputManager.TIME_SHIFT_MODE_NETWORK">
+  TIME_SHIFT_MODE_NETWORK
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvInputManager.cs/#L157"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#TIME_SHIFT_MODE_NETWORK">https://developer.android.com/reference/android/media/tv/TvInputManager.html#TIME_SHIFT_MODE_NETWORK</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TIME_SHIFT_MODE_NETWORK { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_TIME_SHIFT_MODE_OFF_" data-uid="Android.Media.Tv.TvInputManager.TIME_SHIFT_MODE_OFF*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_TIME_SHIFT_MODE_OFF" data-uid="Android.Media.Tv.TvInputManager.TIME_SHIFT_MODE_OFF">
+  TIME_SHIFT_MODE_OFF
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvInputManager.cs/#L163"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#TIME_SHIFT_MODE_OFF">https://developer.android.com/reference/android/media/tv/TvInputManager.html#TIME_SHIFT_MODE_OFF</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TIME_SHIFT_MODE_OFF { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_TIME_SHIFT_STATUS_AVAILABLE_" data-uid="Android.Media.Tv.TvInputManager.TIME_SHIFT_STATUS_AVAILABLE*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_TIME_SHIFT_STATUS_AVAILABLE" data-uid="Android.Media.Tv.TvInputManager.TIME_SHIFT_STATUS_AVAILABLE">
+  TIME_SHIFT_STATUS_AVAILABLE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvInputManager.cs/#L169"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#TIME_SHIFT_STATUS_AVAILABLE">https://developer.android.com/reference/android/media/tv/TvInputManager.html#TIME_SHIFT_STATUS_AVAILABLE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TIME_SHIFT_STATUS_AVAILABLE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_TIME_SHIFT_STATUS_UNAVAILABLE_" data-uid="Android.Media.Tv.TvInputManager.TIME_SHIFT_STATUS_UNAVAILABLE*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_TIME_SHIFT_STATUS_UNAVAILABLE" data-uid="Android.Media.Tv.TvInputManager.TIME_SHIFT_STATUS_UNAVAILABLE">
+  TIME_SHIFT_STATUS_UNAVAILABLE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvInputManager.cs/#L175"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#TIME_SHIFT_STATUS_UNAVAILABLE">https://developer.android.com/reference/android/media/tv/TvInputManager.html#TIME_SHIFT_STATUS_UNAVAILABLE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TIME_SHIFT_STATUS_UNAVAILABLE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_TIME_SHIFT_STATUS_UNKNOWN_" data-uid="Android.Media.Tv.TvInputManager.TIME_SHIFT_STATUS_UNKNOWN*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_TIME_SHIFT_STATUS_UNKNOWN" data-uid="Android.Media.Tv.TvInputManager.TIME_SHIFT_STATUS_UNKNOWN">
+  TIME_SHIFT_STATUS_UNKNOWN
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvInputManager.cs/#L181"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#TIME_SHIFT_STATUS_UNKNOWN">https://developer.android.com/reference/android/media/tv/TvInputManager.html#TIME_SHIFT_STATUS_UNKNOWN</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TIME_SHIFT_STATUS_UNKNOWN { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_TIME_SHIFT_STATUS_UNSUPPORTED_" data-uid="Android.Media.Tv.TvInputManager.TIME_SHIFT_STATUS_UNSUPPORTED*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_TIME_SHIFT_STATUS_UNSUPPORTED" data-uid="Android.Media.Tv.TvInputManager.TIME_SHIFT_STATUS_UNSUPPORTED">
+  TIME_SHIFT_STATUS_UNSUPPORTED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvInputManager.cs/#L187"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#TIME_SHIFT_STATUS_UNSUPPORTED">https://developer.android.com/reference/android/media/tv/TvInputManager.html#TIME_SHIFT_STATUS_UNSUPPORTED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TIME_SHIFT_STATUS_UNSUPPORTED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_TV_MESSAGE_GROUP_ID_NONE_" data-uid="Android.Media.Tv.TvInputManager.TV_MESSAGE_GROUP_ID_NONE*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_TV_MESSAGE_GROUP_ID_NONE" data-uid="Android.Media.Tv.TvInputManager.TV_MESSAGE_GROUP_ID_NONE">
+  TV_MESSAGE_GROUP_ID_NONE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvInputManager.cs/#L397"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#TV_MESSAGE_GROUP_ID_NONE">https://developer.android.com/reference/android/media/tv/TvInputManager.html#TV_MESSAGE_GROUP_ID_NONE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long TV_MESSAGE_GROUP_ID_NONE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_TV_MESSAGE_KEY_GROUP_ID_" data-uid="Android.Media.Tv.TvInputManager.TV_MESSAGE_KEY_GROUP_ID*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_TV_MESSAGE_KEY_GROUP_ID" data-uid="Android.Media.Tv.TvInputManager.TV_MESSAGE_KEY_GROUP_ID">
+  TV_MESSAGE_KEY_GROUP_ID
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvInputManager.cs/#L355"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#TV_MESSAGE_KEY_GROUP_ID">https://developer.android.com/reference/android/media/tv/TvInputManager.html#TV_MESSAGE_KEY_GROUP_ID</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String TV_MESSAGE_KEY_GROUP_ID { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_TV_MESSAGE_KEY_RAW_DATA_" data-uid="Android.Media.Tv.TvInputManager.TV_MESSAGE_KEY_RAW_DATA*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_TV_MESSAGE_KEY_RAW_DATA" data-uid="Android.Media.Tv.TvInputManager.TV_MESSAGE_KEY_RAW_DATA">
+  TV_MESSAGE_KEY_RAW_DATA
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvInputManager.cs/#L361"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#TV_MESSAGE_KEY_RAW_DATA">https://developer.android.com/reference/android/media/tv/TvInputManager.html#TV_MESSAGE_KEY_RAW_DATA</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String TV_MESSAGE_KEY_RAW_DATA { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_TV_MESSAGE_KEY_STREAM_ID_" data-uid="Android.Media.Tv.TvInputManager.TV_MESSAGE_KEY_STREAM_ID*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_TV_MESSAGE_KEY_STREAM_ID" data-uid="Android.Media.Tv.TvInputManager.TV_MESSAGE_KEY_STREAM_ID">
+  TV_MESSAGE_KEY_STREAM_ID
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvInputManager.cs/#L367"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#TV_MESSAGE_KEY_STREAM_ID">https://developer.android.com/reference/android/media/tv/TvInputManager.html#TV_MESSAGE_KEY_STREAM_ID</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String TV_MESSAGE_KEY_STREAM_ID { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_TV_MESSAGE_KEY_SUBTYPE_" data-uid="Android.Media.Tv.TvInputManager.TV_MESSAGE_KEY_SUBTYPE*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_TV_MESSAGE_KEY_SUBTYPE" data-uid="Android.Media.Tv.TvInputManager.TV_MESSAGE_KEY_SUBTYPE">
+  TV_MESSAGE_KEY_SUBTYPE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvInputManager.cs/#L373"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#TV_MESSAGE_KEY_SUBTYPE">https://developer.android.com/reference/android/media/tv/TvInputManager.html#TV_MESSAGE_KEY_SUBTYPE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String TV_MESSAGE_KEY_SUBTYPE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_TV_MESSAGE_SUBTYPE_CC_608E_" data-uid="Android.Media.Tv.TvInputManager.TV_MESSAGE_SUBTYPE_CC_608E*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_TV_MESSAGE_SUBTYPE_CC_608E" data-uid="Android.Media.Tv.TvInputManager.TV_MESSAGE_SUBTYPE_CC_608E">
+  TV_MESSAGE_SUBTYPE_CC_608E
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvInputManager.cs/#L379"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#TV_MESSAGE_SUBTYPE_CC_608E">https://developer.android.com/reference/android/media/tv/TvInputManager.html#TV_MESSAGE_SUBTYPE_CC_608E</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String TV_MESSAGE_SUBTYPE_CC_608E { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_TV_MESSAGE_SUBTYPE_WATERMARKING_A335_" data-uid="Android.Media.Tv.TvInputManager.TV_MESSAGE_SUBTYPE_WATERMARKING_A335*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_TV_MESSAGE_SUBTYPE_WATERMARKING_A335" data-uid="Android.Media.Tv.TvInputManager.TV_MESSAGE_SUBTYPE_WATERMARKING_A335">
+  TV_MESSAGE_SUBTYPE_WATERMARKING_A335
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvInputManager.cs/#L385"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#TV_MESSAGE_SUBTYPE_WATERMARKING_A335">https://developer.android.com/reference/android/media/tv/TvInputManager.html#TV_MESSAGE_SUBTYPE_WATERMARKING_A335</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String TV_MESSAGE_SUBTYPE_WATERMARKING_A335 { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_TV_MESSAGE_TYPE_CLOSED_CAPTION_" data-uid="Android.Media.Tv.TvInputManager.TV_MESSAGE_TYPE_CLOSED_CAPTION*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_TV_MESSAGE_TYPE_CLOSED_CAPTION" data-uid="Android.Media.Tv.TvInputManager.TV_MESSAGE_TYPE_CLOSED_CAPTION">
+  TV_MESSAGE_TYPE_CLOSED_CAPTION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvInputManager.cs/#L193"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#TV_MESSAGE_TYPE_CLOSED_CAPTION">https://developer.android.com/reference/android/media/tv/TvInputManager.html#TV_MESSAGE_TYPE_CLOSED_CAPTION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TV_MESSAGE_TYPE_CLOSED_CAPTION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_TV_MESSAGE_TYPE_OTHER_" data-uid="Android.Media.Tv.TvInputManager.TV_MESSAGE_TYPE_OTHER*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_TV_MESSAGE_TYPE_OTHER" data-uid="Android.Media.Tv.TvInputManager.TV_MESSAGE_TYPE_OTHER">
+  TV_MESSAGE_TYPE_OTHER
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvInputManager.cs/#L199"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#TV_MESSAGE_TYPE_OTHER">https://developer.android.com/reference/android/media/tv/TvInputManager.html#TV_MESSAGE_TYPE_OTHER</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TV_MESSAGE_TYPE_OTHER { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_TV_MESSAGE_TYPE_WATERMARK_" data-uid="Android.Media.Tv.TvInputManager.TV_MESSAGE_TYPE_WATERMARK*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_TV_MESSAGE_TYPE_WATERMARK" data-uid="Android.Media.Tv.TvInputManager.TV_MESSAGE_TYPE_WATERMARK">
+  TV_MESSAGE_TYPE_WATERMARK
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvInputManager.cs/#L205"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#TV_MESSAGE_TYPE_WATERMARK">https://developer.android.com/reference/android/media/tv/TvInputManager.html#TV_MESSAGE_TYPE_WATERMARK</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int TV_MESSAGE_TYPE_WATERMARK { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_VIDEO_UNAVAILABLE_REASON_AUDIO_ONLY_" data-uid="Android.Media.Tv.TvInputManager.VIDEO_UNAVAILABLE_REASON_AUDIO_ONLY*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_VIDEO_UNAVAILABLE_REASON_AUDIO_ONLY" data-uid="Android.Media.Tv.TvInputManager.VIDEO_UNAVAILABLE_REASON_AUDIO_ONLY">
+  VIDEO_UNAVAILABLE_REASON_AUDIO_ONLY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvInputManager.cs/#L211"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#VIDEO_UNAVAILABLE_REASON_AUDIO_ONLY">https://developer.android.com/reference/android/media/tv/TvInputManager.html#VIDEO_UNAVAILABLE_REASON_AUDIO_ONLY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int VIDEO_UNAVAILABLE_REASON_AUDIO_ONLY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_VIDEO_UNAVAILABLE_REASON_BUFFERING_" data-uid="Android.Media.Tv.TvInputManager.VIDEO_UNAVAILABLE_REASON_BUFFERING*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_VIDEO_UNAVAILABLE_REASON_BUFFERING" data-uid="Android.Media.Tv.TvInputManager.VIDEO_UNAVAILABLE_REASON_BUFFERING">
+  VIDEO_UNAVAILABLE_REASON_BUFFERING
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvInputManager.cs/#L217"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#VIDEO_UNAVAILABLE_REASON_BUFFERING">https://developer.android.com/reference/android/media/tv/TvInputManager.html#VIDEO_UNAVAILABLE_REASON_BUFFERING</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int VIDEO_UNAVAILABLE_REASON_BUFFERING { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_VIDEO_UNAVAILABLE_REASON_CAS_BLACKOUT_" data-uid="Android.Media.Tv.TvInputManager.VIDEO_UNAVAILABLE_REASON_CAS_BLACKOUT*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_VIDEO_UNAVAILABLE_REASON_CAS_BLACKOUT" data-uid="Android.Media.Tv.TvInputManager.VIDEO_UNAVAILABLE_REASON_CAS_BLACKOUT">
+  VIDEO_UNAVAILABLE_REASON_CAS_BLACKOUT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvInputManager.cs/#L223"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#VIDEO_UNAVAILABLE_REASON_CAS_BLACKOUT">https://developer.android.com/reference/android/media/tv/TvInputManager.html#VIDEO_UNAVAILABLE_REASON_CAS_BLACKOUT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int VIDEO_UNAVAILABLE_REASON_CAS_BLACKOUT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_VIDEO_UNAVAILABLE_REASON_CAS_CARD_INVALID_" data-uid="Android.Media.Tv.TvInputManager.VIDEO_UNAVAILABLE_REASON_CAS_CARD_INVALID*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_VIDEO_UNAVAILABLE_REASON_CAS_CARD_INVALID" data-uid="Android.Media.Tv.TvInputManager.VIDEO_UNAVAILABLE_REASON_CAS_CARD_INVALID">
+  VIDEO_UNAVAILABLE_REASON_CAS_CARD_INVALID
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvInputManager.cs/#L229"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#VIDEO_UNAVAILABLE_REASON_CAS_CARD_INVALID">https://developer.android.com/reference/android/media/tv/TvInputManager.html#VIDEO_UNAVAILABLE_REASON_CAS_CARD_INVALID</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int VIDEO_UNAVAILABLE_REASON_CAS_CARD_INVALID { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_VIDEO_UNAVAILABLE_REASON_CAS_CARD_MUTE_" data-uid="Android.Media.Tv.TvInputManager.VIDEO_UNAVAILABLE_REASON_CAS_CARD_MUTE*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_VIDEO_UNAVAILABLE_REASON_CAS_CARD_MUTE" data-uid="Android.Media.Tv.TvInputManager.VIDEO_UNAVAILABLE_REASON_CAS_CARD_MUTE">
+  VIDEO_UNAVAILABLE_REASON_CAS_CARD_MUTE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvInputManager.cs/#L235"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#VIDEO_UNAVAILABLE_REASON_CAS_CARD_MUTE">https://developer.android.com/reference/android/media/tv/TvInputManager.html#VIDEO_UNAVAILABLE_REASON_CAS_CARD_MUTE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int VIDEO_UNAVAILABLE_REASON_CAS_CARD_MUTE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_VIDEO_UNAVAILABLE_REASON_CAS_INSUFFICIENT_OUTPUT_PROTECTION_" data-uid="Android.Media.Tv.TvInputManager.VIDEO_UNAVAILABLE_REASON_CAS_INSUFFICIENT_OUTPUT_PROTECTION*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_VIDEO_UNAVAILABLE_REASON_CAS_INSUFFICIENT_OUTPUT_PROTECTION" data-uid="Android.Media.Tv.TvInputManager.VIDEO_UNAVAILABLE_REASON_CAS_INSUFFICIENT_OUTPUT_PROTECTION">
+  VIDEO_UNAVAILABLE_REASON_CAS_INSUFFICIENT_OUTPUT_PROTECTION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvInputManager.cs/#L241"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#VIDEO_UNAVAILABLE_REASON_CAS_INSUFFICIENT_OUTPUT_PROTECTION">https://developer.android.com/reference/android/media/tv/TvInputManager.html#VIDEO_UNAVAILABLE_REASON_CAS_INSUFFICIENT_OUTPUT_PROTECTION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int VIDEO_UNAVAILABLE_REASON_CAS_INSUFFICIENT_OUTPUT_PROTECTION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_VIDEO_UNAVAILABLE_REASON_CAS_LICENSE_EXPIRED_" data-uid="Android.Media.Tv.TvInputManager.VIDEO_UNAVAILABLE_REASON_CAS_LICENSE_EXPIRED*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_VIDEO_UNAVAILABLE_REASON_CAS_LICENSE_EXPIRED" data-uid="Android.Media.Tv.TvInputManager.VIDEO_UNAVAILABLE_REASON_CAS_LICENSE_EXPIRED">
+  VIDEO_UNAVAILABLE_REASON_CAS_LICENSE_EXPIRED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvInputManager.cs/#L247"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#VIDEO_UNAVAILABLE_REASON_CAS_LICENSE_EXPIRED">https://developer.android.com/reference/android/media/tv/TvInputManager.html#VIDEO_UNAVAILABLE_REASON_CAS_LICENSE_EXPIRED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int VIDEO_UNAVAILABLE_REASON_CAS_LICENSE_EXPIRED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_VIDEO_UNAVAILABLE_REASON_CAS_NEED_ACTIVATION_" data-uid="Android.Media.Tv.TvInputManager.VIDEO_UNAVAILABLE_REASON_CAS_NEED_ACTIVATION*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_VIDEO_UNAVAILABLE_REASON_CAS_NEED_ACTIVATION" data-uid="Android.Media.Tv.TvInputManager.VIDEO_UNAVAILABLE_REASON_CAS_NEED_ACTIVATION">
+  VIDEO_UNAVAILABLE_REASON_CAS_NEED_ACTIVATION
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvInputManager.cs/#L253"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#VIDEO_UNAVAILABLE_REASON_CAS_NEED_ACTIVATION">https://developer.android.com/reference/android/media/tv/TvInputManager.html#VIDEO_UNAVAILABLE_REASON_CAS_NEED_ACTIVATION</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int VIDEO_UNAVAILABLE_REASON_CAS_NEED_ACTIVATION { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_VIDEO_UNAVAILABLE_REASON_CAS_NEED_PAIRING_" data-uid="Android.Media.Tv.TvInputManager.VIDEO_UNAVAILABLE_REASON_CAS_NEED_PAIRING*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_VIDEO_UNAVAILABLE_REASON_CAS_NEED_PAIRING" data-uid="Android.Media.Tv.TvInputManager.VIDEO_UNAVAILABLE_REASON_CAS_NEED_PAIRING">
+  VIDEO_UNAVAILABLE_REASON_CAS_NEED_PAIRING
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvInputManager.cs/#L259"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#VIDEO_UNAVAILABLE_REASON_CAS_NEED_PAIRING">https://developer.android.com/reference/android/media/tv/TvInputManager.html#VIDEO_UNAVAILABLE_REASON_CAS_NEED_PAIRING</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int VIDEO_UNAVAILABLE_REASON_CAS_NEED_PAIRING { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_VIDEO_UNAVAILABLE_REASON_CAS_NO_CARD_" data-uid="Android.Media.Tv.TvInputManager.VIDEO_UNAVAILABLE_REASON_CAS_NO_CARD*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_VIDEO_UNAVAILABLE_REASON_CAS_NO_CARD" data-uid="Android.Media.Tv.TvInputManager.VIDEO_UNAVAILABLE_REASON_CAS_NO_CARD">
+  VIDEO_UNAVAILABLE_REASON_CAS_NO_CARD
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvInputManager.cs/#L265"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#VIDEO_UNAVAILABLE_REASON_CAS_NO_CARD">https://developer.android.com/reference/android/media/tv/TvInputManager.html#VIDEO_UNAVAILABLE_REASON_CAS_NO_CARD</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int VIDEO_UNAVAILABLE_REASON_CAS_NO_CARD { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_VIDEO_UNAVAILABLE_REASON_CAS_PVR_RECORDING_NOT_ALLOWED_" data-uid="Android.Media.Tv.TvInputManager.VIDEO_UNAVAILABLE_REASON_CAS_PVR_RECORDING_NOT_ALLOWED*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_VIDEO_UNAVAILABLE_REASON_CAS_PVR_RECORDING_NOT_ALLOWED" data-uid="Android.Media.Tv.TvInputManager.VIDEO_UNAVAILABLE_REASON_CAS_PVR_RECORDING_NOT_ALLOWED">
+  VIDEO_UNAVAILABLE_REASON_CAS_PVR_RECORDING_NOT_ALLOWED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvInputManager.cs/#L271"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#VIDEO_UNAVAILABLE_REASON_CAS_PVR_RECORDING_NOT_ALLOWED">https://developer.android.com/reference/android/media/tv/TvInputManager.html#VIDEO_UNAVAILABLE_REASON_CAS_PVR_RECORDING_NOT_ALLOWED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int VIDEO_UNAVAILABLE_REASON_CAS_PVR_RECORDING_NOT_ALLOWED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_VIDEO_UNAVAILABLE_REASON_CAS_REBOOTING_" data-uid="Android.Media.Tv.TvInputManager.VIDEO_UNAVAILABLE_REASON_CAS_REBOOTING*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_VIDEO_UNAVAILABLE_REASON_CAS_REBOOTING" data-uid="Android.Media.Tv.TvInputManager.VIDEO_UNAVAILABLE_REASON_CAS_REBOOTING">
+  VIDEO_UNAVAILABLE_REASON_CAS_REBOOTING
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvInputManager.cs/#L277"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#VIDEO_UNAVAILABLE_REASON_CAS_REBOOTING">https://developer.android.com/reference/android/media/tv/TvInputManager.html#VIDEO_UNAVAILABLE_REASON_CAS_REBOOTING</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int VIDEO_UNAVAILABLE_REASON_CAS_REBOOTING { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_VIDEO_UNAVAILABLE_REASON_CAS_UNKNOWN_" data-uid="Android.Media.Tv.TvInputManager.VIDEO_UNAVAILABLE_REASON_CAS_UNKNOWN*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_VIDEO_UNAVAILABLE_REASON_CAS_UNKNOWN" data-uid="Android.Media.Tv.TvInputManager.VIDEO_UNAVAILABLE_REASON_CAS_UNKNOWN">
+  VIDEO_UNAVAILABLE_REASON_CAS_UNKNOWN
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvInputManager.cs/#L283"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#VIDEO_UNAVAILABLE_REASON_CAS_UNKNOWN">https://developer.android.com/reference/android/media/tv/TvInputManager.html#VIDEO_UNAVAILABLE_REASON_CAS_UNKNOWN</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int VIDEO_UNAVAILABLE_REASON_CAS_UNKNOWN { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_VIDEO_UNAVAILABLE_REASON_INSUFFICIENT_RESOURCE_" data-uid="Android.Media.Tv.TvInputManager.VIDEO_UNAVAILABLE_REASON_INSUFFICIENT_RESOURCE*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_VIDEO_UNAVAILABLE_REASON_INSUFFICIENT_RESOURCE" data-uid="Android.Media.Tv.TvInputManager.VIDEO_UNAVAILABLE_REASON_INSUFFICIENT_RESOURCE">
+  VIDEO_UNAVAILABLE_REASON_INSUFFICIENT_RESOURCE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvInputManager.cs/#L289"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#VIDEO_UNAVAILABLE_REASON_INSUFFICIENT_RESOURCE">https://developer.android.com/reference/android/media/tv/TvInputManager.html#VIDEO_UNAVAILABLE_REASON_INSUFFICIENT_RESOURCE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int VIDEO_UNAVAILABLE_REASON_INSUFFICIENT_RESOURCE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_VIDEO_UNAVAILABLE_REASON_NOT_CONNECTED_" data-uid="Android.Media.Tv.TvInputManager.VIDEO_UNAVAILABLE_REASON_NOT_CONNECTED*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_VIDEO_UNAVAILABLE_REASON_NOT_CONNECTED" data-uid="Android.Media.Tv.TvInputManager.VIDEO_UNAVAILABLE_REASON_NOT_CONNECTED">
+  VIDEO_UNAVAILABLE_REASON_NOT_CONNECTED
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvInputManager.cs/#L295"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#VIDEO_UNAVAILABLE_REASON_NOT_CONNECTED">https://developer.android.com/reference/android/media/tv/TvInputManager.html#VIDEO_UNAVAILABLE_REASON_NOT_CONNECTED</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int VIDEO_UNAVAILABLE_REASON_NOT_CONNECTED { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_VIDEO_UNAVAILABLE_REASON_TUNING_" data-uid="Android.Media.Tv.TvInputManager.VIDEO_UNAVAILABLE_REASON_TUNING*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_VIDEO_UNAVAILABLE_REASON_TUNING" data-uid="Android.Media.Tv.TvInputManager.VIDEO_UNAVAILABLE_REASON_TUNING">
+  VIDEO_UNAVAILABLE_REASON_TUNING
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvInputManager.cs/#L301"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#VIDEO_UNAVAILABLE_REASON_TUNING">https://developer.android.com/reference/android/media/tv/TvInputManager.html#VIDEO_UNAVAILABLE_REASON_TUNING</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int VIDEO_UNAVAILABLE_REASON_TUNING { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_VIDEO_UNAVAILABLE_REASON_UNKNOWN_" data-uid="Android.Media.Tv.TvInputManager.VIDEO_UNAVAILABLE_REASON_UNKNOWN*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_VIDEO_UNAVAILABLE_REASON_UNKNOWN" data-uid="Android.Media.Tv.TvInputManager.VIDEO_UNAVAILABLE_REASON_UNKNOWN">
+  VIDEO_UNAVAILABLE_REASON_UNKNOWN
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvInputManager.cs/#L307"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#VIDEO_UNAVAILABLE_REASON_UNKNOWN">https://developer.android.com/reference/android/media/tv/TvInputManager.html#VIDEO_UNAVAILABLE_REASON_UNKNOWN</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int VIDEO_UNAVAILABLE_REASON_UNKNOWN { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_VIDEO_UNAVAILABLE_REASON_WEAK_SIGNAL_" data-uid="Android.Media.Tv.TvInputManager.VIDEO_UNAVAILABLE_REASON_WEAK_SIGNAL*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_VIDEO_UNAVAILABLE_REASON_WEAK_SIGNAL" data-uid="Android.Media.Tv.TvInputManager.VIDEO_UNAVAILABLE_REASON_WEAK_SIGNAL">
+  VIDEO_UNAVAILABLE_REASON_WEAK_SIGNAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvInputManager.cs/#L313"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#VIDEO_UNAVAILABLE_REASON_WEAK_SIGNAL">https://developer.android.com/reference/android/media/tv/TvInputManager.html#VIDEO_UNAVAILABLE_REASON_WEAK_SIGNAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int VIDEO_UNAVAILABLE_REASON_WEAK_SIGNAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_Media_Tv_TvInputManager_GetBlockedRatings_" data-uid="Android.Media.Tv.TvInputManager.GetBlockedRatings*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_GetBlockedRatings" data-uid="Android.Media.Tv.TvInputManager.GetBlockedRatings">
+  GetBlockedRatings()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvInputManager.cs/#L447"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#getBlockedRatings()">https://developer.android.com/reference/android/media/tv/TvInputManager.html#getBlockedRatings()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;TvContentRating&gt; GetBlockedRatings()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Android.Media.Tv.TvContentRating.html">TvContentRating</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.List.html">List</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_GetInputState_" data-uid="Android.Media.Tv.TvInputManager.GetInputState*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_GetInputState_Java_Lang_String_" data-uid="Android.Media.Tv.TvInputManager.GetInputState(Java.Lang.String)">
+  GetInputState(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvInputManager.cs/#L439"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#getInputState(java.lang.String)">https://developer.android.com/reference/android/media/tv/TvInputManager.html#getInputState(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetInputState(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_GetTvInputInfo_" data-uid="Android.Media.Tv.TvInputManager.GetTvInputInfo*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_GetTvInputInfo_Java_Lang_String_" data-uid="Android.Media.Tv.TvInputManager.GetTvInputInfo(Java.Lang.String)">
+  GetTvInputInfo(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvInputManager.cs/#L413"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#getTvInputInfo(java.lang.String)">https://developer.android.com/reference/android/media/tv/TvInputManager.html#getTvInputInfo(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TvInputInfo GetTvInputInfo(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Media.Tv.TvInputInfo.html">TvInputInfo</a></dt>
+    <dd><p><a class="xref" href="Android.Media.Tv.TvInputInfo.html">TvInputInfo</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_GetTvInputList_" data-uid="Android.Media.Tv.TvInputManager.GetTvInputList*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_GetTvInputList" data-uid="Android.Media.Tv.TvInputManager.GetTvInputList">
+  GetTvInputList()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvInputManager.cs/#L455"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#getTvInputList()">https://developer.android.com/reference/android/media/tv/TvInputManager.html#getTvInputList()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;TvInputInfo&gt; GetTvInputList()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.List-1.html">List</a>&lt;<a class="xref" href="Android.Media.Tv.TvInputInfo.html">TvInputInfo</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.List.html">List</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_IsParentalControlsEnabled_" data-uid="Android.Media.Tv.TvInputManager.IsParentalControlsEnabled*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_IsParentalControlsEnabled" data-uid="Android.Media.Tv.TvInputManager.IsParentalControlsEnabled">
+  IsParentalControlsEnabled()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvInputManager.cs/#L421"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#isParentalControlsEnabled()">https://developer.android.com/reference/android/media/tv/TvInputManager.html#isParentalControlsEnabled()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsParentalControlsEnabled()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_IsRatingBlocked_" data-uid="Android.Media.Tv.TvInputManager.IsRatingBlocked*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_IsRatingBlocked_Android_Media_Tv_TvContentRating_" data-uid="Android.Media.Tv.TvInputManager.IsRatingBlocked(Android.Media.Tv.TvContentRating)">
+  IsRatingBlocked(TvContentRating)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvInputManager.cs/#L430"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#isRatingBlocked(android.media.tv.TvContentRating)">https://developer.android.com/reference/android/media/tv/TvInputManager.html#isRatingBlocked(android.media.tv.TvContentRating)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsRatingBlocked(TvContentRating arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Media.Tv.TvContentRating.html">TvContentRating</a></dt>
+    <dd><p><a class="xref" href="Android.Media.Tv.TvContentRating.html">TvContentRating</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_RegisterCallback_" data-uid="Android.Media.Tv.TvInputManager.RegisterCallback*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_RegisterCallback_Android_Media_Tv_TvInputManager_TvInputCallback_Android_Os_Handler_" data-uid="Android.Media.Tv.TvInputManager.RegisterCallback(Android.Media.Tv.TvInputManager.TvInputCallback,Android.Os.Handler)">
+  RegisterCallback(TvInputCallback, Handler)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvInputManager.cs/#L464"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#registerCallback(android.media.tv.TvInputManager.TvInputCallback,android.os.Handler)">https://developer.android.com/reference/android/media/tv/TvInputManager.html#registerCallback(android.media.tv.TvInputManager.TvInputCallback,android.os.Handler)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterCallback(TvInputManager.TvInputCallback arg0, Handler arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Media.Tv.TvInputManager.html">TvInputManager</a>.<a class="xref" href="Android.Media.Tv.TvInputManager.TvInputCallback.html">TvInputCallback</a></dt>
+    <dd><p><a class="xref" href="Android.Media.Tv.TvInputManager.TvInputCallback.html">TvInputManager.TvInputCallback</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Os.Handler.html">Handler</a></dt>
+    <dd><p><a class="xref" href="Android.Os.Handler.html">Handler</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_UnregisterCallback_" data-uid="Android.Media.Tv.TvInputManager.UnregisterCallback*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_UnregisterCallback_Android_Media_Tv_TvInputManager_TvInputCallback_" data-uid="Android.Media.Tv.TvInputManager.UnregisterCallback(Android.Media.Tv.TvInputManager.TvInputCallback)">
+  UnregisterCallback(TvInputCallback)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvInputManager.cs/#L472"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#unregisterCallback(android.media.tv.TvInputManager.TvInputCallback)">https://developer.android.com/reference/android/media/tv/TvInputManager.html#unregisterCallback(android.media.tv.TvInputManager.TvInputCallback)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnregisterCallback(TvInputManager.TvInputCallback arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Media.Tv.TvInputManager.html">TvInputManager</a>.<a class="xref" href="Android.Media.Tv.TvInputManager.TvInputCallback.html">TvInputCallback</a></dt>
+    <dd><p><a class="xref" href="Android.Media.Tv.TvInputManager.TvInputCallback.html">TvInputManager.TvInputCallback</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Media_Tv_TvInputManager_UpdateTvInputInfo_" data-uid="Android.Media.Tv.TvInputManager.UpdateTvInputInfo*"></a>
+
+  <h3 id="Android_Media_Tv_TvInputManager_UpdateTvInputInfo_Android_Media_Tv_TvInputInfo_" data-uid="Android.Media.Tv.TvInputManager.UpdateTvInputInfo(Android.Media.Tv.TvInputInfo)">
+  UpdateTvInputInfo(TvInputInfo)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvInputManager.cs/#L480"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/media/tv/TvInputManager.html#updateTvInputInfo(android.media.tv.TvInputInfo)">https://developer.android.com/reference/android/media/tv/TvInputManager.html#updateTvInputInfo(android.media.tv.TvInputInfo)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateTvInputInfo(TvInputInfo arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Media.Tv.TvInputInfo.html">TvInputInfo</a></dt>
+    <dd><p><a class="xref" href="Android.Media.Tv.TvInputInfo.html">TvInputInfo</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Media/Tv/TvInputManager.cs/#L29" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

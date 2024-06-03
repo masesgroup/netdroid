@@ -1,0 +1,4523 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class WebSettings | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class WebSettings | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/webkit/WebSettings.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_Webkit_WebSettings.md&amp;value=---%0Auid%3A%20Android.Webkit.WebSettings%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.Webkit.WebSettings">
+
+
+
+  <h1 id="Android_Webkit_WebSettings" data-uid="Android.Webkit.WebSettings" class="text-break">
+Class WebSettings  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.Webkit.html">Webkit</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html">https://developer.android.com/reference/android/webkit/WebSettings.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class WebSettings : JVMBridgeBase&lt;WebSettings&gt;, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Android.Webkit.WebSettings.html">WebSettings</a>&gt;</div>
+      <div><span class="xref">WebSettings</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;WebSettings&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;WebSettings&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;WebSettings&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;WebSettings&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;WebSettings&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;WebSettings&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;WebSettings&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;WebSettings&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;WebSettings&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;WebSettings&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;WebSettings&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;WebSettings&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;WebSettings&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;WebSettings&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;WebSettings&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;WebSettings&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;WebSettings&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;WebSettings&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;WebSettings&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;WebSettings&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;WebSettings&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;WebSettings&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;WebSettings&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;WebSettings&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;WebSettings&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;WebSettings&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;WebSettings&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;WebSettings&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;WebSettings&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;WebSettings&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;WebSettings&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;WebSettings&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;WebSettings&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;WebSettings&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;WebSettings&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;WebSettings&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;WebSettings&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;WebSettings&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;WebSettings&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;WebSettings&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;WebSettings&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;WebSettings&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;WebSettings&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;WebSettings&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;WebSettings&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;WebSettings&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;WebSettings&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;WebSettings&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;WebSettings&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;WebSettings&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_Webkit_WebSettings__ctor_" data-uid="Android.Webkit.WebSettings.#ctor*"></a>
+
+  <h3 id="Android_Webkit_WebSettings__ctor" data-uid="Android.Webkit.WebSettings.#ctor">
+  WebSettings()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/AllPackageClasses.cs/#L1933"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;WebSettings class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public WebSettings()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings__ctor_" data-uid="Android.Webkit.WebSettings.#ctor*"></a>
+
+  <h3 id="Android_Webkit_WebSettings__ctor_System_Object___" data-uid="Android.Webkit.WebSettings.#ctor(System.Object[])">
+  WebSettings(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/AllPackageClasses.cs/#L1938"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;WebSettings class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public WebSettings(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_Webkit_WebSettings_BridgeClassName_" data-uid="Android.Webkit.WebSettings.BridgeClassName*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_BridgeClassName" data-uid="Android.Webkit.WebSettings.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/AllPackageClasses.cs/#L1946"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_FORCE_DARK_AUTO_" data-uid="Android.Webkit.WebSettings.FORCE_DARK_AUTO*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_FORCE_DARK_AUTO" data-uid="Android.Webkit.WebSettings.FORCE_DARK_AUTO">
+  FORCE_DARK_AUTO
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#FORCE_DARK_AUTO">https://developer.android.com/reference/android/webkit/WebSettings.html#FORCE_DARK_AUTO</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static int FORCE_DARK_AUTO { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_FORCE_DARK_OFF_" data-uid="Android.Webkit.WebSettings.FORCE_DARK_OFF*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_FORCE_DARK_OFF" data-uid="Android.Webkit.WebSettings.FORCE_DARK_OFF">
+  FORCE_DARK_OFF
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#FORCE_DARK_OFF">https://developer.android.com/reference/android/webkit/WebSettings.html#FORCE_DARK_OFF</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static int FORCE_DARK_OFF { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_FORCE_DARK_ON_" data-uid="Android.Webkit.WebSettings.FORCE_DARK_ON*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_FORCE_DARK_ON" data-uid="Android.Webkit.WebSettings.FORCE_DARK_ON">
+  FORCE_DARK_ON
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L57"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#FORCE_DARK_ON">https://developer.android.com/reference/android/webkit/WebSettings.html#FORCE_DARK_ON</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static int FORCE_DARK_ON { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_IsBridgeAbstract_" data-uid="Android.Webkit.WebSettings.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_IsBridgeAbstract" data-uid="Android.Webkit.WebSettings.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/AllPackageClasses.cs/#L1950"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_IsBridgeCloseable_" data-uid="Android.Webkit.WebSettings.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_IsBridgeCloseable" data-uid="Android.Webkit.WebSettings.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/AllPackageClasses.cs/#L1954"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_IsBridgeInterface_" data-uid="Android.Webkit.WebSettings.IsBridgeInterface*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_IsBridgeInterface" data-uid="Android.Webkit.WebSettings.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/AllPackageClasses.cs/#L1958"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_IsBridgeStatic_" data-uid="Android.Webkit.WebSettings.IsBridgeStatic*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_IsBridgeStatic" data-uid="Android.Webkit.WebSettings.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/AllPackageClasses.cs/#L1962"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_LOAD_CACHE_ELSE_NETWORK_" data-uid="Android.Webkit.WebSettings.LOAD_CACHE_ELSE_NETWORK*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_LOAD_CACHE_ELSE_NETWORK" data-uid="Android.Webkit.WebSettings.LOAD_CACHE_ELSE_NETWORK">
+  LOAD_CACHE_ELSE_NETWORK
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#LOAD_CACHE_ELSE_NETWORK">https://developer.android.com/reference/android/webkit/WebSettings.html#LOAD_CACHE_ELSE_NETWORK</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int LOAD_CACHE_ELSE_NETWORK { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_LOAD_CACHE_ONLY_" data-uid="Android.Webkit.WebSettings.LOAD_CACHE_ONLY*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_LOAD_CACHE_ONLY" data-uid="Android.Webkit.WebSettings.LOAD_CACHE_ONLY">
+  LOAD_CACHE_ONLY
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L70"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#LOAD_CACHE_ONLY">https://developer.android.com/reference/android/webkit/WebSettings.html#LOAD_CACHE_ONLY</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int LOAD_CACHE_ONLY { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_LOAD_DEFAULT_" data-uid="Android.Webkit.WebSettings.LOAD_DEFAULT*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_LOAD_DEFAULT" data-uid="Android.Webkit.WebSettings.LOAD_DEFAULT">
+  LOAD_DEFAULT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L76"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#LOAD_DEFAULT">https://developer.android.com/reference/android/webkit/WebSettings.html#LOAD_DEFAULT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int LOAD_DEFAULT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_LOAD_NORMAL_" data-uid="Android.Webkit.WebSettings.LOAD_NORMAL*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_LOAD_NORMAL" data-uid="Android.Webkit.WebSettings.LOAD_NORMAL">
+  LOAD_NORMAL
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L88"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#LOAD_NORMAL">https://developer.android.com/reference/android/webkit/WebSettings.html#LOAD_NORMAL</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public static int LOAD_NORMAL { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_LOAD_NO_CACHE_" data-uid="Android.Webkit.WebSettings.LOAD_NO_CACHE*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_LOAD_NO_CACHE" data-uid="Android.Webkit.WebSettings.LOAD_NO_CACHE">
+  LOAD_NO_CACHE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L82"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#LOAD_NO_CACHE">https://developer.android.com/reference/android/webkit/WebSettings.html#LOAD_NO_CACHE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int LOAD_NO_CACHE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_MENU_ITEM_NONE_" data-uid="Android.Webkit.WebSettings.MENU_ITEM_NONE*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_MENU_ITEM_NONE" data-uid="Android.Webkit.WebSettings.MENU_ITEM_NONE">
+  MENU_ITEM_NONE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L95"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#MENU_ITEM_NONE">https://developer.android.com/reference/android/webkit/WebSettings.html#MENU_ITEM_NONE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int MENU_ITEM_NONE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_MENU_ITEM_PROCESS_TEXT_" data-uid="Android.Webkit.WebSettings.MENU_ITEM_PROCESS_TEXT*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_MENU_ITEM_PROCESS_TEXT" data-uid="Android.Webkit.WebSettings.MENU_ITEM_PROCESS_TEXT">
+  MENU_ITEM_PROCESS_TEXT
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L101"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#MENU_ITEM_PROCESS_TEXT">https://developer.android.com/reference/android/webkit/WebSettings.html#MENU_ITEM_PROCESS_TEXT</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int MENU_ITEM_PROCESS_TEXT { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_MENU_ITEM_SHARE_" data-uid="Android.Webkit.WebSettings.MENU_ITEM_SHARE*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_MENU_ITEM_SHARE" data-uid="Android.Webkit.WebSettings.MENU_ITEM_SHARE">
+  MENU_ITEM_SHARE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L107"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#MENU_ITEM_SHARE">https://developer.android.com/reference/android/webkit/WebSettings.html#MENU_ITEM_SHARE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int MENU_ITEM_SHARE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_MENU_ITEM_WEB_SEARCH_" data-uid="Android.Webkit.WebSettings.MENU_ITEM_WEB_SEARCH*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_MENU_ITEM_WEB_SEARCH" data-uid="Android.Webkit.WebSettings.MENU_ITEM_WEB_SEARCH">
+  MENU_ITEM_WEB_SEARCH
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L113"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#MENU_ITEM_WEB_SEARCH">https://developer.android.com/reference/android/webkit/WebSettings.html#MENU_ITEM_WEB_SEARCH</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int MENU_ITEM_WEB_SEARCH { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_MIXED_CONTENT_ALWAYS_ALLOW_" data-uid="Android.Webkit.WebSettings.MIXED_CONTENT_ALWAYS_ALLOW*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_MIXED_CONTENT_ALWAYS_ALLOW" data-uid="Android.Webkit.WebSettings.MIXED_CONTENT_ALWAYS_ALLOW">
+  MIXED_CONTENT_ALWAYS_ALLOW
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L119"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#MIXED_CONTENT_ALWAYS_ALLOW">https://developer.android.com/reference/android/webkit/WebSettings.html#MIXED_CONTENT_ALWAYS_ALLOW</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int MIXED_CONTENT_ALWAYS_ALLOW { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_MIXED_CONTENT_COMPATIBILITY_MODE_" data-uid="Android.Webkit.WebSettings.MIXED_CONTENT_COMPATIBILITY_MODE*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_MIXED_CONTENT_COMPATIBILITY_MODE" data-uid="Android.Webkit.WebSettings.MIXED_CONTENT_COMPATIBILITY_MODE">
+  MIXED_CONTENT_COMPATIBILITY_MODE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L125"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#MIXED_CONTENT_COMPATIBILITY_MODE">https://developer.android.com/reference/android/webkit/WebSettings.html#MIXED_CONTENT_COMPATIBILITY_MODE</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int MIXED_CONTENT_COMPATIBILITY_MODE { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_MIXED_CONTENT_NEVER_ALLOW_" data-uid="Android.Webkit.WebSettings.MIXED_CONTENT_NEVER_ALLOW*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_MIXED_CONTENT_NEVER_ALLOW" data-uid="Android.Webkit.WebSettings.MIXED_CONTENT_NEVER_ALLOW">
+  MIXED_CONTENT_NEVER_ALLOW
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L131"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#MIXED_CONTENT_NEVER_ALLOW">https://developer.android.com/reference/android/webkit/WebSettings.html#MIXED_CONTENT_NEVER_ALLOW</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int MIXED_CONTENT_NEVER_ALLOW { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_Webkit_WebSettings_EnableSmoothTransition_" data-uid="Android.Webkit.WebSettings.EnableSmoothTransition*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_EnableSmoothTransition" data-uid="Android.Webkit.WebSettings.EnableSmoothTransition">
+  EnableSmoothTransition()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L181"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#enableSmoothTransition()">https://developer.android.com/reference/android/webkit/WebSettings.html#enableSmoothTransition()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public bool EnableSmoothTransition()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_GetAllowContentAccess_" data-uid="Android.Webkit.WebSettings.GetAllowContentAccess*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_GetAllowContentAccess" data-uid="Android.Webkit.WebSettings.GetAllowContentAccess">
+  GetAllowContentAccess()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L190"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#getAllowContentAccess()">https://developer.android.com/reference/android/webkit/WebSettings.html#getAllowContentAccess()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetAllowContentAccess()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_GetAllowFileAccess_" data-uid="Android.Webkit.WebSettings.GetAllowFileAccess*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_GetAllowFileAccess" data-uid="Android.Webkit.WebSettings.GetAllowFileAccess">
+  GetAllowFileAccess()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L198"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#getAllowFileAccess()">https://developer.android.com/reference/android/webkit/WebSettings.html#getAllowFileAccess()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetAllowFileAccess()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_GetAllowFileAccessFromFileURLs_" data-uid="Android.Webkit.WebSettings.GetAllowFileAccessFromFileURLs*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_GetAllowFileAccessFromFileURLs" data-uid="Android.Webkit.WebSettings.GetAllowFileAccessFromFileURLs">
+  GetAllowFileAccessFromFileURLs()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L206"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#getAllowFileAccessFromFileURLs()">https://developer.android.com/reference/android/webkit/WebSettings.html#getAllowFileAccessFromFileURLs()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetAllowFileAccessFromFileURLs()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_GetAllowUniversalAccessFromFileURLs_" data-uid="Android.Webkit.WebSettings.GetAllowUniversalAccessFromFileURLs*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_GetAllowUniversalAccessFromFileURLs" data-uid="Android.Webkit.WebSettings.GetAllowUniversalAccessFromFileURLs">
+  GetAllowUniversalAccessFromFileURLs()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L214"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#getAllowUniversalAccessFromFileURLs()">https://developer.android.com/reference/android/webkit/WebSettings.html#getAllowUniversalAccessFromFileURLs()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetAllowUniversalAccessFromFileURLs()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_GetBlockNetworkImage_" data-uid="Android.Webkit.WebSettings.GetBlockNetworkImage*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_GetBlockNetworkImage" data-uid="Android.Webkit.WebSettings.GetBlockNetworkImage">
+  GetBlockNetworkImage()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L222"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#getBlockNetworkImage()">https://developer.android.com/reference/android/webkit/WebSettings.html#getBlockNetworkImage()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetBlockNetworkImage()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_GetBlockNetworkLoads_" data-uid="Android.Webkit.WebSettings.GetBlockNetworkLoads*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_GetBlockNetworkLoads" data-uid="Android.Webkit.WebSettings.GetBlockNetworkLoads">
+  GetBlockNetworkLoads()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L230"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#getBlockNetworkLoads()">https://developer.android.com/reference/android/webkit/WebSettings.html#getBlockNetworkLoads()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetBlockNetworkLoads()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_GetBuiltInZoomControls_" data-uid="Android.Webkit.WebSettings.GetBuiltInZoomControls*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_GetBuiltInZoomControls" data-uid="Android.Webkit.WebSettings.GetBuiltInZoomControls">
+  GetBuiltInZoomControls()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L238"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#getBuiltInZoomControls()">https://developer.android.com/reference/android/webkit/WebSettings.html#getBuiltInZoomControls()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetBuiltInZoomControls()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_GetCacheMode_" data-uid="Android.Webkit.WebSettings.GetCacheMode*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_GetCacheMode" data-uid="Android.Webkit.WebSettings.GetCacheMode">
+  GetCacheMode()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L377"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#getCacheMode()">https://developer.android.com/reference/android/webkit/WebSettings.html#getCacheMode()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetCacheMode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_GetCursiveFontFamily_" data-uid="Android.Webkit.WebSettings.GetCursiveFontFamily*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_GetCursiveFontFamily" data-uid="Android.Webkit.WebSettings.GetCursiveFontFamily">
+  GetCursiveFontFamily()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L441"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#getCursiveFontFamily()">https://developer.android.com/reference/android/webkit/WebSettings.html#getCursiveFontFamily()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetCursiveFontFamily()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_GetDatabaseEnabled_" data-uid="Android.Webkit.WebSettings.GetDatabaseEnabled*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_GetDatabaseEnabled" data-uid="Android.Webkit.WebSettings.GetDatabaseEnabled">
+  GetDatabaseEnabled()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L246"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#getDatabaseEnabled()">https://developer.android.com/reference/android/webkit/WebSettings.html#getDatabaseEnabled()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetDatabaseEnabled()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_GetDatabasePath_" data-uid="Android.Webkit.WebSettings.GetDatabasePath*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_GetDatabasePath" data-uid="Android.Webkit.WebSettings.GetDatabasePath">
+  GetDatabasePath()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L449"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#getDatabasePath()">https://developer.android.com/reference/android/webkit/WebSettings.html#getDatabasePath()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public String GetDatabasePath()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_GetDefaultFixedFontSize_" data-uid="Android.Webkit.WebSettings.GetDefaultFixedFontSize*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_GetDefaultFixedFontSize" data-uid="Android.Webkit.WebSettings.GetDefaultFixedFontSize">
+  GetDefaultFixedFontSize()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L385"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#getDefaultFixedFontSize()">https://developer.android.com/reference/android/webkit/WebSettings.html#getDefaultFixedFontSize()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetDefaultFixedFontSize()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_GetDefaultFontSize_" data-uid="Android.Webkit.WebSettings.GetDefaultFontSize*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_GetDefaultFontSize" data-uid="Android.Webkit.WebSettings.GetDefaultFontSize">
+  GetDefaultFontSize()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L393"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#getDefaultFontSize()">https://developer.android.com/reference/android/webkit/WebSettings.html#getDefaultFontSize()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetDefaultFontSize()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_GetDefaultTextEncodingName_" data-uid="Android.Webkit.WebSettings.GetDefaultTextEncodingName*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_GetDefaultTextEncodingName" data-uid="Android.Webkit.WebSettings.GetDefaultTextEncodingName">
+  GetDefaultTextEncodingName()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L458"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#getDefaultTextEncodingName()">https://developer.android.com/reference/android/webkit/WebSettings.html#getDefaultTextEncodingName()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetDefaultTextEncodingName()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_GetDefaultUserAgent_" data-uid="Android.Webkit.WebSettings.GetDefaultUserAgent*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_GetDefaultUserAgent_Android_Content_Context_" data-uid="Android.Webkit.WebSettings.GetDefaultUserAgent(Android.Content.Context)">
+  GetDefaultUserAgent(Context)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L143"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#getDefaultUserAgent(android.content.Context)">https://developer.android.com/reference/android/webkit/WebSettings.html#getDefaultUserAgent(android.content.Context)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static String GetDefaultUserAgent(Context arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Content.Context.html">Context</a></dt>
+    <dd><p><a class="xref" href="Android.Content.Context.html">Context</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_GetDefaultZoom_" data-uid="Android.Webkit.WebSettings.GetDefaultZoom*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_GetDefaultZoom" data-uid="Android.Webkit.WebSettings.GetDefaultZoom">
+  GetDefaultZoom()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L172"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#getDefaultZoom()">https://developer.android.com/reference/android/webkit/WebSettings.html#getDefaultZoom()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public WebSettings.ZoomDensity GetDefaultZoom()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Webkit.WebSettings.html">WebSettings</a>.<a class="xref" href="Android.Webkit.WebSettings.ZoomDensity.html">ZoomDensity</a></dt>
+    <dd><p><a class="xref" href="Android.Webkit.WebSettings.ZoomDensity.html">WebSettings.ZoomDensity</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_GetDisabledActionModeMenuItems_" data-uid="Android.Webkit.WebSettings.GetDisabledActionModeMenuItems*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_GetDisabledActionModeMenuItems" data-uid="Android.Webkit.WebSettings.GetDisabledActionModeMenuItems">
+  GetDisabledActionModeMenuItems()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L401"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#getDisabledActionModeMenuItems()">https://developer.android.com/reference/android/webkit/WebSettings.html#getDisabledActionModeMenuItems()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetDisabledActionModeMenuItems()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_GetDisplayZoomControls_" data-uid="Android.Webkit.WebSettings.GetDisplayZoomControls*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_GetDisplayZoomControls" data-uid="Android.Webkit.WebSettings.GetDisplayZoomControls">
+  GetDisplayZoomControls()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L254"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#getDisplayZoomControls()">https://developer.android.com/reference/android/webkit/WebSettings.html#getDisplayZoomControls()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetDisplayZoomControls()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_GetDomStorageEnabled_" data-uid="Android.Webkit.WebSettings.GetDomStorageEnabled*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_GetDomStorageEnabled" data-uid="Android.Webkit.WebSettings.GetDomStorageEnabled">
+  GetDomStorageEnabled()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L262"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#getDomStorageEnabled()">https://developer.android.com/reference/android/webkit/WebSettings.html#getDomStorageEnabled()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetDomStorageEnabled()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_GetFantasyFontFamily_" data-uid="Android.Webkit.WebSettings.GetFantasyFontFamily*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_GetFantasyFontFamily" data-uid="Android.Webkit.WebSettings.GetFantasyFontFamily">
+  GetFantasyFontFamily()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L466"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#getFantasyFontFamily()">https://developer.android.com/reference/android/webkit/WebSettings.html#getFantasyFontFamily()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetFantasyFontFamily()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_GetFixedFontFamily_" data-uid="Android.Webkit.WebSettings.GetFixedFontFamily*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_GetFixedFontFamily" data-uid="Android.Webkit.WebSettings.GetFixedFontFamily">
+  GetFixedFontFamily()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L474"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#getFixedFontFamily()">https://developer.android.com/reference/android/webkit/WebSettings.html#getFixedFontFamily()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetFixedFontFamily()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_GetForceDark_" data-uid="Android.Webkit.WebSettings.GetForceDark*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_GetForceDark" data-uid="Android.Webkit.WebSettings.GetForceDark">
+  GetForceDark()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L917"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#getForceDark()">https://developer.android.com/reference/android/webkit/WebSettings.html#getForceDark()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public int GetForceDark()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_GetJavaScriptCanOpenWindowsAutomatically_" data-uid="Android.Webkit.WebSettings.GetJavaScriptCanOpenWindowsAutomatically*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_GetJavaScriptCanOpenWindowsAutomatically" data-uid="Android.Webkit.WebSettings.GetJavaScriptCanOpenWindowsAutomatically">
+  GetJavaScriptCanOpenWindowsAutomatically()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L270"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#getJavaScriptCanOpenWindowsAutomatically()">https://developer.android.com/reference/android/webkit/WebSettings.html#getJavaScriptCanOpenWindowsAutomatically()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetJavaScriptCanOpenWindowsAutomatically()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_GetJavaScriptEnabled_" data-uid="Android.Webkit.WebSettings.GetJavaScriptEnabled*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_GetJavaScriptEnabled" data-uid="Android.Webkit.WebSettings.GetJavaScriptEnabled">
+  GetJavaScriptEnabled()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L278"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#getJavaScriptEnabled()">https://developer.android.com/reference/android/webkit/WebSettings.html#getJavaScriptEnabled()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetJavaScriptEnabled()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_GetLayoutAlgorithm_" data-uid="Android.Webkit.WebSettings.GetLayoutAlgorithm*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_GetLayoutAlgorithm" data-uid="Android.Webkit.WebSettings.GetLayoutAlgorithm">
+  GetLayoutAlgorithm()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L155"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#getLayoutAlgorithm()">https://developer.android.com/reference/android/webkit/WebSettings.html#getLayoutAlgorithm()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WebSettings.LayoutAlgorithm GetLayoutAlgorithm()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Webkit.WebSettings.html">WebSettings</a>.<a class="xref" href="Android.Webkit.WebSettings.LayoutAlgorithm.html">LayoutAlgorithm</a></dt>
+    <dd><p><a class="xref" href="Android.Webkit.WebSettings.LayoutAlgorithm.html">WebSettings.LayoutAlgorithm</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_GetLightTouchEnabled_" data-uid="Android.Webkit.WebSettings.GetLightTouchEnabled*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_GetLightTouchEnabled" data-uid="Android.Webkit.WebSettings.GetLightTouchEnabled">
+  GetLightTouchEnabled()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L286"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#getLightTouchEnabled()">https://developer.android.com/reference/android/webkit/WebSettings.html#getLightTouchEnabled()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public bool GetLightTouchEnabled()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_GetLoadWithOverviewMode_" data-uid="Android.Webkit.WebSettings.GetLoadWithOverviewMode*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_GetLoadWithOverviewMode" data-uid="Android.Webkit.WebSettings.GetLoadWithOverviewMode">
+  GetLoadWithOverviewMode()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L303"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#getLoadWithOverviewMode()">https://developer.android.com/reference/android/webkit/WebSettings.html#getLoadWithOverviewMode()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetLoadWithOverviewMode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_GetLoadsImagesAutomatically_" data-uid="Android.Webkit.WebSettings.GetLoadsImagesAutomatically*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_GetLoadsImagesAutomatically" data-uid="Android.Webkit.WebSettings.GetLoadsImagesAutomatically">
+  GetLoadsImagesAutomatically()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L295"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#getLoadsImagesAutomatically()">https://developer.android.com/reference/android/webkit/WebSettings.html#getLoadsImagesAutomatically()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetLoadsImagesAutomatically()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_GetMediaPlaybackRequiresUserGesture_" data-uid="Android.Webkit.WebSettings.GetMediaPlaybackRequiresUserGesture*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_GetMediaPlaybackRequiresUserGesture" data-uid="Android.Webkit.WebSettings.GetMediaPlaybackRequiresUserGesture">
+  GetMediaPlaybackRequiresUserGesture()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L311"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#getMediaPlaybackRequiresUserGesture()">https://developer.android.com/reference/android/webkit/WebSettings.html#getMediaPlaybackRequiresUserGesture()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetMediaPlaybackRequiresUserGesture()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_GetMinimumFontSize_" data-uid="Android.Webkit.WebSettings.GetMinimumFontSize*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_GetMinimumFontSize" data-uid="Android.Webkit.WebSettings.GetMinimumFontSize">
+  GetMinimumFontSize()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L409"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#getMinimumFontSize()">https://developer.android.com/reference/android/webkit/WebSettings.html#getMinimumFontSize()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetMinimumFontSize()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_GetMinimumLogicalFontSize_" data-uid="Android.Webkit.WebSettings.GetMinimumLogicalFontSize*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_GetMinimumLogicalFontSize" data-uid="Android.Webkit.WebSettings.GetMinimumLogicalFontSize">
+  GetMinimumLogicalFontSize()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L417"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#getMinimumLogicalFontSize()">https://developer.android.com/reference/android/webkit/WebSettings.html#getMinimumLogicalFontSize()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetMinimumLogicalFontSize()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_GetMixedContentMode_" data-uid="Android.Webkit.WebSettings.GetMixedContentMode*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_GetMixedContentMode" data-uid="Android.Webkit.WebSettings.GetMixedContentMode">
+  GetMixedContentMode()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L425"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#getMixedContentMode()">https://developer.android.com/reference/android/webkit/WebSettings.html#getMixedContentMode()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetMixedContentMode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_GetOffscreenPreRaster_" data-uid="Android.Webkit.WebSettings.GetOffscreenPreRaster*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_GetOffscreenPreRaster" data-uid="Android.Webkit.WebSettings.GetOffscreenPreRaster">
+  GetOffscreenPreRaster()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L319"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#getOffscreenPreRaster()">https://developer.android.com/reference/android/webkit/WebSettings.html#getOffscreenPreRaster()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetOffscreenPreRaster()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_GetPluginState_" data-uid="Android.Webkit.WebSettings.GetPluginState*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_GetPluginState" data-uid="Android.Webkit.WebSettings.GetPluginState">
+  GetPluginState()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L163"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#getPluginState()">https://developer.android.com/reference/android/webkit/WebSettings.html#getPluginState()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public WebSettings.PluginState GetPluginState()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Webkit.WebSettings.html">WebSettings</a>.<a class="xref" href="Android.Webkit.WebSettings.PluginState.html">PluginState</a></dt>
+    <dd><p><a class="xref" href="Android.Webkit.WebSettings.PluginState.html">WebSettings.PluginState</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_GetSafeBrowsingEnabled_" data-uid="Android.Webkit.WebSettings.GetSafeBrowsingEnabled*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_GetSafeBrowsingEnabled" data-uid="Android.Webkit.WebSettings.GetSafeBrowsingEnabled">
+  GetSafeBrowsingEnabled()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L327"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#getSafeBrowsingEnabled()">https://developer.android.com/reference/android/webkit/WebSettings.html#getSafeBrowsingEnabled()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetSafeBrowsingEnabled()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_GetSansSerifFontFamily_" data-uid="Android.Webkit.WebSettings.GetSansSerifFontFamily*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_GetSansSerifFontFamily" data-uid="Android.Webkit.WebSettings.GetSansSerifFontFamily">
+  GetSansSerifFontFamily()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L482"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#getSansSerifFontFamily()">https://developer.android.com/reference/android/webkit/WebSettings.html#getSansSerifFontFamily()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetSansSerifFontFamily()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_GetSaveFormData_" data-uid="Android.Webkit.WebSettings.GetSaveFormData*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_GetSaveFormData" data-uid="Android.Webkit.WebSettings.GetSaveFormData">
+  GetSaveFormData()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L335"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#getSaveFormData()">https://developer.android.com/reference/android/webkit/WebSettings.html#getSaveFormData()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public bool GetSaveFormData()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_GetSavePassword_" data-uid="Android.Webkit.WebSettings.GetSavePassword*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_GetSavePassword" data-uid="Android.Webkit.WebSettings.GetSavePassword">
+  GetSavePassword()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L344"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#getSavePassword()">https://developer.android.com/reference/android/webkit/WebSettings.html#getSavePassword()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public bool GetSavePassword()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_GetSerifFontFamily_" data-uid="Android.Webkit.WebSettings.GetSerifFontFamily*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_GetSerifFontFamily" data-uid="Android.Webkit.WebSettings.GetSerifFontFamily">
+  GetSerifFontFamily()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L490"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#getSerifFontFamily()">https://developer.android.com/reference/android/webkit/WebSettings.html#getSerifFontFamily()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetSerifFontFamily()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_GetStandardFontFamily_" data-uid="Android.Webkit.WebSettings.GetStandardFontFamily*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_GetStandardFontFamily" data-uid="Android.Webkit.WebSettings.GetStandardFontFamily">
+  GetStandardFontFamily()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L498"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#getStandardFontFamily()">https://developer.android.com/reference/android/webkit/WebSettings.html#getStandardFontFamily()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetStandardFontFamily()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_GetTextSize_" data-uid="Android.Webkit.WebSettings.GetTextSize*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_GetTextSize" data-uid="Android.Webkit.WebSettings.GetTextSize">
+  GetTextSize()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L926"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#getTextSize()">https://developer.android.com/reference/android/webkit/WebSettings.html#getTextSize()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public WebSettings.TextSize GetTextSize()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Webkit.WebSettings.html">WebSettings</a>.<a class="xref" href="Android.Webkit.WebSettings.TextSize.html">TextSize</a></dt>
+    <dd><p><a class="xref" href="Android.Webkit.WebSettings.TextSize.html">WebSettings.TextSize</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_GetTextZoom_" data-uid="Android.Webkit.WebSettings.GetTextZoom*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_GetTextZoom" data-uid="Android.Webkit.WebSettings.GetTextZoom">
+  GetTextZoom()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L433"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#getTextZoom()">https://developer.android.com/reference/android/webkit/WebSettings.html#getTextZoom()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetTextZoom()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_GetUseWideViewPort_" data-uid="Android.Webkit.WebSettings.GetUseWideViewPort*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_GetUseWideViewPort" data-uid="Android.Webkit.WebSettings.GetUseWideViewPort">
+  GetUseWideViewPort()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L353"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#getUseWideViewPort()">https://developer.android.com/reference/android/webkit/WebSettings.html#getUseWideViewPort()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetUseWideViewPort()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_GetUserAgentString_" data-uid="Android.Webkit.WebSettings.GetUserAgentString*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_GetUserAgentString" data-uid="Android.Webkit.WebSettings.GetUserAgentString">
+  GetUserAgentString()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L506"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#getUserAgentString()">https://developer.android.com/reference/android/webkit/WebSettings.html#getUserAgentString()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetUserAgentString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_IsAlgorithmicDarkeningAllowed_" data-uid="Android.Webkit.WebSettings.IsAlgorithmicDarkeningAllowed*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_IsAlgorithmicDarkeningAllowed" data-uid="Android.Webkit.WebSettings.IsAlgorithmicDarkeningAllowed">
+  IsAlgorithmicDarkeningAllowed()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L909"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#isAlgorithmicDarkeningAllowed()">https://developer.android.com/reference/android/webkit/WebSettings.html#isAlgorithmicDarkeningAllowed()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsAlgorithmicDarkeningAllowed()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_SetAlgorithmicDarkeningAllowed_" data-uid="Android.Webkit.WebSettings.SetAlgorithmicDarkeningAllowed*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_SetAlgorithmicDarkeningAllowed_System_Boolean_" data-uid="Android.Webkit.WebSettings.SetAlgorithmicDarkeningAllowed(System.Boolean)">
+  SetAlgorithmicDarkeningAllowed(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L944"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#setAlgorithmicDarkeningAllowed(boolean)">https://developer.android.com/reference/android/webkit/WebSettings.html#setAlgorithmicDarkeningAllowed(boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAlgorithmicDarkeningAllowed(bool arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_SetAllowContentAccess_" data-uid="Android.Webkit.WebSettings.SetAllowContentAccess*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_SetAllowContentAccess_System_Boolean_" data-uid="Android.Webkit.WebSettings.SetAllowContentAccess(System.Boolean)">
+  SetAllowContentAccess(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L514"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#setAllowContentAccess(boolean)">https://developer.android.com/reference/android/webkit/WebSettings.html#setAllowContentAccess(boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAllowContentAccess(bool arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_SetAllowFileAccess_" data-uid="Android.Webkit.WebSettings.SetAllowFileAccess*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_SetAllowFileAccess_System_Boolean_" data-uid="Android.Webkit.WebSettings.SetAllowFileAccess(System.Boolean)">
+  SetAllowFileAccess(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L522"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#setAllowFileAccess(boolean)">https://developer.android.com/reference/android/webkit/WebSettings.html#setAllowFileAccess(boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAllowFileAccess(bool arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_SetAllowFileAccessFromFileURLs_" data-uid="Android.Webkit.WebSettings.SetAllowFileAccessFromFileURLs*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_SetAllowFileAccessFromFileURLs_System_Boolean_" data-uid="Android.Webkit.WebSettings.SetAllowFileAccessFromFileURLs(System.Boolean)">
+  SetAllowFileAccessFromFileURLs(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L530"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#setAllowFileAccessFromFileURLs(boolean)">https://developer.android.com/reference/android/webkit/WebSettings.html#setAllowFileAccessFromFileURLs(boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void SetAllowFileAccessFromFileURLs(bool arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_SetAllowUniversalAccessFromFileURLs_" data-uid="Android.Webkit.WebSettings.SetAllowUniversalAccessFromFileURLs*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_SetAllowUniversalAccessFromFileURLs_System_Boolean_" data-uid="Android.Webkit.WebSettings.SetAllowUniversalAccessFromFileURLs(System.Boolean)">
+  SetAllowUniversalAccessFromFileURLs(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L539"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#setAllowUniversalAccessFromFileURLs(boolean)">https://developer.android.com/reference/android/webkit/WebSettings.html#setAllowUniversalAccessFromFileURLs(boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void SetAllowUniversalAccessFromFileURLs(bool arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_SetBlockNetworkImage_" data-uid="Android.Webkit.WebSettings.SetBlockNetworkImage*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_SetBlockNetworkImage_System_Boolean_" data-uid="Android.Webkit.WebSettings.SetBlockNetworkImage(System.Boolean)">
+  SetBlockNetworkImage(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L548"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#setBlockNetworkImage(boolean)">https://developer.android.com/reference/android/webkit/WebSettings.html#setBlockNetworkImage(boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetBlockNetworkImage(bool arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_SetBlockNetworkLoads_" data-uid="Android.Webkit.WebSettings.SetBlockNetworkLoads*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_SetBlockNetworkLoads_System_Boolean_" data-uid="Android.Webkit.WebSettings.SetBlockNetworkLoads(System.Boolean)">
+  SetBlockNetworkLoads(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L556"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#setBlockNetworkLoads(boolean)">https://developer.android.com/reference/android/webkit/WebSettings.html#setBlockNetworkLoads(boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetBlockNetworkLoads(bool arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_SetBuiltInZoomControls_" data-uid="Android.Webkit.WebSettings.SetBuiltInZoomControls*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_SetBuiltInZoomControls_System_Boolean_" data-uid="Android.Webkit.WebSettings.SetBuiltInZoomControls(System.Boolean)">
+  SetBuiltInZoomControls(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L564"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#setBuiltInZoomControls(boolean)">https://developer.android.com/reference/android/webkit/WebSettings.html#setBuiltInZoomControls(boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetBuiltInZoomControls(bool arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_SetCacheMode_" data-uid="Android.Webkit.WebSettings.SetCacheMode*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_SetCacheMode_System_Int32_" data-uid="Android.Webkit.WebSettings.SetCacheMode(System.Int32)">
+  SetCacheMode(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L572"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#setCacheMode(int)">https://developer.android.com/reference/android/webkit/WebSettings.html#setCacheMode(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCacheMode(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_SetCursiveFontFamily_" data-uid="Android.Webkit.WebSettings.SetCursiveFontFamily*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_SetCursiveFontFamily_Java_Lang_String_" data-uid="Android.Webkit.WebSettings.SetCursiveFontFamily(Java.Lang.String)">
+  SetCursiveFontFamily(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L580"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#setCursiveFontFamily(java.lang.String)">https://developer.android.com/reference/android/webkit/WebSettings.html#setCursiveFontFamily(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCursiveFontFamily(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_SetDatabaseEnabled_" data-uid="Android.Webkit.WebSettings.SetDatabaseEnabled*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_SetDatabaseEnabled_System_Boolean_" data-uid="Android.Webkit.WebSettings.SetDatabaseEnabled(System.Boolean)">
+  SetDatabaseEnabled(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L588"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#setDatabaseEnabled(boolean)">https://developer.android.com/reference/android/webkit/WebSettings.html#setDatabaseEnabled(boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDatabaseEnabled(bool arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_SetDatabasePath_" data-uid="Android.Webkit.WebSettings.SetDatabasePath*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_SetDatabasePath_Java_Lang_String_" data-uid="Android.Webkit.WebSettings.SetDatabasePath(Java.Lang.String)">
+  SetDatabasePath(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L596"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#setDatabasePath(java.lang.String)">https://developer.android.com/reference/android/webkit/WebSettings.html#setDatabasePath(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void SetDatabasePath(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_SetDefaultFixedFontSize_" data-uid="Android.Webkit.WebSettings.SetDefaultFixedFontSize*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_SetDefaultFixedFontSize_System_Int32_" data-uid="Android.Webkit.WebSettings.SetDefaultFixedFontSize(System.Int32)">
+  SetDefaultFixedFontSize(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L605"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#setDefaultFixedFontSize(int)">https://developer.android.com/reference/android/webkit/WebSettings.html#setDefaultFixedFontSize(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDefaultFixedFontSize(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_SetDefaultFontSize_" data-uid="Android.Webkit.WebSettings.SetDefaultFontSize*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_SetDefaultFontSize_System_Int32_" data-uid="Android.Webkit.WebSettings.SetDefaultFontSize(System.Int32)">
+  SetDefaultFontSize(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L613"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#setDefaultFontSize(int)">https://developer.android.com/reference/android/webkit/WebSettings.html#setDefaultFontSize(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDefaultFontSize(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_SetDefaultTextEncodingName_" data-uid="Android.Webkit.WebSettings.SetDefaultTextEncodingName*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_SetDefaultTextEncodingName_Java_Lang_String_" data-uid="Android.Webkit.WebSettings.SetDefaultTextEncodingName(Java.Lang.String)">
+  SetDefaultTextEncodingName(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L621"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#setDefaultTextEncodingName(java.lang.String)">https://developer.android.com/reference/android/webkit/WebSettings.html#setDefaultTextEncodingName(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDefaultTextEncodingName(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_SetDefaultZoom_" data-uid="Android.Webkit.WebSettings.SetDefaultZoom*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_SetDefaultZoom_Android_Webkit_WebSettings_ZoomDensity_" data-uid="Android.Webkit.WebSettings.SetDefaultZoom(Android.Webkit.WebSettings.ZoomDensity)">
+  SetDefaultZoom(ZoomDensity)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L629"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#setDefaultZoom(android.webkit.WebSettings.ZoomDensity)">https://developer.android.com/reference/android/webkit/WebSettings.html#setDefaultZoom(android.webkit.WebSettings.ZoomDensity)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void SetDefaultZoom(WebSettings.ZoomDensity arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Webkit.WebSettings.html">WebSettings</a>.<a class="xref" href="Android.Webkit.WebSettings.ZoomDensity.html">ZoomDensity</a></dt>
+    <dd><p><a class="xref" href="Android.Webkit.WebSettings.ZoomDensity.html">WebSettings.ZoomDensity</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_SetDisabledActionModeMenuItems_" data-uid="Android.Webkit.WebSettings.SetDisabledActionModeMenuItems*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_SetDisabledActionModeMenuItems_System_Int32_" data-uid="Android.Webkit.WebSettings.SetDisabledActionModeMenuItems(System.Int32)">
+  SetDisabledActionModeMenuItems(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L638"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#setDisabledActionModeMenuItems(int)">https://developer.android.com/reference/android/webkit/WebSettings.html#setDisabledActionModeMenuItems(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDisabledActionModeMenuItems(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_SetDisplayZoomControls_" data-uid="Android.Webkit.WebSettings.SetDisplayZoomControls*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_SetDisplayZoomControls_System_Boolean_" data-uid="Android.Webkit.WebSettings.SetDisplayZoomControls(System.Boolean)">
+  SetDisplayZoomControls(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L646"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#setDisplayZoomControls(boolean)">https://developer.android.com/reference/android/webkit/WebSettings.html#setDisplayZoomControls(boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDisplayZoomControls(bool arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_SetDomStorageEnabled_" data-uid="Android.Webkit.WebSettings.SetDomStorageEnabled*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_SetDomStorageEnabled_System_Boolean_" data-uid="Android.Webkit.WebSettings.SetDomStorageEnabled(System.Boolean)">
+  SetDomStorageEnabled(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L654"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#setDomStorageEnabled(boolean)">https://developer.android.com/reference/android/webkit/WebSettings.html#setDomStorageEnabled(boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDomStorageEnabled(bool arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_SetEnableSmoothTransition_" data-uid="Android.Webkit.WebSettings.SetEnableSmoothTransition*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_SetEnableSmoothTransition_System_Boolean_" data-uid="Android.Webkit.WebSettings.SetEnableSmoothTransition(System.Boolean)">
+  SetEnableSmoothTransition(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L662"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#setEnableSmoothTransition(boolean)">https://developer.android.com/reference/android/webkit/WebSettings.html#setEnableSmoothTransition(boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void SetEnableSmoothTransition(bool arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_SetFantasyFontFamily_" data-uid="Android.Webkit.WebSettings.SetFantasyFontFamily*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_SetFantasyFontFamily_Java_Lang_String_" data-uid="Android.Webkit.WebSettings.SetFantasyFontFamily(Java.Lang.String)">
+  SetFantasyFontFamily(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L671"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#setFantasyFontFamily(java.lang.String)">https://developer.android.com/reference/android/webkit/WebSettings.html#setFantasyFontFamily(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetFantasyFontFamily(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_SetFixedFontFamily_" data-uid="Android.Webkit.WebSettings.SetFixedFontFamily*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_SetFixedFontFamily_Java_Lang_String_" data-uid="Android.Webkit.WebSettings.SetFixedFontFamily(Java.Lang.String)">
+  SetFixedFontFamily(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L679"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#setFixedFontFamily(java.lang.String)">https://developer.android.com/reference/android/webkit/WebSettings.html#setFixedFontFamily(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetFixedFontFamily(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_SetForceDark_" data-uid="Android.Webkit.WebSettings.SetForceDark*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_SetForceDark_System_Int32_" data-uid="Android.Webkit.WebSettings.SetForceDark(System.Int32)">
+  SetForceDark(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L952"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#setForceDark(int)">https://developer.android.com/reference/android/webkit/WebSettings.html#setForceDark(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void SetForceDark(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_SetGeolocationDatabasePath_" data-uid="Android.Webkit.WebSettings.SetGeolocationDatabasePath*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_SetGeolocationDatabasePath_Java_Lang_String_" data-uid="Android.Webkit.WebSettings.SetGeolocationDatabasePath(Java.Lang.String)">
+  SetGeolocationDatabasePath(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L687"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#setGeolocationDatabasePath(java.lang.String)">https://developer.android.com/reference/android/webkit/WebSettings.html#setGeolocationDatabasePath(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void SetGeolocationDatabasePath(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_SetGeolocationEnabled_" data-uid="Android.Webkit.WebSettings.SetGeolocationEnabled*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_SetGeolocationEnabled_System_Boolean_" data-uid="Android.Webkit.WebSettings.SetGeolocationEnabled(System.Boolean)">
+  SetGeolocationEnabled(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L696"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#setGeolocationEnabled(boolean)">https://developer.android.com/reference/android/webkit/WebSettings.html#setGeolocationEnabled(boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetGeolocationEnabled(bool arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_SetJavaScriptCanOpenWindowsAutomatically_" data-uid="Android.Webkit.WebSettings.SetJavaScriptCanOpenWindowsAutomatically*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_SetJavaScriptCanOpenWindowsAutomatically_System_Boolean_" data-uid="Android.Webkit.WebSettings.SetJavaScriptCanOpenWindowsAutomatically(System.Boolean)">
+  SetJavaScriptCanOpenWindowsAutomatically(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L704"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#setJavaScriptCanOpenWindowsAutomatically(boolean)">https://developer.android.com/reference/android/webkit/WebSettings.html#setJavaScriptCanOpenWindowsAutomatically(boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetJavaScriptCanOpenWindowsAutomatically(bool arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_SetJavaScriptEnabled_" data-uid="Android.Webkit.WebSettings.SetJavaScriptEnabled*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_SetJavaScriptEnabled_System_Boolean_" data-uid="Android.Webkit.WebSettings.SetJavaScriptEnabled(System.Boolean)">
+  SetJavaScriptEnabled(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L712"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#setJavaScriptEnabled(boolean)">https://developer.android.com/reference/android/webkit/WebSettings.html#setJavaScriptEnabled(boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetJavaScriptEnabled(bool arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_SetLayoutAlgorithm_" data-uid="Android.Webkit.WebSettings.SetLayoutAlgorithm*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_SetLayoutAlgorithm_Android_Webkit_WebSettings_LayoutAlgorithm_" data-uid="Android.Webkit.WebSettings.SetLayoutAlgorithm(Android.Webkit.WebSettings.LayoutAlgorithm)">
+  SetLayoutAlgorithm(LayoutAlgorithm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L720"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#setLayoutAlgorithm(android.webkit.WebSettings.LayoutAlgorithm)">https://developer.android.com/reference/android/webkit/WebSettings.html#setLayoutAlgorithm(android.webkit.WebSettings.LayoutAlgorithm)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLayoutAlgorithm(WebSettings.LayoutAlgorithm arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Webkit.WebSettings.html">WebSettings</a>.<a class="xref" href="Android.Webkit.WebSettings.LayoutAlgorithm.html">LayoutAlgorithm</a></dt>
+    <dd><p><a class="xref" href="Android.Webkit.WebSettings.LayoutAlgorithm.html">WebSettings.LayoutAlgorithm</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_SetLightTouchEnabled_" data-uid="Android.Webkit.WebSettings.SetLightTouchEnabled*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_SetLightTouchEnabled_System_Boolean_" data-uid="Android.Webkit.WebSettings.SetLightTouchEnabled(System.Boolean)">
+  SetLightTouchEnabled(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L728"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#setLightTouchEnabled(boolean)">https://developer.android.com/reference/android/webkit/WebSettings.html#setLightTouchEnabled(boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void SetLightTouchEnabled(bool arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_SetLoadWithOverviewMode_" data-uid="Android.Webkit.WebSettings.SetLoadWithOverviewMode*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_SetLoadWithOverviewMode_System_Boolean_" data-uid="Android.Webkit.WebSettings.SetLoadWithOverviewMode(System.Boolean)">
+  SetLoadWithOverviewMode(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L745"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#setLoadWithOverviewMode(boolean)">https://developer.android.com/reference/android/webkit/WebSettings.html#setLoadWithOverviewMode(boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLoadWithOverviewMode(bool arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_SetLoadsImagesAutomatically_" data-uid="Android.Webkit.WebSettings.SetLoadsImagesAutomatically*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_SetLoadsImagesAutomatically_System_Boolean_" data-uid="Android.Webkit.WebSettings.SetLoadsImagesAutomatically(System.Boolean)">
+  SetLoadsImagesAutomatically(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L737"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#setLoadsImagesAutomatically(boolean)">https://developer.android.com/reference/android/webkit/WebSettings.html#setLoadsImagesAutomatically(boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLoadsImagesAutomatically(bool arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_SetMediaPlaybackRequiresUserGesture_" data-uid="Android.Webkit.WebSettings.SetMediaPlaybackRequiresUserGesture*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_SetMediaPlaybackRequiresUserGesture_System_Boolean_" data-uid="Android.Webkit.WebSettings.SetMediaPlaybackRequiresUserGesture(System.Boolean)">
+  SetMediaPlaybackRequiresUserGesture(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L753"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#setMediaPlaybackRequiresUserGesture(boolean)">https://developer.android.com/reference/android/webkit/WebSettings.html#setMediaPlaybackRequiresUserGesture(boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMediaPlaybackRequiresUserGesture(bool arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_SetMinimumFontSize_" data-uid="Android.Webkit.WebSettings.SetMinimumFontSize*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_SetMinimumFontSize_System_Int32_" data-uid="Android.Webkit.WebSettings.SetMinimumFontSize(System.Int32)">
+  SetMinimumFontSize(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L761"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#setMinimumFontSize(int)">https://developer.android.com/reference/android/webkit/WebSettings.html#setMinimumFontSize(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMinimumFontSize(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_SetMinimumLogicalFontSize_" data-uid="Android.Webkit.WebSettings.SetMinimumLogicalFontSize*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_SetMinimumLogicalFontSize_System_Int32_" data-uid="Android.Webkit.WebSettings.SetMinimumLogicalFontSize(System.Int32)">
+  SetMinimumLogicalFontSize(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L769"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#setMinimumLogicalFontSize(int)">https://developer.android.com/reference/android/webkit/WebSettings.html#setMinimumLogicalFontSize(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMinimumLogicalFontSize(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_SetMixedContentMode_" data-uid="Android.Webkit.WebSettings.SetMixedContentMode*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_SetMixedContentMode_System_Int32_" data-uid="Android.Webkit.WebSettings.SetMixedContentMode(System.Int32)">
+  SetMixedContentMode(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L777"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#setMixedContentMode(int)">https://developer.android.com/reference/android/webkit/WebSettings.html#setMixedContentMode(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMixedContentMode(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_SetNeedInitialFocus_" data-uid="Android.Webkit.WebSettings.SetNeedInitialFocus*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_SetNeedInitialFocus_System_Boolean_" data-uid="Android.Webkit.WebSettings.SetNeedInitialFocus(System.Boolean)">
+  SetNeedInitialFocus(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L785"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#setNeedInitialFocus(boolean)">https://developer.android.com/reference/android/webkit/WebSettings.html#setNeedInitialFocus(boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetNeedInitialFocus(bool arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_SetOffscreenPreRaster_" data-uid="Android.Webkit.WebSettings.SetOffscreenPreRaster*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_SetOffscreenPreRaster_System_Boolean_" data-uid="Android.Webkit.WebSettings.SetOffscreenPreRaster(System.Boolean)">
+  SetOffscreenPreRaster(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L793"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#setOffscreenPreRaster(boolean)">https://developer.android.com/reference/android/webkit/WebSettings.html#setOffscreenPreRaster(boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetOffscreenPreRaster(bool arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_SetPluginState_" data-uid="Android.Webkit.WebSettings.SetPluginState*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_SetPluginState_Android_Webkit_WebSettings_PluginState_" data-uid="Android.Webkit.WebSettings.SetPluginState(Android.Webkit.WebSettings.PluginState)">
+  SetPluginState(PluginState)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L801"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#setPluginState(android.webkit.WebSettings.PluginState)">https://developer.android.com/reference/android/webkit/WebSettings.html#setPluginState(android.webkit.WebSettings.PluginState)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void SetPluginState(WebSettings.PluginState arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Webkit.WebSettings.html">WebSettings</a>.<a class="xref" href="Android.Webkit.WebSettings.PluginState.html">PluginState</a></dt>
+    <dd><p><a class="xref" href="Android.Webkit.WebSettings.PluginState.html">WebSettings.PluginState</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_SetRenderPriority_" data-uid="Android.Webkit.WebSettings.SetRenderPriority*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_SetRenderPriority_Android_Webkit_WebSettings_RenderPriority_" data-uid="Android.Webkit.WebSettings.SetRenderPriority(Android.Webkit.WebSettings.RenderPriority)">
+  SetRenderPriority(RenderPriority)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L810"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#setRenderPriority(android.webkit.WebSettings.RenderPriority)">https://developer.android.com/reference/android/webkit/WebSettings.html#setRenderPriority(android.webkit.WebSettings.RenderPriority)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void SetRenderPriority(WebSettings.RenderPriority arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Webkit.WebSettings.html">WebSettings</a>.<a class="xref" href="Android.Webkit.WebSettings.RenderPriority.html">RenderPriority</a></dt>
+    <dd><p><a class="xref" href="Android.Webkit.WebSettings.RenderPriority.html">WebSettings.RenderPriority</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_SetSafeBrowsingEnabled_" data-uid="Android.Webkit.WebSettings.SetSafeBrowsingEnabled*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_SetSafeBrowsingEnabled_System_Boolean_" data-uid="Android.Webkit.WebSettings.SetSafeBrowsingEnabled(System.Boolean)">
+  SetSafeBrowsingEnabled(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L819"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#setSafeBrowsingEnabled(boolean)">https://developer.android.com/reference/android/webkit/WebSettings.html#setSafeBrowsingEnabled(boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSafeBrowsingEnabled(bool arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_SetSansSerifFontFamily_" data-uid="Android.Webkit.WebSettings.SetSansSerifFontFamily*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_SetSansSerifFontFamily_Java_Lang_String_" data-uid="Android.Webkit.WebSettings.SetSansSerifFontFamily(Java.Lang.String)">
+  SetSansSerifFontFamily(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L827"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#setSansSerifFontFamily(java.lang.String)">https://developer.android.com/reference/android/webkit/WebSettings.html#setSansSerifFontFamily(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSansSerifFontFamily(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_SetSaveFormData_" data-uid="Android.Webkit.WebSettings.SetSaveFormData*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_SetSaveFormData_System_Boolean_" data-uid="Android.Webkit.WebSettings.SetSaveFormData(System.Boolean)">
+  SetSaveFormData(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L835"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#setSaveFormData(boolean)">https://developer.android.com/reference/android/webkit/WebSettings.html#setSaveFormData(boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void SetSaveFormData(bool arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_SetSavePassword_" data-uid="Android.Webkit.WebSettings.SetSavePassword*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_SetSavePassword_System_Boolean_" data-uid="Android.Webkit.WebSettings.SetSavePassword(System.Boolean)">
+  SetSavePassword(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L844"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#setSavePassword(boolean)">https://developer.android.com/reference/android/webkit/WebSettings.html#setSavePassword(boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void SetSavePassword(bool arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_SetSerifFontFamily_" data-uid="Android.Webkit.WebSettings.SetSerifFontFamily*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_SetSerifFontFamily_Java_Lang_String_" data-uid="Android.Webkit.WebSettings.SetSerifFontFamily(Java.Lang.String)">
+  SetSerifFontFamily(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L853"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#setSerifFontFamily(java.lang.String)">https://developer.android.com/reference/android/webkit/WebSettings.html#setSerifFontFamily(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSerifFontFamily(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_SetStandardFontFamily_" data-uid="Android.Webkit.WebSettings.SetStandardFontFamily*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_SetStandardFontFamily_Java_Lang_String_" data-uid="Android.Webkit.WebSettings.SetStandardFontFamily(Java.Lang.String)">
+  SetStandardFontFamily(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L861"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#setStandardFontFamily(java.lang.String)">https://developer.android.com/reference/android/webkit/WebSettings.html#setStandardFontFamily(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetStandardFontFamily(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_SetSupportMultipleWindows_" data-uid="Android.Webkit.WebSettings.SetSupportMultipleWindows*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_SetSupportMultipleWindows_System_Boolean_" data-uid="Android.Webkit.WebSettings.SetSupportMultipleWindows(System.Boolean)">
+  SetSupportMultipleWindows(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L869"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#setSupportMultipleWindows(boolean)">https://developer.android.com/reference/android/webkit/WebSettings.html#setSupportMultipleWindows(boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSupportMultipleWindows(bool arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_SetSupportZoom_" data-uid="Android.Webkit.WebSettings.SetSupportZoom*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_SetSupportZoom_System_Boolean_" data-uid="Android.Webkit.WebSettings.SetSupportZoom(System.Boolean)">
+  SetSupportZoom(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L877"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#setSupportZoom(boolean)">https://developer.android.com/reference/android/webkit/WebSettings.html#setSupportZoom(boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSupportZoom(bool arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_SetTextSize_" data-uid="Android.Webkit.WebSettings.SetTextSize*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_SetTextSize_Android_Webkit_WebSettings_TextSize_" data-uid="Android.Webkit.WebSettings.SetTextSize(Android.Webkit.WebSettings.TextSize)">
+  SetTextSize(TextSize)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L935"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#setTextSize(android.webkit.WebSettings.TextSize)">https://developer.android.com/reference/android/webkit/WebSettings.html#setTextSize(android.webkit.WebSettings.TextSize)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete]
+public void SetTextSize(WebSettings.TextSize arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Webkit.WebSettings.html">WebSettings</a>.<a class="xref" href="Android.Webkit.WebSettings.TextSize.html">TextSize</a></dt>
+    <dd><p><a class="xref" href="Android.Webkit.WebSettings.TextSize.html">WebSettings.TextSize</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_SetTextZoom_" data-uid="Android.Webkit.WebSettings.SetTextZoom*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_SetTextZoom_System_Int32_" data-uid="Android.Webkit.WebSettings.SetTextZoom(System.Int32)">
+  SetTextZoom(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L885"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#setTextZoom(int)">https://developer.android.com/reference/android/webkit/WebSettings.html#setTextZoom(int)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTextZoom(int arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_SetUseWideViewPort_" data-uid="Android.Webkit.WebSettings.SetUseWideViewPort*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_SetUseWideViewPort_System_Boolean_" data-uid="Android.Webkit.WebSettings.SetUseWideViewPort(System.Boolean)">
+  SetUseWideViewPort(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L901"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#setUseWideViewPort(boolean)">https://developer.android.com/reference/android/webkit/WebSettings.html#setUseWideViewPort(boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetUseWideViewPort(bool arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_SetUserAgentString_" data-uid="Android.Webkit.WebSettings.SetUserAgentString*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_SetUserAgentString_Java_Lang_String_" data-uid="Android.Webkit.WebSettings.SetUserAgentString(Java.Lang.String)">
+  SetUserAgentString(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L893"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#setUserAgentString(java.lang.String)">https://developer.android.com/reference/android/webkit/WebSettings.html#setUserAgentString(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetUserAgentString(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_SupportMultipleWindows_" data-uid="Android.Webkit.WebSettings.SupportMultipleWindows*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_SupportMultipleWindows" data-uid="Android.Webkit.WebSettings.SupportMultipleWindows">
+  SupportMultipleWindows()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L361"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#supportMultipleWindows()">https://developer.android.com/reference/android/webkit/WebSettings.html#supportMultipleWindows()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SupportMultipleWindows()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Webkit_WebSettings_SupportZoom_" data-uid="Android.Webkit.WebSettings.SupportZoom*"></a>
+
+  <h3 id="Android_Webkit_WebSettings_SupportZoom" data-uid="Android.Webkit.WebSettings.SupportZoom">
+  SupportZoom()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L369"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/webkit/WebSettings.html#supportZoom()">https://developer.android.com/reference/android/webkit/WebSettings.html#supportZoom()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SupportZoom()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Webkit/WebSettings.cs/#L29" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

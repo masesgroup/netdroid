@@ -1,0 +1,2178 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class ObjectAnimator | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ObjectAnimator | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/android/animation/ObjectAnimator.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Android_Animation_ObjectAnimator.md&amp;value=---%0Auid%3A%20Android.Animation.ObjectAnimator%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Android.Animation.ObjectAnimator">
+
+
+
+  <h1 id="Android_Animation_ObjectAnimator" data-uid="Android.Animation.ObjectAnimator" class="text-break">
+Class ObjectAnimator  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Animation/ObjectAnimator.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Android.html">Android</a>.<a class="xref" href="Android.Animation.html">Animation</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/android/animation/ObjectAnimator.html">https://developer.android.com/reference/android/animation/ObjectAnimator.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ObjectAnimator : ValueAnimator, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition, ICloneable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Java.Lang.Cloneable.html">Cloneable</a>&gt;</div>
+      <div><a class="xref" href="Java.Lang.Cloneable.html">Cloneable</a></div>
+      <div><a class="xref" href="Android.Animation.Animator.html">Animator</a></div>
+      <div><a class="xref" href="Android.Animation.ValueAnimator.html">ValueAnimator</a></div>
+      <div><span class="xref">ObjectAnimator</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+      <div><a class="xref" href="Java.Lang.ICloneable.html">ICloneable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Android.Animation.ValueAnimator.html#Android_Animation_ValueAnimator_INFINITE">ValueAnimator.INFINITE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Animation.ValueAnimator.html#Android_Animation_ValueAnimator_RESTART">ValueAnimator.RESTART</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Animation.ValueAnimator.html#Android_Animation_ValueAnimator_REVERSE">ValueAnimator.REVERSE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Animation.ValueAnimator.html#Android_Animation_ValueAnimator_OfArgb_System_Int32___">ValueAnimator.OfArgb(params int[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Animation.ValueAnimator.html#Android_Animation_ValueAnimator_OfFloat_System_Single___">ValueAnimator.OfFloat(params float[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Animation.ValueAnimator.html#Android_Animation_ValueAnimator_OfInt_System_Int32___">ValueAnimator.OfInt(params int[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Animation.ValueAnimator.html#Android_Animation_ValueAnimator_OfObject_Android_Animation_TypeEvaluator_System_Object___">ValueAnimator.OfObject(TypeEvaluator, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Animation.ValueAnimator.html#Android_Animation_ValueAnimator_OfPropertyValuesHolder_Android_Animation_PropertyValuesHolder___">ValueAnimator.OfPropertyValuesHolder(params PropertyValuesHolder[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Animation.ValueAnimator.html#Android_Animation_ValueAnimator_AreAnimatorsEnabled">ValueAnimator.AreAnimatorsEnabled()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Animation.ValueAnimator.html#Android_Animation_ValueAnimator_RegisterDurationScaleChangeListener_Android_Animation_ValueAnimator_DurationScaleChangeListener_">ValueAnimator.RegisterDurationScaleChangeListener(ValueAnimator.DurationScaleChangeListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Animation.ValueAnimator.html#Android_Animation_ValueAnimator_UnregisterDurationScaleChangeListener_Android_Animation_ValueAnimator_DurationScaleChangeListener_">ValueAnimator.UnregisterDurationScaleChangeListener(ValueAnimator.DurationScaleChangeListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Animation.ValueAnimator.html#Android_Animation_ValueAnimator_GetDurationScale">ValueAnimator.GetDurationScale()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Animation.ValueAnimator.html#Android_Animation_ValueAnimator_GetFrameDelay">ValueAnimator.GetFrameDelay()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Animation.ValueAnimator.html#Android_Animation_ValueAnimator_SetFrameDelay_System_Int64_">ValueAnimator.SetFrameDelay(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Animation.ValueAnimator.html#Android_Animation_ValueAnimator_GetValues">ValueAnimator.GetValues()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Animation.ValueAnimator.html#Android_Animation_ValueAnimator_GetAnimatedFraction">ValueAnimator.GetAnimatedFraction()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Animation.ValueAnimator.html#Android_Animation_ValueAnimator_GetRepeatCount">ValueAnimator.GetRepeatCount()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Animation.ValueAnimator.html#Android_Animation_ValueAnimator_GetRepeatMode">ValueAnimator.GetRepeatMode()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Animation.ValueAnimator.html#Android_Animation_ValueAnimator_GetAnimatedValue">ValueAnimator.GetAnimatedValue()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Animation.ValueAnimator.html#Android_Animation_ValueAnimator_GetAnimatedValue_Java_Lang_String_">ValueAnimator.GetAnimatedValue(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Animation.ValueAnimator.html#Android_Animation_ValueAnimator_GetCurrentPlayTime">ValueAnimator.GetCurrentPlayTime()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Animation.ValueAnimator.html#Android_Animation_ValueAnimator_AddUpdateListener_Android_Animation_ValueAnimator_AnimatorUpdateListener_">ValueAnimator.AddUpdateListener(ValueAnimator.AnimatorUpdateListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Animation.ValueAnimator.html#Android_Animation_ValueAnimator_RemoveAllUpdateListeners">ValueAnimator.RemoveAllUpdateListeners()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Animation.ValueAnimator.html#Android_Animation_ValueAnimator_RemoveUpdateListener_Android_Animation_ValueAnimator_AnimatorUpdateListener_">ValueAnimator.RemoveUpdateListener(ValueAnimator.AnimatorUpdateListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Animation.ValueAnimator.html#Android_Animation_ValueAnimator_Reverse">ValueAnimator.Reverse()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Animation.ValueAnimator.html#Android_Animation_ValueAnimator_SetCurrentFraction_System_Single_">ValueAnimator.SetCurrentFraction(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Animation.ValueAnimator.html#Android_Animation_ValueAnimator_SetCurrentPlayTime_System_Int64_">ValueAnimator.SetCurrentPlayTime(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Animation.ValueAnimator.html#Android_Animation_ValueAnimator_SetEvaluator_Android_Animation_TypeEvaluator_">ValueAnimator.SetEvaluator(TypeEvaluator)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Animation.ValueAnimator.html#Android_Animation_ValueAnimator_SetFloatValues_System_Single___">ValueAnimator.SetFloatValues(params float[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Animation.ValueAnimator.html#Android_Animation_ValueAnimator_SetIntValues_System_Int32___">ValueAnimator.SetIntValues(params int[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Animation.ValueAnimator.html#Android_Animation_ValueAnimator_SetObjectValues_System_Object___">ValueAnimator.SetObjectValues(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Animation.ValueAnimator.html#Android_Animation_ValueAnimator_SetRepeatCount_System_Int32_">ValueAnimator.SetRepeatCount(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Animation.ValueAnimator.html#Android_Animation_ValueAnimator_SetRepeatMode_System_Int32_">ValueAnimator.SetRepeatMode(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Animation.ValueAnimator.html#Android_Animation_ValueAnimator_SetValues_Android_Animation_PropertyValuesHolder___">ValueAnimator.SetValues(params PropertyValuesHolder[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Animation.Animator.html#Android_Animation_Animator_DURATION_INFINITE">Animator.DURATION_INFINITE</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Animation.Animator.html#Android_Animation_Animator_SetDuration_System_Int64_">Animator.SetDuration(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Animation.Animator.html#Android_Animation_Animator_IsRunning">Animator.IsRunning()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Animation.Animator.html#Android_Animation_Animator_GetDuration">Animator.GetDuration()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Animation.Animator.html#Android_Animation_Animator_GetStartDelay">Animator.GetStartDelay()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Animation.Animator.html#Android_Animation_Animator_SetInterpolator_Android_Animation_TimeInterpolator_">Animator.SetInterpolator(TimeInterpolator)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Animation.Animator.html#Android_Animation_Animator_SetStartDelay_System_Int64_">Animator.SetStartDelay(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Animation.Animator.html#Android_Animation_Animator_Clone">Animator.Clone()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Animation.Animator.html#Android_Animation_Animator_GetInterpolator">Animator.GetInterpolator()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Animation.Animator.html#Android_Animation_Animator_IsPaused">Animator.IsPaused()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Animation.Animator.html#Android_Animation_Animator_IsStarted">Animator.IsStarted()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Animation.Animator.html#Android_Animation_Animator_GetListeners">Animator.GetListeners()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Animation.Animator.html#Android_Animation_Animator_GetTotalDuration">Animator.GetTotalDuration()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Animation.Animator.html#Android_Animation_Animator_AddListener_Android_Animation_Animator_AnimatorListener_">Animator.AddListener(Animator.AnimatorListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Animation.Animator.html#Android_Animation_Animator_AddPauseListener_Android_Animation_Animator_AnimatorPauseListener_">Animator.AddPauseListener(Animator.AnimatorPauseListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Animation.Animator.html#Android_Animation_Animator_Cancel">Animator.Cancel()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Animation.Animator.html#Android_Animation_Animator_End">Animator.End()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Animation.Animator.html#Android_Animation_Animator_Pause">Animator.Pause()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Animation.Animator.html#Android_Animation_Animator_RemoveAllListeners">Animator.RemoveAllListeners()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Animation.Animator.html#Android_Animation_Animator_RemoveListener_Android_Animation_Animator_AnimatorListener_">Animator.RemoveListener(Animator.AnimatorListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Animation.Animator.html#Android_Animation_Animator_RemovePauseListener_Android_Animation_Animator_AnimatorPauseListener_">Animator.RemovePauseListener(Animator.AnimatorPauseListener)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Animation.Animator.html#Android_Animation_Animator_Resume">Animator.Resume()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Animation.Animator.html#Android_Animation_Animator_SetTarget_System_Object_">Animator.SetTarget(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Animation.Animator.html#Android_Animation_Animator_SetupEndValues">Animator.SetupEndValues()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Animation.Animator.html#Android_Animation_Animator_SetupStartValues">Animator.SetupStartValues()</a>
+    </div>
+    <div>
+      <a class="xref" href="Android.Animation.Animator.html#Android_Animation_Animator_Start">Animator.Start()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Cloneable&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Cloneable&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Cloneable&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Cloneable&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Cloneable&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Cloneable&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Cloneable&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Cloneable&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Cloneable&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Cloneable&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Cloneable&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Cloneable&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Cloneable&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Cloneable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Cloneable&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Cloneable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Cloneable&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Cloneable&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Cloneable&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Cloneable&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Cloneable&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Cloneable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Cloneable&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Cloneable&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Cloneable&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Cloneable&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Cloneable&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;Cloneable&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Cloneable&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Cloneable&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Cloneable&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Cloneable&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Cloneable&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Cloneable&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Cloneable&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Cloneable&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Cloneable&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Cloneable&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Cloneable&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Cloneable&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Cloneable&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Cloneable&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Cloneable&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Cloneable&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Cloneable&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;Cloneable&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;Cloneable&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Cloneable&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Cloneable&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;Cloneable&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Android_Animation_ObjectAnimator__ctor_" data-uid="Android.Animation.ObjectAnimator.#ctor*"></a>
+
+  <h3 id="Android_Animation_ObjectAnimator__ctor" data-uid="Android.Animation.ObjectAnimator.#ctor">
+  ObjectAnimator()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Animation/AllPackageClasses.cs/#L862"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObjectAnimator()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Animation_ObjectAnimator__ctor_" data-uid="Android.Animation.ObjectAnimator.#ctor*"></a>
+
+  <h3 id="Android_Animation_ObjectAnimator__ctor_System_Object___" data-uid="Android.Animation.ObjectAnimator.#ctor(System.Object[])">
+  ObjectAnimator(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Animation/AllPackageClasses.cs/#L866"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObjectAnimator(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Android_Animation_ObjectAnimator_BridgeClassName_" data-uid="Android.Animation.ObjectAnimator.BridgeClassName*"></a>
+
+  <h3 id="Android_Animation_ObjectAnimator_BridgeClassName" data-uid="Android.Animation.ObjectAnimator.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Animation/AllPackageClasses.cs/#L873"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Animation_ObjectAnimator_IsBridgeAbstract_" data-uid="Android.Animation.ObjectAnimator.IsBridgeAbstract*"></a>
+
+  <h3 id="Android_Animation_ObjectAnimator_IsBridgeAbstract" data-uid="Android.Animation.ObjectAnimator.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Animation/AllPackageClasses.cs/#L877"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Animation_ObjectAnimator_IsBridgeCloseable_" data-uid="Android.Animation.ObjectAnimator.IsBridgeCloseable*"></a>
+
+  <h3 id="Android_Animation_ObjectAnimator_IsBridgeCloseable" data-uid="Android.Animation.ObjectAnimator.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Animation/AllPackageClasses.cs/#L881"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Animation_ObjectAnimator_IsBridgeInterface_" data-uid="Android.Animation.ObjectAnimator.IsBridgeInterface*"></a>
+
+  <h3 id="Android_Animation_ObjectAnimator_IsBridgeInterface" data-uid="Android.Animation.ObjectAnimator.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Animation/AllPackageClasses.cs/#L885"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Android_Animation_ObjectAnimator_IsBridgeStatic_" data-uid="Android.Animation.ObjectAnimator.IsBridgeStatic*"></a>
+
+  <h3 id="Android_Animation_ObjectAnimator_IsBridgeStatic" data-uid="Android.Animation.ObjectAnimator.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Animation/AllPackageClasses.cs/#L889"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Android_Animation_ObjectAnimator_GetPropertyName_" data-uid="Android.Animation.ObjectAnimator.GetPropertyName*"></a>
+
+  <h3 id="Android_Animation_ObjectAnimator_GetPropertyName" data-uid="Android.Animation.ObjectAnimator.GetPropertyName">
+  GetPropertyName()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Animation/ObjectAnimator.cs/#L329"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/animation/ObjectAnimator.html#getPropertyName()">https://developer.android.com/reference/android/animation/ObjectAnimator.html#getPropertyName()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetPropertyName()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Animation_ObjectAnimator_GetTarget_" data-uid="Android.Animation.ObjectAnimator.GetTarget*"></a>
+
+  <h3 id="Android_Animation_ObjectAnimator_GetTarget" data-uid="Android.Animation.ObjectAnimator.GetTarget">
+  GetTarget()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Animation/ObjectAnimator.cs/#L321"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/animation/ObjectAnimator.html#getTarget()">https://developer.android.com/reference/android/animation/ObjectAnimator.html#getTarget()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object GetTarget()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Animation_ObjectAnimator_OfArgb_" data-uid="Android.Animation.ObjectAnimator.OfArgb*"></a>
+
+  <h3 id="Android_Animation_ObjectAnimator_OfArgb_System_Object_Java_Lang_String_System_Int32___" data-uid="Android.Animation.ObjectAnimator.OfArgb(System.Object,Java.Lang.String,System.Int32[])">
+  OfArgb(object, String, params int[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Animation/ObjectAnimator.cs/#L185"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/animation/ObjectAnimator.html#ofArgb(java.lang.Object,java.lang.String,int[])">https://developer.android.com/reference/android/animation/ObjectAnimator.html#ofArgb(java.lang.Object,java.lang.String,int[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ObjectAnimator OfArgb(object arg0, String arg1, params int[] arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Animation.ObjectAnimator.html">ObjectAnimator</a></dt>
+    <dd><p><a class="xref" href="Android.Animation.ObjectAnimator.html">ObjectAnimator</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Animation_ObjectAnimator_OfArgb_" data-uid="Android.Animation.ObjectAnimator.OfArgb*"></a>
+
+  <h3 id="Android_Animation_ObjectAnimator_OfArgb__1___0_Android_Util_Property___0_Java_Lang_Integer__System_Int32___" data-uid="Android.Animation.ObjectAnimator.OfArgb``1(``0,Android.Util.Property{``0,Java.Lang.Integer},System.Int32[])">
+  OfArgb&lt;T&gt;(T, Property&lt;T, Integer&gt;, params int[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Animation/ObjectAnimator.cs/#L96"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/animation/ObjectAnimator.html#ofArgb(java.lang.Object,android.util.Property,int[])">https://developer.android.com/reference/android/animation/ObjectAnimator.html#ofArgb(java.lang.Object,android.util.Property,int[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ObjectAnimator OfArgb&lt;T&gt;(T arg0, Property&lt;T, Integer&gt; arg1, params int[] arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <span class="xref">T</span></dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Util.Property-2.html">Property</a>&lt;T, <a class="xref" href="Java.Lang.Integer.html">Integer</a>&gt;</dt>
+    <dd><p><a class="xref" href="Android.Util.Property.html">Property</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Animation.ObjectAnimator.html">ObjectAnimator</a></dt>
+    <dd><p><a class="xref" href="Android.Animation.ObjectAnimator.html">ObjectAnimator</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Animation_ObjectAnimator_OfFloat_" data-uid="Android.Animation.ObjectAnimator.OfFloat*"></a>
+
+  <h3 id="Android_Animation_ObjectAnimator_OfFloat_System_Object_Java_Lang_String_Java_Lang_String_Android_Graphics_Path_" data-uid="Android.Animation.ObjectAnimator.OfFloat(System.Object,Java.Lang.String,Java.Lang.String,Android.Graphics.Path)">
+  OfFloat(object, String, String, Path)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Animation/ObjectAnimator.cs/#L208"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/animation/ObjectAnimator.html#ofFloat(java.lang.Object,java.lang.String,java.lang.String,android.graphics.Path)">https://developer.android.com/reference/android/animation/ObjectAnimator.html#ofFloat(java.lang.Object,java.lang.String,java.lang.String,android.graphics.Path)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ObjectAnimator OfFloat(object arg0, String arg1, String arg2, Path arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Android.Graphics.Path.html">Path</a></dt>
+    <dd><p><a class="xref" href="Android.Graphics.Path.html">Path</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Animation.ObjectAnimator.html">ObjectAnimator</a></dt>
+    <dd><p><a class="xref" href="Android.Animation.ObjectAnimator.html">ObjectAnimator</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Animation_ObjectAnimator_OfFloat_" data-uid="Android.Animation.ObjectAnimator.OfFloat*"></a>
+
+  <h3 id="Android_Animation_ObjectAnimator_OfFloat_System_Object_Java_Lang_String_System_Single___" data-uid="Android.Animation.ObjectAnimator.OfFloat(System.Object,Java.Lang.String,System.Single[])">
+  OfFloat(object, String, params float[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Animation/ObjectAnimator.cs/#L196"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/animation/ObjectAnimator.html#ofFloat(java.lang.Object,java.lang.String,float[])">https://developer.android.com/reference/android/animation/ObjectAnimator.html#ofFloat(java.lang.Object,java.lang.String,float[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ObjectAnimator OfFloat(object arg0, String arg1, params float[] arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Animation.ObjectAnimator.html">ObjectAnimator</a></dt>
+    <dd><p><a class="xref" href="Android.Animation.ObjectAnimator.html">ObjectAnimator</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Animation_ObjectAnimator_OfFloat_" data-uid="Android.Animation.ObjectAnimator.OfFloat*"></a>
+
+  <h3 id="Android_Animation_ObjectAnimator_OfFloat__1___0_Android_Util_Property___0_Java_Lang_Float__Android_Util_Property___0_Java_Lang_Float__Android_Graphics_Path_" data-uid="Android.Animation.ObjectAnimator.OfFloat``1(``0,Android.Util.Property{``0,Java.Lang.Float},Android.Util.Property{``0,Java.Lang.Float},Android.Graphics.Path)">
+  OfFloat&lt;T&gt;(T, Property&lt;T, Float&gt;, Property&lt;T, Float&gt;, Path)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Animation/ObjectAnimator.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/animation/ObjectAnimator.html#ofFloat(java.lang.Object,android.util.Property,android.util.Property,android.graphics.Path)">https://developer.android.com/reference/android/animation/ObjectAnimator.html#ofFloat(java.lang.Object,android.util.Property,android.util.Property,android.graphics.Path)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ObjectAnimator OfFloat&lt;T&gt;(T arg0, Property&lt;T, Float&gt; arg1, Property&lt;T, Float&gt; arg2, Path arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <span class="xref">T</span></dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Util.Property-2.html">Property</a>&lt;T, <a class="xref" href="Java.Lang.Float.html">Float</a>&gt;</dt>
+    <dd><p><a class="xref" href="Android.Util.Property.html">Property</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Util.Property-2.html">Property</a>&lt;T, <a class="xref" href="Java.Lang.Float.html">Float</a>&gt;</dt>
+    <dd><p><a class="xref" href="Android.Util.Property.html">Property</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Android.Graphics.Path.html">Path</a></dt>
+    <dd><p><a class="xref" href="Android.Graphics.Path.html">Path</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Animation.ObjectAnimator.html">ObjectAnimator</a></dt>
+    <dd><p><a class="xref" href="Android.Animation.ObjectAnimator.html">ObjectAnimator</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Animation_ObjectAnimator_OfFloat_" data-uid="Android.Animation.ObjectAnimator.OfFloat*"></a>
+
+  <h3 id="Android_Animation_ObjectAnimator_OfFloat__1___0_Android_Util_Property___0_Java_Lang_Float__System_Single___" data-uid="Android.Animation.ObjectAnimator.OfFloat``1(``0,Android.Util.Property{``0,Java.Lang.Float},System.Single[])">
+  OfFloat&lt;T&gt;(T, Property&lt;T, Float&gt;, params float[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Animation/ObjectAnimator.cs/#L121"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/animation/ObjectAnimator.html#ofFloat(java.lang.Object,android.util.Property,float[])">https://developer.android.com/reference/android/animation/ObjectAnimator.html#ofFloat(java.lang.Object,android.util.Property,float[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ObjectAnimator OfFloat&lt;T&gt;(T arg0, Property&lt;T, Float&gt; arg1, params float[] arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <span class="xref">T</span></dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Util.Property-2.html">Property</a>&lt;T, <a class="xref" href="Java.Lang.Float.html">Float</a>&gt;</dt>
+    <dd><p><a class="xref" href="Android.Util.Property.html">Property</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Animation.ObjectAnimator.html">ObjectAnimator</a></dt>
+    <dd><p><a class="xref" href="Android.Animation.ObjectAnimator.html">ObjectAnimator</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Animation_ObjectAnimator_OfInt_" data-uid="Android.Animation.ObjectAnimator.OfInt*"></a>
+
+  <h3 id="Android_Animation_ObjectAnimator_OfInt_System_Object_Java_Lang_String_Java_Lang_String_Android_Graphics_Path_" data-uid="Android.Animation.ObjectAnimator.OfInt(System.Object,Java.Lang.String,Java.Lang.String,Android.Graphics.Path)">
+  OfInt(object, String, String, Path)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Animation/ObjectAnimator.cs/#L231"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/animation/ObjectAnimator.html#ofInt(java.lang.Object,java.lang.String,java.lang.String,android.graphics.Path)">https://developer.android.com/reference/android/animation/ObjectAnimator.html#ofInt(java.lang.Object,java.lang.String,java.lang.String,android.graphics.Path)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ObjectAnimator OfInt(object arg0, String arg1, String arg2, Path arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Android.Graphics.Path.html">Path</a></dt>
+    <dd><p><a class="xref" href="Android.Graphics.Path.html">Path</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Animation.ObjectAnimator.html">ObjectAnimator</a></dt>
+    <dd><p><a class="xref" href="Android.Animation.ObjectAnimator.html">ObjectAnimator</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Animation_ObjectAnimator_OfInt_" data-uid="Android.Animation.ObjectAnimator.OfInt*"></a>
+
+  <h3 id="Android_Animation_ObjectAnimator_OfInt_System_Object_Java_Lang_String_System_Int32___" data-uid="Android.Animation.ObjectAnimator.OfInt(System.Object,Java.Lang.String,System.Int32[])">
+  OfInt(object, String, params int[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Animation/ObjectAnimator.cs/#L219"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/animation/ObjectAnimator.html#ofInt(java.lang.Object,java.lang.String,int[])">https://developer.android.com/reference/android/animation/ObjectAnimator.html#ofInt(java.lang.Object,java.lang.String,int[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ObjectAnimator OfInt(object arg0, String arg1, params int[] arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Animation.ObjectAnimator.html">ObjectAnimator</a></dt>
+    <dd><p><a class="xref" href="Android.Animation.ObjectAnimator.html">ObjectAnimator</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Animation_ObjectAnimator_OfInt_" data-uid="Android.Animation.ObjectAnimator.OfInt*"></a>
+
+  <h3 id="Android_Animation_ObjectAnimator_OfInt__1___0_Android_Util_Property___0_Java_Lang_Integer__Android_Util_Property___0_Java_Lang_Integer__Android_Graphics_Path_" data-uid="Android.Animation.ObjectAnimator.OfInt``1(``0,Android.Util.Property{``0,Java.Lang.Integer},Android.Util.Property{``0,Java.Lang.Integer},Android.Graphics.Path)">
+  OfInt&lt;T&gt;(T, Property&lt;T, Integer&gt;, Property&lt;T, Integer&gt;, Path)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Animation/ObjectAnimator.cs/#L134"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/animation/ObjectAnimator.html#ofInt(java.lang.Object,android.util.Property,android.util.Property,android.graphics.Path)">https://developer.android.com/reference/android/animation/ObjectAnimator.html#ofInt(java.lang.Object,android.util.Property,android.util.Property,android.graphics.Path)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ObjectAnimator OfInt&lt;T&gt;(T arg0, Property&lt;T, Integer&gt; arg1, Property&lt;T, Integer&gt; arg2, Path arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <span class="xref">T</span></dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Util.Property-2.html">Property</a>&lt;T, <a class="xref" href="Java.Lang.Integer.html">Integer</a>&gt;</dt>
+    <dd><p><a class="xref" href="Android.Util.Property.html">Property</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Util.Property-2.html">Property</a>&lt;T, <a class="xref" href="Java.Lang.Integer.html">Integer</a>&gt;</dt>
+    <dd><p><a class="xref" href="Android.Util.Property.html">Property</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Android.Graphics.Path.html">Path</a></dt>
+    <dd><p><a class="xref" href="Android.Graphics.Path.html">Path</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Animation.ObjectAnimator.html">ObjectAnimator</a></dt>
+    <dd><p><a class="xref" href="Android.Animation.ObjectAnimator.html">ObjectAnimator</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Animation_ObjectAnimator_OfInt_" data-uid="Android.Animation.ObjectAnimator.OfInt*"></a>
+
+  <h3 id="Android_Animation_ObjectAnimator_OfInt__1___0_Android_Util_Property___0_Java_Lang_Integer__System_Int32___" data-uid="Android.Animation.ObjectAnimator.OfInt``1(``0,Android.Util.Property{``0,Java.Lang.Integer},System.Int32[])">
+  OfInt&lt;T&gt;(T, Property&lt;T, Integer&gt;, params int[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Animation/ObjectAnimator.cs/#L146"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/animation/ObjectAnimator.html#ofInt(java.lang.Object,android.util.Property,int[])">https://developer.android.com/reference/android/animation/ObjectAnimator.html#ofInt(java.lang.Object,android.util.Property,int[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ObjectAnimator OfInt&lt;T&gt;(T arg0, Property&lt;T, Integer&gt; arg1, params int[] arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <span class="xref">T</span></dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Util.Property-2.html">Property</a>&lt;T, <a class="xref" href="Java.Lang.Integer.html">Integer</a>&gt;</dt>
+    <dd><p><a class="xref" href="Android.Util.Property.html">Property</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Animation.ObjectAnimator.html">ObjectAnimator</a></dt>
+    <dd><p><a class="xref" href="Android.Animation.ObjectAnimator.html">ObjectAnimator</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Animation_ObjectAnimator_OfMultiFloat_" data-uid="Android.Animation.ObjectAnimator.OfMultiFloat*"></a>
+
+  <h3 id="Android_Animation_ObjectAnimator_OfMultiFloat_System_Object_Java_Lang_String_Android_Graphics_Path_" data-uid="Android.Animation.ObjectAnimator.OfMultiFloat(System.Object,Java.Lang.String,Android.Graphics.Path)">
+  OfMultiFloat(object, String, Path)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Animation/ObjectAnimator.cs/#L242"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/animation/ObjectAnimator.html#ofMultiFloat(java.lang.Object,java.lang.String,android.graphics.Path)">https://developer.android.com/reference/android/animation/ObjectAnimator.html#ofMultiFloat(java.lang.Object,java.lang.String,android.graphics.Path)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ObjectAnimator OfMultiFloat(object arg0, String arg1, Path arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Graphics.Path.html">Path</a></dt>
+    <dd><p><a class="xref" href="Android.Graphics.Path.html">Path</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Animation.ObjectAnimator.html">ObjectAnimator</a></dt>
+    <dd><p><a class="xref" href="Android.Animation.ObjectAnimator.html">ObjectAnimator</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Animation_ObjectAnimator_OfMultiFloat_" data-uid="Android.Animation.ObjectAnimator.OfMultiFloat*"></a>
+
+  <h3 id="Android_Animation_ObjectAnimator_OfMultiFloat_System_Object_Java_Lang_String_System_Single_____" data-uid="Android.Animation.ObjectAnimator.OfMultiFloat(System.Object,Java.Lang.String,System.Single[][])">
+  OfMultiFloat(object, String, float[][])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Animation/ObjectAnimator.cs/#L253"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/animation/ObjectAnimator.html#ofMultiFloat(java.lang.Object,java.lang.String,float[][])">https://developer.android.com/reference/android/animation/ObjectAnimator.html#ofMultiFloat(java.lang.Object,java.lang.String,float[][])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ObjectAnimator OfMultiFloat(object arg0, String arg1, float[][] arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[][]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Animation.ObjectAnimator.html">ObjectAnimator</a></dt>
+    <dd><p><a class="xref" href="Android.Animation.ObjectAnimator.html">ObjectAnimator</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Animation_ObjectAnimator_OfMultiFloat_" data-uid="Android.Animation.ObjectAnimator.OfMultiFloat*"></a>
+
+  <h3 id="Android_Animation_ObjectAnimator_OfMultiFloat__1_System_Object_Java_Lang_String_Android_Animation_TypeConverter___0_System_Single____Android_Animation_TypeEvaluator___0____0___" data-uid="Android.Animation.ObjectAnimator.OfMultiFloat``1(System.Object,Java.Lang.String,Android.Animation.TypeConverter{``0,System.Single[]},Android.Animation.TypeEvaluator{``0},``0[])">
+  OfMultiFloat&lt;T&gt;(object, String, TypeConverter&lt;T, float[]&gt;, TypeEvaluator&lt;T&gt;, params T[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Animation/ObjectAnimator.cs/#L160"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/animation/ObjectAnimator.html#ofMultiFloat(java.lang.Object,java.lang.String,android.animation.TypeConverter,android.animation.TypeEvaluator,java.lang.Object[])">https://developer.android.com/reference/android/animation/ObjectAnimator.html#ofMultiFloat(java.lang.Object,java.lang.String,android.animation.TypeConverter,android.animation.TypeEvaluator,java.lang.Object[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ObjectAnimator OfMultiFloat&lt;T&gt;(object arg0, String arg1, TypeConverter&lt;T, float[]&gt; arg2, TypeEvaluator&lt;T&gt; arg3, params T[] arg4)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Animation.TypeConverter-2.html">TypeConverter</a>&lt;T, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]&gt;</dt>
+    <dd><p><a class="xref" href="Android.Animation.TypeConverter.html">TypeConverter</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Android.Animation.TypeEvaluator-1.html">TypeEvaluator</a>&lt;T&gt;</dt>
+    <dd><p><a class="xref" href="Android.Animation.TypeEvaluator.html">TypeEvaluator</a></p>
+</dd>
+    <dt><code>arg4</code> T[]</dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Animation.ObjectAnimator.html">ObjectAnimator</a></dt>
+    <dd><p><a class="xref" href="Android.Animation.ObjectAnimator.html">ObjectAnimator</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Animation_ObjectAnimator_OfMultiInt_" data-uid="Android.Animation.ObjectAnimator.OfMultiInt*"></a>
+
+  <h3 id="Android_Animation_ObjectAnimator_OfMultiInt_System_Object_Java_Lang_String_Android_Graphics_Path_" data-uid="Android.Animation.ObjectAnimator.OfMultiInt(System.Object,Java.Lang.String,Android.Graphics.Path)">
+  OfMultiInt(object, String, Path)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Animation/ObjectAnimator.cs/#L264"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/animation/ObjectAnimator.html#ofMultiInt(java.lang.Object,java.lang.String,android.graphics.Path)">https://developer.android.com/reference/android/animation/ObjectAnimator.html#ofMultiInt(java.lang.Object,java.lang.String,android.graphics.Path)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ObjectAnimator OfMultiInt(object arg0, String arg1, Path arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Graphics.Path.html">Path</a></dt>
+    <dd><p><a class="xref" href="Android.Graphics.Path.html">Path</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Animation.ObjectAnimator.html">ObjectAnimator</a></dt>
+    <dd><p><a class="xref" href="Android.Animation.ObjectAnimator.html">ObjectAnimator</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Animation_ObjectAnimator_OfMultiInt_" data-uid="Android.Animation.ObjectAnimator.OfMultiInt*"></a>
+
+  <h3 id="Android_Animation_ObjectAnimator_OfMultiInt_System_Object_Java_Lang_String_System_Int32_____" data-uid="Android.Animation.ObjectAnimator.OfMultiInt(System.Object,Java.Lang.String,System.Int32[][])">
+  OfMultiInt(object, String, int[][])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Animation/ObjectAnimator.cs/#L275"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/animation/ObjectAnimator.html#ofMultiInt(java.lang.Object,java.lang.String,int[][])">https://developer.android.com/reference/android/animation/ObjectAnimator.html#ofMultiInt(java.lang.Object,java.lang.String,int[][])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ObjectAnimator OfMultiInt(object arg0, String arg1, int[][] arg2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[][]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Animation.ObjectAnimator.html">ObjectAnimator</a></dt>
+    <dd><p><a class="xref" href="Android.Animation.ObjectAnimator.html">ObjectAnimator</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Animation_ObjectAnimator_OfMultiInt_" data-uid="Android.Animation.ObjectAnimator.OfMultiInt*"></a>
+
+  <h3 id="Android_Animation_ObjectAnimator_OfMultiInt__1_System_Object_Java_Lang_String_Android_Animation_TypeConverter___0_System_Int32____Android_Animation_TypeEvaluator___0____0___" data-uid="Android.Animation.ObjectAnimator.OfMultiInt``1(System.Object,Java.Lang.String,Android.Animation.TypeConverter{``0,System.Int32[]},Android.Animation.TypeEvaluator{``0},``0[])">
+  OfMultiInt&lt;T&gt;(object, String, TypeConverter&lt;T, int[]&gt;, TypeEvaluator&lt;T&gt;, params T[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Animation/ObjectAnimator.cs/#L174"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/animation/ObjectAnimator.html#ofMultiInt(java.lang.Object,java.lang.String,android.animation.TypeConverter,android.animation.TypeEvaluator,java.lang.Object[])">https://developer.android.com/reference/android/animation/ObjectAnimator.html#ofMultiInt(java.lang.Object,java.lang.String,android.animation.TypeConverter,android.animation.TypeEvaluator,java.lang.Object[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ObjectAnimator OfMultiInt&lt;T&gt;(object arg0, String arg1, TypeConverter&lt;T, int[]&gt; arg2, TypeEvaluator&lt;T&gt; arg3, params T[] arg4)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Animation.TypeConverter-2.html">TypeConverter</a>&lt;T, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]&gt;</dt>
+    <dd><p><a class="xref" href="Android.Animation.TypeConverter.html">TypeConverter</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Android.Animation.TypeEvaluator-1.html">TypeEvaluator</a>&lt;T&gt;</dt>
+    <dd><p><a class="xref" href="Android.Animation.TypeEvaluator.html">TypeEvaluator</a></p>
+</dd>
+    <dt><code>arg4</code> T[]</dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Animation.ObjectAnimator.html">ObjectAnimator</a></dt>
+    <dd><p><a class="xref" href="Android.Animation.ObjectAnimator.html">ObjectAnimator</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Animation_ObjectAnimator_OfObject_" data-uid="Android.Animation.ObjectAnimator.OfObject*"></a>
+
+  <h3 id="Android_Animation_ObjectAnimator_OfObject_System_Object_Java_Lang_String_Android_Animation_TypeConverter_Android_Graphics_PointF_System_Object__Android_Graphics_Path_" data-uid="Android.Animation.ObjectAnimator.OfObject(System.Object,Java.Lang.String,Android.Animation.TypeConverter{Android.Graphics.PointF,System.Object},Android.Graphics.Path)">
+  OfObject(object, String, TypeConverter&lt;PointF, object&gt;, Path)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Animation/ObjectAnimator.cs/#L287"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/animation/ObjectAnimator.html#ofObject(java.lang.Object,java.lang.String,android.animation.TypeConverter,android.graphics.Path)">https://developer.android.com/reference/android/animation/ObjectAnimator.html#ofObject(java.lang.Object,java.lang.String,android.animation.TypeConverter,android.graphics.Path)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ObjectAnimator OfObject(object arg0, String arg1, TypeConverter&lt;PointF, object&gt; arg2, Path arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Animation.TypeConverter-2.html">TypeConverter</a>&lt;<a class="xref" href="Android.Graphics.PointF.html">PointF</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd><p><a class="xref" href="Android.Animation.TypeConverter.html">TypeConverter</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Android.Graphics.Path.html">Path</a></dt>
+    <dd><p><a class="xref" href="Android.Graphics.Path.html">Path</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Animation.ObjectAnimator.html">ObjectAnimator</a></dt>
+    <dd><p><a class="xref" href="Android.Animation.ObjectAnimator.html">ObjectAnimator</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Animation_ObjectAnimator_OfObject_" data-uid="Android.Animation.ObjectAnimator.OfObject*"></a>
+
+  <h3 id="Android_Animation_ObjectAnimator_OfObject_System_Object_Java_Lang_String_Android_Animation_TypeEvaluator_System_Object___" data-uid="Android.Animation.ObjectAnimator.OfObject(System.Object,Java.Lang.String,Android.Animation.TypeEvaluator,System.Object[])">
+  OfObject(object, String, TypeEvaluator, params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Animation/ObjectAnimator.cs/#L299"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/animation/ObjectAnimator.html#ofObject(java.lang.Object,java.lang.String,android.animation.TypeEvaluator,java.lang.Object[])">https://developer.android.com/reference/android/animation/ObjectAnimator.html#ofObject(java.lang.Object,java.lang.String,android.animation.TypeEvaluator,java.lang.Object[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ObjectAnimator OfObject(object arg0, String arg1, TypeEvaluator arg2, params object[] arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Animation.TypeEvaluator.html">TypeEvaluator</a></dt>
+    <dd><p><a class="xref" href="Android.Animation.TypeEvaluator.html">TypeEvaluator</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Animation.ObjectAnimator.html">ObjectAnimator</a></dt>
+    <dd><p><a class="xref" href="Android.Animation.ObjectAnimator.html">ObjectAnimator</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Animation_ObjectAnimator_OfObject_" data-uid="Android.Animation.ObjectAnimator.OfObject*"></a>
+
+  <h3 id="Android_Animation_ObjectAnimator_OfObject__2___0_Android_Util_Property___0___1__Android_Animation_TypeConverter_Android_Graphics_PointF___1__Android_Graphics_Path_" data-uid="Android.Animation.ObjectAnimator.OfObject``2(``0,Android.Util.Property{``0,``1},Android.Animation.TypeConverter{Android.Graphics.PointF,``1},Android.Graphics.Path)">
+  OfObject&lt;T, V&gt;(T, Property&lt;T, V&gt;, TypeConverter&lt;PointF, V&gt;, Path)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Animation/ObjectAnimator.cs/#L70"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/animation/ObjectAnimator.html#ofObject(java.lang.Object,android.util.Property,android.animation.TypeConverter,android.graphics.Path)">https://developer.android.com/reference/android/animation/ObjectAnimator.html#ofObject(java.lang.Object,android.util.Property,android.animation.TypeConverter,android.graphics.Path)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ObjectAnimator OfObject&lt;T, V&gt;(T arg0, Property&lt;T, V&gt; arg1, TypeConverter&lt;PointF, V&gt; arg2, Path arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <span class="xref">T</span></dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Util.Property-2.html">Property</a>&lt;T, V&gt;</dt>
+    <dd><p><a class="xref" href="Android.Util.Property.html">Property</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Animation.TypeConverter-2.html">TypeConverter</a>&lt;<a class="xref" href="Android.Graphics.PointF.html">PointF</a>, V&gt;</dt>
+    <dd><p><a class="xref" href="Android.Animation.TypeConverter.html">TypeConverter</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Android.Graphics.Path.html">Path</a></dt>
+    <dd><p><a class="xref" href="Android.Graphics.Path.html">Path</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Animation.ObjectAnimator.html">ObjectAnimator</a></dt>
+    <dd><p><a class="xref" href="Android.Animation.ObjectAnimator.html">ObjectAnimator</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+    <dt><code>V</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Animation_ObjectAnimator_OfObject_" data-uid="Android.Animation.ObjectAnimator.OfObject*"></a>
+
+  <h3 id="Android_Animation_ObjectAnimator_OfObject__2___0_Android_Util_Property___0___1__Android_Animation_TypeEvaluator___1____1___" data-uid="Android.Animation.ObjectAnimator.OfObject``2(``0,Android.Util.Property{``0,``1},Android.Animation.TypeEvaluator{``1},``1[])">
+  OfObject&lt;T, V&gt;(T, Property&lt;T, V&gt;, TypeEvaluator&lt;V&gt;, params V[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Animation/ObjectAnimator.cs/#L84"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/animation/ObjectAnimator.html#ofObject(java.lang.Object,android.util.Property,android.animation.TypeEvaluator,java.lang.Object[])">https://developer.android.com/reference/android/animation/ObjectAnimator.html#ofObject(java.lang.Object,android.util.Property,android.animation.TypeEvaluator,java.lang.Object[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ObjectAnimator OfObject&lt;T, V&gt;(T arg0, Property&lt;T, V&gt; arg1, TypeEvaluator&lt;V&gt; arg2, params V[] arg3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <span class="xref">T</span></dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Util.Property-2.html">Property</a>&lt;T, V&gt;</dt>
+    <dd><p><a class="xref" href="Android.Util.Property.html">Property</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Animation.TypeEvaluator-1.html">TypeEvaluator</a>&lt;V&gt;</dt>
+    <dd><p><a class="xref" href="Android.Animation.TypeEvaluator.html">TypeEvaluator</a></p>
+</dd>
+    <dt><code>arg3</code> V[]</dt>
+    <dd><p><code class="typeparamref">V</code></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Animation.ObjectAnimator.html">ObjectAnimator</a></dt>
+    <dd><p><a class="xref" href="Android.Animation.ObjectAnimator.html">ObjectAnimator</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+    <dt><code>V</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Animation_ObjectAnimator_OfObject_" data-uid="Android.Animation.ObjectAnimator.OfObject*"></a>
+
+  <h3 id="Android_Animation_ObjectAnimator_OfObject__3___0_Android_Util_Property___0___1__Android_Animation_TypeConverter___2___1__Android_Animation_TypeEvaluator___2____2___" data-uid="Android.Animation.ObjectAnimator.OfObject``3(``0,Android.Util.Property{``0,``1},Android.Animation.TypeConverter{``2,``1},Android.Animation.TypeEvaluator{``2},``2[])">
+  OfObject&lt;T, P, V&gt;(T, Property&lt;T, P&gt;, TypeConverter&lt;V, P&gt;, TypeEvaluator&lt;V&gt;, params V[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Animation/ObjectAnimator.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/animation/ObjectAnimator.html#ofObject(java.lang.Object,android.util.Property,android.animation.TypeConverter,android.animation.TypeEvaluator,java.lang.Object[])">https://developer.android.com/reference/android/animation/ObjectAnimator.html#ofObject(java.lang.Object,android.util.Property,android.animation.TypeConverter,android.animation.TypeEvaluator,java.lang.Object[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ObjectAnimator OfObject&lt;T, P, V&gt;(T arg0, Property&lt;T, P&gt; arg1, TypeConverter&lt;V, P&gt; arg2, TypeEvaluator&lt;V&gt; arg3, params V[] arg4)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <span class="xref">T</span></dt>
+    <dd><p><code class="typeparamref">T</code></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Util.Property-2.html">Property</a>&lt;T, P&gt;</dt>
+    <dd><p><a class="xref" href="Android.Util.Property.html">Property</a></p>
+</dd>
+    <dt><code>arg2</code> <a class="xref" href="Android.Animation.TypeConverter-2.html">TypeConverter</a>&lt;V, P&gt;</dt>
+    <dd><p><a class="xref" href="Android.Animation.TypeConverter.html">TypeConverter</a></p>
+</dd>
+    <dt><code>arg3</code> <a class="xref" href="Android.Animation.TypeEvaluator-1.html">TypeEvaluator</a>&lt;V&gt;</dt>
+    <dd><p><a class="xref" href="Android.Animation.TypeEvaluator.html">TypeEvaluator</a></p>
+</dd>
+    <dt><code>arg4</code> V[]</dt>
+    <dd><p><code class="typeparamref">V</code></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Animation.ObjectAnimator.html">ObjectAnimator</a></dt>
+    <dd><p><a class="xref" href="Android.Animation.ObjectAnimator.html">ObjectAnimator</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+    <dt><code>P</code></dt>
+    <dd></dd>
+    <dt><code>V</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Animation_ObjectAnimator_OfPropertyValuesHolder_" data-uid="Android.Animation.ObjectAnimator.OfPropertyValuesHolder*"></a>
+
+  <h3 id="Android_Animation_ObjectAnimator_OfPropertyValuesHolder_System_Object_Android_Animation_PropertyValuesHolder___" data-uid="Android.Animation.ObjectAnimator.OfPropertyValuesHolder(System.Object,Android.Animation.PropertyValuesHolder[])">
+  OfPropertyValuesHolder(object, params PropertyValuesHolder[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Animation/ObjectAnimator.cs/#L309"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/animation/ObjectAnimator.html#ofPropertyValuesHolder(java.lang.Object,android.animation.PropertyValuesHolder[])">https://developer.android.com/reference/android/animation/ObjectAnimator.html#ofPropertyValuesHolder(java.lang.Object,android.animation.PropertyValuesHolder[])</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ObjectAnimator OfPropertyValuesHolder(object arg0, params PropertyValuesHolder[] arg1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></p>
+</dd>
+    <dt><code>arg1</code> <a class="xref" href="Android.Animation.PropertyValuesHolder.html">PropertyValuesHolder</a>[]</dt>
+    <dd><p><a class="xref" href="Android.Animation.PropertyValuesHolder.html">PropertyValuesHolder</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Android.Animation.ObjectAnimator.html">ObjectAnimator</a></dt>
+    <dd><p><a class="xref" href="Android.Animation.ObjectAnimator.html">ObjectAnimator</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Animation_ObjectAnimator_SetAutoCancel_" data-uid="Android.Animation.ObjectAnimator.SetAutoCancel*"></a>
+
+  <h3 id="Android_Animation_ObjectAnimator_SetAutoCancel_System_Boolean_" data-uid="Android.Animation.ObjectAnimator.SetAutoCancel(System.Boolean)">
+  SetAutoCancel(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Animation/ObjectAnimator.cs/#L337"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/animation/ObjectAnimator.html#setAutoCancel(boolean)">https://developer.android.com/reference/android/animation/ObjectAnimator.html#setAutoCancel(boolean)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAutoCancel(bool arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Animation_ObjectAnimator_SetProperty_" data-uid="Android.Animation.ObjectAnimator.SetProperty*"></a>
+
+  <h3 id="Android_Animation_ObjectAnimator_SetProperty_Android_Util_Property_" data-uid="Android.Animation.ObjectAnimator.SetProperty(Android.Util.Property)">
+  SetProperty(Property)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Animation/ObjectAnimator.cs/#L345"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/animation/ObjectAnimator.html#setProperty(android.util.Property)">https://developer.android.com/reference/android/animation/ObjectAnimator.html#setProperty(android.util.Property)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetProperty(Property arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Android.Util.Property.html">Property</a></dt>
+    <dd><p><a class="xref" href="Android.Util.Property.html">Property</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Android_Animation_ObjectAnimator_SetPropertyName_" data-uid="Android.Animation.ObjectAnimator.SetPropertyName*"></a>
+
+  <h3 id="Android_Animation_ObjectAnimator_SetPropertyName_Java_Lang_String_" data-uid="Android.Animation.ObjectAnimator.SetPropertyName(Java.Lang.String)">
+  SetPropertyName(String)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Animation/ObjectAnimator.cs/#L353"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/android/animation/ObjectAnimator.html#setPropertyName(java.lang.String)">https://developer.android.com/reference/android/animation/ObjectAnimator.html#setPropertyName(java.lang.String)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPropertyName(String arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Android/Animation/ObjectAnimator.cs/#L29" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

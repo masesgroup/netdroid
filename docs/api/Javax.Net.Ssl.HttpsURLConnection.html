@@ -1,0 +1,1527 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Class HttpsURLConnection | MASES Group - Netdroid </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class HttpsURLConnection | MASES Group - Netdroid ">
+      <meta name="description" content="This is a descriptive page of Netdroid, the Android suite for .NET">
+      <meta name="description" content="https://developer.android.com/reference/javax/net/ssl/HttpsURLConnection.html">
+      <link rel="icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/masesgroup/netdroid/new/master/apiSpec/new?filename=Javax_Net_Ssl_HttpsURLConnection.md&amp;value=---%0Auid%3A%20Javax.Net.Ssl.HttpsURLConnection%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/logo.png" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Javax.Net.Ssl.HttpsURLConnection">
+
+
+
+  <h1 id="Javax_Net_Ssl_HttpsURLConnection" data-uid="Javax.Net.Ssl.HttpsURLConnection" class="text-break">
+Class HttpsURLConnection  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Net/Ssl/HttpsURLConnection.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Javax.html">Javax</a>.<a class="xref" href="Javax.Net.html">Net</a>.<a class="xref" href="Javax.Net.Ssl.html">Ssl</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MASES.Netdroid.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a href="https://developer.android.com/reference/javax/net/ssl/HttpsURLConnection.html">https://developer.android.com/reference/javax/net/ssl/HttpsURLConnection.html</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class HttpsURLConnection : HttpURLConnection, IDynamicMetaObjectProvider, IJVMBridgeCore, IDisposable, IJVMBridgeBaseStatic, IJVMBridgeBase, IJVMBridgeDefinition</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject">DynamicObject</a></div>
+      <div><span class="xref">JVMBridgeBase</span></div>
+      <div><span class="xref">JVMBridgeBase</span>&lt;<a class="xref" href="Java.Net.URLConnection.html">URLConnection</a>&gt;</div>
+      <div><a class="xref" href="Java.Net.URLConnection.html">URLConnection</a></div>
+      <div><a class="xref" href="Java.Net.HttpURLConnection.html">HttpURLConnection</a></div>
+      <div><span class="xref">HttpsURLConnection</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.idynamicmetaobjectprovider">IDynamicMetaObjectProvider</a></div>
+      <div><span class="xref">IJVMBridgeCore</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><span class="xref">IJVMBridgeBaseStatic</span></div>
+      <div><span class="xref">IJVMBridgeBase</span></div>
+      <div><span class="xref">IJVMBridgeDefinition</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Java.Net.HttpURLConnection.html#Java_Net_HttpURLConnection_HTTP_ACCEPTED">HttpURLConnection.HTTP_ACCEPTED</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.HttpURLConnection.html#Java_Net_HttpURLConnection_HTTP_BAD_GATEWAY">HttpURLConnection.HTTP_BAD_GATEWAY</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.HttpURLConnection.html#Java_Net_HttpURLConnection_HTTP_BAD_METHOD">HttpURLConnection.HTTP_BAD_METHOD</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.HttpURLConnection.html#Java_Net_HttpURLConnection_HTTP_BAD_REQUEST">HttpURLConnection.HTTP_BAD_REQUEST</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.HttpURLConnection.html#Java_Net_HttpURLConnection_HTTP_CLIENT_TIMEOUT">HttpURLConnection.HTTP_CLIENT_TIMEOUT</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.HttpURLConnection.html#Java_Net_HttpURLConnection_HTTP_CONFLICT">HttpURLConnection.HTTP_CONFLICT</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.HttpURLConnection.html#Java_Net_HttpURLConnection_HTTP_CREATED">HttpURLConnection.HTTP_CREATED</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.HttpURLConnection.html#Java_Net_HttpURLConnection_HTTP_ENTITY_TOO_LARGE">HttpURLConnection.HTTP_ENTITY_TOO_LARGE</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.HttpURLConnection.html#Java_Net_HttpURLConnection_HTTP_FORBIDDEN">HttpURLConnection.HTTP_FORBIDDEN</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.HttpURLConnection.html#Java_Net_HttpURLConnection_HTTP_GATEWAY_TIMEOUT">HttpURLConnection.HTTP_GATEWAY_TIMEOUT</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.HttpURLConnection.html#Java_Net_HttpURLConnection_HTTP_GONE">HttpURLConnection.HTTP_GONE</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.HttpURLConnection.html#Java_Net_HttpURLConnection_HTTP_INTERNAL_ERROR">HttpURLConnection.HTTP_INTERNAL_ERROR</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.HttpURLConnection.html#Java_Net_HttpURLConnection_HTTP_LENGTH_REQUIRED">HttpURLConnection.HTTP_LENGTH_REQUIRED</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.HttpURLConnection.html#Java_Net_HttpURLConnection_HTTP_MOVED_PERM">HttpURLConnection.HTTP_MOVED_PERM</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.HttpURLConnection.html#Java_Net_HttpURLConnection_HTTP_MOVED_TEMP">HttpURLConnection.HTTP_MOVED_TEMP</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.HttpURLConnection.html#Java_Net_HttpURLConnection_HTTP_MULT_CHOICE">HttpURLConnection.HTTP_MULT_CHOICE</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.HttpURLConnection.html#Java_Net_HttpURLConnection_HTTP_NO_CONTENT">HttpURLConnection.HTTP_NO_CONTENT</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.HttpURLConnection.html#Java_Net_HttpURLConnection_HTTP_NOT_ACCEPTABLE">HttpURLConnection.HTTP_NOT_ACCEPTABLE</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.HttpURLConnection.html#Java_Net_HttpURLConnection_HTTP_NOT_AUTHORITATIVE">HttpURLConnection.HTTP_NOT_AUTHORITATIVE</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.HttpURLConnection.html#Java_Net_HttpURLConnection_HTTP_NOT_FOUND">HttpURLConnection.HTTP_NOT_FOUND</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.HttpURLConnection.html#Java_Net_HttpURLConnection_HTTP_NOT_IMPLEMENTED">HttpURLConnection.HTTP_NOT_IMPLEMENTED</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.HttpURLConnection.html#Java_Net_HttpURLConnection_HTTP_NOT_MODIFIED">HttpURLConnection.HTTP_NOT_MODIFIED</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.HttpURLConnection.html#Java_Net_HttpURLConnection_HTTP_OK">HttpURLConnection.HTTP_OK</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.HttpURLConnection.html#Java_Net_HttpURLConnection_HTTP_PARTIAL">HttpURLConnection.HTTP_PARTIAL</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.HttpURLConnection.html#Java_Net_HttpURLConnection_HTTP_PAYMENT_REQUIRED">HttpURLConnection.HTTP_PAYMENT_REQUIRED</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.HttpURLConnection.html#Java_Net_HttpURLConnection_HTTP_PRECON_FAILED">HttpURLConnection.HTTP_PRECON_FAILED</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.HttpURLConnection.html#Java_Net_HttpURLConnection_HTTP_PROXY_AUTH">HttpURLConnection.HTTP_PROXY_AUTH</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.HttpURLConnection.html#Java_Net_HttpURLConnection_HTTP_REQ_TOO_LONG">HttpURLConnection.HTTP_REQ_TOO_LONG</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.HttpURLConnection.html#Java_Net_HttpURLConnection_HTTP_RESET">HttpURLConnection.HTTP_RESET</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.HttpURLConnection.html#Java_Net_HttpURLConnection_HTTP_SEE_OTHER">HttpURLConnection.HTTP_SEE_OTHER</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.HttpURLConnection.html#Java_Net_HttpURLConnection_HTTP_SERVER_ERROR">HttpURLConnection.HTTP_SERVER_ERROR</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.HttpURLConnection.html#Java_Net_HttpURLConnection_HTTP_UNAUTHORIZED">HttpURLConnection.HTTP_UNAUTHORIZED</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.HttpURLConnection.html#Java_Net_HttpURLConnection_HTTP_UNAVAILABLE">HttpURLConnection.HTTP_UNAVAILABLE</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.HttpURLConnection.html#Java_Net_HttpURLConnection_HTTP_UNSUPPORTED_TYPE">HttpURLConnection.HTTP_UNSUPPORTED_TYPE</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.HttpURLConnection.html#Java_Net_HttpURLConnection_HTTP_USE_PROXY">HttpURLConnection.HTTP_USE_PROXY</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.HttpURLConnection.html#Java_Net_HttpURLConnection_HTTP_VERSION">HttpURLConnection.HTTP_VERSION</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.HttpURLConnection.html#Java_Net_HttpURLConnection_GetFollowRedirects">HttpURLConnection.GetFollowRedirects()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.HttpURLConnection.html#Java_Net_HttpURLConnection_SetFollowRedirects_System_Boolean_">HttpURLConnection.SetFollowRedirects(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.HttpURLConnection.html#Java_Net_HttpURLConnection_UsingProxy">HttpURLConnection.UsingProxy()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.HttpURLConnection.html#Java_Net_HttpURLConnection_Disconnect">HttpURLConnection.Disconnect()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.HttpURLConnection.html#Java_Net_HttpURLConnection_GetInstanceFollowRedirects">HttpURLConnection.GetInstanceFollowRedirects()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.HttpURLConnection.html#Java_Net_HttpURLConnection_GetResponseCode">HttpURLConnection.GetResponseCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.HttpURLConnection.html#Java_Net_HttpURLConnection_GetErrorStream">HttpURLConnection.GetErrorStream()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.HttpURLConnection.html#Java_Net_HttpURLConnection_GetRequestMethod">HttpURLConnection.GetRequestMethod()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.HttpURLConnection.html#Java_Net_HttpURLConnection_GetResponseMessage">HttpURLConnection.GetResponseMessage()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.HttpURLConnection.html#Java_Net_HttpURLConnection_SetAuthenticator_Java_Net_Authenticator_">HttpURLConnection.SetAuthenticator(Authenticator)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.HttpURLConnection.html#Java_Net_HttpURLConnection_SetChunkedStreamingMode_System_Int32_">HttpURLConnection.SetChunkedStreamingMode(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.HttpURLConnection.html#Java_Net_HttpURLConnection_SetFixedLengthStreamingMode_System_Int32_">HttpURLConnection.SetFixedLengthStreamingMode(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.HttpURLConnection.html#Java_Net_HttpURLConnection_SetFixedLengthStreamingMode_System_Int64_">HttpURLConnection.SetFixedLengthStreamingMode(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.HttpURLConnection.html#Java_Net_HttpURLConnection_SetInstanceFollowRedirects_System_Boolean_">HttpURLConnection.SetInstanceFollowRedirects(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.HttpURLConnection.html#Java_Net_HttpURLConnection_SetRequestMethod_Java_Lang_String_">HttpURLConnection.SetRequestMethod(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.URLConnection.html#Java_Net_URLConnection_GetDefaultAllowUserInteraction">URLConnection.GetDefaultAllowUserInteraction()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.URLConnection.html#Java_Net_URLConnection_GetDefaultUseCaches_Java_Lang_String_">URLConnection.GetDefaultUseCaches(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.URLConnection.html#Java_Net_URLConnection_GetDefaultRequestProperty_Java_Lang_String_">URLConnection.GetDefaultRequestProperty(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.URLConnection.html#Java_Net_URLConnection_GuessContentTypeFromName_Java_Lang_String_">URLConnection.GuessContentTypeFromName(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.URLConnection.html#Java_Net_URLConnection_GuessContentTypeFromStream_Java_Io_InputStream_">URLConnection.GuessContentTypeFromStream(InputStream)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.URLConnection.html#Java_Net_URLConnection_GetFileNameMap">URLConnection.GetFileNameMap()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.URLConnection.html#Java_Net_URLConnection_SetContentHandlerFactory_Java_Net_ContentHandlerFactory_">URLConnection.SetContentHandlerFactory(ContentHandlerFactory)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.URLConnection.html#Java_Net_URLConnection_SetDefaultAllowUserInteraction_System_Boolean_">URLConnection.SetDefaultAllowUserInteraction(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.URLConnection.html#Java_Net_URLConnection_SetDefaultRequestProperty_Java_Lang_String_Java_Lang_String_">URLConnection.SetDefaultRequestProperty(String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.URLConnection.html#Java_Net_URLConnection_SetDefaultUseCaches_Java_Lang_String_System_Boolean_">URLConnection.SetDefaultUseCaches(String, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.URLConnection.html#Java_Net_URLConnection_SetFileNameMap_Java_Net_FileNameMap_">URLConnection.SetFileNameMap(FileNameMap)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.URLConnection.html#Java_Net_URLConnection_Connect">URLConnection.Connect()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.URLConnection.html#Java_Net_URLConnection_GetAllowUserInteraction">URLConnection.GetAllowUserInteraction()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.URLConnection.html#Java_Net_URLConnection_GetDefaultUseCaches">URLConnection.GetDefaultUseCaches()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.URLConnection.html#Java_Net_URLConnection_GetDoInput">URLConnection.GetDoInput()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.URLConnection.html#Java_Net_URLConnection_GetDoOutput">URLConnection.GetDoOutput()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.URLConnection.html#Java_Net_URLConnection_GetUseCaches">URLConnection.GetUseCaches()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.URLConnection.html#Java_Net_URLConnection_GetConnectTimeout">URLConnection.GetConnectTimeout()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.URLConnection.html#Java_Net_URLConnection_GetContentLength">URLConnection.GetContentLength()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.URLConnection.html#Java_Net_URLConnection_GetHeaderFieldInt_Java_Lang_String_System_Int32_">URLConnection.GetHeaderFieldInt(String, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.URLConnection.html#Java_Net_URLConnection_GetReadTimeout">URLConnection.GetReadTimeout()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.URLConnection.html#Java_Net_URLConnection_GetInputStream">URLConnection.GetInputStream()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.URLConnection.html#Java_Net_URLConnection_GetOutputStream">URLConnection.GetOutputStream()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.URLConnection.html#Java_Net_URLConnection_GetContent">URLConnection.GetContent()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.URLConnection.html#Java_Net_URLConnection_GetContent_Java_Lang_Class___">URLConnection.GetContent(Class[])</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.URLConnection.html#Java_Net_URLConnection_GetContentEncoding">URLConnection.GetContentEncoding()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.URLConnection.html#Java_Net_URLConnection_GetContentType">URLConnection.GetContentType()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.URLConnection.html#Java_Net_URLConnection_GetHeaderField_System_Int32_">URLConnection.GetHeaderField(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.URLConnection.html#Java_Net_URLConnection_GetHeaderField_Java_Lang_String_">URLConnection.GetHeaderField(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.URLConnection.html#Java_Net_URLConnection_GetHeaderFieldKey_System_Int32_">URLConnection.GetHeaderFieldKey(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.URLConnection.html#Java_Net_URLConnection_GetRequestProperty_Java_Lang_String_">URLConnection.GetRequestProperty(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.URLConnection.html#Java_Net_URLConnection_GetURL">URLConnection.GetURL()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.URLConnection.html#Java_Net_URLConnection_GetPermission">URLConnection.GetPermission()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.URLConnection.html#Java_Net_URLConnection_GetHeaderFields">URLConnection.GetHeaderFields()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.URLConnection.html#Java_Net_URLConnection_GetRequestProperties">URLConnection.GetRequestProperties()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.URLConnection.html#Java_Net_URLConnection_GetContentLengthLong">URLConnection.GetContentLengthLong()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.URLConnection.html#Java_Net_URLConnection_GetDate">URLConnection.GetDate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.URLConnection.html#Java_Net_URLConnection_GetExpiration">URLConnection.GetExpiration()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.URLConnection.html#Java_Net_URLConnection_GetHeaderFieldDate_Java_Lang_String_System_Int64_">URLConnection.GetHeaderFieldDate(String, long)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.URLConnection.html#Java_Net_URLConnection_GetHeaderFieldLong_Java_Lang_String_System_Int64_">URLConnection.GetHeaderFieldLong(String, long)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.URLConnection.html#Java_Net_URLConnection_GetIfModifiedSince">URLConnection.GetIfModifiedSince()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.URLConnection.html#Java_Net_URLConnection_GetLastModified">URLConnection.GetLastModified()</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.URLConnection.html#Java_Net_URLConnection_AddRequestProperty_Java_Lang_String_Java_Lang_String_">URLConnection.AddRequestProperty(String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.URLConnection.html#Java_Net_URLConnection_SetAllowUserInteraction_System_Boolean_">URLConnection.SetAllowUserInteraction(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.URLConnection.html#Java_Net_URLConnection_SetConnectTimeout_System_Int32_">URLConnection.SetConnectTimeout(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.URLConnection.html#Java_Net_URLConnection_SetDefaultUseCaches_System_Boolean_">URLConnection.SetDefaultUseCaches(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.URLConnection.html#Java_Net_URLConnection_SetDoInput_System_Boolean_">URLConnection.SetDoInput(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.URLConnection.html#Java_Net_URLConnection_SetDoOutput_System_Boolean_">URLConnection.SetDoOutput(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.URLConnection.html#Java_Net_URLConnection_SetIfModifiedSince_System_Int64_">URLConnection.SetIfModifiedSince(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.URLConnection.html#Java_Net_URLConnection_SetReadTimeout_System_Int32_">URLConnection.SetReadTimeout(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.URLConnection.html#Java_Net_URLConnection_SetRequestProperty_Java_Lang_String_Java_Lang_String_">URLConnection.SetRequestProperty(String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Java.Net.URLConnection.html#Java_Net_URLConnection_SetUseCaches_System_Boolean_">URLConnection.SetUseCaches(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;URLConnection&gt;.SExecute(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;URLConnection&gt;.SExecuteWithSignature(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;URLConnection&gt;.SExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;URLConnection&gt;.SExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;URLConnection&gt;.SExecute&lt;TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;URLConnection&gt;.SExecuteWithSignature&lt;TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;URLConnection&gt;.SExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;URLConnection&gt;.SExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;URLConnection&gt;.SExecute(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;URLConnection&gt;.SExecuteWithSignature(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;URLConnection&gt;.SExecute(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;URLConnection&gt;.SExecuteWithSignature(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;URLConnection&gt;.SExecute&lt;TNewClass, TReturn&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;URLConnection&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;URLConnection&gt;.SExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;URLConnection&gt;.SExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;URLConnection&gt;.SExecute&lt;TReturn&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;URLConnection&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;URLConnection&gt;.SExecute&lt;TReturn&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;URLConnection&gt;.SExecuteWithSignature&lt;TReturn&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;URLConnection&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;URLConnection&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;URLConnection&gt;.SExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;URLConnection&gt;.SExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;URLConnection&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;URLConnection&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;URLConnection&gt;.SExecute&lt;TReturn, TConverter&gt;(Type, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase&lt;URLConnection&gt;.SExecuteWithSignature&lt;TReturn, TConverter&gt;(Type, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;URLConnection&gt;.SExecuteArray&lt;T&gt;(IJavaType, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;URLConnection&gt;.SExecuteWithSignatureArray&lt;T&gt;(IJavaType, string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;URLConnection&gt;.SExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;URLConnection&gt;.SExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;URLConnection&gt;.SGetField(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;URLConnection&gt;.SGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;URLConnection&gt;.SGetField&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;URLConnection&gt;.SGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;URLConnection&gt;.SGetFieldArray&lt;TReturn&gt;(IJavaType, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;URLConnection&gt;.SGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;URLConnection&gt;.SSetField(IJavaType, string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;URLConnection&gt;.SSetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;URLConnection&gt;.SSetField&lt;TValue&gt;(IJavaType, string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;URLConnection&gt;.SSetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;URLConnection&gt;.IsAssignableFrom(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;URLConnection&gt;.IsAssignableFrom(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;URLConnection&gt;.IsAssignableFrom&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase&lt;URLConnection&gt;.New(params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase&lt;URLConnection&gt;.NewWithSignature(string, params object[])</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;URLConnection&gt;.Execute&lt;T&gt;(params T[])</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;URLConnection&gt;.DynBridgeClazz</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase&lt;URLConnection&gt;.BridgeClazz</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">JVMBridgeBase.ClazzOf&lt;TClass&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ClazzOf(string, bool)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassNameOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ClassOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.WrapsDirect&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn&gt;(Type, IJavaObject, string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wraps&lt;TNewClass, TReturn, TConverter&gt;(IJavaObject)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">JVMBridgeBase.Wraps&lt;TReturn, TConverter&gt;(Type, IJavaObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IsInstanceOf(string)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf(IJavaType)</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.RuntimeIsInstanceOf&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastTo&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.CastDirect&lt;TNewClass&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.ToString()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">JVMBridgeBase.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Notify()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.NotifyAll()</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.Wait()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">JVMBridgeBase.Wait(long, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecute&lt;TNewClass, TReturn, TConverter&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignature&lt;TNewClass, TReturn, TConverter&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteArray&lt;T&gt;(string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IExecuteWithSignatureArray&lt;T&gt;(string, string, params object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetField&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.IGetFieldArray&lt;TReturn&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">JVMBridgeBase.ISetField&lt;TValue&gt;(string, TValue)</a>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.DynBridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.BridgeInstance</span>
+    </div>
+    <div>
+      <span class="xref">JVMBridgeBase.IsBridgeListener</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames">DynamicObject.GetDynamicMemberNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.getmetaobject">DynamicObject.GetMetaObject(Expression)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trybinaryoperation">DynamicObject.TryBinaryOperation(BinaryOperationBinder, object, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryconvert">DynamicObject.TryConvert(ConvertBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trycreateinstance">DynamicObject.TryCreateInstance(CreateInstanceBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeleteindex">DynamicObject.TryDeleteIndex(DeleteIndexBinder, object[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trydeletemember">DynamicObject.TryDeleteMember(DeleteMemberBinder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetindex">DynamicObject.TryGetIndex(GetIndexBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trygetmember">DynamicObject.TryGetMember(GetMemberBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvoke">DynamicObject.TryInvoke(InvokeBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryinvokemember">DynamicObject.TryInvokeMember(InvokeMemberBinder, object[], out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetindex">DynamicObject.TrySetIndex(SetIndexBinder, object[], object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.trysetmember">DynamicObject.TrySetMember(SetMemberBinder, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.dynamic.dynamicobject.tryunaryoperation">DynamicObject.TryUnaryOperation(UnaryOperationBinder, out object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="MASES.Netdroid.Specific.Extensions.JNetCoreExtensions.html#MASES_Netdroid_Specific_Extensions_JNetCoreExtensions_Class__1___0_">JNetCoreExtensions.Class&lt;TClass&gt;(TClass)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Javax_Net_Ssl_HttpsURLConnection__ctor_" data-uid="Javax.Net.Ssl.HttpsURLConnection.#ctor*"></a>
+
+  <h3 id="Javax_Net_Ssl_HttpsURLConnection__ctor" data-uid="Javax.Net.Ssl.HttpsURLConnection.#ctor">
+  HttpsURLConnection()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Net/Ssl/AllPackageClasses.cs/#L284"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Default constructor: even if the corresponding Java class does not have one, it is mandatory for JCOBridge</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;HttpsURLConnection class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public HttpsURLConnection()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Net_Ssl_HttpsURLConnection__ctor_" data-uid="Javax.Net.Ssl.HttpsURLConnection.#ctor*"></a>
+
+  <h3 id="Javax_Net_Ssl_HttpsURLConnection__ctor_System_Object___" data-uid="Javax.Net.Ssl.HttpsURLConnection.#ctor(System.Object[])">
+  HttpsURLConnection(params object[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Net/Ssl/AllPackageClasses.cs/#L289"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Generic constructor: it is useful for JCOBridge when there is a derived class which needs to pass arguments to the highest JVMBridgeBase class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;HttpsURLConnection class represents, in .NET, an instance of a JVM interface or abstract class. This public initializer is needed for JCOBridge internal use, other uses can produce unidentible behaviors.&quot;)]
+public HttpsURLConnection(params object[] args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>args</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Javax_Net_Ssl_HttpsURLConnection_BridgeClassName_" data-uid="Javax.Net.Ssl.HttpsURLConnection.BridgeClassName*"></a>
+
+  <h3 id="Javax_Net_Ssl_HttpsURLConnection_BridgeClassName" data-uid="Javax.Net.Ssl.HttpsURLConnection.BridgeClassName">
+  BridgeClassName
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Net/Ssl/AllPackageClasses.cs/#L297"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_BridgeClassName.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string BridgeClassName { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Net_Ssl_HttpsURLConnection_IsBridgeAbstract_" data-uid="Javax.Net.Ssl.HttpsURLConnection.IsBridgeAbstract*"></a>
+
+  <h3 id="Javax_Net_Ssl_HttpsURLConnection_IsBridgeAbstract" data-uid="Javax.Net.Ssl.HttpsURLConnection.IsBridgeAbstract">
+  IsBridgeAbstract
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Net/Ssl/AllPackageClasses.cs/#L301"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeAbstract { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Net_Ssl_HttpsURLConnection_IsBridgeCloseable_" data-uid="Javax.Net.Ssl.HttpsURLConnection.IsBridgeCloseable*"></a>
+
+  <h3 id="Javax_Net_Ssl_HttpsURLConnection_IsBridgeCloseable" data-uid="Javax.Net.Ssl.HttpsURLConnection.IsBridgeCloseable">
+  IsBridgeCloseable
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Net/Ssl/AllPackageClasses.cs/#L305"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeCloseable.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeCloseable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Net_Ssl_HttpsURLConnection_IsBridgeInterface_" data-uid="Javax.Net.Ssl.HttpsURLConnection.IsBridgeInterface*"></a>
+
+  <h3 id="Javax_Net_Ssl_HttpsURLConnection_IsBridgeInterface" data-uid="Javax.Net.Ssl.HttpsURLConnection.IsBridgeInterface">
+  IsBridgeInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Net/Ssl/AllPackageClasses.cs/#L309"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeInterface.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeInterface { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Javax_Net_Ssl_HttpsURLConnection_IsBridgeStatic_" data-uid="Javax.Net.Ssl.HttpsURLConnection.IsBridgeStatic*"></a>
+
+  <h3 id="Javax_Net_Ssl_HttpsURLConnection_IsBridgeStatic" data-uid="Javax.Net.Ssl.HttpsURLConnection.IsBridgeStatic">
+  IsBridgeStatic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Net/Ssl/AllPackageClasses.cs/#L313"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm">https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsBridgeStatic { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Javax_Net_Ssl_HttpsURLConnection_GetCipherSuite_" data-uid="Javax.Net.Ssl.HttpsURLConnection.GetCipherSuite*"></a>
+
+  <h3 id="Javax_Net_Ssl_HttpsURLConnection_GetCipherSuite" data-uid="Javax.Net.Ssl.HttpsURLConnection.GetCipherSuite">
+  GetCipherSuite()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Net/Ssl/HttpsURLConnection.cs/#L84"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/net/ssl/HttpsURLConnection.html#getCipherSuite()">https://developer.android.com/reference/javax/net/ssl/HttpsURLConnection.html#getCipherSuite()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public String GetCipherSuite()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Lang.String.html">String</a></dt>
+    <dd><p><a class="xref" href="Java.Lang.String.html">String</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Net_Ssl_HttpsURLConnection_GetDefaultHostnameVerifier_" data-uid="Javax.Net.Ssl.HttpsURLConnection.GetDefaultHostnameVerifier*"></a>
+
+  <h3 id="Javax_Net_Ssl_HttpsURLConnection_GetDefaultHostnameVerifier" data-uid="Javax.Net.Ssl.HttpsURLConnection.GetDefaultHostnameVerifier">
+  GetDefaultHostnameVerifier()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Net/Ssl/HttpsURLConnection.cs/#L48"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/net/ssl/HttpsURLConnection.html#getDefaultHostnameVerifier()">https://developer.android.com/reference/javax/net/ssl/HttpsURLConnection.html#getDefaultHostnameVerifier()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static HostnameVerifier GetDefaultHostnameVerifier()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Net.Ssl.HostnameVerifier.html">HostnameVerifier</a></dt>
+    <dd><p><a class="xref" href="Javax.Net.Ssl.HostnameVerifier.html">HostnameVerifier</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Net_Ssl_HttpsURLConnection_GetDefaultSSLSocketFactory_" data-uid="Javax.Net.Ssl.HttpsURLConnection.GetDefaultSSLSocketFactory*"></a>
+
+  <h3 id="Javax_Net_Ssl_HttpsURLConnection_GetDefaultSSLSocketFactory" data-uid="Javax.Net.Ssl.HttpsURLConnection.GetDefaultSSLSocketFactory">
+  GetDefaultSSLSocketFactory()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Net/Ssl/HttpsURLConnection.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/net/ssl/HttpsURLConnection.html#getDefaultSSLSocketFactory()">https://developer.android.com/reference/javax/net/ssl/HttpsURLConnection.html#getDefaultSSLSocketFactory()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SSLSocketFactory GetDefaultSSLSocketFactory()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Net.Ssl.SSLSocketFactory.html">SSLSocketFactory</a></dt>
+    <dd><p><a class="xref" href="Javax.Net.Ssl.SSLSocketFactory.html">SSLSocketFactory</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Net_Ssl_HttpsURLConnection_GetHostnameVerifier_" data-uid="Javax.Net.Ssl.HttpsURLConnection.GetHostnameVerifier*"></a>
+
+  <h3 id="Javax_Net_Ssl_HttpsURLConnection_GetHostnameVerifier" data-uid="Javax.Net.Ssl.HttpsURLConnection.GetHostnameVerifier">
+  GetHostnameVerifier()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Net/Ssl/HttpsURLConnection.cs/#L134"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/net/ssl/HttpsURLConnection.html#getHostnameVerifier()">https://developer.android.com/reference/javax/net/ssl/HttpsURLConnection.html#getHostnameVerifier()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HostnameVerifier GetHostnameVerifier()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Net.Ssl.HostnameVerifier.html">HostnameVerifier</a></dt>
+    <dd><p><a class="xref" href="Javax.Net.Ssl.HostnameVerifier.html">HostnameVerifier</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Net_Ssl_HttpsURLConnection_GetLocalCertificates_" data-uid="Javax.Net.Ssl.HttpsURLConnection.GetLocalCertificates*"></a>
+
+  <h3 id="Javax_Net_Ssl_HttpsURLConnection_GetLocalCertificates" data-uid="Javax.Net.Ssl.HttpsURLConnection.GetLocalCertificates">
+  GetLocalCertificates()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Net/Ssl/HttpsURLConnection.cs/#L92"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/net/ssl/HttpsURLConnection.html#getLocalCertificates()">https://developer.android.com/reference/javax/net/ssl/HttpsURLConnection.html#getLocalCertificates()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Certificate[] GetLocalCertificates()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Security.Cert.Certificate.html">Certificate</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Security.Cert.Certificate.html">Certificate</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Net_Ssl_HttpsURLConnection_GetLocalPrincipal_" data-uid="Javax.Net.Ssl.HttpsURLConnection.GetLocalPrincipal*"></a>
+
+  <h3 id="Javax_Net_Ssl_HttpsURLConnection_GetLocalPrincipal" data-uid="Javax.Net.Ssl.HttpsURLConnection.GetLocalPrincipal">
+  GetLocalPrincipal()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Net/Ssl/HttpsURLConnection.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/net/ssl/HttpsURLConnection.html#getLocalPrincipal()">https://developer.android.com/reference/javax/net/ssl/HttpsURLConnection.html#getLocalPrincipal()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Principal GetLocalPrincipal()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Security.Principal.html">Principal</a></dt>
+    <dd><p><a class="xref" href="Java.Security.Principal.html">Principal</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Net_Ssl_HttpsURLConnection_GetPeerPrincipal_" data-uid="Javax.Net.Ssl.HttpsURLConnection.GetPeerPrincipal*"></a>
+
+  <h3 id="Javax_Net_Ssl_HttpsURLConnection_GetPeerPrincipal" data-uid="Javax.Net.Ssl.HttpsURLConnection.GetPeerPrincipal">
+  GetPeerPrincipal()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Net/Ssl/HttpsURLConnection.cs/#L118"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/net/ssl/HttpsURLConnection.html#getPeerPrincipal()">https://developer.android.com/reference/javax/net/ssl/HttpsURLConnection.html#getPeerPrincipal()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Principal GetPeerPrincipal()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Security.Principal.html">Principal</a></dt>
+    <dd><p><a class="xref" href="Java.Security.Principal.html">Principal</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Net.Ssl.SSLPeerUnverifiedException.html">SSLPeerUnverifiedException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Javax_Net_Ssl_HttpsURLConnection_GetSSLSession_" data-uid="Javax.Net.Ssl.HttpsURLConnection.GetSSLSession*"></a>
+
+  <h3 id="Javax_Net_Ssl_HttpsURLConnection_GetSSLSession" data-uid="Javax.Net.Ssl.HttpsURLConnection.GetSSLSession">
+  GetSSLSession()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Net/Ssl/HttpsURLConnection.cs/#L126"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/net/ssl/HttpsURLConnection.html#getSSLSession()">https://developer.android.com/reference/javax/net/ssl/HttpsURLConnection.html#getSSLSession()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Optional&lt;SSLSession&gt; GetSSLSession()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Util.Optional-1.html">Optional</a>&lt;<a class="xref" href="Javax.Net.Ssl.SSLSession.html">SSLSession</a>&gt;</dt>
+    <dd><p><a class="xref" href="Java.Util.Optional.html">Optional</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Net_Ssl_HttpsURLConnection_GetSSLSocketFactory_" data-uid="Javax.Net.Ssl.HttpsURLConnection.GetSSLSocketFactory*"></a>
+
+  <h3 id="Javax_Net_Ssl_HttpsURLConnection_GetSSLSocketFactory" data-uid="Javax.Net.Ssl.HttpsURLConnection.GetSSLSocketFactory">
+  GetSSLSocketFactory()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Net/Ssl/HttpsURLConnection.cs/#L142"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/net/ssl/HttpsURLConnection.html#getSSLSocketFactory()">https://developer.android.com/reference/javax/net/ssl/HttpsURLConnection.html#getSSLSocketFactory()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SSLSocketFactory GetSSLSocketFactory()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Net.Ssl.SSLSocketFactory.html">SSLSocketFactory</a></dt>
+    <dd><p><a class="xref" href="Javax.Net.Ssl.SSLSocketFactory.html">SSLSocketFactory</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Net_Ssl_HttpsURLConnection_GetServerCertificates_" data-uid="Javax.Net.Ssl.HttpsURLConnection.GetServerCertificates*"></a>
+
+  <h3 id="Javax_Net_Ssl_HttpsURLConnection_GetServerCertificates" data-uid="Javax.Net.Ssl.HttpsURLConnection.GetServerCertificates">
+  GetServerCertificates()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Net/Ssl/HttpsURLConnection.cs/#L101"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/net/ssl/HttpsURLConnection.html#getServerCertificates()">https://developer.android.com/reference/javax/net/ssl/HttpsURLConnection.html#getServerCertificates()</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Certificate[] GetServerCertificates()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Java.Security.Cert.Certificate.html">Certificate</a>[]</dt>
+    <dd><p><a class="xref" href="Java.Security.Cert.Certificate.html">Certificate</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Javax.Net.Ssl.SSLPeerUnverifiedException.html">SSLPeerUnverifiedException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Javax_Net_Ssl_HttpsURLConnection_SetDefaultHostnameVerifier_" data-uid="Javax.Net.Ssl.HttpsURLConnection.SetDefaultHostnameVerifier*"></a>
+
+  <h3 id="Javax_Net_Ssl_HttpsURLConnection_SetDefaultHostnameVerifier_Javax_Net_Ssl_HostnameVerifier_" data-uid="Javax.Net.Ssl.HttpsURLConnection.SetDefaultHostnameVerifier(Javax.Net.Ssl.HostnameVerifier)">
+  SetDefaultHostnameVerifier(HostnameVerifier)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Net/Ssl/HttpsURLConnection.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/net/ssl/HttpsURLConnection.html#setDefaultHostnameVerifier(javax.net.ssl.HostnameVerifier)">https://developer.android.com/reference/javax/net/ssl/HttpsURLConnection.html#setDefaultHostnameVerifier(javax.net.ssl.HostnameVerifier)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetDefaultHostnameVerifier(HostnameVerifier arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Net.Ssl.HostnameVerifier.html">HostnameVerifier</a></dt>
+    <dd><p><a class="xref" href="Javax.Net.Ssl.HostnameVerifier.html">HostnameVerifier</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Net_Ssl_HttpsURLConnection_SetDefaultSSLSocketFactory_" data-uid="Javax.Net.Ssl.HttpsURLConnection.SetDefaultSSLSocketFactory*"></a>
+
+  <h3 id="Javax_Net_Ssl_HttpsURLConnection_SetDefaultSSLSocketFactory_Javax_Net_Ssl_SSLSocketFactory_" data-uid="Javax.Net.Ssl.HttpsURLConnection.SetDefaultSSLSocketFactory(Javax.Net.Ssl.SSLSocketFactory)">
+  SetDefaultSSLSocketFactory(SSLSocketFactory)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Net/Ssl/HttpsURLConnection.cs/#L72"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/net/ssl/HttpsURLConnection.html#setDefaultSSLSocketFactory(javax.net.ssl.SSLSocketFactory)">https://developer.android.com/reference/javax/net/ssl/HttpsURLConnection.html#setDefaultSSLSocketFactory(javax.net.ssl.SSLSocketFactory)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetDefaultSSLSocketFactory(SSLSocketFactory arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Net.Ssl.SSLSocketFactory.html">SSLSocketFactory</a></dt>
+    <dd><p><a class="xref" href="Javax.Net.Ssl.SSLSocketFactory.html">SSLSocketFactory</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Net_Ssl_HttpsURLConnection_SetHostnameVerifier_" data-uid="Javax.Net.Ssl.HttpsURLConnection.SetHostnameVerifier*"></a>
+
+  <h3 id="Javax_Net_Ssl_HttpsURLConnection_SetHostnameVerifier_Javax_Net_Ssl_HostnameVerifier_" data-uid="Javax.Net.Ssl.HttpsURLConnection.SetHostnameVerifier(Javax.Net.Ssl.HostnameVerifier)">
+  SetHostnameVerifier(HostnameVerifier)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Net/Ssl/HttpsURLConnection.cs/#L150"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/net/ssl/HttpsURLConnection.html#setHostnameVerifier(javax.net.ssl.HostnameVerifier)">https://developer.android.com/reference/javax/net/ssl/HttpsURLConnection.html#setHostnameVerifier(javax.net.ssl.HostnameVerifier)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetHostnameVerifier(HostnameVerifier arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Net.Ssl.HostnameVerifier.html">HostnameVerifier</a></dt>
+    <dd><p><a class="xref" href="Javax.Net.Ssl.HostnameVerifier.html">HostnameVerifier</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Javax_Net_Ssl_HttpsURLConnection_SetSSLSocketFactory_" data-uid="Javax.Net.Ssl.HttpsURLConnection.SetSSLSocketFactory*"></a>
+
+  <h3 id="Javax_Net_Ssl_HttpsURLConnection_SetSSLSocketFactory_Javax_Net_Ssl_SSLSocketFactory_" data-uid="Javax.Net.Ssl.HttpsURLConnection.SetSSLSocketFactory(Javax.Net.Ssl.SSLSocketFactory)">
+  SetSSLSocketFactory(SSLSocketFactory)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Net/Ssl/HttpsURLConnection.cs/#L158"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a href="https://developer.android.com/reference/javax/net/ssl/HttpsURLConnection.html#setSSLSocketFactory(javax.net.ssl.SSLSocketFactory)">https://developer.android.com/reference/javax/net/ssl/HttpsURLConnection.html#setSSLSocketFactory(javax.net.ssl.SSLSocketFactory)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSSLSocketFactory(SSLSocketFactory arg0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>arg0</code> <a class="xref" href="Javax.Net.Ssl.SSLSocketFactory.html">SSLSocketFactory</a></dt>
+    <dd><p><a class="xref" href="Javax.Net.Ssl.SSLSocketFactory.html">SSLSocketFactory</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/masesgroup/netdroid/blob/master/src/net/Netdroid/Generated/Javax/Net/Ssl/HttpsURLConnection.cs/#L29" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <div style="text-align: center;">Copyright © 2024 MASES s.r.l.. | Via San Cesidio 16 - San Valentino in A.C. - PE | P.I. 01932310681</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
