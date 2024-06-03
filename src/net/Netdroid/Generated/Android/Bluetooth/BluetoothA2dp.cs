@@ -104,13 +104,6 @@ namespace Android.Bluetooth
         {
             return IExecuteWithSignature<Java.Util.List<Android.Bluetooth.BluetoothDevice>>("getDevicesMatchingConnectionStates", "([I)Ljava/util/List;", new object[] { arg0 });
         }
-        /// <summary>
-        /// <see href="https://developer.android.com/reference/android/bluetooth/BluetoothA2dp.html#finalize()"/>
-        /// </summary>
-        public void Finalize()
-        {
-            IExecuteWithSignature("finalize", "()V");
-        }
 
         #endregion
 
