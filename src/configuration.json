@@ -97,7 +97,6 @@
     "java.sql.ShardingKeyBuilder",
     "java.sql.SQLType",
     "java.text.NumberFormat$Style",
-    "java.time.chrono.ChronoLocalDate",
     "java.util.Comparator",
     "java.util.EventListener",
     "java.util.random.RandomGenerator",
@@ -114,6 +113,10 @@
     "javax.sql.PooledConnectionBuilder",
     "javax.xml.xpath.XPathEvaluationResult",
     "org.w3c.dom.ls.LSSerializerFilter"
+  ],
+  "ClassesToAvoidInGenerics": [
+    "java.time.chrono.ChronoLocalDateTime",
+    "java.time.chrono.ChronoZonedDateTime"
   ],
   "NamespacesInConflict": [
     "java.lang.module",
