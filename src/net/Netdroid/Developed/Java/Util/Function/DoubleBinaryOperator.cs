@@ -17,6 +17,7 @@
 */
 
 using MASES.JCOBridge.C2JBridge;
+using MASES.JCOBridge.C2JBridge.JVMInterop;
 using System;
 
 namespace Java.Util.Function
@@ -44,7 +45,6 @@ namespace Java.Util.Function
         /// Enable/disable handlers initialization, default is <see langword="true"/>
         /// </summary>
         protected virtual bool InitHandlers { get; } = true;
-
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
@@ -89,13 +89,16 @@ namespace Java.Util.Function
         /// </summary>
         public override bool AutoInit => false;
 
-        /// <inheritdoc cref="BinaryOperator.InitHandlers"/>
+        /// <inheritdoc />
         protected override bool InitHandlers => false;
+
+        const string _bridgeClassName = "java.util.function.DoubleBinaryOperator";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.util.function.DoubleBinaryOperator";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -113,7 +116,6 @@ namespace Java.Util.Function
         /// </summary>
         public override bool IsBridgeStatic => false;
 
-        #region Instance methods
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleBinaryOperator.html#applyAsDouble(double,double)"/>
         /// </summary>
@@ -124,7 +126,5 @@ namespace Java.Util.Function
         {
             return IExecute<double>("applyAsDouble", arg0, arg1);
         }
-
-        #endregion
     }
 }

@@ -17,6 +17,7 @@
 */
 
 using MASES.JCOBridge.C2JBridge;
+using MASES.JCOBridge.C2JBridge.JVMInterop;
 using System;
 
 namespace Java.Util.Function
@@ -47,7 +48,6 @@ namespace Java.Util.Function
         /// Enable/disable handlers initialization, default is <see langword="true"/>
         /// </summary>
         protected virtual bool InitHandlers { get; } = true;
-
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
@@ -57,20 +57,23 @@ namespace Java.Util.Function
     /// <summary>
     /// Direct override of <see cref="BiFunction"/> or its generic type if there is one
     /// </summary>
-    public partial class BiFunctionDirect : BiFunction
+    public class BiFunctionDirect : BiFunction
     {
         /// <summary>
-        /// <see href="https://www.jcobridge.com/api-clr_2.5.12/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
+        /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_AutoInit.htm"/>
         /// </summary>
         public override bool AutoInit => false;
 
-        /// <inheritdoc cref="Predicate.InitHandlers"/>
+        /// <inheritdoc />
         protected override bool InitHandlers => false;
+
+        const string _bridgeClassName = "java.util.function.BiFunction";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.util.function.BiFunction";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -87,6 +90,26 @@ namespace Java.Util.Function
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeStatic.htm"/>
         /// </summary>
         public override bool IsBridgeStatic => false;
+
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiFunction.html#apply(java.lang.Object,java.lang.Object)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="object"/></param>
+        /// <param name="arg1"><see cref="object"/></param>
+        /// <returns><see cref="object"/></returns>
+        public object Apply(object arg0, object arg1)
+        {
+            return IExecute("apply", arg0, arg1);
+        }
+        /// <summary>
+        /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiFunction.html#andThen(java.util.function.Function)"/>
+        /// </summary>
+        /// <param name="arg0"><see cref="Java.Util.Function.Function"/></param>
+        /// <returns><see cref="Java.Util.Function.BiFunction"/></returns>
+        public Java.Util.Function.BiFunction AndThen(Java.Util.Function.Function arg0)
+        {
+            return IExecuteWithSignature<Java.Util.Function.BiFunctionDirect, Java.Util.Function.BiFunction>("andThen", "(Ljava/util/function/Function;)Ljava/util/function/BiFunction;", arg0);
+        }
     }
 
     /// <summary>
@@ -136,13 +159,16 @@ namespace Java.Util.Function
         /// </summary>
         public override bool AutoInit => false;
 
-        /// <inheritdoc cref="Predicate.InitHandlers"/>
+        /// <inheritdoc />
         protected override bool InitHandlers => false;
+
+        const string _bridgeClassName = "java.util.function.BiFunction";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.util.function.BiFunction";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -160,7 +186,6 @@ namespace Java.Util.Function
         /// </summary>
         public override bool IsBridgeStatic => false;
 
-        #region Instance methods
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/BiFunction.html#apply(java.lang.Object,java.lang.Object)"/>
         /// </summary>
@@ -183,7 +208,5 @@ namespace Java.Util.Function
         {
             return IExecuteWithSignature<Java.Util.Function.BiFunctionDirect<T, U, V>, Java.Util.Function.BiFunction<T, U, V>>("andThen", "(Ljava/util/function/Function;)Ljava/util/function/BiFunction;", arg0);
         }
-
-        #endregion
     }
 }

@@ -17,6 +17,7 @@
 */
 
 using MASES.JCOBridge.C2JBridge;
+using MASES.JCOBridge.C2JBridge.JVMInterop;
 using System;
 
 namespace Java.Util.Function
@@ -43,7 +44,6 @@ namespace Java.Util.Function
         /// Enable/disable handlers initialization, default is <see langword="true"/>
         /// </summary>
         protected virtual bool InitHandlers { get; } = true;
-
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
@@ -58,7 +58,10 @@ namespace Java.Util.Function
         /// </summary>
         public DoubleUnaryOperator()
         {
-            AddEventHandler("applyAsDouble", new EventHandler<CLRListenerEventArgs<CLREventData<double>>>(ApplyAsDoubleEventHandler)); OnApplyAsDouble = ApplyAsDouble;
+            if (InitHandlers)
+            {
+                AddEventHandler("applyAsDouble", new EventHandler<CLRListenerEventArgs<CLREventData<double>>>(ApplyAsDoubleEventHandler)); OnApplyAsDouble = ApplyAsDouble;
+            }
         }
 
         void ApplyAsDoubleEventHandler(object sender, CLRListenerEventArgs<CLREventData<double>> data)
@@ -84,13 +87,16 @@ namespace Java.Util.Function
         /// </summary>
         public override bool AutoInit => false;
 
-        /// <inheritdoc cref="BinaryOperator.InitHandlers"/>
+        /// <inheritdoc />
         protected override bool InitHandlers => false;
+
+        const string _bridgeClassName = "java.util.function.DoubleUnaryOperator";
+        private static readonly IJavaType LocalBridgeClazz = ClazzOf(_bridgeClassName);
 
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeListener_BridgeClassName.htm"/>
         /// </summary>
-        public override string BridgeClassName => "java.util.function.DoubleUnaryOperator";
+        public override string BridgeClassName => _bridgeClassName;
         /// <summary>
         /// <see href="https://www.jcobridge.com/api-clr/html/P_MASES_JCOBridge_C2JBridge_JVMBridgeBase_IsBridgeAbstract.htm"/>
         /// </summary>
@@ -108,7 +114,6 @@ namespace Java.Util.Function
         /// </summary>
         public override bool IsBridgeStatic => false;
 
-        #region Instance methods
         /// <summary>
         /// <see href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/DoubleUnaryOperator.html#applyAsDouble(double)"/>
         /// </summary>
@@ -136,7 +141,5 @@ namespace Java.Util.Function
         {
             return IExecuteWithSignature<Java.Util.Function.DoubleUnaryOperatorDirect, Java.Util.Function.DoubleUnaryOperator>("compose", "(Ljava/util/function/DoubleUnaryOperator;)Ljava/util/function/DoubleUnaryOperator;", arg0);
         }
-
-        #endregion
     }
 }
